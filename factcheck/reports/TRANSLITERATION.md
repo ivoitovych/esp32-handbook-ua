@@ -11,12 +11,11 @@ measured remainder of a migration, so that progress is a number rather
 than an impression. A false positive here is harmless: it sits in the
 list and never fires again.
 
-**Remaining: 209.**
+**Remaining: 228.**
 
 - `--agents`
 - `--bez-merezhi`
 - `--cached`
-- `--components`
 - `--detach`
 - `--dilyanky`
 - `--kachaty`
@@ -128,8 +127,10 @@ list and never fires again.
 - `dzherela_zapysu`
 - `dzherelo_rozvyazne`
 - `dzherelo_vseredyni`
+- `flesh`
 - `formatuvaty_dokaz`
 - `hto_pyshe`
+- `hybnyy`
 - `imya`
 - `imya_dlya`
 - `kesh_fayly`
@@ -140,14 +141,21 @@ list and never fires again.
 - `knyzhkovi_dzherela`
 - `konteksty`
 - `korin_dlya`
+- `marshruty`
+- `matrycya`
+- `mezhi`
 - `mira_polya`
 - `mira_tochky`
 - `mira_zavdannya`
+- `mozhlyvosti`
 - `na_anhliysku`
 - `naryad`
 - `ne_dyvyvsya`
 - `normalizuvaty`
 - `novyy`
+- `obchyslennya`
+- `obkhidni`
+- `obvyazka`
 - `ochystyty`
 - `odynyc_u_reyestri`
 - `odynyci`
@@ -157,19 +165,24 @@ list and never fires again.
 - `perevirka_posylan`
 - `pidibraty`
 - `pidmineno_zaglushkoyu`
+- `pidtverdzheni`
 - `planuvaty`
 - `plaskyy`
 - `polagodyty`
 - `pole`
+- `polya`
 - `populyaciya`
 - `porivnyaty`
 - `poshuk_riven`
+- `povidomlennya`
 - `povtoryty_shapku`
 - `proba`
 - `promizhok`
+- `propahaciya`
 - `prychyna`
 - `prydatnyy`
 - `rechennya`
+- `reshta`
 - `rid_dokumenta`
 - `rozbyty`
 - `rozbyty_alternatyvy`
@@ -178,9 +191,12 @@ list and never fires again.
 - `rozstavyty`
 - `rozvyazne`
 - `ryadky_z_koordynat`
+- `schemy`
 - `sha256`
 - `shapka`
 - `shlyakh_reyestru`
+- `shmatky`
+- `shmatok`
 - `shukaty`
 - `sklasty`
 - `slova_vzirtsya`
@@ -195,8 +211,10 @@ list and never fires again.
 - `transliterovane`
 - `tretiy_shar`
 - `tretiy_shar_vybirky`
+- `usi`
 - `versiya`
 - `versiya_naryadu`
+- `versiyi`
 - `vikno_dlya`
 - `vsi_kandydaty`
 - `vygotovlyuvach`
@@ -204,6 +222,7 @@ list and never fires again.
 - `vzirets`
 - `vzirets_dlya`
 - `vzirets_z`
+- `yadro`
 - `z_naryadu`
 - `zapysaty`
 - `zapysaty_ledger`

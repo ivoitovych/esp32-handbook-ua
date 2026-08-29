@@ -374,7 +374,7 @@ does), and a run is not repeated. A row is evidence, not proof.
 def zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy) -> None:
     """Дописати рядок прогону. Дописати, не переписати: попередні
     прогони — це вимір, а не чернетка."""
-    f = ROOT / "factcheck" / "RUNS.md"
+    f = ROOT / "factcheck" / "reports" / "RUNS.md"
     if not f.exists():
         f.write_text(LEDGER_SHAPKA, encoding="utf-8")
     t = f.read_text(encoding="utf-8")

@@ -33,7 +33,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
   > The Wi-Fi libraries provide support for configuring and monitoring the {IDF_TARGET_NAME} Wi-Fi networking functionality.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Wi-Fi є головною функцією ESP32 як показано в наявності цілої бібліотеки на ESP-IDF
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -293,7 +293,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
   > 2.4 GHz Wi-Fi + Bluetooth® + Bluetooth LE SoC — ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip
 - **Спосіб і дата:** pdftotext -layout з esp32_datasheet_en.pdf, 2026-08-26
 - **Нотатка:** Підтверджено в datasheet ESP32 про 2.4 ГГц. ESP32-C5 офіційно підтримує 6 ГГц — тверджується в офіційній документації Espressif, але в кеші не знайдено.
-- **Прохід:** m2-98-vybirka
+- **Прохід:** m2-98-sample
 
 ---
 
@@ -348,7 +348,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 - **Нотатка:** Даташит ESP32, с. 1: чип **тільки** 2.4 ГГц; там же «802.11b/g/n» і «802.11n (2.4 ГГц), до 150 Мбіт/с». Твердження книги про те, що ESP32 не бачить 5 ГГц, доведено дослівно.
 МЕЖА ЦЬОГО ДОКАЗУ, названа вголос: одиниця містить ДВА твердження. Друге — «сучасні роутери часто мають однакове ім'я для обох діапазонів» — це спостереження про побутові роутери, і жодним первинним документом воно тут не підперте. Клас одиниці визначає сильніша половина, і реєстр не вміє показати, що слабша лишилася без джерела. Тому це сказано тут.
 2026-08-28: до цього запис мав клас unverified — тобто «доказ про відсутність доказу». Джерело весь час лежало в нашому кеші.
-- **Прохід:** m2-97-vybirka
+- **Прохід:** m2-97-sample
 
 ---
 
@@ -406,7 +406,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
   > (за дорогих з великою смугою пропускання).
 - **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
 - **Нотатка:** Осцилограф необхідний для аналізу швидких або аналогових сигналів. Логічний аналізатор не замінює його для цих задач.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -455,7 +455,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
   > Various security modes for the above (WPA, WPA2, WPA3, etc.)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ згадує WPA3 та інші режими безпеки; хоча канали 12 і 13 конкретно не названі, це загальна тема регіональних обмежень у WiFi стандарті
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -484,7 +484,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
   > uint8_t               nchan;   /**< Total channel number of the allowed 2.4GHz Wi-Fi channels */
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документація підтверджує що країна впливає на дозволені канали
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -534,7 +534,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
   > Various security modes for the above (WPA, WPA2, WPA3, etc.)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ згадує WPA3; можливість роутера обмежувати доступ старим пристроям у режимі тільки WPA3 випливає з описаних режимів безпеки
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -583,7 +583,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** IEEE 802.11, обмеження одного каналу одночасно
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-39-wifi
+- **Прохід:** queue-c-39-wifi
 
 ---
 
@@ -1006,7 +1006,7 @@ esp_wifi_connect();
   > } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** приклад показує обробку WIFI_EVENT_STA_DISCONNECTED як асинхронної події
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -1076,7 +1076,7 @@ esp_wifi_connect();
   > I (2089) esp_netif_handlers: sta ip: 192.168.77.89
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** приклад показує, що IP адреса приходить приблизно 2 секунди після запуску, що підтверджує затримку перед отриманням IP
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -1130,7 +1130,7 @@ esp_wifi_connect();
   > I (2089) wifi station: got ip:192.168.77.89
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** приклад ясно показує, що отримання IP адреси розглядається як окремий момент і мітка успіху
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -1352,7 +1352,7 @@ esp_wifi_connect();
   >     }
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** офіційний приклад перепід'єднується без паузи, що відповідає описаній проблемі пристрою гріється і з'їдає батарею
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -1466,7 +1466,7 @@ static void on_disconnect(void) {
   > esp_err_t esp_wifi_connect(void);
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документація показує функцію esp_wifi_connect() яка викликається на логування паузи
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -1653,7 +1653,7 @@ provisioning:
   > esp_err_t nvs_flash_init(void);
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** NVS (Non-Volatile Storage) доступна для зберігання креденшелів як рекомендовано
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -1936,7 +1936,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
   > esp_err_t esp_wifi_sta_get_rssi(int *rssi);
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** функція для отримання RSSI підтверджує наявність інформації про силу сигналу
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -2008,7 +2008,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
   > I (2783) scan: RSSI 		-50
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ показує RSSI −50 як типове значення для доброго сигналу
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -2287,7 +2287,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
   > ESP32-WROOM-32E: On-board PCB antenna
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що WROOM-32E (модуль WROOM-1 версії E) має PCB-антену на платі
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -2338,7 +2338,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
   > MHF I connector from I-PEX
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує роз'єм типу I-PEX MHF I для зовнішної антени у модулях UE
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -2509,7 +2509,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
   > порогові напруги логічних 5-вольтових входів.
 - **Спосіб і дата:** Типові дисплеї та их даташити, 2026-08-26
 - **Нотатка:** Важливо перевіряти паспорт конкретного дисплея, оскільки деякі варіанти (особливо OLED) можуть працювати при 3.3 В.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -2558,7 +2558,7 @@ Wi-Fi — головний споживач у пристрої (розділ 06
   > WIFI_PS_MIN_MODEM,   /**< Minimum modem power saving. In this mode, station wakes up to receive beacon every DTIM period */
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Modem sleep радіо вимикається між маячками, як описано в handbook
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -2586,7 +2586,7 @@ Wi-Fi — головний споживач у пристрої (розділ 06
   > @attention Default power save type is WIFI_PS_MIN_MODEM.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Modem sleep вмикається за замовчуванням як описано в handbook
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -2659,7 +2659,7 @@ Wi-Fi — головний споживач у пристрої (розділ 06
   > The default ESP-NOW bit rate is 1 Mbps.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP-NOW підтримується як альтернатива для безпроводового передавання без з'єднання
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 
@@ -2725,7 +2725,7 @@ ESP32 не бачить 5 ГГц — найчастіша причина «ме�
   > • 802.11n (2.4 GHz), up to 150 Mbps
 - **Спосіб і дата:** tools/layer3.py tekst_dzherela по кешованому PDF, 2026-08-27
 - **Нотатка:** Було E — «зовнішнього джерела не існує». Існує, і воно найпряміше з можливих: даташит називає чип 2.4-гігагерцовим у першому ж рядку опису й перелічує лише b/g/n у діапазоні 2.4 ГГц. Твердження «ESP32 не бачить 5 ГГц мереж» доводиться відсутністю 5 ГГц у переліку підтримуваних стандартів, а не окремою заявою виробника — тому цитата подає обидва рядки.
-- **Прохід:** m2-92-vybirka
+- **Прохід:** m2-92-sample
 
 ---
 
@@ -2872,7 +2872,7 @@ RSSI логувати завжди: на межі OTA не проходить, �
   > I (2783) scan: RSSI 		-50
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** приклад показує використання RSSI значень, що необхідні для моніторингу сигналу
-- **Прохід:** prochid-39-wifi
+- **Прохід:** sweep-39-wifi
 
 ---
 

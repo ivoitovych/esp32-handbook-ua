@@ -113,7 +113,7 @@
   > The ROM bootloader is in read-only memory (ROM) on the ESP32 chip.
 - **Спосіб і дата:** curl esptool boot-mode-selection.rst, 2026-08-26
 - **Нотатка:** Текст одиниці T-16-004 констатує ROM bootloader у read-only memory у кремнії. Джерело підтверджує: The ROM bootloader is in read-only memory.
-- **Прохід:** m2-82-boot-flesh
+- **Прохід:** m2-82-boot-flash
 
 ---
 
@@ -141,7 +141,7 @@
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 boot sequence specification
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-16-boot
+- **Прохід:** queue-c-16-boot
 
 ---
 
@@ -216,7 +216,7 @@
   > After reset, the second line printed by the ESP32 ROM is a reset & boot mode message.
 - **Спосіб і дата:** curl esptool boot-mode-selection.rst, 2026-08-26
 - **Нотатка:** Послідовність: ROM (етап 1), потім другий бутлоадер з флешу (етап 2). Джерело підтверджує послідовність етапів.
-- **Прохід:** m2-82-boot-flesh
+- **Прохід:** m2-82-boot-flash
 
 ---
 
@@ -290,7 +290,7 @@
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 bootloader specification
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-16-boot
+- **Прохід:** queue-c-16-boot
 
 ---
 
@@ -364,7 +364,7 @@ Strapping-пін — це звичайний GPIO, стан якого чита�
 - **Джерело:** ESP32 та ESP32-S3 Datasheet, розділ про boot mode selection
 - **Що шукати в джерелі:** GPIO pin functions, boot mode control
 - **Нотатка:** Твердження про GPIO0 як ключовий контрольний пін для boot режимів. Це стандартна функція ESP32 архітектури, що підтверджується datasheet.
-- **Прохід:** m2-98-vybirka
+- **Прохід:** m2-98-sample
 
 ---
 
@@ -392,7 +392,7 @@ Strapping-пін — це звичайний GPIO, стан якого чита�
 
 - **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
 - **Нотатка:** Це заголовок таблиці з самої книги, яка описує залежність ROM адреси від стану GPIO0 при скиданні. Таблиця з книги не є зовнішнім джерелом.
-- **Прохід:** m2-98-vybirka
+- **Прохід:** m2-98-sample
 
 ---
 
@@ -557,7 +557,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 Boot Mode Selection Guide, Strapping Pins
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-16-boot
+- **Прохід:** queue-c-16-boot
 
 ---
 
@@ -845,7 +845,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
 - **Спосіб і дата:** grep по кешованих .rst ESP-IDF, 2026-08-27
 - **Нотатка:** Агент був поставив джерелом саму книгу. Справжнє джерело — підстановка IDF_TARGET_BOOTLOADER_OFFSET, з якої ESP-IDF рендерить свою документацію: типове 0x0, classic і S2 — 0x1000, P4 і C5 — 0x2000. Таблиця книги (рядки 70–72 розділу 16) збігається з нею повністю, включно з третім значенням і складом кожної групи. Друге місце в тому ж кеші, bootloader.rst рядок 152, зараховує S2 до групи 0x0 — це розбіжність усередині документації самої ESP-IDF, і права там підстановка з рядка 5, бо саме нею рендериться текст. Книга стоїть на правильному боці.
-- **Прохід:** m2-94-vybirka
+- **Прохід:** m2-94-sample
 
 ---
 
@@ -1072,7 +1072,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
 - **Спосіб і дата:** grep по кешованих .rst ESP-IDF, 2026-08-27
 - **Нотатка:** Агент був поставив джерелом саму книгу. Справжнє джерело — підстановка IDF_TARGET_BOOTLOADER_OFFSET, з якої ESP-IDF рендерить свою документацію: типове 0x0, classic і S2 — 0x1000, P4 і C5 — 0x2000. Таблиця книги (рядки 70–72 розділу 16) збігається з нею повністю, включно з третім значенням і складом кожної групи. Друге місце в тому ж кеші, bootloader.rst рядок 152, зараховує S2 до групи 0x0 — це розбіжність усередині документації самої ESP-IDF, і права там підстановка з рядка 5, бо саме нею рендериться текст. Книга стоїть на правильному боці.
-- **Прохід:** m2-94-vybirka
+- **Прохід:** m2-94-sample
 
 ---
 
@@ -1647,7 +1647,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
   > partition table at runtime, is appended after the table data. Thus, the
   > partition table occupies an entire flash sector, which size is 0x1000
   > (4 KB). As a result, any partition following it must be at least
-  > located at (default offset) + 0x1000.
+  > The partition table length is 0xC00 bytes, as we allow a maximum of 95 entries. An MD5 checksum, used for checking the integrity of the partition table at runtime, is appended after the table data. Thus, the partition table occupies an entire flash sector, which size is 0x1000 (4 KB). As a result, any partition following it must be at least located at (:ref:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`) + 0x1000.
   > 
   > (Kconfig.projbuild)
   > config PARTITION_TABLE_OFFSET
@@ -1659,7 +1659,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
   >         for the bootloader.
   > 
   > (bootloader.rst)
-  > When using the default CONFIG_PARTITION_TABLE_OFFSET value 0x8000, the
+  > When using the default :ref:`CONFIG_PARTITION_TABLE_OFFSET` value 0x8000, the size limit is {IDF_TARGET_CONFIG_PARTITION_TABLE_OFFSET} bytes.
   > size limit is … bytes.
   > If the bootloader binary is too large, then the bootloader build will
   > fail with an error "Bootloader binary size [..] is too large for
@@ -1668,7 +1668,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
   > - Set bootloader compiler optimization back to "Size" …
   > - Reduce bootloader log level …
   > - Set CONFIG_PARTITION_TABLE_OFFSET to a higher value than 0x8000 …
-  >   no partition has an offset lower than CONFIG_PARTITION_TABLE_OFFSET
+  > - Set :ref:`CONFIG_PARTITION_TABLE_OFFSET` to a higher value than 0x8000, to place the partition table later in the flash. This increases the space available for the bootloader. If the :doc:`partition table </api-guides/partition-tables>` CSV file contains explicit partition offsets, they will need changing so no partition has an offset lower than ``CONFIG_PARTITION_TABLE_OFFSET + 0x1000``. (This includes the default partition CSV files supplied with ESP-IDF.)
   >   + 0x1000.
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Друга хибна причина, і цього разу вона мешкала в `docs/fakty.md`: «типовий ліміт розміру самої таблиці — `0x7000` (28 672 байти)».
@@ -1733,7 +1733,7 @@ offset`.
   > partition table at runtime, is appended after the table data. Thus, the
   > partition table occupies an entire flash sector, which size is 0x1000
   > (4 KB). As a result, any partition following it must be at least
-  > located at (default offset) + 0x1000.
+  > The partition table length is 0xC00 bytes, as we allow a maximum of 95 entries. An MD5 checksum, used for checking the integrity of the partition table at runtime, is appended after the table data. Thus, the partition table occupies an entire flash sector, which size is 0x1000 (4 KB). As a result, any partition following it must be at least located at (:ref:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`) + 0x1000.
   > 
   > (Kconfig.projbuild)
   > config PARTITION_TABLE_OFFSET
@@ -1745,7 +1745,7 @@ offset`.
   >         for the bootloader.
   > 
   > (bootloader.rst)
-  > When using the default CONFIG_PARTITION_TABLE_OFFSET value 0x8000, the
+  > When using the default :ref:`CONFIG_PARTITION_TABLE_OFFSET` value 0x8000, the size limit is {IDF_TARGET_CONFIG_PARTITION_TABLE_OFFSET} bytes.
   > size limit is … bytes.
   > If the bootloader binary is too large, then the bootloader build will
   > fail with an error "Bootloader binary size [..] is too large for
@@ -1754,7 +1754,7 @@ offset`.
   > - Set bootloader compiler optimization back to "Size" …
   > - Reduce bootloader log level …
   > - Set CONFIG_PARTITION_TABLE_OFFSET to a higher value than 0x8000 …
-  >   no partition has an offset lower than CONFIG_PARTITION_TABLE_OFFSET
+  > - Set :ref:`CONFIG_PARTITION_TABLE_OFFSET` to a higher value than 0x8000, to place the partition table later in the flash. This increases the space available for the bootloader. If the :doc:`partition table </api-guides/partition-tables>` CSV file contains explicit partition offsets, they will need changing so no partition has an offset lower than ``CONFIG_PARTITION_TABLE_OFFSET + 0x1000``. (This includes the default partition CSV files supplied with ESP-IDF.)
   >   + 0x1000.
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Друга хибна причина, і цього разу вона мешкала в `docs/fakty.md`: «типовий ліміт розміру самої таблиці — `0x7000` (28 672 байти)».
@@ -1829,7 +1829,7 @@ offset`.
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
 - **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep BOOTLOADER_OFFSET, 2026-08-26
 - **Нотатка:** Таблиця розділу 16 показує адреси. Для ESP32: 0x1000. Джерело вказує: esp32="0x1000". | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-82-boot-flesh
+- **Прохід:** m2-82-boot-flash
 
 ---
 
@@ -1882,7 +1882,7 @@ offset`.
   > ota_1,    app,  ota_1,   0x120000, 1M,
 - **Спосіб і дата:** curl esp-idf partition-tables.rst, grep ota_, 2026-08-26
 - **Нотатка:** Текст посилається на ota_0 та ota_1 у таблиці розділів. Джерело підтверджує їхню наявність.
-- **Прохід:** m2-82-boot-flesh
+- **Прохід:** m2-82-boot-flash
 
 ---
 
@@ -1911,7 +1911,7 @@ offset`.
   > If "ota data" is empty, it will execute the factory app.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Quote found in partition-tables.rst confirming that bootloader executes factory app when OTA data is empty
-- **Прохід:** cherga-a-16-boot
+- **Прохід:** queue-a-16-boot
 
 ---
 
@@ -2535,7 +2535,7 @@ E (xxx) boot: Failed to verify partition table
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 GDB debugger guide first dump
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-16-boot
+- **Прохід:** queue-c-16-boot
 
 ---
 

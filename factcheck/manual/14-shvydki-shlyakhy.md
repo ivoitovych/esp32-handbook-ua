@@ -124,7 +124,7 @@
   > REPL (Python prompt) over UART0 and/or the integrated USB peripheral
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** MicroPython provides interactive console (REPL) for immediate code execution
-- **Прохід:** prochid-14-shvydki-shlyakhy
+- **Прохід:** sweep-14-shvydki-shlyakhy
 
 ---
 
@@ -340,7 +340,7 @@ Python, поріг входу мінімальний.
 - **Джерело:** MicroPython офіційна документація та ESP32-C3 Datasheet
 - **Що шукати в джерелі:** Розподіл пам'яті MicroPython firmware на ESP32-C3
 - **Нотатка:** Твердження про розподіл пам'яті при запуску MicroPython на C3 (256 КБ SRAM). Потребує перевірки розміру binary та фактичного розподілу heap/stack.
-- **Прохід:** m2-98-vybirka
+- **Прохід:** m2-98-sample
 
 ---
 
@@ -396,7 +396,7 @@ Python, поріг входу мінімальний.
   > The machine module with GPIO, UART, SPI, software I2C, ADC, DAC, PWM, TouchPad, WDT and Timer.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** MicroPython supports specific peripherals but not all hardware features are available
-- **Прохід:** prochid-14-shvydki-shlyakhy
+- **Прохід:** sweep-14-shvydki-shlyakhy
 
 ---
 
@@ -1407,7 +1407,7 @@ YAML-описом перевіряється, що залізо зібране �
   > MicroPython implements the entire Python 3.4 syntax
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Self-evident: MicroPython IS Python implementation; code must be written in Python language by definition.
-- **Прохід:** klas-f-14-shvydki-shlyakhy
+- **Прохід:** nosignal-14-shvydki-shlyakhy
 
 ---
 
@@ -2035,7 +2035,7 @@ YAML-описом перевіряється, що залізо зібране �
   > possible things that could be entered.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** MicroPython REPL з auto-completion дозволяє дослідити доступні модулі; з машинними модулями можна проверити і2ц адреси та параметри датчиків
-- **Прохід:** prochid-14-shvydki-shlyakhy
+- **Прохід:** sweep-14-shvydki-shlyakhy
 
 ---
 

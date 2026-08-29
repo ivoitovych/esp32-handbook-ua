@@ -34,7 +34,7 @@ Espressif. Це нормативне ядро довідника (Р3): **усі
   > ESP-IDF is the development framework for Espressif SoCs supported on Windows, Linux and macOS.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що ESP-IDF — офіційний фреймворк Espressif
-- **Прохід:** klas-f-11-idf
+- **Прохід:** nosignal-11-idf
 
 ---
 
@@ -308,7 +308,7 @@ TCP/IP, TLS, файлові системи, система збирання.
   > The tools are downloaded and installed into a directory specified during ESP-IDF Tools Installer process.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує існування ESP-IDF Tools Installer для Windows
-- **Прохід:** klas-f-11-idf
+- **Прохід:** nosignal-11-idf
 
 ---
 
@@ -583,7 +583,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
   > eval "${idf_exports}"
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** export.sh додає інструменти в PATH та ставить змінні середовища через activate.py
-- **Прохід:** cherga-a-11-idf
+- **Прохід:** queue-a-11-idf
 
 ---
 
@@ -636,7 +636,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
   > Technically, you can add ``export.sh`` to your shell's profile directly; however, it is not recommended. Doing so activates IDF virtual environment in every terminal session
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що додавання export.sh до профілю shell не рекомендується, що погіршує роботу
-- **Прохід:** klas-f-11-idf
+- **Прохід:** nosignal-11-idf
 
 ---
 
@@ -1136,7 +1136,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
   > use the `current stable version`_
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Документація рекомендує вибір конкретної стабільної версії для проектів
-- **Прохід:** cherga-a-11-idf
+- **Прохід:** queue-a-11-idf
 
 ---
 
@@ -2099,7 +2099,7 @@ idf_component_register(
   > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
 - **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
 - **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -3109,7 +3109,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
   > Whenever the chip outputs a hexadecimal address that points to executable code, IDF monitor looks up the location in the source code
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує вбудований монітор з розшифровкою backtrace адрес.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -3481,7 +3481,7 @@ Arduino core лишається правильним інструментом д
   > idf.py set-target`` will clear the build directory and re-generate the ``sdkconfig`` file from scratch. The old ``sdkconfig`` file will be saved as ``sdkconfig.old``.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Confirms that set-target clears sdkconfig. Documentation also recommends placing CONFIG_IDF_TARGET in sdkconfig.defaults for reproducibility.
-- **Прохід:** klas-f-11-idf
+- **Прохід:** nosignal-11-idf
 
 ---
 

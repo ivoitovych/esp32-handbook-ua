@@ -972,7 +972,7 @@ esptool --port /dev/ttyUSB0 flash-id
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst, де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`; книга вживає довгу. Команда в книзі точна. Урок не про помічника, а про наряд: один ключ мусить вести до всіх файлів свого документа, бо документація esptool розкладена на команди й опції окремо.
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -1001,7 +1001,7 @@ esptool --port /dev/ttyUSB0 flash-id
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst, де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`; книга вживає довгу. Команда в книзі точна. Урок не про помічника, а про наряд: один ключ мусить вести до всіх файлів свого документа, бо документація esptool розкладена на команди й опції окремо.
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -1205,7 +1205,7 @@ MAC:                24:6f:28:xx:xx:xx
   > esptool flash-id
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує flash-id як команду, яка показує флеш інформацію.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1779,7 +1779,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
   > Expected {block_len} byte block, got {len(r)} bytes
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Файл менший за очікуваний означає обриваний дамп, а не стиснення
-- **Прохід:** prochid-17-esptool
+- **Прохід:** sweep-17-esptool
 
 ---
 
@@ -1965,7 +1965,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -2005,7 +2005,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -2035,7 +2035,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
 - **Спосіб і дата:** grep по кешованих .rst ESP-IDF, 2026-08-27
 - **Нотатка:** Агент був поставив джерелом саму книгу. Справжнє джерело — підстановка IDF_TARGET_BOOTLOADER_OFFSET, з якої ESP-IDF рендерить свою документацію: типове 0x0, classic і S2 — 0x1000, P4 і C5 — 0x2000. Таблиця книги (рядки 70–72 розділу 16) збігається з нею повністю, включно з третім значенням і складом кожної групи. Друге місце в тому ж кеші, bootloader.rst рядок 152, зараховує S2 до групи 0x0 — це розбіжність усередині документації самої ESP-IDF, і права там підстановка з рядка 5, бо саме нею рендериться текст. Книга стоїть на правильному боці.
-- **Прохід:** m2-94-vybirka
+- **Прохід:** m2-94-sample
 
 ---
 
@@ -2111,7 +2111,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
   > The next arguments to ``write-flash`` are one or more pairs of offset (address) and file name
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Цитата дослівно присутня в документації esptool. Українська версія "Аргументи йдуть парами: адреса, файл" є точним перекладом
-- **Прохід:** cherga-a-17-esptool
+- **Прохід:** queue-a-17-esptool
 
 ---
 
@@ -2164,7 +2164,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
   > By default, the serial transfer data is compressed for better performance. The ``-u/--no-compress`` option disables this behaviour
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Документація каже, що стиснення увімкнено за замовчуванням. Цитата в наказі говорить "-z вмикає стиснення", але документація використовує -u для вимкнення, а не -z для вмикнення
-- **Прохід:** cherga-a-17-esptool
+- **Прохід:** queue-a-17-esptool
 
 ---
 
@@ -2196,7 +2196,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
   > Compress data during transfer (default unless --no-stub is specified)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Стиснення ввімкнене за замовчуванням, прапорець у звичайній команді нічого не змінює
-- **Прохід:** prochid-17-esptool
+- **Прохід:** sweep-17-esptool
 
 ---
 
@@ -2254,7 +2254,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
   > Compress data during transfer
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Стиснення зменшує обсяг даних через кабель і зменшує ймовірність корупції
-- **Прохід:** prochid-17-esptool
+- **Прохід:** sweep-17-esptool
 
 ---
 
@@ -2397,7 +2397,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
   > Serial port baud rate used when flashing
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Швидкість передачі є функцією чипа і кабелю, а не критичним параметром для економії часу
-- **Прохід:** prochid-17-esptool
+- **Прохід:** sweep-17-esptool
 
 ---
 
@@ -2485,7 +2485,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
   > BOOTLOADER_FLASH_OFFSET = 0x1000
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Адреси залежать від сімейства чипа - ESP32 має 0x1000, інші чипи 0x0
-- **Прохід:** prochid-17-esptool
+- **Прохід:** sweep-17-esptool
 
 ---
 
@@ -3179,7 +3179,7 @@ esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -3219,7 +3219,7 @@ esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -3254,7 +3254,7 @@ esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
   >         )
   > 
   > (basic-options.rst)
-  > * Binary image generation commands, such as elf2image or merge-bin,
+  > * Binary image generation commands, such as :ref:`elf2image <elf-2-image>` or :ref:`merge-bin <merge-bin>`, require the chip type to be specified.
   >   require the chip type to be specified.
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
@@ -3337,7 +3337,7 @@ esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
   >         )
   > 
   > (basic-options.rst)
-  > * Binary image generation commands, such as elf2image or merge-bin,
+  > * Binary image generation commands, such as :ref:`elf2image <elf-2-image>` or :ref:`merge-bin <merge-bin>`, require the chip type to be specified.
   >   require the chip type to be specified.
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
@@ -3373,7 +3373,7 @@ esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
 - **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep BOOTLOADER_OFFSET, 2026-08-26
 - **Нотатка:** Таблиця розділу 16 показує адреси. Для ESP32: 0x1000. Джерело вказує: esp32="0x1000". | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-82-boot-flesh
+- **Прохід:** m2-82-boot-flash
 
 ---
 
@@ -3746,7 +3746,7 @@ idf.py merge-bin -o vyrib-v1.bin
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
 - **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep BOOTLOADER_OFFSET, 2026-08-26
 - **Нотатка:** Таблиця розділу 16 показує адреси. Для ESP32: 0x1000. Джерело вказує: esp32="0x1000". | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-82-boot-flesh
+- **Прохід:** m2-82-boot-flash
 
 ---
 
@@ -3890,7 +3890,7 @@ received.`**
 - **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
 - **Спосіб і дата:** Практична рекомендація діагностики. Пошук у ESP-IDF SPI документації та датащиті не знайшов офіційного джерела для цієї конкретної методики діагностики
 - **Нотатка:** Метод діагностики: 1 МГц — достатньо низька для надійної передачі SPI даних. Це практичне спостереження, а не офіційна рекомендація з документації. Жодного зовнішнього джерела не знайдено. Клас E. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-92-vybirka
+- **Прохід:** m2-92-sample
 
 ---
 
@@ -3921,7 +3921,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
   > 'esptool v{__version__}'
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'Версія рядка залежить від версії esptool'
-- **Прохід:** prochid-17-esptool
+- **Прохід:** sweep-17-esptool
 
 ---
 
@@ -4048,7 +4048,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
   > $ exit  # перезайти для оновлення групи
 - **Спосіб і дата:** Стандартна конфігурація Linux систем з udev, 2026-08-26
 - **Нотатка:** Це стандартне Linux налаштування для безпеки. Серійні пристрої визначені в /etc/udev/rules.d/ з групою dialout. Нова група вступає в силу тільки після переходу, не просто logoff. Це часта "пастка" для новачків.
-- **Прохід:** m2-72-symptomy-29
+- **Прохід:** m2-72-symptoms-29
 
 ---
 
@@ -4299,7 +4299,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 Flash Memory Specification
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-17-esptool
+- **Прохід:** queue-c-17-esptool
 
 ---
 
@@ -4844,7 +4844,7 @@ esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
   > Serial data stream stopped: Possible serial noise or corruption
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Помилка синхронізації - немає відповіді від чипа
-- **Прохід:** prochid-17-esptool
+- **Прохід:** sweep-17-esptool
 
 ---
 

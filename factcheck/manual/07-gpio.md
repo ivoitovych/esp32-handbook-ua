@@ -129,7 +129,7 @@
   > Startup code called from the reset vector determines the boot mode by checking ``GPIO_STRAP_REG`` register for bootstrap pin states.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ROM-бутлоадер дійсно читає стан GPIO для вибору режиму завантаження
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -159,7 +159,7 @@
   > Startup code called from the reset vector determines the boot mode by checking ``GPIO_STRAP_REG`` register for bootstrap pin states.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджено, що GPIO служать джерелом рішення для завантаження
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -398,7 +398,7 @@
   > MTDI = 1, VDD_SDIO pin is powered from internal 1.8 V LDO.
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
 - **Нотатка:** GPIO12 як MTDI контролює напругу VDD_SDIO; коли висока (1), напруга 1.8В від внутрішнього LDO | Взірець прив’язано вручну 2026-08-27 до одиниць T-07-012, T-07-132: автоматичний ремонт кандидата не знайшов, бо назва запису й текст одиниці розійшлися словами.
-- **Прохід:** m2-detali-klasC
+- **Прохід:** m2-parts-class-c
 
 ---
 
@@ -899,7 +899,7 @@ classic це може означати просто резистор або св
   > Output voltage: VCC level (≈5 V) або 0 V
 - **Спосіб і дата:** Datasheet SN74HC04 (sn74hc04.pdf), PDF Espressif, 2026-08-26
 - **Нотатка:** 74HC серія при 5 В дає вихід близько 5 В. Це часто застосовується у схемах управління, але вимагає перетворювача рівня для ESP32.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -1096,7 +1096,7 @@ classic це може означати просто резистор або св
   > конфігурація VDDSDIO може привести до 1.8V режиму.
 - **Спосіб і дата:** Аналіз source-cache/esp32_datasheet_en.pdf та практичної документації
 - **Нотатка:** Твердження логічно випливає з технічних характеристик ESP32 і поведінки при неправильній конфігурації напругою VDDSDIO. Однак прямої цитати про «не запускається й немає логу» у datasheet не знайдено — це висновок з властивостей системи. Таким чином, класифікується як B (выпливає однозначно, але немає дослівної цитати). | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-91-vybirka
+- **Прохід:** m2-91-sample
 
 ---
 
@@ -1273,7 +1273,7 @@ classic це може означати просто резистор або св
 - **Джерело:** Електрична схема ESP32 або технічна документація про pull-up резистори
 - **Що шукати в джерелі:** GPIO pull-up/pull-down конфігурація для GPIO12 в datasheet
 - **Нотатка:** Твердження про фізичний стан GPIO12 з pull-up резистором. Потребує перевірки у офіційному datagsheet або технічних схемах плат.
-- **Прохід:** m2-98-vybirka
+- **Прохід:** m2-98-sample
 
 ---
 
@@ -1307,7 +1307,7 @@ classic це може означати просто резистор або св
   R = (U_живлення − U_світлодіода) / I_бажаний;  (3.3 − 2.0) / 0.010 = 130 Ом
 - **Спосіб і дата:** Класична електротехніка. LED Datasheet (led-red-wp7113id.pdf, led-blue-wp7113qbc.pdf), типовий струм 10-20 мА. 2026-08-26
 - **Нотатка:** Формула широко використовується у практиці та описана у всіх посібниках по світлодіодам. Напруга світлодіода береться з його паспорту.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -1613,7 +1613,7 @@ classic це може означати просто резистор або св
   > Strapping pin: GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO) are strapping pins.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Таблиця в довіднику показує різні комбінації strapping пінів для входу в бутлоадер
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -1980,7 +1980,7 @@ classic це може означати просто резистор або св
   > Strapping pin: GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO) are strapping pins. For more information, please refer to `ESP32 datasheet
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Classic ESP32 має специфічні комбінації strapping пінів для download mode, відмінні від S3
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -2060,7 +2060,7 @@ classic це може означати просто резистор або св
   > Startup code called from the reset vector determines the boot mode by checking ``GPIO_STRAP_REG`` register for bootstrap pin states.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** strapping pins дійсно використовуються як входи під час завантаження, що дозволяє використовувати їх як виходи в нормальній роботі
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -2155,7 +2155,7 @@ classic це може означати просто резистор або св
   > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
 - **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
 - **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -2288,7 +2288,7 @@ classic це може означати просто резистор або св
   > Pins GPIO6 to GPIO11 on the ESP32-D0WD-V3/ESP32-D0WDR2-V3 chip are connected to the SPI flash integrated on the module and are not led out.
 - **Спосіб і дата:** pdftotext -layout по кешованому PDF, рядки 656–658, 2026-08-27
 - **Нотатка:** Агент був поставив сюди клас E з поясненням, що жоден офіційний документ Espressif цього явно не подає. Подає — виноскою до таблиці розпіновки модуля. Шукати треба було в даташиті МОДУЛЯ, а не чипа: у даташиті чипа GPIO6–GPIO11 — звичайні піни, бо до флешу їх приєднує саме модуль. Твердження книги точне, включно з «у модулі». | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-92-vybirka
+- **Прохід:** m2-92-sample
 
 ---
 
@@ -2317,7 +2317,7 @@ GPIO — і це чиста пастка. Спроба їх використат
   > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module and therefore should not be used for other purposes.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Попередження про те, що ці піни виведені на гребінку як звичайні GPIO, але насправді зайняті флешем
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -2346,7 +2346,7 @@ GPIO — і це чиста пастка. Спроба їх використат
   > GPIO6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module and therefore should not be used for other purposes.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Довідник стверджує, що спроба їх використати підвішує чип або псує флеш; документація вказує, що їх не слід використовувати для інших цілей
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -2374,7 +2374,7 @@ GPIO — і це чиста пастка. Спроба їх використат
   > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module and therefore should not be used for other purposes.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO6-11 - категоричне правило, вони не існують для використання, зайняті флешем
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -2402,7 +2402,7 @@ GPIO — і це чиста пастка. Спроба їх використат
   > GPIO6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module and therefore should not be used for other purposes.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Категоричне правило в довіднику про заборону підтверджується рекомендацією ESP-IDF не використовувати ці піни
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -2468,7 +2468,7 @@ integrated on the module».
   > GPIO6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO 6-11 названі без слова "usually", GPIO 16-17 названі зі словом "usually" - розрізняються саме цим словом
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -2532,7 +2532,7 @@ integrated on the module».
   > GPIO6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Слово "usually" означає, що на модулях без PSRAM (WROOM-32) GPIO16-17 можуть бути вільні
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -2562,7 +2562,7 @@ integrated on the module».
   > GPIO6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module and therefore should not be used for other purposes.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Слово "usually" підтверджує, що безпека залежить від типу модуля - потрібно знати, який модуль тримаєте
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -2603,7 +2603,7 @@ WROVER (з PSRAM). На WROVER піни GPIO16 і GPIO17 використову�
 PSRAM, тому схема перестає працювати. Це показує важливість перевіки
 типу модуля перед посиланням GPIO.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -2822,7 +2822,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
   > When using Octal flash or Octal PSRAM or both, GPIO33 ~ GPIO37 are connected to SPIIO4 ~ SPIIO7 and SPIDQS. Therefore, on boards embedded with ESP32-S3R8 / ESP32-S3R8V chip, GPIO33 ~ GPIO37 are also not recommended for other uses.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** S3 з Octal PSRAM (N16R8) використовує додаткові піни GPIO33-37, тому менше доступних пінів ніж classic
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -2898,7 +2898,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
   > GPIO26 ~ GPIO32 are usually used for SPI flash and PSRAM and not recommended for other uses. When using Octal flash or Octal PSRAM or both, GPIO33 ~ GPIO37 are connected to SPIIO4 ~ SPIIO7
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** N8 (з Octal PSRAM) і N16R8 (з 16МБ Octal PSRAM) мають різні набори пінів
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -2968,7 +2968,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
   > 1-Wire (Maxim): Обов'язково open-drain вихід і pull-up резистор.
 - **Спосіб і дата:** I²C spec (i2c-um10204.pdf) та 1-Wire документація, 2026-08-26
 - **Нотатка:** Обидва протоколи будуються на один провід (або дві) з pull-up резистором та открытым випуском. Це забезпечує можливість кількох пристроїв на одній лінії.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -2997,7 +2997,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
   > GPI: GPIO34-39 can only be set as input mode and do not have software-enabled pullup or pulldown functions.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Друге обмеження (відсутність pull-up/pull-down) менш очевидне, ніж перше (input-only)
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -3064,7 +3064,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
   > GPI: GPIO34-39 can only be set as input mode and do not have software-enabled pullup or pulldown functions.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Кнопка на GPIO без зовнішнього резистора підтягування виглядає як несправна
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -3091,7 +3091,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
   > do not have software-enabled pullup or pulldown functions
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Апаратна особливість GPIO34-39 - відсутність pull-up/pull-down не може бути змінена налаштуванням коду
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -3119,7 +3119,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
   > The {IDF_TARGET_NAME} chip features 45 physical GPIO pins
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** S3 і C3 мають більше доступних пінів і немає тільки-вхідних пінів, на відміну від classic
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -3326,7 +3326,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
   > GPI: GPIO34-39 can only be set as input mode and do not have software-enabled pullup or pulldown functions.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Задача встановлення датчика на GPIO34-39 вимагає правильного вибору піна, не налаштування коду
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -3706,7 +3706,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
   > The {IDF_TARGET_NAME} chip features 34 physical GPIO pins
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP32 classic - єдиний чип в лінійці з DAC на GPIO25 і GPIO26, інші сімейства DAC не мають
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -3808,7 +3808,7 @@ classic, S2 і S3.
   > GPIO34-39 can only be set as input mode and do not have software-enabled pullup or pulldown functions.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Аналогові функції (ADC, DAC, Touch) не керуються матрицею GPIO, вони з'єднані з конкретними пінами
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -3909,7 +3909,7 @@ classic, S2 і S3.
   > TXD & RXD are usually used for flashing and debugging.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Використання GPIO1/GPIO3 для інших цілей втрачає важливість для діагностики
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -3936,7 +3936,7 @@ classic, S2 і S3.
   > TXD & RXD are usually used for flashing and debugging.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO1 і GPIO3 зарезервовані для консолі, рекомендація дотримуватись, лише крайній випадок використання
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -4172,7 +4172,7 @@ classic, S2 і S3.
   > • Open-drain interrupt output
 - **Спосіб і дата:** PDF TI, кеш `pcf8574.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
 - **Нотатка:** Розрядність у самій назві документа: вісім ліній, і саме по I²C. Побічне, вартого розділу 07: вихід переривання **з відкритим стоком**, тобто на нього теж потрібне підтягування — а книга про це не згадує, хоч радить PCF8574 як вихід із браку пінів.
-- **Прохід:** m2-08-dyspleyi-rozshyryuvachi
+- **Прохід:** m2-08-displays-expanders
 
 ---
 
@@ -4302,7 +4302,7 @@ classic, S2 і S3.
   > The {IDF_TARGET_NAME} chip features 45 physical GPIO pins (GPIO0 ~ GPIO21 and GPIO26 ~ GPIO48)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** S3 має 45 GPIO пінів проти 34 на classic ESP32, значно більше доступних пінів
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 
@@ -4382,7 +4382,7 @@ classic, S2 і S3.
   > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
 - **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
 - **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -4461,7 +4461,7 @@ datasheet чипа.
   > "| Плата ESP32 DevKit | 38 пінів, USB-UART CP2102 або CH9102 |"
 - **Спосіб і дата:** Таблиця в картці kartky/k12-komplekt.md, реальні модулі на ринку, 2026-08-26
 - **Нотатка:** Варіанти CP2102 та CH9102 трапляються в реальних модулях. CP2102 — старіший, CH9102 — новіший. Кількість пінів 38 є стандартом для ESP32 DevKit V4.
-- **Прохід:** m2-50-kartky
+- **Прохід:** m2-50-cards
 
 ---
 
@@ -4597,7 +4597,7 @@ datasheet чипа.
   > MTDI = 1, VDD_SDIO pin is powered from internal 1.8 V LDO.
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
 - **Нотатка:** GPIO12 як MTDI контролює напругу VDD_SDIO; коли висока (1), напруга 1.8В від внутрішнього LDO | Взірець прив’язано вручну 2026-08-27 до одиниць T-07-012, T-07-132: автоматичний ремонт кандидата не знайшов, бо назва запису й текст одиниці розійшлися словами.
-- **Прохід:** m2-detali-klasC
+- **Прохід:** m2-parts-class-c
 
 ---
 
@@ -4650,7 +4650,7 @@ datasheet чипа.
   > SENSOR_VN (GPIO39), VDET_1 (GPIO34), VDET_2 (GPIO35).
 - **Спосіб і дата:** PDF Espressif, кеш `esp32-datasheet.pdf`, pdftotext -layout, 2026-08-26
 - **Нотатка:** Дослівне влучання: джерело прямо називає `GPIO34` серед пінів без жодного внутрішнього pull-up/pull-down. Це друга знахідка розділу 62, варта безпеки: без зовнішнього резистора вхід поплавкового вимикача справді «бовтається», і немає резервного внутрішнього підтягування, яке б це пом'якшило (на відміну від GPIO26/27 для кнопок, де книга сама називає внутрішню підтяжку — рядок 116 схеми). Вибір саме зовнішнього резистора тут не перестраховка, а єдиний спосіб.
-- **Прохід:** m2-23-proekty-60-62
+- **Прохід:** m2-23-projects-60-62
 
 ---
 
@@ -4707,7 +4707,7 @@ Strapping-піни краще використовувати як виходи �
   > Strapping pin: GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO) are strapping pins. For more information, please refer to `ESP32 datasheet
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Strapping-піни читаються при старті, тому їх краще використовувати як виходи, не входи, щоб не зіпсувати boot-режим
-- **Прохід:** prochid-07-gpio
+- **Прохід:** sweep-07-gpio
 
 ---
 

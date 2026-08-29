@@ -102,7 +102,7 @@
   > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
 - **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
 - **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -389,7 +389,7 @@
   > #define U0RXD_GPIO_NUM  (3)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO 0 - strapping пін BOOT; низький = download mode
-- **Прохід:** prochid-a-pinouty
+- **Прохід:** sweep-a-pinouty
 
 ---
 
@@ -444,7 +444,7 @@
   > #define U0TXD_GPIO_NUM  (1)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO 1 - апаратний пін UART0 TX на ESP32 classic
-- **Прохід:** prochid-a-pinouty
+- **Прохід:** sweep-a-pinouty
 
 ---
 
@@ -499,7 +499,7 @@
   > #define U0RXD_GPIO_NUM  (3)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO 3 - апаратний пін UART0 RX на ESP32 classic, консоль
-- **Прохід:** prochid-a-pinouty
+- **Прохід:** sweep-a-pinouty
 
 ---
 
@@ -555,7 +555,7 @@
 - **Спосіб і дата:** Datasheet taken from the cache 2026-08-29 and the quote checked against it as a substring (layer 3). `verbatim` means the document was obtained and the quote is exact — not that a maintainer read the passage and agreed.
 - **Нотатка:** 2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
 Та сама табл. 3-1: GPIO2 у переліку strapping-пінів, типова підтяжка вниз.
-- **Прохід:** m2-a1-pinouty-adc-strapping
+- **Прохід:** m2-a1-pinouts-adc-strapping
 
 ---
 
@@ -757,7 +757,7 @@
   > #define U0RXD_GPIO_NUM  (3)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO 3 - UART0 RX на ESP32 classic
-- **Прохід:** prochid-a-pinouty
+- **Прохід:** sweep-a-pinouty
 
 ---
 
@@ -812,7 +812,7 @@
   > #define U0RXD_GPIO_NUM  (3)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO 3 - UART0 RX, консоль
-- **Прохід:** prochid-a-pinouty
+- **Прохід:** sweep-a-pinouty
 
 ---
 
@@ -1015,7 +1015,7 @@
 - **Спосіб і дата:** Datasheet taken from the cache 2026-08-29 and the quote checked against it as a substring (layer 3). `verbatim` means the document was obtained and the quote is exact — not that a maintainer read the passage and agreed.
 - **Нотатка:** 2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
 Табл. 3-1 паспорта перелічує strapping-піни поіменно: GPIO0, GPIO2, MTDI, GPIO5. GPIO5 у переліку є, з типовою підтяжкою вгору.
-- **Прохід:** m2-a1-pinouty-adc-strapping
+- **Прохід:** m2-a1-pinouts-adc-strapping
 
 ---
 
@@ -1076,7 +1076,7 @@
   > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
 - **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
 - **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -2094,7 +2094,7 @@
   > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
 - **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
 - **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -2204,7 +2204,7 @@
   > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
 - **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
 - **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -2259,7 +2259,7 @@
   > DAC_GPIO25_CHANNEL      DAC_CHAN_0
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO 25 is DAC channel 0 (DAC1)
-- **Прохід:** prochid-a-pinouty
+- **Прохід:** sweep-a-pinouty
 
 ---
 
@@ -2314,7 +2314,7 @@
   > ADC2_GPIO25_CHANNEL     8
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO 25 corresponds to ADC2 channel 8
-- **Прохід:** prochid-a-pinouty
+- **Прохід:** sweep-a-pinouty
 
 ---
 
@@ -2369,7 +2369,7 @@
   > DAC_GPIO26_CHANNEL      DAC_CHAN_1
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO 26 is DAC channel 1 (DAC2)
-- **Прохід:** prochid-a-pinouty
+- **Прохід:** sweep-a-pinouty
 
 ---
 
@@ -2489,7 +2489,7 @@
   > ADC2_GPIO27_CHANNEL     7
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO 27 corresponds to ADC2 channel 7
-- **Прохід:** prochid-a-pinouty
+- **Прохід:** sweep-a-pinouty
 
 ---
 
@@ -2724,7 +2724,7 @@
 - **Спосіб і дата:** Datasheet taken from the cache 2026-08-29 and the quote checked against it as a substring (layer 3). `verbatim` means the document was obtained and the quote is exact — not that a maintainer read the passage and agreed.
 - **Нотатка:** 2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
 Паспорт, табл. 2-2: GPIO32 -> ADC1_CH4, GPIO33 -> ADC1_CH5 (обидва рядки в документі дослівно). Друга половина твердження — «працює при Wi-Fi» — з ESP-IDF, docs/.../adc_oneshot.rst: «ADC2 is also used by Wi-Fi». Тобто Wi-Fi займає ADC2, а не ADC1; для ADC1 обмеження немає. Клас derived: два документи, і жоден не каже цього одним рядком.
-- **Прохід:** m2-a1-pinouty-adc-strapping
+- **Прохід:** m2-a1-pinouts-adc-strapping
 
 ---
 
@@ -2911,7 +2911,7 @@
 - **Спосіб і дата:** Datasheet taken from the cache 2026-08-29 and the quote checked against it as a substring (layer 3). `verbatim` means the document was obtained and the quote is exact — not that a maintainer read the passage and agreed.
 - **Нотатка:** 2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
 Перелік книги — 0, 2, 4, 12, 13, 14, 15, 25, 26, 27 — це РІВНО ті десять GPIO, які паспорт (табл. 2-2) позначає каналами ADC2: GPIO0/CH1, GPIO2/CH2, GPIO4/CH0, GPIO12/CH5, GPIO13/CH4, GPIO14/CH6, GPIO15/CH3, GPIO25/CH8, GPIO26/CH9, GPIO27/CH7. Жодного зайвого, жодного пропущеного. Застереження «не працює при Wi-Fi» — з adc_oneshot.rst: «ADC2 is also used by Wi-Fi». Клас derived: твердження зводить десять рядків таблиці й один рядок іншого документа.
-- **Прохід:** m2-a1-pinouty-adc-strapping
+- **Прохід:** m2-a1-pinouts-adc-strapping
 
 ---
 
@@ -3179,7 +3179,7 @@
   > The external memory is incorporated in the memory map and, with certain restrictions, is usable in the same way as internal data RAM.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ згадує обмеження для флеш/PSRAM.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -3259,7 +3259,7 @@
   > PSRAM access speed may be faster than flash access, so the overall application performance may be better. For example, if the PSRAM is an Octal mode (8-line PSRAM) and is configured to 80 MHz, then it is faster than a Quad flash (4-line flash) which is configured to 80 MHz.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ згадує octal PSRAM на цих чипах.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -3669,7 +3669,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 - **Спосіб і дата:** Datasheet taken from the cache 2026-08-29 and the quote checked against it as a substring (layer 3). `verbatim` means the document was obtained and the quote is exact — not that a maintainer read the passage and agreed.
 - **Нотатка:** 2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
 Та сама табл. 3-1: GPIO2 у переліку strapping-пінів, типова підтяжка вниз.
-- **Прохід:** m2-a1-pinouty-adc-strapping
+- **Прохід:** m2-a1-pinouts-adc-strapping
 
 ---
 
@@ -4009,7 +4009,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 - **Спосіб і дата:** Datasheet taken from the cache 2026-08-29 and the quote checked against it as a substring (layer 3). `verbatim` means the document was obtained and the quote is exact — not that a maintainer read the passage and agreed.
 - **Нотатка:** 2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
 Паспорт ESP32-C3, табл. розпіновки: GPIO0/ADC1_CH0, GPIO1/CH1, GPIO2/CH2, GPIO3/CH3, GPIO4/CH4 — тобто рівно GPIO0…4 і жодного більше. Клас derived: пʼять рядків таблиці.
-- **Прохід:** m2-a1-pinouty-adc-strapping
+- **Прохід:** m2-a1-pinouts-adc-strapping
 
 ---
 
@@ -4051,7 +4051,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
   > ADC2_GPIO5_CHANNEL      0
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO 5 is ADC2 channel 0 on ESP32-C3
-- **Прохід:** prochid-a-pinouty
+- **Прохід:** sweep-a-pinouty
 
 ---
 
@@ -4416,7 +4416,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
   > #define U0RXD_GPIO_NUM  (3)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** UART0 TX/RX на GPIO 1/3 для ESP32 classic
-- **Прохід:** prochid-a-pinouty
+- **Прохід:** sweep-a-pinouty
 
 ---
 
@@ -4493,7 +4493,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 - **Спосіб і дата:** Datasheet taken from the cache 2026-08-29 and the quote checked against it as a substring (layer 3). `verbatim` means the document was obtained and the quote is exact — not that a maintainer read the passage and agreed.
 - **Нотатка:** 2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
 Паспорт ESP32-C3 називає пару дослівно; напрямок дає таблиця розпіновки, де GPIO20 підписано U0RXD (вивід 27), а вивід 28 — U0TXD, тобто GPIO21. Отже TX = 21, RX = 20, як у книзі. Клас derived: сама пара дослівна, а розподіл TX/RX — із другої таблиці.
-- **Прохід:** m2-a1-pinouty-adc-strapping
+- **Прохід:** m2-a1-pinouts-adc-strapping
 
 ---
 
@@ -5266,6 +5266,6 @@ I²C тягнуть обидві лінії вгору, а `GPIO8` при ста
   > Output voltage: VCC level (≈5 V) або 0 V
 - **Спосіб і дата:** Datasheet SN74HC04 (sn74hc04.pdf), PDF Espressif, 2026-08-26
 - **Нотатка:** 74HC серія при 5 В дає вихід близько 5 В. Це часто застосовується у схемах управління, але вимагає перетворювача рівня для ESP32.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---

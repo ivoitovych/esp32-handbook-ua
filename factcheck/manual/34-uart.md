@@ -34,7 +34,7 @@ UART — найстаріший і найнадійніший спосіб з'є
   > A Universal Asynchronous Receiver/Transmitter (UART) is a hardware feature that handles communication (i.e., timing requirements and data framing) using widely-adopted asynchronous serial communication interfaces
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'UART - надійний спосіб з'єднати пристрої'
-- **Прохід:** prochid-34-uart
+- **Прохід:** sweep-34-uart
 
 ---
 
@@ -64,7 +64,7 @@ UART — найстаріший і найнадійніший спосіб з'є
   > A UART provides a widely adopted and cheap method to realize full-duplex or half-duplex data exchange among different devices
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'простий обмін двома дротами'
-- **Прохід:** prochid-34-uart
+- **Прохід:** sweep-34-uart
 
 ---
 
@@ -116,7 +116,7 @@ UART — найстаріший і найнадійніший спосіб з'є
   > The {IDF_TARGET_NAME} chip has {IDF_TARGET_SOC_UART_HP_NUM} UART controllers
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'документація про кількість UART контролерів, але не з конкретними числами для класичного, S3, C3'
-- **Прохід:** prochid-34-uart
+- **Прохід:** sweep-34-uart
 
 ---
 
@@ -695,7 +695,7 @@ if (n > 0) obrobyty(buf, n);
   > When there is free space in the TX FIFO buffer, an interrupt service routine (ISR) moves the data from the TX ring buffer to the TX FIFO buffer in the background
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** розмір буфера має значення, дані можуть бути втрачені при переповненні
-- **Прохід:** prochid-34-uart
+- **Прохід:** sweep-34-uart
 
 ---
 
@@ -986,7 +986,7 @@ if (n > 0) obrobyty(buf, n);
   > A UART provides a widely adopted and cheap method to realize full-duplex or half-duplex data exchange among different devices
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** звичайний UART працює на близькі відстані
-- **Прохід:** prochid-34-uart
+- **Прохід:** sweep-34-uart
 
 ---
 
@@ -1158,7 +1158,7 @@ if (n > 0) obrobyty(buf, n);
   > either DTR or RTS pin can be connected to the DE/~RE pin of the transceiver module to achieve half-duplex communication.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ описує керування напрямком через DE/RE пін
-- **Прохід:** prochid-34-uart
+- **Прохід:** sweep-34-uart
 
 ---
 
@@ -1360,7 +1360,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
   > The DTR line is automatically controlled by the hardware directly under RS485 half-duplex mode, while the RTS line is software-controlled by the UART driver. Once the host starts writing data to the TX FIFO buffer, the UART driver automatically asserts the RTS pin (logic 1); once the last bit of the data has been transmitted, the driver de-asserts the RTS pin (logic 0)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** тут описано, як контролюється напрямок і можна обрізати посилку
-- **Прохід:** prochid-34-uart
+- **Прохід:** sweep-34-uart
 
 ---
 
@@ -1436,7 +1436,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
   > відповідного імпедансу та зменшення відбитків.
 - **Спосіб і дата:** RS-485 standard practice; ESP-IDF Modbus documentation
 - **Нотатка:** 120 Ом термінатори — це стандартна практика для RS-485 (UART RS-485 режим) і CAN шин. Это забезпечує правильний імпеданс лінії і запобігає відбиткам сигналу.
-- **Прохід:** m2-80-shyny
+- **Прохід:** m2-80-buses
 
 ---
 
@@ -1465,7 +1465,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
   > Interface Connection Options
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'документація обговорює резистори в RS485 ланцюгу'
-- **Прохід:** prochid-34-uart
+- **Прохід:** sweep-34-uart
 
 ---
 
@@ -1494,7 +1494,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
   > This circuit does not allow for collision detection. It suppresses the null bytes that the hardware receives when the bit ``UART_RS485_CONF_REG.UART_RS485TX_RX_EN`` is set.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'багато модулів мають термінатор на платі'
-- **Прохід:** prochid-34-uart
+- **Прохід:** sweep-34-uart
 
 ---
 
@@ -1528,7 +1528,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
   > Точність: типово 1–2% від вимірювання.
 - **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
 - **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики. | 2026-08-28: з взірця прибрано альтернативу-течу «струм» — саме слово чіпляло 112 одиниць, більше за всі інші разом, тобто підміняло взірець замість звужувати. Знахідка М1. Решта альтернатив тримає 46 одиниць.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -1580,7 +1580,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
   > Interface Connection Options
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'якщо обмін не йде - поміняти місцями'
-- **Прохід:** prochid-34-uart
+- **Прохід:** sweep-34-uart
 
 ---
 
@@ -1609,7 +1609,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
   > This circuit is preferable because it allows for collision detection
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'це безпечно і розв'язує половину випадків'
-- **Прохід:** prochid-34-uart
+- **Прохід:** sweep-34-uart
 
 ---
 
@@ -1773,7 +1773,7 @@ ESP-IDF має штатний компонент `esp-modbus` для обох р
   > The Espressif ESP-Modbus Library (esp-modbus) supports Modbus communication
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** про компонент esp-modbus у ESP-IDF
-- **Прохід:** prochid-34-uart
+- **Прохід:** sweep-34-uart
 
 ---
 
@@ -1927,7 +1927,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -2132,7 +2132,7 @@ TX до RX перехресно, спільна земля обов'язкова
   > The RX FIFO can trigger an interrupt when it receives more data than the FIFO can store.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ описує FIFO overflow як проблему
-- **Прохід:** prochid-34-uart
+- **Прохід:** sweep-34-uart
 
 ---
 
@@ -2205,7 +2205,7 @@ RS-485: `uart_wait_tx_done` перед перемиканням напрямку
   > відповідного імпедансу та зменшення відбитків.
 - **Спосіб і дата:** RS-485 standard practice; ESP-IDF Modbus documentation
 - **Нотатка:** 120 Ом термінатори — це стандартна практика для RS-485 (UART RS-485 режим) і CAN шин. Это забезпечує правильний імпеданс лінії і запобігає відбиткам сигналу.
-- **Прохід:** m2-80-shyny
+- **Прохід:** m2-80-buses
 
 ---
 

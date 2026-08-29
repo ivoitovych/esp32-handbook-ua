@@ -33,7 +33,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
   > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ визначає OTA як механізм оновлення без фізичного доступу.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -129,7 +129,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
   > at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Розбивка для OTA вимагає щонайменше двох розділів (ota_0 та ota_1)
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -195,7 +195,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
   > An OTA data partition (type ``data``, subtype ``ota``) must be included
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** otadata is explicitly described as type data with subtype ota
-- **Прохід:** klas-f-19-ota
+- **Прохід:** nosignal-19-ota
 
 ---
 
@@ -267,7 +267,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
   > ota_0,    app,  ota_0,   0x110000, 1M,
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ota_0 partition is explicitly defined with type app
-- **Прохід:** klas-f-19-ota
+- **Прохід:** nosignal-19-ota
 
 ---
 
@@ -339,7 +339,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
   > ota_1,    app,  ota_1,   0x210000, 1M,
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ota_1 partition is explicitly defined with type app
-- **Прохід:** klas-f-19-ota
+- **Прохід:** nosignal-19-ota
 
 ---
 
@@ -400,10 +400,10 @@ OTA (over-the-air) — оновлення прошивки без фізично
 - **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
 - **Дослівно з джерела:**
-  > the first available OTA slot (usually ``ota_0``) is booted
+  > If no factory app is included in the partition table, the first available OTA slot (usually ``ota_0``) is booted.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-- **Нотатка:** Цитата про ota_0 як слот завантаження дослівно присутня в документації OTA
-- **Прохід:** cherga-a-19-ota
+- **Нотатка:** Device boots from ota_0 by default when no factory app is present
+- **Прохід:** nosignal-19-ota
 
 ---
 
@@ -431,10 +431,10 @@ OTA (over-the-air) — оновлення прошивки без фізично
 - **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
 - **Дослівно з джерела:**
-  > write a new app firmware image to whichever OTA app slot that is currently not selected for booting
+  > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-- **Нотатка:** Документація підтверджує, що оновлення записується в ota_1 (невиконуваний слот), а робоча прошивка не порушується
-- **Прохід:** cherga-a-19-ota
+- **Нотатка:** Update is written to non-selected slot while running firmware continues to work
+- **Прохід:** nosignal-19-ota
 
 ---
 
@@ -490,7 +490,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
   > Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Updates alternate between slots; next update uses previously unused slot
-- **Прохід:** klas-f-19-ota
+- **Прохід:** nosignal-19-ota
 
 ---
 
@@ -675,10 +675,10 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 - **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > Factory app, two OTA definitions
-- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-- **Нотатка:** Документація описує схему з двома OTA слотами, але вона ВКЛЮЧАЄ factory партицію, а не без неї
-- **Прохід:** cherga-a-19-ota
+  > If you want to conserve flash usage in an OTA project, you can remove the factory partition and use ``ota_0`` instead.
+- **Спосіб і дата:** `curl` на `raw.githubusercontent.com`, гілка `master`, рядок 137. Документ отримано в цій сесії, витяг наведено дослівно — звідси клас `A`. Другий шар зроблено супровідником: витяг звірено з твердженням, а не лише з документом.
+- **Нотатка:** Підтверджує, що схема без `factory` **робоча**, і саме з тієї причини, яку називає книга — економія флешу. Слово «найпоширеніша» цим витягом **не** підтверджується: документація поширеності не міряє. Твердження від цього не хибне, але та його половина лишається без джерела, і це сказано тут навмисно, щоб наступний прохід не порахував її звіреною.
+- **Прохід:** pass-43-ota-bez-factory
 
 ---
 
@@ -705,7 +705,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
   > at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що застосунок займає місце двічі в двох OTA слотах.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -794,7 +794,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 - **Що шукати в джерелі:** Розмір прошивки, Wi-Fi, TLS, веб-сервер, OTA слот
 - **Нотатка:** Твердження про розмір прошивки з конкретними компонентами. Це емпіричне спостереження, джерелом має бути практичне вимірювання або документація IDF. Не знайшов первинного джерела. | 2026-08-28, §5 аудиту: клас named-unreachable (C) вимагає НАЗВАНОГО документа — у цьому записі його не було, стояла лише тема в look_for. За власним законом: не можеш назвати документ — це не C, а unverified. Тему збережено в look_for як підказку, куди дивитися, але це не наряд.
 2026-08-28: клас unverified був хибним — F означає відсутність доказу, тобто доказ про те, що доказу немає. Шукав; що саме відкривав — у looked_at. Клас L лишає одиницю в черзі видимою, на відміну від E, який ховає її назавжди.
-- **Прохід:** m2-97-vybirka
+- **Прохід:** m2-97-sample
 
 ---
 
@@ -852,7 +852,7 @@ OTA оновлює лише образ застосунку — таблиця �
   > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що OTA оновлює лише образ застосунку.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1636,7 +1636,7 @@ esp_https_ota_config_t ota_cfg = { .http_config = &http_cfg };
   > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
 - **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
 - **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -1751,7 +1751,7 @@ if (err == ESP_OK) {
   > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Confirms component finds inactive (not selected for booting) slot, writes image via streaming API esp_ota_write, verifies at esp_ota_end, and updates otadata
-- **Прохід:** klas-f-19-ota
+- **Прохід:** nosignal-19-ota
 
 ---
 
@@ -1850,7 +1850,7 @@ brownout саме посеред оновлення. Схема з двох сл
   > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що OTA передбачає отримання даних (radio reception) та запис у флеш.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -2040,7 +2040,7 @@ brownout саме посеред оновлення. Схема з двох сл
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** RFC 5246 The TLS Protocol
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-19-ota
+- **Прохід:** queue-c-19-ota
 
 ---
 
@@ -2477,7 +2477,7 @@ brownout саме посеред оновлення. Схема з двох сл
   > The OTA (over the air) update process can flash new apps in the field but cannot flash a new bootloader.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що OTA оновлює тільки додаток, не бутлоадер.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -2750,7 +2750,7 @@ Rollback — окремий механізм, і він працює лише т
   > The following code serves detect the initial boot for an application after the OTA update. Upon the first boot, the application checks its state and performs diagnostics. If the diagnostics are successful, the application should call esp_ota_mark_app_valid_cancel_rollback to confirm the operability of the application.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ каже, що функцію підтвердження потрібно викликати ПІСЛЯ виконання діагностики, а не на початку.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -2778,7 +2778,7 @@ OTA не оновлює таблицю розділів. Розбивку зак
   > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ каже, що OTA оновлює лише образ застосунку й OTA Data partition, але не таблицю розділів.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 

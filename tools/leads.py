@@ -37,7 +37,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
-CIL = ROOT / "factcheck" / "BRIEF-LEADS.md"
+CIL = ROOT / "factcheck" / "reports" / "BRIEF-LEADS.md"
 NA_PAKET = 6
 
 # Що досяжне з цієї мережі. Перелік навмисно з назв репозиторіїв, а не
@@ -88,7 +88,7 @@ def zaholovok(**kw) -> str:
 
 
 
-ZVIT = ROOT / "factcheck" / "TRACES.md"
+ZVIT = ROOT / "factcheck" / "reports" / "TRACES.md"
 KANDYDATY = ROOT / "factcheck" / "queues/leads-candidates.yaml"
 
 PIDPYSY_V = {

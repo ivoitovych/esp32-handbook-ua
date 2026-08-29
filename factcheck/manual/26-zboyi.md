@@ -332,7 +332,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
   > помилково не встановлений перед використанням.
 - **Спосіб і дата:** Практичний досвід налагодження та робота з системами управління пам'яттю
 - **Нотатка:** Це висновок зі стандартної семантики C та поведінки покажчиків. Коли покажчик = NULL, звертання до члена структури (.member) еквівалентно звертанню до адреси offset_of_member. Висловлення логічно та точно описує це явище, хоч є узагальненням технічних деталей, а не дослівною цитатою з офіційної специфікації. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-91-vybirka
+- **Прохід:** m2-91-sample
 
 ---
 
@@ -1422,7 +1422,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
   > IDF Monitor can be launched from an ESP-IDF project by running idf.py monitor
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** IDF Monitor запускається з каталогу проєкту та автоматично декодує адреси на льоту.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1484,7 +1484,7 @@ xtensa-esp32-elf-addr2line -pfiaC -e build/app.elf \
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -1522,7 +1522,7 @@ xtensa-esp32-elf-addr2line -pfiaC -e build/app.elf \
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -1579,12 +1579,12 @@ RISC-V — `riscv32-esp-elf-addr2line`.
   >     MEPC    : 0x420048b4  RA      : 0x420048b4  SP      : 0x3fc8f2f0 ...
   >     (жодного рядка Backtrace: у дампі)
   > 
-  > Moreover, IDF Monitor is also capable of generating and printing a
+  >     Moreover, :doc:`IDF Monitor <tools/idf-monitor>` is also capable of generating and printing a backtrace thanks to the stack dump provided by the board in the panic handler.
   > backtrace thanks to the stack dump provided by the board in the
   > panic handler.
   > 
   > While the backtrace above is very handy, it requires the user to use
-  > IDF Monitor. Thus, in order to generate and print a backtrace while
+  >     While the backtrace above is very handy, it requires the user to use :doc:`IDF Monitor <tools/idf-monitor>`. Thus, in order to generate and print a backtrace while using another monitor program, it is possible to activate ``CONFIG_ESP_SYSTEM_USE_EH_FRAME`` option from the menuconfig, under the "Backtracing method" menu.
   > using another monitor program, it is possible to activate
   > ``CONFIG_ESP_SYSTEM_USE_EH_FRAME`` option from the menuconfig, under
   > the "Backtracing method" menu.
@@ -1649,7 +1649,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32-C3 Series — поведінка backtrace при screen/picocom
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-26-zboyi
+- **Прохід:** queue-c-26-zboyi
 
 ---
 
@@ -1704,7 +1704,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
   > If an ESP-IDF app crashes and panics, a register dump and backtrace are produced
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** IDF Monitor використовується на обох архітектурах для логування та декодування backtrace.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1739,12 +1739,12 @@ RISC-V — `riscv32-esp-elf-addr2line`.
   >     MEPC    : 0x420048b4  RA      : 0x420048b4  SP      : 0x3fc8f2f0 ...
   >     (жодного рядка Backtrace: у дампі)
   > 
-  > Moreover, IDF Monitor is also capable of generating and printing a
+  >     Moreover, :doc:`IDF Monitor <tools/idf-monitor>` is also capable of generating and printing a backtrace thanks to the stack dump provided by the board in the panic handler.
   > backtrace thanks to the stack dump provided by the board in the
   > panic handler.
   > 
   > While the backtrace above is very handy, it requires the user to use
-  > IDF Monitor. Thus, in order to generate and print a backtrace while
+  >     While the backtrace above is very handy, it requires the user to use :doc:`IDF Monitor <tools/idf-monitor>`. Thus, in order to generate and print a backtrace while using another monitor program, it is possible to activate ``CONFIG_ESP_SYSTEM_USE_EH_FRAME`` option from the menuconfig, under the "Backtracing method" menu.
   > using another monitor program, it is possible to activate
   > ``CONFIG_ESP_SYSTEM_USE_EH_FRAME`` option from the menuconfig, under
   > the "Backtracing method" menu.
@@ -1790,12 +1790,12 @@ RISC-V — `riscv32-esp-elf-addr2line`.
   >     MEPC    : 0x420048b4  RA      : 0x420048b4  SP      : 0x3fc8f2f0 ...
   >     (жодного рядка Backtrace: у дампі)
   > 
-  > Moreover, IDF Monitor is also capable of generating and printing a
+  >     Moreover, :doc:`IDF Monitor <tools/idf-monitor>` is also capable of generating and printing a backtrace thanks to the stack dump provided by the board in the panic handler.
   > backtrace thanks to the stack dump provided by the board in the
   > panic handler.
   > 
   > While the backtrace above is very handy, it requires the user to use
-  > IDF Monitor. Thus, in order to generate and print a backtrace while
+  >     While the backtrace above is very handy, it requires the user to use :doc:`IDF Monitor <tools/idf-monitor>`. Thus, in order to generate and print a backtrace while using another monitor program, it is possible to activate ``CONFIG_ESP_SYSTEM_USE_EH_FRAME`` option from the menuconfig, under the "Backtracing method" menu.
   > using another monitor program, it is possible to activate
   > ``CONFIG_ESP_SYSTEM_USE_EH_FRAME`` option from the menuconfig, under
   > the "Backtracing method" menu.
@@ -1917,7 +1917,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
   > If :doc:`IDF Monitor <tools/idf-monitor>` is used, Program Counter values will be converted to code locations (function name, file name, and line number), and the output will be annotated with additional lines:
 - **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '177,177p'
 - **Нотатка:** З цитати випливає, що без IDF Monitor (а IDF Monitor потребує .elf) backtrace залишається у виді сирих адрес, тобто нерозшифрованим. Це клас B — логічний висновок, а не пряма цитата.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -1968,7 +1968,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 - **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
 - **Джерело:** shukaty
 - **Нотатка:** Рекомендація про зберігання .elf файлу разом з прошивкою для подальшого аналізу. У документації ESP-IDF явно не знайдена як вимога до процесу збирання чи розгортання.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -2081,7 +2081,7 @@ E (5234) task_wdt: CPU 0: my_task
   > Task watchdog got triggered. The following tasks/users did not reset the watchdog in time: - IDLE0 (CPU 0), Tasks currently running: CPU 0: main, CPU 1: IDLE1
 - **Спосіб і дата:** curl -sL -o /tmp/wdt.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst — sed -n '203,203p'
 - **Нотатка:** Одна з типових помилок Task Watchdog Timer (TWDT) — timeout на IDLE задачі. Це означає, що якась інша задача блокує процесор завдовго.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -2114,7 +2114,7 @@ E (5234) task_wdt: CPU 0: my_task
   > Task watchdog got triggered. The following tasks/users did not reset the watchdog in time: - IDLE0 (CPU 0), Tasks currently running: CPU 0: main, CPU 1: IDLE1
 - **Спосіб і дата:** curl -sL -o /tmp/wdt.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst — sed -n '203,203p'
 - **Нотатка:** Одна з типових помилок Task Watchdog Timer (TWDT) — timeout на IDLE задачі. Це означає, що якась інша задача блокує процесор завдовго.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -2910,7 +2910,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 - **Джерело:** ESP32 документація про режими скидання та обробку помилок; Практичний досвід налагодження паніки ESP32
 - **Спосіб і дата:** Аналіз таблиці режимів скидання в розділі паніки
 - **Нотатка:** Твердження про те, що 0xc (SW_CPU_RESET) типово трапляється після паніки, базується на розумінні потоку паніки в ESP-IDF: коли виявлена помилка, ядро виконує дамп та програмне скидання. Однак у source-cache не знайдено точної цитати, яка б явно стверджувала це. Джерело логічне (паніка → скидання), але висловлено в практичних термінах, а не в офіційній документації. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-91-vybirka
+- **Прохід:** m2-91-sample
 
 ---
 
@@ -3320,7 +3320,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
   > coredump (0x03) is for storing core dumps while using a custom partition table CSV file.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує coredump розділ
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -3693,7 +3693,7 @@ idf.py coredump-debug
   >     rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
 - **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '300,313p'
 - **Нотатка:** RTC Watchdog дає повідомлення виду "rst:0x10" у першому рядку log output від ROM bootloader. Це сигнал, що система перезавантажилась через timeout.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -3728,7 +3728,7 @@ idf.py coredump-debug
   > If this address is zero, it usually means that the application has attempted to dereference a NULL pointer. If this address is close to zero, it usually means that the application has attempted to access a member of a structure, but the pointer to the structure is NULL. If this address is something else (garbage value, not in ``0x3fxxxxxx`` - ``0x6xxxxxxx`` range), it likely means that the pointer used to access the data is either not initialized or has been corrupted.
 - **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '353,365p'
 - **Нотатка:** EXCVADDR розповідає про адресу, що викликала винятки. Її інтерпретація часто дає цілковиту відповідь про причину: нульовий вказівник, пошкоджений вказівник або невініціалізований.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 

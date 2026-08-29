@@ -54,7 +54,7 @@ import yaml  # noqa: E402
 
 import helper_dumps  # noqa: E402
 
-ZVIT = ROOT / "factcheck" / "MEASURE-UNCHECKED.md"
+ZVIT = ROOT / "factcheck" / "reports" / "MEASURE-UNCHECKED.md"
 
 ZVIT_PORROZHNIY = """# Міра класу `F` — хвиля відхилена
 

@@ -260,6 +260,42 @@ def perevirka() -> list[str]:
     bidy += governing_list_sound()
     bidy += index_complete()
     bidy += kesh_ne_v_git()
+    bidy += root_holds_only_governing()
+    return bidy
+
+
+def root_holds_only_governing() -> list[str]:
+    """Чи лишається в корені `factcheck/` **лише** те, що переноситься.
+
+    Перебудова 2026-08-29 звела корінь із 31 документа до шести — і
+    майже одразу з'ясувалося, що переїзд був наполовину. Одинадцять
+    інструментів далі тримали в сталій шлях `factcheck/X.md`, хоч їхні
+    ж рядки допомоги вже казали `factcheck/reports/X.md`. Файли
+    переїхали; ті, хто їх пише, — ні.
+
+    Це гірше за звичайну розбіжність опису з кодом: жоден із них не
+    впав би. Наступний прогін просто **створив би корінний файл
+    наново**, тихо, і за тиждень у корені знову лежало б тридцять
+    документів — а `git status` показував би не помилку, а роботу.
+
+    Тому перевірка питає обидва боки:
+      * що лежить у корені зараз;
+      * і що будь-який інструмент **збирається** туди записати.
+
+    Другий бік ловить ваду в день, коли її внесли, а не в день, коли
+    вона вперше спрацювала."""
+    bidy = []
+    dozvoleni = set(KERIVNI)
+    for p in sorted(FC.glob("*.md")):
+        if p.name not in dozvoleni:
+            bidy.append(f"{p.name}: лежить у корені factcheck/, "
+                        f"а корінь тримає лише керівні документи")
+    vzir = re.compile(r'"factcheck"\s*/\s*"([A-Z][A-Z0-9-]*\.md)"')
+    for t in sorted((ROOT / "tools").glob("*.py")):
+        for imya in set(vzir.findall(t.read_text(encoding="utf-8"))):
+            if imya not in dozvoleni:
+                bidy.append(f"tools/{t.name}: пише {imya} в корінь "
+                            f"factcheck/, а там лише керівні документи")
     return bidy
 
 

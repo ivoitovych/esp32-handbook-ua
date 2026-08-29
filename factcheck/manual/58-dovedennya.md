@@ -505,7 +505,7 @@
   > (за дорогих з великою смугою пропускання).
 - **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
 - **Нотатка:** Осцилограф необхідний для аналізу швидких або аналогових сигналів. Логічний аналізатор не замінює його для цих задач.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -1168,7 +1168,7 @@
   > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
 - **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
 - **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -1196,7 +1196,7 @@
   > The main purpose of the application rollback is to keep the device working after the update.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** OTA має функцію відкату для збереження роботи пристрою
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1518,7 +1518,7 @@
   > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує процес оновлення та його успішного завершення.
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -1610,7 +1610,7 @@
   > If a power loss or an unexpected crash occurs at the time of the first boot of a new application, it will roll back the application.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує вплив втрати живлення на OTA
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 

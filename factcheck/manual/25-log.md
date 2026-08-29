@@ -1105,7 +1105,7 @@ picocom -b 115200 /dev/ttyUSB0 | tee log-2026-08-26.txt
   > Stop/resume log output saved to file
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Ctrl+L це власний спосіб ліпший за перенаправлення через tee.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1136,7 +1136,7 @@ saved to file»; монітор створює файл у каталозі пр
   > - Create a file in the project directory and the output is written to that file until this is disabled with the same keyboard shortcut (or IDF Monitor exits).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Місце в документі: таблиця клавіш, рядки 50-52
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -1165,7 +1165,7 @@ saved to file»; монітор створює файл у каталозі пр
   > Stop/resume log output saved to file
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує Ctrl+L як спосіб зберігання логу у файл замість перенаправлення.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1503,7 +1503,7 @@ ESP_LOGV(TAG, "сирі дані: %02x", raw);            // Verbose
   > static const char* TAG = "Test";
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Document confirms TAG logging convention; quote found in ESP-IDF documentation examples
-- **Прохід:** cherga-a-25-log
+- **Прохід:** queue-a-25-log
 
 ---
 
@@ -3146,7 +3146,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
   > (за дорогих з великою смугою пропускання).
 - **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
 - **Нотатка:** Осцилограф необхідний для аналізу швидких або аналогових сигналів. Логічний аналізатор не замінює його для цих задач.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -3182,7 +3182,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
   > (за дорогих з великою смугою пропускання).
 - **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
 - **Нотатка:** Осцилограф необхідний для аналізу швидких або аналогових сигналів. Логічний аналізатор не замінює його для цих задач.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -3231,7 +3231,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
   > Create a file in the project directory and the output is written to that file
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Місце в документі: 
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 

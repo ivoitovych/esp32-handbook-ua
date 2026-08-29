@@ -201,7 +201,7 @@
   >     0x2000 at start of flash + IDF_TARGET_MAX_BOOTLOADER_SIZE + 0x1000 signature sector // for Key Manager supported targets: esp32c5, esp32h4, esp32p4
 - **Спосіб і дата:** curl repo github.com/espressif/esp-idf, pdftotext текстів RST, 2026-08-27
 - **Нотатка:** Таблиця в картці k05 правильно наводить адреси другого бутлоадера для різних чипів. Адреса 0x0 для S3, C3, C6, H2 підтверджена в документації ESP-IDF. Класичні 0x1000 — для ранніх версій (classic, S2), 0x2000 — для нових (P4, C5, H4).
-- **Прохід:** m2-90-vybirka
+- **Прохід:** m2-90-sample
 
 ---
 
@@ -293,7 +293,7 @@
   > A single {IDF_TARGET_NAME}'s flash can contain multiple apps, as well as many different kinds of data (calibration data, filesystems, parameter storage, etc). For this reason a partition table is flashed
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує partition table як таблицю розділів
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -745,7 +745,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -785,7 +785,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -814,7 +814,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
 - **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep BOOTLOADER_OFFSET, 2026-08-26
 - **Нотатка:** Таблиця розділу 16 показує адреси. Для ESP32: 0x1000. Джерело вказує: esp32="0x1000". | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-82-boot-flesh
+- **Прохід:** m2-82-boot-flash
 
 ---
 

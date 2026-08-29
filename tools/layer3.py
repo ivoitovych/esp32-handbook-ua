@@ -66,7 +66,7 @@ import factcheck
 ROOT = Path(__file__).resolve().parent.parent
 DOKAZY = ROOT / "factcheck" / "evidence"
 KESH = ROOT / "source-cache"
-ZVIT = ROOT / "factcheck" / "QUOTES.md"
+ZVIT = ROOT / "factcheck" / "reports" / "QUOTES.md"
 
 MIN_DOVZHYNA = 12
 

@@ -72,7 +72,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
   > If an ESP-IDF app crashes and panics, a register dump and backtrace are produced
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ описує, як backtrace розкриває місце паніки у програмі
-- **Прохід:** prochid-k07-panika
+- **Прохід:** sweep-k07-panika
 
 ---
 
@@ -1048,7 +1048,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
   > Crashed task registers and the stack are always saved, regardless of this configuration option. Other tasks are included in order of their priority
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** malloc помилки дійсно часто приводять до паніки, хоча документація не дає експліцитного прикладу
-- **Прохід:** prochid-k07-panika
+- **Прохід:** sweep-k07-panika
 
 ---
 
@@ -1077,7 +1077,7 @@ Backtrace — це ланцюжок адрес. Сам по собі він не
   > Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20 0x400dbf5e:0x3ffb7e40 0x400dbf82:0x3ffb7e60 0x400d071d:0x3ffb7e90
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** backtrace дійсно являє собою ланцюжок адрес
-- **Прохід:** prochid-k07-panika
+- **Прохід:** sweep-k07-panika
 
 ---
 
@@ -1106,7 +1106,7 @@ Backtrace — це ланцюжок адрес. Сам по собі він не
   > To decode each address, IDF Monitor runs the following command in the background
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** адреси з backtrace потребують декодування за допомогою спеціальних інструментів
-- **Прохід:** prochid-k07-panika
+- **Прохід:** sweep-k07-panika
 
 ---
 
@@ -1176,7 +1176,7 @@ Backtrace — це ланцюжок адрес. Сам по собі він не
   > To decode each address, IDF Monitor runs the following command in the background:: {IDF_TARGET_TOOLCHAIN_PREFIX}-addr2line -pfiaC -e build/PROJECT.elf ADDRESS
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документація описує як вручну перекладати адреси з помощю addr2line
-- **Прохід:** prochid-k07-panika
+- **Прохід:** sweep-k07-panika
 
 ---
 
@@ -1253,7 +1253,7 @@ xtensa-esp32-elf-addr2line -pfiaC -e build/app.elf 0x400d1234 0x400d5678
   > {IDF_TARGET_TOOLCHAIN_PREFIX}-addr2line -pfiaC -e build/PROJECT.elf ADDRESS
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** інструмент addr2line справді залежить від архітектури (xtensa для ESP32, riscv32 для RISC-V)
-- **Прохід:** prochid-k07-panika
+- **Прохід:** sweep-k07-panika
 
 ---
 
@@ -1365,7 +1365,7 @@ xtensa-esp32-elf-addr2line -pfiaC -e build/app.elf 0x400d1234 0x400d5678
   > {IDF_TARGET_TOOLCHAIN_PREFIX}-addr2line -pfiaC -e build/PROJECT.elf ADDRESS
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** .elf того самого збирання необхідний для правильного декодування backtrace
-- **Прохід:** prochid-k07-panika
+- **Прохід:** sweep-k07-panika
 
 ---
 
@@ -1467,7 +1467,7 @@ xtensa-esp32-elf-addr2line -pfiaC -e build/app.elf 0x400d1234 0x400d5678
   > A core dump is a set of software state information that is automatically saved by the panic handler when a fatal error occurs.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ підтверджує, що паніка запускає обробник, який може привести до boot loop
-- **Прохід:** prochid-k07-panika
+- **Прохід:** sweep-k07-panika
 
 ---
 

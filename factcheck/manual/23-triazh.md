@@ -260,7 +260,7 @@
   > At the core of the module is the ESP32-D0WD-V3 chip or ESP32-D0WDR2-V3 chip
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Вістниця описує, що в основі модуля WROOM-32E/32UE лежить ESP32-D0WD-V3 або ESP32-D0WDR2-V3, що є classic ESP32
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -303,7 +303,7 @@
   > ESP32-D0WDR2-V3 also provides 2 MB PSRAM
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Помічник заявив спростування, машинну перевірку воно пройшло — цитата дослівна. Особиста звірка знижує формулювання: прямої суперечності немає, бо рядок книги про `ESP32-WROOM-32`, а даташит про `-32E`. Але таблиця тріажу розділяє WROOM і WROVER САМЕ за PSRAM, а модуль -32E буває на D0WD-V3 і на D0WDR2-V3, і другий несе 2 МБ PSRAM. Отже напис WROOM сам по собі відсутності PSRAM не гарантує, і рядок «пізніші ревізії, той самий код» неточний. Клас A, бо цитата засвідчує факт про модуль; не G, бо твердження книги нею не спростоване. Прогалину винесено М1 листом 0230Z — розділ 23 його.
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -347,7 +347,7 @@
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Datasheet підтверджує, що WROOM-32E/UE містять класичні чипи ESP32 серії D0WD.
 
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -736,7 +736,7 @@
 - **Джерело:** Специфікація маркування модулів ESP32 від Espressif (https://www.espressif.com)
 - **Що шукати в джерелі:** ESP32 Module Naming Convention або відповідну документацію про суфікси
 - **Нотатка:** N8 = 8 МБ флешу, N16R8 = 16 МБ флешу + 8 МБ PSRAM. Це стандартна конвенція Espressif. Твердження точне, але цитата з офіційної документації не знайдена у доступних документах.
-- **Прохід:** m2-96-vybirka
+- **Прохід:** m2-96-sample
 
 ---
 
@@ -1101,7 +1101,7 @@ use` (розділ 11).
   > power
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** подання живлення на бракований пристрій може додати другу несправність
-- **Прохід:** prochid-23-triazh
+- **Прохід:** sweep-23-triazh
 
 ---
 
@@ -1176,7 +1176,7 @@ use` (розділ 11).
   > внутрішній стабілізатор перетворює його в 3.3 В.
 - **Спосіб і дата:** ESP32 Datasheet та типова схема модулю (esp32-datasheet.pdf, Section 2.5 Power Scheme), 2026-08-26
 - **Нотатка:** На рівні чипа немає "VIN" — лише силові піни (VDDA, VDD3P3, VDD3P3_RTC, VDD3P3_CPU, VDD_SDIO). На рівні модуля VIN — це вхід зовнішній напруги, від якої живиться стабілізатор.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -1204,7 +1204,7 @@ use` (розділ 11).
   > power
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** при прозвонці дроту на живлення не подавати
-- **Прохід:** prochid-23-triazh
+- **Прохід:** sweep-23-triazh
 
 ---
 
@@ -1235,7 +1235,7 @@ use` (розділ 11).
   > VIL Low-level input voltage –0.3 — 0.25 × VDD 1 V
 - **Спосіб і дата:** tools/layer3.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
 - **Нотатка:** Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ: я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`), яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за що я потім ловив помічників. Заголовки таблиць і рядок про permanent damage я додавав від себе. Одиниця після VDD — це номер виноски в документі, не множник.
-- **Прохід:** m2-06-napruga-mezhi
+- **Прохід:** m2-06-voltage-limits
 
 ---
 
@@ -1265,7 +1265,7 @@ use` (розділ 11).
   > "Виняток єдиний: пін `5V`/`VIN` — це вхід стабілізатора, туди 5 В можна."
 - **Спосіб і дата:** Картка kartky/k11-nikoly.md, схема плати ESP32 DevKit, 2026-08-26
 - **Нотатка:** Пін VIN або 5V на платі ESP32 йде прямо на вхід регулятора напруги (часто AMS1117 або схожий). Це один з небагатьох місць, де 5 В не вбивають GPIO прямо, бо це не GPIO, а вхід живлення.
-- **Прохід:** m2-50-kartky
+- **Прохід:** m2-50-cards
 
 ---
 
@@ -1416,7 +1416,7 @@ use` (розділ 11).
   > Точність: типово 1–2% від вимірювання.
 - **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
 - **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики. | 2026-08-28: з взірця прибрано альтернативу-течу «струм» — саме слово чіпляло 112 одиниць, більше за всі інші разом, тобто підміняло взірець замість звужувати. Знахідка М1. Решта альтернатив тримає 46 одиниць.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -1444,7 +1444,7 @@ use` (розділ 11).
   > power
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** просадка напруги вказує на проблему живлення, а не прошивки
-- **Прохід:** prochid-23-triazh
+- **Прохід:** sweep-23-triazh
 
 ---
 
@@ -1496,7 +1496,7 @@ esptool --port /dev/ttyUSB0 flash-id
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst, де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`; книга вживає довгу. Команда в книзі точна. Урок не про помічника, а про наряд: один ключ мусить вести до всіх файлів свого документа, бо документація esptool розкладена на команди й опції окремо.
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -1525,7 +1525,7 @@ esptool --port /dev/ttyUSB0 flash-id
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst, де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`; книга вживає довгу. Команда в книзі точна. Урок не про помічника, а про наряд: один ключ мусить вести до всіх файлів свого документа, бо документація esptool розкладена на команди й опції окремо.
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -1694,7 +1694,7 @@ esptool --port /dev/ttyUSB0 flash-id
   > - Поганий контакт
 - **Спосіб і дата:** Технічна діагностика I²C, рекомендації Espressif та NXP, 2026-08-26
 - **Нотатка:** Це класичний симптом відсутності відповідаючого пристрою на I²C шині.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -1772,7 +1772,7 @@ esptool --port /dev/ttyUSB0 flash-id
 - **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
 - **Спосіб і дата:** Практична рекомендація діагностики. Пошук у ESP-IDF SPI документації та датащиті не знайшов офіційного джерела для цієї конкретної методики діагностики
 - **Нотатка:** Метод діагностики: 1 МГц — достатньо низька для надійної передачі SPI даних. Це практичне спостереження, а не офіційна рекомендація з документації. Жодного зовнішнього джерела не знайдено. Клас E. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-92-vybirka
+- **Прохід:** m2-92-sample
 
 ---
 
@@ -1852,7 +1852,7 @@ esptool --port /dev/ttyUSB0 flash-id
   > Output voltage: VCC level (≈5 V) або 0 V
 - **Спосіб і дата:** Datasheet SN74HC04 (sn74hc04.pdf), PDF Espressif, 2026-08-26
 - **Нотатка:** 74HC серія при 5 В дає вихід близько 5 В. Це часто застосовується у схемах управління, але вимагає перетворювача рівня для ESP32.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -1926,7 +1926,7 @@ esptool --port /dev/ttyUSB0 flash-id
   > I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Лог бутлоадера показує версію ESP-IDF, обсяг флешу та таблицю розділів.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -2150,7 +2150,7 @@ esptool --port /dev/ttyUSB0 flash-id
   > internal pull-up/pull-down resistors
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Внутрішні підтягування не потребують зовнішнього струму при тестуванні.
-- **Прохід:** prochid-23-triazh
+- **Прохід:** sweep-23-triazh
 
 ---
 
@@ -2538,7 +2538,7 @@ esptool --port /dev/ttyUSB0 flash-id
   > - Поганий контакт
 - **Спосіб і дата:** Технічна діагностика I²C, рекомендації Espressif та NXP, 2026-08-26
 - **Нотатка:** Це класичний симптом відсутності відповідаючого пристрою на I²C шині.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -2590,7 +2590,7 @@ esptool --port /dev/ttyUSB0 flash-id
   > - Поганий контакт
 - **Спосіб і дата:** Технічна діагностика I²C, рекомендації Espressif та NXP, 2026-08-26
 - **Нотатка:** Це класичний симптом відсутності відповідаючого пристрою на I²C шині.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -2642,7 +2642,7 @@ esptool --port /dev/ttyUSB0 flash-id
   > - Поганий контакт
 - **Спосіб і дата:** Технічна діагностика I²C, рекомендації Espressif та NXP, 2026-08-26
 - **Нотатка:** Це класичний симптом відсутності відповідаючого пристрою на I²C шині.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -2694,7 +2694,7 @@ esptool --port /dev/ttyUSB0 flash-id
   > - Поганий контакт
 - **Спосіб і дата:** Технічна діагностика I²C, рекомендації Espressif та NXP, 2026-08-26
 - **Нотатка:** Це класичний симптом відсутності відповідаючого пристрою на I²C шині.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -3037,7 +3037,7 @@ esptool --port /dev/ttyUSB0 flash-id
   > If no ``-c`` option or ``ESPTOOL_CHIP`` value is specified, ``esptool`` automatically detects the chip type when connecting.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** esptool автоматично виявляє тип мікросхеми при підключенні, що дозволяє перевірити інформацію про модуль
-- **Прохід:** prochid-23-triazh
+- **Прохід:** sweep-23-triazh
 
 ---
 
@@ -3094,7 +3094,7 @@ esptool --port /dev/ttyUSB0 flash-id
   > - Поганий контакт
 - **Спосіб і дата:** Технічна діагностика I²C, рекомендації Espressif та NXP, 2026-08-26
 - **Нотатка:** Це класичний симптом відсутності відповідаючого пристрою на I²C шині.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 

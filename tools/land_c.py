@@ -180,7 +180,7 @@ def main() -> int:
             f"# адресою, не доказ: документ названо, звідси не дістати.\n"
             f"# Чесніше за `F` («ніхто не дійшов») рівно на одне —\n"
             f"# тут відомо, що саме замовляти.\n\n")
-        (kudy / f"cherga-c-{fayl}.yaml").write_text(
+        (kudy / f"queue-c-{fayl}.yaml").write_text(
             shapka + yaml.safe_dump(zapys, allow_unicode=True,
                                     sort_keys=False, width=88),
             encoding="utf-8")

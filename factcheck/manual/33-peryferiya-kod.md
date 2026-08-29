@@ -110,7 +110,7 @@ gpio_set_level(GPIO_NUM_2, 1);
   > };
 - **Спосіб і дата:** ESP32 Datasheet Table 5-3, esp32-datasheet.pdf, 2026-08-26
 - **Нотатка:** Наявність вбудованих резисторів спрощує схеми та економить компоненти на платі.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -244,7 +244,7 @@ gpio_set_level(GPIO_NUM_2, 1);
   > };
 - **Спосіб і дата:** ESP32 Datasheet Table 5-3, esp32-datasheet.pdf, 2026-08-26
 - **Нотатка:** Наявність вбудованих резисторів спрощує схеми та економить компоненти на платі.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -350,7 +350,7 @@ gpio_set_level(GPIO_NUM_2, 1);
   > API.
 - **Спосіб і дата:** Дослівна цитата з ESP-IDF API, код, 2026-08-26
 - **Нотатка:** Це типовий приклад конфігурації GPIO для входу з вбудованим pull-up резистором.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -431,7 +431,7 @@ gpio_set_level(GPIO_NUM_2, 1);
   > (1ULL<<GPIO_OUTPUT_IO_0) | (1ULL<<GPIO_OUTPUT_IO_1)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 1ULL obovyazkovo - na pinakh vyshe 31 zvychaynyy 1 perepovnytsya - pidtverdzheno
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -483,7 +483,7 @@ gpio_config_t in = {
   > };
 - **Спосіб і дата:** ESP32 Datasheet Table 5-3, esp32-datasheet.pdf, 2026-08-26
 - **Нотатка:** Наявність вбудованих резисторів спрощує схеми та економить компоненти на платі.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -576,7 +576,7 @@ gpio_config_t in = {
   > API.
 - **Спосіб і дата:** Дослівна цитата з ESP-IDF API, код, 2026-08-26
 - **Нотатка:** Це типовий приклад конфігурації GPIO для входу з вбудованим pull-up резистором.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -621,7 +621,7 @@ gpio_config_t in = {
   > };
 - **Спосіб і дата:** ESP32 Datasheet Table 5-3, esp32-datasheet.pdf, 2026-08-26
 - **Нотатка:** Наявність вбудованих резисторів спрощує схеми та економить компоненти на платі.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -818,7 +818,7 @@ gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
   > gpio_isr_handler_add(GPIO_INPUT_IO_0, gpio_isr_handler, (void*) GPIO_INPUT_IO_0);
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** gpio_isr_handler_add vyzyv - pidtverdzheno v prykladi
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -1024,7 +1024,7 @@ static void IRAM_ATTR isr(void *arg) {
   > Generating periodic alarms to complete periodic tasks
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Hardvarni tajmery dlya periodychnykh zavdan - pidtverdzheno dokumentaciyeyu GPTimer
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -1221,7 +1221,7 @@ esp_timer_start_periodic(t, 1000000);   // раз на секунду
   > The maximum count value depends on the bit width of the hardware timer (usually no less than ``54 bits``)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Osnovnyi sposib miryaty chas - hardvarni tajmery z dovhoyu dozhyvayuchy bez perepolnenyya
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -1771,7 +1771,7 @@ ledc_channel_config(&ccfg);
   > The luminance perceived by human eyes does not have a linear relationship with the PWM duty cycle
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Yaskravlist svitlodioda ne liniyna - pidtverdzheno teoriyu kvantu spryymanyya syatlova
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -1824,7 +1824,7 @@ ledc_channel_config(&ccfg);
   > In order to make human feel the LED is dimming or lighting linearly, the change in duty cycle should be non-linear
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Plyavne zgasannya liniarne vyglyadaye yak stribhok - pidtverdzheno gamma korektsiyi
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -1876,7 +1876,7 @@ ledc_channel_config(&ccfg);
 - **Джерело:** Даташит типового хобі-серво (SG90 / MG996R): період 20 мс (50 Гц), тривалість імпульсу 1–2 мс; у кеші немає
 - **Спосіб і дата:** пошук у source-cache завершився невдачею, 2026-08-27
 - **Нотатка:** Було E з поясненням «стандартна специфікація, але без джерела в кеші». Це і є визначення класу C, а не E: E значить, що документа не існує за природою, а тут він існує і його просто не дістали. Різниця не формальна — E ховає одиницю з наряду назавжди, C лишає її в наряді.
-- **Прохід:** m2-90-vybirka
+- **Прохід:** m2-90-sample
 
 ---
 
@@ -1907,7 +1907,7 @@ ledc_channel_config(&ccfg);
   період = 1 / частота;  1 / 50 Гц = 0.02 с = 20 мс
 - **Спосіб і дата:** 1 / 50 Гц = 0.02 с = 20 мс, 2026-08-27
 - **Нотатка:** М1 позначив джерело вигаданим, і мав рацію: «сервомеханізм: стандартна частота 50 Гц» — це міркування, а не адреса документа. Але й документ тут не потрібен: із 50 Гц період виводиться діленням. Клас D, зовнішнє джерело зайве. Саме твердження «серво чекає 50 Гц» — окрема одиниця, і вона лишається за даташитом серво (клас C).
-- **Прохід:** m2-94-vybirka
+- **Прохід:** m2-94-sample
 
 ---
 
@@ -1941,7 +1941,7 @@ ledc_channel_config(&ccfg);
   > 915 МГц — США/Японія
 - **Спосіб і дата:** SX1276 datasheet, ISM frequency regulations
 - **Нотатка:** Частоти LoRa модулів відповідають регіональним ISM смугам. 433 МГц і 868 МГц для Європи, 915 МГц для США. Антена на одній частоті не працюватиме оптимально на іншій.
-- **Прохід:** m2-81-sensory-lora
+- **Прохід:** m2-81-sensors-lora
 
 ---
 
@@ -2019,7 +2019,7 @@ ledc_channel_config(&ccfg);
   > motor bridges need complementary outputs and dead time
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Spilna zemlya obovyazkova dlya mostykiv - pidtverdzheno v MCPWMdokumentaciyi
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -2047,7 +2047,7 @@ LEDC не вміє:
   > MCPWM turns a counter into accurately timed output edges. It is a good fit when an LEDC-style PWM is no longer enough: motor bridges need complementary outputs and dead time, inverters need synchronized phases
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** MCPWM має функції силової електроніки, яких немає в LEDC
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -2078,7 +2078,7 @@ LEDC не вміє:
   > Dead time delays an output edge, leaving a short interval in which both switches in a half bridge are off
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Mertvyy chas zapobihaye naskriznomy strumevi - pidtverdzheno dokumentaciyeyu dead time
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -2128,7 +2128,7 @@ RMT задумувався для інфрачервоних пультів, а 
   > The RMT (Remote Control Transceiver) peripheral was designed to act as an infrared transceiver. However, due to the flexibility of its data format, RMT can be extended to a versatile and general-purpose transceiver
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** RMT розроблений для ІЧ пультів, але може бути універсальним генератором послідовностей
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -2530,7 +2530,7 @@ RMT уміє й приймати — вимірювати тривалість �
   > The RMT receiver can sample incoming signals into RMT data format, and store the data in memory
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** RMT може приймати і вимірювати тривалість сигналів
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -2558,7 +2558,7 @@ RMT уміє й приймати — вимірювати тривалість �
   > PCNT (Pulse Counter) module is designed to count the number of rising and/or falling edges of input signals
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'Pravylnyy sposib chytaty IR-pulty - pidtverdzheno PCNT aparatnym lichylnykom'
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -2610,7 +2610,7 @@ RMT уміє й приймати — вимірювати тривалість �
   > Decode quadrature signals into speed and direction
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'Enkoder, vytratomer - bez pereryvannya na kozhnyy impuls - pidtverdzheno'
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -2659,7 +2659,7 @@ PCNT уміє й апаратний фільтр коротких сплескі
   > PCNT unit is equipped with a separate glitch filter, which is helpful to remove noise from the signal
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'Aparatnyy filtr korotkykh spleskviv - antydrebezh bez kodu - pidtverdzheno'
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -3094,7 +3094,7 @@ ADC міряє лише невелику частину діапазону; з �
   > By design, ``Vref`` is set to 1100 mV
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Vkhid ne tolerannyy do perevishennya - pidtverdzheno referenciynym napryazhennyam
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -3463,7 +3463,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
   > ADC calibration
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Naydeshevche i naydiyevishe - pidtverdzheno kalibruvannyan
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -3654,7 +3654,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
   > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
 - **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
 - **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -3753,7 +3753,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
   > Do not rely on the default configurations values
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Piny rizni za simeystvamy - pidtverdzheno v dokumentaciyi GPIO
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -4193,7 +4193,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
   > The luminance perceived by human eyes does not have a linear relationship with the PWM duty cycle
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Yaskravlist svitlodioda neliniyna - pidtverdzheno
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 
@@ -4262,7 +4262,7 @@ PCNT рахує імпульси без переривань і має апар�
   > PCNT unit is equipped with a separate glitch filter
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** PCNT rakhuje impulsyuz bez pereryvanny - pidtverdzheno
-- **Прохід:** prochid-33-peryferiya-kod
+- **Прохід:** sweep-33-peryferiya-kod
 
 ---
 

@@ -1,5 +1,7 @@
 # Витяжки дослідів: самі одиниці, бо насіння не записано
 
+> **canonical** — the decision lives here; there are to be no copies
+
 ## Чого тут бракує і чому
 
 Три досліди по сто одиниць добиралися командою
@@ -34,8 +36,8 @@
 
 ## Файли
 
-    d1-syryy-tekst.txt     100 одиниць класів C і F із 752 нерозглянутих
-    d2-sudzhennya-pulu.txt 100 із 963 одиниць родів dzherelo-ye і ne-rozibrav
+    d1-raw-text.txt     100 одиниць класів C і F із 752 нерозглянутих
+    d2-pool-judgement.txt 100 із 963 одиниць родів dzherelo-ye і ne-rozibrav
     d3-povtornist.txt      100 з тих 860, що лишилися після d2
 
 Формат: `ідентифікатор<таб>клас-або-рід`.

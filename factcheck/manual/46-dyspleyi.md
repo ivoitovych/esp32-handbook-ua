@@ -118,7 +118,7 @@
   > u8x8_d_ssd1306_128x64_noname.c
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Файл названо за розмірами 128x64, що відповідає діагоналі 0.96-1.3 дюйма.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -256,7 +256,7 @@
   > U8X8_CA(0x081, 0x0cf), 		/* [2] set contrast control */
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що це малі OLED дисплеї з контролем контрасту.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -440,7 +440,7 @@
   > should be removed for SH1106
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
 - **Нотатка:** У драйвері є окремі функції для SH1106 (u8x8_d_sh1106_128x64_noname) зі своїм setup, що відрізняється від SSD1306 | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-detali-klasC
+- **Прохід:** m2-parts-class-c
 
 ---
 
@@ -476,7 +476,7 @@
 
 - **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
 - **Нотатка:** Діагональ 1.3–2.4 дюйма є фізичною характеристикою модулю, не кристалу. Контролер ST7789V визначає роздільність (240×320), а не розмір дисплея. Ця характеристика — матеріал склу й ринку, не datasheet контролера.
-- **Прохід:** m2-27-dyspleyi-46
+- **Прохід:** m2-27-displays-46
 
 ---
 
@@ -522,7 +522,7 @@
   > - VSYNC Interface
 - **Спосіб і дата:** PDF Sitronix, кеш `st7789.pdf`, pdftotext -layout, 2026-08-26
 - **Нотатка:** ST7789V підтримує три типи інтерфейсу: паралельний, RGB та SPI. Для модулів, що трапляються читачеві, SPI (4-line serial) — стандартний. Документ покликає це «Serial Peripheral Interface», що означає SPI.
-- **Прохід:** m2-27-dyspleyi-46
+- **Прохід:** m2-27-displays-46
 
 ---
 
@@ -567,7 +567,7 @@
   > The controller can store 262K color or reduce to 8-color in idle mode.
 - **Спосіб і дата:** PDF Sitronix, кеш `st7789.pdf`, pdftotext -layout, 2026-08-26
 - **Нотатка:** ST7789V може працювати в режимах 12-bit (4K), 16-bit (65K) та 18-bit (262K). Книга каже «65 тис. кольорів», що відповідає 16-bit режиму RGB(565) — 5 бітів червоного, 6 бітів зеленого, 5 бітів синього = 2^5 × 2^6 × 2^5 = 65536 кольорів. Титульна сторінка каже «262K Color», але це максимум у режимі RGB(666).
-- **Прохід:** m2-27-dyspleyi-46
+- **Прохід:** m2-27-displays-46
 
 ---
 
@@ -603,7 +603,7 @@
 
 - **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
 - **Нотатка:** «Яскравий» і «швидкий» — це оцінки, а не факти про кристал. Datasheet ST7789V не визначає «яскравість» як вимір; вона залежить від LCD панелі, напруги VCOM, LED підсвітки. Швидкість оновлення (frame rate) залежить від конфігурації, а не від самого кристалу.
-- **Прохід:** m2-27-dyspleyi-46
+- **Прохід:** m2-27-displays-46
 
 ---
 
@@ -639,7 +639,7 @@
 
 - **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
 - **Нотатка:** Як і в ST7789, діагональ в дюймах — фізична властивість модуля. Контролер ILI9341 не визначає розмір; він визначає роздільність (240×320).
-- **Прохід:** m2-27-dyspleyi-46
+- **Прохід:** m2-27-displays-46
 
 ---
 
@@ -685,7 +685,7 @@
 - **Спосіб і дата:** PDF ILI Technology, кеш `ili9341.pdf`, pdftotext -layout, 2026-08-26
 - **Нотатка:** Послідовний інтерфейс у контролері справді є, у двох різновидах — трипровідний і чотирипровідний. Модулі, які трапляються читачеві, майже завжди чотирипровідні (з окремою лінією `D/C`), і саме їх книга має на увазі.
 Роздільність 240×320 підтверджено з титулу. У книзі її немає — а вона корисніша за діагональ, бо саме вона визначає обсяг кадрового буфера: 240×320×2 байти це 150 КБ, що більше за вільну DRAM classic. Тому бібліотеки малюють смугами, і читач, який спробує тримати кадр цілком, упреться в пам'ять.
-- **Прохід:** m2-08-dyspleyi-rozshyryuvachi
+- **Прохід:** m2-08-displays-expanders
 
 ---
 
@@ -727,7 +727,7 @@
   > - Reduce color mode (Idle mode ON): 8-color
 - **Спосіб і дата:** PDF ILI Technology, кеш `ili9341.pdf`, pdftotext -layout, 2026-08-26
 - **Нотатка:** Як і ST7789, ILI9341 підтримує різні режими кольорів. Хоча документ не розраховує 65K явно, 262K-color це максимум, і регістр 3Ah (Color Mode) дозволяє обирати 12-/16-/18-bit формати, включаючи 16-bit RGB(565) = 65K кольорів.
-- **Прохід:** m2-27-dyspleyi-46
+- **Прохід:** m2-27-displays-46
 
 ---
 
@@ -763,7 +763,7 @@
 
 - **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
 - **Нотатка:** «Великий» — це оцінка розміру модуля, а «класика» — це популярність на ринку. Це характеристики ринку й историії, не факти про кристал ILI9341.
-- **Прохід:** m2-27-dyspleyi-46
+- **Прохід:** m2-27-displays-46
 
 ---
 
@@ -944,7 +944,7 @@
   > bits of "Pixel Format Set (3Ah)".
 - **Спосіб і дата:** PDF ILI Technology через cdn-shop.adafruit.com; pdftotext -layout, 2026-08-26
 - **Нотатка:** Розділ 46 розрізняє RGB565 як один із доступних форматів пікселів — це не ціль (стеля) контролера, а один із режимів, який можна обрати командою COLMOD (3Ah). ILI9341 підтримує 16-бітний формат RGB565 з дозвіл 65536 кольорів, але паралельно уміє 18-бітний формат з 262K кольорів. На практиці, бібліотеки TFT_eSPI і LovyanGFX типово використовують RGB565 (удвічі менше байтів на піксель — удвічі швидший кадр).
-- **Прохід:** m2-53-detali-reshta
+- **Прохід:** m2-53-parts-rest
 
 ---
 
@@ -1024,7 +1024,7 @@
   > /* more or less generic setup of all these small OLEDs */
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що SSD1306 - це малий OLED дисплей.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1316,7 +1316,7 @@ PWM — не оптимізація, а необхідність (розділ 0
   > U8g2 is a monochrome graphics library for embedded devices.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що U8g2 працює з монохромними дисплеями
-- **Прохід:** prochid-46-dyspleyi
+- **Прохід:** sweep-46-dyspleyi
 
 ---
 
@@ -1416,7 +1416,7 @@ PWM — не оптимізація, а необхідність (розділ 0
   > The screen controller, interface pins and library configuration settings must be defined inside the library. They can NOT be defined in the Arduino sketch.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що конфігурація задається всередині бібліотеки, а не в проєкті
-- **Прохід:** prochid-46-dyspleyi
+- **Прохід:** sweep-46-dyspleyi
 
 ---
 
@@ -1447,7 +1447,7 @@ PWM — не оптимізація, а необхідність (розділ 0
   > If you load a new copy of TFT_eSPI then it will overwrite your setups if they are kept within the TFT_eSPI folder.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що конфігурація ламається при оновленні бібліотеки
-- **Прохід:** prochid-46-dyspleyi
+- **Прохід:** sweep-46-dyspleyi
 
 ---
 
@@ -1522,7 +1522,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
   > At a bare minimum needs only 32kB RAM and 128kB Flash, a frame buffer
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що LVGL дає інтерфейси та потребує ресурсів
-- **Прохід:** prochid-46-dyspleyi
+- **Прохід:** sweep-46-dyspleyi
 
 ---
 
@@ -1553,7 +1553,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
   > 400 KB of on-chip SRAM: for data and instructions
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
 - **Нотатка:** Datasheet підтверджує 400 КБ SRAM. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-detali-klasC
+- **Прохід:** m2-parts-class-c
 
 ---
 
@@ -1584,7 +1584,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
   > порогові напруги логічних 5-вольтових входів.
 - **Спосіб і дата:** Типові дисплеї та их даташити, 2026-08-26
 - **Нотатка:** Важливо перевіряти паспорт конкретного дисплея, оскільки деякі варіанти (особливо OLED) можуть працювати при 3.3 В.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -1747,7 +1747,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
   > Character arrays and Strings in UTF-8 format are supported.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** TFT_eSPI підтримує UTF-8 кодування для рядків
-- **Прохід:** prochid-46-dyspleyi
+- **Прохід:** sweep-46-dyspleyi
 
 ---
 
@@ -1987,7 +1987,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
   > 1-Wire (Maxim): Обов'язково open-drain вихід і pull-up резистор.
 - **Спосіб і дата:** I²C spec (i2c-um10204.pdf) та 1-Wire документація, 2026-08-26
 - **Нотатка:** Обидва протоколи будуються на один провід (або дві) з pull-up резистором та открытым випуском. Це забезпечує можливість кількох пристроїв на одній лінії.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -2060,7 +2060,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
   > PCNT unit is equipped with a separate glitch filter, which is helpful to remove noise from the signal.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** PCNT модуль має вбудований фільтр для видалення шумів (дребезгу)
-- **Прохід:** prochid-46-dyspleyi
+- **Прохід:** sweep-46-dyspleyi
 
 ---
 
@@ -2175,7 +2175,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 - **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
 - **Нотатка:** Твердження про альтернативи (PCF8574, резистивна дільник на ADC, Touch сенсори) належить до розділу про введення (кнопки, енкодери, матричні клавіатури), не до дисплеїв. Це E, оскільки це архітектурне рішення, а не факт про кристал.
-- **Прохід:** m2-27-dyspleyi-46
+- **Прохід:** m2-27-displays-46
 
 ---
 
@@ -2287,7 +2287,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
   Для 40 МГц сигналу: f_nyquist = 80 МГц
   24 МГц < 80 МГц ⟹ недостатньо
 - **Спосіб і дата:** Розрахунок на основі Теореми Найквіста, 2026-08-26
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 

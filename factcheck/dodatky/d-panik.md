@@ -235,7 +235,7 @@
   > POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Коментар enum'у переводиться як «скидання від подачі напруги на Vbat». EN (enable) — пін вмикання чипа, без якого скидання неможливе. Книга інтерпретує це як «подано живлення або EN», що відповідає суті Vbat reset.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -286,7 +286,7 @@
   > POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Скидання при вмиканні (POWERON_RESET) — нормальний сценарій. Не помилка, не проблема. Книга правильно називає це нормою.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -337,7 +337,7 @@
   > SW_RESET               =  3,    /**<3, Software reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Пряма відповідність: 0x3 = SW_RESET. Неме розходження між книгою й enum'ом.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -449,7 +449,7 @@
   > SW_RESET               =  3,    /**<3, Software reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Програмне скидання — нормально, якщо ви його викликали (esp_restart()). Якщо ви його не викликали, то причина невідома. Книга коректно застерігає слід «якщо ваша» (тобто якщо код був), що надає логічне припущення.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -500,7 +500,7 @@
   > OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Пряма відповідність: 0x4 = OWDT_RESET. Коментар вказує на legacy (застарілість) watchdog'а, що добре корелює з наступним рядком про застарілість.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -551,7 +551,7 @@
   > OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Слово «Legacy» в коментарі enum'у переводиться як «застарілий». Книга дослівно передає цей сенс.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -602,7 +602,7 @@
   > OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Застарілий компонент використовується рідко в новому коді. Випливає однозначно з позначки Legacy в enum'і.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -653,7 +653,7 @@
   > DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Пряма відповідність: 0x5 = DEEPSLEEP_RESET. Коментар згадує Deep Sleep.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -704,7 +704,7 @@
   > DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Коментар DEEPSLEEP_RESET говорить про Deep Sleep. Прокинення (wake-up) — це сенс скидання при виході з deep sleep режиму.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -755,7 +755,7 @@
   > DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Скидання при прокинуванні з deep sleep — нормальна операція, не помилка.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -806,7 +806,7 @@
   > SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Пряма відповідність: 0x6 = SDIO_RESET.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -857,7 +857,7 @@
   > SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Коментар enum'у прямо говорить «Reset by SLC module». Книга переводить як «скидання модулем SLC», що дослівно.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -908,7 +908,7 @@
   > SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** SDIO (SD Input/Output) — периферійне обладнання. Скидання ним рідкісне в типовому застосуванні.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -1027,7 +1027,7 @@
   > TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Коментар: «Timer Group0 Watch dog reset». TG0 = Timer Group 0. Книга інтерпретує як «watchdog таймера 0», що дослівно відповідає enum'у.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -1123,7 +1123,7 @@
   > TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Пряма відповідність: 0x8 = TG1WDT_SYS_RESET. TG1 = Timer Group 1.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -1174,7 +1174,7 @@
   > TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Коментар: «Timer Group1 Watch dog reset». Книга інтерпретує як «watchdog таймера 1», дослівно.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -1270,7 +1270,7 @@
   > RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Пряма відповідність: 0x9 = RTCWDT_SYS_RESET. RTC = Real Time Clock.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -1321,7 +1321,7 @@
   > RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Коментар: «RTC Watch dog Reset». Книга дослівно передає це як «RTC watchdog».
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -1417,7 +1417,7 @@
   > INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Пряма відповідність: 0xa (10 в hex) = INTRUSION_RESET. У коментарі є typo (Instrusion замість Intrusion), але назва enum'у чітка.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -1468,7 +1468,7 @@
   > 0xa | INTRUSION_RESET | детектор втручання
 - **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
 - **Нотатка:** INTRUSION_RESET — код для скидання, спричиненого детектором втручання у кристалі ESP32 | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-92-vybirka
+- **Прохід:** m2-92-sample
 
 ---
 
@@ -1519,7 +1519,7 @@
   > INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
 - **Спосіб і дата:** curl repo github.com/espressif/esp-idf, читання rtc.h header, 2026-08-27
 - **Нотатка:** Таблиця в додатку d-panik правильно наводить коди скидання (reset reasons) для ESP32. Код 0xa = 10 в десятковій систем відповідає INTRUSION_RESET — детектору втручання в чип. Це дійсно рідкісна причина скидання. Визначення є в файлі rtc.h в компонентах ESP-IDF. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-90-vybirka
+- **Прохід:** m2-90-sample
 
 ---
 
@@ -1771,7 +1771,7 @@
 - **Джерело:** CPU exception codes / panic handler у esp-idf
 - **Що шукати в джерелі:** Таблиця Guru Meditation Error кодів у fatal-errors.rst
 - **Нотатка:** Код 0xc потребує перевірки в контексті CPU exception codes, не програмних кодів помилок ESP_ERR_*. Це архітектурний код процесора Xtensa.
-- **Прохід:** m2-98-vybirka
+- **Прохід:** m2-98-sample
 
 ---
 
@@ -1867,7 +1867,7 @@
   > RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
 - **Спосіб і дата:** https://github.com clone, grep RTCWDT_CPU_RESET, 2026-08-27
 - **Нотатка:** Кодування коду скидання відповідає ROM-заголовку ESP-IDF. Таблиця в розділі D подає всі коди з цього enum без змін. Код 0xd (13 у десятковій) дійсно названий RTCWDT_CPU_RESET.
-- **Прохід:** m2-95-vybirka
+- **Прохід:** m2-95-sample
 
 ---
 
@@ -1963,7 +1963,7 @@
   > RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
 - **Спосіб і дата:** curl raw.githubusercontent.com, grep, 2026-08-26
 - **Нотатка:** Код 0xd (13 у десяткових) = RTCWDT_CPU_RESET. Коментар підтверджує, що це RTC watchdog скидання CPU. Книга направляє на розділ 32 для детальної інформації.
-- **Прохід:** m2-94-vybirka
+- **Прохід:** m2-94-sample
 
 ---
 
@@ -2014,7 +2014,7 @@
   > EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
 - **Спосіб і дата:** curl raw.githubusercontent.com, grep, 2026-08-27
 - **Нотатка:** Код 0xe (14 у десяткових) = EXT_CPU_RESET. Це сценарій, коли один процесор (PRO CPU) скидає інший (APP CPU).
-- **Прохід:** m2-94-vybirka
+- **Прохід:** m2-94-sample
 
 ---
 
@@ -2065,7 +2065,7 @@
   > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
 - **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
 - **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason() | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-92-vybirka
+- **Прохід:** m2-92-sample
 
 ---
 
@@ -2229,7 +2229,7 @@
   > RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
 - **Спосіб і дата:** curl з github.com/espressif/esp-idf, grep з rtc.h, 2026-08-26
 - **Нотатка:** Код 0xf (15) прямо визначений як RTCWDT_BROWN_OUT_RESET. Причина — нестабільне живлення. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-96-vybirka
+- **Прохід:** m2-96-sample
 
 ---
 
@@ -2325,7 +2325,7 @@
   > rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Місце в документі: розділ RTC Watchdog Timeout, рядок 306
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -2384,7 +2384,7 @@
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -3497,7 +3497,7 @@ download mode.
   Для 40 МГц сигналу: f_nyquist = 80 МГц
   24 МГц < 80 МГц ⟹ недостатньо
 - **Спосіб і дата:** Розрахунок на основі Теореми Найквіста, 2026-08-26
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -3636,7 +3636,7 @@ download mode.
 - **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
 - **Спосіб і дата:** Авторське спостереження про діагностичну цінність біту GPIO4 в boot масці; жодне офіційне джерело не розглядає GPIO4 як 'другий за цінністю'
 - **Нотатка:** Це інженерне судження автора книги на основі аналізу boot процесу, але не документується у жодному офіційному джерелі Espressif. Клас E.
-- **Прохід:** m2-92-vybirka
+- **Прохід:** m2-92-sample
 
 ---
 
@@ -3881,7 +3881,7 @@ download mode.
 біт 0x04 відповідає GPIO8 (на S3 це GPIO46, а на classic цей біт
 не використовується). Це критично для розуміння того, як чип
 вибирає режим завантаження на основі рівнів пінів. | Взірець прив’язано вручну 2026-08-27 до одиниць T-D-087: автоматичний ремонт кандидата не знайшов, бо назва запису й текст одиниці розійшлися словами.
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -3926,7 +3926,7 @@ download mode.
 - **Нотатка:** У таблиці strapping пінів для S3 біт 0x08 відповідає GPIO0, а для C3
 той же біт означає GPIO9. На classic цей біт не використовується.
 Це показує різницю у strapping-пінах між поколіннями чипів ESP32. | Взірець прив’язано вручну 2026-08-27 до одиниць T-D-088: автоматичний ремонт кандидата не знайшов, бо назва запису й текст одиниці розійшлися словами.
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -3973,7 +3973,7 @@ download mode.
   > - 0x08 - {IDF_TARGET_STRAP_BOOT_GPIO}
 - **Спосіб і дата:** GitHub ESP-IDF boot-mode-selection.rst, 2026-08-27
 - **Нотатка:** Код 0x08 означає основний boot GPIO, який за замовчуванням GPIO9. Оскільки C3 не має явного перевизначення цього значення в файлі, він використовує default GPIO9. Аналогічно 0x04 → GPIO8. Таблиця в розділі D правильно показує це відображення.
-- **Прохід:** m2-95-vybirka
+- **Прохід:** m2-95-sample
 
 ---
 
@@ -4543,7 +4543,7 @@ I (xxx) cpu_start: Pro cpu up.
   > I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Лог бутлоадера показує версію ESP-IDF, обсяг флешу та адреси розділів — готова відповідь.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -6725,7 +6725,7 @@ I (xxx) cpu_start: Pro cpu up.
 - **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
 - **Джерело:** shukaty
 - **Нотатка:** A1 — стандартний регістр архітектури Xtensa для Stack Pointer (SP). Міститься у дампі регістрів паніки, але явна назва "Stack Pointer" для A1 у документації ESP-IDF не знайдена. Встановлено, що дамп показує A1, а backtrace показує SP, але прямої цитати про еквівалентність немає.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -6794,7 +6794,7 @@ I (xxx) cpu_start: Pro cpu up.
   > These CPU exceptions happen when an application attempts to read from or write to an invalid memory location. The address which has been written/read is found in the ``EXCVADDR`` register in the register dump.
 - **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '353,365p'
 - **Нотатка:** EXCVADDR — регістр, що міститься у дампі при винятку та вказує адресу невалідного звернення. Книга називає його "найшвидшою підказкою" тому, що це найпряміша вказівка на проблему.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -6955,7 +6955,7 @@ E (5234) task_wdt: CPU 0: my_task
   > Task watchdog got triggered. The following tasks/users did not reset the watchdog in time: - IDLE0 (CPU 0), Tasks currently running: CPU 0: main, CPU 1: IDLE1
 - **Спосіб і дата:** curl -sL -o /tmp/wdt.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst — sed -n '203,203p'
 - **Нотатка:** Одна з типових помилок Task Watchdog Timer (TWDT) — timeout на IDLE задачі. Це означає, що якась інша задача блокує процесор завдовго.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -6988,7 +6988,7 @@ E (5234) task_wdt: CPU 0: my_task
   > Task watchdog got triggered. The following tasks/users did not reset the watchdog in time: - IDLE0 (CPU 0), Tasks currently running: CPU 0: main, CPU 1: IDLE1
 - **Спосіб і дата:** curl -sL -o /tmp/wdt.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst — sed -n '203,203p'
 - **Нотатка:** Одна з типових помилок Task Watchdog Timer (TWDT) — timeout на IDLE задачі. Це означає, що якась інша задача блокує процесор завдовго.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -7472,7 +7472,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
   > abort() was called at PC 0x400dca43 on core 0
 - **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '455,460p'
 - **Нотатка:** Assertion failure виводить повідомлення вигляду "assertion "умова" failed" з файлом та номером рядка. Це явне порушення виконуваного твердження, що за змістом означає порушення внутрішнього інваріанту або передумови.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -7648,7 +7648,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 - **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
 - **Джерело:** shukaty
 - **Нотатка:** Це рекомендація про діагностику буферних переповнень і типових помилок циклів. У документації ESP-IDF явно не знайдена, це загальна практика відлагодження.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -7767,7 +7767,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 - **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
 - **Джерело:** shukaty
 - **Нотатка:** Рекомендація про порівняння поточного вказівника з результатом malloc для діагностики утечок пам'яті. У документації ESP-IDF явно не знайдена.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -7841,7 +7841,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
   >     rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
 - **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '300,313p'
 - **Нотатка:** RTC Watchdog дає повідомлення виду "rst:0x10" у першому рядку log output від ROM bootloader. Це сигнал, що система перезавантажилась через timeout.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -7873,7 +7873,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
   > If this address is zero, it usually means that the application has attempted to dereference a NULL pointer. If this address is close to zero, it usually means that the application has attempted to access a member of a structure, but the pointer to the structure is NULL. If this address is something else (garbage value, not in ``0x3fxxxxxx`` - ``0x6xxxxxxx`` range), it likely means that the pointer used to access the data is either not initialized or has been corrupted.
 - **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '353,365p'
 - **Нотатка:** EXCVADDR розповідає про адресу, що викликала винятки. Її інтерпретація часто дає цілковиту відповідь про причину: нульовий вказівник, пошкоджений вказівник або невініціалізований.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -7913,7 +7913,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
   >     18      *ptr = 0x42424242;
 - **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '222,230p'
 - **Нотатка:** IDF Monitor використовує .elf файл того ж збирання для розшифровки адрес з backtrace у назви функцій, файлів та номери рядків.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -7971,7 +7971,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
   > If the :doc:`Core Dump <core_dump>` feature is enabled, then the system state (task stacks and registers) will be dumped to either Flash or UART, for later analysis.
 - **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '79,79p'
 - **Нотатка:** Core Dump — функція ESP-IDF для зберігання стану системи при паніці для подальшого аналізу. Це рекомендується, коли проблема не відтворюється легко, а також для логування переходів станів.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -8001,7 +8001,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
   > If :doc:`IDF Monitor <tools/idf-monitor>` is used, Program Counter values will be converted to code locations (function name, file name, and line number), and the output will be annotated with additional lines:
 - **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '177,177p'
 - **Нотатка:** З цитати випливає, що без IDF Monitor (а IDF Monitor потребує .elf) backtrace залишається у виді сирих адрес, тобто нерозшифрованим. Це клас B — логічний висновок, а не пряма цитата.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -8050,7 +8050,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 - **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
 - **Джерело:** shukaty
 - **Нотатка:** Рекомендація про зберігання .elf файлу разом з прошивкою для подальшого аналізу. У документації ESP-IDF явно не знайдена як вимога до процесу збирання чи розгортання.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 
@@ -8120,7 +8120,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 - **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
 - **Джерело:** shukaty
 - **Нотатка:** Рекомендація про використання hello_world як мінімального, заведомо справного образу для діагностики проблем прошивки. У документації ESP-IDF не знайдена як стратегія діагностики, хоча hello_world є офіційним прикладом.
-- **Прохід:** m2-61-panik-b
+- **Прохід:** m2-61-panic-b
 
 ---
 

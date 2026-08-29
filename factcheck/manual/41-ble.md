@@ -199,7 +199,7 @@ Bluetooth, на якому тримається безліч старих про
   > Serial Port Profile (SPP) defines a serial communication application based on the RFCOMM protocol, enabling RS-232-style data transmission over Bluetooth.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** SPP is Classic Bluetooth only; S3 supports only BLE, so projects moving to S3 must be rewritten
-- **Прохід:** klas-f-41-ble
+- **Прохід:** nosignal-41-ble
 
 ---
 
@@ -393,7 +393,7 @@ Bluetooth, на якому тримається безліч старих про
   >   - \–
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** BLE support table shows ESP32, S3, C2, C3, C5, C6, C61, H2, H4 - notably S2 is absent
-- **Прохід:** klas-f-41-ble
+- **Прохід:** nosignal-41-ble
 
 ---
 
@@ -543,7 +543,7 @@ Bluetooth, на якому тримається безліч старих про
   > Bluetooth LE is a Bluetooth protocol that is not compatible with Bluetooth Classic and was introduced in Bluetooth 4.0. As the name suggests, Bluetooth LE is a low-power Bluetooth protocol with a lower data transfer rate compared to Bluetooth Classic.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** BLE has lower data transfer rate than Classic (though specific "tens of kbits/s" not stated)
-- **Прохід:** klas-f-41-ble
+- **Прохід:** nosignal-41-ble
 
 ---
 
@@ -693,7 +693,7 @@ Bluetooth, на якому тримається безліч старих про
   > conn_itvl=36, conn_latency=0, supervision_timeout=500, encrypted=0, authenticated=0, bonded=0
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** BLE connection logs show encrypted=0, authenticated=0, bonded=0, proving pairing/bonding not obligatory
-- **Прохід:** klas-f-41-ble
+- **Прохід:** nosignal-41-ble
 
 ---
 
@@ -1186,7 +1186,7 @@ BLE не передає потік. Він публікує **структуру
   > In fact, the definitions of these services and characteristic data are also provided by the SIG. For example, the value of the Heart Rate Measurement must include a flag field and a heart rate measurement field, and may include fields such as energy expended, RR-interval, and transmission interval, among others. Therefore, these definitions from SIG allow Bluetooth LE devices from different manufacturers to recognize each other's services or characteristic data, enabling cross-manufacturer communication.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Підтверджує, що стандартні GATT послуги дозволяють універсальним додаткам розпізнавати та виводити осмислені значення без кастомного клієнта
-- **Прохід:** klas-f-41-ble
+- **Прохід:** nosignal-41-ble
 
 ---
 
@@ -1239,7 +1239,7 @@ BLE не передає потік. Він публікує **структуру
   > ESP-IDF supports two host stacks: **Bluedroid** and **NimBLE**.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Прямо підтверджує наявність двох стеків BLE в ESP-IDF
-- **Прохід:** klas-f-41-ble
+- **Прохід:** nosignal-41-ble
 
 ---
 
@@ -1267,7 +1267,7 @@ BLE не передає потік. Він публікує **структуру
   > - **Bluedroid** (the default stack): Supports both Bluetooth Classic and Bluetooth LE. Recommended for applications that require both technologies.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Підтверджує повний стек Bluedroid, що підтримує Classic і BLE
-- **Прохід:** klas-f-41-ble
+- **Прохід:** nosignal-41-ble
 
 ---
 
@@ -1316,7 +1316,7 @@ BLE не передає потік. Він публікує **структуру
   > Although both support Bluetooth LE, ESP-NimBLE requires less heap and flash size.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Підтверджує NimBLE як BLE-тільки компактніший стек з меншим RAM і флешем
-- **Прохід:** klas-f-41-ble
+- **Прохід:** nosignal-41-ble
 
 ---
 
@@ -1346,7 +1346,7 @@ BLE не передає потік. Він публікує **структуру
   > • SRAM: 400 KB (16 KB for cache)
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
 - **Нотатка:** Datasheet підтверджує 400 КБ SRAM; твердження про адекватність для простих задач вимагає практичної оцінки. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-detali-klasC
+- **Прохід:** m2-parts-class-c
 
 ---
 
@@ -1486,7 +1486,7 @@ Bluetooth — найважчий компонент після Wi-Fi. Проши
   > Each type of board has only one 2.4 GHz ISM band RF module, shared by two or three modules. Consequently, a module cannot receive or transmit data while another module is engaged in data transmission or reception.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Підтверджує, що Wi-Fi і Bluetooth ділять одне радіо і конкурують за час
-- **Прохід:** klas-f-41-ble
+- **Прохід:** nosignal-41-ble
 
 ---
 
@@ -1560,7 +1560,7 @@ Bluetooth — найважчий компонент після Wi-Fi. Проши
 - **Джерело:** ESP-IDF Programming Guide, mbedTLS memory footprint / ESP-TLS — оцінка пам'яті на з'єднання; цитати не дістав
 - **Спосіб і дата:** позахідна знань про пам'ять та криптографію, 2026-08-27
 - **Нотатка:** Клас B без цитати. Джерело для витрат пам'яті на TLS-з'єднання існує (документація mbedTLS в ESP-IDF наводить порядок величин), але я його не відкривав. Тому C.
-- **Прохід:** m2-90-vybirka
+- **Прохід:** m2-90-sample
 
 ---
 
@@ -1611,7 +1611,7 @@ BLE спроєктований для батарейок, і його голов
   > Bluetooth LE is a low-power Bluetooth protocol with a lower data transfer rate compared to Bluetooth Classic. It is typically used in data communication for the Internet of Things (IoT), such as smart switches or sensors
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Підтверджує, що BLE спроєктований для низької енергоефективності; інтервал реклами важливий для оптимізації
-- **Прохід:** klas-f-41-ble
+- **Прохід:** nosignal-41-ble
 
 ---
 
@@ -1647,7 +1647,7 @@ BLE спроєктований для батарейок, і його голов
   > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
 - **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
 - **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -2206,7 +2206,7 @@ Classic — тільки на classic-чипі; SPP на S3 і C3 не існу�
   > Although both support Bluetooth LE, ESP-NimBLE requires less heap and flash size.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Документація стверджує, що NimBLE вимагає менше пам'яті в принципі, але не зазначає, що ця різниця "вирішальна" саме для C3. Більш того, в таблиці підтримки чипів показано, що обидва стеки (Bluedroid і NimBLE) підтримуються на C3.
-- **Прохід:** klas-f-41-ble
+- **Прохід:** nosignal-41-ble
 
 ---
 

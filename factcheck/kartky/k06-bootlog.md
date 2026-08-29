@@ -290,7 +290,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
   > POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Коментар enum'у переводиться як «скидання від подачі напруги на Vbat». EN (enable) — пін вмикання чипа, без якого скидання неможливе. Книга інтерпретує це як «подано живлення або EN», що відповідає суті Vbat reset.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -336,7 +336,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
   > SW_RESET               =  3,    /**<3, Software reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Пряма відповідність: 0x3 = SW_RESET. Неме розходження між книгою й enum'ом.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -438,7 +438,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
   > DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Пряма відповідність: 0x5 = DEEPSLEEP_RESET. Коментар згадує Deep Sleep.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -484,7 +484,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
   > DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Коментар DEEPSLEEP_RESET говорить про Deep Sleep. Прокинення (wake-up) — це сенс скидання при виході з deep sleep режиму.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -593,7 +593,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
   > TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Коментар: «Timer Group0 Watch dog reset». TG0 = Timer Group 0. Книга інтерпретує як «watchdog таймера 0», що дослівно відповідає enum'у.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -639,7 +639,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
   > TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Пряма відповідність: 0x8 = TG1WDT_SYS_RESET. TG1 = Timer Group 1.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -685,7 +685,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
   > TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Коментар: «Timer Group1 Watch dog reset». Книга інтерпретує як «watchdog таймера 1», дослівно.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -731,7 +731,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
   > RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Пряма відповідність: 0x9 = RTCWDT_SYS_RESET. RTC = Real Time Clock.
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -777,7 +777,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
   > RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Коментар: «RTC Watch dog Reset». Книга дослівно передає це як «RTC watchdog».
-- **Прохід:** m2-60-panik-a
+- **Прохід:** m2-60-panic-a
 
 ---
 
@@ -886,7 +886,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
   > SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
 - **Спосіб і дата:** GitHub ESP-IDF, rom/rtc.h, 2026-08-27
 - **Нотатка:** Код 0xc (12 у десятковій) — це SW_CPU_RESET, програмне скидання ядра. Частина про «часто після паніки» логічна: паніка часто викликається assert() або explicit reset, який видається як 0xc. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-95-vybirka
+- **Прохід:** m2-95-sample
 
 ---
 
@@ -995,7 +995,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
   > RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
 - **Спосіб і дата:** curl з github.com/espressif/esp-idf, grep з rtc.h, 2026-08-26
 - **Нотатка:** Код 0xf (15) прямо визначений як RTCWDT_BROWN_OUT_RESET. Причина — нестабільне живлення. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-96-vybirka
+- **Прохід:** m2-96-sample
 
 ---
 
@@ -1041,7 +1041,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
   > rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Місце в документі: розділ RTC Watchdog Timeout, рядок 306
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -1087,7 +1087,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
   > 0x10 | RTCWDT_RTC_RESET | RTC watchdog скинув усе
 - **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
 - **Нотатка:** RTC watchdog може скидати весь чип, включаючи RTC модуль. Це критичне питання для deep sleep та RTC операцій. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-92-vybirka
+- **Прохід:** m2-92-sample
 
 ---
 

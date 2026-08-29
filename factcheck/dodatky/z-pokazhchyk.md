@@ -228,7 +228,7 @@
   > A single {IDF_TARGET_NAME}'s flash can contain multiple apps
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** концепція паспорту виробу підтримується довідковою документацією ESP-IDF
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -255,7 +255,7 @@
   > The LED control (LEDC) peripheral is primarily designed to control the intensity of LEDs, although it can also be used to generate PWM signals for other purposes
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** серво мотори керуються сигналами PWM через LEDC периферію
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -282,7 +282,7 @@
   > This utility is designed to create instances of factory NVS partition images on a per-device basis for mass manufacturing purposes
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** серійна прошивка підтримується утилітою для масового виробництва
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -309,7 +309,7 @@
   > A single {IDF_TARGET_NAME}'s flash can contain multiple apps, as well as many different kinds of data (calibration data, filesystems, parameter storage, etc). For this reason a partition table is flashed to (:menuitem:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`) 0x8000 in the flash.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** таблиця розділів — центральна концепція управління флеш-памяттю в ESP32
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -690,7 +690,7 @@ bootloader — 5, 15, 18, 26, 98, 117–120, 124–125, 135, 143, 373, 376, 381,
   > The ESP-IDF second stage bootloader performs the following functions
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** bootloader is well-documented ESP-IDF component with dedicated section in API guides
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -819,12 +819,12 @@ CONFIG_ESP_SYSTEM_USE_EH_FRAME — 168
   >     MEPC    : 0x420048b4  RA      : 0x420048b4  SP      : 0x3fc8f2f0 ...
   >     (жодного рядка Backtrace: у дампі)
   > 
-  > Moreover, IDF Monitor is also capable of generating and printing a
+  >     Moreover, :doc:`IDF Monitor <tools/idf-monitor>` is also capable of generating and printing a backtrace thanks to the stack dump provided by the board in the panic handler.
   > backtrace thanks to the stack dump provided by the board in the
   > panic handler.
   > 
   > While the backtrace above is very handy, it requires the user to use
-  > IDF Monitor. Thus, in order to generate and print a backtrace while
+  >     While the backtrace above is very handy, it requires the user to use :doc:`IDF Monitor <tools/idf-monitor>`. Thus, in order to generate and print a backtrace while using another monitor program, it is possible to activate ``CONFIG_ESP_SYSTEM_USE_EH_FRAME`` option from the menuconfig, under the "Backtracing method" menu.
   > using another monitor program, it is possible to activate
   > ``CONFIG_ESP_SYSTEM_USE_EH_FRAME`` option from the menuconfig, under
   > the "Backtracing method" menu.
@@ -1006,7 +1006,7 @@ CP2102 — 11, 25, 29, 79, 81, 83, 114, 366, 391
   > CP2102
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
 - **Нотатка:** Мікросхема згадана в даташті.
-- **Прохід:** m2-detali-klasC
+- **Прохід:** m2-parts-class-c
 
 ---
 
@@ -1075,7 +1075,7 @@ DMA — 50, 52, 55–56, 188, 220, 222, 281, 368, 398
   > Use the ``MALLOC_CAP_DMA`` flag to allocate memory which is suitable for use with hardware DMA engines
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** DMA — це апаратний механізм прямого доступу до пам'яті, документований в поділі про розподіл пам'яті
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -1207,7 +1207,7 @@ ESP-NOW — 69, 231, 233, 236, 240, 246–249, 251, 255, 283, 286, 316, 333, 341
   > ESP-NOW is a kind of connectionless Wi-Fi communication protocol that is defined by Espressif
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP-NOW is documented WiFi communication protocol in ESP-IDF
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -1255,7 +1255,7 @@ ESP32-C3-MINI-1 — 7, 79, 152, 401
   > ESP32-C3-DevKitM-1
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP32-C3-MINI-1 is official Espressif module variant referenced in development board documentation
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -1282,7 +1282,7 @@ ESP32-CAM — 14, 80, 82, 279–281
   > official development boards listed
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP32-CAM is official Espressif development board with integrated camera
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -1309,7 +1309,7 @@ ESP32-S2 — 45–46, 118, 242
   > ESP32-S2 | Yes | Yes |
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP32-S2 is supported chip in Arduino-ESP32 project
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -1336,7 +1336,7 @@ ESP32-S3 — 7, 23, 39, 44, 118, 127, 141, 152, 363
   > ESP32-S3 | Yes | Yes |
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP32-S3 is supported chip in Arduino-ESP32 project
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -1384,7 +1384,7 @@ ESP32-WROOM-32 — 7, 39, 79, 123, 152, 401
   > official development boards listed
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP32-WROOM-32 is official Espressif module variant
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -1411,7 +1411,7 @@ ESP32-WROOM-32D — 79, 152
   > official development boards listed
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP32-WROOM-32D is official Espressif module variant referenced in development documentation
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -1438,7 +1438,7 @@ ESP32-WROVER — 7, 79, 152
   > official development boards listed
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP32-WROVER is official Espressif module variant with PSRAM
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -1465,7 +1465,7 @@ ESP8266 — 7, 18, 21, 80, 123, 152, 155, 162, 246, 367
   > ESP8266 RTOS Software Development Kit
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP8266 is documented predecessor SoC with dedicated RTOS SDK
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -1492,7 +1492,7 @@ esp_deep_sleep_start — 68, 100, 338, 340, 344
   > In Deep-sleep mode, the CPUs, most of the RAM, and all digital peripherals that are clocked from APB_CLK are powered off
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** глибокий сон описаний як режим енергозбереження з фізичним відключенням більшості компонентів
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -1519,7 +1519,7 @@ ESP_ERR_INVALID_ARG — 207, 326
   > #define ESP_ERR_INVALID_ARG         0x102   /*!< Invalid argument */
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** код помилки для невалідного аргументу у API функціях
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -1651,7 +1651,7 @@ esp_err_t — 131, 136, 164, 197–198, 327, 329–331, 354
   > typedef int esp_err_t;
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** базовий тип для кодів помилок в ESP-IDF
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3258,7 +3258,7 @@ FreeRTOS — 4–5, 40–41, 46, 94, 100, 103, 117, 143, 173, 185–187, 190–1
   > FreeRTOS is an open source RTOS (real-time operating system) kernel that is integrated into ESP-IDF as a component
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** FreeRTOS — основна операційна система для ESP-IDF додатків
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3285,7 +3285,7 @@ GPIO12 — 14, 17, 28, 71–72, 74, 77, 118, 142, 173, 175, 311, 335, 367, 379�
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO12 — одна з виводів загального призначення, документована в GPIO API
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3312,7 +3312,7 @@ GPIO15 — 14, 17–18, 28, 71, 142, 173, 379
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO15 — одна з виводів з підтримкою RTC функцій
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3339,7 +3339,7 @@ GPIO17 — 67, 73–75, 206, 335
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO17 — вивід загального призначення
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3366,7 +3366,7 @@ GPIO18 — 75, 172, 206, 335
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO18 — вивід загального призначення
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3393,7 +3393,7 @@ GPIO2 — 13–14, 17, 28, 71–72, 142, 335–337, 379
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO2 — вивід загального призначення
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3420,7 +3420,7 @@ GPIO21 — 149, 310, 326, 335
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO21 — вивід загального призначення
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3447,7 +3447,7 @@ GPIO22 — 149, 310, 326, 335
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO22 — вивід загального призначення
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3474,7 +3474,7 @@ GPIO25 — 75, 206–207, 310, 349–350
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO25 — вивід загального призначення
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3501,7 +3501,7 @@ GPIO26 — 74–75, 206–207, 349–350
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO26 — вивід загального призначення
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3528,7 +3528,7 @@ GPIO3 — 14, 72, 75, 335, 337
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO3 — вивід загального призначення
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3555,7 +3555,7 @@ GPIO32 — 53, 74–75, 182, 389
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO32 — вивід з підтримкою RTC функцій
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3582,7 +3582,7 @@ GPIO34 — 53, 62, 74, 77, 182, 335, 337, 349–351, 369
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO34 — вивід з підтримкою RTC функцій
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3609,7 +3609,7 @@ GPIO4 — 9, 17, 149, 310, 335, 349, 364, 379–380
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO4 — вивід загального призначення
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3664,7 +3664,7 @@ GPIO6 — 21, 27, 53, 73, 76, 154, 182, 335, 349, 369
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO6 — вивід загального призначення
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3691,7 +3691,7 @@ GPIO8 — 13–14, 24, 72–73, 118, 205, 326, 335, 364–365, 380
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO8 — вивід загального призначення
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3718,7 +3718,7 @@ GPIO9 — 13–14, 17, 24, 72–73, 82, 118, 295, 326, 335, 364–365, 380
   > GPIO & RTC GPIO
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO9 — вивід загального призначення
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -3805,7 +3805,7 @@ gpio_isr_handler — 50, 189
   > Application Example
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** функція обробник переривання GPIO
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -4022,7 +4022,7 @@ i2c_device_config_t — 215, 327
   > I2C
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** структура конфігурації для I2C пристрою
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -4308,7 +4308,7 @@ i2c_new_master_bus — 215, 326, 332
   > i2c_new_master_bus` can be called to allocate and initialize an I2C master bus
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** функція для створення нової шини I2C у режимі майстра
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -4335,7 +4335,7 @@ I²S — 40, 53–56, 280–281, 388, 399
   > I2S (Inter-IC Sound) is a synchronous serial communication protocol usually used for transmitting audio data between two digital audio devices
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** I²S is well-documented audio interface in ESP-IDF peripheral documentation
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -4494,7 +4494,7 @@ MALLOC_CAP_DMA — 188, 220, 222, 281, 368
   > Use the ``MALLOC_CAP_DMA`` flag to allocate memory which is suitable for use with hardware DMA engines
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** прапорець для виділення пам'яті придатної для DMA операцій
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -4542,7 +4542,7 @@ MALLOC_CAP_SPIRAM — 153, 188–189
   > It is also possible to connect external SPI RAM to the {IDF_TARGET_NAME}
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** прапорець для виділення зовнішньої PSRAM пам'яті
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -4594,7 +4594,7 @@ MCP23017 — 57, 76, 365, 386
   > CircuitPython module for the MCP23017/08 I2C and MCP23S17/08 SPI I/O extenders
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** MCP23017 is documented I2C GPIO expander supported by Adafruit CircuitPython library
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -4621,7 +4621,7 @@ merge-bin — 15, 25–26, 35, 125–126, 128, 137, 143–144, 146, 181, 373, 37
   > idf.py merge-bin
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** команда для об'єднання кількох бінарних файлів у один образ
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -4699,7 +4699,7 @@ Modbus — 156, 209, 211, 356, 358, 360
   > The Espressif ESP-Modbus Library (esp-modbus) supports Modbus communication in the networks based on RS485, Wi-Fi, and Ethernet interfaces
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Modbus is documented through official ESP-Modbus component
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -4863,7 +4863,7 @@ PCF8574 — 57, 76, 267, 365, 386
   > PCF8574
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
 - **Нотатка:** Мікросхема згадана в даташті.
-- **Прохід:** m2-detali-klasC
+- **Прохід:** m2-parts-class-c
 
 ---
 
@@ -5243,7 +5243,7 @@ SR04 — 27, 34, 61, 258, 262, 264, 389
   > The HC-SR04 is an inexpensive solution for measuring distances using microcontrollers
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** SR04 (HC-SR04) ultrasonic sensor is documented by Adafruit CircuitPython library
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 
@@ -5936,7 +5936,7 @@ WS2812 — 54–55, 200, 204, 207, 388
   > Higher level NeoPixel driver that presents the strip as a sequence
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** WS2812 (NeoPixel) addressable LED is documented by Adafruit CircuitPython library
-- **Прохід:** prochid-z-pokazhchyk
+- **Прохід:** sweep-z-pokazhchyk
 
 ---
 

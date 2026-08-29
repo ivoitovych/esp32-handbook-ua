@@ -59,7 +59,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
 import factcheck  # noqa: E402  — після sys.path
-CIL = ROOT / "factcheck" / "BRIEF-QUOTES.md"
+CIL = ROOT / "factcheck" / "reports" / "BRIEF-QUOTES.md"
 NA_PAKET = 5
 
 ZAHOLOVOK_RAMKA = """# Наряд: {skilky} цитат, яких немає в джерелі
@@ -113,7 +113,7 @@ def zapysy() -> dict[tuple[str, str], dict]:
     return rec
 
 
-ZVIT = ROOT / "factcheck" / "BOOK-VS-SOURCES.md"
+ZVIT = ROOT / "factcheck" / "reports" / "BOOK-VS-SOURCES.md"
 
 PIDPYSY = {
     "pidtverdzheno": "Книга підтверджена",

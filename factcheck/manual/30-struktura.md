@@ -102,7 +102,7 @@
   > ``app_main`` function is called from the ``main`` task.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** app_main викликається як звичайна задача FreeRTOS
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -153,7 +153,7 @@
   > The ``app_main`` function is allowed to return at any point (i.e., before the application terminates).
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що app_main може завершитися й це нормально
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -182,7 +182,7 @@
   > This task will self delete when ``app_main`` returns
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** задача app_main зникає й звільняє свій стек
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -467,7 +467,7 @@ void app_main(void) {
   > Non-constant static data (.data) and zero-initialized data (.bss) is placed by the linker into Internal SRAM as data memory.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує глобальні змінні й static як статична пам'ять
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -583,7 +583,7 @@ void app_main(void) {
   > For most purposes, the C Standard Library's ``malloc()`` and ``free()`` functions can be used for heap allocation
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що купа використовує malloc й new
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -633,7 +633,7 @@ void app_main(void) {
   > each RTOS task has its own stack
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ підтверджує, що кожна задача має власний стек
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -735,7 +735,7 @@ xTaskCreate(sensor_task, "sensor", 4096, NULL, 5, NULL);
   > each RTOS task has its own stack
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ підтверджує, що кожна задача має власний стек
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -766,7 +766,7 @@ xTaskCreate(sensor_task, "sensor", 4096, NULL, 5, NULL);
   > each RTOS task has its own stack
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ підтверджує, що кожна задача має власний стек
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -871,7 +871,7 @@ xTaskCreate(sensor_task, "sensor", 4096, NULL, 5, NULL);
   > each RTOS task has its own stack
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ підтверджує, що кожна задача має власний стек
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -924,7 +924,7 @@ xTaskCreate(sensor_task, "sensor", 4096, NULL, 5, NULL);
   > Most peripheral DMA controllers (e.g., SPI, sdmmc, etc.) have requirements that sending/receiving buffers should be placed in DRAM and word-aligned. We suggest to place DMA buffers in static variables rather than in the stack.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** великі буфери - не на стек
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -1200,7 +1200,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
   > Because {IDF_TARGET_NAME} uses multiple types of RAM, it also contains multiple heaps with different capabilities.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** купа на ESP32 не однорідна, malloc може повернути NULL
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -1348,7 +1348,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
   > Use the ``MALLOC_CAP_DMA`` flag to allocate memory which is suitable for use with hardware DMA engines
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** буфер для DMA має бути доступним контролеру, звичайний malloc не придатний
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -1442,7 +1442,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
   > The external memory is incorporated in the memory map and, with certain restrictions, is usable in the same way as internal data RAM.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує, як PSRAM поводиться в контексті обмежень.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1532,7 +1532,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
   > This allows any application to use the external RAM without having to rewrite the code to use ``heap_caps_malloc(..., MALLOC_CAP_SPIRAM)``.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ каже, що malloc уже вміє віддавати PSRAM.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1684,7 +1684,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
   > 16 КБ і більше → PSRAM
 - **Спосіб і дата:** Таблиця розподілу адресного простору пам'яті ESP32 з датащиту; витяг з офіційної документації
 - **Нотатка:** Зовнішня PSRAM обов'язково розташована від 0x400000 мегабайтів і більше у адресному просторі ESP32
-- **Прохід:** m2-92-vybirka
+- **Прохід:** m2-92-sample
 
 ---
 
@@ -2103,7 +2103,7 @@ ESP_LOGI(TAG, "вільно: %u, найбільший блок: %u",
   > This memory can be used interchangeably with :ref:`DRAM`
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** фрагментація - коли вільно 40 КБ, а найбільший блок 2 КБ
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -2290,7 +2290,7 @@ NVS, стирання сектора) кеш вимикається, і вико
   > IRAM (Instruction RAM) is memory that is connected to the CPU's instruction bus
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ підтверджує наявність IRAM
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -2403,7 +2403,7 @@ IRAM небагато, і кожна така функція займає її �
   > As IRAM is limited, most of an application's binary code must be placed into IROM instead.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує обмеженість IRAM
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -2632,7 +2632,7 @@ lichylnyk++;   // читання + додавання + запис — три д
   > Memory allocated with ``MALLOC_CAP_32BIT`` can **only** be accessed via 32-bit reads and writes
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що 32-бітне читання й запис атомарні
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -2661,7 +2661,7 @@ lichylnyk++;   // читання + додавання + запис — три д
   > Memory allocated with ``MALLOC_CAP_32BIT`` can **only** be accessed via 32-bit reads and writes
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** проста передача одного значення через volatile працює
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -2690,7 +2690,7 @@ lichylnyk++;   // читання + додавання + запис — три д
   > Memory allocated with ``MALLOC_CAP_32BIT`` can **only** be accessed via 32-bit reads and writes, any other type of access will generate a fatal LoadStoreError exception.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що складніші структури не атомарні
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -3109,7 +3109,7 @@ ESP_LOGI(TAG, "мінімум за весь час: %u", esp_get_minimum_free_he
   > For most purposes, the C Standard Library's ``malloc()`` and ``free()`` functions can be used for heap allocation without any special consideration.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** результат malloc треба перевіряти завжди
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---
 
@@ -3136,6 +3136,6 @@ ESP_LOGI(TAG, "мінімум за весь час: %u", esp_get_minimum_free_he
   > Memory allocated with ``MALLOC_CAP_32BIT`` can **only** be accessed via 32-bit reads and writes
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** volatile не робить операцію атомарною
-- **Прохід:** prochid-30-struktura
+- **Прохід:** sweep-30-struktura
 
 ---

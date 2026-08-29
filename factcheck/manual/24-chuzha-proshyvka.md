@@ -218,7 +218,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує команду gen_esp32part.py
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -285,7 +285,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує команду gen_esp32part.py
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -312,7 +312,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
   > Each entry in the partition table has a name (label), type (app, data, or something else), subtype and the offset in flash where the partition is loaded.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** таблиця розділів надає адресу, розмір, тип кожного розділу, що дозволяє відповісти на кілька питань одразу
-- **Прохід:** prochid-24-chuzha-proshyvka
+- **Прохід:** sweep-24-chuzha-proshyvka
 
 ---
 
@@ -342,7 +342,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
   > ota_1,    app,  ota_1,   0x120000, 1M,
 - **Спосіб і дата:** curl esp-idf partition-tables.rst, grep ota_, 2026-08-26
 - **Нотатка:** Текст посилається на ota_0 та ota_1 у таблиці розділів. Джерело підтверджує їхню наявність.
-- **Прохід:** m2-82-boot-flesh
+- **Прохід:** m2-82-boot-flash
 
 ---
 
@@ -393,7 +393,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
   > SPIFFS is a file system intended for SPI NOR flash devices on embedded targets
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документація підтверджує, що spiffs та інші файлові системи на ESP32 зберігають файли (веб-інтерфейс, конфігурація тощо)
-- **Прохід:** prochid-24-chuzha-proshyvka
+- **Прохід:** sweep-24-chuzha-proshyvka
 
 ---
 
@@ -506,7 +506,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -568,7 +568,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -866,7 +866,7 @@ NVS зберігає конфігурацію конкретного екзем�
   > Each key-value pair belongs to one of the namespaces.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** NVS дійсно зберігає конфігурацію через систему key-value пар у намеспейсах, що означає, що кожен екземпляр може мати свою конфігурацію.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -916,7 +916,7 @@ NVS зберігає конфігурацію конкретного екзем�
   > Each entry in the partition table has a name (label), type (app, data, or something else), subtype and the offset in flash where the partition is loaded.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** адресу та розмір розділу можна отримати з таблиці розділів
-- **Прохід:** prochid-24-chuzha-proshyvka
+- **Прохід:** sweep-24-chuzha-proshyvka
 
 ---
 
@@ -1020,7 +1020,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
   > NVS operates on key-value pairs. Keys are ASCII strings; the maximum key length is currently 15 characters. Values can have one of the following types:
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Також у документі про namespaces та page structure.
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -1475,7 +1475,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
   > The ``DROM`` segment of the application binary starts with the :cpp:type:`esp_app_desc_t` structure which carries specific fields describing the application
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** інформації достатньо для написання власної прошивки, яка буде супроводжуваною
-- **Прохід:** prochid-24-chuzha-proshyvka
+- **Прохід:** sweep-24-chuzha-proshyvka
 
 ---
 
@@ -1755,7 +1755,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
   > the {IDF_TARGET_NAME} will generate a random key that software cannot access or modify
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ключ не покидає чип, а зміст не можна зрозуміти. Про залиття назад: в документації сказано про можливість рефлешення якщо є ключ, але суть про неможливість зрозуміння вмісту підтримується
-- **Прохід:** prochid-24-chuzha-proshyvka
+- **Прохід:** sweep-24-chuzha-proshyvka
 
 ---
 

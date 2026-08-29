@@ -499,7 +499,7 @@
   > VOH>=2.64 V, as the number of current-source pins increases.
 - **Спосіб і дата:** PDF Espressif, кеш esp32-datasheet.pdf, pdftotext -layout, 2026-08-26
 - **Нотатка:** Таблиця DC Characteristics чітко норує максимальний струм на окремому пічці (типово 40 мА для VDD3P3_CPU домену, але зменшується зі збільшенням кількості активних пінів). Це ключова інформація про обмеження.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -947,7 +947,7 @@
   > TWAI is a highly reliable, multi-master, real-time, serial asynchronous communication protocol designed for automotive and industrial applications. It is compatible with the frame structure defined in the ISO 11898-1 standard
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що TWAI сумісна з ISO 11898-1, що є стандартом для CAN-шини.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1302,7 +1302,7 @@
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує LEDC для LED яскравості та PWM для інших цілей. Servo не згаданий конкретно, але PWM сигнали для інших цілей можуть включати servo.
 
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1749,7 +1749,7 @@
   > has two 8-bit DAC (digital to analog converter) channels respectively connected to {IDF_TARGET_DAC_CH_1} (Channel 1) and {IDF_TARGET_DAC_CH_2} (Channel 2).
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що DAC — справжній аналоговий вихід
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1953,7 +1953,7 @@
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** RMT peripheral, WS2812 LED control
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-04-peryferiya
+- **Прохід:** queue-c-04-peryferiya
 
 ---
 
@@ -2056,7 +2056,7 @@ PWM теж можна, але саме ці функції рятують сил
   > motor bridges need complementary outputs and dead time
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Документація явно описує MCPWM для силової електроніки, включаючи мертвий час та апаратне аварійне вимкнення
-- **Прохід:** cherga-a-04-peryferiya
+- **Прохід:** queue-a-04-peryferiya
 
 ---
 
@@ -2285,7 +2285,7 @@ PWM теж можна, але саме ці функції рятують сил
   > Two UARTs
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
-- **Прохід:** m2-99-peryferiya-yadra
+- **Прохід:** m2-99-peripherals-cores
 
 ---
 
@@ -2329,7 +2329,7 @@ PWM теж можна, але саме ці функції рятують сил
   > Three UART interfaces
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
-- **Прохід:** m2-99-peryferiya-yadra
+- **Прохід:** m2-99-peripherals-cores
 
 ---
 
@@ -3407,7 +3407,7 @@ PWM теж можна, але саме ці функції рятують сил
   > Two I2S interfaces
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
-- **Прохід:** m2-99-peryferiya-yadra
+- **Прохід:** m2-99-peripherals-cores
 
 ---
 
@@ -3452,7 +3452,7 @@ PWM теж можна, але саме ці функції рятують сил
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
 У тому самому переліку периферії дворазова позначена числом («Two UARTs», «Two I2S interfaces»), а одноразова — просто назвою. Відсутність числа тут означає один, і це домовленість самого документа, а не наш здогад. У S2 поруч стоїть «Two UARTs» — отже I2S один.
-- **Прохід:** m2-99-peryferiya-yadra
+- **Прохід:** m2-99-peripherals-cores
 
 ---
 
@@ -3573,7 +3573,7 @@ PWM теж можна, але саме ці функції рятують сил
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
 У тому самому переліку периферії дворазова позначена числом («Two UARTs», «Two I2S interfaces»), а одноразова — просто назвою. Відсутність числа тут означає один, і це домовленість самого документа, а не наш здогад. У C6 поруч стоїть «Two UARTs» — отже I2S один.
-- **Прохід:** m2-99-peryferiya-yadra
+- **Прохід:** m2-99-peripherals-cores
 
 ---
 
@@ -3655,7 +3655,7 @@ PWM теж можна, але саме ці функції рятують сил
   > The TWAI controllers on the {IDF_TARGET_NAME} also compatible with FD format (a.k.a. CAN FD) frames defined in ISO 11898-1, and can transmit and receive both classic and FD format frames.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що є класичні фрейми.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -3889,7 +3889,7 @@ PWM теж можна, але саме ці функції рятують сил
   > The DAC on {IDF_TARGET_NAME} has two channels.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** DAC має 2 канали
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -3933,7 +3933,7 @@ PWM теж можна, але саме ці функції рятують сил
   > The DAC on {IDF_TARGET_NAME} has two channels.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що DAC має 2 канали
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -4871,7 +4871,7 @@ PWM теж можна, але саме ці функції рятують сил
   > {IDF_TARGET_NAME} has two 8-bit DAC (digital to analog converter) channels
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує DAC саме для цих моделей
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -5018,7 +5018,7 @@ I²C — два, SPI — чотири плюс по одному на кожен
   > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
 - **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
 - **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -5308,7 +5308,7 @@ DAC — тільки classic і S2. Touch — тільки classic, S2, S3.
   > On ESP32, the DAC digital controller can be connected internally to the I2S0
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ присвячений DAC на ESP32 та ESP32-S2, що підтверджує обмеження
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 

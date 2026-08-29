@@ -203,7 +203,7 @@ esptool version
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst, де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`; книга вживає довгу. Команда в книзі точна. Урок не про помічника, а про наряд: один ключ мусить вести до всіх файлів свого документа, бо документація esptool розкладена на команди й опції окремо.
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -452,7 +452,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
   > a partition table is flashed to (:menuitem:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`) 0x8000 in the flash
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** esptool read-flash 0x8000 0x1000 — стандартний метод читання таблиці розділів з ESP-IDF
-- **Прохід:** presud-c-komandy
+- **Прохід:** verdict-c-komandy
 
 ---
 
@@ -538,7 +538,7 @@ esptool --port PORT verify-flash 0x10000 app.bin        # звірити
   >     0x2000 at start of flash + IDF_TARGET_MAX_BOOTLOADER_SIZE + 0x1000 signature sector // for Key Manager supported targets: esp32c5, esp32h4, esp32p4
 - **Спосіб і дата:** curl repo github.com/espressif/esp-idf, pdftotext текстів RST, 2026-08-27
 - **Нотатка:** Таблиця в картці k05 правильно наводить адреси другого бутлоадера для різних чипів. Адреса 0x0 для S3, C3, C6, H2 підтверджена в документації ESP-IDF. Класичні 0x1000 — для ранніх версій (classic, S2), 0x2000 — для нових (P4, C5, H4).
-- **Прохід:** m2-90-vybirka
+- **Прохід:** m2-90-sample
 
 ---
 
@@ -575,7 +575,7 @@ esptool --port PORT --baud 460800 write-flash -z \
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -677,7 +677,7 @@ esptool --port PORT erase-region 0x9000 0x6000   # лише NVS
   > factory,  app,  factory, 0x10000, 1M,
 - **Спосіб і дата:** curl esp-idf partition-tables.rst, grep partition, 2026-08-26
 - **Нотатка:** Розділ 18 показує типову таблицю розділів. Джерело підтверджує: nvs на 0x9000, factory на 0x10000. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-82-boot-flesh
+- **Прохід:** m2-82-boot-flash
 
 ---
 
@@ -732,7 +732,7 @@ esptool --port PORT erase-region 0x9000 0x6000   # лише NVS
   > factory,  app,  factory, 0x10000, 1M,
 - **Спосіб і дата:** curl esp-idf partition-tables.rst, grep partition, 2026-08-26
 - **Нотатка:** Розділ 18 показує типову таблицю розділів. Джерело підтверджує: nvs на 0x9000, factory на 0x10000. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-82-boot-flesh
+- **Прохід:** m2-82-boot-flash
 
 ---
 
@@ -773,7 +773,7 @@ esptool --chip esp32 merge-bin -o vyrib.bin --flash-mode dio --flash-size 4MB \
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -811,7 +811,7 @@ esptool --chip esp32 merge-bin -o vyrib.bin --flash-mode dio --flash-size 4MB \
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -846,7 +846,7 @@ argument`. Значення має збігатися з чипом, під як
   >         )
   > 
   > (basic-options.rst)
-  > * Binary image generation commands, such as elf2image or merge-bin,
+  > * Binary image generation commands, such as :ref:`elf2image <elf-2-image>` or :ref:`merge-bin <merge-bin>`, require the chip type to be specified.
   >   require the chip type to be specified.
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
@@ -887,7 +887,7 @@ argument`. Значення має збігатися з чипом, під як
   >         )
   > 
   > (basic-options.rst)
-  > * Binary image generation commands, such as elf2image or merge-bin,
+  > * Binary image generation commands, such as :ref:`elf2image <elf-2-image>` or :ref:`merge-bin <merge-bin>`, require the chip type to be specified.
   >   require the chip type to be specified.
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
@@ -2346,7 +2346,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
   > idf.py monitor
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** IDF Monitor запускається командою idf.py monitor і розшифровує backtrace.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -2522,7 +2522,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
   > idf.py monitor
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** IDF Monitor запускається командою idf.py monitor і розшифровує backtrace.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -2794,7 +2794,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
   > (inlined by) inner_dont_crash
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** флаг -i входить до складу -pfiaC; документ показує розшифровані inline-кадри з цим флагом
-- **Прохід:** prochid-c-komandy
+- **Прохід:** sweep-c-komandy
 
 ---
 
@@ -3335,7 +3335,7 @@ sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в с
   > For Linux users, if the port name is ``/dev/ttyUSB0``
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ підтверджує, що /dev/ttyUSB* є портом зовнішнього USB-to-UART моста
-- **Прохід:** prochid-c-komandy
+- **Прохід:** sweep-c-komandy
 
 ---
 
@@ -3681,7 +3681,7 @@ pio pkg update
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
 - **Спосіб і дата:** grep по кешованих .rst ESP-IDF, 2026-08-27
 - **Нотатка:** Агент був поставив джерелом саму книгу. Справжнє джерело — підстановка IDF_TARGET_BOOTLOADER_OFFSET, з якої ESP-IDF рендерить свою документацію: типове 0x0, classic і S2 — 0x1000, P4 і C5 — 0x2000. Таблиця книги (рядки 70–72 розділу 16) збігається з нею повністю, включно з третім значенням і складом кожної групи. Друге місце в тому ж кеші, bootloader.rst рядок 152, зараховує S2 до групи 0x0 — це розбіжність усередині документації самої ESP-IDF, і права там підстановка з рядка 5, бо саме нею рендериться текст. Книга стоїть на правильному боці.
-- **Прохід:** m2-94-vybirka
+- **Прохід:** m2-94-sample
 
 ---
 
@@ -4276,7 +4276,7 @@ pio pkg update
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
 - **Спосіб і дата:** grep по кешованих .rst ESP-IDF, 2026-08-27
 - **Нотатка:** Агент був поставив джерелом саму книгу. Справжнє джерело — підстановка IDF_TARGET_BOOTLOADER_OFFSET, з якої ESP-IDF рендерить свою документацію: типове 0x0, classic і S2 — 0x1000, P4 і C5 — 0x2000. Таблиця книги (рядки 70–72 розділу 16) збігається з нею повністю, включно з третім значенням і складом кожної групи. Друге місце в тому ж кеші, bootloader.rst рядок 152, зараховує S2 до групи 0x0 — це розбіжність усередині документації самої ESP-IDF, і права там підстановка з рядка 5, бо саме нею рендериться текст. Книга стоїть на правильному боці.
-- **Прохід:** m2-94-vybirka
+- **Прохід:** m2-94-sample
 
 ---
 
@@ -4435,7 +4435,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує команду gen_esp32part.py
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -4502,7 +4502,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує команду gen_esp32part.py
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -4545,7 +4545,7 @@ strings -n 6 dump.bin | grep -iE "http|mqtt|ssid|pass"
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -4609,7 +4609,7 @@ strings -n 6 dump.bin | grep -iE "http|mqtt|ssid|pass"
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 

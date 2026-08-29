@@ -123,7 +123,7 @@
   > This is an irreversible operation!
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує незворотність запису.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -382,7 +382,7 @@
   > eFuse bits can only be burned from 0 to 1, attempting to set any back to 0 will have no effect.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Підтверджує, що повернути біт у нуль неможливо.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -789,7 +789,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst, де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`; книга вживає довгу. Команда в книзі точна. Урок не про помічника, а про наряд: один ключ мусить вести до всіх файлів свого документа, бо документація esptool розкладена на команди й опції окремо.
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -819,7 +819,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst, де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`; книга вживає довгу. Команда в книзі точна. Урок не про помічника, а про наряд: один ключ мусить вести до всіх файлів свого документа, бо документація esptool розкладена на команди й опції окремо.
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -1002,7 +1002,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
   > 0x0 at start of flash + IDF_TARGET_MAX_BOOTLOADER_SIZE + 0x1000 signature sector
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
 - **Нотатка:** Датаsheet підтверджує, що бутлоадер розташовується на адресі 0x0 | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-detali-klasC
+- **Прохід:** m2-parts-class-c
 
 ---
 
@@ -1150,7 +1150,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
   > Longer eFuses (MAC addresses, keys) can be set with this command, but it's better to use a specific command (``burn-custom-mac``, ``burn-key``) for a specific field.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що MAC-адреса зберігається в eFuse.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -2154,7 +2154,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 - **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
 - **Спосіб і дата:** Практична рекомендація діагностики. Пошук у ESP-IDF SPI документації та датащиті не знайшов офіційного джерела для цієї конкретної методики діагностики
 - **Нотатка:** Метод діагностики: 1 МГц — достатньо низька для надійної передачі SPI даних. Це практичне спостереження, а не офіційна рекомендація з документації. Жодного зовнішнього джерела не знайдено. Клас E. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-92-vybirka
+- **Прохід:** m2-92-sample
 
 ---
 
@@ -2468,7 +2468,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
   > - Поганий контакт
 - **Спосіб і дата:** Технічна діагностика I²C, рекомендації Espressif та NXP, 2026-08-26
 - **Нотатка:** Це класичний симптом відсутності відповідаючого пристрою на I²C шині.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -2496,7 +2496,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
   > This is an irreversible operation!
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує незворотність запису eFuse.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 

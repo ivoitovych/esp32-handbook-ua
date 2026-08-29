@@ -58,7 +58,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
   > "version": "7.0.1"
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** платформа дає фіксовані версії компонентів у platform.json
-- **Прохід:** prochid-13-pio
+- **Прохід:** sweep-13-pio
 
 ---
 
@@ -110,7 +110,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
   > "name": "espressif32"
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтримка ESP32 у PlatformIO забезпечується платформою platform-espressif32
-- **Прохід:** prochid-13-pio
+- **Прохід:** sweep-13-pio
 
 ---
 
@@ -140,7 +140,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
   > "version": "~3.20017.0"
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** офіційна платформа використовує Arduino 2.x версію (~3.20017.0)
-- **Прохід:** prochid-13-pio
+- **Прохід:** sweep-13-pio
 
 ---
 
@@ -168,7 +168,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
   > # pioarduino (p)eople (i)nitiated (o)ptimized (arduino)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує існування форку pioarduino, підтримуваного спільнотою
-- **Прохід:** prochid-13-pio
+- **Прохід:** sweep-13-pio
 
 ---
 
@@ -196,7 +196,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
   > "version": "https://github.com/espressif/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz"
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** pioarduino підтримує Arduino 3.3.11 із новими сімействами чипів
-- **Прохід:** prochid-13-pio
+- **Прохід:** sweep-13-pio
 
 ---
 
@@ -369,7 +369,7 @@ git і повністю описує, чим збирається проєкт. 
   > board = esp32doit-devkit-v1
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** показує, що версії можуть бути зафіксовані в проєкті
-- **Прохід:** prochid-13-pio
+- **Прохід:** sweep-13-pio
 
 ---
 
@@ -400,7 +400,7 @@ git і повністю описує, чим збирається проєкт. 
   > board = esp32doit-devkit-v1
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** platformio.ini описує, чим збирається проєкт
-- **Прохід:** prochid-13-pio
+- **Прохід:** sweep-13-pio
 
 ---
 
@@ -519,7 +519,7 @@ S3, налагоджувальна й робоча збірка, дві різн
   > board = esp32doit-devkit-v1
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** весь проєкт описується в platformio.ini файлі
-- **Прохід:** prochid-13-pio
+- **Прохід:** sweep-13-pio
 
 ---
 
@@ -695,7 +695,7 @@ lib_deps =
   > "version": "~3.20017.0"
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** запис espressif32 @ без версії дає Arduino 2.x
-- **Прохід:** prochid-13-pio
+- **Прохід:** sweep-13-pio
 
 ---
 
@@ -725,7 +725,7 @@ lib_deps =
   > "version": "https://github.com/espressif/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz"
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** pioarduino розповсюджується через архив релізу, не через реєстр
-- **Прохід:** prochid-13-pio
+- **Прохід:** sweep-13-pio
 
 ---
 
@@ -834,7 +834,7 @@ lib_deps =
   > platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** platform specifies URL source of the platform
-- **Прохід:** prochid-13-pio
+- **Прохід:** sweep-13-pio
 
 ---
 
@@ -908,7 +908,7 @@ lib_deps =
   > pio project init --board esp32dev
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** pioarduino uses release version tags for pinning
-- **Прохід:** prochid-13-pio
+- **Прохід:** sweep-13-pio
 
 ---
 
@@ -1332,7 +1332,7 @@ build_flags = -DHAS_PSRAM
   > pio project init --board esp32dev
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** pio command is used to manage environments and build specific boards
-- **Прохід:** prochid-13-pio
+- **Прохід:** sweep-13-pio
 
 ---
 
@@ -1886,7 +1886,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
   > Factory app, two OTA definitions
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Таблиці розділів ESP-IDF підтримують OTA, що потрібне для серійного виробництва та довгострокового супроводу
-- **Прохід:** klas-f-13-pio
+- **Прохід:** nosignal-13-pio
 
 ---
 

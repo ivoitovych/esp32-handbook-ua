@@ -174,7 +174,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > Below is the list of USB to serial converter chips installed on most of the {IDF_TARGET_NAME} boards produced by Espressif
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Document confirms existence of USB-to-UART bridge chips as separate converters
-- **Прохід:** prochid-09-pidklyuchennya
+- **Прохід:** sweep-09-pidklyuchennya
 
 ---
 
@@ -202,7 +202,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 DevKit-C Guide
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-09-pidklyuchennya
+- **Прохід:** queue-c-09-pidklyuchennya
 
 ---
 
@@ -254,7 +254,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > For boards with an installed USB-to-UART bridge, the connection between the personal computer and the bridge is USB and between the bridge and {IDF_TARGET_NAME} is UART.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** говорить про те, що міст створює підключення, а не ESP32
-- **Прохід:** prochid-09-pidklyuchennya
+- **Прохід:** sweep-09-pidklyuchennya
 
 ---
 
@@ -366,7 +366,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > { USB_DEVICE(0x10C4, 0xEA60) }, /* Silicon Labs factory default */
 - **Спосіб і дата:** raw.githubusercontent.com/torvalds/linux/master, 2026-08-26
 - **Нотатка:** Обидві половини рядка книги підтверджено з одного місця: вендор `0x10C4` — Silicon Labs, і драйвер `cp210x` входить у дерево ядра, тобто «у ядрі» точне.
-- **Прохід:** m2-07-mosty-usb-uart
+- **Прохід:** m2-07-bridges-usb-uart
 
 ---
 
@@ -414,7 +414,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > http://www.silabs.com/support/Pages/software-downloads.aspx.
 - **Спосіб і дата:** PDF /home/ubuntu/dzherela-cache/cp2102.pdf, pdftotext -layout, grep "Virtual COM Port\|Windows\|Silicon Laboratories", 2026-08-26
 - **Нотатка:** Документ явно вказує на Virtual COM Port драйвери для Windows від Silicon Laboratories. Посилання на сайт SiLabs підтверджує, що це офіційні драйвери від виробника, як стверджує книга.
-- **Прохід:** m2-25-pidklyuchennya-09
+- **Прохід:** m2-25-wiring-09
 
 ---
 
@@ -453,7 +453,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > { USB_DEVICE(0x10C4, 0xEA60) }, /* Silicon Labs factory default */
 - **Спосіб і дата:** raw.githubusercontent.com/torvalds/linux/master, 2026-08-26
 - **Нотатка:** Обидві половини рядка книги підтверджено з одного місця: вендор `0x10C4` — Silicon Labs, і драйвер `cp210x` входить у дерево ядра, тобто «у ядрі» точне.
-- **Прохід:** m2-07-mosty-usb-uart
+- **Прохід:** m2-07-bridges-usb-uart
 
 ---
 
@@ -496,7 +496,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > MODULE_DESCRIPTION("Winchiphead CH341 USB Serial driver");
 - **Спосіб і дата:** raw.githubusercontent.com/torvalds/linux/master, 2026-08-26
 - **Нотатка:** `0x1a86:0x7523` — це CH340, `0x1a86:0x5523` — CH341. Ім'я виробника стверджує сам опис модуля: Winchiphead, тобто WCH.
-- **Прохід:** m2-07-mosty-usb-uart
+- **Прохід:** m2-07-bridges-usb-uart
 
 ---
 
@@ -536,7 +536,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > "| `CH340`, `CH341` | WCH | Windows: з сайту WCH. Linux: у ядрі |"
 - **Спосіб і дата:** Таблиця в картці kartky/k03-pidkl.md, офіційні драйвери WCH, Linux kernel usb-serial документація, 2026-08-26
 - **Нотатка:** Драйвер CH340 вбудований в Linux з версії ~2.6.37. Windows драйвер офіційно розповсюджується SiLabs, не вільно (на відміну від CH9102, де драйвер окремий).
-- **Прохід:** m2-50-kartky
+- **Прохід:** m2-50-cards
 
 ---
 
@@ -579,7 +579,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > MODULE_DESCRIPTION("Winchiphead CH341 USB Serial driver");
 - **Спосіб і дата:** raw.githubusercontent.com/torvalds/linux/master, 2026-08-26
 - **Нотатка:** `0x1a86:0x7523` — це CH340, `0x1a86:0x5523` — CH341. Ім'я виробника стверджує сам опис модуля: Winchiphead, тобто WCH.
-- **Прохід:** m2-07-mosty-usb-uart
+- **Прохід:** m2-07-bridges-usb-uart
 
 ---
 
@@ -625,7 +625,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 - **Спосіб і дата:** raw.githubusercontent.com/torvalds/linux/master, суцільна перевірка 52 драйверів `drivers/usb/serial/`, 2026-08-26
 - **Нотатка:** «У ядрі» для CH9102 правда, але не тим драйвером, який очікує читач. Сімейство CH343/CH9102 підхоплює **клас-драйвер `cdc_acm`**: `55d3` названо в його таблиці поіменно, а `CH9102F` (`55d4`) потрапляє під загальний запис `USB_CLASS_COMM`.
 Наслідок, якого в книзі немає й який суперечить її ж правилу: порт з'являється як **`/dev/ttyACM*`**, а не `/dev/ttyUSB*`. Розділ 09 навчає, що `ttyACM` означає native USB (S3, C3). Читач із classic-платою на CH9102 побачить `ttyACM0` і зробить хибний висновок про сам чип. Винесено окремою знахідкою.
-- **Прохід:** m2-07-mosty-usb-uart
+- **Прохід:** m2-07-bridges-usb-uart
 
 ---
 
@@ -662,7 +662,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 - **Джерело:** WCH CH9102 / CH9102F datasheet
 - **Що шукати в джерелі:** Інформація про Windows драйвер для CH9102; розділи про драйвери та встановлення на Windows; як він відрізняється від CH340
 - **Нотатка:** CH9102 datasheet не дістається з dzherela-cache. Потребує окремого завантаження з wch.cn. Книга стверджує, що CH9102 потребує окремого драйвера від CH340 для Windows.
-- **Прохід:** m2-25-pidklyuchennya-09
+- **Прохід:** m2-25-wiring-09
 
 ---
 
@@ -708,7 +708,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 - **Спосіб і дата:** raw.githubusercontent.com/torvalds/linux/master, суцільна перевірка 52 драйверів `drivers/usb/serial/`, 2026-08-26
 - **Нотатка:** «У ядрі» для CH9102 правда, але не тим драйвером, який очікує читач. Сімейство CH343/CH9102 підхоплює **клас-драйвер `cdc_acm`**: `55d3` названо в його таблиці поіменно, а `CH9102F` (`55d4`) потрапляє під загальний запис `USB_CLASS_COMM`.
 Наслідок, якого в книзі немає й який суперечить її ж правилу: порт з'являється як **`/dev/ttyACM*`**, а не `/dev/ttyUSB*`. Розділ 09 навчає, що `ttyACM` означає native USB (S3, C3). Читач із classic-платою на CH9102 побачить `ttyACM0` і зробить хибний висновок про сам чип. Винесено окремою знахідкою.
-- **Прохід:** m2-07-mosty-usb-uart
+- **Прохід:** m2-07-bridges-usb-uart
 
 ---
 
@@ -748,7 +748,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > #define FTDI_8U232AM_PID 0x6001 /* Similar device to SIO above */
 - **Спосіб і дата:** raw.githubusercontent.com/torvalds/linux/master, 2026-08-26
 - **Нотатка:** `0x0403:0x6001` — ідентифікатор, під яким визначається FT232RL; драйвер `ftdi_sio` у дереві ядра.
-- **Прохід:** m2-07-mosty-usb-uart
+- **Прохід:** m2-07-bridges-usb-uart
 
 ---
 
@@ -785,7 +785,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 - **Джерело:** FTDI FT232RL USB UART IC datasheet
 - **Що шукати в джерелі:** Інформація про Windows драйвер для FT232RL; розділи про драйвери та встановлення
 - **Нотатка:** FT232RL datasheet не дістається з dzherela-cache. Потребує окремого завантаження з ftdichip.com. Книга говорить про драйвер FTDI для Windows.
-- **Прохід:** m2-25-pidklyuchennya-09
+- **Прохід:** m2-25-wiring-09
 
 ---
 
@@ -825,7 +825,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > #define FTDI_8U232AM_PID 0x6001 /* Similar device to SIO above */
 - **Спосіб і дата:** raw.githubusercontent.com/torvalds/linux/master, 2026-08-26
 - **Нотатка:** `0x0403:0x6001` — ідентифікатор, під яким визначається FT232RL; драйвер `ftdi_sio` у дереві ядра.
-- **Прохід:** m2-07-mosty-usb-uart
+- **Прохід:** m2-07-bridges-usb-uart
 
 ---
 
@@ -877,7 +877,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > "| `CH340`, `CH341` | WCH | Windows: з сайту WCH. Linux: у ядрі |"
 - **Спосіб і дата:** Таблиця в картці kartky/k03-pidkl.md, офіційні драйвери WCH, Linux kernel usb-serial документація, 2026-08-26
 - **Нотатка:** Драйвер CH340 вбудований в Linux з версії ~2.6.37. Windows драйвер офіційно розповсюджується SiLabs, не вільно (на відміну від CH9102, де драйвер окремий).
-- **Прохід:** m2-50-kartky
+- **Прохід:** m2-50-cards
 
 ---
 
@@ -907,7 +907,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > Людина ставить драйвер CH340, він не працює, і виникає висновок «плата бракована».
 - **Спосіб і дата:** не застосовується
 - **Нотатка:** Це не факт про мікросхему, а опис поведінки користувача та його висновку. Редакційна порада про частину лікування проблеми в налаштування, не в залізі. Клас E: редакційне рішення, порада.
-- **Прохід:** m2-25-pidklyuchennya-09
+- **Прохід:** m2-25-wiring-09
 
 ---
 
@@ -962,7 +962,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** Linux kernel документація про CDC-ACM та CH9102
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-09-pidklyuchennya
+- **Прохід:** queue-c-09-pidklyuchennya
 
 ---
 
@@ -1065,7 +1065,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > непрацездатними."
 - **Спосіб і дата:** Текст manual/09-pidklyuchennya.md, спостереження на ринку комплектуючих, 2026-08-26
 - **Нотатка:** Клас E: ринкове спостереження, яке автори підтримують з практичного досвіду. У 2014–2015 роках драйвер FTDI мав функцію виявлення підробок, що робило їх непрацездатними. Сьогодні це рідше, але факт залишається: FT232RL — популярний чип, і підробок на ринку немало.
-- **Прохід:** m2-51-mosty
+- **Прохід:** m2-51-bridges
 
 ---
 
@@ -1099,7 +1099,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > непрацездатними."
 - **Спосіб і дата:** Текст manual/09-pidklyuchennya.md, спостереження на ринку комплектуючих, 2026-08-26
 - **Нотатка:** Клас E: ринкове спостереження, яке автори підтримують з практичного досвіду. У 2014–2015 роках драйвер FTDI мав функцію виявлення підробок, що робило їх непрацездатними. Сьогодні це рідше, але факт залишається: FT232RL — популярний чип, і підробок на ринку немало.
-- **Прохід:** m2-51-mosty
+- **Прохід:** m2-51-bridges
 
 ---
 
@@ -1129,7 +1129,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** FTDI FT232 driver
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-09-pidklyuchennya
+- **Прохід:** queue-c-09-pidklyuchennya
 
 ---
 
@@ -1158,7 +1158,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > Under normal circumstances, the drivers should be bundled with an operating system and automatically installed upon connecting the board to the PC.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Document confirms Linux and other systems typically have drivers built in
-- **Прохід:** prochid-09-pidklyuchennya
+- **Прохід:** sweep-09-pidklyuchennya
 
 ---
 
@@ -1211,7 +1211,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > Один і той самий комп'ютер може дати `/dev/ttyUSB0` одній платі й `/dev/ttyUSB1` іншій, і після перевтикання номери міняються.
 - **Спосіб і дата:** не застосовується
 - **Нотатка:** Це поведінка операційної системи Linux при переборі портів, а не факт про мікросхему. Редакційна порада користувачам. Клас E: редакційне рішення, поза зовнішньою звіркою.
-- **Прохід:** m2-25-pidklyuchennya-09
+- **Прохід:** m2-25-wiring-09
 
 ---
 
@@ -1263,7 +1263,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > – USB Serial/JTAG controller
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
 - **Нотатка:** Обидва контролери присутні на ESP32-S3 та ESP32-C3 | Взірець прив’язано вручну 2026-08-27 до одиниць T-09-041: автоматичний ремонт кандидата не знайшов, бо назва запису й текст одиниці розійшлися словами.
-- **Прохід:** m2-detali-klasC
+- **Прохід:** m2-parts-class-c
 
 ---
 
@@ -1291,7 +1291,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > The {IDF_TARGET_NAME} supports the USB peripheral. In this case, the USB-to-UART bridge is not needed and the device can be flashed directly.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Document confirms bridge is not needed for chips with USB support
-- **Прохід:** prochid-09-pidklyuchennya
+- **Прохід:** sweep-09-pidklyuchennya
 
 ---
 
@@ -1319,7 +1319,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** POSIX Serial Interface Specification USB CDC ACM device driver
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-09-pidklyuchennya
+- **Прохід:** queue-c-09-pidklyuchennya
 
 ---
 
@@ -1370,7 +1370,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > The {IDF_TARGET_NAME} supports only *USB CDC and JTAG*.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Document confirms USB CDC standard support built into devices
-- **Прохід:** prochid-09-pidklyuchennya
+- **Прохід:** sweep-09-pidklyuchennya
 
 ---
 
@@ -1398,7 +1398,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
   > can be debugged without any additional chip. Only a USB cable connected to the D+/D- pins is necessary.
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що налагодження працює без додаткового обладнання, лише USB кабель.
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -1995,7 +1995,7 @@ sudo usermod -aG dialout $USER
   > Make sure you re-login to enable read and write permissions for the serial port.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** говорить про необхідність перезайти для застосування прав доступу
-- **Прохід:** prochid-09-pidklyuchennya
+- **Прохід:** sweep-09-pidklyuchennya
 
 ---
 
@@ -2023,7 +2023,7 @@ sudo usermod -aG dialout $USER
   > on Arch Linux this is done by adding the user to ``uucp`` group
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** говорить про групу uucp на Arch Linux
-- **Прохід:** prochid-09-pidklyuchennya
+- **Прохід:** sweep-09-pidklyuchennya
 
 ---
 
@@ -2203,7 +2203,7 @@ Device or resource busy
   > Close the serial terminal after verification that communication is working. If you keep the terminal session open, the serial port will be inaccessible for uploading firmware later.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** говорить про те, що порт неможливо використовувати, якщо його вже використовує інший процес
-- **Прохід:** prochid-09-pidklyuchennya
+- **Прохід:** sweep-09-pidklyuchennya
 
 ---
 
@@ -2438,7 +2438,7 @@ dmesg | tail -20
   > - if the board was reset after starting the terminal program
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** говорить про живлення як одну з причин проблем
-- **Прохід:** prochid-09-pidklyuchennya
+- **Прохід:** sweep-09-pidklyuchennya
 
 ---
 
@@ -2941,7 +2941,7 @@ CH9102 потребує іншого драйвера, ніж CH340, попри 
 - **Джерело:** WCH CH9102 / CH9102F datasheet та драйверне забезпечення
 - **Що шукати в джерелі:** Порівняння драйверів CH340 та CH9102; їхні відмінності та несумісність на рівні драйвера та встановлення
 - **Нотатка:** Це те саме твердження, що T-09-027, але коротша версія у розділі резюме. Потребує CH9102 datasheet та інформації про драйвери для обох чипів.
-- **Прохід:** m2-25-pidklyuchennya-09
+- **Прохід:** m2-25-wiring-09
 
 ---
 
@@ -2968,7 +2968,7 @@ DevKitC-1 роз'ємів два, і вони роблять різне.
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 board technical specifications
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-09-pidklyuchennya
+- **Прохід:** queue-c-09-pidklyuchennya
 
 ---
 

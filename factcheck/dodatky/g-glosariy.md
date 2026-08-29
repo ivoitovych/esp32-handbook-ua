@@ -169,7 +169,7 @@
   > викликаючи brownout перезавантаження.
 - **Спосіб і дата:** ESP32 документація та типові схеми живлення, 2026-08-26
 - **Нотатка:** Це частої причини невиправданих перезавантажень при використанні передавача. | Взірець перебудовано 2026-08-28: попередній мав альтернативу-течу (одне коротке слово чіпляло більше одиниць, ніж усі інші разом, — знахідка М1). Тепер прив'язаний до тексту одиниці.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -575,7 +575,7 @@
   > 1-Wire (Maxim): Обов'язково open-drain вихід і pull-up резистор.
 - **Спосіб і дата:** I²C spec (i2c-um10204.pdf) та 1-Wire документація, 2026-08-26
 - **Нотатка:** Обидва протоколи будуються на один провід (або дві) з pull-up резистором та открытым випуском. Це забезпечує можливість кількох пристроїв на одній лінії.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -630,7 +630,7 @@
   > 1-Wire (Maxim): Обов'язково open-drain вихід і pull-up резистор.
 - **Спосіб і дата:** I²C spec (i2c-um10204.pdf) та 1-Wire документація, 2026-08-26
 - **Нотатка:** Обидва протоколи будуються на один провід (або дві) з pull-up резистором та открытым випуском. Це забезпечує можливість кількох пристроїв на одній лінії.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -1643,7 +1643,7 @@
   > Low Dropout Voltage Regulator (LDO)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** voltage regulator — standard English electronics term, confirmed in ESP-IDF documentation
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -1816,7 +1816,7 @@
   При R1=20k, R2=10k: V_out = 5 × 10/30 ≈ 1.67 В
 - **Спосіб і дата:** Розрахунок за формулою дільника напруги, 2026-08-26
 - **Нотатка:** Взірець перебудовано 2026-08-28: попередній мав альтернативу-течу (одне коротке слово чіпляло більше одиниць, ніж усі інші разом, — знахідка М1). Тепер прив'язаний до тексту одиниці.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -2597,7 +2597,7 @@
   > building and flashing firmware onto an {IDF_TARGET_NAME} board
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** firmware — confirmed in ESP-IDF getting started documentation
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -2659,7 +2659,7 @@
   > Prepare binary executable images ready for flashing
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** image, binary — confirmed in esptool documentation describing firmware images
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -2721,7 +2721,7 @@
   > Build Your First Project
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** build — confirmed in ESP-IDF documentation section on building projects
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -3007,7 +3007,7 @@
   > Priority
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** priority — confirmed in FreeRTOS task priority documentation
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -3069,7 +3069,7 @@
   > Queue API
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** queue — confirmed in FreeRTOS queue API documentation; xQueueCreateWithCaps function
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -3131,7 +3131,7 @@
   > Semaphore API
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** semaphore — confirmed as dedicated section in FreeRTOS API documentation
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -3193,7 +3193,7 @@
   > mutexes or spinlocks if they require mutual exclusion
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** mutex — confirmed in FreeRTOS documentation discussing mutual exclusion
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -3255,7 +3255,7 @@
   > Event Group API
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** event group — confirmed as dedicated section in FreeRTOS API documentation
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -3317,7 +3317,7 @@
   > Time slicing is governed by a tick interrupt
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** interrupt — confirmed in FreeRTOS scheduler and interrupt handling documentation
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -3435,7 +3435,7 @@
   > Critical Sections
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** critical section — confirmed as dedicated section in FreeRTOS documentation
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -3777,7 +3777,7 @@
   > True atomic access to the same memory address is achieved via an atomic compare-and-swap instruction
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** atomic operation — confirmed in FreeRTOS critical section and spinlock documentation
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -3895,7 +3895,7 @@
   > avoid deadlocking when entering critical sections recursively
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** deadlock — confirmed in FreeRTOS critical section documentation
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -3957,7 +3957,7 @@
   > TLSP Deletion callbacks are run automatically when a task is deleted
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** callback — confirmed in FreeRTOS supplemental features documentation
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -4411,7 +4411,7 @@
   > When reproducible builds are enabled, the application built with ESP-IDF does not depend on the build environment
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** reproducible build — confirmed in ESP-IDF API guides
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -4557,7 +4557,7 @@
   > This example shows how to use the Wi-Fi Station functionality of the Wi-Fi driver of ESP for connecting to an Access Point.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** точка доступу - це Access Point, підтверджено в документації ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -4605,7 +4605,7 @@
   > This example shows how to use the Wi-Fi Station functionality
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** станція - це Station, підтверджено в документації ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -4653,7 +4653,7 @@
   > connected with #!/bin/test, aid = 1, channel 6, BW20, bssid = ac:9e:17:7e:31:40
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** канал - це channel, підтверджено в логах ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -4701,7 +4701,7 @@
   > security type: 3, phy: bgn, rssi: -68
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** рівень сигналу - це rssi (signal strength), підтверджено в логах ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -4833,7 +4833,7 @@
   > Estimated Distance - 5.07 meters
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** дальність - це distance, підтверджено в документації ESP-IDF FTM
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -4881,7 +4881,7 @@
   > If the station does not receive a beacon frame from the connected SoftAP during the inactive time
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** маячок - це beacon frame, підтверджено в ESP-IDF WiFi header
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -5013,7 +5013,7 @@
   > TOPIC=/topic/qos0
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** топік - це topic, підтверджено в логах ESP-IDF MQTT
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -5061,7 +5061,7 @@
   > sent subscribe successful
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підписка - це subscribe, підтверджено в документації ESP-IDF MQTT
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -5109,7 +5109,7 @@
   > sent publish successful, msg_id=41464
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** публікація - це publish, підтверджено в логах ESP-IDF MQTT
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -5157,7 +5157,7 @@
   > TLS connection with server verification using the certificate bundle
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** сертифікат - це certificate, підтверджено в документації ESP-IDF MQTT
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -5205,7 +5205,7 @@
   > Certificate Authorities (CAs) from the bundle
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** центр сертифікації - це certificate authority, підтверджено в документації ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -5253,7 +5253,7 @@
   > during the TLS handshake
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** рукостискання - це handshake, підтверджено в документації ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -5301,7 +5301,7 @@
   > req->allow_broadcast
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** широкомовна розсилка - це broadcast, підтверджено в ESP-IDF WiFi header
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -5473,7 +5473,7 @@
   > measuring analog signals from multiple input channels
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** напруга - це voltage, підтверджено в документації ESP-IDF ADC
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -5520,7 +5520,7 @@
   > higher current consumption
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** струм - це current, підтверджено в документації ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -5572,7 +5572,7 @@
   > Точність: типово 1–2% від вимірювання.
 - **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
 - **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики. | 2026-08-28: з взірця прибрано альтернативу-течу «струм» — саме слово чіпляло 112 одиниць, більше за всі інші разом, тобто підміняло взірець замість звужувати. Знахідка М1. Решта альтернатив тримає 46 одиниць.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -5619,7 +5619,7 @@
   > put the chip into Light-sleep mode to run an application at smallest possible power consumption
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** потужність - це power, підтверджено в документації ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -5830,7 +5830,7 @@
   > The range of the duty cycle values passed to functions depends on selected ``duty_resolution``
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** коефіцієнт заповнення - це duty cycle, підтверджено в документації ESP-IDF LEDC
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -5877,7 +5877,7 @@
   > resolution of the ADC result
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** роздільність - це resolution, підтверджено в документації ESP-IDF ADC
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -5924,7 +5924,7 @@
   > get more accurate output results
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** точність - це accuracy, підтверджено в документації ESP-IDF ADC калібрування
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -5971,7 +5971,7 @@
   > ADC calibration driver to minimize the effect of different reference voltages
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** калібрування - це calibration, підтверджено в документації ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -6018,7 +6018,7 @@
   > multisampling may also be used to further mitigate the effects of noise
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** усереднення - це averaging/multisampling, підтверджено в документації ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -6065,7 +6065,7 @@
   > Minimize Noise
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** шум - це noise, підтверджено в документації ESP-IDF ADC
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -6849,7 +6849,7 @@
   > Espressif IoT Development Framework
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** IDF = Espressif IoT Development Framework підтверджено офіційною документацією ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -6908,7 +6908,7 @@
   > FreeRTOS is an open source RTOS (real-time operating system)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** RTOS = real-time operating system підтверджено у офіційній документації FreeRTOS ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -7073,7 +7073,7 @@
   > Non-volatile storage (NVS)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ використовує "Non-volatile storage (NVS)" як основне поняття, що збігається з акронімом.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -7132,7 +7132,7 @@
   > Over The Air Updates (OTA)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** OTA = Over-The-Air підтверджено у заголовку офіційної документації ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -7191,7 +7191,7 @@
   > Analog to Digital Converter (ADC)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ використовує правильну термінологію.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -7356,7 +7356,7 @@
   > Universal Asynchronous Receiver/Transmitter (UART)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** UART = Universal Asynchronous Receiver/Transmitter підтверджено у офіційній документації ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -7521,7 +7521,7 @@
   > Inter-IC Sound (I2S)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** I²S = Inter-IC Sound підтверджено у заголовку офіційної документації ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -7642,7 +7642,7 @@
   > JTAG (Joint Test Action Group) interface
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** JTAG = Joint Test Action Group підтверджено у документації налагодження ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -7860,7 +7860,7 @@
   > external PSRAM (Psuedostatic RAM) memory
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Хоча написано як "Psuedostatic" без дефіса, це той же термін.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -8025,7 +8025,7 @@
   > Ultra Low Power (ULP) coprocessor
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ULP = Ultra-Low-Power підтверджено у документації ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -8084,7 +8084,7 @@
   > The purpose of a watchdog timer is to monitor the system's operation and automatically recover from software or hardware faults by restarting the system
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** WDT як Watchdog Timer підтверджено у офіційній документації ESP-IDF
-- **Прохід:** prochid-g-glosariy
+- **Прохід:** sweep-g-glosariy
 
 ---
 
@@ -8458,7 +8458,7 @@
   > 1-Wire (Maxim): Обов'язково open-drain вихід і pull-up резистор.
 - **Спосіб і дата:** I²C spec (i2c-um10204.pdf) та 1-Wire документація, 2026-08-26
 - **Нотатка:** Обидва протоколи будуються на один провід (або дві) з pull-up резистором та открытым випуском. Це забезпечує можливість кількох пристроїв на одній лінії.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -8515,7 +8515,7 @@
   > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
 - **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
 - **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 

@@ -596,7 +596,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
   > data can still be stored in encrypted form if NVS encryption is used together with {IDF_TARGET_NAME} flash encryption
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що шифрування NVS має сенс разом з Flash Encryption.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -764,7 +764,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
   > (за дорогих з великою смугою пропускання).
 - **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
 - **Нотатка:** Осцилограф необхідний для аналізу швидких або аналогових сигналів. Логічний аналізатор не замінює його для цих задач.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -838,7 +838,7 @@ OTA — це канал, яким у пристрій потрапляє код.
   > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** OTA описано як механізм, через який пристрій отримує дані для оновлення
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1046,7 +1046,7 @@ OTA — це канал, яким у пристрій потрапляє код.
   > eFuse bits can only be burned from 0 to 1, attempting to set any back to 0 will have no effect.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що біти пропалюються фізично й не скидаються.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1553,7 +1553,7 @@ OTA — це канал, яким у пристрій потрапляє код.
   > The verification of signed OTA updates can be performed even without enabling hardware secure boot.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує наявність механізмів безпеки для OTA.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 

@@ -58,7 +58,7 @@ import helper_dumps
 
 ROOT = Path(__file__).resolve().parent.parent
 GRUPY = ("manual", "kartky", "dodatky", "inserts")
-CIL = ROOT / "factcheck" / "BRIEF-SAMPLE.md"
+CIL = ROOT / "factcheck" / "reports" / "BRIEF-SAMPLE.md"
 
 NASINNYA = 20260826
 
@@ -236,7 +236,7 @@ ZAHOLOVOK_F = """# Наряд: випадкова вибірка класу `{kl
 
 """
 
-ZVIT = ROOT / "factcheck" / "MEASURE-NO-SIGNAL.md"
+ZVIT = ROOT / "factcheck" / "reports" / "MEASURE-NO-SIGNAL.md"
 
 RE_NE_TVERDZHENNYA = re.compile(
     r"не тверджен|самоопис|заголов|назв[ау] колонк|вступ до перел|підпис",

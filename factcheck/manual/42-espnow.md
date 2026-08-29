@@ -32,7 +32,7 @@ ESP-NOW — власний протокол Espressif для прямого об
   > ESP-NOW is a kind of connectionless Wi-Fi communication protocol that is defined by Espressif.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Документ каже "defined by Espressif", а не "власний протокол". Крім того, документ не згадує ESP8266.
-- **Прохід:** klas-f-42-espnow
+- **Прохід:** nosignal-42-espnow
 
 ---
 
@@ -151,7 +151,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
   > ESP-NOW is a kind of connectionless Wi-Fi communication protocol that is defined by Espressif. In ESP-NOW, application data is encapsulated in a vendor-specific action frame and then transmitted from one Wi-Fi device to another without connection.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP-NOW не потребує підключення до точки доступу, на відміну від звичайного Wi-Fi. Слово "connectionless" підтверджує, що ESP-NOW не робить нічого з того, що потрібно для звичайного Wi-Fi.
-- **Прохід:** klas-f-42-espnow
+- **Прохід:** nosignal-42-espnow
 
 ---
 
@@ -356,7 +356,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
   > As ESP-NOW is connectionless, the MAC header is a little different from that of standard frames. The FromDS and ToDS bits of FrameControl field are both 0. The first address field is set to the destination address. The second address field is set to the source address. The third address field is set to broadcast address (0xff:0xff:0xff:0xff:0xff:0xff).
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Документ підтверджує, що MAC адреси використовуються як адреси в ESP-NOW (поля destination address та source address).
-- **Прохід:** klas-f-42-espnow
+- **Прохід:** nosignal-42-espnow
 
 ---
 
@@ -795,7 +795,7 @@ esp_now_register_recv_cb(on_recv);
   > The receiving callback function also runs from the Wi-Fi task.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Документ явно говорить, що обробник прийому виконується в контексті задачі Wi-Fi, а не в перериванні.
-- **Прохід:** klas-f-42-espnow
+- **Прохід:** nosignal-42-espnow
 
 ---
 
@@ -1279,7 +1279,7 @@ ESP-NOW підтримує шифрування з ключами PMK і LMK.
   > The Wi-Fi device maintains a Primary Master Key (PMK) and several Local Master Keys (LMKs, each paired device has one LMK).
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Документ підтверджує, що ESP-NOW підтримує шифрування з використанням ключів PMK і LMK.
-- **Прохід:** klas-f-42-espnow
+- **Прохід:** nosignal-42-espnow
 
 ---
 
@@ -1378,7 +1378,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
   > If the LMK of the paired device is not set, the vendor-specific action frame will not be encrypted.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Документ говорить, що без встановленого LMK рамка не шифруватиметься, що означає передачу в відкритому вигляді.
-- **Прохід:** klas-f-42-espnow
+- **Прохід:** nosignal-42-espnow
 
 ---
 
@@ -1658,7 +1658,7 @@ ESP-NOW працював, партнери мусять бути **на тому
   > You can send ESP-NOW data via both the Station and the SoftAP interface.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Tverdzennya kazhе, shcho Wi-Fi ne vykorystovuietsia, ale dokumentsiia pokazuie, shcho mozhna vykorystovuvaty Stantsiju i SoftAP interfejsy
-- **Прохід:** klas-f-42-espnow
+- **Прохід:** nosignal-42-espnow
 
 ---
 
@@ -1934,7 +1934,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
   > порогові напруги логічних 5-вольтових входів.
 - **Спосіб і дата:** Типові дисплеї та их даташити, 2026-08-26
 - **Нотатка:** Важливо перевіряти паспорт конкретного дисплея, оскільки деякі варіанти (особливо OLED) можуть працювати при 3.3 В.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 

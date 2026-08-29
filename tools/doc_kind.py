@@ -82,10 +82,22 @@ POYASNENNYA = {
 def hto_pyshe() -> dict[str, set[str]]:
     """Документ → інструменти, що його переписують. За AST, не за очима."""
     out: dict[str, set[str]] = {}
+    nerozibrani: list[str] = []
     for p in sorted((ROOT / "tools").glob("*.py")):
         try:
             tree = ast.parse(p.read_text(encoding="utf-8"))
-        except SyntaxError:
+        except SyntaxError as e:
+            # Мовчазний `continue` тут коштував рівно те, чого цей файл
+            # і шукає. Під `-W error::SyntaxWarning` два тули з `\s` у
+            # рядку документації переставали розбиратися, doc_kind їх
+            # пропускав — і `UNREACHABLE-SOURCES.md` ставав `canonical`,
+            # бо тула, що його пише, для перевірки більше не існувала.
+            #
+            # Породжений документ, оголошений канонічним, — найдорожча
+            # з можливих помилок роду: його починають правити рукою.
+            print(f"   ✗ tools/{p.name}: не розбирається ({e}) — "
+                  f"рід документів, які він пише, не перевірено")
+            nerozibrani.append(p.name)
             continue
         stali: dict[str, str] = {}
         for n in ast.walk(tree):
@@ -159,17 +171,17 @@ def perevirka() -> list[str]:
         ye = poznaka(p)
         maye = rid_dokumenta(p, pyshe)
         if not ye:
-            bidy.append(f"{p.name}: немає позначки роду (мав би `{maye}`)")
+            bidy.append(f"{p.relative_to(FC)}: немає позначки роду (мав би `{maye}`)")
             continue
         rid, hvist = ye
         if rid != maye:
-            bidy.append(f"{p.name}: позначено `{rid}`, а насправді `{maye}`")
+            bidy.append(f"{p.relative_to(FC)}: позначено `{rid}`, а насправді `{maye}`")
             continue
         if rid == "generated":
             tuly = pyshe[p.name]
             if not any(f"tools/{t}.py" in hvist for t in tuly):
                 bidy.append(
-                    f"{p.name}: labelled generated, but the tool is not named — "
+                    f"{p.relative_to(FC)}: labelled generated, but the tool is not named — "
                     f"it is written by {', '.join(sorted(tuly))}")
     # Зворотний бік: щось переписує документ, а той про це не каже.
     for imya, tuly in sorted(pyshe.items()):
@@ -202,7 +214,7 @@ def rozstavyty() -> int:
         ryadky.insert(i, f"\n> **{rid}** — {hvist}")
         p.write_text("\n".join(ryadky), encoding="utf-8")
         n += 1
-        print(f"  {rid:<12} {p.name}")
+        print(f"  {rid:<12} {p.relative_to(FC)}")
     print(f"позначено документів: {n}")
     return 0
 

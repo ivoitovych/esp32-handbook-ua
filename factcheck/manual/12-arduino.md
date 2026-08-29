@@ -112,7 +112,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
   > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
 - **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
 - **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -145,7 +145,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
   >   &loopTaskHandle, ARDUINO_RUNNING_CORE);
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP-IDF app_main creates FreeRTOS loopTask, setup() called once, loop() in infinite for loop
-- **Прохід:** prochid-12-arduino
+- **Прохід:** sweep-12-arduino
 
 ---
 
@@ -254,7 +254,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
   > xTaskCreateUniversal(loopTask, "loopTask", getArduinoLoopTaskStackSize(), NULL, 1, &loopTaskHandle, ARDUINO_RUNNING_CORE);
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** loop is created as a FreeRTOS task using xTaskCreateUniversal at startup, confirming it is a regular FreeRTOS task with its own stack and priority
-- **Прохід:** klas-f-12-arduino
+- **Прохід:** nosignal-12-arduino
 
 ---
 
@@ -286,7 +286,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
   > ESP-IDF та забезпечує їх доступність у контексті Arduino скетчів.
 - **Спосіб і дата:** Дослідження Arduino ESP32 Core документації та вихідного коду
 - **Нотатка:** Це логічно випливає з архітектури Arduino core для ESP32, яка побудована на ESP-IDF. Твердження є точним, оскільки Arduino core експортує ESP-IDF функції для використання в скетчах. Однак прямої цитати з однієї джерела не знайдено, тому клас B (логічно випливає, але без дослівної цитати). | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-91-vybirka
+- **Прохід:** m2-91-sample
 
 ---
 
@@ -432,7 +432,7 @@ API: MCPWM, PCNT, TWAI, тонке керування живленням.
   > порогові напруги логічних 5-вольтових входів.
 - **Спосіб і дата:** Типові дисплеї та их даташити, 2026-08-26
 - **Нотатка:** Важливо перевіряти паспорт конкретного дисплея, оскільки деякі варіанти (особливо OLED) можуть працювати при 3.3 В.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -747,7 +747,7 @@ IDE (розділ 26).
 - **Джерело:** Arduino документація та ESP-IDF Programming Guide
 - **Що шукати в джерелі:** Документація про портування коду AVR на ESP32, обмеження пам'яті AVR
 - **Нотатка:** Твердження про типові проблеми портування Arduino коду з AVR. Логіка витримується: мікроконтролери AVR мають обмежену пам'ять (2 КБ SRAM на Atmega328) та використовують блокувальні delay(). Потребує офіційної цитати для класу B.
-- **Прохід:** m2-98-vybirka
+- **Прохід:** m2-98-sample
 
 ---
 
@@ -779,7 +779,7 @@ IDE (розділ 26).
   > Типово 94 мс для 12-бітного розрізнення (за замовчуванням)
 - **Спосіб і дата:** DS18B20 datasheet, практика
 - **Нотатка:** 750 мс — це максимальний час перетворення температури в DS18B20. Це стандартне значення, на яке спираються більшість бібліотек. Arduino бібліотеки часто використовують 750 мс для безпеки.
-- **Прохід:** m2-81-sensory-lora
+- **Прохід:** m2-81-sensors-lora
 
 ---
 
@@ -855,7 +855,7 @@ Arduino core версії 3.x — велике оновлення: він пер
   > version 3.0 (based on ESP-IDF 5.1) of the Arduino ESP32 core
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Документ явно підтверджує, що Arduino core версії 3.0 переїхав на ESP-IDF 5.1
-- **Прохід:** klas-f-12-arduino
+- **Прохід:** nosignal-12-arduino
 
 ---
 
@@ -1207,7 +1207,7 @@ URL. Годиться для навчання і швидких перевіро
   > You can use the Arduino framework as an ESP-IDF component. This allows you to use the Arduino framework in your ESP-IDF projects
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Документ явно описує використання Arduino як компоненту ESP-IDF проєкту
-- **Прохід:** klas-f-12-arduino
+- **Прохід:** nosignal-12-arduino
 
 ---
 
@@ -1237,7 +1237,7 @@ URL. Годиться для навчання і швидких перевіро
   > For usage of ``setup()`` and ``loop()`` functions - Turn on ``Autostart Arduino setup and loop on boot``
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Документ підтверджує, що при використанні Arduino як компоненту ESP-IDF доступні setup/loop та menuconfig з усіма можливостями ESP-IDF включаючи діагностику
-- **Прохід:** klas-f-12-arduino
+- **Прохід:** nosignal-12-arduino
 
 ---
 
@@ -1514,7 +1514,7 @@ URL. Годиться для навчання і швидких перевіро
   > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує OTA як механізм у ESP-IDF.
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -1551,7 +1551,7 @@ URL. Годиться для навчання і швидких перевіро
   > Arduino as an ESP-IDF component
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує можливість використання Arduino як компонента ESP-IDF для переведення прототипу до виробництва
-- **Прохід:** prochid-12-arduino
+- **Прохід:** sweep-12-arduino
 
 ---
 
@@ -1602,7 +1602,7 @@ Arduino core — це шар над ESP-IDF, а не окрема платфор
   > }
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Функція delay() використовує vTaskDelay(), яка призводить передачу керування планувальнику FreeRTOS, а не блокує систему. Крім того, у main.cpp loop виконується в завданні FreeRTOS під назвою "loopTask".
-- **Прохід:** klas-f-12-arduino
+- **Прохід:** nosignal-12-arduino
 
 ---
 
@@ -1674,6 +1674,6 @@ Arduino core — це шар над ESP-IDF, а не окрема платфор
   > Arduino as an ESP-IDF component
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що прототип на Arduino можна привести до виробництва підключенням його як компонента ESP-IDF без переписування
-- **Прохід:** prochid-12-arduino
+- **Прохід:** sweep-12-arduino
 
 ---

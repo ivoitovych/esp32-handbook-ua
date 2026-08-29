@@ -250,7 +250,7 @@
   > { USB_DEVICE(0x10C4, 0xEA60) }, /* Silicon Labs factory default */
 - **Спосіб і дата:** raw.githubusercontent.com/torvalds/linux/master, 2026-08-26
 - **Нотатка:** Обидві половини рядка книги підтверджено з одного місця: вендор `0x10C4` — Silicon Labs, і драйвер `cp210x` входить у дерево ядра, тобто «у ядрі» точне.
-- **Прохід:** m2-07-mosty-usb-uart
+- **Прохід:** m2-07-bridges-usb-uart
 
 ---
 
@@ -291,7 +291,7 @@
   > "| `CP2102`, `CP2102N` | Silicon Labs | Windows: з сайту SiLabs. Linux: у ядрі |"
 - **Спосіб і дата:** Таблиця в картці kartky/k03-pidkl.md, офіційні драйвери на сайтах виробників, 2026-08-26
 - **Нотатка:** Факт про наявність драйвера в ядрі Linux підтверджується документацією SiLabs і практичним досвідом користувачів. Дослівне цитування з таблиці.
-- **Прохід:** m2-50-kartky
+- **Прохід:** m2-50-cards
 
 ---
 
@@ -335,7 +335,7 @@
   > MODULE_DESCRIPTION("Winchiphead CH341 USB Serial driver");
 - **Спосіб і дата:** raw.githubusercontent.com/torvalds/linux/master, 2026-08-26
 - **Нотатка:** `0x1a86:0x7523` — це CH340, `0x1a86:0x5523` — CH341. Ім'я виробника стверджує сам опис модуля: Winchiphead, тобто WCH.
-- **Прохід:** m2-07-mosty-usb-uart
+- **Прохід:** m2-07-bridges-usb-uart
 
 ---
 
@@ -376,7 +376,7 @@
   > "| `CH340`, `CH341` | WCH | Windows: з сайту WCH. Linux: у ядрі |"
 - **Спосіб і дата:** Таблиця в картці kartky/k03-pidkl.md, офіційні драйвери WCH, Linux kernel usb-serial документація, 2026-08-26
 - **Нотатка:** Драйвер CH340 вбудований в Linux з версії ~2.6.37. Windows драйвер офіційно розповсюджується SiLabs, не вільно (на відміну від CH9102, де драйвер окремий).
-- **Прохід:** m2-50-kartky
+- **Прохід:** m2-50-cards
 
 ---
 
@@ -423,7 +423,7 @@
 - **Спосіб і дата:** raw.githubusercontent.com/torvalds/linux/master, суцільна перевірка 52 драйверів `drivers/usb/serial/`, 2026-08-26
 - **Нотатка:** «У ядрі» для CH9102 правда, але не тим драйвером, який очікує читач. Сімейство CH343/CH9102 підхоплює **клас-драйвер `cdc_acm`**: `55d3` названо в його таблиці поіменно, а `CH9102F` (`55d4`) потрапляє під загальний запис `USB_CLASS_COMM`.
 Наслідок, якого в книзі немає й який суперечить її ж правилу: порт з'являється як **`/dev/ttyACM*`**, а не `/dev/ttyUSB*`. Розділ 09 навчає, що `ttyACM` означає native USB (S3, C3). Читач із classic-платою на CH9102 побачить `ttyACM0` і зробить хибний висновок про сам чип. Винесено окремою знахідкою.
-- **Прохід:** m2-07-mosty-usb-uart
+- **Прохід:** m2-07-bridges-usb-uart
 
 ---
 
@@ -461,7 +461,7 @@
 - **Джерело:** WCH CH9102 datasheet
 - **Що шукати в джерелі:** Інформація про Windows драйвер для CH9102; розділи про встановлення та драйвери; як відрізняється від CH340
 - **Нотатка:** На К03 сформульовано компактніше, ніж у manual/09, але той самий факт. Потребує CH9102 datasheet від WCH.
-- **Прохід:** m2-26-k03-i-platy
+- **Прохід:** m2-26-k03-and-boards
 
 ---
 
@@ -500,7 +500,7 @@
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 S3 C3 USB specifications
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-k03-pidkl
+- **Прохід:** queue-c-k03-pidkl
 
 ---
 
@@ -569,7 +569,7 @@ Windows: `Диспетчер пристроїв` → жовтий знак ок�
   > Check the list of identified COM ports in the Windows Device Manager. Disconnect {IDF_TARGET_NAME} and connect it back, to verify which port disappears from the list and then shows back again.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** довідник підтверджує, що жовтий знак у диспетчері означає драйвер
-- **Прохід:** prochid-k03-pidkl
+- **Прохід:** sweep-k03-pidkl
 
 ---
 
@@ -620,7 +620,7 @@ Windows: `Диспетчер пристроїв` → жовтий знак ок�
   > Adding User to ``dialout`` or ``uucp`` on Linux
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ пояснює проблему Permission denied та як її вирішити
-- **Прохід:** prochid-k03-pidkl
+- **Прохід:** sweep-k03-pidkl
 
 ---
 
@@ -790,7 +790,7 @@ sudo usermod -aG dialout $USER
   > Close the serial terminal after verification that communication is working. If you keep the terminal session open, the serial port will be inaccessible for uploading firmware later.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ пояснює, що порт може бути зайнятий іншою програмою, якщо монітор залишається відкритим
-- **Прохід:** prochid-k03-pidkl
+- **Прохід:** sweep-k03-pidkl
 
 ---
 

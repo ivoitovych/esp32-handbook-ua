@@ -55,7 +55,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-CIL = ROOT / "factcheck" / "SWEEP-NO-SIGNAL.md"
+CIL = ROOT / "factcheck" / "reports" / "SWEEP-NO-SIGNAL.md"
 
 # Кандидати на перевірку третім шаром. Не реєстр і не докази: сюди
 # лягають самі лише `znayshov`, переведені у форму запису доказу, щоб

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Coverage: is every line of the book accounted for by a card?
+r"""Coverage: is every line of the book accounted for by a card?
 
 ## The question this asks, and the one it does not
 

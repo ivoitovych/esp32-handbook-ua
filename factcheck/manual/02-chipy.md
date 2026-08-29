@@ -60,7 +60,7 @@
   > Характеристики: 24 МГц дискретизація, 8 каналів
 - **Спосіб і дата:** Розпитування онлайн-маркетплейсів та каталогів, 2026-08-26
 - **Нотатка:** Це реальна ціна за простий аналізатор. Дорожчі варіанти (1000+ грн) мають вищу дискретизацію та більше функцій.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -354,7 +354,7 @@
   > single-core microprocessor (Xtensa® 32-bit LX7)
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 
@@ -477,7 +477,7 @@
   > RISC-V single-core microprocessor
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 
@@ -522,7 +522,7 @@
   > RISC-V 32-bit single-core microprocessor
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 
@@ -566,7 +566,7 @@
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 dual-core processor specifications
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-02-chipy
+- **Прохід:** queue-c-02-chipy
 
 ---
 
@@ -650,7 +650,7 @@
   > Xtensa® 32-bit LX7 dual-core microprocessor
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 
@@ -830,7 +830,7 @@
   > 1 core at 240 MHz
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 
@@ -953,7 +953,7 @@
   > Clock speed: up to 160 MHz
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 
@@ -1037,7 +1037,7 @@
   > 96 MHz internal PLL clock
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 
@@ -1082,7 +1082,7 @@
   > 520 KB SRAM
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 
@@ -1127,7 +1127,7 @@
   > SRAM: 320 KB
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 
@@ -1172,7 +1172,7 @@
   > SRAM: 512 KB
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 
@@ -1218,7 +1218,7 @@
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
 Даташит додає «(16 KB for cache)» — книга дає 400 як повний обсяг SRAM, і це те саме число.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 
@@ -1264,7 +1264,7 @@
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
 У C6 памʼять поділена на HP і LP; книга дає 512, і це HP SRAM.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 
@@ -1654,7 +1654,7 @@
   > #define SOC_WIFI_SUPPORTED          1
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP32 has WiFi support defined in SoC capabilities
-- **Прохід:** klas-f-02-chipy
+- **Прохід:** nosignal-02-chipy
 
 ---
 
@@ -1699,7 +1699,7 @@
   > #define SOC_WIFI_SUPPORTED              1
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** S2 has WiFi support defined in SoC capabilities
-- **Прохід:** klas-f-02-chipy
+- **Прохід:** nosignal-02-chipy
 
 ---
 
@@ -1744,7 +1744,7 @@
   > #define SOC_WIFI_SUPPORTED              1
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** S3 has WiFi support defined in SoC capabilities
-- **Прохід:** klas-f-02-chipy
+- **Прохід:** nosignal-02-chipy
 
 ---
 
@@ -1891,7 +1891,7 @@
   > #define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy hardware */
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** H2 SoC capabilities file shows only BLE support, no WIFI_SUPPORTED macro
-- **Прохід:** klas-f-02-chipy
+- **Прохід:** nosignal-02-chipy
 
 ---
 
@@ -2260,7 +2260,7 @@
   > #define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy hardware */
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP32 has BLE support defined in SoC capabilities
-- **Прохід:** klas-f-02-chipy
+- **Прохід:** nosignal-02-chipy
 
 ---
 
@@ -2305,7 +2305,7 @@
   > #define SOC_WIFI_SUPPORTED              1
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** S2 SoC capabilities file shows only WiFi support, no BLE_SUPPORTED macro
-- **Прохід:** klas-f-02-chipy
+- **Прохід:** nosignal-02-chipy
 
 ---
 
@@ -2398,7 +2398,7 @@
   > #define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy hardware */
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** C3 has BLE support defined in SoC capabilities
-- **Прохід:** klas-f-02-chipy
+- **Прохід:** nosignal-02-chipy
 
 ---
 
@@ -3405,7 +3405,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
   Для 40 МГц сигналу: f_nyquist = 80 МГц
   24 МГц < 80 МГц ⟹ недостатньо
 - **Спосіб і дата:** Розрахунок на основі Теореми Найквіста, 2026-08-26
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -3689,7 +3689,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
   > • SRAM: 400 KB (16 KB for cache)
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
 - **Нотатка:** Datasheet підтверджує 400 КБ SRAM. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-detali-klasC
+- **Прохід:** m2-parts-class-c
 
 ---
 
@@ -3742,7 +3742,7 @@ ESP32, S2 і S3 побудовані на ядрах Xtensa; C3, C6, H2 і ре�
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
 ШІСТЬ чипів у твердженні. Xtensa: ESP32, S2 «(Xtensa® 32-bit LX7)», S3 «Xtensa® 32-bit LX7 dual-core». RISC-V: C3, C6 «RISC-V single-core microprocessor», H2 «RISC-V 32-bit single-core microprocessor». МЕЖА: «і решта нової лінійки» — узагальнення на чипи, паспортів яких тут немає; воно не звірене, і це сказано.
-- **Прохід:** m2-99-peryferiya-yadra
+- **Прохід:** m2-99-peripherals-cores
 
 ---
 
@@ -3865,7 +3865,7 @@ Espressif послідовно переходить на RISC-V у нових ч
   > The FreeRTOS kernel is ported to all architectures (i.e., Xtensa and RISC-V) available of ESP chips.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** FreeRTOS is a common base across all ESP chips, supporting portable application code
-- **Прохід:** klas-f-02-chipy
+- **Прохід:** nosignal-02-chipy
 
 ---
 
@@ -3894,7 +3894,7 @@ Espressif послідовно переходить на RISC-V у нових ч
   > For specific details about connecting the SoC or module pins to an external PSRAM chip, consult the SoC or module datasheet.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ адресує差異 в розпінуванні залежно від конфігурації.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -3944,7 +3944,7 @@ Espressif послідовно переходить на RISC-V у нових ч
   > This command sets the current project target.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Потвердив comando set-target для перемикання чипа проєкту
-- **Прохід:** klas-f-02-chipy
+- **Прохід:** nosignal-02-chipy
 
 ---
 
@@ -4094,7 +4094,7 @@ idf.py set-target esp32s3
   > idf.py set-target`` will clear the build directory and re-generate the ``sdkconfig`` file from scratch.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Коли set-target перестворює sdkconfig з нуля, усі налаштування menuconfig повертаються до типових
-- **Прохід:** klas-f-02-chipy
+- **Прохід:** nosignal-02-chipy
 
 ---
 
@@ -4152,7 +4152,7 @@ idf.py set-target esp32s3
   > For example projects or other projects where you dont want to specify a full sdkconfig configuration, but you do want to override some key values from the ESP-IDF defaults, it is possible to create a file sdkconfig.defaults in the project directory. This file will be used when creating a new config from scratch, or when any new config value hasnt yet been set in the sdkconfig file.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Потвердив що sdkconfig.defaults зберігає налаштування при перестворенні конфігурації
-- **Прохід:** klas-f-02-chipy
+- **Прохід:** nosignal-02-chipy
 
 ---
 
@@ -4183,7 +4183,7 @@ idf.py set-target esp32s3
   > 915 МГц — США/Японія
 - **Спосіб і дата:** SX1276 datasheet, ISM frequency regulations
 - **Нотатка:** Частоти LoRa модулів відповідають регіональним ISM смугам. 433 МГц і 868 МГц для Європи, 915 МГц для США. Антена на одній частоті не працюватиме оптимально на іншій.
-- **Прохід:** m2-81-sensory-lora
+- **Прохід:** m2-81-sensors-lora
 
 ---
 
@@ -4233,7 +4233,7 @@ idf.py set-target esp32s3
   > 2.4 and 5 GHz dual-band Wi-Fi 6 (802.11ax)
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
 - **Нотатка:** Датаsheet прямо підтверджує наявність Wi-Fi у двох діапазонах (2.4 ГГц та 5 ГГц) | Взірець прив’язано вручну 2026-08-27 до одиниць T-02-108: автоматичний ремонт кандидата не знайшов, бо назва запису й текст одиниці розійшлися словами.
-- **Прохід:** m2-detali-klasC
+- **Прохід:** m2-parts-class-c
 
 ---
 
@@ -4728,7 +4728,7 @@ S3. Актуальна наявність — у датованому вклад
   > 400 KB of on-chip SRAM: for data and instructions
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
 - **Нотатка:** Datasheet підтверджує 400 КБ SRAM. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-detali-klasC
+- **Прохід:** m2-parts-class-c
 
 ---
 
@@ -4853,7 +4853,7 @@ S3. Актуальна наявність — у датованому вклад
   > порогові напруги логічних 5-вольтових входів.
 - **Спосіб і дата:** Типові дисплеї та их даташити, 2026-08-26
 - **Нотатка:** Важливо перевіряти паспорт конкретного дисплея, оскільки деякі варіанти (особливо OLED) можуть працювати при 3.3 В.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -4900,7 +4900,7 @@ S3. Актуальна наявність — у датованому вклад
   > порогові напруги логічних 5-вольтових входів.
 - **Спосіб і дата:** Типові дисплеї та их даташити, 2026-08-26
 - **Нотатка:** Важливо перевіряти паспорт конкретного дисплея, оскільки деякі варіанти (особливо OLED) можуть працювати при 3.3 В.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -5024,7 +5024,7 @@ S3. Актуальна наявність — у датованому вклад
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
 ДВА чипи в одному твердженні, тож не verbatim. C6: «Zigbee and Thread (802.15.4)». H2 (source-cache/7f786a8e-esp32-h2_datasheet_en.pdf): «Supports Thread 1.4». МЕЖА: Matter жодним із двох даташитів дослівно не названо — Matter це шар над Thread, і в паспорті кристала його бути не мусить. Ця третина твердження лишається незвіреною, і це сказано, а не приховано.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 
@@ -5231,7 +5231,7 @@ S3. Актуальна наявність — у датованому вклад
   > 1T1R in 2.4 and 5 GHz dual band
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
 - **Нотатка:** Датаsheet підтверджує наявність 5 ГГц мережі на чипі C5 | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-detali-klasC
+- **Прохід:** m2-parts-class-c
 
 ---
 
@@ -5316,7 +5316,7 @@ S3. Актуальна наявність — у датованому вклад
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
 ДВА чипи в одному твердженні. S3: «USB Serial/JTAG controller». C3 (source-cache/7b031b82-esp32-c3_datasheet_en.pdf): «Full-speed USB Serial/JTAG controller». Обидва мають вбудований контролер, тобто адаптер не потрібен.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 
@@ -5498,7 +5498,7 @@ Bluetooth Classic — лише classic. S2 без Bluetooth узагалі. З �
 - **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`). Клас `verbatim` означає, що документ отримано й цитата точна — не те, що супровідник прочитав уривок і погодився.
 - **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах): у М1 espressif.com віддає 403, у мене ці паспорти в кеші. Було: клас F.
 Заперечне твердження дослівно довести не можна: рядка «no Bluetooth» у паспорті немає й бути не може. Доводиться зіставленням: власний перелік можливостей S2 називає ЛИШЕ «2.4 GHz Wi-Fi (802.11 b/g/n)», тоді як ESP32 на першій сторінці — «Wi-Fi + Bluetooth + Bluetooth LE SoC», а C6 — «Bluetooth 5 (LE)». Слово Bluetooth у паспорті S2 трапляється чотири рази: двічі в переліку застосувань («Wi-Fi + Bluetooth Networking Card», де Bluetooth дає окремий чип) і двічі в рядку про торгові марки. Жодного разу — як можливість кристала.
-- **Прохід:** m2-98-chipy-dashyty
+- **Прохід:** m2-98-chips-datasheets
 
 ---
 

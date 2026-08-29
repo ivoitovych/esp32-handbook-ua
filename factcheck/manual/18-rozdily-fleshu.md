@@ -34,7 +34,7 @@
   > Select the application partition to boot, based on the partition table and ota_data (if any);
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що флеш містить partition table та різні області, хоча явно не описує всі компоненти.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -94,7 +94,7 @@
   > Each entry in the partition table has a name (label), type (app, data, or something else), subtype and the offset in flash where the partition is loaded.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що розбивка - це те, що більшість не змінює, поки застосунок не переріс
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -196,7 +196,7 @@
   > partition table at runtime, is appended after the table data. Thus, the
   > partition table occupies an entire flash sector, which size is 0x1000
   > (4 KB). As a result, any partition following it must be at least
-  > located at (default offset) + 0x1000.
+  > The partition table length is 0xC00 bytes, as we allow a maximum of 95 entries. An MD5 checksum, used for checking the integrity of the partition table at runtime, is appended after the table data. Thus, the partition table occupies an entire flash sector, which size is 0x1000 (4 KB). As a result, any partition following it must be at least located at (:ref:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`) + 0x1000.
   > 
   > (Kconfig.projbuild)
   > config PARTITION_TABLE_OFFSET
@@ -208,7 +208,7 @@
   >         for the bootloader.
   > 
   > (bootloader.rst)
-  > When using the default CONFIG_PARTITION_TABLE_OFFSET value 0x8000, the
+  > When using the default :ref:`CONFIG_PARTITION_TABLE_OFFSET` value 0x8000, the size limit is {IDF_TARGET_CONFIG_PARTITION_TABLE_OFFSET} bytes.
   > size limit is … bytes.
   > If the bootloader binary is too large, then the bootloader build will
   > fail with an error "Bootloader binary size [..] is too large for
@@ -217,7 +217,7 @@
   > - Set bootloader compiler optimization back to "Size" …
   > - Reduce bootloader log level …
   > - Set CONFIG_PARTITION_TABLE_OFFSET to a higher value than 0x8000 …
-  >   no partition has an offset lower than CONFIG_PARTITION_TABLE_OFFSET
+  > - Set :ref:`CONFIG_PARTITION_TABLE_OFFSET` to a higher value than 0x8000, to place the partition table later in the flash. This increases the space available for the bootloader. If the :doc:`partition table </api-guides/partition-tables>` CSV file contains explicit partition offsets, they will need changing so no partition has an offset lower than ``CONFIG_PARTITION_TABLE_OFFSET + 0x1000``. (This includes the default partition CSV files supplied with ESP-IDF.)
   >   + 0x1000.
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
 - **Нотатка:** Друга хибна причина, і цього разу вона мешкала в `docs/fakty.md`: «типовий ліміт розміру самої таблиці — `0x7000` (28 672 байти)».
@@ -288,7 +288,7 @@
   > # ESP-IDF Partition Table # Name,   Type, SubType, Offset,  Size, Flags nvs,      data, nvs,     0x9000,  0x6000, phy_init, data, phy,     0xf000,  0x1000, factory,  app,  factory, 0x10000, 1M,
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** наведено типову розбивку без OTA
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -321,7 +321,7 @@
   > Name,   Type, SubType, Offset,  Size, Flags
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує формат таблиці розділів з колонками Назва, Тип, Підтип, Зсув, Розмір
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -360,7 +360,7 @@
   > The library uses all the partitions with data type and nvs subtype.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ явно стверджує, що NVS використовує розділи з типом data.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -399,7 +399,7 @@
   > The library uses all the partitions with data type and nvs subtype.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що NVS використовує розділи з типом data та підтипом nvs.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -439,7 +439,7 @@
   > factory,  app,  factory, 0x10000, 1M,
 - **Спосіб і дата:** curl esp-idf partition-tables.rst, grep partition, 2026-08-26
 - **Нотатка:** Розділ 18 показує типову таблицю розділів. Джерело підтверджує: nvs на 0x9000, factory на 0x10000. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-82-boot-flesh
+- **Прохід:** m2-82-boot-flash
 
 ---
 
@@ -534,7 +534,7 @@
   > phy_init, data, phy,     0xf000,  0x1000,
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** phy_init має тип data у таблиці розділів
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -573,7 +573,7 @@
   > phy_init, data, phy,     0xf000,  0x1000,
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** phy_init має підтип phy у таблиці розділів
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -719,7 +719,7 @@
   > factory,  app,  factory, 0x10000, 1M,
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** factory має тип app у таблиці розділів
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -758,7 +758,7 @@
   > factory,  app,  factory, 0x10000, 1M,
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** factory має підтип factory у таблиці розділів
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -798,7 +798,7 @@
   > factory,  app,  factory, 0x10000, 1M,
 - **Спосіб і дата:** curl esp-idf partition-tables.rst, grep partition, 2026-08-26
 - **Нотатка:** Розділ 18 показує типову таблицю розділів. Джерело підтверджує: nvs на 0x9000, factory на 0x10000. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-82-boot-flesh
+- **Прохід:** m2-82-boot-flash
 
 ---
 
@@ -899,7 +899,7 @@
   > In both cases the factory app is flashed at offset 0x10000
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** прямо підтверджує, що застосунок починається з адреси 0x10000
-- **Прохід:** presud-18-rozdily-fleshu
+- **Прохід:** verdict-18-rozdily-fleshu
 
 ---
 
@@ -974,7 +974,7 @@
   > Non-volatile storage (NVS) library is designed to store key-value pairs in flash.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що NVS — сховище пар ключ-значення. Приклади з wifi-намеспейсом і лічильником перезавантажень також знайдені.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1040,7 +1040,7 @@
   > phy`` (1) is for storing PHY initialisation data. This allows PHY to be configured per-device, instead of in firmware.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що phy_init зберігає калібрувальні дані радіо
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -1162,7 +1162,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує команду gen_esp32part.py
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1229,7 +1229,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує команду gen_esp32part.py
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1263,7 +1263,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
   > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
 - **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
 - **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -1312,7 +1312,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
   > If you configure the partition table CSV name in the project configuration (``idf.py menuconfig``) and then build the project
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що розбивка задається текстовим CSV файлом
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -1650,7 +1650,7 @@ storage,  data, spiffs,  ,         1M,
   > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
 - **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
 - **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -1680,7 +1680,7 @@ NVS (Non-Volatile Storage) — сховище пар «ключ — значен
   > Non-volatile storage (NVS) library is designed to store key-value pairs in flash.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що NVS — сховище пар ключ-значення з підтримкою намеспейсів.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1780,7 +1780,7 @@ NVS стійкий до зникнення живлення: запис влаш
   > The library does try to recover from conditions when flash memory is in an inconsistent state. In particular, one should be able to power off the device at any point and time and then power it back on. This should not result in loss of data, except for the new key-value pair if it was being written at the moment of powering off.
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Підтверджує стійкість до зникнення живлення.
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -2094,7 +2094,7 @@ ESP_ERROR_CHECK(err);
   > The partition can be used to store data that is not expected to change, such as calibration data or factory settings.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ явно згадує, що калібрування може зберігатися у спеціальному розділі, не очікуючи змін.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -2121,7 +2121,7 @@ ESP_ERROR_CHECK(err);
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32-IDF partition table specification
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-18-rozdily-fleshu
+- **Прохід:** queue-c-18-rozdily-fleshu
 
 ---
 
@@ -2583,7 +2583,7 @@ ESP_ERROR_CHECK(err);
   > When the filesystem is running out of space, the garbage collector is trying to find free space by scanning the filesystem multiple times, which can take up to several seconds per write function call
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Точне описання падіння швидкості SPIFFS при заповненні
-- **Прохід:** cherga-a-18-rozdily-fleshu
+- **Прохід:** queue-a-18-rozdily-fleshu
 
 ---
 
@@ -2625,7 +2625,7 @@ ESP_ERROR_CHECK(err);
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** FAT Specification
 - **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
-- **Прохід:** cherga-c-18-rozdily-fleshu
+- **Прохід:** queue-c-18-rozdily-fleshu
 
 ---
 
@@ -2816,7 +2816,7 @@ ESP_ERROR_CHECK(err);
   > spiffs`` (0x82) is for :doc:`/api-reference/storage/spiffs`
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** SPIFFS є частиною ESP-IDF, наведено посилання на внутрішню документацію
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -3071,7 +3071,7 @@ idf.py add-dependency "joltwallet/littlefs^1.22.3"
   > littlefs`` (0x83) is for `LittleFS filesystem
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що littlefs є дійсним типом розділу в CSV
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -3504,7 +3504,7 @@ Error: app partition is too small for binary app.bin size 0x123456
   > The simplest way to use the partition table is to open the project configuration menu (``idf.py menuconfig``) and choose one of the simple predefined partition tables
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує наявність готових розбивок різних розмірів
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -3542,7 +3542,7 @@ Error: app partition is too small for binary app.bin size 0x123456
   > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
 - **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
 - **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -3573,7 +3573,7 @@ Error: app partition is too small for binary app.bin size 0x123456
   > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що OTA оновлює лише образ застосунку, таблиця розділів не оновлюється.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -3604,7 +3604,7 @@ Error: app partition is too small for binary app.bin size 0x123456
   > Note that updating the partition table does not erase data that may have been stored according to the old partition table.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує ризик перезапису даних при зміні розбивки
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -3635,7 +3635,7 @@ Error: app partition is too small for binary app.bin size 0x123456
   > Note that updating the partition table does not erase data that may have been stored according to the old partition table. You can use ``idf.py erase-flash`` (or ``esptool erase-flash``) to erase the entire flash contents.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує важливість раннього вибору розбивки
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -3666,7 +3666,7 @@ Error: app partition is too small for binary app.bin size 0x123456
   > If Secure Boot V1 is enabled, then the partition of type ``app`` needs to have size aligned to 0x10000 (64 KB) boundary.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** показує, що зміна розбивки потребує перепрошивки
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -3696,7 +3696,7 @@ Error: app partition is too small for binary app.bin size 0x123456
   > Note that updating the partition table does not erase data that may have been stored according to the old partition table.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує ризик конфлікту даних при зміні розбивки
-- **Прохід:** prochid-18-rozdily-fleshu
+- **Прохід:** sweep-18-rozdily-fleshu
 
 ---
 
@@ -3849,7 +3849,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 - **Що шукати в джерелі:** Розмір застосунку, Wi-Fi, TLS, флеш пам'ять
 - **Нотатка:** Твердження про розмір застосунку. Це може бути емпіричним спостереженням або витягом із документації IDF про розміри компонентів. Джерело не знайшло. | 2026-08-28, §5 аудиту: клас named-unreachable (C) вимагає НАЗВАНОГО документа — у цьому записі його не було, стояла лише тема в look_for. За власним законом: не можеш назвати документ — це не C, а unverified. Тему збережено в look_for як підказку, куди дивитися, але це не наряд.
 2026-08-28: клас unverified був хибним — F означає відсутність доказу, тобто доказ про те, що доказу немає. Шукав; що саме відкривав — у looked_at. Клас L лишає одиницю в черзі видимою, на відміну від E, який ховає її назавжди.
-- **Прохід:** m2-97-vybirka
+- **Прохід:** m2-97-sample
 
 ---
 
@@ -4056,7 +4056,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 - **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
 - **Спосіб і дата:** Економічний аналіз ринку модулів ESP32. Спостереження без цифрових джерел.
 - **Нотатка:** Твердження описує тенденцію на ринку модулів — що більші флеш-модулі мають вищу вартість на одиницю ємності. Це економічне спостереження, не технічна специфікація. Конкретного документа з цінами не існує (ціни змінюються). Клас E: джерела немає. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-95-vybirka
+- **Прохід:** m2-95-sample
 
 ---
 

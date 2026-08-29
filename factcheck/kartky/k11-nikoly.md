@@ -284,7 +284,7 @@ release-режимі це односторонні двері: чип перес
   > For :ref:`flash-enc-release-mode`, the second stage bootloader sets all the eFuse bits set under development mode as well as ``DIS_DOWNLOAD_MANUAL_ENCRYPT``. It also write-protects the ``{IDF_TARGET_CRYPT_CNT}`` eFuse bits.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** write-protect в release-режиме означает невозможность изменения этих параметров после активации
-- **Прохід:** prochid-k11-nikoly
+- **Прохід:** sweep-k11-nikoly
 
 ---
 
@@ -440,7 +440,7 @@ release-режимі це односторонні двері: чип перес
   > VIL Low-level input voltage –0.3 — 0.25 × VDD 1 V
 - **Спосіб і дата:** tools/layer3.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
 - **Нотатка:** Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ: я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`), яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за що я потім ловив помічників. Заголовки таблиць і рядок про permanent damage я додавав від себе. Одиниця після VDD — це номер виноски в документі, не множник.
-- **Прохід:** m2-06-napruga-mezhi
+- **Прохід:** m2-06-voltage-limits
 
 ---
 
@@ -497,7 +497,7 @@ release-режимі це односторонні двері: чип перес
   > "| HC-SR04 | вивід `ECHO` |"
 - **Спосіб і дата:** Таблиця в картці kartky/k14-rivni.md, datasheet HC-SR04, практичні спостереження користувачів, 2026-08-26
 - **Нотатка:** Модуль HC-SR04 має логіку 5 В. Вихід ECHO генерується на 5 В, що вбиває GPIO ESP32 при прямому підключенні. Потребує дільника або конвертера рівнів.
-- **Прохід:** m2-50-kartky
+- **Прохід:** m2-50-cards
 
 ---
 
@@ -551,7 +551,7 @@ release-режимі це односторонні двері: чип перес
   > "Виняток єдиний: пін `5V`/`VIN` — це вхід стабілізатора, туди 5 В можна."
 - **Спосіб і дата:** Картка kartky/k11-nikoly.md, схема плати ESP32 DevKit, 2026-08-26
 - **Нотатка:** Пін VIN або 5V на платі ESP32 йде прямо на вхід регулятора напруги (часто AMS1117 або схожий). Це один з небагатьох місць, де 5 В не вбивають GPIO прямо, бо це не GPIO, а вхід живлення.
-- **Прохід:** m2-50-kartky
+- **Прохід:** m2-50-cards
 
 ---
 
@@ -736,7 +736,7 @@ release-режимі це односторонні двері: чип перес
   Для 40 МГц сигналу: f_nyquist = 80 МГц
   24 МГц < 80 МГц ⟹ недостатньо
 - **Спосіб і дата:** Розрахунок на основі Теореми Найквіста, 2026-08-26
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 

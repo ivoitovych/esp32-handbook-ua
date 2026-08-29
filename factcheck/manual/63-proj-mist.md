@@ -1923,7 +1923,7 @@ static void task_rx_can(void *arg) {
 скинув систему. Твердження повністю підтвердить джерелом. Це
 стандартний код reset-причин у ESP-IDF.
 
-- **Прохід:** m2-93-vybirka
+- **Прохід:** m2-93-sample
 
 ---
 
@@ -2018,7 +2018,7 @@ static void task_rx_can(void *arg) {
   > - :cpp:member:`twai_onchip_node_config_t::flags::enable_listen_only`: Configures the node in listen-only mode. In this mode, the node only receives and does not transmit any dominant bits, including ACK and error frames.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Місце в документі: рядок 91
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -2544,6 +2544,6 @@ static struct {
   > The TWAI controller hardware can filter messages based on their ID to reduce software and hardware overhead, thereby improving node efficiency.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує фільтрацію за ідентифікаторами на боці CAN.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---

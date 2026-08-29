@@ -309,7 +309,7 @@
   > For more information on ESP32-D0WD-V3 and ESP32-D0WDR2-V3 chip, please refer to ESP32 Series Datasheet.
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Це datasheet модуля, яке посилається на окремий ESP32 Series Datasheet для інформації про чип.
-- **Прохід:** m2-hvylya2
+- **Прохід:** m2-wave2
 
 ---
 
@@ -338,7 +338,7 @@
   > For specific details about connecting the SoC or module pins to an external PSRAM chip, consult the SoC or module datasheet.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ посилається на datasheet для деталей про PSRAM.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -412,7 +412,7 @@
   > github.com/espressif/esp-idf
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Confirmed - the readme identifies the project location as github.com/espressif/esp-idf
-- **Прохід:** cherga-a-h-dzherela
+- **Прохід:** queue-a-h-dzherela
 
 ---
 
@@ -673,7 +673,7 @@ MAX485).
   > The SX1276/77/78/79 incorporates the LoRaTM spread spectrum modem which is capable of achieving significantly longer
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
 - **Нотатка:** SX1276 підтримує LoRa модуляцію з розширювачами (spreading factors 6-12) | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-detali-klasC
+- **Прохід:** m2-parts-class-c
 
 ---
 

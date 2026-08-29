@@ -56,7 +56,7 @@ FreeRTOS уже працює, коли викликається ваш перш�
   > FreeRTOS is an open source RTOS (real-time operating system) kernel that is integrated into ESP-IDF as a component. Thus, all ESP-IDF applications and many ESP-IDF components are written based on FreeRTOS.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** це не бібліотека, яку треба підключати - це середовище виконання
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -196,7 +196,7 @@ static void sensor_task(void *arg) {
   > ESP_LOGI(TAG, "Baud rate error %.1f%%. Requested: %d baud, actual: %d baud", error * 100, baud_req, baud_real);
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP_LOGI макрос для логування з форматуванням
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -594,7 +594,7 @@ while (1) {
   > The scheduler executes the highest priority ready-state task.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** планувальник завжди виконує найпріоритетнішу готову задачу
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -792,7 +792,7 @@ while (1) {
   > Fixed Priority
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** правило планувальника -固定пріоритетний час планування
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -851,7 +851,7 @@ while (1) {
   > Each task is given a constant priority upon creation. The scheduler executes the highest priority ready-state task.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** висока пріоритет означає швидку реакцію, коли задача готова, але вимагає передання керування
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -900,7 +900,7 @@ while (1) {
   > xTaskCreatePinnedToCore` creates a task with a particular core affinity
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** прив'язування задачі до ядра явно підтримується API
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -999,7 +999,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
   > Typically, the tasks responsible for handling protocol related processing such as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name ``PRO_CPU``), where as the tasks handling the remainder of the application are pinned to Core 1
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Core 1 рекомендується для завдань, що не залежать від радіо і потребують точних таймінгів
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -1027,7 +1027,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
   > Typically, the tasks responsible for handling protocol related processing such as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name ``PRO_CPU``), where as the tasks handling the remainder of the application are pinned to Core 1
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Core 1 для важких та тривалих завдань щоб не заважати протокольній обробці на Core 0
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -1058,7 +1058,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
   > Although an SMP system allows threads to switch cores, there are scenarios where a thread must/should only run on a particular core. Therefore, threads in an SMP system also have a core affinity
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** двоядерність робить помилки синхронізації реальними через справжній паралелізм
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -1619,7 +1619,7 @@ if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
   > Semaphore API
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** бінарний семафор - структура синхронізації, яка сигналить про подію
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -1668,7 +1668,7 @@ if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
   > Semaphore API
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** лічильний семафор - облік обмеженого ресурсу
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -1696,7 +1696,7 @@ if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
   > Event Group API
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** група подій - набір прапорців, на комбінацію яких можна чекати
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -1724,7 +1724,7 @@ if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
   > Event Group API
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** група подій зручна для очікування комбінацій умов, як Wi-Fi та SNTP разом
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -1852,7 +1852,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
   > Designed for use in constrained environments during early startup, before the heap allocator or syscalls are initialized. These macros are commonly used in critical startup code or in critical sections where interrupts are disabled.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ISR повинен бути коротким - читати, покласти в чергу, вийти
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -2092,7 +2092,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
   > These macros should be used sparingly, as they can impact performance. They are suitable for critical sections or interrupt routines where other logging macros may not work reliably.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** логування в ISR - інструмент для відлагодження, а не для роботи
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -2121,7 +2121,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
   > These macros should be used sparingly, as they can impact performance. They are suitable for critical sections or interrupt routines where other logging macros may not work reliably.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** коли ISR поводиться незрозуміло, а покласти в чергу нема чого, логування - єдиний спосіб
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -2381,7 +2381,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
   > Critical sections should be kept as short as possible
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** механічний контакт при натисканні дає десятки перемикань, але затримка в ISR неправильна
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -2558,7 +2558,7 @@ xTimerStart(t, 0);
   > FreeRTOS Timer Task (``Tmr Svc``)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** усі програмні таймери виконуються в одній службовій задачі
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -2672,7 +2672,7 @@ xTimerStart(t, 0);
   > True atomic access to the same memory address is achieved via an atomic compare-and-swap instruction provided by the ISA
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** спільна змінна без захисту на двох ядрах ламається одразу
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -2727,7 +2727,7 @@ xTimerStart(t, 0);
   > а після відпускання передача продовжується нормально.
 - **Спосіб і дата:** I²C spec (i2c-um10204.pdf), Section 3.1.3, 2026-08-26
 - **Нотатка:** Це валідна поведінка протоколу. Означає, що ведений занадто повільний або перевантажений. Обично не має помилки, але потребує оптимізації.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
@@ -2804,7 +2804,7 @@ xTimerStart(t, 0);
   > Each task is given a constant priority upon creation. The scheduler executes the highest priority ready-state task.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** висока пріоритет означає швидко відреагувати й заснути, а не постійно працювати
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 
@@ -2873,7 +2873,7 @@ ISR: прочитати, покласти в чергу, вийти. Ніяко�
   > These macros should be used sparingly, as they can impact performance. They are suitable for critical sections or interrupt routines where other logging macros may not work reliably.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ніякого логування в ISR і пам'яті
-- **Прохід:** prochid-31-freertos
+- **Прохід:** sweep-31-freertos
 
 ---
 

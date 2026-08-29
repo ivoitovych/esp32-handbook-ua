@@ -346,7 +346,7 @@
   > If the device does not support the auto download mode, you need to get into the download mode manually. To do so, press and hold the ``BOOT`` button and then press the ``RESET`` button once.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документація підтверджує, що плата, яка не в download mode, є частою причиною проблем
-- **Прохід:** prochid-k08-symptomy
+- **Прохід:** sweep-k08-symptomy
 
 ---
 
@@ -490,7 +490,7 @@
   > ESP-IDF second stage bootloader is located at the address {IDF_TARGET_CONFIG_BOOTLOADER_OFFSET_IN_FLASH} in the flash.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** адреса бутлоадера залежить від типу чипа, як і зазначено в довіднику
-- **Прохід:** prochid-k08-symptomy
+- **Прохід:** sweep-k08-symptomy
 
 ---
 
@@ -818,7 +818,7 @@
   > ESP32 потребує плавного живлення; конденсатор 470 мкФ служить як буфер для стабілізації напруги під час піків струму
 - **Спосіб і дата:** Розрахунок RC-ланцюга: 470 мкФ при типовому ESR ~0.1 Ом дає постійну часу ~47 мс, достатню для згладжування коливань
 - **Нотатка:** Практична рекомендація для вирішення проблеми, коли джерело живлення не може забезпечити стабільну напругу. Клас E — практика. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-45-motory-symptomy
+- **Прохід:** m2-45-motors-symptoms
 
 ---
 
@@ -870,7 +870,7 @@
   > A core dump is a set of software state information that is automatically saved by the panic handler when a fatal error occurs.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** boot loop може бути результатом паніки в застосунку, як описано в документації
-- **Прохід:** prochid-k08-symptomy
+- **Прохід:** sweep-k08-symptomy
 
 ---
 
@@ -922,7 +922,7 @@
   > Panic reason: abort() was called
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** паніка в застосунку дійсно є частою причиною boot loop
-- **Прохід:** prochid-k08-symptomy
+- **Прохід:** sweep-k08-symptomy
 
 ---
 
@@ -974,7 +974,7 @@
   > Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** перший дамп після живлення розпочинає backtrace
-- **Прохід:** prochid-k08-symptomy
+- **Прохід:** sweep-k08-symptomy
 
 ---
 
@@ -1232,7 +1232,7 @@
   > I2C uses two bidirectional open-drain lines: serial data line (SDA) and serial clock line (SCL), pulled up by resistors.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документація підтверджує необхідність підтягування та спільної землі для I2C
-- **Прохід:** prochid-k08-symptomy
+- **Прохід:** sweep-k08-symptomy
 
 ---
 
@@ -1291,7 +1291,7 @@
   > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
 - **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
 - **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -1343,7 +1343,7 @@
   > This function may fail when the ADC is in use by other drivers/peripherals, and return :c:macro:`ESP_ERR_TIMEOUT`. Under this condition, the ADC raw result is invalid.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує, що ADC може повертати неправильні дані.
-- **Прохід:** m2-hvylya3
+- **Прохід:** m2-wave3
 
 ---
 
@@ -1703,7 +1703,7 @@
   > #define MSPI_IOMUX_PIN_NUM_CS0      11
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** GPIO 6-11 визначені як піни MSPI (Master SPI) для флеш-пам'яті, що підтверджує, що вони зайняті флешем
-- **Прохід:** prochid-k08-symptomy
+- **Прохід:** sweep-k08-symptomy
 
 ---
 
@@ -1986,7 +1986,7 @@
   > Внутрішні схеми захищені до 3.6 V максимум
 - **Спосіб і дата:** ESP32 datasheet від Espressif, кеш `esp32-datasheet.pdf`, таблиця Absolute Maximum Ratings, pdftotext -layout, 2026-08-26
 - **Нотатка:** Подача 5 В на GPIO, розраховані на максимум 3.3 В, призводить до перевищення напруги і може пошкодити вхідні каскади.
-- **Прохід:** m2-45-motory-symptomy
+- **Прохід:** m2-45-motors-symptoms
 
 ---
 
@@ -2084,7 +2084,7 @@
   > | 14 | Wi-Fi бачить мережу, не під'єднується | пароль, канал 12–13 або 5 ГГц | звірити SSID, канал; ESP32 не бачить 5 ГГц |
 - **Спосіб і дата:** перевірка таблиці в kartky/k08-symptomy.md:20, 2026-08-27
 - **Нотатка:** Агент був поставив джерелом картку k08-symptomy.md — тобто саму книгу. Зовнішнє джерело для обмеження каналів 12–13 існує (регуляторна область у драйвері Wi-Fi ESP-IDF), але я його не відкривав. Тому C, не B.
-- **Прохід:** m2-94-vybirka
+- **Прохід:** m2-94-sample
 
 ---
 
@@ -2136,7 +2136,7 @@
   > | 14 | Wi-Fi бачить мережу, не під'єднується | пароль, канал 12–13 або 5 ГГц | звірити SSID, канал; ESP32 не бачить 5 ГГц |
 - **Спосіб і дата:** перевірка таблиці в kartky/k08-symptomy.md:20, 2026-08-27
 - **Нотатка:** Агент був поставив джерелом картку k08-symptomy.md — тобто саму книгу. Зовнішнє джерело для обмеження каналів 12–13 існує (регуляторна область у драйвері Wi-Fi ESP-IDF), але я його не відкривав. Тому C, не B.
-- **Прохід:** m2-94-vybirka
+- **Прохід:** m2-94-sample
 
 ---
 

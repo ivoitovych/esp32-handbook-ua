@@ -36,7 +36,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BASELINE = ROOT / "factcheck" / "TRANSLITERATION.md"
+BASELINE = ROOT / "factcheck" / "reports" / "TRANSLITERATION.md"
 
 # Англійські корені, які трапляються в іменах. Перелік навмисно
 # щедрий: пропущене англійське слово лише додає запис у базу, а
@@ -54,7 +54,15 @@ runs safe sample scale schema scope seed self set sha show side sign signs size
 sketch sort source sources spec split src stat state states status statuses step
 steps stop str strength strict sum table tables tag tags task tasks test tests text
 time title tool tools total trace traces type unit units url urls use used value
-values verify version wave waves write yaml""".split())
+values verify version wave waves write yaml
+architecture bridge bridges cache cell chip chips component components
+datasheet datasheets default defaults defect defects display displays
+electrical electronics evidence experiment experiments flash history
+insert inserts iomux level levels module modules motor motors panic
+peripheral peripherals pinout pinouts power project projects pullup
+pullups pycache queue queues reproducible restructure sensor sensors
+semtech snapshot snapshots solder switch switches symptom symptoms unchecked
+unreachable wiring""".split())
 
 RE_SYGNAL = re.compile(
     r"kh|zh|ya|yu|yi|ch|sh|ts|iy|yy|ovan|nnya|aty|yty|uva|klas|syla|stan|naryad"
@@ -70,8 +78,68 @@ def transliterovane(w: str) -> bool:
     return bool(RE_SYGNAL.search(lw))
 
 
-def znaydeni() -> set[str]:
+# Теки карток дзеркалять книгу, а книга українська. Їхні імена — не
+# борг: `manual/05-elektronika.md` названо так тому, що так зветься
+# розділ. Решта `factcheck/` — технологія, і вона переїжджає.
+CARD_DIRS = {"manual", "dodatky", "kartky", "inserts", "triage"}
+
+
+def stemy_knyhy() -> set[str]:
+    """Імена файлів самої книги — вони українські й такими лишаються."""
+    out = set()
+    for d in ("manual", "dodatky", "kartky", "inserts"):
+        for f in (ROOT / d).glob("*.md"):
+            out.add(f.stem)
+            out.add(re.sub(r"^[0-9a-z]+-", "", f.stem))
+    return out
+
+
+def imena_faylivv() -> set[str]:
+    """Імена файлів даних у `factcheck/`, а не лише ідентифікатори.
+
+    Храповик міряв `tools/*.py` — сталі, функції, прапорці. Я подивився
+    на його нуль і доповів власникові, що транслітерацію з `factcheck/`
+    прибрано. У теці тоді лежало 11 файлів даних і 201 файл доказів із
+    транслітерованими іменами; жодного з них храповик не бачив.
+
+    Число було праве. Речення, яке я з нього зробив, — ні.
+
+    > Міра каже, що виміряла. Що вона НЕ виміряла, вона не каже, і
+    > мовчання читається як нуль.
+
+    Ім'я доказу складене: родина, номер, тема. Тому міряємо **частини**,
+    а не ім'я цілком — інакше `sweep-04-peryferiya` і `sweep-h-dzherela`
+    йдуть в одну купу, хоч перше має борг в одному слові, а друге не має
+    його зовсім: `h-dzherela` — це ім'я розділу книги, і книга
+    українська. Назвати його боргом означало б вимагати, щоб доказ
+    посилався на книгу неіснуючим ім'ям."""
+    knyha = stemy_knyhy()
     out: set[str] = set()
+    for f in (ROOT / "factcheck").rglob("*"):
+        if not f.is_file():
+            continue
+        chastyny = set(f.relative_to(ROOT / "factcheck").parts)
+        if CARD_DIRS & chastyny or {"archive", "__pycache__"} & chastyny:
+            continue
+        for imya in [f.stem] + list(chastyny - {f.name}):
+            # Ім'я доказу — це родина, номер і **розділ книги**:
+            # `sweep-18-rozdily-fleshu` цитує `manual/18-rozdily-fleshu.md`.
+            # Перша спроба звіряла з книгою ім'я цілком, а на частини
+            # різала до того, як зняти родину, — і розділ книги розпадався
+            # на `rozdily` та `fleshu`, яких у книзі нема. Та сама вада,
+            # яку цей файл і ловить: міра, зроблена на крок раніше, ніж
+            # треба, міряє свій крок, а не предмет.
+            chastky = re.split(r"[-_]", imya)
+            if any("-".join(chastky[i:]) in knyha for i in range(len(chastky))):
+                continue
+            for c in chastky:
+                if c and c not in knyha and transliterovane(c):
+                    out.add(c)
+    return out
+
+
+def znaydeni() -> set[str]:
+    out: set[str] = imena_faylivv()
     for f in sorted((ROOT / "tools").glob("*.py")):
         t = f.read_text(encoding="utf-8")
         for pat in (r"^([A-Z][A-Z0-9_]{2,})\s*=",

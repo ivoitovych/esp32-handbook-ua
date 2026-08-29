@@ -58,7 +58,7 @@
   > figuring out a bug that is caused by two threads, running even simultaneously on two different CPU cores, can take a long time when all you have are ``printf()`` statements. A better (and in many cases quicker) way to debug such problems is by using a debugger
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документація підтверджує що відлагоджувач дає більше інформації ніж логи
-- **Прохід:** prochid-27-jtag
+- **Прохід:** sweep-27-jtag
 
 ---
 
@@ -189,7 +189,7 @@
   спад на кабелі: ΔU = I × R; при I = 0.24 А (Table 5-4, передача 802.11b) і R = 1 Ом → ΔU = 0.24 В
 - **Спосіб і дата:** Логічний висновок з Закону Ома. Технічна база: ESP32 Datasheet (esp32-datasheet.pdf), Table 5-4 «Current Consumption», 2026-08-26
 - **Нотатка:** Проблема дешевих USB-кабелів — велика довжина + малий переріз провідника = великий опір. Це звичайна проблема при живленні ESP32 з тонких USB-кабелів. | 2026-08-28: з взірця прибрано альтернативу-течу «перезавантаж» — саме слово чіпляло 61 одиниць, більше за всі інші разом, тобто підміняло взірець замість звужувати. Знахідка М1. Решта альтернатив тримає 4 одиниць.
-- **Прохід:** m2-65-elektronika-05
+- **Прохід:** m2-65-electronics-05
 
 ---
 
@@ -645,7 +645,7 @@ idf.py openocd gdb
   > JTAG communication will likely fail, if configuration of JTAG pins is changed by a user application.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ підтверджує, що USB-JTAG перестає працювати при зміні конфігурації пінів
-- **Прохід:** prochid-27-jtag
+- **Прохід:** sweep-27-jtag
 
 ---
 
@@ -1371,7 +1371,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
   > A better (and in many cases quicker) way to debug such problems is by using a debugger, connected to the processors over a debug port
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документація показує що відлагоджувач корисний для складних помилок
-- **Прохід:** prochid-27-jtag
+- **Прохід:** sweep-27-jtag
 
 ---
 
@@ -1896,7 +1896,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
   > непрацездатними."
 - **Спосіб і дата:** Текст manual/09-pidklyuchennya.md, спостереження на ринку комплектуючих, 2026-08-26
 - **Нотатка:** Клас E: ринкове спостереження, яке автори підтримують з практичного досвіду. У 2014–2015 роках драйвер FTDI мав функцію виявлення підробок, що робило їх непрацездатними. Сьогодні це рідше, але факт залишається: FT232RL — популярний чип, і підробок на ринку немало.
-- **Прохід:** m2-51-mosty
+- **Прохід:** m2-51-bridges
 
 ---
 
@@ -2145,7 +2145,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
   > Точність: типово 1–2% від вимірювання.
 - **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
 - **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики. | 2026-08-28: з взірця прибрано альтернативу-течу «струм» — саме слово чіпляло 112 одиниць, більше за всі інші разом, тобто підміняло взірець замість звужувати. Знахідка М1. Решта альтернатив тримає 46 одиниць.
-- **Прохід:** m2-66-analizator-28
+- **Прохід:** m2-66-analyzer-28
 
 ---
 
