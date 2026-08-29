@@ -398,6 +398,34 @@ useful.
 Prohibitions are powerless here, because nothing was violated. What
 works is **explaining what happens to the work next**.
 
+**And it is not a cheap-model failure. It is a reading failure, and the
+maintainers made it too.** A later wave of 200 tickets put a number on
+the shape: of 14 rejected confirmations, **13 pointed at the right
+passage** and lost it in the copying — most often by deleting inline
+markup from the middle of a line.
+
+Then the same test was turned on our **own** registry, written by hand,
+months earlier. Five records had done exactly that; three were one
+maintainer's:
+
+    in our record:  such as elf2image or merge-bin,
+    in the source:  such as :ref:`elf2image <elf-2-image>` or
+                    :ref:`merge-bin <merge-bin>`,
+
+    in our record:  located at (default offset) + 0x1000.
+    in the source:  located at (:ref:`default offset
+                    <CONFIG_PARTITION_TABLE_OFFSET>`) + 0x1000.
+
+> A person transcribing a line from a document removes what looks like
+> noise, because to a reader it **is** noise. The model was not being
+> lazy; it was reading the way we read.
+
+Two consequences. The rule belongs in the work order as an explicit
+instruction — *paste the line with its markup, do not clean it* — and
+not as an assumption that anyone would guess it. And the repair is
+always to fix the **quote**, never to loosen the comparison: kind 27
+measured that loosening recovers 3 records and breaks 10.
+
 ### Law 6-bis: stated mechanics hold, a named prohibition does not
 
 One maintainer removed the *description of the gate* from the order and
