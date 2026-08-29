@@ -89,7 +89,7 @@ def zaholovok(**kw) -> str:
 
 
 ZVIT = ROOT / "factcheck" / "data" / "reports" / "TRACES.md"
-KANDYDATY = ROOT / "factcheck" / "queues/leads-candidates.yaml"
+KANDYDATY = ROOT / "factcheck" / "data" / "queues" / "leads-candidates.yaml"
 
 PIDPYSY_V = {
     "znayshov": "Джерело знайдено",

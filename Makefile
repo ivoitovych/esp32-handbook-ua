@@ -111,6 +111,7 @@ cache-vs-book:
 # Заведено після того, як словник класів розійшовся в ТРЬОХ документах
 # і це знайшлося читанням. Читання не масштабується й не працює в CI.
 docs:
+	@$(PY) tools/paths.py
 	@$(PY) tools/report.py
 	@$(PY) tools/docs.py
 	@$(PY) tools/doc_kind.py --suvoro

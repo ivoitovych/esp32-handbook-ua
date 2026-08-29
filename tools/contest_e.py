@@ -61,7 +61,7 @@ CIL = ROOT / "factcheck" / "data" / "reports" / "SWEEP-NO-SIGNAL.md"
 # лягають самі лише `znayshov`, переведені у форму запису доказу, щоб
 # `tools/layer3.py` міг їх звірити **до** того, як їх побачить
 # супровідник.
-KANDYDATY = ROOT / "factcheck" / "queues/contest-e-candidates.yaml"
+KANDYDATY = ROOT / "factcheck" / "data" / "queues" / "contest-e-candidates.yaml"
 
 # Каталог вивантажень помічників задається ззовні й **навмисно не
 # записаний тут**. Дві причини, і друга важливіша.

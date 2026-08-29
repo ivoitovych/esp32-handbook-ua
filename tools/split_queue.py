@@ -313,7 +313,7 @@ def naryad() -> int:
                 t = " ".join(x[2:] for x in u["txt"].strip().split("\n"))
                 t = t.replace("|", "\\|")[:150]
                 r.append(f"| `{u['id']}` | {u['ln']} | {t} |")
-    (FC / "SPLIT.md").write_text("\n".join(r) + "\n", encoding="utf-8")
+    (FC / "data" / "reports" / "SPLIT.md").write_text("\n".join(r) + "\n", encoding="utf-8")
     print(f"factcheck/data/reports/SPLIT.md: М1 {m1}, М2 {m2}, поза поділом "
           f"{len(rozklad['—'])}")
     return 0

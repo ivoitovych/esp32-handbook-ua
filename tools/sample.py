@@ -243,7 +243,7 @@ RE_NE_TVERDZHENNYA = re.compile(
     re.I)
 
 
-KANDYDATY = ROOT / "factcheck" / "queues/sample-candidates.yaml"
+KANDYDATY = ROOT / "factcheck" / "data" / "queues" / "sample-candidates.yaml"
 
 
 def tretiy_shar_vybirky(zap: list[dict]) -> tuple[int, int]:

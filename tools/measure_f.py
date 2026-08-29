@@ -89,7 +89,7 @@ ZVIT_PORROZHNIY = """# Міра класу `F` — хвиля відхилена
 роботу. Тепер це **ворота** — адреса, що вказує на довідник,
 відхиляється механічно.
 """
-KANDYDATY = ROOT / "factcheck" / "queues/measure-f-candidates.yaml"
+KANDYDATY = ROOT / "factcheck" / "data" / "queues" / "measure-f-candidates.yaml"
 
 PIDPYSY = {
     "pidtverdzheno": "Книга підтверджена",

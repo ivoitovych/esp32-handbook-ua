@@ -1246,7 +1246,7 @@ def stale() -> int:
     return 0
 
 
-NARYAD = FC / "UNREACHABLE-SOURCES.md"
+NARYAD = FC / "data" / "book" / "UNREACHABLE-SOURCES.md"
 
 
 def blocked() -> int:
