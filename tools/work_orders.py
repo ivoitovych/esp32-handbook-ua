@@ -43,7 +43,7 @@
 запис, на який ніхто не відповів, друкує окремим розділом. Нестача —
 теж результат, і найнебезпечніший: вона виглядає як згода.
 
-    tools/work_orders.py                    зібрати factcheck/reports/BRIEF-QUOTES.md
+    tools/work_orders.py                    зібрати factcheck/data/reports/BRIEF-QUOTES.md
     tools/work_orders.py --krim <каталог>   лише ті, на які ще не відповіли
     tools/work_orders.py --zvit <каталог>   звести відповіді помічників
 """
@@ -59,7 +59,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
 import factcheck  # noqa: E402  — після sys.path
-CIL = ROOT / "factcheck" / "reports" / "BRIEF-QUOTES.md"
+CIL = ROOT / "factcheck" / "data" / "reports" / "BRIEF-QUOTES.md"
 NA_PAKET = 5
 
 ZAHOLOVOK_RAMKA = """# Наряд: {skilky} цитат, яких немає в джерелі
@@ -103,7 +103,7 @@ def zaholovok(**kw) -> str:
 
 def zapysy() -> dict[tuple[str, str], dict]:
     rec: dict[tuple[str, str], dict] = {}
-    for f in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
+    for f in sorted((ROOT / "factcheck" / "data" / "evidence").glob("*.yaml")):
         try:
             for z in (yaml.safe_load(f.read_text(encoding="utf-8")) or []):
                 if isinstance(z, dict):
@@ -113,7 +113,7 @@ def zapysy() -> dict[tuple[str, str], dict]:
     return rec
 
 
-ZVIT = ROOT / "factcheck" / "reports" / "BOOK-VS-SOURCES.md"
+ZVIT = ROOT / "factcheck" / "data" / "reports" / "BOOK-VS-SOURCES.md"
 
 PIDPYSY = {
     "pidtverdzheno": "Книга підтверджена",
@@ -171,7 +171,7 @@ def zvesty(katalog: Path) -> int:
     r = [f"""# Книга проти джерел: {len(ochikuvano)} розбіжних цитат
 
 **Генерується** `tools/work_orders.py --zvit`. Наряд —
-`factcheck/reports/BRIEF-QUOTES.md`.
+`factcheck/data/reports/BRIEF-QUOTES.md`.
 
 Третій шар сказав, що цих цитат немає за названою адресою. Питання тут
 інше: **чи правильне те, що написано в книзі.**

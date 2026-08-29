@@ -54,7 +54,7 @@ import yaml  # noqa: E402
 
 import helper_dumps  # noqa: E402
 
-ZVIT = ROOT / "factcheck" / "reports" / "MEASURE-UNCHECKED.md"
+ZVIT = ROOT / "factcheck" / "data" / "reports" / "MEASURE-UNCHECKED.md"
 
 ZVIT_PORROZHNIY = """# Міра класу `F` — хвиля відхилена
 
@@ -248,7 +248,7 @@ def main() -> int:
 > зовнішнього свідчення в них немає за побудовою.
 
 **Генерується** `tools/measure_f.py`. Наряд —
-`factcheck/reports/BRIEF-SAMPLE.md`, там же насіння добору.
+`factcheck/data/reports/BRIEF-SAMPLE.md`, там же насіння добору.
 
 Клас `F` — «ще не звірено»: до цих рядків ніхто не дійшов. Питання не
 про присуд, а пряме: **чи правильне те, що написано в книзі**.

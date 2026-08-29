@@ -222,7 +222,7 @@ def unlisted_in_manifest(z: dict) -> list[tuple[str, str]]:
     import yaml
     layer3 = _layer3()
     bidy: list[tuple[str, str]] = []
-    for f in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
+    for f in sorted((ROOT / "factcheck" / "data" / "evidence").glob("*.yaml")):
         try:
             zap = yaml.safe_load(f.read_text(encoding="utf-8")) or []
         except Exception:
@@ -259,7 +259,7 @@ def proba() -> int:
     import yaml
     layer3 = _layer3()
     vzhytyy = None
-    for f in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
+    for f in sorted((ROOT / "factcheck" / "data" / "evidence").glob("*.yaml")):
         try:
             zap = yaml.safe_load(f.read_text(encoding="utf-8")) or []
         except Exception:
@@ -338,7 +338,7 @@ def vidtvornist() -> int:
                for n in z}
     k: collections.Counter = collections.Counter()
     prykl: dict[str, str] = {}
-    teka = ROOT / "factcheck" / "evidence"
+    teka = ROOT / "factcheck" / "data" / "evidence"
     for f in sorted(teka.glob("*.yaml")):
         try:
             zap = yaml.safe_load(f.read_text(encoding="utf-8")) or []

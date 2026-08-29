@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all intake docs naming run-gate dovidnyk kartky proekty linkcheck cross-refs pins refuted struct-fields correspondence split-queue cache layer3 modality calques spelling budgets arithmetic stale schema self-checks reproducible cache-vs-book layer1 coverage check release release-check entry-points \
+.PHONY: help setup all intake docs report naming run-gate dovidnyk kartky proekty linkcheck cross-refs pins refuted struct-fields correspondence split-queue cache layer3 modality calques spelling budgets arithmetic stale schema self-checks reproducible cache-vs-book layer1 coverage check release release-check entry-points \
         check-attribution preview clean
 
 PY := python3
@@ -111,6 +111,7 @@ cache-vs-book:
 # Заведено після того, як словник класів розійшовся в ТРЬОХ документах
 # і це знайшлося читанням. Читання не масштабується й не працює в CI.
 docs:
+	@$(PY) tools/report.py
 	@$(PY) tools/docs.py
 	@$(PY) tools/doc_kind.py --suvoro
 

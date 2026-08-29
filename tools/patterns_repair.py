@@ -107,7 +107,7 @@ def main(argv: list[str]) -> int:
             zhyvi.add((str(z.get("_prokhid")), str(z.get("title"))))
 
     polagodzheno = nezmineno = 0
-    for shlyakh in sorted(glob.glob(str(ROOT / "factcheck" / "evidence" / "m2-*.yaml"))):
+    for shlyakh in sorted(glob.glob(str(ROOT / "factcheck" / "data" / "evidence" / "m2-*.yaml"))):
         recs = yaml.safe_load(Path(shlyakh).read_text(encoding="utf-8")) or []
         prokhid = Path(shlyakh).stem
         tor = False

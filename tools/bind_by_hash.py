@@ -69,7 +69,7 @@ import yaml
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
-DOKAZY = ROOT / "factcheck" / "evidence"
+DOKAZY = ROOT / "factcheck" / "data" / "evidence"
 
 
 def zibraty() -> tuple[list[dict], dict[str, list[str]]]:

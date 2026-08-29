@@ -237,7 +237,7 @@ def main() -> int:
     if a.samoperevirka:
         return samoperevirka()
 
-    zap = zapysy(ROOT / "factcheck" / "evidence")
+    zap = zapysy(ROOT / "factcheck" / "data" / "evidence")
     bz = perevir_zapysy(zap)
     bk = perevir_kartky()
 

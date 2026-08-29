@@ -57,18 +57,21 @@ FC = ROOT / "factcheck"
 #
 # Порядок ключів = спадання сили; `STRENGTH_BY_LETTER` виводиться з нього, а не
 # тримається окремим словником, який може розійтися.
+# Ці рядки — не лише показ у консолі: `report.py` друкує їх у
+# `REPORT.md`, а `docs.py` звіряє перелік із METHOD.md. Тобто це
+# нормативний текст технології, і він англійською разом із нею.
 STATUSES = {
-    "verbatim": "первинне дослівне — витяг із першоджерела отримано й процитовано",
-    "derived": "первинне похідне — першоджерело отримано, твердження випливає однозначно",
-    "absent-from-source": "доведення відсутністю — документ отримано, і названого в ньому немає; мовчання документа і є доказ",
-    "arithmetic": "обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне",
-    "named-unreachable": "вторинне — джерело не дістається звідси; URL записано, цитати немає",
-    "self-consistent": "внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає",
-    "looked-not-found": "дивилися й не знайшли — робота зроблена, джерела не видно",
-    "no-external-signal": "сигналу для звірки в тексті немає — присвоєно механічно, не перевірено",
-    "refuted": "спростовано або потребує правки",
-    "unchecked": "не звірено",
-    "code-context": "контекст — блок коду цілком; твердження в його рядках",
+    "verbatim": "primary, quoted — the source was obtained and the extract copied",
+    "derived": "primary, inferred — the source was obtained; the claim follows unambiguously",
+    "absent-from-source": "proof by absence — the document was obtained and what was named is not in it; the silence is the proof",
+    "arithmetic": "calculation — checked by arithmetic; no external source is needed",
+    "named-unreachable": "secondary — the source cannot be reached from here; URL recorded, no quote",
+    "self-consistent": "internal check — the book agrees with itself; no external confirmation",
+    "looked-not-found": "looked and did not find — the work was done, the source is not visible",
+    "no-external-signal": "no signal in the text to check against — assigned mechanically, not checked",
+    "refuted": "refuted, or needs an edit",
+    "unchecked": "not checked",
+    "code-context": "context — a whole code block; the claims live in its lines",
 }
 
 # Літери лишаються рівно на час переїзду: щоб читати вже написані картки
@@ -406,11 +409,11 @@ def prefiks(f: Path) -> str:
     return (m.group(1) if m else f.stem[:3]).upper()
 
 
-DOKAZY = FC / "evidence"
+DOKAZY = FC / "data" / "evidence"
 
 
 def zavantazhyty_dokazy() -> list[dict]:
-    """Докази з `factcheck/evidence/*.yaml` — перелік записів.
+    """Докази з `factcheck/data/evidence/*.yaml` — перелік записів.
 
     Запис прив'язується до тверджень двома способами.
 
@@ -936,7 +939,7 @@ def sketch() -> int:
                 f"Одиниць твердження: **{len(odynyci)}**. "
                 "Клас доказу й формат запису — `factcheck/SCHEMA.md`.\n",
                 "Цей файл **генерується**: текст книги береться з джерела, "
-                "докази — з `factcheck/evidence/`. Правити вручну нема сенсу.\n",
+                "докази — з `factcheck/data/evidence/`. Правити вручну нема сенсу.\n",
                 # Сказано раз на файл, а не на кожній із тисяч карток:
                 # рецензентові потрібна ця гарантія, але вона однакова
                 # для всіх карток файлу.
@@ -1297,7 +1300,7 @@ def blocked() -> int:
         "Людині з відкритим доступом лишається відкрити документ і "
         "звірити — робота вимірюється хвилинами на джерело.\n",
         "Закриті пункти повертаються сюди як докази класу `A` або `B` у "
-        "`factcheck/evidence/`, після чого цей файл перегенеровується "
+        "`factcheck/data/evidence/`, після чого цей файл перегенеровується "
         "(`tools/factcheck.py blocked`) і коротшає.\n",
         f"Станом на генерацію: **{vsjogo}** тверджень від "
         f"**{len(grupy)}** джерел.\n",

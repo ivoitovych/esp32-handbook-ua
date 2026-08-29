@@ -58,7 +58,7 @@ import helper_dumps
 
 ROOT = Path(__file__).resolve().parent.parent
 GRUPY = ("manual", "kartky", "dodatky", "inserts")
-CIL = ROOT / "factcheck" / "reports" / "BRIEF-SAMPLE.md"
+CIL = ROOT / "factcheck" / "data" / "reports" / "BRIEF-SAMPLE.md"
 
 NASINNYA = 20260826
 
@@ -236,7 +236,7 @@ ZAHOLOVOK_F = """# Наряд: випадкова вибірка класу `{kl
 
 """
 
-ZVIT = ROOT / "factcheck" / "reports" / "MEASURE-NO-SIGNAL.md"
+ZVIT = ROOT / "factcheck" / "data" / "reports" / "MEASURE-NO-SIGNAL.md"
 
 RE_NE_TVERDZHENNYA = re.compile(
     r"не тверджен|самоопис|заголов|назв[ау] колонк|вступ до перел|підпис",
@@ -358,11 +358,11 @@ def zvesty(katalog: Path) -> int:
     r = [f"""# Міра класу `E`
 
 **Генерується** `tools/sample.py --zvit`. Наряд —
-`factcheck/reports/BRIEF-SAMPLE.md`, там же насіння добору.
+`factcheck/data/reports/BRIEF-SAMPLE.md`, там же насіння добору.
 
 Питання: **яка частка класу `E` має зовнішній референт**, тобто
 поставлена надто щедро. Вибірка **випадкова**, тому відсоток звідси
-можна переносити на весь клас — на відміну від `factcheck/reports/SWEEP-NO-SIGNAL.md`,
+можна переносити на весь клас — на відміну від `factcheck/data/reports/SWEEP-NO-SIGNAL.md`,
 де вибірку відібрано рукою під відповідь.
 
 ## Результат

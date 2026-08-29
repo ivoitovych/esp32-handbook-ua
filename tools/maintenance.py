@@ -47,7 +47,7 @@ KNYZHKOVI_TEKY = {"manual", "dodatky", "kartky", "inserts"}
 
 def _yaml_zapysy():
     import yaml
-    for p in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
+    for p in sorted((ROOT / "factcheck" / "data" / "evidence").glob("*.yaml")):
         try:
             for z in yaml.safe_load(p.read_text(encoding="utf-8")) or []:
                 if isinstance(z, dict):

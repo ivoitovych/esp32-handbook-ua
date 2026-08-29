@@ -90,7 +90,7 @@ def main() -> int:
     p.add_argument("--zvirty", action="store_true")
     a = p.parse_args()
 
-    teka = ROOT / "factcheck" / "evidence"
+    teka = ROOT / "factcheck" / "data" / "evidence"
     zminen = zapysiv = nepovnyh = 0
     for f in sorted(teka.glob("*.yaml")):
         try:

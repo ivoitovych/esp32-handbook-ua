@@ -42,7 +42,7 @@
 
     tools/layer3.py            перевірити все, що є в кеші
     tools/layer3.py --kachaty  спершу докачати те, чого бракує
-    tools/layer3.py --zvit     згенерувати factcheck/reports/QUOTES.md
+    tools/layer3.py --zvit     згенерувати factcheck/data/reports/QUOTES.md
     tools/layer3.py --suvoro   недосяжне джерело теж помилка
     tools/layer3.py <файл.yaml>  перевірити вивантаження помічника
 
@@ -64,9 +64,9 @@ import yaml
 import factcheck
 
 ROOT = Path(__file__).resolve().parent.parent
-DOKAZY = ROOT / "factcheck" / "evidence"
+DOKAZY = ROOT / "factcheck" / "data" / "evidence"
 KESH = ROOT / "source-cache"
-ZVIT = ROOT / "factcheck" / "reports" / "QUOTES.md"
+ZVIT = ROOT / "factcheck" / "data" / "reports" / "QUOTES.md"
 
 MIN_DOVZHYNA = 12
 
@@ -726,7 +726,7 @@ def perevirka(kachaty: bool,
 
     `fayly` дозволяє перевірити щось, чого в реєстрі ще немає, — а саме
     вивантаження помічника. Так перевірка стається **до** того, як чуже
-    слово потрапляє в `factcheck/evidence/`, а не після.
+    слово потрапляє в `factcheck/data/evidence/`, а не після.
     """
     naslidky: list[dict] = []
     pidsumok = {"ok": 0, "ne_znaydeno": 0, "nedosyazhne": 0, "nichoho": 0,

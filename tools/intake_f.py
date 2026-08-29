@@ -192,7 +192,7 @@ def main() -> int:
     p.add_argument("teka", type=pathlib.Path)
     p.add_argument("--bez-merezhi", action="store_true")
     p.add_argument("--ledger", action="store_true",
-                   help="дописати підсумок прогону у factcheck/reports/RUNS.md")
+                   help="дописати підсумок прогону у factcheck/data/reports/RUNS.md")
     p.add_argument("--model", default="haiku-4.5")
     p.add_argument("--note", default="")
     p.add_argument("--compare", type=pathlib.Path, default=None,
@@ -374,7 +374,7 @@ does), and a run is not repeated. A row is evidence, not proof.
 def zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy) -> None:
     """Дописати рядок прогону. Дописати, не переписати: попередні
     прогони — це вимір, а не чернетка."""
-    f = ROOT / "factcheck" / "reports" / "RUNS.md"
+    f = ROOT / "factcheck" / "data" / "reports" / "RUNS.md"
     if not f.exists():
         f.write_text(LEDGER_SHAPKA, encoding="utf-8")
     t = f.read_text(encoding="utf-8")
@@ -395,7 +395,7 @@ def zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy) -> None:
     if a.note:
         ryadok += "\n\n> `%s`: %s\n" % (a.teka.name, a.note)
     f.write_text(t.rstrip("\n") + "\n" + ryadok + "\n", encoding="utf-8")
-    print("\nдописано в factcheck/reports/RUNS.md")
+    print("\nдописано в factcheck/data/reports/RUNS.md")
 
 
 if __name__ == "__main__":

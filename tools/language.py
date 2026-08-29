@@ -34,7 +34,7 @@ for both, because nothing here measured the language of a document.
 **English** — the technology, meaning the six foundation documents, every
 tool, and every report a tool generates. These are what a next book takes.
 
-**Ukrainian** — the book, its cards, and `factcheck/book/`: registries
+**Ukrainian** — the book, its cards, and `factcheck/data/book/`: registries
 about *this* book. Naming them in English would make them cite chapters
 that do not exist.
 
@@ -61,7 +61,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BASELINE = ROOT / "factcheck" / "reports" / "LANGUAGE.md"
+BASELINE = ROOT / "factcheck" / "data" / "reports" / "LANGUAGE.md"
 
 # Частка кирилиці, вище якої документ вважається українським. Не нуль:
 # англійський документ цитує книгу, і цитата лишається дослівною.
@@ -69,8 +69,7 @@ BASELINE = ROOT / "factcheck" / "reports" / "LANGUAGE.md"
 # усе, що є українською прозою.
 PORIH = 5.0
 
-FOUNDATION = ["METHOD.md", "SCHEMA.md", "DEFECTS.md",
-              "TASK-SPEC.md", "HELPERS.md", "README.md"]
+FOUNDATION = ["METHOD.md", "REPORT.md"]
 
 # Заморожене: описує стан на свою дату. Рід 26 — перейменування (чи тут
 # переклад) переписує запис, чиїм предметом був стан до нього.
@@ -152,7 +151,7 @@ def zapysaty(p: dict[str, float]) -> None:
          "> moves the next run's diff, never the prose it describes.",
          "",
          "The technology migrates to English so it can be lifted onto another",
-         "book. The book, its cards and `factcheck/book/` stay Ukrainian, and",
+         "book. The book, its cards and `factcheck/data/book/` stay Ukrainian, and",
          "letters, history and run output are frozen at their date.",
          "",
          "This list may shrink and must never grow: `make check` fails on any",
@@ -202,11 +201,11 @@ def proba() -> int:
           < PORIH)
     probа("тула — англійська зона", zona(ROOT / "tools" / "docs.py") == "english")
     probа("картка — українська зона",
-          zona(ROOT / "factcheck" / "manual" / "05-elektronika.md") == "ukrainian")
+          zona(ROOT / "factcheck" / "data" / "manual" / "05-elektronika.md") == "ukrainian")
     probа("лист — заморожений",
           zona(ROOT / "zvyazok" / "x.md") == "frozen")
     probа("знімок — заморожений",
-          zona(ROOT / "factcheck" / "snapshots" / "a.json") == "frozen")
+          zona(ROOT / "factcheck" / "data" / "snapshots" / "a.json") == "frozen")
     probа("сама книга — не наш предмет",
           zona(ROOT / "manual" / "05-elektronika.md") == "")
 

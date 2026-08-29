@@ -4,7 +4,7 @@
 ## Навіщо окремий крок
 
 Прохід, що лежить у тимчасовій теці, для реєстру **не існує**. Поки
-його не посаджено у `factcheck/evidence/`, жоден інструмент його не
+його не посаджено у `factcheck/data/evidence/`, жоден інструмент його не
 бачить, `vorota` не боронять, а наступна хвиля пройде ті самі одиниці
 вдруге. Робота без посадки — це робота, якої не було.
 
@@ -180,7 +180,7 @@ def main() -> int:
         print("\n(суха проба; `--pysaty` щоб записати)")
         return 0
 
-    kudy = ROOT / "factcheck" / "evidence"
+    kudy = ROOT / "factcheck" / "data" / "evidence"
     for fayl, zapys in sorted(posadka.items()):
         shlyakh = kudy / f"{a.prefiks}-{fayl}.yaml"
         shapka = (
