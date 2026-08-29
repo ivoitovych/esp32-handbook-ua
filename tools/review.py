@@ -30,7 +30,7 @@ RE_ROZDIL_REF = re.compile(r"\bрозділ(?:и|ів|ах|у|і)?\s+(\d{1,2})")
 RE_KARTKA_REF = re.compile(r"\bкартк\w*\s+К(\d{1,2})")
 RE_DIV = re.compile(r"^:::+\s*([a-z-]*)\s*$")
 
-KLASY = {"zhyvlennya", "uvaha", "hrabli", "zakupivlya", "nezvorotne"}
+CLASS_TEXT = {"zhyvlennya", "uvaha", "hrabli", "zakupivlya", "nezvorotne"}
 
 # Пари «неправильно → правильно», що вже траплялися в тексті.
 ODRUKY = [
@@ -148,7 +148,7 @@ def perevirka_blokiv(fs: list[Path]) -> list[str]:
             if not m:
                 continue
             if m.group(1):
-                if m.group(1) not in KLASY:
+                if m.group(1) not in CLASS_TEXT:
                     znaxidky.append(f"{rel}:{i}: невідомий клас блоку «{m.group(1)}»")
                 stack.append(i)
             elif stack:

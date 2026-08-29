@@ -87,9 +87,9 @@ def main(argv: list[str]) -> int:
     odynyci = []
     # Був рядок "ABCDEFG" — власна копія переліку класів, яка вже
     # не мала `K` і `L` і не дістала б `S`. Саме про це попереджає
-    # коментар при `USI_KLASY`: копія переліку — така сама обіцянка
+    # коментар при `ALL_CLASSES`: копія переліку — така сама обіцянка
     # не міняти його, як копія взірця.
-    for klas in factcheck.USI_KLASY:
+    for klas in factcheck.ALL_CLASSES:
         for o in sample.odynyci(klas):
             odynyci.append((o["tekst"], leksemy(o["tekst"])))
 

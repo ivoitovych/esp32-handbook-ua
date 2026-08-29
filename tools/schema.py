@@ -87,7 +87,7 @@ POTREBUYE = {
 #
 # > Перевірка вимог до значення, яка не перевіряє саме значення, —
 # > це рід 3: працює, вертає нуль, і нуль нічого не означає.
-STANY = set(POTREBUYE) | {
+STATUSES = set(POTREBUYE) | {
     "E", "no-external-signal", "F", "unchecked", "G", "refuted",
     "K", "code-context"}
 
@@ -131,7 +131,7 @@ def perevir_zapysy(zap) -> list[str]:
         if nevidomi:
             bidy.append(f"{de}: невідомі поля {', '.join(sorted(nevidomi))}")
         klas = str(r.get("status") or r.get("klas") or "")
-        if klas and klas not in STANY:
+        if klas and klas not in STATUSES:
             bidy.append(f"{de}: невідомий стан `{klas}` — див. SCHEMA.md")
         for pole in POTREBUYE.get(klas, ()):
             # Переїзд: значення може стояти під старим іменем.

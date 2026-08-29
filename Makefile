@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all intake docs run-gate dovidnyk kartky proekty linkcheck cross-refs pins refuted struct-fields correspondence split-queue cache layer3 modality calques spelling budgets arithmetic stale schema self-checks reproducible cache-vs-book layer1 coverage check release release-check entry-points \
+.PHONY: help setup all intake docs naming run-gate dovidnyk kartky proekty linkcheck cross-refs pins refuted struct-fields correspondence split-queue cache layer3 modality calques spelling budgets arithmetic stale schema self-checks reproducible cache-vs-book layer1 coverage check release release-check entry-points \
         check-attribution preview clean
 
 PY := python3
@@ -113,6 +113,13 @@ cache-vs-book:
 docs:
 	@$(PY) tools/docs.py
 	@$(PY) tools/doc_kind.py --suvoro
+
+# Транслітеровані імена в коді: перелік, що може лише коротшати (М2).
+# Заведено після того, як власник знаходив їх поштучно — KLASY, SYLA,
+# --stysnuty, klas — швидше, ніж вони виправлялися. Перевірка падає на
+# БУДЬ-ЯКОМУ новому імені, тобто в коміті, який його вводить.
+naming:
+	@$(PY) tools/naming.py
 
 # Ворота прогонів помічників (М2). Тут лише самоперевірка: справжній
 # прогін потребує теки з відповідями. Заведено після того, як злиття

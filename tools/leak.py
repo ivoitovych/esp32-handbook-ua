@@ -156,7 +156,7 @@ def main() -> int:
     import factcheck
     import sample
 
-    odyn = [u for k in factcheck.USI_KLASY for u in sample.odynyci(k)]
+    odyn = [u for k in factcheck.ALL_CLASSES for u in sample.odynyci(k)]
     teksty = [u["tekst"] for u in odyn]
     zapysy = factcheck.zavantazhyty_dokazy()
     techi = znayty(zapysy, teksty)
@@ -181,10 +181,10 @@ def main() -> int:
     for u in odyn:
         kand_a = factcheck.vsi_kandydaty(zapysy, u["sha"], u["tekst"])
         kand_b = factcheck.vsi_kandydaty(bez, u["sha"], u["tekst"])
-        ka = (min(kand_a, key=lambda x: factcheck.SYLA.get(
-            factcheck.klas_zapysu(x), 9)) if kand_a else None)
-        kb = (min(kand_b, key=lambda x: factcheck.SYLA.get(
-            factcheck.klas_zapysu(x), 9)) if kand_b else None)
+        ka = (min(kand_a, key=lambda x: factcheck.STRENGTH_BY_LETTER.get(
+            factcheck.class_letter_of(x), 9)) if kand_a else None)
+        kb = (min(kand_b, key=lambda x: factcheck.STRENGTH_BY_LETTER.get(
+            factcheck.class_letter_of(x), 9)) if kand_b else None)
         if ka != kb:
             zmina[(ka, kb)] += 1
 

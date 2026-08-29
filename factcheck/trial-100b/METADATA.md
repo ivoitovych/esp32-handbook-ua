@@ -1,6 +1,6 @@
 # Run metadata, recorded by hand from the helper completion notices
 
-Same caveat as `proba-100/METADATA.md`: the harness reports these only in
+Same caveat as `trial-100/METADATA.md`: the harness reports these only in
 the completion notice.
 
 | file | tool calls | duration s | confirmed |

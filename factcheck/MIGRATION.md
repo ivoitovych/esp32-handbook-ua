@@ -241,7 +241,7 @@
 
 ## Етап 6 — документи
 
-`SCHEMA.md`, `ARCHITECTURE.md`, `POMICHNYKY.md`, `METODYKA.md`
+`SCHEMA.md`, `ARCHITECTURE.md`, `HELPERS.md`, `METODYKA.md`
 переписуються під нову архітектуру. Робочий жаргон лишається **тільки
 тут** — це документи супровідника, і в них він доречний.
 
@@ -364,8 +364,8 @@ something.**
 
 The slang is not only inside the documents. It **is** the documents:
 
-    POMICHNYKY.md   BRIEF-SAMPLE.md   SWEEP-NO-SIGNAL.md   MEASURE-NO-SIGNAL.md
-    SPLIT.md        PROKHID-POVNYY.md   TRACES.md      SPROSTOVANE.md
+    HELPERS.md   BRIEF-SAMPLE.md   SWEEP-NO-SIGNAL.md   MEASURE-NO-SIGNAL.md
+    SPLIT.md        PROKHID-POVNYY.md   TRACES.md      REFUTED.md
     evidence/  triage/  pass/  experiments/  snapshots/  wave2/
 
 And so are the tools: `work_orders_f.py`, `sweep_digest.py`,
@@ -385,11 +385,26 @@ the card that needed the book to be understood.
 | `ARKHITEKTURA.md` | `ARCHITECTURE.md` | done |
 | `PEREYIZD.md` | `MIGRATION.md` | done |
 | `PEREVIRYTY.md` | `TO-VERIFY.md` | done |
-| `POMICHNYKY.md` | `WORKERS.md` | |
+| `POMICHNYKY.md` | `HELPERS.md` | done — М2 2026-08-29 |
 | `METODYKA.md` | `METHOD.md` | done — М2, вміст перекладено |
-| `SPROSTOVANE.md` | `REFUTED.md` | |
+| `SPROSTOVANE.md` | `REFUTED.md` | done — М2 2026-08-29 |
 | `UROKY-M2.md` | `LESSONS-M2.md` | M2's file — theirs to rename |
 | `SCHEMA.md` | `SCHEMA.md` | already plain |
+| `dzherela.md` | `SOURCES.md` | done — М2 2026-08-29 |
+| `SPROSTOVANE-m2.md` | `REFUTED-M2.md` | done — М2 2026-08-29 |
+| `ARKHITEKTURA-m2.md` | `ARCHITECTURE-M2.md` | done — М2 2026-08-29 |
+| `DZHERELA-m2.md` | `SOURCES-M2.md` | done — М2 2026-08-29 |
+| `MEREZHA-m2.md` | `NETWORK-M2.md` | done — М2 2026-08-29 |
+| `PEREVIRYTY-m2.md` | `TO-VERIFY-M2.md` | done — М2 2026-08-29 |
+| `proba-100/`, `proba-100b/` | `trial-100/`, `trial-100b/` | done — М2 2026-08-29 |
+
+> **This table must never be rewritten by a rename pass.** Its left column
+> exists to hold names that no longer exist; updating it destroys the only
+> record of what was renamed from what. That is defect kind 26, and it
+> happened to this very table on 2026-08-29: a `sed` over the governing
+> documents rewrote two left-column entries into their own right-column
+> values, producing the line `| REFUTED.md | REFUTED.md |`. Caught by
+> reading the diff, not by any check.
 
 **Generated reports:**
 
@@ -457,7 +472,7 @@ Five renames, three archivals, no deletions:
     PEREYIZD.md              → MIGRATION.md
     PEREVIRYTY.md            → TO-VERIFY.md
     NARYAD-nedostupni.md     → UNREACHABLE-SOURCES.md
-    NARYAD-m2-poyasnenyy.md  → WORK-ORDER-EXAMPLE.md
+    NARYAD-m2-poyasnenyy.md  → TASK-SPEC.md
     NARYAD-m2-{hvylya2,hvylya3,rozbir}.md → archive/
 
 The plan above called the `NARYAD-*.md` files "spent work orders,

@@ -687,7 +687,7 @@ def perevirka(kachaty: bool,
             # > Перевірка вертає те саме число, і те саме число нічого
             # > не означає.
             maye_klas = bool(z.get("status") or z.get("klas"))
-            klas = factcheck.klas_zapysu(z, "").strip().upper()
+            klas = factcheck.class_letter_of(z, "").strip().upper()
 
             # Клас `F` — це «не звірено», типовий стан **відсутності**
             # доказу. Запис доказу з класом `F` не означає нічого й
