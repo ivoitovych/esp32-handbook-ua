@@ -664,6 +664,64 @@ diff between the versions is the cause.
 
 ---
 
+## 9-bis. The tooling is a program too, and nothing was checking it
+
+Two things belong here that were built, are running, and had never been
+written down anywhere but their own source files. Both are the cheapest
+kind of asset to lose: a method described in a document has to be
+rebuilt by whoever needs it next, from a description, under pressure.
+
+### Capture every entry point, then diff
+
+`make check` runs eighteen targets; the technology has far more runnable
+entry points than that. A field-name migration passed `make check` green
+**three times** while nine places were broken — and every one of them
+lived in a command no target invokes. All nine were found by running
+everything and diffing the output. The same harness then caught three
+more during a tool rename.
+
+    tools/entry_points.py --capture DIR    run everything, save output
+    tools/entry_points.py --diff A B       compare two captures
+    tools/entry_points.py --missing        what no target covers
+
+Use it around any change that is supposed to be behaviour-preserving —
+renames, refactors, migrations — where "it still works" is a claim about
+dozens of programs and not about one. Three rules were paid for:
+
+- **Restore only what was clean before each point.** An earlier version
+  ran `git checkout -- .` and ate uncommitted work twice.
+- **Normalise anything that changes per run.** Two entry points printed
+  a temporary directory name, so two captures of them could never agree.
+  A snapshot that always differs from itself is not a snapshot.
+- **An entry point covered only by its own usage message is covered
+  exactly as much as it was never run.** Give the ones that require
+  arguments their arguments.
+
+### Every document declares its kind, and the kind is checked
+
+    generated   a tool rewrites it; editing it by hand is wasted work
+    canonical   the authoritative statement; one owner, no copies
+    historical  a record of a past wave; never edited, numbers frozen
+
+Without this, a maintainer hand-merges a conflict in a file a tool
+overwrites minutes later — which happened — and a reader has no way to
+know that the number in front of them was true only on the day it was
+written.
+
+The label is checked **both ways**: a document labelled generated must
+actually be written by the tool it names, and a document not so labelled
+must not be written by any tool. Detection is by AST over the tool
+sources, not by reading.
+
+> A label nobody verifies is a comment.
+
+And a companion rule, because the index is the first thing a newcomer
+reads: **every document in the folder must appear in it.** Measured
+here, 17 of 32 did not — including all four English documents that carry
+the method to another book.
+
+---
+
 ## 10. Rules about checks themselves
 
 - **A new check that disagrees with the previous one by a factor of two

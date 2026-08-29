@@ -78,6 +78,22 @@ a table, nor two sentences joined across an ellipsis.
 familiar but you cannot see the line in the document, that is
 `not_found`.
 
+**Paste the line with its markup. Do not clean it up.** This is the one
+that costs most, because it does not feel like an error. The document
+says
+
+    Print registers and reboot (``CONFIG_ESP_SYSTEM_PANIC_PRINT_REBOOT``) — default option
+
+and the tidy version — `Print registers and reboot — default option` —
+is the same fact, reads better, and **fails**. So does dropping a
+`:doc:` role, a trailing underscore on a link, or the brackets around an
+option name. Measured over 200 tickets: of the confirmations that
+failed, 13 of 14 had found the right passage and lost it in the copying.
+
+Copy the characters that are there — backticks, colons, brackets,
+underscores and all. If two useful sentences are not adjacent, send two
+entries or one entry and say so; do not join them.
+
 ## [NETWORK] What is reachable from here
 
 Only `raw.githubusercontent.com`, via `curl`. Everything else answers

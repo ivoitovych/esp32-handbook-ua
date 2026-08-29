@@ -3,8 +3,11 @@
 
 ## Why this exists, and why it nearly did not
 
-`make check` runs eighteen targets. The technology has **fifty-two**
-runnable entry points. On 2026-08-28 a field-name migration passed
+`make check` runs eighteen targets. The technology has far more runnable
+entry points — `--list` prints how many, and the number is deliberately
+not repeated in this sentence: an earlier draft said "fifty-two" while
+the list held fifty-seven, and a document that miscounts the thing it
+exists to count is worse than one that declines to. On 2026-08-28 a field-name migration passed
 `make check` green three times while nine places were broken — and every
 one of them lived in a command no target invokes: `factcheck.py blocked`
 raised `KeyError` for four hours; four tools keyed results by a field
@@ -35,7 +38,7 @@ repository at all, and would have died with the session that wrote it.
 A capture is a directory of `<point>.out` / `.err` files. Two captures
 compare as text. Use it around any change that is supposed to be
 behaviour-preserving — renames, refactors, migrations — where "it still
-works" is a claim about fifty-two programs and not about one.
+works" is a claim about every one of those programs and not about one.
 
 ## Restoring the tree after each point
 
@@ -189,6 +192,8 @@ def main() -> int:
     if o.list:
         for t in TOCHKY:
             print("  " + " ".join(t))
+        print(f"\nточок входу {len(TOCHKY)} у "
+              f"{len({t[0] for t in TOCHKY})} інструментах")
         return 0
     if o.missing:
         return nepokryti()

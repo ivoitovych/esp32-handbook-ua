@@ -62,9 +62,17 @@ VLASNYK = {
     "вердикти наряду": "tools/intake_f.py",
 }
 
+# «Керівний» тут — не те саме, що `canonical` у `doc_kind.py`, і два
+# переліки навмисно не збігаються. `doc_kind` питає, **хто власник
+# змісту**: історичний документ заморожений і правити його не можна.
+# Цей перелік питає інше — **чиї посилання мають лишатися дійсними**, а
+# заморожений документ, що називає перейменований інструмент, бреше
+# читачеві так само, як живий. Тому історичні тут є, і це не розбіжність
+# воріт, а два різні питання про один файл.
 KERIVNI = ["METHOD.md", "DEFECTS.md", "LESSONS-M2.md", "RETROSPECTIVE.md",
            "SCHEMA.md", "ARCHITECTURE.md", "POMICHNYKY.md", "README.md",
-           "MIGRATION.md", "WORK-ORDER-EXAMPLE.md"]
+           "MIGRATION.md", "WORK-ORDER-EXAMPLE.md", "TASK-SPEC.md",
+           "SPROSTOVANE.md", "dzherela.md", "WAVE-W1.md"]
 
 # Рядок, що перелічує класи. ФОРМАТІВ ТРИ, і це не примха:
 #
@@ -178,8 +186,28 @@ def perevirka() -> list[str]:
                 bidy.append(
                     f"TASK-SPEC [{imya}]: наряд пропонує вердикти "
                     f"{sorted(chuzhi)}, яких ворота не перевіряють")
+    bidy += pokazhchyk_povnyy()
     bidy += kesh_ne_v_git()
     return bidy
+
+
+def pokazhchyk_povnyy() -> list[str]:
+    """Чи згадує покажчик `README.md` кожен документ теки.
+
+    Знайдено виміром, а не на око: **17 із 32** документів не було в
+    покажчику, і серед них `METHOD.md`, `RETROSPECTIVE.md`,
+    `MIGRATION.md`, `TASK-SPEC.md` — тобто вся англійська половина
+    технології. Читач, якому README каже «починайте звідси», не мав
+    звідки дізнатися, що вони існують.
+
+    Це рід 3 у нашому ж каталозі, вивернутий навиворіт: не нуль, що
+    нічого не рахує, а покажчик, який мовчить про те, чого не назвали.
+    Документ, якого немає в покажчику, не «менш важливий» — він
+    невидимий, і невидимість не є рішенням.
+    """
+    rd = (FC / "README.md").read_text(encoding="utf-8")
+    nema = [p.name for p in sorted(FC.glob("*.md")) if p.name not in rd]
+    return [f"README.md: покажчик не називає {n}" for n in nema]
 
 
 def proba() -> int:
