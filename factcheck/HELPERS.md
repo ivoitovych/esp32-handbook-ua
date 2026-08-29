@@ -1,780 +1,806 @@
-# Пул помічників: як його наряджати й чому саме так
+# The helper pool: how to brief it, and why exactly this way
 
 > **canonical** — the decision lives here; there are to be no copies
 
-Досі цей документ жив у тимчасовому каталозі, тобто зникав разом із
-сесією. Це неправильно: наряд помічника — така сама частина технології,
-як реєстр і `layer3.py`, і вчорашній наряд пояснює вчорашній брак.
+This document used to live in a temporary directory, which is to say it
+vanished with the session. That was wrong: a helper's work order is as much
+a part of the technology as the registry and `layer3.py`, and yesterday's
+order explains yesterday's waste.
 
 ---
 
-## Чому дешева модель узагалі можлива
+## Why a cheap model is possible at all
 
-Не тому, що вона дешевша. Тому, що **третій шар знімає вимогу до її
-сили** (`METHOD.md` §3).
+Not because it is cheaper. Because **layer 3 removes the requirement on its
+strength** (`METHOD.md` §3).
 
-Слабка модель помиляється передбачувано: переказує замість цитувати,
-зшиває речення, переставляє слова, вигадує правдоподібне. Кожну з цих
-відмов скрипт ловить механічно й повністю. Отже збирання можна віддати
-найдешевшій моделі, а дорогу увагу лишити другому шарові.
+A weak model fails predictably: it paraphrases instead of quoting, stitches
+sentences together, reorders words, invents the plausible. Every one of
+those failures is caught by a script, mechanically and completely. So the
+gathering can go to the cheapest model, and expensive attention can stay
+with layer 2.
 
-Числа першої хвилі на Haiku: **143 записи, 94 цитати пройшли шар 3
-дослівно.** Брак виявився саме тим, що передбачено, і жоден його зразок
-не вимагав розуміння предмета, щоб його помітити.
-
----
-
-## Межа, за яку дешеву модель пускати не можна
-
-**Haiku безпечний там, де документ уже в кеші й робота зводиться до
-«знайти й переписати». Він небезпечний там, де документа може не
-бути.**
-
-Не знайшовши документа, він не пише клас `C` — він **вигадує
-правдоподібну назву джерела**: «властивості логіки CMOS»,
-«фундаментальне правило електроніки». М2 через це відхилив цілий файл
-доказів.
-
-Тому наряд **називає конкретний файл**, а не тему. «Перевір це в
-`esp32c3.inc`» — годиться. «З'ясуй, чи GPIO2 на C3 strapping» — ні.
-
-Уточнення, здобуте дорого: **вада не властива дешевим моделям, вона
-властива поспіху.** Найгірший її зразок у проєкті — мій власний, за
-десять проходів до появи пулу. Тому ворота проти неї — механічні, а не
-«не беріть дешеву модель».
+The first wave's numbers on Haiku: **143 records, 94 quotes passed layer 3
+verbatim.** The waste was exactly what had been predicted, and no instance
+of it required understanding the subject to spot.
 
 ---
 
-## Що помічник робить і чого не робить
+## The line a cheap model must not be sent past
 
-**Робить:** качає першоджерело, читає його **цілком** проти переліку
-тверджень, віддає YAML із дослівними цитатами.
+**Haiku is safe where the document is already in the cache and the job
+reduces to "find it and copy it out". It is dangerous where the document
+may not exist.**
 
-**Не робить:** не пише взірців, не присвоює класів, не змінює нічого в
-репозиторії.
+Having failed to find a document, it does not write `named-unreachable` —
+it **invents a plausible source name**: "the properties of CMOS logic", "a
+fundamental rule of electronics". M2 rejected an entire evidence file over
+this.
 
-Причина конкретна: за цей проєкт **тричі** широкий взірець мовчки
-позначив «звірено» те, чого не звіряв. Ця відмова невидима, і ловить її
-лише аудит у контексті, який пам'ятає всі три випадки.
+So the order **names a specific file**, not a topic. "Check this in
+`esp32c3.inc`" will do. "Find out whether GPIO2 on the C3 is a strapping
+pin" will not.
+
+A refinement bought expensively: **the defect is not a property of cheap
+models, it is a property of haste.** The worst instance of it in this
+project is my own, ten passes before any pool existed. Which is why the
+gate against it is mechanical, and not "do not use a cheap model".
 
 ---
 
-## Шість заборон на те, що вважати джерелом
+## What a helper does and does not do
 
-Перші три куплені штурмом класу `E`, четверта й п'ята — знахідка М2 з
-їхнього штурму того самого вечора, шоста — з хвилі 8.
+**Does:** downloads the primary source, reads it **in full** against a list
+of claims, returns YAML with verbatim quotes.
 
-> Заборон тут шість, і заголовок казав «п'ять» доти, доки цього не
-> поміряли. Документ, що не сходиться сам із собою в числі, яке сам і
-> друкує, — рід 3 нашого ж каталогу в найдешевшому вигляді.
+**Does not:** write patterns, assign statuses, or change anything in the
+repository.
 
-1. **Переказ — не цитата.** Усе, що в полі `cytata`, звіряється
-   підрядком у самому документі. Переказ туди не проходить.
-2. **Пам'ять — не документ.** Рядок, набраний з пам'яті, валить запис
-   навіть при правильному факті: `Static struct` замість
-   `static struct` — реальний випадок, реальне ядро Linux, відхилено.
-3. **Недосяжний документ — не здобутий документ.** Якщо не
-   завантажилося, це `unreachable`, а не `confirmed`.
-4. **Книга не є джерелом для себе.** Якщо єдине знайдене — інший розділ
-   цієї ж книги, це `truly_none`. Інакше присуд, який ми перевіряємо,
-   засвідчує сам себе — рівно та вада, заради якої штурм і затіяно.
-5. **«Фізика підтверджує», «логіка підтверджує», «стандартна
-   практика» — не джерело.** Не можеш навести адресу документа й рядок
-   із нього — це `advice` або `truly_none`.
-6. **Знати відповідь — не підстава написати цитату.** Якщо факт
-   відомий, а рядка в документі не видно, це `advice` або
-   `not_found`.
+The reason is specific: over this project a wide pattern has **three times**
+silently marked as "checked" something it never checked. That failure is
+invisible, and only an audit in context — one that remembers all three
+cases — catches it.
 
-### Ніколи не називай очікувану відповідь
+---
 
-Найдорожчий урок за дві хвилі, і обидві провалилися **з тієї самої
-причини в протилежні боки**.
+## Six prohibitions on what counts as a source
 
-**Хвиля перша.** Наряд ставив `pidtverdzheno` першим у переліку. З 247
-відповідей 185 виявилися «підтверджено» з посиланням на саму книгу.
+The first three were bought by the sweep of `no-external-signal`; the
+fourth and fifth are M2's finding from their own sweep the same evening;
+the sixth comes from wave 8.
 
-**Хвиля друга.** Я переробив наряд і написав чорним по білому:
-«**Очікувана відповідь тут — `ne_znayshov`**». З 190 відповідей
-документ назвали **вісім**. Решта — суцільне `ne_znayshov` без жодної
-спроби щось відкрити.
+> There are six prohibitions here, and the heading said "five" until
+> somebody measured. A document that disagrees with itself about a number
+> it prints itself is kind 3 of our own catalogue in its cheapest form.
 
-Двоє помічників навели **моє ж речення** як обґрунтування:
+1. **A paraphrase is not a quote.** Everything in the `quote` field is
+   checked as a substring of the document itself. A paraphrase does not
+   pass.
+2. **Memory is not a document.** A line typed from memory kills the record
+   even when the fact is right: `Static struct` instead of `static struct` —
+   a real case, the real Linux kernel, rejected.
+3. **An unreachable document is not an obtained document.** If it did not
+   download, that is `unreachable`, not `confirmed`.
+4. **The book is not a source for itself.** If the only thing found is
+   another chapter of this same book, that is `truly_none`. Otherwise the
+   verdict we are checking certifies itself — precisely the defect the
+   sweep was mounted against.
+5. **"Physics confirms", "logic confirms", "standard practice" are not a
+   source.** If you cannot give a document address and a line from it, that
+   is `advice` or `truly_none`.
+6. **Knowing the answer is not grounds for writing a quote.** If the fact
+   is known but the line is not visible in the document, that is `advice`
+   or `not_found`.
 
-> «This is the expected and correct result, as documented in the NARYAD
-> file: *Очікувана відповідь тут — `ne_znayshov`*.»
+### Never name the expected answer
 
-> **Закон.** Наряд, який називає очікувану відповідь, отримує саме її —
-> **без роботи**. Байдуже, яка це відповідь.
+The most expensive lesson of two waves, and both failed **for the same
+reason in opposite directions**.
 
-Це не той самий закон, що нижче, а його друга половина. Нижній рятує
-**реєстр**: коли найдешевша відповідь нічого не стверджує, недбалість
-не породжує неправди. Але **міру** він не рятує: помічник, який не
-відкрив жодного документа й двадцять п'ять разів написав «не знайшов»,
-дає бездоганно нешкідливий і бездоганно хибний статистичний результат.
+**Wave one.** The order listed `pidtverdzheno` first. Of 247 answers, 185
+came back "confirmed" citing the book itself.
 
-### Що працює замість цього
+**Wave two.** I rewrote the order and wrote in black and white: "**the
+expected answer here is `ne_znayshov`**". Of 190 answers, **eight** named a
+document. The rest were solid `ne_znayshov` with no attempt to open
+anything.
 
-Не називати розподіл узагалі. Замість «якої відповіді ми чекаємо» —
-**що кожна відповідь мусить пред'явити**:
+Two helpers cited **my own sentence** as their justification:
 
-| Вердикт | Обов'язкове свідчення роботи |
+> "This is the expected and correct result, as documented in the NARYAD
+> file: *Очікувана відповідь тут — `ne_znayshov`*."
+
+> **Law.** An order that names the expected answer gets exactly that answer
+> — **with no work done**. It does not matter which answer it is.
+
+This is not the same law as the one below, but its other half. The lower
+one saves the **registry**: when the cheapest answer asserts nothing,
+carelessness does not manufacture untruth. But it does not save the
+**measurement**: a helper who opened no document and wrote "not found"
+twenty-five times gives a flawlessly harmless and flawlessly wrong
+statistical result.
+
+### What works instead
+
+Do not name the distribution at all. Instead of "which answer we expect" —
+**what each answer must produce**:
+
+| Verdict | Mandatory evidence of work |
 |---|---|
-| `confirmed` | адреса документа + дослівний рядок із нього |
-| `disputes` | адреса документа + дослівний рядок, що суперечить |
-| `not_found` | **адреса документа, який дивилися** |
-| `unreachable` | адреса, яку пробували, і код відповіді |
+| `confirmed` | document address + a verbatim line from it |
+| `disputes` | document address + a verbatim line that contradicts |
+| `not_found` | **the address of the document that was looked at** |
+| `unreachable` | the address that was tried, and the response code |
 
-> Самі вердикти — не тут. Перелік, який бачить виконавець, живе в
-> `factcheck/TASK-SPEC.md`, блоки `[VERDICTS-*]`, і звідти його складає
-> кожен наряд; ворота `tools/intake_f.py` перевіряють той самий перелік,
-> а `tools/docs.py` звіряє їх між собою. Ця таблиця показує **чого
-> вимагати від вердикту**, а не який їх набір.
+> The verdicts themselves are not here. The list the executor sees lives in
+> `factcheck/TASK-SPEC.md`, blocks `[VERDICTS-*]`, and every order is
+> assembled from there; the gate `tools/intake_f.py` checks that same list,
+> and `tools/docs.py` compares the two. This table shows **what to demand
+> of a verdict**, not which set of them exists.
 >
-> До 2026-08-28 вердикти писалися транслітерованою українською
-> (`pidtverdzheno`, `ne_znayshov`, `sperechayetsya`, `nedosyazhne`).
-> Журнал нижче цитує ті слова там, де вони справді стояли в наряді того
-> дня; ворота приймають їх і досі й переводять на нинішні.
+> Until 2026-08-28 the verdicts were written in transliterated Ukrainian
+> (`pidtverdzheno`, `ne_znayshov`, `sperechayetsya`, `nedosyazhne`). The log
+> below quotes those words where they genuinely stood in the order of that
+> day; the gate still accepts them and translates them to the current ones.
 
-Ключове — третій рядок. Доки `not_found` можна написати, не назвавши
-нічого, він коштує нуль і буде відповіддю за замовчуванням. Щойно він
-вимагає адреси — він коштує стільки ж, скільки решта, і перестає бути
-шляхом найменшого опору.
+The key row is the third. As long as `not_found` can be written without
+naming anything, it costs zero and will be the default answer. The moment
+it requires an address, it costs the same as the rest and stops being the
+path of least resistance.
 
-`tools/measure_f.py` рахує `not_found` без адреси окремою категорією
-«не дивився»: у міру такий запис не входить ані в чисельник, ані в
-знаменник.
+`tools/measure_f.py` counts `not_found` with no address as a separate
+category, "did not look": such a record enters neither the numerator nor
+the denominator of the measure.
 
-### Перевіряти наряд на одному помічникові, перш ніж пускати десятьох
+### Test the order on one helper before releasing ten
 
-Дві хвилі по 250 одиниць витрачено на те, що видно з двох пакетів.
-Наряд — такий самий інструмент, як скрипт, і на нього поширюється
-`Р-ЗВІРКА`: спершу випробувати, потім застосовувати.
+Two waves of 250 units were spent on what is visible from two batches. An
+order is as much a tool as a script, and `Р-ЗВІРКА` applies to it: try it
+first, then use it.
 
 ---
 
-## Журнал спроб: що пробували, чим воно провалилося, чим вилікувано
+## The log of attempts: what was tried, how it failed, what cured it
 
-**Це головний розділ цього файлу.** Закони вище — висновки; тут
-матеріал, з якого вони зроблені. Перед тим як складати новий наряд,
-читати треба саме цю таблицю: кожен рядок — хвиля, яку вже витратили,
-і повторювати її нема потреби.
+**This is the main section of this file.** The laws above are conclusions;
+here is the material they were made from. Before composing a new order,
+this is the table to read: each row is a wave already spent, and there is
+no need to repeat it.
 
-| # | Задум наряду | Що вийшло | Причина | Чим вилікувано |
+| # | The order's design | What came out | Cause | What cured it |
 |---|---|---|---|---|
-| 1 | «підтвердь або спростуй», текст книги в наряді | **185 з 247** назвали джерелом саму книгу | найдешевша відповідь `pidtverdzheno` — **стверджує**, а текст лежав тут же | ворота `RE_SAMA_KNYHA` + перепис наряду |
-| 2 | те саме, але написано «очікувана відповідь — `ne_znayshov`» | документ назвали **8 із 190** | наряд **назвав очікувану відповідь**; двоє навели цю фразу як виправдання | прибрати згадку розподілу взагалі |
-| 3 | вимога `dzherelo` **на кожен** вердикт, розподіл не названо | 196 придатних, «не дивився» **нуль** | — | **це чинна форма** |
-| 4 | пакет = «один розділ книги», «вибери один документ на пакет» | **249 з 274** — самопосилання | слово «розділ» вказує на файл книги; найдешевший документ під описом — сам розділ | тема замість розділу + наряд називає документ-кандидат |
-| 5 | форма 3 + тема + документ-кандидат, суцільний прохід | 149 записів, самопосилань **нуль**, без документа **нуль** | — | **чинна форма, підтверджена вдруге** |
-| 10 | клас `F`, вибірка **випадкова**, кандидата немає за побудовою | 71 % `ne_znayshov`; підтверджень 18, шар 3 пережили **9** | вибірка випадкова, тож документ-кандидата назвати ніде; помічник шукає наосліп | **нічим — це вимір, а не хиба.** Число й є ціною відсутнього кандидата |
-| 6 | той самий наряд, але тема пакета не мала кандидата | помічник **відмовився працювати** й сказав чому | шапка обіцяла кандидата «для кожного пакета», генератор мовчки не друкував рядка | пакет без кандидата тепер прямо каже, що кандидата немає |
+| 1 | "confirm or refute", the book's text inside the order | **185 of 247** named the book as the source | the cheapest answer `pidtverdzheno` **asserts**, and the text was right there | the `RE_SAMA_KNYHA` gate + a rewritten order |
+| 2 | the same, but stating "the expected answer is `ne_znayshov`" | a document was named by **8 of 190** | the order **named the expected answer**; two cited that sentence as justification | remove any mention of the distribution |
+| 3 | `dzherelo` required **on every** verdict, distribution unnamed | 196 usable, "did not look" **zero** | — | **this is the working form** |
+| 4 | batch = "one chapter of the book", "pick one document per batch" | **249 of 274** — self-references | the word "chapter" points at a book file; the cheapest document matching the description is the chapter itself | topic instead of chapter + the order names a candidate document |
+| 5 | form 3 + topic + candidate document, continuous pass | 149 records, self-references **zero**, without a document **zero** | — | **the working form, confirmed a second time** |
+| 10 | `unchecked` queue, **random** sample, no candidate by construction | 71 % `ne_znayshov`; 18 confirmations, **9** survived layer 3 | the sample is random, so there is nowhere to name a candidate; the helper searches blind | **nothing — this is a measurement, not a fault.** The number is the price of a missing candidate |
+| 6 | the same order, but the batch topic had no candidate | the helper **refused to work** and said why | the header promised a candidate "for every batch", the generator silently omitted the line | a batch with no candidate now says plainly that there is none |
 
-### Хвиля 6: відмова — це справний вихід, а не збій
+### Wave 6: a refusal is a working outcome, not a breakdown
 
-Помічник, який дістав наряд із невиконаною обіцянкою, не вигадав
-документа й не написав «не знайшов». Він зупинився й назвав, чого бракує.
+A helper handed an order with an unkept promise did not invent a document
+and did not write "not found". It stopped and named what was missing.
 
-Це варто вміти впізнавати: **відмова коштує одного виклику інструмента
-й виглядає як зламана хвиля за будь-якою кількісною ознакою.** Відрізняє
-її те, що помічник назвав причину, і причина справдилася. Перш ніж
-списувати наряд на ліниву модель — прочитати, що саме вона сказала.
+This is worth learning to recognise: **a refusal costs one tool call and
+looks like a broken wave by every quantitative sign.** What distinguishes
+it is that the helper named a cause, and the cause held up. Before writing
+a wave off to a lazy model — read what it actually said.
 
-### Закон, який ця хвиля дописала до двох попередніх випадків
+### The law this wave added to two earlier cases
 
-Це **третій** раз, коли той самий дефект зупиняв роботу:
+This is the **third** time the same defect stopped work:
 
-| Де | Що обіцяв документ | Що робив код |
+| Where | What the document promised | What the code did |
 |---|---|---|
-| `factcheck.py vorota` | дві перевірки | одну |
-| `tools/measure_f.py` | рахує придатні записи | рахував **до** власних воріт |
-| `tools/sweep.py` | кандидат «для кожного пакета» | мовчки пропускав рядок |
+| `factcheck.py vorota` | two checks | one |
+| `tools/measure_f.py` | counts usable records | counted **before** its own gate |
+| `tools/sweep.py` | a candidate "for every batch" | silently skipped the line |
 
-> **Обіцянка в тексті — це теж інваріант.** Вона мусить або
-> справджуватися, або бути знята з тексту. Невиконана обіцянка гірша за
-> відсутню: відсутню видно, а на невиконану покладаються.
+> **A promise in the text is an invariant too.** It must either hold or be
+> removed from the text. An unkept promise is worse than an absent one: an
+> absent one is visible, and an unkept one is relied upon.
 
-Двічі з трьох знайшов не я: `vorota` — зовнішня рецензія, `prochid` —
-помічник за два долари. Обидва знайшли, бо **спробували скористатися**
-обіцянкою. Читання власного тексту цього не дає.
+Two of the three were found by someone other than me: `vorota` by an
+external review, `prochid` by a two-dollar helper. Both found it because
+they **tried to use** the promise. Reading your own text does not do that.
 
-### Чого суцільний прохід **не** дає, і як це називати вголос
+### What a continuous pass does **not** give, and how to say so aloud
 
-35 з 58 нарядів однотемні: всі десять пакетів беруть один документ. У
-такому наряді помічник завантажує його раз і проводить по ньому всі 50
-одиниць — 18 викликів інструментів на 50 одиниць, тобто **втричі нижче
-за поріг чесної хвилі** з таблиці нижче.
+35 of 58 orders are single-topic: all ten batches take one document. In
+such an order the helper downloads it once and walks all 50 units through
+it — 18 tool calls for 50 units, that is **three times below the honest-wave
+floor** in the table further down.
 
-Це не підробка. Самопосилань нема, документ названо, його справді
-прочитано. Але й ознака чесності тут не працює: **лічба викликів міряє
-розсіяність теми, а не старанність.** На однотемному наряді її треба
-рахувати від кількості *документів*, а не одиниць.
+This is not forgery. There are no self-references, the document is named,
+it really was read. But the honesty sign does not work here either: **the
+call count measures how scattered the topic is, not how diligent the work
+was.** On a single-topic order it must be counted per *document*, not per
+unit.
 
-Головне ж інше — що з цього має право потрапити в книгу:
+The main point is something else — what earns the right to go into the
+book:
 
-> `ne_znayshov` у суцільному проході означає **«цього немає в названому
-> документі»**, а не «цього немає ніде».
+> `ne_znayshov` in a continuous pass means **"this is not in the named
+> document"**, not "this is nowhere".
 
-Тому речення, яке ми маємо право надрукувати, — не «кожне твердження
-звірено», а: **«кожну одиницю звірено щонайменше з одним профільним
-документом, і його адресу записано»**. Друге вужче, зате в ньому є
-адреса, за якою читач може перевірити нас самих.
+So the sentence we are entitled to print is not "every claim was checked"
+but: **"every unit was checked against at least one relevant document, and
+its address was recorded"**. The second is narrower, but it carries an
+address at which a reader can check us.
 
-Наряди від № 13 вимагають **другого** документа перед тим, як писати
-`ne_znayshov`, і переліку всіх відкритих адрес у `komentar`. Це не
-знімає обмеження — лише піднімає підлогу з одного документа до двох.
+Orders from № 13 require a **second** document before `ne_znayshov` may be
+written, and a list of every address opened in `komentar`. That does not
+lift the limitation — it only raises the floor from one document to two.
 
-### Хвиля 7: заборонити мало — треба пояснити
+### Wave 7: prohibiting is not enough — you have to explain
 
-Перші шість хвиль лікували наряд **заборонами й воротами**. Хвиля 7
-показала, чого цим не вилікуєш.
+The first six waves treated the order with **prohibitions and gates**. Wave
+7 showed what that does not cure.
 
-Звід третього шару по 1661 придатному запису:
+A layer 3 digest over 1661 usable records:
 
 | | |
 |---|---|
-| заявлених підтверджень | 528 |
-| пережили дослівну звірку | **235** |
-| загинуло | **293** |
+| claimed confirmations | 528 |
+| survived the verbatim check | **235** |
+| died | **293** |
 
-Розбір восьми навмання з тих, що загинули, **не знайшов жодного
-шахрайства**. Знайшов чотири роди сумлінної роботи не в той бік:
+Examining eight at random from those that died found **no fraud at all**.
+It found four kinds of conscientious work pointed the wrong way:
 
-| Рід | Що зробив помічник |
+| Kind | What the helper did |
 |---|---|
-| склеєна цитата | з'єднав два далекі місця через `…` |
-| індекс замість цілі | назвав `peripherals/index.rst`, процитував `ledc.rst` |
-| переказ коду прозою | «handles SerialException errors with context» |
-| переформатований вміст | склеїв JSON у рядок, бо так читабельніше |
+| stitched quote | joined two distant places with `…` |
+| index instead of target | named `peripherals/index.rst`, quoted `ledc.rst` |
+| code retold as prose | "handles SerialException errors with context" |
+| reformatted content | glued JSON into one line, because it reads better |
 
-Усе це — спроби бути корисним. Помічник **не знав**, що цитату
-качатимуть удруге й шукатимуть підрядком. У наряді цього не було.
+All of these are attempts to be useful. The helper **did not know** the
+quote would be downloaded a second time and searched for as a substring.
+That was not in the order.
 
-> **Наряд — це весь світ, у якому живе помічник.** Що в нього не
-> записано, того для помічника не існує: ані третього шару, ані того,
-> що переказ знищує його ж роботу цілком.
+> **The order is the entire world the helper lives in.** What is not
+> written in it does not exist for the helper: not layer 3, and not the
+> fact that a paraphrase destroys their own work entirely.
 
-Заборона без причини лишає найдешевшим шляхом здогад. Причина міняє
-розрахунок: якщо переказ **однаково викинуть**, чесне «шукав, не
-знайшов» стає не поразкою, а найкращим із доступних результатів.
+A prohibition with no reason leaves guessing as the cheapest path. A reason
+changes the arithmetic: if a paraphrase **will be discarded anyway**, an
+honest "looked, did not find" becomes not a defeat but the best available
+result.
 
-Тому наряд від хвилі 7 містить три пояснення (не заборони):
+So the order from wave 7 onward carries three explanations (not
+prohibitions):
 
-1. **опис усіх трьох шарів із числами** — «із 528 заявок пережили 235»;
-2. **пряме визнання, що `ne_znayshov` — повноцінний результат**, бо
-   каже, де вже шукали;
-3. **поле `potribno`** — назва документа, якого бракує. Супровідник
-   дістає його іншими шляхами й кладе в кеш; одиниця йде в наступний
-   наряд уже з документом. Недосяжне твердження перестає бути тупиком.
+1. **a description of all three layers with numbers** — "of 528 claims, 235
+   survived";
+2. **a plain admission that `ne_znayshov` is a full result**, because it
+   says where the search has already been;
+3. **the `potribno` field** — the name of the document that is missing. The
+   maintainer obtains it by other means and puts it in the cache; the unit
+   goes into the next order with the document already in hand. An
+   unreachable claim stops being a dead end.
 
-### Ворота теж помиляються, і це треба міряти окремо
+### Gates are wrong too, and that has to be measured separately
 
-Та сама хвиля: `FreeRTOS Timer Task (Tmr Svc)` гинула проти документа,
-де стоїть `FreeRTOS Timer Task ("Tmr Svc")`. Чесний витяг, убитий
-власним інструментом.
+The same wave: `FreeRTOS Timer Task (Tmr Svc)` was dying against a document
+that reads `FreeRTOS Timer Task ("Tmr Svc")`. An honest extract, killed by
+our own tool.
 
-Прибрав лапки з порівняння зовсім (лапки — розмітка). Частка вцілілих
-**38 % → 45 %**: сім відсотків «браку помічників» були мої.
+I removed quotation marks from the comparison entirely (quotes are markup).
+The survival share went **38 % → 45 %**: seven per cent of "helper waste"
+was mine.
 
-Слова, числа й регістр у порівнянні лишилися недоторкані — у тій самій
-вибірці `serial clock bus (SCL)` проти `serial clock line (SCL)`, і це
-справжня хиба, яка мусить гинути.
+Words, numbers and case in the comparison were left untouched — in the same
+sample, `serial clock bus (SCL)` against `serial clock line (SCL)`, and
+that is a genuine defect which must die.
 
-> **Перш ніж пояснювати чужий брак чужою недбалістю — виміряй свій
-> інструмент.** Порівнювати треба зміст, а не розмітку; але жодне
-> послаблення не сміє торкатися слів, чисел і великих літер.
+> **Before explaining someone else's waste by their carelessness — measure
+> your own tool.** Compare content, not markup; but no loosening may ever
+> touch words, numbers or capital letters.
 
-### Підсумок суцільного проходу: що з нього вийшло насправді
+### The continuous pass, summed up: what actually came of it
 
-58 нарядів, 2787 одиниць у половині М1. Пройдено **2775** — 99.6 %.
+58 orders, 2787 units in M1's half. Completed **2775** — 99.6 %.
 
-| | Скільки |
+| | Count |
 |---:|---|
-| записів усього | 2791 |
-| **самопосилань** | **0** |
-| без названого документа | 16 |
-| «прочитав документ, цього там немає» | 1704 |
-| заявлених підтверджень | 850 |
-| **пережили дослівну звірку** | **374 (44 %)** |
-| недосяжно (даташити не на GitHub) | 219 |
-| сперечається з книгою | 2 |
+| records in total | 2791 |
+| **self-references** | **0** |
+| with no document named | 16 |
+| "read the document, it is not there" | 1704 |
+| claimed confirmations | 850 |
+| **survived the verbatim check** | **374 (44 %)** |
+| unreachable (datasheets not on GitHub) | 219 |
+| disputes the book | 2 |
 
-Для порівняння: хвиля 1 давала **75 %** браку за самопосиланнями
-самими. Тут їх нуль на 2791 записі — форма наряду тримає.
+For comparison: wave 1 gave **75 %** waste from self-references alone. Here
+there are none in 2791 records — the form of the order holds.
 
-**Посадка (`tools/sweep_land.py`) — окремий обов'язковий крок.**
-Прохід, що лишився в тимчасовій теці, для реєстру не існує: жоден
-інструмент його не бачить, ворота не боронять, наступна хвиля пройде
-ті самі одиниці вдруге. Уроки самої посадки — у `METHOD.md` §3,
-третій закон про взірці.
+**Landing (`tools/sweep_land.py`) is a separate mandatory step.** A pass
+left in a temporary directory does not exist for the registry: no tool sees
+it, no gate defends it, and the next wave will walk the same units a second
+time. The lessons of landing itself are in `METHOD.md` §3, the third law
+about patterns.
 
-### Хвиля 8: я прибрав згадку про ворота — і самопосилання повернулися
+### Wave 8: I removed the mention of the gates — and self-references came back
 
-Наряд на чергу з **названим для кожної одиниці джерелом** я переписав
-із нуля й, скорочуючи, викинув два розділи: «довідник не є джерелом для
-себе» і згадку про те, що ворота існують.
+I rewrote from scratch the order for a queue **with a source named for
+every unit** and, shortening it, threw out two sections: "a handbook is not
+a source for itself" and the mention that gates exist.
 
-Результат на 120 одиницях:
+The result over 120 units:
 
-| | Хвиля 5–7 (розділи були) | Хвиля 8 (я їх зняв) |
+| | Waves 5–7 (sections present) | Wave 8 (I removed them) |
 |---|---:|---:|
-| записів | 2791 | 120 |
-| **самопосилань** | **0** | **2** |
+| records | 2791 | 120 |
+| **self-references** | **0** | **2** |
 
-Дві на сто двадцять — це 1.7 %, а не 75 % першої хвилі: **названий
-для кожної одиниці документ тримає сильно й сам по собі.** Але до нуля
-доводила саме згадка про ворота, і я її зняв власноруч.
+Two in a hundred and twenty is 1.7 %, not the 75 % of the first wave: **a
+document named for each unit holds strongly on its own.** But what brought
+it to zero was the mention of the gates, and I removed that with my own
+hands.
 
-Обидва самопосилання ще й назвали **вигадане сховище**:
+Both self-references also named an **invented repository**:
 
     raw.githubusercontent.com/yaroslav-voytovych/esp32-handbook-ua
 
-Такого власника не існує. Тобто зникла не лише заборона — зникла
-причина не вигадувати.
+No such owner exists. So what disappeared was not only the prohibition —
+what disappeared was the reason not to invent.
 
-> Записаний закон казав: **заборона словами не тримає, тримає
-> механіка.** Це правда, але з неї не випливає, що про механіку можна
-> мовчати. Тримає **сказана** механіка: помічник, який знає, що
-> адресу звірять, не має чого виграти від вигаданої.
+> The written law said: **a prohibition in words does not hold, mechanism
+> holds.** That is true, but it does not follow that the mechanism may go
+> unmentioned. What holds is a **stated** mechanism: a helper who knows the
+> address will be checked has nothing to gain from an invented one.
 
-Обов'язково в кожному наряді, скільки б його не скорочували:
+Mandatory in every order, however much it is shortened:
 
-1. довідник не є джерелом для себе;
-2. **ворота існують і що саме вони відкидають**;
-3. `dzherelo` на кожен вердикт, включно з негативним.
+1. a handbook is not a source for itself;
+2. **gates exist, and what exactly they reject**;
+3. `dzherelo` on every verdict, the negative ones included.
 
-### Ще з тієї ж хвилі: три заявлені суперечності, нуль справжніх
+### Also from that wave: three claimed contradictions, none real
 
-| Одиниця | Чому виявилася хибною |
+| Unit | Why it turned out false |
 |---|---|
-| `T-12-023` | взяв документ ESP-IDF під твердження про Arduino — і **сам це написав** у коментарі |
-| `T-19-023` | зупинився на готових пресетах таблиці розділів, не дійшов до рядка 137, де сказано протилежне |
-| `T-17-063` | поділ реєстру відрізав застереження в наступну одиницю (див. `METHOD.md` §3) |
+| `T-12-023` | took an ESP-IDF document for a claim about Arduino — and **said so itself** in the comment |
+| `T-19-023` | stopped at the ready-made partition-table presets, never reached line 137, which says the opposite |
+| `T-17-063` | the registry split cut the caveat into the next unit (see `METHOD.md` §3) |
 
-Разом із попередніми сесіями це **шість заявлених суперечностей і жодної
-справжньої** після перевірки супровідником. Тобто `sperechayetsya` від
-помічника — не знахідка, а **привід прочитати документ цілком**; дві з
-шести навіть виявилися доказами **на користь** книги.
+Together with earlier sessions that is **six claimed contradictions and not
+one real** after a maintainer checked. So `sperechayetsya` from a helper is
+not a finding but **grounds for reading the document in full**; two of the
+six even turned out to be evidence **in the book's favour**.
 
-### Хвиля 9: клас `F` дав 82 % — і це найкраще, що ми бачили
+### Wave 9: the `unchecked` queue gave 82 % — the best we have seen
 
-Черга класу `F` (те, до чого просто не дійшли), тема + документ-кандидат,
-усі три обов'язкові розділи на місці.
+The `unchecked` queue (simply what nobody had got to), topic + candidate
+document, all three mandatory sections in place.
 
-| Хвиля | Черга | Вціліло на третьому шарі |
+| Wave | Queue | Survived layer 3 |
 |---|---|---:|
-| 5–7 | суцільний прохід, тема | 44 % |
-| 8 | назване джерело на кожну одиницю | 63 % |
-| присуди | `E` на числових твердженнях | 36 % |
-| **9** | **клас `F`, тема + кандидат** | **82 %** |
+| 5–7 | continuous pass, topic | 44 % |
+| 8 | a source named per unit | 63 % |
+| verdicts | `no-external-signal` on numeric claims | 36 % |
+| **9** | **`unchecked`, topic + candidate** | **82 %** |
 
-Розподіл вердиктів теж інший: `pidtverdzheno` **41 %** проти 12 % в
-аудиті присудів.
+The verdict distribution is different too: `pidtverdzheno` **41 %** against
+12 % in the verdict audit.
 
-**Це не заслуга наряду, а властивість черги.** `F` означає «ніхто не
-дивився» — там лежить звичайний матеріал документації: збирання, OTA,
-BLE, ESP-NOW. `E`-присуди навпаки вже пройшли крізь чиєсь судження
-«джерела немає», тож там лишається важче.
+**This is not to the order's credit but a property of the queue.**
+`unchecked` means "nobody looked" — ordinary documentation material lies
+there: builds, OTA, BLE, ESP-NOW. `no-external-signal` verdicts, by
+contrast, have already passed through somebody's judgement of "there is no
+source", so what remains is harder.
 
-Практичний висновок для планування: **черги не рівноцінні, і
-починати треба з `F`.** Одиниця класу `F` коштує стільки ж роботи, що
-й `E`-присуд, а віддає вшестеро більше.
+The practical conclusion for planning: **queues are not equivalent, and you
+should start with `unchecked`.** An `unchecked` unit costs the same work as
+a `no-external-signal` verdict and yields six times more.
 
-### Хвиля 10: врожайність помічника — ознака тривоги, а не успіху
+### Wave 10: a helper's yield is a warning sign, not a success
 
-Десять помічників Haiku, по десять карток, **вибірка випадкова** з усієї
-черги `F` (насіння `20260828`, перелік `id` у
-`factcheck/trial-100/vybirka.json`). Кандидата немає **за побудовою**:
-випадковий добір не має теми, під яку його назвати.
+Ten Haiku helpers, ten cards each, **random sample** from the whole
+`unchecked` queue (seed `20260828`, the list of `id`s in
+`factcheck/archive/runs/trial-100/vybirka.json`). There is no candidate **by
+construction**: a random draw has no topic to name one for.
 
-    покриття        100 із 100 · без пропусків, зайвих і дублів
-    ne_znayshov      71
-    pidtverdzheno    18   шар 3 пережили  9  (50 %)
-    porada           10   усі з `chomu`
-    nedosyazhne       1
-    самопосилань      4
+    coverage         100 of 100 · no gaps, extras or duplicates
+    ne_znayshov       71
+    pidtverdzheno     18   survived layer 3:  9  (50 %)
+    porada            10   all with `chomu`
+    nedosyazhne        1
+    self-references    4
 
-#### Головне: більше підтверджень ≠ більше правди
+#### The main point: more confirmations ≠ more truth
 
-    файл   підтверджень   дослівних   частка
+    file   confirmations   verbatim   share
     q01          9             3        33 %
     q05          2             0         0 %
     q06          4             3        75 %
     q10          3             3       100 %
 
-**Помічник, що дав найбільше підтверджень, дав найгірші цитати.** Шість
-із дев'яти хибних витягів усього прогону — з одного файлу, і саме з
-того, який на вигляд працював найкраще: 59 звернень до інструментів
-проти 30 у сусідів, найдовший час, найбільше «результату».
+**The helper that gave the most confirmations gave the worst quotes.** Six
+of the nine false extracts in the whole run came from one file — the one
+that looked like it was working best: 59 tool calls against 30 for its
+neighbours, the longest time, the most "result".
 
-> Помічник, що видається вдвічі продуктивнішим за решту, підлягає
-> перевірці, а не подяці.
+> A helper that appears twice as productive as the rest is subject to
+> checking, not thanks.
 
-Це правило про порядок величини, яке ми досі застосовували до
-**лічильників**, перенесене на **помічників**. І без третього шару воно
-було б невидиме: за самими доповідями `q01` виглядав найкращим із
-десяти. Він найгірший.
+This is the order-of-magnitude rule we had been applying to **counters**,
+carried over to **helpers**. And without layer 3 it would have been
+invisible: on the reports alone, `q01` looked the best of the ten. It is
+the worst.
 
-#### Кандидат коштує половини роботи
+#### A candidate is worth half the work
 
-Чотири помічники з десяти дали **10 із 10 `ne_znayshov`**. Це не
-лінощі — їм не було куди дивитися.
+Four helpers of ten gave **10 of 10 `ne_znayshov`**. That is not laziness —
+they had nowhere to look.
 
-    тематична вибірка, 25 карток    7 підтверджень, 0 самопосилань
-    випадкова, 100 карток          18 підтверджень, 4 самопосилання
+    topical sample, 25 cards     7 confirmations, 0 self-references
+    random, 100 cards           18 confirmations, 4 self-references
 
-Порівнювати частки тут не можна (різні черги й різний розмір), але
-напрям однозначний: **назвати документ-кандидата — не зручність наряду,
-а половина роботи.** `TEMY` у `work_orders_f.py` робить більше, ніж
-виглядає.
+The shares cannot be compared here (different queues, different sizes), but
+the direction is unambiguous: **naming a candidate document is not a
+convenience of the order, it is half the work.** `TEMY` in
+`work_orders_f.py` does more than it looks.
 
-#### Уточнення до хвилі 8, і воно проти неї
+#### A refinement to wave 8, and it runs against it
 
-Хвиля 8 показала: прибрали опис воріт — самопосилання повернулися.
-Звідси закон 6-bis. Тут ворота **описані** в усіх десяти нарядах
-(перевірено кожен), і самопосилання все одно є: 4 зі 100.
+Wave 8 showed: remove the description of the gates and self-references come
+back. Hence law 6-bis. Here the gates **are described** in all ten orders
+(each one checked), and self-references appear anyway: 4 of 100.
 
-Але вони іншого роду, і ця різниця важить більше за число:
+But they are of a different kind, and that difference matters more than the
+number:
 
-    усі чотири    від ОДНОГО помічника
-    усі чотири    під `ne_znayshov` — нічого не стверджують
-    сховище       справжнє, не вигадане
+    all four    from ONE helper
+    all four    under `ne_znayshov` — they assert nothing
+    repository  real, not invented
 
-У хвилі 8 самопосилання були **підтвердженнями** з вигаданим сховищем.
-Хибного доказу тут не народилося жодного.
+In wave 8 the self-references were **confirmations** with an invented
+repository. Here not one false piece of evidence was born.
 
-> Закон 6-bis уточнюється, а не спростовується: **сказана механіка
-> тримає від хибного доказу, але не від порожнього поля.** Помічник,
-> якому не назвали документа, тягнеться до єдиного, чиє існування знає
-> напевно, — до самої книги.
+> Law 6-bis is refined, not refuted: **a stated mechanism holds against
+> false evidence, but not against an empty field.** A helper who was not
+> given a document reaches for the one whose existence they know for
+> certain — the book itself.
 
-Це перевірне дослідом: той самий набір із кандидатом і без нього.
+This is testable by experiment: the same set with and without a candidate.
 
-#### Прогалину знайшов помічник, а не ми
+#### The gap was found by a helper, not by us
 
-`T-02-087`. Помічник відкрив `esp32s2/include/soc/soc_caps.h` і записав
-`cytata: (no SOC_BT_SUPPORTED in ...)`. Ворота відкинули: це опис
-відсутності, а не цитата.
+`T-02-087`. The helper opened `esp32s2/include/soc/soc_caps.h` and wrote
+`cytata: (no SOC_BT_SUPPORTED in ...)`. The gate rejected it: that is a
+description of an absence, not a quote.
 
-Робота **правильна**, висновок правильний. **У наряді немає вердикту
-для доведення відсутністю** — а саме так і встановлюють заперечне
-твердження про можливості кристала.
+The work was **right**, the conclusion right. **The order had no verdict for
+proof by absence** — and that is exactly how a negative claim about a die's
+capabilities is established.
 
-Пропозиція: вердикт `nemaye_v_dzhereli` з обов'язковими `dzherelo` і
-`shukav`, і ворота, що перевіряють зворотне — рядок `shukav` **не
-має** стояти в документі. Механічно перевірне, на відміну від решти
-негативних вердиктів.
+Proposal: a verdict `nemaye_v_dzhereli` with mandatory `dzherelo` and
+`shukav`, and a gate checking the inverse — the `shukav` line must **not**
+stand in the document. Mechanically checkable, unlike the other negative
+verdicts. (This became the `absent-from-source` status; see `SCHEMA.md`.)
 
-### Заявлені суперечності: вісім із восьми хибні
+### Claimed contradictions: eight of eight false
 
-| Одиниця | Причина |
+| Unit | Cause |
 |---|---|
-| `T-12-009` | код **показує** те, що каже книга; помічник сам це написав, і все одно назвав суперечністю |
-| `T-42-060` | «Wi-Fi не використовується» прочитано як «радіо вимкнене»; книга рядком вище каже, що радіо спільне |
+| `T-12-009` | the code **shows** what the book says; the helper wrote that itself and still called it a contradiction |
+| `T-42-060` | "Wi-Fi is not used" read as "the radio is off"; the book says a line above that the radio is shared |
 
-Разом за всі сесії — **вісім заявлених, нуль справжніх**, три з них
-виявилися доказами **на користь** книги.
+Across all sessions: **eight claimed, none real**, three of which turned out
+to be evidence **in the book's favour**.
 
-> `sperechayetsya` від помічника — це не знахідка, а **привід
-> прочитати документ і сусідні речення книги цілком.** Досі жодна не
-> пережила такої перевірки.
+> `sperechayetsya` from a helper is not a finding but **grounds for reading
+> the document and the book's neighbouring sentences in full.** So far none
+> has survived that check.
 
-Це не означає, що суперечностей не буває: три справжні за сесію
-знайшов М2, і всі три — читаючи документ повністю. Означає лише, що
-**заявка помічника про суперечність несе іншу вагу, ніж заявка про
-підтвердження**: друга гине на третьому шарі, першу мусить убити або
-воскресити людина.
+This does not mean contradictions do not happen: M2 found three real ones in
+a session, all three by reading the document in full. It means only that
+**a helper's claim of a contradiction carries different weight from a claim
+of a confirmation**: the second dies at layer 3, the first must be killed or
+resurrected by a person.
 
-### Закон про **здатність** документа, куплений хвилею М2
+### The law about a document's **capacity**, bought by M2's wave
 
-Врятовано з `archive/NARYAD-m2-hvylya3.md`: у тому файлі він був єдиною
-копією. Наряд не видалено, а покладено в `archive/` — саме тому, що
-такі знахідки виявляються вже після рішення «це відпрацьоване, можна
-стирати».
+Rescued from `archive/orders/NARYAD-m2-hvylya3.md`: it was the only copy in
+that file. The order was not deleted but put into `archive/` — precisely
+because such findings surface after the decision that something is spent and
+can be wiped.
 
-> **Названий документ має бути ЗДАТЕН відповісти.** Посібник з API
-> відповідає про API; твердження про залізо там не описане.
+> **A named document must be CAPABLE of answering.** An API guide answers
+> about the API; a claim about the hardware is not described there.
 
-М2 перебудували підбір так, щоб залізні твердження не вели до `.rst`
-посібників, і це **зняло 81 пару**, які дали б самі лише «не знайшов».
+M2 rebuilt the selection so that hardware claims do not lead to `.rst`
+guides, and that **removed 81 pairs** which would have yielded nothing but
+"not found".
 
-Це пояснює бімодальність, яку ми міряли, не розуміючи: даташити давали
-близько 43 % влучень, посібники з API — **нуль**. Не тому, що виконавці
-гірше працювали, а тому, що їх послали не туди.
+This explains a bimodality we had been measuring without understanding:
+datasheets gave about 43 % hits, API guides **zero**. Not because the
+executors worked worse, but because they were sent to the wrong place.
 
-Практичний висновок для складання черги: **перед тим як питати «чи це
-правда за цим документом», спитати «чи цей документ узагалі про це».**
-Друге питання дешевше й відкидає більше.
+The practical conclusion for building a queue: **before asking "is this true
+according to this document", ask "is this document about this at all".** The
+second question is cheaper and rejects more.
 
-### Що з цього випливає для кожного наступного наряду
+### What follows for every subsequent order
 
-Перевіряти треба **одне питання**, і воно щоразу те саме:
+There is **one question** to check, and it is the same every time:
 
-> Яку відповідь можна дати, **не виходячи за межі наряду**? Якщо така
-> є і вона щось стверджує — наряд зламаний, скільки б заборон у ньому
-> не стояло.
+> What answer can be given **without leaving the order**? If such an answer
+> exists and it asserts something, the order is broken, however many
+> prohibitions it contains.
 
-Заборона словами не втримала жодного разу з трьох. У хвилі 1 заборона
-«книга не є джерелом для себе» **стояла** в наряді. У хвилі М2, що дала
-10 % браку замість 75 %, її **не було**. Різниця була не в забороні.
+A prohibition in words has not held once in three attempts. In wave 1 the
+prohibition "the book is not a source for itself" **was** in the order. In
+M2's wave, which gave 10 % waste instead of 75 %, it **was not**. The
+difference was not the prohibition.
 
-### Готова форма наряду, яка працює
+### The working form of an order
 
-1. **Не називати очікуваного розподілу відповідей.** Ні «більшість буде
-   таких», ні «очікувана відповідь така».
-2. **Вимагати свідчення роботи від кожного вердикту**, включно з
-   негативним: `not_found` мусить назвати документ, який відкривали.
-3. **Називати документ-кандидат у самому наряді** (другий закон М2).
-   Коли адресу названо, тексту книги в тому файлі немає, і переписати
-   його назад неможливо — найдешевшою стає чесна відповідь.
-4. **Не вживати слів, що вказують на файли книги** («розділ», «глава»,
-   назви на кшталт `35-i2c.md`). Групувати за **темою**: «I²C»,
-   «esptool», «розділи флешу».
-5. **Сказати, що ворота існують і що саме вони відкидають.** Підробка,
-   яка нічого не дає, перестає бути найдешевшим шляхом.
-6. **Випробувати на одному помічникові**, перш ніж пускати десять.
+1. **Do not name the expected distribution of answers.** Not "most will be
+   like this", not "the expected answer is this".
+2. **Require evidence of work from every verdict**, the negative ones
+   included: `not_found` must name the document that was opened.
+3. **Name a candidate document in the order itself** (M2's second law). Once
+   an address is named, the book's text is not in that file and cannot be
+   copied back — and the honest answer becomes the cheapest.
+4. **Do not use words that point at book files** ("chapter", "section",
+   names like `35-i2c.md`). Group by **topic**: "I²C", "esptool", "flash
+   partitions".
+5. **Say that gates exist and what exactly they reject.** A forgery that
+   gains nothing stops being the cheapest path.
+6. **Try it on one helper** before releasing ten.
 
-### Числа, за якими впізнають зламану хвилю
+### The numbers that identify a broken wave
 
-Не чекати кінця — дивитися на перші пів сотні записів:
+Do not wait for the end — look at the first fifty records:
 
-- **усі вердикти однакові** (особливо всі `confirmed`) — майже
-  завжди підробка; на випадковій вибірці так не буває;
-- **частка записів без `dzherelo`** більша за кілька відсотків — наряд
-  дозволяє відповідати, не дивлячись;
-- **домен у `dzherelo`**: якщо там репозиторій довідника — хвиля
-  недійсна, скільки б записів у ній не було;
-- **звернень до інструментів на одиницю** менше ніж ~1 — помічник не
-  качав документів. Найчесніша хвиля дала 66–89 звернень на 25–30
-  одиниць, зламані — 14–18 на 25.
+- **all verdicts identical** (especially all `confirmed`) — almost always
+  forgery; on a random sample that does not happen;
+- **the share of records with no `dzherelo`** above a few per cent — the
+  order permits answering without looking;
+- **the domain in `dzherelo`**: if it is the handbook's own repository, the
+  wave is void, however many records it holds;
+- **tool calls per unit** below about 1 — the helper downloaded nothing. The
+  most honest wave gave 66–89 calls for 25–30 units; broken ones, 14–18 for
+  25.
 
-### Чого чекати від чесної хвилі
+### What to expect from an honest wave
 
-Щоб не приймати правду за провал:
+So as not to mistake the truth for a failure:
 
-- переважна відповідь — `not_found`, і це **нормально**;
-- із заявлених `confirmed` дослівними виявляються приблизно
-  **половина** (шар 3);
-- із тих, що витримали шар 3, шар 2 відкидає ще **близько чверті**
-  (цитата дослівна, але доводить не те);
-- підсумковий вихід перевіреного — **близько 6 %** від поданих одиниць.
+- the predominant answer is `not_found`, and that is **normal**;
+- of the claimed `confirmed`, about **half** turn out verbatim (layer 3);
+- of those that survive layer 3, layer 2 rejects about **another quarter**
+  (the quote is verbatim but proves something else);
+- the final yield of checked material is **about 6 %** of the units
+  submitted.
 
-Хвиля, що дає помітно більше, підозріліша за хвилю, що дає менше.
+A wave that gives noticeably more is more suspect than one that gives less.
 
-### Розподіл влучань двогорбий — знахідка М2
+### The hit distribution is bimodal — M2's finding
 
-Документи діляться на два роди, і це визначає, куди взагалі варто
-посилати помічника:
+Documents fall into two kinds, and this determines where it is worth sending
+a helper at all:
 
-| Рід документа | Влучань |
+| Kind of document | Hits |
 |---|---|
-| даташити, документи про **поведінку** (`ota.rst`, `fatal-errors.rst`) | ~43 % |
-| посібники з **API** (`gpio.rst`, `twai.rst`, `adc_oneshot.rst`) | **0 %** |
+| datasheets, documents about **behaviour** (`ota.rst`, `fatal-errors.rst`) | ~43 % |
+| **API** guides (`gpio.rst`, `twai.rst`, `adc_oneshot.rst`) | **0 %** |
 
-Причина не в складності: посібник з API відповідає на питання **про
-API**, а твердження книги в тих одиницях — **про залізо**. Питання й
-документ не збігаються за родом, скільки б їх не читали.
+The cause is not difficulty: an API guide answers questions **about the
+API**, and the book's claims in those units are **about the hardware**. The
+question and the document do not match in kind, however long they are read.
 
-Не ставити в наряд одиниці, чиє єдине правдоподібне джерело — посібник
-з API. Це не «важко знайти», це «там цього не буває».
+Do not put into an order units whose only plausible source is an API guide.
+This is not "hard to find", it is "not to be found there".
 
-### Найдешевша відповідь мусить бути тією, що не стверджує нічого
+### The cheapest answer must be the one that asserts nothing
 
-Це закон про **наряд**, а не про помічника, і куплений він дорого:
-хвилею на 250 одиниць, з якої довелося викинути 185.
+This is a law about the **order**, not about the helper, and it was bought
+expensively: with a wave of 250 units, of which 185 had to be thrown away.
 
-Порівняйте два наряди.
+Compare two orders.
 
-У наряді на клас `E` найдешевша відповідь — `spravdi-e`: «подивився,
-зовнішнього референта немає». Вона **не стверджує нічого**. Помічник,
-що йшов шляхом найменшого опору, казав правду, і хвилі виходили
-придатні.
+In the order for `no-external-signal` the cheapest answer is `spravdi-e`:
+"looked, there is no external referent". It **asserts nothing**. A helper
+taking the path of least resistance told the truth, and the waves came out
+usable.
 
-У наряді на клас `F` найдешевшою виявилося `pidtverdzheno`. І воно
-**стверджує**. Гірше: текст книги лежав тут же, у самому наряді, — щоб
-«підтвердити» його, досить було переписати назад і підставити шлях
-замість адреси. Так і сталося: 185 записів із 244 назвали «джерелом»
-саму книгу, шлях без адреси або нічого. Один помічник описав це у звіті
-прямо: «all confirmed in manual files».
+In the order for `unchecked` the cheapest turned out to be
+`pidtverdzheno`. And that **asserts**. Worse: the book's text was right
+there in the order — to "confirm" it, all you had to do was copy it back and
+substitute a path for an address. And so it went: 185 records of 244 named
+the book itself as the "source", a path with no address, or nothing. One
+helper described it plainly in its report: "all confirmed in manual files".
 
-> **Закон.** Найдешевша відповідь у наряді має бути тією, що не
-> стверджує нічого. Інакше наряд перетворює недбалість на неправду.
+> **Law.** The cheapest answer in an order must be the one that asserts
+> nothing. Otherwise the order converts carelessness into untruth.
 
-### Природний дослід, який цей закон підпирає
+### The natural experiment that supports this law
 
-Сам по собі закон був здогадом із однієї провалої хвилі. Числа дав М2,
-і краще, ніж вийшло б навмисне.
+On its own the law was a guess from one failed wave. M2 supplied the
+numbers, and better than a deliberate design would have.
 
-Тієї самої години, тією самою дешевою моделлю, по десять помічників з
-кожного боку, на одній книзі — дві хвилі з різними нарядами:
+The same hour, the same cheap model, ten helpers on each side, on one book —
+two waves with different orders:
 
-| | наряд М1 | наряд М2 |
+| | M1's order | M2's order |
 |---|---|---|
-| що просив | підтвердь або спростуй | розклади по класах `A`–`F` |
-| найдешевша відповідь | `pidtverdzheno` — **стверджує** | `E` або `F` — **не стверджують** |
-| брак | **~75 %** | **~10 %** |
+| what it asked | confirm or refute | sort into statuses |
+| cheapest answer | `pidtverdzheno` — **asserts** | `no-external-signal` or `unchecked` — **assert nothing** |
+| waste | **~75 %** | **~10 %** |
 
-Вирішальна деталь, якої не помітив ніхто з нас одразу: **написана
-заборона «книга не є джерелом для себе» стояла в наряді, що дав 75 %,
-і була відсутня в наряді, що дав 10 %.**
+The decisive detail, which none of us noticed at first: **the written
+prohibition "the book is not a source for itself" stood in the order that
+gave 75 %, and was absent from the order that gave 10 %.**
 
-Отже заборона словами не пояснює різниці. Пояснює структура: **яку
-відповідь можна дати, не виходячи з наряду**.
+So the prohibition in words does not explain the difference. The structure
+does: **what answer can be given without leaving the order**.
 
-М2 пише, що не закладав цього свідомо — форма наряду вийшла вдалою
-випадково. Тим дослід і цінний: ніхто не підганяв результат.
+M2 writes that this was not designed deliberately — the form of the order
+came out well by accident. That is what makes the experiment valuable:
+nobody tuned the result.
 
-Що з цього випливає для складання нарядів:
+What follows for composing orders:
 
-1. дивись, яку відповідь можна дати **не виходячи з наряду**. Якщо
-   така є і вона щось стверджує — наряд зламаний;
-2. не клади в наряд те, що має бути знайдене. Текст книги там потрібен
-   (інакше нема що звіряти), але тоді підтвердження **не може**
-   спиратися на нього;
-3. словесна заборона не втримує дії, дешевшої за роботу. «Книга не є
-   джерелом для себе» стояла в наряді — і була порушена 185 разів. Те
-   саме правило як **ворота** в `tools/measure_f.py` відсіяло всі 185 за
-   секунду.
+1. look at what answer can be given **without leaving the order**. If such
+   an answer exists and it asserts something, the order is broken;
+2. do not put into the order what is supposed to be found. The book's text
+   is needed there (otherwise there is nothing to check against), but then a
+   confirmation **may not** rest on it;
+3. a verbal prohibition does not restrain an action cheaper than the work.
+   "The book is not a source for itself" stood in the order — and was
+   violated 185 times. The same rule as a **gate** in `tools/measure_f.py`
+   filtered all 185 out in a second.
 
-Різницю добре видно по одному помічникові з десяти, який зробив роботу
-чесно: 5 підтверджень і 20 «не знайшов» на 66 звернень до інструментів.
-Той, що звітував 25 підтверджень із 25, витратив 16.
+The difference is clear from the one helper of ten that did the job
+honestly: 5 confirmations and 20 "not found" over 66 tool calls. The one
+that reported 25 confirmations out of 25 spent 16.
 
-### Чому шоста окремо від першої
+### Why the sixth is separate from the first
 
-Перша заборона («переказ — не цитата») описує **недбалість**: помічник
-переказав, бо так швидше. Шоста описує **впевненість**, і вона
-небезпечніша.
+The first prohibition ("a paraphrase is not a quote") describes
+**carelessness**: the helper paraphrased because it was faster. The sixth
+describes **confidence**, and it is more dangerous.
 
-Вимірювання показало це прямо. З дев'яти `znayshov` випадкової вибірки
-третій шар витримали три. Три провали були такі:
+Measurement showed this directly. Of nine `znayshov` in a random sample,
+three survived layer 3. The three failures were like this:
 
 ```
-«Bootloader is flashed at offset 0x1000 for ESP32 and ESP32-S2…»
-«GPIO pins 6-11 are occupied by the SPI flash interface…»
+"Bootloader is flashed at offset 0x1000 for ESP32 and ESP32-S2…"
+"GPIO pins 6-11 are occupied by the SPI flash interface…"
 ```
 
-Обидва **факти правильні**. Обидва речення в документах **відсутні**.
-Помічник знав відповідь і дописав під неї речення.
+Both **facts are right**. Both sentences are **absent** from the documents.
+The helper knew the answer and wrote a sentence to fit it.
 
-Тобто вигадують не там, де важко, — а там, де **впевнені у відповіді й
-бракує лише рядка**. Той самий механізм дав найгіршу конфабуляцію
-проєкту, і зробив її супровідник, а не помічник: `pass-31`, зсуви OTA,
-реконструйовані з пам'яті під класом `A`.
+So invention happens not where it is hard, but where the answer is
+**certain and only the line is missing**. The same mechanism produced the
+project's worst confabulation, and it was a maintainer who produced it, not
+a helper: `pass-31`, the OTA offsets, reconstructed from memory under
+`verbatim`.
 
-### Чому заборон стало п'ять, а не три
+### Why there came to be five prohibitions rather than three
 
-Бо тиск працює в обидва боки, і це головний урок вечора.
+Because pressure works in both directions, and that is the evening's main
+lesson.
 
-Наряд «знайди джерело» виробляє **вигадані джерела**. Наряд «випробуй
-присуд `E`» читається як «спростуй присуд» — і виробляє **вигадані
-спростування** так само справно. М2 заявили 18 спростувань, підтвердили
-**нуль**; із них двоє помічників виробили вигадані цитати, троє —
-послалися на саму книгу.
+An order saying "find a source" manufactures **invented sources**. An order
+saying "test this `no-external-signal` verdict" reads as "refute this
+verdict" — and manufactures **invented refutations** just as reliably. M2
+claimed 18 refutations and confirmed **none**; of those, two helpers
+produced invented quotes and three cited the book itself.
 
-Причому не будь-де: тиск спрацював саме там, де кошик **виглядав так,
-ніби в ньому є що знайти**. Де в назві стояло число, помічник шукав,
-доки не «знаходив». Де були заголовки таблиць, чесна відповідь була
-очевидна, і він її давав.
+And not just anywhere: the pressure told precisely where the basket **looked
+as though it held something to find**. Where the title carried a number, the
+helper searched until it "found". Where there were table headings, the
+honest answer was obvious, and it gave it.
 
-Звідси третій дозволений вихід (`spravdi-e`) і ці п'ять заборон: вони
-знімають тиск, а не питання. Помічник, у якого є чесний спосіб сказати
-«нічого немає», не мусить вигадувати.
+Hence the third permitted outcome (`spravdi-e`) and these five prohibitions:
+they remove the pressure, not the question. A helper with an honest way to
+say "there is nothing here" does not have to invent.
 
 ---
 
-## Форма вивантаження
+## The dump format
 
-Помічник кладе результат у власний файл, і `tools/layer3.py <файл>`
-звіряє його **до** того, як щось потрапляє в реєстр.
+The helper puts its result in its own file, and `tools/layer3.py <file>`
+checks it **before** anything reaches the registry.
 
 ```yaml
 - odynycya: T-17-035
   nazva: коротка назва
   verdykt: zbihayetsya | rozbizhnist | ne_znaydeno | nedosyazhne
-  dzherelo: https://... (одна повна адреса, яку помічник справді відкрив)
+  dzherelo: https://... (one full address the helper genuinely opened)
   cytata: |
-    рядки, скопійовані байт у байт
-  komentar: одне речення
+    lines copied byte for byte
+  komentar: one sentence
 ```
 
-`dzherelo` — **повна адреса файлу**. Не каталог, не «документація
-ESP-IDF», не скорочення `.../`. Каталог замість файлу був другим за
-частотою браком першої хвилі.
+`dzherelo` is a **full file address**. Not a directory, not "the ESP-IDF
+documentation", not an abbreviated `.../`. A directory instead of a file was
+the second most frequent waste of the first wave.
 
-`cytata` — тільки текст джерела. Власна проза в цьому полі («Not found
-in esptool documentation») — третій за частотою брак; для цього є
-`verdykt: ne_znaydeno`.
+`cytata` is the source's text only. Own prose in that field ("Not found in
+esptool documentation") is the third most frequent; that is what
+`verdykt: ne_znaydeno` is for.
 
-### Двокрапка у значенні — брак супровідника, не помічника
+### A colon in a value is the maintainer's waste, not the helper's
 
-За один вечір зламаний YAML з'їв роботу помічників **тричі**, і жодного
-разу не через недбалість помічника. Ламали два звичайні для української
-прози рядки:
+In one evening broken YAML ate helpers' work **three times**, and not once
+through a helper's carelessness. Two lines ordinary in Ukrainian prose broke
+it:
 
 ```yaml
-chomu: не твердження: самоопис книги          # друга двокрапка
-chomu: "Simulation is not reality" reflects…  # значення з лапки
+chomu: не твердження: самоопис книги          # a second colon
+chomu: "Simulation is not reality" reflects…  # a value starting with a quote
 ```
 
-Перший рядок був **дослівно в брифінгу**, який писав супровідник. Тобто
-формат мовчки вимагав від помічника знання YAML, якого від нього ніхто
-не вимагав, — і карав за його брак утратою цілого пакета.
+The first line was **verbatim from the briefing**, which the maintainer
+wrote. So the format silently demanded of the helper a knowledge of YAML
+that nobody had asked of it — and punished the lack of it by losing a whole
+batch.
 
-Тому:
+Therefore:
 
-- **у брифінгу** не показувати значень із `: ` усередині;
-- **у вивантаженні** брати в одинарні лапки будь-яке значення, що
-  містить `: `, починається з лапки або з дужки;
-- **у зведенні** читати через `tools/helper_dumps.py`, який лагодить це
-  механічно й називає полагоджені файли поіменно.
+- **in the briefing**, do not show values containing `: `;
+- **in the dump**, single-quote any value that contains `: `, starts with a
+  quote mark, or starts with a bracket;
+- **in the digest**, read through `tools/helper_dumps.py`, which repairs
+  this mechanically and names the repaired files individually.
 
-Останнє — не привід не робити перших двох. Мовчазна втрата файлів
-небезпечна ще й тим, що вона **не випадкова**: у мірі класу `E` впали
-файли саме тих двох помічників, які давали найвищу частку знахідок, і
-без лагодження міра поїхала б униз.
-
----
-
-## Черга й повторне вживання агента
-
-Робота ділиться на **послідовності**, послідовність — на **бунчі**.
-Один агент веде одну послідовність, бунчі підряд від початку до кінця.
-
-**Агента не спиняти, доки в його послідовності є бунчі.** Кожен новий
-агент наново оплачує системну частину — настанову, схеми інструментів,
-преамбулу; лише після цього робота стає приростовою. Продовження
-наявного агента коштує тільки різниці.
-
-Перша хвиля цього не робила: п'ять агентів відпрацювали свої
-послідовності й вийшли, і наступна хвиля оплатила запуск удруге. Це
-помилка ведення, не моделі.
-
-Межа тут теж є, і про неї варто пам'ятати: контекст живого агента
-росте, тож із якогось моменту приріст на кожен виклик перевищує вартість
-свіжого запуску. Правило: **тримати агента живим у межах однорідної
-роботи, перезапускати при зміні предмета.**
+The last is no excuse for skipping the first two. A silent loss of files is
+dangerous for the further reason that it is **not random**: in the
+`no-external-signal` measure, the files that fell were those of the two
+helpers with the highest share of findings, and without the repair the
+measure would have drifted downward.
 
 ---
 
-## Що робити з тим, чого супровідник не звірив сам
+## Queues and reusing an agent
 
-Клас `A` означає «цитату справді отримано», а не «мені повідомили, що
-її отримано».
+Work divides into **sequences**, and a sequence into **batches**. One agent
+runs one sequence, batches in a row from start to finish.
 
-Звіти, які супровідник не перевірив власноруч, ідуть у
-`factcheck/history/TO-VERIFY.md` — це **черга роботи, а не покриття**. Різниця
-не формальна: покриття обіцяє, що хтось дивився.
+**Do not stop an agent while its sequence still has batches.** Every new
+agent pays the systemic part over again — the instructions, the tool
+schemas, the preamble; only after that does the work become incremental.
+Continuing an existing agent costs only the difference.
+
+The first wave did not do this: five agents finished their sequences and
+exited, and the next wave paid for the startup a second time. That is a
+management error, not a model one.
+
+There is a limit here too, worth remembering: a live agent's context grows,
+so from some point the increment per call exceeds the cost of a fresh start.
+The rule: **keep an agent alive within homogeneous work, restart it when the
+subject changes.**
 
 ---
 
-## Чому наряд буває довгим
+## What to do with what the maintainer did not check personally
 
-Помічникові дається не лише перелік одиниць, а й **урок із попередніх
-хвиль**, дослівно. Наприклад:
+`verbatim` means "the quote was genuinely obtained", not "I was told it was
+obtained".
 
-> Назва команди в переліку команд доводить, що команда існує, і більше
-> нічого. Твердження про те, що вона **друкує**, вимагає реалізації або
-> зразка справжнього виводу.
+Reports the maintainer did not verify by hand go to
+`factcheck/archive/history/TO-VERIFY.md` — that is **a work queue, not
+coverage**. The difference is not formal: coverage promises somebody looked.
 
-Це коштує кількох рядків наряду й економить прохід. Урок, який
-залишився тільки в голові супровідника, наступна хвиля повторить.
+---
+
+## Why an order is sometimes long
+
+The helper is given not only a list of units but a **lesson from previous
+waves**, verbatim. For instance:
+
+> The name of a command in a list of commands proves the command exists, and
+> nothing else. A claim about what it **prints** requires the implementation
+> or a sample of real output.
+
+That costs a few lines of the order and saves a pass. A lesson that stays
+only in the maintainer's head will be repeated by the next wave.

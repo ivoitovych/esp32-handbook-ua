@@ -1,253 +1,262 @@
-# Реєстр фактчекінгу
+# The fact-checking registry
 
 > **canonical** — the decision lives here; there are to be no copies
 
-Паралельна до книги структура, у якій **кожне твердження має власний
-запис**, а в записі — дослівний текст книги поруч із дослівним текстом
-джерела.
+A structure parallel to the book in which **every claim has its own
+record**, and each record holds the book's verbatim text beside the
+source's verbatim text.
 
 ```
 factcheck/
-  ТЕХНОЛОГІЯ — шість документів, і рівно вони переносяться на іншу книгу
-    README.md          цей файл: покажчик, стан, обмеження середовища
-    METHOD.md          уся технологія одним документом, англійською:
-                       три шари, закони наряду, ворота, джерела, вимірювання
-    SCHEMA.md          формат запису й **нормативний** перелік станів
-    DEFECTS.md         каталог родів хиб: ознака, міра, випадок, чим тримається
-    TASK-SPEC.md       завдання виконавцеві: блоки, з яких складають наряд
-    HELPERS.md         журнал хвиль: що пробували й чим воно провалилося
+  THE TECHNOLOGY — six documents, and exactly these travel to another book
+    README.md          this file: index, state, the limits of the environment
+    METHOD.md          the whole method in one document: three layers,
+                       the laws of a work order, gates, sources, measurement
+    SCHEMA.md          the record format and the **normative** list of statuses
+    DEFECTS.md         catalogue of defect kinds: sign, measure, case, what holds it
+    TASK-SPEC.md       the brief given to a helper: the blocks an order is built from
+    HELPERS.md         the log of waves: what was tried and how it failed
 
-  book/     ця книга, а не технологія
+  book/     about this book, not about the technology — stays Ukrainian
     MIGRATION.md · RETROSPECTIVE.md · SOURCES.md · REFUTED.md
     UNREACHABLE-SOURCES.md
 
-  reports/  переписує інструмент — правити рукою марно
+  reports/  written by a tool — editing them by hand only moves the next diff
     QUOTES.md · SPLIT.md · RUNS.md · TRACES.md · TRANSLITERATION.md
-    MEASURE-NO-SIGNAL.md · MEASURE-UNCHECKED.md · SWEEP-NO-SIGNAL.md
-    BOOK-VS-SOURCES.md · BRIEF-SAMPLE.md · BRIEF-QUOTES.md · BRIEF-LEADS.md
+    LANGUAGE.md · MEASURE-NO-SIGNAL.md · MEASURE-UNCHECKED.md
+    SWEEP-NO-SIGNAL.md · BOOK-VS-SOURCES.md
+    BRIEF-SAMPLE.md · BRIEF-QUOTES.md · BRIEF-LEADS.md
 
-  archive/  відпрацьоване; нічого не видаляють і не перекладають
-    history/  8 заморожених реєстрів — числа, на яких стоять звіти
-    runs/     11 тек прогонів: хвилі, досліди, проби, наряди
-    orders/   виконані наряди
+  archive/  spent work; nothing here is deleted, translated or renamed
+    history/  8 frozen registries — the numbers past reports stand on
+    runs/     11 run directories: waves, trials, experiments, orders
+    orders/   orders already carried out
 
-  ДАНІ
-    evidence/*.yaml    самі докази: джерело, цитата, взірець, стан
-    manual/ dodatky/ kartky/ inserts/   картки, паралельно до книги
-    triage/            розбір одиниць за родом
-    runs/              куди пише НАСТУПНИЙ прогін; порожня навмисне
-    queues/            входи наступних нарядів
-    snapshots/         прив'язки до й після переїздів
-    archive/           заморожене
+  DATA
+    evidence/*.yaml    the evidence itself: source, quote, pattern, status
+    manual/ dodatky/ kartky/ inserts/   cards, parallel to the book
+    triage/            units sorted by kind
+    runs/              where the NEXT run writes; empty by design
+    queues/            inputs for the next orders
+    snapshots/         bindings taken before and after migrations
 ```
 
-**Чому саме так.** Довго тут лежало все підряд: тридцять один документ
-і двадцять одна тека в корені, з них девʼять — те саме за родом
-(`wave2`, `wave3`, `test-run`, `trial-100`…). Власник назвав це
-помийкою, і був правий двічі: спершу, коли назвав, і вдруге, коли за
-кілька днів побачив, що нічого не змінилося.
+**Why this shape.** For a long time everything lay here together:
+thirty-one documents and twenty-one directories in the root, nine of them
+the same kind of thing (`wave2`, `wave3`, `test-run`, `trial-100`…). The
+owner called it a rubbish bin, and was right twice — once when he said it,
+and again days later when he saw nothing had changed.
 
-> Корінь `factcheck/` містить **лише те, що переноситься на іншу
-> книгу**. Усе інше лежить у теці, названій за тим, чим воно є.
+> The root of `factcheck/` holds **only what travels to another book**.
+> Everything else sits in a directory named after what it is.
 
+Two ratchets hold that shape. `tools/doc_kind.py` checks each document's
+kind marker against whether a tool actually writes it, in both directions.
+`tools/language.py` checks that the technology is in English and the book
+is not — because the foundation acquired two new Ukrainian documents in a
+single afternoon while every other check stayed green.
 
+One book file → one registry file with the same name.
+`manual/06-zhyvlennya.md` → `factcheck/manual/06-zhyvlennya.md`. Card
+names stay Ukrainian on purpose: they cite the book, and the book is the
+product.
 
-Рід кожного документа не на око: `tools/doc_kind.py` звіряє позначку з
-тим, чи справді документ переписує інструмент, і в обидва боки.
+**Where to start reading.** `METHOD.md` §3 — why there are three layers
+and why none of them replaces the other two. Then `SCHEMA.md` for what a
+record looks like. Then `HELPERS.md` if you are going to brief a pool.
 
-Файли з суфіксом `-m2` — реєстри другого супровідника: його джерела,
-його спростоване, його карта досяжності. Вони окремі не з ввічливості,
-а тому, що досяжність джерел у нас різна фізично.
+**If you are lifting this onto another book**, the six documents above are
+the whole of it. `METHOD.md` carries the reasoning; `DEFECTS.md` and
+`TASK-SPEC.md` are its reference works. Nothing in them is about ESP32.
 
-**З чого починати читання.** `METHOD.md` §3 — навіщо три шари й чому
-жоден не замінює двох інших. Далі `SCHEMA.md` — як виглядає запис. Далі
-`HELPERS.md`, якщо збираєтеся наряджати пул.
+**The shortest path to the weakest place** is `reports/MEASURE-NO-SIGNAL.md`.
+The `no-external-signal` status is nearly half the registry, and it is the
+only status that certifies itself: `verbatim` says "here is the document",
+`named-unreachable` says "here is where to look", `no-external-signal`
+says "do not look". A random sample of 160 units says roughly **37 %** of
+that status do have an external referent — closed too generously.
 
-**Якщо ви переносите технологію на іншу книгу** — читайте натомість
-`METHOD.md`: те саме міркування англійською й без ESP32, а `DEFECTS.md`
-і `TASK-SPEC.md` до нього довідники. Ці два шляхи читання ведуть крізь
-різні документи не випадково: українська половина писалася для цієї
-книги, англійська — на винос.
+`MEASURE-NO-SIGNAL.md` and `SWEEP-NO-SIGNAL.md` answer **different**
+questions, and their numbers must not be mixed: the sweep took units
+picked by hand where a source was most likely, so its percentage is high
+by construction. A percentage may only be quoted from the measurement.
 
-**Найкоротший шлях до найслабшого місця** — `MEASURE-NO-SIGNAL.md`. Клас `E` —
-майже половина реєстру, і це єдиний клас, який засвідчує сам себе:
-`A` каже «ось документ», `C` каже «ось де шукати», `E` каже «не
-шукайте». Випадкова вибірка на 160 одиницях каже, що приблизно **37 %**
-цього класу мають зовнішній референт, тобто закриті надто щедро.
+> The status words above are what `SCHEMA.md` and `METHOD.md` use. The
+> stored records still carry single letters (`klas: E`); the contraction
+> that drops them is agreed with M1 and waiting on his word.
 
-`MEASURE-NO-SIGNAL.md` і `SWEEP-NO-SIGNAL.md` відповідають на **різні** питання, і плутати
-їхні числа не можна: штурм брав одиниці, відібрані рукою там, де
-джерело найімовірніше, тож відсоток звідси завищений за побудовою.
-Відсоток дозволено називати лише з міри.
+## Why this is separate from `docs/fakty.md`
 
-Один файл книги → один файл реєстру з тим самим іменем.
-`manual/06-zhyvlennya.md` → `factcheck/manual/06-zhyvlennya.md`.
+`docs/fakty.md` is the registry of **verified facts**: what was checked,
+with source and date. It answers "what do we know for certain".
 
-## Навіщо це окремо від `docs/fakty.md`
+This directory answers the opposite question: **"is anything left
+unchecked"**. The difference matters. The first list grows from work; the
+second grows from the book itself and shrinks from work. Only the second
+can prove completeness.
 
-`docs/fakty.md` — реєстр **звірених фактів**: те, що перевірили, з
-джерелом і датою. Він відповідає на питання «що ми знаємо напевно».
+Briefly: `docs/fakty.md` is the shop window, `factcheck/` is the
+stocktake.
 
-Цей каталог відповідає на протилежне питання: **«чи лишилося щось
-незвірене»**. Різниця принципова. Перший перелік зростає від роботи;
-другий зростає від самої книги і зменшується від роботи. Тільки другий
-може довести повноту.
+## Why the registry is complete by construction
 
-Коротко: `docs/fakty.md` — вітрина, `factcheck/` — інвентаризація.
+`tools/factcheck.py sketch` builds the skeleton: it breaks **every** file
+of the book into claim units and opens a record for each. Not "for the
+ones that seemed important" — for all of them.
 
-## Чому реєстр повний за побудовою
+This is the same idea as `docs/coverage-checklist.md`: an absence must be
+a decision, not forgetfulness. A unit nobody checked stays visible as
+`unchecked`; a unit not worth checking becomes `no-external-signal` — also
+a recorded decision.
 
-Каркас створює `tools/factcheck.py sketch`: він розкладає **кожен** файл
-книги на одиниці тверджень і заводить запис під кожну. Не «під ті, що
-здалися важливими» — під усі.
+The consequence has to be accepted: the registry is large. That is not
+excess, it is the honest size of the job.
 
-Це та сама ідея, що в `docs/coverage-checklist.md`: відсутність має бути
-рішенням, а не забудькуватістю. Одиниця, яку не звіряли, лишається
-видимою як клас `F`; одиниця, яку звіряти нема сенсу, стає класом `E` —
-теж записаним рішенням.
-
-Наслідок, з яким треба змиритися: реєстр великий. Це не надмірність, а
-чесний розмір задачі.
-
-## Стан
+## State
 
 ```sh
-tools/factcheck.py sketch    створити або досинхронізувати каркас
-tools/factcheck.py status    зведення за класами
-tools/factcheck.py cherga    незакрите, найдорожче першими
-tools/factcheck.py blocked   недоступні джерела на винос
+tools/factcheck.py sketch    create or re-sync the skeleton
+tools/factcheck.py status    summary by status
+tools/factcheck.py cherga    what is open, most expensive first
+tools/factcheck.py blocked   unreachable sources, as a hand-off
 ```
 
-Після зміни тексту книги `sketch` запускається знову. Записи, чий текст
-змінився, автоматично повертаються в клас `F`: доказ міг стосуватися
-попереднього формулювання.
+After the book's text changes, `sketch` runs again. Records whose text
+changed return automatically to `unchecked`: the evidence may have applied
+to the previous wording.
 
-## Обмеження середовища, яке визначає метод
+## The environment limit that shapes the method
 
-З контейнера, у якому робиться ця книга, **більшість першоджерел
-недоступна**: політика egress відповідає `403` на з'єднання з
-`docs.espressif.com`, `espressif.com`, `analog.com`,
-`bosch-sensortec.com`, `ti.com`, `nxp.com`, `wikipedia.org` і рештою.
+From the container this book is made in, **most primary sources are
+unreachable**: the egress policy answers `403` for `docs.espressif.com`,
+`espressif.com`, `analog.com`, `bosch-sensortec.com`, `ti.com`, `nxp.com`,
+`wikipedia.org` and the rest.
 
-Дістається:
+What is reachable:
 
-| Джерело | Що дає |
+| Source | What it gives |
 |---|---|
-| `raw.githubusercontent.com` | **весь код ESP-IDF**: `soc_caps.h`, `Kconfig`, заголовки драйверів, `SUPPORT_POLICY.md`, і — важливо — **вихідні `.rst` самої документації**; далі `arduino-esp32`, `esptool`, репозиторії компонентів |
-| пошук | назви й URL документів; **переказ, не дослівний текст** |
+| `raw.githubusercontent.com` | **all of ESP-IDF's code**: `soc_caps.h`, `Kconfig`, driver headers, `SUPPORT_POLICY.md`, and — importantly — the **`.rst` sources of the documentation itself**; then `arduino-esp32`, `esptool`, component repositories |
+| search | document titles and URLs; **paraphrase, not verbatim text** |
 
-Для ESP-IDF і самих чипів це навіть краще за docs.espressif.com: код і
-Kconfig є першоджерелом, а рендер документації — його переказом.
+For ESP-IDF and the chips themselves this is better than
+docs.espressif.com: code and Kconfig are the primary source, and the
+rendered documentation is its retelling.
 
-Для datasheet сторонніх компонентів (BME280, DS18B20, MAX485, TP4056) і
-для стандартів (специфікація I²C, Bluetooth Core) прямого шляху немає.
-Такі твердження отримують клас `C` із записаним URL і вказівкою, що саме
-там шукати. **Дослівна цитата в клас C не пишеться ніколи** — див.
-правило в `SCHEMA.md`.
+For third-party component datasheets (BME280, DS18B20, MAX485, TP4056)
+and for standards (the I²C specification, Bluetooth Core) there is no
+direct path. Such claims get `named-unreachable` with a recorded URL and a
+statement of what to look for there. **A verbatim quote is never written
+into `named-unreachable`** — see the rule in `SCHEMA.md`.
 
-`tools/factcheck.py blocked` друкує цей перелік на винос: людина з
-відкритим доступом закриває його швидко, бо вся підготовча робота вже
-зроблена.
+`tools/factcheck.py blocked` prints that list as a hand-off: a person with
+open access closes it quickly, because all the preparation is already
+done.
 
-## Проходи
+## Passes
 
-Реєстр наповнюється проходами наростаючої глибини. Кожен прохід лишає
-звіт у `reviews/` за тим самим правилом, що й рецензії: знахідка без
-реакції — незавершений прохід.
+The registry is filled by passes of increasing depth. Each pass leaves a
+report in `reviews/` under the same rule as reviews: a finding with no
+response is an unfinished pass.
 
-| Прохід | Обсяг | Стан |
+| Pass | Scope | State |
 |---|---|---|
-| 0 — ескіз | каркас під усі одиниці, тріаж за вартістю помилки | завершено |
-| 1 — тверде ядро | адреси, `soc_caps`, Kconfig, сигнатури API, піни IOMUX | завершено: 12 доказів A, 2 знахідки |
-| 2 — поведінка периферії | вихідні `.rst` документації ESP-IDF | завершено: 9 доказів A, 3 знахідки |
-| 3 — недосяжні джерела | реєстрація класом `C` + наряд на винос | завершено: 13 джерел, 237 тверджень |
-| 4 — обхідні шляхи | те з класу `C`, що закривається через GitHub виробників | завершено: 8 доказів, наряд 237 → 192 |
-| 5 — обчислення | арифметика книги, клас `D` | завершено: 30 перевірок, **0 розбіжностей** |
-| 6 — глибина | дрібніша розбивка (комірки таблиць, рядки коду), Kconfig бутлоадера | завершено: 4 знахідки |
-| 7 — суцільна звірка API | **усі** 104 виклики книги проти заголовків | завершено: **0 розбіжностей**, 2 доповнення |
-| 8 — strapping і boot-лог | документація esptool про вибір режиму завантаження | завершено: 1 доповнення, 2 підтвердження |
-| 9 — суцільна звірка команд | **усі** команди `esptool` та `idf.py`, що книга друкує | завершено: **3 виправлення**, 2 доповнення |
-| 10 — повідомлення в консолі | рядки, які книга обіцяє побачити в логу, проти самих рядків у коді | завершено: **6 виправлень**, 2 доповнення |
-| 11 — шляхи в menuconfig | назви меню проти файлів `Kconfig`, з яких меню будується | завершено: **3 виправлення**, 1 доповнення |
-| 12 — пінаути | ADC, touch, IOMUX, USB, strapping проти заголовків `soc/` | завершено: **1 виправлення**, 1 доповнення |
-| 13 — можливості чипів | зведені таблиці розділів 02 і 04 проти `soc_caps.h` | завершено: **2 виправлення**, 1 доповнення |
-| 14 — внутрішні маршрути | 689 згадок «розділ NN» і «картка КN» у прозі | завершено: **0 виправлень**, постійна перевірка |
-| 15 — версії | тулчейн і компоненти проти теґів та файлів версій | завершено: **0 виправлень** |
-| 16 — довідник інтерфейсів | адреси I²C і режими SPI проти драйверів на GitHub | завершено: **1 виправлення**, 1 доповнення |
-| 17 — сімейства в проєктах | піни кожного проєкту проти **кожної** плати з його BOM | завершено: **4 виправлення**, з них 2 «не збереться» і 1 безпекове |
-| 18 — схеми проєктів | кожен зв'язок схеми з обох кінців; розбивка складених тверджень | завершено: 1 доповнення, **клас A 803 → 657** після розбивки |
-| 19 — тріаж і закриття | механічний клас `E` для прози без сигналу; обсяги й адреси флешу | завершено: **F 6712 → 3649**, черга 1176 |
-| 20 — робота за чергою | JTAG-піни, обв'язка прикладів | завершено: 2 з 4 пінів JTAG закрито класом A, 2 — свідомо в наряд |
-| 21 — поля структур | 39 імен полів у 8 структурах проти заголовків ESP-IDF | завершено: **0 розбіжностей**, постійна перевірка |
-| 22 — досяжність доказів | розширення взірців на формулювання, що повторюються | завершено: клас A 679 → 698 без нових джерел |
-| 23 — пропагація DAC | власне виправлення проходу 17, що не доїхало до розділу 07 | завершено: 1 виправлення, взірець у реєстр спростованого |
-| 24 — зсуви й матриця | зсуви у флеші, JTAG classic, межа SPI через матрицю | завершено: **3 виправлення, усі три — в поясненнях, не в числах** |
-| 25 — PSRAM | піни MSPI, підтримка по сімействах, розподіл через malloc | завершено: **1 виправлення поведінкове**, 1 доповнення |
-| 26 — strapping суцільно | **весь** `boot-mode-selection.rst` проти всіх згадок strapping | завершено: **0 розбіжностей**, 3 доповнення — усі з ненаписаного |
-| 27 — струм GPIO | перший прохід **за знахідками М2**: datasheet, до якого М1 доступу не має | завершено: **4 виправлення**, з них 3 в одному абзаці |
+| 0 — sketch | skeleton for every unit, triage by cost of error | done |
+| 1 — hard core | addresses, `soc_caps`, Kconfig, API signatures, IOMUX pins | done: 12 verbatim, 2 findings |
+| 2 — peripheral behaviour | the `.rst` sources of the ESP-IDF documentation | done: 9 verbatim, 3 findings |
+| 3 — unreachable sources | registration as `named-unreachable` + a hand-off order | done: 13 sources, 237 claims |
+| 4 — ways around | the part of `named-unreachable` closable via vendor GitHub | done: 8 evidences, order 237 → 192 |
+| 5 — arithmetic | the book's arithmetic | done: 30 checks, **0 discrepancies** |
+| 6 — depth | finer splitting (table cells, code lines), bootloader Kconfig | done: 4 findings |
+| 7 — continuous API check | **all** 104 calls the book makes, against the headers | done: **0 discrepancies**, 2 additions |
+| 8 — strapping and boot log | esptool documentation on boot mode selection | done: 1 addition, 2 confirmations |
+| 9 — continuous command check | **every** `esptool` and `idf.py` command the book prints | done: **3 corrections**, 2 additions |
+| 10 — console messages | lines the book promises you will see, against the lines in the code | done: **6 corrections**, 2 additions |
+| 11 — menuconfig paths | menu names against the `Kconfig` files the menu is built from | done: **3 corrections**, 1 addition |
+| 12 — pinouts | ADC, touch, IOMUX, USB, strapping against the `soc/` headers | done: **1 correction**, 1 addition |
+| 13 — chip capabilities | the summary tables of chapters 02 and 04 against `soc_caps.h` | done: **2 corrections**, 1 addition |
+| 14 — internal routes | 689 mentions of "chapter NN" and "card KN" in prose | done: **0 corrections**, now a standing check |
+| 15 — versions | toolchain and components against tags and version files | done: **0 corrections** |
+| 16 — interface reference | I²C addresses and SPI modes against drivers on GitHub | done: **1 correction**, 1 addition |
+| 17 — families in projects | each project's pins against **every** board in its BOM | done: **4 corrections**, of which 2 "will not build" and 1 safety |
+| 18 — project schematics | every schematic connection from both ends; splitting compound claims | done: 1 addition, **verbatim 803 → 657** after the split |
+| 19 — triage and closure | mechanical `no-external-signal` for prose without a signal; flash sizes and addresses | done: **unchecked 6712 → 3649**, queue 1176 |
+| 20 — working the queue | JTAG pins, example wiring | done: 2 of 4 JTAG pins closed `verbatim`, 2 deliberately into the order |
+| 21 — struct fields | 39 field names in 8 structs against ESP-IDF headers | done: **0 discrepancies**, now a standing check |
+| 22 — evidence reach | widening patterns to wordings that repeat | done: verbatim 679 → 698 with no new sources |
+| 23 — DAC propagation | pass 17's own correction, which never reached chapter 07 | done: 1 correction, pattern into the refuted registry |
+| 24 — offsets and the matrix | flash offsets, JTAG classic, the SPI limit through the matrix | done: **3 corrections, all three in explanations, not in numbers** |
+| 25 — PSRAM | MSPI pins, support by family, allocation through malloc | done: **1 behavioural correction**, 1 addition |
+| 26 — strapping, continuous | **all** of `boot-mode-selection.rst` against every mention of strapping | done: **0 discrepancies**, 3 additions — all from the unwritten |
+| 27 — GPIO current | the first pass **driven by M2's findings**: a datasheet M1 has no access to | done: **4 corrections**, 3 of them in one paragraph |
 
-Далі — повторні проходи звірки, доки прохід не перестане давати
-виправлення. Критерій зупинки подвійний: **нуль виправлень** серед
-перевірюваного звідси **і** гранулярність, яку далі не покращити
-осмислено.
+After this come repeat passes until a pass stops yielding corrections. The
+stopping criterion is double: **zero corrections** among what is checkable
+from here **and** a granularity that cannot be usefully improved further.
 
-Прохід 17 зроблено за зовнішньою рецензією, і він змінив уявлення про
-межі методу: реєстр умів перевіряти числа, назви й документи, але не
-вмів перевіряти **складені інженерні твердження**, де одна частина
-спирається на datasheet датчика, а друга — на документацію плати. Саме в
-цьому проміжку прожили дві помилки рівня «не збереться». Висновок
-закріплено інструментом `tools/pins.py`, а не наміром.
+Pass 17 was done on an external review, and it changed the understanding
+of the method's limits: the registry could check numbers, names and
+documents, but could not check **compound engineering claims**, where one
+half rests on a sensor datasheet and the other on the board's
+documentation. Two "will not build" errors lived in exactly that gap. The
+conclusion is held by `tools/pins.py`, not by intention.
 
-Прохід 24 додав до цього спостереження друге. Усі числа, які він
-перевіряв, виявилися правильні, а всі три виправлення лягли в
-**пояснення** — «чому зсув саме такий», «що означає `0x7000`», «що дає
-рідний пін». Реєстр досі влаштований так, що числа в ньому видимі, а
-причини ховаються в прозі й тяжіють до класу `E`. Це наступне місце, де
-метод можна поглибити: пояснення читач запам'ятовує краще за число і
-носить далі, тож хибне пояснення коштує дорожче.
+Pass 24 added a second observation to that. Every number it checked turned
+out to be right, and all three corrections landed in the **explanations** —
+"why the offset is what it is", "what `0x7000` means", "what a native pin
+buys you". The registry is still built so that numbers in it are visible
+while reasons hide in prose and drift toward `no-external-signal`. That is
+the next place the method can be deepened: a reader remembers an
+explanation better than a number and carries it further, so a wrong
+explanation costs more.
 
-Прохід 26 назвав третє місце, де живуть помилки, — **ненаписане**. Він
-дав нуль розбіжностей і три доповнення, і жодне з трьох не було
-помилкою: кожне — правильне твердження з відрізаною половиною («є
-підтягування» без номінала, «пін небезпечний» без напрямку, таблиця
-режимів без рядка «інше»). Реєстр такі місця не бачить за побудовою: він
-перевіряє написане, а не ненаписане. Ловить їх лише суцільне читання
-джерела з питанням «що є там, чого немає тут».
+Pass 26 named a third place where errors live — **the unwritten**. It gave
+zero discrepancies and three additions, and none of the three was an
+error: each was a correct statement with half of it cut off ("there is a
+pull-up" without the value, "this pin is dangerous" without the direction,
+a table of modes with no "otherwise" row). The registry cannot see such
+places by construction: it checks what is written, not what is not. Only
+continuous reading of the source with the question "what is there that is
+not here" catches them.
 
-Прохід 27 і знахідки М2 назвали четверте місце — **напрямок висновку**.
-Розділ 35 писав: «три модулі по 4.7 кОм дають 1.6 кОм — забагато струму,
-лінія не піднімається як слід». Арифметика правильна (`4.7/3 = 1.567`),
-джерело правильне, а наслідок протилежний фізиці: менший опір скорочує
-фронт, а не подовжує. Читач із заваленим фронтом за цим абзацом зняв би
-резистори й зробив гірше.
+Pass 27 and M2's findings named a fourth — **the direction of the
+inference**. Chapter 35 said: "three modules of 4.7 kΩ give 1.6 kΩ — too
+much current, the line does not rise properly". The arithmetic is right
+(`4.7/3 = 1.567`), the source is right, and the consequence is the
+opposite of the physics: lower resistance shortens the edge, it does not
+lengthen it. A reader with a slow edge would have removed resistors on the
+strength of that paragraph and made it worse.
 
-Спільне в усіх чотирьох місцях — числа, і числа не брешуть. Реєстр
-бачить саме число, а що з нього **не випливає** сказане поруч, він не
-перевіряє за побудовою. Ловиться це лише читанням із питанням «чи
-випливає», а не «чи правда».
+What all four have in common is numbers, and numbers do not lie. The
+registry sees the number itself; that what stands beside it does **not
+follow** from that number is something it does not check by construction.
+That is caught only by reading with the question "does this follow", not
+"is this true".
 
-Проходи 5, 7 і 14 дали нуль виправлень у своїх царинах — арифметика,
-API і внутрішні маршрути. Це не зупинка всієї роботи, а закриття трьох
-вимірів: далі перевіряти там нема чого, доки книга не зміниться. Усі
-три закріплені інструментом у `make check`, тож закриття лишається
-закриттям і після наступних правок.
+Passes 5, 7 and 14 gave zero corrections in their domains — arithmetic,
+API and internal routes. That is not a stop to the whole job but the
+closing of three dimensions: there is nothing further to check there until
+the book changes. All three are held by a tool in `make check`, so the
+closure stays closed after later edits.
 
-## Наряд на винос
+## The hand-off order
 
-`factcheck/book/UNREACHABLE-SOURCES.md` — те, що з цього середовища закрити
-неможливо, у формі, придатній віддати людині з відкритим доступом:
-джерело, скільки тверджень від нього залежать, **що саме в ньому
-шукати**, і перелік самих тверджень із дослівним текстом книги.
+`factcheck/book/UNREACHABLE-SOURCES.md` is what cannot be closed from this
+environment, in a form fit to give to a person with open access: the
+source, how many claims depend on it, **what exactly to look for in it**,
+and the claims themselves with the book's verbatim text.
 
-Це головне, що робить обмеження середовища керованим. Недосяжне джерело
-не зникає з поля зору і не вдає, ніби його звірили: воно стає рядком
-наряду. Закриті пункти повертаються доказами класу `A` чи `B` у
-`factcheck/evidence/`, наряд перегенеровується і коротшає.
+This is the main thing that makes the environment limit manageable. An
+unreachable source does not drop out of sight and does not pretend to have
+been checked: it becomes a line in an order. Closed items come back as
+`verbatim` or `derived` evidence in `factcheck/evidence/`, the order is
+regenerated and gets shorter.
 
 ```sh
-tools/factcheck.py blocked    # перегенерувати наряд
+tools/factcheck.py blocked    # regenerate the order
 ```
 
-Порядок не довільний: прохід 1 бере те, де помилка коштує плати
-(`GPIO12` високий при старті, адреса бутлоадера, `espefuse burn-*`), і
-де першоджерело **дістається** — тобто де можна отримати клас `A`.
+The ordering is not arbitrary: pass 1 takes what costs a board when wrong
+(`GPIO12` high at boot, the bootloader address, `espefuse burn-*`) and
+where the primary source **is reachable** — that is, where `verbatim` is
+achievable.

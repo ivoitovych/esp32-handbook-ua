@@ -13,24 +13,21 @@ zone. That second half is the one that matters — the foundation
 acquired two new Ukrainian documents in a single afternoon while
 every check was green.
 
-**Remaining: 77 of 81 files.** Done: 4.
+**Remaining: 74 of 82 files.** Done: 8.
 
 ## Foundation
 
 - `factcheck/METHOD.md` — ✓ English
-- `factcheck/SCHEMA.md` — ✗ 90 % Ukrainian
+- `factcheck/SCHEMA.md` — ✓ English
 - `factcheck/DEFECTS.md` — ✓ English
 - `factcheck/TASK-SPEC.md` — ✓ English
-- `factcheck/HELPERS.md` — ✗ 92 % Ukrainian
-- `factcheck/README.md` — ✗ 84 % Ukrainian
+- `factcheck/HELPERS.md` — ✓ English
+- `factcheck/README.md` — ✓ English
 
 ## Still Ukrainian
 
 - `factcheck/reports/SWEEP-NO-SIGNAL.md` — 95 %
-- `factcheck/HELPERS.md` — 92 %
 - `factcheck/reports/MEASURE-UNCHECKED.md` — 91 %
-- `factcheck/SCHEMA.md` — 90 %
-- `factcheck/README.md` — 84 %
 - `factcheck/reports/BRIEF-LEADS.md` — 76 %
 - `factcheck/reports/MEASURE-NO-SIGNAL.md` — 76 %
 - `factcheck/reports/SPLIT.md` — 72 %
@@ -50,7 +47,7 @@ every check was green.
 - `tools/sweep_land.py` — 59 %
 - `tools/intake.py` — 59 %
 - `tools/layer1_units.py` — 58 %
-- `tools/docs.py` — 55 %
+- `tools/docs.py` — 57 %
 - `tools/work_orders.py` — 54 %
 - `tools/split_queue.py` — 54 %
 - `tools/order_m2.py` — 54 %
@@ -91,8 +88,8 @@ every check was green.
 - `tools/claims.py` — 31 %
 - `tools/doc_kind.py` — 30 %
 - `tools/maintenance.py` — 28 %
+- `tools/language.py` — 27 %
 - `tools/triage.py` — 26 %
-- `tools/language.py` — 24 %
 - `tools/naming.py` — 20 %
 - `tools/entry_points.py` — 19 %
 - `tools/task_spec.py` — 16 %
