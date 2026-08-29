@@ -121,23 +121,45 @@ def governing_list_sound() -> list[str]:
 # METHOD.md і НЕ зловив ARCHITECTURE.md — саме той документ, з якого
 # все й почалося. Перевірка з однією формою бачить одну форму, і
 # мовчить про решту так само впевнено.
+# Тільки таблиця під заголовком про стани, а не будь-яка таблиця в
+# документі. Перша редакція шукала `| **слово** |` по всьому файлу й
+# зібрала імена полів запису та роди одиниць — тобто «класи», яких у
+# коді немає, бо вони й не класи.
+RE_ROZDIL_STANIV = re.compile(
+    r"^##+ .*(Класи доказу|Стани перевірки|Стани)\s*$", re.M)
 RE_KLAS_TABL = re.compile(
-    r"^\|\s*(?:\*\*([A-Z])\*\*|`([A-Z])`)\s*\|", re.M)
-RE_KLAS_SPYS = re.compile(r"^\s{2,}([A-Z])\s{2,}[a-zа-яїєґ]", re.M)
+    r"^\|\s*(?:\*\*([a-z][a-z-]{3,})\*\*|`([a-z][a-z-]{3,})`)\s*\|", re.M)
+
+
+def rozdil_staniv(t: str) -> str:
+    """Текст лише того розділу, що описує стани."""
+    m = RE_ROZDIL_STANIV.search(t)
+    if not m:
+        return ""
+    dali = re.search(r"^##+ ", t[m.end():], re.M)
+    return t[m.end():m.end() + (dali.start() if dali else len(t))]
+RE_KLAS_SPYS = re.compile(r"^\s{2,}([a-z][a-z-]{3,})\s{2,}[—a-zа-яїєґ]", re.M)
 RE_TUL = re.compile(r"`?(tools/[a-z0-9_.-]+\.py)`?")
 RE_RID = re.compile(r"(?:рід|kind)\s+(\d{1,2})\b", re.I)
 
 
 def klasy_kodu() -> set[str]:
+    """Чинний словник станів — СЛОВАМИ.
+
+    Був літерами до 2026-08-29. Літери прибрано з реєстру як
+    абревіатуру: одинадцять однобуквених кодів вимагають легенди, якої
+    ніхто не тримає в голові, а поруч із ними завжди стояло те саме
+    слово й той самий опис.
+    """
     import factcheck
-    return set(factcheck.CLASS_TEXT)
+    return set(factcheck.STATUSES)
 
 
 def perevirka() -> list[str]:
     bidy: list[str] = []
     kod = klasy_kodu()
     avt = (FC / VLASNYK["класи доказу"]).read_text(encoding="utf-8")
-    avt_klasy = {a or b for a, b in RE_KLAS_TABL.findall(avt)}
+    avt_klasy = {a or b for a, b in RE_KLAS_TABL.findall(rozdil_staniv(avt))}
 
     brak = kod - avt_klasy
     if brak:
@@ -158,7 +180,7 @@ def perevirka() -> list[str]:
         t = p.read_text(encoding="utf-8")
 
         # Копія словника класів, що розійшлася з кодом.
-        nazvani = ({a or b for a, b in RE_KLAS_TABL.findall(t)}
+        nazvani = ({a or b for a, b in RE_KLAS_TABL.findall(rozdil_staniv(t))}
                    | set(RE_KLAS_SPYS.findall(t)))
         # Просіювати ТИМ, ЩО В КОДІ, і ніколи власним переліком.
         #

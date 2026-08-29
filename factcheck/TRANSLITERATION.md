@@ -11,7 +11,7 @@ measured remainder of a migration, so that progress is a number rather
 than an impression. A false positive here is harmless: it sits in the
 list and never fires again.
 
-**Remaining: 207.**
+**Remaining: 209.**
 
 - `--agents`
 - `--bez-merezhi`
@@ -84,6 +84,7 @@ list and never fires again.
 - `RE_POVIDOMLENNYA`
 - `RE_POZNACHKA`
 - `RE_RID`
+- `RE_ROZDIL_STANIV`
 - `RE_SAM_KAZHE_E`
 - `RE_SHLYAKH_KNYHY`
 - `RE_SKOROCHENNYA`
@@ -173,6 +174,7 @@ list and never fires again.
 - `rozbyty`
 - `rozbyty_alternatyvy`
 - `rozbyty_tablycyu`
+- `rozdil_staniv`
 - `rozstavyty`
 - `rozvyazne`
 - `ryadky_z_koordynat`

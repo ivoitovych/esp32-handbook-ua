@@ -662,7 +662,7 @@ def _vzirets(v: str) -> "re.Pattern[str]":
 
 SHABLON_DOKAZU = """**Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 """
 
 
@@ -702,8 +702,17 @@ def nazva_zapysu(z: dict) -> str:
 def formatuvaty_dokaz(z: dict | None) -> str:
     if not z:
         return SHABLON_DOKAZU
-    klas = class_letter_of(z)
-    ch = [f"**Доказ**\n", f"- **Клас:** {SIGN.get(klas,'')} {klas} — {CLASS_TEXT.get(klas,'')}"]
+    # Один запис стану, а не три поспіль.
+    #
+    # Тут стояло `{SIGN} {klas} — {CLASS_TEXT}`, тобто знак, літера й опис
+    # одного й того самого, у такому порядку, що третій пояснює перші два.
+    # Знак і літера не несли нічого, крім легенди з одинадцяти позицій,
+    # яку читач мав тримати в голові.
+    #
+    # Слово лишається англійським, а опис українським, і це не суміш:
+    # стан — це словник ТЕХНОЛОГІЇ, а опис написано для читача книги.
+    stan = status_of(z)
+    ch = [f"**Доказ**\n", f"- **Статус:** {stan} — {STATUSES.get(stan,'')}"]
     # Умова теж через `pole`, а не `z.get(нове)`. Інакше запис, у якому
     # значення стоїть **лише** під старим іменем, мовчки лишався б без
     # рядка: доступ полагоджено, а сторож — ні.
@@ -1118,8 +1127,9 @@ def status() -> int:
         n = c.get(k, 0)
         if not n:
             continue
-        print(f"  {SIGN[k]} {k}  {n:>5}  {n*100/vsjogo:5.1f}%   {CLASS_TEXT[k]}")
-    print(f"\n  звірено з джерелом або обчисленням (A+B+D): "
+        print(f"  {LETTER_TO_STATUS[k]:<20} {n:>5}  {n*100/vsjogo:5.1f}%   {CLASS_TEXT[k]}")
+    print(f"\n  звірено з джерелом або обчисленням "
+          f"(verbatim + derived + arithmetic): "
           f"{zvireno} ({zvireno*100/vsjogo:.1f}%)")
     # `S` навмисно **поза** цим числом і навмисно окремим рядком.
     #
@@ -1129,10 +1139,12 @@ def status() -> int:
     # означає «звірка була, механічна, відтворна, і вона зійшлася».
     # Злити їх — значить викинути єдине, що тут виміряно.
     if c.get("S"):
-        print(f"  внутрішня звірка, зовнішнього підтвердження немає (S): "
+        print(f"  внутрішня звірка, зовнішнього підтвердження немає "
+              f"(self-consistent): "
               f"{c['S']}")
     print(f"  закрито як рішення (E): {c.get('E',0)}")
-    print(f"  лишається (C+F+G): {c.get('C',0)+c.get('F',0)+c.get('G',0)}")
+    print(f"  лишається (named-unreachable + unchecked + refuted): "
+          f"{c.get('C',0)+c.get('F',0)+c.get('G',0)}")
     # за файлами: де найбільше незакритого
     per = Counter()
     for z in zapysy:
@@ -1386,7 +1398,7 @@ def shukaty() -> int:
             continue
         txt = " ".join(m.group(1).replace("> ", "").split())
         if goloka in txt.lower():
-            print(f"  {z['sha']}  {SIGN[z['klas']]}{z['klas']}  {z['id']:<12} "
+            print(f"  {z['sha']}  {status_of(z):<20} {z['id']:<12} "
                   f"{z['src']}\n      {txt[:150]}")
             n += 1
             if n >= 30:
