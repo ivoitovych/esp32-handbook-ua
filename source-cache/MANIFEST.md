@@ -279,6 +279,7 @@ tools/cache.py --check    звірити хеші наявних файлів
 | `dht22.pdf` | `17702d6042bc4916080064e849da8842b6ec21d56fcab73071aee471bda1505d` | 918398 | 2026-08-26 | <https://cdn-shop.adafruit.com/datasheets/DHT22.pdf> |
 | `ds18b20.pdf` | `39d191cd1fb657e43eac061f605bbd375d3c42dc40e7839c17fa0675bb0404d8` | 261896 | 2026-08-26 | <—> |
 | `dw01.pdf` | `0f01ee674b66a5f92abe08bf9bd337b3a47484de49e97c77542e7b0a7cbbc0b7` | 616224 | 2026-08-26 | <http://www.ic-fortune.com/upload/Download/DW01A-DS-12_EN.pdf> |
+| `e3d7e4d3-Adafruit_ST7789.cpp` | `832045ba8b7fbdc0ebdb4ea7730c664e4fe2d7d50bd7bc076aada4bdddae58f3` | 6737 | 2026-08-29 | <https://raw.githubusercontent.com/adafruit/Adafruit-ST7735-Library/master/Adafruit_ST7789.cpp> |
 | `e42d0fb2-ledc_basic_example_main.c` | `f3c425841748781aeff0b37877303e6c6a4be5a5bc699118db0f78b4d870b9ff` | 3114 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/ledc/ledc_basic/main/ledc_basic_example_main.c> |
 | `e553adbb-__init__.py` | `c96e9c960bf0bf9663fd7cec6c29915a348b80df788b3c457477d88aede93d6a` | 44437 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py> |
 | `e7041e08-soc_caps.h` | `2530be037699840bd0e3bedb28ffbba483d80befe3c2d04cb45503496be0bcd0` | 19248 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h> |
@@ -392,5 +393,5 @@ tools/cache.py --check    звірити хеші наявних файлів
 | `vtc6.pdf` | `ff42082f0d94c311bfd9a8b24211c5d522aeee161adb7473731e9fe94fcc9f08` | 275509 | 2026-08-26 | <https://www.murata.com/-/media/webrenewal/products/batteries/cylindrical/datasheet/us18650vtc6-product-datasheet.ashx> |
 | `wdts.rst` | `aab5499bba67e15e1327504328a9aa74ab88c82cb90f9c27d500d5b5d773c6af` | 16181 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst> |
 
-Файлів: **376**, разом **142.0 МБ** (межа 1.0 ГБ).
+Файлів: **377**, разом **142.0 МБ** (межа 1.0 ГБ).
 
