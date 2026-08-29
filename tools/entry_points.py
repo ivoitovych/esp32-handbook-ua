@@ -143,7 +143,7 @@ def imya(t: list[str]) -> str:
     return "_".join(t).replace("/", "_").replace("-", "_").replace(".", "_")
 
 
-def robocha_kopiya():
+def work_copy():
     """Окреме дерево з ТИМ САМИМ вмістом, включно з незакоміченим.
 
     Контекстний менеджер: віддає шлях, прибирає за собою. Кеш джерел
@@ -189,11 +189,11 @@ def znyaty(kudy: pathlib.Path) -> int:
     import tempfile
     kudy.mkdir(parents=True, exist_ok=True)
     tmp = tempfile.mkdtemp(prefix="entry-points-")
-    with robocha_kopiya() as derevo:
-        return _znyaty_u(kudy, tmp, derevo)
+    with work_copy() as derevo:
+        return _capture_into(kudy, tmp, derevo)
 
 
-def _znyaty_u(kudy: pathlib.Path, tmp: str, derevo: pathlib.Path) -> int:
+def _capture_into(kudy: pathlib.Path, tmp: str, derevo: pathlib.Path) -> int:
     for t in TOCHKY:
         argv = [x.replace("{TMP}", tmp) for x in t[1:]]
         r = subprocess.run([sys.executable, f"tools/{t[0]}", *argv],

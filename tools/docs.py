@@ -69,16 +69,47 @@ VLASNYK = {
 # заморожений документ, що називає перейменований інструмент, бреше
 # читачеві так само, як живий. Тому історичні тут є, і це не розбіжність
 # воріт, а два різні питання про один файл.
+#
 # Теки кешу, яких у ЦЬОМУ дереві вже немає, а в чужому контейнері ще
 # можуть бути. Це історія, а не означення: означення нижче, у
 # `kesh_ne_v_git`, і воно питає про наявність маніфесту. Ці рядки не
 # перейменовує ніщо — перейменувати минуле не можна.
-ISTORYCHNI_KESHI = ("dzherela-kesh",)
+HISTORICAL_CACHES = ("dzherela-kesh",)
 
 KERIVNI = ["METHOD.md", "DEFECTS.md", "LESSONS-M2.md", "RETROSPECTIVE.md",
            "SCHEMA.md", "ARCHITECTURE.md", "HELPERS.md", "README.md",
-           "MIGRATION.md", "TASK-SPEC.md", "TASK-SPEC.md",
+           "MIGRATION.md", "TASK-SPEC.md",
            "REFUTED.md", "SOURCES.md", "WAVE-W1.md"]
+
+# Той самий прохід sed, що позначив був `TASK-SPEC.md` історичним у
+# `doc_kind.ISTORYCHNI`, лишив по собі **другий** слід — тут. Обидва
+# рядки з `WORK-ORDER-EXAMPLE.md` (документ видалено як застарілий)
+# стали `TASK-SPEC.md`, і перелік почав звітувати «14 керівних», маючи
+# 13 різних. Число, яке друкує сам перелік, розійшлося з переліком.
+#
+# М2 знайшли й виправили випадок у `doc_kind`; цей уцілів, бо ніхто не
+# питав. Тому питаємо: перевірка нижче не пускає ані дубль, ані ім'я
+# неіснуючого документа.
+
+
+def governing_list_sound() -> list[str]:
+    """Перелік керівних — це перелік ІМЕН, і його ніхто не звіряв.
+
+    Рід 26 у чистому вигляді, вдруге за день і в іншому файлі: прохід
+    перейменування переписує ім'я, чиїм предметом було старе ім'я, і
+    жодна перевірка про це не питає, бо всі питають про **зміст**
+    документів, а не про сам перелік.
+
+        KERIVNI  14 записів, 13 різних
+    """
+    bidy = []
+    for n in sorted(set(KERIVNI)):
+        if KERIVNI.count(n) > 1:
+            bidy.append(f"KERIVNI: `{n}` названо {KERIVNI.count(n)} рази — "
+                        f"слід перейменування, а не перелік")
+        if not (FC / n).exists():
+            bidy.append(f"KERIVNI: `{n}` у переліку є, документа немає")
+    return bidy
 
 # Рядок, що перелічує класи. ФОРМАТІВ ТРИ, і це не примха:
 #
@@ -214,12 +245,13 @@ def perevirka() -> list[str]:
                 bidy.append(
                     f"TASK-SPEC [{imya}]: наряд пропонує вердикти "
                     f"{sorted(chuzhi)}, яких ворота не перевіряють")
-    bidy += pokazhchyk_povnyy()
+    bidy += governing_list_sound()
+    bidy += index_complete()
     bidy += kesh_ne_v_git()
     return bidy
 
 
-def pokazhchyk_povnyy() -> list[str]:
+def index_complete() -> list[str]:
     """Чи згадує покажчик `README.md` кожен документ теки.
 
     Знайдено виміром, а не на око: **17 із 32** документів не було в
@@ -235,7 +267,24 @@ def pokazhchyk_povnyy() -> list[str]:
     """
     rd = (FC / "README.md").read_text(encoding="utf-8")
     nema = [p.name for p in sorted(FC.glob("*.md")) if p.name not in rd]
-    return [f"README.md: покажчик не називає {n}" for n in nema]
+    bidy = [f"README.md: покажчик не називає {n}" for n in nema]
+    # І в другий бік. «Кожен документ названо» не те саме, що «покажчик
+    # правдивий»: той самий прохід sed, що зіпсував `KERIVNI`, поставив
+    # `TASK-SPEC.md` **двічі** — раз у керівні, раз у історичні, куди він
+    # потрапив замість видаленого `WORK-ORDER-EXAMPLE.md`. Покажчик
+    # називав документ і одразу суперечив собі про його рід, а перевірка
+    # мовчала, бо ім'я в тексті було.
+    m = re.search(r"```\n(factcheck/.*?)```", rd, re.S)
+    if m:
+        imena = re.findall(r"^\s{4}([A-Za-z0-9._-]+\.md)", m.group(1), re.M)
+        for n in sorted(set(imena)):
+            if imena.count(n) > 1:
+                bidy.append(f"README.md: покажчик називає {n} "
+                            f"{imena.count(n)} рази — рід не може бути двома")
+            if not (FC / n).exists():
+                bidy.append(f"README.md: покажчик називає {n}, "
+                            f"а документа немає")
+    return bidy
 
 
 def proba() -> int:
@@ -269,12 +318,12 @@ def proba() -> int:
             print("   %s %-42s очікувано %-5s дістав %s"
                   % (ok, nazva, ocik, spiymav))
             provaliv += spiymav != ocik
-    provaliv += proba_keshu()
+    provaliv += cache_selftest()
     print("\nпровалів: %d" % provaliv)
     return 1 if provaliv else 0
 
 
-def proba_keshu() -> int:
+def cache_selftest() -> int:
     """Ворота на кеш проти теки, чиє ім'я не стоїть у жодному файлі.
 
     Ім'я тут навмисно вигадане й ніде більше не трапляється. Саме це
@@ -379,7 +428,7 @@ def kesh_ne_v_git() -> list[str]:
     чого кеш існує, — але перевірка про неї не знає.
     """
     import subprocess
-    teky = set(ISTORYCHNI_KESHI)
+    teky = set(HISTORICAL_CACHES)
     for p in ROOT.rglob("MANIFEST.md"):
         if ".git/" in p.as_posix():
             continue

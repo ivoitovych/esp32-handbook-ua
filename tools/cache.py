@@ -179,7 +179,7 @@ def zvirka() -> int:
             bidy += 1
         else:
             print(f"   ✓ {imya}")
-    bezridni = bez_ryadka_v_manifesti(z)
+    bezridni = unlisted_in_manifest(z)
     for imya, nazva in bezridni:
         print(f"   ✗ {imya}: доказ «{nazva[:44]}» цитує файл, якого в "
               f"маніфесті немає")
@@ -188,7 +188,7 @@ def zvirka() -> int:
     return 1 if bidy else 0
 
 
-def bez_ryadka_v_manifesti(z: dict) -> list[tuple[str, str]]:
+def unlisted_in_manifest(z: dict) -> list[tuple[str, str]]:
     """Докази, що цитують файл кешу без рядка в маніфесті.
 
     ## Чому це не те саме, що `--check`
@@ -252,7 +252,7 @@ def proba() -> int:
     """Показ на зіпсованому вході: перевірка, що не спрацювала жодного
     разу, невідрізненна від перевірки, якої немає."""
     z = zapysy()
-    spravzhni = bez_ryadka_v_manifesti(z)
+    spravzhni = unlisted_in_manifest(z)
     print(f"   {'✓' if not spravzhni else '✗ ПРОВАЛ'} чистий маніфест: "
           f"тривог {len(spravzhni)}, очікувано 0")
     # Прибираємо з копії маніфесту рядок файлу, який доказ таки цитує.
@@ -283,7 +283,7 @@ def proba() -> int:
         print("   ✗ ПРОВАЛ: не знайшлося жодного вжитого файлу для проби")
         return 1
     kaliche = {k: v for k, v in z.items() if k != vzhytyy}
-    zlamani = bez_ryadka_v_manifesti(kaliche)
+    zlamani = unlisted_in_manifest(kaliche)
     ok = any(i == vzhytyy for i, _ in zlamani)
     print(f"   {'✓' if ok else '✗ ПРОВАЛ'} рядок `{vzhytyy}` прибрано з "
           f"маніфесту: тривог {len(zlamani)}, очікувано ≥1")
