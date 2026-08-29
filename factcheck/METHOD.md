@@ -224,6 +224,10 @@ signal. But under one letter you end up with:
 They must be separate classes. Otherwise half the book sits in a
 category that means two opposite things.
 
+**How large this is.** There are **152** such verdicts in the tree, and
+they sit on **247** units that contain a number with a unit of measure —
+that is, on exactly the claims most likely to have a document behind them.
+
 **And `E` has a second problem: origin.** A class assigned
 *mechanically* is a statement about the text and reverses itself when
 the text changes. A class asserted in an evidence record is a
@@ -250,6 +254,18 @@ That rule — **an assertion must pay for itself** — held a second time in
 the other maintainer's run, at **931 of 931**. One clean result is a
 result; two, from different hands on different queues, is a property of
 the order's shape rather than a coincidence.
+
+The full distribution of that pool run is worth printing, because it shows
+what replaced the forbidden answer rather than merely that it was
+forbidden:
+
+| Verdict | Records | Share |
+|---|---:|---:|
+| advice — the verdict was justified | 45 | 53 % |
+| unreachable | 16 | 19 % |
+| did not find | 13 | 15 % |
+| **confirmed — a source was found** | **10** | **12 %** |
+| disputes | 1 | 1 % |
 
 The asymmetry is the same one as in the law about patterns: an error
 towards "a source exists" leaves the unit in the work queue, and an error
@@ -350,7 +366,8 @@ The consequence for working in pairs: **an edit to the book is an event
 for the evidence, not only for the text.**
 
 **The third law: measure a pattern the way it is used.** Deriving patterns
-by machine produced three failures in a row, and all three were a gap
+by machine — 335 pieces of evidence in one sweep — produced three failures
+in a row, and all three were a gap
 between how the pattern was built and how it works:
 
 | What was done | What happened | Why |
@@ -1004,7 +1021,8 @@ other direction, flagged seven fabricated document names of which
 
   The cheap symptom: `not in cache` rising in the layer-3 report after a
   landing wave. If a wave added evidence and the "verified" number did not
-  move, the sources went past the cache.
+  move, the sources went past the cache. **That report read `not in cache
+  188` for weeks and was taken for noise; it was a bill.**
 - **The cache and the matcher are one thing living in two places.**
   Downloading a document is half the work; the other half is telling
   the matcher it exists. Thirteen fresh datasheets sat unused because
