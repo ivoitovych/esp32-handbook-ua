@@ -44,9 +44,37 @@ works" is a claim about every one of those programs and not about one.
 
 Several tools write generated files, and some ignore an unknown flag and
 just do their work — a sweep with `--help` once rewrote the book's
-index. So the tree is restored after every point. **Only files that were
-clean before that point** are restored: an earlier version of this
-harness ran `git checkout -- .` and ate uncommitted work twice.
+index. So the tree is restored after every point.
+
+**And the restore ate uncommitted work three times before the cause was
+admitted.** Each repair kept the same wrong premise — that the harness
+can tell a tool's leftovers from a person's writing by looking at which
+files are dirty. It cannot, and no refinement of that test can.
+
+    version 1  `git checkout -- .`              ate work twice
+    version 2  baseline of dirty files, taken
+               once at the start of the run     ate a document mid-run
+    version 3  baseline retaken before each
+               point                            ate it again: the edit
+                                                lands DURING a point,
+                                                not between two
+    version 4  the live tree is never written   nothing to restore
+
+Version 3 was measured, not assumed: a thread edited `DEFECTS.md` six
+seconds into a capture and the edit was gone at the end. A point runs
+for anywhere from a fraction of a second to minutes, so "between two
+points" is the rare case, not the common one.
+
+> Three repairs in a row asked *how do I restore more carefully*. The
+> question was *why is this program writing to the tree I am working
+> in*.
+
+So the capture now runs in a **git worktree of its own**, created at
+`HEAD` and carrying the uncommitted diff so the behaviour measured is
+the behaviour of the tree you actually have. Tools may rewrite anything
+they like in there; it is deleted afterwards. The source cache is
+symlinked, not copied — it is read-only to every tool and 364 documents
+of it.
 """
 from __future__ import annotations
 
@@ -115,28 +143,71 @@ def imya(t: list[str]) -> str:
     return "_".join(t).replace("/", "_").replace("-", "_").replace(".", "_")
 
 
-def brudni() -> set[str]:
-    r = subprocess.run(["git", "status", "--porcelain"], cwd=ROOT,
-                       capture_output=True, text=True)
-    return {x.split()[-1] for x in r.stdout.splitlines() if x.strip()}
+def robocha_kopiya():
+    """Окреме дерево з ТИМ САМИМ вмістом, включно з незакоміченим.
+
+    Контекстний менеджер: віддає шлях, прибирає за собою. Кеш джерел
+    **прив'язується символьно**, а не копіюється: він читається всіма
+    інструментами й ніким не пишеться, і його 364 документи важать
+    більше, ніж уся решта дерева.
+
+    Незакомічене переноситься латкою, бо без нього гарнес міряв би не
+    те дерево, яке ми правимо, — а саме заради «до і після правки» він
+    і існує.
+    """
+    import contextlib
+    import shutil
+    import tempfile
+
+    @contextlib.contextmanager
+    def _kopiya():
+        tmp = tempfile.mkdtemp(prefix="entry-points-tree-")
+        derevo = pathlib.Path(tmp) / "w"
+        subprocess.run(["git", "worktree", "add", "-q", "--detach",
+                        str(derevo), "HEAD"], cwd=ROOT, check=True)
+        try:
+            latka = subprocess.run(["git", "diff", "HEAD"], cwd=ROOT,
+                                   capture_output=True, text=True).stdout
+            if latka.strip():
+                subprocess.run(["git", "apply", "-"], cwd=derevo,
+                               input=latka, text=True, check=True)
+            kesh = ROOT / "source-cache"
+            if kesh.is_dir():
+                cil = derevo / "source-cache"
+                if cil.exists():
+                    shutil.rmtree(cil)
+                cil.symlink_to(kesh)
+            yield derevo
+        finally:
+            subprocess.run(["git", "worktree", "remove", "--force",
+                            str(derevo)], cwd=ROOT, capture_output=True)
+            shutil.rmtree(tmp, ignore_errors=True)
+    return _kopiya()
 
 
 def znyaty(kudy: pathlib.Path) -> int:
     import tempfile
     kudy.mkdir(parents=True, exist_ok=True)
     tmp = tempfile.mkdtemp(prefix="entry-points-")
-    do = brudni()
+    with robocha_kopiya() as derevo:
+        return _znyaty_u(kudy, tmp, derevo)
+
+
+def _znyaty_u(kudy: pathlib.Path, tmp: str, derevo: pathlib.Path) -> int:
     for t in TOCHKY:
         argv = [x.replace("{TMP}", tmp) for x in t[1:]]
         r = subprocess.run([sys.executable, f"tools/{t[0]}", *argv],
-                           cwd=ROOT, capture_output=True, text=True,
+                           cwd=derevo, capture_output=True, text=True,
                            timeout=1800)
         # Ім'я тимчасового каталогу міняється щопрогону, тож два знімки
         # тих точок, що його друкують, НІКОЛИ не збігалися б — і
         # порівняння вічно показувало б різницю там, де її немає.
         # Знімок, який завжди відрізняється від себе, не знімок.
         def bez_tmp(s: str) -> str:
-            return s.replace(tmp, "{TMP}")
+            # І шлях самої робочої копії теж: він новий щопрогону, тож
+            # без нормалізації два знімки не збіглися б ніколи — та
+            # сама вада, що з `{TMP}`, лише на рівень вище.
+            return s.replace(tmp, "{TMP}").replace(str(derevo), "{ROOT}")
 
         (kudy / f"{imya(t)}.out").write_text(bez_tmp(r.stdout), encoding="utf-8")
         (kudy / f"{imya(t)}.err").write_text(bez_tmp(r.stderr), encoding="utf-8")
@@ -144,9 +215,9 @@ def znyaty(kudy: pathlib.Path) -> int:
         if "Traceback" in r.stderr:
             znak = "ПАДІННЯ"
         print(f"  {znak:>8}  {' '.join(t)}")
-        # Відкотити лише те, що було чисте до цього запуску.
-        for f in sorted(brudni() - do):
-            subprocess.run(["git", "checkout", "-q", "--", f], cwd=ROOT)
+        # Відкату більше немає й бути не має: інструменти пишуть у
+        # робочу копію, яка існує рівно на час прогону. Дерево, у якому
+        # хтось працює, гарнес не чіпає взагалі.
     print(f"знято точок: {len(TOCHKY)} → {kudy}")
     return 0
 

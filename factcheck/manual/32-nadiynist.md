@@ -902,14 +902,20 @@ esp_err_t sprobuvaty(int max_sprob) {
 **Контекст**
 
 ````
-## esp_err_t: домовленість, на якій усе тримається
+## Три стратегії реакції
 
 ```c
-esp_err_t err = i2c_master_probe(bus, ADDR, 100);
-if (err != ESP_OK) {
-    ESP_LOGE(TAG, "датчик 0x%02x не відповідає: %s",
-             ADDR, esp_err_to_name(err));
-    return err;
+esp_err_t sprobuvaty(int max_sprob) {
+    int pauza = 100;
+    for (int i = 0; i < max_sprob; i++) {
+        esp_err_t err = operatsiya();
+        if (err == ESP_OK) return ESP_OK;
+        ESP_LOGW(TAG, "спроба %d/%d: %s", i + 1, max_sprob,
+                 esp_err_to_name(err));
+        vTaskDelay(pdMS_TO_TICKS(pauza));
+        pauza = pauza * 2 > 5000 ? 5000 : pauza * 2;
+    }
+    return ESP_FAIL;
 }
 ```
 ````

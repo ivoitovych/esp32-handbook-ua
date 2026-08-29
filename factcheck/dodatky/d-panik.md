@@ -7235,29 +7235,20 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 > | Повідомлення | Причина |
 
-**Дослівно з книги**
-
-```
-| Повідомлення | Причина | Розділ |
-```
-
 **Контекст**
 
 ```
-## Помилки бутлоадера
+## Помилки стека і купи
 
-Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
 
-| Повідомлення | Причина | Розділ |
-|---|---|---|
-| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
-| `Factory app partition is not bootable` | застосунку немає | К5 |
-| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
-| `Failed to verify partition table` | те саме | 18 |
-| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
-| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
-| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
-| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+| Повідомлення | Причина |
+|---|---|
+| `***ERROR*** A stack overflow in task X has been detected.` | замалий стек задачі |
+| `CORRUPT HEAP: Bad tail at 0x… Expected 0x… got 0x…` | запис **за** кінець блоку |
+| `CORRUPT HEAP: Bad head at 0x…` | запис **перед** початком блоку |
+| `Guru Meditation ... IllegalInstruction` | часто теж переповнення стека |
+| `assert failed: ...` | порушено внутрішній інваріант |
+| `heap_caps_malloc failed` | немає пам'яті або немає блоку потрібного розміру |
 ```
 
 **Доказ**

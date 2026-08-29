@@ -179,8 +179,115 @@ def zvirka() -> int:
             bidy += 1
         else:
             print(f"   ✓ {imya}")
+    bezridni = bez_ryadka_v_manifesti(z)
+    for imya, nazva in bezridni:
+        print(f"   ✗ {imya}: доказ «{nazva[:44]}» цитує файл, якого в "
+              f"маніфесті немає")
+    bidy += len(bezridni)
     print(f"cache: записів {len(z)}, розбіжностей {bidy}")
     return 1 if bidy else 0
+
+
+def bez_ryadka_v_manifesti(z: dict) -> list[tuple[str, str]]:
+    """Докази, що цитують файл кешу без рядка в маніфесті.
+
+    ## Чому це не те саме, що `--check`
+
+    `--check` бере **рядки маніфесту** й питає, чи файл на місці й чи
+    збігається хеш. Файл, якого в маніфесті немає взагалі, у це питання
+    не потрапляє ніколи — його ніхто не перебирає.
+
+    А саме такий файл і небезпечний: доказ на нього посилається,
+    звіряється проти нього успішно, і **відтворити його не може ніхто,
+    крім контейнера, який його викачав**. Це рід 9 каталогу, і до цього
+    моменту він не мав жодної автоматичної перевірки.
+
+    ## Міряно, перш ніж писати
+
+        файлів у кеші без рядка в маніфесті       119
+        джерел у доказах                          746
+        з них цитують файл без рядка                2
+
+    Сто дев'ятнадцять — не вада: це документи, які помічники качали під
+    час хвиль і які доказом не стали. Вадою є **два**, і саме їх ця
+    перевірка називає. Різниця між 119 і 2 — причина, чому перевірка
+    питає про доказ, а не про кеш: питання «чи все в кеші записано»
+    дало б сто дев'ятнадцять тривог, з яких сто сімнадцять хибні.
+
+    Обидва знайдені реєстровано (`components/bt/Kconfig` і
+    `esp_psram/esp32/Kconfig.spiram`, обидва з `raw.githubusercontent`),
+    тож перевірка стає на нулі — і тому нижче стоїть проба на
+    зіпсованому вході.
+    """
+    import yaml
+    layer3 = _layer3()
+    bidy: list[tuple[str, str]] = []
+    for f in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
+        try:
+            zap = yaml.safe_load(f.read_text(encoding="utf-8")) or []
+        except Exception:
+            continue
+        for zapys in zap:
+            if not isinstance(zapys, dict):
+                continue
+            for url in layer3.dzherela_zapysu(zapys):
+                try:
+                    imya = layer3.imya_dlya(url)
+                except Exception:
+                    continue
+                if (KESH / imya).exists() and imya not in z:
+                    nazva = str(zapys.get("nazva") or zapys.get("title") or "?")
+                    bidy.append((imya, nazva))
+    return bidy
+
+
+def _layer3():
+    import sys
+    sys.path.insert(0, str(ROOT / "tools"))
+    import layer3
+    return layer3
+
+
+def proba() -> int:
+    """Показ на зіпсованому вході: перевірка, що не спрацювала жодного
+    разу, невідрізненна від перевірки, якої немає."""
+    z = zapysy()
+    spravzhni = bez_ryadka_v_manifesti(z)
+    print(f"   {'✓' if not spravzhni else '✗ ПРОВАЛ'} чистий маніфест: "
+          f"тривог {len(spravzhni)}, очікувано 0")
+    # Прибираємо з копії маніфесту рядок файлу, який доказ таки цитує.
+    import yaml
+    layer3 = _layer3()
+    vzhytyy = None
+    for f in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
+        try:
+            zap = yaml.safe_load(f.read_text(encoding="utf-8")) or []
+        except Exception:
+            continue
+        for zapys in zap:
+            if not isinstance(zapys, dict):
+                continue
+            for url in layer3.dzherela_zapysu(zapys):
+                try:
+                    imya = layer3.imya_dlya(url)
+                except Exception:
+                    continue
+                if imya in z and (KESH / imya).exists():
+                    vzhytyy = imya
+                    break
+            if vzhytyy:
+                break
+        if vzhytyy:
+            break
+    if not vzhytyy:
+        print("   ✗ ПРОВАЛ: не знайшлося жодного вжитого файлу для проби")
+        return 1
+    kaliche = {k: v for k, v in z.items() if k != vzhytyy}
+    zlamani = bez_ryadka_v_manifesti(kaliche)
+    ok = any(i == vzhytyy for i, _ in zlamani)
+    print(f"   {'✓' if ok else '✗ ПРОВАЛ'} рядок `{vzhytyy}` прибрано з "
+          f"маніфесту: тривог {len(zlamani)}, очікувано ≥1")
+    return 0 if (not spravzhni and ok) else 1
 
 
 def rozmir() -> int:
@@ -273,6 +380,8 @@ if __name__ == "__main__":
         sys.exit(perelik())
     if a[0] == "--check":
         sys.exit(zvirka())
+    if a[0] == "--samoperevirka":
+        sys.exit(proba())
     if a[0] == "--size":
         sys.exit(rozmir())
     if a[0] == "--vidtvornist":

@@ -23,7 +23,7 @@ explicit note that nothing does.
 
 ## The family that dominates: a check that measures nothing
 
-Thirteen of the twenty-nine kinds below are one family. The check runs, it
+Thirteen of the thirty kinds below are one family. The check runs, it
 returns a number, and the number means nothing — because it was never
 measuring the thing its name claims.
 
@@ -235,7 +235,36 @@ ones whose files failed.
 > Silent data loss is almost never random. It moves exactly the number
 > being measured.
 
-**Held by.** `snapshot.py --zvirty` before and after every bulk change.
+**And a third case, from the tool built to prevent the other two.**
+`entry_points.py` restores the tree after each entry point so that a
+tool ignoring an unknown flag cannot leave the book rewritten. It has
+now destroyed uncommitted work **three times, in three different
+shapes**:
+
+    version 1   `git checkout -- .`             ate work twice
+    version 2   baseline of dirty files taken
+                ONCE, at the start of the run   ate a document mid-run
+    version 3   baseline retaken before each
+                point                           only that point's writes
+
+Version 2 was written specifically to fix version 1 and it is correct
+for tools and wrong for people. A capture takes minutes; a maintainer
+editing a document during it finds the edit gone, because the file was
+clean when the run began and the harness therefore filed the
+maintainer's writing under "leftovers from a tool". That is how the two
+paragraphs above this one were lost while being written.
+
+> A guard written against the way you were burned last time protects
+> against exactly that. The next fire comes in through the shape you did
+> not write down.
+
+The restore also now **names every file it reverts**. A silent revert is
+indistinguishable from a tool that wrote nothing, and those are the two
+cases the harness exists to tell apart.
+
+**Held by.** `snapshot.py --zvirty` before and after every bulk change;
+`entry_points.py` re-reads its baseline per point and prints each
+revert.
 
 ## 12. An inventory made from filenames
 
@@ -722,6 +751,46 @@ one, on consecutive days.
 
 ---
 
+## 27-bis. A test stricter than the gate it stands in for
+
+**Symptom.** Work is tested with a comparison built for the occasion,
+the comparison rejects it, and the work was correct. Unlike kind 27 this
+one never reaches the tree: it destroys good work *before* the commit,
+and it looks careful doing it.
+
+**Case.** M2, verifying six pinout quotes before landing them, tested
+them with `pdftotext -layout`. **Four of six came back "not a
+substring"** and they were about to rewrite them. The gate uses
+`layer3.tekst_dzherela`, which extracts a table differently — a newline
+between cells, collapsed later by the gate's own normalisation:
+
+    the ad-hoc test saw   'GPIO4, ADC2_CH0'           → not found
+    the gate holds        'GPIO4,⏎ADC2_CH0,⏎RT'       → found, after the
+                                                        gate collapses
+                                                        whitespace
+
+All six were correct. A stricter test is not a safer test: it rejects
+true things, and its rigour is what makes the rejection convincing.
+
+**Why it sits beside 27, not inside it.** Kind 27 is a comparison made
+**looser** than the gate — it recovered 3 records and broke 10. This is
+a comparison made **stricter** than the gate — it would have destroyed 4
+correct records. Opposite directions, one cause:
+
+> The comparison used to judge evidence must be **the same comparison
+> that will judge it**. Any other measures your own tooling.
+
+The two together give the working rule: **never hand-roll the
+comparison.** Import the gate's extractor and the gate's normalisation,
+or run the gate.
+
+**Held by.** Nothing automatic — an ad-hoc test in a scratch directory
+is outside every gate by definition. What holds is that `layer3` exposes
+`tekst_dzherela`, `plaskyy` and `uryvky` as importable functions, so
+using the real ones is cheaper than writing new ones.
+
+---
+
 ## 28. Several checks around one number, none of them asking about it
 
 **Symptom.** A value is guarded by two or three checks, all green, and
@@ -760,6 +829,28 @@ something else.
 **Held by.** A direct check: the verbatim block must equal the book line
 at the number the card names. Nothing weaker substitutes for it, and
 nothing weaker did.
+
+**And the fix uncovered a second bug underneath, which is the normal
+case.** M2 rebuilt the comparison independently, confirmed 1343, and
+found the residual 42 were not off-by-one at all — offsets of −62, in
+six files. The locator resolves a cell by searching the book for its
+row-label and its value and taking the **first** match; `| I²C |` begins
+a row in *two* tables of chapter 04, and a value like `2` matches
+anything:
+
+    p54    | I²C | дві лінії, багато пристроїв, невисока швидкість | 35 |
+    p116   | I²C | 2 | 2 | 2 | **1** | 1 + 1 LP | 2 |
+
+That is **kind 10** — keying by a value that is not unique — in a
+different subsystem, four months later, found by the other maintainer.
+Neither of us thought of kind 10 while writing a row locator. The
+catalogue only pays if it is read at the moment of writing, and it was
+not.
+
+The repair gives each half its own job: **content identifies, the number
+disambiguates.** Take the match *nearest* the recorded line rather than
+the first. Measured over all 1417 cells: first match 1327 correct,
+nearest match **1401**.
 
 ---
 

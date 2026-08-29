@@ -3692,18 +3692,25 @@ static esp_err_t json_handler(httpd_req_t *req) {
 
 **Контекст**
 
-````
-#define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
-
-static void dodaty(float t, float h, float p, bool ok) {
-    xSemaphoreTake(mutex, portMAX_DELAY);
-    istoriya[idx] = (zapys_t){ esp_timer_get_time(), t, h, p, ok };
-    idx = (idx + 1) % ISTORIYA;
-    if (kilkist < ISTORIYA) kilkist++;
-    xSemaphoreGive(mutex);
-}
 ```
-````
+### Веб-сервер
+
+    xSemaphoreTake(mutex, portMAX_DELAY);
+    int n = snprintf(buf, 16384, "{\"zapysiv\":%u,\"dani\":[", kilkist);
+    size_t start = (kilkist == ISTORIYA) ? idx : 0;
+    bool pershyy = true;                       // ← не «i == 0», див. нижче
+    for (size_t i = 0; i < kilkist && n < 16000; i++) {
+        zapys_t *z = &istoriya[(start + i) % ISTORIYA];
+        if (!z->valid) continue;
+        n += snprintf(buf + n, 16384 - n,
+                      "%s{\"t\":%lld,\"temp\":%.2f,\"hum\":%.1f,\"pres\":%.1f}",
+                      pershyy ? "" : ",",
+                      z->chas / 1000000, z->temp, z->hum, z->pres);
+        pershyy = false;
+    }
+    xSemaphoreGive(mutex);
+    snprintf(buf + n, 16384 - n, "]}");
+```
 
 **Доказ**
 
@@ -3730,18 +3737,25 @@ static void dodaty(float t, float h, float p, bool ok) {
 
 **Контекст**
 
-````
-#define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
-
-static void dodaty(float t, float h, float p, bool ok) {
-    xSemaphoreTake(mutex, portMAX_DELAY);
-    istoriya[idx] = (zapys_t){ esp_timer_get_time(), t, h, p, ok };
-    idx = (idx + 1) % ISTORIYA;
-    if (kilkist < ISTORIYA) kilkist++;
-    xSemaphoreGive(mutex);
-}
 ```
-````
+### Веб-сервер
+
+    xSemaphoreTake(mutex, portMAX_DELAY);
+    int n = snprintf(buf, 16384, "{\"zapysiv\":%u,\"dani\":[", kilkist);
+    size_t start = (kilkist == ISTORIYA) ? idx : 0;
+    bool pershyy = true;                       // ← не «i == 0», див. нижче
+    for (size_t i = 0; i < kilkist && n < 16000; i++) {
+        zapys_t *z = &istoriya[(start + i) % ISTORIYA];
+        if (!z->valid) continue;
+        n += snprintf(buf + n, 16384 - n,
+                      "%s{\"t\":%lld,\"temp\":%.2f,\"hum\":%.1f,\"pres\":%.1f}",
+                      pershyy ? "" : ",",
+                      z->chas / 1000000, z->temp, z->hum, z->pres);
+        pershyy = false;
+    }
+    xSemaphoreGive(mutex);
+    snprintf(buf + n, 16384 - n, "]}");
+```
 
 **Доказ**
 
