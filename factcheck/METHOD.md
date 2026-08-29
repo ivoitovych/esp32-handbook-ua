@@ -206,6 +206,13 @@ forever**. `C` says
 Confusion in the direction of `E` always reduces work — which is
 exactly why it passes so easily.
 
+**And yet the class has to exist, which is easy to forget after four
+sections of warnings about it.** `no-external-signal` is what gives the
+queue a **floor**. Without it **79 % of this book's units** would hang
+in `unchecked` for ever, and the genuine work would drown in editorial
+prose that was never going to have a source. Every danger listed above
+is the price of that floor, not an argument against it.
+
 ### Trap: class `E` holds two incompatible kinds
 
 `E` is assigned mechanically where the text carries no checkable
@@ -225,9 +232,29 @@ the text changes. A class asserted in an evidence record is a
 > A false confirmation is caught by layer 3. **A false verdict is
 > caught by nobody**: the unit simply leaves the queue.
 
-Measured twice on this project: a random sample of 12 verdicts gave 3
-false and 2 doubtful; a pool run over 85 gave 10 confirmed sources
-where the verdict said none. **12–25 % of verdicts were wrong.**
+Measured three ways on this project, and they agree:
+
+| How | Result |
+|---|---|
+| a random sample of 12 verdicts, read by hand | 3 false, 2 doubtful |
+| a pool run over 95 verdicts, ten helpers | 10 of 85 found a source the verdict said did not exist — **12 %** |
+| an audit of 17 numeric-claim verdicts | 2 false — **12 %**, both documents already in our own cache |
+
+**12–25 % of verdicts were wrong.** The pool run is worth its own line: the
+order made "no source exists" **not an allowed answer**, replacing it with
+an advice verdict that *requires* an explanation, while "did not find"
+requires none — because it asserts nothing. Of 45 advice verdicts, **zero**
+lacked their explanation.
+
+That rule — **an assertion must pay for itself** — held a second time in
+the other maintainer's run, at **931 of 931**. One clean result is a
+result; two, from different hands on different queues, is a property of
+the order's shape rather than a coincidence.
+
+The asymmetry is the same one as in the law about patterns: an error
+towards "a source exists" leaves the unit in the work queue, and an error
+the other way hides it for good. So the verdict "no source exists" must be
+the **most expensive** answer in a work order, never the cheapest.
 
 ---
 
@@ -237,19 +264,339 @@ where the verdict said none. **12–25 % of verdicts were wrong.**
     layer 2  evidence → claim  is the quote about THIS (semantic, human)
     layer 3  source → evidence is the quote in the document (mechanical)
 
-**Layer 3 removes the requirement for a strong model.** A weak model
-fails predictably: it paraphrases instead of quoting, stitches
-sentences together, reorders words. Every one of those failures is
-caught mechanically and completely. So collection can go to the
-cheapest model and expensive attention stays on layer 2.
+Each layer catches its own kind of failure and **none of them catches the
+other two**. That is the whole reason for separating them: fact-checking
+costs an order of magnitude more than everything else in a book put
+together, and the cheap part of it is invisible until it is separated out.
 
-**Layer 1 must also be automatic, and for a long time it was not.** The
-registry is generated from the book, so for prose the equality holds by
-construction. But nothing checked that the *generator* was faithful.
-When a check was finally written it found 6 genuine mismatches — and
-all six were that day's corrections, which is the best confirmation a
-check can give itself.
+---
 
+### Layer 1 — book → record
+
+**Asks:** does this claim have a record in the registry at all?
+
+**Catches:** a claim nobody checked, and nobody noticed was unchecked.
+
+The book's structure is mirrored: each book file has a registry file
+**generated** from its text. A claim gets a stable identifier, and the
+record holds the verbatim book text, a hash of it, the status, and the
+evidence.
+
+#### The identifier is an address; the hash is what the unit *is*
+
+That table used to say "the identifier does not change until the text
+changes". It is untrue, and untrue expensively.
+
+`T-20-050` is `T-<file>-<ordinal>`. The ordinal shifts on **any** edit
+above the unit, even if the unit itself is word-for-word unchanged. Six
+corrections to the printed run shifted **1311 numbers across 32 files**.
+
+Both maintainers hit this the same evening from opposite directions: the
+layer-1 check reported 1317 "mismatches", of which **6 were real** and
+1311 were shifted numbers; and a snapshot written by `id` showed 34
+pieces of evidence that had "lost" their units, where the same bindings
+resolved through `sha` gave **0 lost of 1337**.
+
+> The number is the address where the unit can be found **today**. The
+> hash is what it *is*. Anything that must survive an edit — evidence, a
+> snapshot, a work queue, a helper's order — holds the hash. The number
+> is good only for showing a person where to look right now.
+
+The same law applies a second time to the **card**: the line number in it
+is a locator, and locators go stale. So a card finds its line in the book
+**by content**, and takes the number only as a fallback.
+
+#### Is the registry still about *this* book?
+
+The registry is generated from the book, so editing the book does not
+break it — it **displaces** it: evidence stays attached to the old
+wording and `src:line` points past its target.
+
+A `stale` check separates three kinds — text changed, unit appeared or
+vanished, only the number moved.
+
+For four days it caught none of them. **The docstring promised a text
+comparison and the body checked whether the file existed**; the counter
+read zero, and zero looked like "all well". Six corrections to the print
+run went straight past it.
+
+#### How this layer lies: the binding
+
+Evidence attaches to units by pattern, and **a pattern that is too wide
+silently marks as checked what was never checked**. Three times on this
+project:
+
+    ESP-IDF|esptool     173 units under one piece of evidence about versions
+    службов             FreeRTOS tasks under evidence about a flash region
+    RP2040              a whole column of a comparison table under a heading
+                        about memory addresses — including the board price
+
+> **A wide pattern is more dangerous than a missing one.** A missing
+> pattern leaves the unit in the work queue. A wide one moves it into a
+> class with a false mark and removes it from sight for good.
+
+**The second law is about the opposite edge.** A pattern that writes out
+the *whole sentence* dies at the first edit to that sentence: a DS18B20
+correction rewrote the back half of one, and two pieces of evidence
+stopped matching anything the same minute. The gate went red, which is
+the only reason it was noticed.
+
+> **A wide pattern lies; a long one breaks.** The target between them is
+> the shortest *distinguishing* fragment — four words to the first number
+> was enough here. Numbers and markup stay out of the pattern: those are
+> exactly what gets edited.
+
+The consequence for working in pairs: **an edit to the book is an event
+for the evidence, not only for the text.**
+
+**The third law: measure a pattern the way it is used.** Deriving patterns
+by machine produced three failures in a row, and all three were a gap
+between how the pattern was built and how it works:
+
+| What was done | What happened | Why |
+|---|---|---|
+| `re.escape`, then spaces → `\s+` | **all 223 patterns matched nothing** | `re.escape` turns a space into `\ `; the substitution ate the space and left an orphan backslash |
+| distinctiveness measured with `startswith` | 5 patterns up to **7** units wide | a pattern is used by **search**: one unit's prefix sits in the middle of another |
+| re-landed, erasing the previous evidence files | 231 units left in class `verbatim` **with no evidence** | the class was already applied to the registry; deleting evidence is not the same as withdrawing a class |
+
+The first two were caught by a check written immediately after landing:
+for every new piece of evidence, count how many **registry** units it
+touches and demand exactly one. Without it, 223 dead patterns would have
+entered the tree quietly and looked like finished work.
+
+The third is cured by order of operations: **landing starts by reverting
+the registry** to its state without it, and only then lands afresh.
+Otherwise the second attempt sees the first one's effects and concludes
+the work is already done.
+
+> What all three share: the tool **measured something other than what
+> would later happen.** It is the same disease as a docstring that
+> promises more than the code does — only here it is the measurement that
+> lies rather than the text.
+
+---
+
+### Layer 2 — evidence → claim
+
+**Asks:** does this extract actually prove this claim?
+
+**Catches:** a real quote from a real source that proves something else.
+
+**This is the expensive layer and it cannot be mechanised.** It needs
+understanding of the subject, and every error that survived the other
+checks lives here.
+
+The sharpest example this project produced. The book stated that
+`esptool chip-id` reports the chip family and revision. Class-`verbatim`
+evidence quoted the command list:
+
+    chip-id     Read Chip ID
+
+The quote is exact. The source is the official documentation. Layer 3
+passes it without comment. **The claim is false**: `ESPLoader.chip_id()`
+raises `NotSupportedError` across the whole ESP32 family, and the command
+prints a warning and a MAC address. The family is named by the *connection
+preamble*, which is shared by every subcommand.
+
+> **A name in a list proves the thing exists, and nothing else.** A claim
+> about what the thing *does*, or *prints*, needs code or a sample of real
+> output.
+
+**Who does it:** the maintainer. Not a helper, not a script.
+
+---
+
+### Layer 3 — source → evidence
+
+**Asks:** does this text really stand at this address?
+
+**Catches:** paraphrase instead of quotation, two sentences stitched into
+one, reordered words, plausible invention, an address that now serves
+something else.
+
+**It is a script, and that is the entire point.** Fetch the source into
+the cache, extract the text, collapse whitespace, search for the
+substring. No model at all.
+
+Only *checkable* fragments are tested: lines without Cyrillic (Cyrillic is
+our own annotation), without an ellipsis (text was cut there), and not
+shorter than 12 characters.
+
+Two search modes, and both are needed: **as a joined group**, when we
+wrapped one long source line onto two of ours; and **line by line**, when
+the fragment was assembled from different places in the file — two related
+definitions a hundred lines apart in the code.
+
+#### Why this layer changes the economics
+
+Not because a script is cheaper than a model. Because **it removes the
+requirement on the strength of the model that collects the evidence.**
+
+A weak model fails predictably: paraphrases instead of quoting, stitches
+sentences, reorders words, invents something plausible. Layer 3 catches
+every one of those mechanically and completely.
+
+So collection can go to the cheapest model and the expensive attention
+stays on layer 2. That is the part of the work that is invisible until it
+is separated out.
+
+#### Three states that cannot be anything but an error
+
+Not every mismatch is a fault — a quote can fail to match because of a
+line wrap, or because the extractor laid a table out by columns. So **a
+mismatch is a report, not a gate**. But three states can only be errors,
+and the check fails on them:
+
+**An invented source.** Class `verbatim` or `derived`, and the source
+field holds not a document but a property of the world: "the properties of
+CMOS logic", "well-known relay electromechanics". This is the worst
+possible outcome of all — a false "checked" removes the claim from every
+queue, and nobody ever looks at it again.
+
+A cheap model that **cannot find a document does not write
+`named-unreachable` — it invents a plausible document name.** Stronger
+models did not do this once in three waves; they wrote
+`named-unreachable` with a "what to look for" field.
+
+> A cheap model is safe where the document is already in the cache and the
+> work is "find it and copy it out". It is dangerous where the document
+> might not exist — that is exactly where it invents.
+
+**But the fault is not a property of cheap models; it is a property of
+haste.** The worst instance in this project was a maintainer's: class
+`derived`, source "well-known relay electromechanics", and the same field
+admitting two lines later that the normative document was unreachable. The
+record said `named-unreachable`, the class said `derived`, and it was
+written ten passes before any helper pool existed — on a safety claim
+about welded relay contacts.
+
+That matters for how the gates are built: a gate that checked **who wrote
+the record** would have passed the worst case. It checks **the record**.
+
+**A stub in the cache.** A vendor site returns fixed-size HTML for any
+address under a documents path, with code 200. `curl --fail` succeeds, the
+file lands in the cache as a document, and a class is assigned for
+something nobody saw. Checked by the `%PDF` signature.
+
+**Evidence in the class that means "no evidence".** `unchecked` means
+nobody has looked. An evidence record carrying it says nothing at all.
+
+What saves this layer from crying wolf is a fourth state — **checked by
+eye**. Where extraction destroys the structure, the maintainer verifies
+the quote personally and marks it with the reason the machine is helpless
+here. Without that escape, layer 3 raises alarms on correct quotes, and
+within a week nobody reads it — and then it is worth nothing.
+
+#### Tables in PDFs: better extraction first, loosening only after
+
+The order matters. "Checked by eye" costs a person minutes **per record**,
+and when there are dozens it eats exactly the attention the whole layering
+was built to protect. So exhaust extraction before loosening the check.
+
+A plain PDF-to-text pass gives **reading order**, in which every cell of a
+column stands on its own line:
+
+    Thermometer
+    tERR
+    -55°C to +125°C
+    ±2
+    °C
+
+There is no continuous line "Thermometer tERR -55°C to +125°C ±2 °C" in
+that text, and there cannot be — although in the document it is one table
+row.
+
+**The cure is coordinates, not loosening.** A coordinate-aware extractor
+gives words with positions; those sharing a baseline group into a row and
+sort left to right, and the table row is reconstructed verbatim.
+
+So the text of a PDF is built in **two views at once** — reading order
+plus reconstructed rows — and the search runs over both. A quote from a
+paragraph is found in the first, a quote from a table row in the second.
+
+The same pass removes extraction litter: soft hyphens, zero-width spaces,
+`ﬁ`/`ﬂ` ligatures, non-breaking hyphens. That is not a loosening — they
+are invisible in the document, and no human could have "quoted them
+wrongly".
+
+#### What remains, and why some loosening is still needed
+
+Column layout still puts a parameter name, its condition and its value on
+different lines. A plain substring test gave **27 false alarms out of 45**,
+and not one was the quote's fault.
+
+One case coordinates do not solve: **a cell broken across two visual
+lines**. "Thermometer" sits above "Error", and no single row contains the
+whole parameter name.
+
+For that there is a fallback: if the substring does not match, every
+meaningful token must be present in the document **and lie close
+together** (a window of a few thousand characters). That catches an
+invented quote — the tokens will not be there at all — and does not catch
+a word reordering inside a table, where reordering does not change meaning.
+
+For code and structured markup the loosening **does not apply**: there,
+word order carries meaning.
+
+"Checked by eye" remains, but as a last resort for unreadable scans rather
+than a normal state. If it starts appearing often, that is a sign the
+extraction needs improving again — not that the human should look harder.
+
+#### What layer 3 does not say
+
+* It does not say the evidence is *relevant* — that is layer 2.
+* It does not say the source is authoritative: a raw-content host will
+  serve anybody's repository.
+
+It says exactly one thing: **this text really stands at this address.**
+
+---
+
+### Who does what
+
+| | Layer 1 | Layer 2 | Layer 3 |
+|---|---|---|---|
+| **Script** | generates the registry, audits patterns | — | everything |
+| **Helper (cheap model)** | — | fetches the source, returns a verbatim quote | — |
+| **Maintainer** | writes patterns, judges the audit | **assigns the status** | resolves mismatches |
+
+A helper writes **no** evidence, **no** patterns and **no** statuses, and
+changes nothing in the repository. The reason is concrete: all three cases
+of a pattern failing silently happened where the pattern was written, and
+only someone who remembers all three catches them.
+
+---
+
+### A fourth layer, which does not exist yet
+
+The registry checks the book against sources. It does **not check the book
+against itself**.
+
+An appendix credited a sensor with measuring humidity it physically lacks;
+a chapter of the same book said correctly that it is "the same part
+without humidity". Both records would pass against their own sources, and
+the contradiction between them is invisible to all three layers.
+
+For a printed book this is the most expensive kind of error, because a
+reference table exists precisely so a reader consults it **instead of**
+reading the chapter.
+
+**Its first instance already exists, written without anyone intending it.**
+One record checks a voltage threshold in a project chapter's prose against
+the threshold in that same chapter's code listing. Layer 3 first declared
+it an invented source — and was formally right, because there is no
+document. But it is not invention; it is a **third kind of source: the
+book itself**.
+
+Such records are now recognised and passed. Checking them mechanically
+needs a different script, because the source lives in the tree rather than
+the cache. But the fact that they are being written at all is the start of
+the fourth layer: the practice appeared first, and only then was it seen to
+be a distinct kind.
+
+What is needed next: extract pairs of "the same claim in two places" from
+the book and check them against each other. The most expensive mistakes of
+the week were exactly that shape.
 
 ---
 
@@ -317,6 +664,67 @@ Measured on this book: 639 chapter references, 0 broken; 13 anchor
 links, 0 broken; 0 number mismatches. **The structural check finds
 nothing today** — it is a regression guard, and saying so is part of
 reporting it honestly.
+
+---
+
+## 3-ter. The split itself manufactures false contradictions
+
+A registry unit is a **sentence**. For most claims that is the right size:
+smaller cannot be checked, larger cannot be bound.
+
+But a qualification in a book often stands in the **next** sentence, and
+then the split cuts the thought in half:
+
+    unit:            "`-z` turns on compression during transfer."
+    next sentence:   "It is **already on** by default, so in an ordinary
+                      command the flag changes nothing."
+
+A helper who sees only the first reads the source — compression is on by
+default, another flag disables it — and honestly reports a contradiction.
+The book is right; its rightness simply lives in a unit nobody gave them.
+
+> **A false contradiction of this kind is not the helper's mistake.** The
+> split produces it, and no prohibition in the work order will remove it.
+
+The consequence for practice: **a claimed contradiction is checked against
+the book, not against the unit.** The cheap move is to read the
+neighbouring sentences before fetching the source at all — in three cases
+of three in one wave, the contradiction did not survive that.
+
+The signature to recognise it by: the unit is short, categorical and
+unqualified, while the passage beside it carries a caution box or a second
+sentence beginning "but", "however", "already".
+
+---
+
+## 3-quater. Missing looks like agreement
+
+A failure none of the three layers catches, because it happens **before**
+them: a unit nobody answered.
+
+A helper reports its own numbers, and they are self-consistent: "seven
+confirmed, no errors". The order held ten. **Seven of seven looks exactly
+like seven of ten from the inside.** The three missing records were not
+refuted and not deferred — they are absent, and nothing in the report
+shows it.
+
+So a summary takes its list from the **order that was issued**, not from
+what came back, and prints the missing ones as their own section.
+
+> Reconcile against what was ordered, not against what returned.
+
+And specifically **against the order as it was issued.** While helpers
+worked on 50 mismatched quotes, merging the other maintainer's work raised
+the count to 69. Reconciling against the current list would have written
+19 records the helpers never saw into their carelessness.
+
+The same law applies to data. The first run of one measure lost 40 units
+of 160 to broken YAML — and lost them **not at random**: the files that
+failed were from the two helpers with the highest hit rate. The silent
+loss moved exactly the number being measured, and moved it downward.
+
+> Silent data loss is almost never random: it shifts precisely the thing
+> being measured.
 
 ---
 
@@ -572,6 +980,31 @@ other direction, flagged seven fabricated document names of which
   checked against, in kilobytes, without carrying hundreds of megabytes
   of binaries into a history from which they can never be removed. This
   reason survives whatever one concludes about the first two.
+- **A URL is the default identifier of a source.** Not an ISBN, not a
+  document title, not "the manufacturer's datasheet". The reason is
+  narrow: a URL is the only form a script can check without a human.
+  Everything else requires somebody to open the document and look. Books,
+  ISBNs and local documents are supported as an **exception**, not as an
+  equal option — designing for every possible kind of source at once means
+  never getting layer 3 at all.
+- **Evidence that bypassed the cache is evidence with an expiry date.**
+  Of 213 distinct addresses named by one maintainer's evidence, **two**
+  were in the manifest; the other maintainer had one of twenty-seven. The
+  records were honest — the document was fetched, the quote checked as a
+  substring — but fetched *past* the cache, into a temporary directory
+  that is not in the tree. The consequence shows up later: those addresses
+  point at a moving branch, a reader checking the quote a year on sees
+  different text and cannot tell our oversight from our invention, and
+  layer 3 does not check such records at all because it looks in the
+  cache and they are not there.
+
+  > **Evidence is finished not when the quote is verified, but when the
+  > source is in the manifest.** Verification without the cache attests
+  > only that a maintainer saw something; nobody can reproduce it.
+
+  The cheap symptom: `not in cache` rising in the layer-3 report after a
+  landing wave. If a wave added evidence and the "verified" number did not
+  move, the sources went past the cache.
 - **The cache and the matcher are one thing living in two places.**
   Downloading a document is half the work; the other half is telling
   the matcher it exists. Thirteen fresh datasheets sat unused because
@@ -774,6 +1207,35 @@ the method to another book.
 ---
 
 ## 10. Rules about checks themselves
+
+**The dominating failure, stated first because it caused five of the rest.**
+In one day, five tools promised something their bodies did not do:
+
+| Where | Promised | Did |
+|---|---|---|
+| the landing gate | two checks | one |
+| a sweep generator | a candidate for every packet | none, silently |
+| `stale` | compare the book's text | check whether the file exists |
+| the card-format pattern | readers take the format from one place | each held a copy |
+| the correspondence tool | a badly named letter is a violation | the letter vanished from the accounting |
+
+The last cost the most: **two letters nobody saw.** Their filenames held
+Cyrillic characters, the pattern accepted only `[a-z0-9-]`, and a file that
+did not match was treated as "not a message". A finding about a broken
+layer 1 lay invisible, and the very check meant to stop a release over an
+open question did not react to it. It was found by accident — a reply to
+one of those letters could not find its addressee.
+
+> **Zero looks the same whether all is well or the counter is counting
+> nothing.** And we read it as the first, every time.
+
+From which the rule of contribution, stronger than reviewing docstrings:
+
+> **Every new check must be demonstrated working on a deliberately broken
+> input**, and that demonstration is part of the contribution rather than
+> extra work. A check that has never fired is indistinguishable from a
+> check that does not exist.
+
 
 - **A new check that disagrees with the previous one by a factor of two
   or more is broken until proven otherwise.** Verify one case by hand

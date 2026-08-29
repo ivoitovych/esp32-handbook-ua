@@ -241,7 +241,7 @@
 
 ## Етап 6 — документи
 
-`SCHEMA.md`, `ARCHITECTURE.md`, `HELPERS.md`, `METODYKA.md`
+`SCHEMA.md`, `METHOD.md` §3, `HELPERS.md`, `METODYKA.md`
 переписуються під нову архітектуру. Робочий жаргон лишається **тільки
 тут** — це документи супровідника, і в них він доречний.
 
@@ -316,7 +316,7 @@ documents**, and of those four are already in English.
 ### How the classification was done, and the one false positive it gave
 
 A first pass searched the whole header for the word «генерується» and
-put `ARCHITECTURE.md` — a governing document — among the generated
+put `METHOD.md` §3 — a governing document — among the generated
 ones. The word was there, in a sentence about the **registry** being
 generated from the book.
 
@@ -382,7 +382,7 @@ the card that needed the book to be understood.
 
 | Now | Becomes | |
 |---|---|---|
-| `ARKHITEKTURA.md` | `ARCHITECTURE.md` | done |
+| `ARKHITEKTURA.md` | `METHOD.md` §3 | done |
 | `PEREYIZD.md` | `MIGRATION.md` | done |
 | `PEREVIRYTY.md` | `TO-VERIFY.md` | done |
 | `POMICHNYKY.md` | `HELPERS.md` | done — М2 2026-08-29 |
@@ -390,6 +390,7 @@ the card that needed the book to be understood.
 | `SPROSTOVANE.md` | `REFUTED.md` | done — М2 2026-08-29 |
 | `UROKY-M2.md` | `LESSONS-M2.md` | M2's file — theirs to rename |
 | `SCHEMA.md` | `SCHEMA.md` | already plain |
+| `ARKHITEKTURA.md` → `ARCHITECTURE.md` | **folded into `METHOD.md` §3** | done — М2 2026-08-29 |
 | `dzherela.md` | `SOURCES.md` | done — М2 2026-08-29 |
 | `SPROSTOVANE-m2.md` | `REFUTED-M2.md` | done — М2 2026-08-29 |
 | `ARKHITEKTURA-m2.md` | `ARCHITECTURE-M2.md` | done — М2 2026-08-29 |
@@ -468,7 +469,7 @@ the batch is reverted.
 
 Five renames, three archivals, no deletions:
 
-    ARKHITEKTURA.md          → ARCHITECTURE.md
+    ARKHITEKTURA.md          → METHOD.md
     PEREYIZD.md              → MIGRATION.md
     PEREVIRYTY.md            → TO-VERIFY.md
     NARYAD-nedostupni.md     → UNREACHABLE-SOURCES.md
