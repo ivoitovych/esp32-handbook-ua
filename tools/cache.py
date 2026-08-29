@@ -347,7 +347,7 @@ def vidtvornist() -> int:
         for r in zap:
             if not isinstance(r, dict):
                 continue
-            if _fc().class_letter_of(r) not in ("A", "B"):
+            if _fc().status_of(r) not in ("verbatim", "derived"):
                 continue
             d = " ".join(str(r.get("source") or r.get("source") or "").split())
             fajly = [x.split("-", 1)[1] if re.match(r"^[0-9a-f]{8}-", x) else x

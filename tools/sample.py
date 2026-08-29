@@ -101,7 +101,14 @@ def odynyci(klas: str) -> list[dict]:
                     continue
                 tilo = shmatky[i + 4]
                 m = RE_CYTATA.search(tilo)
+                # `status` — цільова форма, СЛОВОМ; `klas` лишається на
+                # час переїзду, бо в коментарі картки поки літера.
+                # Обидва тут виводяться з одного `k`, тож розійтися не
+                # можуть; при стисненні зникає рядок із `klas`, а не
+                # з'являється другий шлях.
                 out.append({"id": ident, "sha": sha, "src": src,
+                            "status": factcheck.LETTER_TO_STATUS.get(k, k),
+                            "klas": k,
                             "tekst": m.group("t").strip() if m else ""})
     return out
 
@@ -139,7 +146,7 @@ def zaholovok(**kw) -> str:
 # Для `E` ми випробовуємо **присуд**: чи правда, що джерела не існує.
 # Для `F` присуду немає взагалі — є нероблена робота. Тому й вердикти
 # інші, і головний із них той, якого в наряді на `E` немає:
-# `sperechayetsya`. Саме він знаходить помилки в книзі.
+# `disputes`. Саме він знаходить помилки в книзі.
 ZAHOLOVOK_F = """# Наряд: випадкова вибірка класу `{klas}` — ще не звірене
 
 **Генерується** `tools/sample.py`. Насіння **{nasinnya}**, з популяції
@@ -163,16 +170,12 @@ ZAHOLOVOK_F = """# Наряд: випадкова вибірка класу `{kl
 > Наряд не каже, якої відповіді чекає. Він каже, що кожна відповідь
 > мусить пред'явити.
 
-## Вердикти й що кожен вимагає
+Перелік вердиктів і те, чого кожен вимагає, стоїть нижче, у блоці
+завдання. Тут його немає навмисно: **жоден генератор не пише власної
+копії цих правил**, і саме така копія тут і стояла — з іменами
+вердиктів, яких ворота вже не вживають.
 
-| Вердикт | Обов'язково |
-|---|---|
-| `pidtverdzheno` | `dzherelo` + `cytata` — дослівний рядок із документа |
-| `sperechayetsya` | `dzherelo` + `cytata` — рядок, що каже **інакше** |
-| `ne_znayshov` | `dzherelo` — **адреса документа, який дивився** |
-| `nedosyazhne` | `dzherelo` + код відповіді в `komentar` (403, 404, заглушка) |
-
-`dzherelo` завжди починається з `https://raw.githubusercontent.com/`.
+`source` завжди починається з `https://raw.githubusercontent.com/`.
 
 **Адреса, що вказує на сам довідник** (`esp32-handbook`, `ivoitovych`,
 `voytovych`, або шлях виду `manual/…`, `kartky/…`, `dodatky/…`)
@@ -200,39 +203,13 @@ ZAHOLOVOK_F = """# Наряд: випадкова вибірка класу `{kl
 
 ## Заборони
 
-Повністю — `factcheck/HELPERS.md`. Тут найважливіші:
+Повністю — `factcheck/HELPERS.md`; найважливіші стоять нижче, у блоках
+завдання, і тут не повторюються.
 
-- **переказ — не цитата.** Усе в полі `cytata` звіряється підрядком у
-  завантаженому документі;
-- **пам'ять — не документ.** Велика літера замість малої валить запис
-  навіть при правильному факті;
-- **«стандартна практика» — не джерело**;
-- **знати відповідь — не підстава написати цитату.** Факт відомий, а
-  рядка не видно — це `ne_znayshov` із назвою того, де дивився.
-
-## Про `sperechayetsya`
+## Про `disputes`
 
 Найцінніша відповідь: книгу ще можна виправити. Але лише коли **бачиш
 інший текст**, а не пам'ятаєш інакше.
-
-## Формат
-
-```yaml
-- odynycya: T-12-034
-  verdykt: ne_znayshov
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
-  komentar: документ прочитано, про це в ньому не сказано
-
-- odynycya: T-12-035
-  verdykt: pidtverdzheno
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/...
-  cytata: |
-    дослівний рядок із завантаженого документа
-  komentar: що саме він підтверджує
-```
-
-**YAML:** якщо значення містить `: ` або починається з лапки — бери все
-значення в одинарні лапки.
 
 """
 
@@ -342,7 +319,7 @@ def zvesty(katalog: Path) -> int:
     #
     # Частка при цьому лишається чинною: вибірку брали з `E`, і
     # відповідає вона на питання про `E`, хоч би скільки їх було зараз.
-    populyaciya = len(odynyci("E"))
+    populyaciya = len(odynyci("no-external-signal"))
 
     # Розкид між помічниками. Це не косметика: якщо різні судді на тих
     # самих даних дають різні частки, справжня похибка більша за
@@ -492,14 +469,23 @@ def main() -> int:
     if "--na-paket" in sys.argv:
         na_paket = int(sys.argv[sys.argv.index("--na-paket") + 1])
 
-    # Клас `F` має свою рамку (там питають інше), спільні блоки ті самі.
-    if klas == "F":
+    # Стан `unchecked` має свою рамку (там питають інше), спільні
+    # блоки ті самі. Приймаємо обидва написання, доки в коментарі
+    # картки стоїть літера.
+    import factcheck
+    if factcheck.LETTER_TO_STATUS.get(klas, klas) == "unchecked":
         import task_spec
         ramka = ZAHOLOVOK_F
         for k, v in dict(klas=klas, nasinnya=nasinnya,
                          vsyoho=len(vsi), skilky=skilky).items():
             ramka = ramka.replace("{" + k + "}", str(v))
-        shapka = task_spec.sklasty(ZAHOLOVOK_BLOKY, zaholovok=ramka)
+        # `VERDICTS-EXTERNAL`, а не `VERDICTS-VERDICT-TEST`: у черзі
+        # «не звірено» немає чужого присуду, який можна випробовувати,
+        # — є нероблена робота. Досі сюди йшов блок для випробування
+        # присуду, і виконавець бачив ДВІ таблиці вердиктів: цю й ту.
+        bloky_f = [b if b != 'VERDICTS-VERDICT-TEST' else 'VERDICTS-EXTERNAL'
+                   for b in ZAHOLOVOK_BLOKY]
+        shapka = task_spec.sklasty(bloky_f, zaholovok=ramka)
     else:
         shapka = zaholovok(klas=klas, nasinnya=nasinnya,
                            vsyoho=len(vsi), skilky=skilky)

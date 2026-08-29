@@ -111,14 +111,22 @@ CHASTKA_E_Z_REFERENTOM = 0.37
 
 
 def klasy() -> dict[str, int]:
-    """Скільки одиниць у кожному класі — з реєстру, а не з пам'яті."""
+    """Скільки одиниць у кожному стані — з реєстру, а не з пам'яті.
+
+    Ключ — **слово**. Літера в коментарі картки зводиться до слова тут
+    же, одним рядком, який зникне разом із нею; власного розбору
+    коментаря тут більше немає — це був третій примірник того самого
+    правила, і при стисненні його ніхто б не згадав.
+    """
     import re as _re
+    import factcheck
     lich: dict[str, int] = collections.Counter()
     vz = _re.compile(r"klas:(\w+) -->")
     for g in GRUPY:
         for f in sorted((FC / g).glob("*.md")):
             for m in vz.finditer(f.read_text(encoding="utf-8")):
-                lich[m.group(1)] += 1
+                lich[factcheck.LETTER_TO_STATUS.get(m.group(1),
+                                                    m.group(1))] += 1
     return dict(lich)
 
 
@@ -163,7 +171,7 @@ def podil_e() -> tuple[list[str], list[str], int, int]:
     """
     import sample
     za: dict[str, int] = collections.Counter(
-        u["src"].split("/")[-1].split(":")[0] for u in sample.odynyci("E"))
+        u["src"].split("/")[-1].split(":")[0] for u in sample.odynyci("no-external-signal"))
     m1: list[str] = []
     m2: list[str] = []
     s1 = s2 = 0
@@ -214,11 +222,11 @@ def zvedennya() -> int:
     print(f"  слабкий сигнал, поза поділом: {len(rozklad['—'])}")
 
     k = klasy()
-    e_ref = round(k.get("E", 0) * CHASTKA_E_Z_REFERENTOM)
+    e_ref = round(k.get("no-external-signal", 0) * CHASTKA_E_Z_REFERENTOM)
     print(f"\n── решта, якої в поділі вище немає ──")
     print(f"  клас E, оцінка з референтом  {e_ref:5}   "
-          f"({CHASTKA_E_Z_REFERENTOM:.0%} від {k.get('E', 0)}, випадкова вибірка)")
-    print(f"  клас C, джерело недосяжне    {k.get('C', 0):5}   "
+          f"({CHASTKA_E_Z_REFERENTOM:.0%} від {k.get('no-external-signal', 0)}, випадкова вибірка)")
+    print(f"  клас C, джерело недосяжне    {k.get('named-unreachable', 0):5}   "
           f"М2: у них мережа ширша")
     print(f"\n── ремонт наявних записів ──")
     for hto, shcho, skilky, chomu in remonty():
@@ -252,7 +260,7 @@ def naryad() -> int:
     # тексту**. Це менша частина решти, і подавати її як «поділ роботи»
     # означало б показати десяту частину боргу за весь борг.
     k = klasy()
-    e_ref = round(k.get("E", 0) * CHASTKA_E_Z_REFERENTOM)
+    e_ref = round(k.get("no-external-signal", 0) * CHASTKA_E_Z_REFERENTOM)
     slabki = len(rozklad["—"])
     r += [
         "## Уся решта, а не лише сильний сигнал\n",
@@ -267,9 +275,9 @@ def naryad() -> int:
         f"| `F`, слабкий сигнал | {slabki} | **нікому** "
         "| ознаки, за якою ділити, немає; чекає на суцільні проходи |",
         f"| `E`, оцінка з референтом | ~{e_ref} | обом порівну "
-        f"| {CHASTKA_E_Z_REFERENTOM:.0%} від {k.get('E', 0)} за випадковою "
+        f"| {CHASTKA_E_Z_REFERENTOM:.0%} від {k.get('no-external-signal', 0)} за випадковою "
         "вибіркою; ділиться розділами, бо джерело наперед невідоме |",
-        f"| `C`, джерело недосяжне звідси | {k.get('C', 0)} | М2 "
+        f"| `C`, джерело недосяжне звідси | {k.get('named-unreachable', 0)} | М2 "
         "| у них ширша мережа; для М1 це 403 за побудовою |",
         "",
         "### Ремонт наявних записів\n",

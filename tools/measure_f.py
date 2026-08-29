@@ -166,7 +166,7 @@ def promizhok(k: int, n: int) -> tuple[float, float]:
 
 def populyaciya() -> int:
     import sample
-    return len(sample.odynyci("F"))
+    return len(sample.odynyci("unchecked"))
 
 
 def main() -> int:

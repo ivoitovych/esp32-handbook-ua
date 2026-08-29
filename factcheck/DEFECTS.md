@@ -110,6 +110,29 @@ name says.
 The `zvyazok` one hid two of M2's letters, including the finding that
 layer 1 was broken.
 
+**A sixth, in the tool built to catch the others.** The entry-point
+harness compared what each program **printed** and nothing else. Run
+around a change that rewrote a generated work order by 104 lines, it
+reported *"57 points, 0 different"* — because a generator prints one
+summary line and puts the work in a file, and the summary line did not
+move.
+
+    what the harness compared    stdout, stderr
+    what the change altered      the file the generator wrote
+    what the harness reported    0 differences
+
+> A behaviour snapshot that cannot see what a program **writes** measures
+> its least interesting half — and its zero reads as "nothing changed".
+
+It now also records, per point, which files that point wrote and a hash
+of each. Two traps had to be closed on the way: the field first recorded
+the whole dirty tree, so it showed the author's own uncommitted patch
+rather than the point's writing (it is a **delta**, taken before and
+after each point); and a generated file carrying a timestamp made every
+pair of snapshots differ for ever, so dates are normalised before
+hashing — the same rule that already applies to the temporary directory
+name.
+
 **Held by.** The demonstration rule above. Nothing else can.
 
 ## 4. A number used as an anchor

@@ -98,7 +98,12 @@ def teksty_odynyc():
     """Тексти одиниць реєстру — потрібні лише для перевірки на течу."""
     try:
         import sample
-        return [o['tekst'] for k in 'ABCDEFG' for o in sample.odynyci(k)]
+        # Не власний рядок літер: у ньому не було `N`, `K`, `S`, `L`,
+        # тож перевірка на течу мовчки не бачила одиниць цих станів.
+        # Джерело переліку — код, і лише код.
+        import factcheck
+        return [o['tekst'] for k in factcheck.STATUSES
+                for o in sample.odynyci(k)]
     except Exception:
         return None
 

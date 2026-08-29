@@ -139,7 +139,7 @@ def main() -> int:
         if u is None:
             nema += 1
             continue
-        if u["klas"] in ("A", "B", "C"):
+        if u["status"] in ("verbatim", "derived", "named-unreachable"):
             vzhe += 1
             continue
         vz = vzirets_dlya(u["tekst"], vsi)

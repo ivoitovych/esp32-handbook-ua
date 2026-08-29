@@ -131,7 +131,7 @@ def planuvaty(kudy: pathlib.Path, agentiv: int, kvytkiv: int,
         "wave": wave, "seed": nasinnya, "order_version": versiya,
         "pool": len(pool), "agents": agentiv, "tickets_each": kvytkiv,
         "units": [u["id"] for u in vzyato],
-        "by_class": {k: sum(1 for u in vzyato if u["klas"] == k)
+        "by_class": {k: sum(1 for u in vzyato if u["status"] == k)
                      for k in NEZVIRENI},
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -148,7 +148,7 @@ def planuvaty(kudy: pathlib.Path, agentiv: int, kvytkiv: int,
              f"\n<!-- order_version:{versiya} wave:{wave} agent:{a+1} -->\n",
              "\n## Tickets\n"]
         for i, u in enumerate(chastka, 1):
-            r.append(f"\n### Ticket {i} — `{u['id']}`  (current class `{u['klas']}`)\n")
+            r.append(f"\n### Ticket {i} — `{u['id']}`  (current state `{u['status']}`)\n")
             r.append(f"**Claim:**\n\n> {u['tekst']}\n")
             k = kont.get(u["id"])
             if k:
@@ -163,7 +163,7 @@ def planuvaty(kudy: pathlib.Path, agentiv: int, kvytkiv: int,
     print(f"хвиля {wave}: агентів {agentiv}, квитків {treba}, "
           f"насіння {nasinnya}, order_version {versiya} → {kudy}")
     print(f"  за класами: "
-          f"{ {k: sum(1 for u in vzyato if u['klas'] == k) for k in NEZVIRENI} }")
+          f"{ {k: sum(1 for u in vzyato if u['status'] == k) for k in NEZVIRENI} }")
     return 0
 
 
