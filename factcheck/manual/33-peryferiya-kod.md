@@ -28,7 +28,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -52,7 +52,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -93,7 +93,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics»: RPU (Resistance of internal pull-up resistor): 45 kΩ
 - **Дослівно з джерела:**
   > Table 5-3. DC Characteristics (3.3 V, 25 °C)
@@ -141,7 +141,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
 - **Дослівно з джерела:**
   > Звірено вісім структур, усі поля, які книга ініціалізує:
@@ -196,7 +196,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -227,7 +227,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics»: RPU (Resistance of internal pull-up resistor): 45 kΩ
 - **Дослівно з джерела:**
   > Table 5-3. DC Characteristics (3.3 V, 25 °C)
@@ -275,7 +275,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -306,7 +306,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -337,7 +337,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** ESP-IDF код (Software Development Kit для ESP32)
 - **Дослівно з джерела:**
   > gpio_config_t cfg = {
@@ -381,7 +381,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -403,7 +403,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -425,7 +425,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/gpio/generic_gpio/main/gpio_example_main.c
 - **Дослівно з джерела:**
   > (1ULL<<GPIO_OUTPUT_IO_0) | (1ULL<<GPIO_OUTPUT_IO_1)
@@ -466,7 +466,7 @@ gpio_config_t in = {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics»: RPU (Resistance of internal pull-up resistor): 45 kΩ
 - **Дослівно з джерела:**
   > Table 5-3. DC Characteristics (3.3 V, 25 °C)
@@ -511,7 +511,7 @@ gpio_config_t in = {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
 - **Дослівно з джерела:**
   > Звірено вісім структур, усі поля, які книга ініціалізує:
@@ -563,7 +563,7 @@ gpio_config_t in = {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** ESP-IDF код (Software Development Kit для ESP32)
 - **Дослівно з джерела:**
   > gpio_config_t cfg = {
@@ -604,7 +604,7 @@ gpio_config_t in = {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics»: RPU (Resistance of internal pull-up resistor): 45 kΩ
 - **Дослівно з джерела:**
   > Table 5-3. DC Characteristics (3.3 V, 25 °C)
@@ -649,7 +649,7 @@ gpio_config_t in = {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -671,7 +671,7 @@ gpio_config_t in = {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -692,7 +692,7 @@ gpio_config_t in = {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -729,7 +729,7 @@ gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
   > FromISR functions are ISR-safe variants of FreeRTOS APIs.
@@ -760,7 +760,7 @@ static void IRAM_ATTR isr(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
   > FromISR functions are ISR-safe variants of FreeRTOS APIs.
@@ -789,7 +789,7 @@ gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -812,7 +812,7 @@ gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/gpio/generic_gpio/main/gpio_example_main.c
 - **Дослівно з джерела:**
   > gpio_isr_handler_add(GPIO_INPUT_IO_0, gpio_isr_handler, (void*) GPIO_INPUT_IO_0);
@@ -841,7 +841,7 @@ gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -864,7 +864,7 @@ gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c, .../components/esp_system/task_wdt/task_wdt.c, .../docs/en/api-guides/fatal-errors.rst
 - **Дослівно з джерела:**
   > (panic.c / fatal-errors.rst)
@@ -920,7 +920,7 @@ static void IRAM_ATTR isr(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
   > FromISR functions are ISR-safe variants of FreeRTOS APIs.
@@ -953,7 +953,7 @@ static void IRAM_ATTR isr(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
   > FromISR functions are ISR-safe variants of FreeRTOS APIs.
@@ -981,7 +981,7 @@ static void IRAM_ATTR isr(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/esp_timer.rst
 - **Дослівно з джерела:**
   > - Time resolution: one microsecond
@@ -1018,7 +1018,7 @@ static void IRAM_ATTR isr(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gptimer.rst
 - **Дослівно з джерела:**
   > Generating periodic alarms to complete periodic tasks
@@ -1059,7 +1059,7 @@ esp_timer_start_periodic(t, 1000000);   // раз на секунду
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1100,7 +1100,7 @@ esp_timer_start_periodic(t, 1000000);   // раз на секунду
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1138,7 +1138,7 @@ esp_timer_start_periodic(t, 1000000);   // раз на секунду
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/esp_timer.rst
 - **Дослівно з джерела:**
   > - Time resolution: one microsecond
@@ -1176,7 +1176,7 @@ esp_timer_start_periodic(t, 1000000);   // раз на секунду
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1215,7 +1215,7 @@ esp_timer_start_periodic(t, 1000000);   // раз на секунду
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gptimer.rst
 - **Дослівно з джерела:**
   > The maximum count value depends on the bit width of the hardware timer (usually no less than ``54 bits``)
@@ -1243,7 +1243,7 @@ esp_timer_start_periodic(t, 1000000);   // раз на секунду
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1298,7 +1298,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1342,7 +1342,7 @@ ledc_timer_config(&tcfg);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1370,7 +1370,7 @@ ledc_timer_config(&tcfg);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
 - **Дослівно з джерела:**
   > Звірено вісім структур, усі поля, які книга ініціалізує:
@@ -1422,7 +1422,7 @@ ledc_timer_config(&tcfg);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1450,7 +1450,7 @@ ledc_timer_config(&tcfg);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1478,7 +1478,7 @@ ledc_timer_config(&tcfg);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1523,7 +1523,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1552,7 +1552,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1581,7 +1581,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1610,7 +1610,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
 - **Дослівно з джерела:**
   > Звірено вісім структур, усі поля, які книга ініціалізує:
@@ -1663,7 +1663,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1692,7 +1692,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1730,7 +1730,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/ledc.rst
 - **Дослівно з джерела:**
   > The frequency and the duty resolution are interdependent. The higher the PWM frequency,
@@ -1765,7 +1765,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
 - **Дослівно з джерела:**
   > The luminance perceived by human eyes does not have a linear relationship with the PWM duty cycle
@@ -1795,7 +1795,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1818,7 +1818,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
 - **Дослівно з джерела:**
   > In order to make human feel the LED is dimming or lighting linearly, the change in duty cycle should be non-linear
@@ -1847,7 +1847,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1872,7 +1872,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
 - **Джерело:** Даташит типового хобі-серво (SG90 / MG996R): період 20 мс (50 Гц), тривалість імпульсу 1–2 мс; у кеші немає
 - **Спосіб і дата:** пошук у source-cache завершився невдачею, 2026-08-27
 - **Нотатка:** Було E з поясненням «стандартна специфікація, але без джерела в кеші». Це і є визначення класу C, а не E: E значить, що документа не існує за природою, а тут він існує і його просто не дістали. Різниця не формальна — E ховає одиницю з наряду назавжди, C лишає її в наряді.
@@ -1901,7 +1901,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
 - **Джерело:** Обчислення: період = 1 / частота
 - **Розрахунок:**
   період = 1 / частота;  1 / 50 Гц = 0.02 с = 20 мс
@@ -1932,7 +1932,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** SX1276 Datasheet (популярний LoRa модуль); ISM стандарти
 - **Дослівно з джерела:**
   > LoRa модулі доступні для різних регіональних ISM смуг:
@@ -1966,7 +1966,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1991,7 +1991,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2013,7 +2013,7 @@ ledc_channel_config(&ccfg);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/index.rst
 - **Дослівно з джерела:**
   > motor bridges need complementary outputs and dead time
@@ -2041,7 +2041,7 @@ LEDC не вміє:
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/index.rst
 - **Дослівно з джерела:**
   > MCPWM turns a counter into accurately timed output edges. It is a good fit when an LEDC-style PWM is no longer enough: motor bridges need complementary outputs and dead time, inverters need synchronized phases
@@ -2072,7 +2072,7 @@ LEDC не вміє:
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/mcpwm_gen.rst
 - **Дослівно з джерела:**
   > Dead time delays an output edge, leaving a short interval in which both switches in a half bridge are off
@@ -2100,7 +2100,7 @@ LEDC не вміє:
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2122,7 +2122,7 @@ RMT задумувався для інфрачервоних пультів, а 
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
 - **Дослівно з джерела:**
   > The RMT (Remote Control Transceiver) peripheral was designed to act as an infrared transceiver. However, due to the flexibility of its data format, RMT can be extended to a versatile and general-purpose transceiver
@@ -2152,7 +2152,7 @@ RMT задумувався для інфрачервоних пультів, а 
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2176,7 +2176,7 @@ RMT задумувався для інфрачервоних пультів, а 
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2200,7 +2200,7 @@ RMT задумувався для інфрачервоних пультів, а 
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2221,7 +2221,7 @@ RMT формує послідовність апаратно: процесор �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2258,7 +2258,7 @@ led_strip_refresh(strip);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2299,7 +2299,7 @@ led_strip_new_rmt_device(&scfg, &rcfg, &strip);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2338,7 +2338,7 @@ led_strip_refresh(strip);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2377,7 +2377,7 @@ led_strip_refresh(strip);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2418,7 +2418,7 @@ led_strip_refresh(strip);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2443,7 +2443,7 @@ led_strip_refresh(strip);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
 - **Дослівно з джерела:**
   > variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
@@ -2476,7 +2476,7 @@ led_strip_refresh(strip);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
 - **Дослівно з джерела:**
   > (dac.rst)
@@ -2524,7 +2524,7 @@ RMT уміє й приймати — вимірювати тривалість �
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
 - **Дослівно з джерела:**
   > The RMT receiver can sample incoming signals into RMT data format, and store the data in memory
@@ -2552,7 +2552,7 @@ RMT уміє й приймати — вимірювати тривалість �
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
 - **Дослівно з джерела:**
   > PCNT (Pulse Counter) module is designed to count the number of rising and/or falling edges of input signals
@@ -2581,7 +2581,7 @@ RMT уміє й приймати — вимірювати тривалість �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2604,7 +2604,7 @@ RMT уміє й приймати — вимірювати тривалість �
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
 - **Дослівно з джерела:**
   > Decode quadrature signals into speed and direction
@@ -2632,7 +2632,7 @@ RMT уміє й приймати — вимірювати тривалість �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2653,7 +2653,7 @@ PCNT уміє й апаратний фільтр коротких сплескі
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
 - **Дослівно з джерела:**
   > PCNT unit is equipped with a separate glitch filter, which is helpful to remove noise from the signal
@@ -2706,7 +2706,7 @@ adc_oneshot_read(adc, ADC_CHANNEL_6, &raw);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2746,7 +2746,7 @@ adc_oneshot_new_unit(&ucfg, &adc);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2787,7 +2787,7 @@ adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2812,7 +2812,7 @@ adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2837,7 +2837,7 @@ adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2876,7 +2876,7 @@ adc_oneshot_read(adc, ADC_CHANNEL_6, &raw);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2917,7 +2917,7 @@ adc_oneshot_read(adc, ADC_CHANNEL_6, &raw);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
 - **Дослівно з джерела:**
   > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has
@@ -2949,7 +2949,7 @@ adc_oneshot_read(adc, ADC_CHANNEL_6, &raw);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2990,7 +2990,7 @@ adc_oneshot_read(adc, ADC_CHANNEL_6, &raw);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3014,7 +3014,7 @@ ADC міряє лише невелику частину діапазону; з �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3038,7 +3038,7 @@ ADC міряє лише невелику частину діапазону; з �
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
 - **Дослівно з джерела:**
   > (dac.rst)
@@ -3088,7 +3088,7 @@ ADC міряє лише невелику частину діапазону; з �
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
 - **Дослівно з джерела:**
   > By design, ``Vref`` is set to 1100 mV
@@ -3116,7 +3116,7 @@ ADC міряє лише невелику частину діапазону; з �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3138,7 +3138,7 @@ ADC міряє лише невелику частину діапазону; з �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3181,7 +3181,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -3225,7 +3225,7 @@ adc_cali_create_scheme_curve_fitting(&cfg, &cali);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3253,7 +3253,7 @@ adc_cali_create_scheme_curve_fitting(&cfg, &cali);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3281,7 +3281,7 @@ adc_cali_create_scheme_curve_fitting(&cfg, &cali);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3309,7 +3309,7 @@ adc_cali_create_scheme_curve_fitting(&cfg, &cali);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -3348,7 +3348,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -3386,7 +3386,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3407,7 +3407,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3432,7 +3432,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3457,7 +3457,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
 - **Дослівно з джерела:**
   > ADC calibration
@@ -3488,7 +3488,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
 - **Дослівно з джерела:**
   > (dac.rst)
@@ -3539,7 +3539,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3564,7 +3564,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3589,7 +3589,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3615,7 +3615,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3641,7 +3641,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -3680,7 +3680,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3703,7 +3703,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3725,7 +3725,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3747,7 +3747,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
 - **Дослівно з джерела:**
   > Do not rely on the default configurations values
@@ -3780,7 +3780,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
 - **Джерело:** ESP32 Series Datasheet v5.3, Section 8 ADC
 - **Нотатка:** Таблиця представляє розподіл каналів ADC. Точні дані у таблиці.
 - **Прохід:** m2-63-gpio-07
@@ -3816,7 +3816,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
 - **Дослівно з джерела:**
   > (dac.rst)
@@ -3875,7 +3875,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
 - **Дослівно з джерела:**
   > (dac.rst)
@@ -3934,7 +3934,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
 - **Дослівно з джерела:**
   > (dac.rst)
@@ -3993,7 +3993,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
 - **Дослівно з джерела:**
   > (dac.rst)
@@ -4041,7 +4041,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4063,7 +4063,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4088,7 +4088,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2}/include/soc/dac_channel.h
 - **Дослівно з джерела:**
   > (esp32/dac_channel.h)
@@ -4127,7 +4127,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/app_update/include/esp_ota_ops.h, .../components/esp_common/include/esp_err.h, .../docs/en/api-reference/storage/{wear-levelling,fatfs}.rst
 - **Дослівно з джерела:**
   > (esp_ota_ops.h)
@@ -4166,7 +4166,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4187,7 +4187,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
 - **Дослівно з джерела:**
   > The luminance perceived by human eyes does not have a linear relationship with the PWM duty cycle
@@ -4214,7 +4214,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4235,7 +4235,7 @@ WS2812 керуються через RMT апаратно — у коді це �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4256,7 +4256,7 @@ PCNT рахує імпульси без переривань і має апар�
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
 - **Дослівно з джерела:**
   > PCNT unit is equipped with a separate glitch filter
@@ -4284,7 +4284,7 @@ PCNT рахує імпульси без переривань і має апар�
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
 - **Дослівно з джерела:**
   > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has
@@ -4312,6 +4312,6 @@ PCNT рахує імпульси без переривань і має апар�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---

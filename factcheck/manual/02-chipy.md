@@ -28,7 +28,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -52,7 +52,7 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
 - **Джерело:** Типові ціни на USB-аналізатори на онлайн-маркетплейсах (AliExpress, eBay), 2026-08-26
 - **Дослівно з джерела:**
   > Восьмиканальний USB-аналізатор логіки (наприклад, на чипі CH340G):
@@ -82,7 +82,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -105,7 +105,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -128,7 +128,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -150,7 +150,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -171,7 +171,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -193,7 +193,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -215,7 +215,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -237,7 +237,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -270,7 +270,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -309,7 +309,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -348,7 +348,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf
 - **Дослівно з джерела:**
   > single-core microprocessor (Xtensa® 32-bit LX7)
@@ -393,7 +393,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -432,7 +432,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -471,7 +471,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf
 - **Дослівно з джерела:**
   > RISC-V single-core microprocessor
@@ -516,7 +516,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf
 - **Дослівно з джерела:**
   > RISC-V 32-bit single-core microprocessor
@@ -561,7 +561,7 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
 - **Джерело:** ESP32 dual-core processor specifications
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 dual-core processor specifications
@@ -605,7 +605,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -644,7 +644,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > Xtensa® 32-bit LX7 dual-core microprocessor
@@ -689,7 +689,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define SOC_CPU_CORES_NUM               (1U)
@@ -737,7 +737,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -776,7 +776,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define SOC_CPU_CORES_NUM               (1U)
@@ -824,7 +824,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 1 core at 240 MHz
@@ -869,7 +869,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -908,7 +908,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -947,7 +947,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > Clock speed: up to 160 MHz
@@ -992,7 +992,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1031,7 +1031,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 96 MHz internal PLL clock
@@ -1076,7 +1076,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 520 KB SRAM
@@ -1121,7 +1121,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf
 - **Дослівно з джерела:**
   > SRAM: 320 KB
@@ -1166,7 +1166,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > SRAM: 512 KB
@@ -1211,7 +1211,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > SRAM: 400 KB (16 KB for cache)
@@ -1257,7 +1257,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf
 - **Дослівно з джерела:**
   > HP SRAM: 512 KB
@@ -1303,7 +1303,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1342,7 +1342,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > SOC_SPIRAM_SUPPORTED присутній:
@@ -1393,7 +1393,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > SOC_SPIRAM_SUPPORTED присутній:
@@ -1444,7 +1444,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > SOC_SPIRAM_SUPPORTED присутній:
@@ -1495,7 +1495,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > SOC_SPIRAM_SUPPORTED присутній:
@@ -1546,7 +1546,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > SOC_SPIRAM_SUPPORTED присутній:
@@ -1597,7 +1597,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > SOC_SPIRAM_SUPPORTED присутній:
@@ -1648,7 +1648,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define SOC_WIFI_SUPPORTED          1
@@ -1693,7 +1693,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define SOC_WIFI_SUPPORTED              1
@@ -1738,7 +1738,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define SOC_WIFI_SUPPORTED              1
@@ -1783,7 +1783,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define SOC_CPU_CORES_NUM               (1U)
@@ -1831,7 +1831,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -1885,7 +1885,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy hardware */
@@ -1930,7 +1930,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -1984,7 +1984,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -2038,7 +2038,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -2092,7 +2092,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -2146,7 +2146,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -2200,7 +2200,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -2254,7 +2254,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy hardware */
@@ -2299,7 +2299,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define SOC_WIFI_SUPPORTED              1
@@ -2344,7 +2344,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define SOC_CPU_CORES_NUM               (1U)
@@ -2392,7 +2392,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy hardware */
@@ -2437,7 +2437,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define SOC_CPU_CORES_NUM               (1U)
@@ -2485,7 +2485,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define SOC_CPU_CORES_NUM               (1U)
@@ -2533,7 +2533,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -2587,7 +2587,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -2641,7 +2641,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -2695,7 +2695,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -2749,7 +2749,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -2803,7 +2803,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -2857,7 +2857,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2896,7 +2896,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define SOC_CPU_CORES_NUM               (1U)
@@ -2944,7 +2944,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2983,7 +2983,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3022,7 +3022,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3061,7 +3061,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3085,7 +3085,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -3124,7 +3124,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3147,7 +3147,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc.h
 - **Дослівно з джерела:**
   > esp32:   DRAM 0x3FFAE000…0x40000000 (328 КБ)  IRAM 0x40080000…0x400AA000 (168 КБ)
@@ -3186,7 +3186,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc.h
 - **Дослівно з джерела:**
   > esp32:   DRAM 0x3FFAE000…0x40000000 (328 КБ)  IRAM 0x40080000…0x400AA000 (168 КБ)
@@ -3225,7 +3225,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc.h
 - **Дослівно з джерела:**
   > esp32:   DRAM 0x3FFAE000…0x40000000 (328 КБ)  IRAM 0x40080000…0x400AA000 (168 КБ)
@@ -3264,7 +3264,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3287,7 +3287,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3310,7 +3310,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -3349,7 +3349,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc.h
 - **Дослівно з джерела:**
   > esp32:   DRAM 0x3FFAE000…0x40000000 (328 КБ)  IRAM 0x40080000…0x400AA000 (168 КБ)
@@ -3387,7 +3387,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
 - **Джерело:** Розрахунок: 40 МГц > 24 МГц означає, що дискретизація недостатня за Теоремою Найквіста (потрібно ≥ 2 × сигнал)
 - **Дослівно з джерела:**
   > SPI максимальна швидкість на ESP32: до 80 МГц (у режимі нестандартного)
@@ -3428,7 +3428,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -3466,7 +3466,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3492,7 +3492,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3518,7 +3518,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3543,7 +3543,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -3583,7 +3583,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3607,7 +3607,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3630,7 +3630,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > flash capacity and partition allocation
@@ -3659,7 +3659,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3683,7 +3683,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/esp32-c3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > • SRAM: 400 KB (16 KB for cache)
@@ -3713,7 +3713,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3735,7 +3735,7 @@ ESP32, S2 і S3 побудовані на ядрах Xtensa; C3, C6, H2 і ре�
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 - **Дослівно з джерела:**
   > Xtensa
@@ -3765,7 +3765,7 @@ ESP32, S2 і S3 побудовані на ядрах Xtensa; C3, C6, H2 і ре�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3788,7 +3788,7 @@ ESP32, S2 і S3 побудовані на ядрах Xtensa; C3, C6, H2 і ре�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3815,7 +3815,7 @@ ESP32, S2 і S3 побудовані на ядрах Xtensa; C3, C6, H2 і ре�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3837,7 +3837,7 @@ Espressif послідовно переходить на RISC-V у нових ч
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3859,7 +3859,7 @@ Espressif послідовно переходить на RISC-V у нових ч
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
 - **Дослівно з джерела:**
   > The FreeRTOS kernel is ported to all architectures (i.e., Xtensa and RISC-V) available of ESP chips.
@@ -3888,7 +3888,7 @@ Espressif послідовно переходить на RISC-V у нових ч
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/56497005-external-ram.rst
 - **Дослівно з джерела:**
   > For specific details about connecting the SoC or module pins to an external PSRAM chip, consult the SoC or module datasheet.
@@ -3916,7 +3916,7 @@ Espressif послідовно переходить на RISC-V у нових ч
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -3937,7 +3937,7 @@ Espressif послідовно переходить на RISC-V у нових ч
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
   > idf.py set-target <target>
@@ -3969,7 +3969,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -4014,7 +4014,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -4062,7 +4062,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4088,7 +4088,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
   > idf.py set-target`` will clear the build directory and re-generate the ``sdkconfig`` file from scratch.
@@ -4120,7 +4120,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4146,7 +4146,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/build-system.rst
 - **Дослівно з джерела:**
   > For example projects or other projects where you dont want to specify a full sdkconfig configuration, but you do want to override some key values from the ESP-IDF defaults, it is possible to create a file sdkconfig.defaults in the project directory. This file will be used when creating a new config from scratch, or when any new config value hasnt yet been set in the sdkconfig file.
@@ -4174,7 +4174,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** SX1276 Datasheet (популярний LoRa модуль); ISM стандарти
 - **Дослівно з джерела:**
   > LoRa модулі доступні для різних регіональних ISM смуг:
@@ -4205,7 +4205,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4227,7 +4227,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/esp32-c5_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 2.4 and 5 GHz dual-band Wi-Fi 6 (802.11ax)
@@ -4255,7 +4255,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4276,7 +4276,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4298,7 +4298,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -4336,7 +4336,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4359,7 +4359,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4384,7 +4384,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4409,7 +4409,7 @@ idf.py set-target esp32s3
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4432,7 +4432,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4455,7 +4455,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4488,7 +4488,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4527,7 +4527,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4566,7 +4566,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4605,7 +4605,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4644,7 +4644,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4683,7 +4683,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4722,7 +4722,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/esp32-c3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 400 KB of on-chip SRAM: for data and instructions
@@ -4767,7 +4767,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4806,7 +4806,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4845,7 +4845,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -4892,7 +4892,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -4939,7 +4939,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -4978,7 +4978,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -5017,7 +5017,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf
 - **Дослівно з джерела:**
   > Zigbee and Thread (802.15.4)
@@ -5063,7 +5063,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -5117,7 +5117,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -5171,7 +5171,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -5225,7 +5225,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/esp32-c5_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 1T1R in 2.4 and 5 GHz dual band
@@ -5270,7 +5270,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -5309,7 +5309,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > USB Serial/JTAG controller
@@ -5355,7 +5355,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -5378,7 +5378,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -5401,7 +5401,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -5424,7 +5424,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -5447,7 +5447,7 @@ S3. Актуальна наявність — у датованому вклад
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -5469,7 +5469,7 @@ Bluetooth Classic — лише classic. S2 без Bluetooth узагалі. З �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -5491,7 +5491,7 @@ Bluetooth Classic — лише classic. S2 без Bluetooth узагалі. З �
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 2.4 GHz Wi-Fi (802.11 b/g/n)
@@ -5520,7 +5520,7 @@ Bluetooth Classic — лише classic. S2 без Bluetooth узагалі. З �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -5542,7 +5542,7 @@ Xtensa проти RISC-V для прикладного коду не має зн
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -5563,7 +5563,7 @@ Xtensa проти RISC-V для прикладного коду не має зн
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -5585,6 +5585,6 @@ Xtensa проти RISC-V для прикладного коду не має зн
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---

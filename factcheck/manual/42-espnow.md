@@ -26,7 +26,7 @@ ESP-NOW — власний протокол Espressif для прямого об
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
 - **Дослівно з джерела:**
   > ESP-NOW is a kind of connectionless Wi-Fi communication protocol that is defined by Espressif.
@@ -54,7 +54,7 @@ ESP-NOW — власний протокол Espressif для прямого об
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -76,7 +76,7 @@ ESP-NOW — власний протокол Espressif для прямого об
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -100,7 +100,7 @@ ESP-NOW — власний протокол Espressif для прямого об
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -124,7 +124,7 @@ ESP-NOW — власний протокол Espressif для прямого об
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -145,7 +145,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
 - **Дослівно з джерела:**
   > ESP-NOW is a kind of connectionless Wi-Fi communication protocol that is defined by Espressif. In ESP-NOW, application data is encapsulated in a vendor-specific action frame and then transmitted from one Wi-Fi device to another without connection.
@@ -172,7 +172,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -195,7 +195,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -217,7 +217,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -239,7 +239,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -261,7 +261,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -283,7 +283,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -306,7 +306,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -328,7 +328,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -350,7 +350,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
 - **Дослівно з джерела:**
   > As ESP-NOW is connectionless, the MAC header is a little different from that of standard frames. The FromDS and ToDS bits of FrameControl field are both 0. The first address field is set to the destination address. The second address field is set to the source address. The third address field is set to broadcast address (0xff:0xff:0xff:0xff:0xff:0xff).
@@ -399,7 +399,7 @@ esp_now_send(mac_pryimacha, (uint8_t *)&dani, sizeof(dani));
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -437,7 +437,7 @@ esp_now_init();
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -479,7 +479,7 @@ esp_now_add_peer(&peer);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -505,7 +505,7 @@ esp_now_add_peer(&peer);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -531,7 +531,7 @@ esp_now_add_peer(&peer);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -557,7 +557,7 @@ esp_now_add_peer(&peer);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -595,7 +595,7 @@ esp_now_send(mac_pryimacha, (uint8_t *)&dani, sizeof(dani));
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -632,7 +632,7 @@ esp_now_send(mac_pryimacha, (uint8_t *)&dani, sizeof(dani));
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
 - **Дослівно з джерела:**
   > Call :cpp:func:`esp_now_register_recv_cb()` to register receiving callback function.
@@ -672,7 +672,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_wifi/include/esp_now.h
 - **Дослівно з джерела:**
   > #define ESP_NOW_ETH_ALEN             6         /*!< Length of ESPNOW peer MAC address */
@@ -712,7 +712,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -750,7 +750,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -789,7 +789,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
 - **Дослівно з джерела:**
   > The receiving callback function also runs from the Wi-Fi task.
@@ -817,7 +817,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -839,7 +839,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
 - **Дослівно з джерела:**
   > do not do lengthy operations in the callback function. Instead, post the necessary data to a queue and handle it from a lower priority task.
@@ -869,7 +869,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
   > FromISR functions are ISR-safe variants of FreeRTOS APIs.
@@ -899,7 +899,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
   > FromISR functions are ISR-safe variants of FreeRTOS APIs.
@@ -929,7 +929,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -963,7 +963,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_wifi/include/esp_now.h
 - **Дослівно з джерела:**
   > #define ESP_NOW_ETH_ALEN             6         /*!< Length of ESPNOW peer MAC address */
@@ -999,7 +999,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1020,7 +1020,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_wifi/include/esp_now.h
 - **Дослівно з джерела:**
   > #define ESP_NOW_ETH_ALEN             6         /*!< Length of ESPNOW peer MAC address */
@@ -1055,7 +1055,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1077,7 +1077,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1098,7 +1098,7 @@ esp_now_register_recv_cb(on_recv);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1124,7 +1124,7 @@ broadcast-обміном із власним шифруванням у полі 
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_wifi/include/esp_now.h
 - **Дослівно з джерела:**
   > #define ESP_NOW_ETH_ALEN             6         /*!< Length of ESPNOW peer MAC address */
@@ -1162,7 +1162,7 @@ broadcast-обміном із власним шифруванням у полі 
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1184,7 +1184,7 @@ broadcast-обміном із власним шифруванням у полі 
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1207,7 +1207,7 @@ broadcast-обміном із власним шифруванням у полі 
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1230,7 +1230,7 @@ broadcast-обміном із власним шифруванням у полі 
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1252,7 +1252,7 @@ broadcast-обміном із власним шифруванням у полі 
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1273,7 +1273,7 @@ ESP-NOW підтримує шифрування з ключами PMK і LMK.
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
 - **Дослівно з джерела:**
   > The Wi-Fi device maintains a Primary Master Key (PMK) and several Local Master Keys (LMKs, each paired device has one LMK).
@@ -1308,7 +1308,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1349,7 +1349,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1372,7 +1372,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
 - **Дослівно з джерела:**
   > If the LMK of the paired device is not set, the vendor-specific action frame will not be encrypted.
@@ -1401,7 +1401,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1424,7 +1424,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1447,7 +1447,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1470,7 +1470,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1494,7 +1494,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1518,7 +1518,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1540,7 +1540,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1562,7 +1562,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1585,7 +1585,7 @@ ESP-NOW працював, партнери мусять бути **на тому
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1608,7 +1608,7 @@ ESP-NOW працював, партнери мусять бути **на тому
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1630,7 +1630,7 @@ ESP-NOW працював, партнери мусять бути **на тому
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1652,7 +1652,7 @@ ESP-NOW працював, партнери мусять бути **на тому
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
 - **Дослівно з джерела:**
   > You can send ESP-NOW data via both the Station and the SoftAP interface.
@@ -1680,7 +1680,7 @@ ESP-NOW працював, партнери мусять бути **на тому
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1704,7 +1704,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1728,7 +1728,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1750,7 +1750,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1772,7 +1772,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1797,7 +1797,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1822,7 +1822,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1845,7 +1845,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1866,7 +1866,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1889,7 +1889,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bt/host/bluedroid/stack/include/stack/gatt_api.h та https://raw.githubusercontent.com/apache/mynewt-nimble/master/nimble/host/include/host/ble_att.h
 - **Дослівно з джерела:**
   > (Bluedroid, у складі ESP-IDF)
@@ -1926,7 +1926,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -1960,7 +1960,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1982,7 +1982,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2004,7 +2004,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2026,7 +2026,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2048,7 +2048,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_wifi/include/esp_now.h
 - **Дослівно з джерела:**
   > #define ESP_NOW_ETH_ALEN             6         /*!< Length of ESPNOW peer MAC address */
@@ -2082,7 +2082,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2104,7 +2104,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2126,7 +2126,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2148,7 +2148,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2170,7 +2170,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2191,7 +2191,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_wifi/include/esp_now.h
 - **Дослівно з джерела:**
   > #define ESP_NOW_ETH_ALEN             6         /*!< Length of ESPNOW peer MAC address */
@@ -2224,7 +2224,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2246,7 +2246,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2267,7 +2267,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2288,6 +2288,6 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---

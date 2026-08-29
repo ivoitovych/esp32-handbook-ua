@@ -28,7 +28,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -52,7 +52,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
 - **Дослівно з джерела:**
   > "version": "7.0.1"
@@ -80,7 +80,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -104,7 +104,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
 - **Дослівно з джерела:**
   > "name": "espressif32"
@@ -134,7 +134,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
 - **Дослівно з джерела:**
   > "version": "~3.20017.0"
@@ -162,7 +162,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
 - **Дослівно з джерела:**
   > # pioarduino (p)eople (i)nitiated (o)ptimized (arduino)
@@ -190,7 +190,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/platform.json
 - **Дослівно з джерела:**
   > "version": "https://github.com/espressif/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz"
@@ -217,7 +217,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -239,7 +239,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -263,7 +263,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -287,7 +287,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -312,7 +312,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -337,7 +337,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -360,7 +360,7 @@ git і повністю описує, чим збирається проєкт. 
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
 - **Дослівно з джерела:**
   > [env:esp32doit-devkit-v1]
@@ -392,7 +392,7 @@ git і повністю описує, чим збирається проєкт. 
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
 - **Дослівно з джерела:**
   > platform = espressif32
@@ -423,7 +423,7 @@ git і повністю описує, чим збирається проєкт. 
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -445,7 +445,7 @@ S3, налагоджувальна й робоча збірка, дві різн
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -467,7 +467,7 @@ S3, налагоджувальна й робоча збірка, дві різн
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -489,7 +489,7 @@ S3, налагоджувальна й робоча збірка, дві різн
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -510,7 +510,7 @@ S3, налагоджувальна й робоча збірка, дві різн
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
 - **Дослівно з джерела:**
   > [env:esp32doit-devkit-v1]
@@ -564,7 +564,7 @@ lib_deps =
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/pioarduino/platform-espressif32/main/README.md та .../55.03.311/platform.json
 - **Дослівно з джерела:**
   > ### Stable Arduino
@@ -605,7 +605,7 @@ lib_deps =
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/pioarduino/platform-espressif32/main/README.md та .../55.03.311/platform.json
 - **Дослівно з джерела:**
   > ### Stable Arduino
@@ -647,7 +647,7 @@ lib_deps =
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/pioarduino/platform-espressif32/main/README.md та .../55.03.311/platform.json
 - **Дослівно з джерела:**
   > ### Stable Arduino
@@ -689,7 +689,7 @@ lib_deps =
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
 - **Дослівно з джерела:**
   > "version": "~3.20017.0"
@@ -719,7 +719,7 @@ lib_deps =
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/platform.json
 - **Дослівно з джерела:**
   > "version": "https://github.com/espressif/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz"
@@ -749,7 +749,7 @@ lib_deps =
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** raw.githubusercontent.com — наявність теґів і файли версій: espressif/esp-idf (components/esp_common/include/esp_idf_version.h), espressif/esptool (esptool/__init__.py), espressif/arduino-esp32 (platform.txt), pioarduino/platform-espressif32 (platform.json)
 - **Дослівно з джерела:**
   > esp-idf v6.0.2  → 200,  v6.0.3 → 404      esp_idf_version.h: MAJOR 6 MINOR 0 PATCH 2
@@ -786,7 +786,7 @@ lib_deps =
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -807,7 +807,7 @@ lib_deps =
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -828,7 +828,7 @@ lib_deps =
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
 - **Дослівно з джерела:**
   > platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
@@ -859,7 +859,7 @@ lib_deps =
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -881,7 +881,7 @@ lib_deps =
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -902,7 +902,7 @@ lib_deps =
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
 - **Дослівно з джерела:**
   > pio project init --board esp32dev
@@ -933,7 +933,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** raw.githubusercontent.com — наявність теґів і файли версій: espressif/esp-idf (components/esp_common/include/esp_idf_version.h), espressif/esptool (esptool/__init__.py), espressif/arduino-esp32 (platform.txt), pioarduino/platform-espressif32 (platform.json)
 - **Дослівно з джерела:**
   > esp-idf v6.0.2  → 200,  v6.0.3 → 404      esp_idf_version.h: MAJOR 6 MINOR 0 PATCH 2
@@ -970,7 +970,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -993,7 +993,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1016,7 +1016,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1039,7 +1039,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1060,7 +1060,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1082,7 +1082,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1104,7 +1104,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1126,7 +1126,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1148,7 +1148,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1169,7 +1169,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1216,7 +1216,7 @@ build_flags = -DHAS_PSRAM
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** raw.githubusercontent.com — наявність теґів і файли версій: espressif/esp-idf (components/esp_common/include/esp_idf_version.h), espressif/esptool (esptool/__init__.py), espressif/arduino-esp32 (platform.txt), pioarduino/platform-espressif32 (platform.json)
 - **Дослівно з джерела:**
   > esp-idf v6.0.2  → 200,  v6.0.3 → 404      esp_idf_version.h: MAJOR 6 MINOR 0 PATCH 2
@@ -1254,7 +1254,7 @@ build_flags = -DHAS_PSRAM
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1278,7 +1278,7 @@ build_flags = -DHAS_PSRAM
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1302,7 +1302,7 @@ build_flags = -DHAS_PSRAM
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1326,7 +1326,7 @@ build_flags = -DHAS_PSRAM
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
 - **Дослівно з джерела:**
   > pio project init --board esp32dev
@@ -1355,7 +1355,7 @@ build_flags = -DHAS_PSRAM
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1378,7 +1378,7 @@ build_flags = -DHAS_PSRAM
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1405,7 +1405,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/pioarduino/platform-espressif32/main/README.md та .../55.03.311/platform.json
 - **Дослівно з джерела:**
   > ### Stable Arduino
@@ -1445,7 +1445,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1467,7 +1467,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1490,7 +1490,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1514,7 +1514,7 @@ stable.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1538,7 +1538,7 @@ stable.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1561,7 +1561,7 @@ stable.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1582,7 +1582,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1604,7 +1604,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1627,7 +1627,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1649,7 +1649,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1672,7 +1672,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1695,7 +1695,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1718,7 +1718,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1740,7 +1740,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1768,7 +1768,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1796,7 +1796,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1824,7 +1824,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1852,7 +1852,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1880,7 +1880,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > Factory app, two OTA definitions
@@ -1914,7 +1914,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1937,7 +1937,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1960,7 +1960,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1982,7 +1982,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2004,7 +2004,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2025,7 +2025,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2046,6 +2046,6 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---

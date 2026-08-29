@@ -88,23 +88,46 @@ by number.
 > copy with no declared owner is repaired wherever it is read, which is
 > never everywhere.
 
-    A  primary verbatim    — source obtained, line quoted
-    B  primary derived     — source obtained, conclusion unambiguous
-    N  absent-from-source  — source obtained; its SILENCE is the proof
-    D  arithmetic          — checked by calculation
-    C  named-unreachable   — source named, text not held
-    S  self-consistent     — checked against ANOTHER PLACE IN THIS BOOK
-    L  looked-not-found    — a document was opened; the source was not in it
-    E  no external signal  — the text carries nothing checkable
-    G  refuted             — the source says otherwise
-    F  unverified          — nobody has reached it yet
+    verbatim            source obtained, line quoted
+    derived             source obtained, conclusion unambiguous
+    absent-from-source  source obtained; its SILENCE is the proof
+    arithmetic          checked by calculation
+    named-unreachable   source named, text not held
+    self-consistent     checked against ANOTHER PLACE IN THIS BOOK
+    looked-not-found    a document was opened; the source was not in it
+    no-external-signal  the text carries nothing checkable
+    refuted             the source says otherwise
+    unchecked           nobody has reached it yet
 
-    K  context             — a whole code block; not a claim, and not counted
+    code-context        a whole code block; not a claim, and not counted
 
-Strength for picking the best evidence, in the order printed above:
-`A < B < N < D < C < S < L < E < G < F`. The list is deliberately
-printed in strength order rather than alphabetically, because the order
-is the part that gets used.
+Strength runs down that list, and the list is printed in strength order
+rather than alphabetically because the order is the part that gets used.
+
+### These used to be single letters, and that was the bug
+
+Until 2026-08-29 each state had **three** names in circulation — a letter
+`A`, a word `verbatim`, and an emoji `✅` — and a card printed all three
+in a row, the last explaining the other two:
+
+    - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела…
+
+Two of the three carried no information. They carried a **legend**: eleven
+one-letter codes a reader had to hold in their head, and a colour scheme
+on top of it.
+
+> **An abbreviation is not a talking name.** The whole discipline of
+> naming in code exists to avoid exactly the thing eleven single letters
+> are.
+
+And they had already drifted, as parallel names always do: `F` was
+`unverified` in the data and `unchecked` in one of the tools. `unchecked`
+won — it says *nobody has looked*, where `unverified` reads as *checked
+and not confirmed*.
+
+The letters survive in exactly one place and for one purpose: reading
+cards and records written before the change. They are deleted together
+with the `klas` field, not before and not separately.
 
 ### `N` is the only class layer 3 can *refute*
 

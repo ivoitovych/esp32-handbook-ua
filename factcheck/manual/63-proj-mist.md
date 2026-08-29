@@ -26,7 +26,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
 - **Дослівно з джерела:**
   > Table 11. Characteristics of the SDA and SCL bus lines:
@@ -70,7 +70,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -93,7 +93,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -114,7 +114,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -142,7 +142,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -176,7 +176,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -210,7 +210,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -244,7 +244,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
 - **Дослівно з джерела:**
   > Table 11. Characteristics of the SDA and SCL bus lines:
@@ -300,7 +300,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -334,7 +334,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -368,7 +368,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -402,7 +402,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -436,7 +436,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -459,7 +459,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -481,7 +481,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -503,7 +503,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -536,7 +536,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
 - **Дослівно з джерела:**
   > Table 11. Characteristics of the SDA and SCL bus lines:
@@ -582,7 +582,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -606,7 +606,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -628,7 +628,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -665,7 +665,7 @@ static QueueHandle_t do_serial;    // з мережі в послідовний 
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -690,7 +690,7 @@ static QueueHandle_t do_serial;    // з мережі в послідовний 
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -715,7 +715,7 @@ static QueueHandle_t do_serial;    // з мережі в послідовний 
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -748,7 +748,7 @@ static QueueHandle_t do_serial;    // з мережі в послідовний 
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -797,7 +797,7 @@ static void task_rx_serial(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -848,7 +848,7 @@ static void task_rx_serial(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -893,7 +893,7 @@ static void task_rx_serial(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -916,7 +916,7 @@ static void task_rx_serial(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -939,7 +939,7 @@ static void task_rx_serial(void *arg) {
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
 - **Джерело:** tools/arithmetic.py
 - **Розрахунок:**
   30 перевірок, усі збіглися. Найважливіші:
@@ -1012,7 +1012,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1049,7 +1049,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1070,7 +1070,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1108,7 +1108,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1131,7 +1131,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
 - **Дослівно з джерела:**
   > Table 11. Characteristics of the SDA and SCL bus lines:
@@ -1178,7 +1178,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1219,7 +1219,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1292,7 +1292,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -1332,7 +1332,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1362,7 +1362,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1392,7 +1392,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1422,7 +1422,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1445,7 +1445,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1468,7 +1468,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -1504,7 +1504,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1530,7 +1530,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1554,7 +1554,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -1588,7 +1588,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1611,7 +1611,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1634,7 +1634,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1657,7 +1657,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1680,7 +1680,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1703,7 +1703,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1725,7 +1725,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1747,7 +1747,7 @@ static void task_tcp(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1786,7 +1786,7 @@ typedef struct {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
 - **Дослівно з джерела:**
   > Table 11. Characteristics of the SDA and SCL bus lines:
@@ -1830,7 +1830,7 @@ typedef struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1852,7 +1852,7 @@ typedef struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1909,7 +1909,7 @@ static void task_rx_can(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
   > rst:0x10 (RTCWDT_RTC_RESET)
@@ -1956,7 +1956,7 @@ static void task_rx_can(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -1989,7 +1989,7 @@ static void task_rx_can(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2012,7 +2012,7 @@ static void task_rx_can(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/5827f9c3-twai.rst
 - **Дослівно з джерела:**
   > - :cpp:member:`twai_onchip_node_config_t::flags::enable_listen_only`: Configures the node in listen-only mode. In this mode, the node only receives and does not transmit any dominant bits, including ACK and error frames.
@@ -2041,7 +2041,7 @@ static void task_rx_can(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2064,7 +2064,7 @@ static void task_rx_can(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2087,7 +2087,7 @@ static void task_rx_can(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2109,7 +2109,7 @@ static void task_rx_can(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2131,7 +2131,7 @@ static void task_rx_can(void *arg) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2168,7 +2168,7 @@ static struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2192,7 +2192,7 @@ static struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2216,7 +2216,7 @@ static struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2240,7 +2240,7 @@ static struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2262,7 +2262,7 @@ static struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2293,7 +2293,7 @@ static struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2324,7 +2324,7 @@ static struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2355,7 +2355,7 @@ static struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2386,7 +2386,7 @@ static struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2417,7 +2417,7 @@ static struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2448,7 +2448,7 @@ static struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2479,7 +2479,7 @@ static struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2510,7 +2510,7 @@ static struct {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2538,7 +2538,7 @@ static struct {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/5827f9c3-twai.rst
 - **Дослівно з джерела:**
   > The TWAI controller hardware can filter messages based on their ID to reduce software and hardware overhead, thereby improving node efficiency.

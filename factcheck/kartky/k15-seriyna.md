@@ -26,7 +26,7 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -56,7 +56,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
   > The merge-bin command will merge multiple binary files (of any kind)
@@ -95,7 +95,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
   > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
@@ -131,7 +131,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
   > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
@@ -175,7 +175,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -212,7 +212,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -249,7 +249,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -286,7 +286,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -323,7 +323,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -382,7 +382,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -419,7 +419,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -456,7 +456,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -493,7 +493,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -530,7 +530,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -567,7 +567,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -604,7 +604,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -641,7 +641,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -678,7 +678,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -715,7 +715,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -752,7 +752,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -774,7 +774,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -796,7 +796,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -821,7 +821,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -852,7 +852,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -883,7 +883,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -914,7 +914,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -945,7 +945,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -976,7 +976,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1007,7 +1007,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1038,7 +1038,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1069,7 +1069,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1100,7 +1100,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1122,7 +1122,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1146,7 +1146,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1170,7 +1170,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1191,7 +1191,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1214,7 +1214,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1241,7 +1241,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
 - **Джерело:** tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
 - **Розрахунок:**
   таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
@@ -1278,7 +1278,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
 - **Джерело:** tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
 - **Розрахунок:**
   таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
@@ -1315,7 +1315,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
 - **Джерело:** tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
 - **Розрахунок:**
   таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
@@ -1349,7 +1349,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1371,7 +1371,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1394,7 +1394,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1417,7 +1417,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1441,7 +1441,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1468,7 +1468,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
 - **Дослівно з джерела:**
   > ``espefuse`` is a tool for communicating with Espressif chips for the
@@ -1515,6 +1515,6 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---

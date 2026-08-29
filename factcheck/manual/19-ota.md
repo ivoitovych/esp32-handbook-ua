@@ -27,7 +27,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
@@ -56,7 +56,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -79,7 +79,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -102,7 +102,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -123,7 +123,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
@@ -156,7 +156,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -189,7 +189,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
 - **Дослівно з джерела:**
   > An OTA data partition (type ``data``, subtype ``ota``) must be included
@@ -228,7 +228,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -261,7 +261,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > ota_0,    app,  ota_0,   0x110000, 1M,
@@ -300,7 +300,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -333,7 +333,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > ota_1,    app,  ota_1,   0x210000, 1M,
@@ -372,7 +372,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -397,7 +397,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
 - **Дослівно з джерела:**
   > the first available OTA slot (usually ``ota_0``) is booted
@@ -428,7 +428,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
 - **Дослівно з джерела:**
   > write a new app firmware image to whichever OTA app slot that is currently not selected for booting
@@ -459,7 +459,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -484,7 +484,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
 - **Дослівно з джерела:**
   > Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
@@ -514,7 +514,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -538,7 +538,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -562,7 +562,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -588,7 +588,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -614,7 +614,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -640,7 +640,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > flash capacity and partition allocation
@@ -672,7 +672,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > Factory app, two OTA definitions
@@ -699,7 +699,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
@@ -731,7 +731,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > flash capacity and partition allocation
@@ -763,7 +763,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -789,7 +789,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 **Доказ**
 
-- **Клас:** 🔎 L — дивилися й не знайшли — робота зроблена, джерела не видно
+- **Статус:** looked-not-found — дивилися й не знайшли — робота зроблена, джерела не видно
 - **Спосіб і дата:** Емпіричне вимірювання або документація IDF про розміри компонентів
 - **Що шукати в джерелі:** Розмір прошивки, Wi-Fi, TLS, веб-сервер, OTA слот
 - **Нотатка:** Твердження про розмір прошивки з конкретними компонентами. Це емпіричне спостереження, джерелом має бути практичне вимірювання або документація IDF. Не знайшов первинного джерела. | 2026-08-28, §5 аудиту: клас named-unreachable (C) вимагає НАЗВАНОГО документа — у цьому записі його не було, стояла лише тема в look_for. За власним законом: не можеш назвати документ — це не C, а unverified. Тему збережено в look_for як підказку, куди дивитися, але це не наряд.
@@ -820,7 +820,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -846,7 +846,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
@@ -878,7 +878,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -903,7 +903,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -928,7 +928,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -953,7 +953,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -978,7 +978,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1003,7 +1003,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1028,7 +1028,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1051,7 +1051,7 @@ support`.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1074,7 +1074,7 @@ support`.
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/ota.rst
 - **Дослівно з джерела:**
   > * The application works fine, :cpp:func:`esp_ota_mark_app_valid_cancel_rollback` marks the
@@ -1110,7 +1110,7 @@ support`.
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/ota.rst
 - **Дослівно з джерела:**
   > * The application works fine, :cpp:func:`esp_ota_mark_app_valid_cancel_rollback` marks the
@@ -1146,7 +1146,7 @@ support`.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1171,7 +1171,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/ota.rst
 - **Дослівно з джерела:**
   > * The application works fine, :cpp:func:`esp_ota_mark_app_valid_cancel_rollback` marks the
@@ -1207,7 +1207,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/ota.rst
 - **Дослівно з джерела:**
   > * The application works fine, :cpp:func:`esp_ota_mark_app_valid_cancel_rollback` marks the
@@ -1243,7 +1243,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1268,7 +1268,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1293,7 +1293,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1319,7 +1319,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1345,7 +1345,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1371,7 +1371,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1394,7 +1394,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1417,7 +1417,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1439,7 +1439,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1477,7 +1477,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1526,7 +1526,7 @@ if (err == ESP_OK) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1569,7 +1569,7 @@ esp_https_ota_config_t ota_cfg = { .http_config = &http_cfg };
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1596,7 +1596,7 @@ esp_https_ota_config_t ota_cfg = { .http_config = &http_cfg };
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1623,7 +1623,7 @@ esp_https_ota_config_t ota_cfg = { .http_config = &http_cfg };
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1663,7 +1663,7 @@ if (err == ESP_OK) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1706,7 +1706,7 @@ if (err == ESP_OK) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1745,7 +1745,7 @@ if (err == ESP_OK) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
 - **Дослівно з джерела:**
   > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
@@ -1775,7 +1775,7 @@ if (err == ESP_OK) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1815,7 +1815,7 @@ if (err == ESP_OK) {
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1844,7 +1844,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
@@ -1879,7 +1879,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1908,7 +1908,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1937,7 +1937,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1966,7 +1966,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -1989,7 +1989,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2012,7 +2012,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2035,7 +2035,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
 - **Джерело:** RFC 5246 The TLS Protocol
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** RFC 5246 The TLS Protocol
@@ -2063,7 +2063,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/system/ota/simple_ota_example/main/simple_ota_example.c
 - **Дослівно з джерела:**
   > extern const uint8_t server_cert_pem_start[] asm("_binary_ca_cert_pem_start");
@@ -2093,7 +2093,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2117,7 +2117,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2141,7 +2141,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2165,7 +2165,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2189,7 +2189,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2213,7 +2213,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2237,7 +2237,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2262,7 +2262,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2287,7 +2287,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2312,7 +2312,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2336,7 +2336,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2360,7 +2360,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2381,7 +2381,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2405,7 +2405,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/app_update/include/esp_ota_ops.h, .../components/esp_common/include/esp_err.h, .../docs/en/api-reference/storage/{wear-levelling,fatfs}.rst
 - **Дослівно з джерела:**
   > (esp_ota_ops.h)
@@ -2447,7 +2447,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2471,7 +2471,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/a4dbe955-bootloader.rst
 - **Дослівно з джерела:**
   > The OTA (over the air) update process can flash new apps in the field but cannot flash a new bootloader.
@@ -2499,7 +2499,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/app_update/include/esp_ota_ops.h, .../components/esp_common/include/esp_err.h, .../docs/en/api-reference/storage/{wear-levelling,fatfs}.rst
 - **Дослівно з джерела:**
   > (esp_ota_ops.h)
@@ -2539,7 +2539,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2561,7 +2561,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2583,7 +2583,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2607,7 +2607,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2631,7 +2631,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2654,7 +2654,7 @@ rollback. Якщо він не був увімкнений — лишаєтьс�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2677,7 +2677,7 @@ rollback. Якщо він не був увімкнений — лишаєтьс�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2699,7 +2699,7 @@ rollback. Якщо він не був увімкнений — лишаєтьс�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2721,7 +2721,7 @@ rollback. Якщо він не був увімкнений — лишаєтьс�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2744,7 +2744,7 @@ Rollback — окремий механізм, і він працює лише т
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > The following code serves detect the initial boot for an application after the OTA update. Upon the first boot, the application checks its state and performs diagnostics. If the diagnostics are successful, the application should call esp_ota_mark_app_valid_cancel_rollback to confirm the operability of the application.
@@ -2772,7 +2772,7 @@ OTA не оновлює таблицю розділів. Розбивку зак
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
@@ -2800,7 +2800,7 @@ OTA не оновлює таблицю розділів. Розбивку зак
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
 
@@ -2822,6 +2822,6 @@ OTA не оновлює таблицю розділів. Розбивку зак
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Статус:** unchecked — не звірено
 
 ---
