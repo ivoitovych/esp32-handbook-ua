@@ -44,7 +44,7 @@ def main(argv: list[str]) -> int:
 
     fayly = nm.kesh_fayly()
     bez = []
-    for klas in ("C", "F", "E"):
+    for klas in ("named-unreachable", "unchecked", "no-external-signal"):
         for o in sample.odynyci(klas):
             if o["id"] in vzhe:
                 continue
