@@ -37,7 +37,7 @@ What holds is a check. This is the check.
 ## What it deliberately does NOT verify
 
 Prose. Two documents may explain the same idea in different words and
-that is not drift — `POMICHNYKY.md` is the raw log and `METHOD.md` is
+that is not drift — `HELPERS.md` is the raw log and `METHOD.md` is
 the distilled law, and both say so in their first lines. Only **facts
 with one right answer** are checked here.
 
@@ -70,9 +70,9 @@ VLASNYK = {
 # читачеві так само, як живий. Тому історичні тут є, і це не розбіжність
 # воріт, а два різні питання про один файл.
 KERIVNI = ["METHOD.md", "DEFECTS.md", "LESSONS-M2.md", "RETROSPECTIVE.md",
-           "SCHEMA.md", "ARCHITECTURE.md", "POMICHNYKY.md", "README.md",
-           "MIGRATION.md", "WORK-ORDER-EXAMPLE.md", "TASK-SPEC.md",
-           "SPROSTOVANE.md", "dzherela.md", "WAVE-W1.md"]
+           "SCHEMA.md", "ARCHITECTURE.md", "HELPERS.md", "README.md",
+           "MIGRATION.md", "TASK-SPEC.md", "TASK-SPEC.md",
+           "REFUTED.md", "SOURCES.md", "WAVE-W1.md"]
 
 # Рядок, що перелічує класи. ФОРМАТІВ ТРИ, і це не примха:
 #

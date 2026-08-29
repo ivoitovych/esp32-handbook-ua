@@ -3,10 +3,10 @@
 > **historical** — a record of a finished wave; not edited, numbers frozen
 
 Реєстр М2, окремим файлом. `tools/refuted.py` читає всі
-`factcheck/SPROSTOVANE*.md`, тож обидва реєстри діють разом і при злитті
+`factcheck/REFUTED*.md`, тож обидва реєстри діють разом і при злитті
 не б'ються.
 
-Формат і призначення — у головному `factcheck/SPROSTOVANE.md`.
+Формат і призначення — у головному `factcheck/REFUTED.md`.
 
 ## Реєстр
 

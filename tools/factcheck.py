@@ -1020,7 +1020,7 @@ def sketch() -> int:
 def zbir_usikh() -> list[dict]:
     out = []
     for p in sorted(FC.rglob("*.md")):
-        if p.name in ("README.md", "SCHEMA.md", "STATUS.md", "dzherela.md"):
+        if p.name in ("README.md", "SCHEMA.md", "STATUS.md", "SOURCES.md"):
             continue
         t = p.read_text(encoding="utf-8")
         for sh in re.split(r"(?=<!--\s*fc\s)", t):

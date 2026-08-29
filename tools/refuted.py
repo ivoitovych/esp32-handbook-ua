@@ -8,7 +8,7 @@
 картки та `docs/fakty.md`.
 
 Цей інструмент замінює пам'ять на перевірку. Кожне спростоване
-формулювання лежить у `factcheck/SPROSTOVANE.md` разом із взірцем, і
+формулювання лежить у `factcheck/REFUTED.md` разом із взірцем, і
 взірець шукається в **усьому** дереві — книзі, картках, додатках,
 довідкових документах, реєстрі.
 
@@ -27,14 +27,14 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 # Реєстрів може бути кілька: головний і по одному на паралельного
-# супровідника (`SPROSTOVANE-m2.md`). Так вони не б'ються при злитті —
+# супровідника (`REFUTED-M2.md`). Так вони не б'ються при злитті —
 # кожен пише лише у свій файл.
-REYESTRY = sorted((ROOT / "factcheck").glob("SPROSTOVANE*.md"))
+REYESTRY = sorted((ROOT / "factcheck").glob("REFUTED*.md"))
 
 # Де шукаємо. Реєстр спростованого й звіти рецензій цитують хибні
 # формулювання за призначенням — там вони доречні.
 DE = ("kartky", "manual", "dodatky", "inserts", "docs")
-NE_CHIPATY = ("factcheck/SPROSTOVANE", "reviews/", "zvyazok/")
+NE_CHIPATY = ("factcheck/REFUTED", "reviews/", "zvyazok/")
 
 
 def zapysy() -> list[dict]:

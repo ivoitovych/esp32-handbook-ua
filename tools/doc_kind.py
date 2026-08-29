@@ -56,10 +56,16 @@ RE_POZNAKA = re.compile(
 
 # Роди, які не виводяться з коду. Породжений рід виводиться завжди;
 # решту треба назвати, і назвати один раз.
+# УВАГА до наступного перейменування. Це не посилання на файли — це
+# ПЕРЕЛІК ІМЕН, і кожне ім'я тут є твердженням про документ під ним.
+# 2026-08-29 прохід sed по керівних документах замінив тут
+# `WORK-ORDER-EXAMPLE.md` на `TASK-SPEC.md`, і чинна специфікація
+# завдання миттєво стала «історичною». Зловив цей же скрипт, за хвилину.
+# Рід 26: перейменування переписало правило, чиїм предметом було ім'я.
 ISTORYCHNI = {
-    "ARKHITEKTURA-m2.md", "DZHERELA-m2.md", "LESSONS-M2.md", "MEREZHA-m2.md",
-    "PEREVIRYTY-m2.md", "SPROSTOVANE-m2.md", "TO-VERIFY.md",
-    "WORK-ORDER-EXAMPLE.md", "MEASURE-UNCHECKED.md", "WAVE-W1.md",
+    "ARCHITECTURE-M2.md", "SOURCES-M2.md", "LESSONS-M2.md", "NETWORK-M2.md",
+    "TO-VERIFY-M2.md", "REFUTED-M2.md", "TO-VERIFY.md",
+    "MEASURE-UNCHECKED.md", "WAVE-W1.md",
 }
 
 # Позначка англійською навмисно. Половина керівних документів уже
