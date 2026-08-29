@@ -16,9 +16,9 @@
 | `у кеші заглушка` | сервер віддав HTML із кодом 200 замість PDF |
 | `звірено очима` | витягання тексту руйнує структуру; звірив супровідник, причина названа |
 
-Записів доказів: **1366**. Звірено дослівно: **543**. Не знайдено: **61**. Джерело не в кеші: **81**. Нема чого звіряти: **658**.
+Записів доказів: **1366**. Звірено дослівно: **546**. Не знайдено: **58**. Джерело не в кеші: **81**. Нема чого звіряти: **658**.
 
-Станом на 2026-08-29 11:01 UTC.
+Станом на 2026-08-29 11:07 UTC.
 
 
 ## клас E на твердженні з числом — перевірити — 23
@@ -49,7 +49,7 @@
 | T-60-123: Запис на картку займає 400 мс | `m2-94-vybirka` | клас E, а в назві число з одиницею |
 | Модулі на 8 і 16 МБ флешу коштують істотно дорожче за різницю у ціні | `m2-95-vybirka` | клас E, а в назві число з одиницею |
 
-## **не знайдено** — 61
+## **не знайдено** — 58
 
 | Доказ | Файл | Деталі |
 |---|---|---|
@@ -77,7 +77,6 @@
 | Перевірка переповнення стека і розмір стека app_main | `pass-01-tverde-yadro` | 3 з 8 рядків: «config ESP_MAIN_TASK_STACK_SIZE…»; «int "Main task stack size"…»; «default 3584…» |
 | На C3 ADC2 непридатний через апаратну ваду, а не через Wi-Fi | `pass-02-povedinka` | 1 з 3 рядків: «The results are not stable. This issue can be found in `ESP32-C3 Serie…» |
 | Strapping-піни за сімействами | `pass-08-strapping` | 2 з 6 рядків: «esp32h21="GPIO14", esp32h4="GPIO14"}…»; «esp32h4="GPIO13"}…» |
-| merge-bin вимагає --chip; без нього команда падає | `pass-09-komandy` | 1 з 7 рядків: «* Binary image generation commands, such as elf2image or merge-bin,…» |
 | Розбіжність обсягу флешу — два різні рядки й різні наслідки | `pass-10-povidomlennya` | 3 з 3 рядків: «ESP_EARLY_LOGE(TAG, "Detected size(%dk) smaller than the size in the b…»; «"header(%dk). Probe failed.", default_chip.size/1024, legacy_chip->chi…»; «ESP_EARLY_LOGW(TAG, "Detected size(%dk) larger than the size in the bi…» |
 | Помилки купи розрізняють бік переповнення | `pass-10-povidomlennya` | 2 з 2 рядків: «#define ERR_STR1 "***ERROR*** A stack overflow in task "…»; «#define ERR_STR2 " has been detected."…» |
 | Дерево menuconfig — корінь і Component config | `pass-11-menuconfig` | 9 з 13 рядків: «esptool_py:        menu "Serial flasher config"…»; «partition_table:   menu "Partition Table"…»; «bootloader:        menu "Bootloader config"…» |
@@ -85,7 +84,6 @@
 | pioarduino, а не офіційна платформа PlatformIO | `pass-17-simeystva-proektiv` | 1 з 5 рядків: «"version": "55.03.311"…» |
 | Підтягування I²C — діапазон, а не одне число | `pass-18-schemy` | 2 з 5 рядків: «The recommended value for pull-up resistors usually ranges from 1 kΩ t…»; «should be (but not less than 1 kΩ). Indeed, large resistors will decli…» |
 | Кольорова обв'язка прикладів — classic і тільки classic | `pass-20-jtag-obvyazka` | 1 з 1 рядків: «esp32: SOC_GPIO_PIN_COUNT 40…» |
-| Таблиця розділів — 0xC00 і 95 записів; 0x7000 належить бутлоадерові | `pass-24-zsuvy-i-matrycya` | 3 з 18 рядків: «located at (default offset) + 0x1000.…»; «When using the default CONFIG_PARTITION_TABLE_OFFSET value 0x8000, the…»; «no partition has an offset lower than CONFIG_PARTITION_TABLE_OFFSET…» |
 | Рівні strapping і недійсна комбінація — усі сімейства | `pass-26-strapping` | 6 з 12 рядків: «{IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",…»; «{STRAP_BOOT_2_GPIO} must also be either left unconnected/floating,…»; «{STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the…» |
 | Маска GPIO_STRAP — усі шість бітів classic і два біти решти | `pass-26-strapping` | 3 з 21 рядків: «represented in the GPIO_STRAP register.…»; «most cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}…»; «has been pulled high when {STRAP_BOOT_GPIO} is low).…» |
 | flash-id як засіб упізнати перемаркований модуль | `pass-28-komandy-suciljno` | 4 з 4 рядків: «chip-id     Read Chip ID…»; «flash-id    Read SPI flash manufacturer and device ID…»; «The flash-id command outputs the manufacturer and device ID of the…» |
@@ -111,7 +109,6 @@
 | Автоскидання не працює — перелік причин, крім однієї | `pass-34-pul-shmatok-6` | 2 з 9 рядків: «esptool is not able to reset your hardware automatically in the…»; «Check the chip is receiving 3.3V from a stable power source.…» |
 | Коди RESET_REASON — уся таблиця причин скидання | `pass-35-vlasna-pomylka-boot` | 1 з 19 рядків: «SDIO_RESET             =  6,    /**<6, Reset by SLC module*/…» |
 | ROM класифікує boot: значення цілком, а не пін за піном | `pass-35-vlasna-pomylka-boot` | 1 з 7 рядків: «#define ETS_IS_FLASH_BOOT()  (IS_1XXX(BOOT_MODE_GET()) || \…» |
-| На RISC-V рядка Backtrace немає — його будує монітор | `pass-38-pul-shmatky-9-11` | 2 з 12 рядків: «Moreover, IDF Monitor is also capable of generating and printing a…»; «IDF Monitor. Thus, in order to generate and print a backtrace while…» |
 | sdkconfig.defaults рекомендовано тримати в системі контролю версій | `pass-45-sdkconfig-defaults` | 1 з 1 рядків: «It is recommended to commit sdkconfig.defaults for providing baseline …» |
 | T-17-118: Друга половина рядка залежить від версії. | `prochid-17-esptool` | 1 з 1 рядків: «'esptool v{__version__}'…» |
 
@@ -201,7 +198,7 @@
 | T-Z-052: ESP32-WROOM-32D — 79, 152 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
 | T-Z-053: ESP32-WROVER — 7, 79, 152 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
 
-## звірено — 543
+## звірено — 546
 
 | Доказ | Файл | Деталі |
 |---|---|---|
@@ -354,6 +351,7 @@
 | gpio_dump_io_configuration показує реальну конфігурацію піна | `pass-07-api-rozbyvka` | 9 рядків |
 | boot: у логу — бітова маска станів strapping-пінів | `pass-08-strapping` | 9 рядків |
 | GPIO12 високий дає VDDSDIO 1.8 В і brownout тривольтового флешу | `pass-08-strapping` | 2 рядків |
+| merge-bin вимагає --chip; без нього команда падає | `pass-09-komandy` | 7 рядків |
 | idf.py merge-bin бере адреси з конфігурації проєкту | `pass-09-komandy` | 6 рядків |
 | Стиснення при передачі ввімкнене за замовчуванням | `pass-09-komandy` | 10 рядків |
 | --after watchdog-reset для чипів із native USB | `pass-09-komandy` | 7 рядків |
@@ -372,6 +370,7 @@
 | Режими SPI — CPHA задає номер фронту, не напрямок | `pass-16-interfeysy` | 3 рядків |
 | BME280 — адреси, ідентифікатор чипа, регістр | `pass-18-schemy` | 4 рядків |
 | DS18B20 повертає −127 при відсутності зв'язку | `pass-18-schemy` | 1 рядків |
+| Таблиця розділів — 0xC00 і 95 записів; 0x7000 належить бутлоадерові | `pass-24-zsuvy-i-matrycya` | 18 рядків |
 | JTAG-піни classic — усі чотири з таблиці IOMUX | `pass-24-zsuvy-i-matrycya` | 9 рядків |
 | Матриця GPIO і SPI — 40 проти 80 МГц, і коли різниці немає | `pass-24-zsuvy-i-matrycya` | 11 рядків |
 | MSPI на S3 — GPIO26–32 під флеш, GPIO33–37 під восьмилінійний режим | `pass-25-psram` | 14 рядків |
@@ -398,6 +397,7 @@
 | GPIO11 на C3 — це майданчик VDD_SPI, живлення флешу | `pass-38-pul-shmatky-9-11` | 7 рядків |
 | Драйвер I²C називає причину в консолі, а не мовчить | `pass-38-pul-shmatky-9-11` | 7 рядків |
 | ESP_DRAM_LOGx — єдиний виняток із заборони логувати в ISR | `pass-38-pul-shmatky-9-11` | 5 рядків |
+| На RISC-V рядка Backtrace немає — його будує монітор | `pass-38-pul-shmatky-9-11` | 12 рядків |
 | Рядки режиму завантаження — перелік із документації esptool | `pass-39-pul-haiku` | 3 рядків |
 | Пін входу в бутлоадер за сімействами — підстановки esptool | `pass-39-pul-haiku` | 3 рядків |
 | Внутрішнє підтягування 45 кОм на піні входу в бутлоадер | `pass-39-pul-haiku` | 2 рядків |
