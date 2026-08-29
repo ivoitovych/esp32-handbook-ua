@@ -210,7 +210,7 @@ def main() -> int:
 
     fayly = kesh_fayly()
     vsi = []
-    for klas in ("C", "F"):
+    for klas in ("named-unreachable", "unchecked"):
         for o in sample.odynyci(klas):
             o["klas"] = klas
             vsi.append(o)

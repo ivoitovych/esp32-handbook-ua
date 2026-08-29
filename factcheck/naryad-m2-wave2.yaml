@@ -1,0 +1,526 @@
+- id: T-23-091
+  sha: 4a629d22
+  src: manual/23-triazh.md:165
+  tekst: Напис `ESP8266` · Висновок → інша платформа
+  klas: F
+  fayl: 0a-esp8266ex_datasheet_en.pdf
+  fayly:
+  - 0a-esp8266ex_datasheet_en.pdf
+- id: T-48-049
+  sha: b88043c1
+  src: manual/48-motory.md:123
+  tekst: Керування через LEDC (розділ 33).
+  klas: F
+  fayl: 2e18145f-ledc.rst
+  fayly:
+  - 2e18145f-ledc.rst
+  - da11cdab-ledc.rst
+- id: T-01-083
+  sha: 017c1aef
+  src: manual/01-platforma.md:112
+  tekst: '**Проти RP2040.** RP2040 має PIO — програмовані блоки вводу-виводу, які роблять неможливе можливим
+    у нестандартних протоколах.'
+  klas: F
+  fayl: rp2040.pdf
+  fayly:
+  - rp2040.pdf
+- id: T-08-015
+  sha: 641ab8c1
+  src: manual/08-platy.md:18
+  tekst: '`ESP32-C3-MINI-1` · Особливості → малий і дешевий'
+  klas: F
+  fayl: c424188c-esp32-c3-mini-1_datasheet_en.pdf
+  fayly:
+  - c424188c-esp32-c3-mini-1_datasheet_en.pdf
+- id: T-57-032
+  sha: e17fd027
+  src: manual/57-vid-zadachi.md:84
+  tekst: '**Обмін** — по UART (розділ 34) або CAN (розділ 38).'
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-08-012
+  sha: 6ceca8fd
+  src: manual/08-platy.md:17
+  tekst: '`ESP32-S3-WROOM-1` · Чип → S3'
+  klas: F
+  fayl: dbdfd4dd-esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf
+  fayly:
+  - dbdfd4dd-esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf
+- id: T-K03-015
+  sha: 14b8c42e
+  src: kartky/k03-pidkl.md:28
+  tekst: '`CH9102`, `CH9102F` · Драйвер → Windows: окремий, не той, що для CH340'
+  klas: C
+  fayl: ch340.pdf
+  fayly:
+  - ch340.pdf
+- id: T-04-074
+  sha: 59f98618
+  src: manual/04-peryferiya.md:116
+  tekst: I²C · classic → 2
+  klas: F
+  fayl: i2c-um10204.pdf
+  fayly:
+  - i2c-um10204.pdf
+- id: T-43-036
+  sha: cf056bbd
+  src: manual/43-lora.md:64
+  tekst: 'Під''єднання — по **SPI** (розділ 36) плюс кілька додаткових ліній: скидання і `DIO0` для сигналу
+    про завершення прийому чи передачі.'
+  klas: F
+  fayl: 0d47365c-spi_master.rst
+  fayly:
+  - 0d47365c-spi_master.rst
+  - 399b50f6-spi_master.rst
+- id: T-21-096
+  sha: 26048fe4
+  src: manual/21-seriyna.md:202
+  tekst: Спільний образ і унікальний NVS — це два різні шари.
+  klas: F
+  fayl: a4c4a980-nvs_flash.rst
+  fayly:
+  - a4c4a980-nvs_flash.rst
+  - c02027a1-nvs_flash.rst
+- id: T-29-027
+  sha: f2e062af
+  src: manual/29-symptomy.md:68
+  tekst: Лог порожній — не стартує бутлоадер; лог є, `invalid header` — не знайдено застосунок.
+  klas: F
+  fayl: 710f412b-bootloader.rst
+  fayly:
+  - 710f412b-bootloader.rst
+  - a4dbe955-bootloader.rst
+- id: T-20-050
+  sha: 525db2f9
+  src: manual/20-bekap.md:113
+  tekst: 'Дамп з ESP32 classic на ESP32-S3 дасть плату, що мовчить: інші адреси, інший код.'
+  klas: F
+  fayl: 56713ff4-esp32-s3_datasheet_en.pdf
+  fayly:
+  - 56713ff4-esp32-s3_datasheet_en.pdf
+- id: T-30-072
+  sha: 283e1395
+  src: manual/30-struktura.md:193
+  tekst: Під час операції з флешем (запис у NVS, стирання сектора) кеш вимикається, і виконання коду з
+    флешу неможливе (розділ 03).
+  klas: F
+  fayl: a4c4a980-nvs_flash.rst
+  fayly:
+  - a4c4a980-nvs_flash.rst
+  - c02027a1-nvs_flash.rst
+- id: T-23-016
+  sha: 92bef9b9
+  src: manual/23-triazh.md:25
+  tekst: '`ESP32-S3-WROOM-1` · Чип → ESP32-S3'
+  klas: F
+  fayl: dbdfd4dd-esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf
+  fayly:
+  - dbdfd4dd-esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf
+- id: T-00-093
+  sha: aa1d8846
+  src: manual/00-pro-dovidnyk.md:226
+  tekst: 'Усталені терміни, які в галузі не перекладають, лишаються як є: brownout, watchdog, backtrace,
+    strapping, bootloader.'
+  klas: F
+  fayl: 710f412b-bootloader.rst
+  fayly:
+  - 710f412b-bootloader.rst
+  - a4dbe955-bootloader.rst
+- id: T-04-022
+  sha: 24fd2228
+  src: manual/04-peryferiya.md:54
+  tekst: I²C · Що це → дві лінії, багато пристроїв, невисока швидкість
+  klas: F
+  fayl: i2c-um10204.pdf
+  fayly:
+  - i2c-um10204.pdf
+- id: T-17-053
+  sha: eada110b
+  src: manual/17-esptool.md:129
+  tekst: 'Можна читати й окремий шматок — наприклад, лише розділ NVS:'
+  klas: F
+  fayl: a4c4a980-nvs_flash.rst
+  fayly:
+  - a4c4a980-nvs_flash.rst
+  - c02027a1-nvs_flash.rst
+- id: T-23-021
+  sha: 06afa9dc
+  src: manual/23-triazh.md:27
+  tekst: '`ESP8266`, `ESP-12`, `ESP-01` · Що це значить практично → інша архітектура, інший тулчейн'
+  klas: F
+  fayl: 0a-esp8266ex_datasheet_en.pdf
+  fayly:
+  - 0a-esp8266ex_datasheet_en.pdf
+- id: T-12-014
+  sha: afe776c2
+  src: manual/12-arduino.md:42
+  tekst: 'Саме так робиться доступ до тих блоків периферії, яких немає в Arduino API: MCPWM, PCNT, TWAI,
+    тонке керування живленням.'
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-G-009
+  sha: cb136786
+  src: dodatky/g-glosariy.md:17
+  tekst: '| **bootloader** | програма, що завантажує наступну програму |'
+  klas: F
+  fayl: 710f412b-bootloader.rst
+  fayly:
+  - 710f412b-bootloader.rst
+  - a4dbe955-bootloader.rst
+- id: T-50-022
+  sha: 2ef51254
+  src: manual/50-bezpeka.md:60
+  tekst: NVS за замовчуванням лежить у флеші **відкритим текстом**.
+  klas: F
+  fayl: a4c4a980-nvs_flash.rst
+  fayly:
+  - a4c4a980-nvs_flash.rst
+  - c02027a1-nvs_flash.rst
+- id: T-K01-009
+  sha: da93faf6
+  src: kartky/k01-triazh.md:13
+  tekst: '`ESP32-WROVER` · Що це значить → + PSRAM; вона займає частину пінів'
+  klas: F
+  fayl: c9ce11af-esp32-wrover-e_esp32-wrover-ie_datasheet_en.pdf
+  fayly:
+  - c9ce11af-esp32-wrover-e_esp32-wrover-ie_datasheet_en.pdf
+- id: T-58-020
+  sha: 0ba23b0e
+  src: manual/58-dovedennya.md:50
+  tekst: '**Причину скидання** першим рядком `app_main`.'
+  klas: F
+  fayl: 41cecd4f-fatal-errors.rst
+  fayly:
+  - 41cecd4f-fatal-errors.rst
+  - 569e266f-fatal-errors.rst
+- id: T-04-125
+  sha: 1d31bb05
+  src: manual/04-peryferiya.md:132
+  tekst: '[[C6]] Запис «+ 1 LP» для C6 не описка: третій UART і другий контролер I²C там **низькоспоживчі**.'
+  klas: F
+  fayl: i2c-um10204.pdf
+  fayly:
+  - i2c-um10204.pdf
+- id: T-19-031
+  sha: 039b7725
+  src: manual/19-ota.md:57
+  tekst: 'Практично: якщо є хоч найменша ймовірність, що виріб доведеться оновлювати в полі, — OTA-розбивка
+    ставиться одразу, навіть якщо сама функція поки не написана.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+  - 82125226-ota.rst
+- id: T-59-140
+  sha: fda6a9fd
+  src: manual/59-proj-monitor.md:431
+  tekst: Немає — сканер I²C (розділ 35). 2.
+  klas: F
+  fayl: i2c-um10204.pdf
+  fayly:
+  - i2c-um10204.pdf
+- id: T-K12-012
+  sha: ebc50087
+  src: kartky/k12-komplekt.md:22
+  tekst: '| Логічний аналізатор 8 каналів | бачити I²C і SPI наживо замість гадання |'
+  klas: F
+  fayl: i2c-um10204.pdf
+  fayly:
+  - i2c-um10204.pdf
+- id: T-G-151
+  sha: 45d218a9
+  src: dodatky/g-glosariy.md:185
+  tekst: '| SPI | Serial Peripheral Interface |'
+  klas: F
+  fayl: 0d47365c-spi_master.rst
+  fayly:
+  - 0d47365c-spi_master.rst
+  - 399b50f6-spi_master.rst
+- id: T-25-029
+  sha: ea75641a
+  src: manual/25-log.md:47
+  tekst: У ESP8266 швидкість ROM пропорційна кварцу, і на типовому 26-мегагерцовому виходить 115200 ×
+    26/40 = 74880.
+  klas: F
+  fayl: 0a-esp8266ex_datasheet_en.pdf
+  fayly:
+  - 0a-esp8266ex_datasheet_en.pdf
+- id: T-B-132
+  sha: 4ac391fd
+  src: dodatky/b-symptomy.md:76
+  tekst: 'CAN: лічильник помилок росте · Причина → один вузол на шині'
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-04-076
+  sha: c9d1e001
+  src: manual/04-peryferiya.md:116
+  tekst: I²C · S3 → 2
+  klas: F
+  fayl: i2c-um10204.pdf
+  fayly:
+  - i2c-um10204.pdf
+- id: T-15-042
+  sha: b97e3616
+  src: manual/15-oflayn.md:71
+  tekst: '**ESPHome** — двадцять рядків YAML, працює за десять хвилин, разом з OTA і веб-інтерфейсом.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+  - 82125226-ota.rst
+- id: T-08-081
+  sha: 8bc064be
+  src: manual/08-platy.md:157
+  tekst: '**Модуль на власній платі.** Ви ставите `WROOM` і мінімальну обв''язку: стабілізатор, конденсатори,
+    роз''єм для прошивки.'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-57-039
+  sha: 702d8f5f
+  src: manual/57-vid-zadachi.md:103
+  tekst: '| аварійні блокування | веб-інтерфейс, OTA |'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+  - 82125226-ota.rst
+- id: T-04-109
+  sha: 1b51b413
+  src: manual/04-peryferiya.md:121
+  tekst: DAC · H2 → ні
+  klas: F
+  fayl: 9317abcc-dac.rst
+  fayly:
+  - 9317abcc-dac.rst
+  - f48eaf67-dac.rst
+- id: T-44-040
+  sha: 3363d5b0
+  src: manual/44-neznayomyy-modul.md:65
+  tekst: '`VCC`, `GND`, `A0`/`OUT` аналоговий · Інтерфейс → ADC'
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-46-085
+  sha: b12b358a
+  src: manual/46-dyspleyi.md:172
+  tekst: 'LVGL потребує кадрового буфера: практично це S3 із PSRAM.'
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-20-038
+  sha: b7b340b6
+  src: manual/20-bekap.md:86
+  tekst: esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-B-093
+  sha: 26d701cf
+  src: dodatky/b-symptomy.md:63
+  tekst: I²C не знаходить пристрій · Причина → **немає підтягування**
+  klas: F
+  fayl: i2c-um10204.pdf
+  fayly:
+  - i2c-um10204.pdf
+- id: T-06-086
+  sha: 808d179c
+  src: manual/06-zhyvlennya.md:182
+  tekst: Розбудити можуть таймер, RTC GPIO, ULP або touch — залежно від сімейства.
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+  - 6ae1a690-gpio.rst
+- id: T-14-024
+  sha: 8cb0966b
+  src: manual/14-shvydki-shlyakhy.md:79
+  tekst: OTA, веб-інтерфейс, відновлення зв'язку, інтеграція з системами домашньої автоматизації — усе
+    вже є.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+  - 82125226-ota.rst
+- id: T-18-054
+  sha: 7d517b9b
+  src: manual/18-rozdily-fleshu.md:106
+  tekst: Стандартна реакція на пошкоджений NVS — стерти і переініціалізувати.
+  klas: F
+  fayl: a4c4a980-nvs_flash.rst
+  fayly:
+  - a4c4a980-nvs_flash.rst
+  - c02027a1-nvs_flash.rst
+- id: T-60-020
+  sha: '69538962'
+  src: manual/60-proj-loger.md:34
+  tekst: 18650 з захистом · Кількість → 1
+  klas: C
+  fayl: ncr18650b.pdf
+  fayly:
+  - ncr18650b.pdf
+- id: T-50-037
+  sha: fe635607
+  src: manual/50-bezpeka.md:89
+  tekst: Незахищений OTA означає, що будь-хто може залити свою прошивку.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+  - 82125226-ota.rst
+- id: T-04-102
+  sha: 0b174b85
+  src: manual/04-peryferiya.md:120
+  tekst: TWAI (CAN) · C6 → **2**
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-14-060
+  sha: 1e31acd8
+  src: manual/14-shvydki-shlyakhy.md:137
+  tekst: OTA з коробки · ESPHome → **так**
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+  - 82125226-ota.rst
+- id: T-16-027
+  sha: f44b1e43
+  src: manual/16-boot.md:68
+  tekst: '| Сімейство | Адреса `bootloader.bin` |'
+  klas: F
+  fayl: 710f412b-bootloader.rst
+  fayly:
+  - 710f412b-bootloader.rst
+  - a4dbe955-bootloader.rst
+- id: T-02-068
+  sha: 7d1819e5
+  src: manual/02-chipy.md:41
+  tekst: USB · S3 → OTG + JTAG
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-K13-037
+  sha: dece1980
+  src: kartky/k13-zhyvlennya.md:61
+  tekst: '- **Дільник вимірювання напруги вмикати транзистором** — інакше він стає головним споживачем
+    уві сні - **Buck-boost, не LDO** — LDO відсікає половину ємності 18650 - **Плата розробки для сну
+    не годиться**: USB-міст, стабілізатор і світлодіод не сплять. 20 мА замість 20 мкА — це вони - **Не
+    заряджати літій нижче 0 °C**'
+  klas: C
+  fayl: ncr18650b.pdf
+  fayly:
+  - ncr18650b.pdf
+- id: T-04-127
+  sha: 994e417a
+  src: manual/04-peryferiya.md:135
+  tekst: Для звичайного застосунку доступні два UART і один I²C, тобто рівно як у C3.
+  klas: F
+  fayl: i2c-um10204.pdf
+  fayly:
+  - i2c-um10204.pdf
+- id: T-23-067
+  sha: 11c9cef8
+  src: manual/23-triazh.md:131
+  tekst: 'Останнє особливо цінне: воно каже, чи є на пристрої OTA, чи є файлова система, скільки місця
+    під застосунок.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+  - 82125226-ota.rst
+- id: T-K15-034
+  sha: 9149b7e4
+  src: kartky/k15-seriyna.md:51
+  tekst: 'Залити двадцятьом платам однаковий NVS означає двадцять пристроїв з однаковою особистістю: однаковий
+    серійний номер, однакові ключі.'
+  klas: F
+  fayl: a4c4a980-nvs_flash.rst
+  fayly:
+  - a4c4a980-nvs_flash.rst
+  - c02027a1-nvs_flash.rst
+- id: T-COM-067
+  sha: 6362ca8d
+  src: inserts/components-2026-08.md:69
+  tekst: Тримач або елемент із привареними виводами · Для чого → 18650
+  klas: C
+  fayl: ncr18650b.pdf
+  fayly:
+  - ncr18650b.pdf
+- id: T-59-004
+  sha: 3a523fc0
+  src: manual/59-proj-monitor.md:11
+  tekst: '**Вхід:** BME280 по I²C — температура, вологість, тиск.'
+  klas: F
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-08-007
+  sha: 4f61a5bf
+  src: manual/08-platy.md:14
+  tekst: '`ESP32-WROOM-32` · Особливості → базовий, без PSRAM. Найпоширеніший'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-39-072
+  sha: ec501256
+  src: manual/39-wifi.md:179
+  tekst: Пристрій із RSSI −82 успішно пінгується і навіть віддає невеликі пакети — але OTA-оновлення на
+    кілька сотень кілобайтів не проходить жодного разу (розділ 19).
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+  - 82125226-ota.rst
+- id: T-04-039
+  sha: 9c0ad84a
+  src: manual/04-peryferiya.md:67
+  tekst: 'MCPWM · Що це → [[classic]] [[S3]] моторний PWM: мертвий час, аварійне вимкнення'
+  klas: F
+  fayl: 2e18145f-ledc.rst
+  fayly:
+  - 2e18145f-ledc.rst
+  - da11cdab-ledc.rst
+- id: T-36-099
+  sha: f906627c
+  src: manual/36-spi.md:174
+  tekst: '| | I²C | SPI |'
+  klas: F
+  fayl: i2c-um10204.pdf
+  fayly:
+  - i2c-um10204.pdf
+- id: T-D-032
+  sha: b1aea164
+  src: dodatky/d-panik.md:21
+  tekst: '`0xb` · Назва → TGWDT_CPU_RESET'
+  klas: F
+  fayl: 41cecd4f-fatal-errors.rst
+  fayly:
+  - 41cecd4f-fatal-errors.rst
+  - 569e266f-fatal-errors.rst
+- id: T-04-107
+  sha: 4e26e4ae
+  src: manual/04-peryferiya.md:121
+  tekst: DAC · C3 → ні
+  klas: F
+  fayl: 9317abcc-dac.rst
+  fayly:
+  - 9317abcc-dac.rst
+  - f48eaf67-dac.rst

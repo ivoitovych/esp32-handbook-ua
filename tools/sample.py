@@ -69,12 +69,22 @@ RE_CYTATA = re.compile(r"^> (?P<t>.+)$", re.M)
 
 
 def odynyci(klas: str) -> list[dict]:
-    """Усі одиниці заданого класу, у сталому порядку.
+    """Усі одиниці заданого стану, у сталому порядку.
+
+    Приймає і слово (`"unchecked"`), і літеру (`"F"`), поки в коментарі
+    картки стоїть літера. Слово — цільова форма; літера лишається рівно
+    до стиснення, разом із полем `klas`.
 
     Сталість тут не косметика: `glob` і так сортується, але без
     `sorted()` порядок залежав би від файлової системи — і те саме
     насіння давало б різні вибірки на різних машинах.
     """
+    import factcheck
+    # Звести обидва написання до літери, бо в коментарі картки поки
+    # літера. Після стиснення звірка буде зі словом, і зникне цей рядок,
+    # а не з'явиться другий шлях.
+    shukanyy = factcheck.STATUS_TO_LETTER.get(klas, klas)
+
     out: list[dict] = []
     for grupa in GRUPY:
         katalog = ROOT / "factcheck" / grupa
@@ -87,7 +97,7 @@ def odynyci(klas: str) -> list[dict]:
             for i in range(1, len(shmatky), 5):
                 ident, sha = shmatky[i], shmatky[i + 1]
                 src, k = shmatky[i + 2], shmatky[i + 3]
-                if k != klas:
+                if k != shukanyy:
                     continue
                 tilo = shmatky[i + 4]
                 m = RE_CYTATA.search(tilo)
