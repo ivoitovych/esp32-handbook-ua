@@ -1,168 +1,117 @@
-# Прохід 9 — суцільна звірка командного рядка.
-#
-# Метод той самий, що в проході 7 для API: узято **всі** команди, які
-# книга друкує в блоках коду, і звірено кожну з документацією й вихідним
-# кодом інструмента, а не з пам'яттю.
-#
-# Прохід дав три виправлення, з них одне грубе: команда `merge-bin`,
-# яку книга подає як основу серійної прошивки, у надрукованому вигляді
-# не запускається взагалі.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - nazva: merge-bin вимагає --chip; без нього команда падає
   zbih: --chip esp32 merge-bin|`--chip` тут \*\*обов.язковий\*\*|Specify the --chip argument
   klas: A
-  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
-    (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
-  cytata: "def merge_bin_cli(ctx, addr_filename, **kwargs):\n    \"\"\"Merge multiple raw\
-    \ binary files into a single flashable file.\"\"\"\n    if ctx.obj[\"chip\"] == \"auto\"\
-    :\n        raise FatalError(\n            f\"Specify the --chip argument (choose from\
-    \ {', '.join(CHIP_LIST)}).\"\n        )\n\n(basic-options.rst)\n* Binary image generation\
-    \ commands, such as elf2image or merge-bin,\n  require the chip type to be specified.\n"
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli)
+    та .../docs/en/esptool/basic-options.rst
+  cytata: "def merge_bin_cli(ctx, addr_filename, **kwargs):\n    \"\"\"Merge multiple raw binary files\
+    \ into a single flashable file.\"\"\"\n    if ctx.obj[\"chip\"] == \"auto\":\n        raise FatalError(\n\
+    \            f\"Specify the --chip argument (choose from {', '.join(CHIP_LIST)}).\"\n        )\n\n\
+    (basic-options.rst)\n* Binary image generation commands, such as :ref:`elf2image <elf-2-image>` or\
+    \ :ref:`merge-bin <merge-bin>`, require the chip type to be specified.\n  require the chip type to\
+    \ be specified.\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: 'Найгрубша знахідка за дев''ять проходів, і саме тому, що стосується не рідкісного
-    випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну
-    прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
+  notatka: 'Найгрубша знахідка за дев''ять проходів, і саме тому, що стосується не рідкісного випадку,
+    а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована
+    команда падає на першому ж запуску з `Specify the --chip argument`.
 
-    Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin`
-    складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим
-    розбором аргументів.
+    Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає
+    файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
 
-    Виправлено в п''яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip
-    esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв''язок «цей чип — ця адреса»
-    став видимим замість приміток збоку.'
+    Виправлено в п''яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер
+    стоїть в одному рядку з адресою `0x1000`, і зв''язок «цей чип — ця адреса» став видимим замість приміток
+    збоку.'
   title: merge-bin вимагає --chip; без нього команда падає
   match: --chip esp32 merge-bin|`--chip` тут \*\*обов.язковий\*\*|Specify the --chip argument
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli)
     та .../docs/en/esptool/basic-options.rst
-  quote: "def merge_bin_cli(ctx, addr_filename, **kwargs):\n    \"\"\"Merge multiple raw binary\
-    \ files into a single flashable file.\"\"\"\n    if ctx.obj[\"chip\"] == \"auto\":\n \
-    \       raise FatalError(\n            f\"Specify the --chip argument (choose from {',\
-    \ '.join(CHIP_LIST)}).\"\n        )\n\n(basic-options.rst)\n* Binary image generation\
-    \ commands, such as elf2image or merge-bin,\n  require the chip type to be specified.\n"
+  quote: "def merge_bin_cli(ctx, addr_filename, **kwargs):\n    \"\"\"Merge multiple raw binary files\
+    \ into a single flashable file.\"\"\"\n    if ctx.obj[\"chip\"] == \"auto\":\n        raise FatalError(\n\
+    \            f\"Specify the --chip argument (choose from {', '.join(CHIP_LIST)}).\"\n        )\n\n\
+    (basic-options.rst)\n* Binary image generation commands, such as :ref:`elf2image <elf-2-image>` or\
+    \ :ref:`merge-bin <merge-bin>`, require the chip type to be specified.\n  require the chip type to\
+    \ be specified.\n"
   method: curl raw.githubusercontent, 2026-08-26
-  note: 'Найгрубша знахідка за дев''ять проходів, і саме тому, що стосується не рідкісного
-    випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну
-    прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
+  note: 'Найгрубша знахідка за дев''ять проходів, і саме тому, що стосується не рідкісного випадку, а
+    головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована
+    команда падає на першому ж запуску з `Specify the --chip argument`.
 
-    Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin`
-    складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим
-    розбором аргументів.
+    Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає
+    файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
 
-    Виправлено в п''яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip
-    esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв''язок «цей чип — ця адреса»
-    став видимим замість приміток збоку.'
+    Виправлено в п''яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер
+    стоїть в одному рядку з адресою `0x1000`, і зв''язок «цей чип — ця адреса» став видимим замість приміток
+    збоку.'
 - nazva: idf.py merge-bin бере адреси з конфігурації проєкту
   zbih: idf\.py merge-bin|merged-binary\.bin|адрес не набирати|адреси з конфігурації
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
-  cytata: "The command ``idf.py merge-bin`` will merge the bootloader, partition table,\n\
-    the application itself, and other partitions (if there are any) according to\nthe project\
-    \ configuration and create a single binary file\n``merged-binary.[bin|hex]`` in the build\
-    \ folder, which can then be flashed later.\n\nExample usage:\n  idf.py merge-bin -o my-merged-binary.bin\
-    \ -f raw\n"
+  cytata: "The command ``idf.py merge-bin`` will merge the bootloader, partition table,\nthe application\
+    \ itself, and other partitions (if there are any) according to\nthe project configuration and create\
+    \ a single binary file\n``merged-binary.[bin|hex]`` in the build folder, which can then be flashed\
+    \ later.\n\nExample usage:\n  idf.py merge-bin -o my-merged-binary.bin -f raw\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: 'Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin`
-    із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000`
-    на S3 дає образ, який прошивається без скарг і не стартує.
+  notatka: 'Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами,
+    набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається
+    без скарг і не стартує.
 
-    `idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу
-    беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py
-    merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.'
+    `idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться
+    з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише
+    `.bin`-файли — `esptool --chip … merge-bin`.'
   title: idf.py merge-bin бере адреси з конфігурації проєкту
   match: idf\.py merge-bin|merged-binary\.bin|адрес не набирати|адреси з конфігурації
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
-  quote: "The command ``idf.py merge-bin`` will merge the bootloader, partition table,\nthe\
-    \ application itself, and other partitions (if there are any) according to\nthe project\
-    \ configuration and create a single binary file\n``merged-binary.[bin|hex]`` in the build\
-    \ folder, which can then be flashed later.\n\nExample usage:\n  idf.py merge-bin -o my-merged-binary.bin\
-    \ -f raw\n"
+  quote: "The command ``idf.py merge-bin`` will merge the bootloader, partition table,\nthe application\
+    \ itself, and other partitions (if there are any) according to\nthe project configuration and create\
+    \ a single binary file\n``merged-binary.[bin|hex]`` in the build folder, which can then be flashed\
+    \ later.\n\nExample usage:\n  idf.py merge-bin -o my-merged-binary.bin -f raw\n"
   method: curl raw.githubusercontent, 2026-08-26
-  note: 'Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin`
-    із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000`
-    на S3 дає образ, який прошивається без скарг і не стартує.
+  note: 'Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами,
+    набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається
+    без скарг і не стартує.
 
-    `idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу
-    беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py
-    merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.'
+    `idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться
+    з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише
+    `.bin`-файли — `esptool --chip … merge-bin`.'
 - nazva: Стиснення при передачі ввімкнене за замовчуванням
-  zbih: \*\*Уже ввімкнене\*\*|стиснення ввімкнене \*\*за замовчуванням\*\*|`-u` \| вимкнути
-    стиснення
+  zbih: \*\*Уже ввімкнене\*\*|стиснення ввімкнене \*\*за замовчуванням\*\*|`-u` \| вимкнути стиснення
   klas: A
-  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
-    та .../docs/en/esptool/basic-commands.rst
-  cytata: "@click.option(\n    \"--compress\",\n    \"-z\",\n    is_flag=True,\n    help=\"\
-    Compress data during transfer (default unless --no-stub is specified).\",\n)\n@click.option(\n\
-    \    \"--no-compress\",\n    \"-u\",\n    is_flag=True,\n    help=\"Disable data compression\
-    \ during transfer (default if --no-stub is specified)\",\n)\n\n(basic-commands.rst)\n\
-    By default, the serial transfer data is compressed for better performance.\nThe ``-u/--no-compress``\
-    \ option disables this behaviour.\n"
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/esptool/basic-commands.rst
+  cytata: "@click.option(\n    \"--compress\",\n    \"-z\",\n    is_flag=True,\n    help=\"Compress data\
+    \ during transfer (default unless --no-stub is specified).\",\n)\n@click.option(\n    \"--no-compress\"\
+    ,\n    \"-u\",\n    is_flag=True,\n    help=\"Disable data compression during transfer (default if\
+    \ --no-stub is specified)\",\n)\n\n(basic-commands.rst)\nBy default, the serial transfer data is compressed\
+    \ for better performance.\nThe ``-u/--no-compress`` option disables this behaviour.\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: 'Книга подавала `-z` як прапорець, що додається заради швидкості («швидше й надійніше»).
-    Насправді стиснення й так увімкнене, і в звичайній команді `-z` не змінює нічого.
+  notatka: 'Книга подавала `-z` як прапорець, що додається заради швидкості («швидше й надійніше»). Насправді
+    стиснення й так увімкнене, і в звичайній команді `-z` не змінює нічого.
 
-    Сенс він має рівно в одному випадку — разом із `--no-stub`, де стиснення типово вимкнене.
-    А це саме той випадок, який книга розбирає окремо (клони, що не приймають stub), тож уточнення
-    не академічне.
+    Сенс він має рівно в одному випадку — разом із `--no-stub`, де стиснення типово вимкнене. А це саме
+    той випадок, який книга розбирає окремо (клони, що не приймають stub), тож уточнення не академічне.
 
-    Те саме стосується `--before default-reset --after hard-reset`: книга подавала їх як «керування
-    скиданням», а це значення за замовчуванням. Таблицю прапорців замінено на ту, де перелічені
-    значення, що справді щось міняють.'
+    Те саме стосується `--before default-reset --after hard-reset`: книга подавала їх як «керування скиданням»,
+    а це значення за замовчуванням. Таблицю прапорців замінено на ту, де перелічені значення, що справді
+    щось міняють.'
   title: Стиснення при передачі ввімкнене за замовчуванням
-  match: \*\*Уже ввімкнене\*\*|стиснення ввімкнене \*\*за замовчуванням\*\*|`-u` \| вимкнути
-    стиснення
+  match: \*\*Уже ввімкнене\*\*|стиснення ввімкнене \*\*за замовчуванням\*\*|`-u` \| вимкнути стиснення
   status: verbatim
-  source: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та
-    .../docs/en/esptool/basic-commands.rst
-  quote: "@click.option(\n    \"--compress\",\n    \"-z\",\n    is_flag=True,\n    help=\"\
-    Compress data during transfer (default unless --no-stub is specified).\",\n)\n@click.option(\n\
-    \    \"--no-compress\",\n    \"-u\",\n    is_flag=True,\n    help=\"Disable data compression\
-    \ during transfer (default if --no-stub is specified)\",\n)\n\n(basic-commands.rst)\n\
-    By default, the serial transfer data is compressed for better performance.\nThe ``-u/--no-compress``\
-    \ option disables this behaviour.\n"
+  source: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/esptool/basic-commands.rst
+  quote: "@click.option(\n    \"--compress\",\n    \"-z\",\n    is_flag=True,\n    help=\"Compress data\
+    \ during transfer (default unless --no-stub is specified).\",\n)\n@click.option(\n    \"--no-compress\"\
+    ,\n    \"-u\",\n    is_flag=True,\n    help=\"Disable data compression during transfer (default if\
+    \ --no-stub is specified)\",\n)\n\n(basic-commands.rst)\nBy default, the serial transfer data is compressed\
+    \ for better performance.\nThe ``-u/--no-compress`` option disables this behaviour.\n"
   method: curl raw.githubusercontent, 2026-08-26
-  note: 'Книга подавала `-z` як прапорець, що додається заради швидкості («швидше й надійніше»).
-    Насправді стиснення й так увімкнене, і в звичайній команді `-z` не змінює нічого.
+  note: 'Книга подавала `-z` як прапорець, що додається заради швидкості («швидше й надійніше»). Насправді
+    стиснення й так увімкнене, і в звичайній команді `-z` не змінює нічого.
 
-    Сенс він має рівно в одному випадку — разом із `--no-stub`, де стиснення типово вимкнене.
-    А це саме той випадок, який книга розбирає окремо (клони, що не приймають stub), тож уточнення
-    не академічне.
+    Сенс він має рівно в одному випадку — разом із `--no-stub`, де стиснення типово вимкнене. А це саме
+    той випадок, який книга розбирає окремо (клони, що не приймають stub), тож уточнення не академічне.
 
-    Те саме стосується `--before default-reset --after hard-reset`: книга подавала їх як «керування
-    скиданням», а це значення за замовчуванням. Таблицю прапорців замінено на ту, де перелічені
-    значення, що справді щось міняють.'
+    Те саме стосується `--before default-reset --after hard-reset`: книга подавала їх як «керування скиданням»,
+    а це значення за замовчуванням. Таблицю прапорців замінено на ту, де перелічені значення, що справді
+    щось міняють.'
   sha:
   - 4fb5cfd6
   - 544b21a9
@@ -171,87 +120,82 @@
   zbih: watchdog-reset|перелічується заново|USB-Serial/JTAG
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/advanced-options.rst
-  cytata: ":not esp8266 and not esp32 and not esp32h2 and not esp32c6 and not esp32h4\n and\
-    \ not esp32e22: * ``--after watchdog-reset`` hard-resets the chip by\n triggering an internal\
-    \ watchdog reset. This is useful when the RTS control\n line is not available, especially\
-    \ in the USB-OTG and USB-Serial/JTAG modes.\n Use this if a chip is getting stuck in download\
-    \ mode when using the default\n reset method in USB-Serial/JTAG mode. Using this may cause\
-    \ the port to\n re-enumerate on Linux (e.g. ``/dev/ttyACM0`` -> ``/dev/ttyACM1``).\n"
+  cytata: ":not esp8266 and not esp32 and not esp32h2 and not esp32c6 and not esp32h4\n and not esp32e22:\
+    \ * ``--after watchdog-reset`` hard-resets the chip by\n triggering an internal watchdog reset. This\
+    \ is useful when the RTS control\n line is not available, especially in the USB-OTG and USB-Serial/JTAG\
+    \ modes.\n Use this if a chip is getting stuck in download mode when using the default\n reset method\
+    \ in USB-Serial/JTAG mode. Using this may cause the port to\n re-enumerate on Linux (e.g. ``/dev/ttyACM0``\
+    \ -> ``/dev/ttyACM1``).\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: 'Доповнення до переліку типових помилок розділу 17. Симптом «прошилося, а застосунок
-    не стартував, чип сидить у завантажувачі» книга не розбирала, хоча на платах S3 і C3 із
-    native USB він звичайний: лінії `RTS` фізично немає.
+  notatka: 'Доповнення до переліку типових помилок розділу 17. Симптом «прошилося, а застосунок не стартував,
+    чип сидить у завантажувачі» книга не розбирала, хоча на платах S3 і C3 із native USB він звичайний:
+    лінії `RTS` фізично немає.
 
-    Умова застосовності взята з самої директиви, а не вгадана: режим є на S2, S3, C3, P4,
-    C5 і новіших, і його немає на classic, C6 та H2 — саме так і записано в книзі. Побічний
-    ефект із перелічуванням порту теж названо, бо без нього читач вирішить, що плата зникла.'
+    Умова застосовності взята з самої директиви, а не вгадана: режим є на S2, S3, C3, P4, C5 і новіших,
+    і його немає на classic, C6 та H2 — саме так і записано в книзі. Побічний ефект із перелічуванням
+    порту теж названо, бо без нього читач вирішить, що плата зникла.'
   title: --after watchdog-reset для чипів із native USB
   match: watchdog-reset|перелічується заново|USB-Serial/JTAG
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/advanced-options.rst
-  quote: ":not esp8266 and not esp32 and not esp32h2 and not esp32c6 and not esp32h4\n and\
-    \ not esp32e22: * ``--after watchdog-reset`` hard-resets the chip by\n triggering an internal\
-    \ watchdog reset. This is useful when the RTS control\n line is not available, especially\
-    \ in the USB-OTG and USB-Serial/JTAG modes.\n Use this if a chip is getting stuck in download\
-    \ mode when using the default\n reset method in USB-Serial/JTAG mode. Using this may cause\
-    \ the port to\n re-enumerate on Linux (e.g. ``/dev/ttyACM0`` -> ``/dev/ttyACM1``).\n"
+  quote: ":not esp8266 and not esp32 and not esp32h2 and not esp32c6 and not esp32h4\n and not esp32e22:\
+    \ * ``--after watchdog-reset`` hard-resets the chip by\n triggering an internal watchdog reset. This\
+    \ is useful when the RTS control\n line is not available, especially in the USB-OTG and USB-Serial/JTAG\
+    \ modes.\n Use this if a chip is getting stuck in download mode when using the default\n reset method\
+    \ in USB-Serial/JTAG mode. Using this may cause the port to\n re-enumerate on Linux (e.g. ``/dev/ttyACM0``\
+    \ -> ``/dev/ttyACM1``).\n"
   method: curl raw.githubusercontent, 2026-08-26
-  note: 'Доповнення до переліку типових помилок розділу 17. Симптом «прошилося, а застосунок
-    не стартував, чип сидить у завантажувачі» книга не розбирала, хоча на платах S3 і C3 із
-    native USB він звичайний: лінії `RTS` фізично немає.
+  note: 'Доповнення до переліку типових помилок розділу 17. Симптом «прошилося, а застосунок не стартував,
+    чип сидить у завантажувачі» книга не розбирала, хоча на платах S3 і C3 із native USB він звичайний:
+    лінії `RTS` фізично немає.
 
-    Умова застосовності взята з самої директиви, а не вгадана: режим є на S2, S3, C3, P4,
-    C5 і новіших, і його немає на classic, C6 та H2 — саме так і записано в книзі. Побічний
-    ефект із перелічуванням порту теж названо, бо без нього читач вирішить, що плата зникла.'
+    Умова застосовності взята з самої директиви, а не вгадана: режим є на S2, S3, C3, P4, C5 і новіших,
+    і його немає на classic, C6 та H2 — саме так і записано в книзі. Побічний ефект із перелічуванням
+    порту теж названо, бо без нього читач вирішить, що плата зникла.'
 - nazva: Решта команд esptool і idf.py, що вживає книга, існує дослівно
   zbih: read-flash 0 ALL|chip-id\s|flash-id\s|erase-region|verify-flash|app-flash|size-components|coredump-info|coredump-debug|create-component|add-dependency|reconfigure|fullclean|espefuse
-    [^\n]{0,30}summary|`espefuse summary`|idf\.py menuconfig|`idf\.py menuconfig`|idf\.py
-    set-target|idf\.py create-project|idf\.py size\b|idf\.py openocd|idf\.py gdb\b
+    [^\n]{0,30}summary|`espefuse summary`|idf\.py menuconfig|`idf\.py menuconfig`|idf\.py set-target|idf\.py
+    create-project|idf\.py size\b|idf\.py openocd|idf\.py gdb\b
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst
-    та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс
-    idf-component-manager/idf_extensions.py
-  cytata: "esptool (з переліку команд у __init__.py і документації):\n  write-flash read-flash\
-    \ erase-flash erase-region read-mac flash-id\n  elf2image image-info merge-bin version\
-    \ verify-flash dump-mem\n  read-mem write-mem get-security-info chip-id run …\n\nidf.py\
-    \ (з ACTIONS у core_ext/serial_ext/debug_ext):\n  all(alias build) app app-flash bootloader\
-    \ clean fullclean menuconfig\n  merge-bin monitor flash erase-flash partition-table reconfigure\n\
-    \  set-target size size-components size-files python-clean read-otadata\n  efuse-summary\
-    \ … openocd gdb coredump-info coredump-debug\n\nidf-component-manager: add-dependency\
-    \ create-manifest upload-component\n  create-project-from-example\n\nПриклад із документації\
+    та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+  cytata: "esptool (з переліку команд у __init__.py і документації):\n  write-flash read-flash erase-flash\
+    \ erase-region read-mac flash-id\n  elf2image image-info merge-bin version verify-flash dump-mem\n\
+    \  read-mem write-mem get-security-info chip-id run …\n\nidf.py (з ACTIONS у core_ext/serial_ext/debug_ext):\n\
+    \  all(alias build) app app-flash bootloader clean fullclean menuconfig\n  merge-bin monitor flash\
+    \ erase-flash partition-table reconfigure\n  set-target size size-components size-files python-clean\
+    \ read-otadata\n  efuse-summary … openocd gdb coredump-info coredump-debug\n\nidf-component-manager:\
+    \ add-dependency create-manifest upload-component\n  create-project-from-example\n\nПриклад із документації\
     \ дослівно:\n  esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: 'Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні.
-    Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно
-    збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`''aliases'':
-    [''build'']` у `core_ext.py`).
+  notatka: 'Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім
+    трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається
+    з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`''aliases'': [''build'']`
+    у `core_ext.py`).
 
-    Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість
-    esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу.
-    Друге підтверджує картку К6 з іншого боку, ніж прохід 8.'
+    Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool
+    — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку
+    К6 з іншого боку, ніж прохід 8.'
   title: Решта команд esptool і idf.py, що вживає книга, існує дослівно
   match: read-flash 0 ALL|chip-id\s|flash-id\s|erase-region|verify-flash|app-flash|size-components|coredump-info|coredump-debug|create-component|add-dependency|reconfigure|fullclean|espefuse
-    [^\n]{0,30}summary|`espefuse summary`|idf\.py menuconfig|`idf\.py menuconfig`|idf\.py
-    set-target|idf\.py create-project|idf\.py size\b|idf\.py openocd|idf\.py gdb\b
+    [^\n]{0,30}summary|`espefuse summary`|idf\.py menuconfig|`idf\.py menuconfig`|idf\.py set-target|idf\.py
+    create-project|idf\.py size\b|idf\.py openocd|idf\.py gdb\b
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst
-    та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс
-    idf-component-manager/idf_extensions.py
-  quote: "esptool (з переліку команд у __init__.py і документації):\n  write-flash read-flash\
-    \ erase-flash erase-region read-mac flash-id\n  elf2image image-info merge-bin version\
-    \ verify-flash dump-mem\n  read-mem write-mem get-security-info chip-id run …\n\nidf.py\
-    \ (з ACTIONS у core_ext/serial_ext/debug_ext):\n  all(alias build) app app-flash bootloader\
-    \ clean fullclean menuconfig\n  merge-bin monitor flash erase-flash partition-table reconfigure\n\
-    \  set-target size size-components size-files python-clean read-otadata\n  efuse-summary\
-    \ … openocd gdb coredump-info coredump-debug\n\nidf-component-manager: add-dependency\
-    \ create-manifest upload-component\n  create-project-from-example\n\nПриклад із документації\
+    та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+  quote: "esptool (з переліку команд у __init__.py і документації):\n  write-flash read-flash erase-flash\
+    \ erase-region read-mac flash-id\n  elf2image image-info merge-bin version verify-flash dump-mem\n\
+    \  read-mem write-mem get-security-info chip-id run …\n\nidf.py (з ACTIONS у core_ext/serial_ext/debug_ext):\n\
+    \  all(alias build) app app-flash bootloader clean fullclean menuconfig\n  merge-bin monitor flash\
+    \ erase-flash partition-table reconfigure\n  set-target size size-components size-files python-clean\
+    \ read-otadata\n  efuse-summary … openocd gdb coredump-info coredump-debug\n\nidf-component-manager:\
+    \ add-dependency create-manifest upload-component\n  create-project-from-example\n\nПриклад із документації\
     \ дослівно:\n  esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin\n"
   method: curl raw.githubusercontent, 2026-08-26
-  note: 'Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні.
-    Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно
-    збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`''aliases'':
-    [''build'']` у `core_ext.py`).
+  note: 'Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох
+    виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом
+    документації, і `idf.py build`, що є псевдонімом до `all` (`''aliases'': [''build'']` у `core_ext.py`).
 
-    Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість
-    esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу.
-    Друге підтверджує картку К6 з іншого боку, ніж прохід 8.'
+    Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool
+    — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку
+    К6 з іншого боку, ніж прохід 8.'

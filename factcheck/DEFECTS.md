@@ -262,9 +262,32 @@ The restore also now **names every file it reverts**. A silent revert is
 indistinguishable from a tool that wrote nothing, and those are the two
 cases the harness exists to tell apart.
 
-**Held by.** `snapshot.py --zvirty` before and after every bulk change;
+**And a fourth, an hour after the third: structured data edited as
+text.** Three evidence files needed one line of a quote replaced. The
+replacement was done by string substitution on the file. A quote is a
+**multi-line YAML scalar**; substituting its first physical line left
+the second dangling, the block stopped parsing, and the registry went
+from 1366 records to **1361** — five records gone, silently.
+
+Nothing caught it. `schema.py` validates what parses, so a file that
+does not parse contributes zero violations and zero records, and both
+numbers look like success. It was noticed only because the record count
+was printed immediately after the edit and read.
+
+    text substitution   1366 → 1361, no gate fired
+    parse → modify the field → dump   1366 → 1366, verified field
+                                      by field against HEAD
+
+> Never edit structured data as text. Parse it, change the value, write
+> it back — and diff the **parsed** structures, not the file, so
+> reformatting cannot hide a content change.
+
+**Held by.** `snapshot.py --zvirty` before and after every bulk change —
+which exists, and which the author of this case did not run;
 `entry_points.py` re-reads its baseline per point and prints each
-revert.
+revert. The record count printed by any tool that loads the registry is
+the cheapest tripwire there is, and it works only if someone looks at
+it.
 
 ## 12. An inventory made from filenames
 

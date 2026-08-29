@@ -1142,7 +1142,7 @@ def status() -> int:
         print(f"  внутрішня звірка, зовнішнього підтвердження немає "
               f"(self-consistent): "
               f"{c['S']}")
-    print(f"  закрито як рішення (E): {c.get('E',0)}")
+    print(f"  закрито як рішення (no-external-signal): {c.get('E',0)}")
     print(f"  лишається (named-unreachable + unchecked + refuted): "
           f"{c.get('C',0)+c.get('F',0)+c.get('G',0)}")
     # за файлами: де найбільше незакритого
