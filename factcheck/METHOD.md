@@ -206,6 +206,13 @@ forever**. `C` says
 Confusion in the direction of `E` always reduces work — which is
 exactly why it passes so easily.
 
+**And yet the class has to exist, which is easy to forget after four
+sections of warnings about it.** `no-external-signal` is what gives the
+queue a **floor**. Without it **79 % of this book's units** would hang
+in `unchecked` for ever, and the genuine work would drown in editorial
+prose that was never going to have a source. Every danger listed above
+is the price of that floor, not an argument against it.
+
 ### Trap: class `E` holds two incompatible kinds
 
 `E` is assigned mechanically where the text carries no checkable
@@ -238,6 +245,11 @@ order made "no source exists" **not an allowed answer**, replacing it with
 an advice verdict that *requires* an explanation, while "did not find"
 requires none — because it asserts nothing. Of 45 advice verdicts, **zero**
 lacked their explanation.
+
+That rule — **an assertion must pay for itself** — held a second time in
+the other maintainer's run, at **931 of 931**. One clean result is a
+result; two, from different hands on different queues, is a property of
+the order's shape rather than a coincidence.
 
 The asymmetry is the same one as in the law about patterns: an error
 towards "a source exists" leaves the unit in the work queue, and an error
