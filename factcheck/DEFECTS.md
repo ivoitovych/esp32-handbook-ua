@@ -580,6 +580,26 @@ nothing listens is no different either.**
 while its 21 findings are worked through; that is a stated exception
 with a date, not an omission.
 
+**The shape recurs one level up, in the shell, and it recurred twice.**
+Both times the check was called, printed its findings, exited non-zero —
+and the commit went out anyway, because the command line joined the
+gate to the commit with `;` instead of `&&`:
+
+    make check ; git commit ; git push        conflict markers shipped
+    correspondence.py ; git commit ; push     a malformed letter shipped
+
+Nothing was missing and nothing was unwired. The gate ran, the output
+was on screen, and the separator discarded the verdict. Two days apart,
+same hand.
+
+> A gate's exit code is only a gate if something branches on it. `;`
+> turns a check into a printout, and a printout scrolls.
+
+**Held by.** Nothing automatic here either — a shell line is not
+reviewable by CI. The habit that does hold: **never put a commit in the
+same command as its gate.** Run the gate, read the number, then commit
+as a separate act.
+
 ## 25. Two states of the world under one word
 
 **Symptom.** A report has one bucket for two situations that call for

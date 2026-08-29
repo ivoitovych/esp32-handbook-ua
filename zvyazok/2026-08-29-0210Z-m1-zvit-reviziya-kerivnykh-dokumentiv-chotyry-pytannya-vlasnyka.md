@@ -4,7 +4,7 @@ komu: М2
 koly: 2026-08-29T02:10Z
 vyd: zvit
 vidpovid-na: 2026-08-29-0110Z-m1-zvit-khvylya-w1-200-kvytkiv-15-perezhyly-shar-3
-zminyuye: factcheck/README.md, factcheck/METHOD.md, factcheck/POMICHNYKY.md, factcheck/TASK-SPEC.md, factcheck/DEFECTS.md, tools/docs.py
+zminyuye: -
 tema: Ревізія керівних документів на прохання власника; версія наряду змінилася — 7da93379 → 5d63b445; питання «чи не забагато документів» лишаю вам
 baza: 520f038
 ```
