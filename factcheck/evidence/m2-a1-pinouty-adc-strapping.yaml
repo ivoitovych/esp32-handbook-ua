@@ -1,0 +1,172 @@
+# Партія a-pinouty: ADC-канали й strapping-піни проти паспортів.
+#
+# Твердження, що зводять кілька рядків таблиці, мають клас derived, а не
+# verbatim: цитата доводить один рядок, а твердження перелічує десять.
+# Решту рядків названо в method поіменно, щоб звірка була відтворною.
+
+- nazva: 'T-A-021: 5 · Обмеження → **strapping**'
+  zbih: 5\s+·\s+Обмеження\s+→\s+\*\*strapping\*\*
+  klas: A
+  dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+  cytata: Default Configuration of Strapping Pins
+  sposib: Datasheet taken from the cache 2026-08-29 and the quote checked against it as a
+    substring (layer 3). `verbatim` means the document was obtained and the quote is exact
+    — not that a maintainer read the passage and agreed.
+  notatka: '2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+
+    Табл. 3-1 паспорта перелічує strapping-піни поіменно: GPIO0, GPIO2, MTDI, GPIO5. GPIO5
+    у переліку є, з типовою підтяжкою вгору.'
+  sha:
+  - 72e7b29e
+  title: 'T-A-021: 5 · Обмеження → **strapping**'
+  match: 5\s+·\s+Обмеження\s+→\s+\*\*strapping\*\*
+  status: verbatim
+  source: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+  quote: Default Configuration of Strapping Pins
+  method: Datasheet taken from the cache 2026-08-29 and the quote checked against it as a
+    substring (layer 3). `verbatim` means the document was obtained and the quote is exact
+    — not that a maintainer read the passage and agreed.
+  note: '2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+
+    Табл. 3-1 паспорта перелічує strapping-піни поіменно: GPIO0, GPIO2, MTDI, GPIO5. GPIO5
+    у переліку є, з типовою підтяжкою вгору.'
+- nazva: 'T-A-078: 2 · Обмеження → **strapping**'
+  zbih: null
+  klas: A
+  dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+  cytata: Default Configuration of Strapping Pins
+  sposib: Datasheet taken from the cache 2026-08-29 and the quote checked against it as a
+    substring (layer 3). `verbatim` means the document was obtained and the quote is exact
+    — not that a maintainer read the passage and agreed.
+  notatka: '2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+
+    Та сама табл. 3-1: GPIO2 у переліку strapping-пінів, типова підтяжка вниз.'
+  sha:
+  - e5de6037
+  title: 'T-A-078: 2 · Обмеження → **strapping**'
+  match: null
+  status: verbatim
+  source: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+  quote: Default Configuration of Strapping Pins
+  method: Datasheet taken from the cache 2026-08-29 and the quote checked against it as a
+    substring (layer 3). `verbatim` means the document was obtained and the quote is exact
+    — not that a maintainer read the passage and agreed.
+  note: '2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+
+    Та сама табл. 3-1: GPIO2 у переліку strapping-пінів, типова підтяжка вниз.'
+- nazva: 'T-A-053: 32, 33 · Примітка → **ADC1 — працює при Wi-Fi**'
+  zbih: 32,\s+33\s+·\s+Примітка
+  klas: B
+  dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+  cytata: GPIO32, ADC1_CH4
+  sposib: Datasheet taken from the cache 2026-08-29 and the quote checked against it as a
+    substring (layer 3). `verbatim` means the document was obtained and the quote is exact
+    — not that a maintainer read the passage and agreed.
+  notatka: '2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+
+    Паспорт, табл. 2-2: GPIO32 -> ADC1_CH4, GPIO33 -> ADC1_CH5 (обидва рядки в документі дослівно).
+    Друга половина твердження — «працює при Wi-Fi» — з ESP-IDF, docs/.../adc_oneshot.rst:
+    «ADC2 is also used by Wi-Fi». Тобто Wi-Fi займає ADC2, а не ADC1; для ADC1 обмеження немає.
+    Клас derived: два документи, і жоден не каже цього одним рядком.'
+  sha:
+  - f2882492
+  title: 'T-A-053: 32, 33 · Примітка → **ADC1 — працює при Wi-Fi**'
+  match: 32,\s+33\s+·\s+Примітка
+  status: derived
+  source: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+  quote: GPIO32, ADC1_CH4
+  method: Datasheet taken from the cache 2026-08-29 and the quote checked against it as a
+    substring (layer 3). `verbatim` means the document was obtained and the quote is exact
+    — not that a maintainer read the passage and agreed.
+  note: '2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+
+    Паспорт, табл. 2-2: GPIO32 -> ADC1_CH4, GPIO33 -> ADC1_CH5 (обидва рядки в документі дослівно).
+    Друга половина твердження — «працює при Wi-Fi» — з ESP-IDF, docs/.../adc_oneshot.rst:
+    «ADC2 is also used by Wi-Fi». Тобто Wi-Fi займає ADC2, а не ADC1; для ADC1 обмеження немає.
+    Клас derived: два документи, і жоден не каже цього одним рядком.'
+- nazva: 'T-A-058: **ADC2** (не працює при Wi-Fi): 0, 2, 4, 12, 13, 14, 15, 25, 26, 2'
+  zbih: \*\*ADC2\*\*\s+\(не\s+працює
+  klas: B
+  dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+  cytata: GPIO4, ADC2_CH0
+  sposib: Datasheet taken from the cache 2026-08-29 and the quote checked against it as a
+    substring (layer 3). `verbatim` means the document was obtained and the quote is exact
+    — not that a maintainer read the passage and agreed.
+  notatka: '2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+
+    Перелік книги — 0, 2, 4, 12, 13, 14, 15, 25, 26, 27 — це РІВНО ті десять GPIO, які паспорт
+    (табл. 2-2) позначає каналами ADC2: GPIO0/CH1, GPIO2/CH2, GPIO4/CH0, GPIO12/CH5, GPIO13/CH4,
+    GPIO14/CH6, GPIO15/CH3, GPIO25/CH8, GPIO26/CH9, GPIO27/CH7. Жодного зайвого, жодного пропущеного.
+    Застереження «не працює при Wi-Fi» — з adc_oneshot.rst: «ADC2 is also used by Wi-Fi».
+    Клас derived: твердження зводить десять рядків таблиці й один рядок іншого документа.'
+  sha:
+  - 577c3369
+  title: 'T-A-058: **ADC2** (не працює при Wi-Fi): 0, 2, 4, 12, 13, 14, 15, 25, 26, 2'
+  match: \*\*ADC2\*\*\s+\(не\s+працює
+  status: derived
+  source: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+  quote: GPIO4, ADC2_CH0
+  method: Datasheet taken from the cache 2026-08-29 and the quote checked against it as a
+    substring (layer 3). `verbatim` means the document was obtained and the quote is exact
+    — not that a maintainer read the passage and agreed.
+  note: '2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+
+    Перелік книги — 0, 2, 4, 12, 13, 14, 15, 25, 26, 27 — це РІВНО ті десять GPIO, які паспорт
+    (табл. 2-2) позначає каналами ADC2: GPIO0/CH1, GPIO2/CH2, GPIO4/CH0, GPIO12/CH5, GPIO13/CH4,
+    GPIO14/CH6, GPIO15/CH3, GPIO25/CH8, GPIO26/CH9, GPIO27/CH7. Жодного зайвого, жодного пропущеного.
+    Застереження «не працює при Wi-Fi» — з adc_oneshot.rst: «ADC2 is also used by Wi-Fi».
+    Клас derived: твердження зводить десять рядків таблиці й один рядок іншого документа.'
+- nazva: 'T-A-087: 0–4 · Обмеження → ADC1'
+  zbih: 0–4\s+·\s+Обмеження
+  klas: B
+  dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
+  cytata: ADC1_CH4
+  sposib: Datasheet taken from the cache 2026-08-29 and the quote checked against it as a
+    substring (layer 3). `verbatim` means the document was obtained and the quote is exact
+    — not that a maintainer read the passage and agreed.
+  notatka: '2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+
+    Паспорт ESP32-C3, табл. розпіновки: GPIO0/ADC1_CH0, GPIO1/CH1, GPIO2/CH2, GPIO3/CH3, GPIO4/CH4
+    — тобто рівно GPIO0…4 і жодного більше. Клас derived: пʼять рядків таблиці.'
+  sha:
+  - 3e05c152
+  title: 'T-A-087: 0–4 · Обмеження → ADC1'
+  match: 0–4\s+·\s+Обмеження
+  status: derived
+  source: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
+  quote: ADC1_CH4
+  method: Datasheet taken from the cache 2026-08-29 and the quote checked against it as a
+    substring (layer 3). `verbatim` means the document was obtained and the quote is exact
+    — not that a maintainer read the passage and agreed.
+  note: '2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+
+    Паспорт ESP32-C3, табл. розпіновки: GPIO0/ADC1_CH0, GPIO1/CH1, GPIO2/CH2, GPIO3/CH3, GPIO4/CH4
+    — тобто рівно GPIO0…4 і жодного більше. Клас derived: пʼять рядків таблиці.'
+- nazva: 'T-A-101: UART0 TX / RX · [[C3]] → 21 / 20'
+  zbih: UART0\s+TX\s+/\s+RX\s+·\s+\[\[C3\]\]
+  klas: B
+  dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
+  cytata: 'GPIO20, GPIO21 : UART0 interface.'
+  sposib: Datasheet taken from the cache 2026-08-29 and the quote checked against it as a
+    substring (layer 3). `verbatim` means the document was obtained and the quote is exact
+    — not that a maintainer read the passage and agreed.
+  notatka: '2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+
+    Паспорт ESP32-C3 називає пару дослівно; напрямок дає таблиця розпіновки, де GPIO20 підписано
+    U0RXD (вивід 27), а вивід 28 — U0TXD, тобто GPIO21. Отже TX = 21, RX = 20, як у книзі.
+    Клас derived: сама пара дослівна, а розподіл TX/RX — із другої таблиці.'
+  sha:
+  - ab72153b
+  title: 'T-A-101: UART0 TX / RX · [[C3]] → 21 / 20'
+  match: UART0\s+TX\s+/\s+RX\s+·\s+\[\[C3\]\]
+  status: derived
+  source: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
+  quote: 'GPIO20, GPIO21 : UART0 interface.'
+  method: Datasheet taken from the cache 2026-08-29 and the quote checked against it as a
+    substring (layer 3). `verbatim` means the document was obtained and the quote is exact
+    — not that a maintainer read the passage and agreed.
+  note: '2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+
+    Паспорт ESP32-C3 називає пару дослівно; напрямок дає таблиця розпіновки, де GPIO20 підписано
+    U0RXD (вивід 27), а вивід 28 — U0TXD, тобто GPIO21. Отже TX = 21, RX = 20, як у книзі.
+    Клас derived: сама пара дослівна, а розподіл TX/RX — із другої таблиці.'
