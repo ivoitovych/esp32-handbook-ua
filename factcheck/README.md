@@ -26,16 +26,16 @@ factcheck/
     MEASURE-NO-SIGNAL.md · MEASURE-UNCHECKED.md · SWEEP-NO-SIGNAL.md
     BOOK-VS-SOURCES.md · BRIEF-SAMPLE.md · BRIEF-QUOTES.md · BRIEF-LEADS.md
 
-  history/  завершене; числа заморожені, не редагується
-    WAVE-W1.md · LESSONS-M2.md · TO-VERIFY.md
-    ARCHITECTURE-M2.md · SOURCES-M2.md · NETWORK-M2.md
-    TO-VERIFY-M2.md · REFUTED-M2.md
+  archive/  відпрацьоване; нічого не видаляють і не перекладають
+    history/  8 заморожених реєстрів — числа, на яких стоять звіти
+    runs/     11 тек прогонів: хвилі, досліди, проби, наряди
+    orders/   виконані наряди
 
   ДАНІ
     evidence/*.yaml    самі докази: джерело, цитата, взірець, стан
     manual/ dodatky/ kartky/ inserts/   картки, паралельно до книги
     triage/            розбір одиниць за родом
-    runs/              усе, що лишили прогони: наряди, відповіді, досліди
+    runs/              куди пише НАСТУПНИЙ прогін; порожня навмисне
     queues/            входи наступних нарядів
     snapshots/         прив'язки до й після переїздів
     archive/           заморожене
