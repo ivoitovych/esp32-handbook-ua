@@ -73,7 +73,10 @@ FOUNDATION = ["METHOD.md", "REPORT.md"]
 
 # Заморожене: описує стан на свою дату. Рід 26 — перейменування (чи тут
 # переклад) переписує запис, чиїм предметом був стан до нього.
-FROZEN_DIRS = {"history", "archive", "runs", "snapshots", "triage"}
+FROZEN_DIRS = {"history", "archive", "runs", "snapshots", "triage",
+               # Кеш — чужі документи. Їхня мова не наша справа, і
+               # українськомовне джерело в кеші не є нашим боргом.
+               "source-cache"}
 
 # Дзеркала книги: імена й текст ідуть від книги, книга українська.
 KNYHA = {"manual", "dodatky", "kartky", "inserts", "book"}

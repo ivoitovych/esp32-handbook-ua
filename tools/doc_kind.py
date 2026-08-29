@@ -127,7 +127,12 @@ def hto_pyshe() -> dict[str, set[str]]:
 # і не є документами супровідника.
 # Не документи супровідника: картки (породжує `sketch`), наряди й
 # відповіді прогонів (`runs/`), і заморожений `archive/`.
-NE_DOKUMENTY = {"manual", "dodatky", "kartky", "inserts", "runs", "archive"}
+# `source-cache` — чужі документи, а не наші. Вимагати від
+# `f3f48735-README.md` з ESP-IDF позначки роду означало б вимагати, щоб
+# ми правили чужий текст; а рід «канонічний» на завантаженій копії був
+# би прямою неправдою про те, хто ним володіє.
+NE_DOKUMENTY = {"manual", "dodatky", "kartky", "inserts", "runs", "archive",
+                "source-cache"}
 
 
 def dokumenty() -> list:

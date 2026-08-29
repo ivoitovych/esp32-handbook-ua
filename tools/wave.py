@@ -46,7 +46,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
-KESH = ROOT / "source-cache"
+KESH = ROOT / "factcheck" / "source-cache"
 NEZVIRENI = "CEFGL"
 
 BLOKY = ["ORIENTATION", "VERBATIM", "HONEST-MISS", "NETWORK", "STUB",

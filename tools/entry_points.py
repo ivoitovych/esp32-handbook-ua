@@ -171,9 +171,9 @@ def work_copy():
             if latka.strip():
                 subprocess.run(["git", "apply", "-"], cwd=derevo,
                                input=latka, text=True, check=True)
-            kesh = ROOT / "source-cache"
+            kesh = ROOT / "factcheck" / "source-cache"
             if kesh.is_dir():
-                cil = derevo / "source-cache"
+                cil = derevo / "factcheck" / "source-cache"
                 if cil.exists():
                     shutil.rmtree(cil)
                 cil.symlink_to(kesh)

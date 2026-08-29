@@ -5,8 +5,8 @@
 відкрите. Качати його наново на кожен запис — найдорожча частина
 фактчекінгу, і саме вона гальмує роботу вдвох.
 
-Що робить. Кладе завантажене в `source-cache/`, рахує sha256 і пише
-рядок у `source-cache/MANIFEST.md`: URL, ім'я, розмір, хеш, дата.
+Що робить. Кладе завантажене в `factcheck/source-cache/`, рахує sha256 і пише
+рядок у `factcheck/source-cache/MANIFEST.md`: URL, ім'я, розмір, хеш, дата.
 
     tools/cache.py <URL> [ім'я]   завантажити й записати в маніфест
     tools/cache.py --list         що вже є
@@ -47,7 +47,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-KESH = ROOT / "source-cache"
+KESH = ROOT / "factcheck" / "source-cache"
 MANIFEST = KESH / "MANIFEST.md"
 MEZHA_GB = 1.0
 
@@ -351,7 +351,7 @@ def vidtvornist() -> int:
                 continue
             d = " ".join(str(r.get("source") or r.get("source") or "").split())
             fajly = [x.split("-", 1)[1] if re.match(r"^[0-9a-f]{8}-", x) else x
-                     for x in re.findall(r"source-cache/([\w.-]+)", d)]
+                     for x in re.findall(r"(?:factcheck/)?source-cache/([\w.-]+)", d)]
             u = re.match(r"(https?://[^\s,;)]+)", d)
             if fajly:
                 key = ("відтворно: файл у маніфесті"

@@ -55,7 +55,7 @@ import sys
 import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-KESH = ROOT / "source-cache"
+KESH = ROOT / "factcheck" / "source-cache"
 sys.path.insert(0, str(ROOT / "tools"))
 
 KNYHA = re.compile(

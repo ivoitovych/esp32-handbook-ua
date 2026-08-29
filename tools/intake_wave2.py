@@ -10,7 +10,7 @@
 
 Саме ця перевірка робить наряд чесним, а не заборони в його тексті.
 Переписати текст книги назад у `cytata` тепер не спрацює: у
-`source-cache/ds18b20.pdf` тексту книги немає. Підтвердити можна
+`factcheck/source-cache/ds18b20.pdf` тексту книги немає. Підтвердити можна
 лише те, що справді відкрив.
 
 Звірка нежорстка рівно в тому, у чому винен видобувач тексту з PDF:
@@ -24,7 +24,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-KESH = ROOT / "source-cache"
+KESH = ROOT / "factcheck" / "source-cache"
 sys.path.insert(0, str(ROOT / "tools"))
 
 import yaml
@@ -50,7 +50,7 @@ def normal(s: str) -> str:
 
 
 def tekst_fayla(imya: str) -> str | None:
-    # Помічник пише то `ds18b20.pdf`, то `source-cache/ds18b20.pdf` —
+    # Помічник пише то `ds18b20.pdf`, то `factcheck/source-cache/ds18b20.pdf` —
     # у наряді ім'я стоїть із текою. Обидва варіанти правильні по суті,
     # і відхиляти за це означало б рахувати чесну роботу за брехню.
     imya = imya.strip().split("/")[-1]

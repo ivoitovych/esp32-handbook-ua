@@ -6,7 +6,7 @@
 `tools/cache.py` перевіряє, що завантажене — справжній PDF, і цього
 досить проти заглушки чи сторінки помилки. Але не проти цього:
 
-    source-cache/bh1750.pdf
+    factcheck/source-cache/bh1750.pdf
       ← https://www.pololu.com/file/0J1112/BH1750FVI.pdf
       = схема A-Star 32U4 (піни PE6/INT6/AIN0 — це ATmega32U4)
 
@@ -49,7 +49,7 @@ def varianty(imya: str) -> set[str]:
 
 
 def main(argv: list[str]) -> int:
-    kesh = Path(argv[1]) if len(argv) > 1 else ROOT / "source-cache"
+    kesh = Path(argv[1]) if len(argv) > 1 else ROOT / "factcheck" / "source-cache"
     pidozr = []
     vsyoho = 0
     for p in sorted(kesh.glob("*.pdf")):
