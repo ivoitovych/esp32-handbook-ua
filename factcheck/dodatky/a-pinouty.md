@@ -503,7 +503,7 @@
 
 ---
 
-<!-- fc id:T-A-012 sha:e5de6037 src:dodatky/a-pinouty.md:19 klas:F -->
+<!-- fc id:T-A-012 sha:e5de6037 src:dodatky/a-pinouty.md:19 klas:A -->
 ### T-A-012 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -548,7 +548,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+- **Дослівно з джерела:**
+  > Default Configuration of Strapping Pins
+- **Спосіб і дата:** Datasheet taken from the cache 2026-08-29 and the quote checked against it as a substring (layer 3). `verbatim` means the document was obtained and the quote is exact — not that a maintainer read the passage and agreed.
+- **Нотатка:** 2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+Та сама табл. 3-1: GPIO2 у переліку strapping-пінів, типова підтяжка вниз.
+- **Прохід:** m2-a1-pinouty-adc-strapping
 
 ---
 
@@ -956,7 +963,7 @@
 
 ---
 
-<!-- fc id:T-A-021 sha:72e7b29e src:dodatky/a-pinouty.md:22 klas:F -->
+<!-- fc id:T-A-021 sha:72e7b29e src:dodatky/a-pinouty.md:22 klas:A -->
 ### T-A-021 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1001,7 +1008,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+- **Дослівно з джерела:**
+  > Default Configuration of Strapping Pins
+- **Спосіб і дата:** Datasheet taken from the cache 2026-08-29 and the quote checked against it as a substring (layer 3). `verbatim` means the document was obtained and the quote is exact — not that a maintainer read the passage and agreed.
+- **Нотатка:** 2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+Табл. 3-1 паспорта перелічує strapping-піни поіменно: GPIO0, GPIO2, MTDI, GPIO5. GPIO5 у переліку є, з типовою підтяжкою вгору.
+- **Прохід:** m2-a1-pinouty-adc-strapping
 
 ---
 
@@ -2658,7 +2672,7 @@
 
 ---
 
-<!-- fc id:T-A-053 sha:f2882492 src:dodatky/a-pinouty.md:35 klas:F -->
+<!-- fc id:T-A-053 sha:f2882492 src:dodatky/a-pinouty.md:35 klas:B -->
 ### T-A-053 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -2703,7 +2717,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+- **Дослівно з джерела:**
+  > GPIO32, ADC1_CH4
+- **Спосіб і дата:** Datasheet taken from the cache 2026-08-29 and the quote checked against it as a substring (layer 3). `verbatim` means the document was obtained and the quote is exact — not that a maintainer read the passage and agreed.
+- **Нотатка:** 2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+Паспорт, табл. 2-2: GPIO32 -> ADC1_CH4, GPIO33 -> ADC1_CH5 (обидва рядки в документі дослівно). Друга половина твердження — «працює при Wi-Fi» — з ESP-IDF, docs/.../adc_oneshot.rst: «ADC2 is also used by Wi-Fi». Тобто Wi-Fi займає ADC2, а не ADC1; для ADC1 обмеження немає. Клас derived: два документи, і жоден не каже цього одним рядком.
+- **Прохід:** m2-a1-pinouty-adc-strapping
 
 ---
 
@@ -2865,7 +2886,7 @@
 
 ---
 
-<!-- fc id:T-A-058 sha:577c3369 src:dodatky/a-pinouty.md:42 klas:F -->
+<!-- fc id:T-A-058 sha:577c3369 src:dodatky/a-pinouty.md:42 klas:B -->
 ### T-A-058 · proza · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -2883,7 +2904,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+- **Дослівно з джерела:**
+  > GPIO4, ADC2_CH0
+- **Спосіб і дата:** Datasheet taken from the cache 2026-08-29 and the quote checked against it as a substring (layer 3). `verbatim` means the document was obtained and the quote is exact — not that a maintainer read the passage and agreed.
+- **Нотатка:** 2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+Перелік книги — 0, 2, 4, 12, 13, 14, 15, 25, 26, 27 — це РІВНО ті десять GPIO, які паспорт (табл. 2-2) позначає каналами ADC2: GPIO0/CH1, GPIO2/CH2, GPIO4/CH0, GPIO12/CH5, GPIO13/CH4, GPIO14/CH6, GPIO15/CH3, GPIO25/CH8, GPIO26/CH9, GPIO27/CH7. Жодного зайвого, жодного пропущеного. Застереження «не працює при Wi-Fi» — з adc_oneshot.rst: «ADC2 is also used by Wi-Fi». Клас derived: твердження зводить десять рядків таблиці й один рядок іншого документа.
+- **Прохід:** m2-a1-pinouty-adc-strapping
 
 ---
 
@@ -3639,7 +3667,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 ---
 
-<!-- fc id:T-A-078 sha:e5de6037 src:dodatky/a-pinouty.md:69 klas:F -->
+<!-- fc id:T-A-078 sha:e5de6037 src:dodatky/a-pinouty.md:69 klas:A -->
 ### T-A-078 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -3684,7 +3712,14 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+- **Дослівно з джерела:**
+  > Default Configuration of Strapping Pins
+- **Спосіб і дата:** Datasheet taken from the cache 2026-08-29 and the quote checked against it as a substring (layer 3). `verbatim` means the document was obtained and the quote is exact — not that a maintainer read the passage and agreed.
+- **Нотатка:** 2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+Та сама табл. 3-1: GPIO2 у переліку strapping-пінів, типова підтяжка вниз.
+- **Прохід:** m2-a1-pinouty-adc-strapping
 
 ---
 
@@ -4011,7 +4046,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 ---
 
-<!-- fc id:T-A-087 sha:3e05c152 src:dodatky/a-pinouty.md:74 klas:F -->
+<!-- fc id:T-A-087 sha:3e05c152 src:dodatky/a-pinouty.md:74 klas:B -->
 ### T-A-087 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -4043,7 +4078,14 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
+- **Дослівно з джерела:**
+  > ADC1_CH4
+- **Спосіб і дата:** Datasheet taken from the cache 2026-08-29 and the quote checked against it as a substring (layer 3). `verbatim` means the document was obtained and the quote is exact — not that a maintainer read the passage and agreed.
+- **Нотатка:** 2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+Паспорт ESP32-C3, табл. розпіновки: GPIO0/ADC1_CH0, GPIO1/CH1, GPIO2/CH2, GPIO3/CH3, GPIO4/CH4 — тобто рівно GPIO0…4 і жодного більше. Клас derived: пʼять рядків таблиці.
+- **Прохід:** m2-a1-pinouty-adc-strapping
 
 ---
 
@@ -4502,7 +4544,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 ---
 
-<!-- fc id:T-A-101 sha:ab72153b src:dodatky/a-pinouty.md:103 klas:F -->
+<!-- fc id:T-A-101 sha:ab72153b src:dodatky/a-pinouty.md:103 klas:B -->
 ### T-A-101 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -4533,7 +4575,14 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
+- **Дослівно з джерела:**
+  > GPIO20, GPIO21 : UART0 interface.
+- **Спосіб і дата:** Datasheet taken from the cache 2026-08-29 and the quote checked against it as a substring (layer 3). `verbatim` means the document was obtained and the quote is exact — not that a maintainer read the passage and agreed.
+- **Нотатка:** 2026-08-29. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+Паспорт ESP32-C3 називає пару дослівно; напрямок дає таблиця розпіновки, де GPIO20 підписано U0RXD (вивід 27), а вивід 28 — U0TXD, тобто GPIO21. Отже TX = 21, RX = 20, як у книзі. Клас derived: сама пара дослівна, а розподіл TX/RX — із другої таблиці.
+- **Прохід:** m2-a1-pinouty-adc-strapping
 
 ---
 
