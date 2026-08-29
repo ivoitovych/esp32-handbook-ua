@@ -59,7 +59,7 @@ RE_POZNAKA = re.compile(
 ISTORYCHNI = {
     "ARKHITEKTURA-m2.md", "DZHERELA-m2.md", "LESSONS-M2.md", "MEREZHA-m2.md",
     "PEREVIRYTY-m2.md", "SPROSTOVANE-m2.md", "TO-VERIFY.md",
-    "WORK-ORDER-EXAMPLE.md", "MEASURE-UNCHECKED.md",
+    "WORK-ORDER-EXAMPLE.md", "MEASURE-UNCHECKED.md", "WAVE-W1.md",
 }
 
 # Позначка англійською навмисно. Половина керівних документів уже

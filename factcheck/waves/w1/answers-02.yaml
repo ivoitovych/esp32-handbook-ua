@@ -1,0 +1,120 @@
+- unit: T-49-003
+  verdict: not_found
+  source: source-cache/spi_master.rst
+  quote: |
+    A signal bus, common to all Devices connected to one Host. In general, a bus includes the following lines: MISO, MOSI, SCLK, one or more CS lines, and, optionally, QUADWP and QUADHD.
+  comment: Document lists basic signals (MISO, MOSI, SCLK, CS) but does not explicitly state SPI has four lines.
+- unit: T-17-147
+  verdict: not_found
+  source: source-cache/fatal-errors.rst
+  quote: |
+    In certain situations, the execution of the program can not be continued in a well-defined way.
+  comment: Document covers fatal errors and panic handling, not reset modes or RTS signal behavior on specific chips.
+- unit: T-43-036
+  verdict: not_found
+  source: source-cache/spi_master.rst
+  quote: |
+    A signal bus, common to all Devices connected to one Host. In general, a bus includes the following lines: MISO, MOSI, SCLK, one or more CS lines, and, optionally, QUADWP and QUADHD.
+  comment: Document describes SPI bus architecture but does not mention DIO0 or module-specific reset signals for RF modules.
+- unit: T-11-103
+  verdict: not_found
+  source: source-cache/twai.rst
+  quote: |
+    This document introduces the features of the Two-Wire Automotive Interface (TWAI) controller driver in ESP-IDF.
+  comment: Document is ESP-IDF TWAI driver reference; does not discuss Arduino availability or third-party wrappers.
+- unit: T-K15-034
+  verdict: not_found
+  source: source-cache/a4c4a980-nvs_flash.rst
+  quote: |
+    Non-volatile storage (NVS) library is designed to store key-value pairs in flash.
+  comment: Document describes NVS storage mechanism but does not address device identity, serial numbers, or cryptographic keys.
+- unit: T-49-057
+  verdict: not_found
+  source: source-cache/44879c97-external-ram.rst
+  quote: |
+    {IDF_TARGET_NAME} has a few hundred kilobytes of internal RAM, residing on the same die as the rest of the chip components. It can be insufficient for some purposes.
+  comment: Document is technical reference for PSRAM configuration; does not address use cases for cameras, audio, or SD cards.
+- unit: T-Z-043
+  verdict: not_found
+  source: source-cache/basic-commands.rst
+  quote: |
+    To erase the entire flash chip (all data replaced with 0xFF bytes): esptool erase-flash
+  comment: Document contains erase-flash command documentation but not handbook index entry with page numbers.
+- unit: T-09-081
+  verdict: not_found
+  source: source-cache/basic-options.rst
+  quote: |
+    The serial port is selected using the -p option, like -p /dev/ttyUSB0 (Linux and macOS) or -p COM1 (Windows).
+  comment: Document discusses port selection but not the issue of port being held by another program.
+- unit: T-B-058
+  verdict: not_found
+  source: source-cache/c61f0b5c-esp8266.py
+  quote: |
+    XTAL_CLK_DIVIDER = 2
+  comment: File is Python source code for ESP8266 ROM loader implementation; does not contain documentation about baud rates or logging.
+- unit: T-04-109
+  verdict: not_found
+  source: source-cache/dac.rst
+  quote: |
+    {IDF_TARGET_NAME} has two 8-bit DAC (digital to analog converter) channels respectively connected to {IDF_TARGET_DAC_CH_1} (Channel 1) and {IDF_TARGET_DAC_CH_2} (Channel 2).
+  comment: Document describes DAC features but does not explicitly state which chips lack DAC support.
+- unit: T-B-145
+  verdict: not_found
+  source: source-cache/adc_oneshot.rst
+  quote: |
+    To do further calibration to convert the ADC raw result to voltage in mV, please refer to calibration doc :doc:`adc_calibration`.
+  comment: Document mentions calibration but does not explicitly state that ADC non-linearity is caused by lack of calibration.
+- unit: T-A-121
+  verdict: not_found
+  source: source-cache/spi_master.rst
+  quote: |
+    If at least one signal is routed through the GPIO matrix, then all signals will be routed through it. The GPIO matrix introduces flexibility of routing but also brings the following disadvantages: Increases the input delay of the MISO signal, which makes MISO setup time violations more likely. If SPI needs to operate at high speeds, use dedicated IO_MUX pins.
+  comment: Document discusses GPIO matrix impact on SPI but does not compare with I²C and UART protocols.
+- unit: T-01-032
+  verdict: not_found
+  source: source-cache/spi_master.rst
+  quote: |
+    The example code for the SPI Master driver can be found in the :example:`peripherals/spi_master` directory of ESP-IDF examples.
+  comment: SPI technical reference does not address use cases or recommendations for external ADC via SPI for high-precision measurements.
+- unit: T-B-147
+  verdict: not_found
+  source: source-cache/adc_oneshot.rst
+  quote: |
+    The ADC conversion results read from this function are raw data. To calculate the voltage based on the ADC raw results, this formula can be used: Vout = Dout * Vmax / Dmax
+  comment: Document describes ADC operation but does not explicitly state that ADC is non-linear.
+- unit: T-21-010
+  verdict: not_found
+  source: source-cache/bootloader.rst
+  quote: |
+    ESP-IDF second stage bootloader is located at the address {IDF_TARGET_CONFIG_BOOTLOADER_OFFSET_IN_FLASH} in the flash.
+  comment: Document describes bootloader function and configuration but not the process of manually building/flashing from pre-made .bin files.
+- unit: T-18-051
+  verdict: not_found
+  source: source-cache/a4c4a980-nvs_flash.rst
+  quote: |
+    NVS Partition Generator Utility helps generate NVS partition binary files which can be flashed separately on a dedicated partition via a flashing utility.
+  comment: Document covers NVS functionality and partition generation but not mass production scenarios.
+- unit: T-36-113
+  verdict: not_found
+  source: source-cache/spi_master.rst
+  quote: |
+    The SPI Master driver governs the communications between Hosts and Devices.
+  comment: SPI technical reference does not contain use case recommendations for color displays, memory cards, or radio modules.
+- unit: T-21-018
+  verdict: not_found
+  source: source-cache/bootloader.rst
+  quote: |
+    ESP-IDF second stage bootloader is located at the address {IDF_TARGET_CONFIG_BOOTLOADER_OFFSET_IN_FLASH} in the flash.
+  comment: Bootloader document does not discuss --chip option role in setting bootloader addresses for image merging.
+- unit: T-17-125
+  verdict: not_found
+  source: source-cache/idf-monitor.rst
+  quote: |
+    IDF Monitor uses the esp-idf-monitor_ package as a serial terminal program which relays serial data to and from the target device's serial port.
+  comment: IDF Monitor documentation does not discuss ports being held by other programs like Arduino IDE or screen.
+- unit: T-29-019
+  verdict: not_found
+  source: source-cache/idf-monitor.rst
+  quote: |
+    To prevent this issue, make sure to close the IDF Monitor properly before exiting the terminal, or consider using an alternative USB-to-UART bridge.
+  comment: IDF Monitor documentation discusses closing the monitor and serial port management but does not contain the specific troubleshooting sequence for connection failures (manual BOOT+EN entry, baud rate reduction, --no-stub flag, strapping pin configuration, hub-free connection).

@@ -1,0 +1,120 @@
+- unit: T-57-008
+  verdict: not_found
+  source: source-cache/5df69a15-sleep_modes.rst
+  quote: |
+    Document contains only technical details on sleep modes, wakeup sources, and power-down options.
+  comment: Claim about power sources (network, battery, sun) not found in any of the three candidate sleep_modes documents.
+- unit: T-27-069
+  verdict: confirmed
+  source: source-cache/41cecd4f-fatal-errors.rst
+  quote: |
+    This will print register values at the point of the exception, print the backtrace, and restart the chip. If the Core Dump feature is enabled, then the system state (task stacks and registers) will be dumped to either Flash or UART, for later analysis.
+  comment: Document confirms panic is diagnosed using both backtrace and core dump features.
+- unit: T-23-018
+  verdict: not_found
+  source: source-cache/776c3ac3-esp32c3.inc
+  quote: |
+    The document contains only GPIO pin configuration details for ESP32-C3.
+  comment: Candidate documents are GPIO pin references, not module naming documentation. Claim about ESP32-C3-MINI-1 module mapping not found.
+- unit: T-62-116
+  verdict: not_found
+  source: source-cache/41cecd4f-fatal-errors.rst
+  quote: |
+    Document discusses watchdog timeouts and panic handling, not relay control failure modes.
+  comment: Claim about watchdog reset behavior in relay control scenarios not found in fatal-errors documentation.
+- unit: T-62-046
+  verdict: not_found
+  source: source-cache/4ddc5239-gpio.rst
+  quote: |
+    Document contains only GPIO configuration and API reference documentation.
+  comment: Claim about GPIO input not working when chip hangs not found in GPIO configuration documentation.
+- unit: T-04-049
+  verdict: not_found
+  source: source-cache/66dc1dae-adc_oneshot.rst
+  quote: |
+    Document is technical API reference for ADC oneshot mode driver.
+  comment: No statement about ADC being in section 33 of handbook found in technical documentation.
+- unit: T-02-140
+  verdict: confirmed
+  source: source-cache/14fb0872-configure-builtin-jtag.rst
+  quote: |
+    {IDF_TARGET_NAME} has built-in JTAG circuitry and can be debugged without any additional chip.
+  comment: Document confirms debugging without external adapter is possible due to built-in USB-JTAG.
+- unit: T-04-010
+  verdict: not_found
+  source: source-cache/0d47365c-spi_master.rst
+  quote: |
+    When the GPIO matrix is used, the maximum allowed frequency is reduced.
+  comment: Claim about fast signals having native pins not found in SPI Master documentation; appears to be GPIO documentation.
+- unit: T-08-019
+  verdict: not_found
+  source: source-cache/44879c97-external-ram.rst
+  quote: |
+    For specific details about connecting the SoC or module pins to an external PSRAM chip, consult the SoC or module datasheet.
+  comment: Document is about PSRAM software configuration, not GPIO pin availability on modules.
+- unit: T-D-191
+  verdict: not_found
+  source: source-cache/51b28bff-idf-monitor.rst
+  quote: |
+    Document discusses IDF Monitor features and reset sequences.
+  comment: Claim about boot loop and opening monitor before power application not found in monitor documentation.
+- unit: T-B-137
+  verdict: confirmed
+  source: source-cache/5827f9c3-twai.rst
+  quote: |
+    TWAI is a highly reliable, multi-master, real-time, serial asynchronous communication protocol designed for automotive and industrial applications.
+  comment: Document confirms CAN (TWAI) capability exists; claim about section number not verifiable from technical docs.
+- unit: T-02-068
+  verdict: not_found
+  source: source-cache/14fb0872-configure-builtin-jtag.rst
+  quote: |
+    Document is specific to built-in JTAG configuration, not chip feature comparison table.
+  comment: Claim about S3 USB capabilities from feature table not found in USB-JTAG configuration documentation.
+- unit: T-02-071
+  verdict: not_found
+  source: source-cache/14fb0872-configure-builtin-jtag.rst
+  quote: |
+    Document is specific to built-in JTAG configuration, not chip feature comparison table.
+  comment: Claim about H2 USB capabilities from feature table not found in USB-JTAG configuration documentation.
+- unit: T-K10-010
+  verdict: not_found
+  source: source-cache/2217d639-basic-commands.rst
+  quote: |
+    Document discusses esptool commands but does not include comment about 115200 baud rate being slower and more reliable.
+  comment: Specific claim about --baud 115200 with reliability comment not found verbatim in documentation.
+- unit: T-04-029
+  verdict: confirmed
+  source: source-cache/5827f9c3-twai.rst
+  quote: |
+    TWAI is a highly reliable, multi-master, real-time, serial asynchronous communication protocol.
+  comment: Document confirms TWAI (CAN) support; section number claim not verifiable from technical documentation.
+- unit: T-54-075
+  verdict: not_found
+  source: source-cache/5df69a15-sleep_modes.rst
+  quote: |
+    Document is technical reference for sleep modes, not hardware deployment guide.
+  comment: Claim about not placing in sun due to overheating not found; appears to be from deployment documentation.
+- unit: T-11-058
+  verdict: not_found
+  source: source-cache/2217d639-basic-commands.rst
+  quote: |
+    Document lists idf.py commands but erase-flash entry with specific warning not found.
+  comment: Specific table row about idf.py erase-flash with warning reference not found in documentation.
+- unit: T-A-119
+  verdict: not_found
+  source: source-cache/4ddc5239-gpio.rst
+  quote: |
+    Document discusses GPIO configuration but not the context of GPIO matrix signal routing.
+  comment: Claim about GPIO matrix allowing signal routing to other pins not found in GPIO documentation context.
+- unit: T-30-072
+  verdict: not_found
+  source: source-cache/a4c4a980-nvs_flash.rst
+  quote: |
+    Document is not available for search; claim about flash cache during NVS operations not verified.
+  comment: Unable to confirm claim about cache being disabled during flash operations from available documentation.
+- unit: T-08-014
+  verdict: not_found
+  source: source-cache/776c3ac3-esp32c3.inc
+  quote: |
+    Document contains only GPIO pin configuration details.
+  comment: Module name to chip mapping table not found; candidate documents are GPIO references not module documentation.

@@ -1,0 +1,124 @@
+- unit: T-55-040
+  verdict: not_found
+  source: source-cache/gpio.rst
+  quote: ''
+  comment: GPIO reference docs do not cover hardware defects or burned pin symptoms.
+
+- unit: T-COM-018
+  verdict: not_found
+  source: source-cache/bme280.c
+  quote: ''
+  comment: BME280 sensor driver code does not discuss sensor comparisons or choices.
+
+- unit: T-A-038
+  verdict: not_found
+  source: source-cache/adc_oneshot.rst
+  quote: ''
+  comment: ADC documentation refers to datasheet for GPIO-ADC pin mappings but does not list them.
+
+- unit: T-13-060
+  verdict: not_found
+  source: source-cache/bme280.c
+  quote: ''
+  comment: BME280 sensor driver code does not discuss PlatformIO library naming conventions.
+
+- unit: T-47-043
+  verdict: not_found
+  source: source-cache/6ae1a690-gpio.rst
+  quote: ''
+  comment: GPIO documentation does not discuss GPIO state during bootloader phase.
+
+- unit: T-38-011
+  verdict: not_found
+  source: source-cache/twai.rst
+  quote: ''
+  comment: TWAI documentation discusses message IDs and priorities but not the specific CAN design philosophy claim.
+
+- unit: T-34-024
+  verdict: not_found
+  source: source-cache/idf-monitor.rst
+  quote: ''
+  comment: IDF Monitor documentation does not discuss garbage output from baud rate issues.
+
+- unit: T-36-016
+  verdict: not_found
+  source: source-cache/spi_master.rst
+  quote: ''
+  comment: SPI documentation describes the pin arrangement but not as an explicit 4+n formula.
+
+- unit: T-06-086
+  verdict: not_found
+  source: source-cache/gpio.rst
+  quote: ''
+  comment: GPIO documentation does not discuss wakeup sources for sleep modes.
+
+- unit: T-25-005
+  verdict: not_found
+  source: source-cache/idf-monitor.rst
+  quote: ''
+  comment: IDF Monitor documentation is an API reference, not a comparison table of monitor tools.
+
+- unit: T-00-084
+  verdict: confirmed
+  source: source-cache/basic-commands.rst
+  quote: |
+    Binary data can be written to the ESP's flash chip via the serial write-flash command
+  comment: Esptool write-flash command allows flashing prebuilt binary images.
+
+- unit: T-K06-033
+  verdict: not_found
+  source: source-cache/bootloader.rst
+  quote: ''
+  comment: Bootloader documentation does not discuss reading version, flash size, or partition table from it.
+
+- unit: T-17-111
+  verdict: confirmed
+  source: source-cache/basic-commands.rst
+  quote: |
+    It is possible to append options from a text file with @filename, which can be conveniently used with the ESP-IDF build system, which produces a flash_args file in the build directory of a project
+  comment: merge-bin command uses project's flash_args file for automatic configuration.
+
+- unit: T-Z-032
+  verdict: confirmed
+  source: source-cache/partition-tables.rst
+  quote: |
+    For this reason a partition table is flashed to default offset CONFIG_PARTITION_TABLE_OFFSET 0x8000 in the flash
+  comment: CONFIG_PARTITION_TABLE_OFFSET is discussed in partition tables documentation.
+
+- unit: T-36-090
+  verdict: not_found
+  source: source-cache/44879c97-external-ram.rst
+  quote: ''
+  comment: External RAM documentation does not discuss SPI controller usage by flash and PSRAM.
+
+- unit: T-57-057
+  verdict: not_found
+  source: source-cache/ota.rst
+  quote: ''
+  comment: OTA documentation discusses partition requirements but not design recommendations for future-proofing.
+
+- unit: T-34-008
+  verdict: confirmed
+  source: source-cache/gpio.rst
+  quote: |
+    If an IO pin is routed to a peripheral signal through the GPIO matrix
+  comment: GPIO documentation confirms peripheral signals can be routed to GPIO pins via GPIO matrix.
+
+- unit: T-25-039
+  verdict: not_found
+  source: source-cache/fatal-errors.rst
+  quote: ''
+  comment: Fatal errors documentation does not contain idf.py monitor command-line parameters.
+
+- unit: T-46-012
+  verdict: not_found
+  source: source-cache/Adafruit_ST7789.h
+  quote: ''
+  comment: ST7789 library header files do not contain display size specifications.
+
+- unit: T-B-112
+  verdict: not_found
+  source: source-cache/spi_master.rst
+  quote: ''
+  comment: SPI documentation mentions modes but not the troubleshooting step of trying all four CPOL/CPHA combinations.
+

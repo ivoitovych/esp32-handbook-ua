@@ -1,0 +1,120 @@
+- unit: T-20-018
+  verdict: not_found
+  source: source-cache/configure-builtin-jtag.rst
+  quote: |
+    No relevant passage found in candidate documents - they cover JTAG configuration setup, not consequences of incorrect writes
+  comment: Candidate documents discuss JTAG configuration but not loss of access from incorrect writes.
+- unit: T-Z-023
+  verdict: not_found
+  source: source-cache/bme280.c
+  quote: |
+    Sensor driver for BME280 sensor
+  comment: External sources confirm BME280 is a real sensor, but page numbers are internal to handbook and not in external sources.
+- unit: T-18-054
+  verdict: not_found
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: |
+    if an NVS partition is truncated, its contents should be erased
+  comment: Documents describe recovery mechanisms but not a standard manual procedure of erasing and reinitializing as response to damage.
+- unit: T-57-039
+  verdict: not_found
+  source: source-cache/ota.rst
+  quote: |
+    The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running
+  comment: OTA documentation describes the OTA mechanism but does not address the specific companion-controller architecture claim.
+- unit: T-22-049
+  verdict: not_found
+  source: source-cache/2217d639-basic-commands.rst
+  quote: |
+    The read-flash command allows reading back the contents of flash
+  comment: Documentation describes read-flash command but not the specific advice that dumps after erase-flash are meaningless.
+- unit: T-D-036
+  verdict: not_found
+  source: source-cache/569e266f-fatal-errors.rst
+  quote: |
+    rst:0x10 (RTCWDT_RTC_RESET)
+  comment: Document mentions reset codes exist but does not contain the full reset reasons table with code 0xc.
+- unit: T-15-020
+  verdict: not_found
+  source: source-cache/basic-commands.rst
+  quote: |
+    esptool allows reading back the contents of flash and writing binary data to flash
+  comment: External documentation describes esptool capabilities but not the specific claim about batch production boards.
+- unit: T-16-009
+  verdict: not_found
+  source: source-cache/partition-tables.rst
+  quote: |
+    The bootloader consults the OTA data partition to determine which app to execute
+  comment: Document describes bootloader role in selecting partitions but not detailed tasks like configuring timing and flash.
+- unit: T-F-024
+  verdict: confirmed
+  source: source-cache/idf-monitor.rst
+  quote: |
+    IDF Monitor uses the esp-idf-monitor package as a serial terminal program which relays serial data to and from the target device's serial port
+  comment: Documentation confirms you can open monitor to see logs from the device.
+- unit: T-12-035
+  verdict: not_found
+  source: source-cache/ledc.rst
+  quote: |
+    The LEDC API provides several ways to change the PWM frequency on the fly
+  comment: LEDC documentation describes API functions but not signature changes between version branches.
+- unit: T-G-078
+  verdict: confirmed
+  source: source-cache/partition-tables.rst
+  quote: |
+    For this reason a partition table is flashed to (:menuitem:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`) 0x8000 in the flash
+  comment: Document confirms partition table is the standard English term for таблиця розділів.
+- unit: T-A-029
+  verdict: not_found
+  source: source-cache/configure-builtin-jtag.rst
+  quote: |
+    {IDF_TARGET_NAME} has built-in JTAG circuitry and can be debugged without any additional chip
+  comment: JTAG configuration document does not contain GPIO-specific pinout information for JTAG pins.
+- unit: T-E-139
+  verdict: not_found
+  source: source-cache/ledc.rst
+  quote: |
+    The LEDC API provides several ways to change the PWM frequency on the fly
+  comment: LEDC documentation is about LED PWM controller, not motor driver chips like DRV8833 or TB6612.
+- unit: T-21-027
+  verdict: confirmed
+  source: source-cache/2217d639-basic-commands.rst
+  quote: |
+    esptool read-mac
+  comment: Documentation confirms read-mac command exists; handbook version adds --port and grep parameters.
+- unit: T-21-096
+  verdict: not_found
+  source: source-cache/a4c4a980-nvs_flash.rst
+  quote: |
+    it is recommended to keep vital factory default data in a separate, read-only partition
+  comment: Documentation mentions separate partitions but not the specific manufacturing principle about device identity.
+- unit: T-23-092
+  verdict: confirmed
+  source: source-cache/c61f0b5c-esp8266.py
+  quote: |
+    class ESP8266ROM(ESPLoader): """Access class for ESP8266 ROM bootloader"""
+  comment: Confirms ESP8266 is a separate chip, supporting handbook claim that ESP8266 is not in scope.
+- unit: T-K01-026
+  verdict: confirmed
+  source: source-cache/8af5fd4e-boot-mode-selection.rst
+  quote: |
+    The ESP8266 boot rom writes a log to the UART when booting. The timing is a little bit unusual: ``74880 baud``
+  comment: Documentation confirms ESP8266 uses 74880 baud for boot communication, which differs from ESP32.
+- unit: T-A-044
+  verdict: confirmed
+  source: source-cache/spi_master.rst
+  quote: |
+    MOSI - 23
+  comment: SPI pin table confirms GPIO 23 is used for MOSI on SPI bus.
+- unit: T-01-065
+  verdict: not_found
+  source: source-cache/5df69a15-sleep_modes.rst
+  quote: |
+    In Deep-sleep mode, the CPUs, most of the RAM, and all digital peripherals that are clocked from APB_CLK are powered off
+  comment: Sleep modes documentation does not contain microcontroller comparison table with STM32 specifications.
+- unit: T-11-051
+  verdict: confirmed
+  source: source-cache/51b28bff-idf-monitor.rst
+  quote: |
+    Pause idf_monitor to run the project ``flash`` target, then resumes idf_monitor
+  comment: Documentation confirms monitor integrates build and flash via keyboard shortcuts within single session.

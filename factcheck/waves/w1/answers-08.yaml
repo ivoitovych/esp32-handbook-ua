@@ -1,0 +1,120 @@
+- unit: T-14-077
+  verdict: not_found
+  source: source-cache/ota.rst
+  quote: |
+    The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running
+  comment: OTA documents are ESP-IDF technical docs, do not mention ESPHome.
+- unit: T-47-104
+  verdict: not_found
+  source: source-cache/spi_master.rst
+  quote: |
+    A signal bus, common to all Devices connected to one Host. In general, a bus includes the following lines: MISO, MOSI, SCLK, one or more CS lines
+  comment: SPI Master document does not discuss voltage dividers or level converters.
+- unit: T-23-091
+  verdict: not_found
+  source: source-cache/c61f0b5c-esp8266.py
+  quote: |
+    class ESP8266ROM(ESPLoader)
+  comment: Python implementation file; does not explicitly state ESP8266 is a different platform.
+- unit: T-49-064
+  verdict: not_found
+  source: source-cache/44879c97-external-ram.rst
+  quote: |
+    {IDF_TARGET_NAME} has a few hundred kilobytes of internal RAM, residing on the same die as the rest of the chip components. It can be insufficient for some purposes, so {IDF_TARGET_NAME} has the ability to use up to {IDF_TARGET_PSRAM_VADDR_SIZE} of virtual addresses for external PSRAM
+  comment: External RAM documents discuss PSRAM but do not mention cameras.
+- unit: T-23-019
+  verdict: not_found
+  source: source-cache/esp32c3.inc
+  quote: |
+    The {IDF_TARGET_NAME} chip features 22 physical GPIO pins (GPIO0 ~ GPIO21)
+  comment: ESP32-C3 include files provide GPIO details but do not mention architecture or cores.
+- unit: T-49-066
+  verdict: not_found
+  source: source-cache/adc_oneshot.rst
+  quote: |
+    The Analog to Digital Converter is integrated on the chip and is capable of measuring analog signals from specific analog IO pins
+  comment: ADC documentation does not mention microphones or audio applications.
+- unit: T-20-015
+  verdict: not_found
+  source: source-cache/basic-commands.rst
+  quote: |
+    esptool will detect the type of chip when it connects to the serial port
+  comment: Documents describe chip detection but not the specific connection header response mechanism.
+- unit: T-38-001
+  verdict: confirmed
+  source: source-cache/twai.rst
+  quote: |
+    TWAI is a highly reliable, multi-master, real-time, serial asynchronous communication protocol designed for automotive and industrial applications
+  comment: Confirms CAN designed for automobiles and used in industrial applications.
+- unit: T-16-094
+  verdict: not_found
+  source: source-cache/fatal-errors.rst
+  quote: |
+    The panic handler will start by printing the cause of the error to the console
+  comment: Fatal errors document discusses panic handler messages, not boot log reset reason.
+- unit: T-44-032
+  verdict: not_found
+  source: source-cache/spi_master.rst
+  quote: |
+    A signal bus, common to all Devices connected to one Host. In general, a bus includes the following lines: MISO, MOSI, SCLK, one or more CS lines
+  comment: Technical reference mentions SPI pins but not the interface identification table.
+- unit: T-25-006
+  verdict: confirmed
+  source: source-cache/idf-monitor.rst
+  quote: |
+    IDF Monitor can be launched from an ESP-IDF project by running idf.py monitor
+  comment: Confirms idf.py monitor is for use with your own ESP-IDF project.
+- unit: T-16-027
+  verdict: confirmed
+  source: source-cache/bootloader.rst
+  quote: |
+    0x1000 at start of flash for esp32; 0x0 for esp32s2, esp32s3, esp32c2, esp32c3, esp32c6, esp32c61, esp32h2, esp32h21; 0x2000 for esp32c5, esp32h4, esp32p4, esp32s31
+  comment: Bootloader addresses for different families match the handbook table.
+- unit: T-36-103
+  verdict: not_found
+  source: source-cache/spi_master.rst
+  quote: |
+    When an SPI Host is set to 40 MHz or lower frequencies, routing SPI pins via the GPIO matrix will behave the same compared to routing them via IOMUX
+  comment: Technical reference discusses frequencies but not the I2C vs SPI comparison table.
+- unit: T-K01-014
+  verdict: not_found
+  source: source-cache/c61f0b5c-esp8266.py
+  quote: |
+    class ESP8266ROM(ESPLoader)
+  comment: Python file does not explicitly state that ESP8266 is not ESP32.
+- unit: T-B-150
+  verdict: not_found
+  source: source-cache/adc_oneshot.rst
+  quote: |
+    The Analog to Digital Converter is integrated on the chip and is capable of measuring analog signals from specific analog IO pins
+  comment: ADC technical reference does not contain troubleshooting table.
+- unit: T-27-059
+  verdict: confirmed
+  source: source-cache/configure-builtin-jtag.rst
+  quote: |
+    On Linux adding OpenOCD udev rules is required and is done by placing the following udev rules file in the /etc/udev/rules.d folder
+  comment: Confirms that udev rules are needed for USB-JTAG on Linux.
+- unit: T-14-060
+  verdict: not_found
+  source: source-cache/ota.rst
+  quote: |
+    The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running
+  comment: OTA documents are ESP-IDF technical docs, do not mention ESPHome.
+- unit: T-14-059
+  verdict: not_found
+  source: source-cache/ota.rst
+  quote: |
+    The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running
+  comment: OTA documents are ESP-IDF technical docs, do not mention MicroPython.
+- unit: T-K05-016
+  verdict: not_found
+  source: source-cache/bootloader.rst
+  quote: |
+    If the bootloader binary is flashed anyhow then the {IDF_TARGET_NAME} will fail to boot - errors will be logged about either invalid partition table or invalid bootloader checksum
+  comment: Bootloader docs discuss boot issues but not bootloader address as most common cause.
+- unit: T-K15-007
+  verdict: not_found
+  source: source-cache/basic-commands.rst
+  quote: |
+    esptool --port /dev/ttyUSB0 write-flash --flash-mode qio --flash-size 32m 0x0 bootloader.bin 0x1000 my_app.bin
+  comment: General write-flash documented but not the specific -z flag with vyrib example.

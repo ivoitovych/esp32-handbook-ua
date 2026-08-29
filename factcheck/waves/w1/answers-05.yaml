@@ -1,0 +1,120 @@
+- unit: T-B-136
+  verdict: not_found
+  source: source-cache/twai.rst
+  quote: |
+    When creating a TWAI instance, you must configure parameters such as GPIO pins and baud rate
+  comment: Document discusses TWAI/CAN configuration but does not address the troubleshooting scenario.
+- unit: T-38-066
+  verdict: not_found
+  source: source-cache/twai.rst
+  quote: |
+    For single-node testing, you can directly short the TX and RX pins to omit the transceiver.
+  comment: Document mentions single-node testing but does not explain the error behavior from single-node operation.
+- unit: T-K13-035
+  verdict: not_found
+  source: source-cache/a4c4a980-nvs_flash.rst
+  quote: |
+    The library does try to recover from conditions when flash memory is in an inconsistent state.
+  comment: Document discusses NVS recovery from power loss but not brownout detector or its effects.
+- unit: T-11-104
+  verdict: not_found
+  source: source-cache/configure-builtin-jtag.rst
+  quote: |
+    {IDF_TARGET_NAME} has built-in JTAG circuitry and can be debugged without any additional chip.
+  comment: Document covers JTAG hardware configuration but not Coredump, backtrace, or logging diagnostics.
+- unit: T-46-085
+  verdict: not_found
+  source: source-cache/44879c97-external-ram.rst
+  quote: |
+    {IDF_TARGET_NAME} has the ability to use up to {IDF_TARGET_PSRAM_VADDR_SIZE} of virtual addresses for external PSRAM memory.
+  comment: Document covers PSRAM configuration but not LVGL or frame buffer requirements.
+- unit: T-B-061
+  verdict: confirmed
+  source: source-cache/fatal-errors.rst
+  quote: |
+    Print registers and reboot — default option. This will print register values at the point of the exception, print the backtrace, and restart the chip.
+  comment: Shows panic handler causes chip restart; repeated panic on startup creates boot loop.
+- unit: T-25-024
+  verdict: not_found
+  source: source-cache/bootloader.rst
+  quote: |
+    The :ref:`first-stage-bootloader` reads the :ref:`second-stage-bootloader` header information from flash
+  comment: Document discusses bootloader but not ROM bootloader baud rate specification.
+- unit: T-20-055
+  verdict: not_found
+  source: source-cache/idf-monitor.rst
+  quote: |
+    IDF Monitor uses the esp-idf-monitor_ package as a serial terminal program which relays serial data.
+  comment: Document covers monitor functionality but not the procedure of opening monitor before powering on.
+- unit: T-00-005
+  verdict: not_found
+  source: source-cache/basic-commands.rst
+  quote: |
+    esptool can help you with flashing the ESP device
+  comment: esptool documentation does not contain meta-statements about handbook compilation nature.
+- unit: T-33-107
+  verdict: not_found
+  source: source-cache/spi_master.rst
+  quote: |
+    The SPI Master driver governs the communications between Hosts and Devices.
+  comment: SPI documentation does not mention external ADC or precision measurements.
+- unit: T-36-101
+  verdict: not_found
+  source: source-cache/spi_master.rst
+  quote: |
+    Each Device shares the MOSI, MISO, and SCLK signals but is only active on the bus when the Host asserts the Device's individual CS line.
+  comment: Document describes SPI pins but not formatted as comparison table with specific counts.
+- unit: T-19-044
+  verdict: not_found
+  source: source-cache/ota.rst
+  quote: |
+    OTA update process recovery
+  comment: OTA documentation does not address where to place rollback confirmation call.
+- unit: T-33-100
+  verdict: not_found
+  source: source-cache/burn-efuse-cmd.rst
+  quote: |
+    eFuse programming
+  comment: eFuse documentation does not specifically address ADC calibration coefficients.
+- unit: T-A-022
+  verdict: not_found
+  source: source-cache/spi_master.rst
+  quote: |
+    An SPI bus may be connected to one or more Devices.
+  comment: SPI documentation does not identify specific GPIO pins by number.
+- unit: T-C-018
+  verdict: not_found
+  source: source-cache/basic-commands.rst
+  quote: |
+    This file can be later written to flash with esptool write-flash 0x0 merged-flash.bin
+  comment: Document shows merged-flash.bin not merged.bin; lacks --port placeholder.
+- unit: T-02-088
+  verdict: not_found
+  source: source-cache/44879c97-external-ram.rst
+  quote: |
+    {IDF_TARGET_NAME} has the ability to use up to {IDF_TARGET_PSRAM_VADDR_SIZE} of virtual addresses for external PSRAM memory.
+  comment: Document does not explicitly state which chips support PSRAM.
+- unit: T-K01-007
+  verdict: not_found
+  source: source-cache/44879c97-external-ram.rst
+  quote: |
+    Consult the Espressif website for more information.
+  comment: Module specification table not found in external RAM document.
+- unit: T-28-046
+  verdict: not_found
+  source: source-cache/spi_master.rst
+  quote: |
+    Allows a Host to select individual Device(s) connected to the bus.
+  comment: Document does not explicitly count four required channels for SPI.
+- unit: T-20-010
+  verdict: not_found
+  source: source-cache/a4c4a980-nvs_flash.rst
+  quote: |
+    The library does try to recover from conditions when flash memory is in an inconsistent state.
+  comment: Document discusses NVS recovery capability but specific erase procedure not detailed.
+- unit: T-B-043
+  verdict: not_found
+  source: source-cache/bootloader.rst
+  quote: |
+    Bootloader is located at the address {IDF_TARGET_CONFIG_BOOTLOADER_OFFSET_IN_FLASH} in the flash.
+  comment: Document does not specify 0x1000 classic or 0x0 S3 bootloader addresses.

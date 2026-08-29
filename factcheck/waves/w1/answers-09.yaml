@@ -1,0 +1,108 @@
+- unit: T-B-119
+  verdict: confirmed
+  source: source-cache/spi_master.rst
+  quote: |
+    If DMA is enabled for transfers, the buffers are required to be: 1. Allocated in DMA-capable internal memory (MALLOC_CAP_DMA)
+  comment: Document confirms DMA requires MALLOC_CAP_DMA allocation.
+- unit: T-03-069
+  verdict: not_found
+  source: source-cache/44879c97-external-ram.rst
+  quote: Document covers PSRAM configuration but does not mention specific memory address ranges.
+  comment: Memory address ranges (0x400d, 0x3ffb, 0x3f4) not found in external RAM documentation.
+- unit: T-52-055
+  verdict: not_found
+  source: source-cache/bootloader.rst
+  quote: Document covers bootloader functions, configuration, and features.
+  comment: Warning about BOOT pin misconfiguration being expensive and silent not found in bootloader docs.
+- unit: T-39-072
+  verdict: not_found
+  source: source-cache/ota.rst
+  quote: Document covers OTA technical features, rollback, security, and performance tuning.
+  comment: No mention of RSSI signal quality or its impact on OTA update reliability found.
+- unit: T-27-027
+  verdict: not_found
+  source: source-cache/configure-builtin-jtag.rst
+  quote: Document shows JTAG pins for specific chips (C3, C6, S3, etc.) but no explicit mention of classic.
+  comment: No direct statement that classic does not have built-in USB-JTAG found in document.
+- unit: T-04-024
+  verdict: confirmed
+  source: source-cache/spi_master.rst
+  quote: |
+    Chip Select. Allows a Host to select individual Device(s) connected to the bus in order to send or receive data.
+  comment: Document confirms individual select/CS per device; does not explicitly describe SPI as fast but functional claim is supported.
+- unit: T-K04-003
+  verdict: not_found
+  source: source-cache/bootloader.rst
+  quote: Document discusses ROM bootloader only in recovery and anti-rollback contexts.
+  comment: No mention of ROM bootloader for firmware reception in download mode found.
+- unit: T-A-018
+  verdict: not_found
+  source: source-cache/adc_oneshot.rst
+  quote: Document covers ADC oneshot mode driver but does not contain GPIO pin mappings.
+  comment: GPIO-to-ADC channel mapping table not found in ADC API reference documentation.
+- unit: T-59-004
+  verdict: confirmed
+  source: source-cache/bme280_defs.h
+  quote: |
+    BME280_I2C_ADDR_PRIM and BME280_REG_TEMP_PRESS_CALIB_DATA and BME280_REG_HUMIDITY_CALIB_DATA
+  comment: Header defines I2C addresses and calibration data for temperature, pressure, and humidity sensors.
+- unit: T-B-144
+  verdict: confirmed
+  source: source-cache/adc_oneshot.rst
+  quote: |
+    ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has provided protection between the Wi-Fi driver and ADC oneshot mode driver.
+  comment: Document confirms ADC2 and Wi-Fi conflict on classic, S2, and S3; solution requires using ADC1.
+- unit: T-02-147
+  verdict: confirmed
+  source: source-cache/44879c97-external-ram.rst
+  quote: |
+    {IDF_TARGET_PSRAM_VADDR_SIZE:default="Value not updated", esp32="4 MB", esp32s2="10.5 MB", esp32s3="32 MB", esp32p4="64 MB"}
+  comment: Document confirms PSRAM support for esp32, S2, S3 with defined sizes and P4 beyond the list.
+- unit: T-A-005
+  verdict: not_found
+  source: source-cache/adc_oneshot.rst
+  quote: GPIO pinout table header not found in ADC driver documentation.
+  comment: GPIO reference table with pin limitations/restrictions is not in ADC API documentation.
+- unit: T-22-007
+  verdict: not_found
+  source: source-cache/a4c4a980-nvs_flash.rst
+  quote: NVS documentation covers initialization, data storage, security, and robustness.
+  comment: Principle of first fixation then intervention not explicitly stated in NVS documentation.
+- unit: T-06-074
+  verdict: confirmed
+  source: source-cache/sleep_modes.rst
+  quote: |
+    In Deep-sleep mode, the CPUs, most of the RAM, and all digital peripherals that are clocked from APB_CLK are powered off. The only parts of the chip that remain powered on are:
+  comment: Document confirms only RTC domain remains powered during deep sleep.
+- unit: T-59-010
+  verdict: not_found
+  source: source-cache/bme280.c
+  quote: Source files contain only code and header definitions.
+  comment: Block diagram/architecture diagram not found in BME280 source code files.
+- unit: T-08-013
+  verdict: not_found
+  source: source-cache/44879c97-external-ram.rst
+  quote: Document covers external RAM configuration and usage.
+  comment: Module specifications table and S3 module features not found in external RAM documentation.
+- unit: T-10-037
+  verdict: confirmed
+  source: source-cache/configure-builtin-jtag.rst
+  quote: |
+    {IDF_TARGET_NAME} has built-in JTAG circuitry and can be debugged without any additional chip. Only a USB cable connected to the D+/D- pins is necessary.
+  comment: Built-in JTAG confirmed for C3, S3 via GPIO pin definitions and driver reference (ESP32-C3/S3).
+- unit: T-17-084
+  verdict: confirmed
+  source: source-cache/basic-commands.rst
+  quote: |
+    To successfully write data into flash, all 4096-byte memory sectors affected by the operation have to be erased first. Use the -e/--erase-all option to erase all flash sectors (not just the write areas) before programming.
+  comment: Document confirms write-flash automatically erases only necessary sectors; erase-all is optional and not needed for routine updates.
+- unit: T-E-053
+  verdict: not_found
+  source: source-cache/Adafruit_ST7789.h
+  quote: Header file documents only the Adafruit ST7789 driver library.
+  comment: Alternative libraries like TFT_eSPI and LovyanGFX not mentioned in Adafruit header documentation.
+- unit: T-62-080
+  verdict: not_found
+  source: source-cache/gpio.rst
+  quote: Documentation covers GPIO configuration APIs and pull-up/pull-down control.
+  comment: Design principle about pull-up resistor holding pins in off-state during GPIO initialization not found in documentation.

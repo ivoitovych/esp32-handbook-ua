@@ -23,7 +23,7 @@ explicit note that nothing does.
 
 ## The family that dominates: a check that measures nothing
 
-Thirteen of the twenty-six kinds below are one family. The check runs, it
+Thirteen of the twenty-seven kinds below are one family. The check runs, it
 returns a number, and the number means nothing — because it was never
 measuring the thing its name claims.
 
@@ -639,10 +639,66 @@ ignored. They were staged before anyone noticed.
 The same shape applies to any rule keyed on an old name: a redirect, a
 deprecation warning, a migration guard, a compatibility shim.
 
-**Held by.** Nothing automatic yet. The candidate check is cheap and
-worth writing: no `.gitignore` entry may name a path that does not exist
-and never has — a rule about nothing is either a typo or a rule that was
-rewritten out of its job.
+**Held by.** `tools/docs.py`, which asks `git ls-files` on the cache
+directories and requires that nothing but the manifest is tracked.
+
+The check first proposed here was different, and it was wrong. It read:
+*no `.gitignore` entry may name a path that does not exist and never
+has*. Run against the tree before it was written, it produced seven
+findings, six of them legitimate — `.DS_Store`, `Thumbs.db`,
+`.linkcheck-*`, `.budgets-*`, `__pycache__/`, a local editor settings
+file — and the seventh was the restored rule protecting the other
+maintainer's container. The check proposed as the antidote to this very
+incident would have ordered the deletion of the protection that stopped
+it.
+
+The reason is in the definition: an ignore rule speaks about what may
+**not be here yet**. `.DS_Store` appears tomorrow; the old cache
+directory exists in one container and not the other. Absence of the path
+is the rule's normal state, not evidence of a defect. What distinguishes
+the broken entry is that it was *born from a rename* and never existed
+anywhere — and that is not mechanically visible.
+
+> Ask the consequence, not the rule. A rule can be rewritten into
+> nonsense and still parse; a tracked file cannot lie.
+
+---
+
+## 27. A normaliser that swallows the start of the quote
+
+**Symptom.** A comparison is loosened to forgive a difference that does
+not change meaning, and it rejects records that passed before.
+
+**Case.** Wave w1 (`factcheck/WAVE-W1.md`) showed that most rejected
+quotes were correct passages with RST markup removed. The obvious
+remedy — strip inline markup from both sides before comparing — was
+measured against the whole registry first:
+
+    strict (as it stands)     verified 538   not found 72
+    tolerant to RST markup    verified 531   not found 79
+
+    recovered  3     broken  10
+
+The mechanism is `T-05-064`. The source reads
+`` :cpp:func:`gpio_config` is an all-in-one API … ``; our quote begins
+at the backtick, `` `gpio_config` is an all-in-one API … ``. Today that
+is a plain substring. A normaliser that rewrites the role
+`` :cpp:func:`…` `` as a unit changes the source and not the quote —
+the quote contains the role's tail, not the role — so the two sides
+normalise to different strings and the containment is gone.
+
+> `a ⊂ b` does not imply `norm(a) ⊂ norm(b)`. Any normaliser used
+> underneath a substring test must be substring-preserving, and one that
+> can consume the point where a quote begins is not.
+
+This generalises past markup: case folding, quote unification and
+whitespace collapse are safe because they are per-character; anything
+that rewrites a *construct* is not.
+
+**Held by.** Nothing automatic, and nothing needs to be: the discipline
+is to measure a proposed loosening against the existing corpus before
+writing it. That discipline caught kind 26's candidate check and this
+one, on consecutive days.
 
 ---
 

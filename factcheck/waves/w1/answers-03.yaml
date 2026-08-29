@@ -1,0 +1,80 @@
+- unit: T-K08-031
+  verdict: not_found
+  source: source-cache/gpio.rst
+  comment: GPIO documents do not mention strapping pins or their behavior at startup.
+- unit: T-B-132
+  verdict: not_found
+  source: source-cache/twai.rst
+  comment: TWAI documents describe error counters and mention self-test mode for single-node testing, but do not explicitly state that error counter growth is caused by only one node on the bus.
+- unit: T-31-081
+  verdict: not_found
+  source: source-cache/gpio.rst
+  comment: GPIO documents do not contain information about button debouncing or time comparison methods.
+- unit: T-24-052
+  verdict: not_found
+  source: source-cache/a4c4a980-nvs_flash.rst
+  comment: NVS documents describe general use cases like device configuration and calibration data, but do not explicitly list the specific claim content about NVS, file systems, and firmware flashing.
+- unit: T-56-017
+  verdict: not_found
+  source: source-cache/basic-commands.rst
+  comment: Document shows esptool write-flash commands with /dev/ttyUSB0 and 0x0 address, but not the specific command with nasos-v1.4.bin filename.
+- unit: T-23-067
+  verdict: not_found
+  source: source-cache/ota.rst
+  comment: OTA documents describe the OTA mechanism but do not discuss boot log output or partition table information display.
+- unit: T-58-020
+  verdict: not_found
+  source: source-cache/fatal-errors.rst
+  comment: Fatal-errors documents discuss panic handler output but do not explicitly recommend logging reset reason as the first line in app_main().
+- unit: T-57-032
+  verdict: not_found
+  source: source-cache/twai.rst
+  comment: TWAI documents do not discuss ESP32 as a companion controller or exchange via UART or CAN.
+- unit: T-B-067
+  verdict: not_found
+  source: source-cache/idf-monitor.rst
+  comment: IDF Monitor document describes the tool but does not contain a troubleshooting table with entries about empty monitor output being caused by no port or power.
+- unit: T-K08-047
+  verdict: not_found
+  source: source-cache/a4c4a980-nvs_flash.rst
+  comment: NVS documents describe flash erasing but do not explicitly state that calibration is erased together with NVS.
+- unit: T-21-009
+  verdict: not_found
+  source: source-cache/bootloader.rst
+  comment: Bootloader document does not contain the specific claim about one file being better than three for manufacturing to avoid shifting the bootloader.
+- unit: T-B-149
+  verdict: not_found
+  source: source-cache/adc_oneshot.rst
+  comment: ADC document does not mention using 16-64 samples to reduce noise as a troubleshooting solution.
+- unit: T-B-198
+  verdict: not_found
+  source: source-cache/ota.rst
+  comment: OTA documents do not mention RSSI signal strength or Wi-Fi signal quality as a factor in OTA failures.
+- unit: T-27-066
+  verdict: not_found
+  source: source-cache/configure-builtin-jtag.rst
+  comment: JTAG document focuses on hardware and software configuration, not on whether JTAG is necessary for embedded debugging.
+- unit: T-60-013
+  verdict: not_found
+  source: source-cache/bme280_defs.h
+  comment: BME280 source code files are driver implementations and do not contain documentation notes about sensor interface specifications.
+- unit: T-15-008
+  verdict: not_found
+  source: source-cache/ota.rst
+  comment: OTA documents do not mention ESPHome or its features for typical sensors with telemetry.
+- unit: T-15-015
+  verdict: not_found
+  source: source-cache/twai.rst
+  comment: TWAI documents are peripheral-specific documentation and do not contain toolchain selection matrices.
+- unit: T-01-022
+  verdict: not_found
+  source: source-cache/twai.rst
+  comment: TWAI documents are specific to CAN peripheral and do not contain comprehensive lists of all ESP32 peripherals.
+- unit: T-29-023
+  verdict: not_found
+  source: source-cache/bootloader.rst
+  comment: Bootloader documents do not explicitly state that esptool will not complain about wrong bootloader addresses.
+- unit: T-04-039
+  verdict: not_found
+  source: source-cache/ledc.rst
+  comment: LEDC documents describe LED control PWM, not MCPWM (Motor Control PWM), which are different peripherals.

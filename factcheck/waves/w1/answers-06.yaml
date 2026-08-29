@@ -1,0 +1,100 @@
+- unit: T-50-068
+  verdict: not_found
+  source: source-cache/a4c4a980-nvs_flash.rst
+  quote: ''
+  comment: NVS documents discuss technical storage details but contain no mention of retrieving keys in five minutes.
+- unit: T-16-093
+  verdict: not_found
+  source: source-cache/41cecd4f-fatal-errors.rst
+  quote: ''
+  comment: Fatal-errors documents cover error handling, not strapping pins timing during reset.
+- unit: T-16-057
+  verdict: not_found
+  source: source-cache/51b28bff-idf-monitor.rst
+  quote: ''
+  comment: IDF Monitor documents discuss monitor features but do not explain 115200 baud as ROM speed.
+- unit: T-17-036
+  verdict: not_found
+  source: source-cache/basic-commands.rst
+  quote: ''
+  comment: Esptool documentation does not mention chip-id command or ESP32 lacking Chip ID inherited from ESP8266.
+- unit: T-47-014
+  verdict: not_found
+  source: source-cache/2e18145f-ledc.rst
+  quote: ''
+  comment: LEDC documentation covers PWM generation but does not explain why relay cannot handle frequent switching.
+- unit: T-19-028
+  verdict: confirmed
+  source: source-cache/ota.rst
+  quote: 'OTA requires configuring the partition-tables of the device with at least two OTA app slot partitions (i.e., ota_0 and ota_1) and an OTA Data Partition.'
+  comment: OTA documentation confirms partition layout must be configured, implying it must be done before deployment.
+- unit: T-B-113
+  verdict: not_found
+  source: source-cache/0d47365c-spi_master.rst
+  quote: ''
+  comment: SPI documentation does not contain the specific troubleshooting claim about mode/CPOL/CPHA.
+- unit: T-50-047
+  verdict: not_found
+  source: source-cache/14fb0872-configure-builtin-jtag.rst
+  quote: ''
+  comment: JTAG documentation does not detail Flash Encryption dump behavior before/after activation.
+- unit: T-02-006
+  verdict: not_found
+  source: source-cache/776c3ac3-esp32c3.inc
+  quote: ''
+  comment: ESP32-C3 file does not contain descriptor about cheap/small positioning.
+- unit: T-17-117
+  verdict: not_found
+  source: source-cache/51b28bff-idf-monitor.rst
+  quote: ''
+  comment: IDF Monitor documentation does not detail manual boot troubleshooting steps referenced.
+- unit: T-58-055
+  verdict: not_found
+  source: source-cache/a4c4a980-nvs_flash.rst
+  quote: ''
+  comment: NVS documentation does not discuss HTTPS verification or section references.
+- unit: T-17-053
+  verdict: not_found
+  source: source-cache/a4c4a980-nvs_flash.rst
+  quote: ''
+  comment: NVS documentation does not specifically discuss reading individual partitions.
+- unit: T-09-049
+  verdict: not_found
+  source: source-cache/51b28bff-idf-monitor.rst
+  quote: ''
+  comment: IDF Monitor documentation does not explain native USB port behavior during reboot.
+- unit: T-G-009
+  verdict: not_found
+  source: source-cache/710f412b-bootloader.rst
+  quote: ''
+  comment: Bootloader documentation does not provide the exact definition stated in the claim.
+- unit: T-45-009
+  verdict: not_found
+  source: source-cache/8e2fcbf9-bme280.c
+  quote: ''
+  comment: BME280 source code does not contain specification documentation.
+- unit: T-18-050
+  verdict: not_found
+  source: source-cache/a4c4a980-nvs_flash.rst
+  quote: ''
+  comment: NVS documentation does not explain why values survive firmware updates.
+- unit: T-E-079
+  verdict: not_found
+  source: source-cache/66dc1dae-adc_oneshot.rst
+  quote: ''
+  comment: ADC documentation does not reference external ADC components.
+- unit: T-04-012
+  verdict: not_found
+  source: source-cache/66dc1dae-adc_oneshot.rst
+  quote: ''
+  comment: ADC documentation does not explain ADC/DAC/touch pinning constraints.
+- unit: T-46-036
+  verdict: not_found
+  source: source-cache/2e18145f-ledc.rst
+  quote: ''
+  comment: LEDC documentation does not discuss TFT display power consumption.
+- unit: T-30-015
+  verdict: not_found
+  source: source-cache/41cecd4f-fatal-errors.rst
+  quote: ''
+  comment: Fatal errors documentation does not mention logging reset reason as recommended practice.
