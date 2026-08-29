@@ -1539,14 +1539,15 @@ ledc_channel_config(&ccfg);
 ````
 ## LEDC: PWM для світлодіодів і серво
 
-```c
-ledc_timer_config_t tcfg = {
+ledc_channel_config_t ccfg = {
+    .gpio_num = GPIO_NUM_2,
     .speed_mode = LEDC_LOW_SPEED_MODE,
-    .duty_resolution = LEDC_TIMER_13_BIT,
-    .timer_num = LEDC_TIMER_0,
-    .freq_hz = 5000,
+    .channel = LEDC_CHANNEL_0,
+    .timer_sel = LEDC_TIMER_0,
+    .duty = 4096,
 };
-ledc_timer_config(&tcfg);
+ledc_channel_config(&ccfg);
+```
 ````
 
 **Доказ**
@@ -3237,15 +3238,18 @@ adc_cali_create_scheme_curve_fitting(&cfg, &cali);
 
 **Контекст**
 
-```
+````
 ## ADC
 
-adc_oneshot_chan_cfg_t ccfg = {
-    .bitwidth = ADC_BITWIDTH_DEFAULT,
+```c
+adc_cali_handle_t cali;
+adc_cali_curve_fitting_config_t cfg = {
+    .unit_id = ADC_UNIT_1,
     .atten = ADC_ATTEN_DB_12,
+    .bitwidth = ADC_BITWIDTH_DEFAULT,
 };
-adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
-```
+adc_cali_create_scheme_curve_fitting(&cfg, &cali);
+````
 
 **Доказ**
 
@@ -3262,15 +3266,18 @@ adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
 
 **Контекст**
 
-```
+````
 ## ADC
 
-adc_oneshot_chan_cfg_t ccfg = {
-    .bitwidth = ADC_BITWIDTH_DEFAULT,
+```c
+adc_cali_handle_t cali;
+adc_cali_curve_fitting_config_t cfg = {
+    .unit_id = ADC_UNIT_1,
     .atten = ADC_ATTEN_DB_12,
+    .bitwidth = ADC_BITWIDTH_DEFAULT,
 };
-adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
-```
+adc_cali_create_scheme_curve_fitting(&cfg, &cali);
+````
 
 **Доказ**
 

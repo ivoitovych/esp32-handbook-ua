@@ -2493,39 +2493,44 @@
 **Контекст**
 
 ```
-### Апаратне
+### Програмне
 
 
 | Українською | English |
 |---|---|
-| кристал, мікросхема | die, SoC, chip |
-| модуль | module |
-| плата розробки | development board |
-| пін, вивід | pin |
-| контактна площадка | pad |
-| гребінка | pin header |
-| перемичка | jumper |
-| доріжка | trace |
-| шина | bus |
-| земля, спільна земля | ground, common ground |
-| живлення | power supply |
-| стабілізатор | voltage regulator |
-| понижувальний перетворювач | buck converter |
-| підвищувальний перетворювач | boost converter |
-| дільник напруги | voltage divider |
-| конвертер рівнів | level shifter |
-| розв'язувальний конденсатор | decoupling capacitor |
-| захисний діод | flyback diode |
-| ключ (транзисторний) | switch |
-| оптопара | optocoupler |
-| гальванічна розв'язка | galvanic isolation |
-| термоусадка | heat shrink tubing |
-| оплітка для випаювання | desoldering wick |
-| припій | solder |
-| холодна пайка | cold joint |
-| перфборд | perfboard, protoboard |
-| корпус (виробу) | enclosure |
-| гермоввід, сальник | cable gland |
+| прошивка | firmware |
+| образ | image, binary |
+| збирання | build |
+| тулчейн | toolchain |
+| компонент | component |
+| задача | task |
+| планувальник | scheduler |
+| пріоритет | priority |
+| черга | queue |
+| семафор | semaphore |
+| м'ютекс | mutex |
+| група подій | event group |
+| переривання | interrupt |
+| обробник переривання | interrupt handler, ISR |
+| критична секція | critical section |
+| стек | stack |
+| купа | heap |
+| фрагментація | fragmentation |
+| витік пам'яті | memory leak |
+| переповнення стека | stack overflow |
+| атомарна операція | atomic operation |
+| гонка | race condition |
+| взаємне блокування | deadlock |
+| зворотний виклик | callback |
+| таблиця розділів | partition table |
+| розділ | partition |
+| файлова система | filesystem |
+| дамп | dump |
+| прапорець | flag |
+| автомат станів | state machine |
+| ідемпотентність | idempotence |
+| відтворюване збирання | reproducible build |
+| відкат | rollback |
 ```
 
 **Доказ**
@@ -4476,39 +4481,30 @@
 **Контекст**
 
 ```
-### Апаратне
+### Радіо і мережа
 
 
 | Українською | English |
 |---|---|
-| кристал, мікросхема | die, SoC, chip |
-| модуль | module |
-| плата розробки | development board |
-| пін, вивід | pin |
-| контактна площадка | pad |
-| гребінка | pin header |
-| перемичка | jumper |
-| доріжка | trace |
-| шина | bus |
-| земля, спільна земля | ground, common ground |
-| живлення | power supply |
-| стабілізатор | voltage regulator |
-| понижувальний перетворювач | buck converter |
-| підвищувальний перетворювач | boost converter |
-| дільник напруги | voltage divider |
-| конвертер рівнів | level shifter |
-| розв'язувальний конденсатор | decoupling capacitor |
-| захисний діод | flyback diode |
-| ключ (транзисторний) | switch |
-| оптопара | optocoupler |
-| гальванічна розв'язка | galvanic isolation |
-| термоусадка | heat shrink tubing |
-| оплітка для випаювання | desoldering wick |
-| припій | solder |
-| холодна пайка | cold joint |
-| перфборд | perfboard, protoboard |
-| корпус (виробу) | enclosure |
-| гермоввід, сальник | cable gland |
+| точка доступу | access point |
+| станція, клієнт | station |
+| канал | channel |
+| рівень сигналу | RSSI, signal strength |
+| антена | antenna |
+| узгодження | matching |
+| дальність | range |
+| маячок | beacon |
+| креденшели | credentials |
+| брокер | broker |
+| топік | topic |
+| підписка | subscription |
+| публікація | publish |
+| сертифікат | certificate |
+| центр сертифікації | certificate authority, CA |
+| рукостискання | handshake |
+| широкомовна розсилка | broadcast |
+| комірчаста мережа | mesh network |
+| ретрансляція | relay |
 ```
 
 **Доказ**
@@ -5403,39 +5399,29 @@
 **Контекст**
 
 ```
-### Апаратне
+### Вимірювання і живлення
 
 
 | Українською | English |
 |---|---|
-| кристал, мікросхема | die, SoC, chip |
-| модуль | module |
-| плата розробки | development board |
-| пін, вивід | pin |
-| контактна площадка | pad |
-| гребінка | pin header |
-| перемичка | jumper |
-| доріжка | trace |
-| шина | bus |
-| земля, спільна земля | ground, common ground |
-| живлення | power supply |
-| стабілізатор | voltage regulator |
-| понижувальний перетворювач | buck converter |
-| підвищувальний перетворювач | boost converter |
-| дільник напруги | voltage divider |
-| конвертер рівнів | level shifter |
-| розв'язувальний конденсатор | decoupling capacitor |
-| захисний діод | flyback diode |
-| ключ (транзисторний) | switch |
-| оптопара | optocoupler |
-| гальванічна розв'язка | galvanic isolation |
-| термоусадка | heat shrink tubing |
-| оплітка для випаювання | desoldering wick |
-| припій | solder |
-| холодна пайка | cold joint |
-| перфборд | perfboard, protoboard |
-| корпус (виробу) | enclosure |
-| гермоввід, сальник | cable gland |
+| напруга | voltage |
+| струм | current |
+| опір | resistance |
+| потужність | power |
+| ємність (конденсатора) | capacitance |
+| ємність (акумулятора) | capacity |
+| просадка | voltage drop, sag |
+| пікове споживання | peak current |
+| коефіцієнт заповнення | duty cycle |
+| роздільність | resolution |
+| точність | accuracy |
+| калібрування | calibration |
+| усереднення | averaging |
+| шум | noise |
+| завада | interference |
+| шунт | shunt |
+| навантаження | load |
+| холостий хід | no load |
 ```
 
 **Доказ**
@@ -6257,39 +6243,23 @@
 **Контекст**
 
 ```
-### Апаратне
+### Процес
 
 
 | Українською | English |
 |---|---|
-| кристал, мікросхема | die, SoC, chip |
-| модуль | module |
-| плата розробки | development board |
-| пін, вивід | pin |
-| контактна площадка | pad |
-| гребінка | pin header |
-| перемичка | jumper |
-| доріжка | trace |
-| шина | bus |
-| земля, спільна земля | ground, common ground |
-| живлення | power supply |
-| стабілізатор | voltage regulator |
-| понижувальний перетворювач | buck converter |
-| підвищувальний перетворювач | boost converter |
-| дільник напруги | voltage divider |
-| конвертер рівнів | level shifter |
-| розв'язувальний конденсатор | decoupling capacitor |
-| захисний діод | flyback diode |
-| ключ (транзисторний) | switch |
-| оптопара | optocoupler |
-| гальванічна розв'язка | galvanic isolation |
-| термоусадка | heat shrink tubing |
-| оплітка для випаювання | desoldering wick |
-| припій | solder |
-| холодна пайка | cold joint |
-| перфборд | perfboard, protoboard |
-| корпус (виробу) | enclosure |
-| гермоввід, сальник | cable gland |
+| постановка задачі | requirements |
+| прототип | prototype |
+| доведення | hardening |
+| приймальні випробування | acceptance testing |
+| критерій приймання | acceptance criterion |
+| паспорт виробу | device documentation |
+| журнал змін | changelog |
+| версіонування | versioning |
+| серійна прошивка | batch flashing |
+| партія | batch |
+| брак | defective unit |
+| супровід | maintenance |
 ```
 
 **Доказ**

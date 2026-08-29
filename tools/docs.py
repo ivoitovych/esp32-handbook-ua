@@ -69,6 +69,12 @@ VLASNYK = {
 # заморожений документ, що називає перейменований інструмент, бреше
 # читачеві так само, як живий. Тому історичні тут є, і це не розбіжність
 # воріт, а два різні питання про один файл.
+# Теки кешу, яких у ЦЬОМУ дереві вже немає, а в чужому контейнері ще
+# можуть бути. Це історія, а не означення: означення нижче, у
+# `kesh_ne_v_git`, і воно питає про наявність маніфесту. Ці рядки не
+# перейменовує ніщо — перейменувати минуле не можна.
+ISTORYCHNI_KESHI = ("dzherela-kesh",)
+
 KERIVNI = ["METHOD.md", "DEFECTS.md", "LESSONS-M2.md", "RETROSPECTIVE.md",
            "SCHEMA.md", "ARCHITECTURE.md", "HELPERS.md", "README.md",
            "MIGRATION.md", "TASK-SPEC.md", "TASK-SPEC.md",
@@ -241,8 +247,54 @@ def proba() -> int:
             print("   %s %-42s очікувано %-5s дістав %s"
                   % (ok, nazva, ocik, spiymav))
             provaliv += spiymav != ocik
+    provaliv += proba_keshu()
     print("\nпровалів: %d" % provaliv)
     return 1 if provaliv else 0
+
+
+def proba_keshu() -> int:
+    """Ворота на кеш проти теки, чиє ім'я не стоїть у жодному файлі.
+
+    Ім'я тут навмисно вигадане й ніде більше не трапляється. Саме це
+    й перевіряється: якби означення кешу знову звелося до переліку
+    імен, ця проба провалилася б **першою** — а перелік, який стереже
+    лише те, що в ньому названо, від наступного перейменування не
+    рятує (знахідка М2, рід 26 проти самих воріт).
+    """
+    import subprocess
+    import tempfile
+    global ROOT
+    spravzhniy = ROOT
+    provaliv = 0
+    with tempfile.TemporaryDirectory() as d:
+        t = Path(d)
+        subprocess.run(["git", "init", "-q"], cwd=t)
+        vypadky = [("кеш під невигаданим досі іменем", True),
+                   ("та сама тека, лише маніфест", False)]
+        (t / "kesh-yakoho-nikoly-ne-bulo").mkdir()
+        (t / "kesh-yakoho-nikoly-ne-bulo" / "MANIFEST.md").write_text(
+            "# manifest\n", encoding="utf-8")
+        (t / "kesh-yakoho-nikoly-ne-bulo" / "chuzhyy.pdf").write_text(
+            "x\n", encoding="utf-8")
+        ROOT = t
+        try:
+            for nazva, ocik in vypadky:
+                if not ocik:
+                    (t / "kesh-yakoho-nikoly-ne-bulo" / "chuzhyy.pdf").unlink()
+                    subprocess.run(["git", "rm", "-q", "--cached",
+                                    "kesh-yakoho-nikoly-ne-bulo/chuzhyy.pdf"],
+                                   cwd=t, capture_output=True)
+                else:
+                    subprocess.run(["git", "add", "-A"], cwd=t,
+                                   capture_output=True)
+                spiymav = bool(kesh_ne_v_git())
+                ok = "✓" if spiymav == ocik else "✗ ПРОВАЛ"
+                print("   %s %-42s очікувано %-5s дістав %s"
+                      % (ok, nazva, ocik, spiymav))
+                provaliv += spiymav != ocik
+        finally:
+            ROOT = spravzhniy
+    return provaliv
 
 
 def main() -> int:
@@ -273,10 +325,51 @@ def kesh_ne_v_git() -> list[str]:
     Тому це не перевірка `.gitignore`, а перевірка **наслідку**:
     питаємо git, що він відстежує, а не читаємо правила й не віримо їм.
     Рід 26 у `DEFECTS.md`.
+
+    ## Друга редакція: перша була вразлива до тієї самої вади
+
+    Знахідка М2 від `05:26Z`, і вони її випробували, а не вичитали. У
+    першій редакції теки кешу стояли переліком просто тут:
+
+        git ls-files -- source-cache dzherela-kesh
+
+    Вони поклали відстежений файл у `sources-v3/` — ворота промовчали.
+
+    > Ворота, збудовані проти роду 26, вразливі до роду 26: перелік імен
+    > усередині них **сам є копією імені шляху**, і наступне
+    > перейменування або перепише його (знявши покриття зі старого
+    > імені), або промине нове.
+
+    Тому кеш **оголошує себе сам** — тим самим способом, яким наші
+    породжені документи називають свій генератор, а всі документи —
+    свій рід:
+
+    > **Тека, у якій лежить `MANIFEST.md`, є кешем.**
+
+    Перелік імен лишається, але вже не як означення кешу, а як
+    **історія**: `dzherela-kesh` більше ніде не існує й існувати не
+    буде, і саме тому його треба назвати — у чужому контейнері він ще
+    є. Ці рядки не переписує жодне перейменування; вони описують минуле,
+    а минуле не перейменовують.
+
+    Чого ця форма **не** ловить, і це сказано вголос: теку кешу без
+    маніфесту. Такої в нас немає й бути не має — маніфест і є те, заради
+    чого кеш існує, — але перевірка про неї не знає.
     """
     import subprocess
-    r = subprocess.run(["git", "ls-files", "--", "source-cache",
-                        "dzherela-kesh"], cwd=ROOT,
+    teky = set(ISTORYCHNI_KESHI)
+    for p in ROOT.rglob("MANIFEST.md"):
+        if ".git/" in p.as_posix():
+            continue
+        teky.add(p.parent.relative_to(ROOT).as_posix())
+    r = subprocess.run(["git", "ls-files"], cwd=ROOT,
+                       capture_output=True, text=True)
+    for x in r.stdout.split():
+        if x.endswith("/MANIFEST.md"):
+            teky.add(x.rsplit("/", 1)[0])
+    if not teky:
+        return []
+    r = subprocess.run(["git", "ls-files", "--", *sorted(teky)], cwd=ROOT,
                        capture_output=True, text=True)
     lyshni = [x for x in r.stdout.split()
               if x and not x.endswith("/MANIFEST.md")]

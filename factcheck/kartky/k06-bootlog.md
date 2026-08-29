@@ -209,17 +209,32 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 > `0x1` · Назва → POWERON_RESET
 
-**Дослівно з книги:** рядок таблиці не знайдено — локатор привів у прозу. Дивіться контекст нижче.
+**Дослівно з книги**
+
+```
+| `0x1` | POWERON_RESET | подано живлення або натиснуто `EN`. Норма |
+```
 
 **Контекст**
 
-````
+```
 ## Перший рядок — головний
 
+`rst:` — **причина останнього скидання**. Найчастіші значення для
+[[classic]] (повна таблиця — додаток D):
+
+| Код | Назва | Що сталося |
+|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або натиснуто `EN`. Норма |
+| `0x3` | SW_RESET | скидання з коду (`esp_restart`) |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep. Норма |
+| `0x7` | TG0WDT_SYS_RESET | спрацював watchdog таймера 0 |
+| `0x8` | TG1WDT_SYS_RESET | спрацював watchdog таймера 1 |
+| `0x9` | RTCWDT_SYS_RESET | спрацював RTC watchdog |
+| `0xc` | SW_CPU_RESET | скидання ядра з коду; часто після паніки |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе, разом з RTC |
 ```
-rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
-```
-````
 
 **Доказ**
 
