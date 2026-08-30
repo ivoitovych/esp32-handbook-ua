@@ -20,7 +20,7 @@ import sys
 from pathlib import Path
 
 from repo import ROOT  # noqa: E402  (root is found, not counted)
-sys.path.insert(0, str(ROOT / "tools"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import yaml  # noqa: E402
 
 RODY = {"dzherelo-ye", "pozyciya", "ne-tverdzhennya", "ne-rozibrav"}

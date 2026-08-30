@@ -53,7 +53,7 @@ pins:
 	@$(PY) tools/pins.py
 
 refuted:
-	@$(PY) tools/refuted.py
+	@$(PY) factcheck/tools/refuted.py
 
 struct-fields:
 	@$(PY) tools/struct_fields.py
@@ -69,40 +69,40 @@ correspondence:
 # 51 запис у черзі. А вигадане джерело, заглушка в кеші й доказ класу
 # `F` не можуть бути нічим, крім помилки, — і на них скрипт падає.
 layer3:
-	@$(PY) tools/layer3.py --zvit
+	@$(PY) factcheck/tools/layer3.py --zvit
 
 # Модальність: припис у книзі проти дозволу в джерелі. Звіт, не
 # ворота — припис може бути обґрунтованим, і судить це людина.
 # Знайшов цей рід не інструмент, а помічник; інструмент дописано
 # після, і його перша редакція давала 88 % хибних спрацювань.
 modality:
-	@$(PY) tools/modality.py
+	@$(PY) factcheck/tools/modality.py
 
 # Кальки з російської. Ворота, а не звіт: перелік короткий і містить
 # лише однозначні заміни, тож знахідка тут — завжди помилка.
 calques:
-	@$(PY) tools/calques.py
+	@$(PY) factcheck/tools/calques.py
 
 # Поділ незвіреного між супровідниками за досяжністю джерела.
 split-queue:
-	@$(PY) tools/split_queue.py
+	@$(PY) factcheck/tools/split_queue.py
 
 # Кеш зовнішніх джерел: звірити sha256 наявних файлів із маніфестом.
 cache:
-	@$(PY) tools/cache.py --check
+	@$(PY) factcheck/tools/cache.py --check
 
 # Чи може доказ перевірити **третя сторона**. `--check` питає лише
 # про мій кеш; кеш у git не входить (копірайт), тож єдиний місток
 # назовні — рядок маніфесту. Доказ поза маніфестом відтворний тільки
 # в тому контейнері, де його писали.
 reproducible:
-	@$(PY) tools/cache.py --vidtvornist
+	@$(PY) factcheck/tools/cache.py --vidtvornist
 
 # Чи не потрапив файл книги в кеш джерел. Ворота, не звіт:
 # доказ, що доводить книгу книгою, проходить усі три шари, і
 # жодна інша перевірка його не бачить.
 cache-vs-book:
-	@$(PY) tools/cache_vs_book.py --tykho
+	@$(PY) factcheck/tools/cache_vs_book.py --tykho
 
 # Узгодженість керівних документів (М2). Не проза — лише факти, що
 # мають одну правильну відповідь: словник класів проти коду, названі
@@ -111,19 +111,19 @@ cache-vs-book:
 # Заведено після того, як словник класів розійшовся в ТРЬОХ документах
 # і це знайшлося читанням. Читання не масштабується й не працює в CI.
 docs:
-	@$(PY) tools/paths.py
-	@$(PY) tools/report.py
-	@$(PY) tools/docs.py
-	@$(PY) tools/doc_kind.py --suvoro
+	@$(PY) factcheck/tools/paths.py
+	@$(PY) factcheck/tools/report.py
+	@$(PY) factcheck/tools/docs.py
+	@$(PY) factcheck/tools/doc_kind.py --suvoro
 
 # Транслітеровані імена в коді: перелік, що може лише коротшати (М2).
 # Заведено після того, як власник знаходив їх поштучно — KLASY, SYLA,
 # --stysnuty, klas — швидше, ніж вони виправлялися. Перевірка падає на
 # БУДЬ-ЯКОМУ новому імені, тобто в коміті, який його вводить.
 naming:
-	@$(PY) tools/naming.py
-	@$(PY) tools/name_lists.py
-	@$(PY) tools/language.py
+	@$(PY) factcheck/tools/naming.py
+	@$(PY) factcheck/tools/name_lists.py
+	@$(PY) factcheck/tools/language.py
 
 # Ворота прогонів помічників (М2). Тут лише самоперевірка: справжній
 # прогін потребує теки з відповідями. Заведено після того, як злиття
@@ -131,7 +131,7 @@ naming:
 # спрацював при сухому читанні, і тул простояв зламаним годину —
 # бо жодна ціль його не кликала.
 run-gate:
-	@$(PY) tools/intake_f.py --self-check
+	@$(PY) factcheck/tools/intake_f.py --self-check
 
 # Ворота прийому (М2): чи придатний запис доказу до того, як стане
 # частиною реєстру. Компіляція взірця, теча, клас без цитати, книга як
@@ -155,26 +155,26 @@ run-gate:
 # Тепер ціль у `check`. Якщо М2 вважає, що рішення передчасне, —
 # рядок знімається одним словом, і це нормально.
 intake:
-	@$(PY) tools/intake.py
+	@$(PY) factcheck/tools/intake.py
 
 # Шар 1 як скрипт (М2): чи стоїть твердження картки в книзі, чи стоїть
 # там контекст і — головне — **чи містить контекст своє твердження**.
 # Останнього ми не перевіряли ніколи: контекст, що не містить свого
 # твердження, гірший за відсутній, бо обіцяє оточення, а дає чуже.
 layer1:
-	@$(PY) tools/layer1.py
+	@$(PY) factcheck/tools/layer1.py
 
 # Покриття (М2): чи кожен змістовний рядок книги став одиницею. Питання
 # зворотне до очевидного — «чи має одиниця картку» правда за побудовою.
 # Текст, якого розбирач не бачив, не має ні картки, ні класу й не
 # потрапляє в жоден підрахунок: він не незвірений, він невидимий.
 coverage:
-	@$(PY) tools/coverage.py
+	@$(PY) factcheck/tools/coverage.py
 
 # Правопис: перелік невідомих слів. Звіт, не ворота — судити про
 # українську має людина, інструмент лише скорочує їй роботу.
 spelling:
-	@$(PY) tools/spelling.py
+	@$(PY) factcheck/tools/spelling.py
 
 # Зібрати й покласти у release/ те, що бачить читач на GitHub.
 release:
@@ -191,12 +191,12 @@ release-check:
 	@$(PY) tools/linkcheck.py
 	@$(PY) tools/cross_refs.py
 	@$(PY) tools/pins.py
-	@$(PY) tools/refuted.py
+	@$(PY) factcheck/tools/refuted.py
 	@$(PY) tools/struct_fields.py
-	@$(PY) tools/arithmetic.py >/dev/null && echo "arytmetyka: збіглося"
+	@$(PY) factcheck/tools/arithmetic.py >/dev/null && echo "arytmetyka: збіглося"
 	@echo "── листування (строго: відкрите питання зупиняє випуск)"
 	@$(PY) tools/correspondence.py --suvoro
-	@$(PY) tools/cache.py --check
+	@$(PY) factcheck/tools/cache.py --check
 	@echo "── рецензійні перевірки (строго)"
 	@$(PY) tools/review.py --strict >/dev/null && echo "review: 0 знахідок"
 	@echo "── реєстр фактчекінгу"
@@ -212,8 +212,8 @@ release-check:
 # наступний `sketch` його не прибрав. Зупиняти випуск має `vorota` —
 # але побачити розходження треба **до** того, як хтось візьме з реєстру
 # номер рядка й піде за ним у книгу.
-	@$(PY) tools/factcheck.py stale
-	@$(PY) tools/factcheck.py vorota
+	@$(PY) factcheck/tools/factcheck.py stale
+	@$(PY) factcheck/tools/factcheck.py vorota
 # Третій шар у випускних воротах — **звичайний режим, не `--suvoro`**.
 #
 # Він розрізняє рівно те, що потрібне на випуску: вигадане джерело,
@@ -225,7 +225,7 @@ release-check:
 # check` червонів через чужі записи, а друк ішов. Зовнішня рецензія
 # назвала це правильно — **проєкт, чия головна сила в перевірності
 # доказів, не має випускатися з відомо зламаним інваріантом.**
-	@$(PY) tools/layer3.py
+	@$(PY) factcheck/tools/layer3.py
 	@echo "── повне збирання без пропусків"
 	@$(PY) tools/build.py --strict
 	@echo "── авторство"
@@ -239,7 +239,7 @@ budgets:
 check: self-checks docs naming intake linkcheck cross-refs pins refuted struct-fields correspondence cache layer3 modality calques budgets arithmetic stale schema reproducible cache-vs-book layer1 coverage run-gate check-attribution
 
 arithmetic:
-	@python3 tools/arithmetic.py
+	@python3 factcheck/tools/arithmetic.py
 
 # Чи реєстр іще про **цю** книгу — див. докстрінг `stale`.
 # Звіт, не зупинка: розходження нормальне доти, доки
@@ -247,13 +247,13 @@ arithmetic:
 # треба **до** того, як хтось візьме з реєстру номер рядка
 # й піде за ним у книгу.
 stale:
-	@python3 tools/factcheck.py stale
+	@python3 factcheck/tools/factcheck.py stale
 
 # Схема запису доказу й контракт картки. Порушень зараз нуль — тож
 # лишилося зробити її воротами; поки звіт, бо шість записів М2 чекають
 # на переведення в `looked-not-found`, і після нього це стане ворітьми.
 schema:
-	@python3 tools/schema.py
+	@python3 factcheck/tools/schema.py
 
 # Самоперевірки: показ кожної перевірки на **навмисно зіпсованому**
 # вході. Правило проєкту каже, що перевірка без такого показу не
@@ -267,18 +267,18 @@ schema:
 # це в порожню кімнату. Червона перевірка, якої ніхто не кличе,
 # рівно так само зелена.
 self-checks:
-	@$(PY) tools/schema.py --samoperevirka
-	@$(PY) tools/leak.py --samoperevirka
-	@$(PY) tools/task_spec.py --samoperevirka
-	@$(PY) tools/maintenance.py --samoperevirka
-	@$(PY) tools/doc_kind.py --samoperevirka
-	@$(PY) tools/cache.py --samoperevirka
-	@$(PY) tools/docs.py --proba
+	@$(PY) factcheck/tools/schema.py --samoperevirka
+	@$(PY) factcheck/tools/leak.py --samoperevirka
+	@$(PY) factcheck/tools/task_spec.py --samoperevirka
+	@$(PY) factcheck/tools/maintenance.py --samoperevirka
+	@$(PY) factcheck/tools/doc_kind.py --samoperevirka
+	@$(PY) factcheck/tools/cache.py --samoperevirka
+	@$(PY) factcheck/tools/docs.py --proba
 
 # Кожна точка входу технології, а не лише ті, що у воротах.
 #
 # `make check` кличе 18 цілей; точок входу більше, і скільки саме —
-# друкує `tools/entry_points.py --list`, а не цей коментар: попереднє
+# друкує `factcheck/tools/entry_points.py --list`, а не цей коментар: попереднє
 # число тут (54) розійшлося з переліком, як і «п'ятдесят дві» в
 # доктрингу самого гарнесу. Саме там вижили всі дев'ять зламів
 # переведення імен полів 2026-08-28, і саме там їх знайшов цей гарнес.
@@ -286,12 +286,12 @@ self-checks:
 # Це не ворота: прогін довгий і потрібен навколо змін, що мають
 # **зберігати поведінку** — перейменувань, переїздів, рефакторингів.
 #
-#   tools/entry_points.py --capture /tmp/do
+#   factcheck/tools/entry_points.py --capture /tmp/do
 #   …зміна…
-#   tools/entry_points.py --capture /tmp/pislya
-#   tools/entry_points.py --diff /tmp/do /tmp/pislya
+#   factcheck/tools/entry_points.py --capture /tmp/pislya
+#   factcheck/tools/entry_points.py --diff /tmp/do /tmp/pislya
 entry-points:
-	@$(PY) tools/entry_points.py --missing
+	@$(PY) factcheck/tools/entry_points.py --missing
 
 check-attribution:
 	@sh -c '. ./.githooks/identity.conf; \

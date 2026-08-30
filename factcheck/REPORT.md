@@ -1,6 +1,6 @@
 # The fact-check of this book
 
-> **generated** — `tools/report.py`. Editing it by hand only moves the
+> **generated** — `factcheck/tools/report.py`. Editing it by hand only moves the
 > next run's diff, never the state it describes.
 
 What has been checked in *Довідник ESP32*, against what, and what is
@@ -54,19 +54,19 @@ may not be carried over** — its sample was picked where the light was.
 
 Corrections to the book that came out of this work are recorded per
 pass in `METHOD.md`, Part I. Refuted claims and the patterns that
-caught them are in `data/book/REFUTED.md`.
+caught them are in `reports/REFUTED.md`.
 
 ## Sources
 
 ```
-  evidence records          201
+  evidence records            0
   quotes checked verbatim against the source document
                               —   reports/QUOTES.md
 ```
 
 Sources that cannot be reached from the environment this book is made
 in are not dropped and do not pretend to have been checked: they
-become a hand-off in `data/book/UNREACHABLE-SOURCES.md`, with the
+become a hand-off in `reports/UNREACHABLE-SOURCES.md`, with the
 document, what to look for in it, and the claims that depend on it.
 
 ## Runs

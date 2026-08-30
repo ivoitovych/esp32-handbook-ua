@@ -40,7 +40,7 @@ RE_POLE = re.compile(r"\.([a-zA-Z_]\w*(?:\.\w+)*)\s*=")
 
 def dozvoleni() -> dict[str, set[str]]:
     """Поля структур із генератора заглушок — тобто із заголовків ESP-IDF."""
-    sys.path.insert(0, str(ROOT / "tools"))
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
     import importlib.util
     spec = importlib.util.spec_from_file_location(
         "kod_stubs", ROOT / "tools" / "kod-stubs.py")
