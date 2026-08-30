@@ -51,7 +51,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(ROOT / "tools"))
 
 IDF = "https://raw.githubusercontent.com/espressif/esp-idf/master/"

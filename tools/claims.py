@@ -23,7 +23,7 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 GRUPY = ("kartky", "manual", "dodatky", "inserts")
 
 ODYNYCI = r"(?:мкА|мА|А|мкФ|нФ|мкс|мс|с|год|кГц|МГц|ГГц|Гц|кОм|МОм|Ом|" \

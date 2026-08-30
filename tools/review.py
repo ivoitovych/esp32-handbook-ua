@@ -22,7 +22,7 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 GRUPY = ("kartky", "manual", "dodatky", "inserts")
 
 RE_ANCHOR = re.compile(r"\{#([a-z0-9][a-z0-9-]*)\}")

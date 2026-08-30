@@ -38,7 +38,7 @@ import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 KNYHA = ROOT / "build" / "esp32-dovidnyk.pdf"
 CIL = ROOT / "dodatky" / "z-pokazhchyk.md"
 

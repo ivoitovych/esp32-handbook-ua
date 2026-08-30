@@ -54,7 +54,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 
 RE_SPYSOK = re.compile(
     r"^([A-Z][A-Z0-9_]*)\s*=\s*[\[\{\(]((?:[^\]\}\)]|\n)*?)[\]\}\)]", re.M)
@@ -101,6 +101,15 @@ def perevirka(dzherelo: dict[str, str] | None = None) -> list[str]:
                    for f in sorted((ROOT / "tools").glob("*.py"))})
     for f, t in fajly.items():
         for m in RE_SPYSOK.finditer(t):
+            # Перелік може існувати САМЕ ЗАРАДИ неіснуючих імен: у
+            # `paths.py` це показові шляхи, які мусять не існувати — на
+            # них перевірка й показує, що ловить. Позначка стоїть рядком
+            # вище самого переліку, а не списком винятків тут: інакше цей
+            # файл тримав би копію чужого імені, тобто рівно те, проти
+            # чого він написаний.
+            pered = t[:m.start()].rsplit("\n", 2)
+            if any("name_lists: not-files" in x for x in pered[-2:]):
+                continue
             imena = [a or b for a, b in RE_LITERAL.findall(m.group(2))]
             imena = [i for i in imena if RE_FAYL.search(i)]
             if len(imena) < 2:
@@ -123,8 +132,12 @@ def proba() -> int:
          'SPYSOK = ["METHOD.md", "SCHEMA.md", "METHOD.md"]\n', True),
         ("a name of nothing",
          'SPYSOK = ["METHOD.md", "NEMAYE-TAKOHO.md"]\n', True),
+        # Випадок називав `SCHEMA.md`, поки той існував. Після зведення
+        # у `METHOD.md` «справний перелік» став переліком неіснуючого —
+        # і показ провалився, слушно. Показ старіє разом із деревом, і
+        # ловиться це лише тим, що показ узагалі виконують.
         ("a sound list",
-         'SPYSOK = ["METHOD.md", "SCHEMA.md"]\n', False),
+         'SPYSOK = ["METHOD.md", "REPORT.md"]\n', False),
         ("a glob is not a missing file",
          'SPYSOK = ["METHOD.md", "REFUTED*.md"]\n', False),
     ]

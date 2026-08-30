@@ -55,7 +55,7 @@ from pathlib import Path
 
 import yaml
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(ROOT / "tools"))
 
 import factcheck  # noqa: E402  — після sys.path

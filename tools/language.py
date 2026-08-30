@@ -60,7 +60,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 BASELINE = ROOT / "factcheck" / "data" / "reports" / "LANGUAGE.md"
 
 # Частка кирилиці, вище якої документ вважається українським. Не нуль:

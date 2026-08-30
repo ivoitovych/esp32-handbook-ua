@@ -25,7 +25,7 @@ from pathlib import Path
 
 import yaml
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 # Реєстрів може бути кілька: головний і по одному на паралельного
 # супровідника (`REFUTED-M2.md`). Так вони не б'ються при злитті —
 # кожен пише лише у свій файл.

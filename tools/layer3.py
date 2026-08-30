@@ -63,7 +63,7 @@ import yaml
 
 import factcheck
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 DOKAZY = ROOT / "factcheck" / "data" / "evidence"
 KESH = ROOT / "factcheck" / "source-cache"
 ZVIT = ROOT / "factcheck" / "data" / "reports" / "QUOTES.md"

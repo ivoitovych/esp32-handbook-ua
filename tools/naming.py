@@ -35,7 +35,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 BASELINE = ROOT / "factcheck" / "data" / "reports" / "TRANSLITERATION.md"
 
 # Англійські корені, які трапляються в іменах. Перелік навмисно

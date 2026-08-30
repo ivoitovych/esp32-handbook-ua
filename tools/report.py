@@ -42,7 +42,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 FC = ROOT / "factcheck"
 TARGET = FC / "REPORT.md"
 REPORTS = FC / "data" / "reports"

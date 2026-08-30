@@ -122,7 +122,7 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 GRUPY = ("manual", "dodatky", "kartky", "inserts")
 
 RE_SRC = re.compile(r"<!-- fc id:(\S+) sha:\S+ src:(\S+?):(\d+) klas:(\S+) -->")

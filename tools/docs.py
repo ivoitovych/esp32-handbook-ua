@@ -50,7 +50,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 FC = ROOT / "factcheck"
 sys.path.insert(0, str(ROOT / "tools"))
 

@@ -66,7 +66,7 @@ from pathlib import Path
 
 import yaml
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(ROOT / "tools"))
 
 # `T-45-001` — номер одиниці; `f98283f2` — хеш її вмісту. За першим

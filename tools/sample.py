@@ -56,7 +56,7 @@ import yaml
 
 import helper_dumps
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 GRUPY = ("manual", "kartky", "dodatky", "inserts")
 CIL = ROOT / "factcheck" / "data" / "reports" / "BRIEF-SAMPLE.md"
 

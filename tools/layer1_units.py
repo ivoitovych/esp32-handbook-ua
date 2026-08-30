@@ -56,7 +56,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 GRUPY = ("manual", "dodatky", "kartky", "inserts")
 RE_ZAH = re.compile(
     r"<!-- fc id:(\S+) sha:(\S+) src:(\S+?):(\d+) klas:(\S+) -->\n"
