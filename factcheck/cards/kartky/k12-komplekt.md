@@ -108,7 +108,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Офіційна специфікація ESP32 DevKit V4, схема модуля
 - **Дослівно з джерела:**
   > З kartky/k12-komplekt.md, таблиця «Мінімум», рядок 1:
@@ -205,7 +205,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Практичні рекомендації для електроніки, досвід паяння компонентів ESP32
 - **Дослівно з джерела:**
   > З kartky/k12-komplekt.md, таблиця «Мінімум», рядок 4:
@@ -505,7 +505,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -589,7 +589,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Практичні рекомендації для електроніки, досвід паяння компонентів ESP32
 - **Дослівно з джерела:**
   > З kartky/k12-komplekt.md, таблиця «Мінімум», рядок 4:
@@ -689,7 +689,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
 - **Дослівно з джерела:**
   > Мультиметр здатен вимірювати:

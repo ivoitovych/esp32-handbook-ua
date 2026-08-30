@@ -517,7 +517,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -553,7 +553,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/soc_caps.h (маски дійсних пінів) + `tools/pins.py`
 - **Дослівно з джерела:**
   > esp32: SOC_GPIO_PIN_COUNT 40
@@ -594,7 +594,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -630,7 +630,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -722,7 +722,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
   > 0x10  - GPIO0
@@ -861,7 +861,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 2-3 «Power Pins», сторінка 18
 - **Дослівно з джерела:**
   > VIN — це зовнішній пін модуля, підключений до входу встроєного
@@ -938,7 +938,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
 - **Дослівно з джерела:**
   > Мультиметр здатен вимірювати:
@@ -971,7 +971,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
 - **Дослівно з джерела:**
   > Мультиметр здатен вимірювати:
@@ -1120,7 +1120,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
@@ -1150,7 +1150,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
@@ -1180,7 +1180,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
 - **Дослівно з джерела:**
   > The read-flash command allows reading back the contents of flash. The arguments to the
@@ -1380,7 +1380,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** 74HC (CMOS Logic) Datasheet — наприклад, SN74HC04 (NOT gate)
 - **Дослівно з джерела:**
   > SN74HC04 Datasheet:
@@ -1411,7 +1411,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/a4dbe955-bootloader.rst
 - **Дослівно з джерела:**
   > I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
@@ -1462,7 +1462,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/README.md
 - **Дослівно з джерела:**
   > Viewing Serial Output
@@ -1682,7 +1682,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > NVS stores key-value pairs sequentially, with new key-value pairs being added at the end.

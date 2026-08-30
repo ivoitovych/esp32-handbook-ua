@@ -49,7 +49,7 @@ Bluetooth на ESP32 — тема, де найлегше витратити ча
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -87,7 +87,7 @@ Bluetooth на ESP32 — тема, де найлегше витратити ча
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -193,7 +193,7 @@ Bluetooth, на якому тримається безліч старих про
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/classic-bt/profiles-protocols.rst
 - **Дослівно з джерела:**
   > Serial Port Profile (SPP) defines a serial communication application based on the RFCOMM protocol, enabling RS-232-style data transmission over Bluetooth.
@@ -324,7 +324,7 @@ Bluetooth, на якому тримається безліч старих про
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/overview.rst
 - **Дослівно з джерела:**
   > * - ESP32
@@ -537,7 +537,7 @@ Bluetooth, на якому тримається безліч старих про
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/get-started/ble-introduction.rst
 - **Дослівно з джерела:**
   > Bluetooth LE is a Bluetooth protocol that is not compatible with Bluetooth Classic and was introduced in Bluetooth 4.0. As the name suggests, Bluetooth LE is a low-power Bluetooth protocol with a lower data transfer rate compared to Bluetooth Classic.
@@ -687,7 +687,7 @@ Bluetooth, на якому тримається безліч старих про
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/get-started/ble-connection.rst
 - **Дослівно з джерела:**
   > conn_itvl=36, conn_latency=0, supervision_timeout=500, encrypted=0, authenticated=0, bonded=0
@@ -1180,7 +1180,7 @@ BLE не передає потік. Він публікує **структуру
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/get-started/ble-data-exchange.rst
 - **Дослівно з джерела:**
   > In fact, the definitions of these services and characteristic data are also provided by the SIG. For example, the value of the Heart Rate Measurement must include a flag field and a heart rate measurement field, and may include fields such as energy expended, RR-interval, and transmission interval, among others. Therefore, these definitions from SIG allow Bluetooth LE devices from different manufacturers to recognize each other's services or characteristic data, enabling cross-manufacturer communication.
@@ -1233,7 +1233,7 @@ BLE не передає потік. Він публікує **структуру
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/bluetooth/index.rst
 - **Дослівно з джерела:**
   > ESP-IDF supports two host stacks: **Bluedroid** and **NimBLE**.
@@ -1261,7 +1261,7 @@ BLE не передає потік. Він публікує **структуру
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/bluetooth/index.rst
 - **Дослівно з джерела:**
   > - **Bluedroid** (the default stack): Supports both Bluetooth Classic and Bluetooth LE. Recommended for applications that require both technologies.
@@ -1310,7 +1310,7 @@ BLE не передає потік. Він публікує **структуру
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/overview.rst
 - **Дослівно з джерела:**
   > Although both support Bluetooth LE, ESP-NimBLE requires less heap and flash size.
@@ -1340,7 +1340,7 @@ BLE не передає потік. Він публікує **структуру
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/esp32-c3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > • SRAM: 400 KB (16 KB for cache)
@@ -1391,7 +1391,7 @@ classic-чипі.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/Kconfig та .../components/bt/Kconfig
 - **Дослівно з джерела:**
   > (freertos/Kconfig)
@@ -1480,7 +1480,7 @@ Bluetooth — найважчий компонент після Wi-Fi. Проши
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/coexist.rst
 - **Дослівно з джерела:**
   > Each type of board has only one 2.4 GHz ISM band RF module, shared by two or three modules. Consequently, a module cannot receive or transmit data while another module is engaged in data transmission or reception.
@@ -1556,7 +1556,7 @@ Bluetooth — найважчий компонент після Wi-Fi. Проши
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ESP-IDF Programming Guide, mbedTLS memory footprint / ESP-TLS — оцінка пам'яті на з'єднання; цитати не дістав
 - **Спосіб і дата:** позахідна знань про пам'ять та криптографію, 2026-08-27
 - **Нотатка:** Клас B без цитати. Джерело для витрат пам'яті на TLS-з'єднання існує (документація mbedTLS в ESP-IDF наводить порядок величин), але я його не відкривав. Тому C.
@@ -1605,7 +1605,7 @@ BLE спроєктований для батарейок, і його голов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/get-started/ble-introduction.rst
 - **Дослівно з джерела:**
   > Bluetooth LE is a low-power Bluetooth protocol with a lower data transfer rate compared to Bluetooth Classic. It is typically used in data communication for the Internet of Things (IoT), such as smart switches or sensors
@@ -1634,7 +1634,7 @@ BLE спроєктований для батарейок, і його голов
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -2015,7 +2015,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bt/host/bluedroid/stack/include/stack/gatt_api.h та https://raw.githubusercontent.com/apache/mynewt-nimble/master/nimble/host/include/host/ble_att.h
 - **Дослівно з джерела:**
   > (Bluedroid, у складі ESP-IDF)
@@ -2053,7 +2053,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bt/host/bluedroid/stack/include/stack/gatt_api.h та https://raw.githubusercontent.com/apache/mynewt-nimble/master/nimble/host/include/host/ble_att.h
 - **Дослівно з джерела:**
   > (Bluedroid, у складі ESP-IDF)
@@ -2200,7 +2200,7 @@ Classic — тільки на classic-чипі; SPP на S3 і C3 не існу�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/overview.rst
 - **Дослівно з джерела:**
   > Although both support Bluetooth LE, ESP-NimBLE requires less heap and flash size.

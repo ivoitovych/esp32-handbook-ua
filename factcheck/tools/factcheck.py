@@ -399,8 +399,23 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
     return odynyci
 
 
+# Куди лягає картка. Дзеркало книги живе під `cards/`, а не в корені
+# `factcheck/`.
+#
+# Цей рядок — обчислений шлях, і саме тому `paths.py` його не бачить:
+# той читає літерали. Після переїзду карток `sketch` мовчки писав у
+# `factcheck/manual/` — теку, якої більше немає, — і `mkdir(parents=True)`
+# слухняно її створював. Дев'яносто дві картки лягли поруч зі
+# справжніми, жодна перевірка не впала, і `git status` показав би не
+# помилку, а роботу.
+#
+# > Перевірка літералів не бачить обчислених шляхів. Її межа записана в
+# > `paths.py`, і ось випадок, який у ту межу впав.
+KARTKY = "cards"
+
+
 def shlyakh_reyestru(f: Path) -> Path:
-    return FC / f.relative_to(ROOT)
+    return FC / KARTKY / f.relative_to(ROOT)
 
 
 def prefiks(f: Path) -> str:

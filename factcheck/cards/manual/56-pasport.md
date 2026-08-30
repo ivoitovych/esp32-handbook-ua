@@ -231,7 +231,7 @@ GPIO25 → реле насоса, ключ на MOSFET (низький = вим�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -265,7 +265,7 @@ GPIO25 → реле насоса, ключ на MOSFET (низький = вим�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/soc_caps.h (маски дійсних пінів) + `tools/pins.py`
 - **Дослівно з джерела:**
   > esp32: SOC_GPIO_PIN_COUNT 40
@@ -304,7 +304,7 @@ GPIO25 → реле насоса, ключ на MOSFET (низький = вим�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -338,7 +338,7 @@ GPIO25 → реле насоса, ключ на MOSFET (низький = вим�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -372,7 +372,7 @@ GPIO25 → реле насоса, ключ на MOSFET (низький = вим�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -476,7 +476,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > NVS operates on key-value pairs. Keys are ASCII strings; the maximum key length is currently 15 characters. Values can have one of the following types:
@@ -634,7 +634,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/ds18b20.pdf
 - **Дослівно з джерела:**
   > Available in 8-Pin SO (150 mils), 8-Pin µSOP, and 3-Pin TO-92 Packages
@@ -663,7 +663,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
 - **Дослівно з джерела:**
   > System recovery and restart mechanism through watchdog monitoring.
@@ -1075,7 +1075,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Додаток F, рядок 57 — це рекомендація щодо артефактів збирання, а не факт про мікросхему.
 - **Дослівно з джерела:**
   > **`.elf` того самого збирання** — без нього backtrace із поля

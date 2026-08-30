@@ -296,7 +296,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
 - **Дослівно з джерела:**
   > System recovery and restart mechanism through watchdog monitoring.
@@ -328,7 +328,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -452,7 +452,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -550,7 +550,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ESP32-C3 datasheet або ESP-IDF документація про характеристики чипів — не знайдено в source-cache конкретного документа з 400 КБ
 - **Спосіб і дата:** пошук в source-cache, 2026-08-27
 - **Нотатка:** Таблиця розділу 57 порівнює різні варіанти ESP32 за використанням. 400 КБ для C3 — це справді інтегрована флеш, це реальна специфікація чипа. Проте в кеші немає прямого посилання на datasheet C3, який би цей розмір підтвердив. Інформація істинна, але документ не отримано.

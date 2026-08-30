@@ -1,6 +1,6 @@
 # Наряд: 60 цитат, яких немає в джерелі
 
-**Генерується** `tools/work_orders.py`. Питання **не** про цитату.
+**Генерується** `factcheck/tools/work_orders.py`. Питання **не** про цитату.
 
 Третій шар уже сказав, що цитати за адресою немає. Причина відома і
 здебільшого та сама: супровідник **причепурив** цитату — скоротив
@@ -112,7 +112,7 @@ whole batch is lost, not just that entry.
 
 ---
 
-*Task spec `0a35a92e` · blocks: ORIENTATION, VERBATIM, HONEST-MISS, NETWORK, STUB, VERDICTS-VERDICT-TEST, NO-SELF-REFERENCE, FORMAT. Quote this version when reporting results from this wave.*
+*Task spec `e969dbf9` · blocks: ORIENTATION, VERBATIM, HONEST-MISS, NETWORK, STUB, VERDICTS-VERDICT-TEST, NO-SELF-REFERENCE, FORMAT. Quote this version when reporting results from this wave.*
 
 ## Пакет 1
 

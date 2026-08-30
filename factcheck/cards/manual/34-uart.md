@@ -28,7 +28,7 @@ UART — найстаріший і найнадійніший спосіб з'є
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > A Universal Asynchronous Receiver/Transmitter (UART) is a hardware feature that handles communication (i.e., timing requirements and data framing) using widely-adopted asynchronous serial communication interfaces
@@ -58,7 +58,7 @@ UART — найстаріший і найнадійніший спосіб з'є
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > A UART provides a widely adopted and cheap method to realize full-duplex or half-duplex data exchange among different devices
@@ -110,7 +110,7 @@ UART — найстаріший і найнадійніший спосіб з'є
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > The {IDF_TARGET_NAME} chip has {IDF_TARGET_SOC_UART_HP_NUM} UART controllers
@@ -252,7 +252,7 @@ uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -438,7 +438,7 @@ uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
 - **Дослівно з джерела:**
   > Звірено вісім структур, усі поля, які книга ініціалізує:
@@ -530,7 +530,7 @@ uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -580,7 +580,7 @@ uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -625,7 +625,7 @@ if (n > 0) obrobyty(buf, n);
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -689,7 +689,7 @@ if (n > 0) obrobyty(buf, n);
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > When there is free space in the TX FIFO buffer, an interrupt service routine (ISR) moves the data from the TX ring buffer to the TX FIFO buffer in the background
@@ -719,8 +719,8 @@ if (n > 0) obrobyty(buf, n);
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py
 - **Розрахунок:**
   30 перевірок, усі збіглися. Найважливіші:
     (3.3 − 2) / 0.007            = 185.7 Ом      → книга: 185, беремо 220
@@ -747,7 +747,7 @@ if (n > 0) obrobyty(buf, n);
     1750 / 2.85                  = 614 діб
     2500 × 0.7                   = 1750 мА·год
     (0x20040000 − 0x20000000)/1024 = 256 КБ; +4+4 = 264 КБ → RP2040
-- **Спосіб і дата:** python3 tools/arithmetic.py, 2026-08-26
+- **Спосіб і дата:** python3 factcheck/tools/arithmetic.py, 2026-08-26
 - **Нотатка:** Перевірку внесено в `make check` окремою ціллю `arytmetyka`. Це відповідь на те, як у книгу колись потрапили значення `duty` для серво від іншої роздільності: абзац із неправильним добутком внутрішньо несуперечливий і зовнішнього джерела не потребує, тож ні читання, ні звірка з першоджерелом його не ловлять. Ловить лише калькулятор — і тепер він запускається сам.
 - **Прохід:** pass-05-obchyslennya
 
@@ -773,8 +773,8 @@ if (n > 0) obrobyty(buf, n);
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py
 - **Розрахунок:**
   30 перевірок, усі збіглися. Найважливіші:
     (3.3 − 2) / 0.007            = 185.7 Ом      → книга: 185, беремо 220
@@ -801,7 +801,7 @@ if (n > 0) obrobyty(buf, n);
     1750 / 2.85                  = 614 діб
     2500 × 0.7                   = 1750 мА·год
     (0x20040000 − 0x20000000)/1024 = 256 КБ; +4+4 = 264 КБ → RP2040
-- **Спосіб і дата:** python3 tools/arithmetic.py, 2026-08-26
+- **Спосіб і дата:** python3 factcheck/tools/arithmetic.py, 2026-08-26
 - **Нотатка:** Перевірку внесено в `make check` окремою ціллю `arytmetyka`. Це відповідь на те, як у книгу колись потрапили значення `duty` для серво від іншої роздільності: абзац із неправильним добутком внутрішньо несуперечливий і зовнішнього джерела не потребує, тож ні читання, ні звірка з першоджерелом його не ловлять. Ловить лише калькулятор — і тепер він запускається сам.
 - **Прохід:** pass-05-obchyslennya
 
@@ -980,7 +980,7 @@ if (n > 0) obrobyty(buf, n);
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > A UART provides a widely adopted and cheap method to realize full-duplex or half-duplex data exchange among different devices
@@ -1010,7 +1010,7 @@ if (n > 0) obrobyty(buf, n);
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
 - **Дослівно з джерела:**
   > Table 11. Characteristics of the SDA and SCL bus lines:
@@ -1078,7 +1078,7 @@ if (n > 0) obrobyty(buf, n);
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.ti.com/ та https://www.analog.com/ (datasheet відповідних трансиверів)
 - **Що шукати в джерелі:** напруга живлення й рівні логічних входів/виходів кожного: SN65HVD230 (3.3 В), TJA1050 і MCP2551 (5 В, рівень виходу RX), MAX485 (5 В) і його 3.3-вольтові аналоги на кшталт SP3485/MAX3485.
 - **Нотатка:** Твердження книги «5-вольтовий трансивер може спалити пін ESP32» спирається саме на рівень виходу RX і на те, що вхід ESP32 не толерантний до 5 В. Обидві половини потребують окремих datasheet.
@@ -1104,7 +1104,7 @@ if (n > 0) obrobyty(buf, n);
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.ti.com/ та https://www.analog.com/ (datasheet відповідних трансиверів)
 - **Що шукати в джерелі:** напруга живлення й рівні логічних входів/виходів кожного: SN65HVD230 (3.3 В), TJA1050 і MCP2551 (5 В, рівень виходу RX), MAX485 (5 В) і його 3.3-вольтові аналоги на кшталт SP3485/MAX3485.
 - **Нотатка:** Твердження книги «5-вольтовий трансивер може спалити пін ESP32» спирається саме на рівень виходу RX і на те, що вхід ESP32 не толерантний до 5 В. Обидві половини потребують окремих datasheet.
@@ -1152,7 +1152,7 @@ if (n > 0) obrobyty(buf, n);
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > either DTR or RTS pin can be connected to the DE/~RE pin of the transceiver module to achieve half-duplex communication.
@@ -1189,7 +1189,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1231,7 +1231,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1272,7 +1272,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1313,7 +1313,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1354,7 +1354,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > The DTR line is automatically controlled by the hardware directly under RS485 half-duplex mode, while the RTS line is software-controlled by the UART driver. Once the host starts writing data to the TX FIFO buffer, the UART driver automatically asserts the RTS pin (logic 1); once the last bit of the data has been transmitted, the driver de-asserts the RTS pin (logic 0)
@@ -1383,7 +1383,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
 - **Дослівно з джерела:**
   > Table 11. Characteristics of the SDA and SCL bus lines:
@@ -1428,7 +1428,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** RS-485 стандарт (IEC 61000-2); типова схемотехніка
 - **Дослівно з джерела:**
   > RS-485 лінії A і B мають бути закінчені резисторами 120 Ом
@@ -1459,7 +1459,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > Interface Connection Options
@@ -1488,7 +1488,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > This circuit does not allow for collision detection. It suppresses the null bytes that the hardware receives when the bit ``UART_RS485_CONF_REG.UART_RS485TX_RX_EN`` is set.
@@ -1517,7 +1517,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
 - **Дослівно з джерела:**
   > Мультиметр здатен вимірювати:
@@ -1574,7 +1574,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > Interface Connection Options
@@ -1603,7 +1603,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > This circuit is preferable because it allows for collision detection
@@ -1631,7 +1631,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
 - **Дослівно з джерела:**
   > Table 11. Characteristics of the SDA and SCL bus lines:
@@ -1767,7 +1767,7 @@ ESP-IDF має штатний компонент `esp-modbus` для обох р
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/protocols/modbus.rst
 - **Дослівно з джерела:**
   > The Espressif ESP-Modbus Library (esp-modbus) supports Modbus communication
@@ -1913,7 +1913,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
   > rst:0x10 (RTCWDT_RTC_RESET)
@@ -2126,7 +2126,7 @@ TX до RX перехресно, спільна земля обов'язкова
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > The RX FIFO can trigger an interrupt when it receives more data than the FIFO can store.
@@ -2154,7 +2154,7 @@ RS-485: `uart_wait_tx_done` перед перемиканням напрямку
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
 - **Дослівно з джерела:**
   > Table 11. Characteristics of the SDA and SCL bus lines:
@@ -2197,7 +2197,7 @@ RS-485: `uart_wait_tx_done` перед перемиканням напрямку
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** RS-485 стандарт (IEC 61000-2); типова схемотехніка
 - **Дослівно з джерела:**
   > RS-485 лінії A і B мають бути закінчені резисторами 120 Ом

@@ -25,7 +25,7 @@
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** tools/cross_refs.py — перевірка проти дерева файлів репозиторію
 - **Розрахунок:**
   posylannya: згадок 689, адресатів 79, помилок 0
@@ -62,7 +62,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
 - **Дослівно з джерела:**
   > The preferred way to invoke esptool command-line tools has changed. Instead of running
@@ -126,7 +126,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
@@ -166,7 +166,7 @@ esptool version
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
@@ -197,7 +197,7 @@ esptool version
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
@@ -251,7 +251,7 @@ esptool version
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
@@ -289,7 +289,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
 - **Дослівно з джерела:**
   > The read-flash command allows reading back the contents of flash. The arguments to the
@@ -332,7 +332,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
 - **Дослівно з джерела:**
   > The read-flash command allows reading back the contents of flash. The arguments to the
@@ -375,7 +375,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > flash capacity and partition allocation
@@ -407,8 +407,8 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
 - **Розрахунок:**
   таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
   nvs               0x9000 + 0x6000          = 0xF000
@@ -446,7 +446,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > a partition table is flashed to (:menuitem:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`) 0x8000 in the flash
@@ -529,7 +529,7 @@ esptool --port PORT verify-flash 0x10000 app.bin        # звірити
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://github.com/espressif/esp-idf/blob/master/docs/en/api-guides/bootloader.rst — ESP-IDF, API Guide, Bootloader (Partition table offset calculation)
 - **Дослівно з джерела:**
   > .. Above is calculated as:
@@ -561,7 +561,7 @@ esptool --port PORT --baud 460800 write-flash -z \
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
   > rst:0x10 (RTCWDT_RTC_RESET)
@@ -621,7 +621,7 @@ esptool --port PORT verify-flash 0x10000 app.bin        # звірити
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -670,7 +670,7 @@ esptool --port PORT erase-region 0x9000 0x6000   # лише NVS
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > nvs,      data, nvs,     0x9000,  0x6000,
@@ -725,7 +725,7 @@ esptool --port PORT erase-region 0x9000 0x6000   # лише NVS
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > nvs,      data, nvs,     0x9000,  0x6000,
@@ -759,7 +759,7 @@ esptool --chip esp32 merge-bin -o vyrib.bin --flash-mode dio --flash-size 4MB \
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
   > rst:0x10 (RTCWDT_RTC_RESET)
@@ -797,7 +797,7 @@ esptool --chip esp32 merge-bin -o vyrib.bin --flash-mode dio --flash-size 4MB \
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
   > rst:0x10 (RTCWDT_RTC_RESET)
@@ -835,7 +835,7 @@ argument`. Значення має збігатися з чипом, під як
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
 - **Дослівно з джерела:**
   > def merge_bin_cli(ctx, addr_filename, **kwargs):
@@ -876,7 +876,7 @@ argument`. Значення має збігатися з чипом, під як
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
 - **Дослівно з джерела:**
   > def merge_bin_cli(ctx, addr_filename, **kwargs):
@@ -1010,7 +1010,7 @@ argument`. Значення має збігатися з чипом, під як
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/esptool/basic-commands.rst
 - **Дослівно з джерела:**
   > @click.option(
@@ -1064,7 +1064,7 @@ argument`. Значення має збігатися з чипом, під як
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/esptool/basic-commands.rst
 - **Дослівно з джерела:**
   > @click.option(
@@ -1211,7 +1211,7 @@ argument`. Значення має збігатися з чипом, під як
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/advanced-options.rst
 - **Дослівно з джерела:**
   > :not esp8266 and not esp32 and not esp32h2 and not esp32c6 and not esp32h4
@@ -1279,7 +1279,7 @@ argument`. Значення має збігатися з чипом, під як
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/esptool/basic-commands.rst
 - **Дослівно з джерела:**
   > @click.option(
@@ -1421,7 +1421,7 @@ espefuse --port PORT summary        # безпечно: подивитися с�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -1466,7 +1466,7 @@ espefuse --port PORT summary        # безпечно: подивитися с�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -1519,7 +1519,7 @@ idf.py menuconfig               # пошук усередині — клавіш
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -1567,7 +1567,7 @@ idf.py menuconfig               # пошук усередині — клавіш
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -1615,7 +1615,7 @@ idf.py menuconfig               # пошук усередині — клавіш
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -1663,7 +1663,7 @@ idf.py menuconfig               # пошук усередині — клавіш
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -1711,7 +1711,7 @@ idf.py menuconfig               # пошук усередині — клавіш
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -1770,7 +1770,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
   > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
@@ -1928,7 +1928,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -1979,7 +1979,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -2030,7 +2030,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
   > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
@@ -2067,7 +2067,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
   > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
@@ -2104,7 +2104,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
   > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
@@ -2146,7 +2146,7 @@ idf.py size-files
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -2193,7 +2193,7 @@ idf.py size-files
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -2240,7 +2240,7 @@ idf.py size-files
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -2287,7 +2287,7 @@ idf.py size-files
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -2340,7 +2340,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > idf.py monitor
@@ -2372,7 +2372,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -2420,7 +2420,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -2468,7 +2468,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -2516,7 +2516,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > idf.py monitor
@@ -2549,7 +2549,7 @@ idf.py reconfigure
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -2595,7 +2595,7 @@ idf.py reconfigure
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -2641,7 +2641,7 @@ idf.py reconfigure
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -2788,7 +2788,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
 - **Дослівно з джерела:**
   > (inlined by) inner_dont_crash
@@ -2854,7 +2854,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-monitor.rst
 - **Дослівно з джерела:**
   > * - Ctrl + ]
@@ -2907,7 +2907,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-monitor.rst
 - **Дослівно з джерела:**
   > * - Ctrl + ]
@@ -3329,7 +3329,7 @@ sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в с
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
   > For Linux users, if the port name is ``/dev/ttyUSB0``
@@ -3621,7 +3621,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > config BOOTLOADER_OFFSET_IN_FLASH
@@ -3640,7 +3640,7 @@ pio pkg update
 - **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
-`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arithmetic.py`.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `factcheck/tools/arithmetic.py`.
 - **Прохід:** pass-31-adresy-i-api
 
 ---
@@ -3675,7 +3675,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst, рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: source-cache/8af5fd4e-boot-mode-selection.rst, source-cache/a4dbe955-bootloader.rst)
 - **Дослівно з джерела:**
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
@@ -3715,7 +3715,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > config BOOTLOADER_OFFSET_IN_FLASH
@@ -3734,7 +3734,7 @@ pio pkg update
 - **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
-`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arithmetic.py`.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `factcheck/tools/arithmetic.py`.
 - **Прохід:** pass-31-adresy-i-api
 
 ---
@@ -3769,7 +3769,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > For this reason a partition table is flashed to
@@ -3812,7 +3812,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > For this reason a partition table is flashed to
@@ -3855,7 +3855,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > For this reason a partition table is flashed to
@@ -3898,7 +3898,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > config BOOTLOADER_OFFSET_IN_FLASH
@@ -3917,7 +3917,7 @@ pio pkg update
 - **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
-`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arithmetic.py`.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `factcheck/tools/arithmetic.py`.
 - **Прохід:** pass-31-adresy-i-api
 
 ---
@@ -3952,7 +3952,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > config BOOTLOADER_OFFSET_IN_FLASH
@@ -3971,7 +3971,7 @@ pio pkg update
 - **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
-`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arithmetic.py`.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `factcheck/tools/arithmetic.py`.
 - **Прохід:** pass-31-adresy-i-api
 
 ---
@@ -4006,7 +4006,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > config BOOTLOADER_OFFSET_IN_FLASH
@@ -4025,7 +4025,7 @@ pio pkg update
 - **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
-`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arithmetic.py`.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `factcheck/tools/arithmetic.py`.
 - **Прохід:** pass-31-adresy-i-api
 
 ---
@@ -4060,7 +4060,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > config BOOTLOADER_OFFSET_IN_FLASH
@@ -4079,7 +4079,7 @@ pio pkg update
 - **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
-`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arithmetic.py`.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `factcheck/tools/arithmetic.py`.
 - **Прохід:** pass-31-adresy-i-api
 
 ---
@@ -4114,7 +4114,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > config BOOTLOADER_OFFSET_IN_FLASH
@@ -4133,7 +4133,7 @@ pio pkg update
 - **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
-`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arithmetic.py`.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `factcheck/tools/arithmetic.py`.
 - **Прохід:** pass-31-adresy-i-api
 
 ---
@@ -4168,7 +4168,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > config BOOTLOADER_OFFSET_IN_FLASH
@@ -4187,7 +4187,7 @@ pio pkg update
 - **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
-`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arithmetic.py`.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `factcheck/tools/arithmetic.py`.
 - **Прохід:** pass-31-adresy-i-api
 
 ---
@@ -4222,7 +4222,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
   > The merge-bin command will merge multiple binary files (of any kind)
@@ -4270,7 +4270,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst, рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: source-cache/8af5fd4e-boot-mode-selection.rst, source-cache/a4dbe955-bootloader.rst)
 - **Дослівно з джерела:**
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
@@ -4310,7 +4310,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
   > The merge-bin command will merge multiple binary files (of any kind)
@@ -4348,7 +4348,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
 - **Дослівно з джерела:**
   > config BOOTLOADER_OFFSET_IN_FLASH
@@ -4387,7 +4387,7 @@ pio pkg update
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
 - **Дослівно з джерела:**
   > config BOOTLOADER_OFFSET_IN_FLASH
@@ -4429,7 +4429,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/4aac28c3-partition-tables.rst
 - **Дослівно з джерела:**
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
@@ -4459,8 +4459,8 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
 - **Розрахунок:**
   таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
   nvs               0x9000 + 0x6000          = 0xF000
@@ -4496,7 +4496,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/4aac28c3-partition-tables.rst
 - **Дослівно з джерела:**
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
@@ -4531,7 +4531,7 @@ strings -n 6 dump.bin | grep -iE "http|mqtt|ssid|pass"
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
   > rst:0x10 (RTCWDT_RTC_RESET)
@@ -4595,7 +4595,7 @@ strings -n 6 dump.bin | grep -iE "http|mqtt|ssid|pass"
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
   > rst:0x10 (RTCWDT_RTC_RESET)
@@ -4661,8 +4661,8 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
 - **Розрахунок:**
   таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
   nvs               0x9000 + 0x6000          = 0xF000
@@ -4698,8 +4698,8 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
 - **Розрахунок:**
   таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
   nvs               0x9000 + 0x6000          = 0xF000
@@ -4735,8 +4735,8 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
 - **Розрахунок:**
   таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
   nvs               0x9000 + 0x6000          = 0xF000

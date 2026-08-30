@@ -27,7 +27,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_wifi.rst
 - **Дослівно з джерела:**
   > The Wi-Fi libraries provide support for configuring and monitoring the {IDF_TARGET_NAME} Wi-Fi networking functionality.
@@ -287,7 +287,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** ESP32 Series Datasheet v5.3 (2.4 GHz Wi-Fi only)
 - **Дослівно з джерела:**
   > 2.4 GHz Wi-Fi + Bluetooth® + Bluetooth LE SoC — ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip
@@ -339,7 +339,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 - **Дослівно з джерела:**
   > ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip
@@ -394,7 +394,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Професійний вимірювальний прилад для аналізу аналогових сигналів
 - **Дослівно з джерела:**
   > Осцилограф показує:
@@ -449,7 +449,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_wifi.rst
 - **Дослівно з джерела:**
   > Various security modes for the above (WPA, WPA2, WPA3, etc.)
@@ -477,7 +477,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi_types_generic.h
 - **Дослівно з джерела:**
   > uint8_t               schan;   /**< Start channel of the allowed 2.4GHz Wi-Fi channels */
@@ -528,7 +528,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_wifi.rst
 - **Дослівно з джерела:**
   > Various security modes for the above (WPA, WPA2, WPA3, etc.)
@@ -578,7 +578,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** IEEE 802.11, обмеження одного каналу одночасно
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** IEEE 802.11, обмеження одного каналу одночасно
@@ -634,7 +634,7 @@ esp_wifi_connect();
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -673,7 +673,7 @@ esp_wifi_init(&cfg);
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -817,7 +817,7 @@ esp_wifi_connect();
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -865,7 +865,7 @@ esp_wifi_connect();
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -913,7 +913,7 @@ esp_wifi_connect();
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -961,7 +961,7 @@ esp_wifi_connect();
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1000,7 +1000,7 @@ esp_wifi_connect();
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/main/station_example_main.c
 - **Дослівно з джерела:**
   > } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
@@ -1030,7 +1030,7 @@ esp_wifi_connect();
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1070,7 +1070,7 @@ esp_wifi_connect();
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
 - **Дослівно з джерела:**
   > I (2089) esp_netif_handlers: sta ip: 192.168.77.89
@@ -1124,7 +1124,7 @@ esp_wifi_connect();
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
 - **Дослівно з джерела:**
   > I (2089) wifi station: got ip:192.168.77.89
@@ -1219,7 +1219,7 @@ esp_wifi_connect();
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_common/include/esp_err.h
 - **Дослівно з джерела:**
   > typedef int esp_err_t;
@@ -1301,7 +1301,7 @@ esp_wifi_connect();
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1341,7 +1341,7 @@ esp_wifi_connect();
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/main/station_example_main.c
 - **Дослівно з джерела:**
   > } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
@@ -1419,7 +1419,7 @@ static void on_got_ip(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1460,7 +1460,7 @@ static void on_disconnect(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h
 - **Дослівно з джерела:**
   > esp_err_t esp_wifi_connect(void);
@@ -1491,7 +1491,7 @@ static void on_disconnect(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1647,7 +1647,7 @@ provisioning:
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/nvs_flash/include/nvs_flash.h
 - **Дослівно з джерела:**
   > esp_err_t nvs_flash_init(void);
@@ -1848,7 +1848,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1889,7 +1889,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1930,7 +1930,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h
 - **Дослівно з джерела:**
   > esp_err_t esp_wifi_sta_get_rssi(int *rssi);
@@ -2002,7 +2002,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/scan/README.md
 - **Дослівно з джерела:**
   > I (2783) scan: RSSI 		-50
@@ -2281,7 +2281,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
 - **Дослівно з джерела:**
   > ESP32-WROOM-32E: On-board PCB antenna
@@ -2332,7 +2332,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
 - **Дослівно з джерела:**
   > MHF I connector from I-PEX
@@ -2501,7 +2501,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -2552,7 +2552,7 @@ Wi-Fi — головний споживач у пристрої (розділ 06
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi_types_generic.h
 - **Дослівно з джерела:**
   > WIFI_PS_MIN_MODEM,   /**< Minimum modem power saving. In this mode, station wakes up to receive beacon every DTIM period */
@@ -2580,7 +2580,7 @@ Wi-Fi — головний споживач у пристрої (розділ 06
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h
 - **Дослівно з джерела:**
   > @attention Default power save type is WIFI_PS_MIN_MODEM.
@@ -2653,7 +2653,7 @@ Wi-Fi — головний споживач у пристрої (розділ 06
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
 - **Дослівно з джерела:**
   > The default ESP-NOW bit rate is 1 Mbps.
@@ -2681,7 +2681,7 @@ Wi-Fi — головний споживач у пристрої (розділ 06
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2718,12 +2718,12 @@ ESP32 не бачить 5 ГГц — найчастіша причина «ме�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Espressif Systems, ESP32 Series Datasheet — розділ 1 «Features», Wi-Fi (кеш: source-cache/21953a2f-esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip designed with the TSMC low-power 40 nm
   > • 802.11n (2.4 GHz), up to 150 Mbps
-- **Спосіб і дата:** tools/layer3.py tekst_dzherela по кешованому PDF, 2026-08-27
+- **Спосіб і дата:** factcheck/tools/layer3.py tekst_dzherela по кешованому PDF, 2026-08-27
 - **Нотатка:** Було E — «зовнішнього джерела не існує». Існує, і воно найпряміше з можливих: даташит називає чип 2.4-гігагерцовим у першому ж рядку опису й перелічує лише b/g/n у діапазоні 2.4 ГГц. Твердження «ESP32 не бачить 5 ГГц мереж» доводиться відсутністю 5 ГГц у переліку підтримуваних стандартів, а не окремою заявою виробника — тому цитата подає обидва рядки.
 - **Прохід:** m2-92-sample
 
@@ -2768,7 +2768,7 @@ ESP32 не бачить 5 ГГц — найчастіша причина «ме�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_common/include/esp_err.h
 - **Дослівно з джерела:**
   > typedef int esp_err_t;
@@ -2866,7 +2866,7 @@ RSSI логувати завжди: на межі OTA не проходить, �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/scan/README.md
 - **Дослівно з джерела:**
   > I (2783) scan: RSSI 		-50

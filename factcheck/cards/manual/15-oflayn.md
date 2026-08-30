@@ -515,7 +515,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > Upon the first boot, the application checks its state and performs diagnostics.
@@ -793,7 +793,7 @@
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** tools/cross_refs.py — перевірка проти дерева файлів репозиторію
 - **Розрахунок:**
   posylannya: згадок 689, адресатів 79, помилок 0
@@ -1516,7 +1516,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Додаток F, рядок 11 — це вказівка про процес встановлення, а не факт про мікросхему.
 - **Дослівно з джерела:**
   > Не «завантажений інсталятор»:
@@ -1657,7 +1657,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Офіційна специфікація ESP32 DevKit V4, схема модуля
 - **Дослівно з джерела:**
   > З kartky/k12-komplekt.md, таблиця «Мінімум», рядок 1:

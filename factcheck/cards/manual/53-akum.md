@@ -71,7 +71,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** TP4056 1A Standalone Linear Li-Ion Battery Charger with Thermal Regulation, datasheet NanJing Top Power ASIC Corp — «DESCRIPTION», «FEATURES», «ELECTRICAL CHARACTERISTICS»
 - **Дослівно з джерела:**
   > The charge voltage is fixed at 4.2V, and the charge current can be
@@ -106,7 +106,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Специфікації елементів: Samsung SDI INR18650-25R і -30Q, Panasonic NCR18650B, LG Chem INR18650-MJ1, Murata US18650VTC6
 - **Дослівно з джерела:**
   > Samsung INR18650-25R:   Typical Capacity 2500mAh
@@ -164,7 +164,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Специфікації Samsung SDI INR18650-25R і -30Q, LG Chem INR18650-MJ1 і HG2, Murata US18650VTC6
 - **Дослівно з джерела:**
   > Samsung INR18650-25R:  Nominal Voltage (V)  3.6 / 3.64
@@ -199,7 +199,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
 - **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
 - **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.
@@ -253,7 +253,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Специфікації Samsung SDI INR18650-25R, Panasonic NCR18650B, Murata US18650VTC6
 - **Дослівно з джерела:**
   > Murata US18650VTC6:  Discharge: 0.2 ItA (600 mA), 2.0 V cutoff at 23deg.C
@@ -287,7 +287,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** TP4056 — чип зарядки для Li-Ion батарей, технічна документація
 - **Дослівно з джерела:**
   > TP4056 Trickle Charge Threshold Voltage (VTRIKL):
@@ -320,7 +320,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DW01 — чип захисту батареї, таблиця електричних характеристик
 - **Дослівно з джерела:**
   > DW01 Electrical Characteristics (Ta=25℃):
@@ -445,7 +445,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Panasonic NCR18650B, датшит SANYO/Panasonic — розділ «Specifications», рядок «Temperature»; LG INR18650MJ1, специфікація LG Chem — розділ «Precautions», рядок «Battery must be charged at operating temperature range»
 - **Дослівно з джерела:**
   > [NCR18650B]
@@ -486,7 +486,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/ncr18650b.pdf
 - **Дослівно з джерела:**
   > Temperature Charge*: 0 to +45°C
@@ -518,7 +518,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** LG Chem INR18650 HG2 3000mAh — специфікація елемента, розділ "Operating Temperature"
 - **Дослівно з джерела:**
   > LG INR18650 HG2 Operating Temperature (Cell Surface Temperature):
@@ -683,7 +683,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** DW01A — One Cell Lithium-ion/Polymer Battery Protection IC, datasheet Fortune Semiconductor Corp — «Pin Configuration», «Typical Application Circuit», «Description of Operation»
 - **Дослівно з джерела:**
   > Pin No.  Symbol   Description
@@ -767,7 +767,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** TP4056 datasheet NanJing Top Power ASIC Corp — опис виводу PROG (Pin 2) і таблиця «Rprog Current Setting»
 - **Дослівно з джерела:**
   > PROG(Pin 2): Constant Charge Current Setting and Charge Current
@@ -811,7 +811,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -848,7 +848,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** TP4056 datasheet NanJing Top Power ASIC Corp — «DESCRIPTION» і опис виводу BAT (Pin 5)
 - **Дослівно з джерела:**
   > The TP4056 automatically terminates the charge cycle when the
@@ -969,7 +969,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
 - **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
 - **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.
@@ -1067,7 +1067,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** Даташит LDO з малим падінням (HT7333, MCP1700) — рядок Dropout Voltage
 - **Дослівно з джерела:**
   > (LDO регулятори типово мають падіння 0.1-0.5 В залежно від струму)
@@ -1120,7 +1120,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** Розрахунок: максимальне вихідне напруження TP4056 (4.263 В за паспортом) мінус вихідна напруга (3.3 В)
 - **Дослівно з джерела:**
   > TP4056 Regulated Output (Float) Voltage:
@@ -1224,7 +1224,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
 - **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
 - **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.
@@ -1360,7 +1360,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1438,7 +1438,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** Даташити 1N4007 (кремній, ~0.7 В) і 1N5819 (Шотткі, ~0.3 В) — рядок Forward Voltage
 - **Спосіб і дата:** Загальна електронна практика. Типова вольтова характеристика кремнієвого діода в режимі провідності.
 - **Що шукати в джерелі:** 1n4007 і 1n5819 datasheet: Vf при робочому струмі
@@ -1487,7 +1487,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -1700,7 +1700,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1736,7 +1736,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
 - **Дослівно з джерела:**
   > Мультиметр здатен вимірювати:
@@ -1820,7 +1820,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.analog.com/en/products/max17048.html (MAX17048/MAX17049 Datasheet)
 - **Що шукати в джерелі:** підтвердження, що ModelGauge працює **без шунта** й не веде обліку кулонів («does not require coulomb counting», «eliminates current-sense resistor»); для протиставлення — наявність шунта в LTC2941/LTC2942 і MAX17260.
 - **Нотатка:** Чесна поправка до власного реєстру. Виправлення розділу 53 у сесії рецензування 05 спиралося на **пошуковий переказ**, а не на відкритий datasheet, і в `docs/fakty.md` записане з посиланням на сторінку продукту так, наче її читали. Саме виправлення правильне — MAX17048 справді модельний паливомір, — але клас доказу тут C, і зафіксувати це чесніше, ніж лишити видимість класу A.
@@ -1848,7 +1848,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1887,7 +1887,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.analog.com/en/products/max17048.html (MAX17048/MAX17049 Datasheet)
 - **Що шукати в джерелі:** підтвердження, що ModelGauge працює **без шунта** й не веде обліку кулонів («does not require coulomb counting», «eliminates current-sense resistor»); для протиставлення — наявність шунта в LTC2941/LTC2942 і MAX17260.
 - **Нотатка:** Чесна поправка до власного реєстру. Виправлення розділу 53 у сесії рецензування 05 спиралося на **пошуковий переказ**, а не на відкритий datasheet, і в `docs/fakty.md` записане з посиланням на сторінку продукту так, наче її читали. Саме виправлення правильне — MAX17048 справді модельний паливомір, — але клас доказу тут C, і зафіксувати це чесніше, ніж лишити видимість класу A.
@@ -1989,7 +1989,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.analog.com/en/products/max17048.html (MAX17048/MAX17049 Datasheet)
 - **Що шукати в джерелі:** підтвердження, що ModelGauge працює **без шунта** й не веде обліку кулонів («does not require coulomb counting», «eliminates current-sense resistor»); для протиставлення — наявність шунта в LTC2941/LTC2942 і MAX17260.
 - **Нотатка:** Чесна поправка до власного реєстру. Виправлення розділу 53 у сесії рецензування 05 спиралося на **пошуковий переказ**, а не на відкритий datasheet, і в `docs/fakty.md` записане з посиланням на сторінку продукту так, наче її читали. Саме виправлення правильне — MAX17048 справді модельний паливомір, — але клас доказу тут C, і зафіксувати це чесніше, ніж лишити видимість класу A.
@@ -2063,7 +2063,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -2099,7 +2099,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.espressif.com/en/support/documents/technical-documents (ESP32 Series Datasheet)
 - **Що шукати в джерелі:** розділ «Recommended Operating Conditions»: гранично допустимий струм на пін (40 мА) і типова сила драйвера за замовчуванням; робочий діапазон температур; таблиця споживання за режимами (deep sleep, light sleep, modem sleep, активний, пік передачі Wi-Fi).
 - **Нотатка:** Найважливіша недосяжна група після BME280: на цих числах стоять розділи 05, 06 і 47, тобто вся частина про живлення. Частина закривається обхідним шляхом — `gpio_set_drive_capability` у ESP-IDF описує рівні сили драйвера, — і це завдання наступного проходу.
@@ -2147,7 +2147,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
 - **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
 - **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.

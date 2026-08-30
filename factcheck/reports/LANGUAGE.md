@@ -13,7 +13,7 @@ zone. That second half is the one that matters — the foundation
 acquired two new Ukrainian documents in a single afternoon while
 every check was green.
 
-**Remaining: 76 of 85 files.** Done: 9.
+**Remaining: 76 of 86 files.** Done: 10.
 
 ## Foundation
 
@@ -40,8 +40,8 @@ every check was green.
 - `factcheck/tools/layer3.py` — 62 %
 - `factcheck/tools/snapshot.py` — 61 %
 - `factcheck/tools/cache_vs_book.py` — 60 %
-- `factcheck/tools/docs.py` — 60 %
 - `factcheck/tools/factcheck.py` — 60 %
+- `factcheck/tools/docs.py` — 60 %
 - `factcheck/tools/intake.py` — 59 %
 - `factcheck/tools/sweep_land.py` — 59 %
 - `factcheck/tools/contest_e.py` — 59 %
@@ -81,13 +81,13 @@ every check was green.
 - `tools/build.py` — 36 %
 - `tools/linkcheck.py` — 35 %
 - `factcheck/tools/layer1.py` — 35 %
+- `factcheck/tools/doc_kind.py` — 33 %
 - `factcheck/tools/intake_f.py` — 33 %
 - `factcheck/reports/BRIEF-SAMPLE.md` — 32 %
-- `factcheck/tools/doc_kind.py` — 31 %
+- `factcheck/tools/maintenance.py` — 31 %
 - `tools/claims.py` — 31 %
 - `factcheck/tools/language.py` — 30 %
 - `factcheck/tools/task_spec.py` — 28 %
-- `factcheck/tools/maintenance.py` — 28 %
 - `factcheck/tools/triage.py` — 25 %
 - `factcheck/tools/name_lists.py` — 25 %
 - `factcheck/tools/naming.py` — 22 %

@@ -115,7 +115,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/8e2fcbf9-bme280.c
 - **Дослівно з джерела:**
   > /*! @file bme280.c
@@ -234,7 +234,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
 - **Дослівно з джерела:**
   > Мультиметр здатен вимірювати:
@@ -268,7 +268,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові ціни на USB-аналізатори на онлайн-маркетплейсах (AliExpress, eBay), 2026-08-26
 - **Дослівно з джерела:**
   > Восьмиканальний USB-аналізатор логіки (наприклад, на чипі CH340G):
@@ -322,7 +322,7 @@
 
 **Доказ**
 
-- **Статус:** looked-not-found — дивилися й не знайшли — робота зроблена, джерела не видно
+- **Статус:** looked-not-found — looked and did not find — the work was done, the source is not visible
 - **Спосіб і дата:** Пошук у datasheet модуля
 - **Що шукати в джерелі:** Модуль живлення, стабілізатор 5 В, мікросхема 3.3 В
 - **Нотатка:** Твердження про різницю напруги на модулі (5 В) та мікросхемі (3.3 В). Джерелом мав би бути datasheet конкретного модуля. Не знайшов джерела. | 2026-08-28, §5 аудиту: клас named-unreachable (C) вимагає НАЗВАНОГО документа — у цьому записі його не було, стояла лише тема в look_for. За власним законом: не можеш назвати документ — це не C, а unverified. Тему збережено в look_for як підказку, куди дивитися, але це не наряд.
@@ -387,7 +387,7 @@
 
 **Доказ**
 
-- **Статус:** looked-not-found — дивилися й не знайшли — робота зроблена, джерела не видно
+- **Статус:** looked-not-found — looked and did not find — the work was done, the source is not visible
 - **Спосіб і дата:** Загальна рекомендація практики електроніки для модулів
 - **Нотатка:** Твердження описує стандартну практику роботи з модулями без вбудованого
 стабілізатора напруги. Якщо на модулі немає стабілізатора, це означає,
@@ -430,7 +430,7 @@
 
 **Доказ**
 
-- **Статус:** looked-not-found — дивилися й не знайшли — робота зроблена, джерела не видно
+- **Статус:** looked-not-found — looked and did not find — the work was done, the source is not visible
 - **Спосіб і дата:** Загальна рекомендація практики електроніки для модулів
 - **Нотатка:** Твердження описує стандартну практику роботи з модулями без вбудованого
 стабілізатора напруги. Якщо на модулі немає стабілізатора, це означає,
@@ -473,7 +473,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -602,7 +602,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Розділ 44, примітка з помаранчевим фоном «nezvorotne»
 - **Дослівно з джерела:**
   > **Живлення і логічні рівні — різні питання.** Модуль може живитися від
@@ -633,7 +633,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** General principle from IC datasheets: supply voltage and logic levels are independent parameters. Examples: INA219, MCP23017, BMP280, BME280 (all in source-cache)
 - **Дослівно з джерела:**
   > Типовий приклад: INA219 живиться від 3.3 В (VCC = 3.3 V), але виводи для комунікації (SDA/SCL) є open-drain і можуть працювати з будь-якою напругою до VCC за наявності зовнішніх резисторів підтягування. Модуль на 5 В: живлення 5 В, але багато виводів сприймають лише до 3.3 В.
@@ -662,7 +662,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** 74HC (CMOS Logic) Datasheet — наприклад, SN74HC04 (NOT gate)
 - **Дослівно з джерела:**
   > SN74HC04 Datasheet:
@@ -716,7 +716,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** HC-SR04 Ultrasonic Ranging Module — datasheet, розділ «Electric Parameter» (кеш: source-cache/hc-sr04.pdf)
 - **Дослівно з джерела:**
   > Working Voltage
@@ -753,7 +753,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 5-1 Absolute Maximum Ratings
 - **Дослівно з джерела:**
   > Table 5-1. Absolute Maximum Ratings
@@ -942,7 +942,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
   > SPI складається з чотирьох ліній:
@@ -990,7 +990,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
   > SPI складається з чотирьох ліній:
@@ -1110,7 +1110,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C spec (UM10204) та 1-Wire spec — обидва вимагають open-drain виходу
 - **Дослівно з джерела:**
   > I²C spec (UM10204):
@@ -1348,7 +1348,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
   > SPI складається з чотирьох ліній:
@@ -1609,7 +1609,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/8e2fcbf9-bme280.c
 - **Дослівно з джерела:**
   > This internal API reads the calibration data from the sensor, parse
@@ -1791,7 +1791,7 @@ AVR і руйнівно тут (розділ 37).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DS18B20 Datasheet, Table «Temperature Conversion Time»
 - **Дослівно з джерела:**
   > Temperature Conversion Time — максимум 750 мс
@@ -1993,7 +1993,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2033,7 +2033,7 @@ i2c_master_transmit(dev, cfg, 2, pdMS_TO_TICKS(100));
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2073,7 +2073,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2420,7 +2420,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Розділ 44, примітка з помаранчевим фоном «nezvorotne»
 - **Дослівно з джерела:**
   > **Живлення і логічні рівні — різні питання.** Модуль може живитися від

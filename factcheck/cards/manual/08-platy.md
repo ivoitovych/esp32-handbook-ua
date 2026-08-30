@@ -94,7 +94,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/index.rst
 - **Дослівно з джерела:**
   > Development Boards
@@ -274,7 +274,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > flash capacity and partition allocation
@@ -519,7 +519,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** Офіційна номенклатура Espressif для ESP32 вариантів
 - **Що шукати в джерелі:** Документація по порядку номерів та кодування суфіксів ESP32 модулів
 - **Нотатка:** Твердження про конвенцію назив ESP32 варіантів. Потребує перевірки у офіційних документах Espressif про номенклатуру модулів та плат.
@@ -546,7 +546,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
 - **Дослівно з джерела:**
   > ESP32-WROOM-32UE with a connector for an external antenna
@@ -673,7 +673,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** Даташит AMS1117-3.3 (Advanced Monolithic Systems) — падіння напруги й вихід
 - **Дослівно з джерела:**
   > Робить 3.3 В із 5 В.
@@ -725,7 +725,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
   > ``esptool`` resets {IDF_TARGET_NAME} automatically by asserting ``DTR`` and ``RTS`` control lines of the USB to serial converter chip, i.e., FTDI, CP210x, or CH340x.
@@ -754,7 +754,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Silicon Labs CP2102 UART Bridge Controller datasheet (у кеші), офіційний сайт SiLabs
 - **Дослівно з джерела:**
   > З kartky/k03-pidkl.md, таблиця рядок 2:
@@ -807,7 +807,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ESP32 reference design schematic
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 reference design schematic
@@ -880,7 +880,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 модуль специфікація та документація плати; ESP32 режим завантаження (boot mode selection)
 - **Дослівно з джерела:**
   > Кнопка BOOT (також називається DOWNLOAD або GPIO0):
@@ -960,7 +960,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ESP32-DevKitC V4 Getting Started Guide, board specifications
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32-DevKitC V4 Getting Started Guide, board specifications
@@ -1056,7 +1056,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Офіційна специфікація ESP32 DevKit V4, схема модуля
 - **Дослівно з джерела:**
   > З kartky/k12-komplekt.md, таблиця «Мінімум», рядок 1:
@@ -1318,7 +1318,7 @@ USB-UART. Вони дають різні порти і роблять різне
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Espressif Systems, ESP32-C3 Series Datasheet (source-cache/esp32c3_datasheet_en.pdf), розділ Memory Overview або Pin Definitions
 - **Дослівно з джерела:**
   > 400 КБ SRAM
@@ -1396,7 +1396,7 @@ USB-UART-перехідник, а `GPIO0` замикається на землю
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** OV2640 camera board ESP32 pins GPIO0 USB специфікація
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** OV2640 camera board ESP32 pins GPIO0 USB специфікація
@@ -1538,7 +1538,7 @@ LoRa. Зручні як готовий пристрій; ціна — власн
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
 - **Дослівно з джерела:**
   > # 2) Print the chip info
@@ -1578,7 +1578,7 @@ LoRa. Зручні як готовий пристрій; ціна — власн
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst та .../advanced-commands.rst
 - **Дослівно з джерела:**
   > chip-id     Read Chip ID
@@ -1611,7 +1611,7 @@ LoRa. Зручні як готовий пристрій; ціна — власн
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > flash capacity and partition allocation
@@ -1639,7 +1639,7 @@ LoRa. Зручні як готовий пристрій; ціна — власн
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Silicon Labs CP2102 UART Bridge Controller datasheet (у кеші), офіційний сайт SiLabs
 - **Дослівно з джерела:**
   > З kartky/k03-pidkl.md, таблиця рядок 2:
@@ -1738,7 +1738,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
@@ -1768,7 +1768,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
@@ -1798,7 +1798,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
@@ -2242,7 +2242,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/esp32-s3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > GPIO0 and GPIO46 control the boot mode after the reset is released.
@@ -2326,7 +2326,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/2217d639-basic-commands.rst
 - **Дослівно з джерела:**
   > esptool flash-id

@@ -213,7 +213,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 40 MHz crystal oscillator
@@ -266,7 +266,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ESP32 Hardware Types Specification
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 Hardware Types Specification
@@ -457,7 +457,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** Розрахунок: 40 МГц > 24 МГц означає, що дискретизація недостатня за Теоремою Найквіста (потрібно ≥ 2 × сигнал)
 - **Дослівно з джерела:**
   > SPI максимальна швидкість на ESP32: до 80 МГц (у режимі нестандартного)
@@ -747,7 +747,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_adc/Kconfig
 - **Дослівно з джерела:**
   > This option will allow the ADC calibration component to use Lookup Tables to correct for non-linear behavior
@@ -973,7 +973,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), вступ і розділ «Features» — «Peripheral Features» і «Special Microcontroller Features» (кеш: source-cache/atmega328p.pdf)
 - **Дослівно з джерела:**
   > The ATmega48A/PA/88A/PA/168A/PA/328/P provides the following features: 4K/8Kbytes of In-System
@@ -1058,7 +1058,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/rp2040.pdf
 - **Дослівно з джерела:**
   > USB 1.1 controller and PHY, with host and device support
@@ -1101,7 +1101,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.2 «Interfaces» (кеш: source-cache/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > 2.2    Interfaces
@@ -1146,7 +1146,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** Розрахунок: 40 МГц > 24 МГц означає, що дискретизація недостатня за Теоремою Найквіста (потрібно ≥ 2 × сигнал)
 - **Дослівно з джерела:**
   > SPI максимальна швидкість на ESP32: до 80 МГц (у режимі нестандартного)
@@ -1201,7 +1201,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 20-7 «Examples of UBRRn Settings for Commonly Used Oscillator Frequencies» і розділ 29.3 «Speed Grades» (кеш: source-cache/atmega328p.pdf)
 - **Дослівно з джерела:**
   > Table 20-7.         Examples of UBRRn Settings for Commonly Used Oscillator Frequencies (Continued)
@@ -1248,7 +1248,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** STMicroelectronics, сторінка лінійки STM32F100 Value line — https://www.st.com/en/microcontrollers-microprocessors/stm32f100-value-line.html (нижня межа); сторінка STM32 High Performance MCUs — https://www.st.com/en/microcontrollers-microprocessors/stm32-high-performance-mcus.html (верхня)
 - **Дослівно з джерела:**
   > STM32F100 Value line:
@@ -1301,7 +1301,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** Розрахунок: 40 МГц > 24 МГц означає, що дискретизація недостатня за Теоремою Найквіста (потрібно ≥ 2 × сигнал)
 - **Дослівно з джерела:**
   > SPI максимальна швидкість на ESP32: до 80 МГц (у режимі нестандартного)
@@ -1356,7 +1356,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.1 «Hardware» (кеш: source-cache/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > 2.1    Hardware
@@ -1437,7 +1437,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ «Features» → «High Endurance Non-volatile Memory Segments» і розділ 8.3 «SRAM Data Memory» (кеш: source-cache/atmega328p.pdf)
 - **Дослівно з джерела:**
   > High Endurance Non-volatile Memory Segments
@@ -1520,7 +1520,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
 - **Дослівно з джерела:**
   > #define SRAM_BASE _u(0x20000000)
@@ -1567,7 +1567,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 1 «Introduction» (кеш: source-cache/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > The Pi4B is available with 1, 2, 4, or 8 gigabytes of LPDDR4 SDRAM.
@@ -1647,7 +1647,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), «Introduction» і розділ «Features» → «Special Microcontroller Features» (кеш: source-cache/atmega328p.pdf)
 - **Дослівно з джерела:**
   > The ATmega48A/PA/88A/PA/168A/PA/328/P is a low power, CMOS 8-bit microcontrollers based on the
@@ -1734,7 +1734,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/rp2040.pdf
 - **Дослівно з джерела:**
   > RP2040 is a stateless device, with support for cached execute-in-place from external QSPI memory.
@@ -1777,7 +1777,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.3 «Software» (кеш: source-cache/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > 2.3    Software
@@ -1863,7 +1863,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 9-6 «Start-up Times for the Full Swing Crystal Oscillator Clock Selection» (кеш: source-cache/atmega328p.pdf)
 - **Дослівно з джерела:**
   > Table 9-6.        Start-up Times for the Full Swing Crystal Oscillator Clock Selection
@@ -1952,7 +1952,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/rp2040.pdf
 - **Дослівно з джерела:**
   > both cores start running simultaneously
@@ -1995,7 +1995,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2075,7 +2075,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 29-8 «ATmega328P DC characteristics», рядок «Power-down mode»
 - **Дослівно з джерела:**
   > Table 29-8.      ATmega328P DC characteristics - TA = -40C to 85C, VCC = 1.8V to 5.5V (unless otherwise noted)
@@ -2161,7 +2161,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/rp2040.pdf
 - **Дослівно з джерела:**
   > Sleep               0.39           4.5              -               -            -            -            mA
@@ -2204,7 +2204,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, розділ 4.1 «Power Requirements»; Raspberry Pi 5 Product Brief, розділ «Specification» (кеш: source-cache/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > 4.1     Power Requirements
@@ -2286,7 +2286,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ 7.7.1 «Interrupt Response Time» (кеш: source-cache/atmega328p.pdf)
 - **Дослівно з джерела:**
   > 7.7.1   Interrupt Response Time
@@ -2368,7 +2368,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/rp2040.pdf
 - **Дослівно з джерела:**
   > The Real-time Clock (RTC) provides time in human-readable format and can be used to generate interrupts at specific times.
@@ -2411,7 +2411,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2491,7 +2491,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2571,7 +2571,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/rp2040.pdf
 - **Дослівно з джерела:**
   > high performance, low cost,
@@ -2614,7 +2614,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Raspberry Pi Ltd, Raspberry Pi 5 Product Brief (Published April 2026), розділ «Specification» → «List price»
 - **Дослівно з джерела:**
   > List price:
@@ -2816,7 +2816,7 @@ STM32 керує процесом, ESP32 стоїть збоку і забезп
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2899,7 +2899,7 @@ STM32 керує процесом, ESP32 стоїть збоку і забезп
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —

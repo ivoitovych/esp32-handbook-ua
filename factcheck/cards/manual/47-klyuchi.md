@@ -30,7 +30,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.espressif.com/en/support/documents/technical-documents (ESP32 Series Datasheet)
 - **Що шукати в джерелі:** розділ «Recommended Operating Conditions»: гранично допустимий струм на пін (40 мА) і типова сила драйвера за замовчуванням; робочий діапазон температур; таблиця споживання за режимами (deep sleep, light sleep, modem sleep, активний, пік передачі Wi-Fi).
 - **Нотатка:** Найважливіша недосяжна група після BME280: на цих числах стоять розділи 05, 06 і 47, тобто вся частина про живлення. Частина закривається обхідним шляхом — `gpio_set_drive_capability` у ESP-IDF описує рівні сили драйвера, — і це завдання наступного проходу.
@@ -86,7 +86,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
 - **Дослівно з джерела:**
   > Мультиметр здатен вимірювати:
@@ -159,7 +159,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics (3.3 V, 25 °C)», параметр `IOH` (кеш: source-cache/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > VDD3P3_CPU
@@ -202,7 +202,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics (3.3 V, 25 °C)», параметр `IOH` (кеш: source-cache/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > VDD3P3_CPU
@@ -245,7 +245,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -461,7 +461,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -530,7 +530,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -565,7 +565,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** International Rectifier / Infineon, IRLZ44NPbF HEXFET Power MOSFET datasheet (PD-94831), «Electrical Characteristics», параметр `RDS(on)`
 - **Дослівно з джерела:**
   > l Logic-Level Gate Drive
@@ -599,7 +599,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** International Rectifier / Infineon, IRLZ44NPbF HEXFET Power MOSFET datasheet (PD-94831), «Electrical Characteristics»
 - **Дослівно з джерела:**
   > 0.022               V GS = 10V, ID = 25A
@@ -630,7 +630,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://www.vishay.com/docs/91021/irf540.pdf
 - **Дослівно з джерела:**
   > Gate-source threshold voltage
@@ -711,7 +711,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > Низька сторона (Low-side) керування MOSFET:
@@ -786,7 +786,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -1140,7 +1140,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -1228,7 +1228,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1388,7 +1388,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1424,7 +1424,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** закон Ома, застосований до заявлених номіналів і напруги логіки ESP32
 - **Розрахунок:**
   Пікова напруга на резисторі в момент перемикання (незаряджений
@@ -1465,7 +1465,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -1499,7 +1499,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -1529,7 +1529,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -2021,7 +2021,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2050,7 +2050,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** Даташит реле SRD-05VDC-SL-C (Ningbo Songle) — номінальна напруга котушки й струм спрацювання
 - **Дослівно з джерела:**
   > —
@@ -2227,7 +2227,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2461,7 +2461,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2490,7 +2490,7 @@ datasheet.
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2540,7 +2540,7 @@ datasheet.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings», с. 51 (кеш: source-cache/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > Stresses above those listed in Table 5-1 Absolute Maximum Ratings may cause permanent damage to the
@@ -2578,7 +2578,7 @@ datasheet.
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -2639,7 +2639,7 @@ datasheet.
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -2742,7 +2742,7 @@ datasheet.
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2794,7 +2794,7 @@ datasheet.
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2823,7 +2823,7 @@ datasheet.
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові ціни на USB-аналізатори на онлайн-маркетплейсах (AliExpress, eBay), 2026-08-26
 - **Дослівно з джерела:**
   > Восьмиканальний USB-аналізатор логіки (наприклад, на чипі CH340G):
@@ -2855,7 +2855,7 @@ datasheet.
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Основи електроніки; конкретне джерело у кеші не знайдено
 - **Дослівно з джерела:**
   > (Це фундаментальний принцип електроніки, а не дані з даташа)
@@ -2976,7 +2976,7 @@ MOSFET має бути логічного рівня, інакше він грі
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -3010,7 +3010,7 @@ MOSFET має бути логічного рівня, інакше він грі
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -3058,7 +3058,7 @@ MOSFET має бути логічного рівня, інакше він грі
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —

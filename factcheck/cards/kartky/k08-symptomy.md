@@ -134,7 +134,7 @@
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): dodatky/b-symptomy.md — усі 70 рядків таблиці симптомів проти заголовків manual/*.md
 - **Дослівно з джерела:**
   > | Порт не з'являється | немає драйвера мосту | CP2102/CH340/**CH9102 окремий** | 09 |
@@ -340,7 +340,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
   > If the device does not support the auto download mode, you need to get into the download mode manually. To do so, press and hold the ``BOOT`` button and then press the ``RESET`` button once.
@@ -484,7 +484,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/bootloader.rst
 - **Дослівно з джерела:**
   > ESP-IDF second stage bootloader is located at the address {IDF_TARGET_CONFIG_BOOTLOADER_OFFSET_IN_FLASH} in the flash.
@@ -812,7 +812,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Практика живлення ESP32 з недостатнім джерелом
 - **Дослівно з джерела:**
   > ESP32 потребує плавного живлення; конденсатор 470 мкФ служить як буфер для стабілізації напруги під час піків струму
@@ -864,7 +864,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
 - **Дослівно з джерела:**
   > A core dump is a set of software state information that is automatically saved by the panic handler when a fatal error occurs.
@@ -916,7 +916,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
 - **Дослівно з джерела:**
   > Panic reason: abort() was called
@@ -968,7 +968,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
 - **Дослівно з джерела:**
   > Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20
@@ -1020,7 +1020,7 @@
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): dodatky/b-symptomy.md — усі 70 рядків таблиці симптомів проти заголовків manual/*.md
 - **Дослівно з джерела:**
   > | Порт не з'являється | немає драйвера мосту | CP2102/CH340/**CH9102 окремий** | 09 |
@@ -1226,7 +1226,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
 - **Дослівно з джерела:**
   > I2C uses two bidirectional open-drain lines: serial data line (SDA) and serial clock line (SCL), pulled up by resistors.
@@ -1278,7 +1278,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1337,7 +1337,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/66dc1dae-adc_oneshot.rst
 - **Дослівно з джерела:**
   > This function may fail when the ADC is in use by other drivers/peripherals, and return :c:macro:`ESP_ERR_TIMEOUT`. Under this condition, the ADC raw result is invalid.
@@ -1389,7 +1389,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
 - **Дослівно з джерела:**
   > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has
@@ -1626,7 +1626,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h, .../components/soc/esp32/include/soc/adc_channel.h, .../components/soc/esp32/include/soc/soc_caps.h, .../docs/en/api-reference/peripherals/gpio.rst
 - **Дослівно з джерела:**
   > (spi_pins.h — піни, якими чип говорить із флешем)
@@ -1692,7 +1692,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h
 - **Дослівно з джерела:**
   > #define MSPI_IOMUX_PIN_NUM_CLK      6
@@ -1979,7 +1979,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 datasheet — Absolute Maximum Ratings
 - **Дослівно з джерела:**
   > ESP32 GPIO: Absolute Maximum Input Voltage 3.6 V
@@ -2078,7 +2078,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ESP32 Wi-Fi Driver, ESP-IDF Programming Guide — розділ про країнні коди й канали 12–13; цитати не дістав
 - **Дослівно з джерела:**
   > | 14 | Wi-Fi бачить мережу, не під'єднується | пароль, канал 12–13 або 5 ГГц | звірити SSID, канал; ESP32 не бачить 5 ГГц |
@@ -2130,7 +2130,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ESP32 Wi-Fi Driver, ESP-IDF Programming Guide — розділ про країнні коди й канали 12–13; цитати не дістав
 - **Дослівно з джерела:**
   > | 14 | Wi-Fi бачить мережу, не під'єднується | пароль, канал 12–13 або 5 ГГц | звірити SSID, канал; ESP32 не бачить 5 ГГц |
@@ -2228,7 +2228,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
 - **Дослівно з джерела:**
   > Erase Flash: ``erase-flash`` & ``erase-region``

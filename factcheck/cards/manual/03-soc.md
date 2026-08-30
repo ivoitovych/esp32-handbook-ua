@@ -75,7 +75,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 - **Дослівно з джерела:**
   > dual-core
@@ -105,7 +105,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
   > Within ESP-IDF, Core 0 and Core 1 are sometimes referred to as PRO_CPU and APP_CPU.
@@ -271,7 +271,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > Single-Core
@@ -448,7 +448,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings», сторінка 51
 - **Дослівно з джерела:**
   > Table 5-1. Absolute Maximum Ratings
@@ -621,7 +621,7 @@ sleep**. Все інше при глибокому сні втрачається
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
 - **Дослівно з джерела:**
   > If some variables in the program are placed into RTC SLOW memory (for example, using
@@ -743,7 +743,7 @@ sleep**. Все інше при глибокому сні втрачається
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > flash capacity and partition allocation
@@ -912,7 +912,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -952,7 +952,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_psram/Kconfig.spiram.common та .../components/esp_psram/{esp32,esp32s3}/Kconfig.spiram
 - **Дослівно з джерела:**
   > (esp32/Kconfig.spiram і esp32s3/Kconfig.spiram)
@@ -1015,7 +1015,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_psram/Kconfig.spiram.common та .../components/esp_psram/{esp32,esp32s3}/Kconfig.spiram
 - **Дослівно з джерела:**
   > (esp32/Kconfig.spiram і esp32s3/Kconfig.spiram)
@@ -1077,7 +1077,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1253,7 +1253,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -1292,7 +1292,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -1324,7 +1324,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -1356,7 +1356,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** Розрахунок: 40 МГц > 24 МГц означає, що дискретизація недостатня за Теоремою Найквіста (потрібно ≥ 2 × сигнал)
 - **Дослівно з джерела:**
   > SPI максимальна швидкість на ESP32: до 80 МГц (у режимі нестандартного)
@@ -1441,7 +1441,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** Розрахунок: 40 МГц > 24 МГц означає, що дискретизація недостатня за Теоремою Найквіста (потрібно ≥ 2 × сигнал)
 - **Дослівно з джерела:**
   > SPI максимальна швидкість на ESP32: до 80 МГц (у режимі нестандартного)
@@ -1605,7 +1605,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
 - **Дослівно з джерела:**
   > If some variables in the program are placed into RTC SLOW memory (for example, using
@@ -1845,7 +1845,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
 - **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
 - **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
@@ -1871,7 +1871,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
 - **Дослівно з джерела:**
   > (panic.c)
@@ -1990,7 +1990,7 @@ PSRAM.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -2021,7 +2021,7 @@ RTC RAM переживає deep sleep; усе інше — ні.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
 - **Дослівно з джерела:**
   > If some variables in the program are placed into RTC SLOW memory (for example, using

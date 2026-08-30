@@ -254,7 +254,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
 - **Дослівно з джерела:**
   > At the core of the module is the ESP32-D0WD-V3 chip or ESP32-D0WDR2-V3 chip
@@ -297,7 +297,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
 - **Дослівно з джерела:**
   > ESP32-D0WDR2-V3 also provides 2 MB PSRAM
@@ -340,7 +340,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
 - **Дослівно з джерела:**
   > ESP32-D0WD-V3 or ESP32-D0WDR2-V3 embedded, Xtensa dual-core 32-bit LX6 microprocessor
@@ -384,7 +384,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > flash capacity and partition allocation
@@ -732,7 +732,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** Специфікація маркування модулів ESP32 від Espressif (https://www.espressif.com)
 - **Що шукати в джерелі:** ESP32 Module Naming Convention або відповідну документацію про суфікси
 - **Нотатка:** N8 = 8 МБ флешу, N16R8 = 16 МБ флешу + 8 МБ PSRAM. Це стандартна конвенція Espressif. Твердження точне, але цитата з офіційної документації не знайдена у доступних документах.
@@ -760,7 +760,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32s3/include/soc/spi_pins.h та .../components/soc/esp32s3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define MSPI_IOMUX_PIN_NUM_CS1      26
@@ -808,7 +808,7 @@ Quad.** У ESP-IDF `SPIRAM_MODE` за замовчуванням `SPIRAM_MODE_QU
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_psram/esp32s3/Kconfig.spiram
 - **Дослівно з джерела:**
   > choice SPIRAM_MODE
@@ -848,7 +848,7 @@ Quad.** У ESP-IDF `SPIRAM_MODE` за замовчуванням `SPIRAM_MODE_QU
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -910,7 +910,7 @@ use` (розділ 11).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig та components/{esptool_py,partition_table,bootloader}/Kconfig.projbuild, components/{esp_system,espcoredump,esp_psram,log,bt,freertos}/Kconfig
 - **Дослівно з джерела:**
   > (Kconfig — корінь)
@@ -1095,7 +1095,7 @@ use` (розділ 11).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
 - **Дослівно з джерела:**
   > power
@@ -1166,7 +1166,7 @@ use` (розділ 11).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 2-3 «Power Pins», сторінка 18
 - **Дослівно з джерела:**
   > VIN — це зовнішній пін модуля, підключений до входу встроєного
@@ -1198,7 +1198,7 @@ use` (розділ 11).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
 - **Дослівно з джерела:**
   > power
@@ -1227,13 +1227,13 @@ use` (розділ 11).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings» і Table 5-3 «DC Characteristics», с. 51
 - **Дослівно з джерела:**
   > Allowed input voltage –0.3 3.6 V
   > VIH High-level input voltage 0.75 × VDD 1 — VDD 1 + 0.3 V
   > VIL Low-level input voltage –0.3 — 0.25 × VDD 1 V
-- **Спосіб і дата:** tools/layer3.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
+- **Спосіб і дата:** factcheck/tools/layer3.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
 - **Нотатка:** Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ: я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`), яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за що я потім ловив помічників. Заголовки таблиць і рядок про permanent damage я додавав від себе. Одиниця після VDD — це номер виноски в документі, не множник.
 - **Прохід:** m2-06-voltage-limits
 
@@ -1258,7 +1258,7 @@ use` (розділ 11).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Схема ESP32 DevKit, постановка вхідних стабілізаторів
 - **Дослівно з джерела:**
   > З kartky/k11-nikoly.md, рядок 38:
@@ -1405,7 +1405,7 @@ use` (розділ 11).
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
 - **Дослівно з джерела:**
   > Мультиметр здатен вимірювати:
@@ -1438,7 +1438,7 @@ use` (розділ 11).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
 - **Дослівно з джерела:**
   > power
@@ -1490,7 +1490,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
@@ -1519,7 +1519,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
@@ -1596,7 +1596,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst та .../advanced-commands.rst
 - **Дослівно з джерела:**
   > chip-id     Read Chip ID
@@ -1653,7 +1653,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > flash capacity and partition allocation
@@ -1680,7 +1680,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Диагностика I²C шин на основі протоколу (I²C spec UM10204)
 - **Дослівно з джерела:**
   > Якщо аналізатор показує:
@@ -1769,7 +1769,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Спосіб і дата:** Практична рекомендація діагностики. Пошук у ESP-IDF SPI документації та датащиті не знайшов офіційного джерела для цієї конкретної методики діагностики
 - **Нотатка:** Метод діагностики: 1 МГц — достатньо низька для надійної передачі SPI даних. Це практичне спостереження, а не офіційна рекомендація з документації. Жодного зовнішнього джерела не знайдено. Клас E. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
 - **Прохід:** m2-92-sample
@@ -1844,7 +1844,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** 74HC (CMOS Logic) Datasheet — наприклад, SN74HC04 (NOT gate)
 - **Дослівно з джерела:**
   > SN74HC04 Datasheet:
@@ -1920,7 +1920,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/a4dbe955-bootloader.rst
 - **Дослівно з джерела:**
   > I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
@@ -2062,7 +2062,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/pins.py`
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
@@ -2144,7 +2144,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
 - **Дослівно з джерела:**
   > internal pull-up/pull-down resistors
@@ -2524,7 +2524,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Диагностика I²C шин на основі протоколу (I²C spec UM10204)
 - **Дослівно з джерела:**
   > Якщо аналізатор показує:
@@ -2576,7 +2576,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Диагностика I²C шин на основі протоколу (I²C spec UM10204)
 - **Дослівно з джерела:**
   > Якщо аналізатор показує:
@@ -2628,7 +2628,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Диагностика I²C шин на основі протоколу (I²C spec UM10204)
 - **Дослівно з джерела:**
   > Якщо аналізатор показує:
@@ -2680,7 +2680,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Диагностика I²C шин на основі протоколу (I²C spec UM10204)
 - **Дослівно з джерела:**
   > Якщо аналізатор показує:
@@ -3031,7 +3031,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst
 - **Дослівно з джерела:**
   > If no ``-c`` option or ``ESPTOOL_CHIP`` value is specified, ``esptool`` automatically detects the chip type when connecting.
@@ -3080,7 +3080,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Диагностика I²C шин на основі протоколу (I²C spec UM10204)
 - **Дослівно з джерела:**
   > Якщо аналізатор показує:

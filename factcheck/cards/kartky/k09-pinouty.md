@@ -110,7 +110,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h
 - **Дослівно з джерела:**
   > #define MSPI_IOMUX_PIN_NUM_CLK      6
@@ -245,7 +245,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
 - **Дослівно з джерела:**
   > choice BOOTLOADER_VDDSDIO_BOOST
@@ -294,7 +294,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/f48eaf67-dac.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_DAC_CH_1: default = "Not Updated!", esp32 = "GPIO25", esp32s2 = "GPIO17"}
@@ -407,7 +407,7 @@ SPI — MOSI 23, MISO 19, SCK 18, CS 5. Апаратні піни — додат
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
   > SPI складається з чотирьох ліній:
@@ -586,7 +586,7 @@ SPI — MOSI 23, MISO 19, SCK 18, CS 5. Апаратні піни — додат
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/usb-serial-jtag-console.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_USB_DP_GPIO:default="Not Updated!",esp32c3="19",esp32s3="20",
@@ -624,7 +624,7 @@ SPI — MOSI 23, MISO 19, SCK 18, CS 5. Апаратні піни — додат
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/adc_channel.h та .../esp32/include/soc/touch_sensor_channel.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)
@@ -693,7 +693,7 @@ SPI — MOSI 23, MISO 19, SCK 18, CS 5. Апаратні піни — додат
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
@@ -729,7 +729,7 @@ SPI — MOSI 23, MISO 19, SCK 18, CS 5. Апаратні піни — додат
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
@@ -899,7 +899,7 @@ SPI — MOSI 23, MISO 19, SCK 18, CS 5. Апаратні піни — додат
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/usb-serial-jtag-console.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_USB_DP_GPIO:default="Not Updated!",esp32c3="19",esp32s3="20",
@@ -936,7 +936,7 @@ SPI — MOSI 23, MISO 19, SCK 18, CS 5. Апаратні піни — додат
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/adc_channel.h та .../esp32/include/soc/touch_sensor_channel.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)
@@ -1002,7 +1002,7 @@ SPI — MOSI 23, MISO 19, SCK 18, CS 5. Апаратні піни — додат
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
@@ -1036,7 +1036,7 @@ SPI — MOSI 23, MISO 19, SCK 18, CS 5. Апаратні піни — додат
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
@@ -1087,7 +1087,7 @@ SPI — MOSI 23, MISO 19, SCK 18, CS 5. Апаратні піни — додат
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:

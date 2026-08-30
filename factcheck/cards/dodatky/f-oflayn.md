@@ -146,7 +146,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Додаток F, рядок 11 — це вказівка про процес встановлення, а не факт про мікросхему.
 - **Дослівно з джерела:**
   > Не «завантажений інсталятор»:
@@ -310,7 +310,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Silicon Labs CP2102 UART Bridge Controller datasheet (у кеші), офіційний сайт SiLabs
 - **Дослівно з джерела:**
   > З kartky/k03-pidkl.md, таблиця рядок 2:
@@ -366,7 +366,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Додаток F, рядок 57 — це рекомендація щодо артефактів збирання, а не факт про мікросхему.
 - **Дослівно з джерела:**
   > **`.elf` того самого збирання** — без нього backtrace із поля
@@ -586,7 +586,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):

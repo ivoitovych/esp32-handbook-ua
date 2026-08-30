@@ -70,7 +70,7 @@ mDNS, зберігання стану й обробка помилок.
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 6
 - **Дослівно з джерела:**
   > Це базовий проєкт: на ньому зустрічаються Wi-Fi, I²C, веб-сервер, 
@@ -213,7 +213,7 @@ mDNS, зберігання стану й обробка помилок.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID          UINT8_C(0x60)
@@ -310,7 +310,7 @@ mDNS, зберігання стану й обробка помилок.
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 32
 - **Дослівно з джерела:**
   > | ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
@@ -418,7 +418,7 @@ mDNS, зберігання стану й обробка помилок.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID          UINT8_C(0x60)
@@ -462,7 +462,7 @@ mDNS, зберігання стану й обробка помилок.
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -509,7 +509,7 @@ mDNS, зберігання стану й обробка помилок.
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -682,7 +682,7 @@ mDNS, зберігання стану й обробка помилок.
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 46
 - **Дослівно з джерела:**
   > | Сигнал | classic DevKitC | S3-DevKitC-1 |
@@ -721,7 +721,7 @@ mDNS, зберігання стану й обробка помилок.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
 - **Дослівно з джерела:**
   > variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
@@ -762,7 +762,7 @@ mDNS, зберігання стану й обробка помилок.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
 - **Дослівно з джерела:**
   > variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
@@ -803,7 +803,7 @@ mDNS, зберігання стану й обробка помилок.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
 - **Дослівно з джерела:**
   > variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
@@ -844,7 +844,7 @@ mDNS, зберігання стану й обробка помилок.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
 - **Дослівно з джерела:**
   > variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
@@ -877,7 +877,7 @@ mDNS, зберігання стану й обробка помилок.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_PIN_COUNT 40
@@ -922,7 +922,7 @@ mDNS, зберігання стану й обробка помилок.
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядки 54–65
 - **Дослівно з джерела:**
   > **`GPIO22` на S3 не існує.** У S3 немає пінів 22–25 узагалі — це
@@ -961,7 +961,7 @@ mDNS, зберігання стану й обробка помилок.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_driver_i2c/i2c_master.c, .../components/esp_common/include/esp_check.h, .../Kconfig
 - **Дослівно з джерела:**
   > (i2c_master.c:1049)
@@ -1010,7 +1010,7 @@ E (315) i2c.master: i2c_new_master_bus(1049): invalid SDA/SCL pin number
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_driver_i2c/i2c_master.c, .../components/esp_common/include/esp_check.h, .../Kconfig
 - **Дослівно з джерела:**
   > (i2c_master.c:1049)
@@ -1082,7 +1082,7 @@ E (315) i2c.master: i2c_new_master_bus(1049): invalid SDA/SCL pin number
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_driver_i2c/i2c_master.c, .../components/esp_common/include/esp_check.h, .../Kconfig
 - **Дослівно з джерела:**
   > (i2c_master.c:1049)
@@ -1209,7 +1209,7 @@ SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** GPIO матриця в esp_idf, I2C драйвер
 - **Що шукати в джерелі:** Таблиця розпиновки I2C у документації ESP32 та ESP32-S3, або i2c_master.c
 - **Нотатка:** Твердження про жорстку розпиновку пін SCL, але в esp_idf GPIO матриця дозволяє гнучкий вибір пінів. Потребує перевірки, чи це значення за замовчуванням.
@@ -1300,7 +1300,7 @@ SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** GPIO матриця в esp_idf, I2C драйвер
 - **Що шукати в джерелі:** Таблиця розпиновки I2C у документації ESP32 та ESP32-S3
 - **Нотатка:** Аналогічно SCL (T-59-042), твердження про розпиновку I2C. Потребує перевірки у esp_idf документації.
@@ -1362,7 +1362,7 @@ SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** GPIO матриця в esp_idf, I2C драйвер
 - **Що шукати в джерелі:** Таблиця розпиновки I2C у документації ESP32 та ESP32-S3, або i2c_master.c
 - **Нотатка:** Твердження про жорстку розпиновку пін SCL, але в esp_idf GPIO матриця дозволяє гнучкий вибір пінів. Потребує перевірки, чи це значення за замовчуванням.
@@ -1439,7 +1439,7 @@ SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1557,7 +1557,7 @@ SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -1750,7 +1750,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1788,7 +1788,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 116
 - **Дослівно з джерела:**
   > #include "driver/i2c_master.h"
@@ -1832,7 +1832,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID          UINT8_C(0x60)
@@ -1861,7 +1861,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID          UINT8_C(0x60)
@@ -1909,7 +1909,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID                            UINT8_C(0x60)
@@ -1944,7 +1944,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID                            UINT8_C(0x60)
@@ -1979,7 +1979,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID                            UINT8_C(0x60)
@@ -2014,7 +2014,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID                            UINT8_C(0x60)
@@ -2049,7 +2049,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID                            UINT8_C(0x60)
@@ -2084,7 +2084,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID                            UINT8_C(0x60)
@@ -2124,7 +2124,7 @@ static esp_err_t bme_read(uint8_t reg, uint8_t *buf, size_t len) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -2162,7 +2162,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
 - **Дослівно з джерела:**
   > Звірено вісім структур, усі поля, які книга ініціалізує:
@@ -2214,7 +2214,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID                            UINT8_C(0x60)
@@ -2258,7 +2258,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -2299,7 +2299,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2342,7 +2342,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID                            UINT8_C(0x60)
@@ -2385,7 +2385,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID          UINT8_C(0x60)
@@ -2424,7 +2424,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID                            UINT8_C(0x60)
@@ -2468,7 +2468,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID                            UINT8_C(0x60)
@@ -2606,7 +2606,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
 - **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
 - **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
@@ -2661,7 +2661,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c
 - **Дослівно з джерела:**
   > calib_data->dig_h2 = (int16_t)BME280_CONCAT_BYTES(reg_data[1], reg_data[0]);
@@ -2702,7 +2702,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c
 - **Дослівно з джерела:**
   > calib_data->dig_h2 = (int16_t)BME280_CONCAT_BYTES(reg_data[1], reg_data[0]);
@@ -2743,7 +2743,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c
 - **Дослівно з джерела:**
   > dig_h4_msb = (int16_t)(int8_t)reg_data[3] * 16;
@@ -2921,7 +2921,7 @@ esp_err_t bme_measure(float *temp, float *hum, float *pres) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID                            UINT8_C(0x60)
@@ -2961,7 +2961,7 @@ esp_err_t bme_measure(float *temp, float *hum, float *pres) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID                            UINT8_C(0x60)
@@ -3038,7 +3038,7 @@ static void dodaty(float t, float h, float p, bool ok) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -3076,7 +3076,7 @@ static void dodaty(float t, float h, float p, bool ok) {
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 266
 - **Дослівно з джерела:**
   > #define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
@@ -3110,7 +3110,7 @@ static void dodaty(float t, float h, float p, bool ok) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -3148,7 +3148,7 @@ static void dodaty(float t, float h, float p, bool ok) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -3267,7 +3267,7 @@ static void task_vymir(void *arg) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -3498,7 +3498,7 @@ static void task_vymir(void *arg) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -3625,7 +3625,7 @@ static esp_err_t json_handler(httpd_req_t *req) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
   > rst:0x10 (RTCWDT_RTC_RESET)
@@ -3663,7 +3663,7 @@ static esp_err_t json_handler(httpd_req_t *req) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -3714,7 +3714,7 @@ static esp_err_t json_handler(httpd_req_t *req) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -3759,7 +3759,7 @@ static esp_err_t json_handler(httpd_req_t *req) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -3830,7 +3830,7 @@ static esp_err_t json_handler(httpd_req_t *req) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -4094,7 +4094,7 @@ static esp_err_t json_handler(httpd_req_t *req) {
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** немає зовнішнього джерела
 - **Спосіб і дата:** перевірка в контексті manual/59-proj-monitor.md:366
 - **Нотатка:** Це твердження про загальну практику програмування: стек має обмежений розмір, велику пам'ять беруть з heap'у. Зовнішнього документа, який би це підтверджував, не існує — це фундаментальна властивість архітектури ESP32. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
@@ -4191,7 +4191,7 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -4230,7 +4230,7 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -4272,7 +4272,7 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -4343,7 +4343,7 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -4384,7 +4384,7 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
 - **Дослівно з джерела:**
   > Звірено вісім структур, усі поля, які книга ініціалізує:
@@ -4437,7 +4437,7 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
 - **Дослівно з джерела:**
   > Звірено вісім структур, усі поля, які книга ініціалізує:
@@ -4490,7 +4490,7 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -4608,7 +4608,7 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -4648,7 +4648,7 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -4688,7 +4688,7 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -4752,7 +4752,7 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -4864,7 +4864,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -4912,7 +4912,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -4960,7 +4960,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -5270,7 +5270,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/ds18b20.pdf
 - **Дослівно з джерела:**
   > Measures Temperatures from -55°C to +125°C

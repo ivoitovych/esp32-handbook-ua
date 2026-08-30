@@ -131,7 +131,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** IEC 60529 (Degrees of protection provided by enclosures, IP Code)
 - **Що шукати в джерелі:** таблиця першої цифри (тверді тіла) і другої (вода); зокрема точне формулювання IP65 (струмені) та IP67 (тимчасове занурення, глибина й тривалість).
 - **Нотатка:** Стандарт платний, і це окремий випадок: він не «недосяжний через egress», а недосяжний за суттю. Практично закривається за авторитетним вторинним джерелом із явною позначкою, що це вторинне.
@@ -169,7 +169,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** IEC 60529 (Degrees of protection provided by enclosures, IP Code)
 - **Що шукати в джерелі:** таблиця першої цифри (тверді тіла) і другої (вода); зокрема точне формулювання IP65 (струмені) та IP67 (тимчасове занурення, глибина й тривалість).
 - **Нотатка:** Стандарт платний, і це окремий випадок: він не «недосяжний через egress», а недосяжний за суттю. Практично закривається за авторитетним вторинним джерелом із явною позначкою, що це вторинне.
@@ -207,7 +207,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** IEC 60529 (Degrees of protection provided by enclosures, IP Code)
 - **Що шукати в джерелі:** таблиця першої цифри (тверді тіла) і другої (вода); зокрема точне формулювання IP65 (струмені) та IP67 (тимчасове занурення, глибина й тривалість).
 - **Нотатка:** Стандарт платний, і це окремий випадок: він не «недосяжний через egress», а недосяжний за суттю. Практично закривається за авторитетним вторинним джерелом із явною позначкою, що це вторинне.
@@ -245,7 +245,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** IEC 60529 (Degrees of protection provided by enclosures, IP Code)
 - **Що шукати в джерелі:** таблиця першої цифри (тверді тіла) і другої (вода); зокрема точне формулювання IP65 (струмені) та IP67 (тимчасове занурення, глибина й тривалість).
 - **Нотатка:** Стандарт платний, і це окремий випадок: він не «недосяжний через egress», а недосяжний за суттю. Практично закривається за авторитетним вторинним джерелом із явною позначкою, що це вторинне.
@@ -283,7 +283,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** IEC 60529 (Degrees of protection provided by enclosures, IP Code)
 - **Що шукати в джерелі:** таблиця першої цифри (тверді тіла) і другої (вода); зокрема точне формулювання IP65 (струмені) та IP67 (тимчасове занурення, глибина й тривалість).
 - **Нотатка:** Стандарт платний, і це окремий випадок: він не «недосяжний через egress», а недосяжний за суттю. Практично закривається за авторитетним вторинним джерелом із явною позначкою, що це вторинне.
@@ -321,7 +321,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** IEC 60529 (Degrees of protection provided by enclosures, IP Code)
 - **Що шукати в джерелі:** таблиця першої цифри (тверді тіла) і другої (вода); зокрема точне формулювання IP65 (струмені) та IP67 (тимчасове занурення, глибина й тривалість).
 - **Нотатка:** Стандарт платний, і це окремий випадок: він не «недосяжний через egress», а недосяжний за суттю. Практично закривається за авторитетним вторинним джерелом із явною позначкою, що це вторинне.
@@ -359,7 +359,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** IEC 60529 (Degrees of protection provided by enclosures, IP Code)
 - **Що шукати в джерелі:** таблиця першої цифри (тверді тіла) і другої (вода); зокрема точне формулювання IP65 (струмені) та IP67 (тимчасове занурення, глибина й тривалість).
 - **Нотатка:** Стандарт платний, і це окремий випадок: він не «недосяжний через egress», а недосяжний за суттю. Практично закривається за авторитетним вторинним джерелом із явною позначкою, що це вторинне.
@@ -397,7 +397,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** IEC 60529 (Degrees of protection provided by enclosures, IP Code)
 - **Що шукати в джерелі:** таблиця першої цифри (тверді тіла) і другої (вода); зокрема точне формулювання IP65 (струмені) та IP67 (тимчасове занурення, глибина й тривалість).
 - **Нотатка:** Стандарт платний, і це окремий випадок: він не «недосяжний через egress», а недосяжний за суттю. Практично закривається за авторитетним вторинним джерелом із явною позначкою, що це вторинне.
@@ -423,7 +423,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** IEC 60529 (Degrees of protection provided by enclosures, IP Code)
 - **Що шукати в джерелі:** таблиця першої цифри (тверді тіла) і другої (вода); зокрема точне формулювання IP65 (струмені) та IP67 (тимчасове занурення, глибина й тривалість).
 - **Нотатка:** Стандарт платний, і це окремий випадок: він не «недосяжний через egress», а недосяжний за суттю. Практично закривається за авторитетним вторинним джерелом із явною позначкою, що це вторинне.
@@ -473,7 +473,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** IEC 60529 (Degrees of protection provided by enclosures, IP Code)
 - **Що шукати в джерелі:** таблиця першої цифри (тверді тіла) і другої (вода); зокрема точне формулювання IP65 (струмені) та IP67 (тимчасове занурення, глибина й тривалість).
 - **Нотатка:** Стандарт платний, і це окремий випадок: він не «недосяжний через egress», а недосяжний за суттю. Практично закривається за авторитетним вторинним джерелом із явною позначкою, що це вторинне.
@@ -844,7 +844,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -1434,7 +1434,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.espressif.com/en/support/documents/technical-documents (ESP32 Series Datasheet)
 - **Що шукати в джерелі:** розділ «Recommended Operating Conditions»: гранично допустимий струм на пін (40 мА) і типова сила драйвера за замовчуванням; робочий діапазон температур; таблиця споживання за режимами (deep sleep, light sleep, modem sleep, активний, пік передачі Wi-Fi).
 - **Нотатка:** Найважливіша недосяжна група після BME280: на цих числах стоять розділи 05, 06 і 47, тобто вся частина про живлення. Частина закривається обхідним шляхом — `gpio_set_drive_capability` у ESP-IDF описує рівні сили драйвера, — і це завдання наступного проходу.
@@ -1484,12 +1484,12 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics», с. 51, разом із приміткою 3
 - **Дослівно з джерела:**
   > T note 3 Operating temperature –40 — 125 °C
   > 3. The operating temperature of ESP32-U4WDH and ESP32-D0WDRH2-V3 ranges from –40 °C to 85 °C, due to the
-- **Спосіб і дата:** tools/layer3.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
+- **Спосіб і дата:** factcheck/tools/layer3.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
 - **Нотатка:** Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ: я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`), яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за що я потім ловив помічників. Було `T (note 3)   Operating temperature   Min –40   Max 125   °C` — дужки навколо note й підписи Min/Max мої.
 - **Прохід:** m2-02-esp32-datasheet
 
@@ -1560,7 +1560,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf — ESP32-WROOM-32E & ESP32-WROOM-32UE Datasheet, Table 1 «Series Comparison» (с. 8) і Table 14 «Recommended Operating Conditions»
 - **Дослівно з джерела:**
   > Table 1: ESP32-WROOM-32E Series Comparison
@@ -1628,7 +1628,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf — ESP32-WROOM-32E & ESP32-WROOM-32UE Datasheet, Table 1 «Series Comparison» (с. 8) і Table 14 «Recommended Operating Conditions»
 - **Дослівно з джерела:**
   > Table 1: ESP32-WROOM-32E Series Comparison
@@ -1720,7 +1720,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://enerpower.de/wp-content/uploads/2016/03/Specification_INR18650MJ1.pdf
 - **Дослівно з джерела:**
   > Battery must be charged at operating temperature range 0 ~ 45

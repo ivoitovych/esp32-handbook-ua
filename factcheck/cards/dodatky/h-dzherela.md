@@ -303,7 +303,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
 - **Дослівно з джерела:**
   > For more information on ESP32-D0WD-V3 and ESP32-D0WDR2-V3 chip, please refer to ESP32 Series Datasheet.
@@ -332,7 +332,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/56497005-external-ram.rst
 - **Дослівно з джерела:**
   > For specific details about connecting the SoC or module pins to an external PSRAM chip, consult the SoC or module datasheet.
@@ -406,7 +406,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/README.md
 - **Дослівно з джерела:**
   > github.com/espressif/esp-idf
@@ -506,7 +506,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
@@ -557,7 +557,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -667,7 +667,7 @@ MAX485).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/sx1276.pdf
 - **Дослівно з джерела:**
   > The SX1276/77/78/79 incorporates the LoRaTM spread spectrum modem which is capable of achieving significantly longer

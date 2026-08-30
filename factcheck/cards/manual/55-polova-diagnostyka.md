@@ -271,7 +271,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
 - **Дослівно з джерела:**
   > Мультиметр здатен вимірювати:
@@ -439,7 +439,7 @@
 
 **Доказ**
 
-- **Статус:** looked-not-found — дивилися й не знайшли — робота зроблена, джерела не видно
+- **Статус:** looked-not-found — looked and did not find — the work was done, the source is not visible
 - **Спосіб і дата:** Пошук у технічній документації ESP32 про живлення
 - **Що шукати в джерелі:** Напруга живлення, просадка 3.0 В, стабілізатор
 - **Нотатка:** Твердження про критичну напругу 3.0 В для ESP32. Джерелом було б вказати документ Espressif про мінімальну напругу. Не знайшов первинного джерела. Витягу ще не має. | 2026-08-28, §5 аудиту: клас named-unreachable (C) вимагає НАЗВАНОГО документа — у цьому записі його не було, стояла лише тема в look_for. За власним законом: не можеш назвати документ — це не C, а unverified. Тему збережено в look_for як підказку, куди дивитися, але це не наряд.
@@ -886,7 +886,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -1265,7 +1265,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Практичне сумування проблем при прошиванню; ESP32 документація про режим завантаження та GPIO0; Практичний досвід налагодження
 - **Дослівно з джерела:**
   > Непрошивання модуля зазвичай викликано трьома основними причинами:
@@ -2002,7 +2002,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > The library uses all the partitions with data type and nvs subtype.

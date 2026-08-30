@@ -26,13 +26,13 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings» і Table 5-3 «DC Characteristics», с. 51
 - **Дослівно з джерела:**
   > Allowed input voltage –0.3 3.6 V
   > VIH High-level input voltage 0.75 × VDD 1 — VDD 1 + 0.3 V
   > VIL Low-level input voltage –0.3 — 0.25 × VDD 1 V
-- **Спосіб і дата:** tools/layer3.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
+- **Спосіб і дата:** factcheck/tools/layer3.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
 - **Нотатка:** Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ: я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`), яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за що я потім ловив помічників. Заголовки таблиць і рядок про permanent damage я додавав від себе. Одиниця після VDD — це номер виноски в документі, не множник.
 - **Прохід:** m2-06-voltage-limits
 
@@ -56,7 +56,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -86,7 +86,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings», с. 51 (кеш: source-cache/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > Stresses above those listed in Table 5-1 Absolute Maximum Ratings may cause permanent damage to the
@@ -122,7 +122,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -150,7 +150,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -240,7 +240,7 @@
 
 **Доказ**
 
-- **Статус:** looked-not-found — дивилися й не знайшли — робота зроблена, джерела не видно
+- **Статус:** looked-not-found — looked and did not find — the work was done, the source is not visible
 - **Спосіб і дата:** Загальна рекомендація практики електроніки для модулів
 - **Нотатка:** Твердження описує стандартну практику роботи з модулями без вбудованого
 стабілізатора напруги. Якщо на модулі немає стабілізатора, це означає,
@@ -284,7 +284,7 @@
 
 **Доказ**
 
-- **Статус:** looked-not-found — дивилися й не знайшли — робота зроблена, джерела не видно
+- **Статус:** looked-not-found — looked and did not find — the work was done, the source is not visible
 - **Спосіб і дата:** Загальна рекомендація практики електроніки для модулів
 - **Нотатка:** Твердження описує стандартну практику роботи з модулями без вбудованого
 стабілізатора напруги. Якщо на модулі немає стабілізатора, це означає,
@@ -328,7 +328,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -402,7 +402,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -442,7 +442,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -470,7 +470,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -497,7 +497,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings», с. 51 (кеш: source-cache/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > Stresses above those listed in Table 5-1 Absolute Maximum Ratings may cause permanent damage to the
@@ -532,7 +532,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -572,8 +572,8 @@
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py
 - **Розрахунок:**
   30 перевірок, усі збіглися. Найважливіші:
     (3.3 − 2) / 0.007            = 185.7 Ом      → книга: 185, беремо 220
@@ -600,7 +600,7 @@
     1750 / 2.85                  = 614 діб
     2500 × 0.7                   = 1750 мА·год
     (0x20040000 − 0x20000000)/1024 = 256 КБ; +4+4 = 264 КБ → RP2040
-- **Спосіб і дата:** python3 tools/arithmetic.py, 2026-08-26
+- **Спосіб і дата:** python3 factcheck/tools/arithmetic.py, 2026-08-26
 - **Нотатка:** Перевірку внесено в `make check` окремою ціллю `arytmetyka`. Це відповідь на те, як у книгу колись потрапили значення `duty` для серво від іншої роздільності: абзац із неправильним добутком внутрішньо несуперечливий і зовнішнього джерела не потребує, тож ні читання, ні звірка з першоджерелом його не ловлять. Ловить лише калькулятор — і тепер він запускається сам.
 - **Прохід:** pass-05-obchyslennya
 
@@ -626,7 +626,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -663,8 +663,8 @@
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py
 - **Розрахунок:**
   30 перевірок, усі збіглися. Найважливіші:
     (3.3 − 2) / 0.007            = 185.7 Ом      → книга: 185, беремо 220
@@ -691,7 +691,7 @@
     1750 / 2.85                  = 614 діб
     2500 × 0.7                   = 1750 мА·год
     (0x20040000 − 0x20000000)/1024 = 256 КБ; +4+4 = 264 КБ → RP2040
-- **Спосіб і дата:** python3 tools/arithmetic.py, 2026-08-26
+- **Спосіб і дата:** python3 factcheck/tools/arithmetic.py, 2026-08-26
 - **Нотатка:** Перевірку внесено в `make check` окремою ціллю `arytmetyka`. Це відповідь на те, як у книгу колись потрапили значення `duty` для серво від іншої роздільності: абзац із неправильним добутком внутрішньо несуперечливий і зовнішнього джерела не потребує, тож ні читання, ні звірка з першоджерелом його не ловлять. Ловить лише калькулятор — і тепер він запускається сам.
 - **Прохід:** pass-05-obchyslennya
 
@@ -737,7 +737,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -772,7 +772,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -807,7 +807,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -862,7 +862,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -898,7 +898,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Datasheet HC-SR04, документація модуля
 - **Дослівно з джерела:**
   > З kartky/k14-rivni.md, таблиця «Часті винуватці 5 В», рядок 1:
@@ -989,7 +989,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.ti.com/ та https://www.analog.com/ (datasheet відповідних трансиверів)
 - **Що шукати в джерелі:** напруга живлення й рівні логічних входів/виходів кожного: SN65HVD230 (3.3 В), TJA1050 і MCP2551 (5 В, рівень виходу RX), MAX485 (5 В) і його 3.3-вольтові аналоги на кшталт SP3485/MAX3485.
 - **Нотатка:** Твердження книги «5-вольтовий трансивер може спалити пін ESP32» спирається саме на рівень виходу RX і на те, що вхід ESP32 не толерантний до 5 В. Обидві половини потребують окремих datasheet.
@@ -1021,7 +1021,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** 74HC (CMOS Logic) Datasheet — наприклад, SN74HC04 (NOT gate)
 - **Дослівно з джерела:**
   > SN74HC04 Datasheet:
@@ -1052,7 +1052,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Основи електроніки; конкретне джерело у кеші не знайдено
 - **Дослівно з джерела:**
   > (Це фундаментальний принцип електроніки, а не дані з даташа)

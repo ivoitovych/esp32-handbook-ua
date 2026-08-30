@@ -186,7 +186,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
 - **Дослівно з джерела:**
   > System recovery and restart mechanism through watchdog monitoring.
@@ -361,7 +361,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -507,7 +507,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Appendix A, Table 6-1 «Notes on ESP32 Pin Lists», примітка 2, с. 60
 - **Дослівно з джерела:**
   > GPIO pins 34-39 are input-only. These pins do not feature an output
@@ -586,7 +586,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -670,7 +670,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
@@ -727,7 +727,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
@@ -784,7 +784,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
@@ -841,7 +841,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/pins.py`
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
@@ -898,7 +898,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
 - **Дослівно з джерела:**
   > GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
@@ -947,7 +947,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
 - **Дослівно з джерела:**
   > GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
@@ -996,7 +996,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
@@ -1053,7 +1053,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
@@ -1110,7 +1110,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
@@ -1167,7 +1167,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
@@ -1224,7 +1224,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
@@ -1281,7 +1281,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
@@ -1321,7 +1321,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_VALID_OUTPUT_GPIO_MASK
@@ -1357,7 +1357,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_VALID_OUTPUT_GPIO_MASK
@@ -1531,7 +1531,7 @@ boot loop (розділ 20) це означає блимання насосом 
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Appendix A, Table 6-1 «Notes on ESP32 Pin Lists», примітка 9, с. 60
 - **Дослівно з джерела:**
   > Column "At Reset" in Table IO_MUX lists the status of each pin
@@ -1593,7 +1593,7 @@ boot loop (розділ 20) це означає блимання насосом 
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1676,7 +1676,7 @@ boot loop (розділ 20) це означає блимання насосом 
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** базова логіка: якщо чип завис, GPIO не обробляються
 - **Спосіб і дата:** Випливає однозначно з того, що GPIO обробляються завданням FreeRTOS, яке висить
 - **Прохід:** m2-67-project-62
@@ -1772,7 +1772,7 @@ boot loop (розділ 20) це означає блимання насосом 
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 96
 - **Дослівно з джерела:**
   > +12 В ── [насос] ── [реле: контакти NO] ── [аварійний вимикач] ── GND
@@ -1801,7 +1801,7 @@ boot loop (розділ 20) це означає блимання насосом 
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 96
 - **Дослівно з джерела:**
   > +12 В ── [насос] ── [реле: контакти NO] ── [аварійний вимикач] ── GND
@@ -1828,7 +1828,7 @@ boot loop (розділ 20) це означає блимання насосом 
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -1873,7 +1873,7 @@ GPIO25 ──┬──[220 Ом]──── IN модуля
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
 - **Дослівно з джерела:**
   > System recovery and restart mechanism through watchdog monitoring.
@@ -1951,7 +1951,7 @@ GPIO25 ──┬──[220 Ом]──── IN модуля
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -2045,7 +2045,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -2083,7 +2083,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -2192,7 +2192,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2221,7 +2221,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2250,7 +2250,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2281,7 +2281,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** Даташит оптопари PC817 (Sharp) — пряма напруга й струм світлодіода, CTR
 - **Дослівно з джерела:**
   > —
@@ -2313,7 +2313,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** Даташит оптопари PC817 (Sharp) — пряма напруга й струм світлодіода, CTR
 - **Дослівно з джерела:**
   > —
@@ -2370,7 +2370,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2425,7 +2425,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2504,7 +2504,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -2551,7 +2551,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Appendix A, Table 6-1 «Notes on ESP32 Pin Lists», примітка 9, с. 60
 - **Дослівно з джерела:**
   > Column "At Reset" in Table IO_MUX lists the status of each pin
@@ -2629,7 +2629,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Appendix A, Table 6-1 «Notes on ESP32 Pin Lists», примітка 9, с. 60
 - **Дослівно з джерела:**
   > Column "At Reset" in Table IO_MUX lists the status of each pin
@@ -2698,7 +2698,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** I²C вимагає open-drain/open-collector виходів та pull-up резисторів для синхронізації за часовими константами. Звичайна резистор не забезпечує двонапрямленість
 - **Дослівно з джерела:**
   > I²C-bus specification (UM10204):
@@ -2735,7 +2735,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Appendix A, Table 6-1 «Notes on ESP32 Pin Lists», примітка 2, с. 60
 - **Дослівно з джерела:**
   > GPIO pins 34-39 are input-only. These pins do not feature an output
@@ -2768,7 +2768,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Appendix A, Table 6-1 «Notes on ESP32 Pin Lists», примітка 2, с. 60
 - **Дослівно з джерела:**
   > GPIO pins 34-39 are input-only. These pins do not feature an output
@@ -2800,7 +2800,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -2916,7 +2916,7 @@ static void perejty(stan_t novyy, const char *prychyna) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -2961,7 +2961,7 @@ static void perejty(stan_t novyy, const char *prychyna) {
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 182
 - **Дослівно з джерела:**
   > ESP_LOGI(TAG, "%s -> %s: %s", nazva(stan), nazva(novyy), prychyna);
@@ -2996,7 +2996,7 @@ static void perejty(stan_t novyy, const char *prychyna) {
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 185
 - **Дослівно з джерела:**
   > nasos_keruvaty(novyy == STAN_ROBOTA);
@@ -3031,7 +3031,7 @@ static void perejty(stan_t novyy, const char *prychyna) {
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 186
 - **Дослівно з джерела:**
   > onovyty_indykaciyu();
@@ -3140,7 +3140,7 @@ static void task_keruvannya(void *arg) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
   > Task priorities range from 0 (lowest) to configMAX_PRIORITIES - 1 (highest).
@@ -3169,7 +3169,7 @@ static void task_keruvannya(void *arg) {
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 192
 - **Дослівно з джерела:**
   > #define MAX_ROBOTY_S     600      // 10 хвилин безперервно
@@ -3194,7 +3194,7 @@ static void task_keruvannya(void *arg) {
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 193
 - **Дослівно з джерела:**
   > #define PAUZA_PISLYA_S   300      // 5 хвилин відпочинку
@@ -3244,7 +3244,7 @@ static void task_keruvannya(void *arg) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -3285,7 +3285,7 @@ static void task_keruvannya(void *arg) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -3509,7 +3509,7 @@ static void task_keruvannya(void *arg) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -3565,7 +3565,7 @@ static void task_keruvannya(void *arg) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
 - **Дослівно з джерела:**
   > The purpose of a watchdog timer is to monitor the system's operation and automatically
@@ -3664,7 +3664,7 @@ static void task_keruvannya(void *arg) {
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** первинний документ не отримано. Шукати треба IEC 60947-5-1, додаток L (mechanically linked contacts) і ISO 13849-1 — обидва за платним доступом, звідси недосяжні
 - **Спосіб і дата:** розбір відмови за механізмом, 2026-08-26
 - **Що шукати в джерелі:** формулювання про примусово зв'язані контакти (mechanically linked contacts) і про те, що знеструмлення котушки не гарантує роз'єднання при зварюванні. Достатньо одного абзацу з IEC 60947-5-1 Annex L або з ISO 13849-1 про вимогу апаратного розмикання.
@@ -3837,7 +3837,7 @@ static void task_keruvannya(void *arg) {
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** первинний документ не отримано. Шукати треба IEC 60947-5-1, додаток L (mechanically linked contacts) і ISO 13849-1 — обидва за платним доступом, звідси недосяжні
 - **Спосіб і дата:** розбір відмови за механізмом, 2026-08-26
 - **Що шукати в джерелі:** формулювання про примусово зв'язані контакти (mechanically linked contacts) і про те, що знеструмлення котушки не гарантує роз'єднання при зварюванні. Достатньо одного абзацу з IEC 60947-5-1 Annex L або з ISO 13849-1 про вимогу апаратного розмикання.
@@ -3929,7 +3929,7 @@ static void task_keruvannya(void *arg) {
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** первинний документ не отримано. Шукати треба IEC 60947-5-1, додаток L (mechanically linked contacts) і ISO 13849-1 — обидва за платним доступом, звідси недосяжні
 - **Спосіб і дата:** розбір відмови за механізмом, 2026-08-26
 - **Що шукати в джерелі:** формулювання про примусово зв'язані контакти (mechanically linked contacts) і про те, що знеструмлення котушки не гарантує роз'єднання при зварюванні. Достатньо одного абзацу з IEC 60947-5-1 Annex L або з ISO 13849-1 про вимогу апаратного розмикання.
@@ -3961,7 +3961,7 @@ static void task_keruvannya(void *arg) {
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** первинний документ не отримано. Шукати треба IEC 60947-5-1, додаток L (mechanically linked contacts) і ISO 13849-1 — обидва за платним доступом, звідси недосяжні
 - **Спосіб і дата:** розбір відмови за механізмом, 2026-08-26
 - **Що шукати в джерелі:** формулювання про примусово зв'язані контакти (mechanically linked contacts) і про те, що знеструмлення котушки не гарантує роз'єднання при зварюванні. Достатньо одного абзацу з IEC 60947-5-1 Annex L або з ISO 13849-1 про вимогу апаратного розмикання.
@@ -4345,7 +4345,7 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -4439,7 +4439,7 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -4494,7 +4494,7 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -4588,7 +4588,7 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -4682,7 +4682,7 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -4776,7 +4776,7 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -5394,7 +5394,7 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
 - **Дослівно з джерела:**
   > The purpose of a watchdog timer is to monitor the system's operation and automatically
@@ -5476,7 +5476,7 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** 74HC (CMOS Logic) Datasheet — наприклад, SN74HC04 (NOT gate)
 - **Дослівно з джерела:**
   > SN74HC04 Datasheet:

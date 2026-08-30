@@ -212,7 +212,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/4aac28c3-partition-tables.rst
 - **Дослівно з джерела:**
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
@@ -242,8 +242,8 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
 - **Розрахунок:**
   таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
   nvs               0x9000 + 0x6000          = 0xF000
@@ -279,7 +279,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/4aac28c3-partition-tables.rst
 - **Дослівно з джерела:**
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
@@ -306,7 +306,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > Each entry in the partition table has a name (label), type (app, data, or something else), subtype and the offset in flash where the partition is loaded.
@@ -335,7 +335,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > ota_0,    app,  ota_0,   0x20000,  1M,
@@ -387,7 +387,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/spiffs.rst
 - **Дослівно з джерела:**
   > SPIFFS is a file system intended for SPI NOR flash devices on embedded targets
@@ -415,7 +415,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > flash capacity and partition allocation
@@ -492,7 +492,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
   > rst:0x10 (RTCWDT_RTC_RESET)
@@ -554,7 +554,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
   > rst:0x10 (RTCWDT_RTC_RESET)
@@ -658,7 +658,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -860,7 +860,7 @@ NVS зберігає конфігурацію конкретного екзем�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > Each key-value pair belongs to one of the namespaces.
@@ -910,7 +910,7 @@ NVS зберігає конфігурацію конкретного екзем�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > Each entry in the partition table has a name (label), type (app, data, or something else), subtype and the offset in flash where the partition is loaded.
@@ -941,8 +941,8 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
 - **Розрахунок:**
   таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
   nvs               0x9000 + 0x6000          = 0xF000
@@ -977,8 +977,8 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
 - **Розрахунок:**
   таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
   nvs               0x9000 + 0x6000          = 0xF000
@@ -1014,7 +1014,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > NVS operates on key-value pairs. Keys are ASCII strings; the maximum key length is currently 15 characters. Values can have one of the following types:
@@ -1469,7 +1469,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/app_image_format.rst
 - **Дослівно з джерела:**
   > The ``DROM`` segment of the application binary starts with the :cpp:type:`esp_app_desc_t` structure which carries specific fields describing the application
@@ -1702,7 +1702,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -1749,7 +1749,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/security/flash-encryption.rst
 - **Дослівно з джерела:**
   > the {IDF_TARGET_NAME} will generate a random key that software cannot access or modify

@@ -91,7 +91,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C spec (UM10204) та 1-Wire spec — обидва вимагають open-drain виходу
 - **Дослівно з джерела:**
   > I²C spec (UM10204):
@@ -124,7 +124,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
   > SPI складається з чотирьох ліній:
@@ -158,7 +158,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/ncr18650b.pdf
 - **Дослівно з джерела:**
   > Discharge: CC 1C, 2.50V cut-off at 25°C
@@ -187,7 +187,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** DS3231 Extremely Accurate I2C-Integrated RTC/TCXO/Crystal, datasheet Maxim Integrated (нині Analog Devices) — https://www.analog.com/en/products/ds3231.html
 - **Що шукати в джерелі:** Наявність виводу VBAT і резервного живлення від батареї при зникненні основного (звідки випливає «лишається живим сам»); струм від VBAT у режимі підтримки; діапазон напруги VBAT (сумісність із CR2032, 3 В); підтвердження інтерфейсу I²C і адреси `0x68`.
 - **Нотатка:** Той самий висновок, що вже зафіксований у `m2-09-hc-sr04.yaml`: `analog.com` відмовляє цій мережі на рівні Akamai, і чотири перевірені тоді дзеркала (Mouser, DigiKey, SparkFun, rcscomponents) PDF не віддали. Тут — та сама мікросхема, інша цитата книги (розділ 60, а не додаток E), тому новий запис, а не дублювання.
@@ -215,7 +215,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
 - **Дослівно з джерела:**
   > If some variables in the program are placed into RTC SLOW memory (for example, using
@@ -295,7 +295,7 @@
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/60-proj-loger.md, рядок 28
 - **Дослівно з джерела:**
   > | ESP32 classic або C3 | 1 | **не плата розробки** для фінальної версії |
@@ -496,7 +496,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DS18B20 datasheet (Maxim), Figure 4 «Supplying the Parasite-Powered DS18B20», Figure 5 і блок-схема — номінал підтягування на DQ
 - **Дослівно з джерела:**
   > (на схемах підключення DQ підтягнуто до VPU резистором 4.7k —
@@ -546,7 +546,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -591,7 +591,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** DS3231 Extremely Accurate I2C-Integrated RTC/TCXO/Crystal, datasheet Maxim Integrated (нині Analog Devices) — https://www.analog.com/en/products/ds3231.html
 - **Що шукати в джерелі:** Наявність виводу VBAT і резервного живлення від батареї при зникненні основного (звідки випливає «лишається живим сам»); струм від VBAT у режимі підтримки; діапазон напруги VBAT (сумісність із CR2032, 3 В); підтвердження інтерфейсу I²C і адреси `0x68`.
 - **Нотатка:** Той самий висновок, що вже зафіксований у `m2-09-hc-sr04.yaml`: `analog.com` відмовляє цій мережі на рівні Akamai, і чотири перевірені тоді дзеркала (Mouser, DigiKey, SparkFun, rcscomponents) PDF не віддали. Тут — та сама мікросхема, інша цитата книги (розділ 60, а не додаток E), тому новий запис, а не дублювання.
@@ -713,7 +713,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
 - **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
 - **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.
@@ -756,7 +756,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
 - **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
 - **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.
@@ -799,7 +799,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
 - **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
 - **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.
@@ -842,7 +842,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
 - **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
 - **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.
@@ -885,7 +885,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -930,7 +930,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -975,7 +975,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -1020,7 +1020,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DS18B20 Programmable Resolution 1-Wire Digital Thermometer, datasheet Maxim Integrated — «Hardware Configuration», Figure 10; разом із NXP UM10204, розділ 7.1 (доказ `m2-05-i2c-pidtyaguvannya.yaml`)
 - **Дослівно з джерела:**
   > The 1-Wire bus requires an external pullup resistor of approximately
@@ -1070,7 +1070,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -1121,7 +1121,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -1186,7 +1186,7 @@
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/60-proj-loger.md, рядок 45
 - **Дослівно з джерела:**
   > | Сигнал | classic | C3 |
@@ -1229,7 +1229,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
@@ -1293,7 +1293,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
@@ -1357,7 +1357,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
@@ -1421,7 +1421,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
@@ -1522,7 +1522,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
 - **Дослівно з джерела:**
   > GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
@@ -1566,7 +1566,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C spec (UM10204) та 1-Wire spec — обидва вимагають open-drain виходу
 - **Дослівно з джерела:**
   > I²C spec (UM10204):
@@ -1615,7 +1615,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C spec (UM10204) та 1-Wire spec — обидва вимагають open-drain виходу
 - **Дослівно з джерела:**
   > I²C spec (UM10204):
@@ -1664,7 +1664,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
@@ -1728,7 +1728,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
@@ -1792,7 +1792,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
 - **Дослівно з джерела:**
   > GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
@@ -1836,7 +1836,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
@@ -1887,7 +1887,7 @@ microSD це не коштує нічого — межа матриці 40 МГ�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
@@ -1938,7 +1938,7 @@ microSD це не коштує нічого — межа матриці 40 МГ�
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/60-proj-loger.md, рядок 54
 - **Дослівно з джерела:**
   > На C3 рідними лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2`, 
@@ -1969,7 +1969,7 @@ microSD це не коштує нічого — межа матриці 40 МГ�
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** Розрахунок: 40 МГц > 24 МГц означає, що дискретизація недостатня за Теоремою Найквіста (потрібно ≥ 2 × сигнал)
 - **Дослівно з джерела:**
   > SPI максимальна швидкість на ESP32: до 80 МГц (у режимі нестандартного)
@@ -2013,7 +2013,7 @@ classic — теж strapping-пін**, як і `GPIO2` на C3. Позначки
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
 - **Дослівно з джерела:**
   > GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
@@ -2046,7 +2046,7 @@ classic — теж strapping-пін**, як і `GPIO2` на C3. Позначки
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
 - **Дослівно з джерела:**
   > GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
@@ -2079,7 +2079,7 @@ classic — теж strapping-пін**, як і `GPIO2` на C3. Позначки
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32.inc
 - **Дослівно з джерела:**
   > * - GPIO5
@@ -2118,7 +2118,7 @@ classic — теж strapping-пін**, як і `GPIO2` на C3. Позначки
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_PIN_COUNT 40
@@ -2161,7 +2161,7 @@ classic — теж strapping-пін**, як і `GPIO2` на C3. Позначки
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/usb-serial-jtag-console.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_USB_DP_GPIO:default="Not Updated!",esp32c3="19",esp32s3="20",
@@ -2196,7 +2196,7 @@ classic — теж strapping-пін**, як і `GPIO2` на C3. Позначки
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/register/soc/io_mux_reg.h, .../components/efuse/esp32c3/esp_efuse_table.csv, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/burn-efuse-cmd.rst
 - **Дослівно з джерела:**
   > (io_mux_reg.h)
@@ -2245,7 +2245,7 @@ classic — теж strapping-пін**, як і `GPIO2` на C3. Позначки
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/register/soc/io_mux_reg.h, .../components/efuse/esp32c3/esp_efuse_table.csv, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/burn-efuse-cmd.rst
 - **Дослівно з джерела:**
   > (io_mux_reg.h)
@@ -2338,7 +2338,7 @@ classic — теж strapping-пін**, як і `GPIO2` на C3. Позначки
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
@@ -2413,7 +2413,7 @@ strapping-пін `GPIO2` — це припустимо лише тому, що �
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/60-proj-loger.md, рядок 86
 - **Дослівно з джерела:**
   > Тому ключ дільника доводиться вішати на strapping-пін `GPIO2` — це припустимо 
@@ -2538,7 +2538,7 @@ strapping-пін `GPIO2` — це припустимо лише тому, що �
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/60-proj-loger.md, рядок 99
 - **Дослівно з джерела:**
   > Для C3 підставте піни з таблиці вище.
@@ -2589,7 +2589,7 @@ SPI  SCK/MOSI/MISO + CS: microSD            classic 18/23/19 + 5
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -2627,7 +2627,7 @@ SPI  SCK/MOSI/MISO + CS: microSD            classic 18/23/19 + 5
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
 - **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
 - **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.
@@ -2683,7 +2683,7 @@ SPI  SCK/MOSI/MISO + CS: microSD            classic 18/23/19 + 5
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -2721,7 +2721,7 @@ SPI  SCK/MOSI/MISO + CS: microSD            classic 18/23/19 + 5
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -2782,7 +2782,7 @@ SPI  SCK/MOSI/MISO + CS: microSD            classic 18/23/19 + 5
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2812,7 +2812,7 @@ SPI  SCK/MOSI/MISO + CS: microSD            classic 18/23/19 + 5
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -2866,7 +2866,7 @@ SPI  SCK/MOSI/MISO + CS: microSD            classic 18/23/19 + 5
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes» (доказ `m2-02-esp32-datasheet.yaml`); власний код і власна таблиця розділу 60 (`if (napruga < 3.2f)`, `RTC_DATA_ATTR`)
 - **Розрахунок:**
   Дільник: два резистори по 100 кОм послідовно між VBAT і GND —
@@ -3029,7 +3029,7 @@ SPI  SCK/MOSI/MISO + CS: microSD            classic 18/23/19 + 5
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
@@ -3082,7 +3082,7 @@ SPI  SCK/MOSI/MISO + CS: microSD            classic 18/23/19 + 5
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/60-proj-loger.md, рядок 166
 - **Дослівно з джерела:**
   > Рядок `PIN_DILNYK_EN` на C3 — свідомий компроміс і єдине місце, 
@@ -3141,7 +3141,7 @@ SPI  SCK/MOSI/MISO + CS: microSD            classic 18/23/19 + 5
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -3219,7 +3219,7 @@ Deep sleep — це перезавантаження: RAM втрачається
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
 - **Дослівно з джерела:**
   > If some variables in the program are placed into RTC SLOW memory (for example, using
@@ -3258,7 +3258,7 @@ RTC_DATA_ATTR static uint8_t  u_buferi = 0;
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
 - **Дослівно з джерела:**
   > If some variables in the program are placed into RTC SLOW memory (for example, using
@@ -3288,7 +3288,7 @@ RTC RAM невелика — одиниці кілобайтів. Буфер н�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
 - **Дослівно з джерела:**
   > If some variables in the program are placed into RTC SLOW memory (for example, using
@@ -3391,7 +3391,7 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -3432,7 +3432,7 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/60-proj-loger.md, рядок 200
 - **Дослівно з джерела:**
   > ESP_LOGE(TAG, "акумулятор %.2f В — засинаємо назавжди", napruga);
@@ -3465,7 +3465,7 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/60-proj-loger.md, рядок 211
 - **Дослівно з джерела:**
   > ESP_LOGW(TAG, "картка недоступна, у буфері %u", u_buferi);
@@ -3617,7 +3617,7 @@ static float zmiryaty_akumulyator(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -3684,7 +3684,7 @@ static float zmiryaty_akumulyator(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -3725,7 +3725,7 @@ static float zmiryaty_akumulyator(void) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -3796,7 +3796,7 @@ static bool zapysaty_na_kartku(const zapys_t *z) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
   > rst:0x10 (RTCWDT_RTC_RESET)
@@ -4020,7 +4020,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -4113,7 +4113,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -4224,7 +4224,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
   > Двонапрямлений перетворювач рівня I²C:
@@ -4258,7 +4258,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** DS3231 Extremely Accurate I2C-Integrated RTC/TCXO/Crystal, datasheet Maxim Integrated (нині Analog Devices) — https://www.analog.com/en/products/ds3231.html
 - **Що шукати в джерелі:** Наявність виводу VBAT і резервного живлення від батареї при зникненні основного (звідки випливає «лишається живим сам»); струм від VBAT у режимі підтримки; діапазон напруги VBAT (сумісність із CR2032, 3 В); підтвердження інтерфейсу I²C і адреси `0x68`.
 - **Нотатка:** Той самий висновок, що вже зафіксований у `m2-09-hc-sr04.yaml`: `analog.com` відмовляє цій мережі на рівні Akamai, і чотири перевірені тоді дзеркала (Mouser, DigiKey, SparkFun, rcscomponents) PDF не віддали. Тут — та сама мікросхема, інша цитата книги (розділ 60, а не додаток E), тому новий запис, а не дублювання.
@@ -4348,7 +4348,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Розрахунок:**
   сума етапів пробудження з таблиці розрахунку проєкту логера = 300 мс
 - **Спосіб і дата:** Розрахунок, наведений у 60-proj-loger.md
@@ -4392,7 +4392,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.espressif.com/en/support/documents/technical-documents (ESP32 Series Datasheet)
 - **Що шукати в джерелі:** розділ «Recommended Operating Conditions»: гранично допустимий струм на пін (40 мА) і типова сила драйвера за замовчуванням; робочий діапазон температур; таблиця споживання за режимами (deep sleep, light sleep, modem sleep, активний, пік передачі Wi-Fi).
 - **Нотатка:** Найважливіша недосяжна група після BME280: на цих числах стоять розділи 05, 06 і 47, тобто вся частина про живлення. Частина закривається обхідним шляхом — `gpio_set_drive_capability` у ESP-IDF описує рівні сили драйвера, — і це завдання наступного проходу.
@@ -4431,7 +4431,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** —
 - **Розрахунок:**
   Пробудження: 300 мс × 40 мА = 0.300 с × 40 мА = 12.0 мА·с — збігається.
@@ -4475,7 +4475,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DS18B20 Datasheet, Table «Temperature Conversion Time»
 - **Дослівно з джерела:**
   > Temperature Conversion Time — максимум 750 мс
@@ -4517,7 +4517,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DS18B20 Datasheet, Table «Temperature Conversion Time»
 - **Дослівно з джерела:**
   > Temperature Conversion Time — максимум 750 мс
@@ -4559,7 +4559,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DS18B20 Datasheet, Table «Temperature Conversion Time»
 - **Дослівно з джерела:**
   > Temperature Conversion Time — максимум 750 мс
@@ -4601,7 +4601,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** немає зовнішнього джерела
 - **Спосіб і дата:** перевірка табличних даних у розділі 60, 2026-08-27
 - **Нотатка:** Це власне вимірювання автора в проекті logger (manual/60-proj-loger.md:316). Таблиця показує емпіричні дані з конкретної апаратури й конфігурації. Зовнішнього документа для цього вимірювання не існує — це результат експерименту. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
@@ -4640,7 +4640,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -4681,7 +4681,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** —
 - **Розрахунок:**
   Пробудження: 300 мс × 40 мА = 0.300 с × 40 мА = 12.0 мА·с — збігається.
@@ -4760,7 +4760,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -4801,7 +4801,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** —
 - **Розрахунок:**
   Пробудження: 300 мс × 40 мА = 0.300 с × 40 мА = 12.0 мА·с — збігається.
@@ -4880,8 +4880,8 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py
 - **Розрахунок:**
   30 перевірок, усі збіглися. Найважливіші:
     (3.3 − 2) / 0.007            = 185.7 Ом      → книга: 185, беремо 220
@@ -4908,7 +4908,7 @@ static void zasnuty(uint32_t sekund) {
     1750 / 2.85                  = 614 діб
     2500 × 0.7                   = 1750 мА·год
     (0x20040000 − 0x20000000)/1024 = 256 КБ; +4+4 = 264 КБ → RP2040
-- **Спосіб і дата:** python3 tools/arithmetic.py, 2026-08-26
+- **Спосіб і дата:** python3 factcheck/tools/arithmetic.py, 2026-08-26
 - **Нотатка:** Перевірку внесено в `make check` окремою ціллю `arytmetyka`. Це відповідь на те, як у книгу колись потрапили значення `duty` для серво від іншої роздільності: абзац із неправильним добутком внутрішньо несуперечливий і зовнішнього джерела не потребує, тож ні читання, ні звірка з першоджерелом його не ловлять. Ловить лише калькулятор — і тепер він запускається сам.
 - **Прохід:** pass-05-obchyslennya
 
@@ -4931,8 +4931,8 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py
 - **Розрахунок:**
   30 перевірок, усі збіглися. Найважливіші:
     (3.3 − 2) / 0.007            = 185.7 Ом      → книга: 185, беремо 220
@@ -4959,7 +4959,7 @@ static void zasnuty(uint32_t sekund) {
     1750 / 2.85                  = 614 діб
     2500 × 0.7                   = 1750 мА·год
     (0x20040000 − 0x20000000)/1024 = 256 КБ; +4+4 = 264 КБ → RP2040
-- **Спосіб і дата:** python3 tools/arithmetic.py, 2026-08-26
+- **Спосіб і дата:** python3 factcheck/tools/arithmetic.py, 2026-08-26
 - **Нотатка:** Перевірку внесено в `make check` окремою ціллю `arytmetyka`. Це відповідь на те, як у книгу колись потрапили значення `duty` для серво від іншої роздільності: абзац із неправильним добутком внутрішньо несуперечливий і зовнішнього джерела не потребує, тож ні читання, ні звірка з першоджерелом його не ловлять. Ловить лише калькулятор — і тепер він запускається сам.
 - **Прохід:** pass-05-obchyslennya
 
@@ -4983,8 +4983,8 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py
 - **Розрахунок:**
   30 перевірок, усі збіглися. Найважливіші:
     (3.3 − 2) / 0.007            = 185.7 Ом      → книга: 185, беремо 220
@@ -5011,7 +5011,7 @@ static void zasnuty(uint32_t sekund) {
     1750 / 2.85                  = 614 діб
     2500 × 0.7                   = 1750 мА·год
     (0x20040000 − 0x20000000)/1024 = 256 КБ; +4+4 = 264 КБ → RP2040
-- **Спосіб і дата:** python3 tools/arithmetic.py, 2026-08-26
+- **Спосіб і дата:** python3 factcheck/tools/arithmetic.py, 2026-08-26
 - **Нотатка:** Перевірку внесено в `make check` окремою ціллю `arytmetyka`. Це відповідь на те, як у книгу колись потрапили значення `duty` для серво від іншої роздільності: абзац із неправильним добутком внутрішньо несуперечливий і зовнішнього джерела не потребує, тож ні читання, ні звірка з першоджерелом його не ловлять. Ловить лише калькулятор — і тепер він запускається сам.
 - **Прохід:** pass-05-obchyslennya
 
@@ -5130,7 +5130,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.espressif.com/en/support/documents/technical-documents (ESP32 Series Datasheet)
 - **Що шукати в джерелі:** розділ «Recommended Operating Conditions»: гранично допустимий струм на пін (40 мА) і типова сила драйвера за замовчуванням; робочий діапазон температур; таблиця споживання за режимами (deep sleep, light sleep, modem sleep, активний, пік передачі Wi-Fi).
 - **Нотатка:** Найважливіша недосяжна група після BME280: на цих числах стоять розділи 05, 06 і 47, тобто вся частина про живлення. Частина закривається обхідним шляхом — `gpio_set_drive_capability` у ESP-IDF описує рівні сили драйвера, — і це завдання наступного проходу.
@@ -5166,7 +5166,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
   > SPI складається з чотирьох ліній:
@@ -5210,7 +5210,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** Розрахунок: 40 МГц > 24 МГц означає, що дискретизація недостатня за Теоремою Найквіста (потрібно ≥ 2 × сигнал)
 - **Дослівно з джерела:**
   > SPI максимальна швидкість на ESP32: до 80 МГц (у режимі нестандартного)
@@ -5356,7 +5356,7 @@ static void zasnuty(uint32_t sekund) {
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/60-proj-loger.md — код розділу, рядок 199 (`if (napruga < 3.2f) { … esp_deep_sleep_start(); }`, без таймера пробудження) проти твердження того самого розділу, рядок 118 «Buck-boost працює до 3.0 В»
 - **Дослівно з джерела:**
   > float napruga = zmiryaty_akumulyator();      // з ключем, див. нижче

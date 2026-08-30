@@ -50,7 +50,7 @@ Interface). Назва інша через ліцензування торгов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
 - **Дослівно з джерела:**
   > It is compatible with the frame structure defined in the ISO 11898-1 standard and supports
@@ -290,7 +290,7 @@ Interface). Назва інша через ліцензування торгов
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ISO 11898-1, Road vehicles — Controller area network (CAN), Part 1: Data link layer and physical signalling
 - **Нотатка:** Названо справжній стандарт, але це платний документ ISO, як і IEC 60529 — тексту не маю. Тому C, не B: висновок про семантику видавця-підписника може бути правильним, але засновку в записі немає, і читач його не перевірить.
 - **Прохід:** m2-96-sample
@@ -386,7 +386,7 @@ ESP32 має контролер, але **не має трансивера**. П
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
 - **Дослівно з джерела:**
   > It is compatible with the frame structure defined in the ISO 11898-1 standard and supports
@@ -417,7 +417,7 @@ ESP32 має контролер, але **не має трансивера**. П
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.ti.com/ та https://www.analog.com/ (datasheet відповідних трансиверів)
 - **Що шукати в джерелі:** напруга живлення й рівні логічних входів/виходів кожного: SN65HVD230 (3.3 В), TJA1050 і MCP2551 (5 В, рівень виходу RX), MAX485 (5 В) і його 3.3-вольтові аналоги на кшталт SP3485/MAX3485.
 - **Нотатка:** Твердження книги «5-вольтовий трансивер може спалити пін ESP32» спирається саме на рівень виходу RX і на те, що вхід ESP32 не толерантний до 5 В. Обидві половини потребують окремих datasheet.
@@ -445,7 +445,7 @@ ESP32 має контролер, але **не має трансивера**. П
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
 - **Дослівно з джерела:**
   > It is compatible with the frame structure defined in the ISO 11898-1 standard and supports
@@ -478,7 +478,7 @@ ESP32 має контролер, але **не має трансивера**. П
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.ti.com/ та https://www.analog.com/ (datasheet відповідних трансиверів)
 - **Що шукати в джерелі:** напруга живлення й рівні логічних входів/виходів кожного: SN65HVD230 (3.3 В), TJA1050 і MCP2551 (5 В, рівень виходу RX), MAX485 (5 В) і його 3.3-вольтові аналоги на кшталт SP3485/MAX3485.
 - **Нотатка:** Твердження книги «5-вольтовий трансивер може спалити пін ESP32» спирається саме на рівень виходу RX і на те, що вхід ESP32 не толерантний до 5 В. Обидві половини потребують окремих datasheet.
@@ -506,7 +506,7 @@ ESP32 має контролер, але **не має трансивера**. П
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.ti.com/ та https://www.analog.com/ (datasheet відповідних трансиверів)
 - **Що шукати в джерелі:** напруга живлення й рівні логічних входів/виходів кожного: SN65HVD230 (3.3 В), TJA1050 і MCP2551 (5 В, рівень виходу RX), MAX485 (5 В) і його 3.3-вольтові аналоги на кшталт SP3485/MAX3485.
 - **Нотатка:** Твердження книги «5-вольтовий трансивер може спалити пін ESP32» спирається саме на рівень виходу RX і на те, що вхід ESP32 не толерантний до 5 В. Обидві половини потребують окремих datasheet.
@@ -558,7 +558,7 @@ ESP32 має контролер, але **не має трансивера**. П
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Специфікації трансиверів CAN: SN65HVD230 (3.3В), TJA1050 (5В), MCP2551 (5В) та рекомендації щодо логіки сумісності з ESP32
 - **Дослівно з джерела:**
   > Трансивер має відповідати логіці **3.3 В**. SN65HVD230 живиться від
@@ -621,7 +621,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** RS-485 стандарт (IEC 61000-2); типова схемотехніка
 - **Дослівно з джерела:**
   > RS-485 лінії A і B мають бути закінчені резисторами 120 Ом
@@ -723,8 +723,8 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py
 - **Розрахунок:**
   30 перевірок, усі збіглися. Найважливіші:
     (3.3 − 2) / 0.007            = 185.7 Ом      → книга: 185, беремо 220
@@ -751,7 +751,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
     1750 / 2.85                  = 614 діб
     2500 × 0.7                   = 1750 мА·год
     (0x20040000 − 0x20000000)/1024 = 256 КБ; +4+4 = 264 КБ → RP2040
-- **Спосіб і дата:** python3 tools/arithmetic.py, 2026-08-26
+- **Спосіб і дата:** python3 factcheck/tools/arithmetic.py, 2026-08-26
 - **Нотатка:** Перевірку внесено в `make check` окремою ціллю `arytmetyka`. Це відповідь на те, як у книгу колись потрапили значення `duty` для серво від іншої роздільності: абзац із неправильним добутком внутрішньо несуперечливий і зовнішнього джерела не потребує, тож ні читання, ні звірка з першоджерелом його не ловлять. Ловить лише калькулятор — і тепер він запускається сам.
 - **Прохід:** pass-05-obchyslennya
 
@@ -858,7 +858,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -950,7 +950,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ISO 11898 CAN specification — baud rate на всіх вузлах
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ISO 11898 CAN specification — baud rate на всіх вузлах
@@ -1016,7 +1016,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1054,7 +1054,7 @@ twai_start();
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1092,7 +1092,7 @@ twai_start();
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1212,7 +1212,7 @@ twai_transmit(&msg, pdMS_TO_TICKS(100));
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1276,7 +1276,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** CAN стандарт ISO 11898 (Classic CAN, не CAN FD)
 - **Дослівно з джерела:**
   > Класичний CAN пакет (frame) містить до 8 байтів корисного навантаження.
@@ -1330,7 +1330,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
 - **Дослівно з джерела:**
   > The TWAI controllers on the {IDF_TARGET_NAME} are **not compatible with FD format frames
@@ -1433,7 +1433,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/twai_types_deprecated.h та .../docs/en/api-reference/peripherals/twai.rst
 - **Дослівно з джерела:**
   > TWAI_MODE_LISTEN_ONLY,   /**< The TWAI controller will not influence
@@ -1499,7 +1499,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
 - **Дослівно з джерела:**
   > The TWAI controllers on the {IDF_TARGET_NAME} are **not compatible with FD format frames
@@ -1573,7 +1573,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/twai_types_deprecated.h та .../docs/en/api-reference/peripherals/twai.rst
 - **Дослівно з джерела:**
   > TWAI_MODE_LISTEN_ONLY,   /**< The TWAI controller will not influence
@@ -1685,7 +1685,7 @@ CAN сам стежить за помилками й має лічильники
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/5827f9c3-twai.rst
 - **Дослівно з джерела:**
   > The TWAI controller can detect errors caused by bus interference or corrupted frames that do not conform to the frame format. It implements a fault isolation mechanism using transmit and receive error counters (TEC and REC).
@@ -1745,7 +1745,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1787,7 +1787,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1851,7 +1851,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
@@ -1934,7 +1934,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/twai_types_deprecated.h та .../docs/en/api-reference/peripherals/twai.rst
 - **Дослівно з джерела:**
   > TWAI_MODE_LISTEN_ONLY,   /**< The TWAI controller will not influence
@@ -1975,7 +1975,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -2304,7 +2304,7 @@ TWAI — це CAN; назва інша, протокол той самий.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
 - **Дослівно з джерела:**
   > It is compatible with the frame structure defined in the ISO 11898-1 standard and supports
@@ -2334,7 +2334,7 @@ TWAI — це CAN; назва інша, протокол той самий.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
 - **Дослівно з джерела:**
   > It is compatible with the frame structure defined in the ISO 11898-1 standard and supports
@@ -2365,7 +2365,7 @@ TWAI — це CAN; назва інша, протокол той самий.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** RS-485 стандарт (IEC 61000-2); типова схемотехніка
 - **Дослівно з джерела:**
   > RS-485 лінії A і B мають бути закінчені резисторами 120 Ом
@@ -2438,7 +2438,7 @@ TWAI — це CAN; назва інша, протокол той самий.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/twai_types_deprecated.h та .../docs/en/api-reference/peripherals/twai.rst
 - **Дослівно з джерела:**
   > TWAI_MODE_LISTEN_ONLY,   /**< The TWAI controller will not influence
@@ -2477,7 +2477,7 @@ TWAI — це CAN; назва інша, протокол той самий.
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ISO 11898 CAN specification — ACK bit і підтвердження пакетів
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ISO 11898 CAN specification — ACK bit і підтвердження пакетів

@@ -99,7 +99,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
 - **Дослівно з джерела:**
   > (v5 loader.py)
@@ -309,7 +309,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
 - **Дослівно з джерела:**
   > Мультиметр здатен вимірювати:
@@ -354,7 +354,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** USB 2.0 Specification, розділ 7.2.1 — межі VBUS на порту (4.75–5.25 В)
 - **Дослівно з джерела:**
   > USB 2.0 Specification: повна напруга USB розчеплюючи з чипа живлення має бути 5.0 V ± 5%.
@@ -465,7 +465,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics» (мін. 3.0 В для чипів із флешем), плюс допуск LDO-стабілізатора (~±0.1–0.2 В)
 - **Дослівно з джерела:**
   > Table 5-2. Recommended Power Supply Characteristics
@@ -581,7 +581,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics», с. 51, разом із приміткою 2
 - **Дослівно з джерела:**
   > Table 5-2. Recommended Power Supply Characteristics
@@ -822,7 +822,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** —
 - **Дослівно з джерела:**
   > —
@@ -888,7 +888,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Практика проектування електроніки. ESP32 Series Datasheet згадує зовнішні конденсатори, але не дає конкретного номіналу для біля-чипових конденсаторів.
 - **Дослівно з джерела:**
   > ESP32 Series Datasheet, Pin Descriptions (наприклад, для CAP1 та CAP2):
@@ -932,7 +932,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics» (IVDD мін. 0.5 А), Table 5-4 «Current Consumption Depending on RF Modes» (передача 240 мА максимум під 50% duty cycle)
 - **Дослівно з джерела:**
   > Table 5-2. Recommended Power Supply Characteristics
@@ -976,7 +976,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Практика розробки. На деяких клонах плат розробки LDO-регулятор занадто слабкий або з великим падінням напруги. Прямої рекомендації у datasheet немає, але у розділі 2.5.2 згадується можливість користування зовнішнім живленням.
 - **Дослівно з джерела:**
   > ESP32 Series Datasheet, Section 2.5.2 Power Scheme:
@@ -1042,7 +1042,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 (IVDD 0.5 А рекомендована) і Table 5-4 «Current Consumption Depending on RF Modes» (пік 240 мА)
 - **Дослівно з джерела:**
   > Table 5-2. Recommended Power Supply Characteristics
@@ -1197,7 +1197,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.espressif.com/en/support/documents/technical-documents (ESP32 Series Datasheet)
 - **Що шукати в джерелі:** розділ «Recommended Operating Conditions»: гранично допустимий струм на пін (40 мА) і типова сила драйвера за замовчуванням; робочий діапазон температур; таблиця споживання за режимами (deep sleep, light sleep, modem sleep, активний, пік передачі Wi-Fi).
 - **Нотатка:** Найважливіша недосяжна група після BME280: на цих числах стоять розділи 05, 06 і 47, тобто вся частина про живлення. Частина закривається обхідним шляхом — `gpio_set_drive_capability` у ESP-IDF описує рівні сили драйвера, — і це завдання наступного проходу.
@@ -1404,7 +1404,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.espressif.com/en/support/documents/technical-documents (ESP32 Series Datasheet)
 - **Що шукати в джерелі:** розділ «Recommended Operating Conditions»: гранично допустимий струм на пін (40 мА) і типова сила драйвера за замовчуванням; робочий діапазон температур; таблиця споживання за режимами (deep sleep, light sleep, modem sleep, активний, пік передачі Wi-Fi).
 - **Нотатка:** Найважливіша недосяжна група після BME280: на цих числах стоять розділи 05, 06 і 47, тобто вся частина про живлення. Частина закривається обхідним шляхом — `gpio_set_drive_capability` у ESP-IDF описує рівні сили драйвера, — і це завдання наступного проходу.

@@ -201,7 +201,7 @@
 
 **Доказ**
 
-- **Статус:** self-consistent — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): dodatky/b-symptomy.md — усі 70 рядків таблиці симптомів проти заголовків manual/*.md
 - **Дослівно з джерела:**
   > | Порт не з'являється | немає драйвера мосту | CP2102/CH340/**CH9102 окремий** | 09 |
@@ -337,7 +337,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Розділ 29 «Не бачить плату, немає порту» — про драйвери USB-мостів
 - **Дослівно з джерела:**
   > **USB-міст і драйвер.** Подивитися маркування меншого чипа біля роз'єма
@@ -414,7 +414,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Linux권限 (permissions) файлів; udev rules для /dev/ttyUSB*
 - **Дослівно з джерела:**
   > /dev/ttyUSB*, /dev/ttyACM* мають групу dialout по замовчуванню
@@ -449,7 +449,7 @@ A fatal error occurred: Failed to connect to ESP32: No serial data received.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
 - **Дослівно з джерела:**
   > (v5 loader.py)
@@ -569,7 +569,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
@@ -666,7 +666,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
   > esptool (з переліку команд у __init__.py і документації):
@@ -798,7 +798,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
   > 0x7 | TG0WDT_SYS_RESET | watchdog таймера 0
@@ -869,7 +869,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** Висновок з закону Ома (U = I × R). Падіння напруги на кабелі (опір кабелю) при передачі вилікого струму веде до просідання напруги живлення
 - **Дослівно з джерела:**
   > Закон Ома: U = I × R. При довгому тонкому кабелі (великий R) та великому
@@ -902,7 +902,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Розділ 29 «`rst:0xf` — brownout»
 - **Дослівно з джерела:**
   > Що робити: зміряти напругу **під навантаженням**, з увімкненим Wi-Fi
@@ -1023,7 +1023,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Розділ 29 «Wi-Fi мовчить» — про слабкий сигнал
 - **Дослівно з джерела:**
   > **Під'єднується і відвалюється.** Живлення (див. вище) або слабкий
@@ -1076,7 +1076,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** I²C вимагає open-drain/open-collector виходів та pull-up резисторів для синхронізації за часовими константами. Звичайна резистор не забезпечує двонапрямленість
 - **Дослівно з джерела:**
   > I²C-bus specification (UM10204):
@@ -1113,7 +1113,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
 - **Дослівно з джерела:**
   > Мультиметр здатен вимірювати:
@@ -1211,7 +1211,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/i2c-um10204.pdf
 - **Дослівно з джерела:**
   > Each device connected to the bus is software addressable by a unique address
@@ -1239,7 +1239,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1361,7 +1361,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
   > SPI складається з чотирьох ліній:
@@ -1395,7 +1395,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
   > SPI складається з чотирьох ліній:
@@ -1430,7 +1430,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
 - **Дослівно з джерела:**
   > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has
@@ -1460,7 +1460,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/pins.py`
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
@@ -1585,7 +1585,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/pins.py`
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
@@ -1644,7 +1644,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/pins.py`
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
@@ -1705,7 +1705,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio.rst
 - **Дослівно з джерела:**
   > GPIO driver offers a dump function :cpp:func:`gpio_dump_io_configuration` to show the
@@ -1772,7 +1772,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio.rst
 - **Дослівно з джерела:**
   > GPIO driver offers a dump function :cpp:func:`gpio_dump_io_configuration` to show the
@@ -1813,7 +1813,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio.rst
 - **Дослівно з джерела:**
   > GPIO driver offers a dump function :cpp:func:`gpio_dump_io_configuration` to show the
@@ -1856,7 +1856,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio.rst
 - **Дослівно з джерела:**
   > GPIO driver offers a dump function :cpp:func:`gpio_dump_io_configuration` to show the
@@ -2011,7 +2011,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Схема ESP32 DevKit, постановка вхідних стабілізаторів
 - **Дослівно з джерела:**
   > З kartky/k11-nikoly.md, рядок 38:
@@ -2063,13 +2063,13 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings» і Table 5-3 «DC Characteristics», с. 51
 - **Дослівно з джерела:**
   > Allowed input voltage –0.3 3.6 V
   > VIH High-level input voltage 0.75 × VDD 1 — VDD 1 + 0.3 V
   > VIL Low-level input voltage –0.3 — 0.25 × VDD 1 V
-- **Спосіб і дата:** tools/layer3.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
+- **Спосіб і дата:** factcheck/tools/layer3.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
 - **Нотатка:** Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ: я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`), яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за що я потім ловив помічників. Заголовки таблиць і рядок про permanent damage я додавав від себе. Одиниця після VDD — це номер виноски в документі, не множник.
 - **Прохід:** m2-06-voltage-limits
 
@@ -2336,7 +2336,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
   > Витягнуто 672 унікальні публічні символи з перелічених заголовків і

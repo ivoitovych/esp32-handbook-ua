@@ -122,7 +122,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Базовий принцип електроніки
 - **Дослівно з джерела:**
   > Сигнал — це напруга відносно точки відліку (земля, GND). Без спільної
@@ -383,7 +383,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** L298N datasheet — таблиця Electrical Characteristics
 - **Дослівно з джерела:**
   > VCEsat (Total Drop) — Typ 3.2 V (IL = 2A), Max 4.9 V
@@ -438,7 +438,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** 74HC (CMOS Logic) Datasheet — наприклад, SN74HC04 (NOT gate)
 - **Дослівно з джерела:**
   > SN74HC04 Datasheet:
@@ -735,7 +735,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1048,7 +1048,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -1080,7 +1080,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** Даташит типового хобі-серво (SG90 / MG996R): період 20 мс (50 Гц), тривалість імпульсу 1–2 мс; у кеші немає
 - **Спосіб і дата:** пошук, 2026-08-27
 - **Нотатка:** Було E з поясненням «стандартна специфікація, але без джерела в кеші». Це і є визначення класу C, а не E: E значить, що документа не існує за природою, а тут він існує і його просто не дістали. Різниця не формальна — E ховає одиницю з наряду назавжди, C лишає її в наряді.
@@ -1156,7 +1156,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Практика схемотехніки для управління серво-двигунами
 - **Дослівно з джерела:**
   > (Типова архітектура для сервомеханізму: окремий 5В для силового каналу, GPIO для сигналу, GND спільна)
@@ -1230,7 +1230,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** Даташит типового хобі-серво (SG90 / MG996R): період 20 мс (50 Гц), тривалість імпульсу 1–2 мс; у кеші немає
 - **Спосіб і дата:** пошук, 2026-08-27
 - **Нотатка:** Було E з поясненням «стандартна специфікація, але без джерела в кеші». Це і є визначення класу C, а не E: E значить, що документа не існує за природою, а тут він існує і його просто не дістали. Різниця не формальна — E ховає одиницю з наряду назавжди, C лишає її в наряді.
@@ -1626,7 +1626,7 @@ BLDC-двигун із гвинтом — це небезпечний механ
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** L298N datasheet — розділ Application Information
 - **Дослівно з джерела:**
   > L298N: A 100nF capacitor must be connected between
@@ -1677,7 +1677,7 @@ DRV8833 або TB6612.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/l298n.pdf
 - **Дослівно з джерела:**
   > LOW SATURATION VOLTAGE

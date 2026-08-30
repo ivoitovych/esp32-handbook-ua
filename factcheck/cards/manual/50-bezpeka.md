@@ -590,7 +590,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > data can still be stored in encrypted form if NVS encryption is used together with {IDF_TARGET_NAME} flash encryption
@@ -752,7 +752,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Професійний вимірювальний прилад для аналізу аналогових сигналів
 - **Дослівно з джерела:**
   > Осцилограф показує:
@@ -832,7 +832,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running
@@ -1040,7 +1040,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/19d515b8-burn-efuse-cmd.rst
 - **Дослівно з джерела:**
   > eFuse bits can only be burned from 0 to 1, attempting to set any back to 0 will have no effect.
@@ -1547,7 +1547,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > The verification of signed OTA updates can be performed even without enabling hardware secure boot.

@@ -99,7 +99,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -137,7 +137,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/main.cpp
 - **Дослівно з джерела:**
   > xTaskCreateUniversal(loopTask, "loopTask",
@@ -195,7 +195,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -248,7 +248,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/main.cpp
 - **Дослівно з джерела:**
   > xTaskCreateUniversal(loopTask, "loopTask", getArduinoLoopTaskStackSize(), NULL, 1, &loopTaskHandle, ARDUINO_RUNNING_CORE);
@@ -277,7 +277,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Arduino ESP32 Core — офіційна реалізація Arduino для ESP32 з поддержкою ESP-IDF. https://github.com/espressif/arduino-esp32
 - **Дослівно з джерела:**
   > Arduino framework для ESP32 включає повну підтримку ESP-IDF бібліотек.
@@ -424,7 +424,7 @@ API: MCPWM, PCNT, TWAI, тонке керування живленням.
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -566,7 +566,7 @@ Arduino API.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
 - **Дослівно з джерела:**
   > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
@@ -645,7 +645,7 @@ IDE (розділ 26).
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
   > flash capacity and partition allocation
@@ -743,7 +743,7 @@ IDE (розділ 26).
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** Arduino документація та ESP-IDF Programming Guide
 - **Що шукати в джерелі:** Документація про портування коду AVR на ESP32, обмеження пам'яті AVR
 - **Нотатка:** Твердження про типові проблеми портування Arduino коду з AVR. Логіка витримується: мікроконтролери AVR мають обмежену пам'ять (2 КБ SRAM на Atmega328) та використовують блокувальні delay(). Потребує офіційної цитати для класу B.
@@ -772,7 +772,7 @@ IDE (розділ 26).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DS18B20 Datasheet, Table «Temperature Conversion Time»
 - **Дослівно з джерела:**
   > Temperature Conversion Time — максимум 750 мс
@@ -849,7 +849,7 @@ Arduino core версії 3.x — велике оновлення: він пер
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/docs/en/migration_guides/2.x_to_3.0.rst
 - **Дослівно з джерела:**
   > version 3.0 (based on ESP-IDF 5.1) of the Arduino ESP32 core
@@ -1201,7 +1201,7 @@ URL. Годиться для навчання і швидких перевіро
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/docs/en/esp-idf_component.rst
 - **Дослівно з джерела:**
   > You can use the Arduino framework as an ESP-IDF component. This allows you to use the Arduino framework in your ESP-IDF projects
@@ -1231,7 +1231,7 @@ URL. Годиться для навчання і швидких перевіро
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/docs/en/esp-idf_component.rst
 - **Дослівно з джерела:**
   > For usage of ``setup()`` and ``loop()`` functions - Turn on ``Autostart Arduino setup and loop on boot``
@@ -1508,7 +1508,7 @@ URL. Годиться для навчання і швидких перевіро
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
@@ -1545,7 +1545,7 @@ URL. Годиться для навчання і швидких перевіро
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
 - **Дослівно з джерела:**
   > Arduino as an ESP-IDF component
@@ -1594,7 +1594,7 @@ Arduino core — це шар над ESP-IDF, а не окрема платфор
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/esp32-hal-misc.c
 - **Дослівно з джерела:**
   > void delay(uint32_t ms) {
@@ -1668,7 +1668,7 @@ Arduino core — це шар над ESP-IDF, а не окрема платфор
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
 - **Дослівно з джерела:**
   > Arduino as an ESP-IDF component

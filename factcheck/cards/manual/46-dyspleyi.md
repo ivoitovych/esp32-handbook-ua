@@ -112,7 +112,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/661478ed-u8x8_d_ssd1306_128x64_noname.c
 - **Дослівно з джерела:**
   > u8x8_d_ssd1306_128x64_noname.c
@@ -152,7 +152,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Solomon Systech, SSD1306 Advance Information (Rev 1.1, Apr 2008), розділи 1 «General Description» і 2 «Features»
 - **Дослівно з джерела:**
   > 1     GENERAL DESCRIPTION
@@ -207,7 +207,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Solomon Systech, SSD1306 Advance Information (Rev 1.1, Apr 2008), розділ 8.7 «Graphic Display Data RAM (GDDRAM)»
 - **Дослівно з джерела:**
   > 8.7    Graphic Display Data RAM (GDDRAM)
@@ -250,7 +250,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/661478ed-u8x8_d_ssd1306_128x64_noname.c
 - **Дослівно з джерела:**
   > U8X8_CA(0x081, 0x0cf), 		/* [2] set contrast control */
@@ -290,7 +290,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/olikraus/u8g2/master/csrc/u8x8_d_ssd1306_128x64_noname.c
 - **Дослівно з джерела:**
   > (SSD1306 128x64)
@@ -338,7 +338,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/olikraus/u8g2/master/csrc/u8x8_d_ssd1306_128x64_noname.c
 - **Дослівно з джерела:**
   > (SSD1306 128x64)
@@ -386,7 +386,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/olikraus/u8g2/master/csrc/u8x8_d_ssd1306_128x64_noname.c
 - **Дослівно з джерела:**
   > (SSD1306 128x64)
@@ -434,7 +434,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/661478ed-u8x8_d_ssd1306_128x64_noname.c
 - **Дослівно з джерела:**
   > should be removed for SH1106
@@ -474,7 +474,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Нотатка:** Діагональ 1.3–2.4 дюйма є фізичною характеристикою модулю, не кристалу. Контролер ST7789V визначає роздільність (240×320), а не розмір дисплея. Ця характеристика — матеріал склу й ринку, не datasheet контролера.
 - **Прохід:** m2-27-displays-46
 
@@ -510,7 +510,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Sitronix, ST7789V 240RGB x 320 dot 262K Color with Frame Memory Single-Chip TFT Controller/Driver, Version 1.3, розділ 2 «Features» (кеш: source-cache/st7789.pdf)
 - **Дослівно з джерела:**
   > 2 FEATURES
@@ -556,7 +556,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Sitronix, ST7789V 240RGB x 320 dot 262K Color with Frame Memory Single-Chip TFT Controller/Driver, Version 1.3, розділ 2 «Features» та розділ 8.8 «Data Color Coding»
 - **Дослівно з джерела:**
   > Programmable Pixel Color Format (Color Depth) for Various Display Data input Format
@@ -601,7 +601,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Нотатка:** «Яскравий» і «швидкий» — це оцінки, а не факти про кристал. Datasheet ST7789V не визначає «яскравість» як вимір; вона залежить від LCD панелі, напруги VCOM, LED підсвітки. Швидкість оновлення (frame rate) залежить від конфігурації, а не від самого кристалу.
 - **Прохід:** m2-27-displays-46
 
@@ -637,7 +637,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Нотатка:** Як і в ST7789, діагональ в дюймах — фізична властивість модуля. Контролер ILI9341 не визначає розмір; він визначає роздільність (240×320).
 - **Прохід:** m2-27-displays-46
 
@@ -673,7 +673,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color, Specification V1.11 — титул і розділ 7.6.2 «4-line Serial Interface» (кеш: source-cache/ili9341.pdf)
 - **Дослівно з джерела:**
   > ILI9341
@@ -719,7 +719,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color, Specification V1.11, розділ 2 «Features»
 - **Дослівно з джерела:**
   > Display mode:
@@ -761,7 +761,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Нотатка:** «Великий» — це оцінка розміру модуля, а «класика» — це популярність на ринку. Це характеристики ринку й историії, не факти про кристал ILI9341.
 - **Прохід:** m2-27-displays-46
 
@@ -925,7 +925,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color, Specification V1.11, розділ 8.2.33 «COLMOD: Pixel Format Set (3Ah)»
 - **Дослівно з джерела:**
   > 8.2.33. COLMOD: Pixel Format Set (3Ah)
@@ -1018,7 +1018,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/661478ed-u8x8_d_ssd1306_128x64_noname.c
 - **Дослівно з джерела:**
   > /* more or less generic setup of all these small OLEDs */
@@ -1070,7 +1070,7 @@ SH1106 продається під виглядом SSD1306 і майже сум
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/olikraus/u8g2/master/csrc/u8x8_d_ssd1306_128x64_noname.c
 - **Дослівно з джерела:**
   > (SSD1306 128x64)
@@ -1107,7 +1107,7 @@ SH1106 продається під виглядом SSD1306 і майже сум
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/olikraus/u8g2/master/csrc/u8x8_d_ssd1306_128x64_noname.c
 - **Дослівно з джерела:**
   > (SSD1306 128x64)
@@ -1310,7 +1310,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/olikraus/u8g2/master/README.md
 - **Дослівно з джерела:**
   > U8g2 is a monochrome graphics library for embedded devices.
@@ -1410,7 +1410,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md
 - **Дослівно з джерела:**
   > The screen controller, interface pins and library configuration settings must be defined inside the library. They can NOT be defined in the Arduino sketch.
@@ -1441,7 +1441,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md
 - **Дослівно з джерела:**
   > If you load a new copy of TFT_eSPI then it will overwrite your setups if they are kept within the TFT_eSPI folder.
@@ -1516,7 +1516,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/lvgl/lvgl/master/README.md
 - **Дослівно з джерела:**
   > At a bare minimum needs only 32kB RAM and 128kB Flash, a frame buffer
@@ -1547,7 +1547,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/esp32-c3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 400 KB of on-chip SRAM: for data and instructions
@@ -1576,7 +1576,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -1741,7 +1741,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md
 - **Дослівно з джерела:**
   > Character arrays and Strings in UTF-8 format are supported.
@@ -1838,7 +1838,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
   > FromISR functions are ISR-safe variants of FreeRTOS APIs.
@@ -1975,7 +1975,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C spec (UM10204) та 1-Wire spec — обидва вимагають open-drain виходу
 - **Дослівно з джерела:**
   > I²C spec (UM10204):
@@ -2054,7 +2054,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
 - **Дослівно з джерела:**
   > PCNT unit is equipped with a separate glitch filter, which is helpful to remove noise from the signal.
@@ -2173,7 +2173,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Нотатка:** Твердження про альтернативи (PCF8574, резистивна дільник на ADC, Touch сенсори) належить до розділу про введення (кнопки, енкодери, матричні клавіатури), не до дисплеїв. Це E, оскільки це архітектурне рішення, а не факт про кристал.
 - **Прохід:** m2-27-displays-46
 
@@ -2269,7 +2269,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** Розрахунок: 40 МГц > 24 МГц означає, що дискретизація недостатня за Теоремою Найквіста (потрібно ≥ 2 × сигнал)
 - **Дослівно з джерела:**
   > SPI максимальна швидкість на ESP32: до 80 МГц (у режимі нестандартного)
@@ -2398,7 +2398,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/olikraus/u8g2/master/csrc/u8x8_d_ssd1306_128x64_noname.c
 - **Дослівно з джерела:**
   > (SSD1306 128x64)

@@ -610,7 +610,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/sx1276.pdf
 - **Дослівно з джерела:**
   > feature the LoRa
@@ -638,7 +638,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/sx1276.pdf
 - **Дослівно з джерела:**
   > SX1276/77/78/79
@@ -666,7 +666,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** SX1261/SX1262 Datasheet (Semtech), файл у порталі — 60852689.DS_SX1261_2 V2-2.pdf, 100 с. Сторінка виробу: https://www.semtech.com/products/wireless-rf/lora-connect/sx1262
 - **Що шукати в джерелі:** таблиця споживання (Rx та Tx) SX1262 проти таблиці споживання SX1276 з DS_SX1276-7-8-9_W_APP_V7: очікується помітно менший струм прийому в SX1262. Потрібні обидва числа з їхніми умовами вимірювання
 - **Нотатка:** Чесний `C`, а не натягнутий `A`. Порівняльні числа не отримано: semtech.com віддає datasheet лише через портал Salesforce, який вимагає натиснути «Download» у браузері; дзеркал саме на SX1261-2 не знайшлося, тоді як SX1276 знайшовся одразу.
@@ -716,7 +716,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.semtech.com/ (SX1276/SX1262 Datasheet)
 - **Що шукати в джерелі:** діапазон Spreading Factor (7…12) і його вплив на час передачі й чутливість; допустимі значення Bandwidth і Coding Rate; вимога узгодженого навантаження на виході передавача.
 - **Нотатка:** Твердження «ніколи не вмикати передавач без антени» в розділі 43 подано як категоричне, і воно таким і лишається — але підстава для нього має бути в datasheet, а не в фольклорі.
@@ -767,7 +767,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділ «Key Product Features»; для порівняння — SX1276/77/78/79 Datasheet Rev. 4, «Key Product Features»
 - **Дослівно з джерела:**
   > RFM69HCW — KEY PRODUCT FEATURES
@@ -808,7 +808,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділ «Key Product Features»
 - **Дослівно з джерела:**
   > RFM69HCW — KEY PRODUCT FEATURES
@@ -855,7 +855,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.semtech.com/ (SX1276/SX1262 Datasheet)
 - **Що шукати в джерелі:** діапазон Spreading Factor (7…12) і його вплив на час передачі й чутливість; допустимі значення Bandwidth і Coding Rate; вимога узгодженого навантаження на виході передавача.
 - **Нотатка:** Твердження «ніколи не вмикати передавач без антени» в розділі 43 подано як категоричне, і воно таким і лишається — але підстава для нього має бути в datasheet, а не в фольклорі.
@@ -931,7 +931,7 @@ FSK, і воно теж корисне, але для інших задач і �
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.semtech.com/ (SX1276/SX1262 Datasheet)
 - **Що шукати в джерелі:** діапазон Spreading Factor (7…12) і його вплив на час передачі й чутливість; допустимі значення Bandwidth і Coding Rate; вимога узгодженого навантаження на виході передавача.
 - **Нотатка:** Твердження «ніколи не вмикати передавач без антени» в розділі 43 подано як категоричне, і воно таким і лишається — але підстава для нього має бути в datasheet, а не в фольклорі.
@@ -959,7 +959,7 @@ FSK, і воно теж корисне, але для інших задач і �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділи 3.3 «FSK Modulation» та «Key Product Features» (кеш: source-cache/rfm69hcw.pdf)
 - **Дослівно з джерела:**
   > 3.3.3. FSK Modulation
@@ -995,7 +995,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
 - **Дослівно з джерела:**
   > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
@@ -1186,7 +1186,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** SX1276 Datasheet (популярний LoRa модуль); ISM стандарти
 - **Дослівно з джерела:**
   > LoRa модулі доступні для різних регіональних ISM смуг:
@@ -1335,7 +1335,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** SX1276 Datasheet (популярний LoRa модуль); ISM стандарти
 - **Дослівно з джерела:**
   > LoRa модулі доступні для різних регіональних ISM смуг:
@@ -1750,7 +1750,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** SX1276/77/78/79 Datasheet, Rev. 4 (March 2015), розділ 4.1.1.2 «Spreading Factor», Table 13 «Range of Spreading Factors», с. 27
 - **Дослівно з джерела:**
   > Table 13 Range of Spreading Factors
@@ -1824,7 +1824,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** SX1276/77/78/79 Datasheet, Rev. 4 (March 2015), розділ 4.1.1.2 «Spreading Factor», Table 13 «Range of Spreading Factors», с. 27
 - **Дослівно з джерела:**
   > Table 13 Range of Spreading Factors
@@ -1896,7 +1896,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** SX1276/77/78/79 Datasheet, Rev. 4, Table 15 «LoRa Bandwidth Options» (с. 28) і Table 8 «Receiver Specifications» (RFS_L10_HF, RFS_L62_HF)
 - **Дослівно з джерела:**
   > Table 15 LoRa Bandwidth Options
@@ -2142,7 +2142,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1

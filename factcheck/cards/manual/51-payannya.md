@@ -683,7 +683,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** специфікації виробників припою (наприклад, ряд IEC 61190-1-3)
 - **Що шукати в джерелі:** температура плавлення евтектичного Sn63Pb37 (183 °C) і Sn60Pb40; типова температура жала для ручного паяння; на скільки вища вона для безсвинцевих сплавів.
 - **Прохід:** pass-03-nedostupni
@@ -708,7 +708,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Kester (ITW), Alloy Temperature Chart — рядки `Sn63Pb37` і сімейство `LEAD-FREE` (кеш: source-cache/kester-alloys.pdf)
 - **Дослівно з джерела:**
   > Sn63Pb37             183

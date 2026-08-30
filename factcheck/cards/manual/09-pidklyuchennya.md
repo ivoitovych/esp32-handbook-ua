@@ -168,7 +168,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
   > Below is the list of USB to serial converter chips installed on most of the {IDF_TARGET_NAME} boards produced by Espressif
@@ -197,7 +197,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ESP32 DevKit-C Guide
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 DevKit-C Guide
@@ -248,7 +248,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
   > For boards with an installed USB-to-UART bridge, the connection between the personal computer and the bridge is USB and between the bridge and {IDF_TARGET_NAME} is UART.
@@ -360,7 +360,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Linux, `drivers/usb/serial/cp210x.c` (гілка master), таблиця `id_table`
 - **Дослівно з джерела:**
   > { USB_DEVICE(0x10C4, 0xEA60) }, /* Silicon Labs factory default */
@@ -399,7 +399,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Silicon Labs, CP2102/9 SINGLE-CHIP USB-TO-UART BRIDGE, datasheet, розділ 9 «CP2102/9 Device Drivers» і «9.1. Virtual COM Port Drivers»
 - **Дослівно з джерела:**
   > Virtual COM Port Device Drivers
@@ -447,7 +447,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Linux, `drivers/usb/serial/cp210x.c` (гілка master), таблиця `id_table`
 - **Дослівно з джерела:**
   > { USB_DEVICE(0x10C4, 0xEA60) }, /* Silicon Labs factory default */
@@ -486,7 +486,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Linux, `drivers/usb/serial/ch341.c` (гілка master), таблиця `id_table` і `MODULE_DESCRIPTION`
 - **Дослівно з джерела:**
   > { USB_DEVICE(0x1a86, 0x5523) },
@@ -529,7 +529,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** WCH CH340/CH341 USB-UART datasheet (у кеші), офіційний сайт WCH (wch-ic.com)
 - **Дослівно з джерела:**
   > З kartky/k03-pidkl.md, таблиця рядок 3:
@@ -569,7 +569,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Linux, `drivers/usb/serial/ch341.c` (гілка master), таблиця `id_table` і `MODULE_DESCRIPTION`
 - **Дослівно з джерела:**
   > { USB_DEVICE(0x1a86, 0x5523) },
@@ -612,7 +612,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Linux, `drivers/usb/class/cdc-acm.c` (гілка master), таблиця `acm_ids`; для порівняння — `drivers/usb/serial/ch341.c`
 - **Дослівно з джерела:**
   > drivers/usb/class/cdc-acm.c:
@@ -658,7 +658,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** WCH CH9102 / CH9102F datasheet
 - **Що шукати в джерелі:** Інформація про Windows драйвер для CH9102; розділи про драйвери та встановлення на Windows; як він відрізняється від CH340
 - **Нотатка:** CH9102 datasheet не дістається з dzherela-cache. Потребує окремого завантаження з wch.cn. Книга стверджує, що CH9102 потребує окремого драйвера від CH340 для Windows.
@@ -695,7 +695,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Linux, `drivers/usb/class/cdc-acm.c` (гілка master), таблиця `acm_ids`; для порівняння — `drivers/usb/serial/ch341.c`
 - **Дослівно з джерела:**
   > drivers/usb/class/cdc-acm.c:
@@ -741,7 +741,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Linux, `drivers/usb/serial/ftdi_sio_ids.h` (гілка master)
 - **Дослівно з джерела:**
   > #define FTDI_VID    0x0403  /* Vendor Id */
@@ -781,7 +781,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** FTDI FT232RL USB UART IC datasheet
 - **Що шукати в джерелі:** Інформація про Windows драйвер для FT232RL; розділи про драйвери та встановлення
 - **Нотатка:** FT232RL datasheet не дістається з dzherela-cache. Потребує окремого завантаження з ftdichip.com. Книга говорить про драйвер FTDI для Windows.
@@ -818,7 +818,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Linux, `drivers/usb/serial/ftdi_sio_ids.h` (гілка master)
 - **Дослівно з джерела:**
   > #define FTDI_VID    0x0403  /* Vendor Id */
@@ -870,7 +870,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** WCH CH340/CH341 USB-UART datasheet (у кеші), офіційний сайт WCH (wch-ic.com)
 - **Дослівно з джерела:**
   > З kartky/k03-pidkl.md, таблиця рядок 3:
@@ -901,7 +901,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** не застосовується
 - **Дослівно з джерела:**
   > Людина ставить драйвер CH340, він не працює, і виникає висновок «плата бракована».
@@ -957,7 +957,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** Linux kernel документація про CDC-ACM та CH9102
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** Linux kernel документація про CDC-ACM та CH9102
@@ -1056,7 +1056,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Практичні повідомлення користувачів, ринкові спостереження про наявність підробок FT232RL; історичні звіти про драйвер FTDI 2014–2015
 - **Дослівно з джерела:**
   > З manual/09-pidklyuchennya.md, рядки 51-52:
@@ -1090,7 +1090,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Практичні повідомлення користувачів, ринкові спостереження про наявність підробок FT232RL; історичні звіти про драйвер FTDI 2014–2015
 - **Дослівно з джерела:**
   > З manual/09-pidklyuchennya.md, рядки 51-52:
@@ -1124,7 +1124,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** FTDI FT232 driver
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** FTDI FT232 driver
@@ -1152,7 +1152,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
   > Under normal circumstances, the drivers should be bundled with an operating system and automatically installed upon connecting the board to the PC.
@@ -1205,7 +1205,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** не застосовується
 - **Дослівно з джерела:**
   > Один і той самий комп'ютер може дати `/dev/ttyUSB0` одній платі й `/dev/ttyUSB1` іншій, і після перевтикання номери міняються.
@@ -1257,7 +1257,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/esp32-s3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > – USB Serial/JTAG controller
@@ -1285,7 +1285,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
   > The {IDF_TARGET_NAME} supports the USB peripheral. In this case, the USB-to-UART bridge is not needed and the device can be flashed directly.
@@ -1314,7 +1314,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** POSIX Serial Interface Specification USB CDC ACM device driver
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** POSIX Serial Interface Specification USB CDC ACM device driver
@@ -1364,7 +1364,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
   > The {IDF_TARGET_NAME} supports only *USB CDC and JTAG*.
@@ -1392,7 +1392,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/71ff84df-configure-builtin-jtag.rst
 - **Дослівно з джерела:**
   > can be debugged without any additional chip. Only a USB cable connected to the D+/D- pins is necessary.
@@ -1710,7 +1710,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
 - **Дослівно з джерела:**
   > (v5 loader.py)
@@ -1858,7 +1858,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
 - **Дослівно з джерела:**
   > A fatal error occurred: Failed to connect to {chip}: {reason}
@@ -1989,7 +1989,7 @@ sudo usermod -aG dialout $USER
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
   > Make sure you re-login to enable read and write permissions for the serial port.
@@ -2017,7 +2017,7 @@ sudo usermod -aG dialout $USER
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
   > on Arch Linux this is done by adding the user to ``uucp`` group
@@ -2197,7 +2197,7 @@ Device or resource busy
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
   > Close the serial terminal after verification that communication is working. If you keep the terminal session open, the serial port will be inaccessible for uploading firmware later.
@@ -2430,7 +2430,7 @@ dmesg | tail -20
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
   > If there is no log output, check
@@ -2937,7 +2937,7 @@ CH9102 потребує іншого драйвера, ніж CH340, попри 
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** WCH CH9102 / CH9102F datasheet та драйверне забезпечення
 - **Що шукати в джерелі:** Порівняння драйверів CH340 та CH9102; їхні відмінності та несумісність на рівні драйвера та встановлення
 - **Нотатка:** Це те саме твердження, що T-09-027, але коротша версія у розділі резюме. Потребує CH9102 datasheet та інформації про драйвери для обох чипів.
@@ -2963,7 +2963,7 @@ DevKitC-1 роз'ємів два, і вони роблять різне.
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ESP32 board technical specifications
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 board technical specifications

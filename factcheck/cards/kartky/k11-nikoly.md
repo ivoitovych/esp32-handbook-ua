@@ -73,7 +73,7 @@ download mode або можливість перепрошивки. Не зап�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
 - **Дослівно з джерела:**
   > ``espefuse`` is a tool for communicating with Espressif chips for the
@@ -143,7 +143,7 @@ download mode або можливість перепрошивки. Не зап�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
 - **Дослівно з джерела:**
   > ``espefuse`` is a tool for communicating with Espressif chips for the
@@ -187,7 +187,7 @@ download mode або можливість перепрошивки. Не зап�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
 - **Дослівно з джерела:**
   > ``espefuse`` is a tool for communicating with Espressif chips for the
@@ -231,7 +231,7 @@ download mode або можливість перепрошивки. Не зап�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
 - **Дослівно з джерела:**
   > ``espefuse`` is a tool for communicating with Espressif chips for the
@@ -278,7 +278,7 @@ release-режимі це односторонні двері: чип перес
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/security/flash-encryption.rst
 - **Дослівно з джерела:**
   > For :ref:`flash-enc-release-mode`, the second stage bootloader sets all the eFuse bits set under development mode as well as ``DIS_DOWNLOAD_MANUAL_ENCRYPT``. It also write-protects the ``{IDF_TARGET_CRYPT_CNT}`` eFuse bits.
@@ -364,7 +364,7 @@ release-режимі це односторонні двері: чип перес
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
 - **Дослівно з джерела:**
   > Erase Flash: ``erase-flash`` & ``erase-region``
@@ -432,13 +432,13 @@ release-режимі це односторонні двері: чип перес
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings» і Table 5-3 «DC Characteristics», с. 51
 - **Дослівно з джерела:**
   > Allowed input voltage –0.3 3.6 V
   > VIH High-level input voltage 0.75 × VDD 1 — VDD 1 + 0.3 V
   > VIL Low-level input voltage –0.3 — 0.25 × VDD 1 V
-- **Спосіб і дата:** tools/layer3.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
+- **Спосіб і дата:** factcheck/tools/layer3.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
 - **Нотатка:** Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ: я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`), яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за що я потім ловив помічників. Заголовки таблиць і рядок про permanent damage я додавав від себе. Одиниця після VDD — це номер виноски в документі, не множник.
 - **Прохід:** m2-06-voltage-limits
 
@@ -490,7 +490,7 @@ release-режимі це односторонні двері: чип перес
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Datasheet HC-SR04, документація модуля
 - **Дослівно з джерела:**
   > З kartky/k14-rivni.md, таблиця «Часті винуватці 5 В», рядок 1:
@@ -544,7 +544,7 @@ release-режимі це односторонні двері: чип перес
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Схема ESP32 DevKit, постановка вхідних стабілізаторів
 - **Дослівно з джерела:**
   > З kartky/k11-nikoly.md, рядок 38:
@@ -577,7 +577,7 @@ release-режимі це односторонні двері: чип перес
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h, .../components/soc/esp32/include/soc/adc_channel.h, .../components/soc/esp32/include/soc/soc_caps.h, .../docs/en/api-reference/peripherals/gpio.rst
 - **Дослівно з джерела:**
   > (spi_pins.h — піни, якими чип говорить із флешем)
@@ -718,7 +718,7 @@ release-режимі це односторонні двері: чип перес
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** Розрахунок: 40 МГц > 24 МГц означає, що дискретизація недостатня за Теоремою Найквіста (потрібно ≥ 2 × сигнал)
 - **Дослівно з джерела:**
   > SPI максимальна швидкість на ESP32: до 80 МГц (у режимі нестандартного)
@@ -783,7 +783,7 @@ release-режимі це односторонні двері: чип перес
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
 - **Дослівно з джерела:**
   > GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
@@ -814,7 +814,7 @@ release-режимі це односторонні двері: чип перес
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
   > :esp32: -  VDDSDIO has been enabled at 1.8V (due to MTDI/GPIO12, see above),

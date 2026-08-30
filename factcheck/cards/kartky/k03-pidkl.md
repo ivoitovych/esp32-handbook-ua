@@ -244,7 +244,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Linux, `drivers/usb/serial/cp210x.c` (гілка master), таблиця `id_table`
 - **Дослівно з джерела:**
   > { USB_DEVICE(0x10C4, 0xEA60) }, /* Silicon Labs factory default */
@@ -284,7 +284,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Silicon Labs CP2102 UART Bridge Controller datasheet (у кеші), офіційний сайт SiLabs
 - **Дослівно з джерела:**
   > З kartky/k03-pidkl.md, таблиця рядок 2:
@@ -325,7 +325,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Linux, `drivers/usb/serial/ch341.c` (гілка master), таблиця `id_table` і `MODULE_DESCRIPTION`
 - **Дослівно з джерела:**
   > { USB_DEVICE(0x1a86, 0x5523) },
@@ -369,7 +369,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** WCH CH340/CH341 USB-UART datasheet (у кеші), офіційний сайт WCH (wch-ic.com)
 - **Дослівно з джерела:**
   > З kartky/k03-pidkl.md, таблиця рядок 3:
@@ -410,7 +410,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Linux, `drivers/usb/class/cdc-acm.c` (гілка master), таблиця `acm_ids`; для порівняння — `drivers/usb/serial/ch341.c`
 - **Дослівно з джерела:**
   > drivers/usb/class/cdc-acm.c:
@@ -457,7 +457,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** WCH CH9102 datasheet
 - **Що шукати в джерелі:** Інформація про Windows драйвер для CH9102; розділи про встановлення та драйвери; як відрізняється від CH340
 - **Нотатка:** На К03 сформульовано компактніше, ніж у manual/09, але той самий факт. Потребує CH9102 datasheet від WCH.
@@ -495,7 +495,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ESP32 S3 C3 USB specifications
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ESP32 S3 C3 USB specifications
@@ -534,7 +534,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/usb-serial-jtag-console.rst
 - **Дослівно з джерела:**
   > thus does not require an external USB-UART bridge chip
@@ -563,7 +563,7 @@ Windows: `Диспетчер пристроїв` → жовтий знак ок�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
   > Check the list of identified COM ports in the Windows Device Manager. Disconnect {IDF_TARGET_NAME} and connect it back, to verify which port disappears from the list and then shows back again.
@@ -614,7 +614,7 @@ Windows: `Диспетчер пристроїв` → жовтий знак ок�
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
   > Adding User to ``dialout`` or ``uucp`` on Linux
@@ -784,7 +784,7 @@ sudo usermod -aG dialout $USER
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
   > Close the serial terminal after verification that communication is working. If you keep the terminal session open, the serial port will be inaccessible for uploading firmware later.

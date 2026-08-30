@@ -226,7 +226,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** Regulatory Guide для ESP32, обмеження потужності передавача
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** Regulatory Guide для ESP32, обмеження потужності передавача
@@ -359,7 +359,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** IEEE 802.11-2020, Annex E (Country elements and operating classes) — платний стандарт IEEE, тексту не маю; ESP-IDF wifi.rst, параметр країни wifi_country_t — у кеші немає
 - **Спосіб і дата:** Загальновідома регуляторна інформація про Wi-Fi стандарти
 - **Нотатка:** М1 позначив джерело вигаданим. Мав рацію щодо форми: «IEEE 802.11b/g та регуляторні вимоги (FCC, CE, ISED)» — це перелік установ, а не адреса документа. Документи існують і названі точно, але текстів у мене немає: IEEE платний, як IEC 60529. Отже C, не A.
@@ -392,7 +392,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ESP32-C5 datasheet від Espressif
 - **Спосіб і дата:** Твердження стосується технічної специфікації ESP32-C5. Це повинно бути документовано в oficial datasheet чипу, але datasheet ESP32-C5 не знайдено в source-cache. Знайдені тільки посилання на C5 у документах ESP-IDF.
 - **Нотатка:** Клас C: джерело існує (C5 datasheet), але не в дистанційно доступному кеші. Твердження факту щодо можливостей чипу, але без прямої цитати залишається неперевіреним локально.
@@ -454,7 +454,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** ESP-NOW специфікація — ESP-NOW працює як protocol layer на Wi-Fi MAC, використовуючи той самий радіочастотний тракт
 - **Дослівно з джерела:**
   > ESP-NOW uses the Wi-Fi MAC layer and operates on 2.4 GHz band only, sharing the same frequency band with Wi-Fi 802.11b/g/n.
@@ -518,7 +518,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
@@ -557,7 +557,7 @@
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** ETSI EN303645 LoRa
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** ETSI EN303645 LoRa

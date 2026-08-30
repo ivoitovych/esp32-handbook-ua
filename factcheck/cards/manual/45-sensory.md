@@ -71,7 +71,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Нотатка:** Твердження про те, що DHT11 і DHT22 — дешеві й поширені, це оцінка ринку, а не факт про датчик. Datasheet підтверджує параметри, а не комерційні характеристики.
 - **Прохід:** m2-28-sensors-45
 
@@ -144,7 +144,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Aosong DHT11 Digital-output Relative Humidity & Temperature Sensor, розділ про технічні параметри (分辨率)
 - **Дослівно з джерела:**
   > DHT11 Technical Specifications:
@@ -264,7 +264,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/bmp280.pdf
 - **Дослівно з джерела:**
   > The BMP280 is an absolute barometric pressure sensor especially designed for mobile applications.
@@ -314,7 +314,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/ds18b20.pdf
 - **Дослівно з джерела:**
   > Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to function on the same 1-Wire bus.
@@ -461,7 +461,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/8e2fcbf9-bme280.c
 - **Дослівно з джерела:**
   > static uint32_t compensate_pressure(const struct bme280_uncomp_data *uncomp_data,
@@ -511,8 +511,8 @@
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arithmetic.py
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
+- **Джерело:** factcheck/tools/arithmetic.py
 - **Розрахунок:**
   30 перевірок, усі збіглися. Найважливіші:
     (3.3 − 2) / 0.007            = 185.7 Ом      → книга: 185, беремо 220
@@ -539,7 +539,7 @@
     1750 / 2.85                  = 614 діб
     2500 × 0.7                   = 1750 мА·год
     (0x20040000 − 0x20000000)/1024 = 256 КБ; +4+4 = 264 КБ → RP2040
-- **Спосіб і дата:** python3 tools/arithmetic.py, 2026-08-26
+- **Спосіб і дата:** python3 factcheck/tools/arithmetic.py, 2026-08-26
 - **Нотатка:** Перевірку внесено в `make check` окремою ціллю `arytmetyka`. Це відповідь на те, як у книгу колись потрапили значення `duty` для серво від іншої роздільності: абзац із неправильним добутком внутрішньо несуперечливий і зовнішнього джерела не потребує, тож ні читання, ні звірка з першоджерелом його не ловлять. Ловить лише калькулятор — і тепер він запускається сам.
 - **Прохід:** pass-05-obchyslennya
 
@@ -586,7 +586,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -643,7 +643,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Ultrasonic Ranging Module HC-SR04, datasheet ElecFreaks — розділи «Product features» і «Electric Parameter»
 - **Дослівно з джерела:**
   > Ultrasonic ranging module HC-SR04 provides 2cm - 400cm non-contact
@@ -682,7 +682,7 @@ HC-SR04 живиться від 5 В і видає **5 В на виводі `ECH
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Elecfreaks, Ultrasonic Ranging Module HC-SR04, Wire Connection Diagram та Electric Parameters
 - **Дослівно з джерела:**
   > Wire connecting direct as follows:
@@ -718,7 +718,7 @@ HC-SR04 живиться від 5 В і видає **5 В на виводі `ECH
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 5-1 Absolute Maximum Ratings
 - **Дослівно з джерела:**
   > Table 5-1. Absolute Maximum Ratings
@@ -746,7 +746,7 @@ HC-SR04 живиться від 5 В і видає **5 В на виводі `ECH
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
 - **Дослівно з джерела:**
   > Working Voltage
@@ -801,7 +801,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** HC-SR04 Datasheet, розділ «Measurement» та «How it works»
 - **Дослівно з джерела:**
   > HC-SR04 вимірює відстань шляхом розрахунку часу між посланим
@@ -880,7 +880,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** HC-SR04 Datasheet — типовий датчик для Arduino проектів
 - **Дослівно з джерела:**
   > HC-SR04 Output Signal:
@@ -935,7 +935,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** HC-SR04 Datasheet — типовий датчик для Arduino проектів
 - **Дослівно з джерела:**
   > HC-SR04 Output Signal:
@@ -967,7 +967,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** HC-SR04 Datasheet — типовий датчик для Arduino проектів
 - **Дослівно з джерела:**
   > HC-SR04 Output Signal:
@@ -1094,7 +1094,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1359,7 +1359,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
 - **Дослівно з джерела:**
   > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has
@@ -1437,7 +1437,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Texas Instruments, INA219 Zerø-Drift, Bidirectional Current/Power Monitor With I2C Interface, SBOS448G, розділ Features та Description
 - **Дослівно з джерела:**
   > INA219 Zerø-Drift, Bidirectional Current/Power Monitor With I2C Interface
@@ -1496,7 +1496,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Allegro Microsystems ACS712 Datasheet
 - **Дослівно з джерела:**
   > ACS712 — Hall effect current sensor
@@ -1571,7 +1571,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1629,7 +1629,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** Datasheet GPS модулів серії NEO (Ublox)
 - **Спосіб і дата:** Документ не дістався. Потребує пошуку у даташиті u-blox NEO-6M або NEO-8M.
 - **Що шукати в джерелі:** https://www.u-blox.com/sites/default/files/NEO-6_NEO-7_NEO-M8_DataSheet_%28UBX-13003221%29.pdf
@@ -1932,7 +1932,7 @@ DS18B20 — це код помилки (розділ 37).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/milesburton/Arduino-Temperature-Control-Library/master/DallasTemperature.h
 - **Дослівно з джерела:**
   > #define DEVICE_DISCONNECTED_C -127
@@ -1964,7 +1964,7 @@ DS18B20 — це код помилки (розділ 37).
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Нотатка:** Це методологічна порада про правильне калібрування, а не факт про конкретний датчик. Належить до розділу про практику вимірювань.
 - **Прохід:** m2-28-sensors-45
 
@@ -2056,7 +2056,7 @@ HC-SR04 видає 5 В на `ECHO` — дільник обов'язковий.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Elecfreaks, Ultrasonic Ranging Module HC-SR04
 - **Дослівно з джерела:**
   > Working Voltage: DC 5V

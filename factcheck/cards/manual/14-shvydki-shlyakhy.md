@@ -118,7 +118,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/micropython/micropython/master/ports/esp32/README.md
 - **Дослівно з джерела:**
   > REPL (Python prompt) over UART0 and/or the integrated USB peripheral
@@ -336,7 +336,7 @@ Python, поріг входу мінімальний.
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** MicroPython офіційна документація та ESP32-C3 Datasheet
 - **Що шукати в джерелі:** Розподіл пам'яті MicroPython firmware на ESP32-C3
 - **Нотатка:** Твердження про розподіл пам'яті при запуску MicroPython на C3 (256 КБ SRAM). Потребує перевірки розміру binary та фактичного розподілу heap/stack.
@@ -390,7 +390,7 @@ Python, поріг входу мінімальний.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/micropython/micropython/master/ports/esp32/README.md
 - **Дослівно з джерела:**
   > The machine module with GPIO, UART, SPI, software I2C, ADC, DAC, PWM, TouchPad, WDT and Timer.
@@ -574,7 +574,7 @@ sensor:
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
 - **Дослівно з джерела:**
   > #define BME280_CHIP_ID          UINT8_C(0x60)
@@ -1401,7 +1401,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/micropython/micropython/master/README.md
 - **Дослівно з джерела:**
   > MicroPython implements the entire Python 3.4 syntax
@@ -2027,7 +2027,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/micropython/micropython/master/docs/reference/repl.rst
 - **Дослівно з джерела:**
   > While typing a command at the REPL, if the line typed so far corresponds to

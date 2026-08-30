@@ -26,7 +26,7 @@
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** tools/cross_refs.py — перевірка проти дерева файлів репозиторію
 - **Розрахунок:**
   posylannya: згадок 689, адресатів 79, помилок 0
@@ -89,7 +89,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -269,7 +269,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/adc_channel.h та .../esp32/include/soc/touch_sensor_channel.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)
@@ -383,7 +383,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/uart_pins.h
 - **Дослівно з джерела:**
   > #define U0RXD_GPIO_NUM  (3)
@@ -438,7 +438,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/uart_pins.h
 - **Дослівно з джерела:**
   > #define U0TXD_GPIO_NUM  (1)
@@ -493,7 +493,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/uart_pins.h
 - **Дослівно з джерела:**
   > #define U0RXD_GPIO_NUM  (3)
@@ -548,7 +548,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 - **Дослівно з джерела:**
   > Default Configuration of Strapping Pins
@@ -751,7 +751,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/uart_pins.h
 - **Дослівно з джерела:**
   > #define U0RXD_GPIO_NUM  (3)
@@ -806,7 +806,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/uart_pins.h
 - **Дослівно з джерела:**
   > #define U0RXD_GPIO_NUM  (3)
@@ -1008,7 +1008,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 - **Дослівно з джерела:**
   > Default Configuration of Strapping Pins
@@ -1064,7 +1064,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
   > SPI складається з чотирьох ліній:
@@ -1223,7 +1223,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
 - **Дослівно з джерела:**
   > choice BOOTLOADER_VDDSDIO_BOOST
@@ -1829,7 +1829,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
   > | 12 (MTDI)   | If driven High, flash voltage (VDD_SDIO) is 1.8V not default 3.3V…
@@ -2082,7 +2082,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
   > SPI складається з чотирьох ліній:
@@ -2192,7 +2192,7 @@
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
   > SPI складається з чотирьох ліній:
@@ -2253,7 +2253,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/dac_channel.h
 - **Дослівно з джерела:**
   > DAC_GPIO25_CHANNEL      DAC_CHAN_0
@@ -2308,7 +2308,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/adc_channel.h
 - **Дослівно з джерела:**
   > ADC2_GPIO25_CHANNEL     8
@@ -2363,7 +2363,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/dac_channel.h
 - **Дослівно з джерела:**
   > DAC_GPIO26_CHANNEL      DAC_CHAN_1
@@ -2418,7 +2418,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/adc_channel.h та .../esp32/include/soc/touch_sensor_channel.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)
@@ -2483,7 +2483,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/adc_channel.h
 - **Дослівно з джерела:**
   > ADC2_GPIO27_CHANNEL     7
@@ -2587,7 +2587,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/adc_channel.h та .../esp32/include/soc/touch_sensor_channel.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)
@@ -2652,7 +2652,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/adc_channel.h та .../esp32/include/soc/touch_sensor_channel.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)
@@ -2717,7 +2717,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 - **Дослівно з джерела:**
   > GPIO32, ADC1_CH4
@@ -2866,7 +2866,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/adc_channel.h та .../esp32/include/soc/touch_sensor_channel.h
 - **Дослівно з джерела:**
   > (esp32/adc_channel.h)
@@ -2904,7 +2904,7 @@
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 - **Дослівно з джерела:**
   > GPIO4, ADC2_CH0
@@ -3090,7 +3090,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/usb-serial-jtag-console.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_USB_DP_GPIO:default="Not Updated!",esp32c3="19",esp32s3="20",
@@ -3173,7 +3173,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/56497005-external-ram.rst
 - **Дослівно з джерела:**
   > The external memory is incorporated in the memory map and, with certain restrictions, is usable in the same way as internal data RAM.
@@ -3253,7 +3253,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/56497005-external-ram.rst
 - **Дослівно з джерела:**
   > PSRAM access speed may be faster than flash access, so the overall application performance may be better. For example, if the PSRAM is an Octal mode (8-line PSRAM) and is configured to 80 MHz, then it is faster than a Quad flash (4-line flash) which is configured to 80 MHz.
@@ -3370,7 +3370,7 @@
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
   > .. only:: esp32 or esp32s2 or esp32s3
@@ -3548,7 +3548,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32s3/include/soc/spi_pins.h та .../components/soc/esp32s3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
   > #define MSPI_IOMUX_PIN_NUM_CS1      26
@@ -3662,7 +3662,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 - **Дослівно з джерела:**
   > Default Configuration of Strapping Pins
@@ -3921,7 +3921,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/usb-serial-jtag-console.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_USB_DP_GPIO:default="Not Updated!",esp32c3="19",esp32s3="20",
@@ -4002,7 +4002,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > ADC1_CH4
@@ -4045,7 +4045,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/adc_channel.h
 - **Дослівно з джерела:**
   > ADC2_GPIO5_CHANNEL      0
@@ -4087,7 +4087,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
 - **Дослівно з джерела:**
   > :esp32c3: - ADC2 oneshot mode is no longer supported, due to hardware limitations.
@@ -4116,7 +4116,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst та .../esp-idf/components/soc/esp32c3/include/soc/adc_channel.h
 - **Дослівно з джерела:**
   > {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
@@ -4158,7 +4158,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
 - **Дослівно з джерела:**
   > :esp32c3: - ADC2 oneshot mode is no longer supported, due to hardware limitations.
@@ -4216,7 +4216,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst та .../esp-idf/components/soc/esp32c3/include/soc/adc_channel.h
 - **Дослівно з джерела:**
   > {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
@@ -4300,7 +4300,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/<ціль>/include/soc/{uart_pins,spi_pins}.h
 - **Дослівно з джерела:**
   > esp32/uart_pins.h    U0RXD_GPIO_NUM 3    U0TXD_GPIO_NUM 1
@@ -4334,7 +4334,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/<ціль>/include/soc/{uart_pins,spi_pins}.h
 - **Дослівно з джерела:**
   > esp32/uart_pins.h    U0RXD_GPIO_NUM 3    U0TXD_GPIO_NUM 1
@@ -4409,7 +4409,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/uart_pins.h
 - **Дослівно з джерела:**
   > #define U0TXD_GPIO_NUM  (1)
@@ -4486,7 +4486,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > GPIO20, GPIO21 : UART0 interface.
@@ -4528,7 +4528,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/{uart_pins.h,spi_pins.h}
 - **Дослівно з джерела:**
   > esp32:   U0TXD 1, U0RXD 3
@@ -4580,7 +4580,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/{uart_pins.h,spi_pins.h}
 - **Дослівно з джерела:**
   > esp32:   U0TXD 1, U0RXD 3
@@ -4632,7 +4632,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/{uart_pins.h,spi_pins.h}
 - **Дослівно з джерела:**
   > esp32:   U0TXD 1, U0RXD 3
@@ -4684,7 +4684,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/{uart_pins.h,spi_pins.h}
 - **Дослівно з джерела:**
   > esp32:   U0TXD 1, U0RXD 3
@@ -4723,7 +4723,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/{uart_pins.h,spi_pins.h}
 - **Дослівно з джерела:**
   > esp32:   U0TXD 1, U0RXD 3
@@ -4935,7 +4935,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
 - **Дослівно з джерела:**
   > variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
@@ -4995,7 +4995,7 @@ I²C тягнуть обидві лінії вгору, а `GPIO8` при ста
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst та .../esp-idf/components/soc/esp32c3/include/soc/adc_channel.h
 - **Дослівно з джерела:**
   > {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
@@ -5037,7 +5037,7 @@ I²C тягнуть обидві лінії вгору, а `GPIO8` при ста
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst та .../esp-idf/components/soc/esp32c3/include/soc/adc_channel.h
 - **Дослівно з джерела:**
   > {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
@@ -5103,7 +5103,7 @@ I²C тягнуть обидві лінії вгору, а `GPIO8` при ста
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** tools/cross_refs.py — перевірка проти дерева файлів репозиторію
 - **Розрахунок:**
   posylannya: згадок 689, адресатів 79, помилок 0
@@ -5166,7 +5166,7 @@ I²C тягнуть обидві лінії вгору, а `GPIO8` при ста
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Джерело:** tools/cross_refs.py — перевірка проти дерева файлів репозиторію
 - **Розрахунок:**
   posylannya: згадок 689, адресатів 79, помилок 0
@@ -5227,7 +5227,7 @@ I²C тягнуть обидві лінії вгору, а `GPIO8` при ста
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** ESP32 Series Datasheet v5.3, GPIO Overview та Pin Definitions
 - **Дослівно з джерела:**
   > - 6 flash pins (GPIO6-11)
@@ -5258,7 +5258,7 @@ I²C тягнуть обидві лінії вгору, а `GPIO8` при ста
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** 74HC (CMOS Logic) Datasheet — наприклад, SN74HC04 (NOT gate)
 - **Дослівно з джерела:**
   > SN74HC04 Datasheet:

@@ -27,7 +27,7 @@ DS18B20, і саме тому розділ короткий.
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C spec (UM10204) та 1-Wire spec — обидва вимагають open-drain виходу
 - **Дослівно з джерела:**
   > I²C spec (UM10204):
@@ -62,7 +62,7 @@ DS18B20, і саме тому розділ короткий.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/ds18b20.pdf
 - **Дослівно з джерела:**
   > Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to function on the same 1-Wire bus. Thus, it is simple to use one microprocessor to control many DS18B20s distributed over a large area.
@@ -111,7 +111,7 @@ DS18B20, і саме тому розділ короткий.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DS18B20 datasheet (Maxim), розділи «Features» і «Overview»
 - **Дослівно з джерела:**
   > Each DS18B20 has a unique 64-bit serial code, which allows multiple
@@ -168,7 +168,7 @@ DS18B20, і саме тому розділ короткий.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** 74HC (CMOS Logic) Datasheet — наприклад, SN74HC04 (NOT gate)
 - **Дослівно з джерела:**
   > SN74HC04 Datasheet:
@@ -199,7 +199,7 @@ DS18B20, і саме тому розділ короткий.
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** One-Wire Sensor Reference, датчик температури DS18B20
 - **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
 - **Що шукати в джерелі:** One-Wire Sensor Reference, датчик температури DS18B20
@@ -227,7 +227,7 @@ DS18B20, і саме тому розділ короткий.
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DS18B20 Programmable Resolution 1-Wire Digital Thermometer, datasheet Maxim Integrated (нині Analog Devices), 22 с., розділи «Features», «Operation—Measuring Temperature» і таблиця конфігураційного регістра
 - **Дослівно з джерела:**
   > Measures Temperatures from -55°C to +125°C
@@ -368,7 +368,7 @@ DS18B20, і саме тому розділ короткий.
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.analog.com/ (DS18B20 Datasheet, Maxim Integrated)
 - **Що шукати в джерелі:** таблиця часу перетворення за роздільністю (9 біт ≈ 93.75 мс, 12 біт ≈ 750 мс); робочий діапазон −55…+125 °C; налаштування роздільності 9–12 біт; вимога підтягувального резистора 4.7 кОм; розділ про паразитне живлення й обмеження на кількість пристроїв; 64-бітний унікальний ROM-код.
 - **Нотатка:** Значення −127 °C, яке книга називає кодом помилки, у datasheet відсутнє: це домовленість бібліотеки `DallasTemperature` (`DEVICE_DISCONNECTED_C`). Окремий пункт для наступного проходу — його можна закрити класом A з GitHub, бо бібліотека відкрита.
@@ -441,13 +441,13 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** Maxim Integrated, DS18B20 Programmable Resolution 1-Wire Digital Thermometer, REV: 042208 — розділ DC ELECTRICAL CHARACTERISTICS, рядок Thermometer Error tERR (кеш: source-cache/ds18b20.pdf)
 - **Дослівно з джерела:**
   > Thermometer -10°C to +85°C ±0.5
   > tERR °C 3
   > Error -55°C to +125°C ±2
-- **Спосіб і дата:** tools/layer3.py tekst_dzherela (відновлення рядків таблиці за координатами слів), 2026-08-27
+- **Спосіб і дата:** factcheck/tools/layer3.py tekst_dzherela (відновлення рядків таблиці за координатами слів), 2026-08-27
 - **Нотатка:** Взірець перебудовано 2026-08-27 під нове формулювання книги: М1 переписав рядок після зовнішньої рецензії, і старий взірець відірвався — саме так, як задумано. Цитата подає рядок tERR цілком, як він відновлюється за координатами слів: СХІДЦІВ ДВА, не три. У ревізії Maxim REV 042208 немає ані «−30», ані «±1» — перевірено пошуком по всьому документу. Отже рецензентове прочитання про три східці цей документ не підтверджує, і початкове «до 4 °C» для окропу було праве: 100 °C накриває рядок −55…+125 з ±2, два справні датчики можуть стояти на протилежних краях. Чи додали східець у пізнішій ревізії — звідси не встановити, analog.com блокує наш діапазон адрес. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
 - **Прохід:** m2-93-sample
 
@@ -472,7 +472,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** arithmetic — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Статус:** arithmetic — calculation — checked by arithmetic; no external source is needed
 - **Розрахунок:**
   Паспортна похибка ±0.5 °C. При найгіршому випадку два датчики: +0.5 °C та −0.5 °C = розбіжність до 1 °C
 - **Спосіб і дата:** Математичний розрахунок на основі паспортної похибки DS18B20
@@ -526,7 +526,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** DS18B20 Programmable Resolution 1-Wire Digital Thermometer, Maxim Integrated / Analog Devices, таблиця Electrical Characteristics, рядок `Thermometer Error tERR`
 - **Спосіб і дата:** Клас `C`, а **не** `A`, і це принципово. Дослівний рядок паспорта здобув М2 і навів у себе; я його лише прочитав у їхньому записі. Власну спробу зробив: `cdn-shop.adafruit.com` із цієї мережі не відповідає взагалі, `analog.com` закритий політикою егресу.
 Клас `A` означає «першоджерело отримано **в цій сесії** й процитовано дослівно». Поставити його тут означало б записати чужу роботу як свою — той самий дефект, який ми ловимо в помічників, і рівно та помилка, за яку в цьому реєстрі вже виправлено `pass-31` і `pass-17`. Цитату тому й не наводжу: за правилом класу `C` її не наводять.
@@ -652,7 +652,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -739,7 +739,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DS18B20 Programmable Resolution 1-Wire Digital Thermometer, datasheet Maxim Integrated (нині Analog Devices), 22 с., розділи «Features», «Operation—Measuring Temperature» і таблиця конфігураційного регістра
 - **Дослівно з джерела:**
   > Measures Temperatures from -55°C to +125°C
@@ -789,7 +789,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DS18B20 Datasheet, Table «Temperature Conversion Time»
 - **Дослівно з джерела:**
   > Temperature Conversion Time — максимум 750 мс
@@ -912,7 +912,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DS18B20 Programmable Resolution 1-Wire Digital Thermometer, datasheet Maxim Integrated (нині Analog Devices), 22 с., розділи «Features», «Operation—Measuring Temperature» і таблиця конфігураційного регістра
 - **Дослівно з джерела:**
   > Measures Temperatures from -55°C to +125°C
@@ -1120,7 +1120,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DS18B20 Datasheet, Table «Temperature Conversion Time»
 - **Дослівно з джерела:**
   > Temperature Conversion Time — максимум 750 мс
@@ -1217,7 +1217,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** source-cache/ds18b20.pdf
 - **Дослівно з джерела:**
   > Converts Temperature to 12-Bit Digital Word in 750ms (Max)
@@ -1247,7 +1247,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/milesburton/Arduino-Temperature-Control-Library/master/DallasTemperature.h
 - **Дослівно з джерела:**
   > #define DEVICE_DISCONNECTED_C -127
@@ -1281,7 +1281,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/milesburton/Arduino-Temperature-Control-Library/master/DallasTemperature.h
 - **Дослівно з джерела:**
   > #define DEVICE_DISCONNECTED_C -127
@@ -1315,7 +1315,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** named-unreachable — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
 - **Джерело:** https://www.analog.com/ (DS18B20 Datasheet, Maxim Integrated)
 - **Що шукати в джерелі:** таблиця часу перетворення за роздільністю (9 біт ≈ 93.75 мс, 12 біт ≈ 750 мс); робочий діапазон −55…+125 °C; налаштування роздільності 9–12 біт; вимога підтягувального резистора 4.7 кОм; розділ про паразитне живлення й обмеження на кількість пристроїв; 64-бітний унікальний ROM-код.
 - **Нотатка:** Значення −127 °C, яке книга називає кодом помилки, у datasheet відсутнє: це домовленість бібліотеки `DallasTemperature` (`DEVICE_DISCONNECTED_C`). Окремий пункт для наступного проходу — його можна закрити класом A з GitHub, бо бібліотека відкрита.
@@ -1366,7 +1366,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1508,7 +1508,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** I²C spec (UM10204) та 1-Wire spec — обидва вимагають open-drain виходу
 - **Дослівно з джерела:**
   > I²C spec (UM10204):
@@ -1567,7 +1567,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** derived — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
 - **Джерело:** Arduino Libraries; GitHub (Paul Stoffregen, Tim Newsome)
 - **Дослівно з джерела:**
   > Стандартні Arduino бібліотеки для OneWire датчиків:
@@ -1596,7 +1596,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** no-external-signal — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
 - **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
   > Затвор MOSFET:
@@ -1631,7 +1631,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** DS18B20 Datasheet, Table «Temperature Conversion Time»
 - **Дослівно з джерела:**
   > Temperature Conversion Time — максимум 750 мс
@@ -1702,7 +1702,7 @@ Maxim/Dallas, ревізія 042208).
 
 **Доказ**
 
-- **Статус:** verbatim — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
 - **Джерело:** https://raw.githubusercontent.com/milesburton/Arduino-Temperature-Control-Library/master/DallasTemperature.h
 - **Дослівно з джерела:**
   > #define DEVICE_DISCONNECTED_C -127
