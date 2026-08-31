@@ -96,6 +96,8 @@ SIGN = {"A": "✅", "B": "🟢", "C": "🟡", "D": "🔵", "E": "⚪", "F": "�
 
 ALL_CLASSES = "".join(CLASS_TEXT)                      # A B C D E L F G K
 CLASSES_OF_UNITS = "".join(k for k in CLASS_TEXT if k != "K")   # без блоків коду
+# Те саме СЛОВАМИ, і виведене з того самого джерела, а не вписане поруч.
+STATUSES_OF_UNITS = [s for s in STATUSES if s != "code-context"]
 
 RE_ZAPYS = re.compile(
     r"<!--\s*fc\s+id:(?P<id>[\w.-]+)\s+sha:(?P<sha>[0-9a-f]{8})"
@@ -1132,26 +1134,30 @@ def zbir_usikh() -> list[dict]:
                 d = m.groupdict()
                 d["fajl"] = str(p.relative_to(FC))
                 d["tilo"] = sh
+                # Слово поруч із літерою, виведене з неї в ОДНОМУ місці.
+                # У коментарі картки поки літера; при стисненні зникає
+                # цей рядок, а не з'являється другий шлях читання.
+                d["status"] = LETTER_TO_STATUS.get(d.get("klas", ""), "")
                 out.append(d)
     return out
 
 
 def status() -> int:
     zapysy = zbir_usikh()
-    c = Counter(z["klas"] for z in zapysy)
-    kontekst = c.get("K", 0)
+    c = Counter(z["status"] for z in zapysy)
+    kontekst = c.get("code-context", 0)
     # Блоки коду — контекст, а не твердження: відсотки рахуються від
     # тверджень, інакше знаменник роздувається тим, що ніхто й не збирався
     # звіряти.
     vsjogo = len(zapysy) - kontekst
     print(f"\nодиниць твердження: {vsjogo}"
           f"  (+ {kontekst} блоків коду як контекст)\n")
-    zvireno = sum(c[k] for k in "ABD")
-    for k in CLASSES_OF_UNITS:
-        n = c.get(k, 0)
+    zvireno = sum(c[k] for k in ("verbatim", "derived", "arithmetic"))
+    for stan in STATUSES_OF_UNITS:
+        n = c.get(stan, 0)
         if not n:
             continue
-        print(f"  {LETTER_TO_STATUS[k]:<20} {n:>5}  {n*100/vsjogo:5.1f}%   {CLASS_TEXT[k]}")
+        print(f"  {stan:<20} {n:>5}  {n*100/vsjogo:5.1f}%   {STATUSES[stan]}")
     print(f"\n  звірено з джерелом або обчисленням "
           f"(verbatim + derived + arithmetic): "
           f"{zvireno} ({zvireno*100/vsjogo:.1f}%)")
@@ -1162,17 +1168,18 @@ def status() -> int:
     # нічого не каже про світ, але `E` означає «звірки не було», а `S`
     # означає «звірка була, механічна, відтворна, і вона зійшлася».
     # Злити їх — значить викинути єдине, що тут виміряно.
-    if c.get("S"):
+    if c.get("self-consistent"):
         print(f"  внутрішня звірка, зовнішнього підтвердження немає "
               f"(self-consistent): "
-              f"{c['S']}")
-    print(f"  закрито як рішення (no-external-signal): {c.get('E',0)}")
+              f"{c['self-consistent']}")
+    print(f"  закрито як рішення (no-external-signal): "
+          f"{c.get('no-external-signal', 0)}")
     print(f"  лишається (named-unreachable + unchecked + refuted): "
-          f"{c.get('C',0)+c.get('F',0)+c.get('G',0)}")
+          f"{sum(c.get(s, 0) for s in ('named-unreachable', 'unchecked', 'refuted'))}")
     # за файлами: де найбільше незакритого
     per = Counter()
     for z in zapysy:
-        if z["klas"] in "CFG":
+        if z["status"] in ("named-unreachable", "unchecked", "refuted"):
             per[z["fajl"]] += 1
     if per:
         print("\n  найбільше незакритого:")
@@ -1285,7 +1292,7 @@ def blocked() -> int:
     """
     grupy: dict[str, dict] = {}
     for z in zbir_usikh():
-        if z["klas"] != "C":
+        if z["status"] != "named-unreachable":
             continue
         mu = re.search(r"\*\*Джерело:\*\*[ \t]*(.+)", z["tilo"])
         u = " ".join(mu.group(1).split()) if mu else "—"
@@ -1387,7 +1394,7 @@ def cherga() -> int:
     mezha = int(sys.argv[2]) if len(sys.argv) > 2 else 40
     poz = []
     for z in zbir_usikh():
-        if z["klas"] not in "CFG":
+        if z["status"] not in ("named-unreachable", "unchecked", "refuted"):
             continue
         m = RE_TVERDZHENNYA.search(z["tilo"])
         if not m:
@@ -1453,7 +1460,7 @@ def vorota() -> int:
     Правило натомість таке: `F` видимий і рахований, а `C` має наряд.
     """
     dokazy = zavantazhyty_dokazy()
-    g = [z for z in dokazy if class_letter_of(z).upper() == "G"]
+    g = [z for z in dokazy if status_of(z) == "refuted"]
     for z in g:
         print(f"   ✗ спростоване твердження: {nazva_zapysu(z)} "
               f"({z.get('_prokhid')})")

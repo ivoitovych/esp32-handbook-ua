@@ -149,14 +149,14 @@ def vypadkova(a) -> int:
 
     import sample
 
-    usi = sorted(sample.odynyci("F"), key=lambda u: u["id"])
+    usi = sorted(sample.odynyci("unchecked"), key=lambda u: u["id"])
     vzyato = random.Random(a.nasinnya).sample(usi, min(a.vypadkovo, len(usi)))
     (a.kudy / "vybirka.json").write_text(json.dumps(
         {"order_version": versiya_naryadu(getattr(a, "rich", False)),
          # `queue` пише і цей прогін теж: попарний режим порівнює з ним
          # клас кожної одиниці, і без нього він рахував **усі** одиниці
          # такими, що вийшли з черги — 10 із 10 у першій же пробі.
-         "queue": "F", "rich_cards": bool(getattr(a, "rich", False)),
+         "queue": "unchecked", "rich_cards": bool(getattr(a, "rich", False)),
          "nasinnya": a.nasinnya, "z_cherhy": len(usi),
          "vzyato": [u["id"] for u in vzyato]},
         ensure_ascii=False, indent=1), encoding="utf-8")
@@ -191,7 +191,8 @@ def za_perelikom(a, sample) -> int:
     for kl in factcheck.ALL_CLASSES:
         try:
             for u in sample.odynyci(kl):
-                reyestr[u["id"]] = dict(u, klas=kl)
+                reyestr[u["id"]] = dict(
+                    u, klas=kl, status=factcheck.LETTER_TO_STATUS.get(kl, kl))
         except Exception:
             continue
     vzyato = [reyestr[i] for i in treba if i in reyestr]
@@ -199,9 +200,14 @@ def za_perelikom(a, sample) -> int:
     # Якщо попередній прогін не назвав черги, «вийшли з черги»
     # порахувати НЕМОЖЛИВО — і рахувати не треба. Порожній список
     # чесніший за число, що дорівнює розміру вибірки.
+    # `queue` у старих файлах вибірки записано ЛІТЕРОЮ, у нових —
+    # словом. Зводимо до слова тут, бо порівняння слова з літерою дало б
+    # «усі одиниці вийшли з черги» — рівно та вада, яку попередній
+    # коментар і описує, лише з іншої причини.
     cherha = poperednye.get("queue")
+    cherha = factcheck.LETTER_TO_STATUS.get(cherha, cherha)
     zminyly = ([i for i in treba
-                if i in reyestr and reyestr[i]["klas"] != cherha]
+                if i in reyestr and reyestr[i]["status"] != cherha]
                if cherha else [])
 
     (a.kudy / "vybirka.json").write_text(json.dumps(
@@ -259,14 +265,14 @@ def vypadkova(a) -> int:
 
     import sample
 
-    usi = sorted(sample.odynyci("F"), key=lambda u: u["id"])
+    usi = sorted(sample.odynyci("unchecked"), key=lambda u: u["id"])
     vzyato = random.Random(a.nasinnya).sample(usi, min(a.vypadkovo, len(usi)))
     (a.kudy / "vybirka.json").write_text(json.dumps(
         {"order_version": versiya_naryadu(getattr(a, "rich", False)),
          # `queue` пише і цей прогін теж: попарний режим порівнює з ним
          # клас кожної одиниці, і без нього він рахував **усі** одиниці
          # такими, що вийшли з черги — 10 із 10 у першій же пробі.
-         "queue": "F", "rich_cards": bool(getattr(a, "rich", False)),
+         "queue": "unchecked", "rich_cards": bool(getattr(a, "rich", False)),
          "nasinnya": a.nasinnya, "z_cherhy": len(usi),
          "vzyato": [u["id"] for u in vzyato]},
         ensure_ascii=False, indent=1), encoding="utf-8")
@@ -334,7 +340,7 @@ def main() -> int:
         return vypadkova(a)
 
     za: dict[str, list[dict]] = collections.defaultdict(list)
-    for u in sample.odynyci("F"):
+    for u in sample.odynyci("unchecked"):
         if not RE_DOSYAZHNE.search(u["tekst"]):
             continue
         pref = u["src"].split("/")[-1][:2]

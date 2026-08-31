@@ -164,7 +164,8 @@ def main() -> int:
 
     e1, _e2, _s1, _s2 = split_queue.podil_e()
     moyi = set(e1)
-    vsi = sample.odynyci("E") + sample.odynyci("F")
+    vsi = (sample.odynyci("no-external-signal")
+           + sample.odynyci("unchecked"))
 
     # Групуємо за розділом книги — саме це робить пакет дешевим.
     za_rozdilom: dict[str, list[dict]] = collections.defaultdict(list)

@@ -1,7 +1,7 @@
 # Наряд: випадкова вибірка класу `F` — ще не звірене
 
-**Генерується** `tools/sample.py`. Насіння **20260828**, з популяції
-**1749** одиниць відібрано **6**.
+**Генерується** `tools/sample.py`. Насіння **20260829**, з популяції
+**1742** одиниць відібрано **4**.
 
 ## Що це за одиниці
 
@@ -21,16 +21,12 @@
 > Наряд не каже, якої відповіді чекає. Він каже, що кожна відповідь
 > мусить пред'явити.
 
-## Вердикти й що кожен вимагає
+Перелік вердиктів і те, чого кожен вимагає, стоїть нижче, у блоці
+завдання. Тут його немає навмисно: **жоден генератор не пише власної
+копії цих правил**, і саме така копія тут і стояла — з іменами
+вердиктів, яких ворота вже не вживають.
 
-| Вердикт | Обов'язково |
-|---|---|
-| `pidtverdzheno` | `dzherelo` + `cytata` — дослівний рядок із документа |
-| `sperechayetsya` | `dzherelo` + `cytata` — рядок, що каже **інакше** |
-| `ne_znayshov` | `dzherelo` — **адреса документа, який дивився** |
-| `nedosyazhne` | `dzherelo` + код відповіді в `komentar` (403, 404, заглушка) |
-
-`dzherelo` завжди починається з `https://raw.githubusercontent.com/`.
+`source` завжди починається з `https://raw.githubusercontent.com/`.
 
 **Адреса, що вказує на сам довідник** (`esp32-handbook`, `ivoitovych`,
 `voytovych`, або шлях виду `manual/…`, `kartky/…`, `dodatky/…`)
@@ -58,39 +54,13 @@
 
 ## Заборони
 
-Повністю — `factcheck/HELPERS.md`. Тут найважливіші:
+Повністю — `factcheck/HELPERS.md`; найважливіші стоять нижче, у блоках
+завдання, і тут не повторюються.
 
-- **переказ — не цитата.** Усе в полі `cytata` звіряється підрядком у
-  завантаженому документі;
-- **пам'ять — не документ.** Велика літера замість малої валить запис
-  навіть при правильному факті;
-- **«стандартна практика» — не джерело**;
-- **знати відповідь — не підстава написати цитату.** Факт відомий, а
-  рядка не видно — це `ne_znayshov` із назвою того, де дивився.
-
-## Про `sperechayetsya`
+## Про `disputes`
 
 Найцінніша відповідь: книгу ще можна виправити. Але лише коли **бачиш
 інший текст**, а не пам'ятаєш інакше.
-
-## Формат
-
-```yaml
-- odynycya: T-12-034
-  verdykt: ne_znayshov
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
-  komentar: документ прочитано, про це в ньому не сказано
-
-- odynycya: T-12-035
-  verdykt: pidtverdzheno
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/...
-  cytata: |
-    дослівний рядок із завантаженого документа
-  komentar: що саме він підтверджує
-```
-
-**YAML:** якщо значення містить `: ` або починається з лапки — бери все
-значення в одинарні лапки.
 
 This is a printed field handbook. Its reader has no network and no time
 to check anything. Our job is to put every factual claim in it beside an
@@ -119,6 +89,22 @@ a table, nor two sentences joined across an ellipsis.
 familiar but you cannot see the line in the document, that is
 `not_found`.
 
+**Paste the line with its markup. Do not clean it up.** This is the one
+that costs most, because it does not feel like an error. The document
+says
+
+    Print registers and reboot (``CONFIG_ESP_SYSTEM_PANIC_PRINT_REBOOT``) — default option
+
+and the tidy version — `Print registers and reboot — default option` —
+is the same fact, reads better, and **fails**. So does dropping a
+`:doc:` role, a trailing underscore on a link, or the brackets around an
+option name. Measured over 200 tickets: of the confirmations that
+failed, 13 of 14 had found the right passage and lost it in the copying.
+
+Copy the characters that are there — backticks, colons, brackets,
+underscores and all. If two useful sentences are not adjacent, send two
+entries or one entry and say so; do not join them.
+
 It is not a failure and not a lesser result. It records where we have
 already looked, and those records are what let us print a sentence at
 all.
@@ -140,15 +126,13 @@ Some `espressif.com` addresses return an **HTML placeholder of about
 document. If what came back does not look like the document you asked
 for, the verdict is `unreachable`.
 
-Used when the unit already carries a class and the question is whether
-that class is right.
-
 | Verdict | When |
 |---|---|
-| `confirmed` | the existing class is correct |
-| `disputes` | the source contradicts the handbook |
-| `truly_none` | there really is no external referent: this is the author's position |
-| `not_found` | you could not tell — say what you read |
+| `confirmed` | address plus a **verbatim** quote from the document |
+| `not_found` | the document exists, the passage is not in it — say what you read |
+| `unreachable` | the document does not come down from here (403, 404, stub) |
+| `advice` | you did not get the document, but can name where it would be |
+| `disputes` | the source **contradicts** the handbook — the most valuable answer there is |
 
 An address inside this repository, or a chapter of the handbook cited as
 the source for a claim in the handbook, is rejected mechanically. If a
@@ -174,32 +158,24 @@ whole batch is lost, not just that entry.
 
 ---
 
-*Task spec `4e65092f` · blocks: ORIENTATION, VERBATIM, HONEST-MISS, NETWORK, STUB, VERDICTS-VERDICT-TEST, NO-SELF-REFERENCE, FORMAT. Quote this version when reporting results from this wave.*
+*Task spec `4b626429` · blocks: ORIENTATION, VERBATIM, HONEST-MISS, NETWORK, STUB, VERDICTS-EXTERNAL, NO-SELF-REFERENCE, FORMAT. Quote this version when reporting results from this wave.*
 
 
 ## Пакет 1
 
-**`T-15-016`** · `manual/15-oflayn.md:16`
+**`T-27-062`** · `manual/27-jtag.md:146`
 
-> Потрібні MCPWM, PCNT, TWAI · Чому → повний доступ до периферії
+> **Піни JTAG зайняті проєктом** — див. попередження вище. 5.
 
-**`T-21-069`** · `manual/21-seriyna.md:153`
+**`T-36-107`** · `manual/36-spi.md:179`
 
-> 0042 · MAC → `A0:B7:…:2C`
+> Адресація · SPI → окремий пін
 
-**`T-26-110`** · `manual/26-zboyi.md:246`
+**`T-61-016`** · `manual/61-proj-kanal.md:32`
 
-> Запис coredump — це запис у флеш у момент, коли система вже нестабільна.
+> Потрібен роутер · ESP-NOW → **ні**
 
-**`T-32-042`** · `manual/32-nadiynist.md:113`
+**`T-K04-020`** · `kartky/k04-boot.md:55`
 
-> robota();
-
-**`T-42-056`** · `manual/42-espnow.md:135`
-
-> ESP-NOW і Wi-Fi ділять одне радіо і **один канал**.
-
-**`T-K08-003`** · `kartky/k08-symptomy.md:6`
-
-> | # | Симптом | Найчастіша причина | Що робити |
+> [[classic]] На платах ESP32-CAM кнопки `BOOT` немає взагалі: `GPIO0` з'єднується з `GND` перемичкою на самій платі.
 

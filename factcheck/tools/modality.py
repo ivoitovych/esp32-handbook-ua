@@ -125,7 +125,8 @@ def main() -> int:
         except Exception:
             continue
         for r in z:
-            if not isinstance(r, dict) or factcheck.class_letter_of(r) not in ("A", "B"):
+            if (not isinstance(r, dict)
+                or factcheck.status_of(r) not in ("verbatim", "derived")):
                 continue
             cyt = str(r.get("quote") or "")
             m = RE_DOZVIL.search(cyt)

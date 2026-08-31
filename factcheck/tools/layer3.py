@@ -767,7 +767,9 @@ def perevirka(kachaty: bool,
             # > Перевірка вертає те саме число, і те саме число нічого
             # > не означає.
             maye_klas = bool(z.get("status") or z.get("klas"))
-            klas = factcheck.class_letter_of(z, "").strip().upper()
+            # СЛОВОМ, а не літерою: `status_of` приймає обидва
+            # написання, тож перехід не потребує другого шляху.
+            stan = factcheck.status_of(z, "")
 
             # Клас `F` — це «не звірено», типовий стан **відсутності**
             # доказу. Запис доказу з класом `F` не означає нічого й
@@ -785,7 +787,7 @@ def perevirka(kachaty: bool,
             # файл завантажується, а цитати, яку міг би звірити третій
             # шар, просто немає. Ворота проти цього одні: вимагати витяг
             # там, де клас його обіцяє.
-            if maye_klas and klas == "A" and not str(z.get("quote") or
+            if maye_klas and stan == "verbatim" and not str(z.get("quote") or
                                                      z.get("cytata-tablytsya")
                                                      or "").strip():
                 pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
@@ -794,7 +796,7 @@ def perevirka(kachaty: bool,
                     detali="клас A без цитати — A обіцяє дослівний витяг"))
                 continue
 
-            if maye_klas and klas == "F":
+            if maye_klas and stan == "unchecked":
                 pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="pomylka",
@@ -803,12 +805,13 @@ def perevirka(kachaty: bool,
 
             # Вигадане джерело: клас каже «звірено», а в полі джерела
             # стоїть міркування. Див. RE_SCHOS_SCHO_MOZHE_BUTY_DOKUMENTOM.
-            if maye_klas and klas in ("A", "B") and not dzherelo_rozvyazne(z):
+            if (maye_klas and stan in ("verbatim", "derived")
+                    and not dzherelo_rozvyazne(z)):
                 pidsumok["vygadane"] = pidsumok.get("vygadane", 0) + 1
                 dzh = str(factcheck.pole(z, "source", "dzherelo") or "")[:60]
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="vygadane",
-                    detali=f"клас {klas}, а джерело — не документ: «{dzh}»"))
+                    detali=f"стан {stan}, а джерело — не документ: «{dzh}»"))
                 continue
 
             # **Надмірний `E` — дзеркало вигаданого джерела.** Знахідка
@@ -830,7 +833,7 @@ def perevirka(kachaty: bool,
             # Тому це **питання, а не заборона**: `E` на твердженні, у
             # назві якого число з одиницею виміру, друкується окремим
             # переліком і рішення лишає людині.
-            if (maye_klas and klas == "E"
+            if (maye_klas and stan == "no-external-signal"
                     and RE_CHYSLO_Z_ODYNYCEYU.search(nazva)
                     and not RE_SAM_KAZHE_E.search(nazva)):
                 pidsumok["nadmirnyy_e"] = pidsumok.get("nadmirnyy_e", 0) + 1
@@ -877,7 +880,7 @@ def perevirka(kachaty: bool,
             else:
                 frahmenty = uryvky(
                     str(factcheck.pole(z, "quote", "cytata") or ""),
-                    vlasna_mova=(klas == "S"))
+                    vlasna_mova=(stan == "self-consistent"))
             urly = dzherela_zapysu(z)
             # Клас `S` адресує книгу, а не мережу, тож відсутність URL
             # у нього — норма, а не «нема чого звіряти».
@@ -886,14 +889,14 @@ def perevirka(kachaty: bool,
             # відсутністю, і те, чого немає, стоїть у полі `absent`.
             # Вимагати від нього уривків означало б відкидати його як
             # «нема чого звіряти» — тобто мовчки скасувати клас.
-            if klas == "N":
+            if stan == "absent-from-source":
                 if not urly:
                     pidsumok["nichoho"] += 1
                     naslidky.append(dict(
                         fayl=f.stem, nazva=nazva, stan="nichoho",
                         detali="клас N без URL джерела"))
                     continue
-            elif not frahmenty or (not urly and klas != "S"):
+            elif not frahmenty or (not urly and stan != "self-consistent"):
                 pidsumok["nichoho"] += 1
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="nichoho",
@@ -908,7 +911,7 @@ def perevirka(kachaty: bool,
             tablychni = False
 
             # Внутрішня звірка: корпус — названі файли книги.
-            if klas == "S":
+            if stan == "self-consistent":
                 shlyakhy = knyzhkovi_dzherela(z)
                 if not shlyakhy:
                     pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
@@ -978,7 +981,7 @@ def perevirka(kachaty: bool,
             # питання обернене й відповідь однозначна: якщо рядок, чия
             # ВІДСУТНІСТЬ і є доказом, у документі знайдено, то доказ
             # не розбіжний — він хибний.
-            if klas == "N":
+            if stan == "absent-from-source":
                 shukane = str(z.get("absent") or "").strip()
                 if not shukane:
                     pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1

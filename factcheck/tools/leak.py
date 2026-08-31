@@ -181,17 +181,19 @@ def main() -> int:
     for u in odyn:
         kand_a = factcheck.vsi_kandydaty(zapysy, u["sha"], u["tekst"])
         kand_b = factcheck.vsi_kandydaty(bez, u["sha"], u["tekst"])
-        ka = (min(kand_a, key=lambda x: factcheck.STRENGTH_BY_LETTER.get(
-            factcheck.class_letter_of(x), 9)) if kand_a else None)
-        kb = (min(kand_b, key=lambda x: factcheck.STRENGTH_BY_LETTER.get(
-            factcheck.class_letter_of(x), 9)) if kand_b else None)
+        ka = (min(kand_a, key=lambda x: factcheck.STRENGTH.get(
+            factcheck.status_of(x), 99)) if kand_a else None)
+        kb = (min(kand_b, key=lambda x: factcheck.STRENGTH.get(
+            factcheck.status_of(x), 99)) if kand_b else None)
         if ka != kb:
             zmina[(ka, kb)] += 1
 
     vsjogo = sum(zmina.values())
-    ab = sum(n for (ka, _), n in zmina.items() if ka in ("A", "B"))
+    ab = sum(n for (ka, _), n in zmina.items()
+             if ka in ("verbatim", "derived"))
     print(f"\nодиниць, чий клас походить від течі: {vsjogo}")
-    print(f"  з них подані як звірені з джерелом (`A`/`B`): {ab}")
+    print(f"  з них подані як звірені з джерелом "
+          f"(`verbatim`/`derived`): {ab}")
     for (ka, kb), n in zmina.most_common():
         print(f"    {ka} → {kb or 'без доказу'}: {n}")
     return 0
