@@ -1,6 +1,5 @@
 - nazva: TP4056 — заряджання фіксоване на 4.2 В
   zbih: 'Напруга: 4\.2 В повністю заряджений'
-  klas: A
   dzherelo: TP4056 1A Standalone Linear Li-Ion Battery Charger with Thermal Regulation, datasheet NanJing
     Top Power ASIC Corp — «DESCRIPTION», «FEATURES», «ELECTRICAL CHARACTERISTICS»
   cytata: "The charge voltage is fixed at 4.2V, and the charge current can be\nprogrammed externally with\
@@ -26,7 +25,6 @@
     класом `C` із `pass-03-nedostupni.yaml` для решти речення.'
 - nazva: TP4056 — струм заряджання задає резистор, 1.2 кОм дає 1 А
   zbih: \*\*Струм заряджання\*\* задається резистором на платі, типово 1 А\.
-  klas: A
   dzherelo: TP4056 datasheet NanJing Top Power ASIC Corp — опис виводу PROG (Pin 2) і таблиця «Rprog Current
     Setting»
   cytata: "PROG(Pin 2): Constant Charge Current Setting and Charge Current\nMonitor Pin charge current\
@@ -57,7 +55,6 @@
 - nazva: TP4056 продається із захистом DW01 — два транзистори в типовій схемі
   zbih: 'TP4056 продається у \*\*двох варіантах\*\*: із захистом \(додаткова мікросхема DW01 і два транзистори
     на платі\) і без\.'
-  klas: B
   dzherelo: DW01A — One Cell Lithium-ion/Polymer Battery Protection IC, datasheet Fortune Semiconductor
     Corp — «Pin Configuration», «Typical Application Circuit», «Description of Operation»
   cytata: "Pin No.  Symbol   Description\n  1        OD     MOSFET gate connection pin for discharge control\n\
@@ -94,7 +91,6 @@
   zbih: '\*\*Одночасна робота й заряджання\.\*\* Проста схема «акумулятор і навантаження паралельно на
     виході TP4056» працює, але заряджання при цьому не завершується коректно: модуль не бачить, коли елемент
     заповнився, бо струм іде і в навантаження\.'
-  klas: B
   dzherelo: TP4056 datasheet NanJing Top Power ASIC Corp — «DESCRIPTION» і опис виводу BAT (Pin 5)
   cytata: 'The TP4056 automatically terminates the charge cycle when the
 

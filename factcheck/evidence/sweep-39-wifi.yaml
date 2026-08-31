@@ -80,7 +80,6 @@
 
 - nazva: 'T-39-035: Її ще немає: під''єднання займає від сотень мілісекунд'
   zbih: Її\s+ще\s+немає:\s+під'єднання
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
   cytata: 'I (2089) esp_netif_handlers: sta ip: 192.168.77.89
 
@@ -106,7 +105,6 @@
   - 01c85b3e
 - nazva: 'T-39-037: Саме наявність IP, а не факт під''єднання, означає,'
   zbih: Саме\s+наявність\s+IP,\s+а
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
   cytata: 'I (2089) wifi station: got ip:192.168.77.89
 
@@ -132,7 +130,6 @@
   - e3f3983a
 - nazva: 'T-39-018: **Канали 12 і 13** доступні не за всіх'
   zbih: \*\*Канали\s+12\s+і\s+13\*\*
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_wifi.rst
   cytata: 'Various security modes for the above (WPA, WPA2, WPA3, etc.)
 
@@ -158,7 +155,6 @@
   - 60caafaf
 - nazva: 'T-39-021: Роутер, переведений у режим «тільки WPA3», відрізає такі'
   zbih: Роутер,\s+переведений\s+у\s+режим
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_wifi.rst
   cytata: 'Various security modes for the above (WPA, WPA2, WPA3, etc.)
 
@@ -184,7 +180,6 @@
   - 06c29e2f
 - nazva: 'T-39-044: Пристрій гріється, з''їдає батарею і не робить нічого'
   zbih: Пристрій\s+гріється,\s+з'їдає\s+батарею
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/main/station_example_main.c
   cytata: "} else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED)\
     \ {\n    if (s_retry_num < EXAMPLE_ESP_MAXIMUM_RETRY) {\n        esp_wifi_connect();\n\
@@ -210,7 +205,6 @@
   - 60427d96
 - nazva: 'T-39-033: Робота йде **через події**: під''єднання асинхронне, і код'
   zbih: 'Робота\s+йде\s+\*\*через\s+події\*\*:'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/main/station_example_main.c
   cytata: '} else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED)
     {
@@ -236,7 +230,6 @@
   - f7804431
 - nazva: 'T-39-047: ESP_LOGW(TAG, "зв''язок втрачено, спроба через %d мс", pauza);'
   zbih: ESP_LOGW\(TAG,\s+"зв'язок\s+втрачено,\s+спроба
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h
   cytata: 'esp_err_t esp_wifi_connect(void);
 
@@ -260,7 +253,6 @@
   - 9e58a073
 - nazva: 'T-39-054: Правильно — зберігати в NVS (розділ 18), а'
   zbih: Правильно\s+—\s+зберігати\s+в
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/nvs_flash/include/nvs_flash.h
   cytata: 'esp_err_t nvs_flash_init(void);
 
@@ -284,7 +276,6 @@
   - e9c6e50a
 - nazva: 'T-39-064: ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);'
   zbih: ESP_LOGI\(TAG,\s+"RSSI\s+%d\s+дБм,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h
   cytata: 'esp_err_t esp_wifi_sta_get_rssi(int *rssi);
 
@@ -308,7 +299,6 @@
   - da883091
 - nazva: 'T-39-087: **Modem sleep** — радіо вимикається між маячками, з''єднання'
   zbih: \*\*Modem\s+sleep\*\*\s+—\s+радіо
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi_types_generic.h
   cytata: 'WIFI_PS_MIN_MODEM,   /**< Minimum modem power saving. In this mode, station wakes
     up to receive beacon every DTIM period */
@@ -334,7 +324,6 @@
   - ecc7ebf3
 - nazva: 'T-39-088: Вмикається за замовчуванням і майже безкоштовне.'
   zbih: Вмикається\s+за\s+замовчуванням\s+і
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h
   cytata: '@attention Default power save type is WIFI_PS_MIN_MODEM.
 
@@ -358,7 +347,6 @@
   - b1ab339c
 - nazva: 'T-39-001: Wi-Fi — головна причина, чому беруть ESP32 (розділ'
   zbih: Wi\-Fi\s+—\s+головна\s+причина,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_wifi.rst
   cytata: 'The Wi-Fi libraries provide support for configuring and monitoring the {IDF_TARGET_NAME}
     Wi-Fi networking functionality.
@@ -384,7 +372,6 @@
   - ee5b21e0
 - nazva: 'T-39-019: Якщо роутер працює на 13-му, ESP32 із неправильно'
   zbih: Якщо\s+роутер\s+працює\s+на
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi_types_generic.h
   cytata: 'uint8_t               schan;   /**< Start channel of the allowed 2.4GHz Wi-Fi channels
     */
@@ -416,7 +403,6 @@
   - ad2fdefa
 - nazva: 'T-39-066: | від −50 дБм | відмінно |'
   zbih: \|\s+від\s+−50\s+дБм
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/scan/README.md
   cytata: "I (2783) scan: RSSI \t\t-50\n"
   sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
@@ -436,7 +422,6 @@
   - 597c4317
 - nazva: 'T-39-091: **Не під''єднуватися взагалі.** Для датчика на батарейці ESP-NOW'
   zbih: \*\*Не\s+під'єднуватися\s+взагалі\.\*\*\s+Для
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
   cytata: 'The default ESP-NOW bit rate is 1 Mbps.
 
@@ -460,7 +445,6 @@
   - 5df62d53
 - nazva: 'T-39-098: RSSI логувати завжди: на межі OTA не проходить,'
   zbih: RSSI\s+логувати\s+завжди:\s+на
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/scan/README.md
   cytata: "I (2783) scan: RSSI \t\t-50\n"
   sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring

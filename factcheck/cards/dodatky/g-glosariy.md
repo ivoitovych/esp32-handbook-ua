@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/g-glosariy.md`
 
-Одиниць твердження: **175**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **175**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-G-001 sha:d1b49281 src:dodatky/g-glosariy.md:3 klas:E -->
+<!-- fc id:T-G-001 sha:d1b49281 src:dodatky/g-glosariy.md:3 status:no-external-signal -->
 ### T-G-001 · proza · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-G-002 sha:4b7414f2 src:dodatky/g-glosariy.md:3 klas:E -->
+<!-- fc id:T-G-002 sha:4b7414f2 src:dodatky/g-glosariy.md:3 status:no-external-signal -->
 ### T-G-002 · proza · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-G-003 sha:9765df77 src:dodatky/g-glosariy.md:9 klas:E -->
+<!-- fc id:T-G-003 sha:9765df77 src:dodatky/g-glosariy.md:9 status:no-external-signal -->
 ### T-G-003 · proza · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -75,7 +75,7 @@
 
 ---
 
-<!-- fc id:T-G-004 sha:5afcab96 src:dodatky/g-glosariy.md:11 klas:E -->
+<!-- fc id:T-G-004 sha:5afcab96 src:dodatky/g-glosariy.md:11 status:no-external-signal -->
 ### T-G-004 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -118,7 +118,7 @@
 
 ---
 
-<!-- fc id:T-G-005 sha:3161b4c1 src:dodatky/g-glosariy.md:13 klas:B -->
+<!-- fc id:T-G-005 sha:3161b4c1 src:dodatky/g-glosariy.md:13 status:derived -->
 ### T-G-005 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -173,7 +173,7 @@
 
 ---
 
-<!-- fc id:T-G-006 sha:5de81a1d src:dodatky/g-glosariy.md:14 klas:A -->
+<!-- fc id:T-G-006 sha:5de81a1d src:dodatky/g-glosariy.md:14 status:verbatim -->
 ### T-G-006 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -223,7 +223,7 @@
 
 ---
 
-<!-- fc id:T-G-007 sha:f792b77f src:dodatky/g-glosariy.md:15 klas:F -->
+<!-- fc id:T-G-007 sha:f792b77f src:dodatky/g-glosariy.md:15 status:unchecked -->
 ### T-G-007 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-G-008 sha:3ae963db src:dodatky/g-glosariy.md:16 klas:F -->
+<!-- fc id:T-G-008 sha:3ae963db src:dodatky/g-glosariy.md:16 status:unchecked -->
 ### T-G-008 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -309,7 +309,7 @@
 
 ---
 
-<!-- fc id:T-G-009 sha:cb136786 src:dodatky/g-glosariy.md:17 klas:F -->
+<!-- fc id:T-G-009 sha:cb136786 src:dodatky/g-glosariy.md:17 status:unchecked -->
 ### T-G-009 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -352,7 +352,7 @@
 
 ---
 
-<!-- fc id:T-G-010 sha:9574692b src:dodatky/g-glosariy.md:18 klas:E -->
+<!-- fc id:T-G-010 sha:9574692b src:dodatky/g-glosariy.md:18 status:no-external-signal -->
 ### T-G-010 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -395,7 +395,7 @@
 
 ---
 
-<!-- fc id:T-G-011 sha:8948dd99 src:dodatky/g-glosariy.md:19 klas:E -->
+<!-- fc id:T-G-011 sha:8948dd99 src:dodatky/g-glosariy.md:19 status:no-external-signal -->
 ### T-G-011 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -438,7 +438,7 @@
 
 ---
 
-<!-- fc id:T-G-012 sha:a0b83b3c src:dodatky/g-glosariy.md:20 klas:E -->
+<!-- fc id:T-G-012 sha:a0b83b3c src:dodatky/g-glosariy.md:20 status:no-external-signal -->
 ### T-G-012 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -481,7 +481,7 @@
 
 ---
 
-<!-- fc id:T-G-013 sha:126a103f src:dodatky/g-glosariy.md:21 klas:E -->
+<!-- fc id:T-G-013 sha:126a103f src:dodatky/g-glosariy.md:21 status:no-external-signal -->
 ### T-G-013 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -524,7 +524,7 @@
 
 ---
 
-<!-- fc id:T-G-014 sha:ae7b5506 src:dodatky/g-glosariy.md:22 klas:B -->
+<!-- fc id:T-G-014 sha:ae7b5506 src:dodatky/g-glosariy.md:22 status:derived -->
 ### T-G-014 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -579,7 +579,7 @@
 
 ---
 
-<!-- fc id:T-G-015 sha:f62a2213 src:dodatky/g-glosariy.md:23 klas:B -->
+<!-- fc id:T-G-015 sha:f62a2213 src:dodatky/g-glosariy.md:23 status:derived -->
 ### T-G-015 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -634,7 +634,7 @@
 
 ---
 
-<!-- fc id:T-G-016 sha:074c03e7 src:dodatky/g-glosariy.md:24 klas:E -->
+<!-- fc id:T-G-016 sha:074c03e7 src:dodatky/g-glosariy.md:24 status:no-external-signal -->
 ### T-G-016 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -677,7 +677,7 @@
 
 ---
 
-<!-- fc id:T-G-017 sha:507f8fb0 src:dodatky/g-glosariy.md:25 klas:E -->
+<!-- fc id:T-G-017 sha:507f8fb0 src:dodatky/g-glosariy.md:25 status:no-external-signal -->
 ### T-G-017 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -720,7 +720,7 @@
 
 ---
 
-<!-- fc id:T-G-018 sha:f0cf4353 src:dodatky/g-glosariy.md:26 klas:F -->
+<!-- fc id:T-G-018 sha:f0cf4353 src:dodatky/g-glosariy.md:26 status:unchecked -->
 ### T-G-018 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -763,7 +763,7 @@
 
 ---
 
-<!-- fc id:T-G-019 sha:e0936b3c src:dodatky/g-glosariy.md:27 klas:E -->
+<!-- fc id:T-G-019 sha:e0936b3c src:dodatky/g-glosariy.md:27 status:no-external-signal -->
 ### T-G-019 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -806,7 +806,7 @@
 
 ---
 
-<!-- fc id:T-G-020 sha:649329e1 src:dodatky/g-glosariy.md:28 klas:E -->
+<!-- fc id:T-G-020 sha:649329e1 src:dodatky/g-glosariy.md:28 status:no-external-signal -->
 ### T-G-020 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -849,7 +849,7 @@
 
 ---
 
-<!-- fc id:T-G-021 sha:9ce910e6 src:dodatky/g-glosariy.md:29 klas:E -->
+<!-- fc id:T-G-021 sha:9ce910e6 src:dodatky/g-glosariy.md:29 status:no-external-signal -->
 ### T-G-021 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -892,7 +892,7 @@
 
 ---
 
-<!-- fc id:T-G-022 sha:1be9070b src:dodatky/g-glosariy.md:30 klas:E -->
+<!-- fc id:T-G-022 sha:1be9070b src:dodatky/g-glosariy.md:30 status:no-external-signal -->
 ### T-G-022 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -935,7 +935,7 @@
 
 ---
 
-<!-- fc id:T-G-023 sha:223d0269 src:dodatky/g-glosariy.md:31 klas:E -->
+<!-- fc id:T-G-023 sha:223d0269 src:dodatky/g-glosariy.md:31 status:no-external-signal -->
 ### T-G-023 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -978,7 +978,7 @@
 
 ---
 
-<!-- fc id:T-G-024 sha:ed9d6f40 src:dodatky/g-glosariy.md:37 klas:E -->
+<!-- fc id:T-G-024 sha:ed9d6f40 src:dodatky/g-glosariy.md:37 status:no-external-signal -->
 ### T-G-024 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1029,7 +1029,7 @@
 
 ---
 
-<!-- fc id:T-G-025 sha:c8145da9 src:dodatky/g-glosariy.md:39 klas:E -->
+<!-- fc id:T-G-025 sha:c8145da9 src:dodatky/g-glosariy.md:39 status:no-external-signal -->
 ### T-G-025 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1080,7 +1080,7 @@
 
 ---
 
-<!-- fc id:T-G-026 sha:85a4eb20 src:dodatky/g-glosariy.md:40 klas:E -->
+<!-- fc id:T-G-026 sha:85a4eb20 src:dodatky/g-glosariy.md:40 status:no-external-signal -->
 ### T-G-026 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1131,7 +1131,7 @@
 
 ---
 
-<!-- fc id:T-G-027 sha:2e5ec78e src:dodatky/g-glosariy.md:41 klas:E -->
+<!-- fc id:T-G-027 sha:2e5ec78e src:dodatky/g-glosariy.md:41 status:no-external-signal -->
 ### T-G-027 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1182,7 +1182,7 @@
 
 ---
 
-<!-- fc id:T-G-028 sha:9c8c694b src:dodatky/g-glosariy.md:42 klas:E -->
+<!-- fc id:T-G-028 sha:9c8c694b src:dodatky/g-glosariy.md:42 status:no-external-signal -->
 ### T-G-028 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1233,7 +1233,7 @@
 
 ---
 
-<!-- fc id:T-G-029 sha:24414511 src:dodatky/g-glosariy.md:43 klas:E -->
+<!-- fc id:T-G-029 sha:24414511 src:dodatky/g-glosariy.md:43 status:no-external-signal -->
 ### T-G-029 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1284,7 +1284,7 @@
 
 ---
 
-<!-- fc id:T-G-030 sha:dd551675 src:dodatky/g-glosariy.md:44 klas:E -->
+<!-- fc id:T-G-030 sha:dd551675 src:dodatky/g-glosariy.md:44 status:no-external-signal -->
 ### T-G-030 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1335,7 +1335,7 @@
 
 ---
 
-<!-- fc id:T-G-031 sha:670f88d3 src:dodatky/g-glosariy.md:45 klas:E -->
+<!-- fc id:T-G-031 sha:670f88d3 src:dodatky/g-glosariy.md:45 status:no-external-signal -->
 ### T-G-031 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1386,7 +1386,7 @@
 
 ---
 
-<!-- fc id:T-G-032 sha:61fc09d0 src:dodatky/g-glosariy.md:46 klas:E -->
+<!-- fc id:T-G-032 sha:61fc09d0 src:dodatky/g-glosariy.md:46 status:no-external-signal -->
 ### T-G-032 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1437,7 +1437,7 @@
 
 ---
 
-<!-- fc id:T-G-033 sha:722dc70f src:dodatky/g-glosariy.md:47 klas:E -->
+<!-- fc id:T-G-033 sha:722dc70f src:dodatky/g-glosariy.md:47 status:no-external-signal -->
 ### T-G-033 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1488,7 +1488,7 @@
 
 ---
 
-<!-- fc id:T-G-034 sha:544c97d0 src:dodatky/g-glosariy.md:48 klas:E -->
+<!-- fc id:T-G-034 sha:544c97d0 src:dodatky/g-glosariy.md:48 status:no-external-signal -->
 ### T-G-034 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1539,7 +1539,7 @@
 
 ---
 
-<!-- fc id:T-G-035 sha:ab90e283 src:dodatky/g-glosariy.md:49 klas:E -->
+<!-- fc id:T-G-035 sha:ab90e283 src:dodatky/g-glosariy.md:49 status:no-external-signal -->
 ### T-G-035 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1590,7 +1590,7 @@
 
 ---
 
-<!-- fc id:T-G-036 sha:146faf22 src:dodatky/g-glosariy.md:50 klas:A -->
+<!-- fc id:T-G-036 sha:146faf22 src:dodatky/g-glosariy.md:50 status:verbatim -->
 ### T-G-036 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1647,7 +1647,7 @@
 
 ---
 
-<!-- fc id:T-G-037 sha:1ae2965a src:dodatky/g-glosariy.md:51 klas:E -->
+<!-- fc id:T-G-037 sha:1ae2965a src:dodatky/g-glosariy.md:51 status:no-external-signal -->
 ### T-G-037 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1698,7 +1698,7 @@
 
 ---
 
-<!-- fc id:T-G-038 sha:19fa4a26 src:dodatky/g-glosariy.md:52 klas:E -->
+<!-- fc id:T-G-038 sha:19fa4a26 src:dodatky/g-glosariy.md:52 status:no-external-signal -->
 ### T-G-038 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1749,7 +1749,7 @@
 
 ---
 
-<!-- fc id:T-G-039 sha:c45a56ec src:dodatky/g-glosariy.md:53 klas:D -->
+<!-- fc id:T-G-039 sha:c45a56ec src:dodatky/g-glosariy.md:53 status:arithmetic -->
 ### T-G-039 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1820,7 +1820,7 @@
 
 ---
 
-<!-- fc id:T-G-040 sha:eea5d5d1 src:dodatky/g-glosariy.md:54 klas:E -->
+<!-- fc id:T-G-040 sha:eea5d5d1 src:dodatky/g-glosariy.md:54 status:no-external-signal -->
 ### T-G-040 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1871,7 +1871,7 @@
 
 ---
 
-<!-- fc id:T-G-041 sha:029c08df src:dodatky/g-glosariy.md:55 klas:E -->
+<!-- fc id:T-G-041 sha:029c08df src:dodatky/g-glosariy.md:55 status:no-external-signal -->
 ### T-G-041 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1922,7 +1922,7 @@
 
 ---
 
-<!-- fc id:T-G-042 sha:c535a64f src:dodatky/g-glosariy.md:56 klas:E -->
+<!-- fc id:T-G-042 sha:c535a64f src:dodatky/g-glosariy.md:56 status:no-external-signal -->
 ### T-G-042 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -1973,7 +1973,7 @@
 
 ---
 
-<!-- fc id:T-G-043 sha:05d77115 src:dodatky/g-glosariy.md:57 klas:E -->
+<!-- fc id:T-G-043 sha:05d77115 src:dodatky/g-glosariy.md:57 status:no-external-signal -->
 ### T-G-043 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2024,7 +2024,7 @@
 
 ---
 
-<!-- fc id:T-G-044 sha:2cd14ba5 src:dodatky/g-glosariy.md:58 klas:E -->
+<!-- fc id:T-G-044 sha:2cd14ba5 src:dodatky/g-glosariy.md:58 status:no-external-signal -->
 ### T-G-044 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2075,7 +2075,7 @@
 
 ---
 
-<!-- fc id:T-G-045 sha:d198ef2a src:dodatky/g-glosariy.md:59 klas:E -->
+<!-- fc id:T-G-045 sha:d198ef2a src:dodatky/g-glosariy.md:59 status:no-external-signal -->
 ### T-G-045 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2126,7 +2126,7 @@
 
 ---
 
-<!-- fc id:T-G-046 sha:343f90a3 src:dodatky/g-glosariy.md:60 klas:E -->
+<!-- fc id:T-G-046 sha:343f90a3 src:dodatky/g-glosariy.md:60 status:no-external-signal -->
 ### T-G-046 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2177,7 +2177,7 @@
 
 ---
 
-<!-- fc id:T-G-047 sha:6314ef2a src:dodatky/g-glosariy.md:61 klas:E -->
+<!-- fc id:T-G-047 sha:6314ef2a src:dodatky/g-glosariy.md:61 status:no-external-signal -->
 ### T-G-047 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2228,7 +2228,7 @@
 
 ---
 
-<!-- fc id:T-G-048 sha:c2919446 src:dodatky/g-glosariy.md:62 klas:E -->
+<!-- fc id:T-G-048 sha:c2919446 src:dodatky/g-glosariy.md:62 status:no-external-signal -->
 ### T-G-048 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2279,7 +2279,7 @@
 
 ---
 
-<!-- fc id:T-G-049 sha:6a64a4fa src:dodatky/g-glosariy.md:63 klas:E -->
+<!-- fc id:T-G-049 sha:6a64a4fa src:dodatky/g-glosariy.md:63 status:no-external-signal -->
 ### T-G-049 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2330,7 +2330,7 @@
 
 ---
 
-<!-- fc id:T-G-050 sha:7c0ec3a3 src:dodatky/g-glosariy.md:64 klas:E -->
+<!-- fc id:T-G-050 sha:7c0ec3a3 src:dodatky/g-glosariy.md:64 status:no-external-signal -->
 ### T-G-050 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2381,7 +2381,7 @@
 
 ---
 
-<!-- fc id:T-G-051 sha:ed66d256 src:dodatky/g-glosariy.md:65 klas:E -->
+<!-- fc id:T-G-051 sha:ed66d256 src:dodatky/g-glosariy.md:65 status:no-external-signal -->
 ### T-G-051 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2432,7 +2432,7 @@
 
 ---
 
-<!-- fc id:T-G-052 sha:0c2c2590 src:dodatky/g-glosariy.md:66 klas:E -->
+<!-- fc id:T-G-052 sha:0c2c2590 src:dodatky/g-glosariy.md:66 status:no-external-signal -->
 ### T-G-052 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2483,7 +2483,7 @@
 
 ---
 
-<!-- fc id:T-G-053 sha:ed9d6f40 src:dodatky/g-glosariy.md:70 klas:E -->
+<!-- fc id:T-G-053 sha:ed9d6f40 src:dodatky/g-glosariy.md:70 status:no-external-signal -->
 ### T-G-053 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2539,7 +2539,7 @@
 
 ---
 
-<!-- fc id:T-G-054 sha:20ddcdd5 src:dodatky/g-glosariy.md:72 klas:A -->
+<!-- fc id:T-G-054 sha:20ddcdd5 src:dodatky/g-glosariy.md:72 status:verbatim -->
 ### T-G-054 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2601,7 +2601,7 @@
 
 ---
 
-<!-- fc id:T-G-055 sha:f55addda src:dodatky/g-glosariy.md:73 klas:A -->
+<!-- fc id:T-G-055 sha:f55addda src:dodatky/g-glosariy.md:73 status:verbatim -->
 ### T-G-055 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2663,7 +2663,7 @@
 
 ---
 
-<!-- fc id:T-G-056 sha:6fc38c15 src:dodatky/g-glosariy.md:74 klas:A -->
+<!-- fc id:T-G-056 sha:6fc38c15 src:dodatky/g-glosariy.md:74 status:verbatim -->
 ### T-G-056 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2725,7 +2725,7 @@
 
 ---
 
-<!-- fc id:T-G-057 sha:ef4ea3a7 src:dodatky/g-glosariy.md:75 klas:E -->
+<!-- fc id:T-G-057 sha:ef4ea3a7 src:dodatky/g-glosariy.md:75 status:no-external-signal -->
 ### T-G-057 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2781,7 +2781,7 @@
 
 ---
 
-<!-- fc id:T-G-058 sha:752bd5f0 src:dodatky/g-glosariy.md:76 klas:E -->
+<!-- fc id:T-G-058 sha:752bd5f0 src:dodatky/g-glosariy.md:76 status:no-external-signal -->
 ### T-G-058 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2837,7 +2837,7 @@
 
 ---
 
-<!-- fc id:T-G-059 sha:3cf94432 src:dodatky/g-glosariy.md:77 klas:E -->
+<!-- fc id:T-G-059 sha:3cf94432 src:dodatky/g-glosariy.md:77 status:no-external-signal -->
 ### T-G-059 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2893,7 +2893,7 @@
 
 ---
 
-<!-- fc id:T-G-060 sha:0a691e32 src:dodatky/g-glosariy.md:78 klas:E -->
+<!-- fc id:T-G-060 sha:0a691e32 src:dodatky/g-glosariy.md:78 status:no-external-signal -->
 ### T-G-060 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2949,7 +2949,7 @@
 
 ---
 
-<!-- fc id:T-G-061 sha:bb807264 src:dodatky/g-glosariy.md:79 klas:A -->
+<!-- fc id:T-G-061 sha:bb807264 src:dodatky/g-glosariy.md:79 status:verbatim -->
 ### T-G-061 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3011,7 +3011,7 @@
 
 ---
 
-<!-- fc id:T-G-062 sha:80b8bb3a src:dodatky/g-glosariy.md:80 klas:A -->
+<!-- fc id:T-G-062 sha:80b8bb3a src:dodatky/g-glosariy.md:80 status:verbatim -->
 ### T-G-062 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3073,7 +3073,7 @@
 
 ---
 
-<!-- fc id:T-G-063 sha:274527f7 src:dodatky/g-glosariy.md:81 klas:A -->
+<!-- fc id:T-G-063 sha:274527f7 src:dodatky/g-glosariy.md:81 status:verbatim -->
 ### T-G-063 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3135,7 +3135,7 @@
 
 ---
 
-<!-- fc id:T-G-064 sha:2e8ce884 src:dodatky/g-glosariy.md:82 klas:A -->
+<!-- fc id:T-G-064 sha:2e8ce884 src:dodatky/g-glosariy.md:82 status:verbatim -->
 ### T-G-064 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3197,7 +3197,7 @@
 
 ---
 
-<!-- fc id:T-G-065 sha:23345d26 src:dodatky/g-glosariy.md:83 klas:A -->
+<!-- fc id:T-G-065 sha:23345d26 src:dodatky/g-glosariy.md:83 status:verbatim -->
 ### T-G-065 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3259,7 +3259,7 @@
 
 ---
 
-<!-- fc id:T-G-066 sha:e7bdf88a src:dodatky/g-glosariy.md:84 klas:A -->
+<!-- fc id:T-G-066 sha:e7bdf88a src:dodatky/g-glosariy.md:84 status:verbatim -->
 ### T-G-066 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3321,7 +3321,7 @@
 
 ---
 
-<!-- fc id:T-G-067 sha:e76d92ed src:dodatky/g-glosariy.md:85 klas:E -->
+<!-- fc id:T-G-067 sha:e76d92ed src:dodatky/g-glosariy.md:85 status:no-external-signal -->
 ### T-G-067 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3377,7 +3377,7 @@
 
 ---
 
-<!-- fc id:T-G-068 sha:b381190a src:dodatky/g-glosariy.md:86 klas:A -->
+<!-- fc id:T-G-068 sha:b381190a src:dodatky/g-glosariy.md:86 status:verbatim -->
 ### T-G-068 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3439,7 +3439,7 @@
 
 ---
 
-<!-- fc id:T-G-069 sha:b7608490 src:dodatky/g-glosariy.md:87 klas:E -->
+<!-- fc id:T-G-069 sha:b7608490 src:dodatky/g-glosariy.md:87 status:no-external-signal -->
 ### T-G-069 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3495,7 +3495,7 @@
 
 ---
 
-<!-- fc id:T-G-070 sha:551f703b src:dodatky/g-glosariy.md:88 klas:E -->
+<!-- fc id:T-G-070 sha:551f703b src:dodatky/g-glosariy.md:88 status:no-external-signal -->
 ### T-G-070 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3551,7 +3551,7 @@
 
 ---
 
-<!-- fc id:T-G-071 sha:959a0501 src:dodatky/g-glosariy.md:89 klas:E -->
+<!-- fc id:T-G-071 sha:959a0501 src:dodatky/g-glosariy.md:89 status:no-external-signal -->
 ### T-G-071 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3607,7 +3607,7 @@
 
 ---
 
-<!-- fc id:T-G-072 sha:3b37a582 src:dodatky/g-glosariy.md:90 klas:E -->
+<!-- fc id:T-G-072 sha:3b37a582 src:dodatky/g-glosariy.md:90 status:no-external-signal -->
 ### T-G-072 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3663,7 +3663,7 @@
 
 ---
 
-<!-- fc id:T-G-073 sha:9e63d65a src:dodatky/g-glosariy.md:91 klas:E -->
+<!-- fc id:T-G-073 sha:9e63d65a src:dodatky/g-glosariy.md:91 status:no-external-signal -->
 ### T-G-073 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3719,7 +3719,7 @@
 
 ---
 
-<!-- fc id:T-G-074 sha:22c3b24f src:dodatky/g-glosariy.md:92 klas:A -->
+<!-- fc id:T-G-074 sha:22c3b24f src:dodatky/g-glosariy.md:92 status:verbatim -->
 ### T-G-074 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3781,7 +3781,7 @@
 
 ---
 
-<!-- fc id:T-G-075 sha:7b0ed631 src:dodatky/g-glosariy.md:93 klas:E -->
+<!-- fc id:T-G-075 sha:7b0ed631 src:dodatky/g-glosariy.md:93 status:no-external-signal -->
 ### T-G-075 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3837,7 +3837,7 @@
 
 ---
 
-<!-- fc id:T-G-076 sha:154baa32 src:dodatky/g-glosariy.md:94 klas:A -->
+<!-- fc id:T-G-076 sha:154baa32 src:dodatky/g-glosariy.md:94 status:verbatim -->
 ### T-G-076 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3899,7 +3899,7 @@
 
 ---
 
-<!-- fc id:T-G-077 sha:a6609781 src:dodatky/g-glosariy.md:95 klas:A -->
+<!-- fc id:T-G-077 sha:a6609781 src:dodatky/g-glosariy.md:95 status:verbatim -->
 ### T-G-077 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -3961,7 +3961,7 @@
 
 ---
 
-<!-- fc id:T-G-078 sha:147df72c src:dodatky/g-glosariy.md:96 klas:E -->
+<!-- fc id:T-G-078 sha:147df72c src:dodatky/g-glosariy.md:96 status:no-external-signal -->
 ### T-G-078 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4017,7 +4017,7 @@
 
 ---
 
-<!-- fc id:T-G-079 sha:90e146c5 src:dodatky/g-glosariy.md:97 klas:E -->
+<!-- fc id:T-G-079 sha:90e146c5 src:dodatky/g-glosariy.md:97 status:no-external-signal -->
 ### T-G-079 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4073,7 +4073,7 @@
 
 ---
 
-<!-- fc id:T-G-080 sha:7d7fd99e src:dodatky/g-glosariy.md:98 klas:E -->
+<!-- fc id:T-G-080 sha:7d7fd99e src:dodatky/g-glosariy.md:98 status:no-external-signal -->
 ### T-G-080 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4129,7 +4129,7 @@
 
 ---
 
-<!-- fc id:T-G-081 sha:81c90646 src:dodatky/g-glosariy.md:99 klas:E -->
+<!-- fc id:T-G-081 sha:81c90646 src:dodatky/g-glosariy.md:99 status:no-external-signal -->
 ### T-G-081 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4185,7 +4185,7 @@
 
 ---
 
-<!-- fc id:T-G-082 sha:67de37ec src:dodatky/g-glosariy.md:100 klas:E -->
+<!-- fc id:T-G-082 sha:67de37ec src:dodatky/g-glosariy.md:100 status:no-external-signal -->
 ### T-G-082 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4241,7 +4241,7 @@
 
 ---
 
-<!-- fc id:T-G-083 sha:c218441d src:dodatky/g-glosariy.md:101 klas:E -->
+<!-- fc id:T-G-083 sha:c218441d src:dodatky/g-glosariy.md:101 status:no-external-signal -->
 ### T-G-083 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4297,7 +4297,7 @@
 
 ---
 
-<!-- fc id:T-G-084 sha:661a7e02 src:dodatky/g-glosariy.md:102 klas:E -->
+<!-- fc id:T-G-084 sha:661a7e02 src:dodatky/g-glosariy.md:102 status:no-external-signal -->
 ### T-G-084 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4353,7 +4353,7 @@
 
 ---
 
-<!-- fc id:T-G-085 sha:1711b8b0 src:dodatky/g-glosariy.md:103 klas:A -->
+<!-- fc id:T-G-085 sha:1711b8b0 src:dodatky/g-glosariy.md:103 status:verbatim -->
 ### T-G-085 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4415,7 +4415,7 @@
 
 ---
 
-<!-- fc id:T-G-086 sha:188313db src:dodatky/g-glosariy.md:104 klas:E -->
+<!-- fc id:T-G-086 sha:188313db src:dodatky/g-glosariy.md:104 status:no-external-signal -->
 ### T-G-086 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4471,7 +4471,7 @@
 
 ---
 
-<!-- fc id:T-G-087 sha:ed9d6f40 src:dodatky/g-glosariy.md:108 klas:E -->
+<!-- fc id:T-G-087 sha:ed9d6f40 src:dodatky/g-glosariy.md:108 status:no-external-signal -->
 ### T-G-087 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4513,7 +4513,7 @@
 
 ---
 
-<!-- fc id:T-G-088 sha:8ac2c754 src:dodatky/g-glosariy.md:110 klas:A -->
+<!-- fc id:T-G-088 sha:8ac2c754 src:dodatky/g-glosariy.md:110 status:verbatim -->
 ### T-G-088 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4561,7 +4561,7 @@
 
 ---
 
-<!-- fc id:T-G-089 sha:5f552a6d src:dodatky/g-glosariy.md:111 klas:A -->
+<!-- fc id:T-G-089 sha:5f552a6d src:dodatky/g-glosariy.md:111 status:verbatim -->
 ### T-G-089 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4609,7 +4609,7 @@
 
 ---
 
-<!-- fc id:T-G-090 sha:8f3df2fa src:dodatky/g-glosariy.md:112 klas:A -->
+<!-- fc id:T-G-090 sha:8f3df2fa src:dodatky/g-glosariy.md:112 status:verbatim -->
 ### T-G-090 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4657,7 +4657,7 @@
 
 ---
 
-<!-- fc id:T-G-091 sha:565d48c2 src:dodatky/g-glosariy.md:113 klas:A -->
+<!-- fc id:T-G-091 sha:565d48c2 src:dodatky/g-glosariy.md:113 status:verbatim -->
 ### T-G-091 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4705,7 +4705,7 @@
 
 ---
 
-<!-- fc id:T-G-092 sha:422851f9 src:dodatky/g-glosariy.md:114 klas:E -->
+<!-- fc id:T-G-092 sha:422851f9 src:dodatky/g-glosariy.md:114 status:no-external-signal -->
 ### T-G-092 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4747,7 +4747,7 @@
 
 ---
 
-<!-- fc id:T-G-093 sha:f272ef20 src:dodatky/g-glosariy.md:115 klas:E -->
+<!-- fc id:T-G-093 sha:f272ef20 src:dodatky/g-glosariy.md:115 status:no-external-signal -->
 ### T-G-093 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4789,7 +4789,7 @@
 
 ---
 
-<!-- fc id:T-G-094 sha:b892bd1e src:dodatky/g-glosariy.md:116 klas:A -->
+<!-- fc id:T-G-094 sha:b892bd1e src:dodatky/g-glosariy.md:116 status:verbatim -->
 ### T-G-094 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4837,7 +4837,7 @@
 
 ---
 
-<!-- fc id:T-G-095 sha:5fedc62c src:dodatky/g-glosariy.md:117 klas:A -->
+<!-- fc id:T-G-095 sha:5fedc62c src:dodatky/g-glosariy.md:117 status:verbatim -->
 ### T-G-095 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4885,7 +4885,7 @@
 
 ---
 
-<!-- fc id:T-G-096 sha:46f675bf src:dodatky/g-glosariy.md:118 klas:E -->
+<!-- fc id:T-G-096 sha:46f675bf src:dodatky/g-glosariy.md:118 status:no-external-signal -->
 ### T-G-096 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4927,7 +4927,7 @@
 
 ---
 
-<!-- fc id:T-G-097 sha:e9cab881 src:dodatky/g-glosariy.md:119 klas:E -->
+<!-- fc id:T-G-097 sha:e9cab881 src:dodatky/g-glosariy.md:119 status:no-external-signal -->
 ### T-G-097 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4969,7 +4969,7 @@
 
 ---
 
-<!-- fc id:T-G-098 sha:6dfcdfba src:dodatky/g-glosariy.md:120 klas:A -->
+<!-- fc id:T-G-098 sha:6dfcdfba src:dodatky/g-glosariy.md:120 status:verbatim -->
 ### T-G-098 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5017,7 +5017,7 @@
 
 ---
 
-<!-- fc id:T-G-099 sha:3dac51ed src:dodatky/g-glosariy.md:121 klas:A -->
+<!-- fc id:T-G-099 sha:3dac51ed src:dodatky/g-glosariy.md:121 status:verbatim -->
 ### T-G-099 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5065,7 +5065,7 @@
 
 ---
 
-<!-- fc id:T-G-100 sha:f5029421 src:dodatky/g-glosariy.md:122 klas:A -->
+<!-- fc id:T-G-100 sha:f5029421 src:dodatky/g-glosariy.md:122 status:verbatim -->
 ### T-G-100 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5113,7 +5113,7 @@
 
 ---
 
-<!-- fc id:T-G-101 sha:0383b98e src:dodatky/g-glosariy.md:123 klas:A -->
+<!-- fc id:T-G-101 sha:0383b98e src:dodatky/g-glosariy.md:123 status:verbatim -->
 ### T-G-101 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5161,7 +5161,7 @@
 
 ---
 
-<!-- fc id:T-G-102 sha:1b7c5a94 src:dodatky/g-glosariy.md:124 klas:A -->
+<!-- fc id:T-G-102 sha:1b7c5a94 src:dodatky/g-glosariy.md:124 status:verbatim -->
 ### T-G-102 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5209,7 +5209,7 @@
 
 ---
 
-<!-- fc id:T-G-103 sha:db3539cb src:dodatky/g-glosariy.md:125 klas:A -->
+<!-- fc id:T-G-103 sha:db3539cb src:dodatky/g-glosariy.md:125 status:verbatim -->
 ### T-G-103 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5257,7 +5257,7 @@
 
 ---
 
-<!-- fc id:T-G-104 sha:b535fc91 src:dodatky/g-glosariy.md:126 klas:A -->
+<!-- fc id:T-G-104 sha:b535fc91 src:dodatky/g-glosariy.md:126 status:verbatim -->
 ### T-G-104 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5305,7 +5305,7 @@
 
 ---
 
-<!-- fc id:T-G-105 sha:e3c11759 src:dodatky/g-glosariy.md:127 klas:E -->
+<!-- fc id:T-G-105 sha:e3c11759 src:dodatky/g-glosariy.md:127 status:no-external-signal -->
 ### T-G-105 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5347,7 +5347,7 @@
 
 ---
 
-<!-- fc id:T-G-106 sha:64962ef3 src:dodatky/g-glosariy.md:128 klas:E -->
+<!-- fc id:T-G-106 sha:64962ef3 src:dodatky/g-glosariy.md:128 status:no-external-signal -->
 ### T-G-106 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5389,7 +5389,7 @@
 
 ---
 
-<!-- fc id:T-G-107 sha:ed9d6f40 src:dodatky/g-glosariy.md:132 klas:E -->
+<!-- fc id:T-G-107 sha:ed9d6f40 src:dodatky/g-glosariy.md:132 status:no-external-signal -->
 ### T-G-107 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5430,7 +5430,7 @@
 
 ---
 
-<!-- fc id:T-G-108 sha:68f2064c src:dodatky/g-glosariy.md:134 klas:A -->
+<!-- fc id:T-G-108 sha:68f2064c src:dodatky/g-glosariy.md:134 status:verbatim -->
 ### T-G-108 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5477,7 +5477,7 @@
 
 ---
 
-<!-- fc id:T-G-109 sha:28523d7f src:dodatky/g-glosariy.md:135 klas:A -->
+<!-- fc id:T-G-109 sha:28523d7f src:dodatky/g-glosariy.md:135 status:verbatim -->
 ### T-G-109 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5524,7 +5524,7 @@
 
 ---
 
-<!-- fc id:T-G-110 sha:e77a36cc src:dodatky/g-glosariy.md:136 klas:E -->
+<!-- fc id:T-G-110 sha:e77a36cc src:dodatky/g-glosariy.md:136 status:no-external-signal -->
 ### T-G-110 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5576,7 +5576,7 @@
 
 ---
 
-<!-- fc id:T-G-111 sha:737f4aed src:dodatky/g-glosariy.md:137 klas:A -->
+<!-- fc id:T-G-111 sha:737f4aed src:dodatky/g-glosariy.md:137 status:verbatim -->
 ### T-G-111 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5623,7 +5623,7 @@
 
 ---
 
-<!-- fc id:T-G-112 sha:764966f8 src:dodatky/g-glosariy.md:138 klas:E -->
+<!-- fc id:T-G-112 sha:764966f8 src:dodatky/g-glosariy.md:138 status:no-external-signal -->
 ### T-G-112 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5664,7 +5664,7 @@
 
 ---
 
-<!-- fc id:T-G-113 sha:b5110e52 src:dodatky/g-glosariy.md:139 klas:E -->
+<!-- fc id:T-G-113 sha:b5110e52 src:dodatky/g-glosariy.md:139 status:no-external-signal -->
 ### T-G-113 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5705,7 +5705,7 @@
 
 ---
 
-<!-- fc id:T-G-114 sha:bdf4f185 src:dodatky/g-glosariy.md:140 klas:E -->
+<!-- fc id:T-G-114 sha:bdf4f185 src:dodatky/g-glosariy.md:140 status:no-external-signal -->
 ### T-G-114 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5746,7 +5746,7 @@
 
 ---
 
-<!-- fc id:T-G-115 sha:3fd82a44 src:dodatky/g-glosariy.md:141 klas:E -->
+<!-- fc id:T-G-115 sha:3fd82a44 src:dodatky/g-glosariy.md:141 status:no-external-signal -->
 ### T-G-115 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5787,7 +5787,7 @@
 
 ---
 
-<!-- fc id:T-G-116 sha:705e4498 src:dodatky/g-glosariy.md:142 klas:A -->
+<!-- fc id:T-G-116 sha:705e4498 src:dodatky/g-glosariy.md:142 status:verbatim -->
 ### T-G-116 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5834,7 +5834,7 @@
 
 ---
 
-<!-- fc id:T-G-117 sha:d39addb6 src:dodatky/g-glosariy.md:143 klas:A -->
+<!-- fc id:T-G-117 sha:d39addb6 src:dodatky/g-glosariy.md:143 status:verbatim -->
 ### T-G-117 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5881,7 +5881,7 @@
 
 ---
 
-<!-- fc id:T-G-118 sha:585a554e src:dodatky/g-glosariy.md:144 klas:A -->
+<!-- fc id:T-G-118 sha:585a554e src:dodatky/g-glosariy.md:144 status:verbatim -->
 ### T-G-118 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5928,7 +5928,7 @@
 
 ---
 
-<!-- fc id:T-G-119 sha:a2434656 src:dodatky/g-glosariy.md:145 klas:A -->
+<!-- fc id:T-G-119 sha:a2434656 src:dodatky/g-glosariy.md:145 status:verbatim -->
 ### T-G-119 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5975,7 +5975,7 @@
 
 ---
 
-<!-- fc id:T-G-120 sha:ca2d006a src:dodatky/g-glosariy.md:146 klas:A -->
+<!-- fc id:T-G-120 sha:ca2d006a src:dodatky/g-glosariy.md:146 status:verbatim -->
 ### T-G-120 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6022,7 +6022,7 @@
 
 ---
 
-<!-- fc id:T-G-121 sha:24facb96 src:dodatky/g-glosariy.md:147 klas:A -->
+<!-- fc id:T-G-121 sha:24facb96 src:dodatky/g-glosariy.md:147 status:verbatim -->
 ### T-G-121 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6069,7 +6069,7 @@
 
 ---
 
-<!-- fc id:T-G-122 sha:642d03b7 src:dodatky/g-glosariy.md:148 klas:E -->
+<!-- fc id:T-G-122 sha:642d03b7 src:dodatky/g-glosariy.md:148 status:no-external-signal -->
 ### T-G-122 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6110,7 +6110,7 @@
 
 ---
 
-<!-- fc id:T-G-123 sha:952f61d2 src:dodatky/g-glosariy.md:149 klas:E -->
+<!-- fc id:T-G-123 sha:952f61d2 src:dodatky/g-glosariy.md:149 status:no-external-signal -->
 ### T-G-123 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6151,7 +6151,7 @@
 
 ---
 
-<!-- fc id:T-G-124 sha:8c0e0166 src:dodatky/g-glosariy.md:150 klas:E -->
+<!-- fc id:T-G-124 sha:8c0e0166 src:dodatky/g-glosariy.md:150 status:no-external-signal -->
 ### T-G-124 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6192,7 +6192,7 @@
 
 ---
 
-<!-- fc id:T-G-125 sha:c477103c src:dodatky/g-glosariy.md:151 klas:E -->
+<!-- fc id:T-G-125 sha:c477103c src:dodatky/g-glosariy.md:151 status:no-external-signal -->
 ### T-G-125 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6233,7 +6233,7 @@
 
 ---
 
-<!-- fc id:T-G-126 sha:ed9d6f40 src:dodatky/g-glosariy.md:155 klas:E -->
+<!-- fc id:T-G-126 sha:ed9d6f40 src:dodatky/g-glosariy.md:155 status:no-external-signal -->
 ### T-G-126 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6268,7 +6268,7 @@
 
 ---
 
-<!-- fc id:T-G-127 sha:aac8e2f7 src:dodatky/g-glosariy.md:157 klas:E -->
+<!-- fc id:T-G-127 sha:aac8e2f7 src:dodatky/g-glosariy.md:157 status:no-external-signal -->
 ### T-G-127 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6303,7 +6303,7 @@
 
 ---
 
-<!-- fc id:T-G-128 sha:7a3d2f57 src:dodatky/g-glosariy.md:158 klas:E -->
+<!-- fc id:T-G-128 sha:7a3d2f57 src:dodatky/g-glosariy.md:158 status:no-external-signal -->
 ### T-G-128 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6338,7 +6338,7 @@
 
 ---
 
-<!-- fc id:T-G-129 sha:cd7f396f src:dodatky/g-glosariy.md:159 klas:E -->
+<!-- fc id:T-G-129 sha:cd7f396f src:dodatky/g-glosariy.md:159 status:no-external-signal -->
 ### T-G-129 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6373,7 +6373,7 @@
 
 ---
 
-<!-- fc id:T-G-130 sha:c691f10d src:dodatky/g-glosariy.md:160 klas:E -->
+<!-- fc id:T-G-130 sha:c691f10d src:dodatky/g-glosariy.md:160 status:no-external-signal -->
 ### T-G-130 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6408,7 +6408,7 @@
 
 ---
 
-<!-- fc id:T-G-131 sha:de393be7 src:dodatky/g-glosariy.md:161 klas:E -->
+<!-- fc id:T-G-131 sha:de393be7 src:dodatky/g-glosariy.md:161 status:no-external-signal -->
 ### T-G-131 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6443,7 +6443,7 @@
 
 ---
 
-<!-- fc id:T-G-132 sha:0d4462e2 src:dodatky/g-glosariy.md:162 klas:E -->
+<!-- fc id:T-G-132 sha:0d4462e2 src:dodatky/g-glosariy.md:162 status:no-external-signal -->
 ### T-G-132 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6478,7 +6478,7 @@
 
 ---
 
-<!-- fc id:T-G-133 sha:3c751fbb src:dodatky/g-glosariy.md:163 klas:E -->
+<!-- fc id:T-G-133 sha:3c751fbb src:dodatky/g-glosariy.md:163 status:no-external-signal -->
 ### T-G-133 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6513,7 +6513,7 @@
 
 ---
 
-<!-- fc id:T-G-134 sha:f6c71ba7 src:dodatky/g-glosariy.md:164 klas:E -->
+<!-- fc id:T-G-134 sha:f6c71ba7 src:dodatky/g-glosariy.md:164 status:no-external-signal -->
 ### T-G-134 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6548,7 +6548,7 @@
 
 ---
 
-<!-- fc id:T-G-135 sha:4ed5ef1a src:dodatky/g-glosariy.md:165 klas:E -->
+<!-- fc id:T-G-135 sha:4ed5ef1a src:dodatky/g-glosariy.md:165 status:no-external-signal -->
 ### T-G-135 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6583,7 +6583,7 @@
 
 ---
 
-<!-- fc id:T-G-136 sha:8e37f679 src:dodatky/g-glosariy.md:166 klas:E -->
+<!-- fc id:T-G-136 sha:8e37f679 src:dodatky/g-glosariy.md:166 status:no-external-signal -->
 ### T-G-136 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6618,7 +6618,7 @@
 
 ---
 
-<!-- fc id:T-G-137 sha:beb59dd7 src:dodatky/g-glosariy.md:167 klas:E -->
+<!-- fc id:T-G-137 sha:beb59dd7 src:dodatky/g-glosariy.md:167 status:no-external-signal -->
 ### T-G-137 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6653,7 +6653,7 @@
 
 ---
 
-<!-- fc id:T-G-138 sha:324e903a src:dodatky/g-glosariy.md:168 klas:E -->
+<!-- fc id:T-G-138 sha:324e903a src:dodatky/g-glosariy.md:168 status:no-external-signal -->
 ### T-G-138 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6688,7 +6688,7 @@
 
 ---
 
-<!-- fc id:T-G-139 sha:51221672 src:dodatky/g-glosariy.md:172 klas:E -->
+<!-- fc id:T-G-139 sha:51221672 src:dodatky/g-glosariy.md:172 status:no-external-signal -->
 ### T-G-139 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6741,7 +6741,7 @@
 
 ---
 
-<!-- fc id:T-G-140 sha:280d61b2 src:dodatky/g-glosariy.md:174 klas:E -->
+<!-- fc id:T-G-140 sha:280d61b2 src:dodatky/g-glosariy.md:174 status:no-external-signal -->
 ### T-G-140 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6794,7 +6794,7 @@
 
 ---
 
-<!-- fc id:T-G-141 sha:76955507 src:dodatky/g-glosariy.md:175 klas:A -->
+<!-- fc id:T-G-141 sha:76955507 src:dodatky/g-glosariy.md:175 status:verbatim -->
 ### T-G-141 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6853,7 +6853,7 @@
 
 ---
 
-<!-- fc id:T-G-142 sha:cb6ba9e9 src:dodatky/g-glosariy.md:176 klas:A -->
+<!-- fc id:T-G-142 sha:cb6ba9e9 src:dodatky/g-glosariy.md:176 status:verbatim -->
 ### T-G-142 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6912,7 +6912,7 @@
 
 ---
 
-<!-- fc id:T-G-143 sha:1c6ed020 src:dodatky/g-glosariy.md:177 klas:E -->
+<!-- fc id:T-G-143 sha:1c6ed020 src:dodatky/g-glosariy.md:177 status:no-external-signal -->
 ### T-G-143 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6965,7 +6965,7 @@
 
 ---
 
-<!-- fc id:T-G-144 sha:5f262c66 src:dodatky/g-glosariy.md:178 klas:F -->
+<!-- fc id:T-G-144 sha:5f262c66 src:dodatky/g-glosariy.md:178 status:unchecked -->
 ### T-G-144 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7018,7 +7018,7 @@
 
 ---
 
-<!-- fc id:T-G-145 sha:085325db src:dodatky/g-glosariy.md:179 klas:A -->
+<!-- fc id:T-G-145 sha:085325db src:dodatky/g-glosariy.md:179 status:verbatim -->
 ### T-G-145 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7077,7 +7077,7 @@
 
 ---
 
-<!-- fc id:T-G-146 sha:d1f5a6a0 src:dodatky/g-glosariy.md:180 klas:A -->
+<!-- fc id:T-G-146 sha:d1f5a6a0 src:dodatky/g-glosariy.md:180 status:verbatim -->
 ### T-G-146 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7136,7 +7136,7 @@
 
 ---
 
-<!-- fc id:T-G-147 sha:a9fca5a8 src:dodatky/g-glosariy.md:181 klas:A -->
+<!-- fc id:T-G-147 sha:a9fca5a8 src:dodatky/g-glosariy.md:181 status:verbatim -->
 ### T-G-147 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7195,7 +7195,7 @@
 
 ---
 
-<!-- fc id:T-G-148 sha:871bcf91 src:dodatky/g-glosariy.md:182 klas:F -->
+<!-- fc id:T-G-148 sha:871bcf91 src:dodatky/g-glosariy.md:182 status:unchecked -->
 ### T-G-148 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7248,7 +7248,7 @@
 
 ---
 
-<!-- fc id:T-G-149 sha:06253452 src:dodatky/g-glosariy.md:183 klas:F -->
+<!-- fc id:T-G-149 sha:06253452 src:dodatky/g-glosariy.md:183 status:unchecked -->
 ### T-G-149 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7301,7 +7301,7 @@
 
 ---
 
-<!-- fc id:T-G-150 sha:31bacf9f src:dodatky/g-glosariy.md:184 klas:A -->
+<!-- fc id:T-G-150 sha:31bacf9f src:dodatky/g-glosariy.md:184 status:verbatim -->
 ### T-G-150 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7360,7 +7360,7 @@
 
 ---
 
-<!-- fc id:T-G-151 sha:45d218a9 src:dodatky/g-glosariy.md:185 klas:F -->
+<!-- fc id:T-G-151 sha:45d218a9 src:dodatky/g-glosariy.md:185 status:unchecked -->
 ### T-G-151 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7413,7 +7413,7 @@
 
 ---
 
-<!-- fc id:T-G-152 sha:24ceae0d src:dodatky/g-glosariy.md:186 klas:F -->
+<!-- fc id:T-G-152 sha:24ceae0d src:dodatky/g-glosariy.md:186 status:unchecked -->
 ### T-G-152 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7466,7 +7466,7 @@
 
 ---
 
-<!-- fc id:T-G-153 sha:fd0801cd src:dodatky/g-glosariy.md:187 klas:A -->
+<!-- fc id:T-G-153 sha:fd0801cd src:dodatky/g-glosariy.md:187 status:verbatim -->
 ### T-G-153 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7525,7 +7525,7 @@
 
 ---
 
-<!-- fc id:T-G-154 sha:8ae7d5f2 src:dodatky/g-glosariy.md:188 klas:A -->
+<!-- fc id:T-G-154 sha:8ae7d5f2 src:dodatky/g-glosariy.md:188 status:verbatim -->
 ### T-G-154 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7587,7 +7587,7 @@
 
 ---
 
-<!-- fc id:T-G-155 sha:92ee8915 src:dodatky/g-glosariy.md:189 klas:A -->
+<!-- fc id:T-G-155 sha:92ee8915 src:dodatky/g-glosariy.md:189 status:verbatim -->
 ### T-G-155 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7646,7 +7646,7 @@
 
 ---
 
-<!-- fc id:T-G-156 sha:18536c4a src:dodatky/g-glosariy.md:190 klas:E -->
+<!-- fc id:T-G-156 sha:18536c4a src:dodatky/g-glosariy.md:190 status:no-external-signal -->
 ### T-G-156 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7699,7 +7699,7 @@
 
 ---
 
-<!-- fc id:T-G-157 sha:57dae4db src:dodatky/g-glosariy.md:191 klas:E -->
+<!-- fc id:T-G-157 sha:57dae4db src:dodatky/g-glosariy.md:191 status:no-external-signal -->
 ### T-G-157 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7752,7 +7752,7 @@
 
 ---
 
-<!-- fc id:T-G-158 sha:3f980c2e src:dodatky/g-glosariy.md:192 klas:E -->
+<!-- fc id:T-G-158 sha:3f980c2e src:dodatky/g-glosariy.md:192 status:no-external-signal -->
 ### T-G-158 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7805,7 +7805,7 @@
 
 ---
 
-<!-- fc id:T-G-159 sha:f0f64376 src:dodatky/g-glosariy.md:193 klas:A -->
+<!-- fc id:T-G-159 sha:f0f64376 src:dodatky/g-glosariy.md:193 status:verbatim -->
 ### T-G-159 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7864,7 +7864,7 @@
 
 ---
 
-<!-- fc id:T-G-160 sha:0dbd81db src:dodatky/g-glosariy.md:194 klas:E -->
+<!-- fc id:T-G-160 sha:0dbd81db src:dodatky/g-glosariy.md:194 status:no-external-signal -->
 ### T-G-160 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7917,7 +7917,7 @@
 
 ---
 
-<!-- fc id:T-G-161 sha:94363d25 src:dodatky/g-glosariy.md:195 klas:F -->
+<!-- fc id:T-G-161 sha:94363d25 src:dodatky/g-glosariy.md:195 status:unchecked -->
 ### T-G-161 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -7970,7 +7970,7 @@
 
 ---
 
-<!-- fc id:T-G-162 sha:f9c75c29 src:dodatky/g-glosariy.md:196 klas:A -->
+<!-- fc id:T-G-162 sha:f9c75c29 src:dodatky/g-glosariy.md:196 status:verbatim -->
 ### T-G-162 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -8029,7 +8029,7 @@
 
 ---
 
-<!-- fc id:T-G-163 sha:9860ee2c src:dodatky/g-glosariy.md:197 klas:A -->
+<!-- fc id:T-G-163 sha:9860ee2c src:dodatky/g-glosariy.md:197 status:verbatim -->
 ### T-G-163 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -8088,7 +8088,7 @@
 
 ---
 
-<!-- fc id:T-G-164 sha:4b2c1726 src:dodatky/g-glosariy.md:198 klas:A -->
+<!-- fc id:T-G-164 sha:4b2c1726 src:dodatky/g-glosariy.md:198 status:verbatim -->
 ### T-G-164 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -8149,7 +8149,7 @@
 
 ---
 
-<!-- fc id:T-G-165 sha:214907e8 src:dodatky/g-glosariy.md:199 klas:A -->
+<!-- fc id:T-G-165 sha:214907e8 src:dodatky/g-glosariy.md:199 status:verbatim -->
 ### T-G-165 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -8216,7 +8216,7 @@
 
 ---
 
-<!-- fc id:T-G-166 sha:72f6f9b1 src:dodatky/g-glosariy.md:200 klas:E -->
+<!-- fc id:T-G-166 sha:72f6f9b1 src:dodatky/g-glosariy.md:200 status:no-external-signal -->
 ### T-G-166 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -8269,7 +8269,7 @@
 
 ---
 
-<!-- fc id:T-G-167 sha:18a229df src:dodatky/g-glosariy.md:201 klas:E -->
+<!-- fc id:T-G-167 sha:18a229df src:dodatky/g-glosariy.md:201 status:no-external-signal -->
 ### T-G-167 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -8322,7 +8322,7 @@
 
 ---
 
-<!-- fc id:T-G-168 sha:419dd880 src:dodatky/g-glosariy.md:202 klas:E -->
+<!-- fc id:T-G-168 sha:419dd880 src:dodatky/g-glosariy.md:202 status:no-external-signal -->
 ### T-G-168 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -8375,7 +8375,7 @@
 
 ---
 
-<!-- fc id:T-G-169 sha:fbdd8206 src:dodatky/g-glosariy.md:203 klas:E -->
+<!-- fc id:T-G-169 sha:fbdd8206 src:dodatky/g-glosariy.md:203 status:no-external-signal -->
 ### T-G-169 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -8428,7 +8428,7 @@
 
 ---
 
-<!-- fc id:T-G-170 sha:47e553c0 src:dodatky/g-glosariy.md:207 klas:B -->
+<!-- fc id:T-G-170 sha:47e553c0 src:dodatky/g-glosariy.md:207 status:derived -->
 ### T-G-170 · proza · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -8462,7 +8462,7 @@
 
 ---
 
-<!-- fc id:T-G-171 sha:0a5a836f src:dodatky/g-glosariy.md:210 klas:F -->
+<!-- fc id:T-G-171 sha:0a5a836f src:dodatky/g-glosariy.md:210 status:unchecked -->
 ### T-G-171 · proza · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -8484,7 +8484,7 @@
 
 ---
 
-<!-- fc id:T-G-172 sha:572ed4c7 src:dodatky/g-glosariy.md:213 klas:E -->
+<!-- fc id:T-G-172 sha:572ed4c7 src:dodatky/g-glosariy.md:213 status:no-external-signal -->
 ### T-G-172 · proza · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -8519,7 +8519,7 @@
 
 ---
 
-<!-- fc id:T-G-173 sha:7cda502b src:dodatky/g-glosariy.md:214 klas:A -->
+<!-- fc id:T-G-173 sha:7cda502b src:dodatky/g-glosariy.md:214 status:verbatim -->
 ### T-G-173 · proza · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -8551,7 +8551,7 @@
 
 ---
 
-<!-- fc id:T-G-174 sha:b3d156b4 src:dodatky/g-glosariy.md:216 klas:F -->
+<!-- fc id:T-G-174 sha:b3d156b4 src:dodatky/g-glosariy.md:216 status:unchecked -->
 ### T-G-174 · proza · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -8577,7 +8577,7 @@
 
 ---
 
-<!-- fc id:T-G-175 sha:57e2644a src:dodatky/g-glosariy.md:220 klas:E -->
+<!-- fc id:T-G-175 sha:57e2644a src:dodatky/g-glosariy.md:220 status:no-external-signal -->
 ### T-G-175 · proza · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**

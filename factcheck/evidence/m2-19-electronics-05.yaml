@@ -1,7 +1,6 @@
 - nazva: Червоний LED — падіння близько 2 В
   zbih: 'Для типового червоного світлодіода від 3\.3 В: падіння на ньому близько 2 В, бажаний струм 5–10
     мА\.'
-  klas: A
   dzherelo: Kingbright WP7113ID (High Efficiency Red, GaAsP/GaP), datasheet — таблиця «Electro-Optical
     Characteristics»
   cytata: 'Forward Voltage IF = 10mA   VF   High Efficiency Red   Typ. 1.9   Max. 2.3   V
@@ -25,7 +24,6 @@
     — це вже вибір автора книги, не цифра з документа.'
 - nazva: Резистор 220–330 Ом для червоного LED — арифметика закону Ома
   zbih: Резистор 220–330 Ом підходить майже завжди\.
-  klas: D
   dzherelo: Закон Ома, застосований до `T-05-019` (падіння `1.9–2.3 В`, датшит Kingbright WP7113ID) і
     живлення `3.3 В`
   cytata: "R = (Vсупply - Vf) / I\n\nПри Vf = 2.0 В (типове з datasheet), Vсупply = 3.3 В:\n  R = 220\
@@ -54,7 +52,6 @@
 - nazva: Синій/білий LED — падіння близько 3 В
   zbih: Синій і білий світлодіоди мають більше падіння \(близько 3 В\), тому від 3\.3 В світять слабко
     — це нормально\.
-  klas: B
   dzherelo: Kingbright WP7113QBC/D (Blue, InGaN), datasheet — таблиця «Electro-Optical Characteristics»
   cytata: 'Forward Voltage IF = 20mA   VF   Blue   Typ. 3.3   Max. 4.0   V
 
@@ -83,7 +80,6 @@
   - 018ca4be
 - nazva: Логічні рівні ESP32 — близько 0 В / близько 3.3 В
   zbih: 'Для ESP32: близько 0 В — логічний нуль, близько 3\.3 В — логічна одиниця\.'
-  klas: B
   dzherelo: ESP32 Series Datasheet — Table 5-3. DC Characteristics (3.3 V, 25 °C)
   cytata: 'VIH   High-level input voltage    0.75 × VDD  —  VDD + 0.3   V
 
@@ -123,7 +119,6 @@
   - 3726caa2
 - nazva: Знижувати 5 В обов'язково — абсолютний максимум входу 3.6 В
   zbih: \*\*Пристрій на 5 В → ESP32\.\*\* Потрібне зниження \*\*обов'язково\*\*\.
-  klas: B
   dzherelo: ESP32 Series Datasheet — Table 5-1. Absolute Maximum Ratings
   cytata: "VDDA, VDD3P3, VDD3P3_RTC, VDD3P3_CPU, VDD_SDIO\n  Allowed input voltage   Min –0.3   Max 3.6\
     \   V\n\nStresses above those listed in Table 5-1 Absolute Maximum Ratings\nmay cause permanent damage\
@@ -145,7 +140,6 @@
     однозначно — звідси `B`, не `A`.
 - nazva: 3.3 В — практична межа GPIO, консервативніша за паспортну 3.6 В
   zbih: 3\.3 В — межа для GPIO\. 5 В можна тільки на `VIN`\.
-  klas: B
   dzherelo: ESP32 Series Datasheet — Table 5-1 (Allowed input voltage, Max 3.6 В) і Table 5-3 (VIH Max
     = VDD + 0.3 В)
   cytata: 'Allowed input voltage: Min –0.3, Max 3.6 V
@@ -176,7 +170,6 @@
 - nazva: I²C — внутрішнє підтягування ESP32 (45 кОм) заслабке, потрібні зовнішні резистори
   zbih: 'Зовнішнє підтягування для I²C — окрема історія: там вбудованого замало, потрібні справжні резистори
     4\.7 кОм \(розділ 35\)\.'
-  klas: B
   dzherelo: ESP32 Series Datasheet, Table 5-3 (RPU — Resistance of internal pull-up resistor, Typ. 45
     кОм) і NXP UM10204 I²C-bus specification and user manual, §7.1 Pull-up resistor sizing
   cytata: '[ESP32 Table 5-3]
@@ -237,7 +230,6 @@
     а не цитата. `[розділ 35]` — посилання книги на інший розділ, не перевіряю тут повторно.'
 - nazva: WROOM-32E — 100 нФ близько до виводів живлення в референсній схемі
   zbih: \*\*Керамічний 100 нФ\*\* біля кожної мікросхеми, якомога ближче до її ніжок живлення\.
-  klas: B
   dzherelo: ESP32-WROOM-32E/32UE Datasheet, Espressif — Figure 9, «Peripheral Schematics» (типова схема
     застосування модуля)
   cytata: "9 Peripheral Schematics\nThis is the typical application circuit of the module connected\n\
@@ -263,7 +255,6 @@
     на «кожну мікросхему» ширше за те, що показує це джерело.'
 - nazva: MOSFET логічного рівня — офіційний термін і поріг відкривання
   zbih: 'Ключове слово «логічного рівня» \(logic level\): такий відкривається від 3\.3 В\.'
-  klas: A
   dzherelo: Vishay Siliconix IRLZ44, datasheet — «FEATURES» і «SPECIFICATIONS»
   cytata: "FEATURES\n• Logic-level gate drive                          Available\n• RDS(on) specified\
     \ at VGS = 4 V and 5 V           Available\n\nGate-source threshold voltage   VGS(th)   VDS = VGS,\
@@ -289,7 +280,6 @@
   - 0cbeb0fe
 - nazva: Звичайний MOSFET при 3.3 В — поріг близько, відкривається частково
   zbih: Звичайний MOSFET від 3\.3 В відкривається частково, гріється і згорає\.
-  klas: B
   dzherelo: Vishay Siliconix IRF540 (звичайний, без позначки logic-level), datasheet — «SPECIFICATIONS»
   cytata: "Gate-source threshold voltage   VGS(th)   VDS = VGS, ID = 250 μA\n  Min 2.0   Max 4.0   V\n\
     Drain-source on-state resistance   RDS(on)   VGS = 10 V   ID = 17 A\n  Max 0.077   Ω\n"
@@ -313,7 +303,6 @@
     В грітиметься».'
 - nazva: Величезна кількість модулів «для Arduino» на 5 В — ринкове спостереження, не з документа
   zbih: величезна кількість модулів «для Arduino» працює на \*\*5 В\*\*
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Немає одного документа, що це підтверджує чи спростовує — це узагальнення про стан ринку периферії
@@ -332,7 +321,6 @@
 - nazva: Конденсатор 470 мкФ — «найдешевше рішення найчастішої проблеми» — авторська оцінка
   zbih: Конденсатор 470 мкФ між `3V3` і `GND` поруч із модулем — найдешевше розв'язання найчастішої проблеми
     в усій книзі\.
-  klas: E
   dzherelo: —
   cytata: —
   sposib: «Найдешевше» і «найчастішої проблеми в усій книзі» — порівняльні судження автора про частоту
@@ -351,7 +339,6 @@
     оцінює місце проблеми серед усіх проблем книги — це вже точно поза зовнішньою звіркою.
 - nazva: «5 В на GPIO. Абсолютний лідер.» — рейтинг причин спалених плат, авторська оцінка
   zbih: \*\*5 В на GPIO\.\*\* Абсолютний лідер\. 2\.
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Ранжування «що частіше спалює плати» — узагальнення практики (форуми, власний досвід), не показник,
@@ -370,7 +357,6 @@
 - nazva: «100 нФ і 470 мкФ знімають більшість збоїв» — авторський підсумок, не вимірювана частка
   zbih: 100 нФ біля кожної мікросхеми і 470 мкФ біля роз'єма живлення знімають більшість «незрозумілих»
     збоїв\.
-  klas: E
   dzherelo: —
   cytata: —
   sposib: «Більшість» тут — частка від «незрозумілих» збоїв за практикою автора, без визначеного знаменника;

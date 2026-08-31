@@ -1,6 +1,5 @@
 - nazva: Ємність ходових елементів 18650 — від 2500 до 3500 мА·год
   zbih: Ємність ходових елементів — від 2500 до\s+3500 мА·год\.
-  klas: A
   dzherelo: 'Специфікації елементів: Samsung SDI INR18650-25R і -30Q, Panasonic NCR18650B, LG Chem INR18650-MJ1,
     Murata US18650VTC6'
   cytata: 'Samsung INR18650-25R:   Typical Capacity 2500mAh
@@ -54,7 +53,6 @@
   - 522b1796
 - nazva: Номінальна напруга 18650 — 3.6 В, а не 3.7
   zbih: \*\*Номінальна — 3\.6 В, а не 3\.7\.\*\*
-  klas: A
   dzherelo: Специфікації Samsung SDI INR18650-25R і -30Q, LG Chem INR18650-MJ1 і HG2, Murata US18650VTC6
   cytata: 'Samsung INR18650-25R:  Nominal Voltage (V)  3.6 / 3.64
 
@@ -98,7 +96,6 @@
     енергії в мА·год × В дає на 3 % більше, ніж є.'
 - nazva: Паспортна межа розряду 18650 — 2.5 В, а не 3.0
   zbih: Паспортна межа розряду —\s+2\.5 В, а в частини елементів 2\.0 В\.
-  klas: A
   dzherelo: Специфікації Samsung SDI INR18650-25R, Panasonic NCR18650B, Murata US18650VTC6
   cytata: 'Murata US18650VTC6:  Discharge: 0.2 ItA (600 mA), 2.0 V cutoff at 23deg.C
 
@@ -134,7 +131,6 @@
     елемента — тож правильна порада не «вибирати до кінця», а знати, що межа схеми й межа елемента різні.'
 - nazva: Заряджання 18650 нижче 0 °C — Panasonic NCR18650B і LG MJ1
   zbih: \*\*Не заряджати нижче 0 °C\.\*\*
-  klas: A
   dzherelo: Panasonic NCR18650B, датшит SANYO/Panasonic — розділ «Specifications», рядок «Temperature»;
     LG INR18650MJ1, специфікація LG Chem — розділ «Precautions», рядок «Battery must be charged at operating
     temperature range»

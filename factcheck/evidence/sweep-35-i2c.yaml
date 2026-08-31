@@ -1,6 +1,5 @@
 - nazva: 'T-35-038: Це замінює логічний аналізатор для питання «чи є'
   zbih: Це\s+замінює\s+логічний\s+аналізатор
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'I2C driver can use :cpp:func:`i2c_master_probe` to detect whether the specific device has been connected on I2C bus.
 
@@ -20,7 +19,6 @@
   - 08fdb525
 - nazva: 'T-35-029: Реальна межа задається **ємністю шини**: що довші проводи'
   zbih: Реальна\s+межа\s+задається\s+\*\*ємністю
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'The frequency of SCL is influenced by both the pull-up resistor and the wire capacitance.
 
@@ -40,7 +38,6 @@
   - d5f47558
 - nazva: 'T-35-035: Сканер перебирає всі адреси й друкує ті, що'
   zbih: Сканер\s+перебирає\s+всі\s+адреси
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'i2c_master_probe` to detect whether the specific device has been connected on I2C bus
 
@@ -58,7 +55,6 @@
   note: про сканування адрес та пошук пристроїв
 - nazva: 'T-35-067: Вбудоване підтягування — не заміна, а рятувальний круг.'
   zbih: Вбудоване\s+підтягування\s+—\s+не
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'This is not strong enough to pullup buses under high-speed frequency. A suitable external pullup is recommended.
 
@@ -78,7 +74,6 @@
   - abad831a
 - nazva: 'T-35-069: Ведучий мусить це витримати.'
   zbih: Ведучий\s+мусить\s+це\s+витримати\.
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'The ESP32 I2C controller does not support clock stretching when operating as a slave. Therefore, in addition to driver configuration, the application layer should pay attention to speed matching and synchronization between master and slave devices: if the master processes too fast while the slave responds slowly, communication errors or data loss may occur.
 
@@ -98,7 +93,6 @@
   - 4234e39c
 - nazva: 'T-35-071: Повільний ведений (наприклад, датчик, що довго міряє) може'
   zbih: Повільний\s+ведений\s+\(наприклад,\s+датчик,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'if the master processes too fast while the slave responds slowly, communication errors or data loss may occur
 
@@ -118,7 +112,6 @@
   - 246b19ad
 - nazva: 'T-35-078: Ведучий, що опитує швидше, ніж ваш обробник готує'
   zbih: Ведучий,\s+що\s+опитує\s+швидше,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'if the master processes too fast while the slave responds slowly, communication errors or data loss may occur
 
@@ -138,7 +131,6 @@
   - a91897b9
 - nazva: 'T-35-085: **Скоротити проводи**, знизити швидкість до 100 кГц. 6.'
   zbih: \*\*Скоротити\s+проводи\*\*,\s+знизити\s+швидкість
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'The frequency of SCL is influenced by both the pull-up resistor and the wire capacitance.
 
@@ -156,7 +148,6 @@
   note: документ підтверджує, що довжина проводів впливає на частоту; також згадано 100 кГц як стандартна швидкість
 - nazva: 'T-35-090: Один комплект резисторів на шину; кілька модулів зі'
   zbih: Один\s+комплект\s+резисторів\s+на
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'large resistors will decline the current
 
@@ -174,7 +165,6 @@
   note: документ обговорює вплив резисторів на струм; це підтримує концепцію, що кілька наборів резисторів дають завеликий струм
 - nazva: 'T-35-007: Дві лінії: `SDA` (дані) і `SCL` (тактування).'
   zbih: Дві\s+лінії:\s+`SDA`\s+\(дані\)
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'I2C uses two bidirectional open-drain lines: serial data line (SDA) and serial clock line (SCL)
 
@@ -194,7 +184,6 @@
   - 7e556209
 - nazva: 'T-35-070: ESP32 це підтримує, але з обмеженим таймаутом.'
   zbih: ESP32\s+це\s+підтримує,\s+але
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'The ESP32 I2C controller does not support clock stretching when operating as a slave. Therefore, in addition to driver configuration, the application layer should pay attention to speed matching and synchronization between master and slave devices
 
@@ -214,7 +203,6 @@
   - 0a18d42d
 - nazva: 'T-35-075: Усе вище — про ESP32 у ролі **ведучого**,'
   zbih: Усе\s+вище\s+—\s+про
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'if the master processes too fast while the slave responds slowly, communication errors or data loss may occur
 
@@ -234,7 +222,6 @@
   - 15963a5b
 - nazva: 'T-35-079: Якщо роль веденого потрібна, а встигати не гарантовано'
   zbih: Якщо\s+роль\s+веденого\s+потрібна,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'It is recommended to use application-layer data verification, GPIO signal synchronization, or other methods to achieve data synchronization between master and slave.
 
@@ -254,7 +241,6 @@
   - ff9fb28b
 - nazva: 'T-35-087: **Аналізатор** — `ACK` чи `NACK` (розділ 28).'
   zbih: \*\*Аналізатор\*\*\s+—\s+`ACK`\s+чи
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'Note to always ensure the last byte read before the stop condition is a ``NACK``.
 

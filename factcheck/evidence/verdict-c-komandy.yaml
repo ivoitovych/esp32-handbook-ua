@@ -13,7 +13,6 @@
 
 - nazva: 'T-C-013: esptool --port PORT read-flash 0x8000 0x1000 pt.bin #'
   zbih: esptool\s+\-\-port\s+PORT\s+read\-flash\s+0x8000
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'a partition table is flashed to (:menuitem:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`)
     0x8000 in the flash

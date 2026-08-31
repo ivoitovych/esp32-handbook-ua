@@ -17,7 +17,6 @@
 - nazva: Межі --baud — 230400 у більшості, 460800 лише в деяких
   zbih: розумна перша спроба, але \*\*не\*\* та швидкість|з `230400`\s+працює \*\*більшість\*\*
     конфігурацій
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst
   cytata: 'Most hardware configurations will work with ``-b 230400``, some with ``-b 460800``,
     ``-b 921600`` and/or ``-b 1500000`` or higher.
@@ -42,7 +41,6 @@
     указівка знижувати. Виправлено саме **твердження** про те, що це типовий максимум.'
 - nazva: З'єднання завжди на 115200 — --baud стосується лише передавання
   zbih: саме з.єднання завжди встановлюється на `115200`|вмикається лише для передавання
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst
   cytata: 'The baud rate is limited to 115200 when esptool establishes the initial connection,
     higher speeds are only used for data transfers.

@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/34-uart.md`
 
-Одиниць твердження: **73**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **73**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-34-001 sha:405cf1a7 src:manual/34-uart.md:3 klas:A -->
+<!-- fc id:T-34-001 sha:405cf1a7 src:manual/34-uart.md:3 status:verbatim -->
 ### T-34-001 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -38,7 +38,7 @@ UART — найстаріший і найнадійніший спосіб з'є
 
 ---
 
-<!-- fc id:T-34-002 sha:096e0026 src:manual/34-uart.md:3 klas:A -->
+<!-- fc id:T-34-002 sha:096e0026 src:manual/34-uart.md:3 status:verbatim -->
 ### T-34-002 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -68,7 +68,7 @@ UART — найстаріший і найнадійніший спосіб з'є
 
 ---
 
-<!-- fc id:T-34-003 sha:9e409f4f src:manual/34-uart.md:4 klas:F -->
+<!-- fc id:T-34-003 sha:9e409f4f src:manual/34-uart.md:4 status:unchecked -->
 ### T-34-003 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -92,7 +92,7 @@ UART — найстаріший і найнадійніший спосіб з'є
 
 ---
 
-<!-- fc id:T-34-004 sha:e30b590e src:manual/34-uart.md:10 klas:A -->
+<!-- fc id:T-34-004 sha:e30b590e src:manual/34-uart.md:10 status:verbatim -->
 ### T-34-004 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -120,7 +120,7 @@ UART — найстаріший і найнадійніший спосіб з'є
 
 ---
 
-<!-- fc id:T-34-005 sha:33043f87 src:manual/34-uart.md:13 klas:F -->
+<!-- fc id:T-34-005 sha:33043f87 src:manual/34-uart.md:13 status:unchecked -->
 ### T-34-005 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -143,7 +143,7 @@ UART — найстаріший і найнадійніший спосіб з'є
 
 ---
 
-<!-- fc id:T-34-006 sha:466d08cb src:manual/34-uart.md:14 klas:E -->
+<!-- fc id:T-34-006 sha:466d08cb src:manual/34-uart.md:14 status:no-external-signal -->
 ### T-34-006 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -166,7 +166,7 @@ UART — найстаріший і найнадійніший спосіб з'є
 
 ---
 
-<!-- fc id:T-34-007 sha:1b266a8c src:manual/34-uart.md:17 klas:F -->
+<!-- fc id:T-34-007 sha:1b266a8c src:manual/34-uart.md:17 status:unchecked -->
 ### T-34-007 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -187,7 +187,7 @@ UART — найстаріший і найнадійніший спосіб з'є
 
 ---
 
-<!-- fc id:T-34-008 sha:ba870d19 src:manual/34-uart.md:19 klas:F -->
+<!-- fc id:T-34-008 sha:ba870d19 src:manual/34-uart.md:19 status:unchecked -->
 ### T-34-008 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -209,7 +209,7 @@ UART — найстаріший і найнадійніший спосіб з'є
 
 ---
 
-<!-- fc id:T-34-009 sha:eaeb4494 src:manual/34-uart.md:22 klas:K -->
+<!-- fc id:T-34-009 sha:eaeb4494 src:manual/34-uart.md:22 status:code-context -->
 ### T-34-009 · kod · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -272,7 +272,7 @@ uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
 
 ---
 
-<!-- fc id:T-34-010 sha:0ecccdfd src:manual/34-uart.md:24 klas:F -->
+<!-- fc id:T-34-010 sha:0ecccdfd src:manual/34-uart.md:24 status:unchecked -->
 ### T-34-010 · kod-ryadok · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -306,7 +306,7 @@ uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
 
 ---
 
-<!-- fc id:T-34-011 sha:de4a2194 src:manual/34-uart.md:25 klas:F -->
+<!-- fc id:T-34-011 sha:de4a2194 src:manual/34-uart.md:25 status:unchecked -->
 ### T-34-011 · kod-ryadok · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -340,7 +340,7 @@ uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
 
 ---
 
-<!-- fc id:T-34-012 sha:72283452 src:manual/34-uart.md:26 klas:F -->
+<!-- fc id:T-34-012 sha:72283452 src:manual/34-uart.md:26 status:unchecked -->
 ### T-34-012 · kod-ryadok · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -374,7 +374,7 @@ uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
 
 ---
 
-<!-- fc id:T-34-013 sha:c088f2eb src:manual/34-uart.md:27 klas:F -->
+<!-- fc id:T-34-013 sha:c088f2eb src:manual/34-uart.md:27 status:unchecked -->
 ### T-34-013 · kod-ryadok · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -408,7 +408,7 @@ uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
 
 ---
 
-<!-- fc id:T-34-014 sha:d5c483dd src:manual/34-uart.md:28 klas:A -->
+<!-- fc id:T-34-014 sha:d5c483dd src:manual/34-uart.md:28 status:verbatim -->
 ### T-34-014 · kod-ryadok · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -466,7 +466,7 @@ uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
 
 ---
 
-<!-- fc id:T-34-015 sha:78289e1c src:manual/34-uart.md:29 klas:F -->
+<!-- fc id:T-34-015 sha:78289e1c src:manual/34-uart.md:29 status:unchecked -->
 ### T-34-015 · kod-ryadok · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -500,7 +500,7 @@ uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
 
 ---
 
-<!-- fc id:T-34-016 sha:a15a6798 src:manual/34-uart.md:31 klas:A -->
+<!-- fc id:T-34-016 sha:a15a6798 src:manual/34-uart.md:31 status:verbatim -->
 ### T-34-016 · kod-ryadok · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -550,7 +550,7 @@ uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
 
 ---
 
-<!-- fc id:T-34-017 sha:db88189a src:manual/34-uart.md:32 klas:A -->
+<!-- fc id:T-34-017 sha:db88189a src:manual/34-uart.md:32 status:verbatim -->
 ### T-34-017 · kod-ryadok · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -600,7 +600,7 @@ uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
 
 ---
 
-<!-- fc id:T-34-018 sha:4133379a src:manual/34-uart.md:39 klas:K -->
+<!-- fc id:T-34-018 sha:4133379a src:manual/34-uart.md:39 status:code-context -->
 ### T-34-018 · kod · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -645,7 +645,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-019 sha:4eb6ce85 src:manual/34-uart.md:42 klas:F -->
+<!-- fc id:T-34-019 sha:4eb6ce85 src:manual/34-uart.md:42 status:unchecked -->
 ### T-34-019 · kod-ryadok · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -670,7 +670,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-020 sha:1523e3e9 src:manual/34-uart.md:46 klas:A -->
+<!-- fc id:T-34-020 sha:1523e3e9 src:manual/34-uart.md:46 status:verbatim -->
 ### T-34-020 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -699,7 +699,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-021 sha:4de53afa src:manual/34-uart.md:49 klas:D -->
+<!-- fc id:T-34-021 sha:4de53afa src:manual/34-uart.md:49 status:arithmetic -->
 ### T-34-021 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -753,7 +753,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-022 sha:7e8a9923 src:manual/34-uart.md:49 klas:D -->
+<!-- fc id:T-34-022 sha:7e8a9923 src:manual/34-uart.md:49 status:arithmetic -->
 ### T-34-022 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -807,7 +807,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-023 sha:8ff21382 src:manual/34-uart.md:56 klas:E -->
+<!-- fc id:T-34-023 sha:8ff21382 src:manual/34-uart.md:56 status:no-external-signal -->
 ### T-34-023 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -829,7 +829,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-024 sha:31504aa6 src:manual/34-uart.md:56 klas:E -->
+<!-- fc id:T-34-024 sha:31504aa6 src:manual/34-uart.md:56 status:no-external-signal -->
 ### T-34-024 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -851,7 +851,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-025 sha:29501eb4 src:manual/34-uart.md:59 klas:E -->
+<!-- fc id:T-34-025 sha:29501eb4 src:manual/34-uart.md:59 status:no-external-signal -->
 ### T-34-025 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -873,7 +873,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-026 sha:53baba2c src:manual/34-uart.md:59 klas:F -->
+<!-- fc id:T-34-026 sha:53baba2c src:manual/34-uart.md:59 status:unchecked -->
 ### T-34-026 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -895,7 +895,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-027 sha:c9627eb4 src:manual/34-uart.md:62 klas:E -->
+<!-- fc id:T-34-027 sha:c9627eb4 src:manual/34-uart.md:62 status:no-external-signal -->
 ### T-34-027 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -917,7 +917,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-028 sha:7c404133 src:manual/34-uart.md:65 klas:F -->
+<!-- fc id:T-34-028 sha:7c404133 src:manual/34-uart.md:65 status:unchecked -->
 ### T-34-028 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -939,7 +939,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-029 sha:9b1de374 src:manual/34-uart.md:68 klas:F -->
+<!-- fc id:T-34-029 sha:9b1de374 src:manual/34-uart.md:68 status:unchecked -->
 ### T-34-029 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -960,7 +960,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-030 sha:39244fe0 src:manual/34-uart.md:72 klas:A -->
+<!-- fc id:T-34-030 sha:39244fe0 src:manual/34-uart.md:72 status:verbatim -->
 ### T-34-030 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -990,7 +990,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-031 sha:ad470fae src:manual/34-uart.md:72 klas:A -->
+<!-- fc id:T-34-031 sha:ad470fae src:manual/34-uart.md:72 status:verbatim -->
 ### T-34-031 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1036,7 +1036,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-032 sha:a2f28f6d src:manual/34-uart.md:74 klas:E -->
+<!-- fc id:T-34-032 sha:a2f28f6d src:manual/34-uart.md:74 status:no-external-signal -->
 ### T-34-032 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1060,7 +1060,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-033 sha:6902345f src:manual/34-uart.md:77 klas:C -->
+<!-- fc id:T-34-033 sha:6902345f src:manual/34-uart.md:77 status:named-unreachable -->
 ### T-34-033 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1086,7 +1086,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-034 sha:571d2d0c src:manual/34-uart.md:77 klas:C -->
+<!-- fc id:T-34-034 sha:571d2d0c src:manual/34-uart.md:77 status:named-unreachable -->
 ### T-34-034 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1112,7 +1112,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-035 sha:aee702d0 src:manual/34-uart.md:80 klas:E -->
+<!-- fc id:T-34-035 sha:aee702d0 src:manual/34-uart.md:80 status:no-external-signal -->
 ### T-34-035 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1134,7 +1134,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-036 sha:9fe91835 src:manual/34-uart.md:81 klas:A -->
+<!-- fc id:T-34-036 sha:9fe91835 src:manual/34-uart.md:81 status:verbatim -->
 ### T-34-036 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1162,7 +1162,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-037 sha:4659580a src:manual/34-uart.md:83 klas:K -->
+<!-- fc id:T-34-037 sha:4659580a src:manual/34-uart.md:83 status:code-context -->
 ### T-34-037 · kod · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1209,7 +1209,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-038 sha:d7a566be src:manual/34-uart.md:85 klas:A -->
+<!-- fc id:T-34-038 sha:d7a566be src:manual/34-uart.md:85 status:verbatim -->
 ### T-34-038 · kod-ryadok · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1251,7 +1251,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-039 sha:38b394a2 src:manual/34-uart.md:91 klas:A -->
+<!-- fc id:T-34-039 sha:38b394a2 src:manual/34-uart.md:91 status:verbatim -->
 ### T-34-039 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1292,7 +1292,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-040 sha:03cc4670 src:manual/34-uart.md:91 klas:A -->
+<!-- fc id:T-34-040 sha:03cc4670 src:manual/34-uart.md:91 status:verbatim -->
 ### T-34-040 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1333,7 +1333,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-041 sha:41dd0a6c src:manual/34-uart.md:92 klas:A -->
+<!-- fc id:T-34-041 sha:41dd0a6c src:manual/34-uart.md:92 status:verbatim -->
 ### T-34-041 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1364,7 +1364,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-042 sha:2e56ebd0 src:manual/34-uart.md:96 klas:A -->
+<!-- fc id:T-34-042 sha:2e56ebd0 src:manual/34-uart.md:96 status:verbatim -->
 ### T-34-042 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1409,7 +1409,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-043 sha:f3383e4e src:manual/34-uart.md:100 klas:A -->
+<!-- fc id:T-34-043 sha:f3383e4e src:manual/34-uart.md:100 status:verbatim -->
 ### T-34-043 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1440,7 +1440,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-044 sha:f3a2d1cf src:manual/34-uart.md:101 klas:A -->
+<!-- fc id:T-34-044 sha:f3a2d1cf src:manual/34-uart.md:101 status:verbatim -->
 ### T-34-044 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1469,7 +1469,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-045 sha:1a6731a6 src:manual/34-uart.md:104 klas:A -->
+<!-- fc id:T-34-045 sha:1a6731a6 src:manual/34-uart.md:104 status:verbatim -->
 ### T-34-045 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1498,7 +1498,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-046 sha:2bfcc462 src:manual/34-uart.md:105 klas:E -->
+<!-- fc id:T-34-046 sha:2bfcc462 src:manual/34-uart.md:105 status:no-external-signal -->
 ### T-34-046 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1532,7 +1532,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-047 sha:f84f390a src:manual/34-uart.md:108 klas:F -->
+<!-- fc id:T-34-047 sha:f84f390a src:manual/34-uart.md:108 status:unchecked -->
 ### T-34-047 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1555,7 +1555,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-048 sha:41309921 src:manual/34-uart.md:109 klas:A -->
+<!-- fc id:T-34-048 sha:41309921 src:manual/34-uart.md:109 status:verbatim -->
 ### T-34-048 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1584,7 +1584,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-049 sha:e2d3420d src:manual/34-uart.md:109 klas:A -->
+<!-- fc id:T-34-049 sha:e2d3420d src:manual/34-uart.md:109 status:verbatim -->
 ### T-34-049 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1613,7 +1613,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-050 sha:4264ac23 src:manual/34-uart.md:114 klas:A -->
+<!-- fc id:T-34-050 sha:4264ac23 src:manual/34-uart.md:114 status:verbatim -->
 ### T-34-050 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1657,7 +1657,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-051 sha:fef35fc5 src:manual/34-uart.md:117 klas:E -->
+<!-- fc id:T-34-051 sha:fef35fc5 src:manual/34-uart.md:117 status:no-external-signal -->
 ### T-34-051 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1680,7 +1680,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-052 sha:c29b5808 src:manual/34-uart.md:118 klas:E -->
+<!-- fc id:T-34-052 sha:c29b5808 src:manual/34-uart.md:118 status:no-external-signal -->
 ### T-34-052 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1703,7 +1703,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-053 sha:9a286814 src:manual/34-uart.md:119 klas:E -->
+<!-- fc id:T-34-053 sha:9a286814 src:manual/34-uart.md:119 status:no-external-signal -->
 ### T-34-053 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1726,7 +1726,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-054 sha:bbb90e38 src:manual/34-uart.md:121 klas:E -->
+<!-- fc id:T-34-054 sha:bbb90e38 src:manual/34-uart.md:121 status:no-external-signal -->
 ### T-34-054 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1748,7 +1748,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-055 sha:6652258c src:manual/34-uart.md:124 klas:A -->
+<!-- fc id:T-34-055 sha:6652258c src:manual/34-uart.md:124 status:verbatim -->
 ### T-34-055 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1777,7 +1777,7 @@ ESP-IDF має штатний компонент `esp-modbus` для обох р
 
 ---
 
-<!-- fc id:T-34-056 sha:832fb568 src:manual/34-uart.md:128 klas:E -->
+<!-- fc id:T-34-056 sha:832fb568 src:manual/34-uart.md:128 status:no-external-signal -->
 ### T-34-056 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1799,7 +1799,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-057 sha:c05ded58 src:manual/34-uart.md:132 klas:F -->
+<!-- fc id:T-34-057 sha:c05ded58 src:manual/34-uart.md:132 status:unchecked -->
 ### T-34-057 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1825,7 +1825,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-058 sha:b66992f9 src:manual/34-uart.md:133 klas:E -->
+<!-- fc id:T-34-058 sha:b66992f9 src:manual/34-uart.md:133 status:no-external-signal -->
 ### T-34-058 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1851,7 +1851,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-059 sha:f000932c src:manual/34-uart.md:140 klas:F -->
+<!-- fc id:T-34-059 sha:f000932c src:manual/34-uart.md:140 status:unchecked -->
 ### T-34-059 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1873,7 +1873,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-060 sha:21cc984b src:manual/34-uart.md:143 klas:E -->
+<!-- fc id:T-34-060 sha:21cc984b src:manual/34-uart.md:143 status:no-external-signal -->
 ### T-34-060 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1894,7 +1894,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-061 sha:65196ee9 src:manual/34-uart.md:145 klas:A -->
+<!-- fc id:T-34-061 sha:65196ee9 src:manual/34-uart.md:145 status:verbatim -->
 ### T-34-061 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1931,7 +1931,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-062 sha:5ac8c874 src:manual/34-uart.md:147 klas:E -->
+<!-- fc id:T-34-062 sha:5ac8c874 src:manual/34-uart.md:147 status:no-external-signal -->
 ### T-34-062 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1954,7 +1954,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-063 sha:0539c95b src:manual/34-uart.md:149 klas:E -->
+<!-- fc id:T-34-063 sha:0539c95b src:manual/34-uart.md:149 status:no-external-signal -->
 ### T-34-063 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1977,7 +1977,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-064 sha:edbb6d64 src:manual/34-uart.md:150 klas:E -->
+<!-- fc id:T-34-064 sha:edbb6d64 src:manual/34-uart.md:150 status:no-external-signal -->
 ### T-34-064 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -2000,7 +2000,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-065 sha:47e0ef43 src:manual/34-uart.md:153 klas:E -->
+<!-- fc id:T-34-065 sha:47e0ef43 src:manual/34-uart.md:153 status:no-external-signal -->
 ### T-34-065 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -2022,7 +2022,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-066 sha:b5b55989 src:manual/34-uart.md:154 klas:E -->
+<!-- fc id:T-34-066 sha:b5b55989 src:manual/34-uart.md:154 status:no-external-signal -->
 ### T-34-066 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -2044,7 +2044,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-067 sha:d42f3baf src:manual/34-uart.md:156 klas:F -->
+<!-- fc id:T-34-067 sha:d42f3baf src:manual/34-uart.md:156 status:unchecked -->
 ### T-34-067 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -2067,7 +2067,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-068 sha:37835226 src:manual/34-uart.md:162 klas:F -->
+<!-- fc id:T-34-068 sha:37835226 src:manual/34-uart.md:162 status:unchecked -->
 ### T-34-068 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -2088,7 +2088,7 @@ UART0 — це консоль; чіпати в останню чергу.
 
 ---
 
-<!-- fc id:T-34-069 sha:c50a5eff src:manual/34-uart.md:164 klas:E -->
+<!-- fc id:T-34-069 sha:c50a5eff src:manual/34-uart.md:164 status:no-external-signal -->
 ### T-34-069 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -2109,7 +2109,7 @@ TX до RX перехресно, спільна земля обов'язкова
 
 ---
 
-<!-- fc id:T-34-070 sha:e1533340 src:manual/34-uart.md:166 klas:A -->
+<!-- fc id:T-34-070 sha:e1533340 src:manual/34-uart.md:166 status:verbatim -->
 ### T-34-070 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -2136,7 +2136,7 @@ TX до RX перехресно, спільна земля обов'язкова
 
 ---
 
-<!-- fc id:T-34-071 sha:80e45dec src:manual/34-uart.md:168 klas:A -->
+<!-- fc id:T-34-071 sha:80e45dec src:manual/34-uart.md:168 status:verbatim -->
 ### T-34-071 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -2180,7 +2180,7 @@ RS-485: `uart_wait_tx_done` перед перемиканням напрямку
 
 ---
 
-<!-- fc id:T-34-072 sha:a5f43788 src:manual/34-uart.md:171 klas:A -->
+<!-- fc id:T-34-072 sha:a5f43788 src:manual/34-uart.md:171 status:verbatim -->
 ### T-34-072 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -2209,7 +2209,7 @@ RS-485: `uart_wait_tx_done` перед перемиканням напрямку
 
 ---
 
-<!-- fc id:T-34-073 sha:4a0b63dd src:manual/34-uart.md:173 klas:E -->
+<!-- fc id:T-34-073 sha:4a0b63dd src:manual/34-uart.md:173 status:no-external-signal -->
 ### T-34-073 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**

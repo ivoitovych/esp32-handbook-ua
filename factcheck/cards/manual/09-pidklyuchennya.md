@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/09-pidklyuchennya.md`
 
-Одиниць твердження: **112**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **112**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-09-001 sha:750af4f6 src:manual/09-pidklyuchennya.md:3 klas:F -->
+<!-- fc id:T-09-001 sha:750af4f6 src:manual/09-pidklyuchennya.md:3 status:unchecked -->
 ### T-09-001 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-09-002 sha:01face04 src:manual/09-pidklyuchennya.md:4 klas:E -->
+<!-- fc id:T-09-002 sha:01face04 src:manual/09-pidklyuchennya.md:4 status:no-external-signal -->
 ### T-09-002 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -56,7 +56,7 @@
 
 ---
 
-<!-- fc id:T-09-003 sha:a1a06a3d src:manual/09-pidklyuchennya.md:8 klas:E -->
+<!-- fc id:T-09-003 sha:a1a06a3d src:manual/09-pidklyuchennya.md:8 status:no-external-signal -->
 ### T-09-003 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -78,7 +78,7 @@
 
 ---
 
-<!-- fc id:T-09-004 sha:e39a088d src:manual/09-pidklyuchennya.md:8 klas:E -->
+<!-- fc id:T-09-004 sha:e39a088d src:manual/09-pidklyuchennya.md:8 status:no-external-signal -->
 ### T-09-004 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -100,7 +100,7 @@
 
 ---
 
-<!-- fc id:T-09-005 sha:1601fce9 src:manual/09-pidklyuchennya.md:13 klas:F -->
+<!-- fc id:T-09-005 sha:1601fce9 src:manual/09-pidklyuchennya.md:13 status:unchecked -->
 ### T-09-005 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -124,7 +124,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-006 sha:afadf84f src:manual/09-pidklyuchennya.md:14 klas:F -->
+<!-- fc id:T-09-006 sha:afadf84f src:manual/09-pidklyuchennya.md:14 status:unchecked -->
 ### T-09-006 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -148,7 +148,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-007 sha:374a4078 src:manual/09-pidklyuchennya.md:14 klas:A -->
+<!-- fc id:T-09-007 sha:374a4078 src:manual/09-pidklyuchennya.md:14 status:verbatim -->
 ### T-09-007 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -178,7 +178,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-008 sha:432c5a3e src:manual/09-pidklyuchennya.md:18 klas:C -->
+<!-- fc id:T-09-008 sha:432c5a3e src:manual/09-pidklyuchennya.md:18 status:named-unreachable -->
 ### T-09-008 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -206,7 +206,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-009 sha:2b5ba0e0 src:manual/09-pidklyuchennya.md:19 klas:F -->
+<!-- fc id:T-09-009 sha:2b5ba0e0 src:manual/09-pidklyuchennya.md:19 status:unchecked -->
 ### T-09-009 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -229,7 +229,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-010 sha:9f305552 src:manual/09-pidklyuchennya.md:22 klas:A -->
+<!-- fc id:T-09-010 sha:9f305552 src:manual/09-pidklyuchennya.md:22 status:verbatim -->
 ### T-09-010 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -258,7 +258,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-011 sha:9ff801a7 src:manual/09-pidklyuchennya.md:23 klas:E -->
+<!-- fc id:T-09-011 sha:9ff801a7 src:manual/09-pidklyuchennya.md:23 status:no-external-signal -->
 ### T-09-011 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -281,7 +281,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-012 sha:1e121b06 src:manual/09-pidklyuchennya.md:23 klas:E -->
+<!-- fc id:T-09-012 sha:1e121b06 src:manual/09-pidklyuchennya.md:23 status:no-external-signal -->
 ### T-09-012 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -304,7 +304,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-013 sha:52c860f9 src:manual/09-pidklyuchennya.md:28 klas:F -->
+<!-- fc id:T-09-013 sha:52c860f9 src:manual/09-pidklyuchennya.md:28 status:unchecked -->
 ### T-09-013 · tablycya-shapka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -331,7 +331,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-014 sha:388dab13 src:manual/09-pidklyuchennya.md:30 klas:A -->
+<!-- fc id:T-09-014 sha:388dab13 src:manual/09-pidklyuchennya.md:30 status:verbatim -->
 ### T-09-014 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -370,7 +370,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-015 sha:c2d47e2e src:manual/09-pidklyuchennya.md:30 klas:A -->
+<!-- fc id:T-09-015 sha:c2d47e2e src:manual/09-pidklyuchennya.md:30 status:verbatim -->
 ### T-09-015 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -418,7 +418,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-016 sha:c2bec9c8 src:manual/09-pidklyuchennya.md:30 klas:A -->
+<!-- fc id:T-09-016 sha:c2bec9c8 src:manual/09-pidklyuchennya.md:30 status:verbatim -->
 ### T-09-016 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -457,7 +457,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-017 sha:72a038d1 src:manual/09-pidklyuchennya.md:31 klas:A -->
+<!-- fc id:T-09-017 sha:72a038d1 src:manual/09-pidklyuchennya.md:31 status:verbatim -->
 ### T-09-017 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -500,7 +500,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-018 sha:ee486859 src:manual/09-pidklyuchennya.md:31 klas:A -->
+<!-- fc id:T-09-018 sha:ee486859 src:manual/09-pidklyuchennya.md:31 status:verbatim -->
 ### T-09-018 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -540,7 +540,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-019 sha:a1e6a5ca src:manual/09-pidklyuchennya.md:31 klas:A -->
+<!-- fc id:T-09-019 sha:a1e6a5ca src:manual/09-pidklyuchennya.md:31 status:verbatim -->
 ### T-09-019 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -583,7 +583,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-020 sha:f99c9567 src:manual/09-pidklyuchennya.md:32 klas:A -->
+<!-- fc id:T-09-020 sha:f99c9567 src:manual/09-pidklyuchennya.md:32 status:verbatim -->
 ### T-09-020 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -629,7 +629,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-021 sha:8e99078d src:manual/09-pidklyuchennya.md:32 klas:C -->
+<!-- fc id:T-09-021 sha:8e99078d src:manual/09-pidklyuchennya.md:32 status:named-unreachable -->
 ### T-09-021 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -666,7 +666,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-022 sha:09842382 src:manual/09-pidklyuchennya.md:32 klas:A -->
+<!-- fc id:T-09-022 sha:09842382 src:manual/09-pidklyuchennya.md:32 status:verbatim -->
 ### T-09-022 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -712,7 +712,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-023 sha:0d78e84c src:manual/09-pidklyuchennya.md:33 klas:A -->
+<!-- fc id:T-09-023 sha:0d78e84c src:manual/09-pidklyuchennya.md:33 status:verbatim -->
 ### T-09-023 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -752,7 +752,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-024 sha:8efca634 src:manual/09-pidklyuchennya.md:33 klas:C -->
+<!-- fc id:T-09-024 sha:8efca634 src:manual/09-pidklyuchennya.md:33 status:named-unreachable -->
 ### T-09-024 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -789,7 +789,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-025 sha:871e63ad src:manual/09-pidklyuchennya.md:33 klas:A -->
+<!-- fc id:T-09-025 sha:871e63ad src:manual/09-pidklyuchennya.md:33 status:verbatim -->
 ### T-09-025 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -829,7 +829,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-026 sha:e619ba8a src:manual/09-pidklyuchennya.md:35 klas:E -->
+<!-- fc id:T-09-026 sha:e619ba8a src:manual/09-pidklyuchennya.md:35 status:no-external-signal -->
 ### T-09-026 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -850,7 +850,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-027 sha:3a89ec16 src:manual/09-pidklyuchennya.md:37 klas:A -->
+<!-- fc id:T-09-027 sha:3a89ec16 src:manual/09-pidklyuchennya.md:37 status:verbatim -->
 ### T-09-027 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -881,7 +881,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-028 sha:6ca4fb71 src:manual/09-pidklyuchennya.md:39 klas:E -->
+<!-- fc id:T-09-028 sha:6ca4fb71 src:manual/09-pidklyuchennya.md:39 status:no-external-signal -->
 ### T-09-028 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -911,7 +911,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-029 sha:3968a967 src:manual/09-pidklyuchennya.md:42 klas:E -->
+<!-- fc id:T-09-029 sha:3968a967 src:manual/09-pidklyuchennya.md:42 status:no-external-signal -->
 ### T-09-029 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -936,7 +936,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-030 sha:be312a6f src:manual/09-pidklyuchennya.md:42 klas:C -->
+<!-- fc id:T-09-030 sha:be312a6f src:manual/09-pidklyuchennya.md:42 status:named-unreachable -->
 ### T-09-030 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -966,7 +966,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-031 sha:cf298d08 src:manual/09-pidklyuchennya.md:44 klas:F -->
+<!-- fc id:T-09-031 sha:cf298d08 src:manual/09-pidklyuchennya.md:44 status:unchecked -->
 ### T-09-031 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -991,7 +991,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-032 sha:49a2b438 src:manual/09-pidklyuchennya.md:48 klas:F -->
+<!-- fc id:T-09-032 sha:49a2b438 src:manual/09-pidklyuchennya.md:48 status:unchecked -->
 ### T-09-032 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1013,7 +1013,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-033 sha:8736749c src:manual/09-pidklyuchennya.md:49 klas:E -->
+<!-- fc id:T-09-033 sha:8736749c src:manual/09-pidklyuchennya.md:49 status:no-external-signal -->
 ### T-09-033 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1035,7 +1035,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-034 sha:c9a4b039 src:manual/09-pidklyuchennya.md:51 klas:E -->
+<!-- fc id:T-09-034 sha:c9a4b039 src:manual/09-pidklyuchennya.md:51 status:no-external-signal -->
 ### T-09-034 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1069,7 +1069,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-035 sha:70d8b6e7 src:manual/09-pidklyuchennya.md:52 klas:E -->
+<!-- fc id:T-09-035 sha:70d8b6e7 src:manual/09-pidklyuchennya.md:52 status:no-external-signal -->
 ### T-09-035 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1103,7 +1103,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-036 sha:8af39317 src:manual/09-pidklyuchennya.md:53 klas:C -->
+<!-- fc id:T-09-036 sha:8af39317 src:manual/09-pidklyuchennya.md:53 status:named-unreachable -->
 ### T-09-036 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1133,7 +1133,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-037 sha:09e91692 src:manual/09-pidklyuchennya.md:57 klas:A -->
+<!-- fc id:T-09-037 sha:09e91692 src:manual/09-pidklyuchennya.md:57 status:verbatim -->
 ### T-09-037 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1162,7 +1162,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-038 sha:fdfccb59 src:manual/09-pidklyuchennya.md:58 klas:F -->
+<!-- fc id:T-09-038 sha:fdfccb59 src:manual/09-pidklyuchennya.md:58 status:unchecked -->
 ### T-09-038 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1185,7 +1185,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-039 sha:e79151e3 src:manual/09-pidklyuchennya.md:61 klas:E -->
+<!-- fc id:T-09-039 sha:e79151e3 src:manual/09-pidklyuchennya.md:61 status:no-external-signal -->
 ### T-09-039 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1215,7 +1215,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-040 sha:63b931d1 src:manual/09-pidklyuchennya.md:63 klas:E -->
+<!-- fc id:T-09-040 sha:63b931d1 src:manual/09-pidklyuchennya.md:63 status:no-external-signal -->
 ### T-09-040 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1239,7 +1239,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-041 sha:5268e7f0 src:manual/09-pidklyuchennya.md:68 klas:A -->
+<!-- fc id:T-09-041 sha:5268e7f0 src:manual/09-pidklyuchennya.md:68 status:verbatim -->
 ### T-09-041 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1267,7 +1267,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-042 sha:95e4b03d src:manual/09-pidklyuchennya.md:68 klas:A -->
+<!-- fc id:T-09-042 sha:95e4b03d src:manual/09-pidklyuchennya.md:68 status:verbatim -->
 ### T-09-042 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1295,7 +1295,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-043 sha:f2b73c19 src:manual/09-pidklyuchennya.md:73 klas:C -->
+<!-- fc id:T-09-043 sha:f2b73c19 src:manual/09-pidklyuchennya.md:73 status:named-unreachable -->
 ### T-09-043 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1323,7 +1323,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-044 sha:28e42fea src:manual/09-pidklyuchennya.md:74 klas:F -->
+<!-- fc id:T-09-044 sha:28e42fea src:manual/09-pidklyuchennya.md:74 status:unchecked -->
 ### T-09-044 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1346,7 +1346,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-045 sha:42f0a8ae src:manual/09-pidklyuchennya.md:77 klas:A -->
+<!-- fc id:T-09-045 sha:42f0a8ae src:manual/09-pidklyuchennya.md:77 status:verbatim -->
 ### T-09-045 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1374,7 +1374,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-046 sha:a0a9fc6a src:manual/09-pidklyuchennya.md:80 klas:A -->
+<!-- fc id:T-09-046 sha:a0a9fc6a src:manual/09-pidklyuchennya.md:80 status:verbatim -->
 ### T-09-046 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1402,7 +1402,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-047 sha:644dba72 src:manual/09-pidklyuchennya.md:83 klas:F -->
+<!-- fc id:T-09-047 sha:644dba72 src:manual/09-pidklyuchennya.md:83 status:unchecked -->
 ### T-09-047 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1427,7 +1427,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-048 sha:98aec72b src:manual/09-pidklyuchennya.md:85 klas:E -->
+<!-- fc id:T-09-048 sha:98aec72b src:manual/09-pidklyuchennya.md:85 status:no-external-signal -->
 ### T-09-048 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1452,7 +1452,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-049 sha:d29e020d src:manual/09-pidklyuchennya.md:85 klas:F -->
+<!-- fc id:T-09-049 sha:d29e020d src:manual/09-pidklyuchennya.md:85 status:unchecked -->
 ### T-09-049 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1477,7 +1477,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-050 sha:0f211978 src:manual/09-pidklyuchennya.md:90 klas:F -->
+<!-- fc id:T-09-050 sha:0f211978 src:manual/09-pidklyuchennya.md:90 status:unchecked -->
 ### T-09-050 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1503,7 +1503,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-051 sha:2c036fcf src:manual/09-pidklyuchennya.md:91 klas:E -->
+<!-- fc id:T-09-051 sha:2c036fcf src:manual/09-pidklyuchennya.md:91 status:no-external-signal -->
 ### T-09-051 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1529,7 +1529,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-052 sha:7a909345 src:manual/09-pidklyuchennya.md:92 klas:F -->
+<!-- fc id:T-09-052 sha:7a909345 src:manual/09-pidklyuchennya.md:92 status:unchecked -->
 ### T-09-052 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1555,7 +1555,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-053 sha:95c02e74 src:manual/09-pidklyuchennya.md:98 klas:E -->
+<!-- fc id:T-09-053 sha:95c02e74 src:manual/09-pidklyuchennya.md:98 status:no-external-signal -->
 ### T-09-053 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1578,7 +1578,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-054 sha:d4504537 src:manual/09-pidklyuchennya.md:99 klas:E -->
+<!-- fc id:T-09-054 sha:d4504537 src:manual/09-pidklyuchennya.md:99 status:no-external-signal -->
 ### T-09-054 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1601,7 +1601,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-055 sha:c2b66b41 src:manual/09-pidklyuchennya.md:100 klas:E -->
+<!-- fc id:T-09-055 sha:c2b66b41 src:manual/09-pidklyuchennya.md:100 status:no-external-signal -->
 ### T-09-055 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1624,7 +1624,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-056 sha:db94e170 src:manual/09-pidklyuchennya.md:102 klas:E -->
+<!-- fc id:T-09-056 sha:db94e170 src:manual/09-pidklyuchennya.md:102 status:no-external-signal -->
 ### T-09-056 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1646,7 +1646,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-057 sha:90a00967 src:manual/09-pidklyuchennya.md:103 klas:E -->
+<!-- fc id:T-09-057 sha:90a00967 src:manual/09-pidklyuchennya.md:103 status:no-external-signal -->
 ### T-09-057 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1668,7 +1668,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-058 sha:cebf28a6 src:manual/09-pidklyuchennya.md:105 klas:E -->
+<!-- fc id:T-09-058 sha:cebf28a6 src:manual/09-pidklyuchennya.md:105 status:no-external-signal -->
 ### T-09-058 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1691,7 +1691,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-059 sha:57ed544a src:manual/09-pidklyuchennya.md:105 klas:A -->
+<!-- fc id:T-09-059 sha:57ed544a src:manual/09-pidklyuchennya.md:105 status:verbatim -->
 ### T-09-059 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1739,7 +1739,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-060 sha:75eadf76 src:manual/09-pidklyuchennya.md:107 klas:E -->
+<!-- fc id:T-09-060 sha:75eadf76 src:manual/09-pidklyuchennya.md:107 status:no-external-signal -->
 ### T-09-060 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1762,7 +1762,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-061 sha:56488dd2 src:manual/09-pidklyuchennya.md:110 klas:E -->
+<!-- fc id:T-09-061 sha:56488dd2 src:manual/09-pidklyuchennya.md:110 status:no-external-signal -->
 ### T-09-061 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1788,7 +1788,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-062 sha:50131373 src:manual/09-pidklyuchennya.md:111 klas:E -->
+<!-- fc id:T-09-062 sha:50131373 src:manual/09-pidklyuchennya.md:111 status:no-external-signal -->
 ### T-09-062 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1814,7 +1814,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-063 sha:82da5e37 src:manual/09-pidklyuchennya.md:111 klas:E -->
+<!-- fc id:T-09-063 sha:82da5e37 src:manual/09-pidklyuchennya.md:111 status:no-external-signal -->
 ### T-09-063 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1840,7 +1840,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-064 sha:5571bbf3 src:manual/09-pidklyuchennya.md:118 klas:A -->
+<!-- fc id:T-09-064 sha:5571bbf3 src:manual/09-pidklyuchennya.md:118 status:verbatim -->
 ### T-09-064 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1879,7 +1879,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-065 sha:e6608ea6 src:manual/09-pidklyuchennya.md:118 klas:E -->
+<!-- fc id:T-09-065 sha:e6608ea6 src:manual/09-pidklyuchennya.md:118 status:no-external-signal -->
 ### T-09-065 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1901,7 +1901,7 @@ USB чипа, другий — на звичайний міст USB-UART. Вон
 
 ---
 
-<!-- fc id:T-09-066 sha:b4bb361c src:manual/09-pidklyuchennya.md:121 klas:K -->
+<!-- fc id:T-09-066 sha:b4bb361c src:manual/09-pidklyuchennya.md:121 status:code-context -->
 ### T-09-066 · kod · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1926,7 +1926,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-09-067 sha:227ed426 src:manual/09-pidklyuchennya.md:122 klas:F -->
+<!-- fc id:T-09-067 sha:227ed426 src:manual/09-pidklyuchennya.md:122 status:unchecked -->
 ### T-09-067 · kod-ryadok · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1949,7 +1949,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-09-068 sha:5eb954e4 src:manual/09-pidklyuchennya.md:125 klas:E -->
+<!-- fc id:T-09-068 sha:5eb954e4 src:manual/09-pidklyuchennya.md:125 status:no-external-signal -->
 ### T-09-068 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1971,7 +1971,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-09-069 sha:1a6e4d7e src:manual/09-pidklyuchennya.md:125 klas:A -->
+<!-- fc id:T-09-069 sha:1a6e4d7e src:manual/09-pidklyuchennya.md:125 status:verbatim -->
 ### T-09-069 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -1999,7 +1999,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-09-070 sha:59e49521 src:manual/09-pidklyuchennya.md:128 klas:A -->
+<!-- fc id:T-09-070 sha:59e49521 src:manual/09-pidklyuchennya.md:128 status:verbatim -->
 ### T-09-070 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2027,7 +2027,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-09-071 sha:08d72203 src:manual/09-pidklyuchennya.md:131 klas:K -->
+<!-- fc id:T-09-071 sha:08d72203 src:manual/09-pidklyuchennya.md:131 status:code-context -->
 ### T-09-071 · kod · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2052,7 +2052,7 @@ ls -l /dev/ttyUSB0
 
 ---
 
-<!-- fc id:T-09-072 sha:ec8c84c9 src:manual/09-pidklyuchennya.md:132 klas:F -->
+<!-- fc id:T-09-072 sha:ec8c84c9 src:manual/09-pidklyuchennya.md:132 status:unchecked -->
 ### T-09-072 · kod-ryadok · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2075,7 +2075,7 @@ ls -l /dev/ttyUSB0
 
 ---
 
-<!-- fc id:T-09-073 sha:8c3e6723 src:manual/09-pidklyuchennya.md:136 klas:F -->
+<!-- fc id:T-09-073 sha:8c3e6723 src:manual/09-pidklyuchennya.md:136 status:unchecked -->
 ### T-09-073 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2101,7 +2101,7 @@ ls -l /dev/ttyUSB0
 
 ---
 
-<!-- fc id:T-09-074 sha:5a834809 src:manual/09-pidklyuchennya.md:137 klas:F -->
+<!-- fc id:T-09-074 sha:5a834809 src:manual/09-pidklyuchennya.md:137 status:unchecked -->
 ### T-09-074 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2127,7 +2127,7 @@ ls -l /dev/ttyUSB0
 
 ---
 
-<!-- fc id:T-09-075 sha:8730de05 src:manual/09-pidklyuchennya.md:138 klas:E -->
+<!-- fc id:T-09-075 sha:8730de05 src:manual/09-pidklyuchennya.md:138 status:no-external-signal -->
 ### T-09-075 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2153,7 +2153,7 @@ ls -l /dev/ttyUSB0
 
 ---
 
-<!-- fc id:T-09-076 sha:2c4e2e72 src:manual/09-pidklyuchennya.md:144 klas:K -->
+<!-- fc id:T-09-076 sha:2c4e2e72 src:manual/09-pidklyuchennya.md:144 status:code-context -->
 ### T-09-076 · kod · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2178,7 +2178,7 @@ Device or resource busy
 
 ---
 
-<!-- fc id:T-09-077 sha:daf30df3 src:manual/09-pidklyuchennya.md:148 klas:A -->
+<!-- fc id:T-09-077 sha:daf30df3 src:manual/09-pidklyuchennya.md:148 status:verbatim -->
 ### T-09-077 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2207,7 +2207,7 @@ Device or resource busy
 
 ---
 
-<!-- fc id:T-09-078 sha:5d1f891c src:manual/09-pidklyuchennya.md:148 klas:F -->
+<!-- fc id:T-09-078 sha:5d1f891c src:manual/09-pidklyuchennya.md:148 status:unchecked -->
 ### T-09-078 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2230,7 +2230,7 @@ Device or resource busy
 
 ---
 
-<!-- fc id:T-09-079 sha:9076b1b4 src:manual/09-pidklyuchennya.md:154 klas:K -->
+<!-- fc id:T-09-079 sha:9076b1b4 src:manual/09-pidklyuchennya.md:154 status:code-context -->
 ### T-09-079 · kod · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2255,7 +2255,7 @@ lsof /dev/ttyUSB0
 
 ---
 
-<!-- fc id:T-09-080 sha:1517df24 src:manual/09-pidklyuchennya.md:155 klas:F -->
+<!-- fc id:T-09-080 sha:1517df24 src:manual/09-pidklyuchennya.md:155 status:unchecked -->
 ### T-09-080 · kod-ryadok · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2278,7 +2278,7 @@ lsof /dev/ttyUSB0
 
 ---
 
-<!-- fc id:T-09-081 sha:c7150df3 src:manual/09-pidklyuchennya.md:158 klas:E -->
+<!-- fc id:T-09-081 sha:c7150df3 src:manual/09-pidklyuchennya.md:158 status:no-external-signal -->
 ### T-09-081 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2300,7 +2300,7 @@ lsof /dev/ttyUSB0
 
 ---
 
-<!-- fc id:T-09-082 sha:76ff912a src:manual/09-pidklyuchennya.md:163 klas:E -->
+<!-- fc id:T-09-082 sha:76ff912a src:manual/09-pidklyuchennya.md:163 status:no-external-signal -->
 ### T-09-082 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2321,7 +2321,7 @@ lsof /dev/ttyUSB0
 
 ---
 
-<!-- fc id:T-09-083 sha:c52c489e src:manual/09-pidklyuchennya.md:165 klas:K -->
+<!-- fc id:T-09-083 sha:c52c489e src:manual/09-pidklyuchennya.md:165 status:code-context -->
 ### T-09-083 · kod · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2346,7 +2346,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-084 sha:62bdb0e1 src:manual/09-pidklyuchennya.md:166 klas:F -->
+<!-- fc id:T-09-084 sha:62bdb0e1 src:manual/09-pidklyuchennya.md:166 status:unchecked -->
 ### T-09-084 · kod-ryadok · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2369,7 +2369,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-085 sha:82e0eb52 src:manual/09-pidklyuchennya.md:169 klas:E -->
+<!-- fc id:T-09-085 sha:82e0eb52 src:manual/09-pidklyuchennya.md:169 status:no-external-signal -->
 ### T-09-085 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2390,7 +2390,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-086 sha:baac9f52 src:manual/09-pidklyuchennya.md:171 klas:E -->
+<!-- fc id:T-09-086 sha:baac9f52 src:manual/09-pidklyuchennya.md:171 status:no-external-signal -->
 ### T-09-086 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2412,7 +2412,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-087 sha:9ecc9948 src:manual/09-pidklyuchennya.md:171 klas:A -->
+<!-- fc id:T-09-087 sha:9ecc9948 src:manual/09-pidklyuchennya.md:171 status:verbatim -->
 ### T-09-087 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2442,7 +2442,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-088 sha:af5831e6 src:manual/09-pidklyuchennya.md:174 klas:E -->
+<!-- fc id:T-09-088 sha:af5831e6 src:manual/09-pidklyuchennya.md:174 status:no-external-signal -->
 ### T-09-088 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2464,7 +2464,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-089 sha:a22810af src:manual/09-pidklyuchennya.md:177 klas:F -->
+<!-- fc id:T-09-089 sha:a22810af src:manual/09-pidklyuchennya.md:177 status:unchecked -->
 ### T-09-089 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2487,7 +2487,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-090 sha:18cd5314 src:manual/09-pidklyuchennya.md:178 klas:E -->
+<!-- fc id:T-09-090 sha:18cd5314 src:manual/09-pidklyuchennya.md:178 status:no-external-signal -->
 ### T-09-090 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2510,7 +2510,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-091 sha:5f84d2ba src:manual/09-pidklyuchennya.md:183 klas:E -->
+<!-- fc id:T-09-091 sha:5f84d2ba src:manual/09-pidklyuchennya.md:183 status:no-external-signal -->
 ### T-09-091 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2532,7 +2532,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-092 sha:7625a5f2 src:manual/09-pidklyuchennya.md:183 klas:E -->
+<!-- fc id:T-09-092 sha:7625a5f2 src:manual/09-pidklyuchennya.md:183 status:no-external-signal -->
 ### T-09-092 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2554,7 +2554,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-093 sha:6418c178 src:manual/09-pidklyuchennya.md:186 klas:F -->
+<!-- fc id:T-09-093 sha:6418c178 src:manual/09-pidklyuchennya.md:186 status:unchecked -->
 ### T-09-093 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2576,7 +2576,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-094 sha:948b9266 src:manual/09-pidklyuchennya.md:189 klas:E -->
+<!-- fc id:T-09-094 sha:948b9266 src:manual/09-pidklyuchennya.md:189 status:no-external-signal -->
 ### T-09-094 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2597,7 +2597,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-095 sha:b2bd4fc0 src:manual/09-pidklyuchennya.md:193 klas:E -->
+<!-- fc id:T-09-095 sha:b2bd4fc0 src:manual/09-pidklyuchennya.md:193 status:no-external-signal -->
 ### T-09-095 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2621,7 +2621,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-096 sha:53215e43 src:manual/09-pidklyuchennya.md:193 klas:E -->
+<!-- fc id:T-09-096 sha:53215e43 src:manual/09-pidklyuchennya.md:193 status:no-external-signal -->
 ### T-09-096 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2645,7 +2645,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-097 sha:df768b5b src:manual/09-pidklyuchennya.md:195 klas:E -->
+<!-- fc id:T-09-097 sha:df768b5b src:manual/09-pidklyuchennya.md:195 status:no-external-signal -->
 ### T-09-097 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2669,7 +2669,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-098 sha:57a3d942 src:manual/09-pidklyuchennya.md:198 klas:E -->
+<!-- fc id:T-09-098 sha:57a3d942 src:manual/09-pidklyuchennya.md:198 status:no-external-signal -->
 ### T-09-098 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2692,7 +2692,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-099 sha:20fc09ac src:manual/09-pidklyuchennya.md:198 klas:E -->
+<!-- fc id:T-09-099 sha:20fc09ac src:manual/09-pidklyuchennya.md:198 status:no-external-signal -->
 ### T-09-099 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2715,7 +2715,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-100 sha:006ab7dc src:manual/09-pidklyuchennya.md:202 klas:E -->
+<!-- fc id:T-09-100 sha:006ab7dc src:manual/09-pidklyuchennya.md:202 status:no-external-signal -->
 ### T-09-100 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2737,7 +2737,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-101 sha:abd1f18d src:manual/09-pidklyuchennya.md:207 klas:E -->
+<!-- fc id:T-09-101 sha:abd1f18d src:manual/09-pidklyuchennya.md:207 status:no-external-signal -->
 ### T-09-101 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2760,7 +2760,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-102 sha:7f133b7d src:manual/09-pidklyuchennya.md:208 klas:E -->
+<!-- fc id:T-09-102 sha:7f133b7d src:manual/09-pidklyuchennya.md:208 status:no-external-signal -->
 ### T-09-102 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2783,7 +2783,7 @@ dmesg | tail -20
 
 ---
 
-<!-- fc id:T-09-103 sha:5deba207 src:manual/09-pidklyuchennya.md:211 klas:K -->
+<!-- fc id:T-09-103 sha:5deba207 src:manual/09-pidklyuchennya.md:211 status:code-context -->
 ### T-09-103 · kod · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2808,7 +2808,7 @@ ls -l /dev/serial/by-id/
 
 ---
 
-<!-- fc id:T-09-104 sha:a67da531 src:manual/09-pidklyuchennya.md:212 klas:F -->
+<!-- fc id:T-09-104 sha:a67da531 src:manual/09-pidklyuchennya.md:212 status:unchecked -->
 ### T-09-104 · kod-ryadok · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2831,7 +2831,7 @@ ls -l /dev/serial/by-id/
 
 ---
 
-<!-- fc id:T-09-105 sha:fd907831 src:manual/09-pidklyuchennya.md:215 klas:E -->
+<!-- fc id:T-09-105 sha:fd907831 src:manual/09-pidklyuchennya.md:215 status:no-external-signal -->
 ### T-09-105 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2854,7 +2854,7 @@ ls -l /dev/serial/by-id/
 
 ---
 
-<!-- fc id:T-09-106 sha:70899d2b src:manual/09-pidklyuchennya.md:216 klas:F -->
+<!-- fc id:T-09-106 sha:70899d2b src:manual/09-pidklyuchennya.md:216 status:unchecked -->
 ### T-09-106 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2877,7 +2877,7 @@ ls -l /dev/serial/by-id/
 
 ---
 
-<!-- fc id:T-09-107 sha:981561db src:manual/09-pidklyuchennya.md:221 klas:F -->
+<!-- fc id:T-09-107 sha:981561db src:manual/09-pidklyuchennya.md:221 status:unchecked -->
 ### T-09-107 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2899,7 +2899,7 @@ ls -l /dev/serial/by-id/
 
 ---
 
-<!-- fc id:T-09-108 sha:c1a9723b src:manual/09-pidklyuchennya.md:224 klas:E -->
+<!-- fc id:T-09-108 sha:c1a9723b src:manual/09-pidklyuchennya.md:224 status:no-external-signal -->
 ### T-09-108 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2920,7 +2920,7 @@ ls -l /dev/serial/by-id/
 
 ---
 
-<!-- fc id:T-09-109 sha:871dd53d src:manual/09-pidklyuchennya.md:226 klas:C -->
+<!-- fc id:T-09-109 sha:871dd53d src:manual/09-pidklyuchennya.md:226 status:named-unreachable -->
 ### T-09-109 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2945,7 +2945,7 @@ CH9102 потребує іншого драйвера, ніж CH340, попри 
 
 ---
 
-<!-- fc id:T-09-110 sha:dd5a58ae src:manual/09-pidklyuchennya.md:228 klas:C -->
+<!-- fc id:T-09-110 sha:dd5a58ae src:manual/09-pidklyuchennya.md:228 status:named-unreachable -->
 ### T-09-110 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2972,7 +2972,7 @@ DevKitC-1 роз'ємів два, і вони роблять різне.
 
 ---
 
-<!-- fc id:T-09-111 sha:1cb2d51a src:manual/09-pidklyuchennya.md:231 klas:F -->
+<!-- fc id:T-09-111 sha:1cb2d51a src:manual/09-pidklyuchennya.md:231 status:unchecked -->
 ### T-09-111 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -2993,7 +2993,7 @@ DevKitC-1 роз'ємів два, і вони роблять різне.
 
 ---
 
-<!-- fc id:T-09-112 sha:ab68d2a4 src:manual/09-pidklyuchennya.md:233 klas:E -->
+<!-- fc id:T-09-112 sha:ab68d2a4 src:manual/09-pidklyuchennya.md:233 status:no-external-signal -->
 ### T-09-112 · proza · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**

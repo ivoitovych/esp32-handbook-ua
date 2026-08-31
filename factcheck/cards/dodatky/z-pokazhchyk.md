@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/z-pokazhchyk.md`
 
-Одиниць твердження: **202**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **202**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-Z-001 sha:0d03f93e src:dodatky/z-pokazhchyk.md:3 klas:E -->
+<!-- fc id:T-Z-001 sha:0d03f93e src:dodatky/z-pokazhchyk.md:3 status:no-external-signal -->
 ### T-Z-001 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -29,7 +29,7 @@
 
 ---
 
-<!-- fc id:T-Z-002 sha:3dda2ada src:dodatky/z-pokazhchyk.md:5 klas:F -->
+<!-- fc id:T-Z-002 sha:3dda2ada src:dodatky/z-pokazhchyk.md:5 status:unchecked -->
 ### T-Z-002 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-Z-003 sha:af219210 src:dodatky/z-pokazhchyk.md:7 klas:E -->
+<!-- fc id:T-Z-003 sha:af219210 src:dodatky/z-pokazhchyk.md:7 status:no-external-signal -->
 ### T-Z-003 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -75,7 +75,7 @@
 
 ---
 
-<!-- fc id:T-Z-004 sha:7983dda0 src:dodatky/z-pokazhchyk.md:13 klas:E -->
+<!-- fc id:T-Z-004 sha:7983dda0 src:dodatky/z-pokazhchyk.md:13 status:no-external-signal -->
 ### T-Z-004 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -96,7 +96,7 @@
 
 ---
 
-<!-- fc id:T-Z-005 sha:371e799b src:dodatky/z-pokazhchyk.md:18 klas:E -->
+<!-- fc id:T-Z-005 sha:371e799b src:dodatky/z-pokazhchyk.md:18 status:no-external-signal -->
 ### T-Z-005 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -117,7 +117,7 @@
 
 ---
 
-<!-- fc id:T-Z-006 sha:883e470d src:dodatky/z-pokazhchyk.md:23 klas:E -->
+<!-- fc id:T-Z-006 sha:883e470d src:dodatky/z-pokazhchyk.md:23 status:no-external-signal -->
 ### T-Z-006 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -138,7 +138,7 @@
 
 ---
 
-<!-- fc id:T-Z-007 sha:b6754189 src:dodatky/z-pokazhchyk.md:28 klas:E -->
+<!-- fc id:T-Z-007 sha:b6754189 src:dodatky/z-pokazhchyk.md:28 status:no-external-signal -->
 ### T-Z-007 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -159,7 +159,7 @@
 
 ---
 
-<!-- fc id:T-Z-008 sha:b65685b6 src:dodatky/z-pokazhchyk.md:33 klas:E -->
+<!-- fc id:T-Z-008 sha:b65685b6 src:dodatky/z-pokazhchyk.md:33 status:no-external-signal -->
 ### T-Z-008 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -180,7 +180,7 @@
 
 ---
 
-<!-- fc id:T-Z-009 sha:2351cc67 src:dodatky/z-pokazhchyk.md:38 klas:C -->
+<!-- fc id:T-Z-009 sha:2351cc67 src:dodatky/z-pokazhchyk.md:38 status:named-unreachable -->
 ### T-Z-009 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -205,7 +205,7 @@
 
 ---
 
-<!-- fc id:T-Z-010 sha:812f63df src:dodatky/z-pokazhchyk.md:40 klas:A -->
+<!-- fc id:T-Z-010 sha:812f63df src:dodatky/z-pokazhchyk.md:40 status:verbatim -->
 ### T-Z-010 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -232,7 +232,7 @@
 
 ---
 
-<!-- fc id:T-Z-011 sha:5a4d677e src:dodatky/z-pokazhchyk.md:45 klas:A -->
+<!-- fc id:T-Z-011 sha:5a4d677e src:dodatky/z-pokazhchyk.md:45 status:verbatim -->
 ### T-Z-011 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -259,7 +259,7 @@
 
 ---
 
-<!-- fc id:T-Z-012 sha:70332958 src:dodatky/z-pokazhchyk.md:47 klas:A -->
+<!-- fc id:T-Z-012 sha:70332958 src:dodatky/z-pokazhchyk.md:47 status:verbatim -->
 ### T-Z-012 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -286,7 +286,7 @@
 
 ---
 
-<!-- fc id:T-Z-013 sha:cb078ee5 src:dodatky/z-pokazhchyk.md:52 klas:A -->
+<!-- fc id:T-Z-013 sha:cb078ee5 src:dodatky/z-pokazhchyk.md:52 status:verbatim -->
 ### T-Z-013 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -313,7 +313,7 @@
 
 ---
 
-<!-- fc id:T-Z-014 sha:4f3852de src:dodatky/z-pokazhchyk.md:63 klas:A -->
+<!-- fc id:T-Z-014 sha:4f3852de src:dodatky/z-pokazhchyk.md:63 status:verbatim -->
 ### T-Z-014 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -350,7 +350,7 @@ adc_cali_create_scheme_curve_fitting — 206
 
 ---
 
-<!-- fc id:T-Z-015 sha:90402216 src:dodatky/z-pokazhchyk.md:65 klas:A -->
+<!-- fc id:T-Z-015 sha:90402216 src:dodatky/z-pokazhchyk.md:65 status:verbatim -->
 ### T-Z-015 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -387,7 +387,7 @@ adc_cali_curve_fitting_config_t — 206
 
 ---
 
-<!-- fc id:T-Z-016 sha:33ec5af9 src:dodatky/z-pokazhchyk.md:69 klas:A -->
+<!-- fc id:T-Z-016 sha:33ec5af9 src:dodatky/z-pokazhchyk.md:69 status:verbatim -->
 ### T-Z-016 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -424,7 +424,7 @@ adc_cali_raw_to_voltage — 206, 339
 
 ---
 
-<!-- fc id:T-Z-017 sha:8a2b466b src:dodatky/z-pokazhchyk.md:71 klas:A -->
+<!-- fc id:T-Z-017 sha:8a2b466b src:dodatky/z-pokazhchyk.md:71 status:verbatim -->
 ### T-Z-017 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -461,7 +461,7 @@ adc_oneshot_chan_cfg_t — 205
 
 ---
 
-<!-- fc id:T-Z-018 sha:ab656a61 src:dodatky/z-pokazhchyk.md:73 klas:A -->
+<!-- fc id:T-Z-018 sha:ab656a61 src:dodatky/z-pokazhchyk.md:73 status:verbatim -->
 ### T-Z-018 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -498,7 +498,7 @@ adc_oneshot_config_channel — 205
 
 ---
 
-<!-- fc id:T-Z-019 sha:9bf1dfb0 src:dodatky/z-pokazhchyk.md:75 klas:A -->
+<!-- fc id:T-Z-019 sha:9bf1dfb0 src:dodatky/z-pokazhchyk.md:75 status:verbatim -->
 ### T-Z-019 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -535,7 +535,7 @@ adc_oneshot_new_unit — 205
 
 ---
 
-<!-- fc id:T-Z-020 sha:3164e692 src:dodatky/z-pokazhchyk.md:77 klas:A -->
+<!-- fc id:T-Z-020 sha:3164e692 src:dodatky/z-pokazhchyk.md:77 status:verbatim -->
 ### T-Z-020 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -572,7 +572,7 @@ adc_oneshot_read — 74, 205, 339
 
 ---
 
-<!-- fc id:T-Z-021 sha:104b9ba2 src:dodatky/z-pokazhchyk.md:79 klas:A -->
+<!-- fc id:T-Z-021 sha:104b9ba2 src:dodatky/z-pokazhchyk.md:79 status:verbatim -->
 ### T-Z-021 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -609,7 +609,7 @@ adc_oneshot_unit_handle_t — 205
 
 ---
 
-<!-- fc id:T-Z-022 sha:bde89229 src:dodatky/z-pokazhchyk.md:81 klas:A -->
+<!-- fc id:T-Z-022 sha:bde89229 src:dodatky/z-pokazhchyk.md:81 status:verbatim -->
 ### T-Z-022 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -646,7 +646,7 @@ adc_oneshot_unit_init_cfg_t — 205
 
 ---
 
-<!-- fc id:T-Z-023 sha:5128351f src:dodatky/z-pokazhchyk.md:90 klas:F -->
+<!-- fc id:T-Z-023 sha:5128351f src:dodatky/z-pokazhchyk.md:90 status:unchecked -->
 ### T-Z-023 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -667,7 +667,7 @@ BME280 — 105–107, 215, 257, 259, 261, 264, 325–326, 328, 332, 334, 336, 34
 
 ---
 
-<!-- fc id:T-Z-024 sha:5c752088 src:dodatky/z-pokazhchyk.md:96 klas:A -->
+<!-- fc id:T-Z-024 sha:5c752088 src:dodatky/z-pokazhchyk.md:96 status:verbatim -->
 ### T-Z-024 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -694,7 +694,7 @@ bootloader — 5, 15, 18, 26, 98, 117–120, 124–125, 135, 143, 373, 376, 381,
 
 ---
 
-<!-- fc id:T-Z-025 sha:44fa55f9 src:dodatky/z-pokazhchyk.md:98 klas:F -->
+<!-- fc id:T-Z-025 sha:44fa55f9 src:dodatky/z-pokazhchyk.md:98 status:unchecked -->
 ### T-Z-025 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -715,7 +715,7 @@ brownout — 5, 21, 32, 62–63, 66–67, 70, 121, 136, 141, 169–170, 181, 204
 
 ---
 
-<!-- fc id:T-Z-026 sha:b93e1d3b src:dodatky/z-pokazhchyk.md:105 klas:F -->
+<!-- fc id:T-Z-026 sha:b93e1d3b src:dodatky/z-pokazhchyk.md:105 status:unchecked -->
 ### T-Z-026 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -736,7 +736,7 @@ CH340 — 11, 25, 79, 83, 87, 114, 180, 366, 391
 
 ---
 
-<!-- fc id:T-Z-027 sha:35a39668 src:dodatky/z-pokazhchyk.md:111 klas:F -->
+<!-- fc id:T-Z-027 sha:35a39668 src:dodatky/z-pokazhchyk.md:111 status:unchecked -->
 ### T-Z-027 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -757,7 +757,7 @@ CH9102 — 11, 14, 29, 79, 83, 87, 114, 121, 180, 366, 391
 
 ---
 
-<!-- fc id:T-Z-028 sha:31a4e8dd src:dodatky/z-pokazhchyk.md:117 klas:A -->
+<!-- fc id:T-Z-028 sha:31a4e8dd src:dodatky/z-pokazhchyk.md:117 status:verbatim -->
 ### T-Z-028 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -793,7 +793,7 @@ CONFIG_BOOTLOADER_OFFSET_IN_FLASH — 118, 376
 
 ---
 
-<!-- fc id:T-Z-029 sha:7f2ebdca src:dodatky/z-pokazhchyk.md:119 klas:A -->
+<!-- fc id:T-Z-029 sha:7f2ebdca src:dodatky/z-pokazhchyk.md:119 status:verbatim -->
 ### T-Z-029 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -839,7 +839,7 @@ CONFIG_ESP_SYSTEM_USE_EH_FRAME — 168
 
 ---
 
-<!-- fc id:T-Z-030 sha:34b8b629 src:dodatky/z-pokazhchyk.md:123 klas:F -->
+<!-- fc id:T-Z-030 sha:34b8b629 src:dodatky/z-pokazhchyk.md:123 status:unchecked -->
 ### T-Z-030 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -860,7 +860,7 @@ CONFIG_IDF_TARGET_ESP32C3 — 337
 
 ---
 
-<!-- fc id:T-Z-031 sha:2ed6278b src:dodatky/z-pokazhchyk.md:125 klas:F -->
+<!-- fc id:T-Z-031 sha:2ed6278b src:dodatky/z-pokazhchyk.md:125 status:unchecked -->
 ### T-Z-031 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -881,7 +881,7 @@ CONFIG_IDF_TARGET_ESP32S3 — 327
 
 ---
 
-<!-- fc id:T-Z-032 sha:5fda4b3d src:dodatky/z-pokazhchyk.md:127 klas:F -->
+<!-- fc id:T-Z-032 sha:5fda4b3d src:dodatky/z-pokazhchyk.md:127 status:unchecked -->
 ### T-Z-032 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -902,7 +902,7 @@ CONFIG_PARTITION_TABLE_OFFSET — 119
 
 ---
 
-<!-- fc id:T-Z-033 sha:a908917d src:dodatky/z-pokazhchyk.md:131 klas:A -->
+<!-- fc id:T-Z-033 sha:a908917d src:dodatky/z-pokazhchyk.md:131 status:verbatim -->
 ### T-Z-033 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -962,7 +962,7 @@ CONFIG_SPIRAM_MALLOC_ALWAYSINTERNAL — 188
 
 ---
 
-<!-- fc id:T-Z-034 sha:cc8e5d13 src:dodatky/z-pokazhchyk.md:133 klas:F -->
+<!-- fc id:T-Z-034 sha:cc8e5d13 src:dodatky/z-pokazhchyk.md:133 status:unchecked -->
 ### T-Z-034 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -983,7 +983,7 @@ coredump — 20, 25, 96–97, 99, 101, 113, 165, 170–171, 174–175, 184, 200,
 
 ---
 
-<!-- fc id:T-Z-035 sha:009e66e9 src:dodatky/z-pokazhchyk.md:135 klas:A -->
+<!-- fc id:T-Z-035 sha:009e66e9 src:dodatky/z-pokazhchyk.md:135 status:verbatim -->
 ### T-Z-035 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1010,7 +1010,7 @@ CP2102 — 11, 25, 29, 79, 81, 83, 114, 366, 391
 
 ---
 
-<!-- fc id:T-Z-036 sha:f4792e2d src:dodatky/z-pokazhchyk.md:144 klas:E -->
+<!-- fc id:T-Z-036 sha:f4792e2d src:dodatky/z-pokazhchyk.md:144 status:no-external-signal -->
 ### T-Z-036 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1031,7 +1031,7 @@ DevKit — 29, 39, 76, 80, 82
 
 ---
 
-<!-- fc id:T-Z-037 sha:eb7d8534 src:dodatky/z-pokazhchyk.md:146 klas:E -->
+<!-- fc id:T-Z-037 sha:eb7d8534 src:dodatky/z-pokazhchyk.md:146 status:no-external-signal -->
 ### T-Z-037 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1052,7 +1052,7 @@ DevKitC — 23, 39, 48, 80, 82, 84, 87, 205, 325–326, 348
 
 ---
 
-<!-- fc id:T-Z-038 sha:18c8ab11 src:dodatky/z-pokazhchyk.md:154 klas:A -->
+<!-- fc id:T-Z-038 sha:18c8ab11 src:dodatky/z-pokazhchyk.md:154 status:verbatim -->
 ### T-Z-038 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1079,7 +1079,7 @@ DMA — 50, 52, 55–56, 188, 220, 222, 281, 368, 398
 
 ---
 
-<!-- fc id:T-Z-039 sha:6598b14c src:dodatky/z-pokazhchyk.md:158 klas:F -->
+<!-- fc id:T-Z-039 sha:6598b14c src:dodatky/z-pokazhchyk.md:158 status:unchecked -->
 ### T-Z-039 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1100,7 +1100,7 @@ DRV8833 — 274–275, 277, 389
 
 ---
 
-<!-- fc id:T-Z-040 sha:4907dc39 src:dodatky/z-pokazhchyk.md:160 klas:F -->
+<!-- fc id:T-Z-040 sha:4907dc39 src:dodatky/z-pokazhchyk.md:160 status:unchecked -->
 ### T-Z-040 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1121,7 +1121,7 @@ DS18B20 — 149, 223, 261, 264, 310–311, 333–334, 336, 340, 369, 388, 402
 
 ---
 
-<!-- fc id:T-Z-041 sha:9ff5499d src:dodatky/z-pokazhchyk.md:164 klas:F -->
+<!-- fc id:T-Z-041 sha:9ff5499d src:dodatky/z-pokazhchyk.md:164 status:unchecked -->
 ### T-Z-041 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1142,7 +1142,7 @@ DS3231 — 334, 336, 340, 386
 
 ---
 
-<!-- fc id:T-Z-042 sha:952a6e63 src:dodatky/z-pokazhchyk.md:171 klas:F -->
+<!-- fc id:T-Z-042 sha:952a6e63 src:dodatky/z-pokazhchyk.md:171 status:unchecked -->
 ### T-Z-042 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1163,7 +1163,7 @@ eFuse — 4, 27, 37, 74, 123, 131, 139–140, 142, 145, 159, 175, 206, 285, 335,
 
 ---
 
-<!-- fc id:T-Z-043 sha:722f6f8e src:dodatky/z-pokazhchyk.md:173 klas:E -->
+<!-- fc id:T-Z-043 sha:722f6f8e src:dodatky/z-pokazhchyk.md:173 status:no-external-signal -->
 ### T-Z-043 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1184,7 +1184,7 @@ erase-flash — 9, 22, 25, 27, 36, 96, 120, 125, 129, 133, 141, 150, 373
 
 ---
 
-<!-- fc id:T-Z-044 sha:f13cfdc1 src:dodatky/z-pokazhchyk.md:175 klas:A -->
+<!-- fc id:T-Z-044 sha:f13cfdc1 src:dodatky/z-pokazhchyk.md:175 status:verbatim -->
 ### T-Z-044 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1211,7 +1211,7 @@ ESP-NOW — 69, 231, 233, 236, 240, 246–249, 251, 255, 283, 286, 316, 333, 341
 
 ---
 
-<!-- fc id:T-Z-045 sha:67b395e6 src:dodatky/z-pokazhchyk.md:179 klas:F -->
+<!-- fc id:T-Z-045 sha:67b395e6 src:dodatky/z-pokazhchyk.md:179 status:unchecked -->
 ### T-Z-045 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1232,7 +1232,7 @@ ESP32-C3 — 7, 24, 39, 44, 80, 152, 364
 
 ---
 
-<!-- fc id:T-Z-046 sha:ce874446 src:dodatky/z-pokazhchyk.md:181 klas:A -->
+<!-- fc id:T-Z-046 sha:ce874446 src:dodatky/z-pokazhchyk.md:181 status:verbatim -->
 ### T-Z-046 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1259,7 +1259,7 @@ ESP32-C3-MINI-1 — 7, 79, 152, 401
 
 ---
 
-<!-- fc id:T-Z-047 sha:774b42d4 src:dodatky/z-pokazhchyk.md:187 klas:A -->
+<!-- fc id:T-Z-047 sha:774b42d4 src:dodatky/z-pokazhchyk.md:187 status:verbatim -->
 ### T-Z-047 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1286,7 +1286,7 @@ ESP32-CAM — 14, 80, 82, 279–281
 
 ---
 
-<!-- fc id:T-Z-048 sha:20d22001 src:dodatky/z-pokazhchyk.md:197 klas:A -->
+<!-- fc id:T-Z-048 sha:20d22001 src:dodatky/z-pokazhchyk.md:197 status:verbatim -->
 ### T-Z-048 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1313,7 +1313,7 @@ ESP32-S2 — 45–46, 118, 242
 
 ---
 
-<!-- fc id:T-Z-049 sha:b1d5d4f1 src:dodatky/z-pokazhchyk.md:199 klas:A -->
+<!-- fc id:T-Z-049 sha:b1d5d4f1 src:dodatky/z-pokazhchyk.md:199 status:verbatim -->
 ### T-Z-049 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1340,7 +1340,7 @@ ESP32-S3 — 7, 23, 39, 44, 118, 127, 141, 152, 363
 
 ---
 
-<!-- fc id:T-Z-050 sha:c4be7e3b src:dodatky/z-pokazhchyk.md:203 klas:F -->
+<!-- fc id:T-Z-050 sha:c4be7e3b src:dodatky/z-pokazhchyk.md:203 status:unchecked -->
 ### T-Z-050 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1361,7 +1361,7 @@ ESP32-S3-WROOM-1 — 7, 39, 79, 152, 401
 
 ---
 
-<!-- fc id:T-Z-051 sha:1ca78200 src:dodatky/z-pokazhchyk.md:205 klas:A -->
+<!-- fc id:T-Z-051 sha:1ca78200 src:dodatky/z-pokazhchyk.md:205 status:verbatim -->
 ### T-Z-051 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1388,7 +1388,7 @@ ESP32-WROOM-32 — 7, 39, 79, 123, 152, 401
 
 ---
 
-<!-- fc id:T-Z-052 sha:3f483cad src:dodatky/z-pokazhchyk.md:207 klas:A -->
+<!-- fc id:T-Z-052 sha:3f483cad src:dodatky/z-pokazhchyk.md:207 status:verbatim -->
 ### T-Z-052 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1415,7 +1415,7 @@ ESP32-WROOM-32D — 79, 152
 
 ---
 
-<!-- fc id:T-Z-053 sha:f8140c8b src:dodatky/z-pokazhchyk.md:209 klas:A -->
+<!-- fc id:T-Z-053 sha:f8140c8b src:dodatky/z-pokazhchyk.md:209 status:verbatim -->
 ### T-Z-053 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1442,7 +1442,7 @@ ESP32-WROVER — 7, 79, 152
 
 ---
 
-<!-- fc id:T-Z-054 sha:91e58176 src:dodatky/z-pokazhchyk.md:211 klas:A -->
+<!-- fc id:T-Z-054 sha:91e58176 src:dodatky/z-pokazhchyk.md:211 status:verbatim -->
 ### T-Z-054 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1469,7 +1469,7 @@ ESP8266 — 7, 18, 21, 80, 123, 152, 155, 162, 246, 367
 
 ---
 
-<!-- fc id:T-Z-055 sha:c3ee87eb src:dodatky/z-pokazhchyk.md:215 klas:A -->
+<!-- fc id:T-Z-055 sha:c3ee87eb src:dodatky/z-pokazhchyk.md:215 status:verbatim -->
 ### T-Z-055 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1496,7 +1496,7 @@ esp_deep_sleep_start — 68, 100, 338, 340, 344
 
 ---
 
-<!-- fc id:T-Z-056 sha:a90a87b0 src:dodatky/z-pokazhchyk.md:217 klas:A -->
+<!-- fc id:T-Z-056 sha:a90a87b0 src:dodatky/z-pokazhchyk.md:217 status:verbatim -->
 ### T-Z-056 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1523,7 +1523,7 @@ ESP_ERR_INVALID_ARG — 207, 326
 
 ---
 
-<!-- fc id:T-Z-057 sha:81ea0828 src:dodatky/z-pokazhchyk.md:219 klas:E -->
+<!-- fc id:T-Z-057 sha:81ea0828 src:dodatky/z-pokazhchyk.md:219 status:no-external-signal -->
 ### T-Z-057 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1544,7 +1544,7 @@ ESP_ERR_INVALID_STATE — 329
 
 ---
 
-<!-- fc id:T-Z-058 sha:a651db0a src:dodatky/z-pokazhchyk.md:225 klas:F -->
+<!-- fc id:T-Z-058 sha:a651db0a src:dodatky/z-pokazhchyk.md:225 status:unchecked -->
 ### T-Z-058 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1565,7 +1565,7 @@ ESP_ERR_NVS_NEW_VERSION_FOUND — 131, 331
 
 ---
 
-<!-- fc id:T-Z-059 sha:11031f0f src:dodatky/z-pokazhchyk.md:227 klas:F -->
+<!-- fc id:T-Z-059 sha:11031f0f src:dodatky/z-pokazhchyk.md:227 status:unchecked -->
 ### T-Z-059 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1586,7 +1586,7 @@ ESP_ERR_NVS_NO_FREE_PAGES — 131, 331
 
 ---
 
-<!-- fc id:T-Z-060 sha:7170035b src:dodatky/z-pokazhchyk.md:229 klas:F -->
+<!-- fc id:T-Z-060 sha:7170035b src:dodatky/z-pokazhchyk.md:229 status:unchecked -->
 ### T-Z-060 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1607,7 +1607,7 @@ ESP_ERR_OTA_PARTITION_CONFLICT — 137
 
 ---
 
-<!-- fc id:T-Z-061 sha:39f42f7c src:dodatky/z-pokazhchyk.md:231 klas:F -->
+<!-- fc id:T-Z-061 sha:39f42f7c src:dodatky/z-pokazhchyk.md:231 status:unchecked -->
 ### T-Z-061 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1628,7 +1628,7 @@ ESP_ERR_OTA_VALIDATE_FAILED — 137
 
 ---
 
-<!-- fc id:T-Z-062 sha:cc15acbb src:dodatky/z-pokazhchyk.md:233 klas:A -->
+<!-- fc id:T-Z-062 sha:cc15acbb src:dodatky/z-pokazhchyk.md:233 status:verbatim -->
 ### T-Z-062 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1655,7 +1655,7 @@ esp_err_t — 131, 136, 164, 197–198, 327, 329–331, 354
 
 ---
 
-<!-- fc id:T-Z-063 sha:9b9571ae src:dodatky/z-pokazhchyk.md:235 klas:A -->
+<!-- fc id:T-Z-063 sha:9b9571ae src:dodatky/z-pokazhchyk.md:235 status:verbatim -->
 ### T-Z-063 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1692,7 +1692,7 @@ esp_err_to_name — 136, 164, 197–198, 321, 330
 
 ---
 
-<!-- fc id:T-Z-064 sha:fa78d7ba src:dodatky/z-pokazhchyk.md:237 klas:E -->
+<!-- fc id:T-Z-064 sha:fa78d7ba src:dodatky/z-pokazhchyk.md:237 status:no-external-signal -->
 ### T-Z-064 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1713,7 +1713,7 @@ esp_get_free_heap_size — 190, 330
 
 ---
 
-<!-- fc id:T-Z-065 sha:c3e0ffa1 src:dodatky/z-pokazhchyk.md:239 klas:E -->
+<!-- fc id:T-Z-065 sha:c3e0ffa1 src:dodatky/z-pokazhchyk.md:239 status:no-external-signal -->
 ### T-Z-065 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1734,7 +1734,7 @@ esp_get_minimum_free_heap_size — 190, 330
 
 ---
 
-<!-- fc id:T-Z-066 sha:eeac9ffc src:dodatky/z-pokazhchyk.md:241 klas:E -->
+<!-- fc id:T-Z-066 sha:eeac9ffc src:dodatky/z-pokazhchyk.md:241 status:no-external-signal -->
 ### T-Z-066 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1755,7 +1755,7 @@ esp_http_client_config_t — 136
 
 ---
 
-<!-- fc id:T-Z-067 sha:c28d0b8b src:dodatky/z-pokazhchyk.md:245 klas:A -->
+<!-- fc id:T-Z-067 sha:c28d0b8b src:dodatky/z-pokazhchyk.md:245 status:verbatim -->
 ### T-Z-067 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1792,7 +1792,7 @@ esp_https_ota_begin — 136
 
 ---
 
-<!-- fc id:T-Z-068 sha:284bf105 src:dodatky/z-pokazhchyk.md:247 klas:A -->
+<!-- fc id:T-Z-068 sha:284bf105 src:dodatky/z-pokazhchyk.md:247 status:verbatim -->
 ### T-Z-068 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1829,7 +1829,7 @@ esp_https_ota_config_t — 136
 
 ---
 
-<!-- fc id:T-Z-069 sha:9ba03a3f src:dodatky/z-pokazhchyk.md:249 klas:A -->
+<!-- fc id:T-Z-069 sha:9ba03a3f src:dodatky/z-pokazhchyk.md:249 status:verbatim -->
 ### T-Z-069 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1866,7 +1866,7 @@ esp_https_ota_finish — 136
 
 ---
 
-<!-- fc id:T-Z-070 sha:b6a37407 src:dodatky/z-pokazhchyk.md:251 klas:A -->
+<!-- fc id:T-Z-070 sha:b6a37407 src:dodatky/z-pokazhchyk.md:251 status:verbatim -->
 ### T-Z-070 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1903,7 +1903,7 @@ esp_https_ota_perform — 136
 
 ---
 
-<!-- fc id:T-Z-071 sha:f1d3f0b8 src:dodatky/z-pokazhchyk.md:261 klas:A -->
+<!-- fc id:T-Z-071 sha:f1d3f0b8 src:dodatky/z-pokazhchyk.md:261 status:verbatim -->
 ### T-Z-071 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1940,7 +1940,7 @@ esp_log_level_set — 163–164
 
 ---
 
-<!-- fc id:T-Z-072 sha:3d181c15 src:dodatky/z-pokazhchyk.md:265 klas:A -->
+<!-- fc id:T-Z-072 sha:3d181c15 src:dodatky/z-pokazhchyk.md:265 status:verbatim -->
 ### T-Z-072 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -1977,7 +1977,7 @@ esp_mqtt_client_config_t — 239
 
 ---
 
-<!-- fc id:T-Z-073 sha:9f0432e8 src:dodatky/z-pokazhchyk.md:267 klas:A -->
+<!-- fc id:T-Z-073 sha:9f0432e8 src:dodatky/z-pokazhchyk.md:267 status:verbatim -->
 ### T-Z-073 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2014,7 +2014,7 @@ esp_mqtt_client_handle_t — 239
 
 ---
 
-<!-- fc id:T-Z-074 sha:3ee4d41e src:dodatky/z-pokazhchyk.md:269 klas:A -->
+<!-- fc id:T-Z-074 sha:3ee4d41e src:dodatky/z-pokazhchyk.md:269 status:verbatim -->
 ### T-Z-074 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2051,7 +2051,7 @@ esp_mqtt_client_init — 239
 
 ---
 
-<!-- fc id:T-Z-075 sha:c84dd1ab src:dodatky/z-pokazhchyk.md:271 klas:A -->
+<!-- fc id:T-Z-075 sha:c84dd1ab src:dodatky/z-pokazhchyk.md:271 status:verbatim -->
 ### T-Z-075 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2088,7 +2088,7 @@ esp_mqtt_client_publish — 239
 
 ---
 
-<!-- fc id:T-Z-076 sha:bd2dfd83 src:dodatky/z-pokazhchyk.md:273 klas:A -->
+<!-- fc id:T-Z-076 sha:bd2dfd83 src:dodatky/z-pokazhchyk.md:273 status:verbatim -->
 ### T-Z-076 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2125,7 +2125,7 @@ esp_mqtt_client_register_event — 239
 
 ---
 
-<!-- fc id:T-Z-077 sha:2ec86748 src:dodatky/z-pokazhchyk.md:275 klas:A -->
+<!-- fc id:T-Z-077 sha:2ec86748 src:dodatky/z-pokazhchyk.md:275 status:verbatim -->
 ### T-Z-077 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2162,7 +2162,7 @@ esp_mqtt_client_start — 239
 
 ---
 
-<!-- fc id:T-Z-078 sha:1b71deeb src:dodatky/z-pokazhchyk.md:277 klas:A -->
+<!-- fc id:T-Z-078 sha:1b71deeb src:dodatky/z-pokazhchyk.md:277 status:verbatim -->
 ### T-Z-078 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2199,7 +2199,7 @@ esp_now_add_peer — 246, 345
 
 ---
 
-<!-- fc id:T-Z-079 sha:b9877995 src:dodatky/z-pokazhchyk.md:281 klas:A -->
+<!-- fc id:T-Z-079 sha:b9877995 src:dodatky/z-pokazhchyk.md:281 status:verbatim -->
 ### T-Z-079 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2236,7 +2236,7 @@ esp_now_peer_info_t — 246, 345
 
 ---
 
-<!-- fc id:T-Z-080 sha:532800ce src:dodatky/z-pokazhchyk.md:283 klas:A -->
+<!-- fc id:T-Z-080 sha:532800ce src:dodatky/z-pokazhchyk.md:283 status:verbatim -->
 ### T-Z-080 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2269,7 +2269,7 @@ esp_now_recv_info_t — 247, 345
 
 ---
 
-<!-- fc id:T-Z-081 sha:130c65fa src:dodatky/z-pokazhchyk.md:285 klas:A -->
+<!-- fc id:T-Z-081 sha:130c65fa src:dodatky/z-pokazhchyk.md:285 status:verbatim -->
 ### T-Z-081 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2306,7 +2306,7 @@ esp_now_register_recv_cb — 247
 
 ---
 
-<!-- fc id:T-Z-082 sha:631a5c34 src:dodatky/z-pokazhchyk.md:287 klas:A -->
+<!-- fc id:T-Z-082 sha:631a5c34 src:dodatky/z-pokazhchyk.md:287 status:verbatim -->
 ### T-Z-082 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2343,7 +2343,7 @@ esp_now_register_send_cb — 345
 
 ---
 
-<!-- fc id:T-Z-083 sha:ea6c7472 src:dodatky/z-pokazhchyk.md:289 klas:A -->
+<!-- fc id:T-Z-083 sha:ea6c7472 src:dodatky/z-pokazhchyk.md:289 status:verbatim -->
 ### T-Z-083 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2380,7 +2380,7 @@ esp_now_send — 246, 343–344
 
 ---
 
-<!-- fc id:T-Z-084 sha:0e9d7f57 src:dodatky/z-pokazhchyk.md:291 klas:A -->
+<!-- fc id:T-Z-084 sha:0e9d7f57 src:dodatky/z-pokazhchyk.md:291 status:verbatim -->
 ### T-Z-084 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2413,7 +2413,7 @@ esp_now_send_info_t — 343–344
 
 ---
 
-<!-- fc id:T-Z-085 sha:f103d234 src:dodatky/z-pokazhchyk.md:293 klas:A -->
+<!-- fc id:T-Z-085 sha:f103d234 src:dodatky/z-pokazhchyk.md:293 status:verbatim -->
 ### T-Z-085 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2450,7 +2450,7 @@ esp_now_send_status_t — 343
 
 ---
 
-<!-- fc id:T-Z-086 sha:a548ba47 src:dodatky/z-pokazhchyk.md:295 klas:A -->
+<!-- fc id:T-Z-086 sha:a548ba47 src:dodatky/z-pokazhchyk.md:295 status:verbatim -->
 ### T-Z-086 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2487,7 +2487,7 @@ esp_now_set_pmk — 248, 345
 
 ---
 
-<!-- fc id:T-Z-087 sha:32e5c1e0 src:dodatky/z-pokazhchyk.md:297 klas:A -->
+<!-- fc id:T-Z-087 sha:32e5c1e0 src:dodatky/z-pokazhchyk.md:297 status:verbatim -->
 ### T-Z-087 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2521,7 +2521,7 @@ esp_ota_mark_app_valid_cancel_rollback — 135
 
 ---
 
-<!-- fc id:T-Z-088 sha:41bc5af8 src:dodatky/z-pokazhchyk.md:299 klas:A -->
+<!-- fc id:T-Z-088 sha:41bc5af8 src:dodatky/z-pokazhchyk.md:299 status:verbatim -->
 ### T-Z-088 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2558,7 +2558,7 @@ esp_reset_reason — 170, 184, 186, 331, 379
 
 ---
 
-<!-- fc id:T-Z-089 sha:3fe6a7c5 src:dodatky/z-pokazhchyk.md:301 klas:A -->
+<!-- fc id:T-Z-089 sha:3fe6a7c5 src:dodatky/z-pokazhchyk.md:301 status:verbatim -->
 ### T-Z-089 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2595,7 +2595,7 @@ esp_restart — 17, 136, 378
 
 ---
 
-<!-- fc id:T-Z-090 sha:3fcb5516 src:dodatky/z-pokazhchyk.md:307 klas:A -->
+<!-- fc id:T-Z-090 sha:3fcb5516 src:dodatky/z-pokazhchyk.md:307 status:verbatim -->
 ### T-Z-090 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2632,7 +2632,7 @@ esp_sleep_enable_timer_wakeup — 68, 340, 344
 
 ---
 
-<!-- fc id:T-Z-091 sha:69e2ffca src:dodatky/z-pokazhchyk.md:309 klas:A -->
+<!-- fc id:T-Z-091 sha:69e2ffca src:dodatky/z-pokazhchyk.md:309 status:verbatim -->
 ### T-Z-091 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2669,7 +2669,7 @@ esp_sleep_get_wakeup_cause — 338
 
 ---
 
-<!-- fc id:T-Z-092 sha:ae8473d2 src:dodatky/z-pokazhchyk.md:315 klas:A -->
+<!-- fc id:T-Z-092 sha:ae8473d2 src:dodatky/z-pokazhchyk.md:315 status:verbatim -->
 ### T-Z-092 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2706,7 +2706,7 @@ esp_sntp_setoperatingmode — 238
 
 ---
 
-<!-- fc id:T-Z-093 sha:9427709c src:dodatky/z-pokazhchyk.md:317 klas:A -->
+<!-- fc id:T-Z-093 sha:9427709c src:dodatky/z-pokazhchyk.md:317 status:verbatim -->
 ### T-Z-093 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2743,7 +2743,7 @@ esp_sntp_setservername — 238
 
 ---
 
-<!-- fc id:T-Z-094 sha:baf9c18f src:dodatky/z-pokazhchyk.md:321 klas:A -->
+<!-- fc id:T-Z-094 sha:baf9c18f src:dodatky/z-pokazhchyk.md:321 status:verbatim -->
 ### T-Z-094 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2780,7 +2780,7 @@ esp_task_wdt_add — 169, 199, 352
 
 ---
 
-<!-- fc id:T-Z-095 sha:dda9743b src:dodatky/z-pokazhchyk.md:323 klas:A -->
+<!-- fc id:T-Z-095 sha:dda9743b src:dodatky/z-pokazhchyk.md:323 status:verbatim -->
 ### T-Z-095 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2817,7 +2817,7 @@ esp_task_wdt_reset — 169, 199, 352
 
 ---
 
-<!-- fc id:T-Z-096 sha:0e6765a6 src:dodatky/z-pokazhchyk.md:329 klas:A -->
+<!-- fc id:T-Z-096 sha:0e6765a6 src:dodatky/z-pokazhchyk.md:329 status:verbatim -->
 ### T-Z-096 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2854,7 +2854,7 @@ esp_timer_create_args_t — 203
 
 ---
 
-<!-- fc id:T-Z-097 sha:fb423857 src:dodatky/z-pokazhchyk.md:331 klas:A -->
+<!-- fc id:T-Z-097 sha:fb423857 src:dodatky/z-pokazhchyk.md:331 status:verbatim -->
 ### T-Z-097 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2891,7 +2891,7 @@ esp_timer_get_time — 193, 203, 330, 346, 351–352
 
 ---
 
-<!-- fc id:T-Z-098 sha:64e0e366 src:dodatky/z-pokazhchyk.md:335 klas:A -->
+<!-- fc id:T-Z-098 sha:64e0e366 src:dodatky/z-pokazhchyk.md:335 status:verbatim -->
 ### T-Z-098 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2928,7 +2928,7 @@ esp_timer_start_once — 234
 
 ---
 
-<!-- fc id:T-Z-099 sha:7aaa4ea1 src:dodatky/z-pokazhchyk.md:337 klas:A -->
+<!-- fc id:T-Z-099 sha:7aaa4ea1 src:dodatky/z-pokazhchyk.md:337 status:verbatim -->
 ### T-Z-099 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2965,7 +2965,7 @@ esp_timer_start_periodic — 203
 
 ---
 
-<!-- fc id:T-Z-100 sha:6b02c095 src:dodatky/z-pokazhchyk.md:341 klas:E -->
+<!-- fc id:T-Z-100 sha:6b02c095 src:dodatky/z-pokazhchyk.md:341 status:no-external-signal -->
 ### T-Z-100 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -2986,7 +2986,7 @@ esp_vfs_fat_spiflash_mount_rw_wl — 132
 
 ---
 
-<!-- fc id:T-Z-101 sha:f7bf95ca src:dodatky/z-pokazhchyk.md:343 klas:A -->
+<!-- fc id:T-Z-101 sha:f7bf95ca src:dodatky/z-pokazhchyk.md:343 status:verbatim -->
 ### T-Z-101 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3023,7 +3023,7 @@ esp_wifi_connect — 233–234
 
 ---
 
-<!-- fc id:T-Z-102 sha:72e7f9ae src:dodatky/z-pokazhchyk.md:347 klas:A -->
+<!-- fc id:T-Z-102 sha:72e7f9ae src:dodatky/z-pokazhchyk.md:347 status:verbatim -->
 ### T-Z-102 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3060,7 +3060,7 @@ esp_wifi_set_config — 233
 
 ---
 
-<!-- fc id:T-Z-103 sha:7f1d18d1 src:dodatky/z-pokazhchyk.md:349 klas:A -->
+<!-- fc id:T-Z-103 sha:7f1d18d1 src:dodatky/z-pokazhchyk.md:349 status:verbatim -->
 ### T-Z-103 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3097,7 +3097,7 @@ esp_wifi_set_max_tx_power — 236
 
 ---
 
-<!-- fc id:T-Z-104 sha:6457cd2a src:dodatky/z-pokazhchyk.md:353 klas:A -->
+<!-- fc id:T-Z-104 sha:6457cd2a src:dodatky/z-pokazhchyk.md:353 status:verbatim -->
 ### T-Z-104 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3134,7 +3134,7 @@ esp_wifi_sta_get_ap_info — 235
 
 ---
 
-<!-- fc id:T-Z-105 sha:f99c40f6 src:dodatky/z-pokazhchyk.md:355 klas:A -->
+<!-- fc id:T-Z-105 sha:f99c40f6 src:dodatky/z-pokazhchyk.md:355 status:verbatim -->
 ### T-Z-105 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3171,7 +3171,7 @@ esp_wifi_start — 75, 205, 233
 
 ---
 
-<!-- fc id:T-Z-106 sha:922a86c3 src:dodatky/z-pokazhchyk.md:357 klas:E -->
+<!-- fc id:T-Z-106 sha:922a86c3 src:dodatky/z-pokazhchyk.md:357 status:no-external-signal -->
 ### T-Z-106 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3192,7 +3192,7 @@ espefuse — 27, 37, 139, 142, 159, 175, 374
 
 ---
 
-<!-- fc id:T-Z-107 sha:1c4fdbb5 src:dodatky/z-pokazhchyk.md:366 klas:A -->
+<!-- fc id:T-Z-107 sha:1c4fdbb5 src:dodatky/z-pokazhchyk.md:366 status:verbatim -->
 ### T-Z-107 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3235,7 +3235,7 @@ flash-id — 8–9, 25, 81, 123, 128, 140, 149, 154, 373
 
 ---
 
-<!-- fc id:T-Z-108 sha:9555b56c src:dodatky/z-pokazhchyk.md:368 klas:A -->
+<!-- fc id:T-Z-108 sha:9555b56c src:dodatky/z-pokazhchyk.md:368 status:verbatim -->
 ### T-Z-108 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3262,7 +3262,7 @@ FreeRTOS — 4–5, 40–41, 46, 94, 100, 103, 117, 143, 173, 185–187, 190–1
 
 ---
 
-<!-- fc id:T-Z-109 sha:20becf37 src:dodatky/z-pokazhchyk.md:389 klas:A -->
+<!-- fc id:T-Z-109 sha:20becf37 src:dodatky/z-pokazhchyk.md:389 status:verbatim -->
 ### T-Z-109 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3289,7 +3289,7 @@ GPIO12 — 14, 17, 28, 71–72, 74, 77, 118, 142, 173, 175, 311, 335, 367, 379�
 
 ---
 
-<!-- fc id:T-Z-110 sha:e487200c src:dodatky/z-pokazhchyk.md:395 klas:A -->
+<!-- fc id:T-Z-110 sha:e487200c src:dodatky/z-pokazhchyk.md:395 status:verbatim -->
 ### T-Z-110 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3316,7 +3316,7 @@ GPIO15 — 14, 17–18, 28, 71, 142, 173, 379
 
 ---
 
-<!-- fc id:T-Z-111 sha:7872cc46 src:dodatky/z-pokazhchyk.md:399 klas:A -->
+<!-- fc id:T-Z-111 sha:7872cc46 src:dodatky/z-pokazhchyk.md:399 status:verbatim -->
 ### T-Z-111 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3343,7 +3343,7 @@ GPIO17 — 67, 73–75, 206, 335
 
 ---
 
-<!-- fc id:T-Z-112 sha:73fb60a8 src:dodatky/z-pokazhchyk.md:401 klas:A -->
+<!-- fc id:T-Z-112 sha:73fb60a8 src:dodatky/z-pokazhchyk.md:401 status:verbatim -->
 ### T-Z-112 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3370,7 +3370,7 @@ GPIO18 — 75, 172, 206, 335
 
 ---
 
-<!-- fc id:T-Z-113 sha:6c971eec src:dodatky/z-pokazhchyk.md:405 klas:A -->
+<!-- fc id:T-Z-113 sha:6c971eec src:dodatky/z-pokazhchyk.md:405 status:verbatim -->
 ### T-Z-113 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3397,7 +3397,7 @@ GPIO2 — 13–14, 17, 28, 71–72, 142, 335–337, 379
 
 ---
 
-<!-- fc id:T-Z-114 sha:c240fc86 src:dodatky/z-pokazhchyk.md:409 klas:A -->
+<!-- fc id:T-Z-114 sha:c240fc86 src:dodatky/z-pokazhchyk.md:409 status:verbatim -->
 ### T-Z-114 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3424,7 +3424,7 @@ GPIO21 — 149, 310, 326, 335
 
 ---
 
-<!-- fc id:T-Z-115 sha:10ba97d4 src:dodatky/z-pokazhchyk.md:411 klas:A -->
+<!-- fc id:T-Z-115 sha:10ba97d4 src:dodatky/z-pokazhchyk.md:411 status:verbatim -->
 ### T-Z-115 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3451,7 +3451,7 @@ GPIO22 — 149, 310, 326, 335
 
 ---
 
-<!-- fc id:T-Z-116 sha:1006d6c7 src:dodatky/z-pokazhchyk.md:415 klas:A -->
+<!-- fc id:T-Z-116 sha:1006d6c7 src:dodatky/z-pokazhchyk.md:415 status:verbatim -->
 ### T-Z-116 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3478,7 +3478,7 @@ GPIO25 — 75, 206–207, 310, 349–350
 
 ---
 
-<!-- fc id:T-Z-117 sha:20f964a5 src:dodatky/z-pokazhchyk.md:417 klas:A -->
+<!-- fc id:T-Z-117 sha:20f964a5 src:dodatky/z-pokazhchyk.md:417 status:verbatim -->
 ### T-Z-117 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3505,7 +3505,7 @@ GPIO26 — 74–75, 206–207, 349–350
 
 ---
 
-<!-- fc id:T-Z-118 sha:8068db5c src:dodatky/z-pokazhchyk.md:421 klas:A -->
+<!-- fc id:T-Z-118 sha:8068db5c src:dodatky/z-pokazhchyk.md:421 status:verbatim -->
 ### T-Z-118 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3532,7 +3532,7 @@ GPIO3 — 14, 72, 75, 335, 337
 
 ---
 
-<!-- fc id:T-Z-119 sha:6efa65ed src:dodatky/z-pokazhchyk.md:423 klas:A -->
+<!-- fc id:T-Z-119 sha:6efa65ed src:dodatky/z-pokazhchyk.md:423 status:verbatim -->
 ### T-Z-119 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3559,7 +3559,7 @@ GPIO32 — 53, 74–75, 182, 389
 
 ---
 
-<!-- fc id:T-Z-120 sha:d116c20a src:dodatky/z-pokazhchyk.md:427 klas:A -->
+<!-- fc id:T-Z-120 sha:d116c20a src:dodatky/z-pokazhchyk.md:427 status:verbatim -->
 ### T-Z-120 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3586,7 +3586,7 @@ GPIO34 — 53, 62, 74, 77, 182, 335, 337, 349–351, 369
 
 ---
 
-<!-- fc id:T-Z-121 sha:0d0b51e5 src:dodatky/z-pokazhchyk.md:433 klas:A -->
+<!-- fc id:T-Z-121 sha:0d0b51e5 src:dodatky/z-pokazhchyk.md:433 status:verbatim -->
 ### T-Z-121 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3613,7 +3613,7 @@ GPIO4 — 9, 17, 149, 310, 335, 349, 364, 379–380
 
 ---
 
-<!-- fc id:T-Z-122 sha:d55b7b01 src:dodatky/z-pokazhchyk.md:441 klas:A -->
+<!-- fc id:T-Z-122 sha:d55b7b01 src:dodatky/z-pokazhchyk.md:441 status:verbatim -->
 ### T-Z-122 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3641,7 +3641,7 @@ GPIO5 — 14, 17, 28, 71, 142, 335, 349, 379
 
 ---
 
-<!-- fc id:T-Z-123 sha:171e5a79 src:dodatky/z-pokazhchyk.md:443 klas:A -->
+<!-- fc id:T-Z-123 sha:171e5a79 src:dodatky/z-pokazhchyk.md:443 status:verbatim -->
 ### T-Z-123 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3668,7 +3668,7 @@ GPIO6 — 21, 27, 53, 73, 76, 154, 182, 335, 349, 369
 
 ---
 
-<!-- fc id:T-Z-124 sha:2333b1a1 src:dodatky/z-pokazhchyk.md:447 klas:A -->
+<!-- fc id:T-Z-124 sha:2333b1a1 src:dodatky/z-pokazhchyk.md:447 status:verbatim -->
 ### T-Z-124 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3695,7 +3695,7 @@ GPIO8 — 13–14, 24, 72–73, 118, 205, 326, 335, 364–365, 380
 
 ---
 
-<!-- fc id:T-Z-125 sha:48f2d3bf src:dodatky/z-pokazhchyk.md:449 klas:A -->
+<!-- fc id:T-Z-125 sha:48f2d3bf src:dodatky/z-pokazhchyk.md:449 status:verbatim -->
 ### T-Z-125 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3722,7 +3722,7 @@ GPIO9 — 13–14, 17, 24, 72–73, 82, 118, 295, 326, 335, 364–365, 380
 
 ---
 
-<!-- fc id:T-Z-126 sha:1d313d38 src:dodatky/z-pokazhchyk.md:455 klas:A -->
+<!-- fc id:T-Z-126 sha:1d313d38 src:dodatky/z-pokazhchyk.md:455 status:verbatim -->
 ### T-Z-126 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3761,7 +3761,7 @@ gpio_dump_io_configuration — 183
 
 ---
 
-<!-- fc id:T-Z-127 sha:cd6b7ea4 src:dodatky/z-pokazhchyk.md:459 klas:E -->
+<!-- fc id:T-Z-127 sha:cd6b7ea4 src:dodatky/z-pokazhchyk.md:459 status:no-external-signal -->
 ### T-Z-127 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3782,7 +3782,7 @@ gpio_install_isr_service — 202
 
 ---
 
-<!-- fc id:T-Z-128 sha:fbe5b415 src:dodatky/z-pokazhchyk.md:463 klas:A -->
+<!-- fc id:T-Z-128 sha:fbe5b415 src:dodatky/z-pokazhchyk.md:463 status:verbatim -->
 ### T-Z-128 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3809,7 +3809,7 @@ gpio_isr_handler — 50, 189
 
 ---
 
-<!-- fc id:T-Z-129 sha:ce138cba src:dodatky/z-pokazhchyk.md:465 klas:E -->
+<!-- fc id:T-Z-129 sha:ce138cba src:dodatky/z-pokazhchyk.md:465 status:no-external-signal -->
 ### T-Z-129 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3830,7 +3830,7 @@ gpio_isr_handler_add — 202
 
 ---
 
-<!-- fc id:T-Z-130 sha:92bc3bfd src:dodatky/z-pokazhchyk.md:469 klas:E -->
+<!-- fc id:T-Z-130 sha:92bc3bfd src:dodatky/z-pokazhchyk.md:469 status:no-external-signal -->
 ### T-Z-130 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3851,7 +3851,7 @@ gpio_set_level — 202, 210, 339–340, 357
 
 ---
 
-<!-- fc id:T-Z-131 sha:994bdf88 src:dodatky/z-pokazhchyk.md:478 klas:A -->
+<!-- fc id:T-Z-131 sha:994bdf88 src:dodatky/z-pokazhchyk.md:478 status:verbatim -->
 ### T-Z-131 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3888,7 +3888,7 @@ httpd_register_uri_handler — 237
 
 ---
 
-<!-- fc id:T-Z-132 sha:3862e656 src:dodatky/z-pokazhchyk.md:484 klas:A -->
+<!-- fc id:T-Z-132 sha:3862e656 src:dodatky/z-pokazhchyk.md:484 status:verbatim -->
 ### T-Z-132 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3925,7 +3925,7 @@ httpd_resp_send_500 — 330
 
 ---
 
-<!-- fc id:T-Z-133 sha:eab1c596 src:dodatky/z-pokazhchyk.md:486 klas:A -->
+<!-- fc id:T-Z-133 sha:eab1c596 src:dodatky/z-pokazhchyk.md:486 status:verbatim -->
 ### T-Z-133 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3962,7 +3962,7 @@ httpd_resp_sendstr — 331, 354
 
 ---
 
-<!-- fc id:T-Z-134 sha:1f7f611d src:dodatky/z-pokazhchyk.md:488 klas:A -->
+<!-- fc id:T-Z-134 sha:1f7f611d src:dodatky/z-pokazhchyk.md:488 status:verbatim -->
 ### T-Z-134 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -3999,7 +3999,7 @@ httpd_resp_set_type — 331
 
 ---
 
-<!-- fc id:T-Z-135 sha:adfdf8c3 src:dodatky/z-pokazhchyk.md:497 klas:A -->
+<!-- fc id:T-Z-135 sha:adfdf8c3 src:dodatky/z-pokazhchyk.md:497 status:verbatim -->
 ### T-Z-135 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4026,7 +4026,7 @@ i2c_device_config_t — 215, 327
 
 ---
 
-<!-- fc id:T-Z-136 sha:3cece1de src:dodatky/z-pokazhchyk.md:501 klas:A -->
+<!-- fc id:T-Z-136 sha:3cece1de src:dodatky/z-pokazhchyk.md:501 status:verbatim -->
 ### T-Z-136 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4063,7 +4063,7 @@ i2c_master_bus_add_device — 215, 327
 
 ---
 
-<!-- fc id:T-Z-137 sha:8969fe68 src:dodatky/z-pokazhchyk.md:503 klas:A -->
+<!-- fc id:T-Z-137 sha:8969fe68 src:dodatky/z-pokazhchyk.md:503 status:verbatim -->
 ### T-Z-137 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4100,7 +4100,7 @@ i2c_master_bus_config_t — 215, 332
 
 ---
 
-<!-- fc id:T-Z-138 sha:88901eaa src:dodatky/z-pokazhchyk.md:505 klas:A -->
+<!-- fc id:T-Z-138 sha:88901eaa src:dodatky/z-pokazhchyk.md:505 status:verbatim -->
 ### T-Z-138 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4137,7 +4137,7 @@ i2c_master_bus_handle_t — 215, 327, 332
 
 ---
 
-<!-- fc id:T-Z-139 sha:a1740c94 src:dodatky/z-pokazhchyk.md:507 klas:A -->
+<!-- fc id:T-Z-139 sha:a1740c94 src:dodatky/z-pokazhchyk.md:507 status:verbatim -->
 ### T-Z-139 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4174,7 +4174,7 @@ i2c_master_dev_handle_t — 215, 327
 
 ---
 
-<!-- fc id:T-Z-140 sha:20380698 src:dodatky/z-pokazhchyk.md:509 klas:A -->
+<!-- fc id:T-Z-140 sha:20380698 src:dodatky/z-pokazhchyk.md:509 status:verbatim -->
 ### T-Z-140 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4211,7 +4211,7 @@ i2c_master_probe — 164, 197, 214
 
 ---
 
-<!-- fc id:T-Z-141 sha:8eebe599 src:dodatky/z-pokazhchyk.md:511 klas:A -->
+<!-- fc id:T-Z-141 sha:8eebe599 src:dodatky/z-pokazhchyk.md:511 status:verbatim -->
 ### T-Z-141 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4248,7 +4248,7 @@ i2c_master_transmit — 260, 327
 
 ---
 
-<!-- fc id:T-Z-142 sha:6833853b src:dodatky/z-pokazhchyk.md:513 klas:A -->
+<!-- fc id:T-Z-142 sha:6833853b src:dodatky/z-pokazhchyk.md:513 status:verbatim -->
 ### T-Z-142 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4285,7 +4285,7 @@ i2c_master_transmit_receive — 215, 260, 327
 
 ---
 
-<!-- fc id:T-Z-143 sha:af3031db src:dodatky/z-pokazhchyk.md:515 klas:A -->
+<!-- fc id:T-Z-143 sha:af3031db src:dodatky/z-pokazhchyk.md:515 status:verbatim -->
 ### T-Z-143 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4312,7 +4312,7 @@ i2c_new_master_bus — 215, 326, 332
 
 ---
 
-<!-- fc id:T-Z-144 sha:e5bd1000 src:dodatky/z-pokazhchyk.md:519 klas:A -->
+<!-- fc id:T-Z-144 sha:e5bd1000 src:dodatky/z-pokazhchyk.md:519 status:verbatim -->
 ### T-Z-144 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4339,7 +4339,7 @@ I²S — 40, 53–56, 280–281, 388, 399
 
 ---
 
-<!-- fc id:T-Z-145 sha:a345af07 src:dodatky/z-pokazhchyk.md:542 klas:A -->
+<!-- fc id:T-Z-145 sha:a345af07 src:dodatky/z-pokazhchyk.md:542 status:verbatim -->
 ### T-Z-145 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4376,7 +4376,7 @@ ledc_channel_config — 203
 
 ---
 
-<!-- fc id:T-Z-146 sha:7fb4a5a0 src:dodatky/z-pokazhchyk.md:544 klas:A -->
+<!-- fc id:T-Z-146 sha:7fb4a5a0 src:dodatky/z-pokazhchyk.md:544 status:verbatim -->
 ### T-Z-146 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4413,7 +4413,7 @@ ledc_channel_config_t — 203
 
 ---
 
-<!-- fc id:T-Z-147 sha:7257e243 src:dodatky/z-pokazhchyk.md:548 klas:A -->
+<!-- fc id:T-Z-147 sha:7257e243 src:dodatky/z-pokazhchyk.md:548 status:verbatim -->
 ### T-Z-147 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4450,7 +4450,7 @@ ledc_timer_config_t — 203
 
 ---
 
-<!-- fc id:T-Z-148 sha:b3298ff2 src:dodatky/z-pokazhchyk.md:550 klas:F -->
+<!-- fc id:T-Z-148 sha:b3298ff2 src:dodatky/z-pokazhchyk.md:550 status:unchecked -->
 ### T-Z-148 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4471,7 +4471,7 @@ LoRa — 80, 231, 249, 251–255, 283, 316, 347, 370, 387
 
 ---
 
-<!-- fc id:T-Z-149 sha:36549228 src:dodatky/z-pokazhchyk.md:561 klas:A -->
+<!-- fc id:T-Z-149 sha:36549228 src:dodatky/z-pokazhchyk.md:561 status:verbatim -->
 ### T-Z-149 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4498,7 +4498,7 @@ MALLOC_CAP_DMA — 188, 220, 222, 281, 368
 
 ---
 
-<!-- fc id:T-Z-150 sha:495ae9d9 src:dodatky/z-pokazhchyk.md:563 klas:E -->
+<!-- fc id:T-Z-150 sha:495ae9d9 src:dodatky/z-pokazhchyk.md:563 status:no-external-signal -->
 ### T-Z-150 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4519,7 +4519,7 @@ MALLOC_CAP_INTERNAL — 189
 
 ---
 
-<!-- fc id:T-Z-151 sha:c6ab4b30 src:dodatky/z-pokazhchyk.md:565 klas:A -->
+<!-- fc id:T-Z-151 sha:c6ab4b30 src:dodatky/z-pokazhchyk.md:565 status:verbatim -->
 ### T-Z-151 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4546,7 +4546,7 @@ MALLOC_CAP_SPIRAM — 153, 188–189
 
 ---
 
-<!-- fc id:T-Z-152 sha:141699b4 src:dodatky/z-pokazhchyk.md:575 klas:C -->
+<!-- fc id:T-Z-152 sha:141699b4 src:dodatky/z-pokazhchyk.md:575 status:named-unreachable -->
 ### T-Z-152 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4571,7 +4571,7 @@ MAX485 — 34, 210, 257, 387, 402
 
 ---
 
-<!-- fc id:T-Z-153 sha:92916fb0 src:dodatky/z-pokazhchyk.md:581 klas:A -->
+<!-- fc id:T-Z-153 sha:92916fb0 src:dodatky/z-pokazhchyk.md:581 status:verbatim -->
 ### T-Z-153 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4598,7 +4598,7 @@ MCP23017 — 57, 76, 365, 386
 
 ---
 
-<!-- fc id:T-Z-154 sha:14c876a2 src:dodatky/z-pokazhchyk.md:591 klas:A -->
+<!-- fc id:T-Z-154 sha:14c876a2 src:dodatky/z-pokazhchyk.md:591 status:verbatim -->
 ### T-Z-154 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4625,7 +4625,7 @@ merge-bin — 15, 25–26, 35, 125–126, 128, 137, 143–144, 146, 181, 373, 37
 
 ---
 
-<!-- fc id:T-Z-155 sha:e9f126a3 src:dodatky/z-pokazhchyk.md:595 klas:D -->
+<!-- fc id:T-Z-155 sha:e9f126a3 src:dodatky/z-pokazhchyk.md:595 status:arithmetic -->
 ### T-Z-155 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4676,7 +4676,7 @@ MicroPython — 108–112, 259
 
 ---
 
-<!-- fc id:T-Z-156 sha:725e27ef src:dodatky/z-pokazhchyk.md:597 klas:A -->
+<!-- fc id:T-Z-156 sha:725e27ef src:dodatky/z-pokazhchyk.md:597 status:verbatim -->
 ### T-Z-156 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4703,7 +4703,7 @@ Modbus — 156, 209, 211, 356, 358, 360
 
 ---
 
-<!-- fc id:T-Z-157 sha:a09d53d5 src:dodatky/z-pokazhchyk.md:599 klas:E -->
+<!-- fc id:T-Z-157 sha:a09d53d5 src:dodatky/z-pokazhchyk.md:599 status:no-external-signal -->
 ### T-Z-157 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4724,7 +4724,7 @@ monitor — 19, 25, 96, 161–163, 165, 167–168, 332, 375–376, 381
 
 ---
 
-<!-- fc id:T-Z-158 sha:9e5f988f src:dodatky/z-pokazhchyk.md:603 klas:F -->
+<!-- fc id:T-Z-158 sha:9e5f988f src:dodatky/z-pokazhchyk.md:603 status:unchecked -->
 ### T-Z-158 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4745,7 +4745,7 @@ MQTT — 157, 159, 165, 237, 239–241, 249, 333, 346, 356, 359, 377
 
 ---
 
-<!-- fc id:T-Z-159 sha:5e8f6740 src:dodatky/z-pokazhchyk.md:614 klas:A -->
+<!-- fc id:T-Z-159 sha:5e8f6740 src:dodatky/z-pokazhchyk.md:614 status:verbatim -->
 ### T-Z-159 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4782,7 +4782,7 @@ nvs_flash_erase — 131, 332
 
 ---
 
-<!-- fc id:T-Z-160 sha:91d6ba6d src:dodatky/z-pokazhchyk.md:616 klas:A -->
+<!-- fc id:T-Z-160 sha:91d6ba6d src:dodatky/z-pokazhchyk.md:616 status:verbatim -->
 ### T-Z-160 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4819,7 +4819,7 @@ nvs_flash_init — 131, 197, 331–332
 
 ---
 
-<!-- fc id:T-Z-161 sha:8b94681f src:dodatky/z-pokazhchyk.md:618 klas:E -->
+<!-- fc id:T-Z-161 sha:8b94681f src:dodatky/z-pokazhchyk.md:618 status:no-external-signal -->
 ### T-Z-161 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4840,7 +4840,7 @@ nvs_partition_gen — 36, 145, 377
 
 ---
 
-<!-- fc id:T-Z-162 sha:c411cdfc src:dodatky/z-pokazhchyk.md:632 klas:A -->
+<!-- fc id:T-Z-162 sha:c411cdfc src:dodatky/z-pokazhchyk.md:632 status:verbatim -->
 ### T-Z-162 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4867,7 +4867,7 @@ PCF8574 — 57, 76, 267, 365, 386
 
 ---
 
-<!-- fc id:T-Z-163 sha:d5d11593 src:dodatky/z-pokazhchyk.md:636 klas:D -->
+<!-- fc id:T-Z-163 sha:d5d11593 src:dodatky/z-pokazhchyk.md:636 status:arithmetic -->
 ### T-Z-163 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4918,7 +4918,7 @@ PlatformIO — 85, 93, 102, 104–107, 112, 161, 376, 390
 
 ---
 
-<!-- fc id:T-Z-164 sha:55effa6e src:dodatky/z-pokazhchyk.md:645 klas:E -->
+<!-- fc id:T-Z-164 sha:55effa6e src:dodatky/z-pokazhchyk.md:645 status:no-external-signal -->
 ### T-Z-164 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4939,7 +4939,7 @@ read-flash — 9, 25, 124–125, 128, 130, 140, 149, 157, 373
 
 ---
 
-<!-- fc id:T-Z-165 sha:9376ed93 src:dodatky/z-pokazhchyk.md:667 klas:A -->
+<!-- fc id:T-Z-165 sha:9376ed93 src:dodatky/z-pokazhchyk.md:667 status:verbatim -->
 ### T-Z-165 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -4982,7 +4982,7 @@ RS-485 — 54, 209–212, 214, 217, 344, 356–357, 359, 368–369, 387
 
 ---
 
-<!-- fc id:T-Z-166 sha:e942b48f src:dodatky/z-pokazhchyk.md:674 klas:E -->
+<!-- fc id:T-Z-166 sha:e942b48f src:dodatky/z-pokazhchyk.md:674 status:no-external-signal -->
 ### T-Z-166 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5003,7 +5003,7 @@ set-target — 25, 46–48, 96, 99, 327, 332, 374, 392
 
 ---
 
-<!-- fc id:T-Z-167 sha:1735d69d src:dodatky/z-pokazhchyk.md:678 klas:A -->
+<!-- fc id:T-Z-167 sha:1735d69d src:dodatky/z-pokazhchyk.md:678 status:verbatim -->
 ### T-Z-167 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5038,7 +5038,7 @@ SH1106 — 265, 268, 369, 386
 
 ---
 
-<!-- fc id:T-Z-168 sha:267c4488 src:dodatky/z-pokazhchyk.md:684 klas:A -->
+<!-- fc id:T-Z-168 sha:267c4488 src:dodatky/z-pokazhchyk.md:684 status:verbatim -->
 ### T-Z-168 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5081,7 +5081,7 @@ size-components — 96, 190, 375
 
 ---
 
-<!-- fc id:T-Z-169 sha:575a33e3 src:dodatky/z-pokazhchyk.md:692 klas:A -->
+<!-- fc id:T-Z-169 sha:575a33e3 src:dodatky/z-pokazhchyk.md:692 status:verbatim -->
 ### T-Z-169 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5109,7 +5109,7 @@ SOC_TWAI_SUPPORT_FD — 228
 
 ---
 
-<!-- fc id:T-Z-170 sha:2fe944b5 src:dodatky/z-pokazhchyk.md:708 klas:A -->
+<!-- fc id:T-Z-170 sha:2fe944b5 src:dodatky/z-pokazhchyk.md:708 status:verbatim -->
 ### T-Z-170 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5146,7 +5146,7 @@ spi_device_handle_t — 220
 
 ---
 
-<!-- fc id:T-Z-171 sha:87048476 src:dodatky/z-pokazhchyk.md:710 klas:A -->
+<!-- fc id:T-Z-171 sha:87048476 src:dodatky/z-pokazhchyk.md:710 status:verbatim -->
 ### T-Z-171 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5183,7 +5183,7 @@ spi_device_interface_config_t — 220
 
 ---
 
-<!-- fc id:T-Z-172 sha:4b861066 src:dodatky/z-pokazhchyk.md:712 klas:A -->
+<!-- fc id:T-Z-172 sha:4b861066 src:dodatky/z-pokazhchyk.md:712 status:verbatim -->
 ### T-Z-172 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5220,7 +5220,7 @@ spi_device_transmit — 220
 
 ---
 
-<!-- fc id:T-Z-173 sha:875ef220 src:dodatky/z-pokazhchyk.md:718 klas:A -->
+<!-- fc id:T-Z-173 sha:875ef220 src:dodatky/z-pokazhchyk.md:718 status:verbatim -->
 ### T-Z-173 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5247,7 +5247,7 @@ SR04 — 27, 34, 61, 258, 262, 264, 389
 
 ---
 
-<!-- fc id:T-Z-174 sha:bebbcdca src:dodatky/z-pokazhchyk.md:722 klas:C -->
+<!-- fc id:T-Z-174 sha:bebbcdca src:dodatky/z-pokazhchyk.md:722 status:named-unreachable -->
 ### T-Z-174 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5272,7 +5272,7 @@ SSD1306 — 149, 257, 265, 268, 310, 369, 386
 
 ---
 
-<!-- fc id:T-Z-175 sha:046a867a src:dodatky/z-pokazhchyk.md:728 klas:E -->
+<!-- fc id:T-Z-175 sha:046a867a src:dodatky/z-pokazhchyk.md:728 status:no-external-signal -->
 ### T-Z-175 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5293,7 +5293,7 @@ SuperMini — 24, 39, 48, 80, 364
 
 ---
 
-<!-- fc id:T-Z-176 sha:78b6d112 src:dodatky/z-pokazhchyk.md:745 klas:C -->
+<!-- fc id:T-Z-176 sha:78b6d112 src:dodatky/z-pokazhchyk.md:745 status:named-unreachable -->
 ### T-Z-176 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5318,7 +5318,7 @@ TP4056 — 298, 301, 334, 336
 
 ---
 
-<!-- fc id:T-Z-177 sha:622120a7 src:dodatky/z-pokazhchyk.md:747 klas:D -->
+<!-- fc id:T-Z-177 sha:622120a7 src:dodatky/z-pokazhchyk.md:747 status:arithmetic -->
 ### T-Z-177 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5369,7 +5369,7 @@ TWAI — 54–55, 99–100, 103, 112, 226–230, 359, 388, 399
 
 ---
 
-<!-- fc id:T-Z-178 sha:f4828721 src:dodatky/z-pokazhchyk.md:749 klas:A -->
+<!-- fc id:T-Z-178 sha:f4828721 src:dodatky/z-pokazhchyk.md:749 status:verbatim -->
 ### T-Z-178 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5406,7 +5406,7 @@ twai_driver_install — 228
 
 ---
 
-<!-- fc id:T-Z-179 sha:e4f987e9 src:dodatky/z-pokazhchyk.md:751 klas:A -->
+<!-- fc id:T-Z-179 sha:e4f987e9 src:dodatky/z-pokazhchyk.md:751 status:verbatim -->
 ### T-Z-179 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5443,7 +5443,7 @@ twai_filter_config_t — 228
 
 ---
 
-<!-- fc id:T-Z-180 sha:67efba4b src:dodatky/z-pokazhchyk.md:753 klas:A -->
+<!-- fc id:T-Z-180 sha:67efba4b src:dodatky/z-pokazhchyk.md:753 status:verbatim -->
 ### T-Z-180 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5480,7 +5480,7 @@ twai_general_config_t — 228
 
 ---
 
-<!-- fc id:T-Z-181 sha:f0981bc4 src:dodatky/z-pokazhchyk.md:755 klas:A -->
+<!-- fc id:T-Z-181 sha:f0981bc4 src:dodatky/z-pokazhchyk.md:755 status:verbatim -->
 ### T-Z-181 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5517,7 +5517,7 @@ twai_get_status_info — 229
 
 ---
 
-<!-- fc id:T-Z-182 sha:fe95f5a9 src:dodatky/z-pokazhchyk.md:757 klas:A -->
+<!-- fc id:T-Z-182 sha:fe95f5a9 src:dodatky/z-pokazhchyk.md:757 status:verbatim -->
 ### T-Z-182 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5554,7 +5554,7 @@ twai_initiate_recovery — 229
 
 ---
 
-<!-- fc id:T-Z-183 sha:2bd87aec src:dodatky/z-pokazhchyk.md:759 klas:A -->
+<!-- fc id:T-Z-183 sha:2bd87aec src:dodatky/z-pokazhchyk.md:759 status:verbatim -->
 ### T-Z-183 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5591,7 +5591,7 @@ twai_message_t — 228, 359
 
 ---
 
-<!-- fc id:T-Z-184 sha:449df551 src:dodatky/z-pokazhchyk.md:767 klas:A -->
+<!-- fc id:T-Z-184 sha:449df551 src:dodatky/z-pokazhchyk.md:767 status:verbatim -->
 ### T-Z-184 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5628,7 +5628,7 @@ twai_timing_config_t — 228
 
 ---
 
-<!-- fc id:T-Z-185 sha:a5d357fc src:dodatky/z-pokazhchyk.md:776 klas:A -->
+<!-- fc id:T-Z-185 sha:a5d357fc src:dodatky/z-pokazhchyk.md:776 status:verbatim -->
 ### T-Z-185 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5665,7 +5665,7 @@ uart_driver_install — 209
 
 ---
 
-<!-- fc id:T-Z-186 sha:dcd4df23 src:dodatky/z-pokazhchyk.md:782 klas:A -->
+<!-- fc id:T-Z-186 sha:dcd4df23 src:dodatky/z-pokazhchyk.md:782 status:verbatim -->
 ### T-Z-186 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5702,7 +5702,7 @@ uart_read_bytes — 209, 357
 
 ---
 
-<!-- fc id:T-Z-187 sha:3f10ce63 src:dodatky/z-pokazhchyk.md:786 klas:A -->
+<!-- fc id:T-Z-187 sha:3f10ce63 src:dodatky/z-pokazhchyk.md:786 status:verbatim -->
 ### T-Z-187 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5739,7 +5739,7 @@ uart_wait_tx_done — 210, 212, 344, 357, 368
 
 ---
 
-<!-- fc id:T-Z-188 sha:44cbf5aa src:dodatky/z-pokazhchyk.md:788 klas:A -->
+<!-- fc id:T-Z-188 sha:44cbf5aa src:dodatky/z-pokazhchyk.md:788 status:verbatim -->
 ### T-Z-188 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5776,7 +5776,7 @@ uart_write_bytes — 210, 357–358
 
 ---
 
-<!-- fc id:T-Z-189 sha:6380d48a src:dodatky/z-pokazhchyk.md:795 klas:A -->
+<!-- fc id:T-Z-189 sha:6380d48a src:dodatky/z-pokazhchyk.md:795 status:verbatim -->
 ### T-Z-189 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5819,7 +5819,7 @@ verify-flash — 16, 25, 35, 125, 128, 144, 146, 181, 307, 373
 
 ---
 
-<!-- fc id:T-Z-190 sha:fe4aa864 src:dodatky/z-pokazhchyk.md:801 klas:A -->
+<!-- fc id:T-Z-190 sha:fe4aa864 src:dodatky/z-pokazhchyk.md:801 status:verbatim -->
 ### T-Z-190 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5850,7 +5850,7 @@ vTaskDelay — 19, 100, 169, 191, 198–200, 276, 330, 339, 343, 346, 352, 371
 
 ---
 
-<!-- fc id:T-Z-191 sha:66b81d51 src:dodatky/z-pokazhchyk.md:820 klas:E -->
+<!-- fc id:T-Z-191 sha:66b81d51 src:dodatky/z-pokazhchyk.md:820 status:no-external-signal -->
 ### T-Z-191 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5871,7 +5871,7 @@ write-flash — 15–16, 25, 35–36, 93, 122, 124–127, 140, 143–145, 310, 3
 
 ---
 
-<!-- fc id:T-Z-192 sha:f4d3460e src:dodatky/z-pokazhchyk.md:824 klas:E -->
+<!-- fc id:T-Z-192 sha:f4d3460e src:dodatky/z-pokazhchyk.md:824 status:no-external-signal -->
 ### T-Z-192 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5892,7 +5892,7 @@ WROOM-1 — 23, 235, 363, 390
 
 ---
 
-<!-- fc id:T-Z-193 sha:03997ff9 src:dodatky/z-pokazhchyk.md:828 klas:E -->
+<!-- fc id:T-Z-193 sha:03997ff9 src:dodatky/z-pokazhchyk.md:828 status:no-external-signal -->
 ### T-Z-193 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5913,7 +5913,7 @@ WROOM-32 — 23, 67, 72–73, 362, 390
 
 ---
 
-<!-- fc id:T-Z-194 sha:4929da13 src:dodatky/z-pokazhchyk.md:832 klas:A -->
+<!-- fc id:T-Z-194 sha:4929da13 src:dodatky/z-pokazhchyk.md:832 status:verbatim -->
 ### T-Z-194 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5940,7 +5940,7 @@ WS2812 — 54–55, 200, 204, 207, 388
 
 ---
 
-<!-- fc id:T-Z-195 sha:9dc5a212 src:dodatky/z-pokazhchyk.md:839 klas:A -->
+<!-- fc id:T-Z-195 sha:9dc5a212 src:dodatky/z-pokazhchyk.md:839 status:verbatim -->
 ### T-Z-195 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5971,7 +5971,7 @@ xEventGroupWaitBits — 194
 
 ---
 
-<!-- fc id:T-Z-196 sha:a5d38561 src:dodatky/z-pokazhchyk.md:847 klas:A -->
+<!-- fc id:T-Z-196 sha:a5d38561 src:dodatky/z-pokazhchyk.md:847 status:verbatim -->
 ### T-Z-196 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -6002,7 +6002,7 @@ xQueueSend — 193, 247, 345, 357, 359
 
 ---
 
-<!-- fc id:T-Z-197 sha:194f9963 src:dodatky/z-pokazhchyk.md:849 klas:A -->
+<!-- fc id:T-Z-197 sha:194f9963 src:dodatky/z-pokazhchyk.md:849 status:verbatim -->
 ### T-Z-197 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -6029,7 +6029,7 @@ xQueueSendFromISR — 195, 202–203, 247
 
 ---
 
-<!-- fc id:T-Z-198 sha:8160210f src:dodatky/z-pokazhchyk.md:851 klas:A -->
+<!-- fc id:T-Z-198 sha:8160210f src:dodatky/z-pokazhchyk.md:851 status:verbatim -->
 ### T-Z-198 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -6060,7 +6060,7 @@ xSemaphoreCreateMutex — 193, 332
 
 ---
 
-<!-- fc id:T-Z-199 sha:d78a091c src:dodatky/z-pokazhchyk.md:853 klas:A -->
+<!-- fc id:T-Z-199 sha:d78a091c src:dodatky/z-pokazhchyk.md:853 status:verbatim -->
 ### T-Z-199 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -6091,7 +6091,7 @@ xSemaphoreGive — 193, 330–331
 
 ---
 
-<!-- fc id:T-Z-200 sha:b4776835 src:dodatky/z-pokazhchyk.md:855 klas:A -->
+<!-- fc id:T-Z-200 sha:b4776835 src:dodatky/z-pokazhchyk.md:855 status:verbatim -->
 ### T-Z-200 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -6122,7 +6122,7 @@ xSemaphoreTake — 193, 330–331
 
 ---
 
-<!-- fc id:T-Z-201 sha:552f958d src:dodatky/z-pokazhchyk.md:857 klas:A -->
+<!-- fc id:T-Z-201 sha:552f958d src:dodatky/z-pokazhchyk.md:857 status:verbatim -->
 ### T-Z-201 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -6153,7 +6153,7 @@ xTaskCreate — 186–187, 191, 332
 
 ---
 
-<!-- fc id:T-Z-202 sha:e215d715 src:dodatky/z-pokazhchyk.md:859 klas:A -->
+<!-- fc id:T-Z-202 sha:e215d715 src:dodatky/z-pokazhchyk.md:859 status:verbatim -->
 ### T-Z-202 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**

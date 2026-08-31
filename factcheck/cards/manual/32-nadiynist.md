@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/32-nadiynist.md`
 
-Одиниць твердження: **90**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **90**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-32-001 sha:5cdb9c78 src:manual/32-nadiynist.md:3 klas:E -->
+<!-- fc id:T-32-001 sha:5cdb9c78 src:manual/32-nadiynist.md:3 status:no-external-signal -->
 ### T-32-001 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-32-002 sha:d84b0c34 src:manual/32-nadiynist.md:4 klas:E -->
+<!-- fc id:T-32-002 sha:d84b0c34 src:manual/32-nadiynist.md:4 status:no-external-signal -->
 ### T-32-002 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-32-003 sha:f0c15395 src:manual/32-nadiynist.md:4 klas:E -->
+<!-- fc id:T-32-003 sha:f0c15395 src:manual/32-nadiynist.md:4 status:no-external-signal -->
 ### T-32-003 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -77,7 +77,7 @@
 
 ---
 
-<!-- fc id:T-32-004 sha:fe447c34 src:manual/32-nadiynist.md:7 klas:E -->
+<!-- fc id:T-32-004 sha:fe447c34 src:manual/32-nadiynist.md:7 status:no-external-signal -->
 ### T-32-004 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -99,7 +99,7 @@
 
 ---
 
-<!-- fc id:T-32-005 sha:8602b51d src:manual/32-nadiynist.md:12 klas:A -->
+<!-- fc id:T-32-005 sha:8602b51d src:manual/32-nadiynist.md:12 status:verbatim -->
 ### T-32-005 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -156,7 +156,7 @@
 
 ---
 
-<!-- fc id:T-32-006 sha:2624e8ee src:manual/32-nadiynist.md:15 klas:K -->
+<!-- fc id:T-32-006 sha:2624e8ee src:manual/32-nadiynist.md:15 status:code-context -->
 ### T-32-006 · kod · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -207,7 +207,7 @@ if (err != ESP_OK) {
 
 ---
 
-<!-- fc id:T-32-007 sha:a6a2089a src:manual/32-nadiynist.md:24 klas:A -->
+<!-- fc id:T-32-007 sha:a6a2089a src:manual/32-nadiynist.md:24 status:verbatim -->
 ### T-32-007 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -245,7 +245,7 @@ if (err != ESP_OK) {
 
 ---
 
-<!-- fc id:T-32-008 sha:836455f3 src:manual/32-nadiynist.md:24 klas:A -->
+<!-- fc id:T-32-008 sha:836455f3 src:manual/32-nadiynist.md:24 status:verbatim -->
 ### T-32-008 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -291,7 +291,7 @@ if (err != ESP_OK) {
 
 ---
 
-<!-- fc id:T-32-009 sha:2845d7a3 src:manual/32-nadiynist.md:29 klas:K -->
+<!-- fc id:T-32-009 sha:2845d7a3 src:manual/32-nadiynist.md:29 status:code-context -->
 ### T-32-009 · kod · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -332,7 +332,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-010 sha:86b73419 src:manual/32-nadiynist.md:30 klas:A -->
+<!-- fc id:T-32-010 sha:86b73419 src:manual/32-nadiynist.md:30 status:verbatim -->
 ### T-32-010 · kod-ryadok · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -371,7 +371,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-011 sha:aecb477b src:manual/32-nadiynist.md:33 klas:A -->
+<!-- fc id:T-32-011 sha:aecb477b src:manual/32-nadiynist.md:33 status:verbatim -->
 ### T-32-011 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -428,7 +428,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-012 sha:d2f31301 src:manual/32-nadiynist.md:37 klas:A -->
+<!-- fc id:T-32-012 sha:d2f31301 src:manual/32-nadiynist.md:37 status:verbatim -->
 ### T-32-012 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -487,7 +487,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-013 sha:be2cecf9 src:manual/32-nadiynist.md:37 klas:E -->
+<!-- fc id:T-32-013 sha:be2cecf9 src:manual/32-nadiynist.md:37 status:no-external-signal -->
 ### T-32-013 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -511,7 +511,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-014 sha:f5ebe116 src:manual/32-nadiynist.md:41 klas:A -->
+<!-- fc id:T-32-014 sha:f5ebe116 src:manual/32-nadiynist.md:41 status:verbatim -->
 ### T-32-014 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -570,7 +570,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-015 sha:5384a5fd src:manual/32-nadiynist.md:42 klas:E -->
+<!-- fc id:T-32-015 sha:5384a5fd src:manual/32-nadiynist.md:42 status:no-external-signal -->
 ### T-32-015 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -594,7 +594,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-016 sha:362f55a3 src:manual/32-nadiynist.md:42 klas:E -->
+<!-- fc id:T-32-016 sha:362f55a3 src:manual/32-nadiynist.md:42 status:no-external-signal -->
 ### T-32-016 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -618,7 +618,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-017 sha:98deef4c src:manual/32-nadiynist.md:43 klas:E -->
+<!-- fc id:T-32-017 sha:98deef4c src:manual/32-nadiynist.md:43 status:no-external-signal -->
 ### T-32-017 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -642,7 +642,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-018 sha:e7a3ff2c src:manual/32-nadiynist.md:46 klas:A -->
+<!-- fc id:T-32-018 sha:e7a3ff2c src:manual/32-nadiynist.md:46 status:verbatim -->
 ### T-32-018 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -702,7 +702,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-019 sha:40973338 src:manual/32-nadiynist.md:48 klas:E -->
+<!-- fc id:T-32-019 sha:40973338 src:manual/32-nadiynist.md:48 status:no-external-signal -->
 ### T-32-019 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -727,7 +727,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-020 sha:82a3115c src:manual/32-nadiynist.md:54 klas:E -->
+<!-- fc id:T-32-020 sha:82a3115c src:manual/32-nadiynist.md:54 status:no-external-signal -->
 ### T-32-020 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -749,7 +749,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-021 sha:edfaafb0 src:manual/32-nadiynist.md:54 klas:E -->
+<!-- fc id:T-32-021 sha:edfaafb0 src:manual/32-nadiynist.md:54 status:no-external-signal -->
 ### T-32-021 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -771,7 +771,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-022 sha:3e7fd545 src:manual/32-nadiynist.md:57 klas:E -->
+<!-- fc id:T-32-022 sha:3e7fd545 src:manual/32-nadiynist.md:57 status:no-external-signal -->
 ### T-32-022 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -806,7 +806,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-023 sha:aa6ff3e5 src:manual/32-nadiynist.md:57 klas:E -->
+<!-- fc id:T-32-023 sha:aa6ff3e5 src:manual/32-nadiynist.md:57 status:no-external-signal -->
 ### T-32-023 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -829,7 +829,7 @@ ESP_ERROR_CHECK(nvs_flash_init());
 
 ---
 
-<!-- fc id:T-32-024 sha:152e687c src:manual/32-nadiynist.md:61 klas:K -->
+<!-- fc id:T-32-024 sha:152e687c src:manual/32-nadiynist.md:61 status:code-context -->
 ### T-32-024 · kod · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -892,7 +892,7 @@ esp_err_t sprobuvaty(int max_sprob) {
 
 ---
 
-<!-- fc id:T-32-025 sha:a6714f03 src:manual/32-nadiynist.md:68 klas:A -->
+<!-- fc id:T-32-025 sha:a6714f03 src:manual/32-nadiynist.md:68 status:verbatim -->
 ### T-32-025 · kod-ryadok · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -942,7 +942,7 @@ esp_err_t sprobuvaty(int max_sprob) {
 
 ---
 
-<!-- fc id:T-32-026 sha:c8cf274d src:manual/32-nadiynist.md:69 klas:A -->
+<!-- fc id:T-32-026 sha:c8cf274d src:manual/32-nadiynist.md:69 status:verbatim -->
 ### T-32-026 · kod-ryadok · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -986,7 +986,7 @@ esp_err_t sprobuvaty(int max_sprob) {
 
 ---
 
-<!-- fc id:T-32-027 sha:692da8a9 src:manual/32-nadiynist.md:76 klas:E -->
+<!-- fc id:T-32-027 sha:692da8a9 src:manual/32-nadiynist.md:76 status:no-external-signal -->
 ### T-32-027 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1009,7 +1009,7 @@ esp_err_t sprobuvaty(int max_sprob) {
 
 ---
 
-<!-- fc id:T-32-028 sha:fd9ab150 src:manual/32-nadiynist.md:76 klas:E -->
+<!-- fc id:T-32-028 sha:fd9ab150 src:manual/32-nadiynist.md:76 status:no-external-signal -->
 ### T-32-028 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1032,7 +1032,7 @@ esp_err_t sprobuvaty(int max_sprob) {
 
 ---
 
-<!-- fc id:T-32-029 sha:b4778720 src:manual/32-nadiynist.md:77 klas:E -->
+<!-- fc id:T-32-029 sha:b4778720 src:manual/32-nadiynist.md:77 status:no-external-signal -->
 ### T-32-029 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1055,7 +1055,7 @@ esp_err_t sprobuvaty(int max_sprob) {
 
 ---
 
-<!-- fc id:T-32-030 sha:5b563204 src:manual/32-nadiynist.md:80 klas:E -->
+<!-- fc id:T-32-030 sha:5b563204 src:manual/32-nadiynist.md:80 status:no-external-signal -->
 ### T-32-030 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1077,7 +1077,7 @@ esp_err_t sprobuvaty(int max_sprob) {
 
 ---
 
-<!-- fc id:T-32-031 sha:8348d3a1 src:manual/32-nadiynist.md:80 klas:E -->
+<!-- fc id:T-32-031 sha:8348d3a1 src:manual/32-nadiynist.md:80 status:no-external-signal -->
 ### T-32-031 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1099,7 +1099,7 @@ esp_err_t sprobuvaty(int max_sprob) {
 
 ---
 
-<!-- fc id:T-32-032 sha:5ff6aed5 src:manual/32-nadiynist.md:83 klas:E -->
+<!-- fc id:T-32-032 sha:5ff6aed5 src:manual/32-nadiynist.md:83 status:no-external-signal -->
 ### T-32-032 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1121,7 +1121,7 @@ esp_err_t sprobuvaty(int max_sprob) {
 
 ---
 
-<!-- fc id:T-32-033 sha:0f75e2d2 src:manual/32-nadiynist.md:87 klas:E -->
+<!-- fc id:T-32-033 sha:0f75e2d2 src:manual/32-nadiynist.md:87 status:no-external-signal -->
 ### T-32-033 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1144,7 +1144,7 @@ esp_err_t sprobuvaty(int max_sprob) {
 
 ---
 
-<!-- fc id:T-32-034 sha:37bdc3a8 src:manual/32-nadiynist.md:90 klas:B -->
+<!-- fc id:T-32-034 sha:37bdc3a8 src:manual/32-nadiynist.md:90 status:derived -->
 ### T-32-034 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1174,7 +1174,7 @@ esp_err_t sprobuvaty(int max_sprob) {
 
 ---
 
-<!-- fc id:T-32-035 sha:45700409 src:manual/32-nadiynist.md:92 klas:E -->
+<!-- fc id:T-32-035 sha:45700409 src:manual/32-nadiynist.md:92 status:no-external-signal -->
 ### T-32-035 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1198,7 +1198,7 @@ esp_err_t sprobuvaty(int max_sprob) {
 
 ---
 
-<!-- fc id:T-32-036 sha:63083761 src:manual/32-nadiynist.md:95 klas:E -->
+<!-- fc id:T-32-036 sha:63083761 src:manual/32-nadiynist.md:95 status:no-external-signal -->
 ### T-32-036 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1235,7 +1235,7 @@ esp_err_t sprobuvaty(int max_sprob) {
 
 ---
 
-<!-- fc id:T-32-037 sha:919d7db5 src:manual/32-nadiynist.md:102 klas:E -->
+<!-- fc id:T-32-037 sha:919d7db5 src:manual/32-nadiynist.md:102 status:no-external-signal -->
 ### T-32-037 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1258,7 +1258,7 @@ Watchdog — таймер, який перезавантажує чип, якщ�
 
 ---
 
-<!-- fc id:T-32-038 sha:02b1a3ee src:manual/32-nadiynist.md:103 klas:E -->
+<!-- fc id:T-32-038 sha:02b1a3ee src:manual/32-nadiynist.md:103 status:no-external-signal -->
 ### T-32-038 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1281,7 +1281,7 @@ Watchdog — таймер, який перезавантажує чип, якщ�
 
 ---
 
-<!-- fc id:T-32-039 sha:c2daf488 src:manual/32-nadiynist.md:106 klas:E -->
+<!-- fc id:T-32-039 sha:c2daf488 src:manual/32-nadiynist.md:106 status:no-external-signal -->
 ### T-32-039 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1303,7 +1303,7 @@ Watchdog — таймер, який перезавантажує чип, якщ�
 
 ---
 
-<!-- fc id:T-32-040 sha:60f40e6c src:manual/32-nadiynist.md:106 klas:E -->
+<!-- fc id:T-32-040 sha:60f40e6c src:manual/32-nadiynist.md:106 status:no-external-signal -->
 ### T-32-040 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1325,7 +1325,7 @@ Watchdog — таймер, який перезавантажує чип, якщ�
 
 ---
 
-<!-- fc id:T-32-041 sha:ae559317 src:manual/32-nadiynist.md:109 klas:K -->
+<!-- fc id:T-32-041 sha:ae559317 src:manual/32-nadiynist.md:109 status:code-context -->
 ### T-32-041 · kod · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1376,7 +1376,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-32-042 sha:1af576fe src:manual/32-nadiynist.md:113 klas:F -->
+<!-- fc id:T-32-042 sha:1af576fe src:manual/32-nadiynist.md:113 status:unchecked -->
 ### T-32-042 · kod-ryadok · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1404,7 +1404,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-32-043 sha:20132484 src:manual/32-nadiynist.md:114 klas:A -->
+<!-- fc id:T-32-043 sha:20132484 src:manual/32-nadiynist.md:114 status:verbatim -->
 ### T-32-043 · kod-ryadok · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1442,7 +1442,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-32-044 sha:a2c863e7 src:manual/32-nadiynist.md:118 klas:A -->
+<!-- fc id:T-32-044 sha:a2c863e7 src:manual/32-nadiynist.md:118 status:verbatim -->
 ### T-32-044 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1472,7 +1472,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-32-045 sha:303cc593 src:manual/32-nadiynist.md:119 klas:E -->
+<!-- fc id:T-32-045 sha:303cc593 src:manual/32-nadiynist.md:119 status:no-external-signal -->
 ### T-32-045 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1495,7 +1495,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-32-046 sha:5bc8582a src:manual/32-nadiynist.md:123 klas:E -->
+<!-- fc id:T-32-046 sha:5bc8582a src:manual/32-nadiynist.md:123 status:no-external-signal -->
 ### T-32-046 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1518,7 +1518,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-32-047 sha:3feb66a4 src:manual/32-nadiynist.md:126 klas:F -->
+<!-- fc id:T-32-047 sha:3feb66a4 src:manual/32-nadiynist.md:126 status:unchecked -->
 ### T-32-047 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1542,7 +1542,7 @@ watchdog, вимкнений складним способом. Годувати
 
 ---
 
-<!-- fc id:T-32-048 sha:ddc062e5 src:manual/32-nadiynist.md:127 klas:E -->
+<!-- fc id:T-32-048 sha:ddc062e5 src:manual/32-nadiynist.md:127 status:no-external-signal -->
 ### T-32-048 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1566,7 +1566,7 @@ watchdog, вимкнений складним способом. Годувати
 
 ---
 
-<!-- fc id:T-32-049 sha:2da9f537 src:manual/32-nadiynist.md:131 klas:F -->
+<!-- fc id:T-32-049 sha:2da9f537 src:manual/32-nadiynist.md:131 status:unchecked -->
 ### T-32-049 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1589,7 +1589,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-050 sha:1b966467 src:manual/32-nadiynist.md:137 klas:E -->
+<!-- fc id:T-32-050 sha:1b966467 src:manual/32-nadiynist.md:137 status:no-external-signal -->
 ### T-32-050 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1611,7 +1611,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-051 sha:d0b209d0 src:manual/32-nadiynist.md:137 klas:E -->
+<!-- fc id:T-32-051 sha:d0b209d0 src:manual/32-nadiynist.md:137 status:no-external-signal -->
 ### T-32-051 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1633,7 +1633,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-052 sha:188d8fa0 src:manual/32-nadiynist.md:140 klas:A -->
+<!-- fc id:T-32-052 sha:188d8fa0 src:manual/32-nadiynist.md:140 status:verbatim -->
 ### T-32-052 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1662,7 +1662,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-053 sha:1d97acc0 src:manual/32-nadiynist.md:141 klas:E -->
+<!-- fc id:T-32-053 sha:1d97acc0 src:manual/32-nadiynist.md:141 status:no-external-signal -->
 ### T-32-053 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1685,7 +1685,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-054 sha:cfa44b68 src:manual/32-nadiynist.md:144 klas:E -->
+<!-- fc id:T-32-054 sha:cfa44b68 src:manual/32-nadiynist.md:144 status:no-external-signal -->
 ### T-32-054 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1706,7 +1706,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-055 sha:a88966b7 src:manual/32-nadiynist.md:146 klas:A -->
+<!-- fc id:T-32-055 sha:a88966b7 src:manual/32-nadiynist.md:146 status:verbatim -->
 ### T-32-055 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1736,7 +1736,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-056 sha:f0b19de7 src:manual/32-nadiynist.md:146 klas:E -->
+<!-- fc id:T-32-056 sha:f0b19de7 src:manual/32-nadiynist.md:146 status:no-external-signal -->
 ### T-32-056 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1758,7 +1758,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-057 sha:fd7e884c src:manual/32-nadiynist.md:149 klas:E -->
+<!-- fc id:T-32-057 sha:fd7e884c src:manual/32-nadiynist.md:149 status:no-external-signal -->
 ### T-32-057 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1783,7 +1783,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-058 sha:dfd3b03c src:manual/32-nadiynist.md:150 klas:E -->
+<!-- fc id:T-32-058 sha:dfd3b03c src:manual/32-nadiynist.md:150 status:no-external-signal -->
 ### T-32-058 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1821,7 +1821,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-059 sha:60d133a1 src:manual/32-nadiynist.md:151 klas:E -->
+<!-- fc id:T-32-059 sha:60d133a1 src:manual/32-nadiynist.md:151 status:no-external-signal -->
 ### T-32-059 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1846,7 +1846,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-060 sha:8c7f4114 src:manual/32-nadiynist.md:157 klas:D -->
+<!-- fc id:T-32-060 sha:8c7f4114 src:manual/32-nadiynist.md:157 status:arithmetic -->
 ### T-32-060 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1886,7 +1886,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-061 sha:64340e81 src:manual/32-nadiynist.md:157 klas:E -->
+<!-- fc id:T-32-061 sha:64340e81 src:manual/32-nadiynist.md:157 status:no-external-signal -->
 ### T-32-061 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1908,7 +1908,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-062 sha:9d2c6e43 src:manual/32-nadiynist.md:160 klas:E -->
+<!-- fc id:T-32-062 sha:9d2c6e43 src:manual/32-nadiynist.md:160 status:no-external-signal -->
 ### T-32-062 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1930,7 +1930,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-063 sha:83119fbb src:manual/32-nadiynist.md:163 klas:F -->
+<!-- fc id:T-32-063 sha:83119fbb src:manual/32-nadiynist.md:163 status:unchecked -->
 ### T-32-063 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1952,7 +1952,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-064 sha:df83f4e9 src:manual/32-nadiynist.md:164 klas:E -->
+<!-- fc id:T-32-064 sha:df83f4e9 src:manual/32-nadiynist.md:164 status:no-external-signal -->
 ### T-32-064 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1974,7 +1974,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-065 sha:3adc9a73 src:manual/32-nadiynist.md:166 klas:F -->
+<!-- fc id:T-32-065 sha:3adc9a73 src:manual/32-nadiynist.md:166 status:unchecked -->
 ### T-32-065 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -1996,7 +1996,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-066 sha:bf1e7d3e src:manual/32-nadiynist.md:169 klas:E -->
+<!-- fc id:T-32-066 sha:bf1e7d3e src:manual/32-nadiynist.md:169 status:no-external-signal -->
 ### T-32-066 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2017,7 +2017,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-067 sha:0590c490 src:manual/32-nadiynist.md:171 klas:E -->
+<!-- fc id:T-32-067 sha:0590c490 src:manual/32-nadiynist.md:171 status:no-external-signal -->
 ### T-32-067 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2039,7 +2039,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-068 sha:c1d67a99 src:manual/32-nadiynist.md:174 klas:E -->
+<!-- fc id:T-32-068 sha:c1d67a99 src:manual/32-nadiynist.md:174 status:no-external-signal -->
 ### T-32-068 · tablycya · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2069,7 +2069,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-069 sha:f62c06f9 src:manual/32-nadiynist.md:176 klas:A -->
+<!-- fc id:T-32-069 sha:f62c06f9 src:manual/32-nadiynist.md:176 status:verbatim -->
 ### T-32-069 · tablycya · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2109,7 +2109,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-070 sha:2fe46684 src:manual/32-nadiynist.md:177 klas:E -->
+<!-- fc id:T-32-070 sha:2fe46684 src:manual/32-nadiynist.md:177 status:no-external-signal -->
 ### T-32-070 · tablycya · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2139,7 +2139,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-071 sha:a28eac67 src:manual/32-nadiynist.md:178 klas:E -->
+<!-- fc id:T-32-071 sha:a28eac67 src:manual/32-nadiynist.md:178 status:no-external-signal -->
 ### T-32-071 · tablycya · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2169,7 +2169,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-072 sha:f752de15 src:manual/32-nadiynist.md:179 klas:F -->
+<!-- fc id:T-32-072 sha:f752de15 src:manual/32-nadiynist.md:179 status:unchecked -->
 ### T-32-072 · tablycya · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2199,7 +2199,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-073 sha:5dee921d src:manual/32-nadiynist.md:180 klas:E -->
+<!-- fc id:T-32-073 sha:5dee921d src:manual/32-nadiynist.md:180 status:no-external-signal -->
 ### T-32-073 · tablycya · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2229,7 +2229,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-074 sha:20692047 src:manual/32-nadiynist.md:183 klas:E -->
+<!-- fc id:T-32-074 sha:20692047 src:manual/32-nadiynist.md:183 status:no-external-signal -->
 ### T-32-074 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2255,7 +2255,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-075 sha:c1e1655b src:manual/32-nadiynist.md:183 klas:F -->
+<!-- fc id:T-32-075 sha:c1e1655b src:manual/32-nadiynist.md:183 status:unchecked -->
 ### T-32-075 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2281,7 +2281,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-076 sha:0c8c57fb src:manual/32-nadiynist.md:184 klas:F -->
+<!-- fc id:T-32-076 sha:0c8c57fb src:manual/32-nadiynist.md:184 status:unchecked -->
 ### T-32-076 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2307,7 +2307,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-077 sha:b2c1ae60 src:manual/32-nadiynist.md:189 klas:E -->
+<!-- fc id:T-32-077 sha:b2c1ae60 src:manual/32-nadiynist.md:189 status:no-external-signal -->
 ### T-32-077 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2331,7 +2331,7 @@ PCNT рахує імпульси. Периферія не залежить ві�
 
 ---
 
-<!-- fc id:T-32-078 sha:46ad545a src:manual/32-nadiynist.md:190 klas:F -->
+<!-- fc id:T-32-078 sha:46ad545a src:manual/32-nadiynist.md:190 status:unchecked -->
 ### T-32-078 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2355,7 +2355,7 @@ PCNT рахує імпульси. Периферія не залежить ві�
 
 ---
 
-<!-- fc id:T-32-079 sha:a9f0f3fc src:manual/32-nadiynist.md:191 klas:E -->
+<!-- fc id:T-32-079 sha:a9f0f3fc src:manual/32-nadiynist.md:191 status:no-external-signal -->
 ### T-32-079 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2379,7 +2379,7 @@ PCNT рахує імпульси. Периферія не залежить ві�
 
 ---
 
-<!-- fc id:T-32-080 sha:0f4691b1 src:manual/32-nadiynist.md:196 klas:E -->
+<!-- fc id:T-32-080 sha:0f4691b1 src:manual/32-nadiynist.md:196 status:no-external-signal -->
 ### T-32-080 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2400,7 +2400,7 @@ PCNT рахує імпульси. Периферія не залежить ві�
 
 ---
 
-<!-- fc id:T-32-081 sha:ae4a96a9 src:manual/32-nadiynist.md:198 klas:A -->
+<!-- fc id:T-32-081 sha:ae4a96a9 src:manual/32-nadiynist.md:198 status:verbatim -->
 ### T-32-081 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2435,7 +2435,7 @@ PCNT рахує імпульси. Периферія не залежить ві�
 
 ---
 
-<!-- fc id:T-32-082 sha:9e04f85e src:manual/32-nadiynist.md:208 klas:E -->
+<!-- fc id:T-32-082 sha:9e04f85e src:manual/32-nadiynist.md:208 status:no-external-signal -->
 ### T-32-082 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2457,7 +2457,7 @@ PCNT рахує імпульси. Периферія не залежить ві�
 
 ---
 
-<!-- fc id:T-32-083 sha:fac227b0 src:manual/32-nadiynist.md:213 klas:A -->
+<!-- fc id:T-32-083 sha:fac227b0 src:manual/32-nadiynist.md:213 status:verbatim -->
 ### T-32-083 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2514,7 +2514,7 @@ PCNT рахує імпульси. Периферія не залежить ві�
 
 ---
 
-<!-- fc id:T-32-084 sha:e0150223 src:manual/32-nadiynist.md:213 klas:E -->
+<!-- fc id:T-32-084 sha:e0150223 src:manual/32-nadiynist.md:213 status:no-external-signal -->
 ### T-32-084 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2536,7 +2536,7 @@ PCNT рахує імпульси. Периферія не залежить ві�
 
 ---
 
-<!-- fc id:T-32-085 sha:62924b7e src:manual/32-nadiynist.md:216 klas:E -->
+<!-- fc id:T-32-085 sha:62924b7e src:manual/32-nadiynist.md:216 status:no-external-signal -->
 ### T-32-085 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2558,7 +2558,7 @@ PCNT рахує імпульси. Периферія не залежить ві�
 
 ---
 
-<!-- fc id:T-32-086 sha:10555fe8 src:manual/32-nadiynist.md:217 klas:E -->
+<!-- fc id:T-32-086 sha:10555fe8 src:manual/32-nadiynist.md:217 status:no-external-signal -->
 ### T-32-086 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2580,7 +2580,7 @@ PCNT рахує імпульси. Периферія не залежить ві�
 
 ---
 
-<!-- fc id:T-32-087 sha:322756f4 src:manual/32-nadiynist.md:219 klas:E -->
+<!-- fc id:T-32-087 sha:322756f4 src:manual/32-nadiynist.md:219 status:no-external-signal -->
 ### T-32-087 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2615,7 +2615,7 @@ PCNT рахує імпульси. Периферія не залежить ві�
 
 ---
 
-<!-- fc id:T-32-088 sha:105ed1b7 src:manual/32-nadiynist.md:219 klas:E -->
+<!-- fc id:T-32-088 sha:105ed1b7 src:manual/32-nadiynist.md:219 status:no-external-signal -->
 ### T-32-088 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2637,7 +2637,7 @@ PCNT рахує імпульси. Периферія не залежить ві�
 
 ---
 
-<!-- fc id:T-32-089 sha:d9826450 src:manual/32-nadiynist.md:222 klas:E -->
+<!-- fc id:T-32-089 sha:d9826450 src:manual/32-nadiynist.md:222 status:no-external-signal -->
 ### T-32-089 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2659,7 +2659,7 @@ Watchdog — інструмент, а не перешкода; годувати 
 
 ---
 
-<!-- fc id:T-32-090 sha:a4a80472 src:manual/32-nadiynist.md:225 klas:E -->
+<!-- fc id:T-32-090 sha:a4a80472 src:manual/32-nadiynist.md:225 status:no-external-signal -->
 ### T-32-090 · proza · `manual/32-nadiynist.md`
 
 **Твердження, коротко**

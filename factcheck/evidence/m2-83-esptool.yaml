@@ -31,7 +31,6 @@
 
 - nazva: esptool версія v4 та v5 у ESP-IDF
   zbih: v4.*v5|esptool.*version
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: '{IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
 
@@ -53,7 +52,6 @@
   note: Текст T-17-012 порівнює версії v4 та v5 esptool. Джерело вказує на версіювання.
 - nazva: Адреса bootloader.bin для ESP32 — 0x1000
   zbih: 0x1000.*classic|адреса.*0x1000
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: '{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000",
     esp32p4="0x2000"}
@@ -72,7 +70,6 @@
   note: 'Текст T-17-096 називає адресу 0x1000 для classic. Джерело підтверджує: esp32="0x1000".'
 - nazva: Адреса merge-bin завжди на 0x0 незалежно від конфігурації
   zbih: 0x0.*незалежно
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: 'Bootloader at {IDF_TARGET_BOOTLOADER_OFFSET} configurable by chip type.
 
@@ -92,7 +89,6 @@
     для бутлоадера залежно від чипу, merge-bin відповідно на 0x0.
 - nazva: Таблиця розділів за замовчуванням на адресі 0x8000
   zbih: partition.*table.*0x8000
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'partition table is flashed to (default offset) 0x8000 in the flash.
 
@@ -112,7 +108,6 @@
     для таблиці розділів.
 - nazva: MAC-адреса унікальна від заводу і лежить в eFuse
   zbih: MAC-адреса.*унікальна.*eFuse
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
   cytata: 'unique identifier stored in eFuse
 
@@ -134,7 +129,6 @@
   - 82ff65b0
 - nazva: Команда esptool flash-id додає інформацію про флеш
   zbih: flash-id.*шапка
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: 'esptool provides commands for flash operations
 
@@ -156,7 +150,6 @@
   - 2afe9b5f
 - nazva: Максимальна швидкість baudu для більшості мостів 460800
   zbih: '460800'
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: 'serial connection parameters for flash operations
 
@@ -176,7 +169,6 @@
     з'єднання.
 - nazva: Розміри флешу 2 МБ або 4 МБ для ESP32 модулів
   zbih: 2.*МБ|4.*МБ
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'flash capacity and partition allocation
 

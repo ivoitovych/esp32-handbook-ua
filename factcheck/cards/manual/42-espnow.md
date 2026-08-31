@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/42-espnow.md`
 
-Одиниць твердження: **86**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **86**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-42-001 sha:e12353a5 src:manual/42-espnow.md:3 klas:A -->
+<!-- fc id:T-42-001 sha:e12353a5 src:manual/42-espnow.md:3 status:verbatim -->
 ### T-42-001 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -36,7 +36,7 @@ ESP-NOW — власний протокол Espressif для прямого об
 
 ---
 
-<!-- fc id:T-42-002 sha:dd3855b4 src:manual/42-espnow.md:4 klas:E -->
+<!-- fc id:T-42-002 sha:dd3855b4 src:manual/42-espnow.md:4 status:no-external-signal -->
 ### T-42-002 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -58,7 +58,7 @@ ESP-NOW — власний протокол Espressif для прямого об
 
 ---
 
-<!-- fc id:T-42-003 sha:3a142f89 src:manual/42-espnow.md:6 klas:E -->
+<!-- fc id:T-42-003 sha:3a142f89 src:manual/42-espnow.md:6 status:no-external-signal -->
 ### T-42-003 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -80,7 +80,7 @@ ESP-NOW — власний протокол Espressif для прямого об
 
 ---
 
-<!-- fc id:T-42-004 sha:bdf974c6 src:manual/42-espnow.md:11 klas:F -->
+<!-- fc id:T-42-004 sha:bdf974c6 src:manual/42-espnow.md:11 status:unchecked -->
 ### T-42-004 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -104,7 +104,7 @@ ESP-NOW — власний протокол Espressif для прямого об
 
 ---
 
-<!-- fc id:T-42-005 sha:63289213 src:manual/42-espnow.md:12 klas:E -->
+<!-- fc id:T-42-005 sha:63289213 src:manual/42-espnow.md:12 status:no-external-signal -->
 ### T-42-005 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -128,7 +128,7 @@ ESP-NOW — власний протокол Espressif для прямого об
 
 ---
 
-<!-- fc id:T-42-006 sha:9eee4e7d src:manual/42-espnow.md:16 klas:A -->
+<!-- fc id:T-42-006 sha:9eee4e7d src:manual/42-espnow.md:16 status:verbatim -->
 ### T-42-006 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -155,7 +155,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 ---
 
-<!-- fc id:T-42-007 sha:c2bc31a0 src:manual/42-espnow.md:16 klas:E -->
+<!-- fc id:T-42-007 sha:c2bc31a0 src:manual/42-espnow.md:16 status:no-external-signal -->
 ### T-42-007 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -176,7 +176,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 ---
 
-<!-- fc id:T-42-008 sha:ea18b432 src:manual/42-espnow.md:19 klas:E -->
+<!-- fc id:T-42-008 sha:ea18b432 src:manual/42-espnow.md:19 status:no-external-signal -->
 ### T-42-008 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -199,7 +199,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 ---
 
-<!-- fc id:T-42-009 sha:56101255 src:manual/42-espnow.md:22 klas:F -->
+<!-- fc id:T-42-009 sha:56101255 src:manual/42-espnow.md:22 status:unchecked -->
 ### T-42-009 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -221,7 +221,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 ---
 
-<!-- fc id:T-42-010 sha:88f5799c src:manual/42-espnow.md:23 klas:E -->
+<!-- fc id:T-42-010 sha:88f5799c src:manual/42-espnow.md:23 status:no-external-signal -->
 ### T-42-010 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -243,7 +243,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 ---
 
-<!-- fc id:T-42-011 sha:7c2c734a src:manual/42-espnow.md:25 klas:F -->
+<!-- fc id:T-42-011 sha:7c2c734a src:manual/42-espnow.md:25 status:unchecked -->
 ### T-42-011 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -265,7 +265,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 ---
 
-<!-- fc id:T-42-012 sha:f19af6af src:manual/42-espnow.md:25 klas:E -->
+<!-- fc id:T-42-012 sha:f19af6af src:manual/42-espnow.md:25 status:no-external-signal -->
 ### T-42-012 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -287,7 +287,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 ---
 
-<!-- fc id:T-42-013 sha:a26e8f1c src:manual/42-espnow.md:28 klas:E -->
+<!-- fc id:T-42-013 sha:a26e8f1c src:manual/42-espnow.md:28 status:no-external-signal -->
 ### T-42-013 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -310,7 +310,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 ---
 
-<!-- fc id:T-42-014 sha:8cf4ae97 src:manual/42-espnow.md:34 klas:E -->
+<!-- fc id:T-42-014 sha:8cf4ae97 src:manual/42-espnow.md:34 status:no-external-signal -->
 ### T-42-014 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -332,7 +332,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 ---
 
-<!-- fc id:T-42-015 sha:de2e8697 src:manual/42-espnow.md:34 klas:A -->
+<!-- fc id:T-42-015 sha:de2e8697 src:manual/42-espnow.md:34 status:verbatim -->
 ### T-42-015 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -360,7 +360,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 ---
 
-<!-- fc id:T-42-016 sha:5acf4a2b src:manual/42-espnow.md:37 klas:K -->
+<!-- fc id:T-42-016 sha:5acf4a2b src:manual/42-espnow.md:37 status:code-context -->
 ### T-42-016 · kod · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -419,7 +419,7 @@ esp_now_send(mac_pryimacha, (uint8_t *)&dani, sizeof(dani));
 
 ---
 
-<!-- fc id:T-42-017 sha:fb113f48 src:manual/42-espnow.md:38 klas:A -->
+<!-- fc id:T-42-017 sha:fb113f48 src:manual/42-espnow.md:38 status:verbatim -->
 ### T-42-017 · kod-ryadok · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -457,7 +457,7 @@ esp_now_init();
 
 ---
 
-<!-- fc id:T-42-018 sha:4bc3e2eb src:manual/42-espnow.md:41 klas:F -->
+<!-- fc id:T-42-018 sha:4bc3e2eb src:manual/42-espnow.md:41 status:unchecked -->
 ### T-42-018 · kod-ryadok · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -483,7 +483,7 @@ esp_now_add_peer(&peer);
 
 ---
 
-<!-- fc id:T-42-019 sha:1753a16b src:manual/42-espnow.md:42 klas:F -->
+<!-- fc id:T-42-019 sha:1753a16b src:manual/42-espnow.md:42 status:unchecked -->
 ### T-42-019 · kod-ryadok · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -509,7 +509,7 @@ esp_now_add_peer(&peer);
 
 ---
 
-<!-- fc id:T-42-020 sha:ef0288f3 src:manual/42-espnow.md:44 klas:F -->
+<!-- fc id:T-42-020 sha:ef0288f3 src:manual/42-espnow.md:44 status:unchecked -->
 ### T-42-020 · kod-ryadok · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -535,7 +535,7 @@ esp_now_add_peer(&peer);
 
 ---
 
-<!-- fc id:T-42-021 sha:6d1b1f7b src:manual/42-espnow.md:45 klas:A -->
+<!-- fc id:T-42-021 sha:6d1b1f7b src:manual/42-espnow.md:45 status:verbatim -->
 ### T-42-021 · kod-ryadok · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -577,7 +577,7 @@ esp_now_add_peer(&peer);
 
 ---
 
-<!-- fc id:T-42-022 sha:e65aad77 src:manual/42-espnow.md:47 klas:A -->
+<!-- fc id:T-42-022 sha:e65aad77 src:manual/42-espnow.md:47 status:verbatim -->
 ### T-42-022 · kod-ryadok · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -615,7 +615,7 @@ esp_now_send(mac_pryimacha, (uint8_t *)&dani, sizeof(dani));
 
 ---
 
-<!-- fc id:T-42-023 sha:aaeb4359 src:manual/42-espnow.md:50 klas:A -->
+<!-- fc id:T-42-023 sha:aaeb4359 src:manual/42-espnow.md:50 status:verbatim -->
 ### T-42-023 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -641,7 +641,7 @@ esp_now_send(mac_pryimacha, (uint8_t *)&dani, sizeof(dani));
 
 ---
 
-<!-- fc id:T-42-024 sha:11151595 src:manual/42-espnow.md:52 klas:K -->
+<!-- fc id:T-42-024 sha:11151595 src:manual/42-espnow.md:52 status:code-context -->
 ### T-42-024 · kod · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -688,7 +688,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-025 sha:2f70bab1 src:manual/42-espnow.md:56 klas:A -->
+<!-- fc id:T-42-025 sha:2f70bab1 src:manual/42-espnow.md:56 status:verbatim -->
 ### T-42-025 · kod-ryadok · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -726,7 +726,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-026 sha:f10cb37e src:manual/42-espnow.md:58 klas:A -->
+<!-- fc id:T-42-026 sha:f10cb37e src:manual/42-espnow.md:58 status:verbatim -->
 ### T-42-026 · kod-ryadok · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -770,7 +770,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-027 sha:3b9efbae src:manual/42-espnow.md:62 klas:A -->
+<!-- fc id:T-42-027 sha:3b9efbae src:manual/42-espnow.md:62 status:verbatim -->
 ### T-42-027 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -799,7 +799,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-028 sha:96cc2aa7 src:manual/42-espnow.md:65 klas:E -->
+<!-- fc id:T-42-028 sha:96cc2aa7 src:manual/42-espnow.md:65 status:no-external-signal -->
 ### T-42-028 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -821,7 +821,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-029 sha:6871d700 src:manual/42-espnow.md:66 klas:B -->
+<!-- fc id:T-42-029 sha:6871d700 src:manual/42-espnow.md:66 status:derived -->
 ### T-42-029 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -849,7 +849,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-030 sha:8b37020a src:manual/42-espnow.md:68 klas:A -->
+<!-- fc id:T-42-030 sha:8b37020a src:manual/42-espnow.md:68 status:verbatim -->
 ### T-42-030 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -879,7 +879,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-031 sha:057d29d7 src:manual/42-espnow.md:69 klas:A -->
+<!-- fc id:T-42-031 sha:057d29d7 src:manual/42-espnow.md:69 status:verbatim -->
 ### T-42-031 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -909,7 +909,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-032 sha:adbb1161 src:manual/42-espnow.md:70 klas:A -->
+<!-- fc id:T-42-032 sha:adbb1161 src:manual/42-espnow.md:70 status:verbatim -->
 ### T-42-032 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -943,7 +943,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-033 sha:774e7574 src:manual/42-espnow.md:73 klas:A -->
+<!-- fc id:T-42-033 sha:774e7574 src:manual/42-espnow.md:73 status:verbatim -->
 ### T-42-033 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -979,7 +979,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-034 sha:9df638c8 src:manual/42-espnow.md:74 klas:E -->
+<!-- fc id:T-42-034 sha:9df638c8 src:manual/42-espnow.md:74 status:no-external-signal -->
 ### T-42-034 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1003,7 +1003,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-035 sha:5bd8e367 src:manual/42-espnow.md:80 klas:A -->
+<!-- fc id:T-42-035 sha:5bd8e367 src:manual/42-espnow.md:80 status:verbatim -->
 ### T-42-035 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1036,7 +1036,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-036 sha:98e0962e src:manual/42-espnow.md:82 klas:F -->
+<!-- fc id:T-42-036 sha:98e0962e src:manual/42-espnow.md:82 status:unchecked -->
 ### T-42-036 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1059,7 +1059,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-037 sha:b677b0b8 src:manual/42-espnow.md:86 klas:E -->
+<!-- fc id:T-42-037 sha:b677b0b8 src:manual/42-espnow.md:86 status:no-external-signal -->
 ### T-42-037 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1081,7 +1081,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-038 sha:de0470ae src:manual/42-espnow.md:89 klas:E -->
+<!-- fc id:T-42-038 sha:de0470ae src:manual/42-espnow.md:89 status:no-external-signal -->
 ### T-42-038 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1102,7 +1102,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-039 sha:0f4b36d7 src:manual/42-espnow.md:91 klas:A -->
+<!-- fc id:T-42-039 sha:0f4b36d7 src:manual/42-espnow.md:91 status:verbatim -->
 ### T-42-039 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1140,7 +1140,7 @@ broadcast-обміном із власним шифруванням у полі 
 
 ---
 
-<!-- fc id:T-42-040 sha:01364990 src:manual/42-espnow.md:94 klas:E -->
+<!-- fc id:T-42-040 sha:01364990 src:manual/42-espnow.md:94 status:no-external-signal -->
 ### T-42-040 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1166,7 +1166,7 @@ broadcast-обміном із власним шифруванням у полі 
 
 ---
 
-<!-- fc id:T-42-041 sha:51237438 src:manual/42-espnow.md:100 klas:F -->
+<!-- fc id:T-42-041 sha:51237438 src:manual/42-espnow.md:100 status:unchecked -->
 ### T-42-041 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1188,7 +1188,7 @@ broadcast-обміном із власним шифруванням у полі 
 
 ---
 
-<!-- fc id:T-42-042 sha:c7e0acb3 src:manual/42-espnow.md:103 klas:E -->
+<!-- fc id:T-42-042 sha:c7e0acb3 src:manual/42-espnow.md:103 status:no-external-signal -->
 ### T-42-042 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1211,7 +1211,7 @@ broadcast-обміном із власним шифруванням у полі 
 
 ---
 
-<!-- fc id:T-42-043 sha:7d22d1f8 src:manual/42-espnow.md:104 klas:E -->
+<!-- fc id:T-42-043 sha:7d22d1f8 src:manual/42-espnow.md:104 status:no-external-signal -->
 ### T-42-043 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1234,7 +1234,7 @@ broadcast-обміном із власним шифруванням у полі 
 
 ---
 
-<!-- fc id:T-42-044 sha:f2cf5cc8 src:manual/42-espnow.md:107 klas:E -->
+<!-- fc id:T-42-044 sha:f2cf5cc8 src:manual/42-espnow.md:107 status:no-external-signal -->
 ### T-42-044 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1256,7 +1256,7 @@ broadcast-обміном із власним шифруванням у полі 
 
 ---
 
-<!-- fc id:T-42-045 sha:3ccbedcd src:manual/42-espnow.md:112 klas:A -->
+<!-- fc id:T-42-045 sha:3ccbedcd src:manual/42-espnow.md:112 status:verbatim -->
 ### T-42-045 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1283,7 +1283,7 @@ ESP-NOW підтримує шифрування з ключами PMK і LMK.
 
 ---
 
-<!-- fc id:T-42-046 sha:5b245222 src:manual/42-espnow.md:114 klas:K -->
+<!-- fc id:T-42-046 sha:5b245222 src:manual/42-espnow.md:114 status:code-context -->
 ### T-42-046 · kod · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1328,7 +1328,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 ---
 
-<!-- fc id:T-42-047 sha:fcda1a09 src:manual/42-espnow.md:117 klas:F -->
+<!-- fc id:T-42-047 sha:fcda1a09 src:manual/42-espnow.md:117 status:unchecked -->
 ### T-42-047 · kod-ryadok · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1353,7 +1353,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 ---
 
-<!-- fc id:T-42-048 sha:5e201060 src:manual/42-espnow.md:121 klas:A -->
+<!-- fc id:T-42-048 sha:5e201060 src:manual/42-espnow.md:121 status:verbatim -->
 ### T-42-048 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1382,7 +1382,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 ---
 
-<!-- fc id:T-42-049 sha:71c60544 src:manual/42-espnow.md:121 klas:F -->
+<!-- fc id:T-42-049 sha:71c60544 src:manual/42-espnow.md:121 status:unchecked -->
 ### T-42-049 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1405,7 +1405,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 ---
 
-<!-- fc id:T-42-050 sha:cbf48b1d src:manual/42-espnow.md:124 klas:E -->
+<!-- fc id:T-42-050 sha:cbf48b1d src:manual/42-espnow.md:124 status:no-external-signal -->
 ### T-42-050 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1428,7 +1428,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 ---
 
-<!-- fc id:T-42-051 sha:f3e296e5 src:manual/42-espnow.md:124 klas:E -->
+<!-- fc id:T-42-051 sha:f3e296e5 src:manual/42-espnow.md:124 status:no-external-signal -->
 ### T-42-051 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1451,7 +1451,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 ---
 
-<!-- fc id:T-42-052 sha:1cbf3006 src:manual/42-espnow.md:125 klas:E -->
+<!-- fc id:T-42-052 sha:1cbf3006 src:manual/42-espnow.md:125 status:no-external-signal -->
 ### T-42-052 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1474,7 +1474,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 ---
 
-<!-- fc id:T-42-053 sha:b8699f11 src:manual/42-espnow.md:128 klas:E -->
+<!-- fc id:T-42-053 sha:b8699f11 src:manual/42-espnow.md:128 status:no-external-signal -->
 ### T-42-053 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1498,7 +1498,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 ---
 
-<!-- fc id:T-42-054 sha:b135d061 src:manual/42-espnow.md:129 klas:F -->
+<!-- fc id:T-42-054 sha:b135d061 src:manual/42-espnow.md:129 status:unchecked -->
 ### T-42-054 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1522,7 +1522,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 ---
 
-<!-- fc id:T-42-055 sha:53d93813 src:manual/42-espnow.md:135 klas:E -->
+<!-- fc id:T-42-055 sha:53d93813 src:manual/42-espnow.md:135 status:no-external-signal -->
 ### T-42-055 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1544,7 +1544,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 ---
 
-<!-- fc id:T-42-056 sha:48c74bdb src:manual/42-espnow.md:135 klas:F -->
+<!-- fc id:T-42-056 sha:48c74bdb src:manual/42-espnow.md:135 status:unchecked -->
 ### T-42-056 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1566,7 +1566,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 ---
 
-<!-- fc id:T-42-057 sha:f8115ba2 src:manual/42-espnow.md:138 klas:E -->
+<!-- fc id:T-42-057 sha:f8115ba2 src:manual/42-espnow.md:138 status:no-external-signal -->
 ### T-42-057 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1589,7 +1589,7 @@ ESP-NOW працював, партнери мусять бути **на тому
 
 ---
 
-<!-- fc id:T-42-058 sha:4248c371 src:manual/42-espnow.md:138 klas:F -->
+<!-- fc id:T-42-058 sha:4248c371 src:manual/42-espnow.md:138 status:unchecked -->
 ### T-42-058 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1612,7 +1612,7 @@ ESP-NOW працював, партнери мусять бути **на тому
 
 ---
 
-<!-- fc id:T-42-059 sha:350ec4ac src:manual/42-espnow.md:144 klas:F -->
+<!-- fc id:T-42-059 sha:350ec4ac src:manual/42-espnow.md:144 status:unchecked -->
 ### T-42-059 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1634,7 +1634,7 @@ ESP-NOW працював, партнери мусять бути **на тому
 
 ---
 
-<!-- fc id:T-42-060 sha:1dda21f6 src:manual/42-espnow.md:144 klas:A -->
+<!-- fc id:T-42-060 sha:1dda21f6 src:manual/42-espnow.md:144 status:verbatim -->
 ### T-42-060 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1662,7 +1662,7 @@ ESP-NOW працював, партнери мусять бути **на тому
 
 ---
 
-<!-- fc id:T-42-061 sha:6135207f src:manual/42-espnow.md:145 klas:E -->
+<!-- fc id:T-42-061 sha:6135207f src:manual/42-espnow.md:145 status:no-external-signal -->
 ### T-42-061 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1684,7 +1684,7 @@ ESP-NOW працював, партнери мусять бути **на тому
 
 ---
 
-<!-- fc id:T-42-062 sha:8a44357a src:manual/42-espnow.md:147 klas:F -->
+<!-- fc id:T-42-062 sha:8a44357a src:manual/42-espnow.md:147 status:unchecked -->
 ### T-42-062 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1708,7 +1708,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-063 sha:7ff46ce5 src:manual/42-espnow.md:148 klas:F -->
+<!-- fc id:T-42-063 sha:7ff46ce5 src:manual/42-espnow.md:148 status:unchecked -->
 ### T-42-063 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1732,7 +1732,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-064 sha:1e516a9c src:manual/42-espnow.md:152 klas:F -->
+<!-- fc id:T-42-064 sha:1e516a9c src:manual/42-espnow.md:152 status:unchecked -->
 ### T-42-064 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1754,7 +1754,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-065 sha:e7ae9737 src:manual/42-espnow.md:153 klas:E -->
+<!-- fc id:T-42-065 sha:e7ae9737 src:manual/42-espnow.md:153 status:no-external-signal -->
 ### T-42-065 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1776,7 +1776,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-066 sha:9c93f60d src:manual/42-espnow.md:156 klas:F -->
+<!-- fc id:T-42-066 sha:9c93f60d src:manual/42-espnow.md:156 status:unchecked -->
 ### T-42-066 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1801,7 +1801,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-067 sha:570fdf0b src:manual/42-espnow.md:157 klas:E -->
+<!-- fc id:T-42-067 sha:570fdf0b src:manual/42-espnow.md:157 status:no-external-signal -->
 ### T-42-067 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1826,7 +1826,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-068 sha:fd5169b3 src:manual/42-espnow.md:161 klas:E -->
+<!-- fc id:T-42-068 sha:fd5169b3 src:manual/42-espnow.md:161 status:no-external-signal -->
 ### T-42-068 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1849,7 +1849,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-069 sha:f4029737 src:manual/42-espnow.md:167 klas:F -->
+<!-- fc id:T-42-069 sha:f4029737 src:manual/42-espnow.md:167 status:unchecked -->
 ### T-42-069 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1870,7 +1870,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-070 sha:9a5c871c src:manual/42-espnow.md:169 klas:A -->
+<!-- fc id:T-42-070 sha:9a5c871c src:manual/42-espnow.md:169 status:verbatim -->
 ### T-42-070 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1907,7 +1907,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-071 sha:92ea83dd src:manual/42-espnow.md:170 klas:B -->
+<!-- fc id:T-42-071 sha:92ea83dd src:manual/42-espnow.md:170 status:derived -->
 ### T-42-071 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1938,7 +1938,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-072 sha:9b3986c9 src:manual/42-espnow.md:175 klas:E -->
+<!-- fc id:T-42-072 sha:9b3986c9 src:manual/42-espnow.md:175 status:no-external-signal -->
 ### T-42-072 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1964,7 +1964,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-073 sha:01975951 src:manual/42-espnow.md:184 klas:E -->
+<!-- fc id:T-42-073 sha:01975951 src:manual/42-espnow.md:184 status:no-external-signal -->
 ### T-42-073 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1986,7 +1986,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-074 sha:159e1c45 src:manual/42-espnow.md:187 klas:E -->
+<!-- fc id:T-42-074 sha:159e1c45 src:manual/42-espnow.md:187 status:no-external-signal -->
 ### T-42-074 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -2008,7 +2008,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-075 sha:b40becd9 src:manual/42-espnow.md:190 klas:E -->
+<!-- fc id:T-42-075 sha:b40becd9 src:manual/42-espnow.md:190 status:no-external-signal -->
 ### T-42-075 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -2030,7 +2030,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-076 sha:69210e00 src:manual/42-espnow.md:195 klas:A -->
+<!-- fc id:T-42-076 sha:69210e00 src:manual/42-espnow.md:195 status:verbatim -->
 ### T-42-076 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -2064,7 +2064,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-077 sha:b6848d71 src:manual/42-espnow.md:198 klas:F -->
+<!-- fc id:T-42-077 sha:b6848d71 src:manual/42-espnow.md:198 status:unchecked -->
 ### T-42-077 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -2086,7 +2086,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-078 sha:0f61ca0f src:manual/42-espnow.md:198 klas:F -->
+<!-- fc id:T-42-078 sha:0f61ca0f src:manual/42-espnow.md:198 status:unchecked -->
 ### T-42-078 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -2108,7 +2108,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-079 sha:bc696489 src:manual/42-espnow.md:201 klas:E -->
+<!-- fc id:T-42-079 sha:bc696489 src:manual/42-espnow.md:201 status:no-external-signal -->
 ### T-42-079 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -2130,7 +2130,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-080 sha:ec26b923 src:manual/42-espnow.md:204 klas:E -->
+<!-- fc id:T-42-080 sha:ec26b923 src:manual/42-espnow.md:204 status:no-external-signal -->
 ### T-42-080 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -2152,7 +2152,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-081 sha:b34287fd src:manual/42-espnow.md:209 klas:E -->
+<!-- fc id:T-42-081 sha:b34287fd src:manual/42-espnow.md:209 status:no-external-signal -->
 ### T-42-081 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -2174,7 +2174,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-082 sha:1ccd7865 src:manual/42-espnow.md:212 klas:A -->
+<!-- fc id:T-42-082 sha:1ccd7865 src:manual/42-espnow.md:212 status:verbatim -->
 ### T-42-082 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -2207,7 +2207,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-083 sha:574fb8ff src:manual/42-espnow.md:214 klas:F -->
+<!-- fc id:T-42-083 sha:574fb8ff src:manual/42-espnow.md:214 status:unchecked -->
 ### T-42-083 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -2228,7 +2228,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-084 sha:35a8ee97 src:manual/42-espnow.md:216 klas:E -->
+<!-- fc id:T-42-084 sha:35a8ee97 src:manual/42-espnow.md:216 status:no-external-signal -->
 ### T-42-084 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -2250,7 +2250,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-085 sha:797fdb03 src:manual/42-espnow.md:219 klas:F -->
+<!-- fc id:T-42-085 sha:797fdb03 src:manual/42-espnow.md:219 status:unchecked -->
 ### T-42-085 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -2271,7 +2271,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-086 sha:5242ab3d src:manual/42-espnow.md:221 klas:E -->
+<!-- fc id:T-42-086 sha:5242ab3d src:manual/42-espnow.md:221 status:no-external-signal -->
 ### T-42-086 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**

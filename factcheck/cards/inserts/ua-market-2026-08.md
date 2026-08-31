@@ -1,6 +1,6 @@
 # Фактчекінг: `inserts/ua-market-2026-08.md`
 
-Одиниць твердження: **39**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **39**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-UA--001 sha:6b9ba573 src:inserts/ua-market-2026-08.md:3 klas:E -->
+<!-- fc id:T-UA--001 sha:6b9ba573 src:inserts/ua-market-2026-08.md:3 status:no-external-signal -->
 ### T-UA--001 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -29,7 +29,7 @@
 
 ---
 
-<!-- fc id:T-UA--002 sha:65648812 src:inserts/ua-market-2026-08.md:6 klas:E -->
+<!-- fc id:T-UA--002 sha:65648812 src:inserts/ua-market-2026-08.md:6 status:no-external-signal -->
 ### T-UA--002 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-UA--003 sha:b67e9cde src:inserts/ua-market-2026-08.md:9 klas:E -->
+<!-- fc id:T-UA--003 sha:b67e9cde src:inserts/ua-market-2026-08.md:9 status:no-external-signal -->
 ### T-UA--003 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -75,7 +75,7 @@
 
 ---
 
-<!-- fc id:T-UA--004 sha:a6ef9ad1 src:inserts/ua-market-2026-08.md:9 klas:E -->
+<!-- fc id:T-UA--004 sha:a6ef9ad1 src:inserts/ua-market-2026-08.md:9 status:no-external-signal -->
 ### T-UA--004 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -98,7 +98,7 @@
 
 ---
 
-<!-- fc id:T-UA--005 sha:3788bf3b src:inserts/ua-market-2026-08.md:13 klas:E -->
+<!-- fc id:T-UA--005 sha:3788bf3b src:inserts/ua-market-2026-08.md:13 status:no-external-signal -->
 ### T-UA--005 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -122,7 +122,7 @@
 
 ---
 
-<!-- fc id:T-UA--006 sha:64a8baef src:inserts/ua-market-2026-08.md:20 klas:E -->
+<!-- fc id:T-UA--006 sha:64a8baef src:inserts/ua-market-2026-08.md:20 status:no-external-signal -->
 ### T-UA--006 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -144,7 +144,7 @@
 
 ---
 
-<!-- fc id:T-UA--007 sha:14c55fa6 src:inserts/ua-market-2026-08.md:21 klas:E -->
+<!-- fc id:T-UA--007 sha:14c55fa6 src:inserts/ua-market-2026-08.md:21 status:no-external-signal -->
 ### T-UA--007 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -166,7 +166,7 @@
 
 ---
 
-<!-- fc id:T-UA--008 sha:f8397932 src:inserts/ua-market-2026-08.md:23 klas:E -->
+<!-- fc id:T-UA--008 sha:f8397932 src:inserts/ua-market-2026-08.md:23 status:no-external-signal -->
 ### T-UA--008 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-UA--009 sha:a7a7cd04 src:inserts/ua-market-2026-08.md:24 klas:E -->
+<!-- fc id:T-UA--009 sha:a7a7cd04 src:inserts/ua-market-2026-08.md:24 status:no-external-signal -->
 ### T-UA--009 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -210,7 +210,7 @@
 
 ---
 
-<!-- fc id:T-UA--010 sha:f6a5dd4b src:inserts/ua-market-2026-08.md:26 klas:E -->
+<!-- fc id:T-UA--010 sha:f6a5dd4b src:inserts/ua-market-2026-08.md:26 status:no-external-signal -->
 ### T-UA--010 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -232,7 +232,7 @@
 
 ---
 
-<!-- fc id:T-UA--011 sha:19d7c10a src:inserts/ua-market-2026-08.md:26 klas:E -->
+<!-- fc id:T-UA--011 sha:19d7c10a src:inserts/ua-market-2026-08.md:26 status:no-external-signal -->
 ### T-UA--011 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -254,7 +254,7 @@
 
 ---
 
-<!-- fc id:T-UA--012 sha:1030d1d5 src:inserts/ua-market-2026-08.md:29 klas:E -->
+<!-- fc id:T-UA--012 sha:1030d1d5 src:inserts/ua-market-2026-08.md:29 status:no-external-signal -->
 ### T-UA--012 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -276,7 +276,7 @@
 
 ---
 
-<!-- fc id:T-UA--013 sha:4db1369a src:inserts/ua-market-2026-08.md:35 klas:E -->
+<!-- fc id:T-UA--013 sha:4db1369a src:inserts/ua-market-2026-08.md:35 status:no-external-signal -->
 ### T-UA--013 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -300,7 +300,7 @@
 
 ---
 
-<!-- fc id:T-UA--014 sha:14b70cb0 src:inserts/ua-market-2026-08.md:36 klas:E -->
+<!-- fc id:T-UA--014 sha:14b70cb0 src:inserts/ua-market-2026-08.md:36 status:no-external-signal -->
 ### T-UA--014 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -324,7 +324,7 @@
 
 ---
 
-<!-- fc id:T-UA--015 sha:183e0155 src:inserts/ua-market-2026-08.md:39 klas:D -->
+<!-- fc id:T-UA--015 sha:183e0155 src:inserts/ua-market-2026-08.md:39 status:arithmetic -->
 ### T-UA--015 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -356,7 +356,7 @@
 
 ---
 
-<!-- fc id:T-UA--016 sha:e46bfa0f src:inserts/ua-market-2026-08.md:42 klas:E -->
+<!-- fc id:T-UA--016 sha:e46bfa0f src:inserts/ua-market-2026-08.md:42 status:no-external-signal -->
 ### T-UA--016 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -377,7 +377,7 @@
 
 ---
 
-<!-- fc id:T-UA--017 sha:cfc9a295 src:inserts/ua-market-2026-08.md:44 klas:E -->
+<!-- fc id:T-UA--017 sha:cfc9a295 src:inserts/ua-market-2026-08.md:44 status:no-external-signal -->
 ### T-UA--017 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -400,7 +400,7 @@
 
 ---
 
-<!-- fc id:T-UA--018 sha:82044681 src:inserts/ua-market-2026-08.md:50 klas:E -->
+<!-- fc id:T-UA--018 sha:82044681 src:inserts/ua-market-2026-08.md:50 status:no-external-signal -->
 ### T-UA--018 · tablycya · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -431,7 +431,7 @@
 
 ---
 
-<!-- fc id:T-UA--019 sha:6f85f5fb src:inserts/ua-market-2026-08.md:52 klas:F -->
+<!-- fc id:T-UA--019 sha:6f85f5fb src:inserts/ua-market-2026-08.md:52 status:unchecked -->
 ### T-UA--019 · tablycya · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -462,7 +462,7 @@
 
 ---
 
-<!-- fc id:T-UA--020 sha:3d375e93 src:inserts/ua-market-2026-08.md:53 klas:F -->
+<!-- fc id:T-UA--020 sha:3d375e93 src:inserts/ua-market-2026-08.md:53 status:unchecked -->
 ### T-UA--020 · tablycya · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -493,7 +493,7 @@
 
 ---
 
-<!-- fc id:T-UA--021 sha:141e0a32 src:inserts/ua-market-2026-08.md:54 klas:C -->
+<!-- fc id:T-UA--021 sha:141e0a32 src:inserts/ua-market-2026-08.md:54 status:named-unreachable -->
 ### T-UA--021 · tablycya · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -528,7 +528,7 @@
 
 ---
 
-<!-- fc id:T-UA--022 sha:9ae13f7b src:inserts/ua-market-2026-08.md:55 klas:C -->
+<!-- fc id:T-UA--022 sha:9ae13f7b src:inserts/ua-market-2026-08.md:55 status:named-unreachable -->
 ### T-UA--022 · tablycya · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -563,7 +563,7 @@
 
 ---
 
-<!-- fc id:T-UA--023 sha:ff4664ac src:inserts/ua-market-2026-08.md:56 klas:F -->
+<!-- fc id:T-UA--023 sha:ff4664ac src:inserts/ua-market-2026-08.md:56 status:unchecked -->
 ### T-UA--023 · tablycya · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -594,7 +594,7 @@
 
 ---
 
-<!-- fc id:T-UA--024 sha:f365601b src:inserts/ua-market-2026-08.md:57 klas:C -->
+<!-- fc id:T-UA--024 sha:f365601b src:inserts/ua-market-2026-08.md:57 status:named-unreachable -->
 ### T-UA--024 · tablycya · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -629,7 +629,7 @@
 
 ---
 
-<!-- fc id:T-UA--025 sha:269af9e0 src:inserts/ua-market-2026-08.md:58 klas:E -->
+<!-- fc id:T-UA--025 sha:269af9e0 src:inserts/ua-market-2026-08.md:58 status:no-external-signal -->
 ### T-UA--025 · tablycya · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -671,7 +671,7 @@
 
 ---
 
-<!-- fc id:T-UA--026 sha:03af2d33 src:inserts/ua-market-2026-08.md:59 klas:E -->
+<!-- fc id:T-UA--026 sha:03af2d33 src:inserts/ua-market-2026-08.md:59 status:no-external-signal -->
 ### T-UA--026 · tablycya · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -702,7 +702,7 @@
 
 ---
 
-<!-- fc id:T-UA--027 sha:07ab19ce src:inserts/ua-market-2026-08.md:63 klas:E -->
+<!-- fc id:T-UA--027 sha:07ab19ce src:inserts/ua-market-2026-08.md:63 status:no-external-signal -->
 ### T-UA--027 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -723,7 +723,7 @@
 
 ---
 
-<!-- fc id:T-UA--028 sha:f2a799b3 src:inserts/ua-market-2026-08.md:65 klas:K -->
+<!-- fc id:T-UA--028 sha:f2a799b3 src:inserts/ua-market-2026-08.md:65 status:code-context -->
 ### T-UA--028 · kod · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -756,7 +756,7 @@ esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
 
 ---
 
-<!-- fc id:T-UA--029 sha:f0bdc858 src:inserts/ua-market-2026-08.md:66 klas:A -->
+<!-- fc id:T-UA--029 sha:f0bdc858 src:inserts/ua-market-2026-08.md:66 status:verbatim -->
 ### T-UA--029 · kod-ryadok · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -786,7 +786,7 @@ esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
 
 ---
 
-<!-- fc id:T-UA--030 sha:d204efdb src:inserts/ua-market-2026-08.md:67 klas:A -->
+<!-- fc id:T-UA--030 sha:d204efdb src:inserts/ua-market-2026-08.md:67 status:verbatim -->
 ### T-UA--030 · kod-ryadok · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -816,7 +816,7 @@ esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
 
 ---
 
-<!-- fc id:T-UA--031 sha:c706887e src:inserts/ua-market-2026-08.md:70 klas:E -->
+<!-- fc id:T-UA--031 sha:c706887e src:inserts/ua-market-2026-08.md:70 status:no-external-signal -->
 ### T-UA--031 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -838,7 +838,7 @@ esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
 
 ---
 
-<!-- fc id:T-UA--032 sha:228bb5b5 src:inserts/ua-market-2026-08.md:73 klas:E -->
+<!-- fc id:T-UA--032 sha:228bb5b5 src:inserts/ua-market-2026-08.md:73 status:no-external-signal -->
 ### T-UA--032 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -859,7 +859,7 @@ esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
 
 ---
 
-<!-- fc id:T-UA--033 sha:6dd417b9 src:inserts/ua-market-2026-08.md:77 klas:E -->
+<!-- fc id:T-UA--033 sha:6dd417b9 src:inserts/ua-market-2026-08.md:77 status:no-external-signal -->
 ### T-UA--033 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -881,7 +881,7 @@ esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
 
 ---
 
-<!-- fc id:T-UA--034 sha:9b8eb581 src:inserts/ua-market-2026-08.md:77 klas:E -->
+<!-- fc id:T-UA--034 sha:9b8eb581 src:inserts/ua-market-2026-08.md:77 status:no-external-signal -->
 ### T-UA--034 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -903,7 +903,7 @@ esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
 
 ---
 
-<!-- fc id:T-UA--035 sha:512b4a1a src:inserts/ua-market-2026-08.md:80 klas:E -->
+<!-- fc id:T-UA--035 sha:512b4a1a src:inserts/ua-market-2026-08.md:80 status:no-external-signal -->
 ### T-UA--035 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -926,7 +926,7 @@ esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
 
 ---
 
-<!-- fc id:T-UA--036 sha:de674e32 src:inserts/ua-market-2026-08.md:81 klas:E -->
+<!-- fc id:T-UA--036 sha:de674e32 src:inserts/ua-market-2026-08.md:81 status:no-external-signal -->
 ### T-UA--036 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -949,7 +949,7 @@ esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
 
 ---
 
-<!-- fc id:T-UA--037 sha:61c6ef6c src:inserts/ua-market-2026-08.md:86 klas:E -->
+<!-- fc id:T-UA--037 sha:61c6ef6c src:inserts/ua-market-2026-08.md:86 status:no-external-signal -->
 ### T-UA--037 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -970,7 +970,7 @@ esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
 
 ---
 
-<!-- fc id:T-UA--038 sha:6ac069ed src:inserts/ua-market-2026-08.md:88 klas:F -->
+<!-- fc id:T-UA--038 sha:6ac069ed src:inserts/ua-market-2026-08.md:88 status:unchecked -->
 ### T-UA--038 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -995,7 +995,7 @@ esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
 
 ---
 
-<!-- fc id:T-UA--039 sha:02d11ac6 src:inserts/ua-market-2026-08.md:94 klas:F -->
+<!-- fc id:T-UA--039 sha:02d11ac6 src:inserts/ua-market-2026-08.md:94 status:unchecked -->
 ### T-UA--039 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**

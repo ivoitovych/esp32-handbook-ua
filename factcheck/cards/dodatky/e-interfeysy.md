@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/e-interfeysy.md`
 
-Одиниць твердження: **157**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **157**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-E-001 sha:c1b34d94 src:dodatky/e-interfeysy.md:3 klas:E -->
+<!-- fc id:T-E-001 sha:c1b34d94 src:dodatky/e-interfeysy.md:3 status:no-external-signal -->
 ### T-E-001 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-E-002 sha:bea5d3af src:dodatky/e-interfeysy.md:4 klas:E -->
+<!-- fc id:T-E-002 sha:bea5d3af src:dodatky/e-interfeysy.md:4 status:no-external-signal -->
 ### T-E-002 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-E-003 sha:e208995d src:dodatky/e-interfeysy.md:8 klas:E -->
+<!-- fc id:T-E-003 sha:e208995d src:dodatky/e-interfeysy.md:8 status:no-external-signal -->
 ### T-E-003 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -74,7 +74,7 @@
 
 ---
 
-<!-- fc id:T-E-004 sha:eb769fde src:dodatky/e-interfeysy.md:9 klas:E -->
+<!-- fc id:T-E-004 sha:eb769fde src:dodatky/e-interfeysy.md:9 status:no-external-signal -->
 ### T-E-004 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -109,7 +109,7 @@
 
 ---
 
-<!-- fc id:T-E-005 sha:17f406f5 src:dodatky/e-interfeysy.md:11 klas:F -->
+<!-- fc id:T-E-005 sha:17f406f5 src:dodatky/e-interfeysy.md:11 status:unchecked -->
 ### T-E-005 · tablycya-shapka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -148,7 +148,7 @@
 
 ---
 
-<!-- fc id:T-E-006 sha:346d9a96 src:dodatky/e-interfeysy.md:13 klas:A -->
+<!-- fc id:T-E-006 sha:346d9a96 src:dodatky/e-interfeysy.md:13 status:verbatim -->
 ### T-E-006 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -212,7 +212,7 @@
 
 ---
 
-<!-- fc id:T-E-007 sha:f1937071 src:dodatky/e-interfeysy.md:13 klas:A -->
+<!-- fc id:T-E-007 sha:f1937071 src:dodatky/e-interfeysy.md:13 status:verbatim -->
 ### T-E-007 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -265,7 +265,7 @@
 
 ---
 
-<!-- fc id:T-E-008 sha:7fe3b697 src:dodatky/e-interfeysy.md:13 klas:F -->
+<!-- fc id:T-E-008 sha:7fe3b697 src:dodatky/e-interfeysy.md:13 status:unchecked -->
 ### T-E-008 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -310,7 +310,7 @@
 
 ---
 
-<!-- fc id:T-E-009 sha:b50cc0b0 src:dodatky/e-interfeysy.md:14 klas:A -->
+<!-- fc id:T-E-009 sha:b50cc0b0 src:dodatky/e-interfeysy.md:14 status:verbatim -->
 ### T-E-009 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -374,7 +374,7 @@
 
 ---
 
-<!-- fc id:T-E-010 sha:b0a3aae8 src:dodatky/e-interfeysy.md:14 klas:A -->
+<!-- fc id:T-E-010 sha:b0a3aae8 src:dodatky/e-interfeysy.md:14 status:verbatim -->
 ### T-E-010 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -425,7 +425,7 @@
 
 ---
 
-<!-- fc id:T-E-011 sha:fd9683f6 src:dodatky/e-interfeysy.md:14 klas:F -->
+<!-- fc id:T-E-011 sha:fd9683f6 src:dodatky/e-interfeysy.md:14 status:unchecked -->
 ### T-E-011 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -470,7 +470,7 @@
 
 ---
 
-<!-- fc id:T-E-012 sha:5f4e30c5 src:dodatky/e-interfeysy.md:15 klas:A -->
+<!-- fc id:T-E-012 sha:5f4e30c5 src:dodatky/e-interfeysy.md:15 status:verbatim -->
 ### T-E-012 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -534,7 +534,7 @@
 
 ---
 
-<!-- fc id:T-E-013 sha:11669d9f src:dodatky/e-interfeysy.md:15 klas:A -->
+<!-- fc id:T-E-013 sha:11669d9f src:dodatky/e-interfeysy.md:15 status:verbatim -->
 ### T-E-013 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -595,7 +595,7 @@
 
 ---
 
-<!-- fc id:T-E-014 sha:57cc4434 src:dodatky/e-interfeysy.md:15 klas:E -->
+<!-- fc id:T-E-014 sha:57cc4434 src:dodatky/e-interfeysy.md:15 status:no-external-signal -->
 ### T-E-014 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -646,7 +646,7 @@
 
 ---
 
-<!-- fc id:T-E-015 sha:3a822c76 src:dodatky/e-interfeysy.md:16 klas:A -->
+<!-- fc id:T-E-015 sha:3a822c76 src:dodatky/e-interfeysy.md:16 status:verbatim -->
 ### T-E-015 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -710,7 +710,7 @@
 
 ---
 
-<!-- fc id:T-E-016 sha:1899b23c src:dodatky/e-interfeysy.md:16 klas:D -->
+<!-- fc id:T-E-016 sha:1899b23c src:dodatky/e-interfeysy.md:16 status:arithmetic -->
 ### T-E-016 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -785,7 +785,7 @@
 
 ---
 
-<!-- fc id:T-E-017 sha:60e52cde src:dodatky/e-interfeysy.md:16 klas:D -->
+<!-- fc id:T-E-017 sha:60e52cde src:dodatky/e-interfeysy.md:16 status:arithmetic -->
 ### T-E-017 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -860,7 +860,7 @@
 
 ---
 
-<!-- fc id:T-E-018 sha:6004e5d0 src:dodatky/e-interfeysy.md:17 klas:C -->
+<!-- fc id:T-E-018 sha:6004e5d0 src:dodatky/e-interfeysy.md:17 status:named-unreachable -->
 ### T-E-018 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -909,7 +909,7 @@
 
 ---
 
-<!-- fc id:T-E-019 sha:450710eb src:dodatky/e-interfeysy.md:17 klas:C -->
+<!-- fc id:T-E-019 sha:450710eb src:dodatky/e-interfeysy.md:17 status:named-unreachable -->
 ### T-E-019 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -960,7 +960,7 @@
 
 ---
 
-<!-- fc id:T-E-020 sha:aeaa568e src:dodatky/e-interfeysy.md:17 klas:E -->
+<!-- fc id:T-E-020 sha:aeaa568e src:dodatky/e-interfeysy.md:17 status:no-external-signal -->
 ### T-E-020 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1011,7 +1011,7 @@
 
 ---
 
-<!-- fc id:T-E-021 sha:274457e9 src:dodatky/e-interfeysy.md:18 klas:A -->
+<!-- fc id:T-E-021 sha:274457e9 src:dodatky/e-interfeysy.md:18 status:verbatim -->
 ### T-E-021 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1075,7 +1075,7 @@
 
 ---
 
-<!-- fc id:T-E-022 sha:d5040300 src:dodatky/e-interfeysy.md:18 klas:A -->
+<!-- fc id:T-E-022 sha:d5040300 src:dodatky/e-interfeysy.md:18 status:verbatim -->
 ### T-E-022 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1133,7 +1133,7 @@
 
 ---
 
-<!-- fc id:T-E-023 sha:6181e702 src:dodatky/e-interfeysy.md:18 klas:E -->
+<!-- fc id:T-E-023 sha:6181e702 src:dodatky/e-interfeysy.md:18 status:no-external-signal -->
 ### T-E-023 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1184,7 +1184,7 @@
 
 ---
 
-<!-- fc id:T-E-024 sha:04902e5b src:dodatky/e-interfeysy.md:19 klas:A -->
+<!-- fc id:T-E-024 sha:04902e5b src:dodatky/e-interfeysy.md:19 status:verbatim -->
 ### T-E-024 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1248,7 +1248,7 @@
 
 ---
 
-<!-- fc id:T-E-025 sha:825b180a src:dodatky/e-interfeysy.md:19 klas:F -->
+<!-- fc id:T-E-025 sha:825b180a src:dodatky/e-interfeysy.md:19 status:unchecked -->
 ### T-E-025 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1293,7 +1293,7 @@
 
 ---
 
-<!-- fc id:T-E-026 sha:b55c4a45 src:dodatky/e-interfeysy.md:19 klas:F -->
+<!-- fc id:T-E-026 sha:b55c4a45 src:dodatky/e-interfeysy.md:19 status:unchecked -->
 ### T-E-026 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1338,7 +1338,7 @@
 
 ---
 
-<!-- fc id:T-E-027 sha:3a9afe05 src:dodatky/e-interfeysy.md:20 klas:A -->
+<!-- fc id:T-E-027 sha:3a9afe05 src:dodatky/e-interfeysy.md:20 status:verbatim -->
 ### T-E-027 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1393,7 +1393,7 @@
 
 ---
 
-<!-- fc id:T-E-028 sha:b0502556 src:dodatky/e-interfeysy.md:20 klas:A -->
+<!-- fc id:T-E-028 sha:b0502556 src:dodatky/e-interfeysy.md:20 status:verbatim -->
 ### T-E-028 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1454,7 +1454,7 @@
 
 ---
 
-<!-- fc id:T-E-029 sha:bf63dda1 src:dodatky/e-interfeysy.md:20 klas:E -->
+<!-- fc id:T-E-029 sha:bf63dda1 src:dodatky/e-interfeysy.md:20 status:no-external-signal -->
 ### T-E-029 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1505,7 +1505,7 @@
 
 ---
 
-<!-- fc id:T-E-030 sha:d621df80 src:dodatky/e-interfeysy.md:21 klas:B -->
+<!-- fc id:T-E-030 sha:d621df80 src:dodatky/e-interfeysy.md:21 status:derived -->
 ### T-E-030 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1557,7 +1557,7 @@
 
 ---
 
-<!-- fc id:T-E-031 sha:eca8e7cb src:dodatky/e-interfeysy.md:21 klas:B -->
+<!-- fc id:T-E-031 sha:eca8e7cb src:dodatky/e-interfeysy.md:21 status:derived -->
 ### T-E-031 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1609,7 +1609,7 @@
 
 ---
 
-<!-- fc id:T-E-032 sha:031a738c src:dodatky/e-interfeysy.md:21 klas:B -->
+<!-- fc id:T-E-032 sha:031a738c src:dodatky/e-interfeysy.md:21 status:derived -->
 ### T-E-032 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1661,7 +1661,7 @@
 
 ---
 
-<!-- fc id:T-E-033 sha:974da9fb src:dodatky/e-interfeysy.md:22 klas:A -->
+<!-- fc id:T-E-033 sha:974da9fb src:dodatky/e-interfeysy.md:22 status:verbatim -->
 ### T-E-033 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1720,7 +1720,7 @@
 
 ---
 
-<!-- fc id:T-E-034 sha:a6fff190 src:dodatky/e-interfeysy.md:22 klas:A -->
+<!-- fc id:T-E-034 sha:a6fff190 src:dodatky/e-interfeysy.md:22 status:verbatim -->
 ### T-E-034 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1779,7 +1779,7 @@
 
 ---
 
-<!-- fc id:T-E-035 sha:caaaf18d src:dodatky/e-interfeysy.md:22 klas:A -->
+<!-- fc id:T-E-035 sha:caaaf18d src:dodatky/e-interfeysy.md:22 status:verbatim -->
 ### T-E-035 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1838,7 +1838,7 @@
 
 ---
 
-<!-- fc id:T-E-036 sha:af561b9a src:dodatky/e-interfeysy.md:23 klas:A -->
+<!-- fc id:T-E-036 sha:af561b9a src:dodatky/e-interfeysy.md:23 status:verbatim -->
 ### T-E-036 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1902,7 +1902,7 @@
 
 ---
 
-<!-- fc id:T-E-037 sha:84958947 src:dodatky/e-interfeysy.md:23 klas:A -->
+<!-- fc id:T-E-037 sha:84958947 src:dodatky/e-interfeysy.md:23 status:verbatim -->
 ### T-E-037 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -1958,7 +1958,7 @@
 
 ---
 
-<!-- fc id:T-E-038 sha:7da6b06b src:dodatky/e-interfeysy.md:23 klas:E -->
+<!-- fc id:T-E-038 sha:7da6b06b src:dodatky/e-interfeysy.md:23 status:no-external-signal -->
 ### T-E-038 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2009,7 +2009,7 @@
 
 ---
 
-<!-- fc id:T-E-039 sha:9ec27075 src:dodatky/e-interfeysy.md:24 klas:A -->
+<!-- fc id:T-E-039 sha:9ec27075 src:dodatky/e-interfeysy.md:24 status:verbatim -->
 ### T-E-039 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2073,7 +2073,7 @@
 
 ---
 
-<!-- fc id:T-E-040 sha:55153a86 src:dodatky/e-interfeysy.md:24 klas:A -->
+<!-- fc id:T-E-040 sha:55153a86 src:dodatky/e-interfeysy.md:24 status:verbatim -->
 ### T-E-040 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2129,7 +2129,7 @@
 
 ---
 
-<!-- fc id:T-E-041 sha:49d948f0 src:dodatky/e-interfeysy.md:24 klas:E -->
+<!-- fc id:T-E-041 sha:49d948f0 src:dodatky/e-interfeysy.md:24 status:no-external-signal -->
 ### T-E-041 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2180,7 +2180,7 @@
 
 ---
 
-<!-- fc id:T-E-042 sha:7d4b5654 src:dodatky/e-interfeysy.md:25 klas:A -->
+<!-- fc id:T-E-042 sha:7d4b5654 src:dodatky/e-interfeysy.md:25 status:verbatim -->
 ### T-E-042 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2244,7 +2244,7 @@
 
 ---
 
-<!-- fc id:T-E-043 sha:302952a9 src:dodatky/e-interfeysy.md:25 klas:F -->
+<!-- fc id:T-E-043 sha:302952a9 src:dodatky/e-interfeysy.md:25 status:unchecked -->
 ### T-E-043 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2289,7 +2289,7 @@
 
 ---
 
-<!-- fc id:T-E-044 sha:ef9fcd2b src:dodatky/e-interfeysy.md:25 klas:F -->
+<!-- fc id:T-E-044 sha:ef9fcd2b src:dodatky/e-interfeysy.md:25 status:unchecked -->
 ### T-E-044 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2334,7 +2334,7 @@
 
 ---
 
-<!-- fc id:T-E-045 sha:ed48c80e src:dodatky/e-interfeysy.md:26 klas:A -->
+<!-- fc id:T-E-045 sha:ed48c80e src:dodatky/e-interfeysy.md:26 status:verbatim -->
 ### T-E-045 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2398,7 +2398,7 @@
 
 ---
 
-<!-- fc id:T-E-046 sha:0edbf47b src:dodatky/e-interfeysy.md:26 klas:F -->
+<!-- fc id:T-E-046 sha:0edbf47b src:dodatky/e-interfeysy.md:26 status:unchecked -->
 ### T-E-046 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2443,7 +2443,7 @@
 
 ---
 
-<!-- fc id:T-E-047 sha:9f46567b src:dodatky/e-interfeysy.md:29 klas:A -->
+<!-- fc id:T-E-047 sha:9f46567b src:dodatky/e-interfeysy.md:29 status:verbatim -->
 ### T-E-047 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2487,7 +2487,7 @@ DS3231 і MPU6050 мають однакову адресу `0x68`. Разом н
 
 ---
 
-<!-- fc id:T-E-048 sha:50f4c8ac src:dodatky/e-interfeysy.md:29 klas:A -->
+<!-- fc id:T-E-048 sha:50f4c8ac src:dodatky/e-interfeysy.md:29 status:verbatim -->
 ### T-E-048 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2518,7 +2518,7 @@ DS3231 і MPU6050 мають однакову адресу `0x68`. Разом н
 
 ---
 
-<!-- fc id:T-E-049 sha:cf3f864a src:dodatky/e-interfeysy.md:36 klas:E -->
+<!-- fc id:T-E-049 sha:cf3f864a src:dodatky/e-interfeysy.md:36 status:no-external-signal -->
 ### T-E-049 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2551,7 +2551,7 @@ DS3231 і MPU6050 мають однакову адресу `0x68`. Разом н
 
 ---
 
-<!-- fc id:T-E-050 sha:f78815d4 src:dodatky/e-interfeysy.md:38 klas:F -->
+<!-- fc id:T-E-050 sha:f78815d4 src:dodatky/e-interfeysy.md:38 status:unchecked -->
 ### T-E-050 · tablycya-shapka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2587,7 +2587,7 @@ DS3231 і MPU6050 мають однакову адресу `0x68`. Разом н
 
 ---
 
-<!-- fc id:T-E-051 sha:6f5fce38 src:dodatky/e-interfeysy.md:40 klas:A -->
+<!-- fc id:T-E-051 sha:6f5fce38 src:dodatky/e-interfeysy.md:40 status:verbatim -->
 ### T-E-051 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2648,7 +2648,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-052 sha:5524a220 src:dodatky/e-interfeysy.md:40 klas:A -->
+<!-- fc id:T-E-052 sha:5524a220 src:dodatky/e-interfeysy.md:40 status:verbatim -->
 ### T-E-052 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2698,7 +2698,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-053 sha:f129922d src:dodatky/e-interfeysy.md:40 klas:E -->
+<!-- fc id:T-E-053 sha:f129922d src:dodatky/e-interfeysy.md:40 status:no-external-signal -->
 ### T-E-053 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2746,7 +2746,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-054 sha:adfd8b57 src:dodatky/e-interfeysy.md:41 klas:A -->
+<!-- fc id:T-E-054 sha:adfd8b57 src:dodatky/e-interfeysy.md:41 status:verbatim -->
 ### T-E-054 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2799,7 +2799,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-055 sha:dfb7b32b src:dodatky/e-interfeysy.md:41 klas:A -->
+<!-- fc id:T-E-055 sha:dfb7b32b src:dodatky/e-interfeysy.md:41 status:verbatim -->
 ### T-E-055 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2849,7 +2849,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-056 sha:f30ebfb1 src:dodatky/e-interfeysy.md:41 klas:E -->
+<!-- fc id:T-E-056 sha:f30ebfb1 src:dodatky/e-interfeysy.md:41 status:no-external-signal -->
 ### T-E-056 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2897,7 +2897,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-057 sha:8f11bd59 src:dodatky/e-interfeysy.md:42 klas:E -->
+<!-- fc id:T-E-057 sha:8f11bd59 src:dodatky/e-interfeysy.md:42 status:no-external-signal -->
 ### T-E-057 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2939,7 +2939,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-058 sha:59f2f000 src:dodatky/e-interfeysy.md:42 klas:E -->
+<!-- fc id:T-E-058 sha:59f2f000 src:dodatky/e-interfeysy.md:42 status:no-external-signal -->
 ### T-E-058 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2981,7 +2981,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-059 sha:223f57f7 src:dodatky/e-interfeysy.md:42 klas:A -->
+<!-- fc id:T-E-059 sha:223f57f7 src:dodatky/e-interfeysy.md:42 status:verbatim -->
 ### T-E-059 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3041,7 +3041,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-060 sha:d5eed7a0 src:dodatky/e-interfeysy.md:43 klas:A -->
+<!-- fc id:T-E-060 sha:d5eed7a0 src:dodatky/e-interfeysy.md:43 status:verbatim -->
 ### T-E-060 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3089,7 +3089,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-061 sha:2d0a3f04 src:dodatky/e-interfeysy.md:43 klas:A -->
+<!-- fc id:T-E-061 sha:2d0a3f04 src:dodatky/e-interfeysy.md:43 status:verbatim -->
 ### T-E-061 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3137,7 +3137,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-062 sha:94c061f0 src:dodatky/e-interfeysy.md:43 klas:A -->
+<!-- fc id:T-E-062 sha:94c061f0 src:dodatky/e-interfeysy.md:43 status:verbatim -->
 ### T-E-062 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3185,7 +3185,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-063 sha:33326c46 src:dodatky/e-interfeysy.md:44 klas:C -->
+<!-- fc id:T-E-063 sha:33326c46 src:dodatky/e-interfeysy.md:44 status:named-unreachable -->
 ### T-E-063 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3231,7 +3231,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-064 sha:b83467dd src:dodatky/e-interfeysy.md:44 klas:C -->
+<!-- fc id:T-E-064 sha:b83467dd src:dodatky/e-interfeysy.md:44 status:named-unreachable -->
 ### T-E-064 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3277,7 +3277,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-065 sha:a588779e src:dodatky/e-interfeysy.md:44 klas:A -->
+<!-- fc id:T-E-065 sha:a588779e src:dodatky/e-interfeysy.md:44 status:verbatim -->
 ### T-E-065 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3325,7 +3325,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-066 sha:dc8f7e30 src:dodatky/e-interfeysy.md:45 klas:F -->
+<!-- fc id:T-E-066 sha:dc8f7e30 src:dodatky/e-interfeysy.md:45 status:unchecked -->
 ### T-E-066 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3367,7 +3367,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-067 sha:722a12f0 src:dodatky/e-interfeysy.md:45 klas:C -->
+<!-- fc id:T-E-067 sha:722a12f0 src:dodatky/e-interfeysy.md:45 status:named-unreachable -->
 ### T-E-067 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3413,7 +3413,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-068 sha:e12a5df8 src:dodatky/e-interfeysy.md:45 klas:F -->
+<!-- fc id:T-E-068 sha:e12a5df8 src:dodatky/e-interfeysy.md:45 status:unchecked -->
 ### T-E-068 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3455,7 +3455,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-069 sha:27d739d6 src:dodatky/e-interfeysy.md:46 klas:A -->
+<!-- fc id:T-E-069 sha:27d739d6 src:dodatky/e-interfeysy.md:46 status:verbatim -->
 ### T-E-069 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3507,7 +3507,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-070 sha:3ec6e643 src:dodatky/e-interfeysy.md:46 klas:A -->
+<!-- fc id:T-E-070 sha:3ec6e643 src:dodatky/e-interfeysy.md:46 status:verbatim -->
 ### T-E-070 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3559,7 +3559,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-071 sha:8f789500 src:dodatky/e-interfeysy.md:46 klas:E -->
+<!-- fc id:T-E-071 sha:8f789500 src:dodatky/e-interfeysy.md:46 status:no-external-signal -->
 ### T-E-071 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3607,7 +3607,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-072 sha:f54590ca src:dodatky/e-interfeysy.md:47 klas:A -->
+<!-- fc id:T-E-072 sha:f54590ca src:dodatky/e-interfeysy.md:47 status:verbatim -->
 ### T-E-072 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3664,7 +3664,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-073 sha:bd6d2fd1 src:dodatky/e-interfeysy.md:47 klas:A -->
+<!-- fc id:T-E-073 sha:bd6d2fd1 src:dodatky/e-interfeysy.md:47 status:verbatim -->
 ### T-E-073 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3719,7 +3719,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-074 sha:04a9f3f0 src:dodatky/e-interfeysy.md:47 klas:E -->
+<!-- fc id:T-E-074 sha:04a9f3f0 src:dodatky/e-interfeysy.md:47 status:no-external-signal -->
 ### T-E-074 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3767,7 +3767,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-075 sha:af2de046 src:dodatky/e-interfeysy.md:48 klas:A -->
+<!-- fc id:T-E-075 sha:af2de046 src:dodatky/e-interfeysy.md:48 status:verbatim -->
 ### T-E-075 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3824,7 +3824,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-076 sha:73cf436a src:dodatky/e-interfeysy.md:48 klas:A -->
+<!-- fc id:T-E-076 sha:73cf436a src:dodatky/e-interfeysy.md:48 status:verbatim -->
 ### T-E-076 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3879,7 +3879,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-077 sha:ec5f5dc8 src:dodatky/e-interfeysy.md:48 klas:E -->
+<!-- fc id:T-E-077 sha:ec5f5dc8 src:dodatky/e-interfeysy.md:48 status:no-external-signal -->
 ### T-E-077 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3927,7 +3927,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-078 sha:4371340c src:dodatky/e-interfeysy.md:49 klas:F -->
+<!-- fc id:T-E-078 sha:4371340c src:dodatky/e-interfeysy.md:49 status:unchecked -->
 ### T-E-078 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -3969,7 +3969,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-079 sha:e486f0a5 src:dodatky/e-interfeysy.md:49 klas:F -->
+<!-- fc id:T-E-079 sha:e486f0a5 src:dodatky/e-interfeysy.md:49 status:unchecked -->
 ### T-E-079 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4011,7 +4011,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-080 sha:c89cdd6b src:dodatky/e-interfeysy.md:50 klas:E -->
+<!-- fc id:T-E-080 sha:c89cdd6b src:dodatky/e-interfeysy.md:50 status:no-external-signal -->
 ### T-E-080 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4053,7 +4053,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-081 sha:95e8ad21 src:dodatky/e-interfeysy.md:50 klas:E -->
+<!-- fc id:T-E-081 sha:95e8ad21 src:dodatky/e-interfeysy.md:50 status:no-external-signal -->
 ### T-E-081 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4095,7 +4095,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-082 sha:ffad2970 src:dodatky/e-interfeysy.md:50 klas:E -->
+<!-- fc id:T-E-082 sha:ffad2970 src:dodatky/e-interfeysy.md:50 status:no-external-signal -->
 ### T-E-082 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4137,7 +4137,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-083 sha:91a5608b src:dodatky/e-interfeysy.md:51 klas:F -->
+<!-- fc id:T-E-083 sha:91a5608b src:dodatky/e-interfeysy.md:51 status:unchecked -->
 ### T-E-083 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4179,7 +4179,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-084 sha:ebbcf551 src:dodatky/e-interfeysy.md:51 klas:F -->
+<!-- fc id:T-E-084 sha:ebbcf551 src:dodatky/e-interfeysy.md:51 status:unchecked -->
 ### T-E-084 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4221,7 +4221,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-085 sha:0053b4f8 src:dodatky/e-interfeysy.md:51 klas:F -->
+<!-- fc id:T-E-085 sha:0053b4f8 src:dodatky/e-interfeysy.md:51 status:unchecked -->
 ### T-E-085 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4263,7 +4263,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-086 sha:508da6ef src:dodatky/e-interfeysy.md:53 klas:E -->
+<!-- fc id:T-E-086 sha:508da6ef src:dodatky/e-interfeysy.md:53 status:no-external-signal -->
 ### T-E-086 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4284,7 +4284,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-087 sha:e5d00b74 src:dodatky/e-interfeysy.md:55 klas:A -->
+<!-- fc id:T-E-087 sha:e5d00b74 src:dodatky/e-interfeysy.md:55 status:verbatim -->
 ### T-E-087 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4327,7 +4327,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-088 sha:2ec41b36 src:dodatky/e-interfeysy.md:57 klas:F -->
+<!-- fc id:T-E-088 sha:2ec41b36 src:dodatky/e-interfeysy.md:57 status:unchecked -->
 ### T-E-088 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4351,7 +4351,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-089 sha:2584d17b src:dodatky/e-interfeysy.md:62 klas:A -->
+<!-- fc id:T-E-089 sha:2584d17b src:dodatky/e-interfeysy.md:62 status:verbatim -->
 ### T-E-089 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4394,7 +4394,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-090 sha:58e2d28c src:dodatky/e-interfeysy.md:64 klas:F -->
+<!-- fc id:T-E-090 sha:58e2d28c src:dodatky/e-interfeysy.md:64 status:unchecked -->
 ### T-E-090 · tablycya-shapka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4425,7 +4425,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-091 sha:94d7dcf5 src:dodatky/e-interfeysy.md:66 klas:E -->
+<!-- fc id:T-E-091 sha:94d7dcf5 src:dodatky/e-interfeysy.md:66 status:no-external-signal -->
 ### T-E-091 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4462,7 +4462,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-092 sha:2aae51ca src:dodatky/e-interfeysy.md:66 klas:E -->
+<!-- fc id:T-E-092 sha:2aae51ca src:dodatky/e-interfeysy.md:66 status:no-external-signal -->
 ### T-E-092 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4499,7 +4499,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-093 sha:855aa221 src:dodatky/e-interfeysy.md:67 klas:C -->
+<!-- fc id:T-E-093 sha:855aa221 src:dodatky/e-interfeysy.md:67 status:named-unreachable -->
 ### T-E-093 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4540,7 +4540,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-094 sha:c547b848 src:dodatky/e-interfeysy.md:67 klas:A -->
+<!-- fc id:T-E-094 sha:c547b848 src:dodatky/e-interfeysy.md:67 status:verbatim -->
 ### T-E-094 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4599,7 +4599,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-095 sha:3f504a93 src:dodatky/e-interfeysy.md:68 klas:F -->
+<!-- fc id:T-E-095 sha:3f504a93 src:dodatky/e-interfeysy.md:68 status:unchecked -->
 ### T-E-095 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4636,7 +4636,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-096 sha:0612861d src:dodatky/e-interfeysy.md:68 klas:C -->
+<!-- fc id:T-E-096 sha:0612861d src:dodatky/e-interfeysy.md:68 status:named-unreachable -->
 ### T-E-096 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4678,7 +4678,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-097 sha:b8877b39 src:dodatky/e-interfeysy.md:69 klas:E -->
+<!-- fc id:T-E-097 sha:b8877b39 src:dodatky/e-interfeysy.md:69 status:no-external-signal -->
 ### T-E-097 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4715,7 +4715,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-098 sha:053289b4 src:dodatky/e-interfeysy.md:69 klas:E -->
+<!-- fc id:T-E-098 sha:053289b4 src:dodatky/e-interfeysy.md:69 status:no-external-signal -->
 ### T-E-098 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4752,7 +4752,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-099 sha:5b51dcfb src:dodatky/e-interfeysy.md:70 klas:F -->
+<!-- fc id:T-E-099 sha:5b51dcfb src:dodatky/e-interfeysy.md:70 status:unchecked -->
 ### T-E-099 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4789,7 +4789,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-100 sha:896f6358 src:dodatky/e-interfeysy.md:70 klas:C -->
+<!-- fc id:T-E-100 sha:896f6358 src:dodatky/e-interfeysy.md:70 status:named-unreachable -->
 ### T-E-100 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4831,7 +4831,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-101 sha:cac54e4e src:dodatky/e-interfeysy.md:71 klas:E -->
+<!-- fc id:T-E-101 sha:cac54e4e src:dodatky/e-interfeysy.md:71 status:no-external-signal -->
 ### T-E-101 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4868,7 +4868,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-102 sha:48ea03d4 src:dodatky/e-interfeysy.md:71 klas:E -->
+<!-- fc id:T-E-102 sha:48ea03d4 src:dodatky/e-interfeysy.md:71 status:no-external-signal -->
 ### T-E-102 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4905,7 +4905,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-103 sha:5155a527 src:dodatky/e-interfeysy.md:72 klas:E -->
+<!-- fc id:T-E-103 sha:5155a527 src:dodatky/e-interfeysy.md:72 status:no-external-signal -->
 ### T-E-103 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4942,7 +4942,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-104 sha:e2c081b0 src:dodatky/e-interfeysy.md:72 klas:E -->
+<!-- fc id:T-E-104 sha:e2c081b0 src:dodatky/e-interfeysy.md:72 status:no-external-signal -->
 ### T-E-104 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4979,7 +4979,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-105 sha:e19753d0 src:dodatky/e-interfeysy.md:76 klas:E -->
+<!-- fc id:T-E-105 sha:e19753d0 src:dodatky/e-interfeysy.md:76 status:no-external-signal -->
 ### T-E-105 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5013,7 +5013,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-106 sha:929d7feb src:dodatky/e-interfeysy.md:78 klas:F -->
+<!-- fc id:T-E-106 sha:929d7feb src:dodatky/e-interfeysy.md:78 status:unchecked -->
 ### T-E-106 · tablycya-shapka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5039,7 +5039,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-107 sha:63e06b9b src:dodatky/e-interfeysy.md:80 klas:A -->
+<!-- fc id:T-E-107 sha:63e06b9b src:dodatky/e-interfeysy.md:80 status:verbatim -->
 ### T-E-107 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5077,7 +5077,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-108 sha:8665749b src:dodatky/e-interfeysy.md:80 klas:B -->
+<!-- fc id:T-E-108 sha:8665749b src:dodatky/e-interfeysy.md:80 status:derived -->
 ### T-E-108 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5117,7 +5117,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-109 sha:a1c587ef src:dodatky/e-interfeysy.md:81 klas:F -->
+<!-- fc id:T-E-109 sha:a1c587ef src:dodatky/e-interfeysy.md:81 status:unchecked -->
 ### T-E-109 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5149,7 +5149,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-110 sha:dfa3ce29 src:dodatky/e-interfeysy.md:85 klas:C -->
+<!-- fc id:T-E-110 sha:dfa3ce29 src:dodatky/e-interfeysy.md:85 status:named-unreachable -->
 ### T-E-110 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5175,7 +5175,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-111 sha:7371b723 src:dodatky/e-interfeysy.md:87 klas:E -->
+<!-- fc id:T-E-111 sha:7371b723 src:dodatky/e-interfeysy.md:87 status:no-external-signal -->
 ### T-E-111 · tablycya · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5204,7 +5204,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-112 sha:31ba3159 src:dodatky/e-interfeysy.md:89 klas:C -->
+<!-- fc id:T-E-112 sha:31ba3159 src:dodatky/e-interfeysy.md:89 status:named-unreachable -->
 ### T-E-112 · tablycya · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5237,7 +5237,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-113 sha:e1da2f4a src:dodatky/e-interfeysy.md:90 klas:B -->
+<!-- fc id:T-E-113 sha:e1da2f4a src:dodatky/e-interfeysy.md:90 status:derived -->
 ### T-E-113 · tablycya · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5273,7 +5273,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-114 sha:e67a29db src:dodatky/e-interfeysy.md:91 klas:E -->
+<!-- fc id:T-E-114 sha:e67a29db src:dodatky/e-interfeysy.md:91 status:no-external-signal -->
 ### T-E-114 · tablycya · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5302,7 +5302,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-115 sha:8929fec1 src:dodatky/e-interfeysy.md:92 klas:E -->
+<!-- fc id:T-E-115 sha:8929fec1 src:dodatky/e-interfeysy.md:92 status:no-external-signal -->
 ### T-E-115 · tablycya · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5331,7 +5331,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-116 sha:d063a502 src:dodatky/e-interfeysy.md:93 klas:E -->
+<!-- fc id:T-E-116 sha:d063a502 src:dodatky/e-interfeysy.md:93 status:no-external-signal -->
 ### T-E-116 · tablycya · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5360,7 +5360,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-117 sha:754f537d src:dodatky/e-interfeysy.md:97 klas:E -->
+<!-- fc id:T-E-117 sha:754f537d src:dodatky/e-interfeysy.md:97 status:no-external-signal -->
 ### T-E-117 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5381,7 +5381,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-118 sha:d058b8f8 src:dodatky/e-interfeysy.md:99 klas:F -->
+<!-- fc id:T-E-118 sha:d058b8f8 src:dodatky/e-interfeysy.md:99 status:unchecked -->
 ### T-E-118 · tablycya-shapka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5408,7 +5408,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-119 sha:c6e013aa src:dodatky/e-interfeysy.md:101 klas:F -->
+<!-- fc id:T-E-119 sha:c6e013aa src:dodatky/e-interfeysy.md:101 status:unchecked -->
 ### T-E-119 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5441,7 +5441,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-120 sha:68634053 src:dodatky/e-interfeysy.md:101 klas:F -->
+<!-- fc id:T-E-120 sha:68634053 src:dodatky/e-interfeysy.md:101 status:unchecked -->
 ### T-E-120 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5474,7 +5474,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-121 sha:e83535cc src:dodatky/e-interfeysy.md:102 klas:F -->
+<!-- fc id:T-E-121 sha:e83535cc src:dodatky/e-interfeysy.md:102 status:unchecked -->
 ### T-E-121 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5507,7 +5507,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-122 sha:b327d32d src:dodatky/e-interfeysy.md:102 klas:A -->
+<!-- fc id:T-E-122 sha:b327d32d src:dodatky/e-interfeysy.md:102 status:verbatim -->
 ### T-E-122 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5548,7 +5548,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-123 sha:2aedf206 src:dodatky/e-interfeysy.md:103 klas:F -->
+<!-- fc id:T-E-123 sha:2aedf206 src:dodatky/e-interfeysy.md:103 status:unchecked -->
 ### T-E-123 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5581,7 +5581,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-124 sha:06d56aa5 src:dodatky/e-interfeysy.md:107 klas:F -->
+<!-- fc id:T-E-124 sha:06d56aa5 src:dodatky/e-interfeysy.md:107 status:unchecked -->
 ### T-E-124 · tablycya-shapka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5613,7 +5613,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-125 sha:5a46b695 src:dodatky/e-interfeysy.md:109 klas:A -->
+<!-- fc id:T-E-125 sha:5a46b695 src:dodatky/e-interfeysy.md:109 status:verbatim -->
 ### T-E-125 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5657,7 +5657,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-126 sha:2a40ffab src:dodatky/e-interfeysy.md:109 klas:F -->
+<!-- fc id:T-E-126 sha:2a40ffab src:dodatky/e-interfeysy.md:109 status:unchecked -->
 ### T-E-126 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5695,7 +5695,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-127 sha:70c43f02 src:dodatky/e-interfeysy.md:110 klas:A -->
+<!-- fc id:T-E-127 sha:70c43f02 src:dodatky/e-interfeysy.md:110 status:verbatim -->
 ### T-E-127 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5741,7 +5741,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-128 sha:92e46f9c src:dodatky/e-interfeysy.md:110 klas:F -->
+<!-- fc id:T-E-128 sha:92e46f9c src:dodatky/e-interfeysy.md:110 status:unchecked -->
 ### T-E-128 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5779,7 +5779,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-129 sha:c29a7095 src:dodatky/e-interfeysy.md:111 klas:A -->
+<!-- fc id:T-E-129 sha:c29a7095 src:dodatky/e-interfeysy.md:111 status:verbatim -->
 ### T-E-129 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5832,7 +5832,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-130 sha:2edcffe2 src:dodatky/e-interfeysy.md:111 klas:B -->
+<!-- fc id:T-E-130 sha:2edcffe2 src:dodatky/e-interfeysy.md:111 status:derived -->
 ### T-E-130 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5879,7 +5879,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-131 sha:25d38211 src:dodatky/e-interfeysy.md:112 klas:F -->
+<!-- fc id:T-E-131 sha:25d38211 src:dodatky/e-interfeysy.md:112 status:unchecked -->
 ### T-E-131 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5917,7 +5917,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-132 sha:7a8a7c1e src:dodatky/e-interfeysy.md:112 klas:F -->
+<!-- fc id:T-E-132 sha:7a8a7c1e src:dodatky/e-interfeysy.md:112 status:unchecked -->
 ### T-E-132 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5955,7 +5955,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-133 sha:af56f9d9 src:dodatky/e-interfeysy.md:113 klas:E -->
+<!-- fc id:T-E-133 sha:af56f9d9 src:dodatky/e-interfeysy.md:113 status:no-external-signal -->
 ### T-E-133 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5993,7 +5993,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-134 sha:54d7c2be src:dodatky/e-interfeysy.md:113 klas:E -->
+<!-- fc id:T-E-134 sha:54d7c2be src:dodatky/e-interfeysy.md:113 status:no-external-signal -->
 ### T-E-134 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6031,7 +6031,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-135 sha:6718e2ac src:dodatky/e-interfeysy.md:114 klas:B -->
+<!-- fc id:T-E-135 sha:6718e2ac src:dodatky/e-interfeysy.md:114 status:derived -->
 ### T-E-135 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6081,7 +6081,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-136 sha:b7388bb6 src:dodatky/e-interfeysy.md:114 klas:B -->
+<!-- fc id:T-E-136 sha:b7388bb6 src:dodatky/e-interfeysy.md:114 status:derived -->
 ### T-E-136 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6131,7 +6131,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-137 sha:a6161f9a src:dodatky/e-interfeysy.md:115 klas:C -->
+<!-- fc id:T-E-137 sha:a6161f9a src:dodatky/e-interfeysy.md:115 status:named-unreachable -->
 ### T-E-137 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6174,7 +6174,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-138 sha:32214f7d src:dodatky/e-interfeysy.md:115 klas:F -->
+<!-- fc id:T-E-138 sha:32214f7d src:dodatky/e-interfeysy.md:115 status:unchecked -->
 ### T-E-138 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6212,7 +6212,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-139 sha:909ea86e src:dodatky/e-interfeysy.md:116 klas:F -->
+<!-- fc id:T-E-139 sha:909ea86e src:dodatky/e-interfeysy.md:116 status:unchecked -->
 ### T-E-139 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6250,7 +6250,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-140 sha:dc6772ec src:dodatky/e-interfeysy.md:116 klas:F -->
+<!-- fc id:T-E-140 sha:dc6772ec src:dodatky/e-interfeysy.md:116 status:unchecked -->
 ### T-E-140 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6288,7 +6288,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-141 sha:70d1ab2b src:dodatky/e-interfeysy.md:117 klas:E -->
+<!-- fc id:T-E-141 sha:70d1ab2b src:dodatky/e-interfeysy.md:117 status:no-external-signal -->
 ### T-E-141 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6326,7 +6326,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-142 sha:82b294d2 src:dodatky/e-interfeysy.md:117 klas:E -->
+<!-- fc id:T-E-142 sha:82b294d2 src:dodatky/e-interfeysy.md:117 status:no-external-signal -->
 ### T-E-142 · komirka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6364,7 +6364,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-143 sha:b65fc0a5 src:dodatky/e-interfeysy.md:121 klas:A -->
+<!-- fc id:T-E-143 sha:b65fc0a5 src:dodatky/e-interfeysy.md:121 status:verbatim -->
 ### T-E-143 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6405,7 +6405,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-144 sha:8d32b02f src:dodatky/e-interfeysy.md:123 klas:E -->
+<!-- fc id:T-E-144 sha:8d32b02f src:dodatky/e-interfeysy.md:123 status:no-external-signal -->
 ### T-E-144 · tablycya · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6434,7 +6434,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-145 sha:c8c1f60e src:dodatky/e-interfeysy.md:125 klas:E -->
+<!-- fc id:T-E-145 sha:c8c1f60e src:dodatky/e-interfeysy.md:125 status:no-external-signal -->
 ### T-E-145 · tablycya · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6476,7 +6476,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-146 sha:d6e27376 src:dodatky/e-interfeysy.md:126 klas:E -->
+<!-- fc id:T-E-146 sha:d6e27376 src:dodatky/e-interfeysy.md:126 status:no-external-signal -->
 ### T-E-146 · tablycya · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6518,7 +6518,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-147 sha:17f8b064 src:dodatky/e-interfeysy.md:127 klas:A -->
+<!-- fc id:T-E-147 sha:17f8b064 src:dodatky/e-interfeysy.md:127 status:verbatim -->
 ### T-E-147 · tablycya · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6554,7 +6554,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-148 sha:fcd63e03 src:dodatky/e-interfeysy.md:128 klas:E -->
+<!-- fc id:T-E-148 sha:fcd63e03 src:dodatky/e-interfeysy.md:128 status:no-external-signal -->
 ### T-E-148 · tablycya · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6583,7 +6583,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-149 sha:fb2090c8 src:dodatky/e-interfeysy.md:129 klas:E -->
+<!-- fc id:T-E-149 sha:fb2090c8 src:dodatky/e-interfeysy.md:129 status:no-external-signal -->
 ### T-E-149 · tablycya · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6612,7 +6612,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-150 sha:06362e64 src:dodatky/e-interfeysy.md:133 klas:A -->
+<!-- fc id:T-E-150 sha:06362e64 src:dodatky/e-interfeysy.md:133 status:verbatim -->
 ### T-E-150 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6656,7 +6656,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-151 sha:66b89da4 src:dodatky/e-interfeysy.md:133 klas:E -->
+<!-- fc id:T-E-151 sha:66b89da4 src:dodatky/e-interfeysy.md:133 status:no-external-signal -->
 ### T-E-151 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6678,7 +6678,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-152 sha:dcd5dd7e src:dodatky/e-interfeysy.md:136 klas:F -->
+<!-- fc id:T-E-152 sha:dcd5dd7e src:dodatky/e-interfeysy.md:136 status:unchecked -->
 ### T-E-152 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6700,7 +6700,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-153 sha:4bb5ebd8 src:dodatky/e-interfeysy.md:136 klas:E -->
+<!-- fc id:T-E-153 sha:4bb5ebd8 src:dodatky/e-interfeysy.md:136 status:no-external-signal -->
 ### T-E-153 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6722,7 +6722,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-154 sha:107a64bc src:dodatky/e-interfeysy.md:139 klas:F -->
+<!-- fc id:T-E-154 sha:107a64bc src:dodatky/e-interfeysy.md:139 status:unchecked -->
 ### T-E-154 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6744,7 +6744,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-155 sha:abdd0a3f src:dodatky/e-interfeysy.md:139 klas:E -->
+<!-- fc id:T-E-155 sha:abdd0a3f src:dodatky/e-interfeysy.md:139 status:no-external-signal -->
 ### T-E-155 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6766,7 +6766,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-156 sha:b357ccb9 src:dodatky/e-interfeysy.md:142 klas:E -->
+<!-- fc id:T-E-156 sha:b357ccb9 src:dodatky/e-interfeysy.md:142 status:no-external-signal -->
 ### T-E-156 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6788,7 +6788,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-157 sha:f5b849f3 src:dodatky/e-interfeysy.md:146 klas:F -->
+<!-- fc id:T-E-157 sha:f5b849f3 src:dodatky/e-interfeysy.md:146 status:unchecked -->
 ### T-E-157 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**

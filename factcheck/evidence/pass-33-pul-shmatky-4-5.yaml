@@ -34,7 +34,6 @@
   zbih: 'C3: `GPIO2`, `GPIO8`, `GPIO9`|Головний пін → `GPIO0` = 0|Головний пін → `GPIO9` =
     0|Другий пін для входу в бутлоадер → `GPIO8` \*\*високий\*\*|недійсна комбінація» існує
     лише в правому стовпці'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc
     та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: "(esp32c3.inc)\nStrapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.\n\n(boot-mode-selection.rst)\n\
@@ -71,7 +70,6 @@
 - nazva: Тільки-вхідні, консоль і USB-JTAG у довіднику пінів
   zbih: '`GPIO1` \(TX\) і `GPIO3` \(RX\) — це консоль|USB-JTAG\*\* \[\[S3\]\] `GPIO19`, `GPIO20`|перенести
     вимірювання на \*\*ADC1\*\*|На C3 — `GPIO12`–`GPIO17`'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc
     та .../components/soc/esp32/include/soc/adc_channel.h
   cytata: '(esp32.inc)
@@ -163,7 +161,6 @@
 - nazva: На модулях із PSRAM зайняті ще GPIO16 і GPIO17
   zbih: На модулях із PSRAM до цього переліку додаються `GPIO16`|GPIO16-17 are usually connected|16
     і 17 — лише там, де на модулі є PSRAM
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
 
@@ -224,7 +221,6 @@
   zbih: ADC2 ділиться з Wi-Fi|повертає \*\*помилку\*\*, а не зіпсоване число|читання, яке
     перестало вдаватися|датчик просто «замовкає» на старому|перенести вимірювання на \*\*ADC1\*\*|перестає
     вдаватися\. Людина шукає
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
   cytata: ":esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi.\n  :cpp:func:`adc_oneshot_read`\
     \ has provided protection between the\n  Wi-Fi driver and ADC oneshot mode driver.\n:esp32c3:\
@@ -265,7 +261,6 @@
 - nazva: Піновий план проєкту 62 — три сімейства, кожен пін вільний
   zbih: Вихід на реле · (classic|S3|C3) →|Кнопка «стоп» · (classic|S3|C3) →|Кнопка «пуск»
     · (classic|S3|C3) →
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc
     та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
   cytata: "(esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)\n* - GPIO25\
@@ -303,7 +298,6 @@
 - nazva: GPIO5 на classic — теж strapping, і книга це тепер каже
   zbih: '`GPIO5` на\s*\n?classic — теж strapping-пін|правило книги —\s*\n?називати strapping-піни
     там, де їх беруть'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: "* - GPIO5\n    -\n    -\n    - Strapping pin\n\nStrapping pin: GPIO0, GPIO2, GPIO5,\
     \ GPIO12 (MTDI), and GPIO15 (MTDO)\nare strapping pins.\n"

@@ -1,6 +1,5 @@
 - nazva: 'T-11-042: **Версія ESP-IDF фіксується на початку проєкту й записується.**'
   zbih: \*\*Версія\s+ESP\-IDF\s+фіксується\s+на
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/versions.rst
   cytata: 'use the `current stable version`_
 
@@ -18,7 +17,6 @@
   note: Документація рекомендує вибір конкретної стабільної версії для проектів
 - nazva: 'T-11-023: Ця команда додає інструменти в `PATH` і ставить'
   zbih: Ця\s+команда\s+додає\s+інструменти
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/export.sh
   cytata: 'Evaluate the ESP-IDF environment set up by the activate.py script.
 

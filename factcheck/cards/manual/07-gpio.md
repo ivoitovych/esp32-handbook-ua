@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/07-gpio.md`
 
-Одиниць твердження: **137**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **137**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-07-001 sha:a7df30f3 src:manual/07-gpio.md:3 klas:C -->
+<!-- fc id:T-07-001 sha:a7df30f3 src:manual/07-gpio.md:3 status:named-unreachable -->
 ### T-07-001 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -35,7 +35,7 @@
 
 ---
 
-<!-- fc id:T-07-002 sha:65b80860 src:manual/07-gpio.md:4 klas:E -->
+<!-- fc id:T-07-002 sha:65b80860 src:manual/07-gpio.md:4 status:no-external-signal -->
 ### T-07-002 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -59,7 +59,7 @@
 
 ---
 
-<!-- fc id:T-07-003 sha:0dcae029 src:manual/07-gpio.md:8 klas:E -->
+<!-- fc id:T-07-003 sha:0dcae029 src:manual/07-gpio.md:8 status:no-external-signal -->
 ### T-07-003 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -81,7 +81,7 @@
 
 ---
 
-<!-- fc id:T-07-004 sha:497cb464 src:manual/07-gpio.md:8 klas:E -->
+<!-- fc id:T-07-004 sha:497cb464 src:manual/07-gpio.md:8 status:no-external-signal -->
 ### T-07-004 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -103,7 +103,7 @@
 
 ---
 
-<!-- fc id:T-07-005 sha:cc3571ac src:manual/07-gpio.md:13 klas:A -->
+<!-- fc id:T-07-005 sha:cc3571ac src:manual/07-gpio.md:13 status:verbatim -->
 ### T-07-005 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -133,7 +133,7 @@
 
 ---
 
-<!-- fc id:T-07-006 sha:0c44d42d src:manual/07-gpio.md:14 klas:A -->
+<!-- fc id:T-07-006 sha:0c44d42d src:manual/07-gpio.md:14 status:verbatim -->
 ### T-07-006 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -163,7 +163,7 @@
 
 ---
 
-<!-- fc id:T-07-007 sha:2d4ea1d4 src:manual/07-gpio.md:15 klas:E -->
+<!-- fc id:T-07-007 sha:2d4ea1d4 src:manual/07-gpio.md:15 status:no-external-signal -->
 ### T-07-007 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -187,7 +187,7 @@
 
 ---
 
-<!-- fc id:T-07-008 sha:44ec0959 src:manual/07-gpio.md:18 klas:A -->
+<!-- fc id:T-07-008 sha:44ec0959 src:manual/07-gpio.md:18 status:verbatim -->
 ### T-07-008 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -215,7 +215,7 @@
 
 ---
 
-<!-- fc id:T-07-009 sha:9145afd8 src:manual/07-gpio.md:20 klas:C -->
+<!-- fc id:T-07-009 sha:9145afd8 src:manual/07-gpio.md:20 status:named-unreachable -->
 ### T-07-009 · tablycya-shapka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -247,7 +247,7 @@
 
 ---
 
-<!-- fc id:T-07-010 sha:1f80fd22 src:manual/07-gpio.md:22 klas:A -->
+<!-- fc id:T-07-010 sha:1f80fd22 src:manual/07-gpio.md:22 status:verbatim -->
 ### T-07-010 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -304,7 +304,7 @@
 
 ---
 
-<!-- fc id:T-07-011 sha:40fa9dc7 src:manual/07-gpio.md:22 klas:A -->
+<!-- fc id:T-07-011 sha:40fa9dc7 src:manual/07-gpio.md:22 status:verbatim -->
 ### T-07-011 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -361,7 +361,7 @@
 
 ---
 
-<!-- fc id:T-07-012 sha:ce485f20 src:manual/07-gpio.md:23 klas:A -->
+<!-- fc id:T-07-012 sha:ce485f20 src:manual/07-gpio.md:23 status:verbatim -->
 ### T-07-012 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -402,7 +402,7 @@
 
 ---
 
-<!-- fc id:T-07-013 sha:e1c33c77 src:manual/07-gpio.md:23 klas:A -->
+<!-- fc id:T-07-013 sha:e1c33c77 src:manual/07-gpio.md:23 status:verbatim -->
 ### T-07-013 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -459,7 +459,7 @@
 
 ---
 
-<!-- fc id:T-07-014 sha:4c5651fc src:manual/07-gpio.md:24 klas:A -->
+<!-- fc id:T-07-014 sha:4c5651fc src:manual/07-gpio.md:24 status:verbatim -->
 ### T-07-014 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -516,7 +516,7 @@
 
 ---
 
-<!-- fc id:T-07-015 sha:526ab509 src:manual/07-gpio.md:24 klas:A -->
+<!-- fc id:T-07-015 sha:526ab509 src:manual/07-gpio.md:24 status:verbatim -->
 ### T-07-015 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -573,7 +573,7 @@
 
 ---
 
-<!-- fc id:T-07-016 sha:fa0a392e src:manual/07-gpio.md:25 klas:A -->
+<!-- fc id:T-07-016 sha:fa0a392e src:manual/07-gpio.md:25 status:verbatim -->
 ### T-07-016 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -619,7 +619,7 @@
 
 ---
 
-<!-- fc id:T-07-017 sha:ba3c0447 src:manual/07-gpio.md:25 klas:A -->
+<!-- fc id:T-07-017 sha:ba3c0447 src:manual/07-gpio.md:25 status:verbatim -->
 ### T-07-017 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -676,7 +676,7 @@
 
 ---
 
-<!-- fc id:T-07-018 sha:a47a5658 src:manual/07-gpio.md:26 klas:A -->
+<!-- fc id:T-07-018 sha:a47a5658 src:manual/07-gpio.md:26 status:verbatim -->
 ### T-07-018 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -718,7 +718,7 @@
 
 ---
 
-<!-- fc id:T-07-019 sha:1c9c861b src:manual/07-gpio.md:26 klas:A -->
+<!-- fc id:T-07-019 sha:1c9c861b src:manual/07-gpio.md:26 status:verbatim -->
 ### T-07-019 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -760,7 +760,7 @@
 
 ---
 
-<!-- fc id:T-07-020 sha:3ad16f23 src:manual/07-gpio.md:29 klas:A -->
+<!-- fc id:T-07-020 sha:3ad16f23 src:manual/07-gpio.md:29 status:verbatim -->
 ### T-07-020 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -793,7 +793,7 @@
 
 ---
 
-<!-- fc id:T-07-021 sha:448ca622 src:manual/07-gpio.md:31 klas:A -->
+<!-- fc id:T-07-021 sha:448ca622 src:manual/07-gpio.md:31 status:verbatim -->
 ### T-07-021 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -824,7 +824,7 @@
 
 ---
 
-<!-- fc id:T-07-022 sha:13378f7b src:manual/07-gpio.md:32 klas:E -->
+<!-- fc id:T-07-022 sha:13378f7b src:manual/07-gpio.md:32 status:no-external-signal -->
 ### T-07-022 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -847,7 +847,7 @@
 
 ---
 
-<!-- fc id:T-07-023 sha:f88217d7 src:manual/07-gpio.md:35 klas:E -->
+<!-- fc id:T-07-023 sha:f88217d7 src:manual/07-gpio.md:35 status:no-external-signal -->
 ### T-07-023 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -871,7 +871,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-024 sha:3cc299dc src:manual/07-gpio.md:35 klas:A -->
+<!-- fc id:T-07-024 sha:3cc299dc src:manual/07-gpio.md:35 status:verbatim -->
 ### T-07-024 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -903,7 +903,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-025 sha:4c72b57c src:manual/07-gpio.md:38 klas:E -->
+<!-- fc id:T-07-025 sha:4c72b57c src:manual/07-gpio.md:38 status:no-external-signal -->
 ### T-07-025 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -927,7 +927,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-026 sha:2088d8d8 src:manual/07-gpio.md:40 klas:F -->
+<!-- fc id:T-07-026 sha:2088d8d8 src:manual/07-gpio.md:40 status:unchecked -->
 ### T-07-026 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -949,7 +949,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-027 sha:08517ba3 src:manual/07-gpio.md:44 klas:A -->
+<!-- fc id:T-07-027 sha:08517ba3 src:manual/07-gpio.md:44 status:verbatim -->
 ### T-07-027 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -992,7 +992,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-028 sha:e7afa480 src:manual/07-gpio.md:44 klas:A -->
+<!-- fc id:T-07-028 sha:e7afa480 src:manual/07-gpio.md:44 status:verbatim -->
 ### T-07-028 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1035,7 +1035,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-029 sha:e461769b src:manual/07-gpio.md:49 klas:A -->
+<!-- fc id:T-07-029 sha:e461769b src:manual/07-gpio.md:49 status:verbatim -->
 ### T-07-029 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1067,7 +1067,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-030 sha:1cf32b5b src:manual/07-gpio.md:50 klas:B -->
+<!-- fc id:T-07-030 sha:1cf32b5b src:manual/07-gpio.md:50 status:derived -->
 ### T-07-030 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1100,7 +1100,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-031 sha:126e9170 src:manual/07-gpio.md:54 klas:B -->
+<!-- fc id:T-07-031 sha:126e9170 src:manual/07-gpio.md:54 status:derived -->
 ### T-07-031 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1129,7 +1129,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-032 sha:f1f40880 src:manual/07-gpio.md:55 klas:E -->
+<!-- fc id:T-07-032 sha:f1f40880 src:manual/07-gpio.md:55 status:no-external-signal -->
 ### T-07-032 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1153,7 +1153,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-033 sha:9c7ac3ac src:manual/07-gpio.md:59 klas:A -->
+<!-- fc id:T-07-033 sha:9c7ac3ac src:manual/07-gpio.md:59 status:verbatim -->
 ### T-07-033 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1191,7 +1191,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-034 sha:6f66ba9c src:manual/07-gpio.md:60 klas:A -->
+<!-- fc id:T-07-034 sha:6f66ba9c src:manual/07-gpio.md:60 status:verbatim -->
 ### T-07-034 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1229,7 +1229,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-035 sha:c9a973d7 src:manual/07-gpio.md:64 klas:E -->
+<!-- fc id:T-07-035 sha:c9a973d7 src:manual/07-gpio.md:64 status:no-external-signal -->
 ### T-07-035 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1251,7 +1251,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-036 sha:0eefa260 src:manual/07-gpio.md:65 klas:C -->
+<!-- fc id:T-07-036 sha:0eefa260 src:manual/07-gpio.md:65 status:named-unreachable -->
 ### T-07-036 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1277,7 +1277,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-037 sha:bb7e589a src:manual/07-gpio.md:67 klas:D -->
+<!-- fc id:T-07-037 sha:bb7e589a src:manual/07-gpio.md:67 status:arithmetic -->
 ### T-07-037 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1311,7 +1311,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-038 sha:18fd55d6 src:manual/07-gpio.md:72 klas:A -->
+<!-- fc id:T-07-038 sha:18fd55d6 src:manual/07-gpio.md:72 status:verbatim -->
 ### T-07-038 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1346,7 +1346,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-039 sha:ddcca7e9 src:manual/07-gpio.md:72 klas:A -->
+<!-- fc id:T-07-039 sha:ddcca7e9 src:manual/07-gpio.md:72 status:verbatim -->
 ### T-07-039 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1381,7 +1381,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-040 sha:646aea48 src:manual/07-gpio.md:74 klas:A -->
+<!-- fc id:T-07-040 sha:646aea48 src:manual/07-gpio.md:74 status:verbatim -->
 ### T-07-040 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1416,7 +1416,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-041 sha:13e25920 src:manual/07-gpio.md:76 klas:A -->
+<!-- fc id:T-07-041 sha:13e25920 src:manual/07-gpio.md:76 status:verbatim -->
 ### T-07-041 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1453,7 +1453,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-042 sha:ea35d47e src:manual/07-gpio.md:76 klas:A -->
+<!-- fc id:T-07-042 sha:ea35d47e src:manual/07-gpio.md:76 status:verbatim -->
 ### T-07-042 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1488,7 +1488,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-043 sha:4b043722 src:manual/07-gpio.md:77 klas:A -->
+<!-- fc id:T-07-043 sha:4b043722 src:manual/07-gpio.md:77 status:verbatim -->
 ### T-07-043 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1538,7 +1538,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-044 sha:25dddc72 src:manual/07-gpio.md:81 klas:A -->
+<!-- fc id:T-07-044 sha:25dddc72 src:manual/07-gpio.md:81 status:verbatim -->
 ### T-07-044 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1582,7 +1582,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-045 sha:738e4c61 src:manual/07-gpio.md:84 klas:A -->
+<!-- fc id:T-07-045 sha:738e4c61 src:manual/07-gpio.md:84 status:verbatim -->
 ### T-07-045 · tablycya-shapka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1617,7 +1617,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-046 sha:a23fd859 src:manual/07-gpio.md:86 klas:A -->
+<!-- fc id:T-07-046 sha:a23fd859 src:manual/07-gpio.md:86 status:verbatim -->
 ### T-07-046 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1666,7 +1666,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-047 sha:3e79ba6b src:manual/07-gpio.md:86 klas:A -->
+<!-- fc id:T-07-047 sha:3e79ba6b src:manual/07-gpio.md:86 status:verbatim -->
 ### T-07-047 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1722,7 +1722,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-048 sha:4e3150be src:manual/07-gpio.md:87 klas:A -->
+<!-- fc id:T-07-048 sha:4e3150be src:manual/07-gpio.md:87 status:verbatim -->
 ### T-07-048 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1771,7 +1771,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-049 sha:2d751064 src:manual/07-gpio.md:87 klas:A -->
+<!-- fc id:T-07-049 sha:2d751064 src:manual/07-gpio.md:87 status:verbatim -->
 ### T-07-049 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1818,7 +1818,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-050 sha:197dffaa src:manual/07-gpio.md:88 klas:A -->
+<!-- fc id:T-07-050 sha:197dffaa src:manual/07-gpio.md:88 status:verbatim -->
 ### T-07-050 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1867,7 +1867,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-051 sha:2e5908b5 src:manual/07-gpio.md:88 klas:A -->
+<!-- fc id:T-07-051 sha:2e5908b5 src:manual/07-gpio.md:88 status:verbatim -->
 ### T-07-051 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1916,7 +1916,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-052 sha:cd5ba6b2 src:manual/07-gpio.md:90 klas:A -->
+<!-- fc id:T-07-052 sha:cd5ba6b2 src:manual/07-gpio.md:90 status:verbatim -->
 ### T-07-052 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1954,7 +1954,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-053 sha:7070a25b src:manual/07-gpio.md:92 klas:A -->
+<!-- fc id:T-07-053 sha:7070a25b src:manual/07-gpio.md:92 status:verbatim -->
 ### T-07-053 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1984,7 +1984,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-054 sha:d28dc959 src:manual/07-gpio.md:95 klas:A -->
+<!-- fc id:T-07-054 sha:d28dc959 src:manual/07-gpio.md:95 status:verbatim -->
 ### T-07-054 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2034,7 +2034,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-055 sha:8fc6eaa5 src:manual/07-gpio.md:99 klas:A -->
+<!-- fc id:T-07-055 sha:8fc6eaa5 src:manual/07-gpio.md:99 status:verbatim -->
 ### T-07-055 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2064,7 +2064,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-056 sha:8dc5f04a src:manual/07-gpio.md:101 klas:F -->
+<!-- fc id:T-07-056 sha:8dc5f04a src:manual/07-gpio.md:101 status:unchecked -->
 ### T-07-056 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2088,7 +2088,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-057 sha:05e05b1d src:manual/07-gpio.md:105 klas:A -->
+<!-- fc id:T-07-057 sha:05e05b1d src:manual/07-gpio.md:105 status:verbatim -->
 ### T-07-057 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2123,7 +2123,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-058 sha:d06a1e95 src:manual/07-gpio.md:107 klas:E -->
+<!-- fc id:T-07-058 sha:d06a1e95 src:manual/07-gpio.md:107 status:no-external-signal -->
 ### T-07-058 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2159,7 +2159,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-059 sha:dbf37389 src:manual/07-gpio.md:107 klas:E -->
+<!-- fc id:T-07-059 sha:dbf37389 src:manual/07-gpio.md:107 status:no-external-signal -->
 ### T-07-059 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2182,7 +2182,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-060 sha:1eb06e75 src:manual/07-gpio.md:111 klas:F -->
+<!-- fc id:T-07-060 sha:1eb06e75 src:manual/07-gpio.md:111 status:unchecked -->
 ### T-07-060 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2205,7 +2205,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-061 sha:393f05ea src:manual/07-gpio.md:115 klas:A -->
+<!-- fc id:T-07-061 sha:393f05ea src:manual/07-gpio.md:115 status:verbatim -->
 ### T-07-061 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2241,7 +2241,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-062 sha:87c3d715 src:manual/07-gpio.md:115 klas:E -->
+<!-- fc id:T-07-062 sha:87c3d715 src:manual/07-gpio.md:115 status:no-external-signal -->
 ### T-07-062 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2264,7 +2264,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-063 sha:c3ef5d6f src:manual/07-gpio.md:121 klas:A -->
+<!-- fc id:T-07-063 sha:c3ef5d6f src:manual/07-gpio.md:121 status:verbatim -->
 ### T-07-063 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2292,7 +2292,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-064 sha:d8a73a0f src:manual/07-gpio.md:124 klas:A -->
+<!-- fc id:T-07-064 sha:d8a73a0f src:manual/07-gpio.md:124 status:verbatim -->
 ### T-07-064 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2321,7 +2321,7 @@ GPIO — і це чиста пастка. Спроба їх використат
 
 ---
 
-<!-- fc id:T-07-065 sha:6964fc01 src:manual/07-gpio.md:125 klas:A -->
+<!-- fc id:T-07-065 sha:6964fc01 src:manual/07-gpio.md:125 status:verbatim -->
 ### T-07-065 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2350,7 +2350,7 @@ GPIO — і це чиста пастка. Спроба їх використат
 
 ---
 
-<!-- fc id:T-07-066 sha:30b73e47 src:manual/07-gpio.md:128 klas:A -->
+<!-- fc id:T-07-066 sha:30b73e47 src:manual/07-gpio.md:128 status:verbatim -->
 ### T-07-066 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2378,7 +2378,7 @@ GPIO — і це чиста пастка. Спроба їх використат
 
 ---
 
-<!-- fc id:T-07-067 sha:25039e68 src:manual/07-gpio.md:128 klas:A -->
+<!-- fc id:T-07-067 sha:25039e68 src:manual/07-gpio.md:128 status:verbatim -->
 ### T-07-067 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2406,7 +2406,7 @@ GPIO — і це чиста пастка. Спроба їх використат
 
 ---
 
-<!-- fc id:T-07-068 sha:ec10e19e src:manual/07-gpio.md:132 klas:A -->
+<!-- fc id:T-07-068 sha:ec10e19e src:manual/07-gpio.md:132 status:verbatim -->
 ### T-07-068 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2443,7 +2443,7 @@ integrated on the module».
 
 ---
 
-<!-- fc id:T-07-069 sha:f4840dbc src:manual/07-gpio.md:137 klas:A -->
+<!-- fc id:T-07-069 sha:f4840dbc src:manual/07-gpio.md:137 status:verbatim -->
 ### T-07-069 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2472,7 +2472,7 @@ integrated on the module».
 
 ---
 
-<!-- fc id:T-07-070 sha:32397664 src:manual/07-gpio.md:137 klas:A -->
+<!-- fc id:T-07-070 sha:32397664 src:manual/07-gpio.md:137 status:verbatim -->
 ### T-07-070 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2507,7 +2507,7 @@ integrated on the module».
 
 ---
 
-<!-- fc id:T-07-071 sha:e55b2180 src:manual/07-gpio.md:139 klas:A -->
+<!-- fc id:T-07-071 sha:e55b2180 src:manual/07-gpio.md:139 status:verbatim -->
 ### T-07-071 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2536,7 +2536,7 @@ integrated on the module».
 
 ---
 
-<!-- fc id:T-07-072 sha:11f8e1b0 src:manual/07-gpio.md:141 klas:A -->
+<!-- fc id:T-07-072 sha:11f8e1b0 src:manual/07-gpio.md:141 status:verbatim -->
 ### T-07-072 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2566,7 +2566,7 @@ integrated on the module».
 
 ---
 
-<!-- fc id:T-07-073 sha:cd5972bc src:manual/07-gpio.md:142 klas:B -->
+<!-- fc id:T-07-073 sha:cd5972bc src:manual/07-gpio.md:142 status:derived -->
 ### T-07-073 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2607,7 +2607,7 @@ PSRAM, тому схема перестає працювати. Це показ�
 
 ---
 
-<!-- fc id:T-07-074 sha:c9a2eeb3 src:manual/07-gpio.md:146 klas:A -->
+<!-- fc id:T-07-074 sha:c9a2eeb3 src:manual/07-gpio.md:146 status:verbatim -->
 ### T-07-074 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2652,7 +2652,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-075 sha:203497bf src:manual/07-gpio.md:149 klas:A -->
+<!-- fc id:T-07-075 sha:203497bf src:manual/07-gpio.md:149 status:verbatim -->
 ### T-07-075 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2700,7 +2700,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-076 sha:d9afb982 src:manual/07-gpio.md:151 klas:A -->
+<!-- fc id:T-07-076 sha:d9afb982 src:manual/07-gpio.md:151 status:verbatim -->
 ### T-07-076 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2748,7 +2748,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-077 sha:8b178734 src:manual/07-gpio.md:153 klas:A -->
+<!-- fc id:T-07-077 sha:8b178734 src:manual/07-gpio.md:153 status:verbatim -->
 ### T-07-077 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2796,7 +2796,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-078 sha:9a2e525e src:manual/07-gpio.md:156 klas:A -->
+<!-- fc id:T-07-078 sha:9a2e525e src:manual/07-gpio.md:156 status:verbatim -->
 ### T-07-078 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2826,7 +2826,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-079 sha:5638f14b src:manual/07-gpio.md:157 klas:A -->
+<!-- fc id:T-07-079 sha:5638f14b src:manual/07-gpio.md:157 status:verbatim -->
 ### T-07-079 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2873,7 +2873,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-080 sha:f1266858 src:manual/07-gpio.md:160 klas:A -->
+<!-- fc id:T-07-080 sha:f1266858 src:manual/07-gpio.md:160 status:verbatim -->
 ### T-07-080 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2902,7 +2902,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-081 sha:6a801047 src:manual/07-gpio.md:166 klas:B -->
+<!-- fc id:T-07-081 sha:6a801047 src:manual/07-gpio.md:166 status:derived -->
 ### T-07-081 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2938,7 +2938,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-082 sha:2b119dd6 src:manual/07-gpio.md:168 klas:B -->
+<!-- fc id:T-07-082 sha:2b119dd6 src:manual/07-gpio.md:168 status:derived -->
 ### T-07-082 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -2972,7 +2972,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-083 sha:2dbf225d src:manual/07-gpio.md:171 klas:A -->
+<!-- fc id:T-07-083 sha:2dbf225d src:manual/07-gpio.md:171 status:verbatim -->
 ### T-07-083 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3001,7 +3001,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-084 sha:9b7ec34b src:manual/07-gpio.md:171 klas:B -->
+<!-- fc id:T-07-084 sha:9b7ec34b src:manual/07-gpio.md:171 status:derived -->
 ### T-07-084 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3039,7 +3039,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-085 sha:1d981589 src:manual/07-gpio.md:173 klas:A -->
+<!-- fc id:T-07-085 sha:1d981589 src:manual/07-gpio.md:173 status:verbatim -->
 ### T-07-085 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3068,7 +3068,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-086 sha:7997d730 src:manual/07-gpio.md:175 klas:A -->
+<!-- fc id:T-07-086 sha:7997d730 src:manual/07-gpio.md:175 status:verbatim -->
 ### T-07-086 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3095,7 +3095,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-087 sha:dc856329 src:manual/07-gpio.md:177 klas:A -->
+<!-- fc id:T-07-087 sha:dc856329 src:manual/07-gpio.md:177 status:verbatim -->
 ### T-07-087 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3123,7 +3123,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-088 sha:4d958fd4 src:manual/07-gpio.md:182 klas:A -->
+<!-- fc id:T-07-088 sha:4d958fd4 src:manual/07-gpio.md:182 status:verbatim -->
 ### T-07-088 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3152,7 +3152,7 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 
 ---
 
-<!-- fc id:T-07-089 sha:213a514e src:manual/07-gpio.md:186 klas:A -->
+<!-- fc id:T-07-089 sha:213a514e src:manual/07-gpio.md:186 status:verbatim -->
 ### T-07-089 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3192,7 +3192,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-090 sha:0038f55f src:manual/07-gpio.md:190 klas:A -->
+<!-- fc id:T-07-090 sha:0038f55f src:manual/07-gpio.md:190 status:verbatim -->
 ### T-07-090 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3227,7 +3227,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-091 sha:97c124bb src:manual/07-gpio.md:191 klas:A -->
+<!-- fc id:T-07-091 sha:97c124bb src:manual/07-gpio.md:191 status:verbatim -->
 ### T-07-091 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3262,7 +3262,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-092 sha:4fe5b2b1 src:manual/07-gpio.md:194 klas:A -->
+<!-- fc id:T-07-092 sha:4fe5b2b1 src:manual/07-gpio.md:194 status:verbatim -->
 ### T-07-092 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3301,7 +3301,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-093 sha:cf5a8129 src:manual/07-gpio.md:195 klas:A -->
+<!-- fc id:T-07-093 sha:cf5a8129 src:manual/07-gpio.md:195 status:verbatim -->
 ### T-07-093 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3330,7 +3330,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-094 sha:4abe4c19 src:manual/07-gpio.md:198 klas:A -->
+<!-- fc id:T-07-094 sha:4abe4c19 src:manual/07-gpio.md:198 status:verbatim -->
 ### T-07-094 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3376,7 +3376,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-095 sha:e9ad2932 src:manual/07-gpio.md:202 klas:A -->
+<!-- fc id:T-07-095 sha:e9ad2932 src:manual/07-gpio.md:202 status:verbatim -->
 ### T-07-095 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3417,7 +3417,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-096 sha:48af3317 src:manual/07-gpio.md:205 klas:C -->
+<!-- fc id:T-07-096 sha:48af3317 src:manual/07-gpio.md:205 status:named-unreachable -->
 ### T-07-096 · tablycya-shapka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3447,7 +3447,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-097 sha:2d6128fe src:manual/07-gpio.md:207 klas:A -->
+<!-- fc id:T-07-097 sha:2d6128fe src:manual/07-gpio.md:207 status:verbatim -->
 ### T-07-097 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3506,7 +3506,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-098 sha:7d1d509e src:manual/07-gpio.md:207 klas:A -->
+<!-- fc id:T-07-098 sha:7d1d509e src:manual/07-gpio.md:207 status:verbatim -->
 ### T-07-098 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3565,7 +3565,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-099 sha:7afccfc4 src:manual/07-gpio.md:208 klas:A -->
+<!-- fc id:T-07-099 sha:7afccfc4 src:manual/07-gpio.md:208 status:verbatim -->
 ### T-07-099 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3624,7 +3624,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-100 sha:69208de8 src:manual/07-gpio.md:208 klas:A -->
+<!-- fc id:T-07-100 sha:69208de8 src:manual/07-gpio.md:208 status:verbatim -->
 ### T-07-100 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3683,7 +3683,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-101 sha:8435c691 src:manual/07-gpio.md:210 klas:A -->
+<!-- fc id:T-07-101 sha:8435c691 src:manual/07-gpio.md:210 status:verbatim -->
 ### T-07-101 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3710,7 +3710,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-102 sha:21828d34 src:manual/07-gpio.md:212 klas:A -->
+<!-- fc id:T-07-102 sha:21828d34 src:manual/07-gpio.md:212 status:verbatim -->
 ### T-07-102 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3752,7 +3752,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-103 sha:4838050a src:manual/07-gpio.md:215 klas:B -->
+<!-- fc id:T-07-103 sha:4838050a src:manual/07-gpio.md:215 status:derived -->
 ### T-07-103 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3784,7 +3784,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-104 sha:e9e0e554 src:manual/07-gpio.md:218 klas:A -->
+<!-- fc id:T-07-104 sha:e9e0e554 src:manual/07-gpio.md:218 status:verbatim -->
 ### T-07-104 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3812,7 +3812,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-105 sha:89f377b7 src:manual/07-gpio.md:223 klas:A -->
+<!-- fc id:T-07-105 sha:89f377b7 src:manual/07-gpio.md:223 status:verbatim -->
 ### T-07-105 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3859,7 +3859,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-106 sha:08617839 src:manual/07-gpio.md:223 klas:E -->
+<!-- fc id:T-07-106 sha:08617839 src:manual/07-gpio.md:223 status:no-external-signal -->
 ### T-07-106 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3883,7 +3883,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-107 sha:99a46388 src:manual/07-gpio.md:224 klas:A -->
+<!-- fc id:T-07-107 sha:99a46388 src:manual/07-gpio.md:224 status:verbatim -->
 ### T-07-107 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3913,7 +3913,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-108 sha:7af574ff src:manual/07-gpio.md:228 klas:A -->
+<!-- fc id:T-07-108 sha:7af574ff src:manual/07-gpio.md:228 status:verbatim -->
 ### T-07-108 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3940,7 +3940,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-109 sha:6d5fd871 src:manual/07-gpio.md:230 klas:A -->
+<!-- fc id:T-07-109 sha:6d5fd871 src:manual/07-gpio.md:230 status:verbatim -->
 ### T-07-109 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3976,7 +3976,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-110 sha:6f074d3a src:manual/07-gpio.md:231 klas:E -->
+<!-- fc id:T-07-110 sha:6f074d3a src:manual/07-gpio.md:231 status:no-external-signal -->
 ### T-07-110 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3999,7 +3999,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-111 sha:16fc615f src:manual/07-gpio.md:236 klas:E -->
+<!-- fc id:T-07-111 sha:16fc615f src:manual/07-gpio.md:236 status:no-external-signal -->
 ### T-07-111 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4021,7 +4021,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-112 sha:1c767126 src:manual/07-gpio.md:239 klas:A -->
+<!-- fc id:T-07-112 sha:1c767126 src:manual/07-gpio.md:239 status:verbatim -->
 ### T-07-112 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4052,7 +4052,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-113 sha:dae5d714 src:manual/07-gpio.md:243 klas:F -->
+<!-- fc id:T-07-113 sha:dae5d714 src:manual/07-gpio.md:243 status:unchecked -->
 ### T-07-113 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4074,7 +4074,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-114 sha:2e6e5ae0 src:manual/07-gpio.md:246 klas:F -->
+<!-- fc id:T-07-114 sha:2e6e5ae0 src:manual/07-gpio.md:246 status:unchecked -->
 ### T-07-114 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4097,7 +4097,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-115 sha:d3fff0e3 src:manual/07-gpio.md:248 klas:E -->
+<!-- fc id:T-07-115 sha:d3fff0e3 src:manual/07-gpio.md:248 status:no-external-signal -->
 ### T-07-115 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4120,7 +4120,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-116 sha:bbf00d41 src:manual/07-gpio.md:251 klas:E -->
+<!-- fc id:T-07-116 sha:bbf00d41 src:manual/07-gpio.md:251 status:no-external-signal -->
 ### T-07-116 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4142,7 +4142,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-117 sha:be7c4eb1 src:manual/07-gpio.md:253 klas:A -->
+<!-- fc id:T-07-117 sha:be7c4eb1 src:manual/07-gpio.md:253 status:verbatim -->
 ### T-07-117 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4176,7 +4176,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-118 sha:8f937bea src:manual/07-gpio.md:254 klas:E -->
+<!-- fc id:T-07-118 sha:8f937bea src:manual/07-gpio.md:254 status:no-external-signal -->
 ### T-07-118 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4199,7 +4199,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-119 sha:34181297 src:manual/07-gpio.md:257 klas:A -->
+<!-- fc id:T-07-119 sha:34181297 src:manual/07-gpio.md:257 status:verbatim -->
 ### T-07-119 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4239,7 +4239,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-120 sha:28de41c4 src:manual/07-gpio.md:260 klas:A -->
+<!-- fc id:T-07-120 sha:28de41c4 src:manual/07-gpio.md:260 status:verbatim -->
 ### T-07-120 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4279,7 +4279,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-121 sha:61a59398 src:manual/07-gpio.md:263 klas:A -->
+<!-- fc id:T-07-121 sha:61a59398 src:manual/07-gpio.md:263 status:verbatim -->
 ### T-07-121 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4306,7 +4306,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-122 sha:ae8000cc src:manual/07-gpio.md:265 klas:E -->
+<!-- fc id:T-07-122 sha:ae8000cc src:manual/07-gpio.md:265 status:no-external-signal -->
 ### T-07-122 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4329,7 +4329,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-123 sha:035a38f6 src:manual/07-gpio.md:271 klas:E -->
+<!-- fc id:T-07-123 sha:035a38f6 src:manual/07-gpio.md:271 status:no-external-signal -->
 ### T-07-123 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4350,7 +4350,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-124 sha:e43399df src:manual/07-gpio.md:273 klas:E -->
+<!-- fc id:T-07-124 sha:e43399df src:manual/07-gpio.md:273 status:no-external-signal -->
 ### T-07-124 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4386,7 +4386,7 @@ classic, S2 і S3.
 
 ---
 
-<!-- fc id:T-07-125 sha:9e2b2c79 src:manual/07-gpio.md:277 klas:E -->
+<!-- fc id:T-07-125 sha:9e2b2c79 src:manual/07-gpio.md:277 status:no-external-signal -->
 ### T-07-125 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4408,7 +4408,7 @@ datasheet чипа.
 
 ---
 
-<!-- fc id:T-07-126 sha:a06a92ec src:manual/07-gpio.md:281 klas:E -->
+<!-- fc id:T-07-126 sha:a06a92ec src:manual/07-gpio.md:281 status:no-external-signal -->
 ### T-07-126 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4433,7 +4433,7 @@ datasheet чипа.
 
 ---
 
-<!-- fc id:T-07-127 sha:38f59818 src:manual/07-gpio.md:281 klas:A -->
+<!-- fc id:T-07-127 sha:38f59818 src:manual/07-gpio.md:281 status:verbatim -->
 ### T-07-127 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4465,7 +4465,7 @@ datasheet чипа.
 
 ---
 
-<!-- fc id:T-07-128 sha:b0fde932 src:manual/07-gpio.md:283 klas:E -->
+<!-- fc id:T-07-128 sha:b0fde932 src:manual/07-gpio.md:283 status:no-external-signal -->
 ### T-07-128 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4490,7 +4490,7 @@ datasheet чипа.
 
 ---
 
-<!-- fc id:T-07-129 sha:909499e7 src:manual/07-gpio.md:286 klas:E -->
+<!-- fc id:T-07-129 sha:909499e7 src:manual/07-gpio.md:286 status:no-external-signal -->
 ### T-07-129 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4513,7 +4513,7 @@ datasheet чипа.
 
 ---
 
-<!-- fc id:T-07-130 sha:4006ed63 src:manual/07-gpio.md:286 klas:E -->
+<!-- fc id:T-07-130 sha:4006ed63 src:manual/07-gpio.md:286 status:no-external-signal -->
 ### T-07-130 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4536,7 +4536,7 @@ datasheet чипа.
 
 ---
 
-<!-- fc id:T-07-131 sha:00d10011 src:manual/07-gpio.md:292 klas:B -->
+<!-- fc id:T-07-131 sha:00d10011 src:manual/07-gpio.md:292 status:derived -->
 ### T-07-131 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4572,7 +4572,7 @@ datasheet чипа.
 
 ---
 
-<!-- fc id:T-07-132 sha:8252205d src:manual/07-gpio.md:294 klas:A -->
+<!-- fc id:T-07-132 sha:8252205d src:manual/07-gpio.md:294 status:verbatim -->
 ### T-07-132 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4601,7 +4601,7 @@ datasheet чипа.
 
 ---
 
-<!-- fc id:T-07-133 sha:6af50605 src:manual/07-gpio.md:295 klas:E -->
+<!-- fc id:T-07-133 sha:6af50605 src:manual/07-gpio.md:295 status:no-external-signal -->
 ### T-07-133 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4624,7 +4624,7 @@ datasheet чипа.
 
 ---
 
-<!-- fc id:T-07-134 sha:eca754e3 src:manual/07-gpio.md:298 klas:A -->
+<!-- fc id:T-07-134 sha:eca754e3 src:manual/07-gpio.md:298 status:verbatim -->
 ### T-07-134 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4654,7 +4654,7 @@ datasheet чипа.
 
 ---
 
-<!-- fc id:T-07-135 sha:2accc23f src:manual/07-gpio.md:300 klas:A -->
+<!-- fc id:T-07-135 sha:2accc23f src:manual/07-gpio.md:300 status:verbatim -->
 ### T-07-135 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4683,7 +4683,7 @@ datasheet чипа.
 
 ---
 
-<!-- fc id:T-07-136 sha:101667fc src:manual/07-gpio.md:303 klas:A -->
+<!-- fc id:T-07-136 sha:101667fc src:manual/07-gpio.md:303 status:verbatim -->
 ### T-07-136 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -4711,7 +4711,7 @@ Strapping-піни краще використовувати як виходи �
 
 ---
 
-<!-- fc id:T-07-137 sha:3521c982 src:manual/07-gpio.md:306 klas:E -->
+<!-- fc id:T-07-137 sha:3521c982 src:manual/07-gpio.md:306 status:no-external-signal -->
 ### T-07-137 · proza · `manual/07-gpio.md`
 
 **Твердження, коротко**

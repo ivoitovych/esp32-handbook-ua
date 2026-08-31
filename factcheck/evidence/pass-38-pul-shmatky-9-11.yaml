@@ -1,7 +1,6 @@
 - nazva: GPIO11 на C3 — це майданчик VDD_SPI, живлення флешу
   zbih: майданчик у\s*\n?матриці називається `VDD_SPI`|VDD_SPI_AS_GPIO|окремо `GPIO11` — це живлення флешу|Рахуйте
     `GPIO11` серед зайнятих
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/register/soc/io_mux_reg.h,
     .../components/efuse/esp32c3/esp_efuse_table.csv, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/burn-efuse-cmd.rst
   cytata: "(io_mux_reg.h)\n#define IO_MUX_GPIO11_REG\tPERIPHS_IO_MUX_VDD_SPI_U\n#define PERIPHS_IO_MUX_VDD_SPI_U\
@@ -59,7 +58,6 @@
 - nazva: Драйвер I²C називає причину в консолі, а не мовчить
   zbih: 'i2c_new_master_bus\(1049\): invalid SDA/SCL pin number|називає причину в консолі|[Мм]овчазним
     воно\s*\n?стає лише тоді'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_driver_i2c/i2c_master.c,
     .../components/esp_common/include/esp_check.h, .../Kconfig
   cytata: "(i2c_master.c:1049)\nESP_RETURN_ON_FALSE(GPIO_IS_VALID_GPIO(bus_config->sda_io_num) &&\n  \
@@ -107,7 +105,6 @@
   - 5aaa0502
 - nazva: ESP_DRAM_LOGx — єдиний виняток із заборони логувати в ISR
   zbih: ESP_DRAM_LOGE|переривання вимкнені або всередині ISR|DRAM_STR\("mij_teg"\)
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/include/esp_log.h
   cytata: "/**\n * @brief Macros to output logs when the cache is disabled.\n * Unlike normal logging\
     \ macros, it's possible to use this macro when\n  interrupts are disabled or inside an ISR.\n * Placing\
@@ -150,7 +147,6 @@
 - nazva: На RISC-V рядка Backtrace немає — його будує монітор
   zbih: рядка `Backtrace:` у дампі немає\s*\n?взагалі|CONFIG_ESP_SYSTEM_USE_EH_FRAME|розмір\s*\n?образу
     росте на 20–100
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/fatal-errors.rst
   cytata: ".. only:: CONFIG_IDF_TARGET_ARCH_RISCV\n\n    Core  0 register dump:\n    MEPC    : 0x420048b4\
     \  RA      : 0x420048b4  SP      : 0x3fc8f2f0 ...\n    (жодного рядка Backtrace: у дампі)\n\n    Moreover,\
@@ -207,7 +203,6 @@
 - nazva: Режим завантаження словами друкує ROM, не esptool
   zbih: Режим словами\s*\n?— `SPI_FAST_FLASH_BOOT`|друкує сам ROM|У виводі\s*\n?`esptool` цього рядка
     немає
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/{cmds,loader,__init__}.py
   cytata: "Пошук рядків `SPI_FAST_FLASH_BOOT` і `DOWNLOAD_BOOT` у трьох файлах,\nщо формують увесь вивід\
     \ esptool:\n\n    cmds.py       0 збігів\n    loader.py     0 збігів\n    __init__.py   0 збігів\n"

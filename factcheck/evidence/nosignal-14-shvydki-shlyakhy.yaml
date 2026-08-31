@@ -15,7 +15,6 @@
 
 - nazva: 'T-14-053: Треба писати код · MicroPython → так, Python'
   zbih: Треба\s+писати\s+код\s+·\s+MicroPython
-  klas: A
   dzherelo: https://raw.githubusercontent.com/micropython/micropython/master/README.md
   cytata: 'MicroPython implements the entire Python 3.4 syntax
 

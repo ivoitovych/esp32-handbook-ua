@@ -2,7 +2,6 @@
   zbih: П.ять вольтів на будь-який GPIO вбивають пін або|\*\*Не подавати 5 В на GPIO\.\*\*|\*\*П.ять вольтів
     на GPIO вбивають пін, а іноді чип\.\*\*|\*\*Подано 5 В на 3\.3-вольтовий вхід\.\*\*|подано 5 В на
     3\.3 В|Логіка ESP32 — \*\*3\.3 В\*\*
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32
     Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings» і Table 5-3 «DC Characteristics», с. 51
   cytata: 'Allowed input voltage –0.3 3.6 V
@@ -42,7 +41,6 @@
     після VDD — це номер виноски в документі, не множник.'
 - nazva: Робоча напруга живлення — 3.0–3.6 В, типова 3.3 В
   zbih: не нижче 3\.0 В
-  klas: A
   dzherelo: ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics», с. 51,
     разом із приміткою 2
   cytata: "Table 5-2. Recommended Power Supply Characteristics\nParameter                          Description\
@@ -78,7 +76,6 @@
   - 3a8775e7
 - nazva: Джерело мусить давати щонайменше 0.5 А за datasheet
   zbih: джерело для ESP32 з Wi-Fi має тягнути щонайменше\s+1 А
-  klas: B
   dzherelo: ESP32 Series Datasheet v5.3, Table 5-2, параметр IVDD; разом із Table 5-4 «Current Consumption
     Depending on RF Modes»
   cytata: 'Table 5-2. Recommended Power Supply Characteristics

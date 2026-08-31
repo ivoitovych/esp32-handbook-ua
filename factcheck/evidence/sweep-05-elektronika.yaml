@@ -50,7 +50,6 @@
 
 - nazva: 'T-05-089: У цифровій схемі це локальний запас енергії на'
   zbih: У\s+цифровій\s+схемі\s+це
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
   cytata: 'By design, ``Vref`` is set to 1100 mV. However, due to manufacturing variations,
     the actual value may range between 1000 mV and 1200 mV depending on the chip
@@ -76,7 +75,6 @@
   - a4b3f884
 - nazva: 'T-05-017: Світлодіод не можна вмикати без резистора: він не'
   zbih: Світлодіод\s+не\s+можна\s+вмикати
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
   cytata: 'The LED control (LEDC) peripheral is primarily designed to control the intensity
     of LEDs
@@ -102,7 +100,6 @@
     handbook point about needing resistor is standard LED practice
 - nazva: 'T-05-064: **Pull-up** — резистор від піна до 3.3 В.'
   zbih: \*\*Pull\-up\*\*\s+—\s+резистор\s+від
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
   cytata: '`gpio_config` is an all-in-one API that can be used to configure the I/O mode,
     internal pull-up/pull-down resistors, etc. for pins
@@ -126,7 +123,6 @@
   note: documentation confirms pull-up resistors are configurable on GPIO pins
 - nazva: 'T-05-066: **Pull-down** — резистор до землі, дзеркально.'
   zbih: \*\*Pull\-down\*\*\s+—\s+резистор\s+до
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
   cytata: '`gpio_config` is an all-in-one API that can be used to configure the I/O mode,
     internal pull-up/pull-down resistors, etc. for pins
@@ -150,7 +146,6 @@
   note: documentation confirms pull-down resistors are available as option for GPIO configuration
 - nazva: 'T-05-067: Хороша новина: у ESP32 підтягувальні резистори **вбудовані** і'
   zbih: Хороша\s+новина:\s+у\s+ESP32
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
   cytata: '`gpio_config` is an all-in-one API that can be used to configure the I/O mode,
     internal pull-up/pull-down resistors, etc. for pins, including the ones reused by the
@@ -177,7 +172,6 @@
     from code
 - nazva: 'T-05-074: Це не налаштовується — апаратної схеми немає.'
   zbih: Це\s+не\s+налаштовується\s+—
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
   cytata: 'Do not rely on the default configurations values in the Technical Reference Manual,
     because it may be changed in the bootloader or application startup code before app_main
@@ -205,7 +199,6 @@
   - 1ef21188
 - nazva: 'T-05-077: Звичайний вихід активно тримає лінію в обох станах.'
   zbih: Звичайний\s+вихід\s+активно\s+тримає
-  klas: A
   dzherelo: https://raw.githubusercontent.com/micropython/micropython/master/docs/library/machine.Pin.rst
   cytata: 'A pin object is used to control I/O pins (also known as GPIO - general-purpose
     input/output). Pin objects are commonly associated with a physical pin that can drive
@@ -233,7 +226,6 @@
     both high and low states
 - nazva: 'T-05-079: **Open-drain** уміє лише притискати лінію до землі, а'
   zbih: \*\*Open\-drain\*\*\s+уміє\s+лише\s+притискати
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
   cytata: 'For example, the IO, which outputs a LEDC PWM signal, can also act as a GPIO input
     to generate interrupts or GPIO ETM events. Careful handling on the configuration step

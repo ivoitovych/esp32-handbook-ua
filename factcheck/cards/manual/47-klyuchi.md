@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/47-klyuchi.md`
 
-Одиниць твердження: **105**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **105**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-47-001 sha:9d2198a1 src:manual/47-klyuchi.md:3 klas:C -->
+<!-- fc id:T-47-001 sha:9d2198a1 src:manual/47-klyuchi.md:3 status:named-unreachable -->
 ### T-47-001 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -38,7 +38,7 @@
 
 ---
 
-<!-- fc id:T-47-002 sha:cb3f2e6f src:manual/47-klyuchi.md:6 klas:E -->
+<!-- fc id:T-47-002 sha:cb3f2e6f src:manual/47-klyuchi.md:6 status:no-external-signal -->
 ### T-47-002 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -64,7 +64,7 @@
 
 ---
 
-<!-- fc id:T-47-003 sha:97cbd0cb src:manual/47-klyuchi.md:7 klas:E -->
+<!-- fc id:T-47-003 sha:97cbd0cb src:manual/47-klyuchi.md:7 status:no-external-signal -->
 ### T-47-003 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -101,7 +101,7 @@
 
 ---
 
-<!-- fc id:T-47-004 sha:20df8172 src:manual/47-klyuchi.md:12 klas:F -->
+<!-- fc id:T-47-004 sha:20df8172 src:manual/47-klyuchi.md:12 status:unchecked -->
 ### T-47-004 · tablycya-shapka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -129,7 +129,7 @@
 
 ---
 
-<!-- fc id:T-47-005 sha:e87fd605 src:manual/47-klyuchi.md:14 klas:B -->
+<!-- fc id:T-47-005 sha:e87fd605 src:manual/47-klyuchi.md:14 status:derived -->
 ### T-47-005 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -172,7 +172,7 @@
 
 ---
 
-<!-- fc id:T-47-006 sha:fbed193d src:manual/47-klyuchi.md:14 klas:B -->
+<!-- fc id:T-47-006 sha:fbed193d src:manual/47-klyuchi.md:14 status:derived -->
 ### T-47-006 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -215,7 +215,7 @@
 
 ---
 
-<!-- fc id:T-47-007 sha:69a8e0f0 src:manual/47-klyuchi.md:15 klas:B -->
+<!-- fc id:T-47-007 sha:69a8e0f0 src:manual/47-klyuchi.md:15 status:derived -->
 ### T-47-007 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -261,7 +261,7 @@
 
 ---
 
-<!-- fc id:T-47-008 sha:7d8f9d5c src:manual/47-klyuchi.md:15 klas:E -->
+<!-- fc id:T-47-008 sha:7d8f9d5c src:manual/47-klyuchi.md:15 status:no-external-signal -->
 ### T-47-008 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -295,7 +295,7 @@
 
 ---
 
-<!-- fc id:T-47-009 sha:1ecf0c22 src:manual/47-klyuchi.md:16 klas:E -->
+<!-- fc id:T-47-009 sha:1ecf0c22 src:manual/47-klyuchi.md:16 status:no-external-signal -->
 ### T-47-009 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -329,7 +329,7 @@
 
 ---
 
-<!-- fc id:T-47-010 sha:f9e16d4a src:manual/47-klyuchi.md:16 klas:E -->
+<!-- fc id:T-47-010 sha:f9e16d4a src:manual/47-klyuchi.md:16 status:no-external-signal -->
 ### T-47-010 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -363,7 +363,7 @@
 
 ---
 
-<!-- fc id:T-47-011 sha:80bf27f5 src:manual/47-klyuchi.md:17 klas:E -->
+<!-- fc id:T-47-011 sha:80bf27f5 src:manual/47-klyuchi.md:17 status:no-external-signal -->
 ### T-47-011 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -397,7 +397,7 @@
 
 ---
 
-<!-- fc id:T-47-012 sha:39a2c8d5 src:manual/47-klyuchi.md:17 klas:E -->
+<!-- fc id:T-47-012 sha:39a2c8d5 src:manual/47-klyuchi.md:17 status:no-external-signal -->
 ### T-47-012 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -431,7 +431,7 @@
 
 ---
 
-<!-- fc id:T-47-013 sha:347ba144 src:manual/47-klyuchi.md:18 klas:B -->
+<!-- fc id:T-47-013 sha:347ba144 src:manual/47-klyuchi.md:18 status:derived -->
 ### T-47-013 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -477,7 +477,7 @@
 
 ---
 
-<!-- fc id:T-47-014 sha:3aeb6a4c src:manual/47-klyuchi.md:18 klas:E -->
+<!-- fc id:T-47-014 sha:3aeb6a4c src:manual/47-klyuchi.md:18 status:no-external-signal -->
 ### T-47-014 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -511,7 +511,7 @@
 
 ---
 
-<!-- fc id:T-47-015 sha:f158a9a3 src:manual/47-klyuchi.md:23 klas:B -->
+<!-- fc id:T-47-015 sha:f158a9a3 src:manual/47-klyuchi.md:23 status:derived -->
 ### T-47-015 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -546,7 +546,7 @@
 
 ---
 
-<!-- fc id:T-47-016 sha:30721f2b src:manual/47-klyuchi.md:23 klas:B -->
+<!-- fc id:T-47-016 sha:30721f2b src:manual/47-klyuchi.md:23 status:derived -->
 ### T-47-016 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -580,7 +580,7 @@
 
 ---
 
-<!-- fc id:T-47-017 sha:87cef1ef src:manual/47-klyuchi.md:26 klas:B -->
+<!-- fc id:T-47-017 sha:87cef1ef src:manual/47-klyuchi.md:26 status:derived -->
 ### T-47-017 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -611,7 +611,7 @@
 
 ---
 
-<!-- fc id:T-47-018 sha:93ebe48b src:manual/47-klyuchi.md:26 klas:B -->
+<!-- fc id:T-47-018 sha:93ebe48b src:manual/47-klyuchi.md:26 status:derived -->
 ### T-47-018 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -646,7 +646,7 @@
 
 ---
 
-<!-- fc id:T-47-019 sha:c4bacfa9 src:manual/47-klyuchi.md:30 klas:E -->
+<!-- fc id:T-47-019 sha:c4bacfa9 src:manual/47-klyuchi.md:30 status:no-external-signal -->
 ### T-47-019 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -670,7 +670,7 @@
 
 ---
 
-<!-- fc id:T-47-020 sha:0bdfee8a src:manual/47-klyuchi.md:31 klas:E -->
+<!-- fc id:T-47-020 sha:0bdfee8a src:manual/47-klyuchi.md:31 status:no-external-signal -->
 ### T-47-020 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -694,7 +694,7 @@
 
 ---
 
-<!-- fc id:T-47-021 sha:f7c31c38 src:manual/47-klyuchi.md:35 klas:E -->
+<!-- fc id:T-47-021 sha:f7c31c38 src:manual/47-klyuchi.md:35 status:no-external-signal -->
 ### T-47-021 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -735,7 +735,7 @@
 
 ---
 
-<!-- fc id:T-47-022 sha:ba80539c src:manual/47-klyuchi.md:37 klas:K -->
+<!-- fc id:T-47-022 sha:ba80539c src:manual/47-klyuchi.md:37 status:code-context -->
 ### T-47-022 · kod · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -802,7 +802,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-023 sha:e6f1a6a7 src:manual/47-klyuchi.md:39 klas:F -->
+<!-- fc id:T-47-023 sha:e6f1a6a7 src:manual/47-klyuchi.md:39 status:unchecked -->
 ### T-47-023 · schema-zvyazok · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -840,7 +840,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-024 sha:6e7e86f9 src:manual/47-klyuchi.md:40 klas:F -->
+<!-- fc id:T-47-024 sha:6e7e86f9 src:manual/47-klyuchi.md:40 status:unchecked -->
 ### T-47-024 · schema-zvyazok · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -878,7 +878,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-025 sha:2e4d5ee9 src:manual/47-klyuchi.md:41 klas:F -->
+<!-- fc id:T-47-025 sha:2e4d5ee9 src:manual/47-klyuchi.md:41 status:unchecked -->
 ### T-47-025 · schema-zvyazok · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -916,7 +916,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-026 sha:a497e7c6 src:manual/47-klyuchi.md:43 klas:F -->
+<!-- fc id:T-47-026 sha:a497e7c6 src:manual/47-klyuchi.md:43 status:unchecked -->
 ### T-47-026 · schema-zvyazok · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -954,7 +954,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-027 sha:2e4d5ee9 src:manual/47-klyuchi.md:44 klas:F -->
+<!-- fc id:T-47-027 sha:2e4d5ee9 src:manual/47-klyuchi.md:44 status:unchecked -->
 ### T-47-027 · schema-zvyazok · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -992,7 +992,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-028 sha:57c333f5 src:manual/47-klyuchi.md:45 klas:F -->
+<!-- fc id:T-47-028 sha:57c333f5 src:manual/47-klyuchi.md:45 status:unchecked -->
 ### T-47-028 · schema-zvyazok · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1030,7 +1030,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-029 sha:e6f1a6a7 src:manual/47-klyuchi.md:46 klas:F -->
+<!-- fc id:T-47-029 sha:e6f1a6a7 src:manual/47-klyuchi.md:46 status:unchecked -->
 ### T-47-029 · schema-zvyazok · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1068,7 +1068,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-030 sha:c0985573 src:manual/47-klyuchi.md:48 klas:F -->
+<!-- fc id:T-47-030 sha:c0985573 src:manual/47-klyuchi.md:48 status:unchecked -->
 ### T-47-030 · schema-zvyazok · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1106,7 +1106,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-031 sha:820bf9a6 src:manual/47-klyuchi.md:49 klas:B -->
+<!-- fc id:T-47-031 sha:820bf9a6 src:manual/47-klyuchi.md:49 status:derived -->
 ### T-47-031 · schema-zvyazok · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1156,7 +1156,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-032 sha:5b18f751 src:manual/47-klyuchi.md:50 klas:F -->
+<!-- fc id:T-47-032 sha:5b18f751 src:manual/47-klyuchi.md:50 status:unchecked -->
 ### T-47-032 · schema-zvyazok · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1194,7 +1194,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-033 sha:d26ef97f src:manual/47-klyuchi.md:51 klas:E -->
+<!-- fc id:T-47-033 sha:d26ef97f src:manual/47-klyuchi.md:51 status:no-external-signal -->
 ### T-47-033 · schema-zvyazok · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1245,7 +1245,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-034 sha:7aa98e77 src:manual/47-klyuchi.md:52 klas:F -->
+<!-- fc id:T-47-034 sha:7aa98e77 src:manual/47-klyuchi.md:52 status:unchecked -->
 ### T-47-034 · schema-zvyazok · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1283,7 +1283,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-035 sha:69228259 src:manual/47-klyuchi.md:53 klas:F -->
+<!-- fc id:T-47-035 sha:69228259 src:manual/47-klyuchi.md:53 status:unchecked -->
 ### T-47-035 · schema-zvyazok · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1321,7 +1321,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-036 sha:433703e9 src:manual/47-klyuchi.md:56 klas:F -->
+<!-- fc id:T-47-036 sha:433703e9 src:manual/47-klyuchi.md:56 status:unchecked -->
 ### T-47-036 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1346,7 +1346,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-037 sha:7636d202 src:manual/47-klyuchi.md:57 klas:F -->
+<!-- fc id:T-47-037 sha:7636d202 src:manual/47-klyuchi.md:57 status:unchecked -->
 ### T-47-037 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1371,7 +1371,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-038 sha:c359d227 src:manual/47-klyuchi.md:62 klas:E -->
+<!-- fc id:T-47-038 sha:c359d227 src:manual/47-klyuchi.md:62 status:no-external-signal -->
 ### T-47-038 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1405,7 +1405,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-039 sha:e5da603d src:manual/47-klyuchi.md:64 klas:D -->
+<!-- fc id:T-47-039 sha:e5da603d src:manual/47-klyuchi.md:64 status:arithmetic -->
 ### T-47-039 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1446,7 +1446,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-040 sha:9e49d8ce src:manual/47-klyuchi.md:65 klas:B -->
+<!-- fc id:T-47-040 sha:9e49d8ce src:manual/47-klyuchi.md:65 status:derived -->
 ### T-47-040 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1481,7 +1481,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-041 sha:688d7b32 src:manual/47-klyuchi.md:68 klas:E -->
+<!-- fc id:T-47-041 sha:688d7b32 src:manual/47-klyuchi.md:68 status:no-external-signal -->
 ### T-47-041 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1509,7 +1509,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-042 sha:5235df0a src:manual/47-klyuchi.md:72 klas:E -->
+<!-- fc id:T-47-042 sha:5235df0a src:manual/47-klyuchi.md:72 status:no-external-signal -->
 ### T-47-042 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1546,7 +1546,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-043 sha:8e8251a6 src:manual/47-klyuchi.md:72 klas:F -->
+<!-- fc id:T-47-043 sha:8e8251a6 src:manual/47-klyuchi.md:72 status:unchecked -->
 ### T-47-043 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1570,7 +1570,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-044 sha:7ed23363 src:manual/47-klyuchi.md:74 klas:E -->
+<!-- fc id:T-47-044 sha:7ed23363 src:manual/47-klyuchi.md:74 status:no-external-signal -->
 ### T-47-044 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1594,7 +1594,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-045 sha:8c7a5dfa src:manual/47-klyuchi.md:76 klas:E -->
+<!-- fc id:T-47-045 sha:8c7a5dfa src:manual/47-klyuchi.md:76 status:no-external-signal -->
 ### T-47-045 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1617,7 +1617,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-046 sha:59f69049 src:manual/47-klyuchi.md:76 klas:E -->
+<!-- fc id:T-47-046 sha:59f69049 src:manual/47-klyuchi.md:76 status:no-external-signal -->
 ### T-47-046 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1640,7 +1640,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-047 sha:93152759 src:manual/47-klyuchi.md:80 klas:E -->
+<!-- fc id:T-47-047 sha:93152759 src:manual/47-klyuchi.md:80 status:no-external-signal -->
 ### T-47-047 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1663,7 +1663,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-048 sha:e587ee11 src:manual/47-klyuchi.md:84 klas:E -->
+<!-- fc id:T-47-048 sha:e587ee11 src:manual/47-klyuchi.md:84 status:no-external-signal -->
 ### T-47-048 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1686,7 +1686,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-049 sha:ebb5508e src:manual/47-klyuchi.md:86 klas:E -->
+<!-- fc id:T-47-049 sha:ebb5508e src:manual/47-klyuchi.md:86 status:no-external-signal -->
 ### T-47-049 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1709,7 +1709,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-050 sha:9170d55f src:manual/47-klyuchi.md:91 klas:E -->
+<!-- fc id:T-47-050 sha:9170d55f src:manual/47-klyuchi.md:91 status:no-external-signal -->
 ### T-47-050 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1732,7 +1732,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-051 sha:1d299621 src:manual/47-klyuchi.md:94 klas:E -->
+<!-- fc id:T-47-051 sha:1d299621 src:manual/47-klyuchi.md:94 status:no-external-signal -->
 ### T-47-051 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1755,7 +1755,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-052 sha:bf6f4377 src:manual/47-klyuchi.md:95 klas:E -->
+<!-- fc id:T-47-052 sha:bf6f4377 src:manual/47-klyuchi.md:95 status:no-external-signal -->
 ### T-47-052 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1778,7 +1778,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-053 sha:05ef0681 src:manual/47-klyuchi.md:98 klas:E -->
+<!-- fc id:T-47-053 sha:05ef0681 src:manual/47-klyuchi.md:98 status:no-external-signal -->
 ### T-47-053 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1801,7 +1801,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-054 sha:4b2fd267 src:manual/47-klyuchi.md:100 klas:E -->
+<!-- fc id:T-47-054 sha:4b2fd267 src:manual/47-klyuchi.md:100 status:no-external-signal -->
 ### T-47-054 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1824,7 +1824,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-055 sha:46456323 src:manual/47-klyuchi.md:102 klas:E -->
+<!-- fc id:T-47-055 sha:46456323 src:manual/47-klyuchi.md:102 status:no-external-signal -->
 ### T-47-055 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1847,7 +1847,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-056 sha:568a6b06 src:manual/47-klyuchi.md:102 klas:E -->
+<!-- fc id:T-47-056 sha:568a6b06 src:manual/47-klyuchi.md:102 status:no-external-signal -->
 ### T-47-056 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1870,7 +1870,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-057 sha:85f9bac1 src:manual/47-klyuchi.md:108 klas:E -->
+<!-- fc id:T-47-057 sha:85f9bac1 src:manual/47-klyuchi.md:108 status:no-external-signal -->
 ### T-47-057 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1892,7 +1892,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-058 sha:a9afb0f4 src:manual/47-klyuchi.md:108 klas:E -->
+<!-- fc id:T-47-058 sha:a9afb0f4 src:manual/47-klyuchi.md:108 status:no-external-signal -->
 ### T-47-058 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1914,7 +1914,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-059 sha:78e469f8 src:manual/47-klyuchi.md:111 klas:E -->
+<!-- fc id:T-47-059 sha:78e469f8 src:manual/47-klyuchi.md:111 status:no-external-signal -->
 ### T-47-059 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1937,7 +1937,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-060 sha:73cf5da8 src:manual/47-klyuchi.md:115 klas:E -->
+<!-- fc id:T-47-060 sha:73cf5da8 src:manual/47-klyuchi.md:115 status:no-external-signal -->
 ### T-47-060 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1959,7 +1959,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-061 sha:a6dc588b src:manual/47-klyuchi.md:115 klas:E -->
+<!-- fc id:T-47-061 sha:a6dc588b src:manual/47-klyuchi.md:115 status:no-external-signal -->
 ### T-47-061 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1981,7 +1981,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-062 sha:8a8bfefe src:manual/47-klyuchi.md:118 klas:E -->
+<!-- fc id:T-47-062 sha:8a8bfefe src:manual/47-klyuchi.md:118 status:no-external-signal -->
 ### T-47-062 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2002,7 +2002,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-063 sha:6ad8b9e4 src:manual/47-klyuchi.md:120 klas:E -->
+<!-- fc id:T-47-063 sha:6ad8b9e4 src:manual/47-klyuchi.md:120 status:no-external-signal -->
 ### T-47-063 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2031,7 +2031,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-064 sha:04470017 src:manual/47-klyuchi.md:120 klas:C -->
+<!-- fc id:T-47-064 sha:04470017 src:manual/47-klyuchi.md:120 status:named-unreachable -->
 ### T-47-064 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2061,7 +2061,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-065 sha:e8f6f603 src:manual/47-klyuchi.md:124 klas:E -->
+<!-- fc id:T-47-065 sha:e8f6f603 src:manual/47-klyuchi.md:124 status:no-external-signal -->
 ### T-47-065 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2085,7 +2085,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-066 sha:1b1c231b src:manual/47-klyuchi.md:125 klas:E -->
+<!-- fc id:T-47-066 sha:1b1c231b src:manual/47-klyuchi.md:125 status:no-external-signal -->
 ### T-47-066 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2109,7 +2109,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-067 sha:bc09e508 src:manual/47-klyuchi.md:130 klas:F -->
+<!-- fc id:T-47-067 sha:bc09e508 src:manual/47-klyuchi.md:130 status:unchecked -->
 ### T-47-067 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2135,7 +2135,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-068 sha:eb3a11a0 src:manual/47-klyuchi.md:132 klas:E -->
+<!-- fc id:T-47-068 sha:eb3a11a0 src:manual/47-klyuchi.md:132 status:no-external-signal -->
 ### T-47-068 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2161,7 +2161,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-069 sha:075b8351 src:manual/47-klyuchi.md:136 klas:E -->
+<!-- fc id:T-47-069 sha:075b8351 src:manual/47-klyuchi.md:136 status:no-external-signal -->
 ### T-47-069 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2184,7 +2184,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-070 sha:58592710 src:manual/47-klyuchi.md:137 klas:E -->
+<!-- fc id:T-47-070 sha:58592710 src:manual/47-klyuchi.md:137 status:no-external-signal -->
 ### T-47-070 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2207,7 +2207,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-071 sha:543ac525 src:manual/47-klyuchi.md:141 klas:E -->
+<!-- fc id:T-47-071 sha:543ac525 src:manual/47-klyuchi.md:141 status:no-external-signal -->
 ### T-47-071 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2239,7 +2239,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-072 sha:b88f4d23 src:manual/47-klyuchi.md:142 klas:E -->
+<!-- fc id:T-47-072 sha:b88f4d23 src:manual/47-klyuchi.md:142 status:no-external-signal -->
 ### T-47-072 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2263,7 +2263,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-073 sha:9eab8a9e src:manual/47-klyuchi.md:145 klas:E -->
+<!-- fc id:T-47-073 sha:9eab8a9e src:manual/47-klyuchi.md:145 status:no-external-signal -->
 ### T-47-073 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2287,7 +2287,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-074 sha:d55c3d3b src:manual/47-klyuchi.md:147 klas:E -->
+<!-- fc id:T-47-074 sha:d55c3d3b src:manual/47-klyuchi.md:147 status:no-external-signal -->
 ### T-47-074 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2311,7 +2311,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-075 sha:57acc90f src:manual/47-klyuchi.md:152 klas:F -->
+<!-- fc id:T-47-075 sha:57acc90f src:manual/47-klyuchi.md:152 status:unchecked -->
 ### T-47-075 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2334,7 +2334,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-076 sha:e26cded7 src:manual/47-klyuchi.md:153 klas:E -->
+<!-- fc id:T-47-076 sha:e26cded7 src:manual/47-klyuchi.md:153 status:no-external-signal -->
 ### T-47-076 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2357,7 +2357,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-077 sha:62ecce55 src:manual/47-klyuchi.md:158 klas:E -->
+<!-- fc id:T-47-077 sha:62ecce55 src:manual/47-klyuchi.md:158 status:no-external-signal -->
 ### T-47-077 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2379,7 +2379,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-078 sha:c6775bfa src:manual/47-klyuchi.md:161 klas:E -->
+<!-- fc id:T-47-078 sha:c6775bfa src:manual/47-klyuchi.md:161 status:no-external-signal -->
 ### T-47-078 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2400,7 +2400,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-079 sha:ccbc62f6 src:manual/47-klyuchi.md:163 klas:E -->
+<!-- fc id:T-47-079 sha:ccbc62f6 src:manual/47-klyuchi.md:163 status:no-external-signal -->
 ### T-47-079 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2421,7 +2421,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-080 sha:5494979f src:manual/47-klyuchi.md:165 klas:E -->
+<!-- fc id:T-47-080 sha:5494979f src:manual/47-klyuchi.md:165 status:no-external-signal -->
 ### T-47-080 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2443,7 +2443,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-081 sha:3e2419af src:manual/47-klyuchi.md:170 klas:E -->
+<!-- fc id:T-47-081 sha:3e2419af src:manual/47-klyuchi.md:170 status:no-external-signal -->
 ### T-47-081 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2471,7 +2471,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-082 sha:10b48a7b src:manual/47-klyuchi.md:173 klas:E -->
+<!-- fc id:T-47-082 sha:10b48a7b src:manual/47-klyuchi.md:173 status:no-external-signal -->
 ### T-47-082 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2500,7 +2500,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-083 sha:0a0ab5d7 src:manual/47-klyuchi.md:174 klas:E -->
+<!-- fc id:T-47-083 sha:0a0ab5d7 src:manual/47-klyuchi.md:174 status:no-external-signal -->
 ### T-47-083 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2523,7 +2523,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-084 sha:1ee4543a src:manual/47-klyuchi.md:177 klas:A -->
+<!-- fc id:T-47-084 sha:1ee4543a src:manual/47-klyuchi.md:177 status:verbatim -->
 ### T-47-084 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2558,7 +2558,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-085 sha:551c9eed src:manual/47-klyuchi.md:179 klas:E -->
+<!-- fc id:T-47-085 sha:551c9eed src:manual/47-klyuchi.md:179 status:no-external-signal -->
 ### T-47-085 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2595,7 +2595,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-086 sha:83f6428e src:manual/47-klyuchi.md:179 klas:E -->
+<!-- fc id:T-47-086 sha:83f6428e src:manual/47-klyuchi.md:179 status:no-external-signal -->
 ### T-47-086 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2619,7 +2619,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-087 sha:c53f65ad src:manual/47-klyuchi.md:180 klas:B -->
+<!-- fc id:T-47-087 sha:c53f65ad src:manual/47-klyuchi.md:180 status:derived -->
 ### T-47-087 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2655,7 +2655,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-088 sha:4248fb8c src:manual/47-klyuchi.md:184 klas:E -->
+<!-- fc id:T-47-088 sha:4248fb8c src:manual/47-klyuchi.md:184 status:no-external-signal -->
 ### T-47-088 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2678,7 +2678,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-089 sha:76655c31 src:manual/47-klyuchi.md:185 klas:F -->
+<!-- fc id:T-47-089 sha:76655c31 src:manual/47-klyuchi.md:185 status:unchecked -->
 ### T-47-089 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2701,7 +2701,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-090 sha:90de30f1 src:manual/47-klyuchi.md:185 klas:E -->
+<!-- fc id:T-47-090 sha:90de30f1 src:manual/47-klyuchi.md:185 status:no-external-signal -->
 ### T-47-090 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2724,7 +2724,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-091 sha:04eef0de src:manual/47-klyuchi.md:188 klas:E -->
+<!-- fc id:T-47-091 sha:04eef0de src:manual/47-klyuchi.md:188 status:no-external-signal -->
 ### T-47-091 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2752,7 +2752,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-092 sha:c8a3a045 src:manual/47-klyuchi.md:192 klas:E -->
+<!-- fc id:T-47-092 sha:c8a3a045 src:manual/47-klyuchi.md:192 status:no-external-signal -->
 ### T-47-092 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2775,7 +2775,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-093 sha:fd896587 src:manual/47-klyuchi.md:193 klas:E -->
+<!-- fc id:T-47-093 sha:fd896587 src:manual/47-klyuchi.md:193 status:no-external-signal -->
 ### T-47-093 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2804,7 +2804,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-094 sha:800776ea src:manual/47-klyuchi.md:195 klas:E -->
+<!-- fc id:T-47-094 sha:800776ea src:manual/47-klyuchi.md:195 status:no-external-signal -->
 ### T-47-094 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2835,7 +2835,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-095 sha:c08a478e src:manual/47-klyuchi.md:202 klas:E -->
+<!-- fc id:T-47-095 sha:c08a478e src:manual/47-klyuchi.md:202 status:no-external-signal -->
 ### T-47-095 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2865,7 +2865,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-096 sha:1dbbe37a src:manual/47-klyuchi.md:206 klas:E -->
+<!-- fc id:T-47-096 sha:1dbbe37a src:manual/47-klyuchi.md:206 status:no-external-signal -->
 ### T-47-096 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2888,7 +2888,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-097 sha:9bdf03ad src:manual/47-klyuchi.md:207 klas:E -->
+<!-- fc id:T-47-097 sha:9bdf03ad src:manual/47-klyuchi.md:207 status:no-external-signal -->
 ### T-47-097 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2911,7 +2911,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-098 sha:bc789717 src:manual/47-klyuchi.md:210 klas:E -->
+<!-- fc id:T-47-098 sha:bc789717 src:manual/47-klyuchi.md:210 status:no-external-signal -->
 ### T-47-098 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2935,7 +2935,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-099 sha:a28cf2d3 src:manual/47-klyuchi.md:211 klas:E -->
+<!-- fc id:T-47-099 sha:a28cf2d3 src:manual/47-klyuchi.md:211 status:no-external-signal -->
 ### T-47-099 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2959,7 +2959,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-100 sha:aa5535c1 src:manual/47-klyuchi.md:217 klas:B -->
+<!-- fc id:T-47-100 sha:aa5535c1 src:manual/47-klyuchi.md:217 status:derived -->
 ### T-47-100 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2992,7 +2992,7 @@ MOSFET має бути логічного рівня, інакше він грі
 
 ---
 
-<!-- fc id:T-47-101 sha:fc0b01f6 src:manual/47-klyuchi.md:219 klas:E -->
+<!-- fc id:T-47-101 sha:fc0b01f6 src:manual/47-klyuchi.md:219 status:no-external-signal -->
 ### T-47-101 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -3020,7 +3020,7 @@ MOSFET має бути логічного рівня, інакше він грі
 
 ---
 
-<!-- fc id:T-47-102 sha:494efa74 src:manual/47-klyuchi.md:222 klas:E -->
+<!-- fc id:T-47-102 sha:494efa74 src:manual/47-klyuchi.md:222 status:no-external-signal -->
 ### T-47-102 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -3041,7 +3041,7 @@ MOSFET має бути логічного рівня, інакше він грі
 
 ---
 
-<!-- fc id:T-47-103 sha:25fde9c6 src:manual/47-klyuchi.md:224 klas:E -->
+<!-- fc id:T-47-103 sha:25fde9c6 src:manual/47-klyuchi.md:224 status:no-external-signal -->
 ### T-47-103 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -3068,7 +3068,7 @@ MOSFET має бути логічного рівня, інакше він грі
 
 ---
 
-<!-- fc id:T-47-104 sha:ee84a6f6 src:manual/47-klyuchi.md:226 klas:F -->
+<!-- fc id:T-47-104 sha:ee84a6f6 src:manual/47-klyuchi.md:226 status:unchecked -->
 ### T-47-104 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -3089,7 +3089,7 @@ MOSFET має бути логічного рівня, інакше він грі
 
 ---
 
-<!-- fc id:T-47-105 sha:08b892a3 src:manual/47-klyuchi.md:228 klas:E -->
+<!-- fc id:T-47-105 sha:08b892a3 src:manual/47-klyuchi.md:228 status:no-external-signal -->
 ### T-47-105 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**

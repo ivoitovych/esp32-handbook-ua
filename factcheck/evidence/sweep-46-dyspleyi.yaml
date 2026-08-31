@@ -40,7 +40,6 @@
 
 - nazva: 'T-46-043: Це незручно і ламається при оновленні бібліотеки; варто'
   zbih: Це\s+незручно\s+і\s+ламається
-  klas: A
   dzherelo: https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md
   cytata: 'If you load a new copy of TFT_eSPI then it will overwrite your setups if they are
     kept within the TFT_eSPI folder.
@@ -66,7 +65,6 @@
   - 1164678b
 - nazva: 'T-46-046: LVGL дає красиві інтерфейси і коштує ресурсів.'
   zbih: LVGL\s+дає\s+красиві\s+інтерфейси
-  klas: A
   dzherelo: https://raw.githubusercontent.com/lvgl/lvgl/master/README.md
   cytata: 'At a bare minimum needs only 32kB RAM and 128kB Flash, a frame buffer
 
@@ -90,7 +88,6 @@
   - d8cdd72c
 - nazva: 'T-46-038: **U8g2** — монохромні дисплеї.'
   zbih: \*\*U8g2\*\*\s+—\s+монохромні\s+дисплеї\.
-  klas: A
   dzherelo: https://raw.githubusercontent.com/olikraus/u8g2/master/README.md
   cytata: 'U8g2 is a monochrome graphics library for embedded devices.
 
@@ -114,7 +111,6 @@
   - 6ef626d7
 - nazva: 'T-46-042: Особливість, що дивує: конфігурація (модель дисплея, піни) задається'
   zbih: Особливість,\s+що\s+дивує:\s+конфігурація
-  klas: A
   dzherelo: https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md
   cytata: 'The screen controller, interface pins and library configuration settings must be
     defined inside the library. They can NOT be defined in the Arduino sketch.
@@ -140,7 +136,6 @@
   - 63930b45
 - nazva: 'T-46-055: **Кодування.** Рядки в коді — UTF-8; бібліотека має'
   zbih: \*\*Кодування\.\*\*\s+Рядки\s+в\s+коді
-  klas: A
   dzherelo: https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md
   cytata: 'Character arrays and Strings in UTF-8 format are supported.
 
@@ -164,7 +159,6 @@
   - 16e5d3ba
 - nazva: 'T-46-068: Правильний спосіб читання — **PCNT** (розділ 33): апаратний'
   zbih: Правильний\s+спосіб\s+читання\s+—
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
   cytata: 'PCNT unit is equipped with a separate glitch filter, which is helpful to remove
     noise from the signal.

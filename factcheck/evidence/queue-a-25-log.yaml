@@ -15,7 +15,6 @@
 
 - nazva: 'T-25-051: Один тег на файл або на логічний модуль;'
   zbih: Один\s+тег\s+на\s+файл
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/error-handling.rst
   cytata: 'static const char* TAG = "Test";
 

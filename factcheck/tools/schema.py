@@ -93,7 +93,7 @@ STATUSES = set(POTREBUYE) | {
     "K", "code-context"}
 
 RE_KARTKA = re.compile(
-    r"<!-- fc id:(?P<id>\S+) sha:\S+ src:(?P<src>\S+) klas:\S+ -->\n"
+    r"<!-- fc id:(?P<id>\S+) sha:\S+ src:(?P<src>\S+) status:\S+ -->\n"
     r"### (?P<zah>[^\n]*)\n")
 RE_DOSLIVNO = re.compile(
     r"\*\*Дослівно з книги\*\*\n\n(`{3,})\n(?P<syryy>.*?)\n\1", re.S)

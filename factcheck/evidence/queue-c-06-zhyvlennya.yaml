@@ -7,7 +7,6 @@
 
 - nazva: 'T-06-113: На платі розробки живуть USB-міст, стабілізатор і світлодіод'
   zbih: На\s+платі\s+розробки\s+живуть
-  klas: C
   dzherelo: ESP32 Hardware Reference — схема плати
   shukaty: ESP32 Hardware Reference — схема плати
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт
@@ -27,7 +26,6 @@
   - 304fa1bd
 - nazva: 'T-06-116: **LDO** (лінійний) — стоїть майже на всіх платах'
   zbih: \*\*LDO\*\*\s+\(лінійний\)\s+—\s+стоїть
-  klas: C
   dzherelo: ESP32 development boards reference
   shukaty: ESP32 development boards reference
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт

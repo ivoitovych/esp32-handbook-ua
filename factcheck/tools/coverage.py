@@ -131,7 +131,7 @@ from repo import ROOT  # noqa: E402  (root is found, not counted)
 # Тепер це дані: `factcheck/book.yaml`.
 GRUPY = config.groups()
 
-RE_SRC = re.compile(r"<!-- fc id:(\S+) sha:\S+ src:(\S+?):(\d+) klas:(\S+) -->")
+RE_SRC = re.compile(r"<!-- fc id:(\S+) sha:\S+ src:(\S+?):(\d+) status:(\S+) -->")
 PORO_ZHNI = re.compile(r"^\s*$|^```|^:::|^<!--|^\s*[-=]{3,}\s*$")
 
 

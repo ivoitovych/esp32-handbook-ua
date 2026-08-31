@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/50-bezpeka.md`
 
-Одиниць твердження: **75**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **75**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-50-001 sha:865fb798 src:manual/50-bezpeka.md:3 klas:E -->
+<!-- fc id:T-50-001 sha:865fb798 src:manual/50-bezpeka.md:3 status:no-external-signal -->
 ### T-50-001 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-50-002 sha:436398b9 src:manual/50-bezpeka.md:3 klas:E -->
+<!-- fc id:T-50-002 sha:436398b9 src:manual/50-bezpeka.md:3 status:no-external-signal -->
 ### T-50-002 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-50-003 sha:ad1bf36d src:manual/50-bezpeka.md:7 klas:E -->
+<!-- fc id:T-50-003 sha:ad1bf36d src:manual/50-bezpeka.md:7 status:no-external-signal -->
 ### T-50-003 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -76,7 +76,7 @@
 
 ---
 
-<!-- fc id:T-50-004 sha:a80fbf3d src:manual/50-bezpeka.md:12 klas:E -->
+<!-- fc id:T-50-004 sha:a80fbf3d src:manual/50-bezpeka.md:12 status:no-external-signal -->
 ### T-50-004 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -98,7 +98,7 @@
 
 ---
 
-<!-- fc id:T-50-005 sha:ba47ce5c src:manual/50-bezpeka.md:12 klas:E -->
+<!-- fc id:T-50-005 sha:ba47ce5c src:manual/50-bezpeka.md:12 status:no-external-signal -->
 ### T-50-005 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -120,7 +120,7 @@
 
 ---
 
-<!-- fc id:T-50-006 sha:0b0e8d20 src:manual/50-bezpeka.md:15 klas:F -->
+<!-- fc id:T-50-006 sha:0b0e8d20 src:manual/50-bezpeka.md:15 status:unchecked -->
 ### T-50-006 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -143,7 +143,7 @@
 
 ---
 
-<!-- fc id:T-50-007 sha:51c7e60e src:manual/50-bezpeka.md:15 klas:E -->
+<!-- fc id:T-50-007 sha:51c7e60e src:manual/50-bezpeka.md:15 status:no-external-signal -->
 ### T-50-007 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -166,7 +166,7 @@
 
 ---
 
-<!-- fc id:T-50-008 sha:1e100fbe src:manual/50-bezpeka.md:16 klas:F -->
+<!-- fc id:T-50-008 sha:1e100fbe src:manual/50-bezpeka.md:16 status:unchecked -->
 ### T-50-008 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -189,7 +189,7 @@
 
 ---
 
-<!-- fc id:T-50-009 sha:cc35cb62 src:manual/50-bezpeka.md:19 klas:E -->
+<!-- fc id:T-50-009 sha:cc35cb62 src:manual/50-bezpeka.md:19 status:no-external-signal -->
 ### T-50-009 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -211,7 +211,7 @@
 
 ---
 
-<!-- fc id:T-50-010 sha:73b38a2a src:manual/50-bezpeka.md:22 klas:E -->
+<!-- fc id:T-50-010 sha:73b38a2a src:manual/50-bezpeka.md:22 status:no-external-signal -->
 ### T-50-010 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -233,7 +233,7 @@
 
 ---
 
-<!-- fc id:T-50-011 sha:06497578 src:manual/50-bezpeka.md:22 klas:E -->
+<!-- fc id:T-50-011 sha:06497578 src:manual/50-bezpeka.md:22 status:no-external-signal -->
 ### T-50-011 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -255,7 +255,7 @@
 
 ---
 
-<!-- fc id:T-50-012 sha:3495c2fb src:manual/50-bezpeka.md:25 klas:E -->
+<!-- fc id:T-50-012 sha:3495c2fb src:manual/50-bezpeka.md:25 status:no-external-signal -->
 ### T-50-012 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -277,7 +277,7 @@
 
 ---
 
-<!-- fc id:T-50-013 sha:fd98d081 src:manual/50-bezpeka.md:26 klas:E -->
+<!-- fc id:T-50-013 sha:fd98d081 src:manual/50-bezpeka.md:26 status:no-external-signal -->
 ### T-50-013 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -299,7 +299,7 @@
 
 ---
 
-<!-- fc id:T-50-014 sha:c5892c33 src:manual/50-bezpeka.md:28 klas:E -->
+<!-- fc id:T-50-014 sha:c5892c33 src:manual/50-bezpeka.md:28 status:no-external-signal -->
 ### T-50-014 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -320,7 +320,7 @@
 
 ---
 
-<!-- fc id:T-50-015 sha:bd94ffac src:manual/50-bezpeka.md:33 klas:F -->
+<!-- fc id:T-50-015 sha:bd94ffac src:manual/50-bezpeka.md:33 status:unchecked -->
 ### T-50-015 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -344,7 +344,7 @@
 
 ---
 
-<!-- fc id:T-50-016 sha:c439ffb5 src:manual/50-bezpeka.md:37 klas:F -->
+<!-- fc id:T-50-016 sha:c439ffb5 src:manual/50-bezpeka.md:37 status:unchecked -->
 ### T-50-016 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -366,7 +366,7 @@
 
 ---
 
-<!-- fc id:T-50-017 sha:426893ab src:manual/50-bezpeka.md:40 klas:F -->
+<!-- fc id:T-50-017 sha:426893ab src:manual/50-bezpeka.md:40 status:unchecked -->
 ### T-50-017 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -389,7 +389,7 @@
 
 ---
 
-<!-- fc id:T-50-018 sha:8b20ea52 src:manual/50-bezpeka.md:45 klas:E -->
+<!-- fc id:T-50-018 sha:8b20ea52 src:manual/50-bezpeka.md:45 status:no-external-signal -->
 ### T-50-018 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -413,7 +413,7 @@
 
 ---
 
-<!-- fc id:T-50-019 sha:102bd021 src:manual/50-bezpeka.md:49 klas:E -->
+<!-- fc id:T-50-019 sha:102bd021 src:manual/50-bezpeka.md:49 status:no-external-signal -->
 ### T-50-019 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -436,7 +436,7 @@
 
 ---
 
-<!-- fc id:T-50-020 sha:0db63aa3 src:manual/50-bezpeka.md:53 klas:F -->
+<!-- fc id:T-50-020 sha:0db63aa3 src:manual/50-bezpeka.md:53 status:unchecked -->
 ### T-50-020 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -460,7 +460,7 @@
 
 ---
 
-<!-- fc id:T-50-021 sha:5b80ddcb src:manual/50-bezpeka.md:55 klas:E -->
+<!-- fc id:T-50-021 sha:5b80ddcb src:manual/50-bezpeka.md:55 status:no-external-signal -->
 ### T-50-021 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -484,7 +484,7 @@
 
 ---
 
-<!-- fc id:T-50-022 sha:2ef51254 src:manual/50-bezpeka.md:60 klas:F -->
+<!-- fc id:T-50-022 sha:2ef51254 src:manual/50-bezpeka.md:60 status:unchecked -->
 ### T-50-022 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -506,7 +506,7 @@ NVS за замовчуванням лежить у флеші **відкрит�
 
 ---
 
-<!-- fc id:T-50-023 sha:51fd4729 src:manual/50-bezpeka.md:60 klas:E -->
+<!-- fc id:T-50-023 sha:51fd4729 src:manual/50-bezpeka.md:60 status:no-external-signal -->
 ### T-50-023 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -528,7 +528,7 @@ NVS за замовчуванням лежить у флеші **відкрит�
 
 ---
 
-<!-- fc id:T-50-024 sha:1fe602ad src:manual/50-bezpeka.md:63 klas:F -->
+<!-- fc id:T-50-024 sha:1fe602ad src:manual/50-bezpeka.md:63 status:unchecked -->
 ### T-50-024 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -550,7 +550,7 @@ ESP-IDF підтримує шифрування NVS: ключі зберігаю
 
 ---
 
-<!-- fc id:T-50-025 sha:30f447f1 src:manual/50-bezpeka.md:64 klas:F -->
+<!-- fc id:T-50-025 sha:30f447f1 src:manual/50-bezpeka.md:64 status:unchecked -->
 ### T-50-025 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -572,7 +572,7 @@ ESP-IDF підтримує шифрування NVS: ключі зберігаю
 
 ---
 
-<!-- fc id:T-50-026 sha:ecb77fc0 src:manual/50-bezpeka.md:66 klas:A -->
+<!-- fc id:T-50-026 sha:ecb77fc0 src:manual/50-bezpeka.md:66 status:verbatim -->
 ### T-50-026 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -600,7 +600,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 ---
 
-<!-- fc id:T-50-027 sha:5548418d src:manual/50-bezpeka.md:67 klas:F -->
+<!-- fc id:T-50-027 sha:5548418d src:manual/50-bezpeka.md:67 status:unchecked -->
 ### T-50-027 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -622,7 +622,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 ---
 
-<!-- fc id:T-50-028 sha:083a3041 src:manual/50-bezpeka.md:71 klas:E -->
+<!-- fc id:T-50-028 sha:083a3041 src:manual/50-bezpeka.md:71 status:no-external-signal -->
 ### T-50-028 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -643,7 +643,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 ---
 
-<!-- fc id:T-50-029 sha:27c4495d src:manual/50-bezpeka.md:73 klas:F -->
+<!-- fc id:T-50-029 sha:27c4495d src:manual/50-bezpeka.md:73 status:unchecked -->
 ### T-50-029 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -666,7 +666,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 ---
 
-<!-- fc id:T-50-030 sha:da66469b src:manual/50-bezpeka.md:75 klas:E -->
+<!-- fc id:T-50-030 sha:da66469b src:manual/50-bezpeka.md:75 status:no-external-signal -->
 ### T-50-030 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -689,7 +689,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 ---
 
-<!-- fc id:T-50-031 sha:fc6881c5 src:manual/50-bezpeka.md:77 klas:E -->
+<!-- fc id:T-50-031 sha:fc6881c5 src:manual/50-bezpeka.md:77 status:no-external-signal -->
 ### T-50-031 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -712,7 +712,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 ---
 
-<!-- fc id:T-50-032 sha:eccf64a9 src:manual/50-bezpeka.md:78 klas:E -->
+<!-- fc id:T-50-032 sha:eccf64a9 src:manual/50-bezpeka.md:78 status:no-external-signal -->
 ### T-50-032 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -735,7 +735,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 ---
 
-<!-- fc id:T-50-033 sha:c6fded16 src:manual/50-bezpeka.md:81 klas:E -->
+<!-- fc id:T-50-033 sha:c6fded16 src:manual/50-bezpeka.md:81 status:no-external-signal -->
 ### T-50-033 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -768,7 +768,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 ---
 
-<!-- fc id:T-50-034 sha:47b17dbe src:manual/50-bezpeka.md:83 klas:E -->
+<!-- fc id:T-50-034 sha:47b17dbe src:manual/50-bezpeka.md:83 status:no-external-signal -->
 ### T-50-034 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -791,7 +791,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 ---
 
-<!-- fc id:T-50-035 sha:f237a1db src:manual/50-bezpeka.md:83 klas:F -->
+<!-- fc id:T-50-035 sha:f237a1db src:manual/50-bezpeka.md:83 status:unchecked -->
 ### T-50-035 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -814,7 +814,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 ---
 
-<!-- fc id:T-50-036 sha:5da2fab6 src:manual/50-bezpeka.md:89 klas:A -->
+<!-- fc id:T-50-036 sha:5da2fab6 src:manual/50-bezpeka.md:89 status:verbatim -->
 ### T-50-036 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -842,7 +842,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-037 sha:fe635607 src:manual/50-bezpeka.md:89 klas:F -->
+<!-- fc id:T-50-037 sha:fe635607 src:manual/50-bezpeka.md:89 status:unchecked -->
 ### T-50-037 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -864,7 +864,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-038 sha:4c1b7636 src:manual/50-bezpeka.md:92 klas:F -->
+<!-- fc id:T-50-038 sha:4c1b7636 src:manual/50-bezpeka.md:92 status:unchecked -->
 ### T-50-038 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -887,7 +887,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-039 sha:5f9b9f7d src:manual/50-bezpeka.md:93 klas:E -->
+<!-- fc id:T-50-039 sha:5f9b9f7d src:manual/50-bezpeka.md:93 status:no-external-signal -->
 ### T-50-039 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -910,7 +910,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-040 sha:b0734346 src:manual/50-bezpeka.md:99 klas:E -->
+<!-- fc id:T-50-040 sha:b0734346 src:manual/50-bezpeka.md:99 status:no-external-signal -->
 ### T-50-040 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -932,7 +932,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-041 sha:832a29bc src:manual/50-bezpeka.md:101 klas:E -->
+<!-- fc id:T-50-041 sha:832a29bc src:manual/50-bezpeka.md:101 status:no-external-signal -->
 ### T-50-041 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -955,7 +955,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-042 sha:9a6b4ffb src:manual/50-bezpeka.md:101 klas:E -->
+<!-- fc id:T-50-042 sha:9a6b4ffb src:manual/50-bezpeka.md:101 status:no-external-signal -->
 ### T-50-042 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -978,7 +978,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-043 sha:ec6acff6 src:manual/50-bezpeka.md:105 klas:E -->
+<!-- fc id:T-50-043 sha:ec6acff6 src:manual/50-bezpeka.md:105 status:no-external-signal -->
 ### T-50-043 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1000,7 +1000,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-044 sha:e254f1bb src:manual/50-bezpeka.md:106 klas:E -->
+<!-- fc id:T-50-044 sha:e254f1bb src:manual/50-bezpeka.md:106 status:no-external-signal -->
 ### T-50-044 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1022,7 +1022,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-045 sha:ff39a4a9 src:manual/50-bezpeka.md:108 klas:A -->
+<!-- fc id:T-50-045 sha:ff39a4a9 src:manual/50-bezpeka.md:108 status:verbatim -->
 ### T-50-045 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1050,7 +1050,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-046 sha:8153161c src:manual/50-bezpeka.md:111 klas:E -->
+<!-- fc id:T-50-046 sha:8153161c src:manual/50-bezpeka.md:111 status:no-external-signal -->
 ### T-50-046 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1071,7 +1071,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-047 sha:4a5fe347 src:manual/50-bezpeka.md:113 klas:F -->
+<!-- fc id:T-50-047 sha:4a5fe347 src:manual/50-bezpeka.md:113 status:unchecked -->
 ### T-50-047 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1097,7 +1097,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-048 sha:c575c5a9 src:manual/50-bezpeka.md:120 klas:E -->
+<!-- fc id:T-50-048 sha:c575c5a9 src:manual/50-bezpeka.md:120 status:no-external-signal -->
 ### T-50-048 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1120,7 +1120,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-049 sha:3994e1e8 src:manual/50-bezpeka.md:120 klas:E -->
+<!-- fc id:T-50-049 sha:3994e1e8 src:manual/50-bezpeka.md:120 status:no-external-signal -->
 ### T-50-049 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1143,7 +1143,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-050 sha:86420f89 src:manual/50-bezpeka.md:124 klas:E -->
+<!-- fc id:T-50-050 sha:86420f89 src:manual/50-bezpeka.md:124 status:no-external-signal -->
 ### T-50-050 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1166,7 +1166,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-051 sha:0c7ef228 src:manual/50-bezpeka.md:128 klas:E -->
+<!-- fc id:T-50-051 sha:0c7ef228 src:manual/50-bezpeka.md:128 status:no-external-signal -->
 ### T-50-051 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1188,7 +1188,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-052 sha:c14fdfce src:manual/50-bezpeka.md:131 klas:E -->
+<!-- fc id:T-50-052 sha:c14fdfce src:manual/50-bezpeka.md:131 status:no-external-signal -->
 ### T-50-052 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1211,7 +1211,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-053 sha:7ede4627 src:manual/50-bezpeka.md:132 klas:E -->
+<!-- fc id:T-50-053 sha:7ede4627 src:manual/50-bezpeka.md:132 status:no-external-signal -->
 ### T-50-053 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1234,7 +1234,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-054 sha:dd62f750 src:manual/50-bezpeka.md:137 klas:E -->
+<!-- fc id:T-50-054 sha:dd62f750 src:manual/50-bezpeka.md:137 status:no-external-signal -->
 ### T-50-054 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1255,7 +1255,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-055 sha:9e2d277b src:manual/50-bezpeka.md:139 klas:E -->
+<!-- fc id:T-50-055 sha:9e2d277b src:manual/50-bezpeka.md:139 status:no-external-signal -->
 ### T-50-055 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1278,7 +1278,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-056 sha:e0784a2e src:manual/50-bezpeka.md:145 klas:E -->
+<!-- fc id:T-50-056 sha:e0784a2e src:manual/50-bezpeka.md:145 status:no-external-signal -->
 ### T-50-056 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1300,7 +1300,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-057 sha:6a86a14c src:manual/50-bezpeka.md:148 klas:E -->
+<!-- fc id:T-50-057 sha:6a86a14c src:manual/50-bezpeka.md:148 status:no-external-signal -->
 ### T-50-057 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1324,7 +1324,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-058 sha:289c8da5 src:manual/50-bezpeka.md:150 klas:E -->
+<!-- fc id:T-50-058 sha:289c8da5 src:manual/50-bezpeka.md:150 status:no-external-signal -->
 ### T-50-058 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1348,7 +1348,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-059 sha:715c07df src:manual/50-bezpeka.md:153 klas:E -->
+<!-- fc id:T-50-059 sha:715c07df src:manual/50-bezpeka.md:153 status:no-external-signal -->
 ### T-50-059 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1370,7 +1370,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-060 sha:ec048229 src:manual/50-bezpeka.md:156 klas:E -->
+<!-- fc id:T-50-060 sha:ec048229 src:manual/50-bezpeka.md:156 status:no-external-signal -->
 ### T-50-060 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1392,7 +1392,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-061 sha:493791ce src:manual/50-bezpeka.md:161 klas:E -->
+<!-- fc id:T-50-061 sha:493791ce src:manual/50-bezpeka.md:161 status:no-external-signal -->
 ### T-50-061 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1413,7 +1413,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-062 sha:8ea44250 src:manual/50-bezpeka.md:161 klas:E -->
+<!-- fc id:T-50-062 sha:8ea44250 src:manual/50-bezpeka.md:161 status:no-external-signal -->
 ### T-50-062 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1434,7 +1434,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-063 sha:4fbffe83 src:manual/50-bezpeka.md:163 klas:E -->
+<!-- fc id:T-50-063 sha:4fbffe83 src:manual/50-bezpeka.md:163 status:no-external-signal -->
 ### T-50-063 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1455,7 +1455,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-064 sha:55da5d51 src:manual/50-bezpeka.md:165 klas:E -->
+<!-- fc id:T-50-064 sha:55da5d51 src:manual/50-bezpeka.md:165 status:no-external-signal -->
 ### T-50-064 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1477,7 +1477,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-065 sha:655b279a src:manual/50-bezpeka.md:168 klas:E -->
+<!-- fc id:T-50-065 sha:655b279a src:manual/50-bezpeka.md:168 status:no-external-signal -->
 ### T-50-065 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1500,7 +1500,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-066 sha:b129dd7e src:manual/50-bezpeka.md:174 klas:E -->
+<!-- fc id:T-50-066 sha:b129dd7e src:manual/50-bezpeka.md:174 status:no-external-signal -->
 ### T-50-066 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1521,7 +1521,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-067 sha:b662f0eb src:manual/50-bezpeka.md:176 klas:A -->
+<!-- fc id:T-50-067 sha:b662f0eb src:manual/50-bezpeka.md:176 status:verbatim -->
 ### T-50-067 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1557,7 +1557,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-068 sha:5538db22 src:manual/50-bezpeka.md:189 klas:F -->
+<!-- fc id:T-50-068 sha:5538db22 src:manual/50-bezpeka.md:189 status:unchecked -->
 ### T-50-068 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1579,7 +1579,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-069 sha:884c7180 src:manual/50-bezpeka.md:192 klas:E -->
+<!-- fc id:T-50-069 sha:884c7180 src:manual/50-bezpeka.md:192 status:no-external-signal -->
 ### T-50-069 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1600,7 +1600,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-070 sha:65dd6c5b src:manual/50-bezpeka.md:194 klas:F -->
+<!-- fc id:T-50-070 sha:65dd6c5b src:manual/50-bezpeka.md:194 status:unchecked -->
 ### T-50-070 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1621,7 +1621,7 @@ TLS без перевірки сертифіката — половина зах
 
 ---
 
-<!-- fc id:T-50-071 sha:560d1b18 src:manual/50-bezpeka.md:196 klas:E -->
+<!-- fc id:T-50-071 sha:560d1b18 src:manual/50-bezpeka.md:196 status:no-external-signal -->
 ### T-50-071 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1642,7 +1642,7 @@ TLS без перевірки сертифіката — половина зах
 
 ---
 
-<!-- fc id:T-50-072 sha:b57090d0 src:manual/50-bezpeka.md:198 klas:E -->
+<!-- fc id:T-50-072 sha:b57090d0 src:manual/50-bezpeka.md:198 status:no-external-signal -->
 ### T-50-072 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1664,7 +1664,7 @@ Flash Encryption і Secure Boot незворотні: пробувати тіл�
 
 ---
 
-<!-- fc id:T-50-073 sha:84e2d896 src:manual/50-bezpeka.md:201 klas:E -->
+<!-- fc id:T-50-073 sha:84e2d896 src:manual/50-bezpeka.md:201 status:no-external-signal -->
 ### T-50-073 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1686,7 +1686,7 @@ Flash Encryption і Secure Boot незворотні: пробувати тіл�
 
 ---
 
-<!-- fc id:T-50-074 sha:d84981ce src:manual/50-bezpeka.md:201 klas:E -->
+<!-- fc id:T-50-074 sha:d84981ce src:manual/50-bezpeka.md:201 status:no-external-signal -->
 ### T-50-074 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1708,7 +1708,7 @@ Flash Encryption і Secure Boot незворотні: пробувати тіл�
 
 ---
 
-<!-- fc id:T-50-075 sha:16c82e08 src:manual/50-bezpeka.md:204 klas:E -->
+<!-- fc id:T-50-075 sha:16c82e08 src:manual/50-bezpeka.md:204 status:no-external-signal -->
 ### T-50-075 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**

@@ -58,7 +58,6 @@
   zbih: Числові коди з ROM-заголовка ESP-IDF \(enum `RESET_REASON`\)|POWERON_RESET \| подано
     живлення|SW_CPU_RESET \| програмне скидання ядра|RTCWDT_BROWN_OUT_RESET \| \*\*просіло
     живлення\*\*
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: "typedef enum {\n    NO_MEAN                =  0,\n    POWERON_RESET          =\
     \  1,    /**<1, Vbat power on reset*/\n    SW_RESET               =  3,    /**<3, Software\
@@ -107,7 +106,6 @@
 - nazva: 'ROM класифікує boot: значення цілком, а не пін за піном'
   zbih: Далі значення не розшифровуються, і це свідоме рішення|ETS_IS_FLASH_BOOT|дивіться
     на рядок у дужках
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/include/soc/boot_mode.h
   cytata: "#define IS_1XXX(v)   (((v)&0x08)==0x08)\n#define IS_00XX(v)   (((v)&0x0c)==0x00)\n\
     #define IS_0100(v)   (((v)&0x0f)==0x04)\n\n#define ETS_IS_FLASH_BOOT()  (IS_1XXX(BOOT_MODE_GET())\
@@ -169,7 +167,6 @@
 - nazva: Порядок читання backtrace — знахідку відхилено
   zbih: 'ланцюжок `адреса:стек`, читати знизу вгору|Нижній кадр — де почалося, верхній — де
     впало|Читати \*\*знизу вгору\*\*: нижні кадри — хто викликав'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/fatal-errors.rst
   cytata: 'Backtrace: 0x400e14ed:0x3ffb5030 0x400d0802:0x3ffb5050
 

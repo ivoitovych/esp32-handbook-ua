@@ -24,7 +24,6 @@
 
 - nazva: Етап 1 — ROM bootloader зашитий у кремній
   zbih: Етап 1.*ROM bootloader.*кремній
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: 'The ROM bootloader is in read-only memory (ROM) on the ESP32 chip.
 
@@ -46,7 +45,6 @@
   - 37a50017
 - nazva: Етап 2 — другий бутлоадер bootloader.bin у флеші
   zbih: Етап 2.*другий бутлоадер.*bootloader
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: 'After reset, the second line printed by the ESP32 ROM is a reset & boot mode message.
 
@@ -68,7 +66,6 @@
   - 371e3feb
 - nazva: Адреса bootloader.bin для ESP32 чипів — 0x1000
   zbih: Останнє\s+тягне\s+за\s+собою\s+перерахунок\s+явних\s+зсувів\s+у\s+CSV:\s+жоден\s+розділ\s+не\s+може\s+починатися\s+раніше\s+ніж\s+нова\s+адреса|\[\[classic\]\]\s+Адреса\s+`0x1000`\s+тут\s+—\s+знову\s+classic,\s+і\s+тепер\s+вона\s+узгоджена\s+з\s+`\-\-chip\s+esp32`\s+у\s+тому\s+ж\s+рядку;\s+для\s+і|У\s+ручному\s+варіанті\s+адреса\s+бутлоадера\s+набирається\s+з\s+голови,\s+і\s+саме\s+там\s+роблять\s+помилку:\s+`0x1000`\s+на\s+S3\s+дає\s+обра|⚠\s+У\s+команді\s+вище\s+стоїть\s+`0x1000`\s+—\s+адреса\s+\*\*classic\s+і\s+S2\*\*
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: '{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000",
     esp32p4="0x2000"}
@@ -91,7 +88,6 @@
     книги (риски таблиці) і не чіпав нічого.'
 - nazva: GPIO0 як ключовий strapping-пін для вибору режиму завантаження
   zbih: '`GPIO0`\s+·\s+Що\s+задає\s+→\s+звичайний\s+старт\s+або\s+download\s+mode|\|\s+`DOWNLOAD_BOOT\(UART0/UART1/\.\.\.\)`\s+\|\s+download\s+mode,\s+`GPIO0`\s+низький\s+\||GPIO0\s+→\s+білий\s+→\s+кнопка\s+на\s+землю\s+\(⚠\s+strapping!\)|\-\s+`GPIO0`\s+вільний\s+\(підтягнутий\s+вгору\)\s+→\s+звичайний\s+старт\s+застосунку;\s+\-\s+`GPIO0`\s+притиснутий\s+до\s+землі\s+→\s+download'
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: '0x10  - GPIO0
 
@@ -113,7 +109,6 @@
     розмітку книги (риски таблиці) і не чіпав нічого.'
 - nazva: Таблиця розділів з адресами nvs 0x9000 та factory 0x10000
   zbih: '`nvs`\s+·\s+Зсув\s+→\s+`0x9000`|`factory`\s+·\s+Зсув\s+→\s+`0x10000`|Адреса\s+`0x9000`\s+—\s+початок\s+розділу\s+`nvs`\s+у\s+стандартній\s+розбивці;\s+звірити\s+зі\s+своєю\s+таблицею\s+розділів\s+\(розділ\s+18\)|esptool\s+\-\-port\s+PORT\s+erase\-region\s+0x9000\s+0x6000\s+\#\s+лише\s+NVS'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'nvs,      data, nvs,     0x9000,  0x6000,
 
@@ -139,7 +134,6 @@
     під розмітку книги (риски таблиці) і не чіпав нічого.'
 - nazva: Розділи ota_0 та ota_1 у таблиці розділів для OTA
   zbih: '`ota_0`.*`ota_1`'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'ota_0,    app,  ota_0,   0x20000,  1M,
 

@@ -40,7 +40,6 @@
 
 - nazva: 'T-59-079: Різниця виникає лише тоді, коли в старшому байті'
   zbih: Різниця\s+виникає\s+лише\s+тоді,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c
   cytata: 'dig_h4_msb = (int16_t)(int8_t)reg_data[3] * 16;
 

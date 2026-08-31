@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/56-pasport.md`
 
-Одиниць твердження: **74**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **74**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-56-001 sha:c6ddb325 src:manual/56-pasport.md:3 klas:E -->
+<!-- fc id:T-56-001 sha:c6ddb325 src:manual/56-pasport.md:3 status:no-external-signal -->
 ### T-56-001 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-56-002 sha:4fcec0d2 src:manual/56-pasport.md:4 klas:E -->
+<!-- fc id:T-56-002 sha:4fcec0d2 src:manual/56-pasport.md:4 status:no-external-signal -->
 ### T-56-002 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-56-003 sha:99ea60f9 src:manual/56-pasport.md:6 klas:E -->
+<!-- fc id:T-56-003 sha:99ea60f9 src:manual/56-pasport.md:6 status:no-external-signal -->
 ### T-56-003 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -74,7 +74,7 @@
 
 ---
 
-<!-- fc id:T-56-004 sha:cf290431 src:manual/56-pasport.md:11 klas:E -->
+<!-- fc id:T-56-004 sha:cf290431 src:manual/56-pasport.md:11 status:no-external-signal -->
 ### T-56-004 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -96,7 +96,7 @@
 
 ---
 
-<!-- fc id:T-56-005 sha:f5235967 src:manual/56-pasport.md:14 klas:E -->
+<!-- fc id:T-56-005 sha:f5235967 src:manual/56-pasport.md:14 status:no-external-signal -->
 ### T-56-005 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -117,7 +117,7 @@
 
 ---
 
-<!-- fc id:T-56-006 sha:ab1f28fd src:manual/56-pasport.md:14 klas:E -->
+<!-- fc id:T-56-006 sha:ab1f28fd src:manual/56-pasport.md:14 status:no-external-signal -->
 ### T-56-006 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -138,7 +138,7 @@
 
 ---
 
-<!-- fc id:T-56-007 sha:45d374e5 src:manual/56-pasport.md:16 klas:E -->
+<!-- fc id:T-56-007 sha:45d374e5 src:manual/56-pasport.md:16 status:no-external-signal -->
 ### T-56-007 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -160,7 +160,7 @@
 
 ---
 
-<!-- fc id:T-56-008 sha:abd09351 src:manual/56-pasport.md:17 klas:E -->
+<!-- fc id:T-56-008 sha:abd09351 src:manual/56-pasport.md:17 status:no-external-signal -->
 ### T-56-008 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -182,7 +182,7 @@
 
 ---
 
-<!-- fc id:T-56-009 sha:a8cea344 src:manual/56-pasport.md:19 klas:E -->
+<!-- fc id:T-56-009 sha:a8cea344 src:manual/56-pasport.md:19 status:no-external-signal -->
 ### T-56-009 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -204,7 +204,7 @@
 
 ---
 
-<!-- fc id:T-56-010 sha:44ce74f1 src:manual/56-pasport.md:22 klas:K -->
+<!-- fc id:T-56-010 sha:44ce74f1 src:manual/56-pasport.md:22 status:code-context -->
 ### T-56-010 · kod · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -243,7 +243,7 @@ GPIO25 → реле насоса, ключ на MOSFET (низький = вим�
 
 ---
 
-<!-- fc id:T-56-011 sha:1e9c2c6b src:manual/56-pasport.md:23 klas:B -->
+<!-- fc id:T-56-011 sha:1e9c2c6b src:manual/56-pasport.md:23 status:derived -->
 ### T-56-011 · schema-zvyazok · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -282,7 +282,7 @@ GPIO25 → реле насоса, ключ на MOSFET (низький = вим�
 
 ---
 
-<!-- fc id:T-56-012 sha:e5541d41 src:manual/56-pasport.md:24 klas:B -->
+<!-- fc id:T-56-012 sha:e5541d41 src:manual/56-pasport.md:24 status:derived -->
 ### T-56-012 · schema-zvyazok · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -316,7 +316,7 @@ GPIO25 → реле насоса, ключ на MOSFET (низький = вим�
 
 ---
 
-<!-- fc id:T-56-013 sha:9fdaeb37 src:manual/56-pasport.md:25 klas:B -->
+<!-- fc id:T-56-013 sha:9fdaeb37 src:manual/56-pasport.md:25 status:derived -->
 ### T-56-013 · schema-zvyazok · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -350,7 +350,7 @@ GPIO25 → реле насоса, ключ на MOSFET (низький = вим�
 
 ---
 
-<!-- fc id:T-56-014 sha:df415666 src:manual/56-pasport.md:26 klas:B -->
+<!-- fc id:T-56-014 sha:df415666 src:manual/56-pasport.md:26 status:derived -->
 ### T-56-014 · schema-zvyazok · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -388,7 +388,7 @@ GPIO25 → реле насоса, ключ на MOSFET (низький = вим�
 
 ---
 
-<!-- fc id:T-56-015 sha:16abcbe1 src:manual/56-pasport.md:29 klas:E -->
+<!-- fc id:T-56-015 sha:16abcbe1 src:manual/56-pasport.md:29 status:no-external-signal -->
 ### T-56-015 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -410,7 +410,7 @@ download mode на цьому виробі, де взяти образ:
 
 ---
 
-<!-- fc id:T-56-016 sha:755b28d7 src:manual/56-pasport.md:32 klas:K -->
+<!-- fc id:T-56-016 sha:755b28d7 src:manual/56-pasport.md:32 status:code-context -->
 ### T-56-016 · kod · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -435,7 +435,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-017 sha:1bef7ff0 src:manual/56-pasport.md:33 klas:F -->
+<!-- fc id:T-56-017 sha:1bef7ff0 src:manual/56-pasport.md:33 status:unchecked -->
 ### T-56-017 · kod-ryadok · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -458,7 +458,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-018 sha:0244fe37 src:manual/56-pasport.md:36 klas:A -->
+<!-- fc id:T-56-018 sha:0244fe37 src:manual/56-pasport.md:36 status:verbatim -->
 ### T-56-018 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -486,7 +486,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-019 sha:5903ca87 src:manual/56-pasport.md:39 klas:E -->
+<!-- fc id:T-56-019 sha:5903ca87 src:manual/56-pasport.md:39 status:no-external-signal -->
 ### T-56-019 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -507,7 +507,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-020 sha:3b21f869 src:manual/56-pasport.md:41 klas:E -->
+<!-- fc id:T-56-020 sha:3b21f869 src:manual/56-pasport.md:41 status:no-external-signal -->
 ### T-56-020 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -530,7 +530,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-021 sha:caa6eda1 src:manual/56-pasport.md:45 klas:E -->
+<!-- fc id:T-56-021 sha:caa6eda1 src:manual/56-pasport.md:45 status:no-external-signal -->
 ### T-56-021 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -551,7 +551,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-022 sha:5b2b0930 src:manual/56-pasport.md:49 klas:E -->
+<!-- fc id:T-56-022 sha:5b2b0930 src:manual/56-pasport.md:49 status:no-external-signal -->
 ### T-56-022 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -573,7 +573,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-023 sha:8e0558e1 src:manual/56-pasport.md:52 klas:E -->
+<!-- fc id:T-56-023 sha:8e0558e1 src:manual/56-pasport.md:52 status:no-external-signal -->
 ### T-56-023 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -595,7 +595,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-024 sha:46b356c9 src:manual/56-pasport.md:55 klas:E -->
+<!-- fc id:T-56-024 sha:46b356c9 src:manual/56-pasport.md:55 status:no-external-signal -->
 ### T-56-024 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -616,7 +616,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-025 sha:786f1530 src:manual/56-pasport.md:57 klas:A -->
+<!-- fc id:T-56-025 sha:786f1530 src:manual/56-pasport.md:57 status:verbatim -->
 ### T-56-025 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -644,7 +644,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-026 sha:f6af339a src:manual/56-pasport.md:60 klas:B -->
+<!-- fc id:T-56-026 sha:f6af339a src:manual/56-pasport.md:60 status:derived -->
 ### T-56-026 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -673,7 +673,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-027 sha:09b56a4e src:manual/56-pasport.md:65 klas:E -->
+<!-- fc id:T-56-027 sha:09b56a4e src:manual/56-pasport.md:65 status:no-external-signal -->
 ### T-56-027 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -697,7 +697,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-028 sha:9a88b8e3 src:manual/56-pasport.md:65 klas:E -->
+<!-- fc id:T-56-028 sha:9a88b8e3 src:manual/56-pasport.md:65 status:no-external-signal -->
 ### T-56-028 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -721,7 +721,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-029 sha:8b46edd7 src:manual/56-pasport.md:66 klas:E -->
+<!-- fc id:T-56-029 sha:8b46edd7 src:manual/56-pasport.md:66 status:no-external-signal -->
 ### T-56-029 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -745,7 +745,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-030 sha:6509893b src:manual/56-pasport.md:69 klas:E -->
+<!-- fc id:T-56-030 sha:6509893b src:manual/56-pasport.md:69 status:no-external-signal -->
 ### T-56-030 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -769,7 +769,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-031 sha:bfcb9e85 src:manual/56-pasport.md:70 klas:E -->
+<!-- fc id:T-56-031 sha:bfcb9e85 src:manual/56-pasport.md:70 status:no-external-signal -->
 ### T-56-031 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -793,7 +793,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-032 sha:d438a1ea src:manual/56-pasport.md:76 klas:E -->
+<!-- fc id:T-56-032 sha:d438a1ea src:manual/56-pasport.md:76 status:no-external-signal -->
 ### T-56-032 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -815,7 +815,7 @@ boot-лозі, у веб-інтерфейсі, на дисплеї:
 
 ---
 
-<!-- fc id:T-56-033 sha:e6fdb4f6 src:manual/56-pasport.md:79 klas:K -->
+<!-- fc id:T-56-033 sha:e6fdb4f6 src:manual/56-pasport.md:79 status:code-context -->
 ### T-56-033 · kod · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -840,7 +840,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-034 sha:702ee643 src:manual/56-pasport.md:80 klas:F -->
+<!-- fc id:T-56-034 sha:702ee643 src:manual/56-pasport.md:80 status:unchecked -->
 ### T-56-034 · kod-ryadok · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -863,7 +863,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-035 sha:7d67dd6d src:manual/56-pasport.md:83 klas:E -->
+<!-- fc id:T-56-035 sha:7d67dd6d src:manual/56-pasport.md:83 status:no-external-signal -->
 ### T-56-035 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -885,7 +885,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-036 sha:dabcf6bf src:manual/56-pasport.md:87 klas:F -->
+<!-- fc id:T-56-036 sha:dabcf6bf src:manual/56-pasport.md:87 status:unchecked -->
 ### T-56-036 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -910,7 +910,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-037 sha:8dcafc65 src:manual/56-pasport.md:88 klas:E -->
+<!-- fc id:T-56-037 sha:8dcafc65 src:manual/56-pasport.md:88 status:no-external-signal -->
 ### T-56-037 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -935,7 +935,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-038 sha:457b7f24 src:manual/56-pasport.md:92 klas:E -->
+<!-- fc id:T-56-038 sha:457b7f24 src:manual/56-pasport.md:92 status:no-external-signal -->
 ### T-56-038 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -961,7 +961,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-039 sha:77250e0c src:manual/56-pasport.md:94 klas:F -->
+<!-- fc id:T-56-039 sha:77250e0c src:manual/56-pasport.md:94 status:unchecked -->
 ### T-56-039 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -987,7 +987,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-040 sha:312b4474 src:manual/56-pasport.md:99 klas:E -->
+<!-- fc id:T-56-040 sha:312b4474 src:manual/56-pasport.md:99 status:no-external-signal -->
 ### T-56-040 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1009,7 +1009,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-041 sha:7b76587c src:manual/56-pasport.md:99 klas:E -->
+<!-- fc id:T-56-041 sha:7b76587c src:manual/56-pasport.md:99 status:no-external-signal -->
 ### T-56-041 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1031,7 +1031,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-042 sha:c72d4d4f src:manual/56-pasport.md:105 klas:E -->
+<!-- fc id:T-56-042 sha:c72d4d4f src:manual/56-pasport.md:105 status:no-external-signal -->
 ### T-56-042 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1053,7 +1053,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-043 sha:65b3a914 src:manual/56-pasport.md:107 klas:E -->
+<!-- fc id:T-56-043 sha:65b3a914 src:manual/56-pasport.md:107 status:no-external-signal -->
 ### T-56-043 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1086,7 +1086,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-044 sha:67b6e4a9 src:manual/56-pasport.md:114 klas:E -->
+<!-- fc id:T-56-044 sha:67b6e4a9 src:manual/56-pasport.md:114 status:no-external-signal -->
 ### T-56-044 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1109,7 +1109,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-045 sha:26887cac src:manual/56-pasport.md:115 klas:F -->
+<!-- fc id:T-56-045 sha:26887cac src:manual/56-pasport.md:115 status:unchecked -->
 ### T-56-045 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1132,7 +1132,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-046 sha:6a8d2037 src:manual/56-pasport.md:118 klas:E -->
+<!-- fc id:T-56-046 sha:6a8d2037 src:manual/56-pasport.md:118 status:no-external-signal -->
 ### T-56-046 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1155,7 +1155,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-047 sha:97fecdbd src:manual/56-pasport.md:124 klas:E -->
+<!-- fc id:T-56-047 sha:97fecdbd src:manual/56-pasport.md:124 status:no-external-signal -->
 ### T-56-047 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1176,7 +1176,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-048 sha:b2fd279a src:manual/56-pasport.md:126 klas:K -->
+<!-- fc id:T-56-048 sha:b2fd279a src:manual/56-pasport.md:126 status:code-context -->
 ### T-56-048 · kod · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1207,7 +1207,7 @@ v1.2  2026-06-02  Скидання налаштувань довгим нати�
 
 ---
 
-<!-- fc id:T-56-049 sha:468ce3ff src:manual/56-pasport.md:133 klas:E -->
+<!-- fc id:T-56-049 sha:468ce3ff src:manual/56-pasport.md:133 status:no-external-signal -->
 ### T-56-049 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1230,7 +1230,7 @@ v1.2  2026-06-02  Скидання налаштувань довгим нати�
 
 ---
 
-<!-- fc id:T-56-050 sha:a2770129 src:manual/56-pasport.md:134 klas:E -->
+<!-- fc id:T-56-050 sha:a2770129 src:manual/56-pasport.md:134 status:no-external-signal -->
 ### T-56-050 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1253,7 +1253,7 @@ v1.2  2026-06-02  Скидання налаштувань довгим нати�
 
 ---
 
-<!-- fc id:T-56-051 sha:c5032a1f src:manual/56-pasport.md:139 klas:F -->
+<!-- fc id:T-56-051 sha:c5032a1f src:manual/56-pasport.md:139 status:unchecked -->
 ### T-56-051 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1275,7 +1275,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-052 sha:366ffdd2 src:manual/56-pasport.md:144 klas:E -->
+<!-- fc id:T-56-052 sha:366ffdd2 src:manual/56-pasport.md:144 status:no-external-signal -->
 ### T-56-052 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1301,7 +1301,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-053 sha:49c90ce6 src:manual/56-pasport.md:151 klas:E -->
+<!-- fc id:T-56-053 sha:49c90ce6 src:manual/56-pasport.md:151 status:no-external-signal -->
 ### T-56-053 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1323,7 +1323,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-054 sha:3ccf0166 src:manual/56-pasport.md:151 klas:E -->
+<!-- fc id:T-56-054 sha:3ccf0166 src:manual/56-pasport.md:151 status:no-external-signal -->
 ### T-56-054 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1345,7 +1345,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-055 sha:afeb6ab6 src:manual/56-pasport.md:154 klas:E -->
+<!-- fc id:T-56-055 sha:afeb6ab6 src:manual/56-pasport.md:154 status:no-external-signal -->
 ### T-56-055 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1366,7 +1366,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-056 sha:71ede250 src:manual/56-pasport.md:158 klas:E -->
+<!-- fc id:T-56-056 sha:71ede250 src:manual/56-pasport.md:158 status:no-external-signal -->
 ### T-56-056 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1387,7 +1387,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-057 sha:930ffc71 src:manual/56-pasport.md:160 klas:E -->
+<!-- fc id:T-56-057 sha:930ffc71 src:manual/56-pasport.md:160 status:no-external-signal -->
 ### T-56-057 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1412,7 +1412,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-058 sha:843b689d src:manual/56-pasport.md:167 klas:E -->
+<!-- fc id:T-56-058 sha:843b689d src:manual/56-pasport.md:167 status:no-external-signal -->
 ### T-56-058 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1436,7 +1436,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-059 sha:dc16e2b3 src:manual/56-pasport.md:168 klas:E -->
+<!-- fc id:T-56-059 sha:dc16e2b3 src:manual/56-pasport.md:168 status:no-external-signal -->
 ### T-56-059 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1460,7 +1460,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-060 sha:49de39ef src:manual/56-pasport.md:171 klas:E -->
+<!-- fc id:T-56-060 sha:49de39ef src:manual/56-pasport.md:171 status:no-external-signal -->
 ### T-56-060 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1483,7 +1483,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-061 sha:29a82b3c src:manual/56-pasport.md:172 klas:E -->
+<!-- fc id:T-56-061 sha:29a82b3c src:manual/56-pasport.md:172 status:no-external-signal -->
 ### T-56-061 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1506,7 +1506,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-062 sha:4259ac59 src:manual/56-pasport.md:177 klas:E -->
+<!-- fc id:T-56-062 sha:4259ac59 src:manual/56-pasport.md:177 status:no-external-signal -->
 ### T-56-062 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1527,7 +1527,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-063 sha:bfc2d507 src:manual/56-pasport.md:179 klas:F -->
+<!-- fc id:T-56-063 sha:bfc2d507 src:manual/56-pasport.md:179 status:unchecked -->
 ### T-56-063 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1554,7 +1554,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-064 sha:1c98de3d src:manual/56-pasport.md:187 klas:E -->
+<!-- fc id:T-56-064 sha:1c98de3d src:manual/56-pasport.md:187 status:no-external-signal -->
 ### T-56-064 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1578,7 +1578,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-065 sha:cd24f915 src:manual/56-pasport.md:188 klas:E -->
+<!-- fc id:T-56-065 sha:cd24f915 src:manual/56-pasport.md:188 status:no-external-signal -->
 ### T-56-065 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1602,7 +1602,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-066 sha:c7a13eb2 src:manual/56-pasport.md:189 klas:E -->
+<!-- fc id:T-56-066 sha:c7a13eb2 src:manual/56-pasport.md:189 status:no-external-signal -->
 ### T-56-066 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1626,7 +1626,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-067 sha:6c006e9d src:manual/56-pasport.md:194 klas:E -->
+<!-- fc id:T-56-067 sha:6c006e9d src:manual/56-pasport.md:194 status:no-external-signal -->
 ### T-56-067 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1648,7 +1648,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-068 sha:06a865fa src:manual/56-pasport.md:197 klas:E -->
+<!-- fc id:T-56-068 sha:06a865fa src:manual/56-pasport.md:197 status:no-external-signal -->
 ### T-56-068 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1669,7 +1669,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-069 sha:9e4d1b4a src:manual/56-pasport.md:199 klas:E -->
+<!-- fc id:T-56-069 sha:9e4d1b4a src:manual/56-pasport.md:199 status:no-external-signal -->
 ### T-56-069 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1691,7 +1691,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-070 sha:7cfe2929 src:manual/56-pasport.md:202 klas:E -->
+<!-- fc id:T-56-070 sha:7cfe2929 src:manual/56-pasport.md:202 status:no-external-signal -->
 ### T-56-070 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1712,7 +1712,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-071 sha:98767370 src:manual/56-pasport.md:204 klas:F -->
+<!-- fc id:T-56-071 sha:98767370 src:manual/56-pasport.md:204 status:unchecked -->
 ### T-56-071 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1733,7 +1733,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-072 sha:e22e223c src:manual/56-pasport.md:206 klas:E -->
+<!-- fc id:T-56-072 sha:e22e223c src:manual/56-pasport.md:206 status:no-external-signal -->
 ### T-56-072 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1754,7 +1754,7 @@ Changelog писати наслідками, а не внутрішніми зм
 
 ---
 
-<!-- fc id:T-56-073 sha:ba9baba6 src:manual/56-pasport.md:208 klas:E -->
+<!-- fc id:T-56-073 sha:ba9baba6 src:manual/56-pasport.md:208 status:no-external-signal -->
 ### T-56-073 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1775,7 +1775,7 @@ Changelog писати наслідками, а не внутрішніми зм
 
 ---
 
-<!-- fc id:T-56-074 sha:97804f7b src:manual/56-pasport.md:210 klas:E -->
+<!-- fc id:T-56-074 sha:97804f7b src:manual/56-pasport.md:210 status:no-external-signal -->
 ### T-56-074 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**

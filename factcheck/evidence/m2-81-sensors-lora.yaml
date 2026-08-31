@@ -1,6 +1,5 @@
 - nazva: HC-SR04 вимірює тривалість імпульсу
   zbih: Вимірювання\s+—\s+тривалість\s+імпульсу,\s+і\s+для\s+нього\s+правильний\s+інструмент\s+PCNT\s+або\s+RMT\s+\(розділ\s+33\),\s+а\s+не\s+цикл\s+із\s+оп
-  klas: B
   dzherelo: HC-SR04 Datasheet, розділ «Measurement» та «How it works»
   cytata: 'HC-SR04 вимірює відстань шляхом розрахунку часу між посланим
 
@@ -32,7 +31,6 @@
     нічого.'
 - nazva: LoRa модулі продаються на частоти 433, 868, 915 МГц
   zbih: 433.*868.*915 МГц|частоти.*433|868|915
-  klas: A
   dzherelo: SX1276 Datasheet (популярний LoRa модуль); ISM стандарти
   cytata: 'LoRa модулі доступні для різних регіональних ISM смуг:
 
@@ -64,7 +62,6 @@
     для США. Антена на одній частоті не працюватиме оптимально на іншій.
 - nazva: DS18B20 вимагає delay(750 мс) для читання температури
   zbih: delay.*750|750.*мс
-  klas: A
   dzherelo: DS18B20 Datasheet, Table «Temperature Conversion Time»
   cytata: 'Temperature Conversion Time — максимум 750 мс
 
@@ -88,7 +85,6 @@
     спираються більшість бібліотек. Arduino бібліотеки часто використовують 750 мс для безпеки.
 - nazva: VL53L0X / VL53L1X — лазерні далекомісні на I²C
   zbih: VL53L0X|VL53L1X
-  klas: B
   dzherelo: STMicroelectronics VL53L0X Datasheet; VL53L1X Datasheet
   cytata: 'VL53L0X — Time-of-Flight (ToF) лазерний далекомір, I²C інтерфейс
 
@@ -112,7 +108,6 @@
     відміну від HC-SR04, вони не потребують вимірювання тривалості імпульсу.
 - nazva: OneWire бібліотеки — OneWire і DallasTemperature для Arduino
   zbih: OneWire|DallasTemperature
-  klas: B
   dzherelo: Arduino Libraries; GitHub (Paul Stoffregen, Tim Newsome)
   cytata: 'Стандартні Arduino бібліотеки для OneWire датчиків:
 
@@ -140,7 +135,6 @@
     використовуватися і на ESP32 завдяки сумісності Arduino core.
 - nazva: ACS712 — датчик струму на ефекті Холла з аналоговим виходом
   zbih: ACS712|ефект Холла.*датчик
-  klas: A
   dzherelo: Allegro Microsystems ACS712 Datasheet
   cytata: 'ACS712 — Hall effect current sensor
 

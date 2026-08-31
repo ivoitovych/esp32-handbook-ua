@@ -70,7 +70,6 @@
 
 - nazva: 'T-A-010: 1 · Обмеження → UART0 TX'
   zbih: 1\s+·\s+Обмеження\s+→\s+UART0
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/uart_pins.h
   cytata: '#define U0TXD_GPIO_NUM  (1)
 
@@ -92,7 +91,6 @@
   note: GPIO 1 - апаратний пін UART0 TX на ESP32 classic
 - nazva: 'T-A-011: 1 · Примітка → консоль'
   zbih: 1\s+·\s+Примітка\s+→\s+консоль
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/uart_pins.h
   cytata: '#define U0RXD_GPIO_NUM  (3)
 
@@ -116,7 +114,6 @@
   - b06bf589
 - nazva: 'T-A-016: 3 · Обмеження → UART0 RX'
   zbih: 3\s+·\s+Обмеження\s+→\s+UART0
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/uart_pins.h
   cytata: '#define U0RXD_GPIO_NUM  (3)
 
@@ -138,7 +135,6 @@
   note: GPIO 3 - UART0 RX на ESP32 classic
 - nazva: 'T-A-017: 3 · Примітка → консоль'
   zbih: 3\s+·\s+Примітка\s+→\s+консоль
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/uart_pins.h
   cytata: '#define U0RXD_GPIO_NUM  (3)
 
@@ -162,7 +158,6 @@
   - ed43aba0
 - nazva: 'T-A-099: UART0 TX / RX · [[classic]] → 1'
   zbih: UART0\s+TX\s+/\s+RX\s+·\s+\[\[classic\]\]
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/uart_pins.h
   cytata: '#define U0TXD_GPIO_NUM  (1)
 
@@ -188,7 +183,6 @@
   note: UART0 TX/RX на GPIO 1/3 для ESP32 classic
 - nazva: 'T-A-009: 0 · Примітка → `BOOT`; низький = download'
   zbih: 0\s+·\s+Примітка\s+→\s+`BOOT`;
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/uart_pins.h
   cytata: '#define U0RXD_GPIO_NUM  (3)
 
@@ -212,7 +206,6 @@
   - a8d9831a
 - nazva: 'T-A-045: 25 · Обмеження → **DAC1**'
   zbih: 25\s+·\s+Обмеження\s+→
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/dac_channel.h
   cytata: 'DAC_GPIO25_CHANNEL      DAC_CHAN_0
 
@@ -236,7 +229,6 @@
   - 64083f4c
 - nazva: 'T-A-046: 25 · ADC → ADC2_8'
   zbih: 25\s+·\s+ADC\s+→
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/adc_channel.h
   cytata: 'ADC2_GPIO25_CHANNEL     8
 
@@ -260,7 +252,6 @@
   - 7d926829
 - nazva: 'T-A-047: 26 · Обмеження → **DAC2**'
   zbih: 26\s+·\s+Обмеження\s+→
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/dac_channel.h
   cytata: 'DAC_GPIO26_CHANNEL      DAC_CHAN_1
 
@@ -284,7 +275,6 @@
   - 04ee97cb
 - nazva: 'T-A-049: 27 · ADC → ADC2_7'
   zbih: 27\s+·\s+ADC\s+→
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/adc_channel.h
   cytata: 'ADC2_GPIO27_CHANNEL     7
 
@@ -308,7 +298,6 @@
   - c7c1cbc2
 - nazva: 'T-A-088: 5 · Обмеження → ADC2'
   zbih: 5\s+·\s+Обмеження\s+→\s+ADC2
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/adc_channel.h
   cytata: 'ADC2_GPIO5_CHANNEL      0
 

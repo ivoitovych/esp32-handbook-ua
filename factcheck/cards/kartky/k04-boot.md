@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k04-boot.md`
 
-Одиниць твердження: **25**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **25**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-K04-001 sha:d392369e src:kartky/k04-boot.md:3 klas:E -->
+<!-- fc id:T-K04-001 sha:d392369e src:kartky/k04-boot.md:3 status:no-external-signal -->
 ### T-K04-001 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-K04-002 sha:8324cf6d src:kartky/k04-boot.md:3 klas:E -->
+<!-- fc id:T-K04-002 sha:8324cf6d src:kartky/k04-boot.md:3 status:no-external-signal -->
 ### T-K04-002 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-K04-003 sha:957a85b7 src:kartky/k04-boot.md:8 klas:E -->
+<!-- fc id:T-K04-003 sha:957a85b7 src:kartky/k04-boot.md:8 status:no-external-signal -->
 ### T-K04-003 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -75,7 +75,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-004 sha:3285d7ba src:kartky/k04-boot.md:9 klas:F -->
+<!-- fc id:T-K04-004 sha:3285d7ba src:kartky/k04-boot.md:9 status:unchecked -->
 ### T-K04-004 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -98,7 +98,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-005 sha:7fb043c1 src:kartky/k04-boot.md:12 klas:B -->
+<!-- fc id:T-K04-005 sha:7fb043c1 src:kartky/k04-boot.md:12 status:derived -->
 ### T-K04-005 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -137,7 +137,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-006 sha:0c221230 src:kartky/k04-boot.md:14 klas:B -->
+<!-- fc id:T-K04-006 sha:0c221230 src:kartky/k04-boot.md:14 status:derived -->
 ### T-K04-006 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -165,7 +165,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-007 sha:fcc462fe src:kartky/k04-boot.md:17 klas:A -->
+<!-- fc id:T-K04-007 sha:fcc462fe src:kartky/k04-boot.md:17 status:verbatim -->
 ### T-K04-007 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -200,7 +200,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-008 sha:a007b94b src:kartky/k04-boot.md:18 klas:B -->
+<!-- fc id:T-K04-008 sha:a007b94b src:kartky/k04-boot.md:18 status:derived -->
 ### T-K04-008 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -241,7 +241,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-009 sha:055ab3de src:kartky/k04-boot.md:21 klas:B -->
+<!-- fc id:T-K04-009 sha:055ab3de src:kartky/k04-boot.md:21 status:derived -->
 ### T-K04-009 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -281,7 +281,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-010 sha:d5503eea src:kartky/k04-boot.md:22 klas:F -->
+<!-- fc id:T-K04-010 sha:d5503eea src:kartky/k04-boot.md:22 status:unchecked -->
 ### T-K04-010 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -303,7 +303,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-011 sha:f44d03d0 src:kartky/k04-boot.md:26 klas:B -->
+<!-- fc id:T-K04-011 sha:f44d03d0 src:kartky/k04-boot.md:26 status:derived -->
 ### T-K04-011 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -343,7 +343,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-012 sha:620a701f src:kartky/k04-boot.md:29 klas:F -->
+<!-- fc id:T-K04-012 sha:620a701f src:kartky/k04-boot.md:29 status:unchecked -->
 ### T-K04-012 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -367,7 +367,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-013 sha:1b439fce src:kartky/k04-boot.md:30 klas:F -->
+<!-- fc id:T-K04-013 sha:1b439fce src:kartky/k04-boot.md:30 status:unchecked -->
 ### T-K04-013 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -391,7 +391,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-014 sha:83417cd4 src:kartky/k04-boot.md:34 klas:F -->
+<!-- fc id:T-K04-014 sha:83417cd4 src:kartky/k04-boot.md:34 status:unchecked -->
 ### T-K04-014 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -414,7 +414,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-015 sha:b14933d1 src:kartky/k04-boot.md:35 klas:E -->
+<!-- fc id:T-K04-015 sha:b14933d1 src:kartky/k04-boot.md:35 status:no-external-signal -->
 ### T-K04-015 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -437,7 +437,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-016 sha:689b217f src:kartky/k04-boot.md:40 klas:A -->
+<!-- fc id:T-K04-016 sha:689b217f src:kartky/k04-boot.md:40 status:verbatim -->
 ### T-K04-016 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -478,7 +478,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-017 sha:e439e3fc src:kartky/k04-boot.md:41 klas:E -->
+<!-- fc id:T-K04-017 sha:e439e3fc src:kartky/k04-boot.md:41 status:no-external-signal -->
 ### T-K04-017 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -500,7 +500,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-018 sha:73f5ce2b src:kartky/k04-boot.md:43 klas:A -->
+<!-- fc id:T-K04-018 sha:73f5ce2b src:kartky/k04-boot.md:43 status:verbatim -->
 ### T-K04-018 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -543,7 +543,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-019 sha:af13e196 src:kartky/k04-boot.md:50 klas:B -->
+<!-- fc id:T-K04-019 sha:af13e196 src:kartky/k04-boot.md:50 status:derived -->
 ### T-K04-019 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -584,7 +584,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-020 sha:f2b0c52e src:kartky/k04-boot.md:55 klas:F -->
+<!-- fc id:T-K04-020 sha:f2b0c52e src:kartky/k04-boot.md:55 status:unchecked -->
 ### T-K04-020 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -609,7 +609,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-021 sha:3535f9d1 src:kartky/k04-boot.md:56 klas:E -->
+<!-- fc id:T-K04-021 sha:3535f9d1 src:kartky/k04-boot.md:56 status:no-external-signal -->
 ### T-K04-021 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -634,7 +634,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-022 sha:c8450f0a src:kartky/k04-boot.md:62 klas:F -->
+<!-- fc id:T-K04-022 sha:c8450f0a src:kartky/k04-boot.md:62 status:unchecked -->
 ### T-K04-022 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -659,7 +659,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-023 sha:93250c1f src:kartky/k04-boot.md:62 klas:F -->
+<!-- fc id:T-K04-023 sha:93250c1f src:kartky/k04-boot.md:62 status:unchecked -->
 ### T-K04-023 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -684,7 +684,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-024 sha:58a20250 src:kartky/k04-boot.md:63 klas:F -->
+<!-- fc id:T-K04-024 sha:58a20250 src:kartky/k04-boot.md:63 status:unchecked -->
 ### T-K04-024 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**
@@ -709,7 +709,7 @@ strapping-піна.
 
 ---
 
-<!-- fc id:T-K04-025 sha:95310ffc src:kartky/k04-boot.md:64 klas:A -->
+<!-- fc id:T-K04-025 sha:95310ffc src:kartky/k04-boot.md:64 status:verbatim -->
 ### T-K04-025 · proza · `kartky/k04-boot.md`
 
 **Твердження, коротко**

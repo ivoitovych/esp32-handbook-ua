@@ -1,6 +1,5 @@
 - nazva: Свинцевий припій плавиться нижче за безсвинцевий
   zbih: Припій зі свинцем \(Sn63Pb37 або Sn60Pb40\)
-  klas: A
   dzherelo: Kester (ITW), Alloy Temperature Chart — https://www.kester.com/Portals/0/Documents/Knowledge%20Base/Alloy%20Temperature%20Chart.pdf
   cytata: 'Sn63Pb37 183 361 X X X X
 
@@ -46,7 +45,6 @@
   - 941dd602
 - nazva: Безсвинцевий потребує на 30-40 °C більше
   zbih: Безсвинцевий — на 30–40 градусів більше\.
-  klas: B
   dzherelo: 'Kester (ITW), Alloy Temperature Chart — рядки `Sn63Pb37` і сімейство `LEAD-FREE` (кеш: source-cache/kester-alloys.pdf)'
   cytata: 'Sn63Pb37             183
 

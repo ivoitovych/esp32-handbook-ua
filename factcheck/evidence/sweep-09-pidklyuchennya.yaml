@@ -65,7 +65,6 @@
 
 - nazva: 'T-09-007: Тому між ними ставлять **міст USB-UART**: окремий чип,'
   zbih: Тому\s+між\s+ними\s+ставлять
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
   cytata: 'Below is the list of USB to serial converter chips installed on most of the {IDF_TARGET_NAME}
     boards produced by Espressif
@@ -89,7 +88,6 @@
   note: Document confirms existence of USB-to-UART bridge chips as separate converters
 - nazva: 'T-09-037: **Linux у більшості випадків не потребує нічого.** Драйвери'
   zbih: \*\*Linux\s+у\s+більшості\s+випадків
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
   cytata: 'Under normal circumstances, the drivers should be bundled with an operating system
     and automatically installed upon connecting the board to the PC.
@@ -115,7 +113,6 @@
   - 09e91692
 - nazva: 'T-09-042: Мосту не потрібно взагалі: чип під''єднується до комп''ютера'
   zbih: 'Мосту\s+не\s+потрібно\s+взагалі:'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
   cytata: 'The {IDF_TARGET_NAME} supports the USB peripheral. In this case, the USB-to-UART
     bridge is not needed and the device can be flashed directly.
@@ -141,7 +138,6 @@
   - 95e4b03d
 - nazva: 'T-09-045: **Драйвер не потрібен.** Пристрій відповідає стандарту USB CDC,'
   zbih: \*\*Драйвер\s+не\s+потрібен\.\*\*\s+Пристрій
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
   cytata: 'The {IDF_TARGET_NAME} supports only *USB CDC and JTAG*.
 
@@ -163,7 +159,6 @@
   note: Document confirms USB CDC standard support built into devices
 - nazva: 'T-09-070: У деяких дистрибутивах група називається `uucp` замість `dialout`'
   zbih: У\s+деяких\s+дистрибутивах\s+група
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
   cytata: 'on Arch Linux this is done by adding the user to ``uucp`` group
 
@@ -187,7 +182,6 @@
   - 59e49521
 - nazva: 'T-09-069: Без цього нова група не застосується до поточної'
   zbih: Без\s+цього\s+нова\s+група
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
   cytata: 'Make sure you re-login to enable read and write permissions for the serial port.
 
@@ -211,7 +205,6 @@
   - 1a6e4d7e
 - nazva: 'T-09-077: Порт відкриває **лише один процес одночасно**.'
   zbih: Порт\s+відкриває\s+\*\*лише\s+один
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
   cytata: 'Close the serial terminal after verification that communication is working. If
     you keep the terminal session open, the serial port will be inaccessible for uploading
@@ -241,7 +234,6 @@
   - daf30df3
 - nazva: 'T-09-087: Кабель, роз''єм або живлення плати.'
   zbih: Кабель,\s+роз'єм\s+або\s+живлення
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
   cytata: 'If there is no log output, check
 
@@ -273,7 +265,6 @@
   - 9ecc9948
 - nazva: 'T-09-010: Звідси випливає головне: **порт у системі створює міст,'
   zbih: Звідси\s+випливає\s+головне:\s+\*\*порт
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
   cytata: 'For boards with an installed USB-to-UART bridge, the connection between the personal
     computer and the bridge is USB and between the bridge and {IDF_TARGET_NAME} is UART.

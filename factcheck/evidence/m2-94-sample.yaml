@@ -1,6 +1,5 @@
 - nazva: 'T-59-114: 16 КБ з купи замість локального масиву'
   zbih: 16\s+КБ\s+беруться\s+з\s+купи
-  klas: E
   dzherelo: немає зовнішнього джерела
   sposib: перевірка в контексті manual/59-proj-monitor.md:366
   notatka: 'Це твердження про загальну практику програмування: стек має обмежений розмір, велику пам''ять
@@ -24,7 +23,6 @@
   - '99584848'
 - nazva: 'T-D-040: 0xd = RTCWDT_CPU_RESET, що робити → розділ 32'
   zbih: '`0xd`.*розділ\s+32'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
   sposib: curl raw.githubusercontent.com, grep, 2026-08-26
@@ -42,7 +40,6 @@
   - cc29d27d
 - nazva: 'T-41-044: Для BLE беріть NimBLE, C3 має 400 КБ'
   zbih: Для BLE-проєкту\s+беріть\s+NimBLE|C3\s+з\s+його\s+400\s+КБ
-  klas: C
   dzherelo: ESP32-C3 Technical Specifications, NimBLE vs Bluedroid stack size comparison (standard Espressif
     documentation)
   shukaty: ESP32-C3 памяти (SRAM), NimBLE vs Bluedroid размер стека
@@ -60,7 +57,6 @@
   look_for: ESP32-C3 памяти (SRAM), NimBLE vs Bluedroid размер стека
 - nazva: 'T-60-123: Запис на картку займає 400 мс'
   zbih: Запис.*картку.*400.*мс
-  klas: E
   dzherelo: немає зовнішнього джерела
   sposib: перевірка табличних даних у розділі 60, 2026-08-27
   notatka: 'Це власне вимірювання автора в проекті logger (manual/60-proj-loger.md:316). Таблиця показує
@@ -84,7 +80,6 @@
   - 772fb917
 - nazva: 'T-D-043: 0xe = EXT_CPU_RESET, норма'
   zbih: '`0xe`\s+·\s+Що\s+сталося\s+→\s+APP\s+CPU\s+скинутий\s+PRO\s+CPU'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
   sposib: curl raw.githubusercontent.com, grep, 2026-08-26
@@ -104,7 +99,6 @@
   - 111c70cc
 - nazva: 'T-16-034: У наступному поколінні бутлоадер став на `0x0`'
   zbih: У\s+наступному\s+поколінні|бутлоадер\s+став\s+на\s+`0x0`
-  klas: A
   dzherelo: 'ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst,
     рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: source-cache/8af5fd4e-boot-mode-selection.rst,
     source-cache/a4dbe955-bootloader.rst)'
@@ -140,7 +134,6 @@
   - 04eedad6
 - nazva: 'T-K08-044: WiFi не під''єднується — пароль, канал 12–13 або 5 ГГц'
   zbih: Wi-Fi\s+бачить\s+мережу.*не\s+під'єднується|пароль.*канал\s+12.*13.*5\s+ГГц
-  klas: C
   dzherelo: ESP32 Wi-Fi Driver, ESP-IDF Programming Guide — розділ про країнні коди й канали 12–13; цитати
     не дістав
   cytata: '| 14 | Wi-Fi бачить мережу, не під''єднується | пароль, канал 12–13 або 5 ГГц | звірити SSID,
@@ -169,7 +162,6 @@
   - 50a075b5
 - nazva: 'T-D-041: 0xe = EXT_CPU_RESET (Назва)'
   zbih: '`0xe`.*EXT_CPU_RESET'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
   sposib: curl raw.githubusercontent.com, grep, 2026-08-27
@@ -187,7 +179,6 @@
   - 5964cff8
 - nazva: 'T-Z-117: GPIO26 page references'
   zbih: GPIO26\s+—\s+74–75.*206–207.*349–350
-  klas: E
   dzherelo: немає зовнішнього джерела
   sposib: перевірка індексу в dodatky/z-pokazhchyk.md:417, 2026-08-27
   notatka: Це посилання на сторінки книги, де згадується GPIO26. Не є зовнішнім джерелом — це внутрішній
@@ -203,7 +194,6 @@
   - 20f964a5
 - nazva: 'T-33-054: Період при 50 Гц — 20 мс, формула duty'
   zbih: Період\s+при\s+50\s+Гц\s+—\s+20\s+мс|duty\s+рахується\s+як\s+2\^розрядність
-  klas: D
   dzherelo: 'Обчислення: період = 1 / частота'
   cytata: ''
   sposib: 1 / 50 Гц = 0.02 с = 20 мс, 2026-08-27
@@ -226,7 +216,6 @@
   calculation: період = 1 / частота;  1 / 50 Гц = 0.02 с = 20 мс
 - nazva: 'T-Z-113: GPIO2 page references'
   zbih: GPIO2\s+—\s+13–14.*17.*28.*71–72
-  klas: E
   dzherelo: немає зовнішнього джерела
   sposib: перевірка індексу в dodatky/z-pokazhchyk.md:405, 2026-08-27
   notatka: Це посилання на сторінки книги, де згадується GPIO2. Не є зовнішнім джерелом — це внутрішній
@@ -242,7 +231,6 @@
   - 6c971eec
 - nazva: 'T-C-103: bootloader address table — S3, C3, C6, H2 at 0x0'
   zbih: bootloader.*`0x0`|S3.*C3.*C6.*H2.*`0x0`
-  klas: A
   dzherelo: 'ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst,
     рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: source-cache/8af5fd4e-boot-mode-selection.rst,
     source-cache/a4dbe955-bootloader.rst)'

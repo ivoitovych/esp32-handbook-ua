@@ -68,7 +68,6 @@
 
 - nazva: ADC2 конфліктує з Wi-Fi на classic, S2 і S3 — не лише на classic
   zbih: ADC2 не працює|ADC2 недоступний|Використано ADC2 при|недоступність ADC2
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
   cytata: ':esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read`
     has
@@ -100,7 +99,6 @@
     33 (двічі), 45 і картка К8.'
 - nazva: На C3 ADC2 непридатний через апаратну ваду, а не через Wi-Fi
   zbih: ADC2 на C3 непридатний|разовий режим не підтримується
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
   cytata: ':esp32c3: - ADC2 oneshot mode is no longer supported, due to hardware limitations.
 
@@ -141,7 +139,6 @@
   - 9b2d4e43
 - nazva: Матриця GPIO обмежує SPI до 40 МГц проти 80 МГц на IOMUX
   zbih: матриц\w+ GPIO.{0,120}(вдвічі|затримк)|IO_MUX|рідних пінах
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/spi_master.rst
   cytata: "- Increases the input delay of the MISO signal, which makes MISO setup time violations\
     \ more likely.\n  If SPI needs to operate at high speeds, use dedicated IO_MUX pins.\n\
@@ -168,7 +165,6 @@
 - nazva: TWAI сумісний з ISO 11898-1 і потребує зовнішнього трансивера
   zbih: TWAI.{0,80}(Two-Wire|назва інша)|не має трансивера|[Тт]рансивер обов|Трансивер має
     відповідати
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
   cytata: 'It is compatible with the frame structure defined in the ISO 11898-1 standard and
     supports
@@ -210,7 +206,6 @@
   - 9de47991
 - nazva: CAN FD не підтримується жодним із сімейств книги
   zbih: CAN FD жодне з сімейств|SOC_TWAI_SUPPORT_FD
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
   cytata: 'The TWAI controllers on the {IDF_TARGET_NAME} are **not compatible with FD format
     frames
@@ -248,7 +243,6 @@
   - b6daa495
 - nazva: ESP32 у ролі веденого I²C не вміє розтягувати SCL
   zbih: сам ESP32 у ролі веденого|розтягувати `SCL` не вміє
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'The ESP32 I2C controller does not support clock stretching when operating as a
     slave.
@@ -289,7 +283,6 @@
   - a7eceb89
 - nazva: Механізм відкату OTA і його стани
   zbih: ESP_OTA_IMG_PENDING_VERIFY|esp_ota_mark_app_valid_cancel_rollback|[Aa]pp rollback\s+support
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/ota.rst
   cytata: "* The application works fine, :cpp:func:`esp_ota_mark_app_valid_cancel_rollback`\
     \ marks the\n  running application with the state ``ESP_OTA_IMG_VALID``.\n* The application\
@@ -317,7 +310,6 @@
     без виклику підтвердження призводить до відкату.'
 - nazva: Вміст RTC-пам'яті переживає deep sleep
   zbih: RTC_DATA_ATTR|переживає сон тільки RTC|RTC RAM
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
   cytata: 'If some variables in the program are placed into RTC SLOW memory (for example,
     using
@@ -348,7 +340,6 @@
     йдуть туди ж.'
 - nazva: Частота і розрядність LEDC пов'язані обернено
   zbih: Частота і розрядність пов.язані|що вища частота, то менше розрядів
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/ledc.rst
   cytata: 'The frequency and the duty resolution are interdependent. The higher the PWM frequency,
 

@@ -58,7 +58,6 @@
 
 - nazva: DHT11 - дешевий датчик температури й вологості
   zbih: \*\*DHT11 і DHT22\.\*\*.*Дешеві, поширені
-  klas: E
   dzherelo: null
   cytata: null
   sposib: null
@@ -76,7 +75,6 @@
   - ab6269d6
 - nazva: DHT11 — роздільність вологості 1%RH
   zbih: DHT11.*гірший:.*роздільність вологості цілими відсотками
-  klas: A
   dzherelo: Aosong DHT11 Digital-output Relative Humidity & Temperature Sensor, розділ про
     технічні параметри (分辨率)
   cytata: 'DHT11 Technical Specifications:
@@ -112,7 +110,6 @@
   - f2b3a50e
 - nazva: HC-SR04 — ультразвуковий далекомір, 2–400 см
   zbih: \*\*HC-SR04\*\*.*ультразвуковий далекомір, 2–400 см
-  klas: A
   dzherelo: Elecfreaks, Ultrasonic Ranging Module HC-SR04, Product Specifications
   cytata: 'Ultrasonic Ranging Module HC-SR04 provides 2cm - 400cm non-contact
 
@@ -154,7 +151,6 @@
     стандартний модуль для ESP32 проектів.
 - nazva: HC-SR04 — 5 В на виводі ECHO
   zbih: HC-SR04 живиться від 5 В і видає.*5 В на виводі.*ECHO
-  klas: A
   dzherelo: Elecfreaks, Ultrasonic Ranging Module HC-SR04, Wire Connection Diagram та Electric
     Parameters
   cytata: 'Wire connecting direct as follows:
@@ -202,7 +198,6 @@
     В, то echo видає 5 В логічної одиниці. Для ESP32 (3.3 В) потребує дільника напруги.
 - nazva: HC-SR04 — дільник напруги 10кОм + 20кОм
   zbih: Потрібен дільник.*10 кОм.*20 кОм
-  klas: B
   dzherelo: https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
   cytata: Working Voltage
   sposib: 'Даташит HC-SR04 з кешу, 2026-08-28: «Working Voltage DC 5 V», «Echo Output Signal
@@ -246,7 +241,6 @@
     Межа названа: паспорт не рекомендує САМЕ 10+20 кОм. Він дає 5 В, решту дає розрахунок.'
 - nazva: HC-SR04 — 5 В на ECHO обов'язковий дільник
   zbih: HC-SR04 видає 5 В на.*ECHO.*дільник обов'язковий
-  klas: A
   dzherelo: Elecfreaks, Ultrasonic Ranging Module HC-SR04
   cytata: 'Working Voltage: DC 5V
 
@@ -270,7 +264,6 @@
     дільника.
 - nazva: INA219 — вимірювання струму й напруги по I²C
   zbih: \*\*INA219, INA226\*\*.*вимірювання.*по I²C.*вбудованим шунтом
-  klas: A
   dzherelo: Texas Instruments, INA219 Zerø-Drift, Bidirectional Current/Power Monitor With
     I2C Interface, SBOS448G, розділ Features та Description
   cytata: 'INA219 Zerø-Drift, Bidirectional Current/Power Monitor With I2C Interface
@@ -318,7 +311,6 @@
     I²C інтерфейсом. Це підходить для вимірювання живлення в ESP32 проектах.
 - nazva: Калібрування датчиків за відомою точкою
   zbih: \*\*Калібрувати за відомим\.\*\*.*Порівняти.*повіреним приладом
-  klas: E
   dzherelo: null
   cytata: null
   sposib: null
@@ -336,7 +328,6 @@
   - 267273b7
 - nazva: GPS модулі NMEA — UART, текстові речення
   zbih: Модулі.*NEO-6M, NEO-8M.*UART.*самі надсилають.*NMEA
-  klas: C
   dzherelo: Datasheet GPS модулів серії NEO (Ublox)
   cytata: null
   sposib: Документ не дістався. Потребує пошуку у даташиті u-blox NEO-6M або NEO-8M.

@@ -148,7 +148,6 @@
 
 - nazva: 'Дешево і масово: C3 з 400 КБ SRAM для простих задач'
   zbih: Дешево і масово.*ціна і розмір, якщо 400 КБ вистачає
-  klas: C
   dzherelo: ESP32-C3 Datasheet — розмір SRAM у специфікаціях
   cytata: null
   sposib: Пошук у кеші source-cache/, datasheet ESP32-C3 не знайдений
@@ -182,7 +181,6 @@
     '
 - nazva: Код 0x10 означає RTCWDT_RTC_RESET (RTC watchdog скинув усе)
   zbih: \\| `0x10` \\|\\| RTCWDT_RTC_RESET \\|\\| RTC watchdog скинув усе
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
     — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
   cytata: 'rst:0x10 (RTCWDT_RTC_RESET)
@@ -232,7 +230,6 @@
     '
 - nazva: Час пробудження й ініціалізації в розрахунку — 300 мілісекунд
   zbih: Пробудження\s+й\s+ініціалізація\s+·\s+Час\s+→\s+300\s+мс
-  klas: D
   dzherelo: null
   cytata: null
   sposib: Розрахунок, наведений у 60-proj-loger.md
@@ -269,7 +266,6 @@
   calculation: сума етапів пробудження з таблиці розрахунку проєкту логера = 300 мс
 - nazva: DS18B20 має похибку ±0.5°C у діапазоні −10…+85°C та ±2°C поза ним
   zbih: Паспортна\s+похибка\s+DS18B20
-  klas: A
   dzherelo: 'Maxim Integrated, DS18B20 Programmable Resolution 1-Wire Digital Thermometer,
     REV: 042208 — розділ DC ELECTRICAL CHARACTERISTICS, рядок Thermometer Error tERR (кеш:
     source-cache/ds18b20.pdf)'
@@ -316,7 +312,6 @@
     2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
 - nazva: 'Модуль без стабілізатора: логічні рівні 3.3 В, під''єднувати прямо'
   zbih: Немає\s+стабілізатора\s+·\s+Живлення\s+→\s+3\.3\s+В|Немає\s+стабілізатора\s+·\s+Живлення\s+→\s+3\.3\s+В|Немає\s+стабілізатора\s+·\s+Сигнали\s+→\s+3\.3\s+В\s+—\s+прямо|Немає\s+стабілізатора\s+·\s+Логічні\s+рівні\s+на\s+виводах\s+→\s+3\.3\s+В\s+—\s+під'єднувати\s+прямо
-  klas: L
   dzherelo: null
   cytata: null
   sposib: Загальна рекомендація практики електроніки для модулів
@@ -378,7 +373,6 @@
     жоден даташит його не адресує.'
 - nazva: GPIO32 розраховується у розділах 53, 74–75, 182, 389
   zbih: GPIO32\s+—\s+53,\s+74–75,\s+182,\s+389
-  klas: E
   dzherelo: null
   cytata: null
   sposib: Перевірка покажчика у додатку z-pokazhchyk.md
@@ -406,7 +400,6 @@
   - 6efa65ed
 - nazva: Заряд на цикл передачі Wi-Fi становить близько 500 мА·с
   zbih: Заряд на цикл.*~500\s+мА·с
-  klas: C
   dzherelo: Специфікація Wi-Fi модулю ESP32 та вимірювання споживання
   cytata: null
   sposib: Таблиця порівняння Wi-Fi vs ESP-NOW у 61-proj-kanal.md
@@ -439,7 +432,6 @@
 - nazva: Трансивер CAN повинен відповідати логіці 3.3 В, або потрібен конвертер рівнів на
     RX
   zbih: або трансивер\s+на\s+3\.3\s+В,\s+або\s+конвертер\s+рівнів.*RX
-  klas: A
   dzherelo: 'Специфікації трансиверів CAN: SN65HVD230 (3.3В), TJA1050 (5В), MCP2551 (5В) та
     рекомендації щодо логіки сумісності з ESP32'
   cytata: 'Трансивер має відповідати логіці **3.3 В**. SN65HVD230 живиться від
@@ -508,7 +500,6 @@
   - 3874c899
 - nazva: Код 0x04 в таблиці strapping пінів C3 означає GPIO8
   zbih: '`0x04`\s+·\s+\[\[C3\]\]\s+→\s+`GPIO8`'
-  klas: A
   dzherelo: ESP32-C3 Technical Reference Manual — таблиця strapping пінів (розділ Boot Mode
     Selection)
   cytata: '| Біт | [[classic]] | [[S3]] | [[C3]] |
@@ -560,7 +551,6 @@
   - 90b801d8
 - nazva: Код 0x08 в таблиці strapping пінів S3 означає GPIO0
   zbih: '`0x08`\s+·\s+\[\[S3\]\]\s+→\s+`GPIO0`'
-  klas: A
   dzherelo: ESP32-S3 Technical Reference Manual — таблиця strapping пінів (розділ Boot Mode
     Selection)
   cytata: '| Біт | [[classic]] | [[S3]] | [[C3]] |
@@ -608,7 +598,6 @@
   - 4c9431b7
 - nazva: 'WROVER за схемою WROOM: GPIO16 вже нічий на WROVER через PSRAM'
   zbih: Взяли.*WROVER.*за схемою.*WROOM.*GPIO16.*нічий
-  klas: B
   dzherelo: Документація модулів ESP32-WROOM-32 та ESP32-WROVER та інформація про розпінування
     PSRAM у модулях
   cytata: 'Різниця між шісткою й цією парою — у слові «usually». Піни 6–11

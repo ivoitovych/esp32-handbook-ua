@@ -74,7 +74,6 @@
 - nazva: Зведена таблиця розділу 02 — ядра, радіо, PSRAM, USB
   zbih: Ядер \||BT Classic|802\.15\.4|SOC_BT_CLASSIC|Wi-Fi 6|Bluetooth Classic є лише в ESP32
     classic|ESP32-S2 не має Bluetooth|PSRAM підтримують лише classic
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
   cytata: "esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1\nesp32s2:\
     \ CPU_CORES_NUM 1   WIFI 1  (BT/BLE відсутні)          SPIRAM 1  USB_OTG 1\nesp32s3: CPU_CORES_NUM\
@@ -145,7 +144,6 @@
 - nazva: Обсяг SRAM у таблиці — datasheet, а не адресні вікна
   zbih: Обсяг SRAM у таблиці — це фізична пам.ять чипа|328 КБ|вікно даних — близько 480|обчислені
     з меж адресних вікон|вікно DRAM|вікна даних і інструкцій збігаються
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc.h
   cytata: 'esp32:   DRAM 0x3FFAE000…0x40000000 (328 КБ)  IRAM 0x40080000…0x400AA000 (168 КБ)
 
@@ -223,7 +221,6 @@
   - e1612c34
 - nazva: Кількість блоків периферії за сімействами
   zbih: SPI, усього|SPI, вільних|TWAI \(CAN\) \|| I²S \| 2|SOC_UART_HP_NUM|Рядок «SPI, вільних»
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
   cytata: 'прапорець                32   s2   s3   c3   c6   h2
 

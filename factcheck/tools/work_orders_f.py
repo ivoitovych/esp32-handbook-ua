@@ -89,7 +89,7 @@ SHAPKA_BLOKY = ['ORIENTATION', 'VERBATIM', 'HONEST-MISS', 'NETWORK', 'STUB', 'NO
 
 
 RE_KONTEKST = re.compile(
-    r"<!-- fc id:(?P<id>\S+) sha:\S+ src:\S+ klas:\S+ -->\n"
+    r"<!-- fc id:(?P<id>\S+) sha:\S+ src:\S+ status:\S+ -->\n"
     r"### [^\n]*\n\n\*\*[^*\n]+\*\*\n\n(?P<tverd>(?:> [^\n]*\n)+)"
     r"(?:.*?\*\*Контекст\*\*\n\n(?P<og>`{3,})\n(?P<kontekst>.*?)\n(?P=og)\n)?",
     re.S)

@@ -1,6 +1,5 @@
 - nazva: 'SCL пін розпиновки I2C: GPIO22 на ESP32 classic та GPIO9 на ESP32-S3'
   zbih: 'SCL\s+──┬────────\s+SCL\s+classic: GPIO22\s+S3: GPIO9'
-  klas: C
   dzherelo: GPIO матриця в esp_idf, I2C драйвер
   shukaty: Таблиця розпиновки I2C у документації ESP32 та ESP32-S3, або i2c_master.c
   notatka: Твердження про жорстку розпиновку пін SCL, але в esp_idf GPIO матриця дозволяє гнучкий вибір
@@ -16,7 +15,6 @@
   - ea4f9ec1
 - nazva: Покажчик до GPIO8 в розділі z-pokazhchyk
   zbih: GPIO8 — 13–14, 24, 72–73, 118, 205, 326, 335, 364–365, 380
-  klas: E
   notatka: Це внутрішній покажчик переліку сторінок в самій книзі. Вичислюється механічно при компіляції
     книги, не має зовнішнього джерела.
   title: Покажчик до GPIO8 в розділі z-pokazhchyk
@@ -28,7 +26,6 @@
   - 2333b1a1
 - nazva: 'Код помилки 0xc: програмне скидання ядра'
   zbih: '`0xc` · Що сталося → програмне скидання ядра'
-  klas: C
   dzherelo: CPU exception codes / panic handler у esp-idf
   shukaty: Таблиця Guru Meditation Error кодів у fatal-errors.rst
   notatka: Код 0xc потребує перевірки в контексті CPU exception codes, не програмних кодів помилок ESP_ERR_*.
@@ -45,7 +42,6 @@
 - nazva: Arduino IDE часто копіює код під AVR без адаптування до ESP32
   zbih: Багато написано під AVR і перенесено формально:\s+блокувальні затримки в мілісекунди, робота з
     пам'яттю в розрахунку на 2 КБ RAM, ігнорування
-  klas: C
   dzherelo: Arduino документація та ESP-IDF Programming Guide
   shukaty: Документація про портування коду AVR на ESP32, обмеження пам'яті AVR
   notatka: 'Твердження про типові проблеми портування Arduino коду з AVR. Логіка витримується: мікроконтролери
@@ -64,7 +60,6 @@
   - 2075225d
 - nazva: Покажчик до GPIO3 в розділі z-pokazhchyk
   zbih: GPIO3 — 14, 72, 75, 335, 337
-  klas: E
   notatka: Це внутрішній покажчик переліку сторінок в самій книзі. Вичислюється механічно при компіляції
     книги, не має зовнішнього джерела.
   title: Покажчик до GPIO3 в розділі z-pokazhchyk
@@ -76,7 +71,6 @@
   - 8068db5c
 - nazva: 'SDA пін розпиновки I2C: GPIO21 на ESP32 classic та GPIO8 на ESP32-S3'
   zbih: 'SDA\s+──┬────────\s+SDA\s+classic: GPIO21\s+S3: GPIO8'
-  klas: C
   dzherelo: GPIO матриця в esp_idf, I2C драйвер
   shukaty: Таблиця розпиновки I2C у документації ESP32 та ESP32-S3
   notatka: Аналогічно SCL (T-59-042), твердження про розпиновку I2C. Потребує перевірки у esp_idf документації.
@@ -90,7 +84,6 @@
   - 0979f9d3
 - nazva: GPIO12 утримується високим в схемі ESP32
   zbih: Достатньо зняти те, що тримає `GPIO12` високим\.
-  klas: C
   dzherelo: Електрична схема ESP32 або технічна документація про pull-up резистори
   shukaty: GPIO pull-up/pull-down конфігурація для GPIO12 в datasheet
   notatka: Твердження про фізичний стан GPIO12 з pull-up резистором. Потребує перевірки у офіційному datagsheet
@@ -106,7 +99,6 @@
   - 0eefa260
 - nazva: Таблиця GPIO0 при скиданні розпиновки та ROM адреси
   zbih: \|\s*`GPIO0` при скиданні\s*\|\s*Куди піде ROM\s*\|
-  klas: E
   notatka: Це заголовок таблиці з самої книги, яка описує залежність ROM адреси від стану GPIO0 при скиданні.
     Таблиця з книги не є зовнішнім джерелом.
   title: Таблиця GPIO0 при скиданні розпиновки та ROM адреси
@@ -119,7 +111,6 @@
 - nazva: ESP32 і його варіанти не підтримують 5 ГГц Wi-Fi, крім ESP32-C5
   zbih: \*\*ESP32 не бачить мережі 5 ГГц\.\*\*\s+Уся лінійка, крім ESP32-C5, працює тільки в діапазоні
     2\.4 ГГц
-  klas: B
   dzherelo: ESP32 Series Datasheet v5.3 (2.4 GHz Wi-Fi only)
   cytata: 2.4 GHz Wi-Fi + Bluetooth® + Bluetooth LE SoC — ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth
     combo chip
@@ -140,7 +131,6 @@
   - 6a488eff
 - nazva: GPIO0 — ключовий пін для вибору режиму завантаження на ESP32 classic та S3
   zbih: 'Ключовий — `GPIO0` \[\[classic\]\] \[\[S3\]\]:'
-  klas: C
   dzherelo: ESP32 та ESP32-S3 Datasheet, розділ про boot mode selection
   shukaty: GPIO pin functions, boot mode control
   notatka: Твердження про GPIO0 як ключовий контрольний пін для boot режимів. Це стандартна функція ESP32
@@ -156,7 +146,6 @@
   - bd61d296
 - nazva: 'Суфікс в назві ESP32 плати кодує обсяг флеш та PSRAM: N8, N16R8 і т.д.'
   zbih: 'Суфікс кодує пам''ять: `N8` — 8 МБ флешу; `N16R8` — 16 МБ флешу і 8 МБ PSRAM\.'
-  klas: C
   dzherelo: Офіційна номенклатура Espressif для ESP32 вариантів
   shukaty: Документація по порядку номерів та кодування суфіксів ESP32 модулів
   notatka: Твердження про конвенцію назив ESP32 варіантів. Потребує перевірки у офіційних документах Espressif
@@ -172,7 +161,6 @@
   - ec873cf2
 - nazva: На ESP32-C3 з 400 КБ доступної пам'яті MicroPython інтерпретатор залишає мало місця
   zbih: 'Пам''ять з''їдається інтерпретатором: на C3 з 400 КБ місця лишається небагато\.'
-  klas: C
   dzherelo: MicroPython офіційна документація та ESP32-C3 Datasheet
   shukaty: Розподіл пам'яті MicroPython firmware на ESP32-C3
   notatka: Твердження про розподіл пам'яті при запуску MicroPython на C3 (256 КБ SRAM). Потребує перевірки

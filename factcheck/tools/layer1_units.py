@@ -64,7 +64,7 @@ from repo import ROOT  # noqa: E402  (root is found, not counted)
 # Тепер це дані: `factcheck/book.yaml`.
 GRUPY = config.groups()
 RE_ZAH = re.compile(
-    r"<!-- fc id:(\S+) sha:(\S+) src:(\S+?):(\d+) klas:(\S+) -->\n"
+    r"<!-- fc id:(\S+) sha:(\S+) src:(\S+?):(\d+) status:(\S+) -->\n"
     r"### \S+ · (\S+) · [^\n]*\n\n\*\*Книга каже, дослівно:\*\*\n\n"
     r"((?:> [^\n]*\n)+)")
 

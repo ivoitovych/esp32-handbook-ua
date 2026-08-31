@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/04-peryferiya.md`
 
-Одиниць твердження: **152**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **152**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-04-001 sha:cc72d811 src:manual/04-peryferiya.md:3 klas:F -->
+<!-- fc id:T-04-001 sha:cc72d811 src:manual/04-peryferiya.md:3 status:unchecked -->
 ### T-04-001 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-04-002 sha:0212d88c src:manual/04-peryferiya.md:5 klas:E -->
+<!-- fc id:T-04-002 sha:0212d88c src:manual/04-peryferiya.md:5 status:no-external-signal -->
 ### T-04-002 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-04-003 sha:8394fb3e src:manual/04-peryferiya.md:7 klas:E -->
+<!-- fc id:T-04-003 sha:8394fb3e src:manual/04-peryferiya.md:7 status:no-external-signal -->
 ### T-04-003 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -76,7 +76,7 @@
 
 ---
 
-<!-- fc id:T-04-004 sha:3dda7bf1 src:manual/04-peryferiya.md:7 klas:E -->
+<!-- fc id:T-04-004 sha:3dda7bf1 src:manual/04-peryferiya.md:7 status:no-external-signal -->
 ### T-04-004 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -98,7 +98,7 @@
 
 ---
 
-<!-- fc id:T-04-005 sha:a244f03b src:manual/04-peryferiya.md:12 klas:F -->
+<!-- fc id:T-04-005 sha:a244f03b src:manual/04-peryferiya.md:12 status:unchecked -->
 ### T-04-005 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -120,7 +120,7 @@
 
 ---
 
-<!-- fc id:T-04-006 sha:20e4ef7a src:manual/04-peryferiya.md:15 klas:F -->
+<!-- fc id:T-04-006 sha:20e4ef7a src:manual/04-peryferiya.md:15 status:unchecked -->
 ### T-04-006 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -145,7 +145,7 @@
 
 ---
 
-<!-- fc id:T-04-007 sha:2c810af4 src:manual/04-peryferiya.md:16 klas:E -->
+<!-- fc id:T-04-007 sha:2c810af4 src:manual/04-peryferiya.md:16 status:no-external-signal -->
 ### T-04-007 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -170,7 +170,7 @@
 
 ---
 
-<!-- fc id:T-04-008 sha:e6da8e7c src:manual/04-peryferiya.md:21 klas:E -->
+<!-- fc id:T-04-008 sha:e6da8e7c src:manual/04-peryferiya.md:21 status:no-external-signal -->
 ### T-04-008 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -191,7 +191,7 @@
 
 ---
 
-<!-- fc id:T-04-009 sha:3b0298b2 src:manual/04-peryferiya.md:23 klas:E -->
+<!-- fc id:T-04-009 sha:3b0298b2 src:manual/04-peryferiya.md:23 status:no-external-signal -->
 ### T-04-009 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -216,7 +216,7 @@
 
 ---
 
-<!-- fc id:T-04-010 sha:ff204556 src:manual/04-peryferiya.md:31 klas:F -->
+<!-- fc id:T-04-010 sha:ff204556 src:manual/04-peryferiya.md:31 status:unchecked -->
 ### T-04-010 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -245,7 +245,7 @@
 
 ---
 
-<!-- fc id:T-04-011 sha:550c9b41 src:manual/04-peryferiya.md:32 klas:D -->
+<!-- fc id:T-04-011 sha:550c9b41 src:manual/04-peryferiya.md:32 status:arithmetic -->
 ### T-04-011 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -289,7 +289,7 @@
 
 ---
 
-<!-- fc id:T-04-012 sha:a3ccd8fd src:manual/04-peryferiya.md:34 klas:F -->
+<!-- fc id:T-04-012 sha:a3ccd8fd src:manual/04-peryferiya.md:34 status:unchecked -->
 ### T-04-012 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -318,7 +318,7 @@
 
 ---
 
-<!-- fc id:T-04-013 sha:bae35914 src:manual/04-peryferiya.md:34 klas:A -->
+<!-- fc id:T-04-013 sha:bae35914 src:manual/04-peryferiya.md:34 status:verbatim -->
 ### T-04-013 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -367,7 +367,7 @@
 
 ---
 
-<!-- fc id:T-04-014 sha:35609a6a src:manual/04-peryferiya.md:37 klas:A -->
+<!-- fc id:T-04-014 sha:35609a6a src:manual/04-peryferiya.md:37 status:verbatim -->
 ### T-04-014 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -416,7 +416,7 @@
 
 ---
 
-<!-- fc id:T-04-015 sha:3ac2c4cf src:manual/04-peryferiya.md:38 klas:A -->
+<!-- fc id:T-04-015 sha:3ac2c4cf src:manual/04-peryferiya.md:38 status:verbatim -->
 ### T-04-015 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -465,7 +465,7 @@
 
 ---
 
-<!-- fc id:T-04-016 sha:581f20c1 src:manual/04-peryferiya.md:42 klas:A -->
+<!-- fc id:T-04-016 sha:581f20c1 src:manual/04-peryferiya.md:42 status:verbatim -->
 ### T-04-016 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -503,7 +503,7 @@
 
 ---
 
-<!-- fc id:T-04-017 sha:cf430c5b src:manual/04-peryferiya.md:43 klas:E -->
+<!-- fc id:T-04-017 sha:cf430c5b src:manual/04-peryferiya.md:43 status:no-external-signal -->
 ### T-04-017 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -528,7 +528,7 @@
 
 ---
 
-<!-- fc id:T-04-018 sha:17baeeb5 src:manual/04-peryferiya.md:49 klas:E -->
+<!-- fc id:T-04-018 sha:17baeeb5 src:manual/04-peryferiya.md:49 status:no-external-signal -->
 ### T-04-018 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -549,7 +549,7 @@
 
 ---
 
-<!-- fc id:T-04-019 sha:8d66d74f src:manual/04-peryferiya.md:51 klas:F -->
+<!-- fc id:T-04-019 sha:8d66d74f src:manual/04-peryferiya.md:51 status:unchecked -->
 ### T-04-019 · tablycya-shapka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -581,7 +581,7 @@
 
 ---
 
-<!-- fc id:T-04-020 sha:568b7911 src:manual/04-peryferiya.md:53 klas:A -->
+<!-- fc id:T-04-020 sha:568b7911 src:manual/04-peryferiya.md:53 status:verbatim -->
 ### T-04-020 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -641,7 +641,7 @@
 
 ---
 
-<!-- fc id:T-04-021 sha:32c2186a src:manual/04-peryferiya.md:53 klas:F -->
+<!-- fc id:T-04-021 sha:32c2186a src:manual/04-peryferiya.md:53 status:unchecked -->
 ### T-04-021 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -679,7 +679,7 @@
 
 ---
 
-<!-- fc id:T-04-022 sha:24fd2228 src:manual/04-peryferiya.md:54 klas:F -->
+<!-- fc id:T-04-022 sha:24fd2228 src:manual/04-peryferiya.md:54 status:unchecked -->
 ### T-04-022 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -717,7 +717,7 @@
 
 ---
 
-<!-- fc id:T-04-023 sha:9f56beb2 src:manual/04-peryferiya.md:54 klas:F -->
+<!-- fc id:T-04-023 sha:9f56beb2 src:manual/04-peryferiya.md:54 status:unchecked -->
 ### T-04-023 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -755,7 +755,7 @@
 
 ---
 
-<!-- fc id:T-04-024 sha:0aef4c28 src:manual/04-peryferiya.md:55 klas:F -->
+<!-- fc id:T-04-024 sha:0aef4c28 src:manual/04-peryferiya.md:55 status:unchecked -->
 ### T-04-024 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -793,7 +793,7 @@
 
 ---
 
-<!-- fc id:T-04-025 sha:0ed1c8c6 src:manual/04-peryferiya.md:55 klas:F -->
+<!-- fc id:T-04-025 sha:0ed1c8c6 src:manual/04-peryferiya.md:55 status:unchecked -->
 ### T-04-025 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -831,7 +831,7 @@
 
 ---
 
-<!-- fc id:T-04-026 sha:8e9323a3 src:manual/04-peryferiya.md:56 klas:F -->
+<!-- fc id:T-04-026 sha:8e9323a3 src:manual/04-peryferiya.md:56 status:unchecked -->
 ### T-04-026 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -869,7 +869,7 @@
 
 ---
 
-<!-- fc id:T-04-027 sha:9687e42c src:manual/04-peryferiya.md:56 klas:F -->
+<!-- fc id:T-04-027 sha:9687e42c src:manual/04-peryferiya.md:56 status:unchecked -->
 ### T-04-027 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -907,7 +907,7 @@
 
 ---
 
-<!-- fc id:T-04-028 sha:ba6a71e5 src:manual/04-peryferiya.md:57 klas:A -->
+<!-- fc id:T-04-028 sha:ba6a71e5 src:manual/04-peryferiya.md:57 status:verbatim -->
 ### T-04-028 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -951,7 +951,7 @@
 
 ---
 
-<!-- fc id:T-04-029 sha:436bfe4d src:manual/04-peryferiya.md:57 klas:F -->
+<!-- fc id:T-04-029 sha:436bfe4d src:manual/04-peryferiya.md:57 status:unchecked -->
 ### T-04-029 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -989,7 +989,7 @@
 
 ---
 
-<!-- fc id:T-04-030 sha:b4c0eb8d src:manual/04-peryferiya.md:58 klas:F -->
+<!-- fc id:T-04-030 sha:b4c0eb8d src:manual/04-peryferiya.md:58 status:unchecked -->
 ### T-04-030 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1027,7 +1027,7 @@
 
 ---
 
-<!-- fc id:T-04-031 sha:cb2543fd src:manual/04-peryferiya.md:58 klas:F -->
+<!-- fc id:T-04-031 sha:cb2543fd src:manual/04-peryferiya.md:58 status:unchecked -->
 ### T-04-031 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1065,7 +1065,7 @@
 
 ---
 
-<!-- fc id:T-04-032 sha:311bec1c src:manual/04-peryferiya.md:59 klas:F -->
+<!-- fc id:T-04-032 sha:311bec1c src:manual/04-peryferiya.md:59 status:unchecked -->
 ### T-04-032 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1103,7 +1103,7 @@
 
 ---
 
-<!-- fc id:T-04-033 sha:364ba139 src:manual/04-peryferiya.md:59 klas:F -->
+<!-- fc id:T-04-033 sha:364ba139 src:manual/04-peryferiya.md:59 status:unchecked -->
 ### T-04-033 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1141,7 +1141,7 @@
 
 ---
 
-<!-- fc id:T-04-034 sha:67d4ed9e src:manual/04-peryferiya.md:60 klas:A -->
+<!-- fc id:T-04-034 sha:67d4ed9e src:manual/04-peryferiya.md:60 status:verbatim -->
 ### T-04-034 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1188,7 +1188,7 @@
 
 ---
 
-<!-- fc id:T-04-035 sha:31eaa593 src:manual/04-peryferiya.md:60 klas:A -->
+<!-- fc id:T-04-035 sha:31eaa593 src:manual/04-peryferiya.md:60 status:verbatim -->
 ### T-04-035 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1235,7 +1235,7 @@
 
 ---
 
-<!-- fc id:T-04-036 sha:8d66d74f src:manual/04-peryferiya.md:64 klas:F -->
+<!-- fc id:T-04-036 sha:8d66d74f src:manual/04-peryferiya.md:64 status:unchecked -->
 ### T-04-036 · tablycya-shapka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1264,7 +1264,7 @@
 
 ---
 
-<!-- fc id:T-04-037 sha:2a3561f1 src:manual/04-peryferiya.md:66 klas:A -->
+<!-- fc id:T-04-037 sha:2a3561f1 src:manual/04-peryferiya.md:66 status:verbatim -->
 ### T-04-037 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1306,7 +1306,7 @@
 
 ---
 
-<!-- fc id:T-04-038 sha:202d2806 src:manual/04-peryferiya.md:66 klas:F -->
+<!-- fc id:T-04-038 sha:202d2806 src:manual/04-peryferiya.md:66 status:unchecked -->
 ### T-04-038 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1341,7 +1341,7 @@
 
 ---
 
-<!-- fc id:T-04-039 sha:9c0ad84a src:manual/04-peryferiya.md:67 klas:F -->
+<!-- fc id:T-04-039 sha:9c0ad84a src:manual/04-peryferiya.md:67 status:unchecked -->
 ### T-04-039 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1376,7 +1376,7 @@
 
 ---
 
-<!-- fc id:T-04-040 sha:dafa9bd0 src:manual/04-peryferiya.md:67 klas:F -->
+<!-- fc id:T-04-040 sha:dafa9bd0 src:manual/04-peryferiya.md:67 status:unchecked -->
 ### T-04-040 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1411,7 +1411,7 @@
 
 ---
 
-<!-- fc id:T-04-041 sha:ba94361c src:manual/04-peryferiya.md:68 klas:F -->
+<!-- fc id:T-04-041 sha:ba94361c src:manual/04-peryferiya.md:68 status:unchecked -->
 ### T-04-041 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1446,7 +1446,7 @@
 
 ---
 
-<!-- fc id:T-04-042 sha:8295f48c src:manual/04-peryferiya.md:68 klas:F -->
+<!-- fc id:T-04-042 sha:8295f48c src:manual/04-peryferiya.md:68 status:unchecked -->
 ### T-04-042 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1481,7 +1481,7 @@
 
 ---
 
-<!-- fc id:T-04-043 sha:20f2f218 src:manual/04-peryferiya.md:69 klas:E -->
+<!-- fc id:T-04-043 sha:20f2f218 src:manual/04-peryferiya.md:69 status:no-external-signal -->
 ### T-04-043 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1516,7 +1516,7 @@
 
 ---
 
-<!-- fc id:T-04-044 sha:e6046b59 src:manual/04-peryferiya.md:69 klas:E -->
+<!-- fc id:T-04-044 sha:e6046b59 src:manual/04-peryferiya.md:69 status:no-external-signal -->
 ### T-04-044 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1551,7 +1551,7 @@
 
 ---
 
-<!-- fc id:T-04-045 sha:0339aa31 src:manual/04-peryferiya.md:70 klas:E -->
+<!-- fc id:T-04-045 sha:0339aa31 src:manual/04-peryferiya.md:70 status:no-external-signal -->
 ### T-04-045 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1586,7 +1586,7 @@
 
 ---
 
-<!-- fc id:T-04-046 sha:b285d77f src:manual/04-peryferiya.md:70 klas:E -->
+<!-- fc id:T-04-046 sha:b285d77f src:manual/04-peryferiya.md:70 status:no-external-signal -->
 ### T-04-046 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1621,7 +1621,7 @@
 
 ---
 
-<!-- fc id:T-04-047 sha:8d66d74f src:manual/04-peryferiya.md:74 klas:F -->
+<!-- fc id:T-04-047 sha:8d66d74f src:manual/04-peryferiya.md:74 status:unchecked -->
 ### T-04-047 · tablycya-shapka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1648,7 +1648,7 @@
 
 ---
 
-<!-- fc id:T-04-048 sha:2a777a37 src:manual/04-peryferiya.md:76 klas:F -->
+<!-- fc id:T-04-048 sha:2a777a37 src:manual/04-peryferiya.md:76 status:unchecked -->
 ### T-04-048 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1681,7 +1681,7 @@
 
 ---
 
-<!-- fc id:T-04-049 sha:27e089d6 src:manual/04-peryferiya.md:76 klas:F -->
+<!-- fc id:T-04-049 sha:27e089d6 src:manual/04-peryferiya.md:76 status:unchecked -->
 ### T-04-049 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1714,7 +1714,7 @@
 
 ---
 
-<!-- fc id:T-04-050 sha:2f606168 src:manual/04-peryferiya.md:77 klas:A -->
+<!-- fc id:T-04-050 sha:2f606168 src:manual/04-peryferiya.md:77 status:verbatim -->
 ### T-04-050 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1753,7 +1753,7 @@
 
 ---
 
-<!-- fc id:T-04-051 sha:9040d220 src:manual/04-peryferiya.md:77 klas:F -->
+<!-- fc id:T-04-051 sha:9040d220 src:manual/04-peryferiya.md:77 status:unchecked -->
 ### T-04-051 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1786,7 +1786,7 @@
 
 ---
 
-<!-- fc id:T-04-052 sha:ae400fb3 src:manual/04-peryferiya.md:78 klas:E -->
+<!-- fc id:T-04-052 sha:ae400fb3 src:manual/04-peryferiya.md:78 status:no-external-signal -->
 ### T-04-052 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1819,7 +1819,7 @@
 
 ---
 
-<!-- fc id:T-04-053 sha:401ee8a6 src:manual/04-peryferiya.md:78 klas:E -->
+<!-- fc id:T-04-053 sha:401ee8a6 src:manual/04-peryferiya.md:78 status:no-external-signal -->
 ### T-04-053 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1852,7 +1852,7 @@
 
 ---
 
-<!-- fc id:T-04-054 sha:6b77ee59 src:manual/04-peryferiya.md:82 klas:F -->
+<!-- fc id:T-04-054 sha:6b77ee59 src:manual/04-peryferiya.md:82 status:unchecked -->
 ### T-04-054 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1874,7 +1874,7 @@
 
 ---
 
-<!-- fc id:T-04-055 sha:4ba300f4 src:manual/04-peryferiya.md:87 klas:F -->
+<!-- fc id:T-04-055 sha:4ba300f4 src:manual/04-peryferiya.md:87 status:unchecked -->
 ### T-04-055 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1900,7 +1900,7 @@
 
 ---
 
-<!-- fc id:T-04-056 sha:ffc19a11 src:manual/04-peryferiya.md:87 klas:E -->
+<!-- fc id:T-04-056 sha:ffc19a11 src:manual/04-peryferiya.md:87 status:no-external-signal -->
 ### T-04-056 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1926,7 +1926,7 @@
 
 ---
 
-<!-- fc id:T-04-057 sha:8716ec5b src:manual/04-peryferiya.md:89 klas:C -->
+<!-- fc id:T-04-057 sha:8716ec5b src:manual/04-peryferiya.md:89 status:named-unreachable -->
 ### T-04-057 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1957,7 +1957,7 @@
 
 ---
 
-<!-- fc id:T-04-058 sha:73930e26 src:manual/04-peryferiya.md:92 klas:E -->
+<!-- fc id:T-04-058 sha:73930e26 src:manual/04-peryferiya.md:92 status:no-external-signal -->
 ### T-04-058 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1983,7 +1983,7 @@
 
 ---
 
-<!-- fc id:T-04-059 sha:b2c79788 src:manual/04-peryferiya.md:94 klas:E -->
+<!-- fc id:T-04-059 sha:b2c79788 src:manual/04-peryferiya.md:94 status:no-external-signal -->
 ### T-04-059 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2006,7 +2006,7 @@
 
 ---
 
-<!-- fc id:T-04-060 sha:3e8807d6 src:manual/04-peryferiya.md:94 klas:E -->
+<!-- fc id:T-04-060 sha:3e8807d6 src:manual/04-peryferiya.md:94 status:no-external-signal -->
 ### T-04-060 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2029,7 +2029,7 @@
 
 ---
 
-<!-- fc id:T-04-061 sha:2f22bb75 src:manual/04-peryferiya.md:98 klas:A -->
+<!-- fc id:T-04-061 sha:2f22bb75 src:manual/04-peryferiya.md:98 status:verbatim -->
 ### T-04-061 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2060,7 +2060,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-062 sha:0bbc6793 src:manual/04-peryferiya.md:100 klas:F -->
+<!-- fc id:T-04-062 sha:0bbc6793 src:manual/04-peryferiya.md:100 status:unchecked -->
 ### T-04-062 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2085,7 +2085,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-063 sha:d4ed4106 src:manual/04-peryferiya.md:104 klas:E -->
+<!-- fc id:T-04-063 sha:d4ed4106 src:manual/04-peryferiya.md:104 status:no-external-signal -->
 ### T-04-063 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2108,7 +2108,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-064 sha:70bda4e1 src:manual/04-peryferiya.md:105 klas:E -->
+<!-- fc id:T-04-064 sha:70bda4e1 src:manual/04-peryferiya.md:105 status:no-external-signal -->
 ### T-04-064 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2131,7 +2131,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-065 sha:fec794dc src:manual/04-peryferiya.md:108 klas:F -->
+<!-- fc id:T-04-065 sha:fec794dc src:manual/04-peryferiya.md:108 status:unchecked -->
 ### T-04-065 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2153,7 +2153,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-066 sha:0c413fdd src:manual/04-peryferiya.md:108 klas:E -->
+<!-- fc id:T-04-066 sha:0c413fdd src:manual/04-peryferiya.md:108 status:no-external-signal -->
 ### T-04-066 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2175,7 +2175,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-067 sha:60a19ebb src:manual/04-peryferiya.md:113 klas:F -->
+<!-- fc id:T-04-067 sha:60a19ebb src:manual/04-peryferiya.md:113 status:unchecked -->
 ### T-04-067 · tablycya-shapka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2207,7 +2207,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-068 sha:d294d263 src:manual/04-peryferiya.md:115 klas:F -->
+<!-- fc id:T-04-068 sha:d294d263 src:manual/04-peryferiya.md:115 status:unchecked -->
 ### T-04-068 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2245,7 +2245,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-069 sha:a52b9268 src:manual/04-peryferiya.md:115 klas:A -->
+<!-- fc id:T-04-069 sha:a52b9268 src:manual/04-peryferiya.md:115 status:verbatim -->
 ### T-04-069 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2289,7 +2289,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-070 sha:f80d356e src:manual/04-peryferiya.md:115 klas:A -->
+<!-- fc id:T-04-070 sha:f80d356e src:manual/04-peryferiya.md:115 status:verbatim -->
 ### T-04-070 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2333,7 +2333,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-071 sha:32042095 src:manual/04-peryferiya.md:115 klas:F -->
+<!-- fc id:T-04-071 sha:32042095 src:manual/04-peryferiya.md:115 status:unchecked -->
 ### T-04-071 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2371,7 +2371,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-072 sha:6405f0a9 src:manual/04-peryferiya.md:115 klas:F -->
+<!-- fc id:T-04-072 sha:6405f0a9 src:manual/04-peryferiya.md:115 status:unchecked -->
 ### T-04-072 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2409,7 +2409,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-073 sha:393a056c src:manual/04-peryferiya.md:115 klas:F -->
+<!-- fc id:T-04-073 sha:393a056c src:manual/04-peryferiya.md:115 status:unchecked -->
 ### T-04-073 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2447,7 +2447,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-074 sha:59f98618 src:manual/04-peryferiya.md:116 klas:F -->
+<!-- fc id:T-04-074 sha:59f98618 src:manual/04-peryferiya.md:116 status:unchecked -->
 ### T-04-074 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2485,7 +2485,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-075 sha:5e4f8375 src:manual/04-peryferiya.md:116 klas:F -->
+<!-- fc id:T-04-075 sha:5e4f8375 src:manual/04-peryferiya.md:116 status:unchecked -->
 ### T-04-075 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2523,7 +2523,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-076 sha:c9d1e001 src:manual/04-peryferiya.md:116 klas:F -->
+<!-- fc id:T-04-076 sha:c9d1e001 src:manual/04-peryferiya.md:116 status:unchecked -->
 ### T-04-076 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2561,7 +2561,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-077 sha:fab5f138 src:manual/04-peryferiya.md:116 klas:F -->
+<!-- fc id:T-04-077 sha:fab5f138 src:manual/04-peryferiya.md:116 status:unchecked -->
 ### T-04-077 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2599,7 +2599,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-078 sha:226fd709 src:manual/04-peryferiya.md:116 klas:A -->
+<!-- fc id:T-04-078 sha:226fd709 src:manual/04-peryferiya.md:116 status:verbatim -->
 ### T-04-078 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2645,7 +2645,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-079 sha:24cf7588 src:manual/04-peryferiya.md:116 klas:F -->
+<!-- fc id:T-04-079 sha:24cf7588 src:manual/04-peryferiya.md:116 status:unchecked -->
 ### T-04-079 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2683,7 +2683,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-080 sha:62eeabd8 src:manual/04-peryferiya.md:117 klas:A -->
+<!-- fc id:T-04-080 sha:62eeabd8 src:manual/04-peryferiya.md:117 status:verbatim -->
 ### T-04-080 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2740,7 +2740,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-081 sha:57e95b47 src:manual/04-peryferiya.md:117 klas:A -->
+<!-- fc id:T-04-081 sha:57e95b47 src:manual/04-peryferiya.md:117 status:verbatim -->
 ### T-04-081 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2797,7 +2797,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-082 sha:7387c593 src:manual/04-peryferiya.md:117 klas:A -->
+<!-- fc id:T-04-082 sha:7387c593 src:manual/04-peryferiya.md:117 status:verbatim -->
 ### T-04-082 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2854,7 +2854,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-083 sha:c2c0f8a2 src:manual/04-peryferiya.md:117 klas:A -->
+<!-- fc id:T-04-083 sha:c2c0f8a2 src:manual/04-peryferiya.md:117 status:verbatim -->
 ### T-04-083 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2911,7 +2911,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-084 sha:3eb116e1 src:manual/04-peryferiya.md:117 klas:A -->
+<!-- fc id:T-04-084 sha:3eb116e1 src:manual/04-peryferiya.md:117 status:verbatim -->
 ### T-04-084 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2968,7 +2968,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-085 sha:1104526d src:manual/04-peryferiya.md:117 klas:A -->
+<!-- fc id:T-04-085 sha:1104526d src:manual/04-peryferiya.md:117 status:verbatim -->
 ### T-04-085 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3025,7 +3025,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-086 sha:12f97fd5 src:manual/04-peryferiya.md:118 klas:A -->
+<!-- fc id:T-04-086 sha:12f97fd5 src:manual/04-peryferiya.md:118 status:verbatim -->
 ### T-04-086 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3082,7 +3082,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-087 sha:9797cc5c src:manual/04-peryferiya.md:118 klas:A -->
+<!-- fc id:T-04-087 sha:9797cc5c src:manual/04-peryferiya.md:118 status:verbatim -->
 ### T-04-087 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3139,7 +3139,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-088 sha:861ab1b0 src:manual/04-peryferiya.md:118 klas:A -->
+<!-- fc id:T-04-088 sha:861ab1b0 src:manual/04-peryferiya.md:118 status:verbatim -->
 ### T-04-088 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3196,7 +3196,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-089 sha:aad3e15e src:manual/04-peryferiya.md:118 klas:A -->
+<!-- fc id:T-04-089 sha:aad3e15e src:manual/04-peryferiya.md:118 status:verbatim -->
 ### T-04-089 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3253,7 +3253,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-090 sha:e10c70d1 src:manual/04-peryferiya.md:118 klas:A -->
+<!-- fc id:T-04-090 sha:e10c70d1 src:manual/04-peryferiya.md:118 status:verbatim -->
 ### T-04-090 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3310,7 +3310,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-091 sha:191c4f76 src:manual/04-peryferiya.md:118 klas:A -->
+<!-- fc id:T-04-091 sha:191c4f76 src:manual/04-peryferiya.md:118 status:verbatim -->
 ### T-04-091 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3367,7 +3367,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-092 sha:2ad02aba src:manual/04-peryferiya.md:119 klas:A -->
+<!-- fc id:T-04-092 sha:2ad02aba src:manual/04-peryferiya.md:119 status:verbatim -->
 ### T-04-092 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3411,7 +3411,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-093 sha:7020fb4f src:manual/04-peryferiya.md:119 klas:B -->
+<!-- fc id:T-04-093 sha:7020fb4f src:manual/04-peryferiya.md:119 status:derived -->
 ### T-04-093 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3456,7 +3456,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-094 sha:2a1ed9af src:manual/04-peryferiya.md:119 klas:F -->
+<!-- fc id:T-04-094 sha:2a1ed9af src:manual/04-peryferiya.md:119 status:unchecked -->
 ### T-04-094 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3494,7 +3494,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-095 sha:3a57b6f4 src:manual/04-peryferiya.md:119 klas:F -->
+<!-- fc id:T-04-095 sha:3a57b6f4 src:manual/04-peryferiya.md:119 status:unchecked -->
 ### T-04-095 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3532,7 +3532,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-096 sha:c17be608 src:manual/04-peryferiya.md:119 klas:B -->
+<!-- fc id:T-04-096 sha:c17be608 src:manual/04-peryferiya.md:119 status:derived -->
 ### T-04-096 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3577,7 +3577,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-097 sha:ab67ab65 src:manual/04-peryferiya.md:119 klas:F -->
+<!-- fc id:T-04-097 sha:ab67ab65 src:manual/04-peryferiya.md:119 status:unchecked -->
 ### T-04-097 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3615,7 +3615,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-098 sha:d9e2ad8c src:manual/04-peryferiya.md:120 klas:A -->
+<!-- fc id:T-04-098 sha:d9e2ad8c src:manual/04-peryferiya.md:120 status:verbatim -->
 ### T-04-098 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3659,7 +3659,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-099 sha:fcb3dc0e src:manual/04-peryferiya.md:120 klas:F -->
+<!-- fc id:T-04-099 sha:fcb3dc0e src:manual/04-peryferiya.md:120 status:unchecked -->
 ### T-04-099 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3697,7 +3697,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-100 sha:3703494f src:manual/04-peryferiya.md:120 klas:F -->
+<!-- fc id:T-04-100 sha:3703494f src:manual/04-peryferiya.md:120 status:unchecked -->
 ### T-04-100 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3735,7 +3735,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-101 sha:0dd74db5 src:manual/04-peryferiya.md:120 klas:F -->
+<!-- fc id:T-04-101 sha:0dd74db5 src:manual/04-peryferiya.md:120 status:unchecked -->
 ### T-04-101 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3773,7 +3773,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-102 sha:0b174b85 src:manual/04-peryferiya.md:120 klas:F -->
+<!-- fc id:T-04-102 sha:0b174b85 src:manual/04-peryferiya.md:120 status:unchecked -->
 ### T-04-102 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3811,7 +3811,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-103 sha:f575a5bf src:manual/04-peryferiya.md:120 klas:F -->
+<!-- fc id:T-04-103 sha:f575a5bf src:manual/04-peryferiya.md:120 status:unchecked -->
 ### T-04-103 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3849,7 +3849,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-104 sha:8b6b6bdd src:manual/04-peryferiya.md:121 klas:A -->
+<!-- fc id:T-04-104 sha:8b6b6bdd src:manual/04-peryferiya.md:121 status:verbatim -->
 ### T-04-104 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3893,7 +3893,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-105 sha:d882c9c3 src:manual/04-peryferiya.md:121 klas:A -->
+<!-- fc id:T-04-105 sha:d882c9c3 src:manual/04-peryferiya.md:121 status:verbatim -->
 ### T-04-105 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3937,7 +3937,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-106 sha:81584cd7 src:manual/04-peryferiya.md:121 klas:F -->
+<!-- fc id:T-04-106 sha:81584cd7 src:manual/04-peryferiya.md:121 status:unchecked -->
 ### T-04-106 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3975,7 +3975,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-107 sha:4e26e4ae src:manual/04-peryferiya.md:121 klas:F -->
+<!-- fc id:T-04-107 sha:4e26e4ae src:manual/04-peryferiya.md:121 status:unchecked -->
 ### T-04-107 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4013,7 +4013,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-108 sha:589c599f src:manual/04-peryferiya.md:121 klas:F -->
+<!-- fc id:T-04-108 sha:589c599f src:manual/04-peryferiya.md:121 status:unchecked -->
 ### T-04-108 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4051,7 +4051,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-109 sha:1b51b413 src:manual/04-peryferiya.md:121 klas:F -->
+<!-- fc id:T-04-109 sha:1b51b413 src:manual/04-peryferiya.md:121 status:unchecked -->
 ### T-04-109 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4089,7 +4089,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-110 sha:1cef09c9 src:manual/04-peryferiya.md:122 klas:E -->
+<!-- fc id:T-04-110 sha:1cef09c9 src:manual/04-peryferiya.md:122 status:no-external-signal -->
 ### T-04-110 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4127,7 +4127,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-111 sha:ca68ac49 src:manual/04-peryferiya.md:122 klas:F -->
+<!-- fc id:T-04-111 sha:ca68ac49 src:manual/04-peryferiya.md:122 status:unchecked -->
 ### T-04-111 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4165,7 +4165,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-112 sha:affdc5f0 src:manual/04-peryferiya.md:122 klas:F -->
+<!-- fc id:T-04-112 sha:affdc5f0 src:manual/04-peryferiya.md:122 status:unchecked -->
 ### T-04-112 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4203,7 +4203,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-113 sha:45a998a0 src:manual/04-peryferiya.md:122 klas:F -->
+<!-- fc id:T-04-113 sha:45a998a0 src:manual/04-peryferiya.md:122 status:unchecked -->
 ### T-04-113 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4241,7 +4241,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-114 sha:fe58cacf src:manual/04-peryferiya.md:122 klas:F -->
+<!-- fc id:T-04-114 sha:fe58cacf src:manual/04-peryferiya.md:122 status:unchecked -->
 ### T-04-114 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4279,7 +4279,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-115 sha:86b8a81d src:manual/04-peryferiya.md:122 klas:F -->
+<!-- fc id:T-04-115 sha:86b8a81d src:manual/04-peryferiya.md:122 status:unchecked -->
 ### T-04-115 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4317,7 +4317,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-116 sha:b9a03293 src:manual/04-peryferiya.md:123 klas:F -->
+<!-- fc id:T-04-116 sha:b9a03293 src:manual/04-peryferiya.md:123 status:unchecked -->
 ### T-04-116 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4355,7 +4355,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-117 sha:5c099b4e src:manual/04-peryferiya.md:123 klas:A -->
+<!-- fc id:T-04-117 sha:5c099b4e src:manual/04-peryferiya.md:123 status:verbatim -->
 ### T-04-117 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4402,7 +4402,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-118 sha:ef2532f6 src:manual/04-peryferiya.md:123 klas:F -->
+<!-- fc id:T-04-118 sha:ef2532f6 src:manual/04-peryferiya.md:123 status:unchecked -->
 ### T-04-118 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4440,7 +4440,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-119 sha:73c01d8f src:manual/04-peryferiya.md:123 klas:F -->
+<!-- fc id:T-04-119 sha:73c01d8f src:manual/04-peryferiya.md:123 status:unchecked -->
 ### T-04-119 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4478,7 +4478,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-120 sha:f972dd82 src:manual/04-peryferiya.md:123 klas:F -->
+<!-- fc id:T-04-120 sha:f972dd82 src:manual/04-peryferiya.md:123 status:unchecked -->
 ### T-04-120 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4516,7 +4516,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-121 sha:d735d6e3 src:manual/04-peryferiya.md:123 klas:F -->
+<!-- fc id:T-04-121 sha:d735d6e3 src:manual/04-peryferiya.md:123 status:unchecked -->
 ### T-04-121 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4554,7 +4554,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-122 sha:3a653bb8 src:manual/04-peryferiya.md:125 klas:A -->
+<!-- fc id:T-04-122 sha:3a653bb8 src:manual/04-peryferiya.md:125 status:verbatim -->
 ### T-04-122 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4587,7 +4587,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-123 sha:fef032a2 src:manual/04-peryferiya.md:128 klas:A -->
+<!-- fc id:T-04-123 sha:fef032a2 src:manual/04-peryferiya.md:128 status:verbatim -->
 ### T-04-123 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4629,7 +4629,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-124 sha:167a6ba8 src:manual/04-peryferiya.md:129 klas:E -->
+<!-- fc id:T-04-124 sha:167a6ba8 src:manual/04-peryferiya.md:129 status:no-external-signal -->
 ### T-04-124 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4652,7 +4652,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-125 sha:1d31bb05 src:manual/04-peryferiya.md:132 klas:F -->
+<!-- fc id:T-04-125 sha:1d31bb05 src:manual/04-peryferiya.md:132 status:unchecked -->
 ### T-04-125 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4677,7 +4677,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-126 sha:4bde7510 src:manual/04-peryferiya.md:133 klas:E -->
+<!-- fc id:T-04-126 sha:4bde7510 src:manual/04-peryferiya.md:133 status:no-external-signal -->
 ### T-04-126 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4702,7 +4702,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-127 sha:994e417a src:manual/04-peryferiya.md:135 klas:F -->
+<!-- fc id:T-04-127 sha:994e417a src:manual/04-peryferiya.md:135 status:unchecked -->
 ### T-04-127 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4727,7 +4727,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-128 sha:3b880ab1 src:manual/04-peryferiya.md:138 klas:A -->
+<!-- fc id:T-04-128 sha:3b880ab1 src:manual/04-peryferiya.md:138 status:verbatim -->
 ### T-04-128 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4770,7 +4770,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-129 sha:5b78f5fe src:manual/04-peryferiya.md:141 klas:E -->
+<!-- fc id:T-04-129 sha:5b78f5fe src:manual/04-peryferiya.md:141 status:no-external-signal -->
 ### T-04-129 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4794,7 +4794,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-130 sha:2ab21690 src:manual/04-peryferiya.md:143 klas:A -->
+<!-- fc id:T-04-130 sha:2ab21690 src:manual/04-peryferiya.md:143 status:verbatim -->
 ### T-04-130 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4825,7 +4825,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-131 sha:9fe58390 src:manual/04-peryferiya.md:148 klas:E -->
+<!-- fc id:T-04-131 sha:9fe58390 src:manual/04-peryferiya.md:148 status:no-external-signal -->
 ### T-04-131 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4847,7 +4847,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-132 sha:639805c9 src:manual/04-peryferiya.md:150 klas:A -->
+<!-- fc id:T-04-132 sha:639805c9 src:manual/04-peryferiya.md:150 status:verbatim -->
 ### T-04-132 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4875,7 +4875,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-133 sha:c93861a4 src:manual/04-peryferiya.md:151 klas:F -->
+<!-- fc id:T-04-133 sha:c93861a4 src:manual/04-peryferiya.md:151 status:unchecked -->
 ### T-04-133 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4897,7 +4897,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-134 sha:0885291c src:manual/04-peryferiya.md:153 klas:F -->
+<!-- fc id:T-04-134 sha:0885291c src:manual/04-peryferiya.md:153 status:unchecked -->
 ### T-04-134 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4920,7 +4920,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-135 sha:4e6975f8 src:manual/04-peryferiya.md:159 klas:E -->
+<!-- fc id:T-04-135 sha:4e6975f8 src:manual/04-peryferiya.md:159 status:no-external-signal -->
 ### T-04-135 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4942,7 +4942,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-136 sha:d65e9f0b src:manual/04-peryferiya.md:159 klas:E -->
+<!-- fc id:T-04-136 sha:d65e9f0b src:manual/04-peryferiya.md:159 status:no-external-signal -->
 ### T-04-136 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4964,7 +4964,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-137 sha:a89cb3ba src:manual/04-peryferiya.md:162 klas:E -->
+<!-- fc id:T-04-137 sha:a89cb3ba src:manual/04-peryferiya.md:162 status:no-external-signal -->
 ### T-04-137 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4987,7 +4987,7 @@ I²C — два, SPI — чотири плюс по одному на кожен
 
 ---
 
-<!-- fc id:T-04-138 sha:515af58b src:manual/04-peryferiya.md:162 klas:E -->
+<!-- fc id:T-04-138 sha:515af58b src:manual/04-peryferiya.md:162 status:no-external-signal -->
 ### T-04-138 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5022,7 +5022,7 @@ I²C — два, SPI — чотири плюс по одному на кожен
 
 ---
 
-<!-- fc id:T-04-139 sha:1c59341c src:manual/04-peryferiya.md:166 klas:F -->
+<!-- fc id:T-04-139 sha:1c59341c src:manual/04-peryferiya.md:166 status:unchecked -->
 ### T-04-139 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5044,7 +5044,7 @@ I²C — два, SPI — чотири плюс по одному на кожен
 
 ---
 
-<!-- fc id:T-04-140 sha:dfae32de src:manual/04-peryferiya.md:169 klas:E -->
+<!-- fc id:T-04-140 sha:dfae32de src:manual/04-peryferiya.md:169 status:no-external-signal -->
 ### T-04-140 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5067,7 +5067,7 @@ I²C — два, SPI — чотири плюс по одному на кожен
 
 ---
 
-<!-- fc id:T-04-141 sha:bf0c9940 src:manual/04-peryferiya.md:170 klas:E -->
+<!-- fc id:T-04-141 sha:bf0c9940 src:manual/04-peryferiya.md:170 status:no-external-signal -->
 ### T-04-141 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5090,7 +5090,7 @@ I²C — два, SPI — чотири плюс по одному на кожен
 
 ---
 
-<!-- fc id:T-04-142 sha:ee6dbb00 src:manual/04-peryferiya.md:173 klas:F -->
+<!-- fc id:T-04-142 sha:ee6dbb00 src:manual/04-peryferiya.md:173 status:unchecked -->
 ### T-04-142 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5113,7 +5113,7 @@ I²C — два, SPI — чотири плюс по одному на кожен
 
 ---
 
-<!-- fc id:T-04-143 sha:286715ad src:manual/04-peryferiya.md:179 klas:E -->
+<!-- fc id:T-04-143 sha:286715ad src:manual/04-peryferiya.md:179 status:no-external-signal -->
 ### T-04-143 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5134,7 +5134,7 @@ I²C — два, SPI — чотири плюс по одному на кожен
 
 ---
 
-<!-- fc id:T-04-144 sha:38202477 src:manual/04-peryferiya.md:181 klas:F -->
+<!-- fc id:T-04-144 sha:38202477 src:manual/04-peryferiya.md:181 status:unchecked -->
 ### T-04-144 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5156,7 +5156,7 @@ I²C — два, SPI — чотири плюс по одному на кожен
 
 ---
 
-<!-- fc id:T-04-145 sha:c28939c7 src:manual/04-peryferiya.md:184 klas:A -->
+<!-- fc id:T-04-145 sha:c28939c7 src:manual/04-peryferiya.md:184 status:verbatim -->
 ### T-04-145 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5189,7 +5189,7 @@ I²C — два, SPI — чотири плюс по одному на кожен
 
 ---
 
-<!-- fc id:T-04-146 sha:365c45ac src:manual/04-peryferiya.md:187 klas:A -->
+<!-- fc id:T-04-146 sha:365c45ac src:manual/04-peryferiya.md:187 status:verbatim -->
 ### T-04-146 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5218,7 +5218,7 @@ USB-JTAG займає конкретні піни; DAC ділить піни з 
 
 ---
 
-<!-- fc id:T-04-147 sha:c8e1dfd8 src:manual/04-peryferiya.md:190 klas:E -->
+<!-- fc id:T-04-147 sha:c8e1dfd8 src:manual/04-peryferiya.md:190 status:no-external-signal -->
 ### T-04-147 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5240,7 +5240,7 @@ USB-JTAG займає конкретні піни; DAC ділить піни з 
 
 ---
 
-<!-- fc id:T-04-148 sha:a1f5c1d5 src:manual/04-peryferiya.md:195 klas:F -->
+<!-- fc id:T-04-148 sha:a1f5c1d5 src:manual/04-peryferiya.md:195 status:unchecked -->
 ### T-04-148 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5262,7 +5262,7 @@ USB-JTAG займає конкретні піни; DAC ділить піни з 
 
 ---
 
-<!-- fc id:T-04-149 sha:9ee3c94f src:manual/04-peryferiya.md:198 klas:F -->
+<!-- fc id:T-04-149 sha:9ee3c94f src:manual/04-peryferiya.md:198 status:unchecked -->
 ### T-04-149 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5285,7 +5285,7 @@ RMT керує адресними світлодіодами апаратно; P
 
 ---
 
-<!-- fc id:T-04-150 sha:598994be src:manual/04-peryferiya.md:202 klas:A -->
+<!-- fc id:T-04-150 sha:598994be src:manual/04-peryferiya.md:202 status:verbatim -->
 ### T-04-150 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5312,7 +5312,7 @@ DAC — тільки classic і S2. Touch — тільки classic, S2, S3.
 
 ---
 
-<!-- fc id:T-04-151 sha:aea8bc68 src:manual/04-peryferiya.md:202 klas:B -->
+<!-- fc id:T-04-151 sha:aea8bc68 src:manual/04-peryferiya.md:202 status:derived -->
 ### T-04-151 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5343,7 +5343,7 @@ DAC — тільки classic і S2. Touch — тільки classic, S2, S3.
 
 ---
 
-<!-- fc id:T-04-152 sha:fe42809f src:manual/04-peryferiya.md:204 klas:E -->
+<!-- fc id:T-04-152 sha:fe42809f src:manual/04-peryferiya.md:204 status:no-external-signal -->
 ### T-04-152 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**

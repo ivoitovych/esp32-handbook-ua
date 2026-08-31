@@ -1,6 +1,5 @@
 - nazva: SHT3x / SHT4x — точна вологість, ±1–1.5 %RH
   zbih: SHT3x / SHT4x · Що дає → точна вологість
-  klas: A
   dzherelo: Sensirion, Datasheet SHT3x-DIS (Humidity and Temperature Sensor) і Datasheet SHT4x (4th Gen.
     Relative Humidity and Temperature Sensor), розділи «Key features»/«Highlights» на титульній сторінці
     кожного
@@ -40,7 +39,6 @@
   - 11669d9f
 - nazva: MPU6050 — акселерометр і гіроскоп на одному кристалі
   zbih: MPU6050 · Що дає → акселерометр, гіроскоп
-  klas: A
   dzherelo: TDK InvenSense, MPU-6000/MPU-6050 Register Map and Descriptions, Revision 4.0 (RM-MPU-6000A-00),
     розділ 2 «Purpose and Scope»
   cytata: '2   Purpose and Scope
@@ -110,7 +108,6 @@
   - d5040300
 - nazva: SHT3x / SHT4x — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
   zbih: SHT3x / SHT4x · Бібліотека → Sensirion
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Немає зовнішнього джерела для перевірки — назва «Sensirion» тут це вказівка «шукай офіційну
@@ -134,7 +131,6 @@
   - 57cc4434
 - nazva: MPU6050 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
   zbih: MPU6050 · Бібліотека → MPU6050
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Немає зовнішнього джерела для перевірки — назва бібліотеки Arduino не є характеристикою кристала.

@@ -19,7 +19,6 @@
 
 - nazva: Поля конфігураційних структур збігаються із заголовками ESP-IDF
   zbih: \.sda_io_num|\.scl_io_num|\.mosi_io_num|\.sclk_io_num|\.duty_resolution|\.pin_bit_mask|\.spics_io_num|\.dev_addr_length|\.timer_sel|\.flow_ctrl
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/
     {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
   cytata: 'Звірено вісім структур, усі поля, які книга ініціалізує:

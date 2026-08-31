@@ -26,7 +26,6 @@
 
 - nazva: Матриця GPIO робить більшість пінів взаємозамінними, але не всі
   zbih: Матриця GPIO робить більшість пінів взаємозамінними
-  klas: C
   dzherelo: ESP32 Series Datasheet v5.3, розділ GPIO Matrix
   notatka: Твердження про архітектуру матриці GPIO. Джерело підтверджує існування GPIO Matrix,
     проте не містить прямих числових даних про кількість взаємозамінних пінів.
@@ -40,7 +39,6 @@
   - a7df30f3
 - nazva: Стан GPIO читається один раз при відпусканні скидання
   zbih: Джерелом\s+рішення\s+служать\s+кілька\s+звичайних\s+GPIO,\s+стан\s+яких\s+читається\s+\*\*один\s+раз\*\*,\s+у\s+момент\s+відпускання\s+скиданн|Strapping\-пін\s+—\s+це\s+звичайний\s+GPIO,\s+стан\s+якого\s+читається\s+\*\*один\s+раз\*\*,\s+у\s+момент\s+відпускання\s+скидання,\s+і\s+потім\s+б
-  klas: C
   dzherelo: ESP-IDF v5.3 bootloader source
   notatka: 'Твердження про послідовність завантаження та читання strapping-пінів. Потребує
     перевірки в bootloader коді. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27:
@@ -54,7 +52,6 @@
     писався під розмітку книги (риски таблиці) і не чіпав нічого.'
 - nazva: 'Таблиця: пін, що задає режим, наслідок помилки'
   zbih: Що задає\\|Наслідок помилки
-  klas: C
   dzherelo: ESP32 Series Datasheet v5.3
   notatka: Метатеме таблиці. Одиниця представляє саму таблицю заголовків.
   title: 'Таблиця: пін, що задає режим, наслідок помилки'
@@ -64,7 +61,6 @@
   note: Метатеме таблиці. Одиниця представляє саму таблицю заголовків.
 - nazva: GPIO5 рідко впливає на проблеми поза SDIO режимом
   zbih: GPIO5
-  klas: A
   dzherelo: ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
   cytata: 'GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
 
@@ -88,7 +84,6 @@
     SDIO функціональністю.
 - nazva: На модулях з флешем 1.8 В це правильне налаштування для SDIO
   zbih: Звідси\s+й\s+друга\s+половина\s+пастки:\s+на\s+модулях,\s+де\s+флеш\s+справді\s+на\s+1\.8\s+В,\s+той\s+самий\s+високий\s+рівень\s+—\s+правильне\s+нал
-  klas: B
   dzherelo: ESP32 Series Datasheet v5.3, Table 5-2, примітка 2
   cytata: '[2] Chips with a 3.3 V flash or PSRAM in-package: this minimum voltage is 3.0 V
 
@@ -110,7 +105,6 @@
   - 126e9170
 - nazva: ADC1 и ADC2 не рівноправні у использовании
   zbih: ADC1.*ADC2|два аналого\|не рівноправні
-  klas: A
   dzherelo: ESP32 Series Datasheet v5.3, Section 8 ADC (Analog to Digital Converter)
   cytata: 'ESP32 has two 12-bit SAR ADC units: ADC1 and ADC2
 
@@ -134,7 +128,6 @@
     під час передачі.
 - nazva: Таблиця АДС чанели - канал 1 та канал 2
   zbih: Канал 1.*Канал 2
-  klas: C
   dzherelo: ESP32 Series Datasheet v5.3, Section 8 ADC
   notatka: Таблиця представляє розподіл каналів ADC. Точні дані у таблиці.
   title: Таблиця АДС чанели - канал 1 та канал 2
@@ -146,7 +139,6 @@
   - 48af3317
 - nazva: Touch сенсори є лише на classic, S2 и S3
   zbih: Touch\s+—\s+тільки\s+classic|Ємнісні\s+сенсори\s+прив.язані\s+до\s+конкретних\s+пінів
-  klas: B
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
   cytata: 10 touch sensors
   notatka: 'Touch сенсори це функція, притаманна лише деяким варіантам чипів.
@@ -192,7 +184,6 @@
     документів разом.'
 - nazva: 'На classic ESP32: 6 пінів флешу, 2 консолі, 6 тільки-вхідних, 5 strapping'
   zbih: 6 пінів флешу.*2 піни консолі.*6 тільки-вхідних
-  klas: A
   dzherelo: ESP32 Series Datasheet v5.3, GPIO Overview та Pin Definitions
   cytata: '- 6 flash pins (GPIO6-11)
 
@@ -223,7 +214,6 @@
   - e4453418
 - nazva: 'Таблиця завантаження: GPIO0/GPIO15 комбінації для режимів'
   zbih: \[\[classic\]\]\s+·\s+Головний\s+пін\s+→\s+`GPIO0`\s+=\s+0|\[\[S3\]\]\s+·\s+Головний\s+пін\s+→\s+`GPIO0`\s+=\s+0|\[\[C3\]\]\s+·\s+Головний\s+пін\s+→\s+`GPIO9`\s+=\s+0|У\s+звичайному\s+режимі\s+\(головний\s+пін\s+високий\)\s+другий\s+пін\s+ігнорується\s+взагалі\s+—\s+на\s+всіх\s+сімействах
-  klas: C
   dzherelo: ESP32 Series Datasheet v5.3, Table 6-22 Boot Mode Selection
   notatka: 'Таблиця містить точні комбінації GPIO рівнів для кожного режиму. | Взірець перебудовано
     з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці)

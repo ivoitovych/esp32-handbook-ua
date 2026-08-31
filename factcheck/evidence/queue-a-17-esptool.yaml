@@ -20,7 +20,6 @@
 
 - nazva: 'T-17-061: Аргументи йдуть парами: адреса, файл.'
   zbih: Аргументи\s+йдуть\s+парами:\s+адреса,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
   cytata: 'The next arguments to ``write-flash`` are one or more pairs of offset (address)
     and file name
@@ -48,7 +47,6 @@
   - 782ec293
 - nazva: 'T-17-063: `-z` вмикає стиснення при передачі.'
   zbih: '`\-z`\s+вмикає\s+стиснення\s+при'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
   cytata: 'By default, the serial transfer data is compressed for better performance. The
     ``-u/--no-compress`` option disables this behaviour

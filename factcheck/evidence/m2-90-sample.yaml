@@ -1,6 +1,5 @@
 - nazva: 'I2C: на спокої обидві лінії мають бути HIGH (3.3 В). Якщо немає — поломаний резистор підтягування.'
   zbih: '\*\*Мультиметр: 3\.3 В на обох лініях у спокої\.\*\* Немає — підтягування\.'
-  klas: A
   dzherelo: https://www.nxp.com/docs/en/user-guide/UM10204.pdf — NXP Semiconductors, UM10204, I2C-bus
     specification and user manual, Rev. 7.0 (2021-10-01), Section 3.1.1 «SDA and SCL signals» (p. 3)
   cytata: 'Both SDA and SCL are bidirectional lines, connected to a positive supply
@@ -36,7 +35,6 @@
   - 009acaaa
 - nazva: Сервомотор керується імпульсами 50 Гц з тривалістю 1–2 мс.
   zbih: \*\*Серво\*\* керується імпульсами 50 Гц:.*приблизно 1 мс.*2 мс.*1\.5 мс.*середина
-  klas: C
   dzherelo: 'Даташит типового хобі-серво (SG90 / MG996R): період 20 мс (50 Гц), тривалість імпульсу 1–2
     мс; у кеші немає'
   cytata: ''
@@ -58,7 +56,6 @@
   - bdfa3b50
 - nazva: 'Індекс GPIO21: сторінки 149, 310, 326, 335 додатку z'
   zbih: GPIO21 — 149, 310, 326, 335
-  klas: E
   dzherelo: Метадані структури книги (перехресні посилання в додатку z-pokazhchyk.md) — це не фактичне
     твердження, а лист сторінок
   cytata: ''
@@ -80,7 +77,6 @@
   - c240fc86
 - nazva: Сервомотор приймає 50-герцові імпульси з тривалістю 1–2 мс.
   zbih: Серво приймає імпульси \*\*50 Гц\*\*:.*один.*крайній.*2 мс.*1\.5 мс
-  klas: C
   dzherelo: 'Даташит типового хобі-серво (SG90 / MG996R): період 20 мс (50 Гц), тривалість імпульсу 1–2
     мс; у кеші немає'
   cytata: ''
@@ -102,7 +98,6 @@
   - 2c69a956
 - nazva: Реальні межі серво-імпульсів часто відрізняються від заявлених 1–2 мс (можуть бути 0.6–2.4 мс).
   zbih: \*\*Реальні межі відрізняються\.\*\*.*Заявлені 1–2 мс.*можуть бути 0\.6–2\.4 мс
-  klas: C
   dzherelo: 'Даташит типового хобі-серво (SG90 / MG996R): період 20 мс (50 Гц), тривалість імпульсу 1–2
     мс; у кеші немає'
   cytata: ''
@@ -124,7 +119,6 @@
   - 15fe46bc
 - nazva: Адреса bootloader.bin для S3, C3, C6, H2 — 0x0
   zbih: bootloader\.bin.*0x0
-  klas: A
   dzherelo: https://github.com/espressif/esp-idf/blob/master/docs/en/api-guides/bootloader.rst — ESP-IDF,
     API Guide, Bootloader (Partition table offset calculation)
   cytata: ".. Above is calculated as:\n    0x1000 at start of flash + IDF_TARGET_MAX_BOOTLOADER_SIZE +\
@@ -152,7 +146,6 @@
     S2), 0x2000 — для нових (P4, C5, H4).
 - nazva: ESP32-C3 дешевий, простий, має 400 КБ пам'яті — достатньо для простих проєктів
   zbih: Дешево, просто, 400 КБ.*C3
-  klas: C
   dzherelo: ESP32-C3 datasheet або ESP-IDF документація про характеристики чипів — не знайдено в source-cache
     конкретного документа з 400 КБ
   cytata: ''
@@ -174,7 +167,6 @@
   - 17e88944
 - nazva: При живленні модуля від 3.3 В це не гарантує, що його сигнальні рівні — 3.3 В
   zbih: Не можна вважати, що коли модуль живиться від 3\.3 В
-  klas: B
   dzherelo: 'General principle from IC datasheets: supply voltage and logic levels are independent parameters.
     Examples: INA219, MCP23017, BMP280, BME280 (all in source-cache)'
   cytata: 'Типовий приклад: INA219 живиться від 3.3 В (VCC = 3.3 V), але виводи для комунікації (SDA/SCL)
@@ -202,7 +194,6 @@
   - a481fa42
 - nazva: Лабораторний блок живлення з обмеженням струму запобігає випаленню доріжок при коротких замиканнях
   zbih: 200 мА.*замикання.*дасть більше.*випаленої доріжки
-  klas: E
   dzherelo: 'Зовнішнього джерела не існує: це порада з лабораторної практики, а не задокументована величина'
   cytata: ''
   sposib: позахідна знань, 2026-08-27
@@ -221,7 +212,6 @@
   - 2892e8fe
 - nazva: 'Індекс GPIO15: сторінки 14, 17–18, 28, 71, 142, 173, 379 додатку z'
   zbih: GPIO15.*14.*173
-  klas: E
   dzherelo: Метадані структури книги (перехресні посилання в додатку z-pokazhchyk.md) — це не фактичне
     твердження, а лист сторінок
   cytata: ''
@@ -241,7 +231,6 @@
   - e487200c
 - nazva: Код скидання 0xa — INTRUSION_RESET (детектор втручання), рідко трапляється
   zbih: '`0xa`\s+·\s+Назва\s+→\s+INTRUSION_RESET|`0xa`\s+·\s+Що\s+робити\s+→\s+рідко'
-  klas: A
   dzherelo: https://github.com/espressif/esp-idf/blob/master/components/esp_rom/include/esp32/rom/rtc.h
     — ESP-IDF, ESP32 ROM Header, Reset Reason Enumeration
   cytata: 'INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
@@ -270,7 +259,6 @@
   - 9064117d
 - nazva: На ESP32-C3 з 400 КБ два одночасні TLS-з'єднання створюють помітне навантаження
   zbih: На C3.*400 КБ.*TLS
-  klas: C
   dzherelo: ESP-IDF Programming Guide, mbedTLS memory footprint / ESP-TLS — оцінка пам'яті на з'єднання;
     цитати не дістав
   cytata: ''

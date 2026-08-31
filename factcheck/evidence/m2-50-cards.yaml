@@ -1,6 +1,5 @@
 - nazva: 'T-K03-011: CP2102 драйвер для Windows — з сайту SiLabs, Linux у ядрі'
   zbih: CP2102.*драйвер|Windows.*SiLabs
-  klas: A
   dzherelo: Silicon Labs CP2102 UART Bridge Controller datasheet (у кеші), офіційний сайт SiLabs
   cytata: 'З kartky/k03-pidkl.md, таблиця рядок 2:
 
@@ -24,7 +23,6 @@
     користувачів. Дослівне цитування з таблиці.
 - nazva: 'T-K03-013: CH340 драйвер для Windows — з сайту WCH, Linux у ядрі'
   zbih: CH340.*драйвер|Windows.*WCH|CH341
-  klas: A
   dzherelo: WCH CH340/CH341 USB-UART datasheet (у кеші), офіційний сайт WCH (wch-ic.com)
   cytata: 'З kartky/k03-pidkl.md, таблиця рядок 3:
 
@@ -50,7 +48,6 @@
     не вільно (на відміну від CH9102, де драйвер окремий).
 - nazva: 'T-K12-004: Мінімум комплекту — плата ESP32 DevKit 38 пінів з CP2102 або CH9102'
   zbih: ESP32 DevKit|38 пінів.*CP2102|CP2102.*CH9102
-  klas: A
   dzherelo: Офіційна специфікація ESP32 DevKit V4, схема модуля
   cytata: 'З kartky/k12-komplekt.md, таблиця «Мінімум», рядок 1:
 
@@ -74,7 +71,6 @@
     Кількість пінів 38 є стандартом для ESP32 DevKit V4.
 - nazva: 'T-K14-026: HC-SR04 — частий винуватець 5 В, вихід ECHO 5 В'
   zbih: HC-SR04.*ECHO|вивід.*ECHO.*5
-  klas: A
   dzherelo: Datasheet HC-SR04, документація модуля
   cytata: 'З kartky/k14-rivni.md, таблиця «Часті винуватці 5 В», рядок 1:
 
@@ -100,7 +96,6 @@
     підключенні. Потребує дільника або конвертера рівнів.
 - nazva: 'T-K11-017: Виняток із заборони 5 В — пін VIN або 5V (вхід стабілізатора)'
   zbih: VIN.*5 В|5V.*стабілізатор|виняток.*VIN
-  klas: A
   dzherelo: Схема ESP32 DevKit, постановка вхідних стабілізаторів
   cytata: 'З kartky/k11-nikoly.md, рядок 38:
 
@@ -124,7 +119,6 @@
     Це один з небагатьох місць, де 5 В не вбивають GPIO прямо, бо це не GPIO, а вхід живлення.
 - nazva: 'T-K12-007: Паяльник повинен мати терморегулятор, потужність 60 Вт, жало «скіс» 2–3 мм'
   zbih: Паяльник.*терморегулятор|60 Вт.*жало|жало.*скіс
-  klas: E
   dzherelo: Практичні рекомендації для електроніки, досвід паяння компонентів ESP32
   cytata: 'З kartky/k12-komplekt.md, таблиця «Мінімум», рядок 4:
 

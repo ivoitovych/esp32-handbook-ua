@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/12-arduino.md`
 
-Одиниць твердження: **64**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **64**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-12-001 sha:5f8c5848 src:manual/12-arduino.md:3 klas:F -->
+<!-- fc id:T-12-001 sha:5f8c5848 src:manual/12-arduino.md:3 status:unchecked -->
 ### T-12-001 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@ Arduino core — це шар сумісності поверх ESP-IDF. Не а�
 
 ---
 
-<!-- fc id:T-12-002 sha:fc7a0c3b src:manual/12-arduino.md:3 klas:F -->
+<!-- fc id:T-12-002 sha:fc7a0c3b src:manual/12-arduino.md:3 status:unchecked -->
 ### T-12-002 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@ Arduino core — це шар сумісності поверх ESP-IDF. Не а�
 
 ---
 
-<!-- fc id:T-12-003 sha:289c5c64 src:manual/12-arduino.md:7 klas:F -->
+<!-- fc id:T-12-003 sha:289c5c64 src:manual/12-arduino.md:7 status:unchecked -->
 ### T-12-003 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -76,7 +76,7 @@ Arduino core — це шар сумісності поверх ESP-IDF. Не а�
 
 ---
 
-<!-- fc id:T-12-004 sha:07066c31 src:manual/12-arduino.md:14 klas:K -->
+<!-- fc id:T-12-004 sha:07066c31 src:manual/12-arduino.md:14 status:code-context -->
 ### T-12-004 · kod · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -116,7 +116,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 ---
 
-<!-- fc id:T-12-005 sha:27233780 src:manual/12-arduino.md:19 klas:A -->
+<!-- fc id:T-12-005 sha:27233780 src:manual/12-arduino.md:19 status:verbatim -->
 ### T-12-005 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -149,7 +149,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 ---
 
-<!-- fc id:T-12-006 sha:0ebac24a src:manual/12-arduino.md:21 klas:F -->
+<!-- fc id:T-12-006 sha:0ebac24a src:manual/12-arduino.md:21 status:unchecked -->
 ### T-12-006 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -174,7 +174,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 ---
 
-<!-- fc id:T-12-007 sha:814173ff src:manual/12-arduino.md:22 klas:A -->
+<!-- fc id:T-12-007 sha:814173ff src:manual/12-arduino.md:22 status:verbatim -->
 ### T-12-007 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -209,7 +209,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 ---
 
-<!-- fc id:T-12-008 sha:72e2d973 src:manual/12-arduino.md:25 klas:E -->
+<!-- fc id:T-12-008 sha:72e2d973 src:manual/12-arduino.md:25 status:no-external-signal -->
 ### T-12-008 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -230,7 +230,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 ---
 
-<!-- fc id:T-12-009 sha:d918d43c src:manual/12-arduino.md:27 klas:A -->
+<!-- fc id:T-12-009 sha:d918d43c src:manual/12-arduino.md:27 status:verbatim -->
 ### T-12-009 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -258,7 +258,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 ---
 
-<!-- fc id:T-12-010 sha:36cf102f src:manual/12-arduino.md:30 klas:B -->
+<!-- fc id:T-12-010 sha:36cf102f src:manual/12-arduino.md:30 status:derived -->
 ### T-12-010 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -290,7 +290,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 ---
 
-<!-- fc id:T-12-011 sha:887fb8d1 src:manual/12-arduino.md:32 klas:E -->
+<!-- fc id:T-12-011 sha:887fb8d1 src:manual/12-arduino.md:32 status:no-external-signal -->
 ### T-12-011 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -313,7 +313,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 ---
 
-<!-- fc id:T-12-012 sha:51f12ec0 src:manual/12-arduino.md:34 klas:F -->
+<!-- fc id:T-12-012 sha:51f12ec0 src:manual/12-arduino.md:34 status:unchecked -->
 ### T-12-012 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -335,7 +335,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 ---
 
-<!-- fc id:T-12-013 sha:41d75311 src:manual/12-arduino.md:38 klas:F -->
+<!-- fc id:T-12-013 sha:41d75311 src:manual/12-arduino.md:38 status:unchecked -->
 ### T-12-013 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -359,7 +359,7 @@ void loop()  { Serial.println("привіт"); delay(1000); }
 
 ---
 
-<!-- fc id:T-12-014 sha:afe776c2 src:manual/12-arduino.md:42 klas:F -->
+<!-- fc id:T-12-014 sha:afe776c2 src:manual/12-arduino.md:42 status:unchecked -->
 ### T-12-014 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -382,7 +382,7 @@ API: MCPWM, PCNT, TWAI, тонке керування живленням.
 
 ---
 
-<!-- fc id:T-12-015 sha:5f00fe3c src:manual/12-arduino.md:48 klas:E -->
+<!-- fc id:T-12-015 sha:5f00fe3c src:manual/12-arduino.md:48 status:no-external-signal -->
 ### T-12-015 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -405,7 +405,7 @@ API: MCPWM, PCNT, TWAI, тонке керування живленням.
 
 ---
 
-<!-- fc id:T-12-016 sha:1251a958 src:manual/12-arduino.md:48 klas:B -->
+<!-- fc id:T-12-016 sha:1251a958 src:manual/12-arduino.md:48 status:derived -->
 ### T-12-016 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -436,7 +436,7 @@ API: MCPWM, PCNT, TWAI, тонке керування живленням.
 
 ---
 
-<!-- fc id:T-12-017 sha:16e29aab src:manual/12-arduino.md:50 klas:F -->
+<!-- fc id:T-12-017 sha:16e29aab src:manual/12-arduino.md:50 status:unchecked -->
 ### T-12-017 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -459,7 +459,7 @@ API: MCPWM, PCNT, TWAI, тонке керування живленням.
 
 ---
 
-<!-- fc id:T-12-018 sha:af7b81a8 src:manual/12-arduino.md:52 klas:F -->
+<!-- fc id:T-12-018 sha:af7b81a8 src:manual/12-arduino.md:52 status:unchecked -->
 ### T-12-018 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -481,7 +481,7 @@ API: MCPWM, PCNT, TWAI, тонке керування живленням.
 
 ---
 
-<!-- fc id:T-12-019 sha:a05e26d4 src:manual/12-arduino.md:55 klas:F -->
+<!-- fc id:T-12-019 sha:a05e26d4 src:manual/12-arduino.md:55 status:unchecked -->
 ### T-12-019 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -503,7 +503,7 @@ API: MCPWM, PCNT, TWAI, тонке керування живленням.
 
 ---
 
-<!-- fc id:T-12-020 sha:9ed0b502 src:manual/12-arduino.md:58 klas:F -->
+<!-- fc id:T-12-020 sha:9ed0b502 src:manual/12-arduino.md:58 status:unchecked -->
 ### T-12-020 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -525,7 +525,7 @@ API: MCPWM, PCNT, TWAI, тонке керування живленням.
 
 ---
 
-<!-- fc id:T-12-021 sha:2afff519 src:manual/12-arduino.md:61 klas:F -->
+<!-- fc id:T-12-021 sha:2afff519 src:manual/12-arduino.md:61 status:unchecked -->
 ### T-12-021 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -547,7 +547,7 @@ API: MCPWM, PCNT, TWAI, тонке керування живленням.
 
 ---
 
-<!-- fc id:T-12-022 sha:c19dc5e3 src:manual/12-arduino.md:66 klas:A -->
+<!-- fc id:T-12-022 sha:c19dc5e3 src:manual/12-arduino.md:66 status:verbatim -->
 ### T-12-022 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -580,7 +580,7 @@ Arduino API.
 
 ---
 
-<!-- fc id:T-12-023 sha:dab7afe7 src:manual/12-arduino.md:70 klas:F -->
+<!-- fc id:T-12-023 sha:dab7afe7 src:manual/12-arduino.md:70 status:unchecked -->
 ### T-12-023 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -603,7 +603,7 @@ IDE (розділ 26).
 
 ---
 
-<!-- fc id:T-12-024 sha:1bce55a8 src:manual/12-arduino.md:74 klas:F -->
+<!-- fc id:T-12-024 sha:1bce55a8 src:manual/12-arduino.md:74 status:unchecked -->
 ### T-12-024 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -626,7 +626,7 @@ IDE (розділ 26).
 
 ---
 
-<!-- fc id:T-12-025 sha:08a5dac5 src:manual/12-arduino.md:75 klas:B -->
+<!-- fc id:T-12-025 sha:08a5dac5 src:manual/12-arduino.md:75 status:derived -->
 ### T-12-025 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -655,7 +655,7 @@ IDE (розділ 26).
 
 ---
 
-<!-- fc id:T-12-026 sha:fea8de70 src:manual/12-arduino.md:78 klas:F -->
+<!-- fc id:T-12-026 sha:fea8de70 src:manual/12-arduino.md:78 status:unchecked -->
 ### T-12-026 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -678,7 +678,7 @@ IDE (розділ 26).
 
 ---
 
-<!-- fc id:T-12-027 sha:9f95b58e src:manual/12-arduino.md:79 klas:E -->
+<!-- fc id:T-12-027 sha:9f95b58e src:manual/12-arduino.md:79 status:no-external-signal -->
 ### T-12-027 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -701,7 +701,7 @@ IDE (розділ 26).
 
 ---
 
-<!-- fc id:T-12-028 sha:5c67aca1 src:manual/12-arduino.md:82 klas:E -->
+<!-- fc id:T-12-028 sha:5c67aca1 src:manual/12-arduino.md:82 status:no-external-signal -->
 ### T-12-028 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -724,7 +724,7 @@ IDE (розділ 26).
 
 ---
 
-<!-- fc id:T-12-029 sha:2075225d src:manual/12-arduino.md:82 klas:C -->
+<!-- fc id:T-12-029 sha:2075225d src:manual/12-arduino.md:82 status:named-unreachable -->
 ### T-12-029 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -751,7 +751,7 @@ IDE (розділ 26).
 
 ---
 
-<!-- fc id:T-12-030 sha:8c436cd6 src:manual/12-arduino.md:87 klas:A -->
+<!-- fc id:T-12-030 sha:8c436cd6 src:manual/12-arduino.md:87 status:verbatim -->
 ### T-12-030 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -783,7 +783,7 @@ IDE (розділ 26).
 
 ---
 
-<!-- fc id:T-12-031 sha:18eb8c75 src:manual/12-arduino.md:88 klas:E -->
+<!-- fc id:T-12-031 sha:18eb8c75 src:manual/12-arduino.md:88 status:no-external-signal -->
 ### T-12-031 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -808,7 +808,7 @@ IDE (розділ 26).
 
 ---
 
-<!-- fc id:T-12-032 sha:cc30c267 src:manual/12-arduino.md:92 klas:F -->
+<!-- fc id:T-12-032 sha:cc30c267 src:manual/12-arduino.md:92 status:unchecked -->
 ### T-12-032 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -831,7 +831,7 @@ IDE (розділ 26).
 
 ---
 
-<!-- fc id:T-12-033 sha:0d983155 src:manual/12-arduino.md:98 klas:A -->
+<!-- fc id:T-12-033 sha:0d983155 src:manual/12-arduino.md:98 status:verbatim -->
 ### T-12-033 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -859,7 +859,7 @@ Arduino core версії 3.x — велике оновлення: він пер
 
 ---
 
-<!-- fc id:T-12-034 sha:5460ab6b src:manual/12-arduino.md:101 klas:E -->
+<!-- fc id:T-12-034 sha:5460ab6b src:manual/12-arduino.md:101 status:no-external-signal -->
 ### T-12-034 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -880,7 +880,7 @@ Arduino core версії 3.x — велике оновлення: він пер
 
 ---
 
-<!-- fc id:T-12-035 sha:e16d2016 src:manual/12-arduino.md:103 klas:F -->
+<!-- fc id:T-12-035 sha:e16d2016 src:manual/12-arduino.md:103 status:unchecked -->
 ### T-12-035 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -902,7 +902,7 @@ Arduino core версії 3.x — велике оновлення: він пер
 
 ---
 
-<!-- fc id:T-12-036 sha:6b9a3632 src:manual/12-arduino.md:104 klas:E -->
+<!-- fc id:T-12-036 sha:6b9a3632 src:manual/12-arduino.md:104 status:no-external-signal -->
 ### T-12-036 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -924,7 +924,7 @@ Arduino core версії 3.x — велике оновлення: він пер
 
 ---
 
-<!-- fc id:T-12-037 sha:5a80dfbb src:manual/12-arduino.md:106 klas:E -->
+<!-- fc id:T-12-037 sha:5a80dfbb src:manual/12-arduino.md:106 status:no-external-signal -->
 ### T-12-037 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -946,7 +946,7 @@ Arduino core версії 3.x — велике оновлення: він пер
 
 ---
 
-<!-- fc id:T-12-038 sha:62ececc5 src:manual/12-arduino.md:109 klas:E -->
+<!-- fc id:T-12-038 sha:62ececc5 src:manual/12-arduino.md:109 status:no-external-signal -->
 ### T-12-038 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -968,7 +968,7 @@ Arduino core версії 3.x — велике оновлення: він пер
 
 ---
 
-<!-- fc id:T-12-039 sha:bcc4f74e src:manual/12-arduino.md:113 klas:E -->
+<!-- fc id:T-12-039 sha:bcc4f74e src:manual/12-arduino.md:113 status:no-external-signal -->
 ### T-12-039 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -993,7 +993,7 @@ Arduino core версії 3.x — велике оновлення: він пер
 
 ---
 
-<!-- fc id:T-12-040 sha:de8e8116 src:manual/12-arduino.md:113 klas:E -->
+<!-- fc id:T-12-040 sha:de8e8116 src:manual/12-arduino.md:113 status:no-external-signal -->
 ### T-12-040 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1018,7 +1018,7 @@ Arduino core версії 3.x — велике оновлення: він пер
 
 ---
 
-<!-- fc id:T-12-041 sha:187be4df src:manual/12-arduino.md:115 klas:E -->
+<!-- fc id:T-12-041 sha:187be4df src:manual/12-arduino.md:115 status:no-external-signal -->
 ### T-12-041 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1043,7 +1043,7 @@ Arduino core версії 3.x — велике оновлення: він пер
 
 ---
 
-<!-- fc id:T-12-042 sha:c54fccda src:manual/12-arduino.md:118 klas:F -->
+<!-- fc id:T-12-042 sha:c54fccda src:manual/12-arduino.md:118 status:unchecked -->
 ### T-12-042 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1066,7 +1066,7 @@ Arduino core версії 3.x — велике оновлення: він пер
 
 ---
 
-<!-- fc id:T-12-043 sha:da5b2aa1 src:manual/12-arduino.md:118 klas:E -->
+<!-- fc id:T-12-043 sha:da5b2aa1 src:manual/12-arduino.md:118 status:no-external-signal -->
 ### T-12-043 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1089,7 +1089,7 @@ Arduino core версії 3.x — велике оновлення: він пер
 
 ---
 
-<!-- fc id:T-12-044 sha:6a64568c src:manual/12-arduino.md:124 klas:F -->
+<!-- fc id:T-12-044 sha:6a64568c src:manual/12-arduino.md:124 status:unchecked -->
 ### T-12-044 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1112,7 +1112,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-045 sha:3a8bd8d1 src:manual/12-arduino.md:124 klas:E -->
+<!-- fc id:T-12-045 sha:3a8bd8d1 src:manual/12-arduino.md:124 status:no-external-signal -->
 ### T-12-045 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1135,7 +1135,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-046 sha:97f46337 src:manual/12-arduino.md:125 klas:E -->
+<!-- fc id:T-12-046 sha:97f46337 src:manual/12-arduino.md:125 status:no-external-signal -->
 ### T-12-046 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1158,7 +1158,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-047 sha:d1648b40 src:manual/12-arduino.md:128 klas:F -->
+<!-- fc id:T-12-047 sha:d1648b40 src:manual/12-arduino.md:128 status:unchecked -->
 ### T-12-047 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1181,7 +1181,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-048 sha:09499ed7 src:manual/12-arduino.md:132 klas:A -->
+<!-- fc id:T-12-048 sha:09499ed7 src:manual/12-arduino.md:132 status:verbatim -->
 ### T-12-048 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1211,7 +1211,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-049 sha:56dfc133 src:manual/12-arduino.md:134 klas:A -->
+<!-- fc id:T-12-049 sha:56dfc133 src:manual/12-arduino.md:134 status:verbatim -->
 ### T-12-049 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1241,7 +1241,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-050 sha:dad68612 src:manual/12-arduino.md:137 klas:F -->
+<!-- fc id:T-12-050 sha:dad68612 src:manual/12-arduino.md:137 status:unchecked -->
 ### T-12-050 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1264,7 +1264,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-051 sha:f12c5e0a src:manual/12-arduino.md:143 klas:E -->
+<!-- fc id:T-12-051 sha:f12c5e0a src:manual/12-arduino.md:143 status:no-external-signal -->
 ### T-12-051 · tablycya · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1295,7 +1295,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-052 sha:0a0746ba src:manual/12-arduino.md:145 klas:F -->
+<!-- fc id:T-12-052 sha:0a0746ba src:manual/12-arduino.md:145 status:unchecked -->
 ### T-12-052 · tablycya · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1326,7 +1326,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-053 sha:63dfc28a src:manual/12-arduino.md:146 klas:F -->
+<!-- fc id:T-12-053 sha:63dfc28a src:manual/12-arduino.md:146 status:unchecked -->
 ### T-12-053 · tablycya · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1357,7 +1357,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-054 sha:b0b336e5 src:manual/12-arduino.md:147 klas:F -->
+<!-- fc id:T-12-054 sha:b0b336e5 src:manual/12-arduino.md:147 status:unchecked -->
 ### T-12-054 · tablycya · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1388,7 +1388,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-055 sha:69ae4eb9 src:manual/12-arduino.md:148 klas:F -->
+<!-- fc id:T-12-055 sha:69ae4eb9 src:manual/12-arduino.md:148 status:unchecked -->
 ### T-12-055 · tablycya · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1419,7 +1419,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-056 sha:de47ed12 src:manual/12-arduino.md:149 klas:F -->
+<!-- fc id:T-12-056 sha:de47ed12 src:manual/12-arduino.md:149 status:unchecked -->
 ### T-12-056 · tablycya · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1450,7 +1450,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-057 sha:1a13d3c6 src:manual/12-arduino.md:150 klas:F -->
+<!-- fc id:T-12-057 sha:1a13d3c6 src:manual/12-arduino.md:150 status:unchecked -->
 ### T-12-057 · tablycya · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1481,7 +1481,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-058 sha:6abb33e2 src:manual/12-arduino.md:151 klas:A -->
+<!-- fc id:T-12-058 sha:6abb33e2 src:manual/12-arduino.md:151 status:verbatim -->
 ### T-12-058 · tablycya · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1518,7 +1518,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-059 sha:c954bdec src:manual/12-arduino.md:152 klas:A -->
+<!-- fc id:T-12-059 sha:c954bdec src:manual/12-arduino.md:152 status:verbatim -->
 ### T-12-059 · tablycya · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1555,7 +1555,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-060 sha:ae15ae1f src:manual/12-arduino.md:156 klas:F -->
+<!-- fc id:T-12-060 sha:ae15ae1f src:manual/12-arduino.md:156 status:unchecked -->
 ### T-12-060 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1577,7 +1577,7 @@ Arduino core — це шар над ESP-IDF, а не окрема платфор
 
 ---
 
-<!-- fc id:T-12-061 sha:640a93d9 src:manual/12-arduino.md:159 klas:A -->
+<!-- fc id:T-12-061 sha:640a93d9 src:manual/12-arduino.md:159 status:verbatim -->
 ### T-12-061 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1606,7 +1606,7 @@ Arduino core — це шар над ESP-IDF, а не окрема платфор
 
 ---
 
-<!-- fc id:T-12-062 sha:6ee061fa src:manual/12-arduino.md:161 klas:F -->
+<!-- fc id:T-12-062 sha:6ee061fa src:manual/12-arduino.md:161 status:unchecked -->
 ### T-12-062 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1628,7 +1628,7 @@ Arduino core — це шар над ESP-IDF, а не окрема платфор
 
 ---
 
-<!-- fc id:T-12-063 sha:aa0ffa0f src:manual/12-arduino.md:164 klas:E -->
+<!-- fc id:T-12-063 sha:aa0ffa0f src:manual/12-arduino.md:164 status:no-external-signal -->
 ### T-12-063 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**
@@ -1650,7 +1650,7 @@ Arduino core — це шар над ESP-IDF, а не окрема платфор
 
 ---
 
-<!-- fc id:T-12-064 sha:65d1b9a1 src:manual/12-arduino.md:167 klas:A -->
+<!-- fc id:T-12-064 sha:65d1b9a1 src:manual/12-arduino.md:167 status:verbatim -->
 ### T-12-064 · proza · `manual/12-arduino.md`
 
 **Твердження, коротко**

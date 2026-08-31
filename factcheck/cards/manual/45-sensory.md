@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/45-sensory.md`
 
-Одиниць твердження: **84**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **84**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-45-001 sha:f98283f2 src:manual/45-sensory.md:3 klas:E -->
+<!-- fc id:T-45-001 sha:f98283f2 src:manual/45-sensory.md:3 status:no-external-signal -->
 ### T-45-001 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-45-002 sha:985b01b7 src:manual/45-sensory.md:4 klas:E -->
+<!-- fc id:T-45-002 sha:985b01b7 src:manual/45-sensory.md:4 status:no-external-signal -->
 ### T-45-002 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-45-003 sha:ab6269d6 src:manual/45-sensory.md:9 klas:E -->
+<!-- fc id:T-45-003 sha:ab6269d6 src:manual/45-sensory.md:9 status:no-external-signal -->
 ### T-45-003 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -77,7 +77,7 @@
 
 ---
 
-<!-- fc id:T-45-004 sha:6dc696e4 src:manual/45-sensory.md:12 klas:F -->
+<!-- fc id:T-45-004 sha:6dc696e4 src:manual/45-sensory.md:12 status:unchecked -->
 ### T-45-004 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -100,7 +100,7 @@
 
 ---
 
-<!-- fc id:T-45-005 sha:4be45488 src:manual/45-sensory.md:15 klas:E -->
+<!-- fc id:T-45-005 sha:4be45488 src:manual/45-sensory.md:15 status:no-external-signal -->
 ### T-45-005 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -124,7 +124,7 @@
 
 ---
 
-<!-- fc id:T-45-006 sha:f2b3a50e src:manual/45-sensory.md:17 klas:A -->
+<!-- fc id:T-45-006 sha:f2b3a50e src:manual/45-sensory.md:17 status:verbatim -->
 ### T-45-006 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -157,7 +157,7 @@
 
 ---
 
-<!-- fc id:T-45-007 sha:6180c347 src:manual/45-sensory.md:20 klas:E -->
+<!-- fc id:T-45-007 sha:6180c347 src:manual/45-sensory.md:20 status:no-external-signal -->
 ### T-45-007 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -180,7 +180,7 @@
 
 ---
 
-<!-- fc id:T-45-008 sha:580cfcb3 src:manual/45-sensory.md:21 klas:E -->
+<!-- fc id:T-45-008 sha:580cfcb3 src:manual/45-sensory.md:21 status:no-external-signal -->
 ### T-45-008 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -203,7 +203,7 @@
 
 ---
 
-<!-- fc id:T-45-009 sha:f58237fa src:manual/45-sensory.md:24 klas:F -->
+<!-- fc id:T-45-009 sha:f58237fa src:manual/45-sensory.md:24 status:unchecked -->
 ### T-45-009 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -225,7 +225,7 @@
 
 ---
 
-<!-- fc id:T-45-010 sha:ffea012b src:manual/45-sensory.md:24 klas:E -->
+<!-- fc id:T-45-010 sha:ffea012b src:manual/45-sensory.md:24 status:no-external-signal -->
 ### T-45-010 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -247,7 +247,7 @@
 
 ---
 
-<!-- fc id:T-45-011 sha:dd00e100 src:manual/45-sensory.md:27 klas:A -->
+<!-- fc id:T-45-011 sha:dd00e100 src:manual/45-sensory.md:27 status:verbatim -->
 ### T-45-011 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -274,7 +274,7 @@
 
 ---
 
-<!-- fc id:T-45-012 sha:9dff2582 src:manual/45-sensory.md:29 klas:E -->
+<!-- fc id:T-45-012 sha:9dff2582 src:manual/45-sensory.md:29 status:no-external-signal -->
 ### T-45-012 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -295,7 +295,7 @@
 
 ---
 
-<!-- fc id:T-45-013 sha:b32f6f71 src:manual/45-sensory.md:31 klas:A -->
+<!-- fc id:T-45-013 sha:b32f6f71 src:manual/45-sensory.md:31 status:verbatim -->
 ### T-45-013 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -324,7 +324,7 @@
 
 ---
 
-<!-- fc id:T-45-014 sha:2b579321 src:manual/45-sensory.md:32 klas:E -->
+<!-- fc id:T-45-014 sha:2b579321 src:manual/45-sensory.md:32 status:no-external-signal -->
 ### T-45-014 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -347,7 +347,7 @@
 
 ---
 
-<!-- fc id:T-45-015 sha:860a8a82 src:manual/45-sensory.md:36 klas:E -->
+<!-- fc id:T-45-015 sha:860a8a82 src:manual/45-sensory.md:36 status:no-external-signal -->
 ### T-45-015 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -371,7 +371,7 @@
 
 ---
 
-<!-- fc id:T-45-016 sha:38cd9e74 src:manual/45-sensory.md:37 klas:F -->
+<!-- fc id:T-45-016 sha:38cd9e74 src:manual/45-sensory.md:37 status:unchecked -->
 ### T-45-016 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -395,7 +395,7 @@
 
 ---
 
-<!-- fc id:T-45-017 sha:1b012c58 src:manual/45-sensory.md:40 klas:E -->
+<!-- fc id:T-45-017 sha:1b012c58 src:manual/45-sensory.md:40 status:no-external-signal -->
 ### T-45-017 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -419,7 +419,7 @@
 
 ---
 
-<!-- fc id:T-45-018 sha:0492acf0 src:manual/45-sensory.md:41 klas:E -->
+<!-- fc id:T-45-018 sha:0492acf0 src:manual/45-sensory.md:41 status:no-external-signal -->
 ### T-45-018 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -443,7 +443,7 @@
 
 ---
 
-<!-- fc id:T-45-019 sha:bb1e8cca src:manual/45-sensory.md:47 klas:A -->
+<!-- fc id:T-45-019 sha:bb1e8cca src:manual/45-sensory.md:47 status:verbatim -->
 ### T-45-019 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -471,7 +471,7 @@
 
 ---
 
-<!-- fc id:T-45-020 sha:b510ea66 src:manual/45-sensory.md:47 klas:E -->
+<!-- fc id:T-45-020 sha:b510ea66 src:manual/45-sensory.md:47 status:no-external-signal -->
 ### T-45-020 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -493,7 +493,7 @@
 
 ---
 
-<!-- fc id:T-45-021 sha:e9fbd132 src:manual/45-sensory.md:50 klas:D -->
+<!-- fc id:T-45-021 sha:e9fbd132 src:manual/45-sensory.md:50 status:arithmetic -->
 ### T-45-021 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -545,7 +545,7 @@
 
 ---
 
-<!-- fc id:T-45-022 sha:9b12b877 src:manual/45-sensory.md:50 klas:E -->
+<!-- fc id:T-45-022 sha:9b12b877 src:manual/45-sensory.md:50 status:no-external-signal -->
 ### T-45-022 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -567,7 +567,7 @@
 
 ---
 
-<!-- fc id:T-45-023 sha:33b05275 src:manual/45-sensory.md:53 klas:E -->
+<!-- fc id:T-45-023 sha:33b05275 src:manual/45-sensory.md:53 status:no-external-signal -->
 ### T-45-023 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -603,7 +603,7 @@
 
 ---
 
-<!-- fc id:T-45-024 sha:9db68d88 src:manual/45-sensory.md:54 klas:E -->
+<!-- fc id:T-45-024 sha:9db68d88 src:manual/45-sensory.md:54 status:no-external-signal -->
 ### T-45-024 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -626,7 +626,7 @@
 
 ---
 
-<!-- fc id:T-45-025 sha:964d1872 src:manual/45-sensory.md:59 klas:A -->
+<!-- fc id:T-45-025 sha:964d1872 src:manual/45-sensory.md:59 status:verbatim -->
 ### T-45-025 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -663,7 +663,7 @@
 
 ---
 
-<!-- fc id:T-45-026 sha:9bd63589 src:manual/45-sensory.md:62 klas:A -->
+<!-- fc id:T-45-026 sha:9bd63589 src:manual/45-sensory.md:62 status:verbatim -->
 ### T-45-026 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -699,7 +699,7 @@ HC-SR04 живиться від 5 В і видає **5 В на виводі `ECH
 
 ---
 
-<!-- fc id:T-45-027 sha:72fb7080 src:manual/45-sensory.md:62 klas:B -->
+<!-- fc id:T-45-027 sha:72fb7080 src:manual/45-sensory.md:62 status:derived -->
 ### T-45-027 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -729,7 +729,7 @@ HC-SR04 живиться від 5 В і видає **5 В на виводі `ECH
 
 ---
 
-<!-- fc id:T-45-028 sha:607d39b0 src:manual/45-sensory.md:65 klas:B -->
+<!-- fc id:T-45-028 sha:607d39b0 src:manual/45-sensory.md:65 status:derived -->
 ### T-45-028 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -759,7 +759,7 @@ HC-SR04 живиться від 5 В і видає **5 В на виводі `ECH
 
 ---
 
-<!-- fc id:T-45-029 sha:79e7e85e src:manual/45-sensory.md:67 klas:E -->
+<!-- fc id:T-45-029 sha:79e7e85e src:manual/45-sensory.md:67 status:no-external-signal -->
 ### T-45-029 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -783,7 +783,7 @@ HC-SR04 живиться від 5 В і видає **5 В на виводі `ECH
 
 ---
 
-<!-- fc id:T-45-030 sha:1a1e523f src:manual/45-sensory.md:72 klas:B -->
+<!-- fc id:T-45-030 sha:1a1e523f src:manual/45-sensory.md:72 status:derived -->
 ### T-45-030 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -813,7 +813,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-031 sha:31a5065f src:manual/45-sensory.md:75 klas:F -->
+<!-- fc id:T-45-031 sha:31a5065f src:manual/45-sensory.md:75 status:unchecked -->
 ### T-45-031 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -837,7 +837,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-032 sha:2a17512d src:manual/45-sensory.md:77 klas:E -->
+<!-- fc id:T-45-032 sha:2a17512d src:manual/45-sensory.md:77 status:no-external-signal -->
 ### T-45-032 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -861,7 +861,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-033 sha:d209abb5 src:manual/45-sensory.md:80 klas:B -->
+<!-- fc id:T-45-033 sha:d209abb5 src:manual/45-sensory.md:80 status:derived -->
 ### T-45-033 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -893,7 +893,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-034 sha:59ffce0b src:manual/45-sensory.md:82 klas:E -->
+<!-- fc id:T-45-034 sha:59ffce0b src:manual/45-sensory.md:82 status:no-external-signal -->
 ### T-45-034 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -916,7 +916,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-035 sha:4abe54ad src:manual/45-sensory.md:84 klas:B -->
+<!-- fc id:T-45-035 sha:4abe54ad src:manual/45-sensory.md:84 status:derived -->
 ### T-45-035 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -948,7 +948,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-036 sha:ead84544 src:manual/45-sensory.md:88 klas:B -->
+<!-- fc id:T-45-036 sha:ead84544 src:manual/45-sensory.md:88 status:derived -->
 ### T-45-036 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -980,7 +980,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-037 sha:1e1cfee5 src:manual/45-sensory.md:88 klas:E -->
+<!-- fc id:T-45-037 sha:1e1cfee5 src:manual/45-sensory.md:88 status:no-external-signal -->
 ### T-45-037 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1003,7 +1003,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-038 sha:b08e4e7b src:manual/45-sensory.md:89 klas:E -->
+<!-- fc id:T-45-038 sha:b08e4e7b src:manual/45-sensory.md:89 status:no-external-signal -->
 ### T-45-038 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1026,7 +1026,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-039 sha:07c8b23f src:manual/45-sensory.md:92 klas:F -->
+<!-- fc id:T-45-039 sha:07c8b23f src:manual/45-sensory.md:92 status:unchecked -->
 ### T-45-039 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1050,7 +1050,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-040 sha:c45bf34b src:manual/45-sensory.md:92 klas:E -->
+<!-- fc id:T-45-040 sha:c45bf34b src:manual/45-sensory.md:92 status:no-external-signal -->
 ### T-45-040 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1074,7 +1074,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-041 sha:ed1ff776 src:manual/45-sensory.md:92 klas:E -->
+<!-- fc id:T-45-041 sha:ed1ff776 src:manual/45-sensory.md:92 status:no-external-signal -->
 ### T-45-041 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1111,7 +1111,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-042 sha:5e2cd7d1 src:manual/45-sensory.md:99 klas:F -->
+<!-- fc id:T-45-042 sha:5e2cd7d1 src:manual/45-sensory.md:99 status:unchecked -->
 ### T-45-042 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1133,7 +1133,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-043 sha:fa828b48 src:manual/45-sensory.md:99 klas:E -->
+<!-- fc id:T-45-043 sha:fa828b48 src:manual/45-sensory.md:99 status:no-external-signal -->
 ### T-45-043 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1155,7 +1155,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-044 sha:8856f975 src:manual/45-sensory.md:100 klas:E -->
+<!-- fc id:T-45-044 sha:8856f975 src:manual/45-sensory.md:100 status:no-external-signal -->
 ### T-45-044 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1177,7 +1177,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-045 sha:ca24635b src:manual/45-sensory.md:102 klas:F -->
+<!-- fc id:T-45-045 sha:ca24635b src:manual/45-sensory.md:102 status:unchecked -->
 ### T-45-045 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1199,7 +1199,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-046 sha:a05495f4 src:manual/45-sensory.md:103 klas:E -->
+<!-- fc id:T-45-046 sha:a05495f4 src:manual/45-sensory.md:103 status:no-external-signal -->
 ### T-45-046 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1221,7 +1221,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-047 sha:88545a12 src:manual/45-sensory.md:106 klas:E -->
+<!-- fc id:T-45-047 sha:88545a12 src:manual/45-sensory.md:106 status:no-external-signal -->
 ### T-45-047 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1245,7 +1245,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-048 sha:d582c0f3 src:manual/45-sensory.md:107 klas:E -->
+<!-- fc id:T-45-048 sha:d582c0f3 src:manual/45-sensory.md:107 status:no-external-signal -->
 ### T-45-048 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1269,7 +1269,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-049 sha:4f140978 src:manual/45-sensory.md:110 klas:E -->
+<!-- fc id:T-45-049 sha:4f140978 src:manual/45-sensory.md:110 status:no-external-signal -->
 ### T-45-049 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1293,7 +1293,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-050 sha:648bb12a src:manual/45-sensory.md:110 klas:E -->
+<!-- fc id:T-45-050 sha:648bb12a src:manual/45-sensory.md:110 status:no-external-signal -->
 ### T-45-050 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1317,7 +1317,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-051 sha:c7750d94 src:manual/45-sensory.md:117 klas:F -->
+<!-- fc id:T-45-051 sha:c7750d94 src:manual/45-sensory.md:117 status:unchecked -->
 ### T-45-051 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1340,7 +1340,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-052 sha:7cfc8b8b src:manual/45-sensory.md:118 klas:A -->
+<!-- fc id:T-45-052 sha:7cfc8b8b src:manual/45-sensory.md:118 status:verbatim -->
 ### T-45-052 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1370,7 +1370,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-053 sha:024e5599 src:manual/45-sensory.md:121 klas:E -->
+<!-- fc id:T-45-053 sha:024e5599 src:manual/45-sensory.md:121 status:no-external-signal -->
 ### T-45-053 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1394,7 +1394,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-054 sha:84afa568 src:manual/45-sensory.md:122 klas:E -->
+<!-- fc id:T-45-054 sha:84afa568 src:manual/45-sensory.md:122 status:no-external-signal -->
 ### T-45-054 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1418,7 +1418,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-055 sha:526d2b40 src:manual/45-sensory.md:128 klas:A -->
+<!-- fc id:T-45-055 sha:526d2b40 src:manual/45-sensory.md:128 status:verbatim -->
 ### T-45-055 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1454,7 +1454,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-056 sha:d1a6cace src:manual/45-sensory.md:129 klas:E -->
+<!-- fc id:T-45-056 sha:d1a6cace src:manual/45-sensory.md:129 status:no-external-signal -->
 ### T-45-056 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1477,7 +1477,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-057 sha:7785706c src:manual/45-sensory.md:132 klas:A -->
+<!-- fc id:T-45-057 sha:7785706c src:manual/45-sensory.md:132 status:verbatim -->
 ### T-45-057 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1507,7 +1507,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-058 sha:766b49cb src:manual/45-sensory.md:132 klas:E -->
+<!-- fc id:T-45-058 sha:766b49cb src:manual/45-sensory.md:132 status:no-external-signal -->
 ### T-45-058 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1530,7 +1530,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-059 sha:b3106cdf src:manual/45-sensory.md:134 klas:E -->
+<!-- fc id:T-45-059 sha:b3106cdf src:manual/45-sensory.md:134 status:no-external-signal -->
 ### T-45-059 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1553,7 +1553,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-060 sha:e2b7c624 src:manual/45-sensory.md:136 klas:E -->
+<!-- fc id:T-45-060 sha:e2b7c624 src:manual/45-sensory.md:136 status:no-external-signal -->
 ### T-45-060 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1588,7 +1588,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-061 sha:76e959f7 src:manual/45-sensory.md:137 klas:E -->
+<!-- fc id:T-45-061 sha:76e959f7 src:manual/45-sensory.md:137 status:no-external-signal -->
 ### T-45-061 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1610,7 +1610,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-062 sha:002e174c src:manual/45-sensory.md:141 klas:C -->
+<!-- fc id:T-45-062 sha:002e174c src:manual/45-sensory.md:141 status:named-unreachable -->
 ### T-45-062 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1638,7 +1638,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-063 sha:4626ef98 src:manual/45-sensory.md:145 klas:K -->
+<!-- fc id:T-45-063 sha:4626ef98 src:manual/45-sensory.md:145 status:code-context -->
 ### T-45-063 · kod · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1665,7 +1665,7 @@ $GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,...
 
 ---
 
-<!-- fc id:T-45-064 sha:2561e953 src:manual/45-sensory.md:150 klas:E -->
+<!-- fc id:T-45-064 sha:2561e953 src:manual/45-sensory.md:150 status:no-external-signal -->
 ### T-45-064 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1687,7 +1687,7 @@ $GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,...
 
 ---
 
-<!-- fc id:T-45-065 sha:5b5a8c52 src:manual/45-sensory.md:150 klas:E -->
+<!-- fc id:T-45-065 sha:5b5a8c52 src:manual/45-sensory.md:150 status:no-external-signal -->
 ### T-45-065 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1709,7 +1709,7 @@ $GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,...
 
 ---
 
-<!-- fc id:T-45-066 sha:c46fe763 src:manual/45-sensory.md:155 klas:E -->
+<!-- fc id:T-45-066 sha:c46fe763 src:manual/45-sensory.md:155 status:no-external-signal -->
 ### T-45-066 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1732,7 +1732,7 @@ $GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,...
 
 ---
 
-<!-- fc id:T-45-067 sha:43f74f18 src:manual/45-sensory.md:156 klas:E -->
+<!-- fc id:T-45-067 sha:43f74f18 src:manual/45-sensory.md:156 status:no-external-signal -->
 ### T-45-067 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1755,7 +1755,7 @@ $GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,...
 
 ---
 
-<!-- fc id:T-45-068 sha:0c0b30fb src:manual/45-sensory.md:159 klas:E -->
+<!-- fc id:T-45-068 sha:0c0b30fb src:manual/45-sensory.md:159 status:no-external-signal -->
 ### T-45-068 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1776,7 +1776,7 @@ $GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,...
 
 ---
 
-<!-- fc id:T-45-069 sha:b1f7746f src:manual/45-sensory.md:161 klas:E -->
+<!-- fc id:T-45-069 sha:b1f7746f src:manual/45-sensory.md:161 status:no-external-signal -->
 ### T-45-069 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1799,7 +1799,7 @@ $GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,...
 
 ---
 
-<!-- fc id:T-45-070 sha:1cedf1a7 src:manual/45-sensory.md:166 klas:E -->
+<!-- fc id:T-45-070 sha:1cedf1a7 src:manual/45-sensory.md:166 status:no-external-signal -->
 ### T-45-070 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1824,7 +1824,7 @@ $GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,...
 
 ---
 
-<!-- fc id:T-45-071 sha:0145e3dd src:manual/45-sensory.md:167 klas:E -->
+<!-- fc id:T-45-071 sha:0145e3dd src:manual/45-sensory.md:167 status:no-external-signal -->
 ### T-45-071 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1849,7 +1849,7 @@ $GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,...
 
 ---
 
-<!-- fc id:T-45-072 sha:eca9dad9 src:manual/45-sensory.md:171 klas:E -->
+<!-- fc id:T-45-072 sha:eca9dad9 src:manual/45-sensory.md:171 status:no-external-signal -->
 ### T-45-072 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1871,7 +1871,7 @@ $GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,...
 
 ---
 
-<!-- fc id:T-45-073 sha:26a78710 src:manual/45-sensory.md:176 klas:E -->
+<!-- fc id:T-45-073 sha:26a78710 src:manual/45-sensory.md:176 status:no-external-signal -->
 ### T-45-073 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1892,7 +1892,7 @@ $GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,...
 
 ---
 
-<!-- fc id:T-45-074 sha:440777a9 src:manual/45-sensory.md:178 klas:E -->
+<!-- fc id:T-45-074 sha:440777a9 src:manual/45-sensory.md:178 status:no-external-signal -->
 ### T-45-074 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1913,7 +1913,7 @@ $GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,...
 
 ---
 
-<!-- fc id:T-45-075 sha:c3e1b386 src:manual/45-sensory.md:180 klas:A -->
+<!-- fc id:T-45-075 sha:c3e1b386 src:manual/45-sensory.md:180 status:verbatim -->
 ### T-45-075 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1946,7 +1946,7 @@ DS18B20 — це код помилки (розділ 37).
 
 ---
 
-<!-- fc id:T-45-076 sha:267273b7 src:manual/45-sensory.md:184 klas:E -->
+<!-- fc id:T-45-076 sha:267273b7 src:manual/45-sensory.md:184 status:no-external-signal -->
 ### T-45-076 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1970,7 +1970,7 @@ DS18B20 — це код помилки (розділ 37).
 
 ---
 
-<!-- fc id:T-45-077 sha:ab32b5f8 src:manual/45-sensory.md:187 klas:E -->
+<!-- fc id:T-45-077 sha:ab32b5f8 src:manual/45-sensory.md:187 status:no-external-signal -->
 ### T-45-077 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1994,7 +1994,7 @@ DS18B20 — це код помилки (розділ 37).
 
 ---
 
-<!-- fc id:T-45-078 sha:2bd4ee43 src:manual/45-sensory.md:188 klas:E -->
+<!-- fc id:T-45-078 sha:2bd4ee43 src:manual/45-sensory.md:188 status:no-external-signal -->
 ### T-45-078 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -2018,7 +2018,7 @@ DS18B20 — це код помилки (розділ 37).
 
 ---
 
-<!-- fc id:T-45-079 sha:35fe4286 src:manual/45-sensory.md:194 klas:F -->
+<!-- fc id:T-45-079 sha:35fe4286 src:manual/45-sensory.md:194 status:unchecked -->
 ### T-45-079 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -2039,7 +2039,7 @@ DHT22 гірший за BME280 майже в усьому; для нового �
 
 ---
 
-<!-- fc id:T-45-080 sha:0f871e08 src:manual/45-sensory.md:196 klas:A -->
+<!-- fc id:T-45-080 sha:0f871e08 src:manual/45-sensory.md:196 status:verbatim -->
 ### T-45-080 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -2067,7 +2067,7 @@ HC-SR04 видає 5 В на `ECHO` — дільник обов'язковий.
 
 ---
 
-<!-- fc id:T-45-081 sha:cb932d41 src:manual/45-sensory.md:198 klas:E -->
+<!-- fc id:T-45-081 sha:cb932d41 src:manual/45-sensory.md:198 status:no-external-signal -->
 ### T-45-081 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -2089,7 +2089,7 @@ HC-SR04 видає 5 В на `ECHO` — дільник обов'язковий.
 
 ---
 
-<!-- fc id:T-45-082 sha:905f181d src:manual/45-sensory.md:201 klas:E -->
+<!-- fc id:T-45-082 sha:905f181d src:manual/45-sensory.md:201 status:no-external-signal -->
 ### T-45-082 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -2110,7 +2110,7 @@ HC-SR04 видає 5 В на `ECHO` — дільник обов'язковий.
 
 ---
 
-<!-- fc id:T-45-083 sha:9cb51310 src:manual/45-sensory.md:203 klas:E -->
+<!-- fc id:T-45-083 sha:9cb51310 src:manual/45-sensory.md:203 status:no-external-signal -->
 ### T-45-083 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -2131,7 +2131,7 @@ HC-SR04 видає 5 В на `ECHO` — дільник обов'язковий.
 
 ---
 
-<!-- fc id:T-45-084 sha:966b98a2 src:manual/45-sensory.md:205 klas:E -->
+<!-- fc id:T-45-084 sha:966b98a2 src:manual/45-sensory.md:205 status:no-external-signal -->
 ### T-45-084 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**

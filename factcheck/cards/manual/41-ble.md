@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/41-ble.md`
 
-Одиниць твердження: **82**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **82**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-41-001 sha:f6628fea src:manual/41-ble.md:3 klas:F -->
+<!-- fc id:T-41-001 sha:f6628fea src:manual/41-ble.md:3 status:unchecked -->
 ### T-41-001 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@ Bluetooth на ESP32 — тема, де найлегше витратити ча
 
 ---
 
-<!-- fc id:T-41-002 sha:87624831 src:manual/41-ble.md:9 klas:A -->
+<!-- fc id:T-41-002 sha:87624831 src:manual/41-ble.md:9 status:verbatim -->
 ### T-41-002 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -68,7 +68,7 @@ Bluetooth на ESP32 — тема, де найлегше витратити ча
 
 ---
 
-<!-- fc id:T-41-003 sha:06fa7a1a src:manual/41-ble.md:10 klas:A -->
+<!-- fc id:T-41-003 sha:06fa7a1a src:manual/41-ble.md:10 status:verbatim -->
 ### T-41-003 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -106,7 +106,7 @@ Bluetooth на ESP32 — тема, де найлегше витратити ча
 
 ---
 
-<!-- fc id:T-41-004 sha:6530cc25 src:manual/41-ble.md:12 klas:E -->
+<!-- fc id:T-41-004 sha:6530cc25 src:manual/41-ble.md:12 status:no-external-signal -->
 ### T-41-004 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -128,7 +128,7 @@ Bluetooth на ESP32 — тема, де найлегше витратити ча
 
 ---
 
-<!-- fc id:T-41-005 sha:b8cb3f66 src:manual/41-ble.md:12 klas:E -->
+<!-- fc id:T-41-005 sha:b8cb3f66 src:manual/41-ble.md:12 status:no-external-signal -->
 ### T-41-005 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -150,7 +150,7 @@ Bluetooth на ESP32 — тема, де найлегше витратити ча
 
 ---
 
-<!-- fc id:T-41-006 sha:78640fc8 src:manual/41-ble.md:15 klas:E -->
+<!-- fc id:T-41-006 sha:78640fc8 src:manual/41-ble.md:15 status:no-external-signal -->
 ### T-41-006 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -174,7 +174,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-007 sha:9a9b3be0 src:manual/41-ble.md:20 klas:A -->
+<!-- fc id:T-41-007 sha:9a9b3be0 src:manual/41-ble.md:20 status:verbatim -->
 ### T-41-007 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -203,7 +203,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-008 sha:37b75670 src:manual/41-ble.md:21 klas:E -->
+<!-- fc id:T-41-008 sha:37b75670 src:manual/41-ble.md:21 status:no-external-signal -->
 ### T-41-008 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -226,7 +226,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-009 sha:6c734931 src:manual/41-ble.md:26 klas:F -->
+<!-- fc id:T-41-009 sha:6c734931 src:manual/41-ble.md:26 status:unchecked -->
 ### T-41-009 · tablycya-shapka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -256,7 +256,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-010 sha:55309baf src:manual/41-ble.md:28 klas:E -->
+<!-- fc id:T-41-010 sha:55309baf src:manual/41-ble.md:28 status:no-external-signal -->
 ### T-41-010 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -292,7 +292,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-011 sha:ca7eb120 src:manual/41-ble.md:28 klas:A -->
+<!-- fc id:T-41-011 sha:ca7eb120 src:manual/41-ble.md:28 status:verbatim -->
 ### T-41-011 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -397,7 +397,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-012 sha:dadfcd93 src:manual/41-ble.md:29 klas:E -->
+<!-- fc id:T-41-012 sha:dadfcd93 src:manual/41-ble.md:29 status:no-external-signal -->
 ### T-41-012 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -433,7 +433,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-013 sha:01ce171b src:manual/41-ble.md:29 klas:F -->
+<!-- fc id:T-41-013 sha:01ce171b src:manual/41-ble.md:29 status:unchecked -->
 ### T-41-013 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -469,7 +469,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-014 sha:48639305 src:manual/41-ble.md:30 klas:E -->
+<!-- fc id:T-41-014 sha:48639305 src:manual/41-ble.md:30 status:no-external-signal -->
 ### T-41-014 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -505,7 +505,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-015 sha:ed26a2f5 src:manual/41-ble.md:30 klas:A -->
+<!-- fc id:T-41-015 sha:ed26a2f5 src:manual/41-ble.md:30 status:verbatim -->
 ### T-41-015 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -547,7 +547,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-016 sha:3acb9138 src:manual/41-ble.md:31 klas:E -->
+<!-- fc id:T-41-016 sha:3acb9138 src:manual/41-ble.md:31 status:no-external-signal -->
 ### T-41-016 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -583,7 +583,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-017 sha:cf950a32 src:manual/41-ble.md:31 klas:F -->
+<!-- fc id:T-41-017 sha:cf950a32 src:manual/41-ble.md:31 status:unchecked -->
 ### T-41-017 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -619,7 +619,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-018 sha:087229f4 src:manual/41-ble.md:32 klas:E -->
+<!-- fc id:T-41-018 sha:087229f4 src:manual/41-ble.md:32 status:no-external-signal -->
 ### T-41-018 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -655,7 +655,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-019 sha:cff9038c src:manual/41-ble.md:32 klas:A -->
+<!-- fc id:T-41-019 sha:cff9038c src:manual/41-ble.md:32 status:verbatim -->
 ### T-41-019 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -697,7 +697,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-020 sha:fe2aada0 src:manual/41-ble.md:33 klas:E -->
+<!-- fc id:T-41-020 sha:fe2aada0 src:manual/41-ble.md:33 status:no-external-signal -->
 ### T-41-020 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -733,7 +733,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-021 sha:1df8009c src:manual/41-ble.md:33 klas:F -->
+<!-- fc id:T-41-021 sha:1df8009c src:manual/41-ble.md:33 status:unchecked -->
 ### T-41-021 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -769,7 +769,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-022 sha:5a5441a8 src:manual/41-ble.md:34 klas:E -->
+<!-- fc id:T-41-022 sha:5a5441a8 src:manual/41-ble.md:34 status:no-external-signal -->
 ### T-41-022 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -805,7 +805,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-023 sha:8a345583 src:manual/41-ble.md:34 klas:F -->
+<!-- fc id:T-41-023 sha:8a345583 src:manual/41-ble.md:34 status:unchecked -->
 ### T-41-023 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -841,7 +841,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-024 sha:e8134748 src:manual/41-ble.md:36 klas:E -->
+<!-- fc id:T-41-024 sha:e8134748 src:manual/41-ble.md:36 status:no-external-signal -->
 ### T-41-024 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -863,7 +863,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-025 sha:e26940e5 src:manual/41-ble.md:39 klas:F -->
+<!-- fc id:T-41-025 sha:e26940e5 src:manual/41-ble.md:39 status:unchecked -->
 ### T-41-025 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -886,7 +886,7 @@ iOS із Bluetooth Classic для довільних пристроїв прак
 
 ---
 
-<!-- fc id:T-41-026 sha:01b61ea1 src:manual/41-ble.md:45 klas:E -->
+<!-- fc id:T-41-026 sha:01b61ea1 src:manual/41-ble.md:45 status:no-external-signal -->
 ### T-41-026 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -908,7 +908,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-027 sha:054abfcc src:manual/41-ble.md:48 klas:E -->
+<!-- fc id:T-41-027 sha:054abfcc src:manual/41-ble.md:48 status:no-external-signal -->
 ### T-41-027 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -929,7 +929,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-028 sha:2b68f60f src:manual/41-ble.md:48 klas:E -->
+<!-- fc id:T-41-028 sha:2b68f60f src:manual/41-ble.md:48 status:no-external-signal -->
 ### T-41-028 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -950,7 +950,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-029 sha:2fefd5b6 src:manual/41-ble.md:50 klas:E -->
+<!-- fc id:T-41-029 sha:2fefd5b6 src:manual/41-ble.md:50 status:no-external-signal -->
 ### T-41-029 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -972,7 +972,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-030 sha:1cb8e270 src:manual/41-ble.md:51 klas:E -->
+<!-- fc id:T-41-030 sha:1cb8e270 src:manual/41-ble.md:51 status:no-external-signal -->
 ### T-41-030 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -994,7 +994,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-031 sha:181164db src:manual/41-ble.md:53 klas:E -->
+<!-- fc id:T-41-031 sha:181164db src:manual/41-ble.md:53 status:no-external-signal -->
 ### T-41-031 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1016,7 +1016,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-032 sha:4dea69c1 src:manual/41-ble.md:53 klas:E -->
+<!-- fc id:T-41-032 sha:4dea69c1 src:manual/41-ble.md:53 status:no-external-signal -->
 ### T-41-032 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1038,7 +1038,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-033 sha:55de95d4 src:manual/41-ble.md:56 klas:E -->
+<!-- fc id:T-41-033 sha:55de95d4 src:manual/41-ble.md:56 status:no-external-signal -->
 ### T-41-033 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1061,7 +1061,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-034 sha:dce1a60e src:manual/41-ble.md:56 klas:E -->
+<!-- fc id:T-41-034 sha:dce1a60e src:manual/41-ble.md:56 status:no-external-signal -->
 ### T-41-034 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1084,7 +1084,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-035 sha:8af20e65 src:manual/41-ble.md:61 klas:F -->
+<!-- fc id:T-41-035 sha:8af20e65 src:manual/41-ble.md:61 status:unchecked -->
 ### T-41-035 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1108,7 +1108,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-036 sha:5619b766 src:manual/41-ble.md:62 klas:F -->
+<!-- fc id:T-41-036 sha:5619b766 src:manual/41-ble.md:62 status:unchecked -->
 ### T-41-036 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1132,7 +1132,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-037 sha:ad12af6e src:manual/41-ble.md:65 klas:E -->
+<!-- fc id:T-41-037 sha:ad12af6e src:manual/41-ble.md:65 status:no-external-signal -->
 ### T-41-037 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1158,7 +1158,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-038 sha:32a9ba20 src:manual/41-ble.md:66 klas:A -->
+<!-- fc id:T-41-038 sha:32a9ba20 src:manual/41-ble.md:66 status:verbatim -->
 ### T-41-038 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1190,7 +1190,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-039 sha:d9e54fe1 src:manual/41-ble.md:68 klas:E -->
+<!-- fc id:T-41-039 sha:d9e54fe1 src:manual/41-ble.md:68 status:no-external-signal -->
 ### T-41-039 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1216,7 +1216,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-040 sha:f1921f7b src:manual/41-ble.md:74 klas:A -->
+<!-- fc id:T-41-040 sha:f1921f7b src:manual/41-ble.md:74 status:verbatim -->
 ### T-41-040 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1243,7 +1243,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-041 sha:be3db6f9 src:manual/41-ble.md:76 klas:A -->
+<!-- fc id:T-41-041 sha:be3db6f9 src:manual/41-ble.md:76 status:verbatim -->
 ### T-41-041 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1271,7 +1271,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-042 sha:5a38b893 src:manual/41-ble.md:76 klas:E -->
+<!-- fc id:T-41-042 sha:5a38b893 src:manual/41-ble.md:76 status:no-external-signal -->
 ### T-41-042 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1293,7 +1293,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-043 sha:3aa1db4f src:manual/41-ble.md:79 klas:A -->
+<!-- fc id:T-41-043 sha:3aa1db4f src:manual/41-ble.md:79 status:verbatim -->
 ### T-41-043 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1320,7 +1320,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-044 sha:7d83be34 src:manual/41-ble.md:82 klas:A -->
+<!-- fc id:T-41-044 sha:7d83be34 src:manual/41-ble.md:82 status:verbatim -->
 ### T-41-044 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1350,7 +1350,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-045 sha:4ad04ec3 src:manual/41-ble.md:86 klas:E -->
+<!-- fc id:T-41-045 sha:4ad04ec3 src:manual/41-ble.md:86 status:no-external-signal -->
 ### T-41-045 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1372,7 +1372,7 @@ classic-чипі.
 
 ---
 
-<!-- fc id:T-41-046 sha:c9bf4f76 src:manual/41-ble.md:89 klas:A -->
+<!-- fc id:T-41-046 sha:c9bf4f76 src:manual/41-ble.md:89 status:verbatim -->
 ### T-41-046 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1416,7 +1416,7 @@ classic-чипі.
 
 ---
 
-<!-- fc id:T-41-047 sha:76516abc src:manual/41-ble.md:95 klas:F -->
+<!-- fc id:T-41-047 sha:76516abc src:manual/41-ble.md:95 status:unchecked -->
 ### T-41-047 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1438,7 +1438,7 @@ Bluetooth — найважчий компонент після Wi-Fi. Проши
 
 ---
 
-<!-- fc id:T-41-048 sha:7611ba9c src:manual/41-ble.md:95 klas:F -->
+<!-- fc id:T-41-048 sha:7611ba9c src:manual/41-ble.md:95 status:unchecked -->
 ### T-41-048 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1460,7 +1460,7 @@ Bluetooth — найважчий компонент після Wi-Fi. Проши
 
 ---
 
-<!-- fc id:T-41-049 sha:642e02fc src:manual/41-ble.md:100 klas:A -->
+<!-- fc id:T-41-049 sha:642e02fc src:manual/41-ble.md:100 status:verbatim -->
 ### T-41-049 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1490,7 +1490,7 @@ Bluetooth — найважчий компонент після Wi-Fi. Проши
 
 ---
 
-<!-- fc id:T-41-050 sha:7942e32b src:manual/41-ble.md:101 klas:E -->
+<!-- fc id:T-41-050 sha:7942e32b src:manual/41-ble.md:101 status:no-external-signal -->
 ### T-41-050 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1514,7 +1514,7 @@ Bluetooth — найважчий компонент після Wi-Fi. Проши
 
 ---
 
-<!-- fc id:T-41-051 sha:340f962d src:manual/41-ble.md:101 klas:E -->
+<!-- fc id:T-41-051 sha:340f962d src:manual/41-ble.md:101 status:no-external-signal -->
 ### T-41-051 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1538,7 +1538,7 @@ Bluetooth — найважчий компонент після Wi-Fi. Проши
 
 ---
 
-<!-- fc id:T-41-052 sha:f98180c6 src:manual/41-ble.md:105 klas:C -->
+<!-- fc id:T-41-052 sha:f98180c6 src:manual/41-ble.md:105 status:named-unreachable -->
 ### T-41-052 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1564,7 +1564,7 @@ Bluetooth — найважчий компонент після Wi-Fi. Проши
 
 ---
 
-<!-- fc id:T-41-053 sha:667124ed src:manual/41-ble.md:108 klas:F -->
+<!-- fc id:T-41-053 sha:667124ed src:manual/41-ble.md:108 status:unchecked -->
 ### T-41-053 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1587,7 +1587,7 @@ Bluetooth — найважчий компонент після Wi-Fi. Проши
 
 ---
 
-<!-- fc id:T-41-054 sha:881b2151 src:manual/41-ble.md:114 klas:A -->
+<!-- fc id:T-41-054 sha:881b2151 src:manual/41-ble.md:114 status:verbatim -->
 ### T-41-054 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1615,7 +1615,7 @@ BLE спроєктований для батарейок, і його голов
 
 ---
 
-<!-- fc id:T-41-055 sha:d790ddd4 src:manual/41-ble.md:117 klas:E -->
+<!-- fc id:T-41-055 sha:d790ddd4 src:manual/41-ble.md:117 status:no-external-signal -->
 ### T-41-055 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1651,7 +1651,7 @@ BLE спроєктований для батарейок, і його голов
 
 ---
 
-<!-- fc id:T-41-056 sha:186463f4 src:manual/41-ble.md:118 klas:E -->
+<!-- fc id:T-41-056 sha:186463f4 src:manual/41-ble.md:118 status:no-external-signal -->
 ### T-41-056 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1674,7 +1674,7 @@ BLE спроєктований для батарейок, і його голов
 
 ---
 
-<!-- fc id:T-41-057 sha:9cbaca90 src:manual/41-ble.md:121 klas:E -->
+<!-- fc id:T-41-057 sha:9cbaca90 src:manual/41-ble.md:121 status:no-external-signal -->
 ### T-41-057 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1697,7 +1697,7 @@ BLE спроєктований для батарейок, і його голов
 
 ---
 
-<!-- fc id:T-41-058 sha:c2356973 src:manual/41-ble.md:121 klas:E -->
+<!-- fc id:T-41-058 sha:c2356973 src:manual/41-ble.md:121 status:no-external-signal -->
 ### T-41-058 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1720,7 +1720,7 @@ BLE спроєктований для батарейок, і його голов
 
 ---
 
-<!-- fc id:T-41-059 sha:efb33e27 src:manual/41-ble.md:125 klas:E -->
+<!-- fc id:T-41-059 sha:efb33e27 src:manual/41-ble.md:125 status:no-external-signal -->
 ### T-41-059 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1743,7 +1743,7 @@ BLE спроєктований для батарейок, і його голов
 
 ---
 
-<!-- fc id:T-41-060 sha:f5e909aa src:manual/41-ble.md:125 klas:E -->
+<!-- fc id:T-41-060 sha:f5e909aa src:manual/41-ble.md:125 status:no-external-signal -->
 ### T-41-060 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1766,7 +1766,7 @@ BLE спроєктований для батарейок, і його голов
 
 ---
 
-<!-- fc id:T-41-061 sha:b4d73a01 src:manual/41-ble.md:131 klas:F -->
+<!-- fc id:T-41-061 sha:b4d73a01 src:manual/41-ble.md:131 status:unchecked -->
 ### T-41-061 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1788,7 +1788,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-062 sha:f44698af src:manual/41-ble.md:131 klas:E -->
+<!-- fc id:T-41-062 sha:f44698af src:manual/41-ble.md:131 status:no-external-signal -->
 ### T-41-062 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1810,7 +1810,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-063 sha:71310120 src:manual/41-ble.md:134 klas:E -->
+<!-- fc id:T-41-063 sha:71310120 src:manual/41-ble.md:134 status:no-external-signal -->
 ### T-41-063 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1831,7 +1831,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-064 sha:98f1d808 src:manual/41-ble.md:136 klas:E -->
+<!-- fc id:T-41-064 sha:98f1d808 src:manual/41-ble.md:136 status:no-external-signal -->
 ### T-41-064 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1855,7 +1855,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-065 sha:74bf0e1b src:manual/41-ble.md:142 klas:E -->
+<!-- fc id:T-41-065 sha:74bf0e1b src:manual/41-ble.md:142 status:no-external-signal -->
 ### T-41-065 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1879,7 +1879,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-066 sha:46321b22 src:manual/41-ble.md:143 klas:E -->
+<!-- fc id:T-41-066 sha:46321b22 src:manual/41-ble.md:143 status:no-external-signal -->
 ### T-41-066 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1903,7 +1903,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-067 sha:0d6116bf src:manual/41-ble.md:146 klas:E -->
+<!-- fc id:T-41-067 sha:0d6116bf src:manual/41-ble.md:146 status:no-external-signal -->
 ### T-41-067 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1926,7 +1926,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-068 sha:3dd125e1 src:manual/41-ble.md:152 klas:E -->
+<!-- fc id:T-41-068 sha:3dd125e1 src:manual/41-ble.md:152 status:no-external-signal -->
 ### T-41-068 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1947,7 +1947,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-069 sha:6c9574e5 src:manual/41-ble.md:154 klas:F -->
+<!-- fc id:T-41-069 sha:6c9574e5 src:manual/41-ble.md:154 status:unchecked -->
 ### T-41-069 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1971,7 +1971,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-070 sha:bd8802ff src:manual/41-ble.md:156 klas:E -->
+<!-- fc id:T-41-070 sha:bd8802ff src:manual/41-ble.md:156 status:no-external-signal -->
 ### T-41-070 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1995,7 +1995,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-071 sha:8225efdc src:manual/41-ble.md:161 klas:A -->
+<!-- fc id:T-41-071 sha:8225efdc src:manual/41-ble.md:161 status:verbatim -->
 ### T-41-071 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -2033,7 +2033,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-072 sha:f484e4a2 src:manual/41-ble.md:163 klas:A -->
+<!-- fc id:T-41-072 sha:f484e4a2 src:manual/41-ble.md:163 status:verbatim -->
 ### T-41-072 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -2071,7 +2071,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-073 sha:96b52b3c src:manual/41-ble.md:166 klas:E -->
+<!-- fc id:T-41-073 sha:96b52b3c src:manual/41-ble.md:166 status:no-external-signal -->
 ### T-41-073 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -2093,7 +2093,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-074 sha:d1aba810 src:manual/41-ble.md:169 klas:E -->
+<!-- fc id:T-41-074 sha:d1aba810 src:manual/41-ble.md:169 status:no-external-signal -->
 ### T-41-074 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -2116,7 +2116,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-075 sha:bba733d9 src:manual/41-ble.md:169 klas:E -->
+<!-- fc id:T-41-075 sha:bba733d9 src:manual/41-ble.md:169 status:no-external-signal -->
 ### T-41-075 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -2139,7 +2139,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-076 sha:24c52040 src:manual/41-ble.md:171 klas:E -->
+<!-- fc id:T-41-076 sha:24c52040 src:manual/41-ble.md:171 status:no-external-signal -->
 ### T-41-076 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -2162,7 +2162,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-077 sha:4a3cd76b src:manual/41-ble.md:175 klas:F -->
+<!-- fc id:T-41-077 sha:4a3cd76b src:manual/41-ble.md:175 status:unchecked -->
 ### T-41-077 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -2183,7 +2183,7 @@ Classic — тільки на classic-чипі; SPP на S3 і C3 не існу�
 
 ---
 
-<!-- fc id:T-41-078 sha:92698aea src:manual/41-ble.md:177 klas:A -->
+<!-- fc id:T-41-078 sha:92698aea src:manual/41-ble.md:177 status:verbatim -->
 ### T-41-078 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -2210,7 +2210,7 @@ Classic — тільки на classic-чипі; SPP на S3 і C3 не існу�
 
 ---
 
-<!-- fc id:T-41-079 sha:dd5da72d src:manual/41-ble.md:179 klas:F -->
+<!-- fc id:T-41-079 sha:dd5da72d src:manual/41-ble.md:179 status:unchecked -->
 ### T-41-079 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -2232,7 +2232,7 @@ BLE публікує структуру даних, а не потік; опис
 
 ---
 
-<!-- fc id:T-41-080 sha:4d008387 src:manual/41-ble.md:182 klas:E -->
+<!-- fc id:T-41-080 sha:4d008387 src:manual/41-ble.md:182 status:no-external-signal -->
 ### T-41-080 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -2253,7 +2253,7 @@ BLE публікує структуру даних, а не потік; опис
 
 ---
 
-<!-- fc id:T-41-081 sha:997bf1c7 src:manual/41-ble.md:184 klas:E -->
+<!-- fc id:T-41-081 sha:997bf1c7 src:manual/41-ble.md:184 status:no-external-signal -->
 ### T-41-081 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -2274,7 +2274,7 @@ BLE публікує структуру даних, а не потік; опис
 
 ---
 
-<!-- fc id:T-41-082 sha:12158bb4 src:manual/41-ble.md:186 klas:E -->
+<!-- fc id:T-41-082 sha:12158bb4 src:manual/41-ble.md:186 status:no-external-signal -->
 ### T-41-082 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**

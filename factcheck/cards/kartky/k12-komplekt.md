@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k12-komplekt.md`
 
-Одиниць твердження: **26**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **26**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-K12-001 sha:b7ac1f6f src:kartky/k12-komplekt.md:3 klas:E -->
+<!-- fc id:T-K12-001 sha:b7ac1f6f src:kartky/k12-komplekt.md:3 status:no-external-signal -->
 ### T-K12-001 · proza · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-K12-002 sha:80786acd src:kartky/k12-komplekt.md:4 klas:E -->
+<!-- fc id:T-K12-002 sha:80786acd src:kartky/k12-komplekt.md:4 status:no-external-signal -->
 ### T-K12-002 · proza · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-K12-003 sha:657b4a4a src:kartky/k12-komplekt.md:8 klas:E -->
+<!-- fc id:T-K12-003 sha:657b4a4a src:kartky/k12-komplekt.md:8 status:no-external-signal -->
 ### T-K12-003 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -82,7 +82,7 @@
 
 ---
 
-<!-- fc id:T-K12-004 sha:9b5bf3c1 src:kartky/k12-komplekt.md:10 klas:A -->
+<!-- fc id:T-K12-004 sha:9b5bf3c1 src:kartky/k12-komplekt.md:10 status:verbatim -->
 ### T-K12-004 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -119,7 +119,7 @@
 
 ---
 
-<!-- fc id:T-K12-005 sha:bd72695a src:kartky/k12-komplekt.md:11 klas:F -->
+<!-- fc id:T-K12-005 sha:bd72695a src:kartky/k12-komplekt.md:11 status:unchecked -->
 ### T-K12-005 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-K12-006 sha:4c3647dc src:kartky/k12-komplekt.md:12 klas:E -->
+<!-- fc id:T-K12-006 sha:4c3647dc src:kartky/k12-komplekt.md:12 status:no-external-signal -->
 ### T-K12-006 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -179,7 +179,7 @@
 
 ---
 
-<!-- fc id:T-K12-007 sha:c1d3acaf src:kartky/k12-komplekt.md:13 klas:E -->
+<!-- fc id:T-K12-007 sha:c1d3acaf src:kartky/k12-komplekt.md:13 status:no-external-signal -->
 ### T-K12-007 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -216,7 +216,7 @@
 
 ---
 
-<!-- fc id:T-K12-008 sha:c0340132 src:kartky/k12-komplekt.md:14 klas:F -->
+<!-- fc id:T-K12-008 sha:c0340132 src:kartky/k12-komplekt.md:14 status:unchecked -->
 ### T-K12-008 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -246,7 +246,7 @@
 
 ---
 
-<!-- fc id:T-K12-009 sha:a9460077 src:kartky/k12-komplekt.md:15 klas:E -->
+<!-- fc id:T-K12-009 sha:a9460077 src:kartky/k12-komplekt.md:15 status:no-external-signal -->
 ### T-K12-009 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -276,7 +276,7 @@
 
 ---
 
-<!-- fc id:T-K12-010 sha:486d111a src:kartky/k12-komplekt.md:16 klas:F -->
+<!-- fc id:T-K12-010 sha:486d111a src:kartky/k12-komplekt.md:16 status:unchecked -->
 ### T-K12-010 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -306,7 +306,7 @@
 
 ---
 
-<!-- fc id:T-K12-011 sha:c17398d2 src:kartky/k12-komplekt.md:20 klas:E -->
+<!-- fc id:T-K12-011 sha:c17398d2 src:kartky/k12-komplekt.md:20 status:no-external-signal -->
 ### T-K12-011 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -335,7 +335,7 @@
 
 ---
 
-<!-- fc id:T-K12-012 sha:ebc50087 src:kartky/k12-komplekt.md:22 klas:F -->
+<!-- fc id:T-K12-012 sha:ebc50087 src:kartky/k12-komplekt.md:22 status:unchecked -->
 ### T-K12-012 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -364,7 +364,7 @@
 
 ---
 
-<!-- fc id:T-K12-013 sha:0d1862f5 src:kartky/k12-komplekt.md:23 klas:E -->
+<!-- fc id:T-K12-013 sha:0d1862f5 src:kartky/k12-komplekt.md:23 status:no-external-signal -->
 ### T-K12-013 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -393,7 +393,7 @@
 
 ---
 
-<!-- fc id:T-K12-014 sha:099dd21e src:kartky/k12-komplekt.md:24 klas:F -->
+<!-- fc id:T-K12-014 sha:099dd21e src:kartky/k12-komplekt.md:24 status:unchecked -->
 ### T-K12-014 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -422,7 +422,7 @@
 
 ---
 
-<!-- fc id:T-K12-015 sha:8b45e4ee src:kartky/k12-komplekt.md:25 klas:E -->
+<!-- fc id:T-K12-015 sha:8b45e4ee src:kartky/k12-komplekt.md:25 status:no-external-signal -->
 ### T-K12-015 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -451,7 +451,7 @@
 
 ---
 
-<!-- fc id:T-K12-016 sha:48827a35 src:kartky/k12-komplekt.md:26 klas:E -->
+<!-- fc id:T-K12-016 sha:48827a35 src:kartky/k12-komplekt.md:26 status:no-external-signal -->
 ### T-K12-016 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -480,7 +480,7 @@
 
 ---
 
-<!-- fc id:T-K12-017 sha:03d93916 src:kartky/k12-komplekt.md:27 klas:E -->
+<!-- fc id:T-K12-017 sha:03d93916 src:kartky/k12-komplekt.md:27 status:no-external-signal -->
 ### T-K12-017 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -522,7 +522,7 @@
 
 ---
 
-<!-- fc id:T-K12-018 sha:1b8bc5af src:kartky/k12-komplekt.md:31 klas:F -->
+<!-- fc id:T-K12-018 sha:1b8bc5af src:kartky/k12-komplekt.md:31 status:unchecked -->
 ### T-K12-018 · proza · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -545,7 +545,7 @@
 
 ---
 
-<!-- fc id:T-K12-019 sha:12400d92 src:kartky/k12-komplekt.md:36 klas:E -->
+<!-- fc id:T-K12-019 sha:12400d92 src:kartky/k12-komplekt.md:36 status:no-external-signal -->
 ### T-K12-019 · proza · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -569,7 +569,7 @@
 
 ---
 
-<!-- fc id:T-K12-020 sha:1b0b7fbc src:kartky/k12-komplekt.md:37 klas:E -->
+<!-- fc id:T-K12-020 sha:1b0b7fbc src:kartky/k12-komplekt.md:37 status:no-external-signal -->
 ### T-K12-020 · proza · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -600,7 +600,7 @@
 
 ---
 
-<!-- fc id:T-K12-021 sha:ca8103ea src:kartky/k12-komplekt.md:38 klas:E -->
+<!-- fc id:T-K12-021 sha:ca8103ea src:kartky/k12-komplekt.md:38 status:no-external-signal -->
 ### T-K12-021 · proza · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -624,7 +624,7 @@
 
 ---
 
-<!-- fc id:T-K12-022 sha:82a0ccd2 src:kartky/k12-komplekt.md:40 klas:E -->
+<!-- fc id:T-K12-022 sha:82a0ccd2 src:kartky/k12-komplekt.md:40 status:no-external-signal -->
 ### T-K12-022 · proza · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -647,7 +647,7 @@
 
 ---
 
-<!-- fc id:T-K12-023 sha:03e71077 src:kartky/k12-komplekt.md:41 klas:E -->
+<!-- fc id:T-K12-023 sha:03e71077 src:kartky/k12-komplekt.md:41 status:no-external-signal -->
 ### T-K12-023 · proza · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -670,7 +670,7 @@
 
 ---
 
-<!-- fc id:T-K12-024 sha:d1d78dad src:kartky/k12-komplekt.md:46 klas:E -->
+<!-- fc id:T-K12-024 sha:d1d78dad src:kartky/k12-komplekt.md:46 status:no-external-signal -->
 ### T-K12-024 · proza · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -704,7 +704,7 @@
 
 ---
 
-<!-- fc id:T-K12-025 sha:fe2d70c5 src:kartky/k12-komplekt.md:50 klas:E -->
+<!-- fc id:T-K12-025 sha:fe2d70c5 src:kartky/k12-komplekt.md:50 status:no-external-signal -->
 ### T-K12-025 · proza · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -727,7 +727,7 @@
 
 ---
 
-<!-- fc id:T-K12-026 sha:bdd9d08f src:kartky/k12-komplekt.md:51 klas:E -->
+<!-- fc id:T-K12-026 sha:bdd9d08f src:kartky/k12-komplekt.md:51 status:no-external-signal -->
 ### T-K12-026 · proza · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**

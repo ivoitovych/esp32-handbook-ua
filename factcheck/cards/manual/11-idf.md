@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/11-idf.md`
 
-Одиниць твердження: **114**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **114**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-11-001 sha:c439acee src:manual/11-idf.md:3 klas:A -->
+<!-- fc id:T-11-001 sha:c439acee src:manual/11-idf.md:3 status:verbatim -->
 ### T-11-001 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -38,7 +38,7 @@ Espressif. Це нормативне ядро довідника (Р3): **усі
 
 ---
 
-<!-- fc id:T-11-002 sha:a6a27a96 src:manual/11-idf.md:4 klas:E -->
+<!-- fc id:T-11-002 sha:a6a27a96 src:manual/11-idf.md:4 status:no-external-signal -->
 ### T-11-002 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -62,7 +62,7 @@ Espressif. Це нормативне ядро довідника (Р3): **усі
 
 ---
 
-<!-- fc id:T-11-003 sha:2d573128 src:manual/11-idf.md:5 klas:E -->
+<!-- fc id:T-11-003 sha:2d573128 src:manual/11-idf.md:5 status:no-external-signal -->
 ### T-11-003 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -86,7 +86,7 @@ Espressif. Це нормативне ядро довідника (Р3): **усі
 
 ---
 
-<!-- fc id:T-11-004 sha:aca5e141 src:manual/11-idf.md:8 klas:E -->
+<!-- fc id:T-11-004 sha:aca5e141 src:manual/11-idf.md:8 status:no-external-signal -->
 ### T-11-004 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -109,7 +109,7 @@ Espressif. Це нормативне ядро довідника (Р3): **усі
 
 ---
 
-<!-- fc id:T-11-005 sha:6ca25b1b src:manual/11-idf.md:8 klas:F -->
+<!-- fc id:T-11-005 sha:6ca25b1b src:manual/11-idf.md:8 status:unchecked -->
 ### T-11-005 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -132,7 +132,7 @@ Espressif. Це нормативне ядро довідника (Р3): **усі
 
 ---
 
-<!-- fc id:T-11-006 sha:7a0f5fb1 src:manual/11-idf.md:14 klas:F -->
+<!-- fc id:T-11-006 sha:7a0f5fb1 src:manual/11-idf.md:14 status:unchecked -->
 ### T-11-006 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -153,7 +153,7 @@ ESP-IDF — не IDE і не редактор. Це набір із трьох �
 
 ---
 
-<!-- fc id:T-11-007 sha:98e3184f src:manual/11-idf.md:14 klas:E -->
+<!-- fc id:T-11-007 sha:98e3184f src:manual/11-idf.md:14 status:no-external-signal -->
 ### T-11-007 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -174,7 +174,7 @@ ESP-IDF — не IDE і не редактор. Це набір із трьох �
 
 ---
 
-<!-- fc id:T-11-008 sha:5b336bce src:manual/11-idf.md:16 klas:E -->
+<!-- fc id:T-11-008 sha:5b336bce src:manual/11-idf.md:16 status:no-external-signal -->
 ### T-11-008 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -196,7 +196,7 @@ ESP-IDF — не IDE і не редактор. Це набір із трьох �
 
 ---
 
-<!-- fc id:T-11-009 sha:01b9ad9c src:manual/11-idf.md:19 klas:F -->
+<!-- fc id:T-11-009 sha:01b9ad9c src:manual/11-idf.md:19 status:unchecked -->
 ### T-11-009 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -218,7 +218,7 @@ TCP/IP, TLS, файлові системи, система збирання.
 
 ---
 
-<!-- fc id:T-11-010 sha:115d0bb0 src:manual/11-idf.md:22 klas:F -->
+<!-- fc id:T-11-010 sha:115d0bb0 src:manual/11-idf.md:22 status:unchecked -->
 ### T-11-010 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -239,7 +239,7 @@ TCP/IP, TLS, файлові системи, система збирання.
 
 ---
 
-<!-- fc id:T-11-011 sha:6f1fde55 src:manual/11-idf.md:24 klas:E -->
+<!-- fc id:T-11-011 sha:6f1fde55 src:manual/11-idf.md:24 status:no-external-signal -->
 ### T-11-011 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -261,7 +261,7 @@ TCP/IP, TLS, файлові системи, система збирання.
 
 ---
 
-<!-- fc id:T-11-012 sha:9fc56b73 src:manual/11-idf.md:24 klas:E -->
+<!-- fc id:T-11-012 sha:9fc56b73 src:manual/11-idf.md:24 status:no-external-signal -->
 ### T-11-012 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -283,7 +283,7 @@ TCP/IP, TLS, файлові системи, система збирання.
 
 ---
 
-<!-- fc id:T-11-013 sha:1c7d2f6d src:manual/11-idf.md:29 klas:A -->
+<!-- fc id:T-11-013 sha:1c7d2f6d src:manual/11-idf.md:29 status:verbatim -->
 ### T-11-013 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -312,7 +312,7 @@ TCP/IP, TLS, файлові системи, система збирання.
 
 ---
 
-<!-- fc id:T-11-014 sha:232edefc src:manual/11-idf.md:30 klas:E -->
+<!-- fc id:T-11-014 sha:232edefc src:manual/11-idf.md:30 status:no-external-signal -->
 ### T-11-014 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -335,7 +335,7 @@ TCP/IP, TLS, файлові системи, система збирання.
 
 ---
 
-<!-- fc id:T-11-015 sha:693d11db src:manual/11-idf.md:33 klas:E -->
+<!-- fc id:T-11-015 sha:693d11db src:manual/11-idf.md:33 status:no-external-signal -->
 ### T-11-015 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -356,7 +356,7 @@ TCP/IP, TLS, файлові системи, система збирання.
 
 ---
 
-<!-- fc id:T-11-016 sha:42462c79 src:manual/11-idf.md:35 klas:K -->
+<!-- fc id:T-11-016 sha:42462c79 src:manual/11-idf.md:35 status:code-context -->
 ### T-11-016 · kod · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -401,7 +401,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
 
 ---
 
-<!-- fc id:T-11-017 sha:4ec07181 src:manual/11-idf.md:38 klas:F -->
+<!-- fc id:T-11-017 sha:4ec07181 src:manual/11-idf.md:38 status:unchecked -->
 ### T-11-017 · kod-ryadok · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -427,7 +427,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
 
 ---
 
-<!-- fc id:T-11-018 sha:3e0507b3 src:manual/11-idf.md:42 klas:F -->
+<!-- fc id:T-11-018 sha:3e0507b3 src:manual/11-idf.md:42 status:unchecked -->
 ### T-11-018 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -450,7 +450,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
 
 ---
 
-<!-- fc id:T-11-019 sha:e93e5118 src:manual/11-idf.md:42 klas:E -->
+<!-- fc id:T-11-019 sha:e93e5118 src:manual/11-idf.md:42 status:no-external-signal -->
 ### T-11-019 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -473,7 +473,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
 
 ---
 
-<!-- fc id:T-11-020 sha:984a5640 src:manual/11-idf.md:46 klas:F -->
+<!-- fc id:T-11-020 sha:984a5640 src:manual/11-idf.md:46 status:unchecked -->
 ### T-11-020 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -497,7 +497,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
 
 ---
 
-<!-- fc id:T-11-021 sha:888536e2 src:manual/11-idf.md:51 klas:E -->
+<!-- fc id:T-11-021 sha:888536e2 src:manual/11-idf.md:51 status:no-external-signal -->
 ### T-11-021 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -518,7 +518,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
 
 ---
 
-<!-- fc id:T-11-022 sha:18cc1794 src:manual/11-idf.md:53 klas:K -->
+<!-- fc id:T-11-022 sha:18cc1794 src:manual/11-idf.md:53 status:code-context -->
 ### T-11-022 · kod · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -557,7 +557,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
 
 ---
 
-<!-- fc id:T-11-023 sha:0be88b75 src:manual/11-idf.md:57 klas:A -->
+<!-- fc id:T-11-023 sha:0be88b75 src:manual/11-idf.md:57 status:verbatim -->
 ### T-11-023 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -587,7 +587,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
 
 ---
 
-<!-- fc id:T-11-024 sha:0228ed12 src:manual/11-idf.md:58 klas:F -->
+<!-- fc id:T-11-024 sha:0228ed12 src:manual/11-idf.md:58 status:unchecked -->
 ### T-11-024 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -609,7 +609,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
 
 ---
 
-<!-- fc id:T-11-025 sha:bace5aec src:manual/11-idf.md:61 klas:A -->
+<!-- fc id:T-11-025 sha:bace5aec src:manual/11-idf.md:61 status:verbatim -->
 ### T-11-025 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -640,7 +640,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
 
 ---
 
-<!-- fc id:T-11-026 sha:7f434299 src:manual/11-idf.md:66 klas:E -->
+<!-- fc id:T-11-026 sha:7f434299 src:manual/11-idf.md:66 status:no-external-signal -->
 ### T-11-026 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -661,7 +661,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
 
 ---
 
-<!-- fc id:T-11-027 sha:00ed8f72 src:manual/11-idf.md:68 klas:K -->
+<!-- fc id:T-11-027 sha:00ed8f72 src:manual/11-idf.md:68 status:code-context -->
 ### T-11-027 · kod · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -702,7 +702,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-028 sha:cf88f218 src:manual/11-idf.md:76 klas:F -->
+<!-- fc id:T-11-028 sha:cf88f218 src:manual/11-idf.md:76 status:unchecked -->
 ### T-11-028 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -725,7 +725,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-029 sha:22686ee3 src:manual/11-idf.md:77 klas:E -->
+<!-- fc id:T-11-029 sha:22686ee3 src:manual/11-idf.md:77 status:no-external-signal -->
 ### T-11-029 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -748,7 +748,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-030 sha:27977674 src:manual/11-idf.md:82 klas:A -->
+<!-- fc id:T-11-030 sha:27977674 src:manual/11-idf.md:82 status:verbatim -->
 ### T-11-030 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -782,7 +782,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-031 sha:533b9d1b src:manual/11-idf.md:83 klas:A -->
+<!-- fc id:T-11-031 sha:533b9d1b src:manual/11-idf.md:83 status:verbatim -->
 ### T-11-031 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -816,7 +816,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-032 sha:b08cbe22 src:manual/11-idf.md:86 klas:A -->
+<!-- fc id:T-11-032 sha:b08cbe22 src:manual/11-idf.md:86 status:verbatim -->
 ### T-11-032 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -849,7 +849,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-033 sha:c16c258a src:manual/11-idf.md:89 klas:F -->
+<!-- fc id:T-11-033 sha:c16c258a src:manual/11-idf.md:89 status:unchecked -->
 ### T-11-033 · tablycya-shapka · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -876,7 +876,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-034 sha:78e5f719 src:manual/11-idf.md:91 klas:E -->
+<!-- fc id:T-11-034 sha:78e5f719 src:manual/11-idf.md:91 status:no-external-signal -->
 ### T-11-034 · komirka · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -909,7 +909,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-035 sha:46f331f8 src:manual/11-idf.md:91 klas:E -->
+<!-- fc id:T-11-035 sha:46f331f8 src:manual/11-idf.md:91 status:no-external-signal -->
 ### T-11-035 · komirka · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -942,7 +942,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-036 sha:47dc3778 src:manual/11-idf.md:92 klas:E -->
+<!-- fc id:T-11-036 sha:47dc3778 src:manual/11-idf.md:92 status:no-external-signal -->
 ### T-11-036 · komirka · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -975,7 +975,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-037 sha:2b4cd2d7 src:manual/11-idf.md:92 klas:E -->
+<!-- fc id:T-11-037 sha:2b4cd2d7 src:manual/11-idf.md:92 status:no-external-signal -->
 ### T-11-037 · komirka · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1008,7 +1008,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-038 sha:882e41f3 src:manual/11-idf.md:94 klas:A -->
+<!-- fc id:T-11-038 sha:882e41f3 src:manual/11-idf.md:94 status:verbatim -->
 ### T-11-038 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1043,7 +1043,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-039 sha:a90e26a1 src:manual/11-idf.md:95 klas:E -->
+<!-- fc id:T-11-039 sha:a90e26a1 src:manual/11-idf.md:95 status:no-external-signal -->
 ### T-11-039 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1067,7 +1067,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-040 sha:2fad35f1 src:manual/11-idf.md:99 klas:F -->
+<!-- fc id:T-11-040 sha:2fad35f1 src:manual/11-idf.md:99 status:unchecked -->
 ### T-11-040 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1089,7 +1089,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-041 sha:42e78ff8 src:manual/11-idf.md:102 klas:E -->
+<!-- fc id:T-11-041 sha:42e78ff8 src:manual/11-idf.md:102 status:no-external-signal -->
 ### T-11-041 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1111,7 +1111,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-042 sha:69692866 src:manual/11-idf.md:106 klas:A -->
+<!-- fc id:T-11-042 sha:69692866 src:manual/11-idf.md:106 status:verbatim -->
 ### T-11-042 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1140,7 +1140,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-043 sha:eabaabfc src:manual/11-idf.md:109 klas:E -->
+<!-- fc id:T-11-043 sha:eabaabfc src:manual/11-idf.md:109 status:no-external-signal -->
 ### T-11-043 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1165,7 +1165,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-044 sha:81a03404 src:manual/11-idf.md:110 klas:F -->
+<!-- fc id:T-11-044 sha:81a03404 src:manual/11-idf.md:110 status:unchecked -->
 ### T-11-044 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1190,7 +1190,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-045 sha:00a5a033 src:manual/11-idf.md:117 klas:K -->
+<!-- fc id:T-11-045 sha:00a5a033 src:manual/11-idf.md:117 status:code-context -->
 ### T-11-045 · kod · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1247,7 +1247,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-046 sha:d6abda16 src:manual/11-idf.md:118 klas:A -->
+<!-- fc id:T-11-046 sha:d6abda16 src:manual/11-idf.md:118 status:verbatim -->
 ### T-11-046 · kod-ryadok · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1297,7 +1297,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-047 sha:06600da0 src:manual/11-idf.md:120 klas:A -->
+<!-- fc id:T-11-047 sha:06600da0 src:manual/11-idf.md:120 status:verbatim -->
 ### T-11-047 · kod-ryadok · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1347,7 +1347,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-048 sha:cc032d7c src:manual/11-idf.md:121 klas:A -->
+<!-- fc id:T-11-048 sha:cc032d7c src:manual/11-idf.md:121 status:verbatim -->
 ### T-11-048 · kod-ryadok · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1397,7 +1397,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-049 sha:5e640044 src:manual/11-idf.md:122 klas:F -->
+<!-- fc id:T-11-049 sha:5e640044 src:manual/11-idf.md:122 status:unchecked -->
 ### T-11-049 · kod-ryadok · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1425,7 +1425,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-050 sha:e801663f src:manual/11-idf.md:123 klas:F -->
+<!-- fc id:T-11-050 sha:e801663f src:manual/11-idf.md:123 status:unchecked -->
 ### T-11-050 · kod-ryadok · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1453,7 +1453,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-051 sha:e5fd373d src:manual/11-idf.md:126 klas:E -->
+<!-- fc id:T-11-051 sha:e5fd373d src:manual/11-idf.md:126 status:no-external-signal -->
 ### T-11-051 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1475,7 +1475,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-052 sha:4190b6cd src:manual/11-idf.md:131 klas:E -->
+<!-- fc id:T-11-052 sha:4190b6cd src:manual/11-idf.md:131 status:no-external-signal -->
 ### T-11-052 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1505,7 +1505,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-053 sha:97dccaab src:manual/11-idf.md:133 klas:A -->
+<!-- fc id:T-11-053 sha:97dccaab src:manual/11-idf.md:133 status:verbatim -->
 ### T-11-053 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1557,7 +1557,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-054 sha:a86f0507 src:manual/11-idf.md:134 klas:A -->
+<!-- fc id:T-11-054 sha:a86f0507 src:manual/11-idf.md:134 status:verbatim -->
 ### T-11-054 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1609,7 +1609,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-055 sha:a9a92f98 src:manual/11-idf.md:135 klas:A -->
+<!-- fc id:T-11-055 sha:a9a92f98 src:manual/11-idf.md:135 status:verbatim -->
 ### T-11-055 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1661,7 +1661,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-056 sha:f35c665f src:manual/11-idf.md:136 klas:A -->
+<!-- fc id:T-11-056 sha:f35c665f src:manual/11-idf.md:136 status:verbatim -->
 ### T-11-056 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1713,7 +1713,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-057 sha:1186843d src:manual/11-idf.md:137 klas:A -->
+<!-- fc id:T-11-057 sha:1186843d src:manual/11-idf.md:137 status:verbatim -->
 ### T-11-057 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1765,7 +1765,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-058 sha:09d2833f src:manual/11-idf.md:138 klas:F -->
+<!-- fc id:T-11-058 sha:09d2833f src:manual/11-idf.md:138 status:unchecked -->
 ### T-11-058 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1795,7 +1795,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-059 sha:353bbc21 src:manual/11-idf.md:141 klas:A -->
+<!-- fc id:T-11-059 sha:353bbc21 src:manual/11-idf.md:141 status:verbatim -->
 ### T-11-059 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1840,7 +1840,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-060 sha:1d5199b0 src:manual/11-idf.md:141 klas:F -->
+<!-- fc id:T-11-060 sha:1d5199b0 src:manual/11-idf.md:141 status:unchecked -->
 ### T-11-060 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1863,7 +1863,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-061 sha:06df15e9 src:manual/11-idf.md:144 klas:F -->
+<!-- fc id:T-11-061 sha:06df15e9 src:manual/11-idf.md:144 status:unchecked -->
 ### T-11-061 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1886,7 +1886,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-062 sha:8a5fcf22 src:manual/11-idf.md:145 klas:A -->
+<!-- fc id:T-11-062 sha:8a5fcf22 src:manual/11-idf.md:145 status:verbatim -->
 ### T-11-062 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1915,7 +1915,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-063 sha:92f022f5 src:manual/11-idf.md:148 klas:F -->
+<!-- fc id:T-11-063 sha:92f022f5 src:manual/11-idf.md:148 status:unchecked -->
 ### T-11-063 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1938,7 +1938,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-064 sha:a7338ec1 src:manual/11-idf.md:154 klas:K -->
+<!-- fc id:T-11-064 sha:a7338ec1 src:manual/11-idf.md:154 status:code-context -->
 ### T-11-064 · kod · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1985,7 +1985,7 @@ my-project/
 
 ---
 
-<!-- fc id:T-11-065 sha:9a92072a src:manual/11-idf.md:169 klas:F -->
+<!-- fc id:T-11-065 sha:9a92072a src:manual/11-idf.md:169 status:unchecked -->
 ### T-11-065 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2008,7 +2008,7 @@ my-project/
 
 ---
 
-<!-- fc id:T-11-066 sha:f1cf37ab src:manual/11-idf.md:170 klas:B -->
+<!-- fc id:T-11-066 sha:f1cf37ab src:manual/11-idf.md:170 status:derived -->
 ### T-11-066 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2037,7 +2037,7 @@ my-project/
 
 ---
 
-<!-- fc id:T-11-067 sha:2f7191bd src:manual/11-idf.md:173 klas:F -->
+<!-- fc id:T-11-067 sha:2f7191bd src:manual/11-idf.md:173 status:unchecked -->
 ### T-11-067 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2058,7 +2058,7 @@ my-project/
 
 ---
 
-<!-- fc id:T-11-068 sha:8de84f8b src:manual/11-idf.md:175 klas:K -->
+<!-- fc id:T-11-068 sha:8de84f8b src:manual/11-idf.md:175 status:code-context -->
 ### T-11-068 · kod · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2103,7 +2103,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-069 sha:9f570c51 src:manual/11-idf.md:183 klas:F -->
+<!-- fc id:T-11-069 sha:9f570c51 src:manual/11-idf.md:183 status:unchecked -->
 ### T-11-069 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2126,7 +2126,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-070 sha:4ac1a7a0 src:manual/11-idf.md:183 klas:F -->
+<!-- fc id:T-11-070 sha:4ac1a7a0 src:manual/11-idf.md:183 status:unchecked -->
 ### T-11-070 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2149,7 +2149,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-071 sha:36388c21 src:manual/11-idf.md:189 klas:A -->
+<!-- fc id:T-11-071 sha:36388c21 src:manual/11-idf.md:189 status:verbatim -->
 ### T-11-071 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2193,7 +2193,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-072 sha:fbe4ac5b src:manual/11-idf.md:189 klas:E -->
+<!-- fc id:T-11-072 sha:fbe4ac5b src:manual/11-idf.md:189 status:no-external-signal -->
 ### T-11-072 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2215,7 +2215,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-073 sha:0158929d src:manual/11-idf.md:192 klas:E -->
+<!-- fc id:T-11-073 sha:0158929d src:manual/11-idf.md:192 status:no-external-signal -->
 ### T-11-073 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2247,7 +2247,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-074 sha:57a55a93 src:manual/11-idf.md:194 klas:A -->
+<!-- fc id:T-11-074 sha:57a55a93 src:manual/11-idf.md:194 status:verbatim -->
 ### T-11-074 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2303,7 +2303,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-075 sha:033562ec src:manual/11-idf.md:195 klas:A -->
+<!-- fc id:T-11-075 sha:033562ec src:manual/11-idf.md:195 status:verbatim -->
 ### T-11-075 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2351,7 +2351,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-076 sha:f28a9ac4 src:manual/11-idf.md:196 klas:A -->
+<!-- fc id:T-11-076 sha:f28a9ac4 src:manual/11-idf.md:196 status:verbatim -->
 ### T-11-076 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2407,7 +2407,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-077 sha:059c90a8 src:manual/11-idf.md:197 klas:A -->
+<!-- fc id:T-11-077 sha:059c90a8 src:manual/11-idf.md:197 status:verbatim -->
 ### T-11-077 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2463,7 +2463,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-078 sha:0e5b79ed src:manual/11-idf.md:198 klas:A -->
+<!-- fc id:T-11-078 sha:0e5b79ed src:manual/11-idf.md:198 status:verbatim -->
 ### T-11-078 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2519,7 +2519,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-079 sha:d697a4b5 src:manual/11-idf.md:199 klas:A -->
+<!-- fc id:T-11-079 sha:d697a4b5 src:manual/11-idf.md:199 status:verbatim -->
 ### T-11-079 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2575,7 +2575,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-080 sha:24eabbac src:manual/11-idf.md:200 klas:A -->
+<!-- fc id:T-11-080 sha:24eabbac src:manual/11-idf.md:200 status:verbatim -->
 ### T-11-080 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2625,7 +2625,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-081 sha:a0fbdfcd src:manual/11-idf.md:202 klas:A -->
+<!-- fc id:T-11-081 sha:a0fbdfcd src:manual/11-idf.md:202 status:verbatim -->
 ### T-11-081 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2673,7 +2673,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-082 sha:a1afae4e src:manual/11-idf.md:204 klas:E -->
+<!-- fc id:T-11-082 sha:a1afae4e src:manual/11-idf.md:204 status:no-external-signal -->
 ### T-11-082 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2697,7 +2697,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-083 sha:551e3e47 src:manual/11-idf.md:207 klas:F -->
+<!-- fc id:T-11-083 sha:551e3e47 src:manual/11-idf.md:207 status:unchecked -->
 ### T-11-083 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2720,7 +2720,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-084 sha:798e784d src:manual/11-idf.md:207 klas:E -->
+<!-- fc id:T-11-084 sha:798e784d src:manual/11-idf.md:207 status:no-external-signal -->
 ### T-11-084 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2743,7 +2743,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-085 sha:980f9ca8 src:manual/11-idf.md:213 klas:E -->
+<!-- fc id:T-11-085 sha:980f9ca8 src:manual/11-idf.md:213 status:no-external-signal -->
 ### T-11-085 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2764,7 +2764,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-086 sha:c0f7fc7a src:manual/11-idf.md:215 klas:K -->
+<!-- fc id:T-11-086 sha:c0f7fc7a src:manual/11-idf.md:215 status:code-context -->
 ### T-11-086 · kod · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2811,7 +2811,7 @@ idf.py add-dependency "espressif/led_strip^3.0.3"
 
 ---
 
-<!-- fc id:T-11-087 sha:4f76e0f2 src:manual/11-idf.md:216 klas:A -->
+<!-- fc id:T-11-087 sha:4f76e0f2 src:manual/11-idf.md:216 status:verbatim -->
 ### T-11-087 · kod-ryadok · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2856,7 +2856,7 @@ idf.py add-dependency "espressif/led_strip^3.0.3"
 
 ---
 
-<!-- fc id:T-11-088 sha:40bd7292 src:manual/11-idf.md:219 klas:F -->
+<!-- fc id:T-11-088 sha:40bd7292 src:manual/11-idf.md:219 status:unchecked -->
 ### T-11-088 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2878,7 +2878,7 @@ idf.py add-dependency "espressif/led_strip^3.0.3"
 
 ---
 
-<!-- fc id:T-11-089 sha:ee2d2f1b src:manual/11-idf.md:220 klas:E -->
+<!-- fc id:T-11-089 sha:ee2d2f1b src:manual/11-idf.md:220 status:no-external-signal -->
 ### T-11-089 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2900,7 +2900,7 @@ idf.py add-dependency "espressif/led_strip^3.0.3"
 
 ---
 
-<!-- fc id:T-11-090 sha:aca0806c src:manual/11-idf.md:222 klas:E -->
+<!-- fc id:T-11-090 sha:aca0806c src:manual/11-idf.md:222 status:no-external-signal -->
 ### T-11-090 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2925,7 +2925,7 @@ idf.py add-dependency "espressif/led_strip^3.0.3"
 
 ---
 
-<!-- fc id:T-11-091 sha:30483f3f src:manual/11-idf.md:224 klas:A -->
+<!-- fc id:T-11-091 sha:30483f3f src:manual/11-idf.md:224 status:verbatim -->
 ### T-11-091 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2967,7 +2967,7 @@ idf.py add-dependency "espressif/led_strip^3.0.3"
 
 ---
 
-<!-- fc id:T-11-092 sha:9322693e src:manual/11-idf.md:228 klas:F -->
+<!-- fc id:T-11-092 sha:9322693e src:manual/11-idf.md:228 status:unchecked -->
 ### T-11-092 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2989,7 +2989,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-093 sha:153c053d src:manual/11-idf.md:233 klas:F -->
+<!-- fc id:T-11-093 sha:153c053d src:manual/11-idf.md:233 status:unchecked -->
 ### T-11-093 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3011,7 +3011,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-094 sha:445bb076 src:manual/11-idf.md:236 klas:F -->
+<!-- fc id:T-11-094 sha:445bb076 src:manual/11-idf.md:236 status:unchecked -->
 ### T-11-094 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3036,7 +3036,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-095 sha:7f37de94 src:manual/11-idf.md:237 klas:E -->
+<!-- fc id:T-11-095 sha:7f37de94 src:manual/11-idf.md:237 status:no-external-signal -->
 ### T-11-095 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3061,7 +3061,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-096 sha:36ad5706 src:manual/11-idf.md:242 klas:E -->
+<!-- fc id:T-11-096 sha:36ad5706 src:manual/11-idf.md:242 status:no-external-signal -->
 ### T-11-096 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3082,7 +3082,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-097 sha:4d081911 src:manual/11-idf.md:244 klas:A -->
+<!-- fc id:T-11-097 sha:4d081911 src:manual/11-idf.md:244 status:verbatim -->
 ### T-11-097 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3113,7 +3113,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-098 sha:f32cde1d src:manual/11-idf.md:251 klas:E -->
+<!-- fc id:T-11-098 sha:f32cde1d src:manual/11-idf.md:251 status:no-external-signal -->
 ### T-11-098 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3140,7 +3140,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-099 sha:009c5309 src:manual/11-idf.md:252 klas:F -->
+<!-- fc id:T-11-099 sha:009c5309 src:manual/11-idf.md:252 status:unchecked -->
 ### T-11-099 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3167,7 +3167,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-100 sha:04ac6509 src:manual/11-idf.md:254 klas:F -->
+<!-- fc id:T-11-100 sha:04ac6509 src:manual/11-idf.md:254 status:unchecked -->
 ### T-11-100 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3194,7 +3194,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-101 sha:5075d2bd src:manual/11-idf.md:260 klas:F -->
+<!-- fc id:T-11-101 sha:5075d2bd src:manual/11-idf.md:260 status:unchecked -->
 ### T-11-101 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3216,7 +3216,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-102 sha:b2bd2d4d src:manual/11-idf.md:261 klas:E -->
+<!-- fc id:T-11-102 sha:b2bd2d4d src:manual/11-idf.md:261 status:no-external-signal -->
 ### T-11-102 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3238,7 +3238,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-103 sha:31020c6e src:manual/11-idf.md:263 klas:F -->
+<!-- fc id:T-11-103 sha:31020c6e src:manual/11-idf.md:263 status:unchecked -->
 ### T-11-103 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3260,7 +3260,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-104 sha:570bdca4 src:manual/11-idf.md:266 klas:F -->
+<!-- fc id:T-11-104 sha:570bdca4 src:manual/11-idf.md:266 status:unchecked -->
 ### T-11-104 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3282,7 +3282,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-105 sha:812e0ce8 src:manual/11-idf.md:269 klas:A -->
+<!-- fc id:T-11-105 sha:812e0ce8 src:manual/11-idf.md:269 status:verbatim -->
 ### T-11-105 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3311,7 +3311,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-106 sha:7f64c2fd src:manual/11-idf.md:272 klas:F -->
+<!-- fc id:T-11-106 sha:7f64c2fd src:manual/11-idf.md:272 status:unchecked -->
 ### T-11-106 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3334,7 +3334,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-107 sha:c803dfc0 src:manual/11-idf.md:273 klas:E -->
+<!-- fc id:T-11-107 sha:c803dfc0 src:manual/11-idf.md:273 status:no-external-signal -->
 ### T-11-107 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3357,7 +3357,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-108 sha:fb1ad6c4 src:manual/11-idf.md:276 klas:F -->
+<!-- fc id:T-11-108 sha:fb1ad6c4 src:manual/11-idf.md:276 status:unchecked -->
 ### T-11-108 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3379,7 +3379,7 @@ Arduino core лишається правильним інструментом д
 
 ---
 
-<!-- fc id:T-11-109 sha:0a1fc86c src:manual/11-idf.md:281 klas:F -->
+<!-- fc id:T-11-109 sha:0a1fc86c src:manual/11-idf.md:281 status:unchecked -->
 ### T-11-109 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3401,7 +3401,7 @@ Arduino core лишається правильним інструментом д
 
 ---
 
-<!-- fc id:T-11-110 sha:07a06fdd src:manual/11-idf.md:284 klas:E -->
+<!-- fc id:T-11-110 sha:07a06fdd src:manual/11-idf.md:284 status:no-external-signal -->
 ### T-11-110 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3424,7 +3424,7 @@ Arduino core лишається правильним інструментом д
 
 ---
 
-<!-- fc id:T-11-111 sha:80e99395 src:manual/11-idf.md:284 klas:A -->
+<!-- fc id:T-11-111 sha:80e99395 src:manual/11-idf.md:284 status:verbatim -->
 ### T-11-111 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3458,7 +3458,7 @@ Arduino core лишається правильним інструментом д
 
 ---
 
-<!-- fc id:T-11-112 sha:c323842e src:manual/11-idf.md:288 klas:A -->
+<!-- fc id:T-11-112 sha:c323842e src:manual/11-idf.md:288 status:verbatim -->
 ### T-11-112 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3485,7 +3485,7 @@ Arduino core лишається правильним інструментом д
 
 ---
 
-<!-- fc id:T-11-113 sha:c78ccc1b src:manual/11-idf.md:290 klas:F -->
+<!-- fc id:T-11-113 sha:c78ccc1b src:manual/11-idf.md:290 status:unchecked -->
 ### T-11-113 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3506,7 +3506,7 @@ Arduino core лишається правильним інструментом д
 
 ---
 
-<!-- fc id:T-11-114 sha:d0259d8b src:manual/11-idf.md:292 klas:F -->
+<!-- fc id:T-11-114 sha:d0259d8b src:manual/11-idf.md:292 status:unchecked -->
 ### T-11-114 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**

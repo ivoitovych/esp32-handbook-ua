@@ -1,6 +1,5 @@
 - nazva: 'T-18-038: У проєкті ESP-IDF розбивка задається текстовим файлом:'
   zbih: У\s+проєкті\s+ESP\-IDF\s+розбивка
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'If you configure the partition table CSV name in the project configuration (``idf.py menuconfig``) and then build the project
 
@@ -20,7 +19,6 @@
   - efe25d4b
 - nazva: 'T-18-080: У складі ESP-IDF · SPIFFS → так'
   zbih: У\s+складі\s+ESP\-IDF\s+·\s+SPIFFS
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'spiffs`` (0x82) is for :doc:`/api-reference/storage/spiffs`
 
@@ -38,7 +36,6 @@
   note: SPIFFS є частиною ESP-IDF, наведено посилання на внутрішню документацію
 - nazva: 'T-18-088: Після цього розділ у меню з''являється, а тип'
   zbih: Після\s+цього\s+розділ\s+у
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'littlefs`` (0x83) is for `LittleFS filesystem
 
@@ -56,7 +53,6 @@
   note: підтверджує, що littlefs є дійсним типом розділу в CSV
 - nazva: 'T-18-103: **Взяти готову розбивку з більшим розділом застосунку** для'
   zbih: \*\*Взяти\s+готову\s+розбивку\s+з
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'The simplest way to use the partition table is to open the project configuration menu (``idf.py menuconfig``) and choose one of the simple predefined partition tables
 
@@ -76,7 +72,6 @@
   - d95fc6fa
 - nazva: 'T-18-106: Якщо нова прошивка розрахована на іншу розбивку, вона'
   zbih: Якщо\s+нова\s+прошивка\s+розрахована
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'Note that updating the partition table does not erase data that may have been stored according to the old partition table.
 
@@ -96,7 +91,6 @@
   - 18b9a9fd
 - nazva: 'T-18-107: Практично це означає: **розбивку треба обирати з запасом'
   zbih: Практично\s+це\s+означає:\s+\*\*розбивку
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'Note that updating the partition table does not erase data that may have been stored according to the old partition table. You can use ``idf.py erase-flash`` (or ``esptool erase-flash``) to erase the entire flash contents.
 
@@ -116,7 +110,6 @@
   - 9eebc20f
 - nazva: 'T-18-108: Змінити її потім можна лише з фізичним доступом'
   zbih: Змінити\s+її\s+потім\s+можна
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'If Secure Boot V1 is enabled, then the partition of type ``app`` needs to have size aligned to 0x10000 (64 KB) boundary.
 
@@ -136,7 +129,6 @@
   - e6335668
 - nazva: 'T-18-109: Другий наслідок того самого: якщо ви змінили розбивку,'
   zbih: 'Другий\s+наслідок\s+того\s+самого:'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'Note that updating the partition table does not erase data that may have been stored according to the old partition table.
 
@@ -154,7 +146,6 @@
   note: підтверджує ризик конфлікту даних при зміні розбивки
 - nazva: 'T-18-003: Це та частина системи, яку більшість не чіпає'
   zbih: Це\s+та\s+частина\s+системи,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'Each entry in the partition table has a name (label), type (app, data, or something else), subtype and the offset in flash where the partition is loaded.
 
@@ -174,7 +165,6 @@
   - ea68963b
 - nazva: 'T-18-009: Типова розбивка для пристрою без OTA виглядає так:'
   zbih: Типова\s+розбивка\s+для\s+пристрою
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: '# ESP-IDF Partition Table # Name,   Type, SubType, Offset,  Size, Flags nvs,      data, nvs,     0x9000,  0x6000, phy_init, data, phy,     0xf000,  0x1000, factory,  app,  factory, 0x10000, 1M,
 
@@ -194,7 +184,6 @@
   - cc195a29
 - nazva: 'T-18-010: | Назва | Тип | Підтип | Зсув'
   zbih: \|\s+Назва\s+\|\s+Тип\s+\|\s+Підтип
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'Name,   Type, SubType, Offset,  Size, Flags
 
@@ -214,7 +203,6 @@
   - f337b884
 - nazva: 'T-18-015: `phy_init` · Тип → data'
   zbih: '`phy_init`\s+·\s+Тип\s+→'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'phy_init, data, phy,     0xf000,  0x1000,
 
@@ -234,7 +222,6 @@
   - 5f9bc8f0
 - nazva: 'T-18-016: `phy_init` · Підтип → phy'
   zbih: '`phy_init`\s+·\s+Підтип\s+→'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'phy_init, data, phy,     0xf000,  0x1000,
 
@@ -254,7 +241,6 @@
   - 789c88b9
 - nazva: 'T-18-019: `factory` · Тип → app'
   zbih: '`factory`\s+·\s+Тип\s+→'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'factory,  app,  factory, 0x10000, 1M,
 
@@ -274,7 +260,6 @@
   - 94bcae2e
 - nazva: 'T-18-020: `factory` · Підтип → factory'
   zbih: '`factory`\s+·\s+Підтип\s+→'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'factory,  app,  factory, 0x10000, 1M,
 
@@ -294,7 +279,6 @@
   - 98e8369f
 - nazva: 'T-18-028: **`phy_init`** зберігає калібрувальні дані радіо.'
   zbih: \*\*`phy_init`\*\*\s+зберігає\s+калібрувальні\s+дані
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'phy`` (1) is for storing PHY initialisation data. This allows PHY to be configured per-device, instead of in firmware.
 

@@ -1,6 +1,5 @@
 - nazva: Базовий проєкт із Wi-Fi, I²C, веб-сервером, mDNS, зберіганням стану й обробкою помилок
   zbih: Це базовий проєкт.*Wi-Fi.*I²C.*веб-сервер.*mDNS
-  klas: S
   dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 6'
   cytata: "Це базовий проєкт: на ньому зустрічаються Wi-Fi, I²C, веб-сервер, \nmDNS, зберігання стану й обробка помилок.\n"
   sposib: дослівна цитата
@@ -14,7 +13,6 @@
   note: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
 - nazva: ESP32-S3-DevKitC-1 або classic DevKitC — одиниця в проєкті моніторингу
   zbih: ESP32-S3-DevKitC-1 або classic DevKitC.*Кількість → 1
-  klas: S
   dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 32'
   cytata: '| ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
 
@@ -34,7 +32,6 @@
   - bf7fec58
 - nazva: 'Таблиця розпіновки: Сигнал | classic DevKitC | S3-DevKitC-1'
   zbih: \| Сигнал \| classic DevKitC \| S3-DevKitC-1 \|
-  klas: S
   dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 46'
   cytata: '| Сигнал | classic DevKitC | S3-DevKitC-1 |
 
@@ -54,7 +51,6 @@
   - ada77d18
 - nazva: GPIO22 на S3 не існує; запит повертає ESP_ERR_INVALID_ARG без ESP_ERROR_CHECK
   zbih: GPIO22 на S3 не існує|i2c_new_master_bus.*ESP_ERR_INVALID_ARG|без ESP_ERROR_CHECK
-  klas: S
   dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядки 54–65'
   cytata: '**`GPIO22` на S3 не існує.** У S3 немає пінів 22–25 узагалі — це
 
@@ -114,7 +110,6 @@
   - '11824181'
 - nazva: Include драйвера I²C master
   zbih: '#include "driver/i2c_master.h"'
-  klas: S
   dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 116'
   cytata: '#include "driver/i2c_master.h"
 
@@ -134,7 +129,6 @@
   - b887153b
 - nazva: 'Константа для історії: 720 записів (12 годин при вимірюванні раз на хвилину)'
   zbih: '#define ISTORIYA\s+720.*12 годин'
-  klas: S
   dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 266'
   cytata: '#define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
 

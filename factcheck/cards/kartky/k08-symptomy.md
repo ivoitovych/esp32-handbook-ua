@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k08-symptomy.md`
 
-Одиниць твердження: **54**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **54**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-K08-001 sha:823fad55 src:kartky/k08-symptomy.md:3 klas:E -->
+<!-- fc id:T-K08-001 sha:823fad55 src:kartky/k08-symptomy.md:3 status:no-external-signal -->
 ### T-K08-001 · proza · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-K08-002 sha:6ecc49af src:kartky/k08-symptomy.md:3 klas:E -->
+<!-- fc id:T-K08-002 sha:6ecc49af src:kartky/k08-symptomy.md:3 status:no-external-signal -->
 ### T-K08-002 · proza · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-K08-003 sha:a8ff677c src:kartky/k08-symptomy.md:6 klas:F -->
+<!-- fc id:T-K08-003 sha:a8ff677c src:kartky/k08-symptomy.md:6 status:unchecked -->
 ### T-K08-003 · tablycya-shapka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -92,7 +92,7 @@
 
 ---
 
-<!-- fc id:T-K08-004 sha:8b5b7a04 src:kartky/k08-symptomy.md:8 klas:S -->
+<!-- fc id:T-K08-004 sha:8b5b7a04 src:kartky/k08-symptomy.md:8 status:self-consistent -->
 ### T-K08-004 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -160,7 +160,7 @@
 
 ---
 
-<!-- fc id:T-K08-005 sha:b8037477 src:kartky/k08-symptomy.md:8 klas:E -->
+<!-- fc id:T-K08-005 sha:b8037477 src:kartky/k08-symptomy.md:8 status:no-external-signal -->
 ### T-K08-005 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -206,7 +206,7 @@
 
 ---
 
-<!-- fc id:T-K08-006 sha:35b60d44 src:kartky/k08-symptomy.md:8 klas:E -->
+<!-- fc id:T-K08-006 sha:35b60d44 src:kartky/k08-symptomy.md:8 status:no-external-signal -->
 ### T-K08-006 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -252,7 +252,7 @@
 
 ---
 
-<!-- fc id:T-K08-007 sha:85d11a32 src:kartky/k08-symptomy.md:9 klas:E -->
+<!-- fc id:T-K08-007 sha:85d11a32 src:kartky/k08-symptomy.md:9 status:no-external-signal -->
 ### T-K08-007 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -298,7 +298,7 @@
 
 ---
 
-<!-- fc id:T-K08-008 sha:8b27f14c src:kartky/k08-symptomy.md:9 klas:A -->
+<!-- fc id:T-K08-008 sha:8b27f14c src:kartky/k08-symptomy.md:9 status:verbatim -->
 ### T-K08-008 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -350,7 +350,7 @@
 
 ---
 
-<!-- fc id:T-K08-009 sha:d996f938 src:kartky/k08-symptomy.md:9 klas:F -->
+<!-- fc id:T-K08-009 sha:d996f938 src:kartky/k08-symptomy.md:9 status:unchecked -->
 ### T-K08-009 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -396,7 +396,7 @@
 
 ---
 
-<!-- fc id:T-K08-010 sha:d0d561c3 src:kartky/k08-symptomy.md:10 klas:E -->
+<!-- fc id:T-K08-010 sha:d0d561c3 src:kartky/k08-symptomy.md:10 status:no-external-signal -->
 ### T-K08-010 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -442,7 +442,7 @@
 
 ---
 
-<!-- fc id:T-K08-011 sha:4812427e src:kartky/k08-symptomy.md:10 klas:A -->
+<!-- fc id:T-K08-011 sha:4812427e src:kartky/k08-symptomy.md:10 status:verbatim -->
 ### T-K08-011 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -494,7 +494,7 @@
 
 ---
 
-<!-- fc id:T-K08-012 sha:9b07ee56 src:kartky/k08-symptomy.md:10 klas:E -->
+<!-- fc id:T-K08-012 sha:9b07ee56 src:kartky/k08-symptomy.md:10 status:no-external-signal -->
 ### T-K08-012 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -540,7 +540,7 @@
 
 ---
 
-<!-- fc id:T-K08-013 sha:cbdc8f09 src:kartky/k08-symptomy.md:11 klas:F -->
+<!-- fc id:T-K08-013 sha:cbdc8f09 src:kartky/k08-symptomy.md:11 status:unchecked -->
 ### T-K08-013 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -586,7 +586,7 @@
 
 ---
 
-<!-- fc id:T-K08-014 sha:8d500730 src:kartky/k08-symptomy.md:11 klas:F -->
+<!-- fc id:T-K08-014 sha:8d500730 src:kartky/k08-symptomy.md:11 status:unchecked -->
 ### T-K08-014 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -632,7 +632,7 @@
 
 ---
 
-<!-- fc id:T-K08-015 sha:3a14096f src:kartky/k08-symptomy.md:11 klas:E -->
+<!-- fc id:T-K08-015 sha:3a14096f src:kartky/k08-symptomy.md:11 status:no-external-signal -->
 ### T-K08-015 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -678,7 +678,7 @@
 
 ---
 
-<!-- fc id:T-K08-016 sha:7bfc5c9f src:kartky/k08-symptomy.md:12 klas:F -->
+<!-- fc id:T-K08-016 sha:7bfc5c9f src:kartky/k08-symptomy.md:12 status:unchecked -->
 ### T-K08-016 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -724,7 +724,7 @@
 
 ---
 
-<!-- fc id:T-K08-017 sha:b67db29d src:kartky/k08-symptomy.md:12 klas:E -->
+<!-- fc id:T-K08-017 sha:b67db29d src:kartky/k08-symptomy.md:12 status:no-external-signal -->
 ### T-K08-017 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -770,7 +770,7 @@
 
 ---
 
-<!-- fc id:T-K08-018 sha:5f8a2b90 src:kartky/k08-symptomy.md:12 klas:E -->
+<!-- fc id:T-K08-018 sha:5f8a2b90 src:kartky/k08-symptomy.md:12 status:no-external-signal -->
 ### T-K08-018 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -822,7 +822,7 @@
 
 ---
 
-<!-- fc id:T-K08-019 sha:f7f26129 src:kartky/k08-symptomy.md:13 klas:A -->
+<!-- fc id:T-K08-019 sha:f7f26129 src:kartky/k08-symptomy.md:13 status:verbatim -->
 ### T-K08-019 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -874,7 +874,7 @@
 
 ---
 
-<!-- fc id:T-K08-020 sha:f3d170d8 src:kartky/k08-symptomy.md:13 klas:A -->
+<!-- fc id:T-K08-020 sha:f3d170d8 src:kartky/k08-symptomy.md:13 status:verbatim -->
 ### T-K08-020 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -926,7 +926,7 @@
 
 ---
 
-<!-- fc id:T-K08-021 sha:9f98b9cf src:kartky/k08-symptomy.md:13 klas:A -->
+<!-- fc id:T-K08-021 sha:9f98b9cf src:kartky/k08-symptomy.md:13 status:verbatim -->
 ### T-K08-021 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -978,7 +978,7 @@
 
 ---
 
-<!-- fc id:T-K08-022 sha:dab7efe4 src:kartky/k08-symptomy.md:14 klas:S -->
+<!-- fc id:T-K08-022 sha:dab7efe4 src:kartky/k08-symptomy.md:14 status:self-consistent -->
 ### T-K08-022 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1046,7 +1046,7 @@
 
 ---
 
-<!-- fc id:T-K08-023 sha:ee0058b7 src:kartky/k08-symptomy.md:14 klas:E -->
+<!-- fc id:T-K08-023 sha:ee0058b7 src:kartky/k08-symptomy.md:14 status:no-external-signal -->
 ### T-K08-023 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1092,7 +1092,7 @@
 
 ---
 
-<!-- fc id:T-K08-024 sha:0bb13ff6 src:kartky/k08-symptomy.md:14 klas:F -->
+<!-- fc id:T-K08-024 sha:0bb13ff6 src:kartky/k08-symptomy.md:14 status:unchecked -->
 ### T-K08-024 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1138,7 +1138,7 @@
 
 ---
 
-<!-- fc id:T-K08-025 sha:2805ac3a src:kartky/k08-symptomy.md:15 klas:F -->
+<!-- fc id:T-K08-025 sha:2805ac3a src:kartky/k08-symptomy.md:15 status:unchecked -->
 ### T-K08-025 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1184,7 +1184,7 @@
 
 ---
 
-<!-- fc id:T-K08-026 sha:dceae9d7 src:kartky/k08-symptomy.md:15 klas:A -->
+<!-- fc id:T-K08-026 sha:dceae9d7 src:kartky/k08-symptomy.md:15 status:verbatim -->
 ### T-K08-026 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1236,7 +1236,7 @@
 
 ---
 
-<!-- fc id:T-K08-027 sha:fa4cff40 src:kartky/k08-symptomy.md:15 klas:E -->
+<!-- fc id:T-K08-027 sha:fa4cff40 src:kartky/k08-symptomy.md:15 status:no-external-signal -->
 ### T-K08-027 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1295,7 +1295,7 @@
 
 ---
 
-<!-- fc id:T-K08-028 sha:f3bd0dbc src:kartky/k08-symptomy.md:16 klas:A -->
+<!-- fc id:T-K08-028 sha:f3bd0dbc src:kartky/k08-symptomy.md:16 status:verbatim -->
 ### T-K08-028 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1347,7 +1347,7 @@
 
 ---
 
-<!-- fc id:T-K08-029 sha:7213df64 src:kartky/k08-symptomy.md:16 klas:A -->
+<!-- fc id:T-K08-029 sha:7213df64 src:kartky/k08-symptomy.md:16 status:verbatim -->
 ### T-K08-029 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1400,7 +1400,7 @@
 
 ---
 
-<!-- fc id:T-K08-030 sha:3cea59be src:kartky/k08-symptomy.md:16 klas:F -->
+<!-- fc id:T-K08-030 sha:3cea59be src:kartky/k08-symptomy.md:16 status:unchecked -->
 ### T-K08-030 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1446,7 +1446,7 @@
 
 ---
 
-<!-- fc id:T-K08-031 sha:420b0ee3 src:kartky/k08-symptomy.md:17 klas:F -->
+<!-- fc id:T-K08-031 sha:420b0ee3 src:kartky/k08-symptomy.md:17 status:unchecked -->
 ### T-K08-031 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1492,7 +1492,7 @@
 
 ---
 
-<!-- fc id:T-K08-032 sha:bff2e0ef src:kartky/k08-symptomy.md:17 klas:F -->
+<!-- fc id:T-K08-032 sha:bff2e0ef src:kartky/k08-symptomy.md:17 status:unchecked -->
 ### T-K08-032 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1538,7 +1538,7 @@
 
 ---
 
-<!-- fc id:T-K08-033 sha:d7725899 src:kartky/k08-symptomy.md:17 klas:E -->
+<!-- fc id:T-K08-033 sha:d7725899 src:kartky/k08-symptomy.md:17 status:no-external-signal -->
 ### T-K08-033 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1584,7 +1584,7 @@
 
 ---
 
-<!-- fc id:T-K08-034 sha:5b45fdba src:kartky/k08-symptomy.md:18 klas:A -->
+<!-- fc id:T-K08-034 sha:5b45fdba src:kartky/k08-symptomy.md:18 status:verbatim -->
 ### T-K08-034 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1650,7 +1650,7 @@
 
 ---
 
-<!-- fc id:T-K08-035 sha:f2b297be src:kartky/k08-symptomy.md:18 klas:A -->
+<!-- fc id:T-K08-035 sha:f2b297be src:kartky/k08-symptomy.md:18 status:verbatim -->
 ### T-K08-035 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1707,7 +1707,7 @@
 
 ---
 
-<!-- fc id:T-K08-036 sha:30984d01 src:kartky/k08-symptomy.md:18 klas:E -->
+<!-- fc id:T-K08-036 sha:30984d01 src:kartky/k08-symptomy.md:18 status:no-external-signal -->
 ### T-K08-036 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1753,7 +1753,7 @@
 
 ---
 
-<!-- fc id:T-K08-037 sha:fac00d45 src:kartky/k08-symptomy.md:19 klas:F -->
+<!-- fc id:T-K08-037 sha:fac00d45 src:kartky/k08-symptomy.md:19 status:unchecked -->
 ### T-K08-037 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1799,7 +1799,7 @@
 
 ---
 
-<!-- fc id:T-K08-038 sha:b728f979 src:kartky/k08-symptomy.md:19 klas:E -->
+<!-- fc id:T-K08-038 sha:b728f979 src:kartky/k08-symptomy.md:19 status:no-external-signal -->
 ### T-K08-038 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1845,7 +1845,7 @@
 
 ---
 
-<!-- fc id:T-K08-039 sha:654148ac src:kartky/k08-symptomy.md:19 klas:E -->
+<!-- fc id:T-K08-039 sha:654148ac src:kartky/k08-symptomy.md:19 status:no-external-signal -->
 ### T-K08-039 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1891,7 +1891,7 @@
 
 ---
 
-<!-- fc id:T-K08-040 sha:a9dae2dd src:kartky/k08-symptomy.md:20 klas:E -->
+<!-- fc id:T-K08-040 sha:a9dae2dd src:kartky/k08-symptomy.md:20 status:no-external-signal -->
 ### T-K08-040 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1937,7 +1937,7 @@
 
 ---
 
-<!-- fc id:T-K08-041 sha:551975ff src:kartky/k08-symptomy.md:20 klas:A -->
+<!-- fc id:T-K08-041 sha:551975ff src:kartky/k08-symptomy.md:20 status:verbatim -->
 ### T-K08-041 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -1990,7 +1990,7 @@
 
 ---
 
-<!-- fc id:T-K08-042 sha:9f004233 src:kartky/k08-symptomy.md:20 klas:E -->
+<!-- fc id:T-K08-042 sha:9f004233 src:kartky/k08-symptomy.md:20 status:no-external-signal -->
 ### T-K08-042 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -2036,7 +2036,7 @@
 
 ---
 
-<!-- fc id:T-K08-043 sha:0bd4f645 src:kartky/k08-symptomy.md:21 klas:C -->
+<!-- fc id:T-K08-043 sha:0bd4f645 src:kartky/k08-symptomy.md:21 status:named-unreachable -->
 ### T-K08-043 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -2088,7 +2088,7 @@
 
 ---
 
-<!-- fc id:T-K08-044 sha:50a075b5 src:kartky/k08-symptomy.md:21 klas:C -->
+<!-- fc id:T-K08-044 sha:50a075b5 src:kartky/k08-symptomy.md:21 status:named-unreachable -->
 ### T-K08-044 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -2140,7 +2140,7 @@
 
 ---
 
-<!-- fc id:T-K08-045 sha:5e4ff547 src:kartky/k08-symptomy.md:21 klas:F -->
+<!-- fc id:T-K08-045 sha:5e4ff547 src:kartky/k08-symptomy.md:21 status:unchecked -->
 ### T-K08-045 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -2186,7 +2186,7 @@
 
 ---
 
-<!-- fc id:T-K08-046 sha:18b6d801 src:kartky/k08-symptomy.md:22 klas:A -->
+<!-- fc id:T-K08-046 sha:18b6d801 src:kartky/k08-symptomy.md:22 status:verbatim -->
 ### T-K08-046 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -2249,7 +2249,7 @@
 
 ---
 
-<!-- fc id:T-K08-047 sha:b7ac3371 src:kartky/k08-symptomy.md:22 klas:F -->
+<!-- fc id:T-K08-047 sha:b7ac3371 src:kartky/k08-symptomy.md:22 status:unchecked -->
 ### T-K08-047 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -2295,7 +2295,7 @@
 
 ---
 
-<!-- fc id:T-K08-048 sha:18c32713 src:kartky/k08-symptomy.md:22 klas:E -->
+<!-- fc id:T-K08-048 sha:18c32713 src:kartky/k08-symptomy.md:22 status:no-external-signal -->
 ### T-K08-048 · komirka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -2341,7 +2341,7 @@
 
 ---
 
-<!-- fc id:T-K08-049 sha:d9277454 src:kartky/k08-symptomy.md:26 klas:E -->
+<!-- fc id:T-K08-049 sha:d9277454 src:kartky/k08-symptomy.md:26 status:no-external-signal -->
 ### T-K08-049 · proza · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -2363,7 +2363,7 @@
 
 ---
 
-<!-- fc id:T-K08-050 sha:a79d297d src:kartky/k08-symptomy.md:27 klas:E -->
+<!-- fc id:T-K08-050 sha:a79d297d src:kartky/k08-symptomy.md:27 status:no-external-signal -->
 ### T-K08-050 · proza · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -2385,7 +2385,7 @@
 
 ---
 
-<!-- fc id:T-K08-051 sha:12f87cac src:kartky/k08-symptomy.md:29 klas:E -->
+<!-- fc id:T-K08-051 sha:12f87cac src:kartky/k08-symptomy.md:29 status:no-external-signal -->
 ### T-K08-051 · proza · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -2406,7 +2406,7 @@
 
 ---
 
-<!-- fc id:T-K08-052 sha:d12cfd68 src:kartky/k08-symptomy.md:31 klas:E -->
+<!-- fc id:T-K08-052 sha:d12cfd68 src:kartky/k08-symptomy.md:31 status:no-external-signal -->
 ### T-K08-052 · proza · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -2428,7 +2428,7 @@
 
 ---
 
-<!-- fc id:T-K08-053 sha:b59030c2 src:kartky/k08-symptomy.md:35 klas:E -->
+<!-- fc id:T-K08-053 sha:b59030c2 src:kartky/k08-symptomy.md:35 status:no-external-signal -->
 ### T-K08-053 · proza · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**
@@ -2452,7 +2452,7 @@
 
 ---
 
-<!-- fc id:T-K08-054 sha:7738be1b src:kartky/k08-symptomy.md:35 klas:E -->
+<!-- fc id:T-K08-054 sha:7738be1b src:kartky/k08-symptomy.md:35 status:no-external-signal -->
 ### T-K08-054 · proza · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**

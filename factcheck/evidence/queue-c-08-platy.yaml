@@ -7,7 +7,6 @@
 
 - nazva: 'T-08-051: Найдешевший спосіб отримати мережеву камеру, і найнезручніша плата'
   zbih: Найдешевший\s+спосіб\s+отримати\s+мережеву\s+камеру,\s+і\s+найнезручніша\s+плата\s+в\s+цьому
-  klas: C
   dzherelo: OV2640 camera board ESP32 pins GPIO0 USB специфікація
   shukaty: OV2640 camera board ESP32 pins GPIO0 USB специфікація
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт
@@ -25,7 +24,6 @@
   look_for: OV2640 camera board ESP32 pins GPIO0 USB специфікація
 - nazva: 'T-08-033: **ESP32-DevKitC V4** — офіційна плата Espressif на 38'
   zbih: \*\*ESP32\-DevKitC\s+V4\*\*\s+—\s+офіційна
-  klas: C
   dzherelo: ESP32-DevKitC V4 Getting Started Guide, board specifications
   shukaty: ESP32-DevKitC V4 Getting Started Guide, board specifications
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт
@@ -45,7 +43,6 @@
   - 94deb42a
 - nazva: 'T-08-027: **Схема авторесету.** Два транзистори, керовані `DTR` і `RTS`.'
   zbih: \*\*Схема\s+авторесету\.\*\*\s+Два\s+транзистори,
-  klas: C
   dzherelo: ESP32 reference design schematic
   shukaty: ESP32 reference design schematic
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт

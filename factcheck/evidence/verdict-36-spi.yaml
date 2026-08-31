@@ -13,7 +13,6 @@
 
 - nazva: 'T-36-062: Проміжного стану немає, і «майже рідний» набір пінів'
   zbih: Проміжного\s+стану\s+немає,\s+і
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/spi_master.rst
   cytata: 'When an SPI Host is set to 40 MHz or lower frequencies, routing SPI pins via the
     GPIO matrix will behave the same compared to routing them via IOMUX.

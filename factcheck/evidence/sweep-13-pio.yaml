@@ -115,7 +115,6 @@
 
 - nazva: 'T-13-024: Запис `espressif32 @ 6.5.0` збереться — і дасть'
   zbih: Запис\s+`espressif32\s+@\s+6\.5\.0`
-  klas: A
   dzherelo: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
   cytata: '"version": "~3.20017.0"
 
@@ -139,7 +138,6 @@
   - bd308fc1
 - nazva: 'T-13-025: `pioarduino` розповсюджується не через реєстр PlatformIO, а архівом'
   zbih: '`pioarduino`\s+розповсюджується\s+не\s+через'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/platform.json
   cytata: '"version": "https://github.com/espressif/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz"
 
@@ -163,7 +161,6 @@
   - 749a3756
 - nazva: 'T-13-006: Форк називається **pioarduino** і супроводжується спільнотою.'
   zbih: Форк\s+називається\s+\*\*pioarduino\*\*\s+і
-  klas: A
   dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
   cytata: '# pioarduino (p)eople (i)nitiated (o)ptimized (arduino)
 
@@ -187,7 +184,6 @@
   - 1dabb487
 - nazva: 'T-13-014: **Версії фіксуються в проєкті.** Це головне.'
   zbih: \*\*Версії\s+фіксуються\s+в\s+проєкті\.\*\*
-  klas: A
   dzherelo: https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
   cytata: '[env:esp32doit-devkit-v1]
 
@@ -223,7 +219,6 @@
   - 5a0c92c3
 - nazva: 'T-13-020: Весь проєкт описується одним файлом:'
   zbih: Весь\s+проєкт\s+описується\s+одним
-  klas: A
   dzherelo: https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
   cytata: '[env:esp32doit-devkit-v1]
 
@@ -259,7 +254,6 @@
   - aec08e40
 - nazva: 'T-13-002: Для ESP32 воно дає те, чого не дає'
   zbih: Для\s+ESP32\s+воно\s+дає
-  klas: A
   dzherelo: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
   cytata: '"version": "7.0.1"
 
@@ -283,7 +277,6 @@
   - f593172f
 - nazva: 'T-13-004: Підтримка ESP32 у PlatformIO забезпечується платформою `platform-espressif32`.'
   zbih: Підтримка\s+ESP32\s+у\s+PlatformIO
-  klas: A
   dzherelo: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
   cytata: '"name": "espressif32"
 
@@ -307,7 +300,6 @@
   - 7c3c99a0
 - nazva: 'T-13-005: Офіційна платформа від PlatformIO **відстала** від Arduino core:'
   zbih: Офіційна\s+платформа\s+від\s+PlatformIO
-  klas: A
   dzherelo: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
   cytata: '"version": "~3.20017.0"
 
@@ -331,7 +323,6 @@
   - 098cf69e
 - nazva: 'T-13-007: Він підтримує актуальні версії Arduino core і нові'
   zbih: Він\s+підтримує\s+актуальні\s+версії
-  klas: A
   dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/platform.json
   cytata: '"version": "https://github.com/espressif/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz"
 
@@ -355,7 +346,6 @@
   - 4ec26d12
 - nazva: 'T-13-015: `platformio.ini` лежить у git і повністю описує, чим'
   zbih: '`platformio\.ini`\s+лежить\s+у\s+git'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
   cytata: 'platform = espressif32
 
@@ -387,7 +377,6 @@
   - '18113102'
 - nazva: 'T-13-029: **`platform`.** Тут — джерело платформи, а не лише'
   zbih: \*\*`platform`\.\*\*\s+Тут\s+—\s+джерело
-  klas: A
   dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
   cytata: 'platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
 
@@ -411,7 +400,6 @@
   - a126aa2c
 - nazva: 'T-13-032: Для `pioarduino` пінування — це заміна мітки `stable`'
   zbih: Для\s+`pioarduino`\s+пінування\s+—
-  klas: A
   dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
   cytata: 'pio project init --board esp32dev
 
@@ -435,7 +423,6 @@
   - d5d76327
 - nazva: 'T-13-048: Для S3 це не косметика — офіційна платформа'
   zbih: Для\s+S3\s+це\s+не
-  klas: A
   dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
   cytata: 'pio project init --board esp32dev
 

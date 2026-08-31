@@ -1,6 +1,6 @@
 # Фактчекінг: `inserts/regulatory-2026-08.md`
 
-Одиниць твердження: **34**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **34**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-REG-001 sha:1c4aba2e src:inserts/regulatory-2026-08.md:3 klas:E -->
+<!-- fc id:T-REG-001 sha:1c4aba2e src:inserts/regulatory-2026-08.md:3 status:no-external-signal -->
 ### T-REG-001 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -29,7 +29,7 @@
 
 ---
 
-<!-- fc id:T-REG-002 sha:94a06334 src:inserts/regulatory-2026-08.md:3 klas:E -->
+<!-- fc id:T-REG-002 sha:94a06334 src:inserts/regulatory-2026-08.md:3 status:no-external-signal -->
 ### T-REG-002 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -50,7 +50,7 @@
 
 ---
 
-<!-- fc id:T-REG-003 sha:1e9d97d5 src:inserts/regulatory-2026-08.md:6 klas:E -->
+<!-- fc id:T-REG-003 sha:1e9d97d5 src:inserts/regulatory-2026-08.md:6 status:no-external-signal -->
 ### T-REG-003 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -73,7 +73,7 @@
 
 ---
 
-<!-- fc id:T-REG-004 sha:faa66817 src:inserts/regulatory-2026-08.md:9 klas:E -->
+<!-- fc id:T-REG-004 sha:faa66817 src:inserts/regulatory-2026-08.md:9 status:no-external-signal -->
 ### T-REG-004 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -95,7 +95,7 @@
 
 ---
 
-<!-- fc id:T-REG-005 sha:1a82c946 src:inserts/regulatory-2026-08.md:12 klas:E -->
+<!-- fc id:T-REG-005 sha:1a82c946 src:inserts/regulatory-2026-08.md:12 status:no-external-signal -->
 ### T-REG-005 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -118,7 +118,7 @@
 
 ---
 
-<!-- fc id:T-REG-006 sha:efa54030 src:inserts/regulatory-2026-08.md:18 klas:E -->
+<!-- fc id:T-REG-006 sha:efa54030 src:inserts/regulatory-2026-08.md:18 status:no-external-signal -->
 ### T-REG-006 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -140,7 +140,7 @@
 
 ---
 
-<!-- fc id:T-REG-007 sha:29545560 src:inserts/regulatory-2026-08.md:18 klas:E -->
+<!-- fc id:T-REG-007 sha:29545560 src:inserts/regulatory-2026-08.md:18 status:no-external-signal -->
 ### T-REG-007 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-REG-008 sha:b3facd0c src:inserts/regulatory-2026-08.md:21 klas:E -->
+<!-- fc id:T-REG-008 sha:b3facd0c src:inserts/regulatory-2026-08.md:21 status:no-external-signal -->
 ### T-REG-008 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -185,7 +185,7 @@
 
 ---
 
-<!-- fc id:T-REG-009 sha:4e08cd0d src:inserts/regulatory-2026-08.md:21 klas:E -->
+<!-- fc id:T-REG-009 sha:4e08cd0d src:inserts/regulatory-2026-08.md:21 status:no-external-signal -->
 ### T-REG-009 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -208,7 +208,7 @@
 
 ---
 
-<!-- fc id:T-REG-010 sha:95f70754 src:inserts/regulatory-2026-08.md:25 klas:C -->
+<!-- fc id:T-REG-010 sha:95f70754 src:inserts/regulatory-2026-08.md:25 status:named-unreachable -->
 ### T-REG-010 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -235,7 +235,7 @@
 
 ---
 
-<!-- fc id:T-REG-011 sha:234c56cc src:inserts/regulatory-2026-08.md:28 klas:E -->
+<!-- fc id:T-REG-011 sha:234c56cc src:inserts/regulatory-2026-08.md:28 status:no-external-signal -->
 ### T-REG-011 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -259,7 +259,7 @@
 
 ---
 
-<!-- fc id:T-REG-012 sha:32835962 src:inserts/regulatory-2026-08.md:29 klas:E -->
+<!-- fc id:T-REG-012 sha:32835962 src:inserts/regulatory-2026-08.md:29 status:no-external-signal -->
 ### T-REG-012 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -283,7 +283,7 @@
 
 ---
 
-<!-- fc id:T-REG-013 sha:8eca979e src:inserts/regulatory-2026-08.md:33 klas:E -->
+<!-- fc id:T-REG-013 sha:8eca979e src:inserts/regulatory-2026-08.md:33 status:no-external-signal -->
 ### T-REG-013 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-REG-014 sha:b0a58b02 src:inserts/regulatory-2026-08.md:38 klas:E -->
+<!-- fc id:T-REG-014 sha:b0a58b02 src:inserts/regulatory-2026-08.md:38 status:no-external-signal -->
 ### T-REG-014 · tablycya · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -334,7 +334,7 @@
 
 ---
 
-<!-- fc id:T-REG-015 sha:e0b04ff2 src:inserts/regulatory-2026-08.md:40 klas:C -->
+<!-- fc id:T-REG-015 sha:e0b04ff2 src:inserts/regulatory-2026-08.md:40 status:named-unreachable -->
 ### T-REG-015 · tablycya · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -367,7 +367,7 @@
 
 ---
 
-<!-- fc id:T-REG-016 sha:c6a6adcd src:inserts/regulatory-2026-08.md:41 klas:C -->
+<!-- fc id:T-REG-016 sha:c6a6adcd src:inserts/regulatory-2026-08.md:41 status:named-unreachable -->
 ### T-REG-016 · tablycya · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -400,7 +400,7 @@
 
 ---
 
-<!-- fc id:T-REG-017 sha:cb0db96d src:inserts/regulatory-2026-08.md:42 klas:F -->
+<!-- fc id:T-REG-017 sha:cb0db96d src:inserts/regulatory-2026-08.md:42 status:unchecked -->
 ### T-REG-017 · tablycya · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -429,7 +429,7 @@
 
 ---
 
-<!-- fc id:T-REG-018 sha:ba344c62 src:inserts/regulatory-2026-08.md:43 klas:B -->
+<!-- fc id:T-REG-018 sha:ba344c62 src:inserts/regulatory-2026-08.md:43 status:derived -->
 ### T-REG-018 · tablycya · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -464,7 +464,7 @@
 
 ---
 
-<!-- fc id:T-REG-019 sha:7e5525f4 src:inserts/regulatory-2026-08.md:44 klas:F -->
+<!-- fc id:T-REG-019 sha:7e5525f4 src:inserts/regulatory-2026-08.md:44 status:unchecked -->
 ### T-REG-019 · tablycya · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -493,7 +493,7 @@
 
 ---
 
-<!-- fc id:T-REG-020 sha:d0be2aa4 src:inserts/regulatory-2026-08.md:45 klas:A -->
+<!-- fc id:T-REG-020 sha:d0be2aa4 src:inserts/regulatory-2026-08.md:45 status:verbatim -->
 ### T-REG-020 · tablycya · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -537,7 +537,7 @@
 
 ---
 
-<!-- fc id:T-REG-021 sha:33ea9b78 src:inserts/regulatory-2026-08.md:48 klas:C -->
+<!-- fc id:T-REG-021 sha:33ea9b78 src:inserts/regulatory-2026-08.md:48 status:named-unreachable -->
 ### T-REG-021 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -566,7 +566,7 @@
 
 ---
 
-<!-- fc id:T-REG-022 sha:28636c99 src:inserts/regulatory-2026-08.md:49 klas:E -->
+<!-- fc id:T-REG-022 sha:28636c99 src:inserts/regulatory-2026-08.md:49 status:no-external-signal -->
 ### T-REG-022 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -590,7 +590,7 @@
 
 ---
 
-<!-- fc id:T-REG-023 sha:c022a25c src:inserts/regulatory-2026-08.md:52 klas:E -->
+<!-- fc id:T-REG-023 sha:c022a25c src:inserts/regulatory-2026-08.md:52 status:no-external-signal -->
 ### T-REG-023 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -612,7 +612,7 @@
 
 ---
 
-<!-- fc id:T-REG-024 sha:4f70d03f src:inserts/regulatory-2026-08.md:57 klas:F -->
+<!-- fc id:T-REG-024 sha:4f70d03f src:inserts/regulatory-2026-08.md:57 status:unchecked -->
 ### T-REG-024 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -635,7 +635,7 @@ ESP-IDF має налаштування регіону, що обмежує до
 
 ---
 
-<!-- fc id:T-REG-025 sha:d6a8bb17 src:inserts/regulatory-2026-08.md:58 klas:E -->
+<!-- fc id:T-REG-025 sha:d6a8bb17 src:inserts/regulatory-2026-08.md:58 status:no-external-signal -->
 ### T-REG-025 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -658,7 +658,7 @@ ESP-IDF має налаштування регіону, що обмежує до
 
 ---
 
-<!-- fc id:T-REG-026 sha:33af890c src:inserts/regulatory-2026-08.md:61 klas:E -->
+<!-- fc id:T-REG-026 sha:33af890c src:inserts/regulatory-2026-08.md:61 status:no-external-signal -->
 ### T-REG-026 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -680,7 +680,7 @@ ESP-IDF має налаштування регіону, що обмежує до
 
 ---
 
-<!-- fc id:T-REG-027 sha:54605c19 src:inserts/regulatory-2026-08.md:66 klas:E -->
+<!-- fc id:T-REG-027 sha:54605c19 src:inserts/regulatory-2026-08.md:66 status:no-external-signal -->
 ### T-REG-027 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -701,7 +701,7 @@ ESP-IDF має налаштування регіону, що обмежує до
 
 ---
 
-<!-- fc id:T-REG-028 sha:10be6e16 src:inserts/regulatory-2026-08.md:68 klas:E -->
+<!-- fc id:T-REG-028 sha:10be6e16 src:inserts/regulatory-2026-08.md:68 status:no-external-signal -->
 ### T-REG-028 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -728,7 +728,7 @@ ESP-IDF має налаштування регіону, що обмежує до
 
 ---
 
-<!-- fc id:T-REG-029 sha:5724ee80 src:inserts/regulatory-2026-08.md:78 klas:F -->
+<!-- fc id:T-REG-029 sha:5724ee80 src:inserts/regulatory-2026-08.md:78 status:unchecked -->
 ### T-REG-029 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -750,7 +750,7 @@ ESP-IDF має налаштування регіону, що обмежує до
 
 ---
 
-<!-- fc id:T-REG-030 sha:28edbf31 src:inserts/regulatory-2026-08.md:81 klas:E -->
+<!-- fc id:T-REG-030 sha:28edbf31 src:inserts/regulatory-2026-08.md:81 status:no-external-signal -->
 ### T-REG-030 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -775,7 +775,7 @@ ESP-IDF має налаштування регіону, що обмежує до
 
 ---
 
-<!-- fc id:T-REG-031 sha:e4183698 src:inserts/regulatory-2026-08.md:90 klas:E -->
+<!-- fc id:T-REG-031 sha:e4183698 src:inserts/regulatory-2026-08.md:90 status:no-external-signal -->
 ### T-REG-031 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -800,7 +800,7 @@ ESP-IDF має налаштування регіону, що обмежує до
 
 ---
 
-<!-- fc id:T-REG-032 sha:738aa5d2 src:inserts/regulatory-2026-08.md:91 klas:E -->
+<!-- fc id:T-REG-032 sha:738aa5d2 src:inserts/regulatory-2026-08.md:91 status:no-external-signal -->
 ### T-REG-032 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -825,7 +825,7 @@ ESP-IDF має налаштування регіону, що обмежує до
 
 ---
 
-<!-- fc id:T-REG-033 sha:cce6d241 src:inserts/regulatory-2026-08.md:95 klas:E -->
+<!-- fc id:T-REG-033 sha:cce6d241 src:inserts/regulatory-2026-08.md:95 status:no-external-signal -->
 ### T-REG-033 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -847,7 +847,7 @@ ESP-IDF має налаштування регіону, що обмежує до
 
 ---
 
-<!-- fc id:T-REG-034 sha:f6f493d4 src:inserts/regulatory-2026-08.md:95 klas:E -->
+<!-- fc id:T-REG-034 sha:f6f493d4 src:inserts/regulatory-2026-08.md:95 status:no-external-signal -->
 ### T-REG-034 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**

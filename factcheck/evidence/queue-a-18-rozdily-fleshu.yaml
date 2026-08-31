@@ -13,7 +13,6 @@
 
 - nazva: 'T-18-074: Швидкість при заповненні · SPIFFS → різко падає'
   zbih: Швидкість\s+при\s+заповненні\s+·\s+SPIFFS
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/spiffs.rst
   cytata: 'When the filesystem is running out of space, the garbage collector is trying to
     find free space by scanning the filesystem multiple times, which can take up to several

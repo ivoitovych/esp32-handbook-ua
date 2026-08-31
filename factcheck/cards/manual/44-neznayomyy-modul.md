@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/44-neznayomyy-modul.md`
 
-Одиниць твердження: **89**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **89**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-44-001 sha:d6702b03 src:manual/44-neznayomyy-modul.md:3 klas:E -->
+<!-- fc id:T-44-001 sha:d6702b03 src:manual/44-neznayomyy-modul.md:3 status:no-external-signal -->
 ### T-44-001 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-44-002 sha:d9bca4d6 src:manual/44-neznayomyy-modul.md:4 klas:E -->
+<!-- fc id:T-44-002 sha:d9bca4d6 src:manual/44-neznayomyy-modul.md:4 status:no-external-signal -->
 ### T-44-002 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-44-003 sha:7b650e6e src:manual/44-neznayomyy-modul.md:7 klas:E -->
+<!-- fc id:T-44-003 sha:7b650e6e src:manual/44-neznayomyy-modul.md:7 status:no-external-signal -->
 ### T-44-003 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -75,7 +75,7 @@
 
 ---
 
-<!-- fc id:T-44-004 sha:7bcc4c28 src:manual/44-neznayomyy-modul.md:11 klas:E -->
+<!-- fc id:T-44-004 sha:7bcc4c28 src:manual/44-neznayomyy-modul.md:11 status:no-external-signal -->
 ### T-44-004 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-44-005 sha:a94ad383 src:manual/44-neznayomyy-modul.md:12 klas:A -->
+<!-- fc id:T-44-005 sha:a94ad383 src:manual/44-neznayomyy-modul.md:12 status:verbatim -->
 ### T-44-005 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -127,7 +127,7 @@
 
 ---
 
-<!-- fc id:T-44-006 sha:673cb4b1 src:manual/44-neznayomyy-modul.md:14 klas:E -->
+<!-- fc id:T-44-006 sha:673cb4b1 src:manual/44-neznayomyy-modul.md:14 status:no-external-signal -->
 ### T-44-006 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-44-007 sha:7398e5ac src:manual/44-neznayomyy-modul.md:14 klas:E -->
+<!-- fc id:T-44-007 sha:7398e5ac src:manual/44-neznayomyy-modul.md:14 status:no-external-signal -->
 ### T-44-007 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -171,7 +171,7 @@
 
 ---
 
-<!-- fc id:T-44-008 sha:4dc6aa15 src:manual/44-neznayomyy-modul.md:17 klas:E -->
+<!-- fc id:T-44-008 sha:4dc6aa15 src:manual/44-neznayomyy-modul.md:17 status:no-external-signal -->
 ### T-44-008 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -194,7 +194,7 @@
 
 ---
 
-<!-- fc id:T-44-009 sha:3cd959de src:manual/44-neznayomyy-modul.md:18 klas:E -->
+<!-- fc id:T-44-009 sha:3cd959de src:manual/44-neznayomyy-modul.md:18 status:no-external-signal -->
 ### T-44-009 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -217,7 +217,7 @@
 
 ---
 
-<!-- fc id:T-44-010 sha:15cb5170 src:manual/44-neznayomyy-modul.md:23 klas:E -->
+<!-- fc id:T-44-010 sha:15cb5170 src:manual/44-neznayomyy-modul.md:23 status:no-external-signal -->
 ### T-44-010 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -249,7 +249,7 @@
 
 ---
 
-<!-- fc id:T-44-011 sha:79ab111b src:manual/44-neznayomyy-modul.md:25 klas:E -->
+<!-- fc id:T-44-011 sha:79ab111b src:manual/44-neznayomyy-modul.md:25 status:no-external-signal -->
 ### T-44-011 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -280,7 +280,7 @@
 
 ---
 
-<!-- fc id:T-44-012 sha:e4bdd171 src:manual/44-neznayomyy-modul.md:25 klas:F -->
+<!-- fc id:T-44-012 sha:e4bdd171 src:manual/44-neznayomyy-modul.md:25 status:unchecked -->
 ### T-44-012 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -303,7 +303,7 @@
 
 ---
 
-<!-- fc id:T-44-013 sha:b49e05ea src:manual/44-neznayomyy-modul.md:26 klas:L -->
+<!-- fc id:T-44-013 sha:b49e05ea src:manual/44-neznayomyy-modul.md:26 status:looked-not-found -->
 ### T-44-013 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -331,7 +331,7 @@
 
 ---
 
-<!-- fc id:T-44-014 sha:3b9f79e3 src:manual/44-neznayomyy-modul.md:31 klas:F -->
+<!-- fc id:T-44-014 sha:3b9f79e3 src:manual/44-neznayomyy-modul.md:31 status:unchecked -->
 ### T-44-014 · tablycya-shapka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -358,7 +358,7 @@
 
 ---
 
-<!-- fc id:T-44-015 sha:208df048 src:manual/44-neznayomyy-modul.md:33 klas:L -->
+<!-- fc id:T-44-015 sha:208df048 src:manual/44-neznayomyy-modul.md:33 status:looked-not-found -->
 ### T-44-015 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -401,7 +401,7 @@
 
 ---
 
-<!-- fc id:T-44-016 sha:c62854ef src:manual/44-neznayomyy-modul.md:33 klas:L -->
+<!-- fc id:T-44-016 sha:c62854ef src:manual/44-neznayomyy-modul.md:33 status:looked-not-found -->
 ### T-44-016 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -444,7 +444,7 @@
 
 ---
 
-<!-- fc id:T-44-017 sha:2932f428 src:manual/44-neznayomyy-modul.md:34 klas:E -->
+<!-- fc id:T-44-017 sha:2932f428 src:manual/44-neznayomyy-modul.md:34 status:no-external-signal -->
 ### T-44-017 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -483,7 +483,7 @@
 
 ---
 
-<!-- fc id:T-44-018 sha:5deda58a src:manual/44-neznayomyy-modul.md:34 klas:E -->
+<!-- fc id:T-44-018 sha:5deda58a src:manual/44-neznayomyy-modul.md:34 status:no-external-signal -->
 ### T-44-018 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -516,7 +516,7 @@
 
 ---
 
-<!-- fc id:T-44-019 sha:58d6693f src:manual/44-neznayomyy-modul.md:35 klas:F -->
+<!-- fc id:T-44-019 sha:58d6693f src:manual/44-neznayomyy-modul.md:35 status:unchecked -->
 ### T-44-019 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -549,7 +549,7 @@
 
 ---
 
-<!-- fc id:T-44-020 sha:8356f1b2 src:manual/44-neznayomyy-modul.md:35 klas:F -->
+<!-- fc id:T-44-020 sha:8356f1b2 src:manual/44-neznayomyy-modul.md:35 status:unchecked -->
 ### T-44-020 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -582,7 +582,7 @@
 
 ---
 
-<!-- fc id:T-44-021 sha:b73cf76a src:manual/44-neznayomyy-modul.md:38 klas:E -->
+<!-- fc id:T-44-021 sha:b73cf76a src:manual/44-neznayomyy-modul.md:38 status:no-external-signal -->
 ### T-44-021 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -614,7 +614,7 @@
 
 ---
 
-<!-- fc id:T-44-022 sha:a481fa42 src:manual/44-neznayomyy-modul.md:42 klas:B -->
+<!-- fc id:T-44-022 sha:a481fa42 src:manual/44-neznayomyy-modul.md:42 status:derived -->
 ### T-44-022 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -643,7 +643,7 @@
 
 ---
 
-<!-- fc id:T-44-023 sha:5d4ba683 src:manual/44-neznayomyy-modul.md:43 klas:A -->
+<!-- fc id:T-44-023 sha:5d4ba683 src:manual/44-neznayomyy-modul.md:43 status:verbatim -->
 ### T-44-023 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -674,7 +674,7 @@
 
 ---
 
-<!-- fc id:T-44-024 sha:f48ee314 src:manual/44-neznayomyy-modul.md:46 klas:E -->
+<!-- fc id:T-44-024 sha:f48ee314 src:manual/44-neznayomyy-modul.md:46 status:no-external-signal -->
 ### T-44-024 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -697,7 +697,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-025 sha:06a16297 src:manual/44-neznayomyy-modul.md:50 klas:A -->
+<!-- fc id:T-44-025 sha:06a16297 src:manual/44-neznayomyy-modul.md:50 status:verbatim -->
 ### T-44-025 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -734,7 +734,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-026 sha:72fb7080 src:manual/44-neznayomyy-modul.md:51 klas:B -->
+<!-- fc id:T-44-026 sha:72fb7080 src:manual/44-neznayomyy-modul.md:51 status:derived -->
 ### T-44-026 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -764,7 +764,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-027 sha:c7af57b1 src:manual/44-neznayomyy-modul.md:51 klas:E -->
+<!-- fc id:T-44-027 sha:c7af57b1 src:manual/44-neznayomyy-modul.md:51 status:no-external-signal -->
 ### T-44-027 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -787,7 +787,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-028 sha:d26ab398 src:manual/44-neznayomyy-modul.md:56 klas:E -->
+<!-- fc id:T-44-028 sha:d26ab398 src:manual/44-neznayomyy-modul.md:56 status:no-external-signal -->
 ### T-44-028 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -808,7 +808,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-029 sha:b2e25812 src:manual/44-neznayomyy-modul.md:58 klas:F -->
+<!-- fc id:T-44-029 sha:b2e25812 src:manual/44-neznayomyy-modul.md:58 status:unchecked -->
 ### T-44-029 · tablycya-shapka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -838,7 +838,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-030 sha:06897e8b src:manual/44-neznayomyy-modul.md:60 klas:F -->
+<!-- fc id:T-44-030 sha:06897e8b src:manual/44-neznayomyy-modul.md:60 status:unchecked -->
 ### T-44-030 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -874,7 +874,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-031 sha:81def94d src:manual/44-neznayomyy-modul.md:60 klas:F -->
+<!-- fc id:T-44-031 sha:81def94d src:manual/44-neznayomyy-modul.md:60 status:unchecked -->
 ### T-44-031 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -910,7 +910,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-032 sha:d24088e4 src:manual/44-neznayomyy-modul.md:61 klas:E -->
+<!-- fc id:T-44-032 sha:d24088e4 src:manual/44-neznayomyy-modul.md:61 status:no-external-signal -->
 ### T-44-032 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -958,7 +958,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-033 sha:b97cef49 src:manual/44-neznayomyy-modul.md:61 klas:E -->
+<!-- fc id:T-44-033 sha:b97cef49 src:manual/44-neznayomyy-modul.md:61 status:no-external-signal -->
 ### T-44-033 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1006,7 +1006,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-034 sha:9c3b193e src:manual/44-neznayomyy-modul.md:62 klas:F -->
+<!-- fc id:T-44-034 sha:9c3b193e src:manual/44-neznayomyy-modul.md:62 status:unchecked -->
 ### T-44-034 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1042,7 +1042,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-035 sha:62ebcb00 src:manual/44-neznayomyy-modul.md:62 klas:F -->
+<!-- fc id:T-44-035 sha:62ebcb00 src:manual/44-neznayomyy-modul.md:62 status:unchecked -->
 ### T-44-035 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1078,7 +1078,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-036 sha:24219a3b src:manual/44-neznayomyy-modul.md:63 klas:B -->
+<!-- fc id:T-44-036 sha:24219a3b src:manual/44-neznayomyy-modul.md:63 status:derived -->
 ### T-44-036 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1126,7 +1126,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-037 sha:a54e6223 src:manual/44-neznayomyy-modul.md:63 klas:F -->
+<!-- fc id:T-44-037 sha:a54e6223 src:manual/44-neznayomyy-modul.md:63 status:unchecked -->
 ### T-44-037 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1162,7 +1162,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-038 sha:e81dfa2a src:manual/44-neznayomyy-modul.md:64 klas:F -->
+<!-- fc id:T-44-038 sha:e81dfa2a src:manual/44-neznayomyy-modul.md:64 status:unchecked -->
 ### T-44-038 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1198,7 +1198,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-039 sha:20fdc7eb src:manual/44-neznayomyy-modul.md:64 klas:F -->
+<!-- fc id:T-44-039 sha:20fdc7eb src:manual/44-neznayomyy-modul.md:64 status:unchecked -->
 ### T-44-039 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1234,7 +1234,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-040 sha:3363d5b0 src:manual/44-neznayomyy-modul.md:65 klas:F -->
+<!-- fc id:T-44-040 sha:3363d5b0 src:manual/44-neznayomyy-modul.md:65 status:unchecked -->
 ### T-44-040 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1270,7 +1270,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-041 sha:442a22c8 src:manual/44-neznayomyy-modul.md:65 klas:F -->
+<!-- fc id:T-44-041 sha:442a22c8 src:manual/44-neznayomyy-modul.md:65 status:unchecked -->
 ### T-44-041 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1306,7 +1306,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-042 sha:29648e4a src:manual/44-neznayomyy-modul.md:67 klas:F -->
+<!-- fc id:T-44-042 sha:29648e4a src:manual/44-neznayomyy-modul.md:67 status:unchecked -->
 ### T-44-042 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1329,7 +1329,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-043 sha:eb95e6a4 src:manual/44-neznayomyy-modul.md:68 klas:E -->
+<!-- fc id:T-44-043 sha:eb95e6a4 src:manual/44-neznayomyy-modul.md:68 status:no-external-signal -->
 ### T-44-043 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1364,7 +1364,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-044 sha:ef71a910 src:manual/44-neznayomyy-modul.md:73 klas:F -->
+<!-- fc id:T-44-044 sha:ef71a910 src:manual/44-neznayomyy-modul.md:73 status:unchecked -->
 ### T-44-044 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1387,7 +1387,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-045 sha:706930cd src:manual/44-neznayomyy-modul.md:77 klas:F -->
+<!-- fc id:T-44-045 sha:706930cd src:manual/44-neznayomyy-modul.md:77 status:unchecked -->
 ### T-44-045 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1409,7 +1409,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-046 sha:4aa5f3b8 src:manual/44-neznayomyy-modul.md:77 klas:E -->
+<!-- fc id:T-44-046 sha:4aa5f3b8 src:manual/44-neznayomyy-modul.md:77 status:no-external-signal -->
 ### T-44-046 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1431,7 +1431,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-047 sha:50ac2a6c src:manual/44-neznayomyy-modul.md:80 klas:F -->
+<!-- fc id:T-44-047 sha:50ac2a6c src:manual/44-neznayomyy-modul.md:80 status:unchecked -->
 ### T-44-047 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1452,7 +1452,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-048 sha:68c2143b src:manual/44-neznayomyy-modul.md:80 klas:E -->
+<!-- fc id:T-44-048 sha:68c2143b src:manual/44-neznayomyy-modul.md:80 status:no-external-signal -->
 ### T-44-048 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1473,7 +1473,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-049 sha:18ea166f src:manual/44-neznayomyy-modul.md:85 klas:E -->
+<!-- fc id:T-44-049 sha:18ea166f src:manual/44-neznayomyy-modul.md:85 status:no-external-signal -->
 ### T-44-049 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1497,7 +1497,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-050 sha:111d86b2 src:manual/44-neznayomyy-modul.md:89 klas:E -->
+<!-- fc id:T-44-050 sha:111d86b2 src:manual/44-neznayomyy-modul.md:89 status:no-external-signal -->
 ### T-44-050 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1521,7 +1521,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-051 sha:5ccad1ee src:manual/44-neznayomyy-modul.md:90 klas:E -->
+<!-- fc id:T-44-051 sha:5ccad1ee src:manual/44-neznayomyy-modul.md:90 status:no-external-signal -->
 ### T-44-051 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1545,7 +1545,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-052 sha:56b82275 src:manual/44-neznayomyy-modul.md:94 klas:E -->
+<!-- fc id:T-44-052 sha:56b82275 src:manual/44-neznayomyy-modul.md:94 status:no-external-signal -->
 ### T-44-052 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1567,7 +1567,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-053 sha:0ee5fec2 src:manual/44-neznayomyy-modul.md:97 klas:F -->
+<!-- fc id:T-44-053 sha:0ee5fec2 src:manual/44-neznayomyy-modul.md:97 status:unchecked -->
 ### T-44-053 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1590,7 +1590,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-054 sha:50efad74 src:manual/44-neznayomyy-modul.md:97 klas:A -->
+<!-- fc id:T-44-054 sha:50efad74 src:manual/44-neznayomyy-modul.md:97 status:verbatim -->
 ### T-44-054 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1619,7 +1619,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-055 sha:d11ee129 src:manual/44-neznayomyy-modul.md:99 klas:F -->
+<!-- fc id:T-44-055 sha:d11ee129 src:manual/44-neznayomyy-modul.md:99 status:unchecked -->
 ### T-44-055 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1642,7 +1642,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-056 sha:caabc133 src:manual/44-neznayomyy-modul.md:101 klas:E -->
+<!-- fc id:T-44-056 sha:caabc133 src:manual/44-neznayomyy-modul.md:101 status:no-external-signal -->
 ### T-44-056 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1664,7 +1664,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-057 sha:8c8f5cff src:manual/44-neznayomyy-modul.md:101 klas:E -->
+<!-- fc id:T-44-057 sha:8c8f5cff src:manual/44-neznayomyy-modul.md:101 status:no-external-signal -->
 ### T-44-057 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1686,7 +1686,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-058 sha:29303dd2 src:manual/44-neznayomyy-modul.md:104 klas:F -->
+<!-- fc id:T-44-058 sha:29303dd2 src:manual/44-neznayomyy-modul.md:104 status:unchecked -->
 ### T-44-058 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1708,7 +1708,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-059 sha:d9ca6dd1 src:manual/44-neznayomyy-modul.md:109 klas:F -->
+<!-- fc id:T-44-059 sha:d9ca6dd1 src:manual/44-neznayomyy-modul.md:109 status:unchecked -->
 ### T-44-059 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1730,7 +1730,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-060 sha:32ecee34 src:manual/44-neznayomyy-modul.md:112 klas:E -->
+<!-- fc id:T-44-060 sha:32ecee34 src:manual/44-neznayomyy-modul.md:112 status:no-external-signal -->
 ### T-44-060 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1751,7 +1751,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-061 sha:e4bcb1c4 src:manual/44-neznayomyy-modul.md:114 klas:F -->
+<!-- fc id:T-44-061 sha:e4bcb1c4 src:manual/44-neznayomyy-modul.md:114 status:unchecked -->
 ### T-44-061 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1773,7 +1773,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-062 sha:35fab9da src:manual/44-neznayomyy-modul.md:117 klas:A -->
+<!-- fc id:T-44-062 sha:35fab9da src:manual/44-neznayomyy-modul.md:117 status:verbatim -->
 ### T-44-062 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1802,7 +1802,7 @@ AVR і руйнівно тут (розділ 37).
 
 ---
 
-<!-- fc id:T-44-063 sha:f8bba158 src:manual/44-neznayomyy-modul.md:120 klas:F -->
+<!-- fc id:T-44-063 sha:f8bba158 src:manual/44-neznayomyy-modul.md:120 status:unchecked -->
 ### T-44-063 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1824,7 +1824,7 @@ AVR і руйнівно тут (розділ 37).
 
 ---
 
-<!-- fc id:T-44-064 sha:3c603c96 src:manual/44-neznayomyy-modul.md:127 klas:F -->
+<!-- fc id:T-44-064 sha:3c603c96 src:manual/44-neznayomyy-modul.md:127 status:unchecked -->
 ### T-44-064 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1847,7 +1847,7 @@ AVR і руйнівно тут (розділ 37).
 
 ---
 
-<!-- fc id:T-44-065 sha:a736b732 src:manual/44-neznayomyy-modul.md:129 klas:E -->
+<!-- fc id:T-44-065 sha:a736b732 src:manual/44-neznayomyy-modul.md:129 status:no-external-signal -->
 ### T-44-065 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1870,7 +1870,7 @@ AVR і руйнівно тут (розділ 37).
 
 ---
 
-<!-- fc id:T-44-066 sha:70379f3a src:manual/44-neznayomyy-modul.md:131 klas:E -->
+<!-- fc id:T-44-066 sha:70379f3a src:manual/44-neznayomyy-modul.md:131 status:no-external-signal -->
 ### T-44-066 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1893,7 +1893,7 @@ AVR і руйнівно тут (розділ 37).
 
 ---
 
-<!-- fc id:T-44-067 sha:e631de01 src:manual/44-neznayomyy-modul.md:135 klas:E -->
+<!-- fc id:T-44-067 sha:e631de01 src:manual/44-neznayomyy-modul.md:135 status:no-external-signal -->
 ### T-44-067 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1916,7 +1916,7 @@ AVR і руйнівно тут (розділ 37).
 
 ---
 
-<!-- fc id:T-44-068 sha:a890f9af src:manual/44-neznayomyy-modul.md:136 klas:E -->
+<!-- fc id:T-44-068 sha:a890f9af src:manual/44-neznayomyy-modul.md:136 status:no-external-signal -->
 ### T-44-068 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1939,7 +1939,7 @@ AVR і руйнівно тут (розділ 37).
 
 ---
 
-<!-- fc id:T-44-069 sha:a5ca33b4 src:manual/44-neznayomyy-modul.md:139 klas:E -->
+<!-- fc id:T-44-069 sha:a5ca33b4 src:manual/44-neznayomyy-modul.md:139 status:no-external-signal -->
 ### T-44-069 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1960,7 +1960,7 @@ AVR і руйнівно тут (розділ 37).
 
 ---
 
-<!-- fc id:T-44-070 sha:0db4e411 src:manual/44-neznayomyy-modul.md:141 klas:K -->
+<!-- fc id:T-44-070 sha:0db4e411 src:manual/44-neznayomyy-modul.md:141 status:code-context -->
 ### T-44-070 · kod · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2013,7 +2013,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-071 sha:d7990763 src:manual/44-neznayomyy-modul.md:144 klas:A -->
+<!-- fc id:T-44-071 sha:d7990763 src:manual/44-neznayomyy-modul.md:144 status:verbatim -->
 ### T-44-071 · kod-ryadok · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2053,7 +2053,7 @@ i2c_master_transmit(dev, cfg, 2, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-072 sha:8c3cf6e5 src:manual/44-neznayomyy-modul.md:148 klas:A -->
+<!-- fc id:T-44-072 sha:8c3cf6e5 src:manual/44-neznayomyy-modul.md:148 status:verbatim -->
 ### T-44-072 · kod-ryadok · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2093,7 +2093,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-073 sha:ab4e0053 src:manual/44-neznayomyy-modul.md:151 klas:E -->
+<!-- fc id:T-44-073 sha:ab4e0053 src:manual/44-neznayomyy-modul.md:151 status:no-external-signal -->
 ### T-44-073 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2117,7 +2117,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-074 sha:3439b0f1 src:manual/44-neznayomyy-modul.md:151 klas:E -->
+<!-- fc id:T-44-074 sha:3439b0f1 src:manual/44-neznayomyy-modul.md:151 status:no-external-signal -->
 ### T-44-074 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2141,7 +2141,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-075 sha:e0f582c1 src:manual/44-neznayomyy-modul.md:153 klas:E -->
+<!-- fc id:T-44-075 sha:e0f582c1 src:manual/44-neznayomyy-modul.md:153 status:no-external-signal -->
 ### T-44-075 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2165,7 +2165,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-076 sha:11413386 src:manual/44-neznayomyy-modul.md:158 klas:E -->
+<!-- fc id:T-44-076 sha:11413386 src:manual/44-neznayomyy-modul.md:158 status:no-external-signal -->
 ### T-44-076 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2193,7 +2193,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-077 sha:9ce6f2e8 src:manual/44-neznayomyy-modul.md:159 klas:E -->
+<!-- fc id:T-44-077 sha:9ce6f2e8 src:manual/44-neznayomyy-modul.md:159 status:no-external-signal -->
 ### T-44-077 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2221,7 +2221,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-078 sha:e3134097 src:manual/44-neznayomyy-modul.md:160 klas:F -->
+<!-- fc id:T-44-078 sha:e3134097 src:manual/44-neznayomyy-modul.md:160 status:unchecked -->
 ### T-44-078 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2249,7 +2249,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-079 sha:c37d7794 src:manual/44-neznayomyy-modul.md:161 klas:F -->
+<!-- fc id:T-44-079 sha:c37d7794 src:manual/44-neznayomyy-modul.md:161 status:unchecked -->
 ### T-44-079 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2277,7 +2277,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-080 sha:24c0f55b src:manual/44-neznayomyy-modul.md:162 klas:F -->
+<!-- fc id:T-44-080 sha:24c0f55b src:manual/44-neznayomyy-modul.md:162 status:unchecked -->
 ### T-44-080 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2305,7 +2305,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-081 sha:246ff7c6 src:manual/44-neznayomyy-modul.md:164 klas:E -->
+<!-- fc id:T-44-081 sha:246ff7c6 src:manual/44-neznayomyy-modul.md:164 status:no-external-signal -->
 ### T-44-081 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2333,7 +2333,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-082 sha:6baed1bb src:manual/44-neznayomyy-modul.md:165 klas:E -->
+<!-- fc id:T-44-082 sha:6baed1bb src:manual/44-neznayomyy-modul.md:165 status:no-external-signal -->
 ### T-44-082 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2361,7 +2361,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-083 sha:9d10200e src:manual/44-neznayomyy-modul.md:167 klas:E -->
+<!-- fc id:T-44-083 sha:9d10200e src:manual/44-neznayomyy-modul.md:167 status:no-external-signal -->
 ### T-44-083 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2382,7 +2382,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-084 sha:e12363c9 src:manual/44-neznayomyy-modul.md:171 klas:E -->
+<!-- fc id:T-44-084 sha:e12363c9 src:manual/44-neznayomyy-modul.md:171 status:no-external-signal -->
 ### T-44-084 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2403,7 +2403,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-085 sha:bf660da8 src:manual/44-neznayomyy-modul.md:173 klas:E -->
+<!-- fc id:T-44-085 sha:bf660da8 src:manual/44-neznayomyy-modul.md:173 status:no-external-signal -->
 ### T-44-085 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2432,7 +2432,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-086 sha:1fef7c0e src:manual/44-neznayomyy-modul.md:175 klas:E -->
+<!-- fc id:T-44-086 sha:1fef7c0e src:manual/44-neznayomyy-modul.md:175 status:no-external-signal -->
 ### T-44-086 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2453,7 +2453,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-087 sha:4e54c75e src:manual/44-neznayomyy-modul.md:177 klas:E -->
+<!-- fc id:T-44-087 sha:4e54c75e src:manual/44-neznayomyy-modul.md:177 status:no-external-signal -->
 ### T-44-087 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2474,7 +2474,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-088 sha:24f12674 src:manual/44-neznayomyy-modul.md:179 klas:E -->
+<!-- fc id:T-44-088 sha:24f12674 src:manual/44-neznayomyy-modul.md:179 status:no-external-signal -->
 ### T-44-088 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2495,7 +2495,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-089 sha:ca343a9d src:manual/44-neznayomyy-modul.md:181 klas:E -->
+<!-- fc id:T-44-089 sha:ca343a9d src:manual/44-neznayomyy-modul.md:181 status:no-external-signal -->
 ### T-44-089 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**

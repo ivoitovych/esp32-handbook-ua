@@ -1,6 +1,5 @@
 - nazva: 'T-23-048: Помітно менше — просадка, і далі спершу розділ'
   zbih: Помітно\s+менше\s+—\s+просадка,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
   cytata: 'power
 
@@ -20,7 +19,6 @@
   - 096c7af0
 - nazva: 'T-23-035: Подавати живлення на плату з видимим дефектом означає'
   zbih: Подавати\s+живлення\s+на\s+плату
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
   cytata: 'power
 
@@ -40,7 +38,6 @@
   - 69e21065
 - nazva: 'T-23-039: Дзвенить — шукати замикання, не вмикати.'
   zbih: Дзвенить\s+—\s+шукати\s+замикання,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
   cytata: 'power
 
@@ -60,7 +57,6 @@
   - e4be64c2
 - nazva: 'T-23-075: Ніякого струму, ніякого ризику.'
   zbih: Ніякого\s+струму,\s+ніякого\s+ризику\.
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
   cytata: 'internal pull-up/pull-down resistors
 
@@ -78,7 +74,6 @@
   note: Внутрішні підтягування не потребують зовнішнього струму при тестуванні.
 - nazva: 'T-23-100: Напис на модулі звіряється з шапкою `esptool`.'
   zbih: Напис\s+на\s+модулі\s+звіряється
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst
   cytata: 'If no ``-c`` option or ``ESPTOOL_CHIP`` value is specified, ``esptool`` automatically detects the chip type when connecting.
 

@@ -29,7 +29,6 @@
 - nazva: chip-id на сімействі ESP32 повертає попередження, а не Chip ID
   zbih: Чому не `chip-id`|успадкована від ESP8266, у якого справді був окремий Chip ID|has
     no chip ID\. Reading MAC address instead|`chip_id`, `flash_id`
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/cmds.py, .../esptool/loader.py,
     .../esptool/targets/esp8266.py
   cytata: "(cmds.py)\ndef chip_id(esp: ESPLoader) -> None:\n    \"\"\"\n    Read and display\
@@ -79,7 +78,6 @@
 - nazva: Сімейство, ревізію, кристал і MAC друкує преамбула з'єднання
   zbih: преамбула з.єднання|Chip type:\s+ESP32-D0WD-V3|шапк[ауи] з.єднання|шапка `esptool`|друкує
     шапку з тим, що знайшов
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
   cytata: "# 2) Print the chip info\n...\nelse:\n    log.print(f\"{'Chip type:':<20}{esp.get_chip_description()}\"\
     )\n    log.print(f\"{'Features:':<20}{', '.join(esp.get_chip_features())}\")\n    log.print(f\"\

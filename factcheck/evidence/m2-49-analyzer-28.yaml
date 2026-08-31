@@ -1,6 +1,5 @@
 - nazva: 'T-28-014: Напруга 3V3 під навантаженням повинна бути близько 3.3 В'
   zbih: 3V3.*близько 3\.3 В|близько 3\.3 В.*3V3
-  klas: A
   dzherelo: ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics» і Table
     5-3 «DC Characteristics»
   cytata: 'З manual/28-analizator.md, рядок 24:
@@ -52,7 +51,6 @@
     флешу — 2.3 В). Текст правильно вказує на вимоги під навантаженням, не на холостому ходу.
 - nazva: 'T-28-015: Просідання нижче 3.0 В причина незрозумілих глюків'
   zbih: Просідання.*3\.0 В|3\.0 В.*причина.*глюк
-  klas: B
   dzherelo: ESP32 Series Datasheet v5.3, Table 5-2, Table 5-4 «Current Consumption»; також розділ 06 книги
     про причини збоїв
   cytata: 'З manual/28-analizator.md, рядок 25:
@@ -100,7 +98,6 @@
   - 8bd6e720
 - nazva: 'T-28-019: На лініях I²C у спокої має бути 3.3 В від pull-up резисторів'
   zbih: I²C.*спокої.*3\.3 В|лініях I²C.*підтягува
-  klas: A
   dzherelo: ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics», VOH і RP параметри; NXP UM10204
     «I²C-bus specification and user manual», розділ про pull-up
   cytata: 'З manual/28-analizator.md, рядок 31-33:
@@ -168,7 +165,6 @@
     підтягуванням.'
 - nazva: 'T-28-024: Мультиметр показує середнє, швидкий сигнал виглядає як середина 0…3.3 В'
   zbih: Мультиметр.*середнє|сотні тисяч разів.*0 і 3\.3 В
-  klas: A
   dzherelo: ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics» про перехідні часи і частоти комутації
   cytata: 'З manual/28-analizator.md, рядок 38-42:
 
@@ -221,7 +217,6 @@
   - ef2bec82
 - nazva: 'T-28-041: Лінії не піднімаються до 3.3 В — немає підтягування або завелике'
   zbih: лінії не піднімаються до 3\.3 В|немає підтягування.*завелике
-  klas: A
   dzherelo: NXP UM10204 «I²C-bus specification», розділ про pull-up резистори й rise time, параметри VOL,
     VOH
   cytata: 'З manual/28-analizator.md, рядок 71 (таблиця I²C аналізатора):
@@ -277,7 +272,6 @@
   - cbfe3943
 - nazva: 'T-28-063: Практичний порядок пошуку — крок 3: чи піднято лінії до 3.3 В'
   zbih: Рівень у спокої.*Чи піднято лінії
-  klas: A
   dzherelo: ESP32 Series Datasheet v5.3, логічні рівні й параметри живлення; також розділ 35 про I²C сканер
   cytata: 'З manual/28-analizator.md, рядок 120-127 (практичний порядок):
 

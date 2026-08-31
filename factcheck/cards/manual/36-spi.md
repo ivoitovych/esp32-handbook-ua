@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/36-spi.md`
 
-Одиниць твердження: **127**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **127**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-36-001 sha:e479f00b src:manual/36-spi.md:3 klas:F -->
+<!-- fc id:T-36-001 sha:e479f00b src:manual/36-spi.md:3 status:unchecked -->
 ### T-36-001 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-002 sha:91a7e667 src:manual/36-spi.md:4 klas:E -->
+<!-- fc id:T-36-002 sha:91a7e667 src:manual/36-spi.md:4 status:no-external-signal -->
 ### T-36-002 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-003 sha:f47ef35a src:manual/36-spi.md:9 klas:F -->
+<!-- fc id:T-36-003 sha:f47ef35a src:manual/36-spi.md:9 status:unchecked -->
 ### T-36-003 · tablycya-shapka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -81,7 +81,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-004 sha:ef9e4032 src:manual/36-spi.md:11 klas:E -->
+<!-- fc id:T-36-004 sha:ef9e4032 src:manual/36-spi.md:11 status:no-external-signal -->
 ### T-36-004 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -126,7 +126,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-005 sha:6235f591 src:manual/36-spi.md:11 klas:E -->
+<!-- fc id:T-36-005 sha:6235f591 src:manual/36-spi.md:11 status:no-external-signal -->
 ### T-36-005 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -171,7 +171,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-006 sha:7d056b23 src:manual/36-spi.md:12 klas:E -->
+<!-- fc id:T-36-006 sha:7d056b23 src:manual/36-spi.md:12 status:no-external-signal -->
 ### T-36-006 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -216,7 +216,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-007 sha:a68f37fc src:manual/36-spi.md:12 klas:E -->
+<!-- fc id:T-36-007 sha:a68f37fc src:manual/36-spi.md:12 status:no-external-signal -->
 ### T-36-007 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -261,7 +261,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-008 sha:4f9a14ee src:manual/36-spi.md:13 klas:E -->
+<!-- fc id:T-36-008 sha:4f9a14ee src:manual/36-spi.md:13 status:no-external-signal -->
 ### T-36-008 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -306,7 +306,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-009 sha:13201fe1 src:manual/36-spi.md:13 klas:E -->
+<!-- fc id:T-36-009 sha:13201fe1 src:manual/36-spi.md:13 status:no-external-signal -->
 ### T-36-009 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -351,7 +351,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-010 sha:f2c47d63 src:manual/36-spi.md:14 klas:E -->
+<!-- fc id:T-36-010 sha:f2c47d63 src:manual/36-spi.md:14 status:no-external-signal -->
 ### T-36-010 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -396,7 +396,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-011 sha:9734e10e src:manual/36-spi.md:14 klas:E -->
+<!-- fc id:T-36-011 sha:9734e10e src:manual/36-spi.md:14 status:no-external-signal -->
 ### T-36-011 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -441,7 +441,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-012 sha:d7b624ac src:manual/36-spi.md:16 klas:E -->
+<!-- fc id:T-36-012 sha:d7b624ac src:manual/36-spi.md:16 status:no-external-signal -->
 ### T-36-012 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -464,7 +464,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-013 sha:36fd447c src:manual/36-spi.md:17 klas:E -->
+<!-- fc id:T-36-013 sha:36fd447c src:manual/36-spi.md:17 status:no-external-signal -->
 ### T-36-013 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -499,7 +499,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-014 sha:42bf1109 src:manual/36-spi.md:20 klas:E -->
+<!-- fc id:T-36-014 sha:42bf1109 src:manual/36-spi.md:20 status:no-external-signal -->
 ### T-36-014 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -534,7 +534,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-015 sha:1b6bd858 src:manual/36-spi.md:20 klas:E -->
+<!-- fc id:T-36-015 sha:1b6bd858 src:manual/36-spi.md:20 status:no-external-signal -->
 ### T-36-015 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -569,7 +569,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-016 sha:dabf8964 src:manual/36-spi.md:24 klas:F -->
+<!-- fc id:T-36-016 sha:dabf8964 src:manual/36-spi.md:24 status:unchecked -->
 ### T-36-016 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -590,7 +590,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-017 sha:7a8209c3 src:manual/36-spi.md:28 klas:E -->
+<!-- fc id:T-36-017 sha:7a8209c3 src:manual/36-spi.md:28 status:no-external-signal -->
 ### T-36-017 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -612,7 +612,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-018 sha:594d139a src:manual/36-spi.md:31 klas:E -->
+<!-- fc id:T-36-018 sha:594d139a src:manual/36-spi.md:31 status:no-external-signal -->
 ### T-36-018 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -634,7 +634,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-019 sha:d757bd07 src:manual/36-spi.md:34 klas:F -->
+<!-- fc id:T-36-019 sha:d757bd07 src:manual/36-spi.md:34 status:unchecked -->
 ### T-36-019 · tablycya-shapka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -663,7 +663,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-020 sha:6ba33956 src:manual/36-spi.md:36 klas:E -->
+<!-- fc id:T-36-020 sha:6ba33956 src:manual/36-spi.md:36 status:no-external-signal -->
 ### T-36-020 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -698,7 +698,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-021 sha:64e344a1 src:manual/36-spi.md:36 klas:E -->
+<!-- fc id:T-36-021 sha:64e344a1 src:manual/36-spi.md:36 status:no-external-signal -->
 ### T-36-021 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -733,7 +733,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-022 sha:2123aca4 src:manual/36-spi.md:36 klas:E -->
+<!-- fc id:T-36-022 sha:2123aca4 src:manual/36-spi.md:36 status:no-external-signal -->
 ### T-36-022 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -768,7 +768,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-023 sha:4a23a93f src:manual/36-spi.md:36 klas:A -->
+<!-- fc id:T-36-023 sha:4a23a93f src:manual/36-spi.md:36 status:verbatim -->
 ### T-36-023 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -822,7 +822,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-024 sha:223a3e23 src:manual/36-spi.md:36 klas:E -->
+<!-- fc id:T-36-024 sha:223a3e23 src:manual/36-spi.md:36 status:no-external-signal -->
 ### T-36-024 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -857,7 +857,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-025 sha:aa8cad3b src:manual/36-spi.md:37 klas:E -->
+<!-- fc id:T-36-025 sha:aa8cad3b src:manual/36-spi.md:37 status:no-external-signal -->
 ### T-36-025 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -892,7 +892,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-026 sha:bdd9609f src:manual/36-spi.md:37 klas:E -->
+<!-- fc id:T-36-026 sha:bdd9609f src:manual/36-spi.md:37 status:no-external-signal -->
 ### T-36-026 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -927,7 +927,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-027 sha:b3cf1ed6 src:manual/36-spi.md:37 klas:E -->
+<!-- fc id:T-36-027 sha:b3cf1ed6 src:manual/36-spi.md:37 status:no-external-signal -->
 ### T-36-027 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -962,7 +962,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-028 sha:e2570cb7 src:manual/36-spi.md:37 klas:A -->
+<!-- fc id:T-36-028 sha:e2570cb7 src:manual/36-spi.md:37 status:verbatim -->
 ### T-36-028 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1016,7 +1016,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-029 sha:bba396cb src:manual/36-spi.md:37 klas:E -->
+<!-- fc id:T-36-029 sha:bba396cb src:manual/36-spi.md:37 status:no-external-signal -->
 ### T-36-029 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1051,7 +1051,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-030 sha:2555e825 src:manual/36-spi.md:38 klas:E -->
+<!-- fc id:T-36-030 sha:2555e825 src:manual/36-spi.md:38 status:no-external-signal -->
 ### T-36-030 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1086,7 +1086,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-031 sha:5ab027b6 src:manual/36-spi.md:38 klas:E -->
+<!-- fc id:T-36-031 sha:5ab027b6 src:manual/36-spi.md:38 status:no-external-signal -->
 ### T-36-031 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1121,7 +1121,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-032 sha:144757db src:manual/36-spi.md:38 klas:E -->
+<!-- fc id:T-36-032 sha:144757db src:manual/36-spi.md:38 status:no-external-signal -->
 ### T-36-032 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1156,7 +1156,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-033 sha:af086205 src:manual/36-spi.md:38 klas:E -->
+<!-- fc id:T-36-033 sha:af086205 src:manual/36-spi.md:38 status:no-external-signal -->
 ### T-36-033 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1191,7 +1191,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-034 sha:660e22ea src:manual/36-spi.md:38 klas:E -->
+<!-- fc id:T-36-034 sha:660e22ea src:manual/36-spi.md:38 status:no-external-signal -->
 ### T-36-034 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1226,7 +1226,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-035 sha:5126ad31 src:manual/36-spi.md:39 klas:E -->
+<!-- fc id:T-36-035 sha:5126ad31 src:manual/36-spi.md:39 status:no-external-signal -->
 ### T-36-035 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1261,7 +1261,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-036 sha:9cdc1493 src:manual/36-spi.md:39 klas:E -->
+<!-- fc id:T-36-036 sha:9cdc1493 src:manual/36-spi.md:39 status:no-external-signal -->
 ### T-36-036 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1296,7 +1296,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-037 sha:68e27934 src:manual/36-spi.md:39 klas:E -->
+<!-- fc id:T-36-037 sha:68e27934 src:manual/36-spi.md:39 status:no-external-signal -->
 ### T-36-037 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1331,7 +1331,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-038 sha:4ac66b09 src:manual/36-spi.md:39 klas:A -->
+<!-- fc id:T-36-038 sha:4ac66b09 src:manual/36-spi.md:39 status:verbatim -->
 ### T-36-038 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1385,7 +1385,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-039 sha:b7269d9d src:manual/36-spi.md:39 klas:E -->
+<!-- fc id:T-36-039 sha:b7269d9d src:manual/36-spi.md:39 status:no-external-signal -->
 ### T-36-039 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1420,7 +1420,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-040 sha:f774ed83 src:manual/36-spi.md:41 klas:E -->
+<!-- fc id:T-36-040 sha:f774ed83 src:manual/36-spi.md:41 status:no-external-signal -->
 ### T-36-040 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1441,7 +1441,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-041 sha:fd0edce3 src:manual/36-spi.md:44 klas:E -->
+<!-- fc id:T-36-041 sha:fd0edce3 src:manual/36-spi.md:44 status:no-external-signal -->
 ### T-36-041 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1463,7 +1463,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-042 sha:a3a29a18 src:manual/36-spi.md:46 klas:A -->
+<!-- fc id:T-36-042 sha:a3a29a18 src:manual/36-spi.md:46 status:verbatim -->
 ### T-36-042 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1506,7 +1506,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-043 sha:59c865c4 src:manual/36-spi.md:47 klas:E -->
+<!-- fc id:T-36-043 sha:59c865c4 src:manual/36-spi.md:47 status:no-external-signal -->
 ### T-36-043 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1530,7 +1530,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-044 sha:92cbcd51 src:manual/36-spi.md:51 klas:A -->
+<!-- fc id:T-36-044 sha:92cbcd51 src:manual/36-spi.md:51 status:verbatim -->
 ### T-36-044 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1574,7 +1574,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-045 sha:96a3bf21 src:manual/36-spi.md:52 klas:E -->
+<!-- fc id:T-36-045 sha:96a3bf21 src:manual/36-spi.md:52 status:no-external-signal -->
 ### T-36-045 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1599,7 +1599,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-046 sha:2f08dd98 src:manual/36-spi.md:53 klas:B -->
+<!-- fc id:T-36-046 sha:2f08dd98 src:manual/36-spi.md:53 status:derived -->
 ### T-36-046 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1632,7 +1632,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-047 sha:19a4ca8a src:manual/36-spi.md:57 klas:A -->
+<!-- fc id:T-36-047 sha:19a4ca8a src:manual/36-spi.md:57 status:verbatim -->
 ### T-36-047 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1673,7 +1673,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-048 sha:17c8e178 src:manual/36-spi.md:60 klas:E -->
+<!-- fc id:T-36-048 sha:17c8e178 src:manual/36-spi.md:60 status:no-external-signal -->
 ### T-36-048 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1696,7 +1696,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-049 sha:88b02250 src:manual/36-spi.md:60 klas:E -->
+<!-- fc id:T-36-049 sha:88b02250 src:manual/36-spi.md:60 status:no-external-signal -->
 ### T-36-049 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1719,7 +1719,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-050 sha:42715563 src:manual/36-spi.md:65 klas:E -->
+<!-- fc id:T-36-050 sha:42715563 src:manual/36-spi.md:65 status:no-external-signal -->
 ### T-36-050 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1742,7 +1742,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-051 sha:386a5eda src:manual/36-spi.md:68 klas:E -->
+<!-- fc id:T-36-051 sha:386a5eda src:manual/36-spi.md:68 status:no-external-signal -->
 ### T-36-051 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1765,7 +1765,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-052 sha:566c2e3d src:manual/36-spi.md:68 klas:D -->
+<!-- fc id:T-36-052 sha:566c2e3d src:manual/36-spi.md:68 status:arithmetic -->
 ### T-36-052 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1806,7 +1806,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-053 sha:f17cf0ff src:manual/36-spi.md:72 klas:E -->
+<!-- fc id:T-36-053 sha:f17cf0ff src:manual/36-spi.md:72 status:no-external-signal -->
 ### T-36-053 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1829,7 +1829,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-054 sha:434dc4dd src:manual/36-spi.md:72 klas:A -->
+<!-- fc id:T-36-054 sha:434dc4dd src:manual/36-spi.md:72 status:verbatim -->
 ### T-36-054 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1871,7 +1871,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-055 sha:cb1460f8 src:manual/36-spi.md:78 klas:A -->
+<!-- fc id:T-36-055 sha:cb1460f8 src:manual/36-spi.md:78 status:verbatim -->
 ### T-36-055 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1898,7 +1898,7 @@ SPI витримує десятки мегагерц, але не завжди.
 
 ---
 
-<!-- fc id:T-36-056 sha:ecc19346 src:manual/36-spi.md:80 klas:A -->
+<!-- fc id:T-36-056 sha:ecc19346 src:manual/36-spi.md:80 status:verbatim -->
 ### T-36-056 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1932,7 +1932,7 @@ SPI витримує десятки мегагерц, але не завжди.
 
 ---
 
-<!-- fc id:T-36-057 sha:a4ae936e src:manual/36-spi.md:80 klas:A -->
+<!-- fc id:T-36-057 sha:a4ae936e src:manual/36-spi.md:80 status:verbatim -->
 ### T-36-057 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1966,7 +1966,7 @@ SPI витримує десятки мегагерц, але не завжди.
 
 ---
 
-<!-- fc id:T-36-058 sha:c2791def src:manual/36-spi.md:84 klas:E -->
+<!-- fc id:T-36-058 sha:c2791def src:manual/36-spi.md:84 status:no-external-signal -->
 ### T-36-058 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1990,7 +1990,7 @@ microSD, дисплеїв і датчиків, тобто для майже вс
 
 ---
 
-<!-- fc id:T-36-059 sha:a82c89d8 src:manual/36-spi.md:84 klas:A -->
+<!-- fc id:T-36-059 sha:a82c89d8 src:manual/36-spi.md:84 status:verbatim -->
 ### T-36-059 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2039,7 +2039,7 @@ microSD, дисплеїв і датчиків, тобто для майже вс
 
 ---
 
-<!-- fc id:T-36-060 sha:d78527db src:manual/36-spi.md:85 klas:E -->
+<!-- fc id:T-36-060 sha:d78527db src:manual/36-spi.md:85 status:no-external-signal -->
 ### T-36-060 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2063,7 +2063,7 @@ microSD, дисплеїв і датчиків, тобто для майже вс
 
 ---
 
-<!-- fc id:T-36-061 sha:6d4c6bc4 src:manual/36-spi.md:89 klas:A -->
+<!-- fc id:T-36-061 sha:6d4c6bc4 src:manual/36-spi.md:89 status:verbatim -->
 ### T-36-061 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2112,7 +2112,7 @@ microSD, дисплеїв і датчиків, тобто для майже вс
 
 ---
 
-<!-- fc id:T-36-062 sha:b7fc2e0f src:manual/36-spi.md:90 klas:A -->
+<!-- fc id:T-36-062 sha:b7fc2e0f src:manual/36-spi.md:90 status:verbatim -->
 ### T-36-062 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2142,7 +2142,7 @@ microSD, дисплеїв і датчиків, тобто для майже вс
 
 ---
 
-<!-- fc id:T-36-063 sha:8c459e5d src:manual/36-spi.md:94 klas:E -->
+<!-- fc id:T-36-063 sha:8c459e5d src:manual/36-spi.md:94 status:no-external-signal -->
 ### T-36-063 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2164,7 +2164,7 @@ Dupont-дротами розраховувати більш ніж на кіль
 
 ---
 
-<!-- fc id:T-36-064 sha:440fcfa3 src:manual/36-spi.md:94 klas:E -->
+<!-- fc id:T-36-064 sha:440fcfa3 src:manual/36-spi.md:94 status:no-external-signal -->
 ### T-36-064 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2186,7 +2186,7 @@ Dupont-дротами розраховувати більш ніж на кіль
 
 ---
 
-<!-- fc id:T-36-065 sha:e12191cb src:manual/36-spi.md:97 klas:C -->
+<!-- fc id:T-36-065 sha:e12191cb src:manual/36-spi.md:97 status:named-unreachable -->
 ### T-36-065 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2213,7 +2213,7 @@ Dupont-дротами розраховувати більш ніж на кіль
 
 ---
 
-<!-- fc id:T-36-066 sha:93acada7 src:manual/36-spi.md:98 klas:E -->
+<!-- fc id:T-36-066 sha:93acada7 src:manual/36-spi.md:98 status:no-external-signal -->
 ### T-36-066 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2236,7 +2236,7 @@ Dupont-дротами розраховувати більш ніж на кіль
 
 ---
 
-<!-- fc id:T-36-067 sha:17b08a0c src:manual/36-spi.md:103 klas:K -->
+<!-- fc id:T-36-067 sha:17b08a0c src:manual/36-spi.md:103 status:code-context -->
 ### T-36-067 · kod · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2319,7 +2319,7 @@ spi_device_transmit(handle, &t);
 
 ---
 
-<!-- fc id:T-36-068 sha:e4881333 src:manual/36-spi.md:105 klas:A -->
+<!-- fc id:T-36-068 sha:e4881333 src:manual/36-spi.md:105 status:verbatim -->
 ### T-36-068 · kod-ryadok · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2373,7 +2373,7 @@ spi_bus_initialize(SPI2_HOST, &bus, SPI_DMA_CH_AUTO);
 
 ---
 
-<!-- fc id:T-36-069 sha:139b516d src:manual/36-spi.md:106 klas:F -->
+<!-- fc id:T-36-069 sha:139b516d src:manual/36-spi.md:106 status:unchecked -->
 ### T-36-069 · kod-ryadok · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2403,7 +2403,7 @@ spi_bus_initialize(SPI2_HOST, &bus, SPI_DMA_CH_AUTO);
 
 ---
 
-<!-- fc id:T-36-070 sha:4bc757ac src:manual/36-spi.md:107 klas:A -->
+<!-- fc id:T-36-070 sha:4bc757ac src:manual/36-spi.md:107 status:verbatim -->
 ### T-36-070 · kod-ryadok · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2457,7 +2457,7 @@ spi_bus_initialize(SPI2_HOST, &bus, SPI_DMA_CH_AUTO);
 
 ---
 
-<!-- fc id:T-36-071 sha:514ab3f3 src:manual/36-spi.md:108 klas:F -->
+<!-- fc id:T-36-071 sha:514ab3f3 src:manual/36-spi.md:108 status:unchecked -->
 ### T-36-071 · kod-ryadok · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2487,7 +2487,7 @@ spi_bus_initialize(SPI2_HOST, &bus, SPI_DMA_CH_AUTO);
 
 ---
 
-<!-- fc id:T-36-072 sha:2ab54084 src:manual/36-spi.md:109 klas:F -->
+<!-- fc id:T-36-072 sha:2ab54084 src:manual/36-spi.md:109 status:unchecked -->
 ### T-36-072 · kod-ryadok · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2517,7 +2517,7 @@ spi_bus_initialize(SPI2_HOST, &bus, SPI_DMA_CH_AUTO);
 
 ---
 
-<!-- fc id:T-36-073 sha:32358bdf src:manual/36-spi.md:110 klas:F -->
+<!-- fc id:T-36-073 sha:32358bdf src:manual/36-spi.md:110 status:unchecked -->
 ### T-36-073 · kod-ryadok · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2547,7 +2547,7 @@ spi_bus_initialize(SPI2_HOST, &bus, SPI_DMA_CH_AUTO);
 
 ---
 
-<!-- fc id:T-36-074 sha:77cebc65 src:manual/36-spi.md:112 klas:A -->
+<!-- fc id:T-36-074 sha:77cebc65 src:manual/36-spi.md:112 status:verbatim -->
 ### T-36-074 · kod-ryadok · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2593,7 +2593,7 @@ spi_bus_initialize(SPI2_HOST, &bus, SPI_DMA_CH_AUTO);
 
 ---
 
-<!-- fc id:T-36-075 sha:ecc8ae71 src:manual/36-spi.md:115 klas:E -->
+<!-- fc id:T-36-075 sha:ecc8ae71 src:manual/36-spi.md:115 status:no-external-signal -->
 ### T-36-075 · kod-ryadok · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2634,7 +2634,7 @@ spi_bus_add_device(SPI2_HOST, &dev, &handle);
 
 ---
 
-<!-- fc id:T-36-076 sha:0c8398fb src:manual/36-spi.md:116 klas:F -->
+<!-- fc id:T-36-076 sha:0c8398fb src:manual/36-spi.md:116 status:unchecked -->
 ### T-36-076 · kod-ryadok · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2662,7 +2662,7 @@ spi_bus_add_device(SPI2_HOST, &dev, &handle);
 
 ---
 
-<!-- fc id:T-36-077 sha:ac435de6 src:manual/36-spi.md:117 klas:A -->
+<!-- fc id:T-36-077 sha:ac435de6 src:manual/36-spi.md:117 status:verbatim -->
 ### T-36-077 · kod-ryadok · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2714,7 +2714,7 @@ spi_bus_add_device(SPI2_HOST, &dev, &handle);
 
 ---
 
-<!-- fc id:T-36-078 sha:36828936 src:manual/36-spi.md:118 klas:F -->
+<!-- fc id:T-36-078 sha:36828936 src:manual/36-spi.md:118 status:unchecked -->
 ### T-36-078 · kod-ryadok · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2742,7 +2742,7 @@ spi_bus_add_device(SPI2_HOST, &dev, &handle);
 
 ---
 
-<!-- fc id:T-36-079 sha:3a842f5a src:manual/36-spi.md:121 klas:A -->
+<!-- fc id:T-36-079 sha:3a842f5a src:manual/36-spi.md:121 status:verbatim -->
 ### T-36-079 · kod-ryadok · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2786,7 +2786,7 @@ spi_bus_add_device(SPI2_HOST, &dev, &handle);
 
 ---
 
-<!-- fc id:T-36-080 sha:144bbe3b src:manual/36-spi.md:125 klas:A -->
+<!-- fc id:T-36-080 sha:144bbe3b src:manual/36-spi.md:125 status:verbatim -->
 ### T-36-080 · kod-ryadok · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2826,7 +2826,7 @@ spi_device_transmit(handle, &t);
 
 ---
 
-<!-- fc id:T-36-081 sha:bdc6d9e0 src:manual/36-spi.md:128 klas:F -->
+<!-- fc id:T-36-081 sha:bdc6d9e0 src:manual/36-spi.md:128 status:unchecked -->
 ### T-36-081 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2848,7 +2848,7 @@ spi_device_transmit(handle, &t);
 
 ---
 
-<!-- fc id:T-36-082 sha:79639d5a src:manual/36-spi.md:128 klas:E -->
+<!-- fc id:T-36-082 sha:79639d5a src:manual/36-spi.md:128 status:no-external-signal -->
 ### T-36-082 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2870,7 +2870,7 @@ spi_device_transmit(handle, &t);
 
 ---
 
-<!-- fc id:T-36-083 sha:68e43f7b src:manual/36-spi.md:131 klas:E -->
+<!-- fc id:T-36-083 sha:68e43f7b src:manual/36-spi.md:131 status:no-external-signal -->
 ### T-36-083 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2904,7 +2904,7 @@ spi_device_transmit(handle, &t);
 
 ---
 
-<!-- fc id:T-36-084 sha:45437be3 src:manual/36-spi.md:136 klas:F -->
+<!-- fc id:T-36-084 sha:45437be3 src:manual/36-spi.md:136 status:unchecked -->
 ### T-36-084 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2926,7 +2926,7 @@ spi_device_transmit(handle, &t);
 
 ---
 
-<!-- fc id:T-36-085 sha:e9a09396 src:manual/36-spi.md:139 klas:E -->
+<!-- fc id:T-36-085 sha:e9a09396 src:manual/36-spi.md:139 status:no-external-signal -->
 ### T-36-085 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2947,7 +2947,7 @@ spi_device_transmit(handle, &t);
 
 ---
 
-<!-- fc id:T-36-086 sha:65a6eae0 src:manual/36-spi.md:141 klas:F -->
+<!-- fc id:T-36-086 sha:65a6eae0 src:manual/36-spi.md:141 status:unchecked -->
 ### T-36-086 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2969,7 +2969,7 @@ spi_device_transmit(handle, &t);
 
 ---
 
-<!-- fc id:T-36-087 sha:54abc578 src:manual/36-spi.md:144 klas:K -->
+<!-- fc id:T-36-087 sha:54abc578 src:manual/36-spi.md:144 status:code-context -->
 ### T-36-087 · kod · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3010,7 +3010,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-088 sha:fde835ee src:manual/36-spi.md:148 klas:F -->
+<!-- fc id:T-36-088 sha:fde835ee src:manual/36-spi.md:148 status:unchecked -->
 ### T-36-088 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3033,7 +3033,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-089 sha:19a5eb78 src:manual/36-spi.md:149 klas:E -->
+<!-- fc id:T-36-089 sha:19a5eb78 src:manual/36-spi.md:149 status:no-external-signal -->
 ### T-36-089 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3056,7 +3056,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-090 sha:9d15bf1a src:manual/36-spi.md:154 klas:F -->
+<!-- fc id:T-36-090 sha:9d15bf1a src:manual/36-spi.md:154 status:unchecked -->
 ### T-36-090 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3078,7 +3078,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-091 sha:5defd1b1 src:manual/36-spi.md:154 klas:F -->
+<!-- fc id:T-36-091 sha:5defd1b1 src:manual/36-spi.md:154 status:unchecked -->
 ### T-36-091 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3100,7 +3100,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-092 sha:a0ca2c3c src:manual/36-spi.md:157 klas:E -->
+<!-- fc id:T-36-092 sha:a0ca2c3c src:manual/36-spi.md:157 status:no-external-signal -->
 ### T-36-092 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3134,7 +3134,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-093 sha:54e778ad src:manual/36-spi.md:158 klas:E -->
+<!-- fc id:T-36-093 sha:54e778ad src:manual/36-spi.md:158 status:no-external-signal -->
 ### T-36-093 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3156,7 +3156,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-094 sha:c0b08d64 src:manual/36-spi.md:161 klas:E -->
+<!-- fc id:T-36-094 sha:c0b08d64 src:manual/36-spi.md:161 status:no-external-signal -->
 ### T-36-094 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3192,7 +3192,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-095 sha:713918ed src:manual/36-spi.md:162 klas:E -->
+<!-- fc id:T-36-095 sha:713918ed src:manual/36-spi.md:162 status:no-external-signal -->
 ### T-36-095 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3216,7 +3216,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-096 sha:aa51a579 src:manual/36-spi.md:165 klas:E -->
+<!-- fc id:T-36-096 sha:aa51a579 src:manual/36-spi.md:165 status:no-external-signal -->
 ### T-36-096 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3238,7 +3238,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-097 sha:3fec2e5c src:manual/36-spi.md:165 klas:E -->
+<!-- fc id:T-36-097 sha:3fec2e5c src:manual/36-spi.md:165 status:no-external-signal -->
 ### T-36-097 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3260,7 +3260,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-098 sha:77359921 src:manual/36-spi.md:168 klas:E -->
+<!-- fc id:T-36-098 sha:77359921 src:manual/36-spi.md:168 status:no-external-signal -->
 ### T-36-098 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3296,7 +3296,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-099 sha:f906627c src:manual/36-spi.md:174 klas:F -->
+<!-- fc id:T-36-099 sha:f906627c src:manual/36-spi.md:174 status:unchecked -->
 ### T-36-099 · tablycya-shapka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3325,7 +3325,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-100 sha:9f4c2a5b src:manual/36-spi.md:176 klas:F -->
+<!-- fc id:T-36-100 sha:9f4c2a5b src:manual/36-spi.md:176 status:unchecked -->
 ### T-36-100 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3360,7 +3360,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-101 sha:47924046 src:manual/36-spi.md:176 klas:F -->
+<!-- fc id:T-36-101 sha:47924046 src:manual/36-spi.md:176 status:unchecked -->
 ### T-36-101 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3395,7 +3395,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-102 sha:8e4ac920 src:manual/36-spi.md:177 klas:F -->
+<!-- fc id:T-36-102 sha:8e4ac920 src:manual/36-spi.md:177 status:unchecked -->
 ### T-36-102 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3430,7 +3430,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-103 sha:88e28272 src:manual/36-spi.md:177 klas:F -->
+<!-- fc id:T-36-103 sha:88e28272 src:manual/36-spi.md:177 status:unchecked -->
 ### T-36-103 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3465,7 +3465,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-104 sha:ad2a20bc src:manual/36-spi.md:178 klas:F -->
+<!-- fc id:T-36-104 sha:ad2a20bc src:manual/36-spi.md:178 status:unchecked -->
 ### T-36-104 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3500,7 +3500,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-105 sha:fe66155c src:manual/36-spi.md:178 klas:F -->
+<!-- fc id:T-36-105 sha:fe66155c src:manual/36-spi.md:178 status:unchecked -->
 ### T-36-105 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3535,7 +3535,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-106 sha:f427c359 src:manual/36-spi.md:179 klas:F -->
+<!-- fc id:T-36-106 sha:f427c359 src:manual/36-spi.md:179 status:unchecked -->
 ### T-36-106 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3570,7 +3570,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-107 sha:e67d35a3 src:manual/36-spi.md:179 klas:F -->
+<!-- fc id:T-36-107 sha:e67d35a3 src:manual/36-spi.md:179 status:unchecked -->
 ### T-36-107 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3605,7 +3605,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-108 sha:5ddd7e73 src:manual/36-spi.md:180 klas:F -->
+<!-- fc id:T-36-108 sha:5ddd7e73 src:manual/36-spi.md:180 status:unchecked -->
 ### T-36-108 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3640,7 +3640,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-109 sha:11a45f5d src:manual/36-spi.md:180 klas:F -->
+<!-- fc id:T-36-109 sha:11a45f5d src:manual/36-spi.md:180 status:unchecked -->
 ### T-36-109 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3675,7 +3675,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-110 sha:84417e83 src:manual/36-spi.md:181 klas:F -->
+<!-- fc id:T-36-110 sha:84417e83 src:manual/36-spi.md:181 status:unchecked -->
 ### T-36-110 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3710,7 +3710,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-111 sha:7d93c96f src:manual/36-spi.md:181 klas:F -->
+<!-- fc id:T-36-111 sha:7d93c96f src:manual/36-spi.md:181 status:unchecked -->
 ### T-36-111 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3745,7 +3745,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-112 sha:e8553070 src:manual/36-spi.md:183 klas:F -->
+<!-- fc id:T-36-112 sha:e8553070 src:manual/36-spi.md:183 status:unchecked -->
 ### T-36-112 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3767,7 +3767,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-113 sha:9af4ac10 src:manual/36-spi.md:186 klas:F -->
+<!-- fc id:T-36-113 sha:9af4ac10 src:manual/36-spi.md:186 status:unchecked -->
 ### T-36-113 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3789,7 +3789,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-114 sha:178b7c3f src:manual/36-spi.md:189 klas:E -->
+<!-- fc id:T-36-114 sha:178b7c3f src:manual/36-spi.md:189 status:no-external-signal -->
 ### T-36-114 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3812,7 +3812,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-115 sha:c4c8a3dc src:manual/36-spi.md:190 klas:E -->
+<!-- fc id:T-36-115 sha:c4c8a3dc src:manual/36-spi.md:190 status:no-external-signal -->
 ### T-36-115 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3835,7 +3835,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-116 sha:4701845c src:manual/36-spi.md:195 klas:E -->
+<!-- fc id:T-36-116 sha:4701845c src:manual/36-spi.md:195 status:no-external-signal -->
 ### T-36-116 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3861,7 +3861,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-117 sha:5ff6ea36 src:manual/36-spi.md:196 klas:E -->
+<!-- fc id:T-36-117 sha:5ff6ea36 src:manual/36-spi.md:196 status:no-external-signal -->
 ### T-36-117 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3899,7 +3899,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-118 sha:58094afa src:manual/36-spi.md:197 klas:E -->
+<!-- fc id:T-36-118 sha:58094afa src:manual/36-spi.md:197 status:no-external-signal -->
 ### T-36-118 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3937,7 +3937,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-119 sha:35b028da src:manual/36-spi.md:198 klas:E -->
+<!-- fc id:T-36-119 sha:35b028da src:manual/36-spi.md:198 status:no-external-signal -->
 ### T-36-119 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3963,7 +3963,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-120 sha:409f6bd4 src:manual/36-spi.md:199 klas:F -->
+<!-- fc id:T-36-120 sha:409f6bd4 src:manual/36-spi.md:199 status:unchecked -->
 ### T-36-120 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3989,7 +3989,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-121 sha:7b6c367c src:manual/36-spi.md:200 klas:E -->
+<!-- fc id:T-36-121 sha:7b6c367c src:manual/36-spi.md:200 status:no-external-signal -->
 ### T-36-121 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -4015,7 +4015,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-122 sha:ecc91c25 src:manual/36-spi.md:204 klas:E -->
+<!-- fc id:T-36-122 sha:ecc91c25 src:manual/36-spi.md:204 status:no-external-signal -->
 ### T-36-122 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -4048,7 +4048,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-123 sha:b875f588 src:manual/36-spi.md:206 klas:F -->
+<!-- fc id:T-36-123 sha:b875f588 src:manual/36-spi.md:206 status:unchecked -->
 ### T-36-123 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -4070,7 +4070,7 @@ datasheet, перебір чотирьох займає хвилину.
 
 ---
 
-<!-- fc id:T-36-124 sha:a52be068 src:manual/36-spi.md:209 klas:F -->
+<!-- fc id:T-36-124 sha:a52be068 src:manual/36-spi.md:209 status:unchecked -->
 ### T-36-124 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -4091,7 +4091,7 @@ datasheet, перебір чотирьох займає хвилину.
 
 ---
 
-<!-- fc id:T-36-125 sha:09d90778 src:manual/36-spi.md:211 klas:A -->
+<!-- fc id:T-36-125 sha:09d90778 src:manual/36-spi.md:211 status:verbatim -->
 ### T-36-125 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -4138,7 +4138,7 @@ datasheet, перебір чотирьох займає хвилину.
 
 ---
 
-<!-- fc id:T-36-126 sha:acf3401b src:manual/36-spi.md:214 klas:A -->
+<!-- fc id:T-36-126 sha:acf3401b src:manual/36-spi.md:214 status:verbatim -->
 ### T-36-126 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -4175,7 +4175,7 @@ datasheet, перебір чотирьох займає хвилину.
 
 ---
 
-<!-- fc id:T-36-127 sha:bc757115 src:manual/36-spi.md:216 klas:E -->
+<!-- fc id:T-36-127 sha:bc757115 src:manual/36-spi.md:216 status:no-external-signal -->
 ### T-36-127 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**

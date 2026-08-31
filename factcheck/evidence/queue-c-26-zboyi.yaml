@@ -7,7 +7,6 @@
 
 - nazva: 'T-26-042: Наслідок практичний і неприємний: лог з C3, знятий'
   zbih: 'Наслідок\s+практичний\s+і\s+неприємний:'
-  klas: C
   dzherelo: ESP32-C3 Series — поведінка backtrace при screen/picocom
   shukaty: ESP32-C3 Series — поведінка backtrace при screen/picocom
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт

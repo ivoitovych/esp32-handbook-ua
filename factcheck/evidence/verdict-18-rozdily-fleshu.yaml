@@ -13,7 +13,6 @@
 
 - nazva: 'T-18-024: **Застосунок починається з `0x10000`** — це не випадкове'
   zbih: \*\*Застосунок\s+починається\s+з\s+`0x10000`\*\*
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'In both cases the factory app is flashed at offset 0x10000
 

@@ -15,7 +15,6 @@
 
 - nazva: 'T-22-057: Лог зберігається у файл, а не читається з'
   zbih: Лог\s+зберігається\s+у\s+файл,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/README.md
   cytata: 'Viewing Serial Output
 

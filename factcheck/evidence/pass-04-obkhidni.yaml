@@ -95,7 +95,6 @@
 - nazva: BME280 — карта регістрів і довжини блоків калібрування
   zbih: REG_ID|REG_CTRL_H|REG_CTRL_M|REG_CONFIG|REG_CALIB|REG_DATA|BME_ADDR|id != 0x60|uint8_t
     c\[26\]|uint8_t h\[7\]|uint8_t d\[8\]
-  klas: B
   dzherelo: https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
   cytata: '#define BME280_CHIP_ID                            UINT8_C(0x60)
 
@@ -159,7 +158,6 @@
 - nazva: BME280 — старший байт dig_H4 і dig_H5 знаковий
   zbih: старший байт H4 і H5 знаковий|розширення знака обов|int16_t\)\(int8_t\)h\[|Два зсуви
     в розборі калібрування
-  klas: B
   dzherelo: https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c
   cytata: 'calib_data->dig_h2 = (int16_t)BME280_CONCAT_BYTES(reg_data[1], reg_data[0]);
 
@@ -225,7 +223,6 @@
   - 5b1b364a
 - nazva: DS18B20 — −127 °C як код помилки і межа 750 мс
   zbih: −127|750 мс|DEVICE_DISCONNECTED
-  klas: A
   dzherelo: https://raw.githubusercontent.com/milesburton/Arduino-Temperature-Control-Library/master/DallasTemperature.h
   cytata: '#define DEVICE_DISCONNECTED_C -127
 
@@ -263,7 +260,6 @@
     підтверджено дослівно, разом із межею перетворення 750 мс.'
 - nazva: Типовий ATT MTU дорівнює 23 байтам в обох стеках
   zbih: ATT MTU|23\s*байт|20 байтів|MTU
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bt/host/bluedroid/stack/include/stack/gatt_api.h
     та https://raw.githubusercontent.com/apache/mynewt-nimble/master/nimble/host/include/host/ble_att.h
   cytata: "(Bluedroid, у складі ESP-IDF)\n#define GATT_DEF_BLE_MTU_SIZE               23\n\
@@ -296,7 +292,6 @@
   - f484e4a2
 - nazva: SH1106 зсунуто на два пікселі відносно SSD1306
   zbih: SH1106|зсунут\w+ на два пікселі|зсув на 2 пікселі
-  klas: A
   dzherelo: https://raw.githubusercontent.com/olikraus/u8g2/master/csrc/u8x8_d_ssd1306_128x64_noname.c
   cytata: "(SSD1306 128x64)\n  /* default_x_offset = */ 0,\n  /* flipmode_x_offset = */ 0,\n\
     \  /* pixel_width = */ 128,\n\n(SH1106 128x64)\n  /* default_x_offset = */ 2,\n  /* flipmode_x_offset\
@@ -318,7 +313,6 @@
     Це і є той «окремий режим у бібліотеці», який книга радить увімкнути.
 - nazva: LoRa — апаратний діапазон SF починається з шістки
   zbih: Spreading Factor|робочий діапазон \*\*7…12\*\*|SF6
-  klas: A
   dzherelo: https://raw.githubusercontent.com/jgromes/RadioLib/master/src/modules/SX127x/SX1278.cpp
   cytata: "// check allowed spreading factor values\nswitch(sf) {\n  case 6:  newSpreadingFactor\
     \ = RADIOLIB_SX127X_SF_6;  break;\n  case 7:  newSpreadingFactor = RADIOLIB_SX127X_SF_7;\
@@ -346,7 +340,6 @@
     апаратну можливість, і не радить її як звичайну.'
 - nazva: RP2040 — обсяг SRAM 264 КБ
   zbih: RAM · RP2040 → 264 КБ|264 КБ
-  klas: B
   dzherelo: https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
   cytata: '#define SRAM_BASE _u(0x20000000)
 

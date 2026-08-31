@@ -110,7 +110,6 @@
 - nazva: Рядки режиму завантаження — перелік із документації esptool
   zbih: Режим словами\s*\n?— `SPI_FAST_FLASH_BOOT`|друкує сам ROM|У виводі\s*\n?`esptool`
     цього рядка немає|DOWNLOAD_BOOT\(…\)
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: 'A number of boot mode strings can be shown depending on which bits are set:
 
@@ -168,7 +167,6 @@
 - nazva: Пін входу в бутлоадер за сімействами — підстановки esptool
   zbih: пін входу в\s*\n?бутлоадер|\*\*пін входу в\s*\n?\*\*бутлоадер|`GPIO0`, \[\[C3\]\]
     \[\[C6\]\] \[\[H2\]\] — `GPIO9`|Третій із них залежить від сімейства
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: '{IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0", esp32s2="GPIO0",
     esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28", esp32h21="GPIO14", esp32h4="GPIO14",
@@ -225,7 +223,6 @@
     з різних боків.'
 - nazva: Внутрішнє підтягування 45 кОм на піні входу в бутлоадер
   zbih: 45 кОм
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: ".. warning::\n\n   The {IDF_TARGET_NAME} has a 45k ohm internal pull-up/pull-down\
     \ resistor at {IDF_TARGET_STRAP_BOOT_GPIO} (and other pins).\n"
@@ -245,7 +242,6 @@
     — саме такий запис третій шар і має ловити.
 - nazva: GPIO16 і GPIO17 на classic живляться з домену VDD_SDIO
   zbih: домену `VDD_SDIO`|ESP_PD_DOMAIN_VDDSDIO|Домен у сні\s*\n?вимикається
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
   cytata: "Before entering Light-sleep mode, check if any GPIO pin to be driven is part of\
     \ the {IDF_TARGET_SPI_POWER_DOMAIN} power domain. If so, this power domain must be configured\
@@ -303,7 +299,6 @@
     рядком лікування й ціною цього рядка.'
 - nazva: GPIO5 на classic — CS апаратного VSPI
   zbih: '`CS` — вихід, у спокої високий|Вихід на реле · classic'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h
   cytata: '#define VSPI_IOMUX_PIN_NUM_CS   5
 
@@ -333,7 +328,6 @@
     немає.'
 - nazva: Сила драйвера GPIO — типова середня, і файл лежить не там
   zbih: силу драйвера
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/gpio_types.h
   cytata: 'GPIO_DRIVE_CAP_0       = 0,    /*!< Pad drive capability: weak          */
 

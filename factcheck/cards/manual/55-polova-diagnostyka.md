@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/55-polova-diagnostyka.md`
 
-Одиниць твердження: **89**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **89**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-55-001 sha:a31f890b src:manual/55-polova-diagnostyka.md:3 klas:E -->
+<!-- fc id:T-55-001 sha:a31f890b src:manual/55-polova-diagnostyka.md:3 status:no-external-signal -->
 ### T-55-001 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-55-002 sha:226e2418 src:manual/55-polova-diagnostyka.md:3 klas:E -->
+<!-- fc id:T-55-002 sha:226e2418 src:manual/55-polova-diagnostyka.md:3 status:no-external-signal -->
 ### T-55-002 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-55-003 sha:a1535f8a src:manual/55-polova-diagnostyka.md:6 klas:E -->
+<!-- fc id:T-55-003 sha:a1535f8a src:manual/55-polova-diagnostyka.md:6 status:no-external-signal -->
 ### T-55-003 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -74,7 +74,7 @@
 
 ---
 
-<!-- fc id:T-55-004 sha:d7307aeb src:manual/55-polova-diagnostyka.md:11 klas:E -->
+<!-- fc id:T-55-004 sha:d7307aeb src:manual/55-polova-diagnostyka.md:11 status:no-external-signal -->
 ### T-55-004 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -95,7 +95,7 @@
 
 ---
 
-<!-- fc id:T-55-005 sha:a6cfdfd9 src:manual/55-polova-diagnostyka.md:13 klas:E -->
+<!-- fc id:T-55-005 sha:a6cfdfd9 src:manual/55-polova-diagnostyka.md:13 status:no-external-signal -->
 ### T-55-005 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -119,7 +119,7 @@
 
 ---
 
-<!-- fc id:T-55-006 sha:d1f0040d src:manual/55-polova-diagnostyka.md:15 klas:E -->
+<!-- fc id:T-55-006 sha:d1f0040d src:manual/55-polova-diagnostyka.md:15 status:no-external-signal -->
 ### T-55-006 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -143,7 +143,7 @@
 
 ---
 
-<!-- fc id:T-55-007 sha:97b61f75 src:manual/55-polova-diagnostyka.md:16 klas:E -->
+<!-- fc id:T-55-007 sha:97b61f75 src:manual/55-polova-diagnostyka.md:16 status:no-external-signal -->
 ### T-55-007 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -167,7 +167,7 @@
 
 ---
 
-<!-- fc id:T-55-008 sha:c7486bc6 src:manual/55-polova-diagnostyka.md:18 klas:E -->
+<!-- fc id:T-55-008 sha:c7486bc6 src:manual/55-polova-diagnostyka.md:18 status:no-external-signal -->
 ### T-55-008 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-55-009 sha:8765d35b src:manual/55-polova-diagnostyka.md:20 klas:F -->
+<!-- fc id:T-55-009 sha:8765d35b src:manual/55-polova-diagnostyka.md:20 status:unchecked -->
 ### T-55-009 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -210,7 +210,7 @@
 
 ---
 
-<!-- fc id:T-55-010 sha:1ffb6ffb src:manual/55-polova-diagnostyka.md:25 klas:E -->
+<!-- fc id:T-55-010 sha:1ffb6ffb src:manual/55-polova-diagnostyka.md:25 status:no-external-signal -->
 ### T-55-010 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -232,7 +232,7 @@
 
 ---
 
-<!-- fc id:T-55-011 sha:44dc73e8 src:manual/55-polova-diagnostyka.md:30 klas:E -->
+<!-- fc id:T-55-011 sha:44dc73e8 src:manual/55-polova-diagnostyka.md:30 status:no-external-signal -->
 ### T-55-011 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-55-012 sha:ca42f7f1 src:manual/55-polova-diagnostyka.md:32 klas:E -->
+<!-- fc id:T-55-012 sha:ca42f7f1 src:manual/55-polova-diagnostyka.md:32 status:no-external-signal -->
 ### T-55-012 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -286,7 +286,7 @@
 
 ---
 
-<!-- fc id:T-55-013 sha:d709edc5 src:manual/55-polova-diagnostyka.md:35 klas:E -->
+<!-- fc id:T-55-013 sha:d709edc5 src:manual/55-polova-diagnostyka.md:35 status:no-external-signal -->
 ### T-55-013 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -308,7 +308,7 @@
 
 ---
 
-<!-- fc id:T-55-014 sha:d49446a2 src:manual/55-polova-diagnostyka.md:35 klas:E -->
+<!-- fc id:T-55-014 sha:d49446a2 src:manual/55-polova-diagnostyka.md:35 status:no-external-signal -->
 ### T-55-014 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -330,7 +330,7 @@
 
 ---
 
-<!-- fc id:T-55-015 sha:e32cc157 src:manual/55-polova-diagnostyka.md:38 klas:F -->
+<!-- fc id:T-55-015 sha:e32cc157 src:manual/55-polova-diagnostyka.md:38 status:unchecked -->
 ### T-55-015 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -352,7 +352,7 @@
 
 ---
 
-<!-- fc id:T-55-016 sha:36a8b2e6 src:manual/55-polova-diagnostyka.md:38 klas:E -->
+<!-- fc id:T-55-016 sha:36a8b2e6 src:manual/55-polova-diagnostyka.md:38 status:no-external-signal -->
 ### T-55-016 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -374,7 +374,7 @@
 
 ---
 
-<!-- fc id:T-55-017 sha:77b4f4c0 src:manual/55-polova-diagnostyka.md:41 klas:E -->
+<!-- fc id:T-55-017 sha:77b4f4c0 src:manual/55-polova-diagnostyka.md:41 status:no-external-signal -->
 ### T-55-017 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -397,7 +397,7 @@
 
 ---
 
-<!-- fc id:T-55-018 sha:9f4aa2e9 src:manual/55-polova-diagnostyka.md:41 klas:E -->
+<!-- fc id:T-55-018 sha:9f4aa2e9 src:manual/55-polova-diagnostyka.md:41 status:no-external-signal -->
 ### T-55-018 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -420,7 +420,7 @@
 
 ---
 
-<!-- fc id:T-55-019 sha:94c3279c src:manual/55-polova-diagnostyka.md:42 klas:L -->
+<!-- fc id:T-55-019 sha:94c3279c src:manual/55-polova-diagnostyka.md:42 status:looked-not-found -->
 ### T-55-019 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -447,7 +447,7 @@
 
 ---
 
-<!-- fc id:T-55-020 sha:52e01230 src:manual/55-polova-diagnostyka.md:45 klas:E -->
+<!-- fc id:T-55-020 sha:52e01230 src:manual/55-polova-diagnostyka.md:45 status:no-external-signal -->
 ### T-55-020 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -468,7 +468,7 @@
 
 ---
 
-<!-- fc id:T-55-021 sha:0f6cbb0f src:manual/55-polova-diagnostyka.md:47 klas:F -->
+<!-- fc id:T-55-021 sha:0f6cbb0f src:manual/55-polova-diagnostyka.md:47 status:unchecked -->
 ### T-55-021 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -490,7 +490,7 @@
 
 ---
 
-<!-- fc id:T-55-022 sha:5733f6e0 src:manual/55-polova-diagnostyka.md:48 klas:E -->
+<!-- fc id:T-55-022 sha:5733f6e0 src:manual/55-polova-diagnostyka.md:48 status:no-external-signal -->
 ### T-55-022 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -512,7 +512,7 @@
 
 ---
 
-<!-- fc id:T-55-023 sha:1105cf07 src:manual/55-polova-diagnostyka.md:51 klas:E -->
+<!-- fc id:T-55-023 sha:1105cf07 src:manual/55-polova-diagnostyka.md:51 status:no-external-signal -->
 ### T-55-023 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -536,7 +536,7 @@
 
 ---
 
-<!-- fc id:T-55-024 sha:48d82d88 src:manual/55-polova-diagnostyka.md:55 klas:E -->
+<!-- fc id:T-55-024 sha:48d82d88 src:manual/55-polova-diagnostyka.md:55 status:no-external-signal -->
 ### T-55-024 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -559,7 +559,7 @@
 
 ---
 
-<!-- fc id:T-55-025 sha:f6a4e53f src:manual/55-polova-diagnostyka.md:61 klas:E -->
+<!-- fc id:T-55-025 sha:f6a4e53f src:manual/55-polova-diagnostyka.md:61 status:no-external-signal -->
 ### T-55-025 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -580,7 +580,7 @@
 
 ---
 
-<!-- fc id:T-55-026 sha:8c7bdf36 src:manual/55-polova-diagnostyka.md:63 klas:F -->
+<!-- fc id:T-55-026 sha:8c7bdf36 src:manual/55-polova-diagnostyka.md:63 status:unchecked -->
 ### T-55-026 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -603,7 +603,7 @@
 
 ---
 
-<!-- fc id:T-55-027 sha:71cc658c src:manual/55-polova-diagnostyka.md:64 klas:E -->
+<!-- fc id:T-55-027 sha:71cc658c src:manual/55-polova-diagnostyka.md:64 status:no-external-signal -->
 ### T-55-027 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -626,7 +626,7 @@
 
 ---
 
-<!-- fc id:T-55-028 sha:b1e53ed4 src:manual/55-polova-diagnostyka.md:67 klas:E -->
+<!-- fc id:T-55-028 sha:b1e53ed4 src:manual/55-polova-diagnostyka.md:67 status:no-external-signal -->
 ### T-55-028 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -648,7 +648,7 @@
 
 ---
 
-<!-- fc id:T-55-029 sha:61748fcf src:manual/55-polova-diagnostyka.md:68 klas:E -->
+<!-- fc id:T-55-029 sha:61748fcf src:manual/55-polova-diagnostyka.md:68 status:no-external-signal -->
 ### T-55-029 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -670,7 +670,7 @@
 
 ---
 
-<!-- fc id:T-55-030 sha:1578907a src:manual/55-polova-diagnostyka.md:70 klas:E -->
+<!-- fc id:T-55-030 sha:1578907a src:manual/55-polova-diagnostyka.md:70 status:no-external-signal -->
 ### T-55-030 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -692,7 +692,7 @@
 
 ---
 
-<!-- fc id:T-55-031 sha:05b28557 src:manual/55-polova-diagnostyka.md:70 klas:E -->
+<!-- fc id:T-55-031 sha:05b28557 src:manual/55-polova-diagnostyka.md:70 status:no-external-signal -->
 ### T-55-031 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -714,7 +714,7 @@
 
 ---
 
-<!-- fc id:T-55-032 sha:404d5bbc src:manual/55-polova-diagnostyka.md:73 klas:E -->
+<!-- fc id:T-55-032 sha:404d5bbc src:manual/55-polova-diagnostyka.md:73 status:no-external-signal -->
 ### T-55-032 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -736,7 +736,7 @@
 
 ---
 
-<!-- fc id:T-55-033 sha:e6ea0c9b src:manual/55-polova-diagnostyka.md:73 klas:E -->
+<!-- fc id:T-55-033 sha:e6ea0c9b src:manual/55-polova-diagnostyka.md:73 status:no-external-signal -->
 ### T-55-033 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -758,7 +758,7 @@
 
 ---
 
-<!-- fc id:T-55-034 sha:9a88cbbe src:manual/55-polova-diagnostyka.md:76 klas:E -->
+<!-- fc id:T-55-034 sha:9a88cbbe src:manual/55-polova-diagnostyka.md:76 status:no-external-signal -->
 ### T-55-034 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -780,7 +780,7 @@
 
 ---
 
-<!-- fc id:T-55-035 sha:6008879f src:manual/55-polova-diagnostyka.md:76 klas:E -->
+<!-- fc id:T-55-035 sha:6008879f src:manual/55-polova-diagnostyka.md:76 status:no-external-signal -->
 ### T-55-035 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -802,7 +802,7 @@
 
 ---
 
-<!-- fc id:T-55-036 sha:8f8177f9 src:manual/55-polova-diagnostyka.md:79 klas:E -->
+<!-- fc id:T-55-036 sha:8f8177f9 src:manual/55-polova-diagnostyka.md:79 status:no-external-signal -->
 ### T-55-036 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -824,7 +824,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-037 sha:36106c27 src:manual/55-polova-diagnostyka.md:80 klas:E -->
+<!-- fc id:T-55-037 sha:36106c27 src:manual/55-polova-diagnostyka.md:80 status:no-external-signal -->
 ### T-55-037 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -846,7 +846,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-038 sha:b1c290ad src:manual/55-polova-diagnostyka.md:82 klas:E -->
+<!-- fc id:T-55-038 sha:b1c290ad src:manual/55-polova-diagnostyka.md:82 status:no-external-signal -->
 ### T-55-038 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -868,7 +868,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-039 sha:4a3c4ed3 src:manual/55-polova-diagnostyka.md:82 klas:A -->
+<!-- fc id:T-55-039 sha:4a3c4ed3 src:manual/55-polova-diagnostyka.md:82 status:verbatim -->
 ### T-55-039 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -912,7 +912,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-040 sha:53b082c5 src:manual/55-polova-diagnostyka.md:85 klas:F -->
+<!-- fc id:T-55-040 sha:53b082c5 src:manual/55-polova-diagnostyka.md:85 status:unchecked -->
 ### T-55-040 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -935,7 +935,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-041 sha:54be4992 src:manual/55-polova-diagnostyka.md:85 klas:F -->
+<!-- fc id:T-55-041 sha:54be4992 src:manual/55-polova-diagnostyka.md:85 status:unchecked -->
 ### T-55-041 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -958,7 +958,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-042 sha:5260976b src:manual/55-polova-diagnostyka.md:86 klas:E -->
+<!-- fc id:T-55-042 sha:5260976b src:manual/55-polova-diagnostyka.md:86 status:no-external-signal -->
 ### T-55-042 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -981,7 +981,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-043 sha:9d71d6cc src:manual/55-polova-diagnostyka.md:91 klas:E -->
+<!-- fc id:T-55-043 sha:9d71d6cc src:manual/55-polova-diagnostyka.md:91 status:no-external-signal -->
 ### T-55-043 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1013,7 +1013,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-044 sha:acf76dee src:manual/55-polova-diagnostyka.md:93 klas:E -->
+<!-- fc id:T-55-044 sha:acf76dee src:manual/55-polova-diagnostyka.md:93 status:no-external-signal -->
 ### T-55-044 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1045,7 +1045,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-045 sha:695d096c src:manual/55-polova-diagnostyka.md:94 klas:F -->
+<!-- fc id:T-55-045 sha:695d096c src:manual/55-polova-diagnostyka.md:94 status:unchecked -->
 ### T-55-045 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1077,7 +1077,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-046 sha:b583b23a src:manual/55-polova-diagnostyka.md:95 klas:E -->
+<!-- fc id:T-55-046 sha:b583b23a src:manual/55-polova-diagnostyka.md:95 status:no-external-signal -->
 ### T-55-046 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1109,7 +1109,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-047 sha:f1ec0675 src:manual/55-polova-diagnostyka.md:96 klas:E -->
+<!-- fc id:T-55-047 sha:f1ec0675 src:manual/55-polova-diagnostyka.md:96 status:no-external-signal -->
 ### T-55-047 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1141,7 +1141,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-048 sha:7c0a7a6b src:manual/55-polova-diagnostyka.md:97 klas:E -->
+<!-- fc id:T-55-048 sha:7c0a7a6b src:manual/55-polova-diagnostyka.md:97 status:no-external-signal -->
 ### T-55-048 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1173,7 +1173,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-049 sha:337b28e2 src:manual/55-polova-diagnostyka.md:98 klas:E -->
+<!-- fc id:T-55-049 sha:337b28e2 src:manual/55-polova-diagnostyka.md:98 status:no-external-signal -->
 ### T-55-049 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1205,7 +1205,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-050 sha:7625f589 src:manual/55-polova-diagnostyka.md:99 klas:E -->
+<!-- fc id:T-55-050 sha:7625f589 src:manual/55-polova-diagnostyka.md:99 status:no-external-signal -->
 ### T-55-050 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1237,7 +1237,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-051 sha:d4c2f790 src:manual/55-polova-diagnostyka.md:100 klas:B -->
+<!-- fc id:T-55-051 sha:d4c2f790 src:manual/55-polova-diagnostyka.md:100 status:derived -->
 ### T-55-051 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1279,7 +1279,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-052 sha:39b6bdf2 src:manual/55-polova-diagnostyka.md:101 klas:E -->
+<!-- fc id:T-55-052 sha:39b6bdf2 src:manual/55-polova-diagnostyka.md:101 status:no-external-signal -->
 ### T-55-052 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1311,7 +1311,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-053 sha:c5865b0f src:manual/55-polova-diagnostyka.md:105 klas:E -->
+<!-- fc id:T-55-053 sha:c5865b0f src:manual/55-polova-diagnostyka.md:105 status:no-external-signal -->
 ### T-55-053 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1332,7 +1332,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-054 sha:9b15c962 src:manual/55-polova-diagnostyka.md:107 klas:E -->
+<!-- fc id:T-55-054 sha:9b15c962 src:manual/55-polova-diagnostyka.md:107 status:no-external-signal -->
 ### T-55-054 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1354,7 +1354,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-055 sha:a7caeb3f src:manual/55-polova-diagnostyka.md:110 klas:E -->
+<!-- fc id:T-55-055 sha:a7caeb3f src:manual/55-polova-diagnostyka.md:110 status:no-external-signal -->
 ### T-55-055 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1375,7 +1375,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-056 sha:3a623c52 src:manual/55-polova-diagnostyka.md:112 klas:E -->
+<!-- fc id:T-55-056 sha:3a623c52 src:manual/55-polova-diagnostyka.md:112 status:no-external-signal -->
 ### T-55-056 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1398,7 +1398,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-057 sha:71744d40 src:manual/55-polova-diagnostyka.md:113 klas:E -->
+<!-- fc id:T-55-057 sha:71744d40 src:manual/55-polova-diagnostyka.md:113 status:no-external-signal -->
 ### T-55-057 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1421,7 +1421,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-058 sha:527e72d2 src:manual/55-polova-diagnostyka.md:116 klas:E -->
+<!-- fc id:T-55-058 sha:527e72d2 src:manual/55-polova-diagnostyka.md:116 status:no-external-signal -->
 ### T-55-058 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1442,7 +1442,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-059 sha:b7e6bda4 src:manual/55-polova-diagnostyka.md:118 klas:E -->
+<!-- fc id:T-55-059 sha:b7e6bda4 src:manual/55-polova-diagnostyka.md:118 status:no-external-signal -->
 ### T-55-059 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1464,7 +1464,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-060 sha:368a7902 src:manual/55-polova-diagnostyka.md:122 klas:E -->
+<!-- fc id:T-55-060 sha:368a7902 src:manual/55-polova-diagnostyka.md:122 status:no-external-signal -->
 ### T-55-060 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1488,7 +1488,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-061 sha:f81b559d src:manual/55-polova-diagnostyka.md:123 klas:E -->
+<!-- fc id:T-55-061 sha:f81b559d src:manual/55-polova-diagnostyka.md:123 status:no-external-signal -->
 ### T-55-061 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1512,7 +1512,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-062 sha:b0b242e6 src:manual/55-polova-diagnostyka.md:126 klas:E -->
+<!-- fc id:T-55-062 sha:b0b242e6 src:manual/55-polova-diagnostyka.md:126 status:no-external-signal -->
 ### T-55-062 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1535,7 +1535,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-063 sha:e5da36f2 src:manual/55-polova-diagnostyka.md:126 klas:E -->
+<!-- fc id:T-55-063 sha:e5da36f2 src:manual/55-polova-diagnostyka.md:126 status:no-external-signal -->
 ### T-55-063 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1558,7 +1558,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-064 sha:25c29bcf src:manual/55-polova-diagnostyka.md:132 klas:F -->
+<!-- fc id:T-55-064 sha:25c29bcf src:manual/55-polova-diagnostyka.md:132 status:unchecked -->
 ### T-55-064 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1581,7 +1581,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-065 sha:842d3f35 src:manual/55-polova-diagnostyka.md:132 klas:E -->
+<!-- fc id:T-55-065 sha:842d3f35 src:manual/55-polova-diagnostyka.md:132 status:no-external-signal -->
 ### T-55-065 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1604,7 +1604,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-066 sha:50845edb src:manual/55-polova-diagnostyka.md:136 klas:E -->
+<!-- fc id:T-55-066 sha:50845edb src:manual/55-polova-diagnostyka.md:136 status:no-external-signal -->
 ### T-55-066 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1626,7 +1626,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-067 sha:1cca9cfa src:manual/55-polova-diagnostyka.md:139 klas:E -->
+<!-- fc id:T-55-067 sha:1cca9cfa src:manual/55-polova-diagnostyka.md:139 status:no-external-signal -->
 ### T-55-067 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1649,7 +1649,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-068 sha:8538ac00 src:manual/55-polova-diagnostyka.md:139 klas:E -->
+<!-- fc id:T-55-068 sha:8538ac00 src:manual/55-polova-diagnostyka.md:139 status:no-external-signal -->
 ### T-55-068 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1672,7 +1672,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-069 sha:c18a0cb3 src:manual/55-polova-diagnostyka.md:145 klas:E -->
+<!-- fc id:T-55-069 sha:c18a0cb3 src:manual/55-polova-diagnostyka.md:145 status:no-external-signal -->
 ### T-55-069 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1693,7 +1693,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-070 sha:a99e8e88 src:manual/55-polova-diagnostyka.md:147 klas:E -->
+<!-- fc id:T-55-070 sha:a99e8e88 src:manual/55-polova-diagnostyka.md:147 status:no-external-signal -->
 ### T-55-070 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1714,7 +1714,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-071 sha:cc88f1f6 src:manual/55-polova-diagnostyka.md:149 klas:E -->
+<!-- fc id:T-55-071 sha:cc88f1f6 src:manual/55-polova-diagnostyka.md:149 status:no-external-signal -->
 ### T-55-071 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1735,7 +1735,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-072 sha:b177df25 src:manual/55-polova-diagnostyka.md:151 klas:E -->
+<!-- fc id:T-55-072 sha:b177df25 src:manual/55-polova-diagnostyka.md:151 status:no-external-signal -->
 ### T-55-072 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1757,7 +1757,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-073 sha:b004fad5 src:manual/55-polova-diagnostyka.md:154 klas:E -->
+<!-- fc id:T-55-073 sha:b004fad5 src:manual/55-polova-diagnostyka.md:154 status:no-external-signal -->
 ### T-55-073 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1779,7 +1779,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-074 sha:33050b83 src:manual/55-polova-diagnostyka.md:154 klas:E -->
+<!-- fc id:T-55-074 sha:33050b83 src:manual/55-polova-diagnostyka.md:154 status:no-external-signal -->
 ### T-55-074 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1801,7 +1801,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-075 sha:91833a28 src:manual/55-polova-diagnostyka.md:157 klas:E -->
+<!-- fc id:T-55-075 sha:91833a28 src:manual/55-polova-diagnostyka.md:157 status:no-external-signal -->
 ### T-55-075 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1822,7 +1822,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-076 sha:0bb27eae src:manual/55-polova-diagnostyka.md:159 klas:E -->
+<!-- fc id:T-55-076 sha:0bb27eae src:manual/55-polova-diagnostyka.md:159 status:no-external-signal -->
 ### T-55-076 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1843,7 +1843,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-077 sha:f7d0d1f3 src:manual/55-polova-diagnostyka.md:161 klas:F -->
+<!-- fc id:T-55-077 sha:f7d0d1f3 src:manual/55-polova-diagnostyka.md:161 status:unchecked -->
 ### T-55-077 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1865,7 +1865,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-078 sha:e86b021e src:manual/55-polova-diagnostyka.md:166 klas:E -->
+<!-- fc id:T-55-078 sha:e86b021e src:manual/55-polova-diagnostyka.md:166 status:no-external-signal -->
 ### T-55-078 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1887,7 +1887,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-079 sha:ad75e102 src:manual/55-polova-diagnostyka.md:169 klas:E -->
+<!-- fc id:T-55-079 sha:ad75e102 src:manual/55-polova-diagnostyka.md:169 status:no-external-signal -->
 ### T-55-079 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1910,7 +1910,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-080 sha:7de1d471 src:manual/55-polova-diagnostyka.md:170 klas:E -->
+<!-- fc id:T-55-080 sha:7de1d471 src:manual/55-polova-diagnostyka.md:170 status:no-external-signal -->
 ### T-55-080 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1933,7 +1933,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-081 sha:dbb76fb7 src:manual/55-polova-diagnostyka.md:173 klas:E -->
+<!-- fc id:T-55-081 sha:dbb76fb7 src:manual/55-polova-diagnostyka.md:173 status:no-external-signal -->
 ### T-55-081 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1954,7 +1954,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-082 sha:45ec5617 src:manual/55-polova-diagnostyka.md:176 klas:E -->
+<!-- fc id:T-55-082 sha:45ec5617 src:manual/55-polova-diagnostyka.md:176 status:no-external-signal -->
 ### T-55-082 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1980,7 +1980,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-083 sha:bf92c313 src:manual/55-polova-diagnostyka.md:177 klas:A -->
+<!-- fc id:T-55-083 sha:bf92c313 src:manual/55-polova-diagnostyka.md:177 status:verbatim -->
 ### T-55-083 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -2012,7 +2012,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-084 sha:28851eb1 src:manual/55-polova-diagnostyka.md:184 klas:E -->
+<!-- fc id:T-55-084 sha:28851eb1 src:manual/55-polova-diagnostyka.md:184 status:no-external-signal -->
 ### T-55-084 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -2033,7 +2033,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-085 sha:e2b42def src:manual/55-polova-diagnostyka.md:186 klas:E -->
+<!-- fc id:T-55-085 sha:e2b42def src:manual/55-polova-diagnostyka.md:186 status:no-external-signal -->
 ### T-55-085 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -2055,7 +2055,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-086 sha:81638721 src:manual/55-polova-diagnostyka.md:189 klas:E -->
+<!-- fc id:T-55-086 sha:81638721 src:manual/55-polova-diagnostyka.md:189 status:no-external-signal -->
 ### T-55-086 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -2076,7 +2076,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-087 sha:77b3d1f2 src:manual/55-polova-diagnostyka.md:191 klas:E -->
+<!-- fc id:T-55-087 sha:77b3d1f2 src:manual/55-polova-diagnostyka.md:191 status:no-external-signal -->
 ### T-55-087 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -2097,7 +2097,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-088 sha:2df1a464 src:manual/55-polova-diagnostyka.md:193 klas:E -->
+<!-- fc id:T-55-088 sha:2df1a464 src:manual/55-polova-diagnostyka.md:193 status:no-external-signal -->
 ### T-55-088 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -2118,7 +2118,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-089 sha:4e118840 src:manual/55-polova-diagnostyka.md:195 klas:E -->
+<!-- fc id:T-55-089 sha:4e118840 src:manual/55-polova-diagnostyka.md:195 status:no-external-signal -->
 ### T-55-089 · proza · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**

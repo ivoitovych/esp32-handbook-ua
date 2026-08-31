@@ -15,7 +15,6 @@
 
 - nazva: 'T-13-070: | Виріб, OTA, серійність, довгий супровід | ESP-IDF'
   zbih: \|\s+Виріб,\s+OTA,\s+серійність,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'Factory app, two OTA definitions
 

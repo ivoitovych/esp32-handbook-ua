@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/15-oflayn.md`
 
-Одиниць твердження: **72**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **72**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-15-001 sha:8ced3496 src:manual/15-oflayn.md:3 klas:E -->
+<!-- fc id:T-15-001 sha:8ced3496 src:manual/15-oflayn.md:3 status:no-external-signal -->
 ### T-15-001 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-15-002 sha:2fe5f681 src:manual/15-oflayn.md:9 klas:F -->
+<!-- fc id:T-15-002 sha:2fe5f681 src:manual/15-oflayn.md:9 status:unchecked -->
 ### T-15-002 · tablycya-shapka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -63,7 +63,7 @@
 
 ---
 
-<!-- fc id:T-15-003 sha:ce5b1e31 src:manual/15-oflayn.md:11 klas:F -->
+<!-- fc id:T-15-003 sha:ce5b1e31 src:manual/15-oflayn.md:11 status:unchecked -->
 ### T-15-003 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -101,7 +101,7 @@
 
 ---
 
-<!-- fc id:T-15-004 sha:13cd498e src:manual/15-oflayn.md:11 klas:E -->
+<!-- fc id:T-15-004 sha:13cd498e src:manual/15-oflayn.md:11 status:no-external-signal -->
 ### T-15-004 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -139,7 +139,7 @@
 
 ---
 
-<!-- fc id:T-15-005 sha:d76e004e src:manual/15-oflayn.md:12 klas:F -->
+<!-- fc id:T-15-005 sha:d76e004e src:manual/15-oflayn.md:12 status:unchecked -->
 ### T-15-005 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -177,7 +177,7 @@
 
 ---
 
-<!-- fc id:T-15-006 sha:ef64df16 src:manual/15-oflayn.md:12 klas:E -->
+<!-- fc id:T-15-006 sha:ef64df16 src:manual/15-oflayn.md:12 status:no-external-signal -->
 ### T-15-006 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -215,7 +215,7 @@
 
 ---
 
-<!-- fc id:T-15-007 sha:c7624aa9 src:manual/15-oflayn.md:13 klas:F -->
+<!-- fc id:T-15-007 sha:c7624aa9 src:manual/15-oflayn.md:13 status:unchecked -->
 ### T-15-007 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-15-008 sha:e3881d50 src:manual/15-oflayn.md:13 klas:F -->
+<!-- fc id:T-15-008 sha:e3881d50 src:manual/15-oflayn.md:13 status:unchecked -->
 ### T-15-008 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -291,7 +291,7 @@
 
 ---
 
-<!-- fc id:T-15-009 sha:0f6b1417 src:manual/15-oflayn.md:14 klas:E -->
+<!-- fc id:T-15-009 sha:0f6b1417 src:manual/15-oflayn.md:14 status:no-external-signal -->
 ### T-15-009 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -329,7 +329,7 @@
 
 ---
 
-<!-- fc id:T-15-010 sha:4c948852 src:manual/15-oflayn.md:14 klas:E -->
+<!-- fc id:T-15-010 sha:4c948852 src:manual/15-oflayn.md:14 status:no-external-signal -->
 ### T-15-010 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -367,7 +367,7 @@
 
 ---
 
-<!-- fc id:T-15-011 sha:5cc245c1 src:manual/15-oflayn.md:15 klas:F -->
+<!-- fc id:T-15-011 sha:5cc245c1 src:manual/15-oflayn.md:15 status:unchecked -->
 ### T-15-011 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -405,7 +405,7 @@
 
 ---
 
-<!-- fc id:T-15-012 sha:a00faa86 src:manual/15-oflayn.md:15 klas:F -->
+<!-- fc id:T-15-012 sha:a00faa86 src:manual/15-oflayn.md:15 status:unchecked -->
 ### T-15-012 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -443,7 +443,7 @@
 
 ---
 
-<!-- fc id:T-15-013 sha:6897a00e src:manual/15-oflayn.md:16 klas:F -->
+<!-- fc id:T-15-013 sha:6897a00e src:manual/15-oflayn.md:16 status:unchecked -->
 ### T-15-013 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -481,7 +481,7 @@
 
 ---
 
-<!-- fc id:T-15-014 sha:a6a8ecd6 src:manual/15-oflayn.md:16 klas:A -->
+<!-- fc id:T-15-014 sha:a6a8ecd6 src:manual/15-oflayn.md:16 status:verbatim -->
 ### T-15-014 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -525,7 +525,7 @@
 
 ---
 
-<!-- fc id:T-15-015 sha:c54616f5 src:manual/15-oflayn.md:17 klas:F -->
+<!-- fc id:T-15-015 sha:c54616f5 src:manual/15-oflayn.md:17 status:unchecked -->
 ### T-15-015 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -563,7 +563,7 @@
 
 ---
 
-<!-- fc id:T-15-016 sha:0373f6aa src:manual/15-oflayn.md:17 klas:F -->
+<!-- fc id:T-15-016 sha:0373f6aa src:manual/15-oflayn.md:17 status:unchecked -->
 ### T-15-016 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -601,7 +601,7 @@
 
 ---
 
-<!-- fc id:T-15-017 sha:1981a8c0 src:manual/15-oflayn.md:18 klas:F -->
+<!-- fc id:T-15-017 sha:1981a8c0 src:manual/15-oflayn.md:18 status:unchecked -->
 ### T-15-017 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -639,7 +639,7 @@
 
 ---
 
-<!-- fc id:T-15-018 sha:9c3b22f1 src:manual/15-oflayn.md:18 klas:E -->
+<!-- fc id:T-15-018 sha:9c3b22f1 src:manual/15-oflayn.md:18 status:no-external-signal -->
 ### T-15-018 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -677,7 +677,7 @@
 
 ---
 
-<!-- fc id:T-15-019 sha:4a48c8a2 src:manual/15-oflayn.md:19 klas:E -->
+<!-- fc id:T-15-019 sha:4a48c8a2 src:manual/15-oflayn.md:19 status:no-external-signal -->
 ### T-15-019 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -715,7 +715,7 @@
 
 ---
 
-<!-- fc id:T-15-020 sha:827a4abd src:manual/15-oflayn.md:19 klas:E -->
+<!-- fc id:T-15-020 sha:827a4abd src:manual/15-oflayn.md:19 status:no-external-signal -->
 ### T-15-020 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -753,7 +753,7 @@
 
 ---
 
-<!-- fc id:T-15-021 sha:c42f7072 src:manual/15-oflayn.md:21 klas:E -->
+<!-- fc id:T-15-021 sha:c42f7072 src:manual/15-oflayn.md:21 status:no-external-signal -->
 ### T-15-021 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -775,7 +775,7 @@
 
 ---
 
-<!-- fc id:T-15-022 sha:11279bad src:manual/15-oflayn.md:22 klas:D -->
+<!-- fc id:T-15-022 sha:11279bad src:manual/15-oflayn.md:22 status:arithmetic -->
 ### T-15-022 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -812,7 +812,7 @@
 
 ---
 
-<!-- fc id:T-15-023 sha:0aa8ad75 src:manual/15-oflayn.md:26 klas:E -->
+<!-- fc id:T-15-023 sha:0aa8ad75 src:manual/15-oflayn.md:26 status:no-external-signal -->
 ### T-15-023 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -834,7 +834,7 @@
 
 ---
 
-<!-- fc id:T-15-024 sha:ad7adf56 src:manual/15-oflayn.md:29 klas:F -->
+<!-- fc id:T-15-024 sha:ad7adf56 src:manual/15-oflayn.md:29 status:unchecked -->
 ### T-15-024 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -857,7 +857,7 @@
 
 ---
 
-<!-- fc id:T-15-025 sha:923f4494 src:manual/15-oflayn.md:31 klas:E -->
+<!-- fc id:T-15-025 sha:923f4494 src:manual/15-oflayn.md:31 status:no-external-signal -->
 ### T-15-025 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -880,7 +880,7 @@
 
 ---
 
-<!-- fc id:T-15-026 sha:d740dcb4 src:manual/15-oflayn.md:33 klas:E -->
+<!-- fc id:T-15-026 sha:d740dcb4 src:manual/15-oflayn.md:33 status:no-external-signal -->
 ### T-15-026 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -903,7 +903,7 @@
 
 ---
 
-<!-- fc id:T-15-027 sha:c4a52815 src:manual/15-oflayn.md:34 klas:E -->
+<!-- fc id:T-15-027 sha:c4a52815 src:manual/15-oflayn.md:34 status:no-external-signal -->
 ### T-15-027 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -926,7 +926,7 @@
 
 ---
 
-<!-- fc id:T-15-028 sha:0002818e src:manual/15-oflayn.md:37 klas:F -->
+<!-- fc id:T-15-028 sha:0002818e src:manual/15-oflayn.md:37 status:unchecked -->
 ### T-15-028 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -950,7 +950,7 @@
 
 ---
 
-<!-- fc id:T-15-029 sha:42a4fc2d src:manual/15-oflayn.md:39 klas:F -->
+<!-- fc id:T-15-029 sha:42a4fc2d src:manual/15-oflayn.md:39 status:unchecked -->
 ### T-15-029 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -974,7 +974,7 @@
 
 ---
 
-<!-- fc id:T-15-030 sha:18dd011b src:manual/15-oflayn.md:42 klas:E -->
+<!-- fc id:T-15-030 sha:18dd011b src:manual/15-oflayn.md:42 status:no-external-signal -->
 ### T-15-030 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -997,7 +997,7 @@
 
 ---
 
-<!-- fc id:T-15-031 sha:96de1f9d src:manual/15-oflayn.md:44 klas:F -->
+<!-- fc id:T-15-031 sha:96de1f9d src:manual/15-oflayn.md:44 status:unchecked -->
 ### T-15-031 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1020,7 +1020,7 @@
 
 ---
 
-<!-- fc id:T-15-032 sha:1e41f3e2 src:manual/15-oflayn.md:46 klas:F -->
+<!-- fc id:T-15-032 sha:1e41f3e2 src:manual/15-oflayn.md:46 status:unchecked -->
 ### T-15-032 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1042,7 +1042,7 @@
 
 ---
 
-<!-- fc id:T-15-033 sha:80e38aa6 src:manual/15-oflayn.md:49 klas:E -->
+<!-- fc id:T-15-033 sha:80e38aa6 src:manual/15-oflayn.md:49 status:no-external-signal -->
 ### T-15-033 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1065,7 +1065,7 @@
 
 ---
 
-<!-- fc id:T-15-034 sha:a2320dcb src:manual/15-oflayn.md:49 klas:E -->
+<!-- fc id:T-15-034 sha:a2320dcb src:manual/15-oflayn.md:49 status:no-external-signal -->
 ### T-15-034 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1088,7 +1088,7 @@
 
 ---
 
-<!-- fc id:T-15-035 sha:519cfb81 src:manual/15-oflayn.md:54 klas:F -->
+<!-- fc id:T-15-035 sha:519cfb81 src:manual/15-oflayn.md:54 status:unchecked -->
 ### T-15-035 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1113,7 +1113,7 @@
 
 ---
 
-<!-- fc id:T-15-036 sha:66a408da src:manual/15-oflayn.md:55 klas:E -->
+<!-- fc id:T-15-036 sha:66a408da src:manual/15-oflayn.md:55 status:no-external-signal -->
 ### T-15-036 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1138,7 +1138,7 @@
 
 ---
 
-<!-- fc id:T-15-037 sha:acf72c50 src:manual/15-oflayn.md:59 klas:E -->
+<!-- fc id:T-15-037 sha:acf72c50 src:manual/15-oflayn.md:59 status:no-external-signal -->
 ### T-15-037 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1161,7 +1161,7 @@
 
 ---
 
-<!-- fc id:T-15-038 sha:ff0dd7de src:manual/15-oflayn.md:59 klas:E -->
+<!-- fc id:T-15-038 sha:ff0dd7de src:manual/15-oflayn.md:59 status:no-external-signal -->
 ### T-15-038 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1184,7 +1184,7 @@
 
 ---
 
-<!-- fc id:T-15-039 sha:a45f5d56 src:manual/15-oflayn.md:65 klas:E -->
+<!-- fc id:T-15-039 sha:a45f5d56 src:manual/15-oflayn.md:65 status:no-external-signal -->
 ### T-15-039 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1207,7 +1207,7 @@
 
 ---
 
-<!-- fc id:T-15-040 sha:7647a250 src:manual/15-oflayn.md:66 klas:F -->
+<!-- fc id:T-15-040 sha:7647a250 src:manual/15-oflayn.md:66 status:unchecked -->
 ### T-15-040 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1230,7 +1230,7 @@
 
 ---
 
-<!-- fc id:T-15-041 sha:fdfff973 src:manual/15-oflayn.md:69 klas:E -->
+<!-- fc id:T-15-041 sha:fdfff973 src:manual/15-oflayn.md:69 status:no-external-signal -->
 ### T-15-041 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1251,7 +1251,7 @@
 
 ---
 
-<!-- fc id:T-15-042 sha:b97e3616 src:manual/15-oflayn.md:71 klas:F -->
+<!-- fc id:T-15-042 sha:b97e3616 src:manual/15-oflayn.md:71 status:unchecked -->
 ### T-15-042 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1274,7 +1274,7 @@
 
 ---
 
-<!-- fc id:T-15-043 sha:4969e576 src:manual/15-oflayn.md:72 klas:E -->
+<!-- fc id:T-15-043 sha:4969e576 src:manual/15-oflayn.md:72 status:no-external-signal -->
 ### T-15-043 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1297,7 +1297,7 @@
 
 ---
 
-<!-- fc id:T-15-044 sha:83d6a87c src:manual/15-oflayn.md:75 klas:F -->
+<!-- fc id:T-15-044 sha:83d6a87c src:manual/15-oflayn.md:75 status:unchecked -->
 ### T-15-044 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1319,7 +1319,7 @@
 
 ---
 
-<!-- fc id:T-15-045 sha:b95e4141 src:manual/15-oflayn.md:75 klas:E -->
+<!-- fc id:T-15-045 sha:b95e4141 src:manual/15-oflayn.md:75 status:no-external-signal -->
 ### T-15-045 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1341,7 +1341,7 @@
 
 ---
 
-<!-- fc id:T-15-046 sha:642c2c2c src:manual/15-oflayn.md:76 klas:E -->
+<!-- fc id:T-15-046 sha:642c2c2c src:manual/15-oflayn.md:76 status:no-external-signal -->
 ### T-15-046 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1363,7 +1363,7 @@
 
 ---
 
-<!-- fc id:T-15-047 sha:319c1649 src:manual/15-oflayn.md:78 klas:F -->
+<!-- fc id:T-15-047 sha:319c1649 src:manual/15-oflayn.md:78 status:unchecked -->
 ### T-15-047 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1386,7 +1386,7 @@
 
 ---
 
-<!-- fc id:T-15-048 sha:f133393f src:manual/15-oflayn.md:78 klas:F -->
+<!-- fc id:T-15-048 sha:f133393f src:manual/15-oflayn.md:78 status:unchecked -->
 ### T-15-048 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1409,7 +1409,7 @@
 
 ---
 
-<!-- fc id:T-15-049 sha:7bd40fae src:manual/15-oflayn.md:82 klas:E -->
+<!-- fc id:T-15-049 sha:7bd40fae src:manual/15-oflayn.md:82 status:no-external-signal -->
 ### T-15-049 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1431,7 +1431,7 @@
 
 ---
 
-<!-- fc id:T-15-050 sha:75916fca src:manual/15-oflayn.md:83 klas:E -->
+<!-- fc id:T-15-050 sha:75916fca src:manual/15-oflayn.md:83 status:no-external-signal -->
 ### T-15-050 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1453,7 +1453,7 @@
 
 ---
 
-<!-- fc id:T-15-051 sha:840799a9 src:manual/15-oflayn.md:87 klas:E -->
+<!-- fc id:T-15-051 sha:840799a9 src:manual/15-oflayn.md:87 status:no-external-signal -->
 ### T-15-051 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1475,7 +1475,7 @@
 
 ---
 
-<!-- fc id:T-15-052 sha:09d28a92 src:manual/15-oflayn.md:90 klas:E -->
+<!-- fc id:T-15-052 sha:09d28a92 src:manual/15-oflayn.md:90 status:no-external-signal -->
 ### T-15-052 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1496,7 +1496,7 @@
 
 ---
 
-<!-- fc id:T-15-053 sha:4a533353 src:manual/15-oflayn.md:92 klas:E -->
+<!-- fc id:T-15-053 sha:4a533353 src:manual/15-oflayn.md:92 status:no-external-signal -->
 ### T-15-053 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1527,7 +1527,7 @@
 
 ---
 
-<!-- fc id:T-15-054 sha:fe8fbb7b src:manual/15-oflayn.md:93 klas:E -->
+<!-- fc id:T-15-054 sha:fe8fbb7b src:manual/15-oflayn.md:93 status:no-external-signal -->
 ### T-15-054 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1551,7 +1551,7 @@
 
 ---
 
-<!-- fc id:T-15-055 sha:d64dbfb9 src:manual/15-oflayn.md:97 klas:F -->
+<!-- fc id:T-15-055 sha:d64dbfb9 src:manual/15-oflayn.md:97 status:unchecked -->
 ### T-15-055 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1573,7 +1573,7 @@
 
 ---
 
-<!-- fc id:T-15-056 sha:d7c364f9 src:manual/15-oflayn.md:100 klas:F -->
+<!-- fc id:T-15-056 sha:d7c364f9 src:manual/15-oflayn.md:100 status:unchecked -->
 ### T-15-056 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1595,7 +1595,7 @@
 
 ---
 
-<!-- fc id:T-15-057 sha:5f5e9b35 src:manual/15-oflayn.md:103 klas:E -->
+<!-- fc id:T-15-057 sha:5f5e9b35 src:manual/15-oflayn.md:103 status:no-external-signal -->
 ### T-15-057 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1617,7 +1617,7 @@
 
 ---
 
-<!-- fc id:T-15-058 sha:c0f69cf1 src:manual/15-oflayn.md:103 klas:E -->
+<!-- fc id:T-15-058 sha:c0f69cf1 src:manual/15-oflayn.md:103 status:no-external-signal -->
 ### T-15-058 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1639,7 +1639,7 @@
 
 ---
 
-<!-- fc id:T-15-059 sha:56b6c69d src:manual/15-oflayn.md:106 klas:A -->
+<!-- fc id:T-15-059 sha:56b6c69d src:manual/15-oflayn.md:106 status:verbatim -->
 ### T-15-059 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1668,7 +1668,7 @@
 
 ---
 
-<!-- fc id:T-15-060 sha:2ad344ae src:manual/15-oflayn.md:106 klas:E -->
+<!-- fc id:T-15-060 sha:2ad344ae src:manual/15-oflayn.md:106 status:no-external-signal -->
 ### T-15-060 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1690,7 +1690,7 @@
 
 ---
 
-<!-- fc id:T-15-061 sha:bdec9546 src:manual/15-oflayn.md:109 klas:F -->
+<!-- fc id:T-15-061 sha:bdec9546 src:manual/15-oflayn.md:109 status:unchecked -->
 ### T-15-061 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1712,7 +1712,7 @@
 
 ---
 
-<!-- fc id:T-15-062 sha:272edb6c src:manual/15-oflayn.md:112 klas:E -->
+<!-- fc id:T-15-062 sha:272edb6c src:manual/15-oflayn.md:112 status:no-external-signal -->
 ### T-15-062 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1734,7 +1734,7 @@
 
 ---
 
-<!-- fc id:T-15-063 sha:e22bb11b src:manual/15-oflayn.md:115 klas:E -->
+<!-- fc id:T-15-063 sha:e22bb11b src:manual/15-oflayn.md:115 status:no-external-signal -->
 ### T-15-063 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1755,7 +1755,7 @@
 
 ---
 
-<!-- fc id:T-15-064 sha:11f190cc src:manual/15-oflayn.md:115 klas:E -->
+<!-- fc id:T-15-064 sha:11f190cc src:manual/15-oflayn.md:115 status:no-external-signal -->
 ### T-15-064 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1776,7 +1776,7 @@
 
 ---
 
-<!-- fc id:T-15-065 sha:924a7126 src:manual/15-oflayn.md:117 klas:E -->
+<!-- fc id:T-15-065 sha:924a7126 src:manual/15-oflayn.md:117 status:no-external-signal -->
 ### T-15-065 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1797,7 +1797,7 @@
 
 ---
 
-<!-- fc id:T-15-066 sha:41ad9df0 src:manual/15-oflayn.md:120 klas:E -->
+<!-- fc id:T-15-066 sha:41ad9df0 src:manual/15-oflayn.md:120 status:no-external-signal -->
 ### T-15-066 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1822,7 +1822,7 @@
 
 ---
 
-<!-- fc id:T-15-067 sha:00effd47 src:manual/15-oflayn.md:121 klas:E -->
+<!-- fc id:T-15-067 sha:00effd47 src:manual/15-oflayn.md:121 status:no-external-signal -->
 ### T-15-067 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1847,7 +1847,7 @@
 
 ---
 
-<!-- fc id:T-15-068 sha:eb883ba2 src:manual/15-oflayn.md:127 klas:E -->
+<!-- fc id:T-15-068 sha:eb883ba2 src:manual/15-oflayn.md:127 status:no-external-signal -->
 ### T-15-068 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1869,7 +1869,7 @@
 
 ---
 
-<!-- fc id:T-15-069 sha:c15fc73f src:manual/15-oflayn.md:127 klas:E -->
+<!-- fc id:T-15-069 sha:c15fc73f src:manual/15-oflayn.md:127 status:no-external-signal -->
 ### T-15-069 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1891,7 +1891,7 @@
 
 ---
 
-<!-- fc id:T-15-070 sha:d84aa063 src:manual/15-oflayn.md:130 klas:F -->
+<!-- fc id:T-15-070 sha:d84aa063 src:manual/15-oflayn.md:130 status:unchecked -->
 ### T-15-070 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1913,7 +1913,7 @@
 
 ---
 
-<!-- fc id:T-15-071 sha:202fc6e4 src:manual/15-oflayn.md:133 klas:F -->
+<!-- fc id:T-15-071 sha:202fc6e4 src:manual/15-oflayn.md:133 status:unchecked -->
 ### T-15-071 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -1934,7 +1934,7 @@
 
 ---
 
-<!-- fc id:T-15-072 sha:9d46023e src:manual/15-oflayn.md:135 klas:E -->
+<!-- fc id:T-15-072 sha:9d46023e src:manual/15-oflayn.md:135 status:no-external-signal -->
 ### T-15-072 · proza · `manual/15-oflayn.md`
 
 **Твердження, коротко**

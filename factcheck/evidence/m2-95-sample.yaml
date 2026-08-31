@@ -1,6 +1,5 @@
 - nazva: Код скидання 0xd названий RTCWDT_CPU_RESET
   zbih: 0xd.*RTCWDT_CPU_RESET
-  klas: B
   dzherelo: https://github.com/espressif/esp-idf/blob/release/v5.2/components/esp_rom/include/esp32/rom/rtc.h
     — RESET_REASON enum, значення 13
   cytata: 'RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
@@ -24,7 +23,6 @@
   - b265b468
 - nazva: Код скидання 0x10 названий RTCWDT_RTC_RESET
   zbih: 0x10.*RTCWDT_RTC_RESET
-  klas: B
   dzherelo: https://github.com/espressif/esp-idf/blob/release/v5.2/components/esp_rom/include/esp32/rom/rtc.h
     — RESET_REASON enum, значення 16
   cytata: 'RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
@@ -48,7 +46,6 @@
   - 9338f26b
 - nazva: Код скидання 0xc означає скидання ядра з коду
   zbih: '`0xc`\s+·\s+Що\s+сталося\s+→\s+скидання\s+ядра\s+з\s+коду;\s+часто\s+після\s+паніки'
-  klas: B
   dzherelo: https://github.com/espressif/esp-idf/blob/release/v5.2/components/esp_rom/include/esp32/rom/rtc.h
     — RESET_REASON enum, значення 12
   cytata: 'SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
@@ -76,7 +73,6 @@
   - 21e68d08
 - nazva: ESP-NOW використовує той самий діапазон частот, що Wi-Fi 2.4 ГГц
   zbih: ESP-NOW.*той самий діапазон, що Wi-Fi 2\.4 ГГц
-  klas: B
   dzherelo: ESP-NOW специфікація — ESP-NOW працює як protocol layer на Wi-Fi MAC, використовуючи той самий
     радіочастотний тракт
   cytata: ESP-NOW uses the Wi-Fi MAC layer and operates on 2.4 GHz band only, sharing the same frequency
@@ -102,7 +98,6 @@
   - ba344c62
 - nazva: Діод послідовно для захисту від переполюсовки, падіння 0.3–0.7 В
   zbih: Діод послідовно.*найпростіше.*падіння.*0\.3.0\.7
-  klas: C
   dzherelo: Даташити 1N4007 (кремній, ~0.7 В) і 1N5819 (Шотткі, ~0.3 В) — рядок Forward Voltage
   cytata: ''
   sposib: Загальна електронна практика. Типова вольтова характеристика кремнієвого діода в режимі провідності.
@@ -128,7 +123,6 @@
   - ec4e685a
 - nazva: Модулі на 8 і 16 МБ флешу коштують істотно дорожче за різницю у ціні
   zbih: Модулі на 8 і 16 МБ коштують.*відчутно дорожче.*за різницю в ціні флешу
-  klas: E
   dzherelo: ''
   cytata: ''
   sposib: Економічний аналіз ринку модулів ESP32. Спостереження без цифрових джерел.
@@ -154,7 +148,6 @@
   - e612ab0d
 - nazva: GPIO12 з високим рівнем — правильне налаштування на модулях з 1.8В флешем
   zbih: модулях, де флеш справді на 1\.8 В.*той самий високий рівень.*правильне налаштування
-  klas: C
   dzherelo: 'ESP32-WROOM-32 та подібні модулі: datasheet від Espressif'
   cytata: ''
   sposib: Твердження описує поведінку GPIO12 на модулях із 1.8V флешем. Це модуль-специфічна поведінка,
@@ -178,7 +171,6 @@
   - 126e9170
 - nazva: Wi-Fi 5 ГГц доступний тільки на ESP32-C5
   zbih: Wi-Fi 5 ГГц.*тільки ESP32-C5
-  klas: C
   dzherelo: ESP32-C5 datasheet від Espressif
   cytata: ''
   sposib: Твердження стосується технічної специфікації ESP32-C5. Це повинно бути документовано в oficial
@@ -200,7 +192,6 @@
   - c6a6adcd
 - nazva: ESP32-C3 має 400 КБ SRAM — це головне обмеження
   zbih: C3.*400 КБ SRAM.*це стеля
-  klas: C
   dzherelo: ESP32-C3 datasheet від Espressif
   cytata: ''
   sposib: Твердження описує технічну специфікацію ESP32-C3. Величина 400 КБ SRAM повинна бути в офіційному
@@ -224,7 +215,6 @@
   - 5d224757
 - nazva: DS3231 та MPU6050 мають однакову I2C адресу 0x68
   zbih: DS3231 і MPU6050.*однакову адресу.*0x68
-  klas: C
   dzherelo: DS3231 Real-Time Clock datasheet — доступний від виробника; MPU-6050 Six-Axis Gyro and Accelerometer
     datasheet
   cytata: ''
@@ -246,7 +236,6 @@
     обох цитат залишається частково неперевіреним.'
 - nazva: Код 0x08 на ESP32-C3 відповідає GPIO9 (strapping pin)
   zbih: 0x08.*C3.*GPIO9
-  klas: B
   dzherelo: https://github.com/espressif/esp-idf/blob/release/v5.2/docs/en/advanced-topics/boot-mode-selection.rst
     — boot mode selection documentation, strapping pins definitions
   cytata: '{IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
@@ -300,7 +289,6 @@
   - 2e453577
 - nazva: Bootloader розташований за адресою 0x0 на S3, C3, C6, H2
   zbih: bootloader.*0x0
-  klas: B
   dzherelo: https://github.com/espressif/esp-idf/blob/release/v5.2/docs/en/advanced-topics/boot-mode-selection.rst
     — bootloader flash offset definitions
   cytata: '{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000",

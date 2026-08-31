@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k01-triazh.md`
 
-Одиниць твердження: **43**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **43**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-K01-001 sha:5df181eb src:kartky/k01-triazh.md:3 klas:E -->
+<!-- fc id:T-K01-001 sha:5df181eb src:kartky/k01-triazh.md:3 status:no-external-signal -->
 ### T-K01-001 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-K01-002 sha:eece1e05 src:kartky/k01-triazh.md:3 klas:E -->
+<!-- fc id:T-K01-002 sha:eece1e05 src:kartky/k01-triazh.md:3 status:no-external-signal -->
 ### T-K01-002 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-K01-003 sha:428eb419 src:kartky/k01-triazh.md:3 klas:E -->
+<!-- fc id:T-K01-003 sha:428eb419 src:kartky/k01-triazh.md:3 status:no-external-signal -->
 ### T-K01-003 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -74,7 +74,7 @@
 
 ---
 
-<!-- fc id:T-K01-004 sha:3a942e6e src:kartky/k01-triazh.md:8 klas:E -->
+<!-- fc id:T-K01-004 sha:3a942e6e src:kartky/k01-triazh.md:8 status:no-external-signal -->
 ### T-K01-004 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -95,7 +95,7 @@
 
 ---
 
-<!-- fc id:T-K01-005 sha:fe1d67a5 src:kartky/k01-triazh.md:10 klas:F -->
+<!-- fc id:T-K01-005 sha:fe1d67a5 src:kartky/k01-triazh.md:10 status:unchecked -->
 ### T-K01-005 · tablycya-shapka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -124,7 +124,7 @@
 
 ---
 
-<!-- fc id:T-K01-006 sha:f5a2b442 src:kartky/k01-triazh.md:12 klas:A -->
+<!-- fc id:T-K01-006 sha:f5a2b442 src:kartky/k01-triazh.md:12 status:verbatim -->
 ### T-K01-006 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -165,7 +165,7 @@
 
 ---
 
-<!-- fc id:T-K01-007 sha:8e47008e src:kartky/k01-triazh.md:12 klas:F -->
+<!-- fc id:T-K01-007 sha:8e47008e src:kartky/k01-triazh.md:12 status:unchecked -->
 ### T-K01-007 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -200,7 +200,7 @@
 
 ---
 
-<!-- fc id:T-K01-008 sha:3138f20b src:kartky/k01-triazh.md:13 klas:F -->
+<!-- fc id:T-K01-008 sha:3138f20b src:kartky/k01-triazh.md:13 status:unchecked -->
 ### T-K01-008 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -235,7 +235,7 @@
 
 ---
 
-<!-- fc id:T-K01-009 sha:da93faf6 src:kartky/k01-triazh.md:13 klas:F -->
+<!-- fc id:T-K01-009 sha:da93faf6 src:kartky/k01-triazh.md:13 status:unchecked -->
 ### T-K01-009 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -270,7 +270,7 @@
 
 ---
 
-<!-- fc id:T-K01-010 sha:92bef9b9 src:kartky/k01-triazh.md:14 klas:F -->
+<!-- fc id:T-K01-010 sha:92bef9b9 src:kartky/k01-triazh.md:14 status:unchecked -->
 ### T-K01-010 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-K01-011 sha:36d7f03f src:kartky/k01-triazh.md:14 klas:F -->
+<!-- fc id:T-K01-011 sha:36d7f03f src:kartky/k01-triazh.md:14 status:unchecked -->
 ### T-K01-011 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -340,7 +340,7 @@
 
 ---
 
-<!-- fc id:T-K01-012 sha:db5fc68e src:kartky/k01-triazh.md:15 klas:F -->
+<!-- fc id:T-K01-012 sha:db5fc68e src:kartky/k01-triazh.md:15 status:unchecked -->
 ### T-K01-012 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -375,7 +375,7 @@
 
 ---
 
-<!-- fc id:T-K01-013 sha:d9ec92f0 src:kartky/k01-triazh.md:15 klas:F -->
+<!-- fc id:T-K01-013 sha:d9ec92f0 src:kartky/k01-triazh.md:15 status:unchecked -->
 ### T-K01-013 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -410,7 +410,7 @@
 
 ---
 
-<!-- fc id:T-K01-014 sha:9e2dcef5 src:kartky/k01-triazh.md:16 klas:F -->
+<!-- fc id:T-K01-014 sha:9e2dcef5 src:kartky/k01-triazh.md:16 status:unchecked -->
 ### T-K01-014 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -445,7 +445,7 @@
 
 ---
 
-<!-- fc id:T-K01-015 sha:cfcde96c src:kartky/k01-triazh.md:16 klas:F -->
+<!-- fc id:T-K01-015 sha:cfcde96c src:kartky/k01-triazh.md:16 status:unchecked -->
 ### T-K01-015 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -480,7 +480,7 @@
 
 ---
 
-<!-- fc id:T-K01-016 sha:735b1c96 src:kartky/k01-triazh.md:18 klas:F -->
+<!-- fc id:T-K01-016 sha:735b1c96 src:kartky/k01-triazh.md:18 status:unchecked -->
 ### T-K01-016 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -502,7 +502,7 @@
 
 ---
 
-<!-- fc id:T-K01-017 sha:27868d1b src:kartky/k01-triazh.md:24 klas:A -->
+<!-- fc id:T-K01-017 sha:27868d1b src:kartky/k01-triazh.md:24 status:verbatim -->
 ### T-K01-017 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -535,7 +535,7 @@
 
 ---
 
-<!-- fc id:T-K01-018 sha:12a04661 src:kartky/k01-triazh.md:24 klas:A -->
+<!-- fc id:T-K01-018 sha:12a04661 src:kartky/k01-triazh.md:24 status:verbatim -->
 ### T-K01-018 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -568,7 +568,7 @@
 
 ---
 
-<!-- fc id:T-K01-019 sha:26e56daa src:kartky/k01-triazh.md:25 klas:A -->
+<!-- fc id:T-K01-019 sha:26e56daa src:kartky/k01-triazh.md:25 status:verbatim -->
 ### T-K01-019 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -600,7 +600,7 @@
 
 ---
 
-<!-- fc id:T-K01-020 sha:b54c22e9 src:kartky/k01-triazh.md:29 klas:F -->
+<!-- fc id:T-K01-020 sha:b54c22e9 src:kartky/k01-triazh.md:29 status:unchecked -->
 ### T-K01-020 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -623,7 +623,7 @@
 
 ---
 
-<!-- fc id:T-K01-021 sha:5e734fa8 src:kartky/k01-triazh.md:30 klas:E -->
+<!-- fc id:T-K01-021 sha:5e734fa8 src:kartky/k01-triazh.md:30 status:no-external-signal -->
 ### T-K01-021 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -646,7 +646,7 @@
 
 ---
 
-<!-- fc id:T-K01-022 sha:648833a9 src:kartky/k01-triazh.md:35 klas:D -->
+<!-- fc id:T-K01-022 sha:648833a9 src:kartky/k01-triazh.md:35 status:arithmetic -->
 ### T-K01-022 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -678,7 +678,7 @@ USB-кабель має бути **data**, а не тільки для заря�
 
 ---
 
-<!-- fc id:T-K01-023 sha:f87188a6 src:kartky/k01-triazh.md:35 klas:A -->
+<!-- fc id:T-K01-023 sha:f87188a6 src:kartky/k01-triazh.md:35 status:verbatim -->
 ### T-K01-023 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -706,7 +706,7 @@ USB-кабель має бути **data**, а не тільки для заря�
 
 ---
 
-<!-- fc id:T-K01-024 sha:08e99d29 src:kartky/k01-triazh.md:38 klas:E -->
+<!-- fc id:T-K01-024 sha:08e99d29 src:kartky/k01-triazh.md:38 status:no-external-signal -->
 ### T-K01-024 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -731,7 +731,7 @@ USB-кабель має бути **data**, а не тільки для заря�
 
 ---
 
-<!-- fc id:T-K01-025 sha:77cc1bbf src:kartky/k01-triazh.md:39 klas:E -->
+<!-- fc id:T-K01-025 sha:77cc1bbf src:kartky/k01-triazh.md:39 status:no-external-signal -->
 ### T-K01-025 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -756,7 +756,7 @@ USB-кабель має бути **data**, а не тільки для заря�
 
 ---
 
-<!-- fc id:T-K01-026 sha:442e5b70 src:kartky/k01-triazh.md:39 klas:F -->
+<!-- fc id:T-K01-026 sha:442e5b70 src:kartky/k01-triazh.md:39 status:unchecked -->
 ### T-K01-026 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -781,7 +781,7 @@ USB-кабель має бути **data**, а не тільки для заря�
 
 ---
 
-<!-- fc id:T-K01-027 sha:68f8ba27 src:kartky/k01-triazh.md:41 klas:E -->
+<!-- fc id:T-K01-027 sha:68f8ba27 src:kartky/k01-triazh.md:41 status:no-external-signal -->
 ### T-K01-027 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -806,7 +806,7 @@ USB-кабель має бути **data**, а не тільки для заря�
 
 ---
 
-<!-- fc id:T-K01-028 sha:36d5b847 src:kartky/k01-triazh.md:42 klas:E -->
+<!-- fc id:T-K01-028 sha:36d5b847 src:kartky/k01-triazh.md:42 status:no-external-signal -->
 ### T-K01-028 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -831,7 +831,7 @@ USB-кабель має бути **data**, а не тільки для заря�
 
 ---
 
-<!-- fc id:T-K01-029 sha:e66c9553 src:kartky/k01-triazh.md:46 klas:K -->
+<!-- fc id:T-K01-029 sha:e66c9553 src:kartky/k01-triazh.md:46 status:code-context -->
 ### T-K01-029 · kod · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -862,7 +862,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-030 sha:4c5a16ee src:kartky/k01-triazh.md:47 klas:A -->
+<!-- fc id:T-K01-030 sha:4c5a16ee src:kartky/k01-triazh.md:47 status:verbatim -->
 ### T-K01-030 · kod-ryadok · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -891,7 +891,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-031 sha:7b93818e src:kartky/k01-triazh.md:50 klas:E -->
+<!-- fc id:T-K01-031 sha:7b93818e src:kartky/k01-triazh.md:50 status:no-external-signal -->
 ### T-K01-031 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -915,7 +915,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-032 sha:e687b58d src:kartky/k01-triazh.md:52 klas:A -->
+<!-- fc id:T-K01-032 sha:e687b58d src:kartky/k01-triazh.md:52 status:verbatim -->
 ### T-K01-032 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -950,7 +950,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-033 sha:76c54bbe src:kartky/k01-triazh.md:56 klas:F -->
+<!-- fc id:T-K01-033 sha:76c54bbe src:kartky/k01-triazh.md:56 status:unchecked -->
 ### T-K01-033 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -974,7 +974,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-034 sha:87244ea5 src:kartky/k01-triazh.md:56 klas:F -->
+<!-- fc id:T-K01-034 sha:87244ea5 src:kartky/k01-triazh.md:56 status:unchecked -->
 ### T-K01-034 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -998,7 +998,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-035 sha:819f6c86 src:kartky/k01-triazh.md:62 klas:E -->
+<!-- fc id:T-K01-035 sha:819f6c86 src:kartky/k01-triazh.md:62 status:no-external-signal -->
 ### T-K01-035 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -1021,7 +1021,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-036 sha:0ed28b48 src:kartky/k01-triazh.md:63 klas:E -->
+<!-- fc id:T-K01-036 sha:0ed28b48 src:kartky/k01-triazh.md:63 status:no-external-signal -->
 ### T-K01-036 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -1044,7 +1044,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-037 sha:e8fd95bd src:kartky/k01-triazh.md:68 klas:E -->
+<!-- fc id:T-K01-037 sha:e8fd95bd src:kartky/k01-triazh.md:68 status:no-external-signal -->
 ### T-K01-037 · tablycya · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -1073,7 +1073,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-038 sha:201f9419 src:kartky/k01-triazh.md:70 klas:E -->
+<!-- fc id:T-K01-038 sha:201f9419 src:kartky/k01-triazh.md:70 status:no-external-signal -->
 ### T-K01-038 · tablycya · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -1102,7 +1102,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-039 sha:017fe3de src:kartky/k01-triazh.md:71 klas:E -->
+<!-- fc id:T-K01-039 sha:017fe3de src:kartky/k01-triazh.md:71 status:no-external-signal -->
 ### T-K01-039 · tablycya · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -1131,7 +1131,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-040 sha:64bb37ea src:kartky/k01-triazh.md:72 klas:E -->
+<!-- fc id:T-K01-040 sha:64bb37ea src:kartky/k01-triazh.md:72 status:no-external-signal -->
 ### T-K01-040 · tablycya · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -1160,7 +1160,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-041 sha:07ca066d src:kartky/k01-triazh.md:73 klas:B -->
+<!-- fc id:T-K01-041 sha:07ca066d src:kartky/k01-triazh.md:73 status:derived -->
 ### T-K01-041 · tablycya · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -1203,7 +1203,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-042 sha:564e5a63 src:kartky/k01-triazh.md:74 klas:B -->
+<!-- fc id:T-K01-042 sha:564e5a63 src:kartky/k01-triazh.md:74 status:derived -->
 ### T-K01-042 · tablycya · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -1246,7 +1246,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-043 sha:d4503abd src:kartky/k01-triazh.md:75 klas:E -->
+<!-- fc id:T-K01-043 sha:d4503abd src:kartky/k01-triazh.md:75 status:no-external-signal -->
 ### T-K01-043 · tablycya · `kartky/k01-triazh.md`
 
 **Твердження, коротко**

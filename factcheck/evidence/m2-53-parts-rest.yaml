@@ -1,6 +1,5 @@
 - nazva: ILI9341 — RGB565 формат пікселя, не ціль контролера
   zbih: ILI9341 уміє 262 тис\. кольорів.*COLMOD \(3Ah\)
-  klas: A
   dzherelo: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color,
     Specification V1.11, розділ 8.2.33 «COLMOD: Pixel Format Set (3Ah)»'
   cytata: '8.2.33. COLMOD: Pixel Format Set (3Ah)

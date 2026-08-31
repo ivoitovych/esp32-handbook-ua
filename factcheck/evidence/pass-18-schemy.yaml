@@ -26,7 +26,6 @@
 
 - nazva: BME280 — адреси, ідентифікатор чипа, регістр
   zbih: 0x76|0x77|REG_ID     0xD0|id != 0x60|очікували 0x60
-  klas: A
   dzherelo: https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
   cytata: '#define BME280_CHIP_ID          UINT8_C(0x60)
 
@@ -66,7 +65,6 @@
     він і не претендує: покриває рядки про датчик, і лише їх.'
 - nazva: DS18B20 повертає −127 при відсутності зв'язку
   zbih: −127|-127
-  klas: A
   dzherelo: https://raw.githubusercontent.com/milesburton/Arduino-Temperature-Control-Library/master/DallasTemperature.h
   cytata: '#define DEVICE_DISCONNECTED_C -127
 
@@ -95,7 +93,6 @@
 - nazva: Підтягування I²C — діапазон, а не одне число
   zbih: ESP-IDF\s*рекомендує \*\*2–5 кОм\*\*|що вища частота, то менший резистор|не менше
     1 кОм
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'The recommended value for pull-up resistors usually ranges from 1 kΩ to 10 kΩ.
 
@@ -161,7 +158,6 @@
 - nazva: Проєкт 62 свідомо на classic через тільки-вхідний GPIO34
   zbih: бо `GPIO34` там \*\*тільки\s*вхідний\*\*|не може випадково подати сигнал на реле|тільки-вхідних
     пінів немає взагалі
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
   cytata: "esp32:   SOC_GPIO_VALID_OUTPUT_GPIO_MASK\n           (SOC_GPIO_VALID_GPIO_MASK\
     \ & ~(BIT34|BIT35|BIT36|BIT37|BIT38|BIT39))\nesp32s3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK\

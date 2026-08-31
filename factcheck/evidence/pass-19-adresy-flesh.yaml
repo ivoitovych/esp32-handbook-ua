@@ -39,7 +39,6 @@
 
 - nazva: Шістнадцяткові обсяги флешу в командах read-flash
   zbih: 0x400000|0x800000|0x1000000
-  klas: D
   dzherelo: factcheck/tools/arithmetic.py — перерахунок при кожній перевірці
   sposib: make arytmetyka, 2026-08-26
   notatka: 'Книга друкує ці три числа в розділі 17, додатку C і на картці К2 як явну заміну
@@ -80,7 +79,6 @@
     КБ службов|службов[а-я]+ областей?|0xF000|read-flash 0x9000 0x6000|erase-region 0x9000
     0x6000|write-flash 0x9000|nvs-\d+\.bin 0x6000|generate [^\n]*0x6000|read-flash 0x8000
     0x1000
-  klas: D
   dzherelo: factcheck/tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv
     (прохід 7)
   sposib: make arytmetyka, 2026-08-26

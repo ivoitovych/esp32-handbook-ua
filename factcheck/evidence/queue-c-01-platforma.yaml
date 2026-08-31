@@ -7,7 +7,6 @@
 
 - nazva: 'T-01-011: **Плата розробки.** Модуль плюс USB-роз''єм, міст USB-UART, стабілізатор,'
   zbih: \*\*Плата\s+розробки\.\*\*\s+Модуль\s+плюс
-  klas: C
   dzherelo: ESP32 Hardware Types Specification
   shukaty: ESP32 Hardware Types Specification
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт

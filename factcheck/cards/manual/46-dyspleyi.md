@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/46-dyspleyi.md`
 
-Одиниць твердження: **88**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **88**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-46-001 sha:7390028a src:manual/46-dyspleyi.md:3 klas:E -->
+<!-- fc id:T-46-001 sha:7390028a src:manual/46-dyspleyi.md:3 status:no-external-signal -->
 ### T-46-001 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-46-002 sha:0b69e977 src:manual/46-dyspleyi.md:4 klas:E -->
+<!-- fc id:T-46-002 sha:0b69e977 src:manual/46-dyspleyi.md:4 status:no-external-signal -->
 ### T-46-002 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-46-003 sha:df50d00f src:manual/46-dyspleyi.md:9 klas:F -->
+<!-- fc id:T-46-003 sha:df50d00f src:manual/46-dyspleyi.md:9 status:unchecked -->
 ### T-46-003 · tablycya-shapka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -82,7 +82,7 @@
 
 ---
 
-<!-- fc id:T-46-004 sha:862700ce src:manual/46-dyspleyi.md:11 klas:A -->
+<!-- fc id:T-46-004 sha:862700ce src:manual/46-dyspleyi.md:11 status:verbatim -->
 ### T-46-004 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -122,7 +122,7 @@
 
 ---
 
-<!-- fc id:T-46-005 sha:b834ae0e src:manual/46-dyspleyi.md:11 klas:A -->
+<!-- fc id:T-46-005 sha:b834ae0e src:manual/46-dyspleyi.md:11 status:verbatim -->
 ### T-46-005 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -177,7 +177,7 @@
 
 ---
 
-<!-- fc id:T-46-006 sha:30fa5a62 src:manual/46-dyspleyi.md:11 klas:A -->
+<!-- fc id:T-46-006 sha:30fa5a62 src:manual/46-dyspleyi.md:11 status:verbatim -->
 ### T-46-006 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -220,7 +220,7 @@
 
 ---
 
-<!-- fc id:T-46-007 sha:7683ff23 src:manual/46-dyspleyi.md:11 klas:A -->
+<!-- fc id:T-46-007 sha:7683ff23 src:manual/46-dyspleyi.md:11 status:verbatim -->
 ### T-46-007 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -260,7 +260,7 @@
 
 ---
 
-<!-- fc id:T-46-008 sha:8d1c9e51 src:manual/46-dyspleyi.md:12 klas:A -->
+<!-- fc id:T-46-008 sha:8d1c9e51 src:manual/46-dyspleyi.md:12 status:verbatim -->
 ### T-46-008 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -308,7 +308,7 @@
 
 ---
 
-<!-- fc id:T-46-009 sha:6ed23144 src:manual/46-dyspleyi.md:12 klas:A -->
+<!-- fc id:T-46-009 sha:6ed23144 src:manual/46-dyspleyi.md:12 status:verbatim -->
 ### T-46-009 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -356,7 +356,7 @@
 
 ---
 
-<!-- fc id:T-46-010 sha:e4e2f0fd src:manual/46-dyspleyi.md:12 klas:A -->
+<!-- fc id:T-46-010 sha:e4e2f0fd src:manual/46-dyspleyi.md:12 status:verbatim -->
 ### T-46-010 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -404,7 +404,7 @@
 
 ---
 
-<!-- fc id:T-46-011 sha:7273b8f9 src:manual/46-dyspleyi.md:12 klas:A -->
+<!-- fc id:T-46-011 sha:7273b8f9 src:manual/46-dyspleyi.md:12 status:verbatim -->
 ### T-46-011 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -444,7 +444,7 @@
 
 ---
 
-<!-- fc id:T-46-012 sha:80458441 src:manual/46-dyspleyi.md:13 klas:E -->
+<!-- fc id:T-46-012 sha:80458441 src:manual/46-dyspleyi.md:13 status:no-external-signal -->
 ### T-46-012 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -480,7 +480,7 @@
 
 ---
 
-<!-- fc id:T-46-013 sha:fc224a18 src:manual/46-dyspleyi.md:13 klas:A -->
+<!-- fc id:T-46-013 sha:fc224a18 src:manual/46-dyspleyi.md:13 status:verbatim -->
 ### T-46-013 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -526,7 +526,7 @@
 
 ---
 
-<!-- fc id:T-46-014 sha:2683ce99 src:manual/46-dyspleyi.md:13 klas:A -->
+<!-- fc id:T-46-014 sha:2683ce99 src:manual/46-dyspleyi.md:13 status:verbatim -->
 ### T-46-014 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -571,7 +571,7 @@
 
 ---
 
-<!-- fc id:T-46-015 sha:f338098f src:manual/46-dyspleyi.md:13 klas:E -->
+<!-- fc id:T-46-015 sha:f338098f src:manual/46-dyspleyi.md:13 status:no-external-signal -->
 ### T-46-015 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -607,7 +607,7 @@
 
 ---
 
-<!-- fc id:T-46-016 sha:c7c7dc37 src:manual/46-dyspleyi.md:14 klas:E -->
+<!-- fc id:T-46-016 sha:c7c7dc37 src:manual/46-dyspleyi.md:14 status:no-external-signal -->
 ### T-46-016 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -643,7 +643,7 @@
 
 ---
 
-<!-- fc id:T-46-017 sha:a31fa981 src:manual/46-dyspleyi.md:14 klas:A -->
+<!-- fc id:T-46-017 sha:a31fa981 src:manual/46-dyspleyi.md:14 status:verbatim -->
 ### T-46-017 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -689,7 +689,7 @@
 
 ---
 
-<!-- fc id:T-46-018 sha:2eb01406 src:manual/46-dyspleyi.md:14 klas:A -->
+<!-- fc id:T-46-018 sha:2eb01406 src:manual/46-dyspleyi.md:14 status:verbatim -->
 ### T-46-018 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -731,7 +731,7 @@
 
 ---
 
-<!-- fc id:T-46-019 sha:8c1e541e src:manual/46-dyspleyi.md:14 klas:E -->
+<!-- fc id:T-46-019 sha:8c1e541e src:manual/46-dyspleyi.md:14 status:no-external-signal -->
 ### T-46-019 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -767,7 +767,7 @@
 
 ---
 
-<!-- fc id:T-46-020 sha:2fd93771 src:manual/46-dyspleyi.md:15 klas:E -->
+<!-- fc id:T-46-020 sha:2fd93771 src:manual/46-dyspleyi.md:15 status:no-external-signal -->
 ### T-46-020 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -801,7 +801,7 @@
 
 ---
 
-<!-- fc id:T-46-021 sha:6c4d6211 src:manual/46-dyspleyi.md:15 klas:F -->
+<!-- fc id:T-46-021 sha:6c4d6211 src:manual/46-dyspleyi.md:15 status:unchecked -->
 ### T-46-021 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -835,7 +835,7 @@
 
 ---
 
-<!-- fc id:T-46-022 sha:f0cf6de6 src:manual/46-dyspleyi.md:15 klas:E -->
+<!-- fc id:T-46-022 sha:f0cf6de6 src:manual/46-dyspleyi.md:15 status:no-external-signal -->
 ### T-46-022 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -869,7 +869,7 @@
 
 ---
 
-<!-- fc id:T-46-023 sha:336725e3 src:manual/46-dyspleyi.md:15 klas:E -->
+<!-- fc id:T-46-023 sha:336725e3 src:manual/46-dyspleyi.md:15 status:no-external-signal -->
 ### T-46-023 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -903,7 +903,7 @@
 
 ---
 
-<!-- fc id:T-46-024 sha:0bafbde2 src:manual/46-dyspleyi.md:17 klas:A -->
+<!-- fc id:T-46-024 sha:0bafbde2 src:manual/46-dyspleyi.md:17 status:verbatim -->
 ### T-46-024 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -948,7 +948,7 @@
 
 ---
 
-<!-- fc id:T-46-025 sha:8d644688 src:manual/46-dyspleyi.md:19 klas:F -->
+<!-- fc id:T-46-025 sha:8d644688 src:manual/46-dyspleyi.md:19 status:unchecked -->
 ### T-46-025 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -974,7 +974,7 @@
 
 ---
 
-<!-- fc id:T-46-026 sha:a2146471 src:manual/46-dyspleyi.md:21 klas:E -->
+<!-- fc id:T-46-026 sha:a2146471 src:manual/46-dyspleyi.md:21 status:no-external-signal -->
 ### T-46-026 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1000,7 +1000,7 @@
 
 ---
 
-<!-- fc id:T-46-027 sha:46236625 src:manual/46-dyspleyi.md:24 klas:A -->
+<!-- fc id:T-46-027 sha:46236625 src:manual/46-dyspleyi.md:24 status:verbatim -->
 ### T-46-027 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1028,7 +1028,7 @@
 
 ---
 
-<!-- fc id:T-46-028 sha:5436d6ff src:manual/46-dyspleyi.md:24 klas:F -->
+<!-- fc id:T-46-028 sha:5436d6ff src:manual/46-dyspleyi.md:24 status:unchecked -->
 ### T-46-028 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1050,7 +1050,7 @@
 
 ---
 
-<!-- fc id:T-46-029 sha:fb21b68a src:manual/46-dyspleyi.md:28 klas:A -->
+<!-- fc id:T-46-029 sha:fb21b68a src:manual/46-dyspleyi.md:28 status:verbatim -->
 ### T-46-029 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1088,7 +1088,7 @@ SH1106 продається під виглядом SSD1306 і майже сум
 
 ---
 
-<!-- fc id:T-46-030 sha:e56e248a src:manual/46-dyspleyi.md:32 klas:A -->
+<!-- fc id:T-46-030 sha:e56e248a src:manual/46-dyspleyi.md:32 status:verbatim -->
 ### T-46-030 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1125,7 +1125,7 @@ SH1106 продається під виглядом SSD1306 і майже сум
 
 ---
 
-<!-- fc id:T-46-031 sha:ecb09442 src:manual/46-dyspleyi.md:33 klas:E -->
+<!-- fc id:T-46-031 sha:ecb09442 src:manual/46-dyspleyi.md:33 status:no-external-signal -->
 ### T-46-031 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1148,7 +1148,7 @@ SH1106 продається під виглядом SSD1306 і майже сум
 
 ---
 
-<!-- fc id:T-46-032 sha:9bf55437 src:manual/46-dyspleyi.md:36 klas:E -->
+<!-- fc id:T-46-032 sha:9bf55437 src:manual/46-dyspleyi.md:36 status:no-external-signal -->
 ### T-46-032 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1172,7 +1172,7 @@ SH1106 продається під виглядом SSD1306 і майже сум
 
 ---
 
-<!-- fc id:T-46-033 sha:db78ce45 src:manual/46-dyspleyi.md:38 klas:E -->
+<!-- fc id:T-46-033 sha:db78ce45 src:manual/46-dyspleyi.md:38 status:no-external-signal -->
 ### T-46-033 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1196,7 +1196,7 @@ SH1106 продається під виглядом SSD1306 і майже сум
 
 ---
 
-<!-- fc id:T-46-034 sha:068ff34b src:manual/46-dyspleyi.md:41 klas:E -->
+<!-- fc id:T-46-034 sha:068ff34b src:manual/46-dyspleyi.md:41 status:no-external-signal -->
 ### T-46-034 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1218,7 +1218,7 @@ SH1106 продається під виглядом SSD1306 і майже сум
 
 ---
 
-<!-- fc id:T-46-035 sha:3ac002a6 src:manual/46-dyspleyi.md:47 klas:F -->
+<!-- fc id:T-46-035 sha:3ac002a6 src:manual/46-dyspleyi.md:47 status:unchecked -->
 ### T-46-035 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1244,7 +1244,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 ---
 
-<!-- fc id:T-46-036 sha:fd124a1f src:manual/46-dyspleyi.md:48 klas:F -->
+<!-- fc id:T-46-036 sha:fd124a1f src:manual/46-dyspleyi.md:48 status:unchecked -->
 ### T-46-036 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1270,7 +1270,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 ---
 
-<!-- fc id:T-46-037 sha:27472a58 src:manual/46-dyspleyi.md:53 klas:F -->
+<!-- fc id:T-46-037 sha:27472a58 src:manual/46-dyspleyi.md:53 status:unchecked -->
 ### T-46-037 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1292,7 +1292,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 ---
 
-<!-- fc id:T-46-038 sha:6ef626d7 src:manual/46-dyspleyi.md:58 klas:A -->
+<!-- fc id:T-46-038 sha:6ef626d7 src:manual/46-dyspleyi.md:58 status:verbatim -->
 ### T-46-038 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1320,7 +1320,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 ---
 
-<!-- fc id:T-46-039 sha:0da7ac6e src:manual/46-dyspleyi.md:58 klas:E -->
+<!-- fc id:T-46-039 sha:0da7ac6e src:manual/46-dyspleyi.md:58 status:no-external-signal -->
 ### T-46-039 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1342,7 +1342,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 ---
 
-<!-- fc id:T-46-040 sha:17bcb9f3 src:manual/46-dyspleyi.md:59 klas:F -->
+<!-- fc id:T-46-040 sha:17bcb9f3 src:manual/46-dyspleyi.md:59 status:unchecked -->
 ### T-46-040 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1364,7 +1364,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 ---
 
-<!-- fc id:T-46-041 sha:267484c5 src:manual/46-dyspleyi.md:61 klas:F -->
+<!-- fc id:T-46-041 sha:267484c5 src:manual/46-dyspleyi.md:61 status:unchecked -->
 ### T-46-041 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1389,7 +1389,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 ---
 
-<!-- fc id:T-46-042 sha:63930b45 src:manual/46-dyspleyi.md:61 klas:A -->
+<!-- fc id:T-46-042 sha:63930b45 src:manual/46-dyspleyi.md:61 status:verbatim -->
 ### T-46-042 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1420,7 +1420,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 ---
 
-<!-- fc id:T-46-043 sha:1164678b src:manual/46-dyspleyi.md:63 klas:A -->
+<!-- fc id:T-46-043 sha:1164678b src:manual/46-dyspleyi.md:63 status:verbatim -->
 ### T-46-043 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1451,7 +1451,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 ---
 
-<!-- fc id:T-46-044 sha:5a052aca src:manual/46-dyspleyi.md:67 klas:F -->
+<!-- fc id:T-46-044 sha:5a052aca src:manual/46-dyspleyi.md:67 status:unchecked -->
 ### T-46-044 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1473,7 +1473,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 ---
 
-<!-- fc id:T-46-045 sha:99de20dc src:manual/46-dyspleyi.md:70 klas:E -->
+<!-- fc id:T-46-045 sha:99de20dc src:manual/46-dyspleyi.md:70 status:no-external-signal -->
 ### T-46-045 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1495,7 +1495,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 ---
 
-<!-- fc id:T-46-046 sha:d8cdd72c src:manual/46-dyspleyi.md:74 klas:A -->
+<!-- fc id:T-46-046 sha:d8cdd72c src:manual/46-dyspleyi.md:74 status:verbatim -->
 ### T-46-046 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1526,7 +1526,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-047 sha:15361913 src:manual/46-dyspleyi.md:74 klas:A -->
+<!-- fc id:T-46-047 sha:15361913 src:manual/46-dyspleyi.md:74 status:verbatim -->
 ### T-46-047 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1557,7 +1557,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-048 sha:66087aa6 src:manual/46-dyspleyi.md:79 klas:B -->
+<!-- fc id:T-46-048 sha:66087aa6 src:manual/46-dyspleyi.md:79 status:derived -->
 ### T-46-048 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1588,7 +1588,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-049 sha:1e6186f3 src:manual/46-dyspleyi.md:79 klas:F -->
+<!-- fc id:T-46-049 sha:1e6186f3 src:manual/46-dyspleyi.md:79 status:unchecked -->
 ### T-46-049 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1611,7 +1611,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-050 sha:c852732a src:manual/46-dyspleyi.md:83 klas:E -->
+<!-- fc id:T-46-050 sha:c852732a src:manual/46-dyspleyi.md:83 status:no-external-signal -->
 ### T-46-050 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1634,7 +1634,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-051 sha:f082b2eb src:manual/46-dyspleyi.md:89 klas:E -->
+<!-- fc id:T-46-051 sha:f082b2eb src:manual/46-dyspleyi.md:89 status:no-external-signal -->
 ### T-46-051 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1656,7 +1656,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-052 sha:d9a18b0b src:manual/46-dyspleyi.md:89 klas:E -->
+<!-- fc id:T-46-052 sha:d9a18b0b src:manual/46-dyspleyi.md:89 status:no-external-signal -->
 ### T-46-052 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1678,7 +1678,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-053 sha:ccb77182 src:manual/46-dyspleyi.md:94 klas:F -->
+<!-- fc id:T-46-053 sha:ccb77182 src:manual/46-dyspleyi.md:94 status:unchecked -->
 ### T-46-053 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1700,7 +1700,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-054 sha:69e02e27 src:manual/46-dyspleyi.md:97 klas:E -->
+<!-- fc id:T-46-054 sha:69e02e27 src:manual/46-dyspleyi.md:97 status:no-external-signal -->
 ### T-46-054 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1722,7 +1722,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-055 sha:16e5d3ba src:manual/46-dyspleyi.md:100 klas:A -->
+<!-- fc id:T-46-055 sha:16e5d3ba src:manual/46-dyspleyi.md:100 status:verbatim -->
 ### T-46-055 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1751,7 +1751,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-056 sha:2f2ae56c src:manual/46-dyspleyi.md:101 klas:E -->
+<!-- fc id:T-46-056 sha:2f2ae56c src:manual/46-dyspleyi.md:101 status:no-external-signal -->
 ### T-46-056 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1774,7 +1774,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-057 sha:27cefc36 src:manual/46-dyspleyi.md:104 klas:F -->
+<!-- fc id:T-46-057 sha:27cefc36 src:manual/46-dyspleyi.md:104 status:unchecked -->
 ### T-46-057 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1796,7 +1796,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-058 sha:bf726169 src:manual/46-dyspleyi.md:109 klas:E -->
+<!-- fc id:T-46-058 sha:bf726169 src:manual/46-dyspleyi.md:109 status:no-external-signal -->
 ### T-46-058 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1819,7 +1819,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-059 sha:789b457c src:manual/46-dyspleyi.md:110 klas:A -->
+<!-- fc id:T-46-059 sha:789b457c src:manual/46-dyspleyi.md:110 status:verbatim -->
 ### T-46-059 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1848,7 +1848,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-060 sha:d537fafe src:manual/46-dyspleyi.md:113 klas:E -->
+<!-- fc id:T-46-060 sha:d537fafe src:manual/46-dyspleyi.md:113 status:no-external-signal -->
 ### T-46-060 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1869,7 +1869,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-061 sha:ffcc7b25 src:manual/46-dyspleyi.md:115 klas:E -->
+<!-- fc id:T-46-061 sha:ffcc7b25 src:manual/46-dyspleyi.md:115 status:no-external-signal -->
 ### T-46-061 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1891,7 +1891,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-062 sha:8cd553b1 src:manual/46-dyspleyi.md:115 klas:E -->
+<!-- fc id:T-46-062 sha:8cd553b1 src:manual/46-dyspleyi.md:115 status:no-external-signal -->
 ### T-46-062 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1913,7 +1913,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-063 sha:308b61e3 src:manual/46-dyspleyi.md:118 klas:E -->
+<!-- fc id:T-46-063 sha:308b61e3 src:manual/46-dyspleyi.md:118 status:no-external-signal -->
 ### T-46-063 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1935,7 +1935,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-064 sha:4d06ad8a src:manual/46-dyspleyi.md:118 klas:E -->
+<!-- fc id:T-46-064 sha:4d06ad8a src:manual/46-dyspleyi.md:118 status:no-external-signal -->
 ### T-46-064 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1957,7 +1957,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-065 sha:048268a6 src:manual/46-dyspleyi.md:121 klas:B -->
+<!-- fc id:T-46-065 sha:048268a6 src:manual/46-dyspleyi.md:121 status:derived -->
 ### T-46-065 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1991,7 +1991,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-066 sha:306d9a08 src:manual/46-dyspleyi.md:121 klas:F -->
+<!-- fc id:T-46-066 sha:306d9a08 src:manual/46-dyspleyi.md:121 status:unchecked -->
 ### T-46-066 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2013,7 +2013,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-067 sha:99fe0fae src:manual/46-dyspleyi.md:126 klas:E -->
+<!-- fc id:T-46-067 sha:99fe0fae src:manual/46-dyspleyi.md:126 status:no-external-signal -->
 ### T-46-067 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2035,7 +2035,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-068 sha:3c6213d4 src:manual/46-dyspleyi.md:129 klas:A -->
+<!-- fc id:T-46-068 sha:3c6213d4 src:manual/46-dyspleyi.md:129 status:verbatim -->
 ### T-46-068 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2064,7 +2064,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-069 sha:6c925664 src:manual/46-dyspleyi.md:130 klas:E -->
+<!-- fc id:T-46-069 sha:6c925664 src:manual/46-dyspleyi.md:130 status:no-external-signal -->
 ### T-46-069 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2087,7 +2087,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-070 sha:93eaca22 src:manual/46-dyspleyi.md:133 klas:E -->
+<!-- fc id:T-46-070 sha:93eaca22 src:manual/46-dyspleyi.md:133 status:no-external-signal -->
 ### T-46-070 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2109,7 +2109,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-071 sha:3b794a14 src:manual/46-dyspleyi.md:138 klas:E -->
+<!-- fc id:T-46-071 sha:3b794a14 src:manual/46-dyspleyi.md:138 status:no-external-signal -->
 ### T-46-071 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2131,7 +2131,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-072 sha:ebea19d5 src:manual/46-dyspleyi.md:141 klas:E -->
+<!-- fc id:T-46-072 sha:ebea19d5 src:manual/46-dyspleyi.md:141 status:no-external-signal -->
 ### T-46-072 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2154,7 +2154,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 ---
 
-<!-- fc id:T-46-073 sha:886e611d src:manual/46-dyspleyi.md:141 klas:E -->
+<!-- fc id:T-46-073 sha:886e611d src:manual/46-dyspleyi.md:141 status:no-external-signal -->
 ### T-46-073 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2179,7 +2179,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 ---
 
-<!-- fc id:T-46-074 sha:ab7d677a src:manual/46-dyspleyi.md:146 klas:E -->
+<!-- fc id:T-46-074 sha:ab7d677a src:manual/46-dyspleyi.md:146 status:no-external-signal -->
 ### T-46-074 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2204,7 +2204,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 ---
 
-<!-- fc id:T-46-075 sha:a789af84 src:manual/46-dyspleyi.md:147 klas:E -->
+<!-- fc id:T-46-075 sha:a789af84 src:manual/46-dyspleyi.md:147 status:no-external-signal -->
 ### T-46-075 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2229,7 +2229,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 ---
 
-<!-- fc id:T-46-076 sha:d9634ea9 src:manual/46-dyspleyi.md:153 klas:E -->
+<!-- fc id:T-46-076 sha:d9634ea9 src:manual/46-dyspleyi.md:153 status:no-external-signal -->
 ### T-46-076 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2251,7 +2251,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 ---
 
-<!-- fc id:T-46-077 sha:d032630b src:manual/46-dyspleyi.md:153 klas:D -->
+<!-- fc id:T-46-077 sha:d032630b src:manual/46-dyspleyi.md:153 status:arithmetic -->
 ### T-46-077 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2291,7 +2291,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 ---
 
-<!-- fc id:T-46-078 sha:3524415f src:manual/46-dyspleyi.md:156 klas:E -->
+<!-- fc id:T-46-078 sha:3524415f src:manual/46-dyspleyi.md:156 status:no-external-signal -->
 ### T-46-078 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2314,7 +2314,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 ---
 
-<!-- fc id:T-46-079 sha:e1503fc3 src:manual/46-dyspleyi.md:157 klas:E -->
+<!-- fc id:T-46-079 sha:e1503fc3 src:manual/46-dyspleyi.md:157 status:no-external-signal -->
 ### T-46-079 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2337,7 +2337,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 ---
 
-<!-- fc id:T-46-080 sha:31c8fd19 src:manual/46-dyspleyi.md:160 klas:E -->
+<!-- fc id:T-46-080 sha:31c8fd19 src:manual/46-dyspleyi.md:160 status:no-external-signal -->
 ### T-46-080 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2359,7 +2359,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 ---
 
-<!-- fc id:T-46-081 sha:4cde5d29 src:manual/46-dyspleyi.md:161 klas:E -->
+<!-- fc id:T-46-081 sha:4cde5d29 src:manual/46-dyspleyi.md:161 status:no-external-signal -->
 ### T-46-081 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2381,7 +2381,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 ---
 
-<!-- fc id:T-46-082 sha:7c71110c src:manual/46-dyspleyi.md:165 klas:A -->
+<!-- fc id:T-46-082 sha:7c71110c src:manual/46-dyspleyi.md:165 status:verbatim -->
 ### T-46-082 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2416,7 +2416,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 ---
 
-<!-- fc id:T-46-083 sha:2695515d src:manual/46-dyspleyi.md:167 klas:E -->
+<!-- fc id:T-46-083 sha:2695515d src:manual/46-dyspleyi.md:167 status:no-external-signal -->
 ### T-46-083 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2438,7 +2438,7 @@ E-paper тримає зображення без живлення — для а�
 
 ---
 
-<!-- fc id:T-46-084 sha:969f523f src:manual/46-dyspleyi.md:170 klas:F -->
+<!-- fc id:T-46-084 sha:969f523f src:manual/46-dyspleyi.md:170 status:unchecked -->
 ### T-46-084 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2459,7 +2459,7 @@ E-paper тримає зображення без живлення — для а�
 
 ---
 
-<!-- fc id:T-46-085 sha:b12b358a src:manual/46-dyspleyi.md:172 klas:F -->
+<!-- fc id:T-46-085 sha:b12b358a src:manual/46-dyspleyi.md:172 status:unchecked -->
 ### T-46-085 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2480,7 +2480,7 @@ LVGL потребує кадрового буфера: практично це S
 
 ---
 
-<!-- fc id:T-46-086 sha:d759fdec src:manual/46-dyspleyi.md:174 klas:F -->
+<!-- fc id:T-46-086 sha:d759fdec src:manual/46-dyspleyi.md:174 status:unchecked -->
 ### T-46-086 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2501,7 +2501,7 @@ LVGL потребує кадрового буфера: практично це S
 
 ---
 
-<!-- fc id:T-46-087 sha:ca818cd6 src:manual/46-dyspleyi.md:176 klas:E -->
+<!-- fc id:T-46-087 sha:ca818cd6 src:manual/46-dyspleyi.md:176 status:no-external-signal -->
 ### T-46-087 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2522,7 +2522,7 @@ LVGL потребує кадрового буфера: практично це S
 
 ---
 
-<!-- fc id:T-46-088 sha:fdb0c400 src:manual/46-dyspleyi.md:178 klas:E -->
+<!-- fc id:T-46-088 sha:fdb0c400 src:manual/46-dyspleyi.md:178 status:no-external-signal -->
 ### T-46-088 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**

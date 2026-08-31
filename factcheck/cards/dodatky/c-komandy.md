@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/c-komandy.md`
 
-Одиниць твердження: **128**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **128**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-C-001 sha:76d16ded src:dodatky/c-komandy.md:3 klas:D -->
+<!-- fc id:T-C-001 sha:76d16ded src:dodatky/c-komandy.md:3 status:arithmetic -->
 ### T-C-001 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -44,7 +44,7 @@
 
 ---
 
-<!-- fc id:T-C-002 sha:5afd5f63 src:dodatky/c-komandy.md:5 klas:A -->
+<!-- fc id:T-C-002 sha:5afd5f63 src:dodatky/c-komandy.md:5 status:verbatim -->
 ### T-C-002 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -86,7 +86,7 @@
 
 ---
 
-<!-- fc id:T-C-003 sha:644789be src:dodatky/c-komandy.md:5 klas:F -->
+<!-- fc id:T-C-003 sha:644789be src:dodatky/c-komandy.md:5 status:unchecked -->
 ### T-C-003 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -108,7 +108,7 @@
 
 ---
 
-<!-- fc id:T-C-004 sha:6ac69acd src:dodatky/c-komandy.md:6 klas:A -->
+<!-- fc id:T-C-004 sha:6ac69acd src:dodatky/c-komandy.md:6 status:verbatim -->
 ### T-C-004 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -137,7 +137,7 @@
 
 ---
 
-<!-- fc id:T-C-005 sha:f3151be9 src:dodatky/c-komandy.md:12 klas:K -->
+<!-- fc id:T-C-005 sha:f3151be9 src:dodatky/c-komandy.md:12 status:code-context -->
 ### T-C-005 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -177,7 +177,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-C-006 sha:39838a17 src:dodatky/c-komandy.md:15 klas:A -->
+<!-- fc id:T-C-006 sha:39838a17 src:dodatky/c-komandy.md:15 status:verbatim -->
 ### T-C-006 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -207,7 +207,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-C-007 sha:049fb9cd src:dodatky/c-komandy.md:16 klas:F -->
+<!-- fc id:T-C-007 sha:049fb9cd src:dodatky/c-komandy.md:16 status:unchecked -->
 ### T-C-007 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -231,7 +231,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-C-008 sha:fcbae1b9 src:dodatky/c-komandy.md:17 klas:A -->
+<!-- fc id:T-C-008 sha:fcbae1b9 src:dodatky/c-komandy.md:17 status:verbatim -->
 ### T-C-008 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -262,7 +262,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-C-009 sha:881f86c6 src:dodatky/c-komandy.md:22 klas:K -->
+<!-- fc id:T-C-009 sha:881f86c6 src:dodatky/c-komandy.md:22 status:code-context -->
 ### T-C-009 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -310,7 +310,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-010 sha:bb087e09 src:dodatky/c-komandy.md:23 klas:A -->
+<!-- fc id:T-C-010 sha:bb087e09 src:dodatky/c-komandy.md:23 status:verbatim -->
 ### T-C-010 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -353,7 +353,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-011 sha:df2bf3b7 src:dodatky/c-komandy.md:24 klas:B -->
+<!-- fc id:T-C-011 sha:df2bf3b7 src:dodatky/c-komandy.md:24 status:derived -->
 ### T-C-011 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -385,7 +385,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-012 sha:4353e19f src:dodatky/c-komandy.md:25 klas:D -->
+<!-- fc id:T-C-012 sha:4353e19f src:dodatky/c-komandy.md:25 status:arithmetic -->
 ### T-C-012 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -424,7 +424,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-013 sha:88b7dfd4 src:dodatky/c-komandy.md:26 klas:A -->
+<!-- fc id:T-C-013 sha:88b7dfd4 src:dodatky/c-komandy.md:26 status:verbatim -->
 ### T-C-013 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -456,7 +456,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-014 sha:75b577e4 src:dodatky/c-komandy.md:29 klas:E -->
+<!-- fc id:T-C-014 sha:75b577e4 src:dodatky/c-komandy.md:29 status:no-external-signal -->
 ### T-C-014 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -478,7 +478,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-015 sha:751b08c4 src:dodatky/c-komandy.md:29 klas:F -->
+<!-- fc id:T-C-015 sha:751b08c4 src:dodatky/c-komandy.md:29 status:unchecked -->
 ### T-C-015 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -500,7 +500,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-016 sha:fcd6b026 src:dodatky/c-komandy.md:34 klas:K -->
+<!-- fc id:T-C-016 sha:fcd6b026 src:dodatky/c-komandy.md:34 status:code-context -->
 ### T-C-016 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -542,7 +542,7 @@ esptool --port PORT verify-flash 0x10000 app.bin        # звірити
 
 ---
 
-<!-- fc id:T-C-017 sha:3f0f4284 src:dodatky/c-komandy.md:35 klas:A -->
+<!-- fc id:T-C-017 sha:3f0f4284 src:dodatky/c-komandy.md:35 status:verbatim -->
 ### T-C-017 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -579,7 +579,7 @@ esptool --port PORT --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-C-018 sha:c6c4971b src:dodatky/c-komandy.md:38 klas:F -->
+<!-- fc id:T-C-018 sha:c6c4971b src:dodatky/c-komandy.md:38 status:unchecked -->
 ### T-C-018 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -602,7 +602,7 @@ esptool --port PORT verify-flash 0x10000 app.bin        # звірити
 
 ---
 
-<!-- fc id:T-C-019 sha:efde820e src:dodatky/c-komandy.md:39 klas:A -->
+<!-- fc id:T-C-019 sha:efde820e src:dodatky/c-komandy.md:39 status:verbatim -->
 ### T-C-019 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -647,7 +647,7 @@ esptool --port PORT verify-flash 0x10000 app.bin        # звірити
 
 ---
 
-<!-- fc id:T-C-020 sha:00142e5e src:dodatky/c-komandy.md:44 klas:K -->
+<!-- fc id:T-C-020 sha:00142e5e src:dodatky/c-komandy.md:44 status:code-context -->
 ### T-C-020 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -681,7 +681,7 @@ esptool --port PORT erase-region 0x9000 0x6000   # лише NVS
 
 ---
 
-<!-- fc id:T-C-021 sha:2dca50d4 src:dodatky/c-komandy.md:45 klas:F -->
+<!-- fc id:T-C-021 sha:2dca50d4 src:dodatky/c-komandy.md:45 status:unchecked -->
 ### T-C-021 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -705,7 +705,7 @@ esptool --port PORT erase-region 0x9000 0x6000   # лише NVS
 
 ---
 
-<!-- fc id:T-C-022 sha:9802b297 src:dodatky/c-komandy.md:46 klas:A -->
+<!-- fc id:T-C-022 sha:9802b297 src:dodatky/c-komandy.md:46 status:verbatim -->
 ### T-C-022 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -736,7 +736,7 @@ esptool --port PORT erase-region 0x9000 0x6000   # лише NVS
 
 ---
 
-<!-- fc id:T-C-023 sha:56d01430 src:dodatky/c-komandy.md:51 klas:K -->
+<!-- fc id:T-C-023 sha:56d01430 src:dodatky/c-komandy.md:51 status:code-context -->
 ### T-C-023 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -777,7 +777,7 @@ esptool --chip esp32 merge-bin -o vyrib.bin --flash-mode dio --flash-size 4MB \
 
 ---
 
-<!-- fc id:T-C-024 sha:ccf461f5 src:dodatky/c-komandy.md:52 klas:A -->
+<!-- fc id:T-C-024 sha:ccf461f5 src:dodatky/c-komandy.md:52 status:verbatim -->
 ### T-C-024 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -815,7 +815,7 @@ esptool --chip esp32 merge-bin -o vyrib.bin --flash-mode dio --flash-size 4MB \
 
 ---
 
-<!-- fc id:T-C-025 sha:4b3d6fe1 src:dodatky/c-komandy.md:56 klas:A -->
+<!-- fc id:T-C-025 sha:4b3d6fe1 src:dodatky/c-komandy.md:56 status:verbatim -->
 ### T-C-025 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -856,7 +856,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-026 sha:2ca78c71 src:dodatky/c-komandy.md:57 klas:A -->
+<!-- fc id:T-C-026 sha:2ca78c71 src:dodatky/c-komandy.md:57 status:verbatim -->
 ### T-C-026 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -897,7 +897,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-027 sha:1bd7ba52 src:dodatky/c-komandy.md:58 klas:E -->
+<!-- fc id:T-C-027 sha:1bd7ba52 src:dodatky/c-komandy.md:58 status:no-external-signal -->
 ### T-C-027 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -921,7 +921,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-028 sha:36969ccb src:dodatky/c-komandy.md:63 klas:E -->
+<!-- fc id:T-C-028 sha:36969ccb src:dodatky/c-komandy.md:63 status:no-external-signal -->
 ### T-C-028 · tablycya · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -952,7 +952,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-029 sha:1d6f7adf src:dodatky/c-komandy.md:65 klas:F -->
+<!-- fc id:T-C-029 sha:1d6f7adf src:dodatky/c-komandy.md:65 status:unchecked -->
 ### T-C-029 · tablycya · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -983,7 +983,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-030 sha:4fb5cfd6 src:dodatky/c-komandy.md:66 klas:A -->
+<!-- fc id:T-C-030 sha:4fb5cfd6 src:dodatky/c-komandy.md:66 status:verbatim -->
 ### T-C-030 · tablycya · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1037,7 +1037,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-031 sha:fd864248 src:dodatky/c-komandy.md:67 klas:A -->
+<!-- fc id:T-C-031 sha:fd864248 src:dodatky/c-komandy.md:67 status:verbatim -->
 ### T-C-031 · tablycya · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1091,7 +1091,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-032 sha:602ee8fd src:dodatky/c-komandy.md:68 klas:F -->
+<!-- fc id:T-C-032 sha:602ee8fd src:dodatky/c-komandy.md:68 status:unchecked -->
 ### T-C-032 · tablycya · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1122,7 +1122,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-033 sha:d2f41919 src:dodatky/c-komandy.md:69 klas:F -->
+<!-- fc id:T-C-033 sha:d2f41919 src:dodatky/c-komandy.md:69 status:unchecked -->
 ### T-C-033 · tablycya · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1153,7 +1153,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-034 sha:4528aa3a src:dodatky/c-komandy.md:70 klas:F -->
+<!-- fc id:T-C-034 sha:4528aa3a src:dodatky/c-komandy.md:70 status:unchecked -->
 ### T-C-034 · tablycya · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1184,7 +1184,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-035 sha:83305673 src:dodatky/c-komandy.md:71 klas:A -->
+<!-- fc id:T-C-035 sha:83305673 src:dodatky/c-komandy.md:71 status:verbatim -->
 ### T-C-035 · tablycya · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1228,7 +1228,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-036 sha:8e5b5b76 src:dodatky/c-komandy.md:72 klas:F -->
+<!-- fc id:T-C-036 sha:8e5b5b76 src:dodatky/c-komandy.md:72 status:unchecked -->
 ### T-C-036 · tablycya · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1259,7 +1259,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-037 sha:544b21a9 src:dodatky/c-komandy.md:74 klas:A -->
+<!-- fc id:T-C-037 sha:544b21a9 src:dodatky/c-komandy.md:74 status:verbatim -->
 ### T-C-037 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1306,7 +1306,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-038 sha:3fe48028 src:dodatky/c-komandy.md:75 klas:F -->
+<!-- fc id:T-C-038 sha:3fe48028 src:dodatky/c-komandy.md:75 status:unchecked -->
 ### T-C-038 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1330,7 +1330,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-039 sha:119466dc src:dodatky/c-komandy.md:79 klas:F -->
+<!-- fc id:T-C-039 sha:119466dc src:dodatky/c-komandy.md:79 status:unchecked -->
 ### T-C-039 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1353,7 +1353,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-040 sha:e708ae5d src:dodatky/c-komandy.md:80 klas:E -->
+<!-- fc id:T-C-040 sha:e708ae5d src:dodatky/c-komandy.md:80 status:no-external-signal -->
 ### T-C-040 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1376,7 +1376,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-041 sha:dbb08ae1 src:dodatky/c-komandy.md:86 klas:F -->
+<!-- fc id:T-C-041 sha:dbb08ae1 src:dodatky/c-komandy.md:86 status:unchecked -->
 ### T-C-041 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1400,7 +1400,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-042 sha:d25d8e19 src:dodatky/c-komandy.md:90 klas:K -->
+<!-- fc id:T-C-042 sha:d25d8e19 src:dodatky/c-komandy.md:90 status:code-context -->
 ### T-C-042 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1447,7 +1447,7 @@ espefuse --port PORT summary        # безпечно: подивитися с�
 
 ---
 
-<!-- fc id:T-C-043 sha:cdc968e6 src:dodatky/c-komandy.md:91 klas:A -->
+<!-- fc id:T-C-043 sha:cdc968e6 src:dodatky/c-komandy.md:91 status:verbatim -->
 ### T-C-043 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1492,7 +1492,7 @@ espefuse --port PORT summary        # безпечно: подивитися с�
 
 ---
 
-<!-- fc id:T-C-044 sha:d06f73ae src:dodatky/c-komandy.md:98 klas:K -->
+<!-- fc id:T-C-044 sha:d06f73ae src:dodatky/c-komandy.md:98 status:code-context -->
 ### T-C-044 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1545,7 +1545,7 @@ idf.py menuconfig               # пошук усередині — клавіш
 
 ---
 
-<!-- fc id:T-C-045 sha:3e0a67c9 src:dodatky/c-komandy.md:99 klas:A -->
+<!-- fc id:T-C-045 sha:3e0a67c9 src:dodatky/c-komandy.md:99 status:verbatim -->
 ### T-C-045 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1593,7 +1593,7 @@ idf.py menuconfig               # пошук усередині — клавіш
 
 ---
 
-<!-- fc id:T-C-046 sha:c06327b4 src:dodatky/c-komandy.md:100 klas:A -->
+<!-- fc id:T-C-046 sha:c06327b4 src:dodatky/c-komandy.md:100 status:verbatim -->
 ### T-C-046 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1641,7 +1641,7 @@ idf.py menuconfig               # пошук усередині — клавіш
 
 ---
 
-<!-- fc id:T-C-047 sha:bb9f7106 src:dodatky/c-komandy.md:101 klas:A -->
+<!-- fc id:T-C-047 sha:bb9f7106 src:dodatky/c-komandy.md:101 status:verbatim -->
 ### T-C-047 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1689,7 +1689,7 @@ idf.py menuconfig               # пошук усередині — клавіш
 
 ---
 
-<!-- fc id:T-C-048 sha:93619e04 src:dodatky/c-komandy.md:102 klas:A -->
+<!-- fc id:T-C-048 sha:93619e04 src:dodatky/c-komandy.md:102 status:verbatim -->
 ### T-C-048 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1737,7 +1737,7 @@ idf.py menuconfig               # пошук усередині — клавіш
 
 ---
 
-<!-- fc id:T-C-049 sha:4f12da8e src:dodatky/c-komandy.md:107 klas:K -->
+<!-- fc id:T-C-049 sha:4f12da8e src:dodatky/c-komandy.md:107 status:code-context -->
 ### T-C-049 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1787,7 +1787,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 ---
 
-<!-- fc id:T-C-050 sha:343d9bab src:dodatky/c-komandy.md:108 klas:F -->
+<!-- fc id:T-C-050 sha:343d9bab src:dodatky/c-komandy.md:108 status:unchecked -->
 ### T-C-050 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1816,7 +1816,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 ---
 
-<!-- fc id:T-C-051 sha:aaa1cf80 src:dodatky/c-komandy.md:109 klas:F -->
+<!-- fc id:T-C-051 sha:aaa1cf80 src:dodatky/c-komandy.md:109 status:unchecked -->
 ### T-C-051 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1845,7 +1845,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 ---
 
-<!-- fc id:T-C-052 sha:770cf8b9 src:dodatky/c-komandy.md:110 klas:F -->
+<!-- fc id:T-C-052 sha:770cf8b9 src:dodatky/c-komandy.md:110 status:unchecked -->
 ### T-C-052 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1874,7 +1874,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 ---
 
-<!-- fc id:T-C-053 sha:7879c453 src:dodatky/c-komandy.md:111 klas:F -->
+<!-- fc id:T-C-053 sha:7879c453 src:dodatky/c-komandy.md:111 status:unchecked -->
 ### T-C-053 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1903,7 +1903,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 ---
 
-<!-- fc id:T-C-054 sha:5410fc3a src:dodatky/c-komandy.md:112 klas:A -->
+<!-- fc id:T-C-054 sha:5410fc3a src:dodatky/c-komandy.md:112 status:verbatim -->
 ### T-C-054 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1954,7 +1954,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 ---
 
-<!-- fc id:T-C-055 sha:345eb1d8 src:dodatky/c-komandy.md:113 klas:A -->
+<!-- fc id:T-C-055 sha:345eb1d8 src:dodatky/c-komandy.md:113 status:verbatim -->
 ### T-C-055 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2005,7 +2005,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 ---
 
-<!-- fc id:T-C-056 sha:42aea75b src:dodatky/c-komandy.md:114 klas:A -->
+<!-- fc id:T-C-056 sha:42aea75b src:dodatky/c-komandy.md:114 status:verbatim -->
 ### T-C-056 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2047,7 +2047,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 ---
 
-<!-- fc id:T-C-057 sha:46891766 src:dodatky/c-komandy.md:117 klas:A -->
+<!-- fc id:T-C-057 sha:46891766 src:dodatky/c-komandy.md:117 status:verbatim -->
 ### T-C-057 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2084,7 +2084,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 ---
 
-<!-- fc id:T-C-058 sha:850fe94c src:dodatky/c-komandy.md:119 klas:A -->
+<!-- fc id:T-C-058 sha:850fe94c src:dodatky/c-komandy.md:119 status:verbatim -->
 ### T-C-058 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2121,7 +2121,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 ---
 
-<!-- fc id:T-C-059 sha:e06292bb src:dodatky/c-komandy.md:124 klas:K -->
+<!-- fc id:T-C-059 sha:e06292bb src:dodatky/c-komandy.md:124 status:code-context -->
 ### T-C-059 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2172,7 +2172,7 @@ idf.py size-files
 
 ---
 
-<!-- fc id:T-C-060 sha:0f34d83d src:dodatky/c-komandy.md:125 klas:A -->
+<!-- fc id:T-C-060 sha:0f34d83d src:dodatky/c-komandy.md:125 status:verbatim -->
 ### T-C-060 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2219,7 +2219,7 @@ idf.py size-files
 
 ---
 
-<!-- fc id:T-C-061 sha:ab73f933 src:dodatky/c-komandy.md:126 klas:A -->
+<!-- fc id:T-C-061 sha:ab73f933 src:dodatky/c-komandy.md:126 status:verbatim -->
 ### T-C-061 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2266,7 +2266,7 @@ idf.py size-files
 
 ---
 
-<!-- fc id:T-C-062 sha:9136076f src:dodatky/c-komandy.md:127 klas:A -->
+<!-- fc id:T-C-062 sha:9136076f src:dodatky/c-komandy.md:127 status:verbatim -->
 ### T-C-062 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2313,7 +2313,7 @@ idf.py size-files
 
 ---
 
-<!-- fc id:T-C-063 sha:d3c38986 src:dodatky/c-komandy.md:132 klas:K -->
+<!-- fc id:T-C-063 sha:d3c38986 src:dodatky/c-komandy.md:132 status:code-context -->
 ### T-C-063 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2350,7 +2350,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
 
 ---
 
-<!-- fc id:T-C-064 sha:48df8d47 src:dodatky/c-komandy.md:133 klas:A -->
+<!-- fc id:T-C-064 sha:48df8d47 src:dodatky/c-komandy.md:133 status:verbatim -->
 ### T-C-064 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2398,7 +2398,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
 
 ---
 
-<!-- fc id:T-C-065 sha:f88382bd src:dodatky/c-komandy.md:134 klas:A -->
+<!-- fc id:T-C-065 sha:f88382bd src:dodatky/c-komandy.md:134 status:verbatim -->
 ### T-C-065 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2446,7 +2446,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
 
 ---
 
-<!-- fc id:T-C-066 sha:b89c04ed src:dodatky/c-komandy.md:135 klas:A -->
+<!-- fc id:T-C-066 sha:b89c04ed src:dodatky/c-komandy.md:135 status:verbatim -->
 ### T-C-066 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2494,7 +2494,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
 
 ---
 
-<!-- fc id:T-C-067 sha:249fc25a src:dodatky/c-komandy.md:136 klas:A -->
+<!-- fc id:T-C-067 sha:249fc25a src:dodatky/c-komandy.md:136 status:verbatim -->
 ### T-C-067 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2526,7 +2526,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
 
 ---
 
-<!-- fc id:T-C-068 sha:f027758e src:dodatky/c-komandy.md:141 klas:K -->
+<!-- fc id:T-C-068 sha:f027758e src:dodatky/c-komandy.md:141 status:code-context -->
 ### T-C-068 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2575,7 +2575,7 @@ idf.py reconfigure
 
 ---
 
-<!-- fc id:T-C-069 sha:4f76e0f2 src:dodatky/c-komandy.md:142 klas:A -->
+<!-- fc id:T-C-069 sha:4f76e0f2 src:dodatky/c-komandy.md:142 status:verbatim -->
 ### T-C-069 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2621,7 +2621,7 @@ idf.py reconfigure
 
 ---
 
-<!-- fc id:T-C-070 sha:bd18c568 src:dodatky/c-komandy.md:143 klas:A -->
+<!-- fc id:T-C-070 sha:bd18c568 src:dodatky/c-komandy.md:143 status:verbatim -->
 ### T-C-070 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2667,7 +2667,7 @@ idf.py reconfigure
 
 ---
 
-<!-- fc id:T-C-071 sha:14ee9040 src:dodatky/c-komandy.md:148 klas:K -->
+<!-- fc id:T-C-071 sha:14ee9040 src:dodatky/c-komandy.md:148 status:code-context -->
 ### T-C-071 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2696,7 +2696,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-072 sha:5f267d8c src:dodatky/c-komandy.md:149 klas:F -->
+<!-- fc id:T-C-072 sha:5f267d8c src:dodatky/c-komandy.md:149 status:unchecked -->
 ### T-C-072 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2721,7 +2721,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-073 sha:f57b50fb src:dodatky/c-komandy.md:150 klas:F -->
+<!-- fc id:T-C-073 sha:f57b50fb src:dodatky/c-komandy.md:150 status:unchecked -->
 ### T-C-073 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2746,7 +2746,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-074 sha:69e46646 src:dodatky/c-komandy.md:151 klas:F -->
+<!-- fc id:T-C-074 sha:69e46646 src:dodatky/c-komandy.md:151 status:unchecked -->
 ### T-C-074 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2771,7 +2771,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-075 sha:2a969ef0 src:dodatky/c-komandy.md:154 klas:A -->
+<!-- fc id:T-C-075 sha:2a969ef0 src:dodatky/c-komandy.md:154 status:verbatim -->
 ### T-C-075 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2798,7 +2798,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-076 sha:828c36b3 src:dodatky/c-komandy.md:158 klas:F -->
+<!-- fc id:T-C-076 sha:828c36b3 src:dodatky/c-komandy.md:158 status:unchecked -->
 ### T-C-076 · tablycya-shapka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2825,7 +2825,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-077 sha:af9c4cd0 src:dodatky/c-komandy.md:160 klas:A -->
+<!-- fc id:T-C-077 sha:af9c4cd0 src:dodatky/c-komandy.md:160 status:verbatim -->
 ### T-C-077 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2878,7 +2878,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-078 sha:1b645088 src:dodatky/c-komandy.md:160 klas:A -->
+<!-- fc id:T-C-078 sha:1b645088 src:dodatky/c-komandy.md:160 status:verbatim -->
 ### T-C-078 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2931,7 +2931,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-079 sha:e7670044 src:dodatky/c-komandy.md:161 klas:F -->
+<!-- fc id:T-C-079 sha:e7670044 src:dodatky/c-komandy.md:161 status:unchecked -->
 ### T-C-079 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2964,7 +2964,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-080 sha:3e00cb93 src:dodatky/c-komandy.md:161 klas:F -->
+<!-- fc id:T-C-080 sha:3e00cb93 src:dodatky/c-komandy.md:161 status:unchecked -->
 ### T-C-080 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2997,7 +2997,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-081 sha:b668a28a src:dodatky/c-komandy.md:162 klas:F -->
+<!-- fc id:T-C-081 sha:b668a28a src:dodatky/c-komandy.md:162 status:unchecked -->
 ### T-C-081 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3030,7 +3030,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-082 sha:00c75e9e src:dodatky/c-komandy.md:163 klas:F -->
+<!-- fc id:T-C-082 sha:00c75e9e src:dodatky/c-komandy.md:163 status:unchecked -->
 ### T-C-082 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3063,7 +3063,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-083 sha:a33fb442 src:dodatky/c-komandy.md:163 klas:F -->
+<!-- fc id:T-C-083 sha:a33fb442 src:dodatky/c-komandy.md:163 status:unchecked -->
 ### T-C-083 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3096,7 +3096,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-084 sha:03ecbe4f src:dodatky/c-komandy.md:167 klas:K -->
+<!-- fc id:T-C-084 sha:03ecbe4f src:dodatky/c-komandy.md:167 status:code-context -->
 ### T-C-084 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3121,7 +3121,7 @@ picocom -b 115200 /dev/ttyUSB0 | tee log-2026-08-26.txt
 
 ---
 
-<!-- fc id:T-C-085 sha:999b86b5 src:dodatky/c-komandy.md:168 klas:F -->
+<!-- fc id:T-C-085 sha:999b86b5 src:dodatky/c-komandy.md:168 status:unchecked -->
 ### T-C-085 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3144,7 +3144,7 @@ picocom -b 115200 /dev/ttyUSB0 | tee log-2026-08-26.txt
 
 ---
 
-<!-- fc id:T-C-086 sha:5bc221cd src:dodatky/c-komandy.md:173 klas:K -->
+<!-- fc id:T-C-086 sha:5bc221cd src:dodatky/c-komandy.md:173 status:code-context -->
 ### T-C-086 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3177,7 +3177,7 @@ sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в с
 
 ---
 
-<!-- fc id:T-C-087 sha:7140ef8e src:dodatky/c-komandy.md:174 klas:F -->
+<!-- fc id:T-C-087 sha:7140ef8e src:dodatky/c-komandy.md:174 status:unchecked -->
 ### T-C-087 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3204,7 +3204,7 @@ sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в с
 
 ---
 
-<!-- fc id:T-C-088 sha:583a0a4a src:dodatky/c-komandy.md:175 klas:F -->
+<!-- fc id:T-C-088 sha:583a0a4a src:dodatky/c-komandy.md:175 status:unchecked -->
 ### T-C-088 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3231,7 +3231,7 @@ sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в с
 
 ---
 
-<!-- fc id:T-C-089 sha:88976550 src:dodatky/c-komandy.md:176 klas:F -->
+<!-- fc id:T-C-089 sha:88976550 src:dodatky/c-komandy.md:176 status:unchecked -->
 ### T-C-089 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3258,7 +3258,7 @@ sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в с
 
 ---
 
-<!-- fc id:T-C-090 sha:04c7f41f src:dodatky/c-komandy.md:177 klas:F -->
+<!-- fc id:T-C-090 sha:04c7f41f src:dodatky/c-komandy.md:177 status:unchecked -->
 ### T-C-090 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3285,7 +3285,7 @@ sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в с
 
 ---
 
-<!-- fc id:T-C-091 sha:459deb70 src:dodatky/c-komandy.md:178 klas:F -->
+<!-- fc id:T-C-091 sha:459deb70 src:dodatky/c-komandy.md:178 status:unchecked -->
 ### T-C-091 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3312,7 +3312,7 @@ sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в с
 
 ---
 
-<!-- fc id:T-C-092 sha:b97a16ef src:dodatky/c-komandy.md:181 klas:A -->
+<!-- fc id:T-C-092 sha:b97a16ef src:dodatky/c-komandy.md:181 status:verbatim -->
 ### T-C-092 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3339,7 +3339,7 @@ sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в с
 
 ---
 
-<!-- fc id:T-C-093 sha:2130100e src:dodatky/c-komandy.md:181 klas:F -->
+<!-- fc id:T-C-093 sha:2130100e src:dodatky/c-komandy.md:181 status:unchecked -->
 ### T-C-093 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3360,7 +3360,7 @@ sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в с
 
 ---
 
-<!-- fc id:T-C-094 sha:f68e2f06 src:dodatky/c-komandy.md:185 klas:K -->
+<!-- fc id:T-C-094 sha:f68e2f06 src:dodatky/c-komandy.md:185 status:code-context -->
 ### T-C-094 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3395,7 +3395,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-095 sha:0b0001c2 src:dodatky/c-komandy.md:186 klas:F -->
+<!-- fc id:T-C-095 sha:0b0001c2 src:dodatky/c-komandy.md:186 status:unchecked -->
 ### T-C-095 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3423,7 +3423,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-096 sha:307983fc src:dodatky/c-komandy.md:187 klas:F -->
+<!-- fc id:T-C-096 sha:307983fc src:dodatky/c-komandy.md:187 status:unchecked -->
 ### T-C-096 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3451,7 +3451,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-097 sha:82ea1803 src:dodatky/c-komandy.md:188 klas:F -->
+<!-- fc id:T-C-097 sha:82ea1803 src:dodatky/c-komandy.md:188 status:unchecked -->
 ### T-C-097 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3479,7 +3479,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-098 sha:364802c1 src:dodatky/c-komandy.md:189 klas:F -->
+<!-- fc id:T-C-098 sha:364802c1 src:dodatky/c-komandy.md:189 status:unchecked -->
 ### T-C-098 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3507,7 +3507,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-099 sha:1a074688 src:dodatky/c-komandy.md:190 klas:F -->
+<!-- fc id:T-C-099 sha:1a074688 src:dodatky/c-komandy.md:190 status:unchecked -->
 ### T-C-099 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3535,7 +3535,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-100 sha:a092446e src:dodatky/c-komandy.md:191 klas:F -->
+<!-- fc id:T-C-100 sha:a092446e src:dodatky/c-komandy.md:191 status:unchecked -->
 ### T-C-100 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3563,7 +3563,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-101 sha:3c153db1 src:dodatky/c-komandy.md:196 klas:F -->
+<!-- fc id:T-C-101 sha:3c153db1 src:dodatky/c-komandy.md:196 status:unchecked -->
 ### T-C-101 · tablycya-shapka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3591,7 +3591,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-102 sha:03becf94 src:dodatky/c-komandy.md:198 klas:A -->
+<!-- fc id:T-C-102 sha:03becf94 src:dodatky/c-komandy.md:198 status:verbatim -->
 ### T-C-102 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3645,7 +3645,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-103 sha:1fe1e089 src:dodatky/c-komandy.md:198 klas:A -->
+<!-- fc id:T-C-103 sha:1fe1e089 src:dodatky/c-komandy.md:198 status:verbatim -->
 ### T-C-103 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3685,7 +3685,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-104 sha:ddb10a79 src:dodatky/c-komandy.md:198 klas:A -->
+<!-- fc id:T-C-104 sha:ddb10a79 src:dodatky/c-komandy.md:198 status:verbatim -->
 ### T-C-104 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3739,7 +3739,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-105 sha:a6442276 src:dodatky/c-komandy.md:199 klas:A -->
+<!-- fc id:T-C-105 sha:a6442276 src:dodatky/c-komandy.md:199 status:verbatim -->
 ### T-C-105 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3782,7 +3782,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-106 sha:21c0d046 src:dodatky/c-komandy.md:199 klas:A -->
+<!-- fc id:T-C-106 sha:21c0d046 src:dodatky/c-komandy.md:199 status:verbatim -->
 ### T-C-106 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3825,7 +3825,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-107 sha:59461729 src:dodatky/c-komandy.md:199 klas:A -->
+<!-- fc id:T-C-107 sha:59461729 src:dodatky/c-komandy.md:199 status:verbatim -->
 ### T-C-107 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3868,7 +3868,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-108 sha:55b5b58b src:dodatky/c-komandy.md:200 klas:A -->
+<!-- fc id:T-C-108 sha:55b5b58b src:dodatky/c-komandy.md:200 status:verbatim -->
 ### T-C-108 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3922,7 +3922,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-109 sha:55a122c0 src:dodatky/c-komandy.md:200 klas:A -->
+<!-- fc id:T-C-109 sha:55a122c0 src:dodatky/c-komandy.md:200 status:verbatim -->
 ### T-C-109 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3976,7 +3976,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-110 sha:eb3f0062 src:dodatky/c-komandy.md:200 klas:A -->
+<!-- fc id:T-C-110 sha:eb3f0062 src:dodatky/c-komandy.md:200 status:verbatim -->
 ### T-C-110 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4030,7 +4030,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-111 sha:96022a5e src:dodatky/c-komandy.md:201 klas:A -->
+<!-- fc id:T-C-111 sha:96022a5e src:dodatky/c-komandy.md:201 status:verbatim -->
 ### T-C-111 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4084,7 +4084,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-112 sha:906f56bc src:dodatky/c-komandy.md:201 klas:A -->
+<!-- fc id:T-C-112 sha:906f56bc src:dodatky/c-komandy.md:201 status:verbatim -->
 ### T-C-112 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4138,7 +4138,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-113 sha:5efc2dcb src:dodatky/c-komandy.md:201 klas:A -->
+<!-- fc id:T-C-113 sha:5efc2dcb src:dodatky/c-komandy.md:201 status:verbatim -->
 ### T-C-113 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4192,7 +4192,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-114 sha:ceaada41 src:dodatky/c-komandy.md:202 klas:A -->
+<!-- fc id:T-C-114 sha:ceaada41 src:dodatky/c-komandy.md:202 status:verbatim -->
 ### T-C-114 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4240,7 +4240,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-115 sha:9feefdcc src:dodatky/c-komandy.md:202 klas:A -->
+<!-- fc id:T-C-115 sha:9feefdcc src:dodatky/c-komandy.md:202 status:verbatim -->
 ### T-C-115 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4280,7 +4280,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-116 sha:c94bfb00 src:dodatky/c-komandy.md:202 klas:A -->
+<!-- fc id:T-C-116 sha:c94bfb00 src:dodatky/c-komandy.md:202 status:verbatim -->
 ### T-C-116 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4328,7 +4328,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-117 sha:9ab6d1e4 src:dodatky/c-komandy.md:204 klas:A -->
+<!-- fc id:T-C-117 sha:9ab6d1e4 src:dodatky/c-komandy.md:204 status:verbatim -->
 ### T-C-117 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4367,7 +4367,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-118 sha:aa2e7ddd src:dodatky/c-komandy.md:205 klas:A -->
+<!-- fc id:T-C-118 sha:aa2e7ddd src:dodatky/c-komandy.md:205 status:verbatim -->
 ### T-C-118 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4406,7 +4406,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-119 sha:20c177db src:dodatky/c-komandy.md:211 klas:K -->
+<!-- fc id:T-C-119 sha:20c177db src:dodatky/c-komandy.md:211 status:code-context -->
 ### T-C-119 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4439,7 +4439,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-C-120 sha:d1458242 src:dodatky/c-komandy.md:212 klas:D -->
+<!-- fc id:T-C-120 sha:d1458242 src:dodatky/c-komandy.md:212 status:arithmetic -->
 ### T-C-120 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4476,7 +4476,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-C-121 sha:4438754b src:dodatky/c-komandy.md:213 klas:A -->
+<!-- fc id:T-C-121 sha:4438754b src:dodatky/c-komandy.md:213 status:verbatim -->
 ### T-C-121 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4506,7 +4506,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-C-122 sha:9fd4791b src:dodatky/c-komandy.md:218 klas:K -->
+<!-- fc id:T-C-122 sha:9fd4791b src:dodatky/c-komandy.md:218 status:code-context -->
 ### T-C-122 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4549,7 +4549,7 @@ strings -n 6 dump.bin | grep -iE "http|mqtt|ssid|pass"
 
 ---
 
-<!-- fc id:T-C-123 sha:3e391da0 src:dodatky/c-komandy.md:219 klas:F -->
+<!-- fc id:T-C-123 sha:3e391da0 src:dodatky/c-komandy.md:219 status:unchecked -->
 ### T-C-123 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4574,7 +4574,7 @@ strings -n 6 dump.bin | grep -iE "http|mqtt|ssid|pass"
 
 ---
 
-<!-- fc id:T-C-124 sha:580bb88f src:dodatky/c-komandy.md:220 klas:A -->
+<!-- fc id:T-C-124 sha:580bb88f src:dodatky/c-komandy.md:220 status:verbatim -->
 ### T-C-124 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4613,7 +4613,7 @@ strings -n 6 dump.bin | grep -iE "http|mqtt|ssid|pass"
 
 ---
 
-<!-- fc id:T-C-125 sha:f102892d src:dodatky/c-komandy.md:221 klas:F -->
+<!-- fc id:T-C-125 sha:f102892d src:dodatky/c-komandy.md:221 status:unchecked -->
 ### T-C-125 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4638,7 +4638,7 @@ strings -n 6 dump.bin | grep -iE "http|mqtt|ssid|pass"
 
 ---
 
-<!-- fc id:T-C-126 sha:51bbff59 src:dodatky/c-komandy.md:228 klas:K -->
+<!-- fc id:T-C-126 sha:51bbff59 src:dodatky/c-komandy.md:228 status:code-context -->
 ### T-C-126 · kod · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4678,7 +4678,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 ---
 
-<!-- fc id:T-C-127 sha:aa33e38e src:dodatky/c-komandy.md:229 klas:D -->
+<!-- fc id:T-C-127 sha:aa33e38e src:dodatky/c-komandy.md:229 status:arithmetic -->
 ### T-C-127 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4715,7 +4715,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 ---
 
-<!-- fc id:T-C-128 sha:8fc5b038 src:dodatky/c-komandy.md:230 klas:D -->
+<!-- fc id:T-C-128 sha:8fc5b038 src:dodatky/c-komandy.md:230 status:arithmetic -->
 ### T-C-128 · kod-ryadok · `dodatky/c-komandy.md`
 
 **Твердження, коротко**

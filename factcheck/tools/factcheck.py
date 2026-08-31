@@ -101,7 +101,7 @@ STATUSES_OF_UNITS = [s for s in STATUSES if s != "code-context"]
 
 RE_ZAPYS = re.compile(
     r"<!--\s*fc\s+id:(?P<id>[\w.-]+)\s+sha:(?P<sha>[0-9a-f]{8})"
-    r"\s+src:(?P<src>[^\s]+)\s+klas:(?P<klas>[A-GKLSN])\s*-->"
+    r"\s+src:(?P<src>[^\s]+)\s+status:(?P<status>[\w-]+)\s*-->"
 )
 
 
@@ -1039,7 +1039,7 @@ def sketch() -> int:
                                   "рядок за ним у книзі не знайдено.\n\n")
                 chastyny.append(
                     f"<!-- fc id:{ident} sha:{h} "
-                    f"src:{f.relative_to(ROOT)}:{ln} klas:{klas} -->\n"
+                    f"src:{f.relative_to(ROOT)}:{ln} status:{LETTER_TO_STATUS.get(klas, klas)} -->\n"
                     f"### {ident} · {vyd} · `{f.relative_to(ROOT)}`\n\n"
                     f"**Твердження, коротко**\n\n{cyt}\n\n{dodatkovo}"
                     f"{formatuvaty_dokaz(z)}\n---\n"
@@ -1134,10 +1134,11 @@ def zbir_usikh() -> list[dict]:
                 d = m.groupdict()
                 d["fajl"] = str(p.relative_to(FC))
                 d["tilo"] = sh
-                # Слово поруч із літерою, виведене з неї в ОДНОМУ місці.
-                # У коментарі картки поки літера; при стисненні зникає
-                # цей рядок, а не з'являється другий шлях читання.
-                d["status"] = LETTER_TO_STATUS.get(d.get("klas", ""), "")
+                # Коментар картки несе СЛОВО. Доти він ніс літеру, а
+                # слово виводилося тут — навмисно в одному місці, щоб
+                # стиснення прибрало рядок, а не додало другий шлях
+                # читання. Рядок прибрано; літери в картках більше немає.
+                d["klas"] = STATUS_TO_LETTER.get(d.get("status", ""), "F")
                 out.append(d)
     return out
 

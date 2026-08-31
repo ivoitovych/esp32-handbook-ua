@@ -110,7 +110,7 @@ GRUPY = config.groups()
 # > формат цілком. Тут читач і письменник розійшлися на одному знаку.
 RE_KARTKA = re.compile(
     r"<!-- fc id:(?P<id>\S+) sha:(?P<sha>\S+) src:(?P<src>\S+?):(?P<ln>\d+)"
-    r" klas:(?P<klas>\S+) -->\n"
+    r" status:(?P<status>\S+) -->\n"
     r"### \S+ · (?P<vyd>\S+) · [^\n]*\n\n"
     r"\*\*[^*\n]+\*\*\n\n(?P<tverd>(?:> [^\n]*\n)+)"
     r"(?:\n\*\*Дослівно з книги\*\*\n\n(?P<og1>`{3,})\n(?P<doslivno>.*?)\n(?P=og1)\n)?"
@@ -320,7 +320,7 @@ def demo() -> int:
     # контекст в огорожі. Показ на вигаданому форматі довів би лише те,
     # що я його вигадав.
     kartka = ("<!-- fc id:T-01-001 sha:deadbeef src:rozdily/01.md:3 "
-              "klas:F -->\n"
+              "status:unchecked -->\n"
               "### T-01-001 · proza · `rozdily/01.md`\n\n"
               "**Твердження, коротко**\n\n> {tv}\n\n"
               "**Контекст**\n\n```\n{kx}\n```\n\n---\n")

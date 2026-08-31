@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/39-wifi.md`
 
-Одиниць твердження: **99**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **99**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-39-001 sha:ee5b21e0 src:manual/39-wifi.md:3 klas:A -->
+<!-- fc id:T-39-001 sha:ee5b21e0 src:manual/39-wifi.md:3 status:verbatim -->
 ### T-39-001 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -37,7 +37,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-002 sha:3aff629d src:manual/39-wifi.md:3 klas:E -->
+<!-- fc id:T-39-002 sha:3aff629d src:manual/39-wifi.md:3 status:no-external-signal -->
 ### T-39-002 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -60,7 +60,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-003 sha:98c2c909 src:manual/39-wifi.md:9 klas:E -->
+<!-- fc id:T-39-003 sha:98c2c909 src:manual/39-wifi.md:9 status:no-external-signal -->
 ### T-39-003 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -82,7 +82,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-004 sha:b5f036fa src:manual/39-wifi.md:12 klas:E -->
+<!-- fc id:T-39-004 sha:b5f036fa src:manual/39-wifi.md:12 status:no-external-signal -->
 ### T-39-004 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -104,7 +104,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-005 sha:eba40df8 src:manual/39-wifi.md:12 klas:E -->
+<!-- fc id:T-39-005 sha:eba40df8 src:manual/39-wifi.md:12 status:no-external-signal -->
 ### T-39-005 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -126,7 +126,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-006 sha:d73265e5 src:manual/39-wifi.md:15 klas:E -->
+<!-- fc id:T-39-006 sha:d73265e5 src:manual/39-wifi.md:15 status:no-external-signal -->
 ### T-39-006 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -148,7 +148,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-007 sha:288e4353 src:manual/39-wifi.md:15 klas:E -->
+<!-- fc id:T-39-007 sha:288e4353 src:manual/39-wifi.md:15 status:no-external-signal -->
 ### T-39-007 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -170,7 +170,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-008 sha:677e343d src:manual/39-wifi.md:19 klas:E -->
+<!-- fc id:T-39-008 sha:677e343d src:manual/39-wifi.md:19 status:no-external-signal -->
 ### T-39-008 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -195,7 +195,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-009 sha:94589a85 src:manual/39-wifi.md:20 klas:F -->
+<!-- fc id:T-39-009 sha:94589a85 src:manual/39-wifi.md:20 status:unchecked -->
 ### T-39-009 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -220,7 +220,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-010 sha:77f9a14e src:manual/39-wifi.md:24 klas:E -->
+<!-- fc id:T-39-010 sha:77f9a14e src:manual/39-wifi.md:24 status:no-external-signal -->
 ### T-39-010 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -244,7 +244,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-011 sha:58a6de24 src:manual/39-wifi.md:25 klas:E -->
+<!-- fc id:T-39-011 sha:58a6de24 src:manual/39-wifi.md:25 status:no-external-signal -->
 ### T-39-011 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -268,7 +268,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-012 sha:6a488eff src:manual/39-wifi.md:32 klas:B -->
+<!-- fc id:T-39-012 sha:6a488eff src:manual/39-wifi.md:32 status:derived -->
 ### T-39-012 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -297,7 +297,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-013 sha:08e495f0 src:manual/39-wifi.md:35 klas:E -->
+<!-- fc id:T-39-013 sha:08e495f0 src:manual/39-wifi.md:35 status:no-external-signal -->
 ### T-39-013 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -320,7 +320,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-014 sha:f6cfd85e src:manual/39-wifi.md:35 klas:A -->
+<!-- fc id:T-39-014 sha:f6cfd85e src:manual/39-wifi.md:35 status:verbatim -->
 ### T-39-014 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -352,7 +352,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-015 sha:012074a2 src:manual/39-wifi.md:37 klas:E -->
+<!-- fc id:T-39-015 sha:012074a2 src:manual/39-wifi.md:37 status:no-external-signal -->
 ### T-39-015 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -375,7 +375,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-016 sha:63b1804b src:manual/39-wifi.md:39 klas:E -->
+<!-- fc id:T-39-016 sha:63b1804b src:manual/39-wifi.md:39 status:no-external-signal -->
 ### T-39-016 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -410,7 +410,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-017 sha:1784c130 src:manual/39-wifi.md:43 klas:E -->
+<!-- fc id:T-39-017 sha:1784c130 src:manual/39-wifi.md:43 status:no-external-signal -->
 ### T-39-017 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -431,7 +431,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-018 sha:60caafaf src:manual/39-wifi.md:45 klas:A -->
+<!-- fc id:T-39-018 sha:60caafaf src:manual/39-wifi.md:45 status:verbatim -->
 ### T-39-018 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -459,7 +459,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-019 sha:ad2fdefa src:manual/39-wifi.md:45 klas:A -->
+<!-- fc id:T-39-019 sha:ad2fdefa src:manual/39-wifi.md:45 status:verbatim -->
 ### T-39-019 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -488,7 +488,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-020 sha:574d380a src:manual/39-wifi.md:48 klas:F -->
+<!-- fc id:T-39-020 sha:574d380a src:manual/39-wifi.md:48 status:unchecked -->
 ### T-39-020 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -510,7 +510,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-021 sha:06c29e2f src:manual/39-wifi.md:48 klas:A -->
+<!-- fc id:T-39-021 sha:06c29e2f src:manual/39-wifi.md:48 status:verbatim -->
 ### T-39-021 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -538,7 +538,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-022 sha:bb97bef3 src:manual/39-wifi.md:51 klas:E -->
+<!-- fc id:T-39-022 sha:bb97bef3 src:manual/39-wifi.md:51 status:no-external-signal -->
 ### T-39-022 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -560,7 +560,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-023 sha:8ae55fd0 src:manual/39-wifi.md:54 klas:C -->
+<!-- fc id:T-39-023 sha:8ae55fd0 src:manual/39-wifi.md:54 status:named-unreachable -->
 ### T-39-023 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -587,7 +587,7 @@ Wi-Fi — головна причина, чому беруть ESP32 (розді
 
 ---
 
-<!-- fc id:T-39-024 sha:a81c330c src:manual/39-wifi.md:59 klas:K -->
+<!-- fc id:T-39-024 sha:a81c330c src:manual/39-wifi.md:59 status:code-context -->
 ### T-39-024 · kod · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -654,7 +654,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-025 sha:1ff67cf5 src:manual/39-wifi.md:61 klas:A -->
+<!-- fc id:T-39-025 sha:1ff67cf5 src:manual/39-wifi.md:61 status:verbatim -->
 ### T-39-025 · kod-ryadok · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -693,7 +693,7 @@ esp_wifi_init(&cfg);
 
 ---
 
-<!-- fc id:T-39-026 sha:23cbecf6 src:manual/39-wifi.md:64 klas:F -->
+<!-- fc id:T-39-026 sha:23cbecf6 src:manual/39-wifi.md:64 status:unchecked -->
 ### T-39-026 · kod-ryadok · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -725,7 +725,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-027 sha:057249c3 src:manual/39-wifi.md:65 klas:F -->
+<!-- fc id:T-39-027 sha:057249c3 src:manual/39-wifi.md:65 status:unchecked -->
 ### T-39-027 · kod-ryadok · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -757,7 +757,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-028 sha:2d975365 src:manual/39-wifi.md:66 klas:F -->
+<!-- fc id:T-39-028 sha:2d975365 src:manual/39-wifi.md:66 status:unchecked -->
 ### T-39-028 · kod-ryadok · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -789,7 +789,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-029 sha:3d1a93f3 src:manual/39-wifi.md:70 klas:A -->
+<!-- fc id:T-39-029 sha:3d1a93f3 src:manual/39-wifi.md:70 status:verbatim -->
 ### T-39-029 · kod-ryadok · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -837,7 +837,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-030 sha:0ac6a61d src:manual/39-wifi.md:71 klas:A -->
+<!-- fc id:T-39-030 sha:0ac6a61d src:manual/39-wifi.md:71 status:verbatim -->
 ### T-39-030 · kod-ryadok · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -885,7 +885,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-031 sha:214da143 src:manual/39-wifi.md:72 klas:A -->
+<!-- fc id:T-39-031 sha:214da143 src:manual/39-wifi.md:72 status:verbatim -->
 ### T-39-031 · kod-ryadok · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -933,7 +933,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-032 sha:b714dd75 src:manual/39-wifi.md:73 klas:A -->
+<!-- fc id:T-39-032 sha:b714dd75 src:manual/39-wifi.md:73 status:verbatim -->
 ### T-39-032 · kod-ryadok · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -981,7 +981,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-033 sha:f7804431 src:manual/39-wifi.md:76 klas:A -->
+<!-- fc id:T-39-033 sha:f7804431 src:manual/39-wifi.md:76 status:verbatim -->
 ### T-39-033 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1010,7 +1010,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-034 sha:a06bb7ef src:manual/39-wifi.md:81 klas:A -->
+<!-- fc id:T-39-034 sha:a06bb7ef src:manual/39-wifi.md:81 status:verbatim -->
 ### T-39-034 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1050,7 +1050,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-035 sha:01c85b3e src:manual/39-wifi.md:82 klas:A -->
+<!-- fc id:T-39-035 sha:01c85b3e src:manual/39-wifi.md:82 status:verbatim -->
 ### T-39-035 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1080,7 +1080,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-036 sha:b39b00d7 src:manual/39-wifi.md:85 klas:F -->
+<!-- fc id:T-39-036 sha:b39b00d7 src:manual/39-wifi.md:85 status:unchecked -->
 ### T-39-036 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1104,7 +1104,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-037 sha:e3f3983a src:manual/39-wifi.md:86 klas:A -->
+<!-- fc id:T-39-037 sha:e3f3983a src:manual/39-wifi.md:86 status:verbatim -->
 ### T-39-037 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1134,7 +1134,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-038 sha:3d8a470e src:manual/39-wifi.md:92 klas:E -->
+<!-- fc id:T-39-038 sha:3d8a470e src:manual/39-wifi.md:92 status:no-external-signal -->
 ### T-39-038 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1156,7 +1156,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-039 sha:8faf2cea src:manual/39-wifi.md:93 klas:E -->
+<!-- fc id:T-39-039 sha:8faf2cea src:manual/39-wifi.md:93 status:no-external-signal -->
 ### T-39-039 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1178,7 +1178,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-040 sha:aff69a48 src:manual/39-wifi.md:96 klas:E -->
+<!-- fc id:T-39-040 sha:aff69a48 src:manual/39-wifi.md:96 status:no-external-signal -->
 ### T-39-040 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1200,7 +1200,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-041 sha:b59cc706 src:manual/39-wifi.md:98 klas:A -->
+<!-- fc id:T-39-041 sha:b59cc706 src:manual/39-wifi.md:98 status:verbatim -->
 ### T-39-041 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1258,7 +1258,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-042 sha:012f895e src:manual/39-wifi.md:98 klas:E -->
+<!-- fc id:T-39-042 sha:012f895e src:manual/39-wifi.md:98 status:no-external-signal -->
 ### T-39-042 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1281,7 +1281,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-043 sha:ca08a34d src:manual/39-wifi.md:102 klas:A -->
+<!-- fc id:T-39-043 sha:ca08a34d src:manual/39-wifi.md:102 status:verbatim -->
 ### T-39-043 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1321,7 +1321,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-044 sha:60427d96 src:manual/39-wifi.md:103 klas:A -->
+<!-- fc id:T-39-044 sha:60427d96 src:manual/39-wifi.md:103 status:verbatim -->
 ### T-39-044 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1356,7 +1356,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-045 sha:9998d5ee src:manual/39-wifi.md:107 klas:E -->
+<!-- fc id:T-39-045 sha:9998d5ee src:manual/39-wifi.md:107 status:no-external-signal -->
 ### T-39-045 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1378,7 +1378,7 @@ esp_wifi_connect();
 
 ---
 
-<!-- fc id:T-39-046 sha:c2e1c24c src:manual/39-wifi.md:110 klas:K -->
+<!-- fc id:T-39-046 sha:c2e1c24c src:manual/39-wifi.md:110 status:code-context -->
 ### T-39-046 · kod · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1439,7 +1439,7 @@ static void on_got_ip(void) {
 
 ---
 
-<!-- fc id:T-39-047 sha:9e58a073 src:manual/39-wifi.md:114 klas:A -->
+<!-- fc id:T-39-047 sha:9e58a073 src:manual/39-wifi.md:114 status:verbatim -->
 ### T-39-047 · kod-ryadok · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1470,7 +1470,7 @@ static void on_disconnect(void) {
 
 ---
 
-<!-- fc id:T-39-048 sha:4e38313b src:manual/39-wifi.md:115 klas:A -->
+<!-- fc id:T-39-048 sha:4e38313b src:manual/39-wifi.md:115 status:verbatim -->
 ### T-39-048 · kod-ryadok · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1511,7 +1511,7 @@ static void on_disconnect(void) {
 
 ---
 
-<!-- fc id:T-39-049 sha:8865171a src:manual/39-wifi.md:124 klas:E -->
+<!-- fc id:T-39-049 sha:8865171a src:manual/39-wifi.md:124 status:no-external-signal -->
 ### T-39-049 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1536,7 +1536,7 @@ static void on_disconnect(void) {
 
 ---
 
-<!-- fc id:T-39-050 sha:8c40823e src:manual/39-wifi.md:124 klas:E -->
+<!-- fc id:T-39-050 sha:8c40823e src:manual/39-wifi.md:124 status:no-external-signal -->
 ### T-39-050 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1561,7 +1561,7 @@ static void on_disconnect(void) {
 
 ---
 
-<!-- fc id:T-39-051 sha:2f3ef63a src:manual/39-wifi.md:130 klas:E -->
+<!-- fc id:T-39-051 sha:2f3ef63a src:manual/39-wifi.md:130 status:no-external-signal -->
 ### T-39-051 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1583,7 +1583,7 @@ static void on_disconnect(void) {
 
 ---
 
-<!-- fc id:T-39-052 sha:0157d913 src:manual/39-wifi.md:130 klas:E -->
+<!-- fc id:T-39-052 sha:0157d913 src:manual/39-wifi.md:130 status:no-external-signal -->
 ### T-39-052 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1605,7 +1605,7 @@ static void on_disconnect(void) {
 
 ---
 
-<!-- fc id:T-39-053 sha:7dc67085 src:manual/39-wifi.md:135 klas:E -->
+<!-- fc id:T-39-053 sha:7dc67085 src:manual/39-wifi.md:135 status:no-external-signal -->
 ### T-39-053 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1629,7 +1629,7 @@ static void on_disconnect(void) {
 
 ---
 
-<!-- fc id:T-39-054 sha:e9c6e50a src:manual/39-wifi.md:140 klas:A -->
+<!-- fc id:T-39-054 sha:e9c6e50a src:manual/39-wifi.md:140 status:verbatim -->
 ### T-39-054 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1657,7 +1657,7 @@ provisioning:
 
 ---
 
-<!-- fc id:T-39-055 sha:70603347 src:manual/39-wifi.md:143 klas:E -->
+<!-- fc id:T-39-055 sha:70603347 src:manual/39-wifi.md:143 status:no-external-signal -->
 ### T-39-055 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1680,7 +1680,7 @@ provisioning:
 
 ---
 
-<!-- fc id:T-39-056 sha:147d1fd8 src:manual/39-wifi.md:145 klas:E -->
+<!-- fc id:T-39-056 sha:147d1fd8 src:manual/39-wifi.md:145 status:no-external-signal -->
 ### T-39-056 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1703,7 +1703,7 @@ provisioning:
 
 ---
 
-<!-- fc id:T-39-057 sha:224e143c src:manual/39-wifi.md:147 klas:F -->
+<!-- fc id:T-39-057 sha:224e143c src:manual/39-wifi.md:147 status:unchecked -->
 ### T-39-057 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1725,7 +1725,7 @@ provisioning:
 
 ---
 
-<!-- fc id:T-39-058 sha:c32014fa src:manual/39-wifi.md:150 klas:E -->
+<!-- fc id:T-39-058 sha:c32014fa src:manual/39-wifi.md:150 status:no-external-signal -->
 ### T-39-058 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1748,7 +1748,7 @@ provisioning:
 
 ---
 
-<!-- fc id:T-39-059 sha:12d67035 src:manual/39-wifi.md:151 klas:E -->
+<!-- fc id:T-39-059 sha:12d67035 src:manual/39-wifi.md:151 status:no-external-signal -->
 ### T-39-059 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1771,7 +1771,7 @@ provisioning:
 
 ---
 
-<!-- fc id:T-39-060 sha:31d618f5 src:manual/39-wifi.md:155 klas:E -->
+<!-- fc id:T-39-060 sha:31d618f5 src:manual/39-wifi.md:155 status:no-external-signal -->
 ### T-39-060 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1797,7 +1797,7 @@ provisioning:
 
 ---
 
-<!-- fc id:T-39-061 sha:76c8944b src:manual/39-wifi.md:156 klas:E -->
+<!-- fc id:T-39-061 sha:76c8944b src:manual/39-wifi.md:156 status:no-external-signal -->
 ### T-39-061 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1823,7 +1823,7 @@ provisioning:
 
 ---
 
-<!-- fc id:T-39-062 sha:1c19383e src:manual/39-wifi.md:163 klas:K -->
+<!-- fc id:T-39-062 sha:1c19383e src:manual/39-wifi.md:163 status:code-context -->
 ### T-39-062 · kod · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1868,7 +1868,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-063 sha:f76c5d2f src:manual/39-wifi.md:165 klas:A -->
+<!-- fc id:T-39-063 sha:f76c5d2f src:manual/39-wifi.md:165 status:verbatim -->
 ### T-39-063 · kod-ryadok · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1909,7 +1909,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-064 sha:da883091 src:manual/39-wifi.md:166 klas:A -->
+<!-- fc id:T-39-064 sha:da883091 src:manual/39-wifi.md:166 status:verbatim -->
 ### T-39-064 · kod-ryadok · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1940,7 +1940,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-065 sha:53097888 src:manual/39-wifi.md:169 klas:E -->
+<!-- fc id:T-39-065 sha:53097888 src:manual/39-wifi.md:169 status:no-external-signal -->
 ### T-39-065 · tablycya · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1973,7 +1973,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-066 sha:597c4317 src:manual/39-wifi.md:171 klas:A -->
+<!-- fc id:T-39-066 sha:597c4317 src:manual/39-wifi.md:171 status:verbatim -->
 ### T-39-066 · tablycya · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2012,7 +2012,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-067 sha:88ee6c9f src:manual/39-wifi.md:172 klas:E -->
+<!-- fc id:T-39-067 sha:88ee6c9f src:manual/39-wifi.md:172 status:no-external-signal -->
 ### T-39-067 · tablycya · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2045,7 +2045,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-068 sha:1082e779 src:manual/39-wifi.md:173 klas:E -->
+<!-- fc id:T-39-068 sha:1082e779 src:manual/39-wifi.md:173 status:no-external-signal -->
 ### T-39-068 · tablycya · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2078,7 +2078,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-069 sha:aca6db4f src:manual/39-wifi.md:174 klas:F -->
+<!-- fc id:T-39-069 sha:aca6db4f src:manual/39-wifi.md:174 status:unchecked -->
 ### T-39-069 · tablycya · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2111,7 +2111,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-070 sha:33e9f7fc src:manual/39-wifi.md:175 klas:E -->
+<!-- fc id:T-39-070 sha:33e9f7fc src:manual/39-wifi.md:175 status:no-external-signal -->
 ### T-39-070 · tablycya · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2144,7 +2144,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-071 sha:f8743fc8 src:manual/39-wifi.md:178 klas:E -->
+<!-- fc id:T-39-071 sha:f8743fc8 src:manual/39-wifi.md:178 status:no-external-signal -->
 ### T-39-071 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2169,7 +2169,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-072 sha:ec501256 src:manual/39-wifi.md:179 klas:F -->
+<!-- fc id:T-39-072 sha:ec501256 src:manual/39-wifi.md:179 status:unchecked -->
 ### T-39-072 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2194,7 +2194,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-073 sha:ba8a29ad src:manual/39-wifi.md:183 klas:E -->
+<!-- fc id:T-39-073 sha:ba8a29ad src:manual/39-wifi.md:183 status:no-external-signal -->
 ### T-39-073 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2217,7 +2217,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-074 sha:585c5615 src:manual/39-wifi.md:187 klas:E -->
+<!-- fc id:T-39-074 sha:585c5615 src:manual/39-wifi.md:187 status:no-external-signal -->
 ### T-39-074 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2240,7 +2240,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-075 sha:58575e4a src:manual/39-wifi.md:188 klas:E -->
+<!-- fc id:T-39-075 sha:58575e4a src:manual/39-wifi.md:188 status:no-external-signal -->
 ### T-39-075 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2263,7 +2263,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-076 sha:e7e234c9 src:manual/39-wifi.md:193 klas:A -->
+<!-- fc id:T-39-076 sha:e7e234c9 src:manual/39-wifi.md:193 status:verbatim -->
 ### T-39-076 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2291,7 +2291,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-077 sha:16a37415 src:manual/39-wifi.md:193 klas:E -->
+<!-- fc id:T-39-077 sha:16a37415 src:manual/39-wifi.md:193 status:no-external-signal -->
 ### T-39-077 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2313,7 +2313,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-078 sha:218b3bf5 src:manual/39-wifi.md:196 klas:A -->
+<!-- fc id:T-39-078 sha:218b3bf5 src:manual/39-wifi.md:196 status:verbatim -->
 ### T-39-078 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2342,7 +2342,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-079 sha:82ba0557 src:manual/39-wifi.md:197 klas:E -->
+<!-- fc id:T-39-079 sha:82ba0557 src:manual/39-wifi.md:197 status:no-external-signal -->
 ### T-39-079 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2365,7 +2365,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-080 sha:ac6419a1 src:manual/39-wifi.md:201 klas:E -->
+<!-- fc id:T-39-080 sha:ac6419a1 src:manual/39-wifi.md:201 status:no-external-signal -->
 ### T-39-080 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2389,7 +2389,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-081 sha:e6c7a8da src:manual/39-wifi.md:202 klas:E -->
+<!-- fc id:T-39-081 sha:e6c7a8da src:manual/39-wifi.md:202 status:no-external-signal -->
 ### T-39-081 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2413,7 +2413,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-082 sha:091d26d9 src:manual/39-wifi.md:205 klas:E -->
+<!-- fc id:T-39-082 sha:091d26d9 src:manual/39-wifi.md:205 status:no-external-signal -->
 ### T-39-082 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2436,7 +2436,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-083 sha:6e3cb776 src:manual/39-wifi.md:205 klas:E -->
+<!-- fc id:T-39-083 sha:6e3cb776 src:manual/39-wifi.md:205 status:no-external-signal -->
 ### T-39-083 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2459,7 +2459,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-084 sha:dfe7ec73 src:manual/39-wifi.md:209 klas:E -->
+<!-- fc id:T-39-084 sha:dfe7ec73 src:manual/39-wifi.md:209 status:no-external-signal -->
 ### T-39-084 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2480,7 +2480,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-085 sha:89e35e9a src:manual/39-wifi.md:211 klas:B -->
+<!-- fc id:T-39-085 sha:89e35e9a src:manual/39-wifi.md:211 status:derived -->
 ### T-39-085 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2513,7 +2513,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-086 sha:cc9b8ccc src:manual/39-wifi.md:219 klas:F -->
+<!-- fc id:T-39-086 sha:cc9b8ccc src:manual/39-wifi.md:219 status:unchecked -->
 ### T-39-086 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2534,7 +2534,7 @@ Wi-Fi — головний споживач у пристрої (розділ 06
 
 ---
 
-<!-- fc id:T-39-087 sha:ecc7ebf3 src:manual/39-wifi.md:221 klas:A -->
+<!-- fc id:T-39-087 sha:ecc7ebf3 src:manual/39-wifi.md:221 status:verbatim -->
 ### T-39-087 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2562,7 +2562,7 @@ Wi-Fi — головний споживач у пристрої (розділ 06
 
 ---
 
-<!-- fc id:T-39-088 sha:b1ab339c src:manual/39-wifi.md:222 klas:A -->
+<!-- fc id:T-39-088 sha:b1ab339c src:manual/39-wifi.md:222 status:verbatim -->
 ### T-39-088 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2590,7 +2590,7 @@ Wi-Fi — головний споживач у пристрої (розділ 06
 
 ---
 
-<!-- fc id:T-39-089 sha:cd21abf9 src:manual/39-wifi.md:224 klas:E -->
+<!-- fc id:T-39-089 sha:cd21abf9 src:manual/39-wifi.md:224 status:no-external-signal -->
 ### T-39-089 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2612,7 +2612,7 @@ Wi-Fi — головний споживач у пристрої (розділ 06
 
 ---
 
-<!-- fc id:T-39-090 sha:2ca43215 src:manual/39-wifi.md:224 klas:E -->
+<!-- fc id:T-39-090 sha:2ca43215 src:manual/39-wifi.md:224 status:no-external-signal -->
 ### T-39-090 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2634,7 +2634,7 @@ Wi-Fi — головний споживач у пристрої (розділ 06
 
 ---
 
-<!-- fc id:T-39-091 sha:5df62d53 src:manual/39-wifi.md:227 klas:A -->
+<!-- fc id:T-39-091 sha:5df62d53 src:manual/39-wifi.md:227 status:verbatim -->
 ### T-39-091 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2663,7 +2663,7 @@ Wi-Fi — головний споживач у пристрої (розділ 06
 
 ---
 
-<!-- fc id:T-39-092 sha:6b751bd6 src:manual/39-wifi.md:231 klas:A -->
+<!-- fc id:T-39-092 sha:6b751bd6 src:manual/39-wifi.md:231 status:verbatim -->
 ### T-39-092 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2701,7 +2701,7 @@ Wi-Fi — головний споживач у пристрої (розділ 06
 
 ---
 
-<!-- fc id:T-39-093 sha:0e8acf08 src:manual/39-wifi.md:236 klas:A -->
+<!-- fc id:T-39-093 sha:0e8acf08 src:manual/39-wifi.md:236 status:verbatim -->
 ### T-39-093 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2729,7 +2729,7 @@ ESP32 не бачить 5 ГГц — найчастіша причина «ме�
 
 ---
 
-<!-- fc id:T-39-094 sha:7e746de3 src:manual/39-wifi.md:238 klas:E -->
+<!-- fc id:T-39-094 sha:7e746de3 src:manual/39-wifi.md:238 status:no-external-signal -->
 ### T-39-094 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2750,7 +2750,7 @@ ESP32 не бачить 5 ГГц — найчастіша причина «ме�
 
 ---
 
-<!-- fc id:T-39-095 sha:90227154 src:manual/39-wifi.md:240 klas:A -->
+<!-- fc id:T-39-095 sha:90227154 src:manual/39-wifi.md:240 status:verbatim -->
 ### T-39-095 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2807,7 +2807,7 @@ ESP32 не бачить 5 ГГц — найчастіша причина «ме�
 
 ---
 
-<!-- fc id:T-39-096 sha:a2407ba9 src:manual/39-wifi.md:243 klas:E -->
+<!-- fc id:T-39-096 sha:a2407ba9 src:manual/39-wifi.md:243 status:no-external-signal -->
 ### T-39-096 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2828,7 +2828,7 @@ ESP32 не бачить 5 ГГц — найчастіша причина «ме�
 
 ---
 
-<!-- fc id:T-39-097 sha:7c4c6970 src:manual/39-wifi.md:245 klas:E -->
+<!-- fc id:T-39-097 sha:7c4c6970 src:manual/39-wifi.md:245 status:no-external-signal -->
 ### T-39-097 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2849,7 +2849,7 @@ ESP32 не бачить 5 ГГц — найчастіша причина «ме�
 
 ---
 
-<!-- fc id:T-39-098 sha:faaf9a0e src:manual/39-wifi.md:247 klas:A -->
+<!-- fc id:T-39-098 sha:faaf9a0e src:manual/39-wifi.md:247 status:verbatim -->
 ### T-39-098 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2876,7 +2876,7 @@ RSSI логувати завжди: на межі OTA не проходить, �
 
 ---
 
-<!-- fc id:T-39-099 sha:9a3683e7 src:manual/39-wifi.md:249 klas:E -->
+<!-- fc id:T-39-099 sha:9a3683e7 src:manual/39-wifi.md:249 status:no-external-signal -->
 ### T-39-099 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**

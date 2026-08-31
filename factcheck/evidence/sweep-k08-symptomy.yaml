@@ -70,7 +70,6 @@
 
 - nazva: 'T-K08-021: 6 · Що робити → перший дамп після'
   zbih: 6\s+·\s+Що\s+робити
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
   cytata: 'Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20
 
@@ -94,7 +93,6 @@
   - 9f98b9cf
 - nazva: 'T-K08-026: 8 · Найчастіша причина → немає підтягування або'
   zbih: 8\s+·\s+Найчастіша\s+причина
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: 'I2C uses two bidirectional open-drain lines: serial data line (SDA) and serial
     clock line (SCL), pulled up by resistors.
@@ -120,7 +118,6 @@
   - dceae9d7
 - nazva: 'T-K08-008: 2 · Найчастіша причина → плата не в'
   zbih: 2\s+·\s+Найчастіша\s+причина\s+→\s+плата
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
   cytata: 'If the device does not support the auto download mode, you need to get into the
     download mode manually. To do so, press and hold the ``BOOT`` button and then press the
@@ -148,7 +145,6 @@
   - 8b27f14c
 - nazva: 'T-K08-011: 3 · Найчастіша причина → адреса бутлоадера не'
   zbih: 3\s+·\s+Найчастіша\s+причина\s+→\s+адреса
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/bootloader.rst
   cytata: 'ESP-IDF second stage bootloader is located at the address {IDF_TARGET_CONFIG_BOOTLOADER_OFFSET_IN_FLASH}
     in the flash.
@@ -174,7 +170,6 @@
   - 4812427e
 - nazva: 'T-K08-019: 6 · Симптом → Boot loop'
   zbih: 6\s+·\s+Симптом\s+→
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
   cytata: 'A core dump is a set of software state information that is automatically saved
     by the panic handler when a fatal error occurs.
@@ -200,7 +195,6 @@
   - f7f26129
 - nazva: 'T-K08-020: 6 · Найчастіша причина → паніка в застосунку'
   zbih: 6\s+·\s+Найчастіша\s+причина
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
   cytata: 'Panic reason: abort() was called
 
@@ -224,7 +218,6 @@
   - f3d170d8
 - nazva: 'T-K08-035: 11 · Найчастіша причина → вони зайняті флешем'
   zbih: 11\s+·\s+Найчастіша\s+причина
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h
   cytata: '#define MSPI_IOMUX_PIN_NUM_CLK      6
 

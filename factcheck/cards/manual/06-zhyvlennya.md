@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/06-zhyvlennya.md`
 
-Одиниць твердження: **132**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **132**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-06-001 sha:c058fc32 src:manual/06-zhyvlennya.md:3 klas:E -->
+<!-- fc id:T-06-001 sha:c058fc32 src:manual/06-zhyvlennya.md:3 status:no-external-signal -->
 ### T-06-001 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-06-002 sha:f8132c00 src:manual/06-zhyvlennya.md:4 klas:E -->
+<!-- fc id:T-06-002 sha:f8132c00 src:manual/06-zhyvlennya.md:4 status:no-external-signal -->
 ### T-06-002 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-06-003 sha:5665f4b7 src:manual/06-zhyvlennya.md:7 klas:E -->
+<!-- fc id:T-06-003 sha:5665f4b7 src:manual/06-zhyvlennya.md:7 status:no-external-signal -->
 ### T-06-003 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -78,7 +78,7 @@
 
 ---
 
-<!-- fc id:T-06-004 sha:a645236e src:manual/06-zhyvlennya.md:8 klas:F -->
+<!-- fc id:T-06-004 sha:a645236e src:manual/06-zhyvlennya.md:8 status:unchecked -->
 ### T-06-004 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -102,7 +102,7 @@
 
 ---
 
-<!-- fc id:T-06-005 sha:0adea61e src:manual/06-zhyvlennya.md:9 klas:E -->
+<!-- fc id:T-06-005 sha:0adea61e src:manual/06-zhyvlennya.md:9 status:no-external-signal -->
 ### T-06-005 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -126,7 +126,7 @@
 
 ---
 
-<!-- fc id:T-06-006 sha:31146bd5 src:manual/06-zhyvlennya.md:14 klas:E -->
+<!-- fc id:T-06-006 sha:31146bd5 src:manual/06-zhyvlennya.md:14 status:no-external-signal -->
 ### T-06-006 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -147,7 +147,7 @@
 
 ---
 
-<!-- fc id:T-06-007 sha:a8327e4d src:manual/06-zhyvlennya.md:16 klas:E -->
+<!-- fc id:T-06-007 sha:a8327e4d src:manual/06-zhyvlennya.md:16 status:no-external-signal -->
 ### T-06-007 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -177,7 +177,7 @@
 
 ---
 
-<!-- fc id:T-06-008 sha:4d49c485 src:manual/06-zhyvlennya.md:17 klas:E -->
+<!-- fc id:T-06-008 sha:4d49c485 src:manual/06-zhyvlennya.md:17 status:no-external-signal -->
 ### T-06-008 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -199,7 +199,7 @@
 
 ---
 
-<!-- fc id:T-06-009 sha:2c94b74b src:manual/06-zhyvlennya.md:19 klas:A -->
+<!-- fc id:T-06-009 sha:2c94b74b src:manual/06-zhyvlennya.md:19 status:verbatim -->
 ### T-06-009 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -231,7 +231,7 @@
 
 ---
 
-<!-- fc id:T-06-010 sha:09b68be7 src:manual/06-zhyvlennya.md:19 klas:E -->
+<!-- fc id:T-06-010 sha:09b68be7 src:manual/06-zhyvlennya.md:19 status:no-external-signal -->
 ### T-06-010 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -259,7 +259,7 @@
 
 ---
 
-<!-- fc id:T-06-011 sha:2e431dde src:manual/06-zhyvlennya.md:22 klas:F -->
+<!-- fc id:T-06-011 sha:2e431dde src:manual/06-zhyvlennya.md:22 status:unchecked -->
 ### T-06-011 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -282,7 +282,7 @@
 
 ---
 
-<!-- fc id:T-06-012 sha:8820c43d src:manual/06-zhyvlennya.md:22 klas:E -->
+<!-- fc id:T-06-012 sha:8820c43d src:manual/06-zhyvlennya.md:22 status:no-external-signal -->
 ### T-06-012 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -311,7 +311,7 @@
 
 ---
 
-<!-- fc id:T-06-013 sha:90b8edf7 src:manual/06-zhyvlennya.md:27 klas:B -->
+<!-- fc id:T-06-013 sha:90b8edf7 src:manual/06-zhyvlennya.md:27 status:derived -->
 ### T-06-013 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -347,7 +347,7 @@
 
 ---
 
-<!-- fc id:T-06-014 sha:843ba99e src:manual/06-zhyvlennya.md:28 klas:E -->
+<!-- fc id:T-06-014 sha:843ba99e src:manual/06-zhyvlennya.md:28 status:no-external-signal -->
 ### T-06-014 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -370,7 +370,7 @@
 
 ---
 
-<!-- fc id:T-06-015 sha:03565347 src:manual/06-zhyvlennya.md:30 klas:F -->
+<!-- fc id:T-06-015 sha:03565347 src:manual/06-zhyvlennya.md:30 status:unchecked -->
 ### T-06-015 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -394,7 +394,7 @@
 
 ---
 
-<!-- fc id:T-06-016 sha:8535b66a src:manual/06-zhyvlennya.md:37 klas:E -->
+<!-- fc id:T-06-016 sha:8535b66a src:manual/06-zhyvlennya.md:37 status:no-external-signal -->
 ### T-06-016 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -417,7 +417,7 @@
 
 ---
 
-<!-- fc id:T-06-017 sha:ab0f8eca src:manual/06-zhyvlennya.md:37 klas:E -->
+<!-- fc id:T-06-017 sha:ab0f8eca src:manual/06-zhyvlennya.md:37 status:no-external-signal -->
 ### T-06-017 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -440,7 +440,7 @@
 
 ---
 
-<!-- fc id:T-06-018 sha:08449eca src:manual/06-zhyvlennya.md:41 klas:E -->
+<!-- fc id:T-06-018 sha:08449eca src:manual/06-zhyvlennya.md:41 status:no-external-signal -->
 ### T-06-018 · tablycya · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -471,7 +471,7 @@
 
 ---
 
-<!-- fc id:T-06-019 sha:53345c34 src:manual/06-zhyvlennya.md:43 klas:A -->
+<!-- fc id:T-06-019 sha:53345c34 src:manual/06-zhyvlennya.md:43 status:verbatim -->
 ### T-06-019 · tablycya · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -512,7 +512,7 @@
 
 ---
 
-<!-- fc id:T-06-020 sha:17b7dd68 src:manual/06-zhyvlennya.md:44 klas:A -->
+<!-- fc id:T-06-020 sha:17b7dd68 src:manual/06-zhyvlennya.md:44 status:verbatim -->
 ### T-06-020 · tablycya · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -553,7 +553,7 @@
 
 ---
 
-<!-- fc id:T-06-021 sha:36242088 src:manual/06-zhyvlennya.md:45 klas:E -->
+<!-- fc id:T-06-021 sha:36242088 src:manual/06-zhyvlennya.md:45 status:no-external-signal -->
 ### T-06-021 · tablycya · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -584,7 +584,7 @@
 
 ---
 
-<!-- fc id:T-06-022 sha:c7a0a2f8 src:manual/06-zhyvlennya.md:46 klas:F -->
+<!-- fc id:T-06-022 sha:c7a0a2f8 src:manual/06-zhyvlennya.md:46 status:unchecked -->
 ### T-06-022 · tablycya · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -615,7 +615,7 @@
 
 ---
 
-<!-- fc id:T-06-023 sha:3a38002a src:manual/06-zhyvlennya.md:47 klas:A -->
+<!-- fc id:T-06-023 sha:3a38002a src:manual/06-zhyvlennya.md:47 status:verbatim -->
 ### T-06-023 · tablycya · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -656,7 +656,7 @@
 
 ---
 
-<!-- fc id:T-06-024 sha:9bf83737 src:manual/06-zhyvlennya.md:49 klas:E -->
+<!-- fc id:T-06-024 sha:9bf83737 src:manual/06-zhyvlennya.md:49 status:no-external-signal -->
 ### T-06-024 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -680,7 +680,7 @@
 
 ---
 
-<!-- fc id:T-06-025 sha:d889ddbb src:manual/06-zhyvlennya.md:49 klas:F -->
+<!-- fc id:T-06-025 sha:d889ddbb src:manual/06-zhyvlennya.md:49 status:unchecked -->
 ### T-06-025 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -704,7 +704,7 @@
 
 ---
 
-<!-- fc id:T-06-026 sha:6aeca8c1 src:manual/06-zhyvlennya.md:50 klas:E -->
+<!-- fc id:T-06-026 sha:6aeca8c1 src:manual/06-zhyvlennya.md:50 status:no-external-signal -->
 ### T-06-026 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -728,7 +728,7 @@
 
 ---
 
-<!-- fc id:T-06-027 sha:8a054122 src:manual/06-zhyvlennya.md:55 klas:B -->
+<!-- fc id:T-06-027 sha:8a054122 src:manual/06-zhyvlennya.md:55 status:derived -->
 ### T-06-027 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -765,7 +765,7 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-028 sha:9406252e src:manual/06-zhyvlennya.md:56 klas:E -->
+<!-- fc id:T-06-028 sha:9406252e src:manual/06-zhyvlennya.md:56 status:no-external-signal -->
 ### T-06-028 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -790,7 +790,7 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-029 sha:4b43811f src:manual/06-zhyvlennya.md:60 klas:E -->
+<!-- fc id:T-06-029 sha:4b43811f src:manual/06-zhyvlennya.md:60 status:no-external-signal -->
 ### T-06-029 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -813,7 +813,7 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-030 sha:524c449f src:manual/06-zhyvlennya.md:60 klas:A -->
+<!-- fc id:T-06-030 sha:524c449f src:manual/06-zhyvlennya.md:60 status:verbatim -->
 ### T-06-030 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -843,7 +843,7 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-031 sha:13f08a63 src:manual/06-zhyvlennya.md:64 klas:E -->
+<!-- fc id:T-06-031 sha:13f08a63 src:manual/06-zhyvlennya.md:64 status:no-external-signal -->
 ### T-06-031 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -873,7 +873,7 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-032 sha:440e085b src:manual/06-zhyvlennya.md:65 klas:E -->
+<!-- fc id:T-06-032 sha:440e085b src:manual/06-zhyvlennya.md:65 status:no-external-signal -->
 ### T-06-032 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -905,7 +905,7 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-033 sha:fb179df2 src:manual/06-zhyvlennya.md:69 klas:E -->
+<!-- fc id:T-06-033 sha:fb179df2 src:manual/06-zhyvlennya.md:69 status:no-external-signal -->
 ### T-06-033 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -935,7 +935,7 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-034 sha:fbf46d93 src:manual/06-zhyvlennya.md:74 klas:E -->
+<!-- fc id:T-06-034 sha:fbf46d93 src:manual/06-zhyvlennya.md:74 status:no-external-signal -->
 ### T-06-034 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -958,7 +958,7 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-035 sha:efb5691a src:manual/06-zhyvlennya.md:74 klas:E -->
+<!-- fc id:T-06-035 sha:efb5691a src:manual/06-zhyvlennya.md:74 status:no-external-signal -->
 ### T-06-035 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -992,7 +992,7 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-036 sha:33ed5780 src:manual/06-zhyvlennya.md:78 klas:E -->
+<!-- fc id:T-06-036 sha:33ed5780 src:manual/06-zhyvlennya.md:78 status:no-external-signal -->
 ### T-06-036 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1013,7 +1013,7 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-037 sha:7ab00834 src:manual/06-zhyvlennya.md:80 klas:K -->
+<!-- fc id:T-06-037 sha:7ab00834 src:manual/06-zhyvlennya.md:80 status:code-context -->
 ### T-06-037 · kod · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1061,7 +1061,7 @@ rst:0xf (RTCWDT_BROWN_OUT_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-06-038 sha:abd09508 src:manual/06-zhyvlennya.md:81 klas:A -->
+<!-- fc id:T-06-038 sha:abd09508 src:manual/06-zhyvlennya.md:81 status:verbatim -->
 ### T-06-038 · kod-ryadok · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1107,7 +1107,7 @@ rst:0xf (RTCWDT_BROWN_OUT_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-06-039 sha:731a1ba2 src:manual/06-zhyvlennya.md:86 klas:K -->
+<!-- fc id:T-06-039 sha:731a1ba2 src:manual/06-zhyvlennya.md:86 status:code-context -->
 ### T-06-039 · kod · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1132,7 +1132,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-040 sha:9fd2fb02 src:manual/06-zhyvlennya.md:90 klas:F -->
+<!-- fc id:T-06-040 sha:9fd2fb02 src:manual/06-zhyvlennya.md:90 status:unchecked -->
 ### T-06-040 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1154,7 +1154,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-041 sha:9f4d5001 src:manual/06-zhyvlennya.md:90 klas:E -->
+<!-- fc id:T-06-041 sha:9f4d5001 src:manual/06-zhyvlennya.md:90 status:no-external-signal -->
 ### T-06-041 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1176,7 +1176,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-042 sha:42e729f4 src:manual/06-zhyvlennya.md:95 klas:F -->
+<!-- fc id:T-06-042 sha:42e729f4 src:manual/06-zhyvlennya.md:95 status:unchecked -->
 ### T-06-042 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1203,7 +1203,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-043 sha:056507c2 src:manual/06-zhyvlennya.md:96 klas:F -->
+<!-- fc id:T-06-043 sha:056507c2 src:manual/06-zhyvlennya.md:96 status:unchecked -->
 ### T-06-043 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1230,7 +1230,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-044 sha:85d914b8 src:manual/06-zhyvlennya.md:97 klas:E -->
+<!-- fc id:T-06-044 sha:85d914b8 src:manual/06-zhyvlennya.md:97 status:no-external-signal -->
 ### T-06-044 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1257,7 +1257,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-045 sha:ba3c44f4 src:manual/06-zhyvlennya.md:98 klas:E -->
+<!-- fc id:T-06-045 sha:ba3c44f4 src:manual/06-zhyvlennya.md:98 status:no-external-signal -->
 ### T-06-045 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1284,7 +1284,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-046 sha:327304ef src:manual/06-zhyvlennya.md:99 klas:E -->
+<!-- fc id:T-06-046 sha:327304ef src:manual/06-zhyvlennya.md:99 status:no-external-signal -->
 ### T-06-046 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1311,7 +1311,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-047 sha:845c5673 src:manual/06-zhyvlennya.md:100 klas:E -->
+<!-- fc id:T-06-047 sha:845c5673 src:manual/06-zhyvlennya.md:100 status:no-external-signal -->
 ### T-06-047 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1338,7 +1338,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-048 sha:86b3ba98 src:manual/06-zhyvlennya.md:101 klas:E -->
+<!-- fc id:T-06-048 sha:86b3ba98 src:manual/06-zhyvlennya.md:101 status:no-external-signal -->
 ### T-06-048 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1365,7 +1365,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-049 sha:f1d7003f src:manual/06-zhyvlennya.md:103 klas:E -->
+<!-- fc id:T-06-049 sha:f1d7003f src:manual/06-zhyvlennya.md:103 status:no-external-signal -->
 ### T-06-049 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1386,7 +1386,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-050 sha:65171072 src:manual/06-zhyvlennya.md:105 klas:E -->
+<!-- fc id:T-06-050 sha:65171072 src:manual/06-zhyvlennya.md:105 status:no-external-signal -->
 ### T-06-050 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1412,7 +1412,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-051 sha:7539ff68 src:manual/06-zhyvlennya.md:106 klas:E -->
+<!-- fc id:T-06-051 sha:7539ff68 src:manual/06-zhyvlennya.md:106 status:no-external-signal -->
 ### T-06-051 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1444,7 +1444,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-052 sha:1143ca4f src:manual/06-zhyvlennya.md:107 klas:E -->
+<!-- fc id:T-06-052 sha:1143ca4f src:manual/06-zhyvlennya.md:107 status:no-external-signal -->
 ### T-06-052 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1470,7 +1470,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-053 sha:4fe2bca0 src:manual/06-zhyvlennya.md:108 klas:E -->
+<!-- fc id:T-06-053 sha:4fe2bca0 src:manual/06-zhyvlennya.md:108 status:no-external-signal -->
 ### T-06-053 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1502,7 +1502,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-054 sha:1684b3f3 src:manual/06-zhyvlennya.md:113 klas:F -->
+<!-- fc id:T-06-054 sha:1684b3f3 src:manual/06-zhyvlennya.md:113 status:unchecked -->
 ### T-06-054 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1525,7 +1525,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-055 sha:db6086a7 src:manual/06-zhyvlennya.md:116 klas:E -->
+<!-- fc id:T-06-055 sha:db6086a7 src:manual/06-zhyvlennya.md:116 status:no-external-signal -->
 ### T-06-055 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1549,7 +1549,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-056 sha:5f5afbdc src:manual/06-zhyvlennya.md:116 klas:F -->
+<!-- fc id:T-06-056 sha:5f5afbdc src:manual/06-zhyvlennya.md:116 status:unchecked -->
 ### T-06-056 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1573,7 +1573,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-057 sha:fa7e6407 src:manual/06-zhyvlennya.md:121 klas:F -->
+<!-- fc id:T-06-057 sha:fa7e6407 src:manual/06-zhyvlennya.md:121 status:unchecked -->
 ### T-06-057 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1596,7 +1596,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-058 sha:999e517d src:manual/06-zhyvlennya.md:121 klas:E -->
+<!-- fc id:T-06-058 sha:999e517d src:manual/06-zhyvlennya.md:121 status:no-external-signal -->
 ### T-06-058 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1619,7 +1619,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-059 sha:6fc37438 src:manual/06-zhyvlennya.md:127 klas:E -->
+<!-- fc id:T-06-059 sha:6fc37438 src:manual/06-zhyvlennya.md:127 status:no-external-signal -->
 ### T-06-059 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1640,7 +1640,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-060 sha:fb316456 src:manual/06-zhyvlennya.md:127 klas:E -->
+<!-- fc id:T-06-060 sha:fb316456 src:manual/06-zhyvlennya.md:127 status:no-external-signal -->
 ### T-06-060 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1661,7 +1661,7 @@ Brownout detector was triggered
 
 ---
 
-<!-- fc id:T-06-061 sha:c5a1ea76 src:manual/06-zhyvlennya.md:129 klas:E -->
+<!-- fc id:T-06-061 sha:c5a1ea76 src:manual/06-zhyvlennya.md:129 status:no-external-signal -->
 ### T-06-061 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1684,7 +1684,7 @@ Wi-Fi-з'єднання при цьому зберігається: чип пр�
 
 ---
 
-<!-- fc id:T-06-062 sha:05cbea1e src:manual/06-zhyvlennya.md:130 klas:F -->
+<!-- fc id:T-06-062 sha:05cbea1e src:manual/06-zhyvlennya.md:130 status:unchecked -->
 ### T-06-062 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1707,7 +1707,7 @@ Wi-Fi-з'єднання при цьому зберігається: чип пр�
 
 ---
 
-<!-- fc id:T-06-063 sha:d576dbdb src:manual/06-zhyvlennya.md:131 klas:E -->
+<!-- fc id:T-06-063 sha:d576dbdb src:manual/06-zhyvlennya.md:131 status:no-external-signal -->
 ### T-06-063 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1730,7 +1730,7 @@ Wi-Fi-з'єднання при цьому зберігається: чип пр�
 
 ---
 
-<!-- fc id:T-06-064 sha:03cea31f src:manual/06-zhyvlennya.md:133 klas:E -->
+<!-- fc id:T-06-064 sha:03cea31f src:manual/06-zhyvlennya.md:133 status:no-external-signal -->
 ### T-06-064 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1753,7 +1753,7 @@ Wi-Fi-з'єднання при цьому зберігається: чип пр�
 
 ---
 
-<!-- fc id:T-06-065 sha:a97d7964 src:manual/06-zhyvlennya.md:134 klas:E -->
+<!-- fc id:T-06-065 sha:a97d7964 src:manual/06-zhyvlennya.md:134 status:no-external-signal -->
 ### T-06-065 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1776,7 +1776,7 @@ Wi-Fi-з'єднання при цьому зберігається: чип пр�
 
 ---
 
-<!-- fc id:T-06-066 sha:7d1e7818 src:manual/06-zhyvlennya.md:135 klas:E -->
+<!-- fc id:T-06-066 sha:7d1e7818 src:manual/06-zhyvlennya.md:135 status:no-external-signal -->
 ### T-06-066 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1799,7 +1799,7 @@ Wi-Fi-з'єднання при цьому зберігається: чип пр�
 
 ---
 
-<!-- fc id:T-06-067 sha:d7df9b31 src:manual/06-zhyvlennya.md:138 klas:A -->
+<!-- fc id:T-06-067 sha:d7df9b31 src:manual/06-zhyvlennya.md:138 status:verbatim -->
 ### T-06-067 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1839,7 +1839,7 @@ Wi-Fi-з'єднання при цьому зберігається: чип пр�
 
 ---
 
-<!-- fc id:T-06-068 sha:e812ef2c src:manual/06-zhyvlennya.md:140 klas:A -->
+<!-- fc id:T-06-068 sha:e812ef2c src:manual/06-zhyvlennya.md:140 status:verbatim -->
 ### T-06-068 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1879,7 +1879,7 @@ Wi-Fi-з'єднання при цьому зберігається: чип пр�
 
 ---
 
-<!-- fc id:T-06-069 sha:13c835d8 src:manual/06-zhyvlennya.md:144 klas:E -->
+<!-- fc id:T-06-069 sha:13c835d8 src:manual/06-zhyvlennya.md:144 status:no-external-signal -->
 ### T-06-069 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1900,7 +1900,7 @@ Wi-Fi-з'єднання при цьому зберігається: чип пр�
 
 ---
 
-<!-- fc id:T-06-070 sha:f7168601 src:manual/06-zhyvlennya.md:146 klas:K -->
+<!-- fc id:T-06-070 sha:f7168601 src:manual/06-zhyvlennya.md:146 status:code-context -->
 ### T-06-070 · kod · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1943,7 +1943,7 @@ esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
 
 ---
 
-<!-- fc id:T-06-071 sha:a729b5d3 src:manual/06-zhyvlennya.md:147 klas:A -->
+<!-- fc id:T-06-071 sha:a729b5d3 src:manual/06-zhyvlennya.md:147 status:verbatim -->
 ### T-06-071 · kod-ryadok · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1984,7 +1984,7 @@ esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
 
 ---
 
-<!-- fc id:T-06-072 sha:849ec5ff src:manual/06-zhyvlennya.md:150 klas:E -->
+<!-- fc id:T-06-072 sha:849ec5ff src:manual/06-zhyvlennya.md:150 status:no-external-signal -->
 ### T-06-072 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2008,7 +2008,7 @@ esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
 
 ---
 
-<!-- fc id:T-06-073 sha:70411ee5 src:manual/06-zhyvlennya.md:151 klas:E -->
+<!-- fc id:T-06-073 sha:70411ee5 src:manual/06-zhyvlennya.md:151 status:no-external-signal -->
 ### T-06-073 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2032,7 +2032,7 @@ esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
 
 ---
 
-<!-- fc id:T-06-074 sha:70530b53 src:manual/06-zhyvlennya.md:155 klas:F -->
+<!-- fc id:T-06-074 sha:70530b53 src:manual/06-zhyvlennya.md:155 status:unchecked -->
 ### T-06-074 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2055,7 +2055,7 @@ esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
 
 ---
 
-<!-- fc id:T-06-075 sha:56b98538 src:manual/06-zhyvlennya.md:155 klas:A -->
+<!-- fc id:T-06-075 sha:56b98538 src:manual/06-zhyvlennya.md:155 status:verbatim -->
 ### T-06-075 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2086,7 +2086,7 @@ esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
 
 ---
 
-<!-- fc id:T-06-076 sha:270264d5 src:manual/06-zhyvlennya.md:156 klas:E -->
+<!-- fc id:T-06-076 sha:270264d5 src:manual/06-zhyvlennya.md:156 status:no-external-signal -->
 ### T-06-076 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2109,7 +2109,7 @@ esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
 
 ---
 
-<!-- fc id:T-06-077 sha:2f88579a src:manual/06-zhyvlennya.md:159 klas:F -->
+<!-- fc id:T-06-077 sha:2f88579a src:manual/06-zhyvlennya.md:159 status:unchecked -->
 ### T-06-077 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2131,7 +2131,7 @@ esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
 
 ---
 
-<!-- fc id:T-06-078 sha:14731677 src:manual/06-zhyvlennya.md:163 klas:E -->
+<!-- fc id:T-06-078 sha:14731677 src:manual/06-zhyvlennya.md:163 status:no-external-signal -->
 ### T-06-078 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2155,7 +2155,7 @@ esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
 
 ---
 
-<!-- fc id:T-06-079 sha:e53bd8ea src:manual/06-zhyvlennya.md:164 klas:F -->
+<!-- fc id:T-06-079 sha:e53bd8ea src:manual/06-zhyvlennya.md:164 status:unchecked -->
 ### T-06-079 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2179,7 +2179,7 @@ esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
 
 ---
 
-<!-- fc id:T-06-080 sha:e403a1b1 src:manual/06-zhyvlennya.md:165 klas:A -->
+<!-- fc id:T-06-080 sha:e403a1b1 src:manual/06-zhyvlennya.md:165 status:verbatim -->
 ### T-06-080 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2211,7 +2211,7 @@ esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
 
 ---
 
-<!-- fc id:T-06-081 sha:85b3ed4a src:manual/06-zhyvlennya.md:167 klas:K -->
+<!-- fc id:T-06-081 sha:85b3ed4a src:manual/06-zhyvlennya.md:167 status:code-context -->
 ### T-06-081 · kod · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2244,7 +2244,7 @@ RTC_DATA_ATTR int lichylnyk_probudzhen = 0;
 
 ---
 
-<!-- fc id:T-06-082 sha:fad422b8 src:manual/06-zhyvlennya.md:171 klas:F -->
+<!-- fc id:T-06-082 sha:fad422b8 src:manual/06-zhyvlennya.md:171 status:unchecked -->
 ### T-06-082 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2267,7 +2267,7 @@ RTC_DATA_ATTR int lichylnyk_probudzhen = 0;
 
 ---
 
-<!-- fc id:T-06-083 sha:ca324dc4 src:manual/06-zhyvlennya.md:172 klas:A -->
+<!-- fc id:T-06-083 sha:ca324dc4 src:manual/06-zhyvlennya.md:172 status:verbatim -->
 ### T-06-083 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2298,7 +2298,7 @@ RTC_DATA_ATTR int lichylnyk_probudzhen = 0;
 
 ---
 
-<!-- fc id:T-06-084 sha:22eebc77 src:manual/06-zhyvlennya.md:175 klas:E -->
+<!-- fc id:T-06-084 sha:22eebc77 src:manual/06-zhyvlennya.md:175 status:no-external-signal -->
 ### T-06-084 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2319,7 +2319,7 @@ RTC_DATA_ATTR int lichylnyk_probudzhen = 0;
 
 ---
 
-<!-- fc id:T-06-085 sha:076077f4 src:manual/06-zhyvlennya.md:177 klas:K -->
+<!-- fc id:T-06-085 sha:076077f4 src:manual/06-zhyvlennya.md:177 status:code-context -->
 ### T-06-085 · kod · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2362,7 +2362,7 @@ esp_deep_sleep_start();                          // назад не поверт
 
 ---
 
-<!-- fc id:T-06-086 sha:808d179c src:manual/06-zhyvlennya.md:182 klas:F -->
+<!-- fc id:T-06-086 sha:808d179c src:manual/06-zhyvlennya.md:182 status:unchecked -->
 ### T-06-086 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2383,7 +2383,7 @@ esp_deep_sleep_start();                          // назад не поверт
 
 ---
 
-<!-- fc id:T-06-087 sha:a6b410ac src:manual/06-zhyvlennya.md:186 klas:E -->
+<!-- fc id:T-06-087 sha:a6b410ac src:manual/06-zhyvlennya.md:186 status:no-external-signal -->
 ### T-06-087 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2404,7 +2404,7 @@ esp_deep_sleep_start();                          // назад не поверт
 
 ---
 
-<!-- fc id:T-06-088 sha:0f436362 src:manual/06-zhyvlennya.md:188 klas:A -->
+<!-- fc id:T-06-088 sha:0f436362 src:manual/06-zhyvlennya.md:188 status:verbatim -->
 ### T-06-088 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2433,7 +2433,7 @@ esp_deep_sleep_start();                          // назад не поверт
 
 ---
 
-<!-- fc id:T-06-089 sha:611fc8e6 src:manual/06-zhyvlennya.md:189 klas:F -->
+<!-- fc id:T-06-089 sha:611fc8e6 src:manual/06-zhyvlennya.md:189 status:unchecked -->
 ### T-06-089 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2455,7 +2455,7 @@ esp_deep_sleep_start();                          // назад не поверт
 
 ---
 
-<!-- fc id:T-06-090 sha:7484ddec src:manual/06-zhyvlennya.md:191 klas:E -->
+<!-- fc id:T-06-090 sha:7484ddec src:manual/06-zhyvlennya.md:191 status:no-external-signal -->
 ### T-06-090 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2478,7 +2478,7 @@ esp_deep_sleep_start();                          // назад не поверт
 
 ---
 
-<!-- fc id:T-06-091 sha:2d5ba434 src:manual/06-zhyvlennya.md:192 klas:E -->
+<!-- fc id:T-06-091 sha:2d5ba434 src:manual/06-zhyvlennya.md:192 status:no-external-signal -->
 ### T-06-091 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2501,7 +2501,7 @@ esp_deep_sleep_start();                          // назад не поверт
 
 ---
 
-<!-- fc id:T-06-092 sha:b3fbf50d src:manual/06-zhyvlennya.md:195 klas:C -->
+<!-- fc id:T-06-092 sha:b3fbf50d src:manual/06-zhyvlennya.md:195 status:named-unreachable -->
 ### T-06-092 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2527,7 +2527,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-093 sha:51979b51 src:manual/06-zhyvlennya.md:198 klas:D -->
+<!-- fc id:T-06-093 sha:51979b51 src:manual/06-zhyvlennya.md:198 status:arithmetic -->
 ### T-06-093 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2578,7 +2578,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-094 sha:d870c8db src:manual/06-zhyvlennya.md:200 klas:D -->
+<!-- fc id:T-06-094 sha:d870c8db src:manual/06-zhyvlennya.md:200 status:arithmetic -->
 ### T-06-094 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2615,7 +2615,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-095 sha:3c20e9a3 src:manual/06-zhyvlennya.md:201 klas:D -->
+<!-- fc id:T-06-095 sha:3c20e9a3 src:manual/06-zhyvlennya.md:201 status:arithmetic -->
 ### T-06-095 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2667,7 +2667,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-096 sha:c7d5e1c8 src:manual/06-zhyvlennya.md:204 klas:F -->
+<!-- fc id:T-06-096 sha:c7d5e1c8 src:manual/06-zhyvlennya.md:204 status:unchecked -->
 ### T-06-096 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2693,7 +2693,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-097 sha:556d645b src:manual/06-zhyvlennya.md:205 klas:E -->
+<!-- fc id:T-06-097 sha:556d645b src:manual/06-zhyvlennya.md:205 status:no-external-signal -->
 ### T-06-097 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2719,7 +2719,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-098 sha:c349b673 src:manual/06-zhyvlennya.md:206 klas:E -->
+<!-- fc id:T-06-098 sha:c349b673 src:manual/06-zhyvlennya.md:206 status:no-external-signal -->
 ### T-06-098 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2745,7 +2745,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-099 sha:de7c3154 src:manual/06-zhyvlennya.md:210 klas:F -->
+<!-- fc id:T-06-099 sha:de7c3154 src:manual/06-zhyvlennya.md:210 status:unchecked -->
 ### T-06-099 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2769,7 +2769,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-100 sha:12e008fa src:manual/06-zhyvlennya.md:211 klas:E -->
+<!-- fc id:T-06-100 sha:12e008fa src:manual/06-zhyvlennya.md:211 status:no-external-signal -->
 ### T-06-100 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2793,7 +2793,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-101 sha:c87cb774 src:manual/06-zhyvlennya.md:215 klas:E -->
+<!-- fc id:T-06-101 sha:c87cb774 src:manual/06-zhyvlennya.md:215 status:no-external-signal -->
 ### T-06-101 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2815,7 +2815,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-102 sha:c149d101 src:manual/06-zhyvlennya.md:216 klas:E -->
+<!-- fc id:T-06-102 sha:c149d101 src:manual/06-zhyvlennya.md:216 status:no-external-signal -->
 ### T-06-102 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2837,7 +2837,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-103 sha:8d0045df src:manual/06-zhyvlennya.md:220 klas:F -->
+<!-- fc id:T-06-103 sha:8d0045df src:manual/06-zhyvlennya.md:220 status:unchecked -->
 ### T-06-103 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2860,7 +2860,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-104 sha:f21b420b src:manual/06-zhyvlennya.md:221 klas:E -->
+<!-- fc id:T-06-104 sha:f21b420b src:manual/06-zhyvlennya.md:221 status:no-external-signal -->
 ### T-06-104 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2883,7 +2883,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-105 sha:8e69b815 src:manual/06-zhyvlennya.md:222 klas:E -->
+<!-- fc id:T-06-105 sha:8e69b815 src:manual/06-zhyvlennya.md:222 status:no-external-signal -->
 ### T-06-105 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2906,7 +2906,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-106 sha:5f7bb179 src:manual/06-zhyvlennya.md:224 klas:E -->
+<!-- fc id:T-06-106 sha:5f7bb179 src:manual/06-zhyvlennya.md:224 status:no-external-signal -->
 ### T-06-106 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2929,7 +2929,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-107 sha:be6c0719 src:manual/06-zhyvlennya.md:224 klas:E -->
+<!-- fc id:T-06-107 sha:be6c0719 src:manual/06-zhyvlennya.md:224 status:no-external-signal -->
 ### T-06-107 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -2963,7 +2963,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-108 sha:6b986069 src:manual/06-zhyvlennya.md:228 klas:D -->
+<!-- fc id:T-06-108 sha:6b986069 src:manual/06-zhyvlennya.md:228 status:arithmetic -->
 ### T-06-108 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3005,7 +3005,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-109 sha:1e3be1de src:manual/06-zhyvlennya.md:230 klas:E -->
+<!-- fc id:T-06-109 sha:1e3be1de src:manual/06-zhyvlennya.md:230 status:no-external-signal -->
 ### T-06-109 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3029,7 +3029,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-110 sha:8febff09 src:manual/06-zhyvlennya.md:233 klas:E -->
+<!-- fc id:T-06-110 sha:8febff09 src:manual/06-zhyvlennya.md:233 status:no-external-signal -->
 ### T-06-110 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3052,7 +3052,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-111 sha:f320b6cc src:manual/06-zhyvlennya.md:234 klas:E -->
+<!-- fc id:T-06-111 sha:f320b6cc src:manual/06-zhyvlennya.md:234 status:no-external-signal -->
 ### T-06-111 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3075,7 +3075,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-112 sha:4f3df3b5 src:manual/06-zhyvlennya.md:238 klas:E -->
+<!-- fc id:T-06-112 sha:4f3df3b5 src:manual/06-zhyvlennya.md:238 status:no-external-signal -->
 ### T-06-112 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3099,7 +3099,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-113 sha:304fa1bd src:manual/06-zhyvlennya.md:238 klas:C -->
+<!-- fc id:T-06-113 sha:304fa1bd src:manual/06-zhyvlennya.md:238 status:named-unreachable -->
 ### T-06-113 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3128,7 +3128,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-114 sha:640eee6d src:manual/06-zhyvlennya.md:242 klas:C -->
+<!-- fc id:T-06-114 sha:640eee6d src:manual/06-zhyvlennya.md:242 status:named-unreachable -->
 ### T-06-114 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3157,7 +3157,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-115 sha:1ee88ba5 src:manual/06-zhyvlennya.md:243 klas:E -->
+<!-- fc id:T-06-115 sha:1ee88ba5 src:manual/06-zhyvlennya.md:243 status:no-external-signal -->
 ### T-06-115 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3182,7 +3182,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-116 sha:430b10da src:manual/06-zhyvlennya.md:250 klas:C -->
+<!-- fc id:T-06-116 sha:430b10da src:manual/06-zhyvlennya.md:250 status:named-unreachable -->
 ### T-06-116 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3211,7 +3211,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-117 sha:974911e6 src:manual/06-zhyvlennya.md:250 klas:E -->
+<!-- fc id:T-06-117 sha:974911e6 src:manual/06-zhyvlennya.md:250 status:no-external-signal -->
 ### T-06-117 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3235,7 +3235,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-118 sha:af783d97 src:manual/06-zhyvlennya.md:251 klas:D -->
+<!-- fc id:T-06-118 sha:af783d97 src:manual/06-zhyvlennya.md:251 status:arithmetic -->
 ### T-06-118 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3272,7 +3272,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-119 sha:3dc81fc0 src:manual/06-zhyvlennya.md:252 klas:F -->
+<!-- fc id:T-06-119 sha:3dc81fc0 src:manual/06-zhyvlennya.md:252 status:unchecked -->
 ### T-06-119 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3296,7 +3296,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-120 sha:6da0acaf src:manual/06-zhyvlennya.md:255 klas:F -->
+<!-- fc id:T-06-120 sha:6da0acaf src:manual/06-zhyvlennya.md:255 status:unchecked -->
 ### T-06-120 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3319,7 +3319,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-121 sha:dd8abc67 src:manual/06-zhyvlennya.md:255 klas:E -->
+<!-- fc id:T-06-121 sha:dd8abc67 src:manual/06-zhyvlennya.md:255 status:no-external-signal -->
 ### T-06-121 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3342,7 +3342,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-122 sha:d77349f9 src:manual/06-zhyvlennya.md:256 klas:E -->
+<!-- fc id:T-06-122 sha:d77349f9 src:manual/06-zhyvlennya.md:256 status:no-external-signal -->
 ### T-06-122 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3365,7 +3365,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-123 sha:c8c42ac2 src:manual/06-zhyvlennya.md:260 klas:E -->
+<!-- fc id:T-06-123 sha:c8c42ac2 src:manual/06-zhyvlennya.md:260 status:no-external-signal -->
 ### T-06-123 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3389,7 +3389,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-124 sha:cb757722 src:manual/06-zhyvlennya.md:261 klas:E -->
+<!-- fc id:T-06-124 sha:cb757722 src:manual/06-zhyvlennya.md:261 status:no-external-signal -->
 ### T-06-124 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3413,7 +3413,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-125 sha:26f7a792 src:manual/06-zhyvlennya.md:264 klas:B -->
+<!-- fc id:T-06-125 sha:26f7a792 src:manual/06-zhyvlennya.md:264 status:derived -->
 ### T-06-125 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3444,7 +3444,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-126 sha:f3ba3183 src:manual/06-zhyvlennya.md:270 klas:F -->
+<!-- fc id:T-06-126 sha:f3ba3183 src:manual/06-zhyvlennya.md:270 status:unchecked -->
 ### T-06-126 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3465,7 +3465,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-127 sha:339581bb src:manual/06-zhyvlennya.md:270 klas:E -->
+<!-- fc id:T-06-127 sha:339581bb src:manual/06-zhyvlennya.md:270 status:no-external-signal -->
 ### T-06-127 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3486,7 +3486,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-128 sha:c1e94628 src:manual/06-zhyvlennya.md:272 klas:B -->
+<!-- fc id:T-06-128 sha:c1e94628 src:manual/06-zhyvlennya.md:272 status:derived -->
 ### T-06-128 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3516,7 +3516,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-129 sha:64d1633a src:manual/06-zhyvlennya.md:275 klas:E -->
+<!-- fc id:T-06-129 sha:64d1633a src:manual/06-zhyvlennya.md:275 status:no-external-signal -->
 ### T-06-129 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3544,7 +3544,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-130 sha:34b338b0 src:manual/06-zhyvlennya.md:278 klas:F -->
+<!-- fc id:T-06-130 sha:34b338b0 src:manual/06-zhyvlennya.md:278 status:unchecked -->
 ### T-06-130 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3565,7 +3565,7 @@ Wi-Fi — 2 с при 150 мА середнього; сон — решта пр�
 
 ---
 
-<!-- fc id:T-06-131 sha:48981a0d src:manual/06-zhyvlennya.md:280 klas:A -->
+<!-- fc id:T-06-131 sha:48981a0d src:manual/06-zhyvlennya.md:280 status:verbatim -->
 ### T-06-131 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -3594,7 +3594,7 @@ Deep sleep — це перезавантаження; переживає йог�
 
 ---
 
-<!-- fc id:T-06-132 sha:077725ef src:manual/06-zhyvlennya.md:282 klas:F -->
+<!-- fc id:T-06-132 sha:077725ef src:manual/06-zhyvlennya.md:282 status:unchecked -->
 ### T-06-132 · proza · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**

@@ -1,6 +1,5 @@
 - nazva: 'T-E-125: WS2812 / SK6812 · Як → **RMT**, не'
   zbih: WS2812\s+/\s+SK6812\s+·\s+Як
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
   cytata: 'rmt/led_strip` demonstrates how to use the RMT peripheral to drive a WS2812 LED strip
 

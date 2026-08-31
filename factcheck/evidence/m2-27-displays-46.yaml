@@ -1,6 +1,5 @@
 - nazva: ST7789 — 4-line SPI інтерфейс
   zbih: TFT ST7789 · Інтерфейс → SPI
-  klas: A
   dzherelo: 'Sitronix, ST7789V 240RGB x 320 dot 262K Color with Frame Memory Single-Chip TFT Controller/Driver,
     Version 1.3, розділ 2 «Features» (кеш: source-cache/st7789.pdf)'
   cytata: '2 FEATURES
@@ -48,7 +47,6 @@
     SPI.'
 - nazva: ST7789 — 65K кольорів у режимі RGB 5-6-5
   zbih: TFT ST7789 · Кольори → 65 тис\.
-  klas: A
   dzherelo: Sitronix, ST7789V 240RGB x 320 dot 262K Color with Frame Memory Single-Chip TFT Controller/Driver,
     Version 1.3, розділ 2 «Features» та розділ 8.8 «Data Color Coding»
   cytata: 'Programmable Pixel Color Format (Color Depth) for Various Display Data input Format
@@ -94,7 +92,6 @@
   - 2683ce99
 - nazva: ILI9341 — 4-line SPI інтерфейс
   zbih: TFT ILI9341 · Інтерфейс → SPI
-  klas: A
   dzherelo: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color,
     Specification V1.11, розділ 1 «Introduction» (кеш: source-cache/ili9341.pdf)'
   cytata: 'ILI9341 supports parallel 8-/9-/16-/18-bit data bus MCU interface,
@@ -124,7 +121,6 @@
     interface (SPI)», що означає як 3-line, так і 4-line варіанти (останній — стандартний для модулів).
 - nazva: ILI9341 — 65K кольорів у режимі RGB 5-6-5
   zbih: TFT ILI9341 · Кольори → 65 тис\.
-  klas: A
   dzherelo: ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color,
     Specification V1.11, розділ 2 «Features»
   cytata: 'Display mode:
@@ -158,7 +154,6 @@
   - 2eb01406
 - nazva: ST7789 · Розмір → 1.3–2.4"
   zbih: TFT ST7789 · Розмір → 1\.3–2\.4"
-  klas: E
   dzherelo: null
   cytata: null
   sposib: null
@@ -178,7 +173,6 @@
   - '80458441'
 - nazva: ST7789 · Особливості → яскравий, швидкий
   zbih: TFT ST7789 · Особливості → яскравий, швидкий
-  klas: E
   dzherelo: null
   cytata: null
   sposib: null
@@ -198,7 +192,6 @@
   - f338098f
 - nazva: ILI9341 · Розмір → 2.4–3.2"
   zbih: TFT ILI9341 · Розмір → 2\.4–3\.2"
-  klas: E
   dzherelo: null
   cytata: null
   sposib: null
@@ -216,7 +209,6 @@
   - c7c7dc37
 - nazva: ILI9341 · Особливості → великий, класика
   zbih: TFT ILI9341 · Особливості → великий, класика
-  klas: E
   dzherelo: null
   cytata: null
   sposib: null
@@ -234,7 +226,6 @@
   - 8c1e541e
 - nazva: Альтернативи до матричної клавіатури 4×4
   zbih: Альтернативи:.*розширювач портів по I²C.*PCF8574.*аналогова клавіатура.*сенсорні кнопки
-  klas: E
   dzherelo: null
   cytata: null
   sposib: null

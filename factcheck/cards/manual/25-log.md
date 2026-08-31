@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/25-log.md`
 
-Одиниць твердження: **108**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **108**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-25-001 sha:d1e76ea0 src:manual/25-log.md:3 klas:E -->
+<!-- fc id:T-25-001 sha:d1e76ea0 src:manual/25-log.md:3 status:no-external-signal -->
 ### T-25-001 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-25-002 sha:6bf63e85 src:manual/25-log.md:4 klas:F -->
+<!-- fc id:T-25-002 sha:6bf63e85 src:manual/25-log.md:4 status:unchecked -->
 ### T-25-002 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-25-003 sha:0568f3fc src:manual/25-log.md:7 klas:E -->
+<!-- fc id:T-25-003 sha:0568f3fc src:manual/25-log.md:7 status:no-external-signal -->
 ### T-25-003 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -77,7 +77,7 @@
 
 ---
 
-<!-- fc id:T-25-004 sha:b65aadba src:manual/25-log.md:13 klas:E -->
+<!-- fc id:T-25-004 sha:b65aadba src:manual/25-log.md:13 status:no-external-signal -->
 ### T-25-004 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -99,7 +99,7 @@
 
 ---
 
-<!-- fc id:T-25-005 sha:f9235e5a src:manual/25-log.md:16 klas:F -->
+<!-- fc id:T-25-005 sha:f9235e5a src:manual/25-log.md:16 status:unchecked -->
 ### T-25-005 · tablycya-shapka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -131,7 +131,7 @@
 
 ---
 
-<!-- fc id:T-25-006 sha:6c94cb41 src:manual/25-log.md:18 klas:F -->
+<!-- fc id:T-25-006 sha:6c94cb41 src:manual/25-log.md:18 status:unchecked -->
 ### T-25-006 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -169,7 +169,7 @@
 
 ---
 
-<!-- fc id:T-25-007 sha:af9c4cd0 src:manual/25-log.md:18 klas:A -->
+<!-- fc id:T-25-007 sha:af9c4cd0 src:manual/25-log.md:18 status:verbatim -->
 ### T-25-007 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-25-008 sha:e36dfaee src:manual/25-log.md:19 klas:F -->
+<!-- fc id:T-25-008 sha:e36dfaee src:manual/25-log.md:19 status:unchecked -->
 ### T-25-008 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -265,7 +265,7 @@
 
 ---
 
-<!-- fc id:T-25-009 sha:18893f2e src:manual/25-log.md:19 klas:F -->
+<!-- fc id:T-25-009 sha:18893f2e src:manual/25-log.md:19 status:unchecked -->
 ### T-25-009 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -303,7 +303,7 @@
 
 ---
 
-<!-- fc id:T-25-010 sha:a3720873 src:manual/25-log.md:20 klas:F -->
+<!-- fc id:T-25-010 sha:a3720873 src:manual/25-log.md:20 status:unchecked -->
 ### T-25-010 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -341,7 +341,7 @@
 
 ---
 
-<!-- fc id:T-25-011 sha:ec0ea2df src:manual/25-log.md:20 klas:F -->
+<!-- fc id:T-25-011 sha:ec0ea2df src:manual/25-log.md:20 status:unchecked -->
 ### T-25-011 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -379,7 +379,7 @@
 
 ---
 
-<!-- fc id:T-25-012 sha:0a2076e9 src:manual/25-log.md:21 klas:F -->
+<!-- fc id:T-25-012 sha:0a2076e9 src:manual/25-log.md:21 status:unchecked -->
 ### T-25-012 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -417,7 +417,7 @@
 
 ---
 
-<!-- fc id:T-25-013 sha:03618666 src:manual/25-log.md:21 klas:F -->
+<!-- fc id:T-25-013 sha:03618666 src:manual/25-log.md:21 status:unchecked -->
 ### T-25-013 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -455,7 +455,7 @@
 
 ---
 
-<!-- fc id:T-25-014 sha:04b43971 src:manual/25-log.md:22 klas:F -->
+<!-- fc id:T-25-014 sha:04b43971 src:manual/25-log.md:22 status:unchecked -->
 ### T-25-014 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -493,7 +493,7 @@
 
 ---
 
-<!-- fc id:T-25-015 sha:1ea128ab src:manual/25-log.md:22 klas:F -->
+<!-- fc id:T-25-015 sha:1ea128ab src:manual/25-log.md:22 status:unchecked -->
 ### T-25-015 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -531,7 +531,7 @@
 
 ---
 
-<!-- fc id:T-25-016 sha:c2918b9c src:manual/25-log.md:23 klas:F -->
+<!-- fc id:T-25-016 sha:c2918b9c src:manual/25-log.md:23 status:unchecked -->
 ### T-25-016 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -569,7 +569,7 @@
 
 ---
 
-<!-- fc id:T-25-017 sha:019e46aa src:manual/25-log.md:23 klas:F -->
+<!-- fc id:T-25-017 sha:019e46aa src:manual/25-log.md:23 status:unchecked -->
 ### T-25-017 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -607,7 +607,7 @@
 
 ---
 
-<!-- fc id:T-25-018 sha:61c4e333 src:manual/25-log.md:24 klas:E -->
+<!-- fc id:T-25-018 sha:61c4e333 src:manual/25-log.md:24 status:no-external-signal -->
 ### T-25-018 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -645,7 +645,7 @@
 
 ---
 
-<!-- fc id:T-25-019 sha:9a237f54 src:manual/25-log.md:24 klas:E -->
+<!-- fc id:T-25-019 sha:9a237f54 src:manual/25-log.md:24 status:no-external-signal -->
 ### T-25-019 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -683,7 +683,7 @@
 
 ---
 
-<!-- fc id:T-25-020 sha:caa5c47e src:manual/25-log.md:26 klas:A -->
+<!-- fc id:T-25-020 sha:caa5c47e src:manual/25-log.md:26 status:verbatim -->
 ### T-25-020 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -731,7 +731,7 @@
 
 ---
 
-<!-- fc id:T-25-021 sha:68467b7e src:manual/25-log.md:31 klas:E -->
+<!-- fc id:T-25-021 sha:68467b7e src:manual/25-log.md:31 status:no-external-signal -->
 ### T-25-021 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -753,7 +753,7 @@
 
 ---
 
-<!-- fc id:T-25-022 sha:a1b5eff7 src:manual/25-log.md:32 klas:E -->
+<!-- fc id:T-25-022 sha:a1b5eff7 src:manual/25-log.md:32 status:no-external-signal -->
 ### T-25-022 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -775,7 +775,7 @@
 
 ---
 
-<!-- fc id:T-25-023 sha:14867314 src:manual/25-log.md:36 klas:E -->
+<!-- fc id:T-25-023 sha:14867314 src:manual/25-log.md:36 status:no-external-signal -->
 ### T-25-023 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -796,7 +796,7 @@
 
 ---
 
-<!-- fc id:T-25-024 sha:71627658 src:manual/25-log.md:38 klas:F -->
+<!-- fc id:T-25-024 sha:71627658 src:manual/25-log.md:38 status:unchecked -->
 ### T-25-024 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -820,7 +820,7 @@
 
 ---
 
-<!-- fc id:T-25-025 sha:f4657543 src:manual/25-log.md:38 klas:E -->
+<!-- fc id:T-25-025 sha:f4657543 src:manual/25-log.md:38 status:no-external-signal -->
 ### T-25-025 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -844,7 +844,7 @@
 
 ---
 
-<!-- fc id:T-25-026 sha:dcd4e6b3 src:manual/25-log.md:40 klas:E -->
+<!-- fc id:T-25-026 sha:dcd4e6b3 src:manual/25-log.md:40 status:no-external-signal -->
 ### T-25-026 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -868,7 +868,7 @@
 
 ---
 
-<!-- fc id:T-25-027 sha:3a787d13 src:manual/25-log.md:43 klas:E -->
+<!-- fc id:T-25-027 sha:3a787d13 src:manual/25-log.md:43 status:no-external-signal -->
 ### T-25-027 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -889,7 +889,7 @@
 
 ---
 
-<!-- fc id:T-25-028 sha:f3ac6824 src:manual/25-log.md:46 klas:F -->
+<!-- fc id:T-25-028 sha:f3ac6824 src:manual/25-log.md:46 status:unchecked -->
 ### T-25-028 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -913,7 +913,7 @@
 
 ---
 
-<!-- fc id:T-25-029 sha:ea75641a src:manual/25-log.md:47 klas:F -->
+<!-- fc id:T-25-029 sha:ea75641a src:manual/25-log.md:47 status:unchecked -->
 ### T-25-029 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -937,7 +937,7 @@
 
 ---
 
-<!-- fc id:T-25-030 sha:e0b031e0 src:manual/25-log.md:50 klas:F -->
+<!-- fc id:T-25-030 sha:e0b031e0 src:manual/25-log.md:50 status:unchecked -->
 ### T-25-030 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -961,7 +961,7 @@ ESP32, лог читається саме на 74880 — це не «інша ш
 
 ---
 
-<!-- fc id:T-25-031 sha:3ff45934 src:manual/25-log.md:52 klas:E -->
+<!-- fc id:T-25-031 sha:3ff45934 src:manual/25-log.md:52 status:no-external-signal -->
 ### T-25-031 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -985,7 +985,7 @@ ESP32, лог читається саме на 74880 — це не «інша ш
 
 ---
 
-<!-- fc id:T-25-032 sha:979f5419 src:manual/25-log.md:56 klas:E -->
+<!-- fc id:T-25-032 sha:979f5419 src:manual/25-log.md:56 status:no-external-signal -->
 ### T-25-032 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1009,7 +1009,7 @@ ESP32, лог читається саме на 74880 — це не «інша ш
 
 ---
 
-<!-- fc id:T-25-033 sha:c4c6d1b2 src:manual/25-log.md:56 klas:E -->
+<!-- fc id:T-25-033 sha:c4c6d1b2 src:manual/25-log.md:56 status:no-external-signal -->
 ### T-25-033 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1033,7 +1033,7 @@ ESP32, лог читається саме на 74880 — це не «інша ш
 
 ---
 
-<!-- fc id:T-25-034 sha:03ecbe4f src:manual/25-log.md:60 klas:K -->
+<!-- fc id:T-25-034 sha:03ecbe4f src:manual/25-log.md:60 status:code-context -->
 ### T-25-034 · kod · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1058,7 +1058,7 @@ picocom -b 115200 /dev/ttyUSB0 | tee log-2026-08-26.txt
 
 ---
 
-<!-- fc id:T-25-035 sha:999b86b5 src:manual/25-log.md:61 klas:F -->
+<!-- fc id:T-25-035 sha:999b86b5 src:manual/25-log.md:61 status:unchecked -->
 ### T-25-035 · kod-ryadok · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1081,7 +1081,7 @@ picocom -b 115200 /dev/ttyUSB0 | tee log-2026-08-26.txt
 
 ---
 
-<!-- fc id:T-25-036 sha:f0196438 src:manual/25-log.md:64 klas:A -->
+<!-- fc id:T-25-036 sha:f0196438 src:manual/25-log.md:64 status:verbatim -->
 ### T-25-036 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1109,7 +1109,7 @@ picocom -b 115200 /dev/ttyUSB0 | tee log-2026-08-26.txt
 
 ---
 
-<!-- fc id:T-25-037 sha:43ab6004 src:manual/25-log.md:67 klas:A -->
+<!-- fc id:T-25-037 sha:43ab6004 src:manual/25-log.md:67 status:verbatim -->
 ### T-25-037 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1140,7 +1140,7 @@ saved to file»; монітор створює файл у каталозі пр
 
 ---
 
-<!-- fc id:T-25-038 sha:8d83f47b src:manual/25-log.md:71 klas:A -->
+<!-- fc id:T-25-038 sha:8d83f47b src:manual/25-log.md:71 status:verbatim -->
 ### T-25-038 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1169,7 +1169,7 @@ saved to file»; монітор створює файл у каталозі пр
 
 ---
 
-<!-- fc id:T-25-039 sha:8e7ecf22 src:manual/25-log.md:76 klas:F -->
+<!-- fc id:T-25-039 sha:8e7ecf22 src:manual/25-log.md:76 status:unchecked -->
 ### T-25-039 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1194,7 +1194,7 @@ saved to file»; монітор створює файл у каталозі пр
 
 ---
 
-<!-- fc id:T-25-040 sha:d21ea906 src:manual/25-log.md:81 klas:F -->
+<!-- fc id:T-25-040 sha:d21ea906 src:manual/25-log.md:81 status:unchecked -->
 ### T-25-040 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1219,7 +1219,7 @@ saved to file»; монітор створює файл у каталозі пр
 
 ---
 
-<!-- fc id:T-25-041 sha:9533fa78 src:manual/25-log.md:82 klas:E -->
+<!-- fc id:T-25-041 sha:9533fa78 src:manual/25-log.md:82 status:no-external-signal -->
 ### T-25-041 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1244,7 +1244,7 @@ saved to file»; монітор створює файл у каталозі пр
 
 ---
 
-<!-- fc id:T-25-042 sha:b3e70be6 src:manual/25-log.md:87 klas:F -->
+<!-- fc id:T-25-042 sha:b3e70be6 src:manual/25-log.md:87 status:unchecked -->
 ### T-25-042 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1266,7 +1266,7 @@ saved to file»; монітор створює файл у каталозі пр
 
 ---
 
-<!-- fc id:T-25-043 sha:48af046c src:manual/25-log.md:90 klas:E -->
+<!-- fc id:T-25-043 sha:48af046c src:manual/25-log.md:90 status:no-external-signal -->
 ### T-25-043 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1288,7 +1288,7 @@ saved to file»; монітор створює файл у каталозі пр
 
 ---
 
-<!-- fc id:T-25-044 sha:8ae4f7b6 src:manual/25-log.md:93 klas:E -->
+<!-- fc id:T-25-044 sha:8ae4f7b6 src:manual/25-log.md:93 status:no-external-signal -->
 ### T-25-044 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1311,7 +1311,7 @@ saved to file»; монітор створює файл у каталозі пр
 
 ---
 
-<!-- fc id:T-25-045 sha:225f1c70 src:manual/25-log.md:93 klas:A -->
+<!-- fc id:T-25-045 sha:225f1c70 src:manual/25-log.md:93 status:verbatim -->
 ### T-25-045 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1351,7 +1351,7 @@ saved to file»; монітор створює файл у каталозі пр
 
 ---
 
-<!-- fc id:T-25-046 sha:9d87144e src:manual/25-log.md:94 klas:E -->
+<!-- fc id:T-25-046 sha:9d87144e src:manual/25-log.md:94 status:no-external-signal -->
 ### T-25-046 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1374,7 +1374,7 @@ saved to file»; монітор створює файл у каталозі пр
 
 ---
 
-<!-- fc id:T-25-047 sha:37e35320 src:manual/25-log.md:99 klas:F -->
+<!-- fc id:T-25-047 sha:37e35320 src:manual/25-log.md:99 status:unchecked -->
 ### T-25-047 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1395,7 +1395,7 @@ ESP-IDF дає п'ять рівнів і поняття тега.
 
 ---
 
-<!-- fc id:T-25-048 sha:0b9428ed src:manual/25-log.md:101 klas:K -->
+<!-- fc id:T-25-048 sha:0b9428ed src:manual/25-log.md:101 status:code-context -->
 ### T-25-048 · kod · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1432,7 +1432,7 @@ ESP_LOGV(TAG, "сирі дані: %02x", raw);            // Verbose
 
 ---
 
-<!-- fc id:T-25-049 sha:2f394772 src:manual/25-log.md:111 klas:E -->
+<!-- fc id:T-25-049 sha:2f394772 src:manual/25-log.md:111 status:no-external-signal -->
 ### T-25-049 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1455,7 +1455,7 @@ ESP_LOGV(TAG, "сирі дані: %02x", raw);            // Verbose
 
 ---
 
-<!-- fc id:T-25-050 sha:f9296e3e src:manual/25-log.md:111 klas:E -->
+<!-- fc id:T-25-050 sha:f9296e3e src:manual/25-log.md:111 status:no-external-signal -->
 ### T-25-050 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1478,7 +1478,7 @@ ESP_LOGV(TAG, "сирі дані: %02x", raw);            // Verbose
 
 ---
 
-<!-- fc id:T-25-051 sha:1764abef src:manual/25-log.md:112 klas:A -->
+<!-- fc id:T-25-051 sha:1764abef src:manual/25-log.md:112 status:verbatim -->
 ### T-25-051 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1507,7 +1507,7 @@ ESP_LOGV(TAG, "сирі дані: %02x", raw);            // Verbose
 
 ---
 
-<!-- fc id:T-25-052 sha:93ce267e src:manual/25-log.md:115 klas:E -->
+<!-- fc id:T-25-052 sha:93ce267e src:manual/25-log.md:115 status:no-external-signal -->
 ### T-25-052 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1531,7 +1531,7 @@ ESP_LOGV(TAG, "сирі дані: %02x", raw);            // Verbose
 
 ---
 
-<!-- fc id:T-25-053 sha:82ad763f src:manual/25-log.md:115 klas:A -->
+<!-- fc id:T-25-053 sha:82ad763f src:manual/25-log.md:115 status:verbatim -->
 ### T-25-053 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1571,7 +1571,7 @@ ESP_LOGV(TAG, "сирі дані: %02x", raw);            // Verbose
 
 ---
 
-<!-- fc id:T-25-054 sha:1820eb38 src:manual/25-log.md:117 klas:E -->
+<!-- fc id:T-25-054 sha:1820eb38 src:manual/25-log.md:117 status:no-external-signal -->
 ### T-25-054 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1595,7 +1595,7 @@ ESP_LOGV(TAG, "сирі дані: %02x", raw);            // Verbose
 
 ---
 
-<!-- fc id:T-25-055 sha:4ef18ea9 src:manual/25-log.md:120 klas:A -->
+<!-- fc id:T-25-055 sha:4ef18ea9 src:manual/25-log.md:120 status:verbatim -->
 ### T-25-055 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1636,7 +1636,7 @@ ESP_LOGV(TAG, "сирі дані: %02x", raw);            // Verbose
 
 ---
 
-<!-- fc id:T-25-056 sha:bfddb21e src:manual/25-log.md:123 klas:E -->
+<!-- fc id:T-25-056 sha:bfddb21e src:manual/25-log.md:123 status:no-external-signal -->
 ### T-25-056 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1658,7 +1658,7 @@ ESP_LOGV(TAG, "сирі дані: %02x", raw);            // Verbose
 
 ---
 
-<!-- fc id:T-25-057 sha:4700c6f9 src:manual/25-log.md:126 klas:K -->
+<!-- fc id:T-25-057 sha:4700c6f9 src:manual/25-log.md:126 status:code-context -->
 ### T-25-057 · kod · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1703,7 +1703,7 @@ esp_log_level_set("wifi", ESP_LOG_WARN);
 
 ---
 
-<!-- fc id:T-25-058 sha:4e8979ab src:manual/25-log.md:127 klas:A -->
+<!-- fc id:T-25-058 sha:4e8979ab src:manual/25-log.md:127 status:verbatim -->
 ### T-25-058 · kod-ryadok · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1744,7 +1744,7 @@ esp_log_level_set("wifi", ESP_LOG_WARN);
 
 ---
 
-<!-- fc id:T-25-059 sha:cb64ef9b src:manual/25-log.md:128 klas:A -->
+<!-- fc id:T-25-059 sha:cb64ef9b src:manual/25-log.md:128 status:verbatim -->
 ### T-25-059 · kod-ryadok · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1785,7 +1785,7 @@ esp_log_level_set("wifi", ESP_LOG_WARN);
 
 ---
 
-<!-- fc id:T-25-060 sha:93cfe011 src:manual/25-log.md:129 klas:A -->
+<!-- fc id:T-25-060 sha:93cfe011 src:manual/25-log.md:129 status:verbatim -->
 ### T-25-060 · kod-ryadok · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1826,7 +1826,7 @@ esp_log_level_set("wifi", ESP_LOG_WARN);
 
 ---
 
-<!-- fc id:T-25-061 sha:e2e30228 src:manual/25-log.md:132 klas:E -->
+<!-- fc id:T-25-061 sha:e2e30228 src:manual/25-log.md:132 status:no-external-signal -->
 ### T-25-061 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1847,7 +1847,7 @@ esp_log_level_set("wifi", ESP_LOG_WARN);
 
 ---
 
-<!-- fc id:T-25-062 sha:e5dbdf55 src:manual/25-log.md:135 klas:A -->
+<!-- fc id:T-25-062 sha:e5dbdf55 src:manual/25-log.md:135 status:verbatim -->
 ### T-25-062 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1886,7 +1886,7 @@ esp_log_level_set("wifi", ESP_LOG_WARN);
 
 ---
 
-<!-- fc id:T-25-063 sha:231d958d src:manual/25-log.md:138 klas:A -->
+<!-- fc id:T-25-063 sha:231d958d src:manual/25-log.md:138 status:verbatim -->
 ### T-25-063 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1925,7 +1925,7 @@ esp_log_level_set("wifi", ESP_LOG_WARN);
 
 ---
 
-<!-- fc id:T-25-064 sha:e4bc7e54 src:manual/25-log.md:139 klas:E -->
+<!-- fc id:T-25-064 sha:e4bc7e54 src:manual/25-log.md:139 status:no-external-signal -->
 ### T-25-064 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1948,7 +1948,7 @@ esp_log_level_set("wifi", ESP_LOG_WARN);
 
 ---
 
-<!-- fc id:T-25-065 sha:c9c08515 src:manual/25-log.md:142 klas:F -->
+<!-- fc id:T-25-065 sha:c9c08515 src:manual/25-log.md:142 status:unchecked -->
 ### T-25-065 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1971,7 +1971,7 @@ esp_log_level_set("wifi", ESP_LOG_WARN);
 
 ---
 
-<!-- fc id:T-25-066 sha:4df2e4b4 src:manual/25-log.md:146 klas:A -->
+<!-- fc id:T-25-066 sha:4df2e4b4 src:manual/25-log.md:146 status:verbatim -->
 ### T-25-066 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2025,7 +2025,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-067 sha:00a93e51 src:manual/25-log.md:147 klas:E -->
+<!-- fc id:T-25-067 sha:00a93e51 src:manual/25-log.md:147 status:no-external-signal -->
 ### T-25-067 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2048,7 +2048,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-068 sha:6526e058 src:manual/25-log.md:150 klas:E -->
+<!-- fc id:T-25-068 sha:6526e058 src:manual/25-log.md:150 status:no-external-signal -->
 ### T-25-068 · tablycya · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2076,7 +2076,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-069 sha:c92e7fce src:manual/25-log.md:152 klas:A -->
+<!-- fc id:T-25-069 sha:c92e7fce src:manual/25-log.md:152 status:verbatim -->
 ### T-25-069 · tablycya · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2128,7 +2128,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-070 sha:cd8f6248 src:manual/25-log.md:153 klas:A -->
+<!-- fc id:T-25-070 sha:cd8f6248 src:manual/25-log.md:153 status:verbatim -->
 ### T-25-070 · tablycya · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2187,7 +2187,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-071 sha:93f3b782 src:manual/25-log.md:155 klas:F -->
+<!-- fc id:T-25-071 sha:93f3b782 src:manual/25-log.md:155 status:unchecked -->
 ### T-25-071 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2211,7 +2211,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-072 sha:03730232 src:manual/25-log.md:157 klas:A -->
+<!-- fc id:T-25-072 sha:03730232 src:manual/25-log.md:157 status:verbatim -->
 ### T-25-072 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2254,7 +2254,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-073 sha:17777964 src:manual/25-log.md:160 klas:A -->
+<!-- fc id:T-25-073 sha:17777964 src:manual/25-log.md:160 status:verbatim -->
 ### T-25-073 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2307,7 +2307,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-074 sha:01b4d819 src:manual/25-log.md:163 klas:A -->
+<!-- fc id:T-25-074 sha:01b4d819 src:manual/25-log.md:163 status:verbatim -->
 ### T-25-074 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2346,7 +2346,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-075 sha:97601d07 src:manual/25-log.md:169 klas:E -->
+<!-- fc id:T-25-075 sha:97601d07 src:manual/25-log.md:169 status:no-external-signal -->
 ### T-25-075 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2368,7 +2368,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-076 sha:93607112 src:manual/25-log.md:172 klas:A -->
+<!-- fc id:T-25-076 sha:93607112 src:manual/25-log.md:172 status:verbatim -->
 ### T-25-076 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2410,7 +2410,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-077 sha:0b0a4a6e src:manual/25-log.md:173 klas:F -->
+<!-- fc id:T-25-077 sha:0b0a4a6e src:manual/25-log.md:173 status:unchecked -->
 ### T-25-077 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2433,7 +2433,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-078 sha:c06dfd4d src:manual/25-log.md:176 klas:F -->
+<!-- fc id:T-25-078 sha:c06dfd4d src:manual/25-log.md:176 status:unchecked -->
 ### T-25-078 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2456,7 +2456,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-079 sha:13e1711b src:manual/25-log.md:177 klas:A -->
+<!-- fc id:T-25-079 sha:13e1711b src:manual/25-log.md:177 status:verbatim -->
 ### T-25-079 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2486,7 +2486,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-080 sha:8bf9cd05 src:manual/25-log.md:180 klas:E -->
+<!-- fc id:T-25-080 sha:8bf9cd05 src:manual/25-log.md:180 status:no-external-signal -->
 ### T-25-080 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2507,7 +2507,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-081 sha:a2ae1f36 src:manual/25-log.md:182 klas:K -->
+<!-- fc id:T-25-081 sha:a2ae1f36 src:manual/25-log.md:182 status:code-context -->
 ### T-25-081 · kod · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2556,7 +2556,7 @@ if (err != ESP_OK) {
 
 ---
 
-<!-- fc id:T-25-082 sha:a6714f03 src:manual/25-log.md:186 klas:A -->
+<!-- fc id:T-25-082 sha:a6714f03 src:manual/25-log.md:186 status:verbatim -->
 ### T-25-082 · kod-ryadok · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2599,7 +2599,7 @@ if (err != ESP_OK) {
 
 ---
 
-<!-- fc id:T-25-083 sha:a6a2089a src:manual/25-log.md:190 klas:A -->
+<!-- fc id:T-25-083 sha:a6a2089a src:manual/25-log.md:190 status:verbatim -->
 ### T-25-083 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2637,7 +2637,7 @@ if (err != ESP_OK) {
 
 ---
 
-<!-- fc id:T-25-084 sha:f3392a90 src:manual/25-log.md:190 klas:A -->
+<!-- fc id:T-25-084 sha:f3392a90 src:manual/25-log.md:190 status:verbatim -->
 ### T-25-084 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2683,7 +2683,7 @@ if (err != ESP_OK) {
 
 ---
 
-<!-- fc id:T-25-085 sha:5bc3cbf9 src:manual/25-log.md:193 klas:D -->
+<!-- fc id:T-25-085 sha:5bc3cbf9 src:manual/25-log.md:193 status:arithmetic -->
 ### T-25-085 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2737,7 +2737,7 @@ if (err != ESP_OK) {
 
 ---
 
-<!-- fc id:T-25-086 sha:cb8955b8 src:manual/25-log.md:194 klas:E -->
+<!-- fc id:T-25-086 sha:cb8955b8 src:manual/25-log.md:194 status:no-external-signal -->
 ### T-25-086 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2761,7 +2761,7 @@ if (err != ESP_OK) {
 
 ---
 
-<!-- fc id:T-25-087 sha:5543d25b src:manual/25-log.md:199 klas:E -->
+<!-- fc id:T-25-087 sha:5543d25b src:manual/25-log.md:199 status:no-external-signal -->
 ### T-25-087 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2787,7 +2787,7 @@ if (err != ESP_OK) {
 
 ---
 
-<!-- fc id:T-25-088 sha:a01be02a src:manual/25-log.md:199 klas:E -->
+<!-- fc id:T-25-088 sha:a01be02a src:manual/25-log.md:199 status:no-external-signal -->
 ### T-25-088 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2813,7 +2813,7 @@ if (err != ESP_OK) {
 
 ---
 
-<!-- fc id:T-25-089 sha:f06e8d96 src:manual/25-log.md:201 klas:E -->
+<!-- fc id:T-25-089 sha:f06e8d96 src:manual/25-log.md:201 status:no-external-signal -->
 ### T-25-089 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2839,7 +2839,7 @@ if (err != ESP_OK) {
 
 ---
 
-<!-- fc id:T-25-090 sha:583d19b2 src:manual/25-log.md:207 klas:F -->
+<!-- fc id:T-25-090 sha:583d19b2 src:manual/25-log.md:207 status:unchecked -->
 ### T-25-090 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2860,7 +2860,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-091 sha:f94270a6 src:manual/25-log.md:209 klas:F -->
+<!-- fc id:T-25-091 sha:f94270a6 src:manual/25-log.md:209 status:unchecked -->
 ### T-25-091 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2884,7 +2884,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-092 sha:af8c64bb src:manual/25-log.md:211 klas:E -->
+<!-- fc id:T-25-092 sha:af8c64bb src:manual/25-log.md:211 status:no-external-signal -->
 ### T-25-092 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2908,7 +2908,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-093 sha:adabfc36 src:manual/25-log.md:212 klas:F -->
+<!-- fc id:T-25-093 sha:adabfc36 src:manual/25-log.md:212 status:unchecked -->
 ### T-25-093 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2932,7 +2932,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-094 sha:f67c8423 src:manual/25-log.md:214 klas:E -->
+<!-- fc id:T-25-094 sha:f67c8423 src:manual/25-log.md:214 status:no-external-signal -->
 ### T-25-094 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2955,7 +2955,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-095 sha:ad82eb4f src:manual/25-log.md:214 klas:E -->
+<!-- fc id:T-25-095 sha:ad82eb4f src:manual/25-log.md:214 status:no-external-signal -->
 ### T-25-095 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2978,7 +2978,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-096 sha:dea56f2b src:manual/25-log.md:218 klas:F -->
+<!-- fc id:T-25-096 sha:dea56f2b src:manual/25-log.md:218 status:unchecked -->
 ### T-25-096 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -3001,7 +3001,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-097 sha:c2157590 src:manual/25-log.md:218 klas:E -->
+<!-- fc id:T-25-097 sha:c2157590 src:manual/25-log.md:218 status:no-external-signal -->
 ### T-25-097 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -3024,7 +3024,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-098 sha:e1b1ec54 src:manual/25-log.md:222 klas:E -->
+<!-- fc id:T-25-098 sha:e1b1ec54 src:manual/25-log.md:222 status:no-external-signal -->
 ### T-25-098 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -3046,7 +3046,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-099 sha:7c031f71 src:manual/25-log.md:223 klas:E -->
+<!-- fc id:T-25-099 sha:7c031f71 src:manual/25-log.md:223 status:no-external-signal -->
 ### T-25-099 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -3068,7 +3068,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-100 sha:a32f7f3c src:manual/25-log.md:225 klas:F -->
+<!-- fc id:T-25-100 sha:a32f7f3c src:manual/25-log.md:225 status:unchecked -->
 ### T-25-100 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -3091,7 +3091,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-101 sha:02006711 src:manual/25-log.md:231 klas:F -->
+<!-- fc id:T-25-101 sha:02006711 src:manual/25-log.md:231 status:unchecked -->
 ### T-25-101 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -3114,7 +3114,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-102 sha:3488ab7d src:manual/25-log.md:235 klas:E -->
+<!-- fc id:T-25-102 sha:3488ab7d src:manual/25-log.md:235 status:no-external-signal -->
 ### T-25-102 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -3150,7 +3150,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-103 sha:c6e2b5ba src:manual/25-log.md:237 klas:E -->
+<!-- fc id:T-25-103 sha:c6e2b5ba src:manual/25-log.md:237 status:no-external-signal -->
 ### T-25-103 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -3186,7 +3186,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-104 sha:ce4ac3ed src:manual/25-log.md:242 klas:E -->
+<!-- fc id:T-25-104 sha:ce4ac3ed src:manual/25-log.md:242 status:no-external-signal -->
 ### T-25-104 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -3207,7 +3207,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-105 sha:45552ee9 src:manual/25-log.md:244 klas:A -->
+<!-- fc id:T-25-105 sha:45552ee9 src:manual/25-log.md:244 status:verbatim -->
 ### T-25-105 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -3235,7 +3235,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-106 sha:88f9dde2 src:manual/25-log.md:247 klas:E -->
+<!-- fc id:T-25-106 sha:88f9dde2 src:manual/25-log.md:247 status:no-external-signal -->
 ### T-25-106 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -3256,7 +3256,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-107 sha:5c718d5d src:manual/25-log.md:249 klas:A -->
+<!-- fc id:T-25-107 sha:5c718d5d src:manual/25-log.md:249 status:verbatim -->
 ### T-25-107 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -3297,7 +3297,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-108 sha:66a09de4 src:manual/25-log.md:252 klas:E -->
+<!-- fc id:T-25-108 sha:66a09de4 src:manual/25-log.md:252 status:no-external-signal -->
 ### T-25-108 · proza · `manual/25-log.md`
 
 **Твердження, коротко**

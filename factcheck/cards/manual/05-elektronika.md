@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/05-elektronika.md`
 
-Одиниць твердження: **133**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **133**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-05-001 sha:a527012e src:manual/05-elektronika.md:3 klas:E -->
+<!-- fc id:T-05-001 sha:a527012e src:manual/05-elektronika.md:3 status:no-external-signal -->
 ### T-05-001 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-05-002 sha:459f2bf4 src:manual/05-elektronika.md:4 klas:E -->
+<!-- fc id:T-05-002 sha:459f2bf4 src:manual/05-elektronika.md:4 status:no-external-signal -->
 ### T-05-002 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-05-003 sha:09f1a926 src:manual/05-elektronika.md:7 klas:E -->
+<!-- fc id:T-05-003 sha:09f1a926 src:manual/05-elektronika.md:7 status:no-external-signal -->
 ### T-05-003 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -75,7 +75,7 @@
 
 ---
 
-<!-- fc id:T-05-004 sha:3c958429 src:manual/05-elektronika.md:11 klas:E -->
+<!-- fc id:T-05-004 sha:3c958429 src:manual/05-elektronika.md:11 status:no-external-signal -->
 ### T-05-004 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -98,7 +98,7 @@
 
 ---
 
-<!-- fc id:T-05-005 sha:acd50fd4 src:manual/05-elektronika.md:11 klas:E -->
+<!-- fc id:T-05-005 sha:acd50fd4 src:manual/05-elektronika.md:11 status:no-external-signal -->
 ### T-05-005 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -121,7 +121,7 @@
 
 ---
 
-<!-- fc id:T-05-006 sha:787eecd6 src:manual/05-elektronika.md:13 klas:E -->
+<!-- fc id:T-05-006 sha:787eecd6 src:manual/05-elektronika.md:13 status:no-external-signal -->
 ### T-05-006 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -144,7 +144,7 @@
 
 ---
 
-<!-- fc id:T-05-007 sha:3d63bf99 src:manual/05-elektronika.md:15 klas:E -->
+<!-- fc id:T-05-007 sha:3d63bf99 src:manual/05-elektronika.md:15 status:no-external-signal -->
 ### T-05-007 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -167,7 +167,7 @@
 
 ---
 
-<!-- fc id:T-05-008 sha:fa600bbb src:manual/05-elektronika.md:15 klas:E -->
+<!-- fc id:T-05-008 sha:fa600bbb src:manual/05-elektronika.md:15 status:no-external-signal -->
 ### T-05-008 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -190,7 +190,7 @@
 
 ---
 
-<!-- fc id:T-05-009 sha:a5cbf740 src:manual/05-elektronika.md:19 klas:E -->
+<!-- fc id:T-05-009 sha:a5cbf740 src:manual/05-elektronika.md:19 status:no-external-signal -->
 ### T-05-009 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -211,7 +211,7 @@
 
 ---
 
-<!-- fc id:T-05-010 sha:a644787a src:manual/05-elektronika.md:21 klas:A -->
+<!-- fc id:T-05-010 sha:a644787a src:manual/05-elektronika.md:21 status:verbatim -->
 ### T-05-010 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -239,7 +239,7 @@
 
 ---
 
-<!-- fc id:T-05-011 sha:644c4a63 src:manual/05-elektronika.md:21 klas:E -->
+<!-- fc id:T-05-011 sha:644c4a63 src:manual/05-elektronika.md:21 status:no-external-signal -->
 ### T-05-011 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -260,7 +260,7 @@
 
 ---
 
-<!-- fc id:T-05-012 sha:052e9a31 src:manual/05-elektronika.md:23 klas:A -->
+<!-- fc id:T-05-012 sha:052e9a31 src:manual/05-elektronika.md:23 status:verbatim -->
 ### T-05-012 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -289,7 +289,7 @@
 
 ---
 
-<!-- fc id:T-05-013 sha:a0e7adb2 src:manual/05-elektronika.md:28 klas:E -->
+<!-- fc id:T-05-013 sha:a0e7adb2 src:manual/05-elektronika.md:28 status:no-external-signal -->
 ### T-05-013 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -317,7 +317,7 @@
 
 ---
 
-<!-- fc id:T-05-014 sha:ecd3c4f7 src:manual/05-elektronika.md:29 klas:E -->
+<!-- fc id:T-05-014 sha:ecd3c4f7 src:manual/05-elektronika.md:29 status:no-external-signal -->
 ### T-05-014 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -345,7 +345,7 @@
 
 ---
 
-<!-- fc id:T-05-015 sha:40305cbb src:manual/05-elektronika.md:30 klas:E -->
+<!-- fc id:T-05-015 sha:40305cbb src:manual/05-elektronika.md:30 status:no-external-signal -->
 ### T-05-015 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -373,7 +373,7 @@
 
 ---
 
-<!-- fc id:T-05-016 sha:f0d107b2 src:manual/05-elektronika.md:31 klas:F -->
+<!-- fc id:T-05-016 sha:f0d107b2 src:manual/05-elektronika.md:31 status:unchecked -->
 ### T-05-016 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -401,7 +401,7 @@
 
 ---
 
-<!-- fc id:T-05-017 sha:c41ff4fb src:manual/05-elektronika.md:38 klas:A -->
+<!-- fc id:T-05-017 sha:c41ff4fb src:manual/05-elektronika.md:38 status:verbatim -->
 ### T-05-017 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -429,7 +429,7 @@
 
 ---
 
-<!-- fc id:T-05-018 sha:b94bd80a src:manual/05-elektronika.md:41 klas:D -->
+<!-- fc id:T-05-018 sha:b94bd80a src:manual/05-elektronika.md:41 status:arithmetic -->
 ### T-05-018 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -460,7 +460,7 @@
 
 ---
 
-<!-- fc id:T-05-019 sha:34513b3a src:manual/05-elektronika.md:43 klas:A -->
+<!-- fc id:T-05-019 sha:34513b3a src:manual/05-elektronika.md:43 status:verbatim -->
 ### T-05-019 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -488,7 +488,7 @@
 
 ---
 
-<!-- fc id:T-05-020 sha:de523932 src:manual/05-elektronika.md:46 klas:D -->
+<!-- fc id:T-05-020 sha:de523932 src:manual/05-elektronika.md:46 status:arithmetic -->
 ### T-05-020 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -519,7 +519,7 @@
 
 ---
 
-<!-- fc id:T-05-021 sha:257a787b src:manual/05-elektronika.md:48 klas:D -->
+<!-- fc id:T-05-021 sha:257a787b src:manual/05-elektronika.md:48 status:arithmetic -->
 ### T-05-021 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -554,7 +554,7 @@
 
 ---
 
-<!-- fc id:T-05-022 sha:018ca4be src:manual/05-elektronika.md:48 klas:B -->
+<!-- fc id:T-05-022 sha:018ca4be src:manual/05-elektronika.md:48 status:derived -->
 ### T-05-022 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -583,7 +583,7 @@
 
 ---
 
-<!-- fc id:T-05-023 sha:33f124b4 src:manual/05-elektronika.md:53 klas:F -->
+<!-- fc id:T-05-023 sha:33f124b4 src:manual/05-elektronika.md:53 status:unchecked -->
 ### T-05-023 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -606,7 +606,7 @@
 
 ---
 
-<!-- fc id:T-05-024 sha:361cfd8e src:manual/05-elektronika.md:56 klas:C -->
+<!-- fc id:T-05-024 sha:361cfd8e src:manual/05-elektronika.md:56 status:named-unreachable -->
 ### T-05-024 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -633,7 +633,7 @@
 
 ---
 
-<!-- fc id:T-05-025 sha:452da652 src:manual/05-elektronika.md:57 klas:A -->
+<!-- fc id:T-05-025 sha:452da652 src:manual/05-elektronika.md:57 status:verbatim -->
 ### T-05-025 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -669,7 +669,7 @@
 
 ---
 
-<!-- fc id:T-05-026 sha:ffc69184 src:manual/05-elektronika.md:60 klas:A -->
+<!-- fc id:T-05-026 sha:ffc69184 src:manual/05-elektronika.md:60 status:verbatim -->
 ### T-05-026 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -697,7 +697,7 @@
 
 ---
 
-<!-- fc id:T-05-027 sha:2dd9572e src:manual/05-elektronika.md:61 klas:E -->
+<!-- fc id:T-05-027 sha:2dd9572e src:manual/05-elektronika.md:61 status:no-external-signal -->
 ### T-05-027 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -719,7 +719,7 @@
 
 ---
 
-<!-- fc id:T-05-028 sha:ddd54b18 src:manual/05-elektronika.md:63 klas:C -->
+<!-- fc id:T-05-028 sha:ddd54b18 src:manual/05-elektronika.md:63 status:named-unreachable -->
 ### T-05-028 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -747,7 +747,7 @@
 
 ---
 
-<!-- fc id:T-05-029 sha:2eaddc89 src:manual/05-elektronika.md:64 klas:E -->
+<!-- fc id:T-05-029 sha:2eaddc89 src:manual/05-elektronika.md:64 status:no-external-signal -->
 ### T-05-029 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -771,7 +771,7 @@
 
 ---
 
-<!-- fc id:T-05-030 sha:bef9bb24 src:manual/05-elektronika.md:68 klas:A -->
+<!-- fc id:T-05-030 sha:bef9bb24 src:manual/05-elektronika.md:68 status:verbatim -->
 ### T-05-030 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -802,7 +802,7 @@
 
 ---
 
-<!-- fc id:T-05-031 sha:a86da823 src:manual/05-elektronika.md:69 klas:E -->
+<!-- fc id:T-05-031 sha:a86da823 src:manual/05-elektronika.md:69 status:no-external-signal -->
 ### T-05-031 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -826,7 +826,7 @@
 
 ---
 
-<!-- fc id:T-05-032 sha:c26d39ce src:manual/05-elektronika.md:73 klas:C -->
+<!-- fc id:T-05-032 sha:c26d39ce src:manual/05-elektronika.md:73 status:named-unreachable -->
 ### T-05-032 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -851,7 +851,7 @@
 
 ---
 
-<!-- fc id:T-05-033 sha:cde273d8 src:manual/05-elektronika.md:75 klas:E -->
+<!-- fc id:T-05-033 sha:cde273d8 src:manual/05-elektronika.md:75 status:no-external-signal -->
 ### T-05-033 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -875,7 +875,7 @@
 
 ---
 
-<!-- fc id:T-05-034 sha:2a63787f src:manual/05-elektronika.md:76 klas:B -->
+<!-- fc id:T-05-034 sha:2a63787f src:manual/05-elektronika.md:76 status:derived -->
 ### T-05-034 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -910,7 +910,7 @@
 
 ---
 
-<!-- fc id:T-05-035 sha:19691a6f src:manual/05-elektronika.md:80 klas:C -->
+<!-- fc id:T-05-035 sha:19691a6f src:manual/05-elektronika.md:80 status:named-unreachable -->
 ### T-05-035 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -940,7 +940,7 @@
 
 ---
 
-<!-- fc id:T-05-036 sha:22205c3c src:manual/05-elektronika.md:81 klas:A -->
+<!-- fc id:T-05-036 sha:22205c3c src:manual/05-elektronika.md:81 status:verbatim -->
 ### T-05-036 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -979,7 +979,7 @@
 
 ---
 
-<!-- fc id:T-05-037 sha:e7083242 src:manual/05-elektronika.md:83 klas:E -->
+<!-- fc id:T-05-037 sha:e7083242 src:manual/05-elektronika.md:83 status:no-external-signal -->
 ### T-05-037 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1005,7 +1005,7 @@
 
 ---
 
-<!-- fc id:T-05-038 sha:600d0676 src:manual/05-elektronika.md:89 klas:E -->
+<!-- fc id:T-05-038 sha:600d0676 src:manual/05-elektronika.md:89 status:no-external-signal -->
 ### T-05-038 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1027,7 +1027,7 @@
 
 ---
 
-<!-- fc id:T-05-039 sha:3726caa2 src:manual/05-elektronika.md:89 klas:B -->
+<!-- fc id:T-05-039 sha:3726caa2 src:manual/05-elektronika.md:89 status:derived -->
 ### T-05-039 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1058,7 +1058,7 @@
 
 ---
 
-<!-- fc id:T-05-040 sha:5c433fdf src:manual/05-elektronika.md:92 klas:E -->
+<!-- fc id:T-05-040 sha:5c433fdf src:manual/05-elektronika.md:92 status:no-external-signal -->
 ### T-05-040 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1086,7 +1086,7 @@
 
 ---
 
-<!-- fc id:T-05-041 sha:dabef299 src:manual/05-elektronika.md:93 klas:E -->
+<!-- fc id:T-05-041 sha:dabef299 src:manual/05-elektronika.md:93 status:no-external-signal -->
 ### T-05-041 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1108,7 +1108,7 @@
 
 ---
 
-<!-- fc id:T-05-042 sha:b6ac8fef src:manual/05-elektronika.md:96 klas:A -->
+<!-- fc id:T-05-042 sha:b6ac8fef src:manual/05-elektronika.md:96 status:verbatim -->
 ### T-05-042 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1140,7 +1140,7 @@
 
 ---
 
-<!-- fc id:T-05-043 sha:4c86f187 src:manual/05-elektronika.md:100 klas:A -->
+<!-- fc id:T-05-043 sha:4c86f187 src:manual/05-elektronika.md:100 status:verbatim -->
 ### T-05-043 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1169,7 +1169,7 @@
 
 ---
 
-<!-- fc id:T-05-044 sha:de6df285 src:manual/05-elektronika.md:101 klas:F -->
+<!-- fc id:T-05-044 sha:de6df285 src:manual/05-elektronika.md:101 status:unchecked -->
 ### T-05-044 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1191,7 +1191,7 @@
 
 ---
 
-<!-- fc id:T-05-045 sha:abe1dabd src:manual/05-elektronika.md:103 klas:A -->
+<!-- fc id:T-05-045 sha:abe1dabd src:manual/05-elektronika.md:103 status:verbatim -->
 ### T-05-045 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1222,7 +1222,7 @@ HC-SR04 (вихід `ECHO`), релейні модулі, дисплеї «дл�
 
 ---
 
-<!-- fc id:T-05-046 sha:f2f03438 src:manual/05-elektronika.md:108 klas:E -->
+<!-- fc id:T-05-046 sha:f2f03438 src:manual/05-elektronika.md:108 status:no-external-signal -->
 ### T-05-046 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1243,7 +1243,7 @@ HC-SR04 (вихід `ECHO`), релейні модулі, дисплеї «дл�
 
 ---
 
-<!-- fc id:T-05-047 sha:b7c44cd2 src:manual/05-elektronika.md:110 klas:F -->
+<!-- fc id:T-05-047 sha:b7c44cd2 src:manual/05-elektronika.md:110 status:unchecked -->
 ### T-05-047 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1266,7 +1266,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-048 sha:ae5a164b src:manual/05-elektronika.md:111 klas:E -->
+<!-- fc id:T-05-048 sha:ae5a164b src:manual/05-elektronika.md:111 status:no-external-signal -->
 ### T-05-048 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1289,7 +1289,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-049 sha:8ec562e5 src:manual/05-elektronika.md:114 klas:B -->
+<!-- fc id:T-05-049 sha:8ec562e5 src:manual/05-elektronika.md:114 status:derived -->
 ### T-05-049 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1320,7 +1320,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-050 sha:e243525c src:manual/05-elektronika.md:116 klas:E -->
+<!-- fc id:T-05-050 sha:e243525c src:manual/05-elektronika.md:116 status:no-external-signal -->
 ### T-05-050 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1355,7 +1355,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-051 sha:62990d8f src:manual/05-elektronika.md:116 klas:E -->
+<!-- fc id:T-05-051 sha:62990d8f src:manual/05-elektronika.md:116 status:no-external-signal -->
 ### T-05-051 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1377,7 +1377,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-052 sha:ca858704 src:manual/05-elektronika.md:119 klas:K -->
+<!-- fc id:T-05-052 sha:ca858704 src:manual/05-elektronika.md:119 status:code-context -->
 ### T-05-052 · kod · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1436,7 +1436,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-053 sha:e39377e1 src:manual/05-elektronika.md:120 klas:E -->
+<!-- fc id:T-05-053 sha:e39377e1 src:manual/05-elektronika.md:120 status:no-external-signal -->
 ### T-05-053 · schema-zvyazok · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1474,7 +1474,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-054 sha:e6f1a6a7 src:manual/05-elektronika.md:121 klas:F -->
+<!-- fc id:T-05-054 sha:e6f1a6a7 src:manual/05-elektronika.md:121 status:unchecked -->
 ### T-05-054 · schema-zvyazok · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1499,7 +1499,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-055 sha:41b0d402 src:manual/05-elektronika.md:125 klas:E -->
+<!-- fc id:T-05-055 sha:41b0d402 src:manual/05-elektronika.md:125 status:no-external-signal -->
 ### T-05-055 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1522,7 +1522,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-056 sha:2266e7f9 src:manual/05-elektronika.md:125 klas:B -->
+<!-- fc id:T-05-056 sha:2266e7f9 src:manual/05-elektronika.md:125 status:derived -->
 ### T-05-056 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1557,7 +1557,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-057 sha:b6bfee7e src:manual/05-elektronika.md:129 klas:E -->
+<!-- fc id:T-05-057 sha:b6bfee7e src:manual/05-elektronika.md:129 status:no-external-signal -->
 ### T-05-057 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1580,7 +1580,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-058 sha:780a6082 src:manual/05-elektronika.md:130 klas:B -->
+<!-- fc id:T-05-058 sha:780a6082 src:manual/05-elektronika.md:130 status:derived -->
 ### T-05-058 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1615,7 +1615,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-059 sha:d4a65291 src:manual/05-elektronika.md:130 klas:E -->
+<!-- fc id:T-05-059 sha:d4a65291 src:manual/05-elektronika.md:130 status:no-external-signal -->
 ### T-05-059 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1638,7 +1638,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-060 sha:dda82b52 src:manual/05-elektronika.md:135 klas:E -->
+<!-- fc id:T-05-060 sha:dda82b52 src:manual/05-elektronika.md:135 status:no-external-signal -->
 ### T-05-060 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1660,7 +1660,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-061 sha:df0ff32f src:manual/05-elektronika.md:135 klas:E -->
+<!-- fc id:T-05-061 sha:df0ff32f src:manual/05-elektronika.md:135 status:no-external-signal -->
 ### T-05-061 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1682,7 +1682,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-062 sha:4c6586d6 src:manual/05-elektronika.md:138 klas:E -->
+<!-- fc id:T-05-062 sha:4c6586d6 src:manual/05-elektronika.md:138 status:no-external-signal -->
 ### T-05-062 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1704,7 +1704,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-063 sha:6b039db6 src:manual/05-elektronika.md:139 klas:E -->
+<!-- fc id:T-05-063 sha:6b039db6 src:manual/05-elektronika.md:139 status:no-external-signal -->
 ### T-05-063 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1739,7 +1739,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-064 sha:d792c547 src:manual/05-elektronika.md:141 klas:A -->
+<!-- fc id:T-05-064 sha:d792c547 src:manual/05-elektronika.md:141 status:verbatim -->
 ### T-05-064 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1767,7 +1767,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-065 sha:0cef94d9 src:manual/05-elektronika.md:141 klas:E -->
+<!-- fc id:T-05-065 sha:0cef94d9 src:manual/05-elektronika.md:141 status:no-external-signal -->
 ### T-05-065 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1789,7 +1789,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-066 sha:c543e99e src:manual/05-elektronika.md:144 klas:A -->
+<!-- fc id:T-05-066 sha:c543e99e src:manual/05-elektronika.md:144 status:verbatim -->
 ### T-05-066 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1816,7 +1816,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-067 sha:ba14e7d6 src:manual/05-elektronika.md:146 klas:A -->
+<!-- fc id:T-05-067 sha:ba14e7d6 src:manual/05-elektronika.md:146 status:verbatim -->
 ### T-05-067 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1844,7 +1844,7 @@ datasheet модуля.
 
 ---
 
-<!-- fc id:T-05-068 sha:8482f192 src:manual/05-elektronika.md:149 klas:K -->
+<!-- fc id:T-05-068 sha:8482f192 src:manual/05-elektronika.md:149 status:code-context -->
 ### T-05-068 · kod · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1896,7 +1896,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-069 sha:3e07cd84 src:manual/05-elektronika.md:151 klas:A -->
+<!-- fc id:T-05-069 sha:3e07cd84 src:manual/05-elektronika.md:151 status:verbatim -->
 ### T-05-069 · kod-ryadok · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1948,7 +1948,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-070 sha:99e0f537 src:manual/05-elektronika.md:152 klas:A -->
+<!-- fc id:T-05-070 sha:99e0f537 src:manual/05-elektronika.md:152 status:verbatim -->
 ### T-05-070 · kod-ryadok · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -1989,7 +1989,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-071 sha:5502b7f2 src:manual/05-elektronika.md:153 klas:A -->
+<!-- fc id:T-05-071 sha:5502b7f2 src:manual/05-elektronika.md:153 status:verbatim -->
 ### T-05-071 · kod-ryadok · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2034,7 +2034,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-072 sha:514324cb src:manual/05-elektronika.md:155 klas:A -->
+<!-- fc id:T-05-072 sha:514324cb src:manual/05-elektronika.md:155 status:verbatim -->
 ### T-05-072 · kod-ryadok · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2075,7 +2075,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-073 sha:fe59eb63 src:manual/05-elektronika.md:159 klas:A -->
+<!-- fc id:T-05-073 sha:fe59eb63 src:manual/05-elektronika.md:159 status:verbatim -->
 ### T-05-073 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2106,7 +2106,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-074 sha:1ef21188 src:manual/05-elektronika.md:159 klas:A -->
+<!-- fc id:T-05-074 sha:1ef21188 src:manual/05-elektronika.md:159 status:verbatim -->
 ### T-05-074 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2137,7 +2137,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-075 sha:370be364 src:manual/05-elektronika.md:160 klas:A -->
+<!-- fc id:T-05-075 sha:370be364 src:manual/05-elektronika.md:160 status:verbatim -->
 ### T-05-075 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2182,7 +2182,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-076 sha:3d8dcc90 src:manual/05-elektronika.md:164 klas:B -->
+<!-- fc id:T-05-076 sha:3d8dcc90 src:manual/05-elektronika.md:164 status:derived -->
 ### T-05-076 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2219,7 +2219,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-077 sha:5362dd9e src:manual/05-elektronika.md:170 klas:A -->
+<!-- fc id:T-05-077 sha:5362dd9e src:manual/05-elektronika.md:170 status:verbatim -->
 ### T-05-077 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2247,7 +2247,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-078 sha:be2e01ed src:manual/05-elektronika.md:170 klas:C -->
+<!-- fc id:T-05-078 sha:be2e01ed src:manual/05-elektronika.md:170 status:named-unreachable -->
 ### T-05-078 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2274,7 +2274,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-079 sha:15ecaa84 src:manual/05-elektronika.md:173 klas:A -->
+<!-- fc id:T-05-079 sha:15ecaa84 src:manual/05-elektronika.md:173 status:verbatim -->
 ### T-05-079 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2304,7 +2304,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-080 sha:8339aba6 src:manual/05-elektronika.md:174 klas:E -->
+<!-- fc id:T-05-080 sha:8339aba6 src:manual/05-elektronika.md:174 status:no-external-signal -->
 ### T-05-080 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2341,7 +2341,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-081 sha:aba70f21 src:manual/05-elektronika.md:174 klas:E -->
+<!-- fc id:T-05-081 sha:aba70f21 src:manual/05-elektronika.md:174 status:no-external-signal -->
 ### T-05-081 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2365,7 +2365,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-082 sha:830a0da0 src:manual/05-elektronika.md:178 klas:B -->
+<!-- fc id:T-05-082 sha:830a0da0 src:manual/05-elektronika.md:178 status:derived -->
 ### T-05-082 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2399,7 +2399,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-083 sha:2f224adc src:manual/05-elektronika.md:178 klas:E -->
+<!-- fc id:T-05-083 sha:2f224adc src:manual/05-elektronika.md:178 status:no-external-signal -->
 ### T-05-083 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2421,7 +2421,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-084 sha:a480195a src:manual/05-elektronika.md:183 klas:E -->
+<!-- fc id:T-05-084 sha:a480195a src:manual/05-elektronika.md:183 status:no-external-signal -->
 ### T-05-084 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2449,7 +2449,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-085 sha:40f9d078 src:manual/05-elektronika.md:186 klas:E -->
+<!-- fc id:T-05-085 sha:40f9d078 src:manual/05-elektronika.md:186 status:no-external-signal -->
 ### T-05-085 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2471,7 +2471,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-086 sha:a4e3ab64 src:manual/05-elektronika.md:187 klas:E -->
+<!-- fc id:T-05-086 sha:a4e3ab64 src:manual/05-elektronika.md:187 status:no-external-signal -->
 ### T-05-086 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2493,7 +2493,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-087 sha:67018324 src:manual/05-elektronika.md:189 klas:E -->
+<!-- fc id:T-05-087 sha:67018324 src:manual/05-elektronika.md:189 status:no-external-signal -->
 ### T-05-087 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2515,7 +2515,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-088 sha:5c6d3703 src:manual/05-elektronika.md:194 klas:E -->
+<!-- fc id:T-05-088 sha:5c6d3703 src:manual/05-elektronika.md:194 status:no-external-signal -->
 ### T-05-088 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2537,7 +2537,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-089 sha:a4b3f884 src:manual/05-elektronika.md:194 klas:A -->
+<!-- fc id:T-05-089 sha:a4b3f884 src:manual/05-elektronika.md:194 status:verbatim -->
 ### T-05-089 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2565,7 +2565,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-090 sha:56fbaaf2 src:manual/05-elektronika.md:197 klas:F -->
+<!-- fc id:T-05-090 sha:56fbaaf2 src:manual/05-elektronika.md:197 status:unchecked -->
 ### T-05-090 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2588,7 +2588,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-091 sha:1a25efc1 src:manual/05-elektronika.md:197 klas:E -->
+<!-- fc id:T-05-091 sha:1a25efc1 src:manual/05-elektronika.md:197 status:no-external-signal -->
 ### T-05-091 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2622,7 +2622,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-092 sha:fc6fd2c0 src:manual/05-elektronika.md:201 klas:E -->
+<!-- fc id:T-05-092 sha:fc6fd2c0 src:manual/05-elektronika.md:201 status:no-external-signal -->
 ### T-05-092 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2643,7 +2643,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-093 sha:34ae5541 src:manual/05-elektronika.md:203 klas:B -->
+<!-- fc id:T-05-093 sha:34ae5541 src:manual/05-elektronika.md:203 status:derived -->
 ### T-05-093 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2675,7 +2675,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-094 sha:436783c6 src:manual/05-elektronika.md:204 klas:E -->
+<!-- fc id:T-05-094 sha:436783c6 src:manual/05-elektronika.md:204 status:no-external-signal -->
 ### T-05-094 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2697,7 +2697,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-095 sha:2d46818c src:manual/05-elektronika.md:204 klas:E -->
+<!-- fc id:T-05-095 sha:2d46818c src:manual/05-elektronika.md:204 status:no-external-signal -->
 ### T-05-095 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2719,7 +2719,7 @@ gpio_config(&cfg);
 
 ---
 
-<!-- fc id:T-05-096 sha:a7fa58fc src:manual/05-elektronika.md:206 klas:A -->
+<!-- fc id:T-05-096 sha:a7fa58fc src:manual/05-elektronika.md:206 status:verbatim -->
 ### T-05-096 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2749,7 +2749,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-097 sha:73ed1b63 src:manual/05-elektronika.md:207 klas:F -->
+<!-- fc id:T-05-097 sha:73ed1b63 src:manual/05-elektronika.md:207 status:unchecked -->
 ### T-05-097 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2772,7 +2772,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-098 sha:fb830b62 src:manual/05-elektronika.md:211 klas:E -->
+<!-- fc id:T-05-098 sha:fb830b62 src:manual/05-elektronika.md:211 status:no-external-signal -->
 ### T-05-098 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2802,7 +2802,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-099 sha:a677e285 src:manual/05-elektronika.md:212 klas:E -->
+<!-- fc id:T-05-099 sha:a677e285 src:manual/05-elektronika.md:212 status:no-external-signal -->
 ### T-05-099 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2826,7 +2826,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-100 sha:acde736a src:manual/05-elektronika.md:215 klas:E -->
+<!-- fc id:T-05-100 sha:acde736a src:manual/05-elektronika.md:215 status:no-external-signal -->
 ### T-05-100 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2849,7 +2849,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-101 sha:ccc0d4af src:manual/05-elektronika.md:216 klas:E -->
+<!-- fc id:T-05-101 sha:ccc0d4af src:manual/05-elektronika.md:216 status:no-external-signal -->
 ### T-05-101 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2872,7 +2872,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-102 sha:d73987ab src:manual/05-elektronika.md:221 klas:E -->
+<!-- fc id:T-05-102 sha:d73987ab src:manual/05-elektronika.md:221 status:no-external-signal -->
 ### T-05-102 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2894,7 +2894,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-103 sha:b6b8b69c src:manual/05-elektronika.md:224 klas:B -->
+<!-- fc id:T-05-103 sha:b6b8b69c src:manual/05-elektronika.md:224 status:derived -->
 ### T-05-103 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2929,7 +2929,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-104 sha:0cbeb0fe src:manual/05-elektronika.md:224 klas:A -->
+<!-- fc id:T-05-104 sha:0cbeb0fe src:manual/05-elektronika.md:224 status:verbatim -->
 ### T-05-104 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2963,7 +2963,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-105 sha:2757c236 src:manual/05-elektronika.md:226 klas:B -->
+<!-- fc id:T-05-105 sha:2757c236 src:manual/05-elektronika.md:226 status:derived -->
 ### T-05-105 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -2995,7 +2995,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-106 sha:47ac8ffc src:manual/05-elektronika.md:228 klas:E -->
+<!-- fc id:T-05-106 sha:47ac8ffc src:manual/05-elektronika.md:228 status:no-external-signal -->
 ### T-05-106 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3038,7 +3038,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-107 sha:d07e0231 src:manual/05-elektronika.md:233 klas:E -->
+<!-- fc id:T-05-107 sha:d07e0231 src:manual/05-elektronika.md:233 status:no-external-signal -->
 ### T-05-107 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3077,7 +3077,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-108 sha:3ee0cbd0 src:manual/05-elektronika.md:233 klas:E -->
+<!-- fc id:T-05-108 sha:3ee0cbd0 src:manual/05-elektronika.md:233 status:no-external-signal -->
 ### T-05-108 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3116,7 +3116,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-109 sha:42f989f6 src:manual/05-elektronika.md:235 klas:E -->
+<!-- fc id:T-05-109 sha:42f989f6 src:manual/05-elektronika.md:235 status:no-external-signal -->
 ### T-05-109 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3142,7 +3142,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-110 sha:b8655fbc src:manual/05-elektronika.md:241 klas:E -->
+<!-- fc id:T-05-110 sha:b8655fbc src:manual/05-elektronika.md:241 status:no-external-signal -->
 ### T-05-110 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3165,7 +3165,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-111 sha:4e34e88d src:manual/05-elektronika.md:241 klas:E -->
+<!-- fc id:T-05-111 sha:4e34e88d src:manual/05-elektronika.md:241 status:no-external-signal -->
 ### T-05-111 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3188,7 +3188,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-112 sha:fbdaade8 src:manual/05-elektronika.md:245 klas:E -->
+<!-- fc id:T-05-112 sha:fbdaade8 src:manual/05-elektronika.md:245 status:no-external-signal -->
 ### T-05-112 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3211,7 +3211,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-113 sha:42dcedb0 src:manual/05-elektronika.md:246 klas:E -->
+<!-- fc id:T-05-113 sha:42dcedb0 src:manual/05-elektronika.md:246 status:no-external-signal -->
 ### T-05-113 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3234,7 +3234,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-114 sha:c3ba8594 src:manual/05-elektronika.md:249 klas:E -->
+<!-- fc id:T-05-114 sha:c3ba8594 src:manual/05-elektronika.md:249 status:no-external-signal -->
 ### T-05-114 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3256,7 +3256,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-115 sha:c5c81172 src:manual/05-elektronika.md:249 klas:E -->
+<!-- fc id:T-05-115 sha:c5c81172 src:manual/05-elektronika.md:249 status:no-external-signal -->
 ### T-05-115 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3278,7 +3278,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-116 sha:7a5c08e4 src:manual/05-elektronika.md:254 klas:C -->
+<!-- fc id:T-05-116 sha:7a5c08e4 src:manual/05-elektronika.md:254 status:named-unreachable -->
 ### T-05-116 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3306,7 +3306,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-117 sha:9c97bb50 src:manual/05-elektronika.md:254 klas:E -->
+<!-- fc id:T-05-117 sha:9c97bb50 src:manual/05-elektronika.md:254 status:no-external-signal -->
 ### T-05-117 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3329,7 +3329,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-118 sha:f6207072 src:manual/05-elektronika.md:255 klas:E -->
+<!-- fc id:T-05-118 sha:f6207072 src:manual/05-elektronika.md:255 status:no-external-signal -->
 ### T-05-118 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3352,7 +3352,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-119 sha:53542b57 src:manual/05-elektronika.md:258 klas:E -->
+<!-- fc id:T-05-119 sha:53542b57 src:manual/05-elektronika.md:258 status:no-external-signal -->
 ### T-05-119 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3373,7 +3373,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-120 sha:a362c1f7 src:manual/05-elektronika.md:260 klas:E -->
+<!-- fc id:T-05-120 sha:a362c1f7 src:manual/05-elektronika.md:260 status:no-external-signal -->
 ### T-05-120 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3406,7 +3406,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-121 sha:e81c189b src:manual/05-elektronika.md:261 klas:E -->
+<!-- fc id:T-05-121 sha:e81c189b src:manual/05-elektronika.md:261 status:no-external-signal -->
 ### T-05-121 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3433,7 +3433,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-122 sha:60bae402 src:manual/05-elektronika.md:263 klas:E -->
+<!-- fc id:T-05-122 sha:60bae402 src:manual/05-elektronika.md:263 status:no-external-signal -->
 ### T-05-122 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3460,7 +3460,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-123 sha:3b669158 src:manual/05-elektronika.md:265 klas:E -->
+<!-- fc id:T-05-123 sha:3b669158 src:manual/05-elektronika.md:265 status:no-external-signal -->
 ### T-05-123 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3487,7 +3487,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-124 sha:6d2f0ac4 src:manual/05-elektronika.md:266 klas:E -->
+<!-- fc id:T-05-124 sha:6d2f0ac4 src:manual/05-elektronika.md:266 status:no-external-signal -->
 ### T-05-124 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3514,7 +3514,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-125 sha:3de3220d src:manual/05-elektronika.md:268 klas:E -->
+<!-- fc id:T-05-125 sha:3de3220d src:manual/05-elektronika.md:268 status:no-external-signal -->
 ### T-05-125 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3538,7 +3538,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-126 sha:537ef1a7 src:manual/05-elektronika.md:273 klas:E -->
+<!-- fc id:T-05-126 sha:537ef1a7 src:manual/05-elektronika.md:273 status:no-external-signal -->
 ### T-05-126 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3559,7 +3559,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-127 sha:ac05920e src:manual/05-elektronika.md:277 klas:E -->
+<!-- fc id:T-05-127 sha:ac05920e src:manual/05-elektronika.md:277 status:no-external-signal -->
 ### T-05-127 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3580,7 +3580,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-128 sha:755235d8 src:manual/05-elektronika.md:279 klas:A -->
+<!-- fc id:T-05-128 sha:755235d8 src:manual/05-elektronika.md:279 status:verbatim -->
 ### T-05-128 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3611,7 +3611,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-129 sha:6eb95c8a src:manual/05-elektronika.md:281 klas:E -->
+<!-- fc id:T-05-129 sha:6eb95c8a src:manual/05-elektronika.md:281 status:no-external-signal -->
 ### T-05-129 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3633,7 +3633,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-130 sha:f5fb3f84 src:manual/05-elektronika.md:281 klas:A -->
+<!-- fc id:T-05-130 sha:f5fb3f84 src:manual/05-elektronika.md:281 status:verbatim -->
 ### T-05-130 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3661,7 +3661,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-131 sha:df681bc3 src:manual/05-elektronika.md:284 klas:E -->
+<!-- fc id:T-05-131 sha:df681bc3 src:manual/05-elektronika.md:284 status:no-external-signal -->
 ### T-05-131 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3689,7 +3689,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-132 sha:81d57c04 src:manual/05-elektronika.md:287 klas:E -->
+<!-- fc id:T-05-132 sha:81d57c04 src:manual/05-elektronika.md:287 status:no-external-signal -->
 ### T-05-132 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**
@@ -3711,7 +3711,7 @@ brownout при вмиканні радіо.
 
 ---
 
-<!-- fc id:T-05-133 sha:494efa74 src:manual/05-elektronika.md:287 klas:E -->
+<!-- fc id:T-05-133 sha:494efa74 src:manual/05-elektronika.md:287 status:no-external-signal -->
 ### T-05-133 · proza · `manual/05-elektronika.md`
 
 **Твердження, коротко**

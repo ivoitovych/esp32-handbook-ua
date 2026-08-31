@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k05-proshyvka.md`
 
-Одиниць твердження: **39**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **39**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-K05-001 sha:91a0e481 src:kartky/k05-proshyvka.md:3 klas:E -->
+<!-- fc id:T-K05-001 sha:91a0e481 src:kartky/k05-proshyvka.md:3 status:no-external-signal -->
 ### T-K05-001 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -29,7 +29,7 @@
 
 ---
 
-<!-- fc id:T-K05-002 sha:2e1573f8 src:kartky/k05-proshyvka.md:7 klas:F -->
+<!-- fc id:T-K05-002 sha:2e1573f8 src:kartky/k05-proshyvka.md:7 status:unchecked -->
 ### T-K05-002 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -50,7 +50,7 @@
 
 ---
 
-<!-- fc id:T-K05-003 sha:ad965e81 src:kartky/k05-proshyvka.md:9 klas:F -->
+<!-- fc id:T-K05-003 sha:ad965e81 src:kartky/k05-proshyvka.md:9 status:unchecked -->
 ### T-K05-003 · tablycya-shapka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -77,7 +77,7 @@
 
 ---
 
-<!-- fc id:T-K05-004 sha:bb0f770d src:kartky/k05-proshyvka.md:11 klas:F -->
+<!-- fc id:T-K05-004 sha:bb0f770d src:kartky/k05-proshyvka.md:11 status:unchecked -->
 ### T-K05-004 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-K05-005 sha:e3c8ae66 src:kartky/k05-proshyvka.md:11 klas:A -->
+<!-- fc id:T-K05-005 sha:e3c8ae66 src:kartky/k05-proshyvka.md:11 status:verbatim -->
 ### T-K05-005 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -163,7 +163,7 @@
 
 ---
 
-<!-- fc id:T-K05-006 sha:cad2ff61 src:kartky/k05-proshyvka.md:11 klas:A -->
+<!-- fc id:T-K05-006 sha:cad2ff61 src:kartky/k05-proshyvka.md:11 status:verbatim -->
 ### T-K05-006 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -205,7 +205,7 @@
 
 ---
 
-<!-- fc id:T-K05-007 sha:13356a21 src:kartky/k05-proshyvka.md:11 klas:A -->
+<!-- fc id:T-K05-007 sha:13356a21 src:kartky/k05-proshyvka.md:11 status:verbatim -->
 ### T-K05-007 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -258,7 +258,7 @@
 
 ---
 
-<!-- fc id:T-K05-008 sha:01aad120 src:kartky/k05-proshyvka.md:12 klas:A -->
+<!-- fc id:T-K05-008 sha:01aad120 src:kartky/k05-proshyvka.md:12 status:verbatim -->
 ### T-K05-008 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -297,7 +297,7 @@
 
 ---
 
-<!-- fc id:T-K05-009 sha:d4684bb6 src:kartky/k05-proshyvka.md:12 klas:A -->
+<!-- fc id:T-K05-009 sha:d4684bb6 src:kartky/k05-proshyvka.md:12 status:verbatim -->
 ### T-K05-009 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -336,7 +336,7 @@
 
 ---
 
-<!-- fc id:T-K05-010 sha:723732a3 src:kartky/k05-proshyvka.md:12 klas:A -->
+<!-- fc id:T-K05-010 sha:723732a3 src:kartky/k05-proshyvka.md:12 status:verbatim -->
 ### T-K05-010 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -375,7 +375,7 @@
 
 ---
 
-<!-- fc id:T-K05-011 sha:1ec0b452 src:kartky/k05-proshyvka.md:12 klas:A -->
+<!-- fc id:T-K05-011 sha:1ec0b452 src:kartky/k05-proshyvka.md:12 status:verbatim -->
 ### T-K05-011 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -414,7 +414,7 @@
 
 ---
 
-<!-- fc id:T-K05-012 sha:83295d52 src:kartky/k05-proshyvka.md:13 klas:F -->
+<!-- fc id:T-K05-012 sha:83295d52 src:kartky/k05-proshyvka.md:13 status:unchecked -->
 ### T-K05-012 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -447,7 +447,7 @@
 
 ---
 
-<!-- fc id:T-K05-013 sha:fb9cf9cd src:kartky/k05-proshyvka.md:13 klas:A -->
+<!-- fc id:T-K05-013 sha:fb9cf9cd src:kartky/k05-proshyvka.md:13 status:verbatim -->
 ### T-K05-013 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -500,7 +500,7 @@
 
 ---
 
-<!-- fc id:T-K05-014 sha:630093e6 src:kartky/k05-proshyvka.md:13 klas:A -->
+<!-- fc id:T-K05-014 sha:630093e6 src:kartky/k05-proshyvka.md:13 status:verbatim -->
 ### T-K05-014 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -553,7 +553,7 @@
 
 ---
 
-<!-- fc id:T-K05-015 sha:c2ba364d src:kartky/k05-proshyvka.md:13 klas:A -->
+<!-- fc id:T-K05-015 sha:c2ba364d src:kartky/k05-proshyvka.md:13 status:verbatim -->
 ### T-K05-015 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -606,7 +606,7 @@
 
 ---
 
-<!-- fc id:T-K05-016 sha:efc6c6df src:kartky/k05-proshyvka.md:16 klas:E -->
+<!-- fc id:T-K05-016 sha:efc6c6df src:kartky/k05-proshyvka.md:16 status:no-external-signal -->
 ### T-K05-016 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -632,7 +632,7 @@ S3 на `0x1000`, тобто не туди. Спершу визначити чи
 
 ---
 
-<!-- fc id:T-K05-017 sha:14934f37 src:kartky/k05-proshyvka.md:17 klas:A -->
+<!-- fc id:T-K05-017 sha:14934f37 src:kartky/k05-proshyvka.md:17 status:verbatim -->
 ### T-K05-017 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -678,7 +678,7 @@ S3 на `0x1000`, тобто не туди. Спершу визначити чи
 
 ---
 
-<!-- fc id:T-K05-018 sha:4188b893 src:kartky/k05-proshyvka.md:18 klas:E -->
+<!-- fc id:T-K05-018 sha:4188b893 src:kartky/k05-proshyvka.md:18 status:no-external-signal -->
 ### T-K05-018 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -704,7 +704,7 @@ S3 на `0x1000`, тобто не туди. Спершу визначити чи
 
 ---
 
-<!-- fc id:T-K05-019 sha:911de04d src:kartky/k05-proshyvka.md:24 klas:K -->
+<!-- fc id:T-K05-019 sha:911de04d src:kartky/k05-proshyvka.md:24 status:code-context -->
 ### T-K05-019 · kod · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -749,7 +749,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-K05-020 sha:bdd61138 src:kartky/k05-proshyvka.md:25 klas:A -->
+<!-- fc id:T-K05-020 sha:bdd61138 src:kartky/k05-proshyvka.md:25 status:verbatim -->
 ### T-K05-020 · kod-ryadok · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -789,7 +789,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-K05-021 sha:0e7ce691 src:kartky/k05-proshyvka.md:31 klas:A -->
+<!-- fc id:T-K05-021 sha:0e7ce691 src:kartky/k05-proshyvka.md:31 status:verbatim -->
 ### T-K05-021 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -818,7 +818,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-K05-022 sha:308e3d3b src:kartky/k05-proshyvka.md:31 klas:E -->
+<!-- fc id:T-K05-022 sha:308e3d3b src:kartky/k05-proshyvka.md:31 status:no-external-signal -->
 ### T-K05-022 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -841,7 +841,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-K05-023 sha:4b49ff3c src:kartky/k05-proshyvka.md:32 klas:A -->
+<!-- fc id:T-K05-023 sha:4b49ff3c src:kartky/k05-proshyvka.md:32 status:verbatim -->
 ### T-K05-023 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -879,7 +879,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-K05-024 sha:5c4fd9cd src:kartky/k05-proshyvka.md:35 klas:F -->
+<!-- fc id:T-K05-024 sha:5c4fd9cd src:kartky/k05-proshyvka.md:35 status:unchecked -->
 ### T-K05-024 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -902,7 +902,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-K05-025 sha:b73347cd src:kartky/k05-proshyvka.md:35 klas:F -->
+<!-- fc id:T-K05-025 sha:b73347cd src:kartky/k05-proshyvka.md:35 status:unchecked -->
 ### T-K05-025 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -925,7 +925,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-K05-026 sha:ca260535 src:kartky/k05-proshyvka.md:37 klas:F -->
+<!-- fc id:T-K05-026 sha:ca260535 src:kartky/k05-proshyvka.md:37 status:unchecked -->
 ### T-K05-026 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -948,7 +948,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-K05-027 sha:18bb88d3 src:kartky/k05-proshyvka.md:39 klas:A -->
+<!-- fc id:T-K05-027 sha:18bb88d3 src:kartky/k05-proshyvka.md:39 status:verbatim -->
 ### T-K05-027 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -976,7 +976,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-K05-028 sha:1df68ffb src:kartky/k05-proshyvka.md:42 klas:K -->
+<!-- fc id:T-K05-028 sha:1df68ffb src:kartky/k05-proshyvka.md:42 status:code-context -->
 ### T-K05-028 · kod · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -1001,7 +1001,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 merged.bin
 
 ---
 
-<!-- fc id:T-K05-029 sha:9a611ded src:kartky/k05-proshyvka.md:43 klas:F -->
+<!-- fc id:T-K05-029 sha:9a611ded src:kartky/k05-proshyvka.md:43 status:unchecked -->
 ### T-K05-029 · kod-ryadok · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -1024,7 +1024,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 merged.bin
 
 ---
 
-<!-- fc id:T-K05-030 sha:953c7797 src:kartky/k05-proshyvka.md:48 klas:A -->
+<!-- fc id:T-K05-030 sha:953c7797 src:kartky/k05-proshyvka.md:48 status:verbatim -->
 ### T-K05-030 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -1066,7 +1066,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 merged.bin
 
 ---
 
-<!-- fc id:T-K05-031 sha:d4137943 src:kartky/k05-proshyvka.md:48 klas:F -->
+<!-- fc id:T-K05-031 sha:d4137943 src:kartky/k05-proshyvka.md:48 status:unchecked -->
 ### T-K05-031 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -1088,7 +1088,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 merged.bin
 
 ---
 
-<!-- fc id:T-K05-032 sha:09ccdb8d src:kartky/k05-proshyvka.md:51 klas:K -->
+<!-- fc id:T-K05-032 sha:09ccdb8d src:kartky/k05-proshyvka.md:51 status:code-context -->
 ### T-K05-032 · kod · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -1133,7 +1133,7 @@ esptool.py --port /dev/ttyUSB0 write_flash -z 0x1000 bootloader.bin
 
 ---
 
-<!-- fc id:T-K05-033 sha:b9fc11f0 src:kartky/k05-proshyvka.md:52 klas:A -->
+<!-- fc id:T-K05-033 sha:b9fc11f0 src:kartky/k05-proshyvka.md:52 status:verbatim -->
 ### T-K05-033 · kod-ryadok · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -1176,7 +1176,7 @@ esptool.py --port /dev/ttyUSB0 write_flash -z 0x1000 bootloader.bin
 
 ---
 
-<!-- fc id:T-K05-034 sha:9b34572c src:kartky/k05-proshyvka.md:55 klas:A -->
+<!-- fc id:T-K05-034 sha:9b34572c src:kartky/k05-proshyvka.md:55 status:verbatim -->
 ### T-K05-034 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -1204,7 +1204,7 @@ esptool.py --port /dev/ttyUSB0 write_flash -z 0x1000 bootloader.bin
 
 ---
 
-<!-- fc id:T-K05-035 sha:ba1c09bd src:kartky/k05-proshyvka.md:59 klas:E -->
+<!-- fc id:T-K05-035 sha:ba1c09bd src:kartky/k05-proshyvka.md:59 status:no-external-signal -->
 ### T-K05-035 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -1225,7 +1225,7 @@ esptool.py --port /dev/ttyUSB0 write_flash -z 0x1000 bootloader.bin
 
 ---
 
-<!-- fc id:T-K05-036 sha:f9a95e16 src:kartky/k05-proshyvka.md:61 klas:A -->
+<!-- fc id:T-K05-036 sha:f9a95e16 src:kartky/k05-proshyvka.md:61 status:verbatim -->
 ### T-K05-036 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -1271,7 +1271,7 @@ esptool.py --port /dev/ttyUSB0 write_flash -z 0x1000 bootloader.bin
 
 ---
 
-<!-- fc id:T-K05-037 sha:ae4eb4e6 src:kartky/k05-proshyvka.md:66 klas:E -->
+<!-- fc id:T-K05-037 sha:ae4eb4e6 src:kartky/k05-proshyvka.md:66 status:no-external-signal -->
 ### T-K05-037 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -1292,7 +1292,7 @@ esptool.py --port /dev/ttyUSB0 write_flash -z 0x1000 bootloader.bin
 
 ---
 
-<!-- fc id:T-K05-038 sha:631e8856 src:kartky/k05-proshyvka.md:69 klas:E -->
+<!-- fc id:T-K05-038 sha:631e8856 src:kartky/k05-proshyvka.md:69 status:no-external-signal -->
 ### T-K05-038 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -1316,7 +1316,7 @@ esptool.py --port /dev/ttyUSB0 write_flash -z 0x1000 bootloader.bin
 
 ---
 
-<!-- fc id:T-K05-039 sha:f5bd92cd src:kartky/k05-proshyvka.md:69 klas:F -->
+<!-- fc id:T-K05-039 sha:f5bd92cd src:kartky/k05-proshyvka.md:69 status:unchecked -->
 ### T-K05-039 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**

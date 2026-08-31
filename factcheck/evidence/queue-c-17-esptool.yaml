@@ -7,7 +7,6 @@
 
 - nazva: 'T-17-131: Повторюється стабільно на тій самій адресі — підозра'
   zbih: Повторюється\s+стабільно\s+на\s+тій
-  klas: C
   dzherelo: ESP32 Flash Memory Specification
   shukaty: ESP32 Flash Memory Specification
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт

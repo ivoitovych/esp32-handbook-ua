@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/43-lora.md`
 
-Одиниць твердження: **100**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **100**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-43-001 sha:f73ad92e src:manual/43-lora.md:3 klas:F -->
+<!-- fc id:T-43-001 sha:f73ad92e src:manual/43-lora.md:3 status:unchecked -->
 ### T-43-001 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-43-002 sha:b58ad392 src:manual/43-lora.md:4 klas:F -->
+<!-- fc id:T-43-002 sha:b58ad392 src:manual/43-lora.md:4 status:unchecked -->
 ### T-43-002 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-43-003 sha:e9d6cc54 src:manual/43-lora.md:6 klas:E -->
+<!-- fc id:T-43-003 sha:e9d6cc54 src:manual/43-lora.md:6 status:no-external-signal -->
 ### T-43-003 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -73,7 +73,7 @@
 
 ---
 
-<!-- fc id:T-43-004 sha:10e18cc8 src:manual/43-lora.md:10 klas:E -->
+<!-- fc id:T-43-004 sha:10e18cc8 src:manual/43-lora.md:10 status:no-external-signal -->
 ### T-43-004 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -96,7 +96,7 @@
 
 ---
 
-<!-- fc id:T-43-005 sha:a04858d6 src:manual/43-lora.md:11 klas:E -->
+<!-- fc id:T-43-005 sha:a04858d6 src:manual/43-lora.md:11 status:no-external-signal -->
 ### T-43-005 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -119,7 +119,7 @@
 
 ---
 
-<!-- fc id:T-43-006 sha:242d3d96 src:manual/43-lora.md:16 klas:F -->
+<!-- fc id:T-43-006 sha:242d3d96 src:manual/43-lora.md:16 status:unchecked -->
 ### T-43-006 · tablycya-shapka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -148,7 +148,7 @@
 
 ---
 
-<!-- fc id:T-43-007 sha:79881a2b src:manual/43-lora.md:18 klas:F -->
+<!-- fc id:T-43-007 sha:79881a2b src:manual/43-lora.md:18 status:unchecked -->
 ### T-43-007 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -183,7 +183,7 @@
 
 ---
 
-<!-- fc id:T-43-008 sha:cdbc94ab src:manual/43-lora.md:18 klas:F -->
+<!-- fc id:T-43-008 sha:cdbc94ab src:manual/43-lora.md:18 status:unchecked -->
 ### T-43-008 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -218,7 +218,7 @@
 
 ---
 
-<!-- fc id:T-43-009 sha:0d181f66 src:manual/43-lora.md:19 klas:F -->
+<!-- fc id:T-43-009 sha:0d181f66 src:manual/43-lora.md:19 status:unchecked -->
 ### T-43-009 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-43-010 sha:b0cab716 src:manual/43-lora.md:19 klas:F -->
+<!-- fc id:T-43-010 sha:b0cab716 src:manual/43-lora.md:19 status:unchecked -->
 ### T-43-010 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -288,7 +288,7 @@
 
 ---
 
-<!-- fc id:T-43-011 sha:d9edab88 src:manual/43-lora.md:20 klas:F -->
+<!-- fc id:T-43-011 sha:d9edab88 src:manual/43-lora.md:20 status:unchecked -->
 ### T-43-011 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -323,7 +323,7 @@
 
 ---
 
-<!-- fc id:T-43-012 sha:ca6aa54f src:manual/43-lora.md:20 klas:F -->
+<!-- fc id:T-43-012 sha:ca6aa54f src:manual/43-lora.md:20 status:unchecked -->
 ### T-43-012 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -358,7 +358,7 @@
 
 ---
 
-<!-- fc id:T-43-013 sha:94197bc0 src:manual/43-lora.md:21 klas:F -->
+<!-- fc id:T-43-013 sha:94197bc0 src:manual/43-lora.md:21 status:unchecked -->
 ### T-43-013 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -393,7 +393,7 @@
 
 ---
 
-<!-- fc id:T-43-014 sha:f4920ccc src:manual/43-lora.md:21 klas:F -->
+<!-- fc id:T-43-014 sha:f4920ccc src:manual/43-lora.md:21 status:unchecked -->
 ### T-43-014 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -428,7 +428,7 @@
 
 ---
 
-<!-- fc id:T-43-015 sha:0c97b0ed src:manual/43-lora.md:22 klas:F -->
+<!-- fc id:T-43-015 sha:0c97b0ed src:manual/43-lora.md:22 status:unchecked -->
 ### T-43-015 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -463,7 +463,7 @@
 
 ---
 
-<!-- fc id:T-43-016 sha:dc995929 src:manual/43-lora.md:22 klas:F -->
+<!-- fc id:T-43-016 sha:dc995929 src:manual/43-lora.md:22 status:unchecked -->
 ### T-43-016 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -498,7 +498,7 @@
 
 ---
 
-<!-- fc id:T-43-017 sha:757cce3e src:manual/43-lora.md:25 klas:F -->
+<!-- fc id:T-43-017 sha:757cce3e src:manual/43-lora.md:25 status:unchecked -->
 ### T-43-017 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -522,7 +522,7 @@
 
 ---
 
-<!-- fc id:T-43-018 sha:265b855d src:manual/43-lora.md:26 klas:E -->
+<!-- fc id:T-43-018 sha:265b855d src:manual/43-lora.md:26 status:no-external-signal -->
 ### T-43-018 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -546,7 +546,7 @@
 
 ---
 
-<!-- fc id:T-43-019 sha:fd1a0dbe src:manual/43-lora.md:29 klas:F -->
+<!-- fc id:T-43-019 sha:fd1a0dbe src:manual/43-lora.md:29 status:unchecked -->
 ### T-43-019 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -569,7 +569,7 @@
 
 ---
 
-<!-- fc id:T-43-020 sha:5f61f552 src:manual/43-lora.md:30 klas:F -->
+<!-- fc id:T-43-020 sha:5f61f552 src:manual/43-lora.md:30 status:unchecked -->
 ### T-43-020 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -592,7 +592,7 @@
 
 ---
 
-<!-- fc id:T-43-021 sha:45d7de9d src:manual/43-lora.md:35 klas:A -->
+<!-- fc id:T-43-021 sha:45d7de9d src:manual/43-lora.md:35 status:verbatim -->
 ### T-43-021 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -620,7 +620,7 @@
 
 ---
 
-<!-- fc id:T-43-022 sha:ce4cb811 src:manual/43-lora.md:35 klas:A -->
+<!-- fc id:T-43-022 sha:ce4cb811 src:manual/43-lora.md:35 status:verbatim -->
 ### T-43-022 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -648,7 +648,7 @@
 
 ---
 
-<!-- fc id:T-43-023 sha:781d2389 src:manual/43-lora.md:38 klas:C -->
+<!-- fc id:T-43-023 sha:781d2389 src:manual/43-lora.md:38 status:named-unreachable -->
 ### T-43-023 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -676,7 +676,7 @@
 
 ---
 
-<!-- fc id:T-43-024 sha:056d48aa src:manual/43-lora.md:39 klas:E -->
+<!-- fc id:T-43-024 sha:056d48aa src:manual/43-lora.md:39 status:no-external-signal -->
 ### T-43-024 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -698,7 +698,7 @@
 
 ---
 
-<!-- fc id:T-43-025 sha:28e9de32 src:manual/43-lora.md:41 klas:C -->
+<!-- fc id:T-43-025 sha:28e9de32 src:manual/43-lora.md:41 status:named-unreachable -->
 ### T-43-025 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -724,7 +724,7 @@
 
 ---
 
-<!-- fc id:T-43-026 sha:5fde84fe src:manual/43-lora.md:41 klas:E -->
+<!-- fc id:T-43-026 sha:5fde84fe src:manual/43-lora.md:41 status:no-external-signal -->
 ### T-43-026 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -746,7 +746,7 @@
 
 ---
 
-<!-- fc id:T-43-027 sha:76d2e8c4 src:manual/43-lora.md:45 klas:A -->
+<!-- fc id:T-43-027 sha:76d2e8c4 src:manual/43-lora.md:45 status:verbatim -->
 ### T-43-027 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -787,7 +787,7 @@
 
 ---
 
-<!-- fc id:T-43-028 sha:abef9779 src:manual/43-lora.md:47 klas:A -->
+<!-- fc id:T-43-028 sha:abef9779 src:manual/43-lora.md:47 status:verbatim -->
 ### T-43-028 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -835,7 +835,7 @@
 
 ---
 
-<!-- fc id:T-43-029 sha:bb2d7c5c src:manual/43-lora.md:50 klas:C -->
+<!-- fc id:T-43-029 sha:bb2d7c5c src:manual/43-lora.md:50 status:named-unreachable -->
 ### T-43-029 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -863,7 +863,7 @@
 
 ---
 
-<!-- fc id:T-43-030 sha:e8f098e4 src:manual/43-lora.md:50 klas:E -->
+<!-- fc id:T-43-030 sha:e8f098e4 src:manual/43-lora.md:50 status:no-external-signal -->
 ### T-43-030 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -887,7 +887,7 @@
 
 ---
 
-<!-- fc id:T-43-031 sha:cc2726cb src:manual/43-lora.md:51 klas:E -->
+<!-- fc id:T-43-031 sha:cc2726cb src:manual/43-lora.md:51 status:no-external-signal -->
 ### T-43-031 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -911,7 +911,7 @@
 
 ---
 
-<!-- fc id:T-43-032 sha:4cf74e8d src:manual/43-lora.md:55 klas:C -->
+<!-- fc id:T-43-032 sha:4cf74e8d src:manual/43-lora.md:55 status:named-unreachable -->
 ### T-43-032 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -939,7 +939,7 @@ FSK, і воно теж корисне, але для інших задач і �
 
 ---
 
-<!-- fc id:T-43-033 sha:228134c6 src:manual/43-lora.md:56 klas:A -->
+<!-- fc id:T-43-033 sha:228134c6 src:manual/43-lora.md:56 status:verbatim -->
 ### T-43-033 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -976,7 +976,7 @@ FSK, і воно теж корисне, але для інших задач і �
 
 ---
 
-<!-- fc id:T-43-034 sha:64c83985 src:manual/43-lora.md:60 klas:B -->
+<!-- fc id:T-43-034 sha:64c83985 src:manual/43-lora.md:60 status:derived -->
 ### T-43-034 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1007,7 +1007,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-035 sha:54c3209c src:manual/43-lora.md:61 klas:E -->
+<!-- fc id:T-43-035 sha:54c3209c src:manual/43-lora.md:61 status:no-external-signal -->
 ### T-43-035 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1030,7 +1030,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-036 sha:cf056bbd src:manual/43-lora.md:64 klas:F -->
+<!-- fc id:T-43-036 sha:cf056bbd src:manual/43-lora.md:64 status:unchecked -->
 ### T-43-036 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1052,7 +1052,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-037 sha:7d748e30 src:manual/43-lora.md:70 klas:F -->
+<!-- fc id:T-43-037 sha:7d748e30 src:manual/43-lora.md:70 status:unchecked -->
 ### T-43-037 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1075,7 +1075,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-038 sha:8a9a7e01 src:manual/43-lora.md:73 klas:E -->
+<!-- fc id:T-43-038 sha:8a9a7e01 src:manual/43-lora.md:73 status:no-external-signal -->
 ### T-43-038 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1097,7 +1097,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-039 sha:c5cc11cc src:manual/43-lora.md:74 klas:E -->
+<!-- fc id:T-43-039 sha:c5cc11cc src:manual/43-lora.md:74 status:no-external-signal -->
 ### T-43-039 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1119,7 +1119,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-040 sha:03f378a1 src:manual/43-lora.md:76 klas:E -->
+<!-- fc id:T-43-040 sha:03f378a1 src:manual/43-lora.md:76 status:no-external-signal -->
 ### T-43-040 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1142,7 +1142,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-041 sha:4c04319c src:manual/43-lora.md:80 klas:E -->
+<!-- fc id:T-43-041 sha:4c04319c src:manual/43-lora.md:80 status:no-external-signal -->
 ### T-43-041 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1166,7 +1166,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-042 sha:e96fc5e1 src:manual/43-lora.md:80 klas:A -->
+<!-- fc id:T-43-042 sha:e96fc5e1 src:manual/43-lora.md:80 status:verbatim -->
 ### T-43-042 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1199,7 +1199,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-043 sha:5d70026e src:manual/43-lora.md:85 klas:E -->
+<!-- fc id:T-43-043 sha:5d70026e src:manual/43-lora.md:85 status:no-external-signal -->
 ### T-43-043 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1222,7 +1222,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-044 sha:be21140a src:manual/43-lora.md:86 klas:E -->
+<!-- fc id:T-43-044 sha:be21140a src:manual/43-lora.md:86 status:no-external-signal -->
 ### T-43-044 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1245,7 +1245,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-045 sha:7e7ea4c1 src:manual/43-lora.md:92 klas:E -->
+<!-- fc id:T-43-045 sha:7e7ea4c1 src:manual/43-lora.md:92 status:no-external-signal -->
 ### T-43-045 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1269,7 +1269,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-046 sha:45d32912 src:manual/43-lora.md:92 klas:E -->
+<!-- fc id:T-43-046 sha:45d32912 src:manual/43-lora.md:92 status:no-external-signal -->
 ### T-43-046 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1293,7 +1293,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-047 sha:27c38d70 src:manual/43-lora.md:96 klas:E -->
+<!-- fc id:T-43-047 sha:27c38d70 src:manual/43-lora.md:96 status:no-external-signal -->
 ### T-43-047 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1316,7 +1316,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-048 sha:a00a479f src:manual/43-lora.md:96 klas:A -->
+<!-- fc id:T-43-048 sha:a00a479f src:manual/43-lora.md:96 status:verbatim -->
 ### T-43-048 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1348,7 +1348,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-049 sha:30daa2e8 src:manual/43-lora.md:100 klas:E -->
+<!-- fc id:T-43-049 sha:30daa2e8 src:manual/43-lora.md:100 status:no-external-signal -->
 ### T-43-049 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1372,7 +1372,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-050 sha:128a415d src:manual/43-lora.md:102 klas:E -->
+<!-- fc id:T-43-050 sha:128a415d src:manual/43-lora.md:102 status:no-external-signal -->
 ### T-43-050 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1396,7 +1396,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-051 sha:4a478854 src:manual/43-lora.md:105 klas:E -->
+<!-- fc id:T-43-051 sha:4a478854 src:manual/43-lora.md:105 status:no-external-signal -->
 ### T-43-051 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1419,7 +1419,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-052 sha:bc1eb0f8 src:manual/43-lora.md:109 klas:E -->
+<!-- fc id:T-43-052 sha:bc1eb0f8 src:manual/43-lora.md:109 status:no-external-signal -->
 ### T-43-052 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1443,7 +1443,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-053 sha:66492356 src:manual/43-lora.md:110 klas:E -->
+<!-- fc id:T-43-053 sha:66492356 src:manual/43-lora.md:110 status:no-external-signal -->
 ### T-43-053 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1467,7 +1467,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-054 sha:64b37223 src:manual/43-lora.md:116 klas:E -->
+<!-- fc id:T-43-054 sha:64b37223 src:manual/43-lora.md:116 status:no-external-signal -->
 ### T-43-054 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1489,7 +1489,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-055 sha:34b7d7bc src:manual/43-lora.md:119 klas:E -->
+<!-- fc id:T-43-055 sha:34b7d7bc src:manual/43-lora.md:119 status:no-external-signal -->
 ### T-43-055 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1511,7 +1511,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-056 sha:460052f4 src:manual/43-lora.md:119 klas:E -->
+<!-- fc id:T-43-056 sha:460052f4 src:manual/43-lora.md:119 status:no-external-signal -->
 ### T-43-056 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1533,7 +1533,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-057 sha:47016a61 src:manual/43-lora.md:122 klas:F -->
+<!-- fc id:T-43-057 sha:47016a61 src:manual/43-lora.md:122 status:unchecked -->
 ### T-43-057 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1554,7 +1554,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-058 sha:e3e00ff0 src:manual/43-lora.md:124 klas:E -->
+<!-- fc id:T-43-058 sha:e3e00ff0 src:manual/43-lora.md:124 status:no-external-signal -->
 ### T-43-058 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1576,7 +1576,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-059 sha:8123dbce src:manual/43-lora.md:124 klas:E -->
+<!-- fc id:T-43-059 sha:8123dbce src:manual/43-lora.md:124 status:no-external-signal -->
 ### T-43-059 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1598,7 +1598,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-060 sha:d1be272e src:manual/43-lora.md:127 klas:F -->
+<!-- fc id:T-43-060 sha:d1be272e src:manual/43-lora.md:127 status:unchecked -->
 ### T-43-060 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1620,7 +1620,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-061 sha:c7115f7e src:manual/43-lora.md:127 klas:E -->
+<!-- fc id:T-43-061 sha:c7115f7e src:manual/43-lora.md:127 status:no-external-signal -->
 ### T-43-061 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1642,7 +1642,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-062 sha:9eefdaa3 src:manual/43-lora.md:130 klas:E -->
+<!-- fc id:T-43-062 sha:9eefdaa3 src:manual/43-lora.md:130 status:no-external-signal -->
 ### T-43-062 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1665,7 +1665,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-063 sha:7b026d05 src:manual/43-lora.md:131 klas:E -->
+<!-- fc id:T-43-063 sha:7b026d05 src:manual/43-lora.md:131 status:no-external-signal -->
 ### T-43-063 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1688,7 +1688,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-064 sha:c43a8eee src:manual/43-lora.md:134 klas:E -->
+<!-- fc id:T-43-064 sha:c43a8eee src:manual/43-lora.md:134 status:no-external-signal -->
 ### T-43-064 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1710,7 +1710,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-065 sha:324c4174 src:manual/43-lora.md:139 klas:E -->
+<!-- fc id:T-43-065 sha:324c4174 src:manual/43-lora.md:139 status:no-external-signal -->
 ### T-43-065 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1731,7 +1731,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-066 sha:230cce92 src:manual/43-lora.md:141 klas:A -->
+<!-- fc id:T-43-066 sha:230cce92 src:manual/43-lora.md:141 status:verbatim -->
 ### T-43-066 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1780,7 +1780,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-067 sha:7e0e3e67 src:manual/43-lora.md:141 klas:E -->
+<!-- fc id:T-43-067 sha:7e0e3e67 src:manual/43-lora.md:141 status:no-external-signal -->
 ### T-43-067 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1803,7 +1803,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-068 sha:63479ee2 src:manual/43-lora.md:145 klas:A -->
+<!-- fc id:T-43-068 sha:63479ee2 src:manual/43-lora.md:145 status:verbatim -->
 ### T-43-068 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1854,7 +1854,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-069 sha:4270d73b src:manual/43-lora.md:148 klas:E -->
+<!-- fc id:T-43-069 sha:4270d73b src:manual/43-lora.md:148 status:no-external-signal -->
 ### T-43-069 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1879,7 +1879,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-070 sha:5abc82aa src:manual/43-lora.md:151 klas:A -->
+<!-- fc id:T-43-070 sha:5abc82aa src:manual/43-lora.md:151 status:verbatim -->
 ### T-43-070 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1917,7 +1917,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-071 sha:041620a5 src:manual/43-lora.md:153 klas:E -->
+<!-- fc id:T-43-071 sha:041620a5 src:manual/43-lora.md:153 status:no-external-signal -->
 ### T-43-071 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1938,7 +1938,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-072 sha:20b7abc8 src:manual/43-lora.md:156 klas:E -->
+<!-- fc id:T-43-072 sha:20b7abc8 src:manual/43-lora.md:156 status:no-external-signal -->
 ### T-43-072 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1963,7 +1963,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-073 sha:300cc0f1 src:manual/43-lora.md:157 klas:E -->
+<!-- fc id:T-43-073 sha:300cc0f1 src:manual/43-lora.md:157 status:no-external-signal -->
 ### T-43-073 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -1988,7 +1988,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-074 sha:68440a60 src:manual/43-lora.md:161 klas:E -->
+<!-- fc id:T-43-074 sha:68440a60 src:manual/43-lora.md:161 status:no-external-signal -->
 ### T-43-074 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2012,7 +2012,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-075 sha:86aef237 src:manual/43-lora.md:166 klas:E -->
+<!-- fc id:T-43-075 sha:86aef237 src:manual/43-lora.md:166 status:no-external-signal -->
 ### T-43-075 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2035,7 +2035,7 @@ LoRa-модуль, роз'єм антени й часто дисплей та т
 
 ---
 
-<!-- fc id:T-43-076 sha:6a4d56bf src:manual/43-lora.md:172 klas:F -->
+<!-- fc id:T-43-076 sha:6a4d56bf src:manual/43-lora.md:172 status:unchecked -->
 ### T-43-076 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2057,7 +2057,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-077 sha:2dfcf729 src:manual/43-lora.md:175 klas:E -->
+<!-- fc id:T-43-077 sha:2dfcf729 src:manual/43-lora.md:175 status:no-external-signal -->
 ### T-43-077 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2080,7 +2080,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-078 sha:217d698b src:manual/43-lora.md:179 klas:E -->
+<!-- fc id:T-43-078 sha:217d698b src:manual/43-lora.md:179 status:no-external-signal -->
 ### T-43-078 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2102,7 +2102,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-079 sha:2fbc9497 src:manual/43-lora.md:179 klas:E -->
+<!-- fc id:T-43-079 sha:2fbc9497 src:manual/43-lora.md:179 status:no-external-signal -->
 ### T-43-079 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2124,7 +2124,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-080 sha:cb4f2ef8 src:manual/43-lora.md:184 klas:A -->
+<!-- fc id:T-43-080 sha:cb4f2ef8 src:manual/43-lora.md:184 status:verbatim -->
 ### T-43-080 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2161,7 +2161,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-081 sha:452b9e31 src:manual/43-lora.md:185 klas:E -->
+<!-- fc id:T-43-081 sha:452b9e31 src:manual/43-lora.md:185 status:no-external-signal -->
 ### T-43-081 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2183,7 +2183,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-082 sha:c94649c6 src:manual/43-lora.md:187 klas:E -->
+<!-- fc id:T-43-082 sha:c94649c6 src:manual/43-lora.md:187 status:no-external-signal -->
 ### T-43-082 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2205,7 +2205,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-083 sha:a4143a88 src:manual/43-lora.md:190 klas:E -->
+<!-- fc id:T-43-083 sha:a4143a88 src:manual/43-lora.md:190 status:no-external-signal -->
 ### T-43-083 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2227,7 +2227,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-084 sha:bf09864a src:manual/43-lora.md:193 klas:F -->
+<!-- fc id:T-43-084 sha:bf09864a src:manual/43-lora.md:193 status:unchecked -->
 ### T-43-084 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2249,7 +2249,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-085 sha:41e89842 src:manual/43-lora.md:196 klas:E -->
+<!-- fc id:T-43-085 sha:41e89842 src:manual/43-lora.md:196 status:no-external-signal -->
 ### T-43-085 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2273,7 +2273,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-086 sha:071a36e9 src:manual/43-lora.md:198 klas:F -->
+<!-- fc id:T-43-086 sha:071a36e9 src:manual/43-lora.md:198 status:unchecked -->
 ### T-43-086 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2297,7 +2297,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-087 sha:699575b1 src:manual/43-lora.md:201 klas:F -->
+<!-- fc id:T-43-087 sha:699575b1 src:manual/43-lora.md:201 status:unchecked -->
 ### T-43-087 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2318,7 +2318,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-088 sha:ca0a48aa src:manual/43-lora.md:205 klas:E -->
+<!-- fc id:T-43-088 sha:ca0a48aa src:manual/43-lora.md:205 status:no-external-signal -->
 ### T-43-088 · tablycya · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2347,7 +2347,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-089 sha:a011819e src:manual/43-lora.md:207 klas:F -->
+<!-- fc id:T-43-089 sha:a011819e src:manual/43-lora.md:207 status:unchecked -->
 ### T-43-089 · tablycya · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2376,7 +2376,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-090 sha:c641e486 src:manual/43-lora.md:208 klas:F -->
+<!-- fc id:T-43-090 sha:c641e486 src:manual/43-lora.md:208 status:unchecked -->
 ### T-43-090 · tablycya · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2405,7 +2405,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-091 sha:5eac3037 src:manual/43-lora.md:209 klas:F -->
+<!-- fc id:T-43-091 sha:5eac3037 src:manual/43-lora.md:209 status:unchecked -->
 ### T-43-091 · tablycya · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2434,7 +2434,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-092 sha:80e86cbb src:manual/43-lora.md:210 klas:F -->
+<!-- fc id:T-43-092 sha:80e86cbb src:manual/43-lora.md:210 status:unchecked -->
 ### T-43-092 · tablycya · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2463,7 +2463,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-093 sha:3b734785 src:manual/43-lora.md:211 klas:F -->
+<!-- fc id:T-43-093 sha:3b734785 src:manual/43-lora.md:211 status:unchecked -->
 ### T-43-093 · tablycya · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2492,7 +2492,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-094 sha:b8abf1d6 src:manual/43-lora.md:212 klas:E -->
+<!-- fc id:T-43-094 sha:b8abf1d6 src:manual/43-lora.md:212 status:no-external-signal -->
 ### T-43-094 · tablycya · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2521,7 +2521,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-095 sha:63cc0139 src:manual/43-lora.md:216 klas:F -->
+<!-- fc id:T-43-095 sha:63cc0139 src:manual/43-lora.md:216 status:unchecked -->
 ### T-43-095 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2543,7 +2543,7 @@ LoRa — це кілометри для коротких повідомлень 
 
 ---
 
-<!-- fc id:T-43-096 sha:a57df511 src:manual/43-lora.md:219 klas:E -->
+<!-- fc id:T-43-096 sha:a57df511 src:manual/43-lora.md:219 status:no-external-signal -->
 ### T-43-096 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2564,7 +2564,7 @@ LoRa — це кілометри для коротких повідомлень 
 
 ---
 
-<!-- fc id:T-43-097 sha:70a2111e src:manual/43-lora.md:221 klas:E -->
+<!-- fc id:T-43-097 sha:70a2111e src:manual/43-lora.md:221 status:no-external-signal -->
 ### T-43-097 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2586,7 +2586,7 @@ LoRa — це кілометри для коротких повідомлень 
 
 ---
 
-<!-- fc id:T-43-098 sha:3ee07d64 src:manual/43-lora.md:224 klas:E -->
+<!-- fc id:T-43-098 sha:3ee07d64 src:manual/43-lora.md:224 status:no-external-signal -->
 ### T-43-098 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2607,7 +2607,7 @@ LoRa — це кілометри для коротких повідомлень 
 
 ---
 
-<!-- fc id:T-43-099 sha:c7c95fc5 src:manual/43-lora.md:226 klas:F -->
+<!-- fc id:T-43-099 sha:c7c95fc5 src:manual/43-lora.md:226 status:unchecked -->
 ### T-43-099 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2629,7 +2629,7 @@ LoRa їх не дає.
 
 ---
 
-<!-- fc id:T-43-100 sha:fa1fed4b src:manual/43-lora.md:229 klas:E -->
+<!-- fc id:T-43-100 sha:fa1fed4b src:manual/43-lora.md:229 status:no-external-signal -->
 ### T-43-100 · proza · `manual/43-lora.md`
 
 **Твердження, коротко**

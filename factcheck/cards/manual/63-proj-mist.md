@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/63-proj-mist.md`
 
-Одиниць твердження: **80**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **80**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-63-001 sha:fedd4339 src:manual/63-proj-mist.md:3 klas:A -->
+<!-- fc id:T-63-001 sha:fedd4339 src:manual/63-proj-mist.md:3 status:verbatim -->
 ### T-63-001 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-63-002 sha:59fe3663 src:manual/63-proj-mist.md:6 klas:F -->
+<!-- fc id:T-63-002 sha:59fe3663 src:manual/63-proj-mist.md:6 status:unchecked -->
 ### T-63-002 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -74,7 +74,7 @@
 
 ---
 
-<!-- fc id:T-63-003 sha:9d3eb30c src:manual/63-proj-mist.md:11 klas:E -->
+<!-- fc id:T-63-003 sha:9d3eb30c src:manual/63-proj-mist.md:11 status:no-external-signal -->
 ### T-63-003 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-63-004 sha:03f842f5 src:manual/63-proj-mist.md:15 klas:E -->
+<!-- fc id:T-63-004 sha:03f842f5 src:manual/63-proj-mist.md:15 status:no-external-signal -->
 ### T-63-004 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -118,7 +118,7 @@
 
 ---
 
-<!-- fc id:T-63-005 sha:a460c66e src:manual/63-proj-mist.md:17 klas:F -->
+<!-- fc id:T-63-005 sha:a460c66e src:manual/63-proj-mist.md:17 status:unchecked -->
 ### T-63-005 · tablycya-shapka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -146,7 +146,7 @@
 
 ---
 
-<!-- fc id:T-63-006 sha:ad923067 src:manual/63-proj-mist.md:19 klas:F -->
+<!-- fc id:T-63-006 sha:ad923067 src:manual/63-proj-mist.md:19 status:unchecked -->
 ### T-63-006 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -180,7 +180,7 @@
 
 ---
 
-<!-- fc id:T-63-007 sha:a82ae55f src:manual/63-proj-mist.md:19 klas:E -->
+<!-- fc id:T-63-007 sha:a82ae55f src:manual/63-proj-mist.md:19 status:no-external-signal -->
 ### T-63-007 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-63-008 sha:5e51e79b src:manual/63-proj-mist.md:20 klas:A -->
+<!-- fc id:T-63-008 sha:5e51e79b src:manual/63-proj-mist.md:20 status:verbatim -->
 ### T-63-008 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -270,7 +270,7 @@
 
 ---
 
-<!-- fc id:T-63-009 sha:ffcf0fd3 src:manual/63-proj-mist.md:20 klas:F -->
+<!-- fc id:T-63-009 sha:ffcf0fd3 src:manual/63-proj-mist.md:20 status:unchecked -->
 ### T-63-009 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -304,7 +304,7 @@
 
 ---
 
-<!-- fc id:T-63-010 sha:d770730c src:manual/63-proj-mist.md:21 klas:F -->
+<!-- fc id:T-63-010 sha:d770730c src:manual/63-proj-mist.md:21 status:unchecked -->
 ### T-63-010 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -338,7 +338,7 @@
 
 ---
 
-<!-- fc id:T-63-011 sha:8eb44ead src:manual/63-proj-mist.md:21 klas:F -->
+<!-- fc id:T-63-011 sha:8eb44ead src:manual/63-proj-mist.md:21 status:unchecked -->
 ### T-63-011 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -372,7 +372,7 @@
 
 ---
 
-<!-- fc id:T-63-012 sha:b5bf5fd8 src:manual/63-proj-mist.md:22 klas:F -->
+<!-- fc id:T-63-012 sha:b5bf5fd8 src:manual/63-proj-mist.md:22 status:unchecked -->
 ### T-63-012 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -406,7 +406,7 @@
 
 ---
 
-<!-- fc id:T-63-013 sha:2c46ea77 src:manual/63-proj-mist.md:22 klas:F -->
+<!-- fc id:T-63-013 sha:2c46ea77 src:manual/63-proj-mist.md:22 status:unchecked -->
 ### T-63-013 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -440,7 +440,7 @@
 
 ---
 
-<!-- fc id:T-63-014 sha:e9aec07f src:manual/63-proj-mist.md:24 klas:E -->
+<!-- fc id:T-63-014 sha:e9aec07f src:manual/63-proj-mist.md:24 status:no-external-signal -->
 ### T-63-014 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -463,7 +463,7 @@
 
 ---
 
-<!-- fc id:T-63-015 sha:6adf159f src:manual/63-proj-mist.md:30 klas:E -->
+<!-- fc id:T-63-015 sha:6adf159f src:manual/63-proj-mist.md:30 status:no-external-signal -->
 ### T-63-015 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -485,7 +485,7 @@
 
 ---
 
-<!-- fc id:T-63-016 sha:fd256b9b src:manual/63-proj-mist.md:30 klas:E -->
+<!-- fc id:T-63-016 sha:fd256b9b src:manual/63-proj-mist.md:30 status:no-external-signal -->
 ### T-63-016 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -507,7 +507,7 @@
 
 ---
 
-<!-- fc id:T-63-017 sha:a37df5ab src:manual/63-proj-mist.md:33 klas:K -->
+<!-- fc id:T-63-017 sha:a37df5ab src:manual/63-proj-mist.md:33 status:code-context -->
 ### T-63-017 · kod · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -562,7 +562,7 @@
 
 ---
 
-<!-- fc id:T-63-018 sha:2e4d5ee9 src:manual/63-proj-mist.md:35 klas:F -->
+<!-- fc id:T-63-018 sha:2e4d5ee9 src:manual/63-proj-mist.md:35 status:unchecked -->
 ### T-63-018 · schema-zvyazok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -586,7 +586,7 @@
 
 ---
 
-<!-- fc id:T-63-019 sha:a6c093a3 src:manual/63-proj-mist.md:36 klas:F -->
+<!-- fc id:T-63-019 sha:a6c093a3 src:manual/63-proj-mist.md:36 status:unchecked -->
 ### T-63-019 · schema-zvyazok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -610,7 +610,7 @@
 
 ---
 
-<!-- fc id:T-63-020 sha:12977693 src:manual/63-proj-mist.md:38 klas:F -->
+<!-- fc id:T-63-020 sha:12977693 src:manual/63-proj-mist.md:38 status:unchecked -->
 ### T-63-020 · schema-zvyazok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -632,7 +632,7 @@
 
 ---
 
-<!-- fc id:T-63-021 sha:ccb7e5b3 src:manual/63-proj-mist.md:41 klas:K -->
+<!-- fc id:T-63-021 sha:ccb7e5b3 src:manual/63-proj-mist.md:41 status:code-context -->
 ### T-63-021 · kod · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -669,7 +669,7 @@ static QueueHandle_t do_serial;    // з мережі в послідовний 
 
 ---
 
-<!-- fc id:T-63-022 sha:f5dcbd4f src:manual/63-proj-mist.md:52 klas:E -->
+<!-- fc id:T-63-022 sha:f5dcbd4f src:manual/63-proj-mist.md:52 status:no-external-signal -->
 ### T-63-022 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -694,7 +694,7 @@ static QueueHandle_t do_serial;    // з мережі в послідовний 
 
 ---
 
-<!-- fc id:T-63-023 sha:2597f20d src:manual/63-proj-mist.md:53 klas:A -->
+<!-- fc id:T-63-023 sha:2597f20d src:manual/63-proj-mist.md:53 status:verbatim -->
 ### T-63-023 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -729,7 +729,7 @@ static QueueHandle_t do_serial;    // з мережі в послідовний 
 
 ---
 
-<!-- fc id:T-63-024 sha:bd1cc93c src:manual/63-proj-mist.md:57 klas:E -->
+<!-- fc id:T-63-024 sha:bd1cc93c src:manual/63-proj-mist.md:57 status:no-external-signal -->
 ### T-63-024 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -752,7 +752,7 @@ static QueueHandle_t do_serial;    // з мережі в послідовний 
 
 ---
 
-<!-- fc id:T-63-025 sha:e18e6e3b src:manual/63-proj-mist.md:63 klas:K -->
+<!-- fc id:T-63-025 sha:e18e6e3b src:manual/63-proj-mist.md:63 status:code-context -->
 ### T-63-025 · kod · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -817,7 +817,7 @@ static void task_rx_serial(void *arg) {
 
 ---
 
-<!-- fc id:T-63-026 sha:15e56919 src:manual/63-proj-mist.md:68 klas:A -->
+<!-- fc id:T-63-026 sha:15e56919 src:manual/63-proj-mist.md:68 status:verbatim -->
 ### T-63-026 · kod-ryadok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -862,7 +862,7 @@ static void task_rx_serial(void *arg) {
 
 ---
 
-<!-- fc id:T-63-027 sha:2bec772f src:manual/63-proj-mist.md:73 klas:F -->
+<!-- fc id:T-63-027 sha:2bec772f src:manual/63-proj-mist.md:73 status:unchecked -->
 ### T-63-027 · kod-ryadok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -897,7 +897,7 @@ static void task_rx_serial(void *arg) {
 
 ---
 
-<!-- fc id:T-63-028 sha:bb7614e8 src:manual/63-proj-mist.md:79 klas:E -->
+<!-- fc id:T-63-028 sha:bb7614e8 src:manual/63-proj-mist.md:79 status:no-external-signal -->
 ### T-63-028 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -920,7 +920,7 @@ static void task_rx_serial(void *arg) {
 
 ---
 
-<!-- fc id:T-63-029 sha:d4feea6b src:manual/63-proj-mist.md:83 klas:D -->
+<!-- fc id:T-63-029 sha:d4feea6b src:manual/63-proj-mist.md:83 status:arithmetic -->
 ### T-63-029 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -973,7 +973,7 @@ static void task_rx_serial(void *arg) {
 
 ---
 
-<!-- fc id:T-63-030 sha:99e6c971 src:manual/63-proj-mist.md:89 klas:K -->
+<!-- fc id:T-63-030 sha:99e6c971 src:manual/63-proj-mist.md:89 status:code-context -->
 ### T-63-030 · kod · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1032,7 +1032,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 ---
 
-<!-- fc id:T-63-031 sha:0c32211a src:manual/63-proj-mist.md:92 klas:F -->
+<!-- fc id:T-63-031 sha:0c32211a src:manual/63-proj-mist.md:92 status:unchecked -->
 ### T-63-031 · kod-ryadok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1053,7 +1053,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 ---
 
-<!-- fc id:T-63-032 sha:9c41187b src:manual/63-proj-mist.md:94 klas:A -->
+<!-- fc id:T-63-032 sha:9c41187b src:manual/63-proj-mist.md:94 status:verbatim -->
 ### T-63-032 · kod-ryadok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1090,7 +1090,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 ---
 
-<!-- fc id:T-63-033 sha:82ed161b src:manual/63-proj-mist.md:97 klas:F -->
+<!-- fc id:T-63-033 sha:82ed161b src:manual/63-proj-mist.md:97 status:unchecked -->
 ### T-63-033 · kod-ryadok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1112,7 +1112,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 ---
 
-<!-- fc id:T-63-034 sha:6fe4bed6 src:manual/63-proj-mist.md:103 klas:A -->
+<!-- fc id:T-63-034 sha:6fe4bed6 src:manual/63-proj-mist.md:103 status:verbatim -->
 ### T-63-034 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1157,7 +1157,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 ---
 
-<!-- fc id:T-63-035 sha:c3a7d066 src:manual/63-proj-mist.md:106 klas:A -->
+<!-- fc id:T-63-035 sha:c3a7d066 src:manual/63-proj-mist.md:106 status:verbatim -->
 ### T-63-035 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1198,7 +1198,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 ---
 
-<!-- fc id:T-63-036 sha:24664874 src:manual/63-proj-mist.md:107 klas:E -->
+<!-- fc id:T-63-036 sha:24664874 src:manual/63-proj-mist.md:107 status:no-external-signal -->
 ### T-63-036 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1223,7 +1223,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 ---
 
-<!-- fc id:T-63-037 sha:66e8b36e src:manual/63-proj-mist.md:114 klas:K -->
+<!-- fc id:T-63-037 sha:66e8b36e src:manual/63-proj-mist.md:114 status:code-context -->
 ### T-63-037 · kod · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1306,7 +1306,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-038 sha:2a61cebc src:manual/63-proj-mist.md:118 klas:F -->
+<!-- fc id:T-63-038 sha:2a61cebc src:manual/63-proj-mist.md:118 status:unchecked -->
 ### T-63-038 · kod-ryadok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1336,7 +1336,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-039 sha:c18a302b src:manual/63-proj-mist.md:120 klas:F -->
+<!-- fc id:T-63-039 sha:c18a302b src:manual/63-proj-mist.md:120 status:unchecked -->
 ### T-63-039 · kod-ryadok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1366,7 +1366,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-040 sha:d4572ea9 src:manual/63-proj-mist.md:122 klas:F -->
+<!-- fc id:T-63-040 sha:d4572ea9 src:manual/63-proj-mist.md:122 status:unchecked -->
 ### T-63-040 · kod-ryadok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1396,7 +1396,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-041 sha:7fdee34f src:manual/63-proj-mist.md:123 klas:F -->
+<!-- fc id:T-63-041 sha:7fdee34f src:manual/63-proj-mist.md:123 status:unchecked -->
 ### T-63-041 · kod-ryadok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1426,7 +1426,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-042 sha:69390e31 src:manual/63-proj-mist.md:131 klas:F -->
+<!-- fc id:T-63-042 sha:69390e31 src:manual/63-proj-mist.md:131 status:unchecked -->
 ### T-63-042 · kod-ryadok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1449,7 +1449,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-043 sha:2c701669 src:manual/63-proj-mist.md:133 klas:A -->
+<!-- fc id:T-63-043 sha:2c701669 src:manual/63-proj-mist.md:133 status:verbatim -->
 ### T-63-043 · kod-ryadok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1482,7 +1482,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-044 sha:0d388178 src:manual/63-proj-mist.md:136 klas:F -->
+<!-- fc id:T-63-044 sha:0d388178 src:manual/63-proj-mist.md:136 status:unchecked -->
 ### T-63-044 · kod-ryadok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1508,7 +1508,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-045 sha:c6873381 src:manual/63-proj-mist.md:137 klas:F -->
+<!-- fc id:T-63-045 sha:c6873381 src:manual/63-proj-mist.md:137 status:unchecked -->
 ### T-63-045 · kod-ryadok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1534,7 +1534,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-046 sha:8d130e38 src:manual/63-proj-mist.md:143 klas:A -->
+<!-- fc id:T-63-046 sha:8d130e38 src:manual/63-proj-mist.md:143 status:verbatim -->
 ### T-63-046 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1568,7 +1568,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-047 sha:4dd09020 src:manual/63-proj-mist.md:143 klas:E -->
+<!-- fc id:T-63-047 sha:4dd09020 src:manual/63-proj-mist.md:143 status:no-external-signal -->
 ### T-63-047 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1592,7 +1592,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-048 sha:e867d143 src:manual/63-proj-mist.md:147 klas:E -->
+<!-- fc id:T-63-048 sha:e867d143 src:manual/63-proj-mist.md:147 status:no-external-signal -->
 ### T-63-048 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1615,7 +1615,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-049 sha:392d6692 src:manual/63-proj-mist.md:147 klas:E -->
+<!-- fc id:T-63-049 sha:392d6692 src:manual/63-proj-mist.md:147 status:no-external-signal -->
 ### T-63-049 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1638,7 +1638,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-050 sha:b5609df0 src:manual/63-proj-mist.md:151 klas:E -->
+<!-- fc id:T-63-050 sha:b5609df0 src:manual/63-proj-mist.md:151 status:no-external-signal -->
 ### T-63-050 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1661,7 +1661,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-051 sha:201a16b4 src:manual/63-proj-mist.md:151 klas:E -->
+<!-- fc id:T-63-051 sha:201a16b4 src:manual/63-proj-mist.md:151 status:no-external-signal -->
 ### T-63-051 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1684,7 +1684,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-052 sha:be351eec src:manual/63-proj-mist.md:153 klas:F -->
+<!-- fc id:T-63-052 sha:be351eec src:manual/63-proj-mist.md:153 status:unchecked -->
 ### T-63-052 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1707,7 +1707,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-053 sha:12f1694d src:manual/63-proj-mist.md:157 klas:E -->
+<!-- fc id:T-63-053 sha:12f1694d src:manual/63-proj-mist.md:157 status:no-external-signal -->
 ### T-63-053 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1729,7 +1729,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-054 sha:1985092e src:manual/63-proj-mist.md:158 klas:F -->
+<!-- fc id:T-63-054 sha:1985092e src:manual/63-proj-mist.md:158 status:unchecked -->
 ### T-63-054 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1751,7 +1751,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-055 sha:529f3b27 src:manual/63-proj-mist.md:160 klas:K -->
+<!-- fc id:T-63-055 sha:529f3b27 src:manual/63-proj-mist.md:160 status:code-context -->
 ### T-63-055 · kod · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1812,7 +1812,7 @@ typedef struct {
 
 ---
 
-<!-- fc id:T-63-056 sha:f0f5135a src:manual/63-proj-mist.md:171 klas:F -->
+<!-- fc id:T-63-056 sha:f0f5135a src:manual/63-proj-mist.md:171 status:unchecked -->
 ### T-63-056 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1834,7 +1834,7 @@ typedef struct {
 
 ---
 
-<!-- fc id:T-63-057 sha:a87c2640 src:manual/63-proj-mist.md:172 klas:E -->
+<!-- fc id:T-63-057 sha:a87c2640 src:manual/63-proj-mist.md:172 status:no-external-signal -->
 ### T-63-057 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1856,7 +1856,7 @@ typedef struct {
 
 ---
 
-<!-- fc id:T-63-058 sha:09283dc8 src:manual/63-proj-mist.md:176 klas:K -->
+<!-- fc id:T-63-058 sha:09283dc8 src:manual/63-proj-mist.md:176 status:code-context -->
 ### T-63-058 · kod · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1927,7 +1927,7 @@ static void task_rx_can(void *arg) {
 
 ---
 
-<!-- fc id:T-63-059 sha:fdd16bb3 src:manual/63-proj-mist.md:191 klas:A -->
+<!-- fc id:T-63-059 sha:fdd16bb3 src:manual/63-proj-mist.md:191 status:verbatim -->
 ### T-63-059 · kod-ryadok · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1970,7 +1970,7 @@ static void task_rx_can(void *arg) {
 
 ---
 
-<!-- fc id:T-63-060 sha:582d7e98 src:manual/63-proj-mist.md:196 klas:E -->
+<!-- fc id:T-63-060 sha:582d7e98 src:manual/63-proj-mist.md:196 status:no-external-signal -->
 ### T-63-060 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1993,7 +1993,7 @@ static void task_rx_can(void *arg) {
 
 ---
 
-<!-- fc id:T-63-061 sha:05909696 src:manual/63-proj-mist.md:201 klas:A -->
+<!-- fc id:T-63-061 sha:05909696 src:manual/63-proj-mist.md:201 status:verbatim -->
 ### T-63-061 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2022,7 +2022,7 @@ static void task_rx_can(void *arg) {
 
 ---
 
-<!-- fc id:T-63-062 sha:cba16aff src:manual/63-proj-mist.md:204 klas:E -->
+<!-- fc id:T-63-062 sha:cba16aff src:manual/63-proj-mist.md:204 status:no-external-signal -->
 ### T-63-062 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2045,7 +2045,7 @@ static void task_rx_can(void *arg) {
 
 ---
 
-<!-- fc id:T-63-063 sha:631e3a04 src:manual/63-proj-mist.md:205 klas:E -->
+<!-- fc id:T-63-063 sha:631e3a04 src:manual/63-proj-mist.md:205 status:no-external-signal -->
 ### T-63-063 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2068,7 +2068,7 @@ static void task_rx_can(void *arg) {
 
 ---
 
-<!-- fc id:T-63-064 sha:a4aa8b3c src:manual/63-proj-mist.md:208 klas:E -->
+<!-- fc id:T-63-064 sha:a4aa8b3c src:manual/63-proj-mist.md:208 status:no-external-signal -->
 ### T-63-064 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2091,7 +2091,7 @@ static void task_rx_can(void *arg) {
 
 ---
 
-<!-- fc id:T-63-065 sha:72c8c00f src:manual/63-proj-mist.md:214 klas:E -->
+<!-- fc id:T-63-065 sha:72c8c00f src:manual/63-proj-mist.md:214 status:no-external-signal -->
 ### T-63-065 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2113,7 +2113,7 @@ static void task_rx_can(void *arg) {
 
 ---
 
-<!-- fc id:T-63-066 sha:9018335a src:manual/63-proj-mist.md:214 klas:E -->
+<!-- fc id:T-63-066 sha:9018335a src:manual/63-proj-mist.md:214 status:no-external-signal -->
 ### T-63-066 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2135,7 +2135,7 @@ static void task_rx_can(void *arg) {
 
 ---
 
-<!-- fc id:T-63-067 sha:88a71994 src:manual/63-proj-mist.md:217 klas:K -->
+<!-- fc id:T-63-067 sha:88a71994 src:manual/63-proj-mist.md:217 status:code-context -->
 ### T-63-067 · kod · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2172,7 +2172,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-068 sha:c5ba6a52 src:manual/63-proj-mist.md:227 klas:E -->
+<!-- fc id:T-63-068 sha:c5ba6a52 src:manual/63-proj-mist.md:227 status:no-external-signal -->
 ### T-63-068 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2196,7 +2196,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-069 sha:af328f59 src:manual/63-proj-mist.md:228 klas:E -->
+<!-- fc id:T-63-069 sha:af328f59 src:manual/63-proj-mist.md:228 status:no-external-signal -->
 ### T-63-069 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2220,7 +2220,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-070 sha:8a0f6cc7 src:manual/63-proj-mist.md:229 klas:E -->
+<!-- fc id:T-63-070 sha:8a0f6cc7 src:manual/63-proj-mist.md:229 status:no-external-signal -->
 ### T-63-070 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2244,7 +2244,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-071 sha:3aa19ebb src:manual/63-proj-mist.md:232 klas:E -->
+<!-- fc id:T-63-071 sha:3aa19ebb src:manual/63-proj-mist.md:232 status:no-external-signal -->
 ### T-63-071 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2266,7 +2266,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-072 sha:b2417e1d src:manual/63-proj-mist.md:237 klas:F -->
+<!-- fc id:T-63-072 sha:b2417e1d src:manual/63-proj-mist.md:237 status:unchecked -->
 ### T-63-072 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2297,7 +2297,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-073 sha:477e1cf2 src:manual/63-proj-mist.md:237 klas:E -->
+<!-- fc id:T-63-073 sha:477e1cf2 src:manual/63-proj-mist.md:237 status:no-external-signal -->
 ### T-63-073 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2328,7 +2328,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-074 sha:ffa0be4a src:manual/63-proj-mist.md:239 klas:E -->
+<!-- fc id:T-63-074 sha:ffa0be4a src:manual/63-proj-mist.md:239 status:no-external-signal -->
 ### T-63-074 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2359,7 +2359,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-075 sha:cb1d1c36 src:manual/63-proj-mist.md:240 klas:E -->
+<!-- fc id:T-63-075 sha:cb1d1c36 src:manual/63-proj-mist.md:240 status:no-external-signal -->
 ### T-63-075 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2390,7 +2390,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-076 sha:ba43020f src:manual/63-proj-mist.md:242 klas:E -->
+<!-- fc id:T-63-076 sha:ba43020f src:manual/63-proj-mist.md:242 status:no-external-signal -->
 ### T-63-076 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2421,7 +2421,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-077 sha:eb7a0411 src:manual/63-proj-mist.md:244 klas:E -->
+<!-- fc id:T-63-077 sha:eb7a0411 src:manual/63-proj-mist.md:244 status:no-external-signal -->
 ### T-63-077 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2452,7 +2452,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-078 sha:9dc32c61 src:manual/63-proj-mist.md:245 klas:E -->
+<!-- fc id:T-63-078 sha:9dc32c61 src:manual/63-proj-mist.md:245 status:no-external-signal -->
 ### T-63-078 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2483,7 +2483,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-079 sha:9afcee63 src:manual/63-proj-mist.md:246 klas:E -->
+<!-- fc id:T-63-079 sha:9afcee63 src:manual/63-proj-mist.md:246 status:no-external-signal -->
 ### T-63-079 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2514,7 +2514,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-080 sha:20ab681f src:manual/63-proj-mist.md:251 klas:A -->
+<!-- fc id:T-63-080 sha:20ab681f src:manual/63-proj-mist.md:251 status:verbatim -->
 ### T-63-080 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**

@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/f-oflayn.md`
 
-Одиниць твердження: **28**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **28**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-F-001 sha:c0c77540 src:dodatky/f-oflayn.md:3 klas:E -->
+<!-- fc id:T-F-001 sha:c0c77540 src:dodatky/f-oflayn.md:3 status:no-external-signal -->
 ### T-F-001 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-F-002 sha:41af133d src:dodatky/f-oflayn.md:3 klas:E -->
+<!-- fc id:T-F-002 sha:41af133d src:dodatky/f-oflayn.md:3 status:no-external-signal -->
 ### T-F-002 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-F-003 sha:abb242bb src:dodatky/f-oflayn.md:6 klas:E -->
+<!-- fc id:T-F-003 sha:abb242bb src:dodatky/f-oflayn.md:6 status:no-external-signal -->
 ### T-F-003 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -74,7 +74,7 @@
 
 ---
 
-<!-- fc id:T-F-004 sha:c85a7ca9 src:dodatky/f-oflayn.md:7 klas:E -->
+<!-- fc id:T-F-004 sha:c85a7ca9 src:dodatky/f-oflayn.md:7 status:no-external-signal -->
 ### T-F-004 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -96,7 +96,7 @@
 
 ---
 
-<!-- fc id:T-F-005 sha:773e202f src:dodatky/f-oflayn.md:11 klas:F -->
+<!-- fc id:T-F-005 sha:773e202f src:dodatky/f-oflayn.md:11 status:unchecked -->
 ### T-F-005 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-F-006 sha:0c2f9a61 src:dodatky/f-oflayn.md:12 klas:E -->
+<!-- fc id:T-F-006 sha:0c2f9a61 src:dodatky/f-oflayn.md:12 status:no-external-signal -->
 ### T-F-006 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -157,7 +157,7 @@
 
 ---
 
-<!-- fc id:T-F-007 sha:977a7391 src:dodatky/f-oflayn.md:21 klas:F -->
+<!-- fc id:T-F-007 sha:977a7391 src:dodatky/f-oflayn.md:21 status:unchecked -->
 ### T-F-007 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -185,7 +185,7 @@
 
 ---
 
-<!-- fc id:T-F-008 sha:4cb89b29 src:dodatky/f-oflayn.md:22 klas:F -->
+<!-- fc id:T-F-008 sha:4cb89b29 src:dodatky/f-oflayn.md:22 status:unchecked -->
 ### T-F-008 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -213,7 +213,7 @@
 
 ---
 
-<!-- fc id:T-F-009 sha:fb3f94ae src:dodatky/f-oflayn.md:31 klas:E -->
+<!-- fc id:T-F-009 sha:fb3f94ae src:dodatky/f-oflayn.md:31 status:no-external-signal -->
 ### T-F-009 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -238,7 +238,7 @@
 
 ---
 
-<!-- fc id:T-F-010 sha:8a5c571c src:dodatky/f-oflayn.md:32 klas:E -->
+<!-- fc id:T-F-010 sha:8a5c571c src:dodatky/f-oflayn.md:32 status:no-external-signal -->
 ### T-F-010 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -263,7 +263,7 @@
 
 ---
 
-<!-- fc id:T-F-011 sha:ddd9b3b3 src:dodatky/f-oflayn.md:38 klas:F -->
+<!-- fc id:T-F-011 sha:ddd9b3b3 src:dodatky/f-oflayn.md:38 status:unchecked -->
 ### T-F-011 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -289,7 +289,7 @@
 
 ---
 
-<!-- fc id:T-F-012 sha:7c294a95 src:dodatky/f-oflayn.md:47 klas:A -->
+<!-- fc id:T-F-012 sha:7c294a95 src:dodatky/f-oflayn.md:47 status:verbatim -->
 ### T-F-012 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -321,7 +321,7 @@
 
 ---
 
-<!-- fc id:T-F-013 sha:4ec254e1 src:dodatky/f-oflayn.md:53 klas:E -->
+<!-- fc id:T-F-013 sha:4ec254e1 src:dodatky/f-oflayn.md:53 status:no-external-signal -->
 ### T-F-013 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -342,7 +342,7 @@
 
 ---
 
-<!-- fc id:T-F-014 sha:6f3101ca src:dodatky/f-oflayn.md:57 klas:E -->
+<!-- fc id:T-F-014 sha:6f3101ca src:dodatky/f-oflayn.md:57 status:no-external-signal -->
 ### T-F-014 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -377,7 +377,7 @@
 
 ---
 
-<!-- fc id:T-F-015 sha:576d4fa7 src:dodatky/f-oflayn.md:68 klas:E -->
+<!-- fc id:T-F-015 sha:576d4fa7 src:dodatky/f-oflayn.md:68 status:no-external-signal -->
 ### T-F-015 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -402,7 +402,7 @@
 
 ---
 
-<!-- fc id:T-F-016 sha:615e9c9f src:dodatky/f-oflayn.md:76 klas:F -->
+<!-- fc id:T-F-016 sha:615e9c9f src:dodatky/f-oflayn.md:76 status:unchecked -->
 ### T-F-016 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -428,7 +428,7 @@
 
 ---
 
-<!-- fc id:T-F-017 sha:4b75c150 src:dodatky/f-oflayn.md:86 klas:E -->
+<!-- fc id:T-F-017 sha:4b75c150 src:dodatky/f-oflayn.md:86 status:no-external-signal -->
 ### T-F-017 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -450,7 +450,7 @@
 
 ---
 
-<!-- fc id:T-F-018 sha:7391fd9d src:dodatky/f-oflayn.md:88 klas:E -->
+<!-- fc id:T-F-018 sha:7391fd9d src:dodatky/f-oflayn.md:88 status:no-external-signal -->
 ### T-F-018 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -472,7 +472,7 @@
 
 ---
 
-<!-- fc id:T-F-019 sha:643ef37d src:dodatky/f-oflayn.md:88 klas:E -->
+<!-- fc id:T-F-019 sha:643ef37d src:dodatky/f-oflayn.md:88 status:no-external-signal -->
 ### T-F-019 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -494,7 +494,7 @@
 
 ---
 
-<!-- fc id:T-F-020 sha:75449381 src:dodatky/f-oflayn.md:91 klas:E -->
+<!-- fc id:T-F-020 sha:75449381 src:dodatky/f-oflayn.md:91 status:no-external-signal -->
 ### T-F-020 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -517,7 +517,7 @@
 
 ---
 
-<!-- fc id:T-F-021 sha:f04861a1 src:dodatky/f-oflayn.md:97 klas:E -->
+<!-- fc id:T-F-021 sha:f04861a1 src:dodatky/f-oflayn.md:97 status:no-external-signal -->
 ### T-F-021 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -538,7 +538,7 @@
 
 ---
 
-<!-- fc id:T-F-022 sha:5776100f src:dodatky/f-oflayn.md:99 klas:E -->
+<!-- fc id:T-F-022 sha:5776100f src:dodatky/f-oflayn.md:99 status:no-external-signal -->
 ### T-F-022 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -564,7 +564,7 @@
 
 ---
 
-<!-- fc id:T-F-023 sha:7351017b src:dodatky/f-oflayn.md:100 klas:A -->
+<!-- fc id:T-F-023 sha:7351017b src:dodatky/f-oflayn.md:100 status:verbatim -->
 ### T-F-023 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -612,7 +612,7 @@
 
 ---
 
-<!-- fc id:T-F-024 sha:de0d6323 src:dodatky/f-oflayn.md:102 klas:E -->
+<!-- fc id:T-F-024 sha:de0d6323 src:dodatky/f-oflayn.md:102 status:no-external-signal -->
 ### T-F-024 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -638,7 +638,7 @@
 
 ---
 
-<!-- fc id:T-F-025 sha:c5e8dc8a src:dodatky/f-oflayn.md:103 klas:E -->
+<!-- fc id:T-F-025 sha:c5e8dc8a src:dodatky/f-oflayn.md:103 status:no-external-signal -->
 ### T-F-025 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -664,7 +664,7 @@
 
 ---
 
-<!-- fc id:T-F-026 sha:6cb1e4d3 src:dodatky/f-oflayn.md:104 klas:E -->
+<!-- fc id:T-F-026 sha:6cb1e4d3 src:dodatky/f-oflayn.md:104 status:no-external-signal -->
 ### T-F-026 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -690,7 +690,7 @@
 
 ---
 
-<!-- fc id:T-F-027 sha:acfc2b18 src:dodatky/f-oflayn.md:106 klas:E -->
+<!-- fc id:T-F-027 sha:acfc2b18 src:dodatky/f-oflayn.md:106 status:no-external-signal -->
 ### T-F-027 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -712,7 +712,7 @@
 
 ---
 
-<!-- fc id:T-F-028 sha:84821e99 src:dodatky/f-oflayn.md:106 klas:E -->
+<!-- fc id:T-F-028 sha:84821e99 src:dodatky/f-oflayn.md:106 status:no-external-signal -->
 ### T-F-028 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**

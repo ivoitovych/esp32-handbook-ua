@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/19-ota.md`
 
-Одиниць твердження: **100**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **100**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-19-001 sha:609f0617 src:manual/19-ota.md:3 klas:A -->
+<!-- fc id:T-19-001 sha:609f0617 src:manual/19-ota.md:3 status:verbatim -->
 ### T-19-001 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -37,7 +37,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-002 sha:b5ef6d64 src:manual/19-ota.md:4 klas:E -->
+<!-- fc id:T-19-002 sha:b5ef6d64 src:manual/19-ota.md:4 status:no-external-signal -->
 ### T-19-002 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -60,7 +60,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-003 sha:c80b7682 src:manual/19-ota.md:7 klas:E -->
+<!-- fc id:T-19-003 sha:c80b7682 src:manual/19-ota.md:7 status:no-external-signal -->
 ### T-19-003 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -83,7 +83,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-004 sha:8ec2fd0d src:manual/19-ota.md:8 klas:E -->
+<!-- fc id:T-19-004 sha:8ec2fd0d src:manual/19-ota.md:8 status:no-external-signal -->
 ### T-19-004 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -106,7 +106,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-005 sha:76464490 src:manual/19-ota.md:13 klas:A -->
+<!-- fc id:T-19-005 sha:76464490 src:manual/19-ota.md:13 status:verbatim -->
 ### T-19-005 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -133,7 +133,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-006 sha:41ec9b71 src:manual/19-ota.md:15 klas:F -->
+<!-- fc id:T-19-006 sha:41ec9b71 src:manual/19-ota.md:15 status:unchecked -->
 ### T-19-006 · tablycya-shapka · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -160,7 +160,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-007 sha:ff82e6cf src:manual/19-ota.md:17 klas:A -->
+<!-- fc id:T-19-007 sha:ff82e6cf src:manual/19-ota.md:17 status:verbatim -->
 ### T-19-007 · komirka · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -199,7 +199,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-008 sha:c7c9e545 src:manual/19-ota.md:17 klas:F -->
+<!-- fc id:T-19-008 sha:c7c9e545 src:manual/19-ota.md:17 status:unchecked -->
 ### T-19-008 · komirka · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -232,7 +232,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-009 sha:d66c4921 src:manual/19-ota.md:18 klas:A -->
+<!-- fc id:T-19-009 sha:d66c4921 src:manual/19-ota.md:18 status:verbatim -->
 ### T-19-009 · komirka · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -271,7 +271,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-010 sha:5ee59b5f src:manual/19-ota.md:18 klas:F -->
+<!-- fc id:T-19-010 sha:5ee59b5f src:manual/19-ota.md:18 status:unchecked -->
 ### T-19-010 · komirka · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -304,7 +304,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-011 sha:94e079d1 src:manual/19-ota.md:19 klas:A -->
+<!-- fc id:T-19-011 sha:94e079d1 src:manual/19-ota.md:19 status:verbatim -->
 ### T-19-011 · komirka · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -343,7 +343,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-012 sha:6c8c58b7 src:manual/19-ota.md:19 klas:F -->
+<!-- fc id:T-19-012 sha:6c8c58b7 src:manual/19-ota.md:19 status:unchecked -->
 ### T-19-012 · komirka · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -376,7 +376,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-013 sha:8f05dca6 src:manual/19-ota.md:21 klas:A -->
+<!-- fc id:T-19-013 sha:8f05dca6 src:manual/19-ota.md:21 status:verbatim -->
 ### T-19-013 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -407,7 +407,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-014 sha:9f4e8a7e src:manual/19-ota.md:21 klas:A -->
+<!-- fc id:T-19-014 sha:9f4e8a7e src:manual/19-ota.md:21 status:verbatim -->
 ### T-19-014 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -438,7 +438,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-015 sha:32fa0d6d src:manual/19-ota.md:23 klas:F -->
+<!-- fc id:T-19-015 sha:32fa0d6d src:manual/19-ota.md:23 status:unchecked -->
 ### T-19-015 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -463,7 +463,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-016 sha:a7a0e9f4 src:manual/19-ota.md:25 klas:A -->
+<!-- fc id:T-19-016 sha:a7a0e9f4 src:manual/19-ota.md:25 status:verbatim -->
 ### T-19-016 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -494,7 +494,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-017 sha:81b53a00 src:manual/19-ota.md:27 klas:E -->
+<!-- fc id:T-19-017 sha:81b53a00 src:manual/19-ota.md:27 status:no-external-signal -->
 ### T-19-017 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -518,7 +518,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-018 sha:9a7f6e60 src:manual/19-ota.md:28 klas:E -->
+<!-- fc id:T-19-018 sha:9a7f6e60 src:manual/19-ota.md:28 status:no-external-signal -->
 ### T-19-018 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -542,7 +542,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-019 sha:66862daa src:manual/19-ota.md:30 klas:E -->
+<!-- fc id:T-19-019 sha:66862daa src:manual/19-ota.md:30 status:no-external-signal -->
 ### T-19-019 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -566,7 +566,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-020 sha:276fb12f src:manual/19-ota.md:33 klas:F -->
+<!-- fc id:T-19-020 sha:276fb12f src:manual/19-ota.md:33 status:unchecked -->
 ### T-19-020 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -592,7 +592,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 ---
 
-<!-- fc id:T-19-021 sha:b2d52dd0 src:manual/19-ota.md:33 klas:E -->
+<!-- fc id:T-19-021 sha:b2d52dd0 src:manual/19-ota.md:33 status:no-external-signal -->
 ### T-19-021 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -618,7 +618,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 ---
 
-<!-- fc id:T-19-022 sha:e5931173 src:manual/19-ota.md:35 klas:B -->
+<!-- fc id:T-19-022 sha:e5931173 src:manual/19-ota.md:35 status:derived -->
 ### T-19-022 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -650,7 +650,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 ---
 
-<!-- fc id:T-19-023 sha:1bb643e7 src:manual/19-ota.md:36 klas:A -->
+<!-- fc id:T-19-023 sha:1bb643e7 src:manual/19-ota.md:36 status:verbatim -->
 ### T-19-023 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -682,7 +682,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 ---
 
-<!-- fc id:T-19-024 sha:9fb277d5 src:manual/19-ota.md:41 klas:A -->
+<!-- fc id:T-19-024 sha:9fb277d5 src:manual/19-ota.md:41 status:verbatim -->
 ### T-19-024 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -709,7 +709,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 ---
 
-<!-- fc id:T-19-025 sha:07dadce6 src:manual/19-ota.md:43 klas:B -->
+<!-- fc id:T-19-025 sha:07dadce6 src:manual/19-ota.md:43 status:derived -->
 ### T-19-025 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -741,7 +741,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 ---
 
-<!-- fc id:T-19-026 sha:d79fbad6 src:manual/19-ota.md:44 klas:F -->
+<!-- fc id:T-19-026 sha:d79fbad6 src:manual/19-ota.md:44 status:unchecked -->
 ### T-19-026 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -767,7 +767,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 ---
 
-<!-- fc id:T-19-027 sha:7be3bc35 src:manual/19-ota.md:45 klas:L -->
+<!-- fc id:T-19-027 sha:7be3bc35 src:manual/19-ota.md:45 status:looked-not-found -->
 ### T-19-027 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -798,7 +798,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 
 ---
 
-<!-- fc id:T-19-028 sha:65252f58 src:manual/19-ota.md:51 klas:F -->
+<!-- fc id:T-19-028 sha:65252f58 src:manual/19-ota.md:51 status:unchecked -->
 ### T-19-028 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -824,7 +824,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 ---
 
-<!-- fc id:T-19-029 sha:7678b715 src:manual/19-ota.md:52 klas:A -->
+<!-- fc id:T-19-029 sha:7678b715 src:manual/19-ota.md:52 status:verbatim -->
 ### T-19-029 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -856,7 +856,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 ---
 
-<!-- fc id:T-19-030 sha:81c37a98 src:manual/19-ota.md:53 klas:F -->
+<!-- fc id:T-19-030 sha:81c37a98 src:manual/19-ota.md:53 status:unchecked -->
 ### T-19-030 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -882,7 +882,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 ---
 
-<!-- fc id:T-19-031 sha:039b7725 src:manual/19-ota.md:57 klas:F -->
+<!-- fc id:T-19-031 sha:039b7725 src:manual/19-ota.md:57 status:unchecked -->
 ### T-19-031 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -907,7 +907,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 ---
 
-<!-- fc id:T-19-032 sha:c6f7a0a0 src:manual/19-ota.md:59 klas:E -->
+<!-- fc id:T-19-032 sha:c6f7a0a0 src:manual/19-ota.md:59 status:no-external-signal -->
 ### T-19-032 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -932,7 +932,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 ---
 
-<!-- fc id:T-19-033 sha:ee09f9c5 src:manual/19-ota.md:65 klas:E -->
+<!-- fc id:T-19-033 sha:ee09f9c5 src:manual/19-ota.md:65 status:no-external-signal -->
 ### T-19-033 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -957,7 +957,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 ---
 
-<!-- fc id:T-19-034 sha:261fa7cf src:manual/19-ota.md:65 klas:E -->
+<!-- fc id:T-19-034 sha:261fa7cf src:manual/19-ota.md:65 status:no-external-signal -->
 ### T-19-034 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -982,7 +982,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 ---
 
-<!-- fc id:T-19-035 sha:4f520afa src:manual/19-ota.md:68 klas:E -->
+<!-- fc id:T-19-035 sha:4f520afa src:manual/19-ota.md:68 status:no-external-signal -->
 ### T-19-035 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1007,7 +1007,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 ---
 
-<!-- fc id:T-19-036 sha:e66102fe src:manual/19-ota.md:69 klas:F -->
+<!-- fc id:T-19-036 sha:e66102fe src:manual/19-ota.md:69 status:unchecked -->
 ### T-19-036 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1032,7 +1032,7 @@ OTA оновлює лише образ застосунку — таблиця �
 
 ---
 
-<!-- fc id:T-19-037 sha:7f85d29c src:manual/19-ota.md:71 klas:E -->
+<!-- fc id:T-19-037 sha:7f85d29c src:manual/19-ota.md:71 status:no-external-signal -->
 ### T-19-037 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1055,7 +1055,7 @@ support`.
 
 ---
 
-<!-- fc id:T-19-038 sha:fe900860 src:manual/19-ota.md:71 klas:A -->
+<!-- fc id:T-19-038 sha:fe900860 src:manual/19-ota.md:71 status:verbatim -->
 ### T-19-038 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1091,7 +1091,7 @@ support`.
 
 ---
 
-<!-- fc id:T-19-039 sha:e7ba3131 src:manual/19-ota.md:75 klas:A -->
+<!-- fc id:T-19-039 sha:e7ba3131 src:manual/19-ota.md:75 status:verbatim -->
 ### T-19-039 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1127,7 +1127,7 @@ support`.
 
 ---
 
-<!-- fc id:T-19-040 sha:5139bc66 src:manual/19-ota.md:76 klas:E -->
+<!-- fc id:T-19-040 sha:5139bc66 src:manual/19-ota.md:76 status:no-external-signal -->
 ### T-19-040 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1150,7 +1150,7 @@ support`.
 
 ---
 
-<!-- fc id:T-19-041 sha:1e2699ba src:manual/19-ota.md:79 klas:K -->
+<!-- fc id:T-19-041 sha:1e2699ba src:manual/19-ota.md:79 status:code-context -->
 ### T-19-041 · kod · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1188,7 +1188,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 ---
 
-<!-- fc id:T-19-042 sha:468eb6ac src:manual/19-ota.md:80 klas:A -->
+<!-- fc id:T-19-042 sha:468eb6ac src:manual/19-ota.md:80 status:verbatim -->
 ### T-19-042 · kod-ryadok · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1224,7 +1224,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 ---
 
-<!-- fc id:T-19-043 sha:abd2a91e src:manual/19-ota.md:83 klas:E -->
+<!-- fc id:T-19-043 sha:abd2a91e src:manual/19-ota.md:83 status:no-external-signal -->
 ### T-19-043 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1247,7 +1247,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 ---
 
-<!-- fc id:T-19-044 sha:77b32c9c src:manual/19-ota.md:88 klas:E -->
+<!-- fc id:T-19-044 sha:77b32c9c src:manual/19-ota.md:88 status:no-external-signal -->
 ### T-19-044 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1272,7 +1272,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 ---
 
-<!-- fc id:T-19-045 sha:08b013d9 src:manual/19-ota.md:89 klas:F -->
+<!-- fc id:T-19-045 sha:08b013d9 src:manual/19-ota.md:89 status:unchecked -->
 ### T-19-045 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1297,7 +1297,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 ---
 
-<!-- fc id:T-19-046 sha:11b654b3 src:manual/19-ota.md:93 klas:E -->
+<!-- fc id:T-19-046 sha:11b654b3 src:manual/19-ota.md:93 status:no-external-signal -->
 ### T-19-046 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1323,7 +1323,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 ---
 
-<!-- fc id:T-19-047 sha:3af5d715 src:manual/19-ota.md:95 klas:E -->
+<!-- fc id:T-19-047 sha:3af5d715 src:manual/19-ota.md:95 status:no-external-signal -->
 ### T-19-047 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1349,7 +1349,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 ---
 
-<!-- fc id:T-19-048 sha:6726988c src:manual/19-ota.md:96 klas:E -->
+<!-- fc id:T-19-048 sha:6726988c src:manual/19-ota.md:96 status:no-external-signal -->
 ### T-19-048 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1375,7 +1375,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 ---
 
-<!-- fc id:T-19-049 sha:d7e1846e src:manual/19-ota.md:100 klas:F -->
+<!-- fc id:T-19-049 sha:d7e1846e src:manual/19-ota.md:100 status:unchecked -->
 ### T-19-049 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1398,7 +1398,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 ---
 
-<!-- fc id:T-19-050 sha:037e1f7f src:manual/19-ota.md:100 klas:E -->
+<!-- fc id:T-19-050 sha:037e1f7f src:manual/19-ota.md:100 status:no-external-signal -->
 ### T-19-050 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1421,7 +1421,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 ---
 
-<!-- fc id:T-19-051 sha:5a3ea5c5 src:manual/19-ota.md:106 klas:A -->
+<!-- fc id:T-19-051 sha:5a3ea5c5 src:manual/19-ota.md:106 status:verbatim -->
 ### T-19-051 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1459,7 +1459,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 ---
 
-<!-- fc id:T-19-052 sha:d232da54 src:manual/19-ota.md:106 klas:E -->
+<!-- fc id:T-19-052 sha:d232da54 src:manual/19-ota.md:106 status:no-external-signal -->
 ### T-19-052 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1481,7 +1481,7 @@ esp_ota_mark_app_valid_cancel_rollback();
 
 ---
 
-<!-- fc id:T-19-053 sha:d1211944 src:manual/19-ota.md:109 klas:K -->
+<!-- fc id:T-19-053 sha:d1211944 src:manual/19-ota.md:109 status:code-context -->
 ### T-19-053 · kod · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1546,7 +1546,7 @@ if (err == ESP_OK) {
 
 ---
 
-<!-- fc id:T-19-054 sha:73b8d8c9 src:manual/19-ota.md:111 klas:F -->
+<!-- fc id:T-19-054 sha:73b8d8c9 src:manual/19-ota.md:111 status:unchecked -->
 ### T-19-054 · kod-ryadok · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1573,7 +1573,7 @@ esp_https_ota_config_t ota_cfg = { .http_config = &http_cfg };
 
 ---
 
-<!-- fc id:T-19-055 sha:01247965 src:manual/19-ota.md:112 klas:F -->
+<!-- fc id:T-19-055 sha:01247965 src:manual/19-ota.md:112 status:unchecked -->
 ### T-19-055 · kod-ryadok · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1600,7 +1600,7 @@ esp_https_ota_config_t ota_cfg = { .http_config = &http_cfg };
 
 ---
 
-<!-- fc id:T-19-056 sha:cd9c6243 src:manual/19-ota.md:113 klas:E -->
+<!-- fc id:T-19-056 sha:cd9c6243 src:manual/19-ota.md:113 status:no-external-signal -->
 ### T-19-056 · kod-ryadok · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1640,7 +1640,7 @@ esp_https_ota_config_t ota_cfg = { .http_config = &http_cfg };
 
 ---
 
-<!-- fc id:T-19-057 sha:53b0c544 src:manual/19-ota.md:119 klas:A -->
+<!-- fc id:T-19-057 sha:53b0c544 src:manual/19-ota.md:119 status:verbatim -->
 ### T-19-057 · kod-ryadok · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1683,7 +1683,7 @@ if (err == ESP_OK) {
 
 ---
 
-<!-- fc id:T-19-058 sha:bd079e1b src:manual/19-ota.md:121 klas:A -->
+<!-- fc id:T-19-058 sha:bd079e1b src:manual/19-ota.md:121 status:verbatim -->
 ### T-19-058 · kod-ryadok · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1726,7 +1726,7 @@ if (err == ESP_OK) {
 
 ---
 
-<!-- fc id:T-19-059 sha:967bf5da src:manual/19-ota.md:125 klas:A -->
+<!-- fc id:T-19-059 sha:967bf5da src:manual/19-ota.md:125 status:verbatim -->
 ### T-19-059 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1755,7 +1755,7 @@ if (err == ESP_OK) {
 
 ---
 
-<!-- fc id:T-19-060 sha:8be84f18 src:manual/19-ota.md:129 klas:A -->
+<!-- fc id:T-19-060 sha:8be84f18 src:manual/19-ota.md:129 status:verbatim -->
 ### T-19-060 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1795,7 +1795,7 @@ if (err == ESP_OK) {
 
 ---
 
-<!-- fc id:T-19-061 sha:3282d948 src:manual/19-ota.md:131 klas:F -->
+<!-- fc id:T-19-061 sha:3282d948 src:manual/19-ota.md:131 status:unchecked -->
 ### T-19-061 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1819,7 +1819,7 @@ if (err == ESP_OK) {
 
 ---
 
-<!-- fc id:T-19-062 sha:588b1000 src:manual/19-ota.md:135 klas:A -->
+<!-- fc id:T-19-062 sha:588b1000 src:manual/19-ota.md:135 status:verbatim -->
 ### T-19-062 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1854,7 +1854,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-063 sha:2a37192a src:manual/19-ota.md:136 klas:E -->
+<!-- fc id:T-19-063 sha:2a37192a src:manual/19-ota.md:136 status:no-external-signal -->
 ### T-19-063 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1883,7 +1883,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-064 sha:91d63b18 src:manual/19-ota.md:136 klas:F -->
+<!-- fc id:T-19-064 sha:91d63b18 src:manual/19-ota.md:136 status:unchecked -->
 ### T-19-064 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1912,7 +1912,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-065 sha:c3c7443f src:manual/19-ota.md:138 klas:E -->
+<!-- fc id:T-19-065 sha:c3c7443f src:manual/19-ota.md:138 status:no-external-signal -->
 ### T-19-065 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1941,7 +1941,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-066 sha:f314a81b src:manual/19-ota.md:139 klas:E -->
+<!-- fc id:T-19-066 sha:f314a81b src:manual/19-ota.md:139 status:no-external-signal -->
 ### T-19-066 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1970,7 +1970,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-067 sha:8d089849 src:manual/19-ota.md:146 klas:F -->
+<!-- fc id:T-19-067 sha:8d089849 src:manual/19-ota.md:146 status:unchecked -->
 ### T-19-067 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -1993,7 +1993,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-068 sha:41b3326d src:manual/19-ota.md:147 klas:E -->
+<!-- fc id:T-19-068 sha:41b3326d src:manual/19-ota.md:147 status:no-external-signal -->
 ### T-19-068 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2016,7 +2016,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-069 sha:f53c326f src:manual/19-ota.md:150 klas:C -->
+<!-- fc id:T-19-069 sha:f53c326f src:manual/19-ota.md:150 status:named-unreachable -->
 ### T-19-069 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2044,7 +2044,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-070 sha:bc76db57 src:manual/19-ota.md:151 klas:B -->
+<!-- fc id:T-19-070 sha:bc76db57 src:manual/19-ota.md:151 status:derived -->
 ### T-19-070 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2073,7 +2073,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-071 sha:f162c013 src:manual/19-ota.md:154 klas:E -->
+<!-- fc id:T-19-071 sha:f162c013 src:manual/19-ota.md:154 status:no-external-signal -->
 ### T-19-071 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2097,7 +2097,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-072 sha:d5d0cfea src:manual/19-ota.md:155 klas:E -->
+<!-- fc id:T-19-072 sha:d5d0cfea src:manual/19-ota.md:155 status:no-external-signal -->
 ### T-19-072 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2121,7 +2121,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-073 sha:bf8c5424 src:manual/19-ota.md:159 klas:E -->
+<!-- fc id:T-19-073 sha:bf8c5424 src:manual/19-ota.md:159 status:no-external-signal -->
 ### T-19-073 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2145,7 +2145,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-074 sha:7dec3564 src:manual/19-ota.md:160 klas:E -->
+<!-- fc id:T-19-074 sha:7dec3564 src:manual/19-ota.md:160 status:no-external-signal -->
 ### T-19-074 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2169,7 +2169,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-075 sha:d80aa0f3 src:manual/19-ota.md:166 klas:F -->
+<!-- fc id:T-19-075 sha:d80aa0f3 src:manual/19-ota.md:166 status:unchecked -->
 ### T-19-075 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2193,7 +2193,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-076 sha:75d481e5 src:manual/19-ota.md:167 klas:E -->
+<!-- fc id:T-19-076 sha:75d481e5 src:manual/19-ota.md:167 status:no-external-signal -->
 ### T-19-076 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2217,7 +2217,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-077 sha:e2bdd6f5 src:manual/19-ota.md:168 klas:E -->
+<!-- fc id:T-19-077 sha:e2bdd6f5 src:manual/19-ota.md:168 status:no-external-signal -->
 ### T-19-077 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2241,7 +2241,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-078 sha:8e98d9bf src:manual/19-ota.md:171 klas:F -->
+<!-- fc id:T-19-078 sha:8e98d9bf src:manual/19-ota.md:171 status:unchecked -->
 ### T-19-078 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2266,7 +2266,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-079 sha:8e13db40 src:manual/19-ota.md:173 klas:E -->
+<!-- fc id:T-19-079 sha:8e13db40 src:manual/19-ota.md:173 status:no-external-signal -->
 ### T-19-079 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2291,7 +2291,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-080 sha:6f335a4a src:manual/19-ota.md:174 klas:E -->
+<!-- fc id:T-19-080 sha:6f335a4a src:manual/19-ota.md:174 status:no-external-signal -->
 ### T-19-080 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2316,7 +2316,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-081 sha:e614c1b9 src:manual/19-ota.md:177 klas:E -->
+<!-- fc id:T-19-081 sha:e614c1b9 src:manual/19-ota.md:177 status:no-external-signal -->
 ### T-19-081 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2340,7 +2340,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-082 sha:da46df1f src:manual/19-ota.md:179 klas:E -->
+<!-- fc id:T-19-082 sha:da46df1f src:manual/19-ota.md:179 status:no-external-signal -->
 ### T-19-082 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2364,7 +2364,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-083 sha:39f53d6f src:manual/19-ota.md:184 klas:E -->
+<!-- fc id:T-19-083 sha:39f53d6f src:manual/19-ota.md:184 status:no-external-signal -->
 ### T-19-083 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2385,7 +2385,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-084 sha:3017dceb src:manual/19-ota.md:186 klas:A -->
+<!-- fc id:T-19-084 sha:3017dceb src:manual/19-ota.md:186 status:verbatim -->
 ### T-19-084 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2427,7 +2427,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-085 sha:e0610cd8 src:manual/19-ota.md:187 klas:F -->
+<!-- fc id:T-19-085 sha:e0610cd8 src:manual/19-ota.md:187 status:unchecked -->
 ### T-19-085 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2451,7 +2451,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-086 sha:e0ec9d02 src:manual/19-ota.md:188 klas:A -->
+<!-- fc id:T-19-086 sha:e0ec9d02 src:manual/19-ota.md:188 status:verbatim -->
 ### T-19-086 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2481,7 +2481,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-087 sha:700279ab src:manual/19-ota.md:191 klas:A -->
+<!-- fc id:T-19-087 sha:700279ab src:manual/19-ota.md:191 status:verbatim -->
 ### T-19-087 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2521,7 +2521,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-088 sha:5b3367f3 src:manual/19-ota.md:192 klas:E -->
+<!-- fc id:T-19-088 sha:5b3367f3 src:manual/19-ota.md:192 status:no-external-signal -->
 ### T-19-088 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2543,7 +2543,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-089 sha:26e6b0e5 src:manual/19-ota.md:194 klas:E -->
+<!-- fc id:T-19-089 sha:26e6b0e5 src:manual/19-ota.md:194 status:no-external-signal -->
 ### T-19-089 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2565,7 +2565,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-090 sha:b39e51ad src:manual/19-ota.md:194 klas:E -->
+<!-- fc id:T-19-090 sha:b39e51ad src:manual/19-ota.md:194 status:no-external-signal -->
 ### T-19-090 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2587,7 +2587,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-091 sha:ee73eb3a src:manual/19-ota.md:197 klas:F -->
+<!-- fc id:T-19-091 sha:ee73eb3a src:manual/19-ota.md:197 status:unchecked -->
 ### T-19-091 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2611,7 +2611,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-092 sha:ab6808e1 src:manual/19-ota.md:198 klas:F -->
+<!-- fc id:T-19-092 sha:ab6808e1 src:manual/19-ota.md:198 status:unchecked -->
 ### T-19-092 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2635,7 +2635,7 @@ brownout саме посеред оновлення. Схема з двох сл
 
 ---
 
-<!-- fc id:T-19-093 sha:303df349 src:manual/19-ota.md:202 klas:E -->
+<!-- fc id:T-19-093 sha:303df349 src:manual/19-ota.md:202 status:no-external-signal -->
 ### T-19-093 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2658,7 +2658,7 @@ rollback. Якщо він не був увімкнений — лишаєтьс�
 
 ---
 
-<!-- fc id:T-19-094 sha:cf623451 src:manual/19-ota.md:203 klas:E -->
+<!-- fc id:T-19-094 sha:cf623451 src:manual/19-ota.md:203 status:no-external-signal -->
 ### T-19-094 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2681,7 +2681,7 @@ rollback. Якщо він не був увімкнений — лишаєтьс�
 
 ---
 
-<!-- fc id:T-19-095 sha:30770228 src:manual/19-ota.md:208 klas:E -->
+<!-- fc id:T-19-095 sha:30770228 src:manual/19-ota.md:208 status:no-external-signal -->
 ### T-19-095 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2703,7 +2703,7 @@ rollback. Якщо він не був увімкнений — лишаєтьс�
 
 ---
 
-<!-- fc id:T-19-096 sha:63989ea6 src:manual/19-ota.md:209 klas:E -->
+<!-- fc id:T-19-096 sha:63989ea6 src:manual/19-ota.md:209 status:no-external-signal -->
 ### T-19-096 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2725,7 +2725,7 @@ rollback. Якщо він не був увімкнений — лишаєтьс�
 
 ---
 
-<!-- fc id:T-19-097 sha:12fe0ec3 src:manual/19-ota.md:211 klas:A -->
+<!-- fc id:T-19-097 sha:12fe0ec3 src:manual/19-ota.md:211 status:verbatim -->
 ### T-19-097 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2754,7 +2754,7 @@ Rollback — окремий механізм, і він працює лише т
 
 ---
 
-<!-- fc id:T-19-098 sha:726f7ae8 src:manual/19-ota.md:215 klas:A -->
+<!-- fc id:T-19-098 sha:726f7ae8 src:manual/19-ota.md:215 status:verbatim -->
 ### T-19-098 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2782,7 +2782,7 @@ OTA не оновлює таблицю розділів. Розбивку зак
 
 ---
 
-<!-- fc id:T-19-099 sha:f6392ea8 src:manual/19-ota.md:215 klas:E -->
+<!-- fc id:T-19-099 sha:f6392ea8 src:manual/19-ota.md:215 status:no-external-signal -->
 ### T-19-099 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -2804,7 +2804,7 @@ OTA не оновлює таблицю розділів. Розбивку зак
 
 ---
 
-<!-- fc id:T-19-100 sha:5b1f4451 src:manual/19-ota.md:218 klas:F -->
+<!-- fc id:T-19-100 sha:5b1f4451 src:manual/19-ota.md:218 status:unchecked -->
 ### T-19-100 · proza · `manual/19-ota.md`
 
 **Твердження, коротко**

@@ -340,7 +340,6 @@
 - nazva: JTAG на classic — чотири піни, два з них strapping
   zbih: '`GPIO12` і `GPIO15` — це водночас strapping-піни|Адаптер, під.єднаний до `GPIO12`|він
     займає чотири піни, два з яких — strapping|`GPIO12` заважає старту'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/tips-and-quirks.rst
     та .../docs/en/api-reference/peripherals/gpio/esp32.inc, .../docs/en/api-guides/jtag-debugging/esp32.inc
   cytata: '(esp32.inc, jtag-pins)
@@ -450,7 +449,6 @@
 - nazva: USB-JTAG і вбудований відлагоджувач — піни по сімействах
   zbih: USB-JTAG займає конкретні піни|`GPIO18` і `GPIO19` на C3|`GPIO19`, `GPIO20`|спалив
     `JTAG_DISABLE`
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/configure-builtin-jtag.rst
     та .../docs/en/security/secure-boot-v2.rst
   cytata: '{IDF_TARGET_JTAG_PIN_Dneg: … esp32c3="GPIO18", esp32s3="GPIO19", …}
@@ -509,7 +507,6 @@
   zbih: Канал 1 → `GPIO25`|Канал 2 → `GPIO26`|Канал 1 → `GPIO17`|Канал 2 → `GPIO18`|з максимальним
     затуханням доступний майже весь|\*\*Конденсатор\*\* 100 нФ від входу до землі|На classic
     `GPIO8` брати не можна взагалі
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst,
     .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
   cytata: '(dac.rst)
@@ -620,7 +617,6 @@
 - nazva: LISTEN_ONLY і NO_ACK — режими TWAI дослівно
   zbih: TWAI_MODE_LISTEN_ONLY|TWAI_MODE_NO_ACK|не порада для акуратних, а спосіб не зіпсувати
     чужу шину|правильний спосіб знайомитися з чужою шиною|Трансивер обов.язковий
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/twai_types_deprecated.h
     та .../docs/en/api-reference/peripherals/twai.rst
   cytata: "TWAI_MODE_LISTEN_ONLY,   /**< The TWAI controller will not influence\n        \
@@ -670,7 +666,6 @@
 - nazva: Рівні логу, esp_err_to_name і монітор — розділ 25
   zbih: '`Default log verbosity` \| рівень, з яким прошивка стартує|`esp_err_to_name` перетворює
     число на читабельне|в лозі буде `0x105`|розшифровує backtrace\*\* у назви функцій'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level,
     .../components/esp_common/include/esp_err.h, .../components/esp_driver_i2c/include/driver/i2c_master.h,
     .../docs/en/api-guides/tools/idf-monitor.rst
@@ -717,7 +712,6 @@
   zbih: '`nvs` · Зсув → `0x9000`|`nvs` · Розмір → `0x6000`|`phy_init` · Розмір → `0x1000`|застосунок
     іде на `0x10000`|Розмір записується числом|Адреса `0x9000` — початок розділу `nvs`|Таблиця
     розділів лежить на `0x8000` і друкується в boot-лозі'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
     та .../components/bootloader_support/src/bootloader_utility.c
   cytata: '# ESP-IDF Partition Table
@@ -810,7 +804,6 @@
 - nazva: Зміна розбивки, erase-flash і незворотність
   zbih: Після зміни розбивки повна прошивка робиться з попереднім `erase-flash`|`erase-flash`
     без дампа незворотний|`erase-flash` такий болючий
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
     та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
   cytata: "(partition-tables.rst)\nNote that updating the partition table does not erase data\
@@ -854,7 +847,6 @@
 - nazva: Буфер у PSRAM без MALLOC_CAP_SPIRAM — і що це коштує
   zbih: буфер на 64 КБ опиниться в PSRAM \*\*без\*\* жодного `MALLOC_CAP_SPIRAM`|`DRAM_ATTR`|Вимикати
     цю перевірку \(`No checking`\)
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/mem_alloc.rst,
     .../docs/en/api-guides/external-ram.rst, .../components/esp_common/include/esp_attr.h,
     .../components/freertos/Kconfig.freertos

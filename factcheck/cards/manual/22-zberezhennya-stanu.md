@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/22-zberezhennya-stanu.md`
 
-Одиниць твердження: **71**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **71**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-22-001 sha:d14252c0 src:manual/22-zberezhennya-stanu.md:3 klas:E -->
+<!-- fc id:T-22-001 sha:d14252c0 src:manual/22-zberezhennya-stanu.md:3 status:no-external-signal -->
 ### T-22-001 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-22-002 sha:ff207930 src:manual/22-zberezhennya-stanu.md:3 klas:E -->
+<!-- fc id:T-22-002 sha:ff207930 src:manual/22-zberezhennya-stanu.md:3 status:no-external-signal -->
 ### T-22-002 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-22-003 sha:bb7e92df src:manual/22-zberezhennya-stanu.md:7 klas:E -->
+<!-- fc id:T-22-003 sha:bb7e92df src:manual/22-zberezhennya-stanu.md:7 status:no-external-signal -->
 ### T-22-003 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -77,7 +77,7 @@
 
 ---
 
-<!-- fc id:T-22-004 sha:57c4d58c src:manual/22-zberezhennya-stanu.md:8 klas:E -->
+<!-- fc id:T-22-004 sha:57c4d58c src:manual/22-zberezhennya-stanu.md:8 status:no-external-signal -->
 ### T-22-004 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -100,7 +100,7 @@
 
 ---
 
-<!-- fc id:T-22-005 sha:51fe5eb0 src:manual/22-zberezhennya-stanu.md:11 klas:E -->
+<!-- fc id:T-22-005 sha:51fe5eb0 src:manual/22-zberezhennya-stanu.md:11 status:no-external-signal -->
 ### T-22-005 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -122,7 +122,7 @@
 
 ---
 
-<!-- fc id:T-22-006 sha:38d8e33f src:manual/22-zberezhennya-stanu.md:11 klas:E -->
+<!-- fc id:T-22-006 sha:38d8e33f src:manual/22-zberezhennya-stanu.md:11 status:no-external-signal -->
 ### T-22-006 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -144,7 +144,7 @@
 
 ---
 
-<!-- fc id:T-22-007 sha:5727011e src:manual/22-zberezhennya-stanu.md:16 klas:F -->
+<!-- fc id:T-22-007 sha:5727011e src:manual/22-zberezhennya-stanu.md:16 status:unchecked -->
 ### T-22-007 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -168,7 +168,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-008 sha:49b38bc9 src:manual/22-zberezhennya-stanu.md:21 klas:E -->
+<!-- fc id:T-22-008 sha:49b38bc9 src:manual/22-zberezhennya-stanu.md:21 status:no-external-signal -->
 ### T-22-008 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -190,7 +190,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-009 sha:56f60754 src:manual/22-zberezhennya-stanu.md:26 klas:E -->
+<!-- fc id:T-22-009 sha:56f60754 src:manual/22-zberezhennya-stanu.md:26 status:no-external-signal -->
 ### T-22-009 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -212,7 +212,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-010 sha:a08ce26a src:manual/22-zberezhennya-stanu.md:29 klas:E -->
+<!-- fc id:T-22-010 sha:a08ce26a src:manual/22-zberezhennya-stanu.md:29 status:no-external-signal -->
 ### T-22-010 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -235,7 +235,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-011 sha:9f9b6a3e src:manual/22-zberezhennya-stanu.md:30 klas:E -->
+<!-- fc id:T-22-011 sha:9f9b6a3e src:manual/22-zberezhennya-stanu.md:30 status:no-external-signal -->
 ### T-22-011 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -258,7 +258,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-012 sha:12a2ca69 src:manual/22-zberezhennya-stanu.md:33 klas:E -->
+<!-- fc id:T-22-012 sha:12a2ca69 src:manual/22-zberezhennya-stanu.md:33 status:no-external-signal -->
 ### T-22-012 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -280,7 +280,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-013 sha:d6f10a04 src:manual/22-zberezhennya-stanu.md:36 klas:E -->
+<!-- fc id:T-22-013 sha:d6f10a04 src:manual/22-zberezhennya-stanu.md:36 status:no-external-signal -->
 ### T-22-013 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -302,7 +302,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-014 sha:83bc245f src:manual/22-zberezhennya-stanu.md:39 klas:E -->
+<!-- fc id:T-22-014 sha:83bc245f src:manual/22-zberezhennya-stanu.md:39 status:no-external-signal -->
 ### T-22-014 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -324,7 +324,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-015 sha:62c0d7a6 src:manual/22-zberezhennya-stanu.md:42 klas:E -->
+<!-- fc id:T-22-015 sha:62c0d7a6 src:manual/22-zberezhennya-stanu.md:42 status:no-external-signal -->
 ### T-22-015 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -346,7 +346,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-016 sha:c292b7cb src:manual/22-zberezhennya-stanu.md:46 klas:E -->
+<!-- fc id:T-22-016 sha:c292b7cb src:manual/22-zberezhennya-stanu.md:46 status:no-external-signal -->
 ### T-22-016 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -371,7 +371,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-017 sha:e765822c src:manual/22-zberezhennya-stanu.md:47 klas:E -->
+<!-- fc id:T-22-017 sha:e765822c src:manual/22-zberezhennya-stanu.md:47 status:no-external-signal -->
 ### T-22-017 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -396,7 +396,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-018 sha:2af0fb76 src:manual/22-zberezhennya-stanu.md:47 klas:E -->
+<!-- fc id:T-22-018 sha:2af0fb76 src:manual/22-zberezhennya-stanu.md:47 status:no-external-signal -->
 ### T-22-018 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -421,7 +421,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-019 sha:1a231f9b src:manual/22-zberezhennya-stanu.md:53 klas:E -->
+<!-- fc id:T-22-019 sha:1a231f9b src:manual/22-zberezhennya-stanu.md:53 status:no-external-signal -->
 ### T-22-019 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -443,7 +443,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-020 sha:5e61212d src:manual/22-zberezhennya-stanu.md:53 klas:E -->
+<!-- fc id:T-22-020 sha:5e61212d src:manual/22-zberezhennya-stanu.md:53 status:no-external-signal -->
 ### T-22-020 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -465,7 +465,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-021 sha:246124b2 src:manual/22-zberezhennya-stanu.md:56 klas:E -->
+<!-- fc id:T-22-021 sha:246124b2 src:manual/22-zberezhennya-stanu.md:56 status:no-external-signal -->
 ### T-22-021 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -486,7 +486,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-022 sha:73721102 src:manual/22-zberezhennya-stanu.md:58 klas:K -->
+<!-- fc id:T-22-022 sha:73721102 src:manual/22-zberezhennya-stanu.md:58 status:code-context -->
 ### T-22-022 · kod · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -529,7 +529,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-023 sha:0789496c src:manual/22-zberezhennya-stanu.md:59 klas:B -->
+<!-- fc id:T-22-023 sha:0789496c src:manual/22-zberezhennya-stanu.md:59 status:derived -->
 ### T-22-023 · schema-zvyazok · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -570,7 +570,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-024 sha:8621e774 src:manual/22-zberezhennya-stanu.md:60 klas:B -->
+<!-- fc id:T-22-024 sha:8621e774 src:manual/22-zberezhennya-stanu.md:60 status:derived -->
 ### T-22-024 · schema-zvyazok · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -606,7 +606,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-025 sha:a9b95a50 src:manual/22-zberezhennya-stanu.md:61 klas:B -->
+<!-- fc id:T-22-025 sha:a9b95a50 src:manual/22-zberezhennya-stanu.md:61 status:derived -->
 ### T-22-025 · schema-zvyazok · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -642,7 +642,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-026 sha:cca5969c src:manual/22-zberezhennya-stanu.md:62 klas:F -->
+<!-- fc id:T-22-026 sha:cca5969c src:manual/22-zberezhennya-stanu.md:62 status:unchecked -->
 ### T-22-026 · schema-zvyazok · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -670,7 +670,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-027 sha:78b699b3 src:manual/22-zberezhennya-stanu.md:63 klas:F -->
+<!-- fc id:T-22-027 sha:78b699b3 src:manual/22-zberezhennya-stanu.md:63 status:unchecked -->
 ### T-22-027 · schema-zvyazok · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -698,7 +698,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-028 sha:3a1c1170 src:manual/22-zberezhennya-stanu.md:64 klas:B -->
+<!-- fc id:T-22-028 sha:3a1c1170 src:manual/22-zberezhennya-stanu.md:64 status:derived -->
 ### T-22-028 · schema-zvyazok · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -732,7 +732,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-029 sha:e0333d93 src:manual/22-zberezhennya-stanu.md:67 klas:E -->
+<!-- fc id:T-22-029 sha:e0333d93 src:manual/22-zberezhennya-stanu.md:67 status:no-external-signal -->
 ### T-22-029 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -754,7 +754,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-030 sha:1b6544f5 src:manual/22-zberezhennya-stanu.md:68 klas:E -->
+<!-- fc id:T-22-030 sha:1b6544f5 src:manual/22-zberezhennya-stanu.md:68 status:no-external-signal -->
 ### T-22-030 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -776,7 +776,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-031 sha:abbad0f2 src:manual/22-zberezhennya-stanu.md:70 klas:E -->
+<!-- fc id:T-22-031 sha:abbad0f2 src:manual/22-zberezhennya-stanu.md:70 status:no-external-signal -->
 ### T-22-031 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -799,7 +799,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-032 sha:603e3101 src:manual/22-zberezhennya-stanu.md:71 klas:F -->
+<!-- fc id:T-22-032 sha:603e3101 src:manual/22-zberezhennya-stanu.md:71 status:unchecked -->
 ### T-22-032 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -822,7 +822,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-033 sha:4d902e14 src:manual/22-zberezhennya-stanu.md:76 klas:E -->
+<!-- fc id:T-22-033 sha:4d902e14 src:manual/22-zberezhennya-stanu.md:76 status:no-external-signal -->
 ### T-22-033 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -843,7 +843,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-034 sha:01ff21ec src:manual/22-zberezhennya-stanu.md:78 klas:A -->
+<!-- fc id:T-22-034 sha:01ff21ec src:manual/22-zberezhennya-stanu.md:78 status:verbatim -->
 ### T-22-034 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -875,7 +875,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-035 sha:c1b5aa8e src:manual/22-zberezhennya-stanu.md:81 klas:E -->
+<!-- fc id:T-22-035 sha:c1b5aa8e src:manual/22-zberezhennya-stanu.md:81 status:no-external-signal -->
 ### T-22-035 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -898,7 +898,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-036 sha:6b9dba49 src:manual/22-zberezhennya-stanu.md:82 klas:E -->
+<!-- fc id:T-22-036 sha:6b9dba49 src:manual/22-zberezhennya-stanu.md:82 status:no-external-signal -->
 ### T-22-036 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -921,7 +921,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-037 sha:54622bb4 src:manual/22-zberezhennya-stanu.md:85 klas:E -->
+<!-- fc id:T-22-037 sha:54622bb4 src:manual/22-zberezhennya-stanu.md:85 status:no-external-signal -->
 ### T-22-037 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -953,7 +953,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-038 sha:763aea42 src:manual/22-zberezhennya-stanu.md:87 klas:E -->
+<!-- fc id:T-22-038 sha:763aea42 src:manual/22-zberezhennya-stanu.md:87 status:no-external-signal -->
 ### T-22-038 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -986,7 +986,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-039 sha:0b414615 src:manual/22-zberezhennya-stanu.md:90 klas:E -->
+<!-- fc id:T-22-039 sha:0b414615 src:manual/22-zberezhennya-stanu.md:90 status:no-external-signal -->
 ### T-22-039 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1009,7 +1009,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-040 sha:6838e71e src:manual/22-zberezhennya-stanu.md:90 klas:E -->
+<!-- fc id:T-22-040 sha:6838e71e src:manual/22-zberezhennya-stanu.md:90 status:no-external-signal -->
 ### T-22-040 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1032,7 +1032,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-041 sha:8ce63075 src:manual/22-zberezhennya-stanu.md:91 klas:E -->
+<!-- fc id:T-22-041 sha:8ce63075 src:manual/22-zberezhennya-stanu.md:91 status:no-external-signal -->
 ### T-22-041 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1055,7 +1055,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-042 sha:c79cce4a src:manual/22-zberezhennya-stanu.md:96 klas:E -->
+<!-- fc id:T-22-042 sha:c79cce4a src:manual/22-zberezhennya-stanu.md:96 status:no-external-signal -->
 ### T-22-042 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1076,7 +1076,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-043 sha:9647d3c5 src:manual/22-zberezhennya-stanu.md:98 klas:E -->
+<!-- fc id:T-22-043 sha:9647d3c5 src:manual/22-zberezhennya-stanu.md:98 status:no-external-signal -->
 ### T-22-043 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1097,7 +1097,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-044 sha:d28a1a55 src:manual/22-zberezhennya-stanu.md:100 klas:K -->
+<!-- fc id:T-22-044 sha:d28a1a55 src:manual/22-zberezhennya-stanu.md:100 status:code-context -->
 ### T-22-044 · kod · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1130,7 +1130,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-045 sha:4c5a16ee src:manual/22-zberezhennya-stanu.md:101 klas:A -->
+<!-- fc id:T-22-045 sha:4c5a16ee src:manual/22-zberezhennya-stanu.md:101 status:verbatim -->
 ### T-22-045 · kod-ryadok · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1160,7 +1160,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-046 sha:213017c0 src:manual/22-zberezhennya-stanu.md:102 klas:A -->
+<!-- fc id:T-22-046 sha:213017c0 src:manual/22-zberezhennya-stanu.md:102 status:verbatim -->
 ### T-22-046 · kod-ryadok · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1201,7 +1201,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-047 sha:183e8eeb src:manual/22-zberezhennya-stanu.md:105 klas:E -->
+<!-- fc id:T-22-047 sha:183e8eeb src:manual/22-zberezhennya-stanu.md:105 status:no-external-signal -->
 ### T-22-047 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1224,7 +1224,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-048 sha:2403c92b src:manual/22-zberezhennya-stanu.md:106 klas:F -->
+<!-- fc id:T-22-048 sha:2403c92b src:manual/22-zberezhennya-stanu.md:106 status:unchecked -->
 ### T-22-048 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1247,7 +1247,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-049 sha:51ccc16f src:manual/22-zberezhennya-stanu.md:110 klas:F -->
+<!-- fc id:T-22-049 sha:51ccc16f src:manual/22-zberezhennya-stanu.md:110 status:unchecked -->
 ### T-22-049 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1271,7 +1271,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-050 sha:ecd3eefc src:manual/22-zberezhennya-stanu.md:111 klas:E -->
+<!-- fc id:T-22-050 sha:ecd3eefc src:manual/22-zberezhennya-stanu.md:111 status:no-external-signal -->
 ### T-22-050 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1295,7 +1295,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-051 sha:180242fb src:manual/22-zberezhennya-stanu.md:114 klas:E -->
+<!-- fc id:T-22-051 sha:180242fb src:manual/22-zberezhennya-stanu.md:114 status:no-external-signal -->
 ### T-22-051 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1318,7 +1318,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-052 sha:e474fa90 src:manual/22-zberezhennya-stanu.md:115 klas:E -->
+<!-- fc id:T-22-052 sha:e474fa90 src:manual/22-zberezhennya-stanu.md:115 status:no-external-signal -->
 ### T-22-052 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1341,7 +1341,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-053 sha:0ab3bd18 src:manual/22-zberezhennya-stanu.md:118 klas:E -->
+<!-- fc id:T-22-053 sha:0ab3bd18 src:manual/22-zberezhennya-stanu.md:118 status:no-external-signal -->
 ### T-22-053 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1362,7 +1362,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-054 sha:827ea730 src:manual/22-zberezhennya-stanu.md:122 klas:A -->
+<!-- fc id:T-22-054 sha:827ea730 src:manual/22-zberezhennya-stanu.md:122 status:verbatim -->
 ### T-22-054 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1392,7 +1392,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-055 sha:d745dfcb src:manual/22-zberezhennya-stanu.md:125 klas:A -->
+<!-- fc id:T-22-055 sha:d745dfcb src:manual/22-zberezhennya-stanu.md:125 status:verbatim -->
 ### T-22-055 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1421,7 +1421,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-056 sha:3022a741 src:manual/22-zberezhennya-stanu.md:126 klas:E -->
+<!-- fc id:T-22-056 sha:3022a741 src:manual/22-zberezhennya-stanu.md:126 status:no-external-signal -->
 ### T-22-056 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1444,7 +1444,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-057 sha:9ef15fdb src:manual/22-zberezhennya-stanu.md:129 klas:A -->
+<!-- fc id:T-22-057 sha:9ef15fdb src:manual/22-zberezhennya-stanu.md:129 status:verbatim -->
 ### T-22-057 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1472,7 +1472,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-058 sha:71482846 src:manual/22-zberezhennya-stanu.md:129 klas:E -->
+<!-- fc id:T-22-058 sha:71482846 src:manual/22-zberezhennya-stanu.md:129 status:no-external-signal -->
 ### T-22-058 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1494,7 +1494,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-059 sha:759ecadf src:manual/22-zberezhennya-stanu.md:134 klas:E -->
+<!-- fc id:T-22-059 sha:759ecadf src:manual/22-zberezhennya-stanu.md:134 status:no-external-signal -->
 ### T-22-059 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1515,7 +1515,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-060 sha:1c8a70f9 src:manual/22-zberezhennya-stanu.md:134 klas:F -->
+<!-- fc id:T-22-060 sha:1c8a70f9 src:manual/22-zberezhennya-stanu.md:134 status:unchecked -->
 ### T-22-060 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1536,7 +1536,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-061 sha:31a173a9 src:manual/22-zberezhennya-stanu.md:136 klas:K -->
+<!-- fc id:T-22-061 sha:31a173a9 src:manual/22-zberezhennya-stanu.md:136 status:code-context -->
 ### T-22-061 · kod · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1573,7 +1573,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-062 sha:377a817e src:manual/22-zberezhennya-stanu.md:146 klas:F -->
+<!-- fc id:T-22-062 sha:377a817e src:manual/22-zberezhennya-stanu.md:146 status:unchecked -->
 ### T-22-062 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1596,7 +1596,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-063 sha:4168973d src:manual/22-zberezhennya-stanu.md:146 klas:E -->
+<!-- fc id:T-22-063 sha:4168973d src:manual/22-zberezhennya-stanu.md:146 status:no-external-signal -->
 ### T-22-063 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1619,7 +1619,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-064 sha:f15538f5 src:manual/22-zberezhennya-stanu.md:152 klas:E -->
+<!-- fc id:T-22-064 sha:f15538f5 src:manual/22-zberezhennya-stanu.md:152 status:no-external-signal -->
 ### T-22-064 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1641,7 +1641,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-065 sha:20e09f60 src:manual/22-zberezhennya-stanu.md:153 klas:E -->
+<!-- fc id:T-22-065 sha:20e09f60 src:manual/22-zberezhennya-stanu.md:153 status:no-external-signal -->
 ### T-22-065 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1663,7 +1663,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-066 sha:9555d4f3 src:manual/22-zberezhennya-stanu.md:155 klas:A -->
+<!-- fc id:T-22-066 sha:9555d4f3 src:manual/22-zberezhennya-stanu.md:155 status:verbatim -->
 ### T-22-066 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1692,7 +1692,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-067 sha:851adcac src:manual/22-zberezhennya-stanu.md:161 klas:E -->
+<!-- fc id:T-22-067 sha:851adcac src:manual/22-zberezhennya-stanu.md:161 status:no-external-signal -->
 ### T-22-067 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1713,7 +1713,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-068 sha:cf72c89e src:manual/22-zberezhennya-stanu.md:163 klas:E -->
+<!-- fc id:T-22-068 sha:cf72c89e src:manual/22-zberezhennya-stanu.md:163 status:no-external-signal -->
 ### T-22-068 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1734,7 +1734,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-069 sha:de6d89b1 src:manual/22-zberezhennya-stanu.md:165 klas:E -->
+<!-- fc id:T-22-069 sha:de6d89b1 src:manual/22-zberezhennya-stanu.md:165 status:no-external-signal -->
 ### T-22-069 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1756,7 +1756,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-070 sha:7143f671 src:manual/22-zberezhennya-stanu.md:168 klas:E -->
+<!-- fc id:T-22-070 sha:7143f671 src:manual/22-zberezhennya-stanu.md:168 status:no-external-signal -->
 ### T-22-070 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1778,7 +1778,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-071 sha:a99ef027 src:manual/22-zberezhennya-stanu.md:171 klas:E -->
+<!-- fc id:T-22-071 sha:a99ef027 src:manual/22-zberezhennya-stanu.md:171 status:no-external-signal -->
 ### T-22-071 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**

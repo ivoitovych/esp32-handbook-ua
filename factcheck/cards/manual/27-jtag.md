@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/27-jtag.md`
 
-Одиниць твердження: **76**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **76**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-27-001 sha:645b5e0a src:manual/27-jtag.md:3 klas:E -->
+<!-- fc id:T-27-001 sha:645b5e0a src:manual/27-jtag.md:3 status:no-external-signal -->
 ### T-27-001 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-27-002 sha:4a1f164f src:manual/27-jtag.md:3 klas:A -->
+<!-- fc id:T-27-002 sha:4a1f164f src:manual/27-jtag.md:3 status:verbatim -->
 ### T-27-002 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -62,7 +62,7 @@
 
 ---
 
-<!-- fc id:T-27-003 sha:e74c3b73 src:manual/27-jtag.md:8 klas:E -->
+<!-- fc id:T-27-003 sha:e74c3b73 src:manual/27-jtag.md:8 status:no-external-signal -->
 ### T-27-003 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-27-004 sha:3e48a062 src:manual/27-jtag.md:8 klas:E -->
+<!-- fc id:T-27-004 sha:3e48a062 src:manual/27-jtag.md:8 status:no-external-signal -->
 ### T-27-004 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -106,7 +106,7 @@
 
 ---
 
-<!-- fc id:T-27-005 sha:7a8d097d src:manual/27-jtag.md:11 klas:F -->
+<!-- fc id:T-27-005 sha:7a8d097d src:manual/27-jtag.md:11 status:unchecked -->
 ### T-27-005 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -128,7 +128,7 @@
 
 ---
 
-<!-- fc id:T-27-006 sha:58701b15 src:manual/27-jtag.md:16 klas:A -->
+<!-- fc id:T-27-006 sha:58701b15 src:manual/27-jtag.md:16 status:verbatim -->
 ### T-27-006 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -160,7 +160,7 @@
 
 ---
 
-<!-- fc id:T-27-007 sha:bb960822 src:manual/27-jtag.md:16 klas:D -->
+<!-- fc id:T-27-007 sha:bb960822 src:manual/27-jtag.md:16 status:arithmetic -->
 ### T-27-007 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -193,7 +193,7 @@
 
 ---
 
-<!-- fc id:T-27-008 sha:8eb55e39 src:manual/27-jtag.md:18 klas:E -->
+<!-- fc id:T-27-008 sha:8eb55e39 src:manual/27-jtag.md:18 status:no-external-signal -->
 ### T-27-008 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -216,7 +216,7 @@
 
 ---
 
-<!-- fc id:T-27-009 sha:bfead197 src:manual/27-jtag.md:20 klas:E -->
+<!-- fc id:T-27-009 sha:bfead197 src:manual/27-jtag.md:20 status:no-external-signal -->
 ### T-27-009 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -239,7 +239,7 @@
 
 ---
 
-<!-- fc id:T-27-010 sha:ac62756c src:manual/27-jtag.md:20 klas:E -->
+<!-- fc id:T-27-010 sha:ac62756c src:manual/27-jtag.md:20 status:no-external-signal -->
 ### T-27-010 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -262,7 +262,7 @@
 
 ---
 
-<!-- fc id:T-27-011 sha:14c6572e src:manual/27-jtag.md:24 klas:K -->
+<!-- fc id:T-27-011 sha:14c6572e src:manual/27-jtag.md:24 status:code-context -->
 ### T-27-011 · kod · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -309,7 +309,7 @@ idf.py openocd
 
 ---
 
-<!-- fc id:T-27-012 sha:25c2c08b src:manual/27-jtag.md:25 klas:A -->
+<!-- fc id:T-27-012 sha:25c2c08b src:manual/27-jtag.md:25 status:verbatim -->
 ### T-27-012 · kod-ryadok · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -354,7 +354,7 @@ idf.py openocd
 
 ---
 
-<!-- fc id:T-27-013 sha:ef2da886 src:manual/27-jtag.md:28 klas:E -->
+<!-- fc id:T-27-013 sha:ef2da886 src:manual/27-jtag.md:28 status:no-external-signal -->
 ### T-27-013 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -375,7 +375,7 @@ idf.py openocd
 
 ---
 
-<!-- fc id:T-27-014 sha:ee7e79eb src:manual/27-jtag.md:30 klas:K -->
+<!-- fc id:T-27-014 sha:ee7e79eb src:manual/27-jtag.md:30 status:code-context -->
 ### T-27-014 · kod · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -422,7 +422,7 @@ idf.py gdb
 
 ---
 
-<!-- fc id:T-27-015 sha:94998fa9 src:manual/27-jtag.md:31 klas:A -->
+<!-- fc id:T-27-015 sha:94998fa9 src:manual/27-jtag.md:31 status:verbatim -->
 ### T-27-015 · kod-ryadok · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -467,7 +467,7 @@ idf.py gdb
 
 ---
 
-<!-- fc id:T-27-016 sha:e0210e92 src:manual/27-jtag.md:34 klas:E -->
+<!-- fc id:T-27-016 sha:e0210e92 src:manual/27-jtag.md:34 status:no-external-signal -->
 ### T-27-016 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -488,7 +488,7 @@ idf.py gdb
 
 ---
 
-<!-- fc id:T-27-017 sha:91f73a92 src:manual/27-jtag.md:36 klas:K -->
+<!-- fc id:T-27-017 sha:91f73a92 src:manual/27-jtag.md:36 status:code-context -->
 ### T-27-017 · kod · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -535,7 +535,7 @@ idf.py openocd gdb
 
 ---
 
-<!-- fc id:T-27-018 sha:b27e3f3e src:manual/27-jtag.md:37 klas:A -->
+<!-- fc id:T-27-018 sha:b27e3f3e src:manual/27-jtag.md:37 status:verbatim -->
 ### T-27-018 · kod-ryadok · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -580,7 +580,7 @@ idf.py openocd gdb
 
 ---
 
-<!-- fc id:T-27-019 sha:8cc98f12 src:manual/27-jtag.md:41 klas:A -->
+<!-- fc id:T-27-019 sha:8cc98f12 src:manual/27-jtag.md:41 status:verbatim -->
 ### T-27-019 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -618,7 +618,7 @@ idf.py openocd gdb
 
 ---
 
-<!-- fc id:T-27-020 sha:829374ea src:manual/27-jtag.md:42 klas:A -->
+<!-- fc id:T-27-020 sha:829374ea src:manual/27-jtag.md:42 status:verbatim -->
 ### T-27-020 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -649,7 +649,7 @@ idf.py openocd gdb
 
 ---
 
-<!-- fc id:T-27-021 sha:f95f9576 src:manual/27-jtag.md:46 klas:E -->
+<!-- fc id:T-27-021 sha:f95f9576 src:manual/27-jtag.md:46 status:no-external-signal -->
 ### T-27-021 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -672,7 +672,7 @@ idf.py openocd gdb
 
 ---
 
-<!-- fc id:T-27-022 sha:9fa47b90 src:manual/27-jtag.md:52 klas:F -->
+<!-- fc id:T-27-022 sha:9fa47b90 src:manual/27-jtag.md:52 status:unchecked -->
 ### T-27-022 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -696,7 +696,7 @@ idf.py openocd gdb
 
 ---
 
-<!-- fc id:T-27-023 sha:cbf1c9e1 src:manual/27-jtag.md:52 klas:E -->
+<!-- fc id:T-27-023 sha:cbf1c9e1 src:manual/27-jtag.md:52 status:no-external-signal -->
 ### T-27-023 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -720,7 +720,7 @@ idf.py openocd gdb
 
 ---
 
-<!-- fc id:T-27-024 sha:33dcb4a2 src:manual/27-jtag.md:57 klas:E -->
+<!-- fc id:T-27-024 sha:33dcb4a2 src:manual/27-jtag.md:57 status:no-external-signal -->
 ### T-27-024 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -741,7 +741,7 @@ idf.py openocd gdb
 
 ---
 
-<!-- fc id:T-27-025 sha:4ca67fae src:manual/27-jtag.md:59 klas:F -->
+<!-- fc id:T-27-025 sha:4ca67fae src:manual/27-jtag.md:59 status:unchecked -->
 ### T-27-025 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -766,7 +766,7 @@ idf.py openocd gdb
 
 ---
 
-<!-- fc id:T-27-026 sha:179e4db5 src:manual/27-jtag.md:65 klas:F -->
+<!-- fc id:T-27-026 sha:179e4db5 src:manual/27-jtag.md:65 status:unchecked -->
 ### T-27-026 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -789,7 +789,7 @@ idf.py openocd gdb
 
 ---
 
-<!-- fc id:T-27-027 sha:30b28d08 src:manual/27-jtag.md:71 klas:F -->
+<!-- fc id:T-27-027 sha:30b28d08 src:manual/27-jtag.md:71 status:unchecked -->
 ### T-27-027 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -811,7 +811,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-028 sha:6893f2b7 src:manual/27-jtag.md:71 klas:F -->
+<!-- fc id:T-27-028 sha:6893f2b7 src:manual/27-jtag.md:71 status:unchecked -->
 ### T-27-028 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -833,7 +833,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-029 sha:c329bc54 src:manual/27-jtag.md:74 klas:E -->
+<!-- fc id:T-27-029 sha:c329bc54 src:manual/27-jtag.md:74 status:no-external-signal -->
 ### T-27-029 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -855,7 +855,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-030 sha:61277940 src:manual/27-jtag.md:77 klas:E -->
+<!-- fc id:T-27-030 sha:61277940 src:manual/27-jtag.md:77 status:no-external-signal -->
 ### T-27-030 · tablycya · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -884,7 +884,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-031 sha:e3294ed3 src:manual/27-jtag.md:79 klas:A -->
+<!-- fc id:T-27-031 sha:e3294ed3 src:manual/27-jtag.md:79 status:verbatim -->
 ### T-27-031 · tablycya · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -933,7 +933,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-032 sha:209b0d74 src:manual/27-jtag.md:80 klas:A -->
+<!-- fc id:T-27-032 sha:209b0d74 src:manual/27-jtag.md:80 status:verbatim -->
 ### T-27-032 · tablycya · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -970,7 +970,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-033 sha:8041ede0 src:manual/27-jtag.md:81 klas:A -->
+<!-- fc id:T-27-033 sha:8041ede0 src:manual/27-jtag.md:81 status:verbatim -->
 ### T-27-033 · tablycya · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1019,7 +1019,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-034 sha:e23fd583 src:manual/27-jtag.md:82 klas:A -->
+<!-- fc id:T-27-034 sha:e23fd583 src:manual/27-jtag.md:82 status:verbatim -->
 ### T-27-034 · tablycya · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1056,7 +1056,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-035 sha:ffd6b926 src:manual/27-jtag.md:85 klas:A -->
+<!-- fc id:T-27-035 sha:ffd6b926 src:manual/27-jtag.md:85 status:verbatim -->
 ### T-27-035 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1108,7 +1108,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-036 sha:20c682b0 src:manual/27-jtag.md:86 klas:A -->
+<!-- fc id:T-27-036 sha:20c682b0 src:manual/27-jtag.md:86 status:verbatim -->
 ### T-27-036 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1160,7 +1160,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-037 sha:5d16dbe1 src:manual/27-jtag.md:87 klas:A -->
+<!-- fc id:T-27-037 sha:5d16dbe1 src:manual/27-jtag.md:87 status:verbatim -->
 ### T-27-037 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1194,7 +1194,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-038 sha:aeafecac src:manual/27-jtag.md:88 klas:F -->
+<!-- fc id:T-27-038 sha:aeafecac src:manual/27-jtag.md:88 status:unchecked -->
 ### T-27-038 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1220,7 +1220,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-039 sha:63a5eefe src:manual/27-jtag.md:91 klas:E -->
+<!-- fc id:T-27-039 sha:63a5eefe src:manual/27-jtag.md:91 status:no-external-signal -->
 ### T-27-039 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1243,7 +1243,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-040 sha:5935529d src:manual/27-jtag.md:91 klas:A -->
+<!-- fc id:T-27-040 sha:5935529d src:manual/27-jtag.md:91 status:verbatim -->
 ### T-27-040 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1274,7 +1274,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-041 sha:5a1ece8c src:manual/27-jtag.md:95 klas:E -->
+<!-- fc id:T-27-041 sha:5a1ece8c src:manual/27-jtag.md:95 status:no-external-signal -->
 ### T-27-041 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1298,7 +1298,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
 
 ---
 
-<!-- fc id:T-27-042 sha:cc45d10e src:manual/27-jtag.md:96 klas:F -->
+<!-- fc id:T-27-042 sha:cc45d10e src:manual/27-jtag.md:96 status:unchecked -->
 ### T-27-042 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1322,7 +1322,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
 
 ---
 
-<!-- fc id:T-27-043 sha:c5e8b6c5 src:manual/27-jtag.md:97 klas:F -->
+<!-- fc id:T-27-043 sha:c5e8b6c5 src:manual/27-jtag.md:97 status:unchecked -->
 ### T-27-043 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1346,7 +1346,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
 
 ---
 
-<!-- fc id:T-27-044 sha:b13e9226 src:manual/27-jtag.md:100 klas:A -->
+<!-- fc id:T-27-044 sha:b13e9226 src:manual/27-jtag.md:100 status:verbatim -->
 ### T-27-044 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1375,7 +1375,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
 
 ---
 
-<!-- fc id:T-27-045 sha:a3f73414 src:manual/27-jtag.md:104 klas:F -->
+<!-- fc id:T-27-045 sha:a3f73414 src:manual/27-jtag.md:104 status:unchecked -->
 ### T-27-045 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1397,7 +1397,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
 
 ---
 
-<!-- fc id:T-27-046 sha:f44b2d8b src:manual/27-jtag.md:109 klas:F -->
+<!-- fc id:T-27-046 sha:f44b2d8b src:manual/27-jtag.md:109 status:unchecked -->
 ### T-27-046 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1420,7 +1420,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
 
 ---
 
-<!-- fc id:T-27-047 sha:4f4b7090 src:manual/27-jtag.md:113 klas:E -->
+<!-- fc id:T-27-047 sha:4f4b7090 src:manual/27-jtag.md:113 status:no-external-signal -->
 ### T-27-047 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1443,7 +1443,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
 
 ---
 
-<!-- fc id:T-27-048 sha:ce63f8f0 src:manual/27-jtag.md:114 klas:F -->
+<!-- fc id:T-27-048 sha:ce63f8f0 src:manual/27-jtag.md:114 status:unchecked -->
 ### T-27-048 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1466,7 +1466,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
 
 ---
 
-<!-- fc id:T-27-049 sha:84f694ee src:manual/27-jtag.md:117 klas:E -->
+<!-- fc id:T-27-049 sha:84f694ee src:manual/27-jtag.md:117 status:no-external-signal -->
 ### T-27-049 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1490,7 +1490,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
 
 ---
 
-<!-- fc id:T-27-050 sha:4bf0d4be src:manual/27-jtag.md:118 klas:F -->
+<!-- fc id:T-27-050 sha:4bf0d4be src:manual/27-jtag.md:118 status:unchecked -->
 ### T-27-050 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1514,7 +1514,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
 
 ---
 
-<!-- fc id:T-27-051 sha:01cd2d2d src:manual/27-jtag.md:122 klas:A -->
+<!-- fc id:T-27-051 sha:01cd2d2d src:manual/27-jtag.md:122 status:verbatim -->
 ### T-27-051 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1558,7 +1558,7 @@ without optimization (-O0)`**. Пункт `Debug (-Og)` у цьому ж пер�
 
 ---
 
-<!-- fc id:T-27-052 sha:de2420a5 src:manual/27-jtag.md:124 klas:A -->
+<!-- fc id:T-27-052 sha:de2420a5 src:manual/27-jtag.md:124 status:verbatim -->
 ### T-27-052 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1602,7 +1602,7 @@ without optimization (-O0)`**. Пункт `Debug (-Og)` у цьому ж пер�
 
 ---
 
-<!-- fc id:T-27-053 sha:08975b7d src:manual/27-jtag.md:126 klas:A -->
+<!-- fc id:T-27-053 sha:08975b7d src:manual/27-jtag.md:126 status:verbatim -->
 ### T-27-053 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1646,7 +1646,7 @@ without optimization (-O0)`**. Пункт `Debug (-Og)` у цьому ж пер�
 
 ---
 
-<!-- fc id:T-27-054 sha:9fccaf52 src:manual/27-jtag.md:128 klas:A -->
+<!-- fc id:T-27-054 sha:9fccaf52 src:manual/27-jtag.md:128 status:verbatim -->
 ### T-27-054 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1690,7 +1690,7 @@ without optimization (-O0)`**. Пункт `Debug (-Og)` у цьому ж пер�
 
 ---
 
-<!-- fc id:T-27-055 sha:6833eee7 src:manual/27-jtag.md:130 klas:F -->
+<!-- fc id:T-27-055 sha:6833eee7 src:manual/27-jtag.md:130 status:unchecked -->
 ### T-27-055 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1714,7 +1714,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-056 sha:f37cad84 src:manual/27-jtag.md:132 klas:E -->
+<!-- fc id:T-27-056 sha:f37cad84 src:manual/27-jtag.md:132 status:no-external-signal -->
 ### T-27-056 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1738,7 +1738,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-057 sha:c6d692df src:manual/27-jtag.md:137 klas:E -->
+<!-- fc id:T-27-057 sha:c6d692df src:manual/27-jtag.md:137 status:no-external-signal -->
 ### T-27-057 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1759,7 +1759,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-058 sha:932b50cf src:manual/27-jtag.md:139 klas:E -->
+<!-- fc id:T-27-058 sha:932b50cf src:manual/27-jtag.md:139 status:no-external-signal -->
 ### T-27-058 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1792,7 +1792,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-059 sha:0839b677 src:manual/27-jtag.md:140 klas:F -->
+<!-- fc id:T-27-059 sha:0839b677 src:manual/27-jtag.md:140 status:unchecked -->
 ### T-27-059 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1825,7 +1825,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-060 sha:10d8bc08 src:manual/27-jtag.md:140 klas:F -->
+<!-- fc id:T-27-060 sha:10d8bc08 src:manual/27-jtag.md:140 status:unchecked -->
 ### T-27-060 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1858,7 +1858,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-061 sha:ad5509dd src:manual/27-jtag.md:144 klas:E -->
+<!-- fc id:T-27-061 sha:ad5509dd src:manual/27-jtag.md:144 status:no-external-signal -->
 ### T-27-061 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1900,7 +1900,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-062 sha:a1a77bd9 src:manual/27-jtag.md:146 klas:F -->
+<!-- fc id:T-27-062 sha:a1a77bd9 src:manual/27-jtag.md:146 status:unchecked -->
 ### T-27-062 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1933,7 +1933,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-063 sha:1ff00cfb src:manual/27-jtag.md:147 klas:A -->
+<!-- fc id:T-27-063 sha:1ff00cfb src:manual/27-jtag.md:147 status:verbatim -->
 ### T-27-063 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1992,7 +1992,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-064 sha:9f987218 src:manual/27-jtag.md:149 klas:A -->
+<!-- fc id:T-27-064 sha:9f987218 src:manual/27-jtag.md:149 status:verbatim -->
 ### T-27-064 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2047,7 +2047,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-065 sha:bf544428 src:manual/27-jtag.md:149 klas:A -->
+<!-- fc id:T-27-065 sha:bf544428 src:manual/27-jtag.md:149 status:verbatim -->
 ### T-27-065 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2093,7 +2093,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-066 sha:d2dd6389 src:manual/27-jtag.md:155 klas:F -->
+<!-- fc id:T-27-066 sha:d2dd6389 src:manual/27-jtag.md:155 status:unchecked -->
 ### T-27-066 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2115,7 +2115,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-067 sha:bbfdfb29 src:manual/27-jtag.md:158 klas:E -->
+<!-- fc id:T-27-067 sha:bbfdfb29 src:manual/27-jtag.md:158 status:no-external-signal -->
 ### T-27-067 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2149,7 +2149,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-068 sha:cb7d10d2 src:manual/27-jtag.md:158 klas:E -->
+<!-- fc id:T-27-068 sha:cb7d10d2 src:manual/27-jtag.md:158 status:no-external-signal -->
 ### T-27-068 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2172,7 +2172,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-069 sha:d5495804 src:manual/27-jtag.md:159 klas:F -->
+<!-- fc id:T-27-069 sha:d5495804 src:manual/27-jtag.md:159 status:unchecked -->
 ### T-27-069 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2195,7 +2195,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-070 sha:2e8286d8 src:manual/27-jtag.md:160 klas:E -->
+<!-- fc id:T-27-070 sha:2e8286d8 src:manual/27-jtag.md:160 status:no-external-signal -->
 ### T-27-070 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2218,7 +2218,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-071 sha:52ec59e7 src:manual/27-jtag.md:162 klas:F -->
+<!-- fc id:T-27-071 sha:52ec59e7 src:manual/27-jtag.md:162 status:unchecked -->
 ### T-27-071 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2240,7 +2240,7 @@ JTAG потрібен там, де всі чотири нічого не дал�
 
 ---
 
-<!-- fc id:T-27-072 sha:eb17bd67 src:manual/27-jtag.md:163 klas:E -->
+<!-- fc id:T-27-072 sha:eb17bd67 src:manual/27-jtag.md:163 status:no-external-signal -->
 ### T-27-072 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2262,7 +2262,7 @@ JTAG потрібен там, де всі чотири нічого не дал�
 
 ---
 
-<!-- fc id:T-27-073 sha:701cef28 src:manual/27-jtag.md:167 klas:A -->
+<!-- fc id:T-27-073 sha:701cef28 src:manual/27-jtag.md:167 status:verbatim -->
 ### T-27-073 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2306,7 +2306,7 @@ JTAG потрібен там, де всі чотири нічого не дал�
 
 ---
 
-<!-- fc id:T-27-074 sha:81cbc7e9 src:manual/27-jtag.md:170 klas:A -->
+<!-- fc id:T-27-074 sha:81cbc7e9 src:manual/27-jtag.md:170 status:verbatim -->
 ### T-27-074 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2354,7 +2354,7 @@ JTAG потрібен там, де всі чотири нічого не дал�
 
 ---
 
-<!-- fc id:T-27-075 sha:0a72836e src:manual/27-jtag.md:173 klas:F -->
+<!-- fc id:T-27-075 sha:0a72836e src:manual/27-jtag.md:173 status:unchecked -->
 ### T-27-075 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2376,7 +2376,7 @@ JTAG потрібен там, де всі чотири нічого не дал�
 
 ---
 
-<!-- fc id:T-27-076 sha:6e5142c0 src:manual/27-jtag.md:176 klas:F -->
+<!-- fc id:T-27-076 sha:6e5142c0 src:manual/27-jtag.md:176 status:unchecked -->
 ### T-27-076 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**

@@ -7,7 +7,6 @@
 
 - nazva: 'T-00-055: Чотири типи блоків трапляються по всьому тексту.'
   zbih: Чотири\s+типи\s+блоків\s+трапляються
-  klas: C
   dzherelo: ESP32 handbook structure guide
   shukaty: ESP32 handbook structure guide
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт
@@ -27,7 +26,6 @@
   - c2c7b492
 - nazva: 'T-00-014: Замість людської вичитки застосовано **автоматизовану перевірку**, і зроблено'
   zbih: Замість\s+людської\s+вичитки\s+застосовано
-  klas: C
   dzherelo: ESP32 handbook verification guide
   shukaty: ESP32 handbook verification guide
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт
@@ -47,7 +45,6 @@
   - e7721e26
 - nazva: 'T-00-089: Мінімальний комплект, з яким можна робити все, що'
   zbih: Мінімальний\s+комплект,\s+з\s+яким
-  klas: C
   dzherelo: ESP32 Getting Started Guide
   shukaty: ESP32 Getting Started Guide
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт

@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/02-chipy.md`
 
-Одиниць твердження: **150**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **150**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-02-001 sha:73b9c7a0 src:manual/02-chipy.md:3 klas:F -->
+<!-- fc id:T-02-001 sha:73b9c7a0 src:manual/02-chipy.md:3 status:unchecked -->
 ### T-02-001 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-02-002 sha:5c3b71a0 src:manual/02-chipy.md:3 klas:E -->
+<!-- fc id:T-02-002 sha:5c3b71a0 src:manual/02-chipy.md:3 status:no-external-signal -->
 ### T-02-002 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -64,7 +64,7 @@
 
 ---
 
-<!-- fc id:T-02-003 sha:cde147e4 src:manual/02-chipy.md:10 klas:E -->
+<!-- fc id:T-02-003 sha:cde147e4 src:manual/02-chipy.md:10 status:no-external-signal -->
 ### T-02-003 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -86,7 +86,7 @@
 
 ---
 
-<!-- fc id:T-02-004 sha:3f56a6bc src:manual/02-chipy.md:13 klas:F -->
+<!-- fc id:T-02-004 sha:3f56a6bc src:manual/02-chipy.md:13 status:unchecked -->
 ### T-02-004 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -109,7 +109,7 @@
 
 ---
 
-<!-- fc id:T-02-005 sha:968e85a8 src:manual/02-chipy.md:14 klas:E -->
+<!-- fc id:T-02-005 sha:968e85a8 src:manual/02-chipy.md:14 status:no-external-signal -->
 ### T-02-005 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -132,7 +132,7 @@
 
 ---
 
-<!-- fc id:T-02-006 sha:f8f2f42c src:manual/02-chipy.md:17 klas:F -->
+<!-- fc id:T-02-006 sha:f8f2f42c src:manual/02-chipy.md:17 status:unchecked -->
 ### T-02-006 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -154,7 +154,7 @@
 
 ---
 
-<!-- fc id:T-02-007 sha:d3d8186d src:manual/02-chipy.md:20 klas:F -->
+<!-- fc id:T-02-007 sha:d3d8186d src:manual/02-chipy.md:20 status:unchecked -->
 ### T-02-007 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-02-008 sha:9e22765a src:manual/02-chipy.md:22 klas:F -->
+<!-- fc id:T-02-008 sha:9e22765a src:manual/02-chipy.md:22 status:unchecked -->
 ### T-02-008 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -197,7 +197,7 @@
 
 ---
 
-<!-- fc id:T-02-009 sha:46e9a3e0 src:manual/02-chipy.md:25 klas:F -->
+<!-- fc id:T-02-009 sha:46e9a3e0 src:manual/02-chipy.md:25 status:unchecked -->
 ### T-02-009 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -219,7 +219,7 @@
 
 ---
 
-<!-- fc id:T-02-010 sha:f88fe444 src:manual/02-chipy.md:26 klas:E -->
+<!-- fc id:T-02-010 sha:f88fe444 src:manual/02-chipy.md:26 status:no-external-signal -->
 ### T-02-010 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -241,7 +241,7 @@
 
 ---
 
-<!-- fc id:T-02-011 sha:8630e49d src:manual/02-chipy.md:30 klas:F -->
+<!-- fc id:T-02-011 sha:8630e49d src:manual/02-chipy.md:30 status:unchecked -->
 ### T-02-011 · tablycya-shapka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -274,7 +274,7 @@
 
 ---
 
-<!-- fc id:T-02-012 sha:0168572d src:manual/02-chipy.md:32 klas:F -->
+<!-- fc id:T-02-012 sha:0168572d src:manual/02-chipy.md:32 status:unchecked -->
 ### T-02-012 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -313,7 +313,7 @@
 
 ---
 
-<!-- fc id:T-02-013 sha:e91dccbe src:manual/02-chipy.md:32 klas:A -->
+<!-- fc id:T-02-013 sha:e91dccbe src:manual/02-chipy.md:32 status:verbatim -->
 ### T-02-013 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -358,7 +358,7 @@
 
 ---
 
-<!-- fc id:T-02-014 sha:36ed0120 src:manual/02-chipy.md:32 klas:F -->
+<!-- fc id:T-02-014 sha:36ed0120 src:manual/02-chipy.md:32 status:unchecked -->
 ### T-02-014 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -397,7 +397,7 @@
 
 ---
 
-<!-- fc id:T-02-015 sha:009980b4 src:manual/02-chipy.md:32 klas:F -->
+<!-- fc id:T-02-015 sha:009980b4 src:manual/02-chipy.md:32 status:unchecked -->
 ### T-02-015 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -436,7 +436,7 @@
 
 ---
 
-<!-- fc id:T-02-016 sha:655eca53 src:manual/02-chipy.md:32 klas:A -->
+<!-- fc id:T-02-016 sha:655eca53 src:manual/02-chipy.md:32 status:verbatim -->
 ### T-02-016 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -481,7 +481,7 @@
 
 ---
 
-<!-- fc id:T-02-017 sha:626a6ffe src:manual/02-chipy.md:32 klas:A -->
+<!-- fc id:T-02-017 sha:626a6ffe src:manual/02-chipy.md:32 status:verbatim -->
 ### T-02-017 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -526,7 +526,7 @@
 
 ---
 
-<!-- fc id:T-02-018 sha:0cb91d4a src:manual/02-chipy.md:33 klas:C -->
+<!-- fc id:T-02-018 sha:0cb91d4a src:manual/02-chipy.md:33 status:named-unreachable -->
 ### T-02-018 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -570,7 +570,7 @@
 
 ---
 
-<!-- fc id:T-02-019 sha:1e14bfc6 src:manual/02-chipy.md:33 klas:F -->
+<!-- fc id:T-02-019 sha:1e14bfc6 src:manual/02-chipy.md:33 status:unchecked -->
 ### T-02-019 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -609,7 +609,7 @@
 
 ---
 
-<!-- fc id:T-02-020 sha:6aac4631 src:manual/02-chipy.md:33 klas:A -->
+<!-- fc id:T-02-020 sha:6aac4631 src:manual/02-chipy.md:33 status:verbatim -->
 ### T-02-020 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -654,7 +654,7 @@
 
 ---
 
-<!-- fc id:T-02-021 sha:de0b6f6b src:manual/02-chipy.md:33 klas:A -->
+<!-- fc id:T-02-021 sha:de0b6f6b src:manual/02-chipy.md:33 status:verbatim -->
 ### T-02-021 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -702,7 +702,7 @@
 
 ---
 
-<!-- fc id:T-02-022 sha:0d0afd19 src:manual/02-chipy.md:33 klas:F -->
+<!-- fc id:T-02-022 sha:0d0afd19 src:manual/02-chipy.md:33 status:unchecked -->
 ### T-02-022 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -741,7 +741,7 @@
 
 ---
 
-<!-- fc id:T-02-023 sha:af57da03 src:manual/02-chipy.md:33 klas:A -->
+<!-- fc id:T-02-023 sha:af57da03 src:manual/02-chipy.md:33 status:verbatim -->
 ### T-02-023 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -789,7 +789,7 @@
 
 ---
 
-<!-- fc id:T-02-024 sha:0f17620f src:manual/02-chipy.md:34 klas:A -->
+<!-- fc id:T-02-024 sha:0f17620f src:manual/02-chipy.md:34 status:verbatim -->
 ### T-02-024 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -834,7 +834,7 @@
 
 ---
 
-<!-- fc id:T-02-025 sha:7e7d979b src:manual/02-chipy.md:34 klas:F -->
+<!-- fc id:T-02-025 sha:7e7d979b src:manual/02-chipy.md:34 status:unchecked -->
 ### T-02-025 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -873,7 +873,7 @@
 
 ---
 
-<!-- fc id:T-02-026 sha:966fb621 src:manual/02-chipy.md:34 klas:F -->
+<!-- fc id:T-02-026 sha:966fb621 src:manual/02-chipy.md:34 status:unchecked -->
 ### T-02-026 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -912,7 +912,7 @@
 
 ---
 
-<!-- fc id:T-02-027 sha:52b2301b src:manual/02-chipy.md:34 klas:A -->
+<!-- fc id:T-02-027 sha:52b2301b src:manual/02-chipy.md:34 status:verbatim -->
 ### T-02-027 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -957,7 +957,7 @@
 
 ---
 
-<!-- fc id:T-02-028 sha:b3f7155b src:manual/02-chipy.md:34 klas:F -->
+<!-- fc id:T-02-028 sha:b3f7155b src:manual/02-chipy.md:34 status:unchecked -->
 ### T-02-028 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -996,7 +996,7 @@
 
 ---
 
-<!-- fc id:T-02-029 sha:f4539c1a src:manual/02-chipy.md:34 klas:A -->
+<!-- fc id:T-02-029 sha:f4539c1a src:manual/02-chipy.md:34 status:verbatim -->
 ### T-02-029 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1041,7 +1041,7 @@
 
 ---
 
-<!-- fc id:T-02-030 sha:3424af9b src:manual/02-chipy.md:35 klas:A -->
+<!-- fc id:T-02-030 sha:3424af9b src:manual/02-chipy.md:35 status:verbatim -->
 ### T-02-030 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1086,7 +1086,7 @@
 
 ---
 
-<!-- fc id:T-02-031 sha:653d5866 src:manual/02-chipy.md:35 klas:A -->
+<!-- fc id:T-02-031 sha:653d5866 src:manual/02-chipy.md:35 status:verbatim -->
 ### T-02-031 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1131,7 +1131,7 @@
 
 ---
 
-<!-- fc id:T-02-032 sha:13e5bc61 src:manual/02-chipy.md:35 klas:A -->
+<!-- fc id:T-02-032 sha:13e5bc61 src:manual/02-chipy.md:35 status:verbatim -->
 ### T-02-032 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1176,7 +1176,7 @@
 
 ---
 
-<!-- fc id:T-02-033 sha:0127c37c src:manual/02-chipy.md:35 klas:A -->
+<!-- fc id:T-02-033 sha:0127c37c src:manual/02-chipy.md:35 status:verbatim -->
 ### T-02-033 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1222,7 +1222,7 @@
 
 ---
 
-<!-- fc id:T-02-034 sha:7798c639 src:manual/02-chipy.md:35 klas:A -->
+<!-- fc id:T-02-034 sha:7798c639 src:manual/02-chipy.md:35 status:verbatim -->
 ### T-02-034 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1268,7 +1268,7 @@
 
 ---
 
-<!-- fc id:T-02-035 sha:8798e39c src:manual/02-chipy.md:35 klas:F -->
+<!-- fc id:T-02-035 sha:8798e39c src:manual/02-chipy.md:35 status:unchecked -->
 ### T-02-035 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1307,7 +1307,7 @@
 
 ---
 
-<!-- fc id:T-02-036 sha:bd5f8f54 src:manual/02-chipy.md:36 klas:A -->
+<!-- fc id:T-02-036 sha:bd5f8f54 src:manual/02-chipy.md:36 status:verbatim -->
 ### T-02-036 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1358,7 +1358,7 @@
 
 ---
 
-<!-- fc id:T-02-037 sha:62d6b631 src:manual/02-chipy.md:36 klas:A -->
+<!-- fc id:T-02-037 sha:62d6b631 src:manual/02-chipy.md:36 status:verbatim -->
 ### T-02-037 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1409,7 +1409,7 @@
 
 ---
 
-<!-- fc id:T-02-038 sha:1b466931 src:manual/02-chipy.md:36 klas:A -->
+<!-- fc id:T-02-038 sha:1b466931 src:manual/02-chipy.md:36 status:verbatim -->
 ### T-02-038 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1460,7 +1460,7 @@
 
 ---
 
-<!-- fc id:T-02-039 sha:2ace6257 src:manual/02-chipy.md:36 klas:A -->
+<!-- fc id:T-02-039 sha:2ace6257 src:manual/02-chipy.md:36 status:verbatim -->
 ### T-02-039 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1511,7 +1511,7 @@
 
 ---
 
-<!-- fc id:T-02-040 sha:328f15ff src:manual/02-chipy.md:36 klas:A -->
+<!-- fc id:T-02-040 sha:328f15ff src:manual/02-chipy.md:36 status:verbatim -->
 ### T-02-040 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1562,7 +1562,7 @@
 
 ---
 
-<!-- fc id:T-02-041 sha:0da97b7e src:manual/02-chipy.md:36 klas:A -->
+<!-- fc id:T-02-041 sha:0da97b7e src:manual/02-chipy.md:36 status:verbatim -->
 ### T-02-041 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1613,7 +1613,7 @@
 
 ---
 
-<!-- fc id:T-02-042 sha:d887dabc src:manual/02-chipy.md:37 klas:A -->
+<!-- fc id:T-02-042 sha:d887dabc src:manual/02-chipy.md:37 status:verbatim -->
 ### T-02-042 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1658,7 +1658,7 @@
 
 ---
 
-<!-- fc id:T-02-043 sha:8de930a4 src:manual/02-chipy.md:37 klas:A -->
+<!-- fc id:T-02-043 sha:8de930a4 src:manual/02-chipy.md:37 status:verbatim -->
 ### T-02-043 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1703,7 +1703,7 @@
 
 ---
 
-<!-- fc id:T-02-044 sha:a5ffbdc2 src:manual/02-chipy.md:37 klas:A -->
+<!-- fc id:T-02-044 sha:a5ffbdc2 src:manual/02-chipy.md:37 status:verbatim -->
 ### T-02-044 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1748,7 +1748,7 @@
 
 ---
 
-<!-- fc id:T-02-045 sha:715a8f46 src:manual/02-chipy.md:37 klas:A -->
+<!-- fc id:T-02-045 sha:715a8f46 src:manual/02-chipy.md:37 status:verbatim -->
 ### T-02-045 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1796,7 +1796,7 @@
 
 ---
 
-<!-- fc id:T-02-046 sha:86264540 src:manual/02-chipy.md:37 klas:A -->
+<!-- fc id:T-02-046 sha:86264540 src:manual/02-chipy.md:37 status:verbatim -->
 ### T-02-046 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1850,7 +1850,7 @@
 
 ---
 
-<!-- fc id:T-02-047 sha:ef59b447 src:manual/02-chipy.md:37 klas:A -->
+<!-- fc id:T-02-047 sha:ef59b447 src:manual/02-chipy.md:37 status:verbatim -->
 ### T-02-047 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1895,7 +1895,7 @@
 
 ---
 
-<!-- fc id:T-02-048 sha:9bdedf92 src:manual/02-chipy.md:38 klas:A -->
+<!-- fc id:T-02-048 sha:9bdedf92 src:manual/02-chipy.md:38 status:verbatim -->
 ### T-02-048 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1949,7 +1949,7 @@
 
 ---
 
-<!-- fc id:T-02-049 sha:37ca91b8 src:manual/02-chipy.md:38 klas:A -->
+<!-- fc id:T-02-049 sha:37ca91b8 src:manual/02-chipy.md:38 status:verbatim -->
 ### T-02-049 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2003,7 +2003,7 @@
 
 ---
 
-<!-- fc id:T-02-050 sha:679fdc0a src:manual/02-chipy.md:38 klas:A -->
+<!-- fc id:T-02-050 sha:679fdc0a src:manual/02-chipy.md:38 status:verbatim -->
 ### T-02-050 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2057,7 +2057,7 @@
 
 ---
 
-<!-- fc id:T-02-051 sha:830f1e52 src:manual/02-chipy.md:38 klas:A -->
+<!-- fc id:T-02-051 sha:830f1e52 src:manual/02-chipy.md:38 status:verbatim -->
 ### T-02-051 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2111,7 +2111,7 @@
 
 ---
 
-<!-- fc id:T-02-052 sha:0688b955 src:manual/02-chipy.md:38 klas:A -->
+<!-- fc id:T-02-052 sha:0688b955 src:manual/02-chipy.md:38 status:verbatim -->
 ### T-02-052 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2165,7 +2165,7 @@
 
 ---
 
-<!-- fc id:T-02-053 sha:5180d438 src:manual/02-chipy.md:38 klas:A -->
+<!-- fc id:T-02-053 sha:5180d438 src:manual/02-chipy.md:38 status:verbatim -->
 ### T-02-053 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2219,7 +2219,7 @@
 
 ---
 
-<!-- fc id:T-02-054 sha:44c68cc9 src:manual/02-chipy.md:39 klas:A -->
+<!-- fc id:T-02-054 sha:44c68cc9 src:manual/02-chipy.md:39 status:verbatim -->
 ### T-02-054 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2264,7 +2264,7 @@
 
 ---
 
-<!-- fc id:T-02-055 sha:8758336a src:manual/02-chipy.md:39 klas:A -->
+<!-- fc id:T-02-055 sha:8758336a src:manual/02-chipy.md:39 status:verbatim -->
 ### T-02-055 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2309,7 +2309,7 @@
 
 ---
 
-<!-- fc id:T-02-056 sha:a7109dbe src:manual/02-chipy.md:39 klas:A -->
+<!-- fc id:T-02-056 sha:a7109dbe src:manual/02-chipy.md:39 status:verbatim -->
 ### T-02-056 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2357,7 +2357,7 @@
 
 ---
 
-<!-- fc id:T-02-057 sha:fedb80c4 src:manual/02-chipy.md:39 klas:A -->
+<!-- fc id:T-02-057 sha:fedb80c4 src:manual/02-chipy.md:39 status:verbatim -->
 ### T-02-057 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2402,7 +2402,7 @@
 
 ---
 
-<!-- fc id:T-02-058 sha:72e63fbb src:manual/02-chipy.md:39 klas:A -->
+<!-- fc id:T-02-058 sha:72e63fbb src:manual/02-chipy.md:39 status:verbatim -->
 ### T-02-058 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2450,7 +2450,7 @@
 
 ---
 
-<!-- fc id:T-02-059 sha:f2652967 src:manual/02-chipy.md:39 klas:A -->
+<!-- fc id:T-02-059 sha:f2652967 src:manual/02-chipy.md:39 status:verbatim -->
 ### T-02-059 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2498,7 +2498,7 @@
 
 ---
 
-<!-- fc id:T-02-060 sha:6d067d98 src:manual/02-chipy.md:40 klas:A -->
+<!-- fc id:T-02-060 sha:6d067d98 src:manual/02-chipy.md:40 status:verbatim -->
 ### T-02-060 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2552,7 +2552,7 @@
 
 ---
 
-<!-- fc id:T-02-061 sha:d6c8ccf7 src:manual/02-chipy.md:40 klas:A -->
+<!-- fc id:T-02-061 sha:d6c8ccf7 src:manual/02-chipy.md:40 status:verbatim -->
 ### T-02-061 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2606,7 +2606,7 @@
 
 ---
 
-<!-- fc id:T-02-062 sha:60a5ea72 src:manual/02-chipy.md:40 klas:A -->
+<!-- fc id:T-02-062 sha:60a5ea72 src:manual/02-chipy.md:40 status:verbatim -->
 ### T-02-062 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2660,7 +2660,7 @@
 
 ---
 
-<!-- fc id:T-02-063 sha:6bd38e28 src:manual/02-chipy.md:40 klas:A -->
+<!-- fc id:T-02-063 sha:6bd38e28 src:manual/02-chipy.md:40 status:verbatim -->
 ### T-02-063 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2714,7 +2714,7 @@
 
 ---
 
-<!-- fc id:T-02-064 sha:43079d53 src:manual/02-chipy.md:40 klas:A -->
+<!-- fc id:T-02-064 sha:43079d53 src:manual/02-chipy.md:40 status:verbatim -->
 ### T-02-064 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2768,7 +2768,7 @@
 
 ---
 
-<!-- fc id:T-02-065 sha:aff9b495 src:manual/02-chipy.md:40 klas:A -->
+<!-- fc id:T-02-065 sha:aff9b495 src:manual/02-chipy.md:40 status:verbatim -->
 ### T-02-065 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2822,7 +2822,7 @@
 
 ---
 
-<!-- fc id:T-02-066 sha:b3fa1d90 src:manual/02-chipy.md:41 klas:F -->
+<!-- fc id:T-02-066 sha:b3fa1d90 src:manual/02-chipy.md:41 status:unchecked -->
 ### T-02-066 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2861,7 +2861,7 @@
 
 ---
 
-<!-- fc id:T-02-067 sha:5c099b4e src:manual/02-chipy.md:41 klas:A -->
+<!-- fc id:T-02-067 sha:5c099b4e src:manual/02-chipy.md:41 status:verbatim -->
 ### T-02-067 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2909,7 +2909,7 @@
 
 ---
 
-<!-- fc id:T-02-068 sha:7d1819e5 src:manual/02-chipy.md:41 klas:F -->
+<!-- fc id:T-02-068 sha:7d1819e5 src:manual/02-chipy.md:41 status:unchecked -->
 ### T-02-068 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2948,7 +2948,7 @@
 
 ---
 
-<!-- fc id:T-02-069 sha:85dd3bbe src:manual/02-chipy.md:41 klas:F -->
+<!-- fc id:T-02-069 sha:85dd3bbe src:manual/02-chipy.md:41 status:unchecked -->
 ### T-02-069 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2987,7 +2987,7 @@
 
 ---
 
-<!-- fc id:T-02-070 sha:e3d31b30 src:manual/02-chipy.md:41 klas:F -->
+<!-- fc id:T-02-070 sha:e3d31b30 src:manual/02-chipy.md:41 status:unchecked -->
 ### T-02-070 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3026,7 +3026,7 @@
 
 ---
 
-<!-- fc id:T-02-071 sha:74ca1990 src:manual/02-chipy.md:41 klas:F -->
+<!-- fc id:T-02-071 sha:74ca1990 src:manual/02-chipy.md:41 status:unchecked -->
 ### T-02-071 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3065,7 +3065,7 @@
 
 ---
 
-<!-- fc id:T-02-072 sha:89227826 src:manual/02-chipy.md:43 klas:A -->
+<!-- fc id:T-02-072 sha:89227826 src:manual/02-chipy.md:43 status:verbatim -->
 ### T-02-072 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3104,7 +3104,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-073 sha:967fdcb8 src:manual/02-chipy.md:45 klas:F -->
+<!-- fc id:T-02-073 sha:967fdcb8 src:manual/02-chipy.md:45 status:unchecked -->
 ### T-02-073 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3128,7 +3128,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-074 sha:670655ab src:manual/02-chipy.md:49 klas:A -->
+<!-- fc id:T-02-074 sha:670655ab src:manual/02-chipy.md:49 status:verbatim -->
 ### T-02-074 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3166,7 +3166,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-075 sha:e1612c34 src:manual/02-chipy.md:52 klas:A -->
+<!-- fc id:T-02-075 sha:e1612c34 src:manual/02-chipy.md:52 status:verbatim -->
 ### T-02-075 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3205,7 +3205,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-076 sha:57958c24 src:manual/02-chipy.md:53 klas:A -->
+<!-- fc id:T-02-076 sha:57958c24 src:manual/02-chipy.md:53 status:verbatim -->
 ### T-02-076 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3244,7 +3244,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-077 sha:b137b862 src:manual/02-chipy.md:54 klas:F -->
+<!-- fc id:T-02-077 sha:b137b862 src:manual/02-chipy.md:54 status:unchecked -->
 ### T-02-077 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3268,7 +3268,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-078 sha:a912159b src:manual/02-chipy.md:57 klas:E -->
+<!-- fc id:T-02-078 sha:a912159b src:manual/02-chipy.md:57 status:no-external-signal -->
 ### T-02-078 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3291,7 +3291,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-079 sha:75f9ac62 src:manual/02-chipy.md:58 klas:A -->
+<!-- fc id:T-02-079 sha:75f9ac62 src:manual/02-chipy.md:58 status:verbatim -->
 ### T-02-079 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3330,7 +3330,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-080 sha:930693d7 src:manual/02-chipy.md:61 klas:A -->
+<!-- fc id:T-02-080 sha:930693d7 src:manual/02-chipy.md:61 status:verbatim -->
 ### T-02-080 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3368,7 +3368,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-081 sha:0fb7a491 src:manual/02-chipy.md:65 klas:D -->
+<!-- fc id:T-02-081 sha:0fb7a491 src:manual/02-chipy.md:65 status:arithmetic -->
 ### T-02-081 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3409,7 +3409,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-082 sha:e9312cfd src:manual/02-chipy.md:72 klas:A -->
+<!-- fc id:T-02-082 sha:e9312cfd src:manual/02-chipy.md:72 status:verbatim -->
 ### T-02-082 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3447,7 +3447,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-083 sha:8f45264a src:manual/02-chipy.md:73 klas:E -->
+<!-- fc id:T-02-083 sha:8f45264a src:manual/02-chipy.md:73 status:no-external-signal -->
 ### T-02-083 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3470,7 +3470,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-084 sha:447dbfe3 src:manual/02-chipy.md:75 klas:F -->
+<!-- fc id:T-02-084 sha:447dbfe3 src:manual/02-chipy.md:75 status:unchecked -->
 ### T-02-084 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3496,7 +3496,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-085 sha:33136a2d src:manual/02-chipy.md:78 klas:F -->
+<!-- fc id:T-02-085 sha:33136a2d src:manual/02-chipy.md:78 status:unchecked -->
 ### T-02-085 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3522,7 +3522,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-086 sha:b13a20d6 src:manual/02-chipy.md:83 klas:A -->
+<!-- fc id:T-02-086 sha:b13a20d6 src:manual/02-chipy.md:83 status:verbatim -->
 ### T-02-086 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3562,7 +3562,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-087 sha:b75ec5dc src:manual/02-chipy.md:83 klas:F -->
+<!-- fc id:T-02-087 sha:b75ec5dc src:manual/02-chipy.md:83 status:unchecked -->
 ### T-02-087 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3587,7 +3587,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-088 sha:6584b483 src:manual/02-chipy.md:89 klas:F -->
+<!-- fc id:T-02-088 sha:6584b483 src:manual/02-chipy.md:89 status:unchecked -->
 ### T-02-088 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3611,7 +3611,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-089 sha:30db9e75 src:manual/02-chipy.md:93 klas:B -->
+<!-- fc id:T-02-089 sha:30db9e75 src:manual/02-chipy.md:93 status:derived -->
 ### T-02-089 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3640,7 +3640,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-090 sha:12ac393d src:manual/02-chipy.md:94 klas:E -->
+<!-- fc id:T-02-090 sha:12ac393d src:manual/02-chipy.md:94 status:no-external-signal -->
 ### T-02-090 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3663,7 +3663,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-091 sha:5d224757 src:manual/02-chipy.md:97 klas:A -->
+<!-- fc id:T-02-091 sha:5d224757 src:manual/02-chipy.md:97 status:verbatim -->
 ### T-02-091 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3693,7 +3693,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-092 sha:20383220 src:manual/02-chipy.md:98 klas:F -->
+<!-- fc id:T-02-092 sha:20383220 src:manual/02-chipy.md:98 status:unchecked -->
 ### T-02-092 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3717,7 +3717,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-093 sha:258d0fa2 src:manual/02-chipy.md:104 klas:B -->
+<!-- fc id:T-02-093 sha:258d0fa2 src:manual/02-chipy.md:104 status:derived -->
 ### T-02-093 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3746,7 +3746,7 @@ ESP32, S2 і S3 побудовані на ядрах Xtensa; C3, C6, H2 і ре�
 
 ---
 
-<!-- fc id:T-02-094 sha:69cccb54 src:manual/02-chipy.md:107 klas:E -->
+<!-- fc id:T-02-094 sha:69cccb54 src:manual/02-chipy.md:107 status:no-external-signal -->
 ### T-02-094 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3769,7 +3769,7 @@ ESP32, S2 і S3 побудовані на ядрах Xtensa; C3, C6, H2 і ре�
 
 ---
 
-<!-- fc id:T-02-095 sha:e76453d8 src:manual/02-chipy.md:108 klas:E -->
+<!-- fc id:T-02-095 sha:e76453d8 src:manual/02-chipy.md:108 status:no-external-signal -->
 ### T-02-095 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3792,7 +3792,7 @@ ESP32, S2 і S3 побудовані на ядрах Xtensa; C3, C6, H2 і ре�
 
 ---
 
-<!-- fc id:T-02-096 sha:b6b6f8de src:manual/02-chipy.md:113 klas:F -->
+<!-- fc id:T-02-096 sha:b6b6f8de src:manual/02-chipy.md:113 status:unchecked -->
 ### T-02-096 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3819,7 +3819,7 @@ ESP32, S2 і S3 побудовані на ядрах Xtensa; C3, C6, H2 і ре�
 
 ---
 
-<!-- fc id:T-02-097 sha:058b6206 src:manual/02-chipy.md:121 klas:E -->
+<!-- fc id:T-02-097 sha:058b6206 src:manual/02-chipy.md:121 status:no-external-signal -->
 ### T-02-097 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3841,7 +3841,7 @@ Espressif послідовно переходить на RISC-V у нових ч
 
 ---
 
-<!-- fc id:T-02-098 sha:c17dc940 src:manual/02-chipy.md:126 klas:A -->
+<!-- fc id:T-02-098 sha:c17dc940 src:manual/02-chipy.md:126 status:verbatim -->
 ### T-02-098 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3869,7 +3869,7 @@ Espressif послідовно переходить на RISC-V у нових ч
 
 ---
 
-<!-- fc id:T-02-099 sha:5ec634b9 src:manual/02-chipy.md:129 klas:A -->
+<!-- fc id:T-02-099 sha:5ec634b9 src:manual/02-chipy.md:129 status:verbatim -->
 ### T-02-099 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3898,7 +3898,7 @@ Espressif послідовно переходить на RISC-V у нових ч
 
 ---
 
-<!-- fc id:T-02-100 sha:6ddadcf2 src:manual/02-chipy.md:133 klas:E -->
+<!-- fc id:T-02-100 sha:6ddadcf2 src:manual/02-chipy.md:133 status:no-external-signal -->
 ### T-02-100 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3920,7 +3920,7 @@ Espressif послідовно переходить на RISC-V у нових ч
 
 ---
 
-<!-- fc id:T-02-101 sha:ce0f3606 src:manual/02-chipy.md:136 klas:A -->
+<!-- fc id:T-02-101 sha:ce0f3606 src:manual/02-chipy.md:136 status:verbatim -->
 ### T-02-101 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3948,7 +3948,7 @@ Espressif послідовно переходить на RISC-V у нових ч
 
 ---
 
-<!-- fc id:T-02-102 sha:5e7f4dbe src:manual/02-chipy.md:138 klas:K -->
+<!-- fc id:T-02-102 sha:5e7f4dbe src:manual/02-chipy.md:138 status:code-context -->
 ### T-02-102 · kod · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3995,7 +3995,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-103 sha:6aa9cf42 src:manual/02-chipy.md:139 klas:A -->
+<!-- fc id:T-02-103 sha:6aa9cf42 src:manual/02-chipy.md:139 status:verbatim -->
 ### T-02-103 · kod-ryadok · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4040,7 +4040,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-104 sha:a88581f8 src:manual/02-chipy.md:143 klas:F -->
+<!-- fc id:T-02-104 sha:a88581f8 src:manual/02-chipy.md:143 status:unchecked -->
 ### T-02-104 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4066,7 +4066,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-105 sha:37dcf890 src:manual/02-chipy.md:143 klas:A -->
+<!-- fc id:T-02-105 sha:37dcf890 src:manual/02-chipy.md:143 status:verbatim -->
 ### T-02-105 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4098,7 +4098,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-106 sha:0db3ab6f src:manual/02-chipy.md:144 klas:E -->
+<!-- fc id:T-02-106 sha:0db3ab6f src:manual/02-chipy.md:144 status:no-external-signal -->
 ### T-02-106 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4124,7 +4124,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-107 sha:ac382040 src:manual/02-chipy.md:145 klas:A -->
+<!-- fc id:T-02-107 sha:ac382040 src:manual/02-chipy.md:145 status:verbatim -->
 ### T-02-107 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4156,7 +4156,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-108 sha:8793046b src:manual/02-chipy.md:151 klas:A -->
+<!-- fc id:T-02-108 sha:8793046b src:manual/02-chipy.md:151 status:verbatim -->
 ### T-02-108 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4187,7 +4187,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-109 sha:b3e35e83 src:manual/02-chipy.md:152 klas:E -->
+<!-- fc id:T-02-109 sha:b3e35e83 src:manual/02-chipy.md:152 status:no-external-signal -->
 ### T-02-109 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4209,7 +4209,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-110 sha:18efa8ca src:manual/02-chipy.md:154 klas:A -->
+<!-- fc id:T-02-110 sha:18efa8ca src:manual/02-chipy.md:154 status:verbatim -->
 ### T-02-110 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4237,7 +4237,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-111 sha:cac1eaa9 src:manual/02-chipy.md:155 klas:F -->
+<!-- fc id:T-02-111 sha:cac1eaa9 src:manual/02-chipy.md:155 status:unchecked -->
 ### T-02-111 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4259,7 +4259,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-112 sha:89db3f60 src:manual/02-chipy.md:157 klas:F -->
+<!-- fc id:T-02-112 sha:89db3f60 src:manual/02-chipy.md:157 status:unchecked -->
 ### T-02-112 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4280,7 +4280,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-113 sha:4f695ef2 src:manual/02-chipy.md:159 klas:A -->
+<!-- fc id:T-02-113 sha:4f695ef2 src:manual/02-chipy.md:159 status:verbatim -->
 ### T-02-113 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4317,7 +4317,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-114 sha:142e98c9 src:manual/02-chipy.md:162 klas:F -->
+<!-- fc id:T-02-114 sha:142e98c9 src:manual/02-chipy.md:162 status:unchecked -->
 ### T-02-114 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4340,7 +4340,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-115 sha:028b5c51 src:manual/02-chipy.md:163 klas:E -->
+<!-- fc id:T-02-115 sha:028b5c51 src:manual/02-chipy.md:163 status:no-external-signal -->
 ### T-02-115 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4363,7 +4363,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-116 sha:7734fd03 src:manual/02-chipy.md:167 klas:F -->
+<!-- fc id:T-02-116 sha:7734fd03 src:manual/02-chipy.md:167 status:unchecked -->
 ### T-02-116 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4388,7 +4388,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-117 sha:af7651a0 src:manual/02-chipy.md:169 klas:E -->
+<!-- fc id:T-02-117 sha:af7651a0 src:manual/02-chipy.md:169 status:no-external-signal -->
 ### T-02-117 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4413,7 +4413,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-118 sha:7a023de8 src:manual/02-chipy.md:172 klas:F -->
+<!-- fc id:T-02-118 sha:7a023de8 src:manual/02-chipy.md:172 status:unchecked -->
 ### T-02-118 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4436,7 +4436,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-119 sha:85436893 src:manual/02-chipy.md:173 klas:E -->
+<!-- fc id:T-02-119 sha:85436893 src:manual/02-chipy.md:173 status:no-external-signal -->
 ### T-02-119 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4459,7 +4459,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-120 sha:49610759 src:manual/02-chipy.md:178 klas:F -->
+<!-- fc id:T-02-120 sha:49610759 src:manual/02-chipy.md:178 status:unchecked -->
 ### T-02-120 · tablycya-shapka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4492,7 +4492,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-121 sha:aafacce0 src:manual/02-chipy.md:180 klas:E -->
+<!-- fc id:T-02-121 sha:aafacce0 src:manual/02-chipy.md:180 status:no-external-signal -->
 ### T-02-121 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4531,7 +4531,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-122 sha:31913840 src:manual/02-chipy.md:180 klas:E -->
+<!-- fc id:T-02-122 sha:31913840 src:manual/02-chipy.md:180 status:no-external-signal -->
 ### T-02-122 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4570,7 +4570,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-123 sha:b7228131 src:manual/02-chipy.md:181 klas:F -->
+<!-- fc id:T-02-123 sha:b7228131 src:manual/02-chipy.md:181 status:unchecked -->
 ### T-02-123 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4609,7 +4609,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-124 sha:a38da246 src:manual/02-chipy.md:181 klas:F -->
+<!-- fc id:T-02-124 sha:a38da246 src:manual/02-chipy.md:181 status:unchecked -->
 ### T-02-124 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4648,7 +4648,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-125 sha:451c14a8 src:manual/02-chipy.md:182 klas:F -->
+<!-- fc id:T-02-125 sha:451c14a8 src:manual/02-chipy.md:182 status:unchecked -->
 ### T-02-125 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4687,7 +4687,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-126 sha:d4198bbd src:manual/02-chipy.md:182 klas:A -->
+<!-- fc id:T-02-126 sha:d4198bbd src:manual/02-chipy.md:182 status:verbatim -->
 ### T-02-126 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4732,7 +4732,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-127 sha:ae41dea8 src:manual/02-chipy.md:183 klas:E -->
+<!-- fc id:T-02-127 sha:ae41dea8 src:manual/02-chipy.md:183 status:no-external-signal -->
 ### T-02-127 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4771,7 +4771,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-128 sha:4020ac33 src:manual/02-chipy.md:183 klas:E -->
+<!-- fc id:T-02-128 sha:4020ac33 src:manual/02-chipy.md:183 status:no-external-signal -->
 ### T-02-128 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4810,7 +4810,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-129 sha:78ce8952 src:manual/02-chipy.md:184 klas:B -->
+<!-- fc id:T-02-129 sha:78ce8952 src:manual/02-chipy.md:184 status:derived -->
 ### T-02-129 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4857,7 +4857,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-130 sha:c8184cfc src:manual/02-chipy.md:184 klas:B -->
+<!-- fc id:T-02-130 sha:c8184cfc src:manual/02-chipy.md:184 status:derived -->
 ### T-02-130 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4904,7 +4904,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-131 sha:7091ac6f src:manual/02-chipy.md:185 klas:F -->
+<!-- fc id:T-02-131 sha:7091ac6f src:manual/02-chipy.md:185 status:unchecked -->
 ### T-02-131 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4943,7 +4943,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-132 sha:79873967 src:manual/02-chipy.md:185 klas:F -->
+<!-- fc id:T-02-132 sha:79873967 src:manual/02-chipy.md:185 status:unchecked -->
 ### T-02-132 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4982,7 +4982,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-133 sha:bda12f8d src:manual/02-chipy.md:186 klas:B -->
+<!-- fc id:T-02-133 sha:bda12f8d src:manual/02-chipy.md:186 status:derived -->
 ### T-02-133 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5028,7 +5028,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-134 sha:fca9e612 src:manual/02-chipy.md:186 klas:A -->
+<!-- fc id:T-02-134 sha:fca9e612 src:manual/02-chipy.md:186 status:verbatim -->
 ### T-02-134 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5082,7 +5082,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-135 sha:32086172 src:manual/02-chipy.md:187 klas:A -->
+<!-- fc id:T-02-135 sha:32086172 src:manual/02-chipy.md:187 status:verbatim -->
 ### T-02-135 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5136,7 +5136,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-136 sha:59bd179d src:manual/02-chipy.md:187 klas:A -->
+<!-- fc id:T-02-136 sha:59bd179d src:manual/02-chipy.md:187 status:verbatim -->
 ### T-02-136 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5190,7 +5190,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-137 sha:7e859643 src:manual/02-chipy.md:188 klas:A -->
+<!-- fc id:T-02-137 sha:7e859643 src:manual/02-chipy.md:188 status:verbatim -->
 ### T-02-137 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5235,7 +5235,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-138 sha:7f0446d0 src:manual/02-chipy.md:188 klas:E -->
+<!-- fc id:T-02-138 sha:7f0446d0 src:manual/02-chipy.md:188 status:no-external-signal -->
 ### T-02-138 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5274,7 +5274,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-139 sha:aaa0d26b src:manual/02-chipy.md:189 klas:B -->
+<!-- fc id:T-02-139 sha:aaa0d26b src:manual/02-chipy.md:189 status:derived -->
 ### T-02-139 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5320,7 +5320,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-140 sha:202ec3ac src:manual/02-chipy.md:189 klas:F -->
+<!-- fc id:T-02-140 sha:202ec3ac src:manual/02-chipy.md:189 status:unchecked -->
 ### T-02-140 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5359,7 +5359,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-141 sha:27116816 src:manual/02-chipy.md:193 klas:E -->
+<!-- fc id:T-02-141 sha:27116816 src:manual/02-chipy.md:193 status:no-external-signal -->
 ### T-02-141 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5382,7 +5382,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-142 sha:dff56dfe src:manual/02-chipy.md:195 klas:F -->
+<!-- fc id:T-02-142 sha:dff56dfe src:manual/02-chipy.md:195 status:unchecked -->
 ### T-02-142 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5405,7 +5405,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-143 sha:8e85191b src:manual/02-chipy.md:197 klas:E -->
+<!-- fc id:T-02-143 sha:8e85191b src:manual/02-chipy.md:197 status:no-external-signal -->
 ### T-02-143 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5428,7 +5428,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-144 sha:6ea7599d src:manual/02-chipy.md:198 klas:E -->
+<!-- fc id:T-02-144 sha:6ea7599d src:manual/02-chipy.md:198 status:no-external-signal -->
 ### T-02-144 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5451,7 +5451,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-145 sha:450733e8 src:manual/02-chipy.md:203 klas:E -->
+<!-- fc id:T-02-145 sha:450733e8 src:manual/02-chipy.md:203 status:no-external-signal -->
 ### T-02-145 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5473,7 +5473,7 @@ Bluetooth Classic — лише classic. S2 без Bluetooth узагалі. З �
 
 ---
 
-<!-- fc id:T-02-146 sha:e13ade69 src:manual/02-chipy.md:203 klas:B -->
+<!-- fc id:T-02-146 sha:e13ade69 src:manual/02-chipy.md:203 status:derived -->
 ### T-02-146 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5502,7 +5502,7 @@ Bluetooth Classic — лише classic. S2 без Bluetooth узагалі. З �
 
 ---
 
-<!-- fc id:T-02-147 sha:2b52fead src:manual/02-chipy.md:203 klas:F -->
+<!-- fc id:T-02-147 sha:2b52fead src:manual/02-chipy.md:203 status:unchecked -->
 ### T-02-147 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5524,7 +5524,7 @@ Bluetooth Classic — лише classic. S2 без Bluetooth узагалі. З �
 
 ---
 
-<!-- fc id:T-02-148 sha:7fcabe7b src:manual/02-chipy.md:206 klas:E -->
+<!-- fc id:T-02-148 sha:7fcabe7b src:manual/02-chipy.md:206 status:no-external-signal -->
 ### T-02-148 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5546,7 +5546,7 @@ Xtensa проти RISC-V для прикладного коду не має зн
 
 ---
 
-<!-- fc id:T-02-149 sha:718e5bfc src:manual/02-chipy.md:209 klas:F -->
+<!-- fc id:T-02-149 sha:718e5bfc src:manual/02-chipy.md:209 status:unchecked -->
 ### T-02-149 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5567,7 +5567,7 @@ Xtensa проти RISC-V для прикладного коду не має зн
 
 ---
 
-<!-- fc id:T-02-150 sha:8ef720fa src:manual/02-chipy.md:211 klas:F -->
+<!-- fc id:T-02-150 sha:8ef720fa src:manual/02-chipy.md:211 status:unchecked -->
 ### T-02-150 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**

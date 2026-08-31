@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/54-korpus.md`
 
-Одиниць твердження: **86**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **86**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-54-001 sha:0189e0ae src:manual/54-korpus.md:3 klas:E -->
+<!-- fc id:T-54-001 sha:0189e0ae src:manual/54-korpus.md:3 status:no-external-signal -->
 ### T-54-001 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-54-002 sha:ddcc52b1 src:manual/54-korpus.md:6 klas:E -->
+<!-- fc id:T-54-002 sha:ddcc52b1 src:manual/54-korpus.md:6 status:no-external-signal -->
 ### T-54-002 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-54-003 sha:3e3e7cc4 src:manual/54-korpus.md:11 klas:E -->
+<!-- fc id:T-54-003 sha:3e3e7cc4 src:manual/54-korpus.md:11 status:no-external-signal -->
 ### T-54-003 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -73,7 +73,7 @@
 
 ---
 
-<!-- fc id:T-54-004 sha:e0544f2d src:manual/54-korpus.md:13 klas:F -->
+<!-- fc id:T-54-004 sha:e0544f2d src:manual/54-korpus.md:13 status:unchecked -->
 ### T-54-004 · tablycya-shapka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -101,7 +101,7 @@
 
 ---
 
-<!-- fc id:T-54-005 sha:6fbe4ff1 src:manual/54-korpus.md:15 klas:C -->
+<!-- fc id:T-54-005 sha:6fbe4ff1 src:manual/54-korpus.md:15 status:named-unreachable -->
 ### T-54-005 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -139,7 +139,7 @@
 
 ---
 
-<!-- fc id:T-54-006 sha:a53e716f src:manual/54-korpus.md:15 klas:C -->
+<!-- fc id:T-54-006 sha:a53e716f src:manual/54-korpus.md:15 status:named-unreachable -->
 ### T-54-006 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -177,7 +177,7 @@
 
 ---
 
-<!-- fc id:T-54-007 sha:4acd3948 src:manual/54-korpus.md:16 klas:C -->
+<!-- fc id:T-54-007 sha:4acd3948 src:manual/54-korpus.md:16 status:named-unreachable -->
 ### T-54-007 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -215,7 +215,7 @@
 
 ---
 
-<!-- fc id:T-54-008 sha:173dfdc3 src:manual/54-korpus.md:16 klas:C -->
+<!-- fc id:T-54-008 sha:173dfdc3 src:manual/54-korpus.md:16 status:named-unreachable -->
 ### T-54-008 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-54-009 sha:6f22aac0 src:manual/54-korpus.md:17 klas:C -->
+<!-- fc id:T-54-009 sha:6f22aac0 src:manual/54-korpus.md:17 status:named-unreachable -->
 ### T-54-009 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -291,7 +291,7 @@
 
 ---
 
-<!-- fc id:T-54-010 sha:4795c3f7 src:manual/54-korpus.md:17 klas:C -->
+<!-- fc id:T-54-010 sha:4795c3f7 src:manual/54-korpus.md:17 status:named-unreachable -->
 ### T-54-010 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -329,7 +329,7 @@
 
 ---
 
-<!-- fc id:T-54-011 sha:ff7027ee src:manual/54-korpus.md:18 klas:C -->
+<!-- fc id:T-54-011 sha:ff7027ee src:manual/54-korpus.md:18 status:named-unreachable -->
 ### T-54-011 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -367,7 +367,7 @@
 
 ---
 
-<!-- fc id:T-54-012 sha:8bb2a54a src:manual/54-korpus.md:18 klas:C -->
+<!-- fc id:T-54-012 sha:8bb2a54a src:manual/54-korpus.md:18 status:named-unreachable -->
 ### T-54-012 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -405,7 +405,7 @@
 
 ---
 
-<!-- fc id:T-54-013 sha:b54e1c5b src:manual/54-korpus.md:20 klas:C -->
+<!-- fc id:T-54-013 sha:b54e1c5b src:manual/54-korpus.md:20 status:named-unreachable -->
 ### T-54-013 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -431,7 +431,7 @@
 
 ---
 
-<!-- fc id:T-54-014 sha:85d0bc0a src:manual/54-korpus.md:20 klas:E -->
+<!-- fc id:T-54-014 sha:85d0bc0a src:manual/54-korpus.md:20 status:no-external-signal -->
 ### T-54-014 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -453,7 +453,7 @@
 
 ---
 
-<!-- fc id:T-54-015 sha:2e021e35 src:manual/54-korpus.md:24 klas:C -->
+<!-- fc id:T-54-015 sha:2e021e35 src:manual/54-korpus.md:24 status:named-unreachable -->
 ### T-54-015 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -481,7 +481,7 @@
 
 ---
 
-<!-- fc id:T-54-016 sha:97801af7 src:manual/54-korpus.md:28 klas:E -->
+<!-- fc id:T-54-016 sha:97801af7 src:manual/54-korpus.md:28 status:no-external-signal -->
 ### T-54-016 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -504,7 +504,7 @@
 
 ---
 
-<!-- fc id:T-54-017 sha:b19545d4 src:manual/54-korpus.md:34 klas:E -->
+<!-- fc id:T-54-017 sha:b19545d4 src:manual/54-korpus.md:34 status:no-external-signal -->
 ### T-54-017 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -527,7 +527,7 @@
 
 ---
 
-<!-- fc id:T-54-018 sha:9cc78cce src:manual/54-korpus.md:35 klas:E -->
+<!-- fc id:T-54-018 sha:9cc78cce src:manual/54-korpus.md:35 status:no-external-signal -->
 ### T-54-018 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -550,7 +550,7 @@
 
 ---
 
-<!-- fc id:T-54-019 sha:cf11ba25 src:manual/54-korpus.md:39 klas:E -->
+<!-- fc id:T-54-019 sha:cf11ba25 src:manual/54-korpus.md:39 status:no-external-signal -->
 ### T-54-019 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -574,7 +574,7 @@
 
 ---
 
-<!-- fc id:T-54-020 sha:ad3bb384 src:manual/54-korpus.md:39 klas:E -->
+<!-- fc id:T-54-020 sha:ad3bb384 src:manual/54-korpus.md:39 status:no-external-signal -->
 ### T-54-020 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -598,7 +598,7 @@
 
 ---
 
-<!-- fc id:T-54-021 sha:44c4fbc2 src:manual/54-korpus.md:43 klas:E -->
+<!-- fc id:T-54-021 sha:44c4fbc2 src:manual/54-korpus.md:43 status:no-external-signal -->
 ### T-54-021 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -621,7 +621,7 @@
 
 ---
 
-<!-- fc id:T-54-022 sha:2ee794d1 src:manual/54-korpus.md:44 klas:E -->
+<!-- fc id:T-54-022 sha:2ee794d1 src:manual/54-korpus.md:44 status:no-external-signal -->
 ### T-54-022 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -644,7 +644,7 @@
 
 ---
 
-<!-- fc id:T-54-023 sha:c1810299 src:manual/54-korpus.md:49 klas:E -->
+<!-- fc id:T-54-023 sha:c1810299 src:manual/54-korpus.md:49 status:no-external-signal -->
 ### T-54-023 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -666,7 +666,7 @@
 
 ---
 
-<!-- fc id:T-54-024 sha:35793b68 src:manual/54-korpus.md:52 klas:E -->
+<!-- fc id:T-54-024 sha:35793b68 src:manual/54-korpus.md:52 status:no-external-signal -->
 ### T-54-024 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -689,7 +689,7 @@
 
 ---
 
-<!-- fc id:T-54-025 sha:e0e905bb src:manual/54-korpus.md:53 klas:E -->
+<!-- fc id:T-54-025 sha:e0e905bb src:manual/54-korpus.md:53 status:no-external-signal -->
 ### T-54-025 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -712,7 +712,7 @@
 
 ---
 
-<!-- fc id:T-54-026 sha:e235380e src:manual/54-korpus.md:56 klas:E -->
+<!-- fc id:T-54-026 sha:e235380e src:manual/54-korpus.md:56 status:no-external-signal -->
 ### T-54-026 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -734,7 +734,7 @@
 
 ---
 
-<!-- fc id:T-54-027 sha:bf5c83b4 src:manual/54-korpus.md:62 klas:E -->
+<!-- fc id:T-54-027 sha:bf5c83b4 src:manual/54-korpus.md:62 status:no-external-signal -->
 ### T-54-027 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -757,7 +757,7 @@
 
 ---
 
-<!-- fc id:T-54-028 sha:5882bcb2 src:manual/54-korpus.md:65 klas:E -->
+<!-- fc id:T-54-028 sha:5882bcb2 src:manual/54-korpus.md:65 status:no-external-signal -->
 ### T-54-028 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -779,7 +779,7 @@
 
 ---
 
-<!-- fc id:T-54-029 sha:29ef4b1d src:manual/54-korpus.md:68 klas:E -->
+<!-- fc id:T-54-029 sha:29ef4b1d src:manual/54-korpus.md:68 status:no-external-signal -->
 ### T-54-029 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -802,7 +802,7 @@
 
 ---
 
-<!-- fc id:T-54-030 sha:e536a332 src:manual/54-korpus.md:68 klas:E -->
+<!-- fc id:T-54-030 sha:e536a332 src:manual/54-korpus.md:68 status:no-external-signal -->
 ### T-54-030 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -825,7 +825,7 @@
 
 ---
 
-<!-- fc id:T-54-031 sha:26186cbd src:manual/54-korpus.md:72 klas:B -->
+<!-- fc id:T-54-031 sha:26186cbd src:manual/54-korpus.md:72 status:derived -->
 ### T-54-031 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -856,7 +856,7 @@
 
 ---
 
-<!-- fc id:T-54-032 sha:515fca62 src:manual/54-korpus.md:73 klas:E -->
+<!-- fc id:T-54-032 sha:515fca62 src:manual/54-korpus.md:73 status:no-external-signal -->
 ### T-54-032 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -879,7 +879,7 @@
 
 ---
 
-<!-- fc id:T-54-033 sha:8ac9226b src:manual/54-korpus.md:78 klas:E -->
+<!-- fc id:T-54-033 sha:8ac9226b src:manual/54-korpus.md:78 status:no-external-signal -->
 ### T-54-033 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -900,7 +900,7 @@
 
 ---
 
-<!-- fc id:T-54-034 sha:7e73ec02 src:manual/54-korpus.md:80 klas:E -->
+<!-- fc id:T-54-034 sha:7e73ec02 src:manual/54-korpus.md:80 status:no-external-signal -->
 ### T-54-034 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -923,7 +923,7 @@
 
 ---
 
-<!-- fc id:T-54-035 sha:e4b426a7 src:manual/54-korpus.md:80 klas:E -->
+<!-- fc id:T-54-035 sha:e4b426a7 src:manual/54-korpus.md:80 status:no-external-signal -->
 ### T-54-035 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -946,7 +946,7 @@
 
 ---
 
-<!-- fc id:T-54-036 sha:b4490502 src:manual/54-korpus.md:81 klas:E -->
+<!-- fc id:T-54-036 sha:b4490502 src:manual/54-korpus.md:81 status:no-external-signal -->
 ### T-54-036 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -969,7 +969,7 @@
 
 ---
 
-<!-- fc id:T-54-037 sha:fb2371cf src:manual/54-korpus.md:82 klas:E -->
+<!-- fc id:T-54-037 sha:fb2371cf src:manual/54-korpus.md:82 status:no-external-signal -->
 ### T-54-037 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -992,7 +992,7 @@
 
 ---
 
-<!-- fc id:T-54-038 sha:8b225daf src:manual/54-korpus.md:85 klas:E -->
+<!-- fc id:T-54-038 sha:8b225daf src:manual/54-korpus.md:85 status:no-external-signal -->
 ### T-54-038 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1015,7 +1015,7 @@
 
 ---
 
-<!-- fc id:T-54-039 sha:1d0f53c8 src:manual/54-korpus.md:90 klas:E -->
+<!-- fc id:T-54-039 sha:1d0f53c8 src:manual/54-korpus.md:90 status:no-external-signal -->
 ### T-54-039 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1037,7 +1037,7 @@
 
 ---
 
-<!-- fc id:T-54-040 sha:15fc751d src:manual/54-korpus.md:90 klas:E -->
+<!-- fc id:T-54-040 sha:15fc751d src:manual/54-korpus.md:90 status:no-external-signal -->
 ### T-54-040 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1059,7 +1059,7 @@
 
 ---
 
-<!-- fc id:T-54-041 sha:d15e4c6e src:manual/54-korpus.md:93 klas:E -->
+<!-- fc id:T-54-041 sha:d15e4c6e src:manual/54-korpus.md:93 status:no-external-signal -->
 ### T-54-041 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1081,7 +1081,7 @@
 
 ---
 
-<!-- fc id:T-54-042 sha:16382fe6 src:manual/54-korpus.md:94 klas:E -->
+<!-- fc id:T-54-042 sha:16382fe6 src:manual/54-korpus.md:94 status:no-external-signal -->
 ### T-54-042 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1103,7 +1103,7 @@
 
 ---
 
-<!-- fc id:T-54-043 sha:3f54345f src:manual/54-korpus.md:96 klas:E -->
+<!-- fc id:T-54-043 sha:3f54345f src:manual/54-korpus.md:96 status:no-external-signal -->
 ### T-54-043 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1125,7 +1125,7 @@
 
 ---
 
-<!-- fc id:T-54-044 sha:6c2b8a32 src:manual/54-korpus.md:96 klas:E -->
+<!-- fc id:T-54-044 sha:6c2b8a32 src:manual/54-korpus.md:96 status:no-external-signal -->
 ### T-54-044 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1147,7 +1147,7 @@
 
 ---
 
-<!-- fc id:T-54-045 sha:edeadd77 src:manual/54-korpus.md:99 klas:E -->
+<!-- fc id:T-54-045 sha:edeadd77 src:manual/54-korpus.md:99 status:no-external-signal -->
 ### T-54-045 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1169,7 +1169,7 @@
 
 ---
 
-<!-- fc id:T-54-046 sha:cf2bab0c src:manual/54-korpus.md:102 klas:E -->
+<!-- fc id:T-54-046 sha:cf2bab0c src:manual/54-korpus.md:102 status:no-external-signal -->
 ### T-54-046 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1193,7 +1193,7 @@
 
 ---
 
-<!-- fc id:T-54-047 sha:faf4b437 src:manual/54-korpus.md:103 klas:E -->
+<!-- fc id:T-54-047 sha:faf4b437 src:manual/54-korpus.md:103 status:no-external-signal -->
 ### T-54-047 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1217,7 +1217,7 @@
 
 ---
 
-<!-- fc id:T-54-048 sha:4d52c369 src:manual/54-korpus.md:103 klas:E -->
+<!-- fc id:T-54-048 sha:4d52c369 src:manual/54-korpus.md:103 status:no-external-signal -->
 ### T-54-048 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1241,7 +1241,7 @@
 
 ---
 
-<!-- fc id:T-54-049 sha:8cab7d26 src:manual/54-korpus.md:109 klas:E -->
+<!-- fc id:T-54-049 sha:8cab7d26 src:manual/54-korpus.md:109 status:no-external-signal -->
 ### T-54-049 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1262,7 +1262,7 @@
 
 ---
 
-<!-- fc id:T-54-050 sha:97da83c9 src:manual/54-korpus.md:111 klas:E -->
+<!-- fc id:T-54-050 sha:97da83c9 src:manual/54-korpus.md:111 status:no-external-signal -->
 ### T-54-050 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1284,7 +1284,7 @@
 
 ---
 
-<!-- fc id:T-54-051 sha:fb893cbb src:manual/54-korpus.md:111 klas:E -->
+<!-- fc id:T-54-051 sha:fb893cbb src:manual/54-korpus.md:111 status:no-external-signal -->
 ### T-54-051 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1306,7 +1306,7 @@
 
 ---
 
-<!-- fc id:T-54-052 sha:79e3d4ae src:manual/54-korpus.md:114 klas:E -->
+<!-- fc id:T-54-052 sha:79e3d4ae src:manual/54-korpus.md:114 status:no-external-signal -->
 ### T-54-052 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1328,7 +1328,7 @@
 
 ---
 
-<!-- fc id:T-54-053 sha:42d09206 src:manual/54-korpus.md:114 klas:E -->
+<!-- fc id:T-54-053 sha:42d09206 src:manual/54-korpus.md:114 status:no-external-signal -->
 ### T-54-053 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1350,7 +1350,7 @@
 
 ---
 
-<!-- fc id:T-54-054 sha:9b181b66 src:manual/54-korpus.md:117 klas:E -->
+<!-- fc id:T-54-054 sha:9b181b66 src:manual/54-korpus.md:117 status:no-external-signal -->
 ### T-54-054 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1372,7 +1372,7 @@
 
 ---
 
-<!-- fc id:T-54-055 sha:b925b401 src:manual/54-korpus.md:118 klas:E -->
+<!-- fc id:T-54-055 sha:b925b401 src:manual/54-korpus.md:118 status:no-external-signal -->
 ### T-54-055 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1394,7 +1394,7 @@
 
 ---
 
-<!-- fc id:T-54-056 sha:801e0fbd src:manual/54-korpus.md:120 klas:E -->
+<!-- fc id:T-54-056 sha:801e0fbd src:manual/54-korpus.md:120 status:no-external-signal -->
 ### T-54-056 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1415,7 +1415,7 @@
 
 ---
 
-<!-- fc id:T-54-057 sha:6449d486 src:manual/54-korpus.md:124 klas:C -->
+<!-- fc id:T-54-057 sha:6449d486 src:manual/54-korpus.md:124 status:named-unreachable -->
 ### T-54-057 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1442,7 +1442,7 @@
 
 ---
 
-<!-- fc id:T-54-058 sha:bbb5bd48 src:manual/54-korpus.md:124 klas:E -->
+<!-- fc id:T-54-058 sha:bbb5bd48 src:manual/54-korpus.md:124 status:no-external-signal -->
 ### T-54-058 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1465,7 +1465,7 @@
 
 ---
 
-<!-- fc id:T-54-059 sha:520ca2fc src:manual/54-korpus.md:128 klas:A -->
+<!-- fc id:T-54-059 sha:520ca2fc src:manual/54-korpus.md:128 status:verbatim -->
 ### T-54-059 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1495,7 +1495,7 @@
 
 ---
 
-<!-- fc id:T-54-060 sha:c22e2426 src:manual/54-korpus.md:128 klas:F -->
+<!-- fc id:T-54-060 sha:c22e2426 src:manual/54-korpus.md:128 status:unchecked -->
 ### T-54-060 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1518,7 +1518,7 @@
 
 ---
 
-<!-- fc id:T-54-061 sha:d8a8ecdb src:manual/54-korpus.md:129 klas:F -->
+<!-- fc id:T-54-061 sha:d8a8ecdb src:manual/54-korpus.md:129 status:unchecked -->
 ### T-54-061 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1541,7 +1541,7 @@
 
 ---
 
-<!-- fc id:T-54-062 sha:dea3564a src:manual/54-korpus.md:132 klas:A -->
+<!-- fc id:T-54-062 sha:dea3564a src:manual/54-korpus.md:132 status:verbatim -->
 ### T-54-062 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1584,7 +1584,7 @@
 
 ---
 
-<!-- fc id:T-54-063 sha:a1ec7429 src:manual/54-korpus.md:133 klas:E -->
+<!-- fc id:T-54-063 sha:a1ec7429 src:manual/54-korpus.md:133 status:no-external-signal -->
 ### T-54-063 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1607,7 +1607,7 @@
 
 ---
 
-<!-- fc id:T-54-064 sha:76aa39e2 src:manual/54-korpus.md:136 klas:A -->
+<!-- fc id:T-54-064 sha:76aa39e2 src:manual/54-korpus.md:136 status:verbatim -->
 ### T-54-064 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1652,7 +1652,7 @@
 
 ---
 
-<!-- fc id:T-54-065 sha:27a316d1 src:manual/54-korpus.md:137 klas:E -->
+<!-- fc id:T-54-065 sha:27a316d1 src:manual/54-korpus.md:137 status:no-external-signal -->
 ### T-54-065 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1677,7 +1677,7 @@
 
 ---
 
-<!-- fc id:T-54-066 sha:fcc027c9 src:manual/54-korpus.md:139 klas:E -->
+<!-- fc id:T-54-066 sha:fcc027c9 src:manual/54-korpus.md:139 status:no-external-signal -->
 ### T-54-066 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1702,7 +1702,7 @@
 
 ---
 
-<!-- fc id:T-54-067 sha:5c9c5c08 src:manual/54-korpus.md:144 klas:A -->
+<!-- fc id:T-54-067 sha:5c9c5c08 src:manual/54-korpus.md:144 status:verbatim -->
 ### T-54-067 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1733,7 +1733,7 @@
 
 ---
 
-<!-- fc id:T-54-068 sha:ad01f8ff src:manual/54-korpus.md:147 klas:E -->
+<!-- fc id:T-54-068 sha:ad01f8ff src:manual/54-korpus.md:147 status:no-external-signal -->
 ### T-54-068 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1755,7 +1755,7 @@
 
 ---
 
-<!-- fc id:T-54-069 sha:63206d8e src:manual/54-korpus.md:150 klas:E -->
+<!-- fc id:T-54-069 sha:63206d8e src:manual/54-korpus.md:150 status:no-external-signal -->
 ### T-54-069 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1777,7 +1777,7 @@
 
 ---
 
-<!-- fc id:T-54-070 sha:52f8657e src:manual/54-korpus.md:153 klas:E -->
+<!-- fc id:T-54-070 sha:52f8657e src:manual/54-korpus.md:153 status:no-external-signal -->
 ### T-54-070 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1799,7 +1799,7 @@
 
 ---
 
-<!-- fc id:T-54-071 sha:c2329a6c src:manual/54-korpus.md:157 klas:E -->
+<!-- fc id:T-54-071 sha:c2329a6c src:manual/54-korpus.md:157 status:no-external-signal -->
 ### T-54-071 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1823,7 +1823,7 @@
 
 ---
 
-<!-- fc id:T-54-072 sha:896386b0 src:manual/54-korpus.md:158 klas:F -->
+<!-- fc id:T-54-072 sha:896386b0 src:manual/54-korpus.md:158 status:unchecked -->
 ### T-54-072 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1847,7 +1847,7 @@
 
 ---
 
-<!-- fc id:T-54-073 sha:8410b7ef src:manual/54-korpus.md:161 klas:E -->
+<!-- fc id:T-54-073 sha:8410b7ef src:manual/54-korpus.md:161 status:no-external-signal -->
 ### T-54-073 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1868,7 +1868,7 @@
 
 ---
 
-<!-- fc id:T-54-074 sha:189f9506 src:manual/54-korpus.md:163 klas:E -->
+<!-- fc id:T-54-074 sha:189f9506 src:manual/54-korpus.md:163 status:no-external-signal -->
 ### T-54-074 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1892,7 +1892,7 @@
 
 ---
 
-<!-- fc id:T-54-075 sha:3e08e6cd src:manual/54-korpus.md:170 klas:E -->
+<!-- fc id:T-54-075 sha:3e08e6cd src:manual/54-korpus.md:170 status:no-external-signal -->
 ### T-54-075 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1913,7 +1913,7 @@
 
 ---
 
-<!-- fc id:T-54-076 sha:8a70fe73 src:manual/54-korpus.md:172 klas:E -->
+<!-- fc id:T-54-076 sha:8a70fe73 src:manual/54-korpus.md:172 status:no-external-signal -->
 ### T-54-076 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1935,7 +1935,7 @@
 
 ---
 
-<!-- fc id:T-54-077 sha:e900fdb4 src:manual/54-korpus.md:175 klas:E -->
+<!-- fc id:T-54-077 sha:e900fdb4 src:manual/54-korpus.md:175 status:no-external-signal -->
 ### T-54-077 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1958,7 +1958,7 @@
 
 ---
 
-<!-- fc id:T-54-078 sha:4eda0d7f src:manual/54-korpus.md:176 klas:E -->
+<!-- fc id:T-54-078 sha:4eda0d7f src:manual/54-korpus.md:176 status:no-external-signal -->
 ### T-54-078 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1981,7 +1981,7 @@
 
 ---
 
-<!-- fc id:T-54-079 sha:3c5ec6fc src:manual/54-korpus.md:179 klas:E -->
+<!-- fc id:T-54-079 sha:3c5ec6fc src:manual/54-korpus.md:179 status:no-external-signal -->
 ### T-54-079 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -2004,7 +2004,7 @@
 
 ---
 
-<!-- fc id:T-54-080 sha:d618df70 src:manual/54-korpus.md:179 klas:E -->
+<!-- fc id:T-54-080 sha:d618df70 src:manual/54-korpus.md:179 status:no-external-signal -->
 ### T-54-080 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -2027,7 +2027,7 @@
 
 ---
 
-<!-- fc id:T-54-081 sha:0df1b9d0 src:manual/54-korpus.md:185 klas:E -->
+<!-- fc id:T-54-081 sha:0df1b9d0 src:manual/54-korpus.md:185 status:no-external-signal -->
 ### T-54-081 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -2048,7 +2048,7 @@ IP має корпус у зібраному стані; кожен отвір �
 
 ---
 
-<!-- fc id:T-54-082 sha:75b48215 src:manual/54-korpus.md:187 klas:E -->
+<!-- fc id:T-54-082 sha:75b48215 src:manual/54-korpus.md:187 status:no-external-signal -->
 ### T-54-082 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -2069,7 +2069,7 @@ IP має корпус у зібраному стані; кожен отвір �
 
 ---
 
-<!-- fc id:T-54-083 sha:b3ead5ba src:manual/54-korpus.md:189 klas:E -->
+<!-- fc id:T-54-083 sha:b3ead5ba src:manual/54-korpus.md:189 status:no-external-signal -->
 ### T-54-083 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -2090,7 +2090,7 @@ IP має корпус у зібраному стані; кожен отвір �
 
 ---
 
-<!-- fc id:T-54-084 sha:c17999f5 src:manual/54-korpus.md:191 klas:E -->
+<!-- fc id:T-54-084 sha:c17999f5 src:manual/54-korpus.md:191 status:no-external-signal -->
 ### T-54-084 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -2112,7 +2112,7 @@ IP має корпус у зібраному стані; кожен отвір �
 
 ---
 
-<!-- fc id:T-54-085 sha:b355ea75 src:manual/54-korpus.md:194 klas:E -->
+<!-- fc id:T-54-085 sha:b355ea75 src:manual/54-korpus.md:194 status:no-external-signal -->
 ### T-54-085 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -2133,7 +2133,7 @@ IP має корпус у зібраному стані; кожен отвір �
 
 ---
 
-<!-- fc id:T-54-086 sha:4f4766e0 src:manual/54-korpus.md:196 klas:E -->
+<!-- fc id:T-54-086 sha:4f4766e0 src:manual/54-korpus.md:196 status:no-external-signal -->
 ### T-54-086 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**

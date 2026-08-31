@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/33-peryferiya-kod.md`
 
-Одиниць твердження: **129**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **129**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-33-001 sha:6801c405 src:manual/33-peryferiya-kod.md:3 klas:E -->
+<!-- fc id:T-33-001 sha:6801c405 src:manual/33-peryferiya-kod.md:3 status:no-external-signal -->
 ### T-33-001 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-33-002 sha:47541b2b src:manual/33-peryferiya-kod.md:3 klas:E -->
+<!-- fc id:T-33-002 sha:47541b2b src:manual/33-peryferiya-kod.md:3 status:no-external-signal -->
 ### T-33-002 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -56,7 +56,7 @@
 
 ---
 
-<!-- fc id:T-33-003 sha:6723d0bf src:manual/33-peryferiya-kod.md:10 klas:K -->
+<!-- fc id:T-33-003 sha:6723d0bf src:manual/33-peryferiya-kod.md:10 status:code-context -->
 ### T-33-003 · kod · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -114,7 +114,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 ---
 
-<!-- fc id:T-33-004 sha:3fad3578 src:manual/33-peryferiya-kod.md:12 klas:A -->
+<!-- fc id:T-33-004 sha:3fad3578 src:manual/33-peryferiya-kod.md:12 status:verbatim -->
 ### T-33-004 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -169,7 +169,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 ---
 
-<!-- fc id:T-33-005 sha:4ea85d9b src:manual/33-peryferiya-kod.md:13 klas:F -->
+<!-- fc id:T-33-005 sha:4ea85d9b src:manual/33-peryferiya-kod.md:13 status:unchecked -->
 ### T-33-005 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -200,7 +200,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 ---
 
-<!-- fc id:T-33-006 sha:6bd988a2 src:manual/33-peryferiya-kod.md:14 klas:A -->
+<!-- fc id:T-33-006 sha:6bd988a2 src:manual/33-peryferiya-kod.md:14 status:verbatim -->
 ### T-33-006 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -248,7 +248,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 ---
 
-<!-- fc id:T-33-007 sha:8c43cf59 src:manual/33-peryferiya-kod.md:15 klas:F -->
+<!-- fc id:T-33-007 sha:8c43cf59 src:manual/33-peryferiya-kod.md:15 status:unchecked -->
 ### T-33-007 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -279,7 +279,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 ---
 
-<!-- fc id:T-33-008 sha:c0246957 src:manual/33-peryferiya-kod.md:16 klas:F -->
+<!-- fc id:T-33-008 sha:c0246957 src:manual/33-peryferiya-kod.md:16 status:unchecked -->
 ### T-33-008 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -310,7 +310,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 ---
 
-<!-- fc id:T-33-009 sha:514324cb src:manual/33-peryferiya-kod.md:18 klas:A -->
+<!-- fc id:T-33-009 sha:514324cb src:manual/33-peryferiya-kod.md:18 status:verbatim -->
 ### T-33-009 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -354,7 +354,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 ---
 
-<!-- fc id:T-33-010 sha:6602551b src:manual/33-peryferiya-kod.md:19 klas:F -->
+<!-- fc id:T-33-010 sha:6602551b src:manual/33-peryferiya-kod.md:19 status:unchecked -->
 ### T-33-010 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -385,7 +385,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 ---
 
-<!-- fc id:T-33-011 sha:bedbcc3c src:manual/33-peryferiya-kod.md:22 klas:F -->
+<!-- fc id:T-33-011 sha:bedbcc3c src:manual/33-peryferiya-kod.md:22 status:unchecked -->
 ### T-33-011 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -407,7 +407,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 ---
 
-<!-- fc id:T-33-012 sha:0cfd0d0f src:manual/33-peryferiya-kod.md:23 klas:A -->
+<!-- fc id:T-33-012 sha:0cfd0d0f src:manual/33-peryferiya-kod.md:23 status:verbatim -->
 ### T-33-012 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -435,7 +435,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 ---
 
-<!-- fc id:T-33-013 sha:fbcbf58d src:manual/33-peryferiya-kod.md:27 klas:K -->
+<!-- fc id:T-33-013 sha:fbcbf58d src:manual/33-peryferiya-kod.md:27 status:code-context -->
 ### T-33-013 · kod · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -487,7 +487,7 @@ gpio_config_t in = {
 
 ---
 
-<!-- fc id:T-33-014 sha:f96f77cb src:manual/33-peryferiya-kod.md:29 klas:A -->
+<!-- fc id:T-33-014 sha:f96f77cb src:manual/33-peryferiya-kod.md:29 status:verbatim -->
 ### T-33-014 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -539,7 +539,7 @@ gpio_config_t in = {
 
 ---
 
-<!-- fc id:T-33-015 sha:99e0f537 src:manual/33-peryferiya-kod.md:30 klas:A -->
+<!-- fc id:T-33-015 sha:99e0f537 src:manual/33-peryferiya-kod.md:30 status:verbatim -->
 ### T-33-015 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -580,7 +580,7 @@ gpio_config_t in = {
 
 ---
 
-<!-- fc id:T-33-016 sha:5502b7f2 src:manual/33-peryferiya-kod.md:31 klas:A -->
+<!-- fc id:T-33-016 sha:5502b7f2 src:manual/33-peryferiya-kod.md:31 status:verbatim -->
 ### T-33-016 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -625,7 +625,7 @@ gpio_config_t in = {
 
 ---
 
-<!-- fc id:T-33-017 sha:aa23725a src:manual/33-peryferiya-kod.md:32 klas:F -->
+<!-- fc id:T-33-017 sha:aa23725a src:manual/33-peryferiya-kod.md:32 status:unchecked -->
 ### T-33-017 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -653,7 +653,7 @@ gpio_config_t in = {
 
 ---
 
-<!-- fc id:T-33-018 sha:be4ac34e src:manual/33-peryferiya-kod.md:36 klas:F -->
+<!-- fc id:T-33-018 sha:be4ac34e src:manual/33-peryferiya-kod.md:36 status:unchecked -->
 ### T-33-018 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -675,7 +675,7 @@ gpio_config_t in = {
 
 ---
 
-<!-- fc id:T-33-019 sha:e26a0015 src:manual/33-peryferiya-kod.md:41 klas:E -->
+<!-- fc id:T-33-019 sha:e26a0015 src:manual/33-peryferiya-kod.md:41 status:no-external-signal -->
 ### T-33-019 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -696,7 +696,7 @@ gpio_config_t in = {
 
 ---
 
-<!-- fc id:T-33-020 sha:e35f117f src:manual/33-peryferiya-kod.md:43 klas:K -->
+<!-- fc id:T-33-020 sha:e35f117f src:manual/33-peryferiya-kod.md:43 status:code-context -->
 ### T-33-020 · kod · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -739,7 +739,7 @@ gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
 
 ---
 
-<!-- fc id:T-33-021 sha:f9e24be5 src:manual/33-peryferiya-kod.md:46 klas:A -->
+<!-- fc id:T-33-021 sha:f9e24be5 src:manual/33-peryferiya-kod.md:46 status:verbatim -->
 ### T-33-021 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -770,7 +770,7 @@ static void IRAM_ATTR isr(void *arg) {
 
 ---
 
-<!-- fc id:T-33-022 sha:90827293 src:manual/33-peryferiya-kod.md:49 klas:F -->
+<!-- fc id:T-33-022 sha:90827293 src:manual/33-peryferiya-kod.md:49 status:unchecked -->
 ### T-33-022 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -793,7 +793,7 @@ gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
 
 ---
 
-<!-- fc id:T-33-023 sha:77ee66f9 src:manual/33-peryferiya-kod.md:50 klas:A -->
+<!-- fc id:T-33-023 sha:77ee66f9 src:manual/33-peryferiya-kod.md:50 status:verbatim -->
 ### T-33-023 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -822,7 +822,7 @@ gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
 
 ---
 
-<!-- fc id:T-33-024 sha:154027ff src:manual/33-peryferiya-kod.md:53 klas:E -->
+<!-- fc id:T-33-024 sha:154027ff src:manual/33-peryferiya-kod.md:53 status:no-external-signal -->
 ### T-33-024 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -845,7 +845,7 @@ gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
 
 ---
 
-<!-- fc id:T-33-025 sha:c3f1cea7 src:manual/33-peryferiya-kod.md:53 klas:A -->
+<!-- fc id:T-33-025 sha:c3f1cea7 src:manual/33-peryferiya-kod.md:53 status:verbatim -->
 ### T-33-025 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -885,7 +885,7 @@ gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
 
 ---
 
-<!-- fc id:T-33-026 sha:7196915f src:manual/33-peryferiya-kod.md:57 klas:K -->
+<!-- fc id:T-33-026 sha:7196915f src:manual/33-peryferiya-kod.md:57 status:code-context -->
 ### T-33-026 · kod · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -930,7 +930,7 @@ static void IRAM_ATTR isr(void *arg) {
 
 ---
 
-<!-- fc id:T-33-027 sha:2bfd44f4 src:manual/33-peryferiya-kod.md:64 klas:A -->
+<!-- fc id:T-33-027 sha:2bfd44f4 src:manual/33-peryferiya-kod.md:64 status:verbatim -->
 ### T-33-027 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -963,7 +963,7 @@ static void IRAM_ATTR isr(void *arg) {
 
 ---
 
-<!-- fc id:T-33-028 sha:ad224fe1 src:manual/33-peryferiya-kod.md:70 klas:A -->
+<!-- fc id:T-33-028 sha:ad224fe1 src:manual/33-peryferiya-kod.md:70 status:verbatim -->
 ### T-33-028 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1000,7 +1000,7 @@ static void IRAM_ATTR isr(void *arg) {
 
 ---
 
-<!-- fc id:T-33-029 sha:61f1d984 src:manual/33-peryferiya-kod.md:71 klas:A -->
+<!-- fc id:T-33-029 sha:61f1d984 src:manual/33-peryferiya-kod.md:71 status:verbatim -->
 ### T-33-029 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1028,7 +1028,7 @@ static void IRAM_ATTR isr(void *arg) {
 
 ---
 
-<!-- fc id:T-33-030 sha:3915b0a4 src:manual/33-peryferiya-kod.md:73 klas:K -->
+<!-- fc id:T-33-030 sha:3915b0a4 src:manual/33-peryferiya-kod.md:73 status:code-context -->
 ### T-33-030 · kod · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1079,7 +1079,7 @@ esp_timer_start_periodic(t, 1000000);   // раз на секунду
 
 ---
 
-<!-- fc id:T-33-031 sha:8319cb06 src:manual/33-peryferiya-kod.md:78 klas:A -->
+<!-- fc id:T-33-031 sha:8319cb06 src:manual/33-peryferiya-kod.md:78 status:verbatim -->
 ### T-33-031 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1120,7 +1120,7 @@ esp_timer_start_periodic(t, 1000000);   // раз на секунду
 
 ---
 
-<!-- fc id:T-33-032 sha:92cb7370 src:manual/33-peryferiya-kod.md:82 klas:A -->
+<!-- fc id:T-33-032 sha:92cb7370 src:manual/33-peryferiya-kod.md:82 status:verbatim -->
 ### T-33-032 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1157,7 +1157,7 @@ esp_timer_start_periodic(t, 1000000);   // раз на секунду
 
 ---
 
-<!-- fc id:T-33-033 sha:eb045fe4 src:manual/33-peryferiya-kod.md:85 klas:A -->
+<!-- fc id:T-33-033 sha:eb045fe4 src:manual/33-peryferiya-kod.md:85 status:verbatim -->
 ### T-33-033 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1196,7 +1196,7 @@ esp_timer_start_periodic(t, 1000000);   // раз на секунду
 
 ---
 
-<!-- fc id:T-33-034 sha:360af588 src:manual/33-peryferiya-kod.md:86 klas:A -->
+<!-- fc id:T-33-034 sha:360af588 src:manual/33-peryferiya-kod.md:86 status:verbatim -->
 ### T-33-034 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1225,7 +1225,7 @@ esp_timer_start_periodic(t, 1000000);   // раз на секунду
 
 ---
 
-<!-- fc id:T-33-035 sha:1525c224 src:manual/33-peryferiya-kod.md:89 klas:E -->
+<!-- fc id:T-33-035 sha:1525c224 src:manual/33-peryferiya-kod.md:89 status:no-external-signal -->
 ### T-33-035 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1247,7 +1247,7 @@ esp_timer_start_periodic(t, 1000000);   // раз на секунду
 
 ---
 
-<!-- fc id:T-33-036 sha:abc3c580 src:manual/33-peryferiya-kod.md:94 klas:K -->
+<!-- fc id:T-33-036 sha:abc3c580 src:manual/33-peryferiya-kod.md:94 status:code-context -->
 ### T-33-036 · kod · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1318,7 +1318,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-037 sha:105bb277 src:manual/33-peryferiya-kod.md:96 klas:F -->
+<!-- fc id:T-33-037 sha:105bb277 src:manual/33-peryferiya-kod.md:96 status:unchecked -->
 ### T-33-037 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1346,7 +1346,7 @@ ledc_timer_config(&tcfg);
 
 ---
 
-<!-- fc id:T-33-038 sha:f0c21116 src:manual/33-peryferiya-kod.md:97 klas:A -->
+<!-- fc id:T-33-038 sha:f0c21116 src:manual/33-peryferiya-kod.md:97 status:verbatim -->
 ### T-33-038 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1398,7 +1398,7 @@ ledc_timer_config(&tcfg);
 
 ---
 
-<!-- fc id:T-33-039 sha:44a45b93 src:manual/33-peryferiya-kod.md:98 klas:F -->
+<!-- fc id:T-33-039 sha:44a45b93 src:manual/33-peryferiya-kod.md:98 status:unchecked -->
 ### T-33-039 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1426,7 +1426,7 @@ ledc_timer_config(&tcfg);
 
 ---
 
-<!-- fc id:T-33-040 sha:99171f13 src:manual/33-peryferiya-kod.md:99 klas:F -->
+<!-- fc id:T-33-040 sha:99171f13 src:manual/33-peryferiya-kod.md:99 status:unchecked -->
 ### T-33-040 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1454,7 +1454,7 @@ ledc_timer_config(&tcfg);
 
 ---
 
-<!-- fc id:T-33-041 sha:d8b6e80c src:manual/33-peryferiya-kod.md:101 klas:A -->
+<!-- fc id:T-33-041 sha:d8b6e80c src:manual/33-peryferiya-kod.md:101 status:verbatim -->
 ### T-33-041 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1498,7 +1498,7 @@ ledc_timer_config(&tcfg);
 
 ---
 
-<!-- fc id:T-33-042 sha:80dd0543 src:manual/33-peryferiya-kod.md:104 klas:F -->
+<!-- fc id:T-33-042 sha:80dd0543 src:manual/33-peryferiya-kod.md:104 status:unchecked -->
 ### T-33-042 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1527,7 +1527,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-043 sha:105bb277 src:manual/33-peryferiya-kod.md:105 klas:F -->
+<!-- fc id:T-33-043 sha:105bb277 src:manual/33-peryferiya-kod.md:105 status:unchecked -->
 ### T-33-043 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1556,7 +1556,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-044 sha:e4df9707 src:manual/33-peryferiya-kod.md:106 klas:F -->
+<!-- fc id:T-33-044 sha:e4df9707 src:manual/33-peryferiya-kod.md:106 status:unchecked -->
 ### T-33-044 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1585,7 +1585,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-045 sha:b9fc8ae0 src:manual/33-peryferiya-kod.md:107 klas:A -->
+<!-- fc id:T-33-045 sha:b9fc8ae0 src:manual/33-peryferiya-kod.md:107 status:verbatim -->
 ### T-33-045 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1638,7 +1638,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-046 sha:d3cd0e78 src:manual/33-peryferiya-kod.md:108 klas:F -->
+<!-- fc id:T-33-046 sha:d3cd0e78 src:manual/33-peryferiya-kod.md:108 status:unchecked -->
 ### T-33-046 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1667,7 +1667,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-047 sha:6dde17f4 src:manual/33-peryferiya-kod.md:110 klas:A -->
+<!-- fc id:T-33-047 sha:6dde17f4 src:manual/33-peryferiya-kod.md:110 status:verbatim -->
 ### T-33-047 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1712,7 +1712,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-048 sha:6a437dd9 src:manual/33-peryferiya-kod.md:113 klas:A -->
+<!-- fc id:T-33-048 sha:6a437dd9 src:manual/33-peryferiya-kod.md:113 status:verbatim -->
 ### T-33-048 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1745,7 +1745,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-049 sha:1c6e3022 src:manual/33-peryferiya-kod.md:117 klas:A -->
+<!-- fc id:T-33-049 sha:1c6e3022 src:manual/33-peryferiya-kod.md:117 status:verbatim -->
 ### T-33-049 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1775,7 +1775,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-050 sha:462e36b5 src:manual/33-peryferiya-kod.md:117 klas:F -->
+<!-- fc id:T-33-050 sha:462e36b5 src:manual/33-peryferiya-kod.md:117 status:unchecked -->
 ### T-33-050 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1799,7 +1799,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-051 sha:e20d58db src:manual/33-peryferiya-kod.md:121 klas:A -->
+<!-- fc id:T-33-051 sha:e20d58db src:manual/33-peryferiya-kod.md:121 status:verbatim -->
 ### T-33-051 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1828,7 +1828,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-052 sha:e3516a73 src:manual/33-peryferiya-kod.md:122 klas:E -->
+<!-- fc id:T-33-052 sha:e3516a73 src:manual/33-peryferiya-kod.md:122 status:no-external-signal -->
 ### T-33-052 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1851,7 +1851,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-053 sha:bdfa3b50 src:manual/33-peryferiya-kod.md:125 klas:C -->
+<!-- fc id:T-33-053 sha:bdfa3b50 src:manual/33-peryferiya-kod.md:125 status:named-unreachable -->
 ### T-33-053 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1880,7 +1880,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-054 sha:1a68cfd1 src:manual/33-peryferiya-kod.md:126 klas:D -->
+<!-- fc id:T-33-054 sha:1a68cfd1 src:manual/33-peryferiya-kod.md:126 status:arithmetic -->
 ### T-33-054 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1911,7 +1911,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-055 sha:9b0e16fa src:manual/33-peryferiya-kod.md:127 klas:A -->
+<!-- fc id:T-33-055 sha:9b0e16fa src:manual/33-peryferiya-kod.md:127 status:verbatim -->
 ### T-33-055 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1945,7 +1945,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-056 sha:3aa25745 src:manual/33-peryferiya-kod.md:132 klas:F -->
+<!-- fc id:T-33-056 sha:3aa25745 src:manual/33-peryferiya-kod.md:132 status:unchecked -->
 ### T-33-056 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1970,7 +1970,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-057 sha:2d20f028 src:manual/33-peryferiya-kod.md:132 klas:F -->
+<!-- fc id:T-33-057 sha:2d20f028 src:manual/33-peryferiya-kod.md:132 status:unchecked -->
 ### T-33-057 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -1995,7 +1995,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-058 sha:b1601e7b src:manual/33-peryferiya-kod.md:137 klas:A -->
+<!-- fc id:T-33-058 sha:b1601e7b src:manual/33-peryferiya-kod.md:137 status:verbatim -->
 ### T-33-058 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2023,7 +2023,7 @@ ledc_channel_config(&ccfg);
 
 ---
 
-<!-- fc id:T-33-059 sha:681bc71a src:manual/33-peryferiya-kod.md:142 klas:A -->
+<!-- fc id:T-33-059 sha:681bc71a src:manual/33-peryferiya-kod.md:142 status:verbatim -->
 ### T-33-059 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2051,7 +2051,7 @@ LEDC не вміє:
 
 ---
 
-<!-- fc id:T-33-060 sha:4b935177 src:manual/33-peryferiya-kod.md:145 klas:A -->
+<!-- fc id:T-33-060 sha:4b935177 src:manual/33-peryferiya-kod.md:145 status:verbatim -->
 ### T-33-060 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2082,7 +2082,7 @@ LEDC не вміє:
 
 ---
 
-<!-- fc id:T-33-061 sha:db2ade05 src:manual/33-peryferiya-kod.md:151 klas:E -->
+<!-- fc id:T-33-061 sha:db2ade05 src:manual/33-peryferiya-kod.md:151 status:no-external-signal -->
 ### T-33-061 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2104,7 +2104,7 @@ LEDC не вміє:
 
 ---
 
-<!-- fc id:T-33-062 sha:9bc36e29 src:manual/33-peryferiya-kod.md:156 klas:A -->
+<!-- fc id:T-33-062 sha:9bc36e29 src:manual/33-peryferiya-kod.md:156 status:verbatim -->
 ### T-33-062 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2132,7 +2132,7 @@ RMT задумувався для інфрачервоних пультів, а 
 
 ---
 
-<!-- fc id:T-33-063 sha:2cf260ec src:manual/33-peryferiya-kod.md:159 klas:F -->
+<!-- fc id:T-33-063 sha:2cf260ec src:manual/33-peryferiya-kod.md:159 status:unchecked -->
 ### T-33-063 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2156,7 +2156,7 @@ RMT задумувався для інфрачервоних пультів, а 
 
 ---
 
-<!-- fc id:T-33-064 sha:f25f29ea src:manual/33-peryferiya-kod.md:159 klas:E -->
+<!-- fc id:T-33-064 sha:f25f29ea src:manual/33-peryferiya-kod.md:159 status:no-external-signal -->
 ### T-33-064 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2180,7 +2180,7 @@ RMT задумувався для інфрачервоних пультів, а 
 
 ---
 
-<!-- fc id:T-33-065 sha:1f2196d8 src:manual/33-peryferiya-kod.md:160 klas:E -->
+<!-- fc id:T-33-065 sha:1f2196d8 src:manual/33-peryferiya-kod.md:160 status:no-external-signal -->
 ### T-33-065 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2204,7 +2204,7 @@ RMT задумувався для інфрачервоних пультів, а 
 
 ---
 
-<!-- fc id:T-33-066 sha:3f89b4eb src:manual/33-peryferiya-kod.md:164 klas:F -->
+<!-- fc id:T-33-066 sha:3f89b4eb src:manual/33-peryferiya-kod.md:164 status:unchecked -->
 ### T-33-066 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2225,7 +2225,7 @@ RMT формує послідовність апаратно: процесор �
 
 ---
 
-<!-- fc id:T-33-067 sha:aeef17bd src:manual/33-peryferiya-kod.md:166 klas:K -->
+<!-- fc id:T-33-067 sha:aeef17bd src:manual/33-peryferiya-kod.md:166 status:code-context -->
 ### T-33-067 · kod · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2278,7 +2278,7 @@ led_strip_refresh(strip);
 
 ---
 
-<!-- fc id:T-33-068 sha:0aeeb7f3 src:manual/33-peryferiya-kod.md:170 klas:A -->
+<!-- fc id:T-33-068 sha:0aeeb7f3 src:manual/33-peryferiya-kod.md:170 status:verbatim -->
 ### T-33-068 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2319,7 +2319,7 @@ led_strip_new_rmt_device(&scfg, &rcfg, &strip);
 
 ---
 
-<!-- fc id:T-33-069 sha:3ceebab0 src:manual/33-peryferiya-kod.md:172 klas:A -->
+<!-- fc id:T-33-069 sha:3ceebab0 src:manual/33-peryferiya-kod.md:172 status:verbatim -->
 ### T-33-069 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2358,7 +2358,7 @@ led_strip_refresh(strip);
 
 ---
 
-<!-- fc id:T-33-070 sha:b2a1e46a src:manual/33-peryferiya-kod.md:173 klas:A -->
+<!-- fc id:T-33-070 sha:b2a1e46a src:manual/33-peryferiya-kod.md:173 status:verbatim -->
 ### T-33-070 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2397,7 +2397,7 @@ led_strip_refresh(strip);
 
 ---
 
-<!-- fc id:T-33-071 sha:0a072e63 src:manual/33-peryferiya-kod.md:176 klas:E -->
+<!-- fc id:T-33-071 sha:0a072e63 src:manual/33-peryferiya-kod.md:176 status:no-external-signal -->
 ### T-33-071 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2422,7 +2422,7 @@ led_strip_refresh(strip);
 
 ---
 
-<!-- fc id:T-33-072 sha:3eebc84f src:manual/33-peryferiya-kod.md:177 klas:A -->
+<!-- fc id:T-33-072 sha:3eebc84f src:manual/33-peryferiya-kod.md:177 status:verbatim -->
 ### T-33-072 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2455,7 +2455,7 @@ led_strip_refresh(strip);
 
 ---
 
-<!-- fc id:T-33-073 sha:c630370e src:manual/33-peryferiya-kod.md:179 klas:A -->
+<!-- fc id:T-33-073 sha:c630370e src:manual/33-peryferiya-kod.md:179 status:verbatim -->
 ### T-33-073 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2506,7 +2506,7 @@ led_strip_refresh(strip);
 
 ---
 
-<!-- fc id:T-33-074 sha:be56e056 src:manual/33-peryferiya-kod.md:182 klas:A -->
+<!-- fc id:T-33-074 sha:be56e056 src:manual/33-peryferiya-kod.md:182 status:verbatim -->
 ### T-33-074 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2534,7 +2534,7 @@ RMT уміє й приймати — вимірювати тривалість �
 
 ---
 
-<!-- fc id:T-33-075 sha:ee324ede src:manual/33-peryferiya-kod.md:182 klas:A -->
+<!-- fc id:T-33-075 sha:ee324ede src:manual/33-peryferiya-kod.md:182 status:verbatim -->
 ### T-33-075 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2562,7 +2562,7 @@ RMT уміє й приймати — вимірювати тривалість �
 
 ---
 
-<!-- fc id:T-33-076 sha:48ff1940 src:manual/33-peryferiya-kod.md:187 klas:E -->
+<!-- fc id:T-33-076 sha:48ff1940 src:manual/33-peryferiya-kod.md:187 status:no-external-signal -->
 ### T-33-076 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2585,7 +2585,7 @@ RMT уміє й приймати — вимірювати тривалість �
 
 ---
 
-<!-- fc id:T-33-077 sha:cb13812b src:manual/33-peryferiya-kod.md:187 klas:A -->
+<!-- fc id:T-33-077 sha:cb13812b src:manual/33-peryferiya-kod.md:187 status:verbatim -->
 ### T-33-077 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2614,7 +2614,7 @@ RMT уміє й приймати — вимірювати тривалість �
 
 ---
 
-<!-- fc id:T-33-078 sha:089f6d9c src:manual/33-peryferiya-kod.md:191 klas:E -->
+<!-- fc id:T-33-078 sha:089f6d9c src:manual/33-peryferiya-kod.md:191 status:no-external-signal -->
 ### T-33-078 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2636,7 +2636,7 @@ RMT уміє й приймати — вимірювати тривалість �
 
 ---
 
-<!-- fc id:T-33-079 sha:a75f68d2 src:manual/33-peryferiya-kod.md:194 klas:A -->
+<!-- fc id:T-33-079 sha:a75f68d2 src:manual/33-peryferiya-kod.md:194 status:verbatim -->
 ### T-33-079 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2663,7 +2663,7 @@ PCNT уміє й апаратний фільтр коротких сплескі
 
 ---
 
-<!-- fc id:T-33-080 sha:81a8f41e src:manual/33-peryferiya-kod.md:198 klas:K -->
+<!-- fc id:T-33-080 sha:81a8f41e src:manual/33-peryferiya-kod.md:198 status:code-context -->
 ### T-33-080 · kod · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2726,7 +2726,7 @@ adc_oneshot_read(adc, ADC_CHANNEL_6, &raw);
 
 ---
 
-<!-- fc id:T-33-081 sha:9778c836 src:manual/33-peryferiya-kod.md:201 klas:A -->
+<!-- fc id:T-33-081 sha:9778c836 src:manual/33-peryferiya-kod.md:201 status:verbatim -->
 ### T-33-081 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2766,7 +2766,7 @@ adc_oneshot_new_unit(&ucfg, &adc);
 
 ---
 
-<!-- fc id:T-33-082 sha:1c285707 src:manual/33-peryferiya-kod.md:204 klas:F -->
+<!-- fc id:T-33-082 sha:1c285707 src:manual/33-peryferiya-kod.md:204 status:unchecked -->
 ### T-33-082 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2791,7 +2791,7 @@ adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
 
 ---
 
-<!-- fc id:T-33-083 sha:f277858a src:manual/33-peryferiya-kod.md:205 klas:F -->
+<!-- fc id:T-33-083 sha:f277858a src:manual/33-peryferiya-kod.md:205 status:unchecked -->
 ### T-33-083 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2816,7 +2816,7 @@ adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
 
 ---
 
-<!-- fc id:T-33-084 sha:ba3dde5d src:manual/33-peryferiya-kod.md:207 klas:A -->
+<!-- fc id:T-33-084 sha:ba3dde5d src:manual/33-peryferiya-kod.md:207 status:verbatim -->
 ### T-33-084 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2857,7 +2857,7 @@ adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
 
 ---
 
-<!-- fc id:T-33-085 sha:eb26138c src:manual/33-peryferiya-kod.md:210 klas:A -->
+<!-- fc id:T-33-085 sha:eb26138c src:manual/33-peryferiya-kod.md:210 status:verbatim -->
 ### T-33-085 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2896,7 +2896,7 @@ adc_oneshot_read(adc, ADC_CHANNEL_6, &raw);
 
 ---
 
-<!-- fc id:T-33-086 sha:6dd00f50 src:manual/33-peryferiya-kod.md:214 klas:A -->
+<!-- fc id:T-33-086 sha:6dd00f50 src:manual/33-peryferiya-kod.md:214 status:verbatim -->
 ### T-33-086 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2928,7 +2928,7 @@ adc_oneshot_read(adc, ADC_CHANNEL_6, &raw);
 
 ---
 
-<!-- fc id:T-33-087 sha:f41a8143 src:manual/33-peryferiya-kod.md:215 klas:A -->
+<!-- fc id:T-33-087 sha:f41a8143 src:manual/33-peryferiya-kod.md:215 status:verbatim -->
 ### T-33-087 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2969,7 +2969,7 @@ adc_oneshot_read(adc, ADC_CHANNEL_6, &raw);
 
 ---
 
-<!-- fc id:T-33-088 sha:20d78c08 src:manual/33-peryferiya-kod.md:216 klas:F -->
+<!-- fc id:T-33-088 sha:20d78c08 src:manual/33-peryferiya-kod.md:216 status:unchecked -->
 ### T-33-088 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2994,7 +2994,7 @@ adc_oneshot_read(adc, ADC_CHANNEL_6, &raw);
 
 ---
 
-<!-- fc id:T-33-089 sha:c19c555e src:manual/33-peryferiya-kod.md:219 klas:E -->
+<!-- fc id:T-33-089 sha:c19c555e src:manual/33-peryferiya-kod.md:219 status:no-external-signal -->
 ### T-33-089 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3018,7 +3018,7 @@ ADC міряє лише невелику частину діапазону; з �
 
 ---
 
-<!-- fc id:T-33-090 sha:b512ca80 src:manual/33-peryferiya-kod.md:219 klas:A -->
+<!-- fc id:T-33-090 sha:b512ca80 src:manual/33-peryferiya-kod.md:219 status:verbatim -->
 ### T-33-090 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3068,7 +3068,7 @@ ADC міряє лише невелику частину діапазону; з �
 
 ---
 
-<!-- fc id:T-33-091 sha:34c873e7 src:manual/33-peryferiya-kod.md:221 klas:A -->
+<!-- fc id:T-33-091 sha:34c873e7 src:manual/33-peryferiya-kod.md:221 status:verbatim -->
 ### T-33-091 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3098,7 +3098,7 @@ ADC міряє лише невелику частину діапазону; з �
 
 ---
 
-<!-- fc id:T-33-092 sha:79580945 src:manual/33-peryferiya-kod.md:224 klas:F -->
+<!-- fc id:T-33-092 sha:79580945 src:manual/33-peryferiya-kod.md:224 status:unchecked -->
 ### T-33-092 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3120,7 +3120,7 @@ ADC міряє лише невелику частину діапазону; з �
 
 ---
 
-<!-- fc id:T-33-093 sha:faa9bead src:manual/33-peryferiya-kod.md:225 klas:E -->
+<!-- fc id:T-33-093 sha:faa9bead src:manual/33-peryferiya-kod.md:225 status:no-external-signal -->
 ### T-33-093 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3142,7 +3142,7 @@ ADC міряє лише невелику частину діапазону; з �
 
 ---
 
-<!-- fc id:T-33-094 sha:0bfeb273 src:manual/33-peryferiya-kod.md:227 klas:K -->
+<!-- fc id:T-33-094 sha:0bfeb273 src:manual/33-peryferiya-kod.md:227 status:code-context -->
 ### T-33-094 · kod · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3201,7 +3201,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-095 sha:24960961 src:manual/33-peryferiya-kod.md:230 klas:F -->
+<!-- fc id:T-33-095 sha:24960961 src:manual/33-peryferiya-kod.md:230 status:unchecked -->
 ### T-33-095 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3229,7 +3229,7 @@ adc_cali_create_scheme_curve_fitting(&cfg, &cali);
 
 ---
 
-<!-- fc id:T-33-096 sha:f277858a src:manual/33-peryferiya-kod.md:231 klas:F -->
+<!-- fc id:T-33-096 sha:f277858a src:manual/33-peryferiya-kod.md:231 status:unchecked -->
 ### T-33-096 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3257,7 +3257,7 @@ adc_cali_create_scheme_curve_fitting(&cfg, &cali);
 
 ---
 
-<!-- fc id:T-33-097 sha:1c285707 src:manual/33-peryferiya-kod.md:232 klas:F -->
+<!-- fc id:T-33-097 sha:1c285707 src:manual/33-peryferiya-kod.md:232 status:unchecked -->
 ### T-33-097 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3285,7 +3285,7 @@ adc_cali_create_scheme_curve_fitting(&cfg, &cali);
 
 ---
 
-<!-- fc id:T-33-098 sha:8f9ffc26 src:manual/33-peryferiya-kod.md:234 klas:A -->
+<!-- fc id:T-33-098 sha:8f9ffc26 src:manual/33-peryferiya-kod.md:234 status:verbatim -->
 ### T-33-098 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3329,7 +3329,7 @@ adc_cali_create_scheme_curve_fitting(&cfg, &cali);
 
 ---
 
-<!-- fc id:T-33-099 sha:2a32eb67 src:manual/33-peryferiya-kod.md:237 klas:A -->
+<!-- fc id:T-33-099 sha:2a32eb67 src:manual/33-peryferiya-kod.md:237 status:verbatim -->
 ### T-33-099 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3368,7 +3368,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-100 sha:b338b2c7 src:manual/33-peryferiya-kod.md:240 klas:F -->
+<!-- fc id:T-33-100 sha:b338b2c7 src:manual/33-peryferiya-kod.md:240 status:unchecked -->
 ### T-33-100 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3390,7 +3390,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-101 sha:94e81fbb src:manual/33-peryferiya-kod.md:243 klas:E -->
+<!-- fc id:T-33-101 sha:94e81fbb src:manual/33-peryferiya-kod.md:243 status:no-external-signal -->
 ### T-33-101 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3411,7 +3411,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-102 sha:d9cb78d8 src:manual/33-peryferiya-kod.md:245 klas:E -->
+<!-- fc id:T-33-102 sha:d9cb78d8 src:manual/33-peryferiya-kod.md:245 status:no-external-signal -->
 ### T-33-102 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3436,7 +3436,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-103 sha:836b0a38 src:manual/33-peryferiya-kod.md:245 klas:A -->
+<!-- fc id:T-33-103 sha:836b0a38 src:manual/33-peryferiya-kod.md:245 status:verbatim -->
 ### T-33-103 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3467,7 +3467,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-104 sha:7d1e31c2 src:manual/33-peryferiya-kod.md:246 klas:A -->
+<!-- fc id:T-33-104 sha:7d1e31c2 src:manual/33-peryferiya-kod.md:246 status:verbatim -->
 ### T-33-104 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3518,7 +3518,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-105 sha:f3f157b6 src:manual/33-peryferiya-kod.md:247 klas:E -->
+<!-- fc id:T-33-105 sha:f3f157b6 src:manual/33-peryferiya-kod.md:247 status:no-external-signal -->
 ### T-33-105 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3543,7 +3543,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-106 sha:0ad8b2a1 src:manual/33-peryferiya-kod.md:248 klas:E -->
+<!-- fc id:T-33-106 sha:0ad8b2a1 src:manual/33-peryferiya-kod.md:248 status:no-external-signal -->
 ### T-33-106 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3568,7 +3568,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-107 sha:7f1a82b2 src:manual/33-peryferiya-kod.md:249 klas:F -->
+<!-- fc id:T-33-107 sha:7f1a82b2 src:manual/33-peryferiya-kod.md:249 status:unchecked -->
 ### T-33-107 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3593,7 +3593,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-108 sha:fa721a1e src:manual/33-peryferiya-kod.md:252 klas:E -->
+<!-- fc id:T-33-108 sha:fa721a1e src:manual/33-peryferiya-kod.md:252 status:no-external-signal -->
 ### T-33-108 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3619,7 +3619,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-109 sha:eb5a91e3 src:manual/33-peryferiya-kod.md:253 klas:E -->
+<!-- fc id:T-33-109 sha:eb5a91e3 src:manual/33-peryferiya-kod.md:253 status:no-external-signal -->
 ### T-33-109 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3658,7 +3658,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-110 sha:d584a342 src:manual/33-peryferiya-kod.md:254 klas:E -->
+<!-- fc id:T-33-110 sha:d584a342 src:manual/33-peryferiya-kod.md:254 status:no-external-signal -->
 ### T-33-110 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3684,7 +3684,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-111 sha:227a685f src:manual/33-peryferiya-kod.md:258 klas:E -->
+<!-- fc id:T-33-111 sha:227a685f src:manual/33-peryferiya-kod.md:258 status:no-external-signal -->
 ### T-33-111 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3707,7 +3707,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-112 sha:06cbcff5 src:manual/33-peryferiya-kod.md:264 klas:F -->
+<!-- fc id:T-33-112 sha:06cbcff5 src:manual/33-peryferiya-kod.md:264 status:unchecked -->
 ### T-33-112 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3729,7 +3729,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-113 sha:6b87ca03 src:manual/33-peryferiya-kod.md:264 klas:A -->
+<!-- fc id:T-33-113 sha:6b87ca03 src:manual/33-peryferiya-kod.md:264 status:verbatim -->
 ### T-33-113 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3757,7 +3757,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-114 sha:48af3317 src:manual/33-peryferiya-kod.md:267 klas:C -->
+<!-- fc id:T-33-114 sha:48af3317 src:manual/33-peryferiya-kod.md:267 status:named-unreachable -->
 ### T-33-114 · tablycya-shapka · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3787,7 +3787,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-115 sha:2d6128fe src:manual/33-peryferiya-kod.md:269 klas:A -->
+<!-- fc id:T-33-115 sha:2d6128fe src:manual/33-peryferiya-kod.md:269 status:verbatim -->
 ### T-33-115 · komirka · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3846,7 +3846,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-116 sha:7d1d509e src:manual/33-peryferiya-kod.md:269 klas:A -->
+<!-- fc id:T-33-116 sha:7d1d509e src:manual/33-peryferiya-kod.md:269 status:verbatim -->
 ### T-33-116 · komirka · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3905,7 +3905,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-117 sha:7afccfc4 src:manual/33-peryferiya-kod.md:270 klas:A -->
+<!-- fc id:T-33-117 sha:7afccfc4 src:manual/33-peryferiya-kod.md:270 status:verbatim -->
 ### T-33-117 · komirka · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3964,7 +3964,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-118 sha:69208de8 src:manual/33-peryferiya-kod.md:270 klas:A -->
+<!-- fc id:T-33-118 sha:69208de8 src:manual/33-peryferiya-kod.md:270 status:verbatim -->
 ### T-33-118 · komirka · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -4023,7 +4023,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-119 sha:580c0d2a src:manual/33-peryferiya-kod.md:272 klas:F -->
+<!-- fc id:T-33-119 sha:580c0d2a src:manual/33-peryferiya-kod.md:272 status:unchecked -->
 ### T-33-119 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -4045,7 +4045,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-120 sha:c7206801 src:manual/33-peryferiya-kod.md:272 klas:F -->
+<!-- fc id:T-33-120 sha:c7206801 src:manual/33-peryferiya-kod.md:272 status:unchecked -->
 ### T-33-120 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -4067,7 +4067,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-121 sha:d7aa1bdc src:manual/33-peryferiya-kod.md:276 klas:A -->
+<!-- fc id:T-33-121 sha:d7aa1bdc src:manual/33-peryferiya-kod.md:276 status:verbatim -->
 ### T-33-121 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -4106,7 +4106,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-122 sha:fb9fa4e3 src:manual/33-peryferiya-kod.md:277 klas:A -->
+<!-- fc id:T-33-122 sha:fb9fa4e3 src:manual/33-peryferiya-kod.md:277 status:verbatim -->
 ### T-33-122 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -4149,7 +4149,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-123 sha:89f289a2 src:manual/33-peryferiya-kod.md:283 klas:E -->
+<!-- fc id:T-33-123 sha:89f289a2 src:manual/33-peryferiya-kod.md:283 status:no-external-signal -->
 ### T-33-123 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -4170,7 +4170,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-124 sha:3b0d82f6 src:manual/33-peryferiya-kod.md:285 klas:A -->
+<!-- fc id:T-33-124 sha:3b0d82f6 src:manual/33-peryferiya-kod.md:285 status:verbatim -->
 ### T-33-124 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -4197,7 +4197,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-125 sha:d229616c src:manual/33-peryferiya-kod.md:287 klas:E -->
+<!-- fc id:T-33-125 sha:d229616c src:manual/33-peryferiya-kod.md:287 status:no-external-signal -->
 ### T-33-125 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -4218,7 +4218,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-126 sha:c9c22960 src:manual/33-peryferiya-kod.md:289 klas:F -->
+<!-- fc id:T-33-126 sha:c9c22960 src:manual/33-peryferiya-kod.md:289 status:unchecked -->
 ### T-33-126 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -4239,7 +4239,7 @@ WS2812 керуються через RMT апаратно — у коді це �
 
 ---
 
-<!-- fc id:T-33-127 sha:93141a0c src:manual/33-peryferiya-kod.md:291 klas:A -->
+<!-- fc id:T-33-127 sha:93141a0c src:manual/33-peryferiya-kod.md:291 status:verbatim -->
 ### T-33-127 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -4266,7 +4266,7 @@ PCNT рахує імпульси без переривань і має апар�
 
 ---
 
-<!-- fc id:T-33-128 sha:171ad095 src:manual/33-peryferiya-kod.md:293 klas:A -->
+<!-- fc id:T-33-128 sha:171ad095 src:manual/33-peryferiya-kod.md:293 status:verbatim -->
 ### T-33-128 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -4295,7 +4295,7 @@ PCNT рахує імпульси без переривань і має апар�
 
 ---
 
-<!-- fc id:T-33-129 sha:679df6b2 src:manual/33-peryferiya-kod.md:296 klas:E -->
+<!-- fc id:T-33-129 sha:679df6b2 src:manual/33-peryferiya-kod.md:296 status:no-external-signal -->
 ### T-33-129 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**

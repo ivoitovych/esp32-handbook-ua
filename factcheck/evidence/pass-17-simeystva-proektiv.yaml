@@ -108,7 +108,6 @@
 - nazva: GPIO22 не існує в S3, а GPIO22/23/34 — у C3
   zbih: GPIO22` на S3 не існує|Жодного з пінів `GPIO22`, `GPIO23`, `GPIO34` на C3 не існує|маска
     дійсних пінів|SOC_GPIO_VALID_GPIO_MASK
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
   cytata: "esp32:   SOC_GPIO_PIN_COUNT 40\n         SOC_GPIO_VALID_GPIO_MASK (0xFFFFFFFFFFULL\
     \ & ~(BIT24|BIT28|BIT29|BIT30|BIT31))\n         SOC_GPIO_VALID_OUTPUT_GPIO_MASK (… & ~(BIT34…BIT39))\n\
@@ -167,7 +166,6 @@
     бо саме такі межі й вирішують вибір чипа на етапі схеми.'
 - nazva: DAC на S2 — GPIO17 і GPIO18, а не 25/26
   zbih: Канал 1 \| `GPIO25`|\[\[S2\]\] \| `GPIO17`|`GPIO25` і `GPIO26` на S2 \*\*не існують
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2}/include/soc/dac_channel.h
   cytata: '(esp32/dac_channel.h)
 
@@ -226,7 +224,6 @@
 - nazva: Програмний ліміт часу не рятує від зварених контактів реле
   zbih: зварилися|Зварені контакти|фізично\s*з.єднаний метал|аварійний вимикач.{0,60}єдиний
     захист|Чого програмний ліміт не рятує
-  klas: C
   dzherelo: первинний документ не отримано. Шукати треба IEC 60947-5-1, додаток L (mechanically
     linked contacts) і ISO 13849-1 — обидва за платним доступом, звідси недосяжні
   shukaty: формулювання про примусово зв'язані контакти (mechanically linked contacts) і про
@@ -280,7 +277,6 @@
 - nazva: pioarduino, а не офіційна платформа PlatformIO
   zbih: pioarduino/platform-espressif32/releases/download|Чому в рядку `platform` посилання|Офіційна
     платформа PlatformIO лишилася на Arduino 2\.x
-  klas: A
   dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/main/README.md
     та .../55.03.311/platform.json
   cytata: '### Stable Arduino

@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/40-merezha.md`
 
-Одиниць твердження: **102**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **102**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-40-001 sha:950d8d44 src:manual/40-merezha.md:3 klas:F -->
+<!-- fc id:T-40-001 sha:950d8d44 src:manual/40-merezha.md:3 status:unchecked -->
 ### T-40-001 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@ Wi-Fi дає канал; далі треба вирішити, що по ньо�
 
 ---
 
-<!-- fc id:T-40-002 sha:b9113487 src:manual/40-merezha.md:4 klas:F -->
+<!-- fc id:T-40-002 sha:b9113487 src:manual/40-merezha.md:4 status:unchecked -->
 ### T-40-002 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@ Wi-Fi дає канал; далі треба вирішити, що по ньо�
 
 ---
 
-<!-- fc id:T-40-003 sha:0c16a37c src:manual/40-merezha.md:8 klas:E -->
+<!-- fc id:T-40-003 sha:0c16a37c src:manual/40-merezha.md:8 status:no-external-signal -->
 ### T-40-003 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -74,7 +74,7 @@ Wi-Fi дає канал; далі треба вирішити, що по ньо�
 
 ---
 
-<!-- fc id:T-40-004 sha:fe286ad8 src:manual/40-merezha.md:8 klas:E -->
+<!-- fc id:T-40-004 sha:fe286ad8 src:manual/40-merezha.md:8 status:no-external-signal -->
 ### T-40-004 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -96,7 +96,7 @@ Wi-Fi дає канал; далі треба вирішити, що по ньо�
 
 ---
 
-<!-- fc id:T-40-005 sha:5b919d56 src:manual/40-merezha.md:11 klas:E -->
+<!-- fc id:T-40-005 sha:5b919d56 src:manual/40-merezha.md:11 status:no-external-signal -->
 ### T-40-005 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -119,7 +119,7 @@ Wi-Fi дає канал; далі треба вирішити, що по ньо�
 
 ---
 
-<!-- fc id:T-40-006 sha:b1af660a src:manual/40-merezha.md:11 klas:E -->
+<!-- fc id:T-40-006 sha:b1af660a src:manual/40-merezha.md:11 status:no-external-signal -->
 ### T-40-006 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -142,7 +142,7 @@ Wi-Fi дає канал; далі треба вирішити, що по ньо�
 
 ---
 
-<!-- fc id:T-40-007 sha:6a599c12 src:manual/40-merezha.md:12 klas:E -->
+<!-- fc id:T-40-007 sha:6a599c12 src:manual/40-merezha.md:12 status:no-external-signal -->
 ### T-40-007 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -165,7 +165,7 @@ Wi-Fi дає канал; далі треба вирішити, що по ньо�
 
 ---
 
-<!-- fc id:T-40-008 sha:0a9dbf6e src:manual/40-merezha.md:15 klas:E -->
+<!-- fc id:T-40-008 sha:0a9dbf6e src:manual/40-merezha.md:15 status:no-external-signal -->
 ### T-40-008 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -188,7 +188,7 @@ Wi-Fi дає канал; далі треба вирішити, що по ньо�
 
 ---
 
-<!-- fc id:T-40-009 sha:cce1d360 src:manual/40-merezha.md:16 klas:E -->
+<!-- fc id:T-40-009 sha:cce1d360 src:manual/40-merezha.md:16 status:no-external-signal -->
 ### T-40-009 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -211,7 +211,7 @@ Wi-Fi дає канал; далі треба вирішити, що по ньо�
 
 ---
 
-<!-- fc id:T-40-010 sha:d6267053 src:manual/40-merezha.md:21 klas:E -->
+<!-- fc id:T-40-010 sha:d6267053 src:manual/40-merezha.md:21 status:no-external-signal -->
 ### T-40-010 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -233,7 +233,7 @@ Wi-Fi дає канал; далі треба вирішити, що по ньо�
 
 ---
 
-<!-- fc id:T-40-011 sha:27f9f409 src:manual/40-merezha.md:24 klas:K -->
+<!-- fc id:T-40-011 sha:27f9f409 src:manual/40-merezha.md:24 status:code-context -->
 ### T-40-011 · kod · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -292,7 +292,7 @@ httpd_register_uri_handler(server, &uri);
 
 ---
 
-<!-- fc id:T-40-012 sha:5f326a60 src:manual/40-merezha.md:27 klas:A -->
+<!-- fc id:T-40-012 sha:5f326a60 src:manual/40-merezha.md:27 status:verbatim -->
 ### T-40-012 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -332,7 +332,7 @@ httpd_start(&server, &cfg);
 
 ---
 
-<!-- fc id:T-40-013 sha:b5f61665 src:manual/40-merezha.md:30 klas:F -->
+<!-- fc id:T-40-013 sha:b5f61665 src:manual/40-merezha.md:30 status:unchecked -->
 ### T-40-013 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -359,7 +359,7 @@ httpd_register_uri_handler(server, &uri);
 
 ---
 
-<!-- fc id:T-40-014 sha:3b3be56d src:manual/40-merezha.md:31 klas:F -->
+<!-- fc id:T-40-014 sha:3b3be56d src:manual/40-merezha.md:31 status:unchecked -->
 ### T-40-014 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -386,7 +386,7 @@ httpd_register_uri_handler(server, &uri);
 
 ---
 
-<!-- fc id:T-40-015 sha:1ff1aec9 src:manual/40-merezha.md:32 klas:F -->
+<!-- fc id:T-40-015 sha:1ff1aec9 src:manual/40-merezha.md:32 status:unchecked -->
 ### T-40-015 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -413,7 +413,7 @@ httpd_register_uri_handler(server, &uri);
 
 ---
 
-<!-- fc id:T-40-016 sha:f833664b src:manual/40-merezha.md:34 klas:A -->
+<!-- fc id:T-40-016 sha:f833664b src:manual/40-merezha.md:34 status:verbatim -->
 ### T-40-016 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -456,7 +456,7 @@ httpd_register_uri_handler(server, &uri);
 
 ---
 
-<!-- fc id:T-40-017 sha:b21a17f0 src:manual/40-merezha.md:38 klas:E -->
+<!-- fc id:T-40-017 sha:b21a17f0 src:manual/40-merezha.md:38 status:no-external-signal -->
 ### T-40-017 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -480,7 +480,7 @@ httpd_register_uri_handler(server, &uri);
 
 ---
 
-<!-- fc id:T-40-018 sha:d6fb9903 src:manual/40-merezha.md:38 klas:E -->
+<!-- fc id:T-40-018 sha:d6fb9903 src:manual/40-merezha.md:38 status:no-external-signal -->
 ### T-40-018 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -504,7 +504,7 @@ httpd_register_uri_handler(server, &uri);
 
 ---
 
-<!-- fc id:T-40-019 sha:57ba00a7 src:manual/40-merezha.md:42 klas:F -->
+<!-- fc id:T-40-019 sha:57ba00a7 src:manual/40-merezha.md:42 status:unchecked -->
 ### T-40-019 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -528,7 +528,7 @@ httpd_register_uri_handler(server, &uri);
 
 ---
 
-<!-- fc id:T-40-020 sha:86c0653a src:manual/40-merezha.md:43 klas:F -->
+<!-- fc id:T-40-020 sha:86c0653a src:manual/40-merezha.md:43 status:unchecked -->
 ### T-40-020 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -552,7 +552,7 @@ httpd_register_uri_handler(server, &uri);
 
 ---
 
-<!-- fc id:T-40-021 sha:d91a7859 src:manual/40-merezha.md:47 klas:E -->
+<!-- fc id:T-40-021 sha:d91a7859 src:manual/40-merezha.md:47 status:no-external-signal -->
 ### T-40-021 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -587,7 +587,7 @@ httpd_register_uri_handler(server, &uri);
 
 ---
 
-<!-- fc id:T-40-022 sha:d2be0535 src:manual/40-merezha.md:48 klas:E -->
+<!-- fc id:T-40-022 sha:d2be0535 src:manual/40-merezha.md:48 status:no-external-signal -->
 ### T-40-022 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -610,7 +610,7 @@ httpd_register_uri_handler(server, &uri);
 
 ---
 
-<!-- fc id:T-40-023 sha:553a1977 src:manual/40-merezha.md:53 klas:F -->
+<!-- fc id:T-40-023 sha:553a1977 src:manual/40-merezha.md:53 status:unchecked -->
 ### T-40-023 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -633,7 +633,7 @@ HTTP влаштований як «запит — відповідь»: серв
 
 ---
 
-<!-- fc id:T-40-024 sha:fde2d7f3 src:manual/40-merezha.md:54 klas:E -->
+<!-- fc id:T-40-024 sha:fde2d7f3 src:manual/40-merezha.md:54 status:no-external-signal -->
 ### T-40-024 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -656,7 +656,7 @@ HTTP влаштований як «запит — відповідь»: серв
 
 ---
 
-<!-- fc id:T-40-025 sha:c1bb8fe5 src:manual/40-merezha.md:57 klas:B -->
+<!-- fc id:T-40-025 sha:c1bb8fe5 src:manual/40-merezha.md:57 status:derived -->
 ### T-40-025 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -690,7 +690,7 @@ WebSocket дає двонапрямлений канал поверх того �
 
 ---
 
-<!-- fc id:T-40-026 sha:3aa2580a src:manual/40-merezha.md:57 klas:E -->
+<!-- fc id:T-40-026 sha:3aa2580a src:manual/40-merezha.md:57 status:no-external-signal -->
 ### T-40-026 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -712,7 +712,7 @@ WebSocket дає двонапрямлений канал поверх того �
 
 ---
 
-<!-- fc id:T-40-027 sha:6592d83e src:manual/40-merezha.md:60 klas:E -->
+<!-- fc id:T-40-027 sha:6592d83e src:manual/40-merezha.md:60 status:no-external-signal -->
 ### T-40-027 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -735,7 +735,7 @@ WebSocket дає двонапрямлений канал поверх того �
 
 ---
 
-<!-- fc id:T-40-028 sha:b23be94f src:manual/40-merezha.md:61 klas:F -->
+<!-- fc id:T-40-028 sha:b23be94f src:manual/40-merezha.md:61 status:unchecked -->
 ### T-40-028 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -758,7 +758,7 @@ WebSocket дає двонапрямлений канал поверх того �
 
 ---
 
-<!-- fc id:T-40-029 sha:4786a8f6 src:manual/40-merezha.md:66 klas:E -->
+<!-- fc id:T-40-029 sha:4786a8f6 src:manual/40-merezha.md:66 status:no-external-signal -->
 ### T-40-029 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -780,7 +780,7 @@ WebSocket дає двонапрямлений канал поверх того �
 
 ---
 
-<!-- fc id:T-40-030 sha:84b2234f src:manual/40-merezha.md:66 klas:E -->
+<!-- fc id:T-40-030 sha:84b2234f src:manual/40-merezha.md:66 status:no-external-signal -->
 ### T-40-030 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -802,7 +802,7 @@ WebSocket дає двонапрямлений канал поверх того �
 
 ---
 
-<!-- fc id:T-40-031 sha:86639629 src:manual/40-merezha.md:71 klas:K -->
+<!-- fc id:T-40-031 sha:86639629 src:manual/40-merezha.md:71 status:code-context -->
 ### T-40-031 · kod · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -847,7 +847,7 @@ mdns_instance_name_set("Датчики теплиці");
 
 ---
 
-<!-- fc id:T-40-032 sha:f15667d5 src:manual/40-merezha.md:72 klas:A -->
+<!-- fc id:T-40-032 sha:f15667d5 src:manual/40-merezha.md:72 status:verbatim -->
 ### T-40-032 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -888,7 +888,7 @@ mdns_instance_name_set("Датчики теплиці");
 
 ---
 
-<!-- fc id:T-40-033 sha:cb6701a7 src:manual/40-merezha.md:73 klas:A -->
+<!-- fc id:T-40-033 sha:cb6701a7 src:manual/40-merezha.md:73 status:verbatim -->
 ### T-40-033 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -929,7 +929,7 @@ mdns_instance_name_set("Датчики теплиці");
 
 ---
 
-<!-- fc id:T-40-034 sha:0b1f2c68 src:manual/40-merezha.md:74 klas:A -->
+<!-- fc id:T-40-034 sha:0b1f2c68 src:manual/40-merezha.md:74 status:verbatim -->
 ### T-40-034 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -970,7 +970,7 @@ mdns_instance_name_set("Датчики теплиці");
 
 ---
 
-<!-- fc id:T-40-035 sha:d61aa1fa src:manual/40-merezha.md:77 klas:F -->
+<!-- fc id:T-40-035 sha:d61aa1fa src:manual/40-merezha.md:77 status:unchecked -->
 ### T-40-035 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -992,7 +992,7 @@ mdns_instance_name_set("Датчики теплиці");
 
 ---
 
-<!-- fc id:T-40-036 sha:653ea4a2 src:manual/40-merezha.md:81 klas:E -->
+<!-- fc id:T-40-036 sha:653ea4a2 src:manual/40-merezha.md:81 status:no-external-signal -->
 ### T-40-036 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1016,7 +1016,7 @@ mDNS працює не скрізь. Android історично підтриму
 
 ---
 
-<!-- fc id:T-40-037 sha:f7798eee src:manual/40-merezha.md:85 klas:E -->
+<!-- fc id:T-40-037 sha:f7798eee src:manual/40-merezha.md:85 status:no-external-signal -->
 ### T-40-037 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1039,7 +1039,7 @@ mDNS працює не скрізь. Android історично підтриму
 
 ---
 
-<!-- fc id:T-40-038 sha:ae6489bf src:manual/40-merezha.md:86 klas:E -->
+<!-- fc id:T-40-038 sha:ae6489bf src:manual/40-merezha.md:86 status:no-external-signal -->
 ### T-40-038 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1062,7 +1062,7 @@ mDNS працює не скрізь. Android історично підтриму
 
 ---
 
-<!-- fc id:T-40-039 sha:1839164a src:manual/40-merezha.md:91 klas:E -->
+<!-- fc id:T-40-039 sha:1839164a src:manual/40-merezha.md:91 status:no-external-signal -->
 ### T-40-039 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1084,7 +1084,7 @@ mDNS працює не скрізь. Android історично підтриму
 
 ---
 
-<!-- fc id:T-40-040 sha:cbb939d1 src:manual/40-merezha.md:92 klas:E -->
+<!-- fc id:T-40-040 sha:cbb939d1 src:manual/40-merezha.md:92 status:no-external-signal -->
 ### T-40-040 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1106,7 +1106,7 @@ mDNS працює не скрізь. Android історично підтриму
 
 ---
 
-<!-- fc id:T-40-041 sha:01cae44d src:manual/40-merezha.md:94 klas:K -->
+<!-- fc id:T-40-041 sha:01cae44d src:manual/40-merezha.md:94 status:code-context -->
 ### T-40-041 · kod · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1155,7 +1155,7 @@ tzset();
 
 ---
 
-<!-- fc id:T-40-042 sha:651d6c12 src:manual/40-merezha.md:95 klas:A -->
+<!-- fc id:T-40-042 sha:651d6c12 src:manual/40-merezha.md:95 status:verbatim -->
 ### T-40-042 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1198,7 +1198,7 @@ tzset();
 
 ---
 
-<!-- fc id:T-40-043 sha:1e52cf1e src:manual/40-merezha.md:96 klas:A -->
+<!-- fc id:T-40-043 sha:1e52cf1e src:manual/40-merezha.md:96 status:verbatim -->
 ### T-40-043 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1241,7 +1241,7 @@ tzset();
 
 ---
 
-<!-- fc id:T-40-044 sha:afab5f1f src:manual/40-merezha.md:97 klas:A -->
+<!-- fc id:T-40-044 sha:afab5f1f src:manual/40-merezha.md:97 status:verbatim -->
 ### T-40-044 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1284,7 +1284,7 @@ tzset();
 
 ---
 
-<!-- fc id:T-40-045 sha:0cc9293f src:manual/40-merezha.md:98 klas:F -->
+<!-- fc id:T-40-045 sha:0cc9293f src:manual/40-merezha.md:98 status:unchecked -->
 ### T-40-045 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1311,7 +1311,7 @@ tzset();
 
 ---
 
-<!-- fc id:T-40-046 sha:ab5c560a src:manual/40-merezha.md:99 klas:F -->
+<!-- fc id:T-40-046 sha:ab5c560a src:manual/40-merezha.md:99 status:unchecked -->
 ### T-40-046 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1338,7 +1338,7 @@ tzset();
 
 ---
 
-<!-- fc id:T-40-047 sha:8c357f0b src:manual/40-merezha.md:102 klas:F -->
+<!-- fc id:T-40-047 sha:8c357f0b src:manual/40-merezha.md:102 status:unchecked -->
 ### T-40-047 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1360,7 +1360,7 @@ tzset();
 
 ---
 
-<!-- fc id:T-40-048 sha:aa6bbdb5 src:manual/40-merezha.md:105 klas:E -->
+<!-- fc id:T-40-048 sha:aa6bbdb5 src:manual/40-merezha.md:105 status:no-external-signal -->
 ### T-40-048 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1383,7 +1383,7 @@ tzset();
 
 ---
 
-<!-- fc id:T-40-049 sha:caed2427 src:manual/40-merezha.md:106 klas:E -->
+<!-- fc id:T-40-049 sha:caed2427 src:manual/40-merezha.md:106 status:no-external-signal -->
 ### T-40-049 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1406,7 +1406,7 @@ tzset();
 
 ---
 
-<!-- fc id:T-40-050 sha:70ee41d2 src:manual/40-merezha.md:109 klas:F -->
+<!-- fc id:T-40-050 sha:70ee41d2 src:manual/40-merezha.md:109 status:unchecked -->
 ### T-40-050 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1428,7 +1428,7 @@ tzset();
 
 ---
 
-<!-- fc id:T-40-051 sha:70422979 src:manual/40-merezha.md:114 klas:E -->
+<!-- fc id:T-40-051 sha:70422979 src:manual/40-merezha.md:114 status:no-external-signal -->
 ### T-40-051 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1450,7 +1450,7 @@ tzset();
 
 ---
 
-<!-- fc id:T-40-052 sha:237411e6 src:manual/40-merezha.md:117 klas:E -->
+<!-- fc id:T-40-052 sha:237411e6 src:manual/40-merezha.md:117 status:no-external-signal -->
 ### T-40-052 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1473,7 +1473,7 @@ tzset();
 
 ---
 
-<!-- fc id:T-40-053 sha:57bee44f src:manual/40-merezha.md:117 klas:E -->
+<!-- fc id:T-40-053 sha:57bee44f src:manual/40-merezha.md:117 status:no-external-signal -->
 ### T-40-053 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1496,7 +1496,7 @@ tzset();
 
 ---
 
-<!-- fc id:T-40-054 sha:67a21aaa src:manual/40-merezha.md:118 klas:E -->
+<!-- fc id:T-40-054 sha:67a21aaa src:manual/40-merezha.md:118 status:no-external-signal -->
 ### T-40-054 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1519,7 +1519,7 @@ tzset();
 
 ---
 
-<!-- fc id:T-40-055 sha:cdb9b592 src:manual/40-merezha.md:121 klas:K -->
+<!-- fc id:T-40-055 sha:cdb9b592 src:manual/40-merezha.md:121 status:code-context -->
 ### T-40-055 · kod · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1578,7 +1578,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-056 sha:2c105ffb src:manual/40-merezha.md:128 klas:A -->
+<!-- fc id:T-40-056 sha:2c105ffb src:manual/40-merezha.md:128 status:verbatim -->
 ### T-40-056 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1623,7 +1623,7 @@ esp_mqtt_client_start(client);
 
 ---
 
-<!-- fc id:T-40-057 sha:da12f696 src:manual/40-merezha.md:129 klas:A -->
+<!-- fc id:T-40-057 sha:da12f696 src:manual/40-merezha.md:129 status:verbatim -->
 ### T-40-057 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1668,7 +1668,7 @@ esp_mqtt_client_start(client);
 
 ---
 
-<!-- fc id:T-40-058 sha:7fcb8ea4 src:manual/40-merezha.md:131 klas:A -->
+<!-- fc id:T-40-058 sha:7fcb8ea4 src:manual/40-merezha.md:131 status:verbatim -->
 ### T-40-058 · kod-ryadok · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1706,7 +1706,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-059 sha:f98961f2 src:manual/40-merezha.md:134 klas:E -->
+<!-- fc id:T-40-059 sha:f98961f2 src:manual/40-merezha.md:134 status:no-external-signal -->
 ### T-40-059 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1730,7 +1730,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-060 sha:6937ad74 src:manual/40-merezha.md:135 klas:F -->
+<!-- fc id:T-40-060 sha:6937ad74 src:manual/40-merezha.md:135 status:unchecked -->
 ### T-40-060 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1754,7 +1754,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-061 sha:9ccd51d0 src:manual/40-merezha.md:136 klas:F -->
+<!-- fc id:T-40-061 sha:9ccd51d0 src:manual/40-merezha.md:136 status:unchecked -->
 ### T-40-061 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1778,7 +1778,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-062 sha:a84b93ca src:manual/40-merezha.md:141 klas:F -->
+<!-- fc id:T-40-062 sha:a84b93ca src:manual/40-merezha.md:141 status:unchecked -->
 ### T-40-062 · tablycya-shapka · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1805,7 +1805,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-063 sha:9628ec9a src:manual/40-merezha.md:143 klas:E -->
+<!-- fc id:T-40-063 sha:9628ec9a src:manual/40-merezha.md:143 status:no-external-signal -->
 ### T-40-063 · komirka · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1838,7 +1838,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-064 sha:7d437bc9 src:manual/40-merezha.md:143 klas:E -->
+<!-- fc id:T-40-064 sha:7d437bc9 src:manual/40-merezha.md:143 status:no-external-signal -->
 ### T-40-064 · komirka · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1871,7 +1871,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-065 sha:717e2285 src:manual/40-merezha.md:144 klas:E -->
+<!-- fc id:T-40-065 sha:717e2285 src:manual/40-merezha.md:144 status:no-external-signal -->
 ### T-40-065 · komirka · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1904,7 +1904,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-066 sha:83a52bfd src:manual/40-merezha.md:144 klas:E -->
+<!-- fc id:T-40-066 sha:83a52bfd src:manual/40-merezha.md:144 status:no-external-signal -->
 ### T-40-066 · komirka · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1937,7 +1937,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-067 sha:6221cb30 src:manual/40-merezha.md:145 klas:E -->
+<!-- fc id:T-40-067 sha:6221cb30 src:manual/40-merezha.md:145 status:no-external-signal -->
 ### T-40-067 · komirka · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1970,7 +1970,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-068 sha:8500e7ee src:manual/40-merezha.md:145 klas:E -->
+<!-- fc id:T-40-068 sha:8500e7ee src:manual/40-merezha.md:145 status:no-external-signal -->
 ### T-40-068 · komirka · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2003,7 +2003,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-069 sha:93e6a99f src:manual/40-merezha.md:147 klas:E -->
+<!-- fc id:T-40-069 sha:93e6a99f src:manual/40-merezha.md:147 status:no-external-signal -->
 ### T-40-069 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2026,7 +2026,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-070 sha:a97658fd src:manual/40-merezha.md:152 klas:F -->
+<!-- fc id:T-40-070 sha:a97658fd src:manual/40-merezha.md:152 status:unchecked -->
 ### T-40-070 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2048,7 +2048,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-071 sha:d015a0ae src:manual/40-merezha.md:154 klas:E -->
+<!-- fc id:T-40-071 sha:d015a0ae src:manual/40-merezha.md:154 status:no-external-signal -->
 ### T-40-071 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2072,7 +2072,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-072 sha:8a48a664 src:manual/40-merezha.md:155 klas:E -->
+<!-- fc id:T-40-072 sha:8a48a664 src:manual/40-merezha.md:155 status:no-external-signal -->
 ### T-40-072 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2096,7 +2096,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-073 sha:17065457 src:manual/40-merezha.md:159 klas:F -->
+<!-- fc id:T-40-073 sha:17065457 src:manual/40-merezha.md:159 status:unchecked -->
 ### T-40-073 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2121,7 +2121,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-074 sha:16021207 src:manual/40-merezha.md:160 klas:E -->
+<!-- fc id:T-40-074 sha:16021207 src:manual/40-merezha.md:160 status:no-external-signal -->
 ### T-40-074 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2146,7 +2146,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-075 sha:7a16e395 src:manual/40-merezha.md:161 klas:E -->
+<!-- fc id:T-40-075 sha:7a16e395 src:manual/40-merezha.md:161 status:no-external-signal -->
 ### T-40-075 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2171,7 +2171,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-076 sha:6a8edb98 src:manual/40-merezha.md:167 klas:E -->
+<!-- fc id:T-40-076 sha:6a8edb98 src:manual/40-merezha.md:167 status:no-external-signal -->
 ### T-40-076 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2193,7 +2193,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-077 sha:5b7d99a8 src:manual/40-merezha.md:168 klas:E -->
+<!-- fc id:T-40-077 sha:5b7d99a8 src:manual/40-merezha.md:168 status:no-external-signal -->
 ### T-40-077 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2215,7 +2215,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-078 sha:85ac2b05 src:manual/40-merezha.md:170 klas:E -->
+<!-- fc id:T-40-078 sha:85ac2b05 src:manual/40-merezha.md:170 status:no-external-signal -->
 ### T-40-078 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2236,7 +2236,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-079 sha:42942377 src:manual/40-merezha.md:172 klas:E -->
+<!-- fc id:T-40-079 sha:42942377 src:manual/40-merezha.md:172 status:no-external-signal -->
 ### T-40-079 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2258,7 +2258,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-080 sha:ce6848a3 src:manual/40-merezha.md:173 klas:E -->
+<!-- fc id:T-40-080 sha:ce6848a3 src:manual/40-merezha.md:173 status:no-external-signal -->
 ### T-40-080 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2280,7 +2280,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-081 sha:94635c7b src:manual/40-merezha.md:175 klas:E -->
+<!-- fc id:T-40-081 sha:94635c7b src:manual/40-merezha.md:175 status:no-external-signal -->
 ### T-40-081 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2303,7 +2303,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-082 sha:ee961520 src:manual/40-merezha.md:177 klas:E -->
+<!-- fc id:T-40-082 sha:ee961520 src:manual/40-merezha.md:177 status:no-external-signal -->
 ### T-40-082 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2326,7 +2326,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-083 sha:e9d42010 src:manual/40-merezha.md:179 klas:E -->
+<!-- fc id:T-40-083 sha:e9d42010 src:manual/40-merezha.md:179 status:no-external-signal -->
 ### T-40-083 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2350,7 +2350,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-084 sha:29ee7ec2 src:manual/40-merezha.md:180 klas:F -->
+<!-- fc id:T-40-084 sha:29ee7ec2 src:manual/40-merezha.md:180 status:unchecked -->
 ### T-40-084 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2374,7 +2374,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-085 sha:da66469b src:manual/40-merezha.md:181 klas:E -->
+<!-- fc id:T-40-085 sha:da66469b src:manual/40-merezha.md:181 status:no-external-signal -->
 ### T-40-085 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2398,7 +2398,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-086 sha:98aa77fd src:manual/40-merezha.md:185 klas:F -->
+<!-- fc id:T-40-086 sha:98aa77fd src:manual/40-merezha.md:185 status:unchecked -->
 ### T-40-086 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2422,7 +2422,7 @@ TLS коштує ресурсів: кілька кілобайтів RAM на з
 
 ---
 
-<!-- fc id:T-40-087 sha:cbddb568 src:manual/40-merezha.md:186 klas:C -->
+<!-- fc id:T-40-087 sha:cbddb568 src:manual/40-merezha.md:186 status:named-unreachable -->
 ### T-40-087 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2450,7 +2450,7 @@ TLS коштує ресурсів: кілька кілобайтів RAM на з
 
 ---
 
-<!-- fc id:T-40-088 sha:cd1b7976 src:manual/40-merezha.md:189 klas:E -->
+<!-- fc id:T-40-088 sha:cd1b7976 src:manual/40-merezha.md:189 status:no-external-signal -->
 ### T-40-088 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2475,7 +2475,7 @@ TLS коштує ресурсів: кілька кілобайтів RAM на з
 
 ---
 
-<!-- fc id:T-40-089 sha:f5dece33 src:manual/40-merezha.md:190 klas:E -->
+<!-- fc id:T-40-089 sha:f5dece33 src:manual/40-merezha.md:190 status:no-external-signal -->
 ### T-40-089 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2500,7 +2500,7 @@ TLS коштує ресурсів: кілька кілобайтів RAM на з
 
 ---
 
-<!-- fc id:T-40-090 sha:e3096115 src:manual/40-merezha.md:197 klas:E -->
+<!-- fc id:T-40-090 sha:e3096115 src:manual/40-merezha.md:197 status:no-external-signal -->
 ### T-40-090 · tablycya · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2529,7 +2529,7 @@ TLS коштує ресурсів: кілька кілобайтів RAM на з
 
 ---
 
-<!-- fc id:T-40-091 sha:761d9ec2 src:manual/40-merezha.md:199 klas:F -->
+<!-- fc id:T-40-091 sha:761d9ec2 src:manual/40-merezha.md:199 status:unchecked -->
 ### T-40-091 · tablycya · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2558,7 +2558,7 @@ TLS коштує ресурсів: кілька кілобайтів RAM на з
 
 ---
 
-<!-- fc id:T-40-092 sha:e32c11a5 src:manual/40-merezha.md:200 klas:E -->
+<!-- fc id:T-40-092 sha:e32c11a5 src:manual/40-merezha.md:200 status:no-external-signal -->
 ### T-40-092 · tablycya · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2587,7 +2587,7 @@ TLS коштує ресурсів: кілька кілобайтів RAM на з
 
 ---
 
-<!-- fc id:T-40-093 sha:9978f5d3 src:manual/40-merezha.md:201 klas:F -->
+<!-- fc id:T-40-093 sha:9978f5d3 src:manual/40-merezha.md:201 status:unchecked -->
 ### T-40-093 · tablycya · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2616,7 +2616,7 @@ TLS коштує ресурсів: кілька кілобайтів RAM на з
 
 ---
 
-<!-- fc id:T-40-094 sha:cc768007 src:manual/40-merezha.md:202 klas:F -->
+<!-- fc id:T-40-094 sha:cc768007 src:manual/40-merezha.md:202 status:unchecked -->
 ### T-40-094 · tablycya · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2645,7 +2645,7 @@ TLS коштує ресурсів: кілька кілобайтів RAM на з
 
 ---
 
-<!-- fc id:T-40-095 sha:5234074a src:manual/40-merezha.md:203 klas:F -->
+<!-- fc id:T-40-095 sha:5234074a src:manual/40-merezha.md:203 status:unchecked -->
 ### T-40-095 · tablycya · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2674,7 +2674,7 @@ TLS коштує ресурсів: кілька кілобайтів RAM на з
 
 ---
 
-<!-- fc id:T-40-096 sha:2f67bd2b src:manual/40-merezha.md:204 klas:E -->
+<!-- fc id:T-40-096 sha:2f67bd2b src:manual/40-merezha.md:204 status:no-external-signal -->
 ### T-40-096 · tablycya · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2703,7 +2703,7 @@ TLS коштує ресурсів: кілька кілобайтів RAM на з
 
 ---
 
-<!-- fc id:T-40-097 sha:646fd8a7 src:manual/40-merezha.md:208 klas:E -->
+<!-- fc id:T-40-097 sha:646fd8a7 src:manual/40-merezha.md:208 status:no-external-signal -->
 ### T-40-097 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2724,7 +2724,7 @@ TCP для команд, UDP для потоку вимірювань.
 
 ---
 
-<!-- fc id:T-40-098 sha:6386a727 src:manual/40-merezha.md:210 klas:E -->
+<!-- fc id:T-40-098 sha:6386a727 src:manual/40-merezha.md:210 status:no-external-signal -->
 ### T-40-098 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2745,7 +2745,7 @@ TCP для команд, UDP для потоку вимірювань.
 
 ---
 
-<!-- fc id:T-40-099 sha:402147ba src:manual/40-merezha.md:212 klas:E -->
+<!-- fc id:T-40-099 sha:402147ba src:manual/40-merezha.md:212 status:no-external-signal -->
 ### T-40-099 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2766,7 +2766,7 @@ mDNS — зручність, а не єдиний шлях; IP показува�
 
 ---
 
-<!-- fc id:T-40-100 sha:95fe58b2 src:manual/40-merezha.md:214 klas:F -->
+<!-- fc id:T-40-100 sha:95fe58b2 src:manual/40-merezha.md:214 status:unchecked -->
 ### T-40-100 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2788,7 +2788,7 @@ Retained і Last Will у MQTT роблять систему живою; обро
 
 ---
 
-<!-- fc id:T-40-101 sha:e6c71b56 src:manual/40-merezha.md:217 klas:E -->
+<!-- fc id:T-40-101 sha:e6c71b56 src:manual/40-merezha.md:217 status:no-external-signal -->
 ### T-40-101 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2809,7 +2809,7 @@ Retained і Last Will у MQTT роблять систему живою; обро
 
 ---
 
-<!-- fc id:T-40-102 sha:9859565e src:manual/40-merezha.md:219 klas:E -->
+<!-- fc id:T-40-102 sha:9859565e src:manual/40-merezha.md:219 status:no-external-signal -->
 ### T-40-102 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**

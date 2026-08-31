@@ -1,6 +1,5 @@
 - nazva: 'T-02-042: Wi-Fi · ESP32 → так'
   zbih: Wi\-Fi\s+·\s+ESP32\s+→
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc_caps.h
   cytata: '#define SOC_WIFI_SUPPORTED          1
 
@@ -20,7 +19,6 @@
   - d887dabc
 - nazva: 'T-02-043: Wi-Fi · S2 → так'
   zbih: Wi\-Fi\s+·\s+S2\s+→
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
   cytata: '#define SOC_WIFI_SUPPORTED              1
 
@@ -40,7 +38,6 @@
   - 8de930a4
 - nazva: 'T-02-044: Wi-Fi · S3 → так'
   zbih: Wi\-Fi\s+·\s+S3\s+→
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h
   cytata: '#define SOC_WIFI_SUPPORTED              1
 
@@ -60,7 +57,6 @@
   - a5ffbdc2
 - nazva: 'T-02-047: Wi-Fi · H2 → **ні**'
   zbih: Wi\-Fi\s+·\s+H2\s+→
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h
   cytata: '#define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy hardware */
 
@@ -80,7 +76,6 @@
   - ef59b447
 - nazva: 'T-02-054: BLE · ESP32 → так'
   zbih: BLE\s+·\s+ESP32\s+→
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc_caps.h
   cytata: '#define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy hardware */
 
@@ -100,7 +95,6 @@
   - 44c68cc9
 - nazva: 'T-02-055: BLE · S2 → **ні**'
   zbih: BLE\s+·\s+S2\s+→
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
   cytata: '#define SOC_WIFI_SUPPORTED              1
 
@@ -120,7 +114,6 @@
   - 8758336a
 - nazva: 'T-02-057: BLE · C3 → так'
   zbih: BLE\s+·\s+C3\s+→
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h
   cytata: '#define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy hardware */
 
@@ -140,7 +133,6 @@
   - fedb80c4
 - nazva: 'T-02-096: **Переноситься майже завжди:** код на ESP-IDF, написаний через'
   zbih: \*\*Переноситься\s+майже\s+завжди:\*\*\s+код
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
   cytata: 'The FreeRTOS kernel is ported to all architectures (i.e., Xtensa and RISC-V) available of ESP chips.
 
@@ -160,7 +152,6 @@
   - c17dc940
 - nazva: 'T-02-099: Перенесення проєкту на інший чип в ESP-IDF починається'
   zbih: Перенесення\s+проєкту\s+на\s+інший
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-py.rst
   cytata: 'idf.py set-target <target>
 
@@ -184,7 +175,6 @@
   - ce0f3606
 - nazva: 'T-02-103: Усі налаштування, зроблені через `menuconfig`, повертаються до типових.'
   zbih: Усі\s+налаштування,\s+зроблені\s+через
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-py.rst
   cytata: 'idf.py set-target`` will clear the build directory and re-generate the ``sdkconfig`` file from scratch.
 
@@ -204,7 +194,6 @@
   - 37dcf890
 - nazva: 'T-02-105: Але зроблене без збереження `sdkconfig.defaults` доведеться налаштовувати заново.'
   zbih: Але\s+зроблене\s+без\s+збереження
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/build-system.rst
   cytata: 'For example projects or other projects where you dont want to specify a full sdkconfig configuration, but you do want to override some key values from the ESP-IDF defaults, it is possible to create a file sdkconfig.defaults in the project directory. This file will be used when creating a new config from scratch, or when any new config value hasnt yet been set in the sdkconfig file.
 

@@ -1,6 +1,5 @@
 - nazva: Чому 4.7 кОм годиться на 100 кГц і не годиться на 400 кГц
   zbih: 'Практично: 4\.7 кОм годиться для 100 кГц'
-  klas: A
   dzherelo: NXP UM10204, I2C-bus specification and user manual — розділ 7.1 «Pull-up resistor sizing»,
     Table 10 «Characteristics of the SDA and SCL bus lines», примітка [4]
   cytata: "7.1 Pull-up resistor sizing\nThe bus capacitance is the total capacitance of wire, connections\
@@ -56,7 +55,6 @@
     прохід 18 узяв із ESP-IDF, тільки тепер із причиною.'
 - nazva: Ємність шини I²C нормується, і саме вона обмежує довжину
   zbih: На 400 кГц\s+або на десятках сантиметрів фронт не встигає піднятися
-  klas: A
   dzherelo: NXP UM10204 — Table 10, параметр Cb; розділ 7.1
   cytata: "Cb   capacitive load for each bus line   -   400   pF\n\n[9] The maximum bus capacitance allowable\
     \ may vary from this value\n    depending on the actual operating voltage and frequency.\n"

@@ -1,6 +1,5 @@
 - nazva: 'T-07-055: **Практичне правило:** strapping-піни можна використовувати, але як **виходи**,'
   zbih: \*\*Практичне\s+правило:\*\*\s+strapping\-піни\s+можна
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/startup.rst
   cytata: 'Startup code called from the reset vector determines the boot mode by checking ``GPIO_STRAP_REG`` register for bootstrap pin states.
 
@@ -18,7 +17,6 @@
   note: strapping pins дійсно використовуються як входи під час завантаження, що дозволяє використовувати їх як виходи в нормальній роботі
 - nazva: 'T-07-005: При скиданні ROM-бутлоадер має вирішити, звідки завантажуватися.'
   zbih: При\s+скиданні\s+ROM\-бутлоадер\s+має
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/startup.rst
   cytata: 'Startup code called from the reset vector determines the boot mode by checking ``GPIO_STRAP_REG`` register for bootstrap pin states.
 
@@ -36,7 +34,6 @@
   note: ROM-бутлоадер дійсно читає стан GPIO для вибору режиму завантаження
 - nazva: 'T-07-006: Джерелом рішення служать кілька звичайних GPIO, стан яких'
   zbih: Джерелом\s+рішення\s+служать\s+кілька
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/startup.rst
   cytata: 'Startup code called from the reset vector determines the boot mode by checking ``GPIO_STRAP_REG`` register for bootstrap pin states.
 
@@ -54,7 +51,6 @@
   note: підтверджено, що GPIO служать джерелом рішення для завантаження
 - nazva: 'T-07-065: Спроба їх використати підвішує чип або псує вміст'
   zbih: Спроба\s+їх\s+використати\s+підвішує
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'GPIO6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module and therefore should not be used for other purposes.
 
@@ -74,7 +70,6 @@
   - 6964fc01
 - nazva: 'T-07-067: Ніколи, за жодних умов, у жодному проєкті.'
   zbih: Ніколи,\s+за\s+жодних\s+умов,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'GPIO6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module and therefore should not be used for other purposes.
 
@@ -94,7 +89,6 @@
   - 25039e68
 - nazva: 'T-07-069: Різниця між шісткою й цією парою — у'
   zbih: Різниця\s+між\s+шісткою\s+й
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'GPIO6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module
 
@@ -114,7 +108,6 @@
   - f4840dbc
 - nazva: 'T-07-072: Практично це означає, що правило «шість пінів» безпечне'
   zbih: Практично\s+це\s+означає,\s+що\s+правило
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'GPIO6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module and therefore should not be used for other purposes.
 
@@ -134,7 +127,6 @@
   - 11f8e1b0
 - nazva: 'T-07-083: Друге важливіше, бо менш очевидне.'
   zbih: Друге\s+важливіше,\s+бо\s+менш
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'GPI: GPIO34-39 can only be set as input mode and do not have software-enabled pullup or pulldown functions.
 
@@ -154,7 +146,6 @@
   - 2dbf225d
 - nazva: 'T-07-085: Виглядає як несправний пін або несправна кнопка.'
   zbih: Виглядає\s+як\s+несправний\s+пін
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'GPI: GPIO34-39 can only be set as input mode and do not have software-enabled pullup or pulldown functions.
 
@@ -174,7 +165,6 @@
   - 1d981589
 - nazva: 'T-07-086: Налаштуванням у коді це не змінюється: апаратної схеми'
   zbih: 'Налаштуванням\s+у\s+коді\s+це\s+не\s+змінюється:'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'do not have software-enabled pullup or pulldown functions
 
@@ -194,7 +184,6 @@
   - 7997d730
 - nazva: 'T-07-093: Людина шукає помилку в коді вимірювання, а справа'
   zbih: Людина\s+шукає\s+помилку\s+в
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'GPI: GPIO34-39 can only be set as input mode and do not have software-enabled pullup or pulldown functions.
 
@@ -214,7 +203,6 @@
   - cf5a8129
 - nazva: 'T-07-107: Використати їх під щось інше можна, але тоді'
   zbih: Використати\s+їх\s+під\s+щось
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'TXD & RXD are usually used for flashing and debugging.
 
@@ -234,7 +222,6 @@
   - 99a46388
 - nazva: 'T-07-108: Правило: чіпати UART0 тільки тоді, коли пінів справді'
   zbih: Правило:\s+чіпати\s+UART0\s+тільки
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'TXD & RXD are usually used for flashing and debugging.
 
@@ -252,7 +239,6 @@
   note: GPIO1 і GPIO3 зарезервовані для консолі, рекомендація дотримуватись, лише крайній випадок використання
 - nazva: 'T-07-136: Strapping-піни краще використовувати як виходи й лишати вільними'
   zbih: Strapping\-піни\s+краще\s+використовувати\s+як
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'Strapping pin: GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO) are strapping pins. For more information, please refer to `ESP32 datasheet
 
@@ -270,7 +256,6 @@
   note: Strapping-піни читаються при старті, тому їх краще використовувати як виходи, не входи, щоб не зіпсувати boot-режим
 - nazva: 'T-07-045: | | Головний пін | Другий пін для'
   zbih: \|\s+\|\s+Головний\s+пін
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'Strapping pin: GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO) are strapping pins.
 
@@ -290,7 +275,6 @@
   - 738e4c61
 - nazva: 'T-07-053: На classic і S3 такої комбінації немає —'
   zbih: На\s+classic\s+і\s+S3
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'Strapping pin: GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO) are strapping pins. For more information, please refer to `ESP32 datasheet
 
@@ -310,7 +294,6 @@
   - 7070a25b
 - nazva: 'T-07-064: Вони **виведені на гребінку** більшості плат, підписані як'
   zbih: Вони\s+\*\*виведені\s+на\s+гребінку\*\*
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module and therefore should not be used for other purposes.
 
@@ -330,7 +313,6 @@
   - d8a73a0f
 - nazva: 'T-07-066: Правило категоричне: [[classic]] шість пінів 6–11 не існують.'
   zbih: Правило\s+категоричне:\s+\[\[classic\]\]\s+шість
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module and therefore should not be used for other purposes.
 
@@ -350,7 +332,6 @@
   - 30b73e47
 - nazva: 'T-07-071: На голому `WROOM-32` вони вільні.'
   zbih: На\s+голому\s+`WROOM\-32`\s+вони
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'GPIO6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module
 
@@ -370,7 +351,6 @@
   - e55b2180
 - nazva: 'T-07-078: [[S3]] Це найпоширеніша причина «купив S3 із 16'
   zbih: \[\[S3\]\]\s+Це\s+найпоширеніша\s+причина
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32s3.inc
   cytata: 'When using Octal flash or Octal PSRAM or both, GPIO33 ~ GPIO37 are connected to SPIIO4 ~ SPIIO7 and SPIDQS. Therefore, on boards embedded with ESP32-S3R8 / ESP32-S3R8V chip, GPIO33 ~ GPIO37 are also not recommended for other uses.
 
@@ -390,7 +370,6 @@
   - 9a2e525e
 - nazva: 'T-07-080: Перед проєктуванням плати на S3 варто точно знати,'
   zbih: Перед\s+проєктуванням\s+плати\s+на
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32s3.inc
   cytata: 'GPIO26 ~ GPIO32 are usually used for SPI flash and PSRAM and not recommended for other uses. When using Octal flash or Octal PSRAM or both, GPIO33 ~ GPIO37 are connected to SPIIO4 ~ SPIIO7
 
@@ -410,7 +389,6 @@
   - f1266858
 - nazva: 'T-07-087: У пізніших сімействах (S3, C3) тільки-вхідних пінів немає'
   zbih: У\s+пізніших\s+сімействах\s+\(S3,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32s3.inc
   cytata: 'The {IDF_TARGET_NAME} chip features 45 physical GPIO pins
 
@@ -430,7 +408,6 @@
   - dc856329
 - nazva: 'T-07-101: Більше ніде в лінійці DAC немає (розділи 04'
   zbih: Більше\s+ніде\s+в\s+лінійці\s+DAC\s+немає\s+\(розділи
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'The {IDF_TARGET_NAME} chip features 34 physical GPIO pins
 
@@ -450,7 +427,6 @@
   - 8435c691
 - nazva: 'T-07-104: Для всіх трьох матриця GPIO не діє: це'
   zbih: Для\s+всіх\s+трьох\s+матриця
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32.inc
   cytata: 'GPIO34-39 can only be set as input mode and do not have software-enabled pullup or pulldown functions.
 
@@ -470,7 +446,6 @@
   - e9e0e554
 - nazva: 'T-07-121: **Чип із більшою кількістю пінів** — S3 має'
   zbih: \*\*Чип\s+із\s+більшою\s+кількістю
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio/esp32s3.inc
   cytata: 'The {IDF_TARGET_NAME} chip features 45 physical GPIO pins (GPIO0 ~ GPIO21 and GPIO26 ~ GPIO48)
 

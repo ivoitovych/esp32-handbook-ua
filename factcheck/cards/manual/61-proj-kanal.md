@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/61-proj-kanal.md`
 
-Одиниць твердження: **84**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **84**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-61-001 sha:2d55ff87 src:manual/61-proj-kanal.md:3 klas:E -->
+<!-- fc id:T-61-001 sha:2d55ff87 src:manual/61-proj-kanal.md:3 status:no-external-signal -->
 ### T-61-001 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-61-002 sha:a5d4a7de src:manual/61-proj-kanal.md:4 klas:F -->
+<!-- fc id:T-61-002 sha:a5d4a7de src:manual/61-proj-kanal.md:4 status:unchecked -->
 ### T-61-002 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-61-003 sha:1d3c416e src:manual/61-proj-kanal.md:7 klas:E -->
+<!-- fc id:T-61-003 sha:1d3c416e src:manual/61-proj-kanal.md:7 status:no-external-signal -->
 ### T-61-003 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -76,7 +76,7 @@
 
 ---
 
-<!-- fc id:T-61-004 sha:34fd0a3a src:manual/61-proj-kanal.md:12 klas:E -->
+<!-- fc id:T-61-004 sha:34fd0a3a src:manual/61-proj-kanal.md:12 status:no-external-signal -->
 ### T-61-004 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -98,7 +98,7 @@
 
 ---
 
-<!-- fc id:T-61-005 sha:9a401a97 src:manual/61-proj-kanal.md:13 klas:E -->
+<!-- fc id:T-61-005 sha:9a401a97 src:manual/61-proj-kanal.md:13 status:no-external-signal -->
 ### T-61-005 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -120,7 +120,7 @@
 
 ---
 
-<!-- fc id:T-61-006 sha:041a9aa8 src:manual/61-proj-kanal.md:15 klas:E -->
+<!-- fc id:T-61-006 sha:041a9aa8 src:manual/61-proj-kanal.md:15 status:no-external-signal -->
 ### T-61-006 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -142,7 +142,7 @@
 
 ---
 
-<!-- fc id:T-61-007 sha:e9a11bea src:manual/61-proj-kanal.md:18 klas:E -->
+<!-- fc id:T-61-007 sha:e9a11bea src:manual/61-proj-kanal.md:18 status:no-external-signal -->
 ### T-61-007 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -164,7 +164,7 @@
 
 ---
 
-<!-- fc id:T-61-008 sha:34f0eb99 src:manual/61-proj-kanal.md:21 klas:E -->
+<!-- fc id:T-61-008 sha:34f0eb99 src:manual/61-proj-kanal.md:21 status:no-external-signal -->
 ### T-61-008 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -186,7 +186,7 @@
 
 ---
 
-<!-- fc id:T-61-009 sha:668e5535 src:manual/61-proj-kanal.md:26 klas:E -->
+<!-- fc id:T-61-009 sha:668e5535 src:manual/61-proj-kanal.md:26 status:no-external-signal -->
 ### T-61-009 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -207,7 +207,7 @@
 
 ---
 
-<!-- fc id:T-61-010 sha:464bdd0d src:manual/61-proj-kanal.md:28 klas:F -->
+<!-- fc id:T-61-010 sha:464bdd0d src:manual/61-proj-kanal.md:28 status:unchecked -->
 ### T-61-010 · tablycya-shapka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -234,7 +234,7 @@
 
 ---
 
-<!-- fc id:T-61-011 sha:01a9ed98 src:manual/61-proj-kanal.md:30 klas:F -->
+<!-- fc id:T-61-011 sha:01a9ed98 src:manual/61-proj-kanal.md:30 status:unchecked -->
 ### T-61-011 · komirka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -267,7 +267,7 @@
 
 ---
 
-<!-- fc id:T-61-012 sha:573156b8 src:manual/61-proj-kanal.md:30 klas:F -->
+<!-- fc id:T-61-012 sha:573156b8 src:manual/61-proj-kanal.md:30 status:unchecked -->
 ### T-61-012 · komirka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -300,7 +300,7 @@
 
 ---
 
-<!-- fc id:T-61-013 sha:76ab707d src:manual/61-proj-kanal.md:31 klas:C -->
+<!-- fc id:T-61-013 sha:76ab707d src:manual/61-proj-kanal.md:31 status:named-unreachable -->
 ### T-61-013 · komirka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -337,7 +337,7 @@
 
 ---
 
-<!-- fc id:T-61-014 sha:706d3437 src:manual/61-proj-kanal.md:31 klas:F -->
+<!-- fc id:T-61-014 sha:706d3437 src:manual/61-proj-kanal.md:31 status:unchecked -->
 ### T-61-014 · komirka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -370,7 +370,7 @@
 
 ---
 
-<!-- fc id:T-61-015 sha:24bfd5bc src:manual/61-proj-kanal.md:32 klas:F -->
+<!-- fc id:T-61-015 sha:24bfd5bc src:manual/61-proj-kanal.md:32 status:unchecked -->
 ### T-61-015 · komirka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -403,7 +403,7 @@
 
 ---
 
-<!-- fc id:T-61-016 sha:dba9d4ef src:manual/61-proj-kanal.md:32 klas:F -->
+<!-- fc id:T-61-016 sha:dba9d4ef src:manual/61-proj-kanal.md:32 status:unchecked -->
 ### T-61-016 · komirka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -436,7 +436,7 @@
 
 ---
 
-<!-- fc id:T-61-017 sha:9b30fdd0 src:manual/61-proj-kanal.md:34 klas:E -->
+<!-- fc id:T-61-017 sha:9b30fdd0 src:manual/61-proj-kanal.md:34 status:no-external-signal -->
 ### T-61-017 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -457,7 +457,7 @@
 
 ---
 
-<!-- fc id:T-61-018 sha:f080f748 src:manual/61-proj-kanal.md:38 klas:E -->
+<!-- fc id:T-61-018 sha:f080f748 src:manual/61-proj-kanal.md:38 status:no-external-signal -->
 ### T-61-018 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -479,7 +479,7 @@
 
 ---
 
-<!-- fc id:T-61-019 sha:ed70f774 src:manual/61-proj-kanal.md:38 klas:E -->
+<!-- fc id:T-61-019 sha:ed70f774 src:manual/61-proj-kanal.md:38 status:no-external-signal -->
 ### T-61-019 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -501,7 +501,7 @@
 
 ---
 
-<!-- fc id:T-61-020 sha:488cb3e6 src:manual/61-proj-kanal.md:41 klas:K -->
+<!-- fc id:T-61-020 sha:488cb3e6 src:manual/61-proj-kanal.md:41 status:code-context -->
 ### T-61-020 · kod · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -568,7 +568,7 @@ _Static_assert(sizeof(paket_t) <= 250, "ESP-NOW: максимум 250 байті
 
 ---
 
-<!-- fc id:T-61-021 sha:38e6adad src:manual/61-proj-kanal.md:42 klas:F -->
+<!-- fc id:T-61-021 sha:38e6adad src:manual/61-proj-kanal.md:42 status:unchecked -->
 ### T-61-021 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -590,7 +590,7 @@ _Static_assert(sizeof(paket_t) <= 250, "ESP-NOW: максимум 250 байті
 
 ---
 
-<!-- fc id:T-61-022 sha:ceff9e1c src:manual/61-proj-kanal.md:43 klas:F -->
+<!-- fc id:T-61-022 sha:ceff9e1c src:manual/61-proj-kanal.md:43 status:unchecked -->
 ### T-61-022 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -609,7 +609,7 @@ _Static_assert(sizeof(paket_t) <= 250, "ESP-NOW: максимум 250 байті
 
 ---
 
-<!-- fc id:T-61-023 sha:cf685481 src:manual/61-proj-kanal.md:44 klas:F -->
+<!-- fc id:T-61-023 sha:cf685481 src:manual/61-proj-kanal.md:44 status:unchecked -->
 ### T-61-023 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -628,7 +628,7 @@ _Static_assert(sizeof(paket_t) <= 250, "ESP-NOW: максимум 250 байті
 
 ---
 
-<!-- fc id:T-61-024 sha:b4239afb src:manual/61-proj-kanal.md:57 klas:A -->
+<!-- fc id:T-61-024 sha:b4239afb src:manual/61-proj-kanal.md:57 status:verbatim -->
 ### T-61-024 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -662,7 +662,7 @@ _Static_assert(sizeof(paket_t) <= 250, "ESP-NOW: максимум 250 байті
 
 ---
 
-<!-- fc id:T-61-025 sha:92d27801 src:manual/61-proj-kanal.md:61 klas:E -->
+<!-- fc id:T-61-025 sha:92d27801 src:manual/61-proj-kanal.md:61 status:no-external-signal -->
 ### T-61-025 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -684,7 +684,7 @@ _Static_assert(sizeof(paket_t) <= 250, "ESP-NOW: максимум 250 байті
 
 ---
 
-<!-- fc id:T-61-026 sha:5b873185 src:manual/61-proj-kanal.md:63 klas:F -->
+<!-- fc id:T-61-026 sha:5b873185 src:manual/61-proj-kanal.md:63 status:unchecked -->
 ### T-61-026 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -706,7 +706,7 @@ _Static_assert(sizeof(paket_t) <= 250, "ESP-NOW: максимум 250 байті
 
 ---
 
-<!-- fc id:T-61-027 sha:e6af2908 src:manual/61-proj-kanal.md:66 klas:F -->
+<!-- fc id:T-61-027 sha:e6af2908 src:manual/61-proj-kanal.md:66 status:unchecked -->
 ### T-61-027 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -729,7 +729,7 @@ _Static_assert(sizeof(paket_t) <= 250, "ESP-NOW: максимум 250 байті
 
 ---
 
-<!-- fc id:T-61-028 sha:bc260bbb src:manual/61-proj-kanal.md:67 klas:E -->
+<!-- fc id:T-61-028 sha:bc260bbb src:manual/61-proj-kanal.md:67 status:no-external-signal -->
 ### T-61-028 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -752,7 +752,7 @@ _Static_assert(sizeof(paket_t) <= 250, "ESP-NOW: максимум 250 байті
 
 ---
 
-<!-- fc id:T-61-029 sha:5c50e427 src:manual/61-proj-kanal.md:70 klas:F -->
+<!-- fc id:T-61-029 sha:5c50e427 src:manual/61-proj-kanal.md:70 status:unchecked -->
 ### T-61-029 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -775,7 +775,7 @@ _Static_assert(sizeof(paket_t) <= 250, "ESP-NOW: максимум 250 байті
 
 ---
 
-<!-- fc id:T-61-030 sha:cda5218c src:manual/61-proj-kanal.md:76 klas:K -->
+<!-- fc id:T-61-030 sha:cda5218c src:manual/61-proj-kanal.md:76 status:code-context -->
 ### T-61-030 · kod · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -908,7 +908,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-031 sha:0bead0fd src:manual/61-proj-kanal.md:92 klas:A -->
+<!-- fc id:T-61-031 sha:0bead0fd src:manual/61-proj-kanal.md:92 status:verbatim -->
 ### T-61-031 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -948,7 +948,7 @@ static bool nadislaty(const paket_t *p) {
 
 ---
 
-<!-- fc id:T-61-032 sha:db8aefcb src:manual/61-proj-kanal.md:98 klas:A -->
+<!-- fc id:T-61-032 sha:db8aefcb src:manual/61-proj-kanal.md:98 status:verbatim -->
 ### T-61-032 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -984,7 +984,7 @@ static bool nadislaty(const paket_t *p) {
 
 ---
 
-<!-- fc id:T-61-033 sha:3078ec3b src:manual/61-proj-kanal.md:104 klas:F -->
+<!-- fc id:T-61-033 sha:3078ec3b src:manual/61-proj-kanal.md:104 status:unchecked -->
 ### T-61-033 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1007,7 +1007,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-034 sha:324c53f6 src:manual/61-proj-kanal.md:107 klas:F -->
+<!-- fc id:T-61-034 sha:324c53f6 src:manual/61-proj-kanal.md:107 status:unchecked -->
 ### T-61-034 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1034,7 +1034,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-035 sha:7ce2b7c7 src:manual/61-proj-kanal.md:108 klas:F -->
+<!-- fc id:T-61-035 sha:7ce2b7c7 src:manual/61-proj-kanal.md:108 status:unchecked -->
 ### T-61-035 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1061,7 +1061,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-036 sha:6fe24018 src:manual/61-proj-kanal.md:109 klas:F -->
+<!-- fc id:T-61-036 sha:6fe24018 src:manual/61-proj-kanal.md:109 status:unchecked -->
 ### T-61-036 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1088,7 +1088,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-037 sha:8d862d63 src:manual/61-proj-kanal.md:110 klas:F -->
+<!-- fc id:T-61-037 sha:8d862d63 src:manual/61-proj-kanal.md:110 status:unchecked -->
 ### T-61-037 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1115,7 +1115,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-038 sha:e3e10d63 src:manual/61-proj-kanal.md:112 klas:F -->
+<!-- fc id:T-61-038 sha:e3e10d63 src:manual/61-proj-kanal.md:112 status:unchecked -->
 ### T-61-038 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1142,7 +1142,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-039 sha:5f2fdeaa src:manual/61-proj-kanal.md:116 klas:F -->
+<!-- fc id:T-61-039 sha:5f2fdeaa src:manual/61-proj-kanal.md:116 status:unchecked -->
 ### T-61-039 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1170,7 +1170,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-040 sha:bcaf613d src:manual/61-proj-kanal.md:119 klas:F -->
+<!-- fc id:T-61-040 sha:bcaf613d src:manual/61-proj-kanal.md:119 status:unchecked -->
 ### T-61-040 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1198,7 +1198,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-041 sha:6679c2fc src:manual/61-proj-kanal.md:123 klas:A -->
+<!-- fc id:T-61-041 sha:6679c2fc src:manual/61-proj-kanal.md:123 status:verbatim -->
 ### T-61-041 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1238,7 +1238,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-042 sha:c5771474 src:manual/61-proj-kanal.md:124 klas:F -->
+<!-- fc id:T-61-042 sha:c5771474 src:manual/61-proj-kanal.md:124 status:unchecked -->
 ### T-61-042 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1262,7 +1262,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-043 sha:ac5efcc7 src:manual/61-proj-kanal.md:129 klas:A -->
+<!-- fc id:T-61-043 sha:ac5efcc7 src:manual/61-proj-kanal.md:129 status:verbatim -->
 ### T-61-043 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1302,7 +1302,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-044 sha:397a915a src:manual/61-proj-kanal.md:129 klas:F -->
+<!-- fc id:T-61-044 sha:397a915a src:manual/61-proj-kanal.md:129 status:unchecked -->
 ### T-61-044 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1326,7 +1326,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-045 sha:14b6fb2b src:manual/61-proj-kanal.md:133 klas:A -->
+<!-- fc id:T-61-045 sha:14b6fb2b src:manual/61-proj-kanal.md:133 status:verbatim -->
 ### T-61-045 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1370,7 +1370,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-046 sha:dee8e24a src:manual/61-proj-kanal.md:136 klas:A -->
+<!-- fc id:T-61-046 sha:dee8e24a src:manual/61-proj-kanal.md:136 status:verbatim -->
 ### T-61-046 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1407,7 +1407,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-047 sha:3a1e9ece src:manual/61-proj-kanal.md:138 klas:E -->
+<!-- fc id:T-61-047 sha:3a1e9ece src:manual/61-proj-kanal.md:138 status:no-external-signal -->
 ### T-61-047 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1432,7 +1432,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-048 sha:a8e5e059 src:manual/61-proj-kanal.md:144 klas:K -->
+<!-- fc id:T-61-048 sha:a8e5e059 src:manual/61-proj-kanal.md:144 status:code-context -->
 ### T-61-048 · kod · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1499,7 +1499,7 @@ static void espnow_init_with_key(void) {
 
 ---
 
-<!-- fc id:T-61-049 sha:0232cd24 src:manual/61-proj-kanal.md:146 klas:A -->
+<!-- fc id:T-61-049 sha:0232cd24 src:manual/61-proj-kanal.md:146 status:verbatim -->
 ### T-61-049 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1539,7 +1539,7 @@ static void espnow_init_with_key(void) {
 
 ---
 
-<!-- fc id:T-61-050 sha:e2734f8f src:manual/61-proj-kanal.md:147 klas:A -->
+<!-- fc id:T-61-050 sha:e2734f8f src:manual/61-proj-kanal.md:147 status:verbatim -->
 ### T-61-050 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1579,7 +1579,7 @@ static void espnow_init_with_key(void) {
 
 ---
 
-<!-- fc id:T-61-051 sha:b257bee2 src:manual/61-proj-kanal.md:151 klas:F -->
+<!-- fc id:T-61-051 sha:b257bee2 src:manual/61-proj-kanal.md:151 status:unchecked -->
 ### T-61-051 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1603,7 +1603,7 @@ static void espnow_init_with_key(void) {
 
 ---
 
-<!-- fc id:T-61-052 sha:1980955e src:manual/61-proj-kanal.md:152 klas:A -->
+<!-- fc id:T-61-052 sha:1980955e src:manual/61-proj-kanal.md:152 status:verbatim -->
 ### T-61-052 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1643,7 +1643,7 @@ static void espnow_init_with_key(void) {
 
 ---
 
-<!-- fc id:T-61-053 sha:7881c502 src:manual/61-proj-kanal.md:155 klas:F -->
+<!-- fc id:T-61-053 sha:7881c502 src:manual/61-proj-kanal.md:155 status:unchecked -->
 ### T-61-053 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1669,7 +1669,7 @@ static void espnow_init_with_key(void) {
 
 ---
 
-<!-- fc id:T-61-054 sha:dfd25891 src:manual/61-proj-kanal.md:156 klas:F -->
+<!-- fc id:T-61-054 sha:dfd25891 src:manual/61-proj-kanal.md:156 status:unchecked -->
 ### T-61-054 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1695,7 +1695,7 @@ static void espnow_init_with_key(void) {
 
 ---
 
-<!-- fc id:T-61-055 sha:eb4e4ec4 src:manual/61-proj-kanal.md:157 klas:A -->
+<!-- fc id:T-61-055 sha:eb4e4ec4 src:manual/61-proj-kanal.md:157 status:verbatim -->
 ### T-61-055 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1737,7 +1737,7 @@ static void espnow_init_with_key(void) {
 
 ---
 
-<!-- fc id:T-61-056 sha:214d0ef5 src:manual/61-proj-kanal.md:162 klas:F -->
+<!-- fc id:T-61-056 sha:214d0ef5 src:manual/61-proj-kanal.md:162 status:unchecked -->
 ### T-61-056 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1760,7 +1760,7 @@ static void espnow_init_with_key(void) {
 
 ---
 
-<!-- fc id:T-61-057 sha:f7237524 src:manual/61-proj-kanal.md:162 klas:E -->
+<!-- fc id:T-61-057 sha:f7237524 src:manual/61-proj-kanal.md:162 status:no-external-signal -->
 ### T-61-057 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1783,7 +1783,7 @@ static void espnow_init_with_key(void) {
 
 ---
 
-<!-- fc id:T-61-058 sha:623cf9a6 src:manual/61-proj-kanal.md:165 klas:E -->
+<!-- fc id:T-61-058 sha:623cf9a6 src:manual/61-proj-kanal.md:165 status:no-external-signal -->
 ### T-61-058 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1805,7 +1805,7 @@ static void espnow_init_with_key(void) {
 
 ---
 
-<!-- fc id:T-61-059 sha:22808815 src:manual/61-proj-kanal.md:168 klas:E -->
+<!-- fc id:T-61-059 sha:22808815 src:manual/61-proj-kanal.md:168 status:no-external-signal -->
 ### T-61-059 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1827,7 +1827,7 @@ static void espnow_init_with_key(void) {
 
 ---
 
-<!-- fc id:T-61-060 sha:4834ece6 src:manual/61-proj-kanal.md:173 klas:K -->
+<!-- fc id:T-61-060 sha:4834ece6 src:manual/61-proj-kanal.md:173 status:code-context -->
 ### T-61-060 · kod · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1944,7 +1944,7 @@ static void task_obrobka(void *arg) {
 
 ---
 
-<!-- fc id:T-61-061 sha:223fcbe9 src:manual/61-proj-kanal.md:189 klas:F -->
+<!-- fc id:T-61-061 sha:223fcbe9 src:manual/61-proj-kanal.md:189 status:unchecked -->
 ### T-61-061 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1972,7 +1972,7 @@ static void on_recv(const esp_now_recv_info_t *info,
 
 ---
 
-<!-- fc id:T-61-062 sha:9f94ad98 src:manual/61-proj-kanal.md:197 klas:F -->
+<!-- fc id:T-61-062 sha:9f94ad98 src:manual/61-proj-kanal.md:197 status:unchecked -->
 ### T-61-062 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2000,7 +2000,7 @@ static void task_obrobka(void *arg) {
 
 ---
 
-<!-- fc id:T-61-063 sha:56e84656 src:manual/61-proj-kanal.md:203 klas:F -->
+<!-- fc id:T-61-063 sha:56e84656 src:manual/61-proj-kanal.md:203 status:unchecked -->
 ### T-61-063 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2023,7 +2023,7 @@ static void task_obrobka(void *arg) {
 
 ---
 
-<!-- fc id:T-61-064 sha:d513bc14 src:manual/61-proj-kanal.md:222 klas:E -->
+<!-- fc id:T-61-064 sha:d513bc14 src:manual/61-proj-kanal.md:222 status:no-external-signal -->
 ### T-61-064 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2044,7 +2044,7 @@ static void task_obrobka(void *arg) {
 
 ---
 
-<!-- fc id:T-61-065 sha:60da1592 src:manual/61-proj-kanal.md:224 klas:K -->
+<!-- fc id:T-61-065 sha:60da1592 src:manual/61-proj-kanal.md:224 status:code-context -->
 ### T-61-065 · kod · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2115,7 +2115,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-066 sha:8f529d45 src:manual/61-proj-kanal.md:234 klas:F -->
+<!-- fc id:T-61-066 sha:8f529d45 src:manual/61-proj-kanal.md:234 status:unchecked -->
 ### T-61-066 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2153,7 +2153,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-067 sha:53dc7d43 src:manual/61-proj-kanal.md:235 klas:F -->
+<!-- fc id:T-61-067 sha:53dc7d43 src:manual/61-proj-kanal.md:235 status:unchecked -->
 ### T-61-067 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2191,7 +2191,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-068 sha:ce0827f5 src:manual/61-proj-kanal.md:238 klas:A -->
+<!-- fc id:T-61-068 sha:ce0827f5 src:manual/61-proj-kanal.md:238 status:verbatim -->
 ### T-61-068 · kod-ryadok · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2239,7 +2239,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-069 sha:675401be src:manual/61-proj-kanal.md:243 klas:F -->
+<!-- fc id:T-61-069 sha:675401be src:manual/61-proj-kanal.md:243 status:unchecked -->
 ### T-61-069 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2261,7 +2261,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-070 sha:916b3a63 src:manual/61-proj-kanal.md:243 klas:E -->
+<!-- fc id:T-61-070 sha:916b3a63 src:manual/61-proj-kanal.md:243 status:no-external-signal -->
 ### T-61-070 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2283,7 +2283,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-071 sha:12d05c66 src:manual/61-proj-kanal.md:249 klas:E -->
+<!-- fc id:T-61-071 sha:12d05c66 src:manual/61-proj-kanal.md:249 status:no-external-signal -->
 ### T-61-071 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2307,7 +2307,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-072 sha:20f218a3 src:manual/61-proj-kanal.md:249 klas:F -->
+<!-- fc id:T-61-072 sha:20f218a3 src:manual/61-proj-kanal.md:249 status:unchecked -->
 ### T-61-072 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2331,7 +2331,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-073 sha:3d292935 src:manual/61-proj-kanal.md:253 klas:E -->
+<!-- fc id:T-61-073 sha:3d292935 src:manual/61-proj-kanal.md:253 status:no-external-signal -->
 ### T-61-073 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2353,7 +2353,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-074 sha:6d5cc616 src:manual/61-proj-kanal.md:258 klas:E -->
+<!-- fc id:T-61-074 sha:6d5cc616 src:manual/61-proj-kanal.md:258 status:no-external-signal -->
 ### T-61-074 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2374,7 +2374,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-075 sha:e85b1b17 src:manual/61-proj-kanal.md:260 klas:F -->
+<!-- fc id:T-61-075 sha:e85b1b17 src:manual/61-proj-kanal.md:260 status:unchecked -->
 ### T-61-075 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2396,7 +2396,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-076 sha:a4a5cb00 src:manual/61-proj-kanal.md:263 klas:F -->
+<!-- fc id:T-61-076 sha:a4a5cb00 src:manual/61-proj-kanal.md:263 status:unchecked -->
 ### T-61-076 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2420,7 +2420,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-077 sha:54e08390 src:manual/61-proj-kanal.md:264 klas:E -->
+<!-- fc id:T-61-077 sha:54e08390 src:manual/61-proj-kanal.md:264 status:no-external-signal -->
 ### T-61-077 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2444,7 +2444,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-078 sha:4d07d0f3 src:manual/61-proj-kanal.md:270 klas:E -->
+<!-- fc id:T-61-078 sha:4d07d0f3 src:manual/61-proj-kanal.md:270 status:no-external-signal -->
 ### T-61-078 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2472,7 +2472,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-079 sha:dd7135d0 src:manual/61-proj-kanal.md:271 klas:F -->
+<!-- fc id:T-61-079 sha:dd7135d0 src:manual/61-proj-kanal.md:271 status:unchecked -->
 ### T-61-079 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2500,7 +2500,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-080 sha:76b1afa6 src:manual/61-proj-kanal.md:272 klas:E -->
+<!-- fc id:T-61-080 sha:76b1afa6 src:manual/61-proj-kanal.md:272 status:no-external-signal -->
 ### T-61-080 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2528,7 +2528,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-081 sha:198c83a8 src:manual/61-proj-kanal.md:273 klas:E -->
+<!-- fc id:T-61-081 sha:198c83a8 src:manual/61-proj-kanal.md:273 status:no-external-signal -->
 ### T-61-081 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2556,7 +2556,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-082 sha:746d62bc src:manual/61-proj-kanal.md:274 klas:E -->
+<!-- fc id:T-61-082 sha:746d62bc src:manual/61-proj-kanal.md:274 status:no-external-signal -->
 ### T-61-082 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2584,7 +2584,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-083 sha:db90849f src:manual/61-proj-kanal.md:276 klas:E -->
+<!-- fc id:T-61-083 sha:db90849f src:manual/61-proj-kanal.md:276 status:no-external-signal -->
 ### T-61-083 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2612,7 +2612,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-084 sha:d2b37c0f src:manual/61-proj-kanal.md:281 klas:F -->
+<!-- fc id:T-61-084 sha:d2b37c0f src:manual/61-proj-kanal.md:281 status:unchecked -->
 ### T-61-084 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**

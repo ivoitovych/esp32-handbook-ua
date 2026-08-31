@@ -1,6 +1,5 @@
 - nazva: Deep sleep споживає 10 мкА; з ULP — близько 150 мкА
   zbih: ~10 мкА.*150 мкА
-  klas: A
   dzherelo: 'ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes», с. 30 (кеш: source-cache/esp32_datasheet_en.pdf)'
   cytata: "Table 4-2. Power Consumption by Power Modes\nPower mode          Description              \
     \        Power Consumption\nDeep-sleep          The ULP coprocessor is powered up.        150 µA\n\

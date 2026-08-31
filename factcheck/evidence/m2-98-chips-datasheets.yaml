@@ -18,7 +18,6 @@
 
 
 - nazva: 'T-02-024: Частота, МГц · ESP32 → 240'
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
   cytata: 1 core at 240 MHz
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -40,7 +39,6 @@
   zbih: Частота,\s+МГц\s+·\s+ESP32
   match: Частота,\s+МГц\s+·\s+ESP32
 - nazva: 'T-02-027: Частота, МГц · C3 → 160'
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
   cytata: 'Clock speed: up to 160 MHz'
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -62,7 +60,6 @@
   zbih: Частота,\s+МГц\s+·\s+C3
   match: Частота,\s+МГц\s+·\s+C3
 - nazva: 'T-02-029: Частота, МГц · H2 → 96'
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf
   cytata: 96 MHz internal PLL clock
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -84,7 +81,6 @@
   zbih: Частота,\s+МГц\s+·\s+H2
   match: Частота,\s+МГц\s+·\s+H2
 - nazva: 'T-02-030: SRAM, КБ · ESP32 → 520'
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
   cytata: 520 KB SRAM
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -106,7 +102,6 @@
   zbih: SRAM,\s+КБ\s+·\s+ESP32
   match: SRAM,\s+КБ\s+·\s+ESP32
 - nazva: 'T-02-031: SRAM, КБ · S2 → 320'
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf
   cytata: 'SRAM: 320 KB'
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -128,7 +123,6 @@
   zbih: SRAM,\s+КБ\s+·\s+S2
   match: SRAM,\s+КБ\s+·\s+S2
 - nazva: 'T-02-032: SRAM, КБ · S3 → 512'
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
   cytata: 'SRAM: 512 KB'
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -150,7 +144,6 @@
   zbih: SRAM,\s+КБ\s+·\s+S3
   match: SRAM,\s+КБ\s+·\s+S3
 - nazva: 'T-02-033: SRAM, КБ · C3 → 400'
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
   cytata: 'SRAM: 400 KB (16 KB for cache)'
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -176,7 +169,6 @@
   zbih: SRAM,\s+КБ\s+·\s+C3
   match: SRAM,\s+КБ\s+·\s+C3
 - nazva: 'T-02-034: SRAM, КБ · C6 → 512'
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf
   cytata: 'HP SRAM: 512 KB'
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -202,7 +194,6 @@
   zbih: SRAM,\s+КБ\s+·\s+C6
   match: SRAM,\s+КБ\s+·\s+C6
 - nazva: 'T-02-013: Ядро · S2 → Xtensa LX7'
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf
   cytata: single-core microprocessor (Xtensa® 32-bit LX7)
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -224,7 +215,6 @@
   zbih: Ядро\s+·\s+S2
   match: Ядро\s+·\s+S2
 - nazva: 'T-02-016: Ядро · C6 → RISC-V'
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf
   cytata: RISC-V single-core microprocessor
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -246,7 +236,6 @@
   zbih: Ядро\s+·\s+C6
   match: Ядро\s+·\s+C6
 - nazva: 'T-02-017: Ядро · H2 → RISC-V'
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf
   cytata: RISC-V 32-bit single-core microprocessor
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -268,7 +257,6 @@
   zbih: Ядро\s+·\s+H2
   match: Ядро\s+·\s+H2
 - nazva: 'T-02-020: Ядер · S3 → **2**'
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
   cytata: Xtensa® 32-bit LX7 dual-core microprocessor
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -290,7 +278,6 @@
   zbih: Ядер\s+·\s+S3
   match: Ядер\s+·\s+S3
 - nazva: 'T-02-133: Zigbee, Thread, Matter · Чип → C6 або H2'
-  klas: B
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf
   cytata: Zigbee and Thread (802.15.4)
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -324,7 +311,6 @@
   zbih: Zigbee,\s+Thread,\s+Matter\s+·\s+Чип
   match: Zigbee,\s+Thread,\s+Matter\s+·\s+Чип
 - nazva: 'T-02-139: Налагодження без адаптера · Чип → S3, C3'
-  klas: B
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
   cytata: USB Serial/JTAG controller
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -354,7 +340,6 @@
   zbih: Налагодження\s+без\s+адаптера\s+·\s+Чип
   match: Налагодження\s+без\s+адаптера\s+·\s+Чип
 - nazva: 'T-02-146: S2 без Bluetooth узагалі.'
-  klas: B
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf
   cytata: 2.4 GHz Wi-Fi (802.11 b/g/n)
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).

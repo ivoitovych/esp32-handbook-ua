@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/26-zboyi.md`
 
-Одиниць твердження: **124**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **124**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-26-001 sha:a69cb3c7 src:manual/26-zboyi.md:3 klas:A -->
+<!-- fc id:T-26-001 sha:a69cb3c7 src:manual/26-zboyi.md:3 status:verbatim -->
 ### T-26-001 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -49,7 +49,7 @@
 
 ---
 
-<!-- fc id:T-26-002 sha:600dd00b src:manual/26-zboyi.md:4 klas:E -->
+<!-- fc id:T-26-002 sha:600dd00b src:manual/26-zboyi.md:4 status:no-external-signal -->
 ### T-26-002 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -73,7 +73,7 @@
 
 ---
 
-<!-- fc id:T-26-003 sha:1bab83a1 src:manual/26-zboyi.md:8 klas:E -->
+<!-- fc id:T-26-003 sha:1bab83a1 src:manual/26-zboyi.md:8 status:no-external-signal -->
 ### T-26-003 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -95,7 +95,7 @@
 
 ---
 
-<!-- fc id:T-26-004 sha:bbad256a src:manual/26-zboyi.md:8 klas:E -->
+<!-- fc id:T-26-004 sha:bbad256a src:manual/26-zboyi.md:8 status:no-external-signal -->
 ### T-26-004 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -117,7 +117,7 @@
 
 ---
 
-<!-- fc id:T-26-005 sha:2930db2f src:manual/26-zboyi.md:13 klas:K -->
+<!-- fc id:T-26-005 sha:2930db2f src:manual/26-zboyi.md:13 status:code-context -->
 ### T-26-005 · kod · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -166,7 +166,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-006 sha:aef24c98 src:manual/26-zboyi.md:25 klas:E -->
+<!-- fc id:T-26-006 sha:aef24c98 src:manual/26-zboyi.md:25 status:no-external-signal -->
 ### T-26-006 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -187,7 +187,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-007 sha:78a1ffd3 src:manual/26-zboyi.md:27 klas:A -->
+<!-- fc id:T-26-007 sha:78a1ffd3 src:manual/26-zboyi.md:27 status:verbatim -->
 ### T-26-007 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -238,7 +238,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-008 sha:0f8782ac src:manual/26-zboyi.md:27 klas:E -->
+<!-- fc id:T-26-008 sha:0f8782ac src:manual/26-zboyi.md:27 status:no-external-signal -->
 ### T-26-008 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -259,7 +259,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-009 sha:c2bb4285 src:manual/26-zboyi.md:29 klas:F -->
+<!-- fc id:T-26-009 sha:c2bb4285 src:manual/26-zboyi.md:29 status:unchecked -->
 ### T-26-009 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -280,7 +280,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-010 sha:8c83e9c8 src:manual/26-zboyi.md:31 klas:F -->
+<!-- fc id:T-26-010 sha:8c83e9c8 src:manual/26-zboyi.md:31 status:unchecked -->
 ### T-26-010 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -303,7 +303,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-011 sha:f240f97f src:manual/26-zboyi.md:31 klas:B -->
+<!-- fc id:T-26-011 sha:f240f97f src:manual/26-zboyi.md:31 status:derived -->
 ### T-26-011 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -336,7 +336,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-012 sha:2c5c44dc src:manual/26-zboyi.md:33 klas:E -->
+<!-- fc id:T-26-012 sha:2c5c44dc src:manual/26-zboyi.md:33 status:no-external-signal -->
 ### T-26-012 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -359,7 +359,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-013 sha:0a4e8a06 src:manual/26-zboyi.md:35 klas:A -->
+<!-- fc id:T-26-013 sha:0a4e8a06 src:manual/26-zboyi.md:35 status:verbatim -->
 ### T-26-013 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -397,7 +397,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-014 sha:ea9dc162 src:manual/26-zboyi.md:39 klas:F -->
+<!-- fc id:T-26-014 sha:ea9dc162 src:manual/26-zboyi.md:39 status:unchecked -->
 ### T-26-014 · tablycya-shapka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -426,7 +426,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-015 sha:3f7f05f2 src:manual/26-zboyi.md:41 klas:A -->
+<!-- fc id:T-26-015 sha:3f7f05f2 src:manual/26-zboyi.md:41 status:verbatim -->
 ### T-26-015 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -491,7 +491,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-016 sha:e1369196 src:manual/26-zboyi.md:41 klas:A -->
+<!-- fc id:T-26-016 sha:e1369196 src:manual/26-zboyi.md:41 status:verbatim -->
 ### T-26-016 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -556,7 +556,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-017 sha:8bc4f39c src:manual/26-zboyi.md:42 klas:A -->
+<!-- fc id:T-26-017 sha:8bc4f39c src:manual/26-zboyi.md:42 status:verbatim -->
 ### T-26-017 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -621,7 +621,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-018 sha:28cc86f2 src:manual/26-zboyi.md:42 klas:A -->
+<!-- fc id:T-26-018 sha:28cc86f2 src:manual/26-zboyi.md:42 status:verbatim -->
 ### T-26-018 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -686,7 +686,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-019 sha:65e5b66a src:manual/26-zboyi.md:43 klas:A -->
+<!-- fc id:T-26-019 sha:65e5b66a src:manual/26-zboyi.md:43 status:verbatim -->
 ### T-26-019 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -751,7 +751,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-020 sha:89d4b0ed src:manual/26-zboyi.md:43 klas:A -->
+<!-- fc id:T-26-020 sha:89d4b0ed src:manual/26-zboyi.md:43 status:verbatim -->
 ### T-26-020 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -816,7 +816,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-021 sha:0e5b84a2 src:manual/26-zboyi.md:44 klas:A -->
+<!-- fc id:T-26-021 sha:0e5b84a2 src:manual/26-zboyi.md:44 status:verbatim -->
 ### T-26-021 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -881,7 +881,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-022 sha:ba217f40 src:manual/26-zboyi.md:44 klas:A -->
+<!-- fc id:T-26-022 sha:ba217f40 src:manual/26-zboyi.md:44 status:verbatim -->
 ### T-26-022 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -946,7 +946,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-023 sha:c4d149ff src:manual/26-zboyi.md:45 klas:A -->
+<!-- fc id:T-26-023 sha:c4d149ff src:manual/26-zboyi.md:45 status:verbatim -->
 ### T-26-023 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1011,7 +1011,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-024 sha:c6b36da3 src:manual/26-zboyi.md:45 klas:A -->
+<!-- fc id:T-26-024 sha:c6b36da3 src:manual/26-zboyi.md:45 status:verbatim -->
 ### T-26-024 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1076,7 +1076,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-025 sha:d96111a7 src:manual/26-zboyi.md:46 klas:A -->
+<!-- fc id:T-26-025 sha:d96111a7 src:manual/26-zboyi.md:46 status:verbatim -->
 ### T-26-025 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1141,7 +1141,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-026 sha:439a9b98 src:manual/26-zboyi.md:46 klas:A -->
+<!-- fc id:T-26-026 sha:439a9b98 src:manual/26-zboyi.md:46 status:verbatim -->
 ### T-26-026 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1206,7 +1206,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-027 sha:daea59e7 src:manual/26-zboyi.md:48 klas:C -->
+<!-- fc id:T-26-027 sha:daea59e7 src:manual/26-zboyi.md:48 status:named-unreachable -->
 ### T-26-027 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1233,7 +1233,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-028 sha:202f36a9 src:manual/26-zboyi.md:49 klas:F -->
+<!-- fc id:T-26-028 sha:202f36a9 src:manual/26-zboyi.md:49 status:unchecked -->
 ### T-26-028 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1256,7 +1256,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-029 sha:98f44ec0 src:manual/26-zboyi.md:53 klas:F -->
+<!-- fc id:T-26-029 sha:98f44ec0 src:manual/26-zboyi.md:53 status:unchecked -->
 ### T-26-029 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1281,7 +1281,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-030 sha:57bdf5fd src:manual/26-zboyi.md:54 klas:F -->
+<!-- fc id:T-26-030 sha:57bdf5fd src:manual/26-zboyi.md:54 status:unchecked -->
 ### T-26-030 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1306,7 +1306,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-031 sha:820b452a src:manual/26-zboyi.md:58 klas:E -->
+<!-- fc id:T-26-031 sha:820b452a src:manual/26-zboyi.md:58 status:no-external-signal -->
 ### T-26-031 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1330,7 +1330,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-032 sha:03382f5a src:manual/26-zboyi.md:59 klas:E -->
+<!-- fc id:T-26-032 sha:03382f5a src:manual/26-zboyi.md:59 status:no-external-signal -->
 ### T-26-032 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1354,7 +1354,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-033 sha:ac7aa576 src:manual/26-zboyi.md:65 klas:E -->
+<!-- fc id:T-26-033 sha:ac7aa576 src:manual/26-zboyi.md:65 status:no-external-signal -->
 ### T-26-033 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1376,7 +1376,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-034 sha:bfde3822 src:manual/26-zboyi.md:65 klas:F -->
+<!-- fc id:T-26-034 sha:bfde3822 src:manual/26-zboyi.md:65 status:unchecked -->
 ### T-26-034 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1398,7 +1398,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-035 sha:dbe3d911 src:manual/26-zboyi.md:68 klas:A -->
+<!-- fc id:T-26-035 sha:dbe3d911 src:manual/26-zboyi.md:68 status:verbatim -->
 ### T-26-035 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1426,7 +1426,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-036 sha:18ced902 src:manual/26-zboyi.md:71 klas:E -->
+<!-- fc id:T-26-036 sha:18ced902 src:manual/26-zboyi.md:71 status:no-external-signal -->
 ### T-26-036 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1447,7 +1447,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-037 sha:6c1fb6aa src:manual/26-zboyi.md:73 klas:K -->
+<!-- fc id:T-26-037 sha:6c1fb6aa src:manual/26-zboyi.md:73 status:code-context -->
 ### T-26-037 · kod · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1488,7 +1488,7 @@ xtensa-esp32-elf-addr2line -pfiaC -e build/app.elf \
 
 ---
 
-<!-- fc id:T-26-038 sha:92bc15fa src:manual/26-zboyi.md:74 klas:A -->
+<!-- fc id:T-26-038 sha:92bc15fa src:manual/26-zboyi.md:74 status:verbatim -->
 ### T-26-038 · kod-ryadok · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1526,7 +1526,7 @@ xtensa-esp32-elf-addr2line -pfiaC -e build/app.elf \
 
 ---
 
-<!-- fc id:T-26-039 sha:136f8130 src:manual/26-zboyi.md:78 klas:F -->
+<!-- fc id:T-26-039 sha:136f8130 src:manual/26-zboyi.md:78 status:unchecked -->
 ### T-26-039 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1548,7 +1548,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-040 sha:022cddd3 src:manual/26-zboyi.md:82 klas:A -->
+<!-- fc id:T-26-040 sha:022cddd3 src:manual/26-zboyi.md:82 status:verbatim -->
 ### T-26-040 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1599,7 +1599,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-041 sha:21946ec5 src:manual/26-zboyi.md:84 klas:E -->
+<!-- fc id:T-26-041 sha:21946ec5 src:manual/26-zboyi.md:84 status:no-external-signal -->
 ### T-26-041 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1625,7 +1625,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-042 sha:58627280 src:manual/26-zboyi.md:88 klas:C -->
+<!-- fc id:T-26-042 sha:58627280 src:manual/26-zboyi.md:88 status:named-unreachable -->
 ### T-26-042 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1653,7 +1653,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-043 sha:bb511d58 src:manual/26-zboyi.md:90 klas:E -->
+<!-- fc id:T-26-043 sha:bb511d58 src:manual/26-zboyi.md:90 status:no-external-signal -->
 ### T-26-043 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1676,7 +1676,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-044 sha:b1776ff2 src:manual/26-zboyi.md:92 klas:A -->
+<!-- fc id:T-26-044 sha:b1776ff2 src:manual/26-zboyi.md:92 status:verbatim -->
 ### T-26-044 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1708,7 +1708,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-045 sha:b340d41d src:manual/26-zboyi.md:92 klas:A -->
+<!-- fc id:T-26-045 sha:b340d41d src:manual/26-zboyi.md:92 status:verbatim -->
 ### T-26-045 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1759,7 +1759,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-046 sha:e10ba098 src:manual/26-zboyi.md:95 klas:A -->
+<!-- fc id:T-26-046 sha:e10ba098 src:manual/26-zboyi.md:95 status:verbatim -->
 ### T-26-046 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1810,7 +1810,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-047 sha:504645eb src:manual/26-zboyi.md:99 klas:F -->
+<!-- fc id:T-26-047 sha:504645eb src:manual/26-zboyi.md:99 status:unchecked -->
 ### T-26-047 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1833,7 +1833,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-048 sha:f5dc374f src:manual/26-zboyi.md:103 klas:A -->
+<!-- fc id:T-26-048 sha:f5dc374f src:manual/26-zboyi.md:103 status:verbatim -->
 ### T-26-048 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1869,7 +1869,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-049 sha:4980da78 src:manual/26-zboyi.md:104 klas:E -->
+<!-- fc id:T-26-049 sha:4980da78 src:manual/26-zboyi.md:104 status:no-external-signal -->
 ### T-26-049 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1891,7 +1891,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-050 sha:35f815e8 src:manual/26-zboyi.md:107 klas:B -->
+<!-- fc id:T-26-050 sha:35f815e8 src:manual/26-zboyi.md:107 status:derived -->
 ### T-26-050 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1921,7 +1921,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-051 sha:d38a2d32 src:manual/26-zboyi.md:107 klas:E -->
+<!-- fc id:T-26-051 sha:d38a2d32 src:manual/26-zboyi.md:107 status:no-external-signal -->
 ### T-26-051 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1945,7 +1945,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-052 sha:aefbccf3 src:manual/26-zboyi.md:111 klas:C -->
+<!-- fc id:T-26-052 sha:aefbccf3 src:manual/26-zboyi.md:111 status:named-unreachable -->
 ### T-26-052 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1972,7 +1972,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-053 sha:fce80b0b src:manual/26-zboyi.md:112 klas:E -->
+<!-- fc id:T-26-053 sha:fce80b0b src:manual/26-zboyi.md:112 status:no-external-signal -->
 ### T-26-053 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1996,7 +1996,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-054 sha:87564073 src:manual/26-zboyi.md:118 klas:E -->
+<!-- fc id:T-26-054 sha:87564073 src:manual/26-zboyi.md:118 status:no-external-signal -->
 ### T-26-054 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2017,7 +2017,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-055 sha:fb634479 src:manual/26-zboyi.md:120 klas:A -->
+<!-- fc id:T-26-055 sha:fb634479 src:manual/26-zboyi.md:120 status:verbatim -->
 ### T-26-055 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2046,7 +2046,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-056 sha:655ff0e7 src:manual/26-zboyi.md:122 klas:K -->
+<!-- fc id:T-26-056 sha:655ff0e7 src:manual/26-zboyi.md:122 status:code-context -->
 ### T-26-056 · kod · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2085,7 +2085,7 @@ E (5234) task_wdt: CPU 0: my_task
 
 ---
 
-<!-- fc id:T-26-057 sha:a1afa6b3 src:manual/26-zboyi.md:125 klas:A -->
+<!-- fc id:T-26-057 sha:a1afa6b3 src:manual/26-zboyi.md:125 status:verbatim -->
 ### T-26-057 · kod-ryadok · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2118,7 +2118,7 @@ E (5234) task_wdt: CPU 0: my_task
 
 ---
 
-<!-- fc id:T-26-058 sha:6f3e6008 src:manual/26-zboyi.md:130 klas:E -->
+<!-- fc id:T-26-058 sha:6f3e6008 src:manual/26-zboyi.md:130 status:no-external-signal -->
 ### T-26-058 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2141,7 +2141,7 @@ E (5234) task_wdt: CPU 0: my_task
 
 ---
 
-<!-- fc id:T-26-059 sha:e607bc06 src:manual/26-zboyi.md:130 klas:E -->
+<!-- fc id:T-26-059 sha:e607bc06 src:manual/26-zboyi.md:130 status:no-external-signal -->
 ### T-26-059 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2164,7 +2164,7 @@ E (5234) task_wdt: CPU 0: my_task
 
 ---
 
-<!-- fc id:T-26-060 sha:e04f1350 src:manual/26-zboyi.md:135 klas:E -->
+<!-- fc id:T-26-060 sha:e04f1350 src:manual/26-zboyi.md:135 status:no-external-signal -->
 ### T-26-060 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2186,7 +2186,7 @@ E (5234) task_wdt: CPU 0: my_task
 
 ---
 
-<!-- fc id:T-26-061 sha:9b2f397d src:manual/26-zboyi.md:137 klas:A -->
+<!-- fc id:T-26-061 sha:9b2f397d src:manual/26-zboyi.md:137 status:verbatim -->
 ### T-26-061 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2223,7 +2223,7 @@ E (5234) task_wdt: CPU 0: my_task
 
 ---
 
-<!-- fc id:T-26-062 sha:ed96a95f src:manual/26-zboyi.md:137 klas:F -->
+<!-- fc id:T-26-062 sha:ed96a95f src:manual/26-zboyi.md:137 status:unchecked -->
 ### T-26-062 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2245,7 +2245,7 @@ E (5234) task_wdt: CPU 0: my_task
 
 ---
 
-<!-- fc id:T-26-063 sha:15ff91b6 src:manual/26-zboyi.md:140 klas:A -->
+<!-- fc id:T-26-063 sha:15ff91b6 src:manual/26-zboyi.md:140 status:verbatim -->
 ### T-26-063 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2283,7 +2283,7 @@ E (5234) task_wdt: CPU 0: my_task
 
 ---
 
-<!-- fc id:T-26-064 sha:3e706fc4 src:manual/26-zboyi.md:141 klas:F -->
+<!-- fc id:T-26-064 sha:3e706fc4 src:manual/26-zboyi.md:141 status:unchecked -->
 ### T-26-064 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2306,7 +2306,7 @@ E (5234) task_wdt: CPU 0: my_task
 
 ---
 
-<!-- fc id:T-26-065 sha:dc425365 src:manual/26-zboyi.md:144 klas:E -->
+<!-- fc id:T-26-065 sha:dc425365 src:manual/26-zboyi.md:144 status:no-external-signal -->
 ### T-26-065 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2329,7 +2329,7 @@ E (5234) task_wdt: CPU 0: my_task
 
 ---
 
-<!-- fc id:T-26-066 sha:a7015ad3 src:manual/26-zboyi.md:144 klas:E -->
+<!-- fc id:T-26-066 sha:a7015ad3 src:manual/26-zboyi.md:144 status:no-external-signal -->
 ### T-26-066 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2352,7 +2352,7 @@ E (5234) task_wdt: CPU 0: my_task
 
 ---
 
-<!-- fc id:T-26-067 sha:e1f3ea14 src:manual/26-zboyi.md:148 klas:E -->
+<!-- fc id:T-26-067 sha:e1f3ea14 src:manual/26-zboyi.md:148 status:no-external-signal -->
 ### T-26-067 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2373,7 +2373,7 @@ E (5234) task_wdt: CPU 0: my_task
 
 ---
 
-<!-- fc id:T-26-068 sha:736b9d75 src:manual/26-zboyi.md:150 klas:K -->
+<!-- fc id:T-26-068 sha:736b9d75 src:manual/26-zboyi.md:150 status:code-context -->
 ### T-26-068 · kod · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2414,7 +2414,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-26-069 sha:b174e002 src:manual/26-zboyi.md:152 klas:F -->
+<!-- fc id:T-26-069 sha:b174e002 src:manual/26-zboyi.md:152 status:unchecked -->
 ### T-26-069 · kod-ryadok · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2440,7 +2440,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-26-070 sha:5b756509 src:manual/26-zboyi.md:157 klas:A -->
+<!-- fc id:T-26-070 sha:5b756509 src:manual/26-zboyi.md:157 status:verbatim -->
 ### T-26-070 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2474,7 +2474,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-26-071 sha:8e273a6c src:manual/26-zboyi.md:157 klas:A -->
+<!-- fc id:T-26-071 sha:8e273a6c src:manual/26-zboyi.md:157 status:verbatim -->
 ### T-26-071 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2514,7 +2514,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-26-072 sha:8bb6d694 src:manual/26-zboyi.md:162 klas:A -->
+<!-- fc id:T-26-072 sha:8bb6d694 src:manual/26-zboyi.md:162 status:verbatim -->
 ### T-26-072 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2545,7 +2545,7 @@ running` прямо каже, хто винен.
 
 ---
 
-<!-- fc id:T-26-073 sha:7b2b476d src:manual/26-zboyi.md:163 klas:A -->
+<!-- fc id:T-26-073 sha:7b2b476d src:manual/26-zboyi.md:163 status:verbatim -->
 ### T-26-073 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2583,7 +2583,7 @@ running` прямо каже, хто винен.
 
 ---
 
-<!-- fc id:T-26-074 sha:113645cd src:manual/26-zboyi.md:168 klas:K -->
+<!-- fc id:T-26-074 sha:113645cd src:manual/26-zboyi.md:168 status:code-context -->
 ### T-26-074 · kod · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2638,7 +2638,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-075 sha:63eae962 src:manual/26-zboyi.md:172 klas:E -->
+<!-- fc id:T-26-075 sha:63eae962 src:manual/26-zboyi.md:172 status:no-external-signal -->
 ### T-26-075 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2661,7 +2661,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-076 sha:2f6d7c09 src:manual/26-zboyi.md:176 klas:F -->
+<!-- fc id:T-26-076 sha:2f6d7c09 src:manual/26-zboyi.md:176 status:unchecked -->
 ### T-26-076 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2684,7 +2684,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-077 sha:3d768ead src:manual/26-zboyi.md:180 klas:E -->
+<!-- fc id:T-26-077 sha:3d768ead src:manual/26-zboyi.md:180 status:no-external-signal -->
 ### T-26-077 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2706,7 +2706,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-078 sha:57ec2b02 src:manual/26-zboyi.md:180 klas:E -->
+<!-- fc id:T-26-078 sha:57ec2b02 src:manual/26-zboyi.md:180 status:no-external-signal -->
 ### T-26-078 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2728,7 +2728,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-079 sha:9c01ac3c src:manual/26-zboyi.md:185 klas:A -->
+<!-- fc id:T-26-079 sha:9c01ac3c src:manual/26-zboyi.md:185 status:verbatim -->
 ### T-26-079 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2773,7 +2773,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-080 sha:73fe2b19 src:manual/26-zboyi.md:186 klas:E -->
+<!-- fc id:T-26-080 sha:73fe2b19 src:manual/26-zboyi.md:186 status:no-external-signal -->
 ### T-26-080 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2795,7 +2795,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-081 sha:0ab8fc51 src:manual/26-zboyi.md:188 klas:E -->
+<!-- fc id:T-26-081 sha:0ab8fc51 src:manual/26-zboyi.md:188 status:no-external-signal -->
 ### T-26-081 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2816,7 +2816,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-082 sha:961c01d3 src:manual/26-zboyi.md:190 klas:F -->
+<!-- fc id:T-26-082 sha:961c01d3 src:manual/26-zboyi.md:190 status:unchecked -->
 ### T-26-082 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2840,7 +2840,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-083 sha:8fb46bd6 src:manual/26-zboyi.md:191 klas:E -->
+<!-- fc id:T-26-083 sha:8fb46bd6 src:manual/26-zboyi.md:191 status:no-external-signal -->
 ### T-26-083 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2864,7 +2864,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-084 sha:f91c02a9 src:manual/26-zboyi.md:192 klas:E -->
+<!-- fc id:T-26-084 sha:f91c02a9 src:manual/26-zboyi.md:192 status:no-external-signal -->
 ### T-26-084 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2888,7 +2888,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-085 sha:24f657dc src:manual/26-zboyi.md:195 klas:C -->
+<!-- fc id:T-26-085 sha:24f657dc src:manual/26-zboyi.md:195 status:named-unreachable -->
 ### T-26-085 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2914,7 +2914,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-086 sha:e442aed3 src:manual/26-zboyi.md:195 klas:A -->
+<!-- fc id:T-26-086 sha:e442aed3 src:manual/26-zboyi.md:195 status:verbatim -->
 ### T-26-086 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2953,7 +2953,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-087 sha:6ebbb02e src:manual/26-zboyi.md:198 klas:F -->
+<!-- fc id:T-26-087 sha:6ebbb02e src:manual/26-zboyi.md:198 status:unchecked -->
 ### T-26-087 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2974,7 +2974,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-088 sha:a6cbcea5 src:manual/26-zboyi.md:200 klas:E -->
+<!-- fc id:T-26-088 sha:a6cbcea5 src:manual/26-zboyi.md:200 status:no-external-signal -->
 ### T-26-088 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2995,7 +2995,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-089 sha:4a9c0d23 src:manual/26-zboyi.md:202 klas:K -->
+<!-- fc id:T-26-089 sha:4a9c0d23 src:manual/26-zboyi.md:202 status:code-context -->
 ### T-26-089 · kod · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3038,7 +3038,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-090 sha:d91724ab src:manual/26-zboyi.md:203 klas:F -->
+<!-- fc id:T-26-090 sha:d91724ab src:manual/26-zboyi.md:203 status:unchecked -->
 ### T-26-090 · kod-ryadok · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3062,7 +3062,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-091 sha:ad7928af src:manual/26-zboyi.md:204 klas:A -->
+<!-- fc id:T-26-091 sha:ad7928af src:manual/26-zboyi.md:204 status:verbatim -->
 ### T-26-091 · kod-ryadok · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3100,7 +3100,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-092 sha:c9de9809 src:manual/26-zboyi.md:207 klas:F -->
+<!-- fc id:T-26-092 sha:c9de9809 src:manual/26-zboyi.md:207 status:unchecked -->
 ### T-26-092 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3122,7 +3122,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-093 sha:56656a17 src:manual/26-zboyi.md:212 klas:E -->
+<!-- fc id:T-26-093 sha:56656a17 src:manual/26-zboyi.md:212 status:no-external-signal -->
 ### T-26-093 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3144,7 +3144,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-094 sha:eb6b2e19 src:manual/26-zboyi.md:212 klas:E -->
+<!-- fc id:T-26-094 sha:eb6b2e19 src:manual/26-zboyi.md:212 status:no-external-signal -->
 ### T-26-094 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3166,7 +3166,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-095 sha:86180e20 src:manual/26-zboyi.md:215 klas:E -->
+<!-- fc id:T-26-095 sha:86180e20 src:manual/26-zboyi.md:215 status:no-external-signal -->
 ### T-26-095 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3188,7 +3188,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-096 sha:819ab93e src:manual/26-zboyi.md:215 klas:E -->
+<!-- fc id:T-26-096 sha:819ab93e src:manual/26-zboyi.md:215 status:no-external-signal -->
 ### T-26-096 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3210,7 +3210,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-097 sha:689cd982 src:manual/26-zboyi.md:218 klas:E -->
+<!-- fc id:T-26-097 sha:689cd982 src:manual/26-zboyi.md:218 status:no-external-signal -->
 ### T-26-097 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3231,7 +3231,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-098 sha:a145945b src:manual/26-zboyi.md:218 klas:E -->
+<!-- fc id:T-26-098 sha:a145945b src:manual/26-zboyi.md:218 status:no-external-signal -->
 ### T-26-098 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3252,7 +3252,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-099 sha:ceaf6d65 src:manual/26-zboyi.md:220 klas:F -->
+<!-- fc id:T-26-099 sha:ceaf6d65 src:manual/26-zboyi.md:220 status:unchecked -->
 ### T-26-099 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3274,7 +3274,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-100 sha:b06bd77e src:manual/26-zboyi.md:225 klas:F -->
+<!-- fc id:T-26-100 sha:b06bd77e src:manual/26-zboyi.md:225 status:unchecked -->
 ### T-26-100 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3296,7 +3296,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-101 sha:a4784398 src:manual/26-zboyi.md:225 klas:A -->
+<!-- fc id:T-26-101 sha:a4784398 src:manual/26-zboyi.md:225 status:verbatim -->
 ### T-26-101 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3324,7 +3324,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-102 sha:64dbf60b src:manual/26-zboyi.md:228 klas:F -->
+<!-- fc id:T-26-102 sha:64dbf60b src:manual/26-zboyi.md:228 status:unchecked -->
 ### T-26-102 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3347,7 +3347,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-103 sha:01cd2bea src:manual/26-zboyi.md:229 klas:E -->
+<!-- fc id:T-26-103 sha:01cd2bea src:manual/26-zboyi.md:229 status:no-external-signal -->
 ### T-26-103 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3370,7 +3370,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-104 sha:81408aec src:manual/26-zboyi.md:232 klas:K -->
+<!-- fc id:T-26-104 sha:81408aec src:manual/26-zboyi.md:232 status:code-context -->
 ### T-26-104 · kod · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3419,7 +3419,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-105 sha:6670ebea src:manual/26-zboyi.md:233 klas:A -->
+<!-- fc id:T-26-105 sha:6670ebea src:manual/26-zboyi.md:233 status:verbatim -->
 ### T-26-105 · kod-ryadok · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3465,7 +3465,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-106 sha:20162ba3 src:manual/26-zboyi.md:234 klas:A -->
+<!-- fc id:T-26-106 sha:20162ba3 src:manual/26-zboyi.md:234 status:verbatim -->
 ### T-26-106 · kod-ryadok · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3511,7 +3511,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-107 sha:9dc04b93 src:manual/26-zboyi.md:237 klas:E -->
+<!-- fc id:T-26-107 sha:9dc04b93 src:manual/26-zboyi.md:237 status:no-external-signal -->
 ### T-26-107 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3534,7 +3534,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-108 sha:2536fa4f src:manual/26-zboyi.md:241 klas:E -->
+<!-- fc id:T-26-108 sha:2536fa4f src:manual/26-zboyi.md:241 status:no-external-signal -->
 ### T-26-108 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3557,7 +3557,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-109 sha:154e3023 src:manual/26-zboyi.md:242 klas:E -->
+<!-- fc id:T-26-109 sha:154e3023 src:manual/26-zboyi.md:242 status:no-external-signal -->
 ### T-26-109 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3580,7 +3580,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-110 sha:23da014b src:manual/26-zboyi.md:246 klas:F -->
+<!-- fc id:T-26-110 sha:23da014b src:manual/26-zboyi.md:246 status:unchecked -->
 ### T-26-110 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3606,7 +3606,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-111 sha:2622940b src:manual/26-zboyi.md:247 klas:F -->
+<!-- fc id:T-26-111 sha:2622940b src:manual/26-zboyi.md:247 status:unchecked -->
 ### T-26-111 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3632,7 +3632,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-112 sha:f5ed97d2 src:manual/26-zboyi.md:248 klas:F -->
+<!-- fc id:T-26-112 sha:f5ed97d2 src:manual/26-zboyi.md:248 status:unchecked -->
 ### T-26-112 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3658,7 +3658,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-113 sha:c012752e src:manual/26-zboyi.md:254 klas:A -->
+<!-- fc id:T-26-113 sha:c012752e src:manual/26-zboyi.md:254 status:verbatim -->
 ### T-26-113 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3697,7 +3697,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-114 sha:0e195791 src:manual/26-zboyi.md:256 klas:A -->
+<!-- fc id:T-26-114 sha:0e195791 src:manual/26-zboyi.md:256 status:verbatim -->
 ### T-26-114 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3732,7 +3732,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-115 sha:a9a4f529 src:manual/26-zboyi.md:258 klas:F -->
+<!-- fc id:T-26-115 sha:a9a4f529 src:manual/26-zboyi.md:258 status:unchecked -->
 ### T-26-115 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3761,7 +3761,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-116 sha:9f6b0ad0 src:manual/26-zboyi.md:259 klas:E -->
+<!-- fc id:T-26-116 sha:9f6b0ad0 src:manual/26-zboyi.md:259 status:no-external-signal -->
 ### T-26-116 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3790,7 +3790,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-117 sha:54fce724 src:manual/26-zboyi.md:261 klas:F -->
+<!-- fc id:T-26-117 sha:54fce724 src:manual/26-zboyi.md:261 status:unchecked -->
 ### T-26-117 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3819,7 +3819,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-118 sha:0699a2f6 src:manual/26-zboyi.md:266 klas:F -->
+<!-- fc id:T-26-118 sha:0699a2f6 src:manual/26-zboyi.md:266 status:unchecked -->
 ### T-26-118 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3841,7 +3841,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-119 sha:45939324 src:manual/26-zboyi.md:269 klas:F -->
+<!-- fc id:T-26-119 sha:45939324 src:manual/26-zboyi.md:269 status:unchecked -->
 ### T-26-119 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3863,7 +3863,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-120 sha:719ceef5 src:manual/26-zboyi.md:270 klas:E -->
+<!-- fc id:T-26-120 sha:719ceef5 src:manual/26-zboyi.md:270 status:no-external-signal -->
 ### T-26-120 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3885,7 +3885,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-121 sha:0d7c5a65 src:manual/26-zboyi.md:272 klas:A -->
+<!-- fc id:T-26-121 sha:0d7c5a65 src:manual/26-zboyi.md:272 status:verbatim -->
 ### T-26-121 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3921,7 +3921,7 @@ Task WDT називає винуватця сам, у рядку `Tasks currentl
 
 ---
 
-<!-- fc id:T-26-122 sha:3995e61f src:manual/26-zboyi.md:274 klas:E -->
+<!-- fc id:T-26-122 sha:3995e61f src:manual/26-zboyi.md:274 status:no-external-signal -->
 ### T-26-122 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3942,7 +3942,7 @@ Interrupt WDT — це майже завжди довгий ISR або довг�
 
 ---
 
-<!-- fc id:T-26-123 sha:339581bb src:manual/26-zboyi.md:276 klas:E -->
+<!-- fc id:T-26-123 sha:339581bb src:manual/26-zboyi.md:276 status:no-external-signal -->
 ### T-26-123 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3963,7 +3963,7 @@ Interrupt WDT — це майже завжди довгий ISR або довг�
 
 ---
 
-<!-- fc id:T-26-124 sha:0bbfc00c src:manual/26-zboyi.md:278 klas:E -->
+<!-- fc id:T-26-124 sha:0bbfc00c src:manual/26-zboyi.md:278 status:no-external-signal -->
 ### T-26-124 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**

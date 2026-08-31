@@ -7,7 +7,6 @@
 
 - nazva: 'T-16-021: Світлодіод із резистором на `GPIO0`, датчик, що тримає'
   zbih: Світлодіод\s+із\s+резистором\s+на
-  klas: C
   dzherelo: ESP32 Boot Mode Selection Guide, Strapping Pins
   shukaty: ESP32 Boot Mode Selection Guide, Strapping Pins
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт
@@ -25,7 +24,6 @@
   look_for: ESP32 Boot Mode Selection Guide, Strapping Pins
 - nazva: 'T-16-005: Він стартує завжди, незалежно від того, що у'
   zbih: Він\s+стартує\s+завжди,\s+незалежно
-  klas: C
   dzherelo: ESP32 boot sequence specification
   shukaty: ESP32 boot sequence specification
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт
@@ -43,7 +41,6 @@
   look_for: ESP32 boot sequence specification
 - nazva: 'T-16-011: Головне практичне: **етапи 2 і 3 живуть у'
   zbih: Головне\s+практичне:\s+\*\*етапи\s+2
-  klas: C
   dzherelo: ESP32 bootloader specification
   shukaty: ESP32 bootloader specification
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт
@@ -63,7 +60,6 @@
   - b8f3d5d1
 - nazva: 'T-16-077: Дивитися треба **найперший** дамп після подачі живлення, а'
   zbih: 'Дивитися\s+треба\s+\*\*найперший\*\*\s+дамп\s+після\s+подачі\s+живлення,\s+а\s+не\s+сотий:'
-  klas: C
   dzherelo: ESP32 GDB debugger guide first dump
   shukaty: ESP32 GDB debugger guide first dump
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт

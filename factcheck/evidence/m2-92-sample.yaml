@@ -9,7 +9,6 @@
 
 - nazva: 'T-D-081: GPIO4 як другий за цінністю біт у boot масці'
   zbih: Другий за цінністю — `0x04`.
-  klas: E
   dzherelo: ''
   cytata: ''
   sposib: Авторське спостереження про діагностичну цінність біту GPIO4 в boot масці; жодне
@@ -29,7 +28,6 @@
   - 82e1a535
 - nazva: 'T-D-042: Код скидання 0xe — EXT_CPU_RESET'
   zbih: '`0xe`\s+·\s+Що\s+сталося\s+→\s+APP\s+CPU\s+скинутий\s+PRO\s+CPU'
-  klas: A
   dzherelo: 'Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)'
   cytata: 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
   sposib: Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
@@ -49,7 +47,6 @@
   - 111c70cc
 - nazva: 'T-02-108: ESP32-C5 з Wi-Fi у двох діапазонах'
   zbih: \*\*ESP32\-C5\*\*\s+—\s+перший\s+у\s+лінійці\s+з\s+Wi\-Fi\s+у\s+двох\s+діапазонах,\s+2\.4\s+і\s+5\s+ГГц
-  klas: C
   dzherelo: Espressif Systems, ESP32-C5 Series Datasheet
   cytata: ''
   sposib: Датащит названо і окреслено, але недоступний у кеші (ls source-cache/ — немає C5),
@@ -69,7 +66,6 @@
   - 18efa8ca
 - nazva: 'T-39-093: ESP32 не бачить 5 ГГц мережі'
   zbih: ESP32 не бачить 5 ГГц — найчастіша причина «мережі немає в списку».
-  klas: A
   dzherelo: 'Espressif Systems, ESP32 Series Datasheet — розділ 1 «Features», Wi-Fi (кеш:
     source-cache/21953a2f-esp32_datasheet_en.pdf)'
   cytata: 'ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip designed with the TSMC
@@ -103,7 +99,6 @@
   - 0e8acf08
 - nazva: 'T-36-120: SPI діагностика — знизити швидкість до 1 МГц'
   zbih: Спробувати\s+вручну\s+\(картка\s+\[К4\]\(\#k\-boot\)\),\s+знизити\s+швидкість,\s+перевірити,\s+що\s+порт\s+не\s+зайнятий\s+відкритим\s+монітор|\*\*Знизити\s+швидкість\*\*:\s+`\-\-baud\s+115200`,\s+далі\s+`\-\-no\-stub`\.\s+3|Знизити\s+швидкість:\s+`\-\-baud\s+115200`,\s+далі\s+`\-\-no\-stub`\.\s+3|\*\*Скоротити\s+проводи\*\*,\s+знизити\s+швидкість\s+до\s+100\s+кГц\.\s+6
-  klas: E
   dzherelo: ''
   cytata: ''
   sposib: Практична рекомендація діагностики. Пошук у ESP-IDF SPI документації та датащиті
@@ -133,7 +128,6 @@
     (риски таблиці) і не чіпав нічого.'
 - nazva: 'T-07-063: Піни GPIO6-GPIO11 під''єднані до флешу в модулі'
   zbih: \[\[classic\]\]\s+`GPIO6`,\s+`GPIO7`,\s+`GPIO8`,\s+`GPIO9`,\s+`GPIO10`,\s+`GPIO11`\s+з'єднані\s+з\s+мікросхемою\s+флешу\s+всередині\s+моду
-  klas: A
   dzherelo: 'Espressif Systems, ESP32-WROOM-32E / ESP32-WROOM-32UE Datasheet v1.7, розділ
     2 «Pin Definitions», виноска 2 до таблиці Pin Description (кеш: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf)'
   cytata: 'Pins GPIO6 to GPIO11 on the ESP32-D0WD-V3/ESP32-D0WDR2-V3 chip are connected to
@@ -167,7 +161,6 @@
   - c3ef5d6f
 - nazva: 'T-E-110: Промислова шина потребує трансивера на 3.3 В'
   zbih: Промислова\s+шина,\s+потрібен\s+трансивер\s+\*\*на\s+3\.3\s+В\*\*\s+\(розділ\s+38\)
-  klas: C
   dzherelo: ISO 11898-2 та даташит трансивера (SN65HVD230, MCP2551) — робоча напруга
   cytata: ''
   sposib: Пошук у ESP32 датащиті та промислових стандартах (RS-485, Modbus). ESP32 датащит
@@ -197,7 +190,6 @@
   - dfa3ce29
 - nazva: 'T-K06-024: Код скидання 0x10 — RTCWDT_RTC_RESET'
   zbih: '`0x10`\s+·\s+Що\s+сталося\s+→\s+RTC\s+watchdog\s+скинув\s+усе,\s+разом\s+з\s+RTC'
-  klas: A
   dzherelo: 'Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)'
   cytata: 0x10 | RTCWDT_RTC_RESET | RTC watchdog скинув усе
   sposib: Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
@@ -215,7 +207,6 @@
     попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
 - nazva: 'T-D-022: Код скидання 0x7 — TG0WDT_SYS_RESET'
   zbih: Далі\s+за\s+`rst:`\s+\(картка\s+\[К6\]\(\#k\-bootlog\)\):\s+`0xf`\s+—\s+живлення\s+\(розділ\s+06\);\s+`0xc`\s+—\s+паніка\s+\(розділ\s+26\);\s+`0x7`/`0x8|`0x7`\s+·\s+Що\s+сталося\s+→\s+спрацював\s+watchdog\s+таймера\s+0|`0x7`\s+·\s+Що\s+сталося\s+→\s+watchdog\s+таймера\s+0
-  klas: A
   dzherelo: 'Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)'
   cytata: 0x7 | TG0WDT_SYS_RESET | watchdog таймера 0
   sposib: Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
@@ -233,7 +224,6 @@
     2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
 - nazva: 'T-08-048: ESP32-C3 SuperMini обмежене 400 КБ пам''яті'
   zbih: Для простого вузла — оптимально; для чогось більшого впирається в 400 КБ.
-  klas: A
   dzherelo: Espressif Systems, ESP32-C3 Series Datasheet (source-cache/esp32c3_datasheet_en.pdf),
     розділ Memory Overview або Pin Definitions
   cytata: 400 КБ SRAM
@@ -253,7 +243,6 @@
   - 729e1f1d
 - nazva: 'T-D-030: Код скидання 0xa — INTRUSION_RESET'
   zbih: '`0xa`\s+·\s+Що\s+сталося\s+→\s+детектор\s+втручання'
-  klas: A
   dzherelo: 'Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)'
   cytata: 0xa | INTRUSION_RESET | детектор втручання
   sposib: Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
@@ -273,7 +262,6 @@
   - 47e8e5d3
 - nazva: 'T-30-056: Розподіл пам''яті: 16 КБ і більше — PSRAM'
   zbih: \|\s+16\s+КБ\s+і\s+більше\s+\|\s+PSRAM\s+\|
-  klas: A
   dzherelo: Espressif Systems, ESP32 Series Datasheet (source-cache/21953a2f-esp32_datasheet_en.pdf),
     розділ Memory Configuration або Memory Overview
   cytata: 16 КБ і більше → PSRAM

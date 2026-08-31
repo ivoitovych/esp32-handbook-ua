@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/14-shvydki-shlyakhy.md`
 
-Одиниць твердження: **78**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **78**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-14-001 sha:ad34177f src:manual/14-shvydki-shlyakhy.md:3 klas:F -->
+<!-- fc id:T-14-001 sha:ad34177f src:manual/14-shvydki-shlyakhy.md:3 status:unchecked -->
 ### T-14-001 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-14-002 sha:6a3a2202 src:manual/14-shvydki-shlyakhy.md:3 klas:E -->
+<!-- fc id:T-14-002 sha:6a3a2202 src:manual/14-shvydki-shlyakhy.md:3 status:no-external-signal -->
 ### T-14-002 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-14-003 sha:e18ace7b src:manual/14-shvydki-shlyakhy.md:7 klas:E -->
+<!-- fc id:T-14-003 sha:e18ace7b src:manual/14-shvydki-shlyakhy.md:7 status:no-external-signal -->
 ### T-14-003 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -76,7 +76,7 @@
 
 ---
 
-<!-- fc id:T-14-004 sha:17b87182 src:manual/14-shvydki-shlyakhy.md:12 klas:E -->
+<!-- fc id:T-14-004 sha:17b87182 src:manual/14-shvydki-shlyakhy.md:12 status:no-external-signal -->
 ### T-14-004 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -99,7 +99,7 @@
 
 ---
 
-<!-- fc id:T-14-005 sha:46d93393 src:manual/14-shvydki-shlyakhy.md:12 klas:A -->
+<!-- fc id:T-14-005 sha:46d93393 src:manual/14-shvydki-shlyakhy.md:12 status:verbatim -->
 ### T-14-005 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -128,7 +128,7 @@
 
 ---
 
-<!-- fc id:T-14-006 sha:86881aef src:manual/14-shvydki-shlyakhy.md:16 klas:K -->
+<!-- fc id:T-14-006 sha:86881aef src:manual/14-shvydki-shlyakhy.md:16 status:code-context -->
 ### T-14-006 · kod · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -165,7 +165,7 @@ while True:
 
 ---
 
-<!-- fc id:T-14-007 sha:87c0f460 src:manual/14-shvydki-shlyakhy.md:22 klas:F -->
+<!-- fc id:T-14-007 sha:87c0f460 src:manual/14-shvydki-shlyakhy.md:22 status:unchecked -->
 ### T-14-007 · kod-ryadok · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -190,7 +190,7 @@ while True:
 
 ---
 
-<!-- fc id:T-14-008 sha:ab8877c0 src:manual/14-shvydki-shlyakhy.md:23 klas:F -->
+<!-- fc id:T-14-008 sha:ab8877c0 src:manual/14-shvydki-shlyakhy.md:23 status:unchecked -->
 ### T-14-008 · kod-ryadok · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -215,7 +215,7 @@ while True:
 
 ---
 
-<!-- fc id:T-14-009 sha:3ad408bc src:manual/14-shvydki-shlyakhy.md:26 klas:E -->
+<!-- fc id:T-14-009 sha:3ad408bc src:manual/14-shvydki-shlyakhy.md:26 status:no-external-signal -->
 ### T-14-009 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -240,7 +240,7 @@ Python, поріг входу мінімальний.
 
 ---
 
-<!-- fc id:T-14-010 sha:caec47f2 src:manual/14-shvydki-shlyakhy.md:27 klas:E -->
+<!-- fc id:T-14-010 sha:caec47f2 src:manual/14-shvydki-shlyakhy.md:27 status:no-external-signal -->
 ### T-14-010 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -265,7 +265,7 @@ Python, поріг входу мінімальний.
 
 ---
 
-<!-- fc id:T-14-011 sha:c0862edf src:manual/14-shvydki-shlyakhy.md:29 klas:E -->
+<!-- fc id:T-14-011 sha:c0862edf src:manual/14-shvydki-shlyakhy.md:29 status:no-external-signal -->
 ### T-14-011 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -290,7 +290,7 @@ Python, поріг входу мінімальний.
 
 ---
 
-<!-- fc id:T-14-012 sha:6d27dec2 src:manual/14-shvydki-shlyakhy.md:32 klas:E -->
+<!-- fc id:T-14-012 sha:6d27dec2 src:manual/14-shvydki-shlyakhy.md:32 status:no-external-signal -->
 ### T-14-012 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -315,7 +315,7 @@ Python, поріг входу мінімальний.
 
 ---
 
-<!-- fc id:T-14-013 sha:cbf60457 src:manual/14-shvydki-shlyakhy.md:33 klas:C -->
+<!-- fc id:T-14-013 sha:cbf60457 src:manual/14-shvydki-shlyakhy.md:33 status:named-unreachable -->
 ### T-14-013 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -344,7 +344,7 @@ Python, поріг входу мінімальний.
 
 ---
 
-<!-- fc id:T-14-014 sha:33e4f83b src:manual/14-shvydki-shlyakhy.md:34 klas:E -->
+<!-- fc id:T-14-014 sha:33e4f83b src:manual/14-shvydki-shlyakhy.md:34 status:no-external-signal -->
 ### T-14-014 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -369,7 +369,7 @@ Python, поріг входу мінімальний.
 
 ---
 
-<!-- fc id:T-14-015 sha:6efff622 src:manual/14-shvydki-shlyakhy.md:35 klas:A -->
+<!-- fc id:T-14-015 sha:6efff622 src:manual/14-shvydki-shlyakhy.md:35 status:verbatim -->
 ### T-14-015 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -400,7 +400,7 @@ Python, поріг входу мінімальний.
 
 ---
 
-<!-- fc id:T-14-016 sha:d53cd436 src:manual/14-shvydki-shlyakhy.md:38 klas:E -->
+<!-- fc id:T-14-016 sha:d53cd436 src:manual/14-shvydki-shlyakhy.md:38 status:no-external-signal -->
 ### T-14-016 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -423,7 +423,7 @@ Python, поріг входу мінімальний.
 
 ---
 
-<!-- fc id:T-14-017 sha:7f9a1d85 src:manual/14-shvydki-shlyakhy.md:43 klas:F -->
+<!-- fc id:T-14-017 sha:7f9a1d85 src:manual/14-shvydki-shlyakhy.md:43 status:unchecked -->
 ### T-14-017 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -449,7 +449,7 @@ Python, поріг входу мінімальний.
 
 ---
 
-<!-- fc id:T-14-018 sha:84991e51 src:manual/14-shvydki-shlyakhy.md:44 klas:E -->
+<!-- fc id:T-14-018 sha:84991e51 src:manual/14-shvydki-shlyakhy.md:44 status:no-external-signal -->
 ### T-14-018 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -475,7 +475,7 @@ Python, поріг входу мінімальний.
 
 ---
 
-<!-- fc id:T-14-019 sha:71e3e394 src:manual/14-shvydki-shlyakhy.md:51 klas:E -->
+<!-- fc id:T-14-019 sha:71e3e394 src:manual/14-shvydki-shlyakhy.md:51 status:no-external-signal -->
 ### T-14-019 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -497,7 +497,7 @@ Python, поріг входу мінімальний.
 
 ---
 
-<!-- fc id:T-14-020 sha:69d25754 src:manual/14-shvydki-shlyakhy.md:51 klas:F -->
+<!-- fc id:T-14-020 sha:69d25754 src:manual/14-shvydki-shlyakhy.md:51 status:unchecked -->
 ### T-14-020 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -519,7 +519,7 @@ Python, поріг входу мінімальний.
 
 ---
 
-<!-- fc id:T-14-021 sha:99a91753 src:manual/14-shvydki-shlyakhy.md:54 klas:K -->
+<!-- fc id:T-14-021 sha:99a91753 src:manual/14-shvydki-shlyakhy.md:54 status:code-context -->
 ### T-14-021 · kod · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -588,7 +588,7 @@ sensor:
 
 ---
 
-<!-- fc id:T-14-022 sha:2923fcd0 src:manual/14-shvydki-shlyakhy.md:75 klas:F -->
+<!-- fc id:T-14-022 sha:2923fcd0 src:manual/14-shvydki-shlyakhy.md:75 status:unchecked -->
 ### T-14-022 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -610,7 +610,7 @@ sensor:
 
 ---
 
-<!-- fc id:T-14-023 sha:b782166d src:manual/14-shvydki-shlyakhy.md:78 klas:E -->
+<!-- fc id:T-14-023 sha:b782166d src:manual/14-shvydki-shlyakhy.md:78 status:no-external-signal -->
 ### T-14-023 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -634,7 +634,7 @@ OTA, веб-інтерфейс, відновлення зв'язку, інтег
 
 ---
 
-<!-- fc id:T-14-024 sha:8cb0966b src:manual/14-shvydki-shlyakhy.md:79 klas:F -->
+<!-- fc id:T-14-024 sha:8cb0966b src:manual/14-shvydki-shlyakhy.md:79 status:unchecked -->
 ### T-14-024 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -658,7 +658,7 @@ OTA, веб-інтерфейс, відновлення зв'язку, інтег
 
 ---
 
-<!-- fc id:T-14-025 sha:685d749e src:manual/14-shvydki-shlyakhy.md:80 klas:E -->
+<!-- fc id:T-14-025 sha:685d749e src:manual/14-shvydki-shlyakhy.md:80 status:no-external-signal -->
 ### T-14-025 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -682,7 +682,7 @@ OTA, веб-інтерфейс, відновлення зв'язку, інтег
 
 ---
 
-<!-- fc id:T-14-026 sha:de8345e4 src:manual/14-shvydki-shlyakhy.md:83 klas:E -->
+<!-- fc id:T-14-026 sha:de8345e4 src:manual/14-shvydki-shlyakhy.md:83 status:no-external-signal -->
 ### T-14-026 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -706,7 +706,7 @@ OTA, веб-інтерфейс, відновлення зв'язку, інтег
 
 ---
 
-<!-- fc id:T-14-027 sha:47ba3a6b src:manual/14-shvydki-shlyakhy.md:85 klas:E -->
+<!-- fc id:T-14-027 sha:47ba3a6b src:manual/14-shvydki-shlyakhy.md:85 status:no-external-signal -->
 ### T-14-027 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -730,7 +730,7 @@ OTA, веб-інтерфейс, відновлення зв'язку, інтег
 
 ---
 
-<!-- fc id:T-14-028 sha:71b7eb27 src:manual/14-shvydki-shlyakhy.md:85 klas:E -->
+<!-- fc id:T-14-028 sha:71b7eb27 src:manual/14-shvydki-shlyakhy.md:85 status:no-external-signal -->
 ### T-14-028 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -754,7 +754,7 @@ OTA, веб-інтерфейс, відновлення зв'язку, інтег
 
 ---
 
-<!-- fc id:T-14-029 sha:653cdf1d src:manual/14-shvydki-shlyakhy.md:88 klas:E -->
+<!-- fc id:T-14-029 sha:653cdf1d src:manual/14-shvydki-shlyakhy.md:88 status:no-external-signal -->
 ### T-14-029 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -778,7 +778,7 @@ OTA, веб-інтерфейс, відновлення зв'язку, інтег
 
 ---
 
-<!-- fc id:T-14-030 sha:a435a48e src:manual/14-shvydki-shlyakhy.md:89 klas:E -->
+<!-- fc id:T-14-030 sha:a435a48e src:manual/14-shvydki-shlyakhy.md:89 status:no-external-signal -->
 ### T-14-030 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -802,7 +802,7 @@ OTA, веб-інтерфейс, відновлення зв'язку, інтег
 
 ---
 
-<!-- fc id:T-14-031 sha:7abc757d src:manual/14-shvydki-shlyakhy.md:90 klas:E -->
+<!-- fc id:T-14-031 sha:7abc757d src:manual/14-shvydki-shlyakhy.md:90 status:no-external-signal -->
 ### T-14-031 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -826,7 +826,7 @@ OTA, веб-інтерфейс, відновлення зв'язку, інтег
 
 ---
 
-<!-- fc id:T-14-032 sha:9ab8dfb9 src:manual/14-shvydki-shlyakhy.md:94 klas:F -->
+<!-- fc id:T-14-032 sha:9ab8dfb9 src:manual/14-shvydki-shlyakhy.md:94 status:unchecked -->
 ### T-14-032 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -851,7 +851,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-033 sha:b894f3d8 src:manual/14-shvydki-shlyakhy.md:94 klas:E -->
+<!-- fc id:T-14-033 sha:b894f3d8 src:manual/14-shvydki-shlyakhy.md:94 status:no-external-signal -->
 ### T-14-033 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -876,7 +876,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-034 sha:e47c8be6 src:manual/14-shvydki-shlyakhy.md:96 klas:E -->
+<!-- fc id:T-14-034 sha:e47c8be6 src:manual/14-shvydki-shlyakhy.md:96 status:no-external-signal -->
 ### T-14-034 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -901,7 +901,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-035 sha:63afc27e src:manual/14-shvydki-shlyakhy.md:99 klas:E -->
+<!-- fc id:T-14-035 sha:63afc27e src:manual/14-shvydki-shlyakhy.md:99 status:no-external-signal -->
 ### T-14-035 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -924,7 +924,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-036 sha:fb98627c src:manual/14-shvydki-shlyakhy.md:105 klas:F -->
+<!-- fc id:T-14-036 sha:fb98627c src:manual/14-shvydki-shlyakhy.md:105 status:unchecked -->
 ### T-14-036 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -946,7 +946,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-037 sha:543d1e62 src:manual/14-shvydki-shlyakhy.md:105 klas:F -->
+<!-- fc id:T-14-037 sha:543d1e62 src:manual/14-shvydki-shlyakhy.md:105 status:unchecked -->
 ### T-14-037 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -968,7 +968,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-038 sha:2d9faacb src:manual/14-shvydki-shlyakhy.md:108 klas:E -->
+<!-- fc id:T-14-038 sha:2d9faacb src:manual/14-shvydki-shlyakhy.md:108 status:no-external-signal -->
 ### T-14-038 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -992,7 +992,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-039 sha:19c5de9b src:manual/14-shvydki-shlyakhy.md:108 klas:E -->
+<!-- fc id:T-14-039 sha:19c5de9b src:manual/14-shvydki-shlyakhy.md:108 status:no-external-signal -->
 ### T-14-039 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1016,7 +1016,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-040 sha:9bd19f82 src:manual/14-shvydki-shlyakhy.md:109 klas:E -->
+<!-- fc id:T-14-040 sha:9bd19f82 src:manual/14-shvydki-shlyakhy.md:109 status:no-external-signal -->
 ### T-14-040 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1040,7 +1040,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-041 sha:d1722e82 src:manual/14-shvydki-shlyakhy.md:110 klas:E -->
+<!-- fc id:T-14-041 sha:d1722e82 src:manual/14-shvydki-shlyakhy.md:110 status:no-external-signal -->
 ### T-14-041 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1064,7 +1064,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-042 sha:cc4a8b83 src:manual/14-shvydki-shlyakhy.md:113 klas:E -->
+<!-- fc id:T-14-042 sha:cc4a8b83 src:manual/14-shvydki-shlyakhy.md:113 status:no-external-signal -->
 ### T-14-042 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1089,7 +1089,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-043 sha:ff01882e src:manual/14-shvydki-shlyakhy.md:113 klas:E -->
+<!-- fc id:T-14-043 sha:ff01882e src:manual/14-shvydki-shlyakhy.md:113 status:no-external-signal -->
 ### T-14-043 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1114,7 +1114,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-044 sha:5b441989 src:manual/14-shvydki-shlyakhy.md:116 klas:E -->
+<!-- fc id:T-14-044 sha:5b441989 src:manual/14-shvydki-shlyakhy.md:116 status:no-external-signal -->
 ### T-14-044 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1139,7 +1139,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-045 sha:52c7bb5d src:manual/14-shvydki-shlyakhy.md:119 klas:E -->
+<!-- fc id:T-14-045 sha:52c7bb5d src:manual/14-shvydki-shlyakhy.md:119 status:no-external-signal -->
 ### T-14-045 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1161,7 +1161,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-046 sha:52f75b48 src:manual/14-shvydki-shlyakhy.md:123 klas:E -->
+<!-- fc id:T-14-046 sha:52f75b48 src:manual/14-shvydki-shlyakhy.md:123 status:no-external-signal -->
 ### T-14-046 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1185,7 +1185,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-047 sha:dc4f1230 src:manual/14-shvydki-shlyakhy.md:125 klas:E -->
+<!-- fc id:T-14-047 sha:dc4f1230 src:manual/14-shvydki-shlyakhy.md:125 status:no-external-signal -->
 ### T-14-047 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1209,7 +1209,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-048 sha:c2a7e7c2 src:manual/14-shvydki-shlyakhy.md:127 klas:E -->
+<!-- fc id:T-14-048 sha:c2a7e7c2 src:manual/14-shvydki-shlyakhy.md:127 status:no-external-signal -->
 ### T-14-048 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1231,7 +1231,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-049 sha:d2d88463 src:manual/14-shvydki-shlyakhy.md:132 klas:F -->
+<!-- fc id:T-14-049 sha:d2d88463 src:manual/14-shvydki-shlyakhy.md:132 status:unchecked -->
 ### T-14-049 · tablycya-shapka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1261,7 +1261,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-050 sha:233987f3 src:manual/14-shvydki-shlyakhy.md:134 klas:F -->
+<!-- fc id:T-14-050 sha:233987f3 src:manual/14-shvydki-shlyakhy.md:134 status:unchecked -->
 ### T-14-050 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1297,7 +1297,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-051 sha:3836b58a src:manual/14-shvydki-shlyakhy.md:134 klas:F -->
+<!-- fc id:T-14-051 sha:3836b58a src:manual/14-shvydki-shlyakhy.md:134 status:unchecked -->
 ### T-14-051 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1333,7 +1333,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-052 sha:cf48c3b8 src:manual/14-shvydki-shlyakhy.md:134 klas:E -->
+<!-- fc id:T-14-052 sha:cf48c3b8 src:manual/14-shvydki-shlyakhy.md:134 status:no-external-signal -->
 ### T-14-052 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1369,7 +1369,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-053 sha:99a6d4d3 src:manual/14-shvydki-shlyakhy.md:135 klas:A -->
+<!-- fc id:T-14-053 sha:99a6d4d3 src:manual/14-shvydki-shlyakhy.md:135 status:verbatim -->
 ### T-14-053 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1411,7 +1411,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-054 sha:ef3faf6d src:manual/14-shvydki-shlyakhy.md:135 klas:F -->
+<!-- fc id:T-14-054 sha:ef3faf6d src:manual/14-shvydki-shlyakhy.md:135 status:unchecked -->
 ### T-14-054 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1447,7 +1447,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-055 sha:5f1707ed src:manual/14-shvydki-shlyakhy.md:135 klas:E -->
+<!-- fc id:T-14-055 sha:5f1707ed src:manual/14-shvydki-shlyakhy.md:135 status:no-external-signal -->
 ### T-14-055 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1483,7 +1483,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-056 sha:63f8eebe src:manual/14-shvydki-shlyakhy.md:136 klas:F -->
+<!-- fc id:T-14-056 sha:63f8eebe src:manual/14-shvydki-shlyakhy.md:136 status:unchecked -->
 ### T-14-056 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1519,7 +1519,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-057 sha:93c7a8e9 src:manual/14-shvydki-shlyakhy.md:136 klas:F -->
+<!-- fc id:T-14-057 sha:93c7a8e9 src:manual/14-shvydki-shlyakhy.md:136 status:unchecked -->
 ### T-14-057 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1555,7 +1555,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-058 sha:2089ffc0 src:manual/14-shvydki-shlyakhy.md:136 klas:E -->
+<!-- fc id:T-14-058 sha:2089ffc0 src:manual/14-shvydki-shlyakhy.md:136 status:no-external-signal -->
 ### T-14-058 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1591,7 +1591,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-059 sha:25f1968d src:manual/14-shvydki-shlyakhy.md:137 klas:F -->
+<!-- fc id:T-14-059 sha:25f1968d src:manual/14-shvydki-shlyakhy.md:137 status:unchecked -->
 ### T-14-059 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1627,7 +1627,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-060 sha:1e31acd8 src:manual/14-shvydki-shlyakhy.md:137 klas:F -->
+<!-- fc id:T-14-060 sha:1e31acd8 src:manual/14-shvydki-shlyakhy.md:137 status:unchecked -->
 ### T-14-060 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1663,7 +1663,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-061 sha:e8aba03d src:manual/14-shvydki-shlyakhy.md:138 klas:F -->
+<!-- fc id:T-14-061 sha:e8aba03d src:manual/14-shvydki-shlyakhy.md:138 status:unchecked -->
 ### T-14-061 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1699,7 +1699,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-062 sha:503f2360 src:manual/14-shvydki-shlyakhy.md:138 klas:F -->
+<!-- fc id:T-14-062 sha:503f2360 src:manual/14-shvydki-shlyakhy.md:138 status:unchecked -->
 ### T-14-062 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1735,7 +1735,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-063 sha:2898f309 src:manual/14-shvydki-shlyakhy.md:138 klas:E -->
+<!-- fc id:T-14-063 sha:2898f309 src:manual/14-shvydki-shlyakhy.md:138 status:no-external-signal -->
 ### T-14-063 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1771,7 +1771,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-064 sha:b986d515 src:manual/14-shvydki-shlyakhy.md:139 klas:F -->
+<!-- fc id:T-14-064 sha:b986d515 src:manual/14-shvydki-shlyakhy.md:139 status:unchecked -->
 ### T-14-064 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1807,7 +1807,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-065 sha:608d92b3 src:manual/14-shvydki-shlyakhy.md:139 klas:F -->
+<!-- fc id:T-14-065 sha:608d92b3 src:manual/14-shvydki-shlyakhy.md:139 status:unchecked -->
 ### T-14-065 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1843,7 +1843,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-066 sha:9d4bace0 src:manual/14-shvydki-shlyakhy.md:139 klas:E -->
+<!-- fc id:T-14-066 sha:9d4bace0 src:manual/14-shvydki-shlyakhy.md:139 status:no-external-signal -->
 ### T-14-066 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1879,7 +1879,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-067 sha:f53c15e6 src:manual/14-shvydki-shlyakhy.md:140 klas:F -->
+<!-- fc id:T-14-067 sha:f53c15e6 src:manual/14-shvydki-shlyakhy.md:140 status:unchecked -->
 ### T-14-067 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1915,7 +1915,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-068 sha:f376f109 src:manual/14-shvydki-shlyakhy.md:140 klas:F -->
+<!-- fc id:T-14-068 sha:f376f109 src:manual/14-shvydki-shlyakhy.md:140 status:unchecked -->
 ### T-14-068 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1951,7 +1951,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-069 sha:d07ec4b7 src:manual/14-shvydki-shlyakhy.md:140 klas:E -->
+<!-- fc id:T-14-069 sha:d07ec4b7 src:manual/14-shvydki-shlyakhy.md:140 status:no-external-signal -->
 ### T-14-069 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1987,7 +1987,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-070 sha:d741a614 src:manual/14-shvydki-shlyakhy.md:144 klas:F -->
+<!-- fc id:T-14-070 sha:d741a614 src:manual/14-shvydki-shlyakhy.md:144 status:unchecked -->
 ### T-14-070 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -2009,7 +2009,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-071 sha:cdbeaffd src:manual/14-shvydki-shlyakhy.md:147 klas:A -->
+<!-- fc id:T-14-071 sha:cdbeaffd src:manual/14-shvydki-shlyakhy.md:147 status:verbatim -->
 ### T-14-071 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -2039,7 +2039,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-072 sha:30956955 src:manual/14-shvydki-shlyakhy.md:150 klas:F -->
+<!-- fc id:T-14-072 sha:30956955 src:manual/14-shvydki-shlyakhy.md:150 status:unchecked -->
 ### T-14-072 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -2061,7 +2061,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-073 sha:685ce660 src:manual/14-shvydki-shlyakhy.md:153 klas:F -->
+<!-- fc id:T-14-073 sha:685ce660 src:manual/14-shvydki-shlyakhy.md:153 status:unchecked -->
 ### T-14-073 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -2083,7 +2083,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-074 sha:088ba076 src:manual/14-shvydki-shlyakhy.md:156 klas:F -->
+<!-- fc id:T-14-074 sha:088ba076 src:manual/14-shvydki-shlyakhy.md:156 status:unchecked -->
 ### T-14-074 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -2105,7 +2105,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-075 sha:6e8bb449 src:manual/14-shvydki-shlyakhy.md:159 klas:F -->
+<!-- fc id:T-14-075 sha:6e8bb449 src:manual/14-shvydki-shlyakhy.md:159 status:unchecked -->
 ### T-14-075 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -2128,7 +2128,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-076 sha:c0760850 src:manual/14-shvydki-shlyakhy.md:165 klas:F -->
+<!-- fc id:T-14-076 sha:c0760850 src:manual/14-shvydki-shlyakhy.md:165 status:unchecked -->
 ### T-14-076 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -2150,7 +2150,7 @@ MicroPython — найшвидший спосіб з'ясувати, як пов
 
 ---
 
-<!-- fc id:T-14-077 sha:b61fa59d src:manual/14-shvydki-shlyakhy.md:168 klas:F -->
+<!-- fc id:T-14-077 sha:b61fa59d src:manual/14-shvydki-shlyakhy.md:168 status:unchecked -->
 ### T-14-077 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -2172,7 +2172,7 @@ ESPHome дає працюючий датчик із OTA за десять хви
 
 ---
 
-<!-- fc id:T-14-078 sha:9f505a28 src:manual/14-shvydki-shlyakhy.md:171 klas:E -->
+<!-- fc id:T-14-078 sha:9f505a28 src:manual/14-shvydki-shlyakhy.md:171 status:no-external-signal -->
 ### T-14-078 · proza · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**

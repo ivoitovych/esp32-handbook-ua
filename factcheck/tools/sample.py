@@ -69,7 +69,7 @@ NASINNYA = 20260826
 
 RE_ZAHOLOVOK = re.compile(
     r"<!-- fc id:(?P<id>[\w-]+) sha:(?P<sha>\w+) src:(?P<src>[^\s]+) "
-    r"klas:(?P<klas>\w+) -->")
+    r"status:(?P<status>[\w-]+) -->")
 RE_CYTATA = re.compile(r"^> (?P<t>.+)$", re.M)
 
 

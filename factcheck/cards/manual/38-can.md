@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/38-can.md`
 
-Одиниць твердження: **87**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **87**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-38-001 sha:43cfd5fe src:manual/38-can.md:3 klas:F -->
+<!-- fc id:T-38-001 sha:43cfd5fe src:manual/38-can.md:3 status:unchecked -->
 ### T-38-001 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@ CAN — шина, придумана для автомобілів і прижи
 
 ---
 
-<!-- fc id:T-38-002 sha:1bb62584 src:manual/38-can.md:7 klas:A -->
+<!-- fc id:T-38-002 sha:1bb62584 src:manual/38-can.md:7 status:verbatim -->
 ### T-38-002 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -63,7 +63,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-003 sha:6c91cd94 src:manual/38-can.md:8 klas:E -->
+<!-- fc id:T-38-003 sha:6c91cd94 src:manual/38-can.md:8 status:no-external-signal -->
 ### T-38-003 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -86,7 +86,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-004 sha:71e4cf88 src:manual/38-can.md:11 klas:F -->
+<!-- fc id:T-38-004 sha:71e4cf88 src:manual/38-can.md:11 status:unchecked -->
 ### T-38-004 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -107,7 +107,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-005 sha:f246f4e0 src:manual/38-can.md:15 klas:E -->
+<!-- fc id:T-38-005 sha:f246f4e0 src:manual/38-can.md:15 status:no-external-signal -->
 ### T-38-005 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -128,7 +128,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-006 sha:0fcbdb7a src:manual/38-can.md:17 klas:E -->
+<!-- fc id:T-38-006 sha:0fcbdb7a src:manual/38-can.md:17 status:no-external-signal -->
 ### T-38-006 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -151,7 +151,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-007 sha:c4f0624c src:manual/38-can.md:18 klas:E -->
+<!-- fc id:T-38-007 sha:c4f0624c src:manual/38-can.md:18 status:no-external-signal -->
 ### T-38-007 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -174,7 +174,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-008 sha:ec4cf48c src:manual/38-can.md:21 klas:E -->
+<!-- fc id:T-38-008 sha:ec4cf48c src:manual/38-can.md:21 status:no-external-signal -->
 ### T-38-008 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -198,7 +198,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-009 sha:e1ac39ed src:manual/38-can.md:23 klas:E -->
+<!-- fc id:T-38-009 sha:e1ac39ed src:manual/38-can.md:23 status:no-external-signal -->
 ### T-38-009 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -222,7 +222,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-010 sha:ec599eec src:manual/38-can.md:26 klas:E -->
+<!-- fc id:T-38-010 sha:ec599eec src:manual/38-can.md:26 status:no-external-signal -->
 ### T-38-010 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -244,7 +244,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-011 sha:b3af54e7 src:manual/38-can.md:30 klas:F -->
+<!-- fc id:T-38-011 sha:b3af54e7 src:manual/38-can.md:30 status:unchecked -->
 ### T-38-011 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -269,7 +269,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-012 sha:b18418da src:manual/38-can.md:31 klas:C -->
+<!-- fc id:T-38-012 sha:b18418da src:manual/38-can.md:31 status:named-unreachable -->
 ### T-38-012 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -297,7 +297,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-013 sha:4ce022e0 src:manual/38-can.md:32 klas:E -->
+<!-- fc id:T-38-013 sha:4ce022e0 src:manual/38-can.md:32 status:no-external-signal -->
 ### T-38-013 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -322,7 +322,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-014 sha:8a195e9b src:manual/38-can.md:35 klas:E -->
+<!-- fc id:T-38-014 sha:8a195e9b src:manual/38-can.md:35 status:no-external-signal -->
 ### T-38-014 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -345,7 +345,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-015 sha:edc9bb26 src:manual/38-can.md:35 klas:E -->
+<!-- fc id:T-38-015 sha:edc9bb26 src:manual/38-can.md:35 status:no-external-signal -->
 ### T-38-015 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -368,7 +368,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-016 sha:21c3981f src:manual/38-can.md:41 klas:A -->
+<!-- fc id:T-38-016 sha:21c3981f src:manual/38-can.md:41 status:verbatim -->
 ### T-38-016 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -399,7 +399,7 @@ ESP32 має контролер, але **не має трансивера**. П
 
 ---
 
-<!-- fc id:T-38-017 sha:fdc80f12 src:manual/38-can.md:41 klas:C -->
+<!-- fc id:T-38-017 sha:fdc80f12 src:manual/38-can.md:41 status:named-unreachable -->
 ### T-38-017 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -425,7 +425,7 @@ ESP32 має контролер, але **не має трансивера**. П
 
 ---
 
-<!-- fc id:T-38-018 sha:9de47991 src:manual/38-can.md:45 klas:A -->
+<!-- fc id:T-38-018 sha:9de47991 src:manual/38-can.md:45 status:verbatim -->
 ### T-38-018 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -458,7 +458,7 @@ ESP32 має контролер, але **не має трансивера**. П
 
 ---
 
-<!-- fc id:T-38-019 sha:63df3d04 src:manual/38-can.md:45 klas:C -->
+<!-- fc id:T-38-019 sha:63df3d04 src:manual/38-can.md:45 status:named-unreachable -->
 ### T-38-019 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -486,7 +486,7 @@ ESP32 має контролер, але **не має трансивера**. П
 
 ---
 
-<!-- fc id:T-38-020 sha:217fedf7 src:manual/38-can.md:46 klas:C -->
+<!-- fc id:T-38-020 sha:217fedf7 src:manual/38-can.md:46 status:named-unreachable -->
 ### T-38-020 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -514,7 +514,7 @@ ESP32 має контролер, але **не має трансивера**. П
 
 ---
 
-<!-- fc id:T-38-021 sha:473fc5ed src:manual/38-can.md:49 klas:F -->
+<!-- fc id:T-38-021 sha:473fc5ed src:manual/38-can.md:49 status:unchecked -->
 ### T-38-021 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -538,7 +538,7 @@ ESP32 має контролер, але **не має трансивера**. П
 
 ---
 
-<!-- fc id:T-38-022 sha:3874c899 src:manual/38-can.md:50 klas:A -->
+<!-- fc id:T-38-022 sha:3874c899 src:manual/38-can.md:50 status:verbatim -->
 ### T-38-022 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -580,7 +580,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-023 sha:2114c410 src:manual/38-can.md:54 klas:F -->
+<!-- fc id:T-38-023 sha:2114c410 src:manual/38-can.md:54 status:unchecked -->
 ### T-38-023 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -602,7 +602,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-024 sha:51444c61 src:manual/38-can.md:57 klas:A -->
+<!-- fc id:T-38-024 sha:51444c61 src:manual/38-can.md:57 status:verbatim -->
 ### T-38-024 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -633,7 +633,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-025 sha:e0a68dd7 src:manual/38-can.md:57 klas:E -->
+<!-- fc id:T-38-025 sha:e0a68dd7 src:manual/38-can.md:57 status:no-external-signal -->
 ### T-38-025 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -656,7 +656,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-026 sha:45eb71c9 src:manual/38-can.md:58 klas:E -->
+<!-- fc id:T-38-026 sha:45eb71c9 src:manual/38-can.md:58 status:no-external-signal -->
 ### T-38-026 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -679,7 +679,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-027 sha:5ad13f89 src:manual/38-can.md:61 klas:E -->
+<!-- fc id:T-38-027 sha:5ad13f89 src:manual/38-can.md:61 status:no-external-signal -->
 ### T-38-027 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -703,7 +703,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-028 sha:ba8aaf00 src:manual/38-can.md:62 klas:D -->
+<!-- fc id:T-38-028 sha:ba8aaf00 src:manual/38-can.md:62 status:arithmetic -->
 ### T-38-028 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -757,7 +757,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-029 sha:19c1ee59 src:manual/38-can.md:68 klas:E -->
+<!-- fc id:T-38-029 sha:19c1ee59 src:manual/38-can.md:68 status:no-external-signal -->
 ### T-38-029 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -778,7 +778,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-030 sha:ec1fc8f4 src:manual/38-can.md:70 klas:E -->
+<!-- fc id:T-38-030 sha:ec1fc8f4 src:manual/38-can.md:70 status:no-external-signal -->
 ### T-38-030 · tablycya · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -806,7 +806,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-031 sha:b8b18ae3 src:manual/38-can.md:72 klas:E -->
+<!-- fc id:T-38-031 sha:b8b18ae3 src:manual/38-can.md:72 status:no-external-signal -->
 ### T-38-031 · tablycya · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -834,7 +834,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-032 sha:676479fe src:manual/38-can.md:73 klas:E -->
+<!-- fc id:T-38-032 sha:676479fe src:manual/38-can.md:73 status:no-external-signal -->
 ### T-38-032 · tablycya · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -875,7 +875,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-033 sha:100b4dd7 src:manual/38-can.md:74 klas:E -->
+<!-- fc id:T-38-033 sha:100b4dd7 src:manual/38-can.md:74 status:no-external-signal -->
 ### T-38-033 · tablycya · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -903,7 +903,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-034 sha:6d56a81b src:manual/38-can.md:75 klas:E -->
+<!-- fc id:T-38-034 sha:6d56a81b src:manual/38-can.md:75 status:no-external-signal -->
 ### T-38-034 · tablycya · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -931,7 +931,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-035 sha:d11e72f4 src:manual/38-can.md:77 klas:C -->
+<!-- fc id:T-38-035 sha:d11e72f4 src:manual/38-can.md:77 status:named-unreachable -->
 ### T-38-035 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -959,7 +959,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-036 sha:b9715954 src:manual/38-can.md:83 klas:K -->
+<!-- fc id:T-38-036 sha:b9715954 src:manual/38-can.md:83 status:code-context -->
 ### T-38-036 · kod · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1036,7 +1036,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-037 sha:fb3aaa42 src:manual/38-can.md:89 klas:A -->
+<!-- fc id:T-38-037 sha:fb3aaa42 src:manual/38-can.md:89 status:verbatim -->
 ### T-38-037 · kod-ryadok · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1074,7 +1074,7 @@ twai_start();
 
 ---
 
-<!-- fc id:T-38-038 sha:63725ecc src:manual/38-can.md:90 klas:A -->
+<!-- fc id:T-38-038 sha:63725ecc src:manual/38-can.md:90 status:verbatim -->
 ### T-38-038 · kod-ryadok · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1112,7 +1112,7 @@ twai_start();
 
 ---
 
-<!-- fc id:T-38-039 sha:559d08f3 src:manual/38-can.md:93 klas:F -->
+<!-- fc id:T-38-039 sha:559d08f3 src:manual/38-can.md:93 status:unchecked -->
 ### T-38-039 · kod-ryadok · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1138,7 +1138,7 @@ twai_transmit(&msg, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-38-040 sha:5a2ffc57 src:manual/38-can.md:94 klas:F -->
+<!-- fc id:T-38-040 sha:5a2ffc57 src:manual/38-can.md:94 status:unchecked -->
 ### T-38-040 · kod-ryadok · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1164,7 +1164,7 @@ twai_transmit(&msg, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-38-041 sha:fa34c399 src:manual/38-can.md:95 klas:F -->
+<!-- fc id:T-38-041 sha:fa34c399 src:manual/38-can.md:95 status:unchecked -->
 ### T-38-041 · kod-ryadok · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1190,7 +1190,7 @@ twai_transmit(&msg, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-38-042 sha:3205f13f src:manual/38-can.md:97 klas:A -->
+<!-- fc id:T-38-042 sha:3205f13f src:manual/38-can.md:97 status:verbatim -->
 ### T-38-042 · kod-ryadok · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1232,7 +1232,7 @@ twai_transmit(&msg, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-38-043 sha:a3d9f170 src:manual/38-can.md:101 klas:F -->
+<!-- fc id:T-38-043 sha:a3d9f170 src:manual/38-can.md:101 status:unchecked -->
 ### T-38-043 · kod-ryadok · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1257,7 +1257,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-044 sha:dd265086 src:manual/38-can.md:105 klas:A -->
+<!-- fc id:T-38-044 sha:dd265086 src:manual/38-can.md:105 status:verbatim -->
 ### T-38-044 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1287,7 +1287,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-045 sha:c14b966b src:manual/38-can.md:105 klas:E -->
+<!-- fc id:T-38-045 sha:c14b966b src:manual/38-can.md:105 status:no-external-signal -->
 ### T-38-045 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1310,7 +1310,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-046 sha:b6daa495 src:manual/38-can.md:110 klas:A -->
+<!-- fc id:T-38-046 sha:b6daa495 src:manual/38-can.md:110 status:verbatim -->
 ### T-38-046 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1341,7 +1341,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-047 sha:cefd9a65 src:manual/38-can.md:111 klas:E -->
+<!-- fc id:T-38-047 sha:cefd9a65 src:manual/38-can.md:111 status:no-external-signal -->
 ### T-38-047 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1365,7 +1365,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-048 sha:139b5f1d src:manual/38-can.md:114 klas:E -->
+<!-- fc id:T-38-048 sha:139b5f1d src:manual/38-can.md:114 status:no-external-signal -->
 ### T-38-048 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1389,7 +1389,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-049 sha:ae4d2dd0 src:manual/38-can.md:114 klas:F -->
+<!-- fc id:T-38-049 sha:ae4d2dd0 src:manual/38-can.md:114 status:unchecked -->
 ### T-38-049 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1413,7 +1413,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-050 sha:8b2ded9f src:manual/38-can.md:119 klas:A -->
+<!-- fc id:T-38-050 sha:8b2ded9f src:manual/38-can.md:119 status:verbatim -->
 ### T-38-050 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1455,7 +1455,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-051 sha:3e99d0dc src:manual/38-can.md:120 klas:F -->
+<!-- fc id:T-38-051 sha:3e99d0dc src:manual/38-can.md:120 status:unchecked -->
 ### T-38-051 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1479,7 +1479,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-052 sha:33a25696 src:manual/38-can.md:124 klas:A -->
+<!-- fc id:T-38-052 sha:33a25696 src:manual/38-can.md:124 status:verbatim -->
 ### T-38-052 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1510,7 +1510,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-053 sha:1a37b1f4 src:manual/38-can.md:129 klas:E -->
+<!-- fc id:T-38-053 sha:1a37b1f4 src:manual/38-can.md:129 status:no-external-signal -->
 ### T-38-053 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1532,7 +1532,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-054 sha:3677d9d8 src:manual/38-can.md:130 klas:E -->
+<!-- fc id:T-38-054 sha:3677d9d8 src:manual/38-can.md:130 status:no-external-signal -->
 ### T-38-054 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1554,7 +1554,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-055 sha:5b819334 src:manual/38-can.md:133 klas:A -->
+<!-- fc id:T-38-055 sha:5b819334 src:manual/38-can.md:133 status:verbatim -->
 ### T-38-055 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1595,7 +1595,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-056 sha:5e9f7a90 src:manual/38-can.md:133 klas:E -->
+<!-- fc id:T-38-056 sha:5e9f7a90 src:manual/38-can.md:133 status:no-external-signal -->
 ### T-38-056 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1618,7 +1618,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-057 sha:9d9661b6 src:manual/38-can.md:136 klas:E -->
+<!-- fc id:T-38-057 sha:9d9661b6 src:manual/38-can.md:136 status:no-external-signal -->
 ### T-38-057 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1642,7 +1642,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-058 sha:c4f27b74 src:manual/38-can.md:137 klas:E -->
+<!-- fc id:T-38-058 sha:c4f27b74 src:manual/38-can.md:137 status:no-external-signal -->
 ### T-38-058 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1666,7 +1666,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-059 sha:43fb7ee2 src:manual/38-can.md:143 klas:A -->
+<!-- fc id:T-38-059 sha:43fb7ee2 src:manual/38-can.md:143 status:verbatim -->
 ### T-38-059 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1695,7 +1695,7 @@ CAN сам стежить за помилками й має лічильники
 
 ---
 
-<!-- fc id:T-38-060 sha:02941c9e src:manual/38-can.md:143 klas:F -->
+<!-- fc id:T-38-060 sha:02941c9e src:manual/38-can.md:143 status:unchecked -->
 ### T-38-060 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1718,7 +1718,7 @@ CAN сам стежить за помилками й має лічильники
 
 ---
 
-<!-- fc id:T-38-061 sha:094c6d05 src:manual/38-can.md:147 klas:K -->
+<!-- fc id:T-38-061 sha:094c6d05 src:manual/38-can.md:147 status:code-context -->
 ### T-38-061 · kod · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1765,7 +1765,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-062 sha:a0d8240d src:manual/38-can.md:149 klas:A -->
+<!-- fc id:T-38-062 sha:a0d8240d src:manual/38-can.md:149 status:verbatim -->
 ### T-38-062 · kod-ryadok · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1807,7 +1807,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-063 sha:321fdcfb src:manual/38-can.md:154 klas:E -->
+<!-- fc id:T-38-063 sha:321fdcfb src:manual/38-can.md:154 status:no-external-signal -->
 ### T-38-063 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1831,7 +1831,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-064 sha:d44ec172 src:manual/38-can.md:155 klas:A -->
+<!-- fc id:T-38-064 sha:d44ec172 src:manual/38-can.md:155 status:verbatim -->
 ### T-38-064 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1871,7 +1871,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-065 sha:ff14f155 src:manual/38-can.md:159 klas:E -->
+<!-- fc id:T-38-065 sha:ff14f155 src:manual/38-can.md:159 status:no-external-signal -->
 ### T-38-065 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1894,7 +1894,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-066 sha:09a82db5 src:manual/38-can.md:160 klas:F -->
+<!-- fc id:T-38-066 sha:09a82db5 src:manual/38-can.md:160 status:unchecked -->
 ### T-38-066 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1917,7 +1917,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-067 sha:823d32fa src:manual/38-can.md:163 klas:A -->
+<!-- fc id:T-38-067 sha:823d32fa src:manual/38-can.md:163 status:verbatim -->
 ### T-38-067 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1956,7 +1956,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-068 sha:36d28763 src:manual/38-can.md:167 klas:E -->
+<!-- fc id:T-38-068 sha:36d28763 src:manual/38-can.md:167 status:no-external-signal -->
 ### T-38-068 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1992,7 +1992,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-069 sha:9347e196 src:manual/38-can.md:168 klas:E -->
+<!-- fc id:T-38-069 sha:9347e196 src:manual/38-can.md:168 status:no-external-signal -->
 ### T-38-069 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2015,7 +2015,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-070 sha:17c0166c src:manual/38-can.md:171 klas:E -->
+<!-- fc id:T-38-070 sha:17c0166c src:manual/38-can.md:171 status:no-external-signal -->
 ### T-38-070 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2037,7 +2037,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-071 sha:323aba76 src:manual/38-can.md:176 klas:E -->
+<!-- fc id:T-38-071 sha:323aba76 src:manual/38-can.md:176 status:no-external-signal -->
 ### T-38-071 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2058,7 +2058,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-072 sha:2bef8ef6 src:manual/38-can.md:178 klas:E -->
+<!-- fc id:T-38-072 sha:2bef8ef6 src:manual/38-can.md:178 status:no-external-signal -->
 ### T-38-072 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2085,7 +2085,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-073 sha:a9ffd1d1 src:manual/38-can.md:178 klas:F -->
+<!-- fc id:T-38-073 sha:a9ffd1d1 src:manual/38-can.md:178 status:unchecked -->
 ### T-38-073 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2112,7 +2112,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-074 sha:49f5cf71 src:manual/38-can.md:181 klas:F -->
+<!-- fc id:T-38-074 sha:49f5cf71 src:manual/38-can.md:181 status:unchecked -->
 ### T-38-074 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2139,7 +2139,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-075 sha:b6945f61 src:manual/38-can.md:183 klas:E -->
+<!-- fc id:T-38-075 sha:b6945f61 src:manual/38-can.md:183 status:no-external-signal -->
 ### T-38-075 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2166,7 +2166,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-076 sha:42ee92a9 src:manual/38-can.md:184 klas:E -->
+<!-- fc id:T-38-076 sha:42ee92a9 src:manual/38-can.md:184 status:no-external-signal -->
 ### T-38-076 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2193,7 +2193,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-077 sha:fbfbe1b6 src:manual/38-can.md:187 klas:E -->
+<!-- fc id:T-38-077 sha:fbfbe1b6 src:manual/38-can.md:187 status:no-external-signal -->
 ### T-38-077 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2216,7 +2216,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-078 sha:a89e3321 src:manual/38-can.md:187 klas:E -->
+<!-- fc id:T-38-078 sha:a89e3321 src:manual/38-can.md:187 status:no-external-signal -->
 ### T-38-078 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2239,7 +2239,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-079 sha:5f59c70a src:manual/38-can.md:190 klas:E -->
+<!-- fc id:T-38-079 sha:5f59c70a src:manual/38-can.md:190 status:no-external-signal -->
 ### T-38-079 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2263,7 +2263,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-080 sha:73568b75 src:manual/38-can.md:191 klas:E -->
+<!-- fc id:T-38-080 sha:73568b75 src:manual/38-can.md:191 status:no-external-signal -->
 ### T-38-080 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2287,7 +2287,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-081 sha:8f398650 src:manual/38-can.md:197 klas:A -->
+<!-- fc id:T-38-081 sha:8f398650 src:manual/38-can.md:197 status:verbatim -->
 ### T-38-081 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2317,7 +2317,7 @@ TWAI — це CAN; назва інша, протокол той самий.
 
 ---
 
-<!-- fc id:T-38-082 sha:1c9e018a src:manual/38-can.md:199 klas:A -->
+<!-- fc id:T-38-082 sha:1c9e018a src:manual/38-can.md:199 status:verbatim -->
 ### T-38-082 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2347,7 +2347,7 @@ TWAI — це CAN; назва інша, протокол той самий.
 
 ---
 
-<!-- fc id:T-38-083 sha:2ac24e96 src:manual/38-can.md:201 klas:A -->
+<!-- fc id:T-38-083 sha:2ac24e96 src:manual/38-can.md:201 status:verbatim -->
 ### T-38-083 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2377,7 +2377,7 @@ TWAI — це CAN; назва інша, протокол той самий.
 
 ---
 
-<!-- fc id:T-38-084 sha:540f3318 src:manual/38-can.md:204 klas:E -->
+<!-- fc id:T-38-084 sha:540f3318 src:manual/38-can.md:204 status:no-external-signal -->
 ### T-38-084 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2399,7 +2399,7 @@ TWAI — це CAN; назва інша, протокол той самий.
 
 ---
 
-<!-- fc id:T-38-085 sha:a1fbd4a3 src:manual/38-can.md:207 klas:E -->
+<!-- fc id:T-38-085 sha:a1fbd4a3 src:manual/38-can.md:207 status:no-external-signal -->
 ### T-38-085 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2421,7 +2421,7 @@ TWAI — це CAN; назва інша, протокол той самий.
 
 ---
 
-<!-- fc id:T-38-086 sha:402c360c src:manual/38-can.md:210 klas:A -->
+<!-- fc id:T-38-086 sha:402c360c src:manual/38-can.md:210 status:verbatim -->
 ### T-38-086 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2460,7 +2460,7 @@ TWAI — це CAN; назва інша, протокол той самий.
 
 ---
 
-<!-- fc id:T-38-087 sha:05cca194 src:manual/38-can.md:212 klas:C -->
+<!-- fc id:T-38-087 sha:05cca194 src:manual/38-can.md:212 status:named-unreachable -->
 ### T-38-087 · proza · `manual/38-can.md`
 
 **Твердження, коротко**

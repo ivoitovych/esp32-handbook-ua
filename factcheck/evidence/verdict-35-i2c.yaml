@@ -13,7 +13,6 @@
 
 - nazva: 'T-35-028: Стандартні швидкості — 100 кГц і 400 кГц.'
   zbih: Стандартні\s+швидкості\s+—\s+100
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
   cytata: '{IDF_TARGET_NAME} supports both I2C Standard-mode (Sm) and Fast-mode (Fm) which
     can go up to 100 kHz and 400 kHz respectively.

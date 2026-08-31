@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/13-pio.md`
 
-Одиниць твердження: **77**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **77**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-13-001 sha:1fdbb66e src:manual/13-pio.md:3 klas:F -->
+<!-- fc id:T-13-001 sha:1fdbb66e src:manual/13-pio.md:3 status:unchecked -->
 ### T-13-001 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -32,7 +32,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-002 sha:f593172f src:manual/13-pio.md:5 klas:A -->
+<!-- fc id:T-13-002 sha:f593172f src:manual/13-pio.md:5 status:verbatim -->
 ### T-13-002 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -62,7 +62,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-003 sha:7528b989 src:manual/13-pio.md:8 klas:E -->
+<!-- fc id:T-13-003 sha:7528b989 src:manual/13-pio.md:8 status:no-external-signal -->
 ### T-13-003 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -84,7 +84,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-004 sha:7c3c99a0 src:manual/13-pio.md:13 klas:A -->
+<!-- fc id:T-13-004 sha:7c3c99a0 src:manual/13-pio.md:13 status:verbatim -->
 ### T-13-004 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -114,7 +114,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-005 sha:098cf69e src:manual/13-pio.md:14 klas:A -->
+<!-- fc id:T-13-005 sha:098cf69e src:manual/13-pio.md:14 status:verbatim -->
 ### T-13-005 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -144,7 +144,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-006 sha:1dabb487 src:manual/13-pio.md:18 klas:A -->
+<!-- fc id:T-13-006 sha:1dabb487 src:manual/13-pio.md:18 status:verbatim -->
 ### T-13-006 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -172,7 +172,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-007 sha:4ec26d12 src:manual/13-pio.md:18 klas:A -->
+<!-- fc id:T-13-007 sha:4ec26d12 src:manual/13-pio.md:18 status:verbatim -->
 ### T-13-007 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -200,7 +200,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-008 sha:63df3a47 src:manual/13-pio.md:21 klas:E -->
+<!-- fc id:T-13-008 sha:63df3a47 src:manual/13-pio.md:21 status:no-external-signal -->
 ### T-13-008 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -221,7 +221,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-009 sha:eef32775 src:manual/13-pio.md:23 klas:F -->
+<!-- fc id:T-13-009 sha:eef32775 src:manual/13-pio.md:23 status:unchecked -->
 ### T-13-009 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -243,7 +243,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-010 sha:4d0842b5 src:manual/13-pio.md:27 klas:E -->
+<!-- fc id:T-13-010 sha:4d0842b5 src:manual/13-pio.md:27 status:no-external-signal -->
 ### T-13-010 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -267,7 +267,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-011 sha:87c9dff3 src:manual/13-pio.md:27 klas:E -->
+<!-- fc id:T-13-011 sha:87c9dff3 src:manual/13-pio.md:27 status:no-external-signal -->
 ### T-13-011 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -291,7 +291,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-012 sha:e78e3416 src:manual/13-pio.md:31 klas:E -->
+<!-- fc id:T-13-012 sha:e78e3416 src:manual/13-pio.md:31 status:no-external-signal -->
 ### T-13-012 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -316,7 +316,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-013 sha:5c49975c src:manual/13-pio.md:32 klas:E -->
+<!-- fc id:T-13-013 sha:5c49975c src:manual/13-pio.md:32 status:no-external-signal -->
 ### T-13-013 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -341,7 +341,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-014 sha:5a0c92c3 src:manual/13-pio.md:39 klas:A -->
+<!-- fc id:T-13-014 sha:5a0c92c3 src:manual/13-pio.md:39 status:verbatim -->
 ### T-13-014 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -373,7 +373,7 @@ git і повністю описує, чим збирається проєкт. 
 
 ---
 
-<!-- fc id:T-13-015 sha:18113102 src:manual/13-pio.md:39 klas:A -->
+<!-- fc id:T-13-015 sha:18113102 src:manual/13-pio.md:39 status:verbatim -->
 ### T-13-015 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -404,7 +404,7 @@ git і повністю описує, чим збирається проєкт. 
 
 ---
 
-<!-- fc id:T-13-016 sha:6e6ff0ea src:manual/13-pio.md:40 klas:E -->
+<!-- fc id:T-13-016 sha:6e6ff0ea src:manual/13-pio.md:40 status:no-external-signal -->
 ### T-13-016 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -427,7 +427,7 @@ git і повністю описує, чим збирається проєкт. 
 
 ---
 
-<!-- fc id:T-13-017 sha:19495775 src:manual/13-pio.md:43 klas:F -->
+<!-- fc id:T-13-017 sha:19495775 src:manual/13-pio.md:43 status:unchecked -->
 ### T-13-017 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -449,7 +449,7 @@ S3, налагоджувальна й робоча збірка, дві різн
 
 ---
 
-<!-- fc id:T-13-018 sha:a99e783d src:manual/13-pio.md:46 klas:F -->
+<!-- fc id:T-13-018 sha:a99e783d src:manual/13-pio.md:46 status:unchecked -->
 ### T-13-018 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -471,7 +471,7 @@ S3, налагоджувальна й робоча збірка, дві різн
 
 ---
 
-<!-- fc id:T-13-019 sha:297f0eb6 src:manual/13-pio.md:49 klas:F -->
+<!-- fc id:T-13-019 sha:297f0eb6 src:manual/13-pio.md:49 status:unchecked -->
 ### T-13-019 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -493,7 +493,7 @@ S3, налагоджувальна й робоча збірка, дві різн
 
 ---
 
-<!-- fc id:T-13-020 sha:aec08e40 src:manual/13-pio.md:54 klas:A -->
+<!-- fc id:T-13-020 sha:aec08e40 src:manual/13-pio.md:54 status:verbatim -->
 ### T-13-020 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -523,7 +523,7 @@ S3, налагоджувальна й робоча збірка, дві різн
 
 ---
 
-<!-- fc id:T-13-021 sha:9cc8c88c src:manual/13-pio.md:56 klas:K -->
+<!-- fc id:T-13-021 sha:9cc8c88c src:manual/13-pio.md:56 status:code-context -->
 ### T-13-021 · kod · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -587,7 +587,7 @@ lib_deps =
 
 ---
 
-<!-- fc id:T-13-022 sha:f9f47141 src:manual/13-pio.md:71 klas:A -->
+<!-- fc id:T-13-022 sha:f9f47141 src:manual/13-pio.md:71 status:verbatim -->
 ### T-13-022 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -628,7 +628,7 @@ lib_deps =
 
 ---
 
-<!-- fc id:T-13-023 sha:60ff61c5 src:manual/13-pio.md:73 klas:A -->
+<!-- fc id:T-13-023 sha:60ff61c5 src:manual/13-pio.md:73 status:verbatim -->
 ### T-13-023 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -670,7 +670,7 @@ lib_deps =
 
 ---
 
-<!-- fc id:T-13-024 sha:bd308fc1 src:manual/13-pio.md:73 klas:A -->
+<!-- fc id:T-13-024 sha:bd308fc1 src:manual/13-pio.md:73 status:verbatim -->
 ### T-13-024 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -699,7 +699,7 @@ lib_deps =
 
 ---
 
-<!-- fc id:T-13-025 sha:749a3756 src:manual/13-pio.md:77 klas:A -->
+<!-- fc id:T-13-025 sha:749a3756 src:manual/13-pio.md:77 status:verbatim -->
 ### T-13-025 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -729,7 +729,7 @@ lib_deps =
 
 ---
 
-<!-- fc id:T-13-026 sha:a8551e95 src:manual/13-pio.md:78 klas:A -->
+<!-- fc id:T-13-026 sha:a8551e95 src:manual/13-pio.md:78 status:verbatim -->
 ### T-13-026 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -767,7 +767,7 @@ lib_deps =
 
 ---
 
-<!-- fc id:T-13-027 sha:47baf400 src:manual/13-pio.md:82 klas:F -->
+<!-- fc id:T-13-027 sha:47baf400 src:manual/13-pio.md:82 status:unchecked -->
 ### T-13-027 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -790,7 +790,7 @@ lib_deps =
 
 ---
 
-<!-- fc id:T-13-028 sha:941bc495 src:manual/13-pio.md:86 klas:E -->
+<!-- fc id:T-13-028 sha:941bc495 src:manual/13-pio.md:86 status:no-external-signal -->
 ### T-13-028 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -811,7 +811,7 @@ lib_deps =
 
 ---
 
-<!-- fc id:T-13-029 sha:a126aa2c src:manual/13-pio.md:88 klas:A -->
+<!-- fc id:T-13-029 sha:a126aa2c src:manual/13-pio.md:88 status:verbatim -->
 ### T-13-029 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -838,7 +838,7 @@ lib_deps =
 
 ---
 
-<!-- fc id:T-13-030 sha:ae130aac src:manual/13-pio.md:91 klas:E -->
+<!-- fc id:T-13-030 sha:ae130aac src:manual/13-pio.md:91 status:no-external-signal -->
 ### T-13-030 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -863,7 +863,7 @@ lib_deps =
 
 ---
 
-<!-- fc id:T-13-031 sha:be464ff9 src:manual/13-pio.md:96 klas:E -->
+<!-- fc id:T-13-031 sha:be464ff9 src:manual/13-pio.md:96 status:no-external-signal -->
 ### T-13-031 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -885,7 +885,7 @@ lib_deps =
 
 ---
 
-<!-- fc id:T-13-032 sha:d5d76327 src:manual/13-pio.md:99 klas:A -->
+<!-- fc id:T-13-032 sha:d5d76327 src:manual/13-pio.md:99 status:verbatim -->
 ### T-13-032 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -912,7 +912,7 @@ lib_deps =
 
 ---
 
-<!-- fc id:T-13-033 sha:827612bd src:manual/13-pio.md:101 klas:K -->
+<!-- fc id:T-13-033 sha:827612bd src:manual/13-pio.md:101 status:code-context -->
 ### T-13-033 · kod · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -951,7 +951,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-034 sha:fd412be3 src:manual/13-pio.md:105 klas:E -->
+<!-- fc id:T-13-034 sha:fd412be3 src:manual/13-pio.md:105 status:no-external-signal -->
 ### T-13-034 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -974,7 +974,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-035 sha:2343936e src:manual/13-pio.md:109 klas:F -->
+<!-- fc id:T-13-035 sha:2343936e src:manual/13-pio.md:109 status:unchecked -->
 ### T-13-035 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -997,7 +997,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-036 sha:c8f4d86f src:manual/13-pio.md:109 klas:E -->
+<!-- fc id:T-13-036 sha:c8f4d86f src:manual/13-pio.md:109 status:no-external-signal -->
 ### T-13-036 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1020,7 +1020,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-037 sha:7934e141 src:manual/13-pio.md:110 klas:E -->
+<!-- fc id:T-13-037 sha:7934e141 src:manual/13-pio.md:110 status:no-external-signal -->
 ### T-13-037 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1043,7 +1043,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-038 sha:18fbe0ff src:manual/13-pio.md:113 klas:F -->
+<!-- fc id:T-13-038 sha:18fbe0ff src:manual/13-pio.md:113 status:unchecked -->
 ### T-13-038 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1064,7 +1064,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-039 sha:79d6fd32 src:manual/13-pio.md:115 klas:F -->
+<!-- fc id:T-13-039 sha:79d6fd32 src:manual/13-pio.md:115 status:unchecked -->
 ### T-13-039 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1086,7 +1086,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-040 sha:33af8147 src:manual/13-pio.md:115 klas:E -->
+<!-- fc id:T-13-040 sha:33af8147 src:manual/13-pio.md:115 status:no-external-signal -->
 ### T-13-040 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1108,7 +1108,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-041 sha:7b36f4c5 src:manual/13-pio.md:118 klas:F -->
+<!-- fc id:T-13-041 sha:7b36f4c5 src:manual/13-pio.md:118 status:unchecked -->
 ### T-13-041 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1130,7 +1130,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-042 sha:4b5106dd src:manual/13-pio.md:118 klas:F -->
+<!-- fc id:T-13-042 sha:4b5106dd src:manual/13-pio.md:118 status:unchecked -->
 ### T-13-042 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1152,7 +1152,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-043 sha:6a3b8741 src:manual/13-pio.md:123 klas:E -->
+<!-- fc id:T-13-043 sha:6a3b8741 src:manual/13-pio.md:123 status:no-external-signal -->
 ### T-13-043 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1173,7 +1173,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-044 sha:c028fc5b src:manual/13-pio.md:125 klas:K -->
+<!-- fc id:T-13-044 sha:c028fc5b src:manual/13-pio.md:125 status:code-context -->
 ### T-13-044 · kod · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1234,7 +1234,7 @@ build_flags = -DHAS_PSRAM
 
 ---
 
-<!-- fc id:T-13-045 sha:af92b07e src:manual/13-pio.md:140 klas:F -->
+<!-- fc id:T-13-045 sha:af92b07e src:manual/13-pio.md:140 status:unchecked -->
 ### T-13-045 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1258,7 +1258,7 @@ build_flags = -DHAS_PSRAM
 
 ---
 
-<!-- fc id:T-13-046 sha:90d170e3 src:manual/13-pio.md:142 klas:F -->
+<!-- fc id:T-13-046 sha:90d170e3 src:manual/13-pio.md:142 status:unchecked -->
 ### T-13-046 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1282,7 +1282,7 @@ build_flags = -DHAS_PSRAM
 
 ---
 
-<!-- fc id:T-13-047 sha:262212b8 src:manual/13-pio.md:145 klas:F -->
+<!-- fc id:T-13-047 sha:262212b8 src:manual/13-pio.md:145 status:unchecked -->
 ### T-13-047 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1306,7 +1306,7 @@ build_flags = -DHAS_PSRAM
 
 ---
 
-<!-- fc id:T-13-048 sha:6c4a7027 src:manual/13-pio.md:147 klas:A -->
+<!-- fc id:T-13-048 sha:6c4a7027 src:manual/13-pio.md:147 status:verbatim -->
 ### T-13-048 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1336,7 +1336,7 @@ build_flags = -DHAS_PSRAM
 
 ---
 
-<!-- fc id:T-13-049 sha:bc2c14ce src:manual/13-pio.md:150 klas:F -->
+<!-- fc id:T-13-049 sha:bc2c14ce src:manual/13-pio.md:150 status:unchecked -->
 ### T-13-049 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1359,7 +1359,7 @@ build_flags = -DHAS_PSRAM
 
 ---
 
-<!-- fc id:T-13-050 sha:326f3278 src:manual/13-pio.md:152 klas:F -->
+<!-- fc id:T-13-050 sha:326f3278 src:manual/13-pio.md:152 status:unchecked -->
 ### T-13-050 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1382,7 +1382,7 @@ build_flags = -DHAS_PSRAM
 
 ---
 
-<!-- fc id:T-13-051 sha:7131bc02 src:manual/13-pio.md:154 klas:K -->
+<!-- fc id:T-13-051 sha:7131bc02 src:manual/13-pio.md:154 status:code-context -->
 ### T-13-051 · kod · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1428,7 +1428,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-052 sha:6619cb7d src:manual/13-pio.md:159 klas:E -->
+<!-- fc id:T-13-052 sha:6619cb7d src:manual/13-pio.md:159 status:no-external-signal -->
 ### T-13-052 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1449,7 +1449,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-053 sha:407ecd76 src:manual/13-pio.md:161 klas:F -->
+<!-- fc id:T-13-053 sha:407ecd76 src:manual/13-pio.md:161 status:unchecked -->
 ### T-13-053 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1471,7 +1471,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-054 sha:47b4dc2c src:manual/13-pio.md:164 klas:E -->
+<!-- fc id:T-13-054 sha:47b4dc2c src:manual/13-pio.md:164 status:no-external-signal -->
 ### T-13-054 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1494,7 +1494,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-055 sha:7c1dad7e src:manual/13-pio.md:170 klas:F -->
+<!-- fc id:T-13-055 sha:7c1dad7e src:manual/13-pio.md:170 status:unchecked -->
 ### T-13-055 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1518,7 +1518,7 @@ stable.
 
 ---
 
-<!-- fc id:T-13-056 sha:36a4b4be src:manual/13-pio.md:171 klas:F -->
+<!-- fc id:T-13-056 sha:36a4b4be src:manual/13-pio.md:171 status:unchecked -->
 ### T-13-056 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1542,7 +1542,7 @@ stable.
 
 ---
 
-<!-- fc id:T-13-057 sha:830b1a26 src:manual/13-pio.md:175 klas:F -->
+<!-- fc id:T-13-057 sha:830b1a26 src:manual/13-pio.md:175 status:unchecked -->
 ### T-13-057 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1565,7 +1565,7 @@ stable.
 
 ---
 
-<!-- fc id:T-13-058 sha:2b4c7e4e src:manual/13-pio.md:179 klas:F -->
+<!-- fc id:T-13-058 sha:2b4c7e4e src:manual/13-pio.md:179 status:unchecked -->
 ### T-13-058 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1586,7 +1586,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-059 sha:f0918098 src:manual/13-pio.md:183 klas:E -->
+<!-- fc id:T-13-059 sha:f0918098 src:manual/13-pio.md:183 status:no-external-signal -->
 ### T-13-059 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1608,7 +1608,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-060 sha:f8ccc59c src:manual/13-pio.md:186 klas:F -->
+<!-- fc id:T-13-060 sha:f8ccc59c src:manual/13-pio.md:186 status:unchecked -->
 ### T-13-060 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1631,7 +1631,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-061 sha:f1f3a5b4 src:manual/13-pio.md:190 klas:F -->
+<!-- fc id:T-13-061 sha:f1f3a5b4 src:manual/13-pio.md:190 status:unchecked -->
 ### T-13-061 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1653,7 +1653,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-062 sha:6ef65336 src:manual/13-pio.md:193 klas:F -->
+<!-- fc id:T-13-062 sha:6ef65336 src:manual/13-pio.md:193 status:unchecked -->
 ### T-13-062 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1676,7 +1676,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-063 sha:24b7726c src:manual/13-pio.md:194 klas:F -->
+<!-- fc id:T-13-063 sha:24b7726c src:manual/13-pio.md:194 status:unchecked -->
 ### T-13-063 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1699,7 +1699,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-064 sha:71f8b903 src:manual/13-pio.md:195 klas:E -->
+<!-- fc id:T-13-064 sha:71f8b903 src:manual/13-pio.md:195 status:no-external-signal -->
 ### T-13-064 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1722,7 +1722,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-065 sha:e09bc506 src:manual/13-pio.md:197 klas:E -->
+<!-- fc id:T-13-065 sha:e09bc506 src:manual/13-pio.md:197 status:no-external-signal -->
 ### T-13-065 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1744,7 +1744,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-066 sha:f12c5e0a src:manual/13-pio.md:202 klas:E -->
+<!-- fc id:T-13-066 sha:f12c5e0a src:manual/13-pio.md:202 status:no-external-signal -->
 ### T-13-066 · tablycya · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1772,7 +1772,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-067 sha:a2387335 src:manual/13-pio.md:204 klas:F -->
+<!-- fc id:T-13-067 sha:a2387335 src:manual/13-pio.md:204 status:unchecked -->
 ### T-13-067 · tablycya · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1800,7 +1800,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-068 sha:7ebd085f src:manual/13-pio.md:205 klas:F -->
+<!-- fc id:T-13-068 sha:7ebd085f src:manual/13-pio.md:205 status:unchecked -->
 ### T-13-068 · tablycya · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1828,7 +1828,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-069 sha:41c63667 src:manual/13-pio.md:206 klas:F -->
+<!-- fc id:T-13-069 sha:41c63667 src:manual/13-pio.md:206 status:unchecked -->
 ### T-13-069 · tablycya · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1856,7 +1856,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-070 sha:911cb2bf src:manual/13-pio.md:207 klas:A -->
+<!-- fc id:T-13-070 sha:911cb2bf src:manual/13-pio.md:207 status:verbatim -->
 ### T-13-070 · tablycya · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1890,7 +1890,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-071 sha:90f5ca53 src:manual/13-pio.md:208 klas:F -->
+<!-- fc id:T-13-071 sha:90f5ca53 src:manual/13-pio.md:208 status:unchecked -->
 ### T-13-071 · tablycya · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1918,7 +1918,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-072 sha:ee36c4b3 src:manual/13-pio.md:212 klas:F -->
+<!-- fc id:T-13-072 sha:ee36c4b3 src:manual/13-pio.md:212 status:unchecked -->
 ### T-13-072 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1941,7 +1941,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-073 sha:03240a6a src:manual/13-pio.md:213 klas:E -->
+<!-- fc id:T-13-073 sha:03240a6a src:manual/13-pio.md:213 status:no-external-signal -->
 ### T-13-073 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1964,7 +1964,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-074 sha:16ba4163 src:manual/13-pio.md:216 klas:E -->
+<!-- fc id:T-13-074 sha:16ba4163 src:manual/13-pio.md:216 status:no-external-signal -->
 ### T-13-074 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1986,7 +1986,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-075 sha:b81ae778 src:manual/13-pio.md:216 klas:E -->
+<!-- fc id:T-13-075 sha:b81ae778 src:manual/13-pio.md:216 status:no-external-signal -->
 ### T-13-075 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -2008,7 +2008,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-076 sha:a1620013 src:manual/13-pio.md:219 klas:F -->
+<!-- fc id:T-13-076 sha:a1620013 src:manual/13-pio.md:219 status:unchecked -->
 ### T-13-076 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -2029,7 +2029,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-077 sha:07b465b5 src:manual/13-pio.md:221 klas:F -->
+<!-- fc id:T-13-077 sha:07b465b5 src:manual/13-pio.md:221 status:unchecked -->
 ### T-13-077 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**

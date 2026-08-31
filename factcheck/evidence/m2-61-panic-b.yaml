@@ -39,7 +39,6 @@
 
 - nazva: 'T-D-151: A1 — вказівник стека'
   zbih: \| `A1` \| вказівник стека \|
-  klas: C
   dzherelo: shukaty
   notatka: A1 — стандартний регістр архітектури Xtensa для Stack Pointer (SP). Міститься у
     дампі регістрів паніки, але явна назва "Stack Pointer" для A1 у документації ESP-IDF не
@@ -57,7 +56,6 @@
   - '74974165'
 - nazva: 'T-D-153: EXCVADDR — найшвидша підказка'
   zbih: \*\*`EXCVADDR` — найшвидша підказка\.\*\*
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
     — ESP-IDF fatal-errors.rst, секція «LoadProhibited, StoreProhibited»
   cytata: 'These CPU exceptions happen when an application attempts to read from or write
@@ -89,7 +87,6 @@
   - 6ef4b75c
 - nazva: 'T-D-159: IDLE0 та Task Watchdog Timeout'
   zbih: E \(5234\) task_wdt:.*IDLE0 \(CPU 0\)
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
     — ESP-IDF wdts.rst, секція «Common Error Logs When WDT Triggers»
   cytata: 'Task watchdog got triggered. The following tasks/users did not reset the watchdog
@@ -117,7 +114,6 @@
   - a1afa6b3
 - nazva: 'T-D-172: assert failed як порушення інваріанта'
   zbih: '\| `assert failed: \.\.\.\` \| порушено внутрішній інваріант \|'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
     — ESP-IDF fatal-errors.rst, приклад помилки затвердження (assertion)
   cytata: 'CORRUPT HEAP: Bad tail at 0x3ffe270a. Expected 0xbaad5678 got 0xbaac5678
@@ -155,7 +151,6 @@
   - 69aa2c68
 - nazva: 'T-D-177: Шукати memcpy, sprintf, цикл із <= замість <'
   zbih: Шукати `memcpy`, `sprintf`, цикл із `<=` замість `<`\.
-  klas: C
   dzherelo: shukaty
   notatka: Це рекомендація про діагностику буферних переповнень і типових помилок циклів.
     У документації ESP-IDF явно не знайдена, це загальна практика відлагодження.
@@ -169,7 +164,6 @@
   - 68e01a8c
 - nazva: 'T-D-181: Порівняння з тим, що повернув malloc'
   zbih: Її можна порівняти з тим, що повернув `malloc`\.
-  klas: C
   dzherelo: shukaty
   notatka: Рекомендація про порівняння поточного вказівника з результатом malloc для діагностики
     утечок пам'яті. У документації ESP-IDF явно не знайдена.
@@ -183,7 +177,6 @@
   - a135e9c8
 - nazva: 'T-D-183: rst: у першому рядку RTC Watchdog Timeout'
   zbih: \*\*`rst:` у першому рядку\.\*\*
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
     — ESP-IDF fatal-errors.rst, секція «RTC Watchdog Timeout»
   cytata: "The RTC watchdog is used in the startup code to keep track of execution time and\
@@ -213,7 +206,6 @@
     Це сигнал, що система перезавантажилась через timeout.
 - nazva: 'T-D-184: Причина паніки і EXCVADDR'
   zbih: \*\*Причина паніки і `EXCVADDR`\.\*\*
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
     — ESP-IDF fatal-errors.rst, секція «LoadProhibited, StoreProhibited»
   cytata: 'If this address is zero, it usually means that the application has attempted to
@@ -247,7 +239,6 @@
     цілковиту відповідь про причину: нульовий вказівник, пошкоджений вказівник або невініціалізований.'
 - nazva: 'T-D-185: Backtrace через .elf за допомогою IDF Monitor'
   zbih: \*\*Backtrace через `\.elf`\*\*.*того самого збирання\.
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
     — ESP-IDF fatal-errors.rst, секція «Register Dump and Backtrace»
   cytata: "Moreover, :doc:`IDF Monitor <tools/idf-monitor>` is also capable of generating\
@@ -276,7 +267,6 @@
   - 8d7da41f
 - nazva: 'T-D-187: Coredump та логування переходів станів при невідтворюванні'
   zbih: Не відтворюється → coredump і логування переходів станів\.
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
     — ESP-IDF fatal-errors.rst, секція «Panic Handler»
   cytata: 'If the :doc:`Core Dump <core_dump>` feature is enabled, then the system state (task
@@ -304,7 +294,6 @@
     переходів станів.
 - nazva: 'T-D-188: Backtrace без .elf нерозшифровний'
   zbih: Без `\.elf`.*backtrace нерозшифровний\.
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
     — ESP-IDF fatal-errors.rst, секція «Register Dump and Backtrace»
   cytata: 'If :doc:`IDF Monitor <tools/idf-monitor>` is used, Program Counter values will
@@ -335,7 +324,6 @@
   - 4304fde6
 - nazva: 'T-D-190: .elf разом з образом, розділ 21'
   zbih: '`\.elf` зберігається разом із кожним образом, що поїхав'
-  klas: C
   dzherelo: shukaty
   notatka: Рекомендація про зберігання .elf файлу разом з прошивкою для подальшого аналізу.
     У документації ESP-IDF явно не знайдена як вимога до процесу збирання чи розгортання.
@@ -350,7 +338,6 @@
   - aefbccf3
 - nazva: 'T-D-193: Швидке відсікання — залити справний hello_world'
   zbih: 'Швидке відсікання: залити свідомо справний мінімальний образ'
-  klas: C
   dzherelo: shukaty
   notatka: Рекомендація про використання hello_world як мінімального, заведомо справного образу
     для діагностики проблем прошивки. У документації ESP-IDF не знайдена як стратегія діагностики,

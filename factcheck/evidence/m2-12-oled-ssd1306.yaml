@@ -1,6 +1,5 @@
 - nazva: SSD1306 — інтерфейс I²C або SPI, обидва пін-вибіркові
   zbih: OLED SSD1306 · Інтерфейс → I²C або SPI
-  klas: A
   dzherelo: Solomon Systech, SSD1306 Advance Information (Rev 1.1, Apr 2008), розділи 1 «General Description»
     і 2 «Features»
   cytata: "1     GENERAL DESCRIPTION\n     SSD1306 is a single-chip CMOS OLED/PLED driver with controller\
@@ -58,7 +57,6 @@
     заводжу.'
 - nazva: SSD1306 — монохромний дисплей
   zbih: OLED SSD1306 · Кольори → моно
-  klas: A
   dzherelo: Solomon Systech, SSD1306 Advance Information (Rev 1.1, Apr 2008), розділ 8.7 «Graphic Display
     Data RAM (GDDRAM)»
   cytata: '8.7    Graphic Display Data RAM (GDDRAM)

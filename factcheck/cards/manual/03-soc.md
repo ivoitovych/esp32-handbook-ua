@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/03-soc.md`
 
-Одиниць твердження: **76**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **76**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-03-001 sha:30137967 src:manual/03-soc.md:3 klas:F -->
+<!-- fc id:T-03-001 sha:30137967 src:manual/03-soc.md:3 status:unchecked -->
 ### T-03-001 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-03-002 sha:b113984f src:manual/03-soc.md:3 klas:F -->
+<!-- fc id:T-03-002 sha:b113984f src:manual/03-soc.md:3 status:unchecked -->
 ### T-03-002 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -56,7 +56,7 @@
 
 ---
 
-<!-- fc id:T-03-003 sha:6da19cd4 src:manual/03-soc.md:10 klas:B -->
+<!-- fc id:T-03-003 sha:6da19cd4 src:manual/03-soc.md:10 status:derived -->
 ### T-03-003 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -86,7 +86,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-004 sha:8ed6fe72 src:manual/03-soc.md:10 klas:A -->
+<!-- fc id:T-03-004 sha:8ed6fe72 src:manual/03-soc.md:10 status:verbatim -->
 ### T-03-004 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -117,7 +117,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-005 sha:29cf8a17 src:manual/03-soc.md:14 klas:E -->
+<!-- fc id:T-03-005 sha:29cf8a17 src:manual/03-soc.md:14 status:no-external-signal -->
 ### T-03-005 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -138,7 +138,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-006 sha:b7b38102 src:manual/03-soc.md:16 klas:F -->
+<!-- fc id:T-03-006 sha:b7b38102 src:manual/03-soc.md:16 status:unchecked -->
 ### T-03-006 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -161,7 +161,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-007 sha:cde9b7d9 src:manual/03-soc.md:16 klas:E -->
+<!-- fc id:T-03-007 sha:cde9b7d9 src:manual/03-soc.md:16 status:no-external-signal -->
 ### T-03-007 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -184,7 +184,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-008 sha:a7571eb6 src:manual/03-soc.md:20 klas:F -->
+<!-- fc id:T-03-008 sha:a7571eb6 src:manual/03-soc.md:20 status:unchecked -->
 ### T-03-008 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -206,7 +206,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-009 sha:65a050e8 src:manual/03-soc.md:23 klas:E -->
+<!-- fc id:T-03-009 sha:65a050e8 src:manual/03-soc.md:23 status:no-external-signal -->
 ### T-03-009 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -229,7 +229,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-010 sha:6c80c4de src:manual/03-soc.md:24 klas:E -->
+<!-- fc id:T-03-010 sha:6c80c4de src:manual/03-soc.md:24 status:no-external-signal -->
 ### T-03-010 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -252,7 +252,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-011 sha:01a4a513 src:manual/03-soc.md:27 klas:B -->
+<!-- fc id:T-03-011 sha:01a4a513 src:manual/03-soc.md:27 status:derived -->
 ### T-03-011 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -282,7 +282,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-012 sha:ad7bb8ac src:manual/03-soc.md:27 klas:E -->
+<!-- fc id:T-03-012 sha:ad7bb8ac src:manual/03-soc.md:27 status:no-external-signal -->
 ### T-03-012 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -305,7 +305,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-013 sha:847f8520 src:manual/03-soc.md:28 klas:F -->
+<!-- fc id:T-03-013 sha:847f8520 src:manual/03-soc.md:28 status:unchecked -->
 ### T-03-013 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -328,7 +328,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-014 sha:e0bf9d8b src:manual/03-soc.md:32 klas:E -->
+<!-- fc id:T-03-014 sha:e0bf9d8b src:manual/03-soc.md:32 status:no-external-signal -->
 ### T-03-014 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -354,7 +354,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-015 sha:e901dcc2 src:manual/03-soc.md:32 klas:E -->
+<!-- fc id:T-03-015 sha:e901dcc2 src:manual/03-soc.md:32 status:no-external-signal -->
 ### T-03-015 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -380,7 +380,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-016 sha:3917c8cc src:manual/03-soc.md:34 klas:E -->
+<!-- fc id:T-03-016 sha:3917c8cc src:manual/03-soc.md:34 status:no-external-signal -->
 ### T-03-016 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -406,7 +406,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-017 sha:d0503ba8 src:manual/03-soc.md:40 klas:E -->
+<!-- fc id:T-03-017 sha:d0503ba8 src:manual/03-soc.md:40 status:no-external-signal -->
 ### T-03-017 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -429,7 +429,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-018 sha:129e874e src:manual/03-soc.md:40 klas:A -->
+<!-- fc id:T-03-018 sha:129e874e src:manual/03-soc.md:40 status:verbatim -->
 ### T-03-018 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -465,7 +465,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-019 sha:ee844d56 src:manual/03-soc.md:44 klas:E -->
+<!-- fc id:T-03-019 sha:ee844d56 src:manual/03-soc.md:44 status:no-external-signal -->
 ### T-03-019 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -487,7 +487,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-020 sha:c067fed0 src:manual/03-soc.md:45 klas:E -->
+<!-- fc id:T-03-020 sha:c067fed0 src:manual/03-soc.md:45 status:no-external-signal -->
 ### T-03-020 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -509,7 +509,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-021 sha:9d8da4da src:manual/03-soc.md:47 klas:F -->
+<!-- fc id:T-03-021 sha:9d8da4da src:manual/03-soc.md:47 status:unchecked -->
 ### T-03-021 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -530,7 +530,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-022 sha:1604cbc9 src:manual/03-soc.md:49 klas:E -->
+<!-- fc id:T-03-022 sha:1604cbc9 src:manual/03-soc.md:49 status:no-external-signal -->
 ### T-03-022 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -554,7 +554,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-023 sha:cfc5fb12 src:manual/03-soc.md:49 klas:E -->
+<!-- fc id:T-03-023 sha:cfc5fb12 src:manual/03-soc.md:49 status:no-external-signal -->
 ### T-03-023 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -578,7 +578,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-024 sha:d9912f25 src:manual/03-soc.md:52 klas:E -->
+<!-- fc id:T-03-024 sha:d9912f25 src:manual/03-soc.md:52 status:no-external-signal -->
 ### T-03-024 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -602,7 +602,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-025 sha:f908bd73 src:manual/03-soc.md:54 klas:A -->
+<!-- fc id:T-03-025 sha:f908bd73 src:manual/03-soc.md:54 status:verbatim -->
 ### T-03-025 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -633,7 +633,7 @@ sleep**. Все інше при глибокому сні втрачається
 
 ---
 
-<!-- fc id:T-03-026 sha:2ea4307a src:manual/03-soc.md:55 klas:E -->
+<!-- fc id:T-03-026 sha:2ea4307a src:manual/03-soc.md:55 status:no-external-signal -->
 ### T-03-026 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -656,7 +656,7 @@ sleep**. Все інше при глибокому сні втрачається
 
 ---
 
-<!-- fc id:T-03-027 sha:5ffa26da src:manual/03-soc.md:55 klas:E -->
+<!-- fc id:T-03-027 sha:5ffa26da src:manual/03-soc.md:55 status:no-external-signal -->
 ### T-03-027 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -679,7 +679,7 @@ sleep**. Все інше при глибокому сні втрачається
 
 ---
 
-<!-- fc id:T-03-028 sha:897b7618 src:manual/03-soc.md:58 klas:E -->
+<!-- fc id:T-03-028 sha:897b7618 src:manual/03-soc.md:58 status:no-external-signal -->
 ### T-03-028 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -701,7 +701,7 @@ sleep**. Все інше при глибокому сні втрачається
 
 ---
 
-<!-- fc id:T-03-029 sha:fd09cd67 src:manual/03-soc.md:58 klas:E -->
+<!-- fc id:T-03-029 sha:fd09cd67 src:manual/03-soc.md:58 status:no-external-signal -->
 ### T-03-029 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -723,7 +723,7 @@ sleep**. Все інше при глибокому сні втрачається
 
 ---
 
-<!-- fc id:T-03-030 sha:2682a6b8 src:manual/03-soc.md:61 klas:B -->
+<!-- fc id:T-03-030 sha:2682a6b8 src:manual/03-soc.md:61 status:derived -->
 ### T-03-030 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -753,7 +753,7 @@ sleep**. Все інше при глибокому сні втрачається
 
 ---
 
-<!-- fc id:T-03-031 sha:bc37401b src:manual/03-soc.md:62 klas:F -->
+<!-- fc id:T-03-031 sha:bc37401b src:manual/03-soc.md:62 status:unchecked -->
 ### T-03-031 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -777,7 +777,7 @@ sleep**. Все інше при глибокому сні втрачається
 
 ---
 
-<!-- fc id:T-03-032 sha:0d142738 src:manual/03-soc.md:62 klas:F -->
+<!-- fc id:T-03-032 sha:0d142738 src:manual/03-soc.md:62 status:unchecked -->
 ### T-03-032 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -801,7 +801,7 @@ sleep**. Все інше при глибокому сні втрачається
 
 ---
 
-<!-- fc id:T-03-033 sha:64590e9b src:manual/03-soc.md:67 klas:F -->
+<!-- fc id:T-03-033 sha:64590e9b src:manual/03-soc.md:67 status:unchecked -->
 ### T-03-033 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -824,7 +824,7 @@ sleep**. Все інше при глибокому сні втрачається
 
 ---
 
-<!-- fc id:T-03-034 sha:c931d7ff src:manual/03-soc.md:70 klas:E -->
+<!-- fc id:T-03-034 sha:c931d7ff src:manual/03-soc.md:70 status:no-external-signal -->
 ### T-03-034 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -846,7 +846,7 @@ sleep**. Все інше при глибокому сні втрачається
 
 ---
 
-<!-- fc id:T-03-035 sha:81ce3b3f src:manual/03-soc.md:71 klas:E -->
+<!-- fc id:T-03-035 sha:81ce3b3f src:manual/03-soc.md:71 status:no-external-signal -->
 ### T-03-035 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -868,7 +868,7 @@ sleep**. Все інше при глибокому сні втрачається
 
 ---
 
-<!-- fc id:T-03-036 sha:680850ac src:manual/03-soc.md:73 klas:F -->
+<!-- fc id:T-03-036 sha:680850ac src:manual/03-soc.md:73 status:unchecked -->
 ### T-03-036 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -892,7 +892,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 ---
 
-<!-- fc id:T-03-037 sha:11b3083b src:manual/03-soc.md:74 klas:A -->
+<!-- fc id:T-03-037 sha:11b3083b src:manual/03-soc.md:74 status:verbatim -->
 ### T-03-037 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -932,7 +932,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 ---
 
-<!-- fc id:T-03-038 sha:9a6731c9 src:manual/03-soc.md:78 klas:A -->
+<!-- fc id:T-03-038 sha:9a6731c9 src:manual/03-soc.md:78 status:verbatim -->
 ### T-03-038 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -995,7 +995,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 ---
 
-<!-- fc id:T-03-039 sha:87756b0a src:manual/03-soc.md:79 klas:A -->
+<!-- fc id:T-03-039 sha:87756b0a src:manual/03-soc.md:79 status:verbatim -->
 ### T-03-039 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1058,7 +1058,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 ---
 
-<!-- fc id:T-03-040 sha:e1bf5cd3 src:manual/03-soc.md:83 klas:A -->
+<!-- fc id:T-03-040 sha:e1bf5cd3 src:manual/03-soc.md:83 status:verbatim -->
 ### T-03-040 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1097,7 +1097,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 ---
 
-<!-- fc id:T-03-041 sha:6d0a35b4 src:manual/03-soc.md:89 klas:E -->
+<!-- fc id:T-03-041 sha:6d0a35b4 src:manual/03-soc.md:89 status:no-external-signal -->
 ### T-03-041 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1119,7 +1119,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 ---
 
-<!-- fc id:T-03-042 sha:f310a685 src:manual/03-soc.md:89 klas:E -->
+<!-- fc id:T-03-042 sha:f310a685 src:manual/03-soc.md:89 status:no-external-signal -->
 ### T-03-042 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1141,7 +1141,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 ---
 
-<!-- fc id:T-03-043 sha:cf1f101a src:manual/03-soc.md:90 klas:E -->
+<!-- fc id:T-03-043 sha:cf1f101a src:manual/03-soc.md:90 status:no-external-signal -->
 ### T-03-043 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1163,7 +1163,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 ---
 
-<!-- fc id:T-03-044 sha:c82a89c3 src:manual/03-soc.md:92 klas:E -->
+<!-- fc id:T-03-044 sha:c82a89c3 src:manual/03-soc.md:92 status:no-external-signal -->
 ### T-03-044 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1187,7 +1187,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 ---
 
-<!-- fc id:T-03-045 sha:628ed161 src:manual/03-soc.md:93 klas:F -->
+<!-- fc id:T-03-045 sha:628ed161 src:manual/03-soc.md:93 status:unchecked -->
 ### T-03-045 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1211,7 +1211,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 ---
 
-<!-- fc id:T-03-046 sha:94ffa5a7 src:manual/03-soc.md:97 klas:E -->
+<!-- fc id:T-03-046 sha:94ffa5a7 src:manual/03-soc.md:97 status:no-external-signal -->
 ### T-03-046 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1234,7 +1234,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 ---
 
-<!-- fc id:T-03-047 sha:80711892 src:manual/03-soc.md:97 klas:A -->
+<!-- fc id:T-03-047 sha:80711892 src:manual/03-soc.md:97 status:verbatim -->
 ### T-03-047 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1267,7 +1267,7 @@ DMA не годиться — для цього є `heap_caps_malloc` із яв�
 
 ---
 
-<!-- fc id:T-03-048 sha:56f50edc src:manual/03-soc.md:101 klas:K -->
+<!-- fc id:T-03-048 sha:56f50edc src:manual/03-soc.md:101 status:code-context -->
 ### T-03-048 · kod · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1306,7 +1306,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 ---
 
-<!-- fc id:T-03-049 sha:478c1d83 src:manual/03-soc.md:107 klas:A -->
+<!-- fc id:T-03-049 sha:478c1d83 src:manual/03-soc.md:107 status:verbatim -->
 ### T-03-049 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1338,7 +1338,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 ---
 
-<!-- fc id:T-03-050 sha:fcb7d541 src:manual/03-soc.md:112 klas:D -->
+<!-- fc id:T-03-050 sha:fcb7d541 src:manual/03-soc.md:112 status:arithmetic -->
 ### T-03-050 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1378,7 +1378,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 ---
 
-<!-- fc id:T-03-051 sha:20d9bd0f src:manual/03-soc.md:113 klas:E -->
+<!-- fc id:T-03-051 sha:20d9bd0f src:manual/03-soc.md:113 status:no-external-signal -->
 ### T-03-051 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1400,7 +1400,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 ---
 
-<!-- fc id:T-03-052 sha:1ecf96c3 src:manual/03-soc.md:115 klas:E -->
+<!-- fc id:T-03-052 sha:1ecf96c3 src:manual/03-soc.md:115 status:no-external-signal -->
 ### T-03-052 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1421,7 +1421,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 ---
 
-<!-- fc id:T-03-053 sha:4cbe3890 src:manual/03-soc.md:117 klas:D -->
+<!-- fc id:T-03-053 sha:4cbe3890 src:manual/03-soc.md:117 status:arithmetic -->
 ### T-03-053 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1463,7 +1463,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 ---
 
-<!-- fc id:T-03-054 sha:9f706283 src:manual/03-soc.md:123 klas:E -->
+<!-- fc id:T-03-054 sha:9f706283 src:manual/03-soc.md:123 status:no-external-signal -->
 ### T-03-054 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1489,7 +1489,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 ---
 
-<!-- fc id:T-03-055 sha:3486d9c6 src:manual/03-soc.md:124 klas:F -->
+<!-- fc id:T-03-055 sha:3486d9c6 src:manual/03-soc.md:124 status:unchecked -->
 ### T-03-055 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1515,7 +1515,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 ---
 
-<!-- fc id:T-03-056 sha:cbfc1f81 src:manual/03-soc.md:129 klas:E -->
+<!-- fc id:T-03-056 sha:cbfc1f81 src:manual/03-soc.md:129 status:no-external-signal -->
 ### T-03-056 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1539,7 +1539,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 ---
 
-<!-- fc id:T-03-057 sha:a717ac57 src:manual/03-soc.md:130 klas:F -->
+<!-- fc id:T-03-057 sha:a717ac57 src:manual/03-soc.md:130 status:unchecked -->
 ### T-03-057 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1563,7 +1563,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 ---
 
-<!-- fc id:T-03-058 sha:4d9cc263 src:manual/03-soc.md:136 klas:E -->
+<!-- fc id:T-03-058 sha:4d9cc263 src:manual/03-soc.md:136 status:no-external-signal -->
 ### T-03-058 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1584,7 +1584,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 ---
 
-<!-- fc id:T-03-059 sha:dc78d229 src:manual/03-soc.md:138 klas:A -->
+<!-- fc id:T-03-059 sha:dc78d229 src:manual/03-soc.md:138 status:verbatim -->
 ### T-03-059 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1617,7 +1617,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) {
 
 ---
 
-<!-- fc id:T-03-060 sha:769a9fbb src:manual/03-soc.md:144 klas:F -->
+<!-- fc id:T-03-060 sha:769a9fbb src:manual/03-soc.md:144 status:unchecked -->
 ### T-03-060 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1639,7 +1639,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 ---
 
-<!-- fc id:T-03-061 sha:d7dc237e src:manual/03-soc.md:145 klas:E -->
+<!-- fc id:T-03-061 sha:d7dc237e src:manual/03-soc.md:145 status:no-external-signal -->
 ### T-03-061 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1661,7 +1661,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 ---
 
-<!-- fc id:T-03-062 sha:62262d38 src:manual/03-soc.md:147 klas:F -->
+<!-- fc id:T-03-062 sha:62262d38 src:manual/03-soc.md:147 status:unchecked -->
 ### T-03-062 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1685,7 +1685,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 ---
 
-<!-- fc id:T-03-063 sha:49a8a31e src:manual/03-soc.md:148 klas:E -->
+<!-- fc id:T-03-063 sha:49a8a31e src:manual/03-soc.md:148 status:no-external-signal -->
 ### T-03-063 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1709,7 +1709,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 ---
 
-<!-- fc id:T-03-064 sha:dd0ef344 src:manual/03-soc.md:152 klas:F -->
+<!-- fc id:T-03-064 sha:dd0ef344 src:manual/03-soc.md:152 status:unchecked -->
 ### T-03-064 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1733,7 +1733,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 ---
 
-<!-- fc id:T-03-065 sha:639ff99e src:manual/03-soc.md:153 klas:E -->
+<!-- fc id:T-03-065 sha:639ff99e src:manual/03-soc.md:153 status:no-external-signal -->
 ### T-03-065 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1757,7 +1757,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 ---
 
-<!-- fc id:T-03-066 sha:9f63ca99 src:manual/03-soc.md:159 klas:E -->
+<!-- fc id:T-03-066 sha:9f63ca99 src:manual/03-soc.md:159 status:no-external-signal -->
 ### T-03-066 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1780,7 +1780,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 ---
 
-<!-- fc id:T-03-067 sha:897d0e0d src:manual/03-soc.md:159 klas:E -->
+<!-- fc id:T-03-067 sha:897d0e0d src:manual/03-soc.md:159 status:no-external-signal -->
 ### T-03-067 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1803,7 +1803,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 ---
 
-<!-- fc id:T-03-068 sha:5b04c8be src:manual/03-soc.md:163 klas:E -->
+<!-- fc id:T-03-068 sha:5b04c8be src:manual/03-soc.md:163 status:no-external-signal -->
 ### T-03-068 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1824,7 +1824,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 ---
 
-<!-- fc id:T-03-069 sha:1a0f9aa5 src:manual/03-soc.md:165 klas:C -->
+<!-- fc id:T-03-069 sha:1a0f9aa5 src:manual/03-soc.md:165 status:named-unreachable -->
 ### T-03-069 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1853,7 +1853,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 ---
 
-<!-- fc id:T-03-070 sha:cbfa3e79 src:manual/03-soc.md:171 klas:A -->
+<!-- fc id:T-03-070 sha:cbfa3e79 src:manual/03-soc.md:171 status:verbatim -->
 ### T-03-070 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1905,7 +1905,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 ---
 
-<!-- fc id:T-03-071 sha:a0d41ca6 src:manual/03-soc.md:176 klas:E -->
+<!-- fc id:T-03-071 sha:a0d41ca6 src:manual/03-soc.md:176 status:no-external-signal -->
 ### T-03-071 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1927,7 +1927,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 ---
 
-<!-- fc id:T-03-072 sha:862d3a8c src:manual/03-soc.md:176 klas:E -->
+<!-- fc id:T-03-072 sha:862d3a8c src:manual/03-soc.md:176 status:no-external-signal -->
 ### T-03-072 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1949,7 +1949,7 @@ ULP уміє небагато: прочитати ADC, перевірити пі
 
 ---
 
-<!-- fc id:T-03-073 sha:02d793b1 src:manual/03-soc.md:179 klas:F -->
+<!-- fc id:T-03-073 sha:02d793b1 src:manual/03-soc.md:179 status:unchecked -->
 ### T-03-073 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -1972,7 +1972,7 @@ PSRAM.
 
 ---
 
-<!-- fc id:T-03-074 sha:30a396cf src:manual/03-soc.md:183 klas:A -->
+<!-- fc id:T-03-074 sha:30a396cf src:manual/03-soc.md:183 status:verbatim -->
 ### T-03-074 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -2004,7 +2004,7 @@ PSRAM.
 
 ---
 
-<!-- fc id:T-03-075 sha:ece55389 src:manual/03-soc.md:186 klas:A -->
+<!-- fc id:T-03-075 sha:ece55389 src:manual/03-soc.md:186 status:verbatim -->
 ### T-03-075 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -2033,7 +2033,7 @@ RTC RAM переживає deep sleep; усе інше — ні.
 
 ---
 
-<!-- fc id:T-03-076 sha:296c8efd src:manual/03-soc.md:188 klas:E -->
+<!-- fc id:T-03-076 sha:296c8efd src:manual/03-soc.md:188 status:no-external-signal -->
 ### T-03-076 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**

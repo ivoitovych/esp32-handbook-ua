@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/17-esptool.md`
 
-Одиниць твердження: **165**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **165**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-17-001 sha:760be9ee src:manual/17-esptool.md:3 klas:B -->
+<!-- fc id:T-17-001 sha:760be9ee src:manual/17-esptool.md:3 status:derived -->
 ### T-17-001 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -41,7 +41,7 @@
 
 ---
 
-<!-- fc id:T-17-002 sha:4b3198e0 src:manual/17-esptool.md:3 klas:F -->
+<!-- fc id:T-17-002 sha:4b3198e0 src:manual/17-esptool.md:3 status:unchecked -->
 ### T-17-002 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -65,7 +65,7 @@
 
 ---
 
-<!-- fc id:T-17-003 sha:8ea7354e src:manual/17-esptool.md:8 klas:E -->
+<!-- fc id:T-17-003 sha:8ea7354e src:manual/17-esptool.md:8 status:no-external-signal -->
 ### T-17-003 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -88,7 +88,7 @@
 
 ---
 
-<!-- fc id:T-17-004 sha:9395569b src:manual/17-esptool.md:9 klas:B -->
+<!-- fc id:T-17-004 sha:9395569b src:manual/17-esptool.md:9 status:derived -->
 ### T-17-004 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -120,7 +120,7 @@
 
 ---
 
-<!-- fc id:T-17-005 sha:2ed9656d src:manual/17-esptool.md:14 klas:E -->
+<!-- fc id:T-17-005 sha:2ed9656d src:manual/17-esptool.md:14 status:no-external-signal -->
 ### T-17-005 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -141,7 +141,7 @@
 
 ---
 
-<!-- fc id:T-17-006 sha:64f486d7 src:manual/17-esptool.md:16 klas:K -->
+<!-- fc id:T-17-006 sha:64f486d7 src:manual/17-esptool.md:16 status:code-context -->
 ### T-17-006 · kod · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -173,7 +173,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-007 sha:fcbae1b9 src:manual/17-esptool.md:17 klas:A -->
+<!-- fc id:T-17-007 sha:fcbae1b9 src:manual/17-esptool.md:17 status:verbatim -->
 ### T-17-007 · kod-ryadok · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -203,7 +203,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-008 sha:9c3eef10 src:manual/17-esptool.md:20 klas:E -->
+<!-- fc id:T-17-008 sha:9c3eef10 src:manual/17-esptool.md:20 status:no-external-signal -->
 ### T-17-008 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -228,7 +228,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-009 sha:ea8f78cc src:manual/17-esptool.md:20 klas:A -->
+<!-- fc id:T-17-009 sha:ea8f78cc src:manual/17-esptool.md:20 status:verbatim -->
 ### T-17-009 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -260,7 +260,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-010 sha:790431ab src:manual/17-esptool.md:22 klas:A -->
+<!-- fc id:T-17-010 sha:790431ab src:manual/17-esptool.md:22 status:verbatim -->
 ### T-17-010 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -305,7 +305,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-011 sha:332e0818 src:manual/17-esptool.md:26 klas:A -->
+<!-- fc id:T-17-011 sha:332e0818 src:manual/17-esptool.md:26 status:verbatim -->
 ### T-17-011 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -347,7 +347,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-012 sha:0e9fb3f8 src:manual/17-esptool.md:29 klas:A -->
+<!-- fc id:T-17-012 sha:0e9fb3f8 src:manual/17-esptool.md:29 status:verbatim -->
 ### T-17-012 · tablycya-shapka · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -381,7 +381,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-013 sha:e59d8c4e src:manual/17-esptool.md:31 klas:A -->
+<!-- fc id:T-17-013 sha:e59d8c4e src:manual/17-esptool.md:31 status:verbatim -->
 ### T-17-013 · komirka · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -434,7 +434,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-014 sha:15c8ed07 src:manual/17-esptool.md:31 klas:A -->
+<!-- fc id:T-17-014 sha:15c8ed07 src:manual/17-esptool.md:31 status:verbatim -->
 ### T-17-014 · komirka · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -477,7 +477,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-015 sha:f36c79a8 src:manual/17-esptool.md:32 klas:A -->
+<!-- fc id:T-17-015 sha:f36c79a8 src:manual/17-esptool.md:32 status:verbatim -->
 ### T-17-015 · komirka · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -530,7 +530,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-016 sha:4fe690f3 src:manual/17-esptool.md:32 klas:A -->
+<!-- fc id:T-17-016 sha:4fe690f3 src:manual/17-esptool.md:32 status:verbatim -->
 ### T-17-016 · komirka · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -583,7 +583,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-017 sha:c2641f27 src:manual/17-esptool.md:34 klas:F -->
+<!-- fc id:T-17-017 sha:c2641f27 src:manual/17-esptool.md:34 status:unchecked -->
 ### T-17-017 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -605,7 +605,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-018 sha:5b950f2b src:manual/17-esptool.md:37 klas:F -->
+<!-- fc id:T-17-018 sha:5b950f2b src:manual/17-esptool.md:37 status:unchecked -->
 ### T-17-018 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -629,7 +629,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-019 sha:2b706815 src:manual/17-esptool.md:39 klas:A -->
+<!-- fc id:T-17-019 sha:2b706815 src:manual/17-esptool.md:39 status:verbatim -->
 ### T-17-019 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -673,7 +673,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-020 sha:424c39d1 src:manual/17-esptool.md:42 klas:A -->
+<!-- fc id:T-17-020 sha:424c39d1 src:manual/17-esptool.md:42 status:verbatim -->
 ### T-17-020 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -716,7 +716,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-021 sha:2058f23b src:manual/17-esptool.md:46 klas:A -->
+<!-- fc id:T-17-021 sha:2058f23b src:manual/17-esptool.md:46 status:verbatim -->
 ### T-17-021 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -758,7 +758,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-022 sha:8254cee9 src:manual/17-esptool.md:49 klas:A -->
+<!-- fc id:T-17-022 sha:8254cee9 src:manual/17-esptool.md:49 status:verbatim -->
 ### T-17-022 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -800,7 +800,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-023 sha:9063d84c src:manual/17-esptool.md:53 klas:A -->
+<!-- fc id:T-17-023 sha:9063d84c src:manual/17-esptool.md:53 status:verbatim -->
 ### T-17-023 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -837,7 +837,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-024 sha:a5e9385a src:manual/17-esptool.md:54 klas:A -->
+<!-- fc id:T-17-024 sha:a5e9385a src:manual/17-esptool.md:54 status:verbatim -->
 ### T-17-024 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -871,7 +871,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-025 sha:5d432647 src:manual/17-esptool.md:54 klas:F -->
+<!-- fc id:T-17-025 sha:5d432647 src:manual/17-esptool.md:54 status:unchecked -->
 ### T-17-025 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -898,7 +898,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-026 sha:8e12e7bb src:manual/17-esptool.md:55 klas:A -->
+<!-- fc id:T-17-026 sha:8e12e7bb src:manual/17-esptool.md:55 status:verbatim -->
 ### T-17-026 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -945,7 +945,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-027 sha:e66c9553 src:manual/17-esptool.md:62 klas:K -->
+<!-- fc id:T-17-027 sha:e66c9553 src:manual/17-esptool.md:62 status:code-context -->
 ### T-17-027 · kod · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -976,7 +976,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-17-028 sha:4c5a16ee src:manual/17-esptool.md:63 klas:A -->
+<!-- fc id:T-17-028 sha:4c5a16ee src:manual/17-esptool.md:63 status:verbatim -->
 ### T-17-028 · kod-ryadok · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1005,7 +1005,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-17-029 sha:8d78f5b3 src:manual/17-esptool.md:66 klas:A -->
+<!-- fc id:T-17-029 sha:8d78f5b3 src:manual/17-esptool.md:66 status:verbatim -->
 ### T-17-029 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1045,7 +1045,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-17-030 sha:fd4dd926 src:manual/17-esptool.md:69 klas:K -->
+<!-- fc id:T-17-030 sha:fd4dd926 src:manual/17-esptool.md:69 status:code-context -->
 ### T-17-030 · kod · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1094,7 +1094,7 @@ MAC:                24:6f:28:xx:xx:xx
 
 ---
 
-<!-- fc id:T-17-031 sha:54872a10 src:manual/17-esptool.md:76 klas:E -->
+<!-- fc id:T-17-031 sha:54872a10 src:manual/17-esptool.md:76 status:no-external-signal -->
 ### T-17-031 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1117,7 +1117,7 @@ MAC:                24:6f:28:xx:xx:xx
 
 ---
 
-<!-- fc id:T-17-032 sha:b339a1c4 src:manual/17-esptool.md:76 klas:A -->
+<!-- fc id:T-17-032 sha:b339a1c4 src:manual/17-esptool.md:76 status:verbatim -->
 ### T-17-032 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1158,7 +1158,7 @@ MAC:                24:6f:28:xx:xx:xx
 
 ---
 
-<!-- fc id:T-17-033 sha:ccd8cd11 src:manual/17-esptool.md:77 klas:E -->
+<!-- fc id:T-17-033 sha:ccd8cd11 src:manual/17-esptool.md:77 status:no-external-signal -->
 ### T-17-033 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1181,7 +1181,7 @@ MAC:                24:6f:28:xx:xx:xx
 
 ---
 
-<!-- fc id:T-17-034 sha:d76dc54c src:manual/17-esptool.md:80 klas:A -->
+<!-- fc id:T-17-034 sha:d76dc54c src:manual/17-esptool.md:80 status:verbatim -->
 ### T-17-034 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1209,7 +1209,7 @@ MAC:                24:6f:28:xx:xx:xx
 
 ---
 
-<!-- fc id:T-17-035 sha:8528068a src:manual/17-esptool.md:84 klas:A -->
+<!-- fc id:T-17-035 sha:8528068a src:manual/17-esptool.md:84 status:verbatim -->
 ### T-17-035 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1267,7 +1267,7 @@ MAC:                24:6f:28:xx:xx:xx
 
 ---
 
-<!-- fc id:T-17-036 sha:6b2c3582 src:manual/17-esptool.md:85 klas:F -->
+<!-- fc id:T-17-036 sha:6b2c3582 src:manual/17-esptool.md:85 status:unchecked -->
 ### T-17-036 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1292,7 +1292,7 @@ MAC:                24:6f:28:xx:xx:xx
 
 ---
 
-<!-- fc id:T-17-037 sha:9dc5958c src:manual/17-esptool.md:89 klas:K -->
+<!-- fc id:T-17-037 sha:9dc5958c src:manual/17-esptool.md:89 status:code-context -->
 ### T-17-037 · kod · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1350,7 +1350,7 @@ ESP32 has no chip ID. Reading MAC address instead.
 
 ---
 
-<!-- fc id:T-17-038 sha:a612c227 src:manual/17-esptool.md:93 klas:E -->
+<!-- fc id:T-17-038 sha:a612c227 src:manual/17-esptool.md:93 status:no-external-signal -->
 ### T-17-038 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1374,7 +1374,7 @@ ESP32 has no chip ID. Reading MAC address instead.
 
 ---
 
-<!-- fc id:T-17-039 sha:221ef589 src:manual/17-esptool.md:94 klas:E -->
+<!-- fc id:T-17-039 sha:221ef589 src:manual/17-esptool.md:94 status:no-external-signal -->
 ### T-17-039 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1398,7 +1398,7 @@ ESP32 has no chip ID. Reading MAC address instead.
 
 ---
 
-<!-- fc id:T-17-040 sha:50a21c79 src:manual/17-esptool.md:98 klas:E -->
+<!-- fc id:T-17-040 sha:50a21c79 src:manual/17-esptool.md:98 status:no-external-signal -->
 ### T-17-040 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1421,7 +1421,7 @@ ESP32 has no chip ID. Reading MAC address instead.
 
 ---
 
-<!-- fc id:T-17-041 sha:3d4176e9 src:manual/17-esptool.md:99 klas:B -->
+<!-- fc id:T-17-041 sha:3d4176e9 src:manual/17-esptool.md:99 status:derived -->
 ### T-17-041 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1450,7 +1450,7 @@ ESP32 has no chip ID. Reading MAC address instead.
 
 ---
 
-<!-- fc id:T-17-042 sha:43e4d49a src:manual/17-esptool.md:103 klas:A -->
+<!-- fc id:T-17-042 sha:43e4d49a src:manual/17-esptool.md:103 status:verbatim -->
 ### T-17-042 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1500,7 +1500,7 @@ ESP32 has no chip ID. Reading MAC address instead.
 
 ---
 
-<!-- fc id:T-17-043 sha:724102a6 src:manual/17-esptool.md:103 klas:E -->
+<!-- fc id:T-17-043 sha:724102a6 src:manual/17-esptool.md:103 status:no-external-signal -->
 ### T-17-043 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1527,7 +1527,7 @@ ESP32 has no chip ID. Reading MAC address instead.
 
 ---
 
-<!-- fc id:T-17-044 sha:a5d0e23b src:manual/17-esptool.md:104 klas:E -->
+<!-- fc id:T-17-044 sha:a5d0e23b src:manual/17-esptool.md:104 status:no-external-signal -->
 ### T-17-044 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1554,7 +1554,7 @@ ESP32 has no chip ID. Reading MAC address instead.
 
 ---
 
-<!-- fc id:T-17-045 sha:c1db89f4 src:manual/17-esptool.md:112 klas:E -->
+<!-- fc id:T-17-045 sha:c1db89f4 src:manual/17-esptool.md:112 status:no-external-signal -->
 ### T-17-045 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1576,7 +1576,7 @@ ESP32 has no chip ID. Reading MAC address instead.
 
 ---
 
-<!-- fc id:T-17-046 sha:8b4f4b75 src:manual/17-esptool.md:115 klas:K -->
+<!-- fc id:T-17-046 sha:8b4f4b75 src:manual/17-esptool.md:115 status:code-context -->
 ### T-17-046 · kod · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1618,7 +1618,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-17-047 sha:213017c0 src:manual/17-esptool.md:116 klas:A -->
+<!-- fc id:T-17-047 sha:213017c0 src:manual/17-esptool.md:116 status:verbatim -->
 ### T-17-047 · kod-ryadok · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1658,7 +1658,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-17-048 sha:1856248d src:manual/17-esptool.md:119 klas:A -->
+<!-- fc id:T-17-048 sha:1856248d src:manual/17-esptool.md:119 status:verbatim -->
 ### T-17-048 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1698,7 +1698,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-17-049 sha:dd810cb6 src:manual/17-esptool.md:119 klas:B -->
+<!-- fc id:T-17-049 sha:dd810cb6 src:manual/17-esptool.md:119 status:derived -->
 ### T-17-049 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1727,7 +1727,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-17-050 sha:a3ccf901 src:manual/17-esptool.md:123 klas:E -->
+<!-- fc id:T-17-050 sha:a3ccf901 src:manual/17-esptool.md:123 status:no-external-signal -->
 ### T-17-050 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1752,7 +1752,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-17-051 sha:1b2d4902 src:manual/17-esptool.md:124 klas:A -->
+<!-- fc id:T-17-051 sha:1b2d4902 src:manual/17-esptool.md:124 status:verbatim -->
 ### T-17-051 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1783,7 +1783,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-17-052 sha:4cbc54f8 src:manual/17-esptool.md:125 klas:F -->
+<!-- fc id:T-17-052 sha:4cbc54f8 src:manual/17-esptool.md:125 status:unchecked -->
 ### T-17-052 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1808,7 +1808,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-17-053 sha:eada110b src:manual/17-esptool.md:129 klas:F -->
+<!-- fc id:T-17-053 sha:eada110b src:manual/17-esptool.md:129 status:unchecked -->
 ### T-17-053 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1829,7 +1829,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-17-054 sha:0615bf62 src:manual/17-esptool.md:131 klas:K -->
+<!-- fc id:T-17-054 sha:0615bf62 src:manual/17-esptool.md:131 status:code-context -->
 ### T-17-054 · kod · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1867,7 +1867,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-17-055 sha:fe1f802d src:manual/17-esptool.md:132 klas:D -->
+<!-- fc id:T-17-055 sha:fe1f802d src:manual/17-esptool.md:132 status:arithmetic -->
 ### T-17-055 · kod-ryadok · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1903,7 +1903,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-17-056 sha:b46fc5e5 src:manual/17-esptool.md:137 klas:F -->
+<!-- fc id:T-17-056 sha:b46fc5e5 src:manual/17-esptool.md:137 status:unchecked -->
 ### T-17-056 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1924,7 +1924,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-17-057 sha:911de04d src:manual/17-esptool.md:139 klas:K -->
+<!-- fc id:T-17-057 sha:911de04d src:manual/17-esptool.md:139 status:code-context -->
 ### T-17-057 · kod · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -1969,7 +1969,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-17-058 sha:bdd61138 src:manual/17-esptool.md:140 klas:A -->
+<!-- fc id:T-17-058 sha:bdd61138 src:manual/17-esptool.md:140 status:verbatim -->
 ### T-17-058 · kod-ryadok · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2009,7 +2009,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-17-059 sha:add669dc src:manual/17-esptool.md:146 klas:A -->
+<!-- fc id:T-17-059 sha:add669dc src:manual/17-esptool.md:146 status:verbatim -->
 ### T-17-059 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2039,7 +2039,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-060 sha:e548f18b src:manual/17-esptool.md:148 klas:A -->
+<!-- fc id:T-17-060 sha:e548f18b src:manual/17-esptool.md:148 status:verbatim -->
 ### T-17-060 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2088,7 +2088,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-061 sha:782ec293 src:manual/17-esptool.md:151 klas:A -->
+<!-- fc id:T-17-061 sha:782ec293 src:manual/17-esptool.md:151 status:verbatim -->
 ### T-17-061 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2115,7 +2115,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-062 sha:cb74d03e src:manual/17-esptool.md:151 klas:E -->
+<!-- fc id:T-17-062 sha:cb74d03e src:manual/17-esptool.md:151 status:no-external-signal -->
 ### T-17-062 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2136,7 +2136,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-063 sha:8627aec2 src:manual/17-esptool.md:153 klas:A -->
+<!-- fc id:T-17-063 sha:8627aec2 src:manual/17-esptool.md:153 status:verbatim -->
 ### T-17-063 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2168,7 +2168,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-064 sha:85b9b718 src:manual/17-esptool.md:153 klas:A -->
+<!-- fc id:T-17-064 sha:85b9b718 src:manual/17-esptool.md:153 status:verbatim -->
 ### T-17-064 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2200,7 +2200,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-065 sha:f86910b1 src:manual/17-esptool.md:154 klas:F -->
+<!-- fc id:T-17-065 sha:f86910b1 src:manual/17-esptool.md:154 status:unchecked -->
 ### T-17-065 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2226,7 +2226,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-066 sha:dafa4e9c src:manual/17-esptool.md:156 klas:A -->
+<!-- fc id:T-17-066 sha:dafa4e9c src:manual/17-esptool.md:156 status:verbatim -->
 ### T-17-066 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2258,7 +2258,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-067 sha:3ef2eafc src:manual/17-esptool.md:160 klas:A -->
+<!-- fc id:T-17-067 sha:3ef2eafc src:manual/17-esptool.md:160 status:verbatim -->
 ### T-17-067 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2289,7 +2289,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-068 sha:ae67c781 src:manual/17-esptool.md:161 klas:A -->
+<!-- fc id:T-17-068 sha:ae67c781 src:manual/17-esptool.md:161 status:verbatim -->
 ### T-17-068 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2320,7 +2320,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-069 sha:982a1045 src:manual/17-esptool.md:163 klas:B -->
+<!-- fc id:T-17-069 sha:982a1045 src:manual/17-esptool.md:163 status:derived -->
 ### T-17-069 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2351,7 +2351,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-070 sha:2711187e src:manual/17-esptool.md:166 klas:F -->
+<!-- fc id:T-17-070 sha:2711187e src:manual/17-esptool.md:166 status:unchecked -->
 ### T-17-070 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2373,7 +2373,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-071 sha:d5bda61e src:manual/17-esptool.md:167 klas:A -->
+<!-- fc id:T-17-071 sha:d5bda61e src:manual/17-esptool.md:167 status:verbatim -->
 ### T-17-071 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2401,7 +2401,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-072 sha:da71a7e5 src:manual/17-esptool.md:169 klas:A -->
+<!-- fc id:T-17-072 sha:da71a7e5 src:manual/17-esptool.md:169 status:verbatim -->
 ### T-17-072 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2431,7 +2431,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-073 sha:b292be9b src:manual/17-esptool.md:170 klas:A -->
+<!-- fc id:T-17-073 sha:b292be9b src:manual/17-esptool.md:170 status:verbatim -->
 ### T-17-073 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2461,7 +2461,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-074 sha:c7be6edf src:manual/17-esptool.md:174 klas:A -->
+<!-- fc id:T-17-074 sha:c7be6edf src:manual/17-esptool.md:174 status:verbatim -->
 ### T-17-074 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2489,7 +2489,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-075 sha:6cc1d835 src:manual/17-esptool.md:175 klas:E -->
+<!-- fc id:T-17-075 sha:6cc1d835 src:manual/17-esptool.md:175 status:no-external-signal -->
 ### T-17-075 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2511,7 +2511,7 @@ P4, C5 і H4 — на `0x2000`; решта адрес та сама (табли�
 
 ---
 
-<!-- fc id:T-17-076 sha:1edaa56d src:manual/17-esptool.md:179 klas:K -->
+<!-- fc id:T-17-076 sha:1edaa56d src:manual/17-esptool.md:179 status:code-context -->
 ### T-17-076 · kod · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2536,7 +2536,7 @@ esptool --port /dev/ttyUSB0 erase-flash
 
 ---
 
-<!-- fc id:T-17-077 sha:7a96df73 src:manual/17-esptool.md:180 klas:F -->
+<!-- fc id:T-17-077 sha:7a96df73 src:manual/17-esptool.md:180 status:unchecked -->
 ### T-17-077 · kod-ryadok · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2559,7 +2559,7 @@ esptool --port /dev/ttyUSB0 erase-flash
 
 ---
 
-<!-- fc id:T-17-078 sha:4c597925 src:manual/17-esptool.md:184 klas:A -->
+<!-- fc id:T-17-078 sha:4c597925 src:manual/17-esptool.md:184 status:verbatim -->
 ### T-17-078 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2607,7 +2607,7 @@ esptool --port /dev/ttyUSB0 erase-flash
 
 ---
 
-<!-- fc id:T-17-079 sha:675172ea src:manual/17-esptool.md:184 klas:F -->
+<!-- fc id:T-17-079 sha:675172ea src:manual/17-esptool.md:184 status:unchecked -->
 ### T-17-079 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2632,7 +2632,7 @@ esptool --port /dev/ttyUSB0 erase-flash
 
 ---
 
-<!-- fc id:T-17-080 sha:02d4467f src:manual/17-esptool.md:186 klas:E -->
+<!-- fc id:T-17-080 sha:02d4467f src:manual/17-esptool.md:186 status:no-external-signal -->
 ### T-17-080 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2657,7 +2657,7 @@ esptool --port /dev/ttyUSB0 erase-flash
 
 ---
 
-<!-- fc id:T-17-081 sha:501abb75 src:manual/17-esptool.md:189 klas:B -->
+<!-- fc id:T-17-081 sha:501abb75 src:manual/17-esptool.md:189 status:derived -->
 ### T-17-081 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2688,7 +2688,7 @@ esptool --port /dev/ttyUSB0 erase-flash
 
 ---
 
-<!-- fc id:T-17-082 sha:2b455157 src:manual/17-esptool.md:192 klas:A -->
+<!-- fc id:T-17-082 sha:2b455157 src:manual/17-esptool.md:192 status:verbatim -->
 ### T-17-082 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2734,7 +2734,7 @@ esptool --port /dev/ttyUSB0 erase-flash
 
 ---
 
-<!-- fc id:T-17-083 sha:d9b8c3fc src:manual/17-esptool.md:196 klas:E -->
+<!-- fc id:T-17-083 sha:d9b8c3fc src:manual/17-esptool.md:196 status:no-external-signal -->
 ### T-17-083 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2756,7 +2756,7 @@ esptool --port /dev/ttyUSB0 erase-flash
 
 ---
 
-<!-- fc id:T-17-084 sha:72b6debe src:manual/17-esptool.md:196 klas:F -->
+<!-- fc id:T-17-084 sha:72b6debe src:manual/17-esptool.md:196 status:unchecked -->
 ### T-17-084 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2778,7 +2778,7 @@ esptool --port /dev/ttyUSB0 erase-flash
 
 ---
 
-<!-- fc id:T-17-085 sha:6361b41c src:manual/17-esptool.md:199 klas:E -->
+<!-- fc id:T-17-085 sha:6361b41c src:manual/17-esptool.md:199 status:no-external-signal -->
 ### T-17-085 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2799,7 +2799,7 @@ esptool --port /dev/ttyUSB0 erase-flash
 
 ---
 
-<!-- fc id:T-17-086 sha:5a1c829e src:manual/17-esptool.md:201 klas:K -->
+<!-- fc id:T-17-086 sha:5a1c829e src:manual/17-esptool.md:201 status:code-context -->
 ### T-17-086 · kod · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2846,7 +2846,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-17-087 sha:b3a989e0 src:manual/17-esptool.md:202 klas:A -->
+<!-- fc id:T-17-087 sha:b3a989e0 src:manual/17-esptool.md:202 status:verbatim -->
 ### T-17-087 · kod-ryadok · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2891,7 +2891,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-17-088 sha:31d5a3a2 src:manual/17-esptool.md:207 klas:K -->
+<!-- fc id:T-17-088 sha:31d5a3a2 src:manual/17-esptool.md:207 status:code-context -->
 ### T-17-088 · kod · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2938,7 +2938,7 @@ esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin
 
 ---
 
-<!-- fc id:T-17-089 sha:c93ce3ef src:manual/17-esptool.md:208 klas:A -->
+<!-- fc id:T-17-089 sha:c93ce3ef src:manual/17-esptool.md:208 status:verbatim -->
 ### T-17-089 · kod-ryadok · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -2983,7 +2983,7 @@ esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin
 
 ---
 
-<!-- fc id:T-17-090 sha:61989c98 src:manual/17-esptool.md:211 klas:E -->
+<!-- fc id:T-17-090 sha:61989c98 src:manual/17-esptool.md:211 status:no-external-signal -->
 ### T-17-090 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3006,7 +3006,7 @@ esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin
 
 ---
 
-<!-- fc id:T-17-091 sha:6337a912 src:manual/17-esptool.md:211 klas:A -->
+<!-- fc id:T-17-091 sha:6337a912 src:manual/17-esptool.md:211 status:verbatim -->
 ### T-17-091 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3051,7 +3051,7 @@ esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin
 
 ---
 
-<!-- fc id:T-17-092 sha:306c9a4d src:manual/17-esptool.md:213 klas:E -->
+<!-- fc id:T-17-092 sha:306c9a4d src:manual/17-esptool.md:213 status:no-external-signal -->
 ### T-17-092 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3074,7 +3074,7 @@ esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin
 
 ---
 
-<!-- fc id:T-17-093 sha:3f578024 src:manual/17-esptool.md:217 klas:E -->
+<!-- fc id:T-17-093 sha:3f578024 src:manual/17-esptool.md:217 status:no-external-signal -->
 ### T-17-093 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3097,7 +3097,7 @@ esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin
 
 ---
 
-<!-- fc id:T-17-094 sha:fc4482af src:manual/17-esptool.md:218 klas:A -->
+<!-- fc id:T-17-094 sha:fc4482af src:manual/17-esptool.md:218 status:verbatim -->
 ### T-17-094 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3138,7 +3138,7 @@ esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin
 
 ---
 
-<!-- fc id:T-17-095 sha:c1d44c0d src:manual/17-esptool.md:221 klas:K -->
+<!-- fc id:T-17-095 sha:c1d44c0d src:manual/17-esptool.md:221 status:code-context -->
 ### T-17-095 · kod · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3183,7 +3183,7 @@ esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-17-096 sha:86df9991 src:manual/17-esptool.md:222 klas:A -->
+<!-- fc id:T-17-096 sha:86df9991 src:manual/17-esptool.md:222 status:verbatim -->
 ### T-17-096 · kod-ryadok · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3223,7 +3223,7 @@ esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-17-097 sha:265e633f src:manual/17-esptool.md:228 klas:A -->
+<!-- fc id:T-17-097 sha:265e633f src:manual/17-esptool.md:228 status:verbatim -->
 ### T-17-097 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3264,7 +3264,7 @@ esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-17-098 sha:6579e87b src:manual/17-esptool.md:229 klas:A -->
+<!-- fc id:T-17-098 sha:6579e87b src:manual/17-esptool.md:229 status:verbatim -->
 ### T-17-098 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3306,7 +3306,7 @@ esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-17-099 sha:7acf702f src:manual/17-esptool.md:230 klas:A -->
+<!-- fc id:T-17-099 sha:7acf702f src:manual/17-esptool.md:230 status:verbatim -->
 ### T-17-099 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3347,7 +3347,7 @@ esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-17-100 sha:2431f38a src:manual/17-esptool.md:233 klas:A -->
+<!-- fc id:T-17-100 sha:2431f38a src:manual/17-esptool.md:233 status:verbatim -->
 ### T-17-100 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3377,7 +3377,7 @@ esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-17-101 sha:66ee792a src:manual/17-esptool.md:235 klas:A -->
+<!-- fc id:T-17-101 sha:66ee792a src:manual/17-esptool.md:235 status:verbatim -->
 ### T-17-101 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3419,7 +3419,7 @@ esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-17-102 sha:a8ba7c8e src:manual/17-esptool.md:238 klas:A -->
+<!-- fc id:T-17-102 sha:a8ba7c8e src:manual/17-esptool.md:238 status:verbatim -->
 ### T-17-102 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3447,7 +3447,7 @@ esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-17-103 sha:ba49e524 src:manual/17-esptool.md:241 klas:K -->
+<!-- fc id:T-17-103 sha:ba49e524 src:manual/17-esptool.md:241 status:code-context -->
 ### T-17-103 · kod · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3472,7 +3472,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 vyrib-v1.bin
 
 ---
 
-<!-- fc id:T-17-104 sha:f1947da9 src:manual/17-esptool.md:242 klas:F -->
+<!-- fc id:T-17-104 sha:f1947da9 src:manual/17-esptool.md:242 status:unchecked -->
 ### T-17-104 · kod-ryadok · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3495,7 +3495,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 vyrib-v1.bin
 
 ---
 
-<!-- fc id:T-17-105 sha:d53fd3ce src:manual/17-esptool.md:245 klas:E -->
+<!-- fc id:T-17-105 sha:d53fd3ce src:manual/17-esptool.md:245 status:no-external-signal -->
 ### T-17-105 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3518,7 +3518,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 vyrib-v1.bin
 
 ---
 
-<!-- fc id:T-17-106 sha:a0822607 src:manual/17-esptool.md:246 klas:E -->
+<!-- fc id:T-17-106 sha:a0822607 src:manual/17-esptool.md:246 status:no-external-signal -->
 ### T-17-106 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3541,7 +3541,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 vyrib-v1.bin
 
 ---
 
-<!-- fc id:T-17-107 sha:0c354cb5 src:manual/17-esptool.md:251 klas:F -->
+<!-- fc id:T-17-107 sha:0c354cb5 src:manual/17-esptool.md:251 status:unchecked -->
 ### T-17-107 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3563,7 +3563,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 vyrib-v1.bin
 
 ---
 
-<!-- fc id:T-17-108 sha:ed62f710 src:manual/17-esptool.md:251 klas:F -->
+<!-- fc id:T-17-108 sha:ed62f710 src:manual/17-esptool.md:251 status:unchecked -->
 ### T-17-108 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3585,7 +3585,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 vyrib-v1.bin
 
 ---
 
-<!-- fc id:T-17-109 sha:aa4bc88d src:manual/17-esptool.md:254 klas:K -->
+<!-- fc id:T-17-109 sha:aa4bc88d src:manual/17-esptool.md:254 status:code-context -->
 ### T-17-109 · kod · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3623,7 +3623,7 @@ idf.py merge-bin -o vyrib-v1.bin
 
 ---
 
-<!-- fc id:T-17-110 sha:8d510e99 src:manual/17-esptool.md:255 klas:A -->
+<!-- fc id:T-17-110 sha:8d510e99 src:manual/17-esptool.md:255 status:verbatim -->
 ### T-17-110 · kod-ryadok · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3659,7 +3659,7 @@ idf.py merge-bin -o vyrib-v1.bin
 
 ---
 
-<!-- fc id:T-17-111 sha:85f58bc1 src:manual/17-esptool.md:258 klas:E -->
+<!-- fc id:T-17-111 sha:85f58bc1 src:manual/17-esptool.md:258 status:no-external-signal -->
 ### T-17-111 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3683,7 +3683,7 @@ idf.py merge-bin -o vyrib-v1.bin
 
 ---
 
-<!-- fc id:T-17-112 sha:06b69d9f src:manual/17-esptool.md:260 klas:A -->
+<!-- fc id:T-17-112 sha:06b69d9f src:manual/17-esptool.md:260 status:verbatim -->
 ### T-17-112 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3720,7 +3720,7 @@ idf.py merge-bin -o vyrib-v1.bin
 
 ---
 
-<!-- fc id:T-17-113 sha:6edab381 src:manual/17-esptool.md:264 klas:A -->
+<!-- fc id:T-17-113 sha:6edab381 src:manual/17-esptool.md:264 status:verbatim -->
 ### T-17-113 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3750,7 +3750,7 @@ idf.py merge-bin -o vyrib-v1.bin
 
 ---
 
-<!-- fc id:T-17-114 sha:c0359df7 src:manual/17-esptool.md:268 klas:A -->
+<!-- fc id:T-17-114 sha:c0359df7 src:manual/17-esptool.md:268 status:verbatim -->
 ### T-17-114 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3785,7 +3785,7 @@ idf.py merge-bin -o vyrib-v1.bin
 
 ---
 
-<!-- fc id:T-17-115 sha:5a1fb7e0 src:manual/17-esptool.md:271 klas:A -->
+<!-- fc id:T-17-115 sha:5a1fb7e0 src:manual/17-esptool.md:271 status:verbatim -->
 ### T-17-115 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3821,7 +3821,7 @@ idf.py merge-bin -o vyrib-v1.bin
 
 ---
 
-<!-- fc id:T-17-116 sha:36e4678e src:manual/17-esptool.md:277 klas:A -->
+<!-- fc id:T-17-116 sha:36e4678e src:manual/17-esptool.md:277 status:verbatim -->
 ### T-17-116 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3868,7 +3868,7 @@ received.`**
 
 ---
 
-<!-- fc id:T-17-117 sha:046e97d7 src:manual/17-esptool.md:280 klas:E -->
+<!-- fc id:T-17-117 sha:046e97d7 src:manual/17-esptool.md:280 status:no-external-signal -->
 ### T-17-117 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3894,7 +3894,7 @@ received.`**
 
 ---
 
-<!-- fc id:T-17-118 sha:7eae188f src:manual/17-esptool.md:284 klas:A -->
+<!-- fc id:T-17-118 sha:7eae188f src:manual/17-esptool.md:284 status:verbatim -->
 ### T-17-118 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3925,7 +3925,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-119 sha:a9001ab8 src:manual/17-esptool.md:284 klas:A -->
+<!-- fc id:T-17-119 sha:a9001ab8 src:manual/17-esptool.md:284 status:verbatim -->
 ### T-17-119 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3957,7 +3957,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-120 sha:2936ba3a src:manual/17-esptool.md:286 klas:A -->
+<!-- fc id:T-17-120 sha:2936ba3a src:manual/17-esptool.md:286 status:verbatim -->
 ### T-17-120 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -3999,7 +3999,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-121 sha:81eb3b69 src:manual/17-esptool.md:290 klas:F -->
+<!-- fc id:T-17-121 sha:81eb3b69 src:manual/17-esptool.md:290 status:unchecked -->
 ### T-17-121 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4020,7 +4020,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-122 sha:c018ab70 src:manual/17-esptool.md:292 klas:E -->
+<!-- fc id:T-17-122 sha:c018ab70 src:manual/17-esptool.md:292 status:no-external-signal -->
 ### T-17-122 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4052,7 +4052,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-123 sha:1070199a src:manual/17-esptool.md:293 klas:F -->
+<!-- fc id:T-17-123 sha:1070199a src:manual/17-esptool.md:293 status:unchecked -->
 ### T-17-123 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4074,7 +4074,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-124 sha:7c5d9fa9 src:manual/17-esptool.md:295 klas:A -->
+<!-- fc id:T-17-124 sha:7c5d9fa9 src:manual/17-esptool.md:295 status:verbatim -->
 ### T-17-124 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4112,7 +4112,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-125 sha:d0ad404c src:manual/17-esptool.md:297 klas:F -->
+<!-- fc id:T-17-125 sha:d0ad404c src:manual/17-esptool.md:297 status:unchecked -->
 ### T-17-125 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4134,7 +4134,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-126 sha:cf4197d0 src:manual/17-esptool.md:297 klas:E -->
+<!-- fc id:T-17-126 sha:cf4197d0 src:manual/17-esptool.md:297 status:no-external-signal -->
 ### T-17-126 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4156,7 +4156,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-127 sha:e7619250 src:manual/17-esptool.md:300 klas:A -->
+<!-- fc id:T-17-127 sha:e7619250 src:manual/17-esptool.md:300 status:verbatim -->
 ### T-17-127 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4202,7 +4202,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-128 sha:c6ae817f src:manual/17-esptool.md:302 klas:E -->
+<!-- fc id:T-17-128 sha:c6ae817f src:manual/17-esptool.md:302 status:no-external-signal -->
 ### T-17-128 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4226,7 +4226,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-129 sha:dc7b5a5b src:manual/17-esptool.md:302 klas:E -->
+<!-- fc id:T-17-129 sha:dc7b5a5b src:manual/17-esptool.md:302 status:no-external-signal -->
 ### T-17-129 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4250,7 +4250,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-130 sha:ea00dd94 src:manual/17-esptool.md:303 klas:F -->
+<!-- fc id:T-17-130 sha:ea00dd94 src:manual/17-esptool.md:303 status:unchecked -->
 ### T-17-130 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4274,7 +4274,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-131 sha:acad2592 src:manual/17-esptool.md:304 klas:C -->
+<!-- fc id:T-17-131 sha:acad2592 src:manual/17-esptool.md:304 status:named-unreachable -->
 ### T-17-131 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4303,7 +4303,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-132 sha:ec91ebc5 src:manual/17-esptool.md:307 klas:F -->
+<!-- fc id:T-17-132 sha:ec91ebc5 src:manual/17-esptool.md:307 status:unchecked -->
 ### T-17-132 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4324,7 +4324,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-133 sha:290a4865 src:manual/17-esptool.md:309 klas:E -->
+<!-- fc id:T-17-133 sha:290a4865 src:manual/17-esptool.md:309 status:no-external-signal -->
 ### T-17-133 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4347,7 +4347,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-134 sha:5e738a7f src:manual/17-esptool.md:309 klas:A -->
+<!-- fc id:T-17-134 sha:5e738a7f src:manual/17-esptool.md:309 status:verbatim -->
 ### T-17-134 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4387,7 +4387,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-135 sha:c0befa74 src:manual/17-esptool.md:311 klas:E -->
+<!-- fc id:T-17-135 sha:c0befa74 src:manual/17-esptool.md:311 status:no-external-signal -->
 ### T-17-135 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4410,7 +4410,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-136 sha:c229b138 src:manual/17-esptool.md:313 klas:A -->
+<!-- fc id:T-17-136 sha:c229b138 src:manual/17-esptool.md:313 status:verbatim -->
 ### T-17-136 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4456,7 +4456,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-137 sha:2d9087c4 src:manual/17-esptool.md:315 klas:A -->
+<!-- fc id:T-17-137 sha:2d9087c4 src:manual/17-esptool.md:315 status:verbatim -->
 ### T-17-137 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4495,7 +4495,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-138 sha:efdb570a src:manual/17-esptool.md:316 klas:F -->
+<!-- fc id:T-17-138 sha:efdb570a src:manual/17-esptool.md:316 status:unchecked -->
 ### T-17-138 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4517,7 +4517,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-139 sha:8a18dd3e src:manual/17-esptool.md:318 klas:F -->
+<!-- fc id:T-17-139 sha:8a18dd3e src:manual/17-esptool.md:318 status:unchecked -->
 ### T-17-139 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4538,7 +4538,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-140 sha:f7560ce0 src:manual/17-esptool.md:320 klas:E -->
+<!-- fc id:T-17-140 sha:f7560ce0 src:manual/17-esptool.md:320 status:no-external-signal -->
 ### T-17-140 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4562,7 +4562,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-141 sha:567f0570 src:manual/17-esptool.md:321 klas:A -->
+<!-- fc id:T-17-141 sha:567f0570 src:manual/17-esptool.md:321 status:verbatim -->
 ### T-17-141 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4599,7 +4599,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-142 sha:f93a70ab src:manual/17-esptool.md:325 klas:F -->
+<!-- fc id:T-17-142 sha:f93a70ab src:manual/17-esptool.md:325 status:unchecked -->
 ### T-17-142 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4620,7 +4620,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-143 sha:c2ed87c0 src:manual/17-esptool.md:327 klas:K -->
+<!-- fc id:T-17-143 sha:c2ed87c0 src:manual/17-esptool.md:327 status:code-context -->
 ### T-17-143 · kod · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4658,7 +4658,7 @@ esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
 
 ---
 
-<!-- fc id:T-17-144 sha:e196de7b src:manual/17-esptool.md:328 klas:A -->
+<!-- fc id:T-17-144 sha:e196de7b src:manual/17-esptool.md:328 status:verbatim -->
 ### T-17-144 · kod-ryadok · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4694,7 +4694,7 @@ esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
 
 ---
 
-<!-- fc id:T-17-145 sha:10d41f6e src:manual/17-esptool.md:331 klas:A -->
+<!-- fc id:T-17-145 sha:10d41f6e src:manual/17-esptool.md:331 status:verbatim -->
 ### T-17-145 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4730,7 +4730,7 @@ esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
 
 ---
 
-<!-- fc id:T-17-146 sha:6ac44b20 src:manual/17-esptool.md:332 klas:E -->
+<!-- fc id:T-17-146 sha:6ac44b20 src:manual/17-esptool.md:332 status:no-external-signal -->
 ### T-17-146 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4753,7 +4753,7 @@ esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
 
 ---
 
-<!-- fc id:T-17-147 sha:59239464 src:manual/17-esptool.md:335 klas:F -->
+<!-- fc id:T-17-147 sha:59239464 src:manual/17-esptool.md:335 status:unchecked -->
 ### T-17-147 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4775,7 +4775,7 @@ esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
 
 ---
 
-<!-- fc id:T-17-148 sha:391b6f3d src:manual/17-esptool.md:338 klas:A -->
+<!-- fc id:T-17-148 sha:391b6f3d src:manual/17-esptool.md:338 status:verbatim -->
 ### T-17-148 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4821,7 +4821,7 @@ esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
 
 ---
 
-<!-- fc id:T-17-149 sha:2d2315ba src:manual/17-esptool.md:338 klas:A -->
+<!-- fc id:T-17-149 sha:2d2315ba src:manual/17-esptool.md:338 status:verbatim -->
 ### T-17-149 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4848,7 +4848,7 @@ esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
 
 ---
 
-<!-- fc id:T-17-150 sha:6f4d2986 src:manual/17-esptool.md:340 klas:A -->
+<!-- fc id:T-17-150 sha:6f4d2986 src:manual/17-esptool.md:340 status:verbatim -->
 ### T-17-150 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4888,7 +4888,7 @@ esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
 
 ---
 
-<!-- fc id:T-17-151 sha:4a61aa2a src:manual/17-esptool.md:341 klas:E -->
+<!-- fc id:T-17-151 sha:4a61aa2a src:manual/17-esptool.md:341 status:no-external-signal -->
 ### T-17-151 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4911,7 +4911,7 @@ esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
 
 ---
 
-<!-- fc id:T-17-152 sha:6c0640de src:manual/17-esptool.md:341 klas:F -->
+<!-- fc id:T-17-152 sha:6c0640de src:manual/17-esptool.md:341 status:unchecked -->
 ### T-17-152 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4934,7 +4934,7 @@ esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
 
 ---
 
-<!-- fc id:T-17-153 sha:0df8e570 src:manual/17-esptool.md:344 klas:A -->
+<!-- fc id:T-17-153 sha:0df8e570 src:manual/17-esptool.md:344 status:verbatim -->
 ### T-17-153 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4982,7 +4982,7 @@ set --no-stub to suppress this warning.` — не помилка: `esptool` са
 
 ---
 
-<!-- fc id:T-17-154 sha:d286f7b3 src:manual/17-esptool.md:348 klas:F -->
+<!-- fc id:T-17-154 sha:d286f7b3 src:manual/17-esptool.md:348 status:unchecked -->
 ### T-17-154 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -5004,7 +5004,7 @@ set --no-stub to suppress this warning.` — не помилка: `esptool` са
 
 ---
 
-<!-- fc id:T-17-155 sha:2a9519b0 src:manual/17-esptool.md:353 klas:E -->
+<!-- fc id:T-17-155 sha:2a9519b0 src:manual/17-esptool.md:353 status:no-external-signal -->
 ### T-17-155 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -5027,7 +5027,7 @@ Espressif дає графічну програму (Flash Download Tool) — т�
 
 ---
 
-<!-- fc id:T-17-156 sha:918d6503 src:manual/17-esptool.md:354 klas:E -->
+<!-- fc id:T-17-156 sha:918d6503 src:manual/17-esptool.md:354 status:no-external-signal -->
 ### T-17-156 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -5050,7 +5050,7 @@ Espressif дає графічну програму (Flash Download Tool) — т�
 
 ---
 
-<!-- fc id:T-17-157 sha:313ef396 src:manual/17-esptool.md:357 klas:F -->
+<!-- fc id:T-17-157 sha:313ef396 src:manual/17-esptool.md:357 status:unchecked -->
 ### T-17-157 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -5074,7 +5074,7 @@ Espressif дає графічну програму (Flash Download Tool) — т�
 
 ---
 
-<!-- fc id:T-17-158 sha:e977c57d src:manual/17-esptool.md:359 klas:E -->
+<!-- fc id:T-17-158 sha:e977c57d src:manual/17-esptool.md:359 status:no-external-signal -->
 ### T-17-158 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -5098,7 +5098,7 @@ Espressif дає графічну програму (Flash Download Tool) — т�
 
 ---
 
-<!-- fc id:T-17-159 sha:2d322667 src:manual/17-esptool.md:364 klas:A -->
+<!-- fc id:T-17-159 sha:2d322667 src:manual/17-esptool.md:364 status:verbatim -->
 ### T-17-159 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -5142,7 +5142,7 @@ Espressif дає графічну програму (Flash Download Tool) — т�
 
 ---
 
-<!-- fc id:T-17-160 sha:4430be4b src:manual/17-esptool.md:366 klas:A -->
+<!-- fc id:T-17-160 sha:4430be4b src:manual/17-esptool.md:366 status:verbatim -->
 ### T-17-160 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -5183,7 +5183,7 @@ Espressif дає графічну програму (Flash Download Tool) — т�
 
 ---
 
-<!-- fc id:T-17-161 sha:2afe9b5f src:manual/17-esptool.md:367 klas:B -->
+<!-- fc id:T-17-161 sha:2afe9b5f src:manual/17-esptool.md:367 status:derived -->
 ### T-17-161 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -5212,7 +5212,7 @@ Espressif дає графічну програму (Flash Download Tool) — т�
 
 ---
 
-<!-- fc id:T-17-162 sha:a7f08f37 src:manual/17-esptool.md:370 klas:B -->
+<!-- fc id:T-17-162 sha:a7f08f37 src:manual/17-esptool.md:370 status:derived -->
 ### T-17-162 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -5243,7 +5243,7 @@ Espressif дає графічну програму (Flash Download Tool) — т�
 
 ---
 
-<!-- fc id:T-17-163 sha:0de9cf8b src:manual/17-esptool.md:370 klas:E -->
+<!-- fc id:T-17-163 sha:0de9cf8b src:manual/17-esptool.md:370 status:no-external-signal -->
 ### T-17-163 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -5265,7 +5265,7 @@ Espressif дає графічну програму (Flash Download Tool) — т�
 
 ---
 
-<!-- fc id:T-17-164 sha:42368b26 src:manual/17-esptool.md:373 klas:A -->
+<!-- fc id:T-17-164 sha:42368b26 src:manual/17-esptool.md:373 status:verbatim -->
 ### T-17-164 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -5308,7 +5308,7 @@ Espressif дає графічну програму (Flash Download Tool) — т�
 
 ---
 
-<!-- fc id:T-17-165 sha:33a8f7c8 src:manual/17-esptool.md:375 klas:A -->
+<!-- fc id:T-17-165 sha:33a8f7c8 src:manual/17-esptool.md:375 status:verbatim -->
 ### T-17-165 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**

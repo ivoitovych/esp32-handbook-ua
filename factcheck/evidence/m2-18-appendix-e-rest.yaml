@@ -1,6 +1,5 @@
 - nazva: DS3231 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
   zbih: DS3231 · Бібліотека → RTClib
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Немає зовнішнього джерела для перевірки — назва бібліотеки Adafruit/Arduino не є характеристикою
@@ -18,7 +17,6 @@
   - aeaa568e
 - nazva: INA219 / INA226 — обидва повідомляють струм і напругу
   zbih: INA219 / INA226 · Що дає → струм і напруга
-  klas: A
   dzherelo: Texas Instruments, INA219 (SBOS448G) і INA226 (SBOS547C) Datasheet, розділ 1 «Features» кожного
   cytata: '(INA219)
 
@@ -86,7 +84,6 @@
     не побачить.'
 - nazva: INA219 / INA226 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
   zbih: INA219 / INA226 · Бібліотека → Adafruit INA219
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Немає зовнішнього джерела для перевірки — назва бібліотеки не є характеристикою кристала.
@@ -106,7 +103,6 @@
   - bf63dda1
 - nazva: PCF8574 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
   zbih: PCF8574 · Бібліотека → PCF8574
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Немає зовнішнього джерела для перевірки — назва бібліотеки не є характеристикою кристала. «Що
@@ -124,7 +120,6 @@
   - 7da6b06b
 - nazva: MCP23017 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
   zbih: MCP23017 · Бібліотека → MCP23017
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Немає зовнішнього джерела для перевірки. «Що дає» для MCP23017 уже клас A в m2-08-dyspleyi-rozshyryuvachi.yaml.
@@ -140,7 +135,6 @@
   - 49d948f0
 - nazva: ST7789 — однокристальний драйвер TFT
   zbih: ST7789 · Що дає → TFT-дисплей
-  klas: A
   dzherelo: 'Sitronix, ST7789V Datasheet, Version 1.3 (2014/03), титульна сторінка (кеш: source-cache/st7789.pdf)'
   cytata: 'ST7789V
 
@@ -170,7 +164,6 @@
     класом A в pass-16-interfeysy — новий запис для нього не потрібен.
 - nazva: ILI9341 — однокристальний драйвер TFT
   zbih: ILI9341 · Що дає → TFT-дисплей
-  klas: A
   dzherelo: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, Specification V1.11, титульна сторінка
     (кеш: source-cache/ili9341.pdf)'
   cytata: 'ILI9341
@@ -202,7 +195,6 @@
     ним підтверджується інша клітинка того самого рядка — «TFT-дисплей».
 - nazva: ILI9341 — SPI Mode 0 (CPHA=0, зразок на першому фронті)
   zbih: ILI9341 · Режим → 0
-  klas: A
   dzherelo: ILI Technology, ILI9341 Datasheet V1.11, розділ 6 «Pin Description» (SDI/SDA) і розділ 7.1.9
     «Write Cycle Sequence»
   cytata: 'SDI/SDA    I/O    The data is applied on the rising edge of the SCL signal.
@@ -254,7 +246,6 @@
   - adfd8b57
 - nazva: ILI9341 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
   zbih: ILI9341 · Бібліотека → TFT_eSPI, LovyanGFX
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Немає зовнішнього джерела для перевірки.
@@ -268,7 +259,6 @@
   note: Клас E, той самий випадок.
 - nazva: ST7789 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
   zbih: ST7789 · Бібліотека → TFT_eSPI, LovyanGFX
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Немає зовнішнього джерела для перевірки.
@@ -282,7 +272,6 @@
   note: Клас E, той самий випадок.
 - nazva: MCP2515 — окремий CAN-контролер по SPI, Mode 0 підтримується
   zbih: MCP2515 · Режим → 0
-  klas: A
   dzherelo: 'Microchip, MCP2515 Stand-Alone CAN Controller with SPI Interface (DS20001801J), розділ «Features»
     (кеш: source-cache/mcp2515.pdf)'
   cytata: "MCP2515\nStand-Alone CAN Controller with SPI Interface\nFeatures\n• High-Speed SPI Interface\
@@ -306,7 +295,6 @@
   - 27d739d6
 - nazva: MCP2515 — стендалон CAN-контролер із SPI
   zbih: MCP2515 · Що дає → зовнішній CAN
-  klas: A
   dzherelo: Microchip, MCP2515 Datasheet (DS20001801J), титульна сторінка й розділ «Description»
   cytata: 'MCP2515
 
@@ -348,7 +336,6 @@
   - 3ec6e643
 - nazva: MCP2515 — «Бібліотека → —» це посилання на вбудований контролер ESP32, не факт про MCP2515
   zbih: MCP2515 · Бібліотека → — \(у ESP32 є свій, розділ 38\)
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Немає зовнішнього джерела для перевірки — MCP2515 datasheet нічого не каже про периферію ESP32.
@@ -372,7 +359,6 @@
   - 8f789500
 - nazva: MAX31855 / MAX6675 — обидва термопарні перетворювачі
   zbih: MAX31855\s+·\s+Що\s+дає\s+→\s+термопара|MAX6675\s+·\s+Що\s+дає\s+→\s+термопара,\s+дешевший
-  klas: A
   dzherelo: Maxim/Analog Devices, MAX31855 (19-5793) і MAX6675 (19-2235) Datasheet, титульна сторінка
     кожного
   cytata: '(MAX31855)
@@ -432,7 +418,6 @@
   - bd6d2fd1
 - nazva: MAX31855 / MAX6675 — SPI Mode 0 в обох референсних бібліотеках
   zbih: MAX31855\s+·\s+Режим\s+→\s+0|MAX6675\s+·\s+Режим\s+→\s+0
-  klas: A
   dzherelo: adafruit/Adafruit-MAX31855-library, `Adafruit_MAX31855.cpp`; RobTillaart/MAX6675, `MAX6675.cpp`
   cytata: "(Adafruit_MAX31855.cpp)\nAdafruit_MAX31855::Adafruit_MAX31855(int8_t _cs, SPIClass *_spi)\n\
     \    : spi_dev(_cs, 1000000, SPI_BITORDER_MSBFIRST, SPI_MODE0, _spi) {}\n\n(RobTillaart/MAX6675/MAX6675.cpp)\n\
@@ -473,7 +458,6 @@
   - f54590ca
 - nazva: MAX31855 / MAX6675 — «Бібліотека → Adafruit MAX31855» не працює з MAX6675
   zbih: MAX31855\s+·\s+Бібліотека\s+→\s+Adafruit\s+MAX31855|MAX6675\s+·\s+Бібліотека\s+→\s+Adafruit\s+MAX6675
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Немає зовнішнього джерела для перевірки самої назви бібліотеки — але перевірено (curl raw.githubusercontent,
@@ -510,7 +494,6 @@
   - ec5f5dc8
 - nazva: HC-SR04 — тригер і ECHO, 5 В TTL
   zbih: HC-SR04 · Як → тригер \+ вимір `ECHO` \(⛔ 5 В!\)
-  klas: A
   dzherelo: 'Elecfreaks, Ultrasonic Ranging Module HC-SR04 (product datasheet) (кеш: source-cache/hc-sr04.pdf)'
   cytata: "Wire connecting direct as following:\n   5V Supply\n   Trigger Pulse Input\n   Echo Pulse Output\n\
     \   0V Ground\n\nElectric Parameter\nWorking Voltage                DC 5 V\nTrigger Input Signal \
@@ -540,7 +523,6 @@
     дослівні.'
 - nazva: HC-SR04 — «Розділ → 45» це внутрішнє посилання книги, не факт про модуль
   zbih: HC-SR04 · Розділ → 45
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Немає зовнішнього джерела для перевірки — номер розділу це структура самої книги, не характеристика

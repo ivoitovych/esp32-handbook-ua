@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/29-symptomy.md`
 
-Одиниць твердження: **106**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **106**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-29-001 sha:80be63cb src:manual/29-symptomy.md:3 klas:E -->
+<!-- fc id:T-29-001 sha:80be63cb src:manual/29-symptomy.md:3 status:no-external-signal -->
 ### T-29-001 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-29-002 sha:6f24973a src:manual/29-symptomy.md:3 klas:E -->
+<!-- fc id:T-29-002 sha:6f24973a src:manual/29-symptomy.md:3 status:no-external-signal -->
 ### T-29-002 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-29-003 sha:f3041f69 src:manual/29-symptomy.md:6 klas:E -->
+<!-- fc id:T-29-003 sha:f3041f69 src:manual/29-symptomy.md:6 status:no-external-signal -->
 ### T-29-003 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -74,7 +74,7 @@
 
 ---
 
-<!-- fc id:T-29-004 sha:2bb44c23 src:manual/29-symptomy.md:6 klas:E -->
+<!-- fc id:T-29-004 sha:2bb44c23 src:manual/29-symptomy.md:6 status:no-external-signal -->
 ### T-29-004 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -96,7 +96,7 @@
 
 ---
 
-<!-- fc id:T-29-005 sha:feebcdac src:manual/29-symptomy.md:11 klas:E -->
+<!-- fc id:T-29-005 sha:feebcdac src:manual/29-symptomy.md:11 status:no-external-signal -->
 ### T-29-005 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -118,7 +118,7 @@
 
 ---
 
-<!-- fc id:T-29-006 sha:9dc31a69 src:manual/29-symptomy.md:12 klas:E -->
+<!-- fc id:T-29-006 sha:9dc31a69 src:manual/29-symptomy.md:12 status:no-external-signal -->
 ### T-29-006 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -140,7 +140,7 @@
 
 ---
 
-<!-- fc id:T-29-007 sha:59590761 src:manual/29-symptomy.md:14 klas:E -->
+<!-- fc id:T-29-007 sha:59590761 src:manual/29-symptomy.md:14 status:no-external-signal -->
 ### T-29-007 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-29-008 sha:e64e9cb1 src:manual/29-symptomy.md:17 klas:E -->
+<!-- fc id:T-29-008 sha:e64e9cb1 src:manual/29-symptomy.md:17 status:no-external-signal -->
 ### T-29-008 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -184,7 +184,7 @@
 
 ---
 
-<!-- fc id:T-29-009 sha:872e6d93 src:manual/29-symptomy.md:22 klas:S -->
+<!-- fc id:T-29-009 sha:872e6d93 src:manual/29-symptomy.md:22 status:self-consistent -->
 ### T-29-009 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-29-010 sha:d92f6b11 src:manual/29-symptomy.md:24 klas:E -->
+<!-- fc id:T-29-010 sha:d92f6b11 src:manual/29-symptomy.md:24 status:no-external-signal -->
 ### T-29-010 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -249,7 +249,7 @@
 
 ---
 
-<!-- fc id:T-29-011 sha:7d49ceb1 src:manual/29-symptomy.md:24 klas:E -->
+<!-- fc id:T-29-011 sha:7d49ceb1 src:manual/29-symptomy.md:24 status:no-external-signal -->
 ### T-29-011 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -271,7 +271,7 @@
 
 ---
 
-<!-- fc id:T-29-012 sha:20d387b3 src:manual/29-symptomy.md:25 klas:E -->
+<!-- fc id:T-29-012 sha:20d387b3 src:manual/29-symptomy.md:25 status:no-external-signal -->
 ### T-29-012 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -293,7 +293,7 @@
 
 ---
 
-<!-- fc id:T-29-013 sha:f21f3796 src:manual/29-symptomy.md:27 klas:F -->
+<!-- fc id:T-29-013 sha:f21f3796 src:manual/29-symptomy.md:27 status:unchecked -->
 ### T-29-013 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -317,7 +317,7 @@
 
 ---
 
-<!-- fc id:T-29-014 sha:2ed8de50 src:manual/29-symptomy.md:28 klas:E -->
+<!-- fc id:T-29-014 sha:2ed8de50 src:manual/29-symptomy.md:28 status:no-external-signal -->
 ### T-29-014 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -350,7 +350,7 @@
 
 ---
 
-<!-- fc id:T-29-015 sha:3d87fec5 src:manual/29-symptomy.md:32 klas:F -->
+<!-- fc id:T-29-015 sha:3d87fec5 src:manual/29-symptomy.md:32 status:unchecked -->
 ### T-29-015 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -373,7 +373,7 @@
 
 ---
 
-<!-- fc id:T-29-016 sha:8d18fdd6 src:manual/29-symptomy.md:33 klas:E -->
+<!-- fc id:T-29-016 sha:8d18fdd6 src:manual/29-symptomy.md:33 status:no-external-signal -->
 ### T-29-016 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -396,7 +396,7 @@
 
 ---
 
-<!-- fc id:T-29-017 sha:c829ea0d src:manual/29-symptomy.md:36 klas:E -->
+<!-- fc id:T-29-017 sha:c829ea0d src:manual/29-symptomy.md:36 status:no-external-signal -->
 ### T-29-017 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -428,7 +428,7 @@
 
 ---
 
-<!-- fc id:T-29-018 sha:e0ce2843 src:manual/29-symptomy.md:41 klas:K -->
+<!-- fc id:T-29-018 sha:e0ce2843 src:manual/29-symptomy.md:41 status:code-context -->
 ### T-29-018 · kod · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -478,7 +478,7 @@ A fatal error occurred: Failed to connect to ESP32: No serial data received.
 
 ---
 
-<!-- fc id:T-29-019 sha:9d2ac606 src:manual/29-symptomy.md:47 klas:F -->
+<!-- fc id:T-29-019 sha:9d2ac606 src:manual/29-symptomy.md:47 status:unchecked -->
 ### T-29-019 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -502,7 +502,7 @@ A fatal error occurred: Failed to connect to ESP32: No serial data received.
 
 ---
 
-<!-- fc id:T-29-020 sha:871d4530 src:manual/29-symptomy.md:54 klas:E -->
+<!-- fc id:T-29-020 sha:871d4530 src:manual/29-symptomy.md:54 status:no-external-signal -->
 ### T-29-020 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -523,7 +523,7 @@ A fatal error occurred: Failed to connect to ESP32: No serial data received.
 
 ---
 
-<!-- fc id:T-29-021 sha:687859e4 src:manual/29-symptomy.md:56 klas:E -->
+<!-- fc id:T-29-021 sha:687859e4 src:manual/29-symptomy.md:56 status:no-external-signal -->
 ### T-29-021 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -548,7 +548,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-022 sha:3830c815 src:manual/29-symptomy.md:57 klas:A -->
+<!-- fc id:T-29-022 sha:3830c815 src:manual/29-symptomy.md:57 status:verbatim -->
 ### T-29-022 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -579,7 +579,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-023 sha:354f47e6 src:manual/29-symptomy.md:58 klas:F -->
+<!-- fc id:T-29-023 sha:354f47e6 src:manual/29-symptomy.md:58 status:unchecked -->
 ### T-29-023 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -604,7 +604,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-024 sha:f6f1716c src:manual/29-symptomy.md:62 klas:F -->
+<!-- fc id:T-29-024 sha:f6f1716c src:manual/29-symptomy.md:62 status:unchecked -->
 ### T-29-024 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -626,7 +626,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-025 sha:c49ec294 src:manual/29-symptomy.md:65 klas:F -->
+<!-- fc id:T-29-025 sha:c49ec294 src:manual/29-symptomy.md:65 status:unchecked -->
 ### T-29-025 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -648,7 +648,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-026 sha:4c4891ef src:manual/29-symptomy.md:68 klas:A -->
+<!-- fc id:T-29-026 sha:4c4891ef src:manual/29-symptomy.md:68 status:verbatim -->
 ### T-29-026 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -692,7 +692,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-027 sha:f2e062af src:manual/29-symptomy.md:68 klas:F -->
+<!-- fc id:T-29-027 sha:f2e062af src:manual/29-symptomy.md:68 status:unchecked -->
 ### T-29-027 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -714,7 +714,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-028 sha:d2833e86 src:manual/29-symptomy.md:73 klas:E -->
+<!-- fc id:T-29-028 sha:d2833e86 src:manual/29-symptomy.md:73 status:no-external-signal -->
 ### T-29-028 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -735,7 +735,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-029 sha:4c7ac127 src:manual/29-symptomy.md:75 klas:E -->
+<!-- fc id:T-29-029 sha:4c7ac127 src:manual/29-symptomy.md:75 status:no-external-signal -->
 ### T-29-029 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -757,7 +757,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-030 sha:c50282dd src:manual/29-symptomy.md:76 klas:E -->
+<!-- fc id:T-29-030 sha:c50282dd src:manual/29-symptomy.md:76 status:no-external-signal -->
 ### T-29-030 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -779,7 +779,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-031 sha:2eb761b7 src:manual/29-symptomy.md:78 klas:A -->
+<!-- fc id:T-29-031 sha:2eb761b7 src:manual/29-symptomy.md:78 status:verbatim -->
 ### T-29-031 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -808,7 +808,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-032 sha:0dd9497f src:manual/29-symptomy.md:82 klas:E -->
+<!-- fc id:T-29-032 sha:0dd9497f src:manual/29-symptomy.md:82 status:no-external-signal -->
 ### T-29-032 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -829,7 +829,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-033 sha:dd1ad408 src:manual/29-symptomy.md:86 klas:E -->
+<!-- fc id:T-29-033 sha:dd1ad408 src:manual/29-symptomy.md:86 status:no-external-signal -->
 ### T-29-033 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -850,7 +850,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-034 sha:2aa50ba1 src:manual/29-symptomy.md:88 klas:D -->
+<!-- fc id:T-29-034 sha:2aa50ba1 src:manual/29-symptomy.md:88 status:arithmetic -->
 ### T-29-034 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -883,7 +883,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-035 sha:3548f5bc src:manual/29-symptomy.md:92 klas:E -->
+<!-- fc id:T-29-035 sha:3548f5bc src:manual/29-symptomy.md:92 status:no-external-signal -->
 ### T-29-035 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -914,7 +914,7 @@ C5 і H4 — повна таблиця в розділі 16. Команда,
 
 ---
 
-<!-- fc id:T-29-036 sha:efe3b43a src:manual/29-symptomy.md:98 klas:E -->
+<!-- fc id:T-29-036 sha:efe3b43a src:manual/29-symptomy.md:98 status:no-external-signal -->
 ### T-29-036 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -937,7 +937,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-037 sha:035e28b3 src:manual/29-symptomy.md:99 klas:F -->
+<!-- fc id:T-29-037 sha:035e28b3 src:manual/29-symptomy.md:99 status:unchecked -->
 ### T-29-037 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -960,7 +960,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-038 sha:4697f0b8 src:manual/29-symptomy.md:100 klas:E -->
+<!-- fc id:T-29-038 sha:4697f0b8 src:manual/29-symptomy.md:100 status:no-external-signal -->
 ### T-29-038 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -983,7 +983,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-039 sha:aaa919bc src:manual/29-symptomy.md:102 klas:E -->
+<!-- fc id:T-29-039 sha:aaa919bc src:manual/29-symptomy.md:102 status:no-external-signal -->
 ### T-29-039 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1005,7 +1005,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-040 sha:4b65e532 src:manual/29-symptomy.md:103 klas:E -->
+<!-- fc id:T-29-040 sha:4b65e532 src:manual/29-symptomy.md:103 status:no-external-signal -->
 ### T-29-040 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1034,7 +1034,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-041 sha:0bd2c14d src:manual/29-symptomy.md:105 klas:E -->
+<!-- fc id:T-29-041 sha:0bd2c14d src:manual/29-symptomy.md:105 status:no-external-signal -->
 ### T-29-041 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1056,7 +1056,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-042 sha:3dae8862 src:manual/29-symptomy.md:110 klas:E -->
+<!-- fc id:T-29-042 sha:3dae8862 src:manual/29-symptomy.md:110 status:no-external-signal -->
 ### T-29-042 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1093,7 +1093,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-043 sha:cd6239eb src:manual/29-symptomy.md:111 klas:E -->
+<!-- fc id:T-29-043 sha:cd6239eb src:manual/29-symptomy.md:111 status:no-external-signal -->
 ### T-29-043 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1128,7 +1128,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-044 sha:e39a2e13 src:manual/29-symptomy.md:115 klas:E -->
+<!-- fc id:T-29-044 sha:e39a2e13 src:manual/29-symptomy.md:115 status:no-external-signal -->
 ### T-29-044 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1149,7 +1149,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-045 sha:98c6ab36 src:manual/29-symptomy.md:117 klas:E -->
+<!-- fc id:T-29-045 sha:98c6ab36 src:manual/29-symptomy.md:117 status:no-external-signal -->
 ### T-29-045 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1171,7 +1171,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-046 sha:50022168 src:manual/29-symptomy.md:118 klas:E -->
+<!-- fc id:T-29-046 sha:50022168 src:manual/29-symptomy.md:118 status:no-external-signal -->
 ### T-29-046 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1193,7 +1193,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-047 sha:bfeb782a src:manual/29-symptomy.md:120 klas:A -->
+<!-- fc id:T-29-047 sha:bfeb782a src:manual/29-symptomy.md:120 status:verbatim -->
 ### T-29-047 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1221,7 +1221,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-048 sha:fb7475ce src:manual/29-symptomy.md:120 klas:E -->
+<!-- fc id:T-29-048 sha:fb7475ce src:manual/29-symptomy.md:120 status:no-external-signal -->
 ### T-29-048 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1256,7 +1256,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-049 sha:cfd91162 src:manual/29-symptomy.md:123 klas:F -->
+<!-- fc id:T-29-049 sha:cfd91162 src:manual/29-symptomy.md:123 status:unchecked -->
 ### T-29-049 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1278,7 +1278,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-050 sha:5d704916 src:manual/29-symptomy.md:128 klas:E -->
+<!-- fc id:T-29-050 sha:5d704916 src:manual/29-symptomy.md:128 status:no-external-signal -->
 ### T-29-050 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1300,7 +1300,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-051 sha:c5d58551 src:manual/29-symptomy.md:128 klas:E -->
+<!-- fc id:T-29-051 sha:c5d58551 src:manual/29-symptomy.md:128 status:no-external-signal -->
 ### T-29-051 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1322,7 +1322,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-052 sha:96190183 src:manual/29-symptomy.md:129 klas:E -->
+<!-- fc id:T-29-052 sha:96190183 src:manual/29-symptomy.md:129 status:no-external-signal -->
 ### T-29-052 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1344,7 +1344,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-053 sha:2219687e src:manual/29-symptomy.md:131 klas:E -->
+<!-- fc id:T-29-053 sha:2219687e src:manual/29-symptomy.md:131 status:no-external-signal -->
 ### T-29-053 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1377,7 +1377,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-054 sha:f90df359 src:manual/29-symptomy.md:133 klas:E -->
+<!-- fc id:T-29-054 sha:f90df359 src:manual/29-symptomy.md:133 status:no-external-signal -->
 ### T-29-054 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1411,7 +1411,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-055 sha:4793f7fb src:manual/29-symptomy.md:138 klas:A -->
+<!-- fc id:T-29-055 sha:4793f7fb src:manual/29-symptomy.md:138 status:verbatim -->
 ### T-29-055 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1441,7 +1441,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-056 sha:9e4948a6 src:manual/29-symptomy.md:139 klas:B -->
+<!-- fc id:T-29-056 sha:9e4948a6 src:manual/29-symptomy.md:139 status:derived -->
 ### T-29-056 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1479,7 +1479,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-057 sha:50dafd95 src:manual/29-symptomy.md:142 klas:F -->
+<!-- fc id:T-29-057 sha:50dafd95 src:manual/29-symptomy.md:142 status:unchecked -->
 ### T-29-057 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1501,7 +1501,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-058 sha:2e4460f3 src:manual/29-symptomy.md:145 klas:E -->
+<!-- fc id:T-29-058 sha:2e4460f3 src:manual/29-symptomy.md:145 status:no-external-signal -->
 ### T-29-058 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1523,7 +1523,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-059 sha:7296ca89 src:manual/29-symptomy.md:150 klas:F -->
+<!-- fc id:T-29-059 sha:7296ca89 src:manual/29-symptomy.md:150 status:unchecked -->
 ### T-29-059 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1545,7 +1545,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-060 sha:39d897e6 src:manual/29-symptomy.md:151 klas:E -->
+<!-- fc id:T-29-060 sha:39d897e6 src:manual/29-symptomy.md:151 status:no-external-signal -->
 ### T-29-060 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1567,7 +1567,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-061 sha:6ddf1d6c src:manual/29-symptomy.md:153 klas:B -->
+<!-- fc id:T-29-061 sha:6ddf1d6c src:manual/29-symptomy.md:153 status:derived -->
 ### T-29-061 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1604,7 +1604,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-062 sha:0fa06ef2 src:manual/29-symptomy.md:153 klas:E -->
+<!-- fc id:T-29-062 sha:0fa06ef2 src:manual/29-symptomy.md:153 status:no-external-signal -->
 ### T-29-062 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1626,7 +1626,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-063 sha:10ba3533 src:manual/29-symptomy.md:156 klas:B -->
+<!-- fc id:T-29-063 sha:10ba3533 src:manual/29-symptomy.md:156 status:derived -->
 ### T-29-063 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1663,7 +1663,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-064 sha:0adfdbbd src:manual/29-symptomy.md:157 klas:E -->
+<!-- fc id:T-29-064 sha:0adfdbbd src:manual/29-symptomy.md:157 status:no-external-signal -->
 ### T-29-064 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1685,7 +1685,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-065 sha:e988e007 src:manual/29-symptomy.md:160 klas:A -->
+<!-- fc id:T-29-065 sha:e988e007 src:manual/29-symptomy.md:160 status:verbatim -->
 ### T-29-065 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1727,7 +1727,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-066 sha:e860b038 src:manual/29-symptomy.md:160 klas:F -->
+<!-- fc id:T-29-066 sha:e860b038 src:manual/29-symptomy.md:160 status:unchecked -->
 ### T-29-066 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1751,7 +1751,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 
 ---
 
-<!-- fc id:T-29-067 sha:6af58709 src:manual/29-symptomy.md:164 klas:K -->
+<!-- fc id:T-29-067 sha:6af58709 src:manual/29-symptomy.md:164 status:code-context -->
 ### T-29-067 · kod · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1794,7 +1794,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-068 sha:d5c82469 src:manual/29-symptomy.md:165 klas:A -->
+<!-- fc id:T-29-068 sha:d5c82469 src:manual/29-symptomy.md:165 status:verbatim -->
 ### T-29-068 · kod-ryadok · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1835,7 +1835,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-069 sha:889f654a src:manual/29-symptomy.md:168 klas:A -->
+<!-- fc id:T-29-069 sha:889f654a src:manual/29-symptomy.md:168 status:verbatim -->
 ### T-29-069 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1878,7 +1878,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-070 sha:644cb002 src:manual/29-symptomy.md:174 klas:E -->
+<!-- fc id:T-29-070 sha:644cb002 src:manual/29-symptomy.md:174 status:no-external-signal -->
 ### T-29-070 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1903,7 +1903,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-071 sha:6cd2047b src:manual/29-symptomy.md:176 klas:F -->
+<!-- fc id:T-29-071 sha:6cd2047b src:manual/29-symptomy.md:176 status:unchecked -->
 ### T-29-071 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1928,7 +1928,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-072 sha:7bbf2674 src:manual/29-symptomy.md:182 klas:E -->
+<!-- fc id:T-29-072 sha:7bbf2674 src:manual/29-symptomy.md:182 status:no-external-signal -->
 ### T-29-072 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1949,7 +1949,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-073 sha:3dfc251e src:manual/29-symptomy.md:184 klas:E -->
+<!-- fc id:T-29-073 sha:3dfc251e src:manual/29-symptomy.md:184 status:no-external-signal -->
 ### T-29-073 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1971,7 +1971,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-074 sha:11eaec1e src:manual/29-symptomy.md:185 klas:E -->
+<!-- fc id:T-29-074 sha:11eaec1e src:manual/29-symptomy.md:185 status:no-external-signal -->
 ### T-29-074 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -1993,7 +1993,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-075 sha:7c9939fe src:manual/29-symptomy.md:187 klas:A -->
+<!-- fc id:T-29-075 sha:7c9939fe src:manual/29-symptomy.md:187 status:verbatim -->
 ### T-29-075 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2022,7 +2022,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-076 sha:7c7d0f3b src:manual/29-symptomy.md:188 klas:F -->
+<!-- fc id:T-29-076 sha:7c7d0f3b src:manual/29-symptomy.md:188 status:unchecked -->
 ### T-29-076 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2044,7 +2044,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-077 sha:362e3619 src:manual/29-symptomy.md:192 klas:A -->
+<!-- fc id:T-29-077 sha:362e3619 src:manual/29-symptomy.md:192 status:verbatim -->
 ### T-29-077 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2075,7 +2075,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-078 sha:df97ab76 src:manual/29-symptomy.md:193 klas:E -->
+<!-- fc id:T-29-078 sha:df97ab76 src:manual/29-symptomy.md:193 status:no-external-signal -->
 ### T-29-078 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2098,7 +2098,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-079 sha:647aae7e src:manual/29-symptomy.md:196 klas:E -->
+<!-- fc id:T-29-079 sha:647aae7e src:manual/29-symptomy.md:196 status:no-external-signal -->
 ### T-29-079 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2119,7 +2119,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-080 sha:fb14fcb0 src:manual/29-symptomy.md:198 klas:E -->
+<!-- fc id:T-29-080 sha:fb14fcb0 src:manual/29-symptomy.md:198 status:no-external-signal -->
 ### T-29-080 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2141,7 +2141,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-081 sha:65c17fae src:manual/29-symptomy.md:203 klas:E -->
+<!-- fc id:T-29-081 sha:65c17fae src:manual/29-symptomy.md:203 status:no-external-signal -->
 ### T-29-081 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2163,7 +2163,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-082 sha:38329652 src:manual/29-symptomy.md:206 klas:E -->
+<!-- fc id:T-29-082 sha:38329652 src:manual/29-symptomy.md:206 status:no-external-signal -->
 ### T-29-082 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2185,7 +2185,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-083 sha:74dd739e src:manual/29-symptomy.md:206 klas:E -->
+<!-- fc id:T-29-083 sha:74dd739e src:manual/29-symptomy.md:206 status:no-external-signal -->
 ### T-29-083 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2207,7 +2207,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-084 sha:b64c810d src:manual/29-symptomy.md:209 klas:E -->
+<!-- fc id:T-29-084 sha:b64c810d src:manual/29-symptomy.md:209 status:no-external-signal -->
 ### T-29-084 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2229,7 +2229,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-085 sha:d6ebb180 src:manual/29-symptomy.md:210 klas:E -->
+<!-- fc id:T-29-085 sha:d6ebb180 src:manual/29-symptomy.md:210 status:no-external-signal -->
 ### T-29-085 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2251,7 +2251,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-086 sha:038e86bd src:manual/29-symptomy.md:212 klas:E -->
+<!-- fc id:T-29-086 sha:038e86bd src:manual/29-symptomy.md:212 status:no-external-signal -->
 ### T-29-086 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2273,7 +2273,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-087 sha:b76bf4b9 src:manual/29-symptomy.md:217 klas:E -->
+<!-- fc id:T-29-087 sha:b76bf4b9 src:manual/29-symptomy.md:217 status:no-external-signal -->
 ### T-29-087 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2294,7 +2294,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-088 sha:c415d2f1 src:manual/29-symptomy.md:219 klas:E -->
+<!-- fc id:T-29-088 sha:c415d2f1 src:manual/29-symptomy.md:219 status:no-external-signal -->
 ### T-29-088 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2316,7 +2316,7 @@ gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
 
 ---
 
-<!-- fc id:T-29-089 sha:6479534f src:manual/29-symptomy.md:222 klas:A -->
+<!-- fc id:T-29-089 sha:6479534f src:manual/29-symptomy.md:222 status:verbatim -->
 ### T-29-089 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2356,7 +2356,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-090 sha:fd445aa5 src:manual/29-symptomy.md:228 klas:E -->
+<!-- fc id:T-29-090 sha:fd445aa5 src:manual/29-symptomy.md:228 status:no-external-signal -->
 ### T-29-090 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2382,7 +2382,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-091 sha:b75fa0b1 src:manual/29-symptomy.md:229 klas:E -->
+<!-- fc id:T-29-091 sha:b75fa0b1 src:manual/29-symptomy.md:229 status:no-external-signal -->
 ### T-29-091 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2408,7 +2408,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-092 sha:f9885aac src:manual/29-symptomy.md:230 klas:E -->
+<!-- fc id:T-29-092 sha:f9885aac src:manual/29-symptomy.md:230 status:no-external-signal -->
 ### T-29-092 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2434,7 +2434,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-093 sha:6a07b4bf src:manual/29-symptomy.md:231 klas:E -->
+<!-- fc id:T-29-093 sha:6a07b4bf src:manual/29-symptomy.md:231 status:no-external-signal -->
 ### T-29-093 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2460,7 +2460,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-094 sha:82023775 src:manual/29-symptomy.md:236 klas:E -->
+<!-- fc id:T-29-094 sha:82023775 src:manual/29-symptomy.md:236 status:no-external-signal -->
 ### T-29-094 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2481,7 +2481,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-095 sha:8ff3407f src:manual/29-symptomy.md:238 klas:F -->
+<!-- fc id:T-29-095 sha:8ff3407f src:manual/29-symptomy.md:238 status:unchecked -->
 ### T-29-095 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2504,7 +2504,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-096 sha:712446cc src:manual/29-symptomy.md:238 klas:E -->
+<!-- fc id:T-29-096 sha:712446cc src:manual/29-symptomy.md:238 status:no-external-signal -->
 ### T-29-096 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2527,7 +2527,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-097 sha:9f96c68b src:manual/29-symptomy.md:239 klas:E -->
+<!-- fc id:T-29-097 sha:9f96c68b src:manual/29-symptomy.md:239 status:no-external-signal -->
 ### T-29-097 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2550,7 +2550,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-098 sha:cb58afb6 src:manual/29-symptomy.md:242 klas:E -->
+<!-- fc id:T-29-098 sha:cb58afb6 src:manual/29-symptomy.md:242 status:no-external-signal -->
 ### T-29-098 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2572,7 +2572,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-099 sha:874691f4 src:manual/29-symptomy.md:242 klas:E -->
+<!-- fc id:T-29-099 sha:874691f4 src:manual/29-symptomy.md:242 status:no-external-signal -->
 ### T-29-099 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2594,7 +2594,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-100 sha:2815af55 src:manual/29-symptomy.md:245 klas:E -->
+<!-- fc id:T-29-100 sha:2815af55 src:manual/29-symptomy.md:245 status:no-external-signal -->
 ### T-29-100 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2616,7 +2616,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-101 sha:0804c764 src:manual/29-symptomy.md:245 klas:E -->
+<!-- fc id:T-29-101 sha:0804c764 src:manual/29-symptomy.md:245 status:no-external-signal -->
 ### T-29-101 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2638,7 +2638,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-102 sha:164090d7 src:manual/29-symptomy.md:250 klas:E -->
+<!-- fc id:T-29-102 sha:164090d7 src:manual/29-symptomy.md:250 status:no-external-signal -->
 ### T-29-102 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2659,7 +2659,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-103 sha:06b05129 src:manual/29-symptomy.md:252 klas:E -->
+<!-- fc id:T-29-103 sha:06b05129 src:manual/29-symptomy.md:252 status:no-external-signal -->
 ### T-29-103 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2680,7 +2680,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-104 sha:78a30ad7 src:manual/29-symptomy.md:254 klas:F -->
+<!-- fc id:T-29-104 sha:78a30ad7 src:manual/29-symptomy.md:254 status:unchecked -->
 ### T-29-104 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2701,7 +2701,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-105 sha:18e8f307 src:manual/29-symptomy.md:256 klas:E -->
+<!-- fc id:T-29-105 sha:18e8f307 src:manual/29-symptomy.md:256 status:no-external-signal -->
 ### T-29-105 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**
@@ -2722,7 +2722,7 @@ coredump (розділ 26); поставити пристрій під нава�
 
 ---
 
-<!-- fc id:T-29-106 sha:19973f35 src:manual/29-symptomy.md:258 klas:E -->
+<!-- fc id:T-29-106 sha:19973f35 src:manual/29-symptomy.md:258 status:no-external-signal -->
 ### T-29-106 · proza · `manual/29-symptomy.md`
 
 **Твердження, коротко**

@@ -74,7 +74,7 @@ KOSHYKY: list[tuple[str, str, str, re.Pattern]] = [
 # коли заголовок картки змінили.
 RE_F = re.compile(
     r'<!-- fc id:(?P<id>\S+) sha:\S+ src:(?P<src>[^\s:]+):(?P<ln>\d+) '
-    r'klas:F -->\n### \S+ · (?P<vyd>\w+) · [^\n]*\n\n'
+    r'status:unchecked -->\n### \S+ · (?P<vyd>\w+) · [^\n]*\n\n'
     + factcheck.RE_TVERDZHENNYA.pattern)
 
 
@@ -126,7 +126,7 @@ def klasy() -> dict[str, int]:
     import re as _re
     import factcheck
     lich: dict[str, int] = collections.Counter()
-    vz = _re.compile(r"klas:(\w+) -->")
+    vz = _re.compile(r"status:([\w-]+) -->")
     for g in GRUPY:
         for f in sorted((config.cards_root() / g).glob("*.md")):
             for m in vz.finditer(f.read_text(encoding="utf-8")):

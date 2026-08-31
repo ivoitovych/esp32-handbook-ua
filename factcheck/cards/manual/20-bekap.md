@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/20-bekap.md`
 
-Одиниць твердження: **95**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **95**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-20-001 sha:a8c773ce src:manual/20-bekap.md:3 klas:E -->
+<!-- fc id:T-20-001 sha:a8c773ce src:manual/20-bekap.md:3 status:no-external-signal -->
 ### T-20-001 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -29,7 +29,7 @@
 
 ---
 
-<!-- fc id:T-20-002 sha:59154f75 src:manual/20-bekap.md:5 klas:E -->
+<!-- fc id:T-20-002 sha:59154f75 src:manual/20-bekap.md:5 status:no-external-signal -->
 ### T-20-002 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-20-003 sha:874825bd src:manual/20-bekap.md:5 klas:E -->
+<!-- fc id:T-20-003 sha:874825bd src:manual/20-bekap.md:5 status:no-external-signal -->
 ### T-20-003 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -75,7 +75,7 @@
 
 ---
 
-<!-- fc id:T-20-004 sha:9e2c2e52 src:manual/20-bekap.md:6 klas:E -->
+<!-- fc id:T-20-004 sha:9e2c2e52 src:manual/20-bekap.md:6 status:no-external-signal -->
 ### T-20-004 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -98,7 +98,7 @@
 
 ---
 
-<!-- fc id:T-20-005 sha:6b268f8b src:manual/20-bekap.md:6 klas:A -->
+<!-- fc id:T-20-005 sha:6b268f8b src:manual/20-bekap.md:6 status:verbatim -->
 ### T-20-005 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -127,7 +127,7 @@
 
 ---
 
-<!-- fc id:T-20-006 sha:90482c65 src:manual/20-bekap.md:9 klas:E -->
+<!-- fc id:T-20-006 sha:90482c65 src:manual/20-bekap.md:9 status:no-external-signal -->
 ### T-20-006 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -148,7 +148,7 @@
 
 ---
 
-<!-- fc id:T-20-007 sha:8f177ddb src:manual/20-bekap.md:13 klas:E -->
+<!-- fc id:T-20-007 sha:8f177ddb src:manual/20-bekap.md:13 status:no-external-signal -->
 ### T-20-007 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -170,7 +170,7 @@
 
 ---
 
-<!-- fc id:T-20-008 sha:922b2ef5 src:manual/20-bekap.md:14 klas:F -->
+<!-- fc id:T-20-008 sha:922b2ef5 src:manual/20-bekap.md:14 status:unchecked -->
 ### T-20-008 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -192,7 +192,7 @@
 
 ---
 
-<!-- fc id:T-20-009 sha:68d8d515 src:manual/20-bekap.md:16 klas:E -->
+<!-- fc id:T-20-009 sha:68d8d515 src:manual/20-bekap.md:16 status:no-external-signal -->
 ### T-20-009 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -215,7 +215,7 @@
 
 ---
 
-<!-- fc id:T-20-010 sha:0891c14d src:manual/20-bekap.md:20 klas:F -->
+<!-- fc id:T-20-010 sha:0891c14d src:manual/20-bekap.md:20 status:unchecked -->
 ### T-20-010 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-20-011 sha:1bbabc3f src:manual/20-bekap.md:21 klas:E -->
+<!-- fc id:T-20-011 sha:1bbabc3f src:manual/20-bekap.md:21 status:no-external-signal -->
 ### T-20-011 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -265,7 +265,7 @@
 
 ---
 
-<!-- fc id:T-20-012 sha:14872327 src:manual/20-bekap.md:23 klas:E -->
+<!-- fc id:T-20-012 sha:14872327 src:manual/20-bekap.md:23 status:no-external-signal -->
 ### T-20-012 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -290,7 +290,7 @@
 
 ---
 
-<!-- fc id:T-20-013 sha:f432e1c7 src:manual/20-bekap.md:26 klas:E -->
+<!-- fc id:T-20-013 sha:f432e1c7 src:manual/20-bekap.md:26 status:no-external-signal -->
 ### T-20-013 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -311,7 +311,7 @@
 
 ---
 
-<!-- fc id:T-20-014 sha:aaec56e9 src:manual/20-bekap.md:28 klas:E -->
+<!-- fc id:T-20-014 sha:aaec56e9 src:manual/20-bekap.md:28 status:no-external-signal -->
 ### T-20-014 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -334,7 +334,7 @@
 
 ---
 
-<!-- fc id:T-20-015 sha:f8025f77 src:manual/20-bekap.md:32 klas:F -->
+<!-- fc id:T-20-015 sha:f8025f77 src:manual/20-bekap.md:32 status:unchecked -->
 ### T-20-015 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -356,7 +356,7 @@
 
 ---
 
-<!-- fc id:T-20-016 sha:40e6e1b3 src:manual/20-bekap.md:38 klas:A -->
+<!-- fc id:T-20-016 sha:40e6e1b3 src:manual/20-bekap.md:38 status:verbatim -->
 ### T-20-016 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -386,7 +386,7 @@
 
 ---
 
-<!-- fc id:T-20-017 sha:a546a11c src:manual/20-bekap.md:38 klas:E -->
+<!-- fc id:T-20-017 sha:a546a11c src:manual/20-bekap.md:38 status:no-external-signal -->
 ### T-20-017 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -410,7 +410,7 @@
 
 ---
 
-<!-- fc id:T-20-018 sha:316b59ef src:manual/20-bekap.md:42 klas:F -->
+<!-- fc id:T-20-018 sha:316b59ef src:manual/20-bekap.md:42 status:unchecked -->
 ### T-20-018 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -433,7 +433,7 @@
 
 ---
 
-<!-- fc id:T-20-019 sha:79cf7316 src:manual/20-bekap.md:46 klas:A -->
+<!-- fc id:T-20-019 sha:79cf7316 src:manual/20-bekap.md:46 status:verbatim -->
 ### T-20-019 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -477,7 +477,7 @@
 
 ---
 
-<!-- fc id:T-20-020 sha:6cbbe788 src:manual/20-bekap.md:47 klas:A -->
+<!-- fc id:T-20-020 sha:6cbbe788 src:manual/20-bekap.md:47 status:verbatim -->
 ### T-20-020 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -523,7 +523,7 @@
 
 ---
 
-<!-- fc id:T-20-021 sha:4ea01b87 src:manual/20-bekap.md:52 klas:F -->
+<!-- fc id:T-20-021 sha:4ea01b87 src:manual/20-bekap.md:52 status:unchecked -->
 ### T-20-021 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -548,7 +548,7 @@
 
 ---
 
-<!-- fc id:T-20-022 sha:5d0cb418 src:manual/20-bekap.md:53 klas:E -->
+<!-- fc id:T-20-022 sha:5d0cb418 src:manual/20-bekap.md:53 status:no-external-signal -->
 ### T-20-022 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -573,7 +573,7 @@
 
 ---
 
-<!-- fc id:T-20-023 sha:4ca4dee1 src:manual/20-bekap.md:57 klas:E -->
+<!-- fc id:T-20-023 sha:4ca4dee1 src:manual/20-bekap.md:57 status:no-external-signal -->
 ### T-20-023 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -597,7 +597,7 @@
 
 ---
 
-<!-- fc id:T-20-024 sha:ff67ae9e src:manual/20-bekap.md:57 klas:E -->
+<!-- fc id:T-20-024 sha:ff67ae9e src:manual/20-bekap.md:57 status:no-external-signal -->
 ### T-20-024 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -621,7 +621,7 @@
 
 ---
 
-<!-- fc id:T-20-025 sha:575e3434 src:manual/20-bekap.md:58 klas:E -->
+<!-- fc id:T-20-025 sha:575e3434 src:manual/20-bekap.md:58 status:no-external-signal -->
 ### T-20-025 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -645,7 +645,7 @@
 
 ---
 
-<!-- fc id:T-20-026 sha:7f0942d1 src:manual/20-bekap.md:62 klas:F -->
+<!-- fc id:T-20-026 sha:7f0942d1 src:manual/20-bekap.md:62 status:unchecked -->
 ### T-20-026 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -668,7 +668,7 @@
 
 ---
 
-<!-- fc id:T-20-027 sha:511d4543 src:manual/20-bekap.md:64 klas:E -->
+<!-- fc id:T-20-027 sha:511d4543 src:manual/20-bekap.md:64 status:no-external-signal -->
 ### T-20-027 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -691,7 +691,7 @@
 
 ---
 
-<!-- fc id:T-20-028 sha:3342698e src:manual/20-bekap.md:68 klas:E -->
+<!-- fc id:T-20-028 sha:3342698e src:manual/20-bekap.md:68 status:no-external-signal -->
 ### T-20-028 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -715,7 +715,7 @@
 
 ---
 
-<!-- fc id:T-20-029 sha:c26209bc src:manual/20-bekap.md:69 klas:E -->
+<!-- fc id:T-20-029 sha:c26209bc src:manual/20-bekap.md:69 status:no-external-signal -->
 ### T-20-029 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -739,7 +739,7 @@
 
 ---
 
-<!-- fc id:T-20-030 sha:40ab184a src:manual/20-bekap.md:73 klas:E -->
+<!-- fc id:T-20-030 sha:40ab184a src:manual/20-bekap.md:73 status:no-external-signal -->
 ### T-20-030 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -760,7 +760,7 @@
 
 ---
 
-<!-- fc id:T-20-031 sha:d28a1a55 src:manual/20-bekap.md:75 klas:K -->
+<!-- fc id:T-20-031 sha:d28a1a55 src:manual/20-bekap.md:75 status:code-context -->
 ### T-20-031 · kod · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -793,7 +793,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-032 sha:4c5a16ee src:manual/20-bekap.md:76 klas:A -->
+<!-- fc id:T-20-032 sha:4c5a16ee src:manual/20-bekap.md:76 status:verbatim -->
 ### T-20-032 · kod-ryadok · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -823,7 +823,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-033 sha:213017c0 src:manual/20-bekap.md:77 klas:A -->
+<!-- fc id:T-20-033 sha:213017c0 src:manual/20-bekap.md:77 status:verbatim -->
 ### T-20-033 · kod-ryadok · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -864,7 +864,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-034 sha:7a003e66 src:manual/20-bekap.md:80 klas:E -->
+<!-- fc id:T-20-034 sha:7a003e66 src:manual/20-bekap.md:80 status:no-external-signal -->
 ### T-20-034 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -886,7 +886,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-035 sha:4261e304 src:manual/20-bekap.md:80 klas:E -->
+<!-- fc id:T-20-035 sha:4261e304 src:manual/20-bekap.md:80 status:no-external-signal -->
 ### T-20-035 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -908,7 +908,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-036 sha:16bebad6 src:manual/20-bekap.md:81 klas:F -->
+<!-- fc id:T-20-036 sha:16bebad6 src:manual/20-bekap.md:81 status:unchecked -->
 ### T-20-036 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -930,7 +930,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-037 sha:1d150225 src:manual/20-bekap.md:85 klas:K -->
+<!-- fc id:T-20-037 sha:1d150225 src:manual/20-bekap.md:85 status:code-context -->
 ### T-20-037 · kod · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -955,7 +955,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-038 sha:b7b340b6 src:manual/20-bekap.md:86 klas:F -->
+<!-- fc id:T-20-038 sha:b7b340b6 src:manual/20-bekap.md:86 status:unchecked -->
 ### T-20-038 · kod-ryadok · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -978,7 +978,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-039 sha:5bab507b src:manual/20-bekap.md:89 klas:A -->
+<!-- fc id:T-20-039 sha:5bab507b src:manual/20-bekap.md:89 status:verbatim -->
 ### T-20-039 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1006,7 +1006,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-040 sha:f99c46b0 src:manual/20-bekap.md:94 klas:E -->
+<!-- fc id:T-20-040 sha:f99c46b0 src:manual/20-bekap.md:94 status:no-external-signal -->
 ### T-20-040 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1028,7 +1028,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-041 sha:3befad65 src:manual/20-bekap.md:95 klas:E -->
+<!-- fc id:T-20-041 sha:3befad65 src:manual/20-bekap.md:95 status:no-external-signal -->
 ### T-20-041 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1050,7 +1050,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-042 sha:f4d76b97 src:manual/20-bekap.md:97 klas:F -->
+<!-- fc id:T-20-042 sha:f4d76b97 src:manual/20-bekap.md:97 status:unchecked -->
 ### T-20-042 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1075,7 +1075,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-043 sha:d03e0e0b src:manual/20-bekap.md:99 klas:E -->
+<!-- fc id:T-20-043 sha:d03e0e0b src:manual/20-bekap.md:99 status:no-external-signal -->
 ### T-20-043 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1100,7 +1100,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-044 sha:5f2d57a1 src:manual/20-bekap.md:100 klas:E -->
+<!-- fc id:T-20-044 sha:5f2d57a1 src:manual/20-bekap.md:100 status:no-external-signal -->
 ### T-20-044 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1125,7 +1125,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-045 sha:49ca9e02 src:manual/20-bekap.md:103 klas:A -->
+<!-- fc id:T-20-045 sha:49ca9e02 src:manual/20-bekap.md:103 status:verbatim -->
 ### T-20-045 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1154,7 +1154,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-046 sha:2e9c77d2 src:manual/20-bekap.md:104 klas:E -->
+<!-- fc id:T-20-046 sha:2e9c77d2 src:manual/20-bekap.md:104 status:no-external-signal -->
 ### T-20-046 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1177,7 +1177,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-047 sha:977d4a36 src:manual/20-bekap.md:107 klas:F -->
+<!-- fc id:T-20-047 sha:977d4a36 src:manual/20-bekap.md:107 status:unchecked -->
 ### T-20-047 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1200,7 +1200,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-048 sha:cb005c7d src:manual/20-bekap.md:108 klas:E -->
+<!-- fc id:T-20-048 sha:cb005c7d src:manual/20-bekap.md:108 status:no-external-signal -->
 ### T-20-048 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1223,7 +1223,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-049 sha:249c316f src:manual/20-bekap.md:112 klas:E -->
+<!-- fc id:T-20-049 sha:249c316f src:manual/20-bekap.md:112 status:no-external-signal -->
 ### T-20-049 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1248,7 +1248,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-050 sha:525db2f9 src:manual/20-bekap.md:113 klas:F -->
+<!-- fc id:T-20-050 sha:525db2f9 src:manual/20-bekap.md:113 status:unchecked -->
 ### T-20-050 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1273,7 +1273,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-051 sha:446f78d9 src:manual/20-bekap.md:114 klas:E -->
+<!-- fc id:T-20-051 sha:446f78d9 src:manual/20-bekap.md:114 status:no-external-signal -->
 ### T-20-051 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1298,7 +1298,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-052 sha:d2833e86 src:manual/20-bekap.md:119 klas:E -->
+<!-- fc id:T-20-052 sha:d2833e86 src:manual/20-bekap.md:119 status:no-external-signal -->
 ### T-20-052 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1320,7 +1320,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-053 sha:f2e1a3ee src:manual/20-bekap.md:119 klas:E -->
+<!-- fc id:T-20-053 sha:f2e1a3ee src:manual/20-bekap.md:119 status:no-external-signal -->
 ### T-20-053 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1342,7 +1342,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-054 sha:35fcef12 src:manual/20-bekap.md:122 klas:E -->
+<!-- fc id:T-20-054 sha:35fcef12 src:manual/20-bekap.md:122 status:no-external-signal -->
 ### T-20-054 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1365,7 +1365,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-055 sha:99a45bff src:manual/20-bekap.md:123 klas:E -->
+<!-- fc id:T-20-055 sha:99a45bff src:manual/20-bekap.md:123 status:no-external-signal -->
 ### T-20-055 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1388,7 +1388,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-056 sha:76549fe6 src:manual/20-bekap.md:126 klas:F -->
+<!-- fc id:T-20-056 sha:76549fe6 src:manual/20-bekap.md:126 status:unchecked -->
 ### T-20-056 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1410,7 +1410,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-057 sha:fb860e32 src:manual/20-bekap.md:127 klas:E -->
+<!-- fc id:T-20-057 sha:fb860e32 src:manual/20-bekap.md:127 status:no-external-signal -->
 ### T-20-057 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1432,7 +1432,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-058 sha:f73e573e src:manual/20-bekap.md:129 klas:F -->
+<!-- fc id:T-20-058 sha:f73e573e src:manual/20-bekap.md:129 status:unchecked -->
 ### T-20-058 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1459,7 +1459,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-059 sha:73ae018c src:manual/20-bekap.md:129 klas:E -->
+<!-- fc id:T-20-059 sha:73ae018c src:manual/20-bekap.md:129 status:no-external-signal -->
 ### T-20-059 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1486,7 +1486,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-060 sha:1fb459d2 src:manual/20-bekap.md:131 klas:A -->
+<!-- fc id:T-20-060 sha:1fb459d2 src:manual/20-bekap.md:131 status:verbatim -->
 ### T-20-060 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1536,7 +1536,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-061 sha:0c814949 src:manual/20-bekap.md:132 klas:A -->
+<!-- fc id:T-20-061 sha:0c814949 src:manual/20-bekap.md:132 status:verbatim -->
 ### T-20-061 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1580,7 +1580,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-062 sha:f8a9525b src:manual/20-bekap.md:134 klas:F -->
+<!-- fc id:T-20-062 sha:f8a9525b src:manual/20-bekap.md:134 status:unchecked -->
 ### T-20-062 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1607,7 +1607,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-063 sha:fb47796b src:manual/20-bekap.md:137 klas:E -->
+<!-- fc id:T-20-063 sha:fb47796b src:manual/20-bekap.md:137 status:no-external-signal -->
 ### T-20-063 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1630,7 +1630,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-064 sha:c85e84af src:manual/20-bekap.md:138 klas:F -->
+<!-- fc id:T-20-064 sha:c85e84af src:manual/20-bekap.md:138 status:unchecked -->
 ### T-20-064 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1653,7 +1653,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-065 sha:6535ed04 src:manual/20-bekap.md:141 klas:F -->
+<!-- fc id:T-20-065 sha:6535ed04 src:manual/20-bekap.md:141 status:unchecked -->
 ### T-20-065 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1676,7 +1676,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-066 sha:85ddb155 src:manual/20-bekap.md:142 klas:E -->
+<!-- fc id:T-20-066 sha:85ddb155 src:manual/20-bekap.md:142 status:no-external-signal -->
 ### T-20-066 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1699,7 +1699,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-067 sha:7a5feabf src:manual/20-bekap.md:143 klas:E -->
+<!-- fc id:T-20-067 sha:7a5feabf src:manual/20-bekap.md:143 status:no-external-signal -->
 ### T-20-067 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1722,7 +1722,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-068 sha:9fe25aaa src:manual/20-bekap.md:145 klas:E -->
+<!-- fc id:T-20-068 sha:9fe25aaa src:manual/20-bekap.md:145 status:no-external-signal -->
 ### T-20-068 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1743,7 +1743,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-069 sha:9223fa74 src:manual/20-bekap.md:149 klas:A -->
+<!-- fc id:T-20-069 sha:9223fa74 src:manual/20-bekap.md:149 status:verbatim -->
 ### T-20-069 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1789,7 +1789,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-070 sha:e3962cae src:manual/20-bekap.md:154 klas:E -->
+<!-- fc id:T-20-070 sha:e3962cae src:manual/20-bekap.md:154 status:no-external-signal -->
 ### T-20-070 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1813,7 +1813,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-071 sha:7673d49a src:manual/20-bekap.md:154 klas:E -->
+<!-- fc id:T-20-071 sha:7673d49a src:manual/20-bekap.md:154 status:no-external-signal -->
 ### T-20-071 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1837,7 +1837,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-072 sha:6d357cb6 src:manual/20-bekap.md:155 klas:A -->
+<!-- fc id:T-20-072 sha:6d357cb6 src:manual/20-bekap.md:155 status:verbatim -->
 ### T-20-072 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1878,7 +1878,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-073 sha:02d4467f src:manual/20-bekap.md:156 klas:E -->
+<!-- fc id:T-20-073 sha:02d4467f src:manual/20-bekap.md:156 status:no-external-signal -->
 ### T-20-073 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1902,7 +1902,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-074 sha:96861ea9 src:manual/20-bekap.md:158 klas:F -->
+<!-- fc id:T-20-074 sha:96861ea9 src:manual/20-bekap.md:158 status:unchecked -->
 ### T-20-074 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1925,7 +1925,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-075 sha:24a0b5a7 src:manual/20-bekap.md:162 klas:E -->
+<!-- fc id:T-20-075 sha:24a0b5a7 src:manual/20-bekap.md:162 status:no-external-signal -->
 ### T-20-075 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1946,7 +1946,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-20-076 sha:5a1c829e src:manual/20-bekap.md:164 klas:K -->
+<!-- fc id:T-20-076 sha:5a1c829e src:manual/20-bekap.md:164 status:code-context -->
 ### T-20-076 · kod · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -1993,7 +1993,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-077 sha:b3a989e0 src:manual/20-bekap.md:165 klas:A -->
+<!-- fc id:T-20-077 sha:b3a989e0 src:manual/20-bekap.md:165 status:verbatim -->
 ### T-20-077 · kod-ryadok · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2038,7 +2038,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-078 sha:7e0a3e99 src:manual/20-bekap.md:170 klas:E -->
+<!-- fc id:T-20-078 sha:7e0a3e99 src:manual/20-bekap.md:170 status:no-external-signal -->
 ### T-20-078 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2059,7 +2059,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-079 sha:cf6e42c0 src:manual/20-bekap.md:172 klas:E -->
+<!-- fc id:T-20-079 sha:cf6e42c0 src:manual/20-bekap.md:172 status:no-external-signal -->
 ### T-20-079 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2091,7 +2091,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-080 sha:e016560a src:manual/20-bekap.md:172 klas:E -->
+<!-- fc id:T-20-080 sha:e016560a src:manual/20-bekap.md:172 status:no-external-signal -->
 ### T-20-080 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2123,7 +2123,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-081 sha:7b17a5d2 src:manual/20-bekap.md:174 klas:E -->
+<!-- fc id:T-20-081 sha:7b17a5d2 src:manual/20-bekap.md:174 status:no-external-signal -->
 ### T-20-081 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2158,7 +2158,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-082 sha:9d5b76c9 src:manual/20-bekap.md:175 klas:F -->
+<!-- fc id:T-20-082 sha:9d5b76c9 src:manual/20-bekap.md:175 status:unchecked -->
 ### T-20-082 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2190,7 +2190,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-083 sha:13723654 src:manual/20-bekap.md:176 klas:A -->
+<!-- fc id:T-20-083 sha:13723654 src:manual/20-bekap.md:176 status:verbatim -->
 ### T-20-083 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2229,7 +2229,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-084 sha:51203b99 src:manual/20-bekap.md:179 klas:F -->
+<!-- fc id:T-20-084 sha:51203b99 src:manual/20-bekap.md:179 status:unchecked -->
 ### T-20-084 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2261,7 +2261,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-085 sha:96c27ee7 src:manual/20-bekap.md:180 klas:A -->
+<!-- fc id:T-20-085 sha:96c27ee7 src:manual/20-bekap.md:180 status:verbatim -->
 ### T-20-085 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2318,7 +2318,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-086 sha:6f88c926 src:manual/20-bekap.md:181 klas:E -->
+<!-- fc id:T-20-086 sha:6f88c926 src:manual/20-bekap.md:181 status:no-external-signal -->
 ### T-20-086 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2350,7 +2350,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-087 sha:e0e54c36 src:manual/20-bekap.md:182 klas:A -->
+<!-- fc id:T-20-087 sha:e0e54c36 src:manual/20-bekap.md:182 status:verbatim -->
 ### T-20-087 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2404,7 +2404,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-088 sha:f84cf2d7 src:manual/20-bekap.md:183 klas:E -->
+<!-- fc id:T-20-088 sha:f84cf2d7 src:manual/20-bekap.md:183 status:no-external-signal -->
 ### T-20-088 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2436,7 +2436,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-089 sha:e098ae0f src:manual/20-bekap.md:185 klas:B -->
+<!-- fc id:T-20-089 sha:e098ae0f src:manual/20-bekap.md:185 status:derived -->
 ### T-20-089 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2472,7 +2472,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-090 sha:17e4c2ab src:manual/20-bekap.md:190 klas:A -->
+<!-- fc id:T-20-090 sha:17e4c2ab src:manual/20-bekap.md:190 status:verbatim -->
 ### T-20-090 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2500,7 +2500,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-091 sha:7b08890b src:manual/20-bekap.md:190 klas:A -->
+<!-- fc id:T-20-091 sha:7b08890b src:manual/20-bekap.md:190 status:verbatim -->
 ### T-20-091 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2542,7 +2542,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-092 sha:ac74408e src:manual/20-bekap.md:193 klas:E -->
+<!-- fc id:T-20-092 sha:ac74408e src:manual/20-bekap.md:193 status:no-external-signal -->
 ### T-20-092 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2564,7 +2564,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-093 sha:cda8d684 src:manual/20-bekap.md:193 klas:E -->
+<!-- fc id:T-20-093 sha:cda8d684 src:manual/20-bekap.md:193 status:no-external-signal -->
 ### T-20-093 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2586,7 +2586,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 
 ---
 
-<!-- fc id:T-20-094 sha:e35878a1 src:manual/20-bekap.md:196 klas:F -->
+<!-- fc id:T-20-094 sha:e35878a1 src:manual/20-bekap.md:196 status:unchecked -->
 ### T-20-094 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**
@@ -2608,7 +2608,7 @@ Boot loop розбирається за **першим** дампом логу �
 
 ---
 
-<!-- fc id:T-20-095 sha:e31a2ddc src:manual/20-bekap.md:199 klas:E -->
+<!-- fc id:T-20-095 sha:e31a2ddc src:manual/20-bekap.md:199 status:no-external-signal -->
 ### T-20-095 · proza · `manual/20-bekap.md`
 
 **Твердження, коротко**

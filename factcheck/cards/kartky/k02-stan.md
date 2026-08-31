@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k02-stan.md`
 
-Одиниць твердження: **27**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **27**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-K02-001 sha:cf25c148 src:kartky/k02-stan.md:3 klas:E -->
+<!-- fc id:T-K02-001 sha:cf25c148 src:kartky/k02-stan.md:3 status:no-external-signal -->
 ### T-K02-001 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-K02-002 sha:1b52dab8 src:kartky/k02-stan.md:3 klas:A -->
+<!-- fc id:T-K02-002 sha:1b52dab8 src:kartky/k02-stan.md:3 status:verbatim -->
 ### T-K02-002 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-K02-003 sha:51fe5eb0 src:kartky/k02-stan.md:5 klas:E -->
+<!-- fc id:T-K02-003 sha:51fe5eb0 src:kartky/k02-stan.md:5 status:no-external-signal -->
 ### T-K02-003 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -94,7 +94,7 @@
 
 ---
 
-<!-- fc id:T-K02-004 sha:b7fbee6e src:kartky/k02-stan.md:9 klas:E -->
+<!-- fc id:T-K02-004 sha:b7fbee6e src:kartky/k02-stan.md:9 status:no-external-signal -->
 ### T-K02-004 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -117,7 +117,7 @@
 
 ---
 
-<!-- fc id:T-K02-005 sha:14ded059 src:kartky/k02-stan.md:10 klas:E -->
+<!-- fc id:T-K02-005 sha:14ded059 src:kartky/k02-stan.md:10 status:no-external-signal -->
 ### T-K02-005 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -140,7 +140,7 @@
 
 ---
 
-<!-- fc id:T-K02-006 sha:37acf5b5 src:kartky/k02-stan.md:11 klas:E -->
+<!-- fc id:T-K02-006 sha:37acf5b5 src:kartky/k02-stan.md:11 status:no-external-signal -->
 ### T-K02-006 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -163,7 +163,7 @@
 
 ---
 
-<!-- fc id:T-K02-007 sha:744c7e76 src:kartky/k02-stan.md:13 klas:E -->
+<!-- fc id:T-K02-007 sha:744c7e76 src:kartky/k02-stan.md:13 status:no-external-signal -->
 ### T-K02-007 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -185,7 +185,7 @@
 
 ---
 
-<!-- fc id:T-K02-008 sha:96b3f7de src:kartky/k02-stan.md:18 klas:E -->
+<!-- fc id:T-K02-008 sha:96b3f7de src:kartky/k02-stan.md:18 status:no-external-signal -->
 ### T-K02-008 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -208,7 +208,7 @@
 
 ---
 
-<!-- fc id:T-K02-009 sha:e9ce0007 src:kartky/k02-stan.md:18 klas:F -->
+<!-- fc id:T-K02-009 sha:e9ce0007 src:kartky/k02-stan.md:18 status:unchecked -->
 ### T-K02-009 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -231,7 +231,7 @@
 
 ---
 
-<!-- fc id:T-K02-010 sha:4aa28ce1 src:kartky/k02-stan.md:19 klas:E -->
+<!-- fc id:T-K02-010 sha:4aa28ce1 src:kartky/k02-stan.md:19 status:no-external-signal -->
 ### T-K02-010 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -254,7 +254,7 @@
 
 ---
 
-<!-- fc id:T-K02-011 sha:ce4dc493 src:kartky/k02-stan.md:24 klas:E -->
+<!-- fc id:T-K02-011 sha:ce4dc493 src:kartky/k02-stan.md:24 status:no-external-signal -->
 ### T-K02-011 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -287,7 +287,7 @@
 
 ---
 
-<!-- fc id:T-K02-012 sha:98e1e8ff src:kartky/k02-stan.md:25 klas:E -->
+<!-- fc id:T-K02-012 sha:98e1e8ff src:kartky/k02-stan.md:25 status:no-external-signal -->
 ### T-K02-012 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -309,7 +309,7 @@
 
 ---
 
-<!-- fc id:T-K02-013 sha:3efa3710 src:kartky/k02-stan.md:27 klas:E -->
+<!-- fc id:T-K02-013 sha:3efa3710 src:kartky/k02-stan.md:27 status:no-external-signal -->
 ### T-K02-013 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -342,7 +342,7 @@
 
 ---
 
-<!-- fc id:T-K02-014 sha:c30c0717 src:kartky/k02-stan.md:28 klas:E -->
+<!-- fc id:T-K02-014 sha:c30c0717 src:kartky/k02-stan.md:28 status:no-external-signal -->
 ### T-K02-014 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -364,7 +364,7 @@
 
 ---
 
-<!-- fc id:T-K02-015 sha:ed7fc644 src:kartky/k02-stan.md:32 klas:E -->
+<!-- fc id:T-K02-015 sha:ed7fc644 src:kartky/k02-stan.md:32 status:no-external-signal -->
 ### T-K02-015 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -385,7 +385,7 @@
 
 ---
 
-<!-- fc id:T-K02-016 sha:d28a1a55 src:kartky/k02-stan.md:34 klas:K -->
+<!-- fc id:T-K02-016 sha:d28a1a55 src:kartky/k02-stan.md:34 status:code-context -->
 ### T-K02-016 · kod · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -418,7 +418,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-K02-017 sha:4c5a16ee src:kartky/k02-stan.md:35 klas:A -->
+<!-- fc id:T-K02-017 sha:4c5a16ee src:kartky/k02-stan.md:35 status:verbatim -->
 ### T-K02-017 · kod-ryadok · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -448,7 +448,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-K02-018 sha:213017c0 src:kartky/k02-stan.md:36 klas:A -->
+<!-- fc id:T-K02-018 sha:213017c0 src:kartky/k02-stan.md:36 status:verbatim -->
 ### T-K02-018 · kod-ryadok · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -489,7 +489,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-K02-019 sha:1856248d src:kartky/k02-stan.md:39 klas:A -->
+<!-- fc id:T-K02-019 sha:1856248d src:kartky/k02-stan.md:39 status:verbatim -->
 ### T-K02-019 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -528,7 +528,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-K02-020 sha:3eb44454 src:kartky/k02-stan.md:39 klas:B -->
+<!-- fc id:T-K02-020 sha:3eb44454 src:kartky/k02-stan.md:39 status:derived -->
 ### T-K02-020 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -556,7 +556,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-K02-021 sha:f9d252b0 src:kartky/k02-stan.md:42 klas:E -->
+<!-- fc id:T-K02-021 sha:f9d252b0 src:kartky/k02-stan.md:42 status:no-external-signal -->
 ### T-K02-021 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -578,7 +578,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-K02-022 sha:de849d8b src:kartky/k02-stan.md:43 klas:E -->
+<!-- fc id:T-K02-022 sha:de849d8b src:kartky/k02-stan.md:43 status:no-external-signal -->
 ### T-K02-022 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -600,7 +600,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-K02-023 sha:33c5d9b5 src:kartky/k02-stan.md:47 klas:E -->
+<!-- fc id:T-K02-023 sha:33c5d9b5 src:kartky/k02-stan.md:47 status:no-external-signal -->
 ### T-K02-023 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -622,7 +622,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-K02-024 sha:744e6463 src:kartky/k02-stan.md:47 klas:E -->
+<!-- fc id:T-K02-024 sha:744e6463 src:kartky/k02-stan.md:47 status:no-external-signal -->
 ### T-K02-024 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -644,7 +644,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-K02-025 sha:79fb5b6b src:kartky/k02-stan.md:48 klas:E -->
+<!-- fc id:T-K02-025 sha:79fb5b6b src:kartky/k02-stan.md:48 status:no-external-signal -->
 ### T-K02-025 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -666,7 +666,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-K02-026 sha:943e89a5 src:kartky/k02-stan.md:51 klas:E -->
+<!-- fc id:T-K02-026 sha:943e89a5 src:kartky/k02-stan.md:51 status:no-external-signal -->
 ### T-K02-026 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -690,7 +690,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-K02-027 sha:d3533a61 src:kartky/k02-stan.md:52 klas:E -->
+<!-- fc id:T-K02-027 sha:d3533a61 src:kartky/k02-stan.md:52 status:no-external-signal -->
 ### T-K02-027 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**

@@ -6,7 +6,6 @@
 
 - nazva: 'T-04-092: I²S · classic → 2'
   zbih: I²S\s+·\s+classic
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
   cytata: Two I2S interfaces
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -22,7 +21,6 @@
   note: '2026-08-28. Одиниця з передачі М1 (227 на даташитах). Було: клас F.'
 - nazva: 'T-04-069: UART · S2 → 2'
   zbih: UART\s+·\s+S2
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf
   cytata: Two UARTs
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -38,7 +36,6 @@
   note: '2026-08-28. Одиниця з передачі М1 (227 на даташитах). Було: клас F.'
 - nazva: 'T-04-070: UART · S3 → 3'
   zbih: UART\s+·\s+S3
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
   cytata: Three UART interfaces
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -54,7 +51,6 @@
   note: '2026-08-28. Одиниця з передачі М1 (227 на даташитах). Було: клас F.'
 - nazva: 'T-04-093: I²S · S2 → 1'
   zbih: I²S\s+·\s+S2
-  klas: B
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf
   cytata: – I2S
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -78,7 +74,6 @@
     документа, а не наш здогад. У S2 поруч стоїть «Two UARTs» — отже I2S один.'
 - nazva: 'T-04-096: I²S · C6 → 1'
   zbih: I²S\s+·\s+C6
-  klas: B
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf
   cytata: – I2S
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -102,7 +97,6 @@
     документа, а не наш здогад. У C6 поруч стоїть «Two UARTs» — отже I2S один.'
 - nazva: 'T-03-003: [[classic]] [[S3]] ESP32 classic і S3 мають **два ядра**.'
   zbih: \[\[classic\]\]\s+\[\[S3\]\]\s+ESP32
-  klas: B
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
   cytata: dual-core
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -124,7 +118,6 @@
     «Xtensa® 32-bit LX7 dual-core microprocessor». Обидва паспорти кажуть це своїм словом.'
 - nazva: 'T-03-011: [[C3]] C3, C6, H2 і S2 **одноядерні**.'
   zbih: \[\[C3\]\]\s+C3,\s+C6,
-  klas: B
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
   cytata: Single-Core
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
@@ -150,7 +143,6 @@
     окремий документ не каже про всі чотири.'
 - nazva: 'T-02-093: ESP32, S2 і S3 побудовані на ядрах Xtensa; C3, C6, H2 і решта нової лі'
   zbih: ESP32,\s+S2\s+і
-  klas: B
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
   cytata: Xtensa
   sposib: Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).

@@ -1,6 +1,5 @@
 - nazva: HC-SR04 видає 5 В на виводі ECHO
   zbih: HC-SR04.*видає.*5 В на виводі
-  klas: B
   dzherelo: 'HC-SR04 Datasheet, таблиця параметрів (кеш: source-cache/hc-sr04.pdf)'
   cytata: 'Electric Parameter
 
@@ -28,7 +27,6 @@
     означає логічні рівні, сумісні з 5-вольтовою системою. Твердження випливає однозначно з цих параметрів.
 - nazva: Подача 5 В на GPIO ESP32 пошкоджує вхід
   zbih: Пряме під.*до GPIO вбиває пін
-  klas: B
   dzherelo: ESP32 Series Datasheet v5.3, Table 5-1 Absolute Maximum Ratings
   cytata: 'Table 5-1. Absolute Maximum Ratings
 

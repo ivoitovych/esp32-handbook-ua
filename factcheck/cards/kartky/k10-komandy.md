@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k10-komandy.md`
 
-Одиниць твердження: **52**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **52**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-K10-001 sha:56ac242d src:kartky/k10-komandy.md:3 klas:A -->
+<!-- fc id:T-K10-001 sha:56ac242d src:kartky/k10-komandy.md:3 status:verbatim -->
 ### T-K10-001 · proza · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -36,7 +36,7 @@
 
 ---
 
-<!-- fc id:T-K10-002 sha:90dbd689 src:kartky/k10-komandy.md:3 klas:A -->
+<!-- fc id:T-K10-002 sha:90dbd689 src:kartky/k10-komandy.md:3 status:verbatim -->
 ### T-K10-002 · proza · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -78,7 +78,7 @@
 
 ---
 
-<!-- fc id:T-K10-003 sha:6ac69acd src:kartky/k10-komandy.md:4 klas:A -->
+<!-- fc id:T-K10-003 sha:6ac69acd src:kartky/k10-komandy.md:4 status:verbatim -->
 ### T-K10-003 · proza · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -107,7 +107,7 @@
 
 ---
 
-<!-- fc id:T-K10-004 sha:eec2887d src:kartky/k10-komandy.md:8 klas:K -->
+<!-- fc id:T-K10-004 sha:eec2887d src:kartky/k10-komandy.md:8 status:code-context -->
 ### T-K10-004 · kod · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -154,7 +154,7 @@ esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-K10-005 sha:8af1928d src:kartky/k10-komandy.md:10 klas:A -->
+<!-- fc id:T-K10-005 sha:8af1928d src:kartky/k10-komandy.md:10 status:verbatim -->
 ### T-K10-005 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -189,7 +189,7 @@ esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-K10-006 sha:74ec190c src:kartky/k10-komandy.md:11 klas:A -->
+<!-- fc id:T-K10-006 sha:74ec190c src:kartky/k10-komandy.md:11 status:verbatim -->
 ### T-K10-006 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -235,7 +235,7 @@ esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-K10-007 sha:a177909e src:kartky/k10-komandy.md:12 klas:E -->
+<!-- fc id:T-K10-007 sha:a177909e src:kartky/k10-komandy.md:12 status:no-external-signal -->
 ### T-K10-007 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -277,7 +277,7 @@ esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-K10-008 sha:94bd45fa src:kartky/k10-komandy.md:13 klas:A -->
+<!-- fc id:T-K10-008 sha:94bd45fa src:kartky/k10-komandy.md:13 status:verbatim -->
 ### T-K10-008 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -328,7 +328,7 @@ esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-K10-009 sha:d6945e3a src:kartky/k10-komandy.md:14 klas:F -->
+<!-- fc id:T-K10-009 sha:d6945e3a src:kartky/k10-komandy.md:14 status:unchecked -->
 ### T-K10-009 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -357,7 +357,7 @@ esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-K10-010 sha:931ffa15 src:kartky/k10-komandy.md:15 klas:F -->
+<!-- fc id:T-K10-010 sha:931ffa15 src:kartky/k10-komandy.md:15 status:unchecked -->
 ### T-K10-010 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -386,7 +386,7 @@ esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-K10-011 sha:23a7fc4e src:kartky/k10-komandy.md:16 klas:A -->
+<!-- fc id:T-K10-011 sha:23a7fc4e src:kartky/k10-komandy.md:16 status:verbatim -->
 ### T-K10-011 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -429,7 +429,7 @@ esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-K10-012 sha:0c80ad13 src:kartky/k10-komandy.md:17 klas:A -->
+<!-- fc id:T-K10-012 sha:0c80ad13 src:kartky/k10-komandy.md:17 status:verbatim -->
 ### T-K10-012 · schema-zvyazok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -464,7 +464,7 @@ esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
 
 ---
 
-<!-- fc id:T-K10-013 sha:b9d2934d src:kartky/k10-komandy.md:22 klas:K -->
+<!-- fc id:T-K10-013 sha:b9d2934d src:kartky/k10-komandy.md:22 status:code-context -->
 ### T-K10-013 · kod · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -515,7 +515,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-014 sha:c4f6cb74 src:kartky/k10-komandy.md:23 klas:A -->
+<!-- fc id:T-K10-014 sha:c4f6cb74 src:kartky/k10-komandy.md:23 status:verbatim -->
 ### T-K10-014 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -570,7 +570,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-015 sha:bb9f7106 src:kartky/k10-komandy.md:24 klas:A -->
+<!-- fc id:T-K10-015 sha:bb9f7106 src:kartky/k10-komandy.md:24 status:verbatim -->
 ### T-K10-015 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -625,7 +625,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-016 sha:cc032d7c src:kartky/k10-komandy.md:25 klas:A -->
+<!-- fc id:T-K10-016 sha:cc032d7c src:kartky/k10-komandy.md:25 status:verbatim -->
 ### T-K10-016 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -680,7 +680,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-017 sha:5e640044 src:kartky/k10-komandy.md:26 klas:F -->
+<!-- fc id:T-K10-017 sha:5e640044 src:kartky/k10-komandy.md:26 status:unchecked -->
 ### T-K10-017 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -713,7 +713,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-018 sha:399d8dd5 src:kartky/k10-komandy.md:27 klas:F -->
+<!-- fc id:T-K10-018 sha:399d8dd5 src:kartky/k10-komandy.md:27 status:unchecked -->
 ### T-K10-018 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -746,7 +746,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-019 sha:e95261df src:kartky/k10-komandy.md:28 klas:A -->
+<!-- fc id:T-K10-019 sha:e95261df src:kartky/k10-komandy.md:28 status:verbatim -->
 ### T-K10-019 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -785,7 +785,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-020 sha:7879c453 src:kartky/k10-komandy.md:29 klas:F -->
+<!-- fc id:T-K10-020 sha:7879c453 src:kartky/k10-komandy.md:29 status:unchecked -->
 ### T-K10-020 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -818,7 +818,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-021 sha:21c29912 src:kartky/k10-komandy.md:30 klas:A -->
+<!-- fc id:T-K10-021 sha:21c29912 src:kartky/k10-komandy.md:30 status:verbatim -->
 ### T-K10-021 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -873,7 +873,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-022 sha:0f34d83d src:kartky/k10-komandy.md:31 klas:A -->
+<!-- fc id:T-K10-022 sha:0f34d83d src:kartky/k10-komandy.md:31 status:verbatim -->
 ### T-K10-022 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -928,7 +928,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-023 sha:48df8d47 src:kartky/k10-komandy.md:32 klas:A -->
+<!-- fc id:T-K10-023 sha:48df8d47 src:kartky/k10-komandy.md:32 status:verbatim -->
 ### T-K10-023 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -983,7 +983,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-024 sha:a2ff386f src:kartky/k10-komandy.md:33 klas:A -->
+<!-- fc id:T-K10-024 sha:a2ff386f src:kartky/k10-komandy.md:33 status:verbatim -->
 ### T-K10-024 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1029,7 +1029,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-025 sha:0c9d449b src:kartky/k10-komandy.md:36 klas:A -->
+<!-- fc id:T-K10-025 sha:0c9d449b src:kartky/k10-komandy.md:36 status:verbatim -->
 ### T-K10-025 · proza · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1064,7 +1064,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-026 sha:f5cb6136 src:kartky/k10-komandy.md:36 klas:A -->
+<!-- fc id:T-K10-026 sha:f5cb6136 src:kartky/k10-komandy.md:36 status:verbatim -->
 ### T-K10-026 · proza · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1100,7 +1100,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-027 sha:c64c8733 src:kartky/k10-komandy.md:41 klas:A -->
+<!-- fc id:T-K10-027 sha:c64c8733 src:kartky/k10-komandy.md:41 status:verbatim -->
 ### T-K10-027 · proza · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1141,7 +1141,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-028 sha:51eec05c src:kartky/k10-komandy.md:41 klas:F -->
+<!-- fc id:T-K10-028 sha:51eec05c src:kartky/k10-komandy.md:41 status:unchecked -->
 ### T-K10-028 · proza · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1162,7 +1162,7 @@ idf.py merge-bin -o all.bin         # один образ; адреси з ко�
 
 ---
 
-<!-- fc id:T-K10-029 sha:ab211d67 src:kartky/k10-komandy.md:43 klas:K -->
+<!-- fc id:T-K10-029 sha:ab211d67 src:kartky/k10-komandy.md:43 status:code-context -->
 ### T-K10-029 · kod · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1191,7 +1191,7 @@ picocom -b 115200 /dev/ttyUSB0       # вийти: Ctrl+A, потім Ctrl+X
 
 ---
 
-<!-- fc id:T-K10-030 sha:746a4901 src:kartky/k10-komandy.md:44 klas:F -->
+<!-- fc id:T-K10-030 sha:746a4901 src:kartky/k10-komandy.md:44 status:unchecked -->
 ### T-K10-030 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1216,7 +1216,7 @@ picocom -b 115200 /dev/ttyUSB0       # вийти: Ctrl+A, потім Ctrl+X
 
 ---
 
-<!-- fc id:T-K10-031 sha:d4bff93f src:kartky/k10-komandy.md:45 klas:F -->
+<!-- fc id:T-K10-031 sha:d4bff93f src:kartky/k10-komandy.md:45 status:unchecked -->
 ### T-K10-031 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1241,7 +1241,7 @@ picocom -b 115200 /dev/ttyUSB0       # вийти: Ctrl+A, потім Ctrl+X
 
 ---
 
-<!-- fc id:T-K10-032 sha:c8e23e02 src:kartky/k10-komandy.md:46 klas:F -->
+<!-- fc id:T-K10-032 sha:c8e23e02 src:kartky/k10-komandy.md:46 status:unchecked -->
 ### T-K10-032 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1266,7 +1266,7 @@ picocom -b 115200 /dev/ttyUSB0       # вийти: Ctrl+A, потім Ctrl+X
 
 ---
 
-<!-- fc id:T-K10-033 sha:c5afa127 src:kartky/k10-komandy.md:51 klas:K -->
+<!-- fc id:T-K10-033 sha:c5afa127 src:kartky/k10-komandy.md:51 status:code-context -->
 ### T-K10-033 · kod · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1297,7 +1297,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-034 sha:805c4c57 src:kartky/k10-komandy.md:52 klas:F -->
+<!-- fc id:T-K10-034 sha:805c4c57 src:kartky/k10-komandy.md:52 status:unchecked -->
 ### T-K10-034 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1323,7 +1323,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-035 sha:65b20b9d src:kartky/k10-komandy.md:53 klas:F -->
+<!-- fc id:T-K10-035 sha:65b20b9d src:kartky/k10-komandy.md:53 status:unchecked -->
 ### T-K10-035 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1349,7 +1349,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-036 sha:459deb70 src:kartky/k10-komandy.md:54 klas:F -->
+<!-- fc id:T-K10-036 sha:459deb70 src:kartky/k10-komandy.md:54 status:unchecked -->
 ### T-K10-036 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1375,7 +1375,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-037 sha:04c7f41f src:kartky/k10-komandy.md:55 klas:F -->
+<!-- fc id:T-K10-037 sha:04c7f41f src:kartky/k10-komandy.md:55 status:unchecked -->
 ### T-K10-037 · kod-ryadok · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1401,7 +1401,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-038 sha:4ffb7aee src:kartky/k10-komandy.md:58 klas:E -->
+<!-- fc id:T-K10-038 sha:4ffb7aee src:kartky/k10-komandy.md:58 status:no-external-signal -->
 ### T-K10-038 · proza · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1430,7 +1430,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-039 sha:2130100e src:kartky/k10-komandy.md:59 klas:F -->
+<!-- fc id:T-K10-039 sha:2130100e src:kartky/k10-komandy.md:59 status:unchecked -->
 ### T-K10-039 · proza · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1452,7 +1452,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-040 sha:3c153db1 src:kartky/k10-komandy.md:63 klas:F -->
+<!-- fc id:T-K10-040 sha:3c153db1 src:kartky/k10-komandy.md:63 status:unchecked -->
 ### T-K10-040 · tablycya-shapka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1479,7 +1479,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-041 sha:03becf94 src:kartky/k10-komandy.md:65 klas:A -->
+<!-- fc id:T-K10-041 sha:03becf94 src:kartky/k10-komandy.md:65 status:verbatim -->
 ### T-K10-041 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1532,7 +1532,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-042 sha:1fe1e089 src:kartky/k10-komandy.md:65 klas:A -->
+<!-- fc id:T-K10-042 sha:1fe1e089 src:kartky/k10-komandy.md:65 status:verbatim -->
 ### T-K10-042 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1571,7 +1571,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-043 sha:ddb10a79 src:kartky/k10-komandy.md:65 klas:A -->
+<!-- fc id:T-K10-043 sha:ddb10a79 src:kartky/k10-komandy.md:65 status:verbatim -->
 ### T-K10-043 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1624,7 +1624,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-044 sha:4e987ef9 src:kartky/k10-komandy.md:66 klas:A -->
+<!-- fc id:T-K10-044 sha:4e987ef9 src:kartky/k10-komandy.md:66 status:verbatim -->
 ### T-K10-044 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1663,7 +1663,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-045 sha:8c7b7a5f src:kartky/k10-komandy.md:66 klas:A -->
+<!-- fc id:T-K10-045 sha:8c7b7a5f src:kartky/k10-komandy.md:66 status:verbatim -->
 ### T-K10-045 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1702,7 +1702,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-046 sha:cb052eb6 src:kartky/k10-komandy.md:66 klas:A -->
+<!-- fc id:T-K10-046 sha:cb052eb6 src:kartky/k10-komandy.md:66 status:verbatim -->
 ### T-K10-046 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1741,7 +1741,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-047 sha:55b5b58b src:kartky/k10-komandy.md:67 klas:A -->
+<!-- fc id:T-K10-047 sha:55b5b58b src:kartky/k10-komandy.md:67 status:verbatim -->
 ### T-K10-047 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1794,7 +1794,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-048 sha:55a122c0 src:kartky/k10-komandy.md:67 klas:A -->
+<!-- fc id:T-K10-048 sha:55a122c0 src:kartky/k10-komandy.md:67 status:verbatim -->
 ### T-K10-048 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1847,7 +1847,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-049 sha:eb3f0062 src:kartky/k10-komandy.md:67 klas:A -->
+<!-- fc id:T-K10-049 sha:eb3f0062 src:kartky/k10-komandy.md:67 status:verbatim -->
 ### T-K10-049 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1900,7 +1900,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-050 sha:ceaada41 src:kartky/k10-komandy.md:68 klas:A -->
+<!-- fc id:T-K10-050 sha:ceaada41 src:kartky/k10-komandy.md:68 status:verbatim -->
 ### T-K10-050 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1947,7 +1947,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-051 sha:9feefdcc src:kartky/k10-komandy.md:68 klas:A -->
+<!-- fc id:T-K10-051 sha:9feefdcc src:kartky/k10-komandy.md:68 status:verbatim -->
 ### T-K10-051 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1986,7 +1986,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-052 sha:c94bfb00 src:kartky/k10-komandy.md:68 klas:A -->
+<!-- fc id:T-K10-052 sha:c94bfb00 src:kartky/k10-komandy.md:68 status:verbatim -->
 ### T-K10-052 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**

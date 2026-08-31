@@ -35,7 +35,6 @@
 
 - nazva: 'T-14-005: Ви прошиваєте його один раз, далі працюєте з'
   zbih: Ви\s+прошиваєте\s+його\s+один
-  klas: A
   dzherelo: https://raw.githubusercontent.com/micropython/micropython/master/ports/esp32/README.md
   cytata: 'REPL (Python prompt) over UART0 and/or the integrated USB peripheral
 
@@ -59,7 +58,6 @@
   - 46d93393
 - nazva: 'T-14-015: Частина периферії доступна частково.'
   zbih: Частина\s+периферії\s+доступна\s+частково\.
-  klas: A
   dzherelo: https://raw.githubusercontent.com/micropython/micropython/master/ports/esp32/README.md
   cytata: 'The machine module with GPIO, UART, SPI, software I2C, ADC, DAC, PWM, TouchPad,
     WDT and Timer.
@@ -85,7 +83,6 @@
   - 6efff622
 - nazva: 'T-14-071: **Розвідка заліза** — MicroPython у консолі: чи відповідає'
   zbih: \*\*Розвідка\s+заліза\*\*\s+—\s+MicroPython
-  klas: A
   dzherelo: https://raw.githubusercontent.com/micropython/micropython/master/docs/reference/repl.rst
   cytata: 'While typing a command at the REPL, if the line typed so far corresponds to
 

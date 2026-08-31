@@ -34,7 +34,6 @@
 - nazva: CP2102 — Silicon Labs, драйвер cp210x у ядрі Linux
   zbih: '`CP2102`, `CP2102N` · (Виробник|Міст) → Silicon Labs|`CP2102`, `CP2102N` · Linux
     → у ядрі'
-  klas: A
   dzherelo: Linux, `drivers/usb/serial/cp210x.c` (гілка master), таблиця `id_table`
   cytata: '{ USB_DEVICE(0x10C4, 0xEA60) }, /* Silicon Labs factory default */
 
@@ -60,7 +59,6 @@
 - nazva: CH340 і CH341 — WCH, драйвер ch341 у ядрі Linux
   zbih: '`CH340`, `CH340G`, `CH341` · (Виробник → WCH|Linux → у ядрі)|`CH340`, `CH341` · Міст
     → WCH'
-  klas: A
   dzherelo: Linux, `drivers/usb/serial/ch341.c` (гілка master), таблиця `id_table` і `MODULE_DESCRIPTION`
   cytata: '{ USB_DEVICE(0x1a86, 0x5523) },
 
@@ -97,7 +95,6 @@
     опис модуля: Winchiphead, тобто WCH.'
 - nazva: FT232RL — FTDI, драйвер ftdi_sio у ядрі Linux
   zbih: '`FT232RL` · (Виробник → FTDI|Linux → у ядрі)'
-  klas: A
   dzherelo: Linux, `drivers/usb/serial/ftdi_sio_ids.h` (гілка master)
   cytata: '#define FTDI_VID    0x0403  /* Vendor Id */
 
@@ -124,7 +121,6 @@
   - 871e63ad
 - nazva: CH9102 у ядрі є, але через cdc_acm, а не ch341
   zbih: '`CH9102`, `CH9102F` · ((Виробник|Міст) → WCH|Linux → у ядрі)'
-  klas: A
   dzherelo: Linux, `drivers/usb/class/cdc-acm.c` (гілка master), таблиця `acm_ids`; для порівняння
     — `drivers/usb/serial/ch341.c`
   cytata: "drivers/usb/class/cdc-acm.c:\n  { USB_DEVICE(0x1a86, 0x55d3), .driver_info = MISSING_CAP_BRK,\

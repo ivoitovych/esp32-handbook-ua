@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/30-struktura.md`
 
-Одиниць твердження: **102**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **102**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-30-001 sha:e8048bce src:manual/30-struktura.md:3 klas:F -->
+<!-- fc id:T-30-001 sha:e8048bce src:manual/30-struktura.md:3 status:unchecked -->
 ### T-30-001 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-30-002 sha:4be46a6c src:manual/30-struktura.md:5 klas:E -->
+<!-- fc id:T-30-002 sha:4be46a6c src:manual/30-struktura.md:5 status:no-external-signal -->
 ### T-30-002 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-30-003 sha:13781582 src:manual/30-struktura.md:9 klas:F -->
+<!-- fc id:T-30-003 sha:13781582 src:manual/30-struktura.md:9 status:unchecked -->
 ### T-30-003 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -78,7 +78,7 @@
 
 ---
 
-<!-- fc id:T-30-004 sha:4f3e0c86 src:manual/30-struktura.md:14 klas:A -->
+<!-- fc id:T-30-004 sha:4f3e0c86 src:manual/30-struktura.md:14 status:verbatim -->
 ### T-30-004 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -106,7 +106,7 @@
 
 ---
 
-<!-- fc id:T-30-005 sha:a2b4ff96 src:manual/30-struktura.md:14 klas:E -->
+<!-- fc id:T-30-005 sha:a2b4ff96 src:manual/30-struktura.md:14 status:no-external-signal -->
 ### T-30-005 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -128,7 +128,7 @@
 
 ---
 
-<!-- fc id:T-30-006 sha:b667f384 src:manual/30-struktura.md:19 klas:A -->
+<!-- fc id:T-30-006 sha:b667f384 src:manual/30-struktura.md:19 status:verbatim -->
 ### T-30-006 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -157,7 +157,7 @@
 
 ---
 
-<!-- fc id:T-30-007 sha:8c045e3f src:manual/30-struktura.md:20 klas:A -->
+<!-- fc id:T-30-007 sha:8c045e3f src:manual/30-struktura.md:20 status:verbatim -->
 ### T-30-007 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -186,7 +186,7 @@
 
 ---
 
-<!-- fc id:T-30-008 sha:933faddd src:manual/30-struktura.md:23 klas:F -->
+<!-- fc id:T-30-008 sha:933faddd src:manual/30-struktura.md:23 status:unchecked -->
 ### T-30-008 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -208,7 +208,7 @@
 
 ---
 
-<!-- fc id:T-30-009 sha:cd99c03a src:manual/30-struktura.md:26 klas:A -->
+<!-- fc id:T-30-009 sha:cd99c03a src:manual/30-struktura.md:26 status:verbatim -->
 ### T-30-009 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -247,7 +247,7 @@
 
 ---
 
-<!-- fc id:T-30-010 sha:86755f61 src:manual/30-struktura.md:27 klas:E -->
+<!-- fc id:T-30-010 sha:86755f61 src:manual/30-struktura.md:27 status:no-external-signal -->
 ### T-30-010 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -270,7 +270,7 @@
 
 ---
 
-<!-- fc id:T-30-011 sha:ed10a8c4 src:manual/30-struktura.md:30 klas:F -->
+<!-- fc id:T-30-011 sha:ed10a8c4 src:manual/30-struktura.md:30 status:unchecked -->
 ### T-30-011 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -292,7 +292,7 @@
 
 ---
 
-<!-- fc id:T-30-012 sha:c6be7a60 src:manual/30-struktura.md:33 klas:K -->
+<!-- fc id:T-30-012 sha:c6be7a60 src:manual/30-struktura.md:33 status:code-context -->
 ### T-30-012 · kod · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -341,7 +341,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-013 sha:ad7928af src:manual/30-struktura.md:35 klas:A -->
+<!-- fc id:T-30-013 sha:ad7928af src:manual/30-struktura.md:35 status:verbatim -->
 ### T-30-013 · kod-ryadok · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -384,7 +384,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-014 sha:f2388f58 src:manual/30-struktura.md:36 klas:A -->
+<!-- fc id:T-30-014 sha:f2388f58 src:manual/30-struktura.md:36 status:verbatim -->
 ### T-30-014 · kod-ryadok · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -421,7 +421,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-015 sha:60906d23 src:manual/30-struktura.md:41 klas:E -->
+<!-- fc id:T-30-015 sha:60906d23 src:manual/30-struktura.md:41 status:no-external-signal -->
 ### T-30-015 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -443,7 +443,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-016 sha:0f0ef2c2 src:manual/30-struktura.md:46 klas:A -->
+<!-- fc id:T-30-016 sha:0f0ef2c2 src:manual/30-struktura.md:46 status:verbatim -->
 ### T-30-016 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -471,7 +471,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-017 sha:ac26dc25 src:manual/30-struktura.md:46 klas:E -->
+<!-- fc id:T-30-017 sha:ac26dc25 src:manual/30-struktura.md:46 status:no-external-signal -->
 ### T-30-017 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -493,7 +493,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-018 sha:bf09e3f0 src:manual/30-struktura.md:49 klas:E -->
+<!-- fc id:T-30-018 sha:bf09e3f0 src:manual/30-struktura.md:49 status:no-external-signal -->
 ### T-30-018 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -515,7 +515,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-019 sha:130d7820 src:manual/30-struktura.md:49 klas:E -->
+<!-- fc id:T-30-019 sha:130d7820 src:manual/30-struktura.md:49 status:no-external-signal -->
 ### T-30-019 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -537,7 +537,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-020 sha:1f3c5167 src:manual/30-struktura.md:50 klas:E -->
+<!-- fc id:T-30-020 sha:1f3c5167 src:manual/30-struktura.md:50 status:no-external-signal -->
 ### T-30-020 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -559,7 +559,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-021 sha:e8ac56e3 src:manual/30-struktura.md:52 klas:A -->
+<!-- fc id:T-30-021 sha:e8ac56e3 src:manual/30-struktura.md:52 status:verbatim -->
 ### T-30-021 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -587,7 +587,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-022 sha:68e21b65 src:manual/30-struktura.md:52 klas:E -->
+<!-- fc id:T-30-022 sha:68e21b65 src:manual/30-struktura.md:52 status:no-external-signal -->
 ### T-30-022 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -609,7 +609,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-023 sha:c6d7d762 src:manual/30-struktura.md:57 klas:A -->
+<!-- fc id:T-30-023 sha:c6d7d762 src:manual/30-struktura.md:57 status:verbatim -->
 ### T-30-023 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -637,7 +637,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-024 sha:f15330b2 src:manual/30-struktura.md:60 klas:K -->
+<!-- fc id:T-30-024 sha:f15330b2 src:manual/30-struktura.md:60 status:code-context -->
 ### T-30-024 · kod · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -674,7 +674,7 @@ xTaskCreate(sensor_task, "sensor", 4096, NULL, 5, NULL);
 
 ---
 
-<!-- fc id:T-30-025 sha:f2388f58 src:manual/30-struktura.md:61 klas:A -->
+<!-- fc id:T-30-025 sha:f2388f58 src:manual/30-struktura.md:61 status:verbatim -->
 ### T-30-025 · kod-ryadok · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -708,7 +708,7 @@ xTaskCreate(sensor_task, "sensor", 4096, NULL, 5, NULL);
 
 ---
 
-<!-- fc id:T-30-026 sha:f7a5daed src:manual/30-struktura.md:66 klas:A -->
+<!-- fc id:T-30-026 sha:f7a5daed src:manual/30-struktura.md:66 status:verbatim -->
 ### T-30-026 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -739,7 +739,7 @@ xTaskCreate(sensor_task, "sensor", 4096, NULL, 5, NULL);
 
 ---
 
-<!-- fc id:T-30-027 sha:86458de5 src:manual/30-struktura.md:67 klas:A -->
+<!-- fc id:T-30-027 sha:86458de5 src:manual/30-struktura.md:67 status:verbatim -->
 ### T-30-027 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -770,7 +770,7 @@ xTaskCreate(sensor_task, "sensor", 4096, NULL, 5, NULL);
 
 ---
 
-<!-- fc id:T-30-028 sha:1ad7bb31 src:manual/30-struktura.md:68 klas:A -->
+<!-- fc id:T-30-028 sha:1ad7bb31 src:manual/30-struktura.md:68 status:verbatim -->
 ### T-30-028 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -825,7 +825,7 @@ xTaskCreate(sensor_task, "sensor", 4096, NULL, 5, NULL);
 
 ---
 
-<!-- fc id:T-30-029 sha:578a495b src:manual/30-struktura.md:71 klas:E -->
+<!-- fc id:T-30-029 sha:578a495b src:manual/30-struktura.md:71 status:no-external-signal -->
 ### T-30-029 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -848,7 +848,7 @@ xTaskCreate(sensor_task, "sensor", 4096, NULL, 5, NULL);
 
 ---
 
-<!-- fc id:T-30-030 sha:62f76bc8 src:manual/30-struktura.md:75 klas:A -->
+<!-- fc id:T-30-030 sha:62f76bc8 src:manual/30-struktura.md:75 status:verbatim -->
 ### T-30-030 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -875,7 +875,7 @@ xTaskCreate(sensor_task, "sensor", 4096, NULL, 5, NULL);
 
 ---
 
-<!-- fc id:T-30-031 sha:60edbf0e src:manual/30-struktura.md:77 klas:F -->
+<!-- fc id:T-30-031 sha:60edbf0e src:manual/30-struktura.md:77 status:unchecked -->
 ### T-30-031 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -901,7 +901,7 @@ xTaskCreate(sensor_task, "sensor", 4096, NULL, 5, NULL);
 
 ---
 
-<!-- fc id:T-30-032 sha:f46728c8 src:manual/30-struktura.md:86 klas:A -->
+<!-- fc id:T-30-032 sha:f46728c8 src:manual/30-struktura.md:86 status:verbatim -->
 ### T-30-032 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -928,7 +928,7 @@ xTaskCreate(sensor_task, "sensor", 4096, NULL, 5, NULL);
 
 ---
 
-<!-- fc id:T-30-033 sha:eaa943f5 src:manual/30-struktura.md:90 klas:K -->
+<!-- fc id:T-30-033 sha:eaa943f5 src:manual/30-struktura.md:90 status:code-context -->
 ### T-30-033 · kod · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -965,7 +965,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-034 sha:23e9b01d src:manual/30-struktura.md:92 klas:F -->
+<!-- fc id:T-30-034 sha:23e9b01d src:manual/30-struktura.md:92 status:unchecked -->
 ### T-30-034 · kod-ryadok · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -989,7 +989,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-035 sha:e1760d27 src:manual/30-struktura.md:95 klas:E -->
+<!-- fc id:T-30-035 sha:e1760d27 src:manual/30-struktura.md:95 status:no-external-signal -->
 ### T-30-035 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1011,7 +1011,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-036 sha:d865d284 src:manual/30-struktura.md:95 klas:E -->
+<!-- fc id:T-30-036 sha:d865d284 src:manual/30-struktura.md:95 status:no-external-signal -->
 ### T-30-036 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1033,7 +1033,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-037 sha:eb3080a3 src:manual/30-struktura.md:98 klas:A -->
+<!-- fc id:T-30-037 sha:eb3080a3 src:manual/30-struktura.md:98 status:verbatim -->
 ### T-30-037 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1074,7 +1074,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-038 sha:6be9a1e8 src:manual/30-struktura.md:104 klas:E -->
+<!-- fc id:T-30-038 sha:6be9a1e8 src:manual/30-struktura.md:104 status:no-external-signal -->
 ### T-30-038 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1099,7 +1099,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-039 sha:b404ec41 src:manual/30-struktura.md:105 klas:E -->
+<!-- fc id:T-30-039 sha:b404ec41 src:manual/30-struktura.md:105 status:no-external-signal -->
 ### T-30-039 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1124,7 +1124,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-040 sha:a545ec1b src:manual/30-struktura.md:106 klas:A -->
+<!-- fc id:T-30-040 sha:a545ec1b src:manual/30-struktura.md:106 status:verbatim -->
 ### T-30-040 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1176,7 +1176,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-041 sha:bcdbf291 src:manual/30-struktura.md:112 klas:A -->
+<!-- fc id:T-30-041 sha:bcdbf291 src:manual/30-struktura.md:112 status:verbatim -->
 ### T-30-041 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1204,7 +1204,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-042 sha:5de8b7f1 src:manual/30-struktura.md:115 klas:E -->
+<!-- fc id:T-30-042 sha:5de8b7f1 src:manual/30-struktura.md:115 status:no-external-signal -->
 ### T-30-042 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1227,7 +1227,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-043 sha:498cc7fb src:manual/30-struktura.md:116 klas:E -->
+<!-- fc id:T-30-043 sha:498cc7fb src:manual/30-struktura.md:116 status:no-external-signal -->
 ### T-30-043 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1250,7 +1250,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-044 sha:4378dd7f src:manual/30-struktura.md:120 klas:E -->
+<!-- fc id:T-30-044 sha:4378dd7f src:manual/30-struktura.md:120 status:no-external-signal -->
 ### T-30-044 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1273,7 +1273,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-045 sha:dec60fd7 src:manual/30-struktura.md:123 klas:E -->
+<!-- fc id:T-30-045 sha:dec60fd7 src:manual/30-struktura.md:123 status:no-external-signal -->
 ### T-30-045 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1298,7 +1298,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-046 sha:4bb61c41 src:manual/30-struktura.md:124 klas:E -->
+<!-- fc id:T-30-046 sha:4bb61c41 src:manual/30-struktura.md:124 status:no-external-signal -->
 ### T-30-046 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1323,7 +1323,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-047 sha:af79aca0 src:manual/30-struktura.md:129 klas:A -->
+<!-- fc id:T-30-047 sha:af79aca0 src:manual/30-struktura.md:129 status:verbatim -->
 ### T-30-047 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1352,7 +1352,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-048 sha:d09dab4a src:manual/30-struktura.md:130 klas:E -->
+<!-- fc id:T-30-048 sha:d09dab4a src:manual/30-struktura.md:130 status:no-external-signal -->
 ### T-30-048 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1375,7 +1375,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-049 sha:9f282c16 src:manual/30-struktura.md:133 klas:K -->
+<!-- fc id:T-30-049 sha:9f282c16 src:manual/30-struktura.md:133 status:code-context -->
 ### T-30-049 · kod · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1418,7 +1418,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-050 sha:e8467fbc src:manual/30-struktura.md:138 klas:A -->
+<!-- fc id:T-30-050 sha:e8467fbc src:manual/30-struktura.md:138 status:verbatim -->
 ### T-30-050 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1446,7 +1446,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-051 sha:b9c24e83 src:manual/30-struktura.md:141 klas:A -->
+<!-- fc id:T-30-051 sha:b9c24e83 src:manual/30-struktura.md:141 status:verbatim -->
 ### T-30-051 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1507,7 +1507,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-052 sha:ace55095 src:manual/30-struktura.md:144 klas:A -->
+<!-- fc id:T-30-052 sha:ace55095 src:manual/30-struktura.md:144 status:verbatim -->
 ### T-30-052 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1536,7 +1536,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-053 sha:ec81bc57 src:manual/30-struktura.md:145 klas:E -->
+<!-- fc id:T-30-053 sha:ec81bc57 src:manual/30-struktura.md:145 status:no-external-signal -->
 ### T-30-053 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1559,7 +1559,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-054 sha:01bca69f src:manual/30-struktura.md:148 klas:E -->
+<!-- fc id:T-30-054 sha:01bca69f src:manual/30-struktura.md:148 status:no-external-signal -->
 ### T-30-054 · tablycya · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1587,7 +1587,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-055 sha:7620c6e3 src:manual/30-struktura.md:150 klas:A -->
+<!-- fc id:T-30-055 sha:7620c6e3 src:manual/30-struktura.md:150 status:verbatim -->
 ### T-30-055 · tablycya · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1654,7 +1654,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-056 sha:4e3c946d src:manual/30-struktura.md:151 klas:A -->
+<!-- fc id:T-30-056 sha:4e3c946d src:manual/30-struktura.md:151 status:verbatim -->
 ### T-30-056 · tablycya · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1688,7 +1688,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-057 sha:00fc3a0d src:manual/30-struktura.md:153 klas:A -->
+<!-- fc id:T-30-057 sha:00fc3a0d src:manual/30-struktura.md:153 status:verbatim -->
 ### T-30-057 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1751,7 +1751,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-058 sha:ffbb3b29 src:manual/30-struktura.md:154 klas:F -->
+<!-- fc id:T-30-058 sha:ffbb3b29 src:manual/30-struktura.md:154 status:unchecked -->
 ### T-30-058 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1775,7 +1775,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-059 sha:1c4a684c src:manual/30-struktura.md:158 klas:A -->
+<!-- fc id:T-30-059 sha:1c4a684c src:manual/30-struktura.md:158 status:verbatim -->
 ### T-30-059 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1826,7 +1826,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-060 sha:0ede65d0 src:manual/30-struktura.md:160 klas:A -->
+<!-- fc id:T-30-060 sha:0ede65d0 src:manual/30-struktura.md:160 status:verbatim -->
 ### T-30-060 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1866,7 +1866,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-061 sha:07790fd1 src:manual/30-struktura.md:163 klas:K -->
+<!-- fc id:T-30-061 sha:07790fd1 src:manual/30-struktura.md:163 status:code-context -->
 ### T-30-061 · kod · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1909,7 +1909,7 @@ uint8_t *fast = heap_caps_malloc(65536, MALLOC_CAP_INTERNAL); // напевно 
 
 ---
 
-<!-- fc id:T-30-062 sha:6c89b51c src:manual/30-struktura.md:168 klas:E -->
+<!-- fc id:T-30-062 sha:6c89b51c src:manual/30-struktura.md:168 status:no-external-signal -->
 ### T-30-062 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1930,7 +1930,7 @@ uint8_t *fast = heap_caps_malloc(65536, MALLOC_CAP_INTERNAL); // напевно 
 
 ---
 
-<!-- fc id:T-30-063 sha:7d8168b3 src:manual/30-struktura.md:170 klas:K -->
+<!-- fc id:T-30-063 sha:7d8168b3 src:manual/30-struktura.md:170 status:code-context -->
 ### T-30-063 · kod · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1975,7 +1975,7 @@ ESP_LOGI(TAG, "вільно: %u, найбільший блок: %u",
 
 ---
 
-<!-- fc id:T-30-064 sha:6234b56e src:manual/30-struktura.md:172 klas:A -->
+<!-- fc id:T-30-064 sha:6234b56e src:manual/30-struktura.md:172 status:verbatim -->
 ### T-30-064 · kod-ryadok · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2016,7 +2016,7 @@ ESP_LOGI(TAG, "вільно: %u, найбільший блок: %u",
 
 ---
 
-<!-- fc id:T-30-065 sha:ad1f39e3 src:manual/30-struktura.md:173 klas:A -->
+<!-- fc id:T-30-065 sha:ad1f39e3 src:manual/30-struktura.md:173 status:verbatim -->
 ### T-30-065 · kod-ryadok · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2057,7 +2057,7 @@ ESP_LOGI(TAG, "вільно: %u, найбільший блок: %u",
 
 ---
 
-<!-- fc id:T-30-066 sha:cc69ac87 src:manual/30-struktura.md:176 klas:E -->
+<!-- fc id:T-30-066 sha:cc69ac87 src:manual/30-struktura.md:176 status:no-external-signal -->
 ### T-30-066 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2079,7 +2079,7 @@ ESP_LOGI(TAG, "вільно: %u, найбільший блок: %u",
 
 ---
 
-<!-- fc id:T-30-067 sha:d52f1ea5 src:manual/30-struktura.md:176 klas:A -->
+<!-- fc id:T-30-067 sha:d52f1ea5 src:manual/30-struktura.md:176 status:verbatim -->
 ### T-30-067 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2107,7 +2107,7 @@ ESP_LOGI(TAG, "вільно: %u, найбільший блок: %u",
 
 ---
 
-<!-- fc id:T-30-068 sha:83aff946 src:manual/30-struktura.md:179 klas:A -->
+<!-- fc id:T-30-068 sha:83aff946 src:manual/30-struktura.md:179 status:verbatim -->
 ### T-30-068 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2160,7 +2160,7 @@ ESP_LOGI(TAG, "вільно: %u, найбільший блок: %u",
 
 ---
 
-<!-- fc id:T-30-069 sha:54537a63 src:manual/30-struktura.md:183 klas:K -->
+<!-- fc id:T-30-069 sha:54537a63 src:manual/30-struktura.md:183 status:code-context -->
 ### T-30-069 · kod · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2193,7 +2193,7 @@ if (buf == NULL) {
 
 ---
 
-<!-- fc id:T-30-070 sha:960e650b src:manual/30-struktura.md:186 klas:F -->
+<!-- fc id:T-30-070 sha:960e650b src:manual/30-struktura.md:186 status:unchecked -->
 ### T-30-070 · kod-ryadok · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2220,7 +2220,7 @@ if (buf == NULL) {
 
 ---
 
-<!-- fc id:T-30-071 sha:2c139180 src:manual/30-struktura.md:193 klas:E -->
+<!-- fc id:T-30-071 sha:2c139180 src:manual/30-struktura.md:193 status:no-external-signal -->
 ### T-30-071 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2243,7 +2243,7 @@ NVS, стирання сектора) кеш вимикається, і вико
 
 ---
 
-<!-- fc id:T-30-072 sha:283e1395 src:manual/30-struktura.md:193 klas:F -->
+<!-- fc id:T-30-072 sha:283e1395 src:manual/30-struktura.md:193 status:unchecked -->
 ### T-30-072 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2266,7 +2266,7 @@ NVS, стирання сектора) кеш вимикається, і вико
 
 ---
 
-<!-- fc id:T-30-073 sha:a8346dff src:manual/30-struktura.md:197 klas:A -->
+<!-- fc id:T-30-073 sha:a8346dff src:manual/30-struktura.md:197 status:verbatim -->
 ### T-30-073 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2294,7 +2294,7 @@ NVS, стирання сектора) кеш вимикається, і вико
 
 ---
 
-<!-- fc id:T-30-074 sha:e4e95770 src:manual/30-struktura.md:200 klas:K -->
+<!-- fc id:T-30-074 sha:e4e95770 src:manual/30-struktura.md:200 status:code-context -->
 ### T-30-074 · kod · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2329,7 +2329,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) { ... }
 
 ---
 
-<!-- fc id:T-30-075 sha:bd569017 src:manual/30-struktura.md:204 klas:A -->
+<!-- fc id:T-30-075 sha:bd569017 src:manual/30-struktura.md:204 status:verbatim -->
 ### T-30-075 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2378,7 +2378,7 @@ static void IRAM_ATTR gpio_isr_handler(void *arg) { ... }
 
 ---
 
-<!-- fc id:T-30-076 sha:274d7cce src:manual/30-struktura.md:207 klas:A -->
+<!-- fc id:T-30-076 sha:274d7cce src:manual/30-struktura.md:207 status:verbatim -->
 ### T-30-076 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2407,7 +2407,7 @@ IRAM небагато, і кожна така функція займає її �
 
 ---
 
-<!-- fc id:T-30-077 sha:ef960cbf src:manual/30-struktura.md:207 klas:A -->
+<!-- fc id:T-30-077 sha:ef960cbf src:manual/30-struktura.md:207 status:verbatim -->
 ### T-30-077 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2440,7 +2440,7 @@ IRAM небагато, і кожна така функція займає її �
 
 ---
 
-<!-- fc id:T-30-078 sha:3ff21391 src:manual/30-struktura.md:213 klas:F -->
+<!-- fc id:T-30-078 sha:3ff21391 src:manual/30-struktura.md:213 status:unchecked -->
 ### T-30-078 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2463,7 +2463,7 @@ IRAM небагато, і кожна така функція займає її �
 
 ---
 
-<!-- fc id:T-30-079 sha:53abed90 src:manual/30-struktura.md:214 klas:E -->
+<!-- fc id:T-30-079 sha:53abed90 src:manual/30-struktura.md:214 status:no-external-signal -->
 ### T-30-079 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2486,7 +2486,7 @@ IRAM небагато, і кожна така функція займає її �
 
 ---
 
-<!-- fc id:T-30-080 sha:61539d28 src:manual/30-struktura.md:217 klas:F -->
+<!-- fc id:T-30-080 sha:61539d28 src:manual/30-struktura.md:217 status:unchecked -->
 ### T-30-080 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2508,7 +2508,7 @@ IRAM небагато, і кожна така функція займає її �
 
 ---
 
-<!-- fc id:T-30-081 sha:30161603 src:manual/30-struktura.md:217 klas:E -->
+<!-- fc id:T-30-081 sha:30161603 src:manual/30-struktura.md:217 status:no-external-signal -->
 ### T-30-081 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2530,7 +2530,7 @@ IRAM небагато, і кожна така функція займає її �
 
 ---
 
-<!-- fc id:T-30-082 sha:5503aeaf src:manual/30-struktura.md:220 klas:K -->
+<!-- fc id:T-30-082 sha:5503aeaf src:manual/30-struktura.md:220 status:code-context -->
 ### T-30-082 · kod · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2559,7 +2559,7 @@ lichylnyk++;   // читання + додавання + запис — три д
 
 ---
 
-<!-- fc id:T-30-083 sha:f8388e6b src:manual/30-struktura.md:226 klas:E -->
+<!-- fc id:T-30-083 sha:f8388e6b src:manual/30-struktura.md:226 status:no-external-signal -->
 ### T-30-083 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2583,7 +2583,7 @@ lichylnyk++;   // читання + додавання + запис — три д
 
 ---
 
-<!-- fc id:T-30-084 sha:c2dcc926 src:manual/30-struktura.md:226 klas:F -->
+<!-- fc id:T-30-084 sha:c2dcc926 src:manual/30-struktura.md:226 status:unchecked -->
 ### T-30-084 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2607,7 +2607,7 @@ lichylnyk++;   // читання + додавання + запис — три д
 
 ---
 
-<!-- fc id:T-30-085 sha:5bcfe49a src:manual/30-struktura.md:231 klas:A -->
+<!-- fc id:T-30-085 sha:5bcfe49a src:manual/30-struktura.md:231 status:verbatim -->
 ### T-30-085 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2636,7 +2636,7 @@ lichylnyk++;   // читання + додавання + запис — три д
 
 ---
 
-<!-- fc id:T-30-086 sha:38e10f93 src:manual/30-struktura.md:231 klas:A -->
+<!-- fc id:T-30-086 sha:38e10f93 src:manual/30-struktura.md:231 status:verbatim -->
 ### T-30-086 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2665,7 +2665,7 @@ lichylnyk++;   // читання + додавання + запис — три д
 
 ---
 
-<!-- fc id:T-30-087 sha:42e5df0c src:manual/30-struktura.md:233 klas:A -->
+<!-- fc id:T-30-087 sha:42e5df0c src:manual/30-struktura.md:233 status:verbatim -->
 ### T-30-087 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2694,7 +2694,7 @@ lichylnyk++;   // читання + додавання + запис — три д
 
 ---
 
-<!-- fc id:T-30-088 sha:66cbb212 src:manual/30-struktura.md:237 klas:K -->
+<!-- fc id:T-30-088 sha:66cbb212 src:manual/30-struktura.md:237 status:code-context -->
 ### T-30-088 · kod · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2743,7 +2743,7 @@ idf.py size-components   # хто саме займає
 
 ---
 
-<!-- fc id:T-30-089 sha:30366121 src:manual/30-struktura.md:238 klas:A -->
+<!-- fc id:T-30-089 sha:30366121 src:manual/30-struktura.md:238 status:verbatim -->
 ### T-30-089 · kod-ryadok · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2789,7 +2789,7 @@ idf.py size-components   # хто саме займає
 
 ---
 
-<!-- fc id:T-30-090 sha:6c692b14 src:manual/30-struktura.md:239 klas:A -->
+<!-- fc id:T-30-090 sha:6c692b14 src:manual/30-struktura.md:239 status:verbatim -->
 ### T-30-090 · kod-ryadok · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2835,7 +2835,7 @@ idf.py size-components   # хто саме займає
 
 ---
 
-<!-- fc id:T-30-091 sha:d2a9a595 src:manual/30-struktura.md:242 klas:A -->
+<!-- fc id:T-30-091 sha:d2a9a595 src:manual/30-struktura.md:242 status:verbatim -->
 ### T-30-091 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2880,7 +2880,7 @@ idf.py size-components   # хто саме займає
 
 ---
 
-<!-- fc id:T-30-092 sha:23020636 src:manual/30-struktura.md:248 klas:K -->
+<!-- fc id:T-30-092 sha:23020636 src:manual/30-struktura.md:248 status:code-context -->
 ### T-30-092 · kod · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2907,7 +2907,7 @@ ESP_LOGI(TAG, "мінімум за весь час: %u", esp_get_minimum_free_he
 
 ---
 
-<!-- fc id:T-30-093 sha:2e66a826 src:manual/30-struktura.md:249 klas:F -->
+<!-- fc id:T-30-093 sha:2e66a826 src:manual/30-struktura.md:249 status:unchecked -->
 ### T-30-093 · kod-ryadok · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2931,7 +2931,7 @@ ESP_LOGI(TAG, "мінімум за весь час: %u", esp_get_minimum_free_he
 
 ---
 
-<!-- fc id:T-30-094 sha:991d1932 src:manual/30-struktura.md:250 klas:F -->
+<!-- fc id:T-30-094 sha:991d1932 src:manual/30-struktura.md:250 status:unchecked -->
 ### T-30-094 · kod-ryadok · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2955,7 +2955,7 @@ ESP_LOGI(TAG, "мінімум за весь час: %u", esp_get_minimum_free_he
 
 ---
 
-<!-- fc id:T-30-095 sha:ccc7ed3c src:manual/30-struktura.md:253 klas:E -->
+<!-- fc id:T-30-095 sha:ccc7ed3c src:manual/30-struktura.md:253 status:no-external-signal -->
 ### T-30-095 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2977,7 +2977,7 @@ ESP_LOGI(TAG, "мінімум за весь час: %u", esp_get_minimum_free_he
 
 ---
 
-<!-- fc id:T-30-096 sha:8b57246a src:manual/30-struktura.md:258 klas:F -->
+<!-- fc id:T-30-096 sha:8b57246a src:manual/30-struktura.md:258 status:unchecked -->
 ### T-30-096 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2999,7 +2999,7 @@ ESP_LOGI(TAG, "мінімум за весь час: %u", esp_get_minimum_free_he
 
 ---
 
-<!-- fc id:T-30-097 sha:6d579e42 src:manual/30-struktura.md:261 klas:E -->
+<!-- fc id:T-30-097 sha:6d579e42 src:manual/30-struktura.md:261 status:no-external-signal -->
 ### T-30-097 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -3021,7 +3021,7 @@ ESP_LOGI(TAG, "мінімум за весь час: %u", esp_get_minimum_free_he
 
 ---
 
-<!-- fc id:T-30-098 sha:d8584f81 src:manual/30-struktura.md:262 klas:E -->
+<!-- fc id:T-30-098 sha:d8584f81 src:manual/30-struktura.md:262 status:no-external-signal -->
 ### T-30-098 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -3043,7 +3043,7 @@ ESP_LOGI(TAG, "мінімум за весь час: %u", esp_get_minimum_free_he
 
 ---
 
-<!-- fc id:T-30-099 sha:e8ebea85 src:manual/30-struktura.md:264 klas:E -->
+<!-- fc id:T-30-099 sha:e8ebea85 src:manual/30-struktura.md:264 status:no-external-signal -->
 ### T-30-099 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -3065,7 +3065,7 @@ ESP_LOGI(TAG, "мінімум за весь час: %u", esp_get_minimum_free_he
 
 ---
 
-<!-- fc id:T-30-100 sha:9243b822 src:manual/30-struktura.md:267 klas:E -->
+<!-- fc id:T-30-100 sha:9243b822 src:manual/30-struktura.md:267 status:no-external-signal -->
 ### T-30-100 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -3086,7 +3086,7 @@ ESP_LOGI(TAG, "мінімум за весь час: %u", esp_get_minimum_free_he
 
 ---
 
-<!-- fc id:T-30-101 sha:21874c85 src:manual/30-struktura.md:269 klas:A -->
+<!-- fc id:T-30-101 sha:21874c85 src:manual/30-struktura.md:269 status:verbatim -->
 ### T-30-101 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -3113,7 +3113,7 @@ ESP_LOGI(TAG, "мінімум за весь час: %u", esp_get_minimum_free_he
 
 ---
 
-<!-- fc id:T-30-102 sha:b09b18e3 src:manual/30-struktura.md:271 klas:A -->
+<!-- fc id:T-30-102 sha:b09b18e3 src:manual/30-struktura.md:271 status:verbatim -->
 ### T-30-102 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**

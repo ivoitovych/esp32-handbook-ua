@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/h-dzherela.md`
 
-Одиниць твердження: **45**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **45**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-H-001 sha:58f3cef2 src:dodatky/h-dzherela.md:3 klas:E -->
+<!-- fc id:T-H-001 sha:58f3cef2 src:dodatky/h-dzherela.md:3 status:no-external-signal -->
 ### T-H-001 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-H-002 sha:7cfb288e src:dodatky/h-dzherela.md:7 klas:E -->
+<!-- fc id:T-H-002 sha:7cfb288e src:dodatky/h-dzherela.md:7 status:no-external-signal -->
 ### T-H-002 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-H-003 sha:8c2c855b src:dodatky/h-dzherela.md:11 klas:F -->
+<!-- fc id:T-H-003 sha:8c2c855b src:dodatky/h-dzherela.md:11 status:unchecked -->
 ### T-H-003 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -78,7 +78,7 @@
 
 ---
 
-<!-- fc id:T-H-004 sha:3adcb79c src:dodatky/h-dzherela.md:12 klas:E -->
+<!-- fc id:T-H-004 sha:3adcb79c src:dodatky/h-dzherela.md:12 status:no-external-signal -->
 ### T-H-004 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -102,7 +102,7 @@
 
 ---
 
-<!-- fc id:T-H-005 sha:2c4b59ad src:dodatky/h-dzherela.md:18 klas:F -->
+<!-- fc id:T-H-005 sha:2c4b59ad src:dodatky/h-dzherela.md:18 status:unchecked -->
 ### T-H-005 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -124,7 +124,7 @@
 
 ---
 
-<!-- fc id:T-H-006 sha:452ce777 src:dodatky/h-dzherela.md:19 klas:F -->
+<!-- fc id:T-H-006 sha:452ce777 src:dodatky/h-dzherela.md:19 status:unchecked -->
 ### T-H-006 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -146,7 +146,7 @@
 
 ---
 
-<!-- fc id:T-H-007 sha:b46ca574 src:dodatky/h-dzherela.md:21 klas:E -->
+<!-- fc id:T-H-007 sha:b46ca574 src:dodatky/h-dzherela.md:21 status:no-external-signal -->
 ### T-H-007 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -169,7 +169,7 @@
 
 ---
 
-<!-- fc id:T-H-008 sha:963b9a8b src:dodatky/h-dzherela.md:25 klas:F -->
+<!-- fc id:T-H-008 sha:963b9a8b src:dodatky/h-dzherela.md:25 status:unchecked -->
 ### T-H-008 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -192,7 +192,7 @@
 
 ---
 
-<!-- fc id:T-H-009 sha:97520e07 src:dodatky/h-dzherela.md:26 klas:E -->
+<!-- fc id:T-H-009 sha:97520e07 src:dodatky/h-dzherela.md:26 status:no-external-signal -->
 ### T-H-009 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -215,7 +215,7 @@
 
 ---
 
-<!-- fc id:T-H-010 sha:d0568dd7 src:dodatky/h-dzherela.md:27 klas:F -->
+<!-- fc id:T-H-010 sha:d0568dd7 src:dodatky/h-dzherela.md:27 status:unchecked -->
 ### T-H-010 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -238,7 +238,7 @@
 
 ---
 
-<!-- fc id:T-H-011 sha:e538c76d src:dodatky/h-dzherela.md:29 klas:E -->
+<!-- fc id:T-H-011 sha:e538c76d src:dodatky/h-dzherela.md:29 status:no-external-signal -->
 ### T-H-011 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -261,7 +261,7 @@
 
 ---
 
-<!-- fc id:T-H-012 sha:706ec1e9 src:dodatky/h-dzherela.md:30 klas:E -->
+<!-- fc id:T-H-012 sha:706ec1e9 src:dodatky/h-dzherela.md:30 status:no-external-signal -->
 ### T-H-012 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -284,7 +284,7 @@
 
 ---
 
-<!-- fc id:T-H-013 sha:9191c24f src:dodatky/h-dzherela.md:33 klas:A -->
+<!-- fc id:T-H-013 sha:9191c24f src:dodatky/h-dzherela.md:33 status:verbatim -->
 ### T-H-013 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -313,7 +313,7 @@
 
 ---
 
-<!-- fc id:T-H-014 sha:9c449739 src:dodatky/h-dzherela.md:34 klas:A -->
+<!-- fc id:T-H-014 sha:9c449739 src:dodatky/h-dzherela.md:34 status:verbatim -->
 ### T-H-014 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -342,7 +342,7 @@
 
 ---
 
-<!-- fc id:T-H-015 sha:635dc4f6 src:dodatky/h-dzherela.md:37 klas:E -->
+<!-- fc id:T-H-015 sha:635dc4f6 src:dodatky/h-dzherela.md:37 status:no-external-signal -->
 ### T-H-015 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -365,7 +365,7 @@
 
 ---
 
-<!-- fc id:T-H-016 sha:40149fc6 src:dodatky/h-dzherela.md:38 klas:E -->
+<!-- fc id:T-H-016 sha:40149fc6 src:dodatky/h-dzherela.md:38 status:no-external-signal -->
 ### T-H-016 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -388,7 +388,7 @@
 
 ---
 
-<!-- fc id:T-H-017 sha:68023ab6 src:dodatky/h-dzherela.md:43 klas:A -->
+<!-- fc id:T-H-017 sha:68023ab6 src:dodatky/h-dzherela.md:43 status:verbatim -->
 ### T-H-017 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -416,7 +416,7 @@
 
 ---
 
-<!-- fc id:T-H-018 sha:3101f6ff src:dodatky/h-dzherela.md:43 klas:E -->
+<!-- fc id:T-H-018 sha:3101f6ff src:dodatky/h-dzherela.md:43 status:no-external-signal -->
 ### T-H-018 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -438,7 +438,7 @@
 
 ---
 
-<!-- fc id:T-H-019 sha:429d3242 src:dodatky/h-dzherela.md:46 klas:F -->
+<!-- fc id:T-H-019 sha:429d3242 src:dodatky/h-dzherela.md:46 status:unchecked -->
 ### T-H-019 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -463,7 +463,7 @@
 
 ---
 
-<!-- fc id:T-H-020 sha:235314d1 src:dodatky/h-dzherela.md:47 klas:F -->
+<!-- fc id:T-H-020 sha:235314d1 src:dodatky/h-dzherela.md:47 status:unchecked -->
 ### T-H-020 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -488,7 +488,7 @@
 
 ---
 
-<!-- fc id:T-H-021 sha:ff9d3047 src:dodatky/h-dzherela.md:52 klas:A -->
+<!-- fc id:T-H-021 sha:ff9d3047 src:dodatky/h-dzherela.md:52 status:verbatim -->
 ### T-H-021 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -517,7 +517,7 @@
 
 ---
 
-<!-- fc id:T-H-022 sha:926030cb src:dodatky/h-dzherela.md:55 klas:F -->
+<!-- fc id:T-H-022 sha:926030cb src:dodatky/h-dzherela.md:55 status:unchecked -->
 ### T-H-022 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -539,7 +539,7 @@
 
 ---
 
-<!-- fc id:T-H-023 sha:07da3443 src:dodatky/h-dzherela.md:58 klas:A -->
+<!-- fc id:T-H-023 sha:07da3443 src:dodatky/h-dzherela.md:58 status:verbatim -->
 ### T-H-023 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -583,7 +583,7 @@
 
 ---
 
-<!-- fc id:T-H-024 sha:6e514363 src:dodatky/h-dzherela.md:63 klas:F -->
+<!-- fc id:T-H-024 sha:6e514363 src:dodatky/h-dzherela.md:63 status:unchecked -->
 ### T-H-024 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -605,7 +605,7 @@
 
 ---
 
-<!-- fc id:T-H-025 sha:c18855f5 src:dodatky/h-dzherela.md:66 klas:F -->
+<!-- fc id:T-H-025 sha:c18855f5 src:dodatky/h-dzherela.md:66 status:unchecked -->
 ### T-H-025 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -626,7 +626,7 @@
 
 ---
 
-<!-- fc id:T-H-026 sha:51828abe src:dodatky/h-dzherela.md:68 klas:F -->
+<!-- fc id:T-H-026 sha:51828abe src:dodatky/h-dzherela.md:68 status:unchecked -->
 ### T-H-026 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -647,7 +647,7 @@
 
 ---
 
-<!-- fc id:T-H-027 sha:f3a2529a src:dodatky/h-dzherela.md:70 klas:A -->
+<!-- fc id:T-H-027 sha:f3a2529a src:dodatky/h-dzherela.md:70 status:verbatim -->
 ### T-H-027 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -677,7 +677,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-028 sha:8c0c5ef0 src:dodatky/h-dzherela.md:77 klas:E -->
+<!-- fc id:T-H-028 sha:8c0c5ef0 src:dodatky/h-dzherela.md:77 status:no-external-signal -->
 ### T-H-028 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -698,7 +698,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-029 sha:2ed1a727 src:dodatky/h-dzherela.md:79 klas:F -->
+<!-- fc id:T-H-029 sha:2ed1a727 src:dodatky/h-dzherela.md:79 status:unchecked -->
 ### T-H-029 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -725,7 +725,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-030 sha:7acccaa1 src:dodatky/h-dzherela.md:81 klas:E -->
+<!-- fc id:T-H-030 sha:7acccaa1 src:dodatky/h-dzherela.md:81 status:no-external-signal -->
 ### T-H-030 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -752,7 +752,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-031 sha:6c5b99f7 src:dodatky/h-dzherela.md:82 klas:E -->
+<!-- fc id:T-H-031 sha:6c5b99f7 src:dodatky/h-dzherela.md:82 status:no-external-signal -->
 ### T-H-031 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -779,7 +779,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-032 sha:d3e3bb5b src:dodatky/h-dzherela.md:83 klas:E -->
+<!-- fc id:T-H-032 sha:d3e3bb5b src:dodatky/h-dzherela.md:83 status:no-external-signal -->
 ### T-H-032 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -806,7 +806,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-033 sha:73ea27e7 src:dodatky/h-dzherela.md:84 klas:E -->
+<!-- fc id:T-H-033 sha:73ea27e7 src:dodatky/h-dzherela.md:84 status:no-external-signal -->
 ### T-H-033 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -833,7 +833,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-034 sha:f29f5462 src:dodatky/h-dzherela.md:85 klas:E -->
+<!-- fc id:T-H-034 sha:f29f5462 src:dodatky/h-dzherela.md:85 status:no-external-signal -->
 ### T-H-034 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -860,7 +860,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-035 sha:b0b5fd90 src:dodatky/h-dzherela.md:88 klas:E -->
+<!-- fc id:T-H-035 sha:b0b5fd90 src:dodatky/h-dzherela.md:88 status:no-external-signal -->
 ### T-H-035 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -884,7 +884,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-036 sha:0ea272bd src:dodatky/h-dzherela.md:88 klas:F -->
+<!-- fc id:T-H-036 sha:0ea272bd src:dodatky/h-dzherela.md:88 status:unchecked -->
 ### T-H-036 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -908,7 +908,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-037 sha:b24df478 src:dodatky/h-dzherela.md:89 klas:E -->
+<!-- fc id:T-H-037 sha:b24df478 src:dodatky/h-dzherela.md:89 status:no-external-signal -->
 ### T-H-037 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -932,7 +932,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-038 sha:c28aeb08 src:dodatky/h-dzherela.md:92 klas:E -->
+<!-- fc id:T-H-038 sha:c28aeb08 src:dodatky/h-dzherela.md:92 status:no-external-signal -->
 ### T-H-038 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -955,7 +955,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-039 sha:8e57e2c5 src:dodatky/h-dzherela.md:98 klas:E -->
+<!-- fc id:T-H-039 sha:8e57e2c5 src:dodatky/h-dzherela.md:98 status:no-external-signal -->
 ### T-H-039 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -976,7 +976,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-040 sha:4e7c3e7c src:dodatky/h-dzherela.md:100 klas:E -->
+<!-- fc id:T-H-040 sha:4e7c3e7c src:dodatky/h-dzherela.md:100 status:no-external-signal -->
 ### T-H-040 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -999,7 +999,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-041 sha:38f042ae src:dodatky/h-dzherela.md:101 klas:E -->
+<!-- fc id:T-H-041 sha:38f042ae src:dodatky/h-dzherela.md:101 status:no-external-signal -->
 ### T-H-041 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -1022,7 +1022,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-042 sha:7f1281ce src:dodatky/h-dzherela.md:104 klas:E -->
+<!-- fc id:T-H-042 sha:7f1281ce src:dodatky/h-dzherela.md:104 status:no-external-signal -->
 ### T-H-042 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -1043,7 +1043,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-043 sha:af2e654b src:dodatky/h-dzherela.md:108 klas:E -->
+<!-- fc id:T-H-043 sha:af2e654b src:dodatky/h-dzherela.md:108 status:no-external-signal -->
 ### T-H-043 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -1066,7 +1066,7 @@ Espressif Systems і виробників компонентів. Вони на�
 
 ---
 
-<!-- fc id:T-H-044 sha:c95feec0 src:dodatky/h-dzherela.md:109 klas:E -->
+<!-- fc id:T-H-044 sha:c95feec0 src:dodatky/h-dzherela.md:109 status:no-external-signal -->
 ### T-H-044 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -1089,7 +1089,7 @@ Espressif Systems і виробників компонентів. Вони на�
 
 ---
 
-<!-- fc id:T-H-045 sha:8d8e641a src:dodatky/h-dzherela.md:112 klas:E -->
+<!-- fc id:T-H-045 sha:8d8e641a src:dodatky/h-dzherela.md:112 status:no-external-signal -->
 ### T-H-045 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**

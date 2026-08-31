@@ -60,7 +60,6 @@
 
 - nazva: 'T-41-007: Проєкт на SPP, що переїжджає на S3, доведеться'
   zbih: Проєкт\s+на\s+SPP,\s+що
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/classic-bt/profiles-protocols.rst
   cytata: 'Serial Port Profile (SPP) defines a serial communication application based on the
     RFCOMM protocol, enabling RS-232-style data transmission over Bluetooth.
@@ -88,7 +87,6 @@
   - 9a9b3be0
 - nazva: 'T-41-011: Де є · BLE → уся лінійка, крім'
   zbih: Де\s+є\s+·\s+BLE
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/overview.rst
   cytata: "* - ESP32\n  - Y\n  - Y\n  - Y\n  - Y\n  - \\–\n  - \\–\n  - Y\n* - ESP32-S3\n\
     \  - Y\n  - Y\n  - Y\n  - Y\n  - \\–\n  - \\–\n  - Y\n* - ESP32-C2\n  - Y\n  - Y\n  -\
@@ -121,7 +119,6 @@
   - ca7eb120
 - nazva: 'T-41-015: Швидкість · BLE → десятки кбіт/с'
   zbih: Швидкість\s+·\s+BLE\s+→
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/get-started/ble-introduction.rst
   cytata: 'Bluetooth LE is a Bluetooth protocol that is not compatible with Bluetooth Classic
     and was introduced in Bluetooth 4.0. As the name suggests, Bluetooth LE is a low-power
@@ -151,7 +148,6 @@
   - ed26a2f5
 - nazva: 'T-41-019: Спарювання · BLE → не обов''язкове'
   zbih: Спарювання\s+·\s+BLE\s+→
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/get-started/ble-connection.rst
   cytata: 'conn_itvl=36, conn_latency=0, supervision_timeout=500, encrypted=0, authenticated=0,
     bonded=0
@@ -179,7 +175,6 @@
   - cff9038c
 - nazva: 'T-41-038: Тоді пристрій самоописовий — будь-який універсальний BLE-застосунок покаже'
   zbih: Тоді\s+пристрій\s+самоописовий\s+—
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/get-started/ble-data-exchange.rst
   cytata: 'In fact, the definitions of these services and characteristic data are also provided
     by the SIG. For example, the value of the Heart Rate Measurement must include a flag field
@@ -215,7 +210,6 @@
   - 32a9ba20
 - nazva: 'T-41-040: В ESP-IDF два стеки BLE, і вибір між'
   zbih: В\s+ESP\-IDF\s+два\s+стеки
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/bluetooth/index.rst
   cytata: 'ESP-IDF supports two host stacks: **Bluedroid** and **NimBLE**.
 
@@ -239,7 +233,6 @@
   - f1921f7b
 - nazva: 'T-41-041: **Bluedroid** — повний стек, підтримує і Classic, і'
   zbih: \*\*Bluedroid\*\*\s+—\s+повний\s+стек,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/bluetooth/index.rst
   cytata: '- **Bluedroid** (the default stack): Supports both Bluetooth Classic and Bluetooth
     LE. Recommended for applications that require both technologies.
@@ -265,7 +258,6 @@
   - be3db6f9
 - nazva: 'T-41-043: **NimBLE** — тільки BLE, компактніший, займає в рази'
   zbih: \*\*NimBLE\*\*\s+—\s+тільки\s+BLE,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/overview.rst
   cytata: 'Although both support Bluetooth LE, ESP-NimBLE requires less heap and flash size.
 
@@ -289,7 +281,6 @@
   - 3aa1db4f
 - nazva: 'T-41-049: **Wi-Fi і Bluetooth одночасно** працюють, але ділять одне'
   zbih: \*\*Wi\-Fi\s+і\s+Bluetooth\s+одночасно\*\*
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/coexist.rst
   cytata: 'Each type of board has only one 2.4 GHz ISM band RF module, shared by two or three
     modules. Consequently, a module cannot receive or transmit data while another module is
@@ -317,7 +308,6 @@
   - 642e02fc
 - nazva: 'T-41-054: BLE спроєктований для батарейок, і його головний параметр'
   zbih: BLE\s+спроєктований\s+для\s+батарейок,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/get-started/ble-introduction.rst
   cytata: 'Bluetooth LE is a low-power Bluetooth protocol with a lower data transfer rate
     compared to Bluetooth Classic. It is typically used in data communication for the Internet
@@ -347,7 +337,6 @@
   - 881b2151
 - nazva: 'T-41-078: Для BLE-проєкту брати NimBLE: різниця в пам''яті вирішальна'
   zbih: 'Для\s+BLE\-проєкту\s+брати\s+NimBLE:'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/overview.rst
   cytata: 'Although both support Bluetooth LE, ESP-NimBLE requires less heap and flash size.
 

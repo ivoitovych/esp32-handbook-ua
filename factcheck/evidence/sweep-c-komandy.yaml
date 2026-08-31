@@ -1,6 +1,5 @@
 - nazva: 'T-C-075: `-i` обов''язковий: без нього inline-кадри зникають.'
   zbih: '`\-i`\s+обов''язковий:\s+без\s+нього'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
   cytata: '(inlined by) inner_dont_crash
 
@@ -20,7 +19,6 @@
   - 2a969ef0
 - nazva: 'T-C-092: `/dev/ttyUSB*` — зовнішній міст.'
   zbih: '`/dev/ttyUSB\*`\s+—\s+зовнішній\s+міст\.'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
   cytata: 'For Linux users, if the port name is ``/dev/ttyUSB0``
 

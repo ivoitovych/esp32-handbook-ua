@@ -1,6 +1,5 @@
 - nazva: 74HC595 — зсувний регістр, вихід
   zbih: \*\*Зсувний регістр\*\* 74HC595 на виходи
-  klas: A
   dzherelo: Texas Instruments, SNx4HC595 8-Bit Shift Registers With 3-State Output Registers (SCLS041J),
     розділи «Features» і «Description»
   cytata: 'SN54HC595, SN74HC595
@@ -68,7 +67,6 @@
     для задачі розширення портів на виходи.
 - nazva: 74HC165 — зсувний регістр, вхід
   zbih: 74HC165 на входи
-  klas: A
   dzherelo: Texas Instruments, SNx4HC165 8-Bit Parallel-Load Shift Registers (SCLS116H), розділи «Features»
     і «Description»
   cytata: 'SN54HC165, SN74HC165
@@ -144,7 +142,6 @@
     каскадування досягається послідовним виходом (serial QH output).
 - nazva: CD4051 — аналоговий мультиплексор, восьми каналів
   zbih: \*\*Аналоговий мультиплексор\*\* CD4051 — вісім аналогових входів
-  klas: A
   dzherelo: Texas Instruments, CD405xB CMOS Single 8-Channel Analog Multiplexer or Demultiplexer With
     Logic-Level Conversion (SCHS047O), розділи «Features» і «Description»
   cytata: 'CD4051B, CD4052B, CD4053B
@@ -216,7 +213,6 @@
   - 28de41c4
 - nazva: 'T-A-123: посилання на розділ 07'
   zbih: розширювач по I²C \(PCF8574, MCP23017\), зсувний регістр \(74HC595/165\)
-  klas: E
   dzherelo: Додаток A, рядок 150 — це список альтернатив із крос-посиланням на розділ 07, а не окремий
     факт про мікросхему.
   cytata: 'Коли не вистачає: розширювач по I²C (PCF8574, MCP23017), зсувний

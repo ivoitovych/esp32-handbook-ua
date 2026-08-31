@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k11-nikoly.md`
 
-Одиниць твердження: **27**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **27**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-K11-001 sha:9236f6d0 src:kartky/k11-nikoly.md:3 klas:E -->
+<!-- fc id:T-K11-001 sha:9236f6d0 src:kartky/k11-nikoly.md:3 status:no-external-signal -->
 ### T-K11-001 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-K11-002 sha:02a70226 src:kartky/k11-nikoly.md:3 klas:E -->
+<!-- fc id:T-K11-002 sha:02a70226 src:kartky/k11-nikoly.md:3 status:no-external-signal -->
 ### T-K11-002 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-K11-003 sha:5e9b040f src:kartky/k11-nikoly.md:7 klas:A -->
+<!-- fc id:T-K11-003 sha:5e9b040f src:kartky/k11-nikoly.md:7 status:verbatim -->
 ### T-K11-003 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -97,7 +97,7 @@ download mode або можливість перепрошивки. Не зап�
 
 ---
 
-<!-- fc id:T-K11-004 sha:0a6903d1 src:kartky/k11-nikoly.md:8 klas:F -->
+<!-- fc id:T-K11-004 sha:0a6903d1 src:kartky/k11-nikoly.md:8 status:unchecked -->
 ### T-K11-004 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -122,7 +122,7 @@ download mode або можливість перепрошивки. Не зап�
 
 ---
 
-<!-- fc id:T-K11-005 sha:cbb6779a src:kartky/k11-nikoly.md:9 klas:A -->
+<!-- fc id:T-K11-005 sha:cbb6779a src:kartky/k11-nikoly.md:9 status:verbatim -->
 ### T-K11-005 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -167,7 +167,7 @@ download mode або можливість перепрошивки. Не зап�
 
 ---
 
-<!-- fc id:T-K11-006 sha:6096b254 src:kartky/k11-nikoly.md:12 klas:A -->
+<!-- fc id:T-K11-006 sha:6096b254 src:kartky/k11-nikoly.md:12 status:verbatim -->
 ### T-K11-006 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -211,7 +211,7 @@ download mode або можливість перепрошивки. Не зап�
 
 ---
 
-<!-- fc id:T-K11-007 sha:c07ac4c6 src:kartky/k11-nikoly.md:12 klas:A -->
+<!-- fc id:T-K11-007 sha:c07ac4c6 src:kartky/k11-nikoly.md:12 status:verbatim -->
 ### T-K11-007 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -255,7 +255,7 @@ download mode або можливість перепрошивки. Не зап�
 
 ---
 
-<!-- fc id:T-K11-008 sha:410af712 src:kartky/k11-nikoly.md:18 klas:A -->
+<!-- fc id:T-K11-008 sha:410af712 src:kartky/k11-nikoly.md:18 status:verbatim -->
 ### T-K11-008 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -288,7 +288,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-009 sha:27686b7b src:kartky/k11-nikoly.md:20 klas:E -->
+<!-- fc id:T-K11-009 sha:27686b7b src:kartky/k11-nikoly.md:20 status:no-external-signal -->
 ### T-K11-009 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -315,7 +315,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-010 sha:4dcbf84d src:kartky/k11-nikoly.md:21 klas:E -->
+<!-- fc id:T-K11-010 sha:4dcbf84d src:kartky/k11-nikoly.md:21 status:no-external-signal -->
 ### T-K11-010 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -342,7 +342,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-011 sha:13a6c845 src:kartky/k11-nikoly.md:26 klas:A -->
+<!-- fc id:T-K11-011 sha:13a6c845 src:kartky/k11-nikoly.md:26 status:verbatim -->
 ### T-K11-011 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -385,7 +385,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-012 sha:34e89cce src:kartky/k11-nikoly.md:28 klas:E -->
+<!-- fc id:T-K11-012 sha:34e89cce src:kartky/k11-nikoly.md:28 status:no-external-signal -->
 ### T-K11-012 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -411,7 +411,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-013 sha:6d6b390e src:kartky/k11-nikoly.md:33 klas:A -->
+<!-- fc id:T-K11-013 sha:6d6b390e src:kartky/k11-nikoly.md:33 status:verbatim -->
 ### T-K11-013 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -444,7 +444,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-014 sha:415c2703 src:kartky/k11-nikoly.md:33 klas:E -->
+<!-- fc id:T-K11-014 sha:415c2703 src:kartky/k11-nikoly.md:33 status:no-external-signal -->
 ### T-K11-014 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -469,7 +469,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-015 sha:a8ece2fd src:kartky/k11-nikoly.md:34 klas:A -->
+<!-- fc id:T-K11-015 sha:a8ece2fd src:kartky/k11-nikoly.md:34 status:verbatim -->
 ### T-K11-015 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -501,7 +501,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-016 sha:94045e56 src:kartky/k11-nikoly.md:35 klas:E -->
+<!-- fc id:T-K11-016 sha:94045e56 src:kartky/k11-nikoly.md:35 status:no-external-signal -->
 ### T-K11-016 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -526,7 +526,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-017 sha:bcf47c92 src:kartky/k11-nikoly.md:38 klas:A -->
+<!-- fc id:T-K11-017 sha:bcf47c92 src:kartky/k11-nikoly.md:38 status:verbatim -->
 ### T-K11-017 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -555,7 +555,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-018 sha:9e743b56 src:kartky/k11-nikoly.md:42 klas:A -->
+<!-- fc id:T-K11-018 sha:9e743b56 src:kartky/k11-nikoly.md:42 status:verbatim -->
 ### T-K11-018 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -601,7 +601,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-019 sha:44b30bed src:kartky/k11-nikoly.md:43 klas:E -->
+<!-- fc id:T-K11-019 sha:44b30bed src:kartky/k11-nikoly.md:43 status:no-external-signal -->
 ### T-K11-019 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -627,7 +627,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-020 sha:925d49ec src:kartky/k11-nikoly.md:44 klas:E -->
+<!-- fc id:T-K11-020 sha:925d49ec src:kartky/k11-nikoly.md:44 status:no-external-signal -->
 ### T-K11-020 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -653,7 +653,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-021 sha:db52595d src:kartky/k11-nikoly.md:50 klas:E -->
+<!-- fc id:T-K11-021 sha:db52595d src:kartky/k11-nikoly.md:50 status:no-external-signal -->
 ### T-K11-021 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -676,7 +676,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-022 sha:8399e47f src:kartky/k11-nikoly.md:52 klas:E -->
+<!-- fc id:T-K11-022 sha:8399e47f src:kartky/k11-nikoly.md:52 status:no-external-signal -->
 ### T-K11-022 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -699,7 +699,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-023 sha:649513c1 src:kartky/k11-nikoly.md:54 klas:D -->
+<!-- fc id:T-K11-023 sha:649513c1 src:kartky/k11-nikoly.md:54 status:arithmetic -->
 ### T-K11-023 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -740,7 +740,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-024 sha:e3a0462c src:kartky/k11-nikoly.md:55 klas:E -->
+<!-- fc id:T-K11-024 sha:e3a0462c src:kartky/k11-nikoly.md:55 status:no-external-signal -->
 ### T-K11-024 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -763,7 +763,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-025 sha:ed255616 src:kartky/k11-nikoly.md:58 klas:A -->
+<!-- fc id:T-K11-025 sha:ed255616 src:kartky/k11-nikoly.md:58 status:verbatim -->
 ### T-K11-025 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -794,7 +794,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-026 sha:15310ad7 src:kartky/k11-nikoly.md:59 klas:A -->
+<!-- fc id:T-K11-026 sha:15310ad7 src:kartky/k11-nikoly.md:59 status:verbatim -->
 ### T-K11-026 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -826,7 +826,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-027 sha:f44cff79 src:kartky/k11-nikoly.md:63 klas:E -->
+<!-- fc id:T-K11-027 sha:f44cff79 src:kartky/k11-nikoly.md:63 status:no-external-signal -->
 ### T-K11-027 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**

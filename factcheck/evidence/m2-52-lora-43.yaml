@@ -1,6 +1,5 @@
 - nazva: Слова «LoRa» в документації RFM69 немає жодного разу
   zbih: Слова «LoRa» в документації RFM69 немає жодного разу
-  klas: A
   dzherelo: RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділ «Key Product Features»
   cytata: 'RFM69HCW — KEY PRODUCT FEATURES
 
@@ -88,7 +87,6 @@
   - abef9779
 - nazva: RFM69 — сусіднє сімейство для вузькосмугового FSK без дальності LoRa
   zbih: RFM69.*сусіднє сімейство.*FSK.*без дальності LoRa
-  klas: A
   dzherelo: 'RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділи 3.3 «FSK Modulation» та «Key Product
     Features» (кеш: source-cache/rfm69hcw.pdf)'
   cytata: '3.3.3. FSK Modulation

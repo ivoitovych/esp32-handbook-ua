@@ -7,7 +7,6 @@
 
 - nazva: 'T-18-075: Швидкість при заповненні · FAT → рівна'
   zbih: Швидкість\s+при\s+заповненні\s+·\s+FAT
-  klas: C
   dzherelo: FAT Specification
   shukaty: FAT Specification
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт
@@ -27,7 +26,6 @@
   - 3764ddb1
 - nazva: 'T-18-062: Коли треба зберігати файли — веб-сторінки, конфігурацію, логи,'
   zbih: Коли\s+треба\s+зберігати\s+файли
-  klas: C
   dzherelo: ESP32-IDF partition table specification
   shukaty: ESP32-IDF partition table specification
   sposib: Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт

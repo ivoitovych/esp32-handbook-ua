@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/51-payannya.md`
 
-Одиниць твердження: **83**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **83**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-51-001 sha:545f2e11 src:manual/51-payannya.md:3 klas:E -->
+<!-- fc id:T-51-001 sha:545f2e11 src:manual/51-payannya.md:3 status:no-external-signal -->
 ### T-51-001 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-51-002 sha:56e55cae src:manual/51-payannya.md:3 klas:E -->
+<!-- fc id:T-51-002 sha:56e55cae src:manual/51-payannya.md:3 status:no-external-signal -->
 ### T-51-002 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-51-003 sha:1ac116d5 src:manual/51-payannya.md:7 klas:E -->
+<!-- fc id:T-51-003 sha:1ac116d5 src:manual/51-payannya.md:7 status:no-external-signal -->
 ### T-51-003 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -75,7 +75,7 @@
 
 ---
 
-<!-- fc id:T-51-004 sha:3f026f5a src:manual/51-payannya.md:11 klas:E -->
+<!-- fc id:T-51-004 sha:3f026f5a src:manual/51-payannya.md:11 status:no-external-signal -->
 ### T-51-004 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-51-005 sha:96d7324f src:manual/51-payannya.md:14 klas:E -->
+<!-- fc id:T-51-005 sha:96d7324f src:manual/51-payannya.md:14 status:no-external-signal -->
 ### T-51-005 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -119,7 +119,7 @@
 
 ---
 
-<!-- fc id:T-51-006 sha:58920972 src:manual/51-payannya.md:15 klas:E -->
+<!-- fc id:T-51-006 sha:58920972 src:manual/51-payannya.md:15 status:no-external-signal -->
 ### T-51-006 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -141,7 +141,7 @@
 
 ---
 
-<!-- fc id:T-51-007 sha:873ed0a6 src:manual/51-payannya.md:17 klas:E -->
+<!-- fc id:T-51-007 sha:873ed0a6 src:manual/51-payannya.md:17 status:no-external-signal -->
 ### T-51-007 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -164,7 +164,7 @@
 
 ---
 
-<!-- fc id:T-51-008 sha:b0ea3b13 src:manual/51-payannya.md:17 klas:E -->
+<!-- fc id:T-51-008 sha:b0ea3b13 src:manual/51-payannya.md:17 status:no-external-signal -->
 ### T-51-008 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -187,7 +187,7 @@
 
 ---
 
-<!-- fc id:T-51-009 sha:45335f7d src:manual/51-payannya.md:18 klas:E -->
+<!-- fc id:T-51-009 sha:45335f7d src:manual/51-payannya.md:18 status:no-external-signal -->
 ### T-51-009 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -210,7 +210,7 @@
 
 ---
 
-<!-- fc id:T-51-010 sha:e59d3acc src:manual/51-payannya.md:21 klas:E -->
+<!-- fc id:T-51-010 sha:e59d3acc src:manual/51-payannya.md:21 status:no-external-signal -->
 ### T-51-010 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -232,7 +232,7 @@
 
 ---
 
-<!-- fc id:T-51-011 sha:098c97a6 src:manual/51-payannya.md:21 klas:E -->
+<!-- fc id:T-51-011 sha:098c97a6 src:manual/51-payannya.md:21 status:no-external-signal -->
 ### T-51-011 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -254,7 +254,7 @@
 
 ---
 
-<!-- fc id:T-51-012 sha:edbedb64 src:manual/51-payannya.md:26 klas:E -->
+<!-- fc id:T-51-012 sha:edbedb64 src:manual/51-payannya.md:26 status:no-external-signal -->
 ### T-51-012 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -286,7 +286,7 @@
 
 ---
 
-<!-- fc id:T-51-013 sha:1a26b80d src:manual/51-payannya.md:26 klas:E -->
+<!-- fc id:T-51-013 sha:1a26b80d src:manual/51-payannya.md:26 status:no-external-signal -->
 ### T-51-013 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -318,7 +318,7 @@
 
 ---
 
-<!-- fc id:T-51-014 sha:dbb6f83b src:manual/51-payannya.md:28 klas:E -->
+<!-- fc id:T-51-014 sha:dbb6f83b src:manual/51-payannya.md:28 status:no-external-signal -->
 ### T-51-014 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -350,7 +350,7 @@
 
 ---
 
-<!-- fc id:T-51-015 sha:847526e9 src:manual/51-payannya.md:30 klas:E -->
+<!-- fc id:T-51-015 sha:847526e9 src:manual/51-payannya.md:30 status:no-external-signal -->
 ### T-51-015 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -382,7 +382,7 @@
 
 ---
 
-<!-- fc id:T-51-016 sha:ae174fea src:manual/51-payannya.md:31 klas:E -->
+<!-- fc id:T-51-016 sha:ae174fea src:manual/51-payannya.md:31 status:no-external-signal -->
 ### T-51-016 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -414,7 +414,7 @@
 
 ---
 
-<!-- fc id:T-51-017 sha:0cc01e35 src:manual/51-payannya.md:32 klas:E -->
+<!-- fc id:T-51-017 sha:0cc01e35 src:manual/51-payannya.md:32 status:no-external-signal -->
 ### T-51-017 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -446,7 +446,7 @@
 
 ---
 
-<!-- fc id:T-51-018 sha:20871a25 src:manual/51-payannya.md:32 klas:E -->
+<!-- fc id:T-51-018 sha:20871a25 src:manual/51-payannya.md:32 status:no-external-signal -->
 ### T-51-018 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -478,7 +478,7 @@
 
 ---
 
-<!-- fc id:T-51-019 sha:5aead44e src:manual/51-payannya.md:34 klas:E -->
+<!-- fc id:T-51-019 sha:5aead44e src:manual/51-payannya.md:34 status:no-external-signal -->
 ### T-51-019 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -510,7 +510,7 @@
 
 ---
 
-<!-- fc id:T-51-020 sha:f822f71c src:manual/51-payannya.md:35 klas:E -->
+<!-- fc id:T-51-020 sha:f822f71c src:manual/51-payannya.md:35 status:no-external-signal -->
 ### T-51-020 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -542,7 +542,7 @@
 
 ---
 
-<!-- fc id:T-51-021 sha:396bda6e src:manual/51-payannya.md:36 klas:E -->
+<!-- fc id:T-51-021 sha:396bda6e src:manual/51-payannya.md:36 status:no-external-signal -->
 ### T-51-021 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -574,7 +574,7 @@
 
 ---
 
-<!-- fc id:T-51-022 sha:c2fe5ae4 src:manual/51-payannya.md:39 klas:E -->
+<!-- fc id:T-51-022 sha:c2fe5ae4 src:manual/51-payannya.md:39 status:no-external-signal -->
 ### T-51-022 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -595,7 +595,7 @@
 
 ---
 
-<!-- fc id:T-51-023 sha:300959c0 src:manual/51-payannya.md:42 klas:E -->
+<!-- fc id:T-51-023 sha:300959c0 src:manual/51-payannya.md:42 status:no-external-signal -->
 ### T-51-023 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -619,7 +619,7 @@
 
 ---
 
-<!-- fc id:T-51-024 sha:ab2dcb15 src:manual/51-payannya.md:43 klas:E -->
+<!-- fc id:T-51-024 sha:ab2dcb15 src:manual/51-payannya.md:43 status:no-external-signal -->
 ### T-51-024 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -643,7 +643,7 @@
 
 ---
 
-<!-- fc id:T-51-025 sha:2b5ae902 src:manual/51-payannya.md:46 klas:E -->
+<!-- fc id:T-51-025 sha:2b5ae902 src:manual/51-payannya.md:46 status:no-external-signal -->
 ### T-51-025 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -665,7 +665,7 @@
 
 ---
 
-<!-- fc id:T-51-026 sha:0f28199b src:manual/51-payannya.md:51 klas:C -->
+<!-- fc id:T-51-026 sha:0f28199b src:manual/51-payannya.md:51 status:named-unreachable -->
 ### T-51-026 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -690,7 +690,7 @@
 
 ---
 
-<!-- fc id:T-51-027 sha:359aca0a src:manual/51-payannya.md:51 klas:B -->
+<!-- fc id:T-51-027 sha:359aca0a src:manual/51-payannya.md:51 status:derived -->
 ### T-51-027 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -723,7 +723,7 @@
 
 ---
 
-<!-- fc id:T-51-028 sha:2dd17603 src:manual/51-payannya.md:54 klas:E -->
+<!-- fc id:T-51-028 sha:2dd17603 src:manual/51-payannya.md:54 status:no-external-signal -->
 ### T-51-028 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -746,7 +746,7 @@
 
 ---
 
-<!-- fc id:T-51-029 sha:02bad26a src:manual/51-payannya.md:55 klas:E -->
+<!-- fc id:T-51-029 sha:02bad26a src:manual/51-payannya.md:55 status:no-external-signal -->
 ### T-51-029 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -769,7 +769,7 @@
 
 ---
 
-<!-- fc id:T-51-030 sha:29e074d8 src:manual/51-payannya.md:59 klas:E -->
+<!-- fc id:T-51-030 sha:29e074d8 src:manual/51-payannya.md:59 status:no-external-signal -->
 ### T-51-030 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -793,7 +793,7 @@
 
 ---
 
-<!-- fc id:T-51-031 sha:76f76986 src:manual/51-payannya.md:60 klas:E -->
+<!-- fc id:T-51-031 sha:76f76986 src:manual/51-payannya.md:60 status:no-external-signal -->
 ### T-51-031 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -817,7 +817,7 @@
 
 ---
 
-<!-- fc id:T-51-032 sha:df279c01 src:manual/51-payannya.md:63 klas:E -->
+<!-- fc id:T-51-032 sha:df279c01 src:manual/51-payannya.md:63 status:no-external-signal -->
 ### T-51-032 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -841,7 +841,7 @@
 
 ---
 
-<!-- fc id:T-51-033 sha:51371de7 src:manual/51-payannya.md:63 klas:E -->
+<!-- fc id:T-51-033 sha:51371de7 src:manual/51-payannya.md:63 status:no-external-signal -->
 ### T-51-033 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -865,7 +865,7 @@
 
 ---
 
-<!-- fc id:T-51-034 sha:c7ea64f2 src:manual/51-payannya.md:64 klas:E -->
+<!-- fc id:T-51-034 sha:c7ea64f2 src:manual/51-payannya.md:64 status:no-external-signal -->
 ### T-51-034 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -889,7 +889,7 @@
 
 ---
 
-<!-- fc id:T-51-035 sha:55d6b384 src:manual/51-payannya.md:70 klas:E -->
+<!-- fc id:T-51-035 sha:55d6b384 src:manual/51-payannya.md:70 status:no-external-signal -->
 ### T-51-035 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -910,7 +910,7 @@
 
 ---
 
-<!-- fc id:T-51-036 sha:2b081f3a src:manual/51-payannya.md:72 klas:E -->
+<!-- fc id:T-51-036 sha:2b081f3a src:manual/51-payannya.md:72 status:no-external-signal -->
 ### T-51-036 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -933,7 +933,7 @@
 
 ---
 
-<!-- fc id:T-51-037 sha:718917ca src:manual/51-payannya.md:73 klas:E -->
+<!-- fc id:T-51-037 sha:718917ca src:manual/51-payannya.md:73 status:no-external-signal -->
 ### T-51-037 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -956,7 +956,7 @@
 
 ---
 
-<!-- fc id:T-51-038 sha:ee674608 src:manual/51-payannya.md:76 klas:E -->
+<!-- fc id:T-51-038 sha:ee674608 src:manual/51-payannya.md:76 status:no-external-signal -->
 ### T-51-038 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -978,7 +978,7 @@
 
 ---
 
-<!-- fc id:T-51-039 sha:3869ca66 src:manual/51-payannya.md:76 klas:E -->
+<!-- fc id:T-51-039 sha:3869ca66 src:manual/51-payannya.md:76 status:no-external-signal -->
 ### T-51-039 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1000,7 +1000,7 @@
 
 ---
 
-<!-- fc id:T-51-040 sha:bbb5c1dd src:manual/51-payannya.md:81 klas:E -->
+<!-- fc id:T-51-040 sha:bbb5c1dd src:manual/51-payannya.md:81 status:no-external-signal -->
 ### T-51-040 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1023,7 +1023,7 @@
 
 ---
 
-<!-- fc id:T-51-041 sha:7cc5883a src:manual/51-payannya.md:85 klas:E -->
+<!-- fc id:T-51-041 sha:7cc5883a src:manual/51-payannya.md:85 status:no-external-signal -->
 ### T-51-041 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1044,7 +1044,7 @@
 
 ---
 
-<!-- fc id:T-51-042 sha:c2f21bc7 src:manual/51-payannya.md:87 klas:E -->
+<!-- fc id:T-51-042 sha:c2f21bc7 src:manual/51-payannya.md:87 status:no-external-signal -->
 ### T-51-042 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1066,7 +1066,7 @@
 
 ---
 
-<!-- fc id:T-51-043 sha:15dfc03d src:manual/51-payannya.md:87 klas:E -->
+<!-- fc id:T-51-043 sha:15dfc03d src:manual/51-payannya.md:87 status:no-external-signal -->
 ### T-51-043 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1088,7 +1088,7 @@
 
 ---
 
-<!-- fc id:T-51-044 sha:8fc744c7 src:manual/51-payannya.md:90 klas:E -->
+<!-- fc id:T-51-044 sha:8fc744c7 src:manual/51-payannya.md:90 status:no-external-signal -->
 ### T-51-044 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1110,7 +1110,7 @@
 
 ---
 
-<!-- fc id:T-51-045 sha:33de50f9 src:manual/51-payannya.md:95 klas:E -->
+<!-- fc id:T-51-045 sha:33de50f9 src:manual/51-payannya.md:95 status:no-external-signal -->
 ### T-51-045 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1131,7 +1131,7 @@
 
 ---
 
-<!-- fc id:T-51-046 sha:7fc5d352 src:manual/51-payannya.md:97 klas:F -->
+<!-- fc id:T-51-046 sha:7fc5d352 src:manual/51-payannya.md:97 status:unchecked -->
 ### T-51-046 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1153,7 +1153,7 @@
 
 ---
 
-<!-- fc id:T-51-047 sha:991834a5 src:manual/51-payannya.md:97 klas:E -->
+<!-- fc id:T-51-047 sha:991834a5 src:manual/51-payannya.md:97 status:no-external-signal -->
 ### T-51-047 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1175,7 +1175,7 @@
 
 ---
 
-<!-- fc id:T-51-048 sha:c2a78ec4 src:manual/51-payannya.md:100 klas:E -->
+<!-- fc id:T-51-048 sha:c2a78ec4 src:manual/51-payannya.md:100 status:no-external-signal -->
 ### T-51-048 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1198,7 +1198,7 @@
 
 ---
 
-<!-- fc id:T-51-049 sha:e5a620bb src:manual/51-payannya.md:100 klas:E -->
+<!-- fc id:T-51-049 sha:e5a620bb src:manual/51-payannya.md:100 status:no-external-signal -->
 ### T-51-049 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1221,7 +1221,7 @@
 
 ---
 
-<!-- fc id:T-51-050 sha:9bbdc3e4 src:manual/51-payannya.md:105 klas:E -->
+<!-- fc id:T-51-050 sha:9bbdc3e4 src:manual/51-payannya.md:105 status:no-external-signal -->
 ### T-51-050 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1245,7 +1245,7 @@
 
 ---
 
-<!-- fc id:T-51-051 sha:eb7e31f3 src:manual/51-payannya.md:109 klas:E -->
+<!-- fc id:T-51-051 sha:eb7e31f3 src:manual/51-payannya.md:109 status:no-external-signal -->
 ### T-51-051 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1267,7 +1267,7 @@
 
 ---
 
-<!-- fc id:T-51-052 sha:6ffe87bf src:manual/51-payannya.md:114 klas:F -->
+<!-- fc id:T-51-052 sha:6ffe87bf src:manual/51-payannya.md:114 status:unchecked -->
 ### T-51-052 · tablycya-shapka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1296,7 +1296,7 @@
 
 ---
 
-<!-- fc id:T-51-053 sha:379892e3 src:manual/51-payannya.md:116 klas:E -->
+<!-- fc id:T-51-053 sha:379892e3 src:manual/51-payannya.md:116 status:no-external-signal -->
 ### T-51-053 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1331,7 +1331,7 @@
 
 ---
 
-<!-- fc id:T-51-054 sha:99c40d6d src:manual/51-payannya.md:116 klas:E -->
+<!-- fc id:T-51-054 sha:99c40d6d src:manual/51-payannya.md:116 status:no-external-signal -->
 ### T-51-054 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1366,7 +1366,7 @@
 
 ---
 
-<!-- fc id:T-51-055 sha:db1c3d01 src:manual/51-payannya.md:117 klas:E -->
+<!-- fc id:T-51-055 sha:db1c3d01 src:manual/51-payannya.md:117 status:no-external-signal -->
 ### T-51-055 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1401,7 +1401,7 @@
 
 ---
 
-<!-- fc id:T-51-056 sha:670a4984 src:manual/51-payannya.md:117 klas:E -->
+<!-- fc id:T-51-056 sha:670a4984 src:manual/51-payannya.md:117 status:no-external-signal -->
 ### T-51-056 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1436,7 +1436,7 @@
 
 ---
 
-<!-- fc id:T-51-057 sha:1ec2a927 src:manual/51-payannya.md:118 klas:E -->
+<!-- fc id:T-51-057 sha:1ec2a927 src:manual/51-payannya.md:118 status:no-external-signal -->
 ### T-51-057 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1471,7 +1471,7 @@
 
 ---
 
-<!-- fc id:T-51-058 sha:6876a292 src:manual/51-payannya.md:118 klas:E -->
+<!-- fc id:T-51-058 sha:6876a292 src:manual/51-payannya.md:118 status:no-external-signal -->
 ### T-51-058 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1506,7 +1506,7 @@
 
 ---
 
-<!-- fc id:T-51-059 sha:2b9ef61a src:manual/51-payannya.md:119 klas:E -->
+<!-- fc id:T-51-059 sha:2b9ef61a src:manual/51-payannya.md:119 status:no-external-signal -->
 ### T-51-059 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1541,7 +1541,7 @@
 
 ---
 
-<!-- fc id:T-51-060 sha:bf538913 src:manual/51-payannya.md:119 klas:E -->
+<!-- fc id:T-51-060 sha:bf538913 src:manual/51-payannya.md:119 status:no-external-signal -->
 ### T-51-060 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1576,7 +1576,7 @@
 
 ---
 
-<!-- fc id:T-51-061 sha:d572f94f src:manual/51-payannya.md:120 klas:E -->
+<!-- fc id:T-51-061 sha:d572f94f src:manual/51-payannya.md:120 status:no-external-signal -->
 ### T-51-061 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1611,7 +1611,7 @@
 
 ---
 
-<!-- fc id:T-51-062 sha:01d58b5f src:manual/51-payannya.md:120 klas:E -->
+<!-- fc id:T-51-062 sha:01d58b5f src:manual/51-payannya.md:120 status:no-external-signal -->
 ### T-51-062 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1646,7 +1646,7 @@
 
 ---
 
-<!-- fc id:T-51-063 sha:753048dd src:manual/51-payannya.md:121 klas:E -->
+<!-- fc id:T-51-063 sha:753048dd src:manual/51-payannya.md:121 status:no-external-signal -->
 ### T-51-063 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1681,7 +1681,7 @@
 
 ---
 
-<!-- fc id:T-51-064 sha:da7d229b src:manual/51-payannya.md:121 klas:E -->
+<!-- fc id:T-51-064 sha:da7d229b src:manual/51-payannya.md:121 status:no-external-signal -->
 ### T-51-064 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1716,7 +1716,7 @@
 
 ---
 
-<!-- fc id:T-51-065 sha:0c0d8553 src:manual/51-payannya.md:123 klas:E -->
+<!-- fc id:T-51-065 sha:0c0d8553 src:manual/51-payannya.md:123 status:no-external-signal -->
 ### T-51-065 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1738,7 +1738,7 @@
 
 ---
 
-<!-- fc id:T-51-066 sha:efb55461 src:manual/51-payannya.md:128 klas:E -->
+<!-- fc id:T-51-066 sha:efb55461 src:manual/51-payannya.md:128 status:no-external-signal -->
 ### T-51-066 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1760,7 +1760,7 @@
 
 ---
 
-<!-- fc id:T-51-067 sha:b4ec3e88 src:manual/51-payannya.md:128 klas:E -->
+<!-- fc id:T-51-067 sha:b4ec3e88 src:manual/51-payannya.md:128 status:no-external-signal -->
 ### T-51-067 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1782,7 +1782,7 @@
 
 ---
 
-<!-- fc id:T-51-068 sha:030bce21 src:manual/51-payannya.md:131 klas:E -->
+<!-- fc id:T-51-068 sha:030bce21 src:manual/51-payannya.md:131 status:no-external-signal -->
 ### T-51-068 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1803,7 +1803,7 @@
 
 ---
 
-<!-- fc id:T-51-069 sha:d771339e src:manual/51-payannya.md:133 klas:E -->
+<!-- fc id:T-51-069 sha:d771339e src:manual/51-payannya.md:133 status:no-external-signal -->
 ### T-51-069 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1825,7 +1825,7 @@
 
 ---
 
-<!-- fc id:T-51-070 sha:455522e3 src:manual/51-payannya.md:138 klas:E -->
+<!-- fc id:T-51-070 sha:455522e3 src:manual/51-payannya.md:138 status:no-external-signal -->
 ### T-51-070 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1847,7 +1847,7 @@
 
 ---
 
-<!-- fc id:T-51-071 sha:8399e47f src:manual/51-payannya.md:139 klas:E -->
+<!-- fc id:T-51-071 sha:8399e47f src:manual/51-payannya.md:139 status:no-external-signal -->
 ### T-51-071 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1869,7 +1869,7 @@
 
 ---
 
-<!-- fc id:T-51-072 sha:a1b84a49 src:manual/51-payannya.md:141 klas:E -->
+<!-- fc id:T-51-072 sha:a1b84a49 src:manual/51-payannya.md:141 status:no-external-signal -->
 ### T-51-072 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1890,7 +1890,7 @@
 
 ---
 
-<!-- fc id:T-51-073 sha:c7b14e4a src:manual/51-payannya.md:143 klas:E -->
+<!-- fc id:T-51-073 sha:c7b14e4a src:manual/51-payannya.md:143 status:no-external-signal -->
 ### T-51-073 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1911,7 +1911,7 @@
 
 ---
 
-<!-- fc id:T-51-074 sha:e87f8868 src:manual/51-payannya.md:145 klas:F -->
+<!-- fc id:T-51-074 sha:e87f8868 src:manual/51-payannya.md:145 status:unchecked -->
 ### T-51-074 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1934,7 +1934,7 @@
 
 ---
 
-<!-- fc id:T-51-075 sha:0d57eba9 src:manual/51-payannya.md:151 klas:E -->
+<!-- fc id:T-51-075 sha:0d57eba9 src:manual/51-payannya.md:151 status:no-external-signal -->
 ### T-51-075 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1957,7 +1957,7 @@
 
 ---
 
-<!-- fc id:T-51-076 sha:042ce29b src:manual/51-payannya.md:151 klas:E -->
+<!-- fc id:T-51-076 sha:042ce29b src:manual/51-payannya.md:151 status:no-external-signal -->
 ### T-51-076 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1980,7 +1980,7 @@
 
 ---
 
-<!-- fc id:T-51-077 sha:67717e8e src:manual/51-payannya.md:155 klas:E -->
+<!-- fc id:T-51-077 sha:67717e8e src:manual/51-payannya.md:155 status:no-external-signal -->
 ### T-51-077 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -2001,7 +2001,7 @@
 
 ---
 
-<!-- fc id:T-51-078 sha:66f2828d src:manual/51-payannya.md:159 klas:E -->
+<!-- fc id:T-51-078 sha:66f2828d src:manual/51-payannya.md:159 status:no-external-signal -->
 ### T-51-078 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -2023,7 +2023,7 @@
 
 ---
 
-<!-- fc id:T-51-079 sha:817f6342 src:manual/51-payannya.md:162 klas:E -->
+<!-- fc id:T-51-079 sha:817f6342 src:manual/51-payannya.md:162 status:no-external-signal -->
 ### T-51-079 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -2044,7 +2044,7 @@
 
 ---
 
-<!-- fc id:T-51-080 sha:70aa433e src:manual/51-payannya.md:164 klas:E -->
+<!-- fc id:T-51-080 sha:70aa433e src:manual/51-payannya.md:164 status:no-external-signal -->
 ### T-51-080 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -2065,7 +2065,7 @@
 
 ---
 
-<!-- fc id:T-51-081 sha:fb12e78e src:manual/51-payannya.md:166 klas:E -->
+<!-- fc id:T-51-081 sha:fb12e78e src:manual/51-payannya.md:166 status:no-external-signal -->
 ### T-51-081 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -2086,7 +2086,7 @@
 
 ---
 
-<!-- fc id:T-51-082 sha:d785db07 src:manual/51-payannya.md:168 klas:E -->
+<!-- fc id:T-51-082 sha:d785db07 src:manual/51-payannya.md:168 status:no-external-signal -->
 ### T-51-082 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -2107,7 +2107,7 @@
 
 ---
 
-<!-- fc id:T-51-083 sha:07ceb369 src:manual/51-payannya.md:172 klas:E -->
+<!-- fc id:T-51-083 sha:07ceb369 src:manual/51-payannya.md:172 status:no-external-signal -->
 ### T-51-083 · proza · `manual/51-payannya.md`
 
 **Твердження, коротко**

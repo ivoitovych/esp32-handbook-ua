@@ -34,7 +34,6 @@
 - nazva: Споживання ESP32 за режимами — порядки збігаються з Table 4-2
   zbih: \| Deep sleep \| одиниці — десятки мкА \||\| Light sleep \| сотні мкА — одиниці мА
     \||\| \*\*Піки при передачі Wi-Fi\*\* \| \*\*сотні мА, короткими сплесками\*\* \|
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
     — ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes» (с. 30) і
     Table 5-4 «Current Consumption Depending on RF Modes» (с. 52)
@@ -85,7 +84,6 @@
     а зірочка — це виноска. Лишаю як є, бо саме так воно в документі й лежить.'
 - nazva: Пін віддає більше, ніж приймає — IOH 40 мА проти IOL 28 мА
   zbih: '[Нн]а віддачу пін дає більше, ніж\s+на прийом'
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
     — ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics (3.3 V, 25 °C)», с. 51
   cytata: 'IOH VOH >= 2.64 V, — 40 — mA
@@ -123,7 +121,6 @@
     при найбільшій силі драйвера, як і сказано в дужках.'
 - nazva: Робочий діапазон чипа ESP32 — від −40 до 125 °C
   zbih: 'Чип витримує більше: −40…\+125 °C'
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
     — ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics», с.
     51, разом із приміткою 3
@@ -163,7 +160,6 @@
   - 520ca2fc
 - nazva: Діапазон модуля WROOM — 85 °C у версіях N, 105 °C у версіях H
   zbih: версії `-H4` і `-H8` на \+105 °C|85 °C міряються одразу за\s+межами модуля
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
     — ESP32-WROOM-32E & ESP32-WROOM-32UE Datasheet, Table 1 «Series Comparison» (с. 8) і Table
     14 «Recommended Operating Conditions»

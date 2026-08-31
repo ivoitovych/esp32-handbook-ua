@@ -45,7 +45,6 @@
 
 - nazva: 'T-17-051: Файл, менший за очікуваний, — це обірваний дамп,'
   zbih: Файл,\s+менший\s+за\s+очікуваний,\s+—\s+це
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/targets/esp32.py
   cytata: 'Expected {block_len} byte block, got {len(r)} bytes
 
@@ -69,7 +68,6 @@
   - 1b2d4902
 - nazva: 'T-17-064: Воно **вже ввімкнене** за замовчуванням, тож у звичайній'
   zbih: Воно\s+\*\*вже\s+ввімкнене\*\*\s+за
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
   cytata: 'Compress data during transfer (default unless --no-stub is specified)
 
@@ -93,7 +91,6 @@
   - 85b9b718
 - nazva: 'T-17-066: Користь від стиснення там подвійна: менше байтів пройшло'
   zbih: Користь\s+від\s+стиснення\s+там
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
   cytata: 'Compress data during transfer
 
@@ -117,7 +114,6 @@
   - dafa4e9c
 - nazva: 'T-17-071: Швидкість тут не той параметр, на якому варто'
   zbih: Швидкість\s+тут\s+не\s+той
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
   cytata: 'Serial port baud rate used when flashing
 
@@ -143,7 +139,6 @@
   - d5bda61e
 - nazva: 'T-17-074: Адреси залежать від сімейства чипа — таблиця в'
   zbih: Адреси\s+залежать\s+від\s+сімейства
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/targets/esp32.py
   cytata: 'BOOTLOADER_FLASH_OFFSET = 0x1000
 
@@ -167,7 +162,6 @@
   - c7be6edf
 - nazva: 'T-17-118: Друга половина рядка залежить від версії.'
   zbih: Друга\s+половина\s+рядка\s+залежить
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
   cytata: '''esptool v{__version__}''
 
@@ -191,7 +185,6 @@
   - 7eae188f
 - nazva: 'T-17-149: There was no response.`**'
   zbih: There\s+was\s+no\s+response\.`\*\*
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/loader.py
   cytata: 'Serial data stream stopped: Possible serial noise or corruption
 

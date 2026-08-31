@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/16-boot.md`
 
-Одиниць твердження: **95**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **95**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-16-001 sha:349f6843 src:manual/16-boot.md:3 klas:E -->
+<!-- fc id:T-16-001 sha:349f6843 src:manual/16-boot.md:3 status:no-external-signal -->
 ### T-16-001 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-16-002 sha:11f1c487 src:manual/16-boot.md:4 klas:A -->
+<!-- fc id:T-16-002 sha:11f1c487 src:manual/16-boot.md:4 status:verbatim -->
 ### T-16-002 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -65,7 +65,7 @@
 
 ---
 
-<!-- fc id:T-16-003 sha:11330d7e src:manual/16-boot.md:8 klas:E -->
+<!-- fc id:T-16-003 sha:11330d7e src:manual/16-boot.md:8 status:no-external-signal -->
 ### T-16-003 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -88,7 +88,7 @@
 
 ---
 
-<!-- fc id:T-16-004 sha:37a50017 src:manual/16-boot.md:14 klas:A -->
+<!-- fc id:T-16-004 sha:37a50017 src:manual/16-boot.md:14 status:verbatim -->
 ### T-16-004 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -117,7 +117,7 @@
 
 ---
 
-<!-- fc id:T-16-005 sha:df2dec6a src:manual/16-boot.md:15 klas:C -->
+<!-- fc id:T-16-005 sha:df2dec6a src:manual/16-boot.md:15 status:named-unreachable -->
 ### T-16-005 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -145,7 +145,7 @@
 
 ---
 
-<!-- fc id:T-16-006 sha:e47891e7 src:manual/16-boot.md:15 klas:E -->
+<!-- fc id:T-16-006 sha:e47891e7 src:manual/16-boot.md:15 status:no-external-signal -->
 ### T-16-006 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -168,7 +168,7 @@
 
 ---
 
-<!-- fc id:T-16-007 sha:d51c3c70 src:manual/16-boot.md:18 klas:F -->
+<!-- fc id:T-16-007 sha:d51c3c70 src:manual/16-boot.md:18 status:unchecked -->
 ### T-16-007 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -190,7 +190,7 @@
 
 ---
 
-<!-- fc id:T-16-008 sha:371e3feb src:manual/16-boot.md:21 klas:B -->
+<!-- fc id:T-16-008 sha:371e3feb src:manual/16-boot.md:21 status:derived -->
 ### T-16-008 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -220,7 +220,7 @@
 
 ---
 
-<!-- fc id:T-16-009 sha:73a47ca1 src:manual/16-boot.md:22 klas:E -->
+<!-- fc id:T-16-009 sha:73a47ca1 src:manual/16-boot.md:22 status:no-external-signal -->
 ### T-16-009 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -244,7 +244,7 @@
 
 ---
 
-<!-- fc id:T-16-010 sha:8b2614cd src:manual/16-boot.md:26 klas:F -->
+<!-- fc id:T-16-010 sha:8b2614cd src:manual/16-boot.md:26 status:unchecked -->
 ### T-16-010 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-16-011 sha:b8f3d5d1 src:manual/16-boot.md:29 klas:C -->
+<!-- fc id:T-16-011 sha:b8f3d5d1 src:manual/16-boot.md:29 status:named-unreachable -->
 ### T-16-011 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -294,7 +294,7 @@
 
 ---
 
-<!-- fc id:T-16-012 sha:719a564d src:manual/16-boot.md:35 klas:C -->
+<!-- fc id:T-16-012 sha:719a564d src:manual/16-boot.md:35 status:named-unreachable -->
 ### T-16-012 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -320,7 +320,7 @@ Strapping-пін — це звичайний GPIO, стан якого чита�
 
 ---
 
-<!-- fc id:T-16-013 sha:2e09aa20 src:manual/16-boot.md:37 klas:E -->
+<!-- fc id:T-16-013 sha:2e09aa20 src:manual/16-boot.md:37 status:no-external-signal -->
 ### T-16-013 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -343,7 +343,7 @@ Strapping-пін — це звичайний GPIO, стан якого чита�
 
 ---
 
-<!-- fc id:T-16-014 sha:bd61d296 src:manual/16-boot.md:39 klas:C -->
+<!-- fc id:T-16-014 sha:bd61d296 src:manual/16-boot.md:39 status:named-unreachable -->
 ### T-16-014 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -368,7 +368,7 @@ Strapping-пін — це звичайний GPIO, стан якого чита�
 
 ---
 
-<!-- fc id:T-16-015 sha:10272434 src:manual/16-boot.md:41 klas:E -->
+<!-- fc id:T-16-015 sha:10272434 src:manual/16-boot.md:41 status:no-external-signal -->
 ### T-16-015 · tablycya · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -396,7 +396,7 @@ Strapping-пін — це звичайний GPIO, стан якого чита�
 
 ---
 
-<!-- fc id:T-16-016 sha:93a3f980 src:manual/16-boot.md:43 klas:E -->
+<!-- fc id:T-16-016 sha:93a3f980 src:manual/16-boot.md:43 status:no-external-signal -->
 ### T-16-016 · tablycya · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -422,7 +422,7 @@ Strapping-пін — це звичайний GPIO, стан якого чита�
 
 ---
 
-<!-- fc id:T-16-017 sha:08cf4b01 src:manual/16-boot.md:44 klas:F -->
+<!-- fc id:T-16-017 sha:08cf4b01 src:manual/16-boot.md:44 status:unchecked -->
 ### T-16-017 · tablycya · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -448,7 +448,7 @@ Strapping-пін — це звичайний GPIO, стан якого чита�
 
 ---
 
-<!-- fc id:T-16-018 sha:232b5f4b src:manual/16-boot.md:46 klas:A -->
+<!-- fc id:T-16-018 sha:232b5f4b src:manual/16-boot.md:46 status:verbatim -->
 ### T-16-018 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -482,7 +482,7 @@ download mode, і `GPIO8` при цьому має бути високим.
 
 ---
 
-<!-- fc id:T-16-019 sha:fb3b60cc src:manual/16-boot.md:49 klas:F -->
+<!-- fc id:T-16-019 sha:fb3b60cc src:manual/16-boot.md:49 status:unchecked -->
 ### T-16-019 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -504,7 +504,7 @@ download mode, і `GPIO8` при цьому має бути високим.
 
 ---
 
-<!-- fc id:T-16-020 sha:3a71c61e src:manual/16-boot.md:53 klas:F -->
+<!-- fc id:T-16-020 sha:3a71c61e src:manual/16-boot.md:53 status:unchecked -->
 ### T-16-020 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -530,7 +530,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-021 sha:728e14e7 src:manual/16-boot.md:54 klas:C -->
+<!-- fc id:T-16-021 sha:728e14e7 src:manual/16-boot.md:54 status:named-unreachable -->
 ### T-16-021 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -561,7 +561,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-022 sha:1a088eeb src:manual/16-boot.md:56 klas:F -->
+<!-- fc id:T-16-022 sha:1a088eeb src:manual/16-boot.md:56 status:unchecked -->
 ### T-16-022 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -587,7 +587,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-023 sha:b274c770 src:manual/16-boot.md:59 klas:A -->
+<!-- fc id:T-16-023 sha:b274c770 src:manual/16-boot.md:59 status:verbatim -->
 ### T-16-023 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -629,7 +629,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-024 sha:48424b86 src:manual/16-boot.md:59 klas:A -->
+<!-- fc id:T-16-024 sha:48424b86 src:manual/16-boot.md:59 status:verbatim -->
 ### T-16-024 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -661,7 +661,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-025 sha:4de10478 src:manual/16-boot.md:60 klas:E -->
+<!-- fc id:T-16-025 sha:4de10478 src:manual/16-boot.md:60 status:no-external-signal -->
 ### T-16-025 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -685,7 +685,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-026 sha:a976fca3 src:manual/16-boot.md:66 klas:A -->
+<!-- fc id:T-16-026 sha:a976fca3 src:manual/16-boot.md:66 status:verbatim -->
 ### T-16-026 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -721,7 +721,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-027 sha:f44b1e43 src:manual/16-boot.md:68 klas:F -->
+<!-- fc id:T-16-027 sha:f44b1e43 src:manual/16-boot.md:68 status:unchecked -->
 ### T-16-027 · tablycya · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -748,7 +748,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-028 sha:30495adc src:manual/16-boot.md:70 klas:A -->
+<!-- fc id:T-16-028 sha:30495adc src:manual/16-boot.md:70 status:verbatim -->
 ### T-16-028 · tablycya · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -816,7 +816,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-029 sha:5904e9bb src:manual/16-boot.md:71 klas:A -->
+<!-- fc id:T-16-029 sha:5904e9bb src:manual/16-boot.md:71 status:verbatim -->
 ### T-16-029 · tablycya · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -849,7 +849,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-030 sha:f3920dcd src:manual/16-boot.md:72 klas:A -->
+<!-- fc id:T-16-030 sha:f3920dcd src:manual/16-boot.md:72 status:verbatim -->
 ### T-16-030 · tablycya · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -917,7 +917,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-031 sha:c22fedd2 src:manual/16-boot.md:74 klas:E -->
+<!-- fc id:T-16-031 sha:c22fedd2 src:manual/16-boot.md:74 status:no-external-signal -->
 ### T-16-031 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -945,7 +945,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-032 sha:b1de2763 src:manual/16-boot.md:75 klas:A -->
+<!-- fc id:T-16-032 sha:b1de2763 src:manual/16-boot.md:75 status:verbatim -->
 ### T-16-032 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1014,7 +1014,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-033 sha:f4c2a592 src:manual/16-boot.md:77 klas:F -->
+<!-- fc id:T-16-033 sha:f4c2a592 src:manual/16-boot.md:77 status:unchecked -->
 ### T-16-033 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1042,7 +1042,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-034 sha:04eedad6 src:manual/16-boot.md:78 klas:A -->
+<!-- fc id:T-16-034 sha:04eedad6 src:manual/16-boot.md:78 status:verbatim -->
 ### T-16-034 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1076,7 +1076,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-035 sha:93217872 src:manual/16-boot.md:79 klas:A -->
+<!-- fc id:T-16-035 sha:93217872 src:manual/16-boot.md:79 status:verbatim -->
 ### T-16-035 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1145,7 +1145,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-036 sha:1c71192c src:manual/16-boot.md:84 klas:A -->
+<!-- fc id:T-16-036 sha:1c71192c src:manual/16-boot.md:84 status:verbatim -->
 ### T-16-036 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1185,7 +1185,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-037 sha:f5be32d6 src:manual/16-boot.md:85 klas:A -->
+<!-- fc id:T-16-037 sha:f5be32d6 src:manual/16-boot.md:85 status:verbatim -->
 ### T-16-037 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1225,7 +1225,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-038 sha:24750ec2 src:manual/16-boot.md:89 klas:E -->
+<!-- fc id:T-16-038 sha:24750ec2 src:manual/16-boot.md:89 status:no-external-signal -->
 ### T-16-038 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1249,7 +1249,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-039 sha:7780ccef src:manual/16-boot.md:89 klas:A -->
+<!-- fc id:T-16-039 sha:7780ccef src:manual/16-boot.md:89 status:verbatim -->
 ### T-16-039 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1298,7 +1298,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-040 sha:50435e63 src:manual/16-boot.md:95 klas:E -->
+<!-- fc id:T-16-040 sha:50435e63 src:manual/16-boot.md:95 status:no-external-signal -->
 ### T-16-040 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1325,7 +1325,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-041 sha:34472fe4 src:manual/16-boot.md:96 klas:A -->
+<!-- fc id:T-16-041 sha:34472fe4 src:manual/16-boot.md:96 status:verbatim -->
 ### T-16-041 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1372,7 +1372,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-042 sha:a123154f src:manual/16-boot.md:97 klas:A -->
+<!-- fc id:T-16-042 sha:a123154f src:manual/16-boot.md:97 status:verbatim -->
 ### T-16-042 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1424,7 +1424,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-043 sha:b57ee9e2 src:manual/16-boot.md:98 klas:E -->
+<!-- fc id:T-16-043 sha:b57ee9e2 src:manual/16-boot.md:98 status:no-external-signal -->
 ### T-16-043 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1451,7 +1451,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-044 sha:2e8a35eb src:manual/16-boot.md:102 klas:A -->
+<!-- fc id:T-16-044 sha:2e8a35eb src:manual/16-boot.md:102 status:verbatim -->
 ### T-16-044 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1484,7 +1484,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-045 sha:22d5057d src:manual/16-boot.md:103 klas:D -->
+<!-- fc id:T-16-045 sha:22d5057d src:manual/16-boot.md:103 status:arithmetic -->
 ### T-16-045 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1521,7 +1521,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-046 sha:c95b1a3f src:manual/16-boot.md:105 klas:E -->
+<!-- fc id:T-16-046 sha:c95b1a3f src:manual/16-boot.md:105 status:no-external-signal -->
 ### T-16-046 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1545,7 +1545,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-047 sha:ed9083b2 src:manual/16-boot.md:107 klas:A -->
+<!-- fc id:T-16-047 sha:ed9083b2 src:manual/16-boot.md:107 status:verbatim -->
 ### T-16-047 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1594,7 +1594,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-048 sha:bbad0666 src:manual/16-boot.md:109 klas:E -->
+<!-- fc id:T-16-048 sha:bbad0666 src:manual/16-boot.md:109 status:no-external-signal -->
 ### T-16-048 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1618,7 +1618,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-049 sha:13fb9aa2 src:manual/16-boot.md:113 klas:A -->
+<!-- fc id:T-16-049 sha:13fb9aa2 src:manual/16-boot.md:113 status:verbatim -->
 ### T-16-049 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1680,7 +1680,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-050 sha:b0215fc8 src:manual/16-boot.md:117 klas:E -->
+<!-- fc id:T-16-050 sha:b0215fc8 src:manual/16-boot.md:117 status:no-external-signal -->
 ### T-16-050 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1704,7 +1704,7 @@ offset`.
 
 ---
 
-<!-- fc id:T-16-051 sha:7515725f src:manual/16-boot.md:117 klas:A -->
+<!-- fc id:T-16-051 sha:7515725f src:manual/16-boot.md:117 status:verbatim -->
 ### T-16-051 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1766,7 +1766,7 @@ offset`.
 
 ---
 
-<!-- fc id:T-16-052 sha:e5db7dcc src:manual/16-boot.md:122 klas:A -->
+<!-- fc id:T-16-052 sha:e5db7dcc src:manual/16-boot.md:122 status:verbatim -->
 ### T-16-052 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1801,7 +1801,7 @@ offset`.
 
 ---
 
-<!-- fc id:T-16-053 sha:66180914 src:manual/16-boot.md:124 klas:A -->
+<!-- fc id:T-16-053 sha:66180914 src:manual/16-boot.md:124 status:verbatim -->
 ### T-16-053 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1833,7 +1833,7 @@ offset`.
 
 ---
 
-<!-- fc id:T-16-054 sha:99ffdfc9 src:manual/16-boot.md:129 klas:E -->
+<!-- fc id:T-16-054 sha:99ffdfc9 src:manual/16-boot.md:129 status:no-external-signal -->
 ### T-16-054 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1856,7 +1856,7 @@ offset`.
 
 ---
 
-<!-- fc id:T-16-055 sha:53494bdf src:manual/16-boot.md:129 klas:A -->
+<!-- fc id:T-16-055 sha:53494bdf src:manual/16-boot.md:129 status:verbatim -->
 ### T-16-055 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1886,7 +1886,7 @@ offset`.
 
 ---
 
-<!-- fc id:T-16-056 sha:36fdba60 src:manual/16-boot.md:131 klas:A -->
+<!-- fc id:T-16-056 sha:36fdba60 src:manual/16-boot.md:131 status:verbatim -->
 ### T-16-056 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1915,7 +1915,7 @@ offset`.
 
 ---
 
-<!-- fc id:T-16-057 sha:6f9388d2 src:manual/16-boot.md:135 klas:E -->
+<!-- fc id:T-16-057 sha:6f9388d2 src:manual/16-boot.md:135 status:no-external-signal -->
 ### T-16-057 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1937,7 +1937,7 @@ offset`.
 
 ---
 
-<!-- fc id:T-16-058 sha:4a5d1bee src:manual/16-boot.md:136 klas:F -->
+<!-- fc id:T-16-058 sha:4a5d1bee src:manual/16-boot.md:136 status:unchecked -->
 ### T-16-058 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1959,7 +1959,7 @@ offset`.
 
 ---
 
-<!-- fc id:T-16-059 sha:17b0b9ca src:manual/16-boot.md:140 klas:K -->
+<!-- fc id:T-16-059 sha:17b0b9ca src:manual/16-boot.md:140 status:code-context -->
 ### T-16-059 · kod · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2012,7 +2012,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-16-060 sha:490ee98b src:manual/16-boot.md:141 klas:A -->
+<!-- fc id:T-16-060 sha:490ee98b src:manual/16-boot.md:141 status:verbatim -->
 ### T-16-060 · kod-ryadok · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2052,7 +2052,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-16-061 sha:cafabedc src:manual/16-boot.md:155 klas:E -->
+<!-- fc id:T-16-061 sha:cafabedc src:manual/16-boot.md:155 status:no-external-signal -->
 ### T-16-061 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2077,7 +2077,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-16-062 sha:8c83e86c src:manual/16-boot.md:155 klas:A -->
+<!-- fc id:T-16-062 sha:8c83e86c src:manual/16-boot.md:155 status:verbatim -->
 ### T-16-062 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2108,7 +2108,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-16-063 sha:9687babe src:manual/16-boot.md:156 klas:E -->
+<!-- fc id:T-16-063 sha:9687babe src:manual/16-boot.md:156 status:no-external-signal -->
 ### T-16-063 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2133,7 +2133,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-16-064 sha:50f40ab5 src:manual/16-boot.md:157 klas:E -->
+<!-- fc id:T-16-064 sha:50f40ab5 src:manual/16-boot.md:157 status:no-external-signal -->
 ### T-16-064 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2158,7 +2158,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-16-065 sha:b91c3393 src:manual/16-boot.md:158 klas:E -->
+<!-- fc id:T-16-065 sha:b91c3393 src:manual/16-boot.md:158 status:no-external-signal -->
 ### T-16-065 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2183,7 +2183,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-16-066 sha:e5f9555a src:manual/16-boot.md:163 klas:K -->
+<!-- fc id:T-16-066 sha:e5f9555a src:manual/16-boot.md:163 status:code-context -->
 ### T-16-066 · kod · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2216,7 +2216,7 @@ waiting for download
 
 ---
 
-<!-- fc id:T-16-067 sha:5b0e39f3 src:manual/16-boot.md:164 klas:A -->
+<!-- fc id:T-16-067 sha:5b0e39f3 src:manual/16-boot.md:164 status:verbatim -->
 ### T-16-067 · kod-ryadok · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2246,7 +2246,7 @@ waiting for download
 
 ---
 
-<!-- fc id:T-16-068 sha:2987ec81 src:manual/16-boot.md:168 klas:F -->
+<!-- fc id:T-16-068 sha:2987ec81 src:manual/16-boot.md:168 status:unchecked -->
 ### T-16-068 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2267,7 +2267,7 @@ waiting for download
 
 ---
 
-<!-- fc id:T-16-069 sha:dfc19c84 src:manual/16-boot.md:172 klas:K -->
+<!-- fc id:T-16-069 sha:dfc19c84 src:manual/16-boot.md:172 status:code-context -->
 ### T-16-069 · kod · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2307,7 +2307,7 @@ E (xxx) boot: Factory app partition is not bootable
 
 ---
 
-<!-- fc id:T-16-070 sha:c68e2346 src:manual/16-boot.md:173 klas:A -->
+<!-- fc id:T-16-070 sha:c68e2346 src:manual/16-boot.md:173 status:verbatim -->
 ### T-16-070 · kod-ryadok · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2344,7 +2344,7 @@ E (xxx) boot: Factory app partition is not bootable
 
 ---
 
-<!-- fc id:T-16-071 sha:3098ca78 src:manual/16-boot.md:177 klas:E -->
+<!-- fc id:T-16-071 sha:3098ca78 src:manual/16-boot.md:177 status:no-external-signal -->
 ### T-16-071 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2366,7 +2366,7 @@ E (xxx) boot: Factory app partition is not bootable
 
 ---
 
-<!-- fc id:T-16-072 sha:120fecd6 src:manual/16-boot.md:178 klas:E -->
+<!-- fc id:T-16-072 sha:120fecd6 src:manual/16-boot.md:178 status:no-external-signal -->
 ### T-16-072 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2388,7 +2388,7 @@ E (xxx) boot: Factory app partition is not bootable
 
 ---
 
-<!-- fc id:T-16-073 sha:65aa20e8 src:manual/16-boot.md:180 klas:E -->
+<!-- fc id:T-16-073 sha:65aa20e8 src:manual/16-boot.md:180 status:no-external-signal -->
 ### T-16-073 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2409,7 +2409,7 @@ E (xxx) boot: Factory app partition is not bootable
 
 ---
 
-<!-- fc id:T-16-074 sha:df92f5bb src:manual/16-boot.md:182 klas:K -->
+<!-- fc id:T-16-074 sha:df92f5bb src:manual/16-boot.md:182 status:code-context -->
 ### T-16-074 · kod · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2449,7 +2449,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-075 sha:4878c76b src:manual/16-boot.md:187 klas:A -->
+<!-- fc id:T-16-075 sha:4878c76b src:manual/16-boot.md:187 status:verbatim -->
 ### T-16-075 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2488,7 +2488,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-076 sha:f07d9e1c src:manual/16-boot.md:190 klas:E -->
+<!-- fc id:T-16-076 sha:f07d9e1c src:manual/16-boot.md:190 status:no-external-signal -->
 ### T-16-076 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2511,7 +2511,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-077 sha:c41ad640 src:manual/16-boot.md:190 klas:C -->
+<!-- fc id:T-16-077 sha:c41ad640 src:manual/16-boot.md:190 status:named-unreachable -->
 ### T-16-077 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2539,7 +2539,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-078 sha:e41e916a src:manual/16-boot.md:192 klas:E -->
+<!-- fc id:T-16-078 sha:e41e916a src:manual/16-boot.md:192 status:no-external-signal -->
 ### T-16-078 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2562,7 +2562,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-079 sha:dafca624 src:manual/16-boot.md:196 klas:F -->
+<!-- fc id:T-16-079 sha:dafca624 src:manual/16-boot.md:196 status:unchecked -->
 ### T-16-079 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2586,7 +2586,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-080 sha:68faec6e src:manual/16-boot.md:198 klas:A -->
+<!-- fc id:T-16-080 sha:68faec6e src:manual/16-boot.md:198 status:verbatim -->
 ### T-16-080 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2627,7 +2627,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-081 sha:7c2cf10c src:manual/16-boot.md:201 klas:E -->
+<!-- fc id:T-16-081 sha:7c2cf10c src:manual/16-boot.md:201 status:no-external-signal -->
 ### T-16-081 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2648,7 +2648,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-082 sha:64b7ef66 src:manual/16-boot.md:203 klas:A -->
+<!-- fc id:T-16-082 sha:64b7ef66 src:manual/16-boot.md:203 status:verbatim -->
 ### T-16-082 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2693,7 +2693,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-083 sha:5b9eaf66 src:manual/16-boot.md:210 klas:E -->
+<!-- fc id:T-16-083 sha:5b9eaf66 src:manual/16-boot.md:210 status:no-external-signal -->
 ### T-16-083 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2715,7 +2715,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-084 sha:68f8f3aa src:manual/16-boot.md:211 klas:E -->
+<!-- fc id:T-16-084 sha:68f8f3aa src:manual/16-boot.md:211 status:no-external-signal -->
 ### T-16-084 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2737,7 +2737,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-085 sha:3c680211 src:manual/16-boot.md:215 klas:F -->
+<!-- fc id:T-16-085 sha:3c680211 src:manual/16-boot.md:215 status:unchecked -->
 ### T-16-085 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2762,7 +2762,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-086 sha:b34d888e src:manual/16-boot.md:215 klas:A -->
+<!-- fc id:T-16-086 sha:b34d888e src:manual/16-boot.md:215 status:verbatim -->
 ### T-16-086 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2797,7 +2797,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-087 sha:b1352204 src:manual/16-boot.md:222 klas:E -->
+<!-- fc id:T-16-087 sha:b1352204 src:manual/16-boot.md:222 status:no-external-signal -->
 ### T-16-087 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2824,7 +2824,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-088 sha:6b942f91 src:manual/16-boot.md:223 klas:F -->
+<!-- fc id:T-16-088 sha:6b942f91 src:manual/16-boot.md:223 status:unchecked -->
 ### T-16-088 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2851,7 +2851,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-089 sha:7c8641d9 src:manual/16-boot.md:225 klas:E -->
+<!-- fc id:T-16-089 sha:7c8641d9 src:manual/16-boot.md:225 status:no-external-signal -->
 ### T-16-089 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2878,7 +2878,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-090 sha:96d636c6 src:manual/16-boot.md:231 klas:E -->
+<!-- fc id:T-16-090 sha:96d636c6 src:manual/16-boot.md:231 status:no-external-signal -->
 ### T-16-090 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2900,7 +2900,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-091 sha:85240d7d src:manual/16-boot.md:231 klas:E -->
+<!-- fc id:T-16-091 sha:85240d7d src:manual/16-boot.md:231 status:no-external-signal -->
 ### T-16-091 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2922,7 +2922,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-092 sha:871f576d src:manual/16-boot.md:234 klas:A -->
+<!-- fc id:T-16-092 sha:871f576d src:manual/16-boot.md:234 status:verbatim -->
 ### T-16-092 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2954,7 +2954,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-093 sha:d25421b7 src:manual/16-boot.md:238 klas:F -->
+<!-- fc id:T-16-093 sha:d25421b7 src:manual/16-boot.md:238 status:unchecked -->
 ### T-16-093 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2976,7 +2976,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-094 sha:6555a300 src:manual/16-boot.md:241 klas:E -->
+<!-- fc id:T-16-094 sha:6555a300 src:manual/16-boot.md:241 status:no-external-signal -->
 ### T-16-094 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2998,7 +2998,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-095 sha:a59da32e src:manual/16-boot.md:241 klas:E -->
+<!-- fc id:T-16-095 sha:a59da32e src:manual/16-boot.md:241 status:no-external-signal -->
 ### T-16-095 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**

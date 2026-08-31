@@ -24,7 +24,6 @@
 - nazva: Паспортна похибка DS18B20 — на датчик, а не між датчиками
   zbih: Паспортна похибка DS18B20 — \*\*±0\.5 °C у діапазоні|кількома східцями|законно розходяться
     \*\*до 1 °C\*\*|\*\*міряйте у воді кімнатної температури\*\*
-  klas: C
   dzherelo: DS18B20 Programmable Resolution 1-Wire Digital Thermometer, Maxim Integrated /
     Analog Devices, таблиця Electrical Characteristics, рядок `Thermometer Error tERR`
   shukaty: рядок `Thermometer Error tERR` у таблиці Electrical Characteristics. **Скільки

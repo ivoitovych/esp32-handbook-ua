@@ -15,7 +15,6 @@
 
 - nazva: 'T-K11-008: **Не вмикати Flash Encryption і Secure Boot «щоб'
   zbih: \*\*Не\s+вмикати\s+Flash\s+Encryption
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/security/flash-encryption.rst
   cytata: 'For :ref:`flash-enc-release-mode`, the second stage bootloader sets all the eFuse
     bits set under development mode as well as ``DIS_DOWNLOAD_MANUAL_ENCRYPT``. It also write-protects

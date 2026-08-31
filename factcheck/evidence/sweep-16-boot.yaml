@@ -15,7 +15,6 @@
 
 - nazva: 'T-16-056: Якщо є лише `factory` — беруть його.'
   zbih: Якщо\s+є\s+лише\s+`factory`
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'If "ota data" is empty, it will execute the factory app.
 

@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/48-motory.md`
 
-Одиниць твердження: **74**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **74**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-48-001 sha:1d016ec8 src:manual/48-motory.md:3 klas:E -->
+<!-- fc id:T-48-001 sha:1d016ec8 src:manual/48-motory.md:3 status:no-external-signal -->
 ### T-48-001 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-48-002 sha:ff31f5e4 src:manual/48-motory.md:3 klas:E -->
+<!-- fc id:T-48-002 sha:ff31f5e4 src:manual/48-motory.md:3 status:no-external-signal -->
 ### T-48-002 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-48-003 sha:89d95815 src:manual/48-motory.md:10 klas:F -->
+<!-- fc id:T-48-003 sha:89d95815 src:manual/48-motory.md:10 status:unchecked -->
 ### T-48-003 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -79,7 +79,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-004 sha:34b23ce0 src:manual/48-motory.md:11 klas:F -->
+<!-- fc id:T-48-004 sha:34b23ce0 src:manual/48-motory.md:11 status:unchecked -->
 ### T-48-004 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -104,7 +104,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-005 sha:aba5fa3f src:manual/48-motory.md:15 klas:E -->
+<!-- fc id:T-48-005 sha:aba5fa3f src:manual/48-motory.md:15 status:no-external-signal -->
 ### T-48-005 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -138,7 +138,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-006 sha:1b28c542 src:manual/48-motory.md:18 klas:E -->
+<!-- fc id:T-48-006 sha:1b28c542 src:manual/48-motory.md:18 status:no-external-signal -->
 ### T-48-006 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -161,7 +161,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-007 sha:97f48046 src:manual/48-motory.md:19 klas:E -->
+<!-- fc id:T-48-007 sha:97f48046 src:manual/48-motory.md:19 status:no-external-signal -->
 ### T-48-007 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -184,7 +184,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-008 sha:c99f5934 src:manual/48-motory.md:22 klas:E -->
+<!-- fc id:T-48-008 sha:c99f5934 src:manual/48-motory.md:22 status:no-external-signal -->
 ### T-48-008 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -206,7 +206,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-009 sha:1304b18d src:manual/48-motory.md:27 klas:E -->
+<!-- fc id:T-48-009 sha:1304b18d src:manual/48-motory.md:27 status:no-external-signal -->
 ### T-48-009 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -228,7 +228,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-010 sha:fedd0acb src:manual/48-motory.md:30 klas:E -->
+<!-- fc id:T-48-010 sha:fedd0acb src:manual/48-motory.md:30 status:no-external-signal -->
 ### T-48-010 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -249,7 +249,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-011 sha:e91a1328 src:manual/48-motory.md:32 klas:F -->
+<!-- fc id:T-48-011 sha:e91a1328 src:manual/48-motory.md:32 status:unchecked -->
 ### T-48-011 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -272,7 +272,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-012 sha:fa6f8347 src:manual/48-motory.md:33 klas:E -->
+<!-- fc id:T-48-012 sha:fa6f8347 src:manual/48-motory.md:33 status:no-external-signal -->
 ### T-48-012 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -295,7 +295,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-013 sha:24e0f289 src:manual/48-motory.md:36 klas:F -->
+<!-- fc id:T-48-013 sha:24e0f289 src:manual/48-motory.md:36 status:unchecked -->
 ### T-48-013 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -316,7 +316,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-014 sha:8d181d35 src:manual/48-motory.md:38 klas:E -->
+<!-- fc id:T-48-014 sha:8d181d35 src:manual/48-motory.md:38 status:no-external-signal -->
 ### T-48-014 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -337,7 +337,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-015 sha:784f4b61 src:manual/48-motory.md:41 klas:E -->
+<!-- fc id:T-48-015 sha:784f4b61 src:manual/48-motory.md:41 status:no-external-signal -->
 ### T-48-015 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -362,7 +362,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-016 sha:47c3638d src:manual/48-motory.md:43 klas:D -->
+<!-- fc id:T-48-016 sha:47c3638d src:manual/48-motory.md:43 status:arithmetic -->
 ### T-48-016 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -398,7 +398,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-017 sha:d8eb78a5 src:manual/48-motory.md:46 klas:E -->
+<!-- fc id:T-48-017 sha:d8eb78a5 src:manual/48-motory.md:46 status:no-external-signal -->
 ### T-48-017 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -420,7 +420,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-018 sha:25f6b706 src:manual/48-motory.md:46 klas:A -->
+<!-- fc id:T-48-018 sha:25f6b706 src:manual/48-motory.md:46 status:verbatim -->
 ### T-48-018 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -450,7 +450,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-019 sha:00d5ea08 src:manual/48-motory.md:49 klas:E -->
+<!-- fc id:T-48-019 sha:00d5ea08 src:manual/48-motory.md:49 status:no-external-signal -->
 ### T-48-019 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -474,7 +474,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-020 sha:2aabaecc src:manual/48-motory.md:50 klas:F -->
+<!-- fc id:T-48-020 sha:2aabaecc src:manual/48-motory.md:50 status:unchecked -->
 ### T-48-020 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -498,7 +498,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-021 sha:138f68f6 src:manual/48-motory.md:54 klas:E -->
+<!-- fc id:T-48-021 sha:138f68f6 src:manual/48-motory.md:54 status:no-external-signal -->
 ### T-48-021 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -523,7 +523,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-022 sha:3ca5ce03 src:manual/48-motory.md:55 klas:F -->
+<!-- fc id:T-48-022 sha:3ca5ce03 src:manual/48-motory.md:55 status:unchecked -->
 ### T-48-022 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -548,7 +548,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-023 sha:1d7daf10 src:manual/48-motory.md:57 klas:E -->
+<!-- fc id:T-48-023 sha:1d7daf10 src:manual/48-motory.md:57 status:no-external-signal -->
 ### T-48-023 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -573,7 +573,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-024 sha:bd321b31 src:manual/48-motory.md:61 klas:E -->
+<!-- fc id:T-48-024 sha:bd321b31 src:manual/48-motory.md:61 status:no-external-signal -->
 ### T-48-024 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -599,7 +599,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-025 sha:5ee800ed src:manual/48-motory.md:62 klas:E -->
+<!-- fc id:T-48-025 sha:5ee800ed src:manual/48-motory.md:62 status:no-external-signal -->
 ### T-48-025 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -625,7 +625,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-026 sha:12ac6245 src:manual/48-motory.md:69 klas:E -->
+<!-- fc id:T-48-026 sha:12ac6245 src:manual/48-motory.md:69 status:no-external-signal -->
 ### T-48-026 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -647,7 +647,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-027 sha:9e5b5ed9 src:manual/48-motory.md:69 klas:E -->
+<!-- fc id:T-48-027 sha:9e5b5ed9 src:manual/48-motory.md:69 status:no-external-signal -->
 ### T-48-027 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -669,7 +669,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-028 sha:b4c5929e src:manual/48-motory.md:72 klas:F -->
+<!-- fc id:T-48-028 sha:b4c5929e src:manual/48-motory.md:72 status:unchecked -->
 ### T-48-028 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -692,7 +692,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-029 sha:29f0db43 src:manual/48-motory.md:73 klas:F -->
+<!-- fc id:T-48-029 sha:29f0db43 src:manual/48-motory.md:73 status:unchecked -->
 ### T-48-029 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -715,7 +715,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-030 sha:21320f28 src:manual/48-motory.md:77 klas:E -->
+<!-- fc id:T-48-030 sha:21320f28 src:manual/48-motory.md:77 status:no-external-signal -->
 ### T-48-030 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -752,7 +752,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-031 sha:63b5805c src:manual/48-motory.md:81 klas:E -->
+<!-- fc id:T-48-031 sha:63b5805c src:manual/48-motory.md:81 status:no-external-signal -->
 ### T-48-031 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -774,7 +774,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-032 sha:639119ca src:manual/48-motory.md:81 klas:E -->
+<!-- fc id:T-48-032 sha:639119ca src:manual/48-motory.md:81 status:no-external-signal -->
 ### T-48-032 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -796,7 +796,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-033 sha:85f8c244 src:manual/48-motory.md:82 klas:E -->
+<!-- fc id:T-48-033 sha:85f8c244 src:manual/48-motory.md:82 status:no-external-signal -->
 ### T-48-033 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -818,7 +818,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-034 sha:854242ee src:manual/48-motory.md:84 klas:E -->
+<!-- fc id:T-48-034 sha:854242ee src:manual/48-motory.md:84 status:no-external-signal -->
 ### T-48-034 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -841,7 +841,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-035 sha:752e2233 src:manual/48-motory.md:88 klas:E -->
+<!-- fc id:T-48-035 sha:752e2233 src:manual/48-motory.md:88 status:no-external-signal -->
 ### T-48-035 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -864,7 +864,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-036 sha:706f9be7 src:manual/48-motory.md:92 klas:E -->
+<!-- fc id:T-48-036 sha:706f9be7 src:manual/48-motory.md:92 status:no-external-signal -->
 ### T-48-036 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -886,7 +886,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-037 sha:965ecaef src:manual/48-motory.md:93 klas:E -->
+<!-- fc id:T-48-037 sha:965ecaef src:manual/48-motory.md:93 status:no-external-signal -->
 ### T-48-037 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -908,7 +908,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-038 sha:2163aa11 src:manual/48-motory.md:95 klas:F -->
+<!-- fc id:T-48-038 sha:2163aa11 src:manual/48-motory.md:95 status:unchecked -->
 ### T-48-038 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -932,7 +932,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-039 sha:248f1f7c src:manual/48-motory.md:96 klas:E -->
+<!-- fc id:T-48-039 sha:248f1f7c src:manual/48-motory.md:96 status:no-external-signal -->
 ### T-48-039 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -956,7 +956,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-040 sha:6c18de87 src:manual/48-motory.md:97 klas:E -->
+<!-- fc id:T-48-040 sha:6c18de87 src:manual/48-motory.md:97 status:no-external-signal -->
 ### T-48-040 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -980,7 +980,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-041 sha:2306e4bd src:manual/48-motory.md:100 klas:E -->
+<!-- fc id:T-48-041 sha:2306e4bd src:manual/48-motory.md:100 status:no-external-signal -->
 ### T-48-041 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1004,7 +1004,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-042 sha:6ea258ba src:manual/48-motory.md:101 klas:F -->
+<!-- fc id:T-48-042 sha:6ea258ba src:manual/48-motory.md:101 status:unchecked -->
 ### T-48-042 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1028,7 +1028,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-043 sha:f33a5c84 src:manual/48-motory.md:102 klas:A -->
+<!-- fc id:T-48-043 sha:f33a5c84 src:manual/48-motory.md:102 status:verbatim -->
 ### T-48-043 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1062,7 +1062,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-044 sha:2c69a956 src:manual/48-motory.md:107 klas:C -->
+<!-- fc id:T-48-044 sha:2c69a956 src:manual/48-motory.md:107 status:named-unreachable -->
 ### T-48-044 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1088,7 +1088,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-045 sha:0271cc05 src:manual/48-motory.md:113 klas:F -->
+<!-- fc id:T-48-045 sha:0271cc05 src:manual/48-motory.md:113 status:unchecked -->
 ### T-48-045 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1112,7 +1112,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-046 sha:466a0ad6 src:manual/48-motory.md:114 klas:E -->
+<!-- fc id:T-48-046 sha:466a0ad6 src:manual/48-motory.md:114 status:no-external-signal -->
 ### T-48-046 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1136,7 +1136,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-047 sha:55594e15 src:manual/48-motory.md:118 klas:E -->
+<!-- fc id:T-48-047 sha:55594e15 src:manual/48-motory.md:118 status:no-external-signal -->
 ### T-48-047 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1166,7 +1166,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-048 sha:f8205a42 src:manual/48-motory.md:119 klas:E -->
+<!-- fc id:T-48-048 sha:f8205a42 src:manual/48-motory.md:119 status:no-external-signal -->
 ### T-48-048 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1190,7 +1190,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-049 sha:b88043c1 src:manual/48-motory.md:123 klas:F -->
+<!-- fc id:T-48-049 sha:b88043c1 src:manual/48-motory.md:123 status:unchecked -->
 ### T-48-049 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1211,7 +1211,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-050 sha:15fe46bc src:manual/48-motory.md:125 klas:C -->
+<!-- fc id:T-48-050 sha:15fe46bc src:manual/48-motory.md:125 status:named-unreachable -->
 ### T-48-050 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1238,7 +1238,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-051 sha:674c7127 src:manual/48-motory.md:126 klas:E -->
+<!-- fc id:T-48-051 sha:674c7127 src:manual/48-motory.md:126 status:no-external-signal -->
 ### T-48-051 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1261,7 +1261,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-052 sha:95ed148f src:manual/48-motory.md:129 klas:E -->
+<!-- fc id:T-48-052 sha:95ed148f src:manual/48-motory.md:129 status:no-external-signal -->
 ### T-48-052 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1284,7 +1284,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-053 sha:e97953d6 src:manual/48-motory.md:129 klas:E -->
+<!-- fc id:T-48-053 sha:e97953d6 src:manual/48-motory.md:129 status:no-external-signal -->
 ### T-48-053 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1307,7 +1307,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-054 sha:6cc765ce src:manual/48-motory.md:133 klas:E -->
+<!-- fc id:T-48-054 sha:6cc765ce src:manual/48-motory.md:133 status:no-external-signal -->
 ### T-48-054 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1329,7 +1329,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-055 sha:ddfc4d2c src:manual/48-motory.md:133 klas:E -->
+<!-- fc id:T-48-055 sha:ddfc4d2c src:manual/48-motory.md:133 status:no-external-signal -->
 ### T-48-055 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1351,7 +1351,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-056 sha:2a223890 src:manual/48-motory.md:138 klas:E -->
+<!-- fc id:T-48-056 sha:2a223890 src:manual/48-motory.md:138 status:no-external-signal -->
 ### T-48-056 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1373,7 +1373,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-057 sha:358042bc src:manual/48-motory.md:139 klas:F -->
+<!-- fc id:T-48-057 sha:358042bc src:manual/48-motory.md:139 status:unchecked -->
 ### T-48-057 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1395,7 +1395,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-058 sha:9f9f7392 src:manual/48-motory.md:142 klas:E -->
+<!-- fc id:T-48-058 sha:9f9f7392 src:manual/48-motory.md:142 status:no-external-signal -->
 ### T-48-058 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1419,7 +1419,7 @@ BLDC-двигун із гвинтом — це небезпечний механ
 
 ---
 
-<!-- fc id:T-48-059 sha:f1ab7bcf src:manual/48-motory.md:142 klas:E -->
+<!-- fc id:T-48-059 sha:f1ab7bcf src:manual/48-motory.md:142 status:no-external-signal -->
 ### T-48-059 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1443,7 +1443,7 @@ BLDC-двигун із гвинтом — це небезпечний механ
 
 ---
 
-<!-- fc id:T-48-060 sha:48819a5f src:manual/48-motory.md:146 klas:E -->
+<!-- fc id:T-48-060 sha:48819a5f src:manual/48-motory.md:146 status:no-external-signal -->
 ### T-48-060 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1468,7 +1468,7 @@ BLDC-двигун із гвинтом — це небезпечний механ
 
 ---
 
-<!-- fc id:T-48-061 sha:9778153a src:manual/48-motory.md:154 klas:E -->
+<!-- fc id:T-48-061 sha:9778153a src:manual/48-motory.md:154 status:no-external-signal -->
 ### T-48-061 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1490,7 +1490,7 @@ BLDC-двигун із гвинтом — це небезпечний механ
 
 ---
 
-<!-- fc id:T-48-062 sha:085be07d src:manual/48-motory.md:154 klas:E -->
+<!-- fc id:T-48-062 sha:085be07d src:manual/48-motory.md:154 status:no-external-signal -->
 ### T-48-062 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1512,7 +1512,7 @@ BLDC-двигун із гвинтом — це небезпечний механ
 
 ---
 
-<!-- fc id:T-48-063 sha:14d2cc1b src:manual/48-motory.md:157 klas:E -->
+<!-- fc id:T-48-063 sha:14d2cc1b src:manual/48-motory.md:157 status:no-external-signal -->
 ### T-48-063 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1535,7 +1535,7 @@ BLDC-двигун із гвинтом — це небезпечний механ
 
 ---
 
-<!-- fc id:T-48-064 sha:90a4b095 src:manual/48-motory.md:158 klas:E -->
+<!-- fc id:T-48-064 sha:90a4b095 src:manual/48-motory.md:158 status:no-external-signal -->
 ### T-48-064 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1558,7 +1558,7 @@ BLDC-двигун із гвинтом — це небезпечний механ
 
 ---
 
-<!-- fc id:T-48-065 sha:41655149 src:manual/48-motory.md:163 klas:E -->
+<!-- fc id:T-48-065 sha:41655149 src:manual/48-motory.md:163 status:no-external-signal -->
 ### T-48-065 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1581,7 +1581,7 @@ BLDC-двигун із гвинтом — це небезпечний механ
 
 ---
 
-<!-- fc id:T-48-066 sha:118944b6 src:manual/48-motory.md:164 klas:F -->
+<!-- fc id:T-48-066 sha:118944b6 src:manual/48-motory.md:164 status:unchecked -->
 ### T-48-066 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1604,7 +1604,7 @@ BLDC-двигун із гвинтом — це небезпечний механ
 
 ---
 
-<!-- fc id:T-48-067 sha:caa51bd4 src:manual/48-motory.md:169 klas:A -->
+<!-- fc id:T-48-067 sha:caa51bd4 src:manual/48-motory.md:169 status:verbatim -->
 ### T-48-067 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1637,7 +1637,7 @@ BLDC-двигун із гвинтом — це небезпечний механ
 
 ---
 
-<!-- fc id:T-48-068 sha:0414d9da src:manual/48-motory.md:178 klas:E -->
+<!-- fc id:T-48-068 sha:0414d9da src:manual/48-motory.md:178 status:no-external-signal -->
 ### T-48-068 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1659,7 +1659,7 @@ BLDC-двигун із гвинтом — це небезпечний механ
 
 ---
 
-<!-- fc id:T-48-069 sha:ba48347e src:manual/48-motory.md:181 klas:A -->
+<!-- fc id:T-48-069 sha:ba48347e src:manual/48-motory.md:181 status:verbatim -->
 ### T-48-069 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1687,7 +1687,7 @@ DRV8833 або TB6612.
 
 ---
 
-<!-- fc id:T-48-070 sha:61270839 src:manual/48-motory.md:184 klas:E -->
+<!-- fc id:T-48-070 sha:61270839 src:manual/48-motory.md:184 status:no-external-signal -->
 ### T-48-070 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1709,7 +1709,7 @@ DRV8833 або TB6612.
 
 ---
 
-<!-- fc id:T-48-071 sha:9a72ba0d src:manual/48-motory.md:187 klas:E -->
+<!-- fc id:T-48-071 sha:9a72ba0d src:manual/48-motory.md:187 status:no-external-signal -->
 ### T-48-071 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1730,7 +1730,7 @@ DRV8833 або TB6612.
 
 ---
 
-<!-- fc id:T-48-072 sha:eb9d31db src:manual/48-motory.md:189 klas:E -->
+<!-- fc id:T-48-072 sha:eb9d31db src:manual/48-motory.md:189 status:no-external-signal -->
 ### T-48-072 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1751,7 +1751,7 @@ DRV8833 або TB6612.
 
 ---
 
-<!-- fc id:T-48-073 sha:a970a34d src:manual/48-motory.md:191 klas:E -->
+<!-- fc id:T-48-073 sha:a970a34d src:manual/48-motory.md:191 status:no-external-signal -->
 ### T-48-073 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1772,7 +1772,7 @@ DRV8833 або TB6612.
 
 ---
 
-<!-- fc id:T-48-074 sha:7703b9e4 src:manual/48-motory.md:193 klas:E -->
+<!-- fc id:T-48-074 sha:7703b9e4 src:manual/48-motory.md:193 status:no-external-signal -->
 ### T-48-074 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**

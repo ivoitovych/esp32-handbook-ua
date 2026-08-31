@@ -25,7 +25,6 @@
 
 - nazva: 'T-19-023: Схема з двох слотів без `factory` — робоча'
   zbih: Схема\s+з\s+двох\s+слотів\s+без
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'Factory app, two OTA definitions
 
@@ -51,7 +50,6 @@
   - 1bb643e7
 - nazva: 'T-19-013: Пристрій виконується зі слоту `ota_0`.'
   zbih: Пристрій\s+виконується\s+зі\s+слоту
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
   cytata: 'the first available OTA slot (usually ``ota_0``) is booted
 
@@ -75,7 +73,6 @@
   - 8f05dca6
 - nazva: 'T-19-014: Приходить оновлення — воно записується в `ota_1`, при'
   zbih: Приходить\s+оновлення\s+—\s+воно
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
   cytata: 'write a new app firmware image to whichever OTA app slot that is currently not
     selected for booting

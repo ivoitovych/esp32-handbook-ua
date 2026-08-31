@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/31-freertos.md`
 
-Одиниць твердження: **99**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **99**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-31-001 sha:5ddb229c src:manual/31-freertos.md:3 klas:F -->
+<!-- fc id:T-31-001 sha:5ddb229c src:manual/31-freertos.md:3 status:unchecked -->
 ### T-31-001 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@ FreeRTOS уже працює, коли викликається ваш перш�
 
 ---
 
-<!-- fc id:T-31-002 sha:6ced381a src:manual/31-freertos.md:3 klas:A -->
+<!-- fc id:T-31-002 sha:6ced381a src:manual/31-freertos.md:3 status:verbatim -->
 ### T-31-002 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -60,7 +60,7 @@ FreeRTOS уже працює, коли викликається ваш перш�
 
 ---
 
-<!-- fc id:T-31-003 sha:e3e405f1 src:manual/31-freertos.md:7 klas:E -->
+<!-- fc id:T-31-003 sha:e3e405f1 src:manual/31-freertos.md:7 status:no-external-signal -->
 ### T-31-003 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -84,7 +84,7 @@ FreeRTOS уже працює, коли викликається ваш перш�
 
 ---
 
-<!-- fc id:T-31-004 sha:b9ccfde4 src:manual/31-freertos.md:14 klas:E -->
+<!-- fc id:T-31-004 sha:b9ccfde4 src:manual/31-freertos.md:14 status:no-external-signal -->
 ### T-31-004 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -105,7 +105,7 @@ FreeRTOS уже працює, коли викликається ваш перш�
 
 ---
 
-<!-- fc id:T-31-005 sha:5a356c1a src:manual/31-freertos.md:16 klas:K -->
+<!-- fc id:T-31-005 sha:5a356c1a src:manual/31-freertos.md:16 status:code-context -->
 ### T-31-005 · kod · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -166,7 +166,7 @@ xTaskCreate(sensor_task,   // функція
 
 ---
 
-<!-- fc id:T-31-006 sha:a70c9ecb src:manual/31-freertos.md:20 klas:A -->
+<!-- fc id:T-31-006 sha:a70c9ecb src:manual/31-freertos.md:20 status:verbatim -->
 ### T-31-006 · kod-ryadok · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -200,7 +200,7 @@ static void sensor_task(void *arg) {
 
 ---
 
-<!-- fc id:T-31-007 sha:4d0c7e33 src:manual/31-freertos.md:21 klas:A -->
+<!-- fc id:T-31-007 sha:4d0c7e33 src:manual/31-freertos.md:21 status:verbatim -->
 ### T-31-007 · kod-ryadok · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -238,7 +238,7 @@ static void sensor_task(void *arg) {
 
 ---
 
-<!-- fc id:T-31-008 sha:4c313f1e src:manual/31-freertos.md:33 klas:E -->
+<!-- fc id:T-31-008 sha:4c313f1e src:manual/31-freertos.md:33 status:no-external-signal -->
 ### T-31-008 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -259,7 +259,7 @@ static void sensor_task(void *arg) {
 
 ---
 
-<!-- fc id:T-31-009 sha:92f32b03 src:manual/31-freertos.md:35 klas:E -->
+<!-- fc id:T-31-009 sha:92f32b03 src:manual/31-freertos.md:35 status:no-external-signal -->
 ### T-31-009 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -282,7 +282,7 @@ static void sensor_task(void *arg) {
 
 ---
 
-<!-- fc id:T-31-010 sha:e9786310 src:manual/31-freertos.md:35 klas:F -->
+<!-- fc id:T-31-010 sha:e9786310 src:manual/31-freertos.md:35 status:unchecked -->
 ### T-31-010 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -305,7 +305,7 @@ static void sensor_task(void *arg) {
 
 ---
 
-<!-- fc id:T-31-011 sha:fe619d42 src:manual/31-freertos.md:39 klas:F -->
+<!-- fc id:T-31-011 sha:fe619d42 src:manual/31-freertos.md:39 status:unchecked -->
 ### T-31-011 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -327,7 +327,7 @@ static void sensor_task(void *arg) {
 
 ---
 
-<!-- fc id:T-31-012 sha:2bf361b9 src:manual/31-freertos.md:42 klas:K -->
+<!-- fc id:T-31-012 sha:2bf361b9 src:manual/31-freertos.md:42 status:code-context -->
 ### T-31-012 · kod · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -368,7 +368,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-013 sha:b174e002 src:manual/31-freertos.md:44 klas:F -->
+<!-- fc id:T-31-013 sha:b174e002 src:manual/31-freertos.md:44 status:unchecked -->
 ### T-31-013 · kod-ryadok · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -394,7 +394,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-014 sha:b6da3c56 src:manual/31-freertos.md:49 klas:A -->
+<!-- fc id:T-31-014 sha:b6da3c56 src:manual/31-freertos.md:49 status:verbatim -->
 ### T-31-014 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -426,7 +426,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-015 sha:4f3a3b23 src:manual/31-freertos.md:53 klas:A -->
+<!-- fc id:T-31-015 sha:4f3a3b23 src:manual/31-freertos.md:53 status:verbatim -->
 ### T-31-015 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -460,7 +460,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-016 sha:afe4ddd9 src:manual/31-freertos.md:54 klas:E -->
+<!-- fc id:T-31-016 sha:afe4ddd9 src:manual/31-freertos.md:54 status:no-external-signal -->
 ### T-31-016 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -484,7 +484,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-017 sha:5e42d726 src:manual/31-freertos.md:57 klas:E -->
+<!-- fc id:T-31-017 sha:5e42d726 src:manual/31-freertos.md:57 status:no-external-signal -->
 ### T-31-017 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -507,7 +507,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-018 sha:9fa765b2 src:manual/31-freertos.md:63 klas:A -->
+<!-- fc id:T-31-018 sha:9fa765b2 src:manual/31-freertos.md:63 status:verbatim -->
 ### T-31-018 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -538,7 +538,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-019 sha:a794bed6 src:manual/31-freertos.md:63 klas:A -->
+<!-- fc id:T-31-019 sha:a794bed6 src:manual/31-freertos.md:63 status:verbatim -->
 ### T-31-019 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -568,7 +568,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-020 sha:685aa109 src:manual/31-freertos.md:65 klas:A -->
+<!-- fc id:T-31-020 sha:685aa109 src:manual/31-freertos.md:65 status:verbatim -->
 ### T-31-020 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -598,7 +598,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-021 sha:ad41371f src:manual/31-freertos.md:70 klas:E -->
+<!-- fc id:T-31-021 sha:ad41371f src:manual/31-freertos.md:70 status:no-external-signal -->
 ### T-31-021 · tablycya · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -626,7 +626,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-022 sha:4c18e8a7 src:manual/31-freertos.md:72 klas:E -->
+<!-- fc id:T-31-022 sha:4c18e8a7 src:manual/31-freertos.md:72 status:no-external-signal -->
 ### T-31-022 · tablycya · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -654,7 +654,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-023 sha:419ad673 src:manual/31-freertos.md:73 klas:E -->
+<!-- fc id:T-31-023 sha:419ad673 src:manual/31-freertos.md:73 status:no-external-signal -->
 ### T-31-023 · tablycya · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -682,7 +682,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-024 sha:3ce093d4 src:manual/31-freertos.md:74 klas:E -->
+<!-- fc id:T-31-024 sha:3ce093d4 src:manual/31-freertos.md:74 status:no-external-signal -->
 ### T-31-024 · tablycya · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -710,7 +710,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-025 sha:7f7e9d58 src:manual/31-freertos.md:75 klas:A -->
+<!-- fc id:T-31-025 sha:7f7e9d58 src:manual/31-freertos.md:75 status:verbatim -->
 ### T-31-025 · tablycya · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -744,7 +744,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-026 sha:59804003 src:manual/31-freertos.md:78 klas:E -->
+<!-- fc id:T-31-026 sha:59804003 src:manual/31-freertos.md:78 status:no-external-signal -->
 ### T-31-026 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -767,7 +767,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-027 sha:f4d5df38 src:manual/31-freertos.md:79 klas:A -->
+<!-- fc id:T-31-027 sha:f4d5df38 src:manual/31-freertos.md:79 status:verbatim -->
 ### T-31-027 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -796,7 +796,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-028 sha:27037fe9 src:manual/31-freertos.md:81 klas:A -->
+<!-- fc id:T-31-028 sha:27037fe9 src:manual/31-freertos.md:81 status:verbatim -->
 ### T-31-028 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -826,7 +826,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-029 sha:b6b1a89f src:manual/31-freertos.md:85 klas:A -->
+<!-- fc id:T-31-029 sha:b6b1a89f src:manual/31-freertos.md:85 status:verbatim -->
 ### T-31-029 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -855,7 +855,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-030 sha:aae2b632 src:manual/31-freertos.md:91 klas:F -->
+<!-- fc id:T-31-030 sha:aae2b632 src:manual/31-freertos.md:91 status:unchecked -->
 ### T-31-030 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -877,7 +877,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-031 sha:8ff92472 src:manual/31-freertos.md:94 klas:A -->
+<!-- fc id:T-31-031 sha:8ff92472 src:manual/31-freertos.md:94 status:verbatim -->
 ### T-31-031 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -904,7 +904,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-032 sha:71a27a71 src:manual/31-freertos.md:96 klas:K -->
+<!-- fc id:T-31-032 sha:71a27a71 src:manual/31-freertos.md:96 status:code-context -->
 ### T-31-032 · kod · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -941,7 +941,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ---
 
-<!-- fc id:T-31-033 sha:6ab242cb src:manual/31-freertos.md:97 klas:A -->
+<!-- fc id:T-31-033 sha:6ab242cb src:manual/31-freertos.md:97 status:verbatim -->
 ### T-31-033 · kod-ryadok · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -975,7 +975,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ---
 
-<!-- fc id:T-31-034 sha:b67ba81b src:manual/31-freertos.md:101 klas:A -->
+<!-- fc id:T-31-034 sha:b67ba81b src:manual/31-freertos.md:101 status:verbatim -->
 ### T-31-034 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1003,7 +1003,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ---
 
-<!-- fc id:T-31-035 sha:7b9b18a5 src:manual/31-freertos.md:102 klas:A -->
+<!-- fc id:T-31-035 sha:7b9b18a5 src:manual/31-freertos.md:102 status:verbatim -->
 ### T-31-035 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1031,7 +1031,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ---
 
-<!-- fc id:T-31-036 sha:6c48d623 src:manual/31-freertos.md:105 klas:A -->
+<!-- fc id:T-31-036 sha:6c48d623 src:manual/31-freertos.md:105 status:verbatim -->
 ### T-31-036 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1062,7 +1062,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ---
 
-<!-- fc id:T-31-037 sha:5c5bd338 src:manual/31-freertos.md:106 klas:E -->
+<!-- fc id:T-31-037 sha:5c5bd338 src:manual/31-freertos.md:106 status:no-external-signal -->
 ### T-31-037 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1087,7 +1087,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ---
 
-<!-- fc id:T-31-038 sha:7f269ba1 src:manual/31-freertos.md:107 klas:E -->
+<!-- fc id:T-31-038 sha:7f269ba1 src:manual/31-freertos.md:107 status:no-external-signal -->
 ### T-31-038 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1112,7 +1112,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ---
 
-<!-- fc id:T-31-039 sha:a7fe16fa src:manual/31-freertos.md:110 klas:E -->
+<!-- fc id:T-31-039 sha:a7fe16fa src:manual/31-freertos.md:110 status:no-external-signal -->
 ### T-31-039 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1136,7 +1136,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ---
 
-<!-- fc id:T-31-040 sha:a10d6bfa src:manual/31-freertos.md:110 klas:E -->
+<!-- fc id:T-31-040 sha:a10d6bfa src:manual/31-freertos.md:110 status:no-external-signal -->
 ### T-31-040 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1160,7 +1160,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ---
 
-<!-- fc id:T-31-041 sha:6d53b9e1 src:manual/31-freertos.md:117 klas:E -->
+<!-- fc id:T-31-041 sha:6d53b9e1 src:manual/31-freertos.md:117 status:no-external-signal -->
 ### T-31-041 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1183,7 +1183,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ---
 
-<!-- fc id:T-31-042 sha:47149383 src:manual/31-freertos.md:117 klas:E -->
+<!-- fc id:T-31-042 sha:47149383 src:manual/31-freertos.md:117 status:no-external-signal -->
 ### T-31-042 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1206,7 +1206,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ---
 
-<!-- fc id:T-31-043 sha:a0c48145 src:manual/31-freertos.md:121 klas:K -->
+<!-- fc id:T-31-043 sha:a0c48145 src:manual/31-freertos.md:121 status:code-context -->
 ### T-31-043 · kod · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1267,7 +1267,7 @@ if (xQueueReceive(cherga, &v, portMAX_DELAY) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-044 sha:c7d11746 src:manual/31-freertos.md:126 klas:A -->
+<!-- fc id:T-31-044 sha:c7d11746 src:manual/31-freertos.md:126 status:verbatim -->
 ### T-31-044 · kod-ryadok · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1300,7 +1300,7 @@ xQueueSend(cherga, &v, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-31-045 sha:6bcb2659 src:manual/31-freertos.md:131 klas:F -->
+<!-- fc id:T-31-045 sha:6bcb2659 src:manual/31-freertos.md:131 status:unchecked -->
 ### T-31-045 · kod-ryadok · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1326,7 +1326,7 @@ if (xQueueReceive(cherga, &v, portMAX_DELAY) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-046 sha:4f254aea src:manual/31-freertos.md:135 klas:E -->
+<!-- fc id:T-31-046 sha:4f254aea src:manual/31-freertos.md:135 status:no-external-signal -->
 ### T-31-046 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1347,7 +1347,7 @@ if (xQueueReceive(cherga, &v, portMAX_DELAY) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-047 sha:e441359d src:manual/31-freertos.md:137 klas:A -->
+<!-- fc id:T-31-047 sha:e441359d src:manual/31-freertos.md:137 status:verbatim -->
 ### T-31-047 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1382,7 +1382,7 @@ if (xQueueReceive(cherga, &v, portMAX_DELAY) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-048 sha:048ae5ce src:manual/31-freertos.md:143 klas:A -->
+<!-- fc id:T-31-048 sha:048ae5ce src:manual/31-freertos.md:143 status:verbatim -->
 ### T-31-048 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1414,7 +1414,7 @@ if (xQueueReceive(cherga, &v, portMAX_DELAY) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-049 sha:4f5ff1ce src:manual/31-freertos.md:143 klas:E -->
+<!-- fc id:T-31-049 sha:4f5ff1ce src:manual/31-freertos.md:143 status:no-external-signal -->
 ### T-31-049 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1436,7 +1436,7 @@ if (xQueueReceive(cherga, &v, portMAX_DELAY) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-050 sha:0f318c6e src:manual/31-freertos.md:148 klas:F -->
+<!-- fc id:T-31-050 sha:0f318c6e src:manual/31-freertos.md:148 status:unchecked -->
 ### T-31-050 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1458,7 +1458,7 @@ if (xQueueReceive(cherga, &v, portMAX_DELAY) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-051 sha:c4ecc699 src:manual/31-freertos.md:151 klas:K -->
+<!-- fc id:T-31-051 sha:c4ecc699 src:manual/31-freertos.md:151 status:code-context -->
 ### T-31-051 · kod · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1503,7 +1503,7 @@ if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-052 sha:05942241 src:manual/31-freertos.md:156 klas:A -->
+<!-- fc id:T-31-052 sha:05942241 src:manual/31-freertos.md:156 status:verbatim -->
 ### T-31-052 · kod-ryadok · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1538,7 +1538,7 @@ if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-053 sha:b49e2c99 src:manual/31-freertos.md:160 klas:A -->
+<!-- fc id:T-31-053 sha:b49e2c99 src:manual/31-freertos.md:160 status:verbatim -->
 ### T-31-053 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1567,7 +1567,7 @@ if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-054 sha:a7fe8978 src:manual/31-freertos.md:163 klas:A -->
+<!-- fc id:T-31-054 sha:a7fe8978 src:manual/31-freertos.md:163 status:verbatim -->
 ### T-31-054 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1595,7 +1595,7 @@ if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-055 sha:c73b142f src:manual/31-freertos.md:168 klas:A -->
+<!-- fc id:T-31-055 sha:c73b142f src:manual/31-freertos.md:168 status:verbatim -->
 ### T-31-055 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1623,7 +1623,7 @@ if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-056 sha:1e95ef1f src:manual/31-freertos.md:168 klas:E -->
+<!-- fc id:T-31-056 sha:1e95ef1f src:manual/31-freertos.md:168 status:no-external-signal -->
 ### T-31-056 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1645,7 +1645,7 @@ if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-057 sha:eec8ea19 src:manual/31-freertos.md:171 klas:A -->
+<!-- fc id:T-31-057 sha:eec8ea19 src:manual/31-freertos.md:171 status:verbatim -->
 ### T-31-057 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1672,7 +1672,7 @@ if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-058 sha:1b8c1efa src:manual/31-freertos.md:173 klas:A -->
+<!-- fc id:T-31-058 sha:1b8c1efa src:manual/31-freertos.md:173 status:verbatim -->
 ### T-31-058 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1700,7 +1700,7 @@ if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-059 sha:599ea25d src:manual/31-freertos.md:173 klas:A -->
+<!-- fc id:T-31-059 sha:599ea25d src:manual/31-freertos.md:173 status:verbatim -->
 ### T-31-059 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1728,7 +1728,7 @@ if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
 
 ---
 
-<!-- fc id:T-31-060 sha:1096706d src:manual/31-freertos.md:176 klas:K -->
+<!-- fc id:T-31-060 sha:1096706d src:manual/31-freertos.md:176 status:code-context -->
 ### T-31-060 · kod · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1773,7 +1773,7 @@ xEventGroupWaitBits(podiyi, WIFI_OK | TIME_OK,
 
 ---
 
-<!-- fc id:T-31-061 sha:52eaa3fa src:manual/31-freertos.md:178 klas:B -->
+<!-- fc id:T-31-061 sha:52eaa3fa src:manual/31-freertos.md:178 status:derived -->
 ### T-31-061 · kod-ryadok · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1802,7 +1802,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
 
 ---
 
-<!-- fc id:T-31-062 sha:efe06e13 src:manual/31-freertos.md:179 klas:B -->
+<!-- fc id:T-31-062 sha:efe06e13 src:manual/31-freertos.md:179 status:derived -->
 ### T-31-062 · kod-ryadok · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1827,7 +1827,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
 
 ---
 
-<!-- fc id:T-31-063 sha:c27bfc67 src:manual/31-freertos.md:188 klas:A -->
+<!-- fc id:T-31-063 sha:c27bfc67 src:manual/31-freertos.md:188 status:verbatim -->
 ### T-31-063 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1856,7 +1856,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
 
 ---
 
-<!-- fc id:T-31-064 sha:ceb5364e src:manual/31-freertos.md:191 klas:F -->
+<!-- fc id:T-31-064 sha:ceb5364e src:manual/31-freertos.md:191 status:unchecked -->
 ### T-31-064 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1878,7 +1878,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
 
 ---
 
-<!-- fc id:T-31-065 sha:f2ff5615 src:manual/31-freertos.md:194 klas:A -->
+<!-- fc id:T-31-065 sha:f2ff5615 src:manual/31-freertos.md:194 status:verbatim -->
 ### T-31-065 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1918,7 +1918,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
 
 ---
 
-<!-- fc id:T-31-066 sha:c54690cc src:manual/31-freertos.md:199 klas:A -->
+<!-- fc id:T-31-066 sha:c54690cc src:manual/31-freertos.md:199 status:verbatim -->
 ### T-31-066 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1961,7 +1961,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
 
 ---
 
-<!-- fc id:T-31-067 sha:440211f9 src:manual/31-freertos.md:201 klas:A -->
+<!-- fc id:T-31-067 sha:440211f9 src:manual/31-freertos.md:201 status:verbatim -->
 ### T-31-067 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2004,7 +2004,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
 
 ---
 
-<!-- fc id:T-31-068 sha:1256a3f9 src:manual/31-freertos.md:205 klas:E -->
+<!-- fc id:T-31-068 sha:1256a3f9 src:manual/31-freertos.md:205 status:no-external-signal -->
 ### T-31-068 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2027,7 +2027,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
 
 ---
 
-<!-- fc id:T-31-069 sha:6027e481 src:manual/31-freertos.md:206 klas:A -->
+<!-- fc id:T-31-069 sha:6027e481 src:manual/31-freertos.md:206 status:verbatim -->
 ### T-31-069 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2067,7 +2067,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
 
 ---
 
-<!-- fc id:T-31-070 sha:cee74a8d src:manual/31-freertos.md:209 klas:A -->
+<!-- fc id:T-31-070 sha:cee74a8d src:manual/31-freertos.md:209 status:verbatim -->
 ### T-31-070 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2096,7 +2096,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
 
 ---
 
-<!-- fc id:T-31-071 sha:f84ae609 src:manual/31-freertos.md:209 klas:A -->
+<!-- fc id:T-31-071 sha:f84ae609 src:manual/31-freertos.md:209 status:verbatim -->
 ### T-31-071 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2125,7 +2125,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
 
 ---
 
-<!-- fc id:T-31-072 sha:87a953a3 src:manual/31-freertos.md:215 klas:K -->
+<!-- fc id:T-31-072 sha:87a953a3 src:manual/31-freertos.md:215 status:code-context -->
 ### T-31-072 · kod · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2166,7 +2166,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-073 sha:9cd7f34f src:manual/31-freertos.md:219 klas:A -->
+<!-- fc id:T-31-073 sha:9cd7f34f src:manual/31-freertos.md:219 status:verbatim -->
 ### T-31-073 · kod-ryadok · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2200,7 +2200,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-074 sha:ac8daf50 src:manual/31-freertos.md:220 klas:A -->
+<!-- fc id:T-31-074 sha:ac8daf50 src:manual/31-freertos.md:220 status:verbatim -->
 ### T-31-074 · kod-ryadok · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2238,7 +2238,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-075 sha:48075782 src:manual/31-freertos.md:224 klas:A -->
+<!-- fc id:T-31-075 sha:48075782 src:manual/31-freertos.md:224 status:verbatim -->
 ### T-31-075 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2271,7 +2271,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-076 sha:1b28ad63 src:manual/31-freertos.md:225 klas:A -->
+<!-- fc id:T-31-076 sha:1b28ad63 src:manual/31-freertos.md:225 status:verbatim -->
 ### T-31-076 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2300,7 +2300,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-077 sha:11cc8e46 src:manual/31-freertos.md:226 klas:A -->
+<!-- fc id:T-31-077 sha:11cc8e46 src:manual/31-freertos.md:226 status:verbatim -->
 ### T-31-077 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2333,7 +2333,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-078 sha:aa96715a src:manual/31-freertos.md:230 klas:E -->
+<!-- fc id:T-31-078 sha:aa96715a src:manual/31-freertos.md:230 status:no-external-signal -->
 ### T-31-078 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2356,7 +2356,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-079 sha:77b3e0ed src:manual/31-freertos.md:231 klas:A -->
+<!-- fc id:T-31-079 sha:77b3e0ed src:manual/31-freertos.md:231 status:verbatim -->
 ### T-31-079 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2385,7 +2385,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-080 sha:2dd64dec src:manual/31-freertos.md:234 klas:A -->
+<!-- fc id:T-31-080 sha:2dd64dec src:manual/31-freertos.md:234 status:verbatim -->
 ### T-31-080 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2425,7 +2425,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-081 sha:cb41e800 src:manual/31-freertos.md:235 klas:F -->
+<!-- fc id:T-31-081 sha:cb41e800 src:manual/31-freertos.md:235 status:unchecked -->
 ### T-31-081 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2448,7 +2448,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-082 sha:1bed70d5 src:manual/31-freertos.md:240 klas:E -->
+<!-- fc id:T-31-082 sha:1bed70d5 src:manual/31-freertos.md:240 status:no-external-signal -->
 ### T-31-082 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2469,7 +2469,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-083 sha:1da805d2 src:manual/31-freertos.md:242 klas:K -->
+<!-- fc id:T-31-083 sha:1da805d2 src:manual/31-freertos.md:242 status:code-context -->
 ### T-31-083 · kod · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2508,7 +2508,7 @@ xTimerStart(t, 0);
 
 ---
 
-<!-- fc id:T-31-084 sha:13c28b77 src:manual/31-freertos.md:245 klas:F -->
+<!-- fc id:T-31-084 sha:13c28b77 src:manual/31-freertos.md:245 status:unchecked -->
 ### T-31-084 · kod-ryadok · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2533,7 +2533,7 @@ xTimerStart(t, 0);
 
 ---
 
-<!-- fc id:T-31-085 sha:2bdfbaae src:manual/31-freertos.md:248 klas:A -->
+<!-- fc id:T-31-085 sha:2bdfbaae src:manual/31-freertos.md:248 status:verbatim -->
 ### T-31-085 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2562,7 +2562,7 @@ xTimerStart(t, 0);
 
 ---
 
-<!-- fc id:T-31-086 sha:163f52fe src:manual/31-freertos.md:248 klas:E -->
+<!-- fc id:T-31-086 sha:163f52fe src:manual/31-freertos.md:248 status:no-external-signal -->
 ### T-31-086 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2585,7 +2585,7 @@ xTimerStart(t, 0);
 
 ---
 
-<!-- fc id:T-31-087 sha:0573d901 src:manual/31-freertos.md:254 klas:E -->
+<!-- fc id:T-31-087 sha:0573d901 src:manual/31-freertos.md:254 status:no-external-signal -->
 ### T-31-087 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2606,7 +2606,7 @@ xTimerStart(t, 0);
 
 ---
 
-<!-- fc id:T-31-088 sha:5adc071c src:manual/31-freertos.md:256 klas:E -->
+<!-- fc id:T-31-088 sha:5adc071c src:manual/31-freertos.md:256 status:no-external-signal -->
 ### T-31-088 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2627,7 +2627,7 @@ xTimerStart(t, 0);
 
 ---
 
-<!-- fc id:T-31-089 sha:3635e455 src:manual/31-freertos.md:258 klas:E -->
+<!-- fc id:T-31-089 sha:3635e455 src:manual/31-freertos.md:258 status:no-external-signal -->
 ### T-31-089 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2649,7 +2649,7 @@ xTimerStart(t, 0);
 
 ---
 
-<!-- fc id:T-31-090 sha:71179c5d src:manual/31-freertos.md:261 klas:A -->
+<!-- fc id:T-31-090 sha:71179c5d src:manual/31-freertos.md:261 status:verbatim -->
 ### T-31-090 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2676,7 +2676,7 @@ xTimerStart(t, 0);
 
 ---
 
-<!-- fc id:T-31-091 sha:b83b5cb4 src:manual/31-freertos.md:263 klas:E -->
+<!-- fc id:T-31-091 sha:b83b5cb4 src:manual/31-freertos.md:263 status:no-external-signal -->
 ### T-31-091 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2697,7 +2697,7 @@ xTimerStart(t, 0);
 
 ---
 
-<!-- fc id:T-31-092 sha:8922c4eb src:manual/31-freertos.md:265 klas:B -->
+<!-- fc id:T-31-092 sha:8922c4eb src:manual/31-freertos.md:265 status:derived -->
 ### T-31-092 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2731,7 +2731,7 @@ xTimerStart(t, 0);
 
 ---
 
-<!-- fc id:T-31-093 sha:f02a263f src:manual/31-freertos.md:268 klas:A -->
+<!-- fc id:T-31-093 sha:f02a263f src:manual/31-freertos.md:268 status:verbatim -->
 ### T-31-093 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2760,7 +2760,7 @@ xTimerStart(t, 0);
 
 ---
 
-<!-- fc id:T-31-094 sha:272c94c9 src:manual/31-freertos.md:273 klas:E -->
+<!-- fc id:T-31-094 sha:272c94c9 src:manual/31-freertos.md:273 status:no-external-signal -->
 ### T-31-094 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2781,7 +2781,7 @@ xTimerStart(t, 0);
 
 ---
 
-<!-- fc id:T-31-095 sha:caf51e23 src:manual/31-freertos.md:275 klas:A -->
+<!-- fc id:T-31-095 sha:caf51e23 src:manual/31-freertos.md:275 status:verbatim -->
 ### T-31-095 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2808,7 +2808,7 @@ xTimerStart(t, 0);
 
 ---
 
-<!-- fc id:T-31-096 sha:845c22bb src:manual/31-freertos.md:277 klas:E -->
+<!-- fc id:T-31-096 sha:845c22bb src:manual/31-freertos.md:277 status:no-external-signal -->
 ### T-31-096 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2829,7 +2829,7 @@ xTimerStart(t, 0);
 
 ---
 
-<!-- fc id:T-31-097 sha:058ed39f src:manual/31-freertos.md:279 klas:E -->
+<!-- fc id:T-31-097 sha:058ed39f src:manual/31-freertos.md:279 status:no-external-signal -->
 ### T-31-097 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2850,7 +2850,7 @@ ISR: прочитати, покласти в чергу, вийти. Ніяко�
 
 ---
 
-<!-- fc id:T-31-098 sha:72e699d5 src:manual/31-freertos.md:279 klas:A -->
+<!-- fc id:T-31-098 sha:72e699d5 src:manual/31-freertos.md:279 status:verbatim -->
 ### T-31-098 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2877,7 +2877,7 @@ ISR: прочитати, покласти в чергу, вийти. Ніяко�
 
 ---
 
-<!-- fc id:T-31-099 sha:5878c064 src:manual/31-freertos.md:281 klas:E -->
+<!-- fc id:T-31-099 sha:5878c064 src:manual/31-freertos.md:281 status:no-external-signal -->
 ### T-31-099 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**

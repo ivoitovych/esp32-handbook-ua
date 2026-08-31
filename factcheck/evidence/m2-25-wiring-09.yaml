@@ -1,6 +1,5 @@
 - nazva: CP2102 · Windows — драйвер від SiLabs
   zbih: '`CP2102`.*драйвер із сайту SiLabs'
-  klas: A
   dzherelo: Silicon Labs, CP2102/9 SINGLE-CHIP USB-TO-UART BRIDGE, datasheet, розділ 9 «CP2102/9 Device
     Drivers» і «9.1. Virtual COM Port Drivers»
   cytata: 'Virtual COM Port Device Drivers
@@ -56,7 +55,6 @@
     на сайт SiLabs підтверджує, що це офіційні драйвери від виробника, як стверджує книга.
 - nazva: CH340 · Windows — драйвер від WCH
   zbih: '`CH340`.*драйвер із сайту WCH'
-  klas: B
   dzherelo: 'WCH, CH340 USB to serial chip, datasheet (english), розділи «Introduction» і «Features» (кеш:
     source-cache/ch340.pdf)'
   cytata: "USB to serial chip CH340\n\nFeatures:\n● Totally compatible with serial application program\
@@ -80,7 +78,6 @@
     на драйвер від WCH для Windows у datasheet.
 - nazva: CH9102 · Windows — окремий драйвер (не CH340)
   zbih: '`CH9102`.*окремий.*драйвер'
-  klas: C
   dzherelo: WCH CH9102 / CH9102F datasheet
   shukaty: Інформація про Windows драйвер для CH9102; розділи про драйвери та встановлення на Windows;
     як він відрізняється від CH340
@@ -98,7 +95,6 @@
   - 8e99078d
 - nazva: FT232RL · Windows — драйвер FTDI
   zbih: '`FT232RL`.*драйвер FTDI'
-  klas: C
   dzherelo: FTDI FT232RL USB UART IC datasheet
   shukaty: Інформація про Windows драйвер для FT232RL; розділи про драйвери та встановлення
   notatka: FT232RL datasheet не дістається з dzherela-cache. Потребує окремого завантаження з ftdichip.com.
@@ -112,7 +108,6 @@
   look_for: Інформація про Windows драйвер для FT232RL; розділи про драйвери та встановлення
 - nazva: CH9102 — окрема пастка (схожий на CH340, але інший драйвер)
   zbih: CH9102.*окрема.*пастка.*CH340
-  klas: C
   dzherelo: WCH CH9102 / CH9102F datasheet та CH340 datasheet для порівняння
   shukaty: Інформація про фізичну схожість CH9102 з CH340; упаковки, розташування піків; відмінності у
     драйвері та встановленні
@@ -128,7 +123,6 @@
     у драйвері та встановленні
 - nazva: Драйвер CH340 на CH9102 — не працює
   zbih: драйвер CH340.*не працює
-  klas: E
   dzherelo: не застосовується
   cytata: Людина ставить драйвер CH340, він не працює, і виникає висновок «плата бракована».
   sposib: не застосовується
@@ -146,7 +140,6 @@
   - 6ca4fb71
 - nazva: Різні плати — різні імена портів
   zbih: різні.*імена.*портів
-  klas: E
   dzherelo: не застосовується
   cytata: Один і той самий комп'ютер може дати `/dev/ttyUSB0` одній платі й `/dev/ttyUSB1` іншій, і після
     перевтикання номери міняються.
@@ -166,7 +159,6 @@
   - e79151e3
 - nazva: S3 та C3 — USB-контролер на кристалі
   zbih: S3.*C3.*USB-контролер.*кристалі
-  klas: C
   dzherelo: Espressif ESP32-S3 datasheet та ESP32-C3 datasheet
   shukaty: Розділи про інтеграцію USB контролера на кристалі; розділи «Features» та «Electrical Characteristics»;
     архітектура та периферійні модулі
@@ -186,7 +178,6 @@
   - 5268e7f0
 - nazva: CH9102 — окремий драйвер від CH340 (резюме)
   zbih: CH9102 потребує іншого драйвера
-  klas: C
   dzherelo: WCH CH9102 / CH9102F datasheet та драйверне забезпечення
   shukaty: Порівняння драйверів CH340 та CH9102; їхні відмінності та несумісність на рівні драйвера та
     встановлення

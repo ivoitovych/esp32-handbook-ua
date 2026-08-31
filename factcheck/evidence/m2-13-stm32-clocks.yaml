@@ -3,7 +3,6 @@
 
 - nazva: Нижня межа частот STM32 — 24 МГц у Value line
   zbih: Частота\s+·\s+STM32\s+→\s+24\s+МГц\s+–\s+сотні\s+МГц
-  klas: B
   dzherelo: STMicroelectronics, сторінка лінійки STM32F100 Value line — https://www.st.com/en/microcontrollers-microprocessors/stm32f100-value-line.html
     (нижня межа); сторінка STM32 High Performance MCUs — https://www.st.com/en/microcontrollers-microprocessors/stm32-high-performance-mcus.html
     (верхня)

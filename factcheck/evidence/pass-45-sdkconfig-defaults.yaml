@@ -37,7 +37,6 @@
 
 - nazva: sdkconfig.defaults рекомендовано тримати в системі контролю версій
   zbih: Саме він\s+має лежати в git
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/build-system.rst
   cytata: 'It is recommended to commit sdkconfig.defaults for providing baseline configurations.
 

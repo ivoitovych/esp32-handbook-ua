@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/18-rozdily-fleshu.md`
 
-Одиниць твердження: **125**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **125**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-18-001 sha:81b76c44 src:manual/18-rozdily-fleshu.md:3 klas:A -->
+<!-- fc id:T-18-001 sha:81b76c44 src:manual/18-rozdily-fleshu.md:3 status:verbatim -->
 ### T-18-001 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -38,7 +38,7 @@
 
 ---
 
-<!-- fc id:T-18-002 sha:87d0e3e7 src:manual/18-rozdily-fleshu.md:5 klas:A -->
+<!-- fc id:T-18-002 sha:87d0e3e7 src:manual/18-rozdily-fleshu.md:5 status:verbatim -->
 ### T-18-002 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -68,7 +68,7 @@
 
 ---
 
-<!-- fc id:T-18-003 sha:ea68963b src:manual/18-rozdily-fleshu.md:8 klas:A -->
+<!-- fc id:T-18-003 sha:ea68963b src:manual/18-rozdily-fleshu.md:8 status:verbatim -->
 ### T-18-003 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -98,7 +98,7 @@
 
 ---
 
-<!-- fc id:T-18-004 sha:9c606f2f src:manual/18-rozdily-fleshu.md:10 klas:E -->
+<!-- fc id:T-18-004 sha:9c606f2f src:manual/18-rozdily-fleshu.md:10 status:no-external-signal -->
 ### T-18-004 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -122,7 +122,7 @@
 
 ---
 
-<!-- fc id:T-18-005 sha:4a659ad6 src:manual/18-rozdily-fleshu.md:15 klas:E -->
+<!-- fc id:T-18-005 sha:4a659ad6 src:manual/18-rozdily-fleshu.md:15 status:no-external-signal -->
 ### T-18-005 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -145,7 +145,7 @@
 
 ---
 
-<!-- fc id:T-18-006 sha:4bb6abfa src:manual/18-rozdily-fleshu.md:16 klas:E -->
+<!-- fc id:T-18-006 sha:4bb6abfa src:manual/18-rozdily-fleshu.md:16 status:no-external-signal -->
 ### T-18-006 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -168,7 +168,7 @@
 
 ---
 
-<!-- fc id:T-18-007 sha:564e9856 src:manual/18-rozdily-fleshu.md:19 klas:A -->
+<!-- fc id:T-18-007 sha:564e9856 src:manual/18-rozdily-fleshu.md:19 status:verbatim -->
 ### T-18-007 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -229,7 +229,7 @@
 
 ---
 
-<!-- fc id:T-18-008 sha:f3faaf6a src:manual/18-rozdily-fleshu.md:20 klas:D -->
+<!-- fc id:T-18-008 sha:f3faaf6a src:manual/18-rozdily-fleshu.md:20 status:arithmetic -->
 ### T-18-008 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -265,7 +265,7 @@
 
 ---
 
-<!-- fc id:T-18-009 sha:cc195a29 src:manual/18-rozdily-fleshu.md:23 klas:A -->
+<!-- fc id:T-18-009 sha:cc195a29 src:manual/18-rozdily-fleshu.md:23 status:verbatim -->
 ### T-18-009 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -292,7 +292,7 @@
 
 ---
 
-<!-- fc id:T-18-010 sha:f337b884 src:manual/18-rozdily-fleshu.md:25 klas:A -->
+<!-- fc id:T-18-010 sha:f337b884 src:manual/18-rozdily-fleshu.md:25 status:verbatim -->
 ### T-18-010 · tablycya-shapka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -325,7 +325,7 @@
 
 ---
 
-<!-- fc id:T-18-011 sha:606ac6dd src:manual/18-rozdily-fleshu.md:27 klas:A -->
+<!-- fc id:T-18-011 sha:606ac6dd src:manual/18-rozdily-fleshu.md:27 status:verbatim -->
 ### T-18-011 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -364,7 +364,7 @@
 
 ---
 
-<!-- fc id:T-18-012 sha:f47ce163 src:manual/18-rozdily-fleshu.md:27 klas:A -->
+<!-- fc id:T-18-012 sha:f47ce163 src:manual/18-rozdily-fleshu.md:27 status:verbatim -->
 ### T-18-012 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -403,7 +403,7 @@
 
 ---
 
-<!-- fc id:T-18-013 sha:15620348 src:manual/18-rozdily-fleshu.md:27 klas:A -->
+<!-- fc id:T-18-013 sha:15620348 src:manual/18-rozdily-fleshu.md:27 status:verbatim -->
 ### T-18-013 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -443,7 +443,7 @@
 
 ---
 
-<!-- fc id:T-18-014 sha:8f0dd715 src:manual/18-rozdily-fleshu.md:27 klas:A -->
+<!-- fc id:T-18-014 sha:8f0dd715 src:manual/18-rozdily-fleshu.md:27 status:verbatim -->
 ### T-18-014 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -499,7 +499,7 @@
 
 ---
 
-<!-- fc id:T-18-015 sha:5f9bc8f0 src:manual/18-rozdily-fleshu.md:28 klas:A -->
+<!-- fc id:T-18-015 sha:5f9bc8f0 src:manual/18-rozdily-fleshu.md:28 status:verbatim -->
 ### T-18-015 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -538,7 +538,7 @@
 
 ---
 
-<!-- fc id:T-18-016 sha:789c88b9 src:manual/18-rozdily-fleshu.md:28 klas:A -->
+<!-- fc id:T-18-016 sha:789c88b9 src:manual/18-rozdily-fleshu.md:28 status:verbatim -->
 ### T-18-016 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -577,7 +577,7 @@
 
 ---
 
-<!-- fc id:T-18-017 sha:fc7a2431 src:manual/18-rozdily-fleshu.md:28 klas:A -->
+<!-- fc id:T-18-017 sha:fc7a2431 src:manual/18-rozdily-fleshu.md:28 status:verbatim -->
 ### T-18-017 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -628,7 +628,7 @@
 
 ---
 
-<!-- fc id:T-18-018 sha:d76b708c src:manual/18-rozdily-fleshu.md:28 klas:A -->
+<!-- fc id:T-18-018 sha:d76b708c src:manual/18-rozdily-fleshu.md:28 status:verbatim -->
 ### T-18-018 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -684,7 +684,7 @@
 
 ---
 
-<!-- fc id:T-18-019 sha:94bcae2e src:manual/18-rozdily-fleshu.md:29 klas:A -->
+<!-- fc id:T-18-019 sha:94bcae2e src:manual/18-rozdily-fleshu.md:29 status:verbatim -->
 ### T-18-019 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -723,7 +723,7 @@
 
 ---
 
-<!-- fc id:T-18-020 sha:98e8369f src:manual/18-rozdily-fleshu.md:29 klas:A -->
+<!-- fc id:T-18-020 sha:98e8369f src:manual/18-rozdily-fleshu.md:29 status:verbatim -->
 ### T-18-020 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -762,7 +762,7 @@
 
 ---
 
-<!-- fc id:T-18-021 sha:9df43b5f src:manual/18-rozdily-fleshu.md:29 klas:A -->
+<!-- fc id:T-18-021 sha:9df43b5f src:manual/18-rozdily-fleshu.md:29 status:verbatim -->
 ### T-18-021 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -802,7 +802,7 @@
 
 ---
 
-<!-- fc id:T-18-022 sha:59fff70d src:manual/18-rozdily-fleshu.md:29 klas:A -->
+<!-- fc id:T-18-022 sha:59fff70d src:manual/18-rozdily-fleshu.md:29 status:verbatim -->
 ### T-18-022 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -853,7 +853,7 @@
 
 ---
 
-<!-- fc id:T-18-023 sha:0923797f src:manual/18-rozdily-fleshu.md:31 klas:E -->
+<!-- fc id:T-18-023 sha:0923797f src:manual/18-rozdily-fleshu.md:31 status:no-external-signal -->
 ### T-18-023 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -874,7 +874,7 @@
 
 ---
 
-<!-- fc id:T-18-024 sha:50b4dd7d src:manual/18-rozdily-fleshu.md:33 klas:A -->
+<!-- fc id:T-18-024 sha:50b4dd7d src:manual/18-rozdily-fleshu.md:33 status:verbatim -->
 ### T-18-024 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -903,7 +903,7 @@
 
 ---
 
-<!-- fc id:T-18-025 sha:6ad702cc src:manual/18-rozdily-fleshu.md:34 klas:A -->
+<!-- fc id:T-18-025 sha:6ad702cc src:manual/18-rozdily-fleshu.md:34 status:verbatim -->
 ### T-18-025 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -949,7 +949,7 @@
 
 ---
 
-<!-- fc id:T-18-026 sha:4eca33d4 src:manual/18-rozdily-fleshu.md:37 klas:A -->
+<!-- fc id:T-18-026 sha:4eca33d4 src:manual/18-rozdily-fleshu.md:37 status:verbatim -->
 ### T-18-026 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -978,7 +978,7 @@
 
 ---
 
-<!-- fc id:T-18-027 sha:20700e13 src:manual/18-rozdily-fleshu.md:38 klas:A -->
+<!-- fc id:T-18-027 sha:20700e13 src:manual/18-rozdily-fleshu.md:38 status:verbatim -->
 ### T-18-027 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1016,7 +1016,7 @@
 
 ---
 
-<!-- fc id:T-18-028 sha:ded12860 src:manual/18-rozdily-fleshu.md:41 klas:A -->
+<!-- fc id:T-18-028 sha:ded12860 src:manual/18-rozdily-fleshu.md:41 status:verbatim -->
 ### T-18-028 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1044,7 +1044,7 @@
 
 ---
 
-<!-- fc id:T-18-029 sha:76acd34b src:manual/18-rozdily-fleshu.md:41 klas:E -->
+<!-- fc id:T-18-029 sha:76acd34b src:manual/18-rozdily-fleshu.md:41 status:no-external-signal -->
 ### T-18-029 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1066,7 +1066,7 @@
 
 ---
 
-<!-- fc id:T-18-030 sha:b16e6cfe src:manual/18-rozdily-fleshu.md:46 klas:E -->
+<!-- fc id:T-18-030 sha:b16e6cfe src:manual/18-rozdily-fleshu.md:46 status:no-external-signal -->
 ### T-18-030 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1089,7 +1089,7 @@
 
 ---
 
-<!-- fc id:T-18-031 sha:f936f28f src:manual/18-rozdily-fleshu.md:47 klas:E -->
+<!-- fc id:T-18-031 sha:f936f28f src:manual/18-rozdily-fleshu.md:47 status:no-external-signal -->
 ### T-18-031 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1112,7 +1112,7 @@
 
 ---
 
-<!-- fc id:T-18-032 sha:12c0dae9 src:manual/18-rozdily-fleshu.md:50 klas:E -->
+<!-- fc id:T-18-032 sha:12c0dae9 src:manual/18-rozdily-fleshu.md:50 status:no-external-signal -->
 ### T-18-032 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1133,7 +1133,7 @@
 
 ---
 
-<!-- fc id:T-18-033 sha:2af2e0ef src:manual/18-rozdily-fleshu.md:52 klas:K -->
+<!-- fc id:T-18-033 sha:2af2e0ef src:manual/18-rozdily-fleshu.md:52 status:code-context -->
 ### T-18-033 · kod · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1166,7 +1166,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-18-034 sha:5793a2bb src:manual/18-rozdily-fleshu.md:53 klas:D -->
+<!-- fc id:T-18-034 sha:5793a2bb src:manual/18-rozdily-fleshu.md:53 status:arithmetic -->
 ### T-18-034 · kod-ryadok · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1203,7 +1203,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-18-035 sha:4438754b src:manual/18-rozdily-fleshu.md:54 klas:A -->
+<!-- fc id:T-18-035 sha:4438754b src:manual/18-rozdily-fleshu.md:54 status:verbatim -->
 ### T-18-035 · kod-ryadok · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1233,7 +1233,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-18-036 sha:9c3fadfd src:manual/18-rozdily-fleshu.md:57 klas:E -->
+<!-- fc id:T-18-036 sha:9c3fadfd src:manual/18-rozdily-fleshu.md:57 status:no-external-signal -->
 ### T-18-036 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1267,7 +1267,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-18-037 sha:170e004e src:manual/18-rozdily-fleshu.md:58 klas:E -->
+<!-- fc id:T-18-037 sha:170e004e src:manual/18-rozdily-fleshu.md:58 status:no-external-signal -->
 ### T-18-037 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1289,7 +1289,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-18-038 sha:efe25d4b src:manual/18-rozdily-fleshu.md:62 klas:A -->
+<!-- fc id:T-18-038 sha:efe25d4b src:manual/18-rozdily-fleshu.md:62 status:verbatim -->
 ### T-18-038 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1316,7 +1316,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-18-039 sha:8348b7b2 src:manual/18-rozdily-fleshu.md:64 klas:K -->
+<!-- fc id:T-18-039 sha:8348b7b2 src:manual/18-rozdily-fleshu.md:64 status:code-context -->
 ### T-18-039 · kod · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1367,7 +1367,7 @@ storage,  data, spiffs,  ,         1M,
 
 ---
 
-<!-- fc id:T-18-040 sha:40c8d5dd src:manual/18-rozdily-fleshu.md:72 klas:F -->
+<!-- fc id:T-18-040 sha:40c8d5dd src:manual/18-rozdily-fleshu.md:72 status:unchecked -->
 ### T-18-040 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1390,7 +1390,7 @@ storage,  data, spiffs,  ,         1M,
 
 ---
 
-<!-- fc id:T-18-041 sha:d9cb149f src:manual/18-rozdily-fleshu.md:76 klas:A -->
+<!-- fc id:T-18-041 sha:d9cb149f src:manual/18-rozdily-fleshu.md:76 status:verbatim -->
 ### T-18-041 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1434,7 +1434,7 @@ storage,  data, spiffs,  ,         1M,
 
 ---
 
-<!-- fc id:T-18-042 sha:d8851079 src:manual/18-rozdily-fleshu.md:79 klas:A -->
+<!-- fc id:T-18-042 sha:d8851079 src:manual/18-rozdily-fleshu.md:79 status:verbatim -->
 ### T-18-042 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1478,7 +1478,7 @@ storage,  data, spiffs,  ,         1M,
 
 ---
 
-<!-- fc id:T-18-043 sha:2cfd4562 src:manual/18-rozdily-fleshu.md:80 klas:A -->
+<!-- fc id:T-18-043 sha:2cfd4562 src:manual/18-rozdily-fleshu.md:80 status:verbatim -->
 ### T-18-043 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1522,7 +1522,7 @@ storage,  data, spiffs,  ,         1M,
 
 ---
 
-<!-- fc id:T-18-044 sha:14b13bf4 src:manual/18-rozdily-fleshu.md:81 klas:E -->
+<!-- fc id:T-18-044 sha:14b13bf4 src:manual/18-rozdily-fleshu.md:81 status:no-external-signal -->
 ### T-18-044 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1548,7 +1548,7 @@ storage,  data, spiffs,  ,         1M,
 
 ---
 
-<!-- fc id:T-18-045 sha:801f2aae src:manual/18-rozdily-fleshu.md:85 klas:A -->
+<!-- fc id:T-18-045 sha:801f2aae src:manual/18-rozdily-fleshu.md:85 status:verbatim -->
 ### T-18-045 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1594,7 +1594,7 @@ storage,  data, spiffs,  ,         1M,
 
 ---
 
-<!-- fc id:T-18-046 sha:16a9ef2e src:manual/18-rozdily-fleshu.md:86 klas:F -->
+<!-- fc id:T-18-046 sha:16a9ef2e src:manual/18-rozdily-fleshu.md:86 status:unchecked -->
 ### T-18-046 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1618,7 +1618,7 @@ storage,  data, spiffs,  ,         1M,
 
 ---
 
-<!-- fc id:T-18-047 sha:d288675c src:manual/18-rozdily-fleshu.md:87 klas:E -->
+<!-- fc id:T-18-047 sha:d288675c src:manual/18-rozdily-fleshu.md:87 status:no-external-signal -->
 ### T-18-047 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1654,7 +1654,7 @@ storage,  data, spiffs,  ,         1M,
 
 ---
 
-<!-- fc id:T-18-048 sha:25ea8296 src:manual/18-rozdily-fleshu.md:92 klas:A -->
+<!-- fc id:T-18-048 sha:25ea8296 src:manual/18-rozdily-fleshu.md:92 status:verbatim -->
 ### T-18-048 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1684,7 +1684,7 @@ NVS (Non-Volatile Storage) — сховище пар «ключ — значен
 
 ---
 
-<!-- fc id:T-18-049 sha:52530cd3 src:manual/18-rozdily-fleshu.md:93 klas:E -->
+<!-- fc id:T-18-049 sha:52530cd3 src:manual/18-rozdily-fleshu.md:93 status:no-external-signal -->
 ### T-18-049 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1708,7 +1708,7 @@ NVS (Non-Volatile Storage) — сховище пар «ключ — значен
 
 ---
 
-<!-- fc id:T-18-050 sha:4935de88 src:manual/18-rozdily-fleshu.md:97 klas:F -->
+<!-- fc id:T-18-050 sha:4935de88 src:manual/18-rozdily-fleshu.md:97 status:unchecked -->
 ### T-18-050 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1731,7 +1731,7 @@ NVS (Non-Volatile Storage) — сховище пар «ключ — значен
 
 ---
 
-<!-- fc id:T-18-051 sha:d7ea3d3a src:manual/18-rozdily-fleshu.md:98 klas:F -->
+<!-- fc id:T-18-051 sha:d7ea3d3a src:manual/18-rozdily-fleshu.md:98 status:unchecked -->
 ### T-18-051 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1754,7 +1754,7 @@ NVS (Non-Volatile Storage) — сховище пар «ключ — значен
 
 ---
 
-<!-- fc id:T-18-052 sha:77e191f6 src:manual/18-rozdily-fleshu.md:101 klas:A -->
+<!-- fc id:T-18-052 sha:77e191f6 src:manual/18-rozdily-fleshu.md:101 status:verbatim -->
 ### T-18-052 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1784,7 +1784,7 @@ NVS стійкий до зникнення живлення: запис влаш
 
 ---
 
-<!-- fc id:T-18-053 sha:9eef63be src:manual/18-rozdily-fleshu.md:102 klas:A -->
+<!-- fc id:T-18-053 sha:9eef63be src:manual/18-rozdily-fleshu.md:102 status:verbatim -->
 ### T-18-053 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1824,7 +1824,7 @@ NVS стійкий до зникнення живлення: запис влаш
 
 ---
 
-<!-- fc id:T-18-054 sha:7d517b9b src:manual/18-rozdily-fleshu.md:106 klas:F -->
+<!-- fc id:T-18-054 sha:7d517b9b src:manual/18-rozdily-fleshu.md:106 status:unchecked -->
 ### T-18-054 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1846,7 +1846,7 @@ NVS стійкий до зникнення живлення: запис влаш
 
 ---
 
-<!-- fc id:T-18-055 sha:4b78fd12 src:manual/18-rozdily-fleshu.md:106 klas:E -->
+<!-- fc id:T-18-055 sha:4b78fd12 src:manual/18-rozdily-fleshu.md:106 status:no-external-signal -->
 ### T-18-055 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1868,7 +1868,7 @@ NVS стійкий до зникнення живлення: запис влаш
 
 ---
 
-<!-- fc id:T-18-056 sha:bdb800c3 src:manual/18-rozdily-fleshu.md:109 klas:K -->
+<!-- fc id:T-18-056 sha:bdb800c3 src:manual/18-rozdily-fleshu.md:109 status:code-context -->
 ### T-18-056 · kod · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1921,7 +1921,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-057 sha:f3349b99 src:manual/18-rozdily-fleshu.md:113 klas:A -->
+<!-- fc id:T-18-057 sha:f3349b99 src:manual/18-rozdily-fleshu.md:113 status:verbatim -->
 ### T-18-057 · kod-ryadok · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1966,7 +1966,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-058 sha:601ab80f src:manual/18-rozdily-fleshu.md:116 klas:F -->
+<!-- fc id:T-18-058 sha:601ab80f src:manual/18-rozdily-fleshu.md:116 status:unchecked -->
 ### T-18-058 · kod-ryadok · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1995,7 +1995,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-059 sha:201bdc14 src:manual/18-rozdily-fleshu.md:120 klas:A -->
+<!-- fc id:T-18-059 sha:201bdc14 src:manual/18-rozdily-fleshu.md:120 status:verbatim -->
 ### T-18-059 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2038,7 +2038,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-060 sha:e101ea2e src:manual/18-rozdily-fleshu.md:120 klas:F -->
+<!-- fc id:T-18-060 sha:e101ea2e src:manual/18-rozdily-fleshu.md:120 status:unchecked -->
 ### T-18-060 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2065,7 +2065,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-061 sha:92317196 src:manual/18-rozdily-fleshu.md:122 klas:A -->
+<!-- fc id:T-18-061 sha:92317196 src:manual/18-rozdily-fleshu.md:122 status:verbatim -->
 ### T-18-061 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2098,7 +2098,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-062 sha:b3d9bf8d src:manual/18-rozdily-fleshu.md:129 klas:C -->
+<!-- fc id:T-18-062 sha:b3d9bf8d src:manual/18-rozdily-fleshu.md:129 status:named-unreachable -->
 ### T-18-062 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2125,7 +2125,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-063 sha:5b298442 src:manual/18-rozdily-fleshu.md:132 klas:F -->
+<!-- fc id:T-18-063 sha:5b298442 src:manual/18-rozdily-fleshu.md:132 status:unchecked -->
 ### T-18-063 · tablycya-shapka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2156,7 +2156,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-064 sha:e168a5c0 src:manual/18-rozdily-fleshu.md:134 klas:E -->
+<!-- fc id:T-18-064 sha:e168a5c0 src:manual/18-rozdily-fleshu.md:134 status:no-external-signal -->
 ### T-18-064 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2193,7 +2193,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-065 sha:34872fc8 src:manual/18-rozdily-fleshu.md:134 klas:F -->
+<!-- fc id:T-18-065 sha:34872fc8 src:manual/18-rozdily-fleshu.md:134 status:unchecked -->
 ### T-18-065 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2230,7 +2230,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-066 sha:136b11ff src:manual/18-rozdily-fleshu.md:134 klas:E -->
+<!-- fc id:T-18-066 sha:136b11ff src:manual/18-rozdily-fleshu.md:134 status:no-external-signal -->
 ### T-18-066 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2267,7 +2267,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-067 sha:e9f3c2f3 src:manual/18-rozdily-fleshu.md:135 klas:E -->
+<!-- fc id:T-18-067 sha:e9f3c2f3 src:manual/18-rozdily-fleshu.md:135 status:no-external-signal -->
 ### T-18-067 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2304,7 +2304,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-068 sha:bd591c14 src:manual/18-rozdily-fleshu.md:135 klas:F -->
+<!-- fc id:T-18-068 sha:bd591c14 src:manual/18-rozdily-fleshu.md:135 status:unchecked -->
 ### T-18-068 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2341,7 +2341,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-069 sha:27ed2cb4 src:manual/18-rozdily-fleshu.md:135 klas:E -->
+<!-- fc id:T-18-069 sha:27ed2cb4 src:manual/18-rozdily-fleshu.md:135 status:no-external-signal -->
 ### T-18-069 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2378,7 +2378,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-070 sha:7c5fc24e src:manual/18-rozdily-fleshu.md:136 klas:E -->
+<!-- fc id:T-18-070 sha:7c5fc24e src:manual/18-rozdily-fleshu.md:136 status:no-external-signal -->
 ### T-18-070 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2415,7 +2415,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-071 sha:8b7abf4b src:manual/18-rozdily-fleshu.md:136 klas:F -->
+<!-- fc id:T-18-071 sha:8b7abf4b src:manual/18-rozdily-fleshu.md:136 status:unchecked -->
 ### T-18-071 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2452,7 +2452,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-072 sha:6a505c3a src:manual/18-rozdily-fleshu.md:136 klas:A -->
+<!-- fc id:T-18-072 sha:6a505c3a src:manual/18-rozdily-fleshu.md:136 status:verbatim -->
 ### T-18-072 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2507,7 +2507,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-073 sha:7a364c66 src:manual/18-rozdily-fleshu.md:137 klas:E -->
+<!-- fc id:T-18-073 sha:7a364c66 src:manual/18-rozdily-fleshu.md:137 status:no-external-signal -->
 ### T-18-073 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2544,7 +2544,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-074 sha:34b80b5e src:manual/18-rozdily-fleshu.md:137 klas:A -->
+<!-- fc id:T-18-074 sha:34b80b5e src:manual/18-rozdily-fleshu.md:137 status:verbatim -->
 ### T-18-074 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2587,7 +2587,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-075 sha:3764ddb1 src:manual/18-rozdily-fleshu.md:137 klas:C -->
+<!-- fc id:T-18-075 sha:3764ddb1 src:manual/18-rozdily-fleshu.md:137 status:named-unreachable -->
 ### T-18-075 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2629,7 +2629,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-076 sha:c0ee355e src:manual/18-rozdily-fleshu.md:138 klas:E -->
+<!-- fc id:T-18-076 sha:c0ee355e src:manual/18-rozdily-fleshu.md:138 status:no-external-signal -->
 ### T-18-076 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2666,7 +2666,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-077 sha:2d821c96 src:manual/18-rozdily-fleshu.md:138 klas:F -->
+<!-- fc id:T-18-077 sha:2d821c96 src:manual/18-rozdily-fleshu.md:138 status:unchecked -->
 ### T-18-077 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2703,7 +2703,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-078 sha:97b8e259 src:manual/18-rozdily-fleshu.md:138 klas:E -->
+<!-- fc id:T-18-078 sha:97b8e259 src:manual/18-rozdily-fleshu.md:138 status:no-external-signal -->
 ### T-18-078 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2740,7 +2740,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-079 sha:ad08a567 src:manual/18-rozdily-fleshu.md:139 klas:F -->
+<!-- fc id:T-18-079 sha:ad08a567 src:manual/18-rozdily-fleshu.md:139 status:unchecked -->
 ### T-18-079 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2777,7 +2777,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-080 sha:0c51c182 src:manual/18-rozdily-fleshu.md:139 klas:A -->
+<!-- fc id:T-18-080 sha:0c51c182 src:manual/18-rozdily-fleshu.md:139 status:verbatim -->
 ### T-18-080 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2820,7 +2820,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-081 sha:d37a8a60 src:manual/18-rozdily-fleshu.md:139 klas:F -->
+<!-- fc id:T-18-081 sha:d37a8a60 src:manual/18-rozdily-fleshu.md:139 status:unchecked -->
 ### T-18-081 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2857,7 +2857,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-082 sha:b5482ecd src:manual/18-rozdily-fleshu.md:141 klas:F -->
+<!-- fc id:T-18-082 sha:b5482ecd src:manual/18-rozdily-fleshu.md:141 status:unchecked -->
 ### T-18-082 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2881,7 +2881,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-083 sha:c6ab43f6 src:manual/18-rozdily-fleshu.md:143 klas:E -->
+<!-- fc id:T-18-083 sha:c6ab43f6 src:manual/18-rozdily-fleshu.md:143 status:no-external-signal -->
 ### T-18-083 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2905,7 +2905,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-084 sha:009fe204 src:manual/18-rozdily-fleshu.md:147 klas:F -->
+<!-- fc id:T-18-084 sha:009fe204 src:manual/18-rozdily-fleshu.md:147 status:unchecked -->
 ### T-18-084 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2929,7 +2929,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-085 sha:784039ff src:manual/18-rozdily-fleshu.md:148 klas:F -->
+<!-- fc id:T-18-085 sha:784039ff src:manual/18-rozdily-fleshu.md:148 status:unchecked -->
 ### T-18-085 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2953,7 +2953,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-086 sha:8278d069 src:manual/18-rozdily-fleshu.md:151 klas:K -->
+<!-- fc id:T-18-086 sha:8278d069 src:manual/18-rozdily-fleshu.md:151 status:code-context -->
 ### T-18-086 · kod · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3000,7 +3000,7 @@ idf.py add-dependency "joltwallet/littlefs^1.22.3"
 
 ---
 
-<!-- fc id:T-18-087 sha:2568a317 src:manual/18-rozdily-fleshu.md:152 klas:A -->
+<!-- fc id:T-18-087 sha:2568a317 src:manual/18-rozdily-fleshu.md:152 status:verbatim -->
 ### T-18-087 · kod-ryadok · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3045,7 +3045,7 @@ idf.py add-dependency "joltwallet/littlefs^1.22.3"
 
 ---
 
-<!-- fc id:T-18-088 sha:706a6f2e src:manual/18-rozdily-fleshu.md:155 klas:A -->
+<!-- fc id:T-18-088 sha:706a6f2e src:manual/18-rozdily-fleshu.md:155 status:verbatim -->
 ### T-18-088 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3075,7 +3075,7 @@ idf.py add-dependency "joltwallet/littlefs^1.22.3"
 
 ---
 
-<!-- fc id:T-18-089 sha:bb45cfb1 src:manual/18-rozdily-fleshu.md:156 klas:E -->
+<!-- fc id:T-18-089 sha:bb45cfb1 src:manual/18-rozdily-fleshu.md:156 status:no-external-signal -->
 ### T-18-089 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3099,7 +3099,7 @@ idf.py add-dependency "joltwallet/littlefs^1.22.3"
 
 ---
 
-<!-- fc id:T-18-090 sha:62ee5911 src:manual/18-rozdily-fleshu.md:160 klas:E -->
+<!-- fc id:T-18-090 sha:62ee5911 src:manual/18-rozdily-fleshu.md:160 status:no-external-signal -->
 ### T-18-090 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3126,7 +3126,7 @@ microSD) читатиме звичайний комп'ютер. На вбудо�
 
 ---
 
-<!-- fc id:T-18-091 sha:2dd189cd src:manual/18-rozdily-fleshu.md:161 klas:A -->
+<!-- fc id:T-18-091 sha:2dd189cd src:manual/18-rozdily-fleshu.md:161 status:verbatim -->
 ### T-18-091 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3171,7 +3171,7 @@ microSD) читатиме звичайний комп'ютер. На вбудо�
 
 ---
 
-<!-- fc id:T-18-092 sha:3408b516 src:manual/18-rozdily-fleshu.md:164 klas:E -->
+<!-- fc id:T-18-092 sha:3408b516 src:manual/18-rozdily-fleshu.md:164 status:no-external-signal -->
 ### T-18-092 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3198,7 +3198,7 @@ microSD) читатиме звичайний комп'ютер. На вбудо�
 
 ---
 
-<!-- fc id:T-18-093 sha:fdd40a10 src:manual/18-rozdily-fleshu.md:165 klas:E -->
+<!-- fc id:T-18-093 sha:fdd40a10 src:manual/18-rozdily-fleshu.md:165 status:no-external-signal -->
 ### T-18-093 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3225,7 +3225,7 @@ microSD) читатиме звичайний комп'ютер. На вбудо�
 
 ---
 
-<!-- fc id:T-18-094 sha:38b96c9d src:manual/18-rozdily-fleshu.md:169 klas:A -->
+<!-- fc id:T-18-094 sha:38b96c9d src:manual/18-rozdily-fleshu.md:169 status:verbatim -->
 ### T-18-094 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3258,7 +3258,7 @@ microSD) читатиме звичайний комп'ютер. На вбудо�
 
 ---
 
-<!-- fc id:T-18-095 sha:0e9d20cb src:manual/18-rozdily-fleshu.md:171 klas:E -->
+<!-- fc id:T-18-095 sha:0e9d20cb src:manual/18-rozdily-fleshu.md:171 status:no-external-signal -->
 ### T-18-095 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3285,7 +3285,7 @@ microSD) читатиме звичайний комп'ютер. На вбудо�
 
 ---
 
-<!-- fc id:T-18-096 sha:b760318d src:manual/18-rozdily-fleshu.md:172 klas:E -->
+<!-- fc id:T-18-096 sha:b760318d src:manual/18-rozdily-fleshu.md:172 status:no-external-signal -->
 ### T-18-096 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3312,7 +3312,7 @@ microSD) читатиме звичайний комп'ютер. На вбудо�
 
 ---
 
-<!-- fc id:T-18-097 sha:f48a238f src:manual/18-rozdily-fleshu.md:178 klas:E -->
+<!-- fc id:T-18-097 sha:f48a238f src:manual/18-rozdily-fleshu.md:178 status:no-external-signal -->
 ### T-18-097 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3334,7 +3334,7 @@ microSD) читатиме звичайний комп'ютер. На вбудо�
 
 ---
 
-<!-- fc id:T-18-098 sha:231194c9 src:manual/18-rozdily-fleshu.md:178 klas:E -->
+<!-- fc id:T-18-098 sha:231194c9 src:manual/18-rozdily-fleshu.md:178 status:no-external-signal -->
 ### T-18-098 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3356,7 +3356,7 @@ microSD) читатиме звичайний комп'ютер. На вбудо�
 
 ---
 
-<!-- fc id:T-18-099 sha:7ab66916 src:manual/18-rozdily-fleshu.md:181 klas:K -->
+<!-- fc id:T-18-099 sha:7ab66916 src:manual/18-rozdily-fleshu.md:181 status:code-context -->
 ### T-18-099 · kod · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3381,7 +3381,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-100 sha:bc634816 src:manual/18-rozdily-fleshu.md:185 klas:E -->
+<!-- fc id:T-18-100 sha:bc634816 src:manual/18-rozdily-fleshu.md:185 status:no-external-signal -->
 ### T-18-100 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3402,7 +3402,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-101 sha:a7b51adc src:manual/18-rozdily-fleshu.md:187 klas:F -->
+<!-- fc id:T-18-101 sha:a7b51adc src:manual/18-rozdily-fleshu.md:187 status:unchecked -->
 ### T-18-101 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3428,7 +3428,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-102 sha:473a8f0b src:manual/18-rozdily-fleshu.md:189 klas:A -->
+<!-- fc id:T-18-102 sha:473a8f0b src:manual/18-rozdily-fleshu.md:189 status:verbatim -->
 ### T-18-102 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3476,7 +3476,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-103 sha:d95fc6fa src:manual/18-rozdily-fleshu.md:190 klas:A -->
+<!-- fc id:T-18-103 sha:d95fc6fa src:manual/18-rozdily-fleshu.md:190 status:verbatim -->
 ### T-18-103 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3508,7 +3508,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-104 sha:6364cfd3 src:manual/18-rozdily-fleshu.md:192 klas:E -->
+<!-- fc id:T-18-104 sha:6364cfd3 src:manual/18-rozdily-fleshu.md:192 status:no-external-signal -->
 ### T-18-104 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3546,7 +3546,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-105 sha:85fee83d src:manual/18-rozdily-fleshu.md:195 klas:A -->
+<!-- fc id:T-18-105 sha:85fee83d src:manual/18-rozdily-fleshu.md:195 status:verbatim -->
 ### T-18-105 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3577,7 +3577,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-106 sha:18b9a9fd src:manual/18-rozdily-fleshu.md:197 klas:A -->
+<!-- fc id:T-18-106 sha:18b9a9fd src:manual/18-rozdily-fleshu.md:197 status:verbatim -->
 ### T-18-106 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3608,7 +3608,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-107 sha:9eebc20f src:manual/18-rozdily-fleshu.md:200 klas:A -->
+<!-- fc id:T-18-107 sha:9eebc20f src:manual/18-rozdily-fleshu.md:200 status:verbatim -->
 ### T-18-107 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3639,7 +3639,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-108 sha:e6335668 src:manual/18-rozdily-fleshu.md:201 klas:A -->
+<!-- fc id:T-18-108 sha:e6335668 src:manual/18-rozdily-fleshu.md:201 status:verbatim -->
 ### T-18-108 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3670,7 +3670,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-109 sha:40d6c1dc src:manual/18-rozdily-fleshu.md:206 klas:A -->
+<!-- fc id:T-18-109 sha:40d6c1dc src:manual/18-rozdily-fleshu.md:206 status:verbatim -->
 ### T-18-109 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3700,7 +3700,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-110 sha:9b05e136 src:manual/18-rozdily-fleshu.md:208 klas:A -->
+<!-- fc id:T-18-110 sha:9b05e136 src:manual/18-rozdily-fleshu.md:208 status:verbatim -->
 ### T-18-110 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3739,7 +3739,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-111 sha:56304439 src:manual/18-rozdily-fleshu.md:213 klas:B -->
+<!-- fc id:T-18-111 sha:56304439 src:manual/18-rozdily-fleshu.md:213 status:derived -->
 ### T-18-111 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3766,7 +3766,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-112 sha:863a7fb3 src:manual/18-rozdily-fleshu.md:215 klas:D -->
+<!-- fc id:T-18-112 sha:863a7fb3 src:manual/18-rozdily-fleshu.md:215 status:arithmetic -->
 ### T-18-112 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3822,7 +3822,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-113 sha:32ebab82 src:manual/18-rozdily-fleshu.md:216 klas:L -->
+<!-- fc id:T-18-113 sha:32ebab82 src:manual/18-rozdily-fleshu.md:216 status:looked-not-found -->
 ### T-18-113 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3853,7 +3853,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-114 sha:52f12d51 src:manual/18-rozdily-fleshu.md:217 klas:D -->
+<!-- fc id:T-18-114 sha:52f12d51 src:manual/18-rozdily-fleshu.md:217 status:arithmetic -->
 ### T-18-114 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3909,7 +3909,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-115 sha:5b4060f0 src:manual/18-rozdily-fleshu.md:219 klas:E -->
+<!-- fc id:T-18-115 sha:5b4060f0 src:manual/18-rozdily-fleshu.md:219 status:no-external-signal -->
 ### T-18-115 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3935,7 +3935,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-116 sha:b8548325 src:manual/18-rozdily-fleshu.md:220 klas:E -->
+<!-- fc id:T-18-116 sha:b8548325 src:manual/18-rozdily-fleshu.md:220 status:no-external-signal -->
 ### T-18-116 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3961,7 +3961,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-117 sha:535138f3 src:manual/18-rozdily-fleshu.md:223 klas:B -->
+<!-- fc id:T-18-117 sha:535138f3 src:manual/18-rozdily-fleshu.md:223 status:derived -->
 ### T-18-117 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3995,7 +3995,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-118 sha:255c3b69 src:manual/18-rozdily-fleshu.md:224 klas:B -->
+<!-- fc id:T-18-118 sha:255c3b69 src:manual/18-rozdily-fleshu.md:224 status:derived -->
 ### T-18-118 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -4029,7 +4029,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-119 sha:e612ab0d src:manual/18-rozdily-fleshu.md:225 klas:E -->
+<!-- fc id:T-18-119 sha:e612ab0d src:manual/18-rozdily-fleshu.md:225 status:no-external-signal -->
 ### T-18-119 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -4060,7 +4060,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-120 sha:a369ddd0 src:manual/18-rozdily-fleshu.md:227 klas:E -->
+<!-- fc id:T-18-120 sha:a369ddd0 src:manual/18-rozdily-fleshu.md:227 status:no-external-signal -->
 ### T-18-120 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -4088,7 +4088,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-121 sha:11073fc5 src:manual/18-rozdily-fleshu.md:233 klas:A -->
+<!-- fc id:T-18-121 sha:11073fc5 src:manual/18-rozdily-fleshu.md:233 status:verbatim -->
 ### T-18-121 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -4133,7 +4133,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-122 sha:1a134448 src:manual/18-rozdily-fleshu.md:236 klas:F -->
+<!-- fc id:T-18-122 sha:1a134448 src:manual/18-rozdily-fleshu.md:236 status:unchecked -->
 ### T-18-122 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -4155,7 +4155,7 @@ NVS переживає оновлення прошивки, і саме тому
 
 ---
 
-<!-- fc id:T-18-123 sha:c0b50278 src:manual/18-rozdily-fleshu.md:237 klas:A -->
+<!-- fc id:T-18-123 sha:c0b50278 src:manual/18-rozdily-fleshu.md:237 status:verbatim -->
 ### T-18-123 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -4192,7 +4192,7 @@ NVS переживає оновлення прошивки, і саме тому
 
 ---
 
-<!-- fc id:T-18-124 sha:b3601380 src:manual/18-rozdily-fleshu.md:239 klas:F -->
+<!-- fc id:T-18-124 sha:b3601380 src:manual/18-rozdily-fleshu.md:239 status:unchecked -->
 ### T-18-124 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -4213,7 +4213,7 @@ LittleFS замість SPIFFS у будь-якому новому проєкт�
 
 ---
 
-<!-- fc id:T-18-125 sha:68676e42 src:manual/18-rozdily-fleshu.md:241 klas:F -->
+<!-- fc id:T-18-125 sha:68676e42 src:manual/18-rozdily-fleshu.md:241 status:unchecked -->
 ### T-18-125 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**

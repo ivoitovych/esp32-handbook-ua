@@ -20,7 +20,6 @@
 
 - nazva: 'T-12-005: насправді відбувається таке: ESP-IDF стартує звичайним чином, створює'
   zbih: насправді\s+відбувається\s+таке:\s+ESP\-IDF
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/main.cpp
   cytata: "xTaskCreateUniversal(loopTask, \"loopTask\",\n  getArduinoLoopTaskStackSize(),\
     \ NULL, 1,\n  &loopTaskHandle, ARDUINO_RUNNING_CORE);\n"
@@ -42,7 +41,6 @@
     for loop
 - nazva: 'T-12-059: | Прототип уже є, треба довести до виробу'
   zbih: \|\s+Прототип\s+уже\s+є,
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
   cytata: 'Arduino as an ESP-IDF component
 
@@ -68,7 +66,6 @@
   - c954bdec
 - nazva: 'T-12-064: Прототип на Arduino доводиться до виробу підключенням Arduino'
   zbih: Прототип\s+на\s+Arduino\s+доводиться\s+до\s+виробу\s+підключенням\s+Arduino\s+компонентом\s+ESP\-IDF,\s+а
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
   cytata: 'Arduino as an ESP-IDF component
 

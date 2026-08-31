@@ -1,6 +1,5 @@
 - nazva: Raspberry Pi 4 — Wi-Fi і Bluetooth на борту
   zbih: Радіо на борту · Raspberry Pi → так
-  klas: A
   dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
     2.2 «Interfaces» (кеш: source-cache/rpi4-datasheet.pdf)'
   cytata: "2.2    Interfaces\n      • 802.11 b/g/n/ac Wireless LAN\n      • Bluetooth 5.0 with BLE\n"
@@ -22,7 +21,6 @@
   - 441d4329
 - nazva: Raspberry Pi 4 — ядро на 1.5 ГГц, більше за 1 ГГц
   zbih: Частота · Raspberry Pi → понад 1 ГГц
-  klas: A
   dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
     2.1 «Hardware» (кеш: source-cache/rpi4-datasheet.pdf)'
   cytata: "2.1    Hardware\n      • Quad core 64-bit ARM-Cortex A72 running at 1.5GHz\n"
@@ -42,7 +40,6 @@
     «понад 1 ГГц», Pi 5 із більшим запасом.'
 - nazva: Raspberry Pi 4 — гігабайти LPDDR4 SDRAM
   zbih: RAM · Raspberry Pi → гігабайти
-  klas: A
   dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
     1 «Introduction» (кеш: source-cache/rpi4-datasheet.pdf)'
   cytata: 'The Pi4B is available with 1, 2, 4, or 8 gigabytes of LPDDR4 SDRAM.
@@ -66,7 +63,6 @@
   - 8ca74b4d
 - nazva: Raspberry Pi 4 — Linux, «Mature Linux software stack»
   zbih: ОС · Raspberry Pi → Linux
-  klas: A
   dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
     2.3 «Software» (кеш: source-cache/rpi4-datasheet.pdf)'
   cytata: "2.3    Software\n      • ARMv8 Instruction Set\n      • Mature Linux software stack\n     \
@@ -90,7 +86,6 @@
   - 4c88e4a1
 - nazva: Raspberry Pi — час завантаження поза межами обох документів
   zbih: Старт · Raspberry Pi → десятки секунд
-  klas: E
   dzherelo: —
   cytata: —
   sposib: 'PDF з кешу `rpi4-datasheet.pdf` і `rpi5-datasheet.pdf`, pdftotext -layout, 2026-08-26 — перевірено
@@ -116,7 +111,6 @@
   - 4b7ada41
 - nazva: Raspberry Pi — жодної згадки режиму сну там, де про живлення говорять детально
   zbih: Сон · Raspberry Pi → не передбачено
-  klas: B
   dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, розділ 4.1 «Power Requirements»;
     Raspberry Pi 5 Product Brief, розділ «Specification» (кеш: source-cache/rpi4-datasheet.pdf)'
   cytata: '4.1     Power Requirements
@@ -158,7 +152,6 @@
   - 3d704f3b
 - nazva: Raspberry Pi — «реальний час» поза тим, що документи оцінюють
   zbih: Реальний час · Raspberry Pi → погано
-  klas: E
   dzherelo: —
   cytata: —
   sposib: 'PDF з кешу `rpi4-datasheet.pdf` і `rpi5-datasheet.pdf`, pdftotext -layout, 2026-08-26 — перевірено
@@ -192,7 +185,6 @@
   - 3f88d5a2
 - nazva: Raspberry Pi 5 — офіційний прайс-лист, висока ціна проти мікроконтролерних плат
   zbih: Ціна плати · Raspberry Pi → висока
-  klas: A
   dzherelo: Raspberry Pi Ltd, Raspberry Pi 5 Product Brief (Published April 2026), розділ «Specification»
     → «List price»
   cytata: "List price:\n            1GB  $45\n            2GB  $65\n            4GB  $110\n          \
@@ -224,7 +216,6 @@
   - 7959a945
 - nazva: «Проти Raspberry Pi» — редакційна рамка, не технічне твердження
   zbih: \*\*Проти Raspberry Pi\.\*\* Це різні класи\.
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Немає зовнішнього джерела для перевірки — див. нотатку.
@@ -256,7 +247,6 @@
   - 4b3d1dce
 - nazva: «Найчастіша помилка вибору» — редакційна порада, не факт
   zbih: Найчастіша помилка вибору — узяти Raspberry Pi туди, де потрібен мікроконтролер\.
-  klas: E
   dzherelo: —
   cytata: —
   sposib: Немає зовнішнього джерела для перевірки — див. нотатку.

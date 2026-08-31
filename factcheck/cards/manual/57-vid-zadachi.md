@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/57-vid-zadachi.md`
 
-Одиниць твердження: **69**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **69**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-57-001 sha:c0ccca8b src:manual/57-vid-zadachi.md:3 klas:E -->
+<!-- fc id:T-57-001 sha:c0ccca8b src:manual/57-vid-zadachi.md:3 status:no-external-signal -->
 ### T-57-001 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-57-002 sha:0cc51754 src:manual/57-vid-zadachi.md:3 klas:E -->
+<!-- fc id:T-57-002 sha:0cc51754 src:manual/57-vid-zadachi.md:3 status:no-external-signal -->
 ### T-57-002 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-57-003 sha:0c742150 src:manual/57-vid-zadachi.md:7 klas:E -->
+<!-- fc id:T-57-003 sha:0c742150 src:manual/57-vid-zadachi.md:7 status:no-external-signal -->
 ### T-57-003 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -75,7 +75,7 @@
 
 ---
 
-<!-- fc id:T-57-004 sha:b375783a src:manual/57-vid-zadachi.md:11 klas:E -->
+<!-- fc id:T-57-004 sha:b375783a src:manual/57-vid-zadachi.md:11 status:no-external-signal -->
 ### T-57-004 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-57-005 sha:0efc8e92 src:manual/57-vid-zadachi.md:14 klas:E -->
+<!-- fc id:T-57-005 sha:0efc8e92 src:manual/57-vid-zadachi.md:14 status:no-external-signal -->
 ### T-57-005 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -119,7 +119,7 @@
 
 ---
 
-<!-- fc id:T-57-006 sha:cf0aad8b src:manual/57-vid-zadachi.md:17 klas:E -->
+<!-- fc id:T-57-006 sha:cf0aad8b src:manual/57-vid-zadachi.md:17 status:no-external-signal -->
 ### T-57-006 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -141,7 +141,7 @@
 
 ---
 
-<!-- fc id:T-57-007 sha:6eac4eb7 src:manual/57-vid-zadachi.md:20 klas:F -->
+<!-- fc id:T-57-007 sha:6eac4eb7 src:manual/57-vid-zadachi.md:20 status:unchecked -->
 ### T-57-007 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -163,7 +163,7 @@
 
 ---
 
-<!-- fc id:T-57-008 sha:ec4cd8b5 src:manual/57-vid-zadachi.md:23 klas:E -->
+<!-- fc id:T-57-008 sha:ec4cd8b5 src:manual/57-vid-zadachi.md:23 status:no-external-signal -->
 ### T-57-008 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -185,7 +185,7 @@
 
 ---
 
-<!-- fc id:T-57-009 sha:da338479 src:manual/57-vid-zadachi.md:23 klas:E -->
+<!-- fc id:T-57-009 sha:da338479 src:manual/57-vid-zadachi.md:23 status:no-external-signal -->
 ### T-57-009 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -207,7 +207,7 @@
 
 ---
 
-<!-- fc id:T-57-010 sha:f248e704 src:manual/57-vid-zadachi.md:26 klas:E -->
+<!-- fc id:T-57-010 sha:f248e704 src:manual/57-vid-zadachi.md:26 status:no-external-signal -->
 ### T-57-010 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -229,7 +229,7 @@
 
 ---
 
-<!-- fc id:T-57-011 sha:3492328d src:manual/57-vid-zadachi.md:29 klas:E -->
+<!-- fc id:T-57-011 sha:3492328d src:manual/57-vid-zadachi.md:29 status:no-external-signal -->
 ### T-57-011 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -251,7 +251,7 @@
 
 ---
 
-<!-- fc id:T-57-012 sha:84cf1991 src:manual/57-vid-zadachi.md:33 klas:E -->
+<!-- fc id:T-57-012 sha:84cf1991 src:manual/57-vid-zadachi.md:33 status:no-external-signal -->
 ### T-57-012 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -274,7 +274,7 @@
 
 ---
 
-<!-- fc id:T-57-013 sha:1c26e3aa src:manual/57-vid-zadachi.md:36 klas:B -->
+<!-- fc id:T-57-013 sha:1c26e3aa src:manual/57-vid-zadachi.md:36 status:derived -->
 ### T-57-013 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -306,7 +306,7 @@
 
 ---
 
-<!-- fc id:T-57-014 sha:40f95206 src:manual/57-vid-zadachi.md:37 klas:E -->
+<!-- fc id:T-57-014 sha:40f95206 src:manual/57-vid-zadachi.md:37 status:no-external-signal -->
 ### T-57-014 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -345,7 +345,7 @@
 
 ---
 
-<!-- fc id:T-57-015 sha:c6d6e395 src:manual/57-vid-zadachi.md:45 klas:E -->
+<!-- fc id:T-57-015 sha:c6d6e395 src:manual/57-vid-zadachi.md:45 status:no-external-signal -->
 ### T-57-015 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -366,7 +366,7 @@
 
 ---
 
-<!-- fc id:T-57-016 sha:ad44a030 src:manual/57-vid-zadachi.md:47 klas:E -->
+<!-- fc id:T-57-016 sha:ad44a030 src:manual/57-vid-zadachi.md:47 status:no-external-signal -->
 ### T-57-016 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -396,7 +396,7 @@
 
 ---
 
-<!-- fc id:T-57-017 sha:51e37d48 src:manual/57-vid-zadachi.md:49 klas:E -->
+<!-- fc id:T-57-017 sha:51e37d48 src:manual/57-vid-zadachi.md:49 status:no-external-signal -->
 ### T-57-017 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -426,7 +426,7 @@
 
 ---
 
-<!-- fc id:T-57-018 sha:6a31a68c src:manual/57-vid-zadachi.md:50 klas:B -->
+<!-- fc id:T-57-018 sha:6a31a68c src:manual/57-vid-zadachi.md:50 status:derived -->
 ### T-57-018 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -464,7 +464,7 @@
 
 ---
 
-<!-- fc id:T-57-019 sha:52190fcf src:manual/57-vid-zadachi.md:51 klas:F -->
+<!-- fc id:T-57-019 sha:52190fcf src:manual/57-vid-zadachi.md:51 status:unchecked -->
 ### T-57-019 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -494,7 +494,7 @@
 
 ---
 
-<!-- fc id:T-57-020 sha:debb8d34 src:manual/57-vid-zadachi.md:52 klas:F -->
+<!-- fc id:T-57-020 sha:debb8d34 src:manual/57-vid-zadachi.md:52 status:unchecked -->
 ### T-57-020 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -524,7 +524,7 @@
 
 ---
 
-<!-- fc id:T-57-021 sha:17e88944 src:manual/57-vid-zadachi.md:53 klas:C -->
+<!-- fc id:T-57-021 sha:17e88944 src:manual/57-vid-zadachi.md:53 status:named-unreachable -->
 ### T-57-021 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -558,7 +558,7 @@
 
 ---
 
-<!-- fc id:T-57-022 sha:9b26fcff src:manual/57-vid-zadachi.md:54 klas:F -->
+<!-- fc id:T-57-022 sha:9b26fcff src:manual/57-vid-zadachi.md:54 status:unchecked -->
 ### T-57-022 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -588,7 +588,7 @@
 
 ---
 
-<!-- fc id:T-57-023 sha:0cb4f6c4 src:manual/57-vid-zadachi.md:56 klas:E -->
+<!-- fc id:T-57-023 sha:0cb4f6c4 src:manual/57-vid-zadachi.md:56 status:no-external-signal -->
 ### T-57-023 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -611,7 +611,7 @@
 
 ---
 
-<!-- fc id:T-57-024 sha:14244677 src:manual/57-vid-zadachi.md:57 klas:E -->
+<!-- fc id:T-57-024 sha:14244677 src:manual/57-vid-zadachi.md:57 status:no-external-signal -->
 ### T-57-024 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -634,7 +634,7 @@
 
 ---
 
-<!-- fc id:T-57-025 sha:023d1247 src:manual/57-vid-zadachi.md:62 klas:E -->
+<!-- fc id:T-57-025 sha:023d1247 src:manual/57-vid-zadachi.md:62 status:no-external-signal -->
 ### T-57-025 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -656,7 +656,7 @@
 
 ---
 
-<!-- fc id:T-57-026 sha:e1174740 src:manual/57-vid-zadachi.md:62 klas:E -->
+<!-- fc id:T-57-026 sha:e1174740 src:manual/57-vid-zadachi.md:62 status:no-external-signal -->
 ### T-57-026 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -678,7 +678,7 @@
 
 ---
 
-<!-- fc id:T-57-027 sha:6a5a79c8 src:manual/57-vid-zadachi.md:67 klas:F -->
+<!-- fc id:T-57-027 sha:6a5a79c8 src:manual/57-vid-zadachi.md:67 status:unchecked -->
 ### T-57-027 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -703,7 +703,7 @@
 
 ---
 
-<!-- fc id:T-57-028 sha:1dfdafe6 src:manual/57-vid-zadachi.md:73 klas:E -->
+<!-- fc id:T-57-028 sha:1dfdafe6 src:manual/57-vid-zadachi.md:73 status:no-external-signal -->
 ### T-57-028 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -724,7 +724,7 @@
 
 ---
 
-<!-- fc id:T-57-029 sha:8715ad5d src:manual/57-vid-zadachi.md:77 klas:E -->
+<!-- fc id:T-57-029 sha:8715ad5d src:manual/57-vid-zadachi.md:77 status:no-external-signal -->
 ### T-57-029 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -746,7 +746,7 @@
 
 ---
 
-<!-- fc id:T-57-030 sha:3039ee2e src:manual/57-vid-zadachi.md:80 klas:E -->
+<!-- fc id:T-57-030 sha:3039ee2e src:manual/57-vid-zadachi.md:80 status:no-external-signal -->
 ### T-57-030 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -769,7 +769,7 @@
 
 ---
 
-<!-- fc id:T-57-031 sha:1cf87a85 src:manual/57-vid-zadachi.md:81 klas:F -->
+<!-- fc id:T-57-031 sha:1cf87a85 src:manual/57-vid-zadachi.md:81 status:unchecked -->
 ### T-57-031 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -792,7 +792,7 @@
 
 ---
 
-<!-- fc id:T-57-032 sha:e17fd027 src:manual/57-vid-zadachi.md:84 klas:F -->
+<!-- fc id:T-57-032 sha:e17fd027 src:manual/57-vid-zadachi.md:84 status:unchecked -->
 ### T-57-032 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -813,7 +813,7 @@
 
 ---
 
-<!-- fc id:T-57-033 sha:3ac14073 src:manual/57-vid-zadachi.md:86 klas:E -->
+<!-- fc id:T-57-033 sha:3ac14073 src:manual/57-vid-zadachi.md:86 status:no-external-signal -->
 ### T-57-033 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -834,7 +834,7 @@
 
 ---
 
-<!-- fc id:T-57-034 sha:6276db66 src:manual/57-vid-zadachi.md:88 klas:F -->
+<!-- fc id:T-57-034 sha:6276db66 src:manual/57-vid-zadachi.md:88 status:unchecked -->
 ### T-57-034 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -862,7 +862,7 @@
 
 ---
 
-<!-- fc id:T-57-035 sha:36783cb5 src:manual/57-vid-zadachi.md:97 klas:E -->
+<!-- fc id:T-57-035 sha:36783cb5 src:manual/57-vid-zadachi.md:97 status:no-external-signal -->
 ### T-57-035 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -883,7 +883,7 @@
 
 ---
 
-<!-- fc id:T-57-036 sha:c8a90c7b src:manual/57-vid-zadachi.md:99 klas:F -->
+<!-- fc id:T-57-036 sha:c8a90c7b src:manual/57-vid-zadachi.md:99 status:unchecked -->
 ### T-57-036 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -911,7 +911,7 @@
 
 ---
 
-<!-- fc id:T-57-037 sha:9c11394c src:manual/57-vid-zadachi.md:101 klas:E -->
+<!-- fc id:T-57-037 sha:9c11394c src:manual/57-vid-zadachi.md:101 status:no-external-signal -->
 ### T-57-037 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -939,7 +939,7 @@
 
 ---
 
-<!-- fc id:T-57-038 sha:3efa93c4 src:manual/57-vid-zadachi.md:102 klas:E -->
+<!-- fc id:T-57-038 sha:3efa93c4 src:manual/57-vid-zadachi.md:102 status:no-external-signal -->
 ### T-57-038 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -967,7 +967,7 @@
 
 ---
 
-<!-- fc id:T-57-039 sha:702d8f5f src:manual/57-vid-zadachi.md:103 klas:F -->
+<!-- fc id:T-57-039 sha:702d8f5f src:manual/57-vid-zadachi.md:103 status:unchecked -->
 ### T-57-039 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -995,7 +995,7 @@
 
 ---
 
-<!-- fc id:T-57-040 sha:7ef24b77 src:manual/57-vid-zadachi.md:104 klas:E -->
+<!-- fc id:T-57-040 sha:7ef24b77 src:manual/57-vid-zadachi.md:104 status:no-external-signal -->
 ### T-57-040 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1023,7 +1023,7 @@
 
 ---
 
-<!-- fc id:T-57-041 sha:2217dad0 src:manual/57-vid-zadachi.md:107 klas:F -->
+<!-- fc id:T-57-041 sha:2217dad0 src:manual/57-vid-zadachi.md:107 status:unchecked -->
 ### T-57-041 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1049,7 +1049,7 @@
 
 ---
 
-<!-- fc id:T-57-042 sha:80f3e2cf src:manual/57-vid-zadachi.md:108 klas:E -->
+<!-- fc id:T-57-042 sha:80f3e2cf src:manual/57-vid-zadachi.md:108 status:no-external-signal -->
 ### T-57-042 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1075,7 +1075,7 @@
 
 ---
 
-<!-- fc id:T-57-043 sha:bcc853fd src:manual/57-vid-zadachi.md:113 klas:F -->
+<!-- fc id:T-57-043 sha:bcc853fd src:manual/57-vid-zadachi.md:113 status:unchecked -->
 ### T-57-043 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1097,7 +1097,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-044 sha:df5bc233 src:manual/57-vid-zadachi.md:113 klas:E -->
+<!-- fc id:T-57-044 sha:df5bc233 src:manual/57-vid-zadachi.md:113 status:no-external-signal -->
 ### T-57-044 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1119,7 +1119,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-045 sha:2ec637f9 src:manual/57-vid-zadachi.md:118 klas:E -->
+<!-- fc id:T-57-045 sha:2ec637f9 src:manual/57-vid-zadachi.md:118 status:no-external-signal -->
 ### T-57-045 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1140,7 +1140,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-046 sha:d3145827 src:manual/57-vid-zadachi.md:120 klas:E -->
+<!-- fc id:T-57-046 sha:d3145827 src:manual/57-vid-zadachi.md:120 status:no-external-signal -->
 ### T-57-046 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1162,7 +1162,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-047 sha:8977dd81 src:manual/57-vid-zadachi.md:123 klas:E -->
+<!-- fc id:T-57-047 sha:8977dd81 src:manual/57-vid-zadachi.md:123 status:no-external-signal -->
 ### T-57-047 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1184,7 +1184,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-048 sha:883c5f1f src:manual/57-vid-zadachi.md:126 klas:F -->
+<!-- fc id:T-57-048 sha:883c5f1f src:manual/57-vid-zadachi.md:126 status:unchecked -->
 ### T-57-048 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1206,7 +1206,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-049 sha:b99f689f src:manual/57-vid-zadachi.md:129 klas:E -->
+<!-- fc id:T-57-049 sha:b99f689f src:manual/57-vid-zadachi.md:129 status:no-external-signal -->
 ### T-57-049 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1228,7 +1228,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-050 sha:9f3caa95 src:manual/57-vid-zadachi.md:129 klas:E -->
+<!-- fc id:T-57-050 sha:9f3caa95 src:manual/57-vid-zadachi.md:129 status:no-external-signal -->
 ### T-57-050 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1250,7 +1250,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-051 sha:757b514f src:manual/57-vid-zadachi.md:134 klas:E -->
+<!-- fc id:T-57-051 sha:757b514f src:manual/57-vid-zadachi.md:134 status:no-external-signal -->
 ### T-57-051 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1272,7 +1272,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-052 sha:30d73cbc src:manual/57-vid-zadachi.md:137 klas:F -->
+<!-- fc id:T-57-052 sha:30d73cbc src:manual/57-vid-zadachi.md:137 status:unchecked -->
 ### T-57-052 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1301,7 +1301,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-053 sha:4f502c27 src:manual/57-vid-zadachi.md:148 klas:E -->
+<!-- fc id:T-57-053 sha:4f502c27 src:manual/57-vid-zadachi.md:148 status:no-external-signal -->
 ### T-57-053 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1324,7 +1324,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-054 sha:97122e62 src:manual/57-vid-zadachi.md:148 klas:E -->
+<!-- fc id:T-57-054 sha:97122e62 src:manual/57-vid-zadachi.md:148 status:no-external-signal -->
 ### T-57-054 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1347,7 +1347,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-055 sha:ddbc5444 src:manual/57-vid-zadachi.md:151 klas:E -->
+<!-- fc id:T-57-055 sha:ddbc5444 src:manual/57-vid-zadachi.md:151 status:no-external-signal -->
 ### T-57-055 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1370,7 +1370,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-056 sha:9e3f339f src:manual/57-vid-zadachi.md:155 klas:E -->
+<!-- fc id:T-57-056 sha:9e3f339f src:manual/57-vid-zadachi.md:155 status:no-external-signal -->
 ### T-57-056 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1393,7 +1393,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-057 sha:459c579a src:manual/57-vid-zadachi.md:161 klas:F -->
+<!-- fc id:T-57-057 sha:459c579a src:manual/57-vid-zadachi.md:161 status:unchecked -->
 ### T-57-057 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1415,7 +1415,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-058 sha:67db80a0 src:manual/57-vid-zadachi.md:161 klas:E -->
+<!-- fc id:T-57-058 sha:67db80a0 src:manual/57-vid-zadachi.md:161 status:no-external-signal -->
 ### T-57-058 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1437,7 +1437,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-059 sha:37eaa244 src:manual/57-vid-zadachi.md:164 klas:E -->
+<!-- fc id:T-57-059 sha:37eaa244 src:manual/57-vid-zadachi.md:164 status:no-external-signal -->
 ### T-57-059 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1458,7 +1458,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-060 sha:11d4e6db src:manual/57-vid-zadachi.md:166 klas:E -->
+<!-- fc id:T-57-060 sha:11d4e6db src:manual/57-vid-zadachi.md:166 status:no-external-signal -->
 ### T-57-060 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1479,7 +1479,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-061 sha:75f5c6ac src:manual/57-vid-zadachi.md:168 klas:E -->
+<!-- fc id:T-57-061 sha:75f5c6ac src:manual/57-vid-zadachi.md:168 status:no-external-signal -->
 ### T-57-061 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1501,7 +1501,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-062 sha:02e6a656 src:manual/57-vid-zadachi.md:171 klas:E -->
+<!-- fc id:T-57-062 sha:02e6a656 src:manual/57-vid-zadachi.md:171 status:no-external-signal -->
 ### T-57-062 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1522,7 +1522,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-063 sha:95c14bfb src:manual/57-vid-zadachi.md:173 klas:E -->
+<!-- fc id:T-57-063 sha:95c14bfb src:manual/57-vid-zadachi.md:173 status:no-external-signal -->
 ### T-57-063 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1543,7 +1543,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-064 sha:13680e83 src:manual/57-vid-zadachi.md:177 klas:E -->
+<!-- fc id:T-57-064 sha:13680e83 src:manual/57-vid-zadachi.md:177 status:no-external-signal -->
 ### T-57-064 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1564,7 +1564,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-065 sha:de6e347c src:manual/57-vid-zadachi.md:179 klas:E -->
+<!-- fc id:T-57-065 sha:de6e347c src:manual/57-vid-zadachi.md:179 status:no-external-signal -->
 ### T-57-065 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1586,7 +1586,7 @@ ESP32 може **запросити** зупинку. Виконати її ма
 
 ---
 
-<!-- fc id:T-57-066 sha:db736e3b src:manual/57-vid-zadachi.md:182 klas:F -->
+<!-- fc id:T-57-066 sha:db736e3b src:manual/57-vid-zadachi.md:182 status:unchecked -->
 ### T-57-066 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1607,7 +1607,7 @@ ESP32 як companion-контролер — рішення за замовчув
 
 ---
 
-<!-- fc id:T-57-067 sha:2037eee4 src:manual/57-vid-zadachi.md:184 klas:E -->
+<!-- fc id:T-57-067 sha:2037eee4 src:manual/57-vid-zadachi.md:184 status:no-external-signal -->
 ### T-57-067 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1628,7 +1628,7 @@ ESP32 як companion-контролер — рішення за замовчув
 
 ---
 
-<!-- fc id:T-57-068 sha:60f54059 src:manual/57-vid-zadachi.md:186 klas:E -->
+<!-- fc id:T-57-068 sha:60f54059 src:manual/57-vid-zadachi.md:186 status:no-external-signal -->
 ### T-57-068 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1649,7 +1649,7 @@ ESP32 як companion-контролер — рішення за замовчув
 
 ---
 
-<!-- fc id:T-57-069 sha:c70a4d01 src:manual/57-vid-zadachi.md:188 klas:F -->
+<!-- fc id:T-57-069 sha:c70a4d01 src:manual/57-vid-zadachi.md:188 status:unchecked -->
 ### T-57-069 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**

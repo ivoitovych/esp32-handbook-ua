@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/49-kamera.md`
 
-Одиниць твердження: **67**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **67**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-49-001 sha:78d01c1d src:manual/49-kamera.md:3 klas:E -->
+<!-- fc id:T-49-001 sha:78d01c1d src:manual/49-kamera.md:3 status:no-external-signal -->
 ### T-49-001 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-49-002 sha:1021e6d2 src:manual/49-kamera.md:8 klas:E -->
+<!-- fc id:T-49-002 sha:1021e6d2 src:manual/49-kamera.md:8 status:no-external-signal -->
 ### T-49-002 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -51,7 +51,7 @@
 
 ---
 
-<!-- fc id:T-49-003 sha:c9d3b328 src:manual/49-kamera.md:10 klas:E -->
+<!-- fc id:T-49-003 sha:c9d3b328 src:manual/49-kamera.md:10 status:no-external-signal -->
 ### T-49-003 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -85,7 +85,7 @@
 
 ---
 
-<!-- fc id:T-49-004 sha:a064a22d src:manual/49-kamera.md:10 klas:E -->
+<!-- fc id:T-49-004 sha:a064a22d src:manual/49-kamera.md:10 status:no-external-signal -->
 ### T-49-004 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -107,7 +107,7 @@
 
 ---
 
-<!-- fc id:T-49-005 sha:2040970b src:manual/49-kamera.md:13 klas:F -->
+<!-- fc id:T-49-005 sha:2040970b src:manual/49-kamera.md:13 status:unchecked -->
 ### T-49-005 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -129,7 +129,7 @@
 
 ---
 
-<!-- fc id:T-49-006 sha:dcf09f58 src:manual/49-kamera.md:14 klas:E -->
+<!-- fc id:T-49-006 sha:dcf09f58 src:manual/49-kamera.md:14 status:no-external-signal -->
 ### T-49-006 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -151,7 +151,7 @@
 
 ---
 
-<!-- fc id:T-49-007 sha:6394ed75 src:manual/49-kamera.md:16 klas:F -->
+<!-- fc id:T-49-007 sha:6394ed75 src:manual/49-kamera.md:16 status:unchecked -->
 ### T-49-007 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -173,7 +173,7 @@
 
 ---
 
-<!-- fc id:T-49-008 sha:384fa742 src:manual/49-kamera.md:17 klas:F -->
+<!-- fc id:T-49-008 sha:384fa742 src:manual/49-kamera.md:17 status:unchecked -->
 ### T-49-008 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -195,7 +195,7 @@
 
 ---
 
-<!-- fc id:T-49-009 sha:4a712293 src:manual/49-kamera.md:20 klas:E -->
+<!-- fc id:T-49-009 sha:4a712293 src:manual/49-kamera.md:20 status:no-external-signal -->
 ### T-49-009 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -219,7 +219,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-010 sha:ead26b03 src:manual/49-kamera.md:21 klas:F -->
+<!-- fc id:T-49-010 sha:ead26b03 src:manual/49-kamera.md:21 status:unchecked -->
 ### T-49-010 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -243,7 +243,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-011 sha:fd5472a8 src:manual/49-kamera.md:24 klas:E -->
+<!-- fc id:T-49-011 sha:fd5472a8 src:manual/49-kamera.md:24 status:no-external-signal -->
 ### T-49-011 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -265,7 +265,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-012 sha:788ab343 src:manual/49-kamera.md:30 klas:E -->
+<!-- fc id:T-49-012 sha:788ab343 src:manual/49-kamera.md:30 status:no-external-signal -->
 ### T-49-012 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -289,7 +289,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-013 sha:9c1de252 src:manual/49-kamera.md:34 klas:E -->
+<!-- fc id:T-49-013 sha:9c1de252 src:manual/49-kamera.md:34 status:no-external-signal -->
 ### T-49-013 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -312,7 +312,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-014 sha:b2490efc src:manual/49-kamera.md:40 klas:E -->
+<!-- fc id:T-49-014 sha:b2490efc src:manual/49-kamera.md:40 status:no-external-signal -->
 ### T-49-014 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -334,7 +334,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-015 sha:1cbde83c src:manual/49-kamera.md:43 klas:E -->
+<!-- fc id:T-49-015 sha:1cbde83c src:manual/49-kamera.md:43 status:no-external-signal -->
 ### T-49-015 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -355,7 +355,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-016 sha:0ba2d1d6 src:manual/49-kamera.md:45 klas:E -->
+<!-- fc id:T-49-016 sha:0ba2d1d6 src:manual/49-kamera.md:45 status:no-external-signal -->
 ### T-49-016 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -378,7 +378,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-017 sha:7f0fdcec src:manual/49-kamera.md:49 klas:F -->
+<!-- fc id:T-49-017 sha:7f0fdcec src:manual/49-kamera.md:49 status:unchecked -->
 ### T-49-017 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -399,7 +399,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-018 sha:fadeae51 src:manual/49-kamera.md:51 klas:E -->
+<!-- fc id:T-49-018 sha:fadeae51 src:manual/49-kamera.md:51 status:no-external-signal -->
 ### T-49-018 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -421,7 +421,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-019 sha:8b76cec4 src:manual/49-kamera.md:56 klas:E -->
+<!-- fc id:T-49-019 sha:8b76cec4 src:manual/49-kamera.md:56 status:no-external-signal -->
 ### T-49-019 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -443,7 +443,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-020 sha:bd7bf229 src:manual/49-kamera.md:57 klas:F -->
+<!-- fc id:T-49-020 sha:bd7bf229 src:manual/49-kamera.md:57 status:unchecked -->
 ### T-49-020 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -465,7 +465,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-021 sha:83f45eb3 src:manual/49-kamera.md:59 klas:E -->
+<!-- fc id:T-49-021 sha:83f45eb3 src:manual/49-kamera.md:59 status:no-external-signal -->
 ### T-49-021 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -489,7 +489,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-022 sha:b7b1718e src:manual/49-kamera.md:60 klas:E -->
+<!-- fc id:T-49-022 sha:b7b1718e src:manual/49-kamera.md:60 status:no-external-signal -->
 ### T-49-022 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -513,7 +513,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-023 sha:313897c2 src:manual/49-kamera.md:66 klas:E -->
+<!-- fc id:T-49-023 sha:313897c2 src:manual/49-kamera.md:66 status:no-external-signal -->
 ### T-49-023 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -535,7 +535,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-024 sha:fbde08a2 src:manual/49-kamera.md:71 klas:F -->
+<!-- fc id:T-49-024 sha:fbde08a2 src:manual/49-kamera.md:71 status:unchecked -->
 ### T-49-024 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -560,7 +560,7 @@ brownout саме в момент запису (розділ 06).
 
 ---
 
-<!-- fc id:T-49-025 sha:edb8b91a src:manual/49-kamera.md:78 klas:F -->
+<!-- fc id:T-49-025 sha:edb8b91a src:manual/49-kamera.md:78 status:unchecked -->
 ### T-49-025 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -584,7 +584,7 @@ ESP32-CAM дуже чутлива до живлення. Класичний си
 
 ---
 
-<!-- fc id:T-49-026 sha:d191e35a src:manual/49-kamera.md:78 klas:A -->
+<!-- fc id:T-49-026 sha:d191e35a src:manual/49-kamera.md:78 status:verbatim -->
 ### T-49-026 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -614,7 +614,7 @@ ESP32-CAM дуже чутлива до живлення. Класичний си
 
 ---
 
-<!-- fc id:T-49-027 sha:a5fb91e6 src:manual/49-kamera.md:82 klas:F -->
+<!-- fc id:T-49-027 sha:a5fb91e6 src:manual/49-kamera.md:82 status:unchecked -->
 ### T-49-027 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -638,7 +638,7 @@ ESP32-CAM дуже чутлива до живлення. Класичний си
 
 ---
 
-<!-- fc id:T-49-028 sha:ab2947c2 src:manual/49-kamera.md:83 klas:F -->
+<!-- fc id:T-49-028 sha:ab2947c2 src:manual/49-kamera.md:83 status:unchecked -->
 ### T-49-028 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -662,7 +662,7 @@ ESP32-CAM дуже чутлива до живлення. Класичний си
 
 ---
 
-<!-- fc id:T-49-029 sha:12f80d45 src:manual/49-kamera.md:87 klas:F -->
+<!-- fc id:T-49-029 sha:12f80d45 src:manual/49-kamera.md:87 status:unchecked -->
 ### T-49-029 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -684,7 +684,7 @@ ESP32-CAM дуже чутлива до живлення. Класичний си
 
 ---
 
-<!-- fc id:T-49-030 sha:6db4ff4b src:manual/49-kamera.md:87 klas:E -->
+<!-- fc id:T-49-030 sha:6db4ff4b src:manual/49-kamera.md:87 status:no-external-signal -->
 ### T-49-030 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -706,7 +706,7 @@ ESP32-CAM дуже чутлива до живлення. Класичний си
 
 ---
 
-<!-- fc id:T-49-031 sha:12e348b2 src:manual/49-kamera.md:90 klas:F -->
+<!-- fc id:T-49-031 sha:12e348b2 src:manual/49-kamera.md:90 status:unchecked -->
 ### T-49-031 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -728,7 +728,7 @@ JPEG-кадрів через HTTP. Браузер показує це без п�
 
 ---
 
-<!-- fc id:T-49-032 sha:40a31c62 src:manual/49-kamera.md:91 klas:E -->
+<!-- fc id:T-49-032 sha:40a31c62 src:manual/49-kamera.md:91 status:no-external-signal -->
 ### T-49-032 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -750,7 +750,7 @@ JPEG-кадрів через HTTP. Браузер показує це без п�
 
 ---
 
-<!-- fc id:T-49-033 sha:1f5a05ab src:manual/49-kamera.md:93 klas:E -->
+<!-- fc id:T-49-033 sha:1f5a05ab src:manual/49-kamera.md:93 status:no-external-signal -->
 ### T-49-033 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -773,7 +773,7 @@ JPEG-кадрів через HTTP. Браузер показує це без п�
 
 ---
 
-<!-- fc id:T-49-034 sha:81717704 src:manual/49-kamera.md:93 klas:F -->
+<!-- fc id:T-49-034 sha:81717704 src:manual/49-kamera.md:93 status:unchecked -->
 ### T-49-034 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -796,7 +796,7 @@ JPEG-кадрів через HTTP. Браузер показує це без п�
 
 ---
 
-<!-- fc id:T-49-035 sha:6e03de5c src:manual/49-kamera.md:97 klas:F -->
+<!-- fc id:T-49-035 sha:6e03de5c src:manual/49-kamera.md:97 status:unchecked -->
 ### T-49-035 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -818,7 +818,7 @@ JPEG-кадрів через HTTP. Браузер показує це без п�
 
 ---
 
-<!-- fc id:T-49-036 sha:de2c09df src:manual/49-kamera.md:100 klas:F -->
+<!-- fc id:T-49-036 sha:de2c09df src:manual/49-kamera.md:100 status:unchecked -->
 ### T-49-036 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -841,7 +841,7 @@ JPEG-кадрів через HTTP. Браузер показує це без п�
 
 ---
 
-<!-- fc id:T-49-037 sha:b88844b8 src:manual/49-kamera.md:101 klas:F -->
+<!-- fc id:T-49-037 sha:b88844b8 src:manual/49-kamera.md:101 status:unchecked -->
 ### T-49-037 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -864,7 +864,7 @@ JPEG-кадрів через HTTP. Браузер показує це без п�
 
 ---
 
-<!-- fc id:T-49-038 sha:6bc466c5 src:manual/49-kamera.md:105 klas:F -->
+<!-- fc id:T-49-038 sha:6bc466c5 src:manual/49-kamera.md:105 status:unchecked -->
 ### T-49-038 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -889,7 +889,7 @@ JPEG-кадрів через HTTP. Браузер показує це без п�
 
 ---
 
-<!-- fc id:T-49-039 sha:f647a6c4 src:manual/49-kamera.md:107 klas:E -->
+<!-- fc id:T-49-039 sha:f647a6c4 src:manual/49-kamera.md:107 status:no-external-signal -->
 ### T-49-039 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -914,7 +914,7 @@ JPEG-кадрів через HTTP. Браузер показує це без п�
 
 ---
 
-<!-- fc id:T-49-040 sha:3c56cf61 src:manual/49-kamera.md:110 klas:F -->
+<!-- fc id:T-49-040 sha:3c56cf61 src:manual/49-kamera.md:110 status:unchecked -->
 ### T-49-040 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -937,7 +937,7 @@ JPEG-кадрів через HTTP. Браузер показує це без п�
 
 ---
 
-<!-- fc id:T-49-041 sha:a96974e8 src:manual/49-kamera.md:111 klas:E -->
+<!-- fc id:T-49-041 sha:a96974e8 src:manual/49-kamera.md:111 status:no-external-signal -->
 ### T-49-041 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -960,7 +960,7 @@ JPEG-кадрів через HTTP. Браузер показує це без п�
 
 ---
 
-<!-- fc id:T-49-042 sha:bd31d104 src:manual/49-kamera.md:116 klas:F -->
+<!-- fc id:T-49-042 sha:bd31d104 src:manual/49-kamera.md:116 status:unchecked -->
 ### T-49-042 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -982,7 +982,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-043 sha:7b68f1e2 src:manual/49-kamera.md:116 klas:E -->
+<!-- fc id:T-49-043 sha:7b68f1e2 src:manual/49-kamera.md:116 status:no-external-signal -->
 ### T-49-043 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1004,7 +1004,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-044 sha:1ca27c7f src:manual/49-kamera.md:119 klas:F -->
+<!-- fc id:T-49-044 sha:1ca27c7f src:manual/49-kamera.md:119 status:unchecked -->
 ### T-49-044 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1027,7 +1027,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-045 sha:ad006ce0 src:manual/49-kamera.md:119 klas:E -->
+<!-- fc id:T-49-045 sha:ad006ce0 src:manual/49-kamera.md:119 status:no-external-signal -->
 ### T-49-045 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1050,7 +1050,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-046 sha:88551b49 src:manual/49-kamera.md:120 klas:E -->
+<!-- fc id:T-49-046 sha:88551b49 src:manual/49-kamera.md:120 status:no-external-signal -->
 ### T-49-046 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1073,7 +1073,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-047 sha:124463ff src:manual/49-kamera.md:123 klas:F -->
+<!-- fc id:T-49-047 sha:124463ff src:manual/49-kamera.md:123 status:unchecked -->
 ### T-49-047 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1095,7 +1095,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-048 sha:209362da src:manual/49-kamera.md:123 klas:E -->
+<!-- fc id:T-49-048 sha:209362da src:manual/49-kamera.md:123 status:no-external-signal -->
 ### T-49-048 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1117,7 +1117,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-049 sha:296993a8 src:manual/49-kamera.md:127 klas:E -->
+<!-- fc id:T-49-049 sha:296993a8 src:manual/49-kamera.md:127 status:no-external-signal -->
 ### T-49-049 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1142,7 +1142,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-050 sha:919da52b src:manual/49-kamera.md:128 klas:E -->
+<!-- fc id:T-49-050 sha:919da52b src:manual/49-kamera.md:128 status:no-external-signal -->
 ### T-49-050 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1167,7 +1167,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-051 sha:0c9eabc6 src:manual/49-kamera.md:132 klas:F -->
+<!-- fc id:T-49-051 sha:0c9eabc6 src:manual/49-kamera.md:132 status:unchecked -->
 ### T-49-051 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1190,7 +1190,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-052 sha:5bd93738 src:manual/49-kamera.md:136 klas:F -->
+<!-- fc id:T-49-052 sha:5bd93738 src:manual/49-kamera.md:136 status:unchecked -->
 ### T-49-052 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1213,7 +1213,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-053 sha:e3b8d39a src:manual/49-kamera.md:140 klas:F -->
+<!-- fc id:T-49-053 sha:e3b8d39a src:manual/49-kamera.md:140 status:unchecked -->
 ### T-49-053 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1236,7 +1236,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-054 sha:a5b0ea97 src:manual/49-kamera.md:141 klas:E -->
+<!-- fc id:T-49-054 sha:a5b0ea97 src:manual/49-kamera.md:141 status:no-external-signal -->
 ### T-49-054 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1259,7 +1259,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-055 sha:6b96dea9 src:manual/49-kamera.md:146 klas:E -->
+<!-- fc id:T-49-055 sha:6b96dea9 src:manual/49-kamera.md:146 status:no-external-signal -->
 ### T-49-055 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1280,7 +1280,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-056 sha:f50fdaf3 src:manual/49-kamera.md:148 klas:E -->
+<!-- fc id:T-49-056 sha:f50fdaf3 src:manual/49-kamera.md:148 status:no-external-signal -->
 ### T-49-056 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1303,7 +1303,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-057 sha:53443cd2 src:manual/49-kamera.md:152 klas:F -->
+<!-- fc id:T-49-057 sha:53443cd2 src:manual/49-kamera.md:152 status:unchecked -->
 ### T-49-057 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1326,7 +1326,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-058 sha:21fdf02c src:manual/49-kamera.md:153 klas:A -->
+<!-- fc id:T-49-058 sha:21fdf02c src:manual/49-kamera.md:153 status:verbatim -->
 ### T-49-058 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1361,7 +1361,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-059 sha:a741b382 src:manual/49-kamera.md:156 klas:F -->
+<!-- fc id:T-49-059 sha:a741b382 src:manual/49-kamera.md:156 status:unchecked -->
 ### T-49-059 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1384,7 +1384,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-060 sha:ab7ead0f src:manual/49-kamera.md:157 klas:A -->
+<!-- fc id:T-49-060 sha:ab7ead0f src:manual/49-kamera.md:157 status:verbatim -->
 ### T-49-060 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1423,7 +1423,7 @@ I²S — цифровий інтерфейс звуку (розділ 04). Тр�
 
 ---
 
-<!-- fc id:T-49-061 sha:09be3bc2 src:manual/49-kamera.md:162 klas:E -->
+<!-- fc id:T-49-061 sha:09be3bc2 src:manual/49-kamera.md:162 status:no-external-signal -->
 ### T-49-061 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1445,7 +1445,7 @@ FAT на картці не переживає зникнення живленн�
 
 ---
 
-<!-- fc id:T-49-062 sha:8143bed5 src:manual/49-kamera.md:165 klas:E -->
+<!-- fc id:T-49-062 sha:8143bed5 src:manual/49-kamera.md:165 status:no-external-signal -->
 ### T-49-062 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1466,7 +1466,7 @@ FAT на картці не переживає зникнення живленн�
 
 ---
 
-<!-- fc id:T-49-063 sha:9c72a8d5 src:manual/49-kamera.md:167 klas:A -->
+<!-- fc id:T-49-063 sha:9c72a8d5 src:manual/49-kamera.md:167 status:verbatim -->
 ### T-49-063 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1496,7 +1496,7 @@ ESP32-CAM потребує окремого живлення 5 В; `Camera probe
 
 ---
 
-<!-- fc id:T-49-064 sha:13a79f5c src:manual/49-kamera.md:170 klas:F -->
+<!-- fc id:T-49-064 sha:13a79f5c src:manual/49-kamera.md:170 status:unchecked -->
 ### T-49-064 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1517,7 +1517,7 @@ ESP32-CAM потребує окремого живлення 5 В; `Camera probe
 
 ---
 
-<!-- fc id:T-49-065 sha:c554de64 src:manual/49-kamera.md:172 klas:F -->
+<!-- fc id:T-49-065 sha:c554de64 src:manual/49-kamera.md:172 status:unchecked -->
 ### T-49-065 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1538,7 +1538,7 @@ ESP32-CAM — для знімків за подією, а не для цілод
 
 ---
 
-<!-- fc id:T-49-066 sha:55456e53 src:manual/49-kamera.md:174 klas:F -->
+<!-- fc id:T-49-066 sha:55456e53 src:manual/49-kamera.md:174 status:unchecked -->
 ### T-49-066 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**
@@ -1559,7 +1559,7 @@ ESP32-CAM — для знімків за подією, а не для цілод
 
 ---
 
-<!-- fc id:T-49-067 sha:50ae9786 src:manual/49-kamera.md:176 klas:F -->
+<!-- fc id:T-49-067 sha:50ae9786 src:manual/49-kamera.md:176 status:unchecked -->
 ### T-49-067 · proza · `manual/49-kamera.md`
 
 **Твердження, коротко**

@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k03-pidkl.md`
 
-Одиниць твердження: **29**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **29**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-K03-001 sha:2d0f5a79 src:kartky/k03-pidkl.md:3 klas:E -->
+<!-- fc id:T-K03-001 sha:2d0f5a79 src:kartky/k03-pidkl.md:3 status:no-external-signal -->
 ### T-K03-001 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-K03-002 sha:83b4b42c src:kartky/k03-pidkl.md:8 klas:E -->
+<!-- fc id:T-K03-002 sha:83b4b42c src:kartky/k03-pidkl.md:8 status:no-external-signal -->
 ### T-K03-002 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-K03-003 sha:77681536 src:kartky/k03-pidkl.md:11 klas:E -->
+<!-- fc id:T-K03-003 sha:77681536 src:kartky/k03-pidkl.md:11 status:no-external-signal -->
 ### T-K03-003 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -74,7 +74,7 @@
 
 ---
 
-<!-- fc id:T-K03-004 sha:896f61c4 src:kartky/k03-pidkl.md:12 klas:E -->
+<!-- fc id:T-K03-004 sha:896f61c4 src:kartky/k03-pidkl.md:12 status:no-external-signal -->
 ### T-K03-004 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -96,7 +96,7 @@
 
 ---
 
-<!-- fc id:T-K03-005 sha:77c7b26a src:kartky/k03-pidkl.md:16 klas:E -->
+<!-- fc id:T-K03-005 sha:77c7b26a src:kartky/k03-pidkl.md:16 status:no-external-signal -->
 ### T-K03-005 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -119,7 +119,7 @@
 
 ---
 
-<!-- fc id:T-K03-006 sha:c12094c4 src:kartky/k03-pidkl.md:16 klas:E -->
+<!-- fc id:T-K03-006 sha:c12094c4 src:kartky/k03-pidkl.md:16 status:no-external-signal -->
 ### T-K03-006 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -142,7 +142,7 @@
 
 ---
 
-<!-- fc id:T-K03-007 sha:bb3527b6 src:kartky/k03-pidkl.md:17 klas:F -->
+<!-- fc id:T-K03-007 sha:bb3527b6 src:kartky/k03-pidkl.md:17 status:unchecked -->
 ### T-K03-007 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -165,7 +165,7 @@
 
 ---
 
-<!-- fc id:T-K03-008 sha:938b247e src:kartky/k03-pidkl.md:22 klas:E -->
+<!-- fc id:T-K03-008 sha:938b247e src:kartky/k03-pidkl.md:22 status:no-external-signal -->
 ### T-K03-008 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -186,7 +186,7 @@
 
 ---
 
-<!-- fc id:T-K03-009 sha:b1c0759b src:kartky/k03-pidkl.md:24 klas:F -->
+<!-- fc id:T-K03-009 sha:b1c0759b src:kartky/k03-pidkl.md:24 status:unchecked -->
 ### T-K03-009 · tablycya-shapka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-K03-010 sha:5a7df3f2 src:kartky/k03-pidkl.md:26 klas:A -->
+<!-- fc id:T-K03-010 sha:5a7df3f2 src:kartky/k03-pidkl.md:26 status:verbatim -->
 ### T-K03-010 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -254,7 +254,7 @@
 
 ---
 
-<!-- fc id:T-K03-011 sha:ffd5aad8 src:kartky/k03-pidkl.md:26 klas:A -->
+<!-- fc id:T-K03-011 sha:ffd5aad8 src:kartky/k03-pidkl.md:26 status:verbatim -->
 ### T-K03-011 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -295,7 +295,7 @@
 
 ---
 
-<!-- fc id:T-K03-012 sha:f9af5909 src:kartky/k03-pidkl.md:27 klas:A -->
+<!-- fc id:T-K03-012 sha:f9af5909 src:kartky/k03-pidkl.md:27 status:verbatim -->
 ### T-K03-012 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -339,7 +339,7 @@
 
 ---
 
-<!-- fc id:T-K03-013 sha:11309fcc src:kartky/k03-pidkl.md:27 klas:A -->
+<!-- fc id:T-K03-013 sha:11309fcc src:kartky/k03-pidkl.md:27 status:verbatim -->
 ### T-K03-013 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -380,7 +380,7 @@
 
 ---
 
-<!-- fc id:T-K03-014 sha:78a66c0c src:kartky/k03-pidkl.md:28 klas:A -->
+<!-- fc id:T-K03-014 sha:78a66c0c src:kartky/k03-pidkl.md:28 status:verbatim -->
 ### T-K03-014 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -427,7 +427,7 @@
 
 ---
 
-<!-- fc id:T-K03-015 sha:14b8c42e src:kartky/k03-pidkl.md:28 klas:C -->
+<!-- fc id:T-K03-015 sha:14b8c42e src:kartky/k03-pidkl.md:28 status:named-unreachable -->
 ### T-K03-015 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -465,7 +465,7 @@
 
 ---
 
-<!-- fc id:T-K03-016 sha:fd830d21 src:kartky/k03-pidkl.md:29 klas:C -->
+<!-- fc id:T-K03-016 sha:fd830d21 src:kartky/k03-pidkl.md:29 status:named-unreachable -->
 ### T-K03-016 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -504,7 +504,7 @@
 
 ---
 
-<!-- fc id:T-K03-017 sha:848e213b src:kartky/k03-pidkl.md:29 klas:B -->
+<!-- fc id:T-K03-017 sha:848e213b src:kartky/k03-pidkl.md:29 status:derived -->
 ### T-K03-017 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -544,7 +544,7 @@
 
 ---
 
-<!-- fc id:T-K03-018 sha:254dbbd9 src:kartky/k03-pidkl.md:31 klas:A -->
+<!-- fc id:T-K03-018 sha:254dbbd9 src:kartky/k03-pidkl.md:31 status:verbatim -->
 ### T-K03-018 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -573,7 +573,7 @@ Windows: `Диспетчер пристроїв` → жовтий знак ок�
 
 ---
 
-<!-- fc id:T-K03-019 sha:9014d1b4 src:kartky/k03-pidkl.md:32 klas:F -->
+<!-- fc id:T-K03-019 sha:9014d1b4 src:kartky/k03-pidkl.md:32 status:unchecked -->
 ### T-K03-019 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -596,7 +596,7 @@ Windows: `Диспетчер пристроїв` → жовтий знак ок�
 
 ---
 
-<!-- fc id:T-K03-020 sha:c5be6367 src:kartky/k03-pidkl.md:37 klas:A -->
+<!-- fc id:T-K03-020 sha:c5be6367 src:kartky/k03-pidkl.md:37 status:verbatim -->
 ### T-K03-020 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -624,7 +624,7 @@ Windows: `Диспетчер пристроїв` → жовтий знак ок�
 
 ---
 
-<!-- fc id:T-K03-021 sha:b4bb361c src:kartky/k03-pidkl.md:40 klas:K -->
+<!-- fc id:T-K03-021 sha:b4bb361c src:kartky/k03-pidkl.md:40 status:code-context -->
 ### T-K03-021 · kod · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -649,7 +649,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-K03-022 sha:227ed426 src:kartky/k03-pidkl.md:41 klas:F -->
+<!-- fc id:T-K03-022 sha:227ed426 src:kartky/k03-pidkl.md:41 status:unchecked -->
 ### T-K03-022 · kod-ryadok · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -672,7 +672,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-K03-023 sha:5eb954e4 src:kartky/k03-pidkl.md:44 klas:E -->
+<!-- fc id:T-K03-023 sha:5eb954e4 src:kartky/k03-pidkl.md:44 status:no-external-signal -->
 ### T-K03-023 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -694,7 +694,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-K03-024 sha:b25b1a1b src:kartky/k03-pidkl.md:44 klas:E -->
+<!-- fc id:T-K03-024 sha:b25b1a1b src:kartky/k03-pidkl.md:44 status:no-external-signal -->
 ### T-K03-024 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -716,7 +716,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-K03-025 sha:ca54e413 src:kartky/k03-pidkl.md:48 klas:F -->
+<!-- fc id:T-K03-025 sha:ca54e413 src:kartky/k03-pidkl.md:48 status:unchecked -->
 ### T-K03-025 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -741,7 +741,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-K03-026 sha:fcf18876 src:kartky/k03-pidkl.md:48 klas:E -->
+<!-- fc id:T-K03-026 sha:fcf18876 src:kartky/k03-pidkl.md:48 status:no-external-signal -->
 ### T-K03-026 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -766,7 +766,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-K03-027 sha:dacd95cb src:kartky/k03-pidkl.md:55 klas:A -->
+<!-- fc id:T-K03-027 sha:dacd95cb src:kartky/k03-pidkl.md:55 status:verbatim -->
 ### T-K03-027 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -794,7 +794,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-K03-028 sha:6908eac2 src:kartky/k03-pidkl.md:56 klas:E -->
+<!-- fc id:T-K03-028 sha:6908eac2 src:kartky/k03-pidkl.md:56 status:no-external-signal -->
 ### T-K03-028 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -816,7 +816,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-K03-029 sha:dc22a6aa src:kartky/k03-pidkl.md:56 klas:E -->
+<!-- fc id:T-K03-029 sha:dc22a6aa src:kartky/k03-pidkl.md:56 status:no-external-signal -->
 ### T-K03-029 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**

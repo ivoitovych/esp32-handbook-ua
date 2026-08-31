@@ -57,7 +57,6 @@
 
 - nazva: '0x1: Що сталося → подано живлення або EN'
   zbih: '`0x1`.*Що сталося.*подано живлення'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
 
@@ -82,7 +81,6 @@
   - d090e5b8
 - nazva: '0x1: Що робити → норма'
   zbih: '`0x1`.*Що робити.*норма'
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
 
@@ -104,7 +102,6 @@
   - 7431c283
 - nazva: '0x3: Назва → SW_RESET'
   zbih: '`0x3`.*Назва.*SW_RESET'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'SW_RESET               =  3,    /**<3, Software reset digital core*/
 
@@ -124,7 +121,6 @@
   - 1baef394
 - nazva: '0x3: Що робити → норма, якщо ваша'
   zbih: '`0x3`.*Що робити.*норма, якщо'
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'SW_RESET               =  3,    /**<3, Software reset digital core*/
 
@@ -148,7 +144,6 @@
   - 03a89bab
 - nazva: '0x4: Назва → OWDT_RESET'
   zbih: '`0x4`.*Назва.*OWDT_RESET'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
 
@@ -170,7 +165,6 @@
   - 7add9e17
 - nazva: '0x4: Що сталося → застарілий watchdog'
   zbih: '`0x4`.*Що сталося.*застарілий'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
 
@@ -190,7 +184,6 @@
     цей сенс.
 - nazva: '0x4: Що робити → рідко'
   zbih: '`0x4`.*Що робити.*рідко'
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
 
@@ -212,7 +205,6 @@
   - b04df11d
 - nazva: '0x5: Назва → DEEPSLEEP_RESET'
   zbih: '`0x5`.*Назва.*DEEPSLEEP_RESET'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
 
@@ -232,7 +224,6 @@
   - 60cc5d87
 - nazva: '0x5: Що сталося → прокинувся з deep sleep'
   zbih: '`0x5`.*Що сталося.*прокинувся'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
 
@@ -255,7 +246,6 @@
   - d01aac01
 - nazva: '0x5: Що робити → норма'
   zbih: '`0x5`.*Що робити.*норма'
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
 
@@ -275,7 +265,6 @@
   - 0f8056b3
 - nazva: '0x6: Назва → SDIO_RESET'
   zbih: '`0x6`.*Назва.*SDIO_RESET'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
 
@@ -295,7 +284,6 @@
   - 6624efb1
 - nazva: '0x6: Що сталося → скидання модулем SLC'
   zbih: '`0x6`.*Що сталося.*SLC'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
 
@@ -317,7 +305,6 @@
   - 8a61920f
 - nazva: '0x6: Що робити → рідко'
   zbih: '`0x6`.*Що робити.*рідко'
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
 
@@ -339,7 +326,6 @@
   - 31ae5bdb
 - nazva: '0x7: Що сталося → watchdog таймера 0'
   zbih: '`0x7`.*Що сталося.*таймера 0'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
 
@@ -359,7 +345,6 @@
     як «watchdog таймера 0», що дослівно відповідає enum''у.'
 - nazva: '0x8: Назва → TG1WDT_SYS_RESET'
   zbih: '`0x8`.*Назва.*TG1WDT_SYS_RESET'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
 
@@ -379,7 +364,6 @@
   - a4c80ac9
 - nazva: '0x8: Що сталося → watchdog таймера 1'
   zbih: '`0x8`.*Що сталося.*таймера 1'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
 
@@ -399,7 +383,6 @@
     1», дослівно.'
 - nazva: '0x9: Назва → RTCWDT_SYS_RESET'
   zbih: '`0x9`.*Назва.*RTCWDT_SYS_RESET'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
 
@@ -419,7 +402,6 @@
   - 61c76aaf
 - nazva: '0x9: Що сталося → RTC watchdog'
   zbih: '`0x9`.*Що сталося.*RTC'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
 
@@ -437,7 +419,6 @@
   note: 'Коментар: «RTC Watch dog Reset». Книга дослівно передає це як «RTC watchdog».'
 - nazva: '0xa: Назва → INTRUSION_RESET'
   zbih: '`0xa`.*Назва.*INTRUSION_RESET'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: 'INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
 

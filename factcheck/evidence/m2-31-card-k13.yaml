@@ -1,6 +1,5 @@
 - nazva: Вхідна напруга на роз'ємі від USB — норма 5 В ±5 %
   zbih: 5 В ±5 % \(від USB\)
-  klas: C
   dzherelo: USB 2.0 Specification, розділ 7.2.1 — межі VBUS на порту (4.75–5.25 В)
   cytata: 'USB 2.0 Specification: повна напруга USB розчеплюючи з чипа живлення має бути 5.0 V ± 5%.
 
@@ -36,7 +35,6 @@
   look_for: 'usb.org: USB 2.0 Specification, VBUS tolerance'
 - nazva: 3.3 В на холостому ході — норма 3.2–3.4 В
   zbih: 3\.2–3\.4 В
-  klas: B
   dzherelo: ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics» (мін. 3.0
     В для чипів із флешем), плюс допуск LDO-стабілізатора (~±0.1–0.2 В)
   cytata: 'Table 5-2. Recommended Power Supply Characteristics
@@ -94,7 +92,6 @@
   - 7476d17b
 - nazva: Конденсатор 470 мкФ між 3V3 і GND поруч із модулем
   zbih: Конденсатор 470 мкФ.*між.*3V3.*і.*GND
-  klas: E
   dzherelo: Практика проектування, модулі ESP32-WROOM-32 документація, поради в спільноті Espressif. Не
     знайдено у даташирі ESP32 як вимога, але згадується як рекомендація у додатках до модулів та в практичних
     прикладах схем.
@@ -156,7 +153,6 @@
     є, але воно номінал у пораді, а не величина з паспорта.'
 - nazva: Керамічний 100 нФ біля кожної мікросхеми
   zbih: Керамічний.*100 нФ.*біля.*кожної
-  klas: E
   dzherelo: Практика проектування електроніки. ESP32 Series Datasheet згадує зовнішні конденсатори, але
     не дає конкретного номіналу для біля-чипових конденсаторів.
   cytata: 'ESP32 Series Datasheet, Pin Descriptions (наприклад, для CAP1 та CAP2):
@@ -216,7 +212,6 @@
     з паспорта.'
 - nazva: Окреме джерело від 1 А — не 500 мА, тому що платити треба за піки
   zbih: Окреме джерело від 1 А.*[Нн]е 500 мА
-  klas: B
   dzherelo: ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics» (IVDD мін.
     0.5 А), Table 5-4 «Current Consumption Depending on RF Modes» (передача 240 мА максимум під 50% duty
     cycle)
@@ -278,7 +273,6 @@
   - 0aafbadb
 - nazva: Живлення 3.3 В напряму, мимо бортовий LDO — коли він слабкий на клоне
   zbih: Живлення 3\.3 В напряму.*мин[а|ує]ючи.*бортовий
-  klas: E
   dzherelo: Практика розробки. На деяких клонах плат розробки LDO-регулятор занадто слабкий або з великим
     падінням напруги. Прямої рекомендації у datasheet немає, але у розділі 2.5.2 згадується можливість
     користування зовнішнім живленням.
@@ -338,7 +332,6 @@
   - 66f6e6e3
 - nazva: Джерело для ESP32 з Wi-Fi — щонайменше 1 А, навіть якщо середнє споживання сто міліампер
   zbih: Джерело для ESP32 з Wi-Fi.*щонайменше 1 А
-  klas: B
   dzherelo: ESP32 Series Datasheet v5.3, Table 5-2 (IVDD 0.5 А рекомендована) і Table 5-4 «Current Consumption
     Depending on RF Modes» (пік 240 мА)
   cytata: 'Table 5-2. Recommended Power Supply Characteristics

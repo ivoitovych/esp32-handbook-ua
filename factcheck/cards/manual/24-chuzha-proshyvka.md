@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/24-chuzha-proshyvka.md`
 
-Одиниць твердження: **76**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **76**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-24-001 sha:41c802f0 src:manual/24-chuzha-proshyvka.md:3 klas:E -->
+<!-- fc id:T-24-001 sha:41c802f0 src:manual/24-chuzha-proshyvka.md:3 status:no-external-signal -->
 ### T-24-001 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-24-002 sha:dbe9a0d4 src:manual/24-chuzha-proshyvka.md:3 klas:E -->
+<!-- fc id:T-24-002 sha:dbe9a0d4 src:manual/24-chuzha-proshyvka.md:3 status:no-external-signal -->
 ### T-24-002 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-24-003 sha:96a8dac2 src:manual/24-chuzha-proshyvka.md:6 klas:E -->
+<!-- fc id:T-24-003 sha:96a8dac2 src:manual/24-chuzha-proshyvka.md:6 status:no-external-signal -->
 ### T-24-003 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -75,7 +75,7 @@
 
 ---
 
-<!-- fc id:T-24-004 sha:8495efd6 src:manual/24-chuzha-proshyvka.md:6 klas:E -->
+<!-- fc id:T-24-004 sha:8495efd6 src:manual/24-chuzha-proshyvka.md:6 status:no-external-signal -->
 ### T-24-004 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -98,7 +98,7 @@
 
 ---
 
-<!-- fc id:T-24-005 sha:b20fb9ae src:manual/24-chuzha-proshyvka.md:10 klas:E -->
+<!-- fc id:T-24-005 sha:b20fb9ae src:manual/24-chuzha-proshyvka.md:10 status:no-external-signal -->
 ### T-24-005 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -121,7 +121,7 @@
 
 ---
 
-<!-- fc id:T-24-006 sha:6f9479f6 src:manual/24-chuzha-proshyvka.md:10 klas:E -->
+<!-- fc id:T-24-006 sha:6f9479f6 src:manual/24-chuzha-proshyvka.md:10 status:no-external-signal -->
 ### T-24-006 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -144,7 +144,7 @@
 
 ---
 
-<!-- fc id:T-24-007 sha:3314683c src:manual/24-chuzha-proshyvka.md:11 klas:E -->
+<!-- fc id:T-24-007 sha:3314683c src:manual/24-chuzha-proshyvka.md:11 status:no-external-signal -->
 ### T-24-007 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -167,7 +167,7 @@
 
 ---
 
-<!-- fc id:T-24-008 sha:f66876ac src:manual/24-chuzha-proshyvka.md:16 klas:E -->
+<!-- fc id:T-24-008 sha:f66876ac src:manual/24-chuzha-proshyvka.md:16 status:no-external-signal -->
 ### T-24-008 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -189,7 +189,7 @@
 
 ---
 
-<!-- fc id:T-24-009 sha:20c177db src:manual/24-chuzha-proshyvka.md:19 klas:K -->
+<!-- fc id:T-24-009 sha:20c177db src:manual/24-chuzha-proshyvka.md:19 status:code-context -->
 ### T-24-009 · kod · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -222,7 +222,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-24-010 sha:d1458242 src:manual/24-chuzha-proshyvka.md:20 klas:D -->
+<!-- fc id:T-24-010 sha:d1458242 src:manual/24-chuzha-proshyvka.md:20 status:arithmetic -->
 ### T-24-010 · kod-ryadok · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -259,7 +259,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-24-011 sha:4438754b src:manual/24-chuzha-proshyvka.md:21 klas:A -->
+<!-- fc id:T-24-011 sha:4438754b src:manual/24-chuzha-proshyvka.md:21 status:verbatim -->
 ### T-24-011 · kod-ryadok · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -289,7 +289,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-24-012 sha:1e071f0d src:manual/24-chuzha-proshyvka.md:24 klas:A -->
+<!-- fc id:T-24-012 sha:1e071f0d src:manual/24-chuzha-proshyvka.md:24 status:verbatim -->
 ### T-24-012 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -316,7 +316,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-24-013 sha:b0105296 src:manual/24-chuzha-proshyvka.md:26 klas:A -->
+<!-- fc id:T-24-013 sha:b0105296 src:manual/24-chuzha-proshyvka.md:26 status:verbatim -->
 ### T-24-013 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -346,7 +346,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-24-014 sha:a0df9f73 src:manual/24-chuzha-proshyvka.md:27 klas:F -->
+<!-- fc id:T-24-014 sha:a0df9f73 src:manual/24-chuzha-proshyvka.md:27 status:unchecked -->
 ### T-24-014 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -369,7 +369,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-24-015 sha:b66c9dc5 src:manual/24-chuzha-proshyvka.md:30 klas:A -->
+<!-- fc id:T-24-015 sha:b66c9dc5 src:manual/24-chuzha-proshyvka.md:30 status:verbatim -->
 ### T-24-015 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -397,7 +397,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-24-016 sha:300046e5 src:manual/24-chuzha-proshyvka.md:33 klas:B -->
+<!-- fc id:T-24-016 sha:300046e5 src:manual/24-chuzha-proshyvka.md:33 status:derived -->
 ### T-24-016 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -425,7 +425,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-24-017 sha:169d8d9d src:manual/24-chuzha-proshyvka.md:38 klas:F -->
+<!-- fc id:T-24-017 sha:169d8d9d src:manual/24-chuzha-proshyvka.md:38 status:unchecked -->
 ### T-24-017 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -447,7 +447,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-24-018 sha:74d8abfe src:manual/24-chuzha-proshyvka.md:38 klas:E -->
+<!-- fc id:T-24-018 sha:74d8abfe src:manual/24-chuzha-proshyvka.md:38 status:no-external-signal -->
 ### T-24-018 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -469,7 +469,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-24-019 sha:9cbe5f08 src:manual/24-chuzha-proshyvka.md:41 klas:K -->
+<!-- fc id:T-24-019 sha:9cbe5f08 src:manual/24-chuzha-proshyvka.md:41 status:code-context -->
 ### T-24-019 · kod · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -510,7 +510,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 
 ---
 
-<!-- fc id:T-24-020 sha:3e391da0 src:manual/24-chuzha-proshyvka.md:42 klas:F -->
+<!-- fc id:T-24-020 sha:3e391da0 src:manual/24-chuzha-proshyvka.md:42 status:unchecked -->
 ### T-24-020 · kod-ryadok · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -534,7 +534,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 
 ---
 
-<!-- fc id:T-24-021 sha:580bb88f src:manual/24-chuzha-proshyvka.md:43 klas:A -->
+<!-- fc id:T-24-021 sha:580bb88f src:manual/24-chuzha-proshyvka.md:43 status:verbatim -->
 ### T-24-021 · kod-ryadok · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -572,7 +572,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 
 ---
 
-<!-- fc id:T-24-022 sha:3e40bbcb src:manual/24-chuzha-proshyvka.md:46 klas:E -->
+<!-- fc id:T-24-022 sha:3e40bbcb src:manual/24-chuzha-proshyvka.md:46 status:no-external-signal -->
 ### T-24-022 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -593,7 +593,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 
 ---
 
-<!-- fc id:T-24-023 sha:dc69216b src:manual/24-chuzha-proshyvka.md:48 klas:F -->
+<!-- fc id:T-24-023 sha:dc69216b src:manual/24-chuzha-proshyvka.md:48 status:unchecked -->
 ### T-24-023 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -616,7 +616,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 
 ---
 
-<!-- fc id:T-24-024 sha:1c8bfbed src:manual/24-chuzha-proshyvka.md:49 klas:E -->
+<!-- fc id:T-24-024 sha:1c8bfbed src:manual/24-chuzha-proshyvka.md:49 status:no-external-signal -->
 ### T-24-024 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -639,7 +639,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 
 ---
 
-<!-- fc id:T-24-025 sha:08ecb7ee src:manual/24-chuzha-proshyvka.md:52 klas:A -->
+<!-- fc id:T-24-025 sha:08ecb7ee src:manual/24-chuzha-proshyvka.md:52 status:verbatim -->
 ### T-24-025 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -678,7 +678,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 
 ---
 
-<!-- fc id:T-24-026 sha:5fcc9dbe src:manual/24-chuzha-proshyvka.md:53 klas:E -->
+<!-- fc id:T-24-026 sha:5fcc9dbe src:manual/24-chuzha-proshyvka.md:53 status:no-external-signal -->
 ### T-24-026 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -701,7 +701,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 
 ---
 
-<!-- fc id:T-24-027 sha:4f4227a5 src:manual/24-chuzha-proshyvka.md:56 klas:F -->
+<!-- fc id:T-24-027 sha:4f4227a5 src:manual/24-chuzha-proshyvka.md:56 status:unchecked -->
 ### T-24-027 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -723,7 +723,7 @@ required` — прямо називають, що пристрій робить 
 
 ---
 
-<!-- fc id:T-24-028 sha:d96a1d0f src:manual/24-chuzha-proshyvka.md:59 klas:F -->
+<!-- fc id:T-24-028 sha:d96a1d0f src:manual/24-chuzha-proshyvka.md:59 status:unchecked -->
 ### T-24-028 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -745,7 +745,7 @@ required` — прямо називають, що пристрій робить 
 
 ---
 
-<!-- fc id:T-24-029 sha:0b6a361f src:manual/24-chuzha-proshyvka.md:63 klas:E -->
+<!-- fc id:T-24-029 sha:0b6a361f src:manual/24-chuzha-proshyvka.md:63 status:no-external-signal -->
 ### T-24-029 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -768,7 +768,7 @@ required` — прямо називають, що пристрій робить 
 
 ---
 
-<!-- fc id:T-24-030 sha:08d57e94 src:manual/24-chuzha-proshyvka.md:64 klas:E -->
+<!-- fc id:T-24-030 sha:08d57e94 src:manual/24-chuzha-proshyvka.md:64 status:no-external-signal -->
 ### T-24-030 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -791,7 +791,7 @@ required` — прямо називають, що пристрій робить 
 
 ---
 
-<!-- fc id:T-24-031 sha:76bdb94f src:manual/24-chuzha-proshyvka.md:66 klas:E -->
+<!-- fc id:T-24-031 sha:76bdb94f src:manual/24-chuzha-proshyvka.md:66 status:no-external-signal -->
 ### T-24-031 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -816,7 +816,7 @@ required` — прямо називають, що пристрій робить 
 
 ---
 
-<!-- fc id:T-24-032 sha:51ac664e src:manual/24-chuzha-proshyvka.md:67 klas:E -->
+<!-- fc id:T-24-032 sha:51ac664e src:manual/24-chuzha-proshyvka.md:67 status:no-external-signal -->
 ### T-24-032 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -841,7 +841,7 @@ required` — прямо називають, що пристрій робить 
 
 ---
 
-<!-- fc id:T-24-033 sha:ee19140e src:manual/24-chuzha-proshyvka.md:74 klas:A -->
+<!-- fc id:T-24-033 sha:ee19140e src:manual/24-chuzha-proshyvka.md:74 status:verbatim -->
 ### T-24-033 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -870,7 +870,7 @@ NVS зберігає конфігурацію конкретного екзем�
 
 ---
 
-<!-- fc id:T-24-034 sha:c8fce846 src:manual/24-chuzha-proshyvka.md:74 klas:E -->
+<!-- fc id:T-24-034 sha:c8fce846 src:manual/24-chuzha-proshyvka.md:74 status:no-external-signal -->
 ### T-24-034 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -893,7 +893,7 @@ NVS зберігає конфігурацію конкретного екзем�
 
 ---
 
-<!-- fc id:T-24-035 sha:a83a6314 src:manual/24-chuzha-proshyvka.md:78 klas:A -->
+<!-- fc id:T-24-035 sha:a83a6314 src:manual/24-chuzha-proshyvka.md:78 status:verbatim -->
 ### T-24-035 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -920,7 +920,7 @@ NVS зберігає конфігурацію конкретного екзем�
 
 ---
 
-<!-- fc id:T-24-036 sha:0615bf62 src:manual/24-chuzha-proshyvka.md:80 klas:K -->
+<!-- fc id:T-24-036 sha:0615bf62 src:manual/24-chuzha-proshyvka.md:80 status:code-context -->
 ### T-24-036 · kod · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -958,7 +958,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-037 sha:fe1f802d src:manual/24-chuzha-proshyvka.md:81 klas:D -->
+<!-- fc id:T-24-037 sha:fe1f802d src:manual/24-chuzha-proshyvka.md:81 status:arithmetic -->
 ### T-24-037 · kod-ryadok · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -994,7 +994,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-038 sha:8780dde8 src:manual/24-chuzha-proshyvka.md:84 klas:A -->
+<!-- fc id:T-24-038 sha:8780dde8 src:manual/24-chuzha-proshyvka.md:84 status:verbatim -->
 ### T-24-038 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1024,7 +1024,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-039 sha:a597c836 src:manual/24-chuzha-proshyvka.md:85 klas:F -->
+<!-- fc id:T-24-039 sha:a597c836 src:manual/24-chuzha-proshyvka.md:85 status:unchecked -->
 ### T-24-039 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1048,7 +1048,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-040 sha:68f95422 src:manual/24-chuzha-proshyvka.md:86 klas:F -->
+<!-- fc id:T-24-040 sha:68f95422 src:manual/24-chuzha-proshyvka.md:86 status:unchecked -->
 ### T-24-040 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1072,7 +1072,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-041 sha:ae243f3d src:manual/24-chuzha-proshyvka.md:89 klas:F -->
+<!-- fc id:T-24-041 sha:ae243f3d src:manual/24-chuzha-proshyvka.md:89 status:unchecked -->
 ### T-24-041 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1095,7 +1095,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-042 sha:e768e0e9 src:manual/24-chuzha-proshyvka.md:95 klas:F -->
+<!-- fc id:T-24-042 sha:e768e0e9 src:manual/24-chuzha-proshyvka.md:95 status:unchecked -->
 ### T-24-042 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1117,7 +1117,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-043 sha:33a21857 src:manual/24-chuzha-proshyvka.md:98 klas:F -->
+<!-- fc id:T-24-043 sha:33a21857 src:manual/24-chuzha-proshyvka.md:98 status:unchecked -->
 ### T-24-043 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1140,7 +1140,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-044 sha:fb9b6086 src:manual/24-chuzha-proshyvka.md:98 klas:F -->
+<!-- fc id:T-24-044 sha:fb9b6086 src:manual/24-chuzha-proshyvka.md:98 status:unchecked -->
 ### T-24-044 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1163,7 +1163,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-045 sha:71d85f42 src:manual/24-chuzha-proshyvka.md:102 klas:E -->
+<!-- fc id:T-24-045 sha:71d85f42 src:manual/24-chuzha-proshyvka.md:102 status:no-external-signal -->
 ### T-24-045 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1186,7 +1186,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-046 sha:728f71be src:manual/24-chuzha-proshyvka.md:108 klas:E -->
+<!-- fc id:T-24-046 sha:728f71be src:manual/24-chuzha-proshyvka.md:108 status:no-external-signal -->
 ### T-24-046 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1207,7 +1207,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-047 sha:0f41d41e src:manual/24-chuzha-proshyvka.md:110 klas:E -->
+<!-- fc id:T-24-047 sha:0f41d41e src:manual/24-chuzha-proshyvka.md:110 status:no-external-signal -->
 ### T-24-047 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1229,7 +1229,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-048 sha:91b6b216 src:manual/24-chuzha-proshyvka.md:113 klas:F -->
+<!-- fc id:T-24-048 sha:91b6b216 src:manual/24-chuzha-proshyvka.md:113 status:unchecked -->
 ### T-24-048 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1253,7 +1253,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-049 sha:61bbee4a src:manual/24-chuzha-proshyvka.md:115 klas:E -->
+<!-- fc id:T-24-049 sha:61bbee4a src:manual/24-chuzha-proshyvka.md:115 status:no-external-signal -->
 ### T-24-049 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1277,7 +1277,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-050 sha:f40d7be0 src:manual/24-chuzha-proshyvka.md:118 klas:E -->
+<!-- fc id:T-24-050 sha:f40d7be0 src:manual/24-chuzha-proshyvka.md:118 status:no-external-signal -->
 ### T-24-050 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1300,7 +1300,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-051 sha:047da961 src:manual/24-chuzha-proshyvka.md:124 klas:E -->
+<!-- fc id:T-24-051 sha:047da961 src:manual/24-chuzha-proshyvka.md:124 status:no-external-signal -->
 ### T-24-051 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1321,7 +1321,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-052 sha:bf4cb5b8 src:manual/24-chuzha-proshyvka.md:128 klas:F -->
+<!-- fc id:T-24-052 sha:bf4cb5b8 src:manual/24-chuzha-proshyvka.md:128 status:unchecked -->
 ### T-24-052 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1344,7 +1344,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-053 sha:90de82f6 src:manual/24-chuzha-proshyvka.md:134 klas:E -->
+<!-- fc id:T-24-053 sha:90de82f6 src:manual/24-chuzha-proshyvka.md:134 status:no-external-signal -->
 ### T-24-053 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1368,7 +1368,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-054 sha:22b15af8 src:manual/24-chuzha-proshyvka.md:134 klas:E -->
+<!-- fc id:T-24-054 sha:22b15af8 src:manual/24-chuzha-proshyvka.md:134 status:no-external-signal -->
 ### T-24-054 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1392,7 +1392,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-055 sha:aa4ce0a2 src:manual/24-chuzha-proshyvka.md:140 klas:E -->
+<!-- fc id:T-24-055 sha:aa4ce0a2 src:manual/24-chuzha-proshyvka.md:140 status:no-external-signal -->
 ### T-24-055 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1419,7 +1419,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-056 sha:e018c622 src:manual/24-chuzha-proshyvka.md:141 klas:E -->
+<!-- fc id:T-24-056 sha:e018c622 src:manual/24-chuzha-proshyvka.md:141 status:no-external-signal -->
 ### T-24-056 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1446,7 +1446,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-057 sha:a4f46dd1 src:manual/24-chuzha-proshyvka.md:143 klas:A -->
+<!-- fc id:T-24-057 sha:a4f46dd1 src:manual/24-chuzha-proshyvka.md:143 status:verbatim -->
 ### T-24-057 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1479,7 +1479,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-058 sha:51267f7a src:manual/24-chuzha-proshyvka.md:147 klas:E -->
+<!-- fc id:T-24-058 sha:51267f7a src:manual/24-chuzha-proshyvka.md:147 status:no-external-signal -->
 ### T-24-058 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1502,7 +1502,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-059 sha:f9de2c79 src:manual/24-chuzha-proshyvka.md:153 klas:E -->
+<!-- fc id:T-24-059 sha:f9de2c79 src:manual/24-chuzha-proshyvka.md:153 status:no-external-signal -->
 ### T-24-059 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1524,7 +1524,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-060 sha:31d7d4b4 src:manual/24-chuzha-proshyvka.md:156 klas:E -->
+<!-- fc id:T-24-060 sha:31d7d4b4 src:manual/24-chuzha-proshyvka.md:156 status:no-external-signal -->
 ### T-24-060 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1545,7 +1545,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-061 sha:fd0b2ac2 src:manual/24-chuzha-proshyvka.md:158 klas:F -->
+<!-- fc id:T-24-061 sha:fd0b2ac2 src:manual/24-chuzha-proshyvka.md:158 status:unchecked -->
 ### T-24-061 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1569,7 +1569,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-062 sha:bfbae2a9 src:manual/24-chuzha-proshyvka.md:163 klas:E -->
+<!-- fc id:T-24-062 sha:bfbae2a9 src:manual/24-chuzha-proshyvka.md:163 status:no-external-signal -->
 ### T-24-062 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1592,7 +1592,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-063 sha:9179143c src:manual/24-chuzha-proshyvka.md:163 klas:E -->
+<!-- fc id:T-24-063 sha:9179143c src:manual/24-chuzha-proshyvka.md:163 status:no-external-signal -->
 ### T-24-063 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1615,7 +1615,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-064 sha:23897b30 src:manual/24-chuzha-proshyvka.md:170 klas:E -->
+<!-- fc id:T-24-064 sha:23897b30 src:manual/24-chuzha-proshyvka.md:170 status:no-external-signal -->
 ### T-24-064 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1637,7 +1637,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-065 sha:850b62ce src:manual/24-chuzha-proshyvka.md:172 klas:E -->
+<!-- fc id:T-24-065 sha:850b62ce src:manual/24-chuzha-proshyvka.md:172 status:no-external-signal -->
 ### T-24-065 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1659,7 +1659,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-066 sha:7a6148ae src:manual/24-chuzha-proshyvka.md:173 klas:E -->
+<!-- fc id:T-24-066 sha:7a6148ae src:manual/24-chuzha-proshyvka.md:173 status:no-external-signal -->
 ### T-24-066 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1681,7 +1681,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-067 sha:2071b340 src:manual/24-chuzha-proshyvka.md:175 klas:A -->
+<!-- fc id:T-24-067 sha:2071b340 src:manual/24-chuzha-proshyvka.md:175 status:verbatim -->
 ### T-24-067 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1728,7 +1728,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-068 sha:60caff3a src:manual/24-chuzha-proshyvka.md:176 klas:A -->
+<!-- fc id:T-24-068 sha:60caff3a src:manual/24-chuzha-proshyvka.md:176 status:verbatim -->
 ### T-24-068 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1759,7 +1759,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-069 sha:9d57a86a src:manual/24-chuzha-proshyvka.md:181 klas:E -->
+<!-- fc id:T-24-069 sha:9d57a86a src:manual/24-chuzha-proshyvka.md:181 status:no-external-signal -->
 ### T-24-069 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1783,7 +1783,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-070 sha:a234464f src:manual/24-chuzha-proshyvka.md:181 klas:E -->
+<!-- fc id:T-24-070 sha:a234464f src:manual/24-chuzha-proshyvka.md:181 status:no-external-signal -->
 ### T-24-070 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1807,7 +1807,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-071 sha:a888acf1 src:manual/24-chuzha-proshyvka.md:183 klas:E -->
+<!-- fc id:T-24-071 sha:a888acf1 src:manual/24-chuzha-proshyvka.md:183 status:no-external-signal -->
 ### T-24-071 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1831,7 +1831,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-072 sha:e5ffb553 src:manual/24-chuzha-proshyvka.md:183 klas:F -->
+<!-- fc id:T-24-072 sha:e5ffb553 src:manual/24-chuzha-proshyvka.md:183 status:unchecked -->
 ### T-24-072 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1855,7 +1855,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-073 sha:d6ef92d9 src:manual/24-chuzha-proshyvka.md:188 klas:E -->
+<!-- fc id:T-24-073 sha:d6ef92d9 src:manual/24-chuzha-proshyvka.md:188 status:no-external-signal -->
 ### T-24-073 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1877,7 +1877,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-074 sha:34750b8a src:manual/24-chuzha-proshyvka.md:191 klas:F -->
+<!-- fc id:T-24-074 sha:34750b8a src:manual/24-chuzha-proshyvka.md:191 status:unchecked -->
 ### T-24-074 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1899,7 +1899,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-075 sha:a0a3dbf2 src:manual/24-chuzha-proshyvka.md:194 klas:E -->
+<!-- fc id:T-24-075 sha:a0a3dbf2 src:manual/24-chuzha-proshyvka.md:194 status:no-external-signal -->
 ### T-24-075 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1921,7 +1921,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-076 sha:8cb8af19 src:manual/24-chuzha-proshyvka.md:197 klas:E -->
+<!-- fc id:T-24-076 sha:8cb8af19 src:manual/24-chuzha-proshyvka.md:197 status:no-external-signal -->
 ### T-24-076 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
