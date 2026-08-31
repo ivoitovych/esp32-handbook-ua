@@ -1,67 +1,68 @@
 #!/usr/bin/env python3
-"""Чи не потрапив файл книги до кешу джерел.
+"""Is a file of the book itself sitting in the source cache?
 
-## Навіщо
+## The defect
 
-Кеш джерел і книга — дві протилежні речі: перше доводить друге. Файл
-книги, що опинився в кеші, робить самопосилання **невидимим для всіх
-трьох шарів**:
+A file of the book that ends up in the cache makes a self-reference
+**invisible to all three layers**:
 
-* джерело назване файлом із кешу — умова воріт виконана;
-* цитата дослівно стоїть у названому файлі — шар 3 задоволений;
-* взірець чіпляє одиницю — шар 1 задоволений.
+* the source names a file from the cache — the gate is satisfied;
+* the quote stands verbatim in that file — layer 3 is satisfied;
+* the pattern matches a unit — layer 1 is satisfied.
 
-І при цьому доказ доводить книгу книгою.
+And the evidence proves the book by the book.
 
-## Куплено
+## What it cost
 
-2026-08-28: у кеші знайшлося **сім файлів книги**, байт у байт —
-`06-zhyvlennya.md`, `20-bekap.md`, `21-seriyna.md`,
-`22-zberezhennya-stanu.md`, `23-triazh.md`, `31-freertos.md`,
-`39-wifi.md`. Поклала їх хвиля 27 серпня, коли помічникам уперше
-дозволили качати джерела самим: помічник «завантажив» файл книги.
+2026-08-28: **seven files of the book** were found in the cache, byte for
+byte. They were put there by the wave of 27 August, when helpers were
+first allowed to download sources themselves: a helper "downloaded" a
+file of the book.
 
-Доказів, що на них спираються, було **нуль** — міна не вибухнула. Але
-ворота її не бачили, і побачити не могли: за побудовою вони питають
-«чи джерело у кеші», а не «чи джерело не є книгою».
+The number of evidences resting on them was **zero** — the mine did not
+go off. But the gates could not see it, and could not have: by
+construction they ask "is the source in the cache", not "is the source
+the book".
 
-## І окремо — маніфест
+## And the manifest, separately
 
-Перевіряти самі файли мало. **Джерелом книги може бути записаний сам
-маніфест**: рядок із адресою
-`raw.githubusercontent.com/<власник>/<книга>/main/manual/…` реєструє
-книгу як зовнішнє джерело офіційно. Тоді кожне перезавантаження
-відновлює файл, і прибирання з кешу не тримається.
+Checking the files alone is not enough. **The manifest itself can
+register the book as a source**: a line whose address is
+`raw.githubusercontent.com/<owner>/<book>/main/manual/…` registers the
+book as an external source officially. Then every re-download restores
+the file, and removing it from the cache does not hold.
 
-Знайдено 2026-08-28: вісім таких рядків. Спершу я вилучив сім файлів
-із кешу й вважав ваду закритою; наступне ж качання повернуло чотири,
-бо адреси лишалися в маніфесті. **Прибирати наслідок, лишаючи
-причину, — це не виправлення, а відкладення.**
+Found 2026-08-28: eight such lines. At first I deleted the seven files
+and considered the fault closed; the next download brought four back,
+because the addresses were still in the manifest. **Removing an effect
+while leaving its cause is not a fix, it is a delay.**
 
-## Чому за вмістом, а не за іменем
+## Why by content, not by name
 
-Ім'я можна змінити. Перевірка порівнює **sha256 вмісту**, тож копія
-під іншим іменем теж знайдеться.
+A name can be changed. The check compares the **sha256 of the content**,
+so a copy under another name is found too.
 
-## І чому не лише за файлами на диску
+## And why not by the files on disk alone
 
-Перша редакція дивилася тільки в каталог кешу. Файли з нього прибрали
-— і вона показала нуль, тоді як **чотири рядки маніфесту й далі
-називали книгу джерелом**:
+The first version looked only in the cache directory. The files were
+removed from it — and it reported zero, while **four manifest lines went
+on naming the book as a source**:
 
     | `20-bekap.md` | … | <https://raw.githubusercontent.com/
-                          ivoitovych/esp32-handbook-ua/main/manual/20-bekap.md> |
+                          owner/book/main/manual/20-bekap.md> |
 
-Маніфест — це те, що йде в git і що бачить третя сторона; файли не
-йдуть узагалі. Тобто перевірка звітувала «чисто» саме про той бік,
-який нікуди не подорожує, і мовчала про той, який подорожує.
+The manifest is what goes into git and what a third party sees; the files
+do not travel at all. So the check was reporting "clean" about exactly
+the side that goes nowhere, and staying silent about the side that goes.
 
-> Рід 3 з каталогу, у власному виконанні: лічильник рахував не той
-> артефакт. Ознака та сама — нуль, який нічого не означає.
+> Kind 3 from the catalogue, committed by the check itself: the counter
+> counted the wrong artefact. The sign is the same — a zero that means
+> nothing.
 
-Тому перевіряються обидва боки: вміст файлів **і** адреси в маніфесті.
+So both sides are checked: the content of the files **and** the addresses
+in the manifest.
 
-    factcheck/tools/cache_vs_book.py [--tykho]
+    factcheck/tools/cache_vs_book.py [--quiet]
 """
 from __future__ import annotations
 
@@ -70,86 +71,117 @@ import re
 import sys
 from pathlib import Path
 
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
-KESH = ROOT / "factcheck" / "source-cache"
-KNYHA = ("manual", "dodatky", "kartky", "inserts")
+CACHE = ROOT / "factcheck" / "source-cache"
 
-# Адреса самого довідника. Довідник не є джерелом для себе — те саме
-# правило, що вже стоїть у наряді помічникові.
-VLASNE = re.compile(r"esp32-handbook|ivoitovych|voytovych", re.I)
+# A ninth copy of the book's directories lived here under another name,
+# and the sweep that replaced the eight `GRUPY` copies did not see it —
+# a list is not found by the name of the fact it holds. From `book.yaml`
+# now, like the rest.
+BOOK = config.groups()
 
-# Шлях книги в будь-якому репозиторії: форк під іншим власником має ті
-# самі каталоги.
-ZA_SHLYAKHOM = re.compile(r"/(?:%s)/" % "|".join(KNYHA))
+# The book's own address. A handbook is not a source for itself — the
+# same rule that already stands in a helper's work order.
+#
+# It used to name THIS repository literally, which on another book would
+# have matched nothing and reported a confident zero. Derived from the
+# git remote, with the config title as a fallback for a tree that has no
+# remote (`newbook.py` produces exactly that).
+def _own_names() -> re.Pattern:
+    import subprocess
+    parts = []
+    try:
+        r = subprocess.run(["git", "remote", "get-url", "origin"],
+                           capture_output=True, text=True, cwd=ROOT)
+        if r.returncode == 0:
+            parts += [x for x in re.split(r"[/:.]", r.stdout.strip())
+                      if len(x) > 3 and x not in ("github", "com", "git")]
+    except Exception:
+        pass
+    parts.append(ROOT.name)
+    return re.compile("|".join(re.escape(x) for x in dict.fromkeys(parts)),
+                      re.I)
+
+
+OWN = _own_names()
+
+# The book's path in any repository: a fork under another owner has the
+# same directories.
+BY_PATH = re.compile(r"/(?:%s)/" % "|".join(BOOK))
 
 
 def main(argv: list[str]) -> int:
-    tykho = "--tykho" in argv
-    vidbytky: dict[str, str] = {}
-    for g in KNYHA:
-        katalog = ROOT / g
-        if not katalog.exists():
+    quiet = "--quiet" in argv
+    prints: dict[str, str] = {}
+    for g in BOOK:
+        directory = ROOT / g
+        if not directory.exists():
             continue
-        for p in katalog.glob("*.md"):
-            vidbytky[hashlib.sha256(p.read_bytes()).hexdigest()] = str(
+        for p in directory.glob("*.md"):
+            prints[hashlib.sha256(p.read_bytes()).hexdigest()] = str(
                 p.relative_to(ROOT))
 
-    # Маніфест: адреса на власну книгу реєструє її як джерело.
-    manifest = KESH / "MANIFEST.md"
-    ryadky_man = []
+    # The manifest: an address pointing at our own book registers it as a
+    # source.
+    manifest = CACHE / "MANIFEST.md"
+    _manifest_rows = []
     if manifest.exists():
         tekst = manifest.read_text(encoding="utf-8")
         for ln in tekst.split("\n"):
             if re.search(r"raw\.githubusercontent\.com/[^/]+/[^/]+/"
-                         r"\S*/(manual|dodatky|kartky|inserts)/", ln):
+                         r"\S*/(?:%s)/" % "|".join(BOOK), ln):
                 m = re.search(r"\| `([^`]+)` \|", ln)
-                ryadky_man.append(m.group(1) if m else ln[:60])
+                _manifest_rows.append(m.group(1) if m else ln[:60])
 
-    znaydeno = []
+    found = []
     n = 0
-    if KESH.exists():
-        for p in sorted(KESH.iterdir()):
+    if CACHE.exists():
+        for p in sorted(CACHE.iterdir()):
             if not p.is_file():
                 continue
             n += 1
             h = hashlib.sha256(p.read_bytes()).hexdigest()
-            if h in vidbytky:
-                znaydeno.append((p.name, vidbytky[h]))
+            if h in prints:
+                found.append((p.name, prints[h]))
 
-    # Маніфест — єдине, що з кешу потрапляє в git. Самопосилання в
-    # ньому переживає видалення файлу й **відновлює його** при
-    # наступному качанні: причина живе тут, наслідок у каталозі.
+    # The manifest is the only part of the cache that reaches git. A
+    # self-reference in it survives deleting the file and **restores it**
+    # on the next download: the cause lives here, the effect in the
+    # directory.
     #
-    # Дві ознаки, бо обидва супровідники написали цю перевірку
-    # незалежно й кожен пропустив те, що бачив другий:
+    # Two signs, because both maintainers wrote this check independently
+    # and each missed what the other saw:
     #
-    #   за шляхом  — `…/manual/…` у будь-якому репозиторії; ловить форк
-    #                під чужим іменем власника;
-    #   за іменем  — власне ім'я репозиторію; ловить адресу поза
-    #                `raw.githubusercontent`, скажімо на реліз чи `docs/`.
+    #   by path  — `…/manual/…` in any repository; catches a fork under
+    #              somebody else's owner name;
+    #   by name  — our own repository's name; catches an address outside
+    #              `raw.githubusercontent`, say a release or `docs/`.
     #
-    # Жодна поодинці не покриває обидва випадки.
-    v_manifesti = []
-    manifest = KESH / "MANIFEST.md"
+    # Neither alone covers both cases.
+    in_manifest = []
+    manifest = CACHE / "MANIFEST.md"
     if manifest.exists():
         for ln in manifest.read_text(encoding="utf-8").split("\n"):
             if not ln.startswith("| `"):
                 continue
             m = re.search(r"<([^>]+)>", ln)
             url = m.group(1) if m else ""
-            if ZA_SHLYAKHOM.search(url) or VLASNE.search(url):
-                imya = re.search(r"\| `([^`]+)` \|", ln)
-                v_manifesti.append((imya.group(1) if imya else ln[:60], url))
+            if BY_PATH.search(url) or OWN.search(url):
+                name = re.search(r"\| `([^`]+)` \|", ln)
+                in_manifest.append((name.group(1) if name else ln[:60], url))
 
-    for imya, dzherelo in znaydeno:
-        print("   ✗ файл книги в кеші джерел: %s = %s" % (imya, dzherelo))
-    for imya, url in v_manifesti:
-        print("   ✗ маніфест реєструє книгу як джерело: %s → %s" % (imya, url))
-    if not tykho or znaydeno or v_manifesti:
-        print("cache_vs_book: файлів у кеші %d; файлів книги серед них %d; "
-              "рядків маніфесту на книгу %d"
-              % (n, len(znaydeno), len(v_manifesti)))
-    return 1 if (znaydeno or v_manifesti) else 0
+    for name, source in found:
+        print("   ✗ a file of the book is in the source cache: "
+              "%s = %s" % (name, source))
+    for name, url in in_manifest:
+        print("   ✗ the manifest registers the book as a source: "
+              "%s → %s" % (name, url))
+    if not quiet or found or in_manifest:
+        print("cache_vs_book: files in the cache %d; files of the book "
+              "among them %d; manifest rows naming the book %d"
+              % (n, len(found), len(in_manifest)))
+    return 1 if (found or in_manifest) else 0
 
 
 if __name__ == "__main__":
