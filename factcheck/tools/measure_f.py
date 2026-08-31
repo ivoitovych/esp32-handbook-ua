@@ -174,7 +174,7 @@ def main() -> int:
         print(__doc__)
         return 2
 
-    zap, polagodzheni, zlamani = helper_dumps.chytaty(Path(sys.argv[1]))
+    zap, polagodzheni, zlamani = helper_dumps.read_dir(Path(sys.argv[1]))
     n = len(zap)
     if not n:
         print("mira_f: вивантажень не знайдено")

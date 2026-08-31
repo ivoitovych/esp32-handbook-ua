@@ -105,7 +105,7 @@ def zvesty(katalogy: list[str]) -> int:
 
     zap = []
     for k in katalogy:
-        chastyna, _, _ = helper_dumps.chytaty(Path(k))
+        chastyna, _, _ = helper_dumps.read_dir(Path(k))
         zap += chastyna
 
     kand = [{"title": str(z.get("odynycya", "?")),
@@ -203,7 +203,7 @@ def main() -> int:
     for katalog in sys.argv[1:]:
         if katalog.startswith("-"):
             continue
-        chastyna, _, _ = helper_dumps.chytaty(Path(katalog))
+        chastyna, _, _ = helper_dumps.read_dir(Path(katalog))
         zap += chastyna
     ideyi = [z for z in zap if str(z.get("verdykt")) == "ideya"]
     prydatni = [z for z in ideyi

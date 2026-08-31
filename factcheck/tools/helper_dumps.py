@@ -1,46 +1,46 @@
 #!/usr/bin/env python3
-"""Читання вивантажень помічників, стійке до типових зламів YAML.
+"""Reading helper dumps, resilient to the usual ways YAML breaks.
 
-## Навіщо взагалі окремий читач
+## Why a reader of its own
 
-За один вечір поламані файли з'їли роботу помічників **тричі**, і жодного
-разу не через недбалість помічника. YAML ламається на звичайній
-українській прозі:
+In one evening broken files ate helpers' work **three times**, and not
+once through a helper's carelessness. YAML breaks on ordinary Ukrainian
+prose:
 
     chomu: не твердження: самоопис книги
-                        ^ друга двокрапка — і файл не читається
+                        ^ a second colon — and the file will not parse
 
     chomu: "Simulation is not reality" reflects ...
-           ^ значення починається з лапки — незакритий рядок
+           ^ the value starts with a quote — an unterminated string
 
-Обидва рядки писала не модель, а **інструкція супровідника**: у
-брифінгу так і було написано, дослівно. Тобто формат вимагав від
-помічника YAML-обізнаності, якої від нього ніхто не вимагав.
+Both lines were written not by a model but by **the maintainer's own
+briefing**: they stood there verbatim. So the format demanded of the
+helper a knowledge of YAML that nobody had asked of it.
 
-Виправляти брифінг треба, і він виправлений. Але брифінг — це прохання,
-а не ворота: наступна хвиля помічників однаково рано чи пізно напише
-двокрапку в тексті. Тому читач.
+The briefing needed fixing, and it is fixed. But a briefing is a request,
+not a gate: sooner or later the next wave of helpers writes a colon in a
+sentence. Hence this reader.
 
-## Що саме він робить, і чого не робить
+## What it does, and what it will not do
 
-Робить рівно одне механічне перетворення: якщо рядок має вигляд
-`  ключ: значення`, і значення ламає YAML (містить `: `, починається з
-лапки чи з `[`, `{`, `&`, `*`), — значення береться в одинарні лапки, з
-подвоєнням внутрішніх.
+It performs exactly one mechanical transformation: if a line looks like
+`  key: value`, and the value breaks YAML (contains `: `, or starts with
+a quote, `[`, `{`, `&`, `*`), the value is single-quoted, with inner
+quotes doubled.
 
-**Не робить**: не вгадує пропущені поля, не зшиває обірвані записи, не
-здогадується про намір. Полагодити можна лише те, що там уже написано;
-усе інше — вигадка, а ми тут саме проти вигадок.
+**It does not**: guess missing fields, splice truncated records, or infer
+intent. Only what is already written can be repaired; anything else is
+invention, and invention is precisely what we are here to prevent.
 
-Якщо після лагодження файл усе одно не читається, він **називається
-поіменно й пропускається**, а не валить прогін: втратити один файл — це
-втратити один файл, а не двадцять.
+If a file still will not parse after repair, it is **named individually
+and skipped**, not allowed to kill the run: losing one file is losing one
+file, not twenty.
 
-## Чому лагодження не мовчазне
+## Why the repair is not silent
 
-Полагоджені файли повертаються окремим переліком. Тихе лагодження
-означало б, що ніхто ніколи не дізнається, скільки вивантажень було
-криве, — а це показання про якість брифінгу, і воно потрібне.
+Repaired files come back as their own list. A silent repair would mean
+nobody ever learns how many dumps were malformed — and that is testimony
+about the quality of the briefing, which we need.
 """
 from __future__ import annotations
 
@@ -49,97 +49,101 @@ from pathlib import Path
 
 import yaml
 
-# `  ключ: решта рядка`. Ключ — без пробілів і без лапок, інакше це вже
-# не проста пара, і чіпати її небезпечно.
-RE_PARA = re.compile(r"^(\s*(?:- )?)([A-Za-z_][\w-]*): (\S.*)$")
+# `  key: rest of line`. The key carries no spaces and no quotes; anything
+# else is no longer a simple pair, and touching it would be unsafe.
+RE_PAIR = re.compile(r"^(\s*(?:- )?)([A-Za-z_][\w-]*): (\S.*)$")
 
-# Показник блокового скаляра: `|`, `>` і їхні різновиди з відступом та
-# знаком підрізання. Це **не** поламане значення, а найправильніший
-# спосіб записати цитату, і саме його ми від помічників і просимо.
-RE_BLOK = re.compile(r"^[|>][+-]?\d*$")
+# The indicator of a block scalar: `|`, `>` and their variants with an
+# indentation digit and a chomping sign. This is **not** a broken value
+# but the most correct way to write a quote, and exactly what we ask
+# helpers for.
+RE_BLOCK = re.compile(r"^[|>][+-]?\d*$")
 
-# Значення, які YAML прочитає не як текст. Двокрапка з пробілом усередині
-# робить із рядка вкладене відображення; лапки на початку — рядок у
-# лапках, який майже напевно не закритий; дужки — потік.
-def lamke(znach: str) -> bool:
-    z = znach.strip()
-    if not z or RE_BLOK.match(z):
+
+def breaks_yaml(value: str) -> bool:
+    """Values YAML will read as something other than text.
+
+    A colon followed by a space turns the line into a nested mapping; a
+    leading quote starts a quoted string that is almost certainly never
+    closed; brackets start a flow collection."""
+    v = value.strip()
+    if not v or RE_BLOCK.match(v):
         return False
-    if z[0] in "\"'[{&*!%@`":
+    if v[0] in "\"'[{&*!%@`":
         return True
-    return ": " in z or z.endswith(":")
+    return ": " in v or v.endswith(":")
 
 
-def vidstup(r: str) -> int:
-    return len(r) - len(r.lstrip(" "))
+def indent(line: str) -> int:
+    return len(line) - len(line.lstrip(" "))
 
 
-def polagodyty(tekst: str) -> str:
-    """Взяти в лапки значення, які ламають розбір. Позиції рядків цілі.
+def repair(text: str) -> str:
+    """Quote the values that break parsing. Line positions are preserved.
 
-    **Тіло блокового скаляра не чіпається взагалі.** Перша редакція цієї
-    функції цього не знала і брала в лапки сам показник — `cytata: |`
-    ставало `cytata: '|'`, після чого рядки цитати переставали бути
-    цитатою й починали розбиратися як поля. Файл, який до «лагодження»
-    мав одну ваду, після нього не читався зовсім.
+    **The body of a block scalar is not touched at all.** The first
+    version of this function did not know that and quoted the indicator
+    itself: `cytata: |` became `cytata: '|'`, after which the lines of the
+    quote stopped being a quote and began to parse as fields. A file that
+    had one fault before the "repair" would not parse at all after it.
 
-    Тобто лагодження зіпсувало п'ять відповідей помічника, а в звіті це
-    виглядало як недбалість помічника. Звідси правило: усередині блоку
-    не змінюється жоден символ.
+    So the repair damaged five of a helper's answers, and in the report
+    that looked like the helper's carelessness. Hence the rule: inside a
+    block, not one character changes.
     """
     out: list[str] = []
-    blok_vidstup: int | None = None
-    for r in tekst.split("\n"):
-        if blok_vidstup is not None:
-            # Блок триває, доки рядок порожній або має більший відступ.
-            if not r.strip() or vidstup(r) > blok_vidstup:
-                out.append(r)
+    block_indent: int | None = None
+    for line in text.split("\n"):
+        if block_indent is not None:
+            # A block continues while the line is empty or more indented.
+            if not line.strip() or indent(line) > block_indent:
+                out.append(line)
                 continue
-            blok_vidstup = None
+            block_indent = None
 
-        m = RE_PARA.match(r)
-        if m and RE_BLOK.match(m.group(3).strip()):
-            blok_vidstup = vidstup(r)
-            out.append(r)
+        m = RE_PAIR.match(line)
+        if m and RE_BLOCK.match(m.group(3).strip()):
+            block_indent = indent(line)
+            out.append(line)
             continue
-        if m and lamke(m.group(3)):
-            znach = m.group(3).rstrip()
+        if m and breaks_yaml(m.group(3)):
+            value = m.group(3).rstrip()
             out.append(f"{m.group(1)}{m.group(2)}: "
-                       f"'{znach.replace(chr(39), chr(39) * 2)}'")
+                       f"'{value.replace(chr(39), chr(39) * 2)}'")
         else:
-            out.append(r)
+            out.append(line)
     return "\n".join(out)
 
 
-def chytaty(katalog: Path) -> tuple[list[dict], list[str], list[str]]:
-    """Усі записи з каталогу вивантажень.
+def read_dir(directory: Path) -> tuple[list[dict], list[str], list[str]]:
+    """Every record in a directory of dumps.
 
-    Повертає `(записи, полагоджені, зламані)`. Кожен запис отримує поле
-    `_fayl` — звідки він, — бо без нього не порахувати розкид між
-    помічниками, а розкид тут головна величина.
+    Returns `(records, repaired, broken)`. Each record gets a `_fayl`
+    field saying which file it came from — without it the spread between
+    helpers cannot be counted, and that spread is the main quantity here.
     """
-    zap: list[dict] = []
-    polagodzheni: list[str] = []
-    zlamani: list[str] = []
-    if not katalog.exists():
-        return zap, polagodzheni, zlamani
+    records: list[dict] = []
+    repaired: list[str] = []
+    broken: list[str] = []
+    if not directory.exists():
+        return records, repaired, broken
 
-    for f in sorted(katalog.glob("*.yaml")):
-        syre = f.read_text(encoding="utf-8")
+    for f in sorted(directory.glob("*.yaml")):
+        raw = f.read_text(encoding="utf-8")
         try:
-            recs = yaml.safe_load(syre) or []
+            recs = yaml.safe_load(raw) or []
         except yaml.YAMLError:
             try:
-                recs = yaml.safe_load(polagodyty(syre)) or []
-                polagodzheni.append(f.name)
+                recs = yaml.safe_load(repair(raw)) or []
+                repaired.append(f.name)
             except yaml.YAMLError:
-                zlamani.append(f.name)
+                broken.append(f.name)
                 continue
         if not isinstance(recs, list):
-            zlamani.append(f.name)
+            broken.append(f.name)
             continue
         for z in recs:
             if isinstance(z, dict):
                 z["_fayl"] = f.stem
-                zap.append(z)
-    return zap, polagodzheni, zlamani
+                records.append(z)
+    return records, repaired, broken

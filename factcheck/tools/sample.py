@@ -259,7 +259,7 @@ def zvesty(katalog: Path) -> int:
     #
     # Звідси `factcheck/tools/helper_dumps.py`: механічне лагодження того, що
     # написано, і поіменний перелік полагодженого.
-    zap, polagodzheni, bidy = helper_dumps.chytaty(katalog)
+    zap, polagodzheni, bidy = helper_dumps.read_dir(katalog)
     for z in zap:
         z["_hto"] = str(z.get("_fayl", "?")).split("-")[0]
 

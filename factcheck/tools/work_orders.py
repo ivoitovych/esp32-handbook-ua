@@ -146,7 +146,7 @@ def z_naryadu() -> list[str]:
 def zvesty(katalog: Path) -> int:
     import helper_dumps
 
-    zap, polagodzheni, zlamani = helper_dumps.chytaty(katalog)
+    zap, polagodzheni, zlamani = helper_dumps.read_dir(katalog)
 
     # Ключ — назва запису доказу. Помічники пишуть `zapys` і `nazva`;
     # звіряємо за назвою, бо саме вона стоїть у наряді.
@@ -258,7 +258,7 @@ def main() -> int:
     if "--krim" in sys.argv:
         import helper_dumps
         katalog = Path(sys.argv[sys.argv.index("--krim") + 1])
-        zap, _, _ = helper_dumps.chytaty(katalog)
+        zap, _, _ = helper_dumps.read_dir(katalog)
         vidpovidzheni = {str(z.get("title", "")).strip() for z in zap}
         bidy = [n for n in bidy
                 if str(n.get("nazva", "")).strip() not in vidpovidzheni]

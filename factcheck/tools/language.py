@@ -96,16 +96,20 @@ def zona(p: Path) -> str:
     except ValueError:
         return ""
     parts = set(rel.parts)
-    # Обидві теки з нашим кодом. Умова `parts[0] == "tools"` була правдою
-    # рівно доти, доки тека була одна: щойно 51 тулу переїхала в
-    # `factcheck/tools/`, вони випали з англійської зони цілком, і
-    # лічильник упав із 74 до 28. Падіння виглядало як робота.
+    # Англійська зона — це те, ЩО ПЕРЕЇЖДЖАЄ на іншу книгу, а не «увесь
+    # наш код». `factcheck/tools/` переїжджає; `tools/` — ні: там збірка
+    # книги, її покажчик, вичитка українського тексту. `calques.py`
+    # шукає кальки з російської в українській прозі й на англійській
+    # книзі був би без предмета; вимагати від нього англійського
+    # переліку кальок — вимога, у якій немає сенсу.
     #
-    # Це те саме, від чого застерігає `repo.TOOL_DIRS`, і саме тому
-    # питаємо його, а не вписуємо тут другу копію факту.
-    if p.suffix == ".py" and any(
-            str(rel).startswith(d + "/") for d in repo.TOOL_DIRS):
+    # Це послаблення правила, і воно зменшує число. Число, що впало від
+    # зміни правила, не є роботою, і сказано це тут, а не в звіті, бо
+    # звіт друкує наслідок, а причина мусить лежати поруч із кодом.
+    if p.suffix == ".py" and str(rel).startswith("factcheck/tools/"):
         return "english"
+    if p.suffix == ".py" and str(rel).startswith("tools/"):
+        return "ukrainian"
     if rel.parts[0] == "zvyazok":
         return "frozen"
     if rel.parts[0] != "factcheck":
@@ -211,7 +215,10 @@ def proba() -> int:
           cyrillic_share(
               (ROOT / "factcheck" / "METHOD.md").read_text(encoding="utf-8"))
           < PORIH)
-    probа("тула — англійська зона", zona(ROOT / "tools" / "docs.py") == "english")
+    probа("тула технології — англійська зона",
+          zona(ROOT / "factcheck" / "tools" / "docs.py") == "english")
+    probа("книжкова тула — не англійська зона",
+          zona(ROOT / "tools" / "calques.py") == "ukrainian")
     probа("картка — українська зона",
           zona(ROOT / "factcheck" / "cards" / "manual" / "05-elektronika.md") == "ukrainian")
     probа("лист — заморожений",
