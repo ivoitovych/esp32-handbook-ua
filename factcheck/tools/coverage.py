@@ -118,6 +118,7 @@ answers, and both are human or model work:
 from __future__ import annotations
 
 import re
+import pathlib
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -137,7 +138,7 @@ PORO_ZHNI = re.compile(r"^\s*$|^```|^:::|^<!--|^\s*[-=]{3,}\s*$")
 def zibraty_kartky() -> dict[str, set[int]]:
     pokryti: dict[str, set[int]] = defaultdict(set)
     for g in GRUPY:
-        katalog = ROOT / "factcheck" / g
+        katalog = config.cards_root() / g
         if not katalog.exists():
             continue
         for f in katalog.glob("*.md"):
@@ -290,8 +291,51 @@ def main(argv: list[str]) -> int:
     print("\ncoverage: змістовних рядків книги %d; накрито картками %d (%.1f %%); "
           "без картки %d"
           % (vsyoho, pokryto, 100 * pokryto / max(1, vsyoho), vsyoho - pokryto))
+    # `max(1, vsyoho)` у знаменнику рятує від ділення на нуль і рівно тому
+    # ховає найгірший випадок: нуль рядків книги друкується як «0.0 %», а
+    # нуль карток на нуль рядків — як успіх. Обидва означають «мені не
+    # дали чого міряти», і жоден не означає «покриття немає».
+    if vsyoho == 0 or pokryto == 0:
+        print("   ✗ міряти не було чого: рядків книги %d, накритих %d.\n"
+              "     Це не результат. Перевір `groups` у "
+              "`factcheck/book.yaml` і що дзеркало книги на місці."
+              % (vsyoho, pokryto))
+        return 1
     return 0
 
 
+def demo() -> int:
+    """Показ, і головний випадок — порожній вхід.
+
+    `coverage` рахує, скільки рядків книги накрито картками. Якщо теки
+    карток немає, накритих нуль — а «нуль накрито» друкується так само
+    впевнено, як «усе накрито». Саме на цьому `layer1` прожив кілька днів
+    після переїзду карток, і ця перевірка була вразлива так само."""
+    import tempfile
+    global ROOT, GRUPY
+    ok = True
+
+    def check(nazva: str, umova: bool) -> None:
+        nonlocal ok
+        print(f"   {'✓' if umova else '✗'} {nazva}: {umova}")
+        ok &= umova
+
+    spravzhniy, spravzhni_g = ROOT, GRUPY
+    with tempfile.TemporaryDirectory() as d:
+        t = pathlib.Path(d)
+        (t / "factcheck").mkdir()
+        ROOT, GRUPY = t, ("rozdily",)
+        config.ROOT = t
+        try:
+            got = main(["coverage"])
+        finally:
+            ROOT, GRUPY, config.ROOT = spravzhniy, spravzhni_g, spravzhniy
+        check("порожнє дерево — це провал, а не 100 %", got == 1)
+    print("\nпровалів:", 0 if ok else 1)
+    return 0 if ok else 1
+
+
 if __name__ == "__main__":
+    if "--demo" in sys.argv:
+        sys.exit(demo())
     sys.exit(main(sys.argv))

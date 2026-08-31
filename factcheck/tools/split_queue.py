@@ -81,7 +81,7 @@ RE_F = re.compile(
 def zibraty() -> tuple[list[dict], dict[str, list[dict]]]:
     vsi: list[dict] = []
     for g in GRUPY:
-        for f in sorted((FC / g).glob("*.md")):
+        for f in sorted((config.cards_root() / g).glob("*.md")):
             for m in RE_F.finditer(f.read_text(encoding="utf-8")):
                 vsi.append(m.groupdict())
     rozklad: dict[str, list[dict]] = collections.defaultdict(list)
@@ -121,7 +121,7 @@ def klasy() -> dict[str, int]:
     lich: dict[str, int] = collections.Counter()
     vz = _re.compile(r"klas:(\w+) -->")
     for g in GRUPY:
-        for f in sorted((FC / g).glob("*.md")):
+        for f in sorted((config.cards_root() / g).glob("*.md")):
             for m in vz.finditer(f.read_text(encoding="utf-8")):
                 lich[m.group(1)] += 1
     return dict(lich)

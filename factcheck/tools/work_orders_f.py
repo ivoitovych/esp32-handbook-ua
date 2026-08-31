@@ -51,6 +51,7 @@ import re
 import sys
 from pathlib import Path
 
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
@@ -102,7 +103,7 @@ def konteksty() -> dict[str, str]:
     """
     out: dict[str, str] = {}
     for grupa in ("manual", "dodatky", "kartky", "inserts"):
-        for f in sorted((ROOT / "factcheck" / grupa).glob("*.md")):
+        for f in sorted((config.cards_root() / grupa).glob("*.md")):
             for m in RE_KONTEKST.finditer(f.read_text(encoding="utf-8")):
                 k = (m.group("kontekst") or "").strip()
                 if k:

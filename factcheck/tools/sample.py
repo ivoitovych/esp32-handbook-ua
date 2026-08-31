@@ -92,7 +92,7 @@ def odynyci(klas: str) -> list[dict]:
 
     out: list[dict] = []
     for grupa in GRUPY:
-        katalog = ROOT / "factcheck" / grupa
+        katalog = config.cards_root() / grupa
         if not katalog.exists():
             continue
         for f in sorted(katalog.glob("*.md")):

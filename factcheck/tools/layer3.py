@@ -55,6 +55,7 @@ from __future__ import annotations
 import hashlib
 import re
 import subprocess
+import pathlib
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -1150,8 +1151,50 @@ def main() -> int:
     bidy = pidsumok["vygadane"] + pidsumok["zaglushka"] + pidsumok["pomylka"]
     if "--suvoro" in a:
         bidy += pidsumok["ne_znaydeno"] + pidsumok["nedosyazhne"]
+    # Нуль записів — не «жодної підробки», а «нема чого перевіряти».
+    # `layer1` і `coverage` прожили в цьому стані кілька днів після
+    # переїзду карток, друкуючи нулі як чистоту. Третій шар читає теку
+    # доказів і вразливий так само.
+    if not sum(pidsumok.values()):
+        print("   ✗ ЖОДНОГО запису не прочитано — це не «чисто», це "
+              "«нема чого перевіряти».\n     Перевір, що "
+              "`factcheck/evidence/` на місці.")
+        return 1
     return 1 if bidy else 0
 
 
+def demo() -> int:
+    """Показ на зіпсованому вході.
+
+    Три випадки, і третій — головний: порожня тека доказів мусить бути
+    провалом, а не тишею."""
+    import tempfile
+    global DOKAZY
+    ok = True
+
+    def check(nazva: str, umova: bool) -> None:
+        nonlocal ok
+        print(f"   {'✓' if umova else '✗'} {nazva}: {umova}")
+        ok &= umova
+
+    check("цитата, якої немає в тексті, не знаходиться підрядком",
+          "цього рядка немає" not in "текст джерела, у якому її нема")
+    check("дослівна цитата знаходиться",
+          "SOC_UART_NUM" in "#define SOC_UART_NUM 3")
+
+    spravzhni = DOKAZY
+    with tempfile.TemporaryDirectory() as d:
+        DOKAZY = pathlib.Path(d)
+        try:
+            got = main()
+        finally:
+            DOKAZY = spravzhni
+        check("порожня тека доказів — це провал, а не тиша", got == 1)
+    print("\nпровалів:", 0 if ok else 1)
+    return 0 if ok else 1
+
+
 if __name__ == "__main__":
+    if "--demo" in sys.argv:
+        sys.exit(demo())
     sys.exit(main())

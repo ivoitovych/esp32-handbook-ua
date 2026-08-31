@@ -82,7 +82,7 @@ def main(argv: list[str]) -> int:
     n = proza = komirka = 0
 
     for g in GRUPY:
-        for f in sorted((ROOT / "factcheck" / g).glob("*.md")):
+        for f in sorted((config.cards_root() / g).glob("*.md")):
             tekst = f.read_text(encoding="utf-8")
             for m in RE_ZAH.finditer(tekst):
                 ident, sha, src, ln, klas, vyd, cyt = m.groups()

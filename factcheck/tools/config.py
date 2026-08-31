@@ -103,6 +103,30 @@ def groups() -> tuple[str, ...]:
     return tuple(_cfg()["groups"])
 
 
+# Where the mirror of the book lives. Nine tools computed this path for
+# themselves as `ROOT / "factcheck" / <group>`, and after the cards moved
+# into `cards/` every one of them was looking at a directory that no
+# longer existed.
+#
+# `layer1` did not fail. It `continue`d past the missing directory,
+# examined ZERO cards, and printed a zero on every line of its report.
+# `make check` stayed green for days, asserting that there were no
+# discrepancies — because it had found no card in which to look for one.
+#
+# > A check that found no files and a check that found no faults print
+# > the same number.
+CARDS = "cards"
+
+
+def cards_root() -> Path:
+    return ROOT / "factcheck" / CARDS
+
+
+def card_dirs() -> list[Path]:
+    """The card directories, parallel to the book's. One definition."""
+    return [cards_root() / g for g in groups()]
+
+
 def demo() -> int:
     import tempfile
     ok = True
@@ -145,6 +169,9 @@ def demo() -> int:
               f"     {str(e).splitlines()[0]}")
     if configured is not None:
         check("this book's own file loads", configured)
+        check("the card mirror is where config says",
+              cards_root().is_dir() and
+              all(d.is_dir() for d in card_dirs()))
     print("\nfailures:", 0 if ok else 1)
     return 0 if ok else 1
 

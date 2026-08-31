@@ -11,9 +11,9 @@ the state.
 ## Where the book stands
 
 ```
-  claim units              8111   (+ 221 code blocks as context)
+  claim units              8110   (+ 221 code blocks as context)
   checked against a source or by calculation
-                           2359   29.1 %
+                           2358   29.1 %
   closed as a decision     3780   46.6 %   no external signal in the text
   still open               1920   23.7 %
 ```
@@ -28,7 +28,7 @@ so it is counted in neither column. `METHOD.md`, Part II, says why.
 
 | Status | Units | Share | What it asserts |
 |---|---:|---:|---|
-| `verbatim` | 2036 | 25.1 % | primary, quoted — the source was obtained and the extract copied |
+| `verbatim` | 2035 | 25.1 % | primary, quoted — the source was obtained and the extract copied |
 | `derived` | 230 | 2.8 % | primary, inferred — the source was obtained; the claim follows unambiguously |
 | `arithmetic` | 93 | 1.1 % | calculation — checked by arithmetic; no external source is needed |
 | `named-unreachable` | 178 | 2.2 % | secondary — the source cannot be reached from here; URL recorded, no quote |

@@ -70,6 +70,25 @@ EXEMPT = {
 }
 
 
+def demo_spans(text: str) -> list[tuple[int, int]]:
+    """Line ranges of demonstration bodies.
+
+    A demonstration builds paths that MUST NOT exist — that is what it
+    shows. Listing them in an EXEMPT set here would put a copy of another
+    file's strings inside this one, which is the defect `name_lists.py`
+    exists to catch. So the exemption is a rule, not a list: whatever a
+    function named `demo`/`proba` constructs is a demonstration."""
+    import ast
+    try:
+        tree = ast.parse(text)
+    except SyntaxError:
+        return []
+    return [(n.lineno, n.end_lineno or n.lineno)
+            for n in ast.walk(tree)
+            if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))
+            and n.name in {"demo", "proba", "samoperevirka"}]
+
+
 def literal_paths(source: dict[str, str] | None = None):
     """(tool, path) for every literal path into factcheck/."""
     # This file is not its own subject: it holds deliberately broken
@@ -83,7 +102,11 @@ def literal_paths(source: dict[str, str] | None = None):
                    for f in sorted((ROOT / d).glob("*.py"))
                    if f.name != "paths.py"})
     for f, t in files.items():
+        spans = demo_spans(t)
         for m in RE_PATH.finditer(t):
+            ryadok = t.count("\n", 0, m.start()) + 1
+            if any(a <= ryadok <= b for a, b in spans):
+                continue
             parts = [x for x in RE_PART.findall(m.group(1)) if x]
             if not parts:
                 continue

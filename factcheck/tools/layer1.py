@@ -73,6 +73,7 @@ being written down.
 from __future__ import annotations
 
 import re
+import pathlib
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -187,7 +188,7 @@ def main(argv: list[str]) -> int:
     n = proza = komirka = 0
 
     for g in GRUPY:
-        katalog = ROOT / "factcheck" / g
+        katalog = config.cards_root() / g
         if not katalog.exists():
             continue
         for f in sorted(katalog.glob("*.md")):
@@ -285,8 +286,85 @@ def main(argv: list[str]) -> int:
         print("   текст на місці, номер зсунувся %4d   ← рендер застарів"
               % len(zsuv))
         print("   без блоку контексту            %4d" % len(bez_kontekstu))
+    # Нуль оглянутих карток — не «розбіжностей немає», а «шукати не було
+    # де». Ці два стани друкували ОДНЕ Й ТЕ САМЕ, і саме так цей файл
+    # прожив кілька днів після переїзду карток у `cards/`: він дивився в
+    # `factcheck/manual/`, тихо `continue` на відсутній теці, оглядав нуль
+    # карток і звітував чотири нулі. `make check` був зелений і означав
+    # рівно ніщо.
+    if n == 0:
+        print("\nlayer1: ЖОДНОЇ картки не оглянуто — це не «чисто», це "
+              "«нема де шукати».\n   Перевір, що дзеркало книги лежить "
+              "там, куди вказує `factcheck/book.yaml`.")
+        return 1
     return 1 if (nemaye or kontekst_bez_tverdzhennya) else 0
 
 
+def demo() -> int:
+    """Показ на зіпсованому вході — і на порожньому.
+
+    Другий випадок важливіший за перший. Перевірка, що ловить підроблену
+    картку, але мовчки приймає порожній вхід, ловить рівно доти, доки
+    хтось не пересуне теку."""
+    import tempfile
+    global ROOT, GRUPY
+    ok = True
+
+    def check(nazva: str, umova: bool) -> None:
+        nonlocal ok
+        print(f"   {'✓' if umova else '✗'} {nazva}: {umova}")
+        ok &= umova
+
+    spravzhniy, spravzhni_g = ROOT, GRUPY
+    # Формат — той самий, що друкує `factcheck.py`: твердження цитатою,
+    # контекст в огорожі. Показ на вигаданому форматі довів би лише те,
+    # що я його вигадав.
+    kartka = ("<!-- fc id:T-01-001 sha:deadbeef src:rozdily/01.md:3 "
+              "klas:F -->\n"
+              "### T-01-001 · proza · `rozdily/01.md`\n\n"
+              "**Твердження, коротко**\n\n> {tv}\n\n"
+              "**Контекст**\n\n```\n{kx}\n```\n\n---\n")
+    vypadky = [
+        ("справна картка мовчить", "рядок книги", "рядок книги і ще щось", 0),
+        ("текст, якого в книзі немає, ловиться",
+         "цього в книзі немає", "рядок книги і ще щось", 1),
+        ("контекст без твердження ловиться",
+         "рядок книги", "зовсім інший абзац", 1),
+    ]
+    for nazva, tv, kx, ocik in vypadky:
+        with tempfile.TemporaryDirectory() as d:
+            t = pathlib.Path(d)
+            (t / "rozdily").mkdir()
+            (t / "rozdily" / "01.md").write_text(
+                "# Р\n\nрядок книги і ще щось\n", encoding="utf-8")
+            kart = t / "factcheck" / "cards" / "rozdily"
+            kart.mkdir(parents=True)
+            (kart / "01.md").write_text(kartka.format(tv=tv, kx=kx),
+                                        encoding="utf-8")
+            ROOT, GRUPY = t, ("rozdily",)
+            config.ROOT = t
+            try:
+                got = main(["layer1", "--tykho"])
+            finally:
+                ROOT, GRUPY, config.ROOT = spravzhniy, spravzhni_g, spravzhniy
+            check(nazva, got == ocik)
+
+    with tempfile.TemporaryDirectory() as d:
+        t = pathlib.Path(d)
+        (t / "factcheck").mkdir()
+        ROOT, GRUPY = t, ("rozdily",)
+        config.ROOT = t
+        try:
+            got = main(["layer1", "--tykho"])
+        finally:
+            ROOT, GRUPY, config.ROOT = spravzhniy, spravzhni_g, spravzhniy
+        check("НУЛЬ карток — це провал, а не «чисто»", got == 1)
+
+    print("\nпровалів:", 0 if ok else 1)
+    return 0 if ok else 1
+
+
 if __name__ == "__main__":
+    if "--demo" in sys.argv:
+        sys.exit(demo())
     sys.exit(main(sys.argv))

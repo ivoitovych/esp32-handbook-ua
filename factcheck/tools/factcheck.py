@@ -957,7 +957,8 @@ def sketch() -> int:
             chastyny = [
                 f"# Фактчекінг: `{f.relative_to(ROOT)}`\n",
                 f"Одиниць твердження: **{len(odynyci)}**. "
-                "Клас доказу й формат запису — `factcheck/SCHEMA.md`.\n",
+                "Статус доказу й формат запису — `factcheck/METHOD.md`, "
+                "частина II.\n",
                 "Цей файл **генерується**: текст книги береться з джерела, "
                 "докази — з `factcheck/evidence/`. Правити вручну нема сенсу.\n",
                 # Сказано раз на файл, а не на кожній із тисяч карток:
@@ -1122,7 +1123,7 @@ def sketch() -> int:
 def zbir_usikh() -> list[dict]:
     out = []
     for p in sorted(FC.rglob("*.md")):
-        if p.name in ("README.md", "SCHEMA.md", "STATUS.md", "SOURCES.md"):
+        if p.name in ("README.md", "METHOD.md", "REPORT.md"):
             continue
         t = p.read_text(encoding="utf-8")
         for sh in re.split(r"(?=<!--\s*fc\s)", t):

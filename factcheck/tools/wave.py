@@ -43,6 +43,7 @@ import random
 import re
 import sys
 
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
@@ -103,7 +104,7 @@ def konteksty() -> dict[str, str]:
     import layer1
     out: dict[str, str] = {}
     for g in ("manual", "dodatky", "kartky", "inserts"):
-        d = ROOT / "factcheck" / g
+        d = config.cards_root() / g
         if not d.exists():
             continue
         for f in sorted(d.glob("*.md")):

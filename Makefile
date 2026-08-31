@@ -112,6 +112,9 @@ cache-vs-book:
 # і це знайшлося читанням. Читання не масштабується й не працює в CI.
 docs:
 	@$(PY) factcheck/tools/config.py --demo
+	@$(PY) factcheck/tools/layer1.py --demo
+	@$(PY) factcheck/tools/layer3.py --demo
+	@$(PY) factcheck/tools/coverage.py --demo
 	@$(PY) factcheck/tools/paths.py
 	@$(PY) factcheck/tools/report.py
 	@$(PY) factcheck/tools/docs.py

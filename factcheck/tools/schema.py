@@ -40,6 +40,7 @@ import sys
 
 import yaml
 
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
@@ -145,7 +146,7 @@ def perevir_zapysy(zap) -> list[str]:
 def perevir_kartky() -> list[str]:
     bidy = []
     for g in ("manual", "kartky", "dodatky", "inserts"):
-        for f in sorted((ROOT / "factcheck" / g).glob("*.md")):
+        for f in sorted((config.cards_root() / g).glob("*.md")):
             t = f.read_text(encoding="utf-8")
             shmatky = RE_KARTKA.split(t)
             for i in range(1, len(shmatky), 4):
