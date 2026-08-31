@@ -3,9 +3,10 @@
 > **generated** — `factcheck/tools/report.py`. Editing it by hand only moves the
 > next run's diff, never the state it describes.
 
-What has been checked in *Довідник ESP32*, against what, and what is
-left. The method that produced these numbers — and the reasoning behind
-every status below — is in `METHOD.md`; this document is only the state.
+What has been checked in *Довідник ESP32*, against what, and what
+is left. The method that produced these numbers — and the reasoning
+behind every status below — is in `METHOD.md`; this document is only
+the state.
 
 ## Where the book stands
 

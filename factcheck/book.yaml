@@ -1,0 +1,16 @@
+# What is specific to this book. The technology reads it; no tool repeats it.
+#
+# Before this file existed, `groups` lived as a hardcoded `GRUPY` in eight
+# separate tools and the title lived in `report.py`. The eight copies
+# agreed, which is the dangerous state: copies do not lie until the fact
+# changes, and then they lie all at once.
+
+title: Довідник ESP32
+
+# The book's own directories, in reading order. One registry file is kept
+# per file found here, under `factcheck/cards/`, with the same name.
+groups:
+  - manual
+  - kartky
+  - dodatky
+  - inserts

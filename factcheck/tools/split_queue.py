@@ -26,12 +26,17 @@ import re
 import sys
 from pathlib import Path
 
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import factcheck  # noqa: E402  — після правки sys.path
 FC = ROOT / "factcheck"
-GRUPY = ("manual", "kartky", "dodatky", "inserts")
+# `GRUPY` була вісьмома копіями того самого факту — теками цієї
+# книги. Копії збігалися, і саме тому були небезпечні: набір копій
+# не бреше, доки факт не зміниться, а тоді бреше всіма одразу.
+# Тепер це дані: `factcheck/book.yaml`.
+GRUPY = config.groups()
 
 # Порядок важливий: одиниця потрапляє в перший кошик, який її впізнав.
 # Тому специфічне (назва мікросхеми) стоїть перед загальним (число з

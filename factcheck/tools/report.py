@@ -42,6 +42,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 FC = ROOT / "factcheck"
 TARGET = FC / "REPORT.md"
@@ -96,11 +97,10 @@ def assemble() -> str:
     a("> **generated** — `factcheck/tools/report.py`. Editing it by hand only moves the")
     a("> next run's diff, never the state it describes.")
     a("")
-    a("What has been checked in *Довідник ESP32*, against what, and what is")
-    a("left. The method that produced these numbers — and the reasoning "
-      "behind")
-    a("every status below — is in `METHOD.md`; this document is only the "
-      "state.")
+    a(f"What has been checked in *{config.title()}*, against what, and what")
+    a("is left. The method that produced these numbers — and the reasoning")
+    a("behind every status below — is in `METHOD.md`; this document is only")
+    a("the state.")
     a("")
     a("## Where the book stands")
     a("")

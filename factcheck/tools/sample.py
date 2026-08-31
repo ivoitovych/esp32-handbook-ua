@@ -56,8 +56,13 @@ import yaml
 
 import helper_dumps
 
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
-GRUPY = ("manual", "kartky", "dodatky", "inserts")
+# `GRUPY` була вісьмома копіями того самого факту — теками цієї
+# книги. Копії збігалися, і саме тому були небезпечні: набір копій
+# не бреше, доки факт не зміниться, а тоді бреше всіма одразу.
+# Тепер це дані: `factcheck/book.yaml`.
+GRUPY = config.groups()
 CIL = ROOT / "factcheck" / "reports" / "BRIEF-SAMPLE.md"
 
 NASINNYA = 20260826

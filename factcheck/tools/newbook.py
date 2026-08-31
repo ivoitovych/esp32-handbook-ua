@@ -31,8 +31,16 @@ next book starts.
 
   1. creates `<target>/factcheck/` with the working directories
   2. copies METHOD.md and every tool
-  3. writes a starter README.md and an empty REPORT.md
+  3. writes a starter README.md, an empty REPORT.md, and `book.yaml`
   4. **runs the new tree's own self-checks** and fails if they fail
+  5. checks that the copy REFUSES to run until `book.yaml` is filled in
+
+Step 5 matters as much as step 4. A copy that runs unconfigured would run
+against the wrong directories and report a confident zero, which is the
+defect family this project catalogues above all others.
+
+**The one thing to do next: edit `<target>/factcheck/book.yaml`.** The
+title and the book's own directories live there and nowhere else.
 
 Step 4 is the whole point. A copy that has not been shown to run is a
 claim, and this file exists because claims drift.
@@ -58,6 +66,27 @@ from repo import ROOT  # noqa: E402  (root is found, not counted)
 # technology consists of, and `name_lists.py` checks that every name in it
 # is the name of a file that exists.
 TRAVELS = ["METHOD.md"]
+
+# What does NOT travel, and must be written fresh: everything specific to
+# a book. Until `book.yaml` existed, these two facts lived in the tools —
+# the chapter directories as a hardcoded `GRUPY` in eight of them, the
+# title in `report.py` — so a new book inherited another book's structure
+# and another book's name, silently, and would have found them by grep.
+BOOK_YAML = """# What is specific to this book. The technology reads it; no
+# tool repeats it. **Edit this before anything else.**
+
+title: PUT THE BOOK'S NAME HERE
+
+# The book's own directories, in reading order, relative to the repository
+# root. One registry file is kept per file found here, under
+# `factcheck/cards/`, with the same name.
+#
+# These must exist. A group that does not exist is silently empty, and an
+# empty group reads as a book with no text in it — so `config.py` refuses
+# to load rather than let that happen.
+groups:
+  - manual
+"""
 
 # The new book's empty directories. No data travels — none at all.
 DIRS = ["cards", "evidence", "reports", "work/queues", "work/triage",
@@ -126,6 +155,7 @@ def provision(target: Path, dry_run: bool = False) -> int:
             "> measured yet: run `factcheck.py sketch` first.\n",
             encoding="utf-8")
         (fc / ".gitignore").write_text(GITIGNORE, encoding="utf-8")
+        (fc / "book.yaml").write_text(BOOK_YAML, encoding="utf-8")
     n = len(list((fc / "tools").glob("*.py"))) if not dry_run else 0
     print(f"  copied {len(TRAVELS)} document(s), {n} tools, "
           f"{len(DIRS)} directories")
@@ -141,6 +171,7 @@ def prove(target: Path) -> int:
     ok = True
     for tool, arg in (("task_spec.py", "--version"),
                       ("paths.py", "--demo"),
+                      ("config.py", "--demo"),
                       ("language.py", "--proba")):
         r = subprocess.run([sys.executable, str(tools / tool), arg],
                            capture_output=True, text=True, cwd=target)
@@ -160,7 +191,23 @@ def prove(target: Path) -> int:
     same = here.strip() == there.strip()
     print(f"   {'✓' if same else '✗'} order_version carried over: "
           f"{here.strip()} vs {there.strip()}")
-    return 0 if (ok and same) else 1
+
+    # І остання перевірка — найважливіша для нової книги: копія мусить
+    # ВІДМОВИТИСЯ працювати, доки її не налаштували. Заготовка `book.yaml`
+    # називає теку `manual`, якої в новому дереві може не бути; якщо
+    # `config.py` таке проковтне, уся технологія піде по порожньому
+    # переліку файлів і доповість упевнений нуль.
+    #
+    # Тобто ми перевіряємо не те, що копія працює, а те, що вона не
+    # вдає роботу.
+    r = subprocess.run([sys.executable, str(tools / "config.py")],
+                       capture_output=True, text=True, cwd=target)
+    nalashtovana = (target / "manual").is_dir()
+    dobre = (r.returncode == 0) if nalashtovana else (r.returncode != 0)
+    print(f"   {'✓' if dobre else '✗'} config refuses to run unconfigured"
+          if not nalashtovana else
+          f"   {'✓' if dobre else '✗'} config loads")
+    return 0 if (ok and same and dobre) else 1
 
 
 def main() -> int:

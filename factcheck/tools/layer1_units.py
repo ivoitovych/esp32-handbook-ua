@@ -56,8 +56,13 @@ import re
 import sys
 from pathlib import Path
 
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
-GRUPY = ("manual", "dodatky", "kartky", "inserts")
+# `GRUPY` була вісьмома копіями того самого факту — теками цієї
+# книги. Копії збігалися, і саме тому були небезпечні: набір копій
+# не бреше, доки факт не зміниться, а тоді бреше всіма одразу.
+# Тепер це дані: `factcheck/book.yaml`.
+GRUPY = config.groups()
 RE_ZAH = re.compile(
     r"<!-- fc id:(\S+) sha:(\S+) src:(\S+?):(\d+) klas:(\S+) -->\n"
     r"### \S+ · (\S+) · [^\n]*\n\n\*\*Книга каже, дослівно:\*\*\n\n"

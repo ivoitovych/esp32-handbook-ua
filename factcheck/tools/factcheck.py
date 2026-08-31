@@ -32,8 +32,13 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
-GRUPY = ("kartky", "manual", "dodatky", "inserts")
+# `GRUPY` була вісьмома копіями того самого факту — теками цієї
+# книги. Копії збігалися, і саме тому були небезпечні: набір копій
+# не бреше, доки факт не зміниться, а тоді бреше всіма одразу.
+# Тепер це дані: `factcheck/book.yaml`.
+GRUPY = config.groups()
 FC = ROOT / "factcheck"
 
 # Стани перевірки. Одна таблиця на всіх, і ключ у ній — СЛОВО.
