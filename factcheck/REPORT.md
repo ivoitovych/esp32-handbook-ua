@@ -45,7 +45,7 @@ mechanically, for want of a digit, identifier or unit in the text, and
 it reads to a reader as *no source exists*. Those are not the same
 thing.
 
-A random sample of — units measured how often that
+A random sample of 160 units measured how often that
 reading is wrong. The measurement, its seed and its sample are in
 `reports/MEASURE-NO-SIGNAL.md`; the sweep that harvested sources from
 the same status is in `reports/SWEEP-NO-SIGNAL.md`, and **its percentage
@@ -62,7 +62,7 @@ caught them are in `reports/REFUTED.md`.
 ```
   evidence records            0
   quotes checked verbatim against the source document
-                              —   reports/QUOTES.md
+                           1393   reports/QUOTES.md
 ```
 
 Sources that cannot be reached from the environment this book is made
