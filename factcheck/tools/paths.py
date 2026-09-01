@@ -44,8 +44,19 @@ from pathlib import Path
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 FC = ROOT / "factcheck"
 
-# `"factcheck" / "a" / "b"` or `FC / "a" / "b"`, however many segments.
-RE_PATH = re.compile(r'(?:"factcheck"|\bFC\b)((?:\s*/\s*"[^"]*")+)')
+# `"factcheck" / "a" / "b"`, `FC / "a" / "b"`, or `"tools" / "a"` — however
+# many segments.
+#
+# The `"tools"` arm was added after two tools imported `order_m2.py` from
+# `ROOT / "tools"`, where it no longer lives. This check had been reading
+# only paths into `factcheck/`, so a path into the OTHER tool directory
+# was outside its subject — and both call sites failed at import time,
+# days after the move, in tools the gate does not run.
+#
+# A check scoped to one directory reports about that directory. What it
+# leaves out, it leaves out silently.
+RE_PATH = re.compile(
+    r'(?:"factcheck"|\bFC\b|(?<![\w"])"tools")((?:\s*/\s*"[^"]*")+)')
 RE_PART = re.compile(r'"([^"]*)"')
 
 # Demonstration paths: these MUST NOT exist — that is what they show.
@@ -118,8 +129,10 @@ def literal_paths(source: dict[str, str] | None = None):
             try:
                 imya = str(f.resolve().relative_to(ROOT))
             except ValueError:
-                imya = f.name          # показовий вхід, не справжній файл
-            yield imya, "factcheck/" + "/".join(segments)
+                imya = f.name          # a demonstration input, not a file
+            korin = "tools" if m.group(0).lstrip().startswith('"tools"') \
+                else "factcheck"
+            yield imya, korin + "/" + "/".join(segments)
 
 
 def check_all(source: dict[str, str] | None = None) -> list[str]:
@@ -170,7 +183,8 @@ def main() -> int:
         return 1
     for b in problems:
         print(f"   ✗ {b}")
-    print(f"\npaths: {len(set(literal_paths()))} literal paths into factcheck/, "
+    print(f"\npaths: {len(set(literal_paths()))} literal paths into "
+          f"factcheck/ and tools/, "
           f"{len(problems)} broken")
     return 1 if problems else 0
 

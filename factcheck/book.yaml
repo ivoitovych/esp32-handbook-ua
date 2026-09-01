@@ -14,3 +14,30 @@ groups:
   - kartky
   - dodatky
   - inserts
+
+# The language of the book, for the checks that read its prose.
+#
+# `modality.py` compares a prescription in the book against a permission
+# in the source ("the book says MUST, the datasheet says MAY"). The words
+# that carry that force are language-specific: on an English book this
+# whole block is different, and a tool carrying Ukrainian modal verbs
+# would have matched nothing and printed a confident zero.
+#
+# Optional. If absent, the check says so and skips, rather than reporting
+# a zero it did not earn.
+modality:
+  # A prescription in the book: the force a source must support.
+  prescriptive: "\\b(має|мусить|мусять|не можна|завжди|ніколи|обов'язково)\\b"
+
+  # «Має» is the subtlest word in the whole tool. In Ukrainian it means
+  # "must", "possesses" and "is expected to" alike. The first version did
+  # not tell them apart, and four of six matches were false:
+  #
+  #     «вона має ціну»            — possession
+  #     «стан, який має пережити»  — a requirement on the state
+  #     «має працювати»            — expectation
+  #     «має бути близько 3.3 В»   — an expected instrument reading
+  #
+  # The word itself cannot be dropped: both GENUINE cases rest on it too.
+  # So constructions are filtered out, not the word.
+  not_prescriptive: "має\\s+(?:ціну|бути|стати|сенс|значення|працювати|пережити|вигляд|перевагу|недолік|власн\\w+|свій|свою|своє)"

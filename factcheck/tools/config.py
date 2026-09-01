@@ -127,6 +127,22 @@ def card_dirs() -> list[Path]:
     return [cards_root() / g for g in groups()]
 
 
+def modality() -> dict | None:
+    """Language-specific patterns for `modality.py`, or None.
+
+    Optional on purpose: a book may not run that check. But the absence
+    must be VISIBLE — a tool carrying another language's modal verbs
+    matches nothing and prints a zero indistinguishable from "no
+    prescriptions found"."""
+    d = _cfg().get("modality")
+    if not d:
+        return None
+    if not isinstance(d, dict) or not d.get("prescriptive"):
+        raise ConfigError(
+            f"{FILE}: `modality` needs at least `prescriptive`")
+    return d
+
+
 def demo() -> int:
     import tempfile
     ok = True
@@ -169,6 +185,8 @@ def demo() -> int:
               f"     {str(e).splitlines()[0]}")
     if configured is not None:
         check("this book's own file loads", configured)
+        check("optional blocks are optional",
+              modality() is None or "prescriptive" in modality())
         check("the card mirror is where config says",
               cards_root().is_dir() and
               all(d.is_dir() for d in card_dirs()))

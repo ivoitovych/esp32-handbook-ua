@@ -1,67 +1,77 @@
 #!/usr/bin/env python3
-"""Модальність: припис у книзі проти дозволу в джерелі.
+"""Modality: a prescription in the book against a permission in the source.
 
-## Рід хиби, якого не ловив жоден із трьох шарів
+## A kind of fault none of the three layers caught
 
-Знайшов помічник за два долари, не інструмент. Одиниця `T-11-062`:
+Found by a two-dollar helper, not by a tool. Unit `T-11-062`:
 
-    книга:   «Саме він має лежати в git, а не `sdkconfig`.»
-    джерело: «The sdkconfig file **may or may not** be added to the
-              source control system … It is **recommended** to commit
-              sdkconfig.defaults»
+    the book:   «Саме він має лежати в git, а не `sdkconfig`.»
+    the source: "The sdkconfig file **may or may not** be added to the
+                 source control system … It is **recommended** to commit
+                 sdkconfig.defaults"
 
-Цитата дослівна, джерело справжнє, факт правильний — **усі три шари
-проходять**. Розходиться лише **модальність**: джерело дозволяє,
-книга приписує.
+The quote is verbatim, the source is real, the fact is right — **all
+three layers pass**. What differs is only the **modality**: the source
+permits, the book prescribes.
 
-> Це не хиба факту й не хиба джерела. Це припис, поданий так, ніби він
-> задокументований, — і третій шар його не ловить за побудовою, бо
-> звіряє символи, а не силу твердження.
+> This is not a fault of fact nor a fault of source. It is a prescription
+> presented as though documented — and layer 3 cannot catch it by
+> construction, because it compares characters, not the force of a claim.
 
-Такий припис не обов'язково хибний: довідник для того й пишуть, щоб
-давати обґрунтовану позицію. Але читач має бачити різницю між «так
-велить документація» і «так вважає автор, і ось чому».
+Such a prescription is not necessarily wrong: a handbook exists partly to
+give a reasoned position. But the reader must be able to tell "the
+documentation requires this" from "the author holds this, and here is
+why".
 
-## Чому це звіт, а не ворота
+## Why this is a report, not a gate
 
-Перша редакція виразу давала **50 збігів**, і перші ж два перевірені
-виявилися хибними — причому повчально:
+The first version of the pattern gave **50 matches**, and the first two
+checked were both false — instructively so:
 
-    книга:   «Потрібне зниження **обов'язково**»
-    джерело: «Stresses above … **may cause** permanent damage»
+    the book:   «Потрібне зниження **обов'язково**»
+    the source: "Stresses above … **may cause** permanent damage"
 
-`may` тут — не дозвіл, а **попередження**. Книжкове «обов'язково»
-цілком виправдане межею 3.6 В.
+`may` here is not a permission but a **warning**. The book's
+"обов'язково" is entirely justified by the 3.6 V limit.
 
-## Три кола відсіву, і що вони коштували
+## Three rounds of filtering, and what they cost
 
-| Редакція | Збігів | Хибних | Що відсіяно |
+| Version | Matches | False | What was filtered out |
 |---|---:|---:|---|
-| перша | 50 | ~48 | `may cause` — це попередження, не дозвіл |
-| друга | 6 | 4 | «має ціну», «має бути» — володіння й очікування |
-| третя | 2 | 1 | `Recommended` у **заголовку таблиці** даташита |
-| чинна | **1** | 0 | — |
+| first | 50 | ~48 | `may cause` — a warning, not a permission |
+| second | 6 | 4 | "має ціну", "має бути" — possession and expectation |
+| third | 2 | 1 | `Recommended` in a datasheet **table heading** |
+| current | **1** | 0 | — |
 
-Тобто з п'ятдесятьох початкових збігів справжній **один**, і щоб його
-побачити, інструмент довелося виправити тричі — щоразу на власних же
-знахідках, а не на міркуванні.
+So of fifty initial matches exactly **one** is real, and seeing it took
+three corrections to the tool — each time on its own findings, not on
+reasoning.
 
-Це і є ціна цього роду перевірки: **вона шукає різницю в силі
-твердження, а сила твердження — річ мовна.** Три відсіви вище — не
-хитрощі, а три способи, якими мова вдає модальність там, де її немає.
+That is the price of this kind of check: **it looks for a difference in
+the force of a claim, and force is a property of language.** The three
+filters above are not tricks but three ways language imitates modality
+where there is none.
 
-Останній випадок відсіву варто знати окремо. `T-06-027`, книга:
-«джерело для ESP32 з Wi-Fi **має тягнути** щонайменше 1 А» — при тому,
-що даташит дає мінімум 0.5 А. Виглядає як припис проти джерела. Але
-наступним абзацом книга сама пише: «500 мА — це не чиясь наївність, а
-паспортний мінімум самої Espressif», і пояснює, чому радить більше.
+The last of them is worth knowing separately. `T-06-027`, the book: "a
+supply for an ESP32 with Wi-Fi **must** deliver at least 1 A" — while the
+datasheet gives a minimum of 0.5 A. It looks like a prescription against
+the source. But the very next paragraph the book says: "500 mA is not
+somebody's naivety, it is Espressif's own rated minimum", and explains
+why it advises more.
 
-> **Усвідомлене розходження з джерелом, назване вголос, — це не хиба
-> модальності, а те, заради чого довідник і пишуть.** Хиба — коли
-> розходження є, а читач про нього не знає.
+> **A deliberate divergence from the source, stated aloud, is not a fault
+> of modality — it is what a handbook is written for.** The fault is a
+> divergence the reader is not told about.
 
-Судити все одно має людина: чи припис обґрунтований, чи його треба
-пом'якшити. Тому це рядок звіту, а не зупинка випуску.
+A person still has to judge whether a prescription is justified or should
+be softened. So this is a line in a report, not a stop on the release.
+
+## The words are the book's, not the tool's
+
+The patterns live in `factcheck/book.yaml`. They are Ukrainian here
+because this book is; on another book they are different words, and a
+tool carrying these would match nothing and print a confident zero.
+Absent configuration means the check says so and skips.
 
     factcheck/tools/modality.py [-v]
 """
@@ -73,37 +83,22 @@ import sys
 
 import yaml
 
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
-# Припис у книзі: сила, яку джерело мусить підтверджувати.
-RE_PRYPYS = re.compile(
-    r"\b(має|мусить|мусять|не можна|завжди|ніколи|обов'язково)\b", re.I)
-
-# **«Має» — найтонше місце всього інструмента.** Українською воно значить
-# і «мусить», і «володіє», і «очікується». Перша редакція не розрізняла
-# їх, і з шести збігів чотири були хибні:
+# A permission in the source. **Careful with `may`**: `may cause`,
+# `may result`, `may lead` are warnings about a consequence — the
+# opposite of a permission. The first version did not tell them apart and
+# gave 50 matches instead of 6.
 #
-#     «вона має ціну»            — володіння
-#     «стан, який має пережити»  — вимога до стану, не до читача
-#     «має працювати»            — очікування
-#     «має бути близько 3.3 В»   — очікуване показання приладу
-#
-# Прибрати саме слово не можна: обидва **справжні** випадки теж на
-# ньому. Тому відсіюються конструкції, а не слово.
-RE_NE_PRYPYS = re.compile(
-    r"має\s+(?:ціну|бути|стати|сенс|значення|працювати|пережити|вигляд"
-    r"|перевагу|недолік|власн\w+|свій|свою|своє)", re.I)
+# `Recommended` in a **table heading** ("Table 5-2. Recommended Power
+# Supply Characteristics") is the name of a datasheet section, not the
+# modality of a claim. The third kind of false positive, found on
+# `T-06-027`.
+RE_HEADING = re.compile(r"[Rr]ecommended\s+[A-Z]\w+\s+[A-Z]\w+")
 
-# Дозвіл у джерелі. **Обережно з `may`**: `may cause`, `may result`,
-# `may lead` — це попередження про наслідок, протилежне дозволу.
-# Перша редакція їх не відрізняла й давала 50 збігів замість 6.
-# `Recommended` у **заголовку таблиці** («Table 5-2. Recommended Power
-# Supply Characteristics») — це назва розділу даташита, а не модальність
-# твердження. Третій рід хибного спрацювання, знайдений на `T-06-027`.
-RE_ZAHOLOVOK = re.compile(r"[Rr]ecommended\s+[A-Z]\w+\s+[A-Z]\w+")
-
-RE_DOZVIL = re.compile(
+RE_PERMISSION = re.compile(
     r"\b(?:it is )?recommended\b"
     r"|\bmay or may not\b"
     r"|\boptional(?:ly)?\b"
@@ -117,38 +112,54 @@ def main() -> int:
     import factcheck
     import sample
 
-    odyn = [u for k in factcheck.ALL_CLASSES for u in sample.odynyci(k)]
-    znayd = []
+    words = config.modality()
+    if not words:
+        print("modality: no `modality` block in factcheck/book.yaml — the "
+              "check is SKIPPED,\n   not passed. The words that carry a "
+              "prescription are the book's language.")
+        return 0
+    re_prescriptive = re.compile(words["prescriptive"], re.I)
+    re_not = (re.compile(words["not_prescriptive"], re.I)
+              if words.get("not_prescriptive") else None)
+
+    units = [u for k in factcheck.ALL_CLASSES for u in sample.odynyci(k)]
+    found = []
     for f in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
         try:
-            z = yaml.safe_load(f.read_text(encoding="utf-8")) or []
+            recs = yaml.safe_load(f.read_text(encoding="utf-8")) or []
         except Exception:
             continue
-        for r in z:
+        for r in recs:
             if (not isinstance(r, dict)
-                or factcheck.status_of(r) not in ("verbatim", "derived")):
+                    or factcheck.status_of(r) not in ("verbatim", "derived")):
                 continue
-            cyt = str(r.get("quote") or "")
-            m = RE_DOZVIL.search(cyt)
-            if not m or RE_ZAHOLOVOK.search(cyt):
+            quote = str(r.get("quote") or "")
+            m = RE_PERMISSION.search(quote)
+            if not m or RE_HEADING.search(quote):
                 continue
             try:
                 rx = re.compile(str(r.get("match", "")))
             except re.error:
                 continue
-            for u in odyn:
+            for u in units:
                 if (rx.search(u["tekst"])
-                        and RE_PRYPYS.search(u["tekst"])
-                        and not RE_NE_PRYPYS.search(u["tekst"])):
-                    znayd.append((u["id"], f.name, u["tekst"], m.group(0)))
+                        and re_prescriptive.search(u["tekst"])
+                        and not (re_not and re_not.search(u["tekst"]))):
+                    found.append((u["id"], f.name, u["tekst"], m.group(0)))
+
+    # Нуль одиниць — не «нуль розходжень». Порожній реєстр друкує те саме.
+    if not units:
+        print("   ✗ no units read at all — this is not a clean result")
+        return 1
 
     if "-v" in sys.argv:
-        for oid, fayl, tekst, slovo in znayd:
-            print(f"   · {oid}: «{slovo}» у джерелі, припис у книзі")
-            print(f"        {tekst[:96]}")
-            print(f"        ← {fayl}")
-    print(f"modality: приписів проти дозволу в джерелі: {len(znayd)} "
-          f"— судить людина, це не помилка сама по собі")
+        for uid, fname, text, word in found:
+            print(f"   · {uid}: «{word}» in the source, a prescription in "
+                  f"the book")
+            print(f"        {text[:96]}")
+            print(f"        ← {fname}")
+    print(f"modality: prescriptions against a permission in the source: "
+          f"{len(found)} — a person judges; this is not an error in itself")
     return 0
 
 
