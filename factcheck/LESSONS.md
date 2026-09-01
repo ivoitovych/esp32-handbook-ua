@@ -730,6 +730,21 @@ verdict wearing a status's clothes; a check filtering on its own author's
 field; whether a file was opened before it was classified; a unit
 carrying two claims.
 
+**A heading is not a claim, and neither is anything else that speaks
+about the book rather than the world.** A heading names a topic; what it
+asserts — that this topic exists and is in scope — has no external
+referent even in principle, and the review that settles it is the
+table-of-contents review. Measured: 850 heading lines, 744 distinct
+texts, **0** of 8331 units a heading. Two headings carry a value rather
+than a name; both are covered by the units beneath them, which quote the
+heading in their own context block.
+
+The general form is worth more than the case: **before asking how a claim
+is known, ask what it is about.** A statement about the book's structure,
+its own registry, or its table of contents is not a candidate for
+external checking, and putting it in the base inflates the denominator of
+every percentage with work that could never be done.
+
 **The granularity of the splitter is itself a measured quantity** —
 roughly an eighth of one status is not claims at all — and no tool
 distinguishes "not checked" from "not a claim".

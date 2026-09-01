@@ -147,6 +147,77 @@ def zibraty_kartky() -> dict[str, set[int]]:
     return pokryti
 
 
+# A heading carrying a VALUE rather than a name. Not the broad signal
+# pattern — that one matches any chip or protocol name, and a heading
+# naming its topic ("RTC domain and ULP") is exactly what a heading is
+# for. This is the narrow case: a number with a unit, a hex address, a
+# pin. Such a heading asserts something an external document could
+# confirm, which is the one shape that would make the exclusion of
+# headings from the registry unsafe.
+RE_HEADING_VALUE = re.compile(
+    r"\d+\s*(?:мА|мкА|А|В|мВ|кОм|Ом|МОм|МГц|кГц|Гц|МБ|КБ|ГБ|біт|байт|"
+    r"мс|мкс|°C|дБм|мм|см|%)|0x[0-9A-Fa-f]+|GPIO\s?\d+|IO\d+")
+
+# The two that exist today, and why each is safe. A heading listed here
+# has been read and found to name the topic of the section beneath it,
+# whose units quote the heading inside their own context block.
+#
+# This is a baseline, not an exemption by pattern: a NEW heading carrying
+# a value will appear and must be read, which is the entire point.
+HEADINGS_WITH_VALUES_SEEN = {
+    "`rst:0xf` — brownout",
+    "Часті винуватці 5 В",
+}
+
+
+def headers_are_not_claims() -> list[str]:
+    """Headings stay out of the registry. This watches the one exception.
+
+    **Why headings are excluded at all.** A heading names a topic. What it
+    asserts — that this topic exists and is in scope — is a statement
+    about the book's own structure, and no external document could confirm
+    or refute it. The review that checks it is the table-of-contents
+    review.
+
+    Measured when the decision was made: 850 heading lines, 744 distinct
+    texts, **0** of 8331 units a heading. Of the 850, exactly two carried
+    a value rather than a name, and both were covered by the units beneath
+    them.
+
+    **What would make the exclusion unsafe.** A heading that carries a
+    VALUE — a number with a unit, an address, a pin — asserts something an
+    external document could settle. Two exist and have been read. A third
+    must be read too, and this is what makes it appear rather than leaving
+    the question resting on a measurement taken once.
+    """
+    novi = []
+    for g in GRUPY:
+        katalog = ROOT / g
+        if not katalog.exists():
+            continue
+        for p in sorted(katalog.glob("*.md")):
+            v_kodi = False
+            for line in p.read_text(encoding="utf-8").splitlines():
+                # A `#define` inside a fenced block is not a heading, and
+                # matching it as one produced two of the four "findings"
+                # the first time this was measured by hand.
+                if line.lstrip().startswith("```"):
+                    v_kodi = not v_kodi
+                    continue
+                if v_kodi:
+                    continue
+                m = re.match(r"^#{1,6}\s+(.*\S)\s*$", line)
+                if not m:
+                    continue
+                t = re.sub(r"\s*\{#[\w-]+\}\s*$", "", m.group(1)).strip()
+                if RE_HEADING_VALUE.search(t) and t not in HEADINGS_WITH_VALUES_SEEN:
+                    novi.append(f"{g}/{p.name}: heading carries a value, "
+                                f"not a name — «{t[:60]}». Read it: if it "
+                                f"asserts something checkable, the claim "
+                                f"belongs in the text beneath it.")
+    return novi
+
+
 def perevirka_budovy() -> list[tuple[str, str]]:
     """Чи будова книги несуперечлива — те, чим заголовок і можна звірити."""
     yakori, posylannya, rozdily = set(), set(), {}
@@ -291,10 +362,15 @@ def main(argv: list[str]) -> int:
     print("\ncoverage: змістовних рядків книги %d; накрито картками %d (%.1f %%); "
           "без картки %d"
           % (vsyoho, pokryto, 100 * pokryto / max(1, vsyoho), vsyoho - pokryto))
+    for b in headers_are_not_claims():
+        print(f"   ✗ {b}")
+
     # `max(1, vsyoho)` у знаменнику рятує від ділення на нуль і рівно тому
     # ховає найгірший випадок: нуль рядків книги друкується як «0.0 %», а
     # нуль карток на нуль рядків — як успіх. Обидва означають «мені не
     # дали чого міряти», і жоден не означає «покриття немає».
+    if headers_are_not_claims():
+        return 1
     if vsyoho == 0 or pokryto == 0:
         print("   ✗ міряти не було чого: рядків книги %d, накритих %d.\n"
               "     Це не результат. Перевір `groups` у "

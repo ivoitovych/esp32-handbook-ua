@@ -78,6 +78,45 @@ one handover of 227 units, **15 pointed at a different claim** than
 when the queue was written. Re-read a queue by hash or by text, never
 by number.
 
+### A heading is not a claim
+
+Headings never become units, and the reason is worth stating rather than
+leaving as a `continue` in the splitter.
+
+**A heading names a topic.** What it asserts — that this topic exists and
+is in scope — is a statement about the **book's own structure**, not about
+anything outside it. No external document could confirm or refute it, and
+the review that checks it is the table-of-contents review: does the
+chapter exist, is it in the right place, does its number match its file.
+That is a different question from "how is this known", and answering it
+with a source is not possible even in principle.
+
+Registering headings as units would therefore create thousands of claims
+with no verb — items permanently destined for `no-external-signal`,
+inflating the denominator of every percentage the registry prints with
+work that could never be done.
+
+**Measured, so that the exclusion is a decision rather than an oversight:**
+
+    heading lines in the book                850
+    distinct heading texts                   744
+    units in the registry that are a heading   0   (by prefix and by content)
+
+They are not silently dropped: coverage counts them as **structural
+grounds** and prints the number, so a heading is visible as excluded
+rather than absent.
+
+**The one shape that would make this unsafe** is a heading carrying a
+*value* rather than a name — a number with a unit, an address, a pin —
+because that does assert something an external document could settle.
+Exactly two exist in this book. Both were read: each names the topic of
+the section beneath it, and the propositions about that value live in the
+sentences below, which quote the heading inside their own context block.
+So an executor judging them sees the heading while doing it.
+
+A third such heading must be read too, and `coverage.py` makes it appear
+rather than leaving the question resting on a measurement taken once.
+
 ---
 
 ## 2. Evidence classes

@@ -388,6 +388,25 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
                 i += 1
             odynyci += rozbyty_tablycyu(ryadky[start:i], start + 1)
             continue
+        # **A heading is not a claim, and never becomes a unit.**
+        #
+        # A heading names a topic. What it asserts — that this topic
+        # exists and is in scope — is a statement about the BOOK'S OWN
+        # STRUCTURE, and no external document could confirm or refute it.
+        # The review that checks it is the table-of-contents review, not
+        # fact-checking.
+        #
+        # Measured, so the exclusion is a decision rather than an
+        # oversight: 850 heading lines, 744 distinct texts, and **0** of
+        # 8331 units is a heading — by prefix or by content. Of the 850,
+        # exactly two carry a VALUE rather than a name, and both are
+        # covered by the units beneath them, which quote the heading
+        # inside their own context block.
+        #
+        # `coverage.py` accounts for them as structural grounds and prints
+        # the number; a heading is therefore visible as excluded rather
+        # than quietly absent. `headers_are_not_claims()` below watches
+        # for the case that would change this.
         if r.startswith("#") or r.startswith(":::") or not r.strip():
             zlyty_prozu()
             i += 1
@@ -738,15 +757,17 @@ def nazva_zapysu(z: dict) -> str:
 def formatuvaty_dokaz(z: dict | None) -> str:
     if not z:
         return SHABLON_DOKAZU
-    # Один запис стану, а не три поспіль.
+    # One notation for the status, not three in a row.
     #
-    # Тут стояло `{SIGN} {klas} — {CLASS_TEXT}`, тобто знак, літера й опис
-    # одного й того самого, у такому порядку, що третій пояснює перші два.
-    # Знак і літера не несли нічого, крім легенди з одинадцяти позицій,
-    # яку читач мав тримати в голові.
+    # This used to print sign, letter and description of one and the same
+    # thing, in an order where the third explains the first two. The sign
+    # and the letter carried nothing but an eleven-item legend the reader
+    # had to keep in mind.
     #
-    # Слово лишається англійським, а опис українським, і це не суміш:
-    # стан — це словник ТЕХНОЛОГІЇ, а опис написано для читача книги.
+    # The card's own headings below stay Ukrainian on purpose, and that is
+    # not a mixture: a card is read beside the book, and the book is the
+    # product. The status WORD is the technology's vocabulary and is
+    # English; the description beside it is written for the book's reader.
     stan = status_of(z)
     ch = [f"**Доказ**\n", f"- **Статус:** {stan} — {STATUSES.get(stan,'')}"]
     # The condition goes through the accessor too. Otherwise a record
@@ -794,74 +815,75 @@ def ohorozha(vmist: str) -> str:
     return "`" * max(3, naydovsha + 1)
 
 
-def dослівно_і_контекст(ryadky: list[str], ln: int,
+def verbatim_and_context(ryadky: list[str], ln: int,
                         tekst: str = "") -> tuple[str, str]:
-    """Сирий рядок книги та його оточення.
+    """The book's raw line and its surroundings.
 
-    **Навіщо.** Досі картка несла лише рендер одиниці —
-    `BME280 · Адреса → 0x76` — під заголовком «Книга каже, дослівно».
-    Такого рядка в книзі немає, тож заголовок брехав, а картку не можна
-    було віддати ані людині, ані помічникові: щоб зрозуміти твердження,
-    треба було лізти в книгу.
+    **Why.** A card used to carry only the rendering of a unit —
+    `BME280 · Address → 0x76` — under a heading reading "the book says,
+    verbatim". No such line exists in the book, so the heading lied, and
+    the card could be given neither to a person nor to an executor: to
+    understand the claim you had to open the book.
 
-    Ціна цього була вимірна. Три сесії поспіль ми записували роди
-    хибних тривог — «поділ відрізає застереження», «комірка без
-    контексту», «суперечка про ступінь» — і всі вони одна причина:
-    **виконавець судив половину думки.** Одинадцять заявлених
-    суперечностей, жодної справжньої.
+    The cost was measurable. Three sessions running produced kinds of
+    false alarm — "the split cuts off the caveat", "a cell with no
+    context", "a dispute about degree" — and all of them had one cause:
+    **the executor was judging half a thought.** Eleven claimed
+    contradictions, not one real.
 
-    **Що вважається контекстом.** Для рядка таблиці — найближчий
-    заголовок вище, речення перед таблицею, шапка таблиці й сама
-    таблиця. Для прози — абзац і сусідні абзаци.
+    **What counts as context.** For a table row: the nearest heading
+    above, the sentence before the table, the table header and the table
+    itself. For prose: the paragraph and its neighbours.
 
-    Номер рядка тут — єдина річ, якій довіряють, і вона ненадійна: М2
-    поміряли, що він застарілий у 1311 одиницях із 8090. Тому функція
-    **не падає** на хибному номері: поза межами файлу вона чесно
-    віддає порожнє, і картка це показує.
+    The line number is the only thing trusted here, and it is unreliable:
+    measured stale in 1311 units of 8090. So this function **does not
+    fail** on a wrong number: past the end of the file it honestly returns
+    nothing, and the card shows that.
     """
-    # Номер рядка — **локатор, а не якір**, і він застаріває від кожної
-    # правки книги без перегенерації: М2 поміряли, що він хибний у 1311
-    # одиницях із 8090.
+    # A line number is a **locator, not an anchor**, and it goes stale
+    # with every edit to the book that is not followed by a regeneration:
+    # measured wrong in 1311 units of 8090.
     #
-    # Перша редакція цієї функції брала рядок просто за номером — і
-    # картка про `ESP8266 / ESP-12` дістала дослівний рядок про
-    # `ESP32-C3-MINI-1`, бо номер зсунувся на одиницю. Нове поле брехало
-    # **впевненіше** за старий рендер, який воно мало виправити.
+    # The first version of this function took the line simply by number —
+    # and a card about one chip got the verbatim line about a different
+    # one, because the number had shifted by one. The new field lied
+    # **more confidently** than the old rendering it was meant to fix.
     #
-    # Тому спершу **пошук за вмістом**, і лише як запасний шлях — номер.
-    # Ключі беруться з самої одиниці: для комірки це значення обабіч
-    # роздільників рендеру.
-    # Рендер комірки має вигляд `<рядок> · <колонка> → <значення>`.
-    # **Назва колонки стоїть у шапці таблиці, а не в рядку даних** — і
-    # саме вона провалила першу спробу пошуку: `all(...)` не збігався
-    # ніколи, тож функція мовчки падала назад на застарілий номер.
-    # Тому ключі — лише «рядок» і «значення».
+    # So: **search by content** first, and the number only as a fallback.
+    # The keys come from the unit itself: for a cell, the values on either
+    # side of the rendering's separators.
+    # A cell renders as `<row> · <column> → <value>`. **The column name
+    # stands in the table header, not in the data row** — and that is
+    # what defeated the first search attempt: the conjunction never
+    # matched, so the function silently fell back on the stale number.
+    # Hence the keys are only "row" and "value".
     if " · " in tekst:
         label, _, resh = tekst.partition(" · ")
         _, _, znach = resh.partition(" → ")
         syrovyna = [label, znach]
     else:
         syrovyna = [tekst]
-    # **Перший збіг, а не найближчий, ставив картку в чужу таблицю.**
-    # Знахідка М2 від `05:26Z`: після виправлення роздільника лишилося
-    # 42 комірки, чий рядок стоїть у книзі за іншим номером, і зсуви
-    # великі — `−62`, а не `±1`. Причина: `| I²C |` починає рядок у
-    # **двох** таблицях розділу 04, і ключі («рядок» плюс «значення»)
-    # у короткому значенні на кшталт `2` збігаються з першою-ліпшою:
+    # **The first match rather than the nearest put a card into the
+    # wrong table.** After the separator bug was fixed, 42 cells remained
+    # whose line stands in the book at a different number, and the shifts
+    # were large — `−62`, not `±1`. The cause: the same leading cell
+    # begins a row in **two** tables of one chapter, and a key made of
+    # "row plus value" collides with the first of them whenever the value
+    # is something as short as `2`:
     #
     #     p54   | I²C | дві лінії, багато пристроїв, невисока швидкість | 35 |
     #     p116  | I²C | 2 | 2 | 2 | **1** | 1 + 1 LP | 2 |
     #
-    # Це рід 10 у нашому ж каталозі — ключування за значенням, яке не
-    # унікальне; там воно знищило дев'ятнадцять записів через `gpio.rst`
-    # у десятку каталогів ESP-IDF. М2 назвали цей зв'язок першими.
+    # This is a catalogued kind — keying on a value that is not unique.
+    # Elsewhere it destroyed nineteen records, because one filename occurs
+    # in a dozen directories of the same source tree.
     #
-    # Лікування не в тому, щоб зробити ключ довшим, а в тому, щоб дати
-    # кожній половині її роботу: **вміст ототожнює, номер розрізняє**.
-    # Номер застаріває на одиниці — і саме тому він годиться обрати
-    # найближчий із однакових збігів, хоч і не годиться сам собою.
+    # The cure is not a longer key but giving each half its own job:
+    # **content identifies, the number discriminates**. A number goes
+    # stale by one or two — which is exactly why it is fit to choose the
+    # nearest among identical matches, though unfit on its own.
     #
-    # Виміряно на всіх 1417 комірках книги:
+    # Measured across all 1417 cells of the book:
     #
     #     перший збіг  = рядок за номером   1327
     #     найближчий   = рядок за номером   1401
@@ -878,8 +900,8 @@ def dослівно_і_контекст(ryadky: list[str], ln: int,
         return "", ""
     doslivno = ryadky[i].rstrip()
 
-    # Межі: назад до заголовка або порожнього рядка перед абзацом,
-    # уперед до кінця абзацу чи таблиці.
+    # Boundaries: back to a heading or the blank line before the
+    # paragraph, forward to the end of the paragraph or table.
     poch = i
     while poch > 0:
         pop = ryadky[poch - 1].rstrip()
@@ -890,17 +912,18 @@ def dослівно_і_контекст(ryadky: list[str], ln: int,
         if not pop and poch < i and not ryadky[poch].startswith("|"):
             break
         poch -= 1
-    # Межі вперед. **Порожній рядок усередині блоку коду — це вміст, а
-    # не кінець абзацу.** Перша редакція цього не знала й обривала
-    # контекст на першому ж порожньому рядку в коді: дамп паніки
-    # показувався одним рядком із восьми, а картка при цьому твердила,
-    # що дає оточення.
+    # Forward boundary. **A blank line inside a code block is content,
+    # not the end of a paragraph.** The first version did not know that
+    # and cut the context at the first blank line in code: a panic dump
+    # was shown as one line of eight, while the card asserted that it was
+    # giving the surroundings.
     #
-    # Знайшов `layer1.py` М2 питанням, якого ми не ставили ніколи: **чи
-    # містить контекст своє твердження.** 58 карток — усі роду `kod`.
+    # Found by the book-to-record layer asking a question never put
+    # before: **does the context contain its own claim.** 58 cards, all of
+    # kind `kod`.
     #
-    # > Рід 5 у самій протиотруті: блок, зроблений показувати думку
-    # > цілком, показував половину.
+    # > The defect inside the antidote: a block built to show a thought
+    # > whole was showing half of it.
     v_kodi = ryadky[i].lstrip().startswith("```")
     kin = i
     while kin + 1 < len(ryadky):
@@ -914,8 +937,8 @@ def dослівно_і_контекст(ryadky: list[str], ln: int,
             break
         kin += 1
 
-    # Заголовок розділу дає темі ім'я, а без імені комірка таблиці
-    # читається як набір слів.
+    # A section heading gives the topic a name, and without a name a
+    # table cell reads as a bag of words.
     zah = ""
     for j in range(poch, -1, -1):
         if ryadky[j].startswith("#"):
@@ -933,15 +956,17 @@ def sketch() -> int:
     dokazy = zavantazhyty_dokazy()
     vsjogo = z_dokazom = 0
     vzhyti: set[str] = set()
-    # Ключем обліку служить пара «файл доказів + назва», а не сама
-    # назва. Двоє супровідників беруть назви з того самого наряду, тож
-    # збіг імен у різних файлах — очікуваний стан, а не випадковість.
-    # За ключем-назвою слабший однойменний запис зникав з обох
-    # переліків нижче, і доказ із хибним взірцем лишався невидимим.
+    # The accounting key is the pair "evidence file + title", not the
+    # title alone. Maintainers take titles from the same order, so
+    # identical names in different files are expected rather than
+    # accidental. Keyed by title, a weaker same-named record vanished from
+    # both lists below, and evidence with a faulty pattern stayed
+    # invisible.
     pokryttya: dict[tuple[str, str], list[str]] = {}
     zachepleni: set[tuple[str, str]] = set()
-    # Тексти всіх одиниць — для окремого аудиту кожної альтернативи
-    # взірця. Тримати їх коштує пам'яті, але дешевше, ніж другий обхід.
+    # The texts of every unit, for auditing each alternative of a
+    # pattern separately. Holding them costs memory, but less than a
+    # second pass.
     usi_teksty: list[str] = []
     # `--only <substring>` limits the run to matching book files.
     #
@@ -952,7 +977,7 @@ def sketch() -> int:
     # in the table header and so never matched.
     #
     # A format change is now tried on one file first. The rule is the
-    # project's own `Р-ЗВІРКА`: test the instrument, then apply it.
+    # project's own rule: test the instrument, then apply it.
     lyshe = None
     if "--only" in sys.argv:
         lyshe = sys.argv[sys.argv.index("--only") + 1]
@@ -973,10 +998,11 @@ def sketch() -> int:
                 "Статус доказу й формат запису — `factcheck/METHOD.md`, "
                 "частина II.\n",
                 "Цей файл **генерується**: текст книги береться з джерела, "
-                "докази — з `factcheck/evidence/`. Правити вручну нема сенсу.\n",
-                # Сказано раз на файл, а не на кожній із тисяч карток:
-                # рецензентові потрібна ця гарантія, але вона однакова
-                # для всіх карток файлу.
+                "докази — з `factcheck/evidence/`. Правити вручну нема "
+                "сенсу.\n",
+                # Said once per file rather than on each of thousands of
+                # cards: a reviewer needs this guarantee, but it is the
+                # same for every card in the file.
                 "**Що в блоці «Твердження, коротко».** Для прози, рядка "
                 "коду й зв'язки схеми — **дослівний текст книги**. Для "
                 "комірки таблиці — рендер (`BME280 · Адреса → 0x76`), "
@@ -997,41 +1023,44 @@ def sketch() -> int:
                     vzhyti.add(h)
                     z_dokazom += 1
                     pokryttya.setdefault(klyuch(z), []).append(ident)
-                # Блок коду цілком — **контекст**, а не твердження. Він
-                # складається з рядків, у кожного з яких своє джерело, і
-                # доказ на один рядок не звіряє решту. Тому клас блоку не
-                # успадковується від доказу, а фіксований: `K`.
+                # A whole code block is **context**, not a claim. It
+                # consists of lines each with its own source, and evidence
+                # for one line does not check the rest. So a block's
+                # status is not inherited from evidence but fixed.
                 if vyd == "kod":
                     klas = "K"
                 elif z:
                     klas = class_letter_of(z)
                 elif vyd in ("proza", "komirka", "tablycya") \
                         and not RE_SYGNAL_STROGYY.search(txt):
-                    # Одиниця без жодного сигналу, що вказував би на
-                    # джерело, — редакційна. Клас E, і це рішення, а не
-                    # пропуск (див. коментар біля RE_SYGNAL_STROGYY).
+                    # A unit with no signal pointing at a source is
+                    # editorial. `no-external-signal`, and that is a
+                    # decision rather than an omission (see the comment
+                    # beside the strict signal pattern).
                     #
-                    # Зв'язки схем (`vyd == "shema"`) сюди не потрапляють
-                    # ніколи: саме там живуть факти, і рядок «3V3 ─── VCC»
-                    # виглядає порожнім лише тому, що підмет стоїть окремо.
+                    # Schematic connections never arrive here: that is
+                    # where the facts live, and a line like
+                    # "3V3 ─── VCC" looks empty only because its subject
+                    # stands apart from it.
                     klas = "E"
                 else:
                     klas = "F"
                 cyt = "\n".join("> " + x for x in txt.split("\n"))
-                # Картка мусить бути самодостатньою: її віддають людині
-                # або виконавцеві **без** доступу до книги. Тому поруч
-                # із коротким викладом стоять сирий рядок і оточення.
-                syryy, kontekst = dослівно_і_контекст(ryadky_knyhy, ln, txt)
+                # A card must be self-sufficient: it is handed to a
+                # person or an executor **without** access to the book.
+                # So the raw line and its surroundings stand beside the
+                # short statement.
+                syryy, kontekst = verbatim_and_context(ryadky_knyhy, ln, txt)
                 dodatkovo = ""
                 if vyd in RENDER and syryy and syryy.strip() != txt.strip():
-                    # Комірка живе в рядку таблиці. Якщо локатор привів
-                    # кудись іще — він **промахнувся**, і показати цей
-                    # рядок було б гірше, ніж не показати нічого: картка
-                    # твердила б дослівність про чужий текст.
+                    # A cell lives in a table row. If the locator led
+                    # anywhere else it **missed**, and showing that line
+                    # would be worse than showing nothing: the card would
+                    # assert verbatimness about somebody else's text.
                     #
-                    # Тридцять один такий випадок: взірець комірки
-                    # «SPI · …» збігся з прозовим пунктом «**Швидкі
-                    # сигнали** — SPI на високих частотах…».
+                    # Thirty-one such cases: a cell pattern beginning
+                    # "SPI · …" matched a prose bullet that happened to
+                    # mention SPI.
                     if syryy.lstrip().startswith("|"):
                         o = ohorozha(syryy)
                         dodatkovo += ("**Дослівно з книги**\n\n"
@@ -1057,46 +1086,48 @@ def sketch() -> int:
                 )
                 vsjogo += 1
             cil.write_text("\n".join(chastyny), encoding="utf-8")
-    print(f"файлів реєстру: {sum(1 for _ in FC.rglob('*.md'))}")
-    print(f"одиниць твердження: {vsjogo}; із доказом: {z_dokazom}")
+    print(f"registry files: {sum(1 for _ in FC.rglob('*.md'))}")
+    print(f"claim units: {vsjogo}; with evidence: {z_dokazom}")
     if "-v" in sys.argv:
-        print("\nщо покрив кожен доказ:")
+        print("\nwhat each evidence covered:")
         for (prokhid, nazva), ids in sorted(pokryttya.items(),
                                            key=lambda kv: kv[0][1]):
             print(f"  {len(ids):>3}×  {nazva}  ({prokhid})"
                   f"\n        {', '.join(ids)}")
-    # Доказ, який нічого не зачепив, — це або застаріле формулювання в
-    # книзі, або помилка у взірці. Мовчати про це не можна: реєстр почне
-    # обіцяти звіреність, якої немає.
+    # Evidence that matched nothing is either a wording that has since
+    # changed in the book or a fault in the pattern. It must not go
+    # unmentioned: the registry would begin promising a checkedness it
+    # does not have.
     #
-    # Інша річ — доказ, що зачепив твердження, але програв сильнішому.
-    # Це норма й навіть мета: слабший запис проходу 3 («джерело не
-    # дістається») перекритий класом A проходу 4 означає, що пункт
-    # наряду закрито. Такий випадок показуємо окремо й без тривоги.
+    # Different from evidence that matched a claim but lost to something
+    # stronger. That is normal and even the goal: a weaker record from an
+    # early pass ("the source is unreachable") superseded by a later
+    # `verbatim` means an item of the hand-off order was closed. Such
+    # cases are shown separately and without alarm.
     holosti = [z for z in dokazy if klyuch(z) not in zachepleni]
     perekryti = [z for z in dokazy
                  if klyuch(z) in zachepleni
                  and klyuch(z) not in pokryttya]
     if holosti:
-        print(f"\n⚠ доказів, що нічого не зачепили: {len(holosti)}")
+        print(f"\n⚠ evidence matching nothing: {len(holosti)}")
         for z in holosti:
             print(f"    {nazva_zapysu(z)}  ({z.get('_prokhid')})")
     if perekryti:
-        print(f"\nперекрито сильнішим доказом: {len(perekryti)}")
+        print(f"\nsuperseded by stronger evidence: {len(perekryti)}")
         for z in perekryti:
             print(f"    {nazva_zapysu(z)}  "
                   f"({z.get('_prokhid')}, клас {class_letter_of(z, '?')})")
 
-    # Аудит окремих альтернатив. Дві вади, невидимі вище:
+    # Auditing individual alternatives. Two faults invisible above:
     #
-    #   мертва   — альтернатива не зачепила нічого, але сусідня
-    #              спрацювала, тож доказ виглядає здоровим;
-    #   широка   — альтернатива зачепила більше одиниць, ніж доказ
-    #              узагалі стверджує.
+    #   dead  — the alternative matched nothing while its neighbour did,
+    #           so the evidence looks healthy;
+    #   wide  — the alternative matched more units than the evidence
+    #           asserts anything about.
     #
-    # Обидві занижують або завищують покриття мовчки, і жоден чек на них
-    # не падає. Тому це звіт, а не ворота: судити, чи 12 збігів широкі,
-    # може лише той, хто бачить цитату.
+    # Both understate or overstate coverage silently, and no check fails
+    # on them. So this is a report, not a gate: only somebody who can see
+    # the quote can judge whether 12 matches is too wide.
     mertvi: list[tuple[dict, str, str]] = []
     shyroki: list[tuple[dict, str, int]] = []
     for z in dokazy:
@@ -1110,8 +1141,9 @@ def sketch() -> int:
             try:
                 r = re.compile(ch, re.S)
             except re.error:
-                # Альтернатива, вирвана з контексту, може бути
-                # недійсним взірцем сама по собі — це не вада доказу.
+                # An alternative torn out of its context may be an
+                # invalid pattern in itself — that is not a fault of the
+                # evidence.
                 continue
             n = sum(1 for x in usi_teksty if r.search(x))
             if n == 0:
@@ -1119,13 +1151,13 @@ def sketch() -> int:
             elif n >= SHYROKA_ALTERNATYVA:
                 shyroki.append((z, ch, n))
     if mertvi:
-        print(f"\n⚠ альтернатив без жодного збігу: {len(mertvi)}")
+        print(f"\n⚠ alternatives with no match at all: {len(mertvi)}")
         for z, ch, ch_prychyna in mertvi:
             print(f"    {nazva_zapysu(z)}  ({z.get('_prokhid')})"
                   f"\n        ↳ {ch}"
                   f"\n          ({ch_prychyna})")
     if shyroki and "-v" in sys.argv:
-        print(f"\nальтернатив від {SHYROKA_ALTERNATYVA} збігів: "
+        print(f"\nalternatives with {SHYROKA_ALTERNATYVA}+ matches: "
               f"{len(shyroki)}")
         for z, ch, n in sorted(shyroki, key=lambda x: -x[2]):
             print(f"  {n:>3}×  {nazva_zapysu(z)}  ({z.get('_prokhid')})"
@@ -1158,81 +1190,86 @@ def status() -> int:
     zapysy = zbir_usikh()
     c = Counter(z["status"] for z in zapysy)
     kontekst = c.get("code-context", 0)
-    # Блоки коду — контекст, а не твердження: відсотки рахуються від
-    # тверджень, інакше знаменник роздувається тим, що ніхто й не збирався
-    # звіряти.
+    # Code blocks are context, not claims: percentages are computed over
+    # claims, or the denominator is inflated by things nobody intended to
+    # check.
     vsjogo = len(zapysy) - kontekst
-    print(f"\nодиниць твердження: {vsjogo}"
-          f"  (+ {kontekst} блоків коду як контекст)\n")
+    print(f"\nclaim units: {vsjogo}"
+          f"  (+ {kontekst} code blocks as context)\n")
     zvireno = sum(c[k] for k in ("verbatim", "derived", "arithmetic"))
     for stan in STATUSES_OF_UNITS:
         n = c.get(stan, 0)
         if not n:
             continue
         print(f"  {stan:<20} {n:>5}  {n*100/vsjogo:5.1f}%   {STATUSES[stan]}")
-    print(f"\n  звірено з джерелом або обчисленням "
+    print(f"\n  checked against a source or by calculation "
           f"(verbatim + derived + arithmetic): "
           f"{zvireno} ({zvireno*100/vsjogo:.1f}%)")
-    # `S` навмисно **поза** цим числом і навмисно окремим рядком.
+    # `self-consistent` is deliberately **outside** this figure and
+    # deliberately on its own line.
     #
-    # Поза — бо він не каже нічого про світ: книга, що сходиться сама з
-    # собою, може дружно помилятися в обох місцях. Окремо — бо `E` теж
-    # нічого не каже про світ, але `E` означає «звірки не було», а `S`
-    # означає «звірка була, механічна, відтворна, і вона зійшлася».
-    # Злити їх — значить викинути єдине, що тут виміряно.
+    # Outside, because it says nothing about the world: a book that agrees
+    # with itself may be wrong in both places at once. Separate, because
+    # `no-external-signal` also says nothing about the world — but that
+    # one means "no check was made", while this one means "a check was
+    # made, mechanically and reproducibly, and it agreed". Merging them
+    # throws away the only thing measured here.
     if c.get("self-consistent"):
-        print(f"  внутрішня звірка, зовнішнього підтвердження немає "
+        print(f"  self-consistent, no external confirmation "
               f"(self-consistent): "
               f"{c['self-consistent']}")
-    print(f"  закрито як рішення (no-external-signal): "
+    print(f"  closed as a decision (no-external-signal): "
           f"{c.get('no-external-signal', 0)}")
-    print(f"  лишається (named-unreachable + unchecked + refuted): "
+    print(f"  still open (named-unreachable + unchecked + refuted): "
           f"{sum(c.get(s, 0) for s in ('named-unreachable', 'unchecked', 'refuted'))}")
-    # за файлами: де найбільше незакритого
+    # by file: where the most open units are
     per = Counter()
     for z in zapysy:
         if z["status"] in ("named-unreachable", "unchecked", "refuted"):
             per[z["fajl"]] += 1
     if per:
-        print("\n  найбільше незакритого:")
+        print("\n  most open units by file:")
         for f, n in per.most_common(8):
             print(f"    {n:>4}  {f}")
     return 0
 
 
 def stale() -> int:
-    """Чи розійшовся реєстр із книгою — і чим саме.
+    """Has the registry drifted from the book — and in what way.
 
-    ## Що тут було до 2026-08-27
+    ## What was here before
 
-    Докстрінг обіцяв «записи, чий текст у книзі змінився». Тіло
-    перевіряло, **чи існує файл**. Про текст — жодного рядка.
+    The docstring promised "records whose text in the book has changed".
+    The body checked **whether the file exists**. About the text, not a
+    line.
 
-    Через це реєстр чотири дні тихо відставав від книги: шість правок
-    друкованого накладу не зрушили лічильника, і `make check` усі ці
-    дні казав «розбіжностей немає». Знайшов М2, написавши перевірку з
-    нуля саме тому, що не повірив, ніби її ще нема.
+    Because of that the registry lagged the book silently for four days:
+    six corrections to a printed edition moved no counter, and the gate
+    said "no divergences" throughout. It was found by somebody writing
+    the check from scratch, precisely because they did not believe it did
+    not already exist.
 
-    > Це вже другий випадок того самого роду за день (перший — `vorota`:
-    > обіцяно дві перевірки, зроблено одну). Обидва прожили довго з тієї
-    > самої причини: **лічильник, що показує нуль, виглядає однаково і
-    > коли все гаразд, і коли він нічого не рахує.**
+    > That was the second case of the same kind in one day (the first: a
+    > gate promising two checks and performing one). Both survived a long
+    > time for the same reason: **a counter showing zero looks the same
+    > when all is well and when it is counting nothing.**
 
-    ## Що тут тепер
+    ## What is here now
 
-    Книга розбирається тими самими `rozbyty()` і `sha()`, що будують
-    реєстр, і результат звіряється з тим, що лежить на диску. Спільний
-    розбирач тут не економія, а вимога: своя копія розбору розійшлася б
-    із генератором, і перевірка почала б підтверджувати саму себе.
+    The book is decomposed by the same splitter and hash that build the
+    registry, and the result is compared with what lies on disk. A shared
+    splitter here is not an economy but a requirement: a private copy of
+    the decomposition would drift
+    from the generator, and the check would begin confirming itself.
 
-    Три роди розходження, і вони різні за ціною:
+    Three kinds of divergence, and they differ in cost:
 
-    · **текст змінився** — доказ, прив'язаний до старого формулювання,
-      більше не про це твердження. Дорого: тихо хибний доказ.
-    · **зник / з'явився** — правка додала або прибрала твердження.
-    · **зсунувся рядок** — текст той самий, поїхав лише номер. Дешево
-      само собою, дорого через довіру: кожен, хто бере `src:рядок` із
-      реєстру, дістає адресу, яка може бути мимо.
+    · **the text changed** — evidence bound to the old wording is no
+      longer about this claim. Expensive: quietly false evidence.
+    · **gone / appeared** — an edit added or removed a claim.
+    · **the line shifted** — the same text, only the number moved. Cheap
+      in itself, expensive through trust: anybody taking `src:line` from
+      the registry gets an address that may be off.
     """
     na_dysku: dict[str, dict] = {}
     for z in zbir_usikh():
@@ -1264,24 +1301,25 @@ def stale() -> int:
                 if z["src"].split(":")[0] == rel and ident not in bachyly:
                     znykly.append(ident)
 
-    print(f"  текст змінився   {len(zminyly)}")
+    print(f"  text changed       {len(zminyly)}")
     for ident, rel in zminyly[:20]:
         print(f"     ✗ {ident}  {rel}")
-    print(f"  зникло записів   {len(znykly)}")
+    print(f"  records gone       {len(znykly)}")
     for ident in znykly[:10]:
         print(f"     ✗ {ident}")
-    print(f"  нових одиниць    {len(novi)}")
+    print(f"  new units          {len(novi)}")
     for ident in novi[:10]:
         print(f"     + {ident}")
-    print(f"  зсув номера рядка {sum(zsuv.values())} на {len(zsuv)} файлах")
+    print(f"  line-number shift  {sum(zsuv.values())} across "
+          f"{len(zsuv)} files")
     for rel, n in zsuv.most_common(6):
         print(f"     ~ {n:>4}  {rel}")
 
     if zminyly or znykly or novi or zsuv:
-        print("\n  реєстр відстає від книги — `factcheck.py sketch` "
-              "перед роботою")
+        print("\n  the registry lags the book — run `factcheck.py sketch` "
+              "before working")
     else:
-        print("  реєстр збігається з книгою одиниця в одиницю")
+        print("  the registry matches the book unit for unit")
     return 0
     return 0
 
@@ -1290,17 +1328,18 @@ NARYAD = FC / "reports" / "UNREACHABLE-SOURCES.md"
 
 
 def blocked() -> int:
-    """Наряд на винос: усе, що впирається в недосяжне звідси джерело.
+    """The hand-off order: everything blocked on a source out of reach.
 
-    Клас C — не «не перевірили», а «перевірити звідси неможливо». Різниця
-    між ними головна: перше закривається роботою тут, друге не
-    закривається ніколи, скільки не працюй, і мусить поїхати в інше
-    середовище.
+    `named-unreachable` is not "we did not check" but "checking is
+    impossible from here". The difference is the important one: the first
+    is closed by work here, the second is never closed however much work
+    is done, and must travel to another environment.
 
-    Тому команда не просто рахує, а **пише документ**, придатний віддати
-    людині з відкритим доступом: джерело, скільки тверджень від нього
-    залежать, що саме в ньому шукати і які твердження книги це закриє.
-    Уся підготовча робота вже зроблена — лишається відкрити документ.
+    So this command does not merely count but **writes a document** fit
+    to give to somebody with open access: the source, how many claims
+    depend on it, what exactly to look for in it, and which claims of the
+    book it will close. All the preparation is already done — what remains
+    is to open the document.
     """
     grupy: dict[str, dict] = {}
     for z in zbir_usikh():
@@ -1311,50 +1350,52 @@ def blocked() -> int:
         sh = (re.search(r"\*\*Що шукати в джерелі:\*\*\s*(.+)", z["tilo"]) or [None, ""])[1]
         m = RE_TVERDZHENNYA.search(z["tilo"])
         txt = " ".join(m.group(1).replace("> ", "").split()) if m else ""
-        # Це **не** запис доказу, а місцевий словник групування. Слово
-        # те саме, схема інша — і саме тому переведення імен полів його
-        # зачепило: заміна за рядком перейменувала три **читання**
-        # (`g["look_for"]`), а один літерал, що ключ і створює, лишила
-        # старим. `blocked` падав із `KeyError` від fbfa0c2 і до цієї
-        # правки, бо його немає ні в `make check`, ні в жодній базі.
+        # This is **not** an evidence record but a local grouping
+        # dictionary. Same word, different schema — and that is exactly
+        # why the field-name migration touched it: a string replacement
+        # renamed three **reads** while leaving the one literal that
+        # creates the key unchanged. This command died with a `KeyError`
+        # for several commits, because it is in neither the gate nor any
+        # baseline.
         g = grupy.setdefault(u, {"look_for": set(), "tverdzhennya": []})
         if sh:
             g["look_for"].add(sh.strip())
         g["tverdzhennya"].append((z["id"], z["src"], txt))
 
     if not grupy:
-        print("записів класу C немає")
+        print("no named-unreachable records")
         return 0
 
     vsjogo = sum(len(g["tverdzhennya"]) for g in grupy.values())
     ryadky = [
-        "# Наряд: джерела, недосяжні з цього середовища\n",
-        "**Генерується** `factcheck/tools/factcheck.py blocked`. Правити вручну "
-        "нема сенсу.\n",
-        "**Це не перелік помилок.** Це перелік тверджень книги, які "
-        "неможливо звірити з першоджерелом із контейнера, де книга "
-        "робилася: політика egress відповідає `403` на домени виробників "
-        "і стандартів.\n",
-        "Кожен пункт підготовано до закриття: named джерело, що саме в "
-        "ньому шукати, і які саме твердження книги від нього залежать. "
-        "Людині з відкритим доступом лишається відкрити документ і "
-        "звірити — робота вимірюється хвилинами на джерело.\n",
-        "Закриті пункти повертаються сюди як докази класу `A` або `B` у "
-        "`factcheck/evidence/`, після чого цей файл перегенеровується "
-        "(`factcheck/tools/factcheck.py blocked`) і коротшає.\n",
-        f"Станом на генерацію: **{vsjogo}** тверджень від "
-        f"**{len(grupy)}** джерел.\n",
+        "# Hand-off: sources unreachable from this environment\n",
+        "> **generated** — `factcheck/tools/factcheck.py blocked`; editing "
+        "it by hand is wasted work\n",
+        "**This is not a list of errors.** It is a list of the book's "
+        "claims that cannot be checked against a primary source from the "
+        "container the book is made in: the egress policy answers `403` "
+        "for vendor and standards domains.\n",
+        "Every item is prepared for closing: the source named, what to "
+        "look for in it, and which claims of the book depend on it. "
+        "Somebody with open access has only to open the document and "
+        "check — the work is measured in minutes per source.\n",
+        "Closed items come back as `verbatim` or `derived` evidence in "
+        "`factcheck/evidence/`, after which this file is regenerated and "
+        "gets shorter.\n",
+        f"As generated: **{vsjogo}** claims from **{len(grupy)}** "
+        f"sources.\n",
         "---\n",
     ]
     for u, g in sorted(grupy.items(), key=lambda kv: -len(kv[1]["tverdzhennya"])):
         ryadky.append(f"## {u}\n")
-        ryadky.append(f"Залежить тверджень: **{len(g['tverdzhennya'])}**\n")
+        ryadky.append(f"Claims depending on it: "
+                      f"**{len(g['tverdzhennya'])}**\n")
         if g["look_for"]:
-            ryadky.append("**Що шукати:**\n")
+            ryadky.append("**What to look for:**\n")
             for s in sorted(g["look_for"]):
                 ryadky.append(f"- {s}")
             ryadky.append("")
-        ryadky.append("| Твердження | Де в книзі | Дослівно |")
+        ryadky.append("| Claim | Where in the book | Verbatim |")
         ryadky.append("|---|---|---|")
         for ident, src, txt in g["tverdzhennya"]:
             t = txt.replace("|", "\\|")[:160]
@@ -1362,15 +1403,18 @@ def blocked() -> int:
         ryadky.append("\n---\n")
     NARYAD.write_text("\n".join(ryadky), encoding="utf-8")
 
-    print(f"\n{NARYAD.relative_to(ROOT)}: {vsjogo} тверджень від "
-          f"{len(grupy)} джерел\n")
+    print(f"\n{NARYAD.relative_to(ROOT)}: {vsjogo} claims from "
+          f"{len(grupy)} sources\n")
     for u, g in sorted(grupy.items(), key=lambda kv: -len(kv[1]["tverdzhennya"])):
         print(f"  {len(g['tverdzhennya']):>4}   {u}")
     return 0
 
 
-# Ознаки, за якими твердження взагалі можна звірити із зовнішнім джерелом.
-# Вага = наскільки дорого коштує помилка саме в цій ознаці.
+# Signs by which a claim can be checked against an external source at
+# all. The weight is how expensive an error in that particular sign is.
+#
+# This table is this book's data — addresses, pins, API calls, part
+# numbers. Another book replaces it; what travels is the shape.
 SYGNALY = [
     (re.compile(r"0x[0-9A-Fa-f]{3,8}"), 5, "адреса"),
     (re.compile(r"GPIO\s?\d{1,2}"), 5, "пін"),
@@ -1397,11 +1441,12 @@ def vaga(txt: str) -> tuple[int, list[str]]:
 
 
 def cherga() -> int:
-    """Незакриті твердження, найдорожчі першими.
+    """Open claims, most expensive first.
 
-    Прохід не має йти по книзі підряд: одиниця «Якщо в цій книзі є один
-    розділ» і одиниця «GPIO 6–11 з'єднані з флешем» коштують різного.
-    Черга ставить попереду те, де помилка коштує плати.
+    A pass should not walk the book in order: a unit reading "if this
+    book has one chapter" and a unit reading "GPIO 6–11 are wired to the
+    flash" do not cost the same. The queue puts first what costs a board
+    when wrong.
     """
     mezha = int(sys.argv[2]) if len(sys.argv) > 2 else 40
     poz = []
@@ -1417,21 +1462,22 @@ def cherga() -> int:
             poz.append((v, z["id"], z["fajl"], ",".join(chym),
                         " ".join(txt.replace("> ", "").split())[:100]))
     poz.sort(key=lambda x: (-x[0], x[1]))
-    print(f"\nнезакритих зі звірюваними ознаками: {len(poz)}"
-          f"  (показано {min(mezha, len(poz))})\n")
+    print(f"\nopen claims carrying checkable signs: {len(poz)}"
+          f"  (showing {min(mezha, len(poz))})\n")
     for v, ident, fajl, chym, txt in poz[:mezha]:
         print(f"  [{v:>2}] {ident:<12} {chym:<28} {txt}")
     return 0
 
 
 def shukaty() -> int:
-    """`factcheck.py shukaty <підрядок>` → sha і текст твердження.
+    """`factcheck.py shukaty <substring>` -> the sha and the claim text.
 
-    Ключ доказу — хеш, а хеш у голові не тримають. Ця команда — місток
-    між «пам'ятаю формулювання» і «знаю, під яким ключем його записати».
+    Evidence is keyed by hash, and nobody keeps a hash in mind. This
+    command is the bridge between "I remember the wording" and "I know the
+    key to record it under".
     """
     if len(sys.argv) < 3:
-        print("вкажіть підрядок")
+        print("give a substring")
         return 1
     goloka = " ".join(sys.argv[2:]).lower()
     n = 0
@@ -1448,44 +1494,48 @@ def shukaty() -> int:
                 print("  …")
                 break
     if not n:
-        print("не знайдено")
+        print("not found")
     return 0
 
 
 def vorota() -> int:
-    """Випускні ворота реєстру (Р-VYPUSK).
+    """The registry's outbound gate.
 
-    Що тут перевіряється — і чого свідомо немає.
+    What is checked here, and what is deliberately absent.
 
-    **Є:** жодного твердження класу `G`. `G` означає «джерело
-    спростувало» — книга з таким записом суперечить сама собі, і
-    випускати її не можна за жодних обставин.
+    **Present:** no claim in the `refuted` status. That means "the
+    source refuted it" — a book carrying such a record contradicts itself,
+    and must not be released under any circumstances.
 
-    **Є:** жодного доказу, що нічого не зачепив. Такий доказ — або
-    застаріле формулювання в книзі, або помилка у взірці; в обох
-    випадках реєстр обіцяє звіреність, якої немає.
+    **Present:** no evidence that matched nothing. Such evidence is
+    either a wording that has since changed in the book or a fault in the
+    pattern; in both cases the registry promises a checkedness it does not
+    have.
 
-    **Немає:** вимоги «нуль класу F». Це навмисно. Реєстр розкладає
-    книгу на тисячі одиниць, серед яких є редакційні судження й поради,
-    яким зовнішнє джерело не потрібне й не буває. Вимога нуля змусила б
-    закривати їх фіктивно — тобто зробила б реєстр гіршим, а не кращим.
-    Правило натомість таке: `F` видимий і рахований, а `C` має наряд.
+    **Absent:** any requirement of "zero unchecked". Deliberately. The
+    registry decomposes the book into thousands of units, among them
+    editorial judgements and advice for which no external source is needed
+    or exists. A requirement of zero would force closing them fictitiously
+    — making the registry worse, not better.
+    The rule instead is: `unchecked` is visible and counted, and
+    `named-unreachable` has a hand-off order.
     """
     dokazy = zavantazhyty_dokazy()
     g = [z for z in dokazy if status_of(z) == "refuted"]
     for z in g:
-        print(f"   ✗ спростоване твердження: {nazva_zapysu(z)} "
+        print(f"   ✗ refuted claim: {nazva_zapysu(z)} "
               f"({z.get('_prokhid')})")
 
-    # Друга обіцянка docstring, якої тут **не було**: доказ, що не
-    # зачепив жодної одиниці.
+    # The docstring's second promise, which was **not here**: evidence
+    # that matched no unit at all.
     #
-    # Знайдено зовнішньою рецензією: опис казав про дві перевірки,
-    # реалізація робила одну. Це гірше за відсутню перевірку — читач
-    # контракту вважає інваріант захищеним, а він не захищений ніким.
+    # Found by an external review: the description spoke of two checks and
+    # the implementation performed one. That is worse than a missing
+    # check — a reader of the contract believes the invariant is guarded,
+    # and it is guarded by nobody.
     #
-    # Правило, яке з цього випливає: **на кожен інваріант має бути
-    # рівно один авторитетний перевіряч, і опис не є перевірячем.**
+    # The rule that follows: **every invariant must have exactly one
+    # authoritative checker, and a description is not a checker.**
     teksty: list[str] = []
     for grupa in GRUPY:
         for f in sorted((ROOT / grupa).glob("*.md")):
@@ -1500,56 +1550,61 @@ def vorota() -> int:
         try:
             rx = re.compile(vz)
         except re.error as e:
-            print(f"   ✗ взірець не компілюється: {nazva_zapysu(z)} "
+            print(f"   ✗ pattern does not compile: {nazva_zapysu(z)} "
                   f"({z.get('_prokhid')}) — {e}")
             holosti.append(z)
             continue
         if not any(rx.search(t) for t in teksty):
             holosti.append(z)
-            print(f"   ✗ доказ нічого не зачепив: {nazva_zapysu(z)} "
+            print(f"   ✗ evidence matched nothing: {nazva_zapysu(z)} "
                   f"({z.get('_prokhid')})")
 
-    print(f"factcheck-vorota: спростованих (G) {len(g)}, "
-          f"холостих доказів {len(holosti)}")
+    print(f"factcheck gate: refuted {len(g)}, "
+          f"evidence matching nothing {len(holosti)}")
     return 1 if (g or holosti) else 0
 
 
 def vzirets() -> int:
-    """Скільки одиниць реєстру зачепить цей взірець.
+    """How many registry units this pattern will match.
 
-        factcheck/tools/factcheck.py vzirets '<регулярний вираз>'
+        factcheck/tools/factcheck.py vzirets '<regular expression>'
 
-    ## Навіщо окрема команда на три рядки коду
+    ## Why a separate command for three lines of code
 
-    Бо без неї перевіряють **не тим джерелом**, і я зробив це тричі за
-    вечір, знаючи про пастку й описавши її сам.
+    Because without it people check against **the wrong corpus** — done
+    three times in one evening by somebody who knew about the trap and had
+    written it down.
 
-    Взірець `zbih` зіставляється з **текстом одиниці реєстру**, а не з
-    розміткою книги. Для прози це те саме, і саме тому помилка не
-    впадає в око. Для комірки таблиці — ні:
+    A pattern is matched against **the text of a registry unit**, not
+    against the book's markup. For prose these are the same, which is
+    exactly why the mistake does not catch the eye. For a table cell they
+    are not:
 
-        книга:   | Частота | 160–240 МГц | 16 МГц | 133 МГц |
-        реєстр:  Частота · RP2040 → 133 МГц
+        the book:      | Frequency | 160–240 MHz | 16 MHz | 133 MHz |
+        the registry:  Frequency · RP2040 → 133 MHz
 
-    Взірець `\\| 133 МГц \\|` збігається з книгою й **не збігається ні з
-    чим** у реєстрі. Перевірка `grep` по `manual/` каже «усе гаразд», і
-    доказ тихо не зачіпає нічого.
+    A pattern written against the book's row matches the book and
+    **matches nothing** in the registry. A `grep` over the book's
+    directory says "all is well", and the evidence quietly touches
+    nothing.
 
-    М2 на цій самій пастці мало не видалили 124 справні записи, бо
-    писали швидшу перевірку по тексту книги. Правило записане в
-    `docs/DESIGN.md` як `Р-ЗВІРКА`. Правила виявилося замало: доки
-    зробити правильно було дорожче, ніж `grep`, я щоразу робив `grep`.
+    The same trap nearly caused 124 sound records to be deleted, because
+    somebody wrote a faster check over the book's text. The rule was
+    already written down. The rule turned out not to be enough: as long
+    as
+    doing it right cost more than a `grep`, the `grep` won every time.
 
-    Тому команда. Тепер правильне дешевше за неправильне.
+    Hence this command. Now the right thing is cheaper than the wrong
+    one.
     """
     if len(sys.argv) < 3:
-        print("вжиток: factcheck/tools/factcheck.py vzirets '<вираз>'")
+        print("usage: factcheck/tools/factcheck.py vzirets '<expression>'")
         return 2
     vyraz = sys.argv[2]
     try:
         rx = re.compile(vyraz)
     except re.error as e:
-        print(f"негодящий вираз: {e}")
+        print(f"invalid expression: {e}")
         return 2
 
     zbihy: list[tuple[str, str]] = []
@@ -1559,19 +1614,19 @@ def vzirets() -> int:
                 if rx.search(txt):
                     zbihy.append((f.name, txt))
 
-    print(f"взірець зачіпає одиниць: {len(zbihy)}")
+    print(f"units matched by the pattern: {len(zbihy)}")
     if not zbihy:
-        print("  ⚠ ХОЛОСТИЙ — жодної одиниці. Доказ із таким взірцем "
-              "нічого не звіряє.")
+        print("  ⚠ IDLE — not one unit. Evidence with such a pattern "
+              "checks nothing.")
         return 1
     if len(zbihy) > 12:
-        print("  ⚠ ЗАШИРОКИЙ? Широкий взірець небезпечніший за "
-              "відсутній: він мовчки позначає «звірено» те, чого не "
-              "звіряв.")
+        print("  ⚠ TOO WIDE? A wide pattern is more dangerous than a "
+              "missing one: it silently marks as checked what it never "
+              "checked.")
     for imya, txt in zbihy[:12]:
         print(f"    {imya}: {txt.strip()[:88]}")
     if len(zbihy) > 12:
-        print(f"    … ще {len(zbihy) - 12}")
+        print(f"    … and {len(zbihy) - 12} more")
     return 0
 
 
