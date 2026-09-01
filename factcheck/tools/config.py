@@ -35,6 +35,7 @@ other.
 """
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
@@ -169,6 +170,23 @@ def split_buckets() -> list[dict]:
     return d
 
 
+def signal() -> dict:
+    """What counts as an externally checkable signal in the book's text.
+
+    **Required**, not optional: without it every prose unit would be
+    closed as having no signal, and the largest status in the registry
+    would be assigned to the entire book by default. An absent pattern
+    here is not a missing convenience — it is a wrong answer given
+    confidently."""
+    d = _cfg().get("signal") or {}
+    if not isinstance(d, dict) or not d.get("broad") or not d.get("strict"):
+        raise ConfigError(
+            f"{FILE}: `signal` needs both `broad` and `strict`. Without "
+            f"them every prose unit is closed as carrying no signal, and "
+            f"the whole book lands in one status by default.")
+    return d
+
+
 def layer3_patterns() -> dict:
     """Patterns layer 3 applies to the book's prose. Empty if unset."""
     d = _cfg().get("layer3") or {}
@@ -231,6 +249,9 @@ def demo() -> int:
               f"     {str(e).splitlines()[0]}")
     if configured is not None:
         check("this book's own file loads", configured)
+        check("the signal patterns are present and compile",
+              bool(re.compile(signal()["broad"])
+                   and re.compile(signal()["strict"])))
         check("optional blocks are optional",
               modality() is None or "prescriptive" in modality())
         check("the card mirror is where config says",

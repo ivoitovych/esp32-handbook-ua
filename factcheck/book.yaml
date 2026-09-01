@@ -134,3 +134,27 @@ layer3:
   self_declared_editorial: авторськ|підсум|рейтинг|спостереж|узагальн|заголов|назви колонок|рамка|порада|редакційн|вибір
     автора|оцінка|міркуванн|формулюванн|ринков|маршрут|позиція|найдешевш|найдорожч|лідер|найчастіш|найпоширеніш|винуватц|типов[аоиі]\b|звичайн|практик|стандартн
   number_with_unit: \d+(?:[.,]\d+)?\s*(?:мА|мкА|нА|А\b|мВ|В\b|кВ|Ом|кОм|МОм|Гц|кГц|МГц|ГГц|мс|мкс|нс|с\b|°C|дБм|дБ|мм|см|м\b|Вт|мВт|Гн|мГн|нФ|мкФ|пФ|КБ|МБ|ГБ|біт|байт|%)
+
+# What counts as an externally checkable SIGNAL in a claim's text.
+#
+# These two patterns decide the largest status in the registry: a prose
+# unit carrying no signal is closed mechanically as `no-external-signal`.
+# They name this book's chips, buses, protocols and unit words, so on
+# another book they would match nothing and sweep the entire book into
+# that status — the single most consequential thing here to carry inline.
+#
+# `broad` is deliberately over-cautious: any digit is a signal. It keeps a
+# unit in the work queue rather than closing it.
+#
+# `strict` is the opposite: only what POINTS AT A SOURCE counts — a number
+# with a unit, a hex address, a pin or channel number, a version, an
+# identifier in backticks, the name of a chip, bus or protocol. It is used
+# for table cells and prose, where the broad rule's "any digit" would keep
+# a list ordinal ("…check the supply. 4.") in the queue forever.
+#
+# A random sample of 160 units measured that ~37 % of what the broad rule
+# closes does have an external referent.
+signal:
+  broad: "`[^`]+`|\\d|\bESP32\b|\bESP8266\b|\bS2\b|\bS3\b|\bC3\b|\bC6\b|\bH2\b|\bP4\b|\b(?:I²C|SPI|UART|TWAI|CAN|RS-485|Modbus|LoRa|Wi-Fi|BLE|MQTT|HTTP|HTTPS|TLS|NVS|OTA|JTAG|PWM|ADC|DAC|DMA|PSRAM|SRAM|GPIO|IEEE|USB|SDIO|NMEA|FreeRTOS|ESP-IDF|ESP-NOW|Arduino|PlatformIO|MicroPython|ESPHome|Wokwi|LVGL|U8g2|TFT_eSPI|LovyanGFX|RadioLib|GxEPD2|MOSFET|ESC|LDO|RTC|eFuse|brownout|watchdog|bootloader|coredump|backtrace)\b\
+    |\b(?:мікроампер|міліампер|ампер|вольт|герц|ват|ом|байт|біт|секунд|мілісекунд|мікросекунд|градус)\\w*"
+  strict: '`[^`]+`|\d+\s*(?:мА|мкА|А|В|мВ|кОм|Ом|МОм|МГц|кГц|Гц|МБ|КБ|ГБ|біт|байт|мс|мкс|нс|°C|дБм|мм|см|Гн|нФ|мкФ|пФ|%)|0x[0-9A-Fa-f]+|GPIO\s?\d+|IO\d+|\bпін\w*\s+\d|\bканал\w*\s+\d|\d+\s*(?:пін|вивод|канал|розряд)|\bv\d+(?:\.\d+)*|[A-Z]{2,}[0-9]{2,}[A-Z0-9-]*|ESP32|ESP8266|\bS2\b|\bS3\b|\bC3\b|\bC6\b|\bH2\b|\bP4\b|\bC5\b|\bC2\b|I²C|I²S|SPI|UART|TWAI|CAN|RS-485|Modbus|LoRa|Wi-Fi|BLE|MQTT|HTTP|TLS|NVS|OTA|JTAG|PWM|ADC|DAC|DMA|PSRAM|SRAM|GPIO|USB|SDIO|RMT|LEDC|MCPWM|SDMMC|eFuse|RTC|ULP|FreeRTOS|ESP-IDF|ESP-NOW|Arduino|PlatformIO|MicroPython|ESPHome|brownout|watchdog|bootloader|coredump|backtrace|strapping|menuconfig'

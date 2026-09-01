@@ -1,29 +1,30 @@
 #!/usr/bin/env python3
-"""Каркас реєстру фактчекінгу: паралельна структура до тіла книги.
+"""The registry skeleton: a structure parallel to the body of the book.
 
-Ідея. Рецензія читає розділ і питає «чи це узгоджено». Фактчекінг бере
-**окреме твердження** і питає «звідки це відомо». Друге питання не
-масштабується в голові: у книзі тисячі тверджень, і жодне читання не
-гарантує, що жодне з них не пропущене.
+The idea. A review reads a chapter and asks "is this coherent".
+Fact-checking takes **one claim** and asks "how is this known". The second
+question does not scale in anybody's head: a book holds thousands of
+claims, and no amount of reading guarantees that none was missed.
 
-Тому реєстр будується механічно й **повний за побудовою**: інструмент
-розкладає кожен файл книги на одиниці тверджень і створює паралельний
-документ, у якому кожна одиниця має свій запис. Далі проходи заповнюють
-записи доказами. Одиниця без доказу — видима порожнеча, а не забутий
-рядок.
+So the registry is built mechanically and is **complete by
+construction**: the tool decomposes every file of the book into claim
+units and creates a parallel document in which every unit has its own
+record. Passes then fill those records with evidence. A unit with no
+evidence is a visible emptiness rather than a forgotten line.
 
-    factcheck/tools/factcheck.py sketch     створити або досинхронізувати каркас
-    factcheck/tools/factcheck.py status     зведення за класами доказів
-    factcheck/tools/factcheck.py stale      чи реєстр іще про цю книгу
-    factcheck/tools/factcheck.py blocked    перелік недоступних джерел на винос
+    factcheck/tools/factcheck.py sketch   create or re-sync the skeleton
+    factcheck/tools/factcheck.py status   a summary by evidence status
+    factcheck/tools/factcheck.py stale    is the registry still about this book
+    factcheck/tools/factcheck.py blocked  unreachable sources, as a hand-off
 
-Синхронізація. У кожному записі лежить хеш дослівного тексту книги. Якщо
-текст у книзі змінили, `stale` це показує: доказ міг стосуватися
-попереднього формулювання. Це те, що відрізняє живий реєстр від знімка,
-який тихо розходиться з книгою.
+Synchronisation. Every record holds a hash of the book's verbatim text.
+If the text in the book changed, `stale` shows it: the evidence may have
+applied to the previous wording. That is what distinguishes a living
+registry from a snapshot quietly drifting away from the book.
 
-Слово «якщо» тут довго було обіцянкою, а не описом: `stale` перевіряв
-лише, чи існує файл. Формулювання лишили як є — тому й не помітили.
+The word "if" above was a promise rather than a description for a long
+time: `stale` checked only whether the file existed. The wording was left
+as it stood, which is why nobody noticed.
 """
 
 import hashlib
@@ -34,37 +35,41 @@ from pathlib import Path
 
 import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
-# `GRUPY` була вісьмома копіями того самого факту — теками цієї
-# книги. Копії збігалися, і саме тому були небезпечні: набір копій
-# не бреше, доки факт не зміниться, а тоді бреше всіма одразу.
-# Тепер це дані: `factcheck/book.yaml`.
+# `GRUPY` was eight copies of one fact — this book's directories. The
+# copies agreed, which is what made them dangerous: a set of copies does
+# not lie until the fact changes, and then it lies in all of them at once.
+# It is data now: `factcheck/book.yaml`.
 GRUPY = config.groups()
 FC = ROOT / "factcheck"
 
-# Стани перевірки. Одна таблиця на всіх, і ключ у ній — СЛОВО.
+# The evidence statuses. One table for everybody, and its key is the
+# WORD.
 #
-# ## Чому не літера
+# ## Why not a letter
 #
-# До 2026-08-29 стан жив у трьох паралельних записах — літера `A`,
-# слово `verbatim`, знак `✅` — і рядок картки друкував усі три поспіль:
+# Until 2026-08-29 a status lived in three parallel notations — the letter
+# `A`, the word `verbatim`, the sign `✅` — and a card printed all three
+# in a row:
 #
-#     - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела…
+#     - **Class:** ✅ A — primary, quoted — the extract from the source…
 #
-# Два з трьох не несуть нічого, чого не каже третій; вони лише вимагають
-# від читача пам'ятати легенду з одинадцяти позицій. Власник сформулював
-# це точніше за нас: **абревіатура не є промовистим іменем**, а вся
-# методика іменування в коді тримається саме на промовистих іменах.
+# Two of the three carry nothing the third does not; they merely require
+# the reader to remember an eleven-item legend. The sharpest phrasing of
+# the objection: **an abbreviation is not a talking name**, and the whole
+# discipline of naming in code rests on talking names.
 #
-# І вони встигли розійтися, як завжди розходяться копії. `F` мав ДВА
-# англійські слова водночас — `unverified` у даних і `unchecked` у
-# `field_names.py`. Обрано `unchecked`: воно означає «ніхто не дивився»,
-# тоді як `unverified` читається як «перевірили й не підтвердилось».
+# And they had already drifted, as copies always do. One status carried
+# TWO English words at once — `unverified` in the data and `unchecked` in
+# a tool. `unchecked` was chosen: it means "nobody looked", whereas
+# `unverified` reads as "we checked and it did not hold up".
 #
-# Порядок ключів = спадання сили; `STRENGTH_BY_LETTER` виводиться з нього, а не
-# тримається окремим словником, який може розійтися.
-# Ці рядки — не лише показ у консолі: `report.py` друкує їх у
-# `REPORT.md`, а `docs.py` звіряє перелік із METHOD.md. Тобто це
-# нормативний текст технології, і він англійською разом із нею.
+# The key order IS the descending strength; `STRENGTH_BY_LETTER` is
+# derived from it rather than kept as a separate dictionary that could
+# drift.
+# These strings are not only console output: the report generator prints
+# them into `REPORT.md`, and the consistency gate compares the list
+# against `METHOD.md`. They are normative text of the technology, and are
+# in English along with it.
 STATUSES = {
     "verbatim": "primary, quoted — the source was obtained and the extract copied",
     "derived": "primary, inferred — the source was obtained; the claim follows unambiguously",
@@ -79,9 +84,10 @@ STATUSES = {
     "code-context": "context — a whole code block; the claims live in its lines",
 }
 
-# Літери лишаються рівно на час переїзду: щоб читати вже написані картки
-# й записи. Нічого нового ними не позначається. Прибираються разом із
-# полем `klas` у записах — не раніше й не окремо.
+# The letters remain only as a translation for tools and callers that
+# still pass one. Nothing new is labelled with them. The registry itself
+# carries words: the `klas` field was removed from all 1366 records and
+# from all 8331 card comments on 2026-08-31.
 LETTER_TO_STATUS = {
     "A": "verbatim", "B": "derived", "N": "absent-from-source",
     "D": "arithmetic", "C": "named-unreachable", "S": "self-consistent",
@@ -94,9 +100,10 @@ CLASS_TEXT = {k: STATUSES[v] for k, v in LETTER_TO_STATUS.items()}
 SIGN = {"A": "✅", "B": "🟢", "C": "🟡", "D": "🔵", "E": "⚪", "F": "🔴",
         "G": "⚠", "K": "▫", "L": "🔎", "S": "🔁", "N": "🚫"}
 
-ALL_CLASSES = "".join(CLASS_TEXT)                      # A B C D E L F G K
-CLASSES_OF_UNITS = "".join(k for k in CLASS_TEXT if k != "K")   # без блоків коду
-# Те саме СЛОВАМИ, і виведене з того самого джерела, а не вписане поруч.
+ALL_CLASSES = "".join(CLASS_TEXT)
+CLASSES_OF_UNITS = "".join(k for k in CLASS_TEXT if k != "K")  # no code blocks
+# The same thing as WORDS, derived from the same source rather than
+# written out beside it.
 STATUSES_OF_UNITS = [s for s in STATUSES if s != "code-context"]
 
 RE_ZAPYS = re.compile(
@@ -105,23 +112,24 @@ RE_ZAPYS = re.compile(
 )
 
 
-# Один взірець на всіх, хто читає з картки **короткий виклад
-# твердження**. Раніше кожен споживач тримав свою копію рядка «Книга
-# каже, дослівно:». Заголовок змінився на «Твердження, коротко» — і
-# жоден із них не впав: `blocked`, `cherha`, `shukaty` та `split_queue.py`
-# мовчки почали знаходити порожньо, а звіти лишилися на вигляд
-# правильними.
+# One pattern for everybody who reads the **short statement of the
+# claim** from a card. Each consumer used to hold its own copy of the old
+# heading. The heading was renamed — and not one of them failed: four
+# tools silently began finding nothing, and their reports went on looking
+# correct.
 #
-# > Взірець, що читає чужий формат, мусить жити в одному місці з тим,
-# > хто цей формат пише. Копія взірця — це обіцянка не міняти формат,
-# > якої ніхто не давав.
-# Сам заголовок — теж один на всіх, і саме його бракувало: взірець вище
-# жив в одному місці, а `layer1_units.py` тримав власну копію РЯДКА, і
-# вона лишилася на старому «Книга каже, дослівно:». Той інструмент
-# оглядав нуль одиниць і друкував три нулі поспіль.
+# > A pattern that reads somebody else's format must live in the same
+# > place as whoever writes that format. A copy of the pattern is a
+# > promise not to change the format, and nobody made that promise.
 #
-# Копія взірця — обіцянка не міняти формат. Копія самого рядка — та сама
-# обіцянка, тільки коротша й тому непомітніша.
+# The heading itself is shared too, and that was what had been missing:
+# the pattern above lived in one place while another tool held its own
+# copy of the STRING, and that copy stayed on the old heading. That tool
+# examined zero units and printed three zeros in a row.
+#
+# A copy of a pattern is a promise not to change the format. A copy of the
+# string itself is the same promise, shorter and therefore less
+# visible.
 CLAIM_HEADING = "Твердження, коротко"
 
 RE_TVERDZHENNYA = re.compile(
@@ -129,28 +137,31 @@ RE_TVERDZHENNYA = re.compile(
     + r"\*\*\n\n(?P<txt>(?:> [^\n]*\n)+)")
 
 
-# Роди одиниць, чий текст у картці — **рендер**, а не текст книги.
+# The kinds of unit whose card text is a **rendering** rather than the
+# book's text.
 #
-# Комірка таблиці стає рядком `BME280 · Адреса → 0x76`, якого в книзі
-# немає; такій картці потрібен окремий блок із сирим рядком.
+# A table cell becomes a line like `BME280 · Address → 0x76`, which does
+# not exist in the book; such a card needs a separate block holding the
+# raw row.
 #
-# Проза — навпаки: `rozbyty()` бере речення **з книги**, тож текст
-# одиниці вже дослівний (перевірено: 46 із 46 речень розділу 63
-# знаходяться в книзі підрядком). Додавати їй «дослівний» блок не лише
-# зайве — воно шкодить: книга переносить рядки посеред речення, і блок
-# показував **обрізок**:
+# Prose is the opposite: the splitter takes sentences **from the book**,
+# so a unit's text is already verbatim (verified: 46 of 46 sentences in
+# one chapter are substrings of the book). Adding a "verbatim" block to it
+# is not merely redundant but harmful: the book wraps lines in the middle
+# of a sentence, and the block showed a **fragment**:
 #
-#     T-63-002  …льна роль ESP32 у чужій системі (розділ 57), і
+#     T-63-002  …le role of the chip in somebody else's system, and
 #
-# Це знайшов аудит М2: 5194 картки з 8331 обривалися на півслові. За
-# моєю, суворішою мірою — 3851. Рід той самий, що ми вже тричі
-# записували під іншими іменами («обрив думки», «комірка без
-# контексту»): **виконавець судить половину думки.** Тільки цього разу
-# половину нарізав інструмент, зроблений саме проти цього.
+# An audit found this: 5194 cards of 8331 broke off mid-word. By a
+# stricter measure, 3851. The kind is the same one already recorded three
+# times under other names ("a thought cut in half", "a cell with no
+# context"): **the executor judges half a thought.** Only this time the
+# half was cut by the very tool built against that.
 #
-# > Умова була `syryy != txt` — тобто «показати, якщо відрізняється».
-# > Для прози вона правдива через саме лише перенесення рядка. Умова
-# > мала питати про **рід одиниці**, а не про нерівність рядків.
+# > The condition was `raw != text` — "show it if it differs". For prose
+# > that is true through line wrapping alone. The condition should have
+# > asked about the **kind of unit**, not about the inequality of two
+# > strings.
 RENDER = ("komirka", "tablycya", "tablycya-shapka")
 
 
@@ -158,129 +169,98 @@ def sha(text: str) -> str:
     return hashlib.sha256(" ".join(text.split()).encode("utf-8")).hexdigest()[:8]
 
 
-# Рядок коду, який щось стверджує про світ: виклик, константа, команда,
-# запис у регістр. Решта (дужки, коментарі, оголошення змінних) нічого не
-# стверджує і в реєстр не йде.
+# A line of code that asserts something about the world: a call, a
+# constant, a command, a register write. The rest — braces, comments,
+# variable declarations — asserts nothing and does not enter the
+# registry.
 RE_KOD_TVERDZHENNYA = re.compile(
     r"^\s*(?:"
     r"#define\s+\w+|"
     r"#include\s*[<\"]|"
-    r"[A-Za-z_][\w:.]*\s*\([^;]*\)\s*[;,]?\s*$|"          # виклик
-    r"\.\w+\s*=|"                                          # ініціалізація поля
+    r"[A-Za-z_][\w:.]*\s*\([^;]*\)\s*[;,]?\s*$|"          # a call
+    r"\.\w+\s*=|"                                          # a field initialiser
     r"(?:esptool|idf\.py|espefuse|pio|nvs_partition_gen|picocom|minicom|"
     r"screen|dd|python|strings|xtensa-|riscv32-|sudo|ls|dmesg|lsof|git|make)\b"
     r")"
 )
 
 
-# Зовнішньо перевірюваний сигнал у тексті одиниці.
+# An externally checkable signal in a unit's text.
 #
-# Навіщо. Реєстр повний за побудовою, і серед тисяч одиниць є такі, для
-# яких зовнішнього джерела не існує й не буде: редакційне судження,
-# порада, рамка викладу, зв'язка між розділами. Тримати їх у класі `F`
-# («не звірено») — означає обіцяти роботу, якої ніхто не робитиме, і
-# ховати за ними ті одиниці, які звірити справді треба.
+# What counts as an externally checkable signal — from
+# `factcheck/book.yaml`, because these words are the book's, not the
+# technology's.
 #
-# Тому одиниця **без жодного зовнішнього сигналу** переводиться в клас
-# `E` — «сигналу для звірки в тексті немає»: ні цифри, ні ідентифікатора,
-# ні назви, ні одиниці виміру. Це наслідок правила, а **не** висновок,
-# що джерела не існує. Випадкова вибірка на 160 одиницях показала, що
-# зовнішній референт має близько 37 % із них.
+# Among thousands of units there are those for which no external source
+# exists or ever will: an editorial judgement, a piece of advice, a
+# framing sentence, a link between chapters. Keeping them "unchecked"
+# promises work nobody will do, and hides behind them the units that
+# genuinely need checking.
 #
-# Критерій навмисно перестрахований у бік `F`:
-#   · будь-яка цифра — сигнал (числа перевіряються завжди);
-#   · будь-що в зворотних лапках — сигнал (ідентифікатор, команда, рядок);
-#   · назва чипа, шини, протоколу, бібліотеки, компонента — сигнал;
-#   · одиниця виміру словами — сигнал.
-# І застосовується він **лише до прози**. Таблиці, комірки, рядки коду й
-# зв'язки схем не переводяться ніколи: саме там живуть факти, і комірка
-# на кшталт «0 · Touch → T1» виглядає порожньою лише тому, що підмет
-# рядка стоїть окремо.
-RE_ZOVNISHNIY_SYGNAL = re.compile(
-    r"`[^`]+`"                       # ідентифікатор, команда, рядок логу
-    r"|\d"                           # будь-яке число
-    r"|ESP32|ESP8266|S2|S3|C3|C6|H2|P4"
-    r"|(?:I²C|SPI|UART|TWAI|CAN|RS-485|Modbus|LoRa|Wi-Fi|BLE|MQTT|HTTP|HTTPS|"
-    r"TLS|NVS|OTA|JTAG|PWM|ADC|DAC|DMA|PSRAM|SRAM|GPIO|IEEE|USB|SDIO|NMEA|"
-    r"FreeRTOS|ESP-IDF|ESP-NOW|Arduino|PlatformIO|MicroPython|ESPHome|Wokwi|"
-    r"LVGL|U8g2|TFT_eSPI|LovyanGFX|RadioLib|GxEPD2|MOSFET|ESC|LDO|RTC|eFuse|"
-    r"brownout|watchdog|bootloader|coredump|backtrace)"
-    r"|(?:мікроампер|міліампер|ампер|вольт|герц|ват|ом|байт|біт|секунд|"
-    r"мілісекунд|мікросекунд|градус)\w*"
-)
+# So a unit with **no external signal at all** moves to
+# `no-external-signal`: no digit, no identifier, no name, no unit of
+# measure. That is the consequence of a rule and **not** a conclusion that
+# no source exists. A random sample of 160 units found that about 37 % of
+# them do have an external referent.
+#
+# The broad criterion is deliberately biased toward keeping a unit in the
+# work queue, and it applies **only to prose**. Tables, cells, code lines
+# and schematic connections are never moved: that is where the facts live,
+# and a cell like "0 · Touch → T1" looks empty only because the row's
+# subject stands apart from it.
+#
+# The strict criterion is the opposite: a signal is only what **points at
+# a source**. The broad rule's "any digit" keeps a list ordinal
+# ("…check the supply. 4.") in the queue forever, which is right as
+# caution and expensive as policy.
+_sig = config.signal()
+RE_ZOVNISHNIY_SYGNAL = re.compile(_sig["broad"])
+RE_SYGNAL_STROGYY = re.compile(_sig["strict"])
 
 
-# Строгий тест зовнішнього сигналу — для комірок таблиць і для прози.
+# A line of an ASCII schematic: two pins joined by a line. Each such line
+# is a **separate** claim, and almost always has a different source from
+# its neighbour: "3V3 ─── VCC" is checked against the sensor's datasheet,
+# "SDA ─── GPIO21" against the board's documentation, "└─[4.7k]─ 3V3"
+# against the bus specification.
 #
-# Широкий `RE_ZOVNISHNIY_SYGNAL` вище лишає одиницю в роботі від будь-якої
-# цифри, і це правильно як обережність, але дорого як політика: номер
-# пункту списку («…перевірити живлення. 4.») тримає в класі F твердження,
-# у якому нема чого звіряти.
-#
-# Тут навпаки: сигналом вважається лише те, що **вказує на джерело** —
-# число з одиницею, шістнадцяткова адреса, номер піна, номер каналу,
-# версія, ідентифікатор у зворотних лапках, назва чипа, шини, протоколу
-# чи мікросхеми. Усе інше — редакційне, і клас E для нього рішення, а не
-# пропуск.
-#
-# Правило свідомо консервативне в один бік: сумнівне лишається в F.
-RE_SYGNAL_STROGYY = re.compile(
-    r"`[^`]+`"                                     # ідентифікатор, команда
-    r"|\d+\s*(?:мА|мкА|А|В|мВ|кОм|Ом|МОм|МГц|кГц|Гц|МБ|КБ|ГБ|біт|байт|"
-    r"мс|мкс|нс|°C|дБм|мм|см|Гн|нФ|мкФ|пФ|%)"      # число з одиницею
-    r"|0x[0-9A-Fa-f]+|GPIO\s?\d+|IO\d+"            # адреса, пін
-    r"|\bпін\w*\s+\d|\bканал\w*\s+\d|\d+\s*(?:пін|вивод|канал|розряд)"
-    r"|\bv\d+(?:\.\d+)*"                          # версія
-    r"|[A-Z]{2,}[0-9]{2,}[A-Z0-9-]*"               # BME280, MAX485, AT24C32
-    r"|ESP32|ESP8266|\bS2\b|\bS3\b|\bC3\b|\bC6\b|\bH2\b|\bP4\b|\bC5\b|\bC2\b"
-    r"|I²C|I²S|SPI|UART|TWAI|CAN|RS-485|Modbus|LoRa|Wi-Fi|BLE|MQTT|HTTP|TLS"
-    r"|NVS|OTA|JTAG|PWM|ADC|DAC|DMA|PSRAM|SRAM|GPIO|USB|SDIO|RMT|LEDC|MCPWM"
-    r"|SDMMC|eFuse|RTC|ULP|FreeRTOS|ESP-IDF|ESP-NOW|Arduino|PlatformIO"
-    r"|MicroPython|ESPHome|brownout|watchdog|bootloader|coredump|backtrace"
-    r"|strapping|menuconfig"
-)
-
-
-# Рядок ASCII-схеми: два виводи, з'єднані лінією. Кожен такий рядок —
-# **окреме** твердження, і майже завжди з іншим джерелом, ніж сусідній:
-# «3V3 ─── VCC» перевіряється за datasheet датчика, «SDA ─── GPIO21» —
-# за документацією плати, «└─[4.7к]─ 3V3» — за специфікацією шини.
-#
-# Доти схема реєструвалася одним записом, і доказ на будь-яку її частину
-# позначав звіреною всю. Зовнішня рецензія 2026-08-26 показала, чим це
-# кінчається: повна схема проєкту 59 стояла з доказом на datasheet
-# BME280, який ніколи не міг би підтвердити наявність `GPIO22` у S3.
+# Until then a schematic was registered as one record, and evidence for
+# any part of it marked the whole thing checked. An external review showed
+# where that ends: a complete project schematic stood with evidence
+# pointing at a sensor datasheet, which could never have confirmed the
+# presence of a particular GPIO on a particular chip.
 RE_SCHEMA_ZVYAZOK = re.compile(r"[─━]{2,}|[│┬└┌┐┘├┤]|-{3,}[>\s]|→")
 
 
 def rozbyty_tablycyu(ryadky: list[str], vid: int) -> list[tuple[str, str, int]]:
-    """Таблиця → окреме твердження на кожну **комірку**, а не на рядок.
+    """A table -> one claim per **cell**, not per row.
 
-    Рядок «| UART | 3 | 2 | 3 | 2 | 3 | 2 |» — це шість незалежних
-    тверджень про шість різних чипів, і звіреність п'яти з них нічого не
-    каже про шосте. Тому комірка розкладається у формі «рядок · колонка →
-    значення», яка читається як самостійне речення.
+    The row `| UART | 3 | 2 | 3 | 2 | 3 | 2 |` is six independent claims
+    about six different chips, and five of them being checked says nothing
+    about the sixth. So a cell is rendered as "row · column → value",
+    which reads as a sentence in its own right.
 
-    Таблиці на дві колонки лишаються цілими: там рядок і є твердженням
-    («симптом → причина»), і різати його безглуздо.
+    Two-column tables stay whole: there the row IS the claim ("symptom →
+    cause"), and cutting it up is pointless.
     """
-    # Пари **(справжній номер рядка, рядок)**, а не самі рядки.
+    # Pairs of **(real line number, line)**, not bare lines.
     #
-    # Тут була вада, невидима всім нашим перевіркам. `korysni` відкидає
-    # роздільник `|---|---|`, а далі `enumerate(korysni[1:], 1)` давав
-    # індекс у **відфільтрованому** переліку, який додавався до `vid` —
-    # зміщення в **невідфільтрованому**. Кожна комірка після роздільника
-    # з'їжджала на стільки рядків, скільки їх відкинули вище.
+    # There was a defect here invisible to every check we had. The filter
+    # discards the `|---|---|` separator, and the enumeration that
+    # followed gave an index into the **filtered** list, which was then
+    # added to an offset into the **unfiltered** one. Every cell after a
+    # separator slid by as many lines as had been discarded above it.
     #
-    # Наслідок гірший за зсув адреси: `dослівно_і_контекст` бере рядок
-    # книги **за цим номером**, тож у блоці «Дослівно з книги» стояв
-    # сусідній рядок — а часто сам роздільник.
+    # The consequence is worse than a wrong address: the renderer takes
+    # the book's line **by that number**, so the "verbatim from the book"
+    # block held a neighbouring line — often the separator itself.
     #
-    # Виміряно прямим питанням «чи стоїть у книзі за записаним номером
-    # той рядок, що показано в картці»: **1360 комірок із 1383** —
-    # ні. Ані `layer1`, ані `stale` цього не бачили: перший звіряє з
-    # **вікном** навколо номера, другий — за хешем тексту. Обидва
-    # відповідали на своє питання правильно.
+    # Measured by asking directly whether the line shown in a card really
+    # stands in the book at the recorded number: **1360 cells of 1383**
+    # did not. Neither the book-to-record layer nor the staleness check
+    # saw it: the first compares against a **window** around the number,
+    # the second by the hash of the text. Both were answering their own
+    # question correctly.
     pary = [(i, r) for i, r in enumerate(ryadky)
             if not re.match(r"^\|[\s:|-]+\|$", r.strip())]
     korysni = [r for _i, r in pary]
@@ -303,39 +283,42 @@ def rozbyty_tablycyu(ryadky: list[str], vid: int) -> list[tuple[str, str, int]]:
         for j, v in enumerate(k[1:], 1):
             if j >= len(shapka) or not v or v in ("—", "-", ""):
                 continue
-            kolonka = shapka[j] or f"колонка {j}"
+            kolonka = shapka[j] or f"column {j}"
             out.append(("komirka", f"{pidmet} · {kolonka} → {v}", vid + i))
     return out
 
 
 def rozbyty(text: str) -> list[tuple[str, str, int]]:
-    """Файл → перелік (вид, дослівний текст, номер рядка).
+    """A file -> a list of (kind, verbatim text, line number).
 
-    Види одиниць:
-      proza            речення поза кодом і таблицями
-      tablycya         рядок таблиці на дві колонки
-      tablycya-shapka  шапка широкої таблиці
-      komirka          окрема комірка широкої таблиці
-      kod              блок коду цілком — як контекст
-      kod-ryadok       окремий рядок коду, що щось стверджує
+    Kinds of unit:
+      proza            a sentence outside code and tables
+      tablycya         a row of a two-column table
+      tablycya-shapka  the header of a wide table
+      komirka          a single cell of a wide table
+      kod              a whole code block — as context
+      kod-ryadok       one line of code that asserts something
 
-    Заголовки, порожні рядки й розмітку блоків пропускаємо: вони нічого
-    не стверджують про світ.
+    Headings, blank lines and block markup are skipped: they assert
+    nothing about the world.
     """
     odynyci: list[tuple[str, str, int]] = []
     ryadky = text.split("\n")
     i, n = 0, len(ryadky)
-    # Кожен рядок несе свій номер: інакше всі речення абзацу дістають
-    # номер його **початку**, і картка обіцяє точність, якої не має.
+    # Every line carries its own number: otherwise every sentence of a
+    # paragraph gets
+    # the number of its **start**, and the card promises a precision it
+    # does not have.
     #
-    # Спіймано звіркою з `layer1.py` М2: п'ять карток списку в `k01`
-    # стояли з одним номером 38, тоді як пункти лежать на 38–42. Мій
-    # `stale` цього не бачив і побачити не міг — він звіряє генератор
-    # сам із собою, а не з книгою.
+    # Caught by comparison with the book-to-record layer: five list cards
+    # stood with the same line number 38, while the items lie on 38–42.
+    # The staleness check could not see it and could not have — it
+    # compares the generator with itself, not with the book.
     #
-    # > Дві перевірки того самого шару розійшлися, і обидві мали рацію:
-    # > одна питала «чи реєстр із цієї книги», друга — «чи номер веде
-    # > туди, куди обіцяє». Друге питання ми не ставили ніколи.
+    # > Two checks of the same layer disagreed, and both were right: one
+    # > asked "is this registry from this book", the other "does the
+    # > number lead where it promises". The second question had never
+    # > been asked.
     buf: list[tuple[int, str]] = []
     buf_vid = 0
 
@@ -343,9 +326,9 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
         nonlocal buf, buf_vid
         if not buf:
             return
-        # Зшиваємо блок і запам'ятовуємо, з якого символу починається
-        # кожен рядок — щоб потім віддати реченню номер його власного
-        # рядка, а не рядка абзацу.
+        # Stitch the block together and remember at which character each
+        # each line — so that a sentence can later be given the number
+        # of its own line rather than the paragraph's.
         chastky, mezhi, poz = [], [], 0
         for nomer, x in buf:
             s = x.strip()
@@ -367,8 +350,9 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
                 ostannij = nomer
             return ostannij
 
-        # Речення. Крапка в «0x1000.» або «v5.5» не завершує речення, тому
-        # ділимо лише там, де за розділовим знаком іде велика літера або тире.
+        # Sentences. A dot in `0x1000.` or `v5.5` does not end a
+        # sentence, so we split only where the punctuation is followed by
+        # a capital letter or a dash.
         shukach = 0
         chastyny = re.split(r"(?<=[.!?])\s+(?=[«»А-ЯЇІЄҐA-Z\[`*—-])", blok)
         for c in chastyny:
@@ -416,18 +400,20 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
     return odynyci
 
 
-# Куди лягає картка. Дзеркало книги живе під `cards/`, а не в корені
+# Where a card is written. The book's mirror lives under `cards/`, not in
+# the root of
 # `factcheck/`.
 #
-# Цей рядок — обчислений шлях, і саме тому `paths.py` його не бачить:
-# той читає літерали. Після переїзду карток `sketch` мовчки писав у
-# `factcheck/manual/` — теку, якої більше немає, — і `mkdir(parents=True)`
-# слухняно її створював. Дев'яносто дві картки лягли поруч зі
-# справжніми, жодна перевірка не впала, і `git status` показав би не
-# помилку, а роботу.
+# This line is a COMPUTED path, and that is exactly why the path checker
+# cannot see it: that one reads literals. After the cards moved, the
+# generator silently wrote into a directory that no longer existed, and
+# `mkdir(parents=True)` obligingly created it. Ninety-two cards landed
+# beside the real ones, no check failed, and version control would have
+# shown not an error but work.
 #
-# > Перевірка літералів не бачить обчислених шляхів. Її межа записана в
-# > `paths.py`, і ось випадок, який у ту межу впав.
+# > A check that reads literals cannot see a computed path. Its limit is
+# > recorded in the path checker, and this is the case that fell into
+# > that limit.
 KARTKY = "cards"
 
 
@@ -436,7 +422,7 @@ def shlyakh_reyestru(f: Path) -> Path:
 
 
 def prefiks(f: Path) -> str:
-    """Стабільний префікс ідентифікатора: 06 з manual/06-zhyvlennya.md."""
+    """A stable identifier prefix: 06 from manual/06-zhyvlennya.md."""
     m = re.match(r"([a-z]?\d+|[a-z])-", f.stem)
     return (m.group(1) if m else f.stem[:3]).upper()
 
@@ -445,21 +431,22 @@ DOKAZY = FC / "evidence"
 
 
 def zavantazhyty_dokazy() -> list[dict]:
-    """Докази з `factcheck/evidence/*.yaml` — перелік записів.
+    """Evidence from `factcheck/evidence/*.yaml` — a list of records.
 
-    Запис прив'язується до тверджень двома способами.
+    A record binds to claims in two ways.
 
-    **`sha:`** — точний хеш дослівного тексту. Ключем узято хеш, а не
-    ідентифікатор, бо ідентифікатор — це порядковий номер у файлі, і
-    вставлене вище речення зсуває всі наступні. Хеш прив'язаний до самого
-    твердження, тож доказ їде за ним при перевпорядкуванні — і навпаки,
-    **відв'язується сам**, щойно формулювання змінили. Друге не менш
-    важливе за перше: доказ стосувався тих слів, а не цих.
+    **`sha:`** — the exact hash of the verbatim text. The hash is the key
+    rather than the identifier, because an identifier is an ordinal within
+    a file and a sentence inserted above shifts every one below it. A hash
+    is bound to the claim itself, so evidence travels with it through a
+    reordering — and, equally, **detaches itself** the moment the wording
+    changes. The second is no less important than the first: the evidence
+    was about those words, not these.
 
-    **`zbih:`** — взірець. Одне й те саме твердження живе в книзі в
-    кількох місцях (розділ, картка, додаток), і доводиться воно один раз.
-    Взірець покриває всі входження, а `sketch` друкує, що саме покрив, —
-    щоб зіставлення лишалося перевірюваним, а не магічним.
+    **`zbih:`** — a pattern. One and the same claim lives in several
+    places in the book (a chapter, a card, an appendix) and is proved
+    once. The pattern covers every occurrence, and the generator prints
+    what it covered, so the matching stays checkable rather than magical.
     """
     import yaml
     out: list[dict] = []
@@ -472,10 +459,11 @@ def zavantazhyty_dokazy() -> list[dict]:
     return out
 
 
-# Слово стану → літера. Переїзд дав записам обидва позначення, і саме
-# **значення**, а не лише ім'я поля, робить `klas` останнім у стисненні:
-# `STRENGTH_BY_LETTER`, `CLASS_TEXT` і всі порівняння з "A"/"B" ключовані літерою, тож
-# проста заміна ключа мовчки почала б порівнювати слова з літерами.
+# Status word -> letter. The **value**, not merely the field name, is
+# what made the letter the last thing to go: strength ordering, the
+# description table and every comparison against "A"/"B" were keyed by
+# letter, so a simple key rename would silently have started comparing
+# words with letters.
 SLOVO_V_LITERU = {
     "verbatim": "A", "derived": "B", "named-unreachable": "C",
     "arithmetic": "D", "no-external-signal": "E", "unchecked": "F",
@@ -485,12 +473,12 @@ SLOVO_V_LITERU = {
 
 
 def status_of(z: dict, typovo: str = "unchecked") -> str:
-    """Стан запису **словом** — один доступ на всіх.
+    """A record's status as a **word** — one accessor for everybody.
 
-    Це цільова форма. `class_letter_of` нижче лишається на час переїзду й
-    працює через цю: доки в записах є поле `klas`, обидва мають давати
-    одне й те саме, і краще нехай це буде тим самим кодом, ніж двома
-    копіями одного правила.
+    This is the target form. `class_letter_of` below works through this
+    one: while any caller still asks for a letter, both must give the same
+    answer, and it is better that this be the same code than two copies of
+    one rule.
     """
     s = str(z.get("status") or "").strip()
     if s in STATUSES:
@@ -502,39 +490,42 @@ def status_of(z: dict, typovo: str = "unchecked") -> str:
 
 
 def class_letter_of(z: dict, typovo: str = "F") -> str:
-    """Літера класу запису доказу — з англійського поля, зі старим як запас.
+    """An evidence record's status letter, derived from the word.
 
-    Один доступ на всіх. Доти кожен інструмент читав `z["klas"]` сам, і
-    стиснення імен зламало б їх усі одночасно; тепер зламається (або не
-    зламається) одне місце.
+    One accessor for everybody. Before it, every tool read the field
+    itself, and contracting the names would have broken them all at once;
+    now one place breaks, or does not.
 
-    Порядок навмисний: спершу `status`, бо він і є цільове поле. Але
-    2026-08-28 знайшлося, що дві копії одного поля **розійшлися** в 29
-    записах — тож поки триває переїзд, розбіжність тут не вигадка, і
-    старе поле лишається запасним, а не головним.
+    The order is deliberate: `status` first, because it is the target
+    field. But two copies of one field were once found to have **diverged**
+    in 29 records — while a migration is in progress a divergence here is
+    not hypothetical, so the older field remains a fallback rather than
+    the primary.
     """
     s = str(z.get("status") or "").strip()
     if len(s) == 1:
         return s
     if s in SLOVO_V_LITERU:
         return SLOVO_V_LITERU[s]
-    # Слово, якого в словнику немає, — не привід забути про старе поле.
-    # Знайдено на шести записах зі `status: unverified` (правильне слово
-    # `unchecked`): перша редакція віддавала тут типове значення, і
-    # ворота на них замовкали. Невідоме слово — привід узяти запасне
-    # поле, а не вигадати відповідь.
+    # A word absent from the dictionary is no reason to forget the old
+    # field.
+    # Found on six records carrying a status word that was almost but not
+    # quite the right one: the first version returned the default here and
+    # the gates went quiet on them. An unknown word is a reason to reach
+    # for the fallback field, not to invent an answer.
     return str(z.get("klas") or typovo)
 
 
-# Сила класу доказу. Менше — сильніше.
-# `N` стоїть біля `B`: джерело **отримано**, і твердження випливає
-# з нього однозначно — різниця лише в тому, що випливає воно з
-# мовчання, а не з рядка. Слабше за `B` на волосину, бо мовчання
-# доводить лише там, де сусідній документ того самого роду
-# говорить (див. поле `control`).
-# Виводиться зі `STATUSES`, а не тримається окремим словником: два записи
-# одного порядку розходяться, і саме так `CLASS_TEXT` уже стверджував
-# «порядок = спадання сили», не будучи в цьому порядку.
+# The strength of an evidence status. Lower is stronger.
+# Proof by absence sits beside `derived`: the source **was obtained** and
+# the claim follows from it unambiguously — the only difference is that it
+# follows from silence rather than from a line. A hair weaker, because
+# silence proves only where a neighbouring document of the same kind
+# speaks (see the `control` field).
+# Derived from `STATUSES` rather than kept as a separate dictionary: two
+# records of one ordering drift, and that is exactly how the description
+# table once asserted "the order is descending strength" while not being
+# in that order.
 STRENGTH_BY_LETTER = {STATUS_TO_LETTER[w]: i
         for i, w in enumerate(x for x in STATUSES if x != "code-context")}
 STRENGTH = {w: i
@@ -542,13 +533,13 @@ STRENGTH = {w: i
 
 
 def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
-    """Доказ для твердження: точний хеш має перевагу, далі — найсильніший.
+    """Evidence for a claim: an exact hash wins, then the strongest.
 
-    Одне твердження може підпадати під кілька доказів: прохід записав
-    його в наряд як недосяжне, наступний знайшов обхідний шлях. Брати
-    треба **найсильніший**, а не той, що трапився першим, — інакше
-    порядок файлів у каталозі мовчки визначав би результат, і закриті
-    пункти лишалися б у наряді назавжди.
+    One claim may fall under several evidences: one pass recorded it as
+    unreachable, a later one found a way around. The **strongest** must be
+    taken, not the first encountered — otherwise the order of files in a
+    directory would silently decide the result, and closed items would
+    stay in the hand-off order for ever.
     """
     kandydaty = vsi_kandydaty(zapysy, h, txt)
     if kandydaty:
@@ -557,30 +548,33 @@ def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
 
 
 def klyuch(z: dict) -> tuple[str, str]:
-    """Тотожність запису доказу для обліку покриття.
+    """The identity of an evidence record, for coverage accounting.
 
-    Не назва: назви беруться з формулювань наряду, тож двоє супровідників
-    природно приходять до однакових. За ключем-назвою слабший однойменний
-    запис зникав і з «нічого не зачепив», і з «перекрито сильнішим» — а
-    перший із цих переліків існує саме для того, щоб ловити хибний взірець.
+    Not the title: titles come from the order's own wording, so two
+    maintainers naturally arrive at identical ones. Keyed by title, a
+    weaker same-named record vanished from both "matched nothing" and
+    "superseded by a stronger one" — and the first of those lists exists
+    precisely to catch a faulty pattern.
     """
     return (str(z.get("_prokhid", "?")), str(z.get("title", "?")))
 
 
 def rozbyty_alternatyvy(vzirets: str) -> list[str]:
-    r"""Розібрати `zbih` по `|` **верхнього рівня**.
+    r"""Split a pattern on its **top-level** `|`.
 
-    Потрібне для аудиту окремих альтернатив. Знахідка М2 від 15:47Z:
-    `sketch -v` бачить мертвий доказ, але не бачить мертву альтернативу
-    в живому доказі. Перша альтернатива спрацювала — запис виглядає
-    здоровим, і те, що друга не збіглася з жодним рядком, не видно
-    ніде: ані в переліку покриття, ані в жодному чеку.
+    Needed to audit individual alternatives. A dead evidence record is
+    visible; a dead alternative inside a live record is not. The first
+    alternative matched, so the record looks healthy, and the fact that
+    the second matched no line at all appears nowhere — not in the
+    coverage list, not in any check.
 
-    Це важить саме тому, що альтернативи ми **нарощуємо**: доказ
-    тягнеться з розділу на картки й додатки додаванням гілок, і кожна
-    додана гілка — окрема нагода мовчки промахнутися.
+    This matters precisely because alternatives **accumulate**: an
+    evidence is stretched from a chapter onto cards and appendices by
+    adding branches, and every added branch is a fresh chance to miss
+    silently.
 
-    Рахуємо дужки і не ріжемо всередині `[...]`; `\|` — літерал.
+    Brackets are counted and nothing is split inside `[...]`; `\|` is a
+    literal.
     """
     chastyny: list[str] = []
     tek: list[str] = []
@@ -616,64 +610,69 @@ def rozbyty_alternatyvy(vzirets: str) -> list[str]:
     return [x for x in chastyny if x]
 
 
-# Друга форма тихої брехні взірця (знахідка М2 від 16:39Z): альтернатива
-# з самої лише назви предмета. `RP2040` збігається з **кожною** коміркою
-# колонки RP2040 — зокрема з «Ціна плати → низька», яку доказ позначив
-# класом B на підставі заголовка з адресами пам'яті.
+# The second form of a pattern's quiet lie: an alternative consisting of
+# a bare subject name. Such a token matches **every** cell of that
+# subject's column — including "board price → low", which an evidence
+# about memory addresses then marked as derived.
 #
-# Ловити це за формою слова не вийде: `RP2040` і `264 КБ` обидва містять
-# цифри, а `Raspberry Pi` і `40 мА` обидва мають пробіл. Ловиться це за
-# **наслідком**: широка альтернатива зачіпає багато одиниць, а доказ
-# говорить про одну. Тому аудит не судить про форму, а друкує число
-# збігів кожної альтернативи окремо — і рішення лишає людині, яка бачить
-# цитату поруч.
+# Catching this by the shape of the word will not work: a part number and
+# a quantity both contain digits, and a vendor name and a measurement both
+# contain a space. It is caught by **consequence**: a wide alternative
+# touches many units while the evidence speaks about one. So the audit
+# does not judge the shape — it prints each alternative's match count
+# separately and leaves the decision to a person who can see the quote
+# beside it.
 SHYROKA_ALTERNATYVA = 4
 
 
 def prychyna(chastyna: str, teksty: list[str]) -> str:
-    """Чому альтернатива не зачепила нічого — здогад, не вирок.
+    """Why an alternative matched nothing — a guess, not a verdict.
 
-    Перебираємо послаблення взірця по одному. Те, від якого він оживає,
-    і називає ваду. Три з них узято з випадків, що вже траплялися:
+    Loosenings of the pattern are tried one at a time. Whichever brings
+    it back to life names the fault. Three are taken from cases that have
+    actually occurred:
 
-      регістр   — велика літера на початку речення. Двоє супровідників
-                  наступили на це незалежно протягом години;
-      перенос   — текст книги переносить рядок там, де взірець чекав
-                  пробіл. З'являється, коли взірець пишуть, дивлячись у
-                  зверстаний вигляд, а не в джерело;
-      пробіли   — зайвий або відсутній пробіл усередині.
+      case     — a capital letter at the start of a sentence. Two
+                 maintainers stepped on this independently within an hour;
+      wrapping — the book wraps a line where the pattern expected a space.
+                 It appears when a pattern is written while looking at the
+                 rendered form rather than the source;
+      spacing  — an extra or missing space inside.
 
-    Четвертий випадок — коли не оживає нічого: текст книги змінився
-    після написання доказу. Це не вада взірця, а робота, яку треба
-    зробити: перевірити, чи доказ ще стосується нового формулювання.
+    A fourth case is when nothing revives it: the book's text changed
+    after the evidence was written. That is not a fault of the pattern but
+    work to be done — check whether the evidence still applies to the new
+    wording.
     """
     try:
         if any(re.search(chastyna, x, re.S | re.I) for x in teksty):
-            return "оживає без урахування регістру — велика літера"
+            return "revives when case is ignored — a capital letter"
     except re.error:
-        return "недійсний взірець сам по собі"
+        return "the pattern is invalid in itself"
     bez_perenosu = [re.sub(r"\s+", " ", x) for x in teksty]
     ch_plaskyy = re.sub(r"\\s\*\\n\?|\\s\+|\\n", " ", chastyna)
     try:
         if any(re.search(ch_plaskyy, x, re.S | re.I) for x in bez_perenosu):
-            return "оживає на злитих пробілах — перенос рядка в книзі"
+            return "revives with spaces collapsed — a line wrap in the book"
     except re.error:
         pass
-    # Голова взірця — перші літери до першого спецсимволу. Якщо навіть
-    # вона не трапляється ніде, предмет із книги зник, а не з'їхав.
+    # The head of a pattern is its first letters up to the first special
+    # character. If even that occurs nowhere, the subject has left the
+    # book rather than moved within it.
     holova = re.split(r"[\\(\[.*+?{|^$]", chastyna, 1)[0].strip()
     if len(holova) >= 4 and not any(holova.lower() in x.lower()
                                     for x in teksty):
-        return f"у книзі немає навіть «{holova}» — текст змінився"
-    return "початок є, решта розійшлася — звірити з новим текстом"
+        return f"the book does not even contain «{holova}» — the text changed"
+    return "the beginning is there, the rest diverged — check against the new text"
 
 
 def vsi_kandydaty(zapysy: list[dict], h: str, txt: str) -> list[dict]:
-    """Усі докази, що взагалі підпадають під це твердження.
+    """Every evidence that falls under this claim at all.
 
-    Потрібно окремо від вибору, щоб відрізнити доказ, перекритий
-    сильнішим, від доказу, який не зачепив нічого: перше — норма
-    (прохід закрив пункт наряду), друге — помилка у взірці.
+    Needed separately from the selection, to distinguish evidence
+    superseded by something stronger from evidence that matched nothing:
+    the first is normal (a pass closed an item), the second is a fault in
+    the pattern.
     """
     tochni = [z for z in zapysy if h in [str(x) for x in (z.get("sha") or [])]]
     if tochni:
@@ -682,9 +681,9 @@ def vsi_kandydaty(zapysy: list[dict], h: str, txt: str) -> list[dict]:
             if z.get("match") and _vzirets(z["match"]).search(txt)]
 
 
-# Взірців 1337, а внутрішній кеш `re` тримає 512: без власного кешу
-# кожен виклик перекомпільовував ті самі взірці, і повний обхід
-# «одиниці × докази» тривав хвилини замість секунд.
+# There are 1337 patterns and `re`'s internal cache holds 512: without a
+# cache of our own every call recompiled the same patterns, and a full
+# units-by-evidence pass took minutes instead of seconds.
 _KESH_VZIRCIV: dict[str, "re.Pattern[str]"] = {}
 
 
@@ -702,34 +701,36 @@ SHABLON_DOKAZU = """**Доказ**
 
 
 def pole(z: dict, nove: str, stare: str, typovo=None):
-    """Поле запису доказу: англійське ім'я, старе як запас.
+    """A field of an evidence record: English name, old one as fallback.
 
-    Генеральна репетиція стиснення (М2, 2026-08-28) показала, що
-    `formatuvaty_dokaz` брав поля **прямим доступом** `z['dzherelo']` —
-    і після прибирання старих імен `sketch` падав із `KeyError`, тобто
-    того ж дня ми лишалися без карток обоє.
+    A dress rehearsal of the contraction showed that the card renderer
+    reached for fields by **direct access** — and with the old names
+    removed the generator died with a `KeyError`, which would have left
+    both maintainers without cards that same day.
 
-    > Один доступ рятує лише тих, хто ним ходить. `class_letter_of()` був
-    > правильний і не допоміг чотирьом місцям, які повз нього.
+    > A single accessor saves only those who go through it. The status
+    > accessor was correct and did not help four places that went round
+    > it.
 
-    Друга репетиція знайшла ще сім таких місць — і всі сім вціліли з
-    однієї причини: **вони писані одинарними лапками.** Переведення
-    шукало `z.get("nazva")`, а в коді стояло `z.get('nazva')`, і
-    заміна їх не бачила.
+    A second rehearsal found seven more such places — and all seven had
+    survived for one reason: **they were written with single quotes.** The
+    migration searched for the double-quoted form, and the substitution
+    did not see them.
 
-    > Переведення, що шукає рядок, знаходить рівно той запис рядка,
-    > який шукає. Решта лишається — і виглядає переведеною.
+    > A migration that searches for a string finds exactly the spelling
+    > of that string it searched for. The rest remains — and looks
+    > migrated.
     """
     v = z.get(nove)
     return v if v not in (None, "") else z.get(stare, typovo)
 
 
 def nazva_zapysu(z: dict) -> str:
-    """Назва запису доказу — один доступ, як `class_letter_of`.
+    """The title of an evidence record — one accessor, like the status.
 
-    Вісім місць показу брали `nazva_zapysu(z)` напряму. Після
-    стиснення всі вісім показували б `?` — не падіння, а мовчазна
-    втрата: звіт лишався б цілим і став би нечитним.
+    Eight display sites reached for the title directly. After the
+    contraction all eight would have shown `?` — not a crash but a silent
+    loss: the report would have stayed intact and become unreadable.
     """
     return str(pole(z, "title", "nazva", "?"))
 
@@ -748,9 +749,9 @@ def formatuvaty_dokaz(z: dict | None) -> str:
     # стан — це словник ТЕХНОЛОГІЇ, а опис написано для читача книги.
     stan = status_of(z)
     ch = [f"**Доказ**\n", f"- **Статус:** {stan} — {STATUSES.get(stan,'')}"]
-    # Умова теж через `pole`, а не `z.get(нове)`. Інакше запис, у якому
-    # значення стоїть **лише** під старим іменем, мовчки лишався б без
-    # рядка: доступ полагоджено, а сторож — ні.
+    # The condition goes through the accessor too. Otherwise a record
+    # whose value stands **only** under the old name would silently lose
+    # its line: the access was fixed and the guard was not.
     dzh = pole(z, "source", "dzherelo")
     if dzh:
         ch.append(f"- **Джерело:** {dzh}")
