@@ -1589,7 +1589,7 @@ ESP-NOW працював, партнери мусять бути **на тому
 
 ---
 
-<!-- fc id:T-42-058 sha:4248c371 src:manual/42-espnow.md:138 status:unchecked -->
+<!-- fc id:T-42-058 sha:4248c371 src:manual/42-espnow.md:138 status:verbatim -->
 ### T-42-058 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1608,7 +1608,13 @@ ESP-NOW працював, партнери мусять бути **на тому
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+- **Дослівно з джерела:**
+  > the channels of the devices are not the same
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** —
+- **Прохід:** wave-20260901
 
 ---
 
@@ -1708,7 +1714,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-063 sha:7ff46ce5 src:manual/42-espnow.md:148 status:unchecked -->
+<!-- fc id:T-42-063 sha:7ff46ce5 src:manual/42-espnow.md:148 status:verbatim -->
 ### T-42-063 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1728,7 +1734,13 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+- **Дослівно з джерела:**
+  > the channel must be set as the channel that the local device is on
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** —
+- **Прохід:** wave-20260901
 
 ---
 

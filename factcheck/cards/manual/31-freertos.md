@@ -8,7 +8,7 @@
 
 ---
 
-<!-- fc id:T-31-001 sha:5ddb229c src:manual/31-freertos.md:3 status:unchecked -->
+<!-- fc id:T-31-001 sha:5ddb229c src:manual/31-freertos.md:3 status:verbatim -->
 ### T-31-001 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -27,7 +27,13 @@ FreeRTOS уже працює, коли викликається ваш перш�
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+- **Дослівно з джерела:**
+  > Instead, ESP-IDF starts FreeRTOS automatically. Users must define a ``void app_main(void)`` function which acts as the entry point for user's application and is automatically invoked on ESP-IDF startup.
+- **Спосіб і дата:** wave 2026-09-01, arms A; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** —
+- **Прохід:** wave-20260901
 
 ---
 
@@ -855,7 +861,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-030 sha:aae2b632 src:manual/31-freertos.md:91 status:unchecked -->
+<!-- fc id:T-31-030 sha:aae2b632 src:manual/31-freertos.md:91 status:verbatim -->
 ### T-31-030 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -873,7 +879,13 @@ while (1) {
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Typically, the tasks responsible for handling protocol related processing such as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name ``PRO_CPU``), where as the tasks handling the remainder of the application are pinned to Core 1, (thus the name ``APP_CPU``).
+- **Спосіб і дата:** wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** First pass: Core allocation documentation found
+- **Прохід:** wave-20260901
 
 ---
 

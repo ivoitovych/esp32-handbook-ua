@@ -898,7 +898,7 @@
 
 ---
 
-<!-- fc id:T-10-037 sha:c6a13b2b src:manual/10-instrumenty.md:81 status:unchecked -->
+<!-- fc id:T-10-037 sha:c6a13b2b src:manual/10-instrumenty.md:81 status:verbatim -->
 ### T-10-037 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -917,7 +917,13 @@
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/jtag-debugging/index.rst
+- **Дослівно з джерела:**
+  > Each version of this development board has JTAG interface already built in. No need for an external JTAG adapter
+- **Спосіб і дата:** wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** First pass - Documentation shows some boards have built-in JTAG, others need external adapter
+- **Прохід:** wave-20260901
 
 ---
 

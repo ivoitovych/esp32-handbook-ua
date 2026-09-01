@@ -1325,7 +1325,7 @@
 
 ---
 
-<!-- fc id:T-D-028 sha:abc8094d src:dodatky/d-panik.md:19 status:unchecked -->
+<!-- fc id:T-D-028 sha:abc8094d src:dodatky/d-panik.md:19 status:verbatim -->
 ### T-D-028 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1366,7 +1366,13 @@
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/reset_reasons.h
+- **Дослівно з джерела:**
+  > RESET_REASON_CORE_RTC_WDT    = 0x09, // RTC watch dog resets digital core
+- **Спосіб і дата:** wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** First pass: 0x9 is RTC watchdog reset code
+- **Прохід:** wave-20260901
 
 ---
 
@@ -2388,7 +2394,7 @@
 
 ---
 
-<!-- fc id:T-D-049 sha:1e2b3315 src:dodatky/d-panik.md:26 status:unchecked -->
+<!-- fc id:T-D-049 sha:1e2b3315 src:dodatky/d-panik.md:26 status:verbatim -->
 ### T-D-049 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -2429,7 +2435,13 @@
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/reset_reasons.h
+- **Дослівно з джерела:**
+  > RESET_REASON_SYS_RTC_WDT     = 0x10, // RTC watch dog resets digital core and rtc module
+- **Спосіб і дата:** wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** First pass: 0x10 is RTC watchdog reset code
+- **Прохід:** wave-20260901
 
 ---
 
@@ -2455,7 +2467,7 @@
 
 ---
 
-<!-- fc id:T-D-051 sha:95099304 src:dodatky/d-panik.md:32 status:unchecked -->
+<!-- fc id:T-D-051 sha:95099304 src:dodatky/d-panik.md:32 status:verbatim -->
 ### T-D-051 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -2475,7 +2487,13 @@
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/reset_reasons.h
+- **Дослівно з джерела:**
+  > RESET_REASON_SYS_BROWN_OUT   = 0x0F, // Reset when the VDD voltage is not stable
+- **Спосіб і дата:** wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** First pass: 0xf is power supply (brown-out), not code error
+- **Прохід:** wave-20260901
 
 ---
 

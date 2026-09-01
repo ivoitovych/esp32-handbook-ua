@@ -1190,7 +1190,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-049 sha:b88043c1 src:manual/48-motory.md:123 status:unchecked -->
+<!-- fc id:T-48-049 sha:b88043c1 src:manual/48-motory.md:123 status:verbatim -->
 ### T-48-049 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1207,7 +1207,13 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+- **Дослівно з джерела:**
+  > The LED control (LEDC) peripheral is primarily designed to control the intensity of LEDs, although it can also be used to generate PWM signals for other purposes
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** —
+- **Прохід:** wave-20260901
 
 ---
 

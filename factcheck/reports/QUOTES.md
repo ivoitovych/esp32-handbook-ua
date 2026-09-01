@@ -18,9 +18,9 @@ it.
 | `stub in the cache` | the server returned HTML with status 200 instead of a PDF |
 | `checked by eye` | text extraction destroys the structure; a maintainer checked it, and said why |
 
-Evidence records: **1366**. Checked verbatim: **589**. Not found: **60**. Source not cached: **36**. Nothing to check: **658**.
+Evidence records: **1393**. Checked verbatim: **616**. Not found: **60**. Source not cached: **36**. Nothing to check: **658**.
 
-As of 2026-09-01 11:05 UTC.
+As of 2026-09-01 19:11 UTC.
 
 
 ## no-external-signal on a claim with a number — 23
@@ -157,7 +157,7 @@ As of 2026-09-01 11:05 UTC.
 | Піновий план проєкту 62 — три сімейства, кожен пін вільний | `pass-33-pul-shmatky-4-5` | 1 of 4 sources not in the cache; the rest did not cover 3 of 3 lines |
 | chip-id на сімействі ESP32 повертає попередження, а не Chip ID | `pass-36-chip-id` | 2 of 3 sources not in the cache; the rest did not cover 10 of 17 lines |
 
-## checked — 589
+## checked — 616
 
 | Evidence | File | Detail |
 |---|---|---|
@@ -750,6 +750,33 @@ As of 2026-09-01 11:05 UTC.
 | T-35-028: Стандартні швидкості — 100 кГц і 400 кГц. | `verdict-35-i2c` | 1 lines |
 | T-36-062: Проміжного стану немає, і «майже рідний» набір пінів | `verdict-36-spi` | 1 lines |
 | T-C-013: esptool --port PORT read-flash 0x8000 0x1000 pt.bin # | `verdict-c-komandy` | 1 lines |
+| T-04-072: UART · C6 → 2 + 1 LP | `wave-20260901` | 4 lines |
+| T-04-076: I²C · S3 → 2 | `wave-20260901` | 1 lines |
+| T-04-099: TWAI (CAN) · S2 → 1 | `wave-20260901` | 1 lines |
+| T-04-112: Touch · S3 → 14 | `wave-20260901` | 1 lines |
+| T-04-120: USB · C6 → JTAG | `wave-20260901` | 1 lines |
+| T-10-037: **JTAG-адаптер.** [[classic]] Потрібен лише для classic; на S3 і | `wave-20260901` | 1 lines |
+| T-17-132: **`Invalid head of packet (0x00)`** | `wave-20260901` | 1 lines |
+| T-31-001: FreeRTOS уже працює, коли викликається ваш перший рядок (розділ  | `wave-20260901` | 1 lines |
+| T-31-030: [[classic]] [[S3]] Ядро 0 переважно зайняте радіостеком, `app_ma | `wave-20260901` | 1 lines |
+| T-33-011: `pin_bit_mask` — бітова маска, тому кілька пінів налаштовуються  | `wave-20260901` | 2 lines |
+| T-33-063: Головне застосування — **адресні світлодіоди WS2812**. | `wave-20260901` | 1 lines |
+| T-33-112: Справжній аналоговий вихід, 8 розрядів, два канали. | `wave-20260901` | 1 lines |
+| T-35-056: .glitch_ignore_cnt = 7, | `wave-20260901` | 1 lines |
+| T-35-077: Практично це означає, що ваш пристрій, який прикидається I²C-дат | `wave-20260901` | 1 lines |
+| T-36-084: Для великих передач — кадр дисплея, блок з картки — DMA передає  | `wave-20260901` | 1 lines |
+| T-40-019: Розмір стека сервера задається в `HTTPD_DEFAULT_CONFIG` і його ч | `wave-20260901` | 2 lines |
+| T-40-028: На ESP32 кілька одночасних клієнтів — межа, і поводитися з нею т | `wave-20260901` | 1 lines |
+| T-42-058: Щоб ESP-NOW працював, партнери мусять бути **на тому самому кана | `wave-20260901` | 1 lines |
+| T-42-063: Шлюз мусить тримати канал ESP-NOW рівним каналу точки доступу —  | `wave-20260901` | 1 lines |
+| T-48-049: Керування через LEDC (розділ 33). | `wave-20260901` | 1 lines |
+| T-59-123: .glitch_ignore_cnt = 7, | `wave-20260901` | 1 lines |
+| T-61-016: Потрібен роутер · ESP-NOW → **ні** | `wave-20260901` | 1 lines |
+| T-D-028: `0x9` · Що робити → розділ 32 | `wave-20260901` | 1 lines |
+| T-D-049: `0x10` · Що робити → розділ 32 | `wave-20260901` | 1 lines |
+| T-D-051: `rst:0xf` — це **живлення**, не помилка в коді. | `wave-20260901` | 1 lines |
+| T-E-088: Adafruit за замовчуванням ставить `SPI_MODE0`, частина інших біб | `wave-20260901` | 1 lines |
+| T-H-022: **`github.com/espressif/arduino-esp32`** — Arduino core, релізи, | `wave-20260901` | 1 lines |
 
 ## nothing to check — 658
 

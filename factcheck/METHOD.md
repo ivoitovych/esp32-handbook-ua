@@ -3021,9 +3021,26 @@ there is a class for it, and it is not a failure.
 |---|---|
 | `confirmed` | address plus a **verbatim** quote from the document |
 | `not_found` | the document exists, the passage is not in it — say what you read |
-| `unreachable` | the document does not come down from here (403, 404, stub) |
+| `unreachable` | the document does not come down from here — give the `status:` code you got (403, 404, or the byte size of the stub) |
 | `advice` | you did not get the document, but can name where it would be |
 | `disputes` | the source **contradicts** the handbook — the most valuable answer there is |
+
+**`not_found` and `unreachable` are not near-synonyms.** One means the
+document was fetched and the passage is not in it; the other means the
+document never arrived. They demand different work — the first is closed
+by a person reading, the second by a download — and confusing them
+inflates the apparent unreachability of the whole environment.
+
+Measured on one wave of 400 answers: of the `unreachable` verdicts,
+**76 %** in one arm and **23 %** in the other named a source on a
+reachable host and explained, in the comment, that the document *had*
+been read and did not contain the passage. That is `not_found`, written
+under the other word.
+
+So `unreachable` now requires the response code. A code is something you
+can only have if you made the request, which makes the distinction
+mechanically checkable instead of a matter of care — the same move that
+fixed `not_found` when it began requiring an address.
 
 ### [VERDICTS-VERDICT-TEST] The verdicts for testing an existing verdict
 

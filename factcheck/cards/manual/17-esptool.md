@@ -4303,7 +4303,7 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 ---
 
-<!-- fc id:T-17-132 sha:ec91ebc5 src:manual/17-esptool.md:307 status:unchecked -->
+<!-- fc id:T-17-132 sha:ec91ebc5 src:manual/17-esptool.md:307 status:verbatim -->
 ### T-17-132 · proza · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -4320,7 +4320,13 @@ esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, �
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > Invalid head of packet (0xXX): Possible serial noise or corruption.
+- **Спосіб і дата:** wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** First pass - error message confirmed in esptool documentation
+- **Прохід:** wave-20260901
 
 ---
 

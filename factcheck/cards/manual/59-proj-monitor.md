@@ -4506,7 +4506,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-59-123 sha:be777622 src:manual/59-proj-monitor.md:391 status:unchecked -->
+<!-- fc id:T-59-123 sha:be777622 src:manual/59-proj-monitor.md:391 status:verbatim -->
 ### T-59-123 · kod-ryadok · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -4531,7 +4531,13 @@ void app_main(void) {
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+- **Дослівно з джерела:**
+  > .glitch_ignore_cnt = 7,
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** —
+- **Прохід:** wave-20260901
 
 ---
 

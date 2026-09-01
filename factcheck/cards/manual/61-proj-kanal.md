@@ -403,7 +403,7 @@
 
 ---
 
-<!-- fc id:T-61-016 sha:dba9d4ef src:manual/61-proj-kanal.md:32 status:unchecked -->
+<!-- fc id:T-61-016 sha:dba9d4ef src:manual/61-proj-kanal.md:32 status:verbatim -->
 ### T-61-016 · komirka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -432,7 +432,13 @@
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+- **Дослівно з джерела:**
+  > ESP-NOW is a kind of connectionless Wi-Fi communication protocol that is defined by Espressif. In ESP-NOW, application data is encapsulated in a vendor-specific action frame and then transmitted from one Wi-Fi device to another without connection.
+- **Спосіб і дата:** wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** First pass: "Connectionless" protocol confirms no router infrastructure needed
+- **Прохід:** wave-20260901
 
 ---
 

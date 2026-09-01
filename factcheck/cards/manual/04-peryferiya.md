@@ -2371,7 +2371,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-072 sha:6405f0a9 src:manual/04-peryferiya.md:115 status:unchecked -->
+<!-- fc id:T-04-072 sha:6405f0a9 src:manual/04-peryferiya.md:115 status:verbatim -->
 ### T-04-072 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2405,7 +2405,16 @@ PWM теж можна, але саме ці функції рятують сил
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > // ESP32-C6 has 3 UARTs (2 HP UART, and 1 LP UART)
+  > #define SOC_UART_NUM                    (3)
+  > #define SOC_UART_HP_NUM                 (2)
+  > #define SOC_UART_LP_NUM                 (1U)
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** Confirmed ESP32-C6 has 2 high-power UARTs plus 1 low-power UART.
+- **Прохід:** wave-20260901
 
 ---
 
@@ -2523,7 +2532,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-076 sha:c9d1e001 src:manual/04-peryferiya.md:116 status:unchecked -->
+<!-- fc id:T-04-076 sha:c9d1e001 src:manual/04-peryferiya.md:116 status:verbatim -->
 ### T-04-076 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2557,7 +2566,13 @@ PWM теж можна, але саме ці функції рятують сил
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_I2C_NUM                             (2U)
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** Confirmed ESP32-S3 has 2 I2C controllers.
+- **Прохід:** wave-20260901
 
 ---
 
@@ -3659,7 +3674,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-099 sha:fcb3dc0e src:manual/04-peryferiya.md:120 status:unchecked -->
+<!-- fc id:T-04-099 sha:fcb3dc0e src:manual/04-peryferiya.md:120 status:verbatim -->
 ### T-04-099 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3693,7 +3708,13 @@ PWM теж можна, але саме ці функції рятують сил
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_TWAI_CONTROLLER_NUM         1U
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** Confirmed ESP32-S2 has 1 TWAI (CAN) controller.
+- **Прохід:** wave-20260901
 
 ---
 
@@ -4165,7 +4186,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-112 sha:affdc5f0 src:manual/04-peryferiya.md:122 status:unchecked -->
+<!-- fc id:T-04-112 sha:affdc5f0 src:manual/04-peryferiya.md:122 status:verbatim -->
 ### T-04-112 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4199,7 +4220,13 @@ PWM теж можна, але саме ці функції рятують сил
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_TOUCH_MAX_CHAN_ID                       (14)
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** Confirmed ESP32-S3 has 14 touch sensor channels.
+- **Прохід:** wave-20260901
 
 ---
 
@@ -4478,7 +4505,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-120 sha:f972dd82 src:manual/04-peryferiya.md:123 status:unchecked -->
+<!-- fc id:T-04-120 sha:f972dd82 src:manual/04-peryferiya.md:123 status:verbatim -->
 ### T-04-120 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4512,7 +4539,13 @@ PWM теж можна, але саме ці функції рятують сил
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_USB_SERIAL_JTAG_SUPPORTED   1
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** Confirmed ESP32-C6 has USB JTAG support.
+- **Прохід:** wave-20260901
 
 ---
 

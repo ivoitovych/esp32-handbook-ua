@@ -517,7 +517,7 @@
 
 ---
 
-<!-- fc id:T-H-022 sha:926030cb src:dodatky/h-dzherela.md:55 status:unchecked -->
+<!-- fc id:T-H-022 sha:926030cb src:dodatky/h-dzherela.md:55 status:verbatim -->
 ### T-H-022 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -535,7 +535,13 @@
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+- **Дослівно з джерела:**
+  > Migration guide from version 2.x to 3.x is available
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** —
+- **Прохід:** wave-20260901
 
 ---
 

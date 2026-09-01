@@ -69,11 +69,21 @@ KNYHA = re.compile(
 # Англійські імена — чинні; транслітеровані приймаються, поки живі
 # наряди попередніх версій. Розширити → переїхати → звузити, той самий
 # порядок, що й для полів запису доказу.
+# The one host that answers from this container. A verdict of
+# `unreachable` naming it contradicts itself.
+REACHABLE_HOST = re.compile(r"raw\.githubusercontent\.com", re.I)
+
 POTREBUYE = {
     "confirmed": ("source", "quote"),
     "disputes": ("source", "quote", "neighbours"),
     "not_found": ("source",),
-    "unreachable": ("source", "needed"),
+    # `status` added 2026-09-01: a response code is something you can only
+    # have if you made the request. Without it, `unreachable` and
+    # `not_found` are told apart by care alone, and a wave of 400 answers
+    # showed care is not enough — 76 % of one arm's `unreachable` verdicts
+    # named a REACHABLE source and explained in the comment that the
+    # document had been read.
+    "unreachable": ("source", "needed", "status"),
     "advice": ("why",),
     # Додано М1 разом зі спекою завдання. Обидва — не зручність, а
     # **розрізнення, яке інакше зникає**:
@@ -205,7 +215,29 @@ def main() -> int:
 
     vidpovidi: dict[str, dict] = {}
     dubli, bytyy = [], []
-    for f in sorted(a.teka.glob("q*.yaml")):
+    # **`q*.yaml` was a naming convention, not a definition of a dump.**
+    #
+    # It held while every batch file happened to start with `q`. A wave
+    # whose files were named `a01.yaml`, `b03.yaml` would have been read
+    # as ZERO answers, and the gate would have reported "no answers" —
+    # indistinguishable from a wave nobody ran.
+    #
+    # A dump is a `*.yaml` whose records name units; `helper_dumps` knows
+    # that and skips anything else by name. Here we take every `*.yaml`
+    # and let the per-record checks decide.
+    fajly = sorted(a.teka.glob("*.yaml"))
+    # Fires only when units were EXPECTED. A run whose sample is empty
+    # legitimately has no answers, and the first version of this guard
+    # failed that case — a check too broad by one condition, caught by the
+    # self-check within a minute.
+    if chekaly and not fajly:
+        print(f"   ✗ {len(chekaly)} units were sent out and there is no "
+              f"*.yaml in the directory.\n     That is not a clean run, it "
+              f"is nothing to read.")
+        return 1
+    for f in fajly:
+        if f.name == "vybirka.json":
+            continue
         try:
             z = yaml.safe_load(f.read_text(encoding="utf-8")) or []
         except Exception as e:
@@ -239,6 +271,21 @@ def main() -> int:
         if brak:
             bidy.append((ident, "БРАКУЄ ПОЛІВ", ",".join(brak)))
         dzh = str(r.get("source") or "")
+        # **`unreachable` naming a reachable host is `not_found`.**
+        #
+        # The two verdicts demand different work — one is closed by a
+        # download, the other by a person reading — and telling them apart
+        # by care alone does not hold: on one wave of 400 answers, 76 % of
+        # one arm's `unreachable` verdicts named a source on the reachable
+        # host and said in the comment that the document HAD been read.
+        #
+        # Kind 25: two states of the world under one word. Caught by
+        # consequence rather than by intent — we do not ask what the
+        # executor meant, we ask whether the host it named is one that
+        # answers.
+        if v == "unreachable" and REACHABLE_HOST.search(dzh):
+            bidy.append((ident, "UNREACHABLE НА ДОСЯЖНОМУ ХОСТІ — це "
+                                "not_found", dzh[:44]))
         if dzh and KNYHA.search(dzh):
             bidy.append((ident, "САМОПОСИЛАННЯ НА ДОВІДНИК", dzh[:46]))
         elif dzh and not dzh.startswith("http"):
@@ -286,8 +333,14 @@ def main() -> int:
 
 
 def chytaty(teka: pathlib.Path) -> dict[str, dict]:
+    """Answers of a run, by unit. Every `*.yaml`, not only `q*.yaml`.
+
+    The paired-comparison path had the same `q*` glob as the main one, so
+    a comparison against a run whose files were named otherwise would have
+    reported every unit as newly absent — a 100 % change, from reading
+    nothing."""
     out: dict[str, dict] = {}
-    for f in sorted(teka.glob("q*.yaml")):
+    for f in sorted(teka.glob("*.yaml")):
         try:
             z = yaml.safe_load(f.read_text(encoding="utf-8")) or []
         except Exception:

@@ -504,7 +504,7 @@ httpd_register_uri_handler(server, &uri);
 
 ---
 
-<!-- fc id:T-40-019 sha:57ba00a7 src:manual/40-merezha.md:42 status:unchecked -->
+<!-- fc id:T-40-019 sha:57ba00a7 src:manual/40-merezha.md:42 status:verbatim -->
 ### T-40-019 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -524,7 +524,14 @@ httpd_register_uri_handler(server, &uri);
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_http_server/include/esp_http_server.h
+- **Дослівно з джерела:**
+  > #define HTTPD_DEFAULT_CONFIG() {
+  >         .stack_size         = 4096,
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** —
+- **Прохід:** wave-20260901
 
 ---
 
@@ -735,7 +742,7 @@ WebSocket дає двонапрямлений канал поверх того �
 
 ---
 
-<!-- fc id:T-40-028 sha:b23be94f src:manual/40-merezha.md:61 status:unchecked -->
+<!-- fc id:T-40-028 sha:b23be94f src:manual/40-merezha.md:61 status:verbatim -->
 ### T-40-028 · proza · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -754,7 +761,13 @@ WebSocket дає двонапрямлений канал поверх того �
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_http_server/include/esp_http_server.h
+- **Дослівно з джерела:**
+  > Max number of sockets/clients connected at any time
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** —
+- **Прохід:** wave-20260901
 
 ---
 

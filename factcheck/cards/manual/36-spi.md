@@ -2904,7 +2904,7 @@ spi_device_transmit(handle, &t);
 
 ---
 
-<!-- fc id:T-36-084 sha:45437be3 src:manual/36-spi.md:136 status:unchecked -->
+<!-- fc id:T-36-084 sha:45437be3 src:manual/36-spi.md:136 status:verbatim -->
 ### T-36-084 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2922,7 +2922,13 @@ spi_device_transmit(handle, &t);
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/spi_master.rst
+- **Дослівно з джерела:**
+  > Transparent handling of DMA transfers while reading and writing data
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** —
+- **Прохід:** wave-20260901
 
 ---
 

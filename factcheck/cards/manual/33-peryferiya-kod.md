@@ -385,7 +385,7 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 ---
 
-<!-- fc id:T-33-011 sha:bedbcc3c src:manual/33-peryferiya-kod.md:22 status:unchecked -->
+<!-- fc id:T-33-011 sha:bedbcc3c src:manual/33-peryferiya-kod.md:22 status:verbatim -->
 ### T-33-011 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -403,7 +403,14 @@ gpio_set_level(GPIO_NUM_2, 1);
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/gpio/generic_gpio/main/gpio_example_main.c
+- **Дослівно з джерела:**
+  > //bit mask of the pins that you want to set,e.g.GPIO18/19
+  > io_conf.pin_bit_mask = GPIO_OUTPUT_PIN_SEL;
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** —
+- **Прохід:** wave-20260901
 
 ---
 
@@ -2132,7 +2139,7 @@ RMT задумувався для інфрачервоних пультів, а 
 
 ---
 
-<!-- fc id:T-33-063 sha:2cf260ec src:manual/33-peryferiya-kod.md:159 status:unchecked -->
+<!-- fc id:T-33-063 sha:2cf260ec src:manual/33-peryferiya-kod.md:159 status:verbatim -->
 ### T-33-063 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -2152,7 +2159,13 @@ RMT задумувався для інфрачервоних пультів, а 
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
+- **Дослівно з джерела:**
+  > :example:`peripherals/rmt/led_strip` demonstrates how to use the RMT peripheral to drive a WS2812 LED strip
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** —
+- **Прохід:** wave-20260901
 
 ---
 
@@ -3707,7 +3720,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-112 sha:06cbcff5 src:manual/33-peryferiya-kod.md:264 status:unchecked -->
+<!-- fc id:T-33-112 sha:06cbcff5 src:manual/33-peryferiya-kod.md:264 status:verbatim -->
 ### T-33-112 · proza · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3725,7 +3738,13 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/dac.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_NAME} has two 8-bit DAC (digital to analog converter) channels respectively connected to {IDF_TARGET_DAC_CH_1} (Channel 1) and {IDF_TARGET_DAC_CH_2} (Channel 2).
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** —
+- **Прохід:** wave-20260901
 
 ---
 

@@ -4327,7 +4327,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-088 sha:2ec41b36 src:dodatky/e-interfeysy.md:57 status:unchecked -->
+<!-- fc id:T-E-088 sha:2ec41b36 src:dodatky/e-interfeysy.md:57 status:verbatim -->
 ### T-E-088 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4347,7 +4347,13 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Статус:** unchecked — не звірено
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/adafruit/Adafruit_BME280_Library/master/Adafruit_BME280.cpp
+- **Дослівно з джерела:**
+  > spi_dev = new Adafruit_SPIDevice(cspin, 1000000, SPI_BITORDER_MSBFIRST, SPI_MODE0, theSPI)
+- **Спосіб і дата:** wave 2026-09-01, arms A; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** Adafruit confirms SPI_MODE0 as default for sensor communication
+- **Прохід:** wave-20260901
 
 ---
 

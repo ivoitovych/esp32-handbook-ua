@@ -13,9 +13,9 @@ the state.
 ```
   claim units              8110   (+ 221 code blocks as context)
   checked against a source or by calculation
-                           2358   29.1 %
+                           2385   29.4 %
   closed as a decision     3780   46.6 %   no external signal in the text
-  still open               1920   23.7 %
+  still open               1893   23.3 %
 ```
 
 The three lines do not add to the whole, and the gap is deliberate:
@@ -28,14 +28,14 @@ so it is counted in neither column. `METHOD.md`, Part II, says why.
 
 | Status | Units | Share | What it asserts |
 |---|---:|---:|---|
-| `verbatim` | 2035 | 25.1 % | primary, quoted — the source was obtained and the extract copied |
+| `verbatim` | 2062 | 25.4 % | primary, quoted — the source was obtained and the extract copied |
 | `derived` | 230 | 2.8 % | primary, inferred — the source was obtained; the claim follows unambiguously |
 | `arithmetic` | 93 | 1.1 % | calculation — checked by arithmetic; no external source is needed |
 | `named-unreachable` | 178 | 2.2 % | secondary — the source cannot be reached from here; URL recorded, no quote |
 | `self-consistent` | 44 | 0.5 % | internal check — the book agrees with itself; no external confirmation |
 | `looked-not-found` | 8 | 0.1 % | looked and did not find — the work was done, the source is not visible |
 | `no-external-signal` | 3780 | 46.6 % | no signal in the text to check against — assigned mechanically, not checked |
-| `unchecked` | 1742 | 21.5 % | not checked |
+| `unchecked` | 1715 | 21.1 % | not checked |
 
 ## The weakest number on this page
 
@@ -80,7 +80,7 @@ is for.
 
 ## What is left
 
-1920 units are open: 1742 never looked at,
+1893 units are open: 1715 never looked at,
 178 waiting on a source that cannot be reached from here.
 
 The registry is complete by construction — every line of the book has
