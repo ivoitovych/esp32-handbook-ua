@@ -151,6 +151,24 @@ def intake() -> dict:
     return d
 
 
+def split_buckets() -> list[dict]:
+    """How the unchecked queue divides between maintainers. May be empty.
+
+    Entirely this book's data: the patterns name its subject's parts and
+    APIs. `split_queue.py` carried them inline until 2026-09-01, which
+    made the tool useless on any other book — and, worse, silent: every
+    unit would have fallen into the "nobody" basket and the split would
+    have looked complete."""
+    d = _cfg().get("split_buckets") or []
+    if not isinstance(d, list):
+        raise ConfigError(f"{FILE}: `split_buckets` must be a list")
+    for b in d:
+        if not isinstance(b, dict) or not {"who", "key", "pattern"} <= set(b):
+            raise ConfigError(
+                f"{FILE}: each split bucket needs `who`, `key`, `pattern`")
+    return d
+
+
 def demo() -> int:
     import tempfile
     ok = True

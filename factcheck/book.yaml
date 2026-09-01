@@ -63,3 +63,44 @@ intake:
   # …except in the index, where a "number" is a page list and no external
   # source exists by nature.
   index: "покажчик|індекс|z-pokazhchyk|у індексі|T-Z-\\d+"
+
+# How the unchecked queue is divided between maintainers, and by what.
+#
+# Not by topic and not by chapter, but by one question: in which document
+# does the answer lie. That determines WHO CAN CLOSE IT — on this book the
+# split is by reachability: ESP-IDF and esptool are in M1's container,
+# vendor datasheets answer 403 there and are cached for M2.
+#
+# Entirely this book's data: the part numbers below are its subject.
+# Order matters — a unit lands in the first basket that recognises it, so
+# the specific (a part number) precedes the general (a number with a
+# unit), or "a BME280 runs on 3.3 V" would go to the electrical basket.
+split_buckets:
+- who: M1
+  key: api
+  what: ESP-IDF calls and constants — component headers
+  pattern: '`(esp_|gpio_|i2c_|spi_|uart_|nvs_|xTask|vTask|xQueue|heap_caps|ledc_|adc_|rmt_|twai_|CONFIG_|SOC_|MALLOC_CAP|ESP_[A-Z])'
+- who: M1
+  key: komandy
+  what: the esptool and idf.py command line
+  pattern: '`(esptool|idf\.py|espefuse|espsecure|otatool|parttool)\b|`(write-flash|read-flash|erase-flash|merge-bin|chip-id|flash-id)'
+- who: M1
+  key: piny
+  what: GPIO numbers — soc/ headers and valid-pin masks
+  pattern: GPIO\s?\d+|`IO\d+`
+- who: M1
+  key: adresy
+  what: hexadecimal addresses and sizes
+  pattern: 0x[0-9A-Fa-f]{3,}
+- who: M1
+  key: log
+  what: lines the book promises you will see in the console
+  pattern: E \(\d|W \(\d|I \(\d|`[A-Z][A-Za-z_ ]{8,}`
+- who: M2
+  key: detali
+  what: specific parts — the vendor's datasheet
+  pattern: \b(BME280|BMP280|BMP180|DS18B20|DS3231|DHT11|DHT22|SHT[234]\d|SSD1306|SH1106|ILI9341|ST7789|MAX485|MAX3232|MAX31855|MAX6675|SN65HVD\d+|TP4056|DW01|MCP23017|MCP2515|PCF8574|PCA9685|74HC\d+|CD4051|HC-SR04|SX12\d\d|RFM\d\d|MAX170\d\d|INA219|ADS1115|W5500|ENC28J60|CH340|CP210\d|FT232|CH9102|AMS1117|LM2596|MT3608|XL6009|18650|LiFePO4|AT24C\d+|24LC\d+|NEO-\d|ATmega\d+|RP2040|STM32)
+- who: M2
+  key: elektro
+  what: electrical quantities — datasheets and specifications
+  pattern: \d+\s*(мА|мкА|А\b|В\b|мВ|кОм|Ом|МОм|мА·год|нФ|мкФ|пФ|Вт|дБм|°C)

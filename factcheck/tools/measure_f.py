@@ -1,43 +1,45 @@
 #!/usr/bin/env python3
-"""Міра класу `F`: скільки незвіреного справді хибне.
+"""Measuring `unchecked`: how much of what was never checked is wrong.
 
-## Навіщо це окремо від міри класу `E`
+## Why this is separate from measuring `no-external-signal`
 
-Питання різні, і плутати їх дорого.
+The questions differ, and confusing them is expensive.
 
-Клас `E` мав **присуд**: «зовнішнього джерела не існує». Міра `E`
-випробовувала присуд — чи правда, що не існує.
+`no-external-signal` carried a **verdict**: "no external source exists".
+Measuring it tested that verdict — is it true that none exists.
 
-Клас `F` присуду не має взагалі. Це просто нероблена робота: до цих
-рядків ніхто не дійшов. Тому й питання пряме — **чи правильне те, що
-написано в книзі**, — і серед вердиктів з'являється той, якого в наряді
-на `E` не було: `sperechayetsya`.
+`unchecked` carries no verdict at all. It is simply work not done: nobody
+got to these lines. So the question is direct — **is what the book says
+correct** — and among the verdicts appears one the earlier order did not
+have: `sperechayetsya`, disputes.
 
-Саме він і є метою. Усе інше — облік.
+That one is the point. Everything else is bookkeeping.
 
-## Що дає випадкова вибірка тут
+## What a random sample buys here
 
-Число, якого в книги досі не було: **частка помилок серед незвіреного**.
+A number the book has never had: **the error rate among the unchecked**.
 
-Книга друкує, що звірено стільки-то відсотків, і чесно каже, що решта
-не звірена. Але «не звірено» мовчить про те, скільки там хибного.
-Читач має право знати, чи це один відсоток, чи двадцять.
+The book prints how much has been checked, and says honestly that the
+rest has not. But "not checked" says nothing about how much of it is
+wrong. The reader is entitled to know whether that is one per cent or
+twenty.
 
-Оцінку можна перенести на всю популяцію `F` саме тому, що вибірка
-випадкова — і **тільки** тому. Відсоток із наряду, зібраного рукою,
-такого права не дає (див. `factcheck/SCHEMA.md`, «Чим `E` небезпечний»).
+The estimate may be carried to the whole `unchecked` population precisely
+because the sample is random — and **only** because of that. A percentage
+from a hand-assembled order confers no such right (see `METHOD.md`
+Part II, "What makes `no-external-signal` dangerous").
 
-## Чому заявлене спростування перевіряється двічі
+## Why a claimed refutation is checked twice
 
-Помічник під тиском «знайди помилку» виробляє помилки так само справно,
-як під тиском «знайди джерело» виробляв джерела: за один вечір їх
-заявили 18 і підтвердилося **нуль**.
+A helper under pressure to "find an error" manufactures errors as
+reliably as it manufactured sources under pressure to "find a source": in
+one evening 18 were claimed and **none** held.
 
-Тому кожне `sperechayetsya` проходить третій шар (чи стоїть цитата в
-документі) і **особисту звірку супровідника** (чи вона про це). Жодне
-не потрапляє у звіт як знахідка, доки не пройшло обидва.
+So every `sperechayetsya` passes layer 3 (does the quote stand in the
+document) and **the maintainer's own reading** (is it about this). None
+enters the report as a finding until it has passed both.
 
-    factcheck/tools/measure_f.py <каталог-вивантажень>
+    factcheck/tools/measure_f.py <dump-directory>
 """
 from __future__ import annotations
 
@@ -55,107 +57,112 @@ import yaml  # noqa: E402
 
 import helper_dumps  # noqa: E402
 
-ZVIT = ROOT / "factcheck" / "reports" / "MEASURE-UNCHECKED.md"
+REPORT = ROOT / "factcheck" / "reports" / "MEASURE-UNCHECKED.md"
 
-ZVIT_PORROZHNIY = """# Міра класу `F` — хвиля відхилена
+EMPTY_REPORT = """# Measuring `unchecked` — the wave is rejected
 
-**Генерується** `factcheck/tools/measure_f.py`.
+**Generated** by `factcheck/tools/measure_f.py`.
 
-Усі **{vsjogo}** записів цієї хвилі посилалися на **саму книгу**.
-Жодного зовнішнього свідчення не здобуто, тож міряти нема чого.
+All **{total}** records in this wave cited **the book itself**. No
+external testimony was obtained, so there is nothing to measure.
 
-## Що сталося
+## What happened
 
-Помічники брали речення книги, наведене в самому наряді, підставляли
-адресу репозиторію довідника й писали `pidtverdzheno`. Один із них
-описав це у звіті прямо: «all confirmed in manual files».
+Helpers took the book's sentence, quoted in the order itself, substituted
+the handbook repository's address, and wrote `pidtverdzheno`. One of them
+described it plainly in its report: "all confirmed in manual files".
 
-## Чому це вина наряду, а не помічників
+## Why this is the order's fault, not the helpers'
 
-Порівняйте з нарядом на клас `E`. Там **найдешевша відповідь була
-чесною**: `spravdi-e` не стверджує нічого — «подивився, зовнішнього
-референта немає». Помічник, що йшов шляхом найменшого опору, казав
-правду.
+Compare the order for `no-external-signal`. There **the cheapest answer
+was the honest one**: `spravdi-e` asserts nothing — "looked, there is no
+external referent". A helper taking the path of least resistance told the
+truth.
 
-У наряді на `F` найдешевшою відповіддю виявилося `pidtverdzheno`, і
-воно **стверджує**. Текст книги лежав тут же, у наряді; щоб його
-«підтвердити», досить було переписати його назад. Лінощі перестали
-бути безпечними.
+In the order for `unchecked` the cheapest answer turned out to be
+`pidtverdzheno`, and that **asserts**. The book's text was right there in
+the order; to "confirm" it you only had to copy it back. Laziness stopped
+being safe.
 
-> **Закон.** Найдешевша відповідь у наряді має бути тією, що не
-> стверджує нічого. Інакше наряд перетворює недбалість на неправду.
+> **Law.** The cheapest answer in an order must be the one that asserts
+> nothing. Otherwise the order converts carelessness into untruth.
 
-Заборона «книга не є джерелом для себе» стояла в наряді словами й не
-втримала нічого: словесна заборона безсила проти дії, яка дешевша за
-роботу. Тепер це **ворота** — адреса, що вказує на довідник,
-відхиляється механічно.
+The prohibition "the book is not a source for itself" stood in the order
+in words and held nothing: a verbal prohibition is powerless against an
+action cheaper than the work. It is now a **gate** — an address pointing
+at the handbook is rejected mechanically.
 """
-KANDYDATY = ROOT / "factcheck" / "work" / "queues" / "measure-f-candidates.yaml"
+CANDIDATES = ROOT / "factcheck" / "work" / "queues" / "measure-f-candidates.yaml"
 
-PIDPYSY = {
-    "pidtverdzheno": "Книга підтверджена",
-    "sperechayetsya": "Джерело сперечається з книгою",
-    "ne_znayshov": "Документ є, місця немає",
-    "nedosyazhne": "Документ звідси недосяжний",
+LABELS = {
+    "pidtverdzheno": "The book is confirmed",
+    "sperechayetsya": "The source disputes the book",
+    "ne_znayshov": "The document exists, the passage does not",
+    "nedosyazhne": "The document is unreachable from here",
 }
 
 
-# Джерело, що вказує на саму книгу. Ворота, а не порада.
+# A source pointing at the book itself. A gate, not advice.
 #
-# Заборона «книга не є джерелом для себе» стояла в наряді словами, і
-# перша ж хвиля класу `F` порушила її **82 рази зі 161**: помічники
-# брали речення книги з наряду, підставляли адресу репозиторію
-# довідника й писали `pidtverdzheno`.
+# The prohibition "the book is not a source for itself" stood in the order
+# in words, and the very first `unchecked` wave violated it **82 times out
+# of 161**: helpers took the book's sentence from the order, substituted
+# the handbook repository's address, and wrote `pidtverdzheno`.
 #
-# Словесна заборона тут безсила за побудовою: вона просить не робити
-# того, що дешевше за роботу. Тому — механічна перевірка адреси.
+# A verbal prohibition is powerless here by construction: it asks people
+# not to do the thing that is cheaper than the work. Hence a mechanical
+# check of the address.
 RE_SAMA_KNYHA = re.compile(
-    r"esp32-handbook"           # репозиторій довідника під будь-яким власником
-    r"|ivoitovych|voytovych"    # зокрема вигаданий із імені автора
+    r"esp32-handbook"           # the handbook repo under any owner
+    r"|ivoitovych|voytovych"    # including ones invented from the author's name
     r"|(?:^|/)(?:%s|factcheck)/" % "|".join(config.groups()),
     re.I)
 
 
-def bez_dzherela(z: dict) -> bool:
-    """Не адреса — не свідчення.
+def no_source(z: dict) -> bool:
+    """Not an address, not testimony.
 
-    Порожнє поле, або шлях замість URL (`manual/01-platforma.md`), або
-    назва файлу книги. У першій хвилі класу `F` таких було **104 з
-    224** — майже половина, і всі зі станом `pidtverdzheno`.
+    An empty field, or a path instead of a URL
+    (`manual/01-platforma.md`), or the name of a book file. In the first
+    `unchecked` wave there were **104 of 224** — nearly half, and all of
+    them under `pidtverdzheno`.
     """
     d = str(z.get("source", "")).strip()
     return not d or not d.startswith("http")
 
 
-def ne_dyvyvsya(z: dict) -> bool:
-    """`ne_znayshov` без назви документа — це «не шукав», а не «не знайшов».
+def did_not_look(z: dict) -> bool:
+    """`ne_znayshov` with no document named is "did not look", not "did
+    not find".
 
-    ## Чому це окрема категорія, а не просто `ne_znayshov`
+    ## Why this is a category of its own rather than plain `ne_znayshov`
 
-    Закон «найдешевша відповідь має не стверджувати нічого» врятував
-    **реєстр**: після переробки наряду недбалий помічник пише
-    `ne_znayshov`, і жодного хибного запису з цього не виходить.
+    The law "the cheapest answer must assert nothing" saved the
+    **registry**: after the order was rewritten, a careless helper writes
+    `ne_znayshov` and no false record comes of it.
 
-    Але **міру** він не рятує. Помічник, який не відкрив жодного
-    документа й написав 25 разів «не знайшов», дає бездоганно
-    нешкідливий і бездоганно хибний статистичний результат: частка
-    «нічого не перевіряється» злітає, і книга виглядає гіршою, ніж є.
+    But it does not save the **measurement**. A helper who opened no
+    document and wrote "not found" twenty-five times gives a flawlessly
+    harmless and flawlessly wrong statistical result: the share of
+    "nothing is checkable" shoots up, and the book looks worse than it is.
 
-    Знайдено на першому ж прогоні переробленого наряду: один помічник
-    із десяти повернув 25 із 25 `ne_znayshov` за 17 звернень до
-    інструментів, і в жодному записі не назвав документа, який дивився.
-    У полі причини — судження про **вид твердження** («високорівнева
-    рекомендація, а не специфікація»), тобто відповідь із самого пакета.
+    Found on the very first run of the rewritten order: one helper of ten
+    returned 25 of 25 `ne_znayshov` in 17 tool calls, and in not one
+    record named the document it had looked at. In the reason field, a
+    judgement about the **kind of claim** ("a high-level recommendation,
+    not a specification") — that is, an answer taken from the batch
+    itself.
 
-    Звідси вимога: `ne_znayshov` мусить назвати, **де** дивилися.
-    Без цього запис не є ані знахідкою, ані свідченням її відсутності.
+    Hence the requirement: `ne_znayshov` must name **where** the search
+    happened. Without that the record is neither a finding nor evidence
+    of the absence of one.
     """
     return (str(z.get("verdykt")) == "ne_znayshov"
             and not str(z.get("source", "")).strip())
 
 
-def promizhok(k: int, n: int) -> tuple[float, float]:
-    """Вілсонів проміжок 95%. Біля нуля нормальний бреше."""
+def wilson(k: int, n: int) -> tuple[float, float]:
+    """A 95 % Wilson interval. Near zero the normal approximation lies."""
     if not n:
         return (0.0, 0.0)
     p, z = k / n, 1.96
@@ -165,7 +172,7 @@ def promizhok(k: int, n: int) -> tuple[float, float]:
     return (max(0.0, seredyna - pivshyryna), min(1.0, seredyna + pivshyryna))
 
 
-def populyaciya() -> int:
+def population() -> int:
     import sample
     return len(sample.odynyci("unchecked"))
 
@@ -175,179 +182,183 @@ def main() -> int:
         print(__doc__)
         return 2
 
-    zap, polagodzheni, zlamani = helper_dumps.read_dir(Path(sys.argv[1]))
-    n = len(zap)
+    records, repaired, broken = helper_dumps.read_dir(Path(sys.argv[1]))
+    n = len(records)
     if not n:
-        print("mira_f: вивантажень не знайдено")
+        print("measure_f: no dumps found")
         return 1
-    # Ворота перед лічбою: запис, що посилається на саму книгу, не
-    # рахується ніяк. Не як спростування, не як підтвердження, не як
-    # «не знайшов» — він **недійсний**, бо не містить зовнішнього
-    # свідчення взагалі.
-    # `ne_znayshov` без документа відсіюється **першим**: інакше він
-    # потрапив би у `bez_dzherela` і виглядав як те саме порушення, що
-    # й вигадане джерело. Це різні відмови: одна стверджує неправду,
-    # друга не робить роботи.
-    neroblene = [z for z in zap if ne_dyvyvsya(z)]
-    zap = [z for z in zap if z not in neroblene]
-    samoposylannya = [z for z in zap
-                      if bez_dzherela(z)
+    # A gate before the counting: a record citing the book itself counts
+    # as nothing at all. Not as a refutation, not as a confirmation, not
+    # as "not found" — it is **void**, because it contains no external
+    # testimony whatsoever.
+    #
+    # `ne_znayshov` with no document is filtered out **first**: otherwise
+    # it would land in `no_source` and look like the same violation as an
+    # invented source. These are different failures: one asserts an
+    # untruth, the other does no work.
+    not_done = [z for z in records if did_not_look(z)]
+    records = [z for z in records if z not in not_done]
+    self_refs = [z for z in records
+                      if no_source(z)
                       or RE_SAMA_KNYHA.search(str(z.get("source", "")))]
-    zap = [z for z in zap if z not in samoposylannya]
-    if not zap:
-        ZVIT.write_text(ZVIT_PORROZHNIY.format(
-            vsjogo=len(samoposylannya)), encoding="utf-8")
-        print(f"measure_f: ⚠ ХВИЛЯ НЕДІЙСНА — усі {len(samoposylannya)} "
-              f"записів посилаються на саму книгу → "
-              f"{ZVIT.relative_to(ROOT)}")
+    records = [z for z in records if z not in self_refs]
+    if not records:
+        REPORT.write_text(EMPTY_REPORT.format(
+            total=len(self_refs)), encoding="utf-8")
+        print(f"measure_f: ⚠ WAVE VOID — all {len(self_refs)} records "
+              f"cite the book itself → "
+              f"{REPORT.relative_to(ROOT)}")
         return 1
 
-    # `n` **перераховується після воріт**. Перша редакція рахувала його
-    # до них — і звіт друкував би «відповідей 234», працюючи з 49.
-    # Тобто інструмент, написаний проти завищеної звітності, сам би
-    # завищував звітність.
-    n = len(zap)
-    c = collections.Counter(str(z.get("verdykt", "?")) for z in zap)
+    # `n` is **recomputed after the gates**. The first version counted it
+    # before them — and the report would have printed "234 answers" while
+    # working with 49. That is, a tool written against inflated reporting
+    # would itself have inflated its reporting.
+    n = len(records)
+    c = collections.Counter(str(z.get("verdykt", "?")) for z in records)
 
-    # Третій шар — на все, що має цитату, а не лише на спростування.
-    kand = [{"title": str(z.get("odynycya", "?")),
+    # Layer 3 on everything that carries a quote, not only on refutations.
+    candidates = [{"title": str(z.get("odynycya", "?")),
              "source": str(z.get("source", "")).strip(),
              "quote": str(z.get("quote", "")),
              "verdykt": str(z.get("verdykt", "")),
              "zvidky": z.get("_fayl", "?")}
-            for z in zap if str(z.get("quote", "")).strip()]
-    KANDYDATY.write_text(
-        "# Кандидати з міри класу `F`. **Не реєстр.**\n"
-        + yaml.safe_dump(kand, allow_unicode=True, sort_keys=False),
+            for z in records if str(z.get("quote", "")).strip()]
+    CANDIDATES.write_text(
+        "# Candidates from the `unchecked` measurement. **Not a registry.**\n"
+        + yaml.safe_dump(candidates, allow_unicode=True, sort_keys=False),
         encoding="utf-8")
 
-    stany: dict[str, str] = {}
-    if kand:
+    states: dict[str, str] = {}
+    if candidates:
         try:
             import layer3
-            naslidky, _ = layer3.perevirka(True, [KANDYDATY])
-            stany = {str(x.get("nazva")): str(x.get("stan"))
+            naslidky, _ = layer3.perevirka(True, [CANDIDATES])
+            states = {str(x.get("nazva")): str(x.get("stan"))
                      for x in naslidky}
         except ImportError:
             pass
 
-    sperech = [z for z in zap if str(z.get("verdykt")) == "sperechayetsya"]
-    sperech_ok = [z for z in sperech
-                  if stany.get(str(z.get("odynycya"))) == "ok"]
-    pop = populyaciya()
-    nyz, verh = promizhok(len(sperech_ok), n)
+    disputes = [z for z in records if str(z.get("verdykt")) == "sperechayetsya"]
+    disputes_ok = [z for z in disputes
+                  if states.get(str(z.get("odynycya"))) == "ok"]
+    population_n = population()
+    low, high = wilson(len(disputes_ok), n)
 
-    r = [f"""# Міра класу `F` — скільки незвіреного справді хибне
+    r = [f"""# Measuring `unchecked` — how much of it is actually wrong
 
-> **Не дивилися: {len(neroblene)} записів** — вердикт `ne_znayshov`
-> без назви документа. Це не «джерела немає», а «не шукав»: у міру
-> такий запис не входить ні в чисельник, ні в знаменник.
+> **Did not look: {len(not_done)} records** — the verdict `ne_znayshov`
+> with no document named. That is not "no source exists" but "did not
+> search": such a record enters neither the numerator nor the denominator.
 >
-> **Відсіяно воротами: {len(samoposylannya)} записів із
-> {len(samoposylannya) + n}.** Це записи, у яких «джерелом» названо саму
-> книгу, шлях замість адреси або нічого. Вони не рахуються ніяк —
-> зовнішнього свідчення в них немає за побудовою.
+> **Rejected by the gates: {len(self_refs)} records of
+> {len(self_refs) + n}.** These name the book itself as the "source", or
+> a path instead of an address, or nothing. They count as nothing at all —
+> they contain no external testimony by construction.
 
-**Генерується** `factcheck/tools/measure_f.py`. Наряд —
-`factcheck/reports/BRIEF-SAMPLE.md`, там же насіння добору.
+**Generated** by `factcheck/tools/measure_f.py`. The order is in
+`factcheck/reports/BRIEF-SAMPLE.md`, and the sampling seed with it.
 
-Клас `F` — «ще не звірено»: до цих рядків ніхто не дійшов. Питання не
-про присуд, а пряме: **чи правильне те, що написано в книзі**.
+`unchecked` means "not yet checked": nobody got to these lines. The
+question is not about a verdict but direct: **is what the book says
+correct**.
 
-Вибірка **випадкова**, тож частку можна переносити на всю популяцію
-`F` — і лише тому.
+The sample is **random**, so the share may be carried to the whole
+`unchecked` population — and only for that reason.
 
-## Результат
+## Result
 
-Відповідей: **{n}** із {pop} одиниць класу `F`.
+Answers: **{n}** out of {population_n} `unchecked` units.
 
-| Вердикт | Скільки | Частка |
+| Verdict | Count | Share |
 |---|---|---|"""]
     for k in ("pidtverdzheno", "sperechayetsya", "ne_znayshov",
               "nedosyazhne"):
         v = c.get(k, 0)
-        r.append(f"| {PIDPYSY[k]} | {v} | {v / n:.0%} |")
+        r.append(f"| {LABELS[k]} | {v} | {v / n:.0%} |")
     r.append("")
 
     r.append(f"""
-## Спростування: заявлено {len(sperech)}, витримало третій шар {len(sperech_ok)}
+## Refutations: {len(disputes)} claimed, {len(disputes_ok)} survived layer 3
 
-Заявлене спростування — **ще не знахідка**. Помічник під тиском «знайди
-помилку» виробляє помилки так само справно, як під тиском «знайди
-джерело» виробляв джерела: за один вечір їх заявили 18 і підтвердилося
-нуль.
+A claimed refutation is **not yet a finding**. A helper under pressure to
+"find an error" manufactures errors as reliably as it manufactured
+sources under pressure to "find a source": in one evening 18 were claimed
+and none held.
 
-Тому кожне проходить дві перевірки: машинну (чи стоїть цитата в
-документі) і особисту (чи вона про це). Нижче — ті, що пройшли першу.
-Другу робить супровідник, і доти жодне не є підставою правити книгу.
+So each passes two checks: the mechanical one (does the quote stand in
+the document) and the personal one (is it about this). Below are those
+that passed the first. The second is done by a maintainer, and until then
+none of them is grounds for editing the book.
 """)
 
-    if sperech_ok:
-        r.append("| Одиниця | Джерело | Що каже |")
+    if disputes_ok:
+        r.append("| Unit | Source | What it says |")
         r.append("|---|---|---|")
-        for z in sperech_ok:
+        for z in disputes_ok:
             dz = str(z.get("source", "")).strip()
             r.append(f"| `{z.get('odynycya', '?')}` "
                      f"| [`{dz.rsplit('/', 1)[-1]}`]({dz}) "
                      f"| {str(z.get('komentar', '')).strip()[:120]} |")
         r.append("")
-        r.append(f"\nЯкщо всі вони підтвердяться по суті, частка помилок "
-                 f"серед незвіреного — **{len(sperech_ok) / n:.1%}** "
-                 f"(95% Вілсон: {nyz:.1%}–{verh:.1%}), тобто близько "
-                 f"**{round(len(sperech_ok) / n * pop)}** одиниць на весь "
-                 f"клас `F`.\n")
+        r.append(f"\nIf all of them hold up on substance, the error rate "
+                 f"among the unchecked is **{len(disputes_ok) / n:.1%}** "
+                 f"(95 % Wilson: {low:.1%}–{high:.1%}), that is about "
+                 f"**{round(len(disputes_ok) / n * population_n)}** units "
+                 f"across the whole `unchecked` population.\n")
     else:
-        r.append("Жодне заявлене спростування третій шар не витримало.\n")
+        r.append("Not one claimed refutation survived layer 3.\n")
 
-    # Розклад по помічниках. Не косметика: у зламаній хвилі різниця між
-    # чесною роботою й штампуванням була видна саме тут — один помічник
-    # дав 5 підтверджень і 20 «не знайшов», інший 25 із 25. Середнє по
-    # хвилі приховувало обох.
-    po_hto: dict[str, collections.Counter] = collections.defaultdict(
+    # A breakdown by helper. Not cosmetic: in a broken wave the
+    # difference between honest work and rubber-stamping was visible
+    # exactly here — one helper gave 5 confirmations and 20 "not found",
+    # another 25 of 25. The wave average hid both.
+    by_helper: dict[str, collections.Counter] = collections.defaultdict(
         collections.Counter)
-    for z in zap:
-        po_hto[str(z.get("_fayl", "?")).split("-")[0]][
+    for z in records:
+        by_helper[str(z.get("_fayl", "?")).split("-")[0]][
             str(z.get("verdykt", "?"))] += 1
-    if len(po_hto) > 1:
-        r.append("\n## Розклад по помічниках\n")
-        r.append("Хвиля з однаковими стовпчиками в усіх — підозріла. "
-                 "Помічник, у якого все підтверджено, або знайшов "
-                 "документ на кожне твердження, або не шукав жодного.\n")
-        # Остання колонка — вирішальна. Кількість «підтверджено» нічого
-        # не каже, доки не видно, скільки з тих цитат справді стоять у
-        # документі: у першому ж придатному прогоні один помічник дав
-        # 16 підтверджень і **нуль** дослівних цитат, інший — 3 і три.
-        r.append("| Помічник | підтв. | сперечається | не знайшов "
-                 "| недосяжне | цитат дослівних |")
+    if len(by_helper) > 1:
+        r.append("\n## Breakdown by helper\n")
+        r.append("A wave with identical columns across the board is "
+                 "suspect. A helper who confirmed everything either found "
+                 "a document for every claim, or searched for none.\n")
+        # The last column is the decisive one. A count of "confirmed"
+        # says nothing until you can see how many of those quotes really
+        # stand in the document: in the first usable run one helper gave
+        # 16 confirmations and **zero** verbatim quotes, another 3 and
+        # three.
+        r.append("| Helper | confirmed | disputes | not found "
+                 "| unreachable | quotes verbatim |")
         r.append("|---|---|---|---|---|---|")
-        shar3: dict[str, list[int]] = collections.defaultdict(
+        layer3_by_helper: dict[str, list[int]] = collections.defaultdict(
             lambda: [0, 0])
-        for z in zap:
+        for z in records:
             if not str(z.get("quote", "")).strip():
                 continue
             h = str(z.get("_fayl", "?")).split("-")[0]
-            shar3[h][1] += 1
-            if stany.get(str(z.get("odynycya"))) == "ok":
-                shar3[h][0] += 1
-        for hto in sorted(po_hto):
-            k = po_hto[hto]
-            ok, vsjogo = shar3.get(hto, [0, 0])
-            chastka = f"{ok}/{vsjogo} ({ok / vsjogo:.0%})" if vsjogo else "—"
-            r.append(f"| `{hto}` | {k['pidtverdzheno']} "
+            layer3_by_helper[h][1] += 1
+            if states.get(str(z.get("odynycya"))) == "ok":
+                layer3_by_helper[h][0] += 1
+        for who in sorted(by_helper):
+            k = by_helper[who]
+            ok, total = layer3_by_helper.get(who, [0, 0])
+            share = f"{ok}/{total} ({ok / total:.0%})" if total else "—"
+            r.append(f"| `{who}` | {k['pidtverdzheno']} "
                      f"| {k['sperechayetsya']} | {k['ne_znayshov']} "
-                     f"| {k['nedosyazhne']} | {chastka} |")
+                     f"| {k['nedosyazhne']} | {share} |")
         r.append("")
 
-    if polagodzheni:
-        r.append("\nПолагоджено механічно: "
-                 + ", ".join(f"`{b}`" for b in polagodzheni) + ".\n")
-    if zlamani:
-        r.append("\nНе розібралися й пропущені: "
-                 + ", ".join(f"`{b}`" for b in zlamani) + ".\n")
+    if repaired:
+        r.append("\nRepaired mechanically: "
+                 + ", ".join(f"`{b}`" for b in repaired) + ".\n")
+    if broken:
+        r.append("\nWould not parse and were skipped: "
+                 + ", ".join(f"`{b}`" for b in broken) + ".\n")
 
-    ZVIT.write_text("\n".join(r) + "\n", encoding="utf-8")
-    print(f"measure_f: відповідей {n}, спростувань заявлено {len(sperech)}, "
-          f"витримали шар 3 {len(sperech_ok)} → {ZVIT.relative_to(ROOT)}")
+    REPORT.write_text("\n".join(r) + "\n", encoding="utf-8")
+    print(f"measure_f: answers {n}, refutations claimed {len(disputes)}, "
+          f"survived layer 3 {len(disputes_ok)} → {REPORT.relative_to(ROOT)}")
     return 0
 
 

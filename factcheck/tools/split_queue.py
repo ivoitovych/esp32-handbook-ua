@@ -1,23 +1,25 @@
 #!/usr/bin/env python3
-"""Поділ незвіреного між супровідниками — за досяжністю джерела.
+"""Dividing the unchecked between maintainers — by reachability of the source.
 
-Черга (`factcheck.py cherga`) сортує за вартістю помилки й показує сорок
-рядків. Для роботи вдвох цього замало: треба знати не «що найдорожче», а
-**хто це взагалі може закрити**.
+The queue (`factcheck.py cherga`) sorts by cost of error and shows forty
+rows. For two people working together that is not enough: what matters is
+not "what is most expensive" but **who can close it at all**.
 
-Поділ тут не за темами й не за розділами, а за одним питанням: у якому
-джерелі лежить відповідь.
+The split here is not by topic and not by chapter but by one question: in
+which document does the answer lie.
 
-    ESP-IDF, esptool, заголовки `soc/`   → М1, у контейнері вони є
-    datasheet мікросхем, електричні дані → М2, у контейнері 403
+    ESP-IDF, esptool, `soc/` headers   -> M1, they are in his container
+    part datasheets, electrical data   -> M2; M1's container answers 403
 
-Решта — одиниці зі слабким сигналом (згадка чипа чи терміна в лапках без
-числа й ідентифікатора). Вони лишаються в `F` свідомо: серед них
-переважно редакційне, але механічно відрізнити його від фактичного не
-вдається, тож вони чекають на суцільні проходи, а не на поділ.
+The rest are units with a weak signal (a chip or a term in backticks with
+no number and no identifier). They stay `unchecked` deliberately: mostly
+editorial, but telling that apart from the factual mechanically does not
+work, so they wait for continuous passes rather than for a split.
 
-    factcheck/tools/split_queue.py            зведення
-    factcheck/tools/split_queue.py --naryad   згенерувати factcheck/reports/SPLIT.md
+The baskets themselves are this book's data — `factcheck/book.yaml`.
+
+    factcheck/tools/split_queue.py            summary
+    factcheck/tools/split_queue.py --naryad   write factcheck/reports/SPLIT.md
 """
 from __future__ import annotations
 
@@ -30,48 +32,25 @@ import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-import factcheck  # noqa: E402  — після правки sys.path
+import factcheck  # noqa: E402  (after the sys.path adjustment)
 FC = ROOT / "factcheck"
-# `GRUPY` була вісьмома копіями того самого факту — теками цієї
-# книги. Копії збігалися, і саме тому були небезпечні: набір копій
-# не бреше, доки факт не зміниться, а тоді бреше всіма одразу.
-# Тепер це дані: `factcheck/book.yaml`.
+# `GRUPY` was eight copies of one fact — this book's directories. The
+# copies agreed, which is what made them dangerous: a set of copies does
+# not lie until the fact changes, and then it lies in all of them at once.
+# It is data now: `factcheck/book.yaml`.
 GRUPY = config.groups()
 
-# Порядок важливий: одиниця потрапляє в перший кошик, який її впізнав.
-# Тому специфічне (назва мікросхеми) стоїть перед загальним (число з
-# одиницею) — інакше «BME280 живиться 3.3 В» пішло б у електричні.
-KOSHYKY: list[tuple[str, str, str, re.Pattern]] = [
-    ("M1", "api", "виклики й константи ESP-IDF — заголовки компонентів",
-     re.compile(r'`(esp_|gpio_|i2c_|spi_|uart_|nvs_|xTask|vTask|xQueue|'
-                r'heap_caps|ledc_|adc_|rmt_|twai_|CONFIG_|SOC_|MALLOC_CAP|'
-                r'ESP_[A-Z])')),
-    ("M1", "komandy", "командний рядок esptool та idf.py",
-     re.compile(r'`(esptool|idf\.py|espefuse|espsecure|otatool|parttool)\b'
-                r'|`(write-flash|read-flash|erase-flash|merge-bin|chip-id|'
-                r'flash-id)')),
-    ("M1", "piny", "номери GPIO — заголовки soc/ і маски дійсних пінів",
-     re.compile(r'GPIO\s?\d+|`IO\d+`')),
-    ("M1", "adresy", "шістнадцяткові адреси й обсяги",
-     re.compile(r'0x[0-9A-Fa-f]{3,}')),
-    ("M1", "log", "рядки, які книга обіцяє побачити в консолі",
-     re.compile(r'E \(\d|W \(\d|I \(\d|`[A-Z][A-Za-z_ ]{8,}`')),
-    ("M2", "detali", "конкретні мікросхеми — datasheet виробника",
-     re.compile(r'\b(BME280|BMP280|BMP180|DS18B20|DS3231|DHT11|DHT22|SHT[234]\d|'
-                r'SSD1306|SH1106|ILI9341|ST7789|MAX485|MAX3232|MAX31855|MAX6675|'
-                r'SN65HVD\d+|TP4056|DW01|MCP23017|MCP2515|PCF8574|PCA9685|'
-                r'74HC\d+|CD4051|HC-SR04|SX12\d\d|RFM\d\d|MAX170\d\d|INA219|'
-                r'ADS1115|W5500|ENC28J60|CH340|CP210\d|FT232|CH9102|AMS1117|'
-                r'LM2596|MT3608|XL6009|18650|LiFePO4|AT24C\d+|24LC\d+|NEO-\d|'
-                r'ATmega\d+|RP2040|STM32)')),
-    ("M2", "elektro", "електричні величини — datasheet і специфікації",
-     re.compile(r'\d+\s*(мА|мкА|А\b|В\b|мВ|кОм|Ом|МОм|мА·год|нФ|мкФ|пФ|Вт|'
-                r'дБм|°C)')),
-]
+# The baskets are this book's data — see `factcheck/book.yaml`. Carried
+# inline until 2026-09-01, which made this tool silent on any other book:
+# every unit would land in the "nobody" basket and the split would look
+# complete.
+BUCKETS = [(b["who"], b["key"], b.get("what", ""),
+            re.compile(b["pattern"]))
+           for b in config.split_buckets()]
 
-# Хвіст узято з `factcheck.RE_TVERDZHENNYA`, а не переписано вдруге:
-# своя копія цього рядка вже одного разу мовчки перестала збігатися,
-# коли заголовок картки змінили.
+# The tail is taken from `factcheck.RE_TVERDZHENNYA` rather than written
+# a second time: a private copy of that line has already once silently
+# stopped matching, when the card heading was renamed.
 RE_F = re.compile(
     r'<!-- fc id:(?P<id>\S+) sha:\S+ src:(?P<src>[^\s:]+):(?P<ln>\d+) '
     r'status:unchecked -->\n### \S+ · (?P<vyd>\w+) · [^\n]*\n\n'
@@ -86,7 +65,7 @@ def zibraty() -> tuple[list[dict], dict[str, list[dict]]]:
                 vsi.append(m.groupdict())
     rozklad: dict[str, list[dict]] = collections.defaultdict(list)
     for r in vsi:
-        for hto, klyuch, _, p in KOSHYKY:
+        for hto, klyuch, _, p in BUCKETS:
             if p.search(r["txt"]):
                 rozklad[f"{hto}-{klyuch}"].append(r)
                 break
@@ -95,33 +74,36 @@ def zibraty() -> tuple[list[dict], dict[str, list[dict]]]:
     return vsi, rozklad
 
 
-# ── Повний облік решти, а не лише сильного сигналу ────────────────────
+# ── A full account of the remainder, not only of the strong signal ────
 #
-# Перша редакція цього інструмента ділила тільки клас `F` із виразною
-# ознакою — 80 одиниць. Решта лишалася «поза поділом», і поки нікому не
-# траплялося запитати «а скільки всього», це виглядало як поділ роботи.
+# The first version of this tool divided only `unchecked` units with a
+# clear marker — 80 of them. The rest stayed "outside the split", and as
+# long as nobody happened to ask "how many are there in total", that
+# looked like a division of work.
 #
-# Насправді поза ним лишалося **майже все**: 1303 одиниці `F` зі слабким
-# сигналом і **весь** клас `E`. Про `E` тоді думали, що він закритий за
-# побудовою; вимірювання показало, що приблизно третина його одиниць має
-# зовнішнє джерело.
+# In fact **almost everything** was outside it: 1303 weak-signal
+# `unchecked` units and the **whole** of `no-external-signal`. The latter
+# was then believed closed by construction; measurement showed that about
+# a third of its units do have an external source.
 #
-# Тому поділ тепер перелічує всі стани, включно з тими, яких ніхто не
-# візьме найближчим часом. Пункт «ніхто, і ось чому» — теж поділ; мовчазна
-# прогалина — ні.
+# So the split now enumerates every status, including those nobody will
+# take up soon. An entry saying "nobody, and here is why" is also a
+# division; a silent gap is not.
 
-# Частка `E`, що має зовнішній референт. Не здогад: випадкова вибірка
-# 160 одиниць, насіння в наряді, 95 % Вілсон 30–45 %.
-CHASTKA_E_Z_REFERENTOM = 0.37
+# The share of `no-external-signal` that has an external referent. Not a
+# guess: a random sample of 160 units, seed recorded in the order, 95 %
+# Wilson 30–45 %.
+SHARE_WITH_REFERENT = 0.37
 
 
 def klasy() -> dict[str, int]:
-    """Скільки одиниць у кожному стані — з реєстру, а не з пам'яті.
+    """How many units are in each status — from the registry, not memory.
 
-    Ключ — **слово**. Літера в коментарі картки зводиться до слова тут
-    же, одним рядком, який зникне разом із нею; власного розбору
-    коментаря тут більше немає — це був третій примірник того самого
-    правила, і при стисненні його ніхто б не згадав.
+    The key is the **word**. The card comment now carries the word; the
+    line that used to translate a letter into it is gone. There is no
+    private parse of the comment here any more — that was the third copy
+    of the same rule, and on the day of the contraction nobody would have
+    remembered it.
     """
     import re as _re
     import factcheck
@@ -136,14 +118,14 @@ def klasy() -> dict[str, int]:
 
 
 def podil_za_fajlamy(klasy: tuple[str, ...]) -> tuple[list[str], list[str], int, int]:
-    """Поділ названих класів за файлами — жадібно, у бік меншої суми.
+    """Divide the named statuses by file — greedily, toward the smaller sum.
 
-    Той самий механізм, що вже перевірений на класі `E`; `podil_e` тепер
-    його окремий випадок. М2 назвав поділ решти «не очевидним» — але
-    очевидність тут не потрібна, потрібен `assert`: перетин файлів нуль,
-    і його видно.
+    The same mechanism already proven on `no-external-signal`; that split
+    is now a special case of this one. M2 called the split of the
+    remainder "not obvious" — but obviousness is not what is needed here,
+    an `assert` is: the intersection of files is zero, and it is visible.
 
-        C+F  1935 одиниць у 91 файлі → 968 / 967, перетин 0
+        C+F  1935 units in 91 files -> 968 / 967, intersection 0
     """
     import sample
     za: dict[str, int] = collections.Counter()
@@ -160,19 +142,20 @@ def podil_za_fajlamy(klasy: tuple[str, ...]) -> tuple[list[str], list[str], int,
         else:
             m2.append(f)
             s2 += n
-    assert not (set(m1) & set(m2)), "файл потрапив обом"
+    assert not (set(m1) & set(m2)), "a file went to both"
     return sorted(m1), sorted(m2), s1, s2
 
 
 def podil_e() -> tuple[list[str], list[str], int, int]:
-    """Поділ класу `E` за файлами — жадібно, у бік меншої суми.
+    """Divide `no-external-signal` by file — greedily, toward the smaller sum.
 
-    Ділиться **файлами, а не одиницями**: два супровідники, що правлять
-    той самий файл, дають конфлікт злиття на кожному записі.
+    It divides **files, not units**: two maintainers editing the same file
+    produce a merge conflict on every record.
 
-    Перша редакція ділила за полем `src`, у якому стоїть `файл:рядок`, —
-    і розкидала той самий файл по обидва боки, тобто робила рівно те,
-    від чого мала берегти. Перетин тепер перевіряється явно.
+    The first version divided by the `src` field, which holds
+    `file:line` — and scattered the same file across both sides, doing
+    exactly what it was meant to prevent. The intersection is now
+    asserted explicitly.
     """
     import sample
     za: dict[str, int] = collections.Counter(
@@ -187,53 +170,53 @@ def podil_e() -> tuple[list[str], list[str], int, int]:
         else:
             m2.append(f)
             s2 += n
-    assert not (set(m1) & set(m2)), "файл потрапив обом"
+    assert not (set(m1) & set(m2)), "a file went to both"
     return sorted(m1), sorted(m2), s1, s2
 
 
 def remonty() -> list[tuple[str, str, int, str]]:
-    """Борг, який не є новою звіркою: полагодити наявні записи.
+    """Debt that is not new checking: repairing the records we have.
 
-    Це окремий рід роботи. Він не додає звіреного, але без нього
-    відсотки брешуть — а реєстр, який брешe про себе, гірший за менший
-    чесний.
+    A separate kind of work. It adds nothing to the checked count, but
+    without it the percentages lie — and a registry that lies about
+    itself is worse than a smaller honest one.
     """
     import layer3
     naslidky, _ = layer3.perevirka(False)
     lich = collections.Counter(str(n.get("stan")) for n in naslidky)
     return [
-        ("обидва", "цитата не збігається", lich.get("ne_znaydeno", 0),
-         "супровідник причесав цитату; звірити книгу, потім переписати"),
-        ("М1", "джерело не в кеші", lich.get("nedosyazhne", 0),
-         "докачати або перевести в `C` з чесною причиною"),
-        ("М2", "вигадане джерело", lich.get("vygadane", 0),
-         "клас каже «звірено», у полі джерела — міркування"),
-        ("М2", "клас F у полі доказу", lich.get("pomylka", 0),
-         "`F` означає відсутність доказу; запис не означає нічого"),
-        ("М2", "надмірний E з числом", lich.get("nadmirnyy_e", 0),
-         "«джерела не існує» на твердженні з номіналом"),
+        ("both", "the quote does not match", lich.get("ne_znaydeno", 0),
+         "a maintainer tidied the quote; check the book, then rewrite"),
+        ("M1", "source not in the cache", lich.get("nedosyazhne", 0),
+         "download it, or move to `named-unreachable` with an honest reason"),
+        ("M2", "invented source", lich.get("vygadane", 0),
+         "the status says checked; the source field holds an argument"),
+        ("M2", "`unchecked` in the evidence field", lich.get("pomylka", 0),
+         "that means there is no evidence; the record means nothing"),
+        ("M2", "no-external-signal on a number", lich.get("nadmirnyy_e", 0),
+         "\"no source exists\" on a claim carrying a rated value"),
     ]
 
 
 def zvedennya() -> int:
     vsi, rozklad = zibraty()
-    print(f"незвіреного (клас F): {len(vsi)}\n")
-    for hto, klyuch, opys, _ in KOSHYKY:
+    print(f"unchecked units: {len(vsi)}\n")
+    for hto, klyuch, opys, _ in BUCKETS:
         k = f"{hto}-{klyuch}"
         print(f"  {hto}  {klyuch:9} {len(rozklad[k]):5}   {opys}")
     m1 = sum(len(v) for k, v in rozklad.items() if k.startswith("M1"))
     m2 = sum(len(v) for k, v in rozklad.items() if k.startswith("M2"))
-    print(f"\n  М1 разом: {m1}    М2 разом: {m2}")
-    print(f"  слабкий сигнал, поза поділом: {len(rozklad['—'])}")
+    print(f"\n  M1 total: {m1}    M2 total: {m2}")
+    print(f"  weak signal, outside the split: {len(rozklad['—'])}")
 
     k = klasy()
-    e_ref = round(k.get("no-external-signal", 0) * CHASTKA_E_Z_REFERENTOM)
-    print(f"\n── решта, якої в поділі вище немає ──")
-    print(f"  клас E, оцінка з референтом  {e_ref:5}   "
-          f"({CHASTKA_E_Z_REFERENTOM:.0%} від {k.get('no-external-signal', 0)}, випадкова вибірка)")
-    print(f"  клас C, джерело недосяжне    {k.get('named-unreachable', 0):5}   "
-          f"М2: у них мережа ширша")
-    print(f"\n── ремонт наявних записів ──")
+    e_ref = round(k.get("no-external-signal", 0) * SHARE_WITH_REFERENT)
+    print(f"\n── the remainder, absent from the split above ──")
+    print(f"  no-external-signal, estimated with a referent  {e_ref:5}   "
+          f"({SHARE_WITH_REFERENT:.0%} of {k.get('no-external-signal', 0)}, random sample)")
+    print(f"  named-unreachable, source out of reach    {k.get('named-unreachable', 0):5}   "
+          f"M2: their network reaches further")
+    print(f"\n── repairing the records we have ──")
     for hto, shcho, skilky, chomu in remonty():
         if skilky:
             print(f"  {hto:7} {shcho:24} {skilky:4}   {chomu}")
@@ -245,51 +228,55 @@ def naryad() -> int:
     m1 = sum(len(v) for k, v in rozklad.items() if k.startswith("M1"))
     m2 = sum(len(v) for k, v in rozklad.items() if k.startswith("M2"))
     r = [
-        "# Поділ незвіреного між супровідниками\n",
-        "**Генерується** `factcheck/tools/split_queue.py --naryad`. Правити вручну нема "
-        "сенсу.\n",
-        "Поділ за одним питанням: **у якому джерелі лежить відповідь**. "
-        "ESP-IDF, esptool і заголовки `soc/` дістаються з контейнера М1; "
-        "datasheet мікросхем і електричні дані — ні, і це робота М2.\n",
-        f"| | Кошик | Одиниць | Джерело |",
+        "# Dividing the unchecked between maintainers\n",
+        "> **generated** — written by `factcheck/tools/split_queue.py "
+        "--naryad`; editing it by hand is wasted work\n",
+        "Divided by one question: **in which document does the answer "
+        "lie**. ESP-IDF, esptool and the `soc/` headers are reachable from "
+        "M1's container; part datasheets and electrical data are not, and "
+        "that is M2's work.\n",
+        f"| | Basket | Units | Source |",
         "|---|---|---|---|",
     ]
-    for hto, klyuch, opys, _ in KOSHYKY:
+    for hto, klyuch, opys, _ in BUCKETS:
         r.append(f"| **{hto}** | `{klyuch}` | {len(rozklad[f'{hto}-{klyuch}'])} "
                  f"| {opys} |")
     r += [
-        f"\n**М1 разом: {m1}. М2 разом: {m2}.**\n",
+        f"\n**M1 total: {m1}. M2 total: {m2}.**\n",
     ]
 
-    # Повний облік. Таблиця вище — лише те, де джерело **вгадується з
-    # тексту**. Це менша частина решти, і подавати її як «поділ роботи»
-    # означало б показати десяту частину боргу за весь борг.
+    # A full account. The table above covers only what has a source
+    # **guessable from the text**. That is the smaller part of the
+    # remainder, and presenting it as "the division of work" would show a
+    # tenth of the debt as the whole of it.
     k = klasy()
-    e_ref = round(k.get("no-external-signal", 0) * CHASTKA_E_Z_REFERENTOM)
+    e_ref = round(k.get("no-external-signal", 0) * SHARE_WITH_REFERENT)
     slabki = len(rozklad["—"])
     r += [
-        "## Уся решта, а не лише сильний сигнал\n",
-        "Таблиця вище ділить те, де джерело видно з самого тексту "
-        "одиниці. Це менша частина боргу. Нижче — увесь він, включно з "
-        "тим, чого найближчим часом не візьме ніхто: **пункт «ніхто, і "
-        "ось чому» — теж поділ, а мовчазна прогалина — ні.**\n",
-        "| Пласт | Одиниць | Кому | Чому саме так |",
+        "## The whole remainder, not only the strong signal\n",
+        "The table above divides what has a source visible in the unit's "
+        "own text. That is the smaller part of the debt. Below is all of "
+        "it, including what nobody will take up soon: **an entry saying "
+        "\"nobody, and here is why\" is also a division; a silent gap is "
+        "not.**\n",
+        "| Layer | Units | To whom | Why |",
         "|---|---|---|---|",
-        f"| `F`, джерело видно з тексту | {m1 + m2} | М1 {m1}, М2 {m2} "
-        "| за досяжністю джерела з контейнера |",
-        f"| `F`, слабкий сигнал | {slabki} | **нікому** "
-        "| ознаки, за якою ділити, немає; чекає на суцільні проходи |",
-        f"| `E`, оцінка з референтом | ~{e_ref} | обом порівну "
-        f"| {CHASTKA_E_Z_REFERENTOM:.0%} від {k.get('no-external-signal', 0)} за випадковою "
-        "вибіркою; ділиться розділами, бо джерело наперед невідоме |",
-        f"| `C`, джерело недосяжне звідси | {k.get('named-unreachable', 0)} | М2 "
-        "| у них ширша мережа; для М1 це 403 за побудовою |",
+        f"| `unchecked`, source visible in the text | {m1 + m2} "
+        f"| M1 {m1}, M2 {m2} | by reachability of the source |",
+        f"| `unchecked`, weak signal | {slabki} | **nobody** "
+        "| there is no marker to divide by; waits for continuous passes |",
+        f"| `no-external-signal`, estimated with a referent | ~{e_ref} "
+        f"| both equally | {SHARE_WITH_REFERENT:.0%} of "
+        f"{k.get('no-external-signal', 0)} by random sample; divided by "
+        "chapter, because the source is unknown in advance |",
+        f"| `named-unreachable` | {k.get('named-unreachable', 0)} | M2 "
+        "| their network reaches further; for M1 it is 403 by construction |",
         "",
-        "### Ремонт наявних записів\n",
-        "Окремий рід роботи: він не додає звіреного, але без нього "
-        "відсотки брешуть. Реєстр, який бреше про себе, гірший за менший "
-        "чесний.\n",
-        "| Що | Скільки | Кому |",
+        "### Repairing the records we have\n",
+        "A separate kind of work: it adds nothing to the checked count, "
+        "but without it the percentages lie. A registry that lies about "
+        "itself is worse than a smaller honest one.\n",
+        "| What | How many | To whom |",
         "|---|---|---|",
     ]
     for hto, shcho, skilky, chomu in remonty():
@@ -297,19 +284,19 @@ def naryad() -> int:
             r.append(f"| {shcho} — {chomu} | {skilky} | {hto} |")
     r.append("")
     e1, e2, s1, s2 = podil_e()
-    r.append(f"### Поділ класу `E` за файлами — М1 {s1}, М2 {s2}\n")
-    r.append("Ділиться **файлами, не одиницями**: двоє в одному файлі "
-             "дають конфлікт злиття на кожному записі. Перетин "
-             "перевіряється в інструменті.\n")
-    r.append(f"**М1 ({len(e1)}):** " + ", ".join(f"`{x}`" for x in e1) + "\n")
-    r.append(f"**М2 ({len(e2)}):** " + ", ".join(f"`{x}`" for x in e2) + "\n")
-    r.append("### Чому `E` ділиться розділами, а не джерелами\n")
-    r.append("Бо джерело там наперед **невідоме** — у цьому вся суть "
-             "класу. Ділити за досяжністю можна лише те, про що вже "
-             "знаєш, де воно лежить. Тому `E` ділиться діапазонами "
-             "розділів: це єдиний поділ, який гарантує, що двоє не "
-             "візьмуть ту саму одиницю.\n")
-    for hto, klyuch, opys, _ in KOSHYKY:
+    r.append(f"### `no-external-signal` divided by file — M1 {s1}, M2 {s2}\n")
+    r.append("Divided by **files, not units**: two people in one file "
+             "produce a merge conflict on every record. The intersection "
+             "is asserted in the tool.\n")
+    r.append(f"**M1 ({len(e1)}):** " + ", ".join(f"`{x}`" for x in e1) + "\n")
+    r.append(f"**M2 ({len(e2)}):** " + ", ".join(f"`{x}`" for x in e2) + "\n")
+    r.append("### Why this status is divided by chapter, not by source\n")
+    r.append("Because the source there is **unknown in advance** — that is "
+             "the whole point of the status. Reachability can only divide "
+             "what you already know the location of. So it is divided by "
+             "ranges of chapters: the only division that guarantees two "
+             "people will not take the same unit.\n")
+    for hto, klyuch, opys, _ in BUCKETS:
         k = f"{hto}-{klyuch}"
         if not rozklad[k]:
             continue
@@ -320,14 +307,14 @@ def naryad() -> int:
             za_faylom[u["src"]].append(u)
         for src in sorted(za_faylom):
             r.append(f"\n### `{src}` — {len(za_faylom[src])}\n")
-            r.append("| Твердження | Рядок | Дослівно |")
+            r.append("| Claim | Line | Verbatim |")
             r.append("|---|---|---|")
             for u in za_faylom[src]:
                 t = " ".join(x[2:] for x in u["txt"].strip().split("\n"))
                 t = t.replace("|", "\\|")[:150]
                 r.append(f"| `{u['id']}` | {u['ln']} | {t} |")
     (FC / "reports" / "SPLIT.md").write_text("\n".join(r) + "\n", encoding="utf-8")
-    print(f"factcheck/reports/SPLIT.md: М1 {m1}, М2 {m2}, поза поділом "
+    print(f"factcheck/reports/SPLIT.md: M1 {m1}, M2 {m2}, outside the split "
           f"{len(rozklad['—'])}")
     return 0
 

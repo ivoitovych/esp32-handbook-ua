@@ -84,6 +84,29 @@ FROZEN_DIRS = {"history", "archive", "runs", "snapshots", "triage",
 KNYHA = set(config.groups()) | {"book"}
 
 
+# Що в породженому звіті НАЛЕЖИТЬ технології, а що книзі.
+#
+# Звіт цитує книгу: рядки таблиць, цитати, огорожі. Цей текст
+# український тому, що книга українська, і перекласти його означало б
+# підробити цитату. Мова технології — рамка навколо них: заголовки,
+# пояснення, підписи колонок.
+#
+# Спершу я це припустив і **поміряв — припущення було хибне**: до
+# перекладу рамка була УКРАЇНСЬКІШОЮ за ціле, бо цитати з англійських
+# джерел її розбавляли. Тобто число тоді нічого не ховало.
+#
+# Після перекладу `split_queue` те саме вимірювання дає рамку 0.0 % при
+# цілому 44.8 % — і ось тепер різниця справжня. Тож правило вводиться
+# тоді, коли воно стало правдою, а не тоді, коли було зручним.
+RE_FENCE = re.compile(r"^```.*?^```", re.S | re.M)
+RE_QUOTED = re.compile(r"^(?:>|\|).*$", re.M)
+
+
+def frame_only(t: str) -> str:
+    """The report's own prose, without what it quotes from the book."""
+    return RE_QUOTED.sub("", RE_FENCE.sub("", t))
+
+
 def cyrillic_share(t: str) -> float:
     c = len(re.findall(r"[а-яїієґА-ЯЇІЄҐ]", t))
     l = len(re.findall(r"[a-zA-Z]", t))
@@ -135,7 +158,13 @@ def measure() -> list[tuple[float, str, int]]:
         if not p.is_file() or zona(p) != "english":
             continue
         t = p.read_text(encoding="utf-8", errors="replace")
-        out.append((cyrillic_share(t), str(p.relative_to(ROOT)),
+        # A generated report is measured by its frame: its body is the
+        # book's own claims, quoted, and translating those would forge a
+        # quotation.
+        vymiryuvane = (frame_only(t)
+                       if "/reports/" in p.as_posix() and p.suffix == ".md"
+                       else t)
+        out.append((cyrillic_share(vymiryuvane), str(p.relative_to(ROOT)),
                     len(t.splitlines())))
     return out
 
@@ -256,6 +285,16 @@ def proba() -> int:
     probа("новий український документ у фундаменті ловиться",
           "factcheck/UKR.md" in zlovleno)
     probа("англійський сусід мовчить", "factcheck/ENG.md" not in zlovleno)
+    # Рамка проти цілого: звіт, чия проза англійська, а таблиці цитують
+    # книгу, мусить читатися як англійський.
+    probа("цитований текст книги не рахується боргом звіту",
+          cyrillic_share(frame_only(
+              "# Report\n\nAll English here.\n\n"
+              "| Твердження | Рядок |\n|---|---|\n"
+              "| дуже українське твердження | 12 |\n")) < PORIH)
+    probа("а українська ПРОЗА звіту — рахується",
+          cyrillic_share(frame_only(
+              "# Звіт\n\nЦе українська проза звіту.\n")) > PORIH)
 
     print("\nпровалів:", 0 if ok else 1)
     return 0 if ok else 1
