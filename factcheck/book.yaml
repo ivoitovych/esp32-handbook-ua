@@ -104,3 +104,25 @@ split_buckets:
   key: elektro
   what: electrical quantities — datasheets and specifications
   pattern: \d+\s*(мА|мкА|А\b|В\b|мВ|кОм|Ом|МОм|мА·год|нФ|мкФ|пФ|Вт|дБм|°C)
+
+# Where a helper can actually reach a source from this container, named in
+# the work order. Entirely this book's environment: another book has other
+# repositories, and possibly no egress restriction at all.
+#
+# `sample.py` carried this list inline, so an order generated for another
+# book would have sent its helpers to ESP-IDF.
+reachable_sources:
+  intro: |
+    Only `raw.githubusercontent.com` is reachable. Everything else answers
+    403; **do not repeat a request that returned 403**.
+  where: |
+    `espressif/esp-idf` (`docs/en/…`, `components/…`, `examples/…`),
+    `espressif/esptool`, `espressif/arduino-esp32`, `torvalds/linux`
+    (`drivers/…`), `esphome/esphome`, `micropython/micropython`,
+    `adafruit/*`, `jgromes/RadioLib`, `olikraus/u8g2`, `Bodmer/TFT_eSPI`,
+    `lvgl/lvgl`.
+  caveat: |
+    Separately: `espressif.com` returns, for some addresses, an **HTML
+    stub of 15 495 bytes with status 200**. The response is "successful"
+    and the document is absent. It does not look like a document —
+    `nedosyazhne`.

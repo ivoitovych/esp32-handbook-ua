@@ -169,6 +169,18 @@ def split_buckets() -> list[dict]:
     return d
 
 
+def reachable_sources() -> dict:
+    """What a helper can reach from this container, for the work order.
+
+    Empty dict if unconfigured — the order then simply says nothing about
+    where to look, which is honest. Carrying another book's repository
+    list would not be."""
+    d = _cfg().get("reachable_sources") or {}
+    if not isinstance(d, dict):
+        raise ConfigError(f"{FILE}: `reachable_sources` must be a mapping")
+    return d
+
+
 def demo() -> int:
     import tempfile
     ok = True
