@@ -1,54 +1,66 @@
 #!/usr/bin/env python3
-"""Шар 1 над ОДИНИЦЯМИ реєстру — не над картками; пор. `layer1.py`.
+"""Layer 1 over the registry's UNITS — not over its cards; cf. `layer1.py`.
 
-Двоє їх не через недогляд. `layer1.py` питає, чи картка чесно подає
-книгу читачеві, який книги не бачив; цей файл питає, чи одиниця
-реєстру походить із книги. Перше — про подання, друге — про походження.
-Перше знайшло 58 зламаних контекстів, яких друге не бачить у принципі.
+There are two of these, and not by oversight. `layer1.py` asks whether a
+card presents the book honestly to a reader who has not seen the book;
+this file asks whether a unit of the registry comes from the book at all.
+The first is about presentation, the second about provenance. The first
+found 58 broken contexts that the second cannot see in principle.
 
-Шар 1: чи справді одиниця реєстру — це те, що написано в книзі.
+## What already existed, and what was missing
 
-## Що вже було і чого бракувало
+The registry is **generated** from the book (`factcheck.py sketch`), so
+for prose the texts match by construction. Evidence is bound by the `sha`
+hash, and editing a wording detaches the evidence — we have seen that
+work: when M1 rewrote the line about the DS18B20's tolerance, two
+evidences detached on their own.
 
-Реєстр **генерується** з книги (`factcheck.py sketch`), тож для прози
-рівність тексту виходить сама собою. Доказ прив'язується хешем `sha`,
-і правка формулювання відв'язує доказ — це ми бачили в дії, коли М1
-переписав рядок про похибку DS18B20 і два докази відчепилися самі.
+So layer 1 is partly automatic. But three holes remained.
 
-Отже шар 1 частково автоматичний. Але три дірки лишалися.
+**First.** `factcheck.py stale` was named "records whose text in the book
+changed since the evidence", and checked only **whether the file exists**.
+The invariant was considered guarded and was guarded by nobody — the same
+kind M1 found in his own `vorota`.
 
-**Перша.** `factcheck.py stale` називається «записи, чий текст у книзі
-змінився після останнього доказу», а перевіряє лише, **чи існує
-файл**. Тобто інваріант вважався захищеним і не був захищений ніким —
-той самий рід, що М1 знайшов у своїх `vorota`.
-
-**Друга.** Над кожною одиницею стоїть заголовок «**Книга каже,
-дослівно:**». Для прози це правда. Для **комірки таблиці** — ні:
-книга каже
+**Second.** Above each unit stood the heading "**The book says,
+verbatim:**". For prose that is true. For a **table cell** it is not; the
+book says
 
     | BME280 | `0x76`, `0x77` | ... |
 
-а реєстр подає
+and the registry presents
 
     BME280 · Адреса → `0x76`, `0x77`
 
-Це рендер, не цитата. Слово «дослівно» там неправдиве, і саме воно
-породило рід хибної тривоги «комірка без контексту».
+That is a rendering, not a quote. The word "verbatim" there was untrue,
+and it is what produced the false-alarm kind "a cell with no context".
 
-**Третя.** Ніщо не перевіряє, що сам **розбирач** не помилився. Якщо
-він з'їсть половину речення чи зсуне номер рядка, реєстр буде
-внутрішньо несуперечливий і невірний.
+**Third.** Nothing checks that the **splitter** itself did not err. If it
+eats half a sentence or shifts a line number, the registry is internally
+consistent and wrong.
 
-## Що робить цей скрипт
+## What this script does
 
-Для кожної одиниці бере `src:рядок` із самого реєстру, відкриває
-книгу й питає:
+For each unit it takes `src:line` from the registry itself, opens the
+book, and asks:
 
-* **проза** — чи стоїть текст одиниці в книзі дослівно;
-* **комірка** — чи всі значення комірки трапляються в рядку книги;
-* **будь-яка** — чи рядок узагалі існує (файл міг скоротитися).
+* **prose** — does the unit's text stand in the book verbatim;
+* **cell** — do all of the cell's values occur in the book's line;
+* **any** — does the line exist at all (the file may have shrunk).
 
-    tools/layer1-m2.py [--vsi]
+## It was examining nothing
+
+This tool matched on the card heading `**Книга каже, дослівно:**`. That
+heading was renamed in the generator — the very rename described under
+"Second" above — and this pattern was not. It has been reporting
+
+    одиниць 0 · ТЕКСТУ НЕМАЄ В КНИЗІ: 0
+
+ever since: three zeros and exit 0, which reads exactly like a clean run.
+The heading it looks for is now taken from the generator rather than
+copied here, and zero units is a failure.
+
+    factcheck/tools/layer1_units.py [--all]
 """
 from __future__ import annotations
 
@@ -58,15 +70,21 @@ from pathlib import Path
 
 import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
-# `GRUPY` була вісьмома копіями того самого факту — теками цієї
-# книги. Копії збігалися, і саме тому були небезпечні: набір копій
-# не бреше, доки факт не зміниться, а тоді бреше всіма одразу.
-# Тепер це дані: `factcheck/book.yaml`.
-GRUPY = config.groups()
-RE_ZAH = re.compile(
+
+GROUPS = config.groups()
+
+# The heading is asked of the generator, not copied. A copy of it here is
+# what made this tool silent: the generator renamed the heading and the
+# copy did not follow.
+def _claim_heading() -> str:
+    import factcheck
+    return getattr(factcheck, "CLAIM_HEADING", "Твердження, коротко")
+
+
+RE_CARD = re.compile(
     r"<!-- fc id:(\S+) sha:(\S+) src:(\S+?):(\d+) status:(\S+) -->\n"
-    r"### \S+ · (\S+) · [^\n]*\n\n\*\*Книга каже, дослівно:\*\*\n\n"
-    r"((?:> [^\n]*\n)+)")
+    r"### \S+ · (\S+) · [^\n]*\n\n\*\*" + re.escape(_claim_heading())
+    + r"\*\*\n\n((?:> [^\n]*\n)+)")
 
 
 def normal(s: str) -> str:
@@ -74,76 +92,84 @@ def normal(s: str) -> str:
 
 
 def main(argv: list[str]) -> int:
-    vsi = "--vsi" in argv
-    knyha: dict[str, list[str]] = {}
-    knyha_ciле: dict[str, str] = {}
-    zsuv: list[str] = []
-    bidy: list[tuple[str, str, str]] = []
-    n = proza = komirka = 0
+    show_all = "--all" in argv or "--vsi" in argv
+    book: dict[str, list[str]] = {}
+    whole: dict[str, str] = {}
+    shifted: list[str] = []
+    faults: list[tuple[str, str, str]] = []
+    n = prose = cells = 0
 
-    for g in GRUPY:
+    for g in GROUPS:
         for f in sorted((config.cards_root() / g).glob("*.md")):
-            tekst = f.read_text(encoding="utf-8")
-            for m in RE_ZAH.finditer(tekst):
-                ident, sha, src, ln, klas, vyd, cyt = m.groups()
+            text = f.read_text(encoding="utf-8")
+            for m in RE_CARD.finditer(text):
+                ident, sha, src, ln, status, kind, quote = m.groups()
                 n += 1
                 p = ROOT / src
-                if src not in knyha:
-                    knyha[src] = (p.read_text(encoding="utf-8").split("\n")
-                                  if p.exists() else [])
-                ryadky = knyha[src]
+                if src not in book:
+                    book[src] = (p.read_text(encoding="utf-8").split("\n")
+                                 if p.exists() else [])
+                lines = book[src]
                 i = int(ln) - 1
-                if not ryadky:
-                    bidy.append((ident, "ФАЙЛУ НЕМАЄ", src))
+                if not lines:
+                    faults.append((ident, "FILE MISSING", src))
                     continue
-                if i >= len(ryadky):
-                    bidy.append((ident, "РЯДКА НЕМАЄ (файл коротший)",
-                                 "%s:%s, рядків %d" % (src, ln, len(ryadky))))
+                if i >= len(lines):
+                    faults.append((ident, "LINE MISSING (file is shorter)",
+                                   "%s:%s, %d lines" % (src, ln, len(lines))))
                     continue
-                t = normal("\n".join(x[2:] for x in cyt.strip().split("\n")))
-                # вікно: речення може займати кілька рядків книги
-                vikno = normal(" ".join(ryadky[max(0, i - 1):i + 6]))
-                # Два різні роди, і плутати їх дорого. Текст може бути
-                # в книзі, але НЕ НА ТОМУ РЯДКУ — це не помилка тексту,
-                # а застарілий рендер: книгу правили після нього, і всі
-                # номери нижче правки зсунулися.
+                t = normal("\n".join(x[2:] for x in quote.strip().split("\n")))
+                # a window: a sentence may span several lines of the book
+                window = normal(" ".join(lines[max(0, i - 1):i + 6]))
+                # Two different kinds, and confusing them is expensive.
+                # The text may be in the book but NOT ON THAT LINE — that
+                # is not a fault of the text but a stale rendering: the
+                # book was edited after it, and every number below the
+                # edit shifted.
                 #
-                # Перший прогін дав 1317 «розбіжностей» саме так, і я
-                # мало не доповів, що шістнадцять відсотків реєстру
-                # хибні. Текст був на місці — зсунувся номер.
-                cilyy = knyha_ciле.setdefault(src, normal(" ".join(ryadky)))
-                if vyd == "proza":
-                    proza += 1
-                    if t in vikno:
+                # The first run reported 1317 "divergences" exactly this
+                # way, and I nearly announced that sixteen per cent of the
+                # registry was false. The text was there; the number moved.
+                entire = whole.setdefault(src, normal(" ".join(lines)))
+                if kind == "proza":
+                    prose += 1
+                    if t in window:
                         pass
-                    elif t in cilyy:
-                        zsuv.append(ident)
+                    elif t in entire:
+                        shifted.append(ident)
                     else:
-                        bidy.append((ident, "ТЕКСТУ НЕМАЄ В КНИЗІ ВЗАГАЛІ",
-                                     t[:70]))
-                elif vyd == "komirka":
-                    komirka += 1
-                    # значення комірки — те, що після стрілки
-                    chastyny = [normal(x) for x in re.split(r"·|→", t) if normal(x)]
-                    vtracheni = [c for c in chastyny if c not in vikno]
-                    if vtracheni:
-                        if all(c in cilyy for c in vtracheni):
-                            zsuv.append(ident)
+                        faults.append((ident, "TEXT NOT IN THE BOOK AT ALL",
+                                       t[:70]))
+                elif kind == "komirka":
+                    cells += 1
+                    # a cell's values are what follows the arrow
+                    parts = [normal(x) for x in re.split(r"·|→", t) if normal(x)]
+                    lost = [c for c in parts if c not in window]
+                    if lost:
+                        if all(c in entire for c in lost):
+                            shifted.append(ident)
                         else:
-                            bidy.append((ident, "КОМІРКА: значень немає в книзі",
-                                         "; ".join(c for c in vtracheni
-                                                   if c not in cilyy)[:70]))
+                            faults.append(
+                                (ident, "CELL: values not in the book",
+                                 "; ".join(c for c in lost
+                                           if c not in entire)[:70]))
 
-    for ident, rid, det in (bidy if vsi else bidy[:25]):
-        print("   %-12s %-34s %s" % (ident, rid, det))
-    if not vsi and len(bidy) > 25:
-        print("   ... ще %d" % (len(bidy) - 25))
-    print("\nодиниць %d (проза %d, комірок %d)" % (n, proza, komirka))
-    print("  текст на місці, зсунувся НОМЕР РЯДКА: %d — рендер застарів"
-          % len(zsuv))
-    print("  ТЕКСТУ НЕМАЄ В КНИЗІ: %d — оце справжня розбіжність"
-          % len(bidy))
-    return 1 if bidy else 0
+    for ident, kind_, detail in (faults if show_all else faults[:25]):
+        print("   %-12s %-34s %s" % (ident, kind_, detail))
+    if not show_all and len(faults) > 25:
+        print("   ... and %d more" % (len(faults) - 25))
+    print("\nunits %d (prose %d, cells %d)" % (n, prose, cells))
+    print("  text present, LINE NUMBER shifted: %d — the rendering is stale"
+          % len(shifted))
+    print("  TEXT NOT IN THE BOOK: %d — this is the real divergence"
+          % len(faults))
+    # Zero units is not "no divergences" — it is "nowhere to look".
+    if n == 0:
+        print("   ✗ NOT ONE unit was examined. That is not clean; it means "
+              "the card\n     heading this tool matches on no longer "
+              "matches what the generator prints.")
+        return 1
+    return 1 if faults else 0
 
 
 if __name__ == "__main__":
