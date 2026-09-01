@@ -49,6 +49,19 @@ TARGET = FC / "REPORT.md"
 REPORTS = FC / "reports"
 
 
+# The "number in double asterisks" pattern lives in a constant, NOT inside
+# an f-string expression. A backslash inside an f-string expression is
+# legal only from Python 3.12 (PEP 701); the other maintainer's container
+# runs 3.11.15, where this file simply did not parse. `doc_kind` could
+# therefore not check the kind of the documents this tool writes, and said
+# so out loud.
+#
+# > A tool that needs a newer interpreter than the other maintainer has
+# > does not exist for them — and no run on the author's machine will ever
+# > show it.
+BOLD_NUMBER = r"\*\*(\d+)\*\*"
+
+
 def number_from(fname: str, pattern: str, default: str = "—") -> str:
     """One number out of a generated report, by pattern.
 
@@ -144,7 +157,7 @@ def assemble() -> str:
     a("thing.")
     a("")
     a(f"A random sample of "
-      f"{number_from('MEASURE-NO-SIGNAL.md', r'\\*\\*(\\d+)\\*\\*')} units "
+      f"{number_from('MEASURE-NO-SIGNAL.md', BOLD_NUMBER)} units "
       f"measured how often that")
     a("reading is wrong. The measurement, its seed and its sample are in")
     a("`reports/MEASURE-NO-SIGNAL.md`; the sweep that harvested sources from")
@@ -166,7 +179,7 @@ def assemble() -> str:
       f"{len(list((FC / 'data' / 'evidence').glob('*.yaml'))):>6}")
     a(f"  quotes checked verbatim against the source document")
     a(f"                         "
-      f"{number_from('QUOTES.md', r'\\*\\*(\\d+)\\*\\*'):>6}   reports/QUOTES.md")
+      f"{number_from('QUOTES.md', BOLD_NUMBER):>6}   reports/QUOTES.md")
     a("```")
     a("")
     a("Sources that cannot be reached from the environment this book is made")

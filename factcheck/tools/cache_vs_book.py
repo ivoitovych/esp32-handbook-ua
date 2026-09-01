@@ -95,8 +95,22 @@ def _own_names() -> re.Pattern:
         r = subprocess.run(["git", "remote", "get-url", "origin"],
                            capture_output=True, text=True, cwd=ROOT)
         if r.returncode == 0:
-            parts += [x for x in re.split(r"[/:.]", r.stdout.strip())
-                      if len(x) > 3 and x not in ("github", "com", "git")]
+            # Owner and repository only — taken from the END of the
+            # address, not by splitting the whole of it on punctuation.
+            #
+            # Splitting the whole URL kept every part longer than three
+            # characters that was not an explicit exception, and `https`
+            # is five characters long. The pattern therefore matched
+            # EVERY address in the manifest: 374 rows of 374 reported as
+            # "the manifest registers the book as a source", including
+            # `ti.com` and `espressif`.
+            #
+            # > A blacklist of the parts you happen to think of leaves in
+            # > whatever you did not, and here what it left in matched
+            # > everything. Take the parts you want, never drop the ones
+            # > you do not.
+            hvist = re.sub(r"\.git$", "", r.stdout.strip()).rstrip("/")
+            parts += [x for x in hvist.split("/")[-2:] if x]
     except Exception:
         pass
     parts.append(ROOT.name)
