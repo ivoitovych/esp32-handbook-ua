@@ -29,12 +29,20 @@ from repo import ROOT  # noqa: E402  (root is found, not counted)
 # Реєстрів може бути кілька: головний і по одному на паралельного
 # супровідника (`REFUTED-M2.md`). Так вони не б'ються при злитті —
 # кожен пише лише у свій файл.
-REYESTRY = sorted((ROOT / "factcheck").glob("REFUTED*.md"))
+#
+# Шукали в корені `factcheck/`. Після перебудови реєстр переїхав у
+# `reports/`, а глоб лишився — і тула звітувала «реєстрів 0, взірців 0,
+# знахідок 0», тобто вся перевірка спростованих формулювань стояла
+# порожня й зеленіла. Тепер обидва місця, і нуль реєстрів — провал.
+REYESTRY = sorted((ROOT / "factcheck").glob("REFUTED*.md")) + \
+    sorted((ROOT / "factcheck" / "reports").glob("REFUTED*.md")) + \
+    sorted((ROOT / "factcheck" / "archive").rglob("REFUTED*.md"))
 
 # Де шукаємо. Реєстр спростованого й звіти рецензій цитують хибні
 # формулювання за призначенням — там вони доречні.
 DE = ("kartky", "manual", "dodatky", "inserts", "docs")
-NE_CHIPATY = ("factcheck/REFUTED", "reviews/", "zvyazok/")
+NE_CHIPATY = ("factcheck/REFUTED", "factcheck/reports/REFUTED",
+               "factcheck/archive/", "reviews/", "zvyazok/")
 
 
 def zapysy() -> list[dict]:
@@ -92,6 +100,15 @@ def main() -> int:
         print(f"   • {zh}")
     print(f"refuted: реєстрів {len(REYESTRY)}, взірців {len(zap)}, "
           f"файлів {perevireno}, знахідок {len(zhahy)}")
+    # Нуль реєстрів або нуль взірців — не «нічого не спростовано», а
+    # «нема з чим звіряти». Тула прожила в цьому стані від перебудови:
+    # реєстр переїхав у `reports/`, глоб лишився в корені, і зелений
+    # нуль друкувався щодня.
+    if not REYESTRY or not zap or not perevireno:
+        print("   ✗ звіряти не було з чим: реєстрів %d, взірців %d, "
+              "файлів %d.\n     Це не результат."
+              % (len(REYESTRY), len(zap), perevireno))
+        return 1
     return 1 if zhahy else 0
 
 
