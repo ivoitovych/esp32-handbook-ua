@@ -97,7 +97,7 @@ HISTORICAL_CACHES = ("dzherela-kesh",)
 # file somebody adds to the root must either be admitted here on purpose
 # or live in a directory by kind — and `name_lists.py` watches that a name
 # here does not become the name of nothing.
-GOVERNING = ["METHOD.md", "REPORT.md"]
+GOVERNING = ["METHOD.md", "REPORT.md", "LESSONS.md"]
 
 # `README.md` is not a governing document: it decides nothing and travels
 # nowhere — on another book it is written fresh. But it must be in the

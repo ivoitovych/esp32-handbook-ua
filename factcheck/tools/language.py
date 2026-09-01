@@ -71,7 +71,7 @@ BASELINE = ROOT / "factcheck" / "reports" / "LANGUAGE.md"
 # усе, що є українською прозою.
 PORIH = 5.0
 
-FOUNDATION = ["METHOD.md", "REPORT.md"]
+FOUNDATION = ["METHOD.md", "REPORT.md", "LESSONS.md"]
 
 # Заморожене: описує стан на свою дату. Рід 26 — перейменування (чи тут
 # переклад) переписує запис, чиїм предметом був стан до нього.

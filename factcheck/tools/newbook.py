@@ -65,7 +65,7 @@ from repo import ROOT  # noqa: E402  (root is found, not counted)
 # What travels. Not a glob: this list is a STATEMENT about what the
 # technology consists of, and `name_lists.py` checks that every name in it
 # is the name of a file that exists.
-TRAVELS = ["METHOD.md"]
+TRAVELS = ["METHOD.md", "LESSONS.md"]
 
 # What does NOT travel, and must be written fresh: everything specific to
 # a book. Until `book.yaml` existed, these two facts lived in the tools —
