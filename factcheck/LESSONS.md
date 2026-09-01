@@ -822,3 +822,350 @@ If everything above were lost but one page survived:
 9. Anything that differs per book is configuration, and configuration
    must be loud when missing.
 10. Read the file. It is the cheapest audit there is.
+
+---
+---
+
+# Part II — The working journal
+
+Everything above is distilled. This part is the raw state: where the work
+stands, what was decided and why, what was abandoned, and what the next
+session should pick up. It is appended rather than merged on purpose —
+merging costs judgement, and losing it costs more.
+
+> **On the name.** This file is called `LESSONS.md`, and the name is
+> narrower than the contents. It is the project's memory: lessons, yes,
+> but also decisions, measurements, abandoned approaches, and the state of
+> play. Read it as a journal. Do not decline to write something here
+> because it is not a "lesson".
+
+---
+
+## 19. Where the work stands
+
+Numbers are the ones measured at the time of writing; every one is
+reproducible by the named command.
+
+### The registry
+
+    claim units                      8331  (8110 claims + 221 code blocks)
+    checked against a source          2385   29.4 %
+    closed as a decision              3780   46.6 %   no external signal
+    still open                        1920   23.7 %
+    self-consistent                     44           counted in neither
+    evidence records                  1393
+    sources in the cache               380 manifest rows, 310 files, 136 MB
+    reproducible from the manifest     ~79 %
+
+    book lines with a card           11948 of 12041   99.2 %
+    structural grounds (headings)       93            named, not dropped
+
+### The migration to English
+
+    files still Ukrainian in the English zone   41   (was 76)
+    transliterated identifiers                 208   (was 227)
+    tools translated                            22   of 53
+
+Zones: `factcheck/tools/` and the three root documents are English,
+because they travel. `tools/` at the repository root is not claimed to
+travel and keeps the book's language. Cards, `book/` registries and the
+book itself are Ukrainian. Letters, archive and snapshots are frozen.
+
+Generated reports are measured by their **frame** — outside fences,
+blockquotes and table rows — because their bodies quote the book, and
+translating a quotation forges it.
+
+### The directory
+
+    factcheck/
+      README.md  METHOD.md  REPORT.md  LESSONS.md
+      tools/          53 fact-check tools
+      cards/          92 files mirroring the book
+      evidence/      201 records
+      reports/        15 generated
+      work/           queues, triage, runs, snapshots
+      archive/        spent work
+      source-cache/   not in git; MANIFEST.md is
+
+Grouped by **how long a thing lives** — permanent, regenerated,
+transient, frozen, external. That is the question you can answer about a
+new file, which is why it is the grouping that survived.
+
+---
+
+## 20. The eight per-book blocks, and why each was extracted
+
+`factcheck/book.yaml` holds everything that differs between books. Every
+entry was found inside a tool, where it would have made that tool
+silently wrong elsewhere. This list is the single most useful thing for
+starting a second book.
+
+| block | what it is | what carrying it inline would have done |
+|---|---|---|
+| `title` | the book's name | the report would name the wrong book |
+| `groups` | the book's own directories | **sixteen copies** across the tools; on another book, everything reads as empty |
+| `signal.broad` / `signal.strict` | what counts as an externally checkable signal | **the entire book swept into one status by default** — the most consequential of all |
+| `split_buckets` | who can close which unit | every unit falls into "nobody"; the split prints a complete, empty division of work |
+| `intake.*` | the book's words for "chapter", "card", "appendix"; unit abbreviations | the gate against citing the book as its own source admits everything |
+| `layer3.*` | a self-declaring editorial title; a number with a unit | the "over-generous status" question stops being asked |
+| `modality.*` | the book's modal verbs | the prescription-versus-permission check silently passes everything |
+| `reachable_sources` | which hosts answer from this container | executors are sent to another book's repositories |
+
+`signal` is **required**; the rest are optional, and an unconfigured
+optional block makes its tool say *"SKIPPED, not passed"* rather than
+report a clean run.
+
+> A thing that differs per book is configuration. Configuration written
+> into tools is not configuration — it is N identical decisions waiting
+> to disagree. And configuration must be loud when missing.
+
+---
+
+## 21. Decisions taken, with their reasons
+
+**Statuses are words, not letters, and not emoji.** Three parallel
+notations existed for one thing and had already drifted. An abbreviation
+is a legend somebody must keep in their head, and beside every letter the
+same word already stood. The migration ran expand → migrate → contract,
+with the word derived from the letter in exactly one place per tool so
+the contraction deleted a line rather than adding a second way to read.
+Every number was identical before and after.
+
+**The root of the fact-check directory holds what a reader needs to
+orient and what travels.** Everything else lives in a directory named
+after what it is. Two earlier shapes failed for the same reason: neither
+told you where a new file goes. A bucket named `data` is a flat root with
+one extra keystroke.
+
+**Nothing is deleted; spent work is archived.** A paired experiment is
+the only reason either of its numbers means anything.
+
+**Frozen records are never renamed or translated.** Letters, archives and
+binding snapshots keep the names things had on their date.
+
+**The cache stays out of version control; the manifest goes in.** The
+manifest is the reproducibility record and weighs kilobytes against
+gigabytes. The rule is enforced by asking version control what it tracks,
+not by reading the ignore file.
+
+**Headings never become units.** A heading names a topic; what it asserts
+is about the book's structure, settled by the table-of-contents review.
+Measured: 850 heading lines, 0 units. Two headings carry a value rather
+than a name and are watched by a standing check.
+
+**What travels is a script, not a sentence.** Provisioning copies the
+technology, then runs the new tree's self-checks and asserts the order
+version carries over — and asserts the copy REFUSES to run unconfigured.
+
+---
+
+## 22. What was tried and abandoned
+
+**Merging every document into one.** A three-thousand-line file is not
+re-read whole, so drift stops being visible instead of stopping. What
+replaced it: a consistency check that compares documents against the
+code.
+
+**Moving content between documents on a cadence.** A discipline, and the
+project's own law says disciplines do not hold. A check holds.
+
+**Deleting spent trial output.** Proposed and rejected: the paired
+experiment's two halves are the only reason either number means
+anything.
+
+**Registering headings as units.** Would create thousands of claims with
+no verb.
+
+**Requiring zero unchecked before release.** Deliberately absent from the
+release gate. The registry decomposes the book into thousands of units,
+among them editorial judgements for which no external source exists.
+Demanding zero would force closing them fictitiously.
+
+**Narrowing a character class "just in case".** Broke two records whose
+paths legitimately contained commas, while curing something already
+cured.
+
+**A verdict of `not_found` that names nothing.** Retired: it costs zero
+and becomes the default answer.
+
+---
+
+## 23. The tools, in one place
+
+Not an inventory — a map of which tool answers which question, because
+that is what a newcomer needs and what a grep does not give.
+
+    factcheck.py    the skeleton: split the book, render cards, status,
+                    staleness, the hand-off order, the release gate
+    layer3.py       does the quote stand in the named source
+    layer1.py       does the card present the book honestly
+    layer1_units.py does the unit come from the book at all
+    coverage.py     is every line of the book accounted for
+    schema.py       the record format and the card contract
+    intake.py       may this evidence enter the registry
+    intake_f.py     was this run of executors valid
+    sample.py       draw a random sample; build an order; digest a wave
+    measure_f.py    how much of the unchecked is actually wrong
+    split_queue.py  who can close which unit
+    sweep_land.py   land what survived into the registry
+    patterns_repair.py  rebuild idle patterns from the unit's text
+    snapshot.py     which units each evidence binds to, by content hash
+    cache.py        fetch a source, record it in the manifest
+    cache_vs_book.py is a file of the book sitting in the source cache
+    docs.py         do the documents agree with the code
+    doc_kind.py     is each document's kind marker true
+    paths.py        does every literal path resolve; do all tools parse
+    name_lists.py   is every name in a list the name of something
+    naming.py       the transliteration ratchet
+    language.py     the language ratchet
+    report.py       assemble REPORT.md from what the tools measured
+    newbook.py      provision another book, and prove the copy runs
+    config.py       what differs per book
+    repo.py         where the repository root is, found not counted
+
+Eight of these refuse to report a clean run on an empty input. Four were
+found in exactly that state during one week.
+
+---
+
+## 24. How a wave actually runs
+
+The economics, because they are not obvious and they decide how much to
+attempt.
+
+    a batch          20 units per executor
+    a wave           10–20 executors, run concurrently
+    cost per batch   40–95k tokens, 25–60 tool calls, 2–5 minutes
+    yield            of 200 units, ~30–55 claimed confirmations,
+                     of which ~half survive layer 3,
+                     of which ~two thirds survive layer 2
+                     -> roughly 25–35 units genuinely closed per 200
+
+That final ratio — **about one unit closed for every six or seven
+attempted** — is the number to plan with. Earlier prose said "about 6 %
+final yield"; the measured figure on a random sample of the unchecked
+queue is closer to 13–17 %, because that queue is richer than the one
+that produced the 6 %.
+
+The steps, in order, none skippable:
+
+1. draw a random sample, seed recorded **in the order**;
+2. generate the order from the spec blocks; note its `order_version`;
+3. take the before-baseline;
+4. run the executors; each writes one YAML dump;
+5. read the dumps — repair broken YAML mechanically, name what was
+   repaired, skip anything that is not a dump;
+6. layer 3 on everything carrying a quote;
+7. **layer 2 by a person** on what survived;
+8. fetch every cited source into the cache and the manifest **before**
+   landing;
+9. land; regenerate; compare against the baseline;
+10. append one row to the run ledger.
+
+Step 7 is the one that cannot be automated and the one most often
+skipped. It rejects about a third.
+
+---
+
+## 25. Working with a second maintainer
+
+The coordination model, stated impersonally because it generalises.
+
+**Letters, dated, in a directory, with a header naming the sender,
+recipient, kind, what it answers, and the commit it was written against.**
+A protocol check enforces the header and tracks whose turn it is. This
+matters more than it sounds: two maintainers on one registry produce
+merge conflicts on every record unless the work is divided by **file**,
+not by unit.
+
+**Divide by reachability, not by topic.** What one maintainer's container
+can fetch and the other's cannot is the only division that both halves
+can act on independently.
+
+**Do not rewrite another maintainer's evidence.** A record is a
+signature. Narrow your own leaking patterns; report theirs.
+
+**When a letter says "waiting for your word", the next thing sent is
+either that word or a new letter saying why you proceeded.** Not work. A
+promise that does not hold is decoration, not a mechanism.
+
+**Both maintainers find the same defect independently, often within an
+hour.** This happened repeatedly. It is not waste — the second finding
+usually has the sharper formulation, and having two is how the
+formulation improves.
+
+---
+
+## 26. What to do next, in order
+
+For whoever picks this up.
+
+**1. Finish the language migration.** 41 files, of which ~31 are tools
+and ~10 are reports that follow from their tools. Translating a tool has
+found something wrong in *every single case*: a stale pattern, a
+hardcoded per-book fact, a silent zero, a copy of somebody else's list.
+Treat it as an audit that happens to leave English behind.
+
+**2. Land the remaining wave survivors and run another wave.** The queue
+is 1715 units and 88 % of them carry a checkable signal. The triage
+strategy measured better; use it.
+
+**3. Retire the "not a claim at all" units.** Roughly an eighth of the
+largest status is not claims — column headings, list lead-ins, rows of
+tables in which the book describes its own registry. There is no verdict
+for this and no tool distinguishes "not checked" from "not a claim". That
+is the cheapest large win available: those units can be retired outright
+rather than researched.
+
+**4. Build the fourth layer: book against book.** Designed, never built.
+Some of the worst errors found were internal contradictions between
+chapters, and nothing looks for them.
+
+**5. Decide what number the book publishes.** Not coverage. What was read
+in full, plus the sampled error rate with its bound. This is a decision,
+not a measurement, and it should be made before the next book starts
+rather than after.
+
+---
+
+## 27. How this project works, as a practice
+
+The habits that produced everything above, worth copying before any of
+the specific findings.
+
+**Measure before claiming, and name the measure.** Every number in this
+file has a command behind it. A claim without one is an impression.
+
+**When a check disagrees with expectation by an order of magnitude, the
+check is broken until proven otherwise.** This rule caught four false
+reports in one week.
+
+**Report the failure with the number, not the intention.** A comment
+reading "this nearly caused an announcement that sixteen per cent of the
+registry was false" is worth more than any amount of care taken
+afterwards.
+
+**Write the reason beside the code, not in a document.** Nearly every
+long comment in these tools is a case history: what was tried, what it
+cost, why the current shape. The documents distil; the code remembers.
+
+**Demonstrate every check against a corrupted input.** A check that has
+never fired is indistinguishable from one that is not there.
+
+**Prefer a mechanism to a rule, and a stated mechanism to a silent one.**
+A prohibition does not restrain an action cheaper than the work. But a
+mechanism nobody knows about does not deter either: what holds is a
+mechanism that is *stated*.
+
+**Say what a measure does not measure.** Silence reads as zero.
+
+**When you are about to substitute across many files, enumerate
+instead.** List every occurrence, judge each. Substitution has broken
+this project more often than any other single action.
+
+**Fix the cause, not the instance.** Repairing data while leaving the
+tool that corrupted it is postponement.
+
+**And the one that recurs most.** Before asking how a claim is known, ask
+what it is about. Before asking whether a check passed, ask whether it
+looked at anything.
