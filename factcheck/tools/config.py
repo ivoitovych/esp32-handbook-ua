@@ -143,6 +143,14 @@ def modality() -> dict | None:
     return d
 
 
+def intake() -> dict:
+    """Language patterns for `intake.py`. Empty dict if not configured."""
+    d = _cfg().get("intake") or {}
+    if not isinstance(d, dict):
+        raise ConfigError(f"{FILE}: `intake` must be a mapping")
+    return d
+
+
 def demo() -> int:
     import tempfile
     ok = True

@@ -41,3 +41,25 @@ modality:
   # The word itself cannot be dropped: both GENUINE cases rest on it too.
   # So constructions are filtered out, not the word.
   not_prescriptive: "має\\s+(?:ціну|бути|стати|сенс|значення|працювати|пережити|вигляд|перевагу|недолік|власн\\w+|свій|свою|своє)"
+
+# Patterns `intake.py` uses to read the book's own prose. Language of the
+# book, not of the technology — on an English book these are different
+# words, and a tool carrying these would pass everything silently.
+#
+# Optional; absent means those particular checks say so and skip.
+intake:
+  # The book named as a source in WORDS rather than by path: "розділ 29",
+  # "картка К13", "додаток F". For `verbatim`/`derived` that is the same
+  # self-citation as a path, and the gate did not see it.
+  book_in_words: "(?:^|[^\\w])(розділ|картка|картку|картки|додаток|вкладка)\\s+[A-ZА-ЯЄІЇ0-9]"
+
+  # An internal check, declared. Legitimate under `self-consistent`.
+  internal_check: "^\\s*ВНУТРІШНЯ ЗВІРКА"
+
+  # A checkable signal in a claim: a number with a unit, an address, a pin.
+  # `no-external-signal` standing on one of these is worth a second look.
+  signal: "\\d+\\s*(?:МГц|кГц|Гц|мА|А|В|мВ|КБ|МБ|ГБ|мс|мкс|с|°C|Ом|кОм|біт|МБіт)|0x[0-9a-fA-F]+|GPIO\\d+"
+
+  # …except in the index, where a "number" is a page list and no external
+  # source exists by nature.
+  index: "покажчик|індекс|z-pokazhchyk|у індексі|T-Z-\\d+"
