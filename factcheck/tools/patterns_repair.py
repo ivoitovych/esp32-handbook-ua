@@ -1,50 +1,52 @@
 #!/usr/bin/env python3
-"""Перебудувати холості взірці з тексту ОДИНИЦІ РЕЄСТРУ.
+"""Rebuild idle patterns from the text of the REGISTRY UNIT.
 
-## Чому холостими вони стають
+## Why they go idle
 
-Взірець пишеться під розмітку книги, а зіставляється з рендером
-реєстру. Для прози це те саме; для комірки таблиці — ні:
+A pattern is written against the book's markup and matched against the
+registry's rendering. For prose these are the same; for a table cell they
+are not:
 
-    книга:   | `0xf` | RTCWDT_BROWN_OUT_RESET | просіло живлення |
-    реєстр:  0xf · Причина → просіло живлення
+    the book:      | `0xf` | RTCWDT_BROWN_OUT_RESET | supply sagged |
+    the registry:  0xf · Cause → supply sagged
 
-Взірець із рисками збігається з книгою й не збігається ні з чим у
-реєстрі. Доказ живий на вигляд і мертвий насправді: він обіцяє
-звіреність, якої немає.
+A pattern with pipes matches the book and matches nothing in the
+registry. The evidence looks alive and is dead: it promises a
+checkedness that does not exist.
 
-Моїх таких 44 знайшов М1 новою половиною `vorota`; ще 16 я зробив сам
-того ж дня, зібравши взірець із НАЗВИ ЗАПИСУ замість тексту одиниці.
-Назва запису — це мій підпис, а не текст книги; збігтися з реєстром
-вона може лише випадково.
+Forty-four such were found by a new half of the release gate; sixteen
+more were made the same day by assembling a pattern from the RECORD'S
+TITLE instead of the unit's text. A record's title is a maintainer's
+signature, not the book's text; it can match the registry only by
+accident.
 
-## Що робить цей скрипт
+## What this script does
 
-Для кожного холостого запису шукає одиницю реєстру, до якої він
-насправді стосується, і будує взірець із її тексту: екранує як текст,
-пробіли робить гнучкими. Кандидата обирає за часткою спільних лексем
-із назвою запису й цитатою, і бере лише тоді, коли перевага одного
-кандидата над наступним переконлива.
+For every idle record it looks for the registry unit it actually concerns
+and builds a pattern from that unit's text: escaped as literal text, with
+flexible spaces. The candidate is chosen by the share of tokens shared
+with the record's title and quote, and taken only when one candidate's
+lead over the next is convincing.
 
-Нічия — не привід відступати, а привід придивитися. З 59 холостих 26
-не мали одного переможця, і в усіх причина була однакова й законна:
-**запис навмисне накриває кілька одиниць**. Один доказ на MAX31855 і
-MAX6675 однаково стосується обох рядків таблиці:
+A tie is not a reason to retreat but a reason to look closer. Of 59 idle
+records, 26 had no single winner, and in every case the reason was the
+same and legitimate: **the record deliberately covers several units.**
+One evidence about two similar parts applies equally to both table rows:
 
-    MAX31855 · Що дає → термопара
-    MAX6675 · Що дає → термопара, дешевший
+    MAX31855 · Gives → thermocouple
+    MAX6675  · Gives → thermocouple, cheaper
 
-Для цього в `zbih` і є альтернативи. Тому при нічиї будується
-альтернація по всіх кандидатах, що йдуть урівень із першим, — не
-вибір навмання, а покриття.
+That is what alternatives in a pattern are for. So on a tie an
+alternation is built across every candidate level with the first — not a
+guess, but coverage.
 
-Чого НЕ робить: не вгадує. Якщо жоден кандидат не дотягує до порога,
-запис лишається холостим і друкується в переліку. Мовчазна прив'язка
-не до тієї одиниці гірша за холостий взірець — холостий видно, а
-хибну прив'язку ні.
+What it does NOT do: guess. If no candidate reaches the threshold, the
+record stays idle and is printed in the list. A silent binding to the
+wrong unit is worse than an idle pattern — an idle one is visible, a
+wrong binding is not.
 
-    factcheck/tools/patterns_repair.py            показати, що зробить
-    factcheck/tools/patterns_repair.py --pysaty   записати
+    factcheck/tools/patterns_repair.py            show what it would do
+    factcheck/tools/patterns_repair.py --pysaty   write it
 """
 from __future__ import annotations
 
@@ -61,7 +63,7 @@ import factcheck  # noqa: E402
 import sample  # noqa: E402
 
 LEKSEMA = re.compile(r"[0-9A-Za-zА-Яа-яЇїІіЄєҐґ_.\-]{3,}")
-POROG = 0.34      # мінімальна частка спільних лексем
+POROG = 0.34      # the minimum share of shared tokens
 KONTROLNI = ("ESP32 має два ядра", "Зовсім інший текст про каву", "12345")
 
 
@@ -70,8 +72,8 @@ def leksemy(s: str) -> set[str]:
 
 
 def slova_vzirtsya(v: str) -> set[str]:
-    """Літеральні слова зі старого взірця, без регулярної машинерії."""
-    t = re.sub(r"\\([|.*+?()\[\]{}^$])", r"\1", v)   # зняти екранування
+    """Literal words from the old pattern, without the regex machinery."""
+    t = re.sub(r"\\([|.*+?()\[\]{}^$])", r"\1", v)   # strip the escaping
     t = re.sub(r"\\s\+|\\s\*|\.\*|\.\+|\[[^\]]*\]|[|()?*+{}^$]", " ", t)
     return leksemy(t)
 
@@ -85,10 +87,11 @@ def main(argv: list[str]) -> int:
     pysaty = "--pysaty" in argv
 
     odynyci = []
-    # Був рядок "ABCDEFG" — власна копія переліку класів, яка вже
-    # не мала `K` і `L` і не дістала б `S`. Саме про це попереджає
-    # коментар при `ALL_CLASSES`: копія переліку — така сама обіцянка
-    # не міняти його, як копія взірця.
+    # There used to be a string "ABCDEFG" here — a private copy of the
+    # status list, which had already lost two statuses and would never
+    # have gained a third. This is what the comment beside `ALL_CLASSES`
+    # warns about: a copy of a list is the same promise not to change it
+    # as a copy of a pattern.
     for klas in factcheck.ALL_CLASSES:
         for o in sample.odynyci(klas):
             odynyci.append((o["tekst"], leksemy(o["tekst"])))
@@ -129,10 +132,10 @@ def main(argv: list[str]) -> int:
                 nezmineno += 1
                 print("   ? %-26s %s" % (prokhid[:26], str(r.get("title"))[:48]))
                 continue
-            # Урівень із першим — усе, що не гірше за 95 % його оцінки.
+            # Level with the first: anything scoring at least 95 % of it.
             urnyven = [t for o, t in ocinky if o >= o1 * 0.95][:4]
             novyy = "|".join(vzirets_z(t) for t in urnyven)
-            # Взірець мусить компілюватися й не збігатися з чужим текстом.
+            # The pattern must compile and must not match foreign text.
             try:
                 rx = re.compile(novyy)
             except re.error:
@@ -141,22 +144,21 @@ def main(argv: list[str]) -> int:
             if all(rx.search(k) for k in KONTROLNI):
                 nezmineno += 1
                 continue
-            # Писати ОБИДВА імені, поки переїзд не скінчено.
+            # Write BOTH names until the migration is over.
             #
-            # Саме тут народилися 15 розходжень `zbih`/`match`: цей
-            # інструмент звужував `zbih` і не чіпав `match`, а в
-            # `match` лишалася теча. Дані я звірив 2026-08-28, але
-            # звірити наслідок і лишити причину — це відкласти, а не
-            # полагодити. Прибрати цей рядок можна лише разом із
-            # прогоном `field_names.py --stysnuty`.
+            # This is where 15 divergences between the two field names
+            # were born: this tool narrowed one and left the other, and a
+            # leak stayed in the one it left. Repairing the data while
+            # leaving the cause is postponement, not a fix. This line may
+            # be removed only together with the contraction run.
             r["zbih"] = r["match"] = novyy
             if len(urnyven) > 1:
-                print("      (альтернація на %d одиниць)" % len(urnyven))
+                print("      (alternation over %d units)" % len(urnyven))
             r["notatka"] = r["note"] = (
                 str(r.get("note", "") or "").strip() +
-                " | Взірець перебудовано з тексту одиниці реєстру "
-                "2026-08-27: попередній писався під розмітку книги "
-                "(риски таблиці) і не чіпав нічого.").strip(" |")
+                " | Pattern rebuilt from the registry unit's text: the "
+                "previous one was written against the book's markup "
+                "(table pipes) and matched nothing.").strip(" |")
             polagodzheno += 1
             tor = True
             print("   ✓ %-26s %s" % (prokhid[:26], str(r.get("title"))[:48]))
@@ -165,8 +167,9 @@ def main(argv: list[str]) -> int:
                 yaml.dump(recs, allow_unicode=True, sort_keys=False,
                           default_flow_style=False, width=100), encoding="utf-8")
 
-    print("\nперебудовано %d; кандидата не видно для %d%s"
-          % (polagodzheno, nezmineno, "" if pysaty else "  (проба, нічого не записано)"))
+    print("\nrebuilt %d; no candidate visible for %d%s"
+          % (polagodzheno, nezmineno,
+             "" if pysaty else "  (dry run, nothing written)"))
     return 0
 
 

@@ -1,42 +1,43 @@
 #!/usr/bin/env python3
-"""Посадка суцільного проходу: зі скрині помічників — у реєстр доказів.
+"""Landing a continuous pass: from an executor's dump into the registry.
 
-## Навіщо окремий крок
+## Why a separate step
 
-Прохід, що лежить у тимчасовій теці, для реєстру **не існує**. Поки
-його не посаджено у `factcheck/evidence/`, жоден інструмент його не
-бачить, `vorota` не боронять, а наступна хвиля пройде ті самі одиниці
-вдруге. Робота без посадки — це робота, якої не було.
+A pass that stays in a temporary directory **does not exist** for the
+registry. Until it is landed in `factcheck/evidence/`, no tool sees it,
+the gates do not defend it, and the next wave walks the same units again.
+Work without landing is work that did not happen.
 
-## Взірець виводиться сам, і це найтонше місце
+## The pattern derives itself, and that is the subtlest part
 
-Схема вимагає `zbih` — вираз, що чіпляє доказ до одиниць. Записані
-закони проєкту тягнуть у різні боки:
+The schema requires a `match` — an expression binding evidence to units.
+The project's written laws pull in opposite directions:
 
-* **широкий взірець небезпечніший за відсутній** — він мовчки позначає
-  «звірено» те, чого ніхто не звіряв;
-* **довгий взірець ламається** від першої ж правки того речення.
+* **a wide pattern is more dangerous than a missing one** — it silently
+  marks as checked what nobody checked;
+* **a long pattern breaks** at the first edit to that sentence.
 
-Ціль між ними одна: **найкоротший префікс, який у всьому реєстрі
-відмітний**. Саме його тут і шукають — нарощуючи по слову, доки
-збігів не лишиться рівно один, і не далі.
+There is one target between them: **the shortest prefix that is unique
+across the whole registry**. That is what is searched for here — grown
+word by word until exactly one match remains, and no further.
 
-Числа з взірця не викидаються: у багатьох одиницях число і є тим,
-що робить її відмітною. Але взірець **обривається до числа**, якщо
-відмітності досягнуто раніше, — а правлять здебільшого саме числа.
+Numbers are not stripped from the pattern: in many units the number is
+what makes them distinctive. But the pattern is **cut before a number**
+if uniqueness was reached earlier — and numbers are what mostly get
+edited.
 
-## Чого посадка НЕ робить
+## What landing does NOT do
 
-Вона садить **лише** те, що пережило третій шар: цитата знайшлася в
-названому документі дослівно. Заявка без такої перевірки сюди не
-потрапляє ніколи — інакше посадка стала б способом узаконити переказ.
+It lands **only** what survived layer 3: the quote was found verbatim in
+the named document. A claim without that check never arrives here —
+otherwise landing would become a way of legitimising a paraphrase.
 
-Другий шар (чи витяг справді підтримує твердження) лишається за
-людиною. Тому кожен посаджений файл має рядок `sposib`, який прямо
-каже: клас `A` тут означає «документ отримано, витяг звірено машинно»,
-а не «супровідник прочитав і згоден».
+Layer 2 — whether the extract genuinely supports the claim — remains with
+a person. So every landed file carries a `method` line saying plainly
+that `verbatim` here means "the document was obtained, the extract was
+machine-checked", not "a maintainer read it and agrees".
 
-    factcheck/tools/sweep_land.py <файл-вижилих> [--pysaty]
+    factcheck/tools/sweep_land.py <survivors-file> [--pysaty]
 """
 from __future__ import annotations
 
@@ -56,49 +57,51 @@ MAX_SLIV = 14
 
 
 def ekranuy(s: str) -> str:
-    """Літерали, але пробіли — гнучкі.
+    """Literals, but spaces stay flexible.
 
-    Реєстр і книга переносять рядки по-різному, тож жорсткий пробіл у
-    взірці — це та сама пастка, що вбила два докази DS18B20.
+    The registry and the book wrap lines differently, so a rigid space in
+    a pattern is the same trap that killed two sensor evidences.
     """
-    # Кожне слово екранується окремо, а склеюються вони вже гнучким
-    # пробілом. Робити навпаки не можна: `re.escape` перетворює пробіл
-    # на `\ `, і заміна по `\s+` з'їдає лише сам пробіл, лишаючи
-    # осиротілу похилу. Перша редакція так і робила — усі 223 взірці
-    # вийшли нечинні й не чіпали **нічого**.
+    # Each word is escaped separately and they are joined by a flexible
+    # space. Doing it the other way round does not work: `re.escape`
+    # turns a space into `\ `, and substituting on `\s+` eats only the
+    # space itself, leaving an orphaned backslash. The first version did
+    # exactly that — all 223 patterns came out invalid and matched
+    # **nothing**.
     return r"\s+".join(re.escape(w) for w in s.split())
 
 
 def vzirets_dlya(tekst: str, vsi: list[str]) -> str | None:
-    """Найкоротший префікс, відмітний у всьому реєстрі."""
+    """The shortest prefix that is unique across the whole registry."""
     slova = tekst.split()
     if len(slova) < MIN_SLIV:
         return None
     for k in range(MIN_SLIV, min(len(slova), MAX_SLIV) + 1):
         vz = ekranuy(" ".join(slova[:k]))
-        # Відмітність перевіряється **пошуком**, а не `startswith`.
-        # Взірець вживають саме пошуком, і префікс однієї одиниці
-        # цілком може стояти посеред іншої: перша редакція міряла
-        # префіксом і випустила п'ять взірців шириною до семи одиниць.
-        # Міряти треба тим способом, яким воно потім працюватиме.
+        # Uniqueness is tested by **search**, not by `startswith`. A
+        # pattern is used by searching, and one unit's prefix may well
+        # stand in the middle of another: the first version measured by
+        # prefix and let through five patterns up to seven units wide.
+        # Measure the way the thing will actually be used.
         r = re.compile(vz)
         if sum(1 for t in vsi if r.search(t)) == 1:
             return vz
     return None
 
 
-# Писач мусить писати **обидва** імені, доки триває переїзд.
+# The writer must write **both** names while a migration is running.
 #
-# Перелік «хто читає старі імена» рахував читачів — і саме тому крок 1
-# виглядав завершеним. Але стиснення тримається не тим, що старі імена
-# прибрано, а тим, що їх **нема кому написати**: після `--stysnuty`
-# перша ж посадка повернула б їх назад, по одному наряду за раз, і
-# `znimok --zvirty` був би зелений того дня й червоний за тиждень.
+# A list of "who reads the old names" counted readers, which is why step
+# one looked finished. But a contraction holds not because the old names
+# were removed but because **nobody is left to write them**: after the
+# contraction the very next landing would have brought them back, one
+# order at a time, and the binding snapshot would have been green that
+# day and red a week later.
 #
-# Знайшов це М2. Рядок нижче прибирається **разом** із прогоном
-# `--stysnuty`, не раніше й не пізніше.
+# The line below is removed **together** with the contraction run,
+# neither earlier nor later.
 def obydva(z: dict) -> dict:
-    """Запис доказу з англійськими іменами поруч зі старими."""
+    """An evidence record carrying the English names beside the old."""
     MAPA = {"nazva": "title", "zbih": "match", "klas": "status",
             "dzherelo": "source", "cytata": "quote", "sposib": "method",
             "notatka": "note", "shukaty": "look_for",
@@ -119,9 +122,10 @@ def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("vyzhyly", type=Path)
     p.add_argument("--pysaty", action="store_true")
-    # Префікс імені файлу. **Обов'язково різний для різної хвилі.**
-    # Без нього друга посадка мовчки переписує файли першої: так
-    # 335 доказів проходу стали 324, і помітив це лише перелік.
+    # The filename prefix. **It must differ between waves.** Without it a
+    # second landing silently overwrites the first one's files: that is
+    # how 335 evidences from a pass became 324, and only a listing
+    # noticed.
     p.add_argument("--prefiks", default="prochid")
     a = p.parse_args()
 
@@ -131,10 +135,10 @@ def main() -> int:
             u["klas"] = klas
             reyestr[u["id"]] = u
     vsi_teksty = [u["tekst"] for u in reyestr.values()]
-    print(f"реєстр: одиниць {len(reyestr)}")
+    print(f"registry: units {len(reyestr)}")
 
     zapysy = yaml.safe_load(a.vyzhyly.read_text(encoding="utf-8")) or []
-    print(f"вижили третій шар: {len(zapysy)}")
+    print(f"survived layer 3: {len(zapysy)}")
 
     posadka: dict[str, list[dict]] = collections.defaultdict(list)
     nema_odynyci = shyrokyy = vzhe_A = 0
@@ -145,9 +149,9 @@ def main() -> int:
             nema_odynyci += 1
             continue
         if u["status"] in ("verbatim", "derived"):
-            # Одиниця вже має первинний доказ. Другий нічого не додає,
-            # зате створює дві правди про одне — і рівно стільки ж
-            # місць, які розійдуться після наступної правки.
+            # The unit already has primary evidence. A second adds
+            # nothing and creates two truths about one thing — and
+            # exactly that many places to diverge at the next edit.
             vzhe_A += 1
             continue
         vz = vzirets_dlya(u["tekst"], vsi_teksty)
@@ -162,42 +166,42 @@ def main() -> int:
             "dzherelo": str(z["source"]).strip(),
             "cytata": str(z["quote"]).strip() + "\n",
             "sposib": (
-                "Суцільний прохід 2026-08-27. Документ отримано в сесії, "
-                "витяг звірено з ним підрядком машинно "
-                "(`factcheck/tools/sweep_digest.py`). Клас `A` тут означає "
-                "«документ отримано, цитата дослівна», а **не** "
-                "«супровідник прочитав і згоден»: змістовий шар "
-                "лишається окремою роботою."),
+                "Continuous pass. The document was obtained in session and "
+                "the extract checked against it as a substring, "
+                "mechanically (`factcheck/tools/sweep_digest.py`). "
+                "`verbatim` here means \"the document was obtained, the "
+                "quote is exact\", NOT \"a maintainer read it and "
+                "agrees\": the semantic layer remains separate work."),
             "notatka": str(z.get("komentar", "")).strip() or "—",
         }))
 
     vsoho = sum(len(v) for v in posadka.values())
-    print(f"придатних до посадки {vsoho} | вже мають A/B {vzhe_A} | "
-          f"одиниці немає в реєстрі {nema_odynyci} | "
-          f"відмітного префікса немає {shyrokyy}")
+    print(f"landable {vsoho} | already primary {vzhe_A} | "
+          f"unit not in the registry {nema_odynyci} | "
+          f"no unique prefix {shyrokyy}")
 
     if not a.pysaty:
-        print("\n(суха проба; `--pysaty` щоб записати)")
+        print("\n(dry run; use `--pysaty` to write)")
         return 0
 
     kudy = ROOT / "factcheck" / "evidence"
     for fayl, zapys in sorted(posadka.items()):
         shlyakh = kudy / f"{a.prefiks}-{fayl}.yaml"
         shapka = (
-            f"# Посадка {a.prefiks} — {fayl}.\n"
+            f"# Landing {a.prefiks} — {fayl}.\n"
             f"#\n"
-            f"# Посаджено `factcheck/tools/sweep_land.py`. Сюди потрапляє лише\n"
-            f"# те, що пережило третій шар: цитата знайшлася в названому\n"
-            f"# документі дослівно. Заявок без такої перевірки тут немає.\n"
+            f"# Landed by `factcheck/tools/sweep_land.py`. Only what\n"
+            f"# survived layer 3 arrives here: the quote was found in the\n"
+            f"# named document verbatim. No unchecked claim is here.\n"
             f"#\n"
-            f"# Взірці виведено механічно — найкоротший префікс, відмітний\n"
-            f"# у всьому реєстрі. Це компроміс між двома законами:\n"
-            f"# широкий взірець бреше, довгий ламається.\n\n")
+            f"# Patterns derived mechanically — the shortest prefix unique\n"
+            f"# across the registry. A compromise between two laws: a wide\n"
+            f"# pattern lies, a long one breaks.\n\n")
         shlyakh.write_text(
             shapka + yaml.safe_dump(zapys, allow_unicode=True,
                                     sort_keys=False, width=88),
             encoding="utf-8")
-    print(f"записано файлів: {len(posadka)} → {kudy}")
+    print(f"files written: {len(posadka)} → {kudy}")
     return 0
 
 
