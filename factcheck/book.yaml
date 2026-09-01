@@ -126,3 +126,11 @@ reachable_sources:
     stub of 15 495 bytes with status 200**. The response is "successful"
     and the document is absent. It does not look like a document —
     `nedosyazhne`.
+
+# Patterns `layer3.py` applies to the BOOK's own prose. Language of the
+# book; on another book these are different words, and a tool carrying
+# these would flag nothing and report a confident zero.
+layer3:
+  self_declared_editorial: авторськ|підсум|рейтинг|спостереж|узагальн|заголов|назви колонок|рамка|порада|редакційн|вибір
+    автора|оцінка|міркуванн|формулюванн|ринков|маршрут|позиція|найдешевш|найдорожч|лідер|найчастіш|найпоширеніш|винуватц|типов[аоиі]\b|звичайн|практик|стандартн
+  number_with_unit: \d+(?:[.,]\d+)?\s*(?:мА|мкА|нА|А\b|мВ|В\b|кВ|Ом|кОм|МОм|Гц|кГц|МГц|ГГц|мс|мкс|нс|с\b|°C|дБм|дБ|мм|см|м\b|Вт|мВт|Гн|мГн|нФ|мкФ|пФ|КБ|МБ|ГБ|біт|байт|%)

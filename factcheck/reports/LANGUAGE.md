@@ -30,7 +30,6 @@ every check was green.
 - `factcheck/reports/BRIEF-LEADS.md` — 84 %
 - `factcheck/reports/TRACES.md` — 82 %
 - `factcheck/reports/BOOK-VS-SOURCES.md` — 77 %
-- `factcheck/tools/layer3.py` — 61 %
 - `factcheck/reports/UNREACHABLE-SOURCES.md` — 61 %
 - `factcheck/tools/factcheck.py` — 60 %
 - `factcheck/tools/sweep_land.py` — 59 %
@@ -65,6 +64,7 @@ every check was green.
 - `factcheck/reports/BRIEF-SAMPLE.md` — 26 %
 - `factcheck/tools/triage.py` — 25 %
 - `factcheck/tools/name_lists.py` — 25 %
+- `factcheck/tools/layer3.py` — 24 %
 - `factcheck/tools/naming.py` — 22 %
 - `factcheck/tools/bind_by_hash.py` — 14 %
 - `factcheck/tools/deslang.py` — 11 %

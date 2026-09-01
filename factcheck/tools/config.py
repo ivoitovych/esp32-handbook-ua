@@ -169,6 +169,14 @@ def split_buckets() -> list[dict]:
     return d
 
 
+def layer3_patterns() -> dict:
+    """Patterns layer 3 applies to the book's prose. Empty if unset."""
+    d = _cfg().get("layer3") or {}
+    if not isinstance(d, dict):
+        raise ConfigError(f"{FILE}: `layer3` must be a mapping")
+    return d
+
+
 def reachable_sources() -> dict:
     """What a helper can reach from this container, for the work order.
 

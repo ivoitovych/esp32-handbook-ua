@@ -18,36 +18,36 @@
 
 Записів доказів: **1366**. Звірено дослівно: **589**. Не знайдено: **60**. Джерело не в кеші: **36**. Нема чого звіряти: **658**.
 
-Станом на 2026-09-01 05:58 UTC.
+Станом на 2026-09-01 06:34 UTC.
 
 
 ## клас E на твердженні з числом — перевірити — 23
 
 | Доказ | Файл | Деталі |
 |---|---|---|
-| Живлення 5 В і виводи 3.3 В на одному модулі — загальна можливість, не вимірюваний факт | `m2-20-levels-and-switches` | клас E, а в назві число з одиницею |
-| Живлення 3.3 В без сприйняття 3.3 В як одиниці — та сама логічна можливість | `m2-20-levels-and-switches` | клас E, а в назві число з одиницею |
-| «USB-роз'єм... стабілізатор... 3.3 В» — топологія плати розробки, не факт із datasheet кристала | `m2-21-power-06` | клас E, а в назві число з одиницею |
-| «Сюди можна подавати 5 В (залежить від стабілізатора на платі)» — явно позначена залежність від конкретної плати | `m2-21-power-06` | клас E, а в назві число з одиницею |
-| Релейний модуль з оптопарою — 5 В і інверсна логіка не паспортні | `m2-22-insert-components` | клас E, а в назві число з одиницею |
-| Конвертер рівнів на польових — призначення 3.3↔5 В | `m2-22-insert-components` | клас E, а в назві число з одиницею |
-| Buck-boost 3.3 В — призначення «автономний пристрій» | `m2-22-insert-components` | клас E, а в назві число з одиницею |
-| Buck-boost і резистори 4.7 кОм — кількість і службова примітка в BOM | `m2-23-projects-60-62` | клас E, а в назві число з одиницею |
-| Модуль реле — коло котушки на окремих 5 В, а не 3V3 (без конкретної мікросхеми) | `m2-23-projects-60-62` | клас E, а в назві число з одиницею |
-| Резистори 220 Ом і 10 кОм модуля реле й поплавка — кількість у BOM | `m2-23-projects-60-62` | клас E, а в назві число з одиницею |
-| Конденсатор 470 мкФ між 3V3 і GND поруч із модулем | `m2-31-card-k13` | клас E, а в назві число з одиницею |
-| Керамічний 100 нФ біля кожної мікросхеми | `m2-31-card-k13` | клас E, а в назві число з одиницею |
-| Живлення 3.3 В напряму, мимо бортовий LDO — коли він слабкий на клоне | `m2-31-card-k13` | клас E, а в назві число з одиницею |
-| Проблема: низька напруга живлення — додати 470 мкФ конденсатор | `m2-45-motors-symptoms` | клас E, а в назві число з одиницею |
-| Wi-Fi відвалюється: подивитися RSSI гірше за −80 дБм | `m2-48-symptoms-29` | клас E, а в назві число з одиницею |
-| T-K12-007: Паяльник повинен мати терморегулятор, потужність 60 Вт, жало «скіс» 2–3 мм | `m2-50-cards` | клас E, а в назві число з одиницею |
-| Конденсатор 100–470 мкФ біля живлення — стабілізація напруги | `m2-65-electronics-05` | клас E, а в назві число з одиницею |
-| MOSFET затвор — резистор 100–220 Ом від GPIO, захист від перегріву | `m2-65-electronics-05` | клас E, а в назві число з одиницею |
-| MOSFET затвор — резистор 10 кОм від затвора до землі, утримання LOW при старті | `m2-65-electronics-05` | клас E, а в назві число з одиницею |
-| T-36-120: SPI діагностика — знизити швидкість до 1 МГц | `m2-92-sample` | клас E, а в назві число з одиницею |
-| T-59-114: 16 КБ з купи замість локального масиву | `m2-94-sample` | клас E, а в назві число з одиницею |
-| T-60-123: Запис на картку займає 400 мс | `m2-94-sample` | клас E, а в назві число з одиницею |
-| Модулі на 8 і 16 МБ флешу коштують істотно дорожче за різницю у ціні | `m2-95-sample` | клас E, а в назві число з одиницею |
+| Живлення 5 В і виводи 3.3 В на одному модулі — загальна можливість, не вимірюваний факт | `m2-20-levels-and-switches` | no-external-signal, yet the title carries a number with a unit |
+| Живлення 3.3 В без сприйняття 3.3 В як одиниці — та сама логічна можливість | `m2-20-levels-and-switches` | no-external-signal, yet the title carries a number with a unit |
+| «USB-роз'єм... стабілізатор... 3.3 В» — топологія плати розробки, не факт із datasheet кристала | `m2-21-power-06` | no-external-signal, yet the title carries a number with a unit |
+| «Сюди можна подавати 5 В (залежить від стабілізатора на платі)» — явно позначена залежність від конкретної плати | `m2-21-power-06` | no-external-signal, yet the title carries a number with a unit |
+| Релейний модуль з оптопарою — 5 В і інверсна логіка не паспортні | `m2-22-insert-components` | no-external-signal, yet the title carries a number with a unit |
+| Конвертер рівнів на польових — призначення 3.3↔5 В | `m2-22-insert-components` | no-external-signal, yet the title carries a number with a unit |
+| Buck-boost 3.3 В — призначення «автономний пристрій» | `m2-22-insert-components` | no-external-signal, yet the title carries a number with a unit |
+| Buck-boost і резистори 4.7 кОм — кількість і службова примітка в BOM | `m2-23-projects-60-62` | no-external-signal, yet the title carries a number with a unit |
+| Модуль реле — коло котушки на окремих 5 В, а не 3V3 (без конкретної мікросхеми) | `m2-23-projects-60-62` | no-external-signal, yet the title carries a number with a unit |
+| Резистори 220 Ом і 10 кОм модуля реле й поплавка — кількість у BOM | `m2-23-projects-60-62` | no-external-signal, yet the title carries a number with a unit |
+| Конденсатор 470 мкФ між 3V3 і GND поруч із модулем | `m2-31-card-k13` | no-external-signal, yet the title carries a number with a unit |
+| Керамічний 100 нФ біля кожної мікросхеми | `m2-31-card-k13` | no-external-signal, yet the title carries a number with a unit |
+| Живлення 3.3 В напряму, мимо бортовий LDO — коли він слабкий на клоне | `m2-31-card-k13` | no-external-signal, yet the title carries a number with a unit |
+| Проблема: низька напруга живлення — додати 470 мкФ конденсатор | `m2-45-motors-symptoms` | no-external-signal, yet the title carries a number with a unit |
+| Wi-Fi відвалюється: подивитися RSSI гірше за −80 дБм | `m2-48-symptoms-29` | no-external-signal, yet the title carries a number with a unit |
+| T-K12-007: Паяльник повинен мати терморегулятор, потужність 60 Вт, жало «скіс» 2–3 мм | `m2-50-cards` | no-external-signal, yet the title carries a number with a unit |
+| Конденсатор 100–470 мкФ біля живлення — стабілізація напруги | `m2-65-electronics-05` | no-external-signal, yet the title carries a number with a unit |
+| MOSFET затвор — резистор 100–220 Ом від GPIO, захист від перегріву | `m2-65-electronics-05` | no-external-signal, yet the title carries a number with a unit |
+| MOSFET затвор — резистор 10 кОм від затвора до землі, утримання LOW при старті | `m2-65-electronics-05` | no-external-signal, yet the title carries a number with a unit |
+| T-36-120: SPI діагностика — знизити швидкість до 1 МГц | `m2-92-sample` | no-external-signal, yet the title carries a number with a unit |
+| T-59-114: 16 КБ з купи замість локального масиву | `m2-94-sample` | no-external-signal, yet the title carries a number with a unit |
+| T-60-123: Запис на картку займає 400 мс | `m2-94-sample` | no-external-signal, yet the title carries a number with a unit |
+| Модулі на 8 і 16 МБ флешу коштують істотно дорожче за різницю у ціні | `m2-95-sample` | no-external-signal, yet the title carries a number with a unit |
 
 ## **не знайдено** — 60
 

@@ -1,54 +1,60 @@
 #!/usr/bin/env python3
-"""Третій шар: чи справді цитата стоїть у названому джерелі.
+"""Layer 3: does the quote actually stand in the named source.
 
-## Навіщо цей шар окремо
+## Why this layer is separate
 
-Фактчекінг має три різні відмови, і жодна з них не ловить дві інші.
+Fact-checking has three distinct failures, and none of them catches the
+other two.
 
-    1. книга → запис     твердження існує, запису на нього немає
-    2. цитата → твердження   цитата справжня, але доводить не те
-    3. джерело → цитата   цитати в джерелі немає взагалі
+    1. book -> record       the claim exists, no record covers it
+    2. quote -> claim       the quote is genuine but proves something else
+    3. source -> quote      the quote is not in the source at all
 
-Перші два шари вимагають розуміння: перший — чи охоплено все, другий —
-чи підпирає цей уривок саме це твердження. Третій не вимагає нічого,
-крім `curl` і пошуку підрядка, — і саме тому має бути **скриптом**.
+The first two require understanding: the first, whether everything is
+covered; the second, whether this extract supports this particular claim.
+The third requires nothing but `curl` and a substring search — and that is
+exactly why it must be **a script**.
 
-Вигода не в тому, що скрипт дешевший. Вона в тому, що модель, яка
-збирає докази, більше не мусить бути сильною. Слабка модель помиляється
-передбачувано: переказує замість цитувати, зшиває два речення в одне,
-переставляє слова, вигадує правдоподібне. **Кожну з цих відмов третій
-шар ловить механічно.** Тож збирання можна віддати найдешевшій моделі,
-а дорогу увагу лишити другому шарові, де вона незамінна.
+The gain is not that a script is cheaper. It is that the model gathering
+the evidence no longer has to be strong. A weak model fails predictably:
+it paraphrases instead of quoting, stitches two sentences into one,
+reorders words, invents the plausible. **Layer 3 catches every one of
+those mechanically.** So the gathering can go to the cheapest model, and
+expensive attention can stay with layer 2, where it cannot be replaced.
 
-## Що саме перевіряється
+## What exactly is checked
 
-З поля `cytata` беруться **придатні уривки**: рядки без кирилиці (наші
-власні примітки — кирилицею), без багатокрапки (там вирізано текст) і
-довші за `MIN_DOVZHYNA`. Сусідні такі рядки зливаються в абзац, бо ми
-переносимо довгі рядки джерела при записі, а джерело їх не переносить.
+From the `quote` field the **usable extracts** are taken: lines with no
+Cyrillic (our own notes are in Cyrillic), with no ellipsis (text was cut
+there), and longer than `MIN_DOVZHYNA`. Adjacent such lines are merged
+into a paragraph, because we wrap long source lines when recording them
+and the source does not.
 
-Далі і абзац, і текст джерела зводяться до одного пробілу між словами —
-після цього залишається звичайний пошук підрядка.
+Then both the paragraph and the source text are reduced to single spaces
+between words — after which an ordinary substring search is all that
+remains.
 
-## Чого цей шар **не** каже
+## What this layer does **not** say
 
-Він не каже, що доказ правильний. Цитата може бути дослівною й не
-стосуватися твердження — це другий шар, і його робить людина.
+It does not say the evidence is correct. A quote may be verbatim and have
+nothing to do with the claim — that is layer 2, and a person does it.
 
-Він не каже, що джерело авторитетне. `raw.githubusercontent.com` віддає
-будь-чий репозиторій.
+It does not say the source is authoritative. `raw.githubusercontent.com`
+serves anybody's repository.
 
-Він каже рівно одне: **цей текст справді стоїть за цією адресою.**
+It says exactly one thing: **this text really does stand at this
+address.**
 
-    factcheck/tools/layer3.py            перевірити все, що є в кеші
-    factcheck/tools/layer3.py --kachaty  спершу докачати те, чого бракує
-    factcheck/tools/layer3.py --zvit     згенерувати factcheck/reports/QUOTES.md
-    factcheck/tools/layer3.py --suvoro   недосяжне джерело теж помилка
-    factcheck/tools/layer3.py <файл.yaml>  перевірити вивантаження помічника
+    factcheck/tools/layer3.py            check everything in the cache
+    factcheck/tools/layer3.py --kachaty  download what is missing first
+    factcheck/tools/layer3.py --zvit     write factcheck/reports/QUOTES.md
+    factcheck/tools/layer3.py --suvoro   an unreachable source is an error too
+    factcheck/tools/layer3.py <file.yaml>  check a helper's dump
 
-Останнє — головне для роботи з пулом. Помічник кладе зібране у
-власний файл, цей скрипт його звіряє, і лише те, що пройшло, розглядає
-супровідник. Чуже слово не потрапляє в реєстр неперевіреним ніколи.
+The last is the important one for working with a pool. A helper puts what
+it gathered in its own file, this script checks it, and only what passes
+is looked at by a maintainer. Somebody else's word never enters the
+registry unchecked.
 """
 from __future__ import annotations
 
@@ -72,9 +78,9 @@ ZVIT = ROOT / "factcheck" / "reports" / "QUOTES.md"
 
 MIN_DOVZHYNA = 12
 
-# Розширення, які читаються як текст без перетворення. PDF потребує
-# `pdftotext`; якщо його немає, файл оголошується неперевірним — і це
-# чесніший стан, ніж мовчазний пропуск.
+# Extensions read as text without conversion. A PDF needs `pdftotext`;
+# if that is absent the file is declared uncheckable — an honester state
+# than a silent skip.
 TEKSTOVI = {".rst", ".h", ".c", ".cpp", ".py", ".inc", ".csv", ".md",
             ".txt", ".yaml", ".yml", ".json", ".kconfig", ".projbuild",
             ".cmake", ".ld", ".s", ".in", ""}
@@ -82,48 +88,47 @@ TEKSTOVI = {".rst", ".h", ".c", ".cpp", ".py", ".inc", ".csv", ".md",
 RE_URL = re.compile(r"https?://[^\s,;)\"'<>]+")
 RE_KYRYLYCYA = re.compile(r"[а-яїієґА-ЯЇІЄҐ]")
 RE_PROPUSK = re.compile(r"…|\.\.\.")
-# Рядок, що цілком узятий у дужки, — наша позначка, звідки уривок:
-# `(esp32c3.inc)`, `(i2c_master.c:1049)`, `(basic-commands.rst)`. Вона
-# не лише не є частиною джерела — вона ще й **склеювала** б сусідні
-# рядки в один абзац, і тоді не знаходився б жоден.
+# A line wholly in parentheses is our own marker of where an extract
+# came from: `(esp32c3.inc)`, `(i2c_master.c:1049)`. It is not part of
+# the source — and worse, it would **glue** adjacent lines into one
+# paragraph, after which none of them would be found.
 RE_POZNACHKA = re.compile(r"^\([^()]*\)$")
-# Назва, що сама себе оголошує редакційною. Перша редакція перевірки
-# спрацювала на 46 записах, і майже всі виявилися чесним `E`: «авторський
-# підсумок», «рейтинг причин», «заголовок таблиці». Супровідник у назві
-# **уже сказав**, що це судження, а не факт про світ — і тригер, який
-# цього не читає, перетворює корисне питання на шум.
-RE_SAM_KAZHE_E = re.compile(
-    r"авторськ|підсум|рейтинг|спостереж|узагальн|заголов|назви колонок|"
-    r"рамка|порада|редакційн|вибір автора|оцінка|міркуванн|формулюванн|"
-    r"ринков|маршрут|позиція|"
-    # Друге звуження, куплене поштучним розбором М2: з 36 кандидатів
-    # справжніх виявилося **дві**. Решта — твердження, у яких число
-    # присутнє, але **не є предметом**:
-    #
-    #     «5 В на GPIO. Абсолютний лідер.»       предмет — лідер
-    #     «470 мкФ — найдешевше рішення»         предмет — найдешевше
-    #     «Часті винуватці 5 В»                  це заголовок стовпця
-    #
-    # Я пропонував замінити всі 36 механічно, прочитавши колонку причин
-    # замість самих записів. М2 подивилися поштучно й показали, що це
-    # була б помилка. Тригер, який лишається на 35 після того, як усе
-    # справжнє закрито, перестають читати — і тоді він не ловить нічого.
-    r"найдешевш|найдорожч|лідер|найчастіш|найпоширеніш|"
-    r"винуватц|типов[аоиі]\b|звичайн|практик|стандартн", re.I)
-
-# Число з одиницею виміру: те, для чого джерело майже завжди існує.
-RE_CHYSLO_Z_ODYNYCEYU = re.compile(
-    r"\d+(?:[.,]\d+)?\s*(?:мА|мкА|нА|А\b|мВ|В\b|кВ|Ом|кОм|МОм|Гц|кГц|МГц|"
-    r"ГГц|мс|мкс|нс|с\b|°C|дБм|дБ|мм|см|м\b|Вт|мВт|Гн|мГн|нФ|мкФ|пФ|"
-    r"КБ|МБ|ГБ|біт|байт|%)")
+# A title that declares itself editorial, and a number with a unit —
+# both are patterns over the BOOK's prose, so they live in
+# `factcheck/book.yaml`. Carried inline they would flag nothing on a book
+# in another language and report a confident zero.
+#
+# The first version of the editorial check fired on 46 records and nearly
+# all were honest verdicts: "the author's summary", "a ranking of
+# causes", "a table heading". The maintainer had **already said** in the
+# title that this was a judgement rather than a fact about the world, and
+# a trigger that does not read that turns a useful question into noise.
+#
+# The second narrowing was bought by M2 examining candidates one by one:
+# of 36, exactly **two** were real. The rest were claims in which a number
+# is present but **is not the subject**:
+#
+#     "5 V on a GPIO. The outright leader."   the subject is the leader
+#     "470 µF — the cheapest solution"        the subject is cheapest
+#     "Frequent culprits, 5 V"                this is a column heading
+#
+# I proposed replacing all 36 mechanically, having read the reasons column
+# instead of the records. M2 looked at them individually and showed that
+# would have been wrong. A trigger that still shows 35 after everything
+# real is closed stops being read — and then it catches nothing.
+_l3 = config.layer3_patterns()
+RE_SAM_KAZHE_E = (re.compile(_l3["self_declared_editorial"], re.I)
+                  if _l3.get("self_declared_editorial") else None)
+RE_CHYSLO_Z_ODYNYCEYU = (re.compile(_l3["number_with_unit"])
+                         if _l3.get("number_with_unit") else None)
 
 
 def rozgornuty(url: str) -> list[str]:
-    """Розгорнути `{a,b,c}` у URL на окремі адреси.
+    """Expand `{a,b,c}` in a URL into separate addresses.
 
-    Так записано десяток доказів, де одне твердження звірене по трьох
-    сімействах одразу: `.../gpio/{esp32,esp32s3,esp32c3}.inc`. Форма
-    зручна для читача й непридатна для `curl`.
+    A dozen evidences are written that way, where one claim is checked
+    against three families at once: `.../gpio/{esp32,esp32s3,esp32c3}.inc`.
+    The form is convenient for a reader and unusable by `curl`.
     """
     m = re.search(r"\{([^{}]*)\}", url)
     if not m:
@@ -138,11 +143,11 @@ _IMENA_Z_MANIFESTU: dict[str, str] | None = None
 
 
 def _z_manifestu() -> dict[str, str]:
-    """URL → ім'я файлу, як його **записав маніфест**.
+    """URL -> file name, as **the manifest recorded it**.
 
-    Маніфест — єдине, що входить у git (самі файли ні: копірайт). Він
-    записує ім'я кожного файлу разом із URL, тобто відповідь на це
-    питання вже існує.
+    The manifest is the only part that enters git (the files do not:
+    copyright). It records each file's name together with its URL — that
+    is, the answer to this question already exists.
     """
     global _IMENA_Z_MANIFESTU
     if _IMENA_Z_MANIFESTU is not None:
@@ -158,25 +163,25 @@ def _z_manifestu() -> dict[str, str]:
             r"<([^>]+)> \|$", m.read_text(encoding="utf-8"), re.M):
         usi.setdefault(r.group(2), []).append(r.group(1))
 
-    # **Один URL часто має в маніфесті два рядки** — старе покоління
-    # імені й нове, бо перейменування дописувало рядок, а не міняло
-    # його. Виміряно: 357 рядків на 276 URL, тобто 78 URL мають по два
-    # імені, і в контейнері існує рівно одне з них — те, під яким файл
-    # качали тут.
+    # **One URL often has two manifest rows** — the old generation
+    # name and the new one, because a rename appended a row rather than
+    # changing it. Measured: 357 rows for 276 URLs — 78 URLs have two
+    # names, and exactly one of them exists in this container: the one the
+    # file was downloaded under here.
     #
-    # Тому «перший рядок» — хибне правило: рядки впорядковані за
-    # іменем, а не за дійсністю, і перший часто вказує на файл, якого в
-    # цьому контейнері немає. Питання, на яке треба відповісти, не «яке
-    # ім'я записане», а «під яким іменем файл лежить **тут**».
+    # So "the first row" is a wrong rule: rows are ordered by name, not by
+    # reality, and the first often points at a file this container does
+    # not have. The question to answer is not "which name was recorded"
+    # but "under which name does the file lie **here**".
     for url, imena in usi.items():
         ye = [i for i in imena if (KESH / i).exists()]
         if ye:
             _IMENA_Z_MANIFESTU[url] = ye[0]
         else:
-            # Файлу немає ні під яким іменем — беремо виведене, якщо
-            # воно серед записаних, інакше перше. Різниці для звірки
-            # немає (обидва не відкриються), але звіт назве те ім'я,
-            # яке дало б сьогоднішнє правило.
+            # The file exists under no name — take the derived one if
+            # it is among those recorded, otherwise the first. It makes
+            # no difference to the check (neither will open), but the
+            # report will name the one today's rule would produce.
             vyved = vyvesty_imya(url)
             _IMENA_Z_MANIFESTU[url] = (vyved if vyved in imena
                                        else sorted(imena)[0])
@@ -184,35 +189,36 @@ def _z_manifestu() -> dict[str, str]:
 
 
 def vyvesty_imya(url: str) -> str:
-    """Ім'я з URL — правило поточного покоління."""
+    """A name derived from a URL — the current generation's rule."""
     baza = re.sub(r"[^\w.-]", "_", url.rsplit("/", 1)[-1] or "bez-imeni")
     return f"{hashlib.sha256(url.encode()).hexdigest()[:8]}-{baza}"[:96]
 
 
 def imya_dlya(url: str) -> str:
-    """Ім'я файлу в кеші: спершу **маніфест**, і лише потім виведення.
+    """A file name in the cache: **the manifest** first, derivation second.
 
-    Базове ім'я збігається надто часто — у дереві ESP-IDF десятки файлів
-    `esp32.inc` і сотні `*.h`. Тому виведене ім'я несе короткий хеш
-    повного URL: ім'я лишається читним, а зіткнення зникають.
+    A base name collides far too often — an ESP-IDF tree holds dozens of
+    `esp32.inc` and hundreds of `*.h`. So a derived name carries a short
+    hash of the full URL: the name stays readable and collisions vanish.
 
-    ## Чому виведення тут друге, а не єдине
+    ## Why derivation is second here, not sole
 
-    Правило іменування вже мінялося раз, і 54 файли лишилися під старим
-    поколінням. Шар 3 їх не відкривав: він виводив нове ім'я, файл під
-    ним не існував, і доказ ставав «джерело не в кеші» — мовчки, у
-    вигляді, не відрізнюваному від справжньої недосяжності. М2
-    перейшли на це чотири рази за годину, перейменовуючи файли руками
-    зі звіркою sha256.
+    The naming rule has already changed once, and 54 files stayed under
+    the old generation. Layer 3 did not open them: it derived the new
+    name, no file existed under it, and the evidence became "source not in
+    the cache" — silently, in a form indistinguishable from genuine
+    unreachability. M2 stepped on this four times in an hour, renaming
+    files by hand with sha256 checks.
 
-    Перейменування закриває сьогоднішній біль і лишає рід. Рід ось
-    який: **ім'я виводиться з URL, хоча маніфест його вже записав** —
-    два джерела істини для одного факту, рівно те, що ми впіймали в
-    подвійних іменах полів. Тому маніфест головний, а виведення —
-    запасне, для URL, якого в маніфесті ще немає.
+    Renaming closes today's pain and leaves the kind in place. The kind
+    is this: **the name is derived from the URL although the manifest has
+    already recorded it** — two sources of truth for one fact, exactly
+    what we caught in
+    doubled field names. So the manifest is primary and derivation is the
+    fallback, for a URL the manifest does not yet carry.
 
-    > Виводити те, що вже записано, — значить обіцяти, що правило
-    > виведення ніколи не зміниться. Воно вже змінилося.
+    > Deriving what has already been recorded is a promise that the
+    > derivation rule will never change. It has already changed.
     """
     z_manifestu = _z_manifestu().get(url)
     if z_manifestu:
@@ -232,10 +238,10 @@ DOPUSK_RYADKA = 3.0
 
 
 def ryadky_z_koordynat(storinka) -> list[str]:
-    """Відновити рядки таблиці з координат слів.
+    """Reconstruct table rows from word coordinates.
 
-    `pdftotext` (і звичайне витягання pymupdf) віддають **порядок
-    читання**, у якому кожна комірка стовпця стоїть окремим рядком:
+    `pdftotext` (and pymupdf's ordinary extraction) return **reading
+    order**, in which each cell of a column stands on its own line:
 
         Thermometer
         tERR
@@ -243,18 +249,18 @@ def ryadky_z_koordynat(storinka) -> list[str]:
         ±2
         °C
 
-    Суцільного рядка «Thermometer tERR -55°C to +125°C ±2 °C» у такому
-    тексті немає й бути не може, хоч у документі це один рядок таблиці.
-    Саме через це М2 дістав 27 хибних тривог із 45, і саме через це
-    з'явилася позначка «звірено очима».
+    A contiguous line "Thermometer tERR -55°C to +125°C ±2 °C" does not
+    and cannot exist in such text, although in the document it is one
+    table row. That is exactly why M2 got 27 false alarms out of 45, and
+    exactly why the "checked by eye" mark came into being.
 
-    Тут слова беруться з координатами й **групуються за базовою
-    лінією**: усе, що лежить у межах `DOPUSK_RYADKA` пунктів по
-    вертикалі, — один рядок; усередині рядка сортуємо зліва направо.
+    Here words are taken with their coordinates and **grouped by
+    baseline**: everything within `DOPUSK_RYADKA` points vertically is one
+    row, and within a row they are sorted left to right.
 
-    Лишається один випадок, який так не збирається: комірка, розбита на
-    два візуальні рядки («Thermometer» над «Error»). Для нього далі є
-    запасний хід із лексемами.
+    One case still will not assemble this way: a cell split across two
+    visual lines ("Thermometer" above "Error"). For that there is the
+    token fallback further down.
     """
     slova = storinka.get_text("words")
     if not slova:
@@ -279,15 +285,16 @@ def ryadky_z_koordynat(storinka) -> list[str]:
 
 
 def tekst_pdf(p: Path) -> str | None:
-    """Текст PDF у **двох виглядах одразу**.
+    """A PDF's text in **two views at once**.
 
-    Порядок читання й відновлені за координатами рядки таблиць
-    склеюються в один рядок пошуку. Цитата, взята з абзацу, знайдеться
-    в першому; цитата, взята з рядка таблиці, — у другому.
+    Reading order and the coordinate-reconstructed table rows are joined
+    into one search string. A quote taken from a paragraph is found in the
+    first; a quote taken from a table row, in the second.
 
-    Це і є заміна позначці «звірено очима» для типового випадку: не
-    послаблення перевірки, а **краще витягання**. Послаблення (лексеми
-    у вікні) лишається тільки для комірок, розбитих на два рядки.
+    This is what replaces the "checked by eye" mark in the ordinary case:
+    not a weakening of the check but **better extraction**. The weakening
+    (tokens within a window) remains only for cells split across two
+    lines.
     """
     try:
         import pymupdf
@@ -308,16 +315,16 @@ def tekst_pdf(p: Path) -> str | None:
 
 
 def tekst_dzherela(p: Path) -> str | None:
-    """Текст файлу — за **вмістом**, а не за розширенням.
+    """A file's text — by **content**, not by extension.
 
-    Перша редакція мала перелік дозволених розширень, і він одразу
-    відстав: `library.properties` кожної бібліотеки Arduino — звичайний
-    текст, але в переліку його не було, і шар 3 оголошував такий файл
-    нечитним. Тобто ціла категорія джерел випадала мовчки.
+    The first version had a list of permitted extensions, and it fell
+    behind immediately: every Arduino library's `library.properties` is
+    ordinary text, but it was not in the list, and layer 3 declared such a
+    file unreadable. A whole category of sources dropped out silently.
 
-    Переліки розширень відстають завжди. Тому питаємо файл: якщо він
-    декодується як UTF-8 і в ньому майже немає керівних байтів — це
-    текст, хай як він називається.
+    Lists of extensions always fall behind. So we ask the file: if it
+    decodes as UTF-8 and holds almost no control bytes, it is text,
+    whatever it is called.
     """
     if p.suffix.lower() == ".pdf":
         return tekst_pdf(p)
@@ -339,9 +346,10 @@ def tekst_dzherela(p: Path) -> str | None:
     return tekst
 
 
-# Поле `dzherelo`, у якому стоїть не документ, а **міркування**. Знахідка
-# М2 від 19:40Z, і найдорожча з усіх: помічник на Haiku, не знайшовши
-# документа, не пише клас `C` — він **вигадує правдоподібну назву
+# A source field holding not a document but **an argument**. M2's finding
+# at 19:40Z, and the most expensive of all: a Haiku helper that fails to
+# find a document does not write `named-unreachable` — it **invents a
+# plausible name
 # джерела**. «Властивості логіки CMOS», «фундаментальне правило
 # електроніки», «типова побудова модульних плат».
 #
@@ -399,7 +407,7 @@ def dzherelo_vseredyni(z: dict) -> bool:
 
 
 def dzherelo_rozvyazne(z: dict) -> bool:
-    """Чи в полі `dzherelo` названо документ, а не властивість світу."""
+    """Does the source field name a document rather than a property of the world."""
     d = str(z.get("source") or "")
     return bool(RE_ADRESA.search(d)
                 or RE_ID_DOKUMENTA.search(d)
@@ -407,11 +415,11 @@ def dzherelo_rozvyazne(z: dict) -> bool:
                 or dzherelo_vseredyni(z))
 
 
-# Сторінка-заглушка, віддана з кодом 200. Знахідка М2: `semtech.com`
-# віддає HTML рівно того самого розміру на **будь-яку** адресу в
-# `/uploads/documents/`, і `curl --fail` завершується успішно. Без цієї
-# перевірки заглушка лягає в кеш як документ, а клас `A` ставиться за
-# те, чого ніхто не бачив.
+# A stub page served with status 200. M2's finding: `semtech.com`
+# returns HTML of exactly the same size for **any** address under
+# `/uploads/documents/`, and `curl --fail` exits successfully. Without
+# this check the stub lands in the cache as a document, and `verbatim` is
+# assigned for something nobody has seen.
 def pidmineno_zaglushkoyu(p: Path) -> bool:
     if p.suffix.lower() != ".pdf":
         return False
@@ -423,29 +431,32 @@ def pidmineno_zaglushkoyu(p: Path) -> bool:
     return not pochatok.startswith(b"%PDF")
 
 
-# М'який перенос і ліґатури, які PDF лишає в тексті. Це не зміст, а
-# сміття витягання: у документі їх не видно, у витягнутому тексті вони
-# розривають слово посеред цитати. Тире різних видів зводимо до одного —
-# `‑` (non-breaking hyphen) у datasheet трапляється замість `-`.
+# Soft hyphens and ligatures a PDF leaves in the text. Not content but
+# extraction debris: invisible in the document, and in the extracted text
+# they split a word in the middle of a quote. Dashes of various kinds are
+# reduced to one — `‑` (non-breaking hyphen) appears in datasheets in
+# place of `-`.
 PEREKLAD_SMITTYA = {
-    "\u00ad": "",      # м'який перенос
-    "\u200b": "",      # нульової ширини пробіл
-    "\ufeff": "",      # BOM усередині
-    "\u2011": "-",     # нерозривний дефіс
-    "\ufb01": "fi", "\ufb02": "fl",   # ліґатури
+    "\u00ad": "",      # soft hyphen
+    "\u200b": "",      # zero-width space
+    "\ufeff": "",      # BOM inside the text
+    "\u2011": "-",     # non-breaking hyphen
+    "\ufb01": "fi", "\ufb02": "fl",   # ligatures
 }
 
 
 def plaskyy(s: str) -> str:
-    """Один пробіл між словами; сміття витягання прибрано.
+    """One space between words; extraction debris removed.
 
-    Свідомо **не** чіпаємо ні регістр, ні лапки, ні змістовні тире.
-    Цитата, яка збігається лише після приведення регістру, — це вже
-    переказ, і хай вона падає: доказ мусить бути дослівним.
+    Case, quotation marks and meaningful dashes are deliberately **not**
+    touched.
+    A quote that matches only after case folding is already a paraphrase,
+    and let it fail: evidence must be verbatim.
 
-    А от м'який перенос і ліґатури змісту не несуть: їх у документі не
-    видно, і жодна людина не могла б їх «процитувати неправильно».
-    Прибирати їх — не послаблення, а виправлення витягання.
+    Soft hyphens and ligatures, on the other hand, carry no meaning: they
+    are invisible in the document, and no human could have "quoted them
+    wrongly". Removing them is not a loosening but a correction of the
+    extraction.
     """
     for shcho, na in PEREKLAD_SMITTYA.items():
         s = s.replace(shcho, na)
@@ -453,31 +464,32 @@ def plaskyy(s: str) -> str:
 
 
 def uryvky(cytata: str, vlasna_mova: bool = False) -> list[list[str]]:
-    """Придатні до перевірки групи рядків цитати.
+    """The groups of quote lines that can be checked.
 
-    Відкидаємо: наші примітки (кирилиця), місця з вирізаним текстом
-    (багатокрапка), позначки джерела в дужках і надто короткі рядки,
-    які збіглися б із чим завгодно.
+    Discarded: our own notes (Cyrillic), places where text was cut (an
+    ellipsis), source markers in parentheses, and lines too short to
+    distinguish anything.
 
-    Повертаємо **групи рядків**, а не злитий текст, бо перевіряти
-    доводиться двома способами (див. `znayty`).
+    Returns **groups of lines** rather than joined text, because the
+    check has to be made two ways (see `znayty`).
 
-    ## `vlasna_mova` — і чому без нього клас `S` був би порожній
+    ## `vlasna_mova`, and why without it `self-consistent` would be empty
 
-    Правило «кирилиця — це наша примітка, а не цитата» правильне рівно
-    доти, доки джерело англійське. Для класу `S` джерелом є **книга**,
-    і тоді кожен справжній уривок кирилицею.
+    The rule "Cyrillic is our note, not a quote" is right exactly as long
+    as the source is English. For `self-consistent` the source is **the
+    book**, and then every genuine extract is Cyrillic.
 
-    Виміряно на 21 записі внутрішньої звірки: без цього прапорця
-    придатних уривків не мали **15 із 21**, і шар 3 сказав би про них
-    «нема чого звіряти» — тобто клас, заведений щоб зафіксувати
-    зроблену звірку, звітував би, що звіряти нічого.
+    Measured on the 21 internal-check records: without this flag **15 of
+    21** had no usable extract, and layer 3 would have said of them "there
+    is nothing to check" — that is, a status introduced to record a check
+    that WAS made would have reported that there was nothing to check.
 
-    > Фільтр, слушний для одного корпусу, застосований до іншого,
-    > викидає все — і мовчить тим самим словом, яким каже «чисто».
+    > A filter that is right for one corpus, applied to another, discards
+    > everything — and stays silent with the same word it uses for
+    > "clean".
 
-    Решта відсіву лишається чинною: багатокрапка й тут означає
-    вирізаний текст, а короткий рядок і тут збіжиться з чим завгодно.
+    The rest of the filtering stands: an ellipsis still means text was
+    cut, and a short line still matches anything.
     """
     grupy: list[list[str]] = [[]]
     for ryadok in cytata.splitlines():
@@ -501,28 +513,32 @@ RE_LEKSEMA = re.compile(r"[\w.°±×/+-]{2,}")
 
 
 def u_tablyci(ryadok: str, tekst: str) -> bool:
-    """Чи є рядок **читанням таблиці**, розкиданої по документу.
+    """Is this line a **reading of a table** scattered across a document.
 
-    Узято з `factcheck/tools/layer3_m2_legacy.py`, функція `znayty_ryadok`
-    (М2, знахідка 19:40Z). Проста перевірка підрядком дала їм **27
-    хибних тривог із 45**, і жодна не була провиною цитати.
+    Taken from `factcheck/tools/layer3_m2_legacy.py`, function
+    `znayty_ryadok` (M2's finding at 19:40Z). A plain substring check gave
+    them **27 false alarms out of 45**, and not one was the quote's
+    fault.
 
-    Причина: `pdftotext` розкладає стовпці так, що назва параметра,
-    умова й значення опиняються на різних рядках. У datasheet DS18B20:
+    The cause: `pdftotext` lays columns out so that the parameter name,
+    the condition and the value end up on different lines. In the DS18B20
+    datasheet:
 
         tERR                                    °C      3
       Error        -55°C to +125°C              ±2
 
-    Рядка «Thermometer Error tERR -55°C to +125°C ±2 °C» у документі
-    немає й бути не може, хоч цитата точна.
+    The line "Thermometer Error tERR -55°C to +125°C ±2 °C" does not and
+    cannot exist in the document, although the quote is exact.
 
-    Тому: всі змістовні лексеми мусять бути в документі **і лежати
-    компактно**. Це свідоме послаблення — ловить вигадану цитату
-    (лексем не буде взагалі), не ловить перестановку слів у межах
-    таблиці, де перестановка змісту не міняє.
+    So: every meaningful token must be in the document **and lie
+    compactly**. This is a deliberate loosening — it catches an invented
+    quote (the tokens will not be there at all) and does not catch a
+    reordering of words within a table, where reordering changes no
+    meaning.
 
-    Вживається **лише як запасний хід** і лише для PDF: для коду й RST
-    порядок слів значущий, і послаблювати його там нема причин.
+    Used **only as a fallback**, and only for PDFs: in code and RST the
+    order of words is significant, and there is no reason to loosen it
+    there.
     """
     leksemy = RE_LEKSEMA.findall(ryadok)
     if len(leksemy) < 3:
@@ -663,17 +679,17 @@ RE_SHLYAKH_KNYHY = re.compile(
 
 
 def knyzhkovi_dzherela(z: dict) -> list[Path]:
-    """Файли **книги**, названі в джерелі запису класу `S`.
+    """Files **of the book** named in a `self-consistent` record's source.
 
-    `S` — внутрішня звірка: твердження доводиться не зовнішнім
-    документом, а іншим місцем цієї ж книги. Такий доказ нічого не
-    каже про світ, зате каже щось перевірне про книгу — що вона
-    сходиться сама з собою.
+    `self-consistent` is an internal check: the claim is proved not by an
+    external document but by another place in this same book. Such
+    evidence says nothing about the world, but it does say something
+    checkable about the book — that it agrees with itself.
 
-    Тому він **мусить** проходити третій шар, як і всі інші, просто
-    корпусом йому є книга, а не кеш джерел. Інакше `S` був би ярликом,
-    що стверджує звірку, якої ніхто не робить, — рід 24 у `DEFECTS.md`,
-    записаний того самого дня, що й цей клас.
+    So it **must** pass layer 3 like everything else; its corpus is simply
+    the book rather than the source cache. Otherwise the status would be a
+    label asserting a check that nobody makes — kind 24, recorded the same
+    day as the status itself.
     """
     syryy = str(z.get("source") or z.get("dzherelo") or "")
     out: list[Path] = []
@@ -687,19 +703,21 @@ def knyzhkovi_dzherela(z: dict) -> list[Path]:
 def dzherela_zapysu(z: dict) -> list[str]:
     """Усі адреси запису, з розгорнутими скороченнями.
 
-    У полі `dzherelo` другий і подальші файли того самого дерева
-    записані скорочено — `.../components/soc/esp32c3/...` — бо повний
-    URL повторює шістдесят символів на кожен рядок і робить запис
-    нечитним.
+    In the source field, the second and later files of the same tree are
+    written abbreviated — `.../components/soc/esp32c3/...` — because a
+    full URL repeats sixty characters on every line and makes the record
+    unreadable.
 
-    Для людини це зрозуміло. Для шару 3 — ні: скорочення не адреса, і
-    доказ із ним неперевірний **мовчки**. Це виявив сам шар 3, щойно
-    його запустили: чверть записів з цитатами не мала жодного придатного
-    URL, і виглядало це як «джерело не в кеші».
+    A person understands it. Layer 3 does not: an abbreviation is not an
+    address, and evidence carrying one is uncheckable **silently**. Layer
+    3 found this itself the moment it was first run: a quarter of the
+    records with quotes had no usable URL at all, and it looked like
+    "source not in the cache".
 
-    Тому скорочення розгортається проти кореня першої повної адреси.
-    Для `raw.githubusercontent.com` корінь — це власник, репозиторій і
-    гілка; далі йде шлях у дереві, і саме його заміняє `...`.
+    So an abbreviation is expanded against the root of the first full
+    address. For `raw.githubusercontent.com` the root is owner, repository
+    and branch; after that comes the path in the tree, and that is what
+    `...` replaces.
     """
     syryy = str(z.get("source") or "")
     povni = RE_URL.findall(syryy)
@@ -712,8 +730,9 @@ def dzherela_zapysu(z: dict) -> list[str]:
         if korin:
             out += rozgornuty(korin + hvist)
             continue
-        # Здогад не спрацював — пробуємо звіркою. Приймається лише те,
-        # чий файл є в кеші, тож хибної адреси звідси не вийде.
+        # The guess failed — try verification instead. Only a candidate
+        # whose file exists in the cache is accepted, so no false address
+        # can come out of this.
         znaydene = next((u2 for u in povni
                          if (u2 := root_by_verification(u, hvist))), None)
         if znaydene:
@@ -724,11 +743,11 @@ def dzherela_zapysu(z: dict) -> list[str]:
 def perevirka(kachaty: bool,
               fayly: list[Path] | None = None) -> tuple[list[dict],
                                                         dict[str, int]]:
-    """Кожен запис доказу проти кожного зі своїх джерел.
+    """Every evidence record against every one of its sources.
 
-    `fayly` дозволяє перевірити щось, чого в реєстрі ще немає, — а саме
-    вивантаження помічника. Так перевірка стається **до** того, як чуже
-    слово потрапляє в `factcheck/evidence/`, а не після.
+    `fayly` allows checking something not yet in the registry — namely a
+    helper's dump. That way the check happens **before** somebody else's
+    word enters `factcheck/evidence/`, not after.
     """
     naslidky: list[dict] = []
     pidsumok = {"ok": 0, "ne_znaydeno": 0, "nedosyazhne": 0, "nichoho": 0,
@@ -740,114 +759,125 @@ def perevirka(kachaty: bool,
         try:
             zapysy = yaml.safe_load(f.read_text(encoding="utf-8")) or []
         except yaml.YAMLError as e:
-            naslidky.append(dict(fayl=f.name, nazva="(файл не читається)",
+            naslidky.append(dict(fayl=f.name, nazva="(file will not parse)",
                                  stan="pomylka", detali=str(e).split("\n")[0]))
             continue
         for z in zapysy:
             if not isinstance(z, dict):
                 continue
             nazva = factcheck.nazva_zapysu(z)
-            # **Відсутність класу — не те саме, що клас `F`.**
+            # **An absent status is not the same as `unchecked`.**
             #
-            # У реєстрі клас є завжди. У вивантаженні помічника його
-            # немає й не має бути: клас присвоює супровідник, і саме на
-            # цьому тримається правило «чуже слово не потрапляє в реєстр
-            # неперевіреним».
+            # In the registry a status is always present. In a helper's
+            # dump it is not, and must not be: a status is assigned by a
+            # maintainer, and the rule "somebody else's word does not
+            # enter the registry unchecked" rests on exactly that.
             #
-            # Перша редакція цих воріт підставляла `F` там, де поля
-            # просто немає, і валила **всю** хвилю помічника як «хибні
-            # записи» — не перевіривши жодної цитати. Тобто ворота, що
-            # мали ловити брак, приховали роботу.
-            # Було `"klas" in z` — перевірка наявності **старого**
-            # імені. Після стиснення воно хибне завжди, і умови нижче
-            # («A без цитати», «доказ класу F») не спрацьовують більше
-            # ніколи. Прогін М2 показав це так: «звірено 508» до і
-            # «звірено 508» після, а 23 записи тим часом переїхали з
-            # «перевіряється» в «нема чого звіряти».
+            # The first version of this gate substituted `unchecked`
+            # where the field was simply absent, and failed the **whole**
+            # of a helper's wave as "false records" — without checking a
+            # single quote. A gate meant to catch waste hid the work.
+            # It used to be `"klas" in z` — a test for the presence of
+            # the **old** field name. After the contraction that is false
+            # always, and the conditions below ("verbatim with no quote",
+            # "evidence marked unchecked") never fire again. M2's run
+            # showed it thus: "checked 508" before and "checked 508"
+            # after, while 23 records meanwhile moved from "being checked"
+            # to "nothing to check".
             #
-            # > Перевірка вертає те саме число, і те саме число нічого
-            # > не означає.
+            # > The check returns the same number, and the same number
+            # > means nothing.
             maye_klas = bool(z.get("status") or z.get("klas"))
-            # СЛОВОМ, а не літерою: `status_of` приймає обидва
-            # написання, тож перехід не потребує другого шляху.
+            # By WORD, not letter: `status_of` accepts both spellings,
+            # so the transition needs no second path.
             stan = factcheck.status_of(z, "")
 
-            # Клас `F` — це «не звірено», типовий стан **відсутності**
-            # доказу. Запис доказу з класом `F` не означає нічого й
-            # трапляється лише як помилка помічника (знахідка М2).
-            # **Клас `A` без цитати — суперечність за означенням.**
+            # `unchecked` is the default state of an **absence** of
+            # evidence. An evidence record marked `unchecked` means
+            # nothing and occurs only as a helper's error (M2's finding).
+            # **`verbatim` with no quote is a contradiction by
+            # definition.**
             #
-            # `A` означає «першоджерело отримано, витяг наведено
-            # дослівно». Без витягу він не означає нічого, і саме в цій
-            # порожнечі оселився найтонший рід підробки, який ми бачили
-            # (знахідка М2 від 00:14Z): джерело справжнє, редакція
-            # правильна, а **координата всередині документа вигадана** —
-            # `Table 6-21`, якої в цьому datasheet немає.
+            # It means "the primary source was obtained, the extract is
+            # quoted". With no extract it means nothing, and it is in
+            # exactly that emptiness that the subtlest forgery we have
+            # seen took up residence (M2's finding at 00:14Z): the source
+            # real, the revision right, and **the coordinate inside the
+            # document invented** — `Table 6-21`, which that datasheet
+            # does not contain.
             #
-            # Усі три наші перевірки таке пропускають: джерело — документ,
-            # файл завантажується, а цитати, яку міг би звірити третій
-            # шар, просто немає. Ворота проти цього одні: вимагати витяг
-            # там, де клас його обіцяє.
+            # All three of our checks pass that: the source is a
+            # document, the file downloads, and the quote layer 3 could
+            # have checked is simply absent. There is one gate against it:
+            # require the extract wherever the status promises one.
             if maye_klas and stan == "verbatim" and not str(z.get("quote") or
                                                      z.get("cytata-tablytsya")
                                                      or "").strip():
                 pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="pomylka",
-                    detali="клас A без цитати — A обіцяє дослівний витяг"))
+                    detali="verbatim with no quote — it promises an extract"))
                 continue
 
             if maye_klas and stan == "unchecked":
                 pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="pomylka",
-                    detali="доказ класу F — F означає відсутність доказу"))
+                    detali="evidence marked unchecked — that means no evidence"))
                 continue
 
-            # Вигадане джерело: клас каже «звірено», а в полі джерела
-            # стоїть міркування. Див. RE_SCHOS_SCHO_MOZHE_BUTY_DOKUMENTOM.
+            # An invented source: the status says "checked" while the
+            # source field holds an argument. See
+            # RE_SCHOS_SCHO_MOZHE_BUTY_DOKUMENTOM.
             if (maye_klas and stan in ("verbatim", "derived")
                     and not dzherelo_rozvyazne(z)):
                 pidsumok["vygadane"] = pidsumok.get("vygadane", 0) + 1
                 dzh = str(factcheck.pole(z, "source", "dzherelo") or "")[:60]
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="vygadane",
-                    detali=f"стан {stan}, а джерело — не документ: «{dzh}»"))
+                    detali=f"status {stan}, but the source is not a document: «{dzh}»"))
                 continue
 
-            # **Надмірний `E` — дзеркало вигаданого джерела.** Знахідка
-            # М2 від 22:23Z, і найважливіше, що дала остання хвиля.
+            # **An over-generous `no-external-signal` is the mirror of an
+            # invented source.** M2's finding at 22:23Z, and the most
+            # important thing the last wave produced.
             #
-            # Клас `E` означає «зовнішнього джерела не існує за
-            # побудовою»: редакційне рішення, порада, рамка викладу.
-            # Помічники ставили його твердженням **із числами** — «4.7
-            # кОм обов'язкове», «3.3 В на обох лініях». Для таких
-            # джерело існує, і М2 довів це для трьох із трьох, що
-            # перевірив.
+            # The status means "no external source exists by
+            # construction": an editorial decision, a piece of advice, a
+            # framing sentence. Helpers were putting it on claims **with
+            # numbers** — "4.7 kΩ is mandatory", "3.3 V on both lines".
+            # For those a source does exist, and M2 proved it for three of
+            # the three they checked.
             #
-            # Наслідок той самий, що у вигаданого джерела: одиниця
-            # виходить із роботи назавжди. Але помітити важче — надмірний
-            # `E` схожий на обережність, а обережність ми заохочували
-            # обидва. Учили «не натягуй `A`»; не сказали «і не тікай
-            # у `E`».
+            # The consequence is the same as an invented source: the unit
+            # leaves the work permanently. But it is harder to notice —
+            # over-generosity here looks like caution, and caution is what
+            # we both encouraged. We taught "do not stretch `verbatim`";
+            # we did not say "and do not flee into no-external-signal".
             #
-            # Тому це **питання, а не заборона**: `E` на твердженні, у
-            # назві якого число з одиницею виміру, друкується окремим
-            # переліком і рішення лишає людині.
+            # So this is **a question, not a prohibition**: the status
+            # standing on a claim whose title carries a number with a unit
+            # is printed as a separate list, and the decision is left to a
+            # person.
+            # Unconfigured patterns mean the question cannot be asked —
+            # not that the answer is no.
             if (maye_klas and stan == "no-external-signal"
+                    and RE_CHYSLO_Z_ODYNYCEYU
                     and RE_CHYSLO_Z_ODYNYCEYU.search(nazva)
-                    and not RE_SAM_KAZHE_E.search(nazva)):
+                    and not (RE_SAM_KAZHE_E
+                             and RE_SAM_KAZHE_E.search(nazva))):
                 pidsumok["nadmirnyy_e"] = pidsumok.get("nadmirnyy_e", 0) + 1
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="nadmirnyy_e",
-                    detali="клас E, а в назві число з одиницею"))
+                    detali="no-external-signal, yet the title carries a number with a unit"))
                 continue
 
-            # Цитата, яку супровідник звірив очима там, де витягання
-            # тексту руйнує структуру. Знахідка М2: без цього стану шар 3
-            # б'є на сполох на **правильних** цитатах, і за тиждень його
-            # перестають читати. Позначку ставить людина і лише разом із
-            # поясненням, чому машина тут безсила.
+            # A quote the maintainer checked by eye, where text
+            # extraction destroys the structure. M2's finding: without
+            # this state layer 3 raises the alarm on **correct** quotes,
+            # and within a week people stop reading it. The mark is placed
+            # by a person, and only together with an explanation of why a
+            # machine is powerless here.
             if z.get("perevireno-okom"):
                 pidsumok["okom"] = pidsumok.get("okom", 0) + 1
                 naslidky.append(dict(
