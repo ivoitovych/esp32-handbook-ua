@@ -42,7 +42,7 @@ the distilled law, and both say so in their first lines. Only **facts
 with one right answer** are checked here.
 
     factcheck/tools/docs.py            check
-    factcheck/tools/docs.py --proba    show the check working on broken input
+    factcheck/tools/docs.py --demo    show the check working on broken input
 """
 from __future__ import annotations
 
@@ -55,371 +55,396 @@ from repo import ROOT  # noqa: E402  (root is found, not counted)
 FC = ROOT / "factcheck"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-# Хто нормативний для якого факту. Без цього рядка «полагоджують ту
-# копію, що читається», і копії розходяться далі.
-# Донедавна тут стояли три різні документи — по власнику на кожне
-# питання. Після зведення двоє з трьох — це той самий `METHOD.md`, і
-# `name_lists` слушно вилаявся на дубль: повторене ім'я в такому переліку
-# майже завжди означає, що заміна злила два записи в один (рід 26).
+# Who is authoritative for which fact. Without this line people "fix the
+# copy they happen to be reading", and the copies drift further apart.
 #
-# Тут не злиття, а справжнє зведення: власник справді один. Тож замість
-# двох однакових значень — один запис, і код питає його обидва рази.
-VLASNYK = {
-    "технологія": "METHOD.md",
-    "вердикти наряду": "factcheck/tools/intake_f.py",
+# Until recently there were three different documents here, one owner per
+# question. After the consolidation two of the three are the same
+# `METHOD.md`, and `name_lists` rightly complained about the duplicate: a
+# repeated name in a list like this almost always means a substitution
+# collapsed two entries into one (kind 26).
+#
+# Here it is not a collapse but a genuine consolidation: the owner really
+# is one. So instead of two identical values there is one entry, and the
+# code asks it twice.
+OWNER = {
+    "technology": "METHOD.md",
+    "order verdicts": "factcheck/tools/intake_f.py",
 }
-VLASNYK["класи доказу"] = VLASNYK["роди хиб"] = VLASNYK["технологія"]
+OWNER["statuses"] = OWNER["defect kinds"] = OWNER["technology"]
 
-# «Керівний» тут — не те саме, що `canonical` у `doc_kind.py`, і два
-# переліки навмисно не збігаються. `doc_kind` питає, **хто власник
-# змісту**: історичний документ заморожений і правити його не можна.
-# Цей перелік питає інше — **чиї посилання мають лишатися дійсними**, а
-# заморожений документ, що називає перейменований інструмент, бреше
-# читачеві так само, як живий. Тому історичні тут є, і це не розбіжність
-# воріт, а два різні питання про один файл.
+# "Governing" here is not the same as `canonical` in `doc_kind.py`, and
+# the two lists deliberately differ. `doc_kind` asks **who owns the
+# content**: a historical document is frozen and must not be edited. This
+# list asks something else — **whose references must stay valid** — and a
+# frozen document naming a renamed tool lies to a reader exactly as a live
+# one does. So historical documents appear here, and that is not a
+# disagreement between gates but two different questions about one file.
 #
-# Теки кешу, яких у ЦЬОМУ дереві вже немає, а в чужому контейнері ще
-# можуть бути. Це історія, а не означення: означення нижче, у
-# `kesh_ne_v_git`, і воно питає про наявність маніфесту. Ці рядки не
-# перейменовує ніщо — перейменувати минуле не можна.
+# Cache directories that no longer exist in THIS tree but may still exist
+# in somebody else's container. This is history, not a definition: the
+# definition is below, in `cache_not_in_git`, and it asks whether a
+# manifest is present. Nothing renames these lines — the past cannot be
+# renamed.
 HISTORICAL_CACHES = ("dzherela-kesh",)
 
-# Керівні документи — ті, що описують ТЕХНОЛОГІЮ, і вони лежать у
-# корені `factcheck/`. Усе інше після перебудови 2026-08-29 має свою
-# теку за родом: `reports/`, `history/`, `book/`, `runs/`.
+# The governing documents are the ones describing the TECHNOLOGY, and
+# they live in the root of `factcheck/`. Everything else has a directory
+# named after what it is: `reports/`, `evidence/`, `cards/`, `work/`.
 #
-# Перелік лишається явним, а не `glob`, навмисно: він є ТВЕРДЖЕННЯМ про
-# те, що технологія складається саме з цих документів. Файл, який хтось
-# додасть у корінь, має або потрапити сюди свідомо, або лежати в теці за
-# родом — і `name_lists.py` стежить, щоб ім'я тут не стало іменем нічого.
-KERIVNI = ["METHOD.md", "REPORT.md"]
+# The list stays explicit rather than a `glob`, deliberately: it is a
+# STATEMENT that the technology consists of exactly these documents. A
+# file somebody adds to the root must either be admitted here on purpose
+# or live in a directory by kind — and `name_lists.py` watches that a name
+# here does not become the name of nothing.
+GOVERNING = ["METHOD.md", "REPORT.md"]
 
-# `README.md` не керівний документ: він нічого не вирішує й нікуди не
-# переїжджає — на іншій книзі його пишуть заново. Але в корені він
-# мусить бути, і це різні питання:
+# `README.md` is not a governing document: it decides nothing and travels
+# nowhere — on another book it is written fresh. But it must be in the
+# root, and these are different questions:
 #
-#     KERIVNI       що є технологією і що переноситься
-#     U_KORENI      що людина має побачити, відкривши теку
+#     GOVERNING   what is the technology, and what travels
+#     IN_ROOT     what a person must see on opening the directory
 #
-# Перший раз я їх злив і викинув README разом із покажчиком, бо «два
-# файли не потребують карти». Покажчик справді не потрібен; орієнтир —
-# потрібен, і власник сказав це прямо. Карта й вивіска — не те саме.
-U_KORENI = KERIVNI + ["README.md"]
+# The first time I conflated them and deleted the README along with the
+# index, because "two files need no map". The index really was
+# unnecessary; the orientation was not, and the owner said so plainly. A
+# map and a sign on the door are not the same thing.
+IN_ROOT = GOVERNING + ["README.md"]
 
-# Той самий прохід sed, що позначив був `TASK-SPEC.md` історичним у
-# `doc_kind.ISTORYCHNI`, лишив по собі **другий** слід — тут. Обидва
-# рядки з `WORK-ORDER-EXAMPLE.md` (документ видалено як застарілий)
-# стали `TASK-SPEC.md`, і перелік почав звітувати «14 керівних», маючи
-# 13 різних. Число, яке друкує сам перелік, розійшлося з переліком.
+# The same sed pass that once marked `TASK-SPEC.md` historical in
+# `doc_kind.ISTORYCHNI` left a **second** trace — here. Both lines
+# carrying `WORK-ORDER-EXAMPLE.md` (a document deleted as obsolete)
+# became `TASK-SPEC.md`, and the list began reporting "14 governing" while
+# holding 13 distinct names. The number the list printed had diverged from
+# the list itself.
 #
-# М2 знайшли й виправили випадок у `doc_kind`; цей уцілів, бо ніхто не
-# питав. Тому питаємо: перевірка нижче не пускає ані дубль, ані ім'я
-# неіснуючого документа.
+# M2 found and fixed the case in `doc_kind`; this one survived because
+# nobody asked. So we ask: the check below admits neither a duplicate nor
+# the name of a document that does not exist.
 
 
 def governing_list_sound() -> list[str]:
-    """Перелік керівних — це перелік ІМЕН, і його ніхто не звіряв.
+    """The governing list is a list of NAMES, and nobody checked it.
 
-    Рід 26 у чистому вигляді, вдруге за день і в іншому файлі: прохід
-    перейменування переписує ім'я, чиїм предметом було старе ім'я, і
-    жодна перевірка про це не питає, бо всі питають про **зміст**
-    документів, а не про сам перелік.
+    Kind 26 in its pure form, twice in one day and in a different file: a
+    rename pass rewrites a name whose subject WAS the old name, and no
+    check asks about it, because every check asks about the **content** of
+    the documents rather than about the list itself.
 
-        KERIVNI  14 записів, 13 різних
+        GOVERNING  14 entries, 13 distinct
     """
-    bidy = []
-    for n in sorted(set(KERIVNI)):
-        if KERIVNI.count(n) > 1:
-            bidy.append(f"KERIVNI: `{n}` названо {KERIVNI.count(n)} рази — "
-                        f"слід перейменування, а не перелік")
+    problems = []
+    for n in sorted(set(GOVERNING)):
+        if GOVERNING.count(n) > 1:
+            problems.append(f"GOVERNING: `{n}` named {GOVERNING.count(n)} "
+                            f"times — the trace of a rename, not a list")
         if not (FC / n).exists():
-            bidy.append(f"KERIVNI: `{n}` у переліку є, документа немає")
-    return bidy
+            problems.append(f"GOVERNING: `{n}` is in the list, the document "
+                            f"is not")
+    return problems
 
-# Рядок, що перелічує класи. ФОРМАТІВ ТРИ, і це не примха:
+
+# A line listing the statuses. THERE ARE THREE FORMATS, and not by whim:
 #
 #     | **A** | ✅ | …        SCHEMA.md
-#     | `A`   | …            ARCHITECTURE.md (документ згорнуто 2026-08-29)
+#     | `A`   | …            ARCHITECTURE.md (folded away 2026-08-29)
 #         A  primary …       METHOD.md
 #
-# Перша редакція знала лише перший. Прогін на дереві до правок зловив
-# METHOD.md і НЕ зловив ARCHITECTURE.md — саме той документ, з якого
-# все й почалося. Перевірка з однією формою бачить одну форму, і
-# мовчить про решту так само впевнено.
+# The first version knew only the first. A run on the pre-edit tree caught
+# METHOD.md and did NOT catch ARCHITECTURE.md — precisely the document the
+# whole thing had started from. A check that knows one form sees one form,
+# and stays silent about the rest just as confidently.
 #
-# УВАГА: цей коментар протиставляє ДВА документи, і суцільна заміна
-# `ARCHITECTURE.md` → `METHOD.md` під час згортання зробила з нього
-# «зловив METHOD.md і не зловив METHOD.md» — речення без змісту. Ім'я
-# згорнутого документа тут не посилання, а **свідчення про минуле**;
-# рід 26, і `name_lists.py` цього не ловить, бо це проза, а не перелік.
-# Тільки таблиця під заголовком про стани, а не будь-яка таблиця в
-# документі. Перша редакція шукала `| **слово** |` по всьому файлу й
-# зібрала імена полів запису та роди одиниць — тобто «класи», яких у
-# коді немає, бо вони й не класи.
-# Заголовок розділу — теж ім'я, і воно переїжджає разом із документом.
-# Коли `SCHEMA.md` став англійським, цей взірець перестав знаходити
-# розділ узагалі, `rozdil_staniv` повернув порожній рядок, і перевірка
-# доповіла, що нормативний перелік не знає ЖОДНОГО стану з коду. Тобто
-# найгучніший можливий висновок — з того, що вона нічого не прочитала.
+# NOTE: this comment contrasts TWO documents, and a blanket substitution of
+# `ARCHITECTURE.md` -> `METHOD.md` during the fold turned it into "caught
+# METHOD.md and did not catch METHOD.md" — a sentence with no content. The
+# name of the folded document here is not a reference but **testimony
+# about the past**; kind 26, and `name_lists.py` does not catch it,
+# because this is prose, not a list.
 #
-# Це рід 26 у формі, якої ми ще не бачили: перейменування переписало не
-# правило, а **предмет** правила, і правило лишилося цілим і сліпим.
-RE_ROZDIL_STANIV = re.compile(
+# Only the table under the statuses heading, not any table in the
+# document. The first version searched for `| **word** |` across the whole
+# file and collected record field names and unit kinds — that is,
+# "statuses" that do not exist in the code, because they are not statuses.
+#
+# A section heading is a name too, and it travels with the document. When
+# `SCHEMA.md` became English this pattern stopped finding the section at
+# all, `statuses_section` returned an empty string, and the check reported
+# that the normative list knows NONE of the code's statuses — the loudest
+# possible conclusion drawn from having read nothing.
+#
+# This is kind 26 in a shape we had not seen: the rename rewrote not the
+# rule but the **subject** of the rule, and the rule stayed whole and
+# blind.
+RE_STATUSES_SECTION = re.compile(
     r"^##+ .*(Класи доказу|Стани перевірки|Стани"
     r"|Evidence statuses|Statuses)\s*$", re.M)
-RE_KLAS_TABL = re.compile(
+RE_STATUS_TABLE = re.compile(
     r"^\|\s*(?:\*\*([a-z][a-z-]{3,})\*\*|`([a-z][a-z-]{3,})`)\s*\|", re.M)
 
 
-def rozdil_staniv(t: str) -> str:
-    """Текст лише того розділу, що описує стани."""
-    m = RE_ROZDIL_STANIV.search(t)
+def statuses_section(t: str) -> str:
+    """The text of the section describing the statuses, and only that."""
+    m = RE_STATUSES_SECTION.search(t)
     if not m:
         return ""
-    dali = re.search(r"^##+ ", t[m.end():], re.M)
-    return t[m.end():m.end() + (dali.start() if dali else len(t))]
-RE_KLAS_SPYS = re.compile(r"^\s{2,}([a-z][a-z-]{3,})\s{2,}[—a-zа-яїєґ]", re.M)
-# Тули живуть у двох теках. Взірець без `factcheck/` не просто промахує
-# — він ЛОВИТЬ підрядок `tools/layer3.py` усередині
-# `factcheck/tools/layer3.py`, перевіряє неіснуючий шлях і оголошує
-# справний документ хибним. Промах ще видно; хибне влучання — ні.
-RE_TUL = re.compile(r"`?((?:factcheck/)?tools/[a-z0-9_.-]+\.py)`?")
-RE_RID = re.compile(r"(?:рід|kind)\s+(\d{1,2})\b", re.I)
+    nxt = re.search(r"^##+ ", t[m.end():], re.M)
+    return t[m.end():m.end() + (nxt.start() if nxt else len(t))]
 
 
-def klasy_kodu() -> set[str]:
-    """Чинний словник станів — СЛОВАМИ.
+RE_STATUS_LIST = re.compile(r"^\s{2,}([a-z][a-z-]{3,})\s{2,}[—a-zа-яїєґ]", re.M)
 
-    Був літерами до 2026-08-29. Літери прибрано з реєстру як
-    абревіатуру: одинадцять однобуквених кодів вимагають легенди, якої
-    ніхто не тримає в голові, а поруч із ними завжди стояло те саме
-    слово й той самий опис.
+# Tools live in two directories. A pattern without `factcheck/` does not
+# merely miss — it MATCHES the substring `tools/layer3.py` inside
+# `factcheck/tools/layer3.py`, checks a path that never existed, and
+# declares a sound document broken. A miss is at least visible; a false
+# hit is not.
+RE_TOOL = re.compile(r"`?((?:factcheck/)?tools/[a-z0-9_.-]+\.py)`?")
+RE_KIND = re.compile(r"(?:рід|kind)\s+(\d{1,2})\b", re.I)
+
+
+def code_statuses() -> set[str]:
+    """The current vocabulary of statuses, as WORDS.
+
+    It was letters until 2026-08-29. The letters went out of the registry
+    as an abbreviation: eleven single-character codes demand a legend
+    nobody keeps in their head, and beside each of them the same word and
+    the same description had always stood anyway.
     """
     import factcheck
     return set(factcheck.STATUSES)
 
 
-def perevirka() -> list[str]:
-    bidy: list[str] = []
-    kod = klasy_kodu()
-    avt = (FC / VLASNYK["класи доказу"]).read_text(encoding="utf-8")
-    rozdil = rozdil_staniv(avt)
+def check_all() -> list[str]:
+    problems: list[str] = []
+    code = code_statuses()
+    authoritative = (FC / OWNER["statuses"]).read_text(encoding="utf-8")
+    section = statuses_section(authoritative)
 
-    # Порожній розділ і розділ без жодного стану — різні події, і
-    # плутати їх дорого. Коли `SCHEMA.md` переклали, взірець заголовка
-    # перестав його знаходити, `rozdil` став порожнім — і перевірка
-    # доповіла «перелік не знає одинадцяти станів», тобто зробила
-    # найгучніший висновок із того, що не прочитала нічого.
+    # An empty section and a section with no statuses are different
+    # events, and confusing them is expensive. When `SCHEMA.md` was
+    # translated the heading pattern stopped finding it, the section came
+    # back empty — and the check reported "the list knows none of eleven
+    # statuses", i.e. drew the loudest possible conclusion from having
+    # read nothing.
     #
-    # Нуль, отриманий від порожнього входу, не є виміром. Кажемо це
-    # окремим рядком, щоб наступного разу було видно, який саме.
-    if not rozdil.strip():
-        return [f"{VLASNYK['класи доказу']}: розділу зі станами не "
-                f"знайдено — переклали заголовок? Перевірка станів "
-                f"НЕ виконана, а не пройдена"]
-    avt_klasy = {a or b for a, b in RE_KLAS_TABL.findall(rozdil)}
+    # A zero obtained from an empty input is not a measurement. We say so
+    # on its own line, so that next time it is visible which it was.
+    if not section.strip():
+        return [f"{OWNER['statuses']}: the statuses section was not found — "
+                f"was the heading translated? The status check was NOT "
+                f"PERFORMED, not passed"]
+    listed = {a or b for a, b in RE_STATUS_TABLE.findall(section)}
 
-    brak = kod - avt_klasy
-    if brak:
-        bidy.append(
-            f"{VLASNYK['класи доказу']}: нормативний перелік не знає класів "
-            f"{sorted(brak)}, які є в коді")
-    zayvi = avt_klasy - kod
-    if zayvi:
-        bidy.append(
-            f"{VLASNYK['класи доказу']}: перелічено класи {sorted(zayvi)}, "
-            f"яких у коді немає")
+    missing = code - listed
+    if missing:
+        problems.append(
+            f"{OWNER['statuses']}: the normative list does not know the "
+            f"statuses {sorted(missing)}, which exist in the code")
+    extra = listed - code
+    if extra:
+        problems.append(
+            f"{OWNER['statuses']}: lists statuses {sorted(extra)}, which do "
+            f"not exist in the code")
 
-    for imya in KERIVNI:
-        p = FC / imya
+    for name in GOVERNING:
+        p = FC / name
         if not p.exists():
-            bidy.append(f"{imya}: керівний документ відсутній")
+            problems.append(f"{name}: governing document is missing")
             continue
         t = p.read_text(encoding="utf-8")
 
-        # Копія словника класів, що розійшлася з кодом.
-        nazvani = ({a or b for a, b in RE_KLAS_TABL.findall(rozdil_staniv(t))}
-                   | set(RE_KLAS_SPYS.findall(t)))
-        # Просіювати ТИМ, ЩО В КОДІ, і ніколи власним переліком.
+        # A copy of the status vocabulary that has drifted from the code.
+        named = ({a or b for a, b in RE_STATUS_TABLE.findall(statuses_section(t))}
+                 | set(RE_STATUS_LIST.findall(t)))
+        # Sieve with WHAT IS IN THE CODE, and never with a private list.
         #
-        # Тут стояло `set("ABCDEFGKLS")` — свій список літер, вписаний
-        # рукою. М1 завів клас `N`, і перевірка, зроблена проти
-        # застарілих копій словника, СХОВАЛА його власною застарілою
-        # копією: `N` випадав із «названих» і одразу з'являвся у
-        # «відсутніх». Документ був правий, перевірка ні.
+        # There used to be `set("ABCDEFGKLS")` here — a private list of
+        # letters, typed by hand. M1 introduced the status `N`, and the
+        # check built against stale copies of the vocabulary HID it behind
+        # its own stale copy: `N` dropped out of "named" and appeared
+        # immediately in "absent". The document was right; the check was
+        # not.
         #
-        # Формулювання М1, точніше за моє: перевірка **маскувала `N` до
-        # порівняння — і не побачила б виправлення, якого сама
-        # вимагала.**
+        # M1's phrasing, sharper than mine: the check **masked `N` before
+        # the comparison — and would not have seen the very correction it
+        # was demanding.**
         #
-        # Знайшли ми це нарізно й полагодили однаково, з різницею в
-        # кілька хвилин. Копія жила всередині інструмента, побудованого
-        # проти копій.
-        nazvani &= kod
-        if len(nazvani) >= 4 and imya != VLASNYK["класи доказу"]:
-            vidsutni = kod - nazvani
-            if vidsutni:
-                bidy.append(
-                    f"{imya}: копія словника класів без {sorted(vidsutni)} — "
-                    f"або доповнити, або замінити посиланням на "
-                    f"{VLASNYK['класи доказу']}")
+        # We found this separately and fixed it identically, minutes
+        # apart. The copy was living inside the tool built against copies.
+        named &= code
+        if len(named) >= 4 and name != OWNER["statuses"]:
+            absent = code - named
+            if absent:
+                problems.append(
+                    f"{name}: a copy of the status vocabulary missing "
+                    f"{sorted(absent)} — either complete it, or replace it "
+                    f"with a reference to {OWNER['statuses']}")
 
-        for tul in set(RE_TUL.findall(t)):
-            if not (ROOT / tul).exists():
-                bidy.append(f"{imya}: названо неіснуючий {tul}")
+        for tool in set(RE_TOOL.findall(t)):
+            if not (ROOT / tool).exists():
+                problems.append(f"{name}: names a nonexistent {tool}")
 
-        for n in set(RE_RID.findall(t)):
-            if imya == VLASNYK["роди хиб"]:
+        for n in set(RE_KIND.findall(t)):
+            if name == OWNER["defect kinds"]:
                 continue
-            if not re.search(rf"^#{{2,3}} {n}\.", (FC / VLASNYK["роди хиб"])
+            if not re.search(rf"^#{{2,3}} {n}\.", (FC / OWNER["defect kinds"])
                              .read_text(encoding="utf-8"), re.M):
-                bidy.append(f"{imya}: посилання на рід {n}, якого немає в "
-                            f"{VLASNYK['роди хиб']}")
+                problems.append(f"{name}: refers to kind {n}, which is not in "
+                                f"{OWNER['defect kinds']}")
 
-    # Вердикти наряду проти воріт, які їх приймають.
+    # The order's verdicts against the gate that accepts them.
     try:
         import intake_f
         znani = set(intake_f.POTREBUYE)
     except Exception as e:
-        bidy.append(f"ворота не імпортуються: {str(e)[:60]}")
+        problems.append(f"the gate will not import: {str(e)[:60]}")
         znani = set()
-    # Вердикти більше не живуть у шаблоні інструмента: вони в
-    # `factcheck/TASK-SPEC.md`, звідки наряд їх складає. Перевірка
-    # читає **джерело**, а не одну з копій — інакше вона стереже
-    # копію й мовчить про решту.
+    # The verdicts no longer live in a tool's template: they are in
+    # `METHOD.md` Part IV, from which an order is assembled. The check
+    # reads the **source**, not one of the copies — otherwise it guards a
+    # copy and stays silent about the rest.
     if znani:
         try:
             import task_spec
             bloky = task_spec.bloky()
         except Exception as e:
-            bidy.append(f"спека завдання не читається: {str(e)[:60]}")
+            problems.append(f"the task spec will not parse: {str(e)[:60]}")
             bloky = {}
-        for imya, tekst in bloky.items():
-            if not imya.startswith("VERDICTS"):
+        for fname, tekst in bloky.items():
+            if not fname.startswith("VERDICTS"):
                 continue
             vsi = set(re.findall(r"^\| `([a-z_-]+)` \|", tekst, re.M))
-            chuzhi = vsi - znani
-            if chuzhi:
-                bidy.append(
-                    f"TASK-SPEC [{imya}]: наряд пропонує вердикти "
-                    f"{sorted(chuzhi)}, яких ворота не перевіряють")
-    bidy += governing_list_sound()
-    bidy += index_complete()
-    bidy += kesh_ne_v_git()
-    bidy += root_holds_only_governing()
-    return bidy
+            unknown = vsi - znani
+            if unknown:
+                problems.append(
+                    f"TASK-SPEC [{name}]: the order offers verdicts "
+                    f"{sorted(unknown)}, which the gate does not check")
+    problems += governing_list_sound()
+    problems += index_complete()
+    problems += cache_not_in_git()
+    problems += root_holds_only_governing()
+    return problems
 
 
 def root_holds_only_governing() -> list[str]:
-    """Чи лишається в корені `factcheck/` **лише** те, що переноситься.
+    """Does the root of `factcheck/` hold **only** what travels.
 
-    Перебудова 2026-08-29 звела корінь із 31 документа до шести — і
-    майже одразу з'ясувалося, що переїзд був наполовину. Одинадцять
-    інструментів далі тримали в сталій шлях `factcheck/X.md`, хоч їхні
-    ж рядки допомоги вже казали `factcheck/reports/X.md`. Файли
-    переїхали; ті, хто їх пише, — ні.
+    The rebuild of 2026-08-29 cut the root from 31 documents to six — and
+    almost at once it turned out the move was half done. Eleven tools
+    still held `factcheck/X.md` in a constant, while their own help text
+    already said `factcheck/reports/X.md`. The files had moved; the tools
+    that write them had not.
 
-    Це гірше за звичайну розбіжність опису з кодом: жоден із них не
-    впав би. Наступний прогін просто **створив би корінний файл
-    наново**, тихо, і за тиждень у корені знову лежало б тридцять
-    документів — а `git status` показував би не помилку, а роботу.
+    That is worse than an ordinary description-versus-code divergence:
+    none of them would have failed. The next run would simply have
+    **created the root file again**, quietly, and within a week thirty
+    documents would have been back in the root — with `git status` showing
+    not an error but work.
 
-    Тому перевірка питає обидва боки:
-      * що лежить у корені зараз;
-      * і що будь-який інструмент **збирається** туди записати.
+    So the check asks both sides:
+      * what lies in the root now;
+      * and what any tool **intends** to write there.
 
-    Другий бік ловить ваду в день, коли її внесли, а не в день, коли
-    вона вперше спрацювала.
+    The second side catches the fault on the day it is introduced, not on
+    the day it first fires.
 
-    **Чого другий бік не вміє.** Він читає вихідний текст, а не те, що
-    станеться на виконанні. Шлях, зібраний із даних —
-    `katalog / imya` — він не побачить; шлях, написаний літералом у
-    тимчасовому дереві, він порахує порушенням, хоч воно не порушення
-    (так і сталося з показом у `language.py`). Тобто він міряє **намір,
-    записаний літералом**, і про решту мовчить. Записано тут, бо міра,
-    що ховає свою межу, сама була б родом 3."""
-    bidy = []
-    dozvoleni = set(U_KORENI)
+    **What the second side cannot do.** It reads source text, not what
+    happens at run time. A path assembled from data — `directory / name` —
+    it will not see; a path written as a literal inside a temporary tree
+    it will count as a violation although it is not (which is exactly what
+    happened with the demonstration in `language.py`). So it measures
+    **intent written as a literal**, and stays silent about the rest.
+    Recorded here, because a measure that hides its limit would itself be
+    kind 3."""
+    problems = []
+    dozvoleni = set(IN_ROOT)
     for p in sorted(FC.glob("*.md")):
         if p.name not in dozvoleni:
-            bidy.append(f"{p.name}: лежить у корені factcheck/, "
-                        f"а корінь тримає лише керівні документи")
+            problems.append(f"{p.name}: sits in the root of factcheck/, "
+                            f"and the root holds only the governing documents")
     vzir = re.compile(r'"factcheck"\s*/\s*"([A-Z][A-Z0-9-]*\.md)"')
     for t in repo.tool_files():
-        for imya in set(vzir.findall(t.read_text(encoding="utf-8"))):
-            if imya not in dozvoleni:
-                bidy.append(f"tools/{t.name}: пише {imya} в корінь "
-                            f"factcheck/, а там лише керівні документи")
-    return bidy
+        for fname in set(vzir.findall(t.read_text(encoding="utf-8"))):
+            if fname not in dozvoleni:
+                problems.append(f"tools/{t.name}: writes {name} into the "
+                                f"root of factcheck/, where only the "
+                                f"governing documents belong")
+    return problems
 
 
 def index_complete() -> list[str]:
-    """Раніше — чи згадує покажчик `README.md` кожен документ теки.
+    """Formerly: does `README.md`'s index name every document in the tree.
 
-    Покажчик існував тому, що документів було шість і без карти читач не
-    знав, який відкривати. Власник назвав це вадою, а не зручністю:
-    «тека має містити два документи», і тоді покажчик описує те, що й
-    так видно з `ls`.
+    The index existed because there were six documents and without a map a
+    reader did not know which to open. The owner called that a defect
+    rather than a convenience — "the directory should hold two documents"
+    — and then an index describes what `ls` already shows.
 
-    Перевірку знято разом із покажчиком. Лишати її означало б тримати
-    механізм, чий предмет скасовано, — а такий механізм не мовчить, він
-    падає на порожньому вході й виглядає як поломка.
+    The check was withdrawn with the index. Keeping it would have meant
+    keeping a mechanism whose subject had been abolished, and such a
+    mechanism does not stay quiet: it fails on an empty input and looks
+    like a breakage.
 
-    Її роботу перебрали дві інші: `root_holds_only_governing` не пускає
-    в корінь нічого, крім двох документів, а `name_lists` стежить, щоб
-    ім'я в переліку було іменем наявного файлу."""
+    Its work was taken over by two others: `root_holds_only_governing`
+    admits nothing to the root but the documents, and `name_lists` watches
+    that a name in a list is the name of a file that exists."""
     return []
 
-def proba() -> int:
-    """Показ на зіпсованому вході. Перевірка, що жодного разу не
-    спрацювала, невідрізненна від перевірки, якої немає."""
+
+def demo() -> int:
+    """A demonstration on a corrupted input. A check that has never fired
+    is indistinguishable from a check that is not there."""
     import tempfile
     global FC
-    spravzhnya = FC
-    vypadky = [
-        ("документ називає неіснуючий тул",
-         {"METHOD.md": "див. `tools/nemaye-takoho.py`\n"}, True),
-        ("документ посилається на неіснуючий рід",
-         {"METHOD.md": "це рід 99 каталогу\n"}, True),
-        # «Чистий» випадок раніше підставляв заглушку на два слова. Поки
-        # METHOD.md був лише міркуванням, заглушка справді була чистою.
-        # Після зведення METHOD.md ВОЛОДІЄ переліком станів — і заглушка
-        # стала порушенням, слушно: документа без розділу станів не буває.
+    real_fc = FC
+    cases = [
+        ("a document names a nonexistent tool",
+         {"METHOD.md": "see `tools/no-such-thing.py`\n"}, True),
+        ("a document refers to a nonexistent kind",
+         {"METHOD.md": "this is kind 99 of the catalogue\n"}, True),
+        # The "clean" case used to substitute a two-word stub. While
+        # METHOD.md was only reasoning, the stub really was clean. After
+        # the consolidation METHOD.md OWNS the list of statuses — and the
+        # stub became a violation, rightly: there is no such thing as a
+        # document with no statuses section.
         #
-        # Тобто випадок перевіряв не «чистий документ», а «документ, у
-        # якому нема чого перевіряти». Різницю видно лише тоді, коли
-        # предмет перевірки переїжджає в той самий файл.
-        ("чистий документ",
-         {"METHOD.md": (spravzhnya / "METHOD.md").read_text("utf-8")
-                       + "\n\nНічого особливого.\n"}, False),
+        # So the case was testing not "a clean document" but "a document
+        # with nothing in it to check". The difference shows only once the
+        # subject of the check moves into that same file.
+        ("a clean document",
+         {"METHOD.md": (real_fc / "METHOD.md").read_text("utf-8")
+                       + "\n\nNothing in particular.\n"}, False),
     ]
-    provaliv = 0
-    for nazva, fajly, ocik in vypadky:
+    failures = 0
+    for name, files, expected in cases:
         with tempfile.TemporaryDirectory() as d:
             t = Path(d)
-            for imya in KERIVNI:
-                (t / imya).write_text((spravzhnya / imya).read_text("utf-8")
-                                      if imya not in fajly else fajly[imya],
+
+            for fname in GOVERNING:
+                (t / fname).write_text((real_fc / fname).read_text("utf-8")
+                                      if fname not in files else files[fname],
                                       encoding="utf-8")
             FC = t
             try:
-                b = [x for x in perevirka() if "METHOD.md" in x]
+                b = [x for x in check_all() if "METHOD.md" in x]
             finally:
-                FC = spravzhnya
-            spiymav = bool(b)
-            ok = "✓" if spiymav == ocik else "✗ ПРОВАЛ"
-            print("   %s %-42s очікувано %-5s дістав %s"
-                  % (ok, nazva, ocik, spiymav))
-            provaliv += spiymav != ocik
-    provaliv += cache_selftest()
-    print("\nпровалів: %d" % provaliv)
-    return 1 if provaliv else 0
+                FC = real_fc
+            caught = bool(b)
+            ok = "✓" if caught == expected else "✗ FAIL"
+            print("   %s %-42s expected %-5s got %s"
+                  % (ok, name, expected, caught))
+            failures += caught != expected
+    failures += cache_selftest()
+    print("\nfailures: %d" % failures)
+    return 1 if failures else 0
 
 
 def cache_selftest() -> int:
-    """Ворота на кеш проти теки, чиє ім'я не стоїть у жодному файлі.
+    """The cache gate against a directory whose name is in no file.
 
-    Ім'я тут навмисно вигадане й ніде більше не трапляється. Саме це
+    The name here is deliberately invented and occurs nowhere else. That
     й перевіряється: якби означення кешу знову звелося до переліку
     імен, ця проба провалилася б **першою** — а перелік, який стереже
     лише те, що в ньому названо, від наступного перейменування не
@@ -428,13 +453,13 @@ def cache_selftest() -> int:
     import subprocess
     import tempfile
     global ROOT
-    spravzhniy = ROOT
-    provaliv = 0
+    real_root = ROOT
+    failures = 0
     with tempfile.TemporaryDirectory() as d:
         t = Path(d)
         subprocess.run(["git", "init", "-q"], cwd=t)
-        vypadky = [("кеш під невигаданим досі іменем", True),
-                   ("та сама тека, лише маніфест", False)]
+        cases = [("a cache under a name never invented before", True),
+                 ("the same directory, manifest only", False)]
         (t / "kesh-yakoho-nikoly-ne-bulo").mkdir()
         (t / "kesh-yakoho-nikoly-ne-bulo" / "MANIFEST.md").write_text(
             "# manifest\n", encoding="utf-8")
@@ -442,8 +467,8 @@ def cache_selftest() -> int:
             "x\n", encoding="utf-8")
         ROOT = t
         try:
-            for nazva, ocik in vypadky:
-                if not ocik:
+            for name, expected in cases:
+                if not expected:
                     (t / "kesh-yakoho-nikoly-ne-bulo" / "chuzhyy.pdf").unlink()
                     subprocess.run(["git", "rm", "-q", "--cached",
                                     "kesh-yakoho-nikoly-ne-bulo/chuzhyy.pdf"],
@@ -451,96 +476,95 @@ def cache_selftest() -> int:
                 else:
                     subprocess.run(["git", "add", "-A"], cwd=t,
                                    capture_output=True)
-                spiymav = bool(kesh_ne_v_git())
-                ok = "✓" if spiymav == ocik else "✗ ПРОВАЛ"
-                print("   %s %-42s очікувано %-5s дістав %s"
-                      % (ok, nazva, ocik, spiymav))
-                provaliv += spiymav != ocik
+                caught = bool(cache_not_in_git())
+                ok = "✓" if caught == expected else "✗ FAIL"
+                print("   %s %-42s expected %-5s got %s"
+                      % (ok, name, expected, caught))
+                failures += caught != expected
         finally:
-            ROOT = spravzhniy
-    return provaliv
+            ROOT = real_root
+    return failures
 
 
 def main() -> int:
-    if "--proba" in sys.argv:
-        return proba()
-    bidy = perevirka()
-    for b in bidy:
+    if "--demo" in sys.argv:
+        return demo()
+    problems = check_all()
+    for b in problems:
         print("   ✗ " + b)
-    print("\ndocs: керівних документів %d, розбіжностей %d"
-          % (len(KERIVNI), len(bidy)))
-    return 1 if bidy else 0
+    print("\ndocs: governing documents %d, divergences %d"
+          % (len(GOVERNING), len(problems)))
+    return 1 if problems else 0
 
 
-def kesh_ne_v_git() -> list[str]:
-    """Жоден файл кешу, крім маніфесту, не має бути відстеженим.
+def cache_not_in_git() -> list[str]:
+    """No file of the cache but the manifest may be tracked.
 
-    Інцидент 2026-08-28: перейменування `dzherela-kesh` → `source-cache`
-    переписало в `.gitignore` **обидва** рядки на цей шлях, зокрема той,
-    чиїм предметом було старе ім'я. У контейнері, де робили
-    перейменування, старого каталогу вже не було, тож наслідку не було
-    видно взагалі. У другого супровідника він лишався — і 236 чужих
-    документів опинилися в індексі. Спіймано вчасно, у git не потрапило.
+    The incident of 2026-08-28: renaming `dzherela-kesh` -> `source-cache`
+    rewrote **both** `.gitignore` lines to the new path, including the one
+    whose subject WAS the old name. In the container where the rename was
+    done the old directory no longer existed, so the consequence was not
+    visible at all. In the other maintainer's container it did — and 236
+    third-party documents landed in the index. Caught in time; nothing
+    reached git.
 
-    > Правило ігнорування для шляху — це твердження про всіх, у кого
-    > той шлях **ще є**. Перейменувати його означає зняти захист рівно
-    > там, де він потрібен, і ніколи там, де перейменування робили.
+    > An ignore rule for a path is a statement about everyone who **still
+    > has** that path. Renaming it removes the protection exactly where it
+    > is needed, and never where the rename was done.
 
-    Тому це не перевірка `.gitignore`, а перевірка **наслідку**:
-    питаємо git, що він відстежує, а не читаємо правила й не віримо їм.
-    Рід 26 у `DEFECTS.md`.
+    So this is not a check of `.gitignore` but a check of the
+    **consequence**: we ask git what it tracks rather than reading the
+    rules and believing them. Kind 26.
 
-    ## Друга редакція: перша була вразлива до тієї самої вади
+    ## Second version: the first was vulnerable to the same fault
 
-    Знахідка М2 від `05:26Z`, і вони її випробували, а не вичитали. У
-    першій редакції теки кешу стояли переліком просто тут:
+    M2's finding at `05:26Z`, and they tested it rather than read it. In
+    the first version the cache directories were simply listed here:
 
         git ls-files -- source-cache dzherela-kesh
 
-    Вони поклали відстежений файл у `sources-v3/` — ворота промовчали.
+    They put a tracked file in `sources-v3/` and the gate said nothing.
 
-    > Ворота, збудовані проти роду 26, вразливі до роду 26: перелік імен
-    > усередині них **сам є копією імені шляху**, і наступне
-    > перейменування або перепише його (знявши покриття зі старого
-    > імені), або промине нове.
+    > A gate built against kind 26 is vulnerable to kind 26: the list of
+    > names inside it **is itself a copy of a path name**, and the next
+    > rename either rewrites it (removing cover from the old name) or
+    > misses the new one.
 
-    Тому кеш **оголошує себе сам** — тим самим способом, яким наші
-    породжені документи називають свій генератор, а всі документи —
-    свій рід:
+    So the cache **declares itself** — the same way our generated
+    documents name their generator and every document names its kind:
 
-    > **Тека, у якій лежить `MANIFEST.md`, є кешем.**
+    > **A directory containing a `MANIFEST.md` is a cache.**
 
-    Перелік імен лишається, але вже не як означення кешу, а як
-    **історія**: `dzherela-kesh` більше ніде не існує й існувати не
-    буде, і саме тому його треба назвати — у чужому контейнері він ще
-    є. Ці рядки не переписує жодне перейменування; вони описують минуле,
-    а минуле не перейменовують.
+    The list of names stays, but no longer as the definition of a cache —
+    as **history**: `dzherela-kesh` exists nowhere any more and never will
+    again, and that is exactly why it must be named, because in somebody
+    else's container it still does. No rename rewrites these lines; they
+    describe the past, and the past is not renamed.
 
-    Чого ця форма **не** ловить, і це сказано вголос: теку кешу без
-    маніфесту. Такої в нас немає й бути не має — маніфест і є те, заради
-    чого кеш існує, — але перевірка про неї не знає.
-    """
+    What this form does **not** catch, said aloud: a cache directory with
+    no manifest. We have none and should have none — the manifest is the
+    whole point of keeping a cache."""
     import subprocess
-    teky = set(HISTORICAL_CACHES)
+    dirs = set(HISTORICAL_CACHES)
     for p in ROOT.rglob("MANIFEST.md"):
         if ".git/" in p.as_posix():
             continue
-        teky.add(p.parent.relative_to(ROOT).as_posix())
+        dirs.add(p.parent.relative_to(ROOT).as_posix())
     r = subprocess.run(["git", "ls-files"], cwd=ROOT,
                        capture_output=True, text=True)
     for x in r.stdout.split():
         if x.endswith("/MANIFEST.md"):
-            teky.add(x.rsplit("/", 1)[0])
-    if not teky:
+            dirs.add(x.rsplit("/", 1)[0])
+    if not dirs:
         return []
-    r = subprocess.run(["git", "ls-files", "--", *sorted(teky)], cwd=ROOT,
+    r = subprocess.run(["git", "ls-files", "--", *sorted(dirs)], cwd=ROOT,
                        capture_output=True, text=True)
-    lyshni = [x for x in r.stdout.split()
-              if x and not x.endswith("/MANIFEST.md")]
-    if not lyshni:
+    extra = [x for x in r.stdout.split()
+             if x and not x.endswith("/MANIFEST.md")]
+    if not extra:
         return []
-    return [f"у git відстежено {len(lyshni)} файлів кешу — має бути лише "
-            f"MANIFEST.md; перші: {', '.join(lyshni[:3])}"]
+    return [f"git tracks {len(extra)} cache files — there must be only "
+            f"MANIFEST.md; first: {', '.join(extra[:3])}"]
 
 
 if __name__ == "__main__":

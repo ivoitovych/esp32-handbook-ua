@@ -277,7 +277,7 @@ self-checks:
 	@$(PY) factcheck/tools/maintenance.py --samoperevirka
 	@$(PY) factcheck/tools/doc_kind.py --samoperevirka
 	@$(PY) factcheck/tools/cache.py --samoperevirka
-	@$(PY) factcheck/tools/docs.py --proba
+	@$(PY) factcheck/tools/docs.py --demo
 
 # Кожна точка входу технології, а не лише ті, що у воротах.
 #
