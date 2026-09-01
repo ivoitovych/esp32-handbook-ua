@@ -118,13 +118,18 @@ def repair(text: str) -> str:
 def read_dir(directory: Path) -> tuple[list[dict], list[str], list[str]]:
     """Every record in a directory of dumps.
 
-    Returns `(records, repaired, broken)`. Each record gets a `_fayl`
+    Returns `(records, repaired, broken)`. A file that parses but whose
+    records name no unit is **not a dump** — it is something an executor
+    saved here — and is skipped by name rather than ingested.
+
+    Each record gets a `_fayl`
     field saying which file it came from — without it the spread between
     helpers cannot be counted, and that spread is the main quantity here.
     """
     records: list[dict] = []
     repaired: list[str] = []
     broken: list[str] = []
+    foreign: list[str] = []
     if not directory.exists():
         return records, repaired, broken
 
@@ -141,6 +146,18 @@ def read_dir(directory: Path) -> tuple[list[dict], list[str], list[str]]:
                 continue
         if not isinstance(recs, list):
             broken.append(f.name)
+            continue
+        # **A dump directory is not a scratch directory.** An executor
+        # downloading a source may save it beside its answers, and every
+        # `*.yaml` here was read as a dump. That one was caught only
+        # because it failed to parse; a downloaded YAML that happened to
+        # be a list of mappings would have entered the digest silently as
+        # somebody's answers.
+        #
+        # A dump record names the unit it answers. Nothing else is a dump.
+        if not any(isinstance(z, dict) and (z.get("unit") or z.get("odynycya"))
+                   for z in recs):
+            foreign.append(f.name)
             continue
         for z in recs:
             if isinstance(z, dict):

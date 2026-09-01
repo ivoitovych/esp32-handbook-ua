@@ -525,6 +525,15 @@ def main() -> int:
         # and that one.
         bloky_f = [b if b != 'VERDICTS-VERDICT-TEST' else 'VERDICTS-EXTERNAL'
                    for b in ZAHOLOVOK_BLOKY]
+        # A processing strategy is part of the order, so it is part of the
+        # order's version. Two arms differing only here are joinable in
+        # the ledger and distinguishable by their `order_version` — which
+        # is the whole reason a version exists.
+        if "--strategy" in sys.argv:
+            arm = sys.argv[sys.argv.index("--strategy") + 1]
+            blok = {"sequential": "STRATEGY-SEQUENTIAL",
+                    "triage": "STRATEGY-TRIAGE"}[arm]
+            bloky_f = bloky_f[:-1] + ["LOCATION", blok] + bloky_f[-1:]
         shapka = task_spec.sklasty(bloky_f, zaholovok=ramka)
     else:
         shapka = zaholovok(klas=klas, nasinnya=nasinnya,

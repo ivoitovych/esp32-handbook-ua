@@ -3060,6 +3060,61 @@ machine: the quote is searched for **as a substring** in the document
 you named. That is why a retelling dies, and why an honest "did not
 find it" survives and saves the next person the same search.
 
+### [LOCATION] Say where in the document, not only which document
+
+Every answer that names a source must also name **where in it** — the
+section heading, the line, the table, the register name. Add a `where:`
+field beside `source:`.
+
+    where: "section 6.2.1, Recommended Operating Conditions"
+    where: "line defining SOC_UART_NUM"
+
+Why this is required here. Normally the count of tool calls tells honest
+work from rubber-stamping: an honest wave makes 66–89 calls for 25–30
+units, a broken one 14–18 for 25. This order lets you fetch documents in
+bulk before you begin, which is sensible and which **removes that
+signal** — every batch then looks like one download and twenty answers.
+
+`where:` replaces it. Twenty units judged honestly against one document
+produce twenty different locations in it. Twenty rubber-stamped produce
+one, or none.
+
+A location you cannot give is itself an answer: write the honest verdict
+instead. `where:` is not a field to fill in — it is the evidence that you
+looked.
+
+### [STRATEGY-SEQUENTIAL] Work order: one unit at a time
+
+Fetch whatever documents you expect to need first, in one go. Then work
+**one unit at a time**: read it, decide it, write its entry, and only then
+move to the next.
+
+Do not read ahead. Do not group units and answer them together. A unit
+you have not yet reached should not influence the one you are on.
+
+When you have written an entry, it is finished. Do not revisit it.
+
+### [STRATEGY-TRIAGE] Work order: quick pass, then depth
+
+Fetch whatever documents you expect to need first, in one go. Then make
+**two passes**.
+
+**First pass, over all twenty units.** For each, decide whether it can be
+settled from what you already hold. If it can, settle it now and write
+the entry in full — with `source:`, `where:` and a verbatim `quote:`,
+exactly as any other answer. If it cannot, mark it for the second pass
+and write nothing else.
+
+A unit "settled quickly" is held to the same standard as any other. There
+is no lighter verdict for an easy unit, and marking something easy is not
+an answer.
+
+**Second pass, over what remains.** Take those units one at a time and go
+deeper: other documents, other sections, the source of the code rather
+than its documentation.
+
+Report both passes: in `comment:`, say which pass settled the unit.
+
 ### [FORMAT] How to answer
 
 ```yaml
