@@ -163,8 +163,36 @@ def demo() -> int:
           not check_all({"tools/x.py": 'A = FC / "METHOD.md"'}))
     check("a glob is not checked",
           not check_all({"tools/x.py": 'A = FC / "*.md"'}))
+    check("every tool parses under strict warnings", not parses_strictly())
     print("\nfailures:", 0 if ok else 1)
     return 0 if ok else 1
+
+
+def parses_strictly() -> list[str]:
+    """Every tool must parse with SyntaxWarnings as errors.
+
+    Not pedantry. `doc_kind` reads the tools with `ast.parse` to learn
+    which tool writes which document, and swallowed failures with a bare
+    `continue`. Two tools carrying `\\s` in a docstring stopped parsing
+    under strict warnings, so the tool that writes UNREACHABLE-SOURCES.md
+    ceased to exist for the check — and a generated document was declared
+    canonical, which is the kind error that gets a file edited by hand.
+
+    It happened again while translating `snapshot.py`. Caught by eye the
+    second time; this is so there is no third.
+    """
+    import ast
+    import warnings
+    problems = []
+    for d in TOOL_DIRS:
+        for f in sorted((ROOT / d).glob("*.py")):
+            with warnings.catch_warnings():
+                warnings.simplefilter("error", SyntaxWarning)
+                try:
+                    ast.parse(f.read_text(encoding="utf-8"))
+                except (SyntaxWarning, SyntaxError) as e:
+                    problems.append(f"{d}/{f.name}: {e}")
+    return problems
 
 
 def main() -> int:
@@ -175,7 +203,7 @@ def main() -> int:
             print(f"  {'OK ' if (ROOT / s).exists() else 'MISSING'}  "
                   f"{tool:<26}{s}")
         return 0
-    problems = check_all()
+    problems = check_all() + parses_strictly()
     znaydeno = len(set(literal_paths()))
     if not znaydeno:
         print("   ✗ no literal paths found at all — this check is looking "

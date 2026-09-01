@@ -1,59 +1,63 @@
 #!/usr/bin/env python3
-"""Знімок прив'язок: до яких одиниць чіпляється кожен доказ **сьогодні**.
+"""A snapshot of bindings: which units each evidence attaches to **today**.
 
-## Навіщо це існує
+## Why this exists
 
-Формат картки міняється: одиниця перестане бути рендером
-(`BME280 · Адреса → 0x76`) і стане дослівним рядком книги
+The card format changes: a unit stops being a rendering
+(`BME280 · Адреса → 0x76`) and becomes the book's verbatim row
 (`| BME280 | `0x76`, `0x77` | … |`).
 
-Взірці `zbih` писані під **рендер** — усі 1337 доказів, з них 1265
-чіпляють саме комірки. Після зміни формату жоден із них не збігся б.
+The `match` patterns were written against the **rendering** — all 1337
+evidences, of which 1265 attach to cells. After the format changes not
+one of them would match.
 
-Але доказ прив'язаний не до **тексту**, а до **одиниці**. Текст —
-лише спосіб її назвати. Тож якщо зафіксувати, яку одиницю кожен доказ
-називає **зараз**, то після зміни можна перебудувати взірець із нового
-тексту тієї самої одиниці — і **довести**, що прив'язка та сама.
+But an evidence is bound not to the **text** but to the **unit**. The
+text is only a way of naming it. So if we record which unit each evidence
+names **now**, then after the change we can rebuild the pattern from the
+new text of that same unit — and **prove** the binding is the same.
 
-> Робота не переробляється — вона переїжджає. І переїзд перевірний:
-> знімок до й знімок після мають збігтися одиниця в одиницю.
+> The work is not redone, it moves. And the move is checkable: the
+> snapshot before and the snapshot after must agree unit for unit.
 
-## Чому знімок мусить бути **до**, а не після
+## Why the snapshot must be taken BEFORE
 
-Після зміни формату старі взірці не збігаються ні з чим, і питати
-«а що воно чіпляло?» буде нікого. Знімок — єдиний носій цього знання,
-і він мусить лежати в git до того, як щось зміниться.
+After the format changes the old patterns match nothing, and there is
+nobody left to ask what they used to match. The snapshot is the only
+carrier of that knowledge, and it has to be in git before anything
+changes.
 
-Це те саме, на чому я вже спіймався сьогодні: пересадив хвилю, стерши
-файли попередньої, і 335 доказів стали 324. Тоді врятував `git`. Тут
-рятувати буде нічому — рендер зникне з дерева зовсім.
+This is the same thing I was caught by earlier the same day: I landed a
+wave having deleted the previous one's files, and 335 evidences became
+324. `git` saved it that time. Here there would be nothing to save from —
+the rendering would leave the tree entirely.
 
-## Чому якір — вміст, а не номер
+## Why the anchor is content, not a number
 
-Перший знімок писано за `id` (`T-20-050`), і на першому ж повному
-перегенеруванні реєстру він показав **34 докази, що «загубили»
-одиниці**. Жодної втрати не було.
+The first snapshot was written by `id` (`T-20-050`), and on the very
+first full regeneration of the registry it showed **34 evidences that had
+"lost" their units**. Nothing had been lost.
 
-`id` — це `T-<файл>-<порядковий номер>`. Він зсувається від будь-якої
-правки книги **вище** за одиницю: я виправив абзац у `20-bekap.md`, і
-все, що нижче, поїхало на один номер. Взірці доказів чіпляли ті самі
-речення — але вже під іншими номерами, і звіряння за номерами назвало
-це втратою.
+`id` is `T-<file>-<ordinal>`. It shifts with any edit to the book
+**above** the unit: I fixed a paragraph in `20-bekap.md`, and everything
+below moved by one. The evidences' patterns matched the same sentences —
+under different numbers, and comparing by number called that a loss.
 
-Переклад тих самих прив'язок у `sha` (хеш нормалізованого тексту
-одиниці) дав **0 із 1337 із втратою**.
+Translating the same bindings to `sha` (the hash of the unit's normalised
+text) gave **0 of 1337 with a loss**.
 
-> Номер — адреса, за якою одиницю сьогодні знайти. Хеш — те, чим вона
-> є. Знімок мусить триматися за друге: інакше він репетує на кожну
-> правку книги, а на такий сигнал перестають дивитися — і справжню
-> втрату пропустять разом з рештою.
+> A number is the address at which a unit can be found today. A hash is
+> what it IS. A snapshot must hold on to the second: otherwise it cries
+> out at every edit to the book, and a signal like that stops being
+> looked at — and a real loss goes past with the rest.
 
-Той самий закон уже записаний про картку (номер рядка — локатор, не
-якір). Тут він виявився вдруге, з іншого боку, і коштував півгодини
-розбору. Тож він стоїть у двох місцях навмисно.
+The same law is already written about the card (a line number is a
+locator, not an anchor). Here it appeared a second time, from the other
+side, and cost half an hour to diagnose. So it stands in two places
+deliberately.
 
-    factcheck/tools/snapshot.py <куди.json>          зняти (за `sha`)
-    factcheck/tools/snapshot.py <куди.json> --zvirty звірити з поточним станом
+    factcheck/tools/snapshot.py <out.json>           take one (by `sha`)
+    factcheck/tools/snapshot.py <out.json> --compare compare with the
+                                                     current state
 """
 from __future__ import annotations
 
@@ -69,26 +73,26 @@ import yaml
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-# `T-45-001` — номер одиниці; `f98283f2` — хеш її вмісту. За першим
-# символом видно, у чому писано знімок.
+# `T-45-001` is a unit's number; `f98283f2` is the hash of its content.
+# The first character tells you which one a snapshot was written in.
 RE_ID = re.compile(r"[A-Z]-\d+-\d+")
 
 
-def zibraty(za: str = "sha") -> dict[str, list[str]]:
-    """Ключ — `файл-доказу::назва`, значення — впорядковані якорі одиниць.
+def collect(by: str = "sha") -> dict[str, list[str]]:
+    """Key: `evidence-file::name`; value: the unit anchors, ordered.
 
-    Якір — `sha`, а не `id`. Про різницю — у docstring модуля, розділ
-    «Чому якір — вміст, а не номер».
+    The anchor is `sha`, not `id`. On the difference, see the module
+    docstring, "Why the anchor is content, not a number".
     """
     import factcheck
     import sample
 
-    odyn = [u for k in factcheck.ALL_CLASSES for u in sample.odynyci(k)]
+    units = [u for k in factcheck.ALL_CLASSES for u in sample.odynyci(k)]
 
-    # Ключ запису мусить пережити перевпорядкування файлу, тож у ньому
-    # стоїть порядковий номер: назви в межах файлу повторюються, і без
-    # номера два докази злилися б в один.
-    zapysy: list[dict] = []
+    # A record's key must survive the file being reordered, so it carries
+    # an ordinal: names repeat within a file, and without the ordinal two
+    # evidences would merge into one.
+    records: list[dict] = []
     for f in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
         try:
             z = yaml.safe_load(f.read_text(encoding="utf-8")) or []
@@ -99,68 +103,78 @@ def zibraty(za: str = "sha") -> dict[str, list[str]]:
                 continue
             nz = factcheck.nazva_zapysu(r)[:60]
             r["_znimok_klyuch"] = f"{f.name}::{i}::{nz}"
-            zapysy.append(r)
+            records.append(r)
 
-    zv: dict[str, list[str]] = {k["_znimok_klyuch"]: [] for k in zapysy}
-    # Питаємо **тим самим** добирачем, що й генератор реєстру, і питаємо
-    # його з боку одиниці, а не запису.
+    zv: dict[str, list[str]] = {k["_znimok_klyuch"]: [] for k in records}
+    # We ask the **same** selector the registry generator uses, and we ask
+    # it from the unit's side, not the record's.
     #
-    # Різниця не косметична. `vsi_kandydaty` має старшинство: якщо хоч
-    # один запис накриває одиницю точним `sha`, взірці інших записів на
-    # неї вже не діють. Знімок, що рахував би взірці окремо, показував би
-    # прив'язку, якої насправді немає, — і мовчав би саме тоді, коли
-    # прив'язки переїжджають зі взірця на хеш, тобто рівно тоді, коли
-    # він потрібен.
-    for u in odyn:
-        for z in factcheck.vsi_kandydaty(zapysy, u["sha"], u["tekst"]):
-            zv[z["_znimok_klyuch"]].append(u[za])
+    # The difference is not cosmetic. `vsi_kandydaty` has precedence: if
+    # any record covers a unit by exact `sha`, the patterns of other
+    # records no longer apply to it. A snapshot that counted patterns
+    # separately would show a binding that does not exist — and would go
+    # quiet exactly when bindings move from pattern to hash, which is
+    # exactly when it is needed.
+    for u in units:
+        for z in factcheck.vsi_kandydaty(records, u["sha"], u["tekst"]):
+            zv[z["_znimok_klyuch"]].append(u[by])
     return {k: sorted(v) for k, v in zv.items()}
 
 
 def main() -> int:
     p = argparse.ArgumentParser()
-    p.add_argument("fayl", type=Path)
-    p.add_argument("--zvirty", action="store_true")
+    p.add_argument("out_file", type=Path)
+    p.add_argument("--compare", "--zvirty", dest="compare",
+                   action="store_true")
     a = p.parse_args()
 
-    za = "sha"
-    if a.zvirty and a.fayl.exists():
-        zrazok = next((v[0] for v in
-                       json.loads(a.fayl.read_text(encoding="utf-8")).values()
+    by = "sha"
+    if a.compare and a.out_file.exists():
+        sample_value = next((v[0] for v in
+                       json.loads(a.out_file.read_text(encoding="utf-8")).values()
                        if v), "")
-        if RE_ID.fullmatch(zrazok):
-            za = "id"
-            print("УВАГА: знімок писано за `id`. Номер одиниці зсувається від "
-                  "будь-якої правки книги вище за неї, тож перенумерацію тут "
-                  "буде показано як втрату. Звіряти варто знімок за `sha`.")
+        if RE_ID.fullmatch(sample_value):
+            by = "id"
+            print("WARNING: this snapshot was written by `id`. A unit's "
+                  "number shifts with any edit to the book above it, so "
+                  "renumbering will be shown here as loss. Compare a "
+                  "snapshot taken by `sha`.")
 
-    teper = zibraty(za)
-    if not a.zvirty:
-        a.fayl.write_text(
-            json.dumps(teper, ensure_ascii=False, indent=1, sort_keys=True),
+    now = collect(by)
+    if not a.compare:
+        a.out_file.write_text(
+            json.dumps(now, ensure_ascii=False, indent=1, sort_keys=True),
             encoding="utf-8")
-        pryv = sum(len(v) for v in teper.values())
-        pusti = sum(1 for v in teper.values() if not v)
-        print(f"знімок: доказів {len(teper)}, прив'язок {pryv}, "
-              f"з них холостих {pusti} → {a.fayl}")
+        bindings = sum(len(v) for v in now.values())
+        idle = sum(1 for v in now.values() if not v)
+        print(f"snapshot: evidences {len(now)}, bindings {bindings}, "
+              f"of them idle {idle} → {a.out_file}")
+        # Нуль доказів — не «нічого не прив'язано», а «нема чого знімати».
+        # Знімок порожнього дерева виглядає як знімок, і звірка з ним
+        # згодом покаже «втрачено все» або «не змінилося нічого» —
+        # залежно від того, з якого боку дивитися.
+        if not now:
+            print("   ✗ no evidences collected — this snapshot would record "
+                  "nothing and\n     compare clean against anything")
+            return 1
         return 0
 
-    bulo = json.loads(a.fayl.read_text(encoding="utf-8"))
-    znykly = [k for k in bulo if k not in teper]
-    novi = [k for k in teper if k not in bulo]
-    zminyly = {k: (bulo[k], teper[k]) for k in bulo
-               if k in teper and bulo[k] != teper[k]}
-    vtracheni = {k: sorted(set(v[0]) - set(v[1]))
-                 for k, v in zminyly.items() if set(v[0]) - set(v[1])}
+    was = json.loads(a.out_file.read_text(encoding="utf-8"))
+    gone = [k for k in was if k not in now]
+    added = [k for k in now if k not in was]
+    changed = {k: (was[k], now[k]) for k in was
+               if k in now and was[k] != now[k]}
+    lost = {k: sorted(set(v[0]) - set(v[1]))
+                 for k, v in changed.items() if set(v[0]) - set(v[1])}
 
-    print(f"доказів у знімку {len(bulo)}, зараз {len(teper)}")
-    print(f"  зникло записів     {len(znykly)}")
-    print(f"  нових записів      {len(novi)}")
-    print(f"  змінили прив'язку  {len(zminyly)}")
-    print(f"  **втратили одиниці** {len(vtracheni)}")
-    for k, v in list(vtracheni.items())[:12]:
-        print(f"     ✗ {k[:70]}\n        загубив: {', '.join(v[:6])}")
-    return 1 if (vtracheni or znykly) else 0
+    print(f"evidences in the snapshot {len(was)}, now {len(now)}")
+    print(f"  records gone       {len(gone)}")
+    print(f"  records added      {len(added)}")
+    print(f"  bindings changed   {len(changed)}")
+    print(f"  **units lost**     {len(lost)}")
+    for k, v in list(lost.items())[:12]:
+        print(f"     ✗ {k[:70]}\n        lost: {', '.join(v[:6])}")
+    return 1 if (lost or gone) else 0
 
 
 if __name__ == "__main__":
