@@ -13,7 +13,7 @@ zone. That second half is the one that matters — the foundation
 acquired two new Ukrainian documents in a single afternoon while
 every check was green.
 
-**Remaining: 47 of 70 files.** Done: 23.
+**Remaining: 45 of 70 files.** Done: 25.
 
 ## Foundation
 
@@ -26,7 +26,6 @@ every check was green.
 - `factcheck/reports/REFUTED.md` — 94 %
 - `factcheck/reports/MEASURE-NO-SIGNAL.md` — 94 %
 - `factcheck/reports/SWEEP-NO-SIGNAL.md` — 93 %
-- `factcheck/reports/QUOTES.md` — 92 %
 - `factcheck/reports/BRIEF-LEADS.md` — 84 %
 - `factcheck/reports/TRACES.md` — 82 %
 - `factcheck/reports/BOOK-VS-SOURCES.md` — 77 %
@@ -64,7 +63,6 @@ every check was green.
 - `factcheck/reports/BRIEF-SAMPLE.md` — 26 %
 - `factcheck/tools/triage.py` — 25 %
 - `factcheck/tools/name_lists.py` — 25 %
-- `factcheck/tools/layer3.py` — 24 %
 - `factcheck/tools/naming.py` — 22 %
 - `factcheck/tools/bind_by_hash.py` — 14 %
 - `factcheck/tools/deslang.py` — 11 %
