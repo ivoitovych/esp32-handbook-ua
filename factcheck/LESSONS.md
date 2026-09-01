@@ -245,6 +245,23 @@ work will be re-checked.
 
 ### Reading the results
 
+**Caution and laziness look identical in the counts and separate under
+reading.** One arm of a paired run returned nearly twice as many
+"unreachable" verdicts as the other, which reads as giving up. Reading
+the eight units where the arms directly contradicted each other: the
+cautious arm had genuinely given up on **2**, and the confident arm was
+**fabricating on 6** — three of the six citing a repository's README as
+the source, one citing an operating-system kernel's README as the source
+for a user-space tool.
+
+> Before calling an executor lazy, take the units where it refused and
+> another did not, and check the other one's work.
+
+**Agreement between independent runs predicts quality.** On the same 200
+units judged twice, 16 of 27 layer-2 passes were agreed by both runs, but
+only 3 of 13 failures were. Agreement is cheap to compute and worth more
+than either run's confidence.
+
 **High yield is an alarm, not a success.** The executor producing the
 most confirmations produced the worst quotes: six of the run's nine false
 extracts came from the one file that looked best by every other measure —
@@ -287,6 +304,17 @@ failures is caught mechanically.
 **Layer 2 has no mechanical form and never will.** Whether an extract
 supports a claim is human work. Saying so plainly is better than
 pretending a percentage covers it.
+
+**And it rejects a large fraction of what layer 3 passes.** Measured
+twice: about a quarter on one wave, **32 % on another** (13 of 40
+survivors). The failures are verbatim and irrelevant — a table heading
+offered as proof of a capability, a quote about protocols offered as
+proof about a different feature, a US timezone string offered as proof of
+another country's daylight-saving rule.
+
+> A verbatim quote proves the text exists. It does not begin to prove
+> the text is about the claim. Reporting layer-3 survival as if it were
+> correctness overstates the work by a third.
 
 **A fourth layer is missing: book against book.** The registry checks the
 book against sources but not against itself, and some of the worst errors
@@ -751,6 +779,22 @@ distinguishes "not checked" from "not a claim".
 
 **Nothing detects a copy of a fact.** Sixteen were found by reading; a
 seventeenth would be found the same way.
+
+**A naming convention standing in for a definition.** A run gate read
+`q*.yaml` because every batch file had happened to start with `q`. A wave
+whose files were named otherwise would have been read as **zero
+answers** — and "no answers" is indistinguishable from a wave nobody ran.
+A dump is a file whose records name units; that is a definition, and the
+glob was not one. The same shape as a cache defined by a list of
+directory names rather than by containing a manifest.
+
+**A batching decision can disable an honesty signal.** Tool calls per
+unit told diligence from rubber-stamping — until an order permitted
+fetching every document up front, after which every executor fell below
+the floor. The replacement was to require the **location within** the
+document, not only the document: twenty units judged honestly against one
+file give twenty different locations. Worth stating generally: **changing
+how work is done can silently retire the measure that watched it.**
 
 **A check that reads source literals cannot see computed paths.** The one
 case that fell into that gap wrote 92 files into a deleted directory and
