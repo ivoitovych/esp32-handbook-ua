@@ -64,6 +64,7 @@ import yaml
 
 import factcheck
 
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 DOKAZY = ROOT / "factcheck" / "evidence"
 KESH = ROOT / "factcheck" / "source-cache"
@@ -390,7 +391,7 @@ RE_ID_DOKUMENTA = re.compile(
 RE_DZHERELO_VSEREDYNI = re.compile(
     r"власн\w* (?:код|твердженн|текст)|розділ[ауі]?\s*\d|"
     r"додат\w+\s+[A-EА-Д]|картк\w+\s+К?\d|"
-    r"manual/|kartky/|dodatky/|inserts/", re.I)
+    r"(?:%s)/" % "|".join(config.groups()), re.I)
 
 
 def dzherelo_vseredyni(z: dict) -> bool:
@@ -658,7 +659,7 @@ def root_by_verification(povnyy: str, skorocheno: str) -> str | None:
 
 
 RE_SHLYAKH_KNYHY = re.compile(
-    r"\b(?:manual|kartky|dodatky|inserts)/[\w.\-]+\.md\b")
+    r"\b(?:%s)/[\w.\-]+\.md\b" % "|".join(config.groups()))
 
 
 def knyzhkovi_dzherela(z: dict) -> list[Path]:

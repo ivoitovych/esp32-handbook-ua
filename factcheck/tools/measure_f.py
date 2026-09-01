@@ -47,6 +47,7 @@ import math
 import sys
 from pathlib import Path
 
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
@@ -111,7 +112,7 @@ PIDPYSY = {
 RE_SAMA_KNYHA = re.compile(
     r"esp32-handbook"           # репозиторій довідника під будь-яким власником
     r"|ivoitovych|voytovych"    # зокрема вигаданий із імені автора
-    r"|(?:^|/)(?:manual|kartky|dodatky|inserts|factcheck)/",
+    r"|(?:^|/)(?:%s|factcheck)/" % "|".join(config.groups()),
     re.I)
 
 

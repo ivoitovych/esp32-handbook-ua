@@ -37,12 +37,14 @@ import re
 import subprocess
 import sys
 
+import config
+import repo
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 STARI_POLYA = {"nazva", "zbih", "klas", "dzherelo", "cytata", "sposib",
                "notatka", "shukaty", "rozrakhunok"}
-KNYZHKOVI_TEKY = {"manual", "dodatky", "kartky", "inserts"}
+KNYZHKOVI_TEKY = set(config.groups())
 
 
 def _yaml_zapysy():
@@ -191,12 +193,22 @@ PYTANNYA = [
 def zvit(md: bool = False, lyshe_vidkryti: bool = False) -> int:
     ryadky = []
     vidkrytykh = 0
+    zlamanykh: list[str] = []
     for imya, mira, zakryte, tsil in PYTANNYA:
         try:
             v = mira()
             vidkryte = not zakryte(v)
         except Exception as e:
-            v, vidkryte = f"! {str(e)[:40]}", True
+            # Виняток, надрукований У СТОВПЧИКУ «виміряно», — це не
+            # вимір. Він стоїть на місці числа, вирівняний як число, і
+            # читається як число: `! name 'repo' is not defined` цілий
+            # день займало рядок «інструментів із транслітерованим
+            # іменем», і пункт виглядав просто відкритим.
+            #
+            # Зламана міра й погана міра — різні події. Рахуємо їх
+            # окремо й називаємо вголос.
+            v, vidkryte = "ЗЛАМАНА", True
+            zlamanykh.append(f"{imya}: {str(e)[:80]}")
         vidkrytykh += bool(vidkryte)
         if lyshe_vidkryti and not vidkryte:
             continue
@@ -209,8 +221,11 @@ def zvit(md: bool = False, lyshe_vidkryti: bool = False) -> int:
         print("| | Питання | Виміряно | Ціль |")
         print("|---|---|---|---|")
     print("\n".join(ryadky))
+    for z in zlamanykh:
+        print(f"   ✗ МІРА ЗЛАМАНА — {z}")
     if not lyshe_vidkryti:
-        print(f"\nвідкритих пунктів: {vidkrytykh} із {len(PYTANNYA)}")
+        print(f"\nвідкритих пунктів: {vidkrytykh} із {len(PYTANNYA)}"
+              + (f"; ЗЛАМАНИХ МІР: {len(zlamanykh)}" if zlamanykh else ""))
     return 0
 
 

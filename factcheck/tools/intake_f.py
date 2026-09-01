@@ -54,12 +54,13 @@ import sys
 
 import yaml
 
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 KESH = ROOT / "factcheck" / "source-cache"
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 KNYHA = re.compile(
-    r"esp32-handbook|ivoitovych|voytovych|/(manual|kartky|dodatky|inserts)/",
+    r"esp32-handbook|ivoitovych|voytovych|/(?:%s)/" % "|".join(config.groups()),
     re.I)
 
 # Що вимагає кожен вердикт. Джерело — таблиця в самому наряді; якщо

@@ -61,6 +61,7 @@ import sys
 from pathlib import Path
 
 import repo
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 BASELINE = ROOT / "factcheck" / "reports" / "LANGUAGE.md"
 
@@ -80,7 +81,7 @@ FROZEN_DIRS = {"history", "archive", "runs", "snapshots", "triage",
                "source-cache"}
 
 # Дзеркала книги: імена й текст ідуть від книги, книга українська.
-KNYHA = {"manual", "dodatky", "kartky", "inserts", "book"}
+KNYHA = set(config.groups()) | {"book"}
 
 
 def cyrillic_share(t: str) -> float:

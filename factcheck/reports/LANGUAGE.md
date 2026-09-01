@@ -52,7 +52,7 @@ every check was green.
 - `factcheck/tools/cache.py` — 48 %
 - `factcheck/tools/cache_identity.py` — 48 %
 - `factcheck/tools/work_orders_f.py` — 48 %
-- `factcheck/tools/schema.py` — 45 %
+- `factcheck/tools/schema.py` — 46 %
 - `factcheck/tools/land_c.py` — 43 %
 - `factcheck/tools/coverage.py` — 43 %
 - `factcheck/tools/intake_wave2.py` — 43 %
@@ -62,10 +62,10 @@ every check was green.
 - `factcheck/tools/layer1.py` — 38 %
 - `factcheck/reports/BRIEF-QUOTES.md` — 37 %
 - `factcheck/tools/doc_kind.py` — 33 %
+- `factcheck/tools/maintenance.py` — 33 %
 - `factcheck/tools/intake_f.py` — 33 %
 - `factcheck/tools/entry_points.py` — 32 %
 - `factcheck/tools/language.py` — 31 %
-- `factcheck/tools/maintenance.py` — 31 %
 - `factcheck/tools/task_spec.py` — 28 %
 - `factcheck/reports/BRIEF-SAMPLE.md` — 26 %
 - `factcheck/tools/triage.py` — 25 %

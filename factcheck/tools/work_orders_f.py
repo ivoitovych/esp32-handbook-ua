@@ -102,7 +102,7 @@ def konteksty() -> dict[str, str]:
     першим, і картка обіцяла б оточення, якого ніхто не звіряв.
     """
     out: dict[str, str] = {}
-    for grupa in ("manual", "dodatky", "kartky", "inserts"):
+    for grupa in config.groups():
         for f in sorted((config.cards_root() / grupa).glob("*.md")):
             for m in RE_KONTEKST.finditer(f.read_text(encoding="utf-8")):
                 k = (m.group("kontekst") or "").strip()

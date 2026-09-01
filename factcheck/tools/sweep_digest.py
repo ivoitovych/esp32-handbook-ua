@@ -46,7 +46,7 @@ import yaml
 # адресу теж не йдуть, тому перевіряємо власника й теки книги.
 RE_SAMA_KNYHA = re.compile(
     r"esp32-handbook|ivoitovych|voytovych"
-    r"|(?:^|/)(?:manual|kartky|dodatky|inserts|factcheck)/", re.I)
+    r"|(?:^|/)(?:%s|factcheck)/" % "|".join(config.groups()), re.I)
 
 POTREBUYE_CYTATY = {"pidtverdzheno", "sperechayetsya"}
 

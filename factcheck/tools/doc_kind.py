@@ -47,6 +47,7 @@ import re
 import sys
 
 import repo
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 FC = ROOT / "factcheck"
 
@@ -142,8 +143,7 @@ def hto_pyshe() -> dict[str, set[str]]:
 # `f3f48735-README.md` з ESP-IDF позначки роду означало б вимагати, щоб
 # ми правили чужий текст; а рід «канонічний» на завантаженій копії був
 # би прямою неправдою про те, хто ним володіє.
-NE_DOKUMENTY = {"manual", "dodatky", "kartky", "inserts", "runs", "archive",
-                "source-cache"}
+NE_DOKUMENTY = set(config.groups()) | {"runs", "archive", "source-cache"}
 
 
 def dokumenty() -> list:

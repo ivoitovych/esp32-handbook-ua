@@ -160,7 +160,7 @@ def perevirka_budovy() -> list[tuple[str, str]]:
             yakori.update(re.findall(r"^#{1,6} .*\{#([^}]+)\}", t, re.M))
             posylannya.update(re.findall(r"\]\(#([^)]+)\)", t))
             m = re.match(r"(\d+)-", p.name)
-            if m and g == "manual":
+            if m and g == GRUPY[0]:
                 rozdily[m.group(1).zfill(2)] = True
                 h = t.split("\n")[0]
                 hm = re.match(r"#\s*(\d+)\.", h)

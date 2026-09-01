@@ -11,7 +11,7 @@ measured remainder of a migration, so that progress is a number rather
 than an impression. A false positive here is harmless: it sits in the
 list and never fires again.
 
-**Remaining: 224.**
+**Remaining: 220.**
 
 - `--agents`
 - `--bez-merezhi`
@@ -60,7 +60,6 @@ list and never fires again.
 - `PAKETIV_NA_NARYAD`
 - `PEREKLAD_SMITTYA`
 - `POCHATOK`
-- `POKAZHCHYK`
 - `PORO_ZHNI`
 - `POTREBUYE_CYTATY`
 - `POTREBUYUT_VIDPOVIDI`
@@ -109,10 +108,8 @@ list and never fires again.
 - `U_VOROTAKH`
 - `VIKNO_MEZHA`
 - `VLASNYY`
-- `VNUTRISHNYA`
 - `VYNYATKY`
 - `VZIRTSI`
-- `ZOVNISHNIY`
 - `ZVIT_PORROZHNIY`
 - `_khto_vede`
 - `_vzirets`
@@ -203,7 +200,6 @@ list and never fires again.
 - `tekst_dzherela`
 - `tekst_fayla`
 - `tekst_pdf`
-- `teksty_odynyc`
 - `tema_dlya`
 - `transliterovane`
 - `tretiy_shar`

@@ -55,6 +55,7 @@ import sys
 from pathlib import Path
 
 import repo
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 
 RE_SPYSOK = re.compile(
@@ -68,7 +69,7 @@ RE_FAYL = re.compile(r"[\w-]\.(md|py|yaml|json|rst|txt)$")
 
 # Де шукати названий файл. Перелік може називати документ без теки —
 # `TASK-SPEC.md`, а не `factcheck/TASK-SPEC.md`.
-TEKY = ("", "factcheck", "tools", "zvyazok", "manual", "dodatky")
+TEKY = ("", "factcheck", "tools", "zvyazok") + config.groups()
 
 
 def isnuye(imya: str) -> bool:

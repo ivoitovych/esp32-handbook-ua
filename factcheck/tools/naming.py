@@ -36,6 +36,7 @@ import sys
 from pathlib import Path
 
 import repo
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 BASELINE = ROOT / "factcheck" / "reports" / "TRANSLITERATION.md"
 
@@ -82,7 +83,7 @@ def transliterovane(w: str) -> bool:
 # Теки карток дзеркалять книгу, а книга українська. Їхні імена — не
 # борг: `manual/05-elektronika.md` названо так тому, що так зветься
 # розділ. Решта `factcheck/` — технологія, і вона переїжджає.
-CARD_DIRS = {"manual", "dodatky", "kartky", "inserts", "triage",
+CARD_DIRS = set(config.groups()) | {"triage",
              # `source-cache` — імена чужих файлів. `ch340.pdf`,
              # `adc_oneshot.rst`, `CMakeLists.txt` не наш борг: ми їх не
              # називали й перейменувати не можемо, не порвавши маніфест.
@@ -98,7 +99,7 @@ CARD_DIRS = {"manual", "dodatky", "kartky", "inserts", "triage",
 def stemy_knyhy() -> set[str]:
     """Імена файлів самої книги — вони українські й такими лишаються."""
     out = set()
-    for d in ("manual", "dodatky", "kartky", "inserts"):
+    for d in config.groups():
         for f in (ROOT / d).glob("*.md"):
             out.add(f.stem)
             out.add(re.sub(r"^[0-9a-z]+-", "", f.stem))

@@ -25,6 +25,7 @@ from pathlib import Path
 
 import yaml
 
+import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 # Реєстрів може бути кілька: головний і по одному на паралельного
 # супровідника (`REFUTED-M2.md`). Так вони не б'ються при злитті —
@@ -40,7 +41,7 @@ REYESTRY = sorted((ROOT / "factcheck").glob("REFUTED*.md")) + \
 
 # Де шукаємо. Реєстр спростованого й звіти рецензій цитують хибні
 # формулювання за призначенням — там вони доречні.
-DE = ("kartky", "manual", "dodatky", "inserts", "docs")
+DE = config.groups() + ("docs",)
 NE_CHIPATY = ("factcheck/REFUTED", "factcheck/reports/REFUTED",
                "factcheck/archive/", "reviews/", "zvyazok/")
 

@@ -145,7 +145,7 @@ def perevir_zapysy(zap) -> list[str]:
 
 def perevir_kartky() -> list[str]:
     bidy = []
-    for g in ("manual", "kartky", "dodatky", "inserts"):
+    for g in config.groups():
         for f in sorted((config.cards_root() / g).glob("*.md")):
             t = f.read_text(encoding="utf-8")
             shmatky = RE_KARTKA.split(t)

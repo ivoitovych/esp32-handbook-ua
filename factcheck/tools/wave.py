@@ -103,7 +103,7 @@ def konteksty() -> dict[str, str]:
     """`id` → оточення в книзі, з уже зрендерених карток."""
     import layer1
     out: dict[str, str] = {}
-    for g in ("manual", "dodatky", "kartky", "inserts"):
+    for g in config.groups():
         d = config.cards_root() / g
         if not d.exists():
             continue
