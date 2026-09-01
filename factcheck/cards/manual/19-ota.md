@@ -1,0 +1,2827 @@
+# Фактчекінг: `manual/19-ota.md`
+
+Одиниць твердження: **100**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
+
+Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
+
+**Що в блоці «Твердження, коротко».** Для прози, рядка коду й зв'язки схеми — **дослівний текст книги**. Для комірки таблиці — рендер (`BME280 · Адреса → 0x76`), якого в книзі немає; дослівний рядок такої одиниці стоїть окремим блоком нижче.
+
+---
+
+<!-- fc id:T-19-001 sha:609f0617 src:manual/19-ota.md:3 status:verbatim -->
+### T-19-001 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> OTA (over-the-air) — оновлення прошивки без фізичного доступу до плати.
+
+**Контекст**
+
+```
+# 19. OTA-оновлення {#ota}
+
+OTA (over-the-air) — оновлення прошивки без фізичного доступу до плати.
+Пристрій сам завантажує новий образ, кладе його в резервну область флешу
+і після перезавантаження стартує з неї.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** source-cache/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
+- **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
+- **Нотатка:** Документ визначає OTA як механізм оновлення без фізичного доступу.
+- **Прохід:** m2-wave3
+
+---
+
+<!-- fc id:T-19-002 sha:b5ef6d64 src:manual/19-ota.md:4 status:no-external-signal -->
+### T-19-002 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Пристрій сам завантажує новий образ, кладе його в резервну область флешу і після перезавантаження стартує з неї.
+
+**Контекст**
+
+```
+# 19. OTA-оновлення {#ota}
+
+OTA (over-the-air) — оновлення прошивки без фізичного доступу до плати.
+Пристрій сам завантажує новий образ, кладе його в резервну область флешу
+і після перезавантаження стартує з неї.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-003 sha:c80b7682 src:manual/19-ota.md:7 status:no-external-signal -->
+### T-19-003 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Це та функція, яка перетворює виріб із «зробив і забув» на щось, що можна супроводжувати.
+
+**Контекст**
+
+```
+# 19. OTA-оновлення {#ota}
+
+Це та функція, яка перетворює виріб із «зробив і забув» на щось, що можна
+супроводжувати. І одночасно та, що найлегше перетворює двадцять робочих
+пристроїв на двадцять цеглинок, якщо зроблена наївно.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-004 sha:8ec2fd0d src:manual/19-ota.md:8 status:no-external-signal -->
+### T-19-004 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> І одночасно та, що найлегше перетворює двадцять робочих пристроїв на двадцять цеглинок, якщо зроблена наївно.
+
+**Контекст**
+
+```
+# 19. OTA-оновлення {#ota}
+
+Це та функція, яка перетворює виріб із «зробив і забув» на щось, що можна
+супроводжувати. І одночасно та, що найлегше перетворює двадцять робочих
+пристроїв на двадцять цеглинок, якщо зроблена наївно.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-005 sha:76464490 src:manual/19-ota.md:13 status:verbatim -->
+### T-19-005 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Розбивка з OTA має **два розділи для застосунку** замість одного:
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Розбивка з OTA має **два розділи для застосунку** замість одного:
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** source-cache/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
+- **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
+- **Нотатка:** Розбивка для OTA вимагає щонайменше двох розділів (ota_0 та ota_1)
+- **Прохід:** m2-wave3
+
+---
+
+<!-- fc id:T-19-006 sha:41ec9b71 src:manual/19-ota.md:15 status:unchecked -->
+### T-19-006 · tablycya-shapka · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> | Назва | Тип | Що це |
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Розбивка з OTA має **два розділи для застосунку** замість одного:
+
+| Назва | Тип | Що це |
+|---|---|---|
+| `otadata` | data | покажчик: з якого слоту стартувати |
+| `ota_0` | app | слот A |
+| `ota_1` | app | слот B |
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-007 sha:ff82e6cf src:manual/19-ota.md:17 status:verbatim -->
+### T-19-007 · komirka · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> `otadata` · Тип → data
+
+**Дослівно з книги**
+
+```
+| `otadata` | data | покажчик: з якого слоту стартувати |
+```
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Розбивка з OTA має **два розділи для застосунку** замість одного:
+
+| Назва | Тип | Що це |
+|---|---|---|
+| `otadata` | data | покажчик: з якого слоту стартувати |
+| `ota_0` | app | слот A |
+| `ota_1` | app | слот B |
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+- **Дослівно з джерела:**
+  > An OTA data partition (type ``data``, subtype ``ota``) must be included
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+- **Нотатка:** otadata is explicitly described as type data with subtype ota
+- **Прохід:** nosignal-19-ota
+
+---
+
+<!-- fc id:T-19-008 sha:c7c9e545 src:manual/19-ota.md:17 status:unchecked -->
+### T-19-008 · komirka · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> `otadata` · Що це → покажчик: з якого слоту стартувати
+
+**Дослівно з книги**
+
+```
+| `otadata` | data | покажчик: з якого слоту стартувати |
+```
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Розбивка з OTA має **два розділи для застосунку** замість одного:
+
+| Назва | Тип | Що це |
+|---|---|---|
+| `otadata` | data | покажчик: з якого слоту стартувати |
+| `ota_0` | app | слот A |
+| `ota_1` | app | слот B |
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-009 sha:d66c4921 src:manual/19-ota.md:18 status:verbatim -->
+### T-19-009 · komirka · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> `ota_0` · Тип → app
+
+**Дослівно з книги**
+
+```
+| `ota_0` | app | слот A |
+```
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Розбивка з OTA має **два розділи для застосунку** замість одного:
+
+| Назва | Тип | Що це |
+|---|---|---|
+| `otadata` | data | покажчик: з якого слоту стартувати |
+| `ota_0` | app | слот A |
+| `ota_1` | app | слот B |
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > ota_0,    app,  ota_0,   0x110000, 1M,
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+- **Нотатка:** ota_0 partition is explicitly defined with type app
+- **Прохід:** nosignal-19-ota
+
+---
+
+<!-- fc id:T-19-010 sha:5ee59b5f src:manual/19-ota.md:18 status:unchecked -->
+### T-19-010 · komirka · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> `ota_0` · Що це → слот A
+
+**Дослівно з книги**
+
+```
+| `ota_0` | app | слот A |
+```
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Розбивка з OTA має **два розділи для застосунку** замість одного:
+
+| Назва | Тип | Що це |
+|---|---|---|
+| `otadata` | data | покажчик: з якого слоту стартувати |
+| `ota_0` | app | слот A |
+| `ota_1` | app | слот B |
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-011 sha:94e079d1 src:manual/19-ota.md:19 status:verbatim -->
+### T-19-011 · komirka · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> `ota_1` · Тип → app
+
+**Дослівно з книги**
+
+```
+| `ota_1` | app | слот B |
+```
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Розбивка з OTA має **два розділи для застосунку** замість одного:
+
+| Назва | Тип | Що це |
+|---|---|---|
+| `otadata` | data | покажчик: з якого слоту стартувати |
+| `ota_0` | app | слот A |
+| `ota_1` | app | слот B |
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > ota_1,    app,  ota_1,   0x210000, 1M,
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+- **Нотатка:** ota_1 partition is explicitly defined with type app
+- **Прохід:** nosignal-19-ota
+
+---
+
+<!-- fc id:T-19-012 sha:6c8c58b7 src:manual/19-ota.md:19 status:unchecked -->
+### T-19-012 · komirka · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> `ota_1` · Що це → слот B
+
+**Дослівно з книги**
+
+```
+| `ota_1` | app | слот B |
+```
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Розбивка з OTA має **два розділи для застосунку** замість одного:
+
+| Назва | Тип | Що це |
+|---|---|---|
+| `otadata` | data | покажчик: з якого слоту стартувати |
+| `ota_0` | app | слот A |
+| `ota_1` | app | слот B |
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-013 sha:8f05dca6 src:manual/19-ota.md:21 status:verbatim -->
+### T-19-013 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Пристрій виконується зі слоту `ota_0`.
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Працює це так. Пристрій виконується зі слоту `ota_0`. Приходить оновлення
+— воно записується в `ota_1`, при цьому робоча прошивка **не чіпається**
+і продовжує працювати. Коли образ записаний повністю і перевірений,
+змінюється `otadata`, пристрій перезавантажується і стартує зі слоту
+`ota_1`. Наступне оновлення піде у слот `ota_0`.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+- **Дослівно з джерела:**
+  > If no factory app is included in the partition table, the first available OTA slot (usually ``ota_0``) is booted.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+- **Нотатка:** Device boots from ota_0 by default when no factory app is present
+- **Прохід:** nosignal-19-ota
+
+---
+
+<!-- fc id:T-19-014 sha:9f4e8a7e src:manual/19-ota.md:21 status:verbatim -->
+### T-19-014 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Приходить оновлення — воно записується в `ota_1`, при цьому робоча прошивка **не чіпається** і продовжує працювати.
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Працює це так. Пристрій виконується зі слоту `ota_0`. Приходить оновлення
+— воно записується в `ota_1`, при цьому робоча прошивка **не чіпається**
+і продовжує працювати. Коли образ записаний повністю і перевірений,
+змінюється `otadata`, пристрій перезавантажується і стартує зі слоту
+`ota_1`. Наступне оновлення піде у слот `ota_0`.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+- **Дослівно з джерела:**
+  > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+- **Нотатка:** Update is written to non-selected slot while running firmware continues to work
+- **Прохід:** nosignal-19-ota
+
+---
+
+<!-- fc id:T-19-015 sha:32fa0d6d src:manual/19-ota.md:23 status:unchecked -->
+### T-19-015 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Коли образ записаний повністю і перевірений, змінюється `otadata`, пристрій перезавантажується і стартує зі слоту `ota_1`.
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Працює це так. Пристрій виконується зі слоту `ota_0`. Приходить оновлення
+— воно записується в `ota_1`, при цьому робоча прошивка **не чіпається**
+і продовжує працювати. Коли образ записаний повністю і перевірений,
+змінюється `otadata`, пристрій перезавантажується і стартує зі слоту
+`ota_1`. Наступне оновлення піде у слот `ota_0`.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-016 sha:a7a0e9f4 src:manual/19-ota.md:25 status:verbatim -->
+### T-19-016 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Наступне оновлення піде у слот `ota_0`.
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Працює це так. Пристрій виконується зі слоту `ota_0`. Приходить оновлення
+— воно записується в `ota_1`, при цьому робоча прошивка **не чіпається**
+і продовжує працювати. Коли образ записаний повністю і перевірений,
+змінюється `otadata`, пристрій перезавантажується і стартує зі слоту
+`ota_1`. Наступне оновлення піде у слот `ota_0`.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+- **Дослівно з джерела:**
+  > Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+- **Нотатка:** Updates alternate between slots; next update uses previously unused slot
+- **Прохід:** nosignal-19-ota
+
+---
+
+<!-- fc id:T-19-017 sha:81b53a00 src:manual/19-ota.md:27 status:no-external-signal -->
+### T-19-017 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Ключове в цій схемі: **у будь-який момент до перемикання покажчика в пристрої є справна прошивка**.
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Ключове в цій схемі: **у будь-який момент до перемикання покажчика в
+пристрої є справна прошивка**. Обрив зв'язку посеред завантаження,
+зникнення живлення, зіпсований файл — усе це втрачає лише недописаний
+образ у неактивному слоті. Пристрій перезавантажиться в те, що працювало.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-018 sha:9a7f6e60 src:manual/19-ota.md:28 status:no-external-signal -->
+### T-19-018 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Обрив зв'язку посеред завантаження, зникнення живлення, зіпсований файл — усе це втрачає лише недописаний образ у неактивному слоті.
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Ключове в цій схемі: **у будь-який момент до перемикання покажчика в
+пристрої є справна прошивка**. Обрив зв'язку посеред завантаження,
+зникнення живлення, зіпсований файл — усе це втрачає лише недописаний
+образ у неактивному слоті. Пристрій перезавантажиться в те, що працювало.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-019 sha:66862daa src:manual/19-ota.md:30 status:no-external-signal -->
+### T-19-019 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Пристрій перезавантажиться в те, що працювало.
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+Ключове в цій схемі: **у будь-який момент до перемикання покажчика в
+пристрої є справна прошивка**. Обрив зв'язку посеред завантаження,
+зникнення живлення, зіпсований файл — усе це втрачає лише недописаний
+образ у неактивному слоті. Пристрій перезавантажиться в те, що працювало.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-020 sha:276fb12f src:manual/19-ota.md:33 status:unchecked -->
+### T-19-020 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Розділ `factory` при цьому не обов'язковий.
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+::: uvaha
+Розділ `factory` при цьому не обов'язковий. Класична схема «factory +
+ota_0 + ota_1» дає незмінний аварійний образ, з якого завжди можна
+стартувати, але з'їдає ще одну копію застосунку. На флеші 4 МБ це часто
+неможливо. Схема з двох слотів без `factory` — робоча і найпоширеніша.
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-021 sha:b2d52dd0 src:manual/19-ota.md:33 status:no-external-signal -->
+### T-19-021 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Класична схема «factory + ota_0 + ota_1» дає незмінний аварійний образ, з якого завжди можна стартувати, але з'їдає ще одну копію застосунку.
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+::: uvaha
+Розділ `factory` при цьому не обов'язковий. Класична схема «factory +
+ota_0 + ota_1» дає незмінний аварійний образ, з якого завжди можна
+стартувати, але з'їдає ще одну копію застосунку. На флеші 4 МБ це часто
+неможливо. Схема з двох слотів без `factory` — робоча і найпоширеніша.
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-022 sha:e5931173 src:manual/19-ota.md:35 status:derived -->
+### T-19-022 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> На флеші 4 МБ це часто неможливо.
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+::: uvaha
+Розділ `factory` при цьому не обов'язковий. Класична схема «factory +
+ota_0 + ota_1» дає незмінний аварійний образ, з якого завжди можна
+стартувати, але з'їдає ще одну копію застосунку. На флеші 4 МБ це часто
+неможливо. Схема з двох слотів без `factory` — робоча і найпоширеніша.
+:::
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > flash capacity and partition allocation
+- **Спосіб і дата:** curl esp-idf partition-tables.rst, 2026-08-26
+- **Нотатка:** Текст T-17-041 згадує 2 МБ та 4 МБ флешу в модулях. Джерело обговорює розподіл флешу залежно від його розміру.
+- **Прохід:** m2-83-esptool
+
+---
+
+<!-- fc id:T-19-023 sha:1bb643e7 src:manual/19-ota.md:36 status:verbatim -->
+### T-19-023 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Схема з двох слотів без `factory` — робоча і найпоширеніша.
+
+**Контекст**
+
+```
+## Механіка: два слоти і покажчик
+
+::: uvaha
+Розділ `factory` при цьому не обов'язковий. Класична схема «factory +
+ota_0 + ota_1» дає незмінний аварійний образ, з якого завжди можна
+стартувати, але з'їдає ще одну копію застосунку. На флеші 4 МБ це часто
+неможливо. Схема з двох слотів без `factory` — робоча і найпоширеніша.
+:::
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > If you want to conserve flash usage in an OTA project, you can remove the factory partition and use ``ota_0`` instead.
+- **Спосіб і дата:** `curl` на `raw.githubusercontent.com`, гілка `master`, рядок 137. Документ отримано в цій сесії, витяг наведено дослівно — звідси клас `A`. Другий шар зроблено супровідником: витяг звірено з твердженням, а не лише з документом.
+- **Нотатка:** Підтверджує, що схема без `factory` **робоча**, і саме з тієї причини, яку називає книга — економія флешу. Слово «найпоширеніша» цим витягом **не** підтверджується: документація поширеності не міряє. Твердження від цього не хибне, але та його половина лишається без джерела, і це сказано тут навмисно, щоб наступний прохід не порахував її звіреною.
+- **Прохід:** pass-43-ota-bez-factory
+
+---
+
+<!-- fc id:T-19-024 sha:9fb277d5 src:manual/19-ota.md:41 status:verbatim -->
+### T-19-024 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Головне проєктне обмеження OTA — **застосунок займає місце двічі**.
+
+**Контекст**
+
+```
+## Ціна: місце у флеші
+
+Головне проєктне обмеження OTA — **застосунок займає місце двічі**.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** source-cache/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
+- **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
+- **Нотатка:** Документ підтверджує, що застосунок займає місце двічі в двох OTA слотах.
+- **Прохід:** m2-wave3
+
+---
+
+<!-- fc id:T-19-025 sha:07dadce6 src:manual/19-ota.md:43 status:derived -->
+### T-19-025 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> На флеші 4 МБ це виглядає так: службові області і NVS з'їдають близько 64 КБ, лишається приблизно 3.9 МБ.
+
+**Контекст**
+
+```
+## Ціна: місце у флеші
+
+На флеші 4 МБ це виглядає так: службові області і NVS з'їдають близько
+64 КБ, лишається приблизно 3.9 МБ. Два слоти по 1.5 МБ — це 3 МБ, і на
+файлову систему лишається менш ніж мегабайт. Прошивка з Wi-Fi, TLS і
+веб-інтерфейсом у 1.5 МБ ще вміщається; додайте BLE або великі ресурси —
+уже ні, і тоді слот доводиться збільшувати за рахунок того самого
+мегабайта.
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > flash capacity and partition allocation
+- **Спосіб і дата:** curl esp-idf partition-tables.rst, 2026-08-26
+- **Нотатка:** Текст T-17-041 згадує 2 МБ та 4 МБ флешу в модулях. Джерело обговорює розподіл флешу залежно від його розміру.
+- **Прохід:** m2-83-esptool
+
+---
+
+<!-- fc id:T-19-026 sha:d79fbad6 src:manual/19-ota.md:44 status:unchecked -->
+### T-19-026 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Два слоти по 1.5 МБ — це 3 МБ, і на файлову систему лишається менш ніж мегабайт.
+
+**Контекст**
+
+```
+## Ціна: місце у флеші
+
+На флеші 4 МБ це виглядає так: службові області і NVS з'їдають близько
+64 КБ, лишається приблизно 3.9 МБ. Два слоти по 1.5 МБ — це 3 МБ, і на
+файлову систему лишається менш ніж мегабайт. Прошивка з Wi-Fi, TLS і
+веб-інтерфейсом у 1.5 МБ ще вміщається; додайте BLE або великі ресурси —
+уже ні, і тоді слот доводиться збільшувати за рахунок того самого
+мегабайта.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-027 sha:7be3bc35 src:manual/19-ota.md:45 status:looked-not-found -->
+### T-19-027 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Прошивка з Wi-Fi, TLS і веб-інтерфейсом у 1.5 МБ ще вміщається; додайте BLE або великі ресурси — уже ні, і тоді слот доводиться збільшувати за рахунок того самого мегабайта.
+
+**Контекст**
+
+```
+## Ціна: місце у флеші
+
+На флеші 4 МБ це виглядає так: службові області і NVS з'їдають близько
+64 КБ, лишається приблизно 3.9 МБ. Два слоти по 1.5 МБ — це 3 МБ, і на
+файлову систему лишається менш ніж мегабайт. Прошивка з Wi-Fi, TLS і
+веб-інтерфейсом у 1.5 МБ ще вміщається; додайте BLE або великі ресурси —
+уже ні, і тоді слот доводиться збільшувати за рахунок того самого
+мегабайта.
+```
+
+**Доказ**
+
+- **Статус:** looked-not-found — looked and did not find — the work was done, the source is not visible
+- **Спосіб і дата:** Емпіричне вимірювання або документація IDF про розміри компонентів
+- **Що шукати в джерелі:** Розмір прошивки, Wi-Fi, TLS, веб-сервер, OTA слот
+- **Нотатка:** Твердження про розмір прошивки з конкретними компонентами. Це емпіричне спостереження, джерелом має бути практичне вимірювання або документація IDF. Не знайшов первинного джерела. | 2026-08-28, §5 аудиту: клас named-unreachable (C) вимагає НАЗВАНОГО документа — у цьому записі його не було, стояла лише тема в look_for. За власним законом: не можеш назвати документ — це не C, а unverified. Тему збережено в look_for як підказку, куди дивитися, але це не наряд.
+2026-08-28: клас unverified був хибним — F означає відсутність доказу, тобто доказ про те, що доказу немає. Шукав; що саме відкривав — у looked_at. Клас L лишає одиницю в черзі видимою, на відміну від E, який ховає її назавжди.
+- **Прохід:** m2-97-sample
+
+---
+
+<!-- fc id:T-19-028 sha:65252f58 src:manual/19-ota.md:51 status:unchecked -->
+### T-19-028 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Розбивку під OTA треба закласти **до того, як перший пристрій поїхав**.
+
+**Контекст**
+
+```
+## Ціна: місце у флеші
+
+::: nezvorotne
+Розбивку під OTA треба закласти **до того, як перший пристрій поїхав**.
+OTA оновлює лише образ застосунку — таблиця розділів через OTA не
+оновлюється ніколи. Пристрій, залитий з однією `factory` без слотів OTA,
+неможливо перевести на OTA дистанційно: для цього потрібна повна
+перепрошивка з фізичним доступом.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-029 sha:7678b715 src:manual/19-ota.md:52 status:verbatim -->
+### T-19-029 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> OTA оновлює лише образ застосунку — таблиця розділів через OTA не оновлюється ніколи.
+
+**Контекст**
+
+```
+## Ціна: місце у флеші
+
+::: nezvorotne
+Розбивку під OTA треба закласти **до того, як перший пристрій поїхав**.
+OTA оновлює лише образ застосунку — таблиця розділів через OTA не
+оновлюється ніколи. Пристрій, залитий з однією `factory` без слотів OTA,
+неможливо перевести на OTA дистанційно: для цього потрібна повна
+перепрошивка з фізичним доступом.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** source-cache/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
+- **Нотатка:** Документ підтверджує, що OTA оновлює лише образ застосунку.
+- **Прохід:** m2-wave3
+
+---
+
+<!-- fc id:T-19-030 sha:81c37a98 src:manual/19-ota.md:53 status:unchecked -->
+### T-19-030 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Пристрій, залитий з однією `factory` без слотів OTA, неможливо перевести на OTA дистанційно: для цього потрібна повна перепрошивка з фізичним доступом.
+
+**Контекст**
+
+```
+## Ціна: місце у флеші
+
+::: nezvorotne
+Розбивку під OTA треба закласти **до того, як перший пристрій поїхав**.
+OTA оновлює лише образ застосунку — таблиця розділів через OTA не
+оновлюється ніколи. Пристрій, залитий з однією `factory` без слотів OTA,
+неможливо перевести на OTA дистанційно: для цього потрібна повна
+перепрошивка з фізичним доступом.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-031 sha:039b7725 src:manual/19-ota.md:57 status:unchecked -->
+### T-19-031 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Практично: якщо є хоч найменша ймовірність, що виріб доведеться оновлювати в полі, — OTA-розбивка ставиться одразу, навіть якщо сама функція поки не написана.
+
+**Контекст**
+
+```
+## Ціна: місце у флеші
+
+Практично: якщо є хоч найменша ймовірність, що виріб доведеться
+оновлювати в полі, — OTA-розбивка ставиться одразу, навіть якщо сама
+функція поки не написана. Місце коштує дешевше, ніж поїздка до
+кожного пристрою (розділ 18).
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-032 sha:c6f7a0a0 src:manual/19-ota.md:59 status:no-external-signal -->
+### T-19-032 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Місце коштує дешевше, ніж поїздка до кожного пристрою (розділ 18).
+
+**Контекст**
+
+```
+## Ціна: місце у флеші
+
+Практично: якщо є хоч найменша ймовірність, що виріб доведеться
+оновлювати в полі, — OTA-розбивка ставиться одразу, навіть якщо сама
+функція поки не написана. Місце коштує дешевше, ніж поїздка до
+кожного пристрою (розділ 18).
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-033 sha:ee09f9c5 src:manual/19-ota.md:65 status:no-external-signal -->
+### T-19-033 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Схема з двох слотів рятує від **зіпсованого завантаження**.
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+Схема з двох слотів рятує від **зіпсованого завантаження**. Вона не
+рятує від іншого, значно гіршого випадку: образ завантажився ідеально,
+контрольна сума збіглася, пристрій стартував з нього — і саме ця нова
+прошивка не може під'єднатися до мережі. Пристрій живий, працює, і
+недосяжний. Наступне OTA до нього вже не дійде.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-034 sha:261fa7cf src:manual/19-ota.md:65 status:no-external-signal -->
+### T-19-034 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Вона не рятує від іншого, значно гіршого випадку: образ завантажився ідеально, контрольна сума збіглася, пристрій стартував з нього — і саме ця нова прошивка не може під'єднатися до мережі.
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+Схема з двох слотів рятує від **зіпсованого завантаження**. Вона не
+рятує від іншого, значно гіршого випадку: образ завантажився ідеально,
+контрольна сума збіглася, пристрій стартував з нього — і саме ця нова
+прошивка не може під'єднатися до мережі. Пристрій живий, працює, і
+недосяжний. Наступне OTA до нього вже не дійде.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-035 sha:4f520afa src:manual/19-ota.md:68 status:no-external-signal -->
+### T-19-035 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Пристрій живий, працює, і недосяжний.
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+Схема з двох слотів рятує від **зіпсованого завантаження**. Вона не
+рятує від іншого, значно гіршого випадку: образ завантажився ідеально,
+контрольна сума збіглася, пристрій стартував з нього — і саме ця нова
+прошивка не може під'єднатися до мережі. Пристрій живий, працює, і
+недосяжний. Наступне OTA до нього вже не дійде.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-036 sha:e66102fe src:manual/19-ota.md:69 status:unchecked -->
+### T-19-036 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Наступне OTA до нього вже не дійде.
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+Схема з двох слотів рятує від **зіпсованого завантаження**. Вона не
+рятує від іншого, значно гіршого випадку: образ завантажився ідеально,
+контрольна сума збіглася, пристрій стартував з нього — і саме ця нова
+прошивка не може під'єднатися до мережі. Пристрій живий, працює, і
+недосяжний. Наступне OTA до нього вже не дійде.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-037 sha:7f85d29c src:manual/19-ota.md:71 status:no-external-signal -->
+### T-19-037 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Від цього є механізм відкату (rollback).
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+Від цього є механізм відкату (rollback). Вмикається в `menuconfig`:
+`Bootloader config` → `Application Rollback` → `Enable app rollback
+support`.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-038 sha:fe900860 src:manual/19-ota.md:71 status:verbatim -->
+### T-19-038 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Вмикається в `menuconfig`: `Bootloader config` → `Application Rollback` → `Enable app rollback support`.
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+Від цього є механізм відкату (rollback). Вмикається в `menuconfig`:
+`Bootloader config` → `Application Rollback` → `Enable app rollback
+support`.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/ota.rst
+- **Дослівно з джерела:**
+  > * The application works fine, :cpp:func:`esp_ota_mark_app_valid_cancel_rollback` marks the
+  >   running application with the state ``ESP_OTA_IMG_VALID``.
+  > * The application has critical errors …, :cpp:func:`esp_ota_mark_app_invalid_rollback_and_reboot`
+  >   marks the running application with the state ``ESP_OTA_IMG_INVALID`` and reset.
+  > * If the :ref:`CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE` option is set, and a reset occurs without
+  >   calling either function then the application is rolled back.
+  > …
+  >     if (ota_state == ESP_OTA_IMG_PENDING_VERIFY) {
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує весь механізм, описаний у розділі 19, включно з ключовою тезою: скидання без виклику підтвердження призводить до відкату.
+- **Прохід:** pass-02-povedinka
+
+---
+
+<!-- fc id:T-19-039 sha:e7ba3131 src:manual/19-ota.md:75 status:verbatim -->
+### T-19-039 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Після оновлення новий образ позначається як «випробувальний» (`ESP_OTA_IMG_PENDING_VERIFY`).
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+Логіка така. Після оновлення новий образ позначається як «випробувальний»
+(`ESP_OTA_IMG_PENDING_VERIFY`). Прошивка мусить сама, у процесі роботи,
+підтвердити, що вона справна:
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/ota.rst
+- **Дослівно з джерела:**
+  > * The application works fine, :cpp:func:`esp_ota_mark_app_valid_cancel_rollback` marks the
+  >   running application with the state ``ESP_OTA_IMG_VALID``.
+  > * The application has critical errors …, :cpp:func:`esp_ota_mark_app_invalid_rollback_and_reboot`
+  >   marks the running application with the state ``ESP_OTA_IMG_INVALID`` and reset.
+  > * If the :ref:`CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE` option is set, and a reset occurs without
+  >   calling either function then the application is rolled back.
+  > …
+  >     if (ota_state == ESP_OTA_IMG_PENDING_VERIFY) {
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує весь механізм, описаний у розділі 19, включно з ключовою тезою: скидання без виклику підтвердження призводить до відкату.
+- **Прохід:** pass-02-povedinka
+
+---
+
+<!-- fc id:T-19-040 sha:5139bc66 src:manual/19-ota.md:76 status:no-external-signal -->
+### T-19-040 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Прошивка мусить сама, у процесі роботи, підтвердити, що вона справна:
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+Логіка така. Після оновлення новий образ позначається як «випробувальний»
+(`ESP_OTA_IMG_PENDING_VERIFY`). Прошивка мусить сама, у процесі роботи,
+підтвердити, що вона справна:
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-041 sha:1e2699ba src:manual/19-ota.md:79 status:code-context -->
+### T-19-041 · kod · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> ```c
+> esp_ota_mark_app_valid_cancel_rollback();
+> ```
+
+**Контекст**
+
+````
+## Rollback: захист від справної прошивки, яка не працює
+
+```c
+esp_ota_mark_app_valid_cancel_rollback();
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/ota.rst
+- **Дослівно з джерела:**
+  > * The application works fine, :cpp:func:`esp_ota_mark_app_valid_cancel_rollback` marks the
+  >   running application with the state ``ESP_OTA_IMG_VALID``.
+  > * The application has critical errors …, :cpp:func:`esp_ota_mark_app_invalid_rollback_and_reboot`
+  >   marks the running application with the state ``ESP_OTA_IMG_INVALID`` and reset.
+  > * If the :ref:`CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE` option is set, and a reset occurs without
+  >   calling either function then the application is rolled back.
+  > …
+  >     if (ota_state == ESP_OTA_IMG_PENDING_VERIFY) {
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує весь механізм, описаний у розділі 19, включно з ключовою тезою: скидання без виклику підтвердження призводить до відкату.
+- **Прохід:** pass-02-povedinka
+
+---
+
+<!-- fc id:T-19-042 sha:468eb6ac src:manual/19-ota.md:80 status:verbatim -->
+### T-19-042 · kod-ryadok · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> esp_ota_mark_app_valid_cancel_rollback();
+
+**Контекст**
+
+````
+## Rollback: захист від справної прошивки, яка не працює
+
+```c
+esp_ota_mark_app_valid_cancel_rollback();
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/ota.rst
+- **Дослівно з джерела:**
+  > * The application works fine, :cpp:func:`esp_ota_mark_app_valid_cancel_rollback` marks the
+  >   running application with the state ``ESP_OTA_IMG_VALID``.
+  > * The application has critical errors …, :cpp:func:`esp_ota_mark_app_invalid_rollback_and_reboot`
+  >   marks the running application with the state ``ESP_OTA_IMG_INVALID`` and reset.
+  > * If the :ref:`CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE` option is set, and a reset occurs without
+  >   calling either function then the application is rolled back.
+  > …
+  >     if (ota_state == ESP_OTA_IMG_PENDING_VERIFY) {
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує весь механізм, описаний у розділі 19, включно з ключовою тезою: скидання без виклику підтвердження призводить до відкату.
+- **Прохід:** pass-02-povedinka
+
+---
+
+<!-- fc id:T-19-043 sha:abd2a91e src:manual/19-ota.md:83 status:no-external-signal -->
+### T-19-043 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Якщо підтвердження не сталося і пристрій перезавантажився — бутлоадер бачить непідтверджений образ і повертається на попередній слот автоматично.
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+Якщо підтвердження не сталося і пристрій перезавантажився — бутлоадер
+бачить непідтверджений образ і повертається на попередній слот
+автоматично.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-044 sha:77b32c9c src:manual/19-ota.md:88 status:no-external-signal -->
+### T-19-044 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Уся цінність відкату — у тому, **де саме** стоїть виклик підтвердження.
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+::: uvaha
+Уся цінність відкату — у тому, **де саме** стоїть виклик підтвердження.
+Поставити його першим рядком `app_main` означає підтвердити, що прошивка
+запустилася, — а це вона щойно й зробила, і від невдалого оновлення це не
+захищає ніяк.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-045 sha:08b013d9 src:manual/19-ota.md:89 status:unchecked -->
+### T-19-045 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Поставити його першим рядком `app_main` означає підтвердити, що прошивка запустилася, — а це вона щойно й зробила, і від невдалого оновлення це не захищає ніяк.
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+::: uvaha
+Уся цінність відкату — у тому, **де саме** стоїть виклик підтвердження.
+Поставити його першим рядком `app_main` означає підтвердити, що прошивка
+запустилася, — а це вона щойно й зробила, і від невдалого оновлення це не
+захищає ніяк.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-046 sha:11b654b3 src:manual/19-ota.md:93 status:no-external-signal -->
+### T-19-046 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Підтвердження має стояти після того, як виконано **умову, заради якої пристрій існує**: з'явився зв'язок із сервером, прочитався датчик, пройшла самоперевірка.
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+Підтвердження має стояти після того, як виконано **умову, заради якої
+пристрій існує**: з'явився зв'язок із сервером, прочитався датчик,
+пройшла самоперевірка. Тобто після доказу, що новою прошивкою можна
+керувати далі. Найпростіший робочий критерій — успішне під'єднання до
+мережі і один вдалий обмін із сервером.
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-047 sha:3af5d715 src:manual/19-ota.md:95 status:no-external-signal -->
+### T-19-047 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Тобто після доказу, що новою прошивкою можна керувати далі.
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+Підтвердження має стояти після того, як виконано **умову, заради якої
+пристрій існує**: з'явився зв'язок із сервером, прочитався датчик,
+пройшла самоперевірка. Тобто після доказу, що новою прошивкою можна
+керувати далі. Найпростіший робочий критерій — успішне під'єднання до
+мережі і один вдалий обмін із сервером.
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-048 sha:6726988c src:manual/19-ota.md:96 status:no-external-signal -->
+### T-19-048 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Найпростіший робочий критерій — успішне під'єднання до мережі і один вдалий обмін із сервером.
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+Підтвердження має стояти після того, як виконано **умову, заради якої
+пристрій існує**: з'явився зв'язок із сервером, прочитався датчик,
+пройшла самоперевірка. Тобто після доказу, що новою прошивкою можна
+керувати далі. Найпростіший робочий критерій — успішне під'єднання до
+мережі і один вдалий обмін із сервером.
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-049 sha:d7e1846e src:manual/19-ota.md:100 status:unchecked -->
+### T-19-049 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Друга половина того самого механізму — watchdog.
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+Друга половина того самого механізму — watchdog. Прошивка, що зависла до
+підтвердження, має бути перезавантажена, інакше відкат не спрацює просто
+тому, що перезавантаження не станеться (розділ 32).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-050 sha:037e1f7f src:manual/19-ota.md:100 status:no-external-signal -->
+### T-19-050 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Прошивка, що зависла до підтвердження, має бути перезавантажена, інакше відкат не спрацює просто тому, що перезавантаження не станеться (розділ 32).
+
+**Контекст**
+
+```
+## Rollback: захист від справної прошивки, яка не працює
+
+Друга половина того самого механізму — watchdog. Прошивка, що зависла до
+підтвердження, має бути перезавантажена, інакше відкат не спрацює просто
+тому, що перезавантаження не станеться (розділ 32).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-051 sha:5a3ea5c5 src:manual/19-ota.md:106 status:verbatim -->
+### T-19-051 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Штатний спосіб в ESP-IDF — компонент `esp_https_ota`.
+
+**Контекст**
+
+```
+## Як це виглядає в коді: esp_https_ota
+
+Штатний спосіб в ESP-IDF — компонент `esp_https_ota`. Мінімальний
+робочий виклик:
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-19-052 sha:d232da54 src:manual/19-ota.md:106 status:no-external-signal -->
+### T-19-052 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Мінімальний робочий виклик:
+
+**Контекст**
+
+```
+## Як це виглядає в коді: esp_https_ota
+
+Штатний спосіб в ESP-IDF — компонент `esp_https_ota`. Мінімальний
+робочий виклик:
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-053 sha:d1211944 src:manual/19-ota.md:109 status:code-context -->
+### T-19-053 · kod · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> ```c
+> esp_http_client_config_t http_cfg = {
+>     .url = "https://onovlennya.example/vyrib-v2.bin",
+>     .cert_pem = server_cert_pem_start,
+>     .timeout_ms = 10000,
+> };
+> esp_https_ota_config_t ota_cfg = { .http_config = &http_cfg };
+> 
+> esp_err_t err = esp_https_ota(&ota_cfg);
+> if (err == ESP_OK) {
+>     esp_restart();
+> } else {
+>     ESP_LOGE(TAG, "OTA не вдалося: %s", esp_err_to_name(err));
+> }
+> ```
+
+**Контекст**
+
+````
+## Як це виглядає в коді: esp_https_ota
+
+```c
+esp_http_client_config_t http_cfg = {
+    .url = "https://onovlennya.example/vyrib-v2.bin",
+    .cert_pem = server_cert_pem_start,
+    .timeout_ms = 10000,
+};
+esp_https_ota_config_t ota_cfg = { .http_config = &http_cfg };
+
+esp_err_t err = esp_https_ota(&ota_cfg);
+if (err == ESP_OK) {
+    esp_restart();
+} else {
+    ESP_LOGE(TAG, "OTA не вдалося: %s", esp_err_to_name(err));
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-19-054 sha:73b8d8c9 src:manual/19-ota.md:111 status:unchecked -->
+### T-19-054 · kod-ryadok · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> .url = "https://onovlennya.example/vyrib-v2.bin",
+
+**Контекст**
+
+````
+## Як це виглядає в коді: esp_https_ota
+
+```c
+esp_http_client_config_t http_cfg = {
+    .url = "https://onovlennya.example/vyrib-v2.bin",
+    .cert_pem = server_cert_pem_start,
+    .timeout_ms = 10000,
+};
+esp_https_ota_config_t ota_cfg = { .http_config = &http_cfg };
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-055 sha:01247965 src:manual/19-ota.md:112 status:unchecked -->
+### T-19-055 · kod-ryadok · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> .cert_pem = server_cert_pem_start,
+
+**Контекст**
+
+````
+## Як це виглядає в коді: esp_https_ota
+
+```c
+esp_http_client_config_t http_cfg = {
+    .url = "https://onovlennya.example/vyrib-v2.bin",
+    .cert_pem = server_cert_pem_start,
+    .timeout_ms = 10000,
+};
+esp_https_ota_config_t ota_cfg = { .http_config = &http_cfg };
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-056 sha:cd9c6243 src:manual/19-ota.md:113 status:no-external-signal -->
+### T-19-056 · kod-ryadok · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> .timeout_ms = 10000,
+
+**Контекст**
+
+````
+## Як це виглядає в коді: esp_https_ota
+
+```c
+esp_http_client_config_t http_cfg = {
+    .url = "https://onovlennya.example/vyrib-v2.bin",
+    .cert_pem = server_cert_pem_start,
+    .timeout_ms = 10000,
+};
+esp_https_ota_config_t ota_cfg = { .http_config = &http_cfg };
+````
+
+**Доказ**
+
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
+- **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
+- **Дослівно з джерела:**
+  > Затвор MOSFET:
+  > GPIO ──[100–220 Ом]── Gate MOSFET
+  > 
+  > Цей резистор обмежує пік-струм при перезаписуванні затвору.
+  > Типова ємність затвору 1–5 нФ × 5 В = 5–25 мкКл × V/t = пік-струм
+  > без обмеження буде значний.
+  > 
+  > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
+- **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
+- **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
+- **Прохід:** m2-65-electronics-05
+
+---
+
+<!-- fc id:T-19-057 sha:53b0c544 src:manual/19-ota.md:119 status:verbatim -->
+### T-19-057 · kod-ryadok · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> esp_restart();
+
+**Контекст**
+
+````
+## Як це виглядає в коді: esp_https_ota
+
+esp_err_t err = esp_https_ota(&ota_cfg);
+if (err == ESP_OK) {
+    esp_restart();
+} else {
+    ESP_LOGE(TAG, "OTA не вдалося: %s", esp_err_to_name(err));
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-19-058 sha:bd079e1b src:manual/19-ota.md:121 status:verbatim -->
+### T-19-058 · kod-ryadok · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> ESP_LOGE(TAG, "OTA не вдалося: %s", esp_err_to_name(err));
+
+**Контекст**
+
+````
+## Як це виглядає в коді: esp_https_ota
+
+esp_err_t err = esp_https_ota(&ota_cfg);
+if (err == ESP_OK) {
+    esp_restart();
+} else {
+    ESP_LOGE(TAG, "OTA не вдалося: %s", esp_err_to_name(err));
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-19-059 sha:967bf5da src:manual/19-ota.md:125 status:verbatim -->
+### T-19-059 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Компонент сам знаходить неактивний слот, пише в нього потоково (образ не треба вміщати в RAM), перевіряє заголовок і контрольну суму, перемикає `otadata`.
+
+**Контекст**
+
+```
+## Як це виглядає в коді: esp_https_ota
+
+Компонент сам знаходить неактивний слот, пише в нього потоково (образ не
+треба вміщати в RAM), перевіряє заголовок і контрольну суму, перемикає
+`otadata`.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+- **Дослівно з джерела:**
+  > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+- **Нотатка:** Confirms component finds inactive (not selected for booting) slot, writes image via streaming API esp_ota_write, verifies at esp_ota_end, and updates otadata
+- **Прохід:** nosignal-19-ota
+
+---
+
+<!-- fc id:T-19-060 sha:8be84f18 src:manual/19-ota.md:129 status:verbatim -->
+### T-19-060 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Для довгих оновлень і показу прогресу є покроковий варіант тих самих операцій: `esp_https_ota_begin`, `esp_https_ota_perform` у циклі, `esp_https_ota_finish`.
+
+**Контекст**
+
+```
+## Як це виглядає в коді: esp_https_ota
+
+Для довгих оновлень і показу прогресу є покроковий варіант тих самих
+операцій: `esp_https_ota_begin`, `esp_https_ota_perform` у циклі,
+`esp_https_ota_finish`. Він потрібен тоді, коли під час завантаження треба
+годувати watchdog, малювати смужку прогресу або мати можливість скасувати.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-19-061 sha:3282d948 src:manual/19-ota.md:131 status:unchecked -->
+### T-19-061 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Він потрібен тоді, коли під час завантаження треба годувати watchdog, малювати смужку прогресу або мати можливість скасувати.
+
+**Контекст**
+
+```
+## Як це виглядає в коді: esp_https_ota
+
+Для довгих оновлень і показу прогресу є покроковий варіант тих самих
+операцій: `esp_https_ota_begin`, `esp_https_ota_perform` у циклі,
+`esp_https_ota_finish`. Він потрібен тоді, коли під час завантаження треба
+годувати watchdog, малювати смужку прогресу або мати можливість скасувати.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-062 sha:588b1000 src:manual/19-ota.md:135 status:verbatim -->
+### T-19-062 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> OTA — це кілька хвилин безперервної роботи радіо на прийом плюс запис у флеш.
+
+**Контекст**
+
+```
+## Як це виглядає в коді: esp_https_ota
+
+::: zhyvlennya
+OTA — це кілька хвилин безперервної роботи радіо на прийом плюс запис у
+флеш. Споживання в цей час вище за звичайне робоче. Пристрій, що живиться
+від виснаженого акумулятора або від межового джерела, має шанс отримати
+brownout саме посеред оновлення. Схема з двох слотів це переживе, але
+оновлення не відбудеться — і так по колу. Для автономних пристроїв
+розумно перевіряти рівень живлення **перед** початком оновлення і не
+починати, якщо запасу мало (розділ 53).
+:::
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** source-cache/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
+- **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
+- **Нотатка:** Документ підтверджує, що OTA передбачає отримання даних (radio reception) та запис у флеш.
+- **Прохід:** m2-wave3
+
+---
+
+<!-- fc id:T-19-063 sha:2a37192a src:manual/19-ota.md:136 status:no-external-signal -->
+### T-19-063 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Споживання в цей час вище за звичайне робоче.
+
+**Контекст**
+
+```
+## Як це виглядає в коді: esp_https_ota
+
+::: zhyvlennya
+OTA — це кілька хвилин безперервної роботи радіо на прийом плюс запис у
+флеш. Споживання в цей час вище за звичайне робоче. Пристрій, що живиться
+від виснаженого акумулятора або від межового джерела, має шанс отримати
+brownout саме посеред оновлення. Схема з двох слотів це переживе, але
+оновлення не відбудеться — і так по колу. Для автономних пристроїв
+розумно перевіряти рівень живлення **перед** початком оновлення і не
+починати, якщо запасу мало (розділ 53).
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-064 sha:91d63b18 src:manual/19-ota.md:136 status:unchecked -->
+### T-19-064 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Пристрій, що живиться від виснаженого акумулятора або від межового джерела, має шанс отримати brownout саме посеред оновлення.
+
+**Контекст**
+
+```
+## Як це виглядає в коді: esp_https_ota
+
+::: zhyvlennya
+OTA — це кілька хвилин безперервної роботи радіо на прийом плюс запис у
+флеш. Споживання в цей час вище за звичайне робоче. Пристрій, що живиться
+від виснаженого акумулятора або від межового джерела, має шанс отримати
+brownout саме посеред оновлення. Схема з двох слотів це переживе, але
+оновлення не відбудеться — і так по колу. Для автономних пристроїв
+розумно перевіряти рівень живлення **перед** початком оновлення і не
+починати, якщо запасу мало (розділ 53).
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-065 sha:c3c7443f src:manual/19-ota.md:138 status:no-external-signal -->
+### T-19-065 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Схема з двох слотів це переживе, але оновлення не відбудеться — і так по колу.
+
+**Контекст**
+
+```
+## Як це виглядає в коді: esp_https_ota
+
+::: zhyvlennya
+OTA — це кілька хвилин безперервної роботи радіо на прийом плюс запис у
+флеш. Споживання в цей час вище за звичайне робоче. Пристрій, що живиться
+від виснаженого акумулятора або від межового джерела, має шанс отримати
+brownout саме посеред оновлення. Схема з двох слотів це переживе, але
+оновлення не відбудеться — і так по колу. Для автономних пристроїв
+розумно перевіряти рівень живлення **перед** початком оновлення і не
+починати, якщо запасу мало (розділ 53).
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-066 sha:f314a81b src:manual/19-ota.md:139 status:no-external-signal -->
+### T-19-066 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Для автономних пристроїв розумно перевіряти рівень живлення **перед** початком оновлення і не починати, якщо запасу мало (розділ 53).
+
+**Контекст**
+
+```
+## Як це виглядає в коді: esp_https_ota
+
+::: zhyvlennya
+OTA — це кілька хвилин безперервної роботи радіо на прийом плюс запис у
+флеш. Споживання в цей час вище за звичайне робоче. Пристрій, що живиться
+від виснаженого акумулятора або від межового джерела, має шанс отримати
+brownout саме посеред оновлення. Схема з двох слотів це переживе, але
+оновлення не відбудеться — і так по колу. Для автономних пристроїв
+розумно перевіряти рівень живлення **перед** початком оновлення і не
+починати, якщо запасу мало (розділ 53).
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-067 sha:8d089849 src:manual/19-ota.md:146 status:unchecked -->
+### T-19-067 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Оновлення по звичайному HTTP означає, що будь-хто між пристроєм і сервером може підсунути свій образ.
+
+**Контекст**
+
+```
+## TLS: мінімум, який не варто пропускати
+
+Оновлення по звичайному HTTP означає, що будь-хто між пристроєм і
+сервером може підсунути свій образ. Для пристрою, що стоїть у полі, це
+не теоретична загроза.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-068 sha:41b3326d src:manual/19-ota.md:147 status:no-external-signal -->
+### T-19-068 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Для пристрою, що стоїть у полі, це не теоретична загроза.
+
+**Контекст**
+
+```
+## TLS: мінімум, який не варто пропускати
+
+Оновлення по звичайному HTTP означає, що будь-хто між пристроєм і
+сервером може підсунути свій образ. Для пристрою, що стоїть у полі, це
+не теоретична загроза.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-069 sha:f53c326f src:manual/19-ota.md:150 status:named-unreachable -->
+### T-19-069 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Мінімум, який реально працює: HTTPS із перевіркою сертифіката сервера, зашитого в прошивку.
+
+**Контекст**
+
+```
+## TLS: мінімум, який не варто пропускати
+
+Мінімум, який реально працює: HTTPS із перевіркою сертифіката сервера,
+зашитого в прошивку. Сертифікат кладеться в образ як вбудований ресурс, і
+пристрій відмовляється оновлюватися, якщо сервер не той.
+```
+
+**Доказ**
+
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
+- **Джерело:** RFC 5246 The TLS Protocol
+- **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
+- **Що шукати в джерелі:** RFC 5246 The TLS Protocol
+- **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
+- **Прохід:** queue-c-19-ota
+
+---
+
+<!-- fc id:T-19-070 sha:bc76db57 src:manual/19-ota.md:151 status:derived -->
+### T-19-070 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Сертифікат кладеться в образ як вбудований ресурс, і пристрій відмовляється оновлюватися, якщо сервер не той.
+
+**Контекст**
+
+```
+## TLS: мінімум, який не варто пропускати
+
+Мінімум, який реально працює: HTTPS із перевіркою сертифіката сервера,
+зашитого в прошивку. Сертифікат кладеться в образ як вбудований ресурс, і
+пристрій відмовляється оновлюватися, якщо сервер не той.
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/system/ota/simple_ota_example/main/simple_ota_example.c
+- **Дослівно з джерела:**
+  > extern const uint8_t server_cert_pem_start[] asm("_binary_ca_cert_pem_start");
+- **Спосіб і дата:** Приклад отримано в цій сесії, рядок дослівний.
+- **Нотатка:** Рядок доводить саме вбудовування: символ `_binary_..._start` створює складальник, коли файл кладуть в образ як ресурс. **Другої половини твердження — «пристрій відмовляється оновлюватися, якщо сервер не той» — цей рядок не доводить.** Перевірка сертифіката відбувається в `esp_https_ota`, і на неї потрібен окремий доказ.
+- **Прохід:** pass-39-slidy
+
+---
+
+<!-- fc id:T-19-071 sha:f162c013 src:manual/19-ota.md:154 status:no-external-signal -->
+### T-19-071 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Тут є пастка терміну дії: зашитий сертифікат колись протермінується, і всі пристрої одночасно втратять здатність оновлюватися.
+
+**Контекст**
+
+```
+## TLS: мінімум, який не варто пропускати
+
+Тут є пастка терміну дії: зашитий сертифікат колись протермінується, і
+всі пристрої одночасно втратять здатність оновлюватися. Тому зашивають
+не сертифікат сервера, а сертифікат **центру сертифікації**, яким його
+підписано, — він живе значно довше. Детальніше — розділ 50.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-072 sha:d5d0cfea src:manual/19-ota.md:155 status:no-external-signal -->
+### T-19-072 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Тому зашивають не сертифікат сервера, а сертифікат **центру сертифікації**, яким його підписано, — він живе значно довше.
+
+**Контекст**
+
+```
+## TLS: мінімум, який не варто пропускати
+
+Тут є пастка терміну дії: зашитий сертифікат колись протермінується, і
+всі пристрої одночасно втратять здатність оновлюватися. Тому зашивають
+не сертифікат сервера, а сертифікат **центру сертифікації**, яким його
+підписано, — він живе значно довше. Детальніше — розділ 50.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-073 sha:bf8c5424 src:manual/19-ota.md:159 status:no-external-signal -->
+### T-19-073 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Наступний рівень — перевірка підпису самого образу (Secure Boot), щоб навіть скомпрометований сервер не міг залити чуже.
+
+**Контекст**
+
+```
+## TLS: мінімум, який не варто пропускати
+
+Наступний рівень — перевірка підпису самого образу (Secure Boot), щоб
+навіть скомпрометований сервер не міг залити чуже. Це вже незворотна
+операція над чипом, і читати про неї треба до, а не після — розділ 50 і
+картка [К11](#k-nikoly).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-074 sha:7dec3564 src:manual/19-ota.md:160 status:no-external-signal -->
+### T-19-074 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Це вже незворотна операція над чипом, і читати про неї треба до, а не після — розділ 50 і картка [К11](#k-nikoly).
+
+**Контекст**
+
+```
+## TLS: мінімум, який не варто пропускати
+
+Наступний рівень — перевірка підпису самого образу (Secure Boot), щоб
+навіть скомпрометований сервер не міг залити чуже. Це вже незворотна
+операція над чипом, і читати про неї треба до, а не після — розділ 50 і
+картка [К11](#k-nikoly).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-075 sha:d80aa0f3 src:manual/19-ota.md:166 status:unchecked -->
+### T-19-075 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> **ArduinoOTA.** Оновлення з середовища Arduino по локальній мережі: плата з'являється як мережевий порт.
+
+**Контекст**
+
+```
+## Інші способи
+
+**ArduinoOTA.** Оновлення з середовища Arduino по локальній мережі:
+плата з'являється як мережевий порт. Зручно для розробки, коли плата вже
+змонтована в корпусі і діставати її незручно. Для виробу в полі не
+годиться: розрахована на довірену локальну мережу.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-076 sha:75d481e5 src:manual/19-ota.md:167 status:no-external-signal -->
+### T-19-076 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Зручно для розробки, коли плата вже змонтована в корпусі і діставати її незручно.
+
+**Контекст**
+
+```
+## Інші способи
+
+**ArduinoOTA.** Оновлення з середовища Arduino по локальній мережі:
+плата з'являється як мережевий порт. Зручно для розробки, коли плата вже
+змонтована в корпусі і діставати її незручно. Для виробу в полі не
+годиться: розрахована на довірену локальну мережу.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-077 sha:e2bdd6f5 src:manual/19-ota.md:168 status:no-external-signal -->
+### T-19-077 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Для виробу в полі не годиться: розрахована на довірену локальну мережу.
+
+**Контекст**
+
+```
+## Інші способи
+
+**ArduinoOTA.** Оновлення з середовища Arduino по локальній мережі:
+плата з'являється як мережевий порт. Зручно для розробки, коли плата вже
+змонтована в корпусі і діставати її незручно. Для виробу в полі не
+годиться: розрахована на довірену локальну мережу.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-078 sha:8e98d9bf src:manual/19-ota.md:171 status:unchecked -->
+### T-19-078 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> **Оновлення з веб-сторінки.** Пристрій піднімає власний веб-сервер із формою завантаження файлу; людина відкриває сторінку в браузері і віддає `.bin`.
+
+**Контекст**
+
+```
+## Інші способи
+
+**Оновлення з веб-сторінки.** Пристрій піднімає власний веб-сервер із
+формою завантаження файлу; людина відкриває сторінку в браузері і
+віддає `.bin`. Найзручніший варіант там, де пристрій обслуговує людина
+на місці, а сервера оновлень немає взагалі. Обов'язково з паролем:
+форма без автентифікації — це запрошення залити в пристрій будь-що.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-079 sha:8e13db40 src:manual/19-ota.md:173 status:no-external-signal -->
+### T-19-079 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Найзручніший варіант там, де пристрій обслуговує людина на місці, а сервера оновлень немає взагалі.
+
+**Контекст**
+
+```
+## Інші способи
+
+**Оновлення з веб-сторінки.** Пристрій піднімає власний веб-сервер із
+формою завантаження файлу; людина відкриває сторінку в браузері і
+віддає `.bin`. Найзручніший варіант там, де пристрій обслуговує людина
+на місці, а сервера оновлень немає взагалі. Обов'язково з паролем:
+форма без автентифікації — це запрошення залити в пристрій будь-що.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-080 sha:6f335a4a src:manual/19-ota.md:174 status:no-external-signal -->
+### T-19-080 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Обов'язково з паролем: форма без автентифікації — це запрошення залити в пристрій будь-що.
+
+**Контекст**
+
+```
+## Інші способи
+
+**Оновлення з веб-сторінки.** Пристрій піднімає власний веб-сервер із
+формою завантаження файлу; людина відкриває сторінку в браузері і
+віддає `.bin`. Найзручніший варіант там, де пристрій обслуговує людина
+на місці, а сервера оновлень немає взагалі. Обов'язково з паролем:
+форма без автентифікації — це запрошення залити в пристрій будь-що.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-081 sha:e614c1b9 src:manual/19-ota.md:177 status:no-external-signal -->
+### T-19-081 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> **Оновлення в полі без ПК і без інтернету.** Пристрій піднімає власну точку доступу, оператор під'єднується телефоном і віддає файл через ту саму веб-форму.
+
+**Контекст**
+
+```
+## Інші способи
+
+**Оновлення в полі без ПК і без інтернету.** Пристрій піднімає власну
+точку доступу, оператор під'єднується телефоном і віддає файл через ту
+саму веб-форму. Це найнадійніший спосіб для виїзного обслуговування:
+працює там, де немає ні мережі, ні ноутбука.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-082 sha:da46df1f src:manual/19-ota.md:179 status:no-external-signal -->
+### T-19-082 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Це найнадійніший спосіб для виїзного обслуговування: працює там, де немає ні мережі, ні ноутбука.
+
+**Контекст**
+
+```
+## Інші способи
+
+**Оновлення в полі без ПК і без інтернету.** Пристрій піднімає власну
+точку доступу, оператор під'єднується телефоном і віддає файл через ту
+саму веб-форму. Це найнадійніший спосіб для виїзного обслуговування:
+працює там, де немає ні мережі, ні ноутбука.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-083 sha:39f53d6f src:manual/19-ota.md:184 status:no-external-signal -->
+### T-19-083 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Симптоми і дії, у порядку частоти:
+
+**Контекст**
+
+```
+## Що робити, коли оновлення не вдалося
+
+Симптоми і дії, у порядку частоти:
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-084 sha:3017dceb src:manual/19-ota.md:186 status:verbatim -->
+### T-19-084 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> **`ESP_ERR_OTA_VALIDATE_FAILED`.** Завантажене не є коректним образом застосунку.
+
+**Контекст**
+
+```
+## Що робити, коли оновлення не вдалося
+
+**`ESP_ERR_OTA_VALIDATE_FAILED`.** Завантажене не є коректним образом
+застосунку. Найчастіше на сервері лежить не той файл: `merge-bin`-образ
+або повний дамп замість `app.bin`. Для OTA потрібен саме образ
+застосунку, без бутлоадера і таблиці розділів.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/app_update/include/esp_ota_ops.h, .../components/esp_common/include/esp_err.h, .../docs/en/api-reference/storage/{wear-levelling,fatfs}.rst
+- **Дослівно з джерела:**
+  > (esp_ota_ops.h)
+  > #define ESP_ERR_OTA_BASE                         0x1500                     /*!< Base error code for ota_ops api */
+  > #define ESP_ERR_OTA_PARTITION_CONFLICT           (ESP_ERR_OTA_BASE + 0x01)  /*!< Error if request was to write or erase the current running partition */
+  > #define ESP_ERR_OTA_VALIDATE_FAILED              (ESP_ERR_OTA_BASE + 0x03)  /*!< Error if OTA app image is invalid */
+  > 
+  > (esp_err.h)
+  > #define ESP_ERR_INVALID_ARG         0x102
+  > 
+  > (wear-levelling.rst)
+  > The wear levelling component … distributes wear across the whole
+  > partition, and is used together with the FAT filesystem via
+  > esp_vfs_fat_spiflash_mount_rw_wl.
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
+- **Нотатка:** Усі названі книгою константи існують дослівно. Прохід 7 звіряв виклики; ці — коди повернення, і вони живуть у тих самих заголовках.
+Твердження розділу 18 про `wear_levelling` підтверджується від протилежного: у документації FAT монтується через `esp_vfs_fat_spiflash_mount_rw_wl`, тобто саме через шар вирівнювання зносу, — отже сама FAT його не робить, як книга й пише.
+- **Прохід:** pass-31-adresy-i-api
+
+---
+
+<!-- fc id:T-19-085 sha:e0610cd8 src:manual/19-ota.md:187 status:unchecked -->
+### T-19-085 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Найчастіше на сервері лежить не той файл: `merge-bin`-образ або повний дамп замість `app.bin`.
+
+**Контекст**
+
+```
+## Що робити, коли оновлення не вдалося
+
+**`ESP_ERR_OTA_VALIDATE_FAILED`.** Завантажене не є коректним образом
+застосунку. Найчастіше на сервері лежить не той файл: `merge-bin`-образ
+або повний дамп замість `app.bin`. Для OTA потрібен саме образ
+застосунку, без бутлоадера і таблиці розділів.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-086 sha:e0ec9d02 src:manual/19-ota.md:188 status:verbatim -->
+### T-19-086 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Для OTA потрібен саме образ застосунку, без бутлоадера і таблиці розділів.
+
+**Контекст**
+
+```
+## Що робити, коли оновлення не вдалося
+
+**`ESP_ERR_OTA_VALIDATE_FAILED`.** Завантажене не є коректним образом
+застосунку. Найчастіше на сервері лежить не той файл: `merge-bin`-образ
+або повний дамп замість `app.bin`. Для OTA потрібен саме образ
+застосунку, без бутлоадера і таблиці розділів.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** source-cache/a4dbe955-bootloader.rst
+- **Дослівно з джерела:**
+  > The OTA (over the air) update process can flash new apps in the field but cannot flash a new bootloader.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
+- **Нотатка:** Документ підтверджує, що OTA оновлює тільки додаток, не бутлоадер.
+- **Прохід:** m2-wave3
+
+---
+
+<!-- fc id:T-19-087 sha:700279ab src:manual/19-ota.md:191 status:verbatim -->
+### T-19-087 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> **`ESP_ERR_OTA_PARTITION_CONFLICT` або «немає вільного слоту».** Розбивка без OTA-розділів.
+
+**Контекст**
+
+```
+## Що робити, коли оновлення не вдалося
+
+**`ESP_ERR_OTA_PARTITION_CONFLICT` або «немає вільного слоту».**
+Розбивка без OTA-розділів. Дистанційно не лікується.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/app_update/include/esp_ota_ops.h, .../components/esp_common/include/esp_err.h, .../docs/en/api-reference/storage/{wear-levelling,fatfs}.rst
+- **Дослівно з джерела:**
+  > (esp_ota_ops.h)
+  > #define ESP_ERR_OTA_BASE                         0x1500                     /*!< Base error code for ota_ops api */
+  > #define ESP_ERR_OTA_PARTITION_CONFLICT           (ESP_ERR_OTA_BASE + 0x01)  /*!< Error if request was to write or erase the current running partition */
+  > #define ESP_ERR_OTA_VALIDATE_FAILED              (ESP_ERR_OTA_BASE + 0x03)  /*!< Error if OTA app image is invalid */
+  > 
+  > (esp_err.h)
+  > #define ESP_ERR_INVALID_ARG         0x102
+  > 
+  > (wear-levelling.rst)
+  > The wear levelling component … distributes wear across the whole
+  > partition, and is used together with the FAT filesystem via
+  > esp_vfs_fat_spiflash_mount_rw_wl.
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
+- **Нотатка:** Усі названі книгою константи існують дослівно. Прохід 7 звіряв виклики; ці — коди повернення, і вони живуть у тих самих заголовках.
+Твердження розділу 18 про `wear_levelling` підтверджується від протилежного: у документації FAT монтується через `esp_vfs_fat_spiflash_mount_rw_wl`, тобто саме через шар вирівнювання зносу, — отже сама FAT його не робить, як книга й пише.
+- **Прохід:** pass-31-adresy-i-api
+
+---
+
+<!-- fc id:T-19-088 sha:5b3367f3 src:manual/19-ota.md:192 status:no-external-signal -->
+### T-19-088 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Дистанційно не лікується.
+
+**Контекст**
+
+```
+## Що робити, коли оновлення не вдалося
+
+**`ESP_ERR_OTA_PARTITION_CONFLICT` або «немає вільного слоту».**
+Розбивка без OTA-розділів. Дистанційно не лікується.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-089 sha:26e6b0e5 src:manual/19-ota.md:194 status:no-external-signal -->
+### T-19-089 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> **Образ не влазить.** Новий застосунок більший за слот.
+
+**Контекст**
+
+```
+## Що робити, коли оновлення не вдалося
+
+**Образ не влазить.** Новий застосунок більший за слот. Слот змінити
+дистанційно неможливо — див. попередження вище.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-090 sha:b39e51ad src:manual/19-ota.md:194 status:no-external-signal -->
+### T-19-090 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Слот змінити дистанційно неможливо — див. попередження вище.
+
+**Контекст**
+
+```
+## Що робити, коли оновлення не вдалося
+
+**Образ не влазить.** Новий застосунок більший за слот. Слот змінити
+дистанційно неможливо — див. попередження вище.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-091 sha:ee73eb3a src:manual/19-ota.md:197 status:unchecked -->
+### T-19-091 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> **Завантаження обривається щоразу.** Перевірити таймаути HTTP-клієнта, стабільність зв'язку і рівень сигналу (RSSI).
+
+**Контекст**
+
+```
+## Що робити, коли оновлення не вдалося
+
+**Завантаження обривається щоразу.** Перевірити таймаути HTTP-клієнта,
+стабільність зв'язку і рівень сигналу (RSSI). На межі покриття OTA не
+працює навіть тоді, коли звичайний обмін даними ще проходить: тут значно
+більший обсяг і довша безперервна сесія.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-092 sha:ab6808e1 src:manual/19-ota.md:198 status:unchecked -->
+### T-19-092 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> На межі покриття OTA не працює навіть тоді, коли звичайний обмін даними ще проходить: тут значно більший обсяг і довша безперервна сесія.
+
+**Контекст**
+
+```
+## Що робити, коли оновлення не вдалося
+
+**Завантаження обривається щоразу.** Перевірити таймаути HTTP-клієнта,
+стабільність зв'язку і рівень сигналу (RSSI). На межі покриття OTA не
+працює навіть тоді, коли звичайний обмін даними ще проходить: тут значно
+більший обсяг і довша безперервна сесія.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-093 sha:303df349 src:manual/19-ota.md:202 status:no-external-signal -->
+### T-19-093 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> **Оновилося, і пристрій зник.** Той випадок, від якого рятує лише rollback.
+
+**Контекст**
+
+```
+## Що робити, коли оновлення не вдалося
+
+**Оновилося, і пристрій зник.** Той випадок, від якого рятує лише
+rollback. Якщо він не був увімкнений — лишається фізичний доступ,
+картка [К5](#k-proshyvka).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-094 sha:cf623451 src:manual/19-ota.md:203 status:no-external-signal -->
+### T-19-094 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Якщо він не був увімкнений — лишається фізичний доступ, картка [К5](#k-proshyvka).
+
+**Контекст**
+
+```
+## Що робити, коли оновлення не вдалося
+
+**Оновилося, і пристрій зник.** Той випадок, від якого рятує лише
+rollback. Якщо він не був увімкнений — лишається фізичний доступ,
+картка [К5](#k-proshyvka).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-095 sha:30770228 src:manual/19-ota.md:208 status:no-external-signal -->
+### T-19-095 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Два слоти означають, що робоча прошивка не чіпається, поки нова не записана повністю.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+Два слоти означають, що робоча прошивка не чіпається, поки нова не
+записана повністю. Обрив зв'язку не страшний.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-096 sha:63989ea6 src:manual/19-ota.md:209 status:no-external-signal -->
+### T-19-096 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Обрив зв'язку не страшний.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+Два слоти означають, що робоча прошивка не чіпається, поки нова не
+записана повністю. Обрив зв'язку не страшний.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-097 sha:12fe0ec3 src:manual/19-ota.md:211 status:verbatim -->
+### T-19-097 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Rollback — окремий механізм, і він працює лише тоді, коли підтвердження справності стоїть після виконання реальної умови, а не на початку `app_main`.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+Rollback — окремий механізм, і він працює лише тоді, коли підтвердження
+справності стоїть після виконання реальної умови, а не на початку
+`app_main`.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** source-cache/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The following code serves detect the initial boot for an application after the OTA update. Upon the first boot, the application checks its state and performs diagnostics. If the diagnostics are successful, the application should call esp_ota_mark_app_valid_cancel_rollback to confirm the operability of the application.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
+- **Нотатка:** Документ каже, що функцію підтвердження потрібно викликати ПІСЛЯ виконання діагностики, а не на початку.
+- **Прохід:** m2-wave3
+
+---
+
+<!-- fc id:T-19-098 sha:726f7ae8 src:manual/19-ota.md:215 status:verbatim -->
+### T-19-098 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> OTA не оновлює таблицю розділів.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+OTA не оновлює таблицю розділів. Розбивку закладають з запасом до
+відправлення першого пристрою.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** source-cache/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
+- **Нотатка:** Документ каже, що OTA оновлює лише образ застосунку й OTA Data partition, але не таблицю розділів.
+- **Прохід:** m2-wave3
+
+---
+
+<!-- fc id:T-19-099 sha:f6392ea8 src:manual/19-ota.md:215 status:no-external-signal -->
+### T-19-099 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Розбивку закладають з запасом до відправлення першого пристрою.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+OTA не оновлює таблицю розділів. Розбивку закладають з запасом до
+відправлення першого пристрою.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-19-100 sha:5b1f4451 src:manual/19-ota.md:218 status:unchecked -->
+### T-19-100 · proza · `manual/19-ota.md`
+
+**Твердження, коротко**
+
+> Оновлення по HTTP без перевірки сервера — це чужа прошивка у вашому пристрої, питання лише часу.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+Оновлення по HTTP без перевірки сервера — це чужа прошивка у вашому
+пристрої, питання лише часу.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---

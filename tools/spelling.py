@@ -29,8 +29,8 @@
 `docs/DESIGN.md`). Він завантажується в кеш і записується в маніфест із
 `sha256`; сюди йде лише вказівка, звідки брати.
 
-    tools/cache.py https://raw.githubusercontent.com/LibreOffice/dictionaries/master/uk_UA/uk_UA.aff
-    tools/cache.py https://raw.githubusercontent.com/LibreOffice/dictionaries/master/uk_UA/uk_UA.dic
+    factcheck/tools/cache.py https://raw.githubusercontent.com/LibreOffice/dictionaries/master/uk_UA/uk_UA.aff
+    factcheck/tools/cache.py https://raw.githubusercontent.com/LibreOffice/dictionaries/master/uk_UA/uk_UA.dic
 
 ## Власний словник проєкту
 
@@ -50,10 +50,16 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-KESH = ROOT / "source-cache"
+import config
+from repo import ROOT  # noqa: E402  (root is found, not counted)
+KESH = ROOT / "factcheck" / "source-cache"
 VLASNYY = ROOT / "docs" / "slovnyk-proyektu.txt"
-GRUPY = ("manual", "kartky", "dodatky", "inserts")
+# Теки книги — з `factcheck/book.yaml`, як і в решти. Цей інструмент не
+# частина технології фактчекінгу: він вичитує УКРАЇНСЬКИЙ текст книги, і
+# на англійській книзі був би без предмета. Тому він серед книжкових
+# тулів, а його перелік кальок лишається українським — це його дані, а
+# не борг перекладу.
+GRUPY = config.groups()
 
 # Що вирізається з тексту перед перевіркою. Порядок має значення:
 # спершу найбільші блоки, потім дрібні вкраплення.
@@ -87,10 +93,10 @@ def slovnyk():
     aff, dic = KESH / "uk_UA.aff", KESH / "uk_UA.dic"
     if not (aff.exists() and dic.exists()):
         sys.exit(
-            "немає словника uk_UA в source-cache/.\n"
-            "  tools/cache.py https://raw.githubusercontent.com/LibreOffice/"
+            "немає словника uk_UA в factcheck/source-cache/.\n"
+            "  factcheck/tools/cache.py https://raw.githubusercontent.com/LibreOffice/"
             "dictionaries/master/uk_UA/uk_UA.aff\n"
-            "  tools/cache.py https://raw.githubusercontent.com/LibreOffice/"
+            "  factcheck/tools/cache.py https://raw.githubusercontent.com/LibreOffice/"
             "dictionaries/master/uk_UA/uk_UA.dic")
     return Dictionary.from_files(str(KESH / "uk_UA"))
 

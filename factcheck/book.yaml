@@ -1,0 +1,160 @@
+# What is specific to this book. The technology reads it; no tool repeats it.
+#
+# Before this file existed, `groups` lived as a hardcoded `GRUPY` in eight
+# separate tools and the title lived in `report.py`. The eight copies
+# agreed, which is the dangerous state: copies do not lie until the fact
+# changes, and then they lie all at once.
+
+title: Довідник ESP32
+
+# The book's own directories, in reading order. One registry file is kept
+# per file found here, under `factcheck/cards/`, with the same name.
+groups:
+  - manual
+  - kartky
+  - dodatky
+  - inserts
+
+# The language of the book, for the checks that read its prose.
+#
+# `modality.py` compares a prescription in the book against a permission
+# in the source ("the book says MUST, the datasheet says MAY"). The words
+# that carry that force are language-specific: on an English book this
+# whole block is different, and a tool carrying Ukrainian modal verbs
+# would have matched nothing and printed a confident zero.
+#
+# Optional. If absent, the check says so and skips, rather than reporting
+# a zero it did not earn.
+modality:
+  # A prescription in the book: the force a source must support.
+  prescriptive: "\\b(має|мусить|мусять|не можна|завжди|ніколи|обов'язково)\\b"
+
+  # «Має» is the subtlest word in the whole tool. In Ukrainian it means
+  # "must", "possesses" and "is expected to" alike. The first version did
+  # not tell them apart, and four of six matches were false:
+  #
+  #     «вона має ціну»            — possession
+  #     «стан, який має пережити»  — a requirement on the state
+  #     «має працювати»            — expectation
+  #     «має бути близько 3.3 В»   — an expected instrument reading
+  #
+  # The word itself cannot be dropped: both GENUINE cases rest on it too.
+  # So constructions are filtered out, not the word.
+  not_prescriptive: "має\\s+(?:ціну|бути|стати|сенс|значення|працювати|пережити|вигляд|перевагу|недолік|власн\\w+|свій|свою|своє)"
+
+# Patterns `intake.py` uses to read the book's own prose. Language of the
+# book, not of the technology — on an English book these are different
+# words, and a tool carrying these would pass everything silently.
+#
+# Optional; absent means those particular checks say so and skip.
+intake:
+  # The book named as a source in WORDS rather than by path: "розділ 29",
+  # "картка К13", "додаток F". For `verbatim`/`derived` that is the same
+  # self-citation as a path, and the gate did not see it.
+  book_in_words: "(?:^|[^\\w])(розділ|картка|картку|картки|додаток|вкладка)\\s+[A-ZА-ЯЄІЇ0-9]"
+
+  # An internal check, declared. Legitimate under `self-consistent`.
+  internal_check: "^\\s*ВНУТРІШНЯ ЗВІРКА"
+
+  # A checkable signal in a claim: a number with a unit, an address, a pin.
+  # `no-external-signal` standing on one of these is worth a second look.
+  signal: "\\d+\\s*(?:МГц|кГц|Гц|мА|А|В|мВ|КБ|МБ|ГБ|мс|мкс|с|°C|Ом|кОм|біт|МБіт)|0x[0-9a-fA-F]+|GPIO\\d+"
+
+  # …except in the index, where a "number" is a page list and no external
+  # source exists by nature.
+  index: "покажчик|індекс|z-pokazhchyk|у індексі|T-Z-\\d+"
+
+# How the unchecked queue is divided between maintainers, and by what.
+#
+# Not by topic and not by chapter, but by one question: in which document
+# does the answer lie. That determines WHO CAN CLOSE IT — on this book the
+# split is by reachability: ESP-IDF and esptool are in M1's container,
+# vendor datasheets answer 403 there and are cached for M2.
+#
+# Entirely this book's data: the part numbers below are its subject.
+# Order matters — a unit lands in the first basket that recognises it, so
+# the specific (a part number) precedes the general (a number with a
+# unit), or "a BME280 runs on 3.3 V" would go to the electrical basket.
+split_buckets:
+- who: M1
+  key: api
+  what: ESP-IDF calls and constants — component headers
+  pattern: '`(esp_|gpio_|i2c_|spi_|uart_|nvs_|xTask|vTask|xQueue|heap_caps|ledc_|adc_|rmt_|twai_|CONFIG_|SOC_|MALLOC_CAP|ESP_[A-Z])'
+- who: M1
+  key: komandy
+  what: the esptool and idf.py command line
+  pattern: '`(esptool|idf\.py|espefuse|espsecure|otatool|parttool)\b|`(write-flash|read-flash|erase-flash|merge-bin|chip-id|flash-id)'
+- who: M1
+  key: piny
+  what: GPIO numbers — soc/ headers and valid-pin masks
+  pattern: GPIO\s?\d+|`IO\d+`
+- who: M1
+  key: adresy
+  what: hexadecimal addresses and sizes
+  pattern: 0x[0-9A-Fa-f]{3,}
+- who: M1
+  key: log
+  what: lines the book promises you will see in the console
+  pattern: E \(\d|W \(\d|I \(\d|`[A-Z][A-Za-z_ ]{8,}`
+- who: M2
+  key: detali
+  what: specific parts — the vendor's datasheet
+  pattern: \b(BME280|BMP280|BMP180|DS18B20|DS3231|DHT11|DHT22|SHT[234]\d|SSD1306|SH1106|ILI9341|ST7789|MAX485|MAX3232|MAX31855|MAX6675|SN65HVD\d+|TP4056|DW01|MCP23017|MCP2515|PCF8574|PCA9685|74HC\d+|CD4051|HC-SR04|SX12\d\d|RFM\d\d|MAX170\d\d|INA219|ADS1115|W5500|ENC28J60|CH340|CP210\d|FT232|CH9102|AMS1117|LM2596|MT3608|XL6009|18650|LiFePO4|AT24C\d+|24LC\d+|NEO-\d|ATmega\d+|RP2040|STM32)
+- who: M2
+  key: elektro
+  what: electrical quantities — datasheets and specifications
+  pattern: \d+\s*(мА|мкА|А\b|В\b|мВ|кОм|Ом|МОм|мА·год|нФ|мкФ|пФ|Вт|дБм|°C)
+
+# Where a helper can actually reach a source from this container, named in
+# the work order. Entirely this book's environment: another book has other
+# repositories, and possibly no egress restriction at all.
+#
+# `sample.py` carried this list inline, so an order generated for another
+# book would have sent its helpers to ESP-IDF.
+reachable_sources:
+  intro: |
+    Only `raw.githubusercontent.com` is reachable. Everything else answers
+    403; **do not repeat a request that returned 403**.
+  where: |
+    `espressif/esp-idf` (`docs/en/…`, `components/…`, `examples/…`),
+    `espressif/esptool`, `espressif/arduino-esp32`, `torvalds/linux`
+    (`drivers/…`), `esphome/esphome`, `micropython/micropython`,
+    `adafruit/*`, `jgromes/RadioLib`, `olikraus/u8g2`, `Bodmer/TFT_eSPI`,
+    `lvgl/lvgl`.
+  caveat: |
+    Separately: `espressif.com` returns, for some addresses, an **HTML
+    stub of 15 495 bytes with status 200**. The response is "successful"
+    and the document is absent. It does not look like a document —
+    `nedosyazhne`.
+
+# Patterns `layer3.py` applies to the BOOK's own prose. Language of the
+# book; on another book these are different words, and a tool carrying
+# these would flag nothing and report a confident zero.
+layer3:
+  self_declared_editorial: авторськ|підсум|рейтинг|спостереж|узагальн|заголов|назви колонок|рамка|порада|редакційн|вибір
+    автора|оцінка|міркуванн|формулюванн|ринков|маршрут|позиція|найдешевш|найдорожч|лідер|найчастіш|найпоширеніш|винуватц|типов[аоиі]\b|звичайн|практик|стандартн
+  number_with_unit: \d+(?:[.,]\d+)?\s*(?:мА|мкА|нА|А\b|мВ|В\b|кВ|Ом|кОм|МОм|Гц|кГц|МГц|ГГц|мс|мкс|нс|с\b|°C|дБм|дБ|мм|см|м\b|Вт|мВт|Гн|мГн|нФ|мкФ|пФ|КБ|МБ|ГБ|біт|байт|%)
+
+# What counts as an externally checkable SIGNAL in a claim's text.
+#
+# These two patterns decide the largest status in the registry: a prose
+# unit carrying no signal is closed mechanically as `no-external-signal`.
+# They name this book's chips, buses, protocols and unit words, so on
+# another book they would match nothing and sweep the entire book into
+# that status — the single most consequential thing here to carry inline.
+#
+# `broad` is deliberately over-cautious: any digit is a signal. It keeps a
+# unit in the work queue rather than closing it.
+#
+# `strict` is the opposite: only what POINTS AT A SOURCE counts — a number
+# with a unit, a hex address, a pin or channel number, a version, an
+# identifier in backticks, the name of a chip, bus or protocol. It is used
+# for table cells and prose, where the broad rule's "any digit" would keep
+# a list ordinal ("…check the supply. 4.") in the queue forever.
+#
+# A random sample of 160 units measured that ~37 % of what the broad rule
+# closes does have an external referent.
+signal:
+  broad: "`[^`]+`|\\d|\bESP32\b|\bESP8266\b|\bS2\b|\bS3\b|\bC3\b|\bC6\b|\bH2\b|\bP4\b|\b(?:I²C|SPI|UART|TWAI|CAN|RS-485|Modbus|LoRa|Wi-Fi|BLE|MQTT|HTTP|HTTPS|TLS|NVS|OTA|JTAG|PWM|ADC|DAC|DMA|PSRAM|SRAM|GPIO|IEEE|USB|SDIO|NMEA|FreeRTOS|ESP-IDF|ESP-NOW|Arduino|PlatformIO|MicroPython|ESPHome|Wokwi|LVGL|U8g2|TFT_eSPI|LovyanGFX|RadioLib|GxEPD2|MOSFET|ESC|LDO|RTC|eFuse|brownout|watchdog|bootloader|coredump|backtrace)\b\
+    |\b(?:мікроампер|міліампер|ампер|вольт|герц|ват|ом|байт|біт|секунд|мілісекунд|мікросекунд|градус)\\w*"
+  strict: '`[^`]+`|\d+\s*(?:мА|мкА|А|В|мВ|кОм|Ом|МОм|МГц|кГц|Гц|МБ|КБ|ГБ|біт|байт|мс|мкс|нс|°C|дБм|мм|см|Гн|нФ|мкФ|пФ|%)|0x[0-9A-Fa-f]+|GPIO\s?\d+|IO\d+|\bпін\w*\s+\d|\bканал\w*\s+\d|\d+\s*(?:пін|вивод|канал|розряд)|\bv\d+(?:\.\d+)*|[A-Z]{2,}[0-9]{2,}[A-Z0-9-]*|ESP32|ESP8266|\bS2\b|\bS3\b|\bC3\b|\bC6\b|\bH2\b|\bP4\b|\bC5\b|\bC2\b|I²C|I²S|SPI|UART|TWAI|CAN|RS-485|Modbus|LoRa|Wi-Fi|BLE|MQTT|HTTP|TLS|NVS|OTA|JTAG|PWM|ADC|DAC|DMA|PSRAM|SRAM|GPIO|USB|SDIO|RMT|LEDC|MCPWM|SDMMC|eFuse|RTC|ULP|FreeRTOS|ESP-IDF|ESP-NOW|Arduino|PlatformIO|MicroPython|ESPHome|brownout|watchdog|bootloader|coredump|backtrace|strapping|menuconfig'

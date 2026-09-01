@@ -1,0 +1,292 @@
+# Wave of 2026-09-01. Two processing strategies, same 200 units.
+# Every record here passed layer 3 (the quote stands in the named
+# document) AND layer 2 (a maintainer read whether it supports the
+# claim). 13 of 40 layer-3 survivors failed layer 2 and are NOT here.
+- title: 'T-04-072: UART · C6 → 2 + 1 LP'
+  status: verbatim
+  sha: 6405f0a9
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h
+  quote: '// ESP32-C6 has 3 UARTs (2 HP UART, and 1 LP UART)
+
+    #define SOC_UART_NUM                    (3)
+
+    #define SOC_UART_HP_NUM                 (2)
+
+    #define SOC_UART_LP_NUM                 (1U)
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: Confirmed ESP32-C6 has 2 high-power UARTs plus 1 low-power UART.
+  match: UART\ ·\ C6\ →\ 2\ \+\ 1\ LP
+- title: 'T-04-076: I²C · S3 → 2'
+  status: verbatim
+  sha: c9d1e001
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h
+  quote: '#define SOC_I2C_NUM                             (2U)
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: Confirmed ESP32-S3 has 2 I2C controllers.
+  match: I²C\ ·\ S3\ →\ 2
+- title: 'T-04-099: TWAI (CAN) · S2 → 1'
+  status: verbatim
+  sha: fcb3dc0e
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+  quote: '#define SOC_TWAI_CONTROLLER_NUM         1U
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: Confirmed ESP32-S2 has 1 TWAI (CAN) controller.
+  match: TWAI\ \(CAN\)\ ·\ S2\ →\ 1
+- title: 'T-04-112: Touch · S3 → 14'
+  status: verbatim
+  sha: affdc5f0
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h
+  quote: '#define SOC_TOUCH_MAX_CHAN_ID                       (14)
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: Confirmed ESP32-S3 has 14 touch sensor channels.
+  match: Touch\ ·\ S3\ →\ 14
+- title: 'T-04-120: USB · C6 → JTAG'
+  status: verbatim
+  sha: f972dd82
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h
+  quote: '#define SOC_USB_SERIAL_JTAG_SUPPORTED   1
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: Confirmed ESP32-C6 has USB JTAG support.
+  match: USB\ ·\ C6\ →\ JTAG
+- title: 'T-10-037: **JTAG-адаптер.** [[classic]] Потрібен лише для classic; на S3 і'
+  status: verbatim
+  sha: c6a13b2b
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/jtag-debugging/index.rst
+  quote: 'Each version of this development board has JTAG interface already built in. No need for an external
+    JTAG adapter
+
+    '
+  method: wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+  note: First pass - Documentation shows some boards have built-in JTAG, others need external adapter
+  match: '\*\*JTAG\-адаптер\.\*\*\ \[\[classic\]\]\ Потрібен\ лише\ для\ classic;\ на\ '
+- title: 'T-17-132: **`Invalid head of packet (0x00)`**'
+  status: verbatim
+  sha: ec91ebc5
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/troubleshooting.rst
+  quote: 'Invalid head of packet (0xXX): Possible serial noise or corruption.
+
+    '
+  method: wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+  note: First pass - error message confirmed in esptool documentation
+  match: \*\*`Invalid\ head\ of\ packet\ \(0x00\)`\*\*
+- title: 'T-31-001: FreeRTOS уже працює, коли викликається ваш перший рядок (розділ '
+  status: verbatim
+  sha: 5ddb229c
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+  quote: 'Instead, ESP-IDF starts FreeRTOS automatically. Users must define a ``void app_main(void)``
+    function which acts as the entry point for user''s application and is automatically invoked on ESP-IDF
+    startup.
+
+    '
+  method: wave 2026-09-01, arms A; layer 3 verbatim; layer 2 read by a maintainer
+  note: —
+  match: FreeRTOS\ уже\ працює,\ коли\ викликається\ ваш\ перший\ рядок\ \(роз
+- title: 'T-31-030: [[classic]] [[S3]] Ядро 0 переважно зайняте радіостеком, `app_ma'
+  status: verbatim
+  sha: aae2b632
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'Typically, the tasks responsible for handling protocol related processing such as Wi-Fi or Bluetooth
+    are pinned to Core 0 (thus the name ``PRO_CPU``), where as the tasks handling the remainder of the
+    application are pinned to Core 1, (thus the name ``APP_CPU``).
+
+    '
+  method: wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+  note: 'First pass: Core allocation documentation found'
+  match: \[\[classic\]\]\ \[\[S3\]\]\ Ядро\ 0\ переважно\ зайняте\ радіостеком,\ `ap
+- title: 'T-33-011: `pin_bit_mask` — бітова маска, тому кілька пінів налаштовуються '
+  status: verbatim
+  sha: bedbcc3c
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/gpio/generic_gpio/main/gpio_example_main.c
+  quote: '//bit mask of the pins that you want to set,e.g.GPIO18/19
+
+    io_conf.pin_bit_mask = GPIO_OUTPUT_PIN_SEL;
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: —
+  match: '`pin_bit_mask`\ —\ бітова\ маска,\ тому\ кілька\ пінів\ налаштовуют'
+- title: 'T-33-063: Головне застосування — **адресні світлодіоди WS2812**.'
+  status: verbatim
+  sha: 2cf260ec
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
+  quote: ':example:`peripherals/rmt/led_strip` demonstrates how to use the RMT peripheral to drive a WS2812
+    LED strip
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: —
+  match: Головне\ застосування\ —\ \*\*адресні\ світлодіоди\ WS2812\*\*\.
+- title: 'T-33-112: Справжній аналоговий вихід, 8 розрядів, два канали.'
+  status: verbatim
+  sha: 06cbcff5
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/dac.rst
+  quote: '{IDF_TARGET_NAME} has two 8-bit DAC (digital to analog converter) channels respectively connected
+    to {IDF_TARGET_DAC_CH_1} (Channel 1) and {IDF_TARGET_DAC_CH_2} (Channel 2).
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: —
+  match: Справжній\ аналоговий\ вихід,\ 8\ розрядів,\ два\ канали\.
+- title: 'T-35-056: .glitch_ignore_cnt = 7,'
+  status: verbatim
+  sha: be777622
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+  quote: '.glitch_ignore_cnt = 7,
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: —
+  match: \.glitch_ignore_cnt\ =\ 7,
+- title: 'T-35-077: Практично це означає, що ваш пристрій, який прикидається I²C-дат'
+  status: verbatim
+  sha: 59f2afb6
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+  quote: 'The ESP32 I2C controller does not support clock stretching when operating as a slave. Therefore,
+    in addition to driver configuration, the application layer should pay attention to speed matching
+    and synchronization between master and slave devices
+
+    '
+  method: wave 2026-09-01, arms A; layer 3 verbatim; layer 2 read by a maintainer
+  note: —
+  match: Практично\ це\ означає,\ що\ ваш\ пристрій,\ який\ прикидається\ I²C
+- title: 'T-36-084: Для великих передач — кадр дисплея, блок з картки — DMA передає '
+  status: verbatim
+  sha: 45437be3
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/spi_master.rst
+  quote: 'Transparent handling of DMA transfers while reading and writing data
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: —
+  match: Для\ великих\ передач\ —\ кадр\ дисплея,\ блок\ з\ картки\ —\ DMA\ пере
+- title: 'T-40-019: Розмір стека сервера задається в `HTTPD_DEFAULT_CONFIG` і його ч'
+  status: verbatim
+  sha: 57ba00a7
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_http_server/include/esp_http_server.h
+  quote: "#define HTTPD_DEFAULT_CONFIG() {\n        .stack_size         = 4096,\n"
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: —
+  match: Розмір\ стека\ сервера\ задається\ в\ `HTTPD_DEFAULT_CONFIG`\ і\ йо
+- title: 'T-40-028: На ESP32 кілька одночасних клієнтів — межа, і поводитися з нею т'
+  status: verbatim
+  sha: b23be94f
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_http_server/include/esp_http_server.h
+  quote: 'Max number of sockets/clients connected at any time
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: —
+  match: На\ ESP32\ кілька\ одночасних\ клієнтів\ —\ межа,\ і\ поводитися\ з\ н
+- title: 'T-42-058: Щоб ESP-NOW працював, партнери мусять бути **на тому самому кана'
+  status: verbatim
+  sha: 4248c371
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  quote: 'the channels of the devices are not the same
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: —
+  match: 'Щоб\ ESP\-NOW\ працював,\ партнери\ мусять\ бути\ \*\*на\ тому\ самому\ '
+- title: 'T-42-063: Шлюз мусить тримати канал ESP-NOW рівним каналу точки доступу — '
+  status: verbatim
+  sha: 7ff46ce5
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  quote: 'the channel must be set as the channel that the local device is on
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: —
+  match: Шлюз\ мусить\ тримати\ канал\ ESP\-NOW\ рівним\ каналу\ точки\ доступ
+- title: 'T-48-049: Керування через LEDC (розділ 33).'
+  status: verbatim
+  sha: b88043c1
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+  quote: 'The LED control (LEDC) peripheral is primarily designed to control the intensity of LEDs, although
+    it can also be used to generate PWM signals for other purposes
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: —
+  match: Керування\ через\ LEDC\ \(розділ\ 33\)\.
+- title: 'T-59-123: .glitch_ignore_cnt = 7,'
+  status: verbatim
+  sha: be777622
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+  quote: '.glitch_ignore_cnt = 7,
+
+    '
+  method: wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+  note: 'First pass: Found in official I2C documentation with glitch_ignore_cnt = 7 shown as example code'
+  match: \.glitch_ignore_cnt\ =\ 7,
+- title: 'T-61-016: Потрібен роутер · ESP-NOW → **ні**'
+  status: verbatim
+  sha: dba9d4ef
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  quote: 'ESP-NOW is a kind of connectionless Wi-Fi communication protocol that is defined by Espressif.
+    In ESP-NOW, application data is encapsulated in a vendor-specific action frame and then transmitted
+    from one Wi-Fi device to another without connection.
+
+    '
+  method: wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+  note: 'First pass: "Connectionless" protocol confirms no router infrastructure needed'
+  match: Потрібен\ роутер\ ·\ ESP\-NOW\ →\ \*\*ні\*\*
+- title: 'T-D-028: `0x9` · Що робити → розділ 32'
+  status: verbatim
+  sha: abc8094d
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/reset_reasons.h
+  quote: 'RESET_REASON_CORE_RTC_WDT    = 0x09, // RTC watch dog resets digital core
+
+    '
+  method: wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+  note: 'First pass: 0x9 is RTC watchdog reset code'
+  match: '`0x9`\ ·\ Що\ робити\ →\ розділ\ 32'
+- title: 'T-D-049: `0x10` · Що робити → розділ 32'
+  status: verbatim
+  sha: 1e2b3315
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/reset_reasons.h
+  quote: 'RESET_REASON_SYS_RTC_WDT     = 0x10, // RTC watch dog resets digital core and rtc module
+
+    '
+  method: wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+  note: 'First pass: 0x10 is RTC watchdog reset code'
+  match: '`0x10`\ ·\ Що\ робити\ →\ розділ\ 32'
+- title: 'T-D-051: `rst:0xf` — це **живлення**, не помилка в коді.'
+  status: verbatim
+  sha: '95099304'
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/reset_reasons.h
+  quote: 'RESET_REASON_SYS_BROWN_OUT   = 0x0F, // Reset when the VDD voltage is not stable
+
+    '
+  method: wave 2026-09-01, arms B; layer 3 verbatim; layer 2 read by a maintainer
+  note: 'First pass: 0xf is power supply (brown-out), not code error'
+  match: '`rst:0xf`\ —\ це\ \*\*живлення\*\*,\ не\ помилка\ в\ коді\.'
+- title: 'T-E-088: Adafruit за замовчуванням ставить `SPI_MODE0`, частина інших біб'
+  status: verbatim
+  sha: 2ec41b36
+  source: https://raw.githubusercontent.com/adafruit/Adafruit_BME280_Library/master/Adafruit_BME280.cpp
+  quote: 'spi_dev = new Adafruit_SPIDevice(cspin, 1000000, SPI_BITORDER_MSBFIRST, SPI_MODE0, theSPI)
+
+    '
+  method: wave 2026-09-01, arms A; layer 3 verbatim; layer 2 read by a maintainer
+  note: Adafruit confirms SPI_MODE0 as default for sensor communication
+  match: Adafruit\ за\ замовчуванням\ ставить\ `SPI_MODE0`,\ частина\ інших
+- title: 'T-H-022: **`github.com/espressif/arduino-esp32`** — Arduino core, релізи,'
+  status: verbatim
+  sha: 926030cb
+  source: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  quote: 'Migration guide from version 2.x to 3.x is available
+
+    '
+  method: wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+  note: —
+  match: \*\*`github\.com/espressif/arduino\-esp32`\*\*\ —\ Arduino\ core,\ рел

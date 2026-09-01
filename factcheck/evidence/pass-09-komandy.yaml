@@ -1,6 +1,5 @@
 - nazva: merge-bin вимагає --chip; без нього команда падає
   zbih: --chip esp32 merge-bin|`--chip` тут \*\*обов.язковий\*\*|Specify the --chip argument
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli)
     та .../docs/en/esptool/basic-options.rst
   cytata: "def merge_bin_cli(ctx, addr_filename, **kwargs):\n    \"\"\"Merge multiple raw binary files\
@@ -44,7 +43,6 @@
     збоку.'
 - nazva: idf.py merge-bin бере адреси з конфігурації проєкту
   zbih: idf\.py merge-bin|merged-binary\.bin|адрес не набирати|адреси з конфігурації
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
   cytata: "The command ``idf.py merge-bin`` will merge the bootloader, partition table,\nthe application\
     \ itself, and other partitions (if there are any) according to\nthe project configuration and create\
@@ -76,7 +74,6 @@
     `.bin`-файли — `esptool --chip … merge-bin`.'
 - nazva: Стиснення при передачі ввімкнене за замовчуванням
   zbih: \*\*Уже ввімкнене\*\*|стиснення ввімкнене \*\*за замовчуванням\*\*|`-u` \| вимкнути стиснення
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/esptool/basic-commands.rst
   cytata: "@click.option(\n    \"--compress\",\n    \"-z\",\n    is_flag=True,\n    help=\"Compress data\
     \ during transfer (default unless --no-stub is specified).\",\n)\n@click.option(\n    \"--no-compress\"\
@@ -118,7 +115,6 @@
   - fd864248
 - nazva: --after watchdog-reset для чипів із native USB
   zbih: watchdog-reset|перелічується заново|USB-Serial/JTAG
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/advanced-options.rst
   cytata: ":not esp8266 and not esp32 and not esp32h2 and not esp32c6 and not esp32h4\n and not esp32e22:\
     \ * ``--after watchdog-reset`` hard-resets the chip by\n triggering an internal watchdog reset. This\
@@ -156,7 +152,6 @@
   zbih: read-flash 0 ALL|chip-id\s|flash-id\s|erase-region|verify-flash|app-flash|size-components|coredump-info|coredump-debug|create-component|add-dependency|reconfigure|fullclean|espefuse
     [^\n]{0,30}summary|`espefuse summary`|idf\.py menuconfig|`idf\.py menuconfig`|idf\.py set-target|idf\.py
     create-project|idf\.py size\b|idf\.py openocd|idf\.py gdb\b
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst
     та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
   cytata: "esptool (з переліку команд у __init__.py і документації):\n  write-flash read-flash erase-flash\

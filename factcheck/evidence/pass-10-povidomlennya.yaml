@@ -95,7 +95,6 @@
 - nazva: Формат паніки Guru Meditation і назви винятків
   zbih: 'Guru Meditation Error: Core|LoadProhibited|StoreProhibited|InstrFetchProhibited|IllegalInstruction|LoadStoreAlignment|IntegerDivideByZero|Exception
     was unhandled|Cache disabled but cached memory region accessed'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c
     та .../esp_system/port/arch/xtensa/panic_arch.c
   cytata: "(panic.c)\npanic_print_str(\"Guru Meditation Error: Core \");\npanic_print_dec(info->core);\n\
@@ -143,7 +142,6 @@
 - nazva: Дамп Task WDT — два різні переліки
   zbih: The following tasks/users|did not reset the watchdog in time|Tasks currently running|Переліків
     тут \*\*два|перший перелік|не встиг(ли)? погодувати
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
   cytata: "const char *caption = \"Task watchdog got triggered. \"\n                     \
     \ \"The following tasks/users did not reset the watchdog in time:\";\n…\n    ESP_EARLY_LOGE(TAG,\
@@ -189,7 +187,6 @@
 - nazva: Повідомлення бутлоадера про образ і розділи
   zbih: has invalid magic byte|Factory app partition is not bootable|invalid magic number|Failed
     to verify partition table|ota data partition invalid|Image hash failed
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
   cytata: 'FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)",
     src_addr);
@@ -247,7 +244,6 @@
 - nazva: Розбіжність обсягу флешу — два різні рядки й різні наслідки
   zbih: Detected size|smaller than the size in the binary image header|Probe failed|Using
     the size in the binary image header|Реальний флеш \*\*менший\*\*
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/spi_flash/esp_flash_spi_init.c
   cytata: "ESP_EARLY_LOGE(TAG, \"Detected size(%dk) smaller than the size in the binary image\
     \ \"\n                    \"header(%dk). Probe failed.\", default_chip.size/1024, legacy_chip->chip_size/1024);\n\
@@ -290,7 +286,6 @@
   - f25a0f20
 - nazva: Помилки купи розрізняють бік переповнення
   zbih: CORRUPT HEAP|Bad tail|Bad head|канарки|stack overflow in task X has been detected
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/heap/multi_heap_poisoning.c
     та .../freertos/FreeRTOS-Kernel/portable/xtensa/port.c
   cytata: 'MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad head at %p. Expected 0x%08x got 0x%08x\n",
@@ -343,7 +338,6 @@
 - nazva: Тексти помилок esptool змінилися між версіями
   zbih: No serial data received|Failed to start stub flasher|This chip is ESP32-S3, not ESP32|Wrong
     chip argument|MD5 of file does not match|Stub flasher has been disabled
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py
     та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
   cytata: "(v5 loader.py)\nraise FatalError(f\"Failed to connect to {self.CHIP_NAME}: {last_error}\"\
@@ -414,7 +408,6 @@
     обидва.'
 - nazva: Camera probe failed — повний вигляд рядка
   zbih: Camera probe failed
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp32-camera/master/driver/esp_camera.c
   cytata: 'ESP_LOGE(TAG, "Camera probe failed with error 0x%x(%s)", err, esp_err_to_name(err));
 

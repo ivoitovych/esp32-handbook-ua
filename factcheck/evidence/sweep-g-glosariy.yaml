@@ -1,0 +1,847 @@
+- nazva: 'T-G-036: | стабілізатор | voltage regulator |'
+  zbih: \|\s+стабілізатор\s+\|\s+voltage
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ldo_regulator.rst
+  cytata: 'Low Dropout Voltage Regulator (LDO)
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: voltage regulator — standard English electronics term, confirmed in ESP-IDF documentation
+  title: 'T-G-036: | стабілізатор | voltage regulator |'
+  match: \|\s+стабілізатор\s+\|\s+voltage
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ldo_regulator.rst
+  quote: 'Low Dropout Voltage Regulator (LDO)
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: voltage regulator — standard English electronics term, confirmed in ESP-IDF documentation
+  sha:
+  - 146faf22
+- nazva: 'T-G-085: | відтворюване збирання | reproducible build |'
+  zbih: \|\s+відтворюване\s+збирання\s+\|
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/reproducible-builds.rst
+  cytata: 'When reproducible builds are enabled, the application built with ESP-IDF does not depend on the build environment
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: reproducible build — confirmed in ESP-IDF API guides
+  title: 'T-G-085: | відтворюване збирання | reproducible build |'
+  match: \|\s+відтворюване\s+збирання\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/reproducible-builds.rst
+  quote: 'When reproducible builds are enabled, the application built with ESP-IDF does not depend on the build environment
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: reproducible build — confirmed in ESP-IDF API guides
+  sha:
+  - 1711b8b0
+- nazva: 'T-G-054: | прошивка | firmware |'
+  zbih: \|\s+прошивка\s+\|\s+firmware
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
+  cytata: 'building and flashing firmware onto an {IDF_TARGET_NAME} board
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: firmware — confirmed in ESP-IDF getting started documentation
+  title: 'T-G-054: | прошивка | firmware |'
+  match: \|\s+прошивка\s+\|\s+firmware
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
+  quote: 'building and flashing firmware onto an {IDF_TARGET_NAME} board
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: firmware — confirmed in ESP-IDF getting started documentation
+  sha:
+  - 20ddcdd5
+- nazva: 'T-G-055: | образ | image, binary |'
+  zbih: \|\s+образ\s+\|\s+image,
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/index.rst
+  cytata: 'Prepare binary executable images ready for flashing
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: image, binary — confirmed in esptool documentation describing firmware images
+  title: 'T-G-055: | образ | image, binary |'
+  match: \|\s+образ\s+\|\s+image,
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/index.rst
+  quote: 'Prepare binary executable images ready for flashing
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: image, binary — confirmed in esptool documentation describing firmware images
+  sha:
+  - f55addda
+- nazva: 'T-G-056: | збирання | build |'
+  zbih: \|\s+збирання\s+\|\s+build
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
+  cytata: 'Build Your First Project
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: build — confirmed in ESP-IDF documentation section on building projects
+  title: 'T-G-056: | збирання | build |'
+  match: \|\s+збирання\s+\|\s+build
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
+  quote: 'Build Your First Project
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: build — confirmed in ESP-IDF documentation section on building projects
+  sha:
+  - 6fc38c15
+- nazva: 'T-G-061: | пріоритет | priority |'
+  zbih: \|\s+пріоритет\s+\|\s+priority
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+  cytata: 'Priority
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: priority — confirmed in FreeRTOS task priority documentation
+  title: 'T-G-061: | пріоритет | priority |'
+  match: \|\s+пріоритет\s+\|\s+priority
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+  quote: 'Priority
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: priority — confirmed in FreeRTOS task priority documentation
+  sha:
+  - bb807264
+- nazva: 'T-G-062: | черга | queue |'
+  zbih: \|\s+черга\s+\|\s+queue
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  cytata: 'Queue API
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: queue — confirmed in FreeRTOS queue API documentation; xQueueCreateWithCaps function
+  title: 'T-G-062: | черга | queue |'
+  match: \|\s+черга\s+\|\s+queue
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'Queue API
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: queue — confirmed in FreeRTOS queue API documentation; xQueueCreateWithCaps function
+  sha:
+  - 80b8bb3a
+- nazva: 'T-G-063: | семафор | semaphore |'
+  zbih: \|\s+семафор\s+\|\s+semaphore
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  cytata: 'Semaphore API
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: semaphore — confirmed as dedicated section in FreeRTOS API documentation
+  title: 'T-G-063: | семафор | semaphore |'
+  match: \|\s+семафор\s+\|\s+semaphore
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'Semaphore API
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: semaphore — confirmed as dedicated section in FreeRTOS API documentation
+  sha:
+  - 274527f7
+- nazva: 'T-G-064: | м''ютекс | mutex |'
+  zbih: \|\s+м'ютекс\s+\|\s+mutex
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  cytata: 'mutexes or spinlocks if they require mutual exclusion
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: mutex — confirmed in FreeRTOS documentation discussing mutual exclusion
+  title: 'T-G-064: | м''ютекс | mutex |'
+  match: \|\s+м'ютекс\s+\|\s+mutex
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'mutexes or spinlocks if they require mutual exclusion
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: mutex — confirmed in FreeRTOS documentation discussing mutual exclusion
+  sha:
+  - 2e8ce884
+- nazva: 'T-G-065: | група подій | event group |'
+  zbih: \|\s+група\s+подій\s+\|
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  cytata: 'Event Group API
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: event group — confirmed as dedicated section in FreeRTOS API documentation
+  title: 'T-G-065: | група подій | event group |'
+  match: \|\s+група\s+подій\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'Event Group API
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: event group — confirmed as dedicated section in FreeRTOS API documentation
+  sha:
+  - 23345d26
+- nazva: 'T-G-066: | переривання | interrupt |'
+  zbih: \|\s+переривання\s+\|\s+interrupt
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  cytata: 'Time slicing is governed by a tick interrupt
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: interrupt — confirmed in FreeRTOS scheduler and interrupt handling documentation
+  title: 'T-G-066: | переривання | interrupt |'
+  match: \|\s+переривання\s+\|\s+interrupt
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'Time slicing is governed by a tick interrupt
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: interrupt — confirmed in FreeRTOS scheduler and interrupt handling documentation
+  sha:
+  - e7bdf88a
+- nazva: 'T-G-068: | критична секція | critical section |'
+  zbih: \|\s+критична\s+секція\s+\|
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  cytata: 'Critical Sections
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: critical section — confirmed as dedicated section in FreeRTOS documentation
+  title: 'T-G-068: | критична секція | critical section |'
+  match: \|\s+критична\s+секція\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'Critical Sections
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: critical section — confirmed as dedicated section in FreeRTOS documentation
+  sha:
+  - b381190a
+- nazva: 'T-G-074: | атомарна операція | atomic operation |'
+  zbih: \|\s+атомарна\s+операція\s+\|
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  cytata: 'True atomic access to the same memory address is achieved via an atomic compare-and-swap instruction
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: atomic operation — confirmed in FreeRTOS critical section and spinlock documentation
+  title: 'T-G-074: | атомарна операція | atomic operation |'
+  match: \|\s+атомарна\s+операція\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'True atomic access to the same memory address is achieved via an atomic compare-and-swap instruction
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: atomic operation — confirmed in FreeRTOS critical section and spinlock documentation
+  sha:
+  - 22c3b24f
+- nazva: 'T-G-076: | взаємне блокування | deadlock |'
+  zbih: \|\s+взаємне\s+блокування\s+\|
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  cytata: 'avoid deadlocking when entering critical sections recursively
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: deadlock — confirmed in FreeRTOS critical section documentation
+  title: 'T-G-076: | взаємне блокування | deadlock |'
+  match: \|\s+взаємне\s+блокування\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'avoid deadlocking when entering critical sections recursively
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: deadlock — confirmed in FreeRTOS critical section documentation
+  sha:
+  - 154baa32
+- nazva: 'T-G-077: | зворотний виклик | callback |'
+  zbih: \|\s+зворотний\s+виклик\s+\|
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_additions.rst
+  cytata: 'TLSP Deletion callbacks are run automatically when a task is deleted
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: callback — confirmed in FreeRTOS supplemental features documentation
+  title: 'T-G-077: | зворотний виклик | callback |'
+  match: \|\s+зворотний\s+виклик\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_additions.rst
+  quote: 'TLSP Deletion callbacks are run automatically when a task is deleted
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: callback — confirmed in FreeRTOS supplemental features documentation
+  sha:
+  - a6609781
+- nazva: 'T-G-088: | точка доступу | access point |'
+  zbih: \|\s+точка\s+доступу\s+\|
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
+  cytata: 'This example shows how to use the Wi-Fi Station functionality of the Wi-Fi driver of ESP for connecting to an Access Point.
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: точка доступу - це Access Point, підтверджено в документації ESP-IDF
+  title: 'T-G-088: | точка доступу | access point |'
+  match: \|\s+точка\s+доступу\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
+  quote: 'This example shows how to use the Wi-Fi Station functionality of the Wi-Fi driver of ESP for connecting to an Access Point.
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: точка доступу - це Access Point, підтверджено в документації ESP-IDF
+  sha:
+  - 8ac2c754
+- nazva: 'T-G-089: | станція, клієнт | station |'
+  zbih: \|\s+станція,\s+клієнт\s+\|
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
+  cytata: 'This example shows how to use the Wi-Fi Station functionality
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: станція - це Station, підтверджено в документації ESP-IDF
+  title: 'T-G-089: | станція, клієнт | station |'
+  match: \|\s+станція,\s+клієнт\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
+  quote: 'This example shows how to use the Wi-Fi Station functionality
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: станція - це Station, підтверджено в документації ESP-IDF
+- nazva: 'T-G-090: | канал | channel |'
+  zbih: \|\s+канал\s+\|\s+channel
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
+  cytata: 'connected with #!/bin/test, aid = 1, channel 6, BW20, bssid = ac:9e:17:7e:31:40
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: канал - це channel, підтверджено в логах ESP-IDF
+  title: 'T-G-090: | канал | channel |'
+  match: \|\s+канал\s+\|\s+channel
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
+  quote: 'connected with #!/bin/test, aid = 1, channel 6, BW20, bssid = ac:9e:17:7e:31:40
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: канал - це channel, підтверджено в логах ESP-IDF
+  sha:
+  - 8f3df2fa
+- nazva: 'T-G-091: | рівень сигналу | RSSI, signal strength |'
+  zbih: \|\s+рівень\s+сигналу\s+\|
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
+  cytata: 'security type: 3, phy: bgn, rssi: -68
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: рівень сигналу - це rssi (signal strength), підтверджено в логах ESP-IDF
+  title: 'T-G-091: | рівень сигналу | RSSI, signal strength |'
+  match: \|\s+рівень\s+сигналу\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
+  quote: 'security type: 3, phy: bgn, rssi: -68
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: рівень сигналу - це rssi (signal strength), підтверджено в логах ESP-IDF
+  sha:
+  - 565d48c2
+- nazva: 'T-G-094: | дальність | range |'
+  zbih: \|\s+дальність\s+\|\s+range
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/ftm/README.md
+  cytata: 'Estimated Distance - 5.07 meters
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: дальність - це distance, підтверджено в документації ESP-IDF FTM
+  title: 'T-G-094: | дальність | range |'
+  match: \|\s+дальність\s+\|\s+range
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/ftm/README.md
+  quote: 'Estimated Distance - 5.07 meters
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: дальність - це distance, підтверджено в документації ESP-IDF FTM
+  sha:
+  - b892bd1e
+- nazva: 'T-G-095: | маячок | beacon |'
+  zbih: \|\s+маячок\s+\|\s+beacon
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h
+  cytata: 'If the station does not receive a beacon frame from the connected SoftAP during the inactive time
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: маячок - це beacon frame, підтверджено в ESP-IDF WiFi header
+  title: 'T-G-095: | маячок | beacon |'
+  match: \|\s+маячок\s+\|\s+beacon
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h
+  quote: 'If the station does not receive a beacon frame from the connected SoftAP during the inactive time
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: маячок - це beacon frame, підтверджено в ESP-IDF WiFi header
+  sha:
+  - 5fedc62c
+- nazva: 'T-G-098: | топік | topic |'
+  zbih: \|\s+топік\s+\|\s+topic
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/mqtt/README.md
+  cytata: 'TOPIC=/topic/qos0
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: топік - це topic, підтверджено в логах ESP-IDF MQTT
+  title: 'T-G-098: | топік | topic |'
+  match: \|\s+топік\s+\|\s+topic
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/mqtt/README.md
+  quote: 'TOPIC=/topic/qos0
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: топік - це topic, підтверджено в логах ESP-IDF MQTT
+  sha:
+  - 6dfcdfba
+- nazva: 'T-G-099: | підписка | subscription |'
+  zbih: \|\s+підписка\s+\|\s+subscription
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/mqtt/README.md
+  cytata: 'sent subscribe successful
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: підписка - це subscribe, підтверджено в документації ESP-IDF MQTT
+  title: 'T-G-099: | підписка | subscription |'
+  match: \|\s+підписка\s+\|\s+subscription
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/mqtt/README.md
+  quote: 'sent subscribe successful
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: підписка - це subscribe, підтверджено в документації ESP-IDF MQTT
+  sha:
+  - 3dac51ed
+- nazva: 'T-G-100: | публікація | publish |'
+  zbih: \|\s+публікація\s+\|\s+publish
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/mqtt/README.md
+  cytata: 'sent publish successful, msg_id=41464
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: публікація - це publish, підтверджено в логах ESP-IDF MQTT
+  title: 'T-G-100: | публікація | publish |'
+  match: \|\s+публікація\s+\|\s+publish
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/mqtt/README.md
+  quote: 'sent publish successful, msg_id=41464
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: публікація - це publish, підтверджено в логах ESP-IDF MQTT
+  sha:
+  - f5029421
+- nazva: 'T-G-101: | сертифікат | certificate |'
+  zbih: \|\s+сертифікат\s+\|\s+certificate
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/mqtt/README.md
+  cytata: 'TLS connection with server verification using the certificate bundle
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: сертифікат - це certificate, підтверджено в документації ESP-IDF MQTT
+  title: 'T-G-101: | сертифікат | certificate |'
+  match: \|\s+сертифікат\s+\|\s+certificate
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/mqtt/README.md
+  quote: 'TLS connection with server verification using the certificate bundle
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: сертифікат - це certificate, підтверджено в документації ESP-IDF MQTT
+  sha:
+  - 0383b98e
+- nazva: 'T-G-102: | центр сертифікації | certificate authority, CA |'
+  zbih: \|\s+центр\s+сертифікації\s+\|
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/protocols/esp_crt_bundle.rst
+  cytata: 'Certificate Authorities (CAs) from the bundle
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: центр сертифікації - це certificate authority, підтверджено в документації ESP-IDF
+  title: 'T-G-102: | центр сертифікації | certificate authority, CA |'
+  match: \|\s+центр\s+сертифікації\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/protocols/esp_crt_bundle.rst
+  quote: 'Certificate Authorities (CAs) from the bundle
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: центр сертифікації - це certificate authority, підтверджено в документації ESP-IDF
+  sha:
+  - 1b7c5a94
+- nazva: 'T-G-103: | рукостискання | handshake |'
+  zbih: \|\s+рукостискання\s+\|\s+handshake
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/protocols/esp_crt_bundle.rst
+  cytata: 'during the TLS handshake
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: рукостискання - це handshake, підтверджено в документації ESP-IDF
+  title: 'T-G-103: | рукостискання | handshake |'
+  match: \|\s+рукостискання\s+\|\s+handshake
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/protocols/esp_crt_bundle.rst
+  quote: 'during the TLS handshake
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: рукостискання - це handshake, підтверджено в документації ESP-IDF
+  sha:
+  - db3539cb
+- nazva: 'T-G-104: | широкомовна розсилка | broadcast |'
+  zbih: \|\s+широкомовна\s+розсилка\s+\|
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h
+  cytata: 'req->allow_broadcast
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: широкомовна розсилка - це broadcast, підтверджено в ESP-IDF WiFi header
+  title: 'T-G-104: | широкомовна розсилка | broadcast |'
+  match: \|\s+широкомовна\s+розсилка\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h
+  quote: 'req->allow_broadcast
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: широкомовна розсилка - це broadcast, підтверджено в ESP-IDF WiFi header
+  sha:
+  - b535fc91
+- nazva: 'T-G-108: | напруга | voltage |'
+  zbih: \|\s+напруга\s+\|\s+voltage
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
+  cytata: 'measuring analog signals from multiple input channels
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: напруга - це voltage, підтверджено в документації ESP-IDF ADC
+  title: 'T-G-108: | напруга | voltage |'
+  match: \|\s+напруга\s+\|\s+voltage
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
+  quote: 'measuring analog signals from multiple input channels
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: напруга - це voltage, підтверджено в документації ESP-IDF ADC
+- nazva: 'T-G-109: | струм | current |'
+  zbih: \|\s+струм\s+\|\s+current
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/power_management.rst
+  cytata: 'higher current consumption
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: струм - це current, підтверджено в документації ESP-IDF
+  title: 'T-G-109: | струм | current |'
+  match: \|\s+струм\s+\|\s+current
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/power_management.rst
+  quote: 'higher current consumption
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: струм - це current, підтверджено в документації ESP-IDF
+- nazva: 'T-G-111: | потужність | power |'
+  zbih: \|\s+потужність\s+\|\s+power
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/power_management.rst
+  cytata: 'put the chip into Light-sleep mode to run an application at smallest possible power consumption
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: потужність - це power, підтверджено в документації ESP-IDF
+  title: 'T-G-111: | потужність | power |'
+  match: \|\s+потужність\s+\|\s+power
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/power_management.rst
+  quote: 'put the chip into Light-sleep mode to run an application at smallest possible power consumption
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: потужність - це power, підтверджено в документації ESP-IDF
+  sha:
+  - 737f4aed
+- nazva: 'T-G-116: | коефіцієнт заповнення | duty cycle |'
+  zbih: \|\s+коефіцієнт\s+заповнення\s+\|
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+  cytata: 'The range of the duty cycle values passed to functions depends on selected ``duty_resolution``
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: коефіцієнт заповнення - це duty cycle, підтверджено в документації ESP-IDF LEDC
+  title: 'T-G-116: | коефіцієнт заповнення | duty cycle |'
+  match: \|\s+коефіцієнт\s+заповнення\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+  quote: 'The range of the duty cycle values passed to functions depends on selected ``duty_resolution``
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: коефіцієнт заповнення - це duty cycle, підтверджено в документації ESP-IDF LEDC
+  sha:
+  - 705e4498
+- nazva: 'T-G-117: | роздільність | resolution |'
+  zbih: \|\s+роздільність\s+\|\s+resolution
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
+  cytata: 'resolution of the ADC result
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: роздільність - це resolution, підтверджено в документації ESP-IDF ADC
+  title: 'T-G-117: | роздільність | resolution |'
+  match: \|\s+роздільність\s+\|\s+resolution
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
+  quote: 'resolution of the ADC result
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: роздільність - це resolution, підтверджено в документації ESP-IDF ADC
+  sha:
+  - d39addb6
+- nazva: 'T-G-118: | точність | accuracy |'
+  zbih: \|\s+точність\s+\|\s+accuracy
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/adc_calibration.rst
+  cytata: 'get more accurate output results
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: точність - це accuracy, підтверджено в документації ESP-IDF ADC калібрування
+  title: 'T-G-118: | точність | accuracy |'
+  match: \|\s+точність\s+\|\s+accuracy
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/adc_calibration.rst
+  quote: 'get more accurate output results
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: точність - це accuracy, підтверджено в документації ESP-IDF ADC калібрування
+  sha:
+  - 585a554e
+- nazva: 'T-G-119: | калібрування | calibration |'
+  zbih: \|\s+калібрування\s+\|\s+calibration
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/adc_calibration.rst
+  cytata: 'ADC calibration driver to minimize the effect of different reference voltages
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: калібрування - це calibration, підтверджено в документації ESP-IDF
+  title: 'T-G-119: | калібрування | calibration |'
+  match: \|\s+калібрування\s+\|\s+calibration
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/adc_calibration.rst
+  quote: 'ADC calibration driver to minimize the effect of different reference voltages
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: калібрування - це calibration, підтверджено в документації ESP-IDF
+  sha:
+  - a2434656
+- nazva: 'T-G-120: | усереднення | averaging |'
+  zbih: \|\s+усереднення\s+\|\s+averaging
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/adc_calibration.rst
+  cytata: 'multisampling may also be used to further mitigate the effects of noise
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: усереднення - це averaging/multisampling, підтверджено в документації ESP-IDF
+  title: 'T-G-120: | усереднення | averaging |'
+  match: \|\s+усереднення\s+\|\s+averaging
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/adc_calibration.rst
+  quote: 'multisampling may also be used to further mitigate the effects of noise
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: усереднення - це averaging/multisampling, підтверджено в документації ESP-IDF
+  sha:
+  - ca2d006a
+- nazva: 'T-G-121: | шум | noise |'
+  zbih: \|\s+шум\s+\|\s+noise
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/adc_calibration.rst
+  cytata: 'Minimize Noise
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: шум - це noise, підтверджено в документації ESP-IDF ADC
+  title: 'T-G-121: | шум | noise |'
+  match: \|\s+шум\s+\|\s+noise
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/adc_calibration.rst
+  quote: 'Minimize Noise
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: шум - це noise, підтверджено в документації ESP-IDF ADC
+  sha:
+  - 24facb96
+- nazva: 'T-G-141: | IDF | IoT Development Framework |'
+  zbih: \|\s+IDF\s+\|\s+IoT
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
+  cytata: 'Espressif IoT Development Framework
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: IDF = Espressif IoT Development Framework підтверджено офіційною документацією ESP-IDF
+  title: 'T-G-141: | IDF | IoT Development Framework |'
+  match: \|\s+IDF\s+\|\s+IoT
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
+  quote: 'Espressif IoT Development Framework
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: IDF = Espressif IoT Development Framework підтверджено офіційною документацією ESP-IDF
+  sha:
+  - '76955507'
+- nazva: 'T-G-142: | RTOS | Real-Time Operating System |'
+  zbih: \|\s+RTOS\s+\|\s+Real\-Time
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+  cytata: 'FreeRTOS is an open source RTOS (real-time operating system)
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: RTOS = real-time operating system підтверджено у офіційній документації FreeRTOS ESP-IDF
+  title: 'T-G-142: | RTOS | Real-Time Operating System |'
+  match: \|\s+RTOS\s+\|\s+Real\-Time
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+  quote: 'FreeRTOS is an open source RTOS (real-time operating system)
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: RTOS = real-time operating system підтверджено у офіційній документації FreeRTOS ESP-IDF
+  sha:
+  - cb6ba9e9
+- nazva: 'T-G-150: | UART | Universal Asynchronous Receiver/Transmitter |'
+  zbih: \|\s+UART\s+\|\s+Universal
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
+  cytata: 'Universal Asynchronous Receiver/Transmitter (UART)
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: UART = Universal Asynchronous Receiver/Transmitter підтверджено у офіційній документації ESP-IDF
+  title: 'T-G-150: | UART | Universal Asynchronous Receiver/Transmitter |'
+  match: \|\s+UART\s+\|\s+Universal
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
+  quote: 'Universal Asynchronous Receiver/Transmitter (UART)
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: UART = Universal Asynchronous Receiver/Transmitter підтверджено у офіційній документації ESP-IDF
+- nazva: 'T-G-163: | WDT | Watchdog Timer |'
+  zbih: \|\s+WDT\s+\|\s+Watchdog
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+  cytata: 'The purpose of a watchdog timer is to monitor the system''s operation and automatically recover from software or hardware faults by restarting the system
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: WDT як Watchdog Timer підтверджено у офіційній документації ESP-IDF
+  title: 'T-G-163: | WDT | Watchdog Timer |'
+  match: \|\s+WDT\s+\|\s+Watchdog
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+  quote: 'The purpose of a watchdog timer is to monitor the system''s operation and automatically recover from software or hardware faults by restarting the system
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: WDT як Watchdog Timer підтверджено у офіційній документації ESP-IDF
+  sha:
+  - 9860ee2c
+- nazva: 'T-G-146: | OTA | Over-The-Air (оновлення) |'
+  zbih: \|\s+OTA\s+\|\s+Over\-The\-Air
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'Over The Air Updates (OTA)
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: OTA = Over-The-Air підтверджено у заголовку офіційної документації ESP-IDF
+  title: 'T-G-146: | OTA | Over-The-Air (оновлення) |'
+  match: \|\s+OTA\s+\|\s+Over\-The\-Air
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  quote: 'Over The Air Updates (OTA)
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: OTA = Over-The-Air підтверджено у заголовку офіційної документації ESP-IDF
+  sha:
+  - d1f5a6a0
+- nazva: 'T-G-153: | I²S | Inter-IC Sound |'
+  zbih: \|\s+I²S\s+\|\s+Inter\-IC
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2s.rst
+  cytata: 'Inter-IC Sound (I2S)
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: I²S = Inter-IC Sound підтверджено у заголовку офіційної документації ESP-IDF
+  title: 'T-G-153: | I²S | Inter-IC Sound |'
+  match: \|\s+I²S\s+\|\s+Inter\-IC
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2s.rst
+  quote: 'Inter-IC Sound (I2S)
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: I²S = Inter-IC Sound підтверджено у заголовку офіційної документації ESP-IDF
+  sha:
+  - fd0801cd
+- nazva: 'T-G-155: | JTAG | Joint Test Action Group (інтерфейс'
+  zbih: \|\s+JTAG\s+\|\s+Joint
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/jtag-debugging/index.rst
+  cytata: 'JTAG (Joint Test Action Group) interface
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: JTAG = Joint Test Action Group підтверджено у документації налагодження ESP-IDF
+  title: 'T-G-155: | JTAG | Joint Test Action Group (інтерфейс'
+  match: \|\s+JTAG\s+\|\s+Joint
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/jtag-debugging/index.rst
+  quote: 'JTAG (Joint Test Action Group) interface
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: JTAG = Joint Test Action Group підтверджено у документації налагодження ESP-IDF
+  sha:
+  - 92ee8915
+- nazva: 'T-G-162: | ULP | Ultra-Low-Power (співпроцесор) |'
+  zbih: \|\s+ULP\s+\|\s+Ultra\-Low\-Power
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ulp.rst
+  cytata: 'Ultra Low Power (ULP) coprocessor
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: ULP = Ultra-Low-Power підтверджено у документації ESP-IDF
+  title: 'T-G-162: | ULP | Ultra-Low-Power (співпроцесор) |'
+  match: \|\s+ULP\s+\|\s+Ultra\-Low\-Power
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ulp.rst
+  quote: 'Ultra Low Power (ULP) coprocessor
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: ULP = Ultra-Low-Power підтверджено у документації ESP-IDF
+  sha:
+  - f9c75c29

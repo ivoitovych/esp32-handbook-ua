@@ -1,6 +1,5 @@
 - nazva: ATmega328P — немає радіомодуля серед периферії
   zbih: Радіо на борту · AVR \(Arduino Uno\) → ні
-  klas: B
   dzherelo: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), вступ і розділ «Features»
     — «Peripheral Features» і «Special Microcontroller Features» (кеш: source-cache/atmega328p.pdf)'
   cytata: 'The ATmega48A/PA/88A/PA/168A/PA/328/P provides the following features: 4K/8Kbytes of In-System
@@ -54,7 +53,6 @@
   - 6ddf4773
 - nazva: ATmega328P — 16 МГц серед «типових» тактових частот
   zbih: Частота · AVR \(Arduino Uno\) → 16 МГц
-  klas: A
   dzherelo: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 20-7 «Examples
     of UBRRn Settings for Commonly Used Oscillator Frequencies» і розділ 29.3 «Speed Grades» (кеш: source-cache/atmega328p.pdf)'
   cytata: "Table 20-7.         Examples of UBRRn Settings for Commonly Used Oscillator Frequencies (Continued)\n\
@@ -90,7 +88,6 @@
   - dc034963
 - nazva: ATmega328P — 2 КБ внутрішньої SRAM
   zbih: RAM · AVR \(Arduino Uno\) → 2 КБ
-  klas: A
   dzherelo: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ «Features»
     → «High Endurance Non-volatile Memory Segments» і розділ 8.3 «SRAM Data Memory» (кеш: source-cache/atmega328p.pdf)'
   cytata: "High Endurance Non-volatile Memory Segments\n            ̶               4/8/16/32KBytes of\
@@ -118,7 +115,6 @@
   - 1f2ed711
 - nazva: ATmega328P — немає операційної системи серед можливостей чипа
   zbih: ОС · AVR \(Arduino Uno\) → немає
-  klas: B
   dzherelo: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), «Introduction» і розділ
     «Features» → «Special Microcontroller Features» (кеш: source-cache/atmega328p.pdf)'
   cytata: "The ATmega48A/PA/88A/PA/168A/PA/328/P is a low power, CMOS 8-bit microcontrollers based on\
@@ -156,7 +152,6 @@
   - 473cce38
 - nazva: ATmega328P — час старту вимірюється циклами й мілісекундами
   zbih: Старт · AVR \(Arduino Uno\) → миттєво
-  klas: B
   dzherelo: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 9-6 «Start-up
     Times for the Full Swing Crystal Oscillator Clock Selection» (кеш: source-cache/atmega328p.pdf)'
   cytata: "Table 9-6.        Start-up Times for the Full Swing Crystal Oscillator Clock Selection\n  \
@@ -194,7 +189,6 @@
   - 3c8a5c9e
 - nazva: ATmega328P — струм у Power-down вимірюється мікроамперами
   zbih: Сон · AVR \(Arduino Uno\) → мкА
-  klas: A
   dzherelo: Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 29-8 «ATmega328P
     DC characteristics», рядок «Power-down mode»
   cytata: "Table 29-8.      ATmega328P DC characteristics - TA = -40C to 85C, VCC = 1.8V to 5.5V (unless\
@@ -228,7 +222,6 @@
   - 3adfd1fa
 - nazva: ATmega328P — детермінована й мінімальна затримка переривання
   zbih: Реальний час · AVR \(Arduino Uno\) → добре
-  klas: B
   dzherelo: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ 7.7.1 «Interrupt
     Response Time» (кеш: source-cache/atmega328p.pdf)'
   cytata: "7.7.1   Interrupt Response Time\n        The interrupt execution response for all the enabled\
@@ -258,7 +251,6 @@
   - ef545e2e
 - nazva: Ціна плати Arduino Uno — не факт із datasheet кристала
   zbih: Ціна плати · AVR \(Arduino Uno\) → низька
-  klas: E
   dzherelo: —
   cytata: —
   sposib: PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26 — перевірено, що в документі немає

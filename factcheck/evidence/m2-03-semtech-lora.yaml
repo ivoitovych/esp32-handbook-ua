@@ -1,6 +1,5 @@
 - nazva: Робочий діапазон SF у LoRa — 7…12, а SF6 окремий режим
   zbih: робочий діапазон \*\*7…12\*\*|Апаратно існує ще й SF6
-  klas: A
   dzherelo: SX1276/77/78/79 Datasheet, Rev. 4 (March 2015), розділ 4.1.1.2 «Spreading Factor», Table 13
     «Range of Spreading Factors», с. 27
   cytata: "Table 13 Range of Spreading Factors\n  SpreadingFactor   Spreading Factor    LoRa Demodulator\n\
@@ -56,7 +55,6 @@
     spreading factors are orthogonal to each other».'
 - nazva: Ширша смуга — швидше й менш далеко
   zbih: \*\*Bandwidth\*\* — ширша смуга означає швидше і менш далеко
-  klas: A
   dzherelo: SX1276/77/78/79 Datasheet, Rev. 4, Table 15 «LoRa Bandwidth Options» (с. 28) і Table 8 «Receiver
     Specifications» (RFS_L10_HF, RFS_L62_HF)
   cytata: "Table 15 LoRa Bandwidth Options\n  Bandwidth (kHz)   Spreading Factor   Coding rate   Nominal\
@@ -96,7 +94,6 @@
   - 5abc82aa
 - nazva: RFM69 не є LoRa-модулем
   zbih: \*\*RFM69 — це не LoRa\.\*\*
-  klas: A
   dzherelo: RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділ «Key Product Features»; для порівняння
     — SX1276/77/78/79 Datasheet Rev. 4, «Key Product Features»
   cytata: "RFM69HCW — KEY PRODUCT FEATURES\n  FSK Bit rates up to 300 kb/s\n  FSK, GFSK, MSK, GMSK and\
@@ -136,7 +133,6 @@
     Заведено у `factcheck/SPROSTOVANE-m2.md` зі взірцем.'
 - nazva: SX1262 ефективніший за SX1276 — числа не отримано
   zbih: 'новіше покоління Semtech: те саме LoRa, менше споживання'
-  klas: C
   dzherelo: 'SX1261/SX1262 Datasheet (Semtech), файл у порталі — 60852689.DS_SX1261_2 V2-2.pdf, 100 с.
     Сторінка виробу: https://www.semtech.com/products/wireless-rf/lora-connect/sx1262'
   shukaty: 'таблиця споживання (Rx та Tx) SX1262 проти таблиці споживання SX1276 з DS_SX1276-7-8-9_W_APP_V7:

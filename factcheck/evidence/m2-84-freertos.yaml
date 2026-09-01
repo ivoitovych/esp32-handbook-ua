@@ -26,7 +26,6 @@
 
 - nazva: Пріоритет задачі від 0 до configMAX_PRIORITIES мінус 1
   zbih: 0.*configMAX_PRIORITIES|пріоритет.*0
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
   cytata: 'Task priorities range from 0 (lowest) to configMAX_PRIORITIES - 1 (highest).
 
@@ -50,7 +49,6 @@
     підтверджує цей діапазон.
 - nazva: Core 0 (PRO_CPU) переважно займає радіостек, Core 1 (APP_CPU) — застосунок
   zbih: Core.*0.*Core.*1|APP_CPU|PRO_CPU
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
   cytata: 'Within ESP-IDF, Core 0 and Core 1 are sometimes referred to as PRO_CPU and APP_CPU.
 
@@ -82,7 +80,6 @@
   - 8ed6fe72
 - nazva: Функції FromISR єдині дозволені в обробнику переривання
   zbih: FromISR|обробнику переривання
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
   cytata: 'FromISR functions are ISR-safe variants of FreeRTOS APIs.
 
@@ -102,7 +99,6 @@
     наявність ISR-safe варіантів.
 - nazva: Бітові прапори WIFI_OK та TIME_OK в event group
   zbih: WIFI_OK|TIME_OK|BIT0|BIT1
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
   cytata: 'Event group bits are used for task synchronization.
 
@@ -125,7 +121,6 @@
   - efe06e13
 - nazva: Сторож (Watchdog) автоматично перезавантажує систему при зависанні
   zbih: зависання|сторож
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
   cytata: 'The purpose of a watchdog timer is to monitor the system''s operation and automatically
 
@@ -153,7 +148,6 @@
     взірець замість звужувати. Знахідка М1. Решта альтернатив тримає 6 одиниць.'
 - nazva: Реле на GPIO при зависанні переходить в безпечний стан
   zbih: реле.*GPIO|зависанні
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
   cytata: 'System recovery and restart mechanism through watchdog monitoring.
 
@@ -173,7 +167,6 @@
     механізм восстановлення системи.
 - nazva: Task Watchdog Timer та Interrupt Watchdog Timer у ESP-IDF
   zbih: Task Watchdog|Interrupt Watchdog|TWDT|IWDT
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
   cytata: 'ESP-IDF supports multiple types of watchdog timers:
 

@@ -1,0 +1,632 @@
+# Хвиля 2: підтвердження, звірені підрядком у названому файлі.
+# Наряд і спосіб — factcheck/archive/NARYAD-m2-hvylya2.md.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- nazva: 'T-H-013: **Datasheet модуля** (`ESP32-WROOM-32`, `ESP32-S3-WROOM-1`, '
+  zbih: \*\*Datasheet\s+модуля\*\*\s+\(`ESP32\-WROOM\-32`,\s+`ESP32\-S3\-WROOM\-1`,\s+`ESP32\-C3\-MINI\-1`\)\s+—\s+окремий\s+документ\s+від\s+datashee
+  dzherelo: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: 'For more information on ESP32-D0WD-V3 and ESP32-D0WDR2-V3 chip, please refer to
+    ESP32 Series Datasheet.
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: Це datasheet модуля, яке посилається на окремий ESP32 Series Datasheet для інформації
+    про чип.
+  title: 'T-H-013: **Datasheet модуля** (`ESP32-WROOM-32`, `ESP32-S3-WROOM-1`, '
+  match: \*\*Datasheet\s+модуля\*\*\s+\(`ESP32\-WROOM\-32`,\s+`ESP32\-S3\-WROOM\-1`,\s+`ESP32\-C3\-MINI\-1`\)\s+—\s+окремий\s+документ\s+від\s+datashee
+  status: verbatim
+  source: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  quote: 'For more information on ESP32-D0WD-V3 and ESP32-D0WDR2-V3 chip, please refer to
+    ESP32 Series Datasheet.
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: Це datasheet модуля, яке посилається на окремий ESP32 Series Datasheet для інформації
+    про чип.
+  sha:
+  - 9191c24f
+- nazva: 'T-23-011: `ESP32-WROOM-32` · Що це значить практично → двоядерний Xten'
+  zbih: '`ESP32\-WROOM\-32`\s+·\s+Що\s+це\s+значить\s+практично\s+→\s+двоядерний\s+Xtensa,\s+без\s+PSRAM'
+  dzherelo: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: 'ESP32-D0WDR2-V3 also provides 2 MB PSRAM
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: 'Помічник заявив спростування, машинну перевірку воно пройшло — цитата дослівна.
+    Особиста звірка знижує формулювання: прямої суперечності немає, бо рядок книги про `ESP32-WROOM-32`,
+    а даташит про `-32E`. Але таблиця тріажу розділяє WROOM і WROVER САМЕ за PSRAM, а модуль
+    -32E буває на D0WD-V3 і на D0WDR2-V3, і другий несе 2 МБ PSRAM. Отже напис WROOM сам по
+    собі відсутності PSRAM не гарантує, і рядок «пізніші ревізії, той самий код» неточний.
+    Клас A, бо цитата засвідчує факт про модуль; не G, бо твердження книги нею не спростоване.
+    Прогалину винесено М1 листом 0230Z — розділ 23 його.'
+  title: 'T-23-011: `ESP32-WROOM-32` · Що це значить практично → двоядерний Xten'
+  match: '`ESP32\-WROOM\-32`\s+·\s+Що\s+це\s+значить\s+практично\s+→\s+двоядерний\s+Xtensa,\s+без\s+PSRAM'
+  status: verbatim
+  source: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  quote: 'ESP32-D0WDR2-V3 also provides 2 MB PSRAM
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: 'Помічник заявив спростування, машинну перевірку воно пройшло — цитата дослівна. Особиста
+    звірка знижує формулювання: прямої суперечності немає, бо рядок книги про `ESP32-WROOM-32`,
+    а даташит про `-32E`. Але таблиця тріажу розділяє WROOM і WROVER САМЕ за PSRAM, а модуль
+    -32E буває на D0WD-V3 і на D0WDR2-V3, і другий несе 2 МБ PSRAM. Отже напис WROOM сам по
+    собі відсутності PSRAM не гарантує, і рядок «пізніші ревізії, той самий код» неточний.
+    Клас A, бо цитата засвідчує факт про модуль; не G, бо твердження книги нею не спростоване.
+    Прогалину винесено М1 листом 0230Z — розділ 23 його.'
+  sha:
+  - 6c77a290
+- nazva: 'T-36-055: SPI витримує десятки мегагерц, але не завжди'
+  zbih: SPI\s+витримує\s+десятки\s+мегагерц,\s+але\s+не\s+завжди
+  dzherelo: source-cache/399b50f6-spi_master.rst
+  cytata: 'Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if
+    IO_MUX pins are used.
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що SPI витримує десятки мегагерц (40-80), але з обмеженнями
+    залежно від конфігурації піджимів.
+  title: 'T-36-055: SPI витримує десятки мегагерц, але не завжди'
+  match: SPI\s+витримує\s+десятки\s+мегагерц,\s+але\s+не\s+завжди
+  status: verbatim
+  source: source-cache/399b50f6-spi_master.rst
+  quote: 'Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if
+    IO_MUX pins are used.
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що SPI витримує десятки мегагерц (40-80), але з обмеженнями
+    залежно від конфігурації піджимів.
+- nazva: 'T-12-058: | Серійне виробництво, OTA, відтворюваність | ESP-IDF |'
+  zbih: \|\s+Серійне\s+виробництво,\s+OTA,\s+відтворюваність\s+\|\s+ESP\-IDF\s+\|
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'The OTA update mechanism allows a device to update itself based on data received
+    while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує OTA як механізм у ESP-IDF.
+  title: 'T-12-058: | Серійне виробництво, OTA, відтворюваність | ESP-IDF |'
+  match: \|\s+Серійне\s+виробництво,\s+OTA,\s+відтворюваність\s+\|\s+ESP\-IDF\s+\|
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'The OTA update mechanism allows a device to update itself based on data received
+    while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує OTA як механізм у ESP-IDF.
+  sha:
+  - 6abb33e2
+- nazva: 'T-15-014: Виріб на роки, OTA, серійність · Чому → відтворюваність і ді'
+  zbih: Виріб\s+на\s+роки,\s+OTA,\s+серійність\s+·\s+Чому\s+→\s+відтворюваність\s+і\s+діагностика
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'Upon the first boot, the application checks its state and performs diagnostics.
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує наявність діагностики та перевірки відтворюваності при OTA.
+  title: 'T-15-014: Виріб на роки, OTA, серійність · Чому → відтворюваність і ді'
+  match: Виріб\s+на\s+роки,\s+OTA,\s+серійність\s+·\s+Чому\s+→\s+відтворюваність\s+і\s+діагностика
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'Upon the first boot, the application checks its state and performs diagnostics.
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує наявність діагностики та перевірки відтворюваності при OTA.
+  sha:
+  - a6a8ecd6
+- nazva: 'T-58-062: | OTA | оновлення і відкат проходять |'
+  zbih: \|\s+OTA\s+\|\s+оновлення\s+і\s+відкат\s+проходять\s+\|
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'The OTA operation functions write a new app firmware image to whichever OTA app
+    slot that is currently not selected for booting. Once the image is verified, the OTA Data
+    partition is updated to specify that this image should be used for the next boot.
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ описує процес оновлення та його успішного завершення.
+  title: 'T-58-062: | OTA | оновлення і відкат проходять |'
+  match: \|\s+OTA\s+\|\s+оновлення\s+і\s+відкат\s+проходять\s+\|
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'The OTA operation functions write a new app firmware image to whichever OTA app
+    slot that is currently not selected for booting. Once the image is verified, the OTA Data
+    partition is updated to specify that this image should be used for the next boot.
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: Документ описує процес оновлення та його успішного завершення.
+  sha:
+  - da6e14e5
+- nazva: 'T-COM-025: MPU6050 · Чому → сам зводить дані, менше роботи'
+  zbih: MPU6050\s+·\s+Чому\s+→\s+сам\s+зводить\s+дані,\s+менше\s+роботи
+  dzherelo: source-cache/mpu6050.pdf
+  cytata: 'allowing the devices to gather a full set of sensor data without intervention from
+    the system processor
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що MPU6050 має вбудований I2C master для збирання даних від
+    зовнішніх сенсорів.
+  title: 'T-COM-025: MPU6050 · Чому → сам зводить дані, менше роботи'
+  match: MPU6050\s+·\s+Чому\s+→\s+сам\s+зводить\s+дані,\s+менше\s+роботи
+  status: verbatim
+  source: source-cache/mpu6050.pdf
+  quote: 'allowing the devices to gather a full set of sensor data without intervention from
+    the system processor
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що MPU6050 має вбудований I2C master для збирання даних від
+    зовнішніх сенсорів.
+  sha:
+  - 367ed7ac
+- nazva: 'T-24-038: Формат NVS — сторінковий, з простором імен, ключем і типізов'
+  zbih: Формат\s+NVS\s+—\s+сторінковий,\s+з\s+простором\s+імен,\s+ключем\s+і\s+типізованим\s+значенням
+  dzherelo: source-cache/c02027a1-nvs_flash.rst
+  cytata: 'NVS operates on key-value pairs. Keys are ASCII strings; the maximum key length
+    is currently 15 characters. Values can have one of the following types:
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: Також у документі про namespaces та page structure.
+  title: 'T-24-038: Формат NVS — сторінковий, з простором імен, ключем і типізов'
+  match: Формат\s+NVS\s+—\s+сторінковий,\s+з\s+простором\s+імен,\s+ключем\s+і\s+типізованим\s+значенням
+  status: verbatim
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: 'NVS operates on key-value pairs. Keys are ASCII strings; the maximum key length
+    is currently 15 characters. Values can have one of the following types:
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: Також у документі про namespaces та page structure.
+  sha:
+  - 8780dde8
+- nazva: 'T-18-052: NVS стійкий до зникнення живлення: запис влаштований так, що'
+  zbih: NVS\s+стійкий\s+до\s+зникнення\s+живлення:\s+запис\s+влаштований\s+так,\s+що\s+обірвана\s+операція\s+не\s+псує\s+вже\s+записане
+  dzherelo: source-cache/c02027a1-nvs_flash.rst
+  cytata: 'The library does try to recover from conditions when flash memory is in an inconsistent
+    state. In particular, one should be able to power off the device at any point and time
+    and then power it back on. This should not result in loss of data, except for the new
+    key-value pair if it was being written at the moment of powering off.
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: Підтверджує стійкість до зникнення живлення.
+  title: 'T-18-052: NVS стійкий до зникнення живлення: запис влаштований так, що'
+  match: NVS\s+стійкий\s+до\s+зникнення\s+живлення:\s+запис\s+влаштований\s+так,\s+що\s+обірвана\s+операція\s+не\s+псує\s+вже\s+записане
+  status: verbatim
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: 'The library does try to recover from conditions when flash memory is in an inconsistent
+    state. In particular, one should be able to power off the device at any point and time
+    and then power it back on. This should not result in loss of data, except for the new
+    key-value pair if it was being written at the moment of powering off.
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: Підтверджує стійкість до зникнення живлення.
+  sha:
+  - 77e191f6
+- nazva: 'T-53-017: Паспорти більшості елементів нормують заряджання від 0 до +4'
+  zbih: Паспорти\s+більшості\s+елементів\s+нормують\s+заряджання\s+від\s+0\s+до\s+\+45\s+°C\s+—\s+саме\s+так\s+у\s+Panasonic\s+NCR18650B\s+і\s+LG\s+MJ1
+  dzherelo: source-cache/ncr18650b.pdf
+  cytata: 'Temperature Charge*: 0 to +45°C
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: Точно як у Panasonic NCR18650B паспорті.
+  title: 'T-53-017: Паспорти більшості елементів нормують заряджання від 0 до +4'
+  match: Паспорти\s+більшості\s+елементів\s+нормують\s+заряджання\s+від\s+0\s+до\s+\+45\s+°C\s+—\s+саме\s+так\s+у\s+Panasonic\s+NCR18650B\s+і\s+LG\s+MJ1
+  status: verbatim
+  source: source-cache/ncr18650b.pdf
+  quote: 'Temperature Charge*: 0 to +45°C
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: Точно як у Panasonic NCR18650B паспорті.
+- nazva: 'T-01-061: Старт · RP2040 → миттєво'
+  zbih: Старт\s+·\s+RP2040\s+→\s+миттєво
+  dzherelo: source-cache/rp2040.pdf
+  cytata: 'both cores start running simultaneously
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: Datasheet підтверджує миттєвий старт RP2040.
+  title: 'T-01-061: Старт · RP2040 → миттєво'
+  match: Старт\s+·\s+RP2040\s+→\s+миттєво
+  status: verbatim
+  source: source-cache/rp2040.pdf
+  quote: 'both cores start running simultaneously
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: Datasheet підтверджує миттєвий старт RP2040.
+  sha:
+  - 763ce585
+- nazva: 'T-25-037: Документація ESP-IDF описує це так: `Ctrl + L` — «Stop/resum'
+  zbih: Документація\s+ESP\-IDF\s+описує\s+це\s+так:\s+`Ctrl\s+\+\s+L`\s+—\s+«Stop/resume\s+log\s+output\s+saved\s+to\s+file»;\s+монітор\s+створює\s+файл
+  dzherelo: source-cache/51b28bff-idf-monitor.rst
+  cytata: '* Ctrl + L
+
+    - Stop/resume log output saved to file
+
+    - Create a file in the project directory and the output is written to that file until
+    this is disabled with the same keyboard shortcut (or IDF Monitor exits).
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: 'Місце в документі: таблиця клавіш, рядки 50-52'
+  title: 'T-25-037: Документація ESP-IDF описує це так: `Ctrl + L` — «Stop/resum'
+  match: Документація\s+ESP\-IDF\s+описує\s+це\s+так:\s+`Ctrl\s+\+\s+L`\s+—\s+«Stop/resume\s+log\s+output\s+saved\s+to\s+file»;\s+монітор\s+створює\s+файл
+  status: verbatim
+  source: source-cache/51b28bff-idf-monitor.rst
+  quote: '* Ctrl + L
+
+    - Stop/resume log output saved to file
+
+    - Create a file in the project directory and the output is written to that file until
+    this is disabled with the same keyboard shortcut (or IDF Monitor exits).
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: 'Місце в документі: таблиця клавіш, рядки 50-52'
+  sha:
+  - 43ab6004
+- nazva: 'T-25-105: Лог пишеться у файл (`Ctrl+L` в `idf.py monitor`, для решти '
+  zbih: Лог\s+пишеться\s+у\s+файл\s+\(`Ctrl\+L`\s+в\s+`idf\.py\s+monitor`,\s+для\s+решти\s+моніторів\s+`tee`\),\s+а\s+не\s+читається\s+з\s+екрана
+  dzherelo: source-cache/51b28bff-idf-monitor.rst
+  cytata: 'Create a file in the project directory and the output is written to that file
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: 'Місце в документі: '
+  title: 'T-25-105: Лог пишеться у файл (`Ctrl+L` в `idf.py monitor`, для решти '
+  match: Лог\s+пишеться\s+у\s+файл\s+\(`Ctrl\+L`\s+в\s+`idf\.py\s+monitor`,\s+для\s+решти\s+моніторів\s+`tee`\),\s+а\s+не\s+читається\s+з\s+екрана
+  status: verbatim
+  source: source-cache/51b28bff-idf-monitor.rst
+  quote: 'Create a file in the project directory and the output is written to that file
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: 'Місце в документі: '
+  sha:
+  - 45552ee9
+- nazva: 'T-K10-019: idf.py -p /dev/ttyUSB0 monitor # монітор з розшифровкою back'
+  zbih: idf\.py\s+\-p\s+/dev/ttyUSB0\s+monitor\s+\#\s+монітор\s+з\s+розшифровкою\s+backtrace
+  dzherelo: source-cache/51b28bff-idf-monitor.rst
+  cytata: 'Whenever the chip outputs a hexadecimal address that points to executable code,
+    IDF monitor looks up the location in the source code (file name and line number) and prints
+    the location on the next line in yellow.
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: 'Місце в документі: розділ Automatic Address Decoding'
+  title: 'T-K10-019: idf.py -p /dev/ttyUSB0 monitor # монітор з розшифровкою back'
+  match: idf\.py\s+\-p\s+/dev/ttyUSB0\s+monitor\s+\#\s+монітор\s+з\s+розшифровкою\s+backtrace
+  status: verbatim
+  source: source-cache/51b28bff-idf-monitor.rst
+  quote: 'Whenever the chip outputs a hexadecimal address that points to executable code,
+    IDF monitor looks up the location in the source code (file name and line number) and prints
+    the location on the next line in yellow.
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: 'Місце в документі: розділ Automatic Address Decoding'
+  sha:
+  - e95261df
+- nazva: 'T-K06-024: `0x10` · Назва → RTCWDT_RTC_RESET'
+  zbih: '`0x10`\s+·\s+Назва\s+→\s+RTCWDT_RTC_RESET'
+  dzherelo: source-cache/569e266f-fatal-errors.rst
+  cytata: 'rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: 'Місце в документі: розділ RTC Watchdog Timeout, рядок 306'
+  title: 'T-K06-024: `0x10` · Назва → RTCWDT_RTC_RESET'
+  match: '`0x10`\s+·\s+Назва\s+→\s+RTCWDT_RTC_RESET'
+  status: verbatim
+  source: source-cache/569e266f-fatal-errors.rst
+  quote: 'rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: 'Місце в документі: розділ RTC Watchdog Timeout, рядок 306'
+  sha:
+  - 9338f26b
+- nazva: 'T-D-047: `0x10` · Назва → RTCWDT_RTC_RESET'
+  zbih: '`0x10`\s+·\s+Назва\s+→\s+RTCWDT_RTC_RESET'
+  dzherelo: source-cache/569e266f-fatal-errors.rst
+  cytata: 'rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: 'Місце в документі: розділ RTC Watchdog Timeout'
+  title: 'T-D-047: `0x10` · Назва → RTCWDT_RTC_RESET'
+  match: '`0x10`\s+·\s+Назва\s+→\s+RTCWDT_RTC_RESET'
+  status: verbatim
+  source: source-cache/569e266f-fatal-errors.rst
+  quote: 'rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: 'Місце в документі: розділ RTC Watchdog Timeout'
+  sha:
+  - 9338f26b
+- nazva: 'T-E-107: DS18B20 · Що дає → температура, кілька на лінії'
+  zbih: DS18B20\s+·\s+Що\s+дає\s+→\s+температура,\s+кілька\s+на\s+лінії
+  dzherelo: source-cache/ds18b20.pdf
+  cytata: 12-bit Celsius temperature measurements
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: Датчик вимірює температуру й підтримує декілька пристроїв на одній лінії.
+  title: 'T-E-107: DS18B20 · Що дає → температура, кілька на лінії'
+  match: DS18B20\s+·\s+Що\s+дає\s+→\s+температура,\s+кілька\s+на\s+лінії
+  status: verbatim
+  source: source-cache/ds18b20.pdf
+  quote: 12-bit Celsius temperature measurements
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: Датчик вимірює температуру й підтримує декілька пристроїв на одній лінії.
+- nazva: 'T-59-146: - **MQTT** замість або разом із веб-інтерфейсом (розділ 40);'
+  zbih: \-\s+\*\*MQTT\*\*\s+замість\s+або\s+разом\s+із\s+веб\-інтерфейсом\s+\(розділ\s+40\);\s+\-\s+\*\*другий\s+датчик\*\*\s+—\s+DS18B20\s+на\s+вулиці\s+\(розділ\s+3
+  dzherelo: source-cache/ds18b20.pdf
+  cytata: Measures Temperatures from -55°C to +125°C
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: DS18B20 може працювати на вулиці в діапазоні від -55°C до +125°C.
+  title: 'T-59-146: - **MQTT** замість або разом із веб-інтерфейсом (розділ 40);'
+  match: \-\s+\*\*MQTT\*\*\s+замість\s+або\s+разом\s+із\s+веб\-інтерфейсом\s+\(розділ\s+40\);\s+\-\s+\*\*другий\s+датчик\*\*\s+—\s+DS18B20\s+на\s+вулиці\s+\(розділ\s+3
+  status: verbatim
+  source: source-cache/ds18b20.pdf
+  quote: Measures Temperatures from -55°C to +125°C
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: DS18B20 може працювати на вулиці в діапазоні від -55°C до +125°C.
+- nazva: 'T-COM-030: **Лишаються добрим вибором:** DS18B20 (довгий дріт, герметич'
+  zbih: \*\*Лишаються\s+добрим\s+вибором:\*\*\s+DS18B20\s+\(довгий\s+дріт,\s+герметичний\s+зонд,\s+кілька\s+на\s+лінії\),\s+BMP280\s+\(тиск\s+без\s+волог
+  dzherelo: source-cache/ds18b20.pdf
+  cytata: Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to
+    function on the same 1-Wire bus
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: Датчик має дріт (1-Wire), герметичний корпус (ТО-92/SO), кілька можуть бути на
+    одній лінії.
+  title: 'T-COM-030: **Лишаються добрим вибором:** DS18B20 (довгий дріт, герметич'
+  match: \*\*Лишаються\s+добрим\s+вибором:\*\*\s+DS18B20\s+\(довгий\s+дріт,\s+герметичний\s+зонд,\s+кілька\s+на\s+лінії\),\s+BMP280\s+\(тиск\s+без\s+волог
+  status: verbatim
+  source: source-cache/ds18b20.pdf
+  quote: Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to function
+    on the same 1-Wire bus
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: Датчик має дріт (1-Wire), герметичний корпус (ТО-92/SO), кілька можуть бути на одній
+    лінії.
+- nazva: 'T-09-046: **JTAG іде тим самим кабелем.** Повноцінне покрокове налагод'
+  zbih: \*\*JTAG\s+іде\s+тим\s+самим\s+кабелем\.\*\*\s+Повноцінне\s+покрокове\s+налагодження\s+без\s+жодного\s+додаткового\s+заліза\s+\(розділ\s+27\)
+  dzherelo: source-cache/71ff84df-configure-builtin-jtag.rst
+  cytata: 'can be debugged without any additional chip. Only a USB cable connected to the
+    D+/D- pins is necessary.
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що налагодження працює без додаткового обладнання, лише USB
+    кабель.
+  title: 'T-09-046: **JTAG іде тим самим кабелем.** Повноцінне покрокове налагод'
+  match: \*\*JTAG\s+іде\s+тим\s+самим\s+кабелем\.\*\*\s+Повноцінне\s+покрокове\s+налагодження\s+без\s+жодного\s+додаткового\s+заліза\s+\(розділ\s+27\)
+  status: verbatim
+  source: source-cache/71ff84df-configure-builtin-jtag.rst
+  quote: 'can be debugged without any additional chip. Only a USB cable connected to the D+/D-
+    pins is necessary.
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що налагодження працює без додаткового обладнання, лише USB
+    кабель.
+  sha:
+  - a0a9fc6a
+- nazva: 'T-20-030: esptool --port /dev/ttyUSB0 flash-id'
+  zbih: esptool\s+\-\-port\s+/dev/ttyUSB0\s+flash\-id
+  dzherelo: source-cache/9d5cf303-basic-options.rst
+  cytata: 'The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux
+    and macOS) or ``-p COM1`` (Windows).
+
+    '
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  notatka: 'Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst,
+    де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі
+    того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`;
+    книга вживає довгу. Команда в книзі точна. Урок не про помічника, а про наряд: один ключ
+    мусить вести до всіх файлів свого документа, бо документація esptool розкладена на команди
+    й опції окремо.'
+  title: 'T-20-030: esptool --port /dev/ttyUSB0 flash-id'
+  match: esptool\s+\-\-port\s+/dev/ttyUSB0\s+flash\-id
+  status: verbatim
+  source: source-cache/9d5cf303-basic-options.rst
+  quote: 'The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux
+    and macOS) or ``-p COM1`` (Windows).
+
+    '
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
+  note: 'Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst,
+    де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі
+    того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`;
+    книга вживає довгу. Команда в книзі точна. Урок не про помічника, а про наряд: один ключ
+    мусить вести до всіх файлів свого документа, бо документація esptool розкладена на команди
+    й опції окремо.'

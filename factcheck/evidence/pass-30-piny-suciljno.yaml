@@ -141,7 +141,6 @@
 
 - nazva: Номери GPIO книги дійсні для сімейств, яким приписані
   zbih: GPIO 6–11|GPIO 32–39|GPIO 34–39|`GPIO0`–`GPIO4`|GPIO 6, 7, 8, 9, 10, 11|`GPIO34`|`GPIO4`
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
     (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/pins.py`
   cytata: 'esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
@@ -207,7 +206,6 @@
   zbih: '`GPIO0` · Що задає|`GPIO0` · Наслідок помилки|`GPIO12` · Наслідок помилки|`GPIO2`
     · Що задає|`GPIO2` · Наслідок помилки|`GPIO15` · Наслідок помилки|`GPIO5` · Що задає|`GPIO12`
     · Що задає|`GPIO15` · Що задає'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: "| GPIO0 Input | Mode |\n| Low/GND     | ROM serial bootloader for esptool |\n|\
     \ High/VCC    | Normal execution mode |\n\nGPIO2 must also be either left unconnected/floating,\
@@ -254,7 +252,6 @@
     11|Піни флешу\*\* \[\[classic\]\] GPIO 6–11 зайняті фізично|Тільки-вхідні піни\*\* \[\[classic\]\]
     GPIO 34–39|Кнопка на GPIO34|ADC1 у classic — це саме GPIO 32–39|Лише \*\*ADC1\*\* \(GPIO
     32–39\)
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h,
     .../components/soc/esp32/include/soc/adc_channel.h, .../components/soc/esp32/include/soc/soc_caps.h,
     .../docs/en/api-reference/peripherals/gpio.rst
@@ -344,7 +341,6 @@
   zbih: Вирішує `GPIO0`:|`GPIO0` вільний \(підтягнутий вгору\)|Кнопка `BOOT` \(іноді `IO0`,
     `FLASH`\)|стан `GPIO0` читається один раз|схема, що смикає `GPIO0` і `EN`|перемичкою або
     пінцетом замкнути `GPIO0`|Кнопка `BOOT` на платах C3 діє саме на `GPIO9`
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
     (Select Bootloader Mode, Automatic Bootloader)
   cytata: 'The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
@@ -421,7 +417,6 @@
 - nazva: I²C і strapping на C3 — підтяжки збігаються з потрібними рівнями
   zbih: зовнішні підтягувальні резистори I²C тягнуть обидві лінії вгору|ведений, що притискає
     `SDA` до землі|Комбінація `GPIO8`=0 і `GPIO9`=0 недійсна|аналоговий вхід — це `GPIO0`–`GPIO4`
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
     та .../esp-idf/components/soc/esp32c3/include/soc/adc_channel.h
   cytata: '{STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the

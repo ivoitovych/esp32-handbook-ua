@@ -74,7 +74,6 @@
 
 - nazva: MSPI на S3 — GPIO26–32 під флеш, GPIO33–37 під восьмилінійний режим
   zbih: GPIO26`–`GPIO32`|GPIO33`–`GPIO37`|GPIO 33–37|з.їдає п.ять додаткових пінів
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32s3/include/soc/spi_pins.h
     та .../components/soc/esp32s3/include/soc/soc_caps.h
   cytata: '#define MSPI_IOMUX_PIN_NUM_CS1      26
@@ -174,7 +173,6 @@
 - nazva: PSRAM підтримують лише classic, S2 і S3
   zbih: PSRAM · (ESP32|S2|S3|C3|C6|H2) →|PSRAM підтримують лише classic, S2 і S3|PSRAM немає|Чипи
     без PSRAM — C3, C6, H2
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
   cytata: "SOC_SPIRAM_SUPPORTED присутній:\n  esp32    — так\n  esp32s2  — так\n  esp32s3\
     \  — так\n  esp32c3  — немає\n  esp32c6  — немає\n  esp32h2  — немає\n"
@@ -205,7 +203,6 @@
 - nazva: PSRAM вимкнена типово, а винесення в неї — навпаки, ввімкнене
   zbih: '`CONFIG_SPIRAM` типово вимкнена|менше 16 КБ \| внутрішня SRAM|SPIRAM_MALLOC_ALWAYSINTERNAL|malloc
     виносить у PSRAM усе від\s*\n?16 КБ|уже сам виносить у PSRAM усе від 16 КБ'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_psram/Kconfig.spiram.common
     та .../components/esp_psram/{esp32,esp32s3}/Kconfig.spiram
   cytata: "(esp32/Kconfig.spiram і esp32s3/Kconfig.spiram)\nconfig SPIRAM\n    bool \"Support\
@@ -289,7 +286,6 @@
 - nazva: Octal PSRAM треба зазначити — типово стоїть Quad
   zbih: Octal PSRAM треба зазначити|типово стоїть\s*\n?\*\*Quad|SPIRAM_MODE_QUAD|Mode \(QUAD/OCT\)
     of SPI RAM chip
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_psram/esp32s3/Kconfig.spiram
   cytata: "choice SPIRAM_MODE\n    prompt \"Mode (QUAD/OCT) of SPI RAM chip in use\"\n   \
     \ default SPIRAM_MODE_QUAD\n\n    config SPIRAM_MODE_QUAD\n        bool \"Quad Mode PSRAM\"\

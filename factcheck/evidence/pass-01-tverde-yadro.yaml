@@ -100,7 +100,6 @@
 - nazva: Адреса другого бутлоадера задається ROM і має три значення
   zbih: бутлоадер.{0,40}(лежить за адресою|іде не на)|BOOTLOADER_OFFSET_IN_FLASH|«що новіше,
     то ближче до нуля»
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
   cytata: "config BOOTLOADER_OFFSET_IN_FLASH\n    hex\n    default 0x1000 if IDF_TARGET_ESP32\
     \ || IDF_TARGET_ESP32S2\n    # the first 2 sectors are reserved for the key manager with\
@@ -133,7 +132,6 @@
     визначає ROM, воно не налаштовується.'
 - nazva: Таблиця розділів лежить на 0x8000, застосунок на 0x10000
   zbih: таблиц\w+ розділів.{0,60}`0x8000`|`0x8000`.{0,40}однакова на всіх
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
   cytata: 'For this reason a partition table is flashed to
 
@@ -165,7 +163,6 @@
     із цього середовища не дістається.
 - nazva: Коди причин скидання (RESET_REASON)
   zbih: RTCWDT_BROWN_OUT_RESET|POWERON_RESET|TG0WDT_SYS_RESET|SW_CPU_RESET
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: "typedef enum {\n    NO_MEAN                =  0,\n    POWERON_RESET          =\
     \  1,    /**<1, Vbat power on reset*/\n    SW_RESET               =  3,    /**<3, Software\
@@ -213,7 +210,6 @@
     підтверджує головну тезу книги про rst:0xf.'
 - nazva: Кількість блоків периферії за сімействами
   zbih: Кількості звірені з заголовками можливостей самого ESP-IDF
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/<ціль>/include/soc/soc_caps.h
   cytata: 'esp32     SOC_UART_NUM (3)   SOC_I2C_NUM (2U)  SOC_SPI_PERIPH_NUM 3  SOC_I2S_NUM
     (2U)  SOC_TWAI_CONTROLLER_NUM 1U  SOC_DAC_CHAN_NUM 2
@@ -269,7 +265,6 @@
   - 3a653bb8
 - nazva: C6 має два I²C, другий низькоспоживчий
   zbih: низькоспоживчий.{0,200}LP-домені|1 \+ 1 LP
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c6/include/soc/soc_caps.h
   cytata: '#define SOC_I2C_NUM                 (2U) // I2C_NUM = HP_I2C + LP_I2C
 
@@ -301,7 +296,6 @@
     розділу 04 виправлено на «1 + 1 LP» з поясненням.'
 - nazva: Придатних каналів Touch на S2 і S3 — чотирнадцять, а не п'ятнадцять
   zbih: нульовий канал зайнятий внутрішнім каналом|Touch.{0,80}чотирнадцять
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32s3/include/soc/soc_caps.h
   cytata: '#define SOC_TOUCH_SENSOR_NUM                        (15) /*!< 15 Touch channels
     */
@@ -337,7 +331,6 @@
     0…9, тобто десять.
 - nazva: Термін підтримки ESP-IDF — 30 місяців, із них 12 Service
   zbih: 30 місяців|LTS в ESP-IDF|Service-періоді|Maintenance бекпортують
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/SUPPORT_POLICY.md
   cytata: 'Each ESP-IDF major and minor release (V4.1, V4.2, etc) is supported for
 
@@ -383,7 +376,6 @@
   - b08cbe22
 - nazva: Межі ESP-NOW і сигнатури зворотних викликів
   zbih: ESP_NOW_MAX|250 байт|20 усього, з них не більше 6|esp_now_send_info_t|esp_now_recv_info_t
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_wifi/include/esp_now.h
   cytata: '#define ESP_NOW_ETH_ALEN             6         /*!< Length of ESPNOW peer MAC address
     */
@@ -441,7 +433,6 @@
     в сесії рецензування 05 за цим самим джерелом.
 - nazva: Перевірка переповнення стека і розмір стека app_main
   zbih: configCHECK_FOR_STACK_OVERFLOW|canary|3\.5 КБ|3584
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/Kconfig
   cytata: "choice FREERTOS_CHECK_STACKOVERFLOW\n    prompt \"configCHECK_FOR_STACK_OVERFLOW\"\
     \n    default FREERTOS_CHECK_STACKOVERFLOW_CANARY\n    …\n    config FREERTOS_CHECK_STACKOVERFLOW_CANARY\n\
@@ -466,7 +457,6 @@
   - eb3080a3
 - nazva: Рівні оптимізації в menuconfig
   zbih: Debug without optimization|COMPILER_OPTIMIZATION|-Og|-O0
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig
   cytata: "choice COMPILER_OPTIMIZATION\n    prompt \"Optimization Level\"\n    default COMPILER_OPTIMIZATION_DEBUG\n\
     \    …\n    config COMPILER_OPTIMIZATION_DEBUG\n        bool \"Debug (-Og)\"\n    config\
@@ -492,7 +482,6 @@
     значення, а не -O0.'
 - nazva: Апаратні піни IOMUX для UART0 і SPI
   zbih: uart_pins\.h|spi_pins\.h|Апаратні піни \(IOMUX\)
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/<ціль>/include/soc/{uart_pins,spi_pins}.h
   cytata: 'esp32/uart_pins.h    U0RXD_GPIO_NUM 3    U0TXD_GPIO_NUM 1
 
@@ -537,7 +526,6 @@
   - a10d9d2f
 - nazva: Типові піни I²C і бортового світлодіода в Arduino
   zbih: pins_arduino\.h|типові для Arduino `SDA`|PIN_RGB_LED|DevKit\w*[^.]{0,40}`GPIO\d+`
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
   cytata: 'variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const
     uint8_t SCL = 22;

@@ -1,0 +1,37 @@
+# Посадка presud — 36-spi.
+#
+# Посаджено `factcheck/tools/sweep_land.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+
+
+
+- nazva: 'T-36-062: Проміжного стану немає, і «майже рідний» набір пінів'
+  zbih: Проміжного\s+стану\s+немає,\s+і
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/spi_master.rst
+  cytata: 'When an SPI Host is set to 40 MHz or lower frequencies, routing SPI pins via the
+    GPIO matrix will behave the same compared to routing them via IOMUX.
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: Підтверджує, що 40 МГц є межею, на якій поведінка GPIO matrix стає еквівалентною
+    IO_MUX
+  title: 'T-36-062: Проміжного стану немає, і «майже рідний» набір пінів'
+  match: Проміжного\s+стану\s+немає,\s+і
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/spi_master.rst
+  quote: 'When an SPI Host is set to 40 MHz or lower frequencies, routing SPI pins via the
+    GPIO matrix will behave the same compared to routing them via IOMUX.
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: Підтверджує, що 40 МГц є межею, на якій поведінка GPIO matrix стає еквівалентною IO_MUX

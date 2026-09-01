@@ -28,7 +28,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 
 # (файл, мінімум сторінок, мінімум кілобайтів)
 OCHIKUVANNYA = [
@@ -102,7 +102,7 @@ def main() -> int:
                         f"{m.group(1)} стор. для {imya}, а в ньому {st}")
 
     # Відбиток джерел: чи зібрано опубліковане з поточного тексту.
-    sys.path.insert(0, str(ROOT / "tools"))
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
     import importlib
     build = importlib.import_module("build")
     teper = build.vidbytok()

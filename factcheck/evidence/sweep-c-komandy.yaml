@@ -1,0 +1,38 @@
+- nazva: 'T-C-075: `-i` обов''язковий: без нього inline-кадри зникають.'
+  zbih: '`\-i`\s+обов''язковий:\s+без\s+нього'
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+  cytata: '(inlined by) inner_dont_crash
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: флаг -i входить до складу -pfiaC; документ показує розшифровані inline-кадри з цим флагом
+  title: 'T-C-075: `-i` обов''язковий: без нього inline-кадри зникають.'
+  match: '`\-i`\s+обов''язковий:\s+без\s+нього'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+  quote: '(inlined by) inner_dont_crash
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: флаг -i входить до складу -pfiaC; документ показує розшифровані inline-кадри з цим флагом
+  sha:
+  - 2a969ef0
+- nazva: 'T-C-092: `/dev/ttyUSB*` — зовнішній міст.'
+  zbih: '`/dev/ttyUSB\*`\s+—\s+зовнішній\s+міст\.'
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+  cytata: 'For Linux users, if the port name is ``/dev/ttyUSB0``
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: документ підтверджує, що /dev/ttyUSB* є портом зовнішнього USB-to-UART моста
+  title: 'T-C-092: `/dev/ttyUSB*` — зовнішній міст.'
+  match: '`/dev/ttyUSB\*`\s+—\s+зовнішній\s+міст\.'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+  quote: 'For Linux users, if the port name is ``/dev/ttyUSB0``
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: документ підтверджує, що /dev/ttyUSB* є портом зовнішнього USB-to-UART моста
+  sha:
+  - b97a16ef

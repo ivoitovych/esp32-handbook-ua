@@ -163,7 +163,6 @@
     · [^→]+→ `0x8000`|`partition-table\.bin` · [^→]+→ `0x8000`|застосунок[^→]*· [^→]+→ `0x10000`|`nvs`
     \(типово\) · [^→]+→ `0x9000`|кладе бутлоадер S3 на `0x1000`|стоїть `0x1000` — адреса \*\*classic
     і S2\*\*|`0x1000` classic / `0x0` S3
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild,
     .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
   cytata: "config BOOTLOADER_OFFSET_IN_FLASH\n    default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2\n\
@@ -184,7 +183,7 @@
     і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 
     `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000`
-    + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arithmetic.py`.'
+    + `0x6000` = початок `phy_init`) перевіряється окремо в `factcheck/tools/arithmetic.py`.'
   title: Таблиці адрес прошивки — три рядки на три сімейства
   match: bootloader · [^→]+→ `0x[12]000`|`bootloader\.bin` · [^→]+→ `0x[12]000`|partition
     table · [^→]+→ `0x8000`|`partition-table\.bin` · [^→]+→ `0x8000`|застосунок[^→]*· [^→]+→
@@ -211,12 +210,11 @@
     і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 
     `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000`
-    + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arithmetic.py`.'
+    + `0x6000` = початок `phy_init`) перевіряється окремо в `factcheck/tools/arithmetic.py`.'
 - nazva: ESP_ERROR_CHECK — це assert, а не обробка помилок
   zbih: '`ESP_ERROR_CHECK` — це `assert`|викликає паніку й перезавантажує чип|`ESP_ERROR_CHECK`
     навколо|`ESP_ERROR_CHECK` доречний там|Замінити `ESP_ERROR_CHECK` на явну обробку|повертає
     `esp_err_t` — код помилки, де `ESP_OK` дорівнює нулю'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_common/include/esp_err.h
   cytata: "typedef int esp_err_t;\n#define ESP_OK          0    /*!< esp_err_t value indicating\
     \ success */\n#define ESP_FAIL        -1   /*!< Generic esp_err_t code indicating failure\
@@ -273,7 +271,6 @@
 - nazva: esp_timer — мікросекундна роздільність, обробники в одній задачі
   zbih: '`esp_timer`\*\* — програмні таймери з мікросекундною|Обробники всіх `esp_timer` виконуються
     в одній задачі'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/esp_timer.rst
   cytata: "- Time resolution: one microsecond\n\n- Dispatches timer callbacks from a single\
     \ high-priority ESP Timer\n  task (esp_timer task (notified by ISR) > callback).\n\nThe\
@@ -312,7 +309,6 @@
 - nazva: ESP_LOGD не коштує нічого при рівні збирання Info
   zbih: '`ESP_LOGD` у гарячому циклі не коштує нічого|рядки `ESP_LOGD` лишаються у флеші|Логувати
     переходи станів|`ESP_LOGI\(TAG, "тут"\)` не каже нічого'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/include/esp_log.h
     та .../docs/en/api-reference/system/log.html.rst
   cytata: "/**\n * @brief Compile-time log level.\n * … Logging calls with a level higher\
@@ -363,7 +359,6 @@
 - nazva: Коди помилок OTA і NVS, які книга називає поіменно
   zbih: '`ESP_ERR_OTA_VALIDATE_FAILED`|`ESP_ERR_OTA_PARTITION_CONFLICT`|`ESP_ERR_INVALID_ARG`
     при налаштуванні|`wear_levelling`|`esp_vfs_fat`'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/app_update/include/esp_ota_ops.h,
     .../components/esp_common/include/esp_err.h, .../docs/en/api-reference/storage/{wear-levelling,fatfs}.rst
   cytata: '(esp_ota_ops.h)

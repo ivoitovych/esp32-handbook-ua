@@ -48,7 +48,6 @@
 
 - nazva: Версії тулчейну — усі чотири найновіші на дату ревізії
   zbih: v?6\.0\.2(?!\d)|v?5\.3\.1(?!\d)|3\.3\.11(?!\d)|55\.03\.311|5\.5\.x|2\.2\.0(?!\d)
-  klas: A
   dzherelo: 'raw.githubusercontent.com — наявність теґів і файли версій: espressif/esp-idf
     (components/esp_common/include/esp_idf_version.h), espressif/esptool (esptool/__init__.py),
     espressif/arduino-esp32 (platform.txt), pioarduino/platform-espressif32 (platform.json)'
@@ -95,7 +94,6 @@
 - nazva: Політика підтримки ESP-IDF — 30 місяців, без окремого LTS
   zbih: Окремого статусу LTS не існує|30 місяців підтримки має кожен major|Service-періоді|Maintenance
     бекпортують
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/SUPPORT_POLICY.md
   cytata: 'Each ESP-IDF major and minor release (V4.1, V4.2, etc) is supported for
 
@@ -160,7 +158,6 @@
   - 882e41f3
 - nazva: Компонент led_strip версії 3.0.3 і межа ^ у менеджері
   zbih: espressif/led_strip\^3\.0\.3|\^3\.0\.3` не візьме 4\.x
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/idf-extra-components/master/led_strip/{idf_component.yml,CHANGELOG.md}
   cytata: "(idf_component.yml)\nversion: \"3.0.3\"\ndescription: Driver for Addressable LED\
     \ Strip (WS2812, etc)\ndependencies:\n  idf: \">=5.0\"\n\n(CHANGELOG.md)\n## 3.0.3\n-\

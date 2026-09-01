@@ -36,7 +36,6 @@
 
 - nazva: Усі виклики API книги існують у заголовках
   zbih: esp_wifi_|esp_now_|nvs_flash_|i2c_master_|spi_bus_|spi_device_|uart_(read|write|param|set_pin|driver|wait)|twai_|ledc_(timer|channel)_config|adc_oneshot_|adc_cali_|esp_timer_|esp_task_wdt_|httpd_|mdns_|led_strip_|heap_caps_|esp_ota_|esp_https_ota|esp_sleep_|esp_reset_reason|esp_err_to_name|esp_restart|esp_log_level_set|esp_mqtt_client_|esp_sntp_
-  klas: A
   dzherelo: заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h,
     esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h,
     driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h,
@@ -80,7 +79,6 @@
     і компонентами з реєстру.'
 - nazva: Виклики FreeRTOS і атрибути розміщення
   zbih: xTaskCreate|xQueue|xSemaphore|xEventGroup|vTaskDelay|uxTaskGetStackHighWaterMark|pdMS_TO_TICKS|portMAX_DELAY|portYIELD_FROM_ISR|IRAM_ATTR|RTC_DATA_ATTR
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h
     та components/esp_common/include/esp_attr.h
   cytata: "Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.\nМакроси:\n\
@@ -106,7 +104,6 @@
     кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.'
 - nazva: Стеля пріоритетів FreeRTOS в ESP-IDF — 25
   zbih: configMAX_PRIORITIES дорівнює \*\*25\*\*|найвищий доступний\s*пріоритет — 24|18–24
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/config/include/freertos/FreeRTOSConfig.h
   cytata: '#define configMAX_PRIORITIES                         ( 25 )
 
@@ -134,7 +131,6 @@
 - nazva: Типова розбивка флешу та вирівнювання розділів
   zbih: nvs.*0x9000.*0x6000|phy_init.*0xF000|factory.*0x10000|вирівняні на `0x10000`|вирівнюються
     на `0x1000`
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/partition_table/partitions_singleapp.csv
     та .../components/partition_table/gen_esp32part.py
   cytata: "# Name,   Type, SubType, Offset,  Size, Flags\nnvs,      data, nvs,     ,     \
@@ -171,7 +167,6 @@
     так — і це підтверджує «близько 64 КБ» у розділі 19.'
 - nazva: Сила драйвера GPIO налаштовується, типова — середня
   zbih: gpio_set_drive_capability|драйвер налаштований приблизно на 20 мА|силу драйвера
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/gpio_types.h
   cytata: 'GPIO_DRIVE_CAP_2       = 2,    /*!< Pad drive capability: medium */
 
@@ -207,7 +202,6 @@
     за повне.'
 - nazva: gpio_dump_io_configuration показує реальну конфігурацію піна
   zbih: gpio_dump_io_configuration|FuncSel|спитайте в чипа
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio.rst
   cytata: "GPIO driver offers a dump function :cpp:func:`gpio_dump_io_configuration` to show\
     \ the\ncurrent configurations of IOs, such as pull-up/pull-down, input/output enable,\

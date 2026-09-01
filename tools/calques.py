@@ -25,8 +25,14 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-GRUPY = ("manual", "kartky", "dodatky", "inserts")
+import config
+from repo import ROOT  # noqa: E402  (root is found, not counted)
+# Теки книги — з `factcheck/book.yaml`, як і в решти. Цей інструмент не
+# частина технології фактчекінгу: він вичитує УКРАЇНСЬКИЙ текст книги, і
+# на англійській книзі був би без предмета. Тому він серед книжкових
+# тулів, а його перелік кальок лишається українським — це його дані, а
+# не борг перекладу.
+GRUPY = config.groups()
 
 # (взірець, чим замінити, чому)
 KALKY: list[tuple[str, str, str]] = [

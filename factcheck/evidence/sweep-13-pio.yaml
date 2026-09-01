@@ -1,0 +1,446 @@
+# Суцільний прохід — 13-pio.
+#
+# Посаджено `factcheck/tools/sweep_land.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- nazva: 'T-13-024: Запис `espressif32 @ 6.5.0` збереться — і дасть'
+  zbih: Запис\s+`espressif32\s+@\s+6\.5\.0`
+  dzherelo: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
+  cytata: '"version": "~3.20017.0"
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: запис espressif32 @ без версії дає Arduino 2.x
+  title: 'T-13-024: Запис `espressif32 @ 6.5.0` збереться — і дасть'
+  match: Запис\s+`espressif32\s+@\s+6\.5\.0`
+  status: verbatim
+  source: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
+  quote: '"version": "~3.20017.0"
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: запис espressif32 @ без версії дає Arduino 2.x
+  sha:
+  - bd308fc1
+- nazva: 'T-13-025: `pioarduino` розповсюджується не через реєстр PlatformIO, а архівом'
+  zbih: '`pioarduino`\s+розповсюджується\s+не\s+через'
+  dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/platform.json
+  cytata: '"version": "https://github.com/espressif/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz"
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: pioarduino розповсюджується через архив релізу, не через реєстр
+  title: 'T-13-025: `pioarduino` розповсюджується не через реєстр PlatformIO, а архівом'
+  match: '`pioarduino`\s+розповсюджується\s+не\s+через'
+  status: verbatim
+  source: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/platform.json
+  quote: '"version": "https://github.com/espressif/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz"
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: pioarduino розповсюджується через архив релізу, не через реєстр
+  sha:
+  - 749a3756
+- nazva: 'T-13-006: Форк називається **pioarduino** і супроводжується спільнотою.'
+  zbih: Форк\s+називається\s+\*\*pioarduino\*\*\s+і
+  dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
+  cytata: '# pioarduino (p)eople (i)nitiated (o)ptimized (arduino)
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: підтверджує існування форку pioarduino, підтримуваного спільнотою
+  title: 'T-13-006: Форк називається **pioarduino** і супроводжується спільнотою.'
+  match: Форк\s+називається\s+\*\*pioarduino\*\*\s+і
+  status: verbatim
+  source: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
+  quote: '# pioarduino (p)eople (i)nitiated (o)ptimized (arduino)
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: підтверджує існування форку pioarduino, підтримуваного спільнотою
+  sha:
+  - 1dabb487
+- nazva: 'T-13-014: **Версії фіксуються в проєкті.** Це головне.'
+  zbih: \*\*Версії\s+фіксуються\s+в\s+проєкті\.\*\*
+  dzherelo: https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
+  cytata: '[env:esp32doit-devkit-v1]
+
+    platform = espressif32
+
+    framework = arduino
+
+    board = esp32doit-devkit-v1
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: показує, що версії можуть бути зафіксовані в проєкті
+  title: 'T-13-014: **Версії фіксуються в проєкті.** Це головне.'
+  match: \*\*Версії\s+фіксуються\s+в\s+проєкті\.\*\*
+  status: verbatim
+  source: https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
+  quote: '[env:esp32doit-devkit-v1]
+
+    platform = espressif32
+
+    framework = arduino
+
+    board = esp32doit-devkit-v1
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: показує, що версії можуть бути зафіксовані в проєкті
+  sha:
+  - 5a0c92c3
+- nazva: 'T-13-020: Весь проєкт описується одним файлом:'
+  zbih: Весь\s+проєкт\s+описується\s+одним
+  dzherelo: https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
+  cytata: '[env:esp32doit-devkit-v1]
+
+    platform = espressif32
+
+    framework = arduino
+
+    board = esp32doit-devkit-v1
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: весь проєкт описується в platformio.ini файлі
+  title: 'T-13-020: Весь проєкт описується одним файлом:'
+  match: Весь\s+проєкт\s+описується\s+одним
+  status: verbatim
+  source: https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
+  quote: '[env:esp32doit-devkit-v1]
+
+    platform = espressif32
+
+    framework = arduino
+
+    board = esp32doit-devkit-v1
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: весь проєкт описується в platformio.ini файлі
+  sha:
+  - aec08e40
+- nazva: 'T-13-002: Для ESP32 воно дає те, чого не дає'
+  zbih: Для\s+ESP32\s+воно\s+дає
+  dzherelo: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
+  cytata: '"version": "7.0.1"
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: платформа дає фіксовані версії компонентів у platform.json
+  title: 'T-13-002: Для ESP32 воно дає те, чого не дає'
+  match: Для\s+ESP32\s+воно\s+дає
+  status: verbatim
+  source: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
+  quote: '"version": "7.0.1"
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: платформа дає фіксовані версії компонентів у platform.json
+  sha:
+  - f593172f
+- nazva: 'T-13-004: Підтримка ESP32 у PlatformIO забезпечується платформою `platform-espressif32`.'
+  zbih: Підтримка\s+ESP32\s+у\s+PlatformIO
+  dzherelo: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
+  cytata: '"name": "espressif32"
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: підтримка ESP32 у PlatformIO забезпечується платформою platform-espressif32
+  title: 'T-13-004: Підтримка ESP32 у PlatformIO забезпечується платформою `platform-espressif32`.'
+  match: Підтримка\s+ESP32\s+у\s+PlatformIO
+  status: verbatim
+  source: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
+  quote: '"name": "espressif32"
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: підтримка ESP32 у PlatformIO забезпечується платформою platform-espressif32
+  sha:
+  - 7c3c99a0
+- nazva: 'T-13-005: Офіційна платформа від PlatformIO **відстала** від Arduino core:'
+  zbih: Офіційна\s+платформа\s+від\s+PlatformIO
+  dzherelo: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
+  cytata: '"version": "~3.20017.0"
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: офіційна платформа використовує Arduino 2.x версію (~3.20017.0)
+  title: 'T-13-005: Офіційна платформа від PlatformIO **відстала** від Arduino core:'
+  match: Офіційна\s+платформа\s+від\s+PlatformIO
+  status: verbatim
+  source: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
+  quote: '"version": "~3.20017.0"
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: офіційна платформа використовує Arduino 2.x версію (~3.20017.0)
+  sha:
+  - 098cf69e
+- nazva: 'T-13-007: Він підтримує актуальні версії Arduino core і нові'
+  zbih: Він\s+підтримує\s+актуальні\s+версії
+  dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/platform.json
+  cytata: '"version": "https://github.com/espressif/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz"
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: pioarduino підтримує Arduino 3.3.11 із новими сімействами чипів
+  title: 'T-13-007: Він підтримує актуальні версії Arduino core і нові'
+  match: Він\s+підтримує\s+актуальні\s+версії
+  status: verbatim
+  source: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/platform.json
+  quote: '"version": "https://github.com/espressif/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz"
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: pioarduino підтримує Arduino 3.3.11 із новими сімействами чипів
+  sha:
+  - 4ec26d12
+- nazva: 'T-13-015: `platformio.ini` лежить у git і повністю описує, чим'
+  zbih: '`platformio\.ini`\s+лежить\s+у\s+git'
+  dzherelo: https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
+  cytata: 'platform = espressif32
+
+    framework = arduino
+
+    board = esp32doit-devkit-v1
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: platformio.ini описує, чим збирається проєкт
+  title: 'T-13-015: `platformio.ini` лежить у git і повністю описує, чим'
+  match: '`platformio\.ini`\s+лежить\s+у\s+git'
+  status: verbatim
+  source: https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
+  quote: 'platform = espressif32
+
+    framework = arduino
+
+    board = esp32doit-devkit-v1
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: platformio.ini описує, чим збирається проєкт
+  sha:
+  - '18113102'
+- nazva: 'T-13-029: **`platform`.** Тут — джерело платформи, а не лише'
+  zbih: \*\*`platform`\.\*\*\s+Тут\s+—\s+джерело
+  dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
+  cytata: 'platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: platform specifies URL source of the platform
+  title: 'T-13-029: **`platform`.** Тут — джерело платформи, а не лише'
+  match: \*\*`platform`\.\*\*\s+Тут\s+—\s+джерело
+  status: verbatim
+  source: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
+  quote: 'platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: platform specifies URL source of the platform
+  sha:
+  - a126aa2c
+- nazva: 'T-13-032: Для `pioarduino` пінування — це заміна мітки `stable`'
+  zbih: Для\s+`pioarduino`\s+пінування\s+—
+  dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
+  cytata: 'pio project init --board esp32dev
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: pioarduino uses release version tags for pinning
+  title: 'T-13-032: Для `pioarduino` пінування — це заміна мітки `stable`'
+  match: Для\s+`pioarduino`\s+пінування\s+—
+  status: verbatim
+  source: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
+  quote: 'pio project init --board esp32dev
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: pioarduino uses release version tags for pinning
+  sha:
+  - d5d76327
+- nazva: 'T-13-048: Для S3 це не косметика — офіційна платформа'
+  zbih: Для\s+S3\s+це\s+не
+  dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
+  cytata: 'pio project init --board esp32dev
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: pio command is used to manage environments and build specific boards
+  title: 'T-13-048: Для S3 це не косметика — офіційна платформа'
+  match: Для\s+S3\s+це\s+не
+  status: verbatim
+  source: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
+  quote: 'pio project init --board esp32dev
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: pio command is used to manage environments and build specific boards
+  sha:
+  - 6c4a7027

@@ -47,7 +47,6 @@
 - nazva: Дерево menuconfig — корінь і Component config
   zbih: Serial flasher config|Partition Table`|Component config` → `ESP System Settings|Component
     config` → `Core dump|Component config` → `ESP PSRAM|Три перші пункти меню
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig та components/{esptool_py,partition_table,bootloader}/Kconfig.projbuild,
     components/{esp_system,espcoredump,esp_psram,log,bt,freertos}/Kconfig
   cytata: "(Kconfig — корінь)\nmainmenu \"Espressif IoT Development Framework Configuration\"\
@@ -92,7 +91,6 @@
     config`.'
 - nazva: Меню логування зветься Log, а не Log output
   zbih: Component config` → `Log` → `Log Level|`Log` → `Log Level
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig
     та .../components/log/Kconfig.level
   cytata: "(log/Kconfig)\nmenu \"Log\"\n    …\n    rsource \"./Kconfig.level\"\n\n(log/Kconfig.level)\n\
@@ -126,7 +124,6 @@
 - nazva: Maximum log verbosity — стеля компіляції окремо від типового рівня
   zbih: Maximum log verbosity|Same as default|мовчки не робить\s*нічого|до чого можна підняти
     в runtime|dynamic log level changes
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level
     та .../components/log/Kconfig.level_settings
   cytata: "choice LOG_DEFAULT_LEVEL\n    bool \"Default log verbosity\"\n    help\n      \
@@ -189,7 +186,6 @@
     y`.'
 - nazva: Відкат вмикається в підменю Application Rollback
   zbih: Application Rollback|Enable app rollback support
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.app_rollback
   cytata: "menu \"Application Rollback\"\n    config BOOTLOADER_APP_ROLLBACK_ENABLE\n    \
     \    bool \"Enable app rollback support\"\n    …\n        bool \"Enable app anti-rollback\
@@ -219,7 +215,6 @@
     немає, зафіксовано на майбутнє.'
 - nazva: Рівні оптимізації компілятора
   zbih: Optimization Level|Debug without optimization \(-O0\)|Debug \(-Og\)|Optimize for size
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig
   cytata: "menu \"Compiler options\"\n    choice COMPILER_OPTIMIZATION\n        prompt \"\
     Optimization Level\"\n        default COMPILER_OPTIMIZATION_DEBUG\n        config COMPILER_OPTIMIZATION_DEBUG\n\
@@ -252,7 +247,6 @@
     рівень `Optimization Level`; уточнено.'
 - nazva: Хост Bluetooth і перевірка переповнення стека
   zbih: configCHECK_FOR_STACK_OVERFLOW|Check using canary bytes \(Method 2\)|`Bluetooth` →
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/Kconfig
     та .../components/bt/Kconfig
   cytata: "(freertos/Kconfig)\nmenu \"FreeRTOS\"\n    menu \"Kernel\"\n        choice FREERTOS_CHECK_STACKOVERFLOW\n\

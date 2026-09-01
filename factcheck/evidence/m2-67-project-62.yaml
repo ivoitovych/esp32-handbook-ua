@@ -1,0 +1,147 @@
+- nazva: GPIO5 для поплавкового вимикача на ESP32-S3
+  zbih: Поплавковий вимикач · S3 → `GPIO5`
+  dzherelo: не знайшов datasheet ESP32-S3 у source-cache
+  cytata: ''
+  sposib: Шукав в source-cache/, але там є тільки esp32-datasheet.pdf (базовий ESP32), esp32-wroom-32e.pdf і esp32c3.inc без GPIO розпіновки
+  title: GPIO5 для поплавкового вимикача на ESP32-S3
+  match: Поплавковий вимикач · S3 → `GPIO5`
+  status: named-unreachable
+  source: не знайшов datasheet ESP32-S3 у source-cache
+  quote: ''
+  method: Шукав в source-cache/, але там є тільки esp32-datasheet.pdf (базовий ESP32), esp32-wroom-32e.pdf і esp32c3.inc без GPIO розпіновки
+- nazva: GPIO5 для поплавкового вимикача на ESP32-C3
+  zbih: Поплавковий вимикач · C3 → `GPIO5`
+  dzherelo: не знайшов datasheet ESP32-C3 у source-cache
+  cytata: ''
+  sposib: Є esp32c3.inc, але він не містить GPIO розпіновки
+  title: GPIO5 для поплавкового вимикача на ESP32-C3
+  match: Поплавковий вимикач · C3 → `GPIO5`
+  status: named-unreachable
+  source: не знайшов datasheet ESP32-C3 у source-cache
+  quote: ''
+  method: Є esp32c3.inc, але він не містить GPIO розпіновки
+- nazva: Кнопка, що подає сигнал на GPIO, не працює, коли чип завис
+  zbih: Кнопка, що подає сигнал на GPIO, не працює, коли чип завис
+  dzherelo: 'базова логіка: якщо чип завис, GPIO не обробляються'
+  cytata: ''
+  sposib: Випливає однозначно з того, що GPIO обробляються завданням FreeRTOS, яке висить
+  title: Кнопка, що подає сигнал на GPIO, не працює, коли чип завис
+  match: Кнопка, що подає сигнал на GPIO, не працює, коли чип завис
+  status: no-external-signal
+  source: 'базова логіка: якщо чип завис, GPIO не обробляються'
+  quote: ''
+  method: Випливає однозначно з того, що GPIO обробляються завданням FreeRTOS, яке висить
+  sha:
+  - dda89b86
+- nazva: 'Схема реле: +12 В → насос → реле (NO) → аварійний вимикач → GND'
+  zbih: '\+12 В ── \[насос\] ── \[реле: контакти NO\] ── \[аварійний вимикач\] ── GND'
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 96'
+  cytata: '+12 В ── [насос] ── [реле: контакти NO] ── [аварійний вимикач] ── GND
+
+    '
+  sposib: дослівна цитата зі схеми в документації
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+  title: 'Схема реле: +12 В → насос → реле (NO) → аварійний вимикач → GND'
+  match: '\+12 В ── \[насос\] ── \[реле: контакти NO\] ── \[аварійний вимикач\] ── GND'
+  status: self-consistent
+  source: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 96'
+  quote: '+12 В ── [насос] ── [реле: контакти NO] ── [аварійний вимикач] ── GND
+
+    '
+  method: дослівна цитата зі схеми в документації
+  note: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+- nazva: Лог переходу між станами чипа з причиною
+  zbih: 'ESP_LOGI\(TAG, "%s -> %s: %s", nazva\(stan\), nazva\(novyy\), prychyna\)'
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 182'
+  cytata: 'ESP_LOGI(TAG, "%s -> %s: %s", nazva(stan), nazva(novyy), prychyna);
+
+    '
+  sposib: дослівна цитата з коду
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+  title: Лог переходу між станами чипа з причиною
+  match: 'ESP_LOGI\(TAG, "%s -> %s: %s", nazva\(stan\), nazva\(novyy\), prychyna\)'
+  status: self-consistent
+  source: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 182'
+  quote: 'ESP_LOGI(TAG, "%s -> %s: %s", nazva(stan), nazva(novyy), prychyna);
+
+    '
+  method: дослівна цитата з коду
+  note: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+  sha:
+  - fb4554b3
+- nazva: Керування насосом функцією nasos_keruvaty на основі стану
+  zbih: nasos_keruvaty\(novyy == STAN_ROBOTA\)
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 185'
+  cytata: 'nasos_keruvaty(novyy == STAN_ROBOTA);
+
+    '
+  sposib: дослівна цитата з коду
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+  title: Керування насосом функцією nasos_keruvaty на основі стану
+  match: nasos_keruvaty\(novyy == STAN_ROBOTA\)
+  status: self-consistent
+  source: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 185'
+  quote: 'nasos_keruvaty(novyy == STAN_ROBOTA);
+
+    '
+  method: дослівна цитата з коду
+  note: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+  sha:
+  - ea4d167e
+- nazva: Оновлення індикації при зміні стану
+  zbih: onovyty_indykaciyu\(\)
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 186'
+  cytata: 'onovyty_indykaciyu();
+
+    '
+  sposib: дослівна цитата з коду
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+  title: Оновлення індикації при зміні стану
+  match: onovyty_indykaciyu\(\)
+  status: self-consistent
+  source: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 186'
+  quote: 'onovyty_indykaciyu();
+
+    '
+  method: дослівна цитата з коду
+  note: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+  sha:
+  - e5aaf78d
+- nazva: 'Максимум часу безперервної роботи насоса: 600 секунд (10 хвилин)'
+  zbih: '#define MAX_ROBOTY_S\s+600\s+// 10 хвилин'
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 192'
+  cytata: '#define MAX_ROBOTY_S     600      // 10 хвилин безперервно
+
+    '
+  sposib: дослівна цитата з коду
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+  title: 'Максимум часу безперервної роботи насоса: 600 секунд (10 хвилин)'
+  match: '#define MAX_ROBOTY_S\s+600\s+// 10 хвилин'
+  status: self-consistent
+  source: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 192'
+  quote: '#define MAX_ROBOTY_S     600      // 10 хвилин безперервно
+
+    '
+  method: дослівна цитата з коду
+  note: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+  sha:
+  - 49e09508
+- nazva: 'Час паузи після вимкнення насоса: 300 секунд (5 хвилин)'
+  zbih: '#define PAUZA_PISLYA_S\s+300\s+// 5 хвилин'
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 193'
+  cytata: '#define PAUZA_PISLYA_S   300      // 5 хвилин відпочинку
+
+    '
+  sposib: дослівна цитата з коду
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+  title: 'Час паузи після вимкнення насоса: 300 секунд (5 хвилин)'
+  match: '#define PAUZA_PISLYA_S\s+300\s+// 5 хвилин'
+  status: self-consistent
+  source: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 193'
+  quote: '#define PAUZA_PISLYA_S   300      // 5 хвилин відпочинку
+
+    '
+  method: дослівна цитата з коду
+  note: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+  sha:
+  - f5124e8d

@@ -1,0 +1,52 @@
+- nazva: HC-SR04 видає 5 В на виводі ECHO
+  zbih: HC-SR04.*видає.*5 В на виводі
+  dzherelo: 'HC-SR04 Datasheet, таблиця параметрів (кеш: source-cache/hc-sr04.pdf)'
+  cytata: 'Electric Parameter
+
+    Working Voltage                               DC 5 V
+
+    Echo Output Signal                            Input TTL lever signal
+
+    '
+  sposib: PDF HC-SR04 Datasheet, pdftotext -layout, 2026-08-26
+  notatka: HC-SR04 живиться від 5 В (підтверджено в таблиці параметрів). Echo Output — це TTL сигнал,
+    що означає логічні рівні, сумісні з 5-вольтовою системою. Твердження випливає однозначно з цих параметрів.
+  title: HC-SR04 видає 5 В на виводі ECHO
+  match: HC-SR04.*видає.*5 В на виводі
+  status: derived
+  source: 'HC-SR04 Datasheet, таблиця параметрів (кеш: source-cache/hc-sr04.pdf)'
+  quote: 'Electric Parameter
+
+    Working Voltage                               DC 5 V
+
+    Echo Output Signal                            Input TTL lever signal
+
+    '
+  method: PDF HC-SR04 Datasheet, pdftotext -layout, 2026-08-26
+  note: HC-SR04 живиться від 5 В (підтверджено в таблиці параметрів). Echo Output — це TTL сигнал, що
+    означає логічні рівні, сумісні з 5-вольтовою системою. Твердження випливає однозначно з цих параметрів.
+- nazva: Подача 5 В на GPIO ESP32 пошкоджує вхід
+  zbih: Пряме під.*до GPIO вбиває пін
+  dzherelo: ESP32 Series Datasheet v5.3, Table 5-1 Absolute Maximum Ratings
+  cytata: 'Table 5-1. Absolute Maximum Ratings
+
+    Parameter: Allowed input voltage max 3.6 V
+
+    '
+  sposib: PDF esp32-datasheet.pdf, pdftotext, 2026-08-26
+  notatka: Абсолютний максимум входу GPIO — 3.6 В. Подача 5 В перевищує межу на 1.4 В. Логічно випливає
+    з таблиці абсолютних максимумів.
+  title: Подача 5 В на GPIO ESP32 пошкоджує вхід
+  match: Пряме під.*до GPIO вбиває пін
+  status: derived
+  source: ESP32 Series Datasheet v5.3, Table 5-1 Absolute Maximum Ratings
+  quote: 'Table 5-1. Absolute Maximum Ratings
+
+    Parameter: Allowed input voltage max 3.6 V
+
+    '
+  method: PDF esp32-datasheet.pdf, pdftotext, 2026-08-26
+  note: Абсолютний максимум входу GPIO — 3.6 В. Подача 5 В перевищує межу на 1.4 В. Логічно випливає з
+    таблиці абсолютних максимумів.
+  sha:
+  - 72fb7080

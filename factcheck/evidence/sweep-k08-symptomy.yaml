@@ -1,0 +1,263 @@
+# Суцільний прохід — k08-symptomy.
+#
+# Посаджено `factcheck/tools/sweep_land.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- nazva: 'T-K08-021: 6 · Що робити → перший дамп після'
+  zbih: 6\s+·\s+Що\s+робити
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+  cytata: 'Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: перший дамп після живлення розпочинає backtrace
+  title: 'T-K08-021: 6 · Що робити → перший дамп після'
+  match: 6\s+·\s+Що\s+робити
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+  quote: 'Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: перший дамп після живлення розпочинає backtrace
+  sha:
+  - 9f98b9cf
+- nazva: 'T-K08-026: 8 · Найчастіша причина → немає підтягування або'
+  zbih: 8\s+·\s+Найчастіша\s+причина
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+  cytata: 'I2C uses two bidirectional open-drain lines: serial data line (SDA) and serial
+    clock line (SCL), pulled up by resistors.
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: документація підтверджує необхідність підтягування та спільної землі для I2C
+  title: 'T-K08-026: 8 · Найчастіша причина → немає підтягування або'
+  match: 8\s+·\s+Найчастіша\s+причина
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+  quote: 'I2C uses two bidirectional open-drain lines: serial data line (SDA) and serial clock
+    line (SCL), pulled up by resistors.
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: документація підтверджує необхідність підтягування та спільної землі для I2C
+  sha:
+  - dceae9d7
+- nazva: 'T-K08-008: 2 · Найчастіша причина → плата не в'
+  zbih: 2\s+·\s+Найчастіша\s+причина\s+→\s+плата
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+  cytata: 'If the device does not support the auto download mode, you need to get into the
+    download mode manually. To do so, press and hold the ``BOOT`` button and then press the
+    ``RESET`` button once.
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: документація підтверджує, що плата, яка не в download mode, є частою причиною проблем
+  title: 'T-K08-008: 2 · Найчастіша причина → плата не в'
+  match: 2\s+·\s+Найчастіша\s+причина\s+→\s+плата
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+  quote: 'If the device does not support the auto download mode, you need to get into the
+    download mode manually. To do so, press and hold the ``BOOT`` button and then press the
+    ``RESET`` button once.
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: документація підтверджує, що плата, яка не в download mode, є частою причиною проблем
+  sha:
+  - 8b27f14c
+- nazva: 'T-K08-011: 3 · Найчастіша причина → адреса бутлоадера не'
+  zbih: 3\s+·\s+Найчастіша\s+причина\s+→\s+адреса
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/bootloader.rst
+  cytata: 'ESP-IDF second stage bootloader is located at the address {IDF_TARGET_CONFIG_BOOTLOADER_OFFSET_IN_FLASH}
+    in the flash.
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: адреса бутлоадера залежить від типу чипа, як і зазначено в довіднику
+  title: 'T-K08-011: 3 · Найчастіша причина → адреса бутлоадера не'
+  match: 3\s+·\s+Найчастіша\s+причина\s+→\s+адреса
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/bootloader.rst
+  quote: 'ESP-IDF second stage bootloader is located at the address {IDF_TARGET_CONFIG_BOOTLOADER_OFFSET_IN_FLASH}
+    in the flash.
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: адреса бутлоадера залежить від типу чипа, як і зазначено в довіднику
+  sha:
+  - 4812427e
+- nazva: 'T-K08-019: 6 · Симптом → Boot loop'
+  zbih: 6\s+·\s+Симптом\s+→
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+  cytata: 'A core dump is a set of software state information that is automatically saved
+    by the panic handler when a fatal error occurs.
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: boot loop може бути результатом паніки в застосунку, як описано в документації
+  title: 'T-K08-019: 6 · Симптом → Boot loop'
+  match: 6\s+·\s+Симптом\s+→
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+  quote: 'A core dump is a set of software state information that is automatically saved by
+    the panic handler when a fatal error occurs.
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: boot loop може бути результатом паніки в застосунку, як описано в документації
+  sha:
+  - f7f26129
+- nazva: 'T-K08-020: 6 · Найчастіша причина → паніка в застосунку'
+  zbih: 6\s+·\s+Найчастіша\s+причина
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+  cytata: 'Panic reason: abort() was called
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: паніка в застосунку дійсно є частою причиною boot loop
+  title: 'T-K08-020: 6 · Найчастіша причина → паніка в застосунку'
+  match: 6\s+·\s+Найчастіша\s+причина
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+  quote: 'Panic reason: abort() was called
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: паніка в застосунку дійсно є частою причиною boot loop
+  sha:
+  - f3d170d8
+- nazva: 'T-K08-035: 11 · Найчастіша причина → вони зайняті флешем'
+  zbih: 11\s+·\s+Найчастіша\s+причина
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h
+  cytata: '#define MSPI_IOMUX_PIN_NUM_CLK      6
+
+    #define MSPI_IOMUX_PIN_NUM_MISO     7
+
+    #define MSPI_IOMUX_PIN_NUM_MOSI     8
+
+    #define MSPI_IOMUX_PIN_NUM_HD       9
+
+    #define MSPI_IOMUX_PIN_NUM_WP       10
+
+    #define MSPI_IOMUX_PIN_NUM_CS0      11
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: GPIO 6-11 визначені як піни MSPI (Master SPI) для флеш-пам'яті, що підтверджує,
+    що вони зайняті флешем
+  title: 'T-K08-035: 11 · Найчастіша причина → вони зайняті флешем'
+  match: 11\s+·\s+Найчастіша\s+причина
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h
+  quote: '#define MSPI_IOMUX_PIN_NUM_CLK      6
+
+    #define MSPI_IOMUX_PIN_NUM_MISO     7
+
+    #define MSPI_IOMUX_PIN_NUM_MOSI     8
+
+    #define MSPI_IOMUX_PIN_NUM_HD       9
+
+    #define MSPI_IOMUX_PIN_NUM_WP       10
+
+    #define MSPI_IOMUX_PIN_NUM_CS0      11
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: GPIO 6-11 визначені як піни MSPI (Master SPI) для флеш-пам'яті, що підтверджує, що
+    вони зайняті флешем
+  sha:
+  - f2b297be

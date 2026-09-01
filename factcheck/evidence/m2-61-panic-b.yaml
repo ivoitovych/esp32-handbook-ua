@@ -1,0 +1,353 @@
+# М2, друга половина класу F — ESP-IDF fatal-errors.rst, wdts.rst
+#
+# Одиниці класу F шукають джерела для логів паніки та рекомендацій до них.
+# Друга половина починається з T-D-151 (с. 206 в d-panik.md).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- nazva: 'T-D-151: A1 — вказівник стека'
+  zbih: \| `A1` \| вказівник стека \|
+  dzherelo: shukaty
+  notatka: A1 — стандартний регістр архітектури Xtensa для Stack Pointer (SP). Міститься у
+    дампі регістрів паніки, але явна назва "Stack Pointer" для A1 у документації ESP-IDF не
+    знайдена. Встановлено, що дамп показує A1, а backtrace показує SP, але прямої цитати про
+    еквівалентність немає.
+  title: 'T-D-151: A1 — вказівник стека'
+  match: \| `A1` \| вказівник стека \|
+  status: named-unreachable
+  source: shukaty
+  note: A1 — стандартний регістр архітектури Xtensa для Stack Pointer (SP). Міститься у дампі
+    регістрів паніки, але явна назва "Stack Pointer" для A1 у документації ESP-IDF не знайдена.
+    Встановлено, що дамп показує A1, а backtrace показує SP, але прямої цитати про еквівалентність
+    немає.
+  sha:
+  - '74974165'
+- nazva: 'T-D-153: EXCVADDR — найшвидша підказка'
+  zbih: \*\*`EXCVADDR` — найшвидша підказка\.\*\*
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF fatal-errors.rst, секція «LoadProhibited, StoreProhibited»
+  cytata: 'These CPU exceptions happen when an application attempts to read from or write
+    to an invalid memory location. The address which has been written/read is found in the
+    ``EXCVADDR`` register in the register dump.
+
+    '
+  sposib: curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — sed -n '353,365p'
+  notatka: EXCVADDR — регістр, що міститься у дампі при винятку та вказує адресу невалідного
+    звернення. Книга називає його "найшвидшою підказкою" тому, що це найпряміша вказівка на
+    проблему.
+  title: 'T-D-153: EXCVADDR — найшвидша підказка'
+  match: \*\*`EXCVADDR` — найшвидша підказка\.\*\*
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF fatal-errors.rst, секція «LoadProhibited, StoreProhibited»
+  quote: 'These CPU exceptions happen when an application attempts to read from or write to
+    an invalid memory location. The address which has been written/read is found in the ``EXCVADDR``
+    register in the register dump.
+
+    '
+  method: curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — sed -n '353,365p'
+  note: EXCVADDR — регістр, що міститься у дампі при винятку та вказує адресу невалідного
+    звернення. Книга називає його "найшвидшою підказкою" тому, що це найпряміша вказівка на
+    проблему.
+  sha:
+  - 6ef4b75c
+- nazva: 'T-D-159: IDLE0 та Task Watchdog Timeout'
+  zbih: E \(5234\) task_wdt:.*IDLE0 \(CPU 0\)
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+    — ESP-IDF wdts.rst, секція «Common Error Logs When WDT Triggers»
+  cytata: 'Task watchdog got triggered. The following tasks/users did not reset the watchdog
+    in time: - IDLE0 (CPU 0), Tasks currently running: CPU 0: main, CPU 1: IDLE1
+
+    '
+  sposib: curl -sL -o /tmp/wdt.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+    — sed -n '203,203p'
+  notatka: Одна з типових помилок Task Watchdog Timer (TWDT) — timeout на IDLE задачі. Це
+    означає, що якась інша задача блокує процесор завдовго.
+  title: 'T-D-159: IDLE0 та Task Watchdog Timeout'
+  match: E \(5234\) task_wdt:.*IDLE0 \(CPU 0\)
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+    — ESP-IDF wdts.rst, секція «Common Error Logs When WDT Triggers»
+  quote: 'Task watchdog got triggered. The following tasks/users did not reset the watchdog
+    in time: - IDLE0 (CPU 0), Tasks currently running: CPU 0: main, CPU 1: IDLE1
+
+    '
+  method: curl -sL -o /tmp/wdt.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+    — sed -n '203,203p'
+  note: Одна з типових помилок Task Watchdog Timer (TWDT) — timeout на IDLE задачі. Це означає,
+    що якась інша задача блокує процесор завдовго.
+  sha:
+  - a1afa6b3
+- nazva: 'T-D-172: assert failed як порушення інваріанта'
+  zbih: '\| `assert failed: \.\.\.\` \| порушено внутрішній інваріант \|'
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF fatal-errors.rst, приклад помилки затвердження (assertion)
+  cytata: 'CORRUPT HEAP: Bad tail at 0x3ffe270a. Expected 0xbaad5678 got 0xbaac5678
+
+    assertion "head != NULL" failed: file "/Users/user/esp/esp-idf/components/heap/multi_heap_poisoning.c",
+    line 201, function: multi_heap_free
+
+    abort() was called at PC 0x400dca43 on core 0
+
+    '
+  sposib: curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — sed -n '455,460p'
+  notatka: Assertion failure виводить повідомлення вигляду "assertion "умова" failed" з файлом
+    та номером рядка. Це явне порушення виконуваного твердження, що за змістом означає порушення
+    внутрішнього інваріанту або передумови.
+  title: 'T-D-172: assert failed як порушення інваріанта'
+  match: '\| `assert failed: \.\.\.\` \| порушено внутрішній інваріант \|'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF fatal-errors.rst, приклад помилки затвердження (assertion)
+  quote: 'CORRUPT HEAP: Bad tail at 0x3ffe270a. Expected 0xbaad5678 got 0xbaac5678
+
+    assertion "head != NULL" failed: file "/Users/user/esp/esp-idf/components/heap/multi_heap_poisoning.c",
+    line 201, function: multi_heap_free
+
+    abort() was called at PC 0x400dca43 on core 0
+
+    '
+  method: curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — sed -n '455,460p'
+  note: Assertion failure виводить повідомлення вигляду "assertion "умова" failed" з файлом
+    та номером рядка. Це явне порушення виконуваного твердження, що за змістом означає порушення
+    внутрішнього інваріанту або передумови.
+  sha:
+  - 69aa2c68
+- nazva: 'T-D-177: Шукати memcpy, sprintf, цикл із <= замість <'
+  zbih: Шукати `memcpy`, `sprintf`, цикл із `<=` замість `<`\.
+  dzherelo: shukaty
+  notatka: Це рекомендація про діагностику буферних переповнень і типових помилок циклів.
+    У документації ESP-IDF явно не знайдена, це загальна практика відлагодження.
+  title: 'T-D-177: Шукати memcpy, sprintf, цикл із <= замість <'
+  match: Шукати `memcpy`, `sprintf`, цикл із `<=` замість `<`\.
+  status: named-unreachable
+  source: shukaty
+  note: Це рекомендація про діагностику буферних переповнень і типових помилок циклів. У документації
+    ESP-IDF явно не знайдена, це загальна практика відлагодження.
+  sha:
+  - 68e01a8c
+- nazva: 'T-D-181: Порівняння з тим, що повернув malloc'
+  zbih: Її можна порівняти з тим, що повернув `malloc`\.
+  dzherelo: shukaty
+  notatka: Рекомендація про порівняння поточного вказівника з результатом malloc для діагностики
+    утечок пам'яті. У документації ESP-IDF явно не знайдена.
+  title: 'T-D-181: Порівняння з тим, що повернув malloc'
+  match: Її можна порівняти з тим, що повернув `malloc`\.
+  status: named-unreachable
+  source: shukaty
+  note: Рекомендація про порівняння поточного вказівника з результатом malloc для діагностики
+    утечок пам'яті. У документації ESP-IDF явно не знайдена.
+  sha:
+  - a135e9c8
+- nazva: 'T-D-183: rst: у першому рядку RTC Watchdog Timeout'
+  zbih: \*\*`rst:` у першому рядку\.\*\*
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF fatal-errors.rst, секція «RTC Watchdog Timeout»
+  cytata: "The RTC watchdog is used in the startup code to keep track of execution time and\
+    \ it also helps to prevent a lock-up caused by an unstable power source. It is enabled\
+    \ by default (see :menuitem:`CONFIG_BOOTLOADER_WDT_ENABLE`). If the execution time is\
+    \ exceeded, the RTC watchdog will restart the system. In this case, the first stage (ROM)\
+    \ bootloader will print a message with the ``RTC Watchdog Timeout`` reason for the reboot.\n\
+    \n.. code-block:: none\n\n    rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})\n"
+  sposib: curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — sed -n '300,313p'
+  notatka: RTC Watchdog дає повідомлення виду "rst:0x10" у першому рядку log output від ROM
+    bootloader. Це сигнал, що система перезавантажилась через timeout.
+  title: 'T-D-183: rst: у першому рядку RTC Watchdog Timeout'
+  match: \*\*`rst:` у першому рядку\.\*\*
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF fatal-errors.rst, секція «RTC Watchdog Timeout»
+  quote: "The RTC watchdog is used in the startup code to keep track of execution time and\
+    \ it also helps to prevent a lock-up caused by an unstable power source. It is enabled\
+    \ by default (see :menuitem:`CONFIG_BOOTLOADER_WDT_ENABLE`). If the execution time is\
+    \ exceeded, the RTC watchdog will restart the system. In this case, the first stage (ROM)\
+    \ bootloader will print a message with the ``RTC Watchdog Timeout`` reason for the reboot.\n\
+    \n.. code-block:: none\n\n    rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})\n"
+  method: curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — sed -n '300,313p'
+  note: RTC Watchdog дає повідомлення виду "rst:0x10" у першому рядку log output від ROM bootloader.
+    Це сигнал, що система перезавантажилась через timeout.
+- nazva: 'T-D-184: Причина паніки і EXCVADDR'
+  zbih: \*\*Причина паніки і `EXCVADDR`\.\*\*
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF fatal-errors.rst, секція «LoadProhibited, StoreProhibited»
+  cytata: 'If this address is zero, it usually means that the application has attempted to
+    dereference a NULL pointer. If this address is close to zero, it usually means that the
+    application has attempted to access a member of a structure, but the pointer to the structure
+    is NULL. If this address is something else (garbage value, not in ``0x3fxxxxxx`` - ``0x6xxxxxxx``
+    range), it likely means that the pointer used to access the data is either not initialized
+    or has been corrupted.
+
+    '
+  sposib: curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — sed -n '353,365p'
+  notatka: 'EXCVADDR розповідає про адресу, що викликала винятки. Її інтерпретація часто дає
+    цілковиту відповідь про причину: нульовий вказівник, пошкоджений вказівник або невініціалізований.'
+  title: 'T-D-184: Причина паніки і EXCVADDR'
+  match: \*\*Причина паніки і `EXCVADDR`\.\*\*
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF fatal-errors.rst, секція «LoadProhibited, StoreProhibited»
+  quote: 'If this address is zero, it usually means that the application has attempted to
+    dereference a NULL pointer. If this address is close to zero, it usually means that the
+    application has attempted to access a member of a structure, but the pointer to the structure
+    is NULL. If this address is something else (garbage value, not in ``0x3fxxxxxx`` - ``0x6xxxxxxx``
+    range), it likely means that the pointer used to access the data is either not initialized
+    or has been corrupted.
+
+    '
+  method: curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — sed -n '353,365p'
+  note: 'EXCVADDR розповідає про адресу, що викликала винятки. Її інтерпретація часто дає
+    цілковиту відповідь про причину: нульовий вказівник, пошкоджений вказівник або невініціалізований.'
+- nazva: 'T-D-185: Backtrace через .elf за допомогою IDF Monitor'
+  zbih: \*\*Backtrace через `\.elf`\*\*.*того самого збирання\.
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF fatal-errors.rst, секція «Register Dump and Backtrace»
+  cytata: "Moreover, :doc:`IDF Monitor <tools/idf-monitor>` is also capable of generating\
+    \ and printing a backtrace thanks to the stack dump provided by the board in the panic\
+    \ handler.\nThe output looks like this:\n\n.. code-block:: none\n\n    Backtrace:\n\n\
+    \    0x42006686 in bar (ptr=ptr@entry=0x0) at ../main/hello_world_main.c:18\n    18  \
+    \    *ptr = 0x42424242;\n"
+  sposib: curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — sed -n '222,230p'
+  notatka: IDF Monitor використовує .elf файл того ж збирання для розшифровки адрес з backtrace
+    у назви функцій, файлів та номери рядків.
+  title: 'T-D-185: Backtrace через .elf за допомогою IDF Monitor'
+  match: \*\*Backtrace через `\.elf`\*\*.*того самого збирання\.
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF fatal-errors.rst, секція «Register Dump and Backtrace»
+  quote: "Moreover, :doc:`IDF Monitor <tools/idf-monitor>` is also capable of generating and\
+    \ printing a backtrace thanks to the stack dump provided by the board in the panic handler.\n\
+    The output looks like this:\n\n.. code-block:: none\n\n    Backtrace:\n\n    0x42006686\
+    \ in bar (ptr=ptr@entry=0x0) at ../main/hello_world_main.c:18\n    18      *ptr = 0x42424242;\n"
+  method: curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — sed -n '222,230p'
+  note: IDF Monitor використовує .elf файл того ж збирання для розшифровки адрес з backtrace
+    у назви функцій, файлів та номери рядків.
+  sha:
+  - 8d7da41f
+- nazva: 'T-D-187: Coredump та логування переходів станів при невідтворюванні'
+  zbih: Не відтворюється → coredump і логування переходів станів\.
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF fatal-errors.rst, секція «Panic Handler»
+  cytata: 'If the :doc:`Core Dump <core_dump>` feature is enabled, then the system state (task
+    stacks and registers) will be dumped to either Flash or UART, for later analysis.
+
+    '
+  sposib: curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — sed -n '79,79p'
+  notatka: Core Dump — функція ESP-IDF для зберігання стану системи при паніці для подальшого
+    аналізу. Це рекомендується, коли проблема не відтворюється легко, а також для логування
+    переходів станів.
+  title: 'T-D-187: Coredump та логування переходів станів при невідтворюванні'
+  match: Не відтворюється → coredump і логування переходів станів\.
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF fatal-errors.rst, секція «Panic Handler»
+  quote: 'If the :doc:`Core Dump <core_dump>` feature is enabled, then the system state (task
+    stacks and registers) will be dumped to either Flash or UART, for later analysis.
+
+    '
+  method: curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — sed -n '79,79p'
+  note: Core Dump — функція ESP-IDF для зберігання стану системи при паніці для подальшого
+    аналізу. Це рекомендується, коли проблема не відтворюється легко, а також для логування
+    переходів станів.
+- nazva: 'T-D-188: Backtrace без .elf нерозшифровний'
+  zbih: Без `\.elf`.*backtrace нерозшифровний\.
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF fatal-errors.rst, секція «Register Dump and Backtrace»
+  cytata: 'If :doc:`IDF Monitor <tools/idf-monitor>` is used, Program Counter values will
+    be converted to code locations (function name, file name, and line number), and the output
+    will be annotated with additional lines:
+
+    '
+  sposib: curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — sed -n '177,177p'
+  notatka: З цитати випливає, що без IDF Monitor (а IDF Monitor потребує .elf) backtrace залишається
+    у виді сирих адрес, тобто нерозшифрованим. Це клас B — логічний висновок, а не пряма цитата.
+  title: 'T-D-188: Backtrace без .elf нерозшифровний'
+  match: Без `\.elf`.*backtrace нерозшифровний\.
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF fatal-errors.rst, секція «Register Dump and Backtrace»
+  quote: 'If :doc:`IDF Monitor <tools/idf-monitor>` is used, Program Counter values will be
+    converted to code locations (function name, file name, and line number), and the output
+    will be annotated with additional lines:
+
+    '
+  method: curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — sed -n '177,177p'
+  note: З цитати випливає, що без IDF Monitor (а IDF Monitor потребує .elf) backtrace залишається
+    у виді сирих адрес, тобто нерозшифрованим. Це клас B — логічний висновок, а не пряма цитата.
+  sha:
+  - 35f815e8
+  - 4304fde6
+- nazva: 'T-D-190: .elf разом з образом, розділ 21'
+  zbih: '`\.elf` зберігається разом із кожним образом, що поїхав'
+  dzherelo: shukaty
+  notatka: Рекомендація про зберігання .elf файлу разом з прошивкою для подальшого аналізу.
+    У документації ESP-IDF явно не знайдена як вимога до процесу збирання чи розгортання.
+  title: 'T-D-190: .elf разом з образом, розділ 21'
+  match: '`\.elf` зберігається разом із кожним образом, що поїхав'
+  status: named-unreachable
+  source: shukaty
+  note: Рекомендація про зберігання .elf файлу разом з прошивкою для подальшого аналізу. У
+    документації ESP-IDF явно не знайдена як вимога до процесу збирання чи розгортання.
+  sha:
+  - 00df861d
+  - aefbccf3
+- nazva: 'T-D-193: Швидке відсікання — залити справний hello_world'
+  zbih: 'Швидке відсікання: залити свідомо справний мінімальний образ'
+  dzherelo: shukaty
+  notatka: Рекомендація про використання hello_world як мінімального, заведомо справного образу
+    для діагностики проблем прошивки. У документації ESP-IDF не знайдена як стратегія діагностики,
+    хоча hello_world є офіційним прикладом.
+  title: 'T-D-193: Швидке відсікання — залити справний hello_world'
+  match: 'Швидке відсікання: залити свідомо справний мінімальний образ'
+  status: named-unreachable
+  source: shukaty
+  note: Рекомендація про використання hello_world як мінімального, заведомо справного образу
+    для діагностики проблем прошивки. У документації ESP-IDF не знайдена як стратегія діагностики,
+    хоча hello_world є офіційним прикладом.
+  sha:
+  - 71f2dcf5

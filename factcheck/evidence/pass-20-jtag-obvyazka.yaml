@@ -23,7 +23,6 @@
 
 - nazva: MTDI і MTDO — це GPIO12 і GPIO15
   zbih: \| TDI \| `GPIO12` \||\| TDO \| `GPIO15` \||MTDI|MTDO
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: '| 12 (MTDI)   | If driven High, flash voltage (VDD_SDIO) is 1.8V not default 3.3V…
 
@@ -59,7 +58,6 @@
     це діагностують.'
 - nazva: TCK і TMS на classic — GPIO13 і GPIO14
   zbih: \| TMS \| `GPIO14` \||\| TCK \| `GPIO13` \|
-  klas: C
   dzherelo: ESP32 Series Datasheet, розділ «Pin Definitions» (таблиця альтернативних функцій
     IO_MUX). Звідси недосяжний — політика egress
   shukaty: 'у таблиці IO_MUX знайти рядки GPIO13 і GPIO14 і звірити альтернативну функцію:
@@ -114,7 +112,6 @@
 - nazva: Кольорова обв'язка прикладів — classic і тільки classic
   zbih: GPIO\d+\s+→ (?:синій|зелений|жовтий|білий|червоний|чорний)|→ датчик DS18B20, лінія
     DATA|→ дисплей SSD1306
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/soc_caps.h
     (маски дійсних пінів) + `tools/pins.py`
   cytata: "esp32: SOC_GPIO_PIN_COUNT 40\n       SOC_GPIO_VALID_GPIO_MASK (0xFFFFFFFFFFULL\

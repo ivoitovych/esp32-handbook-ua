@@ -20,7 +20,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 GRUPY = ("kartky", "manual", "dodatky", "inserts")
 CIL = ROOT / "kod" / "stubs" / "esp_idf_stubs.h"
 

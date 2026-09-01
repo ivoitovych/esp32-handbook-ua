@@ -49,7 +49,6 @@
 - nazva: Рівні strapping і недійсна комбінація — усі сімейства
   zbih: '`GPIO2` низький або вільний|`GPIO46` низький або вільний|`GPIO8` \*\*високим\*\*|`GPIO8`
     = 0\s*\n?і `GPIO9` = 0 недійсна|другий пін ігнорується|Комбінація `GPIO8` = 0'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: "{IDF_TARGET_STRAP_BOOT_GPIO:default=\"GPIO9\", esp32=\"GPIO0\",\n esp32s2=\"GPIO0\"\
     , esp32s3=\"GPIO0\", …}\n{IDF_TARGET_STRAP_BOOT_2_GPIO:default=\"GPIO8\", esp32=\"GPIO2\"\
@@ -101,7 +100,6 @@
 - nazva: Внутрішнє підтягування strapping — 45 кОм, кнопці треба 10 кОм
   zbih: Внутрішнє підтягування тут — 45 кОм|45 кОм — це слабко|сильна підтяжка вниз, 10 кОм
     на землю
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: ".. warning::\n\n   The {IDF_TARGET_NAME} has a 45k ohm internal pull-up/pull-down\n\
     \   resistor at {IDF_TARGET_STRAP_BOOT_GPIO} (and other pins). If you\n   want to connect\
@@ -141,7 +139,6 @@
 - nazva: GPIO12 має внутрішнє підтягування вниз — безпечний за замовчуванням
   zbih: сам пін має внутрішнє підтягування вниз|не під.єднаний `GPIO12` = низький = 3.3 В|високим
     його робить \*\*тільки те, що
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: "| 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not\n  default 3.3V.\
     \ Has internal pull-down, so unconnected = Low = 3.3V.\n  May prevent flashing and/or\
@@ -186,7 +183,6 @@
     біт — `0x20`|На решті сімейств маска коротша|обрано непідтримуваний режим|DOWNLOAD_BOOT\(UART0|DOWNLOAD\(USB/UART0\)|SPI_FAST_FLASH_BOOT`
     \| звичайний старт|другий strapping-пін високий, коли головний низький|бітова маска регістра
     `GPIO_STRAP`'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: "``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as\nrepresented\
     \ in the GPIO_STRAP register.\n\n.. only:: esp32\n   -  ``0x01`` - GPIO5\n   -  ``0x02``\

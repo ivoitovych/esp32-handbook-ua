@@ -93,7 +93,6 @@
 - nazva: Можливості сімейств за soc_caps.h — ядра, Wi-Fi, BLE, USB
   zbih: Ядер · C3 → 1|Ядер · H2 → 1|Wi-Fi · C3 → так|BLE · S3 → так|BLE · C6 → так|BLE · H2
     → так|USB · S2 → OTG
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h,
     https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h,
     https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h,
@@ -146,7 +145,6 @@
   - f2652967
 - nazva: Вбудований ADC нелінійний
   zbih: Вбудований ADC нелінійний і шумний
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_adc/Kconfig
   cytata: 'This option will allow the ADC calibration component to use Lookup Tables to correct
     for non-linear behavior
@@ -172,7 +170,6 @@
   - 062e0342
 - nazva: main — теж компонент ESP-IDF
   zbih: '`main` — теж компонент, просто особливий'
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/get-started/hello_world/main/CMakeLists.txt
   cytata: 'idf_component_register(SRCS "hello_world_main.c"
 

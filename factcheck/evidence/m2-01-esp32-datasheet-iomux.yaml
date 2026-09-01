@@ -18,7 +18,6 @@
 
 - nazva: Розпіновка JTAG classic — datasheet як друге джерело до io_mux_reg.h
   zbih: \| TMS \| `GPIO14` \||\| TCK \| `GPIO13` \|
-  klas: A
   dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
     — ESP32 Series Datasheet v5.3, розділ 2.2 «Pin Overview», Table 2-1 «Pin Overview», с.
     14-15

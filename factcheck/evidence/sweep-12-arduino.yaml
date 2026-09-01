@@ -1,0 +1,91 @@
+# Суцільний прохід — 12-arduino.
+#
+# Посаджено `factcheck/tools/sweep_land.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+
+
+
+
+
+
+
+
+
+
+- nazva: 'T-12-005: насправді відбувається таке: ESP-IDF стартує звичайним чином, створює'
+  zbih: насправді\s+відбувається\s+таке:\s+ESP\-IDF
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/main.cpp
+  cytata: "xTaskCreateUniversal(loopTask, \"loopTask\",\n  getArduinoLoopTaskStackSize(),\
+    \ NULL, 1,\n  &loopTaskHandle, ARDUINO_RUNNING_CORE);\n"
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: ESP-IDF app_main creates FreeRTOS loopTask, setup() called once, loop() in infinite
+    for loop
+  title: 'T-12-005: насправді відбувається таке: ESP-IDF стартує звичайним чином, створює'
+  match: насправді\s+відбувається\s+таке:\s+ESP\-IDF
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/main.cpp
+  quote: "xTaskCreateUniversal(loopTask, \"loopTask\",\n  getArduinoLoopTaskStackSize(), NULL,\
+    \ 1,\n  &loopTaskHandle, ARDUINO_RUNNING_CORE);\n"
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: ESP-IDF app_main creates FreeRTOS loopTask, setup() called once, loop() in infinite
+    for loop
+- nazva: 'T-12-059: | Прототип уже є, треба довести до виробу'
+  zbih: \|\s+Прототип\s+уже\s+є,
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  cytata: 'Arduino as an ESP-IDF component
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: підтверджує можливість використання Arduino як компонента ESP-IDF для переведення
+    прототипу до виробництва
+  title: 'T-12-059: | Прототип уже є, треба довести до виробу'
+  match: \|\s+Прототип\s+уже\s+є,
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  quote: 'Arduino as an ESP-IDF component
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: підтверджує можливість використання Arduino як компонента ESP-IDF для переведення
+    прототипу до виробництва
+  sha:
+  - c954bdec
+- nazva: 'T-12-064: Прототип на Arduino доводиться до виробу підключенням Arduino'
+  zbih: Прототип\s+на\s+Arduino\s+доводиться\s+до\s+виробу\s+підключенням\s+Arduino\s+компонентом\s+ESP\-IDF,\s+а
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  cytata: 'Arduino as an ESP-IDF component
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: підтверджує, що прототип на Arduino можна привести до виробництва підключенням
+    його як компонента ESP-IDF без переписування
+  title: 'T-12-064: Прототип на Arduino доводиться до виробу підключенням Arduino'
+  match: Прототип\s+на\s+Arduino\s+доводиться\s+до\s+виробу\s+підключенням\s+Arduino\s+компонентом\s+ESP\-IDF,\s+а
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  quote: 'Arduino as an ESP-IDF component
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: підтверджує, що прототип на Arduino можна привести до виробництва підключенням його
+    як компонента ESP-IDF без переписування
+  sha:
+  - 65d1b9a1

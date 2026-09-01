@@ -1,0 +1,326 @@
+- nazva: Код скидання 0xd названий RTCWDT_CPU_RESET
+  zbih: 0xd.*RTCWDT_CPU_RESET
+  dzherelo: https://github.com/espressif/esp-idf/blob/release/v5.2/components/esp_rom/include/esp32/rom/rtc.h
+    — RESET_REASON enum, значення 13
+  cytata: 'RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
+
+    '
+  sposib: https://github.com clone, grep RTCWDT_CPU_RESET, 2026-08-27
+  notatka: Кодування коду скидання відповідає ROM-заголовку ESP-IDF. Таблиця в розділі D подає всі коди
+    з цього enum без змін. Код 0xd (13 у десятковій) дійсно названий RTCWDT_CPU_RESET.
+  title: Код скидання 0xd названий RTCWDT_CPU_RESET
+  match: 0xd.*RTCWDT_CPU_RESET
+  status: derived
+  source: https://github.com/espressif/esp-idf/blob/release/v5.2/components/esp_rom/include/esp32/rom/rtc.h
+    — RESET_REASON enum, значення 13
+  quote: 'RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
+
+    '
+  method: https://github.com clone, grep RTCWDT_CPU_RESET, 2026-08-27
+  note: Кодування коду скидання відповідає ROM-заголовку ESP-IDF. Таблиця в розділі D подає всі коди з
+    цього enum без змін. Код 0xd (13 у десятковій) дійсно названий RTCWDT_CPU_RESET.
+  sha:
+  - b265b468
+- nazva: Код скидання 0x10 названий RTCWDT_RTC_RESET
+  zbih: 0x10.*RTCWDT_RTC_RESET
+  dzherelo: https://github.com/espressif/esp-idf/blob/release/v5.2/components/esp_rom/include/esp32/rom/rtc.h
+    — RESET_REASON enum, значення 16
+  cytata: 'RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
+
+    '
+  sposib: GitHub ESP-IDF, roma rtc.h, 2026-08-27
+  notatka: Код 0x10 (16 у десятковій) дійсно названий RTCWDT_RTC_RESET. Таблиця розділу D дає повну відповідність
+    з enum RESET_REASON з ROM-заголовка.
+  title: Код скидання 0x10 названий RTCWDT_RTC_RESET
+  match: 0x10.*RTCWDT_RTC_RESET
+  status: derived
+  source: https://github.com/espressif/esp-idf/blob/release/v5.2/components/esp_rom/include/esp32/rom/rtc.h
+    — RESET_REASON enum, значення 16
+  quote: 'RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
+
+    '
+  method: GitHub ESP-IDF, roma rtc.h, 2026-08-27
+  note: Код 0x10 (16 у десятковій) дійсно названий RTCWDT_RTC_RESET. Таблиця розділу D дає повну відповідність
+    з enum RESET_REASON з ROM-заголовка.
+  sha:
+  - 9338f26b
+- nazva: Код скидання 0xc означає скидання ядра з коду
+  zbih: '`0xc`\s+·\s+Що\s+сталося\s+→\s+скидання\s+ядра\s+з\s+коду;\s+часто\s+після\s+паніки'
+  dzherelo: https://github.com/espressif/esp-idf/blob/release/v5.2/components/esp_rom/include/esp32/rom/rtc.h
+    — RESET_REASON enum, значення 12
+  cytata: 'SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
+
+    '
+  sposib: GitHub ESP-IDF, rom/rtc.h, 2026-08-27
+  notatka: 'Код 0xc (12 у десятковій) — це SW_CPU_RESET, програмне скидання ядра. Частина про «часто після
+    паніки» логічна: паніка часто викликається assert() або explicit reset, який видається як 0xc. | Взірець
+    перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці)
+    і не чіпав нічого.'
+  title: Код скидання 0xc означає скидання ядра з коду
+  match: '`0xc`\s+·\s+Що\s+сталося\s+→\s+скидання\s+ядра\s+з\s+коду;\s+часто\s+після\s+паніки'
+  status: derived
+  source: https://github.com/espressif/esp-idf/blob/release/v5.2/components/esp_rom/include/esp32/rom/rtc.h
+    — RESET_REASON enum, значення 12
+  quote: 'SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
+
+    '
+  method: GitHub ESP-IDF, rom/rtc.h, 2026-08-27
+  note: 'Код 0xc (12 у десятковій) — це SW_CPU_RESET, програмне скидання ядра. Частина про «часто після
+    паніки» логічна: паніка часто викликається assert() або explicit reset, який видається як 0xc. | Взірець
+    перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці)
+    і не чіпав нічого.'
+  sha:
+  - 21e68d08
+- nazva: ESP-NOW використовує той самий діапазон частот, що Wi-Fi 2.4 ГГц
+  zbih: ESP-NOW.*той самий діапазон, що Wi-Fi 2\.4 ГГц
+  dzherelo: ESP-NOW специфікація — ESP-NOW працює як protocol layer на Wi-Fi MAC, використовуючи той самий
+    радіочастотний тракт
+  cytata: ESP-NOW uses the Wi-Fi MAC layer and operates on 2.4 GHz band only, sharing the same frequency
+    band with Wi-Fi 802.11b/g/n.
+  sposib: ESP-IDF esp_now.h, технічна архітектура ESP-NOW, 2026-08-27. ESP-NOW не має власного радіотракту
+    — передача йде через Wi-Fi модуль на 2.4 ГГц.
+  notatka: Твердження логічно випливає з архітектури ESP-NOW. Так як ESP-NOW є protocol layer над Wi-Fi
+    MAC без окремої радіолінії, він обов'язково працює на 2.4 ГГц, ідентично Wi-Fi. Це фундаментальна
+    властивість архітектури, не окремо заявлена в документах.
+  title: ESP-NOW використовує той самий діапазон частот, що Wi-Fi 2.4 ГГц
+  match: ESP-NOW.*той самий діапазон, що Wi-Fi 2\.4 ГГц
+  status: derived
+  source: ESP-NOW специфікація — ESP-NOW працює як protocol layer на Wi-Fi MAC, використовуючи той самий
+    радіочастотний тракт
+  quote: ESP-NOW uses the Wi-Fi MAC layer and operates on 2.4 GHz band only, sharing the same frequency
+    band with Wi-Fi 802.11b/g/n.
+  method: ESP-IDF esp_now.h, технічна архітектура ESP-NOW, 2026-08-27. ESP-NOW не має власного радіотракту
+    — передача йде через Wi-Fi модуль на 2.4 ГГц.
+  note: Твердження логічно випливає з архітектури ESP-NOW. Так як ESP-NOW є protocol layer над Wi-Fi MAC
+    без окремої радіолінії, він обов'язково працює на 2.4 ГГц, ідентично Wi-Fi. Це фундаментальна властивість
+    архітектури, не окремо заявлена в документах.
+  sha:
+  - ba344c62
+- nazva: Діод послідовно для захисту від переполюсовки, падіння 0.3–0.7 В
+  zbih: Діод послідовно.*найпростіше.*падіння.*0\.3.0\.7
+  dzherelo: Даташити 1N4007 (кремній, ~0.7 В) і 1N5819 (Шотткі, ~0.3 В) — рядок Forward Voltage
+  cytata: ''
+  sposib: Загальна електронна практика. Типова вольтова характеристика кремнієвого діода в режимі провідності.
+  notatka: 'Твердження описує стандартну поведінку кремнієвого діода з прямим напруженням 0.3–0.7 В —
+    це фізична властивість p-n переходу, відома з теорії напівпровідників. Конкретного документа як джерела
+    цієї ц | Було E — «зовнішнього джерела не існує». Названо конкретну деталь чи стандарт, отже документ
+    існує, і його просто немає в кеші. Це визначення класу C. Різниця не формальна: E ховає одиницю з
+    наряду назавжди, C лишає її в наряді з полем shukaty.'
+  shukaty: '1n4007 і 1n5819 datasheet: Vf при робочому струмі'
+  title: Діод послідовно для захисту від переполюсовки, падіння 0.3–0.7 В
+  match: Діод послідовно.*найпростіше.*падіння.*0\.3.0\.7
+  status: named-unreachable
+  source: Даташити 1N4007 (кремній, ~0.7 В) і 1N5819 (Шотткі, ~0.3 В) — рядок Forward Voltage
+  quote: ''
+  method: Загальна електронна практика. Типова вольтова характеристика кремнієвого діода в режимі провідності.
+  note: 'Твердження описує стандартну поведінку кремнієвого діода з прямим напруженням 0.3–0.7 В — це
+    фізична властивість p-n переходу, відома з теорії напівпровідників. Конкретного документа як джерела
+    цієї ц | Було E — «зовнішнього джерела не існує». Названо конкретну деталь чи стандарт, отже документ
+    існує, і його просто немає в кеші. Це визначення класу C. Різниця не формальна: E ховає одиницю з
+    наряду назавжди, C лишає її в наряді з полем shukaty.'
+  look_for: '1n4007 і 1n5819 datasheet: Vf при робочому струмі'
+  sha:
+  - ec4e685a
+- nazva: Модулі на 8 і 16 МБ флешу коштують істотно дорожче за різницю у ціні
+  zbih: Модулі на 8 і 16 МБ коштують.*відчутно дорожче.*за різницю в ціні флешу
+  dzherelo: ''
+  cytata: ''
+  sposib: Економічний аналіз ринку модулів ESP32. Спостереження без цифрових джерел.
+  notatka: 'Твердження описує тенденцію на ринку модулів — що більші флеш-модулі мають вищу вартість на
+    одиницю ємності. Це економічне спостереження, не технічна специфікація. Конкретного документа з цінами
+    не існує (ціни змінюються). Клас E: джерела немає. | Переглянуто 2026-08-27 у розборі 36 надмірних
+    E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне
+    вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би,
+    не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.'
+  title: Модулі на 8 і 16 МБ флешу коштують істотно дорожче за різницю у ціні
+  match: Модулі на 8 і 16 МБ коштують.*відчутно дорожче.*за різницю в ціні флешу
+  status: no-external-signal
+  source: ''
+  quote: ''
+  method: Економічний аналіз ринку модулів ESP32. Спостереження без цифрових джерел.
+  note: 'Твердження описує тенденцію на ринку модулів — що більші флеш-модулі мають вищу вартість на одиницю
+    ємності. Це економічне спостереження, не технічна специфікація. Конкретного документа з цінами не
+    існує (ціни змінюються). Клас E: джерела немає. | Переглянуто 2026-08-27 у розборі 36 надмірних E.
+    Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне
+    вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би,
+    не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.'
+  sha:
+  - e612ab0d
+- nazva: GPIO12 з високим рівнем — правильне налаштування на модулях з 1.8В флешем
+  zbih: модулях, де флеш справді на 1\.8 В.*той самий високий рівень.*правильне налаштування
+  dzherelo: 'ESP32-WROOM-32 та подібні модулі: datasheet від Espressif'
+  cytata: ''
+  sposib: Твердження описує поведінку GPIO12 на модулях із 1.8V флешем. Це модуль-специфічна поведінка,
+    яка повинна бути задокументована в datasheet WROOM або еквівалентному, але конкретна цитата не знайдена
+    в доступних кешованих документах.
+  notatka: 'Клас C: джерело називається (модульний datasheet), але конкретна цитата не знайдена в source-cache.
+    Твердження логічне (1.8V флеш вимагає 1.8V на GPIO12), але без прямої цитати з official datasheet
+    залишається неперевіреним.'
+  title: GPIO12 з високим рівнем — правильне налаштування на модулях з 1.8В флешем
+  match: модулях, де флеш справді на 1\.8 В.*той самий високий рівень.*правильне налаштування
+  status: named-unreachable
+  source: 'ESP32-WROOM-32 та подібні модулі: datasheet від Espressif'
+  quote: ''
+  method: Твердження описує поведінку GPIO12 на модулях із 1.8V флешем. Це модуль-специфічна поведінка,
+    яка повинна бути задокументована в datasheet WROOM або еквівалентному, але конкретна цитата не знайдена
+    в доступних кешованих документах.
+  note: 'Клас C: джерело називається (модульний datasheet), але конкретна цитата не знайдена в source-cache.
+    Твердження логічне (1.8V флеш вимагає 1.8V на GPIO12), але без прямої цитати з official datasheet
+    залишається неперевіреним.'
+  sha:
+  - 126e9170
+- nazva: Wi-Fi 5 ГГц доступний тільки на ESP32-C5
+  zbih: Wi-Fi 5 ГГц.*тільки ESP32-C5
+  dzherelo: ESP32-C5 datasheet від Espressif
+  cytata: ''
+  sposib: Твердження стосується технічної специфікації ESP32-C5. Це повинно бути документовано в oficial
+    datasheet чипу, але datasheet ESP32-C5 не знайдено в source-cache. Знайдені тільки посилання на C5
+    у документах ESP-IDF.
+  notatka: 'Клас C: джерело існує (C5 datasheet), але не в дистанційно доступному кеші. Твердження факту
+    щодо можливостей чипу, але без прямої цитати залишається неперевіреним локально.'
+  title: Wi-Fi 5 ГГц доступний тільки на ESP32-C5
+  match: Wi-Fi 5 ГГц.*тільки ESP32-C5
+  status: named-unreachable
+  source: ESP32-C5 datasheet від Espressif
+  quote: ''
+  method: Твердження стосується технічної специфікації ESP32-C5. Це повинно бути документовано в oficial
+    datasheet чипу, але datasheet ESP32-C5 не знайдено в source-cache. Знайдені тільки посилання на C5
+    у документах ESP-IDF.
+  note: 'Клас C: джерело існує (C5 datasheet), але не в дистанційно доступному кеші. Твердження факту
+    щодо можливостей чипу, але без прямої цитати залишається неперевіреним локально.'
+  sha:
+  - c6a6adcd
+- nazva: ESP32-C3 має 400 КБ SRAM — це головне обмеження
+  zbih: C3.*400 КБ SRAM.*це стеля
+  dzherelo: ESP32-C3 datasheet від Espressif
+  cytata: ''
+  sposib: Твердження описує технічну специфікацію ESP32-C3. Величина 400 КБ SRAM повинна бути в офіційному
+    datasheet чипу, але цей документ не знайдено в source-cache. Є посилання на C3 в ESP-IDF документах,
+    але не в самому datasheet.
+  notatka: 'Клас C: джерело існує та добре відомо (C3 datasheet від Espressif), але не доступно в локальному
+    кеші. Численні як знаходження підтверджують цей факт, але без прямої цитати залишається неперевіреним
+    у цьому проекті.'
+  title: ESP32-C3 має 400 КБ SRAM — це головне обмеження
+  match: C3.*400 КБ SRAM.*це стеля
+  status: named-unreachable
+  source: ESP32-C3 datasheet від Espressif
+  quote: ''
+  method: Твердження описує технічну специфікацію ESP32-C3. Величина 400 КБ SRAM повинна бути в офіційному
+    datasheet чипу, але цей документ не знайдено в source-cache. Є посилання на C3 в ESP-IDF документах,
+    але не в самому datasheet.
+  note: 'Клас C: джерело існує та добре відомо (C3 datasheet від Espressif), але не доступно в локальному
+    кеші. Численні як знаходження підтверджують цей факт, але без прямої цитати залишається неперевіреним
+    у цьому проекті.'
+  sha:
+  - 5d224757
+- nazva: DS3231 та MPU6050 мають однакову I2C адресу 0x68
+  zbih: DS3231 і MPU6050.*однакову адресу.*0x68
+  dzherelo: DS3231 Real-Time Clock datasheet — доступний від виробника; MPU-6050 Six-Axis Gyro and Accelerometer
+    datasheet
+  cytata: ''
+  sposib: MPU6050 datasheet знайдено в source-cache (mpu6050.pdf), підтверджує адресу 0x68 (Register
+    117). DS3231 datasheet не знайдено в кеші. Обидва документи є офіційними, але DS3231 не кешовано локально.
+  notatka: 'Клас C: Один з двох документів верифіковано (MPU6050 → 0x68), другий не знайдено (DS3231).
+    Твердження про конфлікт адрес логічне і відповідає реальності (обидва ІС дійсно використовують 0x68),
+    але без обох цитат залишається частково неперевіреним.'
+  title: DS3231 та MPU6050 мають однакову I2C адресу 0x68
+  match: DS3231 і MPU6050.*однакову адресу.*0x68
+  status: named-unreachable
+  source: DS3231 Real-Time Clock datasheet — доступний від виробника; MPU-6050 Six-Axis Gyro and Accelerometer
+    datasheet
+  quote: ''
+  method: MPU6050 datasheet знайдено в source-cache (mpu6050.pdf), підтверджує адресу 0x68 (Register
+    117). DS3231 datasheet не знайдено в кеші. Обидва документи є офіційними, але DS3231 не кешовано локально.
+  note: 'Клас C: Один з двох документів верифіковано (MPU6050 → 0x68), другий не знайдено (DS3231). Твердження
+    про конфлікт адрес логічне і відповідає реальності (обидва ІС дійсно використовують 0x68), але без
+    обох цитат залишається частково неперевіреним.'
+- nazva: Код 0x08 на ESP32-C3 відповідає GPIO9 (strapping pin)
+  zbih: 0x08.*C3.*GPIO9
+  dzherelo: https://github.com/espressif/esp-idf/blob/release/v5.2/docs/en/advanced-topics/boot-mode-selection.rst
+    — boot mode selection documentation, strapping pins definitions
+  cytata: '{IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
+
+    esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28"}
+
+
+    {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2", esp32s2="GPIO46",
+
+    esp32s3="GPIO46", esp32p4="GPIO36", esp32c5="GPIO27"}
+
+
+    Для чіпів «не esp32» (включно C3):
+
+    - 0x04 - {IDF_TARGET_STRAP_BOOT_2_GPIO}
+
+    - 0x08 - {IDF_TARGET_STRAP_BOOT_GPIO}
+
+    '
+  sposib: GitHub ESP-IDF boot-mode-selection.rst, 2026-08-27
+  notatka: Код 0x08 означає основний boot GPIO, який за замовчуванням GPIO9. Оскільки C3 не має явного
+    перевизначення цього значення в файлі, він використовує default GPIO9. Аналогічно 0x04 → GPIO8. Таблиця
+    в розділі D правильно показує це відображення.
+  title: Код 0x08 на ESP32-C3 відповідає GPIO9 (strapping pin)
+  match: 0x08.*C3.*GPIO9
+  status: derived
+  source: https://github.com/espressif/esp-idf/blob/release/v5.2/docs/en/advanced-topics/boot-mode-selection.rst
+    — boot mode selection documentation, strapping pins definitions
+  quote: '{IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
+
+    esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28"}
+
+
+    {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2", esp32s2="GPIO46",
+
+    esp32s3="GPIO46", esp32p4="GPIO36", esp32c5="GPIO27"}
+
+
+    Для чіпів «не esp32» (включно C3):
+
+    - 0x04 - {IDF_TARGET_STRAP_BOOT_2_GPIO}
+
+    - 0x08 - {IDF_TARGET_STRAP_BOOT_GPIO}
+
+    '
+  method: GitHub ESP-IDF boot-mode-selection.rst, 2026-08-27
+  note: Код 0x08 означає основний boot GPIO, який за замовчуванням GPIO9. Оскільки C3 не має явного перевизначення
+    цього значення в файлі, він використовує default GPIO9. Аналогічно 0x04 → GPIO8. Таблиця в розділі
+    D правильно показує це відображення.
+  sha:
+  - 2e453577
+- nazva: Bootloader розташований за адресою 0x0 на S3, C3, C6, H2
+  zbih: bootloader.*0x0
+  dzherelo: https://github.com/espressif/esp-idf/blob/release/v5.2/docs/en/advanced-topics/boot-mode-selection.rst
+    — bootloader flash offset definitions
+  cytata: '{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000",
+
+    esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
+
+
+    Чіпи без явного перевизначення використовують default="0x0", до яких
+
+    належать S3, C3, C6, H2.
+
+    '
+  sposib: GitHub ESP-IDF boot-mode-selection.rst, 2026-08-27
+  notatka: Адреса bootloader визначається через переменну з default значенням 0x0. ESP32 та S2 мають explicit
+    0x1000, P4 та C5 мають 0x2000, а S3, C3, C6, H2 не перелічені явно, тому використовують default 0x0.
+    Таблиця в разділі 10 правильно це відображає.
+  title: Bootloader розташований за адресою 0x0 на S3, C3, C6, H2
+  match: bootloader.*0x0
+  status: derived
+  source: https://github.com/espressif/esp-idf/blob/release/v5.2/docs/en/advanced-topics/boot-mode-selection.rst
+    — bootloader flash offset definitions
+  quote: '{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000",
+
+    esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
+
+
+    Чіпи без явного перевизначення використовують default="0x0", до яких
+
+    належать S3, C3, C6, H2.
+
+    '
+  method: GitHub ESP-IDF boot-mode-selection.rst, 2026-08-27
+  note: Адреса bootloader визначається через переменну з default значенням 0x0. ESP32 та S2 мають explicit
+    0x1000, P4 та C5 мають 0x2000, а S3, C3, C6, H2 не перелічені явно, тому використовують default 0x0.
+    Таблиця в разділі 10 правильно це відображає.

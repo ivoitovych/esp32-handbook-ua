@@ -29,6 +29,9 @@ Thumbs.db
 # репозиторію; це тут друга лінія, а не єдина.
 source-cache/*
 !source-cache/MANIFEST.md
+# Кеш переїхав усередину `factcheck/` 2026-08-29, і правило про нього —
+# теж: воно живе в `factcheck/.gitignore`, поруч із тим, що описує.
+# Домовленість фактчекінгу не має лежати в корені репозиторію.
 # The pre-rename cache directory. The rename replaced the ignore rule by
 # search-and-replace and hit the wrong string — the real directory was
 # `dzherela-kesh`, not `dzherela-cache` — so 236 third-party documents

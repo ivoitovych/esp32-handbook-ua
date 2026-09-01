@@ -1,7 +1,6 @@
 - nazva: Зсув бутлоадера по сімействах — числа праві, причина хибна
   zbih: ESP32 classic, ESP32-S2 \| `0x1000`|ESP32-S3, C3, C6, H2 \| `0x0`|ESP32-P4, C5, H4 \| `0x2000`|Secure
     Boot v1\*\*; коли secure boot|менеджерові ключів апаратного шифрування
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
     та .../docs/en/api-guides/startup.rst; https://raw.githubusercontent.com/espressif/esptool/master/esptool/targets/esp32*.py
   cytata: "(Kconfig.projbuild)\nconfig BOOTLOADER_OFFSET_IN_FLASH\n    hex\n    default 0x1000 if IDF_TARGET_ESP32\
@@ -69,7 +68,6 @@
 - nazva: Таблиця розділів — 0xC00 і 95 записів; 0x7000 належить бутлоадерові
   zbih: не більше 95 записів|максимум \*\*95 записів\*\*|`0xC00`|too large for partition table offset|Простір
     бутлоадера — це проміжок
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst,
     .../docs/en/api-guides/bootloader.rst, .../components/partition_table/Kconfig.projbuild
   cytata: "(partition-tables.rst)\nThe partition table length is 0xC00 bytes, as we allow a maximum of\
@@ -160,7 +158,6 @@
     саме зсувом таблиці лікують нестачу місця під бутлоадер.'
 - nazva: JTAG-піни classic — усі чотири з таблиці IOMUX
   zbih: TMS \| `GPIO14`|TDI \| `GPIO12`|TCK \| `GPIO13`|TDO \| `GPIO15`
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/register/soc/io_mux_reg.h
   cytata: '#define PERIPHS_IO_MUX_MTDI_U             (DR_REG_IO_MUX_BASE +0x34)
 
@@ -228,7 +225,6 @@
   zbih: ADC дільника · (classic|C3) →|Ключ дільника \(вихід\) · (classic|C3) →|SPI `SCK` / `MOSI` / `MISO`
     · (classic|C3) →|SPI `CS` microSD · (classic|C3) →|Четвірка `18`/`23`/`19`/`5` на classic|ADC_CHANNEL_6   //
     GPIO34 = ADC1_6|ADC_CHANNEL_3   // GPIO3|Лишається рівно вісім безумовно вільних
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h,
     .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
   cytata: "(esp32/adc_channel.h)          (esp32c3/adc_channel.h)\n#define ADC1_GPIO34_CHANNEL 6  #define\
@@ -292,7 +288,6 @@
 - nazva: Матриця GPIO і SPI — 40 проти 80 МГц, і коли різниці немає
   zbih: межа — 80 МГц|межа 40 МГц замість 80|На 40 МГц і нижче різниці немає|достатньо однієї лінії поза\s*\n?рідними
     пінами|обмежений 40 МГц замість 80
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/spi_master.rst
   cytata: "Most of ESP32's peripheral signals have a direct connection to their\ndedicated IO_MUX pins.\
     \ However, the signals can also be routed to any\nother available pins using the less direct GPIO\

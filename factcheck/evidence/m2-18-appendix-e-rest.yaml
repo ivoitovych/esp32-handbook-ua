@@ -1,0 +1,540 @@
+- nazva: DS3231 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
+  zbih: DS3231 · Бібліотека → RTClib
+  dzherelo: —
+  cytata: —
+  sposib: Немає зовнішнього джерела для перевірки — назва бібліотеки Adafruit/Arduino не є характеристикою
+    кристала.
+  notatka: Той самий випадок, що й «Бібліотека» для SHT3x/SHT4x і MPU6050 в m2-16. Клас E.
+  title: DS3231 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
+  match: DS3231 · Бібліотека → RTClib
+  status: no-external-signal
+  source: —
+  quote: —
+  method: Немає зовнішнього джерела для перевірки — назва бібліотеки Adafruit/Arduino не є характеристикою
+    кристала.
+  note: Той самий випадок, що й «Бібліотека» для SHT3x/SHT4x і MPU6050 в m2-16. Клас E.
+  sha:
+  - aeaa568e
+- nazva: INA219 / INA226 — обидва повідомляють струм і напругу
+  zbih: INA219 / INA226 · Що дає → струм і напруга
+  dzherelo: Texas Instruments, INA219 (SBOS448G) і INA226 (SBOS547C) Datasheet, розділ 1 «Features» кожного
+  cytata: '(INA219)
+
+    INA219 Zerø-Drift, Bidirectional Current/Power Monitor With I2C Interface
+
+    1 Features
+
+    • Senses Bus Voltages from 0 to 26 V
+
+    • Reports Current, Voltage, and Power
+
+
+    (INA226)
+
+    INA226 36V, 16-Bit, Ultra-Precise I2C Output Current, Voltage, and Power Monitor With Alert
+
+    1 Features
+
+    • Senses bus voltages from 0V to 36V
+
+    • Reports current, voltage, and power
+
+    '
+  sposib: PDF TI, кеш `ina219.pdf` і `ina226.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
+    2026-08-26
+  notatka: '«Струм і напруга» правдиве для обох мікросхем окремо — перевірено саме так, як просили: не
+    лише «Що дає» в цілому, а що кожна з двох деталей у рядку справді це вміє. Обидві також повідомляють
+    потужність (Power/Watts) — книга цього не згадує, це неповнота, а не помилка. Числова різниця, вартого
+    уваги: межа шинної напруги — 0…26 В в INA219 проти 0…36 В в INA226; рядок додатка E жодного числа
+    не називає, тож книга нічого не наплутала, але читач, що обирає деталь під конкретну напругу, цієї
+    різниці з таблиці не побачить.'
+  title: INA219 / INA226 — обидва повідомляють струм і напругу
+  match: INA219 / INA226 · Що дає → струм і напруга
+  status: verbatim
+  source: Texas Instruments, INA219 (SBOS448G) і INA226 (SBOS547C) Datasheet, розділ 1 «Features» кожного
+  quote: '(INA219)
+
+    INA219 Zerø-Drift, Bidirectional Current/Power Monitor With I2C Interface
+
+    1 Features
+
+    • Senses Bus Voltages from 0 to 26 V
+
+    • Reports Current, Voltage, and Power
+
+
+    (INA226)
+
+    INA226 36V, 16-Bit, Ultra-Precise I2C Output Current, Voltage, and Power Monitor With Alert
+
+    1 Features
+
+    • Senses bus voltages from 0V to 36V
+
+    • Reports current, voltage, and power
+
+    '
+  method: PDF TI, кеш `ina219.pdf` і `ina226.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
+    2026-08-26
+  note: '«Струм і напруга» правдиве для обох мікросхем окремо — перевірено саме так, як просили: не лише
+    «Що дає» в цілому, а що кожна з двох деталей у рядку справді це вміє. Обидві також повідомляють потужність
+    (Power/Watts) — книга цього не згадує, це неповнота, а не помилка. Числова різниця, вартого уваги:
+    межа шинної напруги — 0…26 В в INA219 проти 0…36 В в INA226; рядок додатка E жодного числа не називає,
+    тож книга нічого не наплутала, але читач, що обирає деталь під конкретну напругу, цієї різниці з таблиці
+    не побачить.'
+- nazva: INA219 / INA226 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
+  zbih: INA219 / INA226 · Бібліотека → Adafruit INA219
+  dzherelo: —
+  cytata: —
+  sposib: Немає зовнішнього джерела для перевірки — назва бібліотеки не є характеристикою кристала.
+  notatka: 'Той самий випадок. Клас E. Побічно: Adafruit_INA219 підтримує лише INA219, не INA226 (в Adafruit
+    є окрема Adafruit_INA226) — але оскільки колонка «Бібліотека» тут не звіряється проти datasheet за
+    вказівкою, це не переростає в помилку класу, лише в спостереження.'
+  title: INA219 / INA226 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
+  match: INA219 / INA226 · Бібліотека → Adafruit INA219
+  status: no-external-signal
+  source: —
+  quote: —
+  method: Немає зовнішнього джерела для перевірки — назва бібліотеки не є характеристикою кристала.
+  note: 'Той самий випадок. Клас E. Побічно: Adafruit_INA219 підтримує лише INA219, не INA226 (в Adafruit
+    є окрема Adafruit_INA226) — але оскільки колонка «Бібліотека» тут не звіряється проти datasheet за
+    вказівкою, це не переростає в помилку класу, лише в спостереження.'
+  sha:
+  - bf63dda1
+- nazva: PCF8574 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
+  zbih: PCF8574 · Бібліотека → PCF8574
+  dzherelo: —
+  cytata: —
+  sposib: Немає зовнішнього джерела для перевірки — назва бібліотеки не є характеристикою кристала. «Що
+    дає» для PCF8574 уже клас A в m2-08-dyspleyi-rozshyryuvachi.yaml.
+  notatka: Клас E, той самий випадок.
+  title: PCF8574 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
+  match: PCF8574 · Бібліотека → PCF8574
+  status: no-external-signal
+  source: —
+  quote: —
+  method: Немає зовнішнього джерела для перевірки — назва бібліотеки не є характеристикою кристала. «Що
+    дає» для PCF8574 уже клас A в m2-08-dyspleyi-rozshyryuvachi.yaml.
+  note: Клас E, той самий випадок.
+  sha:
+  - 7da6b06b
+- nazva: MCP23017 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
+  zbih: MCP23017 · Бібліотека → MCP23017
+  dzherelo: —
+  cytata: —
+  sposib: Немає зовнішнього джерела для перевірки. «Що дає» для MCP23017 уже клас A в m2-08-dyspleyi-rozshyryuvachi.yaml.
+  notatka: Клас E, той самий випадок.
+  title: MCP23017 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
+  match: MCP23017 · Бібліотека → MCP23017
+  status: no-external-signal
+  source: —
+  quote: —
+  method: Немає зовнішнього джерела для перевірки. «Що дає» для MCP23017 уже клас A в m2-08-dyspleyi-rozshyryuvachi.yaml.
+  note: Клас E, той самий випадок.
+  sha:
+  - 49d948f0
+- nazva: ST7789 — однокристальний драйвер TFT
+  zbih: ST7789 · Що дає → TFT-дисплей
+  dzherelo: 'Sitronix, ST7789V Datasheet, Version 1.3 (2014/03), титульна сторінка (кеш: source-cache/st7789.pdf)'
+  cytata: 'ST7789V
+
+    240RGB x 320 dot 262K Color with Frame Memory
+
+    Single-Chip TFT Controller/Driver
+
+    '
+  sposib: PDF Sitronix (дзеркало newhavendisplay.com — офіційний сайт Sitronix не роздає окремого прямого
+    PDF-лінка), кеш `st7789.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  notatka: «TFT-дисплей» підтверджено дослівно з титулу. Режим SPI («0 або 3») для цього рядка вже закритий
+    класом A в pass-16-interfeysy — новий запис для нього не потрібен.
+  title: ST7789 — однокристальний драйвер TFT
+  match: ST7789 · Що дає → TFT-дисплей
+  status: verbatim
+  source: 'Sitronix, ST7789V Datasheet, Version 1.3 (2014/03), титульна сторінка (кеш: source-cache/st7789.pdf)'
+  quote: 'ST7789V
+
+    240RGB x 320 dot 262K Color with Frame Memory
+
+    Single-Chip TFT Controller/Driver
+
+    '
+  method: PDF Sitronix (дзеркало newhavendisplay.com — офіційний сайт Sitronix не роздає окремого прямого
+    PDF-лінка), кеш `st7789.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  note: «TFT-дисплей» підтверджено дослівно з титулу. Режим SPI («0 або 3») для цього рядка вже закритий
+    класом A в pass-16-interfeysy — новий запис для нього не потрібен.
+- nazva: ILI9341 — однокристальний драйвер TFT
+  zbih: ILI9341 · Що дає → TFT-дисплей
+  dzherelo: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, Specification V1.11, титульна сторінка
+    (кеш: source-cache/ili9341.pdf)'
+  cytata: 'ILI9341
+
+    a-Si TFT LCD Single Chip Driver
+
+    240RGBx320 Resolution and 262K color
+
+    '
+  sposib: PDF ILI Technology, кеш `ili9341.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
+    2026-08-26
+  notatka: Той самий фрагмент, що вже цитувався в m2-08 для клітинки «Інтерфейс → SPI» цього ж рядка;
+    тут ним підтверджується інша клітинка того самого рядка — «TFT-дисплей».
+  title: ILI9341 — однокристальний драйвер TFT
+  match: ILI9341 · Що дає → TFT-дисплей
+  status: verbatim
+  source: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, Specification V1.11, титульна сторінка
+    (кеш: source-cache/ili9341.pdf)'
+  quote: 'ILI9341
+
+    a-Si TFT LCD Single Chip Driver
+
+    240RGBx320 Resolution and 262K color
+
+    '
+  method: PDF ILI Technology, кеш `ili9341.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
+    2026-08-26
+  note: Той самий фрагмент, що вже цитувався в m2-08 для клітинки «Інтерфейс → SPI» цього ж рядка; тут
+    ним підтверджується інша клітинка того самого рядка — «TFT-дисплей».
+- nazva: ILI9341 — SPI Mode 0 (CPHA=0, зразок на першому фронті)
+  zbih: ILI9341 · Режим → 0
+  dzherelo: ILI Technology, ILI9341 Datasheet V1.11, розділ 6 «Pin Description» (SDI/SDA) і розділ 7.1.9
+    «Write Cycle Sequence»
+  cytata: 'SDI/SDA    I/O    The data is applied on the rising edge of the SCL signal.
+
+
+    7.1.9. Write Cycle Sequence
+
+    Host processor drives the CSX pin to low and starts by setting the D/CX bit on SDA. The bit is read
+    by ILI9341
+
+    on the first rising edge of SCL signal. On the next falling edge of SCL, the MSB data bit (D7) is
+    set on SDA by
+
+    the host.
+
+    '
+  sposib: PDF ILI Technology, кеш `ili9341.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
+    2026-08-26
+  notatka: 'Хост змінює біт на падаючому фронті SCL, ILI9341 читає його на наступному висхідному — зразок
+    на першому (провідному) фронті при клоку, що в стані очікування низький: це і є SPI Mode 0 (CPOL=0,
+    CPHA=0), як і каже книга. Той самий висновок про «номер фронту, а не напрямок», що вже встановлений
+    в pass-16-interfeysy для інших рядків додатка E.'
+  title: ILI9341 — SPI Mode 0 (CPHA=0, зразок на першому фронті)
+  match: ILI9341 · Режим → 0
+  status: verbatim
+  source: ILI Technology, ILI9341 Datasheet V1.11, розділ 6 «Pin Description» (SDI/SDA) і розділ 7.1.9
+    «Write Cycle Sequence»
+  quote: 'SDI/SDA    I/O    The data is applied on the rising edge of the SCL signal.
+
+
+    7.1.9. Write Cycle Sequence
+
+    Host processor drives the CSX pin to low and starts by setting the D/CX bit on SDA. The bit is read
+    by ILI9341
+
+    on the first rising edge of SCL signal. On the next falling edge of SCL, the MSB data bit (D7) is
+    set on SDA by
+
+    the host.
+
+    '
+  method: PDF ILI Technology, кеш `ili9341.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
+    2026-08-26
+  note: 'Хост змінює біт на падаючому фронті SCL, ILI9341 читає його на наступному висхідному — зразок
+    на першому (провідному) фронті при клоку, що в стані очікування низький: це і є SPI Mode 0 (CPOL=0,
+    CPHA=0), як і каже книга. Той самий висновок про «номер фронту, а не напрямок», що вже встановлений
+    в pass-16-interfeysy для інших рядків додатка E.'
+  sha:
+  - adfd8b57
+- nazva: ILI9341 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
+  zbih: ILI9341 · Бібліотека → TFT_eSPI, LovyanGFX
+  dzherelo: —
+  cytata: —
+  sposib: Немає зовнішнього джерела для перевірки.
+  notatka: Клас E, той самий випадок.
+  title: ILI9341 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
+  match: ILI9341 · Бібліотека → TFT_eSPI, LovyanGFX
+  status: no-external-signal
+  source: —
+  quote: —
+  method: Немає зовнішнього джерела для перевірки.
+  note: Клас E, той самий випадок.
+- nazva: ST7789 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
+  zbih: ST7789 · Бібліотека → TFT_eSPI, LovyanGFX
+  dzherelo: —
+  cytata: —
+  sposib: Немає зовнішнього джерела для перевірки.
+  notatka: Клас E, той самий випадок.
+  title: ST7789 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
+  match: ST7789 · Бібліотека → TFT_eSPI, LovyanGFX
+  status: no-external-signal
+  source: —
+  quote: —
+  method: Немає зовнішнього джерела для перевірки.
+  note: Клас E, той самий випадок.
+- nazva: MCP2515 — окремий CAN-контролер по SPI, Mode 0 підтримується
+  zbih: MCP2515 · Режим → 0
+  dzherelo: 'Microchip, MCP2515 Stand-Alone CAN Controller with SPI Interface (DS20001801J), розділ «Features»
+    (кеш: source-cache/mcp2515.pdf)'
+  cytata: "MCP2515\nStand-Alone CAN Controller with SPI Interface\nFeatures\n• High-Speed SPI Interface\
+    \ (10 MHz):\n  - SPI modes 0,0 and 1,1\n"
+  sposib: PDF Microchip, кеш `mcp2515.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  notatka: 'Datasheet прямо називає підтримувані режими нотацією (CPOL,CPHA): «0,0» — це SPI Mode 0, «1,1»
+    — Mode 3. Книга називає лише 0 (як і для рядка ST7789/SSD1306, де вказано «0 або 3»), що є підмножиною,
+    не помилкою: узгоджено з рештою рядків книги, де завжди вказано робочий, а не вичерпний перелік режимів.'
+  title: MCP2515 — окремий CAN-контролер по SPI, Mode 0 підтримується
+  match: MCP2515 · Режим → 0
+  status: verbatim
+  source: 'Microchip, MCP2515 Stand-Alone CAN Controller with SPI Interface (DS20001801J), розділ «Features»
+    (кеш: source-cache/mcp2515.pdf)'
+  quote: "MCP2515\nStand-Alone CAN Controller with SPI Interface\nFeatures\n• High-Speed SPI Interface\
+    \ (10 MHz):\n  - SPI modes 0,0 and 1,1\n"
+  method: PDF Microchip, кеш `mcp2515.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  note: 'Datasheet прямо називає підтримувані режими нотацією (CPOL,CPHA): «0,0» — це SPI Mode 0, «1,1»
+    — Mode 3. Книга називає лише 0 (як і для рядка ST7789/SSD1306, де вказано «0 або 3»), що є підмножиною,
+    не помилкою: узгоджено з рештою рядків книги, де завжди вказано робочий, а не вичерпний перелік режимів.'
+  sha:
+  - 27d739d6
+- nazva: MCP2515 — стендалон CAN-контролер із SPI
+  zbih: MCP2515 · Що дає → зовнішній CAN
+  dzherelo: Microchip, MCP2515 Datasheet (DS20001801J), титульна сторінка й розділ «Description»
+  cytata: 'MCP2515
+
+    Stand-Alone CAN Controller with SPI Interface
+
+    Microchip Technology''s MCP2515 is a stand-alone Controller Area Network (CAN) controller that implements
+
+    the CAN specification, Version 2.0B. […] The MCP2515 interfaces with microcontrollers (MCUs) via an
+
+    industry standard Serial Peripheral Interface (SPI).
+
+    '
+  sposib: PDF Microchip, кеш `mcp2515.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  notatka: '«Зовнішній» — точне слово: MCP2515 підключається до MCU через SPI саме тому, що сам MCU (у
+    книзі — ESP32) власного CAN-контролера не має; для ESP32, що має вбудований TWAI, MCP2515 потрібен
+    лише для другої шини чи гальванічної розв''язки — це вже редакційна колонка «Бібліотека» цього рядка
+    й нижче.'
+  title: MCP2515 — стендалон CAN-контролер із SPI
+  match: MCP2515 · Що дає → зовнішній CAN
+  status: verbatim
+  source: Microchip, MCP2515 Datasheet (DS20001801J), титульна сторінка й розділ «Description»
+  quote: 'MCP2515
+
+    Stand-Alone CAN Controller with SPI Interface
+
+    Microchip Technology''s MCP2515 is a stand-alone Controller Area Network (CAN) controller that implements
+
+    the CAN specification, Version 2.0B. […] The MCP2515 interfaces with microcontrollers (MCUs) via an
+
+    industry standard Serial Peripheral Interface (SPI).
+
+    '
+  method: PDF Microchip, кеш `mcp2515.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  note: '«Зовнішній» — точне слово: MCP2515 підключається до MCU через SPI саме тому, що сам MCU (у книзі
+    — ESP32) власного CAN-контролера не має; для ESP32, що має вбудований TWAI, MCP2515 потрібен лише
+    для другої шини чи гальванічної розв''язки — це вже редакційна колонка «Бібліотека» цього рядка й
+    нижче.'
+  sha:
+  - 3ec6e643
+- nazva: MCP2515 — «Бібліотека → —» це посилання на вбудований контролер ESP32, не факт про MCP2515
+  zbih: MCP2515 · Бібліотека → — \(у ESP32 є свій, розділ 38\)
+  dzherelo: —
+  cytata: —
+  sposib: Немає зовнішнього джерела для перевірки — MCP2515 datasheet нічого не каже про периферію ESP32.
+    Твердження «в ESP32 є свій [CAN- контролер]» — про TWAI ESP32, а не про мікросхему цього рядка; воно
+    закривається окремо в фактчекінгу розділу 38 (де й розгорнуто), не тут.
+  notatka: 'Клас E за формою (не факт про MCP2515), хоча підстава для «—» зрозуміла й правильна: TWAI
+    — справді вбудований периферійний блок ESP32, задокументований в ESP-IDF. Повторна звірка цього факту
+    належить розділу 38, не додатку E.'
+  title: MCP2515 — «Бібліотека → —» це посилання на вбудований контролер ESP32, не факт про MCP2515
+  match: MCP2515 · Бібліотека → — \(у ESP32 є свій, розділ 38\)
+  status: no-external-signal
+  source: —
+  quote: —
+  method: Немає зовнішнього джерела для перевірки — MCP2515 datasheet нічого не каже про периферію ESP32.
+    Твердження «в ESP32 є свій [CAN- контролер]» — про TWAI ESP32, а не про мікросхему цього рядка; воно
+    закривається окремо в фактчекінгу розділу 38 (де й розгорнуто), не тут.
+  note: 'Клас E за формою (не факт про MCP2515), хоча підстава для «—» зрозуміла й правильна: TWAI — справді
+    вбудований периферійний блок ESP32, задокументований в ESP-IDF. Повторна звірка цього факту належить
+    розділу 38, не додатку E.'
+  sha:
+  - 8f789500
+- nazva: MAX31855 / MAX6675 — обидва термопарні перетворювачі
+  zbih: MAX31855\s+·\s+Що\s+дає\s+→\s+термопара|MAX6675\s+·\s+Що\s+дає\s+→\s+термопара,\s+дешевший
+  dzherelo: Maxim/Analog Devices, MAX31855 (19-5793) і MAX6675 (19-2235) Datasheet, титульна сторінка
+    кожного
+  cytata: '(MAX31855)
+
+    MAX31855
+
+    Cold-Junction Compensated
+
+    Thermocouple-to-Digital Converter
+
+
+    (MAX6675)
+
+    Cold-Junction-Compensated K-Thermocouple-
+
+    to-Digital Converter (0°C to +1024°C)
+
+    '
+  sposib: PDF Maxim/Analog Devices (через дзеркало cdn-shop.adafruit.com — analog.com блокує з цієї мережі),
+    кеш `max31855.pdf` і `max6675.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  notatka: '«Термопара» правдиве для обох окремо — перевірено кожну деталь подвійного рядка окремо, як
+    і просили. Різниця, вартого уваги: MAX31855 підтримує сім типів термопар (K, J, N, T, S, R, E), MAX6675
+    — лише тип K («Direct Digital Conversion of Type -K Thermocouple Output»). Книга типу термопари не
+    називає, тож помилки немає — але хто побудує деталь під MAX6675, обмежений типом K, а рядок цього
+    не показує. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку
+    книги (риски таблиці) і не чіпав нічого.'
+  title: MAX31855 / MAX6675 — обидва термопарні перетворювачі
+  match: MAX31855\s+·\s+Що\s+дає\s+→\s+термопара|MAX6675\s+·\s+Що\s+дає\s+→\s+термопара,\s+дешевший
+  status: verbatim
+  source: Maxim/Analog Devices, MAX31855 (19-5793) і MAX6675 (19-2235) Datasheet, титульна сторінка кожного
+  quote: '(MAX31855)
+
+    MAX31855
+
+    Cold-Junction Compensated
+
+    Thermocouple-to-Digital Converter
+
+
+    (MAX6675)
+
+    Cold-Junction-Compensated K-Thermocouple-
+
+    to-Digital Converter (0°C to +1024°C)
+
+    '
+  method: PDF Maxim/Analog Devices (через дзеркало cdn-shop.adafruit.com — analog.com блокує з цієї мережі),
+    кеш `max31855.pdf` і `max6675.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  note: '«Термопара» правдиве для обох окремо — перевірено кожну деталь подвійного рядка окремо, як і
+    просили. Різниця, вартого уваги: MAX31855 підтримує сім типів термопар (K, J, N, T, S, R, E), MAX6675
+    — лише тип K («Direct Digital Conversion of Type -K Thermocouple Output»). Книга типу термопари не
+    називає, тож помилки немає — але хто побудує деталь під MAX6675, обмежений типом K, а рядок цього
+    не показує. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку
+    книги (риски таблиці) і не чіпав нічого.'
+  sha:
+  - 73cf436a
+  - bd6d2fd1
+- nazva: MAX31855 / MAX6675 — SPI Mode 0 в обох референсних бібліотеках
+  zbih: MAX31855\s+·\s+Режим\s+→\s+0|MAX6675\s+·\s+Режим\s+→\s+0
+  dzherelo: adafruit/Adafruit-MAX31855-library, `Adafruit_MAX31855.cpp`; RobTillaart/MAX6675, `MAX6675.cpp`
+  cytata: "(Adafruit_MAX31855.cpp)\nAdafruit_MAX31855::Adafruit_MAX31855(int8_t _cs, SPIClass *_spi)\n\
+    \    : spi_dev(_cs, 1000000, SPI_BITORDER_MSBFIRST, SPI_MODE0, _spi) {}\n\n(RobTillaart/MAX6675/MAX6675.cpp)\n\
+    void MAX6675::setSPIspeed(uint32_t speed)\n{\n  _SPIspeed = speed;\n  _spi_settings = SPISettings(_SPIspeed,\
+    \ MSBFIRST, SPI_MODE0);\n}\n"
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: 'Перевірено окремо для кожної з двох деталей рядка — саме тому, що попередній чанк показав,
+    як легко невірно приписати спільній клітинці властивість лише однієї з пари. Обидва посилання явно
+    задають `SPI_MODE0`. Datasheet-текст сам по собі («D31…D0 presented to SO within tDO of the falling
+    edge of SCK») без бібліотечного підтвердження можна прочитати неоднозначно (зміна даних на падаючому
+    фронті наводить на думку про Mode 1), тому як первинне джерело для класу A взято сам робочий драйвер,
+    а не власна інтерпретація часової діаграми — це надійніший шлях, ніж самостійний розбір таймінгів.
+    Офіційна бібліотека Adafruit для MAX6675 (`adafruit/MAX6675-library`) для порівняння: програмний бітбенг
+    без апаратного SPI, тому в ній самої константи `SPI_MODE0` немає — використано альтернативну, широко
+    вживану апаратну бібліотеку `RobTillaart/MAX6675`. | Взірець перебудовано з тексту одиниці реєстру
+    2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
+  title: MAX31855 / MAX6675 — SPI Mode 0 в обох референсних бібліотеках
+  match: MAX31855\s+·\s+Режим\s+→\s+0|MAX6675\s+·\s+Режим\s+→\s+0
+  status: verbatim
+  source: adafruit/Adafruit-MAX31855-library, `Adafruit_MAX31855.cpp`; RobTillaart/MAX6675, `MAX6675.cpp`
+  quote: "(Adafruit_MAX31855.cpp)\nAdafruit_MAX31855::Adafruit_MAX31855(int8_t _cs, SPIClass *_spi)\n\
+    \    : spi_dev(_cs, 1000000, SPI_BITORDER_MSBFIRST, SPI_MODE0, _spi) {}\n\n(RobTillaart/MAX6675/MAX6675.cpp)\n\
+    void MAX6675::setSPIspeed(uint32_t speed)\n{\n  _SPIspeed = speed;\n  _spi_settings = SPISettings(_SPIspeed,\
+    \ MSBFIRST, SPI_MODE0);\n}\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Перевірено окремо для кожної з двох деталей рядка — саме тому, що попередній чанк показав, як
+    легко невірно приписати спільній клітинці властивість лише однієї з пари. Обидва посилання явно задають
+    `SPI_MODE0`. Datasheet-текст сам по собі («D31…D0 presented to SO within tDO of the falling edge of
+    SCK») без бібліотечного підтвердження можна прочитати неоднозначно (зміна даних на падаючому фронті
+    наводить на думку про Mode 1), тому як первинне джерело для класу A взято сам робочий драйвер, а не
+    власна інтерпретація часової діаграми — це надійніший шлях, ніж самостійний розбір таймінгів. Офіційна
+    бібліотека Adafruit для MAX6675 (`adafruit/MAX6675-library`) для порівняння: програмний бітбенг без
+    апаратного SPI, тому в ній самої константи `SPI_MODE0` немає — використано альтернативну, широко вживану
+    апаратну бібліотеку `RobTillaart/MAX6675`. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27:
+    попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
+  sha:
+  - af2de046
+  - f54590ca
+- nazva: MAX31855 / MAX6675 — «Бібліотека → Adafruit MAX31855» не працює з MAX6675
+  zbih: MAX31855\s+·\s+Бібліотека\s+→\s+Adafruit\s+MAX31855|MAX6675\s+·\s+Бібліотека\s+→\s+Adafruit\s+MAX6675
+  dzherelo: —
+  cytata: —
+  sposib: Немає зовнішнього джерела для перевірки самої назви бібліотеки — але перевірено (curl raw.githubusercontent,
+    2026-08-26), що `adafruit/Adafruit-MAX31855-library` і `adafruit/MAX6675-library` — два різні репозиторії
+    Adafruit, кожен під свою мікросхему.
+  notatka: 'Клас E за правилом («Бібліотека» — не факт про кристал), але це саме той різновид помилки,
+    який просили шукати в подвійних рядках: рядок «MAX31855 / MAX6675» називає в колонці «Бібліотека»
+    лише `Adafruit MAX31855` — а ця бібліотека працює тільки з MAX31855. Читач, що зібрав термопару на
+    MAX6675 (дешевший, без підтримки інших типів термопар, лише K) і встановив бібліотеку за підказкою
+    цього рядка, отримає код, який не компілюється для його деталі: для MAX6675 потрібна окрема `MAX6675`
+    (Adafruit) чи `RobTillaart/ MAX6675`. На відміну від BMP280/вологості, це не суперечність між частинами
+    книги (розділ 45 такого протиріччя не містить — MAX6675 там не згадується), а прогалина лише в цьому
+    рядку додатка E. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під
+    розмітку книги (риски таблиці) і не чіпав нічого.'
+  title: MAX31855 / MAX6675 — «Бібліотека → Adafruit MAX31855» не працює з MAX6675
+  match: MAX31855\s+·\s+Бібліотека\s+→\s+Adafruit\s+MAX31855|MAX6675\s+·\s+Бібліотека\s+→\s+Adafruit\s+MAX6675
+  status: no-external-signal
+  source: —
+  quote: —
+  method: Немає зовнішнього джерела для перевірки самої назви бібліотеки — але перевірено (curl raw.githubusercontent,
+    2026-08-26), що `adafruit/Adafruit-MAX31855-library` і `adafruit/MAX6675-library` — два різні репозиторії
+    Adafruit, кожен під свою мікросхему.
+  note: 'Клас E за правилом («Бібліотека» — не факт про кристал), але це саме той різновид помилки, який
+    просили шукати в подвійних рядках: рядок «MAX31855 / MAX6675» називає в колонці «Бібліотека» лише
+    `Adafruit MAX31855` — а ця бібліотека працює тільки з MAX31855. Читач, що зібрав термопару на MAX6675
+    (дешевший, без підтримки інших типів термопар, лише K) і встановив бібліотеку за підказкою цього рядка,
+    отримає код, який не компілюється для його деталі: для MAX6675 потрібна окрема `MAX6675` (Adafruit)
+    чи `RobTillaart/ MAX6675`. На відміну від BMP280/вологості, це не суперечність між частинами книги
+    (розділ 45 такого протиріччя не містить — MAX6675 там не згадується), а прогалина лише в цьому рядку
+    додатка E. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку
+    книги (риски таблиці) і не чіпав нічого.'
+  sha:
+  - 04a9f3f0
+  - ec5f5dc8
+- nazva: HC-SR04 — тригер і ECHO, 5 В TTL
+  zbih: HC-SR04 · Як → тригер \+ вимір `ECHO` \(⛔ 5 В!\)
+  dzherelo: 'Elecfreaks, Ultrasonic Ranging Module HC-SR04 (product datasheet) (кеш: source-cache/hc-sr04.pdf)'
+  cytata: "Wire connecting direct as following:\n   5V Supply\n   Trigger Pulse Input\n   Echo Pulse Output\n\
+    \   0V Ground\n\nElectric Parameter\nWorking Voltage                DC 5 V\nTrigger Input Signal \
+    \          10uS TTL pulse\nEcho Output Signal             Input TTL lever signal and the range in\
+    \ proportion\n"
+  sposib: PDF Elecfreaks, кеш `hc-sr04.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  notatka: 'Обидві половини твердження дослівні: окремі піни тригера й ECHO, і робоча напруга модуля —
+    5 В, тобто ECHO — це 5-вольтовий TTL-рівень. Попередження «⛔ 5 В!» у книзі влучне: пряме підключення
+    ECHO до GPIO ESP32 (толерантність 3.3 В) без дільника напруги ризиковане. Datasheet цього попередження
+    сам не формулює (виробники таких попереджень про сумісність із конкретним MCU зазвичай не пишуть)
+    — це книжковий, а не джерельний висновок, але числа, з яких він випливає (5 В проти 3.3 В ESP32),
+    дослівні.'
+  title: HC-SR04 — тригер і ECHO, 5 В TTL
+  match: HC-SR04 · Як → тригер \+ вимір `ECHO` \(⛔ 5 В!\)
+  status: verbatim
+  source: 'Elecfreaks, Ultrasonic Ranging Module HC-SR04 (product datasheet) (кеш: source-cache/hc-sr04.pdf)'
+  quote: "Wire connecting direct as following:\n   5V Supply\n   Trigger Pulse Input\n   Echo Pulse Output\n\
+    \   0V Ground\n\nElectric Parameter\nWorking Voltage                DC 5 V\nTrigger Input Signal \
+    \          10uS TTL pulse\nEcho Output Signal             Input TTL lever signal and the range in\
+    \ proportion\n"
+  method: PDF Elecfreaks, кеш `hc-sr04.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  note: 'Обидві половини твердження дослівні: окремі піни тригера й ECHO, і робоча напруга модуля — 5
+    В, тобто ECHO — це 5-вольтовий TTL-рівень. Попередження «⛔ 5 В!» у книзі влучне: пряме підключення
+    ECHO до GPIO ESP32 (толерантність 3.3 В) без дільника напруги ризиковане. Datasheet цього попередження
+    сам не формулює (виробники таких попереджень про сумісність із конкретним MCU зазвичай не пишуть)
+    — це книжковий, а не джерельний висновок, але числа, з яких він випливає (5 В проти 3.3 В ESP32),
+    дослівні.'
+- nazva: HC-SR04 — «Розділ → 45» це внутрішнє посилання книги, не факт про модуль
+  zbih: HC-SR04 · Розділ → 45
+  dzherelo: —
+  cytata: —
+  sposib: Немає зовнішнього джерела для перевірки — номер розділу це структура самої книги, не характеристика
+    HC-SR04. Коректність посилання перевіряє окремий інструмент (`make check` → `posylannya`), не фактчекінг
+    проти datasheet.
+  notatka: Клас E.
+  title: HC-SR04 — «Розділ → 45» це внутрішнє посилання книги, не факт про модуль
+  match: HC-SR04 · Розділ → 45
+  status: no-external-signal
+  source: —
+  quote: —
+  method: Немає зовнішнього джерела для перевірки — номер розділу це структура самої книги, не характеристика
+    HC-SR04. Коректність посилання перевіряє окремий інструмент (`make check` → `posylannya`), не фактчекінг
+    проти datasheet.
+  note: Клас E.

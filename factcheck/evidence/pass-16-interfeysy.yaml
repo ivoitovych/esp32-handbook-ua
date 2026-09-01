@@ -21,7 +21,6 @@
 - nazva: Адреси I²C у додатку E — усі тринадцять рядків
   zbih: '`0x76`, `0x77`|`0x44`, `0x45`|`0x23`, `0x5C`|`0x68`, `0x69`|`0x28`, `0x29`|`0x3C`,
     `0x3D`|`0x20`–`0x27`|`0x70`–`0x77`|`0x50`–`0x57`|DS3231 і MPU6050 мають однакову адресу'
-  klas: A
   dzherelo: 'raw.githubusercontent.com — заголовки драйверів: adafruit/Adafruit_BME280_Library,
     adafruit/Adafruit_SHT31, claws/BH1750, adafruit/RTClib (RTC_DS3231.cpp), adafruit/Adafruit_MPU6050,
     adafruit/Adafruit_BNO055, adafruit/Adafruit_INA219, adafruit/Adafruit_VL53L0X, adafruit/Adafruit_SSD1306,
@@ -107,7 +106,6 @@
 - nazva: Режими SPI — CPHA задає номер фронту, не напрямок
   zbih: по \*\*першому\*\* фронту|по \*\*другому\*\*|котрому за ліком|режими 0 і 3 читають
     по\s*одному й тому самому фронту|режими 1 і 2|починати треба з пари 0 і 3|0 або 3
-  klas: A
   dzherelo: https://raw.githubusercontent.com/adafruit/Adafruit-ST7735-Library/master/Adafruit_ST7789.h
     та .../Adafruit_ST7789.cpp, https://raw.githubusercontent.com/jgromes/RadioLib/master/src/BuildOpt.h
   cytata: "(Adafruit_ST7789.h)\nvoid init(uint16_t width, uint16_t height, uint8_t spiMode\

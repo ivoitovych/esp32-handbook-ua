@@ -1,7 +1,6 @@
 - nazva: DS18B20 — діапазон, роздільність і час перетворення
   zbih: приблизно від −55 до \+125 °C, роздільність налаштовується від 9 до|перетворення при 12 розрядах
     займає\s+\*\*близько 750 мілісекунд\*\*|При 9 розрядах перетворення займає\s+близько 94 мс
-  klas: A
   dzherelo: DS18B20 Programmable Resolution 1-Wire Digital Thermometer, datasheet Maxim Integrated (нині
     Analog Devices), 22 с., розділи «Features», «Operation—Measuring Temperature» і таблиця конфігураційного
     регістра
@@ -70,7 +69,6 @@
     розряди — це роздільність, а не точність, і читати їх як точність не варто.'
 - nazva: Унікальний 64-бітний код і кількість пристроїв на лінії
   zbih: У кожного унікальний 64-бітний\s+адресний код, зашитий на заводі
-  klas: A
   dzherelo: DS18B20 datasheet (Maxim), розділи «Features» і «Overview»
   cytata: 'Each DS18B20 has a unique 64-bit serial code, which allows multiple
 
@@ -122,7 +120,6 @@
     немає — є уточнення, звідки межа береться.'
 - nazva: Підтягування 4.7 кОм на лінії 1-Wire
   zbih: 1-Wire, резистор 4\.7 кОм
-  klas: A
   dzherelo: DS18B20 datasheet (Maxim), Figure 4 «Supplying the Parasite-Powered DS18B20», Figure 5 і блок-схема
     — номінал підтягування на DQ
   cytata: '(на схемах підключення DQ підтягнуто до VPU резистором 4.7k —

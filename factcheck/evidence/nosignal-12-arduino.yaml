@@ -1,0 +1,91 @@
+- nazva: 'T-12-009: **`loop` — звичайна задача FreeRTOS.** Вона має свій'
+  zbih: \*\*`loop`\s+—\s+звичайна\s+задача
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/main.cpp
+  cytata: 'xTaskCreateUniversal(loopTask, "loopTask", getArduinoLoopTaskStackSize(), NULL, 1, &loopTaskHandle, ARDUINO_RUNNING_CORE);
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: loop is created as a FreeRTOS task using xTaskCreateUniversal at startup, confirming it is a regular FreeRTOS task with its own stack and priority
+  title: 'T-12-009: **`loop` — звичайна задача FreeRTOS.** Вона має свій'
+  match: \*\*`loop`\s+—\s+звичайна\s+задача
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/main.cpp
+  quote: 'xTaskCreateUniversal(loopTask, "loopTask", getArduinoLoopTaskStackSize(), NULL, 1, &loopTaskHandle, ARDUINO_RUNNING_CORE);
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: loop is created as a FreeRTOS task using xTaskCreateUniversal at startup, confirming it is a regular FreeRTOS task with its own stack and priority
+  sha:
+  - d918d43c
+- nazva: 'T-12-033: Arduino core версії 3.x — велике оновлення: він'
+  zbih: Arduino\s+core\s+версії\s+3\.x
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/docs/en/migration_guides/2.x_to_3.0.rst
+  cytata: 'version 3.0 (based on ESP-IDF 5.1) of the Arduino ESP32 core
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: Документ явно підтверджує, що Arduino core версії 3.0 переїхав на ESP-IDF 5.1
+  title: 'T-12-033: Arduino core версії 3.x — велике оновлення: він'
+  match: Arduino\s+core\s+версії\s+3\.x
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/arduino-esp32/master/docs/en/migration_guides/2.x_to_3.0.rst
+  quote: 'version 3.0 (based on ESP-IDF 5.1) of the Arduino ESP32 core
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: Документ явно підтверджує, що Arduino core версії 3.0 переїхав на ESP-IDF 5.1
+  sha:
+  - 0d983155
+- nazva: 'T-12-048: **Arduino як компонент ESP-IDF.** Найцікавіший варіант: проєкт будується'
+  zbih: \*\*Arduino\s+як\s+компонент\s+ESP\-IDF\.\*\*
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/docs/en/esp-idf_component.rst
+  cytata: 'You can use the Arduino framework as an ESP-IDF component. This allows you to use the Arduino framework in your ESP-IDF projects
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: Документ явно описує використання Arduino як компоненту ESP-IDF проєкту
+  title: 'T-12-048: **Arduino як компонент ESP-IDF.** Найцікавіший варіант: проєкт будується'
+  match: \*\*Arduino\s+як\s+компонент\s+ESP\-IDF\.\*\*
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/arduino-esp32/master/docs/en/esp-idf_component.rst
+  quote: 'You can use the Arduino framework as an ESP-IDF component. This allows you to use the Arduino framework in your ESP-IDF projects
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: Документ явно описує використання Arduino як компоненту ESP-IDF проєкту
+  sha:
+  - 09499ed7
+- nazva: 'T-12-049: Тоді доступні `setup`/`loop` і бібліотеки Arduino — і'
+  zbih: Тоді\s+доступні\s+`setup`/`loop`\s+і
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/docs/en/esp-idf_component.rst
+  cytata: 'For usage of ``setup()`` and ``loop()`` functions - Turn on ``Autostart Arduino setup and loop on boot``
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: Документ підтверджує, що при використанні Arduino як компоненту ESP-IDF доступні setup/loop та menuconfig з усіма можливостями ESP-IDF включаючи діагностику
+  title: 'T-12-049: Тоді доступні `setup`/`loop` і бібліотеки Arduino — і'
+  match: Тоді\s+доступні\s+`setup`/`loop`\s+і
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/arduino-esp32/master/docs/en/esp-idf_component.rst
+  quote: 'For usage of ``setup()`` and ``loop()`` functions - Turn on ``Autostart Arduino setup and loop on boot``
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: Документ підтверджує, що при використанні Arduino як компоненту ESP-IDF доступні setup/loop та menuconfig з усіма можливостями ESP-IDF включаючи діагностику
+  sha:
+  - 56dfc133
+- nazva: 'T-12-061: `delay` тут не блокує систему, а `loop` —'
+  zbih: '`delay`\s+тут\s+не\s+блокує'
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/esp32-hal-misc.c
+  cytata: "void delay(uint32_t ms) {\n  vTaskDelay(ms / portTICK_PERIOD_MS);\n}\n"
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: Функція delay() використовує vTaskDelay(), яка призводить передачу керування планувальнику FreeRTOS, а не блокує систему. Крім того, у main.cpp loop виконується в завданні FreeRTOS під назвою "loopTask".
+  title: 'T-12-061: `delay` тут не блокує систему, а `loop` —'
+  match: '`delay`\s+тут\s+не\s+блокує'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/esp32-hal-misc.c
+  quote: "void delay(uint32_t ms) {\n  vTaskDelay(ms / portTICK_PERIOD_MS);\n}\n"
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: Функція delay() використовує vTaskDelay(), яка призводить передачу керування планувальнику FreeRTOS, а не блокує систему. Крім того, у main.cpp loop виконується в завданні FreeRTOS під назвою "loopTask".
+  sha:
+  - 640a93d9

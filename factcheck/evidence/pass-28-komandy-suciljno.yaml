@@ -1,7 +1,7 @@
 # Прохід 28 — суцільне закриття кошика `komandy` за поділом.
 #
 # Прохід не поштучний, а **за кошиком**: узято всі 89 одиниць, які
-# `tools/split_queue.py` відніс до М1 як «командний рядок esptool та idf.py», і
+# `factcheck/tools/split_queue.py` відніс до М1 як «командний рядок esptool та idf.py», і
 # закрито їх трьома джерелами одразу.
 #
 # Більшість із них — не нова звірка, а **досяжність уже зробленої**:
@@ -144,7 +144,6 @@
 - nazva: Іменування й версії esptool — version, esptool.py, дефіси проти підкреслень
   zbih: esptool version`|esptool\.py version`|виклик · v[45] →|Версія `esptool` залежить не
     від вашого вибору|у v4 інакшого імені немає
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst
     та .../docs/en/migration-guide.rst; перелік команд у esptool/__init__.py
   cytata: '(перехід на v5)
@@ -189,7 +188,6 @@
     · v4 / v5», а також попередження, що в v4 імені `esptool` без `.py` немає.'
 - nazva: flash-id як засіб упізнати перемаркований модуль
   zbih: '`flash-id` називає обсяг|`flash-id` показує 2 МБ'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
     та .../advanced-commands.rst
   cytata: 'chip-id     Read Chip ID
@@ -236,7 +234,6 @@
 - nazva: idf.py monitor — вихід Ctrl+], скидання через Ctrl+T
   zbih: idf\.py monitor` · Вихід → `Ctrl\+\]`|розшифровує backtrace; скидання `Ctrl\+T`, `Ctrl\+R`|вийти
     — `Ctrl\+\]`|робить це автоматично, якщо запущений
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-monitor.rst
   cytata: "* - Ctrl + ]\n  - Exit the program\n* - Ctrl + T\n  - Menu escape key\n  - Press\
     \ and follow it by one of the keys given below.\n* - * Ctrl + R\n  - Reset target board\
@@ -277,7 +274,6 @@
   - e0cf8dca
 - nazva: espefuse палить в один бік; остання перепона — слово BURN
   zbih: записує біти лише в один бік|назад ніколи|espefuse burn-\*`|набрати слово `BURN`|--do-not-confirm
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
   cytata: "``espefuse`` is a tool for communicating with Espressif chips for the\npurpose\
     \ of reading/writing (\"burning\") the one-time-programmable\neFuses. Burning occurs only\
@@ -318,7 +314,6 @@
 - nazva: erase-flash стирає весь чип, включно з NVS і калібруванням
   zbih: '`erase-flash` знищує NVS|Після `erase-flash` або перепрошивки|Після `erase-flash`
     нічого немає|`erase-flash` — тільки після дампа|За адресою `0x8000` порожньо'
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
   cytata: "Erase Flash: ``erase-flash`` & ``erase-region``\n\nTo erase the entire flash chip\
     \ (all data replaced with 0xFF bytes):\n\n    esptool erase-flash\n\nTo erase a region\
@@ -358,7 +353,6 @@
 - nazva: merge-bin дає один образ на адресу 0x0 незалежно від сімейства
   zbih: зібраний `merge-bin` · [^→]+→ `0x0`|адреса завжди `0x0`, незалежно від сімейства|Зібрано
     \*\*один образ\*\* через `merge-bin`|Є лише `\.bin`-файли — `esptool --chip … merge-bin`
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
     (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
   cytata: 'The merge-bin command will merge multiple binary files (of any kind)

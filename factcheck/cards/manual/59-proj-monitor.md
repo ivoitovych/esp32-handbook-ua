@@ -1,0 +1,5287 @@
+# Фактчекінг: `manual/59-proj-monitor.md`
+
+Одиниць твердження: **146**. Статус доказу й формат запису — `factcheck/METHOD.md`, частина II.
+
+Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
+
+**Що в блоці «Твердження, коротко».** Для прози, рядка коду й зв'язки схеми — **дослівний текст книги**. Для комірки таблиці — рендер (`BME280 · Адреса → 0x76`), якого в книзі немає; дослівний рядок такої одиниці стоїть окремим блоком нижче.
+
+---
+
+<!-- fc id:T-59-001 sha:027cf49b src:manual/59-proj-monitor.md:3 status:no-external-signal -->
+### T-59-001 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Пристрій міряє температуру, вологість і тиск, тримає історію й показує її у браузері.
+
+**Контекст**
+
+```
+# 59. Моніторинг датчиків з веб-інтерфейсом {#proj-monitor}
+
+Пристрій міряє температуру, вологість і тиск, тримає історію й показує
+її у браузері. Доступний за іменем, без пошуку IP-адреси.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-002 sha:622435fa src:manual/59-proj-monitor.md:4 status:no-external-signal -->
+### T-59-002 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Доступний за іменем, без пошуку IP-адреси.
+
+**Контекст**
+
+```
+# 59. Моніторинг датчиків з веб-інтерфейсом {#proj-monitor}
+
+Пристрій міряє температуру, вологість і тиск, тримає історію й показує
+її у браузері. Доступний за іменем, без пошуку IP-адреси.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-003 sha:62e72694 src:manual/59-proj-monitor.md:6 status:self-consistent -->
+### T-59-003 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Це базовий проєкт: на ньому зустрічаються Wi-Fi, I²C, веб-сервер, mDNS, зберігання стану й обробка помилок.
+
+**Контекст**
+
+```
+# 59. Моніторинг датчиків з веб-інтерфейсом {#proj-monitor}
+
+Це базовий проєкт: на ньому зустрічаються Wi-Fi, I²C, веб-сервер,
+mDNS, зберігання стану й обробка помилок.
+```
+
+**Доказ**
+
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
+- **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 6
+- **Дослівно з джерела:**
+  > Це базовий проєкт: на ньому зустрічаються Wi-Fi, I²C, веб-сервер, 
+  > mDNS, зберігання стану й обробка помилок.
+- **Спосіб і дата:** дослівна цитата
+- **Нотатка:** Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.
+- **Прохід:** m2-69-project-59
+
+---
+
+<!-- fc id:T-59-004 sha:3a523fc0 src:manual/59-proj-monitor.md:11 status:unchecked -->
+### T-59-004 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> **Вхід:** BME280 по I²C — температура, вологість, тиск.
+
+**Контекст**
+
+```
+## Постановка
+
+**Вхід:** BME280 по I²C — температура, вологість, тиск.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-005 sha:9363613b src:manual/59-proj-monitor.md:13 status:no-external-signal -->
+### T-59-005 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> **Вихід:** веб-сторінка з поточними значеннями і графіком за останні години; JSON для машинного зчитування.
+
+**Контекст**
+
+```
+## Постановка
+
+**Вихід:** веб-сторінка з поточними значеннями і графіком за останні
+години; JSON для машинного зчитування.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-006 sha:cc87583a src:manual/59-proj-monitor.md:16 status:unchecked -->
+### T-59-006 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> **Живлення:** мережа через USB.
+
+**Контекст**
+
+```
+## Постановка
+
+**Живлення:** мережа через USB. Автономність не потрібна.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-007 sha:71b33275 src:manual/59-proj-monitor.md:16 status:no-external-signal -->
+### T-59-007 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Автономність не потрібна.
+
+**Контекст**
+
+```
+## Постановка
+
+**Живлення:** мережа через USB. Автономність не потрібна.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-008 sha:5451c890 src:manual/59-proj-monitor.md:18 status:no-external-signal -->
+### T-59-008 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> **Поведінка при відмові:** немає мережі — вимірювання продовжуються й накопичуються; датчик мовчить — пристрій живий і повідомляє про це.
+
+**Контекст**
+
+```
+## Постановка
+
+**Поведінка при відмові:** немає мережі — вимірювання продовжуються й
+накопичуються; датчик мовчить — пристрій живий і повідомляє про це.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-009 sha:c141e070 src:manual/59-proj-monitor.md:23 status:code-context -->
+### T-59-009 · kod · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ```
+>    BME280 ──I²C──> ESP32 ──Wi-Fi──> роутер ──> браузер
+>   (0x76)          [кільцевий буфер            (teplytsia.local)
+>                    на 720 записів]
+> ```
+
+**Контекст**
+
+````
+## Блок-схема
+
+```
+   BME280 ──I²C──> ESP32 ──Wi-Fi──> роутер ──> браузер
+  (0x76)          [кільцевий буфер            (teplytsia.local)
+                   на 720 записів]
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID          UINT8_C(0x60)
+  > #define BME280_I2C_ADDR_PRIM    UINT8_C(0x76)
+  > #define BME280_I2C_ADDR_SEC     UINT8_C(0x77)
+  > #define BME280_REG_CHIP_ID      UINT8_C(0xD0)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Обидва кінці дроту сходяться. Код проєкту 59 читає регістр `0xD0` і порівнює відповідь із `0x60` — рівно те, що оголошує офіційний драйвер Bosch. Адреси `0x76`/`0x77` теж дослівні.
+Це саме той доказ, який раніше приписували **всій** схемі проєкту 59, включно з рядком про `GPIO22`. Datasheet датчика ніколи не міг би підтвердити наявність піна в S3 — тепер він і не претендує: покриває рядки про датчик, і лише їх.
+- **Прохід:** pass-18-schemy
+
+---
+
+<!-- fc id:T-59-010 sha:27ecd0d4 src:manual/59-proj-monitor.md:24 status:unchecked -->
+### T-59-010 · schema-zvyazok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> BME280 ──I²C──> ESP32 ──Wi-Fi──> роутер ──> браузер
+
+**Контекст**
+
+````
+## Блок-схема
+
+```
+   BME280 ──I²C──> ESP32 ──Wi-Fi──> роутер ──> браузер
+  (0x76)          [кільцевий буфер            (teplytsia.local)
+                   на 720 записів]
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-011 sha:648244e3 src:manual/59-proj-monitor.md:31 status:unchecked -->
+### T-59-011 · tablycya-shapka · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> | Позиція | Кількість | Примітка |
+
+**Контекст**
+
+```
+## Складові
+
+
+| Позиція | Кількість | Примітка |
+|---|---|---|
+| ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
+| BME280, модуль I²C | 1 | звірити адресу: `0x76` або `0x77` |
+| Резистори 4.7 кОм | 2 | підтягування I²C, якщо немає на модулі |
+| Дроти Dupont | 4 | |
+| Корпус, живлення | — | розділ 54 |
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-012 sha:bf7fec58 src:manual/59-proj-monitor.md:33 status:self-consistent -->
+### T-59-012 · komirka · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP32-S3-DevKitC-1 або classic DevKitC · Кількість → 1
+
+**Дослівно з книги**
+
+```
+| ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
+```
+
+**Контекст**
+
+```
+## Складові
+
+
+| Позиція | Кількість | Примітка |
+|---|---|---|
+| ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
+| BME280, модуль I²C | 1 | звірити адресу: `0x76` або `0x77` |
+| Резистори 4.7 кОм | 2 | підтягування I²C, якщо немає на модулі |
+| Дроти Dupont | 4 | |
+| Корпус, живлення | — | розділ 54 |
+```
+
+**Доказ**
+
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
+- **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 32
+- **Дослівно з джерела:**
+  > | ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
+- **Спосіб і дата:** дослівна цитата з таблиці компонентів
+- **Нотатка:** Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.
+- **Прохід:** m2-69-project-59
+
+---
+
+<!-- fc id:T-59-013 sha:f93103c7 src:manual/59-proj-monitor.md:33 status:unchecked -->
+### T-59-013 · komirka · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP32-S3-DevKitC-1 або classic DevKitC · Примітка → будь-який із Wi-Fi
+
+**Дослівно з книги**
+
+```
+| ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
+```
+
+**Контекст**
+
+```
+## Складові
+
+
+| Позиція | Кількість | Примітка |
+|---|---|---|
+| ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
+| BME280, модуль I²C | 1 | звірити адресу: `0x76` або `0x77` |
+| Резистори 4.7 кОм | 2 | підтягування I²C, якщо немає на модулі |
+| Дроти Dupont | 4 | |
+| Корпус, живлення | — | розділ 54 |
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-014 sha:82dde248 src:manual/59-proj-monitor.md:34 status:unchecked -->
+### T-59-014 · komirka · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> BME280, модуль I²C · Кількість → 1
+
+**Дослівно з книги**
+
+```
+| BME280, модуль I²C | 1 | звірити адресу: `0x76` або `0x77` |
+```
+
+**Контекст**
+
+```
+## Складові
+
+
+| Позиція | Кількість | Примітка |
+|---|---|---|
+| ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
+| BME280, модуль I²C | 1 | звірити адресу: `0x76` або `0x77` |
+| Резистори 4.7 кОм | 2 | підтягування I²C, якщо немає на модулі |
+| Дроти Dupont | 4 | |
+| Корпус, живлення | — | розділ 54 |
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-015 sha:33217139 src:manual/59-proj-monitor.md:34 status:verbatim -->
+### T-59-015 · komirka · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> BME280, модуль I²C · Примітка → звірити адресу: `0x76` або `0x77`
+
+**Дослівно з книги**
+
+```
+| BME280, модуль I²C | 1 | звірити адресу: `0x76` або `0x77` |
+```
+
+**Контекст**
+
+```
+## Складові
+
+
+| Позиція | Кількість | Примітка |
+|---|---|---|
+| ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
+| BME280, модуль I²C | 1 | звірити адресу: `0x76` або `0x77` |
+| Резистори 4.7 кОм | 2 | підтягування I²C, якщо немає на модулі |
+| Дроти Dupont | 4 | |
+| Корпус, живлення | — | розділ 54 |
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID          UINT8_C(0x60)
+  > #define BME280_I2C_ADDR_PRIM    UINT8_C(0x76)
+  > #define BME280_I2C_ADDR_SEC     UINT8_C(0x77)
+  > #define BME280_REG_CHIP_ID      UINT8_C(0xD0)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Обидва кінці дроту сходяться. Код проєкту 59 читає регістр `0xD0` і порівнює відповідь із `0x60` — рівно те, що оголошує офіційний драйвер Bosch. Адреси `0x76`/`0x77` теж дослівні.
+Це саме той доказ, який раніше приписували **всій** схемі проєкту 59, включно з рядком про `GPIO22`. Datasheet датчика ніколи не міг би підтвердити наявність піна в S3 — тепер він і не претендує: покриває рядки про датчик, і лише їх.
+- **Прохід:** pass-18-schemy
+
+---
+
+<!-- fc id:T-59-016 sha:17139ead src:manual/59-proj-monitor.md:35 status:no-external-signal -->
+### T-59-016 · komirka · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Резистори 4.7 кОм · Кількість → 2
+
+**Дослівно з книги**
+
+```
+| Резистори 4.7 кОм | 2 | підтягування I²C, якщо немає на модулі |
+```
+
+**Контекст**
+
+```
+## Складові
+
+
+| Позиція | Кількість | Примітка |
+|---|---|---|
+| ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
+| BME280, модуль I²C | 1 | звірити адресу: `0x76` або `0x77` |
+| Резистори 4.7 кОм | 2 | підтягування I²C, якщо немає на модулі |
+| Дроти Dupont | 4 | |
+| Корпус, живлення | — | розділ 54 |
+```
+
+**Доказ**
+
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
+- **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
+- **Дослівно з джерела:**
+  > Затвор MOSFET:
+  > GPIO ──[100–220 Ом]── Gate MOSFET
+  > 
+  > Цей резистор обмежує пік-струм при перезаписуванні затвору.
+  > Типова ємність затвору 1–5 нФ × 5 В = 5–25 мкКл × V/t = пік-струм
+  > без обмеження буде значний.
+  > 
+  > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
+- **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
+- **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
+- **Прохід:** m2-65-electronics-05
+
+---
+
+<!-- fc id:T-59-017 sha:e28e0795 src:manual/59-proj-monitor.md:35 status:no-external-signal -->
+### T-59-017 · komirka · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Резистори 4.7 кОм · Примітка → підтягування I²C, якщо немає на модулі
+
+**Дослівно з книги**
+
+```
+| Резистори 4.7 кОм | 2 | підтягування I²C, якщо немає на модулі |
+```
+
+**Контекст**
+
+```
+## Складові
+
+
+| Позиція | Кількість | Примітка |
+|---|---|---|
+| ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
+| BME280, модуль I²C | 1 | звірити адресу: `0x76` або `0x77` |
+| Резистори 4.7 кОм | 2 | підтягування I²C, якщо немає на модулі |
+| Дроти Dupont | 4 | |
+| Корпус, живлення | — | розділ 54 |
+```
+
+**Доказ**
+
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
+- **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
+- **Дослівно з джерела:**
+  > Затвор MOSFET:
+  > GPIO ──[100–220 Ом]── Gate MOSFET
+  > 
+  > Цей резистор обмежує пік-струм при перезаписуванні затвору.
+  > Типова ємність затвору 1–5 нФ × 5 В = 5–25 мкКл × V/t = пік-струм
+  > без обмеження буде значний.
+  > 
+  > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
+- **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
+- **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
+- **Прохід:** m2-65-electronics-05
+
+---
+
+<!-- fc id:T-59-018 sha:b849725c src:manual/59-proj-monitor.md:36 status:no-external-signal -->
+### T-59-018 · komirka · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Дроти Dupont · Кількість → 4
+
+**Дослівно з книги**
+
+```
+| Дроти Dupont | 4 | |
+```
+
+**Контекст**
+
+```
+## Складові
+
+
+| Позиція | Кількість | Примітка |
+|---|---|---|
+| ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
+| BME280, модуль I²C | 1 | звірити адресу: `0x76` або `0x77` |
+| Резистори 4.7 кОм | 2 | підтягування I²C, якщо немає на модулі |
+| Дроти Dupont | 4 | |
+| Корпус, живлення | — | розділ 54 |
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-019 sha:a8265b17 src:manual/59-proj-monitor.md:37 status:no-external-signal -->
+### T-59-019 · komirka · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Корпус, живлення · Примітка → розділ 54
+
+**Дослівно з книги**
+
+```
+| Корпус, живлення | — | розділ 54 |
+```
+
+**Контекст**
+
+```
+## Складові
+
+
+| Позиція | Кількість | Примітка |
+|---|---|---|
+| ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
+| BME280, модуль I²C | 1 | звірити адресу: `0x76` або `0x77` |
+| Резистори 4.7 кОм | 2 | підтягування I²C, якщо немає на модулі |
+| Дроти Dupont | 4 | |
+| Корпус, живлення | — | розділ 54 |
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-020 sha:fd7a49cd src:manual/59-proj-monitor.md:39 status:no-external-signal -->
+### T-59-020 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Ціни й наявність — у вкладиші ринку (Р5).
+
+**Контекст**
+
+```
+## Складові
+
+Ціни й наявність — у вкладиші ринку (Р5).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-021 sha:cd64831e src:manual/59-proj-monitor.md:43 status:no-external-signal -->
+### T-59-021 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Проєкт розрахований на дві плати, і **піни в них різні**.
+
+**Контекст**
+
+```
+## Піни за платами
+
+Проєкт розрахований на дві плати, і **піни в них різні**. Спочатку
+оберіть рядок, далі читайте схему з ним.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-022 sha:ad6dd003 src:manual/59-proj-monitor.md:43 status:no-external-signal -->
+### T-59-022 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Спочатку оберіть рядок, далі читайте схему з ним.
+
+**Контекст**
+
+```
+## Піни за платами
+
+Проєкт розрахований на дві плати, і **піни в них різні**. Спочатку
+оберіть рядок, далі читайте схему з ним.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-023 sha:ada77d18 src:manual/59-proj-monitor.md:46 status:self-consistent -->
+### T-59-023 · tablycya-shapka · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> | Сигнал | classic DevKitC | S3-DevKitC-1 |
+
+**Контекст**
+
+```
+## Піни за платами
+
+Проєкт розрахований на дві плати, і **піни в них різні**. Спочатку
+оберіть рядок, далі читайте схему з ним.
+
+| Сигнал | classic DevKitC | S3-DevKitC-1 |
+|---|---|---|
+| `SDA` | `GPIO21` | `GPIO8` |
+| `SCL` | `GPIO22` | `GPIO9` |
+```
+
+**Доказ**
+
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
+- **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 46
+- **Дослівно з джерела:**
+  > | Сигнал | classic DevKitC | S3-DevKitC-1 |
+- **Спосіб і дата:** дослівна цитата з таблиці розпіновки
+- **Нотатка:** Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.
+- **Прохід:** m2-69-project-59
+
+---
+
+<!-- fc id:T-59-024 sha:0459c3fe src:manual/59-proj-monitor.md:48 status:verbatim -->
+### T-59-024 · komirka · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> `SDA` · classic DevKitC → `GPIO21`
+
+**Дослівно з книги**
+
+```
+| `SDA` | `GPIO21` | `GPIO8` |
+```
+
+**Контекст**
+
+```
+## Піни за платами
+
+Проєкт розрахований на дві плати, і **піни в них різні**. Спочатку
+оберіть рядок, далі читайте схему з ним.
+
+| Сигнал | classic DevKitC | S3-DevKitC-1 |
+|---|---|---|
+| `SDA` | `GPIO21` | `GPIO8` |
+| `SCL` | `GPIO22` | `GPIO9` |
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
+- **Дослівно з джерела:**
+  > variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
+  > variants/esp32s3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 48
+  > variants/esp32c3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 8
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Джерело правки додатка A в сесії рецензування 06: для C3 стояло 5/6, таких значень немає в жодному варіанті. Те саме джерело підтверджує номери бортових світлодіодів, ужиті в розділі 33.
+- **Прохід:** pass-01-tverde-yadro
+
+---
+
+<!-- fc id:T-59-025 sha:634585b7 src:manual/59-proj-monitor.md:48 status:verbatim -->
+### T-59-025 · komirka · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> `SDA` · S3-DevKitC-1 → `GPIO8`
+
+**Дослівно з книги**
+
+```
+| `SDA` | `GPIO21` | `GPIO8` |
+```
+
+**Контекст**
+
+```
+## Піни за платами
+
+Проєкт розрахований на дві плати, і **піни в них різні**. Спочатку
+оберіть рядок, далі читайте схему з ним.
+
+| Сигнал | classic DevKitC | S3-DevKitC-1 |
+|---|---|---|
+| `SDA` | `GPIO21` | `GPIO8` |
+| `SCL` | `GPIO22` | `GPIO9` |
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
+- **Дослівно з джерела:**
+  > variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
+  > variants/esp32s3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 48
+  > variants/esp32c3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 8
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Джерело правки додатка A в сесії рецензування 06: для C3 стояло 5/6, таких значень немає в жодному варіанті. Те саме джерело підтверджує номери бортових світлодіодів, ужиті в розділі 33.
+- **Прохід:** pass-01-tverde-yadro
+
+---
+
+<!-- fc id:T-59-026 sha:31ee2c1e src:manual/59-proj-monitor.md:49 status:verbatim -->
+### T-59-026 · komirka · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> `SCL` · classic DevKitC → `GPIO22`
+
+**Дослівно з книги**
+
+```
+| `SCL` | `GPIO22` | `GPIO9` |
+```
+
+**Контекст**
+
+```
+## Піни за платами
+
+Проєкт розрахований на дві плати, і **піни в них різні**. Спочатку
+оберіть рядок, далі читайте схему з ним.
+
+| Сигнал | classic DevKitC | S3-DevKitC-1 |
+|---|---|---|
+| `SDA` | `GPIO21` | `GPIO8` |
+| `SCL` | `GPIO22` | `GPIO9` |
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
+- **Дослівно з джерела:**
+  > variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
+  > variants/esp32s3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 48
+  > variants/esp32c3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 8
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Джерело правки додатка A в сесії рецензування 06: для C3 стояло 5/6, таких значень немає в жодному варіанті. Те саме джерело підтверджує номери бортових світлодіодів, ужиті в розділі 33.
+- **Прохід:** pass-01-tverde-yadro
+
+---
+
+<!-- fc id:T-59-027 sha:9a5bea62 src:manual/59-proj-monitor.md:49 status:verbatim -->
+### T-59-027 · komirka · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> `SCL` · S3-DevKitC-1 → `GPIO9`
+
+**Дослівно з книги**
+
+```
+| `SCL` | `GPIO22` | `GPIO9` |
+```
+
+**Контекст**
+
+```
+## Піни за платами
+
+Проєкт розрахований на дві плати, і **піни в них різні**. Спочатку
+оберіть рядок, далі читайте схему з ним.
+
+| Сигнал | classic DevKitC | S3-DevKitC-1 |
+|---|---|---|
+| `SDA` | `GPIO21` | `GPIO8` |
+| `SCL` | `GPIO22` | `GPIO9` |
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
+- **Дослівно з джерела:**
+  > variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
+  > variants/esp32s3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 48
+  > variants/esp32c3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 8
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Джерело правки додатка A в сесії рецензування 06: для C3 стояло 5/6, таких значень немає в жодному варіанті. Те саме джерело підтверджує номери бортових світлодіодів, ужиті в розділі 33.
+- **Прохід:** pass-01-tverde-yadro
+
+---
+
+<!-- fc id:T-59-028 sha:8f81248e src:manual/59-proj-monitor.md:52 status:verbatim -->
+### T-59-028 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> [[S3]] **`GPIO22` на S3 не існує.** У S3 немає пінів 22–25 узагалі — це видно прямо в ESP-IDF, де маска дійсних пінів їх вирізає.
+
+**Контекст**
+
+```
+## Піни за платами
+
+::: nezvorotne
+[[S3]] **`GPIO22` на S3 не існує.** У S3 немає пінів 22–25 узагалі — це
+видно прямо в ESP-IDF, де маска дійсних пінів їх вирізає. Схема з
+`GPIO22`, перенесена з classic, не запрацює: `i2c_new_master_bus`
+поверне `ESP_ERR_INVALID_ARG`, і шина лишиться німою.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > esp32:   SOC_GPIO_PIN_COUNT 40
+  >          SOC_GPIO_VALID_GPIO_MASK (0xFFFFFFFFFFULL & ~(BIT24|BIT28|BIT29|BIT30|BIT31))
+  >          SOC_GPIO_VALID_OUTPUT_GPIO_MASK (… & ~(BIT34…BIT39))
+  > esp32s2: SOC_GPIO_PIN_COUNT 47
+  >          SOC_GPIO_VALID_GPIO_MASK (0x7FFFFFFFFFFFULL & ~(BIT22|BIT23|BIT24|BIT25))
+  > esp32s3: SOC_GPIO_PIN_COUNT 49
+  >          SOC_GPIO_VALID_GPIO_MASK (0x1FFFFFFFFFFFFULL & ~(BIT22|BIT23|BIT24|BIT25))
+  > esp32c3: SOC_GPIO_PIN_COUNT 22
+  >          SOC_GPIO_VALID_GPIO_MASK ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+  > esp32c6: SOC_GPIO_PIN_COUNT 31
+  > esp32h2: SOC_GPIO_PIN_COUNT 28
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Два виправлення рівня «не збереться».
+Проєкт 59 радив S3 першим рядком складових і давав `GPIO21`/`GPIO22` для I²C. У S3 пінів 22–25 **немає взагалі** — маска вирізає їх явно. Читач із S3-DevKitC-1 отримав би `ESP_ERR_INVALID_ARG` і німу шину.
+Проєкт 60 радив C3 і давав `GPIO21/22` (I²C), `GPIO18/19/23` (SPI) і `GPIO34` (ADC). У C3 рівно 22 піни, `GPIO0`–`GPIO21`; з трьох підсистем не існує жодної цілком.
+Виправлено не заміною чисел, а введенням **таблиці пінів за платами** в кожен із проєктів, із винесенням розпіновки в один блок `#if CONFIG_IDF_TARGET_*` нагорі коду. Тепер перенесення на інший чип — одна правка в одному місці, а не пошук чисел по всьому розділу.
+Заразом з'ясувалося, що на C3 проєкт 60 вичерпує всі вільні піни й потребує ще одного: вісім безумовно вільних (`0`,`1`,`3`,`4`,`5`, `6`,`7`,`10`) проти дев'яти потрібних. Дев'ятим узято strapping-пін `GPIO2` — виключно як вихід. Це записано в книгу прямо, бо саме такі межі й вирішують вибір чипа на етапі схеми.
+- **Прохід:** pass-17-simeystva-proektiv
+
+---
+
+<!-- fc id:T-59-029 sha:11824181 src:manual/59-proj-monitor.md:53 status:self-consistent -->
+### T-59-029 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Схема з `GPIO22`, перенесена з classic, не запрацює: `i2c_new_master_bus` поверне `ESP_ERR_INVALID_ARG`, і шина лишиться німою.
+
+**Контекст**
+
+```
+## Піни за платами
+
+::: nezvorotne
+[[S3]] **`GPIO22` на S3 не існує.** У S3 немає пінів 22–25 узагалі — це
+видно прямо в ESP-IDF, де маска дійсних пінів їх вирізає. Схема з
+`GPIO22`, перенесена з classic, не запрацює: `i2c_new_master_bus`
+поверне `ESP_ERR_INVALID_ARG`, і шина лишиться німою.
+```
+
+**Доказ**
+
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
+- **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядки 54–65
+- **Дослівно з джерела:**
+  > **`GPIO22` на S3 не існує.** У S3 немає пінів 22–25 узагалі — це
+  > видно прямо в ESP-IDF, де маска дійсних пінів їх вирізає. Схема з
+  > `GPIO22`, перенесена з classic, не запрацює: `i2c_new_master_bus`
+  > поверне `ESP_ERR_INVALID_ARG`, і шина лишиться німою.
+  > 
+  > Драйвер при цьому **називає причину в консолі** — типово, без жодного
+  > налаштування:
+  > E (315) i2c.master: i2c_new_master_bus(1049): invalid SDA/SCL pin number
+  > 
+  > Мовчазним воно стає лише тоді, коли код повернення не перевіряють, а лог
+  > гортають повз: без `ESP_ERROR_CHECK` програма спокійно йде далі до першої
+  > транзакції з дескриптором, якого немає.
+- **Спосіб і дата:** дослівна цитата про критичну помилку розпіновки
+- **Нотатка:** Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.
+- **Прохід:** m2-69-project-59
+
+---
+
+<!-- fc id:T-59-030 sha:5aaa0502 src:manual/59-proj-monitor.md:57 status:verbatim -->
+### T-59-030 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Драйвер при цьому **називає причину в консолі** — типово, без жодного налаштування:
+
+**Контекст**
+
+```
+## Піни за платами
+
+Драйвер при цьому **називає причину в консолі** — типово, без жодного
+налаштування:
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_driver_i2c/i2c_master.c, .../components/esp_common/include/esp_check.h, .../Kconfig
+- **Дослівно з джерела:**
+  > (i2c_master.c:1049)
+  > ESP_RETURN_ON_FALSE(GPIO_IS_VALID_GPIO(bus_config->sda_io_num) &&
+  >     GPIO_IS_VALID_GPIO(bus_config->scl_io_num), ESP_ERR_INVALID_ARG,
+  >     TAG, "invalid SDA/SCL pin number");
+  > 
+  > (esp_check.h — варіант, що діє типово)
+  > #define ESP_RETURN_ON_FALSE(a, err_code, log_tag, format, ...) do { \
+  >         if (unlikely(!(a))) { \
+  >             ESP_LOGE(log_tag, "%s(%d): " format, __FUNCTION__, __LINE__ ...); \
+  >             return err_code; \
+  >         } \
+  >     } while(0)
+  > 
+  > (Kconfig)
+  > config COMPILER_OPTIMIZATION_CHECKS_SILENT
+  >     bool "Disable messages in ESP_RETURN_ON_* and ESP_EXIT_ON_* macros"
+  >     default n
+- **Спосіб і дата:** curl raw.githubusercontent (перевірено М1 після зауваження агента шматка 11), 2026-08-26
+- **Нотатка:** Книга писала, що схема з `GPIO22` на S3 «не запрацює **й помилки не дасть**», і тут же — що виклик поверне `ESP_ERR_INVALID_ARG`. Два твердження в одному реченні суперечать одне одному.
+Джерело вирішує суперечку на користь другого: мовчазний варіант макроса вмикається лише опцією `COMPILER_OPTIMIZATION_CHECKS_SILENT`, а вона типово `n`. Тобто в консолі стоїть готовий діагноз із назвою функції та номером рядка.
+Виправлення важливіше за факт: книга посилала читача шукати мовчазну ваду там, де в логу лежить готова відповідь. Тепер сказано, за яких умов воно **справді** стає мовчазним — коли код повернення не перевіряють і лог гортають повз.
+- **Прохід:** pass-38-pul-shmatky-9-11
+
+---
+
+<!-- fc id:T-59-031 sha:8551b0c6 src:manual/59-proj-monitor.md:60 status:code-context -->
+### T-59-031 · kod · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ```
+> E (315) i2c.master: i2c_new_master_bus(1049): invalid SDA/SCL pin number
+> ```
+
+**Контекст**
+
+````
+## Піни за платами
+
+```
+E (315) i2c.master: i2c_new_master_bus(1049): invalid SDA/SCL pin number
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_driver_i2c/i2c_master.c, .../components/esp_common/include/esp_check.h, .../Kconfig
+- **Дослівно з джерела:**
+  > (i2c_master.c:1049)
+  > ESP_RETURN_ON_FALSE(GPIO_IS_VALID_GPIO(bus_config->sda_io_num) &&
+  >     GPIO_IS_VALID_GPIO(bus_config->scl_io_num), ESP_ERR_INVALID_ARG,
+  >     TAG, "invalid SDA/SCL pin number");
+  > 
+  > (esp_check.h — варіант, що діє типово)
+  > #define ESP_RETURN_ON_FALSE(a, err_code, log_tag, format, ...) do { \
+  >         if (unlikely(!(a))) { \
+  >             ESP_LOGE(log_tag, "%s(%d): " format, __FUNCTION__, __LINE__ ...); \
+  >             return err_code; \
+  >         } \
+  >     } while(0)
+  > 
+  > (Kconfig)
+  > config COMPILER_OPTIMIZATION_CHECKS_SILENT
+  >     bool "Disable messages in ESP_RETURN_ON_* and ESP_EXIT_ON_* macros"
+  >     default n
+- **Спосіб і дата:** curl raw.githubusercontent (перевірено М1 після зауваження агента шматка 11), 2026-08-26
+- **Нотатка:** Книга писала, що схема з `GPIO22` на S3 «не запрацює **й помилки не дасть**», і тут же — що виклик поверне `ESP_ERR_INVALID_ARG`. Два твердження в одному реченні суперечать одне одному.
+Джерело вирішує суперечку на користь другого: мовчазний варіант макроса вмикається лише опцією `COMPILER_OPTIMIZATION_CHECKS_SILENT`, а вона типово `n`. Тобто в консолі стоїть готовий діагноз із назвою функції та номером рядка.
+Виправлення важливіше за факт: книга посилала читача шукати мовчазну ваду там, де в логу лежить готова відповідь. Тепер сказано, за яких умов воно **справді** стає мовчазним — коли код повернення не перевіряють і лог гортають повз.
+- **Прохід:** pass-38-pul-shmatky-9-11
+
+---
+
+<!-- fc id:T-59-032 sha:61443966 src:manual/59-proj-monitor.md:64 status:no-external-signal -->
+### T-59-032 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Тобто ловиться це за секунду, **якщо дивитися в лог**.
+
+**Контекст**
+
+```
+## Піни за платами
+
+Тобто ловиться це за секунду, **якщо дивитися в лог**. Мовчазним воно
+стає лише тоді, коли код повернення не перевіряють, а лог гортають повз:
+без `ESP_ERROR_CHECK` програма спокійно йде далі до першої транзакції з
+дескриптором, якого немає.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-033 sha:56b9597c src:manual/59-proj-monitor.md:64 status:verbatim -->
+### T-59-033 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Мовчазним воно стає лише тоді, коли код повернення не перевіряють, а лог гортають повз: без `ESP_ERROR_CHECK` програма спокійно йде далі до першої транзакції з дескриптором, якого немає.
+
+**Контекст**
+
+```
+## Піни за платами
+
+Тобто ловиться це за секунду, **якщо дивитися в лог**. Мовчазним воно
+стає лише тоді, коли код повернення не перевіряють, а лог гортають повз:
+без `ESP_ERROR_CHECK` програма спокійно йде далі до першої транзакції з
+дескриптором, якого немає.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_driver_i2c/i2c_master.c, .../components/esp_common/include/esp_check.h, .../Kconfig
+- **Дослівно з джерела:**
+  > (i2c_master.c:1049)
+  > ESP_RETURN_ON_FALSE(GPIO_IS_VALID_GPIO(bus_config->sda_io_num) &&
+  >     GPIO_IS_VALID_GPIO(bus_config->scl_io_num), ESP_ERR_INVALID_ARG,
+  >     TAG, "invalid SDA/SCL pin number");
+  > 
+  > (esp_check.h — варіант, що діє типово)
+  > #define ESP_RETURN_ON_FALSE(a, err_code, log_tag, format, ...) do { \
+  >         if (unlikely(!(a))) { \
+  >             ESP_LOGE(log_tag, "%s(%d): " format, __FUNCTION__, __LINE__ ...); \
+  >             return err_code; \
+  >         } \
+  >     } while(0)
+  > 
+  > (Kconfig)
+  > config COMPILER_OPTIMIZATION_CHECKS_SILENT
+  >     bool "Disable messages in ESP_RETURN_ON_* and ESP_EXIT_ON_* macros"
+  >     default n
+- **Спосіб і дата:** curl raw.githubusercontent (перевірено М1 після зауваження агента шматка 11), 2026-08-26
+- **Нотатка:** Книга писала, що схема з `GPIO22` на S3 «не запрацює **й помилки не дасть**», і тут же — що виклик поверне `ESP_ERR_INVALID_ARG`. Два твердження в одному реченні суперечать одне одному.
+Джерело вирішує суперечку на користь другого: мовчазний варіант макроса вмикається лише опцією `COMPILER_OPTIMIZATION_CHECKS_SILENT`, а вона типово `n`. Тобто в консолі стоїть готовий діагноз із назвою функції та номером рядка.
+Виправлення важливіше за факт: книга посилала читача шукати мовчазну ваду там, де в логу лежить готова відповідь. Тепер сказано, за яких умов воно **справді** стає мовчазним — коли код повернення не перевіряють і лог гортають повз.
+- **Прохід:** pass-38-pul-shmatky-9-11
+
+---
+
+<!-- fc id:T-59-034 sha:d228a3f3 src:manual/59-proj-monitor.md:69 status:no-external-signal -->
+### T-59-034 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Це загальне правило для всіх проєктів цієї частини: **BOM із двома сімействами означає дві розпіновки**, і жодну з них не можна отримати з іншої заміною одного числа (додаток A).
+
+**Контекст**
+
+```
+## Піни за платами
+
+Це загальне правило для всіх проєктів цієї частини: **BOM із двома
+сімействами означає дві розпіновки**, і жодну з них не можна отримати
+з іншої заміною одного числа (додаток A).
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-035 sha:90a056ff src:manual/59-proj-monitor.md:76 status:no-external-signal -->
+### T-59-035 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Нижче — варіант для classic.
+
+**Контекст**
+
+```
+## Схема
+
+Нижче — варіант для classic. Для S3 підставте піни з таблиці вище.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-036 sha:6cd93a26 src:manual/59-proj-monitor.md:76 status:unchecked -->
+### T-59-036 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Для S3 підставте піни з таблиці вище.
+
+**Контекст**
+
+```
+## Схема
+
+Нижче — варіант для classic. Для S3 підставте піни з таблиці вище.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-037 sha:92b2c9ca src:manual/59-proj-monitor.md:78 status:code-context -->
+### T-59-037 · kod · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ```
+> ESP32              BME280
+> 3V3   ───────────  VCC
+> GND   ───────────  GND
+> SDA   ──┬────────  SDA        classic: GPIO21   S3: GPIO8
+>         └─[4.7к]─ 3V3
+> SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
+>         └─[4.7к]─ 3V3
+> ```
+
+**Контекст**
+
+````
+## Схема
+
+```
+ESP32              BME280
+3V3   ───────────  VCC
+GND   ───────────  GND
+SDA   ──┬────────  SDA        classic: GPIO21   S3: GPIO8
+        └─[4.7к]─ 3V3
+SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
+        └─[4.7к]─ 3V3
+```
+````
+
+**Доказ**
+
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
+- **Джерело:** GPIO матриця в esp_idf, I2C драйвер
+- **Що шукати в джерелі:** Таблиця розпиновки I2C у документації ESP32 та ESP32-S3, або i2c_master.c
+- **Нотатка:** Твердження про жорстку розпиновку пін SCL, але в esp_idf GPIO матриця дозволяє гнучкий вибір пінів. Потребує перевірки, чи це значення за замовчуванням.
+- **Прохід:** m2-98-sample
+
+---
+
+<!-- fc id:T-59-038 sha:1e856258 src:manual/59-proj-monitor.md:80 status:unchecked -->
+### T-59-038 · schema-zvyazok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> 3V3   ───────────  VCC
+
+**Контекст**
+
+````
+## Схема
+
+```
+ESP32              BME280
+3V3   ───────────  VCC
+GND   ───────────  GND
+SDA   ──┬────────  SDA        classic: GPIO21   S3: GPIO8
+        └─[4.7к]─ 3V3
+SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
+        └─[4.7к]─ 3V3
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-039 sha:643a36d7 src:manual/59-proj-monitor.md:81 status:unchecked -->
+### T-59-039 · schema-zvyazok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> GND   ───────────  GND
+
+**Контекст**
+
+````
+## Схема
+
+```
+ESP32              BME280
+3V3   ───────────  VCC
+GND   ───────────  GND
+SDA   ──┬────────  SDA        classic: GPIO21   S3: GPIO8
+        └─[4.7к]─ 3V3
+SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
+        └─[4.7к]─ 3V3
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-040 sha:0979f9d3 src:manual/59-proj-monitor.md:82 status:named-unreachable -->
+### T-59-040 · schema-zvyazok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> SDA   ──┬────────  SDA        classic: GPIO21   S3: GPIO8
+
+**Контекст**
+
+````
+## Схема
+
+```
+ESP32              BME280
+3V3   ───────────  VCC
+GND   ───────────  GND
+SDA   ──┬────────  SDA        classic: GPIO21   S3: GPIO8
+        └─[4.7к]─ 3V3
+SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
+        └─[4.7к]─ 3V3
+```
+````
+
+**Доказ**
+
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
+- **Джерело:** GPIO матриця в esp_idf, I2C драйвер
+- **Що шукати в джерелі:** Таблиця розпиновки I2C у документації ESP32 та ESP32-S3
+- **Нотатка:** Аналогічно SCL (T-59-042), твердження про розпиновку I2C. Потребує перевірки у esp_idf документації.
+- **Прохід:** m2-98-sample
+
+---
+
+<!-- fc id:T-59-041 sha:05a64f4a src:manual/59-proj-monitor.md:83 status:unchecked -->
+### T-59-041 · schema-zvyazok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> └─[4.7к]─ 3V3
+
+**Контекст**
+
+````
+## Схема
+
+```
+ESP32              BME280
+3V3   ───────────  VCC
+GND   ───────────  GND
+SDA   ──┬────────  SDA        classic: GPIO21   S3: GPIO8
+        └─[4.7к]─ 3V3
+SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
+        └─[4.7к]─ 3V3
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-042 sha:ea4f9ec1 src:manual/59-proj-monitor.md:84 status:named-unreachable -->
+### T-59-042 · schema-zvyazok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
+
+**Контекст**
+
+````
+## Схема
+
+```
+ESP32              BME280
+3V3   ───────────  VCC
+GND   ───────────  GND
+SDA   ──┬────────  SDA        classic: GPIO21   S3: GPIO8
+        └─[4.7к]─ 3V3
+SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
+        └─[4.7к]─ 3V3
+```
+````
+
+**Доказ**
+
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
+- **Джерело:** GPIO матриця в esp_idf, I2C драйвер
+- **Що шукати в джерелі:** Таблиця розпиновки I2C у документації ESP32 та ESP32-S3, або i2c_master.c
+- **Нотатка:** Твердження про жорстку розпиновку пін SCL, але в esp_idf GPIO матриця дозволяє гнучкий вибір пінів. Потребує перевірки, чи це значення за замовчуванням.
+- **Прохід:** m2-98-sample
+
+---
+
+<!-- fc id:T-59-043 sha:05a64f4a src:manual/59-proj-monitor.md:85 status:unchecked -->
+### T-59-043 · schema-zvyazok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> └─[4.7к]─ 3V3
+
+**Контекст**
+
+````
+## Схема
+
+```
+ESP32              BME280
+3V3   ───────────  VCC
+GND   ───────────  GND
+SDA   ──┬────────  SDA        classic: GPIO21   S3: GPIO8
+        └─[4.7к]─ 3V3
+SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
+        └─[4.7к]─ 3V3
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-044 sha:d3c9dd2a src:manual/59-proj-monitor.md:88 status:no-external-signal -->
+### T-59-044 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Підтягування обов'язкове (розділ 35).
+
+**Контекст**
+
+```
+## Схема
+
+Підтягування обов'язкове (розділ 35). Багато модулів BME280 мають власні
+резистори — тоді зовнішні не ставити.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-045 sha:4899bc0a src:manual/59-proj-monitor.md:88 status:no-external-signal -->
+### T-59-045 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Багато модулів BME280 мають власні резистори — тоді зовнішні не ставити.
+
+**Контекст**
+
+```
+## Схема
+
+Підтягування обов'язкове (розділ 35). Багато модулів BME280 мають власні
+резистори — тоді зовнішні не ставити.
+```
+
+**Доказ**
+
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
+- **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
+- **Дослівно з джерела:**
+  > Затвор MOSFET:
+  > GPIO ──[100–220 Ом]── Gate MOSFET
+  > 
+  > Цей резистор обмежує пік-струм при перезаписуванні затвору.
+  > Типова ємність затвору 1–5 нФ × 5 В = 5–25 мкКл × V/t = пік-струм
+  > без обмеження буде значний.
+  > 
+  > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
+- **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
+- **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
+- **Прохід:** m2-65-electronics-05
+
+---
+
+<!-- fc id:T-59-046 sha:db95e0e2 src:manual/59-proj-monitor.md:93 status:unchecked -->
+### T-59-046 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Конфігурація через `menuconfig` або `sdkconfig.defaults`.
+
+**Контекст**
+
+```
+## Код
+
+Проєкт ESP-IDF. Конфігурація через `menuconfig` або
+`sdkconfig.defaults`.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-047 sha:6ac5d50a src:manual/59-proj-monitor.md:98 status:no-external-signal -->
+### T-59-047 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Піни винесені в одне місце нагорі — так їх видно й так вони не розповзаються по коду:
+
+**Контекст**
+
+```
+### Читання датчика
+
+Піни винесені в одне місце нагорі — так їх видно й так вони не
+розповзаються по коду:
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-048 sha:123dd847 src:manual/59-proj-monitor.md:101 status:code-context -->
+### T-59-048 · kod · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ```c
+> // Піни за платою. Одне місце на весь проєкт.
+> #if CONFIG_IDF_TARGET_ESP32S3
+> #  define PIN_SDA  GPIO_NUM_8
+> #  define PIN_SCL  GPIO_NUM_9
+> #else                       // ESP32 classic
+> #  define PIN_SDA  GPIO_NUM_21
+> #  define PIN_SCL  GPIO_NUM_22
+> #endif
+> ```
+
+**Контекст**
+
+````
+### Читання датчика
+
+```c
+// Піни за платою. Одне місце на весь проєкт.
+#if CONFIG_IDF_TARGET_ESP32S3
+#  define PIN_SDA  GPIO_NUM_8
+#  define PIN_SCL  GPIO_NUM_9
+#else                       // ESP32 classic
+#  define PIN_SDA  GPIO_NUM_21
+#  define PIN_SCL  GPIO_NUM_22
+#endif
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-049 sha:cbdb1b53 src:manual/59-proj-monitor.md:112 status:verbatim -->
+### T-59-049 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> `CONFIG_IDF_TARGET_*` виставляє сама збірка після `idf.py set-target`, тож перемикання плати не потребує правок у коді (розділ 11).
+
+**Контекст**
+
+```
+#endif
+
+`CONFIG_IDF_TARGET_*` виставляє сама збірка після `idf.py set-target`,
+тож перемикання плати не потребує правок у коді (розділ 11).
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-59-050 sha:ef9c9e98 src:manual/59-proj-monitor.md:115 status:code-context -->
+### T-59-050 · kod · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ```c
+> #include "driver/i2c_master.h"
+> #include "esp_log.h"
+> 
+> #define BME_ADDR   0x76
+> #define REG_ID     0xD0
+> #define REG_RESET  0xE0
+> #define REG_CTRL_H 0xF2
+> #define REG_CTRL_M 0xF4
+> #define REG_CONFIG 0xF5
+> #define REG_DATA   0xF7
+> #define REG_CALIB1 0x88
+> #define REG_CALIB2 0xE1
+> 
+> static const char *TAG = "BME";
+> static i2c_master_dev_handle_t bme;
+> 
+> // калібрувальні коефіцієнти живуть у самому датчику
+> static uint16_t T1; static int16_t T2, T3;
+> static uint16_t P1; static int16_t P2, P3, P4, P5, P6, P7, P8, P9;
+> static uint8_t  H1, H3; static int16_t H2, H4, H5; static int8_t H6;
+> static int32_t  t_fine;
+> 
+> static esp_err_t bme_read(uint8_t reg, uint8_t *buf, size_t len) {
+>     return i2c_master_transmit_receive(bme, &reg, 1, buf, len,
+>                                        pdMS_TO_TICKS(100));
+> }
+> 
+> static esp_err_t bme_write(uint8_t reg, uint8_t val) {
+>     uint8_t b[2] = { reg, val };
+>     return i2c_master_transmit(bme, b, 2, pdMS_TO_TICKS(100));
+> }
+> 
+> esp_err_t bme_init(i2c_master_bus_handle_t bus) {
+>     i2c_device_config_t cfg = {
+>         .dev_addr_length = I2C_ADDR_BIT_LEN_7,
+>         .device_address = BME_ADDR,
+>         .scl_speed_hz = 100000,
+>     };
+>     ESP_RETURN_ON_ERROR(i2c_master_bus_add_device(bus, &cfg, &bme),
+>                         TAG, "не додано пристрій на шину");
+> 
+>     // регістр ідентифікації: доводить, що обмін працює (розділ 44)
+>     uint8_t id = 0;
+>     ESP_RETURN_ON_ERROR(bme_read(REG_ID, &id, 1), TAG, "немає відповіді");
+>     if (id != 0x60) {
+>         ESP_LOGE(TAG, "чужий пристрій: id 0x%02x, очікували 0x60", id);
+>         return ESP_ERR_NOT_FOUND;
+>     }
+> 
+>     uint8_t c[26];
+>     ESP_RETURN_ON_ERROR(bme_read(REG_CALIB1, c, 26), TAG, "калібрування");
+>     T1 = c[0] | (c[1] << 8);   T2 = c[2] | (c[3] << 8);
+>     T3 = c[4] | (c[5] << 8);   P1 = c[6] | (c[7] << 8);
+>     P2 = c[8] | (c[9] << 8);   P3 = c[10] | (c[11] << 8);
+>     P4 = c[12] | (c[13] << 8); P5 = c[14] | (c[15] << 8);
+>     P6 = c[16] | (c[17] << 8); P7 = c[18] | (c[19] << 8);
+>     P8 = c[20] | (c[21] << 8); P9 = c[22] | (c[23] << 8);
+>     H1 = c[25];
+> 
+>     uint8_t h[7];
+>     ESP_RETURN_ON_ERROR(bme_read(REG_CALIB2, h, 7), TAG, "калібрування H");
+>     H2 = h[0] | (h[1] << 8);
+>     H3 = h[2];
+>     // старший байт H4 і H5 знаковий — розширення знака обов'язкове
+>     H4 = ((int16_t)(int8_t)h[3] * 16) | (h[4] & 0x0F);
+>     H5 = ((int16_t)(int8_t)h[5] * 16) | (h[4] >> 4);
+>     H6 = (int8_t)h[6];
+> 
+>     bme_write(REG_CTRL_H, 0x01);  // osrs_h = ×1
+>     bme_write(REG_CONFIG, 0xA8);  // t_sb 1000 мс, фільтр ×4
+>     bme_write(REG_CTRL_M, 0x27);  // osrs_t ×1, osrs_p ×1, режим normal
+>     ESP_LOGI(TAG, "BME280 знайдено і налаштовано");
+>     return ESP_OK;
+> }
+> ```
+
+**Контекст**
+
+````
+#endif
+
+```c
+#include "driver/i2c_master.h"
+#include "esp_log.h"
+
+#define BME_ADDR   0x76
+#define REG_ID     0xD0
+#define REG_RESET  0xE0
+#define REG_CTRL_H 0xF2
+#define REG_CTRL_M 0xF4
+#define REG_CONFIG 0xF5
+#define REG_DATA   0xF7
+#define REG_CALIB1 0x88
+#define REG_CALIB2 0xE1
+
+static const char *TAG = "BME";
+static i2c_master_dev_handle_t bme;
+
+// калібрувальні коефіцієнти живуть у самому датчику
+static uint16_t T1; static int16_t T2, T3;
+static uint16_t P1; static int16_t P2, P3, P4, P5, P6, P7, P8, P9;
+static uint8_t  H1, H3; static int16_t H2, H4, H5; static int8_t H6;
+static int32_t  t_fine;
+
+static esp_err_t bme_read(uint8_t reg, uint8_t *buf, size_t len) {
+    return i2c_master_transmit_receive(bme, &reg, 1, buf, len,
+                                       pdMS_TO_TICKS(100));
+}
+
+static esp_err_t bme_write(uint8_t reg, uint8_t val) {
+    uint8_t b[2] = { reg, val };
+    return i2c_master_transmit(bme, b, 2, pdMS_TO_TICKS(100));
+}
+
+esp_err_t bme_init(i2c_master_bus_handle_t bus) {
+    i2c_device_config_t cfg = {
+        .dev_addr_length = I2C_ADDR_BIT_LEN_7,
+        .device_address = BME_ADDR,
+        .scl_speed_hz = 100000,
+    };
+    ESP_RETURN_ON_ERROR(i2c_master_bus_add_device(bus, &cfg, &bme),
+                        TAG, "не додано пристрій на шину");
+
+    // регістр ідентифікації: доводить, що обмін працює (розділ 44)
+    uint8_t id = 0;
+    ESP_RETURN_ON_ERROR(bme_read(REG_ID, &id, 1), TAG, "немає відповіді");
+    if (id != 0x60) {
+        ESP_LOGE(TAG, "чужий пристрій: id 0x%02x, очікували 0x60", id);
+        return ESP_ERR_NOT_FOUND;
+    }
+
+    uint8_t c[26];
+    ESP_RETURN_ON_ERROR(bme_read(REG_CALIB1, c, 26), TAG, "калібрування");
+    T1 = c[0] | (c[1] << 8);   T2 = c[2] | (c[3] << 8);
+    T3 = c[4] | (c[5] << 8);   P1 = c[6] | (c[7] << 8);
+    P2 = c[8] | (c[9] << 8);   P3 = c[10] | (c[11] << 8);
+    P4 = c[12] | (c[13] << 8); P5 = c[14] | (c[15] << 8);
+    P6 = c[16] | (c[17] << 8); P7 = c[18] | (c[19] << 8);
+    P8 = c[20] | (c[21] << 8); P9 = c[22] | (c[23] << 8);
+    H1 = c[25];
+
+    uint8_t h[7];
+    ESP_RETURN_ON_ERROR(bme_read(REG_CALIB2, h, 7), TAG, "калібрування H");
+    H2 = h[0] | (h[1] << 8);
+    H3 = h[2];
+    // старший байт H4 і H5 знаковий — розширення знака обов'язкове
+    H4 = ((int16_t)(int8_t)h[3] * 16) | (h[4] & 0x0F);
+    H5 = ((int16_t)(int8_t)h[5] * 16) | (h[4] >> 4);
+    H6 = (int8_t)h[6];
+
+    bme_write(REG_CTRL_H, 0x01);  // osrs_h = ×1
+    bme_write(REG_CONFIG, 0xA8);  // t_sb 1000 мс, фільтр ×4
+    bme_write(REG_CTRL_M, 0x27);  // osrs_t ×1, osrs_p ×1, режим normal
+    ESP_LOGI(TAG, "BME280 знайдено і налаштовано");
+    return ESP_OK;
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-051 sha:b887153b src:manual/59-proj-monitor.md:116 status:self-consistent -->
+### T-59-051 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> #include "driver/i2c_master.h"
+
+**Контекст**
+
+````
+#endif
+
+```c
+#include "driver/i2c_master.h"
+````
+
+**Доказ**
+
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
+- **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 116
+- **Дослівно з джерела:**
+  > #include "driver/i2c_master.h"
+- **Спосіб і дата:** дослівна цитата з коду
+- **Нотатка:** Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.
+- **Прохід:** m2-69-project-59
+
+---
+
+<!-- fc id:T-59-052 sha:14f48f1e src:manual/59-proj-monitor.md:117 status:unchecked -->
+### T-59-052 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> #include "esp_log.h"
+
+**Контекст**
+
+```
+#include "esp_log.h"
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-053 sha:e627b88d src:manual/59-proj-monitor.md:119 status:verbatim -->
+### T-59-053 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> #define BME_ADDR   0x76
+
+**Контекст**
+
+```
+#define BME_ADDR   0x76
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID          UINT8_C(0x60)
+  > #define BME280_I2C_ADDR_PRIM    UINT8_C(0x76)
+  > #define BME280_I2C_ADDR_SEC     UINT8_C(0x77)
+  > #define BME280_REG_CHIP_ID      UINT8_C(0xD0)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Обидва кінці дроту сходяться. Код проєкту 59 читає регістр `0xD0` і порівнює відповідь із `0x60` — рівно те, що оголошує офіційний драйвер Bosch. Адреси `0x76`/`0x77` теж дослівні.
+Це саме той доказ, який раніше приписували **всій** схемі проєкту 59, включно з рядком про `GPIO22`. Datasheet датчика ніколи не міг би підтвердити наявність піна в S3 — тепер він і не претендує: покриває рядки про датчик, і лише їх.
+- **Прохід:** pass-18-schemy
+
+---
+
+<!-- fc id:T-59-054 sha:8f633bc7 src:manual/59-proj-monitor.md:120 status:verbatim -->
+### T-59-054 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> #define REG_ID     0xD0
+
+**Контекст**
+
+```
+#define REG_ID     0xD0
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID          UINT8_C(0x60)
+  > #define BME280_I2C_ADDR_PRIM    UINT8_C(0x76)
+  > #define BME280_I2C_ADDR_SEC     UINT8_C(0x77)
+  > #define BME280_REG_CHIP_ID      UINT8_C(0xD0)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Обидва кінці дроту сходяться. Код проєкту 59 читає регістр `0xD0` і порівнює відповідь із `0x60` — рівно те, що оголошує офіційний драйвер Bosch. Адреси `0x76`/`0x77` теж дослівні.
+Це саме той доказ, який раніше приписували **всій** схемі проєкту 59, включно з рядком про `GPIO22`. Datasheet датчика ніколи не міг би підтвердити наявність піна в S3 — тепер він і не претендує: покриває рядки про датчик, і лише їх.
+- **Прохід:** pass-18-schemy
+
+---
+
+<!-- fc id:T-59-055 sha:ccdaaa21 src:manual/59-proj-monitor.md:121 status:unchecked -->
+### T-59-055 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> #define REG_RESET  0xE0
+
+**Контекст**
+
+```
+#define REG_RESET  0xE0
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-056 sha:0263b9cf src:manual/59-proj-monitor.md:122 status:derived -->
+### T-59-056 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> #define REG_CTRL_H 0xF2
+
+**Контекст**
+
+```
+#define REG_CTRL_H 0xF2
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-057 sha:41e596ad src:manual/59-proj-monitor.md:123 status:derived -->
+### T-59-057 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> #define REG_CTRL_M 0xF4
+
+**Контекст**
+
+```
+#define REG_CTRL_M 0xF4
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-058 sha:35c7c342 src:manual/59-proj-monitor.md:124 status:derived -->
+### T-59-058 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> #define REG_CONFIG 0xF5
+
+**Контекст**
+
+```
+#define REG_CONFIG 0xF5
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-059 sha:2e56e3a4 src:manual/59-proj-monitor.md:125 status:derived -->
+### T-59-059 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> #define REG_DATA   0xF7
+
+**Контекст**
+
+```
+#define REG_DATA   0xF7
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-060 sha:4ad3a8c3 src:manual/59-proj-monitor.md:126 status:derived -->
+### T-59-060 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> #define REG_CALIB1 0x88
+
+**Контекст**
+
+```
+#define REG_CALIB1 0x88
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-061 sha:584d2b44 src:manual/59-proj-monitor.md:127 status:derived -->
+### T-59-061 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> #define REG_CALIB2 0xE1
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-062 sha:64196cae src:manual/59-proj-monitor.md:140 status:verbatim -->
+### T-59-062 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> pdMS_TO_TICKS(100));
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+static esp_err_t bme_read(uint8_t reg, uint8_t *buf, size_t len) {
+    return i2c_master_transmit_receive(bme, &reg, 1, buf, len,
+                                       pdMS_TO_TICKS(100));
+}
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-063 sha:b49aeb96 src:manual/59-proj-monitor.md:150 status:verbatim -->
+### T-59-063 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> .dev_addr_length = I2C_ADDR_BIT_LEN_7,
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+esp_err_t bme_init(i2c_master_bus_handle_t bus) {
+    i2c_device_config_t cfg = {
+        .dev_addr_length = I2C_ADDR_BIT_LEN_7,
+        .device_address = BME_ADDR,
+        .scl_speed_hz = 100000,
+    };
+    ESP_RETURN_ON_ERROR(i2c_master_bus_add_device(bus, &cfg, &bme),
+                        TAG, "не додано пристрій на шину");
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
+- **Дослівно з джерела:**
+  > Звірено вісім структур, усі поля, які книга ініціалізує:
+  > 
+  > i2c_master_bus_config_t        6 полів книги ⊂ 11 у заголовку
+  > i2c_device_config_t            3 ⊂ 17
+  > spi_bus_config_t               6 ⊂ 18
+  > spi_device_interface_config_t  4 ⊂ 16
+  > uart_config_t                  6 ⊂ 11
+  > ledc_timer_config_t            4 ⊂ 16
+  > ledc_channel_config_t          5 ⊂ 10
+  > gpio_config_t                  5 ⊂ 6
+  > 
+  > Жодного імені поза заголовком.
+- **Спосіб і дата:** curl raw.githubusercontent + зіставлення `tools/struct_fields.py`, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у 39 іменах. Це не дрібниця: імена полів конфігураційних структур — саме те, що тихо змінюється між версіями ESP-IDF, і саме те, що читач набирає дослівно з книжкової сторінки.
+Головне тут не результат, а те, що він тепер постійний. `tools/struct_fields.py` стоїть у `make check` і бере перелік полів із заголовків, а не з книги. Якби перелік брався з книги, перевірка була б тавтологією: приклад завжди узгоджений сам із собою.
+Випробувано підкинутою вадою: заміна `.sda_io_num` на `.sda_gpio_num` дає
+
+    manual/35-i2c.md:110: у `i2c_master_bus_config_t` немає поля
+    `sda_gpio_num`
+
+На чистому дереві — тиша.
+- **Прохід:** pass-21-polya-struktur
+
+---
+
+<!-- fc id:T-59-064 sha:7b9b8843 src:manual/59-proj-monitor.md:151 status:derived -->
+### T-59-064 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> .device_address = BME_ADDR,
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+esp_err_t bme_init(i2c_master_bus_handle_t bus) {
+    i2c_device_config_t cfg = {
+        .dev_addr_length = I2C_ADDR_BIT_LEN_7,
+        .device_address = BME_ADDR,
+        .scl_speed_hz = 100000,
+    };
+    ESP_RETURN_ON_ERROR(i2c_master_bus_add_device(bus, &cfg, &bme),
+                        TAG, "не додано пристрій на шину");
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-065 sha:bab2ac7a src:manual/59-proj-monitor.md:152 status:no-external-signal -->
+### T-59-065 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> .scl_speed_hz = 100000,
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+esp_err_t bme_init(i2c_master_bus_handle_t bus) {
+    i2c_device_config_t cfg = {
+        .dev_addr_length = I2C_ADDR_BIT_LEN_7,
+        .device_address = BME_ADDR,
+        .scl_speed_hz = 100000,
+    };
+    ESP_RETURN_ON_ERROR(i2c_master_bus_add_device(bus, &cfg, &bme),
+                        TAG, "не додано пристрій на шину");
+```
+
+**Доказ**
+
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
+- **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
+- **Дослівно з джерела:**
+  > Затвор MOSFET:
+  > GPIO ──[100–220 Ом]── Gate MOSFET
+  > 
+  > Цей резистор обмежує пік-струм при перезаписуванні затвору.
+  > Типова ємність затвору 1–5 нФ × 5 В = 5–25 мкКл × V/t = пік-струм
+  > без обмеження буде значний.
+  > 
+  > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
+- **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
+- **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
+- **Прохід:** m2-65-electronics-05
+
+---
+
+<!-- fc id:T-59-066 sha:e8502537 src:manual/59-proj-monitor.md:154 status:verbatim -->
+### T-59-066 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP_RETURN_ON_ERROR(i2c_master_bus_add_device(bus, &cfg, &bme),
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+esp_err_t bme_init(i2c_master_bus_handle_t bus) {
+    i2c_device_config_t cfg = {
+        .dev_addr_length = I2C_ADDR_BIT_LEN_7,
+        .device_address = BME_ADDR,
+        .scl_speed_hz = 100000,
+    };
+    ESP_RETURN_ON_ERROR(i2c_master_bus_add_device(bus, &cfg, &bme),
+                        TAG, "не додано пристрій на шину");
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-067 sha:41f585b1 src:manual/59-proj-monitor.md:159 status:derived -->
+### T-59-067 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP_RETURN_ON_ERROR(bme_read(REG_ID, &id, 1), TAG, "немає відповіді");
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+    // регістр ідентифікації: доводить, що обмін працює (розділ 44)
+    uint8_t id = 0;
+    ESP_RETURN_ON_ERROR(bme_read(REG_ID, &id, 1), TAG, "немає відповіді");
+    if (id != 0x60) {
+        ESP_LOGE(TAG, "чужий пристрій: id 0x%02x, очікували 0x60", id);
+        return ESP_ERR_NOT_FOUND;
+    }
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-068 sha:73bf40aa src:manual/59-proj-monitor.md:161 status:verbatim -->
+### T-59-068 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP_LOGE(TAG, "чужий пристрій: id 0x%02x, очікували 0x60", id);
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+    // регістр ідентифікації: доводить, що обмін працює (розділ 44)
+    uint8_t id = 0;
+    ESP_RETURN_ON_ERROR(bme_read(REG_ID, &id, 1), TAG, "немає відповіді");
+    if (id != 0x60) {
+        ESP_LOGE(TAG, "чужий пристрій: id 0x%02x, очікували 0x60", id);
+        return ESP_ERR_NOT_FOUND;
+    }
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID          UINT8_C(0x60)
+  > #define BME280_I2C_ADDR_PRIM    UINT8_C(0x76)
+  > #define BME280_I2C_ADDR_SEC     UINT8_C(0x77)
+  > #define BME280_REG_CHIP_ID      UINT8_C(0xD0)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Обидва кінці дроту сходяться. Код проєкту 59 читає регістр `0xD0` і порівнює відповідь із `0x60` — рівно те, що оголошує офіційний драйвер Bosch. Адреси `0x76`/`0x77` теж дослівні.
+Це саме той доказ, який раніше приписували **всій** схемі проєкту 59, включно з рядком про `GPIO22`. Datasheet датчика ніколи не міг би підтвердити наявність піна в S3 — тепер він і не претендує: покриває рядки про датчик, і лише їх.
+- **Прохід:** pass-18-schemy
+
+---
+
+<!-- fc id:T-59-069 sha:1b551a44 src:manual/59-proj-monitor.md:166 status:derived -->
+### T-59-069 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP_RETURN_ON_ERROR(bme_read(REG_CALIB1, c, 26), TAG, "калібрування");
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+    uint8_t c[26];
+    ESP_RETURN_ON_ERROR(bme_read(REG_CALIB1, c, 26), TAG, "калібрування");
+    T1 = c[0] | (c[1] << 8);   T2 = c[2] | (c[3] << 8);
+    T3 = c[4] | (c[5] << 8);   P1 = c[6] | (c[7] << 8);
+    P2 = c[8] | (c[9] << 8);   P3 = c[10] | (c[11] << 8);
+    P4 = c[12] | (c[13] << 8); P5 = c[14] | (c[15] << 8);
+    P6 = c[16] | (c[17] << 8); P7 = c[18] | (c[19] << 8);
+    P8 = c[20] | (c[21] << 8); P9 = c[22] | (c[23] << 8);
+    H1 = c[25];
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-070 sha:ae86aa1b src:manual/59-proj-monitor.md:176 status:derived -->
+### T-59-070 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP_RETURN_ON_ERROR(bme_read(REG_CALIB2, h, 7), TAG, "калібрування H");
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+    uint8_t h[7];
+    ESP_RETURN_ON_ERROR(bme_read(REG_CALIB2, h, 7), TAG, "калібрування H");
+    H2 = h[0] | (h[1] << 8);
+    H3 = h[2];
+    // старший байт H4 і H5 знаковий — розширення знака обов'язкове
+    H4 = ((int16_t)(int8_t)h[3] * 16) | (h[4] & 0x0F);
+    H5 = ((int16_t)(int8_t)h[5] * 16) | (h[4] >> 4);
+    H6 = (int8_t)h[6];
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-071 sha:636dc01a src:manual/59-proj-monitor.md:187 status:unchecked -->
+### T-59-071 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP_LOGI(TAG, "BME280 знайдено і налаштовано");
+
+**Контекст**
+
+````
+#define REG_CALIB2 0xE1
+
+    bme_write(REG_CTRL_H, 0x01);  // osrs_h = ×1
+    bme_write(REG_CONFIG, 0xA8);  // t_sb 1000 мс, фільтр ×4
+    bme_write(REG_CTRL_M, 0x27);  // osrs_t ×1, osrs_p ×1, режим normal
+    ESP_LOGI(TAG, "BME280 знайдено і налаштовано");
+    return ESP_OK;
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-072 sha:7100ace9 src:manual/59-proj-monitor.md:193 status:no-external-signal -->
+### T-59-072 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Регістр ідентифікації читається **першим** і перевіряється.
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+::: uvaha
+Регістр ідентифікації читається **першим** і перевіряється. Це доводить,
+що обмін по шині працює, ще до того, як з'явиться перше значення
+(розділ 44).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-073 sha:0ea0eacb src:manual/59-proj-monitor.md:193 status:no-external-signal -->
+### T-59-073 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Це доводить, що обмін по шині працює, ще до того, як з'явиться перше значення (розділ 44).
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+::: uvaha
+Регістр ідентифікації читається **першим** і перевіряється. Це доводить,
+що обмін по шині працює, ще до того, як з'явиться перше значення
+(розділ 44).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-074 sha:d91d9459 src:manual/59-proj-monitor.md:197 status:no-external-signal -->
+### T-59-074 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Без цієї перевірки несправна шина дає нулі, які виглядають як правдоподібні дані.
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+Без цієї перевірки несправна шина дає нулі, які виглядають як
+правдоподібні дані.
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-075 sha:29da9177 src:manual/59-proj-monitor.md:201 status:named-unreachable -->
+### T-59-075 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Порядок трьох записів не довільний: за datasheet зміна `ctrl_hum` набуває чинності **лише після запису в `ctrl_meas`**, тому `ctrl_meas` завжди останній.
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+Порядок трьох записів не довільний: за datasheet зміна `ctrl_hum`
+набуває чинності **лише після запису в `ctrl_meas`**, тому `ctrl_meas`
+завжди останній. Записаний першим, він лишив би вологість невиміряною —
+і датчик віддавав би нулі, схожі на дані.
+```
+
+**Доказ**
+
+- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
+- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
+- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
+- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
+- **Прохід:** pass-03-nedostupni
+
+---
+
+<!-- fc id:T-59-076 sha:49eb3151 src:manual/59-proj-monitor.md:203 status:no-external-signal -->
+### T-59-076 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Записаний першим, він лишив би вологість невиміряною — і датчик віддавав би нулі, схожі на дані.
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+Порядок трьох записів не довільний: за datasheet зміна `ctrl_hum`
+набуває чинності **лише після запису в `ctrl_meas`**, тому `ctrl_meas`
+завжди останній. Записаний першим, він лишив би вологість невиміряною —
+і датчик віддавав би нулі, схожі на дані.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-077 sha:5b1b364a src:manual/59-proj-monitor.md:207 status:derived -->
+### T-59-077 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Два зсуви в розборі калібрування виглядають однаково і такими не є.
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+::: uvaha
+Два зсуви в розборі калібрування виглядають однаково і такими не є.
+`H4` і `H5` — **знакові** 16-бітові величини, і старший байт кожної
+береться зі знаком: `(int16_t)(int8_t)h[3] * 16`, а не `h[3] << 4`.
+Різниця виникає лише тоді, коли в старшому байті виставлено сьомий біт,
+тобто на частині екземплярів датчика — і виявляється як стабільно
+неправильна вологість при правильних температурі й тиску.
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c
+- **Дослівно з джерела:**
+  > calib_data->dig_h2 = (int16_t)BME280_CONCAT_BYTES(reg_data[1], reg_data[0]);
+  > calib_data->dig_h3 = reg_data[2];
+  > dig_h4_msb = (int16_t)(int8_t)reg_data[3] * 16;
+  > dig_h4_lsb = (int16_t)(reg_data[4] & 0x0F);
+  > calib_data->dig_h4 = dig_h4_msb | dig_h4_lsb;
+  > dig_h5_msb = (int16_t)(int8_t)reg_data[5] * 16;
+  > dig_h5_lsb = (int16_t)(reg_data[4] >> 4);
+  > calib_data->dig_h5 = dig_h5_msb | dig_h5_lsb;
+  > calib_data->dig_h6 = (int8_t)reg_data[6];
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу, і вона в коді. Книга розбирала калібрування як `H4 = (h[3] << 4) | (h[4] & 0x0F)`, тобто **без розширення знака** старшого байта. Bosch явно приводить його до `int8_t` перед множенням: `dig_H4` і `dig_H5` — знакові величини. Розбіжність проявляється лише на екземплярах, де в старшому байті виставлено сьомий біт, і виглядає як стабільно неправильна вологість при правильних температурі й тиску — тобто як несправний датчик. Виправлено в проєкті 59, додано блок уваги з поясненням, чому два однакові на вигляд зсуви різні.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-078 sha:4f81f74f src:manual/59-proj-monitor.md:208 status:derived -->
+### T-59-078 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> `H4` і `H5` — **знакові** 16-бітові величини, і старший байт кожної береться зі знаком: `(int16_t)(int8_t)h[3] * 16`, а не `h[3] << 4`.
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+::: uvaha
+Два зсуви в розборі калібрування виглядають однаково і такими не є.
+`H4` і `H5` — **знакові** 16-бітові величини, і старший байт кожної
+береться зі знаком: `(int16_t)(int8_t)h[3] * 16`, а не `h[3] << 4`.
+Різниця виникає лише тоді, коли в старшому байті виставлено сьомий біт,
+тобто на частині екземплярів датчика — і виявляється як стабільно
+неправильна вологість при правильних температурі й тиску.
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c
+- **Дослівно з джерела:**
+  > calib_data->dig_h2 = (int16_t)BME280_CONCAT_BYTES(reg_data[1], reg_data[0]);
+  > calib_data->dig_h3 = reg_data[2];
+  > dig_h4_msb = (int16_t)(int8_t)reg_data[3] * 16;
+  > dig_h4_lsb = (int16_t)(reg_data[4] & 0x0F);
+  > calib_data->dig_h4 = dig_h4_msb | dig_h4_lsb;
+  > dig_h5_msb = (int16_t)(int8_t)reg_data[5] * 16;
+  > dig_h5_lsb = (int16_t)(reg_data[4] >> 4);
+  > calib_data->dig_h5 = dig_h5_msb | dig_h5_lsb;
+  > calib_data->dig_h6 = (int8_t)reg_data[6];
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу, і вона в коді. Книга розбирала калібрування як `H4 = (h[3] << 4) | (h[4] & 0x0F)`, тобто **без розширення знака** старшого байта. Bosch явно приводить його до `int8_t` перед множенням: `dig_H4` і `dig_H5` — знакові величини. Розбіжність проявляється лише на екземплярах, де в старшому байті виставлено сьомий біт, і виглядає як стабільно неправильна вологість при правильних температурі й тиску — тобто як несправний датчик. Виправлено в проєкті 59, додано блок уваги з поясненням, чому два однакові на вигляд зсуви різні.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-079 sha:537a2c04 src:manual/59-proj-monitor.md:210 status:verbatim -->
+### T-59-079 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Різниця виникає лише тоді, коли в старшому байті виставлено сьомий біт, тобто на частині екземплярів датчика — і виявляється як стабільно неправильна вологість при правильних температурі й тиску.
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+::: uvaha
+Два зсуви в розборі калібрування виглядають однаково і такими не є.
+`H4` і `H5` — **знакові** 16-бітові величини, і старший байт кожної
+береться зі знаком: `(int16_t)(int8_t)h[3] * 16`, а не `h[3] << 4`.
+Різниця виникає лише тоді, коли в старшому байті виставлено сьомий біт,
+тобто на частині екземплярів датчика — і виявляється як стабільно
+неправильна вологість при правильних температурі й тиску.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c
+- **Дослівно з джерела:**
+  > dig_h4_msb = (int16_t)(int8_t)reg_data[3] * 16;
+  > dig_h4_lsb = (int16_t)(reg_data[4] & 0x0F);
+  > calib_data->dig_h4 = dig_h4_msb | dig_h4_lsb;
+  > dig_h5_msb = (int16_t)(int8_t)reg_data[5] * 16;
+  > dig_h5_lsb = (int16_t)(reg_data[4] >> 4);
+  > calib_data->dig_h5 = dig_h5_msb | dig_h5_lsb;
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+- **Нотатка:** Коефіцієнти H4 і H5 вимагають знакового розширення через (int8_t), що включає 7-й біт (біт знаку). На екземплярах з цим бітом, встановленим у reg_data[3] або reg_data[5], коефіцієнти мають правильне від'ємне значення, інакше вологість неправильна при правильних температурі й тиску.
+- **Прохід:** sweep-59-proj-monitor
+
+---
+
+<!-- fc id:T-59-080 sha:2e06244b src:manual/59-proj-monitor.md:214 status:no-external-signal -->
+### T-59-080 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Це те місце, де варто звірятися з референсною реалізацією виробника, а не з чужим прикладом: у прикладах в інтернеті ця помилка трапляється частіше, ніж правильний варіант.
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+Це те місце, де варто звірятися з референсною реалізацією виробника, а
+не з чужим прикладом: у прикладах в інтернеті ця помилка трапляється
+частіше, ніж правильний варіант.
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-081 sha:ae5f2fa1 src:manual/59-proj-monitor.md:219 status:no-external-signal -->
+### T-59-081 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Перетворення сирих відліків — за формулами з datasheet.
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+Перетворення сирих відліків — за формулами з datasheet. Без
+калібрувальних коефіцієнтів значення виглядають правдоподібно і є
+неправильними:
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-082 sha:88a09b36 src:manual/59-proj-monitor.md:219 status:no-external-signal -->
+### T-59-082 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Без калібрувальних коефіцієнтів значення виглядають правдоподібно і є неправильними:
+
+**Контекст**
+
+```
+#define REG_CALIB2 0xE1
+
+Перетворення сирих відліків — за формулами з datasheet. Без
+калібрувальних коефіцієнтів значення виглядають правдоподібно і є
+неправильними:
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-083 sha:7bf92ad8 src:manual/59-proj-monitor.md:223 status:code-context -->
+### T-59-083 · kod · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ```c
+> esp_err_t bme_measure(float *temp, float *hum, float *pres) {
+>     uint8_t d[8];
+>     ESP_RETURN_ON_ERROR(bme_read(REG_DATA, d, 8), TAG, "читання");
+> 
+>     int32_t adc_p = ((uint32_t)d[0] << 12) | ((uint32_t)d[1] << 4) | (d[2] >> 4);
+>     int32_t adc_t = ((uint32_t)d[3] << 12) | ((uint32_t)d[4] << 4) | (d[5] >> 4);
+>     int32_t adc_h = ((uint32_t)d[6] << 8)  |  (uint32_t)d[7];
+> 
+>     int32_t v1 = ((((adc_t >> 3) - ((int32_t)T1 << 1))) * ((int32_t)T2)) >> 11;
+>     int32_t v2 = (((((adc_t >> 4) - ((int32_t)T1)) *
+>                     ((adc_t >> 4) - ((int32_t)T1))) >> 12) * ((int32_t)T3)) >> 14;
+>     t_fine = v1 + v2;
+>     *temp = ((t_fine * 5 + 128) >> 8) / 100.0f;
+> 
+>     int64_t p1 = ((int64_t)t_fine) - 128000;
+>     int64_t p2 = p1 * p1 * (int64_t)P6 + ((p1 * (int64_t)P5) << 17)
+>                + (((int64_t)P4) << 35);
+>     p1 = ((p1 * p1 * (int64_t)P3) >> 8) + ((p1 * (int64_t)P2) << 12);
+>     p1 = (((((int64_t)1) << 47) + p1) * ((int64_t)P1)) >> 33;
+>     if (p1 == 0) return ESP_ERR_INVALID_STATE;
+>     int64_t p = 1048576 - adc_p;
+>     p = (((p << 31) - p2) * 3125) / p1;
+>     p1 = (((int64_t)P9) * (p >> 13) * (p >> 13)) >> 25;
+>     p2 = (((int64_t)P8) * p) >> 19;
+>     *pres = (((p + p1 + p2) >> 8) + (((int64_t)P7) << 4)) / 25600.0f;
+> 
+>     int32_t h = t_fine - 76800;
+>     h = (((((adc_h << 14) - (((int32_t)H4) << 20) - (((int32_t)H5) * h)) +
+>         16384) >> 15) * (((((((h * ((int32_t)H6)) >> 10) *
+>         (((h * ((int32_t)H3)) >> 11) + 32768)) >> 10) + 2097152) *
+>         ((int32_t)H2) + 8192) >> 14));
+>     h -= (((((h >> 15) * (h >> 15)) >> 7) * ((int32_t)H1)) >> 4);
+>     if (h < 0) h = 0;
+>     if (h > 419430400) h = 419430400;
+>     *hum = (h >> 12) / 1024.0f;
+>     return ESP_OK;
+> }
+> ```
+
+**Контекст**
+
+````
+#define REG_CALIB2 0xE1
+
+```c
+esp_err_t bme_measure(float *temp, float *hum, float *pres) {
+    uint8_t d[8];
+    ESP_RETURN_ON_ERROR(bme_read(REG_DATA, d, 8), TAG, "читання");
+
+    int32_t adc_p = ((uint32_t)d[0] << 12) | ((uint32_t)d[1] << 4) | (d[2] >> 4);
+    int32_t adc_t = ((uint32_t)d[3] << 12) | ((uint32_t)d[4] << 4) | (d[5] >> 4);
+    int32_t adc_h = ((uint32_t)d[6] << 8)  |  (uint32_t)d[7];
+
+    int32_t v1 = ((((adc_t >> 3) - ((int32_t)T1 << 1))) * ((int32_t)T2)) >> 11;
+    int32_t v2 = (((((adc_t >> 4) - ((int32_t)T1)) *
+                    ((adc_t >> 4) - ((int32_t)T1))) >> 12) * ((int32_t)T3)) >> 14;
+    t_fine = v1 + v2;
+    *temp = ((t_fine * 5 + 128) >> 8) / 100.0f;
+
+    int64_t p1 = ((int64_t)t_fine) - 128000;
+    int64_t p2 = p1 * p1 * (int64_t)P6 + ((p1 * (int64_t)P5) << 17)
+               + (((int64_t)P4) << 35);
+    p1 = ((p1 * p1 * (int64_t)P3) >> 8) + ((p1 * (int64_t)P2) << 12);
+    p1 = (((((int64_t)1) << 47) + p1) * ((int64_t)P1)) >> 33;
+    if (p1 == 0) return ESP_ERR_INVALID_STATE;
+    int64_t p = 1048576 - adc_p;
+    p = (((p << 31) - p2) * 3125) / p1;
+    p1 = (((int64_t)P9) * (p >> 13) * (p >> 13)) >> 25;
+    p2 = (((int64_t)P8) * p) >> 19;
+    *pres = (((p + p1 + p2) >> 8) + (((int64_t)P7) << 4)) / 25600.0f;
+
+    int32_t h = t_fine - 76800;
+    h = (((((adc_h << 14) - (((int32_t)H4) << 20) - (((int32_t)H5) * h)) +
+        16384) >> 15) * (((((((h * ((int32_t)H6)) >> 10) *
+        (((h * ((int32_t)H3)) >> 11) + 32768)) >> 10) + 2097152) *
+        ((int32_t)H2) + 8192) >> 14));
+    h -= (((((h >> 15) * (h >> 15)) >> 7) * ((int32_t)H1)) >> 4);
+    if (h < 0) h = 0;
+    if (h > 419430400) h = 419430400;
+    *hum = (h >> 12) / 1024.0f;
+    return ESP_OK;
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-084 sha:ffffb2b5 src:manual/59-proj-monitor.md:226 status:derived -->
+### T-59-084 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP_RETURN_ON_ERROR(bme_read(REG_DATA, d, 8), TAG, "читання");
+
+**Контекст**
+
+````
+#define REG_CALIB2 0xE1
+
+```c
+esp_err_t bme_measure(float *temp, float *hum, float *pres) {
+    uint8_t d[8];
+    ESP_RETURN_ON_ERROR(bme_read(REG_DATA, d, 8), TAG, "читання");
+````
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-085 sha:10e4d48d src:manual/59-proj-monitor.md:265 status:code-context -->
+### T-59-085 · kod · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ```c
+> #define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
+> 
+> typedef struct {
+>     int64_t chas;             // мікросекунди від старту
+>     float temp, hum, pres;
+>     bool valid;
+> } zapys_t;
+> 
+> static zapys_t istoriya[ISTORIYA];
+> static size_t idx = 0, kilkist = 0;
+> static SemaphoreHandle_t mutex;
+> 
+> static void dodaty(float t, float h, float p, bool ok) {
+>     xSemaphoreTake(mutex, portMAX_DELAY);
+>     istoriya[idx] = (zapys_t){ esp_timer_get_time(), t, h, p, ok };
+>     idx = (idx + 1) % ISTORIYA;
+>     if (kilkist < ISTORIYA) kilkist++;
+>     xSemaphoreGive(mutex);
+> }
+> ```
+
+**Контекст**
+
+````
+### Кільцевий буфер історії
+
+```c
+#define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
+
+typedef struct {
+    int64_t chas;             // мікросекунди від старту
+    float temp, hum, pres;
+    bool valid;
+} zapys_t;
+
+static zapys_t istoriya[ISTORIYA];
+static size_t idx = 0, kilkist = 0;
+static SemaphoreHandle_t mutex;
+
+static void dodaty(float t, float h, float p, bool ok) {
+    xSemaphoreTake(mutex, portMAX_DELAY);
+    istoriya[idx] = (zapys_t){ esp_timer_get_time(), t, h, p, ok };
+    idx = (idx + 1) % ISTORIYA;
+    if (kilkist < ISTORIYA) kilkist++;
+    xSemaphoreGive(mutex);
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-086 sha:59d72679 src:manual/59-proj-monitor.md:266 status:self-consistent -->
+### T-59-086 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> #define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
+
+**Контекст**
+
+````
+### Кільцевий буфер історії
+
+```c
+#define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
+````
+
+**Доказ**
+
+- **Статус:** self-consistent — internal check — the book agrees with itself; no external confirmation
+- **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 266
+- **Дослівно з джерела:**
+  > #define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
+- **Спосіб і дата:** дослівна цитата з коду
+- **Нотатка:** Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.
+- **Прохід:** m2-69-project-59
+
+---
+
+<!-- fc id:T-59-087 sha:da52f140 src:manual/59-proj-monitor.md:279 status:verbatim -->
+### T-59-087 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> xSemaphoreTake(mutex, portMAX_DELAY);
+
+**Контекст**
+
+````
+#define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
+
+static void dodaty(float t, float h, float p, bool ok) {
+    xSemaphoreTake(mutex, portMAX_DELAY);
+    istoriya[idx] = (zapys_t){ esp_timer_get_time(), t, h, p, ok };
+    idx = (idx + 1) % ISTORIYA;
+    if (kilkist < ISTORIYA) kilkist++;
+    xSemaphoreGive(mutex);
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-088 sha:05942241 src:manual/59-proj-monitor.md:283 status:verbatim -->
+### T-59-088 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> xSemaphoreGive(mutex);
+
+**Контекст**
+
+````
+#define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
+
+static void dodaty(float t, float h, float p, bool ok) {
+    xSemaphoreTake(mutex, portMAX_DELAY);
+    istoriya[idx] = (zapys_t){ esp_timer_get_time(), t, h, p, ok };
+    idx = (idx + 1) % ISTORIYA;
+    if (kilkist < ISTORIYA) kilkist++;
+    xSemaphoreGive(mutex);
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-089 sha:7c65034e src:manual/59-proj-monitor.md:287 status:no-external-signal -->
+### T-59-089 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Буфер виділяється **статично**, один раз.
+
+**Контекст**
+
+```
+#define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
+
+Буфер виділяється **статично**, один раз. Ніякого `malloc` у циклі
+(розділ 30).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-090 sha:2eaae5f5 src:manual/59-proj-monitor.md:287 status:unchecked -->
+### T-59-090 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Ніякого `malloc` у циклі (розділ 30).
+
+**Контекст**
+
+```
+#define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
+
+Буфер виділяється **статично**, один раз. Ніякого `malloc` у циклі
+(розділ 30).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-091 sha:0c21042b src:manual/59-proj-monitor.md:292 status:code-context -->
+### T-59-091 · kod · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ```c
+> static void task_vymir(void *arg) {
+>     int pomylok_pospil = 0;
+>     while (1) {
+>         float t, h, p;
+>         esp_err_t err = bme_measure(&t, &h, &p);
+>         if (err == ESP_OK) {
+>             pomylok_pospil = 0;
+>             dodaty(t, h, p, true);
+>             ESP_LOGI(TAG, "%.2f °C, %.1f %%, %.1f гПа", t, h, p);
+>         } else {
+>             pomylok_pospil++;
+>             dodaty(0, 0, 0, false);
+>             ESP_LOGW(TAG, "датчик не відповідає (%d поспіль): %s",
+>                      pomylok_pospil, esp_err_to_name(err));
+>             // деградуємо, а не перезавантажуємось (розділ 32)
+>         }
+>         ESP_LOGD(TAG, "вільно RAM: %lu, мінімум: %lu",
+>                  esp_get_free_heap_size(), esp_get_minimum_free_heap_size());
+>         vTaskDelay(pdMS_TO_TICKS(60000));
+>     }
+> }
+> ```
+
+**Контекст**
+
+````
+### Задача вимірювання
+
+```c
+static void task_vymir(void *arg) {
+    int pomylok_pospil = 0;
+    while (1) {
+        float t, h, p;
+        esp_err_t err = bme_measure(&t, &h, &p);
+        if (err == ESP_OK) {
+            pomylok_pospil = 0;
+            dodaty(t, h, p, true);
+            ESP_LOGI(TAG, "%.2f °C, %.1f %%, %.1f гПа", t, h, p);
+        } else {
+            pomylok_pospil++;
+            dodaty(0, 0, 0, false);
+            ESP_LOGW(TAG, "датчик не відповідає (%d поспіль): %s",
+                     pomylok_pospil, esp_err_to_name(err));
+            // деградуємо, а не перезавантажуємось (розділ 32)
+        }
+        ESP_LOGD(TAG, "вільно RAM: %lu, мінімум: %lu",
+                 esp_get_free_heap_size(), esp_get_minimum_free_heap_size());
+        vTaskDelay(pdMS_TO_TICKS(60000));
+    }
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-092 sha:461edfca src:manual/59-proj-monitor.md:300 status:unchecked -->
+### T-59-092 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> dodaty(t, h, p, true);
+
+**Контекст**
+
+````
+### Задача вимірювання
+
+```c
+static void task_vymir(void *arg) {
+    int pomylok_pospil = 0;
+    while (1) {
+        float t, h, p;
+        esp_err_t err = bme_measure(&t, &h, &p);
+        if (err == ESP_OK) {
+            pomylok_pospil = 0;
+            dodaty(t, h, p, true);
+            ESP_LOGI(TAG, "%.2f °C, %.1f %%, %.1f гПа", t, h, p);
+        } else {
+            pomylok_pospil++;
+            dodaty(0, 0, 0, false);
+            ESP_LOGW(TAG, "датчик не відповідає (%d поспіль): %s",
+                     pomylok_pospil, esp_err_to_name(err));
+            // деградуємо, а не перезавантажуємось (розділ 32)
+        }
+        ESP_LOGD(TAG, "вільно RAM: %lu, мінімум: %lu",
+                 esp_get_free_heap_size(), esp_get_minimum_free_heap_size());
+        vTaskDelay(pdMS_TO_TICKS(60000));
+    }
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-093 sha:9e8becce src:manual/59-proj-monitor.md:301 status:unchecked -->
+### T-59-093 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP_LOGI(TAG, "%.2f °C, %.1f %%, %.1f гПа", t, h, p);
+
+**Контекст**
+
+````
+### Задача вимірювання
+
+```c
+static void task_vymir(void *arg) {
+    int pomylok_pospil = 0;
+    while (1) {
+        float t, h, p;
+        esp_err_t err = bme_measure(&t, &h, &p);
+        if (err == ESP_OK) {
+            pomylok_pospil = 0;
+            dodaty(t, h, p, true);
+            ESP_LOGI(TAG, "%.2f °C, %.1f %%, %.1f гПа", t, h, p);
+        } else {
+            pomylok_pospil++;
+            dodaty(0, 0, 0, false);
+            ESP_LOGW(TAG, "датчик не відповідає (%d поспіль): %s",
+                     pomylok_pospil, esp_err_to_name(err));
+            // деградуємо, а не перезавантажуємось (розділ 32)
+        }
+        ESP_LOGD(TAG, "вільно RAM: %lu, мінімум: %lu",
+                 esp_get_free_heap_size(), esp_get_minimum_free_heap_size());
+        vTaskDelay(pdMS_TO_TICKS(60000));
+    }
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-094 sha:29f9a0e7 src:manual/59-proj-monitor.md:304 status:unchecked -->
+### T-59-094 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> dodaty(0, 0, 0, false);
+
+**Контекст**
+
+````
+### Задача вимірювання
+
+```c
+static void task_vymir(void *arg) {
+    int pomylok_pospil = 0;
+    while (1) {
+        float t, h, p;
+        esp_err_t err = bme_measure(&t, &h, &p);
+        if (err == ESP_OK) {
+            pomylok_pospil = 0;
+            dodaty(t, h, p, true);
+            ESP_LOGI(TAG, "%.2f °C, %.1f %%, %.1f гПа", t, h, p);
+        } else {
+            pomylok_pospil++;
+            dodaty(0, 0, 0, false);
+            ESP_LOGW(TAG, "датчик не відповідає (%d поспіль): %s",
+                     pomylok_pospil, esp_err_to_name(err));
+            // деградуємо, а не перезавантажуємось (розділ 32)
+        }
+        ESP_LOGD(TAG, "вільно RAM: %lu, мінімум: %lu",
+                 esp_get_free_heap_size(), esp_get_minimum_free_heap_size());
+        vTaskDelay(pdMS_TO_TICKS(60000));
+    }
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-095 sha:b5ca5c99 src:manual/59-proj-monitor.md:310 status:unchecked -->
+### T-59-095 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> esp_get_free_heap_size(), esp_get_minimum_free_heap_size());
+
+**Контекст**
+
+````
+### Задача вимірювання
+
+```c
+static void task_vymir(void *arg) {
+    int pomylok_pospil = 0;
+    while (1) {
+        float t, h, p;
+        esp_err_t err = bme_measure(&t, &h, &p);
+        if (err == ESP_OK) {
+            pomylok_pospil = 0;
+            dodaty(t, h, p, true);
+            ESP_LOGI(TAG, "%.2f °C, %.1f %%, %.1f гПа", t, h, p);
+        } else {
+            pomylok_pospil++;
+            dodaty(0, 0, 0, false);
+            ESP_LOGW(TAG, "датчик не відповідає (%d поспіль): %s",
+                     pomylok_pospil, esp_err_to_name(err));
+            // деградуємо, а не перезавантажуємось (розділ 32)
+        }
+        ESP_LOGD(TAG, "вільно RAM: %lu, мінімум: %lu",
+                 esp_get_free_heap_size(), esp_get_minimum_free_heap_size());
+        vTaskDelay(pdMS_TO_TICKS(60000));
+    }
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-096 sha:d4678ca1 src:manual/59-proj-monitor.md:311 status:verbatim -->
+### T-59-096 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> vTaskDelay(pdMS_TO_TICKS(60000));
+
+**Контекст**
+
+````
+### Задача вимірювання
+
+```c
+static void task_vymir(void *arg) {
+    int pomylok_pospil = 0;
+    while (1) {
+        float t, h, p;
+        esp_err_t err = bme_measure(&t, &h, &p);
+        if (err == ESP_OK) {
+            pomylok_pospil = 0;
+            dodaty(t, h, p, true);
+            ESP_LOGI(TAG, "%.2f °C, %.1f %%, %.1f гПа", t, h, p);
+        } else {
+            pomylok_pospil++;
+            dodaty(0, 0, 0, false);
+            ESP_LOGW(TAG, "датчик не відповідає (%d поспіль): %s",
+                     pomylok_pospil, esp_err_to_name(err));
+            // деградуємо, а не перезавантажуємось (розділ 32)
+        }
+        ESP_LOGD(TAG, "вільно RAM: %lu, мінімум: %lu",
+                 esp_get_free_heap_size(), esp_get_minimum_free_heap_size());
+        vTaskDelay(pdMS_TO_TICKS(60000));
+    }
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-097 sha:7f8d2007 src:manual/59-proj-monitor.md:316 status:no-external-signal -->
+### T-59-097 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Датчик, що замовк, не зупиняє пристрій: записується позначка про збій, і робота триває.
+
+**Контекст**
+
+```
+### Задача вимірювання
+
+Датчик, що замовк, не зупиняє пристрій: записується позначка про збій, і
+робота триває. Веб-інтерфейс покаже, що дані застаріли.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-098 sha:2ab58c0c src:manual/59-proj-monitor.md:317 status:no-external-signal -->
+### T-59-098 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Веб-інтерфейс покаже, що дані застаріли.
+
+**Контекст**
+
+```
+### Задача вимірювання
+
+Датчик, що замовк, не зупиняє пристрій: записується позначка про збій, і
+робота триває. Веб-інтерфейс покаже, що дані застаріли.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-099 sha:4b754f95 src:manual/59-proj-monitor.md:321 status:code-context -->
+### T-59-099 · kod · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ```c
+> static esp_err_t json_handler(httpd_req_t *req) {
+>     char *buf = malloc(16384);
+>     if (!buf) return httpd_resp_send_500(req);
+> 
+>     xSemaphoreTake(mutex, portMAX_DELAY);
+>     int n = snprintf(buf, 16384, "{\"zapysiv\":%u,\"dani\":[", kilkist);
+>     size_t start = (kilkist == ISTORIYA) ? idx : 0;
+>     bool pershyy = true;                       // ← не «i == 0», див. нижче
+>     for (size_t i = 0; i < kilkist && n < 16000; i++) {
+>         zapys_t *z = &istoriya[(start + i) % ISTORIYA];
+>         if (!z->valid) continue;
+>         n += snprintf(buf + n, 16384 - n,
+>                       "%s{\"t\":%lld,\"temp\":%.2f,\"hum\":%.1f,\"pres\":%.1f}",
+>                       pershyy ? "" : ",",
+>                       z->chas / 1000000, z->temp, z->hum, z->pres);
+>         pershyy = false;
+>     }
+>     xSemaphoreGive(mutex);
+>     snprintf(buf + n, 16384 - n, "]}");
+> 
+>     httpd_resp_set_type(req, "application/json");
+>     esp_err_t r = httpd_resp_sendstr(req, buf);
+>     free(buf);
+>     return r;
+> }
+> ```
+
+**Контекст**
+
+````
+### Веб-сервер
+
+```c
+static esp_err_t json_handler(httpd_req_t *req) {
+    char *buf = malloc(16384);
+    if (!buf) return httpd_resp_send_500(req);
+
+    xSemaphoreTake(mutex, portMAX_DELAY);
+    int n = snprintf(buf, 16384, "{\"zapysiv\":%u,\"dani\":[", kilkist);
+    size_t start = (kilkist == ISTORIYA) ? idx : 0;
+    bool pershyy = true;                       // ← не «i == 0», див. нижче
+    for (size_t i = 0; i < kilkist && n < 16000; i++) {
+        zapys_t *z = &istoriya[(start + i) % ISTORIYA];
+        if (!z->valid) continue;
+        n += snprintf(buf + n, 16384 - n,
+                      "%s{\"t\":%lld,\"temp\":%.2f,\"hum\":%.1f,\"pres\":%.1f}",
+                      pershyy ? "" : ",",
+                      z->chas / 1000000, z->temp, z->hum, z->pres);
+        pershyy = false;
+    }
+    xSemaphoreGive(mutex);
+    snprintf(buf + n, 16384 - n, "]}");
+
+    httpd_resp_set_type(req, "application/json");
+    esp_err_t r = httpd_resp_sendstr(req, buf);
+    free(buf);
+    return r;
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
+- **Дослівно з джерела:**
+  > rst:0x10 (RTCWDT_RTC_RESET)
+  > 
+  > The RTC watchdog is used in the startup code to keep track of
+  > execution time and it also helps to prevent a lock-up caused by an
+  > unstable power source. It is enabled by default. If the execution
+  > time is exceeded, the RTC watchdog will restart the system.
+- **Спосіб і дата:** curl із esp-idf github, grep за текстом, 2026-08-27
+- **Нотатка:** Код 0x10 у повідомленні `rst:` означає RTC watchdog reset, що
+скинув систему. Твердження повністю підтвердить джерелом. Це
+стандартний код reset-причин у ESP-IDF.
+
+- **Прохід:** m2-93-sample
+
+---
+
+<!-- fc id:T-59-100 sha:9e097e90 src:manual/59-proj-monitor.md:324 status:verbatim -->
+### T-59-100 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> if (!buf) return httpd_resp_send_500(req);
+
+**Контекст**
+
+````
+### Веб-сервер
+
+```c
+static esp_err_t json_handler(httpd_req_t *req) {
+    char *buf = malloc(16384);
+    if (!buf) return httpd_resp_send_500(req);
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-101 sha:da52f140 src:manual/59-proj-monitor.md:326 status:verbatim -->
+### T-59-101 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> xSemaphoreTake(mutex, portMAX_DELAY);
+
+**Контекст**
+
+```
+### Веб-сервер
+
+    xSemaphoreTake(mutex, portMAX_DELAY);
+    int n = snprintf(buf, 16384, "{\"zapysiv\":%u,\"dani\":[", kilkist);
+    size_t start = (kilkist == ISTORIYA) ? idx : 0;
+    bool pershyy = true;                       // ← не «i == 0», див. нижче
+    for (size_t i = 0; i < kilkist && n < 16000; i++) {
+        zapys_t *z = &istoriya[(start + i) % ISTORIYA];
+        if (!z->valid) continue;
+        n += snprintf(buf + n, 16384 - n,
+                      "%s{\"t\":%lld,\"temp\":%.2f,\"hum\":%.1f,\"pres\":%.1f}",
+                      pershyy ? "" : ",",
+                      z->chas / 1000000, z->temp, z->hum, z->pres);
+        pershyy = false;
+    }
+    xSemaphoreGive(mutex);
+    snprintf(buf + n, 16384 - n, "]}");
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-102 sha:05942241 src:manual/59-proj-monitor.md:339 status:verbatim -->
+### T-59-102 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> xSemaphoreGive(mutex);
+
+**Контекст**
+
+```
+### Веб-сервер
+
+    xSemaphoreTake(mutex, portMAX_DELAY);
+    int n = snprintf(buf, 16384, "{\"zapysiv\":%u,\"dani\":[", kilkist);
+    size_t start = (kilkist == ISTORIYA) ? idx : 0;
+    bool pershyy = true;                       // ← не «i == 0», див. нижче
+    for (size_t i = 0; i < kilkist && n < 16000; i++) {
+        zapys_t *z = &istoriya[(start + i) % ISTORIYA];
+        if (!z->valid) continue;
+        n += snprintf(buf + n, 16384 - n,
+                      "%s{\"t\":%lld,\"temp\":%.2f,\"hum\":%.1f,\"pres\":%.1f}",
+                      pershyy ? "" : ",",
+                      z->chas / 1000000, z->temp, z->hum, z->pres);
+        pershyy = false;
+    }
+    xSemaphoreGive(mutex);
+    snprintf(buf + n, 16384 - n, "]}");
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-103 sha:aa40708d src:manual/59-proj-monitor.md:340 status:unchecked -->
+### T-59-103 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> snprintf(buf + n, 16384 - n, "]}");
+
+**Контекст**
+
+```
+### Веб-сервер
+
+    xSemaphoreTake(mutex, portMAX_DELAY);
+    int n = snprintf(buf, 16384, "{\"zapysiv\":%u,\"dani\":[", kilkist);
+    size_t start = (kilkist == ISTORIYA) ? idx : 0;
+    bool pershyy = true;                       // ← не «i == 0», див. нижче
+    for (size_t i = 0; i < kilkist && n < 16000; i++) {
+        zapys_t *z = &istoriya[(start + i) % ISTORIYA];
+        if (!z->valid) continue;
+        n += snprintf(buf + n, 16384 - n,
+                      "%s{\"t\":%lld,\"temp\":%.2f,\"hum\":%.1f,\"pres\":%.1f}",
+                      pershyy ? "" : ",",
+                      z->chas / 1000000, z->temp, z->hum, z->pres);
+        pershyy = false;
+    }
+    xSemaphoreGive(mutex);
+    snprintf(buf + n, 16384 - n, "]}");
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-104 sha:1305725a src:manual/59-proj-monitor.md:342 status:verbatim -->
+### T-59-104 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> httpd_resp_set_type(req, "application/json");
+
+**Контекст**
+
+````
+### Веб-сервер
+
+    httpd_resp_set_type(req, "application/json");
+    esp_err_t r = httpd_resp_sendstr(req, buf);
+    free(buf);
+    return r;
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-105 sha:780361e1 src:manual/59-proj-monitor.md:344 status:unchecked -->
+### T-59-105 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> free(buf);
+
+**Контекст**
+
+````
+### Веб-сервер
+
+    httpd_resp_set_type(req, "application/json");
+    esp_err_t r = httpd_resp_sendstr(req, buf);
+    free(buf);
+    return r;
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-106 sha:87adb72b src:manual/59-proj-monitor.md:350 status:unchecked -->
+### T-59-106 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Окремий прапорець `pershyy` замість перевірки `i == 0` — не педантизм.
+
+**Контекст**
+
+```
+### Веб-сервер
+
+::: uvaha
+Окремий прапорець `pershyy` замість перевірки `i == 0` — не педантизм.
+Записи зі збоєм пропускаються через `continue`, тож індекс циклу і номер
+**виведеного** елемента розходяться. Варіант `i ? "," : ""` при першому
+ж збійному запису на початку історії поставить кому перед першим
+елементом, і JSON стане несинтаксичним: `"dani":[,{…}]`.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-107 sha:d11cc6fe src:manual/59-proj-monitor.md:351 status:unchecked -->
+### T-59-107 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Записи зі збоєм пропускаються через `continue`, тож індекс циклу і номер **виведеного** елемента розходяться.
+
+**Контекст**
+
+```
+### Веб-сервер
+
+::: uvaha
+Окремий прапорець `pershyy` замість перевірки `i == 0` — не педантизм.
+Записи зі збоєм пропускаються через `continue`, тож індекс циклу і номер
+**виведеного** елемента розходяться. Варіант `i ? "," : ""` при першому
+ж збійному запису на початку історії поставить кому перед першим
+елементом, і JSON стане несинтаксичним: `"dani":[,{…}]`.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-108 sha:02b440af src:manual/59-proj-monitor.md:352 status:unchecked -->
+### T-59-108 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Варіант `i ? "," : ""` при першому ж збійному запису на початку історії поставить кому перед першим елементом, і JSON стане несинтаксичним: `"dani":[,{…}]`.
+
+**Контекст**
+
+```
+### Веб-сервер
+
+::: uvaha
+Окремий прапорець `pershyy` замість перевірки `i == 0` — не педантизм.
+Записи зі збоєм пропускаються через `continue`, тож індекс циклу і номер
+**виведеного** елемента розходяться. Варіант `i ? "," : ""` при першому
+ж збійному запису на початку історії поставить кому перед першим
+елементом, і JSON стане несинтаксичним: `"dani":[,{…}]`.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-109 sha:0fa06472 src:manual/59-proj-monitor.md:356 status:no-external-signal -->
+### T-59-109 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Ламається це рівно тоді, коли датчик відмовив, — тобто саме тоді, коли на графік дивляться.
+
+**Контекст**
+
+```
+### Веб-сервер
+
+Ламається це рівно тоді, коли датчик відмовив, — тобто саме тоді, коли на
+графік дивляться. Це типова форма помилки в цій книзі: код правильний для
+щасливого шляху й невірний для того, заради якого писався.
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-110 sha:046ce956 src:manual/59-proj-monitor.md:357 status:no-external-signal -->
+### T-59-110 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Це типова форма помилки в цій книзі: код правильний для щасливого шляху й невірний для того, заради якого писався.
+
+**Контекст**
+
+```
+### Веб-сервер
+
+Ламається це рівно тоді, коли датчик відмовив, — тобто саме тоді, коли на
+графік дивляться. Це типова форма помилки в цій книзі: код правильний для
+щасливого шляху й невірний для того, заради якого писався.
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-111 sha:8e1c5456 src:manual/59-proj-monitor.md:362 status:no-external-signal -->
+### T-59-111 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Буфер тут виділяється з купи й одразу звільняється — це **не** цикл виділень, а разова операція на запит.
+
+**Контекст**
+
+```
+### Веб-сервер
+
+::: uvaha
+Буфер тут виділяється з купи й одразу звільняється — це **не** цикл
+виділень, а разова операція на запит. Різниця з правилом розділу 30 у
+тому, що частота низька й розмір фіксований.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-112 sha:daa45c95 src:manual/59-proj-monitor.md:363 status:no-external-signal -->
+### T-59-112 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Різниця з правилом розділу 30 у тому, що частота низька й розмір фіксований.
+
+**Контекст**
+
+```
+### Веб-сервер
+
+::: uvaha
+Буфер тут виділяється з купи й одразу звільняється — це **не** цикл
+виділень, а разова операція на запит. Різниця з правилом розділу 30 у
+тому, що частота низька й розмір фіксований.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-113 sha:ffa66d5d src:manual/59-proj-monitor.md:366 status:no-external-signal -->
+### T-59-113 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Уважніше треба з іншим: обробник виконується в задачі веб-сервера з обмеженим стеком.
+
+**Контекст**
+
+```
+### Веб-сервер
+
+Уважніше треба з іншим: обробник виконується в задачі веб-сервера з
+обмеженим стеком. Тому 16 КБ беруться з купи, а не оголошуються як
+локальний масив — інакше стек переповниться (розділ 30).
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-114 sha:99584848 src:manual/59-proj-monitor.md:367 status:no-external-signal -->
+### T-59-114 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Тому 16 КБ беруться з купи, а не оголошуються як локальний масив — інакше стек переповниться (розділ 30).
+
+**Контекст**
+
+```
+### Веб-сервер
+
+Уважніше треба з іншим: обробник виконується в задачі веб-сервера з
+обмеженим стеком. Тому 16 КБ беруться з купи, а не оголошуються як
+локальний масив — інакше стек переповниться (розділ 30).
+:::
+```
+
+**Доказ**
+
+- **Статус:** no-external-signal — no signal in the text to check against — assigned mechanically, not checked
+- **Джерело:** немає зовнішнього джерела
+- **Спосіб і дата:** перевірка в контексті manual/59-proj-monitor.md:366
+- **Нотатка:** Це твердження про загальну практику програмування: стек має обмежений розмір, велику пам'ять беруть з heap'у. Зовнішнього документа, який би це підтверджував, не існує — це фундаментальна властивість архітектури ESP32. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
+- **Прохід:** m2-94-sample
+
+---
+
+<!-- fc id:T-59-115 sha:60fa11ed src:manual/59-proj-monitor.md:373 status:code-context -->
+### T-59-115 · kod · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ```c
+> void app_main(void) {
+>     ESP_LOGI(TAG, "старт, причина скидання: %d", esp_reset_reason());
+> 
+>     esp_err_t err = nvs_flash_init();
+>     if (err == ESP_ERR_NVS_NO_FREE_PAGES || err == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+>         ESP_ERROR_CHECK(nvs_flash_erase());
+>         err = nvs_flash_init();
+>     }
+>     ESP_ERROR_CHECK(err);
+> 
+>     mutex = xSemaphoreCreateMutex();
+> 
+>     i2c_master_bus_config_t bus_cfg = {
+>         .i2c_port = I2C_NUM_0,
+>         .sda_io_num = PIN_SDA,   // classic 21 / S3 8 — див. таблицю пінів
+>         .scl_io_num = PIN_SCL,   // classic 22 / S3 9
+>         .clk_source = I2C_CLK_SRC_DEFAULT,
+>         .glitch_ignore_cnt = 7,
+>     };
+>     i2c_master_bus_handle_t bus;
+>     ESP_ERROR_CHECK(i2c_new_master_bus(&bus_cfg, &bus));
+> 
+>     if (bme_init(bus) != ESP_OK) {
+>         ESP_LOGE(TAG, "датчик не знайдено — працюємо без нього");
+>         // не ESP_ERROR_CHECK: веб-інтерфейс має піднятися й показати проблему
+>     }
+> 
+>     wifi_start();                 // під'єднання з повторами, розділ 39
+>     mdns_init();
+>     mdns_hostname_set("teplytsia");
+>     mdns_service_add(NULL, "_http", "_tcp", 80, NULL, 0);
+> 
+>     web_start();
+>     xTaskCreate(task_vymir, "vymir", 4096, NULL, 5, NULL);
+> }
+> ```
+
+**Контекст**
+
+````
+### Головна функція
+
+```c
+void app_main(void) {
+    ESP_LOGI(TAG, "старт, причина скидання: %d", esp_reset_reason());
+
+    esp_err_t err = nvs_flash_init();
+    if (err == ESP_ERR_NVS_NO_FREE_PAGES || err == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        err = nvs_flash_init();
+    }
+    ESP_ERROR_CHECK(err);
+
+    mutex = xSemaphoreCreateMutex();
+
+    i2c_master_bus_config_t bus_cfg = {
+        .i2c_port = I2C_NUM_0,
+        .sda_io_num = PIN_SDA,   // classic 21 / S3 8 — див. таблицю пінів
+        .scl_io_num = PIN_SCL,   // classic 22 / S3 9
+        .clk_source = I2C_CLK_SRC_DEFAULT,
+        .glitch_ignore_cnt = 7,
+    };
+    i2c_master_bus_handle_t bus;
+    ESP_ERROR_CHECK(i2c_new_master_bus(&bus_cfg, &bus));
+
+    if (bme_init(bus) != ESP_OK) {
+        ESP_LOGE(TAG, "датчик не знайдено — працюємо без нього");
+        // не ESP_ERROR_CHECK: веб-інтерфейс має піднятися й показати проблему
+    }
+
+    wifi_start();                 // під'єднання з повторами, розділ 39
+    mdns_init();
+    mdns_hostname_set("teplytsia");
+    mdns_service_add(NULL, "_http", "_tcp", 80, NULL, 0);
+
+    web_start();
+    xTaskCreate(task_vymir, "vymir", 4096, NULL, 5, NULL);
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-116 sha:f018579e src:manual/59-proj-monitor.md:375 status:verbatim -->
+### T-59-116 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP_LOGI(TAG, "старт, причина скидання: %d", esp_reset_reason());
+
+**Контекст**
+
+````
+### Головна функція
+
+```c
+void app_main(void) {
+    ESP_LOGI(TAG, "старт, причина скидання: %d", esp_reset_reason());
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-117 sha:f3349b99 src:manual/59-proj-monitor.md:379 status:verbatim -->
+### T-59-117 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP_ERROR_CHECK(nvs_flash_erase());
+
+**Контекст**
+
+```
+### Головна функція
+
+    esp_err_t err = nvs_flash_init();
+    if (err == ESP_ERR_NVS_NO_FREE_PAGES || err == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        err = nvs_flash_init();
+    }
+    ESP_ERROR_CHECK(err);
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-118 sha:601ab80f src:manual/59-proj-monitor.md:382 status:unchecked -->
+### T-59-118 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP_ERROR_CHECK(err);
+
+**Контекст**
+
+```
+### Головна функція
+
+    esp_err_t err = nvs_flash_init();
+    if (err == ESP_ERR_NVS_NO_FREE_PAGES || err == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        err = nvs_flash_init();
+    }
+    ESP_ERROR_CHECK(err);
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-119 sha:8137e868 src:manual/59-proj-monitor.md:387 status:derived -->
+### T-59-119 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> .i2c_port = I2C_NUM_0,
+
+**Контекст**
+
+```
+### Головна функція
+
+    i2c_master_bus_config_t bus_cfg = {
+        .i2c_port = I2C_NUM_0,
+        .sda_io_num = PIN_SDA,   // classic 21 / S3 8 — див. таблицю пінів
+        .scl_io_num = PIN_SCL,   // classic 22 / S3 9
+        .clk_source = I2C_CLK_SRC_DEFAULT,
+        .glitch_ignore_cnt = 7,
+    };
+    i2c_master_bus_handle_t bus;
+    ESP_ERROR_CHECK(i2c_new_master_bus(&bus_cfg, &bus));
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
+- **Дослівно з джерела:**
+  > Двонапрямлений перетворювач рівня I²C:
+  > - N-channel FET у режимі transmission gate
+  > - Дозволяє обом сторонам "тягти" лінію вниз (open-drain функція)
+  > - Pull-up резистори на обох сторонах напруги
+  > 
+  > I²C spec: "The output stages of devices connected to the bus must have
+  > an open-drain or open-collector to perform the wired-AND function."
+- **Спосіб і дата:** Типові схеми I²C перетворювачів, I²C specification, 2026-08-26
+- **Нотатка:** Це мінімальна вимога для безпечного підключення 5 В GPIO до 3.3 В ESP32 на I²C шині. | 2026-08-28: з взірця прибрано альтернативу-течу «I²C» — саме слово чіпляло 117 одиниць, більше за всі інші разом, тобто підміняло взірець замість звужувати. Знахідка М1. Решта альтернатив тримає 58 одиниць.
+- **Прохід:** m2-65-electronics-05
+
+---
+
+<!-- fc id:T-59-120 sha:3ad25a63 src:manual/59-proj-monitor.md:388 status:verbatim -->
+### T-59-120 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> .sda_io_num = PIN_SDA,   // classic 21 / S3 8 — див. таблицю пінів
+
+**Контекст**
+
+```
+### Головна функція
+
+    i2c_master_bus_config_t bus_cfg = {
+        .i2c_port = I2C_NUM_0,
+        .sda_io_num = PIN_SDA,   // classic 21 / S3 8 — див. таблицю пінів
+        .scl_io_num = PIN_SCL,   // classic 22 / S3 9
+        .clk_source = I2C_CLK_SRC_DEFAULT,
+        .glitch_ignore_cnt = 7,
+    };
+    i2c_master_bus_handle_t bus;
+    ESP_ERROR_CHECK(i2c_new_master_bus(&bus_cfg, &bus));
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
+- **Дослівно з джерела:**
+  > Звірено вісім структур, усі поля, які книга ініціалізує:
+  > 
+  > i2c_master_bus_config_t        6 полів книги ⊂ 11 у заголовку
+  > i2c_device_config_t            3 ⊂ 17
+  > spi_bus_config_t               6 ⊂ 18
+  > spi_device_interface_config_t  4 ⊂ 16
+  > uart_config_t                  6 ⊂ 11
+  > ledc_timer_config_t            4 ⊂ 16
+  > ledc_channel_config_t          5 ⊂ 10
+  > gpio_config_t                  5 ⊂ 6
+  > 
+  > Жодного імені поза заголовком.
+- **Спосіб і дата:** curl raw.githubusercontent + зіставлення `tools/struct_fields.py`, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у 39 іменах. Це не дрібниця: імена полів конфігураційних структур — саме те, що тихо змінюється між версіями ESP-IDF, і саме те, що читач набирає дослівно з книжкової сторінки.
+Головне тут не результат, а те, що він тепер постійний. `tools/struct_fields.py` стоїть у `make check` і бере перелік полів із заголовків, а не з книги. Якби перелік брався з книги, перевірка була б тавтологією: приклад завжди узгоджений сам із собою.
+Випробувано підкинутою вадою: заміна `.sda_io_num` на `.sda_gpio_num` дає
+
+    manual/35-i2c.md:110: у `i2c_master_bus_config_t` немає поля
+    `sda_gpio_num`
+
+На чистому дереві — тиша.
+- **Прохід:** pass-21-polya-struktur
+
+---
+
+<!-- fc id:T-59-121 sha:aca549c6 src:manual/59-proj-monitor.md:389 status:verbatim -->
+### T-59-121 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> .scl_io_num = PIN_SCL,   // classic 22 / S3 9
+
+**Контекст**
+
+```
+### Головна функція
+
+    i2c_master_bus_config_t bus_cfg = {
+        .i2c_port = I2C_NUM_0,
+        .sda_io_num = PIN_SDA,   // classic 21 / S3 8 — див. таблицю пінів
+        .scl_io_num = PIN_SCL,   // classic 22 / S3 9
+        .clk_source = I2C_CLK_SRC_DEFAULT,
+        .glitch_ignore_cnt = 7,
+    };
+    i2c_master_bus_handle_t bus;
+    ESP_ERROR_CHECK(i2c_new_master_bus(&bus_cfg, &bus));
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
+- **Дослівно з джерела:**
+  > Звірено вісім структур, усі поля, які книга ініціалізує:
+  > 
+  > i2c_master_bus_config_t        6 полів книги ⊂ 11 у заголовку
+  > i2c_device_config_t            3 ⊂ 17
+  > spi_bus_config_t               6 ⊂ 18
+  > spi_device_interface_config_t  4 ⊂ 16
+  > uart_config_t                  6 ⊂ 11
+  > ledc_timer_config_t            4 ⊂ 16
+  > ledc_channel_config_t          5 ⊂ 10
+  > gpio_config_t                  5 ⊂ 6
+  > 
+  > Жодного імені поза заголовком.
+- **Спосіб і дата:** curl raw.githubusercontent + зіставлення `tools/struct_fields.py`, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у 39 іменах. Це не дрібниця: імена полів конфігураційних структур — саме те, що тихо змінюється між версіями ESP-IDF, і саме те, що читач набирає дослівно з книжкової сторінки.
+Головне тут не результат, а те, що він тепер постійний. `tools/struct_fields.py` стоїть у `make check` і бере перелік полів із заголовків, а не з книги. Якби перелік брався з книги, перевірка була б тавтологією: приклад завжди узгоджений сам із собою.
+Випробувано підкинутою вадою: заміна `.sda_io_num` на `.sda_gpio_num` дає
+
+    manual/35-i2c.md:110: у `i2c_master_bus_config_t` немає поля
+    `sda_gpio_num`
+
+На чистому дереві — тиша.
+- **Прохід:** pass-21-polya-struktur
+
+---
+
+<!-- fc id:T-59-122 sha:ad69c01f src:manual/59-proj-monitor.md:390 status:derived -->
+### T-59-122 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> .clk_source = I2C_CLK_SRC_DEFAULT,
+
+**Контекст**
+
+```
+### Головна функція
+
+    i2c_master_bus_config_t bus_cfg = {
+        .i2c_port = I2C_NUM_0,
+        .sda_io_num = PIN_SDA,   // classic 21 / S3 8 — див. таблицю пінів
+        .scl_io_num = PIN_SCL,   // classic 22 / S3 9
+        .clk_source = I2C_CLK_SRC_DEFAULT,
+        .glitch_ignore_cnt = 7,
+    };
+    i2c_master_bus_handle_t bus;
+    ESP_ERROR_CHECK(i2c_new_master_bus(&bus_cfg, &bus));
+```
+
+**Доказ**
+
+- **Статус:** derived — primary, inferred — the source was obtained; the claim follows unambiguously
+- **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
+- **Дослівно з джерела:**
+  > Двонапрямлений перетворювач рівня I²C:
+  > - N-channel FET у режимі transmission gate
+  > - Дозволяє обом сторонам "тягти" лінію вниз (open-drain функція)
+  > - Pull-up резистори на обох сторонах напруги
+  > 
+  > I²C spec: "The output stages of devices connected to the bus must have
+  > an open-drain or open-collector to perform the wired-AND function."
+- **Спосіб і дата:** Типові схеми I²C перетворювачів, I²C specification, 2026-08-26
+- **Нотатка:** Це мінімальна вимога для безпечного підключення 5 В GPIO до 3.3 В ESP32 на I²C шині. | 2026-08-28: з взірця прибрано альтернативу-течу «I²C» — саме слово чіпляло 117 одиниць, більше за всі інші разом, тобто підміняло взірець замість звужувати. Знахідка М1. Решта альтернатив тримає 58 одиниць.
+- **Прохід:** m2-65-electronics-05
+
+---
+
+<!-- fc id:T-59-123 sha:be777622 src:manual/59-proj-monitor.md:391 status:verbatim -->
+### T-59-123 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> .glitch_ignore_cnt = 7,
+
+**Контекст**
+
+```
+### Головна функція
+
+    i2c_master_bus_config_t bus_cfg = {
+        .i2c_port = I2C_NUM_0,
+        .sda_io_num = PIN_SDA,   // classic 21 / S3 8 — див. таблицю пінів
+        .scl_io_num = PIN_SCL,   // classic 22 / S3 9
+        .clk_source = I2C_CLK_SRC_DEFAULT,
+        .glitch_ignore_cnt = 7,
+    };
+    i2c_master_bus_handle_t bus;
+    ESP_ERROR_CHECK(i2c_new_master_bus(&bus_cfg, &bus));
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+- **Дослівно з джерела:**
+  > .glitch_ignore_cnt = 7,
+- **Спосіб і дата:** wave 2026-09-01, arms A+B; layer 3 verbatim; layer 2 read by a maintainer
+- **Нотатка:** —
+- **Прохід:** wave-20260901
+
+---
+
+<!-- fc id:T-59-124 sha:6abf9538 src:manual/59-proj-monitor.md:394 status:unchecked -->
+### T-59-124 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP_ERROR_CHECK(i2c_new_master_bus(&bus_cfg, &bus));
+
+**Контекст**
+
+```
+### Головна функція
+
+    i2c_master_bus_config_t bus_cfg = {
+        .i2c_port = I2C_NUM_0,
+        .sda_io_num = PIN_SDA,   // classic 21 / S3 8 — див. таблицю пінів
+        .scl_io_num = PIN_SCL,   // classic 22 / S3 9
+        .clk_source = I2C_CLK_SRC_DEFAULT,
+        .glitch_ignore_cnt = 7,
+    };
+    i2c_master_bus_handle_t bus;
+    ESP_ERROR_CHECK(i2c_new_master_bus(&bus_cfg, &bus));
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-125 sha:ea63146b src:manual/59-proj-monitor.md:397 status:unchecked -->
+### T-59-125 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ESP_LOGE(TAG, "датчик не знайдено — працюємо без нього");
+
+**Контекст**
+
+```
+### Головна функція
+
+    if (bme_init(bus) != ESP_OK) {
+        ESP_LOGE(TAG, "датчик не знайдено — працюємо без нього");
+        // не ESP_ERROR_CHECK: веб-інтерфейс має піднятися й показати проблему
+    }
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-126 sha:f15667d5 src:manual/59-proj-monitor.md:402 status:verbatim -->
+### T-59-126 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> mdns_init();
+
+**Контекст**
+
+```
+### Головна функція
+
+    wifi_start();                 // під'єднання з повторами, розділ 39
+    mdns_init();
+    mdns_hostname_set("teplytsia");
+    mdns_service_add(NULL, "_http", "_tcp", 80, NULL, 0);
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-127 sha:cb6701a7 src:manual/59-proj-monitor.md:403 status:verbatim -->
+### T-59-127 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> mdns_hostname_set("teplytsia");
+
+**Контекст**
+
+```
+### Головна функція
+
+    wifi_start();                 // під'єднання з повторами, розділ 39
+    mdns_init();
+    mdns_hostname_set("teplytsia");
+    mdns_service_add(NULL, "_http", "_tcp", 80, NULL, 0);
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-128 sha:1e052b00 src:manual/59-proj-monitor.md:404 status:verbatim -->
+### T-59-128 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> mdns_service_add(NULL, "_http", "_tcp", 80, NULL, 0);
+
+**Контекст**
+
+```
+### Головна функція
+
+    wifi_start();                 // під'єднання з повторами, розділ 39
+    mdns_init();
+    mdns_hostname_set("teplytsia");
+    mdns_service_add(NULL, "_http", "_tcp", 80, NULL, 0);
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-129 sha:faf13c15 src:manual/59-proj-monitor.md:406 status:unchecked -->
+### T-59-129 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> web_start();
+
+**Контекст**
+
+````
+### Головна функція
+
+    web_start();
+    xTaskCreate(task_vymir, "vymir", 4096, NULL, 5, NULL);
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-130 sha:59d6968b src:manual/59-proj-monitor.md:407 status:verbatim -->
+### T-59-130 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> xTaskCreate(task_vymir, "vymir", 4096, NULL, 5, NULL);
+
+**Контекст**
+
+````
+### Головна функція
+
+    web_start();
+    xTaskCreate(task_vymir, "vymir", 4096, NULL, 5, NULL);
+}
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-59-131 sha:c136ab2b src:manual/59-proj-monitor.md:412 status:unchecked -->
+### T-59-131 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> `ESP_ERROR_CHECK` тут стоїть лише навколо NVS і створення шини — того, без чого пристрій не має сенсу.
+
+**Контекст**
+
+```
+### Головна функція
+
+::: nezvorotne
+`ESP_ERROR_CHECK` тут стоїть лише навколо NVS і створення шини — того,
+без чого пристрій не має сенсу.
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-132 sha:30cbfc2f src:manual/59-proj-monitor.md:415 status:no-external-signal -->
+### T-59-132 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Навколо ініціалізації датчика його **немає** свідомо: несправний датчик не повинен перетворювати пристрій на цеглинку.
+
+**Контекст**
+
+```
+### Головна функція
+
+Навколо ініціалізації датчика його **немає** свідомо: несправний датчик
+не повинен перетворювати пристрій на цеглинку. Веб-інтерфейс має
+піднятися й показати, що датчик мовчить (розділ 32).
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-133 sha:2351e0dd src:manual/59-proj-monitor.md:416 status:no-external-signal -->
+### T-59-133 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Веб-інтерфейс має піднятися й показати, що датчик мовчить (розділ 32).
+
+**Контекст**
+
+```
+### Головна функція
+
+Навколо ініціалізації датчика його **немає** свідомо: несправний датчик
+не повинен перетворювати пристрій на цеглинку. Веб-інтерфейс має
+піднятися й показати, що датчик мовчить (розділ 32).
+:::
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-134 sha:366e3229 src:manual/59-proj-monitor.md:422 status:code-context -->
+### T-59-134 · kod · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> ```
+> idf.py set-target esp32s3
+> idf.py menuconfig          # Wi-Fi, розбивка флешу з OTA (розділ 18)
+> idf.py build
+> idf.py -p /dev/ttyUSB0 flash monitor
+> ```
+
+**Контекст**
+
+````
+## Збирання і перевірка
+
+```
+idf.py set-target esp32s3
+idf.py menuconfig          # Wi-Fi, розбивка флешу з OTA (розділ 18)
+idf.py build
+idf.py -p /dev/ttyUSB0 flash monitor
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-59-135 sha:6aa9cf42 src:manual/59-proj-monitor.md:423 status:verbatim -->
+### T-59-135 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> idf.py set-target esp32s3
+
+**Контекст**
+
+````
+## Збирання і перевірка
+
+```
+idf.py set-target esp32s3
+idf.py menuconfig          # Wi-Fi, розбивка флешу з OTA (розділ 18)
+idf.py build
+idf.py -p /dev/ttyUSB0 flash monitor
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-59-136 sha:4f160d06 src:manual/59-proj-monitor.md:424 status:verbatim -->
+### T-59-136 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> idf.py menuconfig          # Wi-Fi, розбивка флешу з OTA (розділ 18)
+
+**Контекст**
+
+````
+## Збирання і перевірка
+
+```
+idf.py set-target esp32s3
+idf.py menuconfig          # Wi-Fi, розбивка флешу з OTA (розділ 18)
+idf.py build
+idf.py -p /dev/ttyUSB0 flash monitor
+```
+````
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-59-137 sha:343d9bab src:manual/59-proj-monitor.md:425 status:unchecked -->
+### T-59-137 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> idf.py build
+
+**Контекст**
+
+````
+## Збирання і перевірка
+
+```
+idf.py set-target esp32s3
+idf.py menuconfig          # Wi-Fi, розбивка флешу з OTA (розділ 18)
+idf.py build
+idf.py -p /dev/ttyUSB0 flash monitor
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-138 sha:e801663f src:manual/59-proj-monitor.md:426 status:unchecked -->
+### T-59-138 · kod-ryadok · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> idf.py -p /dev/ttyUSB0 flash monitor
+
+**Контекст**
+
+````
+## Збирання і перевірка
+
+```
+idf.py set-target esp32s3
+idf.py menuconfig          # Wi-Fi, розбивка флешу з OTA (розділ 18)
+idf.py build
+idf.py -p /dev/ttyUSB0 flash monitor
+```
+````
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-139 sha:b3a83074 src:manual/59-proj-monitor.md:431 status:unchecked -->
+### T-59-139 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> У лозі — `BME280 знайдено і налаштовано`.
+
+**Контекст**
+
+```
+## Збирання і перевірка
+
+1. У лозі — `BME280 знайдено і налаштовано`. Немає — сканер I²C
+   (розділ 35).
+2. Перше вимірювання з осмисленими значеннями.
+3. `teplytsia.local` відкривається у браузері.
+4. Від'єднати датчик на ходу: пристрій лишається живим, у лозі
+   попередження, веб показує застарілі дані.
+5. Вимкнути роутер: вимірювання тривають, після відновлення веб знову
+   доступний.
+6. Доба безперервної роботи: мінімум вільної пам'яті не зменшується
+   (розділ 58).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-140 sha:fda6a9fd src:manual/59-proj-monitor.md:431 status:unchecked -->
+### T-59-140 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Немає — сканер I²C (розділ 35). 2.
+
+**Контекст**
+
+```
+## Збирання і перевірка
+
+1. У лозі — `BME280 знайдено і налаштовано`. Немає — сканер I²C
+   (розділ 35).
+2. Перше вимірювання з осмисленими значеннями.
+3. `teplytsia.local` відкривається у браузері.
+4. Від'єднати датчик на ходу: пристрій лишається живим, у лозі
+   попередження, веб показує застарілі дані.
+5. Вимкнути роутер: вимірювання тривають, після відновлення веб знову
+   доступний.
+6. Доба безперервної роботи: мінімум вільної пам'яті не зменшується
+   (розділ 58).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-141 sha:98a85158 src:manual/59-proj-monitor.md:433 status:no-external-signal -->
+### T-59-141 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Перше вимірювання з осмисленими значеннями. 3.
+
+**Контекст**
+
+```
+## Збирання і перевірка
+
+1. У лозі — `BME280 знайдено і налаштовано`. Немає — сканер I²C
+   (розділ 35).
+2. Перше вимірювання з осмисленими значеннями.
+3. `teplytsia.local` відкривається у браузері.
+4. Від'єднати датчик на ходу: пристрій лишається живим, у лозі
+   попередження, веб показує застарілі дані.
+5. Вимкнути роутер: вимірювання тривають, після відновлення веб знову
+   доступний.
+6. Доба безперервної роботи: мінімум вільної пам'яті не зменшується
+   (розділ 58).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-142 sha:98b2d431 src:manual/59-proj-monitor.md:434 status:unchecked -->
+### T-59-142 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> `teplytsia.local` відкривається у браузері. 4.
+
+**Контекст**
+
+```
+## Збирання і перевірка
+
+1. У лозі — `BME280 знайдено і налаштовано`. Немає — сканер I²C
+   (розділ 35).
+2. Перше вимірювання з осмисленими значеннями.
+3. `teplytsia.local` відкривається у браузері.
+4. Від'єднати датчик на ходу: пристрій лишається живим, у лозі
+   попередження, веб показує застарілі дані.
+5. Вимкнути роутер: вимірювання тривають, після відновлення веб знову
+   доступний.
+6. Доба безперервної роботи: мінімум вільної пам'яті не зменшується
+   (розділ 58).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-143 sha:3ec3a7c7 src:manual/59-proj-monitor.md:435 status:no-external-signal -->
+### T-59-143 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Від'єднати датчик на ходу: пристрій лишається живим, у лозі попередження, веб показує застарілі дані. 5.
+
+**Контекст**
+
+```
+## Збирання і перевірка
+
+1. У лозі — `BME280 знайдено і налаштовано`. Немає — сканер I²C
+   (розділ 35).
+2. Перше вимірювання з осмисленими значеннями.
+3. `teplytsia.local` відкривається у браузері.
+4. Від'єднати датчик на ходу: пристрій лишається живим, у лозі
+   попередження, веб показує застарілі дані.
+5. Вимкнути роутер: вимірювання тривають, після відновлення веб знову
+   доступний.
+6. Доба безперервної роботи: мінімум вільної пам'яті не зменшується
+   (розділ 58).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-144 sha:f2cb8e81 src:manual/59-proj-monitor.md:437 status:no-external-signal -->
+### T-59-144 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Вимкнути роутер: вимірювання тривають, після відновлення веб знову доступний. 6.
+
+**Контекст**
+
+```
+## Збирання і перевірка
+
+1. У лозі — `BME280 знайдено і налаштовано`. Немає — сканер I²C
+   (розділ 35).
+2. Перше вимірювання з осмисленими значеннями.
+3. `teplytsia.local` відкривається у браузері.
+4. Від'єднати датчик на ходу: пристрій лишається живим, у лозі
+   попередження, веб показує застарілі дані.
+5. Вимкнути роутер: вимірювання тривають, після відновлення веб знову
+   доступний.
+6. Доба безперервної роботи: мінімум вільної пам'яті не зменшується
+   (розділ 58).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-145 sha:cab8cb32 src:manual/59-proj-monitor.md:439 status:no-external-signal -->
+### T-59-145 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> Доба безперервної роботи: мінімум вільної пам'яті не зменшується (розділ 58).
+
+**Контекст**
+
+```
+## Збирання і перевірка
+
+1. У лозі — `BME280 знайдено і налаштовано`. Немає — сканер I²C
+   (розділ 35).
+2. Перше вимірювання з осмисленими значеннями.
+3. `teplytsia.local` відкривається у браузері.
+4. Від'єднати датчик на ходу: пристрій лишається живим, у лозі
+   попередження, веб показує застарілі дані.
+5. Вимкнути роутер: вимірювання тривають, після відновлення веб знову
+   доступний.
+6. Доба безперервної роботи: мінімум вільної пам'яті не зменшується
+   (розділ 58).
+```
+
+**Доказ**
+
+- **Статус:** unchecked — не звірено
+
+---
+
+<!-- fc id:T-59-146 sha:26ecb42f src:manual/59-proj-monitor.md:444 status:verbatim -->
+### T-59-146 · proza · `manual/59-proj-monitor.md`
+
+**Твердження, коротко**
+
+> - **MQTT** замість або разом із веб-інтерфейсом (розділ 40); - **другий датчик** — DS18B20 на вулиці (розділ 37); - **OTA** — розбивку вже закладено (розділ 19); - **e-paper** для показу на місці (розділ 46); - **автономність**: перехід на deep sleep і ESP-NOW перетворює це на проєкт 60.
+
+**Контекст**
+
+```
+## Розвиток
+
+- **MQTT** замість або разом із веб-інтерфейсом (розділ 40);
+- **другий датчик** — DS18B20 на вулиці (розділ 37);
+- **OTA** — розбивку вже закладено (розділ 19);
+- **e-paper** для показу на місці (розділ 46);
+- **автономність**: перехід на deep sleep і ESP-NOW перетворює це на
+  проєкт 60.
+```
+
+**Доказ**
+
+- **Статус:** verbatim — primary, quoted — the source was obtained and the extract copied
+- **Джерело:** source-cache/ds18b20.pdf
+- **Дослівно з джерела:**
+  > Measures Temperatures from -55°C to +125°C
+- **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
+- **Нотатка:** DS18B20 може працювати на вулиці в діапазоні від -55°C до +125°C.
+- **Прохід:** m2-wave2
+
+---

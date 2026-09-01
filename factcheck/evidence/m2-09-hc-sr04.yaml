@@ -1,6 +1,5 @@
 - nazva: HC-SR04 — діапазон 2-400 см
   zbih: \*\*HC-SR04\*\* — ультразвуковий далекомір, 2–400 см\.
-  klas: A
   dzherelo: Ultrasonic Ranging Module HC-SR04, datasheet ElecFreaks — розділи «Product features» і «Electric
     Parameter»
   cytata: "Ultrasonic ranging module HC-SR04 provides 2cm - 400cm non-contact\nmeasurement function, the\
@@ -25,7 +24,6 @@
 - nazva: HC-SR04 живиться від 5 В, тому ECHO дає 5 В
   zbih: HC-SR04 живиться від 5 В і видає \*\*5 В на виводі `ECHO`|HC-SR04 видає 5 В на `ECHO` — дільник
     обов.язковий
-  klas: B
   dzherelo: 'Ultrasonic Ranging Module HC-SR04, datasheet ElecFreaks — «Electric Parameter» і «Wire connecting»
     (кеш: source-cache/hc-sr04.pdf)'
   cytata: "Wire connecting direct as following:\n  5V Supply\n  Trigger Pulse Input\n  Echo Pulse Output\n\
@@ -56,7 +54,6 @@
     3.6 В (доказ `m2-06-napruga-mezhi`). Але реєстр має показувати `B`, а не вдавати цитату, якої немає.'
 - nazva: DS3231 і BH1750 — джерела недосяжні з цієї мережі
   zbih: DS3231 · Що дає → RTC з батарейкою
-  klas: C
   dzherelo: DS3231 Extremely Accurate I2C-Integrated RTC/TCXO/Crystal, datasheet Maxim Integrated (нині
     Analog Devices) — https://www.analog.com/en/products/ds3231.html
   shukaty: 'точність ходу (± ppm за температурою), струм від резервної батареї в режимі підтримки, діапазон

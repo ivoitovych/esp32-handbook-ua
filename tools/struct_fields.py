@@ -28,7 +28,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 GRUPY = ("kartky", "manual", "dodatky", "inserts")
 
 RE_BLOK = re.compile(r"```c\n(.*?)```", re.S)
@@ -40,7 +40,7 @@ RE_POLE = re.compile(r"\.([a-zA-Z_]\w*(?:\.\w+)*)\s*=")
 
 def dozvoleni() -> dict[str, set[str]]:
     """Поля структур із генератора заглушок — тобто із заголовків ESP-IDF."""
-    sys.path.insert(0, str(ROOT / "tools"))
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
     import importlib.util
     spec = importlib.util.spec_from_file_location(
         "kod_stubs", ROOT / "tools" / "kod-stubs.py")

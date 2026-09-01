@@ -21,7 +21,7 @@ from pathlib import Path
 
 import yaml
 
-ROOT = Path(__file__).resolve().parent.parent
+from repo import ROOT  # noqa: E402  (root is found, not counted)
 SRC_DIRS = ("kartky", "manual", "dodatky", "inserts")
 
 RE_ANCHOR = re.compile(r"\{#([a-z0-9][a-z0-9-]*)\}")

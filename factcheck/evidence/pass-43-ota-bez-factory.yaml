@@ -20,7 +20,6 @@
 
 - nazva: Розділ factory в схемі OTA не обов'язковий
   zbih: Схема з двох слотів без
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
   cytata: 'If you want to conserve flash usage in an OTA project, you can remove the factory
     partition and use ``ota_0`` instead.

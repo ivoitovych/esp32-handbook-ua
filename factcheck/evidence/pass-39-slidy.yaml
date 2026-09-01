@@ -1,7 +1,7 @@
 # Прохід 39 — перші відпрацьовані сліди класу `E`.
 #
 # Сліди (`ideya`) — це здогади помічників про те, де шукати. Раніше вони
-# лежали у звітах і нікуди не вели. `tools/leads.py` зібрав 154, відібрав
+# лежали у звітах і нікуди не вели. `factcheck/tools/leads.py` зібрав 154, відібрав
 # 56 досяжних, і п'ять помічників пішли по них.
 #
 # Заявлено 10 `znayshov`, третій шар витримали 8. Тобто **дослівність**
@@ -49,7 +49,6 @@
 - nazva: Піни 34–39 classic не мають вбудованого підтягування
   zbih: Піни 34–39 \*\*не мають вбудованого підтягування\*\*|Піни 34–39\s+вбудованого підтягування
     не мають
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_driver_gpio/include/driver/gpio.h
   cytata: '* @note ESP32: Only pins that support both input & output have integrated pull-up
     and pull-down resistors. Input-only GPIOs 34-39 do not.
@@ -79,7 +78,6 @@
   - fe59eb63
 - nazva: ESP-NOW — прийом через зареєстрований обробник
   zbih: Прийом — через зареєстрований обробник
-  klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
   cytata: 'Call :cpp:func:`esp_now_register_recv_cb()` to register receiving callback function.
 
@@ -97,7 +95,6 @@
   - aaeb4359
 - nazva: Вбудований USB — окремого моста немає
   zbih: немає окремого чипа · Драйвер → драйвер не потрібен
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/usb-serial-jtag-console.rst
   cytata: 'thus does not require an external USB-UART bridge chip
 
@@ -121,7 +118,6 @@
   - 848e213b
 - nazva: ESP-NOW — важка робота в обробнику шкодить
   zbih: Важка робота там блокує радіостек
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
   cytata: 'do not do lengthy operations in the callback function. Instead, post the necessary
     data to a queue and handle it from a lower priority task.
@@ -147,7 +143,6 @@
   - 6871d700
 - nazva: OTA — сертифікат сервера вбудовано в образ
   zbih: Сертифікат кладеться в образ як вбудований ресурс
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/system/ota/simple_ota_example/main/simple_ota_example.c
   cytata: 'extern const uint8_t server_cert_pem_start[] asm("_binary_ca_cert_pem_start");
 
@@ -173,7 +168,6 @@
   - bc76db57
 - nazva: Тільки-вхідні піни — ні драйвера, ні підтягування
   zbih: вихідного драйвера — керувати з них нічим не можна
-  klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_driver_gpio/include/driver/gpio.h
   cytata: '* @note ESP32: Only pins that support both input & output have integrated pull-up
     and pull-down resistors. Input-only GPIOs 34-39 do not.
