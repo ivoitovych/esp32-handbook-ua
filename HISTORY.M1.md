@@ -1,5 +1,24 @@
 # Журнал робіт: супровідник М1
 
+> **historical** — a record of a finished shift; not edited, numbers frozen
+>
+> Frozen at `2026-08-26 23:16Z`, the date the text itself states. The
+> numbers here were true on that date and are not to be brought up to
+> date; two of them (`7800`, `3892`) are also asserted live in
+> `arithmetic.py` and `sample.py`, and those copies are the ones that
+> move.
+>
+> **Seven of the tools named below no longer exist** under those names:
+> `citaty`, `vyvantazh`, `pokazhchyk`, `vybirka`, `shturm`, `naryad`,
+> `kalky`. They are not broken links to be repaired — they are what the
+> record says, and repairing them would forge it. The map from the old
+> name to the new is in `factcheck/tools/renames.py`.
+>
+> `idf.py` is **not** one of ours and is not stale: it is Espressif's
+> build tool, discussed here as a subject of the book. A sweep that
+> collects `*.py` from the text will pick it up as a stale name of ours;
+> it is not one.
+
 Робочий лог першого супровідника. Пишеться від першої особи навмисно:
 це не звіт про досягнення, а перелік того, що робилося, що з цього
 вийшло і де я помилявся. Другий супровідник веде свій.

@@ -1,5 +1,12 @@
 # v1.0-print-1 — first attempt at the first print run
 
+> **historical** — the state that went to print; not edited, ever
+>
+> This file is the anchor every entry in `ERRATA.md` is keyed to. Editing
+> it would not make it more accurate — it would silently unmoor the whole
+> errata, and no reader of the first print run could tell what had
+> changed.
+
 This file records the state of the handbook submitted for its first
 commercial print run, so that errata can be keyed to it.
 
