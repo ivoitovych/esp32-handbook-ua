@@ -109,8 +109,14 @@ def _own_names() -> re.Pattern:
             # > whatever you did not, and here what it left in matched
             # > everything. Take the parts you want, never drop the ones
             # > you do not.
-            hvist = re.sub(r"\.git$", "", r.stdout.strip()).rstrip("/")
-            parts += [x for x in hvist.split("/")[-2:] if x]
+            # Split on `:` as well as `/`. An SSH remote is
+            # `git@github.com:owner/repo`, so splitting on `/` alone makes
+            # the owner segment `git@github.com:owner` — a token that
+            # matches nothing in an https address, leaving only the
+            # repository name to do the work. Correct today, and it would
+            # quietly lose the owner if the repository were ever renamed.
+            tail = re.sub(r"\.git$", "", r.stdout.strip()).rstrip("/")
+            parts += [x for x in re.split(r"[/:]", tail)[-2:] if x]
     except Exception:
         pass
     parts.append(ROOT.name)

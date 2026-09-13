@@ -164,6 +164,10 @@ def demo() -> int:
     check("a glob is not checked",
           not check_all({"tools/x.py": 'A = FC / "*.md"'}))
     check("every tool parses under strict warnings", not parses_strictly())
+    check("no construct newer than the oldest interpreter in use",
+          not parses_on_oldest())
+    check("the 3.12-only construct is recognised",
+          bool(RE_FSTRING_BACKSLASH.search(PROBE_312)))
     print("\nfailures:", 0 if ok else 1)
     return 0 if ok else 1
 
@@ -195,6 +199,50 @@ def parses_strictly() -> list[str]:
     return problems
 
 
+# The oldest interpreter any maintainer runs. A construct newer than this
+# must not appear, however happily it parses here.
+MIN_PYTHON = (3, 11)
+
+# A line the check must recognise. Built here so the file itself stays
+# free of the construct it forbids.
+PROBE_312 = 'f"{a' + chr(92) + chr(92) + 'b}"'
+
+# A backslash inside an f-string EXPRESSION — legal only from 3.12 (PEP
+# 701). Everything else in these tools is older than that.
+RE_FSTRING_BACKSLASH = re.compile(r"""f["'][^"'\n]*\{[^}\n]*\\""")
+
+
+def parses_on_oldest() -> list[str]:
+    """Constructs newer than the oldest interpreter in use.
+
+    `parses_strictly` asks the RUNNING interpreter, and the running
+    interpreter cannot object to a construct it supports. One tool used a
+    backslash inside an f-string expression; it parsed here on 3.12 and
+    did not parse at all on 3.11, so for the other maintainer the tool
+    simply **did not exist** — and the checker that reads the tools said
+    it could not check the documents that tool writes.
+
+    > A tool that needs a newer interpreter than a collaborator has does
+    > not exist for them, and no run on the author's machine will ever
+    > show it.
+
+    A syntactic check, not a real parse: there is no 3.11 here to ask. It
+    knows one construct, and another will have to be added the day it
+    bites. A list of one is better than a check that asks the wrong
+    interpreter.
+    """
+    problems = []
+    for d in TOOL_DIRS:
+        for f in sorted((ROOT / d).glob("*.py")):
+            for i, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
+                if RE_FSTRING_BACKSLASH.search(line):
+                    problems.append(
+                        f"{d}/{f.name}:{i}: a backslash inside an f-string "
+                        f"expression needs Python 3.12; the oldest in use "
+                        f"is 3.11")
+    return problems
+
+
 def main() -> int:
     if "--demo" in sys.argv:
         return demo()
@@ -203,7 +251,7 @@ def main() -> int:
             print(f"  {'OK ' if (ROOT / s).exists() else 'MISSING'}  "
                   f"{tool:<26}{s}")
         return 0
-    problems = check_all() + parses_strictly()
+    problems = check_all() + parses_strictly() + parses_on_oldest()
     znaydeno = len(set(literal_paths()))
     if not znaydeno:
         print("   ✗ no literal paths found at all — this check is looking "

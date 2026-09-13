@@ -3,9 +3,10 @@
 
 ## The problem this closes
 
-`factcheck/` holds thirty-one documents. Some are rewritten by a tool on
-every run; some are the authoritative statement of a rule; some are the
-record of a wave that finished days ago. Nothing said which was which.
+`factcheck/` and the repository root hold the maintainers' documents.
+Some are rewritten by a tool on every run; some are the authoritative
+statement of a rule; some are the record of a wave that finished days
+ago. Nothing said which was which.
 
 The cost was not theoretical. `QUOTES.md` was hand-merged during a
 conflict resolution — a file a tool overwrites minutes later. Five
@@ -13,6 +14,13 @@ conflict resolution — a file a tool overwrites minutes later. Five
 they were finished records rather than live ones. And a maintainer
 reading a number in a historical file has no way to know it was true
 only on the day it was written.
+
+The root was worse than unlabelled: it was **unseen**. Six documents sat
+there outside every check, and two had already rotted — `HISTORY.M1.md`
+and `HISTORY.M2.md` name eight tools that no longer exist. A sweep for
+stale references missed them twice, because it searched for `tools/x.py`
+while a journal writes the bare `x.py`. The check ran, returned zero,
+and the zero was about nothing.
 
     generated   a tool rewrites it; editing it by hand is wasted work
     canonical   the authoritative statement; one owner, no copies
@@ -68,6 +76,14 @@ ISTORYCHNI = {
     "ARCHITECTURE-M2.md", "SOURCES-M2.md", "LESSONS-M2.md", "NETWORK-M2.md",
     "TO-VERIFY-M2.md", "REFUTED-M2.md", "TO-VERIFY.md",
     "MEASURE-UNCHECKED.md", "WAVE-W1.md",
+    # Корінь. Обидва журнали самі кажуть свою дату в перших рядках
+    # («Стан на 2026-08-26 23:16Z»), тобто вже були заморожені за
+    # задумом — просто ніхто цього не перевіряв.
+    "HISTORY.M1.md", "HISTORY.M2.md",
+    # `PRINT-1.md` заморожений найсуворіше з усіх: до нього прив'язана
+    # КОЖНА правка в `ERRATA.md`. Виправити його означало б тихо
+    # від'єднати всю errata від того, що справді пішло в друк.
+    "PRINT-1.md",
 }
 
 # Позначка англійською навмисно. Половина керівних документів уже
@@ -147,8 +163,26 @@ NE_DOKUMENTY = set(config.groups()) | {"runs", "archive", "source-cache"}
 
 
 def dokumenty() -> list:
-    return [p for p in FC.rglob("*.md")
+    """Документи супровідника: `factcheck/` і корінь репозиторію.
+
+    Корінь — плаский `glob`, не `rglob`, і це не оптимізація. Рекурсія
+    звідси втягнула б книгу, листи `zvyazok/` і кеш, тобто рівно ті три
+    роди тексту, які вище названо не-документами. Один рівень кореня —
+    це шість файлів, і всі шість наші.
+    """
+    u_fc = [p for p in FC.rglob("*.md")
             if not (NE_DOKUMENTY & set(p.relative_to(FC).parts))]
+    return u_fc + list(ROOT.glob("*.md"))
+
+
+def nazva(p: pathlib.Path) -> str:
+    """Ім'я для показу, від кореня.
+
+    Було `relative_to(FC)`, і на документі кореня воно не помиляється,
+    а **падає**. Шлях, зібраний із припущення, де саме лежить предмет, —
+    той самий промах, що вже коштував трьом перевіркам їхнього обсягу.
+    """
+    return str(p.relative_to(ROOT))
 
 
 def rid_dokumenta(p: pathlib.Path, pyshe: dict[str, set[str]]) -> str:
@@ -187,27 +221,30 @@ def perevirka() -> list[str]:
         ye = poznaka(p)
         maye = rid_dokumenta(p, pyshe)
         if not ye:
-            bidy.append(f"{p.relative_to(FC)}: немає позначки роду (мав би `{maye}`)")
+            bidy.append(f"{nazva(p)}: немає позначки роду (мав би `{maye}`)")
             continue
         rid, hvist = ye
         if rid != maye:
-            bidy.append(f"{p.relative_to(FC)}: позначено `{rid}`, а насправді `{maye}`")
+            bidy.append(f"{nazva(p)}: позначено `{rid}`, а насправді `{maye}`")
             continue
         if rid == "generated":
             tuly = pyshe[p.name]
             if not any(f"tools/{t}.py" in hvist for t in tuly):
                 bidy.append(
-                    f"{p.relative_to(FC)}: labelled generated, but the tool is not named — "
+                    f"{nazva(p)}: labelled generated, but the tool is not named — "
                     f"it is written by {', '.join(sorted(tuly))}")
     # Зворотний бік: щось переписує документ, а той про це не каже.
+    # Обидві теки, бо ім'я не визначає файл: `README.md` є і в корені, і
+    # в `factcheck/`. Шукати лише в одній означало б мовчки не перевірити
+    # другу — і саме так корінь і прожив поза перевіркою досі.
     for imya, tuly in sorted(pyshe.items()):
-        p = FC / imya
-        if not p.exists():
-            continue
-        ye = poznaka(p)
-        if ye and ye[0] != "generated":
-            bidy.append(f"{imya}: позначено `{ye[0]}`, а його переписує "
-                        f"{', '.join(sorted(tuly))} — правки згорять")
+        for p in (FC / imya, ROOT / imya):
+            if not p.exists():
+                continue
+            ye = poznaka(p)
+            if ye and ye[0] != "generated":
+                bidy.append(f"{nazva(p)}: позначено `{ye[0]}`, а його переписує "
+                            f"{', '.join(sorted(tuly))} — правки згорять")
     return bidy
 
 
@@ -230,7 +267,7 @@ def rozstavyty() -> int:
         ryadky.insert(i, f"\n> **{rid}** — {hvist}")
         p.write_text("\n".join(ryadky), encoding="utf-8")
         n += 1
-        print(f"  {rid:<12} {p.relative_to(FC)}")
+        print(f"  {rid:<12} {nazva(p)}")
     print(f"позначено документів: {n}")
     return 0
 
@@ -252,6 +289,17 @@ def samoperevirka() -> int:
           is not None)
     probа("чужий рід не читається як позначка",
           RE_POZNAKA.search("> **invented** — x") is None)
+    # Обсяг перевіряється сам. Розширення на корінь скасовується одним
+    # словом (`ROOT.glob` → нічого), і скасування виглядало б як чистий
+    # прогін: «порушень 0» про шість документів, яких не відкривали.
+    korin = [x for x in dokumenty() if x.parent == ROOT]
+    probа(f"корінь у обсязі ({len(korin)} документів)", len(korin) >= 5)
+    probа("HISTORY.M1.md серед документів",
+          any(x.name == "HISTORY.M1.md" for x in korin))
+    # Два README з одним іменем мусять показуватися по-різному, інакше
+    # доповідь про один читається як доповідь про інший.
+    probа("два README розрізняються в показі",
+          nazva(ROOT / "README.md") != nazva(FC / "README.md"))
     print("самоперевірка: усе як очікувано" if not pomylok
           else f"самоперевірка: РОЗБІЖНОСТЕЙ {pomylok}")
     return 1 if pomylok else 0

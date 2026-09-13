@@ -167,8 +167,8 @@ and moving it is no longer an edit to it.
 
 Two further lessons from the same area:
 
-**One path has several spellings.** A sweep that matched
-a sweep matching one spelling of a path constant missed another and missed
+**One path has several spellings.** A sweep matching one spelling of a
+path constant missed another, and missed
 `"root" / "dir/file.yaml"` — the directory name was not a whole token
 there. Six live constants stayed broken and every gate was green, because
 those paths are only touched when someone runs that particular tool.
@@ -178,6 +178,30 @@ directories, a pattern written for a tool path in one of them also
 matched that path as a *substring* of the other — then checked an address
 that had never existed and declared a sound document broken. A miss is at
 least visible; a false hit reads as a finding.
+
+The same trap caught a check of the checks. A sweep for stale tool
+references searched for the qualified form — the tool directory, a
+slash, the file name — and reported zero, while the documents it was
+auditing name a tool the way prose does: bare, with no directory. Seven
+dead names sat in plain sight behind a clean report.
+
+**Scope named after a directory stops at that directory.** Every
+document-level check took `factcheck/` as its subject, because that is
+where the technology lives. Six documents in the repository root were
+therefore outside all of them — unlabelled, unlinked, unchecked — and two
+had been quietly rotting for months. Nothing failed; there was simply no
+check whose subject they were. The remedy is the same one as for depth:
+name the subject by what it *is* (a maintainer's document) rather than by
+where it happens to sit, and give the scope itself a probe, because a
+scope that silently shrinks back to one directory reads as a clean run.
+
+**A sweep for your own names collects other people's.** Auditing those
+same documents for stale tool names picked up `idf.py` — Espressif's
+build tool, discussed as a subject of the book, never ours and not stale.
+Seven of the eight names it flagged were real; the eighth would have sent
+a reader hunting through the rename map for something that was never in
+it. A pattern that recognises the *shape* of your names (`*.py`) has not
+established their *ownership*.
 
 ---
 

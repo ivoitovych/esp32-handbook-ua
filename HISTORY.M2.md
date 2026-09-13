@@ -1,5 +1,14 @@
 # Історія очима М2
 
+> **historical** — a record of a finished shift; not edited, numbers frozen
+>
+> Frozen at `2026-08-26`, the date the text itself states. The numbers
+> here were true on that date and are not to be brought up to date.
+>
+> The one tool named below, `citaty.py`, no longer exists; it is now
+> `layer3.py`. The old name stays: it is what the record says. The map
+> is in `factcheck/tools/renames.py`.
+
 Написано о `2026-08-26`, наприкінці зміни, до злиття. Це не звіт про
 зроблене — звіти лежать у `zvyazok/`. Це про те, **як** воно робилося і
 чого коштувало, включно з тим, чого я волів би не писати.
