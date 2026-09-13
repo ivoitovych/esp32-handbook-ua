@@ -101,7 +101,7 @@
 
 ---
 
-<!-- fc id:T-15-004 sha:13cd498e src:manual/15-oflayn.md:11 status:no-external-signal -->
+<!-- fc id:T-15-004 sha:13cd498e src:manual/15-oflayn.md:11 status:unchecked -->
 ### T-15-004 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -177,7 +177,7 @@
 
 ---
 
-<!-- fc id:T-15-006 sha:ef64df16 src:manual/15-oflayn.md:12 status:no-external-signal -->
+<!-- fc id:T-15-006 sha:ef64df16 src:manual/15-oflayn.md:12 status:unchecked -->
 ### T-15-006 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -291,7 +291,7 @@
 
 ---
 
-<!-- fc id:T-15-009 sha:0f6b1417 src:manual/15-oflayn.md:14 status:no-external-signal -->
+<!-- fc id:T-15-009 sha:0f6b1417 src:manual/15-oflayn.md:14 status:unchecked -->
 ### T-15-009 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -329,7 +329,7 @@
 
 ---
 
-<!-- fc id:T-15-010 sha:4c948852 src:manual/15-oflayn.md:14 status:no-external-signal -->
+<!-- fc id:T-15-010 sha:4c948852 src:manual/15-oflayn.md:14 status:unchecked -->
 ### T-15-010 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -639,7 +639,7 @@
 
 ---
 
-<!-- fc id:T-15-018 sha:9c3b22f1 src:manual/15-oflayn.md:18 status:no-external-signal -->
+<!-- fc id:T-15-018 sha:9c3b22f1 src:manual/15-oflayn.md:18 status:unchecked -->
 ### T-15-018 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -677,7 +677,7 @@
 
 ---
 
-<!-- fc id:T-15-019 sha:4a48c8a2 src:manual/15-oflayn.md:19 status:no-external-signal -->
+<!-- fc id:T-15-019 sha:4a48c8a2 src:manual/15-oflayn.md:19 status:unchecked -->
 ### T-15-019 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**
@@ -715,7 +715,7 @@
 
 ---
 
-<!-- fc id:T-15-020 sha:827a4abd src:manual/15-oflayn.md:19 status:no-external-signal -->
+<!-- fc id:T-15-020 sha:827a4abd src:manual/15-oflayn.md:19 status:unchecked -->
 ### T-15-020 · komirka · `manual/15-oflayn.md`
 
 **Твердження, коротко**

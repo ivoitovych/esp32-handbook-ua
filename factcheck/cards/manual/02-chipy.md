@@ -4492,7 +4492,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-121 sha:aafacce0 src:manual/02-chipy.md:180 status:no-external-signal -->
+<!-- fc id:T-02-121 sha:aafacce0 src:manual/02-chipy.md:180 status:unchecked -->
 ### T-02-121 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4531,7 +4531,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-122 sha:31913840 src:manual/02-chipy.md:180 status:no-external-signal -->
+<!-- fc id:T-02-122 sha:31913840 src:manual/02-chipy.md:180 status:unchecked -->
 ### T-02-122 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4732,7 +4732,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-127 sha:ae41dea8 src:manual/02-chipy.md:183 status:no-external-signal -->
+<!-- fc id:T-02-127 sha:ae41dea8 src:manual/02-chipy.md:183 status:unchecked -->
 ### T-02-127 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4771,7 +4771,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-128 sha:4020ac33 src:manual/02-chipy.md:183 status:no-external-signal -->
+<!-- fc id:T-02-128 sha:4020ac33 src:manual/02-chipy.md:183 status:unchecked -->
 ### T-02-128 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5235,7 +5235,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-138 sha:7f0446d0 src:manual/02-chipy.md:188 status:no-external-signal -->
+<!-- fc id:T-02-138 sha:7f0446d0 src:manual/02-chipy.md:188 status:unchecked -->
 ### T-02-138 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**

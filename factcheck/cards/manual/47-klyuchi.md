@@ -261,7 +261,7 @@
 
 ---
 
-<!-- fc id:T-47-008 sha:7d8f9d5c src:manual/47-klyuchi.md:15 status:no-external-signal -->
+<!-- fc id:T-47-008 sha:7d8f9d5c src:manual/47-klyuchi.md:15 status:unchecked -->
 ### T-47-008 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -295,7 +295,7 @@
 
 ---
 
-<!-- fc id:T-47-009 sha:1ecf0c22 src:manual/47-klyuchi.md:16 status:no-external-signal -->
+<!-- fc id:T-47-009 sha:1ecf0c22 src:manual/47-klyuchi.md:16 status:unchecked -->
 ### T-47-009 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -329,7 +329,7 @@
 
 ---
 
-<!-- fc id:T-47-010 sha:f9e16d4a src:manual/47-klyuchi.md:16 status:no-external-signal -->
+<!-- fc id:T-47-010 sha:f9e16d4a src:manual/47-klyuchi.md:16 status:unchecked -->
 ### T-47-010 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -363,7 +363,7 @@
 
 ---
 
-<!-- fc id:T-47-011 sha:80bf27f5 src:manual/47-klyuchi.md:17 status:no-external-signal -->
+<!-- fc id:T-47-011 sha:80bf27f5 src:manual/47-klyuchi.md:17 status:unchecked -->
 ### T-47-011 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -397,7 +397,7 @@
 
 ---
 
-<!-- fc id:T-47-012 sha:39a2c8d5 src:manual/47-klyuchi.md:17 status:no-external-signal -->
+<!-- fc id:T-47-012 sha:39a2c8d5 src:manual/47-klyuchi.md:17 status:unchecked -->
 ### T-47-012 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -477,7 +477,7 @@
 
 ---
 
-<!-- fc id:T-47-014 sha:3aeb6a4c src:manual/47-klyuchi.md:18 status:no-external-signal -->
+<!-- fc id:T-47-014 sha:3aeb6a4c src:manual/47-klyuchi.md:18 status:unchecked -->
 ### T-47-014 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**

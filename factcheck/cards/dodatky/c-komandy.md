@@ -921,7 +921,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-028 sha:36969ccb src:dodatky/c-komandy.md:63 status:no-external-signal -->
+<!-- fc id:T-C-028 sha:36969ccb src:dodatky/c-komandy.md:63 status:unchecked -->
 ### T-C-028 · tablycya · `dodatky/c-komandy.md`
 
 **Твердження, коротко**

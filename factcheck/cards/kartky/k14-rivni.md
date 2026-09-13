@@ -338,7 +338,7 @@
 
 ---
 
-<!-- fc id:T-K14-011 sha:75750156 src:kartky/k14-rivni.md:22 status:no-external-signal -->
+<!-- fc id:T-K14-011 sha:75750156 src:kartky/k14-rivni.md:22 status:unchecked -->
 ### T-K14-011 · komirka · `kartky/k14-rivni.md`
 
 **Твердження, коротко**
@@ -909,7 +909,7 @@
 
 ---
 
-<!-- fc id:T-K14-027 sha:a7f9a5da src:kartky/k14-rivni.md:55 status:no-external-signal -->
+<!-- fc id:T-K14-027 sha:a7f9a5da src:kartky/k14-rivni.md:55 status:unchecked -->
 ### T-K14-027 · tablycya · `kartky/k14-rivni.md`
 
 **Твердження, коротко**

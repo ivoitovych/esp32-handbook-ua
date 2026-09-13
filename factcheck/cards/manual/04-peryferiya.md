@@ -1481,7 +1481,7 @@
 
 ---
 
-<!-- fc id:T-04-043 sha:20f2f218 src:manual/04-peryferiya.md:69 status:no-external-signal -->
+<!-- fc id:T-04-043 sha:20f2f218 src:manual/04-peryferiya.md:69 status:unchecked -->
 ### T-04-043 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1516,7 +1516,7 @@
 
 ---
 
-<!-- fc id:T-04-044 sha:e6046b59 src:manual/04-peryferiya.md:69 status:no-external-signal -->
+<!-- fc id:T-04-044 sha:e6046b59 src:manual/04-peryferiya.md:69 status:unchecked -->
 ### T-04-044 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1551,7 +1551,7 @@
 
 ---
 
-<!-- fc id:T-04-045 sha:0339aa31 src:manual/04-peryferiya.md:70 status:no-external-signal -->
+<!-- fc id:T-04-045 sha:0339aa31 src:manual/04-peryferiya.md:70 status:unchecked -->
 ### T-04-045 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1586,7 +1586,7 @@
 
 ---
 
-<!-- fc id:T-04-046 sha:b285d77f src:manual/04-peryferiya.md:70 status:no-external-signal -->
+<!-- fc id:T-04-046 sha:b285d77f src:manual/04-peryferiya.md:70 status:unchecked -->
 ### T-04-046 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1786,7 +1786,7 @@
 
 ---
 
-<!-- fc id:T-04-052 sha:ae400fb3 src:manual/04-peryferiya.md:78 status:no-external-signal -->
+<!-- fc id:T-04-052 sha:ae400fb3 src:manual/04-peryferiya.md:78 status:unchecked -->
 ### T-04-052 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1819,7 +1819,7 @@
 
 ---
 
-<!-- fc id:T-04-053 sha:401ee8a6 src:manual/04-peryferiya.md:78 status:no-external-signal -->
+<!-- fc id:T-04-053 sha:401ee8a6 src:manual/04-peryferiya.md:78 status:unchecked -->
 ### T-04-053 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4110,7 +4110,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-110 sha:1cef09c9 src:manual/04-peryferiya.md:122 status:no-external-signal -->
+<!-- fc id:T-04-110 sha:1cef09c9 src:manual/04-peryferiya.md:122 status:unchecked -->
 ### T-04-110 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**

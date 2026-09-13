@@ -14,8 +14,8 @@ the state.
   claim units              8110   (+ 221 code blocks as context)
   checked against a source or by calculation
                            2385   29.4 %
-  closed as a decision     3780   46.6 %   no external signal in the text
-  still open               1893   23.3 %
+  closed as a decision     3277   40.4 %   no external signal in the text
+  still open               2396   29.5 %
 ```
 
 The three lines do not add to the whole, and the gap is deliberate:
@@ -34,12 +34,12 @@ so it is counted in neither column. `METHOD.md`, Part II, says why.
 | `named-unreachable` | 178 | 2.2 % | secondary — the source cannot be reached from here; URL recorded, no quote |
 | `self-consistent` | 44 | 0.5 % | internal check — the book agrees with itself; no external confirmation |
 | `looked-not-found` | 8 | 0.1 % | looked and did not find — the work was done, the source is not visible |
-| `no-external-signal` | 3780 | 46.6 % | no signal in the text to check against — assigned mechanically, not checked |
-| `unchecked` | 1715 | 21.1 % | not checked |
+| `no-external-signal` | 3277 | 40.4 % | no signal in the text to check against — assigned mechanically, not checked |
+| `unchecked` | 2218 | 27.3 % | not checked |
 
 ## The weakest number on this page
 
-`no-external-signal` is 46.6 % of the book — the largest
+`no-external-signal` is 40.4 % of the book — the largest
 single status, and the only one that certifies itself. It is assigned
 mechanically, for want of a digit, identifier or unit in the text, and
 it reads to a reader as *no source exists*. Those are not the same
@@ -80,7 +80,7 @@ is for.
 
 ## What is left
 
-1893 units are open: 1715 never looked at,
+2396 units are open: 2218 never looked at,
 178 waiting on a source that cannot be reached from here.
 
 The registry is complete by construction — every line of the book has

@@ -663,7 +663,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-020 sha:6ba33956 src:manual/36-spi.md:36 status:no-external-signal -->
+<!-- fc id:T-36-020 sha:6ba33956 src:manual/36-spi.md:36 status:unchecked -->
 ### T-36-020 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -698,7 +698,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-021 sha:64e344a1 src:manual/36-spi.md:36 status:no-external-signal -->
+<!-- fc id:T-36-021 sha:64e344a1 src:manual/36-spi.md:36 status:unchecked -->
 ### T-36-021 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -733,7 +733,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-022 sha:2123aca4 src:manual/36-spi.md:36 status:no-external-signal -->
+<!-- fc id:T-36-022 sha:2123aca4 src:manual/36-spi.md:36 status:unchecked -->
 ### T-36-022 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -822,7 +822,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-024 sha:223a3e23 src:manual/36-spi.md:36 status:no-external-signal -->
+<!-- fc id:T-36-024 sha:223a3e23 src:manual/36-spi.md:36 status:unchecked -->
 ### T-36-024 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -857,7 +857,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-025 sha:aa8cad3b src:manual/36-spi.md:37 status:no-external-signal -->
+<!-- fc id:T-36-025 sha:aa8cad3b src:manual/36-spi.md:37 status:unchecked -->
 ### T-36-025 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -892,7 +892,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-026 sha:bdd9609f src:manual/36-spi.md:37 status:no-external-signal -->
+<!-- fc id:T-36-026 sha:bdd9609f src:manual/36-spi.md:37 status:unchecked -->
 ### T-36-026 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -927,7 +927,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-027 sha:b3cf1ed6 src:manual/36-spi.md:37 status:no-external-signal -->
+<!-- fc id:T-36-027 sha:b3cf1ed6 src:manual/36-spi.md:37 status:unchecked -->
 ### T-36-027 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1016,7 +1016,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-029 sha:bba396cb src:manual/36-spi.md:37 status:no-external-signal -->
+<!-- fc id:T-36-029 sha:bba396cb src:manual/36-spi.md:37 status:unchecked -->
 ### T-36-029 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1051,7 +1051,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-030 sha:2555e825 src:manual/36-spi.md:38 status:no-external-signal -->
+<!-- fc id:T-36-030 sha:2555e825 src:manual/36-spi.md:38 status:unchecked -->
 ### T-36-030 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1086,7 +1086,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-031 sha:5ab027b6 src:manual/36-spi.md:38 status:no-external-signal -->
+<!-- fc id:T-36-031 sha:5ab027b6 src:manual/36-spi.md:38 status:unchecked -->
 ### T-36-031 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1121,7 +1121,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-032 sha:144757db src:manual/36-spi.md:38 status:no-external-signal -->
+<!-- fc id:T-36-032 sha:144757db src:manual/36-spi.md:38 status:unchecked -->
 ### T-36-032 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1156,7 +1156,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-033 sha:af086205 src:manual/36-spi.md:38 status:no-external-signal -->
+<!-- fc id:T-36-033 sha:af086205 src:manual/36-spi.md:38 status:unchecked -->
 ### T-36-033 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1191,7 +1191,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-034 sha:660e22ea src:manual/36-spi.md:38 status:no-external-signal -->
+<!-- fc id:T-36-034 sha:660e22ea src:manual/36-spi.md:38 status:unchecked -->
 ### T-36-034 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1226,7 +1226,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-035 sha:5126ad31 src:manual/36-spi.md:39 status:no-external-signal -->
+<!-- fc id:T-36-035 sha:5126ad31 src:manual/36-spi.md:39 status:unchecked -->
 ### T-36-035 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1261,7 +1261,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-036 sha:9cdc1493 src:manual/36-spi.md:39 status:no-external-signal -->
+<!-- fc id:T-36-036 sha:9cdc1493 src:manual/36-spi.md:39 status:unchecked -->
 ### T-36-036 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1296,7 +1296,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-037 sha:68e27934 src:manual/36-spi.md:39 status:no-external-signal -->
+<!-- fc id:T-36-037 sha:68e27934 src:manual/36-spi.md:39 status:unchecked -->
 ### T-36-037 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1385,7 +1385,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-039 sha:b7269d9d src:manual/36-spi.md:39 status:no-external-signal -->
+<!-- fc id:T-36-039 sha:b7269d9d src:manual/36-spi.md:39 status:unchecked -->
 ### T-36-039 · komirka · `manual/36-spi.md`
 
 **Твердження, коротко**

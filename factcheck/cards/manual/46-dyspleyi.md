@@ -767,7 +767,7 @@
 
 ---
 
-<!-- fc id:T-46-020 sha:2fd93771 src:manual/46-dyspleyi.md:15 status:no-external-signal -->
+<!-- fc id:T-46-020 sha:2fd93771 src:manual/46-dyspleyi.md:15 status:unchecked -->
 ### T-46-020 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -835,7 +835,7 @@
 
 ---
 
-<!-- fc id:T-46-022 sha:f0cf6de6 src:manual/46-dyspleyi.md:15 status:no-external-signal -->
+<!-- fc id:T-46-022 sha:f0cf6de6 src:manual/46-dyspleyi.md:15 status:unchecked -->
 ### T-46-022 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -869,7 +869,7 @@
 
 ---
 
-<!-- fc id:T-46-023 sha:336725e3 src:manual/46-dyspleyi.md:15 status:no-external-signal -->
+<!-- fc id:T-46-023 sha:336725e3 src:manual/46-dyspleyi.md:15 status:unchecked -->
 ### T-46-023 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**

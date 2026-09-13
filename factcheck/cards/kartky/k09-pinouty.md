@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-K09-003 sha:80a305aa src:kartky/k09-pinouty.md:8 status:no-external-signal -->
+<!-- fc id:T-K09-003 sha:80a305aa src:kartky/k09-pinouty.md:8 status:unchecked -->
 ### T-K09-003 · tablycya · `kartky/k09-pinouty.md`
 
 **Твердження, коротко**
@@ -125,7 +125,7 @@
 
 ---
 
-<!-- fc id:T-K09-005 sha:d97ed996 src:kartky/k09-pinouty.md:11 status:no-external-signal -->
+<!-- fc id:T-K09-005 sha:d97ed996 src:kartky/k09-pinouty.md:11 status:unchecked -->
 ### T-K09-005 · tablycya · `kartky/k09-pinouty.md`
 
 **Твердження, коротко**
@@ -445,7 +445,7 @@ SPI — MOSI 23, MISO 19, SCK 18, CS 5. Апаратні піни — додат
 
 ---
 
-<!-- fc id:T-K09-015 sha:80a305aa src:kartky/k09-pinouty.md:27 status:no-external-signal -->
+<!-- fc id:T-K09-015 sha:80a305aa src:kartky/k09-pinouty.md:27 status:unchecked -->
 ### T-K09-015 · tablycya · `kartky/k09-pinouty.md`
 
 **Твердження, коротко**
@@ -791,7 +791,7 @@ SPI — MOSI 23, MISO 19, SCK 18, CS 5. Апаратні піни — додат
 
 ---
 
-<!-- fc id:T-K09-026 sha:80a305aa src:kartky/k09-pinouty.md:46 status:no-external-signal -->
+<!-- fc id:T-K09-026 sha:80a305aa src:kartky/k09-pinouty.md:46 status:unchecked -->
 ### T-K09-026 · tablycya · `kartky/k09-pinouty.md`
 
 **Твердження, коротко**
@@ -819,7 +819,7 @@ SPI — MOSI 23, MISO 19, SCK 18, CS 5. Апаратні піни — додат
 
 ---
 
-<!-- fc id:T-K09-027 sha:78d5e963 src:kartky/k09-pinouty.md:48 status:no-external-signal -->
+<!-- fc id:T-K09-027 sha:78d5e963 src:kartky/k09-pinouty.md:48 status:unchecked -->
 ### T-K09-027 · tablycya · `kartky/k09-pinouty.md`
 
 **Твердження, коротко**

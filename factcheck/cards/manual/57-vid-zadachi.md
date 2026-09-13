@@ -366,7 +366,7 @@
 
 ---
 
-<!-- fc id:T-57-016 sha:ad44a030 src:manual/57-vid-zadachi.md:47 status:no-external-signal -->
+<!-- fc id:T-57-016 sha:ad44a030 src:manual/57-vid-zadachi.md:47 status:unchecked -->
 ### T-57-016 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -396,7 +396,7 @@
 
 ---
 
-<!-- fc id:T-57-017 sha:51e37d48 src:manual/57-vid-zadachi.md:49 status:no-external-signal -->
+<!-- fc id:T-57-017 sha:51e37d48 src:manual/57-vid-zadachi.md:49 status:unchecked -->
 ### T-57-017 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -911,7 +911,7 @@
 
 ---
 
-<!-- fc id:T-57-037 sha:9c11394c src:manual/57-vid-zadachi.md:101 status:no-external-signal -->
+<!-- fc id:T-57-037 sha:9c11394c src:manual/57-vid-zadachi.md:101 status:unchecked -->
 ### T-57-037 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -939,7 +939,7 @@
 
 ---
 
-<!-- fc id:T-57-038 sha:3efa93c4 src:manual/57-vid-zadachi.md:102 status:no-external-signal -->
+<!-- fc id:T-57-038 sha:3efa93c4 src:manual/57-vid-zadachi.md:102 status:unchecked -->
 ### T-57-038 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -995,7 +995,7 @@
 
 ---
 
-<!-- fc id:T-57-040 sha:7ef24b77 src:manual/57-vid-zadachi.md:104 status:no-external-signal -->
+<!-- fc id:T-57-040 sha:7ef24b77 src:manual/57-vid-zadachi.md:104 status:unchecked -->
 ### T-57-040 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**

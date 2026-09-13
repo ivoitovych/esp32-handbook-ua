@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-K12-003 sha:657b4a4a src:kartky/k12-komplekt.md:8 status:no-external-signal -->
+<!-- fc id:T-K12-003 sha:657b4a4a src:kartky/k12-komplekt.md:8 status:unchecked -->
 ### T-K12-003 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-K12-006 sha:4c3647dc src:kartky/k12-komplekt.md:12 status:no-external-signal -->
+<!-- fc id:T-K12-006 sha:4c3647dc src:kartky/k12-komplekt.md:12 status:unchecked -->
 ### T-K12-006 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -246,7 +246,7 @@
 
 ---
 
-<!-- fc id:T-K12-009 sha:a9460077 src:kartky/k12-komplekt.md:15 status:no-external-signal -->
+<!-- fc id:T-K12-009 sha:a9460077 src:kartky/k12-komplekt.md:15 status:unchecked -->
 ### T-K12-009 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -306,7 +306,7 @@
 
 ---
 
-<!-- fc id:T-K12-011 sha:c17398d2 src:kartky/k12-komplekt.md:20 status:no-external-signal -->
+<!-- fc id:T-K12-011 sha:c17398d2 src:kartky/k12-komplekt.md:20 status:unchecked -->
 ### T-K12-011 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -364,7 +364,7 @@
 
 ---
 
-<!-- fc id:T-K12-013 sha:0d1862f5 src:kartky/k12-komplekt.md:23 status:no-external-signal -->
+<!-- fc id:T-K12-013 sha:0d1862f5 src:kartky/k12-komplekt.md:23 status:unchecked -->
 ### T-K12-013 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -422,7 +422,7 @@
 
 ---
 
-<!-- fc id:T-K12-015 sha:8b45e4ee src:kartky/k12-komplekt.md:25 status:no-external-signal -->
+<!-- fc id:T-K12-015 sha:8b45e4ee src:kartky/k12-komplekt.md:25 status:unchecked -->
 ### T-K12-015 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -451,7 +451,7 @@
 
 ---
 
-<!-- fc id:T-K12-016 sha:48827a35 src:kartky/k12-komplekt.md:26 status:no-external-signal -->
+<!-- fc id:T-K12-016 sha:48827a35 src:kartky/k12-komplekt.md:26 status:unchecked -->
 ### T-K12-016 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**

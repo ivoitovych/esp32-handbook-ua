@@ -981,7 +981,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-043 sha:9d71d6cc src:manual/55-polova-diagnostyka.md:91 status:no-external-signal -->
+<!-- fc id:T-55-043 sha:9d71d6cc src:manual/55-polova-diagnostyka.md:91 status:unchecked -->
 ### T-55-043 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1013,7 +1013,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-044 sha:acf76dee src:manual/55-polova-diagnostyka.md:93 status:no-external-signal -->
+<!-- fc id:T-55-044 sha:acf76dee src:manual/55-polova-diagnostyka.md:93 status:unchecked -->
 ### T-55-044 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1077,7 +1077,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-046 sha:b583b23a src:manual/55-polova-diagnostyka.md:95 status:no-external-signal -->
+<!-- fc id:T-55-046 sha:b583b23a src:manual/55-polova-diagnostyka.md:95 status:unchecked -->
 ### T-55-046 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1109,7 +1109,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-047 sha:f1ec0675 src:manual/55-polova-diagnostyka.md:96 status:no-external-signal -->
+<!-- fc id:T-55-047 sha:f1ec0675 src:manual/55-polova-diagnostyka.md:96 status:unchecked -->
 ### T-55-047 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1141,7 +1141,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-048 sha:7c0a7a6b src:manual/55-polova-diagnostyka.md:97 status:no-external-signal -->
+<!-- fc id:T-55-048 sha:7c0a7a6b src:manual/55-polova-diagnostyka.md:97 status:unchecked -->
 ### T-55-048 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1173,7 +1173,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-049 sha:337b28e2 src:manual/55-polova-diagnostyka.md:98 status:no-external-signal -->
+<!-- fc id:T-55-049 sha:337b28e2 src:manual/55-polova-diagnostyka.md:98 status:unchecked -->
 ### T-55-049 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1205,7 +1205,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-050 sha:7625f589 src:manual/55-polova-diagnostyka.md:99 status:no-external-signal -->
+<!-- fc id:T-55-050 sha:7625f589 src:manual/55-polova-diagnostyka.md:99 status:unchecked -->
 ### T-55-050 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**
@@ -1279,7 +1279,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-052 sha:39b6bdf2 src:manual/55-polova-diagnostyka.md:101 status:no-external-signal -->
+<!-- fc id:T-55-052 sha:39b6bdf2 src:manual/55-polova-diagnostyka.md:101 status:unchecked -->
 ### T-55-052 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**

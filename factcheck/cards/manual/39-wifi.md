@@ -1940,7 +1940,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-065 sha:53097888 src:manual/39-wifi.md:169 status:no-external-signal -->
+<!-- fc id:T-39-065 sha:53097888 src:manual/39-wifi.md:169 status:unchecked -->
 ### T-39-065 · tablycya · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2012,7 +2012,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-067 sha:88ee6c9f src:manual/39-wifi.md:172 status:no-external-signal -->
+<!-- fc id:T-39-067 sha:88ee6c9f src:manual/39-wifi.md:172 status:unchecked -->
 ### T-39-067 · tablycya · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2045,7 +2045,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-068 sha:1082e779 src:manual/39-wifi.md:173 status:no-external-signal -->
+<!-- fc id:T-39-068 sha:1082e779 src:manual/39-wifi.md:173 status:unchecked -->
 ### T-39-068 · tablycya · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -2111,7 +2111,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-070 sha:33e9f7fc src:manual/39-wifi.md:175 status:no-external-signal -->
+<!-- fc id:T-39-070 sha:33e9f7fc src:manual/39-wifi.md:175 status:unchecked -->
 ### T-39-070 · tablycya · `manual/39-wifi.md`
 
 **Твердження, коротко**

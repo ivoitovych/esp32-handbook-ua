@@ -2156,7 +2156,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-064 sha:e168a5c0 src:manual/18-rozdily-fleshu.md:134 status:no-external-signal -->
+<!-- fc id:T-18-064 sha:e168a5c0 src:manual/18-rozdily-fleshu.md:134 status:unchecked -->
 ### T-18-064 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2230,7 +2230,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-066 sha:136b11ff src:manual/18-rozdily-fleshu.md:134 status:no-external-signal -->
+<!-- fc id:T-18-066 sha:136b11ff src:manual/18-rozdily-fleshu.md:134 status:unchecked -->
 ### T-18-066 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2267,7 +2267,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-067 sha:e9f3c2f3 src:manual/18-rozdily-fleshu.md:135 status:no-external-signal -->
+<!-- fc id:T-18-067 sha:e9f3c2f3 src:manual/18-rozdily-fleshu.md:135 status:unchecked -->
 ### T-18-067 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2341,7 +2341,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-069 sha:27ed2cb4 src:manual/18-rozdily-fleshu.md:135 status:no-external-signal -->
+<!-- fc id:T-18-069 sha:27ed2cb4 src:manual/18-rozdily-fleshu.md:135 status:unchecked -->
 ### T-18-069 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2378,7 +2378,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-070 sha:7c5fc24e src:manual/18-rozdily-fleshu.md:136 status:no-external-signal -->
+<!-- fc id:T-18-070 sha:7c5fc24e src:manual/18-rozdily-fleshu.md:136 status:unchecked -->
 ### T-18-070 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2507,7 +2507,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-073 sha:7a364c66 src:manual/18-rozdily-fleshu.md:137 status:no-external-signal -->
+<!-- fc id:T-18-073 sha:7a364c66 src:manual/18-rozdily-fleshu.md:137 status:unchecked -->
 ### T-18-073 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2629,7 +2629,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-076 sha:c0ee355e src:manual/18-rozdily-fleshu.md:138 status:no-external-signal -->
+<!-- fc id:T-18-076 sha:c0ee355e src:manual/18-rozdily-fleshu.md:138 status:unchecked -->
 ### T-18-076 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2703,7 +2703,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-078 sha:97b8e259 src:manual/18-rozdily-fleshu.md:138 status:no-external-signal -->
+<!-- fc id:T-18-078 sha:97b8e259 src:manual/18-rozdily-fleshu.md:138 status:unchecked -->
 ### T-18-078 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**

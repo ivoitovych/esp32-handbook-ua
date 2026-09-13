@@ -1044,7 +1044,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-037 sha:e8fd95bd src:kartky/k01-triazh.md:68 status:no-external-signal -->
+<!-- fc id:T-K01-037 sha:e8fd95bd src:kartky/k01-triazh.md:68 status:unchecked -->
 ### T-K01-037 · tablycya · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -1073,7 +1073,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-038 sha:201f9419 src:kartky/k01-triazh.md:70 status:no-external-signal -->
+<!-- fc id:T-K01-038 sha:201f9419 src:kartky/k01-triazh.md:70 status:unchecked -->
 ### T-K01-038 · tablycya · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -1102,7 +1102,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-039 sha:017fe3de src:kartky/k01-triazh.md:71 status:no-external-signal -->
+<!-- fc id:T-K01-039 sha:017fe3de src:kartky/k01-triazh.md:71 status:unchecked -->
 ### T-K01-039 · tablycya · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -1131,7 +1131,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-040 sha:64bb37ea src:kartky/k01-triazh.md:72 status:no-external-signal -->
+<!-- fc id:T-K01-040 sha:64bb37ea src:kartky/k01-triazh.md:72 status:unchecked -->
 ### T-K01-040 · tablycya · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -1246,7 +1246,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-043 sha:d4503abd src:kartky/k01-triazh.md:75 status:no-external-signal -->
+<!-- fc id:T-K01-043 sha:d4503abd src:kartky/k01-triazh.md:75 status:unchecked -->
 ### T-K01-043 · tablycya · `kartky/k01-triazh.md`
 
 **Твердження, коротко**

@@ -1891,7 +1891,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-067 sha:e4e73586 src:manual/21-seriyna.md:153 status:no-external-signal -->
+<!-- fc id:T-21-067 sha:e4e73586 src:manual/21-seriyna.md:153 status:unchecked -->
 ### T-21-067 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -1924,7 +1924,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-068 sha:29d3900f src:manual/21-seriyna.md:153 status:no-external-signal -->
+<!-- fc id:T-21-068 sha:29d3900f src:manual/21-seriyna.md:153 status:unchecked -->
 ### T-21-068 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2023,7 +2023,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-071 sha:e2d0d5e3 src:manual/21-seriyna.md:154 status:no-external-signal -->
+<!-- fc id:T-21-071 sha:e2d0d5e3 src:manual/21-seriyna.md:154 status:unchecked -->
 ### T-21-071 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2056,7 +2056,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-072 sha:f7d5d679 src:manual/21-seriyna.md:154 status:no-external-signal -->
+<!-- fc id:T-21-072 sha:f7d5d679 src:manual/21-seriyna.md:154 status:unchecked -->
 ### T-21-072 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2089,7 +2089,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-073 sha:c5831a43 src:manual/21-seriyna.md:154 status:no-external-signal -->
+<!-- fc id:T-21-073 sha:c5831a43 src:manual/21-seriyna.md:154 status:unchecked -->
 ### T-21-073 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2188,7 +2188,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-076 sha:a6590e77 src:manual/21-seriyna.md:155 status:no-external-signal -->
+<!-- fc id:T-21-076 sha:a6590e77 src:manual/21-seriyna.md:155 status:unchecked -->
 ### T-21-076 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2221,7 +2221,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-077 sha:37c1710c src:manual/21-seriyna.md:155 status:no-external-signal -->
+<!-- fc id:T-21-077 sha:37c1710c src:manual/21-seriyna.md:155 status:unchecked -->
 ### T-21-077 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2254,7 +2254,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-078 sha:4688c6c2 src:manual/21-seriyna.md:155 status:no-external-signal -->
+<!-- fc id:T-21-078 sha:4688c6c2 src:manual/21-seriyna.md:155 status:unchecked -->
 ### T-21-078 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**

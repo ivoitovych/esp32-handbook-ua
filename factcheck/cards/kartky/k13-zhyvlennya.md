@@ -211,7 +211,7 @@
 
 ---
 
-<!-- fc id:T-K13-008 sha:f284f799 src:kartky/k13-zhyvlennya.md:22 status:no-external-signal -->
+<!-- fc id:T-K13-008 sha:f284f799 src:kartky/k13-zhyvlennya.md:22 status:unchecked -->
 ### T-K13-008 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -245,7 +245,7 @@
 
 ---
 
-<!-- fc id:T-K13-009 sha:46ec6e5b src:kartky/k13-zhyvlennya.md:22 status:no-external-signal -->
+<!-- fc id:T-K13-009 sha:46ec6e5b src:kartky/k13-zhyvlennya.md:22 status:unchecked -->
 ### T-K13-009 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -367,7 +367,7 @@
 
 ---
 
-<!-- fc id:T-K13-012 sha:dd53d506 src:kartky/k13-zhyvlennya.md:23 status:no-external-signal -->
+<!-- fc id:T-K13-012 sha:dd53d506 src:kartky/k13-zhyvlennya.md:23 status:unchecked -->
 ### T-K13-012 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -483,7 +483,7 @@
 
 ---
 
-<!-- fc id:T-K13-015 sha:0e199821 src:kartky/k13-zhyvlennya.md:24 status:no-external-signal -->
+<!-- fc id:T-K13-015 sha:0e199821 src:kartky/k13-zhyvlennya.md:24 status:unchecked -->
 ### T-K13-015 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -598,7 +598,7 @@
 
 ---
 
-<!-- fc id:T-K13-018 sha:a9bcbe70 src:kartky/k13-zhyvlennya.md:25 status:no-external-signal -->
+<!-- fc id:T-K13-018 sha:a9bcbe70 src:kartky/k13-zhyvlennya.md:25 status:unchecked -->
 ### T-K13-018 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1205,7 +1205,7 @@
 
 ---
 
-<!-- fc id:T-K13-038 sha:eafbf8b1 src:kartky/k13-zhyvlennya.md:70 status:no-external-signal -->
+<!-- fc id:T-K13-038 sha:eafbf8b1 src:kartky/k13-zhyvlennya.md:70 status:unchecked -->
 ### T-K13-038 · tablycya · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1292,7 +1292,7 @@
 
 ---
 
-<!-- fc id:T-K13-041 sha:2b1a685d src:kartky/k13-zhyvlennya.md:74 status:no-external-signal -->
+<!-- fc id:T-K13-041 sha:2b1a685d src:kartky/k13-zhyvlennya.md:74 status:unchecked -->
 ### T-K13-041 · tablycya · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1321,7 +1321,7 @@
 
 ---
 
-<!-- fc id:T-K13-042 sha:4f6059ae src:kartky/k13-zhyvlennya.md:75 status:no-external-signal -->
+<!-- fc id:T-K13-042 sha:4f6059ae src:kartky/k13-zhyvlennya.md:75 status:unchecked -->
 ### T-K13-042 · tablycya · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**

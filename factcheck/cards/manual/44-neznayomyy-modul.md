@@ -483,7 +483,7 @@
 
 ---
 
-<!-- fc id:T-44-018 sha:5deda58a src:manual/44-neznayomyy-modul.md:34 status:no-external-signal -->
+<!-- fc id:T-44-018 sha:5deda58a src:manual/44-neznayomyy-modul.md:34 status:unchecked -->
 ### T-44-018 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**

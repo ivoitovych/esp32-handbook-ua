@@ -156,7 +156,7 @@
 
 ---
 
-<!-- fc id:T-28-006 sha:9e5538f1 src:manual/28-analizator.md:14 status:no-external-signal -->
+<!-- fc id:T-28-006 sha:9e5538f1 src:manual/28-analizator.md:14 status:unchecked -->
 ### T-28-006 · komirka · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-28-007 sha:c1c01718 src:manual/28-analizator.md:15 status:no-external-signal -->
+<!-- fc id:T-28-007 sha:c1c01718 src:manual/28-analizator.md:15 status:unchecked -->
 ### T-28-007 · komirka · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -314,7 +314,7 @@
 
 ---
 
-<!-- fc id:T-28-010 sha:c240ee19 src:manual/28-analizator.md:16 status:no-external-signal -->
+<!-- fc id:T-28-010 sha:c240ee19 src:manual/28-analizator.md:16 status:unchecked -->
 ### T-28-010 · komirka · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -1011,7 +1011,7 @@
 
 ---
 
-<!-- fc id:T-28-036 sha:5be84064 src:manual/28-analizator.md:65 status:no-external-signal -->
+<!-- fc id:T-28-036 sha:5be84064 src:manual/28-analizator.md:65 status:unchecked -->
 ### T-28-036 · tablycya · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -1041,7 +1041,7 @@
 
 ---
 
-<!-- fc id:T-28-037 sha:6294d2a0 src:manual/28-analizator.md:67 status:no-external-signal -->
+<!-- fc id:T-28-037 sha:6294d2a0 src:manual/28-analizator.md:67 status:unchecked -->
 ### T-28-037 · tablycya · `manual/28-analizator.md`
 
 **Твердження, коротко**

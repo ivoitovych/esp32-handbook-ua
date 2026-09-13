@@ -604,7 +604,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-021 sha:ad41371f src:manual/31-freertos.md:70 status:no-external-signal -->
+<!-- fc id:T-31-021 sha:ad41371f src:manual/31-freertos.md:70 status:unchecked -->
 ### T-31-021 · tablycya · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -632,7 +632,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-022 sha:4c18e8a7 src:manual/31-freertos.md:72 status:no-external-signal -->
+<!-- fc id:T-31-022 sha:4c18e8a7 src:manual/31-freertos.md:72 status:unchecked -->
 ### T-31-022 · tablycya · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -660,7 +660,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-023 sha:419ad673 src:manual/31-freertos.md:73 status:no-external-signal -->
+<!-- fc id:T-31-023 sha:419ad673 src:manual/31-freertos.md:73 status:unchecked -->
 ### T-31-023 · tablycya · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -688,7 +688,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-024 sha:3ce093d4 src:manual/31-freertos.md:74 status:no-external-signal -->
+<!-- fc id:T-31-024 sha:3ce093d4 src:manual/31-freertos.md:74 status:unchecked -->
 ### T-31-024 · tablycya · `manual/31-freertos.md`
 
 **Твердження, коротко**

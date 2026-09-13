@@ -2579,7 +2579,7 @@
 
 ---
 
-<!-- fc id:T-D-055 sha:9789ed83 src:dodatky/d-panik.md:40 status:no-external-signal -->
+<!-- fc id:T-D-055 sha:9789ed83 src:dodatky/d-panik.md:40 status:unchecked -->
 ### T-D-055 · tablycya · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -3028,7 +3028,7 @@
 
 ---
 
-<!-- fc id:T-D-066 sha:7431ff81 src:dodatky/d-panik.md:62 status:no-external-signal -->
+<!-- fc id:T-D-066 sha:7431ff81 src:dodatky/d-panik.md:62 status:unchecked -->
 ### T-D-066 · tablycya · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -6636,7 +6636,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-148 sha:a66ac160 src:dodatky/d-panik.md:202 status:no-external-signal -->
+<!-- fc id:T-D-148 sha:a66ac160 src:dodatky/d-panik.md:202 status:unchecked -->
 ### T-D-148 · tablycya · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -7246,7 +7246,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-167 sha:ef04690f src:dodatky/d-panik.md:249 status:no-external-signal -->
+<!-- fc id:T-D-167 sha:ef04690f src:dodatky/d-panik.md:249 status:unchecked -->
 ### T-D-167 · tablycya · `dodatky/d-panik.md`
 
 **Твердження, коротко**

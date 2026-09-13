@@ -855,7 +855,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-030 sha:61277940 src:manual/27-jtag.md:77 status:no-external-signal -->
+<!-- fc id:T-27-030 sha:61277940 src:manual/27-jtag.md:77 status:unchecked -->
 ### T-27-030 · tablycya · `manual/27-jtag.md`
 
 **Твердження, коротко**

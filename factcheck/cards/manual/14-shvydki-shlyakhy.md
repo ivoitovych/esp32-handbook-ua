@@ -1333,7 +1333,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-052 sha:cf48c3b8 src:manual/14-shvydki-shlyakhy.md:134 status:no-external-signal -->
+<!-- fc id:T-14-052 sha:cf48c3b8 src:manual/14-shvydki-shlyakhy.md:134 status:unchecked -->
 ### T-14-052 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1447,7 +1447,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-055 sha:5f1707ed src:manual/14-shvydki-shlyakhy.md:135 status:no-external-signal -->
+<!-- fc id:T-14-055 sha:5f1707ed src:manual/14-shvydki-shlyakhy.md:135 status:unchecked -->
 ### T-14-055 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1555,7 +1555,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-058 sha:2089ffc0 src:manual/14-shvydki-shlyakhy.md:136 status:no-external-signal -->
+<!-- fc id:T-14-058 sha:2089ffc0 src:manual/14-shvydki-shlyakhy.md:136 status:unchecked -->
 ### T-14-058 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1735,7 +1735,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-063 sha:2898f309 src:manual/14-shvydki-shlyakhy.md:138 status:no-external-signal -->
+<!-- fc id:T-14-063 sha:2898f309 src:manual/14-shvydki-shlyakhy.md:138 status:unchecked -->
 ### T-14-063 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1843,7 +1843,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-066 sha:9d4bace0 src:manual/14-shvydki-shlyakhy.md:139 status:no-external-signal -->
+<!-- fc id:T-14-066 sha:9d4bace0 src:manual/14-shvydki-shlyakhy.md:139 status:unchecked -->
 ### T-14-066 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**
@@ -1951,7 +1951,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-069 sha:d07ec4b7 src:manual/14-shvydki-shlyakhy.md:140 status:no-external-signal -->
+<!-- fc id:T-14-069 sha:d07ec4b7 src:manual/14-shvydki-shlyakhy.md:140 status:unchecked -->
 ### T-14-069 · komirka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**

@@ -256,7 +256,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-010 sha:55309baf src:manual/41-ble.md:28 status:no-external-signal -->
+<!-- fc id:T-41-010 sha:55309baf src:manual/41-ble.md:28 status:unchecked -->
 ### T-41-010 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -397,7 +397,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-012 sha:dadfcd93 src:manual/41-ble.md:29 status:no-external-signal -->
+<!-- fc id:T-41-012 sha:dadfcd93 src:manual/41-ble.md:29 status:unchecked -->
 ### T-41-012 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -469,7 +469,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-014 sha:48639305 src:manual/41-ble.md:30 status:no-external-signal -->
+<!-- fc id:T-41-014 sha:48639305 src:manual/41-ble.md:30 status:unchecked -->
 ### T-41-014 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -547,7 +547,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-016 sha:3acb9138 src:manual/41-ble.md:31 status:no-external-signal -->
+<!-- fc id:T-41-016 sha:3acb9138 src:manual/41-ble.md:31 status:unchecked -->
 ### T-41-016 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -619,7 +619,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-018 sha:087229f4 src:manual/41-ble.md:32 status:no-external-signal -->
+<!-- fc id:T-41-018 sha:087229f4 src:manual/41-ble.md:32 status:unchecked -->
 ### T-41-018 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -697,7 +697,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-020 sha:fe2aada0 src:manual/41-ble.md:33 status:no-external-signal -->
+<!-- fc id:T-41-020 sha:fe2aada0 src:manual/41-ble.md:33 status:unchecked -->
 ### T-41-020 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -769,7 +769,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-022 sha:5a5441a8 src:manual/41-ble.md:34 status:no-external-signal -->
+<!-- fc id:T-41-022 sha:5a5441a8 src:manual/41-ble.md:34 status:unchecked -->
 ### T-41-022 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**

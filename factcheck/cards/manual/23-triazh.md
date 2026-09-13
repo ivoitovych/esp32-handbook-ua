@@ -2186,7 +2186,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-077 sha:e949c09e src:manual/23-triazh.md:158 status:no-external-signal -->
+<!-- fc id:T-23-077 sha:e949c09e src:manual/23-triazh.md:158 status:unchecked -->
 ### T-23-077 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2224,7 +2224,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-078 sha:6ae1bc07 src:manual/23-triazh.md:158 status:no-external-signal -->
+<!-- fc id:T-23-078 sha:6ae1bc07 src:manual/23-triazh.md:158 status:unchecked -->
 ### T-23-078 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2262,7 +2262,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-079 sha:2641f94f src:manual/23-triazh.md:159 status:no-external-signal -->
+<!-- fc id:T-23-079 sha:2641f94f src:manual/23-triazh.md:159 status:unchecked -->
 ### T-23-079 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2300,7 +2300,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-080 sha:3831e6a7 src:manual/23-triazh.md:159 status:no-external-signal -->
+<!-- fc id:T-23-080 sha:3831e6a7 src:manual/23-triazh.md:159 status:unchecked -->
 ### T-23-080 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2338,7 +2338,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-081 sha:84245083 src:manual/23-triazh.md:160 status:no-external-signal -->
+<!-- fc id:T-23-081 sha:84245083 src:manual/23-triazh.md:160 status:unchecked -->
 ### T-23-081 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2376,7 +2376,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-082 sha:91a76143 src:manual/23-triazh.md:160 status:no-external-signal -->
+<!-- fc id:T-23-082 sha:91a76143 src:manual/23-triazh.md:160 status:unchecked -->
 ### T-23-082 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2698,7 +2698,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-089 sha:313a187d src:manual/23-triazh.md:164 status:no-external-signal -->
+<!-- fc id:T-23-089 sha:313a187d src:manual/23-triazh.md:164 status:unchecked -->
 ### T-23-089 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2736,7 +2736,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-090 sha:3594c70a src:manual/23-triazh.md:164 status:no-external-signal -->
+<!-- fc id:T-23-090 sha:3594c70a src:manual/23-triazh.md:164 status:unchecked -->
 ### T-23-090 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**

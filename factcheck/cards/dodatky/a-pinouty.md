@@ -289,7 +289,7 @@
 
 ---
 
-<!-- fc id:T-A-008 sha:092e56b9 src:dodatky/a-pinouty.md:17 status:no-external-signal -->
+<!-- fc id:T-A-008 sha:092e56b9 src:dodatky/a-pinouty.md:17 status:unchecked -->
 ### T-A-008 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -608,7 +608,7 @@
 
 ---
 
-<!-- fc id:T-A-014 sha:9b9041b5 src:dodatky/a-pinouty.md:19 status:no-external-signal -->
+<!-- fc id:T-A-014 sha:9b9041b5 src:dodatky/a-pinouty.md:19 status:unchecked -->
 ### T-A-014 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -657,7 +657,7 @@
 
 ---
 
-<!-- fc id:T-A-015 sha:cf70cbf0 src:dodatky/a-pinouty.md:19 status:no-external-signal -->
+<!-- fc id:T-A-015 sha:cf70cbf0 src:dodatky/a-pinouty.md:19 status:unchecked -->
 ### T-A-015 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -865,7 +865,7 @@
 
 ---
 
-<!-- fc id:T-A-019 sha:05bb8e87 src:dodatky/a-pinouty.md:21 status:no-external-signal -->
+<!-- fc id:T-A-019 sha:05bb8e87 src:dodatky/a-pinouty.md:21 status:unchecked -->
 ### T-A-019 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -914,7 +914,7 @@
 
 ---
 
-<!-- fc id:T-A-020 sha:4d0bd90a src:dodatky/a-pinouty.md:21 status:no-external-signal -->
+<!-- fc id:T-A-020 sha:4d0bd90a src:dodatky/a-pinouty.md:21 status:unchecked -->
 ### T-A-020 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1080,7 +1080,7 @@
 
 ---
 
-<!-- fc id:T-A-023 sha:c20d762c src:dodatky/a-pinouty.md:23 status:no-external-signal -->
+<!-- fc id:T-A-023 sha:c20d762c src:dodatky/a-pinouty.md:23 status:unchecked -->
 ### T-A-023 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1129,7 +1129,7 @@
 
 ---
 
-<!-- fc id:T-A-024 sha:87ce2d39 src:dodatky/a-pinouty.md:23 status:no-external-signal -->
+<!-- fc id:T-A-024 sha:87ce2d39 src:dodatky/a-pinouty.md:23 status:unchecked -->
 ### T-A-024 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1294,7 +1294,7 @@
 
 ---
 
-<!-- fc id:T-A-027 sha:3ec06bb0 src:dodatky/a-pinouty.md:24 status:no-external-signal -->
+<!-- fc id:T-A-027 sha:3ec06bb0 src:dodatky/a-pinouty.md:24 status:unchecked -->
 ### T-A-027 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1343,7 +1343,7 @@
 
 ---
 
-<!-- fc id:T-A-028 sha:a4683015 src:dodatky/a-pinouty.md:24 status:no-external-signal -->
+<!-- fc id:T-A-028 sha:a4683015 src:dodatky/a-pinouty.md:24 status:unchecked -->
 ### T-A-028 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1490,7 +1490,7 @@
 
 ---
 
-<!-- fc id:T-A-031 sha:fdd88742 src:dodatky/a-pinouty.md:25 status:no-external-signal -->
+<!-- fc id:T-A-031 sha:fdd88742 src:dodatky/a-pinouty.md:25 status:unchecked -->
 ### T-A-031 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1539,7 +1539,7 @@
 
 ---
 
-<!-- fc id:T-A-032 sha:82afe384 src:dodatky/a-pinouty.md:25 status:no-external-signal -->
+<!-- fc id:T-A-032 sha:82afe384 src:dodatky/a-pinouty.md:25 status:unchecked -->
 ### T-A-032 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1686,7 +1686,7 @@
 
 ---
 
-<!-- fc id:T-A-035 sha:590ac959 src:dodatky/a-pinouty.md:26 status:no-external-signal -->
+<!-- fc id:T-A-035 sha:590ac959 src:dodatky/a-pinouty.md:26 status:unchecked -->
 ### T-A-035 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1735,7 +1735,7 @@
 
 ---
 
-<!-- fc id:T-A-036 sha:cba43828 src:dodatky/a-pinouty.md:26 status:no-external-signal -->
+<!-- fc id:T-A-036 sha:cba43828 src:dodatky/a-pinouty.md:26 status:unchecked -->
 ### T-A-036 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1890,7 +1890,7 @@
 
 ---
 
-<!-- fc id:T-A-039 sha:edc7c97b src:dodatky/a-pinouty.md:27 status:no-external-signal -->
+<!-- fc id:T-A-039 sha:edc7c97b src:dodatky/a-pinouty.md:27 status:unchecked -->
 ### T-A-039 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1939,7 +1939,7 @@
 
 ---
 
-<!-- fc id:T-A-040 sha:ca9296f3 src:dodatky/a-pinouty.md:27 status:no-external-signal -->
+<!-- fc id:T-A-040 sha:ca9296f3 src:dodatky/a-pinouty.md:27 status:unchecked -->
 ### T-A-040 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -2493,7 +2493,7 @@
 
 ---
 
-<!-- fc id:T-A-050 sha:60266760 src:dodatky/a-pinouty.md:34 status:no-external-signal -->
+<!-- fc id:T-A-050 sha:60266760 src:dodatky/a-pinouty.md:34 status:unchecked -->
 ### T-A-050 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -2728,7 +2728,7 @@
 
 ---
 
-<!-- fc id:T-A-054 sha:486e3929 src:dodatky/a-pinouty.md:36 status:no-external-signal -->
+<!-- fc id:T-A-054 sha:486e3929 src:dodatky/a-pinouty.md:36 status:unchecked -->
 ### T-A-054 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -3103,7 +3103,7 @@
 
 ---
 
-<!-- fc id:T-A-064 sha:72fbec74 src:dodatky/a-pinouty.md:50 status:no-external-signal -->
+<!-- fc id:T-A-064 sha:72fbec74 src:dodatky/a-pinouty.md:50 status:unchecked -->
 ### T-A-064 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -3183,7 +3183,7 @@
 
 ---
 
-<!-- fc id:T-A-066 sha:cbb51688 src:dodatky/a-pinouty.md:51 status:no-external-signal -->
+<!-- fc id:T-A-066 sha:cbb51688 src:dodatky/a-pinouty.md:51 status:unchecked -->
 ### T-A-066 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -3709,7 +3709,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 ---
 
-<!-- fc id:T-A-080 sha:93f4a490 src:dodatky/a-pinouty.md:70 status:no-external-signal -->
+<!-- fc id:T-A-080 sha:93f4a490 src:dodatky/a-pinouty.md:70 status:unchecked -->
 ### T-A-080 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -3781,7 +3781,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 ---
 
-<!-- fc id:T-A-082 sha:354711b9 src:dodatky/a-pinouty.md:71 status:no-external-signal -->
+<!-- fc id:T-A-082 sha:354711b9 src:dodatky/a-pinouty.md:71 status:unchecked -->
 ### T-A-082 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -3817,7 +3817,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 ---
 
-<!-- fc id:T-A-083 sha:decb25b1 src:dodatky/a-pinouty.md:72 status:no-external-signal -->
+<!-- fc id:T-A-083 sha:decb25b1 src:dodatky/a-pinouty.md:72 status:unchecked -->
 ### T-A-083 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -3853,7 +3853,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 ---
 
-<!-- fc id:T-A-084 sha:d87ed22f src:dodatky/a-pinouty.md:72 status:no-external-signal -->
+<!-- fc id:T-A-084 sha:d87ed22f src:dodatky/a-pinouty.md:72 status:unchecked -->
 ### T-A-084 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -3934,7 +3934,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 ---
 
-<!-- fc id:T-A-086 sha:2fcf634e src:dodatky/a-pinouty.md:73 status:no-external-signal -->
+<!-- fc id:T-A-086 sha:2fcf634e src:dodatky/a-pinouty.md:73 status:unchecked -->
 ### T-A-086 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**

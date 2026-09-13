@@ -1411,7 +1411,7 @@ I (56) boot: ## Label      Usage      Type ST Offset   Length
 
 ---
 
-<!-- fc id:T-K06-037 sha:f219b8f9 src:kartky/k06-bootlog.md:63 status:no-external-signal -->
+<!-- fc id:T-K06-037 sha:f219b8f9 src:kartky/k06-bootlog.md:63 status:unchecked -->
 ### T-K06-037 · tablycya · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -1473,7 +1473,7 @@ I (56) boot: ## Label      Usage      Type ST Offset   Length
 
 ---
 
-<!-- fc id:T-K06-039 sha:e108d7f6 src:kartky/k06-bootlog.md:66 status:no-external-signal -->
+<!-- fc id:T-K06-039 sha:e108d7f6 src:kartky/k06-bootlog.md:66 status:unchecked -->
 ### T-K06-039 · tablycya · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -1501,7 +1501,7 @@ I (56) boot: ## Label      Usage      Type ST Offset   Length
 
 ---
 
-<!-- fc id:T-K06-040 sha:dd7a6d62 src:kartky/k06-bootlog.md:67 status:no-external-signal -->
+<!-- fc id:T-K06-040 sha:dd7a6d62 src:kartky/k06-bootlog.md:67 status:unchecked -->
 ### T-K06-040 · tablycya · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**

@@ -2318,7 +2318,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-088 sha:ca0a48aa src:manual/43-lora.md:205 status:no-external-signal -->
+<!-- fc id:T-43-088 sha:ca0a48aa src:manual/43-lora.md:205 status:unchecked -->
 ### T-43-088 · tablycya · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2492,7 +2492,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-094 sha:b8abf1d6 src:manual/43-lora.md:212 status:no-external-signal -->
+<!-- fc id:T-43-094 sha:b8abf1d6 src:manual/43-lora.md:212 status:unchecked -->
 ### T-43-094 · tablycya · `manual/43-lora.md`
 
 **Твердження, коротко**

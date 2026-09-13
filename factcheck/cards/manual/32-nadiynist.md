@@ -2039,7 +2039,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-068 sha:c1d67a99 src:manual/32-nadiynist.md:174 status:no-external-signal -->
+<!-- fc id:T-32-068 sha:c1d67a99 src:manual/32-nadiynist.md:174 status:unchecked -->
 ### T-32-068 · tablycya · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2109,7 +2109,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-070 sha:2fe46684 src:manual/32-nadiynist.md:177 status:no-external-signal -->
+<!-- fc id:T-32-070 sha:2fe46684 src:manual/32-nadiynist.md:177 status:unchecked -->
 ### T-32-070 · tablycya · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2139,7 +2139,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-071 sha:a28eac67 src:manual/32-nadiynist.md:178 status:no-external-signal -->
+<!-- fc id:T-32-071 sha:a28eac67 src:manual/32-nadiynist.md:178 status:unchecked -->
 ### T-32-071 · tablycya · `manual/32-nadiynist.md`
 
 **Твердження, коротко**
@@ -2199,7 +2199,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-073 sha:5dee921d src:manual/32-nadiynist.md:180 status:no-external-signal -->
+<!-- fc id:T-32-073 sha:5dee921d src:manual/32-nadiynist.md:180 status:unchecked -->
 ### T-32-073 · tablycya · `manual/32-nadiynist.md`
 
 **Твердження, коротко**

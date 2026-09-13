@@ -526,7 +526,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-018 sha:b849725c src:manual/59-proj-monitor.md:36 status:no-external-signal -->
+<!-- fc id:T-59-018 sha:b849725c src:manual/59-proj-monitor.md:36 status:unchecked -->
 ### T-59-018 · komirka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -560,7 +560,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-019 sha:a8265b17 src:manual/59-proj-monitor.md:37 status:no-external-signal -->
+<!-- fc id:T-59-019 sha:a8265b17 src:manual/59-proj-monitor.md:37 status:unchecked -->
 ### T-59-019 · komirka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**

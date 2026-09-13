@@ -1031,17 +1031,27 @@ def sketch() -> int:
                     klas = "K"
                 elif z:
                     klas = class_letter_of(z)
-                elif vyd in ("proza", "komirka", "tablycya") \
+                elif vyd == "proza" \
                         and not RE_SYGNAL_STROGYY.search(txt):
                     # A unit with no signal pointing at a source is
                     # editorial. `no-external-signal`, and that is a
                     # decision rather than an omission (see the comment
                     # beside the strict signal pattern).
                     #
-                    # Schematic connections never arrive here: that is
-                    # where the facts live, and a line like
-                    # "3V3 ─── VCC" looks empty only because its subject
-                    # stands apart from it.
+                    # **Prose only.** Cells, tables, table headers, code
+                    # lines and schematic connections never arrive here:
+                    # that is where the facts live, and a cell like
+                    # "0 · Touch → T1" or a line like "3V3 ─── VCC" looks
+                    # empty only because its subject stands apart from it.
+                    #
+                    # This list used to name schematic connections alone
+                    # while the rule at the top of the file named all
+                    # five. The code followed this comment, so 503 cells
+                    # and table units were closed as decisions — among
+                    # them the very cell the rule quotes as the example
+                    # of what must never be closed. Two comments in one
+                    # file stated different rules; the narrower one won
+                    # because it stood beside the code.
                     klas = "E"
                 else:
                     klas = "F"

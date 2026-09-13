@@ -295,7 +295,7 @@
 
 ---
 
-<!-- fc id:T-62-012 sha:c5901edb src:manual/62-proj-keruvannya.md:33 status:no-external-signal -->
+<!-- fc id:T-62-012 sha:c5901edb src:manual/62-proj-keruvannya.md:33 status:unchecked -->
 ### T-62-012 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -371,7 +371,7 @@
 
 ---
 
-<!-- fc id:T-62-014 sha:20d19b70 src:manual/62-proj-keruvannya.md:34 status:no-external-signal -->
+<!-- fc id:T-62-014 sha:20d19b70 src:manual/62-proj-keruvannya.md:34 status:unchecked -->
 ### T-62-014 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -406,7 +406,7 @@
 
 ---
 
-<!-- fc id:T-62-015 sha:e78fb121 src:manual/62-proj-keruvannya.md:34 status:no-external-signal -->
+<!-- fc id:T-62-015 sha:e78fb121 src:manual/62-proj-keruvannya.md:34 status:unchecked -->
 ### T-62-015 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -441,7 +441,7 @@
 
 ---
 
-<!-- fc id:T-62-016 sha:1fc642d2 src:manual/62-proj-keruvannya.md:35 status:no-external-signal -->
+<!-- fc id:T-62-016 sha:1fc642d2 src:manual/62-proj-keruvannya.md:35 status:unchecked -->
 ### T-62-016 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -520,7 +520,7 @@
 
 ---
 
-<!-- fc id:T-62-018 sha:444b90c1 src:manual/62-proj-keruvannya.md:36 status:no-external-signal -->
+<!-- fc id:T-62-018 sha:444b90c1 src:manual/62-proj-keruvannya.md:36 status:unchecked -->
 ### T-62-018 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -2565,7 +2565,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 ---
 
-<!-- fc id:T-62-077 sha:4efee294 src:manual/62-proj-keruvannya.md:146 status:no-external-signal -->
+<!-- fc id:T-62-077 sha:4efee294 src:manual/62-proj-keruvannya.md:146 status:unchecked -->
 ### T-62-077 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -2643,7 +2643,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 ---
 
-<!-- fc id:T-62-079 sha:3061b493 src:manual/62-proj-keruvannya.md:147 status:no-external-signal -->
+<!-- fc id:T-62-079 sha:3061b493 src:manual/62-proj-keruvannya.md:147 status:unchecked -->
 ### T-62-079 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -3721,7 +3721,7 @@ static void task_keruvannya(void *arg) {
 
 ---
 
-<!-- fc id:T-62-114 sha:57e0ed68 src:manual/62-proj-keruvannya.md:245 status:no-external-signal -->
+<!-- fc id:T-62-114 sha:57e0ed68 src:manual/62-proj-keruvannya.md:245 status:unchecked -->
 ### T-62-114 · tablycya · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -3751,7 +3751,7 @@ static void task_keruvannya(void *arg) {
 
 ---
 
-<!-- fc id:T-62-115 sha:e1a27c92 src:manual/62-proj-keruvannya.md:247 status:no-external-signal -->
+<!-- fc id:T-62-115 sha:e1a27c92 src:manual/62-proj-keruvannya.md:247 status:unchecked -->
 ### T-62-115 · tablycya · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -3850,7 +3850,7 @@ static void task_keruvannya(void *arg) {
 
 ---
 
-<!-- fc id:T-62-118 sha:cc80c2e7 src:manual/62-proj-keruvannya.md:250 status:no-external-signal -->
+<!-- fc id:T-62-118 sha:cc80c2e7 src:manual/62-proj-keruvannya.md:250 status:unchecked -->
 ### T-62-118 · tablycya · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -3880,7 +3880,7 @@ static void task_keruvannya(void *arg) {
 
 ---
 
-<!-- fc id:T-62-119 sha:af96bb07 src:manual/62-proj-keruvannya.md:251 status:no-external-signal -->
+<!-- fc id:T-62-119 sha:af96bb07 src:manual/62-proj-keruvannya.md:251 status:unchecked -->
 ### T-62-119 · tablycya · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -4909,7 +4909,7 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
 
 ---
 
-<!-- fc id:T-62-150 sha:4a8e99b7 src:manual/62-proj-keruvannya.md:344 status:no-external-signal -->
+<!-- fc id:T-62-150 sha:4a8e99b7 src:manual/62-proj-keruvannya.md:344 status:unchecked -->
 ### T-62-150 · tablycya · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -4937,7 +4937,7 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
 
 ---
 
-<!-- fc id:T-62-151 sha:51c885d4 src:manual/62-proj-keruvannya.md:346 status:no-external-signal -->
+<!-- fc id:T-62-151 sha:51c885d4 src:manual/62-proj-keruvannya.md:346 status:unchecked -->
 ### T-62-151 · tablycya · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -4965,7 +4965,7 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
 
 ---
 
-<!-- fc id:T-62-152 sha:fdf62190 src:manual/62-proj-keruvannya.md:347 status:no-external-signal -->
+<!-- fc id:T-62-152 sha:fdf62190 src:manual/62-proj-keruvannya.md:347 status:unchecked -->
 ### T-62-152 · tablycya · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -4993,7 +4993,7 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
 
 ---
 
-<!-- fc id:T-62-153 sha:825f7619 src:manual/62-proj-keruvannya.md:348 status:no-external-signal -->
+<!-- fc id:T-62-153 sha:825f7619 src:manual/62-proj-keruvannya.md:348 status:unchecked -->
 ### T-62-153 · tablycya · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -5021,7 +5021,7 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
 
 ---
 
-<!-- fc id:T-62-154 sha:06e8e104 src:manual/62-proj-keruvannya.md:349 status:no-external-signal -->
+<!-- fc id:T-62-154 sha:06e8e104 src:manual/62-proj-keruvannya.md:349 status:unchecked -->
 ### T-62-154 · tablycya · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**

@@ -2260,7 +2260,7 @@
 
 ---
 
-<!-- fc id:T-B-043 sha:d7c330de src:dodatky/b-symptomy.md:37 status:no-external-signal -->
+<!-- fc id:T-B-043 sha:d7c330de src:dodatky/b-symptomy.md:37 status:unchecked -->
 ### T-B-043 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2342,7 +2342,7 @@
 
 ---
 
-<!-- fc id:T-B-045 sha:895a3335 src:dodatky/b-symptomy.md:37 status:no-external-signal -->
+<!-- fc id:T-B-045 sha:895a3335 src:dodatky/b-symptomy.md:37 status:unchecked -->
 ### T-B-045 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3045,7 +3045,7 @@
 
 ---
 
-<!-- fc id:T-B-059 sha:c212a182 src:dodatky/b-symptomy.md:42 status:no-external-signal -->
+<!-- fc id:T-B-059 sha:c212a182 src:dodatky/b-symptomy.md:42 status:unchecked -->
 ### T-B-059 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3083,7 +3083,7 @@
 
 ---
 
-<!-- fc id:T-B-060 sha:d8990451 src:dodatky/b-symptomy.md:42 status:no-external-signal -->
+<!-- fc id:T-B-060 sha:d8990451 src:dodatky/b-symptomy.md:42 status:unchecked -->
 ### T-B-060 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3121,7 +3121,7 @@
 
 ---
 
-<!-- fc id:T-B-061 sha:533acea2 src:dodatky/b-symptomy.md:43 status:no-external-signal -->
+<!-- fc id:T-B-061 sha:533acea2 src:dodatky/b-symptomy.md:43 status:unchecked -->
 ### T-B-061 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3159,7 +3159,7 @@
 
 ---
 
-<!-- fc id:T-B-062 sha:0729da19 src:dodatky/b-symptomy.md:43 status:no-external-signal -->
+<!-- fc id:T-B-062 sha:0729da19 src:dodatky/b-symptomy.md:43 status:unchecked -->
 ### T-B-062 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3197,7 +3197,7 @@
 
 ---
 
-<!-- fc id:T-B-063 sha:7ee6b4ec src:dodatky/b-symptomy.md:43 status:no-external-signal -->
+<!-- fc id:T-B-063 sha:7ee6b4ec src:dodatky/b-symptomy.md:43 status:unchecked -->
 ### T-B-063 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3273,7 +3273,7 @@
 
 ---
 
-<!-- fc id:T-B-065 sha:728bc926 src:dodatky/b-symptomy.md:44 status:no-external-signal -->
+<!-- fc id:T-B-065 sha:728bc926 src:dodatky/b-symptomy.md:44 status:unchecked -->
 ### T-B-065 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3311,7 +3311,7 @@
 
 ---
 
-<!-- fc id:T-B-066 sha:a8cbcc9e src:dodatky/b-symptomy.md:44 status:no-external-signal -->
+<!-- fc id:T-B-066 sha:a8cbcc9e src:dodatky/b-symptomy.md:44 status:unchecked -->
 ### T-B-066 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3349,7 +3349,7 @@
 
 ---
 
-<!-- fc id:T-B-067 sha:b41d5996 src:dodatky/b-symptomy.md:45 status:no-external-signal -->
+<!-- fc id:T-B-067 sha:b41d5996 src:dodatky/b-symptomy.md:45 status:unchecked -->
 ### T-B-067 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3387,7 +3387,7 @@
 
 ---
 
-<!-- fc id:T-B-068 sha:65bb1cb8 src:dodatky/b-symptomy.md:45 status:no-external-signal -->
+<!-- fc id:T-B-068 sha:65bb1cb8 src:dodatky/b-symptomy.md:45 status:unchecked -->
 ### T-B-068 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3425,7 +3425,7 @@
 
 ---
 
-<!-- fc id:T-B-069 sha:bc0ceaeb src:dodatky/b-symptomy.md:45 status:no-external-signal -->
+<!-- fc id:T-B-069 sha:bc0ceaeb src:dodatky/b-symptomy.md:45 status:unchecked -->
 ### T-B-069 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3740,7 +3740,7 @@
 
 ---
 
-<!-- fc id:T-B-077 sha:3da42b98 src:dodatky/b-symptomy.md:53 status:no-external-signal -->
+<!-- fc id:T-B-077 sha:3da42b98 src:dodatky/b-symptomy.md:53 status:unchecked -->
 ### T-B-077 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3776,7 +3776,7 @@
 
 ---
 
-<!-- fc id:T-B-078 sha:a4c8b43e src:dodatky/b-symptomy.md:53 status:no-external-signal -->
+<!-- fc id:T-B-078 sha:a4c8b43e src:dodatky/b-symptomy.md:53 status:unchecked -->
 ### T-B-078 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3812,7 +3812,7 @@
 
 ---
 
-<!-- fc id:T-B-079 sha:b3b3593b src:dodatky/b-symptomy.md:53 status:no-external-signal -->
+<!-- fc id:T-B-079 sha:b3b3593b src:dodatky/b-symptomy.md:53 status:unchecked -->
 ### T-B-079 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3956,7 +3956,7 @@
 
 ---
 
-<!-- fc id:T-B-083 sha:0963bdc4 src:dodatky/b-symptomy.md:55 status:no-external-signal -->
+<!-- fc id:T-B-083 sha:0963bdc4 src:dodatky/b-symptomy.md:55 status:unchecked -->
 ### T-B-083 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4039,7 +4039,7 @@
 
 ---
 
-<!-- fc id:T-B-085 sha:4d555332 src:dodatky/b-symptomy.md:55 status:no-external-signal -->
+<!-- fc id:T-B-085 sha:4d555332 src:dodatky/b-symptomy.md:55 status:unchecked -->
 ### T-B-085 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4195,7 +4195,7 @@
 
 ---
 
-<!-- fc id:T-B-089 sha:5f9bba1f src:dodatky/b-symptomy.md:57 status:no-external-signal -->
+<!-- fc id:T-B-089 sha:5f9bba1f src:dodatky/b-symptomy.md:57 status:unchecked -->
 ### T-B-089 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4231,7 +4231,7 @@
 
 ---
 
-<!-- fc id:T-B-090 sha:f66a44b6 src:dodatky/b-symptomy.md:57 status:no-external-signal -->
+<!-- fc id:T-B-090 sha:f66a44b6 src:dodatky/b-symptomy.md:57 status:unchecked -->
 ### T-B-090 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4267,7 +4267,7 @@
 
 ---
 
-<!-- fc id:T-B-091 sha:b8a0c318 src:dodatky/b-symptomy.md:57 status:no-external-signal -->
+<!-- fc id:T-B-091 sha:b8a0c318 src:dodatky/b-symptomy.md:57 status:unchecked -->
 ### T-B-091 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7718,7 +7718,7 @@
 
 ---
 
-<!-- fc id:T-B-160 sha:60900874 src:dodatky/b-symptomy.md:90 status:no-external-signal -->
+<!-- fc id:T-B-160 sha:60900874 src:dodatky/b-symptomy.md:90 status:unchecked -->
 ### T-B-160 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7816,7 +7816,7 @@
 
 ---
 
-<!-- fc id:T-B-162 sha:b03c98f2 src:dodatky/b-symptomy.md:90 status:no-external-signal -->
+<!-- fc id:T-B-162 sha:b03c98f2 src:dodatky/b-symptomy.md:90 status:unchecked -->
 ### T-B-162 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7971,7 +7971,7 @@
 
 ---
 
-<!-- fc id:T-B-165 sha:c436aab7 src:dodatky/b-symptomy.md:91 status:no-external-signal -->
+<!-- fc id:T-B-165 sha:c436aab7 src:dodatky/b-symptomy.md:91 status:unchecked -->
 ### T-B-165 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8015,7 +8015,7 @@
 
 ---
 
-<!-- fc id:T-B-166 sha:9e5a021d src:dodatky/b-symptomy.md:92 status:no-external-signal -->
+<!-- fc id:T-B-166 sha:9e5a021d src:dodatky/b-symptomy.md:92 status:unchecked -->
 ### T-B-166 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8059,7 +8059,7 @@
 
 ---
 
-<!-- fc id:T-B-167 sha:c55732e1 src:dodatky/b-symptomy.md:92 status:no-external-signal -->
+<!-- fc id:T-B-167 sha:c55732e1 src:dodatky/b-symptomy.md:92 status:unchecked -->
 ### T-B-167 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8103,7 +8103,7 @@
 
 ---
 
-<!-- fc id:T-B-168 sha:04d6097b src:dodatky/b-symptomy.md:92 status:no-external-signal -->
+<!-- fc id:T-B-168 sha:04d6097b src:dodatky/b-symptomy.md:92 status:unchecked -->
 ### T-B-168 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8147,7 +8147,7 @@
 
 ---
 
-<!-- fc id:T-B-169 sha:ad2804fa src:dodatky/b-symptomy.md:93 status:no-external-signal -->
+<!-- fc id:T-B-169 sha:ad2804fa src:dodatky/b-symptomy.md:93 status:unchecked -->
 ### T-B-169 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8191,7 +8191,7 @@
 
 ---
 
-<!-- fc id:T-B-170 sha:35d7d17e src:dodatky/b-symptomy.md:93 status:no-external-signal -->
+<!-- fc id:T-B-170 sha:35d7d17e src:dodatky/b-symptomy.md:93 status:unchecked -->
 ### T-B-170 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8235,7 +8235,7 @@
 
 ---
 
-<!-- fc id:T-B-171 sha:9ed2bd2c src:dodatky/b-symptomy.md:93 status:no-external-signal -->
+<!-- fc id:T-B-171 sha:9ed2bd2c src:dodatky/b-symptomy.md:93 status:unchecked -->
 ### T-B-171 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8337,7 +8337,7 @@
 
 ---
 
-<!-- fc id:T-B-173 sha:522f4b8b src:dodatky/b-symptomy.md:94 status:no-external-signal -->
+<!-- fc id:T-B-173 sha:522f4b8b src:dodatky/b-symptomy.md:94 status:unchecked -->
 ### T-B-173 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8381,7 +8381,7 @@
 
 ---
 
-<!-- fc id:T-B-174 sha:77a543d6 src:dodatky/b-symptomy.md:94 status:no-external-signal -->
+<!-- fc id:T-B-174 sha:77a543d6 src:dodatky/b-symptomy.md:94 status:unchecked -->
 ### T-B-174 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8425,7 +8425,7 @@
 
 ---
 
-<!-- fc id:T-B-175 sha:ce426656 src:dodatky/b-symptomy.md:95 status:no-external-signal -->
+<!-- fc id:T-B-175 sha:ce426656 src:dodatky/b-symptomy.md:95 status:unchecked -->
 ### T-B-175 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8469,7 +8469,7 @@
 
 ---
 
-<!-- fc id:T-B-176 sha:5c1a88db src:dodatky/b-symptomy.md:95 status:no-external-signal -->
+<!-- fc id:T-B-176 sha:5c1a88db src:dodatky/b-symptomy.md:95 status:unchecked -->
 ### T-B-176 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8513,7 +8513,7 @@
 
 ---
 
-<!-- fc id:T-B-177 sha:ebfecd76 src:dodatky/b-symptomy.md:95 status:no-external-signal -->
+<!-- fc id:T-B-177 sha:ebfecd76 src:dodatky/b-symptomy.md:95 status:unchecked -->
 ### T-B-177 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8609,7 +8609,7 @@
 
 ---
 
-<!-- fc id:T-B-179 sha:b9e08822 src:dodatky/b-symptomy.md:96 status:no-external-signal -->
+<!-- fc id:T-B-179 sha:b9e08822 src:dodatky/b-symptomy.md:96 status:unchecked -->
 ### T-B-179 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8653,7 +8653,7 @@
 
 ---
 
-<!-- fc id:T-B-180 sha:0c75375e src:dodatky/b-symptomy.md:96 status:no-external-signal -->
+<!-- fc id:T-B-180 sha:0c75375e src:dodatky/b-symptomy.md:96 status:unchecked -->
 ### T-B-180 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8697,7 +8697,7 @@
 
 ---
 
-<!-- fc id:T-B-181 sha:fe46043f src:dodatky/b-symptomy.md:97 status:no-external-signal -->
+<!-- fc id:T-B-181 sha:fe46043f src:dodatky/b-symptomy.md:97 status:unchecked -->
 ### T-B-181 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8741,7 +8741,7 @@
 
 ---
 
-<!-- fc id:T-B-182 sha:fb5ef80c src:dodatky/b-symptomy.md:97 status:no-external-signal -->
+<!-- fc id:T-B-182 sha:fb5ef80c src:dodatky/b-symptomy.md:97 status:unchecked -->
 ### T-B-182 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8785,7 +8785,7 @@
 
 ---
 
-<!-- fc id:T-B-183 sha:da576685 src:dodatky/b-symptomy.md:97 status:no-external-signal -->
+<!-- fc id:T-B-183 sha:da576685 src:dodatky/b-symptomy.md:97 status:unchecked -->
 ### T-B-183 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9014,7 +9014,7 @@
 
 ---
 
-<!-- fc id:T-B-188 sha:b3c47737 src:dodatky/b-symptomy.md:104 status:no-external-signal -->
+<!-- fc id:T-B-188 sha:b3c47737 src:dodatky/b-symptomy.md:104 status:unchecked -->
 ### T-B-188 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9096,7 +9096,7 @@
 
 ---
 
-<!-- fc id:T-B-190 sha:56140876 src:dodatky/b-symptomy.md:104 status:no-external-signal -->
+<!-- fc id:T-B-190 sha:56140876 src:dodatky/b-symptomy.md:104 status:unchecked -->
 ### T-B-190 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9178,7 +9178,7 @@
 
 ---
 
-<!-- fc id:T-B-192 sha:ffa97f65 src:dodatky/b-symptomy.md:105 status:no-external-signal -->
+<!-- fc id:T-B-192 sha:ffa97f65 src:dodatky/b-symptomy.md:105 status:unchecked -->
 ### T-B-192 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9219,7 +9219,7 @@
 
 ---
 
-<!-- fc id:T-B-193 sha:6f861a1d src:dodatky/b-symptomy.md:105 status:no-external-signal -->
+<!-- fc id:T-B-193 sha:6f861a1d src:dodatky/b-symptomy.md:105 status:unchecked -->
 ### T-B-193 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9260,7 +9260,7 @@
 
 ---
 
-<!-- fc id:T-B-194 sha:1890e8b0 src:dodatky/b-symptomy.md:106 status:no-external-signal -->
+<!-- fc id:T-B-194 sha:1890e8b0 src:dodatky/b-symptomy.md:106 status:unchecked -->
 ### T-B-194 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9301,7 +9301,7 @@
 
 ---
 
-<!-- fc id:T-B-195 sha:6ff78fce src:dodatky/b-symptomy.md:106 status:no-external-signal -->
+<!-- fc id:T-B-195 sha:6ff78fce src:dodatky/b-symptomy.md:106 status:unchecked -->
 ### T-B-195 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9342,7 +9342,7 @@
 
 ---
 
-<!-- fc id:T-B-196 sha:153e04ac src:dodatky/b-symptomy.md:106 status:no-external-signal -->
+<!-- fc id:T-B-196 sha:153e04ac src:dodatky/b-symptomy.md:106 status:unchecked -->
 ### T-B-196 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9582,7 +9582,7 @@
 
 ---
 
-<!-- fc id:T-B-201 sha:1f885b10 src:dodatky/b-symptomy.md:108 status:no-external-signal -->
+<!-- fc id:T-B-201 sha:1f885b10 src:dodatky/b-symptomy.md:108 status:unchecked -->
 ### T-B-201 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9623,7 +9623,7 @@
 
 ---
 
-<!-- fc id:T-B-202 sha:0e6d6dc2 src:dodatky/b-symptomy.md:108 status:no-external-signal -->
+<!-- fc id:T-B-202 sha:0e6d6dc2 src:dodatky/b-symptomy.md:108 status:unchecked -->
 ### T-B-202 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9664,7 +9664,7 @@
 
 ---
 
-<!-- fc id:T-B-203 sha:bf20564d src:dodatky/b-symptomy.md:109 status:no-external-signal -->
+<!-- fc id:T-B-203 sha:bf20564d src:dodatky/b-symptomy.md:109 status:unchecked -->
 ### T-B-203 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9705,7 +9705,7 @@
 
 ---
 
-<!-- fc id:T-B-204 sha:844e5b3c src:dodatky/b-symptomy.md:109 status:no-external-signal -->
+<!-- fc id:T-B-204 sha:844e5b3c src:dodatky/b-symptomy.md:109 status:unchecked -->
 ### T-B-204 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9746,7 +9746,7 @@
 
 ---
 
-<!-- fc id:T-B-205 sha:e56a94c5 src:dodatky/b-symptomy.md:109 status:no-external-signal -->
+<!-- fc id:T-B-205 sha:e56a94c5 src:dodatky/b-symptomy.md:109 status:unchecked -->
 ### T-B-205 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10628,7 +10628,7 @@
 
 ---
 
-<!-- fc id:T-B-225 sha:56b88433 src:dodatky/b-symptomy.md:121 status:no-external-signal -->
+<!-- fc id:T-B-225 sha:56b88433 src:dodatky/b-symptomy.md:121 status:unchecked -->
 ### T-B-225 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10665,7 +10665,7 @@
 
 ---
 
-<!-- fc id:T-B-226 sha:e3d6d102 src:dodatky/b-symptomy.md:121 status:no-external-signal -->
+<!-- fc id:T-B-226 sha:e3d6d102 src:dodatky/b-symptomy.md:121 status:unchecked -->
 ### T-B-226 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10702,7 +10702,7 @@
 
 ---
 
-<!-- fc id:T-B-227 sha:d8a49a7b src:dodatky/b-symptomy.md:121 status:no-external-signal -->
+<!-- fc id:T-B-227 sha:d8a49a7b src:dodatky/b-symptomy.md:121 status:unchecked -->
 ### T-B-227 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10739,7 +10739,7 @@
 
 ---
 
-<!-- fc id:T-B-228 sha:962ab34d src:dodatky/b-symptomy.md:122 status:no-external-signal -->
+<!-- fc id:T-B-228 sha:962ab34d src:dodatky/b-symptomy.md:122 status:unchecked -->
 ### T-B-228 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10776,7 +10776,7 @@
 
 ---
 
-<!-- fc id:T-B-229 sha:4aa7bc42 src:dodatky/b-symptomy.md:122 status:no-external-signal -->
+<!-- fc id:T-B-229 sha:4aa7bc42 src:dodatky/b-symptomy.md:122 status:unchecked -->
 ### T-B-229 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10813,7 +10813,7 @@
 
 ---
 
-<!-- fc id:T-B-230 sha:345141ce src:dodatky/b-symptomy.md:122 status:no-external-signal -->
+<!-- fc id:T-B-230 sha:345141ce src:dodatky/b-symptomy.md:122 status:unchecked -->
 ### T-B-230 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11162,7 +11162,7 @@
 
 ---
 
-<!-- fc id:T-B-237 sha:6d0abcdc src:dodatky/b-symptomy.md:125 status:no-external-signal -->
+<!-- fc id:T-B-237 sha:6d0abcdc src:dodatky/b-symptomy.md:125 status:unchecked -->
 ### T-B-237 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11246,7 +11246,7 @@
 
 ---
 
-<!-- fc id:T-B-239 sha:13104249 src:dodatky/b-symptomy.md:125 status:no-external-signal -->
+<!-- fc id:T-B-239 sha:13104249 src:dodatky/b-symptomy.md:125 status:unchecked -->
 ### T-B-239 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11283,7 +11283,7 @@
 
 ---
 
-<!-- fc id:T-B-240 sha:b9f68376 src:dodatky/b-symptomy.md:126 status:no-external-signal -->
+<!-- fc id:T-B-240 sha:b9f68376 src:dodatky/b-symptomy.md:126 status:unchecked -->
 ### T-B-240 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11320,7 +11320,7 @@
 
 ---
 
-<!-- fc id:T-B-241 sha:fc0e937d src:dodatky/b-symptomy.md:126 status:no-external-signal -->
+<!-- fc id:T-B-241 sha:fc0e937d src:dodatky/b-symptomy.md:126 status:unchecked -->
 ### T-B-241 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11357,7 +11357,7 @@
 
 ---
 
-<!-- fc id:T-B-242 sha:54b06376 src:dodatky/b-symptomy.md:126 status:no-external-signal -->
+<!-- fc id:T-B-242 sha:54b06376 src:dodatky/b-symptomy.md:126 status:unchecked -->
 ### T-B-242 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11394,7 +11394,7 @@
 
 ---
 
-<!-- fc id:T-B-243 sha:735bca0f src:dodatky/b-symptomy.md:127 status:no-external-signal -->
+<!-- fc id:T-B-243 sha:735bca0f src:dodatky/b-symptomy.md:127 status:unchecked -->
 ### T-B-243 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11431,7 +11431,7 @@
 
 ---
 
-<!-- fc id:T-B-244 sha:2cc14ea6 src:dodatky/b-symptomy.md:127 status:no-external-signal -->
+<!-- fc id:T-B-244 sha:2cc14ea6 src:dodatky/b-symptomy.md:127 status:unchecked -->
 ### T-B-244 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11468,7 +11468,7 @@
 
 ---
 
-<!-- fc id:T-B-245 sha:0e15746b src:dodatky/b-symptomy.md:127 status:no-external-signal -->
+<!-- fc id:T-B-245 sha:0e15746b src:dodatky/b-symptomy.md:127 status:unchecked -->
 ### T-B-245 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11505,7 +11505,7 @@
 
 ---
 
-<!-- fc id:T-B-246 sha:5464bc24 src:dodatky/b-symptomy.md:128 status:no-external-signal -->
+<!-- fc id:T-B-246 sha:5464bc24 src:dodatky/b-symptomy.md:128 status:unchecked -->
 ### T-B-246 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11542,7 +11542,7 @@
 
 ---
 
-<!-- fc id:T-B-247 sha:051322d4 src:dodatky/b-symptomy.md:128 status:no-external-signal -->
+<!-- fc id:T-B-247 sha:051322d4 src:dodatky/b-symptomy.md:128 status:unchecked -->
 ### T-B-247 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11579,7 +11579,7 @@
 
 ---
 
-<!-- fc id:T-B-248 sha:9416c78b src:dodatky/b-symptomy.md:128 status:no-external-signal -->
+<!-- fc id:T-B-248 sha:9416c78b src:dodatky/b-symptomy.md:128 status:unchecked -->
 ### T-B-248 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11644,7 +11644,7 @@
 
 ---
 
-<!-- fc id:T-B-250 sha:668b2f3a src:dodatky/b-symptomy.md:134 status:no-external-signal -->
+<!-- fc id:T-B-250 sha:668b2f3a src:dodatky/b-symptomy.md:134 status:unchecked -->
 ### T-B-250 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11678,7 +11678,7 @@
 
 ---
 
-<!-- fc id:T-B-251 sha:484b056e src:dodatky/b-symptomy.md:134 status:no-external-signal -->
+<!-- fc id:T-B-251 sha:484b056e src:dodatky/b-symptomy.md:134 status:unchecked -->
 ### T-B-251 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11712,7 +11712,7 @@
 
 ---
 
-<!-- fc id:T-B-252 sha:1dbefcae src:dodatky/b-symptomy.md:134 status:no-external-signal -->
+<!-- fc id:T-B-252 sha:1dbefcae src:dodatky/b-symptomy.md:134 status:unchecked -->
 ### T-B-252 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11746,7 +11746,7 @@
 
 ---
 
-<!-- fc id:T-B-253 sha:d5dba67b src:dodatky/b-symptomy.md:135 status:no-external-signal -->
+<!-- fc id:T-B-253 sha:d5dba67b src:dodatky/b-symptomy.md:135 status:unchecked -->
 ### T-B-253 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11780,7 +11780,7 @@
 
 ---
 
-<!-- fc id:T-B-254 sha:ee489cf0 src:dodatky/b-symptomy.md:135 status:no-external-signal -->
+<!-- fc id:T-B-254 sha:ee489cf0 src:dodatky/b-symptomy.md:135 status:unchecked -->
 ### T-B-254 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11814,7 +11814,7 @@
 
 ---
 
-<!-- fc id:T-B-255 sha:b987e276 src:dodatky/b-symptomy.md:135 status:no-external-signal -->
+<!-- fc id:T-B-255 sha:b987e276 src:dodatky/b-symptomy.md:135 status:unchecked -->
 ### T-B-255 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11848,7 +11848,7 @@
 
 ---
 
-<!-- fc id:T-B-256 sha:806f210b src:dodatky/b-symptomy.md:136 status:no-external-signal -->
+<!-- fc id:T-B-256 sha:806f210b src:dodatky/b-symptomy.md:136 status:unchecked -->
 ### T-B-256 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11882,7 +11882,7 @@
 
 ---
 
-<!-- fc id:T-B-257 sha:76b833a9 src:dodatky/b-symptomy.md:136 status:no-external-signal -->
+<!-- fc id:T-B-257 sha:76b833a9 src:dodatky/b-symptomy.md:136 status:unchecked -->
 ### T-B-257 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11916,7 +11916,7 @@
 
 ---
 
-<!-- fc id:T-B-258 sha:53c80222 src:dodatky/b-symptomy.md:136 status:no-external-signal -->
+<!-- fc id:T-B-258 sha:53c80222 src:dodatky/b-symptomy.md:136 status:unchecked -->
 ### T-B-258 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11950,7 +11950,7 @@
 
 ---
 
-<!-- fc id:T-B-259 sha:6889ccbc src:dodatky/b-symptomy.md:137 status:no-external-signal -->
+<!-- fc id:T-B-259 sha:6889ccbc src:dodatky/b-symptomy.md:137 status:unchecked -->
 ### T-B-259 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11984,7 +11984,7 @@
 
 ---
 
-<!-- fc id:T-B-260 sha:a99802d5 src:dodatky/b-symptomy.md:137 status:no-external-signal -->
+<!-- fc id:T-B-260 sha:a99802d5 src:dodatky/b-symptomy.md:137 status:unchecked -->
 ### T-B-260 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -12018,7 +12018,7 @@
 
 ---
 
-<!-- fc id:T-B-261 sha:4b549068 src:dodatky/b-symptomy.md:137 status:no-external-signal -->
+<!-- fc id:T-B-261 sha:4b549068 src:dodatky/b-symptomy.md:137 status:unchecked -->
 ### T-B-261 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**

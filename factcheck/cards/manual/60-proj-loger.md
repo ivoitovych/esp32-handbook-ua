@@ -600,7 +600,7 @@
 
 ---
 
-<!-- fc id:T-60-018 sha:c08c37e1 src:manual/60-proj-loger.md:33 status:no-external-signal -->
+<!-- fc id:T-60-018 sha:c08c37e1 src:manual/60-proj-loger.md:33 status:unchecked -->
 ### T-60-018 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4694,7 +4694,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-126 sha:9084f4d4 src:manual/60-proj-loger.md:318 status:no-external-signal -->
+<!-- fc id:T-60-126 sha:9084f4d4 src:manual/60-proj-loger.md:318 status:unchecked -->
 ### T-60-126 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4814,7 +4814,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-129 sha:7ebdd2fb src:manual/60-proj-loger.md:319 status:no-external-signal -->
+<!-- fc id:T-60-129 sha:7ebdd2fb src:manual/60-proj-loger.md:319 status:unchecked -->
 ### T-60-129 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**

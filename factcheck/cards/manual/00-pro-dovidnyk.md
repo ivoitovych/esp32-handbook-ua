@@ -464,7 +464,7 @@
 
 ---
 
-<!-- fc id:T-00-019 sha:bfc1ad7f src:manual/00-pro-dovidnyk.md:49 status:no-external-signal -->
+<!-- fc id:T-00-019 sha:bfc1ad7f src:manual/00-pro-dovidnyk.md:49 status:unchecked -->
 ### T-00-019 · tablycya · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -494,7 +494,7 @@
 
 ---
 
-<!-- fc id:T-00-020 sha:8294306d src:manual/00-pro-dovidnyk.md:51 status:no-external-signal -->
+<!-- fc id:T-00-020 sha:8294306d src:manual/00-pro-dovidnyk.md:51 status:unchecked -->
 ### T-00-020 · tablycya · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -524,7 +524,7 @@
 
 ---
 
-<!-- fc id:T-00-021 sha:efade1fa src:manual/00-pro-dovidnyk.md:52 status:no-external-signal -->
+<!-- fc id:T-00-021 sha:efade1fa src:manual/00-pro-dovidnyk.md:52 status:unchecked -->
 ### T-00-021 · tablycya · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -554,7 +554,7 @@
 
 ---
 
-<!-- fc id:T-00-022 sha:cc6e840b src:manual/00-pro-dovidnyk.md:53 status:no-external-signal -->
+<!-- fc id:T-00-022 sha:cc6e840b src:manual/00-pro-dovidnyk.md:53 status:unchecked -->
 ### T-00-022 · tablycya · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -584,7 +584,7 @@
 
 ---
 
-<!-- fc id:T-00-023 sha:6d000fdf src:manual/00-pro-dovidnyk.md:54 status:no-external-signal -->
+<!-- fc id:T-00-023 sha:6d000fdf src:manual/00-pro-dovidnyk.md:54 status:unchecked -->
 ### T-00-023 · tablycya · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -614,7 +614,7 @@
 
 ---
 
-<!-- fc id:T-00-024 sha:a0824346 src:manual/00-pro-dovidnyk.md:55 status:no-external-signal -->
+<!-- fc id:T-00-024 sha:a0824346 src:manual/00-pro-dovidnyk.md:55 status:unchecked -->
 ### T-00-024 · tablycya · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -644,7 +644,7 @@
 
 ---
 
-<!-- fc id:T-00-025 sha:f11b71e5 src:manual/00-pro-dovidnyk.md:56 status:no-external-signal -->
+<!-- fc id:T-00-025 sha:f11b71e5 src:manual/00-pro-dovidnyk.md:56 status:unchecked -->
 ### T-00-025 · tablycya · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**

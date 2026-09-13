@@ -400,7 +400,7 @@
 
 ---
 
-<!-- fc id:T-UA--018 sha:82044681 src:inserts/ua-market-2026-08.md:50 status:no-external-signal -->
+<!-- fc id:T-UA--018 sha:82044681 src:inserts/ua-market-2026-08.md:50 status:unchecked -->
 ### T-UA--018 · tablycya · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -671,7 +671,7 @@
 
 ---
 
-<!-- fc id:T-UA--026 sha:03af2d33 src:inserts/ua-market-2026-08.md:59 status:no-external-signal -->
+<!-- fc id:T-UA--026 sha:03af2d33 src:inserts/ua-market-2026-08.md:59 status:unchecked -->
 ### T-UA--026 · tablycya · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**

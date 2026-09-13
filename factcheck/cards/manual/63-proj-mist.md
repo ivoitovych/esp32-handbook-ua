@@ -180,7 +180,7 @@
 
 ---
 
-<!-- fc id:T-63-007 sha:a82ae55f src:manual/63-proj-mist.md:19 status:no-external-signal -->
+<!-- fc id:T-63-007 sha:a82ae55f src:manual/63-proj-mist.md:19 status:unchecked -->
 ### T-63-007 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**

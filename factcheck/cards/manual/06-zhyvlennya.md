@@ -440,7 +440,7 @@
 
 ---
 
-<!-- fc id:T-06-018 sha:08449eca src:manual/06-zhyvlennya.md:41 status:no-external-signal -->
+<!-- fc id:T-06-018 sha:08449eca src:manual/06-zhyvlennya.md:41 status:unchecked -->
 ### T-06-018 · tablycya · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -553,7 +553,7 @@
 
 ---
 
-<!-- fc id:T-06-021 sha:36242088 src:manual/06-zhyvlennya.md:45 status:no-external-signal -->
+<!-- fc id:T-06-021 sha:36242088 src:manual/06-zhyvlennya.md:45 status:unchecked -->
 ### T-06-021 · tablycya · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**

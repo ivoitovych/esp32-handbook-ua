@@ -607,7 +607,7 @@
 
 ---
 
-<!-- fc id:T-25-018 sha:61c4e333 src:manual/25-log.md:24 status:no-external-signal -->
+<!-- fc id:T-25-018 sha:61c4e333 src:manual/25-log.md:24 status:unchecked -->
 ### T-25-018 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -645,7 +645,7 @@
 
 ---
 
-<!-- fc id:T-25-019 sha:9a237f54 src:manual/25-log.md:24 status:no-external-signal -->
+<!-- fc id:T-25-019 sha:9a237f54 src:manual/25-log.md:24 status:unchecked -->
 ### T-25-019 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2048,7 +2048,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-068 sha:6526e058 src:manual/25-log.md:150 status:no-external-signal -->
+<!-- fc id:T-25-068 sha:6526e058 src:manual/25-log.md:150 status:unchecked -->
 ### T-25-068 · tablycya · `manual/25-log.md`
 
 **Твердження, коротко**

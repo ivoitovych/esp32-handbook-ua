@@ -876,7 +876,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-034 sha:78e5f719 src:manual/11-idf.md:91 status:no-external-signal -->
+<!-- fc id:T-11-034 sha:78e5f719 src:manual/11-idf.md:91 status:unchecked -->
 ### T-11-034 · komirka · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -909,7 +909,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-035 sha:46f331f8 src:manual/11-idf.md:91 status:no-external-signal -->
+<!-- fc id:T-11-035 sha:46f331f8 src:manual/11-idf.md:91 status:unchecked -->
 ### T-11-035 · komirka · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -942,7 +942,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-036 sha:47dc3778 src:manual/11-idf.md:92 status:no-external-signal -->
+<!-- fc id:T-11-036 sha:47dc3778 src:manual/11-idf.md:92 status:unchecked -->
 ### T-11-036 · komirka · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -975,7 +975,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-037 sha:2b4cd2d7 src:manual/11-idf.md:92 status:no-external-signal -->
+<!-- fc id:T-11-037 sha:2b4cd2d7 src:manual/11-idf.md:92 status:unchecked -->
 ### T-11-037 · komirka · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1475,7 +1475,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-052 sha:4190b6cd src:manual/11-idf.md:131 status:no-external-signal -->
+<!-- fc id:T-11-052 sha:4190b6cd src:manual/11-idf.md:131 status:unchecked -->
 ### T-11-052 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2215,7 +2215,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-073 sha:0158929d src:manual/11-idf.md:192 status:no-external-signal -->
+<!-- fc id:T-11-073 sha:0158929d src:manual/11-idf.md:192 status:unchecked -->
 ### T-11-073 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**

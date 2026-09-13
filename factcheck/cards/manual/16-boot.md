@@ -396,7 +396,7 @@ Strapping-пін — це звичайний GPIO, стан якого чита�
 
 ---
 
-<!-- fc id:T-16-016 sha:93a3f980 src:manual/16-boot.md:43 status:no-external-signal -->
+<!-- fc id:T-16-016 sha:93a3f980 src:manual/16-boot.md:43 status:unchecked -->
 ### T-16-016 · tablycya · `manual/16-boot.md`
 
 **Твердження, коротко**

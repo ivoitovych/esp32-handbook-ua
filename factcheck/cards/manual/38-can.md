@@ -778,7 +778,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-030 sha:ec1fc8f4 src:manual/38-can.md:70 status:no-external-signal -->
+<!-- fc id:T-38-030 sha:ec1fc8f4 src:manual/38-can.md:70 status:unchecked -->
 ### T-38-030 · tablycya · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -806,7 +806,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-031 sha:b8b18ae3 src:manual/38-can.md:72 status:no-external-signal -->
+<!-- fc id:T-38-031 sha:b8b18ae3 src:manual/38-can.md:72 status:unchecked -->
 ### T-38-031 · tablycya · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -875,7 +875,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-033 sha:100b4dd7 src:manual/38-can.md:74 status:no-external-signal -->
+<!-- fc id:T-38-033 sha:100b4dd7 src:manual/38-can.md:74 status:unchecked -->
 ### T-38-033 · tablycya · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -903,7 +903,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-034 sha:6d56a81b src:manual/38-can.md:75 status:no-external-signal -->
+<!-- fc id:T-38-034 sha:6d56a81b src:manual/38-can.md:75 status:unchecked -->
 ### T-38-034 · tablycya · `manual/38-can.md`
 
 **Твердження, коротко**
