@@ -168,10 +168,12 @@ def perelik() -> int:
 def zvirka() -> int:
     z = zapysy()
     bidy = 0
+    nemaye = 0
     for imya, d in sorted(z.items()):
         p = KESH / imya
         if not p.exists():
             print(f"   · {imya}: немає локально — качати за URL із маніфесту")
+            nemaye += 1
             continue
         s = sha256(p)
         if s != d["sha"]:
@@ -184,7 +186,13 @@ def zvirka() -> int:
         print(f"   ✗ {imya}: доказ «{nazva[:44]}» цитує файл, якого в "
               f"маніфесті немає")
     bidy += len(bezridni)
-    print(f"cache: записів {len(z)}, розбіжностей {bidy}")
+    # Відсутній файл — не біда: кеш локальний, маніфест каже, як його
+    # долити. Але мовчати про нього в підсумковому рядку не можна — саме
+    # цей рядок їде в кожен звіт. Контейнер М2 стерли з 133 відсутніми
+    # файлами, і рядок казав «розбіжностей 0», бо `continue` вище не
+    # доходив до лічильника. Нуль був нулем про те, чого не дивилися.
+    print(f"cache: записів {len(z)}, розбіжностей {bidy}, "
+          f"немає локально {nemaye}")
     return 1 if bidy else 0
 
 
@@ -287,7 +295,15 @@ def proba() -> int:
     ok = any(i == vzhytyy for i, _ in zlamani)
     print(f"   {'✓' if ok else '✗ ПРОВАЛ'} рядок `{vzhytyy}` прибрано з "
           f"маніфесту: тривог {len(zlamani)}, очікувано ≥1")
-    return 0 if (not spravzhni and ok) else 1
+    # Лічильник відсутніх: рахуємо маніфест проти диска на копії, де
+    # один наявний файл оголошено відсутнім. Без цієї проби лічильник
+    # мовчав би так само переконливо, як мовчав `continue` до нього.
+    vidsutni = sum(1 for k in z if not (KESH / k).exists())
+    zbilsheno = sum(1 for k in z if not (KESH / k).exists() or k == vzhytyy)
+    lich = zbilsheno == vidsutni + 1
+    print(f"   {'✓' if lich else '✗ ПРОВАЛ'} лічильник відсутніх: "
+          f"{vidsutni} → {zbilsheno}, коли наявний файл оголосити зниклим")
+    return 0 if (not spravzhni and ok and lich) else 1
 
 
 def rozmir() -> int:
@@ -386,4 +402,11 @@ if __name__ == "__main__":
         sys.exit(rozmir())
     if a[0] == "--vidtvornist":
         sys.exit(vidtvornist())
+    # Помилковий ключ — не URL. Без цього `--self-check` пішов у curl як
+    # адреса, і на успіху дописав би в маніфест рядок з іменем ключа.
+    if a[0].startswith("--"):
+        print(f"cache: невідомий ключ `{a[0]}`\n"
+              f"   --list --check --samoperevirka --size --vidtvornist\n"
+              f"   або URL (і, необов'язково, ім'я файлу)")
+        sys.exit(2)
     sys.exit(zavantazhyty(a[0], a[1] if len(a) > 1 else None))

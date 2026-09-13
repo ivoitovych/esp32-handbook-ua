@@ -18,9 +18,9 @@ it.
 | `stub in the cache` | the server returned HTML with status 200 instead of a PDF |
 | `checked by eye` | text extraction destroys the structure; a maintainer checked it, and said why |
 
-Evidence records: **1393**. Checked verbatim: **616**. Not found: **60**. Source not cached: **36**. Nothing to check: **658**.
+Evidence records: **1393**. Checked verbatim: **581**. Not found: **58**. Source not cached: **73**. Nothing to check: **658**.
 
-As of 2026-09-03 08:23 UTC.
+As of 2026-09-13 17:40 UTC.
 
 
 ## no-external-signal on a claim with a number — 23
@@ -51,11 +51,10 @@ As of 2026-09-03 08:23 UTC.
 | T-60-123: Запис на картку займає 400 мс | `m2-94-sample` | no-external-signal, yet the title carries a number with a unit |
 | Модулі на 8 і 16 МБ флешу коштують істотно дорожче за різницю у ціні | `m2-95-sample` | no-external-signal, yet the title carries a number with a unit |
 
-## **not found** — 60
+## **not found** — 58
 
 | Evidence | File | Detail |
 |---|---|---|
-| Розпіновка JTAG classic — datasheet як друге джерело до io_mux_reg.h | `m2-01-esp32-datasheet-iomux` | 1 of 8 lines: «MTCK    JTAG interface signals…» |
 | T-K06-045: На 115200 нічого, на 74880 осмислений текст — це ESP8266 | `m2-62-bootlog-k06` | 1 of 1 lines: «The ESP8266 boot rom writes a log to the UART when booting at ``74880 …» |
 | Етап 1 — ROM bootloader зашитий у кремній | `m2-82-boot-flash` | 1 of 1 lines: «The ROM bootloader is in read-only memory (ROM) on the ESP32 chip.…» |
 | Етап 2 — другий бутлоадер bootloader.bin у флеші | `m2-82-boot-flash` | 1 of 1 lines: «After reset, the second line printed by the ESP32 ROM is a reset & boo…» |
@@ -84,7 +83,6 @@ As of 2026-09-03 08:23 UTC.
 | Помилки купи розрізняють бік переповнення | `pass-10-povidomlennya` | 2 of 2 lines: «#define ERR_STR1 "***ERROR*** A stack overflow in task "…»; «#define ERR_STR2 " has been detected."…» |
 | Дерево menuconfig — корінь і Component config | `pass-11-menuconfig` | 9 of 13 lines: «esptool_py:        menu "Serial flasher config"…»; «partition_table:   menu "Partition Table"…»; «bootloader:        menu "Bootloader config"…» |
 | GPIO15 низький глушить boot-лог ROM | `pass-12-piny` | 2 of 3 lines: «|            | bootloader. Has an internal pull-up, so unconnected = H…»; «|            | normal output.…» |
-| Режими SPI — CPHA задає номер фронту, не напрямок | `pass-16-interfeysy` | 1 of 3 lines: «@param  mode   SPI data mode; one of SPI_MODE0, SPI_MODE1, SPI_MODE2…» |
 | pioarduino, а не офіційна платформа PlatformIO | `pass-17-simeystva-proektiv` | 1 of 5 lines: «"version": "55.03.311"…» |
 | Підтягування I²C — діапазон, а не одне число | `pass-18-schemy` | 2 of 5 lines: «The recommended value for pull-up resistors usually ranges from 1 kΩ t…»; «should be (but not less than 1 kΩ). Indeed, large resistors will decli…» |
 | Кольорова обв'язка прикладів — classic і тільки classic | `pass-20-jtag-obvyazka` | 1 of 1 lines: «esp32: SOC_GPIO_PIN_COUNT 40…» |
@@ -116,11 +114,23 @@ As of 2026-09-03 08:23 UTC.
 | sdkconfig.defaults рекомендовано тримати в системі контролю версій | `pass-45-sdkconfig-defaults` | 1 of 1 lines: «It is recommended to commit sdkconfig.defaults for providing baseline …» |
 | T-17-118: Друга половина рядка залежить від версії. | `sweep-17-esptool` | 1 of 1 lines: «'esptool v{__version__}'…» |
 
-## source not cached — 36
+## source not cached — 73
 
 | Evidence | File | Detail |
 |---|---|---|
+| Розпіновка JTAG classic — datasheet як друге джерело до io_mux_reg.h | `m2-01-esp32-datasheet-iomux` | 1 sources not in the cache |
+| Споживання ESP32 за режимами — порядки збігаються з Table 4-2 | `m2-02-esp32-datasheet` | 1 sources not in the cache |
+| Пін віддає більше, ніж приймає — IOH 40 мА проти IOL 28 мА | `m2-02-esp32-datasheet` | 1 sources not in the cache |
+| Робочий діапазон чипа ESP32 — від −40 до 125 °C | `m2-02-esp32-datasheet` | 1 sources not in the cache |
+| Діапазон модуля WROOM — 85 °C у версіях N, 105 °C у версіях H | `m2-02-esp32-datasheet` | 1 sources not in the cache |
+| Абсолютний максимум входу — 3.6 В, тому 5 В убивають пін | `m2-06-voltage-limits` | 1 sources not in the cache |
 | Нижня межа частот STM32 — 24 МГц у Value line | `m2-13-stm32-clocks` | 2 sources not in the cache |
+| Свинцевий припій плавиться нижче за безсвинцевий | `m2-17-solder-and-ip` | 1 sources not in the cache |
+| Перегрів звичайного MOSFET від 3.3 В — не звірено цим набором джерел | `m2-20-levels-and-switches` | 1 sources not in the cache |
+| «IVDD, current delivered by external power supply, Min 0.5 A» — дослівна цитата datasheet | `m2-21-power-06` | 1 sources not in the cache |
+| HC-SR04 — дільник напруги 10кОм + 20кОм | `m2-28-sensors-45` | 1 sources not in the cache |
+| Touch сенсори є лише на classic, S2 и S3 | `m2-63-gpio-07` | 1 sources not in the cache |
+| I2C: на спокої обидві лінії мають бути HIGH (3.3 В). Якщо немає — поломаний резистор підтягування. | `m2-90-sample` | 1 sources not in the cache |
 | Адреса bootloader.bin для S3, C3, C6, H2 — 0x0 | `m2-90-sample` | 1 sources not in the cache |
 | Код скидання 0xa — INTRUSION_RESET (детектор втручання), рідко трапляється | `m2-90-sample` | 1 sources not in the cache |
 | Код скидання 0xd названий RTCWDT_CPU_RESET | `m2-95-sample` | 1 sources not in the cache |
@@ -130,6 +140,29 @@ As of 2026-09-03 08:23 UTC.
 | Bootloader розташований за адресою 0x0 на S3, C3, C6, H2 | `m2-95-sample` | 1 sources not in the cache |
 | T-D-025 — `0x8` код помилки, watchdog таймера 1 | `m2-96-sample` | 1 sources not in the cache |
 | T-D-046 — `0xf` код помилки RTCWDT_BROWN_OUT_RESET | `m2-96-sample` | 1 sources not in the cache |
+| Сучасні роутери часто розділяють SSID для діапазонів; ESP32 не бачить 5 ГГц | `m2-97-sample` | 1 sources not in the cache |
+| Літієві батареї не заряджаються нижче 0 °C і втрачають ємність на морозі | `m2-97-sample` | 1 sources not in the cache |
+| T-02-024: Частота, МГц · ESP32 → 240 | `m2-98-chips-datasheets` | 1 sources not in the cache |
+| T-02-027: Частота, МГц · C3 → 160 | `m2-98-chips-datasheets` | 1 sources not in the cache |
+| T-02-029: Частота, МГц · H2 → 96 | `m2-98-chips-datasheets` | 1 sources not in the cache |
+| T-02-031: SRAM, КБ · S2 → 320 | `m2-98-chips-datasheets` | 1 sources not in the cache |
+| T-02-032: SRAM, КБ · S3 → 512 | `m2-98-chips-datasheets` | 1 sources not in the cache |
+| T-02-033: SRAM, КБ · C3 → 400 | `m2-98-chips-datasheets` | 1 sources not in the cache |
+| T-02-034: SRAM, КБ · C6 → 512 | `m2-98-chips-datasheets` | 1 sources not in the cache |
+| T-02-013: Ядро · S2 → Xtensa LX7 | `m2-98-chips-datasheets` | 1 sources not in the cache |
+| T-02-016: Ядро · C6 → RISC-V | `m2-98-chips-datasheets` | 1 sources not in the cache |
+| T-02-017: Ядро · H2 → RISC-V | `m2-98-chips-datasheets` | 1 sources not in the cache |
+| T-02-020: Ядер · S3 → **2** | `m2-98-chips-datasheets` | 1 sources not in the cache |
+| T-02-133: Zigbee, Thread, Matter · Чип → C6 або H2 | `m2-98-chips-datasheets` | 1 sources not in the cache |
+| T-02-139: Налагодження без адаптера · Чип → S3, C3 | `m2-98-chips-datasheets` | 1 sources not in the cache |
+| T-02-146: S2 без Bluetooth узагалі. | `m2-98-chips-datasheets` | 1 sources not in the cache |
+| T-04-092: I²S · classic → 2 | `m2-99-peripherals-cores` | 1 sources not in the cache |
+| T-04-070: UART · S3 → 3 | `m2-99-peripherals-cores` | 1 sources not in the cache |
+| T-A-021: 5 · Обмеження → **strapping** | `m2-a1-pinouts-adc-strapping` | 1 sources not in the cache |
+| T-A-078: 2 · Обмеження → **strapping** | `m2-a1-pinouts-adc-strapping` | 1 sources not in the cache |
+| T-A-053: 32, 33 · Примітка → **ADC1 — працює при Wi-Fi** | `m2-a1-pinouts-adc-strapping` | 1 sources not in the cache |
+| T-A-058: **ADC2** (не працює при Wi-Fi): 0, 2, 4, 12, 13, 14, 15, 25, 26, 2 | `m2-a1-pinouts-adc-strapping` | 1 sources not in the cache |
+| T-A-101: UART0 TX / RX · [[C3]] → 21 / 20 | `m2-a1-pinouts-adc-strapping` | 1 sources not in the cache |
 | Кількість блоків периферії за сімействами | `pass-01-tverde-yadro` | 1 sources not in the cache |
 | Апаратні піни IOMUX для UART0 і SPI | `pass-01-tverde-yadro` | 1 sources not in the cache |
 | Типові піни I²C і бортового світлодіода в Arduino | `pass-01-tverde-yadro` | 1 sources not in the cache |
@@ -156,21 +189,14 @@ As of 2026-09-03 08:23 UTC.
 | Тільки-вхідні, консоль і USB-JTAG у довіднику пінів | `pass-33-pul-shmatky-4-5` | 1 of 2 sources not in the cache; the rest did not cover 7 of 7 lines |
 | Піновий план проєкту 62 — три сімейства, кожен пін вільний | `pass-33-pul-shmatky-4-5` | 1 of 4 sources not in the cache; the rest did not cover 3 of 3 lines |
 | chip-id на сімействі ESP32 повертає попередження, а не Chip ID | `pass-36-chip-id` | 2 of 3 sources not in the cache; the rest did not cover 10 of 17 lines |
+| T-40-019: Розмір стека сервера задається в `HTTPD_DEFAULT_CONFIG` і його ч | `wave-20260901` | 1 sources not in the cache |
+| T-40-028: На ESP32 кілька одночасних клієнтів — межа, і поводитися з нею т | `wave-20260901` | 1 sources not in the cache |
 
-## checked — 616
+## checked — 581
 
 | Evidence | File | Detail |
 |---|---|---|
-| Споживання ESP32 за режимами — порядки збігаються з Table 4-2 | `m2-02-esp32-datasheet` | 5 lines |
-| Пін віддає більше, ніж приймає — IOH 40 мА проти IOL 28 мА | `m2-02-esp32-datasheet` | 2 lines |
-| Робочий діапазон чипа ESP32 — від −40 до 125 °C | `m2-02-esp32-datasheet` | 2 lines |
-| Діапазон модуля WROOM — 85 °C у версіях N, 105 °C у версіях H | `m2-02-esp32-datasheet` | 10 lines |
-| Абсолютний максимум входу — 3.6 В, тому 5 В убивають пін | `m2-06-voltage-limits` | 3 lines |
-| Свинцевий припій плавиться нижче за безсвинцевий | `m2-17-solder-and-ip` | 5 lines |
-| Перегрів звичайного MOSFET від 3.3 В — не звірено цим набором джерел | `m2-20-levels-and-switches` | 1 lines |
-| «IVDD, current delivered by external power supply, Min 0.5 A» — дослівна цитата datasheet | `m2-21-power-06` | 2 lines |
 | Тест на 3.1 В — узгоджено з порогом коду й нижньою межею buck-boost | `m2-23-projects-60-62` | 4 lines |
-| HC-SR04 — дільник напруги 10кОм + 20кОм | `m2-28-sensors-45` | 1 lines |
 | 0x1: Що сталося → подано живлення або EN | `m2-60-panic-a` | 1 lines |
 | 0x1: Що робити → норма | `m2-60-panic-a` | 1 lines |
 | 0x3: Назва → SW_RESET | `m2-60-panic-a` | 1 lines |
@@ -203,7 +229,6 @@ As of 2026-09-03 08:23 UTC.
 | T-K06-009: 0x1 (POWERON_RESET) — подано живлення або натиснуто EN | `m2-62-bootlog-k06` | 1 lines |
 | T-K06-026: boot: — куди пішов чип (SPI_FAST_FLASH_BOOT або DOWNLOAD_BOOT) | `m2-62-bootlog-k06` | 1 lines |
 | T-K06-038: Garbage символи при 115200 означають ESP8266; на 74880 читається | `m2-62-bootlog-k06` | 1 lines |
-| Touch сенсори є лише на classic, S2 и S3 | `m2-63-gpio-07` | 1 lines |
 | Схема реле: +12 В → насос → реле (NO) → аварійний вимикач → GND | `m2-67-project-62` | 1 lines |
 | Лог переходу між станами чипа з причиною | `m2-67-project-62` | 1 lines |
 | Керування насосом функцією nasos_keruvaty на основі стану | `m2-67-project-62` | 1 lines |
@@ -227,33 +252,9 @@ As of 2026-09-03 08:23 UTC.
 | Таблиця розділів з адресами nvs 0x9000 та factory 0x10000 | `m2-82-boot-flash` | 2 lines |
 | Сторож (Watchdog) автоматично перезавантажує систему при зависанні | `m2-84-freertos` | 2 lines |
 | Task Watchdog Timer та Interrupt Watchdog Timer у ESP-IDF | `m2-84-freertos` | 3 lines |
-| I2C: на спокої обидві лінії мають бути HIGH (3.3 В). Якщо немає — поломаний резистор підтягування. | `m2-90-sample` | 3 lines |
 | T-D-040: 0xd = RTCWDT_CPU_RESET, що робити → розділ 32 | `m2-94-sample` | 1 lines |
 | T-D-043: 0xe = EXT_CPU_RESET, норма | `m2-94-sample` | 1 lines |
 | T-D-041: 0xe = EXT_CPU_RESET (Назва) | `m2-94-sample` | 1 lines |
-| Сучасні роутери часто розділяють SSID для діапазонів; ESP32 не бачить 5 ГГц | `m2-97-sample` | 1 lines |
-| Літієві батареї не заряджаються нижче 0 °C і втрачають ємність на морозі | `m2-97-sample` | 1 lines |
-| T-02-024: Частота, МГц · ESP32 → 240 | `m2-98-chips-datasheets` | 1 lines |
-| T-02-027: Частота, МГц · C3 → 160 | `m2-98-chips-datasheets` | 1 lines |
-| T-02-029: Частота, МГц · H2 → 96 | `m2-98-chips-datasheets` | 1 lines |
-| T-02-031: SRAM, КБ · S2 → 320 | `m2-98-chips-datasheets` | 1 lines |
-| T-02-032: SRAM, КБ · S3 → 512 | `m2-98-chips-datasheets` | 1 lines |
-| T-02-033: SRAM, КБ · C3 → 400 | `m2-98-chips-datasheets` | 1 lines |
-| T-02-034: SRAM, КБ · C6 → 512 | `m2-98-chips-datasheets` | 1 lines |
-| T-02-013: Ядро · S2 → Xtensa LX7 | `m2-98-chips-datasheets` | 1 lines |
-| T-02-016: Ядро · C6 → RISC-V | `m2-98-chips-datasheets` | 1 lines |
-| T-02-017: Ядро · H2 → RISC-V | `m2-98-chips-datasheets` | 1 lines |
-| T-02-020: Ядер · S3 → **2** | `m2-98-chips-datasheets` | 1 lines |
-| T-02-133: Zigbee, Thread, Matter · Чип → C6 або H2 | `m2-98-chips-datasheets` | 1 lines |
-| T-02-139: Налагодження без адаптера · Чип → S3, C3 | `m2-98-chips-datasheets` | 1 lines |
-| T-02-146: S2 без Bluetooth узагалі. | `m2-98-chips-datasheets` | 1 lines |
-| T-04-092: I²S · classic → 2 | `m2-99-peripherals-cores` | 1 lines |
-| T-04-070: UART · S3 → 3 | `m2-99-peripherals-cores` | 1 lines |
-| T-A-021: 5 · Обмеження → **strapping** | `m2-a1-pinouts-adc-strapping` | 1 lines |
-| T-A-078: 2 · Обмеження → **strapping** | `m2-a1-pinouts-adc-strapping` | 1 lines |
-| T-A-053: 32, 33 · Примітка → **ADC1 — працює при Wi-Fi** | `m2-a1-pinouts-adc-strapping` | 1 lines |
-| T-A-058: **ADC2** (не працює при Wi-Fi): 0, 2, 4, 12, 13, 14, 15, 25, 26, 2 | `m2-a1-pinouts-adc-strapping` | 1 lines |
-| T-A-101: UART0 TX / RX · [[C3]] → 21 / 20 | `m2-a1-pinouts-adc-strapping` | 1 lines |
 | T-02-042: Wi-Fi · ESP32 → так | `nosignal-02-chipy` | 1 lines |
 | T-02-043: Wi-Fi · S2 → так | `nosignal-02-chipy` | 1 lines |
 | T-02-044: Wi-Fi · S3 → так | `nosignal-02-chipy` | 1 lines |
@@ -348,6 +349,7 @@ As of 2026-09-03 08:23 UTC.
 | Другий strapping-пін на classic і S3 працює навпаки до C3 | `pass-12-piny` | 4 lines |
 | Таблиця симптомів веде в тематично правильні розділи | `pass-14-marshruty` | 2 lines |
 | Політика підтримки ESP-IDF — 30 місяців, без окремого LTS | `pass-15-versiyi` | 7 lines |
+| Режими SPI — CPHA задає номер фронту, не напрямок | `pass-16-interfeysy` | 3 lines |
 | BME280 — адреси, ідентифікатор чипа, регістр | `pass-18-schemy` | 4 lines |
 | DS18B20 повертає −127 при відсутності зв'язку | `pass-18-schemy` | 1 lines |
 | Таблиця розділів — 0xC00 і 95 записів; 0x7000 належить бутлоадерові | `pass-24-zsuvy-i-matrycya` | 18 lines |
@@ -765,8 +767,6 @@ As of 2026-09-03 08:23 UTC.
 | T-35-056: .glitch_ignore_cnt = 7, | `wave-20260901` | 1 lines |
 | T-35-077: Практично це означає, що ваш пристрій, який прикидається I²C-дат | `wave-20260901` | 1 lines |
 | T-36-084: Для великих передач — кадр дисплея, блок з картки — DMA передає  | `wave-20260901` | 1 lines |
-| T-40-019: Розмір стека сервера задається в `HTTPD_DEFAULT_CONFIG` і його ч | `wave-20260901` | 2 lines |
-| T-40-028: На ESP32 кілька одночасних клієнтів — межа, і поводитися з нею т | `wave-20260901` | 1 lines |
 | T-42-058: Щоб ESP-NOW працював, партнери мусять бути **на тому самому кана | `wave-20260901` | 1 lines |
 | T-42-063: Шлюз мусить тримати канал ESP-NOW рівним каналу точки доступу —  | `wave-20260901` | 1 lines |
 | T-48-049: Керування через LEDC (розділ 33). | `wave-20260901` | 1 lines |
