@@ -163,7 +163,13 @@ def zaholovok(**kw) -> str:
     kw.setdefault("reachable", _reachable_block())
     for k, v in kw.items():
         ramka = ramka.replace("{" + k + "}", str(v))
-    return task_spec.sklasty(ZAHOLOVOK_BLOKY, zaholovok=ramka,
+    # The E queue contests a verdict that was never examined, so it
+    # needs a word for "looked, there is genuinely nothing" —
+    # VERDICTS-VERDICT-TEST has none, and a helper with no such word
+    # invents a source instead.
+    bloky = [x if x != 'VERDICTS-VERDICT-TEST' else 'VERDICTS-CONTEST-E'
+             for x in ZAHOLOVOK_BLOKY]
+    return task_spec.sklasty(bloky, zaholovok=ramka,
                              shablon=ZAHOLOVOK_RAMKA)
 
 
@@ -297,13 +303,42 @@ def zvesty(katalog: Path) -> int:
     # Counted by a pattern over the `chomu` field, and that is **a guess,
     # not a verdict**: the helper wrote it as free text. The number can be
     # trusted as an order of magnitude, not as a bound.
+    # The order asks for English verdicts (`VERDICTS-CONTEST-E`) while
+    # this digest was written against the older transliterated words. The
+    # two never met until a dump was actually fed through: two well-formed
+    # answers digested to "has a referent 0". Every wave on this order
+    # would have returned 0 % whatever the helpers found — and 0 % reads
+    # as "the verdict is assigned perfectly", which is the most dangerous
+    # wrong answer available here.
+    #
+    # So the words are normalised on the way in, both spellings accepted.
+    # `unreachable` counts as a referent: the document was NAMED and only
+    # not fetched, which is the difference between "no source exists" and
+    # "no source arrived".
+    SLOVA = {
+        "confirmed": "znayshov", "znayshov": "znayshov",
+        "advice": "ideya", "ideya": "ideya",
+        "disputes": "sperechayetsya", "sperechayetsya": "sperechayetsya",
+        "unreachable": "nedosyazhne", "nedosyazhne": "nedosyazhne",
+        "truly_none": "spravdi-e", "spravdi-e": "spravdi-e",
+        "not_found": "ne_znayshov", "ne_znayshov": "ne_znayshov",
+    }
+
+    def verdykt_z(z: dict) -> str:
+        syre = str(z.get("verdykt", z.get("verdict", "?"))).strip()
+        return SLOVA.get(syre, syre)
+
+    def chomu_z(z: dict) -> str:
+        return str(z.get("chomu", z.get("comment", "")))
+
     ne_tverdzhennya = sum(
         1 for z in zap
-        if str(z.get("verdykt")) == "spravdi-e"
-        and RE_NE_TVERDZHENNYA.search(str(z.get("chomu", ""))))
+        if verdykt_z(z) == "spravdi-e"
+        and RE_NE_TVERDZHENNYA.search(chomu_z(z)))
 
-    c = collections.Counter(str(z.get("verdykt", "?")) for z in zap)
-    maye_referenta = c["znayshov"] + c["ideya"]
+    c = collections.Counter(verdykt_z(z) for z in zap)
+    maye_referenta = (c["znayshov"] + c["ideya"]
+                      + c["sperechayetsya"] + c["nedosyazhne"])
     pozyciya = c["spravdi-e"] - ne_tverdzhennya
 
     # `znayshov` from the sample also passes layer 3. At first it did not

@@ -3044,6 +3044,36 @@ can only have if you made the request, which makes the distinction
 mechanically checkable instead of a matter of care — the same move that
 fixed `not_found` when it began requiring an address.
 
+### [VERDICTS-CONTEST-E] The verdicts for contesting `no-external-signal`
+
+Used on the queue of units the tool closed **mechanically** — prose
+carrying no digit, identifier, chip name or unit of measure. The question
+is not "is the claim true" but "does an external referent exist at all".
+
+| Verdict | When |
+|---|---|
+| `confirmed` | address plus a **verbatim** quote from the document |
+| `advice` | you did not get the document, but can name where it would be |
+| `disputes` | the source **contradicts** the handbook — the most valuable answer there is |
+| `not_found` | the document exists, the passage is not in it — say what you read |
+| `unreachable` | the document does not come down from here — give the `status:` code |
+| `truly_none` | you looked and there is genuinely no external referent: this is the author's position, advice, or a framing sentence |
+
+**`truly_none` is not a failure and not a lesser result.** The verdict
+under test was assigned nearly four thousand times and had never once
+been examined. Confirming one instance of it is worth as much as
+overturning one — it is the first evidence the rule works at all.
+
+Without this word a helper who correctly sees that a sentence is the
+author's opinion has nowhere to put it, and under pressure to "find
+something" begins inventing a source. That has been caught on both
+maintainers, so the word is a safety device, not a courtesy.
+
+**A unit that is not a claim at all** — a column heading, the lead-in to
+a list, a row where the book describes its own registry — is also
+`truly_none`, and say so in the comment. That is a fact about the
+**granularity of the tool**, not about the book.
+
 ### [VERDICTS-VERDICT-TEST] The verdicts for testing an existing verdict
 
 Used when the unit already carries a class and the question is whether

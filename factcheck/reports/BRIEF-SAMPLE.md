@@ -1,71 +1,10 @@
-# Order: a random sample of `unchecked` — not yet checked
+# Order: a random sample of `no-external-signal`
 
 > **generated** — `factcheck/tools/sample.py`; editing it by hand is
 > wasted work
 
-Seed **20260901**; **200** units drawn from a population of
-**1742**.
-
-## What these units are
-
-`unchecked` means "not yet checked". Not "doubtful": nobody simply got to
-these lines.
-
-## The rule that matters more than the verdict
-
-**Every answer must name the document you looked at.** Every one —
-including those where nothing was found.
-
-The reason is simple: without that, "not found" costs nothing, and it gets
-written without opening anything. Such a record is neither a finding nor
-evidence of the absence of one, and `factcheck/tools/measure_f.py`
-discards it as "did not look" before the counting begins.
-
-> The order does not say which answer it expects. It says what every
-> answer must produce.
-
-The list of verdicts and what each requires is below, in the task blocks.
-It is deliberately absent here: **no generator writes its own copy of
-these rules**, and such a copy is exactly what used to stand here — with
-verdict names the gate no longer accepts.
-
-`source` always begins with `https://raw.githubusercontent.com/`.
-
-**An address pointing at the handbook itself** is rejected mechanically:
-a handbook is not a source for itself. The book's text quoted below is
-what is being **checked**, not what it is checked against.
-
-## How to search
-
-For each unit: choose the document this ought to be in, download it with
-`curl`, look. Then a verdict from the table above.
-
-Only `raw.githubusercontent.com` is reachable. Everything else answers
-403; **do not repeat a request that returned 403**.
-
-
-Where to look:
-`espressif/esp-idf` (`docs/en/…`, `components/…`, `examples/…`),
-`espressif/esptool`, `espressif/arduino-esp32`, `torvalds/linux`
-(`drivers/…`), `esphome/esphome`, `micropython/micropython`,
-`adafruit/*`, `jgromes/RadioLib`, `olikraus/u8g2`, `Bodmer/TFT_eSPI`,
-`lvgl/lvgl`.
-
-Separately: `espressif.com` returns, for some addresses, an **HTML
-stub of 15 495 bytes with status 200**. The response is "successful"
-and the document is absent. It does not look like a document —
-`nedosyazhne`.
-
-
-## Prohibitions
-
-In full — `METHOD.md` Part V; the most important are below, in the task
-blocks, and are not repeated here.
-
-## On `disputes`
-
-The most valuable answer: the book can still be corrected. But only when
-you **see a different text**, not when you remember otherwise.
+Seed **20260914**; **120** units drawn from a population of
+**3277**.
 
 This is a printed field handbook. Its reader has no network and no time
 to check anything. Our job is to put every factual claim in it beside an
@@ -131,58 +70,38 @@ Some `espressif.com` addresses return an **HTML placeholder of about
 document. If what came back does not look like the document you asked
 for, the verdict is `unreachable`.
 
+Used on the queue of units the tool closed **mechanically** — prose
+carrying no digit, identifier, chip name or unit of measure. The question
+is not "is the claim true" but "does an external referent exist at all".
+
 | Verdict | When |
 |---|---|
 | `confirmed` | address plus a **verbatim** quote from the document |
-| `not_found` | the document exists, the passage is not in it — say what you read |
-| `unreachable` | the document does not come down from here (403, 404, stub) |
 | `advice` | you did not get the document, but can name where it would be |
 | `disputes` | the source **contradicts** the handbook — the most valuable answer there is |
+| `not_found` | the document exists, the passage is not in it — say what you read |
+| `unreachable` | the document does not come down from here — give the `status:` code |
+| `truly_none` | you looked and there is genuinely no external referent: this is the author's position, advice, or a framing sentence |
+
+**`truly_none` is not a failure and not a lesser result.** The verdict
+under test was assigned nearly four thousand times and had never once
+been examined. Confirming one instance of it is worth as much as
+overturning one — it is the first evidence the rule works at all.
+
+Without this word a helper who correctly sees that a sentence is the
+author's opinion has nowhere to put it, and under pressure to "find
+something" begins inventing a source. That has been caught on both
+maintainers, so the word is a safety device, not a courtesy.
+
+**A unit that is not a claim at all** — a column heading, the lead-in to
+a list, a row where the book describes its own registry — is also
+`truly_none`, and say so in the comment. That is a fact about the
+**granularity of the tool**, not about the book.
 
 An address inside this repository, or a chapter of the handbook cited as
 the source for a claim in the handbook, is rejected mechanically. If a
 claim is supported only by another part of the book, say so plainly —
 there is a class for it, and it is not a failure.
-
-Every answer that names a source must also name **where in it** — the
-section heading, the line, the table, the register name. Add a `where:`
-field beside `source:`.
-
-    where: "section 6.2.1, Recommended Operating Conditions"
-    where: "line defining SOC_UART_NUM"
-
-Why this is required here. Normally the count of tool calls tells honest
-work from rubber-stamping: an honest wave makes 66–89 calls for 25–30
-units, a broken one 14–18 for 25. This order lets you fetch documents in
-bulk before you begin, which is sensible and which **removes that
-signal** — every batch then looks like one download and twenty answers.
-
-`where:` replaces it. Twenty units judged honestly against one document
-produce twenty different locations in it. Twenty rubber-stamped produce
-one, or none.
-
-A location you cannot give is itself an answer: write the honest verdict
-instead. `where:` is not a field to fill in — it is the evidence that you
-looked.
-
-Fetch whatever documents you expect to need first, in one go. Then make
-**two passes**.
-
-**First pass, over all twenty units.** For each, decide whether it can be
-settled from what you already hold. If it can, settle it now and write
-the entry in full — with `source:`, `where:` and a verbatim `quote:`,
-exactly as any other answer. If it cannot, mark it for the second pass
-and write nothing else.
-
-A unit "settled quickly" is held to the same standard as any other. There
-is no lighter verdict for an easy unit, and marking something easy is not
-an answer.
-
-**Second pass, over what remains.** Take those units one at a time and go
-deeper: other documents, other sections, the source of the code rather
-than its documentation.
-
-Report both passes: in `comment:`, say which pass settled the unit.
 
 ```yaml
 - unit: T-42-023
@@ -203,835 +122,530 @@ whole batch is lost, not just that entry.
 
 ---
 
-*Task spec `8f43ffc2` · blocks: ORIENTATION, VERBATIM, HONEST-MISS, NETWORK, STUB, VERDICTS-EXTERNAL, NO-SELF-REFERENCE, LOCATION, STRATEGY-TRIAGE, FORMAT. Quote this version when reporting results from this wave.*
+*Task spec `d2fb76e7` · blocks: ORIENTATION, VERBATIM, HONEST-MISS, NETWORK, STUB, VERDICTS-CONTEST-E, NO-SELF-REFERENCE, FORMAT. Quote this version when reporting results from this wave.*
 
 
 ## Batch 1
 
-**`T-00-031`** · `manual/00-pro-dovidnyk.md:67`
+**`T-00-009`** · `manual/00-pro-dovidnyk.md:25`
 
-> Тому клас `E` перевіряється **окремо і навмисно**: із нього беруть випадкову вибірку — випадкову, щоб відсоток можна було перенести на всі одиниці, — і питають по кожній, чи існує документ, за яким її можна звірити.
+> Тому книга не заміняє документацію Espressif і не претендує на це.
 
-**`T-00-079`** · `manual/00-pro-dovidnyk.md:187`
+**`T-00-060`** · `manual/00-pro-dovidnyk.md:132`
 
-> Там, де правило стосується інших сімейств, позначка називає і їх: [[S2]], [[C6]], [[H2]].
+> Механічна звірка цитати не бачить, що дослівна цитата зі справжнього документа підпирає хибний висновок.
 
-**`T-01-017`** · `manual/01-platforma.md:42`
+**`T-00-068`** · `manual/00-pro-dovidnyk.md:154`
 
-> **Радіо на кристалі.** Wi-Fi і Bluetooth без зовнішніх мікросхем.
+> Довідник охоплює стандартну embedded-інженерію: залізо, код, протоколи, периферію, живлення, збирання, ремонт.
 
-**`T-01-081`** · `manual/01-platforma.md:107`
+**`T-02-083`** · `manual/02-chipy.md:73`
 
-> ESP32 кращий у радіо і в швидкості початку роботи.
+> Це не «поки не реалізовано», а відсутність апаратного блоку.
 
-**`T-01-082`** · `manual/01-platforma.md:108`
+**`T-02-144`** · `manual/02-chipy.md:198`
 
-> Часто правильна відповідь — обидва: STM32 керує процесом, ESP32 стоїть збоку і забезпечує зв'язок (розділ 57).
+> Три однакові плати в шухляді корисніші за шість різних.
 
-**`T-01-083`** · `manual/01-platforma.md:112`
+**`T-03-015`** · `manual/03-soc.md:32`
 
-> **Проти RP2040.** RP2040 має PIO — програмовані блоки вводу-виводу, які роблять неможливе можливим у нестандартних протоколах.
+> Вона дає можливість **розвести** конкуренцію: важку роботу на одне ядро, зв'язок на інше.
 
-**`T-01-093`** · `manual/01-platforma.md:135`
+**`T-05-065`** · `manual/05-elektronika.md:141`
 
-> ESP32 підключений до нього по UART або CAN і відповідає лише за зв'язок: віддає телеметрію, приймає команди, оновлює себе по повітрю.
+> У спокої вхід читає одиницю, натиснута кнопка притискає до нуля.
 
-**`T-02-150`** · `manual/02-chipy.md:211`
+**`T-05-086`** · `manual/05-elektronika.md:187`
 
-> Для нового проєкту типова відповідь — S3; для навчання — classic; для дешевого вузла — C3, якщо 400 КБ вистачає.
-
-**`T-04-001`** · `manual/04-peryferiya.md:3`
-
-> Периферія — це апаратні блоки всередині чипа, які роблять роботу без участі процесора: передають байти по UART, генерують імпульси PWM, міряють напругу.
-
-**`T-04-005`** · `manual/04-peryferiya.md:12`
-
-> Найважливіша архітектурна особливість ESP32, і вона суттєво відрізняє його від класичних мікроконтролерів.
-
-**`T-04-072`** · `manual/04-peryferiya.md:115`
-
-> UART · C6 → 2 + 1 LP
-
-**`T-04-076`** · `manual/04-peryferiya.md:116`
-
-> I²C · S3 → 2
-
-**`T-04-099`** · `manual/04-peryferiya.md:120`
-
-> TWAI (CAN) · S2 → 1
-
-**`T-04-108`** · `manual/04-peryferiya.md:121`
-
-> DAC · C6 → ні
-
-**`T-04-112`** · `manual/04-peryferiya.md:122`
-
-> Touch · S3 → 14
-
-**`T-04-115`** · `manual/04-peryferiya.md:122`
-
-> Touch · H2 → ні
-
-**`T-04-120`** · `manual/04-peryferiya.md:123`
-
-> USB · C6 → JTAG
-
-**`T-05-044`** · `manual/05-elektronika.md:101`
-
-> Туди 5 В подавати можна і треба.
-
-**`T-06-015`** · `manual/06-zhyvlennya.md:30`
-
-> Помилка трапляється частіше, ніж здається: на гребінці піни `5V` і `3V3` часто стоять поруч, підписані дрібно, а Dupont-роз'єм легко зсунути на один контакт.
-
-**`T-06-022`** · `manual/06-zhyvlennya.md:46`
-
-> | Активний, Wi-Fi у роботі | близько сотні мА середнє |
+> Або обмін є, але з випадковими помилками.
 
 
 ## Batch 2
 
-**`T-06-042`** · `manual/06-zhyvlennya.md:95`
+**`T-05-100`** · `manual/05-elektronika.md:215`
 
-> Кабель USB — тонкий, довгий, дешевий.
+> Полярність електролітичного конденсатора обов'язкова: мінус позначений смугою.
 
-**`T-06-096`** · `manual/06-zhyvlennya.md:204`
+**`T-05-110`** · `manual/05-elektronika.md:241`
 
-> Розрахунок майже завжди виявляється оптимістичним, і головний винуватець — **час під'єднання до Wi-Fi**.
+> Реле, двигун, електромагнітний клапан — це котушка.
 
-**`T-06-120`** · `manual/06-zhyvlennya.md:255`
+**`T-07-035`** · `manual/07-gpio.md:64`
 
-> **Buck** (понижувальний імпульсний) — ефективність 85–95 %.
+> Саме тому діагностика проста, а плати все одно викидають, вважаючи їх мертвими.
 
-**`T-07-113`** · `manual/07-gpio.md:243`
+**`T-08-003`** · `manual/08-platy.md:9`
 
-> Лишається близько **20 повноцінних** пінів, з яких п'ять — strapping і потребують уваги.
+> Модуль — кристал плюс кварц, флеш, антена й обв'язка в екранованому корпусі.
 
-**`T-08-008`** · `manual/08-platy.md:15`
+**`T-08-052`** · `manual/08-platy.md:88`
 
-> `ESP32-WROOM-32D`, `-32E` · Чип → classic
+> Камера з'їдає більшість пінів (розділ 49).
 
-**`T-09-073`** · `manual/09-pidklyuchennya.md:136`
+**`T-08-069`** · `manual/08-platy.md:124`
 
-> Спокуса запустити прошивку через `sudo` дуже велика, і вона працює — один раз.
+> Практична стратегія: **купувати з запасом і перевіряти одразу**.
 
-**`T-10-020`** · `manual/10-instrumenty.md:43`
+**`T-09-003`** · `manual/09-pidklyuchennya.md:8`
 
-> **USB-хаб із власним живленням.** Знімає навантаження з порту ноутбука і рятує сам порт при замиканні на платі.
+> Порядок пошуку — картка [К3](#k-pidkl).
 
-**`T-10-037`** · `manual/10-instrumenty.md:81`
+**`T-10-012`** · `manual/10-instrumenty.md:27`
 
-> **JTAG-адаптер.** [[classic]] Потрібен лише для classic; на S3 і C3 вбудований (розділ 27).
-
-**`T-11-033`** · `manual/11-idf.md:89`
-
-> | Період | Тривалість | Для нового проєкту |
-
-**`T-11-099`** · `manual/11-idf.md:252`
-
-> Причина зазвичай у тому, що конфігурація розширення вказує на іншу версію ESP-IDF, ніж та, якою збирається проєкт.
-
-**`T-11-114`** · `manual/11-idf.md:292`
-
-> Клавіша `/` у `menuconfig`.
-
-**`T-12-014`** · `manual/12-arduino.md:42`
-
-> Саме так робиться доступ до тих блоків периферії, яких немає в Arduino API: MCPWM, PCNT, TWAI, тонке керування живленням.
-
-**`T-12-056`** · `manual/12-arduino.md:149`
-
-> | Потрібні MCPWM, PCNT, TWAI | ESP-IDF або виклики IDF зі скетча |
-
-**`T-13-009`** · `manual/13-pio.md:23`
-
-> - працюєте з **Arduino 2.x** і старим кодом → офіційна платформа працює; - потрібен **Arduino 3.x**, S3, C3, C6 або новіші → **pioarduino**.
-
-**`T-13-072`** · `manual/13-pio.md:212`
-
-> Офіційна платформа PlatformIO відстала від Arduino core; спільнотний форк pioarduino підтримує актуальні версії.
-
-**`T-14-024`** · `manual/14-shvydki-shlyakhy.md:79`
-
-> OTA, веб-інтерфейс, відновлення зв'язку, інтеграція з системами домашньої автоматизації — усе вже є.
-
-**`T-14-059`** · `manual/14-shvydki-shlyakhy.md:137`
-
-> OTA з коробки · MicroPython → ні
-
-**`T-14-077`** · `manual/14-shvydki-shlyakhy.md:168`
-
-> ESPHome дає працюючий датчик із OTA за десять хвилин без коду і добре працює як спосіб довести, що залізо зібране правильно.
-
-**`T-15-017`** · `manual/15-oflayn.md:18`
-
-> Жорсткі вимоги до пам'яті чи таймінгів · Тулчейн → ESP-IDF
-
-**`T-15-029`** · `manual/15-oflayn.md:39`
-
-> Код при цьому лишається тим самим — `setup`/`loop` і бібліотеки Arduino продовжують працювати (розділ 12).
+> Потужність 60 Вт, жало «скіс» 2–3 мм як основне.
 
 
 ## Batch 3
 
-**`T-15-031`** · `manual/15-oflayn.md:44`
+**`T-10-042`** · `manual/10-instrumenty.md:94`
 
-> Решта може лишатися на Arduino API як завгодно довго.
+> Набір із сотні номіналів коштує дешево і рятує десятки разів.
 
-**`T-16-058`** · `manual/16-boot.md:136`
+**`T-10-043`** · `manual/10-instrumenty.md:99`
 
-> Скинути плату кнопкою `EN`.
+> **Макетна плата.** Різниці майже немає.
 
-**`T-16-085`** · `manual/16-boot.md:215`
+**`T-10-045`** · `manual/10-instrumenty.md:105`
 
-> Від подачі живлення до `app_main` — типово десятки мілісекунд.
+> Загальне правило: **вимірювальні прилади й те, що торкається плати гарячим, — не економити.
 
-**`T-17-036`** · `manual/17-esptool.md:85`
+**`T-10-047`** · `manual/10-instrumenty.md:110`
 
-> У жодного чипа сімейства ESP32 його немає, і `esptool` на ньому відповідає попередженням:
+> Кілька дрібниць, що впливають більше, ніж здається:
 
-**`T-17-065`** · `manual/17-esptool.md:154`
+**`T-11-019`** · `manual/11-idf.md:42`
 
-> Сенс він має лише разом із `--no-stub`, де стиснення типово вимкнене — а це саме той випадок із клонами, який розібрано нижче.
+> Перелік цілей обмежує обсяг завантаження: тулчейни ставляться під кожну архітектуру окремо, і ставити всі немає сенсу.
 
-**`T-17-132`** · `manual/17-esptool.md:307`
+**`T-13-037`** · `manual/13-pio.md:110`
 
-> **`Invalid head of packet (0x00)`**
+> Плату, якої немає в переліку, описують власним файлом або беруть найближчу й правлять параметри.
 
-**`T-17-157`** · `manual/17-esptool.md:357`
+**`T-14-047`** · `manual/14-shvydki-shlyakhy.md:125`
 
-> Практично: підготувати `merge-bin`-образ, налаштувати один раз, зберегти конфігурацію і передати разом з інструкцією на одну сторінку (розділ 56).
+> Живлення, рівні, довжина дротів, підтягування.
 
-**`T-18-060`** · `manual/18-rozdily-fleshu.md:120`
+**`T-15-063`** · `manual/15-oflayn.md:115`
 
-> У прошивці, що йде в поле, цей код спрацює саме тоді, коли NVS переповнився — тобто несподівано, у роботі.
-
-**`T-19-030`** · `manual/19-ota.md:53`
-
-> Пристрій, залитий з однією `factory` без слотів OTA, неможливо перевести на OTA дистанційно: для цього потрібна повна перепрошивка з фізичним доступом.
-
-**`T-19-031`** · `manual/19-ota.md:57`
-
-> Практично: якщо є хоч найменша ймовірність, що виріб доведеться оновлювати в полі, — OTA-розбивка ставиться одразу, навіть якщо сама функція поки не написана.
-
-**`T-19-061`** · `manual/19-ota.md:131`
-
-> Він потрібен тоді, коли під час завантаження треба годувати watchdog, малювати смужку прогресу або мати можливість скасувати.
-
-**`T-19-075`** · `manual/19-ota.md:166`
-
-> **ArduinoOTA.** Оновлення з середовища Arduino по локальній мережі: плата з'являється як мережевий порт.
-
-**`T-20-015`** · `manual/20-bekap.md:32`
-
-> Спільне в усьому переліку: доки чип відповідає `esptool` шапкою з'єднання, він живий.
-
-**`T-20-018`** · `manual/20-bekap.md:42`
-
-> Що можна втратити помилковим записом: доступ по JTAG, можливість увійти в download mode, можливість прошивати чип узагалі, здатність читати флеш поза цим конкретним чипом.
-
-**`T-20-021`** · `manual/20-bekap.md:52`
-
-> **Flash Encryption і Secure Boot у release-режимі.** Це односторонні двері, реалізовані через ті самі eFuse.
-
-**`T-20-062`** · `manual/20-bekap.md:134`
-
-> - `rst:0x7`, `rst:0x8`, `rst:0x9` (watchdog) → щось не віддає керування.
-
-**`T-20-084`** · `manual/20-bekap.md:179`
-
-> **Живлення від окремого джерела**, а не від USB-порту ноутбука через хаб.
-
-**`T-21-006`** · `manual/21-seriyna.md:17`
-
-> Якщо проєкт ESP-IDF під рукою — цим і обмежтеся, бо адреси підставить сама збірка:
-
-**`T-21-066`** · `manual/21-seriyna.md:153`
-
-> 0041 · Версія → v1.4
-
-**`T-21-074`** · `manual/21-seriyna.md:155`
-
-> 0043 · MAC → `A0:B7:…:31`
+> **Роздруковані картки К1–К15**, заламіновані.
 
 
 ## Batch 4
 
-**`T-22-049`** · `manual/22-zberezhennya-stanu.md:110`
+**`T-18-090`** · `manual/18-rozdily-fleshu.md:160`
 
-> Дамп, знятий після `erase-flash` або після перепрошивки, не має сенсу: він фіксує вже змінений стан.
+> FAT має сенс в одному випадку: коли той самий носій (найчастіше картку microSD) читатиме звичайний комп'ютер.
 
-**`T-23-014`** · `manual/23-triazh.md:24`
+**`T-19-032`** · `manual/19-ota.md:59`
 
-> `ESP32-WROVER`, `-B`, `-E` · Чип → ESP32 classic
+> Місце коштує дешевше, ніж поїздка до кожного пристрою (розділ 18).
 
-**`T-23-017`** · `manual/23-triazh.md:25`
+**`T-20-009`** · `manual/20-bekap.md:16`
 
-> `ESP32-S3-WROOM-1` · Що це значить практично → двоядерний, native USB
+> **Boot loop будь-якої природи.** Прошивка, що падає при старті, не заважає увійти в download mode: цей вибір робиться до того, як застосунок узагалі запуститься.
 
-**`T-23-030`** · `manual/23-triazh.md:51`
+**`T-22-009`** · `manual/22-zberezhennya-stanu.md:26`
 
-> Переходьте до кроку 4: `esptool` назве сімейство сам, щойно під'єднається.
+> Фото тут — не «на всяк випадок», а джерело даних, до якого ви повертатиметеся.
 
-**`T-23-033`** · `manual/23-triazh.md:59`
+**`T-23-073`** · `manual/23-triazh.md:146`
 
-> - цілий USB-роз'єм, не хитається, площадки не відірвані; - стабілізатор не здутий, без темних плям і запаху; - немає перемичок припою між сусідніми пінами; - немає слідів води, окислення, білого нальоту від флюсу; - нічого не обвуглене.
+> Те, що вони виведені на гребінку, не означає, що вони вільні.
 
-**`T-23-037`** · `manual/23-triazh.md:73`
+**`T-23-094`** · `manual/23-triazh.md:169`
 
-> Між `3V3` і `GND` не має бути короткого замикання.
+> Він **не** відповідає на «що воно робить» і «звідки взявся код».
 
-**`T-23-052`** · `manual/23-triazh.md:104`
+**`T-24-060`** · `manual/24-chuzha-proshyvka.md:156`
 
-> Шапка з'єднання, яку `esptool` друкує перед будь-якою командою, називає сімейство, ревізію кремнію і MAC (розділ 17).
+> Умови, за яких це працює:
 
-**`T-23-084`** · `manual/23-triazh.md:161`
+**`T-25-049`** · `manual/25-log.md:111`
 
-> Чип відповідає, `invalid header` · Далі → розділ 18
-
-**`T-24-027`** · `manual/24-chuzha-proshyvka.md:56`
-
-> **Тексти повідомлень.** `Failed to connect to broker`, `Calibration required` — прямо називають, що пристрій робить і на що скаржиться.
-
-**`T-24-044`** · `manual/24-chuzha-proshyvka.md:98`
-
-> Далі розбирати відповідним інструментом: `mklittlefs`, `mkspiffs` — обидва вміють не лише пакувати, а й розпаковувати.
-
-**`T-25-013`** · `manual/25-log.md:21`
-
-> `minicom` · Вихід → `Ctrl+A`, потім `X`
-
-**`T-25-014`** · `manual/25-log.md:22`
-
-> `screen` · Коли він → чужий пристрій, є під рукою скрізь
-
-**`T-25-016`** · `manual/25-log.md:23`
-
-> `picocom` · Коли він → чужий пристрій, найпростіший
-
-**`T-25-096`** · `manual/25-log.md:218`
-
-> **По мережі.** Відправка логів на сервер — MQTT, HTTP, syslog.
-
-**`T-26-029`** · `manual/26-zboyi.md:53`
-
-> Найчастіше джерело обох — `malloc`, результат якого не перевірили.
-
-**`T-26-069`** · `manual/26-zboyi.md:152`
-
-> do_work();
-
-**`T-27-022`** · `manual/27-jtag.md:52`
-
-> Офіційне розширення ESP-IDF для VS Code налаштовує це саме.
-
-**`T-27-043`** · `manual/27-jtag.md:97`
-
-> Лог і coredump (розділ 26) покривають переважну більшість задач дешевше.
-
-**`T-27-062`** · `manual/27-jtag.md:146`
-
-> **Піни JTAG зайняті проєктом** — див. попередження вище. 5.
-
-**`T-27-071`** · `manual/27-jtag.md:162`
-
-> JTAG потрібен там, де всі чотири нічого не дали і треба подивитися всередину пам'яті.
+> **Тег** — це ім'я підсистеми.
 
 
 ## Batch 5
 
-**`T-28-048`** · `manual/28-analizator.md:89`
+**`T-25-064`** · `manual/25-log.md:139`
 
-> Дешеві аналізатори мають межу частоти дискретизації — типово 24 МГц.
+> Причина не в тегу і не в порядку викликів — рядка просто немає у прошивці.
 
-**`T-28-070`** · `manual/28-analizator.md:136`
+**`T-25-098`** · `manual/25-log.md:222`
 
-> Кілька прийомів, що працюють на самому ESP32:
+> **Coredump у флеші.** Не лог, а знімок стану в момент паніки — розділ 26.
 
-**`T-31-001`** · `manual/31-freertos.md:3`
+**`T-25-103`** · `manual/25-log.md:237`
 
-> FreeRTOS уже працює, коли викликається ваш перший рядок (розділ 30).
+> Тимчасове має властивість доїжджати до замовника.
 
-**`T-31-030`** · `manual/31-freertos.md:91`
+**`T-27-003`** · `manual/27-jtag.md:8`
 
-> [[classic]] [[S3]] Ядро 0 переважно зайняте радіостеком, `app_main` за замовчуванням іде на ядро 1 (розділ 03).
+> Це не заміна логу, а інший інструмент.
 
-**`T-33-011`** · `manual/33-peryferiya-kod.md:22`
+**`T-27-013`** · `manual/27-jtag.md:28`
 
-> `pin_bit_mask` — бітова маска, тому кілька пінів налаштовуються однією дією.
+> в одному терміналі, і в іншому:
 
-**`T-33-063`** · `manual/33-peryferiya-kod.md:159`
+**`T-28-013`** · `manual/28-analizator.md:23`
 
-> Головне застосування — **адресні світлодіоди WS2812**.
+> **Живлення під навантаженням.** Не на холостому ходу, а коли пристрій працює і радіо ввімкнене.
 
-**`T-33-083`** · `manual/33-peryferiya-kod.md:205`
+**`T-28-020`** · `manual/28-analizator.md:32`
 
-> .atten = ADC_ATTEN_DB_12,
+> Нуль означає, що підтягування немає або лінія кимось притиснута — і шина не працюватиме ніколи.
 
-**`T-33-092`** · `manual/33-peryferiya-kod.md:224`
+**`T-28-031`** · `manual/28-analizator.md:54`
 
-> **Точність.** ADC ESP32 нелінійний, і сирі відліки не переводяться в вольти простим множенням.
-
-**`T-33-095`** · `manual/33-peryferiya-kod.md:230`
-
-> .unit_id = ADC_UNIT_1,
-
-**`T-33-096`** · `manual/33-peryferiya-kod.md:231`
-
-> .atten = ADC_ATTEN_DB_12,
-
-**`T-33-112`** · `manual/33-peryferiya-kod.md:264`
-
-> Справжній аналоговий вихід, 8 розрядів, два канали.
-
-**`T-33-126`** · `manual/33-peryferiya-kod.md:289`
-
-> WS2812 керуються через RMT апаратно — у коді це робити не варто.
-
-**`T-34-057`** · `manual/34-uart.md:132`
-
-> При налагодженні Modbus логічний аналізатор економить години (розділ 28).
-
-**`T-35-056`** · `manual/35-i2c.md:129`
-
-> .glitch_ignore_cnt = 7,
-
-**`T-35-077`** · `manual/35-i2c.md:178`
-
-> Практично це означає, що ваш пристрій, який прикидається I²C-датчиком для чужої системи, мусить встигати відповідати завжди.
-
-**`T-36-016`** · `manual/36-spi.md:24`
-
-> Звідси головна арифметика SPI: `4 + n` пінів на `n` пристроїв.
-
-**`T-36-084`** · `manual/36-spi.md:136`
-
-> Для великих передач — кадр дисплея, блок з картки — DMA передає дані без участі процесора.
-
-**`T-36-111`** · `manual/36-spi.md:181`
-
-> Довжина · SPI → ще менше
-
-**`T-36-113`** · `manual/36-spi.md:186`
-
-> **SPI** — коли даних багато: кольорові дисплеї, картки пам'яті, радіомодулі, зовнішні АЦП з високою частотою вибірки.
-
-**`T-38-040`** · `manual/38-can.md:94`
-
-> .data_length_code = 4,
+> **PulseView** (з пакета sigrok) — вільна програма, що працює з більшістю дешевих аналізаторів.
 
 
 ## Batch 6
 
-**`T-39-057`** · `manual/39-wifi.md:147`
+**`T-28-043`** · `manual/28-analizator.md:74`
 
-> **SoftAP або BLE provisioning** — штатні механізми ESP-IDF із застосунками для телефона.
+> Найцінніший рядок — четвертий: він знімає з шини всі підозри й переводить пошук у код.
 
-**`T-40-019`** · `manual/40-merezha.md:42`
+**`T-30-002`** · `manual/30-struktura.md:5`
 
-> Розмір стека сервера задається в `HTTPD_DEFAULT_CONFIG` і його часто доводиться збільшувати.
+> Найголовніша з них — ставлення до пам'яті.
 
-**`T-40-028`** · `manual/40-merezha.md:61`
+**`T-31-008`** · `manual/31-freertos.md:33`
 
-> На ESP32 кілька одночасних клієнтів — межа, і поводитися з нею треба свідомо.
+> Два правила, які варто засвоїти одразу.
 
-**`T-40-047`** · `manual/40-merezha.md:102`
+**`T-31-038`** · `manual/31-freertos.md:107`
 
-> Рядок `TZ` вище — правило переходу на літній час для України; воно працює автономно, без оновлень.
+> На двох ядрах воно ламається одразу.
 
-**`T-41-017`** · `manual/41-ble.md:31`
+**`T-32-066`** · `manual/32-nadiynist.md:169`
 
-> Споживання · BLE → **дуже низька**
+> **Переривання** мають пріоритет над усіма задачами.
 
-**`T-41-023`** · `manual/41-ble.md:34`
+**`T-32-080`** · `manual/32-nadiynist.md:196`
 
-> Термінал на телефоні · BLE → потрібен BLE-застосунок
+> Те, що варто мати в кожній прошивці, яка їде в поле:
 
-**`T-42-018`** · `manual/42-espnow.md:41`
+**`T-33-093`** · `manual/33-peryferiya-kod.md:225`
 
-> .channel = 1,
+> Штатний шлях — калібрування:
 
-**`T-42-020`** · `manual/42-espnow.md:44`
+**`T-33-123`** · `manual/33-peryferiya-kod.md:283`
 
-> memcpy(peer.peer_addr, mac_pryimacha, 6);
-
-**`T-42-058`** · `manual/42-espnow.md:138`
-
-> Щоб ESP-NOW працював, партнери мусять бути **на тому самому каналі** — а він визначається роутером і може змінитися.
-
-**`T-42-063`** · `manual/42-espnow.md:148`
-
-> Шлюз мусить тримати канал ESP-NOW рівним каналу точки доступу — і, якщо роутер змінить канал, повідомити датчики або перейти сам.
-
-**`T-43-015`** · `manual/43-lora.md:22`
-
-> Споживання при передачі · Wi-Fi / ESP-NOW → сотні мА
-
-**`T-43-037`** · `manual/43-lora.md:70`
-
-> **Ніколи не вмикати LoRa-модуль без антени.** Передавач без узгодженого навантаження відбиває потужність назад у вихідний каскад і **вигорає**.
-
-**`T-43-060`** · `manual/43-lora.md:127`
-
-> **Підтвердження й повтори.** LoRa нічого не гарантує.
-
-**`T-44-039`** · `manual/44-neznayomyy-modul.md:64`
-
-> `VCC`, `GND`, один сигнал · Розділ → 33
-
-**`T-44-040`** · `manual/44-neznayomyy-modul.md:65`
-
-> `VCC`, `GND`, `A0`/`OUT` аналоговий · Інтерфейс → ADC
-
-**`T-45-079`** · `manual/45-sensory.md:194`
-
-> DHT22 гірший за BME280 майже в усьому; для нового проєкту вибір інший.
-
-**`T-47-004`** · `manual/47-klyuchi.md:12`
-
-> | Навантаження | Чим | Чому |
-
-**`T-47-037`** · `manual/47-klyuchi.md:57`
-
-> Діод, якщо навантаження індуктивне, стоїть **паралельно самому навантаженню**, катодом до `+V` — тобто в нормальній роботі закритий, а викид при вимиканні пропускає по колу навантаження, минаючи транзистор.
-
-**`T-48-049`** · `manual/48-motory.md:123`
-
-> Керування через LEDC (розділ 33).
-
-**`T-48-057`** · `manual/48-motory.md:139`
-
-> З боку ESP32 керування виглядає так само.
+> Антидребезг — порівнянням часу, ніколи не затримкою в ISR.
 
 
 ## Batch 7
 
-**`T-49-007`** · `manual/49-kamera.md:16`
+**`T-34-053`** · `manual/34-uart.md:119`
 
-> Для конфігурації, логу раз на хвилину чи невеликих файлів SPI достатньо з запасом.
+> Сам ведений не говорить ніколи.
 
-**`T-49-067`** · `manual/49-kamera.md:176`
+**`T-36-002`** · `manual/36-spi.md:4`
 
-> Буфери виділяти один раз при старті; для DMA — з правильними властивостями.
+> Десятки мегагерц замість сотень кілогерц, ціною більшої кількості пінів.
 
-**`T-50-020`** · `manual/50-bezpeka.md:53`
+**`T-36-017`** · `manual/36-spi.md:28`
 
-> **Дефолтні паролі — не варіант.** Пристрій, що піднімає точку доступу з паролем `12345678` або веб-інтерфейс без пароля, доступний усім у радіусі дії.
+> Це те, на чому спотикаються всі, і причина класичного симптому «пристрій повертає нулі або сміття».
 
-**`T-50-038`** · `manual/50-bezpeka.md:92`
+**`T-36-041`** · `manual/36-spi.md:44`
 
-> Мінімум: HTTPS із перевіркою сервера (розділ 19).
+> Останній стовпець варто прочитати уважно, бо саме тут роблять помилку.
 
-**`T-50-068`** · `manual/50-bezpeka.md:189`
+**`T-36-092`** · `manual/36-spi.md:157`
 
-> Ключі в коді дістаються за п'ять хвилин; місце їм у NVS, унікальними на екземпляр.
+> Кілька пристроїв вішаються на одну шину — саме для цього існує `CS`.
 
-**`T-53-043`** · `manual/53-akum.md:113`
+**`T-37-043`** · `manual/37-onewire.md:112`
 
-> Це єдиний спосіб використати ємність акумулятора **повністю**, до 3.0 В.
+> Виглядає привабливо і працює нестабільно, особливо на довгих лініях і з кількома датчиками.
 
-**`T-55-026`** · `manual/55-polova-diagnostyka.md:63`
+**`T-38-015`** · `manual/38-can.md:35`
 
-> **Роз'єм живлення або USB.** Механічно розхитаний, відірваний із площадками, окислений.
+> Тому аварійні повідомлення отримують малі номери, а телеметрія — великі.
 
-**`T-57-007`** · `manual/57-vid-zadachi.md:20`
+**`T-39-017`** · `manual/39-wifi.md:43`
 
-> **Який канал зв'язку?** Wi-Fi, ESP-NOW, LoRa, дріт — визначається відстанню, енергією й тим, що вже є на об'єкті (розділи 39–43).
-
-**`T-57-020`** · `manual/57-vid-zadachi.md:52`
-
-> | Zigbee, Thread, Matter | C6 або H2 |
-
-**`T-57-022`** · `manual/57-vid-zadachi.md:54`
-
-> | Новий проєкт без особливих умов | **S3** |
-
-**`T-59-103`** · `manual/59-proj-monitor.md:340`
-
-> snprintf(buf + n, 16384 - n, "]}");
-
-**`T-59-123`** · `manual/59-proj-monitor.md:391`
-
-> .glitch_ignore_cnt = 7,
-
-**`T-59-125`** · `manual/59-proj-monitor.md:397`
-
-> ESP_LOGE(TAG, "датчик не знайдено — працюємо без нього");
-
-**`T-59-137`** · `manual/59-proj-monitor.md:425`
-
-> idf.py build
-
-**`T-60-095`** · `manual/60-proj-loger.md:235`
-
-> gpio_set_level(PIN_DILNYK_EN, 1);
-
-**`T-60-099`** · `manual/60-proj-loger.md:265`
-
-> fflush(f);
-
-**`T-60-116`** · `manual/60-proj-loger.md:313`
-
-> | Фаза | Час | Струм | Заряд |
-
-**`T-61-016`** · `manual/61-proj-kanal.md:32`
-
-> Потрібен роутер · ESP-NOW → **ні**
-
-**`T-61-044`** · `manual/61-proj-kanal.md:129`
-
-> Статус приходить у зворотний виклик `on_sent`, і саме його треба дочекатися перед засинанням — інакше чип засне посеред передачі.
-
-**`T-61-053`** · `manual/61-proj-kanal.md:155`
-
-> memcpy(peer.peer_addr, MAC_PRYIMACHA, 6);
+> Інші обмеження, що трапляються:
 
 
 ## Batch 8
 
-**`T-61-054`** · `manual/61-proj-kanal.md:156`
+**`T-39-077`** · `manual/39-wifi.md:193`
 
-> memcpy(peer.lmk, lmk, 16);
+> Дешево, компактно, достатньо для більшості задач.
 
-**`T-61-072`** · `manual/61-proj-kanal.md:249`
+**`T-40-081`** · `manual/40-merezha.md:175`
 
-> Якщо приймач також під'єднаний до Wi-Fi, його канал визначає **роутер** — і більшість роутерів обирають канал автоматично й змінюють його самі.
+> **Зашивати сертифікат центру сертифікації, а не сервера.** Сертифікат сервера протермінується через рік, і всі пристрої одночасно втратять зв'язок.
 
-**`T-61-084`** · `manual/61-proj-kanal.md:281`
+**`T-41-006`** · `manual/41-ble.md:15`
 
-> - **Кілька передавачів на один приймач** — структура вже готова (масив `vuzly`); - **Двонапрямлений обмін**: приймач надсилає команди у відповідь на пакет, поки передавач не заснув; - **Заміна на LoRa** (розділ 43), коли потрібні кілометри: формат пакета й логіка лишаються, змінюється транспорт; - **Ретрансляція** через проміжний вузол для збільшення покриття.
+> Практичний наслідок величезний: профіль **SPP** — послідовний порт по Bluetooth, на якому тримається безліч старих проєктів і на який розраховані прості термінальні застосунки для телефона, — існує **тільки на classic**.
 
-**`T-62-103`** · `manual/62-proj-keruvannya.md:219`
+**`T-42-068`** · `manual/42-espnow.md:161`
 
-> if (stan == STAN_BLOKUVANNYA && u_stani > PAUZA_PISLYA_S)
+> Лікування: зафіксувати канал у налаштуваннях роутера або передбачити процедуру повторного узгодження каналу.
 
-**`T-62-139`** · `manual/62-proj-keruvannya.md:315`
+**`T-43-097`** · `manual/43-lora.md:221`
 
-> perejty(STAN_ROBOTA, "команда з мережі");
+> Антена має відповідати діапазону модуля; розміщення важить більше за все інше.
 
-**`T-63-018`** · `manual/63-proj-mist.md:35`
+**`T-44-060`** · `manual/44-neznayomyy-modul.md:112`
 
-> │                                      │
+> Що перевірити перед тим, як брати:
 
-**`T-63-039`** · `manual/63-proj-mist.md:120`
+**`T-45-048`** · `manual/45-sensory.md:107`
 
-> .sin_port = htons(PORT),
+> Сирі показання гіроскопа безкорисні через хвилину інтегрування.
 
-**`T-63-042`** · `manual/63-proj-mist.md:131`
+**`T-45-059`** · `manual/45-sensory.md:134`
 
-> ESP_LOGI(TAG, "клієнт під'єднався");
-
-**`T-A-013`** · `dodatky/a-pinouty.md:19`
-
-> 2 · ADC → ADC2_2
-
-**`T-A-055`** · `dodatky/a-pinouty.md:36`
-
-> 34–39 · ADC → ADC1
-
-**`T-A-068`** · `dodatky/a-pinouty.md:52`
-
-> 33–37 · Примітка → `N16R8` і подібні
-
-**`T-A-077`** · `dodatky/a-pinouty.md:67`
-
-> | GPIO | Обмеження | Примітка |
-
-**`T-B-005`** · `dodatky/b-symptomy.md:18`
-
-> | Симптом | Причина | Дія | Розділ |
-
-**`T-B-076`** · `dodatky/b-symptomy.md:52`
-
-> Перезавантаження при Wi-Fi · Розділ → 06
-
-**`T-B-082`** · `dodatky/b-symptomy.md:54`
-
-> Працює від USB, не від БЖ · Розділ → 05
-
-**`T-B-123`** · `dodatky/b-symptomy.md:73`
-
-> UART: нічого · Причина → переплутані TX/RX
-
-**`T-B-144`** · `dodatky/b-symptomy.md:84`
-
-> ADC читає дурницю · Розділ → 07, 33
-
-**`T-B-152`** · `dodatky/b-symptomy.md:87`
-
-> GPIO дивно при старті · Дія → інший пін
-
-**`T-B-197`** · `dodatky/b-symptomy.md:107`
-
-> Пінги ходять, OTA не проходить · Причина → межа покриття
-
-**`T-B-209`** · `dodatky/b-symptomy.md:111`
-
-> BLE: не вміщається · Причина → Bluedroid замість NimBLE
+> Шумний, потребує усереднення, дрейфує від температури.
 
 
 ## Batch 9
 
-**`T-B-223`** · `dodatky/b-symptomy.md:115`
+**`T-45-071`** · `manual/45-sensory.md:167`
 
-> LoRa: модуль згорів · Розділ → 43
+> Разом із передавачем це створює наслідки, які варто продумати до розгортання, а не після: хто отримує дані, як вони захищені, що станеться, якщо їх перехоплять.
 
-**`T-C-074`** · `dodatky/c-komandy.md:151`
+**`T-45-076`** · `manual/45-sensory.md:184`
 
-> riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
+> **Калібрувати за відомим.** Порівняти з повіреним приладом або з очевидною точкою: танення льоду — це 0 °C.
 
-**`T-C-090`** · `dodatky/c-komandy.md:177`
+**`T-45-078`** · `manual/45-sensory.md:188`
 
-> lsof /dev/ttyUSB0                # хто тримає порт
+> Виріб має розрізняти «датчик каже 25» і «датчик завис на 25»: слідкувати за тим, що значення взагалі змінюються (розділ 32).
 
-**`T-COM-007`** · `inserts/components-2026-08.md:17`
+**`T-46-026`** · `manual/46-dyspleyi.md:21`
 
-> ESP32-S3-DevKitC-1 · Коли брати → новий проєкт за замовчуванням
+> Для більшості задач книги це правильний вибір, але це **вибір**, а не межа заліза.
 
-**`T-COM-008`** · `inserts/components-2026-08.md:17`
+**`T-46-031`** · `manual/46-dyspleyi.md:33`
 
-> ESP32-S3-DevKitC-1 · На що дивитися → `N8` чи `N16R8` — різна кількість вільних пінів
+> Більшість бібліотек мають окремий режим — треба лише його ввімкнути.
 
-**`T-COM-013`** · `inserts/components-2026-08.md:20`
+**`T-46-033`** · `manual/46-dyspleyi.md:38`
 
-> ESP32-C3 SuperMini · Коли брати → простий дешевий вузол
+> Для датчика на батарейці, який показує значення раз на годину, це ідеально.
 
-**`T-COM-015`** · `inserts/components-2026-08.md:21`
+**`T-46-080`** · `manual/46-dyspleyi.md:160`
 
-> ESP32-CAM · Коли брати → камера за подією
+> І окремо: **не перемальовувати весь екран, коли змінилося одне число**.
 
-**`T-COM-018`** · `inserts/components-2026-08.md:27`
+**`T-47-052`** · `manual/47-klyuchi.md:95`
 
-> DHT11, DHT22 · Беріть → **BME280** або SHT3x
-
-**`T-COM-087`** · `inserts/components-2026-08.md:98`
-
-> Поріг 0.5 °C бракував би чесний товар.
-
-**`T-D-028`** · `dodatky/d-panik.md:19`
-
-> `0x9` · Що робити → розділ 32
-
-**`T-D-032`** · `dodatky/d-panik.md:21`
-
-> `0xb` · Назва → TGWDT_CPU_RESET
-
-**`T-D-049`** · `dodatky/d-panik.md:26`
-
-> `0x10` · Що робити → розділ 32
-
-**`T-D-051`** · `dodatky/d-panik.md:32`
-
-> `rst:0xf` — це **живлення**, не помилка в коді.
-
-**`T-D-092`** · `dodatky/d-panik.md:107`
-
-> Спокусливо взяти цю таблицю бітів, скласти з нею правила strapping із розділу 07 і дістати «`boot:0x4` означає ось це».
-
-**`T-E-005`** · `dodatky/e-interfeysy.md:11`
-
-> | Пристрій | Адреса | Що дає | Бібліотека |
-
-**`T-E-043`** · `dodatky/e-interfeysy.md:25`
-
-> TCA9548A · Що дає → мультиплексор шини
-
-**`T-E-085`** · `dodatky/e-interfeysy.md:51`
-
-> E-paper (SSD16xx) · Бібліотека → GxEPD2
-
-**`T-E-088`** · `dodatky/e-interfeysy.md:57`
-
-> Adafruit за замовчуванням ставить `SPI_MODE0`, частина інших бібліотек — третій (розділ 36).
-
-**`T-F-016`** · `dodatky/f-oflayn.md:76`
-
-> - [ ] **PulseView / sigrok** для логічного аналізатора (розділ 28) - [ ] Термінальна програма: `picocom`, `minicom`, PuTTY - [ ] `mklittlefs` / `mkspiffs` для роботи з файловими системами - [ ] `gen_esp32part.py` — іде з IDF - [ ] KiCad із бібліотеками, якщо розводите плати - [ ] Редактор і засоби, до яких ви звикли
-
-**`T-G-008`** · `dodatky/g-glosariy.md:16`
-
-> | **strapping** | піни, стан яких при скиданні задає режим завантаження |
+> Він пробиває транзистор — іноді одразу, іноді після сотні спрацювань.
 
 
 ## Batch 10
 
-**`T-G-009`** · `dodatky/g-glosariy.md:17`
+**`T-47-055`** · `manual/47-klyuchi.md:102`
 
-> | **bootloader** | програма, що завантажує наступну програму |
+> Готові релейні модулі зазвичай мають діод на платі.
 
-**`T-G-161`** · `dodatky/g-glosariy.md:195`
+**`T-48-036`** · `manual/48-motory.md:92`
 
-> | RTC | Real-Time Clock |
+> **Мікрокрок** — драйвер ділить крок на частини (1/2, 1/4, ..., 1/32), що дає плавніший рух і менше шуму.
 
-**`T-H-022`** · `dodatky/h-dzherela.md:55`
+**`T-48-070`** · `manual/48-motory.md:184`
 
-> **`github.com/espressif/arduino-esp32`** — Arduino core, релізи, міграційні нотатки 2.x → 3.x (розділ 12).
+> Обмеження струму на кроковому драйвері виставляється **до** першого запуску.
 
-**`T-K01-005`** · `kartky/k01-triazh.md:10`
+**`T-51-001`** · `manual/51-payannya.md:3`
 
-> | Напис на модулі | Чип | Що це значить |
+> Паяння — навичка, яка ставиться за один вечір і працює все життя.
 
-**`T-K01-010`** · `kartky/k01-triazh.md:14`
+**`T-51-004`** · `manual/51-payannya.md:11`
 
-> `ESP32-S3-WROOM-1` · Чип → ESP32-S3
+> Припій має **змочити** обидві поверхні — вивід і контактну площадку — і розтектися по них, утворивши плавну галтель.
 
-**`T-K04-012`** · `kartky/k04-boot.md:29`
+**`T-51-019`** · `manual/51-payannya.md:34`
 
-> Натиснути і **тримати** `BOOT`. 2.
+> **Прибрати припій, потім жало.** 6.
 
-**`T-K04-013`** · `kartky/k04-boot.md:30`
+**`T-51-022`** · `manual/51-payannya.md:39`
 
-> Не відпускаючи `BOOT`, коротко натиснути й відпустити `EN`. 3.
+> Уся операція займає 2–3 секунди на з'єднання.
 
-**`T-K05-004`** · `kartky/k05-proshyvka.md:11`
+**`T-51-025`** · `manual/51-payannya.md:46`
 
-> `bootloader.bin` · Що це → другий бутлоадер
+> Правильно: жало гріє, припій подається окремо, у точку контакту.
 
-**`T-K05-026`** · `kartky/k05-proshyvka.md:37`
 
-> Не з'єднується — знизити до `--baud 115200`.
+## Batch 11
 
-**`T-K08-031`** · `kartky/k08-symptomy.md:17`
+**`T-51-078`** · `manual/51-payannya.md:159`
 
-> 10 · Симптом → GPIO поводиться дивно при старті
+> Флюс обов'язковий; жало гріє обидві поверхні; припій подається в точку контакту, а не на жало.
 
-**`T-K08-047`** · `kartky/k08-symptomy.md:22`
+**`T-51-082`** · `manual/51-payannya.md:168`
 
-> 15 · Найчастіша причина → стерто разом із калібруванням і NVS
+> Флюс змивати завжди — залишки роз'їдають доріжки.
 
-**`T-K09-016`** · `kartky/k09-pinouty.md:29`
+**`T-52-056`** · `manual/52-montazh.md:140`
 
-> | **26–32** | флеш і PSRAM. Не чіпати |
+> І шосте, не менш важливе: **перевірити посадкові місця перед замовленням**.
 
-**`T-K09-017`** · `kartky/k09-pinouty.md:30`
+**`T-53-068`** · `manual/53-akum.md:179`
 
-> | **33–37** | додатково зайняті на модулях з Octal PSRAM (`N16R8`) |
+> - **міряти в спокої**, коли радіо вимкнене; - **усереднювати** кілька відліків; - **не показувати відсотки з точністю до одиниць** — це самообман; чотири градації (повний, більше половини, менше, критично) чесніші; - для точного обліку — **окрема мікросхема-паливомір**, і тут важливо розрізняти два різні класи, які легко сплутати за назвою.
 
-**`T-K09-021`** · `kartky/k09-pinouty.md:34`
+**`T-56-021`** · `manual/56-pasport.md:45`
 
-> | 11–20 | ADC2 |
+> Контакти й дата.** Хто зробив, коли, як зв'язатися.
 
-**`T-K10-028`** · `kartky/k10-komandy.md:41`
+**`T-56-038`** · `manual/56-pasport.md:92`
 
-> Скинути плату — `Ctrl+T`, потім `Ctrl+R`.
+> Це не привід їх прибирати: відповідь на «яка це збірка» коштує дорожче за побайтову відтворюваність, і саме тому книга наполягає зберігати сам файл образу, а не сподіватися перезібрати його (розділ 21).
 
-**`T-K13-016`** · `kartky/k13-zhyvlennya.md:25`
+**`T-57-002`** · `manual/57-vid-zadachi.md:3`
 
-> 4 · Що міряти → **`3V3` під навантаженням, Wi-Fi увімкнений**
+> Обраний не той чип, не врахований бюджет живлення, не продумана поведінка при відмові — і це виявляється тоді, коли пристрій уже зібраний.
 
-**`T-K13-039`** · `kartky/k13-zhyvlennya.md:72`
+**`T-57-006`** · `manual/57-vid-zadachi.md:17`
 
-> | `rst:0xf` | кабель, хаб, немає конденсатора |
+> **Які затримки допустимі?** Реакція за мілісекунди чи за хвилини — це різні пристрої (розділ 32).
 
-**`T-REG-024`** · `inserts/regulatory-2026-08.md:57`
 
-> ESP-IDF має налаштування регіону, що обмежує доступні канали й потужність.
+## Batch 12
 
-**`T-Z-002`** · `dodatky/z-pokazhchyk.md:5`
+**`T-57-030`** · `manual/57-vid-zadachi.md:80`
 
-> Слова, які трапляються більш ніж на двох десятках сторінок, сюди не входять: покажчик, який на «GPIO» дає сорок номерів, заважає більше, ніж допомагає.
+> **Ідея.** Основний контролер робить свою роботу — керує механізмом, тримає таймінги, забезпечує безпеку.
 
-**`T-Z-148`** · `dodatky/z-pokazhchyk.md:550`
+**`T-57-065`** · `manual/57-vid-zadachi.md:179`
 
-> LoRa — 80, 231, 249, 251–255, 283, 316, 347, 370, 387
+> Питання «що станеться, якщо чип зникне зараз» ставиться до кожного виходу на етапі проєктування.
+
+**`T-58-016`** · `manual/58-dovedennya.md:36`
+
+> Тиждень витрачено на частину, яку доведеться викинути разом із рештою.
+
+**`T-58-030`** · `manual/58-dovedennya.md:70`
+
+> **Прискорений час.** Пристрій, що має щось робити раз на годину, під час випробувань робить це раз на хвилину.
+
+**`T-58-032`** · `manual/58-dovedennya.md:74`
+
+> **Штучні відмови.** Не чекати, поки зв'язок обірветься сам — вимкнути роутер.
+
+**`T-59-047`** · `manual/59-proj-monitor.md:98`
+
+> Піни винесені в одне місце нагорі — так їх видно й так вони не розповзаються по коду:
+
+**`T-59-113`** · `manual/59-proj-monitor.md:366`
+
+> Уважніше треба з іншим: обробник виконується в задачі веб-сервера з обмеженим стеком.
+
+**`T-60-136`** · `manual/60-proj-loger.md:334`
+
+> Розрахунок на рік із запасом утричі означає, що три місяці ви отримаєте навіть при неприємних сюрпризах.
+
+
+## Batch 13
+
+**`T-62-035`** · `manual/62-proj-keruvannya.md:53`
+
+> Замість неї доведеться покладатися на дисципліну коду — а в проєкті, де помилка заливає приміщення, це гірший захист.
+
+**`T-62-045`** · `manual/62-proj-keruvannya.md:82`
+
+> **Апаратний аварійний вимикач у розрив живлення насоса**, не в логіку.
+
+**`T-62-065`** · `manual/62-proj-keruvannya.md:125`
+
+> Від 3.3 В реле або не спрацює, або спрацьовуватиме через раз — класичне «іноді вмикається».
+
+**`T-A-074`** · `dodatky/a-pinouty.md:57`
+
+> Тільки-вхідних пінів немає — усі повнофункціональні.
+
+**`T-A-095`** · `dodatky/a-pinouty.md:95`
+
+> Тут змішано дві різні речі, і плутати їх дорого.
+
+**`T-COM-016`** · `inserts/components-2026-08.md:21`
+
+> ESP32-CAM · На що дивитися → **немає USB**, потрібен перехідник
+
+**`T-COM-090`** · `inserts/components-2026-08.md:108`
+
+> **Завжди:** перевірені USB-кабелі, гребінки, Dupont усіх трьох видів, термоусадка, резистори 4.7 і 10 кОм, конденсатори 100 нФ і 470 мкФ, пара конвертерів рівнів.
+
+**`T-F-026`** · `dodatky/f-oflayn.md:104`
+
+> Знайти пінаут потрібної плати.
+
+
+## Batch 14
+
+**`T-G-001`** · `dodatky/g-glosariy.md:3`
+
+> Українська назва — канонічний англійський термін.
+
+**`T-G-110`** · `dodatky/g-glosariy.md:136`
+
+> | опір | resistance |
+
+**`T-K01-004`** · `kartky/k01-triazh.md:8`
+
+> Прочитати напис на металевій кришці модуля — це головне джерело істини:
+
+**`T-K02-012`** · `kartky/k02-stan.md:25`
+
+> Записати обидва значення.
+
+**`T-K06-006`** · `kartky/k06-bootlog.md:12`
+
+> Найчастіші значення для [[classic]] (повна таблиця — додаток D):
+
+**`T-K09-013`** · `kartky/k09-pinouty.md:22`
+
+> Поширена домовленість (не апаратна прив'язка): I²C — SDA 21, SCL 22; SPI — MOSI 23, MISO 19, SCK 18, CS 5.
+
+**`T-K11-016`** · `kartky/k11-nikoly.md:35`
+
+> Дільник або конвертер рівнів — обов'язково.
+
+**`T-K13-003`** · `kartky/k13-zhyvlennya.md:4`
+
+> Ця картка — перше, що робиться замість цього.
+
+
+## Batch 15
+
+**`T-K14-023`** · `kartky/k14-rivni.md:45`
+
+> `LV` до 3.3 В, `HV` до 5 В, землі з'єднані.
+
+**`T-K14-035`** · `kartky/k14-rivni.md:76`
+
+> Мультиметром, до з'єднання:
+
+**`T-K15-022`** · `kartky/k15-seriyna.md:36`
+
+> «Прошилося без помилок» ловить не все: крок 6 виявляє справний образ на платі з непропаяним модулем.
+
+**`T-K15-037`** · `kartky/k15-seriyna.md:58`
+
+> Якщо треба лише відрізняти пристрої — **беріть MAC**: він унікальний від заводу і не потребує нічого.
+
+**`T-UA--008`** · `inserts/ua-market-2026-08.md:23`
+
+> **Українські маркетплейси.** Ширший вибір, продавці різної якості.
+
+**`T-Z-065`** · `dodatky/z-pokazhchyk.md:239`
+
+> esp_get_minimum_free_heap_size — 190, 330
+
+**`T-Z-166`** · `dodatky/z-pokazhchyk.md:674`
+
+> set-target — 25, 46–48, 96, 99, 327, 332, 374, 392
+
+**`T-Z-193`** · `dodatky/z-pokazhchyk.md:828`
+
+> WROOM-32 — 23, 67, 72–73, 362, 390
 
