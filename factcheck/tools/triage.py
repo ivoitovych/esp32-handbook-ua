@@ -45,10 +45,10 @@ def main(argv: list[str]) -> int:
     fayly = nm.kesh_fayly()
     bez = []
     for klas in ("named-unreachable", "unchecked", "no-external-signal"):
-        for o in sample.odynyci(klas):
+        for o in sample.units(klas):
             if o["id"] in vzhe:
                 continue
-            if not nm.pidibraty(o["tekst"], fayly):
+            if not nm.pick(o["tekst"], fayly):
                 bez.append({**o, "klas": klas})
     # Сталий порядок: одиниці одного розділу поруч, щоб помічник тримав
     # у голові один контекст, а не стрибав книгою.

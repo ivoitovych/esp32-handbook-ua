@@ -115,9 +115,9 @@ def storinky_knyhy() -> list[tuple[int, str]]:
     with pymupdf.open(KNYHA) as d:
         for st in d:
             t = st.get_text()
-            ryadky = [r.strip() for r in t.strip().split("\n") if r.strip()]
+            lines = [r.strip() for r in t.strip().split("\n") if r.strip()]
             nomer = None
-            for r in (ryadky[-1:] + ryadky[:1]) if ryadky else []:
+            for r in (lines[-1:] + lines[:1]) if lines else []:
                 if RE_KOLONCYFRA.match(r):
                     nomer = int(r)
                     break
@@ -133,19 +133,19 @@ def storinky_knyhy() -> list[tuple[int, str]]:
     return out
 
 
-def zibraty() -> dict[str, set[int]]:
-    znaydeno: dict[str, set[int]] = defaultdict(set)
+def collect() -> dict[str, set[int]]:
+    found: dict[str, set[int]] = defaultdict(set)
     for nomer, tekst in storinky_knyhy():
         for vz in VZIRTSI:
             for m in vz.finditer(tekst):
-                slovo = re.sub(r"\s+", "", m.group(0))
-                if len(slovo) >= MIN_DOVZHYNA:
-                    znaydeno[slovo].add(nomer)
+                word = re.sub(r"\s+", "", m.group(0))
+                if len(word) >= MIN_DOVZHYNA:
+                    found[word].add(nomer)
         nyzhniy = tekst.lower()
         for term in RUCHNI:
             if term.lower() in nyzhniy:
-                znaydeno[term].add(nomer)
-    return znaydeno
+                found[term].add(nomer)
+    return found
 
 
 def diapazony(nomery: list[int]) -> str:
@@ -174,12 +174,12 @@ ZAHOLOVOK = """# Предметний покажчик {#pokazhchyk}
 
 
 def main() -> int:
-    znaydeno = zibraty()
-    if not znaydeno:
+    found = collect()
+    if not found:
         return 1
-    korysni = {t: s for t, s in znaydeno.items()
+    korysni = {t: s for t, s in found.items()
                if 1 <= len(s) <= MEZHA_STORINOK}
-    vidkynuto = len(znaydeno) - len(korysni)
+    vidkynuto = len(found) - len(korysni)
 
     if "--pokazaty" in sys.argv:
         for t in sorted(korysni, key=klyuch_sortuvannya)[:60]:
@@ -188,17 +188,17 @@ def main() -> int:
               f"відкинуто заширокі {vidkynuto}")
         return 0
 
-    ryadky = [ZAHOLOVOK.rstrip("\n"), "", "::: pokazhchyk"]
+    lines = [ZAHOLOVOK.rstrip("\n"), "", "::: pokazhchyk"]
     litera = None
     for t in sorted(korysni, key=klyuch_sortuvannya):
         persha = t.lstrip("`")[:1].upper()
         if persha != litera:
             litera = persha
-            ryadky += ["", f"**{litera}**", ""]
-        ryadky.append(f"{t} — {diapazony(list(korysni[t]))}")
-        ryadky.append("")
-    ryadky.append(":::")
-    CIL.write_text("\n".join(ryadky) + "\n", encoding="utf-8")
+            lines += ["", f"**{litera}**", ""]
+        lines.append(f"{t} — {diapazony(list(korysni[t]))}")
+        lines.append("")
+    lines.append(":::")
+    CIL.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"book_index: термінів {len(korysni)}, "
           f"відкинуто заширокі {vidkynuto}, "
           f"→ {CIL.relative_to(ROOT)}")

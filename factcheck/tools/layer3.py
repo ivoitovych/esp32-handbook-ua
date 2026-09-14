@@ -73,7 +73,7 @@ import factcheck
 import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 DOKAZY = ROOT / "factcheck" / "evidence"
-KESH = ROOT / "factcheck" / "source-cache"
+CACHE = ROOT / "factcheck" / "source-cache"
 ZVIT = ROOT / "factcheck" / "reports" / "QUOTES.md"
 
 MIN_DOVZHYNA = 12
@@ -153,7 +153,7 @@ def _z_manifestu() -> dict[str, str]:
     if _IMENA_Z_MANIFESTU is not None:
         return _IMENA_Z_MANIFESTU
     _IMENA_Z_MANIFESTU = {}
-    m = KESH / "MANIFEST.md"
+    m = CACHE / "MANIFEST.md"
     if not m.exists():
         return _IMENA_Z_MANIFESTU
 
@@ -174,7 +174,7 @@ def _z_manifestu() -> dict[str, str]:
     # not have. The question to answer is not "which name was recorded"
     # but "under which name does the file lie **here**".
     for url, imena in usi.items():
-        ye = [i for i in imena if (KESH / i).exists()]
+        ye = [i for i in imena if (CACHE / i).exists()]
         if ye:
             _IMENA_Z_MANIFESTU[url] = ye[0]
         else:
@@ -227,7 +227,7 @@ def imya_dlya(url: str) -> str:
 
 
 def zavantazhyty(url: str, cil: Path) -> bool:
-    KESH.mkdir(exist_ok=True)
+    CACHE.mkdir(exist_ok=True)
     r = subprocess.run(["curl", "-sSL", "--fail", "--max-time", "40",
                         "-o", str(cil), url],
                        capture_output=True)
@@ -262,23 +262,23 @@ def ryadky_z_koordynat(storinka) -> list[str]:
     visual lines ("Thermometer" above "Error"). For that there is the
     token fallback further down.
     """
-    slova = storinka.get_text("words")
-    if not slova:
+    words = storinka.get_text("words")
+    if not words:
         return []
-    slova.sort(key=lambda w: (round(w[1], 1), w[0]))
-    ryadky, potochnyy, baza = [], [], None
-    for w in slova:
+    words.sort(key=lambda w: (round(w[1], 1), w[0]))
+    lines, potochnyy, baza = [], [], None
+    for w in words:
         if baza is None:
             potochnyy, baza = [w], w[1]
         elif abs(w[1] - baza) <= DOPUSK_RYADKA:
             potochnyy.append(w)
         else:
-            ryadky.append(potochnyy)
+            lines.append(potochnyy)
             potochnyy, baza = [w], w[1]
     if potochnyy:
-        ryadky.append(potochnyy)
+        lines.append(potochnyy)
     out = []
-    for r in ryadky:
+    for r in lines:
         r.sort(key=lambda w: w[0])
         out.append(" ".join(w[4] for w in r))
     return out
@@ -470,7 +470,7 @@ def plaskyy(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
-def uryvky(cytata: str, vlasna_mova: bool = False) -> list[list[str]]:
+def uryvky(quote: str, vlasna_mova: bool = False) -> list[list[str]]:
     """The groups of quote lines that can be checked.
 
     Discarded: our own notes (Cyrillic), places where text was cut (an
@@ -499,8 +499,8 @@ def uryvky(cytata: str, vlasna_mova: bool = False) -> list[list[str]]:
     cut, and a short line still matches anything.
     """
     grupy: list[list[str]] = [[]]
-    for ryadok in cytata.splitlines():
-        r = ryadok.strip()
+    for line in quote.splitlines():
+        r = line.strip()
         pryydatnyy = (
             r
             and (vlasna_mova or not RE_KYRYLYCYA.search(r))
@@ -519,7 +519,7 @@ VIKNO_TABLYCI = 4000
 RE_LEKSEMA = re.compile(r"[\w.°±×/+-]{2,}")
 
 
-def u_tablyci(ryadok: str, tekst: str) -> bool:
+def u_tablyci(line: str, tekst: str) -> bool:
     """Is this line a **reading of a table** scattered across a document.
 
     Taken from `factcheck/tools/layer3_m2_legacy.py`, function
@@ -547,7 +547,7 @@ def u_tablyci(ryadok: str, tekst: str) -> bool:
     order of words is significant, and there is no reason to loosen it
     there.
     """
-    leksemy = RE_LEKSEMA.findall(ryadok)
+    leksemy = RE_LEKSEMA.findall(line)
     if len(leksemy) < 3:
         return False
     poz = []
@@ -683,7 +683,7 @@ def root_by_verification(povnyy: str, skorocheno: str) -> str | None:
     hvist = skorocheno.lstrip("/")
     for n in range(2, min(len(seg), 8)):
         url = f"{shema}://" + "/".join(seg[:n + 1]) + "/" + hvist
-        if (KESH / imya_dlya(url)).exists():
+        if (CACHE / imya_dlya(url)).exists():
             return url
     return None
 
@@ -754,7 +754,7 @@ def dzherela_zapysu(z: dict) -> list[str]:
     return out
 
 
-def perevirka(kachaty: bool,
+def check(kachaty: bool,
               fayly: list[Path] | None = None) -> tuple[list[dict],
                                                         dict[str, int]]:
     """Every evidence record against every one of its sources.
@@ -771,12 +771,12 @@ def perevirka(kachaty: bool,
 
     for f in (fayly if fayly is not None else sorted(DOKAZY.glob("*.yaml"))):
         try:
-            zapysy = yaml.safe_load(f.read_text(encoding="utf-8")) or []
+            records = yaml.safe_load(f.read_text(encoding="utf-8")) or []
         except yaml.YAMLError as e:
             naslidky.append(dict(fayl=f.name, nazva="(file will not parse)",
                                  stan="pomylka", detali=str(e).split("\n")[0]))
             continue
-        for z in zapysy:
+        for z in records:
             if not isinstance(z, dict):
                 continue
             nazva = factcheck.nazva_zapysu(z)
@@ -975,7 +975,7 @@ def perevirka(kachaty: bool,
 
             for u in urly:
                 if u not in kesh_tekstu:
-                    cil = KESH / imya_dlya(u)
+                    cil = CACHE / imya_dlya(u)
                     if not cil.exists() and kachaty:
                         zavantazhyty(u, cil)
                     if cil.exists() and pidmineno_zaglushkoyu(cil):
@@ -1041,8 +1041,8 @@ def perevirka(kachaty: bool,
                         detali="absent-from-source with no `absent` field "
                                "— there is nothing to not look for"))
                     continue
-                znaydeno = [u for u, tx in zip(urly, teksty) if shukane in tx]
-                if znaydeno:
+                found = [u for u, tx in zip(urly, teksty) if shukane in tx]
+                if found:
                     pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
                     naslidky.append(dict(
                         fayl=f.stem, nazva=nazva, stan="pomylka",
@@ -1173,7 +1173,7 @@ def zvit(naslidky: list[dict], pidsumok: dict[str, int]) -> None:
 def main() -> int:
     a = sys.argv[1:]
     fayly = [Path(x) for x in a if not x.startswith("--")] or None
-    naslidky, pidsumok = perevirka(kachaty="--kachaty" in a, fayly=fayly)
+    naslidky, pidsumok = check(kachaty="--kachaty" in a, fayly=fayly)
     if "--zvit" in a and fayly is None:
         zvit(naslidky, pidsumok)
         print(f"layer3: report at {ZVIT.relative_to(ROOT)}")

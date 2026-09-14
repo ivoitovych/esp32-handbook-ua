@@ -174,7 +174,7 @@ def wilson(k: int, n: int) -> tuple[float, float]:
 
 def population() -> int:
     import sample
-    return len(sample.odynyci("unchecked"))
+    return len(sample.units("unchecked"))
 
 
 def main() -> int:
@@ -233,7 +233,7 @@ def main() -> int:
     if candidates:
         try:
             import layer3
-            naslidky, _ = layer3.perevirka(True, [CANDIDATES])
+            naslidky, _ = layer3.check(True, [CANDIDATES])
             states = {str(x.get("nazva")): str(x.get("stan"))
                      for x in naslidky}
         except ImportError:

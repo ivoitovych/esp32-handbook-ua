@@ -279,20 +279,20 @@ def main(argv: list[str]) -> int:
             vidn = str(p.relative_to(ROOT))
             if lyshe and vidn != lyshe:
                 continue
-            ryadky = p.read_text(encoding="utf-8").split("\n")
+            lines = p.read_text(encoding="utf-8").split("\n")
             tochky = sorted(pokryti.get(vidn, set()))
-            zmistovni = [i + 1 for i, r in enumerate(ryadky)
+            zmistovni = [i + 1 for i, r in enumerate(lines)
                          if not PORO_ZHNI.match(r)]
             if not zmistovni:
                 continue
             # Кожна картка накриває свій рядок і все до наступної картки.
             nakryti: set[int] = set()
             for k, poch in enumerate(tochky):
-                kinec = tochky[k + 1] if k + 1 < len(tochky) else len(ryadky) + 1
+                kinec = tochky[k + 1] if k + 1 < len(tochky) else len(lines) + 1
                 nakryti.update(range(poch, kinec))
             ne = [i for i in zmistovni if i not in nakryti]
             for i in ne:
-                r = ryadky[i - 1]
+                r = lines[i - 1]
                 if re.match(r"^#{1,6}\s", r):
                     strukturni += 1
                 elif Path(vidn).name in SLUZHBOVI:
@@ -301,7 +301,7 @@ def main(argv: list[str]) -> int:
                     nevrakhovani.append((vidn, i, r[:60]))
             if rody_rezhym:
                 for i in ne:
-                    r = ryadky[i - 1]
+                    r = lines[i - 1]
                     if re.match(r"^#{1,6}\s", r):
                         k = "заголовок"
                     elif re.match(r"^\s*[|>]", r):

@@ -215,10 +215,10 @@ def perevirka_kyrylyci_v_kodi(fs: list[Path]) -> list[str]:
     for f in fs:
         rel = str(f.relative_to(ROOT))
         for blok in re.finditer(r"```.*?```", f.read_text(encoding="utf-8"), re.S):
-            for ryadok in blok.group(0).split("\n"):
-                m = RE_ZMISH.search(ryadok)
+            for line in blok.group(0).split("\n"):
+                m = RE_ZMISH.search(line)
                 if m:
-                    znaxidky.append(f"{rel}: «{m.group(0)}» у рядку   {ryadok.strip()[:80]}")
+                    znaxidky.append(f"{rel}: «{m.group(0)}» у рядку   {line.strip()[:80]}")
     return znaxidky
 
 

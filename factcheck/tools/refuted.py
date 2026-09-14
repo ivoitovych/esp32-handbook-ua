@@ -35,8 +35,8 @@ from repo import ROOT  # noqa: E402  (root is found, not counted)
 # `reports/`, а глоб лишився — і тула звітувала «реєстрів 0, взірців 0,
 # знахідок 0», тобто вся перевірка спростованих формулювань стояла
 # порожня й зеленіла. Тепер обидва місця, і нуль реєстрів — провал.
-REYESTRY = sorted((ROOT / "factcheck").glob("REFUTED*.md")) + \
-    sorted((ROOT / "factcheck" / "reports").glob("REFUTED*.md")) + \
+REYESTRY = sorted((ROOT / "factcheck").glob("REFUTED*.md")) +\
+    sorted((ROOT / "factcheck" / "reports").glob("REFUTED*.md")) +\
     sorted((ROOT / "factcheck" / "archive").rglob("REFUTED*.md"))
 
 # Де шукаємо. Реєстр спростованого й звіти рецензій цитують хибні
@@ -46,7 +46,7 @@ NE_CHIPATY = ("factcheck/REFUTED", "factcheck/reports/REFUTED",
                "factcheck/archive/", "reviews/", "zvyazok/")
 
 
-def zapysy() -> list[dict]:
+def records() -> list[dict]:
     out: list[dict] = []
     for f in REYESTRY:
         for b in re.findall(r"```yaml\n(.*?)```", f.read_text(encoding="utf-8"), re.S):
@@ -57,7 +57,7 @@ def zapysy() -> list[dict]:
 
 
 def main() -> int:
-    zap = zapysy()
+    zap = records()
     if "-v" in sys.argv:
         for z in zap:
             print(f"  {z['shcho']}\n      {z['zbih']}")

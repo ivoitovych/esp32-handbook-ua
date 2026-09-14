@@ -82,17 +82,17 @@ def zagolovok(tekst: str) -> dict[str, str]:
     if not m:
         return {}
     polya: dict[str, str] = {}
-    for ryadok in m.group(1).splitlines():
-        ryadok = ryadok.split("#")[0].rstrip()
-        if ":" not in ryadok:
+    for line in m.group(1).splitlines():
+        line = line.split("#")[0].rstrip()
+        if ":" not in line:
             continue
-        k, _, v = ryadok.partition(":")
+        k, _, v = line.partition(":")
         polya[k.strip()] = v.strip()
     return polya
 
 
-def zibraty() -> tuple[list[dict], list[str]]:
-    povidomlennya: list[dict] = []
+def collect() -> tuple[list[dict], list[str]]:
+    message: list[dict] = []
     bidy: list[str] = []
     for f in sorted(KAT.glob("*.md")):
         m = IMYA.match(f.name)
@@ -146,12 +146,12 @@ def zibraty() -> tuple[list[dict], list[str]]:
         # машина, відбиток — людина. Звіряємо, щоб вони не розійшлися.
         vidb = f"**{z['vid']} → {z['komu']}**"
         tilo = f.read_text(encoding="utf-8")
-        ryadok = next((r for r in tilo.splitlines() if r.startswith(vidb)), None)
-        if ryadok is None:
+        line = next((r for r in tilo.splitlines() if r.startswith(vidb)), None)
+        if line is None:
             bidy.append(
                 f"{f.name}: немає видимого відбитка — рядка, що починається "
                 f"з `{vidb}`")
-        elif z["koly"] not in ryadok or z["vyd"] not in ryadok:
+        elif z["koly"] not in line or z["vyd"] not in line:
             bidy.append(
                 f"{f.name}: видимий відбиток розійшовся із заголовком "
                 f"({z['koly']}, {z['vyd']})")
@@ -161,18 +161,18 @@ def zibraty() -> tuple[list[dict], list[str]]:
             bidy.append(
                 f"{f.name}: `zminyuye` має сенс лише для `zavdannya`")
 
-        povidomlennya.append({
+        message.append({
             "imya": f.stem, "fayl": f.name, "koly": ochik,
             "vid": z["vid"], "vyd": z["vyd"], "tema": z["tema"],
             "baza": z["baza"],
             "na": z.get("vidpovid-na", "-").strip() or "-",
             "zminyuye": zmin,
         })
-    return povidomlennya, bidy
+    return message, bidy
 
 
-def perevirka(suvoro: bool) -> int:
-    povid, bidy = zibraty()
+def check(suvoro: bool) -> int:
+    povid, bidy = collect()
     imena = {p["imya"] for p in povid}
     chasy = {p["imya"]: p["koly"] for p in povid}
 
@@ -236,13 +236,13 @@ def perevirka(suvoro: bool) -> int:
 
 
 def indeks() -> int:
-    povid, _ = zibraty()
+    povid, _ = collect()
     vidpovidi: dict[str, list[dict]] = {}
     for p in povid:
         if p["na"] != "-":
             vidpovidi.setdefault(p["na"], []).append(p)
 
-    ryadky = [
+    lines = [
         "# Листування: покажчик\n",
         "**Генерується** `tools/correspondence.py --index`. Правити вручну нема "
         "сенсу; формат і правила — `zvyazok/PROTOKOL.md`.\n",
@@ -257,11 +257,11 @@ def indeks() -> int:
             stan = "**відкрите**"
         else:
             stan = "—"
-        ryadky.append(
+        lines.append(
             f"| [{p['koly']}]({p['fayl']}) | {p['vid']} | {p['vyd']} | "
             f"{p['tema']} | `{p['baza']}` | {stan} |")
 
-    (KAT / "INDEX.md").write_text("\n".join(ryadky) + "\n", encoding="utf-8")
+    (KAT / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"correspondence: покажчик оновлено, повідомлень {len(povid)}")
     return 0
 
@@ -269,4 +269,4 @@ def indeks() -> int:
 if __name__ == "__main__":
     if "--index" in sys.argv:
         sys.exit(indeks())
-    sys.exit(perevirka("--suvoro" in sys.argv))
+    sys.exit(check("--suvoro" in sys.argv))

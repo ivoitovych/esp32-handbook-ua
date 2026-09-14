@@ -87,7 +87,7 @@ def collect(by: str = "sha") -> dict[str, list[str]]:
     import factcheck
     import sample
 
-    units = [u for k in factcheck.ALL_CLASSES for u in sample.odynyci(k)]
+    units = [u for k in factcheck.ALL_CLASSES for u in sample.units(k)]
 
     # A record's key must survive the file being reordered, so it carries
     # an ordinal: names repeat within a file, and without the ordinal two

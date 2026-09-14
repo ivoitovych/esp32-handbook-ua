@@ -155,7 +155,7 @@ def imena_faylivv() -> set[str]:
         chastyny = set(f.relative_to(ROOT / "factcheck").parts)
         if CARD_DIRS & chastyny or {"archive", "__pycache__"} & chastyny:
             continue
-        for imya in [f.stem] + list(chastyny - {f.name}):
+        for name in [f.stem] + list(chastyny - {f.name}):
             # Ім'я доказу — це родина, номер і **розділ книги**:
             # `sweep-18-rozdily-fleshu` цитує `manual/18-rozdily-fleshu.md`.
             # Перша спроба звіряла з книгою ім'я цілком, а на частини
@@ -163,7 +163,7 @@ def imena_faylivv() -> set[str]:
             # на `rozdily` та `fleshu`, яких у книзі нема. Та сама вада,
             # яку цей файл і ловить: міра, зроблена на крок раніше, ніж
             # треба, міряє свій крок, а не предмет.
-            chastky = re.split(r"[-_]", imya)
+            chastky = re.split(r"[-_]", name)
             if any("-".join(chastky[i:]) in knyha for i in range(len(chastky))):
                 continue
             for c in chastky:
@@ -192,7 +192,7 @@ def baza() -> set[str]:
                           re.M))
 
 
-def zapysaty(imena: set[str]) -> None:
+def write_out(imena: set[str]) -> None:
     r = ["# Transliterated identifiers still in the tools",
          "",
          "> **generated** — `factcheck/tools/naming.py --write`. Editing it by hand only",
@@ -321,7 +321,7 @@ def main() -> int:
         return inventory()
     ye = znaydeni()
     if "--write" in sys.argv:
-        zapysaty(ye)
+        write_out(ye)
         print("naming: recorded %d names -> %s" % (len(ye), BASELINE.name))
         return 0
     b = baza()

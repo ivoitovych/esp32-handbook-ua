@@ -122,7 +122,7 @@ def main() -> int:
     re_not = (re.compile(words["not_prescriptive"], re.I)
               if words.get("not_prescriptive") else None)
 
-    units = [u for k in factcheck.ALL_CLASSES for u in sample.odynyci(k)]
+    units = [u for k in factcheck.ALL_CLASSES for u in sample.units(k)]
     found = []
     for f in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
         try:

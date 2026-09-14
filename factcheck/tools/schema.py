@@ -29,7 +29,7 @@
 видимій частині немає.
 
     factcheck/tools/schema.py                перевірити
-    factcheck/tools/schema.py --samoperevirka показ на зіпсованому вході
+    factcheck/tools/schema.py --self-check показ на зіпсованому вході
 """
 from __future__ import annotations
 
@@ -101,7 +101,7 @@ RE_DOSLIVNO = re.compile(
 RENDER = ("komirka", "tablycya", "tablycya-shapka")
 
 
-def zapysy(teka: pathlib.Path) -> list[tuple[str, int, dict]]:
+def records(teka: pathlib.Path) -> list[tuple[str, int, dict]]:
     out = []
     for f in sorted(teka.glob("*.yaml")):
         try:
@@ -120,8 +120,8 @@ def zapysy(teka: pathlib.Path) -> list[tuple[str, int, dict]]:
 
 def perevir_zapysy(zap) -> list[str]:
     bidy = []
-    for imya, i, r in zap:
-        de = f"{imya}::{i}"
+    for name, i, r in zap:
+        de = f"{name}::{i}"
         if "_bida" in r:
             bidy.append(f"{de}: {r['_bida']}")
             continue
@@ -174,7 +174,7 @@ def perevir_kartky() -> list[str]:
     return bidy
 
 
-def samoperevirka() -> int:
+def self_check() -> int:
     """Показ на навмисно зіпсованому вході.
 
     Правило проєкту: перевірка, яка ніколи не спрацьовувала, не
@@ -220,11 +220,11 @@ def samoperevirka() -> int:
           "source": "esp32s2/soc_caps.h"}, 1),
     ]
     pomylok = 0
-    for imya, r, ochik in vypadky:
+    for name, r, ochik in vypadky:
         dist = len(perevir_zapysy([("t.yaml", 0, r)]))
         znak = "✓" if dist == ochik else "✗"
         pomylok += dist != ochik
-        print(f"  {znak} {imya:<28} очікували {ochik}, дістали {dist}")
+        print(f"  {znak} {name:<28} очікували {ochik}, дістали {dist}")
     print("самоперевірка: усе як очікувано" if not pomylok
           else f"самоперевірка: РОЗБІЖНОСТЕЙ {pomylok}")
     return 1 if pomylok else 0
@@ -232,14 +232,14 @@ def samoperevirka() -> int:
 
 def main() -> int:
     p = argparse.ArgumentParser()
-    p.add_argument("--samoperevirka", action="store_true")
+    p.add_argument("--self-check", action="store_true")
     p.add_argument("--suvoro", action="store_true",
                    help="ненульовий код виходу при знахідках")
     a = p.parse_args()
-    if a.samoperevirka:
-        return samoperevirka()
+    if a.self_check:
+        return self_check()
 
-    zap = zapysy(ROOT / "factcheck" / "evidence")
+    zap = records(ROOT / "factcheck" / "evidence")
     bz = perevir_zapysy(zap)
     bk = perevir_kartky()
 

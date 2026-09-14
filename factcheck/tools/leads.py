@@ -98,7 +98,7 @@ PIDPYSY_V = {
 }
 
 
-def zvesty(katalogy: list[str]) -> int:
+def digest(katalogy: list[str]) -> int:
     """Звести відпрацьовані сліди, пропустивши `znayshov` через шар 3."""
     import helper_dumps
     import yaml
@@ -123,7 +123,7 @@ def zvesty(katalogy: list[str]) -> int:
     if kand:
         try:
             import layer3
-            naslidky, _ = layer3.perevirka(True, [KANDYDATY])
+            naslidky, _ = layer3.check(True, [KANDYDATY])
             stany = {str(n.get("nazva")): str(n.get("stan"))
                      for n in naslidky}
         except ImportError:
@@ -194,7 +194,7 @@ def main() -> int:
         return 2
     if "--zvit" in sys.argv:
         i = sys.argv.index("--zvit")
-        return zvesty(sys.argv[i + 1:])
+        return digest(sys.argv[i + 1:])
     import helper_dumps
 
     # Кілька каталогів: сліди дає і штурм, і міра, і кожна наступна

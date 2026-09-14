@@ -23,7 +23,7 @@ when it was told the same thing.
     factcheck/tools/task_spec.py --version           version of the whole spec
     factcheck/tools/task_spec.py --blocks            list the blocks
     factcheck/tools/task_spec.py --show ORIENTATION  print one
-    factcheck/tools/task_spec.py --samoperevirka     demonstration on broken input
+    factcheck/tools/task_spec.py --self-check     demonstration on broken input
 
 ## Why the stamp is per-order and not per-file
 
@@ -131,7 +131,7 @@ def sklasty(imena: list[str], zaholovok: str = "", vstup: str = "",
     return "\n\n".join(ch) + "\n"
 
 
-def samoperevirka() -> int:
+def self_check() -> int:
     """Demonstration on deliberately broken input.
 
     Project rule: a check that has never fired is no different from a
@@ -139,10 +139,10 @@ def samoperevirka() -> int:
     """
     pomylok = 0
 
-    def probа(imya, umova):
+    def probа(name, umova):
         nonlocal pomylok
         pomylok += not umova
-        print(f"  {'✓' if umova else '✗'} {imya}")
+        print(f"  {'✓' if umova else '✗'} {name}")
 
     b = bloky()
     probа(f"спец читається, блоків {len(b)}", len(b) >= 8)
@@ -193,11 +193,11 @@ def main() -> int:
     a.add_argument("--version", action="store_true")
     a.add_argument("--blocks", action="store_true")
     a.add_argument("--show")
-    a.add_argument("--samoperevirka", action="store_true")
+    a.add_argument("--self-check", action="store_true")
     o = a.parse_args()
 
-    if o.samoperevirka:
-        return samoperevirka()
+    if o.self_check:
+        return self_check()
     if o.show:
         b = bloky()
         if o.show not in b:

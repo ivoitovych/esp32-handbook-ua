@@ -76,9 +76,9 @@ def normalizuy(t: str) -> str:
     return re.sub(r"\s+", " ", t).strip()
 
 
-def zavantazh(url: str, kesh: Path) -> str | None:
+def zavantazh(url: str, cache: Path) -> str | None:
     """Один документ — одне завантаження за весь звід."""
-    fayl = kesh / (hashlib.sha256(url.encode()).hexdigest()[:24] + ".txt")
+    fayl = cache / (hashlib.sha256(url.encode()).hexdigest()[:24] + ".txt")
     if fayl.exists():
         return fayl.read_text(encoding="utf-8", errors="replace")
     r = subprocess.run(["curl", "-sS", "--max-time", "30", url],
@@ -90,7 +90,7 @@ def zavantazh(url: str, kesh: Path) -> str | None:
 
 
 def chytay(teka: Path) -> tuple[list[dict], list[str]]:
-    zapysy: list[dict] = []
+    records: list[dict] = []
     biti: list[str] = []
     for f in sorted(teka.glob("*.yaml")):
         try:
@@ -99,10 +99,10 @@ def chytay(teka: Path) -> tuple[list[dict], list[str]]:
             biti.append(f.name)
             continue
         if isinstance(z, list):
-            zapysy += [r for r in z if isinstance(r, dict)]
+            records += [r for r in z if isinstance(r, dict)]
         else:
             biti.append(f.name)
-    return zapysy, biti
+    return records, biti
 
 
 def main() -> int:
@@ -110,15 +110,15 @@ def main() -> int:
     p.add_argument("teka", type=Path)
     p.add_argument("--kesh", type=Path, default=None)
     a = p.parse_args()
-    kesh = a.kesh or (a.teka.parent / "kesh-zvodu")
-    kesh.mkdir(parents=True, exist_ok=True)
+    cache = a.cache or (a.teka.parent / "kesh-zvodu")
+    cache.mkdir(parents=True, exist_ok=True)
 
-    zapysy, biti = chytay(a.teka)
+    records, biti = chytay(a.teka)
     print(f"файлів нечитних: {len(biti)}"
           + (f" ({', '.join(biti[:6])}…)" if biti else ""))
 
     prydatni, samo, bez_dok = [], 0, 0
-    for z in zapysy:
+    for z in records:
         dz = str(z.get("source", "")).strip()
         if RE_SAMA_KNYHA.search(dz):
             samo += 1
@@ -128,7 +128,7 @@ def main() -> int:
             prydatni.append(z)
 
     n = len(prydatni)
-    print(f"записів усього {len(zapysy)} | самопосилань {samo} | "
+    print(f"записів усього {len(records)} | самопосилань {samo} | "
           f"без документа {bez_dok} | придатних {n}")
     if not n:
         return 1
@@ -151,7 +151,7 @@ def main() -> int:
             continue
         url = str(z["source"]).strip()
         if url not in dokumenty:
-            dokumenty[url] = zavantazh(url, kesh)
+            dokumenty[url] = zavantazh(url, cache)
         tekst = dokumenty[url]
         if tekst is None:
             nedosyazhni.append(z)

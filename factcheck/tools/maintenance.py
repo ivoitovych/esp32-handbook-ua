@@ -17,7 +17,7 @@ every figure was computed a second ago.
     factcheck/tools/maintenance.py            the measured state
     factcheck/tools/maintenance.py --md       the same, as the report body
     factcheck/tools/maintenance.py --open     only what is still open
-    factcheck/tools/maintenance.py --samoperevirka
+    factcheck/tools/maintenance.py --self-check
 
 ## What counts as open
 
@@ -95,12 +95,12 @@ def mira_zavdannya() -> tuple[int, int, list[str]]:
     """Наряди: скільки складаються зі спеки, і чи всі мають версію."""
     import task_spec
     zi_speky, versiy = 0, []
-    for imya, var in (("leads", "zaholovok"), ("sample", "zaholovok"),
+    for name, var in (("leads", "zaholovok"), ("sample", "zaholovok"),
                       ("sweep", "shapka"), ("work_orders", "zaholovok"),
                       ("work_orders_f", "shapka")):
         try:
-            m = __import__(imya)
-            h = getattr(m, var)(skilky=1, nomer=1, klas="F", nasinnya=1,
+            m = __import__(name)
+            h = getattr(m, var)(skilky=1, nomer=1, klas="F", seed=1,
                                 vsyoho=1, n=1, tema="t", k=1, kandydat="x")
         except Exception:
             continue
@@ -145,7 +145,7 @@ def mira_dokumenty() -> tuple[int, int, list[str]]:
     # одного, тоді як `doc_kind.perevirka()` дивилася на всі. Половинне
     # делегування гірше за жодне: воно виглядає як делегування.
     usi = doc_kind.dokumenty()
-    bidy = doc_kind.perevirka()
+    bidy = doc_kind.check()
     return len(usi), len(bidy), bidy
 
 
@@ -191,10 +191,10 @@ PYTANNYA = [
 
 
 def zvit(md: bool = False, lyshe_vidkryti: bool = False) -> int:
-    ryadky = []
+    lines = []
     vidkrytykh = 0
     zlamanykh: list[str] = []
-    for imya, mira, zakryte, tsil in PYTANNYA:
+    for name, mira, zakryte, tsil in PYTANNYA:
         try:
             v = mira()
             vidkryte = not zakryte(v)
@@ -208,19 +208,19 @@ def zvit(md: bool = False, lyshe_vidkryti: bool = False) -> int:
             # Зламана міра й погана міра — різні події. Рахуємо їх
             # окремо й називаємо вголос.
             v, vidkryte = "ЗЛАМАНА", True
-            zlamanykh.append(f"{imya}: {str(e)[:80]}")
+            zlamanykh.append(f"{name}: {str(e)[:80]}")
         vidkrytykh += bool(vidkryte)
         if lyshe_vidkryti and not vidkryte:
             continue
         znak = "✗" if vidkryte else "·"
         if md:
-            ryadky.append(f"| {znak} | {imya} | `{v}` | {tsil} |")
+            lines.append(f"| {znak} | {name} | `{v}` | {tsil} |")
         else:
-            ryadky.append(f"  {znak} {imya:<44} {str(v):>6}   {tsil}")
+            lines.append(f"  {znak} {name:<44} {str(v):>6}   {tsil}")
     if md:
         print("| | Питання | Виміряно | Ціль |")
         print("|---|---|---|---|")
-    print("\n".join(ryadky))
+    print("\n".join(lines))
     for z in zlamanykh:
         print(f"   ✗ МІРА ЗЛАМАНА — {z}")
     if not lyshe_vidkryti:
@@ -229,14 +229,14 @@ def zvit(md: bool = False, lyshe_vidkryti: bool = False) -> int:
     return 0
 
 
-def samoperevirka() -> int:
+def self_check() -> int:
     """Показ на зіпсованому вході."""
     pomylok = 0
 
-    def probа(imya, umova):
+    def probа(name, umova):
         nonlocal pomylok
         pomylok += not umova
-        print(f"  {'✓' if umova else '✗'} {imya}")
+        print(f"  {'✓' if umova else '✗'} {name}")
 
     n, st = mira_polya()
     probа(f"записи читаються ({n})", n > 1000)
@@ -270,10 +270,10 @@ def main() -> int:
     a = argparse.ArgumentParser()
     a.add_argument("--md", action="store_true")
     a.add_argument("--open", action="store_true")
-    a.add_argument("--samoperevirka", action="store_true")
+    a.add_argument("--self-check", action="store_true")
     o = a.parse_args()
-    if o.samoperevirka:
-        return samoperevirka()
+    if o.self_check:
+        return self_check()
     return zvit(md=o.md, lyshe_vidkryti=o.open)
 
 

@@ -37,7 +37,7 @@
 
     factcheck/tools/leak.py            перелік
     factcheck/tools/leak.py --naslidky що тримається на течах (повільніше)
-    factcheck/tools/leak.py --samoperevirka  показ на навмисно зіпсованому вході
+    factcheck/tools/leak.py --self-check  показ на навмисно зіпсованому вході
 """
 from __future__ import annotations
 
@@ -63,15 +63,15 @@ def alternatyvy(v: str) -> list[str]:
         return [v]
 
 
-def znayty(zapysy: list[dict], teksty: list[str]) -> list[dict]:
+def znayty(records: list[dict], teksty: list[str]) -> list[dict]:
     """Записи, чия ширина тримається на одній альтернативі."""
     out = []
-    for z in zapysy:
+    for z in records:
         # Тут стояло `z.get("match") or z.get("match")` — заміна за
         # рядком перейменувала **обидві половини** запасного виразу, і
         # запас перестав бути запасом, лишившись на вигляд запасом.
         # Самоперевірка це ловила й мовчала: `make check` кличе `techa`
-        # без `--samoperevirka`.
+        # без `--self-check`.
         import factcheck
         v = factcheck.pole(z, "match", "zbih")
         # Запис, що переїхав на хеш, взірцем більше не чіпляє нічого.
@@ -98,7 +98,7 @@ def znayty(zapysy: list[dict], teksty: list[str]) -> list[dict]:
     return out
 
 
-def samoperevirka() -> int:
+def self_check() -> int:
     """Показ на навмисно зіпсованому вході.
 
     Правило проєкту: перевірка, яка ніколи не спрацьовувала, не
@@ -129,12 +129,12 @@ def samoperevirka() -> int:
     stara, MEZHA = MEZHA, 5
     try:
         pomylok = 0
-        for imya, z, ochik in vypadky:
+        for name, z, ochik in vypadky:
             spraviy = bool(znayty([z], teksty))
             znak = "✓" if spraviy == ochik else "✗"
             if spraviy != ochik:
                 pomylok += 1
-            print(f"  {znak} {imya:<22} очікували "
+            print(f"  {znak} {name:<22} очікували "
                   f"{'течу' if ochik else 'чисто'}, дістали "
                   f"{'течу' if spraviy else 'чисто'}")
     finally:
@@ -147,21 +147,21 @@ def samoperevirka() -> int:
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--naslidky", action="store_true")
-    p.add_argument("--samoperevirka", action="store_true")
+    p.add_argument("--self-check", action="store_true")
     a = p.parse_args()
 
-    if a.samoperevirka:
-        return samoperevirka()
+    if a.self_check:
+        return self_check()
 
     import factcheck
     import sample
 
-    odyn = [u for k in factcheck.ALL_CLASSES for u in sample.odynyci(k)]
+    odyn = [u for k in factcheck.ALL_CLASSES for u in sample.units(k)]
     teksty = [u["tekst"] for u in odyn]
-    zapysy = factcheck.zavantazhyty_dokazy()
-    techi = znayty(zapysy, teksty)
+    records = factcheck.zavantazhyty_dokazy()
+    techi = znayty(records, teksty)
 
-    print(f"записів із течею: {len(techi)} із {len(zapysy)}\n")
+    print(f"записів із течею: {len(techi)} із {len(records)}\n")
     for d in techi:
         z = d["zapys"]
         print(f"  {d['shyryna']:>4} (решта {d['reshta']:>3})  "
@@ -172,14 +172,14 @@ def main() -> int:
     if not a.naslidky:
         return 0
 
-    for i, z in enumerate(zapysy):
+    for i, z in enumerate(records):
         z["_i"] = i
     techni = {d["zapys"]["_i"] for d in techi}
-    bez = [z for z in zapysy if z["_i"] not in techni]
+    bez = [z for z in records if z["_i"] not in techni]
 
     zmina: collections.Counter = collections.Counter()
     for u in odyn:
-        kand_a = factcheck.vsi_kandydaty(zapysy, u["sha"], u["tekst"])
+        kand_a = factcheck.vsi_kandydaty(records, u["sha"], u["tekst"])
         kand_b = factcheck.vsi_kandydaty(bez, u["sha"], u["tekst"])
         ka = (min(kand_a, key=lambda x: factcheck.STRENGTH.get(
             factcheck.status_of(x), 99)) if kand_a else None)

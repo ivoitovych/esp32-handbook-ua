@@ -23,7 +23,7 @@
 import re, sys, hashlib, pathlib, subprocess
 
 KORIN = pathlib.Path(__file__).resolve().parent.parent
-KESH = pathlib.Path.home() / "dzherela-cache"
+CACHE = pathlib.Path.home() / "dzherela-cache"
 DOKAZY = KORIN / "factcheck" / "evidence"
 
 
@@ -40,7 +40,7 @@ def normalizuvaty(t: str) -> str:
 
 
 
-def znayty_ryadok(ryadok: str, tekst: str) -> bool:
+def znayty_ryadok(line: str, tekst: str) -> bool:
     """Чи є рядок цитати в документі — з поправкою на таблиці.
 
     Спершу звичайний підрядок. Якщо не збігся — рядок може бути **читанням
@@ -60,9 +60,9 @@ def znayty_ryadok(ryadok: str, tekst: str) -> bool:
     взагалі), але не ловить перестановку слів у межах таблиці. Для
     табличних даних перестановка не міняє змісту.
     """
-    if ryadok in tekst:
+    if line in tekst:
         return True
-    leksemy = [x for x in re.findall(r"[\w.°±×/+-]{2,}", ryadok) if not x.isdigit() or len(x) > 1]
+    leksemy = [x for x in re.findall(r"[\w.°±×/+-]{2,}", line) if not x.isdigit() or len(x) > 1]
     if len(leksemy) < 3:
         return False
     # усі лексеми мають бути в документі
@@ -106,14 +106,14 @@ def tekst_dokumenta(shlyah: pathlib.Path) -> str:
 
 def znayty_dokument(z: dict) -> pathlib.Path | None:
     """Документ шукається за іменем файлу з поля `sposib`, потім за назвою."""
-    sposib = str(z.get("method", ""))
-    for m in re.finditer(r"`([\w.\-]+)`", sposib):
-        p = KESH / m.group(1)
+    method = str(z.get("method", ""))
+    for m in re.finditer(r"`([\w.\-]+)`", method):
+        p = CACHE / m.group(1)
         if p.exists():
             return p
         for suf in (".pdf", ".txt", ".h", ".c"):
-            if (KESH / (m.group(1) + suf)).exists():
-                return KESH / (m.group(1) + suf)
+            if (CACHE / (m.group(1) + suf)).exists():
+                return CACHE / (m.group(1) + suf)
     return None
 
 
@@ -157,9 +157,9 @@ def main() -> int:
             pereveryly += 1
             # Кожен непорожній рядок цитати шукається окремо: витяг
             # часто склеєний із кількох місць документа (таблиця + примітка).
-            ryadky = [normalizuvaty(r) for r in str(cyt).splitlines()]
-            ryadky = [r for r in ryadky if len(r) > 12]
-            promakh = [r for r in ryadky if not znayty_ryadok(r, tekst)]
+            lines = [normalizuvaty(r) for r in str(cyt).splitlines()]
+            lines = [r for r in lines if len(r) > 12]
+            promakh = [r for r in lines if not znayty_ryadok(r, tekst)]
             if not promakh:
                 zbih += 1
                 if detal:

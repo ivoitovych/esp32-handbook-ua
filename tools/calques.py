@@ -82,7 +82,7 @@ def bez_kodu(t: str) -> str:
 
 def main() -> int:
     detalno = "-v" in sys.argv
-    znaydeno = 0
+    found = 0
     fayliv = 0
     for grupa in GRUPY:
         katalog = ROOT / grupa
@@ -91,12 +91,12 @@ def main() -> int:
         for f in sorted(katalog.glob("*.md")):
             fayliv += 1
             tekst = bez_kodu(f.read_text(encoding="utf-8"))
-            ryadky = tekst.split("\n")
-            for vzirets, zamina, chomu in KALKY:
-                for i, r in enumerate(ryadky, 1):
-                    for m in re.finditer(vzirets, r, re.I):
-                        znaydeno += 1
-                        pryklad = re.sub(vzirets, zamina, m.group(0),
+            lines = tekst.split("\n")
+            for pattern, zamina, chomu in KALKY:
+                for i, r in enumerate(lines, 1):
+                    for m in re.finditer(pattern, r, re.I):
+                        found += 1
+                        pryklad = re.sub(pattern, zamina, m.group(0),
                                          flags=re.I)
                         print(f"   ✗ {f.relative_to(ROOT)}:{i}: "
                               f"«{m.group(0)}» → «{pryklad}»"
@@ -104,8 +104,8 @@ def main() -> int:
                         if detalno:
                             print(f"        {r.strip()[:110]}")
     print(f"calques: файлів {fayliv}, взірців {len(KALKY)}, "
-          f"знахідок {znaydeno}")
-    return 1 if znaydeno else 0
+          f"знахідок {found}")
+    return 1 if found else 0
 
 
 if __name__ == "__main__":

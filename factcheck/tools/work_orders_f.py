@@ -149,15 +149,15 @@ def vypadkova(a) -> int:
 
     import sample
 
-    usi = sorted(sample.odynyci("unchecked"), key=lambda u: u["id"])
-    vzyato = random.Random(a.nasinnya).sample(usi, min(a.vypadkovo, len(usi)))
+    usi = sorted(sample.units("unchecked"), key=lambda u: u["id"])
+    vzyato = random.Random(a.seed).sample(usi, min(a.vypadkovo, len(usi)))
     (a.kudy / "vybirka.json").write_text(json.dumps(
         {"order_version": versiya_naryadu(getattr(a, "rich", False)),
          # `queue` пише і цей прогін теж: попарний режим порівнює з ним
          # клас кожної одиниці, і без нього він рахував **усі** одиниці
          # такими, що вийшли з черги — 10 із 10 у першій же пробі.
          "queue": "unchecked", "rich_cards": bool(getattr(a, "rich", False)),
-         "nasinnya": a.nasinnya, "z_cherhy": len(usi),
+         "nasinnya": a.seed, "z_cherhy": len(usi),
          "vzyato": [u["id"] for u in vzyato]},
         ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -190,7 +190,7 @@ def za_perelikom(a, sample) -> int:
     # копії переліку класів за добу.
     for kl in factcheck.ALL_CLASSES:
         try:
-            for u in sample.odynyci(kl):
+            for u in sample.units(kl):
                 reyestr[u["id"]] = dict(
                     u, klas=kl, status=factcheck.LETTER_TO_STATUS.get(kl, kl))
         except Exception:
@@ -265,15 +265,15 @@ def vypadkova(a) -> int:
 
     import sample
 
-    usi = sorted(sample.odynyci("unchecked"), key=lambda u: u["id"])
-    vzyato = random.Random(a.nasinnya).sample(usi, min(a.vypadkovo, len(usi)))
+    usi = sorted(sample.units("unchecked"), key=lambda u: u["id"])
+    vzyato = random.Random(a.seed).sample(usi, min(a.vypadkovo, len(usi)))
     (a.kudy / "vybirka.json").write_text(json.dumps(
         {"order_version": versiya_naryadu(getattr(a, "rich", False)),
          # `queue` пише і цей прогін теж: попарний режим порівнює з ним
          # клас кожної одиниці, і без нього він рахував **усі** одиниці
          # такими, що вийшли з черги — 10 із 10 у першій же пробі.
          "queue": "unchecked", "rich_cards": bool(getattr(a, "rich", False)),
-         "nasinnya": a.nasinnya, "z_cherhy": len(usi),
+         "nasinnya": a.seed, "z_cherhy": len(usi),
          "vzyato": [u["id"] for u in vzyato]},
         ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -287,7 +287,7 @@ def vypadkova(a) -> int:
                 "знайшов, `not_found` із адресою того, що відкривав, "
                 "це повноцінна відповідь.")
         rich = getattr(a, "rich", False)
-        r = [shapka(n=n, tema=f"випадкова вибірка (насіння {a.nasinnya})",
+        r = [shapka(n=n, tema=f"випадкова вибірка (насіння {a.seed})",
                     k=len(ch), kandydat=kand),
              f"\n<!-- order_version:{versiya_naryadu(rich)} "
              f"rich:{int(rich)} -->\n"]
@@ -307,7 +307,7 @@ def vypadkova(a) -> int:
         (a.kudy / f"f-{n:02d}.md").write_text("\n".join(r) + "\n",
                                               encoding="utf-8")
     print(f"нарядів {n}, одиниць {len(vzyato)} з {len(usi)} у черзі F; "
-          f"насіння {a.nasinnya} → {a.kudy}")
+          f"насіння {a.seed} → {a.kudy}")
     return 0
 
 
@@ -328,7 +328,7 @@ def main() -> int:
     p.add_argument("--nasinnya", type=int, default=0,
                    help="насіння; обов'язкове разом із --vypadkovo")
     a = p.parse_args()
-    if a.vypadkovo and not a.nasinnya:
+    if a.vypadkovo and not a.seed:
         p.error("--vypadkovo без --nasinnya: дослід буде невідтворний")
     a.kudy.mkdir(parents=True, exist_ok=True)
 
@@ -340,7 +340,7 @@ def main() -> int:
         return vypadkova(a)
 
     za: dict[str, list[dict]] = collections.defaultdict(list)
-    for u in sample.odynyci("unchecked"):
+    for u in sample.units("unchecked"):
         if not RE_DOSYAZHNE.search(u["tekst"]):
             continue
         pref = u["src"].split("/")[-1][:2]

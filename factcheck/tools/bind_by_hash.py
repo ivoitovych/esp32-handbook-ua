@@ -72,13 +72,13 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 DOKAZY = ROOT / "factcheck" / "evidence"
 
 
-def zibraty() -> tuple[list[dict], dict[str, list[str]]]:
+def collect() -> tuple[list[dict], dict[str, list[str]]]:
     """Records with a stable key, and what each currently binds."""
     import factcheck
     import sample
 
-    odyn = [u for k in factcheck.ALL_CLASSES for u in sample.odynyci(k)]
-    zapysy: list[dict] = []
+    odyn = [u for k in factcheck.ALL_CLASSES for u in sample.units(k)]
+    records: list[dict] = []
     for f in sorted(DOKAZY.glob("*.yaml")):
         try:
             z = yaml.safe_load(f.read_text(encoding="utf-8")) or []
@@ -88,13 +88,13 @@ def zibraty() -> tuple[list[dict], dict[str, list[str]]]:
             if isinstance(r, dict):
                 r["_fayl"], r["_nomer"] = f.name, i
                 r["_klyuch"] = f"{f.name}::{i}"
-                zapysy.append(r)
+                records.append(r)
 
-    zv: dict[str, list[str]] = {z["_klyuch"]: [] for z in zapysy}
+    zv: dict[str, list[str]] = {z["_klyuch"]: [] for z in records}
     for u in odyn:
-        for z in factcheck.vsi_kandydaty(zapysy, u["sha"], u["tekst"]):
+        for z in factcheck.vsi_kandydaty(records, u["sha"], u["tekst"]):
             zv[z["_klyuch"]].append(u["sha"])
-    return zapysy, {k: sorted(set(v)) for k, v in zv.items()}
+    return records, {k: sorted(set(v)) for k, v in zv.items()}
 
 
 def komponenty(zv: dict[str, list[str]]) -> dict[str, str]:
@@ -133,7 +133,7 @@ def main() -> int:
     p.add_argument("--components", action="store_true")
     a = p.parse_args()
 
-    zapysy, zv = zibraty()
+    records, zv = collect()
     predst = komponenty(zv)
     rozmir = collections.Counter(predst.values())
 
@@ -152,7 +152,7 @@ def main() -> int:
             {p for p in predst.values() if rozmir[p] <= a.do},
             key=lambda p: sorted(k for k in predst if predst[k] == p)[0])
         # Уже переїхалі — пропускаємо, щоб партії йшли вперед.
-        gotovi = {z["_klyuch"] for z in zapysy if z.get("sha")}
+        gotovi = {z["_klyuch"] for z in records if z.get("sha")}
         rodyny = [p for p in rodyny
                   if not {k for k in predst if predst[k] == p} <= gotovi]
         if a.limit:
@@ -161,7 +161,7 @@ def main() -> int:
         print(f"родин узято {len(rodyny)}, записів {len(vybrani)} "
               f"(вже переїхало {len(gotovi)})")
     elif a.only:
-        vybrani = {z["_klyuch"] for z in zapysy if a.only in z["_fayl"]}
+        vybrani = {z["_klyuch"] for z in records if a.only in z["_fayl"]}
     else:
         print("вкажіть --only, --safe або --components")
         return 1
@@ -201,12 +201,12 @@ def main() -> int:
         return 0
 
     torknuly: dict[str, list] = {}
-    for z in zapysy:
+    for z in records:
         if z["_klyuch"] in perepysaty:
             torknuly.setdefault(z["_fayl"], []).append(z)
 
-    for imya, zap in torknuly.items():
-        f = DOKAZY / imya
+    for name, zap in torknuly.items():
+        f = DOKAZY / name
         vsi = yaml.safe_load(f.read_text(encoding="utf-8")) or []
         for z in zap:
             vsi[z["_nomer"]]["sha"] = perepysaty[z["_klyuch"]]
@@ -218,7 +218,7 @@ def main() -> int:
         f.write_text(shapka + yaml.safe_dump(vsi, allow_unicode=True,
                                              sort_keys=False, width=88),
                      encoding="utf-8")
-        print(f"  записано {imya}: {len(zap)} записів")
+        print(f"  записано {name}: {len(zap)} записів")
 
     print("\nтепер: factcheck/tools/snapshot.py <знімок> --zvirty — має бути нуль змін")
     return 0

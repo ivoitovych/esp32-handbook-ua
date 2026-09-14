@@ -84,7 +84,7 @@ PIDPYSY = {
 }
 
 
-def dzherela() -> list[Path]:
+def sources() -> list[Path]:
     """Каталоги вивантажень: з аргументів, інакше зі змінної середовища."""
     z_argv = [Path(a) for a in sys.argv[1:] if not a.startswith("-")]
     if z_argv:
@@ -93,10 +93,10 @@ def dzherela() -> list[Path]:
     return [Path(zi_seredovyshcha)] if zi_seredovyshcha else []
 
 
-def zibraty() -> tuple[list[dict], list[tuple[str, str]]]:
+def collect() -> tuple[list[dict], list[tuple[str, str]]]:
     zap: list[dict] = []
     bidy: list[tuple[str, str]] = []
-    for katalog in dzherela():
+    for katalog in sources():
         if not katalog.exists():
             continue
         for f in sorted(katalog.glob("*.yaml")):
@@ -137,7 +137,7 @@ def tretiy_shar() -> dict[str, str]:
         import layer3
     except ImportError:
         return {}
-    naslidky, _ = layer3.perevirka(True, [KANDYDATY])
+    naslidky, _ = layer3.check(True, [KANDYDATY])
     return {str(n.get("nazva")): str(n.get("stan")) for n in naslidky}
 
 
@@ -177,7 +177,7 @@ def zaholovok(**kw) -> str:
 
 
 def main() -> int:
-    zap, bidy = zibraty()
+    zap, bidy = collect()
     c = collections.Counter(str(z.get("verdykt", "?")) for z in zap)
 
     if "--korotko" in sys.argv:
@@ -217,16 +217,16 @@ def main() -> int:
         r.append("## Файли, що не розібралися\n")
         r.append("Пропущені, а не приховані: робота решти від цього не "
                  "зникає.\n")
-        for imya, chomu in bidy:
-            r.append(f"- `{imya}` — {chomu}")
+        for name, chomu in bidy:
+            r.append(f"- `{name}` — {chomu}")
         r.append("")
 
-    for verdykt in ("znayshov", "ideya", "spravdi-e"):
-        grupa = [z for z in zap if str(z.get("verdykt")) == verdykt]
+    for verdict in ("znayshov", "ideya", "spravdi-e"):
+        grupa = [z for z in zap if str(z.get("verdykt")) == verdict]
         if not grupa:
             continue
-        r.append(f"\n## {PIDPYSY[verdykt]} — {len(grupa)}\n")
-        if verdykt == "znayshov":
+        r.append(f"\n## {PIDPYSY[verdict]} — {len(grupa)}\n")
+        if verdict == "znayshov":
             r.append(f"З них третій шар витримали **{vystoyalo}**. Решта "
                      "лишається тут із позначкою: спростування помічника "
                      "теж результат, і ховати його нема за чим.\n")
@@ -240,7 +240,7 @@ def main() -> int:
                          f"| {z.get('syla','?')} "
                          f"| [`{korotko}`]({dz}) "
                          f"| {str(z.get('komentar','')).strip()[:110]} |")
-        elif verdykt == "ideya":
+        elif verdict == "ideya":
             r.append("| Одиниця | Де шукати |")
             r.append("|---|---|")
             for z in grupa:

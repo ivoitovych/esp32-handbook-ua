@@ -44,7 +44,7 @@ recorded here because the trap is evidently not learnable once.
 
     factcheck/tools/doc_kind.py              check
     factcheck/tools/doc_kind.py --label      write the missing labels
-    factcheck/tools/doc_kind.py --samoperevirka
+    factcheck/tools/doc_kind.py --self-check
 """
 from __future__ import annotations
 
@@ -139,9 +139,9 @@ def hto_pyshe() -> dict[str, set[str]]:
                     and n.func.attr == "write_text"):
                 tgt = ast.unparse(n.func.value)
                 m = re.search(RE_IMYA, tgt)
-                imya = stali.get(tgt) or (m.group(1) if m else None)
-                if imya:
-                    out.setdefault(imya, set()).add(p.stem)
+                name = stali.get(tgt) or (m.group(1) if m else None)
+                if name:
+                    out.setdefault(name, set()).add(p.stem)
     return out
 
 
@@ -214,7 +214,7 @@ def poznaka(p: pathlib.Path) -> tuple[str, str] | None:
     return ("generated", z.group(0)) if z else None
 
 
-def perevirka() -> list[str]:
+def check() -> list[str]:
     pyshe = hto_pyshe()
     bidy: list[str] = []
     for p in sorted(dokumenty()):
@@ -237,8 +237,8 @@ def perevirka() -> list[str]:
     # Обидві теки, бо ім'я не визначає файл: `README.md` є і в корені, і
     # в `factcheck/`. Шукати лише в одній означало б мовчки не перевірити
     # другу — і саме так корінь і прожив поза перевіркою досі.
-    for imya, tuly in sorted(pyshe.items()):
-        for p in (FC / imya, ROOT / imya):
+    for name, tuly in sorted(pyshe.items()):
+        for p in (FC / name, ROOT / name):
             if not p.exists():
                 continue
             ye = poznaka(p)
@@ -261,24 +261,24 @@ def rozstavyty() -> int:
                      f"{', '.join(f'`tools/{t}.py`' for t in sorted(pyshe[p.name]))}"
                      f"; editing it by hand is wasted work")
         t = p.read_text(encoding="utf-8")
-        ryadky = t.split("\n")
+        lines = t.split("\n")
         # Після заголовка першого рівня, якщо він є.
-        i = 1 if ryadky and ryadky[0].startswith("# ") else 0
-        ryadky.insert(i, f"\n> **{rid}** — {hvist}")
-        p.write_text("\n".join(ryadky), encoding="utf-8")
+        i = 1 if lines and lines[0].startswith("# ") else 0
+        lines.insert(i, f"\n> **{rid}** — {hvist}")
+        p.write_text("\n".join(lines), encoding="utf-8")
         n += 1
         print(f"  {rid:<12} {nazva(p)}")
     print(f"позначено документів: {n}")
     return 0
 
 
-def samoperevirka() -> int:
+def self_check() -> int:
     pomylok = 0
 
-    def probа(imya, umova):
+    def probа(name, umova):
         nonlocal pomylok
         pomylok += not umova
-        print(f"  {'✓' if umova else '✗'} {imya}")
+        print(f"  {'✓' if umova else '✗'} {name}")
 
     pyshe = hto_pyshe()
     probа(f"породжені знайдено ({len(pyshe)})", len(pyshe) >= 10)
@@ -308,14 +308,14 @@ def samoperevirka() -> int:
 def main() -> int:
     a = argparse.ArgumentParser()
     a.add_argument("--label", action="store_true")
-    a.add_argument("--samoperevirka", action="store_true")
+    a.add_argument("--self-check", action="store_true")
     a.add_argument("--suvoro", action="store_true")
     o = a.parse_args()
-    if o.samoperevirka:
-        return samoperevirka()
+    if o.self_check:
+        return self_check()
     if o.label:
         return rozstavyty()
-    b = perevirka()
+    b = check()
     print(f"doc_kind: документів {len(dokumenty())}, "
           f"порушень {len(b)}")
     for x in b[:20]:

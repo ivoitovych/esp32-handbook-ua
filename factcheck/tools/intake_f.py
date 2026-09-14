@@ -56,7 +56,7 @@ import yaml
 
 import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
-KESH = ROOT / "factcheck" / "source-cache"
+CACHE = ROOT / "factcheck" / "source-cache"
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 KNYHA = re.compile(
@@ -130,15 +130,15 @@ def imya_dlya(url: str) -> str:
     return f"{hashlib.sha256(url.encode()).hexdigest()[:8]}-{baza}"[:96]
 
 
-def dodaty_v_manifest(imya: str, sha: str, rozmir: int, url: str) -> None:
+def dodaty_v_manifest(name: str, sha: str, rozmir: int, url: str) -> None:
     """Восьмий закон. Викликається ПЕРЕД звіркою тексту, не після."""
-    m = KESH / "MANIFEST.md"
+    m = CACHE / "MANIFEST.md"
     t = m.read_text(encoding="utf-8")
-    if f"| `{imya}` |" in t:
+    if f"| `{name}` |" in t:
         return
-    ryadky = re.findall(r"^\| `[^`]+` \| `[0-9a-f]{64}` \|[^\n]*$", t, re.M)
-    novyy = f"| `{imya}` | `{sha}` | {rozmir} | 2026-08-28 | <{url}> |"
-    m.write_text(t.replace(ryadky[-1], ryadky[-1] + "\n" + novyy),
+    lines = re.findall(r"^\| `[^`]+` \| `[0-9a-f]{64}` \|[^\n]*$", t, re.M)
+    novyy = f"| `{name}` | `{sha}` | {rozmir} | 2026-08-28 | <{url}> |"
+    m.write_text(t.replace(lines[-1], lines[-1] + "\n" + novyy),
                  encoding="utf-8")
 
 
@@ -146,7 +146,7 @@ def dokument(url: str, kachaty: bool) -> str | None:
     """Текст документа за URL. Качає, якщо його ще немає в кеші."""
     import layer3
     import intake_wave3
-    cil = KESH / imya_dlya(url)
+    cil = CACHE / imya_dlya(url)
     if not cil.exists():
         if not kachaty or not layer3.zavantazhyty(url, cil):
             return None
@@ -166,10 +166,10 @@ def self_check() -> int:
         import layer3, intake_wave3  # noqa: F401
     except Exception as e:
         bidy.append("import: %s" % str(e)[:70])
-    if not KESH.exists():
-        bidy.append("кеш джерел не там: %s" % KESH)
-    if not (KESH / "MANIFEST.md").exists():
-        bidy.append("маніфесту немає в %s" % KESH)
+    if not CACHE.exists():
+        bidy.append("кеш джерел не там: %s" % CACHE)
+    if not (CACHE / "MANIFEST.md").exists():
+        bidy.append("маніфесту немає в %s" % CACHE)
     try:
         with tempfile.TemporaryDirectory() as d:
             t = pathlib.Path(d)
@@ -428,7 +428,7 @@ def zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy) -> None:
         f.write_text(LEDGER_SHAPKA, encoding="utf-8")
     t = f.read_text(encoding="utf-8")
     samo = sum(1 for _, rid, _ in bidy if "САМОПОСИЛАННЯ" in rid)
-    ryadok = ("| %s | `%s` | %s | %s | %d | %s | %d | %d | %d | %d | %d | %d |"
+    line = ("| %s | `%s` | %s | %s | %d | %s | %d | %d | %d | %d | %d | %d |"
               % (a.teka.name,
                  vyb.get("task_version", "?"),
                  vyb.get("nasinnya", "?"),
@@ -442,8 +442,8 @@ def zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy) -> None:
                  samo,
                  len(bidy)))
     if a.note:
-        ryadok += "\n\n> `%s`: %s\n" % (a.teka.name, a.note)
-    f.write_text(t.rstrip("\n") + "\n" + ryadok + "\n", encoding="utf-8")
+        line += "\n\n> `%s`: %s\n" % (a.teka.name, a.note)
+    f.write_text(t.rstrip("\n") + "\n" + line + "\n", encoding="utf-8")
     print("\nдописано в factcheck/reports/RUNS.md")
 
 

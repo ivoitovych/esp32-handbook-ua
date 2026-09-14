@@ -35,7 +35,7 @@ import sys
 from pathlib import Path
 
 from repo import ROOT  # noqa: E402  (root is found, not counted)
-KESH = ROOT / "factcheck" / "source-cache"
+CACHE = ROOT / "factcheck" / "source-cache"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import yaml
@@ -68,14 +68,14 @@ def normal(s: str) -> str:
     return s.strip().lower()
 
 
-def tekst_fayla(imya: str) -> str | None:
+def tekst_fayla(name: str) -> str | None:
     # Помічник пише то `ds18b20.pdf`, то `source-cache/ds18b20.pdf` —
     # у наряді ім'я стоїть із текою. Обидва варіанти правильні по суті,
     # і відхиляти за це означало б рахувати чесну роботу за брехню.
-    imya = imya.strip().split("/")[-1]
-    if imya in _kesh_tekst:
-        return _kesh_tekst[imya]
-    p = KESH / imya
+    name = name.strip().split("/")[-1]
+    if name in _kesh_tekst:
+        return _kesh_tekst[name]
+    p = CACHE / name
     if not p.exists():
         return None
     # `layer3.tekst_dzherela` віддає PDF у двох виглядах одразу:
@@ -86,32 +86,32 @@ def tekst_fayla(imya: str) -> str | None:
     t = layer3.tekst_dzherela(p)
     if t is None:
         return None
-    _kesh_tekst[imya] = normal(t)
-    return _kesh_tekst[imya]
+    _kesh_tekst[name] = normal(t)
+    return _kesh_tekst[name]
 
 
-def perevirka(shlyakh: Path) -> list[tuple[str, str]]:
+def check(shlyakh: Path) -> list[tuple[str, str]]:
     bidy = []
     try:
-        zapysy = yaml.safe_load(shlyakh.read_text(encoding="utf-8")) or []
+        records = yaml.safe_load(shlyakh.read_text(encoding="utf-8")) or []
     except Exception as e:
         return [("БИТИЙ YAML", str(e).split("\n")[0][:90])]
-    for z in zapysy:
+    for z in records:
         if not isinstance(z, dict):
             bidy.append(("НЕ ЗАПИС", str(z)[:60]))
             continue
         ident = str(z.get("id", z.get("title", "?")))[:40]
-        verdykt = str(z.get("verdykt", "")).strip()
+        verdict = str(z.get("verdykt", "")).strip()
         cyt = str(z.get("quote", "")).strip()
         fayl = str(z.get("fayl", "")).strip()
 
-        if verdykt not in ("pidtverdzheno", "sperechayetsya",
+        if verdict not in ("pidtverdzheno", "sperechayetsya",
                            "ne_znayshov", "nedosyazhne"):
-            bidy.append(("ВЕРДИКТ НЕВІДОМИЙ: " + verdykt[:30], ident))
+            bidy.append(("ВЕРДИКТ НЕВІДОМИЙ: " + verdict[:30], ident))
             continue
-        if verdykt in ("ne_znayshov", "nedosyazhne"):
+        if verdict in ("ne_znayshov", "nedosyazhne"):
             if cyt:
-                bidy.append(("ЦИТАТА ПРИ ВЕРДИКТІ " + verdykt, ident))
+                bidy.append(("ЦИТАТА ПРИ ВЕРДИКТІ " + verdict, ident))
                 continue
             dyv = str(z.get("dyvyvsya", "")).strip()
             if not dyv:
@@ -120,13 +120,13 @@ def perevirka(shlyakh: Path) -> list[tuple[str, str]]:
             # У полі має стояти ім'я реального файлу кешу. Без цієї
             # перевірки поле заповнюється будь-чим і не коштує нічого.
             nazvano = [w.strip(" ,;:'\"") for w in re.split(r"[\s,;]+", dyv)]
-            if not any((KESH / w.split("/")[-1]).exists()
+            if not any((CACHE / w.split("/")[-1]).exists()
                        for w in nazvano if w):
                 bidy.append(("dyvyvsya НЕ НАЗИВАЄ ФАЙЛУ З КЕШУ: "
                              + dyv[:40], ident))
             continue
         if not cyt:
-            bidy.append(("%s БЕЗ ЦИТАТИ" % verdykt.upper(), ident))
+            bidy.append(("%s БЕЗ ЦИТАТИ" % verdict.upper(), ident))
             continue
         if not fayl:
             bidy.append(("ЦИТАТА БЕЗ НАЗВАНОГО ФАЙЛУ", ident))
@@ -147,7 +147,7 @@ def main(argv: list[str]) -> int:
     for s in shlyakhy:
         if not s.exists():
             continue
-        b = perevirka(s)
+        b = check(s)
         try:
             n = len(yaml.safe_load(s.read_text(encoding="utf-8")) or [])
         except Exception:

@@ -47,8 +47,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from repo import ROOT  # noqa: E402  (root is found, not counted)
-KESH = ROOT / "factcheck" / "source-cache"
-MANIFEST = KESH / "MANIFEST.md"
+CACHE = ROOT / "factcheck" / "source-cache"
+MANIFEST = CACHE / "MANIFEST.md"
 MEZHA_GB = 1.0
 
 ZAHOLOVOK = """# Кеш зовнішніх джерел — маніфест
@@ -79,7 +79,7 @@ def sha256(p: Path) -> str:
     return h.hexdigest()
 
 
-def zapysy() -> dict[str, dict]:
+def records() -> dict[str, dict]:
     if not MANIFEST.exists():
         return {}
     out = {}
@@ -91,11 +91,11 @@ def zapysy() -> dict[str, dict]:
     return out
 
 
-def zapysaty(z: dict[str, dict]) -> None:
+def write_out(z: dict[str, dict]) -> None:
     r = [ZAHOLOVOK.rstrip("\n")]
-    for imya in sorted(z):
-        d = z[imya]
-        r.append(f"| `{imya}` | `{d['sha']}` | {d['rozmir']} | {d['koly']} "
+    for name in sorted(z):
+        d = z[name]
+        r.append(f"| `{name}` | `{d['sha']}` | {d['rozmir']} | {d['koly']} "
                  f"| <{d['url']}> |")
     vsjogo = sum(d["rozmir"] for d in z.values())
     r.append(f"\nФайлів: **{len(z)}**, разом **{vsjogo / 1e6:.1f} МБ** "
@@ -103,7 +103,7 @@ def zapysaty(z: dict[str, dict]) -> None:
     MANIFEST.write_text("\n".join(r) + "\n", encoding="utf-8")
 
 
-def zavantazhyty(url: str, imya: str | None) -> int:
+def zavantazhyty(url: str, name: str | None) -> int:
     """Завантажити й записати в маніфест.
 
     ## Ім'я береться з URL цілком, а не з останнього сегмента
@@ -128,62 +128,62 @@ def zavantazhyty(url: str, imya: str | None) -> int:
     який уже мають 274 файли в кеші (`0015e29e-esp_log.h`) — тобто
     домовленість існувала, її просто не було в коді.
     """
-    KESH.mkdir(exist_ok=True)
-    if imya is None:
+    CACHE.mkdir(exist_ok=True)
+    if name is None:
         bazove = re.sub(r"[^\w.-]", "_", url.rsplit("/", 1)[-1] or "bez-imeni")
-        imya = f"{hashlib.sha256(url.encode()).hexdigest()[:8]}-{bazove}"
-    cil = KESH / imya
-    z = zapysy()
+        name = f"{hashlib.sha256(url.encode()).hexdigest()[:8]}-{bazove}"
+    cil = CACHE / name
+    z = records()
     # Той самий URL перекачати можна; чужий запис затерти — ні.
-    if imya in z and z[imya].get("url") != url:
-        print(f"   ✗ ім'я `{imya}` вже належить іншому URL:\n"
-              f"       у маніфесті: {z[imya].get('url')}\n"
+    if name in z and z[name].get("url") != url:
+        print(f"   ✗ ім'я `{name}` вже належить іншому URL:\n"
+              f"       у маніфесті: {z[name].get('url')}\n"
               f"       качаємо:     {url}")
         return 1
     r = subprocess.run(["curl", "-sSL", "--fail", "-o", str(cil), url])
     if r.returncode != 0 or not cil.exists():
         print(f"   ✗ не завантажилося: {url}")
         return 1
-    z[imya] = dict(sha=sha256(cil), rozmir=cil.stat().st_size,
+    z[name] = dict(sha=sha256(cil), rozmir=cil.stat().st_size,
                    koly=datetime.now(timezone.utc).strftime("%Y-%m-%d"),
                    url=url)
-    zapysaty(z)
-    print(f"   ✓ {imya}  {cil.stat().st_size / 1e6:.2f} МБ")
+    write_out(z)
+    print(f"   ✓ {name}  {cil.stat().st_size / 1e6:.2f} МБ")
     rozmir()
     return 0
 
 
 def perelik() -> int:
-    z = zapysy()
+    z = records()
     if not z:
         print("kesh: порожньо")
         return 0
-    for imya in sorted(z):
-        d = z[imya]
-        yе = "на місці" if (KESH / imya).exists() else "**немає локально**"
-        print(f"  {d['rozmir'] / 1e6:8.2f} МБ  {imya:44} {yе}")
+    for name in sorted(z):
+        d = z[name]
+        yе = "на місці" if (CACHE / name).exists() else "**немає локально**"
+        print(f"  {d['rozmir'] / 1e6:8.2f} МБ  {name:44} {yе}")
     return rozmir()
 
 
-def zvirka() -> int:
-    z = zapysy()
+def compare() -> int:
+    z = records()
     bidy = 0
     nemaye = 0
-    for imya, d in sorted(z.items()):
-        p = KESH / imya
+    for name, d in sorted(z.items()):
+        p = CACHE / name
         if not p.exists():
-            print(f"   · {imya}: немає локально — качати за URL із маніфесту")
+            print(f"   · {name}: немає локально — качати за URL із маніфесту")
             nemaye += 1
             continue
         s = sha256(p)
         if s != d["sha"]:
-            print(f"   ✗ {imya}: sha256 не збігається з маніфестом")
+            print(f"   ✗ {name}: sha256 не збігається з маніфестом")
             bidy += 1
         else:
-            print(f"   ✓ {imya}")
+            print(f"   ✓ {name}")
     bezridni = unlisted_in_manifest(z)
-    for imya, nazva in bezridni:
-        print(f"   ✗ {imya}: доказ «{nazva[:44]}» цитує файл, якого в "
+    for name, nazva in bezridni:
+        print(f"   ✗ {name}: доказ «{nazva[:44]}» цитує файл, якого в "
               f"маніфесті немає")
     bidy += len(bezridni)
     # Відсутній файл — не біда: кеш локальний, маніфест каже, як його
@@ -235,17 +235,17 @@ def unlisted_in_manifest(z: dict) -> list[tuple[str, str]]:
             zap = yaml.safe_load(f.read_text(encoding="utf-8")) or []
         except Exception:
             continue
-        for zapys in zap:
-            if not isinstance(zapys, dict):
+        for record in zap:
+            if not isinstance(record, dict):
                 continue
-            for url in layer3.dzherela_zapysu(zapys):
+            for url in layer3.dzherela_zapysu(record):
                 try:
-                    imya = layer3.imya_dlya(url)
+                    name = layer3.imya_dlya(url)
                 except Exception:
                     continue
-                if (KESH / imya).exists() and imya not in z:
-                    nazva = str(zapys.get("nazva") or zapys.get("title") or "?")
-                    bidy.append((imya, nazva))
+                if (CACHE / name).exists() and name not in z:
+                    nazva = str(record.get("nazva") or record.get("title") or "?")
+                    bidy.append((name, nazva))
     return bidy
 
 
@@ -259,7 +259,7 @@ def _layer3():
 def proba() -> int:
     """Показ на зіпсованому вході: перевірка, що не спрацювала жодного
     разу, невідрізненна від перевірки, якої немає."""
-    z = zapysy()
+    z = records()
     spravzhni = unlisted_in_manifest(z)
     print(f"   {'✓' if not spravzhni else '✗ ПРОВАЛ'} чистий маніфест: "
           f"тривог {len(spravzhni)}, очікувано 0")
@@ -272,16 +272,16 @@ def proba() -> int:
             zap = yaml.safe_load(f.read_text(encoding="utf-8")) or []
         except Exception:
             continue
-        for zapys in zap:
-            if not isinstance(zapys, dict):
+        for record in zap:
+            if not isinstance(record, dict):
                 continue
-            for url in layer3.dzherela_zapysu(zapys):
+            for url in layer3.dzherela_zapysu(record):
                 try:
-                    imya = layer3.imya_dlya(url)
+                    name = layer3.imya_dlya(url)
                 except Exception:
                     continue
-                if imya in z and (KESH / imya).exists():
-                    vzhytyy = imya
+                if name in z and (CACHE / name).exists():
+                    vzhytyy = name
                     break
             if vzhytyy:
                 break
@@ -298,8 +298,8 @@ def proba() -> int:
     # Лічильник відсутніх: рахуємо маніфест проти диска на копії, де
     # один наявний файл оголошено відсутнім. Без цієї проби лічильник
     # мовчав би так само переконливо, як мовчав `continue` до нього.
-    vidsutni = sum(1 for k in z if not (KESH / k).exists())
-    zbilsheno = sum(1 for k in z if not (KESH / k).exists() or k == vzhytyy)
+    vidsutni = sum(1 for k in z if not (CACHE / k).exists())
+    zbilsheno = sum(1 for k in z if not (CACHE / k).exists() or k == vzhytyy)
     lich = zbilsheno == vidsutni + 1
     print(f"   {'✓' if lich else '✗ ПРОВАЛ'} лічильник відсутніх: "
           f"{vidsutni} → {zbilsheno}, коли наявний файл оголосити зниклим")
@@ -307,10 +307,10 @@ def proba() -> int:
 
 
 def rozmir() -> int:
-    if not KESH.exists():
+    if not CACHE.exists():
         print("kesh: каталогу немає")
         return 0
-    b = sum(p.stat().st_size for p in KESH.rglob("*") if p.is_file())
+    b = sum(p.stat().st_size for p in CACHE.rglob("*") if p.is_file())
     gb = b / 1e9
     print(f"cache: {gb:.3f} ГБ із {MEZHA_GB} ГБ")
     if gb > MEZHA_GB:
@@ -348,7 +348,7 @@ def vidtvornist() -> int:
     import collections
     import yaml
 
-    z = zapysy()
+    z = records()
     man_url = {d["url"] for d in z.values()}
     man_bez = {(n.split("-", 1)[1] if re.match(r"^[0-9a-f]{8}-", n) else n)
                for n in z}
@@ -395,8 +395,8 @@ if __name__ == "__main__":
     if not a or a[0] == "--list":
         sys.exit(perelik())
     if a[0] == "--check":
-        sys.exit(zvirka())
-    if a[0] == "--samoperevirka":
+        sys.exit(compare())
+    if a[0] == "--self-check":
         sys.exit(proba())
     if a[0] == "--size":
         sys.exit(rozmir())
@@ -406,7 +406,7 @@ if __name__ == "__main__":
     # адреса, і на успіху дописав би в маніфест рядок з іменем ключа.
     if a[0].startswith("--"):
         print(f"cache: невідомий ключ `{a[0]}`\n"
-              f"   --list --check --samoperevirka --size --vidtvornist\n"
+              f"   --list --check --self-check --size --vidtvornist\n"
               f"   або URL (і, необов'язково, ім'я файлу)")
         sys.exit(2)
     sys.exit(zavantazhyty(a[0], a[1] if len(a) > 1 else None))

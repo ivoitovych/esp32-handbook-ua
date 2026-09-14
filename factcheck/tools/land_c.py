@@ -65,11 +65,11 @@ def ekranuy(s: str) -> str:
 
 
 def vzirets_dlya(tekst: str, vsi: list[str]) -> str | None:
-    slova = tekst.split()
-    if len(slova) < MIN_SLIV:
+    words = tekst.split()
+    if len(words) < MIN_SLIV:
         return None
-    for k in range(MIN_SLIV, min(len(slova), MAX_SLIV) + 1):
-        vz = ekranuy(" ".join(slova[:k]))
+    for k in range(MIN_SLIV, min(len(words), MAX_SLIV) + 1):
+        vz = ekranuy(" ".join(words[:k]))
         r = re.compile(vz)
         if sum(1 for t in vsi if r.search(t)) == 1:
             return vz
@@ -112,7 +112,7 @@ def main() -> int:
 
     reyestr: dict[str, dict] = {}
     for klas in factcheck.ALL_CLASSES:
-        for u in sample.odynyci(klas):
+        for u in sample.units(klas):
             u["klas"] = klas
             reyestr[u["id"]] = u
     vsi = [u["tekst"] for u in reyestr.values()]
@@ -173,7 +173,7 @@ def main() -> int:
         return 0
 
     kudy = ROOT / "factcheck" / "evidence"
-    for fayl, zapys in sorted(posadka.items()):
+    for fayl, record in sorted(posadka.items()):
         shapka = (
             f"# Черга з названим, але недосяжним джерелом — {fayl}.\n"
             f"#\n"
@@ -182,7 +182,7 @@ def main() -> int:
             f"# Чесніше за `F` («ніхто не дійшов») рівно на одне —\n"
             f"# тут відомо, що саме замовляти.\n\n")
         (kudy / f"queue-c-{fayl}.yaml").write_text(
-            shapka + yaml.safe_dump(zapys, allow_unicode=True,
+            shapka + yaml.safe_dump(record, allow_unicode=True,
                                     sort_keys=False, width=88),
             encoding="utf-8")
     print(f"записано файлів: {len(posadka)} → {kudy}")

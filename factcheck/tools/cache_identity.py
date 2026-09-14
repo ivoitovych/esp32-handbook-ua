@@ -41,18 +41,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import layer3  # noqa: E402
 
 
-def varianty(imya: str) -> set[str]:
-    yadro = re.sub(r"^[0-9a-f]{6,10}-", "", imya).rsplit(".", 1)[0].lower()
+def varianty(name: str) -> set[str]:
+    yadro = re.sub(r"^[0-9a-f]{6,10}-", "", name).rsplit(".", 1)[0].lower()
     return {yadro, yadro.replace("-", ""), yadro.replace("_", "-"),
             re.sub(r"[-_]", "", yadro), yadro.split("_")[0],
             yadro.split("-")[0]}
 
 
 def main(argv: list[str]) -> int:
-    kesh = Path(argv[1]) if len(argv) > 1 else ROOT / "factcheck" / "source-cache"
+    cache = Path(argv[1]) if len(argv) > 1 else ROOT / "factcheck" / "source-cache"
     pidozr = []
     vsyoho = 0
-    for p in sorted(kesh.glob("*.pdf")):
+    for p in sorted(cache.glob("*.pdf")):
         vsyoho += 1
         t = (layer3.tekst_dzherela(p) or "").lower()
         if not t:

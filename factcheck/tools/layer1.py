@@ -121,7 +121,7 @@ VIKNO = 8      # мінімум рядків книги навколо запи�
 VIKNO_MEZHA = 240   # стеля, щоб вікно не виродилося у весь файл
 
 
-def vikno_dlya(ryadky: list[str], ln: int, tverd: str) -> str:
+def vikno_dlya(lines: list[str], ln: int, tverd: str) -> str:
     """Вікно книги, **розміряне під одиницю**, а не під сталу.
 
     Стале вікно на вісім рядків мовчки перетворювало довгу одиницю на
@@ -144,12 +144,12 @@ def vikno_dlya(ryadky: list[str], ln: int, tverd: str) -> str:
     """
     i = max(0, ln - 1 - 1)
     treba = len(tverd)
-    kin = min(len(ryadky), i + VIKNO)
-    while kin < len(ryadky) and kin - i < VIKNO_MEZHA:
-        if len(normal(" ".join(ryadky[i:kin]))) >= treba + 40:
+    kin = min(len(lines), i + VIKNO)
+    while kin < len(lines) and kin - i < VIKNO_MEZHA:
+        if len(normal(" ".join(lines[i:kin]))) >= treba + 40:
             break
         kin += 1
-    return normal(" ".join(ryadky[i:kin]))
+    return normal(" ".join(lines[i:kin]))
 
 
 def normal(s: str) -> str:
@@ -201,8 +201,8 @@ def main(argv: list[str]) -> int:
                     knyha[src] = (p.read_text(encoding="utf-8").split("\n")
                                   if p.exists() else [])
                     cile[src] = normal(" ".join(knyha[src]))
-                ryadky = knyha[src]
-                if not ryadky:
+                lines = knyha[src]
+                if not lines:
                     nemaye.append((ident, "ФАЙЛУ НЕМАЄ", src))
                     continue
 
@@ -212,7 +212,7 @@ def main(argv: list[str]) -> int:
                 # Вікно розміряне під **довшу** з двох речей: самого
                 # твердження і дослівного блоку комірки.
                 vikno = vikno_dlya(
-                    ryadky, ln,
+                    lines, ln,
                     max(tverd, normal(m["doslivno"] or ""), key=len))
 
                 if vyd == "komirka":

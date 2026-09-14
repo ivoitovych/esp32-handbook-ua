@@ -72,7 +72,7 @@ RE_FAYL = re.compile(r"[\w-]\.(md|py|yaml|json|rst|txt)$")
 TEKY = ("", "factcheck", "tools", "zvyazok") + config.groups()
 
 
-def isnuye(imya: str) -> bool:
+def isnuye(name: str) -> bool:
     """Чи існує файл із таким іменем — у теці або **під нею**.
 
     Плаский пошук по коренях був правильний рівно доти, доки теки були
@@ -85,20 +85,20 @@ def isnuye(imya: str) -> bool:
     них — **шлях, зібраний із припущення про глибину**. Тека може
     поглибшати; ім'я від цього не змінюється.
     """
-    if "*" in imya or "?" in imya:          # глоб — не ім'я одного файлу
+    if "*" in name or "?" in name:          # глоб — не ім'я одного файлу
         return True
     for t in TEKY:
         koren = ROOT / t
-        if (koren / imya).exists():
+        if (koren / name).exists():
             return True
-        if koren.is_dir() and any(koren.rglob(imya)):
+        if koren.is_dir() and any(koren.rglob(name)):
             return True
     return False
 
 
-def perevirka(dzherelo: dict[str, str] | None = None) -> list[str]:
+def check(source: dict[str, str] | None = None) -> list[str]:
     bidy: list[str] = []
-    fajly = ({Path(k): v for k, v in dzherelo.items()} if dzherelo
+    fajly = ({Path(k): v for k, v in source.items()} if source
              else {f: f.read_text(encoding="utf-8")
                    for f in repo.tool_files()})
     for f, t in fajly.items():
@@ -145,7 +145,7 @@ def proba() -> int:
     ]
     provaliv = 0
     for nazva, tekst, ocik in vypadky:
-        b = perevirka({"proba.py": tekst})
+        b = check({"proba.py": tekst})
         ok = bool(b) == ocik
         print("   %s %-34s expected %-5s got %s"
               % ("✓" if ok else "✗ FAIL", nazva, ocik, bool(b)))
@@ -157,7 +157,7 @@ def proba() -> int:
 def main() -> int:
     if "--proba" in sys.argv:
         return proba()
-    bidy = perevirka()
+    bidy = check()
     for b in bidy:
         print("   ✗ " + b)
     print("\nname_lists: %d problems" % len(bidy))

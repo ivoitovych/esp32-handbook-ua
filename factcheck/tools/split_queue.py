@@ -57,7 +57,7 @@ RE_F = re.compile(
     + factcheck.RE_TVERDZHENNYA.pattern)
 
 
-def zibraty() -> tuple[list[dict], dict[str, list[dict]]]:
+def collect() -> tuple[list[dict], dict[str, list[dict]]]:
     vsi: list[dict] = []
     for g in GRUPY:
         for f in sorted((config.cards_root() / g).glob("*.md")):
@@ -130,7 +130,7 @@ def podil_za_fajlamy(klasy: tuple[str, ...]) -> tuple[list[str], list[str], int,
     import sample
     za: dict[str, int] = collections.Counter()
     for k in klasy:
-        for u in sample.odynyci(k):
+        for u in sample.units(k):
             za[u["src"].split("/")[-1].split(":")[0]] += 1
     m1: list[str] = []
     m2: list[str] = []
@@ -159,7 +159,7 @@ def podil_e() -> tuple[list[str], list[str], int, int]:
     """
     import sample
     za: dict[str, int] = collections.Counter(
-        u["src"].split("/")[-1].split(":")[0] for u in sample.odynyci("no-external-signal"))
+        u["src"].split("/")[-1].split(":")[0] for u in sample.units("no-external-signal"))
     m1: list[str] = []
     m2: list[str] = []
     s1 = s2 = 0
@@ -182,7 +182,7 @@ def remonty() -> list[tuple[str, str, int, str]]:
     itself is worse than a smaller honest one.
     """
     import layer3
-    naslidky, _ = layer3.perevirka(False)
+    naslidky, _ = layer3.check(False)
     lich = collections.Counter(str(n.get("stan")) for n in naslidky)
     return [
         ("both", "the quote does not match", lich.get("ne_znaydeno", 0),
@@ -199,7 +199,7 @@ def remonty() -> list[tuple[str, str, int, str]]:
 
 
 def zvedennya() -> int:
-    vsi, rozklad = zibraty()
+    vsi, rozklad = collect()
     print(f"unchecked units: {len(vsi)}\n")
     for hto, klyuch, opys, _ in BUCKETS:
         k = f"{hto}-{klyuch}"
@@ -224,7 +224,7 @@ def zvedennya() -> int:
 
 
 def naryad() -> int:
-    vsi, rozklad = zibraty()
+    vsi, rozklad = collect()
     m1 = sum(len(v) for k, v in rozklad.items() if k.startswith("M1"))
     m2 = sum(len(v) for k, v in rozklad.items() if k.startswith("M2"))
     r = [

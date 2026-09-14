@@ -81,8 +81,8 @@ def simeystva_fajlu(text: str) -> set[str]:
         nyzhche = ln.lower()
         if not any(k in nyzhche for k in ("devkit", "esp32 classic", "esp32-c", "esp32-s")):
             continue
-        for sim, slova in NAZVY.items():
-            if any(s.lower() in nyzhche for s in slova):
+        for sim, words in NAZVY.items():
+            if any(s.lower() in nyzhche for s in words):
                 out.add(sim)
     return out
 
@@ -92,9 +92,9 @@ def kolonky(zagolovok: str) -> dict[int, str]:
     out = {}
     for i, k in enumerate(zagolovok.strip().strip("|").split("|")):
         nyzhche = k.strip().lower()
-        for sim, slova in NAZVY.items():
+        for sim, words in NAZVY.items():
             if any(re.search(rf"(^|\W){re.escape(s.lower())}(\W|$)", nyzhche)
-                   for s in slova):
+                   for s in words):
                 out[i] = sim
     return out
 
@@ -114,47 +114,47 @@ def main() -> int:
             vynyatok = False                  # абзац пояснює відсутність піна
             bulo_ifdef: set[str] = set()      # що вже перебрали в цьому #if
 
-            for ln, ryadok in enumerate(text.split("\n"), 1):
-                m = RE_IFDEF.search(ryadok)
+            for ln, line in enumerate(text.split("\n"), 1):
+                m = RE_IFDEF.search(line)
                 if m:
                     ifdef = {m.group(1)}
                     bulo_ifdef |= ifdef
                     continue
-                if RE_ELSE.match(ryadok) and bulo_ifdef:
+                if RE_ELSE.match(line) and bulo_ifdef:
                     # Гілка #else — усе, що файл обіцяє, крім уже перебраного.
                     ifdef = (fajlovi or set(SIMEYSTVA)) - bulo_ifdef
                     continue
-                if RE_ENDIF.match(ryadok):
+                if RE_ENDIF.match(line):
                     ifdef, bulo_ifdef = None, set()
                     continue
 
-                if ryadok.startswith("|"):
-                    if re.fullmatch(r"\|[\s|:-]+\|?", ryadok.strip()):
+                if line.startswith("|"):
+                    if re.fullmatch(r"\|[\s|:-]+\|?", line.strip()):
                         pass                      # роздільник — заголовок вище
                     elif not zag:
-                        zag = kolonky(ryadok)
+                        zag = kolonky(line)
                 else:
                     zag = {}
 
                 # Рядок, який стверджує відсутність піна, — не помилка,
                 # а якраз те попередження, заради якого перевірка існує.
-                if re.search(r"не існу|немає пін|немає GPIO|бути не може|вирізає", ryadok):
+                if re.search(r"не існу|немає пін|немає GPIO|бути не може|вирізає", line):
                     # Виняток діє до кінця абзацу: пояснення «GPIO22 на S3
                     # немає» триває кілька рядків і повторює те саме число.
                     vynyatok = True
                     ostannij = None
                     continue
-                if not ryadok.strip():
+                if not line.strip():
                     ostannij, vynyatok = None, False
                     continue
                 if vynyatok:
                     continue
 
                 markery_poz = [(m.start(), m.group(1))
-                               for m in RE_MARKER.finditer(ryadok)]
-                pidpysy = [(m.start(), m.group(1)) for m in RE_PIDPYS.finditer(ryadok)]
+                               for m in RE_MARKER.finditer(line)]
+                pidpysy = [(m.start(), m.group(1)) for m in RE_PIDPYS.finditer(line)]
                 nomery = [(m.start(), int(m.group(1) or m.group(2)))
-                          for m in RE_GPIO.finditer(ryadok)]
+                          for m in RE_GPIO.finditer(line)]
 
                 # Область для чисел цього рядка береться з попереднього
                 # стану: маркер, що стоїть **правіше** числа, стосується
@@ -176,12 +176,12 @@ def main() -> int:
                     elif [s2 for p2, s2 in markery_poz if p2 < poz]:
                         oblast = {[s2 for p2, s2 in markery_poz if p2 < poz][-1]}
                         chomu = "маркер"
-                    elif markery_poz and ryadok.startswith("|"):
+                    elif markery_poz and line.startswith("|"):
                         # Рядок таблиці: мітка сімейства стоїть у першій
                         # комірці й діє на весь рядок.
                         oblast, chomu = {markery_poz[0][1]}, "рядок таблиці"
-                    elif zag and ryadok.startswith("|"):
-                        komirky = ryadok.strip().strip("|").split("|")
+                    elif zag and line.startswith("|"):
+                        komirky = line.strip().strip("|").split("|")
                         zsuv, i_kom = 0, 0
                         for i_kom, k in enumerate(komirky):
                             if zsuv + len(k) + 1 > poz:

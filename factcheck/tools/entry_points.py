@@ -103,10 +103,10 @@ TOCHKY: list[list[str]] = [
     ["factcheck.py", "vzirets", "GPIO"],
     ["layer3.py", "--zvit"], ["layer1.py"], ["layer1.py", "--detali"],
     ["layer1_units.py"], ["coverage.py"], ["intake.py"],
-    ["schema.py"], ["schema.py", "--samoperevirka"],
-    ["leak.py"], ["leak.py", "--samoperevirka"],
+    ["schema.py"], ["schema.py", "--self-check"],
+    ["leak.py"], ["leak.py", "--self-check"],
     ["task_spec.py", "--version"], ["task_spec.py", "--blocks"],
-    ["task_spec.py", "--samoperevirka"],
+    ["task_spec.py", "--self-check"],
     ["modality.py"], ["cache_vs_book.py", "--tykho"], ["cache_identity.py"],
     ["cache.py", "--check"], ["cache.py", "--vidtvornist"],
     ["split_queue.py"], ["work_orders.py"], ["work_orders_f.py"],
@@ -145,7 +145,7 @@ U_VOROTAKH = {
 }
 
 
-def imya(t: list[str]) -> str:
+def name(t: list[str]) -> str:
     return "_".join(t).replace("/", "_").replace("-", "_").replace(".", "_")
 
 
@@ -232,15 +232,15 @@ def _tree_delta(do: dict[str, tuple[int, str]],
     записується його хеш. Генератор, який переписав файл тим самим
     вмістом, тепер видно — і саме це стала властивість програми.
     """
-    ryadky = []
+    lines = []
     for shlyakh in sorted(set(do) | set(po)):
         a, b = do.get(shlyakh), po.get(shlyakh)
         if a == b:
             continue
         if a and b and a[0] == b[0]:
             continue
-        ryadky.append(f"{(b or (0, '-' * 12))[1]}  {shlyakh}")
-    return "\n".join(ryadky) + ("\n" if ryadky else "")
+        lines.append(f"{(b or (0, '-' * 12))[1]}  {shlyakh}")
+    return "\n".join(lines) + ("\n" if lines else "")
 
 
 def work_copy():
@@ -271,12 +271,12 @@ def work_copy():
             if latka.strip():
                 subprocess.run(["git", "apply", "-"], cwd=derevo,
                                input=latka, text=True, check=True)
-            kesh = ROOT / "factcheck" / "source-cache"
-            if kesh.is_dir():
+            cache = ROOT / "factcheck" / "source-cache"
+            if cache.is_dir():
                 cil = derevo / "factcheck" / "source-cache"
                 if cil.exists():
                     shutil.rmtree(cil)
-                cil.symlink_to(kesh)
+                cil.symlink_to(cache)
             yield derevo
         finally:
             subprocess.run(["git", "worktree", "remove", "--force",
@@ -310,9 +310,9 @@ def _capture_into(kudy: pathlib.Path, tmp: str, derevo: pathlib.Path) -> int:
             # сама вада, що з `{TMP}`, лише на рівень вище.
             return s.replace(tmp, "{TMP}").replace(str(derevo), "{ROOT}")
 
-        (kudy / f"{imya(t)}.out").write_text(bez_tmp(r.stdout), encoding="utf-8")
-        (kudy / f"{imya(t)}.err").write_text(bez_tmp(r.stderr), encoding="utf-8")
-        (kudy / f"{imya(t)}.wrote").write_text(
+        (kudy / f"{name(t)}.out").write_text(bez_tmp(r.stdout), encoding="utf-8")
+        (kudy / f"{name(t)}.err").write_text(bez_tmp(r.stderr), encoding="utf-8")
+        (kudy / f"{name(t)}.wrote").write_text(
             _tree_delta(stan_do, _tree_state(derevo)), encoding="utf-8")
         znak = "✓" if r.returncode == 0 else f"rc={r.returncode}"
         if "Traceback" in r.stderr:
@@ -328,7 +328,7 @@ def _capture_into(kudy: pathlib.Path, tmp: str, derevo: pathlib.Path) -> int:
 def zvirty(a: pathlib.Path, b: pathlib.Path) -> int:
     rizn = pysav = 0
     for t in TOCHKY:
-        fa, fb = a / f"{imya(t)}.out", b / f"{imya(t)}.out"
+        fa, fb = a / f"{name(t)}.out", b / f"{name(t)}.out"
         if not fa.exists() or not fb.exists():
             print(f"  ? немає знімка: {' '.join(t)}")
             rizn += 1
@@ -344,7 +344,7 @@ def zvirty(a: pathlib.Path, b: pathlib.Path) -> int:
         # І те, що точка ЗАПИСАЛА. Старі знімки цього файлу не мають —
         # тоді мовчимо, а не вигадуємо різницю: знімок без поля не
         # свідчить ані про зміну, ані про її відсутність.
-        wa, wb = a / f"{imya(t)}.wrote", b / f"{imya(t)}.wrote"
+        wa, wb = a / f"{name(t)}.wrote", b / f"{name(t)}.wrote"
         if not (wa.exists() and wb.exists()):
             continue
         za, zb = wa.read_text(encoding="utf-8"), wb.read_text(encoding="utf-8")

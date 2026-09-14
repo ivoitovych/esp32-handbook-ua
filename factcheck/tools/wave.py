@@ -47,7 +47,7 @@ import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
-KESH = ROOT / "factcheck" / "source-cache"
+CACHE = ROOT / "factcheck" / "source-cache"
 NEZVIRENI = "CEFGL"
 
 BLOKY = ["ORIENTATION", "VERBATIM", "HONEST-MISS", "NETWORK", "STUB",
@@ -88,11 +88,11 @@ def basein() -> list[dict]:
     out = []
     for klas in NEZVIRENI:
         try:
-            odyn = sample.odynyci(klas)
+            odyn = sample.units(klas)
         except Exception:
             continue
         for u in odyn:
-            kand = nm2.pidibraty(u["tekst"], fayly)
+            kand = nm2.pick(u["tekst"], fayly)
             if kand:
                 out.append(dict(u, klas=klas, kandydat=kand))
     out.sort(key=lambda u: u["id"])
@@ -116,7 +116,7 @@ def konteksty() -> dict[str, str]:
 
 
 def planuvaty(kudy: pathlib.Path, agentiv: int, kvytkiv: int,
-              nasinnya: int, wave: str) -> int:
+              seed: int, wave: str) -> int:
     import task_spec
     kudy.mkdir(parents=True, exist_ok=True)
     pool = basein()
@@ -124,12 +124,12 @@ def planuvaty(kudy: pathlib.Path, agentiv: int, kvytkiv: int,
     if len(pool) < treba:
         print(f"у басейні {len(pool)}, потрібно {treba} — беру всі")
         treba = len(pool)
-    vzyato = random.Random(nasinnya).sample(pool, treba)
+    vzyato = random.Random(seed).sample(pool, treba)
     kont = konteksty()
 
     versiya = task_spec.versiya(BLOKY, shablon=RAMKA)
     (kudy / "wave.json").write_text(json.dumps({
-        "wave": wave, "seed": nasinnya, "order_version": versiya,
+        "wave": wave, "seed": seed, "order_version": versiya,
         "pool": len(pool), "agents": agentiv, "tickets_each": kvytkiv,
         "units": [u["id"] for u in vzyato],
         "by_class": {k: sum(1 for u in vzyato if u["status"] == k)
@@ -142,7 +142,7 @@ def planuvaty(kudy: pathlib.Path, agentiv: int, kvytkiv: int,
             break
         ramka = RAMKA
         for kk, vv in dict(wave=wave, n=a + 1, vsyoho=agentiv,
-                           k=len(chastka), nasinnya=nasinnya,
+                           k=len(chastka), seed=seed,
                            pool=len(pool)).items():
             ramka = ramka.replace("{" + kk + "}", str(vv))
         r = [task_spec.sklasty(BLOKY, zaholovok=ramka, shablon=RAMKA),
@@ -162,7 +162,7 @@ def planuvaty(kudy: pathlib.Path, agentiv: int, kvytkiv: int,
         (kudy / f"agent-{a+1:02d}.md").write_text("\n".join(r) + "\n",
                                                   encoding="utf-8")
     print(f"хвиля {wave}: агентів {agentiv}, квитків {treba}, "
-          f"насіння {nasinnya}, order_version {versiya} → {kudy}")
+          f"насіння {seed}, order_version {versiya} → {kudy}")
     print(f"  за класами: "
           f"{ {k: sum(1 for u in vzyato if u['status'] == k) for k in NEZVIRENI} }")
     return 0
@@ -192,10 +192,10 @@ def suddya(kudy: pathlib.Path) -> int:
             pereviryaly += 1
             cyt = str(z.get("quote") or "").strip()
             dzh = str(z.get("source") or "")
-            imya = re.sub(r"^source-cache/", "", dzh).strip("`  ")
-            p = KESH / imya
+            name = re.sub(r"^source-cache/", "", dzh).strip("`  ")
+            p = CACHE / name
             if not cyt or not p.exists():
-                bidy.append(f"{z.get('unit')}: джерело `{imya}` не знайдено")
+                bidy.append(f"{z.get('unit')}: джерело `{name}` не знайдено")
                 continue
             tekst = layer3.plaskyy(layer3.tekst_dzherela(p) or "")
             frah = layer3.uryvky(cyt)
@@ -203,7 +203,7 @@ def suddya(kudy: pathlib.Path) -> int:
                             for g in frah):
                 doslivnykh += 1
             else:
-                bidy.append(f"{z.get('unit')}: цитати немає в `{imya}`")
+                bidy.append(f"{z.get('unit')}: цитати немає в `{name}`")
     print(f"хвиля {plan['wave']} · насіння {plan['seed']} · "
           f"order_version {plan['order_version']}")
     print(f"  квитків роздано   {len(plan['units'])}")

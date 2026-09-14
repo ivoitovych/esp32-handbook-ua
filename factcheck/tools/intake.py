@@ -109,7 +109,7 @@ def unit_texts():
         # see units in those statuses. The source of the list is the
         # code, and only the code.
         return [o["tekst"] for k in factcheck.STATUSES
-                for o in sample.odynyci(k)]
+                for o in sample.units(k)]
     except Exception:
         return None
 

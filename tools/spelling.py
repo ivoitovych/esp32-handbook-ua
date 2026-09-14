@@ -52,7 +52,7 @@ from pathlib import Path
 
 import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
-KESH = ROOT / "factcheck" / "source-cache"
+CACHE = ROOT / "factcheck" / "source-cache"
 VLASNYY = ROOT / "docs" / "slovnyk-proyektu.txt"
 # Теки книги — з `factcheck/book.yaml`, як і в решти. Цей інструмент не
 # частина технології фактчекінгу: він вичитує УКРАЇНСЬКИЙ текст книги, і
@@ -90,7 +90,7 @@ def slovnyk():
         from spylls.hunspell import Dictionary
     except ImportError:
         sys.exit("немає spylls: pip install spylls")
-    aff, dic = KESH / "uk_UA.aff", KESH / "uk_UA.dic"
+    aff, dic = CACHE / "uk_UA.aff", CACHE / "uk_UA.dic"
     if not (aff.exists() and dic.exists()):
         sys.exit(
             "немає словника uk_UA в factcheck/source-cache/.\n"
@@ -98,7 +98,7 @@ def slovnyk():
             "dictionaries/master/uk_UA/uk_UA.aff\n"
             "  factcheck/tools/cache.py https://raw.githubusercontent.com/LibreOffice/"
             "dictionaries/master/uk_UA/uk_UA.dic")
-    return Dictionary.from_files(str(KESH / "uk_UA"))
+    return Dictionary.from_files(str(CACHE / "uk_UA"))
 
 
 def vlasni() -> set[str]:

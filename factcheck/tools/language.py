@@ -188,7 +188,7 @@ def baza() -> set[str]:
     return set(re.findall(r"^- `([^`]+)`", hvist, re.M))
 
 
-def zapysaty(p: dict[str, float]) -> None:
+def write_out(p: dict[str, float]) -> None:
     vs = measure()
     hotovi = [x for x in vs if x[0] <= PORIH]
     r = ["# Files in the English zone that are still Ukrainian",
@@ -277,9 +277,9 @@ def proba() -> int:
         # порахували б наміром писати в корінь — хоч тут ROOT є
         # тимчасовою текою. (Цей рядок теж довелося переписати: перше
         # пояснення саме містило той літерал і спрацювало на собі.)
-        for imya, tekst in (("UKR.md", "# Проба\n\nУкраїнський документ.\n"),
+        for name, tekst in (("UKR.md", "# Проба\n\nУкраїнський документ.\n"),
                             ("ENG.md", "# Probe\n\nEnglish, must stay quiet.\n")):
-            (korin / imya).write_text(tekst, encoding="utf-8")
+            (korin / name).write_text(tekst, encoding="utf-8")
         zlovleno = offenders()
     ROOT = spravzhniy
     probа("новий український документ у фундаменті ловиться",
@@ -309,7 +309,7 @@ def main() -> int:
         return 0
     p = offenders()
     if "--write" in sys.argv:
-        zapysaty(p)
+        write_out(p)
         print(f"language: recorded {len(p)} files -> {BASELINE.name}")
         return 0
     b = baza()

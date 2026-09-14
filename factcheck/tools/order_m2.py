@@ -41,7 +41,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import sample  # noqa: E402  — добір і читання реєстру беремо в М1
 
-KESH = ROOT / "factcheck" / "source-cache"
+CACHE = ROOT / "factcheck" / "source-cache"
 
 # Ключ → взірець імені файлу в кеші. Ключ шукається в тексті одиниці
 # без урахування регістру; що конкретніший ключ, то раніше він стоїть.
@@ -150,7 +150,7 @@ def prydatnyy(tekst: str, fayl: str) -> bool:
 
 
 def kesh_fayly() -> list[str]:
-    return sorted(p.name for p in KESH.iterdir() if p.is_file())
+    return sorted(p.name for p in CACHE.iterdir() if p.is_file())
 
 
 # Ключ, що називає ДЕТАЛЬ, завжди конкретніший за ключ, що називає
@@ -169,7 +169,7 @@ def kesh_fayly() -> list[str]:
 SPEC = re.compile(r"\d")
 
 
-def pidibraty(tekst: str, fayly: list[str]) -> list[str]:
+def pick(tekst: str, fayly: list[str]) -> list[str]:
     """Файли найконкретнішого ключа, що збігся.
 
     Два проходи: спершу ключі з номером деталі, потім тематичні.
@@ -200,25 +200,25 @@ def poshuk_riven(tekst: str, fayly: list[str], spec: bool) -> list[str]:
 
 def main() -> int:
     skilky = int(sys.argv[1]) if len(sys.argv) > 1 else 60
-    nasinnya = int(sys.argv[2]) if len(sys.argv) > 2 else 20260827
+    seed = int(sys.argv[2]) if len(sys.argv) > 2 else 20260827
     # Каталог хвилі: `factcheck/work/runs/wave2` перейменовано на
     # `factcheck/work/runs/wave2`. Правило заміни цього рядка **не** зачепило, і
     # правильно: у коді воно вимагає скісної, бо в лапках стоять і
     # ключі словників, і мітки. Тут ім'я каталогу справді голе, тож
     # правку зроблено рукою.
-    imya = sys.argv[3] if len(sys.argv) > 3 else "wave2"
+    name = sys.argv[3] if len(sys.argv) > 3 else "wave2"
 
     fayly = kesh_fayly()
     vsi = []
     for klas in ("named-unreachable", "unchecked"):
-        for o in sample.odynyci(klas):
+        for o in sample.units(klas):
             o["klas"] = klas
             vsi.append(o)
 
     z_faylom = []
     bez_faylu = 0
     for o in vsi:
-        f = pidibraty(o["tekst"], fayly)
+        f = pick(o["tekst"], fayly)
         if f:
             o["fayl"] = f[0]
             o["fayly"] = f
@@ -226,16 +226,16 @@ def main() -> int:
         else:
             bez_faylu += 1
 
-    rnd = random.Random(nasinnya)
+    rnd = random.Random(seed)
     rnd.shuffle(z_faylom)
     vybrani = z_faylom[:skilky]
 
     print(f"популяція C+F: {len(vsi)}")
     print(f"  з файлом у кеші: {len(z_faylom)}")
     print(f"  без файлу (в наряд НЕ йдуть): {bez_faylu}")
-    print(f"  відібрано: {len(vybrani)}, насіння {nasinnya}")
+    print(f"  відібрано: {len(vybrani)}, насіння {seed}")
 
-    out = ROOT / "factcheck" / "work" / "runs" / ("m2-order-%s.yaml" % imya)
+    out = ROOT / "factcheck" / "work" / "runs" / ("m2-order-%s.yaml" % name)
     import yaml
     out.write_text(yaml.dump(vybrani, allow_unicode=True, sort_keys=False,
                              default_flow_style=False, width=100),

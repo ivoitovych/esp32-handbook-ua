@@ -72,7 +72,7 @@ RE_ZAHOLOVOK = re.compile(
 RE_CYTATA = re.compile(r"^> (?P<t>.+)$", re.M)
 
 
-def odynyci(klas: str) -> list[dict]:
+def units(klas: str) -> list[dict]:
     """Every unit in a given status, in a stable order.
 
     Accepts either the word (`"unchecked"`) or the letter (`"F"`): the
@@ -275,11 +275,11 @@ def tretiy_shar_vybirky(zap: list[dict]) -> tuple[int, int]:
         import layer3
     except ImportError:
         return 0, len(kand)
-    naslidky, _ = layer3.perevirka(True, [KANDYDATY])
+    naslidky, _ = layer3.check(True, [KANDYDATY])
     return (sum(1 for x in naslidky if x.get("stan") == "ok"), len(kand))
 
 
-def zvesty(katalog: Path) -> int:
+def digest(katalog: Path) -> int:
     """Digest a random sample's dumps into a measurement with an error."""
     # The first run of this measurement lost 40 of 160 units to broken
     # YAML — and lost them **not at random**: both helpers whose files
@@ -434,7 +434,7 @@ def zvesty(katalog: Path) -> int:
     #
     # The share stays valid meanwhile: the sample was drawn from this
     # status and answers about it, however many of them there are now.
-    populyaciya = len(odynyci("no-external-signal"))
+    populyaciya = len(units("no-external-signal"))
 
     # The spread between helpers. Not cosmetic: if different judges give
     # different shares on the same data, the true error is larger than the
@@ -567,7 +567,7 @@ def main() -> int:
         if i + 1 >= len(sys.argv):
             print("sample: --zvit needs a directory of dumps")
             return 2
-        return zvesty(Path(sys.argv[i + 1]))
+        return digest(Path(sys.argv[i + 1]))
     if len(sys.argv) < 3:
         print(__doc__)
         return 2
@@ -580,16 +580,16 @@ def main() -> int:
     if len(klas) == 1:
         klas = klas.upper()
     skilky = int(sys.argv[2])
-    nasinnya = NASINNYA
+    seed = NASINNYA
     if "--nasinnya" in sys.argv:
-        nasinnya = int(sys.argv[sys.argv.index("--nasinnya") + 1])
+        seed = int(sys.argv[sys.argv.index("--nasinnya") + 1])
 
-    vsi = odynyci(klas)
+    vsi = units(klas)
     if not vsi:
         print(f"sample: no units found in status {klas}")
         return 1
     skilky = min(skilky, len(vsi))
-    vybir = random.Random(nasinnya).sample(vsi, skilky)
+    vybir = random.Random(seed).sample(vsi, skilky)
     vybir.sort(key=lambda z: z["id"])
 
     # Batch size is not cosmetic. A batch decides how many units a helper
@@ -606,7 +606,7 @@ def main() -> int:
     if factcheck.LETTER_TO_STATUS.get(klas, klas) == "unchecked":
         import task_spec
         ramka = ZAHOLOVOK_F
-        for k, v in dict(klas=klas, nasinnya=nasinnya,
+        for k, v in dict(klas=klas, seed=seed,
                          vsyoho=len(vsi), skilky=skilky,
                          reachable=_reachable_block()).items():
             ramka = ramka.replace("{" + k + "}", str(v))
@@ -628,7 +628,7 @@ def main() -> int:
             bloky_f = bloky_f[:-1] + ["LOCATION", blok] + bloky_f[-1:]
         shapka = task_spec.sklasty(bloky_f, zaholovok=ramka)
     else:
-        shapka = zaholovok(klas=klas, nasinnya=nasinnya,
+        shapka = zaholovok(klas=klas, seed=seed,
                            vsyoho=len(vsi), skilky=skilky)
     r = [shapka.rstrip("\n"), ""]
     # Each batch opens by NAMING its units. The first wave under this
@@ -651,7 +651,7 @@ def main() -> int:
         r.append(f"> {z['tekst']}\n")
     CIL.write_text("\n".join(r) + "\n", encoding="utf-8")
     print(f"sample: status {klas}, population {len(vsi)}, sample "
-          f"{skilky}, seed {nasinnya} → {CIL.relative_to(ROOT)}")
+          f"{skilky}, seed {seed} → {CIL.relative_to(ROOT)}")
     return 0
 
 

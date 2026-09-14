@@ -73,11 +73,11 @@ def ekranuy(s: str) -> str:
 
 def vzirets_dlya(tekst: str, vsi: list[str]) -> str | None:
     """The shortest prefix that is unique across the whole registry."""
-    slova = tekst.split()
-    if len(slova) < MIN_SLIV:
+    words = tekst.split()
+    if len(words) < MIN_SLIV:
         return None
-    for k in range(MIN_SLIV, min(len(slova), MAX_SLIV) + 1):
-        vz = ekranuy(" ".join(slova[:k]))
+    for k in range(MIN_SLIV, min(len(words), MAX_SLIV) + 1):
+        vz = ekranuy(" ".join(words[:k]))
         # Uniqueness is tested by **search**, not by `startswith`. A
         # pattern is used by searching, and one unit's prefix may well
         # stand in the middle of another: the first version measured by
@@ -132,18 +132,18 @@ def main() -> int:
 
     reyestr: dict[str, dict] = {}
     for klas in factcheck.ALL_CLASSES:
-        for u in sample.odynyci(klas):
+        for u in sample.units(klas):
             u["klas"] = klas
             reyestr[u["id"]] = u
     vsi_teksty = [u["tekst"] for u in reyestr.values()]
     print(f"registry: units {len(reyestr)}")
 
-    zapysy = yaml.safe_load(a.vyzhyly.read_text(encoding="utf-8")) or []
-    print(f"survived layer 3: {len(zapysy)}")
+    records = yaml.safe_load(a.vyzhyly.read_text(encoding="utf-8")) or []
+    print(f"survived layer 3: {len(records)}")
 
     posadka: dict[str, list[dict]] = collections.defaultdict(list)
     nema_odynyci = shyrokyy = vzhe_A = 0
-    for z in zapysy:
+    for z in records:
         oid = str(z.get("odynycya", "")).strip()
         u = reyestr.get(oid)
         if u is None:
@@ -186,7 +186,7 @@ def main() -> int:
         return 0
 
     kudy = ROOT / "factcheck" / "evidence"
-    for fayl, zapys in sorted(posadka.items()):
+    for fayl, record in sorted(posadka.items()):
         shlyakh = kudy / f"{a.prefiks}-{fayl}.yaml"
         shapka = (
             f"# Landing {a.prefiks} — {fayl}.\n"
@@ -199,7 +199,7 @@ def main() -> int:
             f"# across the registry. A compromise between two laws: a wide\n"
             f"# pattern lies, a long one breaks.\n\n")
         shlyakh.write_text(
-            shapka + yaml.safe_dump(zapys, allow_unicode=True,
+            shapka + yaml.safe_dump(record, allow_unicode=True,
                                     sort_keys=False, width=88),
             encoding="utf-8")
     print(f"files written: {len(posadka)} → {kudy}")

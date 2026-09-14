@@ -36,13 +36,13 @@ DOKUMENT = re.compile(
     r"|[A-Z]{2,}\d{3,}", re.I)
 
 
-def perevirka(p: Path) -> list[tuple[str, str]]:
+def check(p: Path) -> list[tuple[str, str]]:
     try:
-        zapysy = yaml.safe_load(p.read_text(encoding="utf-8")) or []
+        records = yaml.safe_load(p.read_text(encoding="utf-8")) or []
     except Exception as e:
         return [("БИТИЙ YAML", str(e).split("\n")[0][:80])]
     bidy = []
-    for z in zapysy:
+    for z in records:
         if not isinstance(z, dict):
             bidy.append(("НЕ ЗАПИС", str(z)[:50]))
             continue
@@ -79,7 +79,7 @@ def main(argv: list[str]) -> int:
         p = Path(a)
         if not p.exists():
             continue
-        b = perevirka(p)
+        b = check(p)
         try:
             n = len(yaml.safe_load(p.read_text(encoding="utf-8")) or [])
         except Exception:

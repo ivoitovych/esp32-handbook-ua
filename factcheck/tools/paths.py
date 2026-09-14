@@ -115,8 +115,8 @@ def literal_paths(source: dict[str, str] | None = None):
     for f, t in files.items():
         spans = demo_spans(t)
         for m in RE_PATH.finditer(t):
-            ryadok = t.count("\n", 0, m.start()) + 1
-            if any(a <= ryadok <= b for a, b in spans):
+            line = t.count("\n", 0, m.start()) + 1
+            if any(a <= line <= b for a, b in spans):
                 continue
             parts = [x for x in RE_PART.findall(m.group(1)) if x]
             if not parts:
@@ -127,12 +127,12 @@ def literal_paths(source: dict[str, str] | None = None):
             if any("*" in c or "{" in c for c in segments):
                 continue
             try:
-                imya = str(f.resolve().relative_to(ROOT))
+                name = str(f.resolve().relative_to(ROOT))
             except ValueError:
-                imya = f.name          # a demonstration input, not a file
-            korin = "tools" if m.group(0).lstrip().startswith('"tools"') \
+                name = f.name          # a demonstration input, not a file
+            korin = "tools" if m.group(0).lstrip().startswith('"tools"')\
                 else "factcheck"
-            yield imya, korin + "/" + "/".join(segments)
+            yield name, korin + "/" + "/".join(segments)
 
 
 def check_all(source: dict[str, str] | None = None) -> list[str]:
@@ -252,8 +252,8 @@ def main() -> int:
                   f"{tool:<26}{s}")
         return 0
     problems = check_all() + parses_strictly() + parses_on_oldest()
-    znaydeno = len(set(literal_paths()))
-    if not znaydeno:
+    found = len(set(literal_paths()))
+    if not found:
         print("   ✗ no literal paths found at all — this check is looking "
               "in the wrong place, it is not reporting a clean tree")
         return 1

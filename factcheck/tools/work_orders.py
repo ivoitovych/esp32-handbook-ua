@@ -101,7 +101,7 @@ def zaholovok(**kw) -> str:
 
 
 
-def zapysy() -> dict[tuple[str, str], dict]:
+def records() -> dict[tuple[str, str], dict]:
     rec: dict[tuple[str, str], dict] = {}
     for f in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
         try:
@@ -143,7 +143,7 @@ def z_naryadu() -> list[str]:
         CIL.read_text(encoding="utf-8"))]
 
 
-def zvesty(katalog: Path) -> int:
+def digest(katalog: Path) -> int:
     import helper_dumps
 
     zap, polagodzheni, zlamani = helper_dumps.read_dir(katalog)
@@ -251,7 +251,7 @@ def zvesty(katalog: Path) -> int:
 def main() -> int:
     import layer3
 
-    naslidky, _ = layer3.perevirka(False)
+    naslidky, _ = layer3.check(False)
     bidy = [n for n in naslidky if n.get("stan") == "ne_znaydeno"]
 
     vidpovidzheni: set[str] = set()
@@ -268,9 +268,9 @@ def main() -> int:
         if i + 1 >= len(sys.argv):
             print("naryad: --zvit потребує каталогу вивантажень")
             return 2
-        return zvesty(Path(sys.argv[i + 1]))
+        return digest(Path(sys.argv[i + 1]))
 
-    rec = zapysy()
+    rec = records()
 
     # `.replace`, а не `.format`: у тексті наряду стоять справжні
     # фігурні дужки ESP-IDF (`{IDF_TARGET_...}`), і `format` на них

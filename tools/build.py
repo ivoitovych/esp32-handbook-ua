@@ -76,18 +76,18 @@ def linkify(line: str) -> str:
         _ROZDILY, _KARTKY = _slug_maps()
 
     def rozdil(m):
-        slova = m.group(2)
-        nums = RE_NUM.findall(slova)
+        words = m.group(2)
+        nums = RE_NUM.findall(words)
         # посилання ставимо лише коли всі номери відомі
         if not all(int(n) in _ROZDILY for n in nums):
             return m.group(0)
         out, pos = [], 0
-        for mm in RE_NUM.finditer(slova):
-            out.append(slova[pos:mm.start()])
+        for mm in RE_NUM.finditer(words):
+            out.append(words[pos:mm.start()])
             n = int(mm.group(0))
             out.append(f"[{mm.group(0)}](#{_ROZDILY[n]})")
             pos = mm.end()
-        out.append(slova[pos:])
+        out.append(words[pos:])
         return m.group(1) + " " + "".join(out)
 
     def kartka(m):
@@ -258,18 +258,18 @@ def tablycya_versij() -> str:
         "platformio_pioarduino": "pioarduino (форк platform-espressif32)",
     }
 
-    ryadky = []
+    lines = []
     for kljuch, dani in cfg.items():
         if not isinstance(dani, dict):
             continue
         nazva = NAZVY.get(kljuch, kljuch)
         versiya = str(dani.get("version", "?"))
-        zvireno = str(dani.get("status", "")).lower() == "verified"
-        stan = (f'звірено {dani.get("checked", "")}' if zvireno
+        checked = str(dani.get("status", "")).lower() == "verified"
+        stan = (f'звірено {dani.get("checked", "")}' if checked
                 else "#text(weight: 700)[НЕ ЗВІРЕНО]")
         note = str(dani.get("note", "")).strip().replace("\n", " ")
         note = " ".join(note.split())
-        ryadky.append((nazva, versiya, stan, note))
+        lines.append((nazva, versiya, stan, note))
 
     out = [
         "#block(breakable: true)[",
@@ -283,13 +283,13 @@ def tablycya_versij() -> str:
         "{ 0.6pt } else { 0.3pt + luma(72%) }, bottom: 0pt),",
         "    [Що], [Версія], [Стан],",
     ]
-    for nazva, versiya, stan, _ in ryadky:
+    for nazva, versiya, stan, _ in lines:
         out.append(f"    [{esc_typ(nazva)}], [`{esc_typ(versiya)}`], [{stan}],")
     out.append("  )")
     out.append("]")
     out.append("")
 
-    prymitky = [(n, t) for n, _, _, t in ryadky if t]
+    prymitky = [(n, t) for n, _, _, t in lines if t]
     if prymitky:
         out.append("#block(above: 0.9em)[")
         out.append("  #set text(size: 0.9em)")
@@ -457,9 +457,9 @@ def perevirka_odna_storinka(root_typ: Path, pdf: Path,
     for i, p in enumerate(pochatky):
         nastupna = pochatky[i + 1] if i + 1 < len(pochatky) else storinok + 1
         if nastupna - p > 1:
-            imya = imena[i] if i < len(imena) else f"картка {i + 1}"
+            name = imena[i] if i < len(imena) else f"картка {i + 1}"
             problemy.append(
-                f"{imya}: {nastupna - p} сторінки — картка мусить бути "
+                f"{name}: {nastupna - p} сторінки — картка мусить бути "
                 f"одна. Ділити навпіл або виносити глибину в додаток "
                 f"(docs/DESIGN.md, Р10), не викидати факт")
     return problemy

@@ -224,7 +224,7 @@ RE_SYGNAL_STROGYY = re.compile(_sig["strict"])
 RE_TABLE_RULE = re.compile(r"\|(?:\s*:?-{2,}:?\s*\|)+$")
 
 
-def is_table_header(ryadky: list[str], ln: int) -> bool:
+def is_table_header(lines: list[str], ln: int) -> bool:
     """Is the book line at `ln` (1-based) a table's header row?
 
     Structural, not textual: a header is whatever stands directly above
@@ -238,10 +238,10 @@ def is_table_header(ryadky: list[str], ln: int) -> bool:
     means this is not a header.
     """
     i = ln - 1
-    if not (0 <= i < len(ryadky)) or not ryadky[i].lstrip().startswith("|"):
+    if not (0 <= i < len(lines)) or not lines[i].lstrip().startswith("|"):
         return False
-    for j in range(i + 1, min(i + 3, len(ryadky))):
-        s = ryadky[j].strip()
+    for j in range(i + 1, min(i + 3, len(lines))):
+        s = lines[j].strip()
         if not s:
             continue
         return bool(RE_TABLE_RULE.match(s))
@@ -262,7 +262,7 @@ def is_table_header(ryadky: list[str], ln: int) -> bool:
 RE_SCHEMA_ZVYAZOK = re.compile(r"[─━]{2,}|[│┬└┌┐┘├┤]|-{3,}[>\s]|→")
 
 
-def rozbyty_tablycyu(ryadky: list[str], vid: int) -> list[tuple[str, str, int]]:
+def rozbyty_tablycyu(lines: list[str], vid: int) -> list[tuple[str, str, int]]:
     """A table -> one claim per **cell**, not per row.
 
     The row `| UART | 3 | 2 | 3 | 2 | 3 | 2 |` is six independent claims
@@ -291,7 +291,7 @@ def rozbyty_tablycyu(ryadky: list[str], vid: int) -> list[tuple[str, str, int]]:
     # saw it: the first compares against a **window** around the number,
     # the second by the hash of the text. Both were answering their own
     # question correctly.
-    pary = [(i, r) for i, r in enumerate(ryadky)
+    pary = [(i, r) for i, r in enumerate(lines)
             if not re.match(r"^\|[\s:|-]+\|$", r.strip())]
     korysni = [r for _i, r in pary]
     if not korysni:
@@ -302,7 +302,7 @@ def rozbyty_tablycyu(ryadky: list[str], vid: int) -> list[tuple[str, str, int]]:
 
     shapka = komirky(korysni[0])
     if len(shapka) <= 2:
-        return [("tablycya", r.strip(), vid + i) for i, r in enumerate(ryadky)
+        return [("tablycya", r.strip(), vid + i) for i, r in enumerate(lines)
                 if not re.match(r"^\|[\s:|-]+\|$", r.strip())]
 
     out: list[tuple[str, str, int]] = []
@@ -332,9 +332,9 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
     Headings, blank lines and block markup are skipped: they assert
     nothing about the world.
     """
-    odynyci: list[tuple[str, str, int]] = []
-    ryadky = text.split("\n")
-    i, n = 0, len(ryadky)
+    units: list[tuple[str, str, int]] = []
+    lines = text.split("\n")
+    i, n = 0, len(lines)
     # Every line carries its own number: otherwise every sentence of a
     # paragraph gets
     # the number of its **start**, and the card promises a precision it
@@ -392,31 +392,31 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
             shukach = zm + len(c)
             c = c.strip()
             if len(c) >= 25:
-                odynyci.append(("proza", c, ryadok_dlya(zm)))
+                units.append(("proza", c, ryadok_dlya(zm)))
 
     while i < n:
-        r = ryadky[i]
+        r = lines[i]
         if r.lstrip().startswith("```"):
             zlyty_prozu()
             start = i
             i += 1
-            while i < n and not ryadky[i].lstrip().startswith("```"):
+            while i < n and not lines[i].lstrip().startswith("```"):
                 i += 1
-            tilo = ryadky[start + 1:i]
-            odynyci.append(("kod", "\n".join(ryadky[start:i + 1]), start + 1))
+            tilo = lines[start + 1:i]
+            units.append(("kod", "\n".join(lines[start:i + 1]), start + 1))
             for j, kr in enumerate(tilo):
                 if RE_SCHEMA_ZVYAZOK.search(kr):
-                    odynyci.append(("schema-zvyazok", kr.strip(), start + 2 + j))
+                    units.append(("schema-zvyazok", kr.strip(), start + 2 + j))
                 elif RE_KOD_TVERDZHENNYA.match(kr) and len(kr.strip()) > 6:
-                    odynyci.append(("kod-ryadok", kr.strip(), start + 2 + j))
+                    units.append(("kod-ryadok", kr.strip(), start + 2 + j))
             i += 1
             continue
         if r.startswith("|"):
             zlyty_prozu()
             start = i
-            while i < n and ryadky[i].startswith("|"):
+            while i < n and lines[i].startswith("|"):
                 i += 1
-            odynyci += rozbyty_tablycyu(ryadky[start:i], start + 1)
+            units += rozbyty_tablycyu(lines[start:i], start + 1)
             continue
         # **A heading is not a claim, and never becomes a unit.**
         #
@@ -446,7 +446,7 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
         buf.append((i + 1, r))
         i += 1
     zlyty_prozu()
-    return odynyci
+    return units
 
 
 # Where a card is written. The book's mirror lives under `cards/`, not in
@@ -582,7 +582,7 @@ STRENGTH = {w: i
               for i, w in enumerate(x for x in STATUSES if x not in NOT_CLAIMS)}
 
 
-def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
+def pick(records: list[dict], h: str, txt: str) -> dict | None:
     """Evidence for a claim: an exact hash wins, then the strongest.
 
     One claim may fall under several evidences: one pass recorded it as
@@ -591,7 +591,7 @@ def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
     directory would silently decide the result, and closed items would
     stay in the hand-off order for ever.
     """
-    kandydaty = vsi_kandydaty(zapysy, h, txt)
+    kandydaty = vsi_kandydaty(records, h, txt)
     if kandydaty:
         return min(kandydaty, key=lambda z: STRENGTH_BY_LETTER.get(class_letter_of(z), 9))
     return None
@@ -609,7 +609,7 @@ def klyuch(z: dict) -> tuple[str, str]:
     return (str(z.get("_prokhid", "?")), str(z.get("title", "?")))
 
 
-def rozbyty_alternatyvy(vzirets: str) -> list[str]:
+def rozbyty_alternatyvy(pattern: str) -> list[str]:
     r"""Split a pattern on its **top-level** `|`.
 
     Needed to audit individual alternatives. A dead evidence record is
@@ -631,10 +631,10 @@ def rozbyty_alternatyvy(vzirets: str) -> list[str]:
     hlyb = 0
     u_klasi = False
     i = 0
-    while i < len(vzirets):
-        c = vzirets[i]
-        if c == "\\" and i + 1 < len(vzirets):
-            tek.append(vzirets[i:i + 2])
+    while i < len(pattern):
+        c = pattern[i]
+        if c == "\\" and i + 1 < len(pattern):
+            tek.append(pattern[i:i + 2])
             i += 2
             continue
         if u_klasi:
@@ -716,7 +716,7 @@ def prychyna(chastyna: str, teksty: list[str]) -> str:
     return "the beginning is there, the rest diverged — check against the new text"
 
 
-def vsi_kandydaty(zapysy: list[dict], h: str, txt: str) -> list[dict]:
+def vsi_kandydaty(records: list[dict], h: str, txt: str) -> list[dict]:
     """Every evidence that falls under this claim at all.
 
     Needed separately from the selection, to distinguish evidence
@@ -724,10 +724,10 @@ def vsi_kandydaty(zapysy: list[dict], h: str, txt: str) -> list[dict]:
     the first is normal (a pass closed an item), the second is a fault in
     the pattern.
     """
-    tochni = [z for z in zapysy if h in [str(x) for x in (z.get("sha") or [])]]
+    tochni = [z for z in records if h in [str(x) for x in (z.get("sha") or [])]]
     if tochni:
         return tochni
-    return [z for z in zapysy
+    return [z for z in records
             if z.get("match") and _vzirets(z["match"]).search(txt)]
 
 
@@ -846,7 +846,7 @@ def ohorozha(vmist: str) -> str:
     return "`" * max(3, naydovsha + 1)
 
 
-def verbatim_and_context(ryadky: list[str], ln: int,
+def verbatim_and_context(lines: list[str], ln: int,
                         tekst: str = "") -> tuple[str, str]:
     """The book's raw line and its surroundings.
 
@@ -921,26 +921,26 @@ def verbatim_and_context(ryadky: list[str], ln: int,
     klyuchi = [k.strip(" `*") for k in syrovyna if len(k.strip(" `*")) >= 3]
     i = -1
     if klyuchi:
-        zbihy = [j for j, r in enumerate(ryadky)
+        zbihy = [j for j, r in enumerate(lines)
                  if all(k in r for k in klyuchi)]
         if zbihy:
             i = min(zbihy, key=lambda j: abs(j - (ln - 1)))
     if i < 0:
         i = ln - 1
-    if not (0 <= i < len(ryadky)):
+    if not (0 <= i < len(lines)):
         return "", ""
-    doslivno = ryadky[i].rstrip()
+    doslivno = lines[i].rstrip()
 
     # Boundaries: back to a heading or the blank line before the
     # paragraph, forward to the end of the paragraph or table.
     poch = i
     while poch > 0:
-        pop = ryadky[poch - 1].rstrip()
+        pop = lines[poch - 1].rstrip()
         if pop.startswith("#"):
             break
         if not pop and not doslivno.startswith("|"):
             break
-        if not pop and poch < i and not ryadky[poch].startswith("|"):
+        if not pop and poch < i and not lines[poch].startswith("|"):
             break
         poch -= 1
     # Forward boundary. **A blank line inside a code block is content,
@@ -955,10 +955,10 @@ def verbatim_and_context(ryadky: list[str], ln: int,
     #
     # > The defect inside the antidote: a block built to show a thought
     # > whole was showing half of it.
-    v_kodi = ryadky[i].lstrip().startswith("```")
+    v_kodi = lines[i].lstrip().startswith("```")
     kin = i
-    while kin + 1 < len(ryadky):
-        nast = ryadky[kin + 1].rstrip()
+    while kin + 1 < len(lines):
+        nast = lines[kin + 1].rstrip()
         if v_kodi:
             kin += 1
             if nast.lstrip().startswith("```"):
@@ -972,11 +972,11 @@ def verbatim_and_context(ryadky: list[str], ln: int,
     # table cell reads as a bag of words.
     zah = ""
     for j in range(poch, -1, -1):
-        if ryadky[j].startswith("#"):
-            zah = ryadky[j].rstrip()
+        if lines[j].startswith("#"):
+            zah = lines[j].rstrip()
             break
 
-    tilo = [r.rstrip() for r in ryadky[poch:kin + 1]]
+    tilo = [r.rstrip() for r in lines[poch:kin + 1]]
     if zah and zah not in tilo:
         tilo = [zah, ""] + tilo
     return doslivno, "\n".join(tilo).strip()
@@ -1019,13 +1019,13 @@ def sketch() -> int:
                 continue
             tekst_knyhy = f.read_text(encoding="utf-8")
             ryadky_knyhy = tekst_knyhy.split("\n")
-            odynyci = rozbyty(tekst_knyhy)
+            units = rozbyty(tekst_knyhy)
             cil = shlyakh_reyestru(f)
             cil.parent.mkdir(parents=True, exist_ok=True)
             pre = prefiks(f)
             chastyny = [
                 f"# Фактчекінг: `{f.relative_to(ROOT)}`\n",
-                f"Одиниць твердження: **{len(odynyci)}**. "
+                f"Одиниць твердження: **{len(units)}**. "
                 "Статус доказу й формат запису — `factcheck/METHOD.md`, "
                 "частина II.\n",
                 "Цей файл **генерується**: текст книги береться з джерела, "
@@ -1041,7 +1041,7 @@ def sketch() -> int:
                 "стоїть окремим блоком нижче.\n",
                 "---\n",
             ]
-            for k, (vyd, txt, ln) in enumerate(odynyci, 1):
+            for k, (vyd, txt, ln) in enumerate(units, 1):
                 ident = f"T-{pre}-{k:03d}"
                 h = sha(txt)
                 usi_teksty.append(txt)
@@ -1077,7 +1077,7 @@ def sketch() -> int:
                     # real evidence, and a rule that overwrote them would
                     # destroy work to tidy a count.
                     klas = "H"
-                elif vyd == "proza" \
+                elif vyd == "proza"\
                         and not RE_SYGNAL_STROGYY.search(txt):
                     # A unit with no signal pointing at a source is
                     # editorial. `no-external-signal`, and that is a
@@ -1157,9 +1157,9 @@ def sketch() -> int:
     print(f"claim units: {vsjogo}; with evidence: {z_dokazom}")
     if "-v" in sys.argv:
         print("\nwhat each evidence covered:")
-        for (prokhid, nazva), ids in sorted(pokryttya.items(),
+        for (pass_num, nazva), ids in sorted(pokryttya.items(),
                                            key=lambda kv: kv[0][1]):
-            print(f"  {len(ids):>3}×  {nazva}  ({prokhid})"
+            print(f"  {len(ids):>3}×  {nazva}  ({pass_num})"
                   f"\n        {', '.join(ids)}")
     # Evidence that matched nothing is either a wording that has since
     # changed in the book or a fault in the pattern. It must not go
@@ -1254,8 +1254,8 @@ def zbir_usikh() -> list[dict]:
 
 
 def status() -> int:
-    zapysy = zbir_usikh()
-    c = Counter(z["status"] for z in zapysy)
+    records = zbir_usikh()
+    c = Counter(z["status"] for z in records)
     kontekst = c.get("code-context", 0)
     shapky = c.get("not-a-claim", 0)
     # Code blocks are context, not claims: percentages are computed over
@@ -1263,11 +1263,11 @@ def status() -> int:
     # check. Table header rows are excluded for the same reason — but
     # they are PRINTED rather than merely subtracted, because a count
     # that silently vanishes is how a registry starts flattering itself.
-    vsjogo = len(zapysy) - kontekst - shapky
+    vsjogo = len(records) - kontekst - shapky
     print(f"\nclaim units: {vsjogo}"
           f"  (+ {kontekst} code blocks and {shapky} table headers "
           f"as context)\n")
-    zvireno = sum(c[k] for k in ("verbatim", "derived", "arithmetic"))
+    checked = sum(c[k] for k in ("verbatim", "derived", "arithmetic"))
     for stan in STATUSES_OF_UNITS:
         n = c.get(stan, 0)
         if not n:
@@ -1275,7 +1275,7 @@ def status() -> int:
         print(f"  {stan:<20} {n:>5}  {n*100/vsjogo:5.1f}%   {STATUSES[stan]}")
     print(f"\n  checked against a source or by calculation "
           f"(verbatim + derived + arithmetic): "
-          f"{zvireno} ({zvireno*100/vsjogo:.1f}%)")
+          f"{checked} ({checked*100/vsjogo:.1f}%)")
     # `self-consistent` is deliberately **outside** this figure and
     # deliberately on its own line.
     #
@@ -1295,7 +1295,7 @@ def status() -> int:
           f"{sum(c.get(s, 0) for s in ('named-unreachable', 'unchecked', 'refuted'))}")
     # by file: where the most open units are
     per = Counter()
-    for z in zapysy:
+    for z in records:
         if z["status"] in ("named-unreachable", "unchecked", "refuted"):
             per[z["fajl"]] += 1
     if per:
@@ -1438,7 +1438,7 @@ def blocked() -> int:
         return 0
 
     vsjogo = sum(len(g["tverdzhennya"]) for g in grupy.values())
-    ryadky = [
+    lines = [
         "# Hand-off: sources unreachable from this environment\n",
         "> **generated** — `factcheck/tools/factcheck.py blocked`; editing "
         "it by hand is wasted work\n",
@@ -1458,21 +1458,21 @@ def blocked() -> int:
         "---\n",
     ]
     for u, g in sorted(grupy.items(), key=lambda kv: -len(kv[1]["tverdzhennya"])):
-        ryadky.append(f"## {u}\n")
-        ryadky.append(f"Claims depending on it: "
+        lines.append(f"## {u}\n")
+        lines.append(f"Claims depending on it: "
                       f"**{len(g['tverdzhennya'])}**\n")
         if g["look_for"]:
-            ryadky.append("**What to look for:**\n")
+            lines.append("**What to look for:**\n")
             for s in sorted(g["look_for"]):
-                ryadky.append(f"- {s}")
-            ryadky.append("")
-        ryadky.append("| Claim | Where in the book | Verbatim |")
-        ryadky.append("|---|---|---|")
+                lines.append(f"- {s}")
+            lines.append("")
+        lines.append("| Claim | Where in the book | Verbatim |")
+        lines.append("|---|---|---|")
         for ident, src, txt in g["tverdzhennya"]:
             t = txt.replace("|", "\\|")[:160]
-            ryadky.append(f"| `{ident}` | `{src}` | {t} |")
-        ryadky.append("\n---\n")
-    NARYAD.write_text("\n".join(ryadky), encoding="utf-8")
+            lines.append(f"| `{ident}` | `{src}` | {t} |")
+        lines.append("\n---\n")
+    NARYAD.write_text("\n".join(lines), encoding="utf-8")
 
     print(f"\n{NARYAD.relative_to(ROOT)}: {vsjogo} claims from "
           f"{len(grupy)} sources\n")
@@ -1635,7 +1635,7 @@ def vorota() -> int:
     return 1 if (g or holosti) else 0
 
 
-def vzirets() -> int:
+def pattern() -> int:
     """How many registry units this pattern will match.
 
         factcheck/tools/factcheck.py vzirets '<regular expression>'
@@ -1694,8 +1694,8 @@ def vzirets() -> int:
         print("  ⚠ TOO WIDE? A wide pattern is more dangerous than a "
               "missing one: it silently marks as checked what it never "
               "checked.")
-    for imya, txt in zbihy[:12]:
-        print(f"    {imya}: {txt.strip()[:88]}")
+    for name, txt in zbihy[:12]:
+        print(f"    {name}: {txt.strip()[:88]}")
     if len(zbihy) > 12:
         print(f"    … and {len(zbihy) - 12} more")
     return 0
@@ -1705,7 +1705,7 @@ def main() -> int:
     cmd = sys.argv[1] if len(sys.argv) > 1 else "status"
     return {"sketch": sketch, "status": status, "stale": stale,
             "blocked": blocked, "cherga": cherga, "vorota": vorota,
-            "shukaty": shukaty, "vzirets": vzirets}.get(cmd, status)()
+            "shukaty": shukaty, "vzirets": pattern}.get(cmd, status)()
 
 
 if __name__ == "__main__":

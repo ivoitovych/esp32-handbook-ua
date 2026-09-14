@@ -271,12 +271,12 @@ schema:
 # це в порожню кімнату. Червона перевірка, якої ніхто не кличе,
 # рівно так само зелена.
 self-checks:
-	@$(PY) factcheck/tools/schema.py --samoperevirka
-	@$(PY) factcheck/tools/leak.py --samoperevirka
-	@$(PY) factcheck/tools/task_spec.py --samoperevirka
-	@$(PY) factcheck/tools/maintenance.py --samoperevirka
-	@$(PY) factcheck/tools/doc_kind.py --samoperevirka
-	@$(PY) factcheck/tools/cache.py --samoperevirka
+	@$(PY) factcheck/tools/schema.py --self-check
+	@$(PY) factcheck/tools/leak.py --self-check
+	@$(PY) factcheck/tools/task_spec.py --self-check
+	@$(PY) factcheck/tools/maintenance.py --self-check
+	@$(PY) factcheck/tools/doc_kind.py --self-check
+	@$(PY) factcheck/tools/cache.py --self-check
 	@$(PY) factcheck/tools/docs.py --demo
 
 # Кожна точка входу технології, а не лише ті, що у воротах.

@@ -44,25 +44,25 @@ def storinok(dani: bytes) -> int:
 
 def main() -> int:
     zhahy: list[str] = []
-    for imya, min_st, min_kb in OCHIKUVANNYA:
-        b = ROOT / "build" / imya
-        r = ROOT / "release" / imya
+    for name, min_st, min_kb in OCHIKUVANNYA:
+        b = ROOT / "build" / name
+        r = ROOT / "release" / name
         if not b.exists():
-            zhahy.append(f"{imya}: немає в build/")
+            zhahy.append(f"{name}: немає в build/")
             continue
         dani = b.read_bytes()
         if not dani.startswith(b"%PDF"):
-            zhahy.append(f"{imya}: не схожий на PDF")
+            zhahy.append(f"{name}: не схожий на PDF")
             continue
         st, kb = storinok(dani), len(dani) // 1024
         if st < min_st:
-            zhahy.append(f"{imya}: сторінок {st}, очікувалося щонайменше {min_st}")
+            zhahy.append(f"{name}: сторінок {st}, очікувалося щонайменше {min_st}")
         if kb < min_kb:
-            zhahy.append(f"{imya}: {kb} КБ, очікувалося щонайменше {min_kb}")
+            zhahy.append(f"{name}: {kb} КБ, очікувалося щонайменше {min_kb}")
         if not r.exists():
-            zhahy.append(f"{imya}: немає в release/ — опубліковане відстає")
+            zhahy.append(f"{name}: немає в release/ — опубліковане відстає")
         else:
-            print(f"   ✓ {imya}: {st} с., {kb} КБ")
+            print(f"   ✓ {name}: {st} с., {kb} КБ")
 
     # Кратність 16 — вимога друкарні: аркуш складається з шістнадцяти
     # сторінок. Обсяг книги пливе від кожної правки тексту, і з'їхати з
@@ -83,8 +83,8 @@ def main() -> int:
     # README — перше, що бачить читач; застаріле число там обіцяє йому
     # іншу книгу, ніж лежить поруч. Це вже траплялося: у головному
     # README стояло 400 сторінок, у `release/` — 413, а в файлі 422.
-    for imya, _, _ in OCHIKUVANNYA:
-        b = ROOT / "build" / imya
+    for name, _, _ in OCHIKUVANNYA:
+        b = ROOT / "build" / name
         if not b.exists():
             continue
         st = storinok(b.read_bytes())
@@ -92,14 +92,14 @@ def main() -> int:
             if not readme.exists():
                 continue
             tekst = readme.read_text(encoding="utf-8")
-            for ryadok in tekst.split("\n"):
-                if imya not in ryadok:
+            for line in tekst.split("\n"):
+                if name not in line:
                     continue
-                m = re.search(r"(\d+)\s*стор\.", ryadok)
+                m = re.search(r"(\d+)\s*стор\.", line)
                 if m and int(m.group(1)) != st:
                     zhahy.append(
                         f"{readme.relative_to(ROOT)}: обіцяє "
-                        f"{m.group(1)} стор. для {imya}, а в ньому {st}")
+                        f"{m.group(1)} стор. для {name}, а в ньому {st}")
 
     # Відбиток джерел: чи зібрано опубліковане з поточного тексту.
     sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -110,10 +110,10 @@ def main() -> int:
     if not rb.exists():
         zhahy.append("release/BUILD.txt відсутній — з чого зібрано, невідомо")
     else:
-        ryadky = rb.read_text(encoding="utf-8").strip().split("\n")
-        if ryadky[0].strip() != teper:
+        lines = rb.read_text(encoding="utf-8").strip().split("\n")
+        if lines[0].strip() != teper:
             zhahy.append(f"release/ зібрано з інших джерел: у ньому "
-                         f"{ryadky[0].strip()}, зараз {teper}. "
+                         f"{lines[0].strip()}, зараз {teper}. "
                          f"Потрібно `make release`")
         else:
             print(f"   ✓ відбиток джерел збігається: {teper}")
@@ -127,7 +127,7 @@ def main() -> int:
         #
         # Розбіжність версії сама по собі ще не помилка — помилка
         # непомічена розбіжність. Тому друкуємо, а не спиняємо.
-        zapysanyy = ryadky[1].strip() if len(ryadky) > 1 else None
+        zapysanyy = lines[1].strip() if len(lines) > 1 else None
         teperishniy = build.vygotovlyuvach()
         if zapysanyy is None:
             print("   · виготовлювача не записано — перезберіть `make release`")

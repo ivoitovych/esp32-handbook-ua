@@ -163,7 +163,7 @@ def katalohy(pary: dict[str, str], suho: bool) -> int:
         pravylo = KRAY_U_KODI if p.suffix == ".py" else KRAY_U_PROZI
         n = 0
         for stare, nove in sorted(korotki.items(), key=lambda x: -len(x[0])):
-            t, k = re.subn(pravylo.format(imya=re.escape(stare)), nove, t)
+            t, k = re.subn(pravylo.format(name=re.escape(stare)), nove, t)
             n += k
         if n and t != st:
             torknuto += 1
@@ -216,12 +216,12 @@ def perepysaty(tekst: str, stare: str, nove: str, kod: bool) -> tuple[str, int]:
 def zrobyty(pary: dict[str, str], suho: bool) -> int:
     torknuto = 0
     for stare, nove in pary.items():
-        dzherelo = ROOT / "tools" / f"{stare}.py"
-        if not dzherelo.exists():
-            print(f"  ! немає {dzherelo.relative_to(ROOT)}")
+        source = ROOT / "tools" / f"{stare}.py"
+        if not source.exists():
+            print(f"  ! немає {source.relative_to(ROOT)}")
             continue
         if not suho:
-            subprocess.run(["git", "mv", str(dzherelo),
+            subprocess.run(["git", "mv", str(source),
                             str(ROOT / "tools" / f"{nove}.py")],
                            cwd=ROOT, check=True)
         print(f"  {stare}.py → {nove}.py")

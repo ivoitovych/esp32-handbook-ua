@@ -86,17 +86,17 @@ def vzirets_z(tekst: str) -> str:
 def main(argv: list[str]) -> int:
     pysaty = "--pysaty" in argv
 
-    odynyci = []
+    units = []
     # There used to be a string "ABCDEFG" here — a private copy of the
     # status list, which had already lost two statuses and would never
     # have gained a third. This is what the comment beside `ALL_CLASSES`
     # warns about: a copy of a list is the same promise not to change it
     # as a copy of a pattern.
     for klas in factcheck.ALL_CLASSES:
-        for o in sample.odynyci(klas):
-            odynyci.append((o["tekst"], leksemy(o["tekst"])))
+        for o in sample.units(klas):
+            units.append((o["tekst"], leksemy(o["tekst"])))
 
-    teksty = [t for t, _ in odynyci]
+    teksty = [t for t, _ in units]
     zhyvi = set()
     for z in factcheck.zavantazhyty_dokazy():
         v = str(z.get("match") or "")
@@ -112,12 +112,12 @@ def main(argv: list[str]) -> int:
     polagodzheno = nezmineno = 0
     for shlyakh in sorted(glob.glob(str(ROOT / "factcheck" / "evidence" / "m2-*.yaml"))):
         recs = yaml.safe_load(Path(shlyakh).read_text(encoding="utf-8")) or []
-        prokhid = Path(shlyakh).stem
+        pass_num = Path(shlyakh).stem
         tor = False
         for r in recs:
             if not isinstance(r, dict) or not r.get("match"):
                 continue
-            if (prokhid, str(r.get("title"))) in zhyvi:
+            if (pass_num, str(r.get("title"))) in zhyvi:
                 continue
             klyuch = slova_vzirtsya(str(r.get("match", "")))
             if len(klyuch) < 3:
@@ -125,12 +125,12 @@ def main(argv: list[str]) -> int:
             if not klyuch:
                 continue
             ocinky = sorted(
-                ((len(klyuch & lk) / max(1, len(klyuch)), t) for t, lk in odynyci),
+                ((len(klyuch & lk) / max(1, len(klyuch)), t) for t, lk in units),
                 key=lambda p: -p[0])
             o1 = ocinky[0][0]
             if o1 < POROG:
                 nezmineno += 1
-                print("   ? %-26s %s" % (prokhid[:26], str(r.get("title"))[:48]))
+                print("   ? %-26s %s" % (pass_num[:26], str(r.get("title"))[:48]))
                 continue
             # Level with the first: anything scoring at least 95 % of it.
             urnyven = [t for o, t in ocinky if o >= o1 * 0.95][:4]
@@ -161,7 +161,7 @@ def main(argv: list[str]) -> int:
                 "(table pipes) and matched nothing.").strip(" |")
             polagodzheno += 1
             tor = True
-            print("   ✓ %-26s %s" % (prokhid[:26], str(r.get("title"))[:48]))
+            print("   ✓ %-26s %s" % (pass_num[:26], str(r.get("title"))[:48]))
         if tor and pysaty:
             Path(shlyakh).write_text(
                 yaml.dump(recs, allow_unicode=True, sort_keys=False,

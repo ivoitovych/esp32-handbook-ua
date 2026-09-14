@@ -55,8 +55,8 @@ def main() -> int:
         for f in sorted((ROOT / g).glob("*.md")):
             rel = str(f.relative_to(ROOT))
             svij = f.name[:2] if g == "manual" else None
-            for ln, ryadok in enumerate(f.read_text(encoding="utf-8").split("\n"), 1):
-                for m in RE_ROZDIL.finditer(ryadok):
+            for ln, line in enumerate(f.read_text(encoding="utf-8").split("\n"), 1):
+                for m in RE_ROZDIL.finditer(line):
                     for n in re.findall(r"\d{1,2}", m.group(1)):
                         n = n.zfill(2)
                         de[f"розділ {n}"].append(f"{rel}:{ln}")
@@ -64,13 +64,13 @@ def main() -> int:
                             zhahy.append(f"{rel}:{ln}: немає розділу {n}")
                         elif n == svij:
                             zhahy.append(f"{rel}:{ln}: посилання саме на себе (розділ {n})")
-                for m in RE_KARTKA.finditer(ryadok):
+                for m in RE_KARTKA.finditer(line):
                     for n in re.findall(r"\d{1,2}", m.group(1)):
                         n = n.zfill(2)
                         de[f"картка К{int(n)}"].append(f"{rel}:{ln}")
                         if n not in kartky:
                             zhahy.append(f"{rel}:{ln}: немає картки К{int(n)}")
-                for m in RE_DODATOK.finditer(ryadok):
+                for m in RE_DODATOK.finditer(line):
                     b = KYR.get(m.group(1), m.group(1))
                     de[f"додаток {b}"].append(f"{rel}:{ln}")
                     if b not in dodatky:
