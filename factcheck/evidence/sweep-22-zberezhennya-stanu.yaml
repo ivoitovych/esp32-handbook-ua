@@ -13,26 +13,14 @@
 
 
 
-- nazva: 'T-22-057: Лог зберігається у файл, а не читається з'
-  zbih: Лог\s+зберігається\s+у\s+файл,
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/README.md
-  cytata: 'Viewing Serial Output
-
-    '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  notatka: документація рекомендує монітор для серійного виводу, а не екран
-  title: 'T-22-057: Лог зберігається у файл, а не читається з'
+- title: 'T-22-057: Лог зберігається у файл, а не читається з'
   match: Лог\s+зберігається\s+у\s+файл,
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/README.md
   quote: 'Viewing Serial Output
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документація рекомендує монітор для серійного виводу, а не екран
   sha:
   - 9ef15fdb
