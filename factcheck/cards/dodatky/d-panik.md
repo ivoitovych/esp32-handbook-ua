@@ -6717,7 +6717,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-151 sha:74974165 src:dodatky/d-panik.md:206 status:named-unreachable -->
+<!-- fc id:T-D-151 sha:74974165 src:dodatky/d-panik.md:206 status:looked-not-found -->
 ### T-D-151 · tablycya · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -6740,8 +6740,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 **Доказ**
 
-- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
-- **Джерело:** shukaty
+- **Статус:** looked-not-found — looked and did not find — the work was done, the source is not visible
 - **Нотатка:** A1 — стандартний регістр архітектури Xtensa для Stack Pointer (SP). Міститься у дампі регістрів паніки, але явна назва "Stack Pointer" для A1 у документації ESP-IDF не знайдена. Встановлено, що дамп показує A1, а backtrace показує SP, але прямої цитати про еквівалентність немає.
 - **Прохід:** m2-61-panic-b
 
@@ -7645,7 +7644,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-177 sha:68e01a8c src:dodatky/d-panik.md:264 status:named-unreachable -->
+<!-- fc id:T-D-177 sha:68e01a8c src:dodatky/d-panik.md:264 status:looked-not-found -->
 ### T-D-177 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -7663,8 +7662,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 **Доказ**
 
-- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
-- **Джерело:** shukaty
+- **Статус:** looked-not-found — looked and did not find — the work was done, the source is not visible
 - **Нотатка:** Це рекомендація про діагностику буферних переповнень і типових помилок циклів. У документації ESP-IDF явно не знайдена, це загальна практика відлагодження.
 - **Прохід:** m2-61-panic-b
 
@@ -7763,7 +7761,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-181 sha:a135e9c8 src:dodatky/d-panik.md:270 status:named-unreachable -->
+<!-- fc id:T-D-181 sha:a135e9c8 src:dodatky/d-panik.md:270 status:looked-not-found -->
 ### T-D-181 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -7782,8 +7780,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 **Доказ**
 
-- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
-- **Джерело:** shukaty
+- **Статус:** looked-not-found — looked and did not find — the work was done, the source is not visible
 - **Нотатка:** Рекомендація про порівняння поточного вказівника з результатом malloc для діагностики утечок пам'яті. У документації ESP-IDF явно не знайдена.
 - **Прохід:** m2-61-panic-b
 
@@ -8047,7 +8044,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-190 sha:00df861d src:dodatky/d-panik.md:291 status:named-unreachable -->
+<!-- fc id:T-D-190 sha:00df861d src:dodatky/d-panik.md:291 status:looked-not-found -->
 ### T-D-190 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -8065,8 +8062,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 **Доказ**
 
-- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
-- **Джерело:** shukaty
+- **Статус:** looked-not-found — looked and did not find — the work was done, the source is not visible
 - **Нотатка:** Рекомендація про зберігання .elf файлу разом з прошивкою для подальшого аналізу. У документації ESP-IDF явно не знайдена як вимога до процесу збирання чи розгортання.
 - **Прохід:** m2-61-panic-b
 
@@ -8116,7 +8112,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-193 sha:71f2dcf5 src:dodatky/d-panik.md:299 status:named-unreachable -->
+<!-- fc id:T-D-193 sha:71f2dcf5 src:dodatky/d-panik.md:299 status:looked-not-found -->
 ### T-D-193 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -8135,8 +8131,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 **Доказ**
 
-- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
-- **Джерело:** shukaty
+- **Статус:** looked-not-found — looked and did not find — the work was done, the source is not visible
 - **Нотатка:** Рекомендація про використання hello_world як мінімального, заведомо справного образу для діагностики проблем прошивки. У документації ESP-IDF не знайдена як стратегія діагностики, хоча hello_world є офіційним прикладом.
 - **Прохід:** m2-61-panic-b
 

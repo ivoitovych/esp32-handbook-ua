@@ -1945,7 +1945,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-052 sha:aefbccf3 src:manual/26-zboyi.md:111 status:named-unreachable -->
+<!-- fc id:T-26-052 sha:aefbccf3 src:manual/26-zboyi.md:111 status:looked-not-found -->
 ### T-26-052 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1965,8 +1965,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 **Доказ**
 
-- **Статус:** named-unreachable — secondary — the source cannot be reached from here; URL recorded, no quote
-- **Джерело:** shukaty
+- **Статус:** looked-not-found — looked and did not find — the work was done, the source is not visible
 - **Нотатка:** Рекомендація про зберігання .elf файлу разом з прошивкою для подальшого аналізу. У документації ESP-IDF явно не знайдена як вимога до процесу збирання чи розгортання.
 - **Прохід:** m2-61-panic-b
 
