@@ -1,6 +1,7 @@
-# `znayshov` candidates from the **random** sample. Not a
+# `confirmed` candidates from the **random** sample. Not a
 # registry: layer 3 checks them before the number enters a report.
-- title: '?'
-  source: ''
-  quote: ''
-  zvidky: h3-proba
+- title: T-02-083
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc_caps.h
+  quote: '#define SOC_BT_CLASSIC_SUPPORTED        (1)    /*!< Support Bluetooth Classic
+    hardware */'
+  zvidky: h1-dump

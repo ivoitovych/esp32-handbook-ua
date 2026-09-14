@@ -85,7 +85,8 @@ insert inserts iomux level levels module modules motor motors panic
 peripheral peripherals pinout pinouts power project projects pullup
 pullups pycache queue queues reproducible restructure sensor sensors
 backslash bucket buckets cyrillic fstring semtech share snapshot snapshots solder switch switches symptom symptoms unchecked
-unreachable wiring""".split())
+unreachable wiring
+english old verdict verdicts current""".split())
 
 RE_SYGNAL = re.compile(
     r"kh|zh|ya|yu|yi|ch|sh|ts|iy|yy|ovan|nnya|aty|yty|uva|klas|syla|stan|naryad"

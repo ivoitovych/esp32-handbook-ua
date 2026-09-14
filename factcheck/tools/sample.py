@@ -250,16 +250,24 @@ KANDYDATY = ROOT / "factcheck" / "work" / "queues" / "sample-candidates.yaml"
 
 
 def tretiy_shar_vybirky(zap: list[dict]) -> tuple[int, int]:
-    """How many claimed `znayshov` really stand at the named address."""
-    kand = [{"title": str(z.get("odynycya", "?")),
+    """How many claimed `confirmed` really stand at the named address.
+
+    Reads the verdict through `verdicts.verdict_of`, which is the point:
+    a direct `z["verdykt"] == "znayshov"` here would have silently
+    selected nothing the day the orders began asking for English words —
+    zero candidates, no error, and layer 3 reporting a clean sweep of an
+    empty set.
+    """
+    import verdicts
+    kand = [{"title": str(z.get("unit", z.get("odynycya", "?"))),
              "source": str(z.get("source", "")).strip(),
              "quote": str(z.get("quote", "")),
              "zvidky": z.get("_fayl", "?")}
-            for z in zap if str(z.get("verdykt")) == "znayshov"]
+            for z in zap if verdicts.verdict_of(z) == "confirmed"]
     if not kand:
         return 0, 0
     KANDYDATY.write_text(
-        "# `znayshov` candidates from the **random** sample. Not a\n"
+        "# `confirmed` candidates from the **random** sample. Not a\n"
         "# registry: layer 3 checks them before the number enters a report.\n"
         + yaml.safe_dump(kand, allow_unicode=True, sort_keys=False),
         encoding="utf-8")
@@ -315,25 +323,22 @@ def zvesty(katalog: Path) -> int:
     # `unreachable` counts as a referent: the document was NAMED and only
     # not fetched, which is the difference between "no source exists" and
     # "no source arrived".
-    SLOVA = {
-        "confirmed": "znayshov", "znayshov": "znayshov",
-        "advice": "ideya", "ideya": "ideya",
-        "disputes": "sperechayetsya", "sperechayetsya": "sperechayetsya",
-        "unreachable": "nedosyazhne", "nedosyazhne": "nedosyazhne",
-        "truly_none": "spravdi-e", "spravdi-e": "spravdi-e",
-        "not_found": "ne_znayshov", "ne_znayshov": "ne_znayshov",
-    }
+    # The translation lives in `verdicts.py`, not here. This block was a
+    # third copy: `intake_f` already had the map and `contest_e` its own
+    # table, and I wrote this one without noticing either. Three copies of
+    # a verdict table is the defect this project recorded when a work
+    # order printed three of them at one helper.
+    import verdicts
 
     def verdykt_z(z: dict) -> str:
-        syre = str(z.get("verdykt", z.get("verdict", "?"))).strip()
-        return SLOVA.get(syre, syre)
+        return verdicts.verdict_of(z)
 
     def chomu_z(z: dict) -> str:
         return str(z.get("chomu", z.get("comment", "")))
 
     ne_tverdzhennya = sum(
         1 for z in zap
-        if verdykt_z(z) == "spravdi-e"
+        if verdykt_z(z) == "truly_none"
         and RE_NE_TVERDZHENNYA.search(chomu_z(z)))
 
     # A mechanical screen on `spravdi-e`, and the reason it had to exist.
@@ -370,7 +375,7 @@ def zvesty(katalog: Path) -> int:
             return " ".join(m.group(1).split()) if m else ""
 
         sporni = [z for z in zap
-                  if verdykt_z(z) == "spravdi-e"
+                  if verdykt_z(z) == "truly_none"
                   and _intake.RE_SIGNAL
                   and _intake.RE_SIGNAL.search(
                       _tekst(z.get("unit", z.get("odynycya", ""))))]
@@ -379,15 +384,15 @@ def zvesty(katalog: Path) -> int:
         sporni = []
 
     c = collections.Counter(verdykt_z(z) for z in zap)
-    maye_referenta = (c["znayshov"] + c["ideya"]
-                      + c["sperechayetsya"] + c["nedosyazhne"])
+    maye_referenta = (c["confirmed"] + c["advice"]
+                      + c["disputes"] + c["unreachable"])
     # A screened-out `spravdi-e` is not a position: it is a unit with a
     # signal, so it counts on the side of "has a referent".
-    pozyciya = c["spravdi-e"] - ne_tverdzhennya - len(sporni)
+    pozyciya = c["truly_none"] - ne_tverdzhennya - len(sporni)
     maye_referenta += len(sporni)
     if sporni:
         print(f"   · `truly_none` rejected by the screen: {len(sporni)} "
-              f"of {c['spravdi-e']} — the text carries a number with a unit")
+              f"of {c['truly_none']} — the text carries a number with a unit")
         for z in sporni[:6]:
             print(f"       ✗ {z.get('unit')}: "
                   f"{_tekst(z.get('unit', ''))[:66]}")
@@ -434,11 +439,12 @@ def zvesty(katalog: Path) -> int:
     # The spread between helpers. Not cosmetic: if different judges give
     # different shares on the same data, the true error is larger than the
     # sampling error, and the Wilson interval below is optimistic.
+    import verdicts
     po_hto: dict[str, list[int]] = collections.defaultdict(lambda: [0, 0])
     for z in zap:
         hto = str(z.get("_hto"))
         po_hto[hto][1] += 1
-        if str(z.get("verdykt")) in ("znayshov", "ideya"):
+        if verdicts.verdict_of(z) in ("confirmed", "advice"):
             po_hto[hto][0] += 1
     chastky = [k / v for k, v in po_hto.values() if v]
 

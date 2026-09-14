@@ -103,17 +103,12 @@ POTREBUYE = {
     "truly_none": ("why",),
     "absent_from_source": ("source", "absent"),
 }
-STARI_VERDYKTY = {
-    "pidtverdzheno": "confirmed", "sperechayetsya": "disputes",
-    "ne_znayshov": "not_found", "nedosyazhne": "unreachable",
-    "porada": "advice",
-    "spravdi-e": "truly_none", "spravdi_e": "truly_none",
-}
-STARI_POLYA = {
-    "odynycya": "unit", "verdykt": "verdict", "dzherelo": "source",
-    "cytata": "quote", "komentar": "comment", "potribno": "needed",
-    "chomu": "why", "susidnye": "neighbours",
-}
+# The maps moved to `verdicts.py` when a third copy of them appeared in
+# `sample.py`. Kept under the old names so this file reads as before.
+import verdicts
+
+STARI_VERDYKTY = verdicts.OLD_VERDICTS
+STARI_POLYA = verdicts.OLD_FIELDS
 
 
 def na_anhliysku(r: dict) -> dict:
