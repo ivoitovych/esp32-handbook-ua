@@ -25,9 +25,30 @@ nothing — it sits in the baseline and never fires again. A real new
 transliteration fails immediately, in the commit that introduces it, which
 is the only moment it is cheap to fix.
 
-    factcheck/tools/naming.py            check against the baseline
-    factcheck/tools/naming.py --write    re-record the baseline after a migration batch
-    factcheck/tools/naming.py --proba    show the check firing on a new name
+    factcheck/tools/naming.py              check against the baseline
+    factcheck/tools/naming.py --write      re-record the baseline after a migration batch
+    factcheck/tools/naming.py --proba      show the check firing on a new name
+    factcheck/tools/naming.py --inventory  the WHOLE surface, data included — a report, not a gate
+
+## What the gate does not count, and why that matters
+
+The gate scans the tools for three shapes: a module-level CONSTANT, a
+top-level `def`, and a `"--flag"`. That was the whole debt when this file
+was written, and for code it still is.
+
+The registry, though, is **data**, and the data carries the same
+transliteration in its keys and its values — `verdykt: znayshov`,
+`dzherelo`, `cytata`, `sposib`. No pattern above matches a YAML key, so
+the gate has never counted one and never will.
+
+    gate baseline        208 names, all of them code
+    actual surface       239 distinct tokens, 11 082 occurrences, 344 files
+    of which in data     8 746 occurrences — 79 %
+
+`--inventory` is the second number. It is deliberately **not** a gate:
+the ratchet's promise is that the code surface may only shrink, and
+hanging a population four times larger on that promise would fail
+`make check` over work nobody has scheduled.
 """
 from __future__ import annotations
 
@@ -203,9 +224,100 @@ def proba() -> int:
     return 0 if (spiymav and tyxo) else 1
 
 
+# Tokens the signal below catches that are ordinary English. `annotations`
+# contains `notat`; `notation` the same. Cheap to list, and a false
+# positive here would inflate the debt rather than hide it.
+NE_BORH = re.compile(r"annotat|notation")
+
+# Stronger than `RE_SYGNAL`: whole Ukrainian morphemes, not bare digraphs.
+# `RE_SYGNAL` is deliberately generous because a false positive merely
+# joins a baseline and never fires again. An inventory is read by a person
+# deciding what to rename, so it pays for precision instead.
+RE_MORFEMA = re.compile(
+    r"nnya|ovan|uva|dzher|zvir|vzir|prokh|naryad|kesh|yshov|tverdzh|znay"
+    r"|perevir|odyny|zapys|cytat|sposib|shukaty|pidtverd|nedosyazh|sperech"
+    r"|nasinnya|verdykt|notatk|posylannya|klas|ryad|imya|slovo|pytannya"
+    r"|rishennya|zavdannya|povidomlennya")
+
+RE_TOKEN = re.compile(r"[A-Za-z][A-Za-z0-9_-]{2,}")
+
+
+def inventory() -> int:
+    """The whole transliteration surface, including the data.
+
+    ## Why this is not what the gate measures
+
+    The gate reads `znaydeni()`, and that scans the tools for exactly three
+    shapes: a module-level CONSTANT, a top-level `def`, and a `"--flag"`.
+    Those were the shapes of the debt when the ratchet was written, and for
+    code they still are.
+
+    But the registry is data, and the data carries the same transliteration
+    in its KEYS and its VALUES — `verdykt: znayshov`, `dzherelo`, `cytata`.
+    No pattern above matches a YAML key, so the gate has never counted one.
+    It reports a couple of hundred names and is silent about the larger
+    half, which is exactly the shape of defect this project keeps finding:
+    a measurement whose zero is a zero about what it did not look at.
+
+    So this is a REPORT and not a gate. It must not fail `make check`:
+    the ratchet's promise is that the code surface may only shrink, and
+    hanging a second, much larger population on that promise would freeze
+    work nobody has scheduled yet.
+    """
+    import collections
+    groups = {"factcheck/evidence": "evidence (data)",
+              "factcheck/work": "work queues (data)",
+              "factcheck/tools": "factcheck/tools (code)",
+              "reviews": "reviews (documents)"}
+
+    def area(rel: str) -> str:
+        for pre, name in groups.items():
+            if rel.startswith(pre):
+                return name
+        return "tools/ (code)" if rel.startswith("tools/") else "documents"
+
+    occ, fls = collections.Counter(), collections.Counter()
+    tokens: set[str] = set()
+    import subprocess
+    rel_all = subprocess.run(["git", "ls-files"], cwd=ROOT,
+                             capture_output=True, text=True).stdout.split("\n")
+    SKIP = ("manual/", "dodatky/", "kartky/", "inserts/", "release/",
+            "zvyazok/", "factcheck/archive/", "factcheck/cards/", "docs/",
+            "factcheck/source-cache/", "HISTORY", "PRINT-1", "ERRATA")
+    for rel in rel_all:
+        rel = rel.strip()
+        if not rel or rel.startswith(SKIP) or not rel.endswith(
+                (".py", ".sh", ".md", ".yaml", ".yml", ".toml", ".typ")):
+            continue
+        p = ROOT / rel
+        try:
+            t = p.read_text(encoding="utf-8")
+        except Exception:                                   # noqa: BLE001
+            continue
+        a, here = area(rel), set()
+        for m in RE_TOKEN.finditer(t):
+            w = m.group(0)
+            if RE_MORFEMA.search(w.lower()) and not NE_BORH.search(w.lower()):
+                here.add(w)
+                occ[a] += 1
+                tokens.add(w)
+        if here:
+            fls[a] += 1
+    print(f"{'area':26} {'files':>7} {'occurrences':>12}")
+    for a in sorted(occ, key=lambda x: -occ[x]):
+        print(f"{a:26} {fls[a]:>7} {occ[a]:>12}")
+    print(f"\ninventory: {len(tokens)} distinct tokens, "
+          f"{sum(occ.values())} occurrences in {sum(fls.values())} files")
+    print(f"   the gate's baseline counts {len(baza())} names, all of them "
+          f"code; data is outside what it can see")
+    return 0
+
+
 def main() -> int:
     if "--proba" in sys.argv:
         return proba()
+    if "--inventory" in sys.argv:
+        return inventory()
     ye = znaydeni()
     if "--write" in sys.argv:
         zapysaty(ye)
