@@ -127,6 +127,10 @@ whole batch is lost, not just that entry.
 
 ## Batch 1
 
+**Your units — all 8, and only these:**
+
+`T-00-009`, `T-00-060`, `T-00-068`, `T-02-083`, `T-02-144`, `T-03-015`, `T-05-065`, `T-05-086`
+
 **`T-00-009`** · `manual/00-pro-dovidnyk.md:25`
 
 > Тому книга не заміняє документацію Espressif і не претендує на це.
@@ -161,6 +165,10 @@ whole batch is lost, not just that entry.
 
 
 ## Batch 2
+
+**Your units — all 8, and only these:**
+
+`T-05-100`, `T-05-110`, `T-07-035`, `T-08-003`, `T-08-052`, `T-08-069`, `T-09-003`, `T-10-012`
 
 **`T-05-100`** · `manual/05-elektronika.md:215`
 
@@ -197,6 +205,10 @@ whole batch is lost, not just that entry.
 
 ## Batch 3
 
+**Your units — all 8, and only these:**
+
+`T-10-042`, `T-10-043`, `T-10-045`, `T-10-047`, `T-11-019`, `T-13-037`, `T-14-047`, `T-15-063`
+
 **`T-10-042`** · `manual/10-instrumenty.md:94`
 
 > Набір із сотні номіналів коштує дешево і рятує десятки разів.
@@ -231,6 +243,10 @@ whole batch is lost, not just that entry.
 
 
 ## Batch 4
+
+**Your units — all 8, and only these:**
+
+`T-18-090`, `T-19-032`, `T-20-009`, `T-22-009`, `T-23-073`, `T-23-094`, `T-24-060`, `T-25-049`
 
 **`T-18-090`** · `manual/18-rozdily-fleshu.md:160`
 
@@ -267,6 +283,10 @@ whole batch is lost, not just that entry.
 
 ## Batch 5
 
+**Your units — all 8, and only these:**
+
+`T-25-064`, `T-25-098`, `T-25-103`, `T-27-003`, `T-27-013`, `T-28-013`, `T-28-020`, `T-28-031`
+
 **`T-25-064`** · `manual/25-log.md:139`
 
 > Причина не в тегу і не в порядку викликів — рядка просто немає у прошивці.
@@ -301,6 +321,10 @@ whole batch is lost, not just that entry.
 
 
 ## Batch 6
+
+**Your units — all 8, and only these:**
+
+`T-28-043`, `T-30-002`, `T-31-008`, `T-31-038`, `T-32-066`, `T-32-080`, `T-33-093`, `T-33-123`
 
 **`T-28-043`** · `manual/28-analizator.md:74`
 
@@ -337,6 +361,10 @@ whole batch is lost, not just that entry.
 
 ## Batch 7
 
+**Your units — all 8, and only these:**
+
+`T-34-053`, `T-36-002`, `T-36-017`, `T-36-041`, `T-36-092`, `T-37-043`, `T-38-015`, `T-39-017`
+
 **`T-34-053`** · `manual/34-uart.md:119`
 
 > Сам ведений не говорить ніколи.
@@ -371,6 +399,10 @@ whole batch is lost, not just that entry.
 
 
 ## Batch 8
+
+**Your units — all 8, and only these:**
+
+`T-39-077`, `T-40-081`, `T-41-006`, `T-42-068`, `T-43-097`, `T-44-060`, `T-45-048`, `T-45-059`
 
 **`T-39-077`** · `manual/39-wifi.md:193`
 
@@ -407,6 +439,10 @@ whole batch is lost, not just that entry.
 
 ## Batch 9
 
+**Your units — all 8, and only these:**
+
+`T-45-071`, `T-45-076`, `T-45-078`, `T-46-026`, `T-46-031`, `T-46-033`, `T-46-080`, `T-47-052`
+
 **`T-45-071`** · `manual/45-sensory.md:167`
 
 > Разом із передавачем це створює наслідки, які варто продумати до розгортання, а не після: хто отримує дані, як вони захищені, що станеться, якщо їх перехоплять.
@@ -441,6 +477,10 @@ whole batch is lost, not just that entry.
 
 
 ## Batch 10
+
+**Your units — all 8, and only these:**
+
+`T-47-055`, `T-48-036`, `T-48-070`, `T-51-001`, `T-51-004`, `T-51-019`, `T-51-022`, `T-51-025`
 
 **`T-47-055`** · `manual/47-klyuchi.md:102`
 
@@ -477,6 +517,10 @@ whole batch is lost, not just that entry.
 
 ## Batch 11
 
+**Your units — all 8, and only these:**
+
+`T-51-078`, `T-51-082`, `T-52-056`, `T-53-068`, `T-56-021`, `T-56-038`, `T-57-002`, `T-57-006`
+
 **`T-51-078`** · `manual/51-payannya.md:159`
 
 > Флюс обов'язковий; жало гріє обидві поверхні; припій подається в точку контакту, а не на жало.
@@ -511,6 +555,10 @@ whole batch is lost, not just that entry.
 
 
 ## Batch 12
+
+**Your units — all 8, and only these:**
+
+`T-57-030`, `T-57-065`, `T-58-016`, `T-58-030`, `T-58-032`, `T-59-047`, `T-59-113`, `T-60-136`
 
 **`T-57-030`** · `manual/57-vid-zadachi.md:80`
 
@@ -547,6 +595,10 @@ whole batch is lost, not just that entry.
 
 ## Batch 13
 
+**Your units — all 8, and only these:**
+
+`T-62-035`, `T-62-045`, `T-62-065`, `T-A-074`, `T-A-095`, `T-COM-016`, `T-COM-090`, `T-F-026`
+
 **`T-62-035`** · `manual/62-proj-keruvannya.md:53`
 
 > Замість неї доведеться покладатися на дисципліну коду — а в проєкті, де помилка заливає приміщення, це гірший захист.
@@ -582,6 +634,10 @@ whole batch is lost, not just that entry.
 
 ## Batch 14
 
+**Your units — all 8, and only these:**
+
+`T-G-001`, `T-G-110`, `T-K01-004`, `T-K02-012`, `T-K06-006`, `T-K09-013`, `T-K11-016`, `T-K13-003`
+
 **`T-G-001`** · `dodatky/g-glosariy.md:3`
 
 > Українська назва — канонічний англійський термін.
@@ -616,6 +672,10 @@ whole batch is lost, not just that entry.
 
 
 ## Batch 15
+
+**Your units — all 8, and only these:**
+
+`T-K14-023`, `T-K14-035`, `T-K15-022`, `T-K15-037`, `T-UA--008`, `T-Z-065`, `T-Z-166`, `T-Z-193`
 
 **`T-K14-023`** · `kartky/k14-rivni.md:45`
 

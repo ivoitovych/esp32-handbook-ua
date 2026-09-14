@@ -625,9 +625,22 @@ def main() -> int:
         shapka = zaholovok(klas=klas, nasinnya=nasinnya,
                            vsyoho=len(vsi), skilky=skilky)
     r = [shapka.rstrip("\n"), ""]
+    # Each batch opens by NAMING its units. The first wave under this
+    # order was sliced by telling helpers "the first 40", "41 through
+    # 80", "the last 40" — and the units carry no visible numbering, so
+    # two helpers overlapped on 32 units and 32 others were read by
+    # nobody. A quarter of the draw silently went unexamined, and a
+    # sample with a hole in it is not the sample whose seed is recorded.
+    #
+    # The roster costs a few lines and makes the slice checkable: a
+    # helper can be given one batch name, and the digest can say which
+    # units never came back.
     for i, z in enumerate(vybir):
         if i % na_paket == 0:
+            paket = vybir[i:i + na_paket]
             r.append(f"\n## Batch {i // na_paket + 1}\n")
+            r.append(f"**Your units — all {len(paket)}, and only these:**\n")
+            r.append(", ".join(f"`{x['id']}`" for x in paket) + "\n")
         r.append(f"**`{z['id']}`** · `{z['src']}`\n")
         r.append(f"> {z['tekst']}\n")
     CIL.write_text("\n".join(r) + "\n", encoding="utf-8")
