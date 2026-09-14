@@ -336,10 +336,61 @@ def zvesty(katalog: Path) -> int:
         if verdykt_z(z) == "spravdi-e"
         and RE_NE_TVERDZHENNYA.search(chomu_z(z)))
 
+    # A mechanical screen on `spravdi-e`, and the reason it had to exist.
+    #
+    # `confirmed` has a gate: layer 3 re-fetches the document and checks
+    # the quote as a substring. `spravdi-e` — "there is genuinely nothing
+    # out there" — had none, and it is the verdict that costs most when
+    # wrong, because it CLOSES a unit instead of queueing it.
+    #
+    # Measured on the first wave under this order: one helper returned
+    # 40 of 40 as `spravdi-e`. Read by hand, about a third were wrong —
+    # among them pin numbers and supply voltages. A second helper on the
+    # same order returned a differentiated set and was right about nine
+    # times in ten. The tell was uniformity: a helper that answers the
+    # same thing every time did not look.
+    #
+    # So: a unit whose text carries a number WITH A UNIT, a hex address
+    # or a GPIO number cannot honestly be "no external referent" — that
+    # is a signal by definition. The screen is a floor, not the error
+    # rate: it sees numbers, not meaning, and cannot catch "the MAC is
+    # unique from the factory".
+    try:
+        import intake as _intake
+        import factcheck as _fc
+        _odyn = {x["id"]: x for x in _fc.zbir_usikh()}
+        _RE_CLAIM = re.compile(
+            r"\*\*Твердження, коротко\*\*\s*\n\s*\n> (.+?)\n\s*\n", re.S)
+
+        def _tekst(uid):
+            x = _odyn.get(str(uid))
+            if not x:
+                return ""
+            m = _RE_CLAIM.search(x["tilo"])
+            return " ".join(m.group(1).split()) if m else ""
+
+        sporni = [z for z in zap
+                  if verdykt_z(z) == "spravdi-e"
+                  and _intake.RE_SIGNAL
+                  and _intake.RE_SIGNAL.search(
+                      _tekst(z.get("unit", z.get("odynycya", ""))))]
+    except Exception as e:                      # noqa: BLE001
+        print(f"   · screen skipped: {e}")
+        sporni = []
+
     c = collections.Counter(verdykt_z(z) for z in zap)
     maye_referenta = (c["znayshov"] + c["ideya"]
                       + c["sperechayetsya"] + c["nedosyazhne"])
-    pozyciya = c["spravdi-e"] - ne_tverdzhennya
+    # A screened-out `spravdi-e` is not a position: it is a unit with a
+    # signal, so it counts on the side of "has a referent".
+    pozyciya = c["spravdi-e"] - ne_tverdzhennya - len(sporni)
+    maye_referenta += len(sporni)
+    if sporni:
+        print(f"   · `truly_none` rejected by the screen: {len(sporni)} "
+              f"of {c['spravdi-e']} — the text carries a number with a unit")
+        for z in sporni[:6]:
+            print(f"       ✗ {z.get('unit')}: "
+                  f"{_tekst(z.get('unit', ''))[:66]}")
 
     # `znayshov` from the sample also passes layer 3. At first it did not
     # — only the sweep was checked — and that was a hole: these records

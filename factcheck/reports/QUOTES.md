@@ -20,7 +20,7 @@ it.
 
 Evidence records: **1393**. Checked verbatim: **581**. Not found: **58**. Source not cached: **73**. Nothing to check: **658**.
 
-As of 2026-09-14 09:08 UTC.
+As of 2026-09-14 09:12 UTC.
 
 
 ## no-external-signal on a claim with a number — 23
