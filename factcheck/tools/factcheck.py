@@ -1044,14 +1044,25 @@ def sketch() -> int:
                     # "0 · Touch → T1" or a line like "3V3 ─── VCC" looks
                     # empty only because its subject stands apart from it.
                     #
-                    # This list used to name schematic connections alone
-                    # while the rule at the top of the file named all
-                    # five. The code followed this comment, so 503 cells
-                    # and table units were closed as decisions — among
-                    # them the very cell the rule quotes as the example
-                    # of what must never be closed. Two comments in one
-                    # file stated different rules; the narrower one won
-                    # because it stood beside the code.
+                    # The history here is worth keeping, because the
+                    # obvious reading of it is wrong. The rule at the top
+                    # of this file ("only prose") was written for pass 19
+                    # and its BROAD criterion. Hours later the same day,
+                    # A1 deliberately switched to the STRICT criterion and
+                    # swept cells and tables in — and did not update that
+                    # rule. So the stale text was the rule, not the code.
+                    #
+                    # Reopening the cells was still right, but for a
+                    # measured reason rather than that one: of 35 read by
+                    # eye, 11 carry a checkable claim (SPI CPOL, I2C bus
+                    # capacitance, reset code 0xd) and 5 are borderline.
+                    # A cell's subject stands in its row, so a signal test
+                    # over the cell's own text cannot see it.
+                    #
+                    # What the same sample showed is that 478 units are
+                    # not claims by construction — table headers, header
+                    # rows, glossary pairs. Those need a status of their
+                    # own, not a place in the queue. See PLAN.md A8.
                     klas = "E"
                 else:
                     klas = "F"
