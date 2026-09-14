@@ -147,6 +147,7 @@ rather than leaving the question resting on a measurement taken once.
     unchecked           nobody has reached it yet
 
     code-context        a whole code block; not a claim, and not counted
+    not-a-claim         a table's column names; not a claim, and not counted
 
 Strength runs down that list, and the list is printed in strength order
 rather than alphabetically because the order is the part that gets used.
@@ -1496,6 +1497,7 @@ re-run after every text edit and marks such records unchecked again.
 | **unchecked** | **not checked.** The default state. |
 | **refuted** | **refuted, or needs an edit.** A finding; goes to `reviews/`. |
 | **code-context** | **context.** A whole code or schematic block. Not a claim: the claims live in its lines. Not counted in percentages. |
+| **not-a-claim** | **context.** A table's header row — the names of its columns. It asserts nothing about the world, so no source can confirm or refute it, and leaving it in the queue promises work that must never be done. Assigned **structurally**, from the `|---|` separator beneath the row, never from the text: a textual test cannot tell a header from a two-column content row, and the glossary is full of the latter — including acronym expansions that ARE checkable. Evidence always wins: a header row carrying real evidence keeps it. Not counted in percentages, but printed beside the total rather than silently subtracted. |
 
 ### Fields of an evidence record
 

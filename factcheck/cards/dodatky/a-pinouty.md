@@ -132,7 +132,7 @@
 
 ---
 
-<!-- fc id:T-A-005 sha:388a34df src:dodatky/a-pinouty.md:15 status:unchecked -->
+<!-- fc id:T-A-005 sha:388a34df src:dodatky/a-pinouty.md:15 status:not-a-claim -->
 ### T-A-005 · tablycya-shapka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -2915,7 +2915,7 @@
 
 ---
 
-<!-- fc id:T-A-059 sha:c143225d src:dodatky/a-pinouty.md:46 status:unchecked -->
+<!-- fc id:T-A-059 sha:c143225d src:dodatky/a-pinouty.md:46 status:not-a-claim -->
 ### T-A-059 · tablycya-shapka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -3600,7 +3600,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 ---
 
-<!-- fc id:T-A-077 sha:c143225d src:dodatky/a-pinouty.md:67 status:unchecked -->
+<!-- fc id:T-A-077 sha:c143225d src:dodatky/a-pinouty.md:67 status:not-a-claim -->
 ### T-A-077 · tablycya-shapka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -4349,7 +4349,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 ---
 
-<!-- fc id:T-A-098 sha:0e12c8c4 src:dodatky/a-pinouty.md:101 status:unchecked -->
+<!-- fc id:T-A-098 sha:0e12c8c4 src:dodatky/a-pinouty.md:101 status:not-a-claim -->
 ### T-A-098 · tablycya-shapka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -4790,7 +4790,7 @@ Octal PSRAM з'їдає GPIO 33–37. Перед розводкою плати �
 
 ---
 
-<!-- fc id:T-A-109 sha:7d05e143 src:dodatky/a-pinouty.md:114 status:unchecked -->
+<!-- fc id:T-A-109 sha:7d05e143 src:dodatky/a-pinouty.md:114 status:not-a-claim -->
 ### T-A-109 · tablycya-shapka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**

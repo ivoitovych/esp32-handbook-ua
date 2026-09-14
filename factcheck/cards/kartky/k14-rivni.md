@@ -182,7 +182,7 @@
 
 ---
 
-<!-- fc id:T-K14-007 sha:63c4e407 src:kartky/k14-rivni.md:19 status:unchecked -->
+<!-- fc id:T-K14-007 sha:63c4e407 src:kartky/k14-rivni.md:19 status:not-a-claim -->
 ### T-K14-007 · tablycya-shapka · `kartky/k14-rivni.md`
 
 **Твердження, коротко**

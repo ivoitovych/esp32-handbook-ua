@@ -109,7 +109,7 @@
 
 ---
 
-<!-- fc id:T-E-005 sha:17f406f5 src:dodatky/e-interfeysy.md:11 status:unchecked -->
+<!-- fc id:T-E-005 sha:17f406f5 src:dodatky/e-interfeysy.md:11 status:not-a-claim -->
 ### T-E-005 · tablycya-shapka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2551,7 +2551,7 @@ DS3231 і MPU6050 мають однакову адресу `0x68`. Разом н
 
 ---
 
-<!-- fc id:T-E-050 sha:f78815d4 src:dodatky/e-interfeysy.md:38 status:unchecked -->
+<!-- fc id:T-E-050 sha:f78815d4 src:dodatky/e-interfeysy.md:38 status:not-a-claim -->
 ### T-E-050 · tablycya-shapka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4400,7 +4400,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-090 sha:58e2d28c src:dodatky/e-interfeysy.md:64 status:unchecked -->
+<!-- fc id:T-E-090 sha:58e2d28c src:dodatky/e-interfeysy.md:64 status:not-a-claim -->
 ### T-E-090 · tablycya-shapka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5019,7 +5019,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-106 sha:929d7feb src:dodatky/e-interfeysy.md:78 status:unchecked -->
+<!-- fc id:T-E-106 sha:929d7feb src:dodatky/e-interfeysy.md:78 status:not-a-claim -->
 ### T-E-106 · tablycya-shapka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5181,7 +5181,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-111 sha:7371b723 src:dodatky/e-interfeysy.md:87 status:unchecked -->
+<!-- fc id:T-E-111 sha:7371b723 src:dodatky/e-interfeysy.md:87 status:not-a-claim -->
 ### T-E-111 · tablycya · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5387,7 +5387,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-118 sha:d058b8f8 src:dodatky/e-interfeysy.md:99 status:unchecked -->
+<!-- fc id:T-E-118 sha:d058b8f8 src:dodatky/e-interfeysy.md:99 status:not-a-claim -->
 ### T-E-118 · tablycya-shapka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5587,7 +5587,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-124 sha:06d56aa5 src:dodatky/e-interfeysy.md:107 status:unchecked -->
+<!-- fc id:T-E-124 sha:06d56aa5 src:dodatky/e-interfeysy.md:107 status:not-a-claim -->
 ### T-E-124 · tablycya-shapka · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -6411,7 +6411,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-144 sha:8d32b02f src:dodatky/e-interfeysy.md:123 status:unchecked -->
+<!-- fc id:T-E-144 sha:8d32b02f src:dodatky/e-interfeysy.md:123 status:not-a-claim -->
 ### T-E-144 · tablycya · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**

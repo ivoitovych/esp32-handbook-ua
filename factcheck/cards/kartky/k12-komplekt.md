@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-K12-003 sha:657b4a4a src:kartky/k12-komplekt.md:8 status:unchecked -->
+<!-- fc id:T-K12-003 sha:657b4a4a src:kartky/k12-komplekt.md:8 status:not-a-claim -->
 ### T-K12-003 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**
@@ -306,7 +306,7 @@
 
 ---
 
-<!-- fc id:T-K12-011 sha:c17398d2 src:kartky/k12-komplekt.md:20 status:unchecked -->
+<!-- fc id:T-K12-011 sha:c17398d2 src:kartky/k12-komplekt.md:20 status:not-a-claim -->
 ### T-K12-011 · tablycya · `kartky/k12-komplekt.md`
 
 **Твердження, коротко**

@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-K08-003 sha:a8ff677c src:kartky/k08-symptomy.md:6 status:unchecked -->
+<!-- fc id:T-K08-003 sha:a8ff677c src:kartky/k08-symptomy.md:6 status:not-a-claim -->
 ### T-K08-003 · tablycya-shapka · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**

@@ -226,7 +226,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-009 sha:6c734931 src:manual/41-ble.md:26 status:unchecked -->
+<!-- fc id:T-41-009 sha:6c734931 src:manual/41-ble.md:26 status:not-a-claim -->
 ### T-41-009 · tablycya-shapka · `manual/41-ble.md`
 
 **Твердження, коротко**

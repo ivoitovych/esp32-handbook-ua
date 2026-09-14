@@ -15,7 +15,7 @@ the state.
   checked against a source or by calculation
                            2385   29.4 %
   closed as a decision     3277   40.4 %   no external signal in the text
-  still open               2396   29.5 %
+  still open               2268   28.0 %
 ```
 
 The three lines do not add to the whole, and the gap is deliberate:
@@ -35,7 +35,7 @@ so it is counted in neither column. `METHOD.md`, Part II, says why.
 | `self-consistent` | 44 | 0.5 % | internal check — the book agrees with itself; no external confirmation |
 | `looked-not-found` | 8 | 0.1 % | looked and did not find — the work was done, the source is not visible |
 | `no-external-signal` | 3277 | 40.4 % | no signal in the text to check against — assigned mechanically, not checked |
-| `unchecked` | 2218 | 27.3 % | not checked |
+| `unchecked` | 2090 | 25.8 % | not checked |
 
 ## The weakest number on this page
 
@@ -80,7 +80,7 @@ is for.
 
 ## What is left
 
-2396 units are open: 2218 never looked at,
+2268 units are open: 2090 never looked at,
 178 waiting on a source that cannot be reached from here.
 
 The registry is complete by construction — every line of the book has

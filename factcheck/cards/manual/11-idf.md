@@ -849,7 +849,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-033 sha:c16c258a src:manual/11-idf.md:89 status:unchecked -->
+<!-- fc id:T-11-033 sha:c16c258a src:manual/11-idf.md:89 status:not-a-claim -->
 ### T-11-033 · tablycya-shapka · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1475,7 +1475,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-052 sha:4190b6cd src:manual/11-idf.md:131 status:unchecked -->
+<!-- fc id:T-11-052 sha:4190b6cd src:manual/11-idf.md:131 status:not-a-claim -->
 ### T-11-052 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2215,7 +2215,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-073 sha:0158929d src:manual/11-idf.md:192 status:unchecked -->
+<!-- fc id:T-11-073 sha:0158929d src:manual/11-idf.md:192 status:not-a-claim -->
 ### T-11-073 · tablycya · `manual/11-idf.md`
 
 **Твердження, коротко**

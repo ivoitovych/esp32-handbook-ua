@@ -95,7 +95,7 @@
 
 ---
 
-<!-- fc id:T-K01-005 sha:fe1d67a5 src:kartky/k01-triazh.md:10 status:unchecked -->
+<!-- fc id:T-K01-005 sha:fe1d67a5 src:kartky/k01-triazh.md:10 status:not-a-claim -->
 ### T-K01-005 · tablycya-shapka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -1044,7 +1044,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-037 sha:e8fd95bd src:kartky/k01-triazh.md:68 status:unchecked -->
+<!-- fc id:T-K01-037 sha:e8fd95bd src:kartky/k01-triazh.md:68 status:not-a-claim -->
 ### T-K01-037 · tablycya · `kartky/k01-triazh.md`
 
 **Твердження, коротко**

@@ -82,6 +82,7 @@ STATUSES = {
     "refuted": "refuted, or needs an edit",
     "unchecked": "not checked",
     "code-context": "context — a whole code block; the claims live in its lines",
+    "not-a-claim": "not a claim — a table's column names; the claims live in the rows beneath",
 }
 
 # The letters remain only as a translation for tools and callers that
@@ -92,7 +93,7 @@ LETTER_TO_STATUS = {
     "A": "verbatim", "B": "derived", "N": "absent-from-source",
     "D": "arithmetic", "C": "named-unreachable", "S": "self-consistent",
     "L": "looked-not-found", "E": "no-external-signal", "G": "refuted",
-    "F": "unchecked", "K": "code-context",
+    "F": "unchecked", "K": "code-context", "H": "not-a-claim",
 }
 STATUS_TO_LETTER = {v: k for k, v in LETTER_TO_STATUS.items()}
 
@@ -101,10 +102,12 @@ SIGN = {"A": "✅", "B": "🟢", "C": "🟡", "D": "🔵", "E": "⚪", "F": "�
         "G": "⚠", "K": "▫", "L": "🔎", "S": "🔁", "N": "🚫"}
 
 ALL_CLASSES = "".join(CLASS_TEXT)
-CLASSES_OF_UNITS = "".join(k for k in CLASS_TEXT if k != "K")  # no code blocks
+CLASSES_OF_UNITS = "".join(k for k in CLASS_TEXT
+                           if k not in ("K", "H"))  # neither is a claim
 # The same thing as WORDS, derived from the same source rather than
 # written out beside it.
-STATUSES_OF_UNITS = [s for s in STATUSES if s != "code-context"]
+NOT_CLAIMS = ("code-context", "not-a-claim")
+STATUSES_OF_UNITS = [s for s in STATUSES if s not in NOT_CLAIMS]
 
 RE_ZAPYS = re.compile(
     r"<!--\s*fc\s+id:(?P<id>[\w.-]+)\s+sha:(?P<sha>[0-9a-f]{8})"
@@ -216,6 +219,33 @@ RE_KOD_TVERDZHENNYA = re.compile(
 _sig = config.signal()
 RE_ZOVNISHNIY_SYGNAL = re.compile(_sig["broad"])
 RE_SYGNAL_STROGYY = re.compile(_sig["strict"])
+
+# A markdown table separator: `|---|---|`, with optional alignment colons.
+RE_TABLE_RULE = re.compile(r"\|(?:\s*:?-{2,}:?\s*\|)+$")
+
+
+def is_table_header(ryadky: list[str], ln: int) -> bool:
+    """Is the book line at `ln` (1-based) a table's header row?
+
+    Structural, not textual: a header is whatever stands directly above
+    the `|---|---|` separator. The alternative — judging by the text —
+    cannot separate a header from a two-column content row, and the
+    glossary is full of the latter (`| шум | noise |`), including
+    acronym expansions that are checkable and already checked.
+
+    Blank lines between the header and the separator are tolerated
+    because some tables in this book carry one; anything else beneath
+    means this is not a header.
+    """
+    i = ln - 1
+    if not (0 <= i < len(ryadky)) or not ryadky[i].lstrip().startswith("|"):
+        return False
+    for j in range(i + 1, min(i + 3, len(ryadky))):
+        s = ryadky[j].strip()
+        if not s:
+            continue
+        return bool(RE_TABLE_RULE.match(s))
+    return False
 
 
 # A line of an ASCII schematic: two pins joined by a line. Each such line
@@ -487,6 +517,7 @@ SLOVO_V_LITERU = {
     "verbatim": "A", "derived": "B", "named-unreachable": "C",
     "arithmetic": "D", "no-external-signal": "E", "unchecked": "F",
     "refuted": "G", "code-context": "K", "looked-not-found": "L",
+    "not-a-claim": "H",
     "self-consistent": "S", "absent-from-source": "N",
 }
 
@@ -546,9 +577,9 @@ def class_letter_of(z: dict, typovo: str = "F") -> str:
 # table once asserted "the order is descending strength" while not being
 # in that order.
 STRENGTH_BY_LETTER = {STATUS_TO_LETTER[w]: i
-        for i, w in enumerate(x for x in STATUSES if x != "code-context")}
+        for i, w in enumerate(x for x in STATUSES if x not in NOT_CLAIMS)}
 STRENGTH = {w: i
-              for i, w in enumerate(x for x in STATUSES if x != "code-context")}
+              for i, w in enumerate(x for x in STATUSES if x not in NOT_CLAIMS)}
 
 
 def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
@@ -1031,6 +1062,21 @@ def sketch() -> int:
                     klas = "K"
                 elif z:
                     klas = class_letter_of(z)
+                elif is_table_header(ryadky_knyhy, ln):
+                    # A table's header row names its columns. It asserts
+                    # nothing about the world, so no source can confirm or
+                    # refute it, and leaving it in the queue promises work
+                    # that must never be done. Detected from the markdown
+                    # separator beneath it, not from the text: a textual
+                    # test cannot tell "| GPIO | Note |" from the glossary
+                    # row "| noise | шум |", and sweeping the glossary
+                    # would erase acronym expansions that ARE checkable
+                    # and are already checked verbatim.
+                    #
+                    # Evidence still wins, above: eight header rows carry
+                    # real evidence, and a rule that overwrote them would
+                    # destroy work to tidy a count.
+                    klas = "H"
                 elif vyd == "proza" \
                         and not RE_SYGNAL_STROGYY.search(txt):
                     # A unit with no signal pointing at a source is
@@ -1211,12 +1257,16 @@ def status() -> int:
     zapysy = zbir_usikh()
     c = Counter(z["status"] for z in zapysy)
     kontekst = c.get("code-context", 0)
+    shapky = c.get("not-a-claim", 0)
     # Code blocks are context, not claims: percentages are computed over
     # claims, or the denominator is inflated by things nobody intended to
-    # check.
-    vsjogo = len(zapysy) - kontekst
+    # check. Table header rows are excluded for the same reason — but
+    # they are PRINTED rather than merely subtracted, because a count
+    # that silently vanishes is how a registry starts flattering itself.
+    vsjogo = len(zapysy) - kontekst - shapky
     print(f"\nclaim units: {vsjogo}"
-          f"  (+ {kontekst} code blocks as context)\n")
+          f"  (+ {kontekst} code blocks and {shapky} table headers "
+          f"as context)\n")
     zvireno = sum(c[k] for k in ("verbatim", "derived", "arithmetic"))
     for stan in STATUSES_OF_UNITS:
         n = c.get(stan, 0)

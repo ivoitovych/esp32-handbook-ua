@@ -94,7 +94,8 @@ def obydva(z: dict) -> dict:
             "rozrakhunok": "calculation"}
     SLOVO = {"A": "verbatim", "B": "derived", "C": "named-unreachable",
              "D": "arithmetic", "E": "no-external-signal", "F": "unchecked",
-             "G": "refuted", "K": "code-context", "L": "looked-not-found"}
+             "G": "refuted", "K": "code-context", "L": "looked-not-found",
+             "H": "not-a-claim"}
     for st, nov in MAPA.items():
         if st in z and nov not in z:
             z[nov] = SLOVO.get(str(z[st]), z[st]) if st == "klas" else z[st]

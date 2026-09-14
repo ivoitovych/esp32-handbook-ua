@@ -1744,7 +1744,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-066 sha:f12c5e0a src:manual/13-pio.md:202 status:unchecked -->
+<!-- fc id:T-13-066 sha:f12c5e0a src:manual/13-pio.md:202 status:not-a-claim -->
 ### T-13-066 · tablycya · `manual/13-pio.md`
 
 **Твердження, коротко**

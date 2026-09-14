@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-46-003 sha:df50d00f src:manual/46-dyspleyi.md:9 status:unchecked -->
+<!-- fc id:T-46-003 sha:df50d00f src:manual/46-dyspleyi.md:9 status:not-a-claim -->
 ### T-46-003 · tablycya-shapka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**

@@ -1264,7 +1264,7 @@ URL. Годиться для навчання і швидких перевіро
 
 ---
 
-<!-- fc id:T-12-051 sha:f12c5e0a src:manual/12-arduino.md:143 status:unchecked -->
+<!-- fc id:T-12-051 sha:f12c5e0a src:manual/12-arduino.md:143 status:not-a-claim -->
 ### T-12-051 · tablycya · `manual/12-arduino.md`
 
 **Твердження, коротко**

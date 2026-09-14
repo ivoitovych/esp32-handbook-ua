@@ -74,6 +74,7 @@ STATUSES = {
     "F": "unchecked",
     "G": "refuted",
     "K": "code-context",
+    "H": "not-a-claim",
 }
 
 

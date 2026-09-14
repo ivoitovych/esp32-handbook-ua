@@ -400,7 +400,7 @@
 
 ---
 
-<!-- fc id:T-UA--018 sha:82044681 src:inserts/ua-market-2026-08.md:50 status:unchecked -->
+<!-- fc id:T-UA--018 sha:82044681 src:inserts/ua-market-2026-08.md:50 status:not-a-claim -->
 ### T-UA--018 · tablycya · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**

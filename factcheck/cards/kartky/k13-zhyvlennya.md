@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-K13-006 sha:aec6f337 src:kartky/k13-zhyvlennya.md:20 status:unchecked -->
+<!-- fc id:T-K13-006 sha:aec6f337 src:kartky/k13-zhyvlennya.md:20 status:not-a-claim -->
 ### T-K13-006 · tablycya-shapka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1205,7 +1205,7 @@
 
 ---
 
-<!-- fc id:T-K13-038 sha:eafbf8b1 src:kartky/k13-zhyvlennya.md:70 status:unchecked -->
+<!-- fc id:T-K13-038 sha:eafbf8b1 src:kartky/k13-zhyvlennya.md:70 status:not-a-claim -->
 ### T-K13-038 · tablycya · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**

@@ -1559,7 +1559,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-054 sha:01bca69f src:manual/30-struktura.md:148 status:unchecked -->
+<!-- fc id:T-30-054 sha:01bca69f src:manual/30-struktura.md:148 status:not-a-claim -->
 ### T-30-054 · tablycya · `manual/30-struktura.md`
 
 **Твердження, коротко**

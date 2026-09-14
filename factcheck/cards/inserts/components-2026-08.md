@@ -121,7 +121,7 @@
 
 ---
 
-<!-- fc id:T-COM-006 sha:8239343e src:inserts/components-2026-08.md:15 status:unchecked -->
+<!-- fc id:T-COM-006 sha:8239343e src:inserts/components-2026-08.md:15 status:not-a-claim -->
 ### T-COM-006 · tablycya-shapka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -507,7 +507,7 @@
 
 ---
 
-<!-- fc id:T-COM-017 sha:2e5c1f17 src:inserts/components-2026-08.md:25 status:unchecked -->
+<!-- fc id:T-COM-017 sha:2e5c1f17 src:inserts/components-2026-08.md:25 status:not-a-claim -->
 ### T-COM-017 · tablycya-shapka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1083,7 +1083,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-031 sha:c2a64930 src:inserts/components-2026-08.md:40 status:unchecked -->
+<!-- fc id:T-COM-031 sha:c2a64930 src:inserts/components-2026-08.md:40 status:not-a-claim -->
 ### T-COM-031 · tablycya-shapka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1620,7 +1620,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-045 sha:65308be0 src:inserts/components-2026-08.md:52 status:unchecked -->
+<!-- fc id:T-COM-045 sha:65308be0 src:inserts/components-2026-08.md:52 status:not-a-claim -->
 ### T-COM-045 · tablycya-shapka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2149,7 +2149,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-058 sha:65308be0 src:inserts/components-2026-08.md:63 status:unchecked -->
+<!-- fc id:T-COM-058 sha:65308be0 src:inserts/components-2026-08.md:63 status:not-a-claim -->
 ### T-COM-058 · tablycya-shapka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2546,7 +2546,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-069 sha:deea9bde src:inserts/components-2026-08.md:73 status:unchecked -->
+<!-- fc id:T-COM-069 sha:deea9bde src:inserts/components-2026-08.md:73 status:not-a-claim -->
 ### T-COM-069 · tablycya · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2905,7 +2905,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-078 sha:2e0b8764 src:inserts/components-2026-08.md:86 status:unchecked -->
+<!-- fc id:T-COM-078 sha:2e0b8764 src:inserts/components-2026-08.md:86 status:not-a-claim -->
 ### T-COM-078 · tablycya · `inserts/components-2026-08.md`
 
 **Твердження, коротко**

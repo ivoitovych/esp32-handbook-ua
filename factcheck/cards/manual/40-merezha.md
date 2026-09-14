@@ -1791,7 +1791,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-062 sha:a84b93ca src:manual/40-merezha.md:141 status:unchecked -->
+<!-- fc id:T-40-062 sha:a84b93ca src:manual/40-merezha.md:141 status:not-a-claim -->
 ### T-40-062 · tablycya-shapka · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -2513,7 +2513,7 @@ TLS коштує ресурсів: кілька кілобайтів RAM на з
 
 ---
 
-<!-- fc id:T-40-090 sha:e3096115 src:manual/40-merezha.md:197 status:unchecked -->
+<!-- fc id:T-40-090 sha:e3096115 src:manual/40-merezha.md:197 status:not-a-claim -->
 ### T-40-090 · tablycya · `manual/40-merezha.md`
 
 **Твердження, коротко**

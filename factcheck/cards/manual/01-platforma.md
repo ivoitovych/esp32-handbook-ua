@@ -872,7 +872,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-037 sha:64bfb49d src:manual/01-platforma.md:89 status:unchecked -->
+<!-- fc id:T-01-037 sha:64bfb49d src:manual/01-platforma.md:89 status:not-a-claim -->
 ### T-01-037 · tablycya-shapka · `manual/01-platforma.md`
 
 **Твердження, коротко**

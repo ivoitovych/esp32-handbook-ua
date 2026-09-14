@@ -331,7 +331,7 @@
 
 ---
 
-<!-- fc id:T-44-014 sha:3b9f79e3 src:manual/44-neznayomyy-modul.md:31 status:unchecked -->
+<!-- fc id:T-44-014 sha:3b9f79e3 src:manual/44-neznayomyy-modul.md:31 status:not-a-claim -->
 ### T-44-014 · tablycya-shapka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -808,7 +808,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-029 sha:b2e25812 src:manual/44-neznayomyy-modul.md:58 status:unchecked -->
+<!-- fc id:T-44-029 sha:b2e25812 src:manual/44-neznayomyy-modul.md:58 status:not-a-claim -->
 ### T-44-029 · tablycya-shapka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**

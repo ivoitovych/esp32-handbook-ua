@@ -76,7 +76,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-003 sha:398c272f src:kartky/k07-panika.md:15 status:unchecked -->
+<!-- fc id:T-K07-003 sha:398c272f src:kartky/k07-panika.md:15 status:not-a-claim -->
 ### T-K07-003 · tablycya-shapka · `kartky/k07-panika.md`
 
 **Твердження, коротко**

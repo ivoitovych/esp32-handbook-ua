@@ -2125,7 +2125,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-063 sha:5b298442 src:manual/18-rozdily-fleshu.md:132 status:unchecked -->
+<!-- fc id:T-18-063 sha:5b298442 src:manual/18-rozdily-fleshu.md:132 status:not-a-claim -->
 ### T-18-063 · tablycya-shapka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**

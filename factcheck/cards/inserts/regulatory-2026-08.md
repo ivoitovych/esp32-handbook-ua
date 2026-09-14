@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-REG-014 sha:b0a58b02 src:inserts/regulatory-2026-08.md:38 status:unchecked -->
+<!-- fc id:T-REG-014 sha:b0a58b02 src:inserts/regulatory-2026-08.md:38 status:not-a-claim -->
 ### T-REG-014 · tablycya · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**

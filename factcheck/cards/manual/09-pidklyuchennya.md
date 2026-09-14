@@ -304,7 +304,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-013 sha:52c860f9 src:manual/09-pidklyuchennya.md:28 status:unchecked -->
+<!-- fc id:T-09-013 sha:52c860f9 src:manual/09-pidklyuchennya.md:28 status:not-a-claim -->
 ### T-09-013 · tablycya-shapka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**

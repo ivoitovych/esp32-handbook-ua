@@ -118,7 +118,7 @@
 
 ---
 
-<!-- fc id:T-63-005 sha:a460c66e src:manual/63-proj-mist.md:17 status:unchecked -->
+<!-- fc id:T-63-005 sha:a460c66e src:manual/63-proj-mist.md:17 status:not-a-claim -->
 ### T-63-005 · tablycya-shapka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**

@@ -1011,7 +1011,7 @@
 
 ---
 
-<!-- fc id:T-28-036 sha:5be84064 src:manual/28-analizator.md:65 status:unchecked -->
+<!-- fc id:T-28-036 sha:5be84064 src:manual/28-analizator.md:65 status:not-a-claim -->
 ### T-28-036 · tablycya · `manual/28-analizator.md`
 
 **Твердження, коротко**

@@ -104,7 +104,7 @@
 
 ---
 
-<!-- fc id:T-08-005 sha:efc92258 src:manual/08-platy.md:12 status:unchecked -->
+<!-- fc id:T-08-005 sha:efc92258 src:manual/08-platy.md:12 status:not-a-claim -->
 ### T-08-005 · tablycya-shapka · `manual/08-platy.md`
 
 **Твердження, коротко**

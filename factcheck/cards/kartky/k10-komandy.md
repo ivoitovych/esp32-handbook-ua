@@ -1452,7 +1452,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-040 sha:3c153db1 src:kartky/k10-komandy.md:63 status:unchecked -->
+<!-- fc id:T-K10-040 sha:3c153db1 src:kartky/k10-komandy.md:63 status:not-a-claim -->
 ### T-K10-040 · tablycya-shapka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**

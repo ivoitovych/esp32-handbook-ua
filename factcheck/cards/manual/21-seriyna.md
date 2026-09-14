@@ -1798,7 +1798,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-064 sha:75def2ca src:manual/21-seriyna.md:151 status:unchecked -->
+<!-- fc id:T-21-064 sha:75def2ca src:manual/21-seriyna.md:151 status:not-a-claim -->
 ### T-21-064 · tablycya-shapka · `manual/21-seriyna.md`
 
 **Твердження, коротко**

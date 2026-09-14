@@ -397,7 +397,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-014 sha:ea9dc162 src:manual/26-zboyi.md:39 status:unchecked -->
+<!-- fc id:T-26-014 sha:ea9dc162 src:manual/26-zboyi.md:39 status:not-a-claim -->
 ### T-26-014 · tablycya-shapka · `manual/26-zboyi.md`
 
 **Твердження, коротко**

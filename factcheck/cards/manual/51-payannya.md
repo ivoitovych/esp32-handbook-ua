@@ -1267,7 +1267,7 @@
 
 ---
 
-<!-- fc id:T-51-052 sha:6ffe87bf src:manual/51-payannya.md:114 status:unchecked -->
+<!-- fc id:T-51-052 sha:6ffe87bf src:manual/51-payannya.md:114 status:not-a-claim -->
 ### T-51-052 · tablycya-shapka · `manual/51-payannya.md`
 
 **Твердження, коротко**

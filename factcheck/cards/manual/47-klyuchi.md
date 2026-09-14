@@ -101,7 +101,7 @@
 
 ---
 
-<!-- fc id:T-47-004 sha:20df8172 src:manual/47-klyuchi.md:12 status:unchecked -->
+<!-- fc id:T-47-004 sha:20df8172 src:manual/47-klyuchi.md:12 status:not-a-claim -->
 ### T-47-004 · tablycya-shapka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**

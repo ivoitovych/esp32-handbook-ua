@@ -921,7 +921,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-028 sha:36969ccb src:dodatky/c-komandy.md:63 status:unchecked -->
+<!-- fc id:T-C-028 sha:36969ccb src:dodatky/c-komandy.md:63 status:not-a-claim -->
 ### T-C-028 · tablycya · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2798,7 +2798,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-076 sha:828c36b3 src:dodatky/c-komandy.md:158 status:unchecked -->
+<!-- fc id:T-C-076 sha:828c36b3 src:dodatky/c-komandy.md:158 status:not-a-claim -->
 ### T-C-076 · tablycya-shapka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3563,7 +3563,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-101 sha:3c153db1 src:dodatky/c-komandy.md:196 status:unchecked -->
+<!-- fc id:T-C-101 sha:3c153db1 src:dodatky/c-komandy.md:196 status:not-a-claim -->
 ### T-C-101 · tablycya-shapka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**

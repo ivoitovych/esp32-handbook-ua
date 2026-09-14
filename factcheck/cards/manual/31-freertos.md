@@ -604,7 +604,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-021 sha:ad41371f src:manual/31-freertos.md:70 status:unchecked -->
+<!-- fc id:T-31-021 sha:ad41371f src:manual/31-freertos.md:70 status:not-a-claim -->
 ### T-31-021 · tablycya · `manual/31-freertos.md`
 
 **Твердження, коротко**

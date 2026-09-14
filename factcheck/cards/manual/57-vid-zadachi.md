@@ -366,7 +366,7 @@
 
 ---
 
-<!-- fc id:T-57-016 sha:ad44a030 src:manual/57-vid-zadachi.md:47 status:unchecked -->
+<!-- fc id:T-57-016 sha:ad44a030 src:manual/57-vid-zadachi.md:47 status:not-a-claim -->
 ### T-57-016 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -883,7 +883,7 @@
 
 ---
 
-<!-- fc id:T-57-036 sha:c8a90c7b src:manual/57-vid-zadachi.md:99 status:unchecked -->
+<!-- fc id:T-57-036 sha:c8a90c7b src:manual/57-vid-zadachi.md:99 status:not-a-claim -->
 ### T-57-036 · tablycya · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**

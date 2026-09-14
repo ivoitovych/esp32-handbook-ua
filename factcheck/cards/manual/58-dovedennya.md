@@ -1330,7 +1330,7 @@
 
 ---
 
-<!-- fc id:T-58-057 sha:b51c0d67 src:manual/58-dovedennya.md:131 status:unchecked -->
+<!-- fc id:T-58-057 sha:b51c0d67 src:manual/58-dovedennya.md:131 status:not-a-claim -->
 ### T-58-057 · tablycya · `manual/58-dovedennya.md`
 
 **Твердження, коротко**

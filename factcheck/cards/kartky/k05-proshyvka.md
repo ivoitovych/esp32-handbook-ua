@@ -50,7 +50,7 @@
 
 ---
 
-<!-- fc id:T-K05-003 sha:ad965e81 src:kartky/k05-proshyvka.md:9 status:unchecked -->
+<!-- fc id:T-K05-003 sha:ad965e81 src:kartky/k05-proshyvka.md:9 status:not-a-claim -->
 ### T-K05-003 · tablycya-shapka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**

@@ -2039,7 +2039,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 
 ---
 
-<!-- fc id:T-32-068 sha:c1d67a99 src:manual/32-nadiynist.md:174 status:unchecked -->
+<!-- fc id:T-32-068 sha:c1d67a99 src:manual/32-nadiynist.md:174 status:not-a-claim -->
 ### T-32-068 · tablycya · `manual/32-nadiynist.md`
 
 **Твердження, коротко**

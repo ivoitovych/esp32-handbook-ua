@@ -241,7 +241,7 @@
 
 ---
 
-<!-- fc id:T-02-011 sha:8630e49d src:manual/02-chipy.md:30 status:unchecked -->
+<!-- fc id:T-02-011 sha:8630e49d src:manual/02-chipy.md:30 status:not-a-claim -->
 ### T-02-011 · tablycya-shapka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4459,7 +4459,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-120 sha:49610759 src:manual/02-chipy.md:178 status:unchecked -->
+<!-- fc id:T-02-120 sha:49610759 src:manual/02-chipy.md:178 status:not-a-claim -->
 ### T-02-120 · tablycya-shapka · `manual/02-chipy.md`
 
 **Твердження, коротко**

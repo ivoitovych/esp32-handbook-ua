@@ -549,7 +549,7 @@
 
 ---
 
-<!-- fc id:T-04-019 sha:8d66d74f src:manual/04-peryferiya.md:51 status:unchecked -->
+<!-- fc id:T-04-019 sha:8d66d74f src:manual/04-peryferiya.md:51 status:not-a-claim -->
 ### T-04-019 · tablycya-shapka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1235,7 +1235,7 @@
 
 ---
 
-<!-- fc id:T-04-036 sha:8d66d74f src:manual/04-peryferiya.md:64 status:unchecked -->
+<!-- fc id:T-04-036 sha:8d66d74f src:manual/04-peryferiya.md:64 status:not-a-claim -->
 ### T-04-036 · tablycya-shapka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1621,7 +1621,7 @@
 
 ---
 
-<!-- fc id:T-04-047 sha:8d66d74f src:manual/04-peryferiya.md:74 status:unchecked -->
+<!-- fc id:T-04-047 sha:8d66d74f src:manual/04-peryferiya.md:74 status:not-a-claim -->
 ### T-04-047 · tablycya-shapka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2175,7 +2175,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-067 sha:60a19ebb src:manual/04-peryferiya.md:113 status:unchecked -->
+<!-- fc id:T-04-067 sha:60a19ebb src:manual/04-peryferiya.md:113 status:not-a-claim -->
 ### T-04-067 · tablycya-shapka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**

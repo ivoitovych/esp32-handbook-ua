@@ -73,7 +73,7 @@
 
 ---
 
-<!-- fc id:T-54-004 sha:e0544f2d src:manual/54-korpus.md:13 status:unchecked -->
+<!-- fc id:T-54-004 sha:e0544f2d src:manual/54-korpus.md:13 status:not-a-claim -->
 ### T-54-004 · tablycya-shapka · `manual/54-korpus.md`
 
 **Твердження, коротко**

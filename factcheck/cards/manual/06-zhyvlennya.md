@@ -440,7 +440,7 @@
 
 ---
 
-<!-- fc id:T-06-018 sha:08449eca src:manual/06-zhyvlennya.md:41 status:unchecked -->
+<!-- fc id:T-06-018 sha:08449eca src:manual/06-zhyvlennya.md:41 status:not-a-claim -->
 ### T-06-018 · tablycya · `manual/06-zhyvlennya.md`
 
 **Твердження, коротко**

@@ -1231,7 +1231,7 @@ YAML-описом перевіряється, що залізо зібране �
 
 ---
 
-<!-- fc id:T-14-049 sha:d2d88463 src:manual/14-shvydki-shlyakhy.md:132 status:unchecked -->
+<!-- fc id:T-14-049 sha:d2d88463 src:manual/14-shvydki-shlyakhy.md:132 status:not-a-claim -->
 ### T-14-049 · tablycya-shapka · `manual/14-shvydki-shlyakhy.md`
 
 **Твердження, коротко**

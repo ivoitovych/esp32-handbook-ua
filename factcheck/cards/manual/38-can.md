@@ -778,7 +778,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-030 sha:ec1fc8f4 src:manual/38-can.md:70 status:unchecked -->
+<!-- fc id:T-38-030 sha:ec1fc8f4 src:manual/38-can.md:70 status:not-a-claim -->
 ### T-38-030 · tablycya · `manual/38-can.md`
 
 **Твердження, коротко**

@@ -721,7 +721,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-027 sha:f44b1e43 src:manual/16-boot.md:68 status:unchecked -->
+<!-- fc id:T-16-027 sha:f44b1e43 src:manual/16-boot.md:68 status:not-a-claim -->
 ### T-16-027 · tablycya · `manual/16-boot.md`
 
 **Твердження, коротко**

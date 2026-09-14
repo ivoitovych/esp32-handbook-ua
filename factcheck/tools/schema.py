@@ -90,7 +90,8 @@ POTREBUYE = {
 # > це рід 3: працює, вертає нуль, і нуль нічого не означає.
 STATUSES = set(POTREBUYE) | {
     "E", "no-external-signal", "F", "unchecked", "G", "refuted",
-    "K", "code-context"}
+    "K", "code-context",
+    "H", "not-a-claim"}
 
 RE_KARTKA = re.compile(
     r"<!-- fc id:(?P<id>\S+) sha:\S+ src:(?P<src>\S+) status:\S+ -->\n"

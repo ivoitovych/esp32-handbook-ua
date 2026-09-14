@@ -148,7 +148,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-005 sha:8511d99d src:kartky/k15-seriyna.md:25 status:unchecked -->
+<!-- fc id:T-K15-005 sha:8511d99d src:kartky/k15-seriyna.md:25 status:not-a-claim -->
 ### T-K15-005 · tablycya-shapka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -800,7 +800,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-023 sha:75def2ca src:kartky/k15-seriyna.md:41 status:unchecked -->
+<!-- fc id:T-K15-023 sha:75def2ca src:kartky/k15-seriyna.md:41 status:not-a-claim -->
 ### T-K15-023 · tablycya-shapka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**

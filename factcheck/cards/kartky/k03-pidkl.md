@@ -186,7 +186,7 @@
 
 ---
 
-<!-- fc id:T-K03-009 sha:b1c0759b src:kartky/k03-pidkl.md:24 status:unchecked -->
+<!-- fc id:T-K03-009 sha:b1c0759b src:kartky/k03-pidkl.md:24 status:not-a-claim -->
 ### T-K03-009 · tablycya-shapka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**

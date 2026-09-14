@@ -95,7 +95,7 @@
 
 ---
 
-<!-- fc id:T-B-005 sha:56ebed13 src:dodatky/b-symptomy.md:18 status:unchecked -->
+<!-- fc id:T-B-005 sha:56ebed13 src:dodatky/b-symptomy.md:18 status:not-a-claim -->
 ### T-B-005 · tablycya-shapka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2228,7 +2228,7 @@
 
 ---
 
-<!-- fc id:T-B-042 sha:56ebed13 src:dodatky/b-symptomy.md:35 status:unchecked -->
+<!-- fc id:T-B-042 sha:56ebed13 src:dodatky/b-symptomy.md:35 status:not-a-claim -->
 ### T-B-042 · tablycya-shapka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3463,7 +3463,7 @@
 
 ---
 
-<!-- fc id:T-B-070 sha:56ebed13 src:dodatky/b-symptomy.md:49 status:unchecked -->
+<!-- fc id:T-B-070 sha:56ebed13 src:dodatky/b-symptomy.md:49 status:not-a-claim -->
 ### T-B-070 · tablycya-shapka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4303,7 +4303,7 @@
 
 ---
 
-<!-- fc id:T-B-092 sha:56ebed13 src:dodatky/b-symptomy.md:61 status:unchecked -->
+<!-- fc id:T-B-092 sha:56ebed13 src:dodatky/b-symptomy.md:61 status:not-a-claim -->
 ### T-B-092 · tablycya-shapka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6746,7 +6746,7 @@
 
 ---
 
-<!-- fc id:T-B-141 sha:56ebed13 src:dodatky/b-symptomy.md:82 status:unchecked -->
+<!-- fc id:T-B-141 sha:56ebed13 src:dodatky/b-symptomy.md:82 status:not-a-claim -->
 ### T-B-141 · tablycya-shapka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8979,7 +8979,7 @@
 
 ---
 
-<!-- fc id:T-B-187 sha:56ebed13 src:dodatky/b-symptomy.md:102 status:unchecked -->
+<!-- fc id:T-B-187 sha:56ebed13 src:dodatky/b-symptomy.md:102 status:not-a-claim -->
 ### T-B-187 · tablycya-shapka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10597,7 +10597,7 @@
 
 ---
 
-<!-- fc id:T-B-224 sha:56ebed13 src:dodatky/b-symptomy.md:119 status:unchecked -->
+<!-- fc id:T-B-224 sha:56ebed13 src:dodatky/b-symptomy.md:119 status:not-a-claim -->
 ### T-B-224 · tablycya-shapka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11616,7 +11616,7 @@
 
 ---
 
-<!-- fc id:T-B-249 sha:56ebed13 src:dodatky/b-symptomy.md:132 status:unchecked -->
+<!-- fc id:T-B-249 sha:56ebed13 src:dodatky/b-symptomy.md:132 status:not-a-claim -->
 ### T-B-249 · tablycya-shapka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**

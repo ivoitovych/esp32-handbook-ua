@@ -75,7 +75,7 @@
 
 ---
 
-<!-- fc id:T-G-004 sha:5afcab96 src:dodatky/g-glosariy.md:11 status:unchecked -->
+<!-- fc id:T-G-004 sha:5afcab96 src:dodatky/g-glosariy.md:11 status:not-a-claim -->
 ### T-G-004 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -978,7 +978,7 @@
 
 ---
 
-<!-- fc id:T-G-024 sha:ed9d6f40 src:dodatky/g-glosariy.md:37 status:unchecked -->
+<!-- fc id:T-G-024 sha:ed9d6f40 src:dodatky/g-glosariy.md:37 status:not-a-claim -->
 ### T-G-024 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -2483,7 +2483,7 @@
 
 ---
 
-<!-- fc id:T-G-053 sha:ed9d6f40 src:dodatky/g-glosariy.md:70 status:unchecked -->
+<!-- fc id:T-G-053 sha:ed9d6f40 src:dodatky/g-glosariy.md:70 status:not-a-claim -->
 ### T-G-053 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -4471,7 +4471,7 @@
 
 ---
 
-<!-- fc id:T-G-087 sha:ed9d6f40 src:dodatky/g-glosariy.md:108 status:unchecked -->
+<!-- fc id:T-G-087 sha:ed9d6f40 src:dodatky/g-glosariy.md:108 status:not-a-claim -->
 ### T-G-087 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -5389,7 +5389,7 @@
 
 ---
 
-<!-- fc id:T-G-107 sha:ed9d6f40 src:dodatky/g-glosariy.md:132 status:unchecked -->
+<!-- fc id:T-G-107 sha:ed9d6f40 src:dodatky/g-glosariy.md:132 status:not-a-claim -->
 ### T-G-107 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6233,7 +6233,7 @@
 
 ---
 
-<!-- fc id:T-G-126 sha:ed9d6f40 src:dodatky/g-glosariy.md:155 status:unchecked -->
+<!-- fc id:T-G-126 sha:ed9d6f40 src:dodatky/g-glosariy.md:155 status:not-a-claim -->
 ### T-G-126 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -6688,7 +6688,7 @@
 
 ---
 
-<!-- fc id:T-G-139 sha:51221672 src:dodatky/g-glosariy.md:172 status:unchecked -->
+<!-- fc id:T-G-139 sha:51221672 src:dodatky/g-glosariy.md:172 status:not-a-claim -->
 ### T-G-139 · tablycya · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**

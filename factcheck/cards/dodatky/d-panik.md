@@ -98,7 +98,7 @@
 
 ---
 
-<!-- fc id:T-D-004 sha:1b3814f6 src:dodatky/d-panik.md:10 status:unchecked -->
+<!-- fc id:T-D-004 sha:1b3814f6 src:dodatky/d-panik.md:10 status:not-a-claim -->
 ### T-D-004 · tablycya-shapka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -2579,7 +2579,7 @@
 
 ---
 
-<!-- fc id:T-D-055 sha:9789ed83 src:dodatky/d-panik.md:40 status:unchecked -->
+<!-- fc id:T-D-055 sha:9789ed83 src:dodatky/d-panik.md:40 status:not-a-claim -->
 ### T-D-055 · tablycya · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -3028,7 +3028,7 @@
 
 ---
 
-<!-- fc id:T-D-066 sha:7431ff81 src:dodatky/d-panik.md:62 status:unchecked -->
+<!-- fc id:T-D-066 sha:7431ff81 src:dodatky/d-panik.md:62 status:not-a-claim -->
 ### T-D-066 · tablycya · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -3785,7 +3785,7 @@ download mode.
 
 ---
 
-<!-- fc id:T-D-085 sha:57d15832 src:dodatky/d-panik.md:97 status:unchecked -->
+<!-- fc id:T-D-085 sha:57d15832 src:dodatky/d-panik.md:97 status:not-a-claim -->
 ### T-D-085 · tablycya-shapka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -4630,7 +4630,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-110 sha:fbdc8285 src:dodatky/d-panik.md:165 status:unchecked -->
+<!-- fc id:T-D-110 sha:fbdc8285 src:dodatky/d-panik.md:165 status:not-a-claim -->
 ### T-D-110 · tablycya-shapka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5579,7 +5579,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-131 sha:ea9dc162 src:dodatky/d-panik.md:189 status:unchecked -->
+<!-- fc id:T-D-131 sha:ea9dc162 src:dodatky/d-panik.md:189 status:not-a-claim -->
 ### T-D-131 · tablycya-shapka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -6636,7 +6636,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-148 sha:a66ac160 src:dodatky/d-panik.md:202 status:unchecked -->
+<!-- fc id:T-D-148 sha:a66ac160 src:dodatky/d-panik.md:202 status:not-a-claim -->
 ### T-D-148 · tablycya · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -7246,7 +7246,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-167 sha:ef04690f src:dodatky/d-panik.md:249 status:unchecked -->
+<!-- fc id:T-D-167 sha:ef04690f src:dodatky/d-panik.md:249 status:not-a-claim -->
 ### T-D-167 · tablycya · `dodatky/d-panik.md`
 
 **Твердження, коротко**

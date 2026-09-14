@@ -99,7 +99,7 @@
 
 ---
 
-<!-- fc id:T-25-005 sha:f9235e5a src:manual/25-log.md:16 status:unchecked -->
+<!-- fc id:T-25-005 sha:f9235e5a src:manual/25-log.md:16 status:not-a-claim -->
 ### T-25-005 · tablycya-shapka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2048,7 +2048,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-068 sha:6526e058 src:manual/25-log.md:150 status:unchecked -->
+<!-- fc id:T-25-068 sha:6526e058 src:manual/25-log.md:150 status:not-a-claim -->
 ### T-25-068 · tablycya · `manual/25-log.md`
 
 **Твердження, коротко**

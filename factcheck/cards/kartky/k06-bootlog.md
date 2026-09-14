@@ -168,7 +168,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-007 sha:a9766590 src:kartky/k06-bootlog.md:15 status:unchecked -->
+<!-- fc id:T-K06-007 sha:a9766590 src:kartky/k06-bootlog.md:15 status:not-a-claim -->
 ### T-K06-007 · tablycya-shapka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -1411,7 +1411,7 @@ I (56) boot: ## Label      Usage      Type ST Offset   Length
 
 ---
 
-<!-- fc id:T-K06-037 sha:f219b8f9 src:kartky/k06-bootlog.md:63 status:unchecked -->
+<!-- fc id:T-K06-037 sha:f219b8f9 src:kartky/k06-bootlog.md:63 status:not-a-claim -->
 ### T-K06-037 · tablycya · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**

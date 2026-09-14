@@ -1940,7 +1940,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 
 ---
 
-<!-- fc id:T-39-065 sha:53097888 src:manual/39-wifi.md:169 status:unchecked -->
+<!-- fc id:T-39-065 sha:53097888 src:manual/39-wifi.md:169 status:not-a-claim -->
 ### T-39-065 · tablycya · `manual/39-wifi.md`
 
 **Твердження, коротко**

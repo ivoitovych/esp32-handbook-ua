@@ -196,7 +196,7 @@
 
 ---
 
-<!-- fc id:T-62-009 sha:648244e3 src:manual/62-proj-keruvannya.md:30 status:unchecked -->
+<!-- fc id:T-62-009 sha:648244e3 src:manual/62-proj-keruvannya.md:30 status:not-a-claim -->
 ### T-62-009 · tablycya-shapka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -596,7 +596,7 @@
 
 ---
 
-<!-- fc id:T-62-020 sha:1d1a44b6 src:manual/62-proj-keruvannya.md:39 status:unchecked -->
+<!-- fc id:T-62-020 sha:1d1a44b6 src:manual/62-proj-keruvannya.md:39 status:not-a-claim -->
 ### T-62-020 · tablycya-shapka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -3721,7 +3721,7 @@ static void task_keruvannya(void *arg) {
 
 ---
 
-<!-- fc id:T-62-114 sha:57e0ed68 src:manual/62-proj-keruvannya.md:245 status:unchecked -->
+<!-- fc id:T-62-114 sha:57e0ed68 src:manual/62-proj-keruvannya.md:245 status:not-a-claim -->
 ### T-62-114 · tablycya · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -4909,7 +4909,7 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
 
 ---
 
-<!-- fc id:T-62-150 sha:4a8e99b7 src:manual/62-proj-keruvannya.md:344 status:unchecked -->
+<!-- fc id:T-62-150 sha:4a8e99b7 src:manual/62-proj-keruvannya.md:344 status:not-a-claim -->
 ### T-62-150 · tablycya · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**

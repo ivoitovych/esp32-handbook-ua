@@ -190,7 +190,7 @@
 
 ---
 
-<!-- fc id:T-23-009 sha:2ce83042 src:manual/23-triazh.md:20 status:unchecked -->
+<!-- fc id:T-23-009 sha:2ce83042 src:manual/23-triazh.md:20 status:not-a-claim -->
 ### T-23-009 · tablycya-shapka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2154,7 +2154,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-076 sha:281d3db1 src:manual/23-triazh.md:156 status:unchecked -->
+<!-- fc id:T-23-076 sha:281d3db1 src:manual/23-triazh.md:156 status:not-a-claim -->
 ### T-23-076 · tablycya-shapka · `manual/23-triazh.md`
 
 **Твердження, коротко**

@@ -119,7 +119,7 @@
 
 ---
 
-<!-- fc id:T-43-006 sha:242d3d96 src:manual/43-lora.md:16 status:unchecked -->
+<!-- fc id:T-43-006 sha:242d3d96 src:manual/43-lora.md:16 status:not-a-claim -->
 ### T-43-006 · tablycya-shapka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -2318,7 +2318,7 @@ LoRaWAN — мережева надбудова над LoRa: шлюзи, сер�
 
 ---
 
-<!-- fc id:T-43-088 sha:ca0a48aa src:manual/43-lora.md:205 status:unchecked -->
+<!-- fc id:T-43-088 sha:ca0a48aa src:manual/43-lora.md:205 status:not-a-claim -->
 ### T-43-088 · tablycya · `manual/43-lora.md`
 
 **Твердження, коротко**

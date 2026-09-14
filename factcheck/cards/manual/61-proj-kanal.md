@@ -207,7 +207,7 @@
 
 ---
 
-<!-- fc id:T-61-010 sha:464bdd0d src:manual/61-proj-kanal.md:28 status:unchecked -->
+<!-- fc id:T-61-010 sha:464bdd0d src:manual/61-proj-kanal.md:28 status:not-a-claim -->
 ### T-61-010 · tablycya-shapka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**

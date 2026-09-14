@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-60-009 sha:648244e3 src:manual/60-proj-loger.md:27 status:unchecked -->
+<!-- fc id:T-60-009 sha:648244e3 src:manual/60-proj-loger.md:27 status:not-a-claim -->
 ### T-60-009 · tablycya-shapka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4288,7 +4288,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-116 sha:6f45d6d6 src:manual/60-proj-loger.md:313 status:unchecked -->
+<!-- fc id:T-60-116 sha:6f45d6d6 src:manual/60-proj-loger.md:313 status:not-a-claim -->
 ### T-60-116 · tablycya-shapka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**

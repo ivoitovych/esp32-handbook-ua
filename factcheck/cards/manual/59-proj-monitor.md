@@ -252,7 +252,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-011 sha:648244e3 src:manual/59-proj-monitor.md:31 status:unchecked -->
+<!-- fc id:T-59-011 sha:648244e3 src:manual/59-proj-monitor.md:31 status:not-a-claim -->
 ### T-59-011 · tablycya-shapka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**

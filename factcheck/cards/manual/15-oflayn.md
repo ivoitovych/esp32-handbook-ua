@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-15-002 sha:2fe5f681 src:manual/15-oflayn.md:9 status:unchecked -->
+<!-- fc id:T-15-002 sha:2fe5f681 src:manual/15-oflayn.md:9 status:not-a-claim -->
 ### T-15-002 · tablycya-shapka · `manual/15-oflayn.md`
 
 **Твердження, коротко**

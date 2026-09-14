@@ -464,7 +464,7 @@
 
 ---
 
-<!-- fc id:T-00-019 sha:bfc1ad7f src:manual/00-pro-dovidnyk.md:49 status:unchecked -->
+<!-- fc id:T-00-019 sha:bfc1ad7f src:manual/00-pro-dovidnyk.md:49 status:not-a-claim -->
 ### T-00-019 · tablycya · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**

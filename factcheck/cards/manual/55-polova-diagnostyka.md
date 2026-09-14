@@ -981,7 +981,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 
 ---
 
-<!-- fc id:T-55-043 sha:9d71d6cc src:manual/55-polova-diagnostyka.md:91 status:unchecked -->
+<!-- fc id:T-55-043 sha:9d71d6cc src:manual/55-polova-diagnostyka.md:91 status:not-a-claim -->
 ### T-55-043 · tablycya · `manual/55-polova-diagnostyka.md`
 
 **Твердження, коротко**

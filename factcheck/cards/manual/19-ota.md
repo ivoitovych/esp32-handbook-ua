@@ -133,7 +133,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-006 sha:41ec9b71 src:manual/19-ota.md:15 status:unchecked -->
+<!-- fc id:T-19-006 sha:41ec9b71 src:manual/19-ota.md:15 status:not-a-claim -->
 ### T-19-006 · tablycya-shapka · `manual/19-ota.md`
 
 **Твердження, коротко**

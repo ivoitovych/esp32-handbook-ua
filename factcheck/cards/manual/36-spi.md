@@ -54,7 +54,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-003 sha:f47ef35a src:manual/36-spi.md:9 status:unchecked -->
+<!-- fc id:T-36-003 sha:f47ef35a src:manual/36-spi.md:9 status:not-a-claim -->
 ### T-36-003 · tablycya-shapka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -634,7 +634,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-019 sha:d757bd07 src:manual/36-spi.md:34 status:unchecked -->
+<!-- fc id:T-36-019 sha:d757bd07 src:manual/36-spi.md:34 status:not-a-claim -->
 ### T-36-019 · tablycya-shapka · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3302,7 +3302,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-099 sha:f906627c src:manual/36-spi.md:174 status:unchecked -->
+<!-- fc id:T-36-099 sha:f906627c src:manual/36-spi.md:174 status:not-a-claim -->
 ### T-36-099 · tablycya-shapka · `manual/36-spi.md`
 
 **Твердження, коротко**
