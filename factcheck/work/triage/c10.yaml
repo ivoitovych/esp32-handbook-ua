@@ -1,202 +1,202 @@
 - id: T-C-075
-  rid: pozyciya
-  chomu: поради щодо опцій команди
+  kind: position
+  why: поради щодо опцій команди
 - id: T-Z-056
-  rid: ne-tverdzhennya
-  chomu: рядок покажчика із кодами помилок
+  kind: not-a-claim
+  why: рядок покажчика із кодами помилок
 - id: T-K13-015
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці діагностики
+  kind: not-a-claim
+  why: рядок таблиці діагностики
 - id: T-04-124
-  rid: dzherelo-ye
-  chomu: soc_caps.h із datasheet
-  shukaty: ESP32 Technical Reference Manual, розділ про периферію
+  kind: source-exists
+  why: soc_caps.h із datasheet
+  look_for: ESP32 Technical Reference Manual, розділ про периферію
 - id: T-09-004
-  rid: ne-tverdzhennya
-  chomu: навігація — посилання на розділ
+  kind: not-a-claim
+  why: навігація — посилання на розділ
 - id: T-16-058
-  rid: pozyciya
-  chomu: інструкція щодо використання кнопки
+  kind: position
+  why: інструкція щодо використання кнопки
 - id: T-22-039
-  rid: ne-tverdzhennya
-  chomu: пояснення про записування чисел
+  kind: not-a-claim
+  why: пояснення про записування чисел
 - id: T-23-037
-  rid: dzherelo-ye
-  chomu: електротехнічна вимога — напруга KZ
-  shukaty: ESP32 datasheet, розділ про живлення й електричні характеристики
+  kind: source-exists
+  why: електротехнічна вимога — напруга KZ
+  look_for: ESP32 datasheet, розділ про живлення й електричні характеристики
 - id: T-24-053
-  rid: ne-tverdzhennya
-  chomu: пункт списку обмежень
+  kind: not-a-claim
+  why: пункт списку обмежень
 - id: T-24-073
-  rid: pozyciya
-  chomu: порада щодо методики розслідування
+  kind: position
+  why: порада щодо методики розслідування
 - id: T-24-029
-  rid: ne-tverdzhennya
-  chomu: опис проблеми в спеціальному блоці
+  kind: not-a-claim
+  why: опис проблеми в спеціальному блоці
 - id: T-25-068
-  rid: ne-tverdzhennya
-  chomu: заголовок таблиці
+  kind: not-a-claim
+  why: заголовок таблиці
 - id: T-25-015
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці порівняння терміналів
+  kind: not-a-claim
+  why: рядок таблиці порівняння терміналів
 - id: T-25-022
-  rid: pozyciya
-  chomu: порада про вибір терміналу
+  kind: position
+  why: порада про вибір терміналу
 - id: T-26-062
-  rid: ne-tverdzhennya
-  chomu: пояснення про watchdog у дампі
+  kind: not-a-claim
+  why: пояснення про watchdog у дампі
 - id: T-26-098
-  rid: ne-tverdzhennya
-  chomu: причинне пояснення про послідовність помилок
+  kind: not-a-claim
+  why: причинне пояснення про послідовність помилок
 - id: T-26-009
-  rid: ne-tverdzhennya
-  chomu: пояснення поля дампу
+  kind: not-a-claim
+  why: пояснення поля дампу
 - id: T-27-044
-  rid: ne-tverdzhennya
-  chomu: критерії вибору інструмента
+  kind: not-a-claim
+  why: критерії вибору інструмента
 - id: T-27-023
-  rid: ne-tverdzhennya
-  chomu: опис процесу встановлення брейкпоїнту
+  kind: not-a-claim
+  why: опис процесу встановлення брейкпоїнту
 - id: T-28-064
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-28-081
-  rid: pozyciya
-  chomu: оцінка співвідношення вартості до користі
+  kind: position
+  why: оцінка співвідношення вартості до користі
 - id: T-28-032
-  rid: ne-tverdzhennya
-  chomu: опис можливостей програми
+  kind: not-a-claim
+  why: опис можливостей програми
 - id: T-29-044
-  rid: pozyciya
-  chomu: рекомендація що перевірити
+  kind: position
+  why: рекомендація що перевірити
 - id: T-29-072
-  rid: pozyciya
-  chomu: рекомендація про перевірку землі
+  kind: position
+  why: рекомендація про перевірку землі
 - id: T-29-097
-  rid: ne-tverdzhennya
-  chomu: опис часу виконання операції
+  kind: not-a-claim
+  why: опис часу виконання операції
 - id: T-29-003
-  rid: ne-tverdzhennya
-  chomu: посилання на картку
+  kind: not-a-claim
+  why: посилання на картку
 - id: T-30-004
-  rid: ne-tverdzhennya
-  chomu: пояснення про викликання app_main
+  kind: not-a-claim
+  why: пояснення про викликання app_main
 - id: T-30-008
-  rid: ne-tverdzhennya
-  chomu: пояснення про доступність функцій
+  kind: not-a-claim
+  why: пояснення про доступність функцій
 - id: T-30-018
-  rid: ne-tverdzhennya
-  chomu: пояснення про стек локальних змінних
+  kind: not-a-claim
+  why: пояснення про стек локальних змінних
 - id: T-31-039
-  rid: ne-tverdzhennya
-  chomu: приклад типової помилки
+  kind: not-a-claim
+  why: приклад типової помилки
 - id: T-31-079
-  rid: ne-tverdzhennya
-  chomu: пояснення про дребезг контактів
+  kind: not-a-claim
+  why: пояснення про дребезг контактів
 - id: T-31-010
-  rid: ne-tverdzhennya
-  chomu: пояснення про завершення задачі
+  kind: not-a-claim
+  why: пояснення про завершення задачі
 - id: T-32-048
-  rid: ne-tverdzhennya
-  chomu: опис коли годувати watchdog
+  kind: not-a-claim
+  why: опис коли годувати watchdog
 - id: T-32-076
-  rid: ne-tverdzhennya
-  chomu: аргументація про вибір системи
+  kind: not-a-claim
+  why: аргументація про вибір системи
 - id: T-32-022
-  rid: pozyciya
-  chomu: рекомендація про повторення операції
+  kind: position
+  why: рекомендація про повторення операції
 - id: T-33-056
-  rid: dzherelo-ye
-  chomu: вимога про окремо живлення серво
-  shukaty: datasheet серво, розділ про живлення й максимальний струм
+  kind: source-exists
+  why: вимога про окремо живлення серво
+  look_for: datasheet серво, розділ про живлення й максимальний струм
 - id: T-33-088
-  rid: ne-tverdzhennya
-  chomu: пояснення обмеження ADC2 при Wi-Fi
+  kind: not-a-claim
+  why: пояснення обмеження ADC2 при Wi-Fi
 - id: T-33-126
-  rid: pozyciya
-  chomu: порада як керувати WS2812
+  kind: position
+  why: порада як керувати WS2812
 - id: T-34-046
-  rid: ne-tverdzhennya
-  chomu: пояснення про термінатори на платі
+  kind: not-a-claim
+  why: пояснення про термінатори на платі
 - id: T-34-066
-  rid: ne-tverdzhennya
-  chomu: опис таймаута й відновлення
+  kind: not-a-claim
+  why: опис таймаута й відновлення
 - id: T-34-027
-  rid: dzherelo-ye
-  chomu: електротехнічна вимога спільної землі
-  shukaty: UART protocol specification, розділ про електричні з'єднання
+  kind: source-exists
+  why: електротехнічна вимога спільної землі
+  look_for: UART protocol specification, розділ про електричні з'єднання
 - id: T-35-070
-  rid: ne-tverdzhennya
-  chomu: пояснення про таймаут ESP32
+  kind: not-a-claim
+  why: пояснення про таймаут ESP32
 - id: T-35-002
-  rid: ne-tverdzhennya
-  chomu: пояснення характеристик I²C
+  kind: not-a-claim
+  why: пояснення характеристик I²C
 - id: T-36-072
-  rid: ne-tverdzhennya
-  chomu: рядок коду конфігурації
+  kind: not-a-claim
+  why: рядок коду конфігурації
 - id: T-36-092
-  rid: ne-tverdzhennya
-  chomu: пояснення про CS в SPI
+  kind: not-a-claim
+  why: пояснення про CS в SPI
 - id: T-36-123
-  rid: dzherelo-ye
-  chomu: вимога режиму SPI із datasheet
-  shukaty: пристрою SPI datasheet, розділ про таймування й режими передачі
+  kind: source-exists
+  why: вимога режиму SPI із datasheet
+  look_for: пристрою SPI datasheet, розділ про таймування й режими передачі
 - id: T-36-035
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці режимів SPI
+  kind: not-a-claim
+  why: рядок таблиці режимів SPI
 - id: T-37-039
-  rid: ne-tverdzhennya
-  chomu: оцінка OneWire стабільності
+  kind: not-a-claim
+  why: оцінка OneWire стабільності
 - id: T-37-018
-  rid: ne-tverdzhennya
-  chomu: пояснення про похибку датчика
+  kind: not-a-claim
+  why: пояснення про похибку датчика
 - id: T-38-004
-  rid: ne-tverdzhennya
-  chomu: пояснення ролі CAN для ESP32
+  kind: not-a-claim
+  why: пояснення ролі CAN для ESP32
 - id: T-38-074
-  rid: ne-tverdzhennya
-  chomu: опис методу прослуховування
+  kind: not-a-claim
+  why: опис методу прослуховування
 - id: T-38-023
-  rid: ne-tverdzhennya
-  chomu: пояснення про диференціальну пару
+  kind: not-a-claim
+  why: пояснення про диференціальну пару
 - id: T-39-050
-  rid: ne-tverdzhennya
-  chomu: пояснення про важливість скидання паузи
+  kind: not-a-claim
+  why: пояснення про важливість скидання паузи
 - id: T-39-075
-  rid: pozyciya
-  chomu: досвідна оцінка дальності сигналу
+  kind: position
+  why: досвідна оцінка дальності сигналу
 - id: T-39-099
-  rid: pozyciya
-  chomu: твердження про вплив металу на радіо
+  kind: position
+  why: твердження про вплив металу на радіо
 - id: T-39-037
-  rid: ne-tverdzhennya
-  chomu: посилання на розділ про FreeRTOS
+  kind: not-a-claim
+  why: посилання на розділ про FreeRTOS
 - id: T-40-064
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці
+  kind: not-a-claim
+  why: рядок таблиці
 - id: T-40-083
-  rid: pozyciya
-  chomu: порада не вимикати перевірку
+  kind: position
+  why: порада не вимикати перевірку
 - id: T-40-102
-  rid: ne-tverdzhennya
-  chomu: пояснення про поведінку без часу
+  kind: not-a-claim
+  why: пояснення про поведінку без часу
 - id: T-40-003
-  rid: ne-tverdzhennya
-  chomu: пояснення гарантій TCP
+  kind: not-a-claim
+  why: пояснення гарантій TCP
 - id: T-41-059
-  rid: ne-tverdzhennya
-  chomu: пояснення впливу інтервалу з'єднання
+  kind: not-a-claim
+  why: пояснення впливу інтервалу з'єднання
 - id: T-41-080
-  rid: ne-tverdzhennya
-  chomu: пояснення ролі інтервалу реклами
+  kind: not-a-claim
+  why: пояснення ролі інтервалу реклами
 - id: T-41-023
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці порівняння BLE варіантів
+  kind: not-a-claim
+  why: рядок таблиці порівняння BLE варіантів
 - id: T-41-043
-  rid: ne-tverdzhennya
-  chomu: пояснення характеристик NimBLE
+  kind: not-a-claim
+  why: пояснення характеристик NimBLE
 - id: T-42-057
-  rid: ne-tverdzhennya
-  chomu: пояснення про канал пристрою
+  kind: not-a-claim
+  why: пояснення про канал пристрою
 - id: T-42-077
-  rid: ne-tverdzhennya
-  chomu: пояснення про дальність ESP-NOW
+  kind: not-a-claim
+  why: пояснення про дальність ESP-NOW

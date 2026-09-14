@@ -1,195 +1,190 @@
 - id: T-A-061
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-B-205
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-B-251
-  rid: pozyciya
-  chomu: Рекомендація дії, коли пристрій не працює у корпусі
+  kind: position
+  why: Рекомендація дії, коли пристрій не працює у корпусі
 - id: T-B-079
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-C-050
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-C-041
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF User Guide, flash burn
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF User Guide,
-    flash burn». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
-    джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: ESP-IDF User Guide, flash burn
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF User Guide, flash burn». Одиниця лишається
+    в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-D-192
-  rid: pozyciya
-  chomu: Пояснення логіки причин та наслідків
+  kind: position
+  why: Пояснення логіки причин та наслідків
 - id: T-E-148
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-E-097
-  rid: dzherelo-ye
-  shukaty: MH-Z19B NDIR CO2 Sensor Datasheet
+  kind: source-exists
+  look_for: MH-Z19B NDIR CO2 Sensor Datasheet
 - id: T-F-021
-  rid: pozyciya
-  chomu: Рекомендація для офлайнового сценарію
+  kind: position
+  why: Рекомендація для офлайнового сценарію
 - id: T-G-118
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-G-012
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-G-046
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-H-003
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-Z-037
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-Z-125
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-COM-032
-  rid: dzherelo-ye
-  shukaty: DRV8833 Dual H-Bridge Motor Driver Datasheet
+  kind: source-exists
+  look_for: DRV8833 Dual H-Bridge Motor Driver Datasheet
 - id: T-REG-021
-  rid: dzherelo-ye
-  shukaty: ETSI EN303645 LoRa
+  kind: source-exists
+  look_for: ETSI EN303645 LoRa
 - id: T-UA--034
-  rid: pozyciya
-  chomu: Рекомендація щодо планування проєкту
+  kind: position
+  why: Рекомендація щодо планування проєкту
 - id: T-K02-021
-  rid: pozyciya
-  chomu: Вказання на перевірку результату
+  kind: position
+  why: Вказання на перевірку результату
 - id: T-K05-012
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K07-033
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF Memory Layout and Loading
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Memory Layout
-    and Loading». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
-    джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: ESP-IDF Memory Layout and Loading
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Memory Layout and Loading». Одиниця
+    лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему
+    за документ.'
 - id: T-K08-009
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K10-040
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K13-006
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K14-016
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-K15-032
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-00-080
-  rid: pozyciya
-  chomu: Стильне правило щодо названий команд та функцій
+  kind: position
+  why: Стильне правило щодо названий команд та функцій
 - id: T-00-003
-  rid: pozyciya
-  chomu: Рекомендація щодо використання курсу та довідника
+  kind: position
+  why: Рекомендація щодо використання курсу та довідника
 - id: T-01-107
-  rid: pozyciya
-  chomu: Обґрунтування необхідності документації в полі
+  kind: position
+  why: Обґрунтування необхідності документації в полі
 - id: T-01-060
-  rid: dzherelo-ye
-  shukaty: STM32 Series Datasheet Startup Time
+  kind: source-exists
+  look_for: STM32 Series Datasheet Startup Time
 - id: T-02-137
-  rid: dzherelo-ye
-  shukaty: ESP32-S3 and ESP32-C3 Series Datasheet
+  kind: source-exists
+  look_for: ESP32-S3 and ESP32-C3 Series Datasheet
 - id: T-02-044
-  rid: dzherelo-ye
-  shukaty: ESP32-S3 Series Datasheet
+  kind: source-exists
+  look_for: ESP32-S3 Series Datasheet
 - id: T-03-012
-  rid: dzherelo-ye
-  shukaty: ESP32 Technical Reference Manual
+  kind: source-exists
+  look_for: ESP32 Technical Reference Manual
 - id: T-04-093
-  rid: dzherelo-ye
-  shukaty: ESP32-S2 Series Datasheet I²S
+  kind: source-exists
+  look_for: ESP32-S2 Series Datasheet I²S
 - id: T-04-044
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-05-080
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-05-015
-  rid: pozyciya
-  chomu: Аналогія для пояснення проблеми з дротами
+  kind: position
+  why: Аналогія для пояснення проблеми з дротами
 - id: T-06-087
-  rid: pozyciya
-  chomu: Рекомендація щодо розрахунків для автономних пристроїв
+  kind: position
+  why: Рекомендація щодо розрахунків для автономних пристроїв
 - id: T-06-021
-  rid: dzherelo-ye
-  shukaty: ESP32 Series Datasheet Power Consumption
+  kind: source-exists
+  look_for: ESP32 Series Datasheet Power Consumption
 - id: T-07-009
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-08-071
-  rid: pozyciya
-  chomu: Порада щодо діагностики на дешевому етапі
+  kind: position
+  why: Порада щодо діагностики на дешевому етапі
 - id: T-08-045
-  rid: dzherelo-ye
-  shukaty: ESP32 Technical Reference Manual UART
+  kind: source-exists
+  look_for: ESP32 Technical Reference Manual UART
 - id: T-09-008
-  rid: dzherelo-ye
-  shukaty: ESP32 DevKit-C Guide
+  kind: source-exists
+  look_for: ESP32 DevKit-C Guide
 - id: T-09-039
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-10-066
-  rid: pozyciya
-  chomu: Рекомендація щодо вибору та кількості компонентів
+  kind: position
+  why: Рекомендація щодо вибору та кількості компонентів
 - id: T-11-044
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF Bootloader Backtrace
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Bootloader
-    Backtrace». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
-    джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: ESP-IDF Bootloader Backtrace
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Bootloader Backtrace». Одиниця лишається
+    в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-11-108
-  rid: pozyciya
-  chomu: Оцінка ролі Arduino core для прототипування
+  kind: position
+  why: Оцінка ролі Arduino core для прототипування
 - id: T-12-043
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-12-028
-  rid: pozyciya
-  chomu: Оцінка якості сторонніх бібліотек
+  kind: position
+  why: Оцінка якості сторонніх бібліотек
 - id: T-13-069
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-14-044
-  rid: ne-rozibrav
-  bulo-shukaty: Wokwi Simulator Reference
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «Wokwi Simulator Reference».
-    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова
-    видавати тему за документ.'
+  kind: undecided
+  was_look_for: Wokwi Simulator Reference
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «Wokwi Simulator Reference». Одиниця лишається
+    в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-14-002
-  rid: pozyciya
-  chomu: Оцінка швидкості розробки різних підходів
+  kind: position
+  why: Оцінка швидкості розробки різних підходів
 - id: T-15-009
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-15-052
-  rid: pozyciya
-  chomu: Рекомендація щодо часу збірки
+  kind: position
+  why: Рекомендація щодо часу збірки
 - id: T-16-003
-  rid: pozyciya
-  chomu: Оцінка цінності теоретичних знань для діагностики
+  kind: position
+  why: Оцінка цінності теоретичних знань для діагностики
 - id: T-17-131
-  rid: dzherelo-ye
-  shukaty: ESP32 Flash Memory Specification
+  kind: source-exists
+  look_for: ESP32 Flash Memory Specification
 - id: T-18-076
-  rid: ne-rozibrav
-  bulo-shukaty: LittleFS Reference Manual
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «LittleFS Reference
-    Manual». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела,
-    а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: LittleFS Reference Manual
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «LittleFS Reference Manual». Одиниця лишається
+    в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-18-028
-  rid: dzherelo-ye
-  shukaty: ESP32 Technical Reference Manual PHY
+  kind: source-exists
+  look_for: ESP32 Technical Reference Manual PHY
 - id: T-19-011
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF Partition Tables
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Partition Tables».
-    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова
-    видавати тему за документ.'
+  kind: undecided
+  was_look_for: ESP-IDF Partition Tables
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Partition Tables». Одиниця лишається
+    в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-20-054
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-20-032
-  rid: pozyciya
-  chomu: Вказання на перевірку розміру файлу
+  kind: position
+  why: Вказання на перевірку розміру файлу
 - id: T-21-079
-  rid: dzherelo-ye
-  shukaty: ESP32 Core Dump Specification
+  kind: source-exists
+  look_for: ESP32 Core Dump Specification
 - id: T-22-006
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-22-031
-  rid: pozyciya
-  chomu: Обґрунтування прискіпливості до запису
+  kind: position
+  why: Обґрунтування прискіпливості до запису
 - id: T-23-093
-  rid: ne-rozibrav
+  kind: undecided

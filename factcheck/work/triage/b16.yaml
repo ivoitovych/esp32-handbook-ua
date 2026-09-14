@@ -1,200 +1,200 @@
 - id: T-A-066
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-B-208
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-B-254
-  rid: pozyciya
-  chomu: діагностична рекомендація щодо розв'язування проблеми зв'язку
+  kind: position
+  why: діагностична рекомендація щодо розв'язування проблеми зв'язку
 - id: T-B-082
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-C-053
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-D-092
-  rid: pozyciya
-  chomu: попередження про помилкову інтерпретацію таблиці бітів
+  kind: position
+  why: попередження про помилкову інтерпретацію таблиці бітів
 - id: T-D-001
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-E-153
-  rid: pozyciya
-  chomu: суб'єктивна оцінка якості компонентів на ринку
+  kind: position
+  why: суб'єктивна оцінка якості компонентів на ринку
 - id: T-E-100
-  rid: dzherelo-ye
-  shukaty: SIM800 / SIM7600 модулі спецификації
-  chomu: модулі та їхні можливості для стільникового зв'язку - технічні параметри
+  kind: source-exists
+  look_for: SIM800 / SIM7600 модулі спецификації
+  why: модулі та їхні можливості для стільникового зв'язку - технічні параметри
 - id: T-F-026
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-G-121
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-G-168
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-G-049
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-H-005
-  rid: dzherelo-ye
-  shukaty: ESP-IDF Programming Guide офіціальна документація
-  chomu: це основна документація фреймворку від розробника
+  kind: source-exists
+  look_for: ESP-IDF Programming Guide офіціальна документація
+  why: це основна документація фреймворку від розробника
 - id: T-Z-041
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-Z-128
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-COM-036
-  rid: dzherelo-ye
-  shukaty: DRV8825 драйвер моторів специфікація струм та мікрокроки
-  chomu: електричні параметри та можливості замінника чипа
+  kind: source-exists
+  look_for: DRV8825 драйвер моторів специфікація струм та мікрокроки
+  why: електричні параметри та можливості замінника чипа
 - id: T-REG-024
-  rid: dzherelo-ye
-  shukaty: ESP-IDF Programming Guide regulatory налаштування каналів потужність
-  chomu: документована функціональність регіональних обмежень фреймворку
+  kind: source-exists
+  look_for: ESP-IDF Programming Guide regulatory налаштування каналів потужність
+  why: документована функціональність регіональних обмежень фреймворку
 - id: T-UA--037
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K02-024
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K05-022
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K08-013
-  rid: dzherelo-ye
-  shukaty: ESP32 datasheet reset причини коди rst значення
-  chomu: код помилки в логу відповідає документованому коду reset
+  kind: source-exists
+  look_for: ESP32 datasheet reset причини коди rst значення
+  why: код помилки в логу відповідає документованому коду reset
 - id: T-K09-004
-  rid: dzherelo-ye
-  shukaty: ESP32 Technical Reference Manual GPIO pin allocation flash reserved
-  chomu: технічні обмеження на використання GPIO пінів занятих флешем
+  kind: source-exists
+  look_for: ESP32 Technical Reference Manual GPIO pin allocation flash reserved
+  why: технічні обмеження на використання GPIO пінів занятих флешем
 - id: T-K11-010
-  rid: pozyciya
-  chomu: порада про безпеку при тестуванні схем та плат
+  kind: position
+  why: порада про безпеку при тестуванні схем та плат
 - id: T-K13-009
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K14-027
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K15-036
-  rid: pozyciya
-  chomu: аналіз архітектурних наслідків єдиного ключа для безпеки
+  kind: position
+  why: аналіз архітектурних наслідків єдиного ключа для безпеки
 - id: T-00-083
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-00-038
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-01-008
-  rid: pozyciya
-  chomu: спостереження про поведінку користувачів при виборі розв'язків
+  kind: position
+  why: спостереження про поведінку користувачів при виборі розв'язків
 - id: T-01-070
-  rid: pozyciya
-  chomu: оцінка можливостей STM32 для роботи реального часу
+  kind: position
+  why: оцінка можливостей STM32 для роботи реального часу
 - id: T-02-141
-  rid: pozyciya
-  chomu: аналіз причин архітектурних рішень в розробці плат
+  kind: position
+  why: аналіз причин архітектурних рішень в розробці плат
 - id: T-02-055
-  rid: dzherelo-ye
-  shukaty: ESP32-S2 datasheet BLE підтримка можливості
-  chomu: технічна характеристика чипа про наявність функції
+  kind: source-exists
+  look_for: ESP32-S2 datasheet BLE підтримка можливості
+  why: технічна характеристика чипа про наявність функції
 - id: T-03-002
-  rid: pozyciya
-  chomu: педагогічне пояснення коли розуміння архітектури стає необхідним
+  kind: position
+  why: педагогічне пояснення коли розуміння архітектури стає необхідним
 - id: T-04-096
-  rid: dzherelo-ye
-  shukaty: ESP32-C6 datasheet I²S інтерфейси кількість
-  chomu: технічна характеристика кількості інтерфейсів на чипі
+  kind: source-exists
+  look_for: ESP32-C6 datasheet I²S інтерфейси кількість
+  why: технічна характеристика кількості інтерфейсів на чипі
 - id: T-04-003
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-05-084
-  rid: ne-rozibrav
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «Electronics Fundamentals
-    textbook common ground signal voltage reference». Одиниця лишається в черзі як `ne-rozibrav`
-    — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
-  bulo-shukaty: Electronics Fundamentals textbook common ground signal voltage reference
+  kind: undecided
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «Electronics Fundamentals textbook common ground
+    signal voltage reference». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
+    джерела, а відмова видавати тему за документ.'
+  was_look_for: Electronics Fundamentals textbook common ground signal voltage reference
 - id: T-05-132
-  rid: pozyciya
-  chomu: рекомендація про вибір схемного рішення для навантажень
+  kind: position
+  why: рекомендація про вибір схемного рішення для навантажень
 - id: T-06-091
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-06-025
-  rid: dzherelo-ye
-  shukaty: ESP32 datasheet spozhyvannya nerivnomirne dynamichnyi strum
-  chomu: характеристика споживання енергії чипа
+  kind: source-exists
+  look_for: ESP32 datasheet spozhyvannya nerivnomirne dynamichnyi strum
+  why: характеристика споживання енергії чипа
 - id: T-07-107
-  rid: pozyciya
-  chomu: пояснення наслідків неправильного використання GPIO для діагностики
+  kind: position
+  why: пояснення наслідків неправильного використання GPIO для діагностики
 - id: T-08-074
-  rid: pozyciya
-  chomu: спостереження про архітектуру плат та їхні відмінності
+  kind: position
+  why: спостереження про архітектуру плат та їхні відмінності
 - id: T-08-051
-  rid: dzherelo-ye
-  shukaty: OV2640 camera board ESP32 pins GPIO0 USB специфікація
-  chomu: фізичні та електричні характеристики конкретної платформи
+  kind: source-exists
+  look_for: OV2640 camera board ESP32 pins GPIO0 USB специфікація
+  why: фізичні та електричні характеристики конкретної платформи
 - id: T-09-092
-  rid: pozyciya
-  chomu: діагностичне пояснення стану платформи при проблемах
+  kind: position
+  why: діагностичне пояснення стану платформи при проблемах
 - id: T-09-043
-  rid: dzherelo-ye
-  shukaty: POSIX Serial Interface Specification USB CDC ACM device driver
-  chomu: назви пристроїв залежать від типу драйвера та операційної системи
+  kind: source-exists
+  look_for: POSIX Serial Interface Specification USB CDC ACM device driver
+  why: назви пристроїв залежать від типу драйвера та операційної системи
 - id: T-10-009
-  rid: pozyciya
-  chomu: оцінка надійності та довголіття інструменту
+  kind: position
+  why: оцінка надійності та довголіття інструменту
 - id: T-11-052
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-11-112
-  rid: ne-rozibrav
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF build system
-    set-target sdkconfig поведінка». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд
-    про відсутність джерела, а відмова видавати тему за документ.'
-  bulo-shukaty: ESP-IDF build system set-target sdkconfig поведінка
+  kind: undecided
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF build system set-target sdkconfig
+    поведінка». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова
+    видавати тему за документ.'
+  was_look_for: ESP-IDF build system set-target sdkconfig поведінка
 - id: T-12-046
-  rid: pozyciya
-  chomu: оцінка придатності Arduino IDE для навчання та реальних проектів
+  kind: position
+  why: оцінка придатності Arduino IDE для навчання та реальних проектів
 - id: T-12-032
-  rid: pozyciya
-  chomu: рекомендація щодо вирішення проблем сумісності бібліотек
+  kind: position
+  why: рекомендація щодо вирішення проблем сумісності бібліотек
 - id: T-13-072
-  rid: dzherelo-ye
-  shukaty: Arduino Core Specification release notes version history
-  chomu: інформація про версійність та відставання офіційної платформи
+  kind: source-exists
+  look_for: Arduino Core Specification release notes version history
+  why: інформація про версійність та відставання офіційної платформи
 - id: T-14-005
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-14-014
-  rid: ne-rozibrav
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «MicroPython Reference
-    Manual garbage collection behavior». Одиниця лишається в черзі як `ne-rozibrav` — це не
-    присуд про відсутність джерела, а відмова видавати тему за документ.'
-  bulo-shukaty: MicroPython Reference Manual garbage collection behavior
+  kind: undecided
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «MicroPython Reference Manual garbage collection
+    behavior». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова
+    видавати тему за документ.'
+  was_look_for: MicroPython Reference Manual garbage collection behavior
 - id: T-15-071
-  rid: pozyciya
-  chomu: рекомендація про порядок налагодження перед початком роботи з фреймворком
+  kind: position
+  why: рекомендація про порядок налагодження перед початком роботи з фреймворком
 - id: T-15-055
-  rid: dzherelo-ye
-  shukaty: ESP-IDF Programming Guide datasheet TRM Technical Reference Manual
-  chomu: офіціальні документи фреймворку та технічні посібники чипів
+  kind: source-exists
+  look_for: ESP-IDF Programming Guide datasheet TRM Technical Reference Manual
+  why: офіціальні документи фреймворку та технічні посібники чипів
 - id: T-16-043
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-17-135
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-18-079
-  rid: ne-rozibrav
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF components
-    LittleFS вбудований окремий». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд
-    про відсутність джерела, а відмова видавати тему за документ.'
-  bulo-shukaty: ESP-IDF components LittleFS вбудований окремий
+  kind: undecided
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF components LittleFS вбудований окремий».
+    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати
+    тему за документ.'
+  was_look_for: ESP-IDF components LittleFS вбудований окремий
 - id: T-18-032
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-19-085
-  rid: pozyciya
-  chomu: аналіз типової помилки користувачів при завантаженні файлів образів
+  kind: position
+  why: аналіз типової помилки користувачів при завантаженні файлів образів
 - id: T-20-007
-  rid: dzherelo-ye
-  shukaty: Flash memory JEDEC specification SPI NAND destructive overwrite behavior
-  chomu: характеристика поведінки та можливостей флеш-пам'яті
+  kind: source-exists
+  look_for: Flash memory JEDEC specification SPI NAND destructive overwrite behavior
+  why: характеристика поведінки та можливостей флеш-пам'яті
 - id: T-20-006
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-21-082
-  rid: pozyciya
-  chomu: аналіз факторів що впливають на відтворюваність збірки образів
+  kind: position
+  why: аналіз факторів що впливають на відтворюваність збірки образів
 - id: T-22-052
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-22-035
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-23-007
-  rid: pozyciya
-  chomu: рекомендація про перевірку інформації безпосередньо на устаткуванні
+  kind: position
+  why: рекомендація про перевірку інформації безпосередньо на устаткуванні

@@ -1,240 +1,175 @@
 - id: T-A-010
-  rid: ne-tverdzhennya
-  chomu: GPIO пін з обмеженням
-
+  kind: not-a-claim
+  why: GPIO пін з обмеженням
 - id: T-A-083
-  rid: ne-tverdzhennya
-  chomu: GPIO пін з обмеженням
-
+  kind: not-a-claim
+  why: GPIO пін з обмеженням
 - id: T-B-226
-  rid: pozyciya
-  chomu: рекомендація дії для вирішення проблеми
-
+  kind: position
+  why: рекомендація дії для вирішення проблеми
 - id: T-B-039
-  rid: ne-tverdzhennya
-  chomu: цитата помилки
-
+  kind: not-a-claim
+  why: цитата помилки
 - id: T-B-002
-  rid: pozyciya
-  chomu: порада для уникнення багів
-
+  kind: position
+  why: порада для уникнення багів
 - id: T-C-090
-  rid: ne-tverdzhennya
-  chomu: приклад команди
-
+  kind: not-a-claim
+  why: приклад команди
 - id: T-D-148
-  rid: ne-tverdzhennya
-  chomu: заголовок таблиці
-
+  kind: not-a-claim
+  why: заголовок таблиці
 - id: T-D-083
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-E-057
-  rid: ne-tverdzhennya
-  chomu: режим інтерфейсу
-
+  kind: not-a-claim
+  why: режим інтерфейсу
 - id: T-E-116
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці
-
+  kind: not-a-claim
+  why: рядок таблиці
 - id: T-G-096
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію
-
+  kind: not-a-claim
+  why: рядок глосарію
 - id: T-G-134
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію
-
+  kind: not-a-claim
+  why: рядок глосарію
 - id: T-G-023
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію
-
+  kind: not-a-claim
+  why: рядок глосарію
 - id: T-G-064
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію
-
+  kind: not-a-claim
+  why: рядок глосарію
 - id: T-H-022
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-Z-001
-  rid: ne-tverdzhennya
-  chomu: правило індексу
-
+  kind: not-a-claim
+  why: правило індексу
 - id: T-Z-157
-  rid: ne-tverdzhennya
-  chomu: рядок покажчика
-
+  kind: not-a-claim
+  why: рядок покажчика
 - id: T-COM-075
-  rid: ne-tverdzhennya
-  chomu: номіналь
-
+  kind: not-a-claim
+  why: номіналь
 - id: T-UA--007
-  rid: pozyciya
-  chomu: оцінка вартості
-
+  kind: position
+  why: оцінка вартості
 - id: T-K01-028
-  rid: ne-tverdzhennya
-  chomu: рядок чек-листу
-
+  kind: not-a-claim
+  why: рядок чек-листу
 - id: T-K03-001
-  rid: pozyciya
-  chomu: рекомендація послідовності
-
+  kind: position
+  why: рекомендація послідовності
 - id: T-K06-031
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-K08-037
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці
-
+  kind: not-a-claim
+  why: рядок таблиці
 - id: T-K09-025
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-K12-008
-  rid: ne-tverdzhennya
-  chomu: характеристика матеріалу
-
+  kind: not-a-claim
+  why: характеристика матеріалу
 - id: T-K13-024
-  rid: pozyciya
-  chomu: рекомендація вибору
-
+  kind: position
+  why: рекомендація вибору
 - id: T-K15-010
-  rid: ne-tverdzhennya
-  chomu: крок чек-листу
-
+  kind: not-a-claim
+  why: крок чек-листу
 - id: T-00-056
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-00-015
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-01-085
-  rid: pozyciya
-  chomu: оцінка класів
-
+  kind: position
+  why: оцінка класів
 - id: T-01-018
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-02-103
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-02-014
-  rid: ne-tverdzhennya
-  chomu: таблиця
-
+  kind: not-a-claim
+  why: таблиця
 - id: T-03-055
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-03-032
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-04-147
-  rid: pozyciya
-  chomu: оцінка помилки
-
+  kind: position
+  why: оцінка помилки
 - id: T-05-006
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-05-102
-  rid: pozyciya
-  chomu: рекомендація
-
+  kind: position
+  why: рекомендація
 - id: T-05-041
-  rid: pozyciya
-  chomu: оцінка ризику
-
+  kind: position
+  why: оцінка ризику
 - id: T-06-110
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-06-043
-  rid: ne-tverdzhennya
-  chomu: класифікація
-
+  kind: not-a-claim
+  why: класифікація
 - id: T-07-133
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-08-092
-  rid: pozyciya
-  chomu: рекомендація
-
+  kind: position
+  why: рекомендація
 - id: T-09-065
-  rid: ne-tverdzhennya
-  chomu: класифікація
-
+  kind: not-a-claim
+  why: класифікація
 - id: T-09-011
-  rid: pozyciya
-  chomu: уточнення
-
+  kind: position
+  why: уточнення
 - id: T-10-047
-  rid: ne-tverdzhennya
-  chomu: заголовок
-
+  kind: not-a-claim
+  why: заголовок
 - id: T-10-023
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-11-082
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-11-024
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-12-063
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-13-046
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-13-016
-  rid: pozyciya
-  chomu: принцип
-
+  kind: position
+  why: принцип
 - id: T-14-062
-  rid: ne-tverdzhennya
-  chomu: таблиця
-
+  kind: not-a-claim
+  why: таблиця
 - id: T-14-032
-  rid: pozyciya
-  chomu: прийом
-
+  kind: position
+  why: прийом
 - id: T-15-029
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-16-081
-  rid: ne-tverdzhennya
-  chomu: список умов
-
+  kind: not-a-claim
+  why: список умов
 - id: T-17-071
-  rid: pozyciya
-  chomu: порада
-
+  kind: position
+  why: порада
 - id: T-17-025
-  rid: ne-tverdzhennya
-  chomu: опис
-
+  kind: not-a-claim
+  why: опис
 - id: T-18-096
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-19-065
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-19-020
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-20-079
-  rid: ne-tverdzhennya
-  chomu: команда
-
+  kind: not-a-claim
+  why: команда
 - id: T-21-058
-  rid: pozyciya
-  chomu: порада
-
+  kind: position
+  why: порада
 - id: T-21-097
-  rid: ne-rozibrav
-
+  kind: undecided
 - id: T-22-008
-  rid: pozyciya
-  chomu: оцінка
-
+  kind: position
+  why: оцінка
 - id: T-23-060
-  rid: ne-tverdzhennya
-  chomu: команда
+  kind: not-a-claim
+  why: команда

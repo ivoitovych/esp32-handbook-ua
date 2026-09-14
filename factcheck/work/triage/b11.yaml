@@ -1,226 +1,226 @@
 - id: T-A-058
-  rid: dzherelo-ye
-  shukaty: ESP32 datasheet, розділ про ADC2 пінаут
+  kind: source-exists
+  look_for: ESP32 datasheet, розділ про ADC2 пінаут
 - id: T-B-203
-  rid: pozyciya
-  chomu: пояснення причини розряду батареї — автор розцінює як ймовірну
+  kind: position
+  why: пояснення причини розряду батареї — автор розцінює як ймовірну
 - id: T-B-249
-  rid: ne-tverdzhennya
-  chomu: шапка таблиці
+  kind: not-a-claim
+  why: шапка таблиці
 - id: T-B-077
-  rid: pozyciya
-  chomu: пояснення причини перезавантаження — авторське тлумачення
+  kind: position
+  why: пояснення причини перезавантаження — авторське тлумачення
 - id: T-B-182
-  rid: pozyciya
-  chomu: практична дія — рекомендація автора
+  kind: position
+  why: практична дія — рекомендація автора
 - id: T-C-038
-  rid: pozyciya
-  chomu: технічне тлумачення про компресію — авторська оцінка сенсу
+  kind: position
+  why: технічне тлумачення про компресію — авторська оцінка сенсу
 - id: T-D-189
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF документація про адреси та побудову
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF документація
-    про адреси та побудову». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про
-    відсутність джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: ESP-IDF документація про адреси та побудову
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF документація про адреси та побудову».
+    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати
+    тему за документ.'
 - id: T-E-144
-  rid: ne-tverdzhennya
-  chomu: шапка таблиці
+  kind: not-a-claim
+  why: шапка таблиці
 - id: T-E-095
-  rid: dzherelo-ye
-  shukaty: PMS5003 та SDS011 datasheet — швидкість UART
+  kind: source-exists
+  look_for: PMS5003 та SDS011 datasheet — швидкість UART
 - id: T-F-019
-  rid: pozyciya
-  chomu: практична оцінка часу збирання
+  kind: position
+  why: практична оцінка часу збирання
 - id: T-G-116
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію
+  kind: not-a-claim
+  why: рядок глосарію
 - id: T-G-162
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію
+  kind: not-a-claim
+  why: рядок глосарію
 - id: T-G-044
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію
+  kind: not-a-claim
+  why: рядок глосарію
 - id: T-H-043
-  rid: ne-tverdzhennya
-  chomu: метаопис джерел довідника
+  kind: not-a-claim
+  why: метаопис джерел довідника
 - id: T-Z-004
-  rid: ne-tverdzhennya
-  chomu: рядок покажчика
+  kind: not-a-claim
+  why: рядок покажчика
 - id: T-Z-123
-  rid: ne-tverdzhennya
-  chomu: рядок покажчика
+  kind: not-a-claim
+  why: рядок покажчика
 - id: T-COM-027
-  rid: dzherelo-ye
-  shukaty: PMS5003 datasheet — коросія резистивних датчиків
+  kind: source-exists
+  look_for: PMS5003 datasheet — коросія резистивних датчиків
 - id: T-REG-017
-  rid: pozyciya
-  chomu: оцінка проблемності BLE — авторське судження
+  kind: position
+  why: оцінка проблемності BLE — авторське судження
 - id: T-UA--032
-  rid: pozyciya
-  chomu: практична рекомендація про мінімальний тест
+  kind: position
+  why: практична рекомендація про мінімальний тест
 - id: T-K02-003
-  rid: pozyciya
-  chomu: попередження про термін — авторська оцінка наслідків
+  kind: position
+  why: попередження про термін — авторська оцінка наслідків
 - id: T-K04-023
-  rid: pozyciya
-  chomu: крок усунення несправності — рекомендація
+  kind: position
+  why: крок усунення несправності — рекомендація
 - id: T-K07-031
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF backtrace — вимога про .elf файл
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF backtrace —
-    вимога про .elf файл». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
-    джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: ESP-IDF backtrace — вимога про .elf файл
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF backtrace — вимога про .elf файл».
+    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати
+    тему за документ.'
 - id: T-K08-007
-  rid: ne-tverdzhennya
-  chomu: мітка симптому в перелік
+  kind: not-a-claim
+  why: мітка симптому в перелік
 - id: T-K10-037
-  rid: ne-tverdzhennya
-  chomu: приклад команди — не твердження
+  kind: not-a-claim
+  why: приклад команди — не твердження
 - id: T-K12-003
-  rid: ne-tverdzhennya
-  chomu: шапка таблиці
+  kind: not-a-claim
+  why: шапка таблиці
 - id: T-K14-009
-  rid: dzherelo-ye
-  shukaty: ESP32 datasheet — логічні рівні сигналу 3.3V
+  kind: source-exists
+  look_for: ESP32 datasheet — логічні рівні сигналу 3.3V
 - id: T-K15-030
-  rid: ne-tverdzhennya
-  chomu: дата у записі
+  kind: not-a-claim
+  why: дата у записі
 - id: T-00-008
-  rid: pozyciya
-  chomu: авторське пояснення концепції довідника
+  kind: position
+  why: авторське пояснення концепції довідника
 - id: T-00-035
-  rid: pozyciya
-  chomu: редакторське судження про перевірку та спростування
+  kind: position
+  why: редакторське судження про перевірку та спростування
 - id: T-01-105
-  rid: ne-tverdzhennya
-  chomu: інформація про ресурс
+  kind: not-a-claim
+  why: інформація про ресурс
 - id: T-01-055
-  rid: ne-tverdzhennya
-  chomu: рядок порівняльної таблиці
+  kind: not-a-claim
+  why: рядок порівняльної таблиці
 - id: T-02-131
-  rid: dzherelo-ye
-  shukaty: ESP32-C6 datasheet — підтримка Zigbee і Thread
+  kind: source-exists
+  look_for: ESP32-C6 datasheet — підтримка Zigbee і Thread
 - id: T-02-042
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці
+  kind: not-a-claim
+  why: рядок таблиці
 - id: T-03-010
-  rid: pozyciya
-  chomu: рекомендація про розміщення обчислень на ядро
+  kind: position
+  why: рекомендація про розміщення обчислень на ядро
 - id: T-04-073
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці з числами
+  kind: not-a-claim
+  why: рядок таблиці з числами
 - id: T-04-042
-  rid: ne-tverdzhennya
-  chomu: навігаційне посилання
+  kind: not-a-claim
+  why: навігаційне посилання
 - id: T-05-078
-  rid: dzherelo-ye
-  shukaty: IEC 60908 logic levels — конфлікт двох виходів
+  kind: source-exists
+  look_for: IEC 60908 logic levels — конфлікт двох виходів
 - id: T-05-013
-  rid: pozyciya
-  chomu: педагогічне судження про аналогію з водою
+  kind: position
+  why: педагогічне судження про аналогію з водою
 - id: T-06-079
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF документація — поведінка пам'яті при пробудженні
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF документація
-    — поведінка пам''яті при пробудженні». Одиниця лишається в черзі як `ne-rozibrav` — це
-    не присуд про відсутність джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: ESP-IDF документація — поведінка пам'яті при пробудженні
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF документація — поведінка пам''яті
+    при пробудженні». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела,
+    а відмова видавати тему за документ.'
 - id: T-06-017
-  rid: ne-tverdzhennya
-  chomu: метаопис джерел з застереженням про перевірку
+  kind: not-a-claim
+  why: метаопис джерел з застереженням про перевірку
 - id: T-07-087
-  rid: dzherelo-ye
-  shukaty: ESP32-S3, C3 datasheet — наявність вхідних пінів
+  kind: source-exists
+  look_for: ESP32-S3, C3 datasheet — наявність вхідних пінів
 - id: T-08-069
-  rid: pozyciya
-  chomu: практична стратегія закупівлі
+  kind: position
+  why: практична стратегія закупівлі
 - id: T-08-043
-  rid: dzherelo-ye
-  shukaty: ESP32 datasheet — варіанти з префіксом N8, N16R8
+  kind: source-exists
+  look_for: ESP32 datasheet — варіанти з префіксом N8, N16R8
 - id: T-09-089
-  rid: ne-tverdzhennya
-  chomu: опис симптому пристрою
+  kind: not-a-claim
+  why: опис симптому пристрою
 - id: T-09-037
-  rid: pozyciya
-  chomu: твердження про типову поведінку Linux
+  kind: position
+  why: твердження про типову поведінку Linux
 - id: T-10-064
-  rid: pozyciya
-  chomu: оцінка логічного аналізатора — авторське судження
+  kind: position
+  why: оцінка логічного аналізатора — авторське судження
 - id: T-11-042
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF практика — фіксація версії на початку проєкту
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF практика —
-    фіксація версії на початку проєкту». Одиниця лишається в черзі як `ne-rozibrav` — це не
-    присуд про відсутність джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: ESP-IDF практика — фіксація версії на початку проєкту
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF практика — фіксація версії на початку
+    проєкту». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова
+    видавати тему за документ.'
 - id: T-11-106
-  rid: ne-tverdzhennya
-  chomu: опис вимог до відтворюваності
+  kind: not-a-claim
+  why: опис вимог до відтворюваності
 - id: T-12-041
-  rid: pozyciya
-  chomu: інтерпретація фрази «не працює» в Arduino
+  kind: position
+  why: інтерпретація фрази «не працює» в Arduino
 - id: T-12-026
-  rid: ne-tverdzhennya
-  chomu: порівняння методів контролю версій
+  kind: not-a-claim
+  why: порівняння методів контролю версій
 - id: T-13-067
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці інструментів
+  kind: not-a-claim
+  why: рядок таблиці інструментів
 - id: T-14-042
-  rid: pozyciya
-  chomu: оцінка меж симуляції — авторське судження
+  kind: position
+  why: оцінка меж симуляції — авторське судження
 - id: T-14-011
-  rid: pozyciya
-  chomu: оцінка порога входу для Python
+  kind: position
+  why: оцінка порога входу для Python
 - id: T-15-068
-  rid: pozyciya
-  chomu: філософське тлумачення вибору тулчейну
+  kind: position
+  why: філософське тлумачення вибору тулчейну
 - id: T-15-051
-  rid: pozyciya
-  chomu: редакторське судження про необхідність документації
+  kind: position
+  why: редакторське судження про необхідність документації
 - id: T-16-031
-  rid: pozyciya
-  chomu: авторське узагальнення про різні причини
+  kind: position
+  why: авторське узагальнення про різні причини
 - id: T-17-129
-  rid: ne-rozibrav
-  bulo-shukaty: esptool та ESP-IDF документація — причини помилок при прошиванні
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «esptool та ESP-IDF
-    документація — причини помилок при прошиванні». Одиниця лишається в черзі як `ne-rozibrav`
-    — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
-- id: T-18-074
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF SPIFFS — падіння швидкості під час заповнення
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF SPIFFS — падіння
-    швидкості під час заповнення». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд
-    про відсутність джерела, а відмова видавати тему за документ.'
-- id: T-18-020
-  rid: ne-tverdzhennya
-  chomu: визначення типу розділу
-- id: T-19-081
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF OTA — можливість оновлення без ПК
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF OTA — можливість
-    оновлення без ПК». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
+  kind: undecided
+  was_look_for: esptool та ESP-IDF документація — причини помилок при прошиванні
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «esptool та ESP-IDF документація — причини
+    помилок при прошиванні». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
     джерела, а відмова видавати тему за документ.'
+- id: T-18-074
+  kind: undecided
+  was_look_for: ESP-IDF SPIFFS — падіння швидкості під час заповнення
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF SPIFFS — падіння швидкості під час
+    заповнення». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а
+    відмова видавати тему за документ.'
+- id: T-18-020
+  kind: not-a-claim
+  why: визначення типу розділу
+- id: T-19-081
+  kind: undecided
+  was_look_for: ESP-IDF OTA — можливість оновлення без ПК
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF OTA — можливість оновлення без ПК».
+    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати
+    тему за документ.'
 - id: T-20-051
-  rid: pozyciya
-  chomu: методологічна рекомендація про розбір за логом
+  kind: position
+  why: методологічна рекомендація про розбір за логом
 - id: T-20-027
-  rid: pozyciya
-  chomu: оцінка необхідності резервної копії
+  kind: position
+  why: оцінка необхідності резервної копії
 - id: T-21-077
-  rid: ne-tverdzhennya
-  chomu: статус контролю — дані записи
+  kind: not-a-claim
+  why: статус контролю — дані записи
 - id: T-22-048
-  rid: ne-tverdzhennya
-  chomu: технічний опис параметрів дампу
+  kind: not-a-claim
+  why: технічний опис параметрів дампу
 - id: T-22-003
-  rid: ne-tverdzhennya
-  chomu: опис типової ситуації
+  kind: not-a-claim
+  why: опис типової ситуації
 - id: T-23-089
-  rid: ne-tverdzhennya
-  chomu: висновок діагностики
+  kind: not-a-claim
+  why: висновок діагностики

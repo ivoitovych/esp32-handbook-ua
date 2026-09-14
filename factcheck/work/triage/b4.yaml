@@ -1,172 +1,172 @@
 - id: T-A-040
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-B-192
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-B-243
-  rid: pozyciya
-  chomu: діагностика причини систематичного зависання
+  kind: position
+  why: діагностика причини систематичного зависання
 - id: T-B-066
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-B-174
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-C-014
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-D-167
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-E-133
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-E-085
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-F-014
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-G-109
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-G-153
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-G-036
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-G-076
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-H-036
-  rid: dzherelo-ye
-  shukaty: статті про ESP32, опубліковані під ESP-IDF 4.x та Arduino core 2.x
+  kind: source-exists
+  look_for: статті про ESP32, опубліковані під ESP-IDF 4.x та Arduino core 2.x
 - id: T-Z-115
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-COM-011
-  rid: pozyciya
-  chomu: рекомендація вибору плати на основі ціни
+  kind: position
+  why: рекомендація вибору плати на основі ціни
 - id: T-REG-010
-  rid: dzherelo-ye
-  shukaty: Regulatory Guide для ESP32, обмеження потужності передавача
+  kind: source-exists
+  look_for: Regulatory Guide для ESP32, обмеження потужності передавача
 - id: T-UA--020
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-K02-009
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-K04-013
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K07-021
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF або GDB документація про backtrace
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF або GDB документація
-    про backtrace». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
-    джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: ESP-IDF або GDB документація про backtrace
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF або GDB документація про backtrace».
+    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати
+    тему за документ.'
 - id: T-K08-002
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K10-028
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K12-020
-  rid: pozyciya
-  chomu: орієнтація при виборі паяльника без терморегулювання
+  kind: position
+  why: орієнтація при виборі паяльника без терморегулювання
 - id: T-K13-042
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K15-023
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-00-071
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-00-028
-  rid: pozyciya
-  chomu: уточнення правильної інтерпретації сигнальних брак
+  kind: position
+  why: уточнення правильної інтерпретації сигнальних брак
 - id: T-01-099
-  rid: dzherelo-ye
-  shukaty: Datasheet сімейства ESP32, розділи про параметри та розводку
+  kind: source-exists
+  look_for: Datasheet сімейства ESP32, розділи про параметри та розводку
 - id: T-01-035
-  rid: pozyciya
-  chomu: оцінка доцільності ESP32 для проектів без радіозв'язку
+  kind: position
+  why: оцінка доцільності ESP32 для проектів без радіозв'язку
 - id: T-02-120
-  rid: pozyciya
-  chomu: рекомендація щодо кількості доступних прикладів
+  kind: position
+  why: рекомендація щодо кількості доступних прикладів
 - id: T-02-029
-  rid: dzherelo-ye
-  shukaty: ESP32-H2 Datasheet, частота процесора
+  kind: source-exists
+  look_for: ESP32-H2 Datasheet, частота процесора
 - id: T-03-007
-  rid: pozyciya
-  chomu: пояснення механіки радіо в ESP32
+  kind: position
+  why: пояснення механіки радіо в ESP32
 - id: T-04-066
-  rid: dzherelo-ye
-  shukaty: ESP32 Datasheet, розділ про SPI handshaking accelerators
+  kind: source-exists
+  look_for: ESP32 Datasheet, розділ про SPI handshaking accelerators
 - id: T-04-030
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-05-065
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-05-121
-  rid: pozyciya
-  chomu: попередження про поширену помилку зв'язання на Dupont роз'ємах
+  kind: position
+  why: попередження про поширену помилку зв'язання на Dupont роз'ємах
 - id: T-06-065
-  rid: dzherelo-ye
-  shukaty: ESP32 Datasheet про режим пробудження та RTC
+  kind: source-exists
+  look_for: ESP32 Datasheet про режим пробудження та RTC
 - id: T-06-126
-  rid: dzherelo-ye
-  shukaty: ESP32 Datasheet, коди скидання та RTC wake
+  kind: source-exists
+  look_for: ESP32 Datasheet, коди скидання та RTC wake
 - id: T-07-069
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-07-053
-  rid: dzherelo-ye
-  shukaty: Datasheet для ESP32 classic та S3, режими завантаження
+  kind: source-exists
+  look_for: Datasheet для ESP32 classic та S3, режими завантаження
 - id: T-08-034
-  rid: pozyciya
-  chomu: визначення стандарту інтерпретації терміна плата розробки
+  kind: position
+  why: визначення стандарту інтерпретації терміна плата розробки
 - id: T-09-080
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-09-030
-  rid: dzherelo-ye
-  shukaty: Linux kernel документація про CDC-ACM та CH9102
+  kind: source-exists
+  look_for: Linux kernel документація про CDC-ACM та CH9102
 - id: T-10-057
-  rid: pozyciya
-  chomu: переваги друкованих карток як навчального матеріалу
+  kind: position
+  why: переваги друкованих карток як навчального матеріалу
 - id: T-10-036
-  rid: pozyciya
-  chomu: практична рекомендація щодо вибору дешевої USB-камери
+  kind: position
+  why: практична рекомендація щодо вибору дешевої USB-камери
 - id: T-11-012
-  rid: pozyciya
-  chomu: оцінка VS Code розширення як зручної обгортки
+  kind: position
+  why: оцінка VS Code розширення як зручної обгортки
 - id: T-11-040
-  rid: pozyciya
-  chomu: рекомендація не використовувати master гілку розробки
+  kind: position
+  why: рекомендація не використовувати master гілку розробки
 - id: T-12-018
-  rid: pozyciya
-  chomu: обґрунтування вибору Arduino як швидкого рішення
+  kind: position
+  why: обґрунтування вибору Arduino як швидкого рішення
 - id: T-13-007
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-13-032
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-14-075
-  rid: pozyciya
-  chomu: критика невдалого вибору інструменту на неправильному етапі
+  kind: position
+  why: критика невдалого вибору інструменту на неправильному етапі
 - id: T-15-062
-  rid: pozyciya
-  chomu: рекомендація зберігати схеми як картинки замість веб-закладок
+  kind: position
+  why: рекомендація зберігати схеми як картинки замість веб-закладок
 - id: T-15-044
-  rid: pozyciya
-  chomu: оцінка простоти Arduino для швидкого прототипування
+  kind: position
+  why: оцінка простоти Arduino для швидкого прототипування
 - id: T-16-015
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-17-108
-  rid: pozyciya
-  chomu: оцінка надійності локального проєкту ESP-IDF
+  kind: position
+  why: оцінка надійності локального проєкту ESP-IDF
 - id: T-18-066
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-18-119
-  rid: pozyciya
-  chomu: економічна оцінка вартості модулів та переробки вироба
+  kind: position
+  why: економічна оцінка вартості модулів та переробки вироба
 - id: T-19-076
-  rid: pozyciya
-  chomu: позиціонування OTA як зручного методу для монтованих плат
+  kind: position
+  why: позиціонування OTA як зручного методу для монтованих плат
 - id: T-19-046
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF OTA Update API документація
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF OTA Update
-    API документація». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
-    джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: ESP-IDF OTA Update API документація
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF OTA Update API документація». Одиниця
+    лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему
+    за документ.'
 - id: T-20-002
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-21-070
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-21-032
-  rid: pozyciya
-  chomu: цінність встановлення критеріїв приймання вироба
+  kind: position
+  why: цінність встановлення критеріїв приймання вироба
 - id: T-22-019
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-23-078
-  rid: ne-tverdzhennya
+  kind: not-a-claim

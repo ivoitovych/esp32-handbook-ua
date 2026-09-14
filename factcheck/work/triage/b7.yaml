@@ -1,211 +1,206 @@
-- chomu: рядок покажчика — число перед назвою піна
+- why: рядок покажчика — число перед назвою піна
   id: T-A-047
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-B-195
-  rid: ne-rozibrav
-- chomu: рекомендація щодо синхронізації доступу; це питання дизайну коду, не фактичний параметр
+  kind: undecided
+- why: рекомендація щодо синхронізації доступу; це питання дизайну коду, не фактичний параметр
   id: T-B-246
-  rid: pozyciya
-- chomu: рядок покажчика — код помилки й посилання на розділи
+  kind: position
+- why: рядок покажчика — код помилки й посилання на розділи
   id: T-B-073
-  rid: ne-tverdzhennya
-- chomu: рядок покажчика — номер розділу з теми
+  kind: not-a-claim
+- why: рядок покажчика — номер розділу з теми
   id: T-B-177
-  rid: ne-tverdzhennya
-- chomu: шапка таблиці
+  kind: not-a-claim
+- why: шапка таблиці
   id: T-C-028
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-D-179
-  rid: ne-rozibrav
-- chomu: рядок покажчика — модель чіпа й номер розділу
+  kind: undecided
+- why: рядок покажчика — модель чіпа й номер розділу
   id: T-E-138
-  rid: ne-tverdzhennya
-- chomu: шапка таблиці
+  kind: not-a-claim
+- why: шапка таблиці
   id: T-E-090
-  rid: ne-tverdzhennya
-- chomu: навігація — список матеріалів до вивчення й посилання на розділи й картки
+  kind: not-a-claim
+- why: навігація — список матеріалів до вивчення й посилання на розділи й картки
   id: T-F-015
-  rid: ne-tverdzhennya
-- chomu: рядок глосарія з перекладом терміна
+  kind: not-a-claim
+- why: рядок глосарія з перекладом терміна
   id: T-G-112
-  rid: ne-tverdzhennya
-- chomu: рядок глосарія з абревіатурою й розшифровкою
+  kind: not-a-claim
+- why: рядок глосарія з абревіатурою й розшифровкою
   id: T-G-157
-  rid: ne-tverdzhennya
-- chomu: рядок глосарія з перекладом терміна
+  kind: not-a-claim
+- why: рядок глосарія з перекладом терміна
   id: T-G-040
-  rid: ne-tverdzhennya
-- chomu: рядок глосарія з перекладом терміна
+  kind: not-a-claim
+- why: рядок глосарія з перекладом терміна
   id: T-G-081
-  rid: ne-tverdzhennya
-- chomu: твердження про порядок виведення книги й чистоту поточної версії; це позиція (практика)
-    автора
+  kind: not-a-claim
+- why: твердження про порядок виведення книги й чистоту поточної версії; це позиція (практика) автора
   id: T-H-039
-  rid: pozyciya
-- chomu: рядок покажчика — піна й номери сторінок
+  kind: position
+- why: рядок покажчика — піна й номери сторінок
   id: T-Z-118
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-COM-016
-  rid: ne-rozibrav
-- chomu: інструкція перевіряти перед розгортанням; це рекомендація (процес)
+  kind: undecided
+- why: інструкція перевіряти перед розгортанням; це рекомендація (процес)
   id: T-REG-002
-  rid: pozyciya
-- chomu: рядок таблиці про карти microSD й їх призначення
+  kind: position
+- why: рядок таблиці про карти microSD й їх призначення
   id: T-UA--026
-  rid: ne-tverdzhennya
-- chomu: інструкція що записати; це рекомендація дії
+  kind: not-a-claim
+- why: інструкція що записати; це рекомендація дії
   id: T-K02-012
-  rid: pozyciya
-- chomu: твердження про обмеження, коли щось не працює; це обговорення граничних умов (дизайн)
+  kind: position
+- why: твердження про обмеження, коли щось не працює; це обговорення граничних умов (дизайн)
   id: T-K04-017
-  rid: pozyciya
-- chomu: команда з прикладом синтаксису, а не твердження про поведінку
+  kind: position
+- why: команда з прикладом синтаксису, а не твердження про поведінку
   id: T-K07-026
-  rid: ne-tverdzhennya
-- chomu: рекомендація порядку діагностування; це методологія автора
+  kind: not-a-claim
+- why: рекомендація порядку діагностування; це методологія автора
   id: T-K08-054
-  rid: pozyciya
-- chomu: команда з описом використання — навігація
+  kind: position
+- why: команда з описом використання — навігація
   id: T-K10-032
-  rid: ne-tverdzhennya
-- chomu: рекомендація й совіт брати запас; це практичний совіт, не факт про устаткування
+  kind: not-a-claim
+- why: рекомендація й совіт брати запас; це практичний совіт, не факт про устаткування
   id: T-K12-023
-  rid: pozyciya
-- chomu: рекомендація щодо електричного дизайну; це вибір архітектури
+  kind: position
+- why: рекомендація щодо електричного дизайну; це вибір архітектури
   id: T-K14-005
-  rid: pozyciya
-- chomu: рядок таблиці з датою й посиланнями
+  kind: position
+- why: рядок таблиці з датою й посиланнями
   id: T-K15-026
-  rid: ne-tverdzhennya
-- chomu: навігація й посилання на розділи в контексті послідовності навчання
+  kind: not-a-claim
+- why: навігація й посилання на розділи в контексті послідовності навчання
   id: T-00-074
-  rid: ne-tverdzhennya
-- chomu: описання процесу верифікації класу E, без конкретного твердження про вихідні дані
+  kind: not-a-claim
+- why: описання процесу верифікації класу E, без конкретного твердження про вихідні дані
   id: T-00-031
-  rid: ne-tverdzhennya
-- chomu: твердження про те, як читається товстий технічний документ — це особливість реальної
-    документації
+  kind: not-a-claim
+- why: твердження про те, як читається товстий технічний документ — це особливість реальної документації
   id: T-01-102
-  rid: dzherelo-ye
-  shukaty: ESP32 Technical Reference Manual
-- chomu: твердження про наявність радіо в STM32 різних поколінь — фактична характеристика
+  kind: source-exists
+  look_for: ESP32 Technical Reference Manual
+- why: твердження про наявність радіо в STM32 різних поколінь — фактична характеристика
   id: T-01-040
-  rid: dzherelo-ye
-  shukaty: STM32 Datasheet
-- chomu: твердження про скільки чипів підтримують Bluetooth Classic/SPP — це параметр устаткування
+  kind: source-exists
+  look_for: STM32 Datasheet
+- why: твердження про скільки чипів підтримують Bluetooth Classic/SPP — це параметр устаткування
   id: T-02-125
-  rid: dzherelo-ye
-  shukaty: Bluetooth Classic Specification
-- chomu: числова характеристика обсягу SRAM
+  kind: source-exists
+  look_for: Bluetooth Classic Specification
+- why: числова характеристика обсягу SRAM
   id: T-02-032
-  rid: dzherelo-ye
-  shukaty: ESP32-S3 Datasheet
-- chomu: обговорення конкурування за ресурс процесора в одноядерних чипах; це обговорення
-    архітектури
+  kind: source-exists
+  look_for: ESP32-S3 Datasheet
+- why: обговорення конкурування за ресурс процесора в одноядерних чипах; це обговорення архітектури
   id: T-03-072
-  rid: pozyciya
-- chomu: числова характеристика кількості UART портів
+  kind: position
+- why: числова характеристика кількості UART портів
   id: T-04-069
-  rid: dzherelo-ye
-  shukaty: ESP32-S2 Datasheet
-- chomu: посилання на розділ (навігація)
+  kind: source-exists
+  look_for: ESP32-S2 Datasheet
+- why: посилання на розділ (навігація)
   id: T-04-033
-  rid: ne-tverdzhennya
-- chomu: визначення терміна й поясненнявиї (освітній матеріал, не твердження)
+  kind: not-a-claim
+- why: визначення терміна й поясненнявиї (освітній матеріал, не твердження)
   id: T-05-007
-  rid: ne-tverdzhennya
-- chomu: твердження про ризики й причини електростатичного розряду
+  kind: not-a-claim
+- why: твердження про ризики й причини електростатичного розряду
   id: T-05-124
-  rid: dzherelo-ye
-  shukaty: ESD Protection Specification
-- chomu: посилання на рядок коду й інструкція (це фрагмент реалізації)
+  kind: source-exists
+  look_for: ESD Protection Specification
+- why: посилання на рядок коду й інструкція (це фрагмент реалізації)
   id: T-06-069
-  rid: ne-tverdzhennya
-- chomu: обговорення методології тестування й аналізу енергозбереження; це підхід, не факт
+  kind: not-a-claim
+- why: обговорення методології тестування й аналізу енергозбереження; це підхід, не факт
   id: T-06-132
-  rid: pozyciya
-- chomu: твердження про різницю в кількості пінів між варіантами модулів
+  kind: position
+- why: твердження про різницю в кількості пінів між варіантами модулів
   id: T-07-080
-  rid: dzherelo-ye
-  shukaty: ESP32-S3 Datasheet
-- chomu: інструкція до дій (мінімальна перевірка), без конкретного твердження про результат
+  kind: source-exists
+  look_for: ESP32-S3 Datasheet
+- why: інструкція до дій (мінімальна перевірка), без конкретного твердження про результат
   id: T-08-063
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-08-038
-  rid: ne-rozibrav
-- chomu: часовий маркер дії
+  kind: undecided
+- why: часовий маркер дії
   id: T-09-085
-  rid: ne-tverdzhennya
-- chomu: рекомендація що дивитися (практичний совіт)
+  kind: not-a-claim
+- why: рекомендація що дивитися (практичний совіт)
   id: T-09-033
-  rid: pozyciya
-- chomu: обговорення типової помилки й рекомендація; це методологія й практичний совіт
+  kind: position
+- why: обговорення типової помилки й рекомендація; це методологія й практичний совіт
   id: T-10-060
-  rid: pozyciya
-- chomu: рядок списку матеріалів
+  kind: position
+- why: рядок списку матеріалів
   id: T-10-040
-  rid: ne-tverdzhennya
-- chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Documentation».
-    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова
-    видавати тему за документ.'
+  kind: not-a-claim
+- why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Documentation». Одиниця лишається
+    в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
   id: T-11-099
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF Documentation
+  kind: undecided
+  was_look_for: ESP-IDF Documentation
 - id: T-12-037
-  rid: ne-rozibrav
-- chomu: рекомендація про швидкість прототипування на Arduino; це порівняльна оцінка методів
+  kind: undecided
+- why: рекомендація про швидкість прототипування на Arduino; це порівняльна оцінка методів
   id: T-12-021
-  rid: pozyciya
+  kind: position
 - id: T-13-062
-  rid: ne-rozibrav
-- chomu: обговорення переваги (де виграш) підходу; це оцінка й рекомендація
+  kind: undecided
+- why: обговорення переваги (де виграш) підходу; це оцінка й рекомендація
   id: T-14-038
-  rid: pozyciya
-- chomu: рядок коду (приклад синтаксису)
+  kind: position
+- why: рядок коду (приклад синтаксису)
   id: T-14-007
-  rid: ne-tverdzhennya
-- chomu: посилання на додаток з переліком матеріалів
+  kind: not-a-claim
+- why: посилання на додаток з переліком матеріалів
   id: T-15-065
-  rid: ne-tverdzhennya
-- chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Documentation».
-    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова
-    видавати тему за документ.'
+  kind: not-a-claim
+- why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Documentation». Одиниця лишається
+    в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
   id: T-15-047
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF Documentation
-- chomu: посилання на карту й навігація
+  kind: undecided
+  was_look_for: ESP-IDF Documentation
+- why: посилання на карту й навігація
   id: T-16-019
-  rid: ne-tverdzhennya
-- chomu: інструкція з операційною системою й посилання на картку
+  kind: not-a-claim
+- why: інструкція з операційною системою й посилання на картку
   id: T-17-122
-  rid: ne-tverdzhennya
-- chomu: рядок таблиці про FAT й файлові системи
+  kind: not-a-claim
+- why: рядок таблиці про FAT й файлові системи
   id: T-18-069
-  rid: ne-tverdzhennya
-- chomu: шапка таблиці розділів
+  kind: not-a-claim
+- why: шапка таблиці розділів
   id: T-18-010
-  rid: ne-tverdzhennya
-- chomu: рядок таблиці пояснень OTA слотів
+  kind: not-a-claim
+- why: рядок таблиці пояснень OTA слотів
   id: T-19-010
-  rid: ne-tverdzhennya
-- chomu: твердження про те, що калібровані дані радіо специфічні для конкретного чипа
+  kind: not-a-claim
+- why: твердження про те, що калібровані дані радіо специфічні для конкретного чипа
   id: T-20-045
-  rid: dzherelo-ye
-  shukaty: ESP32 Datasheet
-- chomu: твердження про те, що знятий бекап шифрується ключем всередині чипа
+  kind: source-exists
+  look_for: ESP32 Datasheet
+- why: твердження про те, що знятий бекап шифрується ключем всередині чипа
   id: T-20-022
-  rid: dzherelo-ye
-  shukaty: ESP32 Datasheet
-- chomu: рядок таблиці з примітками про корпус
+  kind: source-exists
+  look_for: ESP32 Datasheet
+- why: рядок таблиці з примітками про корпус
   id: T-21-073
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-21-037
-  rid: ne-rozibrav
-- chomu: рядок схеми з позначеннями кольорів проводів
+  kind: undecided
+- why: рядок схеми з позначеннями кольорів проводів
   id: T-22-026
-  rid: ne-tverdzhennya
-- chomu: рядок таблиці діагностики — стан чипа й висновок
+  kind: not-a-claim
+- why: рядок таблиці діагностики — стан чипа й висновок
   id: T-23-081
-  rid: ne-tverdzhennya
+  kind: not-a-claim

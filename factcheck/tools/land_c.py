@@ -121,14 +121,14 @@ def main() -> int:
     kandydaty = []
     for f in sorted(rozbir.glob("*.yaml")):
         for r in yaml.safe_load(f.read_text(encoding="utf-8")) or []:
-            if not isinstance(r, dict) or str(r.get("rid")) != "dzherelo-ye":
+            if not isinstance(r, dict) or str(r.get("kind")) != "source-exists":
                 continue
             # Розбір — **інша схема**, і вона не переїжджає: її ключі
             # `id`, `rid`, `chomu`, `shukaty`. Переведення на англійські
             # імена зачепило й це місце, і воно замовкло: `look_for` у
             # 3221 записах розбору немає жодного разу, тож добір
             # обирав нуль одиниць і не скаржився.
-            sh = str(r.get("shukaty", "")).strip()
+            sh = str(r.get("look_for", "")).strip()
             if RE_DOSYAZHNE.search(sh) or not RE_KONKRETNE.search(sh):
                 continue
             kandydaty.append((str(r.get("id")), sh))

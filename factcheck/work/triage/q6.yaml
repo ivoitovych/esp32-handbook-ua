@@ -1,192 +1,192 @@
 - id: T-A-109
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці з варіантами чипів
+  kind: not-a-claim
+  why: рядок таблиці з варіантами чипів
 - id: T-A-080
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-B-221
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-B-267
-  rid: pozyciya
-  chomu: послідовність дій для діагностики
+  kind: position
+  why: послідовність дій для діагностики
 - id: T-B-121
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці симптомів
+  kind: not-a-claim
+  why: рядок таблиці симптомів
 - id: T-C-083
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-D-127
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-D-066
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці з заголовками
+  kind: not-a-claim
+  why: рядок таблиці з заголовками
 - id: T-E-046
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію
+  kind: not-a-claim
+  why: рядок глосарію
 - id: T-E-110
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-G-091
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію
+  kind: not-a-claim
+  why: рядок глосарію
 - id: T-G-008
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію дефініція
+  kind: not-a-claim
+  why: рядок глосарію дефініція
 - id: T-G-020
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію дефініція
+  kind: not-a-claim
+  why: рядок глосарію дефініція
 - id: T-G-059
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію переклад
+  kind: not-a-claim
+  why: рядок глосарію переклад
 - id: T-H-016
-  rid: pozyciya
-  chomu: рекомендація обов'язкового читання
+  kind: position
+  why: рекомендація обов'язкового читання
 - id: T-Z-062
-  rid: ne-tverdzhennya
-  chomu: рядок показчика перелік сторінок
+  kind: not-a-claim
+  why: рядок показчика перелік сторінок
 - id: T-Z-150
-  rid: ne-tverdzhennya
-  chomu: рядок показчика номер сторінки
+  kind: not-a-claim
+  why: рядок показчика номер сторінки
 - id: T-COM-058
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці з заголовками
+  kind: not-a-claim
+  why: рядок таблиці з заголовками
 - id: T-REG-032
-  rid: pozyciya
-  chomu: автор радить продумати наслідки
+  kind: position
+  why: автор радить продумати наслідки
 - id: T-K01-002
-  rid: ne-tverdzhennya
-  chomu: опис структури документа
+  kind: not-a-claim
+  why: опис структури документа
 - id: T-K03-006
-  rid: ne-tverdzhennya
-  chomu: відповідь у діаграмі рішень
+  kind: not-a-claim
+  why: відповідь у діаграмі рішень
 - id: T-K06-006
-  rid: ne-tverdzhennya
-  chomu: вступ до таблиці
+  kind: not-a-claim
+  why: вступ до таблиці
 - id: T-K09-002
-  rid: ne-tverdzhennya
-  chomu: опис розділу
+  kind: not-a-claim
+  why: опис розділу
 - id: T-K08-030
-  rid: ne-tverdzhennya
-  chomu: рядок діаграми рішень
+  kind: not-a-claim
+  why: рядок діаграми рішень
 - id: T-K11-024
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-K13-002
-  rid: pozyciya
-  chomu: спостереження про причини помилок
+  kind: position
+  why: спостереження про причини помилок
 - id: T-K14-038
-  rid: ne-tverdzhennya
-  chomu: рядок діагностичних тестів
+  kind: not-a-claim
+  why: рядок діагностичних тестів
 - id: T-00-049
-  rid: pozyciya
-  chomu: припущення про навички читача
+  kind: position
+  why: припущення про навички читача
 - id: T-00-002
-  rid: pozyciya
-  chomu: сценарій та контекст автора
+  kind: position
+  why: сценарій та контекст автора
 - id: T-01-079
-  rid: pozyciya
-  chomu: оцінка коли Arduino має сенс
+  kind: position
+  why: оцінка коли Arduino має сенс
 - id: T-01-013
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-02-096
-  rid: pozyciya
-  chomu: узагальнення про код що переноситься
+  kind: position
+  why: узагальнення про код що переноситься
 - id: T-02-010
-  rid: ne-tverdzhennya
-  chomu: конвенція документа про позначки
+  kind: not-a-claim
+  why: конвенція документа про позначки
 - id: T-02-091
-  rid: dzherelo-ye
-  shukaty: ESP32 Series Datasheet, chip architecture
-  chomu: технічна специфікація архітектури чипів
+  kind: source-exists
+  look_for: ESP32 Series Datasheet, chip architecture
+  why: технічна специфікація архітектури чипів
 - id: T-03-026
-  rid: dzherelo-ye
-  shukaty: ESP32 Series Datasheet, deep sleep mode
-  chomu: технічна специфікація режиму
+  kind: source-exists
+  look_for: ESP32 Series Datasheet, deep sleep mode
+  why: технічна специфікація режиму
 - id: T-04-136
-  rid: ne-tverdzhennya
-  chomu: вступ до списку обмежень
+  kind: not-a-claim
+  why: вступ до списку обмежень
 - id: T-04-061
-  rid: dzherelo-ye
-  shukaty: ESP-IDF Programming Guide, Motor Control PWM
-  chomu: технічна специфікація модуля
+  kind: source-exists
+  look_for: ESP-IDF Programming Guide, Motor Control PWM
+  why: технічна специфікація модуля
 - id: T-05-095
-  rid: pozyciya
-  chomu: оцінка вартості компонента
+  kind: position
+  why: оцінка вартості компонента
 - id: T-05-003
-  rid: ne-tverdzhennya
-  chomu: навігація пропоза пропустити розділ
+  kind: not-a-claim
+  why: навігація пропоза пропустити розділ
 - id: T-06-103
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-06-035
-  rid: dzherelo-ye
-  shukaty: ESP32 Series Datasheet, voltage regulator
-  chomu: технічна специфікація поведінки
+  kind: source-exists
+  look_for: ESP32 Series Datasheet, voltage regulator
+  why: технічна специфікація поведінки
 - id: T-07-123
-  rid: pozyciya
-  chomu: принцип важливості pinout плати
+  kind: position
+  why: принцип важливості pinout плати
 - id: T-08-086
-  rid: pozyciya
-  chomu: рекомендація дизайну для майбутнього
+  kind: position
+  why: рекомендація дизайну для майбутнього
 - id: T-09-058
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-09-102
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-09-054
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-10-018
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-11-069
-  rid: dzherelo-ye
-  shukaty: ESP-IDF Programming Guide, build system
-  chomu: технічна специфікація системи
+  kind: source-exists
+  look_for: ESP-IDF Programming Guide, build system
+  why: технічна специфікація системи
 - id: T-11-018
-  rid: ne-rozibrav
-  chomu: технічна рекомендація
+  kind: undecided
+  why: технічна рекомендація
 - id: T-12-057
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці з категоріями
+  kind: not-a-claim
+  why: рядок таблиці з категоріями
 - id: T-13-042
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-13-002
-  rid: pozyciya
-  chomu: порівняння інструментів оцінка PIO
+  kind: position
+  why: порівняння інструментів оцінка PIO
 - id: T-14-055
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці рішень
+  kind: not-a-claim
+  why: рядок таблиці рішень
 - id: T-14-027
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-15-025
-  rid: pozyciya
-  chomu: пріоритизація значення швидкості
+  kind: position
+  why: пріоритизація значення швидкості
 - id: T-16-072
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-17-063
-  rid: ne-rozibrav
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «Esptool Manual compression
-    flag -z». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела,
-    а відмова видавати тему за документ.'
-  bulo-shukaty: Esptool Manual compression flag -z
+  kind: undecided
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «Esptool Manual compression flag -z». Одиниця
+    лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему
+    за документ.'
+  was_look_for: Esptool Manual compression flag -z
 - id: T-17-156
-  rid: pozyciya
-  chomu: оцінка зручності GUI для користувачів
+  kind: position
+  why: оцінка зручності GUI для користувачів
 - id: T-18-090
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-19-054
-  rid: ne-tverdzhennya
-  chomu: рядок коду URL приклад
+  kind: not-a-claim
+  why: рядок коду URL приклад
 - id: T-19-016
-  rid: dzherelo-ye
-  shukaty: ESP-IDF Programming Guide, OTA updates
-  chomu: технічна специфікація OTA системи
+  kind: source-exists
+  look_for: ESP-IDF Programming Guide, OTA updates
+  why: технічна специфікація OTA системи
 - id: T-20-073
-  rid: pozyciya
-  chomu: рекомендація оптимізації через вибіркове стирання
+  kind: position
+  why: рекомендація оптимізації через вибіркове стирання
 - id: T-21-047
-  rid: ne-tverdzhennya
-  chomu: опис типів даних перелік
+  kind: not-a-claim
+  why: опис типів даних перелік
 - id: T-21-090
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-22-065
-  rid: ne-tverdzhennya
-  chomu: умовна наслідок твердження
+  kind: not-a-claim
+  why: умовна наслідок твердження
 - id: T-23-006
-  rid: dzherelo-ye
-  shukaty: ESP-IDF Programming Guide, factory reset
-  chomu: технічна вимога про порядок операцій
+  kind: source-exists
+  look_for: ESP-IDF Programming Guide, factory reset
+  why: технічна вимога про порядок операцій

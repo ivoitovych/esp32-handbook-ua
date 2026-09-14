@@ -1,217 +1,216 @@
 - id: T-A-011
-  rid: ne-tverdzhennya
-  chomu: навігаційне посилання на консоль
+  kind: not-a-claim
+  why: навігаційне посилання на консоль
 - id: T-A-084
-  rid: ne-tverdzhennya
-  chomu: навігаційна примітка
+  kind: not-a-claim
+  why: навігаційна примітка
 - id: T-B-227
-  rid: ne-tverdzhennya
-  chomu: рядок покажчика симптомів
+  kind: not-a-claim
+  why: рядок покажчика симптомів
 - id: T-B-040
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці дій для конкретної помилки
+  kind: not-a-claim
+  why: рядок таблиці дій для конкретної помилки
 - id: T-B-141
-  rid: ne-tverdzhennya
-  chomu: шапка таблиці симптомів
+  kind: not-a-claim
+  why: шапка таблиці симптомів
 - id: T-C-091
-  rid: ne-tverdzhennya
-  chomu: командний рядок із інструкцією
+  kind: not-a-claim
+  why: командний рядок із інструкцією
 - id: T-D-149
-  rid: ne-tverdzhennya
-  chomu: шапка таблиці описання полів panic дампу
+  kind: not-a-claim
+  why: шапка таблиці описання полів panic дампу
 - id: T-D-085
-  rid: ne-tverdzhennya
-  chomu: шапка таблиці порівняння чипів
+  kind: not-a-claim
+  why: шапка таблиці порівняння чипів
 - id: T-E-058
-  rid: ne-tverdzhennya
-  chomu: рядок покажчика інтерфейсів
+  kind: not-a-claim
+  why: рядок покажчика інтерфейсів
 - id: T-E-117
-  rid: ne-tverdzhennya
-  chomu: посилання на розділ про звук
+  kind: not-a-claim
+  why: посилання на розділ про звук
 - id: T-G-097
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію переклад терміну
+  kind: not-a-claim
+  why: рядок глосарію переклад терміну
 - id: T-G-135
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію переклад терміну
+  kind: not-a-claim
+  why: рядок глосарію переклад терміну
 - id: T-G-024
-  rid: ne-tverdzhennya
-  chomu: шапка таблиці глосарію
+  kind: not-a-claim
+  why: шапка таблиці глосарію
 - id: T-G-065
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію переклад терміну
+  kind: not-a-claim
+  why: рядок глосарію переклад терміну
 - id: T-H-024
-  rid: ne-rozibrav
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «sigrok Manual». Одиниця
-    лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати
-    тему за документ.'
-  bulo-shukaty: sigrok Manual
+  kind: undecided
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «sigrok Manual». Одиниця лишається в черзі
+    як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
+  was_look_for: sigrok Manual
 - id: T-Z-008
-  rid: ne-tverdzhennya
-  chomu: рядок покажчика з номерами сторінок
+  kind: not-a-claim
+  why: рядок покажчика з номерами сторінок
 - id: T-Z-158
-  rid: ne-tverdzhennya
-  chomu: рядок покажчика з номерами сторінок
+  kind: not-a-claim
+  why: рядок покажчика з номерами сторінок
 - id: T-COM-076
-  rid: dzherelo-ye
-  shukaty: ESP32 reference schematics, capacitor value 470 µF near power
-  chomu: конкретне число з одиницею, технічна характеристика схеми
+  kind: source-exists
+  look_for: ESP32 reference schematics, capacitor value 470 µF near power
+  why: конкретне число з одиницею, технічна характеристика схеми
 - id: T-UA--008
-  rid: pozyciya
-  chomu: оцінка якості маркетплейсів та продавців, судження автора про вибір
+  kind: position
+  why: оцінка якості маркетплейсів та продавців, судження автора про вибір
 - id: T-K01-031
-  rid: ne-tverdzhennya
-  chomu: інструкція до виконання дії
+  kind: not-a-claim
+  why: інструкція до виконання дії
 - id: T-K03-018
-  rid: ne-rozibrav
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «Windows Device Manager
-    reference manual». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
-    джерела, а відмова видавати тему за документ.'
-  bulo-shukaty: Windows Device Manager reference manual
+  kind: undecided
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «Windows Device Manager reference manual».
+    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати
+    тему за документ.'
+  was_look_for: Windows Device Manager reference manual
 - id: T-K06-034
-  rid: pozyciya
-  chomu: оцінка користі boot log як готової відповіді без розбору дампа
+  kind: position
+  why: оцінка користі boot log як готової відповіді без розбору дампа
 - id: T-K08-038
-  rid: ne-tverdzhennya
-  chomu: рядок покажчика симптомів
+  kind: not-a-claim
+  why: рядок покажчика симптомів
 - id: T-K09-026
-  rid: ne-tverdzhennya
-  chomu: шапка таблиці описання пінів
+  kind: not-a-claim
+  why: шапка таблиці описання пінів
 - id: T-K12-009
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці компонентів
+  kind: not-a-claim
+  why: рядок таблиці компонентів
 - id: T-K13-025
-  rid: dzherelo-ye
-  shukaty: ESP32 reference schematic, capacitor 470 µF near 3V3/GND
-  chomu: конкретна технічна вимога з числовим значенням
+  kind: source-exists
+  look_for: ESP32 reference schematic, capacitor 470 µF near 3V3/GND
+  why: конкретна технічна вимога з числовим значенням
 - id: T-K15-012
-  rid: ne-tverdzhennya
-  chomu: рядок чек-листа
+  kind: not-a-claim
+  why: рядок чек-листа
 - id: T-00-057
-  rid: ne-tverdzhennya
-  chomu: шапка розділу про живлення
+  kind: not-a-claim
+  why: шапка розділу про живлення
 - id: T-00-016
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-01-086
-  rid: dzherelo-ye
-  shukaty: Raspberry Pi datasheet
-  chomu: конкретні характеристики пристрою які документує виробник
+  kind: source-exists
+  look_for: Raspberry Pi datasheet
+  why: конкретні характеристики пристрою які документує виробник
 - id: T-01-020
-  rid: dzherelo-ye
-  shukaty: ESP32 datasheet
-  chomu: описує реальні розміри стеків у пам'яті чипа
+  kind: source-exists
+  look_for: ESP32 datasheet
+  why: описує реальні розміри стеків у пам'яті чипа
 - id: T-02-104
-  rid: pozyciya
-  chomu: судження автора що різні параметри для різних чипів це необхідність а не помилка
+  kind: position
+  why: судження автора що різні параметри для різних чипів це необхідність а не помилка
 - id: T-02-015
-  rid: ne-tverdzhennya
-  chomu: рядок покажчика характеристик чипу
+  kind: not-a-claim
+  why: рядок покажчика характеристик чипу
 - id: T-03-056
-  rid: dzherelo-ye
-  shukaty: ESP32 Technical Reference Manual, DFS feature
-  chomu: описує реальну функцію динамічного управління частотою в чипі
+  kind: source-exists
+  look_for: ESP32 Technical Reference Manual, DFS feature
+  why: описує реальну функцію динамічного управління частотою в чипі
 - id: T-03-033
-  rid: dzherelo-ye
-  shukaty: ESP-IDF programming guide
-  chomu: описує відомий сценарій malloc повертання NULL при фрагментації
+  kind: source-exists
+  look_for: ESP-IDF programming guide
+  why: описує відомий сценарій malloc повертання NULL при фрагментації
 - id: T-04-149
-  rid: dzherelo-ye
-  shukaty: ESP32 Technical Reference Manual, RMT PCNT MCPWM peripherals
-  chomu: названі реальні периферійні блоки та їх функції в чипі
+  kind: source-exists
+  look_for: ESP32 Technical Reference Manual, RMT PCNT MCPWM peripherals
+  why: названі реальні периферійні блоки та їх функції в чипі
 - id: T-05-048
-  rid: pozyciya
-  chomu: порада звертатися до datasheet конкретного модуля замість узагальнення
+  kind: position
+  why: порада звертатися до datasheet конкретного модуля замість узагальнення
 - id: T-05-107
-  rid: pozyciya
-  chomu: оцінка важливості резистора більшої ніж здається
+  kind: position
+  why: оцінка важливості резистора більшої ніж здається
 - id: T-06-049
-  rid: ne-tverdzhennya
-  chomu: заголовок розділу зі списком варіантів
+  kind: not-a-claim
+  why: заголовок розділу зі списком варіантів
 - id: T-06-111
-  rid: pozyciya
-  chomu: оцінка варіанту як дорогого але єдиного зручного для серйозної роботи
+  kind: position
+  why: оцінка варіанту як дорогого але єдиного зручного для серйозної роботи
 - id: T-06-044
-  rid: ne-tverdzhennya
-  chomu: опис типу джерела живлення
+  kind: not-a-claim
+  why: опис типу джерела живлення
 - id: T-07-002
-  rid: pozyciya
-  chomu: характеристика поведінки пінів винятків як дивної та дративної це судження
+  kind: position
+  why: характеристика поведінки пінів винятків як дивної та дративної це судження
 - id: T-08-093
-  rid: pozyciya
-  chomu: порада завжди виводити шість контактів на власній платі
+  kind: position
+  why: порада завжди виводити шість контактів на власній платі
 - id: T-09-067
-  rid: ne-tverdzhennya
-  chomu: командний рядок для надання прав доступу
+  kind: not-a-claim
+  why: командний рядок для надання прав доступу
 - id: T-09-012
-  rid: pozyciya
-  chomu: судження що відсутність порта майже ніколи не означає мертвий чип
+  kind: position
+  why: судження що відсутність порта майже ніколи не означає мертвий чип
 - id: T-10-048
-  rid: ne-tverdzhennya
-  chomu: опис вимог до освітлення
+  kind: not-a-claim
+  why: опис вимог до освітлення
 - id: T-10-025
-  rid: pozyciya
-  chomu: оцінка важливості обмеження струму як головної функції над напругою
+  kind: position
+  why: оцінка важливості обмеження струму як головної функції над напругою
 - id: T-11-083
-  rid: ne-tverdzhennya
-  chomu: опис клавіші для функції в меню
+  kind: not-a-claim
+  why: опис клавіші для функції в меню
 - id: T-11-025
-  rid: pozyciya
-  chomu: попередження про ризик множинних версій IDF та можливі помилки збирання
+  kind: position
+  why: попередження про ризик множинних версій IDF та можливі помилки збирання
 - id: T-12-064
-  rid: pozyciya
-  chomu: описання методології розвитку прототипу через підключення Arduino компонентом
+  kind: position
+  why: описання методології розвитку прототипу через підключення Arduino компонентом
 - id: T-13-047
-  rid: pozyciya
-  chomu: пояснення рішення про структуру конфігурації platform в спільній секції
+  kind: position
+  why: пояснення рішення про структуру конфігурації platform в спільній секції
 - id: T-13-017
-  rid: pozyciya
-  chomu: описання підходу до роботи з кількома середовищами та цілями в одному коді
+  kind: position
+  why: описання підходу до роботи з кількома середовищами та цілями в одному коді
 - id: T-14-063
-  rid: ne-tverdzhennya
-  chomu: рядок таблиці вибору інструменту
+  kind: not-a-claim
+  why: рядок таблиці вибору інструменту
 - id: T-14-033
-  rid: pozyciya
-  chomu: описання методології перевірки YAML описом замість прямого кодування
+  kind: position
+  why: описання методології перевірки YAML описом замість прямого кодування
 - id: T-15-030
-  rid: pozyciya
-  chomu: порада про порядок оптимізації почавши з вузьких місць
+  kind: position
+  why: порада про порядок оптимізації почавши з вузьких місць
 - id: T-16-083
-  rid: ne-tverdzhennya
-  chomu: опис процедури виходу з ситуації
+  kind: not-a-claim
+  why: опис процедури виходу з ситуації
 - id: T-17-074
-  rid: dzherelo-ye
-  shukaty: ESP32 datasheet memory addresses by chip family
-  chomu: описує залежність адрес від сімейства з посиланням на таблиці
+  kind: source-exists
+  look_for: ESP32 datasheet memory addresses by chip family
+  why: описує залежність адрес від сімейства з посиланням на таблиці
 - id: T-17-031
-  rid: ne-tverdzhennya
-  chomu: короткий опис місцезнаходження інформації
+  kind: not-a-claim
+  why: короткий опис місцезнаходження інформації
 - id: T-18-097
-  rid: ne-rozibrav
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF partition documentation,
-    application overflow scenario». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд
-    про відсутність джерела, а відмова видавати тему за документ.'
-  bulo-shukaty: ESP-IDF partition documentation, application overflow scenario
+  kind: undecided
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF partition documentation, application
+    overflow scenario». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела,
+    а відмова видавати тему за документ.'
+  was_look_for: ESP-IDF partition documentation, application overflow scenario
 - id: T-19-066
-  rid: pozyciya
-  chomu: порада перевіряти рівень живлення перед OTA для автономних пристроїв
+  kind: position
+  why: порада перевіряти рівень живлення перед OTA для автономних пристроїв
 - id: T-19-021
-  rid: pozyciya
-  chomu: описання компромісу схеми factory+ota_0+ota_1 між надійністю та пам'яттю
+  kind: position
+  why: описання компромісу схеми factory+ota_0+ota_1 між надійністю та пам'яттю
 - id: T-20-080
-  rid: ne-tverdzhennya
-  chomu: опис кроку процедури
+  kind: not-a-claim
+  why: опис кроку процедури
 - id: T-21-059
-  rid: ne-tverdzhennya
-  chomu: вступ до переліку дій
+  kind: not-a-claim
+  why: вступ до переліку дій
 - id: T-21-098
-  rid: pozyciya
-  chomu: оцінка важливості ведення журналу партії та файлів для майбутніх запитань
+  kind: position
+  why: оцінка важливості ведення журналу партії та файлів для майбутніх запитань
 - id: T-22-009
-  rid: pozyciya
-  chomu: судження що фото це не резервна копія а джерело даних до якого повертаються
+  kind: position
+  why: судження що фото це не резервна копія а джерело даних до якого повертаються
 - id: T-23-061
-  rid: ne-tverdzhennya
-  chomu: рядок процедури
+  kind: not-a-claim
+  why: рядок процедури

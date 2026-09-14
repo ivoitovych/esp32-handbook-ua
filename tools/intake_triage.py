@@ -23,7 +23,7 @@ from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import yaml  # noqa: E402
 
-RODY = {"dzherelo-ye", "pozyciya", "ne-tverdzhennya", "ne-rozibrav"}
+RODY = {"source-exists", "position", "not-a-claim", "undecided"}
 
 # Ознака документа: власна назва з великої, розширення файлу, слово
 # «datasheet»/«специфікація»/«стандарт» із номером, назва стандарту.
@@ -47,7 +47,7 @@ def perevirka(p: Path) -> list[tuple[str, str]]:
             bidy.append(("НЕ ЗАПИС", str(z)[:50]))
             continue
         ident = str(z.get("id", "?"))[:22]
-        rid = str(z.get("rid", "")).strip()
+        rid = str(z.get("kind", "")).strip()
         if rid not in RODY:
             bidy.append(("РІД НЕВІДОМИЙ: " + rid[:24], ident))
             continue
@@ -62,10 +62,10 @@ def perevirka(p: Path) -> list[tuple[str, str]]:
         # `pozyciya` — інша річ: вона каже, що зовнішнього джерела не
         # існує. Це присуд, механічно він не перевіряється, і саме він
         # ховає одиницю з наряду назавжди. Тут пояснення лишається.
-        if rid == "pozyciya" and not str(z.get("chomu", "")).strip():
+        if rid == "position" and not str(z.get("why", "")).strip():
             bidy.append(("POZYCIYA БЕЗ ПОЯСНЕННЯ", ident))
-        if rid == "dzherelo-ye":
-            sh = str(z.get("shukaty", "")).strip()
+        if rid == "source-exists":
+            sh = str(z.get("look_for", "")).strip()
             if not sh:
                 bidy.append(("dzherelo-ye БЕЗ shukaty", ident))
             elif not DOKUMENT.search(sh):

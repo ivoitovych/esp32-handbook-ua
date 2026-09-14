@@ -1,220 +1,220 @@
 - id: T-A-117
-  rid: ne-tverdzhennya
-  chomu: описание симптома в списке
+  kind: not-a-claim
+  why: описание симптома в списке
 - id: T-A-004
-  rid: ne-tverdzhennya
-  chomu: инструкция следить за таблицами
+  kind: not-a-claim
+  why: инструкция следить за таблицами
 - id: T-B-223
-  rid: ne-tverdzhennya
-  chomu: строка в индексе симптомов
+  kind: not-a-claim
+  why: строка в индексе симптомов
 - id: T-B-269
-  rid: pozyciya
-  chomu: потреба вміти викликати збій перед закриттям питання
+  kind: position
+  why: потреба вміти викликати збій перед закриттям питання
 - id: T-B-123
-  rid: ne-tverdzhennya
-  chomu: строка в індексі симптомів
+  kind: not-a-claim
+  why: строка в індексі симптомів
 - id: T-C-087
-  rid: ne-tverdzhennya
-  chomu: команда для користувача
+  kind: not-a-claim
+  why: команда для користувача
 - id: T-D-129
-  rid: dzherelo-ye
-  shukaty: ESP32 Series Datasheet характеристики SRAM
+  kind: source-exists
+  look_for: ESP32 Series Datasheet характеристики SRAM
 - id: T-D-076
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-E-002
-  rid: ne-tverdzhennya
-  chomu: навигація на розділ
+  kind: not-a-claim
+  why: навигація на розділ
 - id: T-E-112
-  rid: pozyciya
-  chomu: оцінка вибору трансивера
+  kind: position
+  why: оцінка вибору трансивера
 - id: T-G-093
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію
+  kind: not-a-claim
+  why: рядок глосарію
 - id: T-G-131
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію
+  kind: not-a-claim
+  why: рядок глосарію
 - id: T-G-001
-  rid: ne-tverdzhennya
-  chomu: опис назв у глосарії
+  kind: not-a-claim
+  why: опис назв у глосарії
 - id: T-G-061
-  rid: ne-tverdzhennya
-  chomu: рядок глосарію
+  kind: not-a-claim
+  why: рядок глосарію
 - id: T-H-018
-  rid: pozyciya
-  chomu: оцінка того що цінне в джерелі
+  kind: position
+  why: оцінка того що цінне в джерелі
 - id: T-Z-065
-  rid: ne-tverdzhennya
-  chomu: рядок індексу з номерами сторінок
+  kind: not-a-claim
+  why: рядок індексу з номерами сторінок
 - id: T-Z-152
-  rid: ne-tverdzhennya
-  chomu: рядок індексу компонента
+  kind: not-a-claim
+  why: рядок індексу компонента
 - id: T-COM-064
-  rid: ne-tverdzhennya
-  chomu: навигаційна помітка
+  kind: not-a-claim
+  why: навигаційна помітка
 - id: T-REG-034
-  rid: pozyciya
-  chomu: судження про регуляторні рішення
+  kind: position
+  why: судження про регуляторні рішення
 - id: T-K01-024
-  rid: pozyciya
-  chomu: совет як визначити живий чип
+  kind: position
+  why: совет як визначити живий чип
 - id: T-K03-008
-  rid: ne-tverdzhennya
-  chomu: інструкція визначити компонент
+  kind: not-a-claim
+  why: інструкція визначити компонент
 - id: T-K06-002
-  rid: dzherelo-ye
-  shukaty: ESP32 Technical Reference Manual ROM boot меню
+  kind: source-exists
+  look_for: ESP32 Technical Reference Manual ROM boot меню
 - id: T-K08-033
-  rid: ne-tverdzhennya
-  chomu: навигація на розділ
+  kind: not-a-claim
+  why: навигація на розділ
 - id: T-K09-018
-  rid: dzherelo-ye
-  shukaty: ESP32 Series Datasheet strapping pins
+  kind: source-exists
+  look_for: ESP32 Series Datasheet strapping pins
 - id: T-K12-005
-  rid: pozyciya
-  chomu: рекомендація перевірити кабель перед виїздом
+  kind: position
+  why: рекомендація перевірити кабель перед виїздом
 - id: T-K13-021
-  rid: pozyciya
-  chomu: рекомендація вибрати інший кабель
+  kind: position
+  why: рекомендація вибрати інший кабель
 - id: T-K15-005
-  rid: ne-tverdzhennya
-  chomu: заголовок таблиці
+  kind: not-a-claim
+  why: заголовок таблиці
 - id: T-00-052
-  rid: pozyciya
-  chomu: совет пропустити частину для знаючих читачів
+  kind: position
+  why: совет пропустити частину для знаючих читачів
 - id: T-00-012
-  rid: ne-rozibrav
+  kind: undecided
 - id: T-01-081
-  rid: pozyciya
-  chomu: оцінка переваг ESP32 у радіо й швидкості
+  kind: position
+  why: оцінка переваг ESP32 у радіо й швидкості
 - id: T-01-015
-  rid: pozyciya
-  chomu: описання типової практики модулів у виробництві
+  kind: position
+  why: описання типової практики модулів у виробництві
 - id: T-02-005
-  rid: pozyciya
-  chomu: рекомендація що брати для нового проєкту
+  kind: position
+  why: рекомендація що брати для нового проєкту
 - id: T-02-011
-  rid: dzherelo-ye
-  shukaty: ESP32 Series Datasheet варіанти чипів таблиця
+  kind: source-exists
+  look_for: ESP32 Series Datasheet варіанти чипів таблиця
 - id: T-03-051
-  rid: pozyciya
-  chomu: совет як зменшити споживання
+  kind: position
+  why: совет як зменшити споживання
 - id: T-03-028
-  rid: dzherelo-ye
-  shukaty: ESP32 Technical Reference Manual архітектура пам'яті
+  kind: source-exists
+  look_for: ESP32 Technical Reference Manual архітектура пам'яті
 - id: T-04-140
-  rid: dzherelo-ye
-  shukaty: ESP32 Technical Reference Manual периферія апаратна
+  kind: source-exists
+  look_for: ESP32 Technical Reference Manual периферія апаратна
 - id: T-05-046
-  rid: ne-tverdzhennya
-  chomu: заголовок розділу
+  kind: not-a-claim
+  why: заголовок розділу
 - id: T-05-098
-  rid: dzherelo-ye
-  shukaty: ESP32 hardware design guide конденсатор живлення
+  kind: source-exists
+  look_for: ESP32 hardware design guide конденсатор живлення
 - id: T-05-035
-  rid: ne-rozibrav
-  bulo-shukaty: Electronics Manual світлодіод розрахунок тока
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «Electronics Manual
-    світлодіод розрахунок тока». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд
-    про відсутність джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: Electronics Manual світлодіод розрахунок тока
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «Electronics Manual світлодіод розрахунок тока».
+    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати
+    тему за документ.'
 - id: T-06-105
-  rid: ne-rozibrav
-  bulo-shukaty: Oscilloscope Manual інерція вимірювання
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «Oscilloscope Manual
-    інерція вимірювання». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
-    джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: Oscilloscope Manual інерція вимірювання
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «Oscilloscope Manual інерція вимірювання».
+    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати
+    тему за документ.'
 - id: T-06-040
-  rid: dzherelo-ye
-  shukaty: ESP32 Series Datasheet регістр rst значення
+  kind: source-exists
+  look_for: ESP32 Series Datasheet регістр rst значення
 - id: T-07-126
-  rid: dzherelo-ye
-  shukaty: ESP32-DevKitC datasheet варіанти плати
+  kind: source-exists
+  look_for: ESP32-DevKitC datasheet варіанти плати
 - id: T-08-089
-  rid: dzherelo-ye
-  shukaty: ESP32-DevKit V1 Reference Manual піни розташування
+  kind: source-exists
+  look_for: ESP32-DevKit V1 Reference Manual піни розташування
 - id: T-09-061
-  rid: pozyciya
-  chomu: рекомендація про важливість справних кабелів
+  kind: position
+  why: рекомендація про важливість справних кабелів
 - id: T-09-105
-  rid: dzherelo-ye
-  shukaty: USB 2.0 Specification device enumeration
+  kind: source-exists
+  look_for: USB 2.0 Specification device enumeration
 - id: T-10-044
-  rid: ne-tverdzhennya
-  chomu: категоризація компонента
+  kind: not-a-claim
+  why: категоризація компонента
 - id: T-10-020
-  rid: pozyciya
-  chomu: совет про USB-хаб з власним живленням
+  kind: position
+  why: совет про USB-хаб з власним живленням
 - id: T-11-072
-  rid: pozyciya
-  chomu: рекомендація які розділи відвідати
+  kind: position
+  why: рекомендація які розділи відвідати
 - id: T-11-020
-  rid: pozyciya
-  chomu: совет про нумерацію каталогу esp-idf
+  kind: position
+  why: совет про нумерацію каталогу esp-idf
 - id: T-12-060
-  rid: ne-rozibrav
-  bulo-shukaty: Arduino Reference Arduino core архітектура
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «Arduino Reference Arduino
-    core архітектура». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
-    джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: Arduino Reference Arduino core архітектура
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «Arduino Reference Arduino core архітектура».
+    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати
+    тему за документ.'
 - id: T-13-004
-  rid: dzherelo-ye
-  shukaty: PlatformIO Espressif32 Platform Guide
+  kind: source-exists
+  look_for: PlatformIO Espressif32 Platform Guide
 - id: T-13-013
-  rid: pozyciya
-  chomu: рекомендація як розуміти версійність документу
+  kind: position
+  why: рекомендація як розуміти версійність документу
 - id: T-14-057
-  rid: ne-rozibrav
-  bulo-shukaty: ESPHome User Guide час результату
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESPHome User Guide
-    час результату». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
-    джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: ESPHome User Guide час результату
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESPHome User Guide час результату». Одиниця
+    лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему
+    за документ.'
 - id: T-14-029
-  rid: pozyciya
-  chomu: совет коли використовувати датчик
+  kind: position
+  why: совет коли використовувати датчик
 - id: T-15-026
-  rid: pozyciya
-  chomu: рекомендація що фіксувати таймінги адреси межи
+  kind: position
+  why: рекомендація що фіксувати таймінги адреси межи
 - id: T-16-077
-  rid: dzherelo-ye
-  shukaty: ESP32 GDB debugger guide first dump
+  kind: source-exists
+  look_for: ESP32 GDB debugger guide first dump
 - id: T-17-065
-  rid: ne-rozibrav
-  bulo-shukaty: esptool User Manual параметри stubs
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «esptool User Manual
-    параметри stubs». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
-    джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: esptool User Manual параметри stubs
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «esptool User Manual параметри stubs». Одиниця
+    лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему
+    за документ.'
 - id: T-17-158
-  rid: pozyciya
-  chomu: совет що робити з командного рядка
+  kind: position
+  why: совет що робити з командного рядка
 - id: T-18-093
-  rid: ne-tverdzhennya
-  chomu: навигація на розділ
+  kind: not-a-claim
+  why: навигація на розділ
 - id: T-19-056
-  rid: dzherelo-ye
-  shukaty: ESP32 OTA Programming Guide config timeout
+  kind: source-exists
+  look_for: ESP32 OTA Programming Guide config timeout
 - id: T-19-100
-  rid: dzherelo-ye
-  shukaty: ESP32 OTA Programming Guide HTTPS verify server
+  kind: source-exists
+  look_for: ESP32 OTA Programming Guide HTTPS verify server
 - id: T-20-076
-  rid: ne-tverdzhennya
-  chomu: заголовок списку порядку
+  kind: not-a-claim
+  why: заголовок списку порядку
 - id: T-21-054
-  rid: pozyciya
-  chomu: оцінка компромісу інструментів та роботи
+  kind: position
+  why: оцінка компромісу інструментів та роботи
 - id: T-21-092
-  rid: pozyciya
-  chomu: совет про процедуру роботи з платами
+  kind: position
+  why: совет про процедуру роботи з платами
 - id: T-22-068
-  rid: ne-rozibrav
-  bulo-shukaty: Logic Analyzer Reference Manual signal capture
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «Logic Analyzer Reference
-    Manual signal capture». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про
-    відсутність джерела, а відмова видавати тему за документ.'
+  kind: undecided
+  was_look_for: Logic Analyzer Reference Manual signal capture
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «Logic Analyzer Reference Manual signal capture».
+    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати
+    тему за документ.'
 - id: T-23-055
-  rid: dzherelo-ye
-  shukaty: ESP32 Series Datasheet memory identification clones
+  kind: source-exists
+  look_for: ESP32 Series Datasheet memory identification clones

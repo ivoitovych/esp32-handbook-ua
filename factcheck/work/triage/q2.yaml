@@ -1,222 +1,217 @@
-- chomu: рядок покажчика — пінаут
+- why: рядок покажчика — пінаут
   id: T-A-099
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-A-074
-  rid: dzherelo-ye
-  shukaty: datasheet, pinout
-- chomu: рядок покажчика — симптом і дія
+  kind: source-exists
+  look_for: datasheet, pinout
+- why: рядок покажчика — симптом і дія
   id: T-B-213
-  rid: ne-tverdzhennya
-- chomu: рядок покажчика — симптом і дія
+  kind: not-a-claim
+- why: рядок покажчика — симптом і дія
   id: T-B-260
-  rid: ne-tverdzhennya
-- chomu: навігація — посилання на розділи
+  kind: not-a-claim
+- why: навігація — посилання на розділи
   id: T-B-088
-  rid: ne-tverdzhennya
-- chomu: команда та результат
+  kind: not-a-claim
+- why: команда та результат
   id: T-C-079
-  rid: ne-tverdzhennya
-- chomu: навігація — посилання на розділ
+  kind: not-a-claim
+- why: навігація — посилання на розділ
   id: T-D-022
-  rid: ne-tverdzhennya
-- chomu: інтерпретація, пояснення феномену
+  kind: not-a-claim
+- why: інтерпретація, пояснення феномену
   id: T-D-060
-  rid: pozyciya
-- chomu: рядок покажчика — пристрій
+  kind: position
+- why: рядок покажчика — пристрій
   id: T-E-019
-  rid: ne-tverdzhennya
-- chomu: шапка таблиці
+  kind: not-a-claim
+- why: шапка таблиці
   id: T-E-106
-  rid: ne-tverdzhennya
-- chomu: шапка таблиці
+  kind: not-a-claim
+- why: шапка таблиці
   id: T-G-004
-  rid: ne-tverdzhennya
-- chomu: шапка таблиці
+  kind: not-a-claim
+- why: шапка таблиці
   id: T-G-126
-  rid: ne-tverdzhennya
-- chomu: рекомендація щодо термінології
+  kind: not-a-claim
+- why: рекомендація щодо термінології
   id: T-G-175
-  rid: pozyciya
-- chomu: рядок покажчика
+  kind: position
+- why: рядок покажчика
   id: T-G-055
-  rid: ne-tverdzhennya
-- chomu: визначення терміну
+  kind: not-a-claim
+- why: визначення терміну
   id: T-H-011
-  rid: ne-tverdzhennya
-- chomu: рядок покажчика
+  kind: not-a-claim
+- why: рядок покажчика
   id: T-Z-058
-  rid: ne-tverdzhennya
-- chomu: рядок покажчика
+  kind: not-a-claim
+- why: рядок покажчика
   id: T-Z-143
-  rid: ne-tverdzhennya
-- chomu: шапка таблиці
+  kind: not-a-claim
+- why: шапка таблиці
   id: T-COM-045
-  rid: ne-tverdzhennya
-- chomu: інструкція щодо вимоги
+  kind: not-a-claim
+- why: інструкція щодо вимоги
   id: T-REG-029
-  rid: pozyciya
-- chomu: порада щодо процесу перевірки
+  kind: position
+- why: порада щодо процесу перевірки
   id: T-K01-016
-  rid: pozyciya
-- chomu: інструкція щодо спостереження
+  kind: position
+- why: інструкція щодо спостереження
   id: T-K02-006
-  rid: pozyciya
+  kind: position
 - id: T-K05-037
-  rid: ne-rozibrav
-  bulo-shukaty: firmware flashing guide
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «firmware flashing guide».
-    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова
-    видавати тему за документ.'
-- chomu: навігація — посилання
+  kind: undecided
+  was_look_for: firmware flashing guide
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «firmware flashing guide». Одиниця лишається
+    в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
+- why: навігація — посилання
   id: T-K08-021
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K09-012
-  rid: dzherelo-ye
-  shukaty: datasheet, GPIO pins
+  kind: source-exists
+  look_for: datasheet, GPIO pins
 - id: T-K11-019
-  rid: dzherelo-ye
-  shukaty: datasheet, hardware constraints
-- chomu: навігація — посилання
+  kind: source-exists
+  look_for: datasheet, hardware constraints
+- why: навігація — посилання
   id: T-K13-018
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-K14-034
-  rid: ne-rozibrav
-  bulo-shukaty: circuit analysis reference
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «circuit analysis reference».
-    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова
-    видавати тему за документ.'
-- chomu: рекомендація щодо найважливіших деталей
+  kind: undecided
+  was_look_for: circuit analysis reference
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «circuit analysis reference». Одиниця лишається
+    в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
+- why: рекомендація щодо найважливіших деталей
   id: T-K15-045
-  rid: pozyciya
+  kind: position
 - id: T-00-089
-  rid: dzherelo-ye
-  shukaty: ESP32 Getting Started Guide
-- chomu: аналіз обмежень автоматики
+  kind: source-exists
+  look_for: ESP32 Getting Started Guide
+- why: аналіз обмежень автоматики
   id: T-00-044
-  rid: pozyciya
+  kind: position
 - id: T-01-011
-  rid: dzherelo-ye
-  shukaty: ESP32 Hardware Types Specification
-- chomu: судження щодо впливу на прикладний код
+  kind: source-exists
+  look_for: ESP32 Hardware Types Specification
+- why: судження щодо впливу на прикладний код
   id: T-02-092
-  rid: pozyciya
-- chomu: опис ефекту команди
+  kind: position
+- why: опис ефекту команди
   id: T-02-147
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-02-084
-  rid: dzherelo-ye
-  shukaty: Bluetooth profile compatibility, datasheet
-- chomu: визначення терміну
+  kind: source-exists
+  look_for: Bluetooth profile compatibility, datasheet
+- why: визначення терміну
   id: T-03-021
-  rid: ne-tverdzhennya
-- chomu: вступ до розділу
+  kind: not-a-claim
+- why: вступ до розділу
   id: T-04-131
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-04-057
-  rid: dzherelo-ye
-  shukaty: RMT peripheral, WS2812 LED control
-- chomu: визначення терміну
+  kind: source-exists
+  look_for: RMT peripheral, WS2812 LED control
+- why: визначення терміну
   id: T-05-089
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-05-024
-  rid: dzherelo-ye
-  shukaty: datasheet, GPIO electrical characteristics
-- chomu: вимога до перевірки вимірюванням
+  kind: source-exists
+  look_for: datasheet, GPIO electrical characteristics
+- why: вимога до перевірки вимірюванням
   id: T-06-101
-  rid: pozyciya
-- chomu: інтерпретація технічної характеристики
+  kind: position
+- why: інтерпретація технічної характеристики
   id: T-06-033
-  rid: pozyciya
-- chomu: вступ до переліку
+  kind: position
+- why: вступ до переліку
   id: T-07-116
-  rid: ne-tverdzhennya
-- chomu: оцінка придатності для одиничних виробів
+  kind: not-a-claim
+- why: оцінка придатності для одиничних виробів
   id: T-08-080
-  rid: pozyciya
-- chomu: судження про якість клонів
+  kind: position
+- why: судження про якість клонів
   id: T-08-055
-  rid: pozyciya
-- chomu: оцінка шкідливості дешевого хаба
+  kind: position
+- why: оцінка шкідливості дешевого хаба
   id: T-09-098
-  rid: pozyciya
+  kind: position
 - id: T-09-050
-  rid: dzherelo-ye
-  shukaty: ESP32-S3 DevKit Datasheet
-- chomu: навігація — посилання на інші розділи
+  kind: source-exists
+  look_for: ESP32-S3 DevKit Datasheet
+- why: навігація — посилання на інші розділи
   id: T-10-002
-  rid: ne-tverdzhennya
-- chomu: рекомендація щодо помилки
+  kind: not-a-claim
+- why: рекомендація щодо помилки
   id: T-11-063
-  rid: pozyciya
+  kind: position
 - id: T-11-002
-  rid: ne-rozibrav
-  bulo-shukaty: ESP-IDF Official Documentation
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Official Documentation».
-    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова
-    видавати тему за документ.'
-- chomu: шапка таблиці — варіант
+  kind: undecided
+  was_look_for: ESP-IDF Official Documentation
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Official Documentation». Одиниця лишається
+    в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
+- why: шапка таблиці — варіант
   id: T-12-052
-  rid: ne-tverdzhennya
-- chomu: визначення варіанту
+  kind: not-a-claim
+- why: визначення варіанту
   id: T-13-038
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-13-009
-  rid: ne-rozibrav
-  bulo-shukaty: Arduino Reference
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «Arduino Reference».
-    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова
-    видавати тему за документ.'
-- chomu: рядок таблиці — опція
+  kind: undecided
+  was_look_for: Arduino Reference
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «Arduino Reference». Одиниця лишається в черзі
+    як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
+- why: рядок таблиці — опція
   id: T-14-051
-  rid: ne-tverdzhennya
-- chomu: опис процесу
+  kind: not-a-claim
+- why: опис процесу
   id: T-14-020
-  rid: ne-tverdzhennya
-- chomu: рядок таблиці — опція
+  kind: not-a-claim
+- why: рядок таблиці — опція
   id: T-15-019
-  rid: ne-tverdzhennya
+  kind: not-a-claim
 - id: T-16-006
-  rid: dzherelo-ye
-  shukaty: ROM bootloader, datasheet
-- chomu: примітка до прикладу
+  kind: source-exists
+  look_for: ROM bootloader, datasheet
+- why: примітка до прикладу
   id: T-17-056
-  rid: ne-tverdzhennya
-- chomu: оцінка, що це не працює на деяких клонах
+  kind: not-a-claim
+- why: оцінка, що це не працює на деяких клонах
   id: T-17-151
-  rid: pozyciya
+  kind: position
 - id: T-18-085
-  rid: dzherelo-ye
-  shukaty: LittleFS Component Datasheet
-- chomu: оцінка складності й ризику
+  kind: source-exists
+  look_for: LittleFS Component Datasheet
+- why: оцінка складності й ризику
   id: T-18-004
-  rid: pozyciya
+  kind: position
 - id: T-19-095
-  rid: ne-rozibrav
-  bulo-shukaty: OTA Update API Reference
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «OTA Update API Reference».
-    Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова
-    видавати тему за документ.'
-- chomu: оцінка важливості кроку
+  kind: undecided
+  was_look_for: OTA Update API Reference
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «OTA Update API Reference». Одиниця лишається
+    в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
+- why: оцінка важливості кроку
   id: T-20-066
-  rid: pozyciya
+  kind: position
 - id: T-21-042
-  rid: ne-rozibrav
-  bulo-shukaty: Serial Protocol Best Practices Guide
-  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
-    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «Serial Protocol Best
-    Practices Guide». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
-    джерела, а відмова видавати тему за документ.'
-- chomu: опис параллельної роботи
+  kind: undecided
+  was_look_for: Serial Protocol Best Practices Guide
+  why: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає тему, а не
+    документ, який можна замовити чи відкрити. Тут стояло: «Serial Protocol Best Practices Guide». Одиниця
+    лишається в черзі як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему
+    за документ.'
+- why: опис параллельної роботи
   id: T-21-086
-  rid: ne-tverdzhennya
-- chomu: вимога до формату назви
+  kind: not-a-claim
+- why: вимога до формату назви
   id: T-22-060
-  rid: pozyciya
-- chomu: навігація — посилання
+  kind: position
+- why: навігація — посилання
   id: T-22-041
-  rid: ne-tverdzhennya
+  kind: not-a-claim
