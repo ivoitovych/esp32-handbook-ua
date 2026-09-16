@@ -18,7 +18,7 @@
 
 Вихід: 1 — порушено форму або зв'язність; 0 — усе гаразд. Відкриті
 повідомлення самі по собі не помилка (`make check` показує їх
-попередженням), але `--suvoro` робить їх помилкою — так `make
+попередженням), але `--severe` робить їх помилкою — так `make
 release-check` не випускає реліз із неотриманою відповіддю.
 """
 from __future__ import annotations
@@ -269,4 +269,4 @@ def indeks() -> int:
 if __name__ == "__main__":
     if "--index" in sys.argv:
         sys.exit(indeks())
-    sys.exit(check("--suvoro" in sys.argv))
+    sys.exit(check("--severe" in sys.argv))

@@ -1,6 +1,6 @@
 # Layer 3: quotes against sources
 
-> **generated** — `factcheck/tools/layer3.py --zvit`; editing it by hand
+> **generated** — `factcheck/tools/layer3.py --digest`; editing it by hand
 > is wasted work
 
 Checked mechanically: does the extract cited in an evidence record really
@@ -12,7 +12,7 @@ it.
 |---|---|
 | `checked` | every usable extract was found in the source verbatim |
 | `not found` | the extract is not in the source — a paraphrase, a wrong address, or the source changed |
-| `source not cached` | nothing to check against: `--kachaty`, or egress refuses |
+| `source not cached` | nothing to check against: `--fetch`, or egress refuses |
 | `nothing to check` | evidence with no URL or no verbatim extract |
 | `source invented` | `verbatim` or `derived`, yet the source field holds an argument, not a document |
 | `stub in the cache` | the server returned HTML with status 200 instead of a PDF |
@@ -20,7 +20,7 @@ it.
 
 Evidence records: **1393**. Checked verbatim: **581**. Not found: **58**. Source not cached: **73**. Nothing to check: **658**.
 
-As of 2026-09-16 04:04 UTC.
+As of 2026-09-16 04:18 UTC.
 
 
 ## no-external-signal on a claim with a number — 23

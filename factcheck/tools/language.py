@@ -51,7 +51,7 @@ prose entered the foundation and nothing said so".
 
     factcheck/tools/language.py           check against the baseline
     factcheck/tools/language.py --write   re-record after a translation batch
-    factcheck/tools/language.py --proba   show the check firing on a corrupted input
+    factcheck/tools/language.py --probe   show the check firing on a corrupted input
     factcheck/tools/language.py --list    full measurement, every file, no baseline
 """
 from __future__ import annotations
@@ -301,7 +301,7 @@ def proba() -> int:
 
 
 def main() -> int:
-    if "--proba" in sys.argv:
+    if "--probe" in sys.argv:
         return proba()
     if "--list" in sys.argv:
         for c, n, ln in sorted(measure(), reverse=True):

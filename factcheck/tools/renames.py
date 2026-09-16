@@ -29,9 +29,9 @@
 переписаний під сьогоднішні імена, перестає бути документом про
 минуле.
 
-    factcheck/tools/renames.py --pokazaty          що буде перейменовано
-    factcheck/tools/renames.py --tilky citaty      один інструмент
-    factcheck/tools/renames.py --usi               усі з таблиці
+    factcheck/tools/renames.py --display          що буде перейменовано
+    factcheck/tools/renames.py --only-of citaty      один інструмент
+    factcheck/tools/renames.py --all-of               усі з таблиці
 """
 from __future__ import annotations
 
@@ -123,7 +123,7 @@ KATALOHY = {
 # Друга дозволяла «слово в лапках цілком». У прозі це слушно — там
 # `` `dokazy` `` і справді каталог. У коді ні: у лапках стоять і ключі
 # словників, і мітки. Вона перейменувала `n["detali"]` — ключ **звіту
-# помічника**, схеми, якої ніхто не переїжджав, — і `layer3 --zvit`
+# помічника**, схеми, якої ніхто не переїжджав, — і `layer3 --digest`
 # упав із `KeyError`; а тему `"detali"` в поділі черги перетворила на
 # `details` і мовчки зсунула звіт.
 #
@@ -245,12 +245,12 @@ def zrobyty(pary: dict[str, str], suho: bool) -> int:
 
 def main() -> int:
     a = argparse.ArgumentParser()
-    a.add_argument("--tilky", action="append", default=[],
+    a.add_argument("--only-of", action="append", default=[],
                    help="перейменувати лише названі")
-    a.add_argument("--usi", action="store_true")
-    a.add_argument("--pokazaty", action="store_true",
+    a.add_argument("--all-of", action="store_true")
+    a.add_argument("--display", action="store_true",
                    help="нічого не міняти, лише показати")
-    a.add_argument("--kataloh", action="append", default=[],
+    a.add_argument("--dir", action="append", default=[],
                    help="перейменувати каталог (шлях від кореня)")
     o = a.parse_args()
 
@@ -268,7 +268,7 @@ def main() -> int:
     pary = ({k: v for k, v in TABLYCYA.items() if k in o.tilky}
             if o.tilky else TABLYCYA if (o.usi or o.pokazaty) else {})
     if not pary:
-        print("вкажіть --tilky <ім'я> або --usi (чи --pokazaty)")
+        print("вкажіть --only-of <ім'я> або --all-of (чи --display)")
         return 2
     nevidomi = set(o.tilky) - set(TABLYCYA)
     if nevidomi:

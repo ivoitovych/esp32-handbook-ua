@@ -1,6 +1,6 @@
 # Відпрацьовані сліди класу `E`
 
-**Генерується** `factcheck/tools/leads.py --zvit`. Наряд —
+**Генерується** `factcheck/tools/leads.py --digest`. Наряд —
 `factcheck/reports/BRIEF-LEADS.md`.
 
 Слід (`ideya`) — це здогад попереднього помічника про те, де шукати.

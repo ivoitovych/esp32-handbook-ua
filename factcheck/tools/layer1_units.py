@@ -92,7 +92,7 @@ def normal(s: str) -> str:
 
 
 def main(argv: list[str]) -> int:
-    show_all = "--all" in argv or "--vsi" in argv
+    show_all = "--all" in argv or "--every" in argv
     book: dict[str, list[str]] = {}
     whole: dict[str, str] = {}
     shifted: list[str] = []

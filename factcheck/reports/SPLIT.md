@@ -1,6 +1,6 @@
 # Dividing the unchecked between maintainers
 
-> **generated** — written by `factcheck/tools/split_queue.py --naryad`; editing it by hand is wasted work
+> **generated** — written by `factcheck/tools/split_queue.py --order`; editing it by hand is wasted work
 
 Divided by one question: **in which document does the answer lie**. ESP-IDF, esptool and the `soc/` headers are reachable from M1's container; part datasheets and electrical data are not, and that is M2's work.
 

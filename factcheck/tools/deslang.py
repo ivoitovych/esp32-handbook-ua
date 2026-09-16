@@ -33,7 +33,7 @@ rewrite is keyed by phrase rather than done by hand.
 Anything not matched is **left alone and reported** — a silent
 best-effort rewrite of prose nobody re-read would be its own defect.
 
-    factcheck/tools/deslang.py --pysaty   rewrite
+    factcheck/tools/deslang.py --write   rewrite
     factcheck/tools/deslang.py            dry run: what is left
 """
 from __future__ import annotations
@@ -87,7 +87,7 @@ def novyy(stare: str) -> str | None:
 
 def main() -> int:
     p = argparse.ArgumentParser()
-    p.add_argument("--pysaty", action="store_true")
+    p.add_argument("--write", action="store_true")
     a = p.parse_args()
 
     teka = ROOT / "factcheck" / "evidence"
@@ -118,7 +118,7 @@ def main() -> int:
                 torknuly = True
                 if pole == "method":
                     zmineno += 1
-        if a.pysaty and torknuly:
+        if a.write and torknuly:
             tekst = f.read_text(encoding="utf-8")
             shapka = "".join(ln for ln in tekst.splitlines(keepends=True)
                              if ln.startswith("#") or not ln.strip())

@@ -220,7 +220,7 @@ def main() -> int:
                      encoding="utf-8")
         print(f"  записано {name}: {len(zap)} записів")
 
-    print("\nтепер: factcheck/tools/snapshot.py <знімок> --zvirty — має бути нуль змін")
+    print("\nтепер: factcheck/tools/snapshot.py <знімок> --verify — має бути нуль змін")
     return 0
 
 

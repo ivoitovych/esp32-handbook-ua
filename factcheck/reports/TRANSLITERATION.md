@@ -11,28 +11,12 @@ measured remainder of a migration, so that progress is a number rather
 than an impression. A false positive here is harmless: it sits in the
 list and never fires again.
 
-**Remaining: 140.**
+**Remaining: 124.**
 
 - `--agents`
-- `--bez-merezhi`
 - `--cached`
 - `--detach`
-- `--dilyanky`
-- `--kachaty`
-- `--kesh`
-- `--na-naryad`
-- `--naryad`
-- `--nasinnya`
-- `--pokazaty`
-- `--proba`
-- `--pysaty`
-- `--rody`
-- `--rozshyryty`
 - `--tickets`
-- `--tykho`
-- `--usi`
-- `--vsi`
-- `--zvirty`
 - `DOSYAZHNE`
 - `HISTORICAL_CACHES`
 - `INSHYY`

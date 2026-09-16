@@ -39,6 +39,8 @@ CACHE = ROOT / "factcheck" / "source-cache"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import yaml
+
+import verdicts
 import layer3  # витягання тексту беремо в М1, а не пишемо втретє
 
 _cache_text: dict[str, str] = {}
@@ -101,15 +103,15 @@ def check(shlyakh: Path) -> list[tuple[str, str]]:
             bidy.append(("НЕ ЗАПИС", str(z)[:60]))
             continue
         ident = str(z.get("id", z.get("title", "?")))[:40]
-        verdict = str(z.get("verdykt", "")).strip()
+        verdict = verdicts.verdict_of(z)
         cyt = str(z.get("quote", "")).strip()
         fayl = str(z.get("fayl", "")).strip()
 
-        if verdict not in ("pidtverdzheno", "sperechayetsya",
-                           "ne_znayshov", "nedosyazhne"):
+        if verdict not in ("confirmed", "disputes",
+                           "not_found", "unreachable"):
             bidy.append(("ВЕРДИКТ НЕВІДОМИЙ: " + verdict[:30], ident))
             continue
-        if verdict in ("ne_znayshov", "nedosyazhne"):
+        if verdict in ("not_found", "unreachable"):
             if cyt:
                 bidy.append(("ЦИТАТА ПРИ ВЕРДИКТІ " + verdict, ident))
                 continue

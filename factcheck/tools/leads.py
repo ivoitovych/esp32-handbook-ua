@@ -102,6 +102,7 @@ def digest(katalogy: list[str]) -> int:
     """Звести відпрацьовані сліди, пропустивши `znayshov` через шар 3."""
     import helper_dumps
     import yaml
+    import verdicts
 
     zap = []
     for k in katalogy:
@@ -112,7 +113,7 @@ def digest(katalogy: list[str]) -> int:
              "source": str(z.get("source", "")).strip(),
              "quote": str(z.get("quote", "")),
              "zvidky": z.get("_fayl", "?")}
-            for z in zap if str(z.get("verdykt")) == "znayshov"]
+            for z in zap if verdicts.verdict_of(z) == "confirmed"]
     KANDYDATY.write_text(
         "# Кандидати з відпрацьованих слідів. **Не реєстр.**\n"
         "# Клас присвоює супровідник, і лише після шару 3.\n"
@@ -132,12 +133,12 @@ def digest(katalogy: list[str]) -> int:
 
     c: dict[str, int] = {}
     for z in zap:
-        v = str(z.get("verdykt", "?"))
+        v = verdicts.verdict_of(z) or "?"
         c[v] = c.get(v, 0) + 1
 
     r = [f"""# Відпрацьовані сліди класу `E`
 
-**Генерується** `factcheck/tools/leads.py --zvit`. Наряд —
+**Генерується** `factcheck/tools/leads.py --digest`. Наряд —
 `factcheck/reports/BRIEF-LEADS.md`.
 
 Слід (`ideya`) — це здогад попереднього помічника про те, де шукати.
@@ -172,7 +173,7 @@ def digest(katalogy: list[str]) -> int:
             r.append(f"| `{k['nazva']}` | [`{dz.rsplit('/', 1)[-1]}`]({dz}) |")
         r.append("")
 
-    ne = [z for z in zap if str(z.get("verdykt")) == "ne_znayshov"]
+    ne = [z for z in zap if verdicts.verdict_of(z) == "not_found"]
     if ne:
         r.append("\n## Здогади, що не підтвердилися\n")
         r.append("| Одиниця | Що дивилися |")
@@ -192,8 +193,8 @@ def main() -> int:
     if len(sys.argv) < 2:
         print(__doc__)
         return 2
-    if "--zvit" in sys.argv:
-        i = sys.argv.index("--zvit")
+    if "--digest" in sys.argv:
+        i = sys.argv.index("--digest")
         return digest(sys.argv[i + 1:])
     import helper_dumps
 
@@ -205,7 +206,7 @@ def main() -> int:
             continue
         chastyna, _, _ = helper_dumps.read_dir(Path(katalog))
         zap += chastyna
-    ideyi = [z for z in zap if str(z.get("verdykt")) == "ideya"]
+    ideyi = [z for z in zap if verdicts.verdict_of(z) == "advice"]
     prydatni = [z for z in ideyi
                 if (p := str(z.get("propozyciya", "")))
                 and DOSYAZHNE.search(p) and not UNREACHABLE.search(p)]

@@ -27,7 +27,7 @@ is the only moment it is cheap to fix.
 
     factcheck/tools/naming.py              check against the baseline
     factcheck/tools/naming.py --write      re-record the baseline after a migration batch
-    factcheck/tools/naming.py --proba      show the check firing on a new name
+    factcheck/tools/naming.py --probe      show the check firing on a new name
     factcheck/tools/naming.py --inventory  the WHOLE surface, data included — a report, not a gate
 
 ## What the gate does not count, and why that matters
@@ -86,7 +86,9 @@ peripheral peripherals pinout pinouts power project projects pullup
 pullups pycache queue queues reproducible restructure sensor sensors
 backslash bucket buckets cyrillic fstring semtech share snapshot snapshots solder switch switches symptom symptoms unchecked
 unreachable wiring
-english old verdict verdicts current search compose digest expected""".split())
+english old verdict verdicts current search compose digest expected
+effects areas probe brief detail display fetch offline expand severe kinds
+only random per batch from every all list severity""".split())
 
 RE_SYGNAL = re.compile(
     r"kh|zh|ya|yu|yi|ch|sh|ts|iy|yy|ovan|nnya|aty|yty|uva|klas|syla|stan|naryad"
@@ -315,7 +317,7 @@ def inventory() -> int:
 
 
 def main() -> int:
-    if "--proba" in sys.argv:
+    if "--probe" in sys.argv:
         return proba()
     if "--inventory" in sys.argv:
         return inventory()

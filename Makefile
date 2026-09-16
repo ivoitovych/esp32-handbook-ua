@@ -69,7 +69,7 @@ correspondence:
 # 51 запис у черзі. А вигадане джерело, заглушка в кеші й доказ класу
 # `F` не можуть бути нічим, крім помилки, — і на них скрипт падає.
 layer3:
-	@$(PY) factcheck/tools/layer3.py --zvit
+	@$(PY) factcheck/tools/layer3.py --digest
 
 # Модальність: припис у книзі проти дозволу в джерелі. Звіт, не
 # ворота — припис може бути обґрунтованим, і судить це людина.
@@ -96,13 +96,13 @@ cache:
 # назовні — рядок маніфесту. Доказ поза маніфестом відтворний тільки
 # в тому контейнері, де його писали.
 reproducible:
-	@$(PY) factcheck/tools/cache.py --vidtvornist
+	@$(PY) factcheck/tools/cache.py --reproducible
 
 # Чи не потрапив файл книги в кеш джерел. Ворота, не звіт:
 # доказ, що доводить книгу книгою, проходить усі три шари, і
 # жодна інша перевірка його не бачить.
 cache-vs-book:
-	@$(PY) factcheck/tools/cache_vs_book.py --tykho
+	@$(PY) factcheck/tools/cache_vs_book.py --quiet
 
 # Узгодженість керівних документів (М2). Не проза — лише факти, що
 # мають одну правильну відповідь: словник класів проти коду, названі
@@ -118,7 +118,7 @@ docs:
 	@$(PY) factcheck/tools/paths.py
 	@$(PY) factcheck/tools/report.py
 	@$(PY) factcheck/tools/docs.py
-	@$(PY) factcheck/tools/doc_kind.py --suvoro
+	@$(PY) factcheck/tools/doc_kind.py --severe
 
 # Транслітеровані імена в коді: перелік, що може лише коротшати (М2).
 # Заведено після того, як власник знаходив їх поштучно — KLASY, SYLA,
@@ -199,7 +199,7 @@ release-check:
 	@$(PY) tools/struct_fields.py
 	@$(PY) factcheck/tools/arithmetic.py >/dev/null && echo "arytmetyka: збіглося"
 	@echo "── листування (строго: відкрите питання зупиняє випуск)"
-	@$(PY) tools/correspondence.py --suvoro
+	@$(PY) tools/correspondence.py --severe
 	@$(PY) factcheck/tools/cache.py --check
 	@echo "── рецензійні перевірки (строго)"
 	@$(PY) tools/review.py --strict >/dev/null && echo "review: 0 знахідок"
@@ -218,7 +218,7 @@ release-check:
 # номер рядка й піде за ним у книгу.
 	@$(PY) factcheck/tools/factcheck.py stale
 	@$(PY) factcheck/tools/factcheck.py vorota
-# Третій шар у випускних воротах — **звичайний режим, не `--suvoro`**.
+# Третій шар у випускних воротах — **звичайний режим, не `--severe`**.
 #
 # Він розрізняє рівно те, що потрібне на випуску: вигадане джерело,
 # заглушка замість документа й запис класу `F` у полі доказу — це

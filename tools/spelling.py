@@ -14,7 +14,7 @@
 
     tools/spelling.py            перелік невідомих слів за частотою
     tools/spelling.py --файли    де саме кожне трапляється
-    tools/spelling.py --suvoro   ненульовий вихід, якщо є невідомі
+    tools/spelling.py --severe   ненульовий вихід, якщо є невідомі
 
 ## Що не перевіряється
 
@@ -147,7 +147,7 @@ def main() -> int:
     print(f"\nправопис: слововживань {checked_n}, невідомих слів "
           f"{len(nevidomi)} ({sum(nevidomi.values())} вживань), "
           f"власний словник {len(svoyi)}")
-    if "--suvoro" in sys.argv and nevidomi:
+    if "--severe" in sys.argv and nevidomi:
         return 1
     return 0
 

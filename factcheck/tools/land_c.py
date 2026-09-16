@@ -29,7 +29,7 @@
 всьому реєстрі, і відмітність міряється **пошуком**, бо саме так
 взірець потім і працює.
 
-    factcheck/tools/land_c.py [--pysaty]
+    factcheck/tools/land_c.py [--write]
 """
 from __future__ import annotations
 
@@ -82,7 +82,7 @@ def pattern_for(tekst: str, vsi: list[str]) -> str | None:
 # виглядав завершеним. Але стиснення тримається не тим, що старі імена
 # прибрано, а тим, що їх **нема кому написати**: після `--stysnuty`
 # перша ж посадка повернула б їх назад, по одному наряду за раз, і
-# `znimok --zvirty` був би зелений того дня й червоний за тиждень.
+# `znimok --verify` був би зелений того дня й червоний за тиждень.
 #
 # Знайшов це М2. Рядок нижче прибирається **разом** із прогоном
 # `--stysnuty`, не раніше й не пізніше.
@@ -107,7 +107,7 @@ def main() -> int:
     import sample
 
     p = argparse.ArgumentParser()
-    p.add_argument("--pysaty", action="store_true")
+    p.add_argument("--write", action="store_true")
     a = p.parse_args()
 
     reyestr: dict[str, dict] = {}
@@ -168,8 +168,8 @@ def main() -> int:
     print(f"кандидатів {len(kandydaty)} | придатних до посадки {vsoho} | "
           f"вже A/B/C {vzhe} | немає в реєстрі {nema} | "
           f"без відмітного префікса {shyrokyy}")
-    if not a.pysaty:
-        print("\n(суха проба; `--pysaty` щоб записати)")
+    if not a.write:
+        print("\n(суха проба; `--write` щоб записати)")
         return 0
 
     kudy = ROOT / "factcheck" / "evidence"

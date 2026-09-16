@@ -46,7 +46,7 @@ wrong unit is worse than an idle pattern — an idle one is visible, a
 wrong binding is not.
 
     factcheck/tools/patterns_repair.py            show what it would do
-    factcheck/tools/patterns_repair.py --pysaty   write it
+    factcheck/tools/patterns_repair.py --write   write it
 """
 from __future__ import annotations
 
@@ -84,7 +84,7 @@ def pattern_from(tekst: str) -> str:
 
 
 def main(argv: list[str]) -> int:
-    pysaty = "--pysaty" in argv
+    pysaty = "--write" in argv
 
     units = []
     # There used to be a string "ABCDEFG" here — a private copy of the

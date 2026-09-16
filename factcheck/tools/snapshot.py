@@ -124,7 +124,7 @@ def collect(by: str = "sha") -> dict[str, list[str]]:
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("out_file", type=Path)
-    p.add_argument("--compare", "--zvirty", dest="compare",
+    p.add_argument("--compare", "--verify", dest="compare",
                    action="store_true")
     a = p.parse_args()
 

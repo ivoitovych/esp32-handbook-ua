@@ -12,7 +12,7 @@
     factcheck/tools/cache.py --list         що вже є
     factcheck/tools/cache.py --check        чи збігаються хеші з маніфестом
     factcheck/tools/cache.py --size         скільки займає
-    factcheck/tools/cache.py --vidtvornist  чи може третя сторона звірити доказ
+    factcheck/tools/cache.py --reproducible  чи може третя сторона звірити доказ
 
 ## Чому самі файли не комітяться
 
@@ -400,13 +400,13 @@ if __name__ == "__main__":
         sys.exit(proba())
     if a[0] == "--size":
         sys.exit(rozmir())
-    if a[0] == "--vidtvornist":
+    if a[0] == "--reproducible":
         sys.exit(vidtvornist())
     # Помилковий ключ — не URL. Без цього `--self-check` пішов у curl як
     # адреса, і на успіху дописав би в маніфест рядок з іменем ключа.
     if a[0].startswith("--"):
         print(f"cache: невідомий ключ `{a[0]}`\n"
-              f"   --list --check --self-check --size --vidtvornist\n"
+              f"   --list --check --self-check --size --reproducible\n"
               f"   або URL (і, необов'язково, ім'я файлу)")
         sys.exit(2)
     sys.exit(zavantazhyty(a[0], a[1] if len(a) > 1 else None))

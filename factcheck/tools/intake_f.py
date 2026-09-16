@@ -196,7 +196,7 @@ def main() -> int:
 
     p = argparse.ArgumentParser()
     p.add_argument("teka", type=pathlib.Path)
-    p.add_argument("--bez-merezhi", action="store_true")
+    p.add_argument("--offline", action="store_true")
     p.add_argument("--ledger", action="store_true",
                    help="дописати підсумок прогону у factcheck/reports/RUNS.md")
     p.add_argument("--model", default="haiku-4.5")
@@ -291,7 +291,7 @@ def main() -> int:
         cyt = str(r.get("quote") or "").strip()
         if not cyt or not dzh.startswith("http"):
             continue
-        t = dokument(dzh, not a.bez_merezhi)
+        t = dokument(dzh, not a.offline)
         if t is None:
             dosl["документ не дістався"] += 1
             bidy.append((ident, "ДОКУМЕНТ НЕ ДІСТАВСЯ", dzh[:46]))

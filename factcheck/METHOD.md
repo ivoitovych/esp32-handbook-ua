@@ -2175,7 +2175,7 @@ it should have searched the registry.
 **Symptom.** Evidence cites a document nobody else can obtain or
 identify. The record looks checkable and is not.
 
-**Measure.** `cache.py --vidtvornist`: is the source's URL or filename
+**Measure.** `cache.py --reproducible`: is the source's URL or filename
 in the committed manifest, with a sha256.
 
 **Case.** 587 of 1025 `A`/`B` records. Not fraud — the cache is
@@ -2185,7 +2185,7 @@ manifest is the bridge; it simply had not been kept. Fetching the
 reachable ones and merging the other maintainer's manifest took
 reproducibility 42 % → 71 %.
 
-**Held by.** `cache.py --vidtvornist`, `make vidtvornist`.
+**Held by.** `cache.py --reproducible`, `make vidtvornist`.
 
 ### 10. Silent substitution of a document
 
@@ -2264,7 +2264,7 @@ was printed immediately after the edit and read.
 > it back — and diff the **parsed** structures, not the file, so
 > reformatting cannot hide a content change.
 
-**Held by.** `snapshot.py --zvirty` before and after every bulk change —
+**Held by.** `snapshot.py --verify` before and after every bulk change —
 which exists, and which the author of this case did not run;
 `entry_points.py` re-reads its baseline per point and prints each
 revert. The record count printed by any tool that loads the registry is

@@ -233,7 +233,7 @@ def self_check() -> int:
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--self-check", action="store_true")
-    p.add_argument("--suvoro", action="store_true",
+    p.add_argument("--severe", action="store_true",
                    help="ненульовий код виходу при знахідках")
     a = p.parse_args()
     if a.self_check:
@@ -253,7 +253,7 @@ def main() -> int:
         print(f"   ✗ {b}")
     if len(bk) > 15:
         print(f"   … ще {len(bk) - 15}")
-    return 1 if (a.suvoro and (bz or bk)) else 0
+    return 1 if (a.severe and (bz or bk)) else 0
 
 
 if __name__ == "__main__":

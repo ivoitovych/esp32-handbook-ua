@@ -2,7 +2,7 @@
 
 > **generated** — written by `tools/work_orders.py`; editing it by hand is wasted work
 
-**Генерується** `tools/work_orders.py --zvit`. Наряд —
+**Генерується** `tools/work_orders.py --digest`. Наряд —
 `factcheck/BRIEF-QUOTES.md`.
 
 Третій шар сказав, що цих цитат немає за названою адресою. Питання тут

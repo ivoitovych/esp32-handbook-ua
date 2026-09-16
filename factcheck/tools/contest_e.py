@@ -43,7 +43,7 @@
 пропускаються**, а не валять прогін.
 
     factcheck/tools/contest_e.py <каталог>            зібрати factcheck/reports/SWEEP-NO-SIGNAL.md
-    factcheck/tools/contest_e.py <каталог> --korotko  лише числа
+    factcheck/tools/contest_e.py <каталог> --brief  лише числа
 """
 from __future__ import annotations
 
@@ -77,10 +77,12 @@ KANDYDATY = ROOT / "factcheck" / "work" / "queues" / "contest-e-candidates.yaml"
 #     factcheck/tools/contest_e.py <каталог>
 #     SHTURM_VYVANTAZHENNYA=<каталог> factcheck/tools/contest_e.py
 
+import verdicts
+
 PIDPYSY = {
-    "znayshov": "Джерело знайдено",
-    "ideya": "Названо, де шукати",
-    "spravdi-e": "Підтверджено як чесний E",
+    "confirmed": "Джерело знайдено",
+    "advice": "Названо, де шукати",
+    "truly_none": "Підтверджено як чесний E",
 }
 
 
@@ -178,9 +180,9 @@ def zaholovok(**kw) -> str:
 
 def main() -> int:
     zap, bidy = collect()
-    c = collections.Counter(str(z.get("verdykt", "?")) for z in zap)
+    c = collections.Counter(verdicts.verdict_of(z) or "?" for z in zap)
 
-    if "--korotko" in sys.argv:
+    if "--brief" in sys.argv:
         print(f"contest_e: записів {len(zap)}, зламаних файлів {len(bidy)}; "
               + ", ".join(f"{k} {v}" for k, v in sorted(c.items())))
         return 0
@@ -194,7 +196,7 @@ def main() -> int:
              "quote": str(z.get("quote", "")),
              "syla": str(z.get("syla", "?")),
              "zvidky": z.get("_fayl", "?")}
-            for z in zap if str(z.get("verdykt")) == "znayshov"]
+            for z in zap if verdicts.verdict_of(z) == "confirmed"]
     KANDYDATY.write_text(
         "# Згенеровано `factcheck/tools/contest_e.py`. Не реєстр: кандидати на\n"
         "# перевірку третім шаром. `factcheck/tools/layer3.py "
@@ -221,12 +223,12 @@ def main() -> int:
             r.append(f"- `{name}` — {chomu}")
         r.append("")
 
-    for verdict in ("znayshov", "ideya", "spravdi-e"):
-        grupa = [z for z in zap if str(z.get("verdykt")) == verdict]
+    for verdict in ("confirmed", "advice", "truly_none"):
+        grupa = [z for z in zap if verdicts.verdict_of(z) == verdict]
         if not grupa:
             continue
         r.append(f"\n## {PIDPYSY[verdict]} — {len(grupa)}\n")
-        if verdict == "znayshov":
+        if verdict == "confirmed":
             r.append(f"З них третій шар витримали **{vystoyalo}**. Решта "
                      "лишається тут із позначкою: спростування помічника "
                      "теж результат, і ховати його нема за чим.\n")

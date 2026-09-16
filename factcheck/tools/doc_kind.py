@@ -309,7 +309,7 @@ def main() -> int:
     a = argparse.ArgumentParser()
     a.add_argument("--label", action="store_true")
     a.add_argument("--self-check", action="store_true")
-    a.add_argument("--suvoro", action="store_true")
+    a.add_argument("--severe", action="store_true")
     o = a.parse_args()
     if o.self_check:
         return self_check()

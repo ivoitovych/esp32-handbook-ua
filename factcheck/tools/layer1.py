@@ -65,9 +65,9 @@ kind 25 in the catalogue — a correct count of a bucket that holds two
 different situations — found in this file within an hour of the kind
 being written down.
 
-    factcheck/tools/layer1.py [--vsi] [--tykho] [--detali]
+    factcheck/tools/layer1.py [--every] [--quiet] [--detail]
 
-`--detali` друкує кожну зламану картку з її родом і файлом — щоб
+`--detail` друкує кожну зламану картку з її родом і файлом — щоб
 половину, яка належить генератору, можна було забрати без вгадування.
 """
 from __future__ import annotations
@@ -174,9 +174,9 @@ def chastyny_komirky(t: str) -> list[str]:
 
 
 def main(argv: list[str]) -> int:
-    vsi = "--vsi" in argv
-    tykho = "--tykho" in argv
-    detali = "--detali" in argv
+    vsi = "--every" in argv
+    tykho = "--quiet" in argv
+    detali = "--detail" in argv
     kontekst_povno: list[tuple] = []
 
     knyha: dict[str, list[str]] = {}
@@ -344,7 +344,7 @@ def demo() -> int:
             ROOT, GRUPY = t, ("rozdily",)
             config.ROOT = t
             try:
-                got = main(["layer1", "--tykho"])
+                got = main(["layer1", "--quiet"])
             finally:
                 ROOT, GRUPY, config.ROOT = spravzhniy, spravzhni_g, spravzhniy
             check(nazva, got == ocik)
@@ -355,7 +355,7 @@ def demo() -> int:
         ROOT, GRUPY = t, ("rozdily",)
         config.ROOT = t
         try:
-            got = main(["layer1", "--tykho"])
+            got = main(["layer1", "--quiet"])
         finally:
             ROOT, GRUPY, config.ROOT = spravzhniy, spravzhni_g, spravzhniy
         check("НУЛЬ карток — це провал, а не «чисто»", got == 1)

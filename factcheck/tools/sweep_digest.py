@@ -28,7 +28,7 @@
 лишається за людиною: `sperechayetsya` на littlefs був дослівною
 цитатою з правильного документа — і прочитаний навпаки.
 
-    factcheck/tools/sweep_digest.py <тека з yaml> [--kesh <тека>]
+    factcheck/tools/sweep_digest.py <тека з yaml> [--cache <тека>]
 """
 from __future__ import annotations
 
@@ -41,6 +41,9 @@ import sys
 from pathlib import Path
 
 import yaml
+
+import config
+import verdicts
 
 # Довідник не є джерелом для себе. Гілки розробки цього проєкту в
 # адресу теж не йдуть, тому перевіряємо власника й теки книги.
@@ -108,7 +111,7 @@ def chytay(teka: Path) -> tuple[list[dict], list[str]]:
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("teka", type=Path)
-    p.add_argument("--kesh", type=Path, default=None)
+    p.add_argument("--cache", type=Path, default=None)
     a = p.parse_args()
     cache = a.cache or (a.teka.parent / "kesh-zvodu")
     cache.mkdir(parents=True, exist_ok=True)
@@ -133,11 +136,11 @@ def main() -> int:
     if not n:
         return 1
 
-    vydav = collections.Counter(str(z.get("verdykt")) for z in prydatni)
+    vydav = collections.Counter(verdicts.verdict_of(z) for z in prydatni)
     print(" ".join(f"{k}={v}" for k, v in vydav.most_common()))
 
     zayavy = [z for z in prydatni
-              if str(z.get("verdykt")) in NEEDS_QUOTE]
+              if verdicts.verdict_of(z) in NEEDS_QUOTE]
     print(f"\nзаявок із цитатою до перевірки: {len(zayavy)}")
 
     vyzhyly, zahynuly, unreachable_n, without_quote = [], [], [], []

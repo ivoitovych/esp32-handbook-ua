@@ -31,7 +31,7 @@
 досліду це підмінює питання: замість «як працює технологія на черзі
 `F`» виходить «як вона працює там, де ми вже знаємо відповідь».
 
-`--vypadkovo N` бере N одиниць з **усієї** черги `F`, включно з тими,
+`--random N` бере N одиниць з **усієї** черги `F`, включно з тими,
 де кандидата немає. Частка «не знайшов» від цього зросте — і це не
 хиба досліду, а його результат: вона й є мірою того, скільки в черзі
 взагалі робочого.
@@ -40,8 +40,8 @@
 бо `sort -R` не записував насіння. Тут воно і в параметрі, і в
 шапці кожного наряду, і перелік узятих `id` лягає поруч файлом.
 
-    factcheck/tools/work_orders_f.py <куди> [--na-naryad 10]
-    factcheck/tools/work_orders_f.py <куди> --vypadkovo 100 --nasinnya 20260828
+    factcheck/tools/work_orders_f.py <куди> [--per-order 10]
+    factcheck/tools/work_orders_f.py <куди> --random 100 --seed 20260828
 """
 from __future__ import annotations
 
@@ -150,7 +150,7 @@ def vypadkova(a) -> int:
     import sample
 
     usi = sorted(sample.units("unchecked"), key=lambda u: u["id"])
-    vzyato = random.Random(a.seed).sample(usi, min(a.vypadkovo, len(usi)))
+    vzyato = random.Random(a.seed).sample(usi, min(a.random, len(usi)))
     (a.kudy / "vybirka.json").write_text(json.dumps(
         {"order_version": order_version(getattr(a, "rich", False)),
          # `queue` пише і цей прогін теж: попарний режим порівнює з ним
@@ -165,7 +165,7 @@ def vypadkova(a) -> int:
 def za_perelikom(a, sample) -> int:
     """Ті самі одиниці, що в попередньому прогоні.
 
-    ## Навіщо це окремо від `--vypadkovo`
+    ## Навіщо це окремо від `--random`
 
     Щоб виміряти зміну **наряду**, змінювати треба наряд і **тільки**
     його. Новий випадковий жереб змінює водночас дві речі — версію
@@ -181,7 +181,7 @@ def za_perelikom(a, sample) -> int:
     """
     import json
 
-    poperednye = json.loads(a.z_pereliku.read_text(encoding="utf-8"))
+    poperednye = json.loads(a.from_list.read_text(encoding="utf-8"))
     treba = list(poperednye["vzyato"])
     reyestr = {}
     import factcheck
@@ -212,7 +212,7 @@ def za_perelikom(a, sample) -> int:
 
     (a.kudy / "vybirka.json").write_text(json.dumps(
         {"order_version": order_version(a.rich),
-         "paired_with": str(a.z_pereliku.parent.name),
+         "paired_with": str(a.from_list.parent.name),
          "prev_order_version": poperednye.get("order_version"),
          "queue": poperednye.get("queue"), "sample_size": len(vzyato),
          "rich_cards": bool(a.rich),
@@ -222,8 +222,8 @@ def za_perelikom(a, sample) -> int:
 
     kont = konteksty() if a.rich else {}
     n = 0
-    for i in range(0, len(vzyato), a.na_naryad):
-        ch = vzyato[i:i + a.na_naryad]
+    for i in range(0, len(vzyato), a.per_order):
+        ch = vzyato[i:i + a.per_order]
         n += 1
         kand = ("**Документа-кандидата немає.** Ці одиниці взято "
                 "**випадково** з усієї черги, а не за темою, тож жодного "
@@ -233,7 +233,7 @@ def za_perelikom(a, sample) -> int:
         r = [shapka(n=n, tema="випадкова вибірка (повтор попарно)",
                     k=len(ch), kandydat=kand),
              f"\n<!-- order_version:{order_version(a.rich)} "
-             f"paired:{a.z_pereliku.parent.name} -->\n"]
+             f"paired:{a.from_list.parent.name} -->\n"]
         for u in ch:
             r.append(f"\n**`{u['id']}`**\n")
             r.append(f"> {u['tekst']}\n")
@@ -252,7 +252,7 @@ def za_perelikom(a, sample) -> int:
         (a.kudy / f"f-{n:02d}.md").write_text("\n".join(r) + "\n",
                                               encoding="utf-8")
     print(f"нарядів {n}, одиниць {len(vzyato)} (попарно з "
-          f"{a.z_pereliku.parent.name}); зникли {len(znykly)}, "
+          f"{a.from_list.parent.name}); зникли {len(znykly)}, "
           f"вийшли з черги {len(zminyly)} → {a.kudy}")
     return 0
 
@@ -266,7 +266,7 @@ def vypadkova(a) -> int:
     import sample
 
     usi = sorted(sample.units("unchecked"), key=lambda u: u["id"])
-    vzyato = random.Random(a.seed).sample(usi, min(a.vypadkovo, len(usi)))
+    vzyato = random.Random(a.seed).sample(usi, min(a.random, len(usi)))
     (a.kudy / "vybirka.json").write_text(json.dumps(
         {"order_version": order_version(getattr(a, "rich", False)),
          # `queue` пише і цей прогін теж: попарний режим порівнює з ним
@@ -278,8 +278,8 @@ def vypadkova(a) -> int:
         ensure_ascii=False, indent=1), encoding="utf-8")
 
     n = 0
-    for i in range(0, len(vzyato), a.na_naryad):
-        ch = vzyato[i:i + a.na_naryad]
+    for i in range(0, len(vzyato), a.per_order):
+        ch = vzyato[i:i + a.per_order]
         n += 1
         kand = ("**Документа-кандидата немає.** Ці одиниці взято "
                 "**випадково** з усієї черги, а не за темою, тож жодного "
@@ -316,27 +316,27 @@ def main() -> int:
 
     p = argparse.ArgumentParser()
     p.add_argument("kudy", type=Path)
-    p.add_argument("--na-naryad", type=int, default=10)
-    p.add_argument("--vypadkovo", type=int, default=0,
+    p.add_argument("--per-order", type=int, default=10)
+    p.add_argument("--random", type=int, default=0,
                    help="взяти N одиниць випадково з усієї черги F")
-    p.add_argument("--z-pereliku", type=Path, default=None,
+    p.add_argument("--from-list", type=Path, default=None,
                    help="take the same units as a previous run's "
                         "vybirka.json — paired comparison of task versions")
     p.add_argument("--rich-cards", action="store_true", dest="rich",
                    help="кожна картка несе своє оточення в книзі й абзац "
                         "про своє місце в потоці (М2)")
-    p.add_argument("--nasinnya", type=int, default=0,
-                   help="насіння; обов'язкове разом із --vypadkovo")
+    p.add_argument("--seed", type=int, default=0,
+                   help="насіння; обов'язкове разом із --random")
     a = p.parse_args()
-    if a.vypadkovo and not a.seed:
-        p.error("--vypadkovo без --nasinnya: дослід буде невідтворний")
+    if a.random and not a.seed:
+        p.error("--random без --seed: дослід буде невідтворний")
     a.kudy.mkdir(parents=True, exist_ok=True)
 
-    if a.z_pereliku:
+    if a.from_list:
         import sample
         return za_perelikom(a, sample)
 
-    if a.vypadkovo:
+    if a.random:
         return vypadkova(a)
 
     za: dict[str, list[dict]] = collections.defaultdict(list)
@@ -351,8 +351,8 @@ def main() -> int:
     for pref in sorted(za, key=lambda k: -len(za[k])):
         tema, dok = TEMY[pref]
         odyn = za[pref]
-        for i in range(0, len(odyn), a.na_naryad):
-            ch = odyn[i:i + a.na_naryad]
+        for i in range(0, len(odyn), a.per_order):
+            ch = odyn[i:i + a.per_order]
             n += 1
             kand = (f"**Документ-кандидат:** `{dok}`" if dok else
                     "**Документа-кандидата немає** — тему не покриває жодне зі "

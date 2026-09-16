@@ -45,7 +45,7 @@
 
     factcheck/tools/work_orders.py                    зібрати factcheck/reports/BRIEF-QUOTES.md
     factcheck/tools/work_orders.py --krim <каталог>   лише ті, на які ще не відповіли
-    factcheck/tools/work_orders.py --zvit <каталог>   звести відповіді помічників
+    factcheck/tools/work_orders.py --digest <каталог>   звести відповіді помічників
 """
 from __future__ import annotations
 
@@ -54,6 +54,8 @@ import sys
 from pathlib import Path
 
 import yaml
+
+import verdicts
 
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -161,16 +163,16 @@ def digest(katalog: Path) -> int:
 
     c: dict[str, int] = {}
     for n in expected:
-        v = str(vidpovidi.get(n, {}).get("verdykt", "—"))
+        v = verdicts.verdict_of(vidpovidi.get(n, {})) or "—"
         c[v] = c.get(v, 0) + 1
 
     disputed_n = [n for n in expected
-                      if str(vidpovidi.get(n, {}).get("verdykt"))
-                      == "sperechayetsya"]
+                      if verdicts.verdict_of(vidpovidi.get(n, {}))
+                      == "disputes"]
 
     r = [f"""# Книга проти джерел: {len(expected)} розбіжних цитат
 
-**Генерується** `factcheck/tools/work_orders.py --zvit`. Наряд —
+**Генерується** `factcheck/tools/work_orders.py --digest`. Наряд —
 `factcheck/reports/BRIEF-QUOTES.md`.
 
 Третій шар сказав, що цих цитат немає за названою адресою. Питання тут
@@ -263,10 +265,10 @@ def main() -> int:
         bidy = [n for n in bidy
                 if str(n.get("nazva", "")).strip() not in vidpovidzheni]
 
-    if "--zvit" in sys.argv:
-        i = sys.argv.index("--zvit")
+    if "--digest" in sys.argv:
+        i = sys.argv.index("--digest")
         if i + 1 >= len(sys.argv):
-            print("naryad: --zvit потребує каталогу вивантажень")
+            print("naryad: --digest потребує каталогу вивантажень")
             return 2
         return digest(Path(sys.argv[i + 1]))
 

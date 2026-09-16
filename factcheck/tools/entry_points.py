@@ -101,14 +101,14 @@ TOCHKY: list[list[str]] = [
     ["factcheck.py", "vorota"], ["factcheck.py", "blocked"],
     ["factcheck.py", "cherga"], ["factcheck.py", "shukaty", "GPIO"],
     ["factcheck.py", "vzirets", "GPIO"],
-    ["layer3.py", "--zvit"], ["layer1.py"], ["layer1.py", "--detali"],
+    ["layer3.py", "--digest"], ["layer1.py"], ["layer1.py", "--detail"],
     ["layer1_units.py"], ["coverage.py"], ["intake.py"],
     ["schema.py"], ["schema.py", "--self-check"],
     ["leak.py"], ["leak.py", "--self-check"],
     ["task_spec.py", "--version"], ["task_spec.py", "--blocks"],
     ["task_spec.py", "--self-check"],
-    ["modality.py"], ["cache_vs_book.py", "--tykho"], ["cache_identity.py"],
-    ["cache.py", "--check"], ["cache.py", "--vidtvornist"],
+    ["modality.py"], ["cache_vs_book.py", "--quiet"], ["cache_identity.py"],
+    ["cache.py", "--check"], ["cache.py", "--reproducible"],
     ["split_queue.py"], ["work_orders.py"], ["work_orders_f.py"],
     ["correspondence.py"], ["refuted.py"], ["struct_fields.py"],
     ["pins.py"], ["cross_refs.py"], ["linkcheck.py"], ["calques.py"],
@@ -120,7 +120,7 @@ TOCHKY: list[list[str]] = [
     ["deslang.py"], ["book_index.py"], ["bind_by_hash.py"],
     # Інструменти, що ВИМАГАЮТЬ аргументів. Без них гарнес доходив лише
     # до повідомлення про вжиток — і саме там пройшов `NameError` у
-    # `work_orders_f --vypadkovo`, бо модуль `sample` імпортувався в
+    # `work_orders_f --random`, бо модуль `sample` імпортувався в
     # `main()`, а вживався в іншій функції.
     #
     # > Точка входу, покрита лише своїм повідомленням про вжиток,
@@ -128,11 +128,11 @@ TOCHKY: list[list[str]] = [
     #
     # `{TMP}` заміняється на тимчасовий каталог; ці точки нічого не
     # пишуть у дерево.
-    ["work_orders_f.py", "{TMP}/wof", "--vypadkovo", "6",
-     "--nasinnya", "20260828"],
-    ["work_orders_f.py", "{TMP}/wofr", "--vypadkovo", "6",
-     "--nasinnya", "20260828", "--rich-cards"],
-    ["sample.py", "F", "6", "--nasinnya", "20260828"],
+    ["work_orders_f.py", "{TMP}/wof", "--random", "6",
+     "--seed", "20260828"],
+    ["work_orders_f.py", "{TMP}/wofr", "--random", "6",
+     "--seed", "20260828", "--rich-cards"],
+    ["sample.py", "F", "6", "--seed", "20260828"],
 ]
 
 # Цілі `make check` — щоб `--missing` могла сказати, чого вони не бачать.
@@ -293,11 +293,38 @@ def znyaty(kudy: pathlib.Path) -> int:
         return _capture_into(kudy, tmp, derevo)
 
 
+def _tool_path(derevo: pathlib.Path, imya: str) -> str:
+    """Where an entry point actually lives.
+
+    This was the literal `tools/{name}`, written before the fact-check
+    tools moved to `factcheck/tools/`. Afterwards **46 of the 57 points
+    did not exist at the path** the harness used: every one of them
+    returned `can't open file`, identically, on every run — so the
+    comparison called them unchanged and the summary said
+    "57 points, 0 different".
+
+    > A snapshot of a program that was never started is stable, and its
+    > stability means nothing. The harness was proving that a file which
+    > is absent stays absent.
+
+    Only 11 points were ever really exercised. Everything this harness
+    certified between the move and 2026-09-16 was certified by those 11.
+    """
+    for pre in ("factcheck/tools", "tools"):
+        if (derevo / pre / imya).exists():
+            return f"{pre}/{imya}"
+    return f"tools/{imya}"       # не існує ніде — хай впаде голосно нижче
+
+
 def _capture_into(kudy: pathlib.Path, tmp: str, derevo: pathlib.Path) -> int:
+    znykli: list[str] = []
     for t in TOCHKY:
         argv = [x.replace("{TMP}", tmp) for x in t[1:]]
         stan_do = _tree_state(derevo)
-        r = subprocess.run([sys.executable, f"tools/{t[0]}", *argv],
+        shlyakh = _tool_path(derevo, t[0])
+        if not (derevo / shlyakh).exists():
+            znykli.append(t[0])
+        r = subprocess.run([sys.executable, shlyakh, *argv],
                            cwd=derevo, capture_output=True, text=True,
                            timeout=1800)
         # Ім'я тимчасового каталогу міняється щопрогону, тож два знімки
@@ -321,7 +348,19 @@ def _capture_into(kudy: pathlib.Path, tmp: str, derevo: pathlib.Path) -> int:
         # Відкату більше немає й бути не має: інструменти пишуть у
         # робочу копію, яка існує рівно на час прогону. Дерево, у якому
         # хтось працює, гарнес не чіпає взагалі.
-    print(f"знято точок: {len(TOCHKY)} → {kudy}")
+    # A point whose file is not there did not run, and a snapshot of it is
+    # not evidence of anything. Saying so **loudly** is the whole fix: the
+    # silent version of this cost fifteen days during which the harness
+    # reported 57 stable points while executing 11.
+    if znykli:
+        print(f"   ✗ НЕ ЗАПУСКАЛИСЯ (файлу немає): {len(znykli)} із "
+              f"{len(TOCHKY)} — {', '.join(sorted(set(znykli))[:6])}"
+              f"{' …' if len(set(znykli)) > 6 else ''}")
+        print("     Знімок незапущеної точки стабільний і нічого не доводить.")
+    print(f"знято точок: {len(TOCHKY)} → {kudy}"
+          f"{f', з них не запустилося {len(znykli)}' if znykli else ''}")
+    if znykli:
+        return 1
     return 0
 
 

@@ -36,7 +36,7 @@
       з них подані як `A`/`B` (звірено з джерелом) 237
 
     factcheck/tools/leak.py            перелік
-    factcheck/tools/leak.py --naslidky що тримається на течах (повільніше)
+    factcheck/tools/leak.py --effects що тримається на течах (повільніше)
     factcheck/tools/leak.py --self-check  показ на навмисно зіпсованому вході
 """
 from __future__ import annotations
@@ -146,7 +146,7 @@ def self_check() -> int:
 
 def main() -> int:
     p = argparse.ArgumentParser()
-    p.add_argument("--naslidky", action="store_true")
+    p.add_argument("--effects", action="store_true")
     p.add_argument("--self-check", action="store_true")
     a = p.parse_args()
 
@@ -169,7 +169,7 @@ def main() -> int:
               f"{factcheck.record_title(z)[:46]}")
         print(f"          теча: {d['alt']!r}")
 
-    if not a.naslidky:
+    if not a.effects:
         return 0
 
     for i, z in enumerate(records):

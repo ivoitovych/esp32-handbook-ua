@@ -172,7 +172,7 @@ def prove(target: Path) -> int:
     for tool, arg in (("task_spec.py", "--version"),
                       ("paths.py", "--demo"),
                       ("config.py", "--demo"),
-                      ("language.py", "--proba")):
+                      ("language.py", "--probe")):
         r = subprocess.run([sys.executable, str(tools / tool), arg],
                            capture_output=True, text=True, cwd=target)
         ok_one = r.returncode == 0

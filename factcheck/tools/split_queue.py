@@ -19,7 +19,7 @@ work, so they wait for continuous passes rather than for a split.
 The baskets themselves are this book's data — `factcheck/book.yaml`.
 
     factcheck/tools/split_queue.py            summary
-    factcheck/tools/split_queue.py --naryad   write factcheck/reports/SPLIT.md
+    factcheck/tools/split_queue.py --order   write factcheck/reports/SPLIT.md
 """
 from __future__ import annotations
 
@@ -230,7 +230,7 @@ def order() -> int:
     r = [
         "# Dividing the unchecked between maintainers\n",
         "> **generated** — written by `factcheck/tools/split_queue.py "
-        "--naryad`; editing it by hand is wasted work\n",
+        "--order`; editing it by hand is wasted work\n",
         "Divided by one question: **in which document does the answer "
         "lie**. ESP-IDF, esptool and the `soc/` headers are reachable from "
         "M1's container; part datasheets and electrical data are not, and "
@@ -320,4 +320,4 @@ def order() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(order() if "--naryad" in sys.argv else digest_out())
+    sys.exit(order() if "--order" in sys.argv else digest_out())

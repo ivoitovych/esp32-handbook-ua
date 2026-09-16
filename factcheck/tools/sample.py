@@ -38,8 +38,8 @@ be a lie: the standard error of a sample mean says nothing about a sample
 selected on the property under study.
 
     factcheck/tools/sample.py unchecked 150
-    factcheck/tools/sample.py unchecked 150 --nasinnya 7   an explicit seed
-    factcheck/tools/sample.py --zvit <dump-directory>      digest a wave
+    factcheck/tools/sample.py unchecked 150 --seed 7   an explicit seed
+    factcheck/tools/sample.py --digest <dump-directory>      digest a wave
 """
 from __future__ import annotations
 
@@ -450,7 +450,7 @@ def digest(katalog: Path) -> int:
 
     r = [f"""# Measuring `no-external-signal`
 
-> **generated** — `factcheck/tools/sample.py --zvit`; editing it by hand
+> **generated** — `factcheck/tools/sample.py --digest`; editing it by hand
 > is wasted work
 
 The order is in `factcheck/reports/BRIEF-SAMPLE.md`, and the sampling
@@ -548,8 +548,8 @@ dozen.
     r.append("| Unit | Verdict | Where to look, or what was found |")
     r.append("|---|---|---|")
     for z in zap:
-        v = str(z.get("verdykt"))
-        if v not in ("znayshov", "ideya"):
+        v = verdicts.verdict_of(z)
+        if v not in ("confirmed", "advice"):
             continue
         shcho = str(z.get("propozyciya") or z.get("komentar") or "").strip()
         r.append(f"| `{z.get('odynycya','?')}` | {v} | {shcho[:140]} |")
@@ -562,10 +562,10 @@ dozen.
 
 
 def main() -> int:
-    if "--zvit" in sys.argv:
-        i = sys.argv.index("--zvit")
+    if "--digest" in sys.argv:
+        i = sys.argv.index("--digest")
         if i + 1 >= len(sys.argv):
-            print("sample: --zvit needs a directory of dumps")
+            print("sample: --digest needs a directory of dumps")
             return 2
         return digest(Path(sys.argv[i + 1]))
     if len(sys.argv) < 3:
@@ -581,8 +581,8 @@ def main() -> int:
         letter = letter.upper()
     skilky = int(sys.argv[2])
     seed = SEED
-    if "--nasinnya" in sys.argv:
-        seed = int(sys.argv[sys.argv.index("--nasinnya") + 1])
+    if "--seed" in sys.argv:
+        seed = int(sys.argv[sys.argv.index("--seed") + 1])
 
     vsi = units(letter)
     if not vsi:
@@ -596,8 +596,8 @@ def main() -> int:
     # holds in mind at once: a long batch invites answering "in bulk", a
     # shorter one keeps attention on each unit separately.
     na_paket = 8
-    if "--na-paket" in sys.argv:
-        na_paket = int(sys.argv[sys.argv.index("--na-paket") + 1])
+    if "--per-batch" in sys.argv:
+        na_paket = int(sys.argv[sys.argv.index("--per-batch") + 1])
 
     # `unchecked` has a frame of its own (a different question is being
     # asked there); the shared blocks are the same. Both spellings are

@@ -45,7 +45,7 @@ and after and only the *meaning* was destroyed. That one is named in
 part of reporting this honestly.
 
     factcheck/tools/name_lists.py            check
-    factcheck/tools/name_lists.py --proba    show it firing on a duplicate and on a
+    factcheck/tools/name_lists.py --probe    show it firing on a duplicate and on a
                                    name of nothing
 """
 from __future__ import annotations
@@ -155,7 +155,7 @@ def proba() -> int:
 
 
 def main() -> int:
-    if "--proba" in sys.argv:
+    if "--probe" in sys.argv:
         return proba()
     bidy = check()
     for b in bidy:

@@ -110,10 +110,10 @@ answers, and both are human or model work:
 твердження» взагалі — неперевірюване й зогниє. «Цей рядок є
 заголовком» — перевіряється одним взірцем.
 
-Режим `--rody` розкладає непокриті рядки за родом саме для цього: щоб
+Режим `--kinds` розкладає непокриті рядки за родом саме для цього: щоб
 кожній прогалині можна було дати статус, який машина вміє звірити.
 
-    factcheck/tools/coverage.py [--fayl <шлях>] [--dilyanky] [--rody]
+    factcheck/tools/coverage.py [--file-of <шлях>] [--areas] [--kinds]
 """
 from __future__ import annotations
 
@@ -258,10 +258,10 @@ def check_structure() -> list[tuple[str, str]]:
 
 def main(argv: list[str]) -> int:
     lyshe = None
-    if "--fayl" in argv:
-        lyshe = argv[argv.index("--fayl") + 1]
-    dilyanky = "--dilyanky" in argv
-    rody_rezhym = "--rody" in argv
+    if "--file-of" in argv:
+        lyshe = argv[argv.index("--file-of") + 1]
+    dilyanky = "--areas" in argv
+    rody_rezhym = "--kinds" in argv
     rody = defaultdict(list)
     strukturni = 0
     uncounted: list[tuple] = []

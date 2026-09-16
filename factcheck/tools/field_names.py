@@ -39,8 +39,8 @@
 | `shukaty` | `look_for` | що шукати в недосяжному документі |
 | `rozrakhunok` | `calculation` | обчислення для класу `arithmetic` |
 
-    factcheck/tools/field_names.py --rozshyryty   додати англійські поруч зі старими
-    factcheck/tools/field_names.py --zvirty       чи всі записи мають обидва набори
+    factcheck/tools/field_names.py --expand   додати англійські поруч зі старими
+    factcheck/tools/field_names.py --verify       чи всі записи мають обидва набори
 """
 from __future__ import annotations
 
@@ -87,8 +87,8 @@ def values(pole: str, v):
 
 def main() -> int:
     p = argparse.ArgumentParser()
-    p.add_argument("--rozshyryty", action="store_true")
-    p.add_argument("--zvirty", action="store_true")
+    p.add_argument("--expand", action="store_true")
+    p.add_argument("--verify", action="store_true")
     a = p.parse_args()
 
     teka = ROOT / "factcheck" / "evidence"
@@ -114,7 +114,7 @@ def main() -> int:
                 nove = MAPA[stare]
                 r[nove] = values(nove, r[stare])
                 bulo = True
-        if a.rozshyryty and bulo:
+        if a.expand and bulo:
             # Шапка з коментарями губиться при перезаписі, тож зберігаємо
             # її окремо: вона несе причини, а причини дорожчі за дані.
             tekst = f.read_text(encoding="utf-8")

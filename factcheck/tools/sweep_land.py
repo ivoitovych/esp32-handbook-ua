@@ -37,7 +37,7 @@ a person. So every landed file carries a `method` line saying plainly
 that `verbatim` here means "the document was obtained, the extract was
 machine-checked", not "a maintainer read it and agrees".
 
-    factcheck/tools/sweep_land.py <survivors-file> [--pysaty]
+    factcheck/tools/sweep_land.py <survivors-file> [--write]
 """
 from __future__ import annotations
 
@@ -122,12 +122,12 @@ def main() -> int:
 
     p = argparse.ArgumentParser()
     p.add_argument("vyzhyly", type=Path)
-    p.add_argument("--pysaty", action="store_true")
+    p.add_argument("--write", action="store_true")
     # The filename prefix. **It must differ between waves.** Without it a
     # second landing silently overwrites the first one's files: that is
     # how 335 evidences from a pass became 324, and only a listing
     # noticed.
-    p.add_argument("--prefiks", default="prochid")
+    p.add_argument("--prefix", default="prochid")
     a = p.parse_args()
 
     reyestr: dict[str, dict] = {}
@@ -181,15 +181,15 @@ def main() -> int:
           f"unit not in the registry {no_unit} | "
           f"no unique prefix {shyrokyy}")
 
-    if not a.pysaty:
-        print("\n(dry run; use `--pysaty` to write)")
+    if not a.write:
+        print("\n(dry run; use `--write` to write)")
         return 0
 
     kudy = ROOT / "factcheck" / "evidence"
     for fayl, record in sorted(posadka.items()):
-        shlyakh = kudy / f"{a.prefiks}-{fayl}.yaml"
+        shlyakh = kudy / f"{a.prefix}-{fayl}.yaml"
         shapka = (
-            f"# Landing {a.prefiks} — {fayl}.\n"
+            f"# Landing {a.prefix} — {fayl}.\n"
             f"#\n"
             f"# Landed by `factcheck/tools/sweep_land.py`. Only what\n"
             f"# survived layer 3 arrives here: the quote was found in the\n"

@@ -46,9 +46,9 @@ It says exactly one thing: **this text really does stand at this
 address.**
 
     factcheck/tools/layer3.py            check everything in the cache
-    factcheck/tools/layer3.py --kachaty  download what is missing first
-    factcheck/tools/layer3.py --zvit     write factcheck/reports/QUOTES.md
-    factcheck/tools/layer3.py --suvoro   an unreachable source is an error too
+    factcheck/tools/layer3.py --fetch  download what is missing first
+    factcheck/tools/layer3.py --digest     write factcheck/reports/QUOTES.md
+    factcheck/tools/layer3.py --severe   an unreachable source is an error too
     factcheck/tools/layer3.py <file.yaml>  check a helper's dump
 
 The last is the important one for working with a pool. A helper puts what
@@ -1115,7 +1115,7 @@ def check(kachaty: bool,
 
 ZAHOLOVOK_ZVITU = """# Layer 3: quotes against sources
 
-> **generated** — `factcheck/tools/layer3.py --zvit`; editing it by hand
+> **generated** — `factcheck/tools/layer3.py --digest`; editing it by hand
 > is wasted work
 
 Checked mechanically: does the extract cited in an evidence record really
@@ -1127,7 +1127,7 @@ it.
 |---|---|
 | `checked` | every usable extract was found in the source verbatim |
 | `not found` | the extract is not in the source — a paraphrase, a wrong address, or the source changed |
-| `source not cached` | nothing to check against: `--kachaty`, or egress refuses |
+| `source not cached` | nothing to check against: `--fetch`, or egress refuses |
 | `nothing to check` | evidence with no URL or no verbatim extract |
 | `source invented` | `verbatim` or `derived`, yet the source field holds an argument, not a document |
 | `stub in the cache` | the server returned HTML with status 200 instead of a PDF |
@@ -1173,8 +1173,8 @@ def zvit(naslidky: list[dict], pidsumok: dict[str, int]) -> None:
 def main() -> int:
     a = sys.argv[1:]
     fayly = [Path(x) for x in a if not x.startswith("--")] or None
-    naslidky, pidsumok = check(kachaty="--kachaty" in a, fayly=fayly)
-    if "--zvit" in a and fayly is None:
+    naslidky, pidsumok = check(kachaty="--fetch" in a, fayly=fayly)
+    if "--digest" in a and fayly is None:
         zvit(naslidky, pidsumok)
         print(f"layer3: report at {ZVIT.relative_to(ROOT)}")
 
@@ -1205,7 +1205,7 @@ def main() -> int:
     # **gate**, not a report. A quote divergence needs judgement and may be
     # a false alarm; these three cannot be anything but an error.
     bidy = pidsumok["vygadane"] + pidsumok["zaglushka"] + pidsumok["pomylka"]
-    if "--suvoro" in a:
+    if "--severe" in a:
         bidy += pidsumok["ne_znaydeno"] + pidsumok["nedosyazhne"]
     # Zero records is not "no forgery" but "nothing to check". `layer1`
     # and `coverage` lived in that state for days after the cards moved,

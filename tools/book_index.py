@@ -28,7 +28,7 @@
 зміст.
 
     tools/book_index.py            згенерувати dodatky/z-pokazhchyk.md
-    tools/book_index.py --pokazaty показати, що знайдено, без запису
+    tools/book_index.py --display показати, що знайдено, без запису
 """
 from __future__ import annotations
 
@@ -181,7 +181,7 @@ def main() -> int:
                if 1 <= len(s) <= MEZHA_STORINOK}
     vidkynuto = len(found) - len(korysni)
 
-    if "--pokazaty" in sys.argv:
+    if "--display" in sys.argv:
         for t in sorted(korysni, key=sort_key)[:60]:
             print(f"  {t:32} {diapazony(list(korysni[t]))}")
         print(f"\npokazhchyk: термінів {len(korysni)}, "
