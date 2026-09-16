@@ -982,7 +982,7 @@ search-and-replace will corrupt the others.** This project carries
 three:
 
     evidence records   title, match, status, source, quote, method, note
-    triage records     rid, look_for, chomu, id, text
+    triage records     kind, look_for, why, id, text
     helper output      id, verdict, source, quote, file, looked_at
 
 `look_for` lives in two of them, `quote` in two, and the class letter is
@@ -1505,10 +1505,12 @@ Evidence lives in `factcheck/evidence/*.yaml`. **This is the normative list
 of fields**; until now it existed nowhere, and helpers guessed the format —
 which accounts for half the waste of the pool's first wave.
 
-Field names are English. The Ukrainian ones (`nazva`, `zbih`, `klas`, …)
-still stand **beside** them in every record — that is the state of a
-migration, not two formats: see `book/MIGRATION.md`. You may read either;
-you must write English.
+Field names are English, and as of 2026-09-14 that is the whole of it:
+the Ukrainian names (`nazva`, `zbih`, `klas`, …) stood beside them in
+every record for the length of the migration and were removed in its
+contraction step — 8084 keys, every one of which had an identical
+English twin. There is one set of names now, not two. The account of how
+it was done is `factcheck/archive/book/MIGRATION.md`.
 
 **Three fields are present in every one of the 1337 records**, and that is
 the whole of the mandatory part:
@@ -1688,7 +1690,7 @@ first rule was "URL-first", and it would have marked as invented thirteen
 honest references to PDFs with no stable address:
 
 ```yaml
-dzherelo: >-
+source: >-
   Texas Instruments, PCF8574 Remote 8-Bit I/O Expander for I2C Bus
   (SCPS068), розділ «Features»
 ```
@@ -3542,7 +3544,7 @@ Mandatory in every order, however much it is shortened:
 
 1. a handbook is not a source for itself;
 2. **gates exist, and what exactly they reject**;
-3. `dzherelo` on every verdict, the negative ones included.
+3. `source` on every verdict, the negative ones included.
 
 #### Also from that wave: three claimed contradictions, none real
 
@@ -3745,9 +3747,9 @@ Do not wait for the end — look at the first fifty records:
 
 - **all verdicts identical** (especially all `confirmed`) — almost always
   forgery; on a random sample that does not happen;
-- **the share of records with no `dzherelo`** above a few per cent — the
+- **the share of records with no `source`** above a few per cent — the
   order permits answering without looking;
-- **the domain in `dzherelo`**: if it is the handbook's own repository, the
+- **the domain in `source`**: if it is the handbook's own repository, the
   wave is void, however many records it holds;
 - **tool calls per unit** below about 1 — the helper downloaded nothing. The
   most honest wave gave 66–89 calls for 25–30 units; broken ones, 14–18 for
@@ -3897,22 +3899,28 @@ The helper puts its result in its own file, and `factcheck/tools/layer3.py <file
 checks it **before** anything reaches the registry.
 
 ```yaml
-- odynycya: T-17-035
-  nazva: коротка назва
-  verdykt: zbihayetsya | rozbizhnist | ne_znaydeno | nedosyazhne
-  dzherelo: https://... (one full address the helper genuinely opened)
-  cytata: |
+- unit: T-17-035
+  title: short name
+  verdict: confirmed | disputes | not_found | unreachable
+  source: https://... (one full address the helper genuinely opened)
+  quote: |
     lines copied byte for byte
-  komentar: one sentence
+  comment: one sentence
 ```
 
-`dzherelo` is a **full file address**. Not a directory, not "the ESP-IDF
+`source` is a **full file address**. Not a directory, not "the ESP-IDF
 documentation", not an abbreviated `.../`. A directory instead of a file was
 the second most frequent waste of the first wave.
 
-`cytata` is the source's text only. Own prose in that field ("Not found in
+`quote` is the source's text only. Own prose in that field ("Not found in
 esptool documentation") is the third most frequent; that is what
-`verdykt: ne_znaydeno` is for.
+`verdict: not_found` is for.
+
+The words above are the current vocabulary; `factcheck/tools/verdicts.py`
+holds it, together with the twelve older spellings it still accepts on
+input. This block once read `odynycya` / `verdykt: zbihayetsya`, and the
+archive is full of answers in those words — which is why the reader
+understands them and will keep doing so. Nothing new is written in them.
 
 #### A colon in a value is the maintainer's waste, not the helper's
 
