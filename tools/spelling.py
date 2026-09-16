@@ -75,7 +75,7 @@ PRYBRATY = [
 ]
 
 # Українське слово. Апостроф у всіх вживаних формах — частина слова.
-SLOVO = re.compile(r"[А-ЯІЇЄҐа-яіїєґ][а-яіїєґ'’ʼʼ-]*")
+WORD = re.compile(r"[А-ЯІЇЄҐа-яіїєґ][а-яіїєґ'’ʼʼ-]*")
 
 
 def ochystyty(t: str) -> str:
@@ -114,16 +114,16 @@ def main() -> int:
     svoyi = vlasni()
     nevidomi: collections.Counter[str] = collections.Counter()
     de: dict[str, set[str]] = collections.defaultdict(set)
-    perevireno = 0
+    checked_n = 0
 
     for g in GRUPY:
         for f in sorted((ROOT / g).glob("*.md")):
             t = ochystyty(f.read_text(encoding="utf-8"))
-            for m in SLOVO.finditer(t):
+            for m in WORD.finditer(t):
                 w = m.group()
                 if len(w) < 3:
                     continue
-                perevireno += 1
+                checked_n += 1
                 nyzhnye = w.lower()
                 if nyzhnye in svoyi:
                     continue
@@ -144,7 +144,7 @@ def main() -> int:
         else:
             print(f"  {n:4}  {w}")
 
-    print(f"\nправопис: слововживань {perevireno}, невідомих слів "
+    print(f"\nправопис: слововживань {checked_n}, невідомих слів "
           f"{len(nevidomi)} ({sum(nevidomi.values())} вживань), "
           f"власний словник {len(svoyi)}")
     if "--suvoro" in sys.argv and nevidomi:

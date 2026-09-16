@@ -54,7 +54,7 @@ BUCKETS = [(b["who"], b["key"], b.get("what", ""),
 RE_F = re.compile(
     r'<!-- fc id:(?P<id>\S+) sha:\S+ src:(?P<src>[^\s:]+):(?P<ln>\d+) '
     r'status:unchecked -->\n### \S+ · (?P<vyd>\w+) · [^\n]*\n\n'
-    + factcheck.RE_TVERDZHENNYA.pattern)
+    + factcheck.RE_CLAIM.pattern)
 
 
 def collect() -> tuple[list[dict], dict[str, list[dict]]]:
@@ -96,7 +96,7 @@ def collect() -> tuple[list[dict], dict[str, list[dict]]]:
 SHARE_WITH_REFERENT = 0.37
 
 
-def klasy() -> dict[str, int]:
+def letters() -> dict[str, int]:
     """How many units are in each status — from the registry, not memory.
 
     The key is the **word**. The card comment now carries the word; the
@@ -117,7 +117,7 @@ def klasy() -> dict[str, int]:
     return dict(lich)
 
 
-def podil_za_fajlamy(klasy: tuple[str, ...]) -> tuple[list[str], list[str], int, int]:
+def podil_za_fajlamy(letters: tuple[str, ...]) -> tuple[list[str], list[str], int, int]:
     """Divide the named statuses by file — greedily, toward the smaller sum.
 
     The same mechanism already proven on `no-external-signal`; that split
@@ -129,7 +129,7 @@ def podil_za_fajlamy(klasy: tuple[str, ...]) -> tuple[list[str], list[str], int,
     """
     import sample
     za: dict[str, int] = collections.Counter()
-    for k in klasy:
+    for k in letters:
         for u in sample.units(k):
             za[u["src"].split("/")[-1].split(":")[0]] += 1
     m1: list[str] = []
@@ -198,7 +198,7 @@ def remonty() -> list[tuple[str, str, int, str]]:
     ]
 
 
-def zvedennya() -> int:
+def digest_out() -> int:
     vsi, rozklad = collect()
     print(f"unchecked units: {len(vsi)}\n")
     for hto, klyuch, opys, _ in BUCKETS:
@@ -209,7 +209,7 @@ def zvedennya() -> int:
     print(f"\n  M1 total: {m1}    M2 total: {m2}")
     print(f"  weak signal, outside the split: {len(rozklad['—'])}")
 
-    k = klasy()
+    k = letters()
     e_ref = round(k.get("no-external-signal", 0) * SHARE_WITH_REFERENT)
     print(f"\n── the remainder, absent from the split above ──")
     print(f"  no-external-signal, estimated with a referent  {e_ref:5}   "
@@ -223,7 +223,7 @@ def zvedennya() -> int:
     return 0
 
 
-def naryad() -> int:
+def order() -> int:
     vsi, rozklad = collect()
     m1 = sum(len(v) for k, v in rozklad.items() if k.startswith("M1"))
     m2 = sum(len(v) for k, v in rozklad.items() if k.startswith("M2"))
@@ -249,7 +249,7 @@ def naryad() -> int:
     # **guessable from the text**. That is the smaller part of the
     # remainder, and presenting it as "the division of work" would show a
     # tenth of the debt as the whole of it.
-    k = klasy()
+    k = letters()
     e_ref = round(k.get("no-external-signal", 0) * SHARE_WITH_REFERENT)
     slabki = len(rozklad["—"])
     r += [
@@ -320,4 +320,4 @@ def naryad() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(naryad() if "--naryad" in sys.argv else zvedennya())
+    sys.exit(order() if "--naryad" in sys.argv else digest_out())

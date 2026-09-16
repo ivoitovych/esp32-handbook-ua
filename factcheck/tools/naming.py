@@ -86,14 +86,14 @@ peripheral peripherals pinout pinouts power project projects pullup
 pullups pycache queue queues reproducible restructure sensor sensors
 backslash bucket buckets cyrillic fstring semtech share snapshot snapshots solder switch switches symptom symptoms unchecked
 unreachable wiring
-english old verdict verdicts current""".split())
+english old verdict verdicts current search compose digest expected""".split())
 
 RE_SYGNAL = re.compile(
     r"kh|zh|ya|yu|yi|ch|sh|ts|iy|yy|ovan|nnya|aty|yty|uva|klas|syla|stan|naryad"
     r"|kesh|zvir|dzher|kart|odyn|vzir|prokh|proba|tekst|imya|pole|rid|rody|vsi|usi")
 
 
-def transliterovane(w: str) -> bool:
+def is_transliterated(w: str) -> bool:
     lw = w.lower().strip("_-")
     if not lw or lw in ENG or not re.fullmatch(r"[a-z0-9_-]+", lw):
         return False
@@ -167,12 +167,12 @@ def imena_faylivv() -> set[str]:
             if any("-".join(chastky[i:]) in knyha for i in range(len(chastky))):
                 continue
             for c in chastky:
-                if c and c not in knyha and transliterovane(c):
+                if c and c not in knyha and is_transliterated(c):
                     out.add(c)
     return out
 
 
-def znaydeni() -> set[str]:
+def found_names() -> set[str]:
     out: set[str] = imena_faylivv()
     for f in repo.tool_files():
         t = f.read_text(encoding="utf-8")
@@ -180,7 +180,7 @@ def znaydeni() -> set[str]:
                     r"^def ([a-z_][a-z0-9_]*)\(",
                     r'"(--[a-z][a-z0-9-]*)"'):
             for m in re.finditer(pat, t, re.M):
-                if transliterovane(m.group(1)):
+                if is_transliterated(m.group(1)):
                     out.add(m.group(1))
     return out
 
@@ -215,11 +215,11 @@ def proba() -> int:
     """Показ на новому імені, якого в базі немає."""
     b = baza()
     vygadane = "ZOVSIM_NOVE_IMYA_ZH"
-    spiymav = transliterovane(vygadane) and vygadane not in b
+    spiymav = is_transliterated(vygadane) and vygadane not in b
     print("   %s нове транслітероване ім'я поза базою — ловиться: %s"
           % ("✓" if spiymav else "✗ ПРОВАЛ", spiymav))
     anh = "SOURCE_LIMITS"
-    tyxo = not transliterovane(anh)
+    tyxo = not is_transliterated(anh)
     print("   %s англійське ім'я не спрацьовує: %s"
           % ("✓" if tyxo else "✗ ПРОВАЛ", tyxo))
     return 0 if (spiymav and tyxo) else 1
@@ -319,7 +319,7 @@ def main() -> int:
         return proba()
     if "--inventory" in sys.argv:
         return inventory()
-    ye = znaydeni()
+    ye = found_names()
     if "--write" in sys.argv:
         write_out(ye)
         print("naming: recorded %d names -> %s" % (len(ye), BASELINE.name))

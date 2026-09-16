@@ -433,7 +433,7 @@ def build(name: str, cfg: dict, meta: dict) -> Path:
     import typst
     typst.compile(str(root_typ), output=str(out), root=str(ROOT))
     if cfg["template"] == "kartky":
-        perelyvy = perevirka_odna_storinka(root_typ, out, frags)
+        perelyvy = check_single_page(root_typ, out, frags)
         for opys in perelyvy:
             print(f"  ✗ {opys}")
         PERELYVY.extend(perelyvy)
@@ -445,7 +445,7 @@ def build(name: str, cfg: dict, meta: dict) -> Path:
 # рахує tools/budgets.py, але переливається картка не від слів, а від
 # верстки — таблиця на рядок довша дає ту саму другу сторінку при тому
 # самому обсязі. Тому перевірка тут: після справжнього збирання.
-def perevirka_odna_storinka(root_typ: Path, pdf: Path,
+def check_single_page(root_typ: Path, pdf: Path,
                             frags: list[Path]) -> list[str]:
     import json
     import typst
@@ -503,7 +503,7 @@ def vidbytok() -> str:
     return h.hexdigest()[:16]
 
 
-def vygotovlyuvach() -> str:
+def builder() -> str:
     """Чим саме зібрано: версії pandoc і typst цієї машини.
 
     Без цього рядка `BUILD.txt` доводить лише походження джерел, а не
@@ -512,11 +512,11 @@ def vygotovlyuvach() -> str:
     """
     import subprocess
 
-    def versiya(cmd: list[str], vzirec: str) -> str:
+    def versiya(cmd: list[str], pattern_one: str) -> str:
         try:
             out = subprocess.run(cmd, capture_output=True, text=True,
                                  timeout=20).stdout
-            m = re.search(vzirec, out)
+            m = re.search(pattern_one, out)
             return m.group(1) if m else "?"
         except Exception:
             return "?"
@@ -545,7 +545,7 @@ def main() -> None:
         print(f"  ✓ {out.relative_to(ROOT)}  ({out.stat().st_size // 1024} КБ)")
 
     (BUILD / "BUILD.txt").write_text(
-        f"{vidbytok()}\n{vygotovlyuvach()}\n", encoding="utf-8")
+        f"{vidbytok()}\n{builder()}\n", encoding="utf-8")
 
     if VIDSUTNI:
         print(f"\nвідсутніх файлів маніфесту: {len(set(VIDSUTNI))}")

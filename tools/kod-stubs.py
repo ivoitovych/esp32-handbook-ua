@@ -156,7 +156,7 @@ STD = {"int8_t", "int16_t", "int32_t", "int64_t", "uint8_t", "uint16_t",
        "bool_t", "wchar_t", "esp_err_t"}
 
 # Функції, тип повернення яких книга справді використовує.
-TYPOVANI = {
+TYPED = {
     "esp_timer_get_time": "int64_t", "esp_get_free_heap_size": "uint32_t",
     "esp_get_minimum_free_heap_size": "uint32_t",
     "heap_caps_get_free_size": "size_t",
@@ -176,7 +176,7 @@ TYPOVANI = {
 }
 
 # Уже є в стандартних заголовках або в мові.
-NE_OHOLOSHUVATY = {
+DO_NOT_DECLARE = {
     "if", "for", "while", "switch", "return", "sizeof", "do", "else", "defined",
     "case", "default", "goto", "break", "continue", "struct", "union", "enum",
     "const", "volatile", "inline", "restrict", "register", "auto", "typeof",
@@ -272,16 +272,16 @@ def main() -> int:
             "#define portTICK_PERIOD_MS 1", ""]
 
     out.append("/* Функції ESP-IDF та FreeRTOS, що вживає книга. */")
-    for f in sorted(vyklyky - NE_OHOLOSHUVATY - vyznacheni - vlasni_imena):
+    for f in sorted(vyklyky - DO_NOT_DECLARE - vyznacheni - vlasni_imena):
         if not re.fullmatch(r"[A-Za-z_]\w*", f):
             continue
-        out.append(f"{TYPOVANI.get(f, 'esp_err_t')} {f}();")
+        out.append(f"{TYPED.get(f, 'esp_err_t')} {f}();")
     out.append("")
 
     out.append("/* Символьні константи. Значення довільні: перевіряється")
     out.append("   існування імені, а не число за ним. */")
     konst = sorted(m for m in makrosy
-                   if m not in NE_OHOLOSHUVATY and not m.startswith("CONFIG_")
+                   if m not in DO_NOT_DECLARE and not m.startswith("CONFIG_")
                    and m not in ("TAG", "NULL")
                    and m not in vlasni_imena)
     yak_funkciya = sorted(k for k in konst if k in vyklyky)
@@ -301,7 +301,7 @@ def main() -> int:
     CIL.parent.mkdir(parents=True, exist_ok=True)
     CIL.write_text("\n".join(out) + "\n", encoding="utf-8")
     print(f"заглушки: типів {len(opaque)} + структур {len(STRUKT)}, "
-          f"функцій {len(vyklyky - NE_OHOLOSHUVATY - vyznacheni - vlasni_imena)}, "
+          f"функцій {len(vyklyky - DO_NOT_DECLARE - vyznacheni - vlasni_imena)}, "
           f"констант {len(konst)}; власних імен книги пропущено "
           f"{len(vlasni_imena)} → {CIL.relative_to(ROOT)}")
     return 0

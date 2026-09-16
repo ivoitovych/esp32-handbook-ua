@@ -184,7 +184,7 @@ def main(argv: list[str]) -> int:
     nemaye: list[tuple] = []
     zsuv: list[str] = []
     bez_kontekstu: list[str] = []
-    kontekst_bez_tverdzhennya: list[tuple] = []
+    context_without_claim: list[tuple] = []
     n = proza = komirka = 0
 
     for g in GRUPY:
@@ -256,7 +256,7 @@ def main(argv: list[str]) -> int:
                     continue
                 kn = normal(kont)
                 if vyd != "komirka" and tverd and tverd not in kn:
-                    kontekst_bez_tverdzhennya.append((ident, tverd[:56]))
+                    context_without_claim.append((ident, tverd[:56]))
                     kontekst_povno.append((ident, tverd, vyd, src))
 
     granyca = None if vsi else 20
@@ -273,16 +273,16 @@ def main(argv: list[str]) -> int:
             rody_zlam[vyd] += 1
         print("\n   за родом одиниці: %s" % dict(rody_zlam))
     else:
-        for ident, t in kontekst_bez_tverdzhennya[:granyca]:
+        for ident, t in context_without_claim[:granyca]:
             print("   ✗ %-12s %-32s %s"
                   % (ident, "КОНТЕКСТ НЕ МІСТИТЬ ТВЕРДЖЕННЯ", t))
 
-    if not tykho or nemaye or kontekst_bez_tverdzhennya:
+    if not tykho or nemaye or context_without_claim:
         print("\nlayer1: карток %d (прози %d, комірок %d)" % (n, proza, komirka))
         print("   тексту немає в книзі          %4d   ← справжня розбіжність"
               % len(nemaye))
         print("   контекст не містить твердження %4d   ← картка зламана як картка"
-              % len(kontekst_bez_tverdzhennya))
+              % len(context_without_claim))
         print("   текст на місці, номер зсунувся %4d   ← рендер застарів"
               % len(zsuv))
         print("   без блоку контексту            %4d" % len(bez_kontekstu))
@@ -297,7 +297,7 @@ def main(argv: list[str]) -> int:
               "«нема де шукати».\n   Перевір, що дзеркало книги лежить "
               "там, куди вказує `factcheck/book.yaml`.")
         return 1
-    return 1 if (nemaye or kontekst_bez_tverdzhennya) else 0
+    return 1 if (nemaye or context_without_claim) else 0
 
 
 def demo() -> int:

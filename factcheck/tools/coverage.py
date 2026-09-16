@@ -218,9 +218,9 @@ def headers_are_not_claims() -> list[str]:
     return novi
 
 
-def perevirka_budovy() -> list[tuple[str, str]]:
+def check_structure() -> list[tuple[str, str]]:
     """Чи будова книги несуперечлива — те, чим заголовок і можна звірити."""
-    yakori, posylannya, rozdily = set(), set(), {}
+    yakori, links, rozdily = set(), set(), {}
     nomer_ne_zbig = []
     for g in GRUPY:
         katalog = ROOT / g
@@ -229,7 +229,7 @@ def perevirka_budovy() -> list[tuple[str, str]]:
         for p in sorted(katalog.glob("*.md")):
             t = p.read_text(encoding="utf-8")
             yakori.update(re.findall(r"^#{1,6} .*\{#([^}]+)\}", t, re.M))
-            posylannya.update(re.findall(r"\]\(#([^)]+)\)", t))
+            links.update(re.findall(r"\]\(#([^)]+)\)", t))
             m = re.match(r"(\d+)-", p.name)
             if m and g == GRUPY[0]:
                 rozdily[m.group(1).zfill(2)] = True
@@ -237,7 +237,7 @@ def perevirka_budovy() -> list[tuple[str, str]]:
                 hm = re.match(r"#\s*(\d+)\.", h)
                 if hm and hm.group(1).zfill(2) != m.group(1).zfill(2):
                     nomer_ne_zbig.append(p.name)
-    byti = sorted(posylannya - yakori)
+    byti = sorted(links - yakori)
     byti_rozdily = set()
     for g in GRUPY:
         katalog = ROOT / g
@@ -250,7 +250,7 @@ def perevirka_budovy() -> list[tuple[str, str]]:
                     byti_rozdily.add(n)
     return [
         ("якорів заголовків", str(len(yakori))),
-        ("посилань на якір", "%d, битих %d" % (len(posylannya), len(byti))),
+        ("посилань на якір", "%d, битих %d" % (len(links), len(byti))),
         ("посилань «розділ NN»", "на неіснуючий розділ: %d" % len(byti_rozdily)),
         ("номер файлу проти заголовка", "розбіжностей %d" % len(nomer_ne_zbig)),
     ]
@@ -264,7 +264,7 @@ def main(argv: list[str]) -> int:
     rody_rezhym = "--rody" in argv
     rody = defaultdict(list)
     strukturni = 0
-    nevrakhovani: list[tuple] = []
+    uncounted: list[tuple] = []
     SLUZHBOVI = ("prysvyata.md",)
 
     pokryti = zibraty_kartky()
@@ -298,7 +298,7 @@ def main(argv: list[str]) -> int:
                 elif Path(vidn).name in SLUZHBOVI:
                     strukturni += 1
                 else:
-                    nevrakhovani.append((vidn, i, r[:60]))
+                    uncounted.append((vidn, i, r[:60]))
             if rody_rezhym:
                 for i in ne:
                     r = lines[i - 1]
@@ -344,13 +344,13 @@ def main(argv: list[str]) -> int:
                 for f, i, t in rody[k][:10]:
                     print("        %s:%d  %s" % (f, i, t))
 
-    struktura = perevirka_budovy()
+    struktura = check_structure()
     print("\nоблік рядків:")
     print("   мають картку                 %5d" % pokryto)
     print("   структурна підстава          %5d   (заголовки, службові сторінки)"
           % strukturni)
-    print("   НЕ ВРАХОВАНО                 %5d" % len(nevrakhovani))
-    for vidn, i, t in nevrakhovani[:10]:
+    print("   НЕ ВРАХОВАНО                 %5d" % len(uncounted))
+    for vidn, i, t in uncounted[:10]:
         print("        %s:%d  %s" % (vidn, i, t))
     print("\nбудова книги:")
     for k, v in struktura:

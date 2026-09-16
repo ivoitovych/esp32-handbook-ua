@@ -27,7 +27,7 @@ CACHE = pathlib.Path.home() / "dzherela-cache"
 DOKAZY = KORIN / "factcheck" / "evidence"
 
 
-def normalizuvaty(t: str) -> str:
+def normalise(t: str) -> str:
     """Зняти переноси й повторні пробіли.
 
     Обов'язково: `pdftotext` розриває речення довільно, а в PDF
@@ -40,7 +40,7 @@ def normalizuvaty(t: str) -> str:
 
 
 
-def znayty_ryadok(line: str, tekst: str) -> bool:
+def find_line(line: str, tekst: str) -> bool:
     """Чи є рядок цитати в документі — з поправкою на таблиці.
 
     Спершу звичайний підрядок. Якщо не збігся — рядок може бути **читанням
@@ -91,20 +91,20 @@ def rozvyazne(z: dict) -> bool:
     return False
 
 def tekst_dokumenta(shlyah: pathlib.Path) -> str:
-    kesh_txt = shlyah.with_suffix(".txt")
-    if not kesh_txt.exists():
+    cache_txt = shlyah.with_suffix(".txt")
+    if not cache_txt.exists():
         if shlyah.suffix.lower() == ".pdf":
-            subprocess.run(["pdftotext", "-layout", str(shlyah), str(kesh_txt)],
+            subprocess.run(["pdftotext", "-layout", str(shlyah), str(cache_txt)],
                            check=False, capture_output=True)
         else:
-            kesh_txt.write_text(shlyah.read_text(encoding="utf-8", errors="replace"),
+            cache_txt.write_text(shlyah.read_text(encoding="utf-8", errors="replace"),
                                 encoding="utf-8")
-    if not kesh_txt.exists():
+    if not cache_txt.exists():
         return ""
-    return normalizuvaty(kesh_txt.read_text(encoding="utf-8", errors="replace"))
+    return normalise(cache_txt.read_text(encoding="utf-8", errors="replace"))
 
 
-def znayty_dokument(z: dict) -> pathlib.Path | None:
+def find_document(z: dict) -> pathlib.Path | None:
     """Документ шукається за іменем файлу з поля `sposib`, потім за назвою."""
     method = str(z.get("method", ""))
     for m in re.finditer(r"`([\w.\-]+)`", method):
@@ -120,7 +120,7 @@ def znayty_dokument(z: dict) -> pathlib.Path | None:
 def main() -> int:
     import yaml
     detal = "-v" in sys.argv
-    vsogo = pereveryly = zbih = bez_dok = ne_znayshly = ne_rozvyazne = 0
+    vsogo = pereveryly = zbih = bez_dok = not_found_n = ne_rozvyazne = 0
     bidy: list[str] = []
 
     for f in sorted(DOKAZY.glob("*.yaml")):
@@ -132,7 +132,7 @@ def main() -> int:
             if not cyt:
                 bidy.append(f"{f.name}: «{z.get('title','?')[:44]}» — клас verbatim без цитати")
                 continue
-            dok = znayty_dokument(z)
+            dok = find_document(z)
             if dok is None:
                 # Найважливіше рішення в цьому скрипті, і воно з практики.
                 # «Джерела немає в кеші» — не пропуск, а РОЗБІЖНІСТЬ. Саме в
@@ -157,26 +157,26 @@ def main() -> int:
             pereveryly += 1
             # Кожен непорожній рядок цитати шукається окремо: витяг
             # часто склеєний із кількох місць документа (таблиця + примітка).
-            lines = [normalizuvaty(r) for r in str(cyt).splitlines()]
+            lines = [normalise(r) for r in str(cyt).splitlines()]
             lines = [r for r in lines if len(r) > 12]
-            promakh = [r for r in lines if not znayty_ryadok(r, tekst)]
+            promakh = [r for r in lines if not find_line(r, tekst)]
             if not promakh:
                 zbih += 1
                 if detal:
                     print(f"  ok {z['title'][:52]}  ({dok.name})")
             else:
-                ne_znayshly += 1
+                not_found_n += 1
                 print(f"  ✗  {z['title'][:56]}")
                 print(f"       документ: {dok.name}")
                 for r in promakh[:2]:
                     print(f"       не знайдено: {r[:88]}")
 
     print(f"\nшар 3: доказів класу A {vsogo}; перевірено {pereveryly}; "
-          f"збіглося {zbih}; не знайдено {ne_znayshly}; без документа {bez_dok}"
+          f"збіглося {zbih}; не знайдено {not_found_n}; без документа {bez_dok}"
           f"; ДЖЕРЕЛО НЕ ДОКУМЕНТ {ne_rozvyazne}")
     for b in bidy:
         print(f"  ⚠ {b}")
-    return 1 if (ne_znayshly or bidy or ne_rozvyazne) else 0
+    return 1 if (not_found_n or bidy or ne_rozvyazne) else 0
 
 
 if __name__ == "__main__":

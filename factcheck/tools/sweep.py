@@ -47,7 +47,7 @@ from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 NA_PAKET = 5
-PAKETIV_NA_NARYAD = 10
+BATCHES_PER_ORDER = 10
 
 # Тема й документ-кандидат за префіксом файлу книги.
 #
@@ -147,7 +147,7 @@ def shapka(**kw) -> str:
     ramka = SHAPKA_RAMKA
     for k, v in kw.items():
         ramka = ramka.replace("{" + k + "}", str(v))
-    return task_spec.sklasty(SHAPKA_BLOKY, zaholovok=ramka,
+    return task_spec.compose(SHAPKA_BLOKY, zaholovok=ramka,
                              shablon=SHAPKA_RAMKA)
 
 
@@ -180,12 +180,12 @@ def main() -> int:
         for i in range(0, len(odyn), NA_PAKET):
             pakety.append((fayl, odyn[i:i + NA_PAKET]))
 
-    naryadiv = 0
-    for i in range(0, len(pakety), PAKETIV_NA_NARYAD):
-        chastyna = pakety[i:i + PAKETIV_NA_NARYAD]
-        naryadiv += 1
+    orders = 0
+    for i in range(0, len(pakety), BATCHES_PER_ORDER):
+        chastyna = pakety[i:i + BATCHES_PER_ORDER]
+        orders += 1
         skilky = sum(len(p) for _f, p in chastyna)
-        r = [shapka(nomer=naryadiv, skilky=skilky).rstrip("\n"), ""]
+        r = [shapka(nomer=orders, skilky=skilky).rstrip("\n"), ""]
         for j, (fayl, odyn) in enumerate(chastyna, 1):
             tema, dok = tema_dlya(fayl)
             r.append(f"\n## Пакет {j} · тема: {tema}\n")
@@ -194,11 +194,11 @@ def main() -> int:
             for u in odyn:
                 r.append(f"**`{u['id']}`**\n")
                 r.append(f"> {u['tekst']}\n")
-        (kudy / f"naryad-{naryadiv:03d}.md").write_text(
+        (kudy / f"naryad-{orders:03d}.md").write_text(
             "\n".join(r) + "\n", encoding="utf-8")
 
     print(f"sweep: одиниць {sum(len(p) for _f, p in pakety)}, "
-          f"пакетів {len(pakety)}, нарядів {naryadiv} → {kudy}")
+          f"пакетів {len(pakety)}, нарядів {orders} → {kudy}")
     return 0
 
 

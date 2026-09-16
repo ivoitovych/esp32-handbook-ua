@@ -54,7 +54,7 @@ def main(argv: list[str]) -> int:
     vsyoho = 0
     for p in sorted(cache.glob("*.pdf")):
         vsyoho += 1
-        t = (layer3.tekst_dzherela(p) or "").lower()
+        t = (layer3.source_text(p) or "").lower()
         if not t:
             pidozr.append((p.name, "не читається"))
             continue

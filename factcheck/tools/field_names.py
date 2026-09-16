@@ -78,7 +78,7 @@ STATUSES = {
 }
 
 
-def znachennya(pole: str, v):
+def values(pole: str, v):
     """`status` окремо: літера лишається, поруч стає слово."""
     if pole == "status" and isinstance(v, str) and v in STATUSES:
         return STATUSES[v]
@@ -92,7 +92,7 @@ def main() -> int:
     a = p.parse_args()
 
     teka = ROOT / "factcheck" / "evidence"
-    zminen = zapysiv = nepovnyh = 0
+    zminen = records_n = nepovnyh = 0
     for f in sorted(teka.glob("*.yaml")):
         try:
             z = yaml.safe_load(f.read_text(encoding="utf-8")) or []
@@ -104,15 +104,15 @@ def main() -> int:
         for r in z:
             if not isinstance(r, dict):
                 continue
-            zapysiv += 1
+            records_n += 1
             brakuye = [s for s in MAPA if s in r and MAPA[s] not in r]
-            if a.zvirty:
+            if a.verify:
                 if brakuye:
                     nepovnyh += 1
                 continue
             for stare in brakuye:
                 nove = MAPA[stare]
-                r[nove] = znachennya(nove, r[stare])
+                r[nove] = values(nove, r[stare])
                 bulo = True
         if a.rozshyryty and bulo:
             # Шапка з коментарями губиться при перезаписі, тож зберігаємо
@@ -127,10 +127,10 @@ def main() -> int:
                 encoding="utf-8")
             zminen += 1
 
-    if a.zvirty:
-        print(f"field_names: записів {zapysiv}, без англійських імен {nepovnyh}")
+    if a.verify:
+        print(f"field_names: записів {records_n}, без англійських імен {nepovnyh}")
         return 1 if nepovnyh else 0
-    print(f"field_names: розширено файлів {zminen}, записів {zapysiv}")
+    print(f"field_names: розширено файлів {zminen}, записів {records_n}")
     return 0
 
 

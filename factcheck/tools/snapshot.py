@@ -101,7 +101,7 @@ def collect(by: str = "sha") -> dict[str, list[str]]:
         for i, r in enumerate(z):
             if not isinstance(r, dict):
                 continue
-            nz = factcheck.nazva_zapysu(r)[:60]
+            nz = factcheck.record_title(r)[:60]
             r["_znimok_klyuch"] = f"{f.name}::{i}::{nz}"
             records.append(r)
 

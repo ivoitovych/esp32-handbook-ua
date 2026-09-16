@@ -50,7 +50,7 @@ DOSYAZHNE = re.compile(
 # Що **не** досяжне, навіть якщо поруч названо щось досяжне. Перевіряється
 # першим: слід «Espressif Hardware Design Guidelines або документація
 # ESP-IDF» містить обидва, і піти по ньому треба саме в ESP-IDF.
-NEDOSYAZHNE = re.compile(
+UNREACHABLE = re.compile(
     r"hardware design guidelines|espressif\.com|bluetooth core|"
     r"технічний паспорт|datasheet виробник|платн|iec |iso |um10204", re.I)
 
@@ -83,7 +83,7 @@ def zaholovok(**kw) -> str:
     ramka = ZAHOLOVOK_RAMKA
     for k, v in kw.items():
         ramka = ramka.replace("{" + k + "}", str(v))
-    return task_spec.sklasty(ZAHOLOVOK_BLOKY, zaholovok=ramka,
+    return task_spec.compose(ZAHOLOVOK_BLOKY, zaholovok=ramka,
                              shablon=ZAHOLOVOK_RAMKA)
 
 
@@ -208,7 +208,7 @@ def main() -> int:
     ideyi = [z for z in zap if str(z.get("verdykt")) == "ideya"]
     prydatni = [z for z in ideyi
                 if (p := str(z.get("propozyciya", "")))
-                and DOSYAZHNE.search(p) and not NEDOSYAZHNE.search(p)]
+                and DOSYAZHNE.search(p) and not UNREACHABLE.search(p)]
 
     r = [zaholovok().rstrip("\n"), ""]
     r.append(f"Слідів усього **{len(ideyi)}**, з них відпрацьовуються "

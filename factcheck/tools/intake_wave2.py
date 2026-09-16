@@ -30,7 +30,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import yaml
 import layer3  # витягання тексту беремо в М1, а не пишемо втретє
 
-_kesh_tekst: dict[str, str] = {}
+_cache_text: dict[str, str] = {}
 
 
 def normal(s: str) -> str:
@@ -54,8 +54,8 @@ def tekst_fayla(name: str) -> str | None:
     # у наряді ім'я стоїть із текою. Обидва варіанти правильні по суті,
     # і відхиляти за це означало б рахувати чесну роботу за брехню.
     name = name.strip().split("/")[-1]
-    if name in _kesh_tekst:
-        return _kesh_tekst[name]
+    if name in _cache_text:
+        return _cache_text[name]
     p = CACHE / name
     if not p.exists():
         return None
@@ -64,11 +64,11 @@ def tekst_fayla(name: str) -> str | None:
     # слів. Мій колишній `pdftotext -layout` на двоколонковій сторінці
     # вставляв текст сусідньої колонки посеред речення — і чесна
     # цитата падала. Три записи цієї хвилі впали саме так.
-    t = layer3.tekst_dzherela(p)
+    t = layer3.source_text(p)
     if t is None:
         return None
-    _kesh_tekst[name] = normal(t)
-    return _kesh_tekst[name]
+    _cache_text[name] = normal(t)
+    return _cache_text[name]
 
 
 def check(shlyakh: Path) -> list[tuple[str, str]]:

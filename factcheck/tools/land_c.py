@@ -64,7 +64,7 @@ def ekranuy(s: str) -> str:
     return r"\s+".join(re.escape(w) for w in s.split())
 
 
-def vzirets_dlya(tekst: str, vsi: list[str]) -> str | None:
+def pattern_for(tekst: str, vsi: list[str]) -> str | None:
     words = tekst.split()
     if len(words) < MIN_SLIV:
         return None
@@ -92,13 +92,13 @@ def obydva(z: dict) -> dict:
             "dzherelo": "source", "cytata": "quote", "sposib": "method",
             "notatka": "note", "shukaty": "look_for",
             "rozrakhunok": "calculation"}
-    SLOVO = {"A": "verbatim", "B": "derived", "C": "named-unreachable",
+    WORD = {"A": "verbatim", "B": "derived", "C": "named-unreachable",
              "D": "arithmetic", "E": "no-external-signal", "F": "unchecked",
              "G": "refuted", "K": "code-context", "L": "looked-not-found",
              "H": "not-a-claim"}
     for st, nov in MAPA.items():
         if st in z and nov not in z:
-            z[nov] = SLOVO.get(str(z[st]), z[st]) if st == "klas" else z[st]
+            z[nov] = WORD.get(str(z[st]), z[st]) if st == "klas" else z[st]
     return z
 
 
@@ -111,9 +111,9 @@ def main() -> int:
     a = p.parse_args()
 
     reyestr: dict[str, dict] = {}
-    for klas in factcheck.ALL_CLASSES:
-        for u in sample.units(klas):
-            u["klas"] = klas
+    for letter in factcheck.ALL_CLASSES:
+        for u in sample.units(letter):
+            u["klas"] = letter
             reyestr[u["id"]] = u
     vsi = [u["tekst"] for u in reyestr.values()]
 
@@ -143,7 +143,7 @@ def main() -> int:
         if u["status"] in ("verbatim", "derived", "named-unreachable"):
             vzhe += 1
             continue
-        vz = vzirets_dlya(u["tekst"], vsi)
+        vz = pattern_for(u["tekst"], vsi)
         if vz is None:
             shyrokyy += 1
             continue

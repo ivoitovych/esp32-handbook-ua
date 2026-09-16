@@ -48,7 +48,7 @@ from repo import ROOT  # noqa: E402  (root is found, not counted)
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 CACHE = ROOT / "factcheck" / "source-cache"
-NEZVIRENI = "CEFGL"
+UNCHECKED = "CEFGL"
 
 BLOKY = ["ORIENTATION", "VERBATIM", "HONEST-MISS", "NETWORK", "STUB",
          "NO-SELF-REFERENCE", "VERDICTS-EXTERNAL", "ABSENCE", "FORMAT"]
@@ -84,17 +84,17 @@ def basein() -> list[dict]:
     """Незвірені одиниці, що мають кандидата в кеші."""
     import sample
     nm2 = _nm2()
-    fayly = nm2.kesh_fayly()
+    fayly = nm2.cache_files()
     out = []
-    for klas in NEZVIRENI:
+    for letter in UNCHECKED:
         try:
-            odyn = sample.units(klas)
+            odyn = sample.units(letter)
         except Exception:
             continue
         for u in odyn:
             kand = nm2.pick(u["tekst"], fayly)
             if kand:
-                out.append(dict(u, klas=klas, kandydat=kand))
+                out.append(dict(u, letter=letter, kandydat=kand))
     out.sort(key=lambda u: u["id"])
     return out
 
@@ -115,7 +115,7 @@ def konteksty() -> dict[str, str]:
     return out
 
 
-def planuvaty(kudy: pathlib.Path, agentiv: int, kvytkiv: int,
+def plan(kudy: pathlib.Path, agentiv: int, kvytkiv: int,
               seed: int, wave: str) -> int:
     import task_spec
     kudy.mkdir(parents=True, exist_ok=True)
@@ -133,7 +133,7 @@ def planuvaty(kudy: pathlib.Path, agentiv: int, kvytkiv: int,
         "pool": len(pool), "agents": agentiv, "tickets_each": kvytkiv,
         "units": [u["id"] for u in vzyato],
         "by_class": {k: sum(1 for u in vzyato if u["status"] == k)
-                     for k in NEZVIRENI},
+                     for k in UNCHECKED},
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
     for a in range(agentiv):
@@ -145,7 +145,7 @@ def planuvaty(kudy: pathlib.Path, agentiv: int, kvytkiv: int,
                            k=len(chastka), seed=seed,
                            pool=len(pool)).items():
             ramka = ramka.replace("{" + kk + "}", str(vv))
-        r = [task_spec.sklasty(BLOKY, zaholovok=ramka, shablon=RAMKA),
+        r = [task_spec.compose(BLOKY, zaholovok=ramka, shablon=RAMKA),
              f"\n<!-- order_version:{versiya} wave:{wave} agent:{a+1} -->\n",
              "\n## Tickets\n"]
         for i, u in enumerate(chastka, 1):
@@ -164,7 +164,7 @@ def planuvaty(kudy: pathlib.Path, agentiv: int, kvytkiv: int,
     print(f"хвиля {wave}: агентів {agentiv}, квитків {treba}, "
           f"насіння {seed}, order_version {versiya} → {kudy}")
     print(f"  за класами: "
-          f"{ {k: sum(1 for u in vzyato if u['status'] == k) for k in NEZVIRENI} }")
+          f"{ {k: sum(1 for u in vzyato if u['status'] == k) for k in UNCHECKED} }")
     return 0
 
 
@@ -174,7 +174,7 @@ def suddya(kudy: pathlib.Path) -> int:
     import yaml
     plan = json.loads((kudy / "wave.json").read_text(encoding="utf-8"))
     rody: dict[str, int] = {}
-    doslivnykh = pereviryaly = 0
+    doslivnykh = checked_by = 0
     bidy: list[str] = []
     for f in sorted(kudy.glob("answers-*.yaml")):
         try:
@@ -189,7 +189,7 @@ def suddya(kudy: pathlib.Path) -> int:
             rody[v] = rody.get(v, 0) + 1
             if v not in ("confirmed", "disputes"):
                 continue
-            pereviryaly += 1
+            checked_by += 1
             cyt = str(z.get("quote") or "").strip()
             dzh = str(z.get("source") or "")
             name = re.sub(r"^source-cache/", "", dzh).strip("`  ")
@@ -197,7 +197,7 @@ def suddya(kudy: pathlib.Path) -> int:
             if not cyt or not p.exists():
                 bidy.append(f"{z.get('unit')}: джерело `{name}` не знайдено")
                 continue
-            tekst = layer3.plaskyy(layer3.tekst_dzherela(p) or "")
+            tekst = layer3.plaskyy(layer3.source_text(p) or "")
             frah = layer3.uryvky(cyt)
             if frah and all(all(layer3.plaskyy(x) in tekst for x in g)
                             for g in frah):
@@ -209,9 +209,9 @@ def suddya(kudy: pathlib.Path) -> int:
     print(f"  квитків роздано   {len(plan['units'])}")
     print(f"  відповідей        {sum(rody.values())}")
     print(f"  вердикти          {dict(sorted(rody.items()))}")
-    print(f"  твердили доказ    {pereviryaly}")
+    print(f"  твердили доказ    {checked_by}")
     print(f"  пережили шар 3    {doslivnykh}"
-          + (f"  ({100*doslivnykh/pereviryaly:.0f} %)" if pereviryaly else ""))
+          + (f"  ({100*doslivnykh/checked_by:.0f} %)" if checked_by else ""))
     for b in bidy[:12]:
         print(f"     ✗ {b}")
     if len(bidy) > 12:
@@ -233,7 +233,7 @@ def main() -> int:
     if o.plan:
         if not o.seed:
             a.error("--plan без --seed: дослід буде невідтворний")
-        return planuvaty(pathlib.Path(o.plan), o.agents, o.tickets,
+        return plan(pathlib.Path(o.plan), o.agents, o.tickets,
                          o.seed, o.wave)
     a.print_help()
     return 2

@@ -71,7 +71,7 @@ def bez_kodu(text: str) -> str:
     return re.sub(r"`[^`]*`", " ", text)
 
 
-def rechennya(text: str) -> list[str]:
+def sentences(text: str) -> list[str]:
     text = bez_kodu(text)
     text = re.sub(r"^[#>|\-\*\s].*$", " ", text, flags=re.M)   # заголовки, списки, таблиці
     text = re.sub(r"\s+", " ", text)
@@ -83,7 +83,7 @@ def rechennya(text: str) -> list[str]:
     return out
 
 
-def perevirka_struktury(fs: list[Path]) -> list[str]:
+def check_layout(fs: list[Path]) -> list[str]:
     znaxidky = []
     for f in fs:
         t = f.read_text(encoding="utf-8")
@@ -103,7 +103,7 @@ def perevirka_struktury(fs: list[Path]) -> list[str]:
     return znaxidky
 
 
-def perevirka_posylan(fs: list[Path]) -> list[str]:
+def check_links(fs: list[Path]) -> list[str]:
     znaxidky = []
     rozdily, kartky = set(), set()
     for f in fs:
@@ -133,7 +133,7 @@ def perevirka_posylan(fs: list[Path]) -> list[str]:
     return znaxidky
 
 
-def perevirka_blokiv(fs: list[Path]) -> list[str]:
+def check_blocks(fs: list[Path]) -> list[str]:
     znaxidky = []
     for f in fs:
         rel = str(f.relative_to(ROOT))
@@ -160,7 +160,7 @@ def perevirka_blokiv(fs: list[Path]) -> list[str]:
     return znaxidky
 
 
-def perevirka_tablyc(fs: list[Path]) -> list[str]:
+def check_tables(fs: list[Path]) -> list[str]:
     znaxidky = []
     for f in fs:
         rel = str(f.relative_to(ROOT))
@@ -186,7 +186,7 @@ def perevirka_tablyc(fs: list[Path]) -> list[str]:
     return znaxidky
 
 
-def perevirka_movy(fs: list[Path]) -> list[str]:
+def check_language(fs: list[Path]) -> list[str]:
     znaxidky = []
     for f in fs:
         t = bez_kodu(f.read_text(encoding="utf-8"))
@@ -203,7 +203,7 @@ def perevirka_movy(fs: list[Path]) -> list[str]:
 RE_ZMISH = re.compile(r"[A-Za-z][а-щьюяїієґА-ЩЬЮЯЇІЄҐ]|[а-щьюяїієґА-ЩЬЮЯЇІЄҐ][A-Za-z]")
 
 
-def perevirka_kyrylyci_v_kodi(fs: list[Path]) -> list[str]:
+def check_cyrillic_in_code(fs: list[Path]) -> list[str]:
     """Кирилиця всередині латинського слова в блоці коду.
 
     Ловить те, чого око не бачить взагалі: кириличну «о» посеред URL або
@@ -222,12 +222,12 @@ def perevirka_kyrylyci_v_kodi(fs: list[Path]) -> list[str]:
     return znaxidky
 
 
-def perevirka_povtoriv(fs: list[Path]) -> list[str]:
+def check_duplicates(fs: list[Path]) -> list[str]:
     """Однакові речення в різних файлах — кандидати на порушення Р10."""
     de = defaultdict(list)
     for f in fs:
         rel = str(f.relative_to(ROOT))
-        for r in rechennya(f.read_text(encoding="utf-8")):
+        for r in sentences(f.read_text(encoding="utf-8")):
             de[r].append(rel)
     znaxidky = []
     for r, files in sorted(de.items()):
@@ -242,13 +242,13 @@ def main() -> int:
     lyshe = sys.argv[1][2:] if len(sys.argv) > 1 else None
 
     bloky = [
-        ("структура", perevirka_struktury),
-        ("posylannya", perevirka_posylan),
-        ("bloky", perevirka_blokiv),
-        ("tablyci", perevirka_tablyc),
-        ("mova", perevirka_movy),
-        ("kyrylycya-v-kodi", perevirka_kyrylyci_v_kodi),
-        ("dubli", perevirka_povtoriv),
+        ("структура", check_layout),
+        ("posylannya", check_links),
+        ("bloky", check_blocks),
+        ("tablyci", check_tables),
+        ("mova", check_language),
+        ("kyrylycya-v-kodi", check_cyrillic_in_code),
+        ("dubli", check_duplicates),
     ]
     vsjogo = 0
     for nazva, fn in bloky:

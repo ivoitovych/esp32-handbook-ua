@@ -71,14 +71,14 @@ def leksemy(s: str) -> set[str]:
     return {w.lower() for w in LEKSEMA.findall(s or "")}
 
 
-def slova_vzirtsya(v: str) -> set[str]:
+def pattern_words(v: str) -> set[str]:
     """Literal words from the old pattern, without the regex machinery."""
     t = re.sub(r"\\([|.*+?()\[\]{}^$])", r"\1", v)   # strip the escaping
     t = re.sub(r"\\s\+|\\s\*|\.\*|\.\+|\[[^\]]*\]|[|()?*+{}^$]", " ", t)
     return leksemy(t)
 
 
-def vzirets_z(tekst: str) -> str:
+def pattern_from(tekst: str) -> str:
     yadro = re.sub(r"\s+", " ", tekst.strip())[:110].rstrip(" .,;:—-")
     return re.escape(yadro).replace(r"\ ", r"\s+")
 
@@ -92,8 +92,8 @@ def main(argv: list[str]) -> int:
     # have gained a third. This is what the comment beside `ALL_CLASSES`
     # warns about: a copy of a list is the same promise not to change it
     # as a copy of a pattern.
-    for klas in factcheck.ALL_CLASSES:
-        for o in sample.units(klas):
+    for letter in factcheck.ALL_CLASSES:
+        for o in sample.units(letter):
             units.append((o["tekst"], leksemy(o["tekst"])))
 
     teksty = [t for t, _ in units]
@@ -119,7 +119,7 @@ def main(argv: list[str]) -> int:
                 continue
             if (pass_num, str(r.get("title"))) in zhyvi:
                 continue
-            klyuch = slova_vzirtsya(str(r.get("match", "")))
+            klyuch = pattern_words(str(r.get("match", "")))
             if len(klyuch) < 3:
                 klyuch |= leksemy(str(r.get("title", "")))
             if not klyuch:
@@ -134,7 +134,7 @@ def main(argv: list[str]) -> int:
                 continue
             # Level with the first: anything scoring at least 95 % of it.
             urnyven = [t for o, t in ocinky if o >= o1 * 0.95][:4]
-            novyy = "|".join(vzirets_z(t) for t in urnyven)
+            novyy = "|".join(pattern_from(t) for t in urnyven)
             # The pattern must compile and must not match foreign text.
             try:
                 rx = re.compile(novyy)

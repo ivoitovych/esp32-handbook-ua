@@ -96,7 +96,7 @@ def zaholovok(**kw) -> str:
     ramka = ZAHOLOVOK_RAMKA
     for k, v in kw.items():
         ramka = ramka.replace("{" + k + "}", str(v))
-    return task_spec.sklasty(ZAHOLOVOK_BLOKY, zaholovok=ramka,
+    return task_spec.compose(ZAHOLOVOK_BLOKY, zaholovok=ramka,
                              shablon=ZAHOLOVOK_RAMKA)
 
 
@@ -107,7 +107,7 @@ def records() -> dict[tuple[str, str], dict]:
         try:
             for z in (yaml.safe_load(f.read_text(encoding="utf-8")) or []):
                 if isinstance(z, dict):
-                    rec[(f.stem, factcheck.nazva_zapysu(z))] = z
+                    rec[(f.stem, factcheck.record_title(z))] = z
         except yaml.YAMLError:
             continue
     return rec
@@ -122,10 +122,10 @@ PIDPYSY = {
 }
 
 
-RE_ZAPYS = re.compile(r"^\*\*`([\w-]+)`\*\* · (.+)$", re.M)
+RE_RECORD = re.compile(r"^\*\*`([\w-]+)`\*\* · (.+)$", re.M)
 
 
-def z_naryadu() -> list[str]:
+def from_order() -> list[str]:
     """Назви записів **із виданого наряду**, а не з поточного стану.
 
     Різниця не теоретична. Наряд роздали на 50 записів; поки помічники
@@ -139,7 +139,7 @@ def z_naryadu() -> list[str]:
     """
     if not CIL.exists():
         return []
-    return [m.group(2).strip() for m in RE_ZAPYS.finditer(
+    return [m.group(2).strip() for m in RE_RECORD.finditer(
         CIL.read_text(encoding="utf-8"))]
 
 
@@ -156,19 +156,19 @@ def digest(katalog: Path) -> int:
         if klyuch:
             vidpovidi[klyuch] = z
 
-    ochikuvano = z_naryadu()
-    znykli = [n for n in ochikuvano if n not in vidpovidi]
+    expected = from_order()
+    znykli = [n for n in expected if n not in vidpovidi]
 
     c: dict[str, int] = {}
-    for n in ochikuvano:
+    for n in expected:
         v = str(vidpovidi.get(n, {}).get("verdykt", "—"))
         c[v] = c.get(v, 0) + 1
 
-    sperechayutsya = [n for n in ochikuvano
+    disputed_n = [n for n in expected
                       if str(vidpovidi.get(n, {}).get("verdykt"))
                       == "sperechayetsya"]
 
-    r = [f"""# Книга проти джерел: {len(ochikuvano)} розбіжних цитат
+    r = [f"""# Книга проти джерел: {len(expected)} розбіжних цитат
 
 **Генерується** `factcheck/tools/work_orders.py --zvit`. Наряд —
 `factcheck/reports/BRIEF-QUOTES.md`.
@@ -183,7 +183,7 @@ def digest(katalog: Path) -> int:
 
 ## Результат
 
-Записів у наряді: **{len(ochikuvano)}**. Відповідей: **{len(ochikuvano) - len(znykli)}**.
+Записів у наряді: **{len(expected)}**. Відповідей: **{len(expected) - len(znykli)}**.
 
 | Вердикт | Скільки |
 |---|---|"""]
@@ -193,11 +193,11 @@ def digest(katalog: Path) -> int:
         r.append(f"| **Без відповіді** | {len(znykli)} |")
     r.append("")
 
-    if sperechayutsya:
+    if disputed_n:
         r.append("\n## Джерело сперечається з книгою\n")
         r.append("**Це знахідки.** Кожну звіряє супровідник особисто "
                  "перед тим, як щось правити в книзі.\n")
-        for n in sperechayutsya:
+        for n in disputed_n:
             z = vidpovidi[n]
             r.append(f"### {n}\n")
             r.append(f"- джерело: {str(z.get('dzherelo', '?')).strip()}")
@@ -232,7 +232,7 @@ def digest(katalog: Path) -> int:
     r.append("\n## Усі відповіді\n")
     r.append("| Запис | Вердикт | Що каже джерело |")
     r.append("|---|---|---|")
-    for n in ochikuvano:
+    for n in expected:
         z = vidpovidi.get(n)
         if z is None:
             r.append(f"| {n[:70]} | **без відповіді** | — |")
@@ -241,9 +241,9 @@ def digest(katalog: Path) -> int:
                  f"| {str(z.get('komentar', '')).strip()[:110]} |")
 
     ZVIT.write_text("\n".join(r) + "\n", encoding="utf-8")
-    print(f"work_orders: очікувано {len(ochikuvano)}, відповідей "
-          f"{len(ochikuvano) - len(znykli)}, спростувань "
-          f"{len(sperechayutsya)}, без відповіді {len(znykli)} "
+    print(f"work_orders: очікувано {len(expected)}, відповідей "
+          f"{len(expected) - len(znykli)}, спростувань "
+          f"{len(disputed_n)}, без відповіді {len(znykli)} "
           f"→ {ZVIT.relative_to(ROOT)}")
     return 0
 

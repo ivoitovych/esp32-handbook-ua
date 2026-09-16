@@ -63,7 +63,7 @@ def alternatyvy(v: str) -> list[str]:
         return [v]
 
 
-def znayty(records: list[dict], teksty: list[str]) -> list[dict]:
+def find(records: list[dict], teksty: list[str]) -> list[dict]:
     """Записи, чия ширина тримається на одній альтернативі."""
     out = []
     for z in records:
@@ -130,7 +130,7 @@ def self_check() -> int:
     try:
         pomylok = 0
         for name, z, ochik in vypadky:
-            spraviy = bool(znayty([z], teksty))
+            spraviy = bool(find([z], teksty))
             znak = "✓" if spraviy == ochik else "✗"
             if spraviy != ochik:
                 pomylok += 1
@@ -159,14 +159,14 @@ def main() -> int:
     odyn = [u for k in factcheck.ALL_CLASSES for u in sample.units(k)]
     teksty = [u["tekst"] for u in odyn]
     records = factcheck.zavantazhyty_dokazy()
-    techi = znayty(records, teksty)
+    techi = find(records, teksty)
 
     print(f"записів із течею: {len(techi)} із {len(records)}\n")
     for d in techi:
         z = d["zapys"]
         print(f"  {d['shyryna']:>4} (решта {d['reshta']:>3})  "
               f"{str(z.get('_prokhid','?')):<26} "
-              f"{factcheck.nazva_zapysu(z)[:46]}")
+              f"{factcheck.record_title(z)[:46]}")
         print(f"          теча: {d['alt']!r}")
 
     if not a.naslidky:

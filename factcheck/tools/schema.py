@@ -118,7 +118,7 @@ def records(teka: pathlib.Path) -> list[tuple[str, int, dict]]:
     return out
 
 
-def perevir_zapysy(zap) -> list[str]:
+def check_records(zap) -> list[str]:
     bidy = []
     for name, i, r in zap:
         de = f"{name}::{i}"
@@ -132,19 +132,19 @@ def perevir_zapysy(zap) -> list[str]:
         nevidomi = set(r) - VIDOMI
         if nevidomi:
             bidy.append(f"{de}: невідомі поля {', '.join(sorted(nevidomi))}")
-        klas = str(r.get("status") or r.get("klas") or "")
-        if klas and klas not in STATUSES:
-            bidy.append(f"{de}: невідомий стан `{klas}` — див. SCHEMA.md")
-        for pole in POTREBUYE.get(klas, ()):
+        letter = str(r.get("status") or r.get("klas") or "")
+        if letter and letter not in STATUSES:
+            bidy.append(f"{de}: невідомий стан `{letter}` — див. SCHEMA.md")
+        for pole in POTREBUYE.get(letter, ()):
             # Переїзд: значення може стояти під старим іменем.
             stare = {"source": "dzherelo", "quote": "cytata",
                      "calculation": "rozrakhunok"}.get(pole)
             if not r.get(pole) and not (stare and r.get(stare)):
-                bidy.append(f"{de}: клас `{klas}` вимагає поля `{pole}`")
+                bidy.append(f"{de}: клас `{letter}` вимагає поля `{pole}`")
     return bidy
 
 
-def perevir_kartky() -> list[str]:
+def check_cards() -> list[str]:
     bidy = []
     for g in config.groups():
         for f in sorted((config.cards_root() / g).glob("*.md")):
@@ -221,7 +221,7 @@ def self_check() -> int:
     ]
     pomylok = 0
     for name, r, ochik in vypadky:
-        dist = len(perevir_zapysy([("t.yaml", 0, r)]))
+        dist = len(check_records([("t.yaml", 0, r)]))
         znak = "✓" if dist == ochik else "✗"
         pomylok += dist != ochik
         print(f"  {znak} {name:<28} очікували {ochik}, дістали {dist}")
@@ -240,8 +240,8 @@ def main() -> int:
         return self_check()
 
     zap = records(ROOT / "factcheck" / "evidence")
-    bz = perevir_zapysy(zap)
-    bk = perevir_kartky()
+    bz = check_records(zap)
+    bk = check_cards()
 
     print(f"schema: записів {len(zap)}, порушень схеми {len(bz)}; "
           f"порушень контракту картки {len(bk)}")

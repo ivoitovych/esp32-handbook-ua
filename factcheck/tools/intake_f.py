@@ -107,7 +107,7 @@ POTREBUYE = {
 # `sample.py`. Kept under the old names so this file reads as before.
 import verdicts
 
-STARI_VERDYKTY = verdicts.OLD_VERDICTS
+OLD_VERDICTS = verdicts.OLD_VERDICTS
 STARI_POLYA = verdicts.OLD_FIELDS
 
 
@@ -120,12 +120,12 @@ def na_anhliysku(r: dict) -> dict:
     """
     out = {STARI_POLYA.get(k, k): v for k, v in r.items()}
     v = str(out.get("verdict") or "").strip()
-    if v in STARI_VERDYKTY:
-        out["verdict"] = STARI_VERDYKTY[v]
+    if v in OLD_VERDICTS:
+        out["verdict"] = OLD_VERDICTS[v]
     return out
 
 
-def imya_dlya(url: str) -> str:
+def name_for(url: str) -> str:
     baza = re.sub(r"[^\w.-]", "_", url.rsplit("/", 1)[-1] or "bez-imeni")
     return f"{hashlib.sha256(url.encode()).hexdigest()[:8]}-{baza}"[:96]
 
@@ -146,14 +146,14 @@ def dokument(url: str, kachaty: bool) -> str | None:
     """Текст документа за URL. Качає, якщо його ще немає в кеші."""
     import layer3
     import intake_wave3
-    cil = CACHE / imya_dlya(url)
+    cil = CACHE / name_for(url)
     if not cil.exists():
         if not kachaty or not layer3.zavantazhyty(url, cil):
             return None
         syri = cil.read_bytes()
         dodaty_v_manifest(cil.name, hashlib.sha256(syri).hexdigest(),
                           len(syri), url)
-    t = layer3.tekst_dzherela(cil)
+    t = layer3.source_text(cil)
     return intake_wave3.normal(t) if t else None
 
 
@@ -323,7 +323,7 @@ def main() -> int:
     if a.compare:
         porivnyaty(a.compare, a.teka, vidpovidi)
     if a.ledger:
-        zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy)
+        write_ledger(a, vyb, vidpovidi, rody, dosl, bidy)
     return 1 if (bidy or bytyy or bez) else 0
 
 
@@ -420,7 +420,7 @@ does), and a run is not repeated. A row is evidence, not proof.
 """
 
 
-def zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy) -> None:
+def write_ledger(a, vyb, vidpovidi, rody, dosl, bidy) -> None:
     """Дописати рядок прогону. Дописати, не переписати: попередні
     прогони — це вимір, а не чернетка."""
     f = ROOT / "factcheck" / "reports" / "RUNS.md"

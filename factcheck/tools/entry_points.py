@@ -325,7 +325,7 @@ def _capture_into(kudy: pathlib.Path, tmp: str, derevo: pathlib.Path) -> int:
     return 0
 
 
-def zvirty(a: pathlib.Path, b: pathlib.Path) -> int:
+def verify(a: pathlib.Path, b: pathlib.Path) -> int:
     rizn = pysav = 0
     for t in TOCHKY:
         fa, fb = a / f"{name(t)}.out", b / f"{name(t)}.out"
@@ -389,7 +389,7 @@ def main() -> int:
     if o.capture:
         return znyaty(pathlib.Path(o.capture))
     if o.diff:
-        return zvirty(pathlib.Path(o.diff[0]), pathlib.Path(o.diff[1]))
+        return verify(pathlib.Path(o.diff[0]), pathlib.Path(o.diff[1]))
     a.print_help()
     return 2
 

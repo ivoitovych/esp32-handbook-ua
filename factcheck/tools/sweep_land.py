@@ -71,7 +71,7 @@ def ekranuy(s: str) -> str:
     return r"\s+".join(re.escape(w) for w in s.split())
 
 
-def vzirets_dlya(tekst: str, vsi: list[str]) -> str | None:
+def pattern_for(tekst: str, vsi: list[str]) -> str | None:
     """The shortest prefix that is unique across the whole registry."""
     words = tekst.split()
     if len(words) < MIN_SLIV:
@@ -106,13 +106,13 @@ def obydva(z: dict) -> dict:
             "dzherelo": "source", "cytata": "quote", "sposib": "method",
             "notatka": "note", "shukaty": "look_for",
             "rozrakhunok": "calculation"}
-    SLOVO = {"A": "verbatim", "B": "derived", "C": "named-unreachable",
+    WORD = {"A": "verbatim", "B": "derived", "C": "named-unreachable",
              "D": "arithmetic", "E": "no-external-signal", "F": "unchecked",
              "G": "refuted", "K": "code-context", "L": "looked-not-found",
              "H": "not-a-claim"}
     for st, nov in MAPA.items():
         if st in z and nov not in z:
-            z[nov] = SLOVO.get(str(z[st]), z[st]) if st == "klas" else z[st]
+            z[nov] = WORD.get(str(z[st]), z[st]) if st == "klas" else z[st]
     return z
 
 
@@ -131,9 +131,9 @@ def main() -> int:
     a = p.parse_args()
 
     reyestr: dict[str, dict] = {}
-    for klas in factcheck.ALL_CLASSES:
-        for u in sample.units(klas):
-            u["klas"] = klas
+    for letter in factcheck.ALL_CLASSES:
+        for u in sample.units(letter):
+            u["klas"] = letter
             reyestr[u["id"]] = u
     vsi_teksty = [u["tekst"] for u in reyestr.values()]
     print(f"registry: units {len(reyestr)}")
@@ -142,12 +142,12 @@ def main() -> int:
     print(f"survived layer 3: {len(records)}")
 
     posadka: dict[str, list[dict]] = collections.defaultdict(list)
-    nema_odynyci = shyrokyy = vzhe_A = 0
+    no_unit = shyrokyy = vzhe_A = 0
     for z in records:
         oid = str(z.get("odynycya", "")).strip()
         u = reyestr.get(oid)
         if u is None:
-            nema_odynyci += 1
+            no_unit += 1
             continue
         if u["status"] in ("verbatim", "derived"):
             # The unit already has primary evidence. A second adds
@@ -155,7 +155,7 @@ def main() -> int:
             # exactly that many places to diverge at the next edit.
             vzhe_A += 1
             continue
-        vz = vzirets_dlya(u["tekst"], vsi_teksty)
+        vz = pattern_for(u["tekst"], vsi_teksty)
         if vz is None:
             shyrokyy += 1
             continue
@@ -178,7 +178,7 @@ def main() -> int:
 
     vsoho = sum(len(v) for v in posadka.values())
     print(f"landable {vsoho} | already primary {vzhe_A} | "
-          f"unit not in the registry {nema_odynyci} | "
+          f"unit not in the registry {no_unit} | "
           f"no unique prefix {shyrokyy}")
 
     if not a.pysaty:

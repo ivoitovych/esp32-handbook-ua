@@ -31,7 +31,7 @@ from pathlib import Path
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 
 # (файл, мінімум сторінок, мінімум кілобайтів)
-OCHIKUVANNYA = [
+EXPECTED = [
     ("esp32-dovidnyk.pdf", 350, 3000),
     ("esp32-kartky.pdf", 15, 200),
     ("esp32-proekty.pdf", 20, 200),
@@ -44,7 +44,7 @@ def storinok(dani: bytes) -> int:
 
 def main() -> int:
     zhahy: list[str] = []
-    for name, min_st, min_kb in OCHIKUVANNYA:
+    for name, min_st, min_kb in EXPECTED:
         b = ROOT / "build" / name
         r = ROOT / "release" / name
         if not b.exists():
@@ -83,7 +83,7 @@ def main() -> int:
     # README — перше, що бачить читач; застаріле число там обіцяє йому
     # іншу книгу, ніж лежить поруч. Це вже траплялося: у головному
     # README стояло 400 сторінок, у `release/` — 413, а в файлі 422.
-    for name, _, _ in OCHIKUVANNYA:
+    for name, _, _ in EXPECTED:
         b = ROOT / "build" / name
         if not b.exists():
             continue
@@ -127,12 +127,12 @@ def main() -> int:
         #
         # Розбіжність версії сама по собі ще не помилка — помилка
         # непомічена розбіжність. Тому друкуємо, а не спиняємо.
-        zapysanyy = lines[1].strip() if len(lines) > 1 else None
-        teperishniy = build.vygotovlyuvach()
-        if zapysanyy is None:
+        written = lines[1].strip() if len(lines) > 1 else None
+        teperishniy = build.builder()
+        if written is None:
             print("   · виготовлювача не записано — перезберіть `make release`")
-        elif zapysanyy != teperishniy:
-            print(f"   · виготовлювач інший: у release/ «{zapysanyy}», "
+        elif written != teperishniy:
+            print(f"   · виготовлювач інший: у release/ «{written}», "
                   f"тут «{teperishniy}»")
             print("     кількість сторінок може відрізнятися; для друку "
                   "звірте з `toolchain-baseline.yaml`")
@@ -141,7 +141,7 @@ def main() -> int:
 
     for z in zhahy:
         print(f"   ✗ {z}")
-    print(f"pdf-smoke: файлів {len(OCHIKUVANNYA)}, помилок {len(zhahy)}")
+    print(f"pdf-smoke: файлів {len(EXPECTED)}, помилок {len(zhahy)}")
     return 1 if zhahy else 0
 
 

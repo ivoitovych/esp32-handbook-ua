@@ -64,7 +64,7 @@ def main() -> int:
         print()
 
     zhahy: list[str] = []
-    perevireno = 0
+    checked_n = 0
 
     for d in DE:
         kataloh = ROOT / d
@@ -75,7 +75,7 @@ def main() -> int:
             if any(rel.startswith(x) for x in NE_CHIPATY):
                 continue
             text = f.read_text(encoding="utf-8")
-            perevireno += 1
+            checked_n += 1
             for z in zap:
                 vynyatky = z.get("vynyatky") or []
                 if any(rel.startswith(str(v)) for v in vynyatky):
@@ -100,15 +100,15 @@ def main() -> int:
     for zh in zhahy:
         print(f"   • {zh}")
     print(f"refuted: реєстрів {len(REYESTRY)}, взірців {len(zap)}, "
-          f"файлів {perevireno}, знахідок {len(zhahy)}")
+          f"файлів {checked_n}, знахідок {len(zhahy)}")
     # Нуль реєстрів або нуль взірців — не «нічого не спростовано», а
     # «нема з чим звіряти». Тула прожила в цьому стані від перебудови:
     # реєстр переїхав у `reports/`, глоб лишився в корені, і зелений
     # нуль друкувався щодня.
-    if not REYESTRY or not zap or not perevireno:
+    if not REYESTRY or not zap or not checked_n:
         print("   ✗ звіряти не було з чим: реєстрів %d, взірців %d, "
               "файлів %d.\n     Це не результат."
-              % (len(REYESTRY), len(zap), perevireno))
+              % (len(REYESTRY), len(zap), checked_n))
         return 1
     return 1 if zhahy else 0
 

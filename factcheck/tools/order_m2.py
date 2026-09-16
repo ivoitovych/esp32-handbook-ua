@@ -149,7 +149,7 @@ def prydatnyy(tekst: str, fayl: str) -> bool:
     return True
 
 
-def kesh_fayly() -> list[str]:
+def cache_files() -> list[str]:
     return sorted(p.name for p in CACHE.iterdir() if p.is_file())
 
 
@@ -183,18 +183,18 @@ def pick(tekst: str, fayly: list[str]) -> list[str]:
 
 
 def poshuk_riven(tekst: str, fayly: list[str], spec: bool) -> list[str]:
-    for vzir, chastky in KLYUCHI:
-        if bool(SPEC.search(vzir)) != spec:
+    for patt, chastky in KLYUCHI:
+        if bool(SPEC.search(patt)) != spec:
             continue
-        if re.search(vzir, tekst, re.I):
-            znaydeni = []
+        if re.search(patt, tekst, re.I):
+            found_names = []
             for chastka in chastky.split("|"):
                 for f in fayly:
-                    if (chastka.lower() in f.lower() and f not in znaydeni
+                    if (chastka.lower() in f.lower() and f not in found_names
                             and prydatnyy(tekst, f)):
-                        znaydeni.append(f)
-            if znaydeni:
-                return znaydeni
+                        found_names.append(f)
+            if found_names:
+                return found_names
     return []
 
 
@@ -208,11 +208,11 @@ def main() -> int:
     # правку зроблено рукою.
     name = sys.argv[3] if len(sys.argv) > 3 else "wave2"
 
-    fayly = kesh_fayly()
+    fayly = cache_files()
     vsi = []
-    for klas in ("named-unreachable", "unchecked"):
-        for o in sample.units(klas):
-            o["klas"] = klas
+    for letter in ("named-unreachable", "unchecked"):
+        for o in sample.units(letter):
+            o["klas"] = letter
             vsi.append(o)
 
     z_faylom = []

@@ -202,10 +202,10 @@ def prove(target: Path) -> int:
     # вдає роботу.
     r = subprocess.run([sys.executable, str(tools / "config.py")],
                        capture_output=True, text=True, cwd=target)
-    nalashtovana = (target / "manual").is_dir()
-    dobre = (r.returncode == 0) if nalashtovana else (r.returncode != 0)
+    configured = (target / "manual").is_dir()
+    dobre = (r.returncode == 0) if configured else (r.returncode != 0)
     print(f"   {'✓' if dobre else '✗'} config refuses to run unconfigured"
-          if not nalashtovana else
+          if not configured else
           f"   {'✓' if dobre else '✗'} config loads")
     return 0 if (ok and same and dobre) else 1
 

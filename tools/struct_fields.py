@@ -70,7 +70,7 @@ def dozvoleni() -> dict[str, set[str]]:
 
 def main() -> int:
     struktury = dozvoleni()
-    zhahy, perevireno = [], 0
+    zhahy, checked_n = [], 0
 
     for g in GRUPY:
         for f in sorted((ROOT / g).glob("*.md")):
@@ -85,7 +85,7 @@ def main() -> int:
                     ln = bazovyy + mb.group(1)[:mi.start()].count("\n")
                     for mp in RE_POLE.finditer(tilo):
                         shlyakh = mp.group(1)
-                        perevireno += 1
+                        checked_n += 1
                         korin = shlyakh.split(".")[0]
                         if "-v" in sys.argv:
                             print(f"  {rel}:{ln} {typ}.{shlyakh}")
@@ -97,7 +97,7 @@ def main() -> int:
     for z in zhahy:
         print(f"   • {z}")
     print(f"struct_fields: структур у переліку {len(struktury)}, "
-          f"перевірено полів {perevireno}, помилок {len(zhahy)}")
+          f"перевірено полів {checked_n}, помилок {len(zhahy)}")
     return 1 if zhahy else 0
 
 

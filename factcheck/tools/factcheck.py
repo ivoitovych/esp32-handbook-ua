@@ -109,7 +109,7 @@ CLASSES_OF_UNITS = "".join(k for k in CLASS_TEXT
 NOT_CLAIMS = ("code-context", "not-a-claim")
 STATUSES_OF_UNITS = [s for s in STATUSES if s not in NOT_CLAIMS]
 
-RE_ZAPYS = re.compile(
+RE_RECORD = re.compile(
     r"<!--\s*fc\s+id:(?P<id>[\w.-]+)\s+sha:(?P<sha>[0-9a-f]{8})"
     r"\s+src:(?P<src>[^\s]+)\s+status:(?P<status>[\w-]+)\s*-->"
 )
@@ -135,7 +135,7 @@ RE_ZAPYS = re.compile(
 # visible.
 CLAIM_HEADING = "Твердження, коротко"
 
-RE_TVERDZHENNYA = re.compile(
+RE_CLAIM = re.compile(
     r"\*\*" + re.escape(CLAIM_HEADING)
     + r"\*\*\n\n(?P<txt>(?:> [^\n]*\n)+)")
 
@@ -176,7 +176,7 @@ def sha(text: str) -> str:
 # constant, a command, a register write. The rest — braces, comments,
 # variable declarations — asserts nothing and does not enter the
 # registry.
-RE_KOD_TVERDZHENNYA = re.compile(
+RE_CLAIM_CODE = re.compile(
     r"^\s*(?:"
     r"#define\s+\w+|"
     r"#include\s*[<\"]|"
@@ -372,10 +372,10 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
         if not blok:
             return
 
-        def ryadok_dlya(zmishchennya: int) -> int:
+        def line_for(offset: int) -> int:
             ostannij = buf_vid
             for p, nomer in mezhi:
-                if p > zmishchennya:
+                if p > offset:
                     break
                 ostannij = nomer
             return ostannij
@@ -392,7 +392,7 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
             shukach = zm + len(c)
             c = c.strip()
             if len(c) >= 25:
-                units.append(("proza", c, ryadok_dlya(zm)))
+                units.append(("proza", c, line_for(zm)))
 
     while i < n:
         r = lines[i]
@@ -407,7 +407,7 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
             for j, kr in enumerate(tilo):
                 if RE_SCHEMA_ZVYAZOK.search(kr):
                     units.append(("schema-zvyazok", kr.strip(), start + 2 + j))
-                elif RE_KOD_TVERDZHENNYA.match(kr) and len(kr.strip()) > 6:
+                elif RE_CLAIM_CODE.match(kr) and len(kr.strip()) > 6:
                     units.append(("kod-ryadok", kr.strip(), start + 2 + j))
             i += 1
             continue
@@ -513,7 +513,7 @@ def zavantazhyty_dokazy() -> list[dict]:
 # description table and every comparison against "A"/"B" were keyed by
 # letter, so a simple key rename would silently have started comparing
 # words with letters.
-SLOVO_V_LITERU = {
+WORD_TO_LETTER = {
     "verbatim": "A", "derived": "B", "named-unreachable": "C",
     "arithmetic": "D", "no-external-signal": "E", "unchecked": "F",
     "refuted": "G", "code-context": "K", "looked-not-found": "L",
@@ -555,8 +555,8 @@ def class_letter_of(z: dict, typovo: str = "F") -> str:
     s = str(z.get("status") or "").strip()
     if len(s) == 1:
         return s
-    if s in SLOVO_V_LITERU:
-        return SLOVO_V_LITERU[s]
+    if s in WORD_TO_LETTER:
+        return WORD_TO_LETTER[s]
     # A word absent from the dictionary is no reason to forget the old
     # field.
     # Found on six records carrying a status word that was almost but not
@@ -629,7 +629,7 @@ def rozbyty_alternatyvy(pattern: str) -> list[str]:
     chastyny: list[str] = []
     tek: list[str] = []
     hlyb = 0
-    u_klasi = False
+    in_letter = False
     i = 0
     while i < len(pattern):
         c = pattern[i]
@@ -637,12 +637,12 @@ def rozbyty_alternatyvy(pattern: str) -> list[str]:
             tek.append(pattern[i:i + 2])
             i += 2
             continue
-        if u_klasi:
+        if in_letter:
             tek.append(c)
             if c == "]":
-                u_klasi = False
+                in_letter = False
         elif c == "[":
-            u_klasi = True
+            in_letter = True
             tek.append(c)
         elif c == "(":
             hlyb += 1
@@ -728,19 +728,19 @@ def vsi_kandydaty(records: list[dict], h: str, txt: str) -> list[dict]:
     if tochni:
         return tochni
     return [z for z in records
-            if z.get("match") and _vzirets(z["match"]).search(txt)]
+            if z.get("match") and _pattern(z["match"]).search(txt)]
 
 
 # There are 1337 patterns and `re`'s internal cache holds 512: without a
 # cache of our own every call recompiled the same patterns, and a full
 # units-by-evidence pass took minutes instead of seconds.
-_KESH_VZIRCIV: dict[str, "re.Pattern[str]"] = {}
+_PATTERN_CACHE: dict[str, "re.Pattern[str]"] = {}
 
 
-def _vzirets(v: str) -> "re.Pattern[str]":
-    rx = _KESH_VZIRCIV.get(v)
+def _pattern(v: str) -> "re.Pattern[str]":
+    rx = _PATTERN_CACHE.get(v)
     if rx is None:
-        rx = _KESH_VZIRCIV[v] = re.compile(v, re.S)
+        rx = _PATTERN_CACHE[v] = re.compile(v, re.S)
     return rx
 
 
@@ -775,7 +775,7 @@ def pole(z: dict, nove: str, stare: str, typovo=None):
     return v if v not in (None, "") else z.get(stare, typovo)
 
 
-def nazva_zapysu(z: dict) -> str:
+def record_title(z: dict) -> str:
     """The title of an evidence record — one accessor, like the status.
 
     Eight display sites reached for the title directly. After the
@@ -785,7 +785,7 @@ def nazva_zapysu(z: dict) -> str:
     return str(pole(z, "title", "nazva", "?"))
 
 
-def formatuvaty_dokaz(z: dict | None) -> str:
+def format_evidence(z: dict | None) -> str:
     if not z:
         return SHABLON_DOKAZU
     # One notation for the status, not three in a row.
@@ -1018,7 +1018,7 @@ def sketch() -> int:
             if lyshe and lyshe not in str(f):
                 continue
             tekst_knyhy = f.read_text(encoding="utf-8")
-            ryadky_knyhy = tekst_knyhy.split("\n")
+            book_lines = tekst_knyhy.split("\n")
             units = rozbyty(tekst_knyhy)
             cil = shlyakh_reyestru(f)
             cil.parent.mkdir(parents=True, exist_ok=True)
@@ -1059,10 +1059,10 @@ def sketch() -> int:
                 # for one line does not check the rest. So a block's
                 # status is not inherited from evidence but fixed.
                 if vyd == "kod":
-                    klas = "K"
+                    letter = "K"
                 elif z:
-                    klas = class_letter_of(z)
-                elif is_table_header(ryadky_knyhy, ln):
+                    letter = class_letter_of(z)
+                elif is_table_header(book_lines, ln):
                     # A table's header row names its columns. It asserts
                     # nothing about the world, so no source can confirm or
                     # refute it, and leaving it in the queue promises work
@@ -1076,7 +1076,7 @@ def sketch() -> int:
                     # Evidence still wins, above: eight header rows carry
                     # real evidence, and a rule that overwrote them would
                     # destroy work to tidy a count.
-                    klas = "H"
+                    letter = "H"
                 elif vyd == "proza"\
                         and not RE_SYGNAL_STROGYY.search(txt):
                     # A unit with no signal pointing at a source is
@@ -1109,15 +1109,15 @@ def sketch() -> int:
                     # not claims by construction — table headers, header
                     # rows, glossary pairs. Those need a status of their
                     # own, not a place in the queue. See PLAN.md A8.
-                    klas = "E"
+                    letter = "E"
                 else:
-                    klas = "F"
+                    letter = "F"
                 cyt = "\n".join("> " + x for x in txt.split("\n"))
                 # A card must be self-sufficient: it is handed to a
                 # person or an executor **without** access to the book.
                 # So the raw line and its surroundings stand beside the
                 # short statement.
-                syryy, kontekst = verbatim_and_context(ryadky_knyhy, ln, txt)
+                syryy, kontekst = verbatim_and_context(book_lines, ln, txt)
                 dodatkovo = ""
                 if vyd in RENDER and syryy and syryy.strip() != txt.strip():
                     # A cell lives in a table row. If the locator led
@@ -1146,10 +1146,10 @@ def sketch() -> int:
                                   "рядок за ним у книзі не знайдено.\n\n")
                 chastyny.append(
                     f"<!-- fc id:{ident} sha:{h} "
-                    f"src:{f.relative_to(ROOT)}:{ln} status:{LETTER_TO_STATUS.get(klas, klas)} -->\n"
+                    f"src:{f.relative_to(ROOT)}:{ln} status:{LETTER_TO_STATUS.get(letter, letter)} -->\n"
                     f"### {ident} · {vyd} · `{f.relative_to(ROOT)}`\n\n"
                     f"**Твердження, коротко**\n\n{cyt}\n\n{dodatkovo}"
-                    f"{formatuvaty_dokaz(z)}\n---\n"
+                    f"{format_evidence(z)}\n---\n"
                 )
                 vsjogo += 1
             cil.write_text("\n".join(chastyny), encoding="utf-8")
@@ -1178,11 +1178,11 @@ def sketch() -> int:
     if holosti:
         print(f"\n⚠ evidence matching nothing: {len(holosti)}")
         for z in holosti:
-            print(f"    {nazva_zapysu(z)}  ({z.get('_prokhid')})")
+            print(f"    {record_title(z)}  ({z.get('_prokhid')})")
     if perekryti:
         print(f"\nsuperseded by stronger evidence: {len(perekryti)}")
         for z in perekryti:
-            print(f"    {nazva_zapysu(z)}  "
+            print(f"    {record_title(z)}  "
                   f"({z.get('_prokhid')}, клас {class_letter_of(z, '?')})")
 
     # Auditing individual alternatives. Two faults invisible above:
@@ -1220,14 +1220,14 @@ def sketch() -> int:
     if mertvi:
         print(f"\n⚠ alternatives with no match at all: {len(mertvi)}")
         for z, ch, ch_prychyna in mertvi:
-            print(f"    {nazva_zapysu(z)}  ({z.get('_prokhid')})"
+            print(f"    {record_title(z)}  ({z.get('_prokhid')})"
                   f"\n        ↳ {ch}"
                   f"\n          ({ch_prychyna})")
     if shyroki and "-v" in sys.argv:
         print(f"\nalternatives with {SHYROKA_ALTERNATYVA}+ matches: "
               f"{len(shyroki)}")
         for z, ch, n in sorted(shyroki, key=lambda x: -x[2]):
-            print(f"  {n:>3}×  {nazva_zapysu(z)}  ({z.get('_prokhid')})"
+            print(f"  {n:>3}×  {record_title(z)}  ({z.get('_prokhid')})"
                   f"\n        ↳ {ch}")
     return 0
 
@@ -1239,7 +1239,7 @@ def zbir_usikh() -> list[dict]:
             continue
         t = p.read_text(encoding="utf-8")
         for sh in re.split(r"(?=<!--\s*fc\s)", t):
-            m = RE_ZAPYS.search(sh)
+            m = RE_RECORD.search(sh)
             if m:
                 d = m.groupdict()
                 d["fajl"] = str(p.relative_to(FC))
@@ -1395,7 +1395,7 @@ def stale() -> int:
     return 0
 
 
-NARYAD = FC / "reports" / "UNREACHABLE-SOURCES.md"
+ORDER = FC / "reports" / "UNREACHABLE-SOURCES.md"
 
 
 def blocked() -> int:
@@ -1419,7 +1419,7 @@ def blocked() -> int:
         mu = re.search(r"\*\*Джерело:\*\*[ \t]*(.+)", z["tilo"])
         u = " ".join(mu.group(1).split()) if mu else "—"
         sh = (re.search(r"\*\*Що шукати в джерелі:\*\*\s*(.+)", z["tilo"]) or [None, ""])[1]
-        m = RE_TVERDZHENNYA.search(z["tilo"])
+        m = RE_CLAIM.search(z["tilo"])
         txt = " ".join(m.group(1).replace("> ", "").split()) if m else ""
         # This is **not** an evidence record but a local grouping
         # dictionary. Same word, different schema — and that is exactly
@@ -1472,9 +1472,9 @@ def blocked() -> int:
             t = txt.replace("|", "\\|")[:160]
             lines.append(f"| `{ident}` | `{src}` | {t} |")
         lines.append("\n---\n")
-    NARYAD.write_text("\n".join(lines), encoding="utf-8")
+    ORDER.write_text("\n".join(lines), encoding="utf-8")
 
-    print(f"\n{NARYAD.relative_to(ROOT)}: {vsjogo} claims from "
+    print(f"\n{ORDER.relative_to(ROOT)}: {vsjogo} claims from "
           f"{len(grupy)} sources\n")
     for u, g in sorted(grupy.items(), key=lambda kv: -len(kv[1]["tverdzhennya"])):
         print(f"  {len(g['tverdzhennya']):>4}   {u}")
@@ -1524,7 +1524,7 @@ def cherga() -> int:
     for z in zbir_usikh():
         if z["status"] not in ("named-unreachable", "unchecked", "refuted"):
             continue
-        m = RE_TVERDZHENNYA.search(z["tilo"])
+        m = RE_CLAIM.search(z["tilo"])
         if not m:
             continue
         txt = m.group(1)
@@ -1540,7 +1540,7 @@ def cherga() -> int:
     return 0
 
 
-def shukaty() -> int:
+def search() -> int:
     """`factcheck.py shukaty <substring>` -> the sha and the claim text.
 
     Evidence is keyed by hash, and nobody keeps a hash in mind. This
@@ -1553,7 +1553,7 @@ def shukaty() -> int:
     goloka = " ".join(sys.argv[2:]).lower()
     n = 0
     for z in zbir_usikh():
-        m = RE_TVERDZHENNYA.search(z["tilo"])
+        m = RE_CLAIM.search(z["tilo"])
         if not m:
             continue
         txt = " ".join(m.group(1).replace("> ", "").split())
@@ -1594,7 +1594,7 @@ def vorota() -> int:
     dokazy = zavantazhyty_dokazy()
     g = [z for z in dokazy if status_of(z) == "refuted"]
     for z in g:
-        print(f"   ✗ refuted claim: {nazva_zapysu(z)} "
+        print(f"   ✗ refuted claim: {record_title(z)} "
               f"({z.get('_prokhid')})")
 
     # The docstring's second promise, which was **not here**: evidence
@@ -1621,13 +1621,13 @@ def vorota() -> int:
         try:
             rx = re.compile(vz)
         except re.error as e:
-            print(f"   ✗ pattern does not compile: {nazva_zapysu(z)} "
+            print(f"   ✗ pattern does not compile: {record_title(z)} "
                   f"({z.get('_prokhid')}) — {e}")
             holosti.append(z)
             continue
         if not any(rx.search(t) for t in teksty):
             holosti.append(z)
-            print(f"   ✗ evidence matched nothing: {nazva_zapysu(z)} "
+            print(f"   ✗ evidence matched nothing: {record_title(z)} "
                   f"({z.get('_prokhid')})")
 
     print(f"factcheck gate: refuted {len(g)}, "
@@ -1705,7 +1705,7 @@ def main() -> int:
     cmd = sys.argv[1] if len(sys.argv) > 1 else "status"
     return {"sketch": sketch, "status": status, "stale": stale,
             "blocked": blocked, "cherga": cherga, "vorota": vorota,
-            "shukaty": shukaty, "vzirets": pattern}.get(cmd, status)()
+            "shukaty": search, "vzirets": pattern}.get(cmd, status)()
 
 
 if __name__ == "__main__":

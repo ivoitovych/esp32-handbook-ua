@@ -161,10 +161,10 @@ def measure() -> list[tuple[float, str, int]]:
         # A generated report is measured by its frame: its body is the
         # book's own claims, quoted, and translating those would forge a
         # quotation.
-        vymiryuvane = (frame_only(t)
+        measured = (frame_only(t)
                        if "/reports/" in p.as_posix() and p.suffix == ".md"
                        else t)
-        out.append((cyrillic_share(vymiryuvane), str(p.relative_to(ROOT)),
+        out.append((cyrillic_share(measured), str(p.relative_to(ROOT)),
                     len(t.splitlines())))
     return out
 

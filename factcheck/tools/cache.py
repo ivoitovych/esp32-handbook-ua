@@ -238,9 +238,9 @@ def unlisted_in_manifest(z: dict) -> list[tuple[str, str]]:
         for record in zap:
             if not isinstance(record, dict):
                 continue
-            for url in layer3.dzherela_zapysu(record):
+            for url in layer3.record_sources(record):
                 try:
-                    name = layer3.imya_dlya(url)
+                    name = layer3.name_for(url)
                 except Exception:
                     continue
                 if (CACHE / name).exists() and name not in z:
@@ -275,9 +275,9 @@ def proba() -> int:
         for record in zap:
             if not isinstance(record, dict):
                 continue
-            for url in layer3.dzherela_zapysu(record):
+            for url in layer3.record_sources(record):
                 try:
-                    name = layer3.imya_dlya(url)
+                    name = layer3.name_for(url)
                 except Exception:
                     continue
                 if name in z and (CACHE / name).exists():

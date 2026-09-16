@@ -106,7 +106,7 @@ def versiya(imena: list[str] | None = None, tekst: str | None = None,
     return h.hexdigest()[:8]
 
 
-def sklasty(imena: list[str], zaholovok: str = "", vstup: str = "",
+def compose(imena: list[str], zaholovok: str = "", vstup: str = "",
             shablon: str = "") -> str:
     """Compose a work-order header from named blocks.
 
@@ -150,7 +150,7 @@ def self_check() -> int:
           all(v.strip() for v in b.values()))
 
     try:
-        sklasty(["ORIENTATION", "NEMA-TAKOHO"])
+        compose(["ORIENTATION", "NEMA-TAKOHO"])
         probа("невідомий блок — помилка", False)
     except KeyError:
         probа("невідомий блок — помилка", True)
@@ -163,12 +163,12 @@ def self_check() -> int:
     probа("інший набір — інша версія", v1 != v3)
 
     # Правка блока, якого наряд не бачив, версії наряду не зрушує.
-    zipsovanyy = SPEC.read_text(encoding="utf-8").replace(
+    corrupted = SPEC.read_text(encoding="utf-8").replace(
         "## [STUB]", "## [STUB]\n\nдописаний рядок, якого раніше не було\n")
     probа("правка чужого блока не рухає версію наряду",
-          versiya(["ORIENTATION", "VERBATIM"], zipsovanyy) == v1)
+          versiya(["ORIENTATION", "VERBATIM"], corrupted) == v1)
     probа("правка свого блока рухає версію наряду",
-          versiya(["STUB"], zipsovanyy) != versiya(["STUB"]))
+          versiya(["STUB"], corrupted) != versiya(["STUB"]))
 
     # Діра, яку знайшов М2 на своєму боці й яка була тут дзеркально:
     # відбиток мусить покривати ВСЕ, що виконавець бачить, а не лише

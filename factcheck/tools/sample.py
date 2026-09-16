@@ -64,15 +64,15 @@ from repo import ROOT  # noqa: E402  (root is found, not counted)
 GRUPY = config.groups()
 CIL = ROOT / "factcheck" / "reports" / "BRIEF-SAMPLE.md"
 
-NASINNYA = 20260826
+SEED = 20260826
 
 RE_ZAHOLOVOK = re.compile(
     r"<!-- fc id:(?P<id>[\w-]+) sha:(?P<sha>\w+) src:(?P<src>[^\s]+) "
     r"status:(?P<status>[\w-]+) -->")
-RE_CYTATA = re.compile(r"^> (?P<t>.+)$", re.M)
+RE_QUOTE = re.compile(r"^> (?P<t>.+)$", re.M)
 
 
-def units(klas: str) -> list[dict]:
+def units(letter: str) -> list[dict]:
     """Every unit in a given status, in a stable order.
 
     Accepts either the word (`"unchecked"`) or the letter (`"F"`): the
@@ -89,7 +89,7 @@ def units(klas: str) -> list[dict]:
     # other way, and afterwards `odynyci("A")` quietly found nothing —
     # 8331 cards, zero matches, no error at all. It was caught not by this
     # tool but by the guard "zero units is not a result" in `modality.py`.
-    shukanyy = factcheck.LETTER_TO_STATUS.get(klas, klas)
+    shukanyy = factcheck.LETTER_TO_STATUS.get(letter, letter)
 
     out: list[dict] = []
     for grupa in GRUPY:
@@ -107,7 +107,7 @@ def units(klas: str) -> list[dict]:
                 if k != shukanyy:
                     continue
                 tilo = shmatky[i + 4]
-                m = RE_CYTATA.search(tilo)
+                m = RE_QUOTE.search(tilo)
                 # `status` is the target form, a WORD; `klas` remains
                 # for tools that still ask for a letter. Both are derived
                 # here from one `k`, so they cannot diverge.
@@ -169,7 +169,7 @@ def zaholovok(**kw) -> str:
     # invents a source instead.
     bloky = [x if x != 'VERDICTS-VERDICT-TEST' else 'VERDICTS-CONTEST-E'
              for x in ZAHOLOVOK_BLOKY]
-    return task_spec.sklasty(bloky, zaholovok=ramka,
+    return task_spec.compose(bloky, zaholovok=ramka,
                              shablon=ZAHOLOVOK_RAMKA)
 
 
@@ -241,7 +241,7 @@ you **see a different text**, not when you remember otherwise.
 
 ZVIT = ROOT / "factcheck" / "reports" / "MEASURE-NO-SIGNAL.md"
 
-RE_NE_TVERDZHENNYA = re.compile(
+RE_NOT_A_CLAIM = re.compile(
     r"не тверджен|самоопис|заголов|назв[ау] колонк|вступ до перел|підпис",
     re.I)
 
@@ -330,16 +330,16 @@ def digest(katalog: Path) -> int:
     # order printed three of them at one helper.
     import verdicts
 
-    def verdykt_z(z: dict) -> str:
+    def verdict_of(z: dict) -> str:
         return verdicts.verdict_of(z)
 
     def chomu_z(z: dict) -> str:
         return str(z.get("chomu", z.get("comment", "")))
 
-    ne_tverdzhennya = sum(
+    not_a_claim = sum(
         1 for z in zap
-        if verdykt_z(z) == "truly_none"
-        and RE_NE_TVERDZHENNYA.search(chomu_z(z)))
+        if verdict_of(z) == "truly_none"
+        and RE_NOT_A_CLAIM.search(chomu_z(z)))
 
     # A mechanical screen on `spravdi-e`, and the reason it had to exist.
     #
@@ -375,7 +375,7 @@ def digest(katalog: Path) -> int:
             return " ".join(m.group(1).split()) if m else ""
 
         sporni = [z for z in zap
-                  if verdykt_z(z) == "truly_none"
+                  if verdict_of(z) == "truly_none"
                   and _intake.RE_SIGNAL
                   and _intake.RE_SIGNAL.search(
                       _tekst(z.get("unit", z.get("odynycya", ""))))]
@@ -383,12 +383,12 @@ def digest(katalog: Path) -> int:
         print(f"   · screen skipped: {e}")
         sporni = []
 
-    c = collections.Counter(verdykt_z(z) for z in zap)
+    c = collections.Counter(verdict_of(z) for z in zap)
     maye_referenta = (c["confirmed"] + c["advice"]
                       + c["disputes"] + c["unreachable"])
     # A screened-out `spravdi-e` is not a position: it is a unit with a
     # signal, so it counts on the side of "has a referent".
-    pozyciya = c["truly_none"] - ne_tverdzhennya - len(sporni)
+    pozyciya = c["truly_none"] - not_a_claim - len(sporni)
     maye_referenta += len(sporni)
     if sporni:
         print(f"   · `truly_none` rejected by the screen: {len(sporni)} "
@@ -471,7 +471,7 @@ Units in the sample: **{n}**.
 | `znayshov` — the source was obtained | {c['znayshov']} | {c['znayshov'] / n:.0%} |
 | `ideya` — a source is named, not obtained | {c['ideya']} | {c['ideya'] / n:.0%} |
 | `spravdi-e` — the author's position, no referent | {pozyciya} | {pozyciya / n:.0%} |
-| **not a claim at all** — a heading, the book describing itself | {ne_tverdzhennya} | {ne_tverdzhennya / n:.0%} |
+| **not a claim at all** — a heading, the book describing itself | {not_a_claim} | {not_a_claim / n:.0%} |
 
 Of {zayavleno} claimed `znayshov`, **{vystoyalo}** survived layer 3. The
 rest are counted as `ideya`: a failed quote proves the source was **not
@@ -491,7 +491,7 @@ confusing them means being ashamed of the wrong one:
 |---|---|---|---|
 | has an external referent | {maye_referenta / n:.0%} | ~{round(maye_referenta / n * populyaciya):d} | **check it** — the verdict is wrong |
 | the author's position | {pozyciya / n:.0%} | ~{round(pozyciya / n * populyaciya):d} | leave it; this is an honest verdict |
-| not a claim at all | {ne_tverdzhennya / n:.0%} | ~{round(ne_tverdzhennya / n * populyaciya):d} | **not a unit**; a measure of the splitter's granularity |
+| not a claim at all | {not_a_claim / n:.0%} | ~{round(not_a_claim / n * populyaciya):d} | **not a unit**; a measure of the splitter's granularity |
 
 The third row is M2's finding, generalised from their "remainder" basket
 and confirmed here on a **random** sample — that is, now with the right to
@@ -576,17 +576,17 @@ def main() -> int:
     # nothing — the tool then printed "no units found in status UNCHECKED"
     # and exited 0, so a draw of zero units looked like an empty status
     # rather than a broken argument.
-    klas = sys.argv[1]
-    if len(klas) == 1:
-        klas = klas.upper()
+    letter = sys.argv[1]
+    if len(letter) == 1:
+        letter = letter.upper()
     skilky = int(sys.argv[2])
-    seed = NASINNYA
+    seed = SEED
     if "--nasinnya" in sys.argv:
         seed = int(sys.argv[sys.argv.index("--nasinnya") + 1])
 
-    vsi = units(klas)
+    vsi = units(letter)
     if not vsi:
-        print(f"sample: no units found in status {klas}")
+        print(f"sample: no units found in status {letter}")
         return 1
     skilky = min(skilky, len(vsi))
     vybir = random.Random(seed).sample(vsi, skilky)
@@ -603,10 +603,10 @@ def main() -> int:
     # asked there); the shared blocks are the same. Both spellings are
     # accepted for the status name.
     import factcheck
-    if factcheck.LETTER_TO_STATUS.get(klas, klas) == "unchecked":
+    if factcheck.LETTER_TO_STATUS.get(letter, letter) == "unchecked":
         import task_spec
         ramka = ZAHOLOVOK_F
-        for k, v in dict(klas=klas, seed=seed,
+        for k, v in dict(letter=letter, seed=seed,
                          vsyoho=len(vsi), skilky=skilky,
                          reachable=_reachable_block()).items():
             ramka = ramka.replace("{" + k + "}", str(v))
@@ -626,9 +626,9 @@ def main() -> int:
             blok = {"sequential": "STRATEGY-SEQUENTIAL",
                     "triage": "STRATEGY-TRIAGE"}[arm]
             bloky_f = bloky_f[:-1] + ["LOCATION", blok] + bloky_f[-1:]
-        shapka = task_spec.sklasty(bloky_f, zaholovok=ramka)
+        shapka = task_spec.compose(bloky_f, zaholovok=ramka)
     else:
-        shapka = zaholovok(klas=klas, seed=seed,
+        shapka = zaholovok(letter=letter, seed=seed,
                            vsyoho=len(vsi), skilky=skilky)
     r = [shapka.rstrip("\n"), ""]
     # Each batch opens by NAMING its units. The first wave under this
@@ -650,7 +650,7 @@ def main() -> int:
         r.append(f"**`{z['id']}`** · `{z['src']}`\n")
         r.append(f"> {z['tekst']}\n")
     CIL.write_text("\n".join(r) + "\n", encoding="utf-8")
-    print(f"sample: status {klas}, population {len(vsi)}, sample "
+    print(f"sample: status {letter}, population {len(vsi)}, sample "
           f"{skilky}, seed {seed} → {CIL.relative_to(ROOT)}")
     return 0
 

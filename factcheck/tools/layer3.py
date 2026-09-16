@@ -119,7 +119,7 @@ RE_POZNACHKA = re.compile(r"^\([^()]*\)$")
 _l3 = config.layer3_patterns()
 RE_SAM_KAZHE_E = (re.compile(_l3["self_declared_editorial"], re.I)
                   if _l3.get("self_declared_editorial") else None)
-RE_CHYSLO_Z_ODYNYCEYU = (re.compile(_l3["number_with_unit"])
+RE_NUMBER_WITH_UNIT = (re.compile(_l3["number_with_unit"])
                          if _l3.get("number_with_unit") else None)
 
 
@@ -182,19 +182,19 @@ def _z_manifestu() -> dict[str, str]:
             # it is among those recorded, otherwise the first. It makes
             # no difference to the check (neither will open), but the
             # report will name the one today's rule would produce.
-            vyved = vyvesty_imya(url)
+            vyved = show_name(url)
             _IMENA_Z_MANIFESTU[url] = (vyved if vyved in imena
                                        else sorted(imena)[0])
     return _IMENA_Z_MANIFESTU
 
 
-def vyvesty_imya(url: str) -> str:
+def show_name(url: str) -> str:
     """A name derived from a URL — the current generation's rule."""
     baza = re.sub(r"[^\w.-]", "_", url.rsplit("/", 1)[-1] or "bez-imeni")
     return f"{hashlib.sha256(url.encode()).hexdigest()[:8]}-{baza}"[:96]
 
 
-def imya_dlya(url: str) -> str:
+def name_for(url: str) -> str:
     """A file name in the cache: **the manifest** first, derivation second.
 
     A base name collides far too often — an ESP-IDF tree holds dozens of
@@ -223,7 +223,7 @@ def imya_dlya(url: str) -> str:
     z_manifestu = _z_manifestu().get(url)
     if z_manifestu:
         return z_manifestu
-    return vyvesty_imya(url)
+    return show_name(url)
 
 
 def zavantazhyty(url: str, cil: Path) -> bool:
@@ -234,10 +234,10 @@ def zavantazhyty(url: str, cil: Path) -> bool:
     return r.returncode == 0 and cil.exists() and cil.stat().st_size > 0
 
 
-DOPUSK_RYADKA = 3.0
+LINE_TOLERANCE = 3.0
 
 
-def ryadky_z_koordynat(storinka) -> list[str]:
+def lines_from_coords(storinka) -> list[str]:
     """Reconstruct table rows from word coordinates.
 
     `pdftotext` (and pymupdf's ordinary extraction) return **reading
@@ -270,7 +270,7 @@ def ryadky_z_koordynat(storinka) -> list[str]:
     for w in words:
         if baza is None:
             potochnyy, baza = [w], w[1]
-        elif abs(w[1] - baza) <= DOPUSK_RYADKA:
+        elif abs(w[1] - baza) <= LINE_TOLERANCE:
             potochnyy.append(w)
         else:
             lines.append(potochnyy)
@@ -308,13 +308,13 @@ def tekst_pdf(p: Path) -> str | None:
             chastyny = []
             for storinka in d:
                 chastyny.append(storinka.get_text())
-                chastyny += ryadky_z_koordynat(storinka)
+                chastyny += lines_from_coords(storinka)
         return "\n".join(chastyny)
     except Exception:
         return None
 
 
-def tekst_dzherela(p: Path) -> str | None:
+def source_text(p: Path) -> str | None:
     """A file's text — by **content**, not by extension.
 
     The first version had a list of permitted extensions, and it fell
@@ -403,23 +403,23 @@ RE_ID_DOKUMENTA = re.compile(
 # So such a record is legitimate and layer 3 passes it. But there is
 # nothing here to check it mechanically with: the source is the book
 # itself, and that needs a different tool, not this one.
-RE_DZHERELO_VSEREDYNI = re.compile(
+RE_SOURCE_INSIDE = re.compile(
     r"власн\w* (?:код|твердженн|текст)|розділ[ауі]?\s*\d|"
     r"додат\w+\s+[A-EА-Д]|картк\w+\s+К?\d|"
     r"(?:%s)/" % "|".join(config.groups()), re.I)
 
 
-def dzherelo_vseredyni(z: dict) -> bool:
-    return bool(RE_DZHERELO_VSEREDYNI.search(str(z.get("source") or "")))
+def source_inside(z: dict) -> bool:
+    return bool(RE_SOURCE_INSIDE.search(str(z.get("source") or "")))
 
 
-def dzherelo_rozvyazne(z: dict) -> bool:
+def source_resolvable(z: dict) -> bool:
     """Does the source field name a document rather than a property of the world."""
     d = str(z.get("source") or "")
     return bool(RE_ADRESA.search(d)
                 or RE_ID_DOKUMENTA.search(d)
                 or RE_NAZVA_DOKUMENTA.search(d)
-                or dzherelo_vseredyni(z))
+                or source_inside(z))
 
 
 # A stub page served with status 200. M2's finding: `semtech.com`
@@ -559,7 +559,7 @@ def u_tablyci(line: str, tekst: str) -> bool:
     return (max(poz) - min(poz)) < VIKNO_TABLYCI
 
 
-def znayty(grupa: list[str], teksty: list[str],
+def find(grupa: list[str], teksty: list[str],
            tablychni: bool = False) -> list[str]:
     """Which lines of a group were found in none of the sources.
 
@@ -603,7 +603,7 @@ def znayty(grupa: list[str], teksty: list[str],
 #
 # > A narrowing made "just in case" breaks exactly the cases its author
 # > did not have in mind while narrowing.
-RE_SKOROCHENNYA = re.compile(r"(?<![\w/])\.\.\./(\S+)")
+RE_ABBREVIATION = re.compile(r"(?<![\w/])\.\.\./(\S+)")
 
 
 def korin_dlya(povnyy: str, skorocheno: str) -> str | None:
@@ -683,7 +683,7 @@ def root_by_verification(povnyy: str, skorocheno: str) -> str | None:
     hvist = skorocheno.lstrip("/")
     for n in range(2, min(len(seg), 8)):
         url = f"{shema}://" + "/".join(seg[:n + 1]) + "/" + hvist
-        if (CACHE / imya_dlya(url)).exists():
+        if (CACHE / name_for(url)).exists():
             return url
     return None
 
@@ -692,7 +692,7 @@ RE_SHLYAKH_KNYHY = re.compile(
     r"\b(?:%s)/[\w.\-]+\.md\b" % "|".join(config.groups()))
 
 
-def knyzhkovi_dzherela(z: dict) -> list[Path]:
+def book_sources(z: dict) -> list[Path]:
     """Files **of the book** named in a `self-consistent` record's source.
 
     `self-consistent` is an internal check: the claim is proved not by an
@@ -714,7 +714,7 @@ def knyzhkovi_dzherela(z: dict) -> list[Path]:
     return out
 
 
-def dzherela_zapysu(z: dict) -> list[str]:
+def record_sources(z: dict) -> list[str]:
     """Every address of a record, with abbreviations expanded.
 
     In the source field, the second and later files of the same tree are
@@ -738,7 +738,7 @@ def dzherela_zapysu(z: dict) -> list[str]:
     out: list[str] = []
     for u in povni:
         out += rozgornuty(u.rstrip(".,"))
-    for m in RE_SKOROCHENNYA.finditer(syryy):
+    for m in RE_ABBREVIATION.finditer(syryy):
         hvist = m.group(1).lstrip("/").rstrip(".,")
         korin = next((k for u in povni if (k := korin_dlya(u, hvist))), None)
         if korin:
@@ -747,10 +747,10 @@ def dzherela_zapysu(z: dict) -> list[str]:
         # The guess failed — try verification instead. Only a candidate
         # whose file exists in the cache is accepted, so no false address
         # can come out of this.
-        znaydene = next((u2 for u in povni
+        found_one = next((u2 for u in povni
                          if (u2 := root_by_verification(u, hvist))), None)
-        if znaydene:
-            out += rozgornuty(znaydene)
+        if found_one:
+            out += rozgornuty(found_one)
     return out
 
 
@@ -767,7 +767,7 @@ def check(kachaty: bool,
     pidsumok = {"ok": 0, "ne_znaydeno": 0, "nedosyazhne": 0, "nichoho": 0,
                 "vygadane": 0, "zaglushka": 0, "okom": 0, "pomylka": 0,
                 "nechytne": 0, "nadmirnyy_e": 0}
-    kesh_tekstu: dict[str, str | None] = {}
+    text_cache: dict[str, str | None] = {}
 
     for f in (fayly if fayly is not None else sorted(DOKAZY.glob("*.yaml"))):
         try:
@@ -779,7 +779,7 @@ def check(kachaty: bool,
         for z in records:
             if not isinstance(z, dict):
                 continue
-            nazva = factcheck.nazva_zapysu(z)
+            nazva = factcheck.record_title(z)
             # **An absent status is not the same as `unchecked`.**
             #
             # In the registry a status is always present. In a helper's
@@ -801,7 +801,7 @@ def check(kachaty: bool,
             #
             # > The check returns the same number, and the same number
             # > means nothing.
-            maye_klas = bool(z.get("status") or z.get("klas"))
+            has_letter = bool(z.get("status") or z.get("klas"))
             # By WORD, not letter: `status_of` accepts both spellings,
             # so the transition needs no second path.
             stan = factcheck.status_of(z, "")
@@ -824,7 +824,7 @@ def check(kachaty: bool,
             # document, the file downloads, and the quote layer 3 could
             # have checked is simply absent. There is one gate against it:
             # require the extract wherever the status promises one.
-            if maye_klas and stan == "verbatim" and not str(z.get("quote") or
+            if has_letter and stan == "verbatim" and not str(z.get("quote") or
                                                      z.get("cytata-tablytsya")
                                                      or "").strip():
                 pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
@@ -833,7 +833,7 @@ def check(kachaty: bool,
                     detali="verbatim with no quote — it promises an extract"))
                 continue
 
-            if maye_klas and stan == "unchecked":
+            if has_letter and stan == "unchecked":
                 pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="pomylka",
@@ -843,8 +843,8 @@ def check(kachaty: bool,
             # An invented source: the status says "checked" while the
             # source field holds an argument. See
             # RE_SCHOS_SCHO_MOZHE_BUTY_DOKUMENTOM.
-            if (maye_klas and stan in ("verbatim", "derived")
-                    and not dzherelo_rozvyazne(z)):
+            if (has_letter and stan in ("verbatim", "derived")
+                    and not source_resolvable(z)):
                 pidsumok["vygadane"] = pidsumok.get("vygadane", 0) + 1
                 dzh = str(factcheck.pole(z, "source", "dzherelo") or "")[:60]
                 naslidky.append(dict(
@@ -875,9 +875,9 @@ def check(kachaty: bool,
             # person.
             # Unconfigured patterns mean the question cannot be asked —
             # not that the answer is no.
-            if (maye_klas and stan == "no-external-signal"
-                    and RE_CHYSLO_Z_ODYNYCEYU
-                    and RE_CHYSLO_Z_ODYNYCEYU.search(nazva)
+            if (has_letter and stan == "no-external-signal"
+                    and RE_NUMBER_WITH_UNIT
+                    and RE_NUMBER_WITH_UNIT.search(nazva)
                     and not (RE_SAM_KAZHE_E
                              and RE_SAM_KAZHE_E.search(nazva))):
                 pidsumok["nadmirnyy_e"] = pidsumok.get("nadmirnyy_e", 0) + 1
@@ -928,7 +928,7 @@ def check(kachaty: bool,
                 frahmenty = uryvky(
                     str(factcheck.pole(z, "quote", "cytata") or ""),
                     vlasna_mova=(stan == "self-consistent"))
-            urly = dzherela_zapysu(z)
+            urly = record_sources(z)
             # `self-consistent` addresses the book, not the network, so
             # the absence of a URL is normal for it rather than "nothing
             # to check".
@@ -954,14 +954,14 @@ def check(kachaty: bool,
                 continue
 
             teksty: list[str] = []
-            nedosyazhni: list[str] = []
+            unreachable_n: list[str] = []
             zaglushky: list[str] = []
             nechytni: list[str] = []
             tablychni = False
 
             # An internal check: the corpus is the named book files.
             if stan == "self-consistent":
-                shlyakhy = knyzhkovi_dzherela(z)
+                shlyakhy = book_sources(z)
                 if not shlyakhy:
                     pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
                     naslidky.append(dict(
@@ -974,26 +974,26 @@ def check(kachaty: bool,
                           for p in shlyakhy]
 
             for u in urly:
-                if u not in kesh_tekstu:
-                    cil = CACHE / imya_dlya(u)
+                if u not in text_cache:
+                    cil = CACHE / name_for(u)
                     if not cil.exists() and kachaty:
                         zavantazhyty(u, cil)
                     if cil.exists() and pidmineno_zaglushkoyu(cil):
-                        kesh_tekstu[u] = None
+                        text_cache[u] = None
                         zaglushky.append(u)
                     else:
-                        kesh_tekstu[u] = (plaskyy(tekst_dzherela(cil) or "")
+                        text_cache[u] = (plaskyy(source_text(cil) or "")
                                           if cil.exists() else None) or None
-                        if cil.exists() and not kesh_tekstu[u]:
+                        if cil.exists() and not text_cache[u]:
                             nechytni.append(u)
                 if u.lower().endswith(".pdf"):
                     tablychni = True
-                if kesh_tekstu[u]:
-                    teksty.append(kesh_tekstu[u])
+                if text_cache[u]:
+                    teksty.append(text_cache[u])
                 elif u in zaglushky:
                     pass
                 else:
-                    nedosyazhni.append(u)
+                    unreachable_n.append(u)
 
             # "The file is here, nothing can read it" and "the file is
             # not here" are different states, and confusing them is
@@ -1020,7 +1020,7 @@ def check(kachaty: bool,
                 pidsumok["nedosyazhne"] += 1
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="nedosyazhne",
-                    detali=f"{len(nedosyazhni)} sources not in the cache"))
+                    detali=f"{len(unreachable_n)} sources not in the cache"))
                 continue
 
             # **Proof by absence is the only status layer 3 can refute
@@ -1072,10 +1072,10 @@ def check(kachaty: bool,
                     detali=f"the absence of «{shukane[:40]}» is confirmed"))
                 continue
 
-            vsjogo_ryadkiv = sum(len(g) for g in frahmenty)
+            total_lines = sum(len(g) for g in frahmenty)
             promakhy: list[str] = []
             for grupa in frahmenty:
-                promakhy += znayty(grupa, teksty, tablychni=tablychni)
+                promakhy += find(grupa, teksty, tablychni=tablychni)
             if promakhy:
                 # **A miss against an INCOMPLETE set of sources is not
                 # a miss.** The `nedosyazhne` branch above fires only when
@@ -1091,25 +1091,25 @@ def check(kachaty: bool,
                 #
                 # Measured: of 69 "not found" records, **8** were judged
                 # on an incomplete set.
-                if nedosyazhni:
+                if unreachable_n:
                     pidsumok["nedosyazhne"] += 1
                     naslidky.append(dict(
                         fayl=f.stem, nazva=nazva, stan="nedosyazhne",
-                        detali=f"{len(nedosyazhni)} of "
-                               f"{len(nedosyazhni) + len(teksty)} sources "
+                        detali=f"{len(unreachable_n)} of "
+                               f"{len(unreachable_n) + len(teksty)} sources "
                                f"not in the cache; the rest did not cover "
-                               f"{len(promakhy)} of {vsjogo_ryadkiv} lines"))
+                               f"{len(promakhy)} of {total_lines} lines"))
                     continue
                 pidsumok["ne_znaydeno"] += 1
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="ne_znaydeno",
-                    detali=f"{len(promakhy)} of {vsjogo_ryadkiv} lines",
+                    detali=f"{len(promakhy)} of {total_lines} lines",
                     promakhy=promakhy[:3]))
             else:
                 pidsumok["ok"] += 1
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="ok",
-                    detali=f"{vsjogo_ryadkiv} lines"))
+                    detali=f"{total_lines} lines"))
     return naslidky, pidsumok
 
 

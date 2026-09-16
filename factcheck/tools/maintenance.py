@@ -47,7 +47,7 @@ STARI_POLYA = {"nazva", "zbih", "klas", "dzherelo", "cytata", "sposib",
 KNYZHKOVI_TEKY = set(config.groups())
 
 
-def _yaml_zapysy():
+def _yaml_records():
     import yaml
     for p in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
         try:
@@ -61,7 +61,7 @@ def _yaml_zapysy():
 def mira_polya() -> tuple[int, int]:
     """Старі імена полів у записах доказів: скільки лишилось."""
     n = st = 0
-    for _p, z in _yaml_zapysy():
+    for _p, z in _yaml_records():
         n += 1
         st += len(set(z) & STARI_POLYA)
     return n, st
@@ -91,7 +91,7 @@ def mira_katalohy() -> list[str]:
                                   else set()))
 
 
-def mira_zavdannya() -> tuple[int, int, list[str]]:
+def task_measure() -> tuple[int, int, list[str]]:
     """Наряди: скільки складаються зі спеки, і чи всі мають версію."""
     import task_spec
     zi_speky, versiy = 0, []
@@ -100,7 +100,7 @@ def mira_zavdannya() -> tuple[int, int, list[str]]:
                       ("work_orders_f", "shapka")):
         try:
             m = __import__(name)
-            h = getattr(m, var)(skilky=1, nomer=1, klas="F", seed=1,
+            h = getattr(m, var)(skilky=1, nomer=1, letter="F", seed=1,
                                 vsyoho=1, n=1, tema="t", k=1, kandydat="x")
         except Exception:
             continue
@@ -159,7 +159,7 @@ def mira_tochky() -> tuple[int, int]:
 # Перша редакція вважала відкритим усе, де число більше за нуль, — і
 # позначала вадою те, що «п'ять нарядів складаються зі спеки». Це рід 3
 # у власному звіті: міра є, і вона міряє не те.
-PYTANNYA = [
+QUESTIONS = [
     ("поля запису доказу — старих імен", lambda: mira_polya()[1],
      lambda v: v == 0,
      "0 після кроку 2; потребує обох супровідників того самого дня"),
@@ -169,10 +169,10 @@ PYTANNYA = [
     ("каталогів із транслітерованим іменем",
      lambda: len(mira_katalohy()), lambda v: v == 0,
      "0; `zvyazok/` — рішення за двох"),
-    ("нарядів, складених зі спеки завдання", lambda: mira_zavdannya()[0],
+    ("нарядів, складених зі спеки завдання", lambda: task_measure()[0],
      lambda v: v >= 5, "усі 5"),
-    ("різних версій завдання серед них", lambda: mira_zavdannya()[1],
-     lambda v: v == mira_zavdannya()[0],
+    ("різних версій завдання серед них", lambda: task_measure()[1],
+     lambda v: v == task_measure()[0],
      "стільки ж, скільки нарядів — збіг версій означав би діру"),
     ("розбіжностей керівних документів",
      lambda: mira_vorota()["розбіжності керівних документів"],
@@ -194,7 +194,7 @@ def zvit(md: bool = False, lyshe_vidkryti: bool = False) -> int:
     lines = []
     vidkrytykh = 0
     zlamanykh: list[str] = []
-    for name, mira, zakryte, tsil in PYTANNYA:
+    for name, mira, zakryte, tsil in QUESTIONS:
         try:
             v = mira()
             vidkryte = not zakryte(v)
@@ -224,7 +224,7 @@ def zvit(md: bool = False, lyshe_vidkryti: bool = False) -> int:
     for z in zlamanykh:
         print(f"   ✗ МІРА ЗЛАМАНА — {z}")
     if not lyshe_vidkryti:
-        print(f"\nвідкритих пунктів: {vidkrytykh} із {len(PYTANNYA)}"
+        print(f"\nвідкритих пунктів: {vidkrytykh} із {len(QUESTIONS)}"
               + (f"; ЗЛАМАНИХ МІР: {len(zlamanykh)}" if zlamanykh else ""))
     return 0
 
@@ -241,7 +241,7 @@ def self_check() -> int:
     n, st = mira_polya()
     probа(f"записи читаються ({n})", n > 1000)
     probа("міра полів рахує старі імена, а не всі", st < n * 9)
-    zi, riznyh, _ = mira_zavdannya()
+    zi, riznyh, _ = task_measure()
     probа(f"наряди складаються зі спеки ({zi})", zi >= 5)
     probа(f"версії нарядів різні ({riznyh})", riznyh == zi)
     usi, bez, _ = mira_dokumenty()
@@ -260,7 +260,7 @@ def self_check() -> int:
           {"METHOD.md", "REPORT.md"} <= korin)
     probа("кожне питання має свою умову закриття",
           all(callable(m) and callable(z)
-              for _i, m, z, _t in PYTANNYA))
+              for _i, m, z, _t in QUESTIONS))
     print("самоперевірка: усе як очікувано" if not pomylok
           else f"самоперевірка: РОЗБІЖНОСТЕЙ {pomylok}")
     return 1 if pomylok else 0

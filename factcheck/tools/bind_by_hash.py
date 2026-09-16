@@ -101,7 +101,7 @@ def komponenty(zv: dict[str, list[str]]) -> dict[str, str]:
     """Record key → representative of its component."""
     batko = {k: k for k in zv}
 
-    def znayty(x: str) -> str:
+    def find(x: str) -> str:
         while batko[x] != x:
             batko[x] = batko[batko[x]]
             x = batko[x]
@@ -113,10 +113,10 @@ def komponenty(zv: dict[str, list[str]]) -> dict[str, str]:
             vlasnyk[s].append(k)
     for ks in vlasnyk.values():
         for k in ks[1:]:
-            a, b = znayty(ks[0]), znayty(k)
+            a, b = find(ks[0]), find(k)
             if a != b:
                 batko[a] = b
-    return {k: znayty(k) for k in zv}
+    return {k: find(k) for k in zv}
 
 
 def main() -> int:
@@ -148,17 +148,17 @@ def main() -> int:
         # Родини беремо цілими й у сталому порядку: партія має бути
         # відтворюваною, інакше «перевірено на партії 1» нічого не
         # означає для того, хто повторить прогін.
-        rodyny = sorted(
+        families = sorted(
             {p for p in predst.values() if rozmir[p] <= a.do},
             key=lambda p: sorted(k for k in predst if predst[k] == p)[0])
         # Уже переїхалі — пропускаємо, щоб партії йшли вперед.
         gotovi = {z["_klyuch"] for z in records if z.get("sha")}
-        rodyny = [p for p in rodyny
+        families = [p for p in families
                   if not {k for k in predst if predst[k] == p} <= gotovi]
         if a.limit:
-            rodyny = rodyny[:a.limit]
-        vybrani = {k for k in predst if predst[k] in set(rodyny)}
-        print(f"родин узято {len(rodyny)}, записів {len(vybrani)} "
+            families = families[:a.limit]
+        vybrani = {k for k in predst if predst[k] in set(families)}
+        print(f"родин узято {len(families)}, записів {len(vybrani)} "
               f"(вже переїхало {len(gotovi)})")
     elif a.only:
         vybrani = {z["_klyuch"] for z in records if a.only in z["_fayl"]}

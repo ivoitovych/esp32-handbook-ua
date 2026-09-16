@@ -101,7 +101,7 @@ def kolonky(zagolovok: str) -> dict[int, str]:
 
 def main() -> int:
     zhahy: list[str] = []
-    perevireno = 0
+    checked_n = 0
 
     for g in GRUPY:
         for f in sorted((ROOT / g).glob("*.md")):
@@ -197,7 +197,7 @@ def main() -> int:
                     else:
                         continue
 
-                    perevireno += 1
+                    checked_n += 1
                     if "-v" in sys.argv:
                         print(f"  {rel}:{ln} {sorted(oblast)} ({chomu}) ← GPIO{n}")
                     for sim in sorted(oblast):
@@ -207,7 +207,7 @@ def main() -> int:
 
     for z in dict.fromkeys(zhahy):
         print(f"   • {z}")
-    print(f"pins: перевірено згадок {perevireno}, помилок {len(set(zhahy))}")
+    print(f"pins: перевірено згадок {checked_n}, помилок {len(set(zhahy))}")
     return 1 if zhahy else 0
 
 

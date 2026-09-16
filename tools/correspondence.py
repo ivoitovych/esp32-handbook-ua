@@ -31,7 +31,7 @@ from repo import ROOT  # noqa: E402  (root is found, not counted)
 KAT = ROOT / "zvyazok"
 
 # 2026-08-26-1408Z-m1-vidpovid-protokol-lystuvannya.md
-IMYA = re.compile(
+NAME = re.compile(
     r"^(?P<data>\d{4}-\d{2}-\d{2})-(?P<chas>\d{4})Z"
     r"-(?P<vid>m1|m2)-(?P<vyd>[a-z]+)-(?P<slug>[a-z0-9-]+)\.md$")
 
@@ -95,7 +95,7 @@ def collect() -> tuple[list[dict], list[str]]:
     message: list[dict] = []
     bidy: list[str] = []
     for f in sorted(KAT.glob("*.md")):
-        m = IMYA.match(f.name)
+        m = NAME.match(f.name)
         if not m:
             # Файли протоколу й листування до нього — не повідомлення.
             #

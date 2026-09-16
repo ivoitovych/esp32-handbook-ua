@@ -364,9 +364,9 @@ def root_holds_only_governing() -> list[str]:
         if p.name not in dozvoleni:
             problems.append(f"{p.name}: sits in the root of factcheck/, "
                             f"and the root holds only the governing documents")
-    vzir = re.compile(r'"factcheck"\s*/\s*"([A-Z][A-Z0-9-]*\.md)"')
+    patt = re.compile(r'"factcheck"\s*/\s*"([A-Z][A-Z0-9-]*\.md)"')
     for t in repo.tool_files():
-        for fname in set(vzir.findall(t.read_text(encoding="utf-8"))):
+        for fname in set(patt.findall(t.read_text(encoding="utf-8"))):
             if fname not in dozvoleni:
                 problems.append(f"tools/{t.name}: writes {name} into the "
                                 f"root of factcheck/, where only the "

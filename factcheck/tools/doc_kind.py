@@ -59,7 +59,7 @@ import config
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 FC = ROOT / "factcheck"
 
-RE_IMYA = r'''["']([A-Za-z0-9._-]+\.md)["']'''
+RE_NAME = r'''["']([A-Za-z0-9._-]+\.md)["']'''
 RE_POZNAKA = re.compile(
     r"^> \*\*(?P<rid>generated|canonical|historical)\*\*(?P<hvist>[^\n]*)",
     re.M)
@@ -90,7 +90,7 @@ ISTORYCHNI = {
 # англійською, і українська позначка в англійському документі — та сама
 # суміш, від якої власник просив піти: читач мусить спершу здогадатися,
 # з якої мови слово, перш ніж зрозуміти, що воно значить.
-POYASNENNYA = {
+EXPLANATION = {
     "generated": "a tool rewrites this file; editing it by hand is wasted work",
     "canonical": "the decision lives here; there are to be no copies",
     "historical": "a record of a finished wave; not edited, numbers frozen",
@@ -131,14 +131,14 @@ def hto_pyshe() -> dict[str, set[str]]:
         for n in ast.walk(tree):
             if (isinstance(n, ast.Assign) and len(n.targets) == 1
                     and isinstance(n.targets[0], ast.Name)):
-                m = re.search(RE_IMYA, ast.unparse(n.value))
+                m = re.search(RE_NAME, ast.unparse(n.value))
                 if m:
                     stali[n.targets[0].id] = m.group(1)
         for n in ast.walk(tree):
             if (isinstance(n, ast.Call) and isinstance(n.func, ast.Attribute)
                     and n.func.attr == "write_text"):
                 tgt = ast.unparse(n.func.value)
-                m = re.search(RE_IMYA, tgt)
+                m = re.search(RE_NAME, tgt)
                 name = stali.get(tgt) or (m.group(1) if m else None)
                 if name:
                     out.setdefault(name, set()).add(p.stem)
@@ -255,7 +255,7 @@ def rozstavyty() -> int:
         if poznaka(p):
             continue
         rid = rid_dokumenta(p, pyshe)
-        hvist = POYASNENNYA[rid]
+        hvist = EXPLANATION[rid]
         if rid == "generated":
             hvist = (f"written by "
                      f"{', '.join(f'`tools/{t}.py`' for t in sorted(pyshe[p.name]))}"

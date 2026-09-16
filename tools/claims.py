@@ -26,11 +26,11 @@ from pathlib import Path
 from repo import ROOT  # noqa: E402  (root is found, not counted)
 GRUPY = ("kartky", "manual", "dodatky", "inserts")
 
-ODYNYCI = r"(?:мкА|мА|А|мкФ|нФ|мкс|мс|с|год|кГц|МГц|ГГц|Гц|кОм|МОм|Ом|" \
-          r"В|мВ|КБ|МБ|ГБ|біт/с|кбіт/с|Мбіт/с|бод|мкА·год|мА·год|мА·с|" \
+UNITS = r"(?:мкА|мА|А|мкФ|нФ|мкс|мс|с|год|кГц|МГц|ГГц|Гц|кОм|МОм|Ом|"\
+          r"В|мВ|КБ|МБ|ГБ|біт/с|кбіт/с|Мбіт/с|бод|мкА·год|мА·год|мА·с|"\
           r"°C|м|см|мм|Вт|AWG|пін(?:и|ів)?|канал(?:и|ів)?)"
 
-RE_CHYSLO = re.compile(rf"(?<![\w.])(\d+(?:[.,]\d+)?(?:\s*[–—-]\s*\d+(?:[.,]\d+)?)?)\s*({ODYNYCI})(?![\w])")
+RE_CHYSLO = re.compile(rf"(?<![\w.])(\d+(?:[.,]\d+)?(?:\s*[–—-]\s*\d+(?:[.,]\d+)?)?)\s*({UNITS})(?![\w])")
 RE_ADRESA = re.compile(r"0x[0-9A-Fa-f]{3,8}")
 RE_GPIO = re.compile(r"GPIO\s?(\d{1,2})")
 RE_API = re.compile(r"\b((?:esp|nvs|gpio|i2c|spi|uart|twai|ledc|adc|rmt|pcnt|"
@@ -43,7 +43,7 @@ RE_KOMANDA = re.compile(r"^\s*((?:esptool|idf\.py|espefuse|pio|nvs_partition_gen
 # Повідомлення, які книга обіцяє читачеві побачити в консолі. Окрема
 # категорія, бо ціна помилки тут особлива: читач шукає рядок у своєму
 # логу дослівно, і зайва кома робить пораду непридатною.
-RE_POVIDOMLENNYA = re.compile(
+RE_MESSAGE = re.compile(
     r"`([A-Z][^`\n]{6,}?"
     r"(?:failed|error|Error|timeout|timed out|invalid|Invalid|not |no |"
     r"prohibited|Prohibited|triggered|mismatch|overflow|corrupt|CORRUPT|"
@@ -109,7 +109,7 @@ def main():
         druk("командні рядки", zbir(RE_KOMANDA, tilky_kod=True, grupa=1))
 
     if shho in ("vse", "povidomlennya"):
-        de = zbir(RE_POVIDOMLENNYA, grupa=1)
+        de = zbir(RE_MESSAGE, grupa=1)
         for f in fajly():
             for blok in re.findall(r"```.*?```", f.read_text(encoding="utf-8"),
                                    flags=re.S):

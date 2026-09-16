@@ -48,7 +48,7 @@ RE_SAMA_KNYHA = re.compile(
     r"esp32-handbook|ivoitovych|voytovych"
     r"|(?:^|/)(?:%s|factcheck)/" % "|".join(config.groups()), re.I)
 
-POTREBUYE_CYTATY = {"pidtverdzheno", "sperechayetsya"}
+NEEDS_QUOTE = {"pidtverdzheno", "sperechayetsya"}
 
 
 def normalizuy(t: str) -> str:
@@ -137,24 +137,24 @@ def main() -> int:
     print(" ".join(f"{k}={v}" for k, v in vydav.most_common()))
 
     zayavy = [z for z in prydatni
-              if str(z.get("verdykt")) in POTREBUYE_CYTATY]
+              if str(z.get("verdykt")) in NEEDS_QUOTE]
     print(f"\nзаявок із цитатою до перевірки: {len(zayavy)}")
 
-    vyzhyly, zahynuly, nedosyazhni, bez_cytaty = [], [], [], []
+    vyzhyly, zahynuly, unreachable_n, without_quote = [], [], [], []
     dokumenty: dict[str, str | None] = {}
     for i, z in enumerate(zayavy, 1):
         if i % 25 == 0:
             print(f"  … {i}/{len(zayavy)}", flush=True)
         cyt = str(z.get("quote") or "").strip()
         if not cyt:
-            bez_cytaty.append(z)
+            without_quote.append(z)
             continue
         url = str(z["source"]).strip()
         if url not in dokumenty:
             dokumenty[url] = zavantazh(url, cache)
         tekst = dokumenty[url]
         if tekst is None:
-            nedosyazhni.append(z)
+            unreachable_n.append(z)
         elif normalizuy(cyt) in normalizuy(tekst):
             vyzhyly.append(z)
         else:
@@ -163,8 +163,8 @@ def main() -> int:
     print(f"\n── третій шар ──")
     print(f"  цитата знайшлася дослівно  {len(vyzhyly)}")
     print(f"  цитати в документі немає   {len(zahynuly)}")
-    print(f"  документ не завантажився   {len(nedosyazhni)}")
-    print(f"  вердикт без цитати         {len(bez_cytaty)}")
+    print(f"  документ не завантажився   {len(unreachable_n)}")
+    print(f"  вердикт без цитати         {len(without_quote)}")
     if zayavy:
         print(f"  частка вцілілих заявок     "
               f"{100 * len(vyzhyly) / len(zayavy):.0f} %")

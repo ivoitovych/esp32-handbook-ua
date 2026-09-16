@@ -111,7 +111,7 @@ def konteksty() -> dict[str, str]:
     return out
 
 
-def versiya_naryadu(rich: bool = False) -> str:
+def order_version(rich: bool = False) -> str:
     """Відбиток усього, що бачить виконавець — вісім знаків.
 
     Механізм один зі спекою завдання, а не другий поруч: `rich`
@@ -137,7 +137,7 @@ def shapka(**kw) -> str:
     ramka = SHAPKA_RAMKA
     for k, v in kw.items():
         ramka = ramka.replace("{" + k + "}", str(v))
-    return task_spec.sklasty(SHAPKA_BLOKY, zaholovok=ramka,
+    return task_spec.compose(SHAPKA_BLOKY, zaholovok=ramka,
                              shablon=SHAPKA_RAMKA)
 
 
@@ -152,7 +152,7 @@ def vypadkova(a) -> int:
     usi = sorted(sample.units("unchecked"), key=lambda u: u["id"])
     vzyato = random.Random(a.seed).sample(usi, min(a.vypadkovo, len(usi)))
     (a.kudy / "vybirka.json").write_text(json.dumps(
-        {"order_version": versiya_naryadu(getattr(a, "rich", False)),
+        {"order_version": order_version(getattr(a, "rich", False)),
          # `queue` пише і цей прогін теж: попарний режим порівнює з ним
          # клас кожної одиниці, і без нього він рахував **усі** одиниці
          # такими, що вийшли з черги — 10 із 10 у першій же пробі.
@@ -192,7 +192,7 @@ def za_perelikom(a, sample) -> int:
         try:
             for u in sample.units(kl):
                 reyestr[u["id"]] = dict(
-                    u, klas=kl, status=factcheck.LETTER_TO_STATUS.get(kl, kl))
+                    u, letter=kl, status=factcheck.LETTER_TO_STATUS.get(kl, kl))
         except Exception:
             continue
     vzyato = [reyestr[i] for i in treba if i in reyestr]
@@ -211,7 +211,7 @@ def za_perelikom(a, sample) -> int:
                if cherha else [])
 
     (a.kudy / "vybirka.json").write_text(json.dumps(
-        {"order_version": versiya_naryadu(a.rich),
+        {"order_version": order_version(a.rich),
          "paired_with": str(a.z_pereliku.parent.name),
          "prev_order_version": poperednye.get("order_version"),
          "queue": poperednye.get("queue"), "sample_size": len(vzyato),
@@ -232,7 +232,7 @@ def za_perelikom(a, sample) -> int:
                 "це повноцінна відповідь.")
         r = [shapka(n=n, tema="випадкова вибірка (повтор попарно)",
                     k=len(ch), kandydat=kand),
-             f"\n<!-- order_version:{versiya_naryadu(a.rich)} "
+             f"\n<!-- order_version:{order_version(a.rich)} "
              f"paired:{a.z_pereliku.parent.name} -->\n"]
         for u in ch:
             r.append(f"\n**`{u['id']}`**\n")
@@ -268,7 +268,7 @@ def vypadkova(a) -> int:
     usi = sorted(sample.units("unchecked"), key=lambda u: u["id"])
     vzyato = random.Random(a.seed).sample(usi, min(a.vypadkovo, len(usi)))
     (a.kudy / "vybirka.json").write_text(json.dumps(
-        {"order_version": versiya_naryadu(getattr(a, "rich", False)),
+        {"order_version": order_version(getattr(a, "rich", False)),
          # `queue` пише і цей прогін теж: попарний режим порівнює з ним
          # клас кожної одиниці, і без нього він рахував **усі** одиниці
          # такими, що вийшли з черги — 10 із 10 у першій же пробі.
@@ -289,7 +289,7 @@ def vypadkova(a) -> int:
         rich = getattr(a, "rich", False)
         r = [shapka(n=n, tema=f"випадкова вибірка (насіння {a.seed})",
                     k=len(ch), kandydat=kand),
-             f"\n<!-- order_version:{versiya_naryadu(rich)} "
+             f"\n<!-- order_version:{order_version(rich)} "
              f"rich:{int(rich)} -->\n"]
         kont = konteksty() if rich else {}
         for u in ch:

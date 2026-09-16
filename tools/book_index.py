@@ -47,7 +47,7 @@ MIN_DOVZHYNA = 3
 
 # Групи термінів. Порядок важливий: перший взірець, що збігся, вирішує,
 # як термін нормалізується.
-VZIRTSI = [
+PATTERNS = [
     # Піни — головне, що шукають у цій книзі.
     re.compile(r"\bGPIO\s?\d{1,2}\b"),
     # Сімейства й модулі.
@@ -87,7 +87,7 @@ RUCHNI = [
 RE_KOLONCYFRA = re.compile(r"^\d{1,3}$")
 
 
-def klyuch_sortuvannya(s: str) -> tuple:
+def sort_key(s: str) -> tuple:
     """Українська абетка спершу, латина після, цифри в кінці.
 
     Просте `sorted()` кидає кирилицю після латини за кодами Unicode, і
@@ -96,12 +96,12 @@ def klyuch_sortuvannya(s: str) -> tuple:
     b = s.lstrip("`").lstrip()
     perш = b[:1]
     if perш.isdigit():
-        rozryad = 2
+        digit_group = 2
     elif "А" <= perш.upper() <= "Я" or perш.upper() in "ІЇЄҐ":
-        rozryad = 0
+        digit_group = 0
     else:
-        rozryad = 1
-    return (rozryad, unicodedata.normalize("NFKD", b).casefold())
+        digit_group = 1
+    return (digit_group, unicodedata.normalize("NFKD", b).casefold())
 
 
 def storinky_knyhy() -> list[tuple[int, str]]:
@@ -136,7 +136,7 @@ def storinky_knyhy() -> list[tuple[int, str]]:
 def collect() -> dict[str, set[int]]:
     found: dict[str, set[int]] = defaultdict(set)
     for nomer, tekst in storinky_knyhy():
-        for vz in VZIRTSI:
+        for vz in PATTERNS:
             for m in vz.finditer(tekst):
                 word = re.sub(r"\s+", "", m.group(0))
                 if len(word) >= MIN_DOVZHYNA:
@@ -182,7 +182,7 @@ def main() -> int:
     vidkynuto = len(found) - len(korysni)
 
     if "--pokazaty" in sys.argv:
-        for t in sorted(korysni, key=klyuch_sortuvannya)[:60]:
+        for t in sorted(korysni, key=sort_key)[:60]:
             print(f"  {t:32} {diapazony(list(korysni[t]))}")
         print(f"\npokazhchyk: термінів {len(korysni)}, "
               f"відкинуто заширокі {vidkynuto}")
@@ -190,7 +190,7 @@ def main() -> int:
 
     lines = [ZAHOLOVOK.rstrip("\n"), "", "::: pokazhchyk"]
     litera = None
-    for t in sorted(korysni, key=klyuch_sortuvannya):
+    for t in sorted(korysni, key=sort_key):
         persha = t.lstrip("`")[:1].upper()
         if persha != litera:
             litera = persha

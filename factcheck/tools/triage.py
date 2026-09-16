@@ -42,14 +42,14 @@ def main(argv: list[str]) -> int:
         except Exception:
             pass
 
-    fayly = nm.kesh_fayly()
+    fayly = nm.cache_files()
     bez = []
-    for klas in ("named-unreachable", "unchecked", "no-external-signal"):
-        for o in sample.units(klas):
+    for letter in ("named-unreachable", "unchecked", "no-external-signal"):
+        for o in sample.units(letter):
             if o["id"] in vzhe:
                 continue
             if not nm.pick(o["tekst"], fayly):
-                bez.append({**o, "klas": klas})
+                bez.append({**o, "klas": letter})
     # Сталий порядок: одиниці одного розділу поруч, щоб помічник тримав
     # у голові один контекст, а не стрибав книгою.
     bez.sort(key=lambda o: (o["src"], o["id"]))
