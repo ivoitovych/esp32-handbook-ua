@@ -157,7 +157,8 @@ def did_not_look(z: dict) -> bool:
     happened. Without that the record is neither a finding nor evidence
     of the absence of one.
     """
-    return (str(z.get("verdykt")) == "ne_znayshov"
+    import verdicts
+    return (verdicts.verdict_of(z) == "not_found"
             and not str(z.get("source", "")).strip())
 
 
@@ -215,14 +216,15 @@ def main() -> int:
     # working with 49. That is, a tool written against inflated reporting
     # would itself have inflated its reporting.
     n = len(records)
-    c = collections.Counter(str(z.get("verdykt", "?")) for z in records)
+    import verdicts
+    c = collections.Counter(verdicts.verdict_of(z) or "?" for z in records)
 
     # Layer 3 on everything that carries a quote, not only on refutations.
-    candidates = [{"title": str(z.get("odynycya", "?")),
+    candidates = [{"title": str(z.get("unit", z.get("odynycya", "?"))),
              "source": str(z.get("source", "")).strip(),
              "quote": str(z.get("quote", "")),
-             "verdykt": str(z.get("verdykt", "")),
-             "zvidky": z.get("_fayl", "?")}
+             "verdict": verdicts.verdict_of(z),
+             "from_file": z.get("_fayl", "?")}
             for z in records if str(z.get("quote", "")).strip()]
     CANDIDATES.write_text(
         "# Candidates from the `unchecked` measurement. **Not a registry.**\n"
@@ -239,9 +241,9 @@ def main() -> int:
         except ImportError:
             pass
 
-    disputes = [z for z in records if str(z.get("verdykt")) == "sperechayetsya"]
+    disputes = [z for z in records if verdicts.verdict_of(z) == "disputes"]
     disputes_ok = [z for z in disputes
-                  if states.get(str(z.get("odynycya"))) == "ok"]
+                  if states.get(str(z.get("unit", z.get("odynycya")))) == "ok"]
     population_n = population()
     low, high = wilson(len(disputes_ok), n)
 
@@ -317,7 +319,7 @@ none of them is grounds for editing the book.
         collections.Counter)
     for z in records:
         by_helper[str(z.get("_fayl", "?")).split("-")[0]][
-            str(z.get("verdykt", "?"))] += 1
+            verdicts.verdict_of(z) or "?"] += 1
     if len(by_helper) > 1:
         r.append("\n## Breakdown by helper\n")
         r.append("A wave with identical columns across the board is "
