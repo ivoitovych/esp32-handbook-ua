@@ -34,7 +34,7 @@ so it is counted in neither column. `METHOD.md`, Part II, says why.
 | `named-unreachable` | 172 | 2.1 % | secondary — the source cannot be reached from here; URL recorded, no quote |
 | `self-consistent` | 44 | 0.5 % | internal check — the book agrees with itself; no external confirmation |
 | `looked-not-found` | 14 | 0.2 % | looked and did not find — the work was done, the source is not visible |
-| `no-external-signal` | 3277 | 40.4 % | no signal in the text to check against — assigned mechanically, not checked |
+| `no-external-signal` | 3277 | 40.4 % | UNEXAMINED QUEUE — a rule closed it, nobody read it; counts as open |
 | `unchecked` | 2090 | 25.8 % | not checked |
 
 ## The weakest number on this page

@@ -78,7 +78,8 @@ STATUSES = {
     "named-unreachable": "secondary — the source cannot be reached from here; URL recorded, no quote",
     "self-consistent": "internal check — the book agrees with itself; no external confirmation",
     "looked-not-found": "looked and did not find — the work was done, the source is not visible",
-    "no-external-signal": "no signal in the text to check against — assigned mechanically, not checked",
+    "no-external-signal": "UNEXAMINED QUEUE — a rule closed it, nobody read it; counts as open",
+    "editorial": "read, and it asserts nothing a source could confirm — the author's position, advice, or a framing sentence",
     "refuted": "refuted, or needs an edit",
     "unchecked": "not checked",
     "code-context": "context — a whole code block; the claims live in its lines",
@@ -94,6 +95,7 @@ LETTER_TO_STATUS = {
     "D": "arithmetic", "C": "named-unreachable", "S": "self-consistent",
     "L": "looked-not-found", "E": "no-external-signal", "G": "refuted",
     "F": "unchecked", "K": "code-context", "H": "not-a-claim",
+    "R": "editorial",
 }
 STATUS_TO_LETTER = {v: k for k, v in LETTER_TO_STATUS.items()}
 
@@ -517,7 +519,7 @@ WORD_TO_LETTER = {
     "verbatim": "A", "derived": "B", "named-unreachable": "C",
     "arithmetic": "D", "no-external-signal": "E", "unchecked": "F",
     "refuted": "G", "code-context": "K", "looked-not-found": "L",
-    "not-a-claim": "H",
+    "not-a-claim": "H", "editorial": "R",
     "self-consistent": "S", "absent-from-source": "N",
 }
 
@@ -1289,10 +1291,28 @@ def status() -> int:
         print(f"  self-consistent, no external confirmation "
               f"(self-consistent): "
               f"{c['self-consistent']}")
-    print(f"  closed as a decision (no-external-signal): "
-          f"{c.get('no-external-signal', 0)}")
-    print(f"  still open (named-unreachable + unchecked + refuted): "
-          f"{sum(c.get(s, 0) for s in ('named-unreachable', 'unchecked', 'refuted'))}")
+    # `editorial` is a RESULT: somebody read the sentence and judged that
+    # no source could bear on it. `no-external-signal` is not a result at
+    # all — a rule closed the unit and nobody has ever looked at it.
+    #
+    # They sat in one bucket, in the CLOSED column, and that is how 41 % of
+    # the book came to be reported as settled when it was backlog. A
+    # sample of 48 read by two helpers found 25 % of it (95 % 13–37 %)
+    # carries a real external referent — roughly 800 units of work filed
+    # under "decided".
+    #
+    # So the unexamined queue counts as OPEN, and shrinks only by being
+    # read: each unit leaves it either for `unchecked` (there is a source
+    # to find) or for `editorial` (there is not, and somebody says why).
+    if c.get("editorial"):
+        print(f"  read, nothing a source could confirm (editorial): "
+              f"{c['editorial']}")
+    ne = c.get("no-external-signal", 0)
+    vidkryti = sum(c.get(s, 0) for s in
+                   ("named-unreachable", "unchecked", "refuted")) + ne
+    print(f"  still open (named-unreachable + unchecked + refuted"
+          f"{' + no-external-signal' if ne else ''}): {vidkryti}"
+          f"{f'  — of which {ne} never examined' if ne else ''}")
     # by file: where the most open units are
     per = Counter()
     for z in records:

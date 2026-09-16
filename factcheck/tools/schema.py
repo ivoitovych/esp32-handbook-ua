@@ -51,7 +51,8 @@ STARI = {"nazva", "zbih", "klas", "dzherelo", "cytata", "sposib",
          "notatka", "shukaty", "rozrakhunok"}
 VIDOMI = OBOVYAZKOVI | STARI | {
     "sha", "source", "quote", "method", "note", "look_for", "calculation",
-    "looked_at", "absent", "control", "perevireno-okom", "_prokhid"}
+    "looked_at", "absent", "control", "perevireno-okom", "_prokhid",
+    "why"}
 
 # Що клас зобов'язаний мати. Ключ — і літера, і слово: переїзд не
 # скінчено, і перевірка мусить розуміти обидва записи.
@@ -63,6 +64,9 @@ POTREBUYE = {
     # `looked_at` обов'язкове навмисно. Без нього стан повторив би долю
     # `C`, який теж мав називати документ — і в шести записах не називав.
     "L": ("looked_at",), "looked-not-found": ("looked_at",),
+    # `editorial` без причини — це той самий штамп, лише новим
+    # словом. Обовʼязкове `why` робить його звітом про читання.
+    "R": ("why",), "editorial": ("why",),
     # `S` мусить назвати **місце в книзі**, з яким звіряли, — інакше
     # він каже лише «ми подивилися», що вже є `E`. Поле те саме,
     # `source`, бо це і є джерело: просто внутрішнє.
@@ -91,7 +95,8 @@ POTREBUYE = {
 STATUSES = set(POTREBUYE) | {
     "E", "no-external-signal", "F", "unchecked", "G", "refuted",
     "K", "code-context",
-    "H", "not-a-claim"}
+    "H", "not-a-claim",
+    "R", "editorial"}
 
 RE_KARTKA = re.compile(
     r"<!-- fc id:(?P<id>\S+) sha:\S+ src:(?P<src>\S+) status:\S+ -->\n"

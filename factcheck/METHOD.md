@@ -142,7 +142,8 @@ rather than leaving the question resting on a measurement taken once.
     named-unreachable   source named, text not held
     self-consistent     checked against ANOTHER PLACE IN THIS BOOK
     looked-not-found    a document was opened; the source was not in it
-    no-external-signal  the text carries nothing checkable
+    no-external-signal  UNEXAMINED QUEUE: a rule closed it, nobody read it
+    editorial           read; it asserts nothing a source could bear on
     refuted             the source says otherwise
     unchecked           nobody has reached it yet
 
@@ -1497,6 +1498,7 @@ re-run after every text edit and marks such records unchecked again.
 | **unchecked** | **not checked.** The default state. |
 | **refuted** | **refuted, or needs an edit.** A finding; goes to `reviews/`. |
 | **code-context** | **context.** A whole code or schematic block. Not a claim: the claims live in its lines. Not counted in percentages. |
+| **editorial** | **read, and there is nothing a source could confirm.** The author's position, a piece of advice, a framing sentence. This is a RESULT: somebody looked. Requires `why` — one sentence saying what was read and why no document bears on it. It is the only honest destination for a unit leaving `no-external-signal`, the other being `unchecked` when a source does exist. |
 | **not-a-claim** | **context.** A table's header row — the names of its columns. It asserts nothing about the world, so no source can confirm or refute it, and leaving it in the queue promises work that must never be done. Assigned **structurally**, from the `|---|` separator beneath the row, never from the text: a textual test cannot tell a header from a two-column content row, and the glossary is full of the latter — including acronym expansions that ARE checkable. Evidence always wins: a header row carrying real evidence keeps it. Not counted in percentages, but printed beside the total rather than silently subtracted. |
 
 ### Fields of an evidence record

@@ -75,6 +75,7 @@ STATUSES = {
     "G": "refuted",
     "K": "code-context",
     "H": "not-a-claim",
+    "R": "editorial",
 }
 
 
